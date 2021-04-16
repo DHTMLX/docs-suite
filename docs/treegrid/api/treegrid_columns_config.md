@@ -5,7 +5,7 @@ title: columns
 
 @short: specifies the configuration of grid columns
 
-@signature: columns?: ICol[];
+@signature: columns?: array[];
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -162,9 +162,6 @@ Each column object may contain a set of properties described below:
 		</tr>
     </tbody>
 </table>
-
-#### Details:
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
 
 @related: treegrid/configuration.md#columns
 treegrid/initialization.md#initializetreegrid
