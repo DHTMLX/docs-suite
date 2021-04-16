@@ -1,0 +1,160 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+
+/* You can override the default Infima variables here. */
+
+:root {
+    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary-dark: rgb(33, 175, 144);
+    --ifm-color-primary-darker: rgb(31, 165, 136);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(70, 203, 174);
+    --ifm-color-primary-lighter: rgb(102, 212, 189);
+    --ifm-color-primary-lightest: rgb(146, 224, 208);
+    --ifm-color-feedback-background: #fff;
+    --dhx-color-brand: #2095F3;
+    --ifm-hr-border-color: var(--ifm-color-emphasis-200);
+    --ifm-list-item-margin: 0.7rem;
+}
+
+.docusaurus-highlight-code-line {
+    background-color: rgb(210, 213, 214);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
+}
+
+/* If you have a different syntax highlighting theme for dark mode. */
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+    background-color: rgb(122, 124, 126);
+    /* Color which works with dark mode syntax highlighting theme */
+}
+
+/* typography */
+
+/* h1 */
+
+.docTitle_node_modules-\@docusaurus-theme-classic-lib-theme-DocItem- {
+    font-size: 2rem!important;
+}
+
+.markdown > h1 {
+    font-size: 1.8rem;
+}
+
+/* h2 */
+
+.markdown>h2 {
+    --ifm-h2-font-size: 1.5rem;
+}
+
+/* h3 */
+
+.markdown>h3 {
+    --ifm-h3-font-size: 1.2rem;
+}
+
+/* end typography */
+
+
+/* Search input styles */
+
+.rel_date {
+    color: #a0a0a0;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.DocSearch-Button {
+    order: -1;
+    margin-right: 10px!important;
+}
+
+.DocSearch-Button-Placeholder {
+    flex-basis: 70%;
+    text-align: left;
+    width: 160px;
+}
+
+/* end Search input styles */
+
+
+/* styles for tables */
+
+table {
+    display: inline-table;
+}
+
+table tr:nth-child(2n) {
+    background-color: var(--ifm-table-background);
+}
+
+tr {
+    line-height: 1.2;
+}
+table {
+    text-align: left;
+}
+
+/* end styles for tables */
+
+
+/* indent for imgs */
+
+.markdown img {
+    margin-bottom: var(--ifm-leading);
+}
+
+/* end indent for imgs */
+
+
+/* Change the appearance of mobile navigation */
+
+@media (max-width: 996px) {
+    .navbar__toggle {
+        display: none;
+    }
+    .menu--responsive .menu__button {
+        border-radius: 100px;
+        padding: 15px;
+        background: var(--dhx-color-brand);
+        color: var(--ifm-color-feedback-background);
+    }
+}
+
+/* end change the appearance of mobile navigation */
+
+/* for Code Snippet iframe */
+
+.snippet_iframe {
+ border: 1px solid var(--ifm-hr-border-color);
+ margin-bottom: var(--ifm-leading);
+}
+
+/* end for Code Snippet iframe */
+
+/* small code block */
+
+code {
+    border-radius: 2px;
+    padding: 6px 8px;
+    font-weight: 600;
+}
+
+/* end small code block */
+
+/* list */
+
+.markdown ul  {
+    margin-top: 10px;
+}
+
+/* end list */

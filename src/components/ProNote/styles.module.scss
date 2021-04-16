@@ -1,0 +1,27 @@
+.note {
+  padding: 15px 10px;
+  background-color: #F7E9E8;
+  display: flex;
+
+  &__iconWrapper {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;;
+  }
+
+  &__icon {
+    font-size: 40px;
+    color: #E44E3C;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+  }
+}

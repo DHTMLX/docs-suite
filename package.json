@@ -1,0 +1,41 @@
+{
+  "name": "doc",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "node --max_old_space_size=16000 node_modules/@docusaurus/core/bin/docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve",
+    "generate": "cd plugins && node generate.js",
+    "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
+  },
+  "dependencies": {
+    "@docusaurus/core": "2.0.0-alpha.bfea8d632",
+    "@docusaurus/preset-classic": "2.0.0-alpha.bfea8d632",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "docusaurus-gtm-plugin": "^0.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dhx-md-data-parser": "file:local_modules/dhx-md-data-parser",
+    "docusaurus-plugin-sass": "^0.1.11",
+    "webpack-cli": "^4.4.0"
+  }
+}
