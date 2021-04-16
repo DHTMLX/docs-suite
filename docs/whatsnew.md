@@ -353,43 +353,43 @@ Version 6.5
 
 #### Grid 
 
-- The ability to [drag and drop columns in Grid](grid/configuration.md#drag-n-drop-of-grid-columns) using the grid/api/grid_dragitem_config.md configuration property of Grid, or via the [draggable](grid/configuration.md#columns) configuration option of a Grid column (Pro)
-- New grid/api/grid_beforecolumndrag_event.md and grid/api/grid_beforecolumndrop_event.md events are added (Pro)
+- The ability to [drag and drop columns in Grid](grid/configuration.md#drag-n-drop-of-grid-columns) using the [](grid/api/grid_dragitem_config.md) configuration property of Grid, or via the [draggable](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column (Pro)
+- New [](grid/api/grid_beforecolumndrag_event.md) and [](grid/api/grid_beforecolumndrop_event.md) events are added (Pro)
 - The ability [to align data in a column as well as in the header of a column](grid/configuration.md#alignment)
-- The ability [to show/hide tooltips](grid/configuration.md#tooltip) while hovering over the content of a column via the grid/api/grid_tooltip_config.md configuration property
+- The ability [to show/hide tooltips](grid/configuration.md#tooltip) while hovering over the content of a column via the [](grid/api/grid_tooltip_config.md) configuration property
 
 #### TreeGrid 
 
-- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-of-grid-columns) via the treegrid/api/treegrid_dragitem_config.md configuration property of TreeGrid, or via the [draggable](treegrid/configuration.md#columns) configuration option of a TreeGrid column
-- New treegrid/api/treegrid_beforecolumndrag_event.md and treegrid/api/treegrid_beforecolumndrop_event.md events are added 
-- The ability to [group data in TreeGrid](treegrid/usage.md#grouping-data) using the treegrid/api/treegrid_groupby_method.md method
-- The possibility to set a template to the title of the group via the treegrid/api/treegrid_grouptitletemplate_config.md configuration option of TreeGrid
+- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-of-treegrid-columns) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
+- New [](treegrid/api/treegrid_beforecolumndrag_event.md) and [](treegrid/api/treegrid_beforecolumndrop_event.md) events are added 
+- The ability to [group data in TreeGrid](treegrid/usage.md#grouping-data) using the [](treegrid/api/treegrid_groupby_method.md) method
+- The possibility to set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option of TreeGrid
 - The ability [to align data in a column as well as in the header of a column](treegrid/configuration.md#alignment)
-- The ability [to show/hide tooltips](treegrid/configuration.md#tooltip) while hovering over the content of a column via the treegrid/api/treegrid_tooltip_config.md configuration property
+- The ability [to show/hide tooltips](treegrid/configuration.md#tooltip) while hovering over the content of a column via the [](treegrid/api/treegrid_tooltip_config.md) configuration property
 
 #### DataView
 
-- The ability to [disable selection of items in DataView](dataview/configuration.md#selection-of-items) via the dataview/api/dataview_selection_config.md configuration property 
-- The ability to [enable/disable](dataview/manipulating_data.md#disabling-and-enabling-selection-of-an-item) selection of DataView items via the corresponding dataview/api/dataview_enableselection_method.md and dataview/api/dataview_disableselection_method.md methods
+- The ability to [disable selection of items in DataView](dataview/configuration.md#selection-of-items) via the [](dataview/api/dataview_selection_config.md) configuration property 
+- The ability to [enable/disable](dataview/manipulating_data.md#disabling-and-enabling-selection-of-an-item) selection of DataView items via the corresponding `enableSelection` and `disableSelection` methods
 
 #### List
 
-- The possibility to [disable selection of items in List](list/configuration.md#selection-of-items) via the list/api/list_selection_config.md configuration property 
-- The ability to [enable/disable](list/work_with_list.md#disabling-and-enabling-selection-of-an-item) selection of List items via the corresponding list/api/list_enableselection_method.md and list/api/list_disableselection_method.md methods
+- The possibility to [disable selection of items in List](list/configuration.md#selection-of-items) via the [](list/api/list_selection_config.md) configuration property 
+- The ability to [enable/disable](list/work_with_list.md#disabling-and-enabling-selection-of-an-item) selection of List items via the corresponding `enableSelection` and `disableSelection` methods
 
 #### Form
 
-- New methods of the [Select control of Form](form/select.md#working-with-select) are added: getOptions(), setOptions()
+- New methods of the [Select control of Form](form/api/api_overview.md#select-api) are added: getOptions(), setOptions()
 - The ability to [make Form hidden](form/configuration.md#making-form-hidden)
-- The ability to make a Form control (form/button.md, form/calendar.md, form/checkbox.md, form/colorpicker.md, form/combo.md, form/input.md, form/radiogroup.md, form/select.md, form/simplevault.md, form/slider.md, form/text.md, form/textarea.md, form/timepicker.md) hidden via the related configuration attribute of the control
-- New methods of Form are added: form/api/form_hide_method.md, form/api/form_show_method.md, form/api/form_isvisible_method.md
-- The form/api/form_afterhide_event.md, form/api/form_aftershow_event.md, form/api/form_beforehide_event.md, form/api/form_beforeshow_event.md events are added
-- The ability to hide/show Form controls (form/button.md#workingwithbutton, form/calendar.md#workingwithdatepicker, form/checkbox.md#workingwithcheckbox, form/colorpicker.md#workingwithcolorpicker, form/combo.md#workingwithcombo, form/input.md#workingwithinput, form/radiogroup.md#workingwithradiogroup, form/select.md#workingwithselect, form/simplevault.md#workingwithsimplevault, form/slider.md#workingwithslider, form/text.md#workingwithtext, form/textarea.md#workingwithtextarea, form/timepicker.md#workingwithtimepicker) via the corresponding hide()/show() methods of the controls
-- [New methods](form/simplevault.md#working-with-simplevault) of the SimpleVault control of Form are added: selectFile(), send(), setValue()
+- The ability to make a Form control ([](form/button.md), [](form/calendar.md), [](form/checkbox.md), [](form/colorpicker.md), [](form/combo.md), [](form/input.md), [](form/radiogroup.md), [](form/select.md), [](form/simplevault.md), [](form/slider.md), [](form/text.md), [](form/textarea.md), [](form/timepicker.md)) hidden via the `hidden` configuration attribute of the control
+- New methods of Form are added: [](form/api/form_hide_method.md), [](form/api/form_show_method.md), [](form/api/form_isvisible_method.md)
+- The [](form/api/form_afterhide_event.md), [](form/api/form_aftershow_event.md), [](form/api/form_beforehide_event.md), [](form/api/form_beforeshow_event.md) events are added
+- The ability to hide/show Form controls ([Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md#colorpicker-api), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api)) via the corresponding hide()/show() methods of the controls
+- [New methods](form/api/api_overview.md#simple-vault-api) of the SimpleVault control of Form are added: selectFile(), send(), setValue()
 
 #### Sidebar
 
-- New methods of Sidebar are added: sidebar/api/sidebar_select_method.md, sidebar/api/sidebar_unselect_method.md, sidebar/api/sidebar_isselected_method.md, sidebar/api/sidebar_getselected_method.md
+- New methods of Sidebar are added: [](sidebar/api/sidebar_select_method.md), [](sidebar/api/sidebar_unselect_method.md), [](sidebar/api/sidebar_isselected_method.md), [](sidebar/api/sidebar_getselected_method.md)
 
 ### Updates
 
@@ -407,14 +407,14 @@ Version 6.4.4
 
 - Fix the behavior of Layout inside a resizable window
 - Fix the behavior of charts placed into a cell of Tabbar in IE
-- Fix issue with the layout/api/layout_aftershow_event.md event of Layout not being called
+- Fix issue with the [](layout/api/layout_aftershow_event.md) event of Layout not being called
 - Fix the incorrect work of the [destructor()](grid/api/grid_destructor_method.md) method when combo filters are not specified in Grid
-- Fix the incorrect work of the [Change](combobox/api/combobox_change_event.md) event when the combobox/api/combobox_multiselection_config.md property is enabled in Combobox
-- Fix the incorrect work of the colorpicker/api/colorpicker_change_event.md event while calling the [clear()](colorpicker/api/colorpicker_clear_method.md) method in ColorPicker
+- Fix the incorrect work of the [Change](combobox/api/combobox_change_event.md) event when the [](combobox/api/combobox_multiselection_config.md) property is enabled in Combobox
+- Fix the incorrect work of the [](colorpicker/api/colorpicker_change_event.md) event while calling the [clear()](colorpicker/api/colorpicker_clear_method.md) method in ColorPicker
 - Fix issue with the [getValue()](form/api/form_getvalue_method.md) method of Form
-- Fix the incorrect work of the form/api/form_change_event.md event  while calling the [clear()](form/api/form_clear_method.md) method for Form controls (Input, Textarea, Checkbox, RadioGroup, Select, DatePicker, TimePicker, ColorPicker, Combo)
+- Fix the incorrect work of the [](form/api/form_change_event.md) event  while calling the [clear()](form/api/form_clear_method.md) method for Form controls (Input, Textarea, Checkbox, RadioGroup, Select, DatePicker, TimePicker, ColorPicker, Combo)
 - Fix the incorrect work of the Combo control of Form while calling the [getValue()](form/api/form_getvalue_method.md) method
-- Fix issue with the form/api/form_change_event.md event of Form
+- Fix issue with the [](form/api/form_change_event.md) event of Form
 - Fix validation for the Input control of Form
 - Fix rendering of custom HTML content in Window
 - Fix priority of the modal window while calling more than one window
@@ -485,44 +485,44 @@ Version 6.4
 
 #### Calendar
 
-- The ability to clear the value set in the calendar using the calendar/api/calendar_clear_method.md method
+- The ability to clear the value set in the calendar using the [](calendar/api/calendar_clear_method.md) method
 
 #### Chart
 
-- The chart/api/chart_serieclick_event.md event is added
+- The [](chart/api/chart_serieclick_event.md) event is added
 - The ability to rotate labels of data items on the scale using [the scaleRotate property in the configuration of the scale](chart/configuration_properties.md#scales)
 - The ability to rotate text values of data items in Bar and X-Bar chart via [the showTextRotate property in the configuration of the series](chart/configuration_properties.md#series) 
 
 
 #### ColorPicker
 
-- The possibility to specify the mode of displaying a colorpicker using the colorpicker/api/colorpicker_mode_config.md property
-- The ability to clear the value set in the colorpicker and remove focus via the colorpicker/api/colorpicker_clear_method.md method
+- The possibility to specify the mode of displaying a colorpicker using the [](colorpicker/api/colorpicker_mode_config.md) property
+- The ability to clear the value set in the colorpicker and remove focus via the [](colorpicker/api/colorpicker_clear_method.md) method
 
 #### Combobox
 
-- The possibility [to check whether a combobox is disabled on the page](combobox/work_with_combo.md#checking-if-a-combobox-is-disabled) using the combobox/api/combobox_isdisabled_method.md method
-- The combobox/api/combobox_beforeclose_event.md and combobox/api/combobox_afterclose_event.md events are added
-- The ability to specify an array of data objects before initialization via the combobox/api/combobox_data_config.md configuration property
-- The possibility to define the position of a label of a combobox using the combobox/api/combobox_labelposition_config.md property
+- The possibility [to check whether a combobox is disabled on the page](combobox/work_with_combo.md#checking-if-a-combobox-is-disabled) using the [](combobox/api/combobox_isdisabled_method.md) method
+- The [](combobox/api/combobox_beforeclose_event.md) and [](combobox/api/combobox_afterclose_event.md) events are added
+- The ability to specify an array of data objects before initialization via the [](combobox/api/combobox_data_config.md) configuration property
+- The possibility to define the position of a label of a combobox using the [](combobox/api/combobox_labelposition_config.md) property
 
 
 #### Dataview
 
-- The dataview/api/dataview_itemmouseover_event.md event is added
+- The [](dataview/api/dataview_itemmouseover_event.md) event is added
 
 #### Form
 
-- The ability [to check whether a form or a form control is disabled on the page](form/work_with_form.md#checking-if-a-form-is-disabled) via the form/api/form_isdisabled_method.md method 
-- The possibility [to disable a form on a page](form/work_with_form.md#enabling-disabling-a-form) using the form/api/form_disable_method.md method
-- The possibility [to enable a form on a page](form/work_with_form.md#enabling-disabling-a-form) using the form/api/form_enable_method.md method
-- The possibility [to make a form disabled](form/configuration.md#making-form-disabled) using the form/api/form_disabled_property.md property 
-- The ability to use methods for [Button](form/button.md#working-with-button), [DatePicker](form/calendar.md#working-with-datepicker), [Checkbox](form/checkbox.md#working-with-checkbox), [ColorPicker](form/colorpicker.md#working-with-colorpicker), [Combo](form/combo.md#working-with-combo), [Input](form/input.md#working-with-input), [RadioGroup](form/radiogroup.md#working-with-radiogroup), [Select](form/select.md#working-with-select), [SimpleVault](form/simplevault.md#working-with-simplevault), [Slider](form/slider.md#working-with-slider), [Text](form/text.md#working-with-text), [Textarea](form/textarea.md#working-with-textarea), [TimePicker](form/timepicker.md#working-with-timepicker) Form controls: disable(), enable(), isDisabled()
-- The possibility to specify the maximum number of characters allowed in the input via the maxlength attribute of form/input.md Form control
-- The ability [to set the format of the value that will be returned while getting the current value of DatePicker control using the valueFormat property](form/calendar.md#adding-datepicker)
-- The ability to define the position of a label for form/button.md, form/calendar.md, form/checkbox.md, form/colorpicker.md, form/combo.md, form/input.md, form/radiogroup.md, form/select.md, form/simplevault.md, form/slider.md, form/text.md form/textarea.md, form/timepicker.md Form controls using the labelPosition attribute
-- The possibility to specify the url attribute to which form data will be sent to for [Button Form control](form/button.md#adding-button) 
-- The form/api/form_foreach_method.md method is added
+- The ability [to check whether a form or a form control is disabled on the page](form/work_with_form.md#checking-if-a-form-is-disabled) via the [](form/api/form_isdisabled_method.md) method 
+- The possibility [to disable a form on a page](form/work_with_form.md#enablingdisabling-a-form) using the [](form/api/form_disable_method.md) method
+- The possibility [to enable a form on a page](form/work_with_form.md#enablingdisabling-a-form) using the [](form/api/form_enable_method.md) method
+- The possibility [to make a form disabled](form/configuration.md#making-form-disabled) using the [](form/api/form_disabled_property.md) property 
+- The ability to use methods for [Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md#colorpicker-api), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api) Form controls: disable(), enable(), isDisabled()
+- The possibility to specify the maximum number of characters allowed in the input via the `maxlength` attribute of the [](form/input.md) Form control
+- The ability [to set the format of the value that will be returned while getting the current value of DatePicker control using the valueFormat property](form/api/calendar/api_calendar_properties.md)
+- The ability to define the position of a label for [](form/button.md), [](form/calendar.md), [](form/checkbox.md), [](form/colorpicker.md), [](form/combo.md), [](form/input.md), [](form/radiogroup.md), [](form/select.md), [](form/simplevault.md), [](form/slider.md), [](form/text.md), [](form/textarea.md), [](form/timepicker.md) Form controls using the `labelPosition` attribute
+- The possibility to specify the `url` attribute to which form data will be sent to for [Button Form control](form/api/button/api_button_properties.md) 
+- The [](form/api/form_foreach_method.md) method is added
 
 
 #### Grid

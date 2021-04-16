@@ -334,6 +334,8 @@ module.exports = {
                                     items: [
                                         "combobox/api/combobox_afterclose_event",
                                         "combobox/api/combobox_beforeclose_event",
+                                        "combobox/api/combobox_change_event",
+                                        "combobox/api/combobox_destructor_method",
                                         "combobox/api/combobox_destructor_method",
                                         "combobox/api/combobox_input_event",
                                         "combobox/api/combobox_open_event",
