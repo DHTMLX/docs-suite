@@ -69,32 +69,7 @@ var combo = new dhx.Combobox("combo_container", {// config options});
 
 ### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- combo/api/combobox_css_config.md - adds style classes for the component
-- combo/api/combobox_data_config.md - specifies an array of data objects to set into the combobox
-- combo/api/combobox_disabled_config.md - makes ComboBox disabled
-- combo/api/combobox_filter_config.md -  sets a custom function for filtering ComboBox options
-- combo/api/combobox_helpmessage_config.md - adds an icon with a question mark next to the Combo input
-- combo/api/combobox_hiddenlabel_config.md - adds a hidden label for a ComboBox input that will be used while sending a form to the server
-- combo/api/combobox_itemheight_config.md - sets the height of a cell in the list of options
-- combo/api/combobox_itemscount_config.md - shows the total number of selected options
-- combo/api/combobox_label_config.md - adds a label for ComboBox
-- combo/api/combobox_labelposition_config.md - defines the position of a label of a combobox: "left"|"top"
-- combo/api/combobox_labelwidth_config.md - sets the width of a label
-- combo/api/combobox_listheight_config.md - sets the height of the list of options
-- combo/api/combobox_multiselection_config.md - enables selection of multiple options in ComboBox
-- combo/api/combobox_placeholder_config.md - sets a placeholder in the input of ComboBox
-- combo/api/combobox_readonly_config.md - makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)
-- combo/api/combobox_selectallbutton_config.md - defines whether the Select All button should be shown
-- combo/api/combobox_template_config.md - sets a template of displaying options in the popup list
-- combo/api/combobox_value_config.md - specifies the values that will appear in the input on initialization of the combobox
-- combo/api/combobox_virtual_config.md - enables dynamic loading of data on scrolling the list of options
-
-}}
-
-See the detailed description of Combo configuration options in the [](combo/configuration.md) article.
+See the detailed description of Combo configuration options in the [Combobox API overview](combobox/api/api_overview.md#properties) article.
 
 Load data into ComboBox
 -------------

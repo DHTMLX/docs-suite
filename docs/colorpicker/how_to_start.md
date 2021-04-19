@@ -78,7 +78,7 @@ var colorpicker = new dhx.ColorPicker("colorpicker_container",{
 
 ### Initialization in a popup
 
-This variant pressupposes that you create a popup first and then attach a colorpicker into it. 
+This variant presupposes that you create a popup first and then attach a colorpicker into it. 
 
 - use corresponding object constructors to create a colorpicker and a popup objects. Note that in this case *null* is used instead of container for ColorPicker:
 
@@ -109,21 +109,7 @@ var colorExample = document.querySelector(".dhx_color-sample");
 
 ### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- colorpicker/api/colorpicker_css_config.md - adds CSS classes for the component
-- colorpicker/api/colorpicker_customcolors_config.md - shows a section for custom colors in the bottom part of the colorpicker
-- colorpicker/api/colorpicker_grayshades_config.md - defines whether the section with gray shades is displayed in the palette
-- colorpicker/api/colorpicker_mode_config.md - specifies the mode of displaying a colorpicker: "palette", "picker"
-- colorpicker/api/colorpicker_palette_config.md - contains arrays of colors you want to be shown in a colorpicker
-- colorpicker/api/colorpicker_paletteonly_config.md - defines whether ColorPicker is shown only in the palette mode
-- colorpicker/api/colorpicker_pickeronly_config.md - defines whether ColorPicker is shown only in the picker mode
-- colorpicker/api/colorpicker_width_config.md - sets the width of ColorPicker
-
-}}
-
-The detailed information on configuration options can be found in the [](colorpicker/configuration.md) article.
+The detailed information on configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
 
 Select initial color (optional)
 ----------------
