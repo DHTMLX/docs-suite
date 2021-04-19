@@ -3,7 +3,7 @@ sidebar_label: API overview
 title: Grid API overview
 ---
 
-## Methods
+## Grid methods
 
 | Name                                          | Description                                          |
 | --------------------------------------------- | ---------------------------------------------------- |
@@ -40,7 +40,7 @@ title: Grid API overview
 - А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
 :::
 
-## Events
+## Grid events
 
 | Name                                            | Description                                         |
 | ----------------------------------------------- | --------------------------------------------------- |
@@ -102,7 +102,7 @@ title: Grid API overview
 - А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
 :::
 
-## Properties
+## Grid properties
 
 | Name                                         | Description                                      |
 | -------------------------------------------- | ------------------------------------------------ |
@@ -132,3 +132,7 @@ title: Grid API overview
 | [](grid/api/grid_spans_config.md)            | @getshort(grid/api/grid_spans_config)            |
 | [](grid/api/grid_tooltip_config.md)          | @getshort(grid/api/grid_tooltip_config)          |
 | [](grid/api/grid_width_config.md)            | @getshort(grid/api/grid_width_config)            |
+
+## Column properties
+
+See the list of all the available configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).

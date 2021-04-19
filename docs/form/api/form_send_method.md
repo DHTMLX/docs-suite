@@ -1,6 +1,6 @@
 ---
-sidebar_label: rows
-title: rows
+sidebar_label: send
+title: send
 ---          
 
 @short: sends a form to the server

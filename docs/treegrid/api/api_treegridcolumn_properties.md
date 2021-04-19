@@ -1,26 +1,7 @@
 ---
-sidebar_label: columns
-title: columns
----          
-
-@short: specifies the configuration of grid columns
-
-@signature: columns?: ICol[];
-
-@example: 
-var grid = new dhx.Grid("grid_container", {
-	columns: [
-		{ width: 100, id: "a", header: [{ text: "#" }] },
-		{ width: 100, id: "b", header: [{ text: "Title" }] },
-		{ width: 200, id: "c", header: [{ text: "Name" }] },
-		{ width: 200, id: "d", header: [{ text: "Address" }] }
-	],
-	data: dataset
-});
-
-@template:	api_config
-@descr: 
-Each column object may contain a set of properties described below:
+sidebar_label: Column properties
+title: TreeGrid column properties
+---
 
 <table class="webixdoc_links">
 	<tbody>
@@ -39,7 +20,7 @@ Each column object may contain a set of properties described below:
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__customization.html#stylingheadercells"><b>text</b></a> - (<i>string|number</i>) the text of a header</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#alignment"><b>align</b></a> - (<i>string</i>) aligns data in the header: "left"|"center"|"right"</li>
                     <li><b>colspan</b> - (<i>number</i>) the number of columns in a colspan</li>
-                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan</li>
+                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan <br/> {{editor	https://snippet.dhtmlx.com/t8iust6j	TreeGrid. Header spans}}</li>
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a header</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#headerfootercontent"><b>content</b></a> - (<i>string</i>) additional content of a header, which can be:
                     <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
@@ -58,7 +39,7 @@ Each column object may contain a set of properties described below:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#htmlcontentoftreegridcolumns"><b>htmlEnable</b></a></td>
-			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value </td>
+			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> {{editor	https://snippet.dhtmlx.com/iubccmoi	TreeGrid. Html In Data}}</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>footer</b></td>
@@ -78,11 +59,11 @@ Each column object may contain a set of properties described below:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>maxWidth</b></td>
-			<td>(<i>number</i>) the maximal width to be set for a column</td>
+			<td>(<i>number</i>) the maximal width to be set for a column <br/> {{editor	https://snippet.dhtmlx.com/pyrloz7y	TreeGrid. Max Width}}</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column</td>
+			<td>(<i>number</i>) the minimal width to be set for a column <br/> {{editor	https://snippet.dhtmlx.com/cpgjyoxn	TreeGrid. Min Width}}</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__customization.html#addingcustommarkstocells"><b>mark</b></a></td>
@@ -162,13 +143,3 @@ Each column object may contain a set of properties described below:
 		</tr>
     </tbody>
 </table>
-
-#### Details:
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
-
-@related: treegrid/configuration.md#columns
-treegrid/initialization.md#initializetreegrid
-treegrid/customization.md
-
-@relatedsample: https://snippet.dhtmlx.com/kob9385v	TreeGrid. Basic initialization
-
