@@ -282,7 +282,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-<h3 id="columneditors">Setting type of column editor</h3>
+### Setting type of column editor
 
 You can specify the way of editing the cells of a Grid column depending on its content as simple inputs, select controls or date pickers. The type of the used editor is defined by the **editorType** property of a column.
 There are three types of column editors:
@@ -735,7 +735,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 {{editor	https://snippet.dhtmlx.com/r4xfph82	TreeGrid. Sortable Columns}}
 
-###Sorting separate columns
+### Sorting separate columns
 
 You can make separate columns sortable by specifying the [sortable:true](treegrid/api/treegrid_sortable_config.md) property in the configuration of a column.
 
