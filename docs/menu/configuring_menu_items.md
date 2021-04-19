@@ -82,7 +82,7 @@ You can add a number badge to the navItem to display information like the number
 }
 ~~~
 
-<h3 id="htmlcontent">Adding HTML content</h3>
+### Adding HTML content
 
 You can add a custom image into the navItem with the help of the **html** property:
 
