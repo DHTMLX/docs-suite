@@ -20,10 +20,5 @@ grid.setColumns([
 
 @descr:
 
-``` todotw  написать, что все свойства, c которыми работает метод, находятся в grid/api/grid_columns_config" 
-
-Each column object may contain the [followings fields](grid/api/grid_columns_config.md).
-
-важно поставить якорную ссылку
-``` 
+Each column object may contain a set of properties. You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
 
