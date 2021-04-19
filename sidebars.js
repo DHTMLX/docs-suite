@@ -1364,7 +1364,7 @@ module.exports = {
                 "grid/api/api_overview",
                 {
                   type: "category",
-                  label: "Methods",
+                  label: "Grid methods",
                   items: [
                     "grid/api/grid_addcellcss_method",
                     "grid/api/grid_addrowcss_method",
@@ -1397,7 +1397,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Grid events",
                   items: [
                     "grid/api/grid_aftercolumndrag_event",
                     "grid/api/grid_aftercolumndrop_event",
@@ -1455,7 +1455,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "Grid properties",
                   items: [
                     "grid/api/grid_adjust_config",
                     "grid/api/grid_autoemptyrow_config",
@@ -1485,6 +1485,7 @@ module.exports = {
                     "grid/api/grid_width_config",
                   ],
                 },
+                "grid/api/api_gridcolumn_properties",
               ],
             },
             "grid/initialization",
@@ -1722,7 +1723,7 @@ module.exports = {
                 "menu/api/api_overview",
                 {
                   type: "category",
-                  label: "Methods",
+                  label: "Menu methods",
                   items: [
                     "menu/api/menu_destructor_method",
                     "menu/api/menu_disable_method",
@@ -1740,7 +1741,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Menu events",
                   items: [
                     "menu/api/menu_afterhide_event",
                     "menu/api/menu_beforehide_event",
@@ -1753,7 +1754,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "Menu properties",
                   items: [
                     "menu/api/menu_css_config",
                     "menu/api/menu_data_config",
@@ -1761,23 +1762,11 @@ module.exports = {
                     "menu/api/menu_navigationtype_config",
                   ],
                 },
-                {
-                  type: "category",
-                  label: "Selection API",
-                  items: [
-                    {
-                      type: "category",
-                      label: "Methods",
-                      items: [],
-                    },
-
-                    {
-                      type: "category",
-                      label: "Events",
-                      items: [],
-                    },
-                  ],
-                },
+                "menu/api/api_menuitem_properties",
+                "menu/api/api_navitem_properties",
+                "menu/api/api_customhtml_properties",
+                "menu/api/api_separator_properties",
+                "menu/api/api_spacer_properties",
               ],
             },
             "menu/how_to_start",
@@ -1927,7 +1916,7 @@ module.exports = {
                 "ribbon/api/api_overview",
                 {
                   type: "category",
-                  label: "Methods",
+                  label: "Ribbon methods",
                   items: [
                     "ribbon/api/ribbon_destructor_method",
                     "ribbon/api/ribbon_disable_method",
@@ -1946,7 +1935,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Ribbon events",
                   items: [
                     "ribbon/api/ribbon_click_event",
                     "ribbon/api/ribbon_inputblur_event",
@@ -1957,7 +1946,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "Ribbon properties",
                   items: [
                     "ribbon/api/ribbon_css_config",
                     "ribbon/api/ribbon_data_config",
@@ -2004,7 +1993,7 @@ module.exports = {
                 "sidebar/api/api_overview",
                 {
                   type: "category",
-                  label: "Methods",
+                  label: "Sidebar methods",
                   items: [
                     "sidebar/api/sidebar_collapse_method",
                     "sidebar/api/sidebar_destructor_method",
@@ -2025,7 +2014,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Sidebar events",
                   items: [
                     "sidebar/api/sidebar_aftercollapse_event",
                     "sidebar/api/sidebar_afterexpand_event",
@@ -2042,7 +2031,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "Sidebar properties",
                   items: [
                     "sidebar/api/sidebar_collapsed_config",
                     "sidebar/api/sidebar_css_config",
@@ -2052,6 +2041,12 @@ module.exports = {
                     "sidebar/api/sidebar_width_config",
                   ],
                 },
+                "sidebar/api/api_customhtml_properties",
+                "sidebar/api/api_menuitem_properties",
+                "sidebar/api/api_navitem_properties",
+                "sidebar/api/api_separator_properties",
+                "sidebar/api/api_spacer_properties",
+                "sidebar/api/api_title_properties",
               ],
             },
             "sidebar/init",
@@ -2487,7 +2482,7 @@ module.exports = {
                 "treegrid/api/api_overview",
                 {
                   type: "category",
-                  label: "Methods",
+                  label: "TreeGrid methods",
                   items: [
                     "treegrid/api/treegrid_addcellcss_method",
                     "treegrid/api/treegrid_addrowcss_method",
@@ -2525,7 +2520,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "TreeGrid events",
                   items: [
                     "treegrid/api/treegrid_aftercollapse_event",
                     "treegrid/api/treegrid_aftercolumndrag_event",
@@ -2586,7 +2581,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "TreeGrid properties",
                   items: [
                     "treegrid/api/treegrid_adjust_config",
                     "treegrid/api/treegrid_autoemptyrow_config",
