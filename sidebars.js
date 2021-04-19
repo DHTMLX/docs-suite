@@ -318,6 +318,7 @@ module.exports = {
                                     label: "Methods",
                                     items: [
                                         "combobox/api/combobox_clear_method",
+                                        "combobox/api/combobox_destructor_method",
                                         "combobox/api/combobox_disable_method",
                                         "combobox/api/combobox_enable_method",
                                         "combobox/api/combobox_getvalue_method",
@@ -335,8 +336,6 @@ module.exports = {
                                         "combobox/api/combobox_afterclose_event",
                                         "combobox/api/combobox_beforeclose_event",
                                         "combobox/api/combobox_change_event",
-                                        "combobox/api/combobox_destructor_method",
-                                        "combobox/api/combobox_destructor_method",
                                         "combobox/api/combobox_input_event",
                                         "combobox/api/combobox_open_event",
                                     ],
