@@ -2058,7 +2058,7 @@ module.exports = {
             "sidebar/init",
             {
               type: "category",
-              label: "List of Sidebar сontrols",
+              label: "List of Sidebar controls",
               items: [
                 "sidebar/customhtmlbutton",
                 "sidebar/menuitem",
