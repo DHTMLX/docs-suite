@@ -306,6 +306,39 @@ title: Form API overview
 
 [List of the Combo properties](form/api/combo/api_combo_properties.md)
 
+## Container API
+
+### Methods
+
+| Name                                                     | Description                                                     |
+| :------------------------------------------------------- | :-------------------------------------------------------------- |
+| [](form/api/container/container_attach_method.md)        | @getshort(form/api/container/container_attach_method.md)        |
+| [](form/api/container/container_attachhtml_method.md)    | @getshort(form/api/container/container_attachhtml_method.md)    |
+| [](form/api/container/container_show_method.md)          | @getshort(form/api/container/container_show_method.md)          |
+| [](form/api/container/container_hide_method.md)          | @getshort(form/api/container/container_hide_method.md)          |
+| [](form/api/container/container_enable_method.md)        | @getshort(form/api/container/container_enable_method.md)        |
+| [](form/api/container/container_disable_method.md)       | @getshort(form/api/container/container_disable_method.md)       |
+| [](form/api/container/container_isvisible_method.md)     | @getshort(form/api/container/container_isvisible_method.md)     |
+| [](form/api/container/container_isdisabled_method.md)    | @getshort(form/api/container/container_isdisabled_method.md)    |
+| [](form/api/container/container_setproperties_method.md) | @getshort(form/api/container/container_setproperties_method.md) |
+| [](form/api/container/container_getproperties_method.md) | @getshort(form/api/container/container_getproperties_method.md) |
+
+### Events
+
+| Name                                                    | Description                                                    |
+| :------------------------------------------------------ | :------------------------------------------------------------- |
+| [](container/container_afterchangeproperties_event.md)  | @getshort(container/container_afterchangeproperties_event.md)  |
+| [](container/container_afterhide_event.md)              | @getshort(container/container_afterhide_event.md)              |
+| [](container/container_aftershow_event.md)              | @getshort(container/container_aftershow_event.md)              |
+| [](container/container_beforechangeproperties_event.md) | @getshort(container/container_beforechangeproperties_event.md) |
+| [](container/container_beforehide_event.md)             | @getshort(container/container_beforehide_event.md)             |
+| [](container/container_beforeshow_event.md)             | @getshort(container/container_beforeshow_event.md)             |
+
+### Properties
+
+[List of the Container control properties](form/api/container/api_container_properties.md) 
+
+
 ## Input API
 
 ### Methods
@@ -662,35 +695,3 @@ title: Form API overview
 
 [List of the Timepicker properties](form/api/timepicker/api_timepicker_properties.md)
 
-## Container API
-
-### Methods
-
-| Name                                                     | Description                                                     |
-| :------------------------------------------------------- | :-------------------------------------------------------------- |
-| [](form/api/container/container_attach_method.md)        | @getshort(form/api/container/container_attach_method.md)        |
-| [](form/api/container/container_attachhtml_method.md)    | @getshort(form/api/container/container_attachhtml_method.md)    |
-| [](form/api/container/container_show_method.md)          | @getshort(form/api/container/container_show_method.md)          |
-| [](form/api/container/container_hide_method.md)          | @getshort(form/api/container/container_hide_method.md)          |
-| [](form/api/container/container_enable_method.md)        | @getshort(form/api/container/container_enable_method.md)        |
-| [](form/api/container/container_disable_method.md)       | @getshort(form/api/container/container_disable_method.md)       |
-| [](form/api/container/container_isvisible_method.md)     | @getshort(form/api/container/container_isvisible_method.md)     |
-| [](form/api/container/container_isdisabled_method.md)    | @getshort(form/api/container/container_isdisabled_method.md)    |
-| [](form/api/container/container_setproperties_method.md) | @getshort(form/api/container/container_setproperties_method.md) |
-| [](form/api/container/container_getproperties_method.md) | @getshort(form/api/container/container_getproperties_method.md) |
-
-### Events
-
-| Name                                                    | Description                                                    |
-| :------------------------------------------------------ | :------------------------------------------------------------- |
-| [](container/container_afterchangeproperties_event.md)  | @getshort(container/container_afterchangeproperties_event.md)  |
-| [](container/container_afterhide_event.md)              | @getshort(container/container_afterhide_event.md)              |
-| [](container/container_aftershow_event.md)              | @getshort(container/container_aftershow_event.md)              |
-| [](container/container_beforechangeproperties_event.md) | @getshort(container/container_beforechangeproperties_event.md) |
-| [](container/container_beforehide_event.md)             | @getshort(container/container_beforehide_event.md)             |
-| [](container/container_beforeshow_event.md)             | @getshort(container/container_beforeshow_event.md)             |
-
-
-### Properties
-
-[List of the Container control properties](form/api/container/api_container_properties.md) 
