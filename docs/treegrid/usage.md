@@ -21,7 +21,7 @@ treegrid.setColumns([
 ]);
 ~~~
 
-You can find the full list of the available configuration options of a TreeGrid column [here](treegrid/configuration.md#columns).      
+You can find the full list of the available configuration options of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).      
 
 ### Getting configuration of a column
 
@@ -32,160 +32,7 @@ var column = treegrid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"
 ~~~
 
-The method returns an object with configuration of the specified column. Such an object contains a set of fields:
-
-
-``` todotw это должно быть на странице API, а здесь лишь ссылка
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string|number</i>) the id of a column</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>width</b></td>
-			<td>(<i>number</i>) the width of a column</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>header</b></td>
-			<td>(<i>array</i>) an array of objects with header rows configuration. Each header object may include:
-                <ul>
-                    <li><b>text</b> - (<i>string|number</i>) the text of a header</li>
-                    <li><b>align</b> - (<i>string</i>) aligns data in the header: "left"|"center"|"right"</li>
-                    <li><b>colspan</b> - (<i>number</i>) the number of columns in a colspan</li>
-                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan</li>
-                    <li><b>css</b> - (<i>any</i>) styling to be applied to a header</li>
-                    <li><b>content</b> - (<i>string</i>) additional content of a header, which can be:
-                    <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                    <ol>- one of the methods that process values in a column and show result in the header:<br/> "avg" | "sum" | "max" | "min" </ol>
-                    <ol> - some other string</ol>
-                    </li>
-                    <li><b>filterConfig</b> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
-                    <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
-                    <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
-                    <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
-                    <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
-                    <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
-                    </li>
-                </ul>
-            </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>htmlEnable</b></td>
-			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>footer</b></td>
-			<td>(<i>array</i>) an array of objects with footer rows configuration. Each footer object may include:
-                <ul>
-                    <li><b>text</b> - (<i>string|number</i>) the text of a footer</li>
-                    <li><b>colspan</b> - (<i>number</i>) the number of columns in a colspan</li>
-                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan</li>
-                    <li><b>css</b> - (<i>any</i>) styling to be applied to a footer</li>
-                    <li><b>content</b> - (<i>string</i>) additional content of a footer, which can be:
-                    <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                    <ol>- one of the methods that process values in a column and show result in the footer:<br/> "avg" | "sum" | "max" | "min" </ol>
-                    <ol> - some other string</ol>
-                    </li>
-                </ul>
-            </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>maxWidth</b></td>
-			<td>(<i>number</i>) the maximal width to be set for a column</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>mark</b></td>
-			<td>(<i>object|function</i>) returns a template for marking a cell(s)
-                <ul>
-                    <li>as an <i>object</i> contains <b>min</b> and <b>max</b> properties, to apply desired CSS classes to cells with minimal|maximal values in a column </li>
-                    <li>as a <i>function</i> takes several parameters:
-                        <ol>- <b>cell</b> - (<i>string</i>) the value of a cell</ol>
-                        <ol>- <b>columnCells</b> - (<i>array</i>) an array of all cell values in the specified column</ol>
-                        <ol>- <b>row</b> - (<i>object</i>) an object with all cells in a row</ol>
-                        <ol>- <b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</ol>
-                    </li>    
-                </ul>
-            </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>resizable</b></td>
-			<td>(<i>boolean</i>) defines whether a column can be resized</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a column: "string"|"number"|"boolean"|"any"|"date"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>dateFormat</b></td>
-			<td>(<i>string</i>) defines <a href="https://docs.dhtmlx.com/suite/calendar__api__calendar_dateformat_config.html">the format of dates</a> (type:"date")</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>options</b></td>
-			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox")</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>template</b></td>
-			<td>(<i>function</i>) returns a template with content for a cell(s). Takes 3 parameters:
-                <ul>
-                    <li><b>cellValue</b> - (<i>any</i>) the value of a cell</li>
-                    <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
-                    <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
-                </ul>
-            </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a column is hidden</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>draggable</b></td>
-			<td>(<i>boolean</i>) defines whether a column is draggable</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>editable</b></td>
-			<td>(<i>boolean</i>) defines whether a column is editable</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>sortable</b></td>
-			<td>(<i>boolean</i>) defines whether a column is sortable</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>adjust</b></td>
-			<td>(<i>boolean|string</i>) defines whether the width of a column is automatically adjusted to its content</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>autoWidth</b></td>
-			<td>(<i>boolean</i>) enables/disables the ability of a column to adjust its size to the size of TreeGrid</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>align</b></td>
-			<td>(<i>string</i>) aligns data in a column: "left" | "center" | "right"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a column, <i>true</i> by default</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>$cellCss</b></td>
-			<td>(<i>array</i>) <b>readonly</b>, an array of objects with CSS classes (as key:value pairs) for each cell of a column</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>$uniqueData</b></td>
-			<td>(<i>array</i>) <b>readonly</b>, an array that contains some unique data, can't be redefined</td>
-		</tr>
-    </tbody>
-</table>
-
-``` todo
+The method returns an object with configuration of the specified column. You can find the list of properties that the return object can contain [here](treegrid/api/treegrid_getcolumn_method.md).
 
 ### Getting configuration of a cell
 
@@ -445,10 +292,10 @@ Filtering data
 
 You can filter grid data by the specified criteria with the help of the **filter()** method of data collection. The method takes as a parameter an object with the properties described below:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>rule</b></td>
+			<td><b>rule</b></td>
 			<td>(<i>object|function</i>) the filtering criteria. It can be:
 			<ul>
 			<li>a filtering function. It takes as a parameter a data item and returns an object with a filtering rule.</li>
@@ -464,13 +311,13 @@ You can filter grid data by the specified criteria with the help of the **filter
 			</ul></td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) optional, an object with two properties:
 				<ul><li><b>type</b> (<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</li>
 				<li><b>level</b> (<i>number</i>) optional, the level the filtering will be applied to</li>
 				<li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li>
 				<li><b>multiple</b> (<i>boolean</i>) defines whether a filtering rule will be added to the already applied filters (<i>true</i>, default), or previous filters should be removed in advance (<i>false</i>)</li>
-				<ul>
+				</ul>
 				</td>
 		</tr>
     </tbody>
@@ -507,18 +354,18 @@ Sorting data
 
 It is possible to sort data in the grid via the **sort()** method of data collection. The method takes an object with the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>) the id of a column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>dir</b></td>
+			<td><b>dir</b></td>
 			<td>(<i>string</i>) the direction of sorting "asc" or "desc"</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>as</b></td>
+			<td><b>as</b></td>
 			<td>(<i>function</i>) a function that specifies the type to sort data as</td>
 		</tr>
     </tbody>
@@ -556,14 +403,14 @@ Getting the sorting state
 
 To get the current state of sorting data in TreeGrid, use the [](treegrid/api/treegrid_getsortingstate_method.md) method. The method returns an object with two attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>dir</b></td>
+			<td><b>dir</b></td>
 			<td>(<i>string</i>) the sorting direction (desc, asc)</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>)the id of a column that the treegrid is sorted by</td>
 		</tr>
     </tbody>
@@ -582,14 +429,14 @@ Editing data
 
 You can easily edit the desired cell of a treegrid with the help of the [editCell()](treegrid/api/treegrid_editcell_method.md) method. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string</i>) the id of a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>string</i>) the id of a column</td>
 		</tr>
     </tbody>
@@ -665,14 +512,14 @@ treegrid.export.xls({
 
 Export settings include:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>url</b></td>
+			<td><b>url</b></td>
 			<td>(<i>string</i>) the link to the server side where export will be processed. <br/>By default, it is <b>"//export.dhtmlx.com/excel"</b></td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>name</b></td>
+			<td><b>name</b></td>
 			<td>(<i>string</i>) the name of a ready Excel file</td>
 		</tr>
     </tbody>
@@ -682,26 +529,26 @@ Export settings include:
 
 You can export data from TreeGrid to the CSV format with the **csv()** method of the Export module. The method takes an object with export settings as a parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>asFile</b></td>
+			<td><b>asFile</b></td>
 			<td>(<i>boolean</i>) defines whether TreeGrid should be exported to a file, <i>true</i> by default. To export TreeGrid only as a CSV string, you need to set <i>asFile:false</i>.</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>name</b></td>
+			<td><b>name</b></td>
 			<td>(<i>string</i>) the name of the exported CSV file (if asFile is not set to <i>false</i>).</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>flat</b></td>
+			<td><b>flat</b></td>
 			<td>(<i>boolean</i>) defines whether TreeGrid data should be exported as a flat structure; <i>false</i> by default. </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>rowDelimiter</b></td>
+			<td><b>rowDelimiter</b></td>
 			<td>(<i>string</i>) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value. </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>columnDelimiter</b></td>
+			<td><b>columnDelimiter</b></td>
 			<td>(<i>string</i>) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value.</td>
 		</tr>
     </tbody>

@@ -3,7 +3,7 @@ sidebar_label: API overview
 title: TreeGrid API overview
 ---
 
-## Methods
+## TreeGrid methods
 
 | Name                                                  | Description                                                  |
 | ----------------------------------------------------- | ------------------------------------------------------------ |
@@ -45,7 +45,7 @@ title: TreeGrid API overview
 - А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
 :::
 
-## Events
+## TreeGrid events
 
 | Name                                                    | Description                                                    |
 | ------------------------------------------------------- | -------------------------------------------------------------- |
@@ -110,7 +110,7 @@ title: TreeGrid API overview
 - А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
 :::
 
-## Properties
+## TreeGrid properties
 
 | Name                                                   | Description                                                   |
 | ------------------------------------------------------ | ------------------------------------------------------------- |
@@ -140,3 +140,6 @@ title: TreeGrid API overview
 | [](treegrid/api/treegrid_tooltip_config.md)            | @getshort(treegrid/api/treegrid_tooltip_config.md)            |
 | [](treegrid/api/treegrid_width_config.md)              | @getshort(treegrid/api/treegrid_width_config.md)              |
 
+## Column properties
+
+See the list of all the available configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
