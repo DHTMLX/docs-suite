@@ -1286,7 +1286,7 @@ module.exports = {
                                       collapsed: true,
                                       items: [
                                         "form/api/container/container_attach_method",
-                                        "form/api/container/container_attachHTML_method",
+                                        //"form/api/container/container_attachHTML_method",
                                         "form/api/container/container_show_method",
                                         "form/api/container/container_hide_method",
                                         "form/api/container/container_enable_method",
