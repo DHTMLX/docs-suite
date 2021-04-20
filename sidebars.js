@@ -586,7 +586,13 @@ module.exports = {
                   label: "Events",
                   collapsed: true,
                   items: [
-
+                    "form/api/button/button_afterchangeproperties_event",
+                    "form/api/button/button_afterhide_event",
+                    "form/api/button/button_aftershow_event",
+                    "form/api/button/button_beforechangeproperties_event",
+                    "form/api/button/button_beforehide_event",
+                    "form/api/button/button_beforeshow_event",
+                    "form/api/button/button_click_event",
                   ],
                 },
                 {

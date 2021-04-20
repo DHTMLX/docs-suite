@@ -81,7 +81,7 @@ Load data into DataView
 
 Finally, you are able to load DataView with data. You can load inline or external data into DataView.
 
-- to load data from a local source, use the [](data_collection/api/parse.md) method of the Data Collection object:
+- to load data from a local source, use the [](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container",{
@@ -91,7 +91,7 @@ var dataview = new dhx.DataView("dataview_container",{
 dataview.data.parse(data);
 ~~~
 
-- to load data from an external file, use the [](data_collection/api/load.md) method of the Data Collection object:
+- to load data from an external file, use the [](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container",{
