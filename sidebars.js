@@ -541,7 +541,6 @@ module.exports = {
                                                 "form/api/form_beforevalidate_event",
                                                 "form/api/form_change_event",
                                                 "form/api/form_click_event",
-                                                "form/api/form_keydown_event",
                                             ],
                                         },
                                         {
@@ -587,14 +586,7 @@ module.exports = {
                                             label: "Events",
                                             collapsed: true,
                                             items: [
-                                                "form/api/button/button_afterchangeproperties_event",
-                                                "form/api/button/button_afterhide_event",
-                                                "form/api/button/button_aftershow_event",
-                                                "form/api/button/button_beforechangeproperties_event",
-                                                "form/api/button/button_beforehide_event",
-                                                "form/api/button/button_beforeshow_event",
-                                                "form/api/button/button_click_event",
-                                                "form/api/button/button_keydown_event",
+
                                             ],
                                         },
                                         {
@@ -644,7 +636,6 @@ module.exports = {
                                                 "form/api/calendar/calendar_beforevalidate_event",
                                                 "form/api/calendar/calendar_change_event",
                                                 "form/api/calendar/calendar_input_event",
-                                                "form/api/calendar/calendar_keydown_event",
                                             ],
                                         },
                                         {
@@ -693,7 +684,6 @@ module.exports = {
                                                 "form/api/checkbox/checkbox_beforeshow_event",
                                                 "form/api/checkbox/checkbox_beforevalidate_event",
                                                 "form/api/checkbox/checkbox_change_event",
-                                                "form/api/checkbox/checkbox_keydown_event",
                                             ],
                                         },
                                         {
@@ -742,7 +732,6 @@ module.exports = {
                                                 "form/api/checkbox_group/checkboxgroup_beforeshow_event",
                                                 "form/api/checkbox_group/checkboxgroup_beforevalidate_event",
                                                 "form/api/checkbox_group/checkboxgroup_change_event",
-                                                "form/api/checkbox_group/checkboxgroup_keydown_event",
                                             ],
                                         },
                                         {
@@ -792,7 +781,6 @@ module.exports = {
                                                 "form/api/colorpicker/colorpicker_beforevalidate_event",
                                                 "form/api/colorpicker/colorpicker_change_event",
                                                 "form/api/colorpicker/colorpicker_input_event",
-                                                "form/api/colorpicker/colorpicker_keydown_event",
                                             ],
                                         },
                                         {
@@ -841,7 +829,6 @@ module.exports = {
                                                 "form/api/combo/combo_beforeshow_event",
                                                 "form/api/combo/combo_beforevalidate_event",
                                                 "form/api/combo/combo_change_event",
-                                                "form/api/combo/combo_keydown_event",
                                             ],
                                         },
                                         {
@@ -849,47 +836,6 @@ module.exports = {
                                             id: "form/api/combo/api_combo_properties",
                                         },
                                     ],
-                                },
-                                {
-                                  type: "category",
-                                  label: "Container API",
-                                  collapsed: true,
-                                  items: [
-                                    {
-                                      type: "category",
-                                      label: "Methods",
-                                      collapsed: true,
-                                      items: [
-                                        "form/api/container/container_attach_method",
-                                        "form/api/container/container_attachhtml_method",
-                                        "form/api/container/container_show_method",
-                                        "form/api/container/container_hide_method",
-                                        "form/api/container/container_enable_method",
-                                        "form/api/container/container_disable_method",
-                                        "form/api/container/container_isvisible_method",
-                                        "form/api/container/container_isdisabled_method",
-                                        "form/api/container/container_setproperties_method",
-                                        "form/api/container/container_getproperties_method",
-                                      ],
-                                    },
-                                    {
-                                      type: "category",
-                                      label: "Events",
-                                      collapsed: true,
-                                      items: [
-                                        "form/api/container/container_afterchangeproperties_event",
-                                        "form/api/container/container_afterhide_event",
-                                        "form/api/container/container_aftershow_event",
-                                        "form/api/container/container_beforechangeproperties_event",
-                                        "form/api/container/container_beforehide_event",
-                                        "form/api/container/container_beforeshow_event",
-                                      ],
-                                    },
-                                    {
-                                      type: "doc",
-                                      id: "form/api/container/api_container_properties",
-                                    },
-                                  ],
                                 },
                                 {
                                     type: "category",
@@ -931,7 +877,6 @@ module.exports = {
                                                 "form/api/input/input_beforevalidate_event",
                                                 "form/api/input/input_change_event",
                                                 "form/api/input/input_input_event",
-                                                "form/api/input/input_keydown_event",
                                             ],
                                         },
                                         {
@@ -979,7 +924,6 @@ module.exports = {
                                                 "form/api/radiogroup/radiogroup_beforeshow_event",
                                                 "form/api/radiogroup/radiogroup_beforevalidate_event",
                                                 "form/api/radiogroup/radiogroup_change_event",
-                                                "form/api/radiogroup/radiogroup_keydown_event",
                                             ],
                                         },
                                         {
@@ -1031,7 +975,6 @@ module.exports = {
                                                 "form/api/select/select_beforevalidate_event",
                                                 "form/api/select/select_change_event",
                                                 "form/api/select/select_changeoptions_event",
-                                                "form/api/select/select_keydown_event",
                                             ],
                                         },
                                         {
@@ -1129,7 +1072,6 @@ module.exports = {
                                                 "form/api/slider/slider_beforehide_event",
                                                 "form/api/slider/slider_beforeshow_event",
                                                 "form/api/slider/slider_change_event",
-                                                "form/api/slider/slider_keydown_event",
                                             ],
                                         },
                                         {
@@ -1257,7 +1199,6 @@ module.exports = {
                                                 "form/api/textarea/textarea_beforevalidate_event",
                                                 "form/api/textarea/textarea_change_event",
                                                 "form/api/textarea/textarea_input_event",
-                                                "form/api/textarea/textarea_keydown_event",
                                             ],
                                         },
                                         {
@@ -1307,7 +1248,6 @@ module.exports = {
                                                 "form/api/timepicker/timepicker_beforevalidate_event",
                                                 "form/api/timepicker/timepicker_change_event",
                                                 "form/api/timepicker/timepicker_input_event",
-                                                "form/api/timepicker/timepicker_keydown_event",
                                             ],
                                         },
                                         {
@@ -1330,7 +1270,6 @@ module.exports = {
                                 "form/checkboxgroup",
                                 "form/colorpicker",
                                 "form/combo",
-                                "form/container",
                                 "form/input",
                                 "form/radiogroup",
                                 "form/select",
@@ -1405,7 +1344,6 @@ module.exports = {
                     "grid/api/grid_aftercolumnshow_event",
                     "grid/api/grid_aftereditend_event",
                     "grid/api/grid_aftereditstart_event",
-                    "grid/api/grid_afterkeydown_event",
                     "grid/api/grid_afterresizeend_event",
                     "grid/api/grid_afterrowdrag_event",
                     "grid/api/grid_afterrowdrop_event",
@@ -1417,7 +1355,6 @@ module.exports = {
                     "grid/api/grid_beforecolumnshow_event",
                     "grid/api/grid_beforeeditend_event",
                     "grid/api/grid_beforeeditstart_event",
-                    "grid/api/grid_beforekeydown_event",
                     "grid/api/grid_beforeresizestart_event",
                     "grid/api/grid_beforerowdrag_event",
                     "grid/api/grid_beforerowdrop_event",
