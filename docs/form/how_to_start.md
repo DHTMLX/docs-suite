@@ -138,22 +138,9 @@ var form = new dhx.Form("form_container", {
 
 {{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
 
-### Configuration properties:
+### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-- form/api/form_align_property.md - sets the alignment of controls inside the control group
-- form/api/form_cols_property.md - arranges controls inside the control group horizontally
-- form/api/form_css_property.md - the name of a CSS class(es) applied to the control group
-- form/api/form_disabled_property.md - makes a form disabled
-- form/api/form_height_property.md - sets the height of the control group
-- form/api/form_hidden_property.md - defines whether a form is hidden
-- form/api/form_padding_property.md - sets padding for content inside the control group
-- form/api/form_rows_property.md - arranges controls inside the control group vertically
-- form/api/form_title_property.md - specifies the title of the control group
-- form/api/form_width_property.md - sets the width of the control group
-}}
-
+You can find the full list of Form configuration properties in the [Form API overview](form/api/api_overview.md#properties) article.
 
 
 

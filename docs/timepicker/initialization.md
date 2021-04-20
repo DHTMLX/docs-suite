@@ -72,24 +72,11 @@ var timepicker = new dhx.Timepicker("timepicker_container", {
 });
 ~~~
 
-There is a set of properties you can specify for TimePicker to optimize its configuration for your needs. Read the details below.
-
-
 ### Configuration properties
 
-You can specify the following properties in the configuration object of TimePicker:
+There is a set of properties you can specify for TimePicker to optimize its configuration for your needs. 
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- timepicker/api/timepicker_controls_config.md - defines whether a timepicker is equipped with the Close and Save buttons
-- timepicker/api/timepicker_css_config.md -  adds style classes for the component
-- timepicker/api/timepicker_timeformat_config.md - defines what clock format is activated: the 12-hour or 24-hour one
-- timepicker/api/timepicker_value_config.md - the time value to be set on initialization of the timepicker
-- timepicker/api/timepicker_valueformat_config.md - defines the format of the value to be applied when working with TimePicker events
-}}
-
-The detailed information on configuration options can be found in the [](timepicker/configuration.md) article.
+The detailed information on TimePicker configuration options can be found in the [TimePicker API overview](timepicker/api/api_overview.md#properties) article.
 
 Set initial value (optional)
 --------------------

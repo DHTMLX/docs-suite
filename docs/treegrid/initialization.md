@@ -97,46 +97,11 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-There is a set of properties you can specify for TreeGrid to optimize its configuration for your needs. Read the details below.
-
-
-
 ### Configuration properties
 
-There is a list of properties that you can specify in the TreeGrid configuration object (the second parameter of the constructor function):
+There is a set of properties you can specify for TreeGrid to optimize its configuration for your needs. 
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- treegrid/api/treegrid_adjust_config.md - defines whether the width of columns is automatically adjusted to the width of their content
-- treegrid/api/treegrid_autowidth_config.md - makes treegrid's columns to fit the size of a treegrid
-treegrid/api/treegrid_columns_config.md - defines the configuration of grid columns
-- treegrid/api/treegrid_css_config.md - adds style classes to TreeGrid
-- treegrid/api/treegrid_data_config.md - sets a data set for a grid
-- treegrid/api/treegrid_dragcopy_config.md - defines that a row is copied to a target during drag-n-drop
-- treegrid/api/treegrid_dragitem_config.md - enables the possibility to reorder treegrid columns by drag and drop
-- treegrid/api/treegrid_dragmode_config.md - enables drag-n-drop in Grid
-- treegrid/api/treegrid_editable_config.md - enables editing in TreeGrid columns
-- treegrid/api/treegrid_eventhandlers_config.md - adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
-- treegrid/api/treegrid_footerrowheight_config.md - sets the height of a row inside the footer, 40 by default
-- treegrid/api/treegrid_grouptitletemplate_config.md - sets a template to the title of a group
-- treegrid/api/treegrid_headerrowheight_config.md - sets the height of a row inside the header, 40 by default
-- treegrid/api/treegrid_height_config.md - sets the height of a grid
-- treegrid/api/treegrid_htmlenable_config.md - specifies the HTML content (inner HTML) of TreeGrid columns
-- treegrid/api/treegrid_leftsplit_config.md - sets the number of columns that should be frozen, thus spllitting a grid into the static and scrollable parts
-- treegrid/api/treegrid_resizable_config.md - defines whether columns can be resized
-- treegrid/api/treegrid_rowcss_config.md - sets a custom styling to a row
-- treegrid/api/treegrid_rowheight_config.md - sets the height of a grid row, 40 by default
-- treegrid/api/treegrid_selection_config.md - switches selection in a grid on/off
-- treegrid/api/treegrid_sortable_config.md - defines whether sorting on clicking headers of columns is enabled
-- treegrid/api/treegrid_spans_config.md - defines the configuration of cols/rows spans
-- treegrid/api/treegrid_tooltip_config.md - enables a tooltip on hovering over the content of a column
-- treegrid/api/treegrid_width_config.md - sets the width of a grid
-
-}}
-
-
-
+See the detailed information on configuration properties of TreeGrid in the [TreeGrid API overview](treegrid/api/api_overview.md#properties) article.
 
 Load data into TreeGrid
 ------------------

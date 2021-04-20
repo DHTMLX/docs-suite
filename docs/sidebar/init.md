@@ -71,17 +71,7 @@ var sidebar = new dhx.Sidebar("sidebar_container",{
 
 ### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- sidebar/api/sidebar_collapsed_config.md - defines that a sidebar is initialized in the collapsed state
-- sidebar/api/sidebar_css_config.md - adds style classes for the component
-- sidebar/api/sidebar_data_config.md - specifies an array of data objects to set into Sidebar 
-- sidebar/api/sidebar_menucss_config.md - adds style classes to all containers of Sidebar controls with nested items
-- sidebar/api/sidebar_minwidth_config.md - sets the minimal width of a sidebar in the collapsed state, 69 by default
-- sidebar/api/sidebar_width_config.md - sets the width of a sidebar, 200 by default
-
-}}
+The detailed information on Sidebar configuration options can be found in the [Sidebar API overview](sidebar/api/api_overview.md#properties) article.
 
 Load data into Sidebar
 ------------------

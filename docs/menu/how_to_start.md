@@ -69,15 +69,7 @@ var menu = new dhx.Menu("menu_container");
 
 ### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- menu/api/menu_css_config.md - the name(s) of CSS class(es) used for Menu
-- menu/api/menu_data_config.md - specifies an array of data objects to set into Menu
-- menu/api/menu_menucss_config.md - adds style classes to all containers of Menu controls with nested items
-- menu/api/menu_navigationtype_config.md - sets the action that opens menu
-
-}}
+You can find the full list of Menu configuration properties in the [Menu API overview](menu/api/api_overview.md#properties) article.
 
 Load data into Menu
 ------------------

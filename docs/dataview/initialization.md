@@ -70,11 +70,11 @@ var dataview = new dhx.DataView("dataview_container", {
 });
 ~~~
 
-There is a set of properties you can specify for DataView to optimize its configuration for your needs. Read the details below.
-
 ### Configuration properties
 
-The detailed information on Dataview configuration options can be found in the [Dataview API overview](dataview/api/api_overview.md#properties) article.
+There is a set of properties you can specify for DataView to optimize its configuration for your needs.
+
+The detailed information on DataView configuration options can be found in the [Dataview API overview](dataview/api/api_overview.md#properties) article.
 
 Load data into DataView
 ---------------------
