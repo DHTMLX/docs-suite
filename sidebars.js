@@ -574,6 +574,7 @@ module.exports = {
                                             items: [
                                                 "form/api/button/button_disable_method",
                                                 "form/api/button/button_enable_method",
+                                                "form/api/button/button_focus_method",
                                                 "form/api/button/button_getproperties_method",
                                                 "form/api/button/button_hide_method",
                                                 "form/api/button/button_isdisabled_method",
@@ -1106,6 +1107,7 @@ module.exports = {
                                                 "form/api/slider/slider_clear_method",
                                                 "form/api/slider/slider_disable_method",
                                                 "form/api/slider/slider_enable_method",
+                                                "form/api/slider/slider_focus_method",
                                                 "form/api/slider/slider_getproperties_method",
                                                 "form/api/slider/slider_getvalue_method",
                                                 "form/api/slider/slider_getwidget_method",

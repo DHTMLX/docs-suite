@@ -61,7 +61,6 @@ title: Form API overview
 | [](form/api/form_title_property.md)    | @getshort(form/api/form_title_property.md)    |
 | [](form/api/form_width_property.md)    | @getshort(form/api/form_width_property.md)    |
 
-
 ##  Button API
 
 ### Methods
@@ -76,6 +75,7 @@ title: Form API overview
 | [](form/api/button/button_isvisible_method.md)     | @getshort(form/api/button/button_isvisible_method.md)     |
 | [](form/api/button/button_setproperties_method.md) | @getshort(form/api/button/button_setproperties_method.md) |
 | [](form/api/button/button_show_method.md)          | @getshort(form/api/button/button_show_method.md)          |
+| [](button/button_focus_method.md)                  | @getshort(button/button_focus_method.md)                  |
 
 ### Events
 
@@ -531,6 +531,7 @@ title: Form API overview
 | [](form/api/slider/slider_setproperties_method.md) | @getshort(form/api/slider/slider_setproperties_method.md) |
 | [](form/api/slider/slider_setvalue_method.md)      | @getshort(form/api/slider/slider_setvalue_method.md)      |
 | [](form/api/slider/slider_show_method.md)          | @getshort(form/api/slider/slider_show_method.md)          |
+| [](slider/slider_focus_method.md)                  | @getshort(slider/slider_focus_method.md)                  |
 
 ### Events
 
