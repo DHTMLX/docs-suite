@@ -85,31 +85,12 @@ var tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-There is a set of properties you can specify for Tree to optimize its configuration for your needs. Read the details below.
-
 
 ### Configuration properties
 
+There is a set of properties you can specify for Tree to optimize its configuration for your needs.
 
-You can specify the following properties in the configuration object of List:
-
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- tree/api/tree_autoload_config.md - defines that the structure of a tree is being built while opening items
-- tree/api/tree_checkbox_config.md - adds checkboxes to tree items
-- tree/api/tree_css_config.md - adds a CSS class(es) to the component
-- tree/api/tree_data_config.md - sets a data set for a tree
-- tree/api/tree_dragcopy_config.md - defines that an item is copied to a target during drag-n-drop
-- tree/api/tree_dragmode_config.md - enables drag-n-drop in Tree
-- tree/api/tree_dropbehaviour_config.md - defines the behaviour of a dragged item
-- tree/api/tree_editable_config.md - enables editing of Tree items on a double-click
-- tree/api/tree_icon_config.md - allows adding custom icons for tree items
-- tree/api/tree_keynavigation_config.md - enables key navigation in a tree
-- tree/api/tree_rootid_config.md - sets an id for the root element
-- tree/api/tree_selection_config.md - enables selection of Tree items
-
-}}
+See the detailed information on configuration properties of Tree in the [Tree API overview](tree/api/api_overview.md#properties) article.
 
 Load data into Tree
 ---------------------

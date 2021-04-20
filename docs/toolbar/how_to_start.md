@@ -69,14 +69,8 @@ var toolbar = new dhx.Toolbar("toolbar_container", {
 
 ### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
+See the detailed information on configuration properties of Toolbar in the [Toolbar API overview](toolbar/api/api_overview.md#properties) article.
 
-- toolbar/api/toolbar_css_config.md - adds style classes to Toolbar
-- toolbar/api/toolbar_data_config.md - specifies an array of data objects to set into Toolbar
-- toolbar/api/toolbar_menucss_config.md - adds style classes to all containers of Toolbar controls with nested items
-
-}}
 
 Load data into Toolbar
 ------------------

@@ -382,12 +382,12 @@ module.exports = {
       //Dataview
       {
         type: "category",
-        label: "Dataview",
+        label: "DataView",
         items: [
           "dataview/index",
           {
             type: "category",
-            label: "Dataview API",
+            label: "DataView API",
             items: [
               "dataview/api/api_overview",
               {
@@ -1677,26 +1677,25 @@ module.exports = {
               {
                 type: "category",
                 label: "Selection API",
-                items: [
-                  {
-                    type: "category",
-                    label: "Methods",
-                    items: [
-                      "list/api/selection/selection_disable_method",
-                      "list/api/selection/selection_enable_method",
-                    ],
-                  },
+                items: [{
+                  type: "category",
+                  label: "Methods",
+                  items: [
+                    "list/api/selection/selection_disable_method",
+                    "list/api/selection/selection_enable_method",
+                  ],
+                },
 
-                  {
-                    type: "category",
-                    label: "Events",
-                    items: [
-                      "list/api/selection/selection_afterselect_event",
-                      "list/api/selection/selection_afterunselect_event",
-                      "list/api/selection/selection_beforeselect_event",
-                      "list/api/selection/selection_beforeunselect_event",
-                    ],
-                  },
+                {
+                  type: "category",
+                  label: "Events",
+                  items: [
+                    "list/api/selection/selection_afterselect_event",
+                    "list/api/selection/selection_afterunselect_event",
+                    "list/api/selection/selection_beforeselect_event",
+                    "list/api/selection/selection_beforeunselect_event",
+                  ],
+                },
                 ],
               },
             ],
@@ -1955,6 +1954,16 @@ module.exports = {
                   "ribbon/api/ribbon_menucss_config",
                 ],
               },
+              "ribbon/api/api_block_properties",
+              "ribbon/api/api_button_properties",
+              "ribbon/api/api_customhtml_properties",
+              "ribbon/api/api_imagebutton_properties",
+              "ribbon/api/api_input_properties",
+              "ribbon/api/api_navitem_properties",
+              "ribbon/api/api_selectbutton_properties",
+              "ribbon/api/api_separator_properties",
+              "ribbon/api/api_spacer_properties",
+              "ribbon/api/api_title_properties",
             ],
           },
           "ribbon/how_to_start",
@@ -2435,15 +2444,14 @@ module.exports = {
               {
                 type: "category",
                 label: "Selection API",
-                items: [
-                  {
-                    type: "category",
-                    label: "Methods",
-                    items: [
-                      "tree/api/selection/selection_disable_method",
-                      "tree/api/selection/selection_enable_method",
-                    ],
-                  },
+                items: [{
+                  type: "category",
+                  label: "Methods",
+                  items: [
+                    "tree/api/selection/selection_disable_method",
+                    "tree/api/selection/selection_enable_method",
+                  ],
+                },
 
                   {
                     type: "category",
@@ -2612,32 +2620,32 @@ module.exports = {
                   "treegrid/api/treegrid_width_config",
                 ],
               },
+              "treegrid/api/api_treegridcolumn_properties",
               {
                 type: "category",
                 label: "Selection API",
-                items: [
-                  {
-                    type: "category",
-                    label: "Methods",
-                    items: [
-                      "treegrid/api/selection/selection_afterselect_event",
-                      "treegrid/api/selection/selection_afterunselect_event",
-                      "treegrid/api/selection/selection_beforeselect_event",
-                      "treegrid/api/selection/selection_beforeunselect_event",
-                    ],
-                  },
+                items: [{
+                  type: "category",
+                  label: "Methods",
+                  items: [
+                    "treegrid/api/selection/selection_disable_method",
+                    "treegrid/api/selection/selection_enable_method",
+                    "treegrid/api/selection/selection_getcell_method",
+                    "treegrid/api/selection/selection_removecell_method",
+                    "treegrid/api/selection/selection_setcell_method",
+                  ],
+                },
 
-                  {
-                    type: "category",
-                    label: "Events",
-                    items: [
-                      "treegrid/api/selection/selection_disable_method",
-                      "treegrid/api/selection/selection_enable_method",
-                      "treegrid/api/selection/selection_getcell_method",
-                      "treegrid/api/selection/selection_removecell_method",
-                      "treegrid/api/selection/selection_setcell_method",
-                    ],
-                  },
+                {
+                  type: "category",
+                  label: "Events",
+                  items: [
+                    "treegrid/api/selection/selection_afterselect_event",
+                    "treegrid/api/selection/selection_afterunselect_event",
+                    "treegrid/api/selection/selection_beforeselect_event",
+                    "treegrid/api/selection/selection_beforeunselect_event",
+                  ],
+                },
                 ],
               },
             ],

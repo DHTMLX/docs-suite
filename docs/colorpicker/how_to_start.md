@@ -109,7 +109,7 @@ var colorExample = document.querySelector(".dhx_color-sample");
 
 ### Configuration properties
 
-The detailed information on configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
+The detailed information on ColorPicker configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
 
 Select initial color (optional)
 ----------------

@@ -121,7 +121,7 @@ var chart = new dhx.Chart("chart_container", config);
 
 ### Configuration properties
 
-See the full list of all available configuration properties in the article chart/configuration_properties.md.
+See the full list of all available configuration properties of Chart in the [Chart API overview](chart/api/api_overview.md#properties) article.
 
 ## Load data into Chart
 

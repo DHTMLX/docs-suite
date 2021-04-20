@@ -69,16 +69,9 @@ var ribbon = new dhx.Ribbon("ribbon_container", {
 
 {{editor	https://snippet.dhtmlx.com/1gd5tbcf	Ribbon. Basic Initialization}}
 
-### Configuration properties:
+### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- ribbon/api/ribbon_css_config.md - adds style classes to Ribbon
-- ribbon/api/ribbon_data_config.md - specifies an array of data objects to set into Ribbon
-- ribbon/api/ribbon_menucss_config.md - adds style classes to all containers of Ribbon controls with nested items
-
-}}
+The detailed information on Ribbon configuration options can be found in the [Ribbon API overview](ribbon/api/api_overview.md#properties) article.
 
 Load data into Ribbon
 ------------------

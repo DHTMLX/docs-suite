@@ -54,26 +54,7 @@ var popup = new dhx.Popup();
 popup.show("popup_container");
 ~~~
 
-To show a created popup on a page, you should call the [](popup/api/popup_show_method.md) method after initialization of the component. It takes several parameters:
-
-todotw нужно будет удалить эту таблицу, это дубль информации, к тому же таблица ломает следующий заголовок
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>element</b></td>
-			<td>(<i>HTMLElement</i>) mandatory, the container to place a popup in</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
-			<td>(<i>object</i>) optional, the configuration object of a popup. Can contain the properties below:
-            <ul>
-                <li><b>centering</b> - (<i>boolean</i>) defines whether a popup should be centered relative to the element, <i>true</i> by default</li>
-                <li><b>auto</b> - (<i>boolean</i>) enables autopositioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</li>
-                <li><b>mode</b> - (<i>string</i>) the position relative to the element to show a popup at:"left","right","bottom" (default),"top"</li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table> 
+To show a created popup on a page, you should call the [](popup/api/popup_show_method.md) method after initialization of the component.
     
 ### Set content
 

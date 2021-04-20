@@ -124,19 +124,9 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-There is a set of properties you can specify for Pagination to optimize its configuration for your needs. Read the details below.
-
 ### Configuration properties
 
-There is a list of properties that you can specify in the Pagination configuration object (the second parameter of the constructor function):
+There is a set of properties you can specify in the Pagination configuration object (the second parameter of the constructor function). 
 
-todotw скорее всего можно просто сослаться на API
-{{api
+See the detailed information on configuration properties of Pagination in the [Pagination API overview](pagination/api/api_overview.md#properties) article.
 
-- pagination/api/pagination_css_config.md - adds style classes to the pagination
-- pagination/api/pagination_data_config.md - the data collection of a widget to set into the pagination
-- pagination/api/pagination_inputwidth_config.md - optional, sets the width for the input of the pagination
-- pagination/api/pagination_page_config.md - optional, the index of the initial page set in the pagination
-- pagination/api/pagination_pagesize_config.md - optional, the number of items displayed per page
-
-}}

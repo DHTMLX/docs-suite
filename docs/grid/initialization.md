@@ -80,7 +80,7 @@ Initialize Grid
 Initialize Grid with the `dhx.Grid` object constructor. The constructor has two parameters:
 
 - the HTML container for Grid,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js
 // creating dhtmlxGrid
@@ -98,43 +98,12 @@ var grid = new dhx.Grid("grid_container", {
 
 {{editor	https://snippet.dhtmlx.com/luh8d0vv	Grid. Basic Initialization}}
 
-There is a set of properties you can specify for Grid to optimize its configuration for your needs. Read the details below.
-
+ 
 ### Configuration properties
 
-There is a list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function):
+There is a set of properties you can specify for Grid to optimize its configuration for your needs.
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- grid/api/grid_adjust_config.md - defines whether the width of columns is automatically adjusted to the width of their content
-- grid/api/grid_autoemptyrow_config.md - adds an empty row after the last filled row in the Grid
-- grid/api/grid_autowidth_config.md - makes grid's columns to fit the size of a grid
-- grid/api/grid_columns_config.md - defines the configuration of grid columns
-- grid/api/grid_css_config.md - adds style classes to Grid
-- grid/api/grid_data_config.md - sets a data set for a grid
-- grid/api/grid_dragcopy_config.md - defines that a row is copied to a target during drag-n-drop
-- grid/api/grid_dragitem_config.md - enables the possibility to reorder grid columns by drag and drop
-- grid/api/grid_dragmode_config.md - enables drag-n-drop in Grid
-- grid/api/grid_editable_config.md - enables editing in Grid columns
-- grid/api/grid_eventhandlers_config.md - adds event handlers to HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
-- grid/api/grid_footerrowheight_config.md - sets the height of a row inside the footer, 40 by default
-- grid/api/grid_headerrowheight_config.md - sets the height of a row inside the header, 40 by default
-- grid/api/grid_height_config.md - sets the height of a grid
-- grid/api/grid_htmlenable_config.md - specifies the HTML content (inner HTML) of Grid columns
-- grid/api/grid_keynavigation_config.md - enables keyboard navigation in Grid
-- grid/api/grid_leftsplit_config.md - sets the number of columns that should be frozen, thus splitting a grid into the static and scrollable parts
-- grid/api/grid_multiselection_config.md - enables multi-row/multi-cell selection in Grid
-- grid/api/grid_resizable_config.md - defines whether columns can be resized
-- grid/api/grid_rowcss_config.md - sets a custom styling to a row
-- grid/api/grid_rowheight_config.md - sets the height of a grid row, 40 by default
-- grid/api/grid_selection_config.md - switches selection in a grid on/off
-- grid/api/grid_sortable_config.md - defines whether sorting on clicking headers of columns is enabled
-- grid/api/grid_spans_config.md - defines the configuration of cols/rows spans
-- grid/api/grid_tooltip_config.md - enables a tooltip on hovering over the content of a column, <i>true</i> by default
-- grid/api/grid_width_config.md - sets the width of a grid
-
-}}
+See the full list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function) in the [Grid API overview](grid/api/api_overview.md#grid-properties) article.
 
 Load data into Grid
 ------------------
