@@ -27,6 +27,7 @@ title: Form API overview
 | [](form/api/form_setvalue_method.md)      | @getshort(form/api/form_setvalue_method.md)      |
 | [](form/api/form_show_method.md)          | @getshort(form/api/form_show_method.md)          |
 | [](form/api/form_validate_method.md)      | @getshort(form/api/form_validate_method.md)      |
+| [](form_blur_method.md)                   | @getshort(form_blur_method.md)                   |
 
 ### Events
 
@@ -76,6 +77,7 @@ title: Form API overview
 | [](form/api/button/button_setproperties_method.md) | @getshort(form/api/button/button_setproperties_method.md) |
 | [](form/api/button/button_show_method.md)          | @getshort(form/api/button/button_show_method.md)          |
 | [](button/button_focus_method.md)                  | @getshort(button/button_focus_method.md)                  |
+| [](button/button_blur_method.md)                   | @getshort(button/button_blur_method.md)                   |
 
 ### Events
 
@@ -115,6 +117,7 @@ title: Form API overview
 | [](form/api/calendar/calendar_setvalue_method.md)      | @getshort(form/api/calendar/calendar_setvalue_method.md)      |
 | [](form/api/calendar/calendar_show_method.md)          | @getshort(form/api/calendar/calendar_show_method.md)          |
 | [](form/api/calendar/calendar_validate_method.md)      | @getshort(form/api/calendar/calendar_validate_method.md)      |
+| [](form/api/calendar/calendar_blur_method.md)          | @getshort(form/api/calendar/calendar_blur_method.md)          |
 
 ### Events
 
@@ -157,6 +160,7 @@ title: Form API overview
 | [](form/api/checkbox/checkbox_setvalue_method.md)      | @getshort(form/api/checkbox/checkbox_setvalue_method.md)      |
 | [](form/api/checkbox/checkbox_show_method.md)          | @getshort(form/api/checkbox/checkbox_show_method.md)          |
 | [](form/api/checkbox/checkbox_validate_method.md)      | @getshort(form/api/checkbox/checkbox_validate_method.md)      |
+| [](form/api/checkbox/checkbox_blur_method.md)          | @getshort(form/api/checkbox/checkbox_blur_method.md)          |
 
 ### Events
 
@@ -198,6 +202,7 @@ title: Form API overview
 | [](form/api/checkbox_group/checkboxgroup_setvalue_method.md)      | @getshort(form/api/checkbox_group/checkboxgroup_setvalue_method.md)      |
 | [](form/api/checkbox_group/checkboxgroup_show_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_show_method.md)          |
 | [](form/api/checkbox_group/checkboxgroup_validate_method.md)      | @getshort(form/api/checkbox_group/checkboxgroup_validate_method.md)      |
+| [](form/api/checkbox_group/checkboxgroup_blur_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_blur_method.md)          |
 
 ### Events
 
@@ -243,6 +248,7 @@ title: Form API overview
 | [](form/api/colorpicker/colorpicker_setvalue_method.md)      | @getshort(form/api/colorpicker/colorpicker_setvalue_method.md)      |
 | [](form/api/colorpicker/colorpicker_show_method.md)          | @getshort(form/api/colorpicker/colorpicker_show_method.md)          |
 | [](form/api/colorpicker/colorpicker_validate_method.md)      | @getshort(form/api/colorpicker/colorpicker_validate_method.md)      |
+| [](form/api/colorpicker/colorpicker_blur_method.md)          | @getshort(form/api/colorpicker/colorpicker_blur_method.md)          |
        
 
 ### Events
@@ -286,6 +292,7 @@ title: Form API overview
 | [](form/api/combo/combo_setvalue_method.md)      | @getshort(form/api/combo/combo_setvalue_method.md)      |
 | [](form/api/combo/combo_show_method.md)          | @getshort(form/api/combo/combo_show_method.md)          |
 | [](form/api/combo/combo_validate_method.md)      | @getshort(form/api/combo/combo_validate_method.md)      |
+| [](form/api/combo/combo_blur_method.md)          | @getshort(form/api/combo/combo_blur_method.md)          |
 
 ### Events
 
@@ -359,6 +366,7 @@ title: Form API overview
 | [](form/api/input/input_setvalue_method.md)      | @getshort(form/api/input/input_setvalue_method.md)      |
 | [](form/api/input/input_show_method.md)          | @getshort(form/api/input/input_show_method.md)          |
 | [](form/api/input/input_validate_method.md)      | @getshort(form/api/input/input_validate_method.md)      |
+| [](form/api/input/input_blur_method.md)          | @getshort(form/api/input/input_blur_method.md)          |
 
 ### Events
 
@@ -400,6 +408,7 @@ title: Form API overview
 | [](form/api/radiogroup/radiogroup_setvalue_method.md)      | @getshort(form/api/radiogroup/radiogroup_setvalue_method.md)      |
 | [](form/api/radiogroup/radiogroup_show_method.md)          | @getshort(form/api/radiogroup/radiogroup_show_method.md)          |
 | [](form/api/radiogroup/radiogroup_validate_method.md)      | @getshort(form/api/radiogroup/radiogroup_validate_method.md)      |
+| [](form/api/radiogroup/radiogroup_blur_method.md)          | @getshort(form/api/radiogroup/radiogroup_blur_method.md)          |
 
 ### Events
 
@@ -446,6 +455,7 @@ title: Form API overview
 | [](form/api/select/select_setvalue_method.md)      | @getshort(form/api/select/select_setvalue_method.md)      |
 | [](form/api/select/select_show_method.md)          | @getshort(form/api/select/select_show_method.md)          |
 | [](form/api/select/select_validate_method.md)      | @getshort(form/api/select/select_validate_method.md)      |
+| [](form/api/select/select_blur_method.md)          | @getshort(form/api/select/select_blur_method.md)          |
 
 ### Events
 
@@ -633,6 +643,7 @@ title: Form API overview
 | [](form/api/textarea/textarea_setvalue_method.md)      | @getshort(form/api/textarea/textarea_setvalue_method.md)      |
 | [](form/api/textarea/textarea_show_method.md)          | @getshort(form/api/textarea/textarea_show_method.md)          |
 | [](form/api/textarea/textarea_validate_method.md)      | @getshort(form/api/textarea/textarea_validate_method.md)      |
+| [](form/api/textarea/textarea_blur_method.md)          | @getshort(form/api/textarea/textarea_blur_method.md)          |
 
 ### Events
 
@@ -675,6 +686,7 @@ title: Form API overview
 | [](form/api/timepicker/timepicker_setvalue_method.md)      | @getshort(form/api/timepicker/timepicker_setvalue_method.md)      |
 | [](form/api/timepicker/timepicker_show_method.md)          | @getshort(form/api/timepicker/timepicker_show_method.md)          |
 | [](form/api/timepicker/timepicker_validate_method.md)      | @getshort(form/api/timepicker/timepicker_validate_method.md)      |
+| [](form/api/timepicker/timepicker_blur_method.md)          | @getshort(form/api/timepicker/timepicker_blur_method.md)          |
 
 ### Events
 
@@ -695,4 +707,3 @@ title: Form API overview
 ### Properties
 
 [List of the Timepicker properties](form/api/timepicker/api_timepicker_properties.md)
-

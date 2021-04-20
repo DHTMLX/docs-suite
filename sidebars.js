@@ -504,6 +504,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/form_blur_method",
                     "form/api/form_clear_method",
                     "form/api/form_destructor_method",
                     "form/api/form_disable_method",
@@ -572,6 +573,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/button/button_blur_method",
                     "form/api/button/button_disable_method",
                     "form/api/button/button_enable_method",
                     "form/api/button/button_focus_method",
@@ -613,6 +615,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/calendar/calendar_blur_method",
                     "form/api/calendar/calendar_clear_method",
                     "form/api/calendar/calendar_clearvalidate_method",
                     "form/api/calendar/calendar_disable_method",
@@ -663,6 +666,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/checkbox/checkbox_blur_method",
                     "form/api/checkbox/checkbox_clear_method",
                     "form/api/checkbox/checkbox_clearvalidate_method",
                     "form/api/checkbox/checkbox_disable_method",
@@ -712,6 +716,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/checkbox_group/checkboxgroup_blur_method",
                     "form/api/checkbox_group/checkboxgroup_clear_method",
                     "form/api/checkbox_group/checkboxgroup_clearvalidate_method",
                     "form/api/checkbox_group/checkboxgroup_disable_method",
@@ -761,6 +766,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/colorpicker/colorpicker_blur_method",
                     "form/api/colorpicker/colorpicker_clear_method",
                     "form/api/colorpicker/colorpicker_clearvalidate_method",
                     "form/api/colorpicker/colorpicker_disable_method",
@@ -811,6 +817,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/combo/combo_blur_method",
                     "form/api/combo/combo_clear_method",
                     "form/api/combo/combo_clearvalidate_method",
                     "form/api/combo/combo_disable_method",
@@ -901,6 +908,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/input/input_blur_method",
                     "form/api/input/input_clear_method",
                     "form/api/input/input_clearvalidate_method",
                     "form/api/input/input_disable_method",
@@ -950,6 +958,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/radiogroup/radiogroup_blur_method",
                     "form/api/radiogroup/radiogroup_clear_method",
                     "form/api/radiogroup/radiogroup_clearvalidate_method",
                     "form/api/radiogroup/radiogroup_disable_method",
@@ -999,6 +1008,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/select/select_blur_method",
                     "form/api/select/select_clear_method",
                     "form/api/select/select_clearvalidate_method",
                     "form/api/select/select_disable_method",
@@ -1228,6 +1238,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/textarea/textarea_blur_method",
                     "form/api/textarea/textarea_clear_method",
                     "form/api/textarea/textarea_clearvalidate_method",
                     "form/api/textarea/textarea_disable_method",
@@ -1277,6 +1288,7 @@ module.exports = {
                   label: "Methods",
                   collapsed: true,
                   items: [
+                    "form/api/timepicker/timepicker_blur_method",
                     "form/api/timepicker/timepicker_clear_method",
                     "form/api/timepicker/timepicker_clearvalidate_method",
                     "form/api/timepicker/timepicker_disable_method",

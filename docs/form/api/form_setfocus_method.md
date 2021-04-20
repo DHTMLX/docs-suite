@@ -9,16 +9,13 @@ title: setFocus
 @params:
 - name|id	string  the name of the control or its id (if the name attribute is not defined in the config of the control)
 
-
-
-
 @example:
 form.setFocus("checkbox");
 
 
 @template: api_method
 @descr:
-{{note The method is applicable to DatePicker, Checkbox, ColorPicker, Combo, Input, RadioGroup, Select, Textarea, TimePicker controls of Form.}}
+{{note The method is applicable to Button, DatePicker, Checkbox, CheckboxGroup, ColorPicker, Combo, Input, RadioGroup, Select, Slider, Textarea, TimePicker controls of Form.}}
 
 [Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
 
