@@ -24,7 +24,7 @@ combobox.isDisabled(); // -> returns true/false
 
 @related: combo/work_with_combo.md#checkingifacomboboxisdisabled
 
-@relatedsample: https://snippet.dhtmlx.com/7bujtsuu	Combobox. Enable And Disable
+**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
 @changelog: added in v6.4
 

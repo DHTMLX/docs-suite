@@ -32,7 +32,7 @@ The type of the value parameter depends on the applied [valueFormat](timepicker/
 
 
 
-@relatedsample: https://snippet.dhtmlx.com/5ccptwy7	Timepicker. Timepicker Events
+**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
 
 @relatedapi: 
 timepicker/api/timepicker_valueformat_config.md

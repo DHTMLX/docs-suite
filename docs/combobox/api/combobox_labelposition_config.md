@@ -13,7 +13,7 @@ var combo = new dhx.Combobox("combo_container", {
 });
 
 
-@relatedsample: https://snippet.dhtmlx.com/2936fray	Combobox. Label Position
+**Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)
 
 @changelog: added in v6.4
 

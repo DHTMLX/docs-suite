@@ -22,4 +22,4 @@ chart.events.on("serieClick", function (id, value) {
 @template: api_event
 @descr: This event can be used for Bar, X-Bar, Pie, Pie 3D, Donut charts.
 
-@relatedsample: https://snippet.dhtmlx.com/a1b9yfwo	Chart. Events
+**Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)

@@ -15,4 +15,4 @@ colorpicker.events.on("CancelClick",function(){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fllgaabo	Colorpicker. Events
+**Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)

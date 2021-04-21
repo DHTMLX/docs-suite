@@ -60,4 +60,4 @@ var tabbar = new dhx.Tabbar({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample: https://snippet.dhtmlx.com/47en9f0a	Tabbar. Custom Css
+**Related sample**: [Tabbar. Custom Css](https://snippet.dhtmlx.com/47en9f0a)

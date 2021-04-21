@@ -38,7 +38,7 @@ var config = chart.getSeries("A");
 @related:
 chart/usage.md#gettingseriesconfiguration
 
-@relatedsample: https://snippet.dhtmlx.com/9jtscd9q	Chart. Get Series
+**Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
 
 @changelog:
 

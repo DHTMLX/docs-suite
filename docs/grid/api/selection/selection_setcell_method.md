@@ -42,4 +42,4 @@ grid/api/selection/selection_removecell_method.md
 
 @changelog:
 
-@relatedsample: https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)

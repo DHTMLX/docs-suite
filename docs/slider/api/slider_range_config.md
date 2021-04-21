@@ -15,7 +15,7 @@ var slider = new dhx.Slider("slider_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/nfdr84oy	Slider. Range Mode Of The Slider
+**Related sample**: [Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
 @related:
 slider/initializing_slider.md#configurationproperties

@@ -23,4 +23,4 @@ Drag-n-drop can work in three modes:
 
 @related: list/configuration.md#dragndropofitems
 
-@relatedsample: https://snippet.dhtmlx.com/yfz6ai7j	List. Setup Drag Mode
+**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)

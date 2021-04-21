@@ -26,7 +26,7 @@ menu.hide();
 ~~~
 
 
-@relatedsample: https://snippet.dhtmlx.com/a9vbhxgd	Menu. Show/Hide Menu Item
+**Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
 
 
 

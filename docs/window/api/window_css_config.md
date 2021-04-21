@@ -58,4 +58,4 @@ dhxWindow.show();
 @related: window/how_to_start.md
 window/customization.md#styling
 
-@relatedsample: https://snippet.dhtmlx.com/t5mvhwx8	Window. Custom Styles
+**Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)

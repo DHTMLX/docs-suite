@@ -20,4 +20,4 @@ combo.events.on("Change", function(id){
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/n70eqx5l	Combobox. Events
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

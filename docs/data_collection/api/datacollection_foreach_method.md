@@ -37,7 +37,7 @@ The callback function takes three parameters:
 </table>
 
 
-@relatedsample: https://snippet.dhtmlx.com/wa6tcmtn	Data. ForEach
+**Related sample**: [Data. ForEach](https://snippet.dhtmlx.com/wa6tcmtn)
 
 
 @changelog: added in v6.4

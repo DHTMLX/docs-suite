@@ -26,7 +26,7 @@ Drag-n-drop can work in three modes:
 treegrid/configuration.md#dragndropofgridrows
 treegrid/initialization.md#initializetreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/43covmy2	TreeGrid. Setup Drag Mode
+**Related sample**: [TreeGrid. Setup Drag Mode](https://snippet.dhtmlx.com/43covmy2)
 
 @relatedapi: 
 treegrid/api/treegrid_afterrowdrag_event.md

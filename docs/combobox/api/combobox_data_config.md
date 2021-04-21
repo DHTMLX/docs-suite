@@ -36,7 +36,7 @@ var combo = new dhx.Combobox("combo_container",{
 @descr: 
 
 
-@relatedsample: https://snippet.dhtmlx.com/8bsb9dji	Combobox. Config Data
+**Related sample**: [Combobox. Config Data](https://snippet.dhtmlx.com/8bsb9dji)
 
 @changelog: added in v6.4
 

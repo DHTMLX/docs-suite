@@ -45,4 +45,4 @@ var palette = [
 @related: colorpicker/how_to_start.md#initializecolorpicker
 colorpicker/configuration.md
 
-@relatedsample: https://snippet.dhtmlx.com/j5gisdew	Colorpicker. Custom Palette Colors
+**Related sample**: [Colorpicker. Custom Palette Colors](https://snippet.dhtmlx.com/j5gisdew)

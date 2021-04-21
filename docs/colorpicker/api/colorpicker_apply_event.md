@@ -19,7 +19,7 @@ colorpicker.events.on("Apply", function() {
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fllgaabo	Colorpicker. Events
+**Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
 
 @changelog: added in v6.4
 

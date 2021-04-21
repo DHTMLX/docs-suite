@@ -70,4 +70,4 @@ var layout = new dhx.Layout("layout", {
 @related: layout/init.md#initializelayout
 layout/customization.md
 
-@relatedsample: https://snippet.dhtmlx.com/pwxmf0lx	Layout. Custom Css
+**Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)

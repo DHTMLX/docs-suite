@@ -50,7 +50,7 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
 @relatedapi:
 tree/api/tree_setstate_method.md
 
-@relatedsample: https://snippet.dhtmlx.com/xo6y6xi6	Tree. Getting Tree State
+**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
 
 @changelog:
 

@@ -25,7 +25,7 @@ Starting from v7.0, it is possible to show all items on the page at once by usin
 toolbar.show();
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 @related: toolbar/common_methods.md#hidingandshowingcontrols
 

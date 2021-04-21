@@ -33,4 +33,4 @@ list.editItem("1");
 @related: list/work_with_list.md#editingitems
 
 
-@relatedsample: https://snippet.dhtmlx.com/6wsxgswc	List. Edit Items
+**Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)

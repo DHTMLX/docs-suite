@@ -61,4 +61,4 @@ var colorpicker = new dhx.Colorpicker({
 
 @related: colorpicker/how_to_start.md#initializecolorpicker
 
-@relatedsample: https://snippet.dhtmlx.com/mnwi3sp0	Colorpicker. Custom CSS
+**Related sample**: [Colorpicker. Custom CSS](https://snippet.dhtmlx.com/mnwi3sp0)

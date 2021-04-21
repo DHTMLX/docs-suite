@@ -28,6 +28,6 @@ list.setFocus("item_id");
 @changelog:
 added in v6.3
 
-@relatedsample: https://snippet.dhtmlx.com/ermcjx3d	List. Set Active Index
+**Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
 
-```
+```todoapi 

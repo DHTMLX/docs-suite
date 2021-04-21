@@ -24,4 +24,4 @@ layout/cell_configuration.md#collapsibility
 
 @relatedapi: layout/api/layout_collapsed_config.md
 
-@relatedsample: https://snippet.dhtmlx.com/8u4ok0os	Layout. Collapsable
+**Related sample**: [Layout. Collapsable](https://snippet.dhtmlx.com/8u4ok0os)

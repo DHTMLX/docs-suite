@@ -28,4 +28,4 @@ The function takes the id of a row as a parameter and returns a string with the 
 @related: treegrid/configuration.md#rowstyle
 treegrid/initialization.md#initializetreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/3ojyoryn	TreeGrid. Custom Row Style
+**Related sample**: [TreeGrid. Custom Row Style](https://snippet.dhtmlx.com/3ojyoryn)

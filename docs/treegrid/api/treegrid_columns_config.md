@@ -170,5 +170,5 @@ Each column object may contain a set of properties. You will find the full list 
 treegrid/initialization.md#initializetreegrid
 treegrid/customization.md
 
-@relatedsample: https://snippet.dhtmlx.com/kob9385v	TreeGrid. Basic initialization
+**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 

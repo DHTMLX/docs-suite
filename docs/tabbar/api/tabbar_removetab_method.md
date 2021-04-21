@@ -24,4 +24,4 @@ tabbar.removeTab(id);
 
 @related: tabbar/work_with_tabbar.md#addingremovingtabs
 
-@relatedsample: https://snippet.dhtmlx.com/z5vjj83y	Tabbar. Remove Tab
+**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)

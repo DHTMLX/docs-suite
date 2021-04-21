@@ -19,4 +19,4 @@ var id = component.data.getId(0); // -> returns "1"
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/8e02xliz	Data. Get Id
+**Related sample**: [Data. Get Id](https://snippet.dhtmlx.com/8e02xliz)

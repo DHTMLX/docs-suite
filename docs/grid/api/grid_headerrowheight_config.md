@@ -23,4 +23,4 @@ The height of the header is calculated as a sum of all row heights in it.
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#headerfooterheight
 
-@relatedsample: https://snippet.dhtmlx.com/wjcjl80i	Grid. Rows Height
+**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)

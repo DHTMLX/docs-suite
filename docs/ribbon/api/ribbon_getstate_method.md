@@ -16,7 +16,7 @@ var state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"righ
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/coei9fys	Ribbon. Get State
+**Related sample**: [Ribbon. Get State](https://snippet.dhtmlx.com/coei9fys)
 
 @changelog:
 

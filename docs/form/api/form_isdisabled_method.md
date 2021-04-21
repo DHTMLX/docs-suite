@@ -32,4 +32,4 @@ form/api/form_enable_method.md
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/lthu8p6p	Form. Is Disabled
+**Related sample**: [Form. Is Disabled](https://snippet.dhtmlx.com/lthu8p6p)

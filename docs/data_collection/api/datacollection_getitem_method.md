@@ -28,4 +28,4 @@ var item = component.data.getItem(123);
 var text = item.text;
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/wz2sscrm	Data. Get Item
+**Related sample**: [Data. Get Item](https://snippet.dhtmlx.com/wz2sscrm)

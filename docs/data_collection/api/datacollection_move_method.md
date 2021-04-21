@@ -20,4 +20,4 @@ component.data.move("4",5); // moves the item with id:4 to the position with ind
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fi66bi8h	Data. Move
+**Related sample**: [Data. Move](https://snippet.dhtmlx.com/fi66bi8h)

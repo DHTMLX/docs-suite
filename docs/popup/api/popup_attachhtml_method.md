@@ -20,7 +20,7 @@ popup.show("popup");
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/ajv5qqxq	Popup. Html Content
+**Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 
 @changelog:

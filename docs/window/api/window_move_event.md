@@ -36,7 +36,7 @@ The **side** object contains four directions:
 - **bottom** - (*boolean*) optional, the bottom direction
 
 
-@relatedsample: https://snippet.dhtmlx.com/jfu4upwd	Window. Events
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md
 

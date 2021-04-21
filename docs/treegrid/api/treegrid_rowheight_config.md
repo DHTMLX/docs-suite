@@ -22,4 +22,4 @@ var grid = new dhx.Grid("grid_container", {
 @related: treegrid/configuration.md#rowheight
 treegrid/initialization.md#initializetreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/xl0i3yof	TreeGrid. Rows Height
+**Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)

@@ -85,7 +85,7 @@ Here is an example of a treeState object:
 @relatedapi:
 tree/api/tree_getstate_method.md
 
-@relatedsample: https://snippet.dhtmlx.com/g0539az1	Tree. Setting Tree State
+**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
 
 @changelog:
 

@@ -27,7 +27,7 @@ sidebar.show();
 
 @related: sidebar/work_with_sidebar.md#hidingandshowingcontrols
 
-@relatedsample: https://snippet.dhtmlx.com/5hsowdoy	Sidebar. Show/Hide
+**Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
 
 @changelog:
 

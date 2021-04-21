@@ -49,7 +49,7 @@ The callback function takes three parameters:
 
 
 
-@relatedsample: https://snippet.dhtmlx.com/9hfntqpy	Layout. ForEach
+**Related sample**: [Layout. ForEach](https://snippet.dhtmlx.com/9hfntqpy)
 
 @changelog: added in v6.4
 

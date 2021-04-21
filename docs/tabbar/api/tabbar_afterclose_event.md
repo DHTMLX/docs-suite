@@ -22,4 +22,4 @@ tabbar.events.on("AfterClose", function(id){
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/dld2qo1m	Tabbar. Events
+**Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)

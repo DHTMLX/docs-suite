@@ -33,7 +33,7 @@ The method may clear a form in one of three modes:
 
 @related:form/work_with_form.md#clearingform
 
-@relatedsample: https://snippet.dhtmlx.com/a64ih4ih	Form. Clear
+**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 
 @changelog: added in v6.1
 

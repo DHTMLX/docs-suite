@@ -60,4 +60,4 @@ var menu = new dhx.Menu({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample: https://snippet.dhtmlx.com/kfy2th5n	Menu. Custom Css
+**Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)

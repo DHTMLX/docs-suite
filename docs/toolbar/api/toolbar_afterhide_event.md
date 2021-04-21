@@ -21,4 +21,4 @@ toolbar.events.on("AfterHide", function(event){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/xvak1p5y	Toolbar. Events
+**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)

@@ -19,7 +19,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 If you set the property to *false*, the content of TreeGrid columns will be displayed as a *string* value.
 
-@relatedsample: https://snippet.dhtmlx.com/iubccmoi	TreeGrid. Html In Data
+**Related sample**: [TreeGrid. Html In Data](https://snippet.dhtmlx.com/iubccmoi)
 
 @related: treegrid/configuration.md#htmlcontentoftreegridcolumns
 treegrid/initialization.md#initializetreegrid

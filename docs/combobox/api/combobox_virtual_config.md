@@ -20,4 +20,4 @@ var combo = new dhx.Combobox("combo_container",{
 @related: combo/how_to_start.md#initializecombobox
 combo/configuration.md#dynamicrenderingofoptions
 
-@relatedsample: https://snippet.dhtmlx.com/5srwualw	Combobox. Virtual List
+**Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)

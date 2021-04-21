@@ -23,7 +23,7 @@ var target = new dhx.Grid("grid-target", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/23slivyz	Grid. Setup Drag Copy
+**Related sample**: [Grid. Setup Drag Copy](https://snippet.dhtmlx.com/23slivyz)
 
 @related: grid/initialization.md#initializegrid
 

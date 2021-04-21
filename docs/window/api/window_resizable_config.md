@@ -23,4 +23,4 @@ dhxWindow.show();
 @related: window/how_to_start.md
 window/configuration.md#resizing
 
-@relatedsample: https://snippet.dhtmlx.com/1suzi8gj	Window. Resizable Window.
+**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)

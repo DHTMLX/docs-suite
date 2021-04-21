@@ -138,5 +138,5 @@ grid.data.filter({
 ~~~
 
 
-@relatedsample: https://snippet.dhtmlx.com/csiwq3kj	Data. Filter
+**Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 

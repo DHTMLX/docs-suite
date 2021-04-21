@@ -46,7 +46,7 @@ var state = form.getValue();
 
 @related: form/work_with_form.md#gettingvaluesofcontrols
 
-@relatedsample: https://snippet.dhtmlx.com/odod5v12	Form. Get Value
+**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
 
 

@@ -24,6 +24,6 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid/configuration.md#editinggridandseparatecolumns
 treegrid/initialization.md#initializetreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/sdbfbv2n	TreeGrid. Editable Data
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 @changelog: added in v6.4

@@ -23,7 +23,7 @@ toolbar.setState({
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/h34uh1dr	Toolbar. Set State
+**Related sample**: [Toolbar. Set State](https://snippet.dhtmlx.com/h34uh1dr)
 
 @related: toolbar/common_methods.md#settinggettingvaluesandstates
 

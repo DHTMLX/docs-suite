@@ -85,7 +85,7 @@ grid.data.sort({
 });
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/lz351u47	Data. Sort
+**Related sample**: [Data. Sort](https://snippet.dhtmlx.com/lz351u47)
 
 @changelog: 
 The **config** parameter is added in v7.0. 

@@ -32,7 +32,7 @@ layout.getCell("sidebar").attach(sidebar);
 
 @related: layout/work_with_layout.md#attachingacomponenttoacell
 
-@relatedsample: https://snippet.dhtmlx.com/6wuxj6sh	Layout. Attach
+**Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
 @changelog:
 

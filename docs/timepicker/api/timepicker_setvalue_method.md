@@ -51,5 +51,5 @@ timepicker/api/timepicker_getvalue_method.md
 
 @changelog:
 
-@relatedsample: https://snippet.dhtmlx.com/6r8lkhbg	Timepicker. Set Timepicker Value
+**Related sample**: [Timepicker. Set Timepicker Value](https://snippet.dhtmlx.com/6r8lkhbg)
 

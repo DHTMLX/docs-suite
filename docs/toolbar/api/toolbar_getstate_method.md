@@ -40,7 +40,7 @@ var state = toolbar.getState();
 ~~~
 
 
-@relatedsample: https://snippet.dhtmlx.com/kvttdgad	Toolbar. Get State
+**Related sample**: [Toolbar. Get State](https://snippet.dhtmlx.com/kvttdgad)
 
 @related: toolbar/common_methods.md#settinggettingvaluesandstates
 

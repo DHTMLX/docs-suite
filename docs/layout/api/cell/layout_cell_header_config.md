@@ -18,7 +18,7 @@ var layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/bxqnzesl	Layout. Header
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
 @relatedapi: 
 layout/api/cell/layout_cell_headerheight_config.md

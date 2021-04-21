@@ -18,4 +18,4 @@ component.data.copy("4",5); // copies the item with id:4 to the position with in
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/9rws8r05	Data. Copy
+**Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)

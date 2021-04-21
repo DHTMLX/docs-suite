@@ -13,7 +13,7 @@ list.destructor();
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/f0zto6m4	List. Destructor
+**Related sample**: [List. Destructor](https://snippet.dhtmlx.com/f0zto6m4)
 
 @changelog:
 

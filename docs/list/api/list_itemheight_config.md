@@ -31,4 +31,4 @@ The default height of a list item is 37  when the [virtual](list/api/list_virtua
 
 @relatedapi: list/api/list_virtual_config.md
 
-@relatedsample: https://snippet.dhtmlx.com/89buovn2	List. Setup List Item Height
+**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)

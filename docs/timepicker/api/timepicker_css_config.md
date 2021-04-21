@@ -60,5 +60,5 @@ var timepicker = new dhx.Timepicker("timepicker", {
 @related: timepicker/customization.md#styling
 timepicker/initialization.md#initializetimepicker
 
-@relatedsample: https://snippet.dhtmlx.com/n4xfu4e9	Timepicker. Custom Style
+**Related sample**: [Timepicker. Custom Style](https://snippet.dhtmlx.com/n4xfu4e9)
 

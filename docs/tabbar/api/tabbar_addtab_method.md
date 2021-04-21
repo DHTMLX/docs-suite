@@ -51,4 +51,4 @@ The **view** object may include the following properties:
 
 @related: tabbar/work_with_tabbar.md#addingremovingtabs
 
-@relatedsample: https://snippet.dhtmlx.com/ekke2q8t	Tabbar. Add Tab
+**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)

@@ -32,7 +32,7 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
 The function takes the id of a row as a parameter and returns a string with the name of a CSS class.
 
-@relatedsample: https://snippet.dhtmlx.com/2dxtwf9n	Grid. Custom Row Style
+**Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
 
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#rowstyle

@@ -26,7 +26,7 @@ and should return a template for displaying a result.
 
 Note that to select several options you need to enable the **multiselection** option.
  
-@relatedsample: https://snippet.dhtmlx.com/fw2u2bww	Combobox. Items Count
+**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
 
 @changelog: added in v6.4 
 

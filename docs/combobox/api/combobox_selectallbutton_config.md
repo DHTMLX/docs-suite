@@ -23,4 +23,4 @@ Note that to select several options you need to enable the **multiselection** op
 @related: combo/how_to_start.md#initializecombobox
 combo/configuration.md#selectionofalloptionsinthelist
 
-@relatedsample: https://snippet.dhtmlx.com/ui7pi7ty	Combobox. Select All Button
+**Related sample**: [Combobox. Select All Button](https://snippet.dhtmlx.com/ui7pi7ty)

@@ -15,7 +15,7 @@ sidebar.expand();
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/ydlltdq6	Sidebar. Collapse/Expand
+**Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
 
 
 @changelog: added in v6.4

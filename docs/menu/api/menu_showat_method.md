@@ -27,4 +27,4 @@ menu/creating_context_menu.md
 @changelog:
 
 
-@relatedsample: https://snippet.dhtmlx.com/9xfpymlg	Menu. Show At
+**Related sample**: [Menu. Show At](https://snippet.dhtmlx.com/9xfpymlg)

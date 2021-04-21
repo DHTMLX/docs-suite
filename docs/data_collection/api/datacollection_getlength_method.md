@@ -17,4 +17,4 @@ datacollection.getLength();
 @template:	api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/4weiba8i	Data. Get Length
+**Related sample**: [Data. Get Length](https://snippet.dhtmlx.com/4weiba8i)
