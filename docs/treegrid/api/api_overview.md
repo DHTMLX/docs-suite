@@ -47,51 +47,34 @@ title: TreeGrid API overview
 
 ## TreeGrid events
 
+### Collapse and Expand
+
+| Name                                              | Description                                              |
+|---------------------------------------------------|----------------------------------------------------------|
+| [](treegrid/api/treegrid_aftercollapse_event.md)  | @getshort(treegrid/api/treegrid_aftercollapse_event.md)  |
+| [](treegrid/api/treegrid_afterexpand_event.md)    | @getshort(treegrid/api/treegrid_afterexpand_event.md)    |
+| [](treegrid/api/treegrid_beforecollapse_event.md) | @getshort(treegrid/api/treegrid_beforecollapse_event.md) |
+| [](treegrid/api/treegrid_beforeexpand_event.md)   | @getshort(treegrid/api/treegrid_beforeexpand_event.md)   |
+| [](treegrid/api/treegrid_expand_event.md)         | @getshort(treegrid/api/treegrid_expand_event.md)         |
+
+### Editing
+
+| Name                                               | Description                                               |
+|----------------------------------------------------|-----------------------------------------------------------|
+| [](treegrid/api/treegrid_aftereditend_event.md)    | @getshort(treegrid/api/treegrid_aftereditend_event.md)    |
+| [](treegrid/api/treegrid_aftereditstart_event.md)  | @getshort(treegrid/api/treegrid_aftereditstart_event.md)  |
+| [](treegrid/api/treegrid_beforeeditend_event.md)   | @getshort(treegrid/api/treegrid_beforeeditend_event.md)   |
+| [](treegrid/api/treegrid_beforeeditstart_event.md) | @getshort(treegrid/api/treegrid_beforeeditstart_event.md) |
+
+### Mouse
+
 | Name                                                    | Description                                                    |
-| ------------------------------------------------------- | -------------------------------------------------------------- |
-| [](treegrid/api/treegrid_aftercollapse_event.md)        | @getshort(treegrid/api/treegrid_aftercollapse_event.md)        |
-| [](treegrid/api/treegrid_aftercolumndrag_event.md)      | @getshort(treegrid/api/treegrid_aftercolumndrag_event.md)      |
-| [](treegrid/api/treegrid_aftercolumndrop_event.md)      | @getshort(treegrid/api/treegrid_aftercolumndrop_event.md)      |
-| [](treegrid/api/treegrid_aftercolumnhide_event.md)      | @getshort(treegrid/api/treegrid_aftercolumnhide_event.md)      |
-| [](treegrid/api/treegrid_aftercolumnshow_event.md)      | @getshort(treegrid/api/treegrid_aftercolumnshow_event.md)      |
-| [](treegrid/api/treegrid_aftereditend_event.md)         | @getshort(treegrid/api/treegrid_aftereditend_event.md)         |
-| [](treegrid/api/treegrid_aftereditstart_event.md)       | @getshort(treegrid/api/treegrid_aftereditstart_event.md)       |
-| [](treegrid/api/treegrid_afterexpand_event.md)          | @getshort(treegrid/api/treegrid_afterexpand_event.md)          |
-| [](treegrid/api/treegrid_afterresizeend_event.md)       | @getshort(treegrid/api/treegrid_afterresizeend_event.md)       |
-| [](treegrid/api/treegrid_afterrowdrag_event.md)         | @getshort(treegrid/api/treegrid_afterrowdrag_event.md)         |
-| [](treegrid/api/treegrid_afterrowdrop_event.md)         | @getshort(treegrid/api/treegrid_afterrowdrop_event.md)         |
-| [](treegrid/api/treegrid_afterrowhide_event.md)         | @getshort(treegrid/api/treegrid_afterrowhide_event.md)         |
-| [](treegrid/api/treegrid_afterrowshow_event.md)         | @getshort(treegrid/api/treegrid_afterrowshow_event.md)         |
-| [](treegrid/api/treegrid_beforecollapse_event.md)       | @getshort(treegrid/api/treegrid_beforecollapse_event.md)       |
-| [](treegrid/api/treegrid_beforecolumndrag_event.md)     | @getshort(treegrid/api/treegrid_beforecolumndrag_event.md)     |
-| [](treegrid/api/treegrid_beforecolumndrop_event.md)     | @getshort(treegrid/api/treegrid_beforecolumndrop_event.md)     |
-| [](treegrid/api/treegrid_beforecolumnhide_event.md)     | @getshort(treegrid/api/treegrid_beforecolumnhide_event.md)     |
-| [](treegrid/api/treegrid_beforecolumnshow_event.md)     | @getshort(treegrid/api/treegrid_beforecolumnshow_event.md)     |
-| [](treegrid/api/treegrid_beforeeditend_event.md)        | @getshort(treegrid/api/treegrid_beforeeditend_event.md)        |
-| [](treegrid/api/treegrid_beforeeditstart_event.md)      | @getshort(treegrid/api/treegrid_beforeeditstart_event.md)      |
-| [](treegrid/api/treegrid_beforeexpand_event.md)         | @getshort(treegrid/api/treegrid_beforeexpand_event.md)         |
-| [](treegrid/api/treegrid_beforeresizestart_event.md)    | @getshort(treegrid/api/treegrid_beforeresizestart_event.md)    |
-| [](treegrid/api/treegrid_beforerowdrag_event.md)        | @getshort(treegrid/api/treegrid_beforerowdrag_event.md)        |
-| [](treegrid/api/treegrid_beforerowdrop_event.md)        | @getshort(treegrid/api/treegrid_beforerowdrop_event.md)        |
-| [](treegrid/api/treegrid_beforerowhide_event.md)        | @getshort(treegrid/api/treegrid_beforerowhide_event.md)        |
-| [](treegrid/api/treegrid_beforerowshow_event.md)        | @getshort(treegrid/api/treegrid_beforerowshow_event.md)        |
-| [](treegrid/api/treegrid_cancelcolumndrop_event.md)     | @getshort(treegrid/api/treegrid_cancelcolumndrop_event.md)     |
-| [](treegrid/api/treegrid_cancelrowdrop_event.md)        | @getshort(treegrid/api/treegrid_cancelrowdrop_event.md)        |
-| [](treegrid/api/treegrid_cancolumndrop_event.md)        | @getshort(treegrid/api/treegrid_cancolumndrop_event.md)        |
-| [](treegrid/api/treegrid_canrowdrop_event.md)           | @getshort(treegrid/api/treegrid_canrowdrop_event.md)           |
+|---------------------------------------------------------|----------------------------------------------------------------|
 | [](treegrid/api/treegrid_cellclick_event.md)            | @getshort(treegrid/api/treegrid_cellclick_event.md)            |
 | [](treegrid/api/treegrid_celldblclick_event.md)         | @getshort(treegrid/api/treegrid_celldblclick_event.md)         |
 | [](treegrid/api/treegrid_cellmousedown_event.md)        | @getshort(treegrid/api/treegrid_cellmousedown_event.md)        |
 | [](treegrid/api/treegrid_cellmouseover_event.md)        | @getshort(treegrid/api/treegrid_cellmouseover_event.md)        |
 | [](treegrid/api/treegrid_cellrightclick_event.md)       | @getshort(treegrid/api/treegrid_cellrightclick_event.md)       |
-| [](treegrid/api/treegrid_dragcolumnin_event.md)         | @getshort(treegrid/api/treegrid_dragcolumnin_event.md)         |
-| [](treegrid/api/treegrid_dragcolumnout_event.md)        | @getshort(treegrid/api/treegrid_dragcolumnout_event.md)        |
-| [](treegrid/api/treegrid_dragcolumnstart_event.md)      | @getshort(treegrid/api/treegrid_dragcolumnstart_event.md)      |
-| [](treegrid/api/treegrid_dragrowin_event.md)            | @getshort(treegrid/api/treegrid_dragrowin_event.md)            |
-| [](treegrid/api/treegrid_dragrowout_event.md)           | @getshort(treegrid/api/treegrid_dragrowout_event.md)           |
-| [](treegrid/api/treegrid_dragrowstart_event.md)         | @getshort(treegrid/api/treegrid_dragrowstart_event.md)         |
-| [](treegrid/api/treegrid_expand_event.md)               | @getshort(treegrid/api/treegrid_expand_event.md)               |
-| [](treegrid/api/treegrid_filterchange_event.md)         | @getshort(treegrid/api/treegrid_filterchange_event.md)         |
 | [](treegrid/api/treegrid_footercellclick_event.md)      | @getshort(treegrid/api/treegrid_footercellclick_event.md)      |
 | [](treegrid/api/treegrid_footercelldblclick_event.md)   | @getshort(treegrid/api/treegrid_footercelldblclick_event.md)   |
 | [](treegrid/api/treegrid_footercellmousedown_event.md)  | @getshort(treegrid/api/treegrid_footercellmousedown_event.md)  |
@@ -102,8 +85,87 @@ title: TreeGrid API overview
 | [](treegrid/api/treegrid_headercellmousedown_event.md)  | @getshort(treegrid/api/treegrid_headercellmousedown_event.md)  |
 | [](treegrid/api/treegrid_headercellmouseover_event.md)  | @getshort(treegrid/api/treegrid_headercellmouseover_event.md)  |
 | [](treegrid/api/treegrid_headercellrightclick_event.md) | @getshort(treegrid/api/treegrid_headercellrightclick_event.md) |
-| [](treegrid/api/treegrid_resize_event.md)               | @getshort(treegrid/api/treegrid_resize_event.md)               |
-| [](treegrid/api/treegrid_scroll_event.md)               | @getshort(treegrid/api/treegrid_scroll_event.md)               |
+
+### Scroll
+
+| Name                                      | Description                                      |
+|-------------------------------------------|--------------------------------------------------|
+| [](treegrid/api/treegrid_scroll_event.md) | @getshort(treegrid/api/treegrid_scroll_event.md) |
+
+
+### Sort and Filter
+
+| Name                                            | Description                                            |
+|-------------------------------------------------|--------------------------------------------------------|
+| [](treegrid/api/treegrid_filterchange_event.md) | @getshort(treegrid/api/treegrid_filterchange_event.md) |
+
+
+
+### Column Drag and Drop
+
+| Name                                                | Description                                                |
+|-----------------------------------------------------|------------------------------------------------------------|
+| [](treegrid/api/treegrid_aftercolumndrag_event.md)  | @getshort(treegrid/api/treegrid_aftercolumndrag_event.md)  |
+| [](treegrid/api/treegrid_aftercolumndrop_event.md)  | @getshort(treegrid/api/treegrid_aftercolumndrop_event.md)  |
+| [](treegrid/api/treegrid_beforecolumndrag_event.md) | @getshort(treegrid/api/treegrid_beforecolumndrag_event.md) |
+| [](treegrid/api/treegrid_beforecolumndrop_event.md) | @getshort(treegrid/api/treegrid_beforecolumndrop_event.md) |
+| [](treegrid/api/treegrid_cancelcolumndrop_event.md) | @getshort(treegrid/api/treegrid_cancelcolumndrop_event.md) |
+| [](treegrid/api/treegrid_cancolumndrop_event.md)    | @getshort(treegrid/api/treegrid_cancolumndrop_event.md)    |
+| [](treegrid/api/treegrid_dragcolumnin_event.md)     | @getshort(treegrid/api/treegrid_dragcolumnin_event.md)     |
+| [](treegrid/api/treegrid_dragcolumnout_event.md)    | @getshort(treegrid/api/treegrid_dragcolumnout_event.md)    |
+| [](treegrid/api/treegrid_dragcolumnstart_event.md)  | @getshort(treegrid/api/treegrid_dragcolumnstart_event.md)  |
+
+### Column Hide and Show
+
+| Name                                                | Description                                                |
+|-----------------------------------------------------|------------------------------------------------------------|
+| [](treegrid/api/treegrid_aftercolumnhide_event.md)  | @getshort(treegrid/api/treegrid_aftercolumnhide_event.md)  |
+| [](treegrid/api/treegrid_aftercolumnshow_event.md)  | @getshort(treegrid/api/treegrid_aftercolumnshow_event.md)  |
+| [](treegrid/api/treegrid_beforecolumnhide_event.md) | @getshort(treegrid/api/treegrid_beforecolumnhide_event.md) |
+| [](treegrid/api/treegrid_beforecolumnshow_event.md) | @getshort(treegrid/api/treegrid_beforecolumnshow_event.md) |
+
+
+### Column Resize
+
+| Name                                                 | Description                                                 |
+|------------------------------------------------------|-------------------------------------------------------------|
+| [](treegrid/api/treegrid_afterresizeend_event.md)    | @getshort(treegrid/api/treegrid_afterresizeend_event.md)    |
+| [](treegrid/api/treegrid_beforeresizestart_event.md) | @getshort(treegrid/api/treegrid_beforeresizestart_event.md) |
+| [](treegrid/api/treegrid_resize_event.md)            | @getshort(treegrid/api/treegrid_resize_event.md)            |
+
+### Row Drag and Drop
+
+| Name                                             | Description                                             |
+|--------------------------------------------------|---------------------------------------------------------|
+| [](treegrid/api/treegrid_afterrowdrag_event.md)  | @getshort(treegrid/api/treegrid_afterrowdrag_event.md)  |
+| [](treegrid/api/treegrid_afterrowdrop_event.md)  | @getshort(treegrid/api/treegrid_afterrowdrop_event.md)  |
+| [](treegrid/api/treegrid_beforerowdrag_event.md) | @getshort(treegrid/api/treegrid_beforerowdrag_event.md) |
+| [](treegrid/api/treegrid_beforerowdrop_event.md) | @getshort(treegrid/api/treegrid_beforerowdrop_event.md) |
+| [](treegrid/api/treegrid_cancelrowdrop_event.md) | @getshort(treegrid/api/treegrid_cancelrowdrop_event.md) |
+| [](treegrid/api/treegrid_canrowdrop_event.md)    | @getshort(treegrid/api/treegrid_canrowdrop_event.md)    |
+| [](treegrid/api/treegrid_dragrowin_event.md)     | @getshort(treegrid/api/treegrid_dragrowin_event.md)     |
+| [](treegrid/api/treegrid_dragrowout_event.md)    | @getshort(treegrid/api/treegrid_dragrowout_event.md)    |
+| [](treegrid/api/treegrid_dragrowstart_event.md)  | @getshort(treegrid/api/treegrid_dragrowstart_event.md)  |
+
+
+
+### Row Hide and Show
+
+| Name                                             | Description                                             |
+|--------------------------------------------------|---------------------------------------------------------|
+| [](treegrid/api/treegrid_afterrowhide_event.md)  | @getshort(treegrid/api/treegrid_afterrowhide_event.md)  |
+| [](treegrid/api/treegrid_afterrowshow_event.md)  | @getshort(treegrid/api/treegrid_afterrowshow_event.md)  |
+| [](treegrid/api/treegrid_beforerowhide_event.md) | @getshort(treegrid/api/treegrid_beforerowhide_event.md) |
+| [](treegrid/api/treegrid_beforerowshow_event.md) | @getshort(treegrid/api/treegrid_beforerowshow_event.md) |
+
+
+### Row Resize
+
+| Name                                            | Description                                         |
+| ----------------------------------------------- | --------------------------------------------------- |
+todotw
+add from v7.1
+
 
 :::info important
 - Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
