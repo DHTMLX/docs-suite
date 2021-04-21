@@ -1380,7 +1380,6 @@ module.exports = {
                   "grid/api/grid_dragrowin_event",
                   "grid/api/grid_dragrowout_event",
                   "grid/api/grid_dragrowstart_event",
-                  "grid/api/grid_expand_event",
                   "grid/api/grid_filterchange_event",
                   "grid/api/grid_footercellclick_event",
                   "grid/api/grid_footercelldblclick_event",
