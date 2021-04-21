@@ -14,7 +14,7 @@ layout.getCell("id").toggle();
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/t38tqk0k	Layout. Toggle
+**Related sample**: [Layout. Toggle](https://snippet.dhtmlx.com/t38tqk0k)
 
 @relatedapi:
 layout/api/layout_expand_method.md

@@ -58,6 +58,6 @@ var grid = new dhx.Grid("grid_container", {
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#spans
 
-@relatedsample: https://snippet.dhtmlx.com/eol76o68	Grid. Header Spans
+**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
 
 @changelog: The **tooltip** property is added in v6.5.

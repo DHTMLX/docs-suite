@@ -34,7 +34,7 @@ Note, the event fires in 2 cases:
 2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
 
 
-@relatedsample: https://snippet.dhtmlx.com/jfu4upwd	Window. Events
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md
 

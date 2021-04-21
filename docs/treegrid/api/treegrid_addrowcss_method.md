@@ -26,6 +26,6 @@ grid.addRowCss("2", "myCustomClass");
 
 @related: treegrid/customization.md#stylingrows
 
-@relatedsample: https://snippet.dhtmlx.com/kort67nu	TreeGrid. Add row css
+**Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
 
 @changelog:

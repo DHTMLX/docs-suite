@@ -10,7 +10,7 @@ title: keyNavigation
 @example: 
 var tree = new dhx.Tree("tree_container", {keyNavigation: true});
 
-@relatedsample: https://snippet.dhtmlx.com/icql8fwq	Tree. Key Navigation
+**Related sample**: [Tree. Key Navigation](https://snippet.dhtmlx.com/icql8fwq)
 
 @related: tree/initialization_of_dhtmlxtree.md#initializetree
 tree/configuration.md#keynavigation

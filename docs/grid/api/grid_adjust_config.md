@@ -41,7 +41,7 @@ var grid = new dhx.Grid("grid_container", {
 </table>
 
 
-@relatedsample: https://snippet.dhtmlx.com/zfrpe22d	Grid. Adjust Columns
+**Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
 
 @relatedapi: grid/api/grid_adjustcolumnwidth_method.md
 

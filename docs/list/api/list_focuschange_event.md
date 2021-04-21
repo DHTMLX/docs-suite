@@ -21,5 +21,5 @@ list.events.on("FocusChange", function(index, id){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/iwt1yd61	List. List Events
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 

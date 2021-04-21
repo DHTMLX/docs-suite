@@ -25,7 +25,7 @@ The usage of the *CSS calc() function* within the **itemHeight** property is not
 
 @related: dataview/configuration.md#heightofanitem
 
-@relatedsample: https://snippet.dhtmlx.com/cth9mwrf	Dataview. Setup Dataview Item Height
+**Related sample**: [Dataview. Setup Dataview Item Height](https://snippet.dhtmlx.com/cth9mwrf)
 
 
 

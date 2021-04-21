@@ -21,5 +21,5 @@ menu.events.on("Click", function(id,e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/yjt39a4k	Menu. Events
+**Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k)
 

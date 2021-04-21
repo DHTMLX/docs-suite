@@ -14,6 +14,6 @@ sidebar.destructor();
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/7bwnymvz	Sidebar. Destructor
+**Related sample**: [Sidebar. Destructor](https://snippet.dhtmlx.com/7bwnymvz)
 
 @changelog:

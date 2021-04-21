@@ -19,6 +19,6 @@ ribbon.events.on("InputBlur", function(id){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/i7cfddkl	Ribbon. Events
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
 @related: ribbon/handling_events.md

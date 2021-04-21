@@ -20,7 +20,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 @related: tabbar/configuring_tabbar.md#sizeoftabs
 tabbar/init.md#definetabbarstructure
 
-@relatedsample: https://snippet.dhtmlx.com/yy841z3j	Tabbar. Tab Size
+**Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 

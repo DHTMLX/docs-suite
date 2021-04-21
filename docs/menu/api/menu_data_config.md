@@ -50,4 +50,4 @@ const menu = new dhx.Menu("menu_container", {
 
 @related: menu/from_script.md
 
-@relatedsample: https://snippet.dhtmlx.com/cg62qa9v	Menu. Basic Initialization
+**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)

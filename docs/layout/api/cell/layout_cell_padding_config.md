@@ -31,4 +31,4 @@ var layout = new dhx.Layout("layout_container",{
 
 @related: layout/init.md#initializelayout
 
-@relatedsample: https://snippet.dhtmlx.com/tk6tpwwv	Layout. Padding
+**Related sample**: [Layout. Padding](https://snippet.dhtmlx.com/tk6tpwwv)

@@ -26,4 +26,4 @@ grid/configuration.md#editinggridandseparatecolumns
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/w2cdossn	Grid. Editable Data
+**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)

@@ -59,4 +59,4 @@ var ribbon = new dhx.Ribbon({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample: https://snippet.dhtmlx.com/9ckg47ro	Ribbon. Custom Css
+**Related sample**: [Ribbon. Custom Css](https://snippet.dhtmlx.com/9ckg47ro)

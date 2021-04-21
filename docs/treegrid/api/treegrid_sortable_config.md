@@ -24,4 +24,4 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @related: treegrid/configuration.md#sortingcolumns
 
-@relatedsample: https://snippet.dhtmlx.com/r4xfph82	TreeGrid. Sortable Columns
+**Related sample**: [TreeGrid. Sortable Columns](https://snippet.dhtmlx.com/r4xfph82)

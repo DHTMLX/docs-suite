@@ -20,6 +20,6 @@ ribbon.events.on("Click", function(id,e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/i7cfddkl	Ribbon. Events
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
 @related: ribbon/handling_events.md

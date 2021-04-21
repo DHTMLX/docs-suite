@@ -41,7 +41,7 @@ The property can be specified to one of the available adjustment modes:
     </tbody>
 </table>
 
-@relatedsample: https://snippet.dhtmlx.com/lgvoz0ar	TreeGrid. Adjust Columns
+**Related sample**: [TreeGrid. Adjust Columns](https://snippet.dhtmlx.com/lgvoz0ar)
 
 @relatedapi: treegrid/api/treegrid_adjustcolumnwidth_method.md
 

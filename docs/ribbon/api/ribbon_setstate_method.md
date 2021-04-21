@@ -20,7 +20,7 @@ ribbon.setState({
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/i7kabram	Ribbon. Set State
+**Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)
 
 @related: ribbon/operating_ribbon.md#settinggettingvaluesandstates
 

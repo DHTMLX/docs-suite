@@ -42,7 +42,7 @@ The callback function takes three parameters:
 </table>
  
 
-@relatedsample: https://snippet.dhtmlx.com/hqzqpavs	Form. ForEach
+**Related sample**: [Form. ForEach](https://snippet.dhtmlx.com/hqzqpavs)
 
 
 @changelog: added in v6.4

@@ -29,4 +29,4 @@ window/api/window_setsize_method.md
 
 @related:window/usage.md#sizingwindow
 
-@relatedsample: https://snippet.dhtmlx.com/0zqxydvm	Window. Set/Get Window Size
+**Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)

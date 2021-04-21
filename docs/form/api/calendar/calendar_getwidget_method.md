@@ -26,5 +26,5 @@ var datepicker = form.getItem("datepicker").getWidget();  // -> dhtmlxCalendar
 datepicker.showDate(null,"month"); // shows the current month
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control}}
+**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
 

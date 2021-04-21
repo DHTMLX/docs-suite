@@ -24,4 +24,4 @@ calendar/how_to_start.md#initializecalendar
 calendar/configuring.md#startoftheweek
 
 
-@relatedsample: https://snippet.dhtmlx.com/kaxmurh9	Calendar. Week Start
+**Related sample**: [Calendar. Week Start](https://snippet.dhtmlx.com/kaxmurh9)

@@ -20,4 +20,4 @@ form.events.on("Change",function(name, new_value){
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/vyipsaoa	Form. Events
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)

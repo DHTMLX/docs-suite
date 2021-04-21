@@ -13,7 +13,7 @@ var tree = new dhx.Tree("tree_container", {checkbox: true});
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/hgsivvpb	Tree. Checkboxes For Items
+**Related sample**: [Tree. Checkboxes For Items](https://snippet.dhtmlx.com/hgsivvpb)
 
 @related: tree/initialization_of_dhtmlxtree.md#initializetree
 tree/configuration.md#checkboxesforitems

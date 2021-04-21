@@ -21,7 +21,7 @@ dhx.ajax.get(url).then(function (data) {
 	console.log(err);
 });
 
-@relatedsample: https://snippet.dhtmlx.com/81oqx20v	Data. Ajax GET
+**Related sample**: [Data. Ajax GET](https://snippet.dhtmlx.com/81oqx20v)
 @template:	api_method
 
 @descr:

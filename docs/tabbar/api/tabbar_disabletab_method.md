@@ -23,7 +23,7 @@ tabbar.disableTab("London");
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/9l3egq3z	Tabbar. Disable Tab
+**Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 @relatedapi: tabbar/api/tabbar_enabletab_method.md
 

@@ -25,7 +25,7 @@ Starting from v7.0, it is possible to enable all items at once by using the meth
 toolbar.enable();
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 @related: toolbar/common_methods.md#disablingandenablingcontrols
 

@@ -26,7 +26,7 @@ Starting from v7.0, it is possible to show all items on the page at once by usin
 menu.show();
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/a9vbhxgd	Menu. Show/Hide Menu Item
+**Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
 
 
 @changelog:

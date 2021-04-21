@@ -22,6 +22,6 @@ list.events.on("ItemMouseOver", function(id, event) {
 
 
 
-@relatedsample: https://snippet.dhtmlx.com/iwt1yd61	List. List Events
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 
 @changelog: added in v6.4

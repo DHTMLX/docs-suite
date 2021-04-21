@@ -21,7 +21,7 @@ sidebar.events.on("BeforeExpand", function() {
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/qfddiu3i	Sidebar. Events
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
 @changelog: added in v6.4
 

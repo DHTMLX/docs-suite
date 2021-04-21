@@ -17,7 +17,7 @@ colorpicker.setFocus("#BDF0E9");
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fg13r3uh	Colorpicker. Set Focus
+**Related sample**: [Colorpicker. Set Focus](https://snippet.dhtmlx.com/fg13r3uh)
 
 @related: colorpicker/manipulating_colorpicker.md#settingfocusonacolor
 

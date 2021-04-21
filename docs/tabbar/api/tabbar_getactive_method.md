@@ -27,7 +27,7 @@ var active = tabbar.getActive(); // -> "2"
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/xpvkcwiu	Tabbar. Get Active
+**Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
 
 @relatedapi: tabbar/api/tabbar_setactive_method.md
 

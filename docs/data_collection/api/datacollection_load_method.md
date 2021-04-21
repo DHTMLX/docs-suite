@@ -42,4 +42,4 @@ diagram.data.loadData.then(function(){
 // data loading has completed
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/dyykcnxi	Data. Load
+**Related sample**: [Data. Load](https://snippet.dhtmlx.com/dyykcnxi)

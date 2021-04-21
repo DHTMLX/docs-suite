@@ -21,4 +21,4 @@ grid.events.on("HeaderCellRightClick", function(column,e){
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/sgwnxshe	TreeGrid. TreeGrid Events
+**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

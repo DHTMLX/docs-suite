@@ -25,4 +25,4 @@ var items = component.data.findAll(function(items){
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/kvemrz93	Data. Find All
+**Related sample**: [Data. Find All](https://snippet.dhtmlx.com/kvemrz93)

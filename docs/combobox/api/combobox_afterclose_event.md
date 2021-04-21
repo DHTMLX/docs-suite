@@ -18,4 +18,4 @@ combobox.events.on("AfterClose", function() {
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/n70eqx5l	Combobox. Events
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

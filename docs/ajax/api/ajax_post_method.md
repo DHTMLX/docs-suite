@@ -21,7 +21,7 @@ dhx.ajax.post(url, {name: "foo", title: "bar"}).then(function (data) {
 	console.log(err);
 });
 
-@relatedsample: https://snippet.dhtmlx.com/eyr9mapj	Data. Ajax POST
+**Related sample**: [Data. Ajax POST](https://snippet.dhtmlx.com/eyr9mapj)
 @template:	api_method
 
 @descr:

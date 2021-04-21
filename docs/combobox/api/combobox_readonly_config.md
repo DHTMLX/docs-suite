@@ -24,6 +24,6 @@ In this mode it is only possible to select options from the list, without enteri
 @related: combo/how_to_start.md#initializecombobox
 combo/configuration.md#readonlymode
 
-@relatedsample: https://snippet.dhtmlx.com/igjsuf7y	Combobox. Readonly
+**Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
 
 @changelog:

@@ -16,4 +16,4 @@ var target = new dhx.TreeGrid("treegrid-target", {dragMode: "target", dragCopy: 
 
 @related: treegrid/initialization.md#initializetreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/a7pg38rr	TreeGrid. Setup Drag Copy
+**Related sample**: [TreeGrid. Setup Drag Copy](https://snippet.dhtmlx.com/a7pg38rr)

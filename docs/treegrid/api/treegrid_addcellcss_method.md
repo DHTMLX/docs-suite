@@ -28,7 +28,7 @@ grid.addCellCss("1", "b", "myCustomClass");
 
 @related: treegrid/customization.md#stylingcells
 
-@relatedsample: https://snippet.dhtmlx.com/smjecfzp	TreeGrid. Add cell css
+**Related sample**: [TreeGrid. Add cell css](https://snippet.dhtmlx.com/smjecfzp)
 
 @changelog:
 

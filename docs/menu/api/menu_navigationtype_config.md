@@ -25,4 +25,4 @@ There are two types of navigation:
 @related:
 menu/how_to_start.md#initializemenu
 
-@relatedsample: https://snippet.dhtmlx.com/uhv64cm7	Menu. Navigation Type
+**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)

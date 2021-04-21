@@ -25,5 +25,5 @@ The **template** function takes as a parameter an item of data collection and sh
 @related: combo/how_to_start.md#initializecombobox
 combo/configuration.md#templateforcomboboxoptions
 
-@relatedsample: https://snippet.dhtmlx.com/z7cpj76i	Combobox. Template
+**Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
 

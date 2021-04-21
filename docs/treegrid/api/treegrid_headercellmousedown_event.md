@@ -15,4 +15,4 @@ grid.events.on("HeaderCellMouseDown", function(column,e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/sgwnxshe	TreeGrid. TreeGrid Events
+**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

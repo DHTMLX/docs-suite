@@ -25,7 +25,7 @@ Starting from v7.0, it is possible to enable all items at once by using the meth
 ribbon.enable();
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/l3f8pq2g	Ribbon. Enable/Disable Ribbon Item
+**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 @related: ribbon/operating_ribbon.md#disablingandenablingcontrols
 

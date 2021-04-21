@@ -27,7 +27,7 @@ The type of the value parameter depends on the applied [valueFormat](timepicker/
 timepicker/api/timepicker_valueformat_config.md
 timepicker/api/timepicker_timeformat_config.md
 
-@relatedsample: https://snippet.dhtmlx.com/5ccptwy7	Timepicker. Timepicker Events
+**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
 
 @changelog:
 The object type of the **value** parameter is added in v7.0.

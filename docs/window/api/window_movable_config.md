@@ -23,4 +23,4 @@ dhxWindow.show();
 @related: window/how_to_start.md
 window/configuration.md#movability
 
-@relatedsample: https://snippet.dhtmlx.com/mkwuasj0	Window.  Movable Window
+**Related sample**: [Window.  Movable Window](https://snippet.dhtmlx.com/mkwuasj0)

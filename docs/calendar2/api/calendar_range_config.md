@@ -23,5 +23,5 @@ calendar/configuring.md#rangemode
 @descr:
 added in v6.2
 
-@relatedsample: https://snippet.dhtmlx.com/2mrj53h0	Calendar. Range
+**Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 

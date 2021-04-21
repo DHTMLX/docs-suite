@@ -13,7 +13,7 @@ popup.hide();
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/f614sdm3	Popup. Is Visible
+**Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
 @relatedapi:
 popup/api/popup_show_method.md

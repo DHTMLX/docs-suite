@@ -17,7 +17,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/ax5vs4a8	Setup drag column
+**Related sample**: [Setup drag column](https://snippet.dhtmlx.com/ax5vs4a8)
 
 @related: 
 treegrid/initialization.md#initializetreegrid

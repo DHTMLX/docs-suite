@@ -22,7 +22,7 @@ toolbar.isDisabled("id"); // -> returns true/false
 
 @related: toolbar/common_methods.md#checkingifatoolbaritemisdisabled
 
-@relatedsample: https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 @changelog: added in v6.4
 

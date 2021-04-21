@@ -20,7 +20,7 @@ var tabbar = new dhx.Tabbar("tabbar", {
 
 @template:	api_config
 
-@relatedsample: https://snippet.dhtmlx.com/cysre4v8	Tabbar. Close Button
+**Related sample**: [Tabbar. Close Button](https://snippet.dhtmlx.com/cysre4v8)
 
 @related: 
 tabbar/init.md#definetabbarstructure

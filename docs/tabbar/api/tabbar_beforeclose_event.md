@@ -27,5 +27,5 @@ tabbar.events.on("BeforeClose", function(id){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/dld2qo1m	Tabbar. Events
+**Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
 

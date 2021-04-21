@@ -64,4 +64,4 @@ var combo = new dhx.Combobox({
 @related: combo/how_to_start.md#initializecombobox
 combo/customization.md#styling
 
-@relatedsample: https://snippet.dhtmlx.com/lldd739i	Combobox. Custom CSS
+**Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)

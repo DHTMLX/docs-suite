@@ -45,7 +45,7 @@ diagram.data.parse(data);
 @template:	api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/0zrxtmvi	Data. Parse
+**Related sample**: [Data. Parse](https://snippet.dhtmlx.com/0zrxtmvi)
 
 
 

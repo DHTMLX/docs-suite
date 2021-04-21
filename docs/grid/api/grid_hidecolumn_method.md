@@ -17,7 +17,7 @@ grid.hideColumn(col);
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/n4zjwsqj	Grid. Show/Hide Column
+**Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)
 
 @relatedapi: grid/api/grid_showcolumn_method.md
 

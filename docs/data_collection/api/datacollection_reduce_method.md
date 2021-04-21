@@ -34,4 +34,4 @@ A handler function takes two parameters:
     </tbody>
 </table>
 
-@relatedsample: https://snippet.dhtmlx.com/pv7hewc7	Data. Reduce
+**Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)

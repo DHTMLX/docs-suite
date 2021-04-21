@@ -19,7 +19,7 @@ dhx.ajax.delete(url, {id: "2"}).then(function (data){
     console.log(data);
 });
 
-@relatedsample: https://snippet.dhtmlx.com/6nlb0bfu	Data. Ajax Delete
+**Related sample**: [Data. Ajax Delete](https://snippet.dhtmlx.com/6nlb0bfu)
 @template:	api_method
 
 @descr:

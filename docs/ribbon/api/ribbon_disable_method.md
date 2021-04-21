@@ -26,7 +26,7 @@ ribbon.disable();
 ~~~
 
 
-@relatedsample: https://snippet.dhtmlx.com/l3f8pq2g	Ribbon. Enable/Disable Ribbon Item
+**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 @changelog:
 

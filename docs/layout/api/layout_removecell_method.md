@@ -20,7 +20,7 @@ layout.removeCell("1");
 
 @related: layout/work_with_layout.md#removingcells
 
-@relatedsample: https://snippet.dhtmlx.com/tnujp7jk	Layout. Remove Cell
+**Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
 
 @changelog:
 

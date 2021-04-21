@@ -18,7 +18,7 @@ treegrid.expand("native");
 
 @related: treegrid/usage.md#expandingcollapsingnodes
 
-@relatedsample: https://snippet.dhtmlx.com/1grpsaa2	TreeGrid. Expand/Collapse nodes
+**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
 @relatedapi:
 treegrid/api/treegrid_collapse_method.md

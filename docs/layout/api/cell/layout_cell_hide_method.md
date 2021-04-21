@@ -28,4 +28,4 @@ layout/api/layout_hidden_config.md
 
 @related: layout/work_with_layout.md#hidingshowingacell
 
-@relatedsample: https://snippet.dhtmlx.com/u0jd8ah3	Layout. Hide
+**Related sample**: [Layout. Hide](https://snippet.dhtmlx.com/u0jd8ah3)

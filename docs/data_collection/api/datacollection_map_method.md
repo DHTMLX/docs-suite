@@ -17,4 +17,4 @@ component.data.map(function(item){
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/louctp61	Data. Map
+**Related sample**: [Data. Map](https://snippet.dhtmlx.com/louctp61)

@@ -21,6 +21,6 @@ sidebar.events.on("Click", function(id,e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/qfddiu3i	Sidebar. Events
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
 @related: sidebar/events.md

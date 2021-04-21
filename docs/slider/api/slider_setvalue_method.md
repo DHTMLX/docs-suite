@@ -29,4 +29,4 @@ slider/api/slider_getvalue_method.md
 
 @changelog:
 
-@relatedsample: https://snippet.dhtmlx.com/shw55sub	Slider. Set Slider Value
+**Related sample**: [Slider. Set Slider Value](https://snippet.dhtmlx.com/shw55sub)

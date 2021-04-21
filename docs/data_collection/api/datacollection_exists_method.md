@@ -18,4 +18,4 @@ var item = component.data.exists("1");
 @template:	api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/2ekntrbk	Data. Exists
+**Related sample**: [Data. Exists](https://snippet.dhtmlx.com/2ekntrbk)

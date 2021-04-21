@@ -20,4 +20,4 @@ var list = new dhx.List("list_container", {
 
 @related: list/configuration.md#dynamicrenderingofitems
 
-@relatedsample: https://snippet.dhtmlx.com/x4gxy38e	List. Virtual List
+**Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)

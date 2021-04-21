@@ -24,4 +24,4 @@ window/api/window_show_method.md
 
 @related:window/usage.md#showinghidingwindow
 
-@relatedsample: https://snippet.dhtmlx.com/ee2vf9xw	Window. Showing/Hiding Window
+**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)

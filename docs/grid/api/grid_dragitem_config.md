@@ -19,7 +19,7 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
-@relatedsample: https://snippet.dhtmlx.com/dfdlzpqb	Setup drag column (Pro)
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
 @related: 
 grid/initialization.md#initializegrid
