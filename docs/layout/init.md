@@ -122,7 +122,7 @@ var layout = new dhx.Layout("layout_container", {cols});
 
 The properties of the configuration object of Layout allow you to define the structure of Layout.
 
-See the list of Layout properties [here](layout/api/api_overview.md#layout-properties) .
+See the list of Layout properties [here](layout/api/api_overview.md#layout-properties).
 
 #### Cell object
 

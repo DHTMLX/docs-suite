@@ -172,17 +172,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 {{editor	https://snippet.dhtmlx.com/ax5vs4a8	Setup drag column}}
 
-To make the process of reordering columns by drag and drop more flexible, apply the related events:
-
-- treegrid/api/treegrid_aftercolumndrag_event.md
-- treegrid/api/treegrid_aftercolumndrop_event.md
-- treegrid/api/treegrid_beforecolumndrag_event.md
-- treegrid/api/treegrid_beforecolumndrop_event.md
-- treegrid/api/treegrid_cancolumndrop_event.md
-- treegrid/api/treegrid_cancelcolumndrop_event.md
-- treegrid/api/treegrid_dragcolumnin_event.md
-- treegrid/api/treegrid_dragcolumnout_event.md
-- treegrid/api/treegrid_dragcolumnstart_event.md
+{{note To make the process of reordering columns by drag and drop more flexible, you can apply the [related](treegrid/api/api_overview.md#column-drag-and-drop) drag-n-drop events.}}
 
 Drag-n-drop of TreeGrid rows
 -------------------------
@@ -206,17 +196,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 {{editor	https://snippet.dhtmlx.com/43covmy2	TreeGrid. Setup Drag Mode}}
 
-Here is a list of drag-n-drop events that you can use while drag-n-drop of rows is enabled:
-
-- treegrid/api/treegrid_afterrowdrag_event.md
-- treegrid/api/treegrid_afterrowdrop_event.md
-- treegrid/api/treegrid_beforerowdrag_event.md
-- treegrid/api/treegrid_beforerowdrop_event.md
-- treegrid/api/treegrid_canrowdrop_event.md
-- treegrid/api/treegrid_cancelrowdrop_event.md
-- treegrid/api/treegrid_dragrowin_event.md
-- treegrid/api/treegrid_dragrowout_event.md
-- treegrid/api/treegrid_dragrowstart_event.md
+{{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](treegrid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
 Editing Grid and separate columns
 --------------------
@@ -466,8 +446,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 Header/footer height
 ------------------------
 
-The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / treegrid/api/treegrid_footerrowheight_config.md
-properties, correspondingly.
+The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly.
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
