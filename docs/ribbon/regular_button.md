@@ -3,7 +3,7 @@ sidebar_label: regularButton Control
 title: regularButton Control
 ---  
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 ``` 
 

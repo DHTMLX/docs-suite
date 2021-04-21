@@ -3,7 +3,7 @@ sidebar_label: Configuring Items
 title: Configuring Items
 --- 
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 ```
 

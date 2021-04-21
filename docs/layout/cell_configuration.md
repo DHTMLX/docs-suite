@@ -239,37 +239,7 @@ const layout = new dhx.Layout("layout", {
 [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 The available values of the option are "line", "wide", "space", "none". 
-``` todo таблица 
-<style>
 
-	table.my_table td {
-		text-align: left;
-		vertical-align: middle;
-		width: 50%;
-	}
-	table.my_table td.version_info {
-		text-align: left;
-        background-color: white;
-	}
-</style>
-
-<table class="my_table">
-	<tbody>
-        <tr>
-			<td><b>type:"line"</b></td>
-			<td><b>type:"wide"</b></td>
-			<td><b>type:"space"</b></td>
-			<td><b>without borders</b></td>
-        </tr>
-        <tr>
-			<td class="version_info"><img src="layout/line_type.png"/></td>
-			<td class="version_info"><img src="layout/wide_type.png"/></td>
-			<td class="version_info"><img src="layout/space_type.png"/></td>
-			<td class="version_info"><img src="layout/without_borders.png"/></td>
-		</tr>  
-    </tbody>
-</table>
-```
-
-@todo:
-check, improve and complete<br/>
+| type:"line"                         | type:"wide"                         | type:"space"                         | type:"none"                               |
+| ----------------------------------- | ----------------------------------- | ------------------------------------ | ----------------------------------------- |
+| ![](../assets/layout/line_type.png) | ![](../assets/layout/wide_type.png) | ![](../assets/layout/space_type.png) | ![](../assets/layout/without_borders.png) |

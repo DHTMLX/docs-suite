@@ -3,8 +3,6 @@ sidebar_label: showDate
 title: showDate
 ---          
 
-```todo
-
 @short: shows a specified date and/or opens the calendar in one of the available modes
 
 @signature: showDate(date?: Date, mode?: ViewMode): void;
@@ -39,7 +37,7 @@ The **modes** are:
 		</tr>
     </tbody>
 </table>
-<br/>
+
 ~~~js
 // shows the month of the specified date
 calendar.showDate(new Date(2020,11,12),"month");
@@ -57,11 +55,7 @@ calendar.showDate(null,"year");
 @relatedsample:
 https://snippet.dhtmlx.com/nyfzc8cl	Calendar. Showing Particular Calendar Date And Mode
 
-
 @changelog:
-
 
 @related:
 calendar/operating_calendar.md#changingcalendarmode
-
-```todo

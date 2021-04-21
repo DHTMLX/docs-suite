@@ -1,12 +1,11 @@
 ---
 sidebar_label: spans
 title: spans
-description: description
----          
+--- 
 ``` todo
 @short: describes the configuration of cols/rows spans
 
-@signature: spans?: [];
+@signature: spans?: array[];
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -19,10 +18,9 @@ var grid = new dhx.Grid("grid_container", {
 	],
 	data: dataset
 });
-
+```
 @template:	api_config
-@descr: 
-Each object in the spans array contains the following properties:
+@descr: Each object in the spans array contains the following properties:
 
 <table class="webixdoc_links">
 	<tbody>
@@ -57,12 +55,9 @@ Each object in the spans array contains the following properties:
     </tbody>
 </table>
 
-
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#spans
 
 @relatedsample: https://snippet.dhtmlx.com/eol76o68	Grid. Header Spans
 
 @changelog: The **tooltip** property is added in v6.5.
-
-``` todo
