@@ -61,7 +61,7 @@ Initialize DataView
 Initialize DataView with the `dhx.DataView` object constructor. The constructor has two parameters:
 
 - the HTML container for DataView,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxDataView
@@ -81,7 +81,7 @@ Load data into DataView
 
 Finally, you are able to load DataView with data. You can load inline or external data into DataView.
 
-- to load data from a local source, use the [](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
+- to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container",{
@@ -91,7 +91,7 @@ var dataview = new dhx.DataView("dataview_container",{
 dataview.data.parse(data);
 ~~~
 
-- to load data from an external file, use the [](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
+- to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container",{
