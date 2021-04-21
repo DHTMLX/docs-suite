@@ -5,6 +5,8 @@ title: eachChild
 
 @short: iterates through child items of a control
 
+@signature: eachChild(id: Id, cb: DataCallback<T>, direct?: boolean, checkItem?: (item: IDataItem) => boolean): void;
+
 @params:
 - id 		string		 the ID of a control
 - cb        function     the function that will be applied to every child of the item  

@@ -5,6 +5,8 @@ title: getIndex
 
 @short: returns the index of the item by its id
 
+@signature: getIndex(id: Id): number;
+
 @params:
 
 - id		string			the id of the item

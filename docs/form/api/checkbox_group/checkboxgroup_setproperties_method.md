@@ -5,9 +5,11 @@ title: setProperties
 
 @short:  allows changing available configuration attributes of the control dynamically
 
+@signature: setProperties(arg: string | { [name: string]: IFormProps; }, props?: IFormProps): void;
+
 @params:
 - arg	string,object      either the id of a checkbox, or an object with the available attributes of the CheckboxGroup control and their new values
-- properties	    object      optional, an object with the available attributes of the checkbox and their new values
+- props	    object      optional, an object with the available attributes of the checkbox and their new values
 
 
 

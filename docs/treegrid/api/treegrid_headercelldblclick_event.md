@@ -5,7 +5,7 @@ title: headerCellDblClick
 
 @short: fires on double-click on a grid footer cell
 
-@signature: headerCellDblClick: (col: object, e: MouseEvent) => void;
+@signature: headerCellDblClick: (col: ICol, e: MouseEvent) => void;
 
 @example:
 grid.events.on("HeaderCellDblClick", function(column,e){

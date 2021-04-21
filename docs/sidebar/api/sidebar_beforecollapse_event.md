@@ -5,7 +5,7 @@ title: beforeCollapse
 
 @short: fires before collapsing a sidebar
 
-beforeCollapse: () => boolean | void;
+@signature: beforeCollapse: () => boolean | void;
 
 @returns:
 param   boolean         false - to prevent collapsing a sidebar, otherwise - true

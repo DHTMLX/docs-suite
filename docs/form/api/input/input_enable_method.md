@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled Input control
 
+@signature: enable(): void;
+
 
 
 

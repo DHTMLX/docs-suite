@@ -5,6 +5,8 @@ title: clear
 
 @short: clears a value of a Select control
 
+@signature: clear(method?: ClearMethod): void;
+
 
 
 

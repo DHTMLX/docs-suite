@@ -5,6 +5,8 @@ title: hide
 
 @short: hides a TimePicker control
 
+@signature: hide(): void;
+
 
 
 @example:

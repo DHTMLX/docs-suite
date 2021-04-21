@@ -4,6 +4,8 @@ title: show
 ---          
 
 @short: shows a RadioGroup control on the page
+
+@signature: show(): void;
  
 
 

@@ -5,7 +5,7 @@ title: afterColumnShow
 
 @short: fires after a column is shown
 
-@signature: afterColumnShow: (col: object) => void;
+@signature: afterColumnShow: (col: ICol) => void;
 
 @params:
 - column   object  an object with a column configuration

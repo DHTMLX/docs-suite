@@ -5,7 +5,7 @@ title: showRow
 
 @short: makes a specified row visible on a page
 
-@signature: showRow(id: string | number): void;
+@signature: showRow(rowId: string | number): void;
 
 @params:
 - rowId	    string | number   the id of a row

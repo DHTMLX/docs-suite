@@ -5,6 +5,8 @@ title: getLength
 
 @short: counts child items of a control
 
+@signature: getLength(): number;
+
 @params:
 - id 		string		 the ID of a control
 

@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled RadioGroup control
 
+@signature: enable(): void;
+
 
 
 

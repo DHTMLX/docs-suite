@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled SimpleVault control
 
+@signature: enable(): void;
+
 
 
 

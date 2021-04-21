@@ -5,6 +5,8 @@ title: remove
 
 @short: deletes the specified item from the component
 
+@signature: remove(id: Id | Id[]): void;
+
 @params:
 - id 		string,string[]			the ids of the items that should be deleted 
 

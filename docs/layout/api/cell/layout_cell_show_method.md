@@ -5,7 +5,7 @@ title: show
 
 @short: shows a hidden cell
 
-```todoapi ```
+@signature: show(): void;
 
 @example:
 layout.getCell("1").show();

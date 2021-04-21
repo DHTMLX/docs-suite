@@ -5,7 +5,7 @@ title: headerCellMouseOver
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: headerCellMouseOver: (col: object, e: MouseEvent) => void;
+@signature: headerCellMouseOver: (col: ICol, e: MouseEvent) => void;
 
 @params:
 - col		object		an object with a column configuration

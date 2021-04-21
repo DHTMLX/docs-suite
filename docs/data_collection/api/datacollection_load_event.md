@@ -4,6 +4,8 @@ title: load
 ---          
 
 @short: fires when items are loaded in a data collection
+
+@signature: load: () => void;
 	
 @params:
 

@@ -5,6 +5,8 @@ title: getWidget
 
 @short: returns the dhtmlxTimePicker widget attached to a TimePicker control
 
+@signature: getWidget(): Combobox;
+
 
 
 @returns:

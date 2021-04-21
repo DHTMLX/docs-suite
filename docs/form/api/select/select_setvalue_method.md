@@ -5,6 +5,8 @@ title: setValue
 
 @short: sets the value for a Select control
 
+@signature: setValue(obj: FormData | IAnyObj): void;
+
 @params:
 - value     string|number     the value to be set  
 

@@ -5,6 +5,8 @@ title: getLength
 
 @short: returns the number of all elements of a data collection
 
+@signature: getLength(): number;
+
 @returns:
 - items        number       the number of elements of a data collection
 

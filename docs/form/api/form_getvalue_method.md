@@ -5,6 +5,8 @@ title: getValue
 
 @short: gets current values/states of controls
 
+@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
+
 
 @params:
 - asFormData	boolean		optional, defines whether values of Form controls should be returned as Form Data

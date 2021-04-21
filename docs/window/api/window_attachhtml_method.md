@@ -5,7 +5,7 @@ title: attachHTML
 
 @short: adds an HTML content into a dhtmlxWindow
 
-@signature:  attachHTML(html: string): void;
+@signature: attachHTML(html: string): void;
 
 @params:
 - html		string		an HTML content to be added into a window

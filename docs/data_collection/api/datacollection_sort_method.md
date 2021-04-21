@@ -5,6 +5,8 @@ title: sort
 
 @short: sorts data items in a component
 
+@signature: sort(by: ISortMode): void;
+
 @params:
 - rule		object		an object with parameters for sorting
 - config	object		defines the parameter of sorting

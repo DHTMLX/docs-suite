@@ -5,6 +5,8 @@ title: isDataLoaded
 
 @short: checks whether the specified data range is loaded from the server
 
+@signature: isDataLoaded(from?: number, to?: number): boolean;
+
 @params:
 - from			number			optional, the index of the first element of the data range to be checked
 - to            number          optional, the index of the last element of the data range to be checked

@@ -5,6 +5,8 @@ title: removeAll
 
 @short: deletes all items from the component
 
+@signature: removeAll(): void;
+
 @example:
 component.data.removeAll();
 

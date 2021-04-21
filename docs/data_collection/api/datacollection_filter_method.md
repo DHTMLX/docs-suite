@@ -5,6 +5,8 @@ title: filter
 
 @short: filters data items in a component
 
+@signature: filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;
+
 @params:
 - rule				function,object			the filtering criteria
 - config 			object					optional, defines the parameters of filtering

@@ -5,19 +5,12 @@ title: destructor
 
 @short: removes a Layout instance and releases occupied resources
 
-```todoapi ```
+@signature: destructor(): void;
 
 @example:
 layout.destructor();
 
-
 @template: api_method
 @descr:
 
-
-
-
-
 @changelog:
-
-

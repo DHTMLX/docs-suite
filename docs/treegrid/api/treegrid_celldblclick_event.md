@@ -5,7 +5,7 @@ title: cellDblClick
 
 @short: fires on double-click on a grid cell
 
-@signature: cellDblClick: (row: object, col: object, e: MouseEvent) => void;
+@signature: cellDblClick: (row: IRow, col: ICol, e: MouseEvent) => void;
 
 @params:
 - row			object		an object with a row configuration
