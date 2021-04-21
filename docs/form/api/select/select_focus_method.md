@@ -5,13 +5,8 @@ title: focus
 
 @short: sets focus to a control
 
-
-
-
-
 @example:
 form.getItem("select").focus();
-
 
 @template: api_method
 @descr:

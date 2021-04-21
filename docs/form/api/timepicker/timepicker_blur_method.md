@@ -3,7 +3,7 @@ sidebar_label: blur
 title: blur
 ---          
 
-@short: removes focus from a TimePicker control
+@short: removes focus from a Timepicker control
 
 @signature: 
 

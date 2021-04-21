@@ -7,7 +7,7 @@ title: blur
 
 @short: removes focus from a Form control
 
-@signature: blur(name?: string): void;
+@signature: blur(name): void;
 
 @params:
 - `name` - **string** -  optional, the name of a control. If the name is not specified, removes focus from any control in focus.

@@ -11,29 +11,29 @@ title: rows
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	rows:[ /*!*/
-    	{
+		{
 			type: "radioGroup",
 			name: "dir",
 			options: {
 				padding: "10px",
 				align: "center",
 				cols:[
-                	{
+					{
 						type: "radioButton",
-                        label: "as rows",
-                        labelInline: true,
-                        value: "rows",
-                        checked: true
+						label: "as rows",
+						labelInline: true,
+						value: "rows",
+						checked: true
 					},
 					{
 						type: "radioButton",
-                        label: "as cols",
-                        labelInline: true,
-                        value: "cols"
-                     }
-                ]
-            }
-    	}
+						label: "as cols",
+						labelInline: true,
+						value: "cols"
+					 }
+				]
+			}
+		}
 	]
 });
 

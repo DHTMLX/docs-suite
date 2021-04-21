@@ -46,6 +46,8 @@ title: Form API overview
 | [](form/api/form_change_event.md)                 | @getshort(form/api/form_change_event.md)                 |
 | [](form/api/form_click_event.md)                  | @getshort(form/api/form_click_event.md)                  |
 | [](form/api/form_keydown_event.md)                | @getshort(form/api/form_keydown_event.md)                |
+| [](form_blur_event.md)                            | @getshort(form_blur_event.md)                            |
+| [](form_focus_event.md)                           | @getshort(form_focus_event.md)                           |
 
 ### Properties
 
@@ -91,6 +93,8 @@ title: Form API overview
 | [](form/api/button/button_beforeshow_event.md)             | @getshort(form/api/button/button_beforeshow_event.md)             |
 | [](form/api/button/button_click_event.md)                  | @getshort(form/api/button/button_click_event.md)                  |
 | [](form/api/button/button_keydown_event.md)                | @getshort(form/api/button/button_keydown_event.md)                |
+| [](button/button_focus_event.md)                           | @getshort(button/button_focus_event.md)                           |
+| [](button/button_blur_event.md)                            | @getshort(button/button_blur_event.md)                            |
 
 ### Properties
 
@@ -134,6 +138,8 @@ title: Form API overview
 | [](form/api/calendar/calendar_change_event.md)                 | @getshort(orm/api/calendar/calendar_change_event.md)                 |
 | [](form/api/calendar/calendar_input_event.md)                  | @getshort(orm/api/calendar/calendar_input_event.md)                  |
 | [](form/api/calendar/calendar_keydown_event.md)                | @getshort(form/api/calendar/calendar_keydown_event.md)               |
+| [](calendar/calendar_blur_event.md)                            | @getshort(calendar/calendar_blur_event.md)                           |
+| [](calendar/calendar_focus_event.md)                           | @getshort(calendar/calendar_focus_event.md)                          |
 
 ### Properties
 
@@ -176,6 +182,8 @@ title: Form API overview
 | [](form/api/checkbox/checkbox_beforevalidate_event.md)         | @getshort(form/api/checkbox/checkbox_beforevalidate_event.md)         |
 | [](form/api/checkbox/checkbox_change_event.md)                 | @getshort(form/api/checkbox/checkbox_change_event.md)                 |
 | [](form/api/checkbox/checkbox_keydown_event.md)                | @getshort(form/api/checkbox/checkbox_keydown_event.md)                |
+| [](checkbox/checkbox_focus_event.md)                           | @getshort(checkbox/checkbox_focus_event.md)                           |
+| [](checkbox/checkbox_blur_event.md)                            | @getshort(checkbox/checkbox_blur_event.md)                            |
 
 ### Properties
 
@@ -218,6 +226,8 @@ title: Form API overview
 | [](form/api/checkbox_group/checkboxgroup_beforevalidate_event.md)         | @getshort(form/api/checkbox_group/checkboxgroup_beforevalidate_event.md)         |
 | [](form/api/checkbox_group/checkboxgroup_change_event.md)                 | @getshort(form/api/checkbox_group/checkboxgroup_change_event.md)                 |
 | [](form/api/checkbox_group/checkboxgroup_keydown_event.md)                | @getshort(form/api/checkbox_group/checkboxgroup_keydown_event.md)                |
+| [](checkbox_group/checkboxgroup_blur_event.md)                            | @getshort(checkbox_group/checkboxgroup_blur_event.md)                            |
+| [](checkbox_group/checkboxgroup_focus_event.md)                           | @getshort(checkbox_group/checkboxgroup_focus_event.md)                           |
 
 ### CheckboxGroup properties
 
@@ -266,6 +276,8 @@ title: Form API overview
 | [](form/api/colorpicker/colorpicker_change_event.md)                 | @getshort(form/api/colorpicker/colorpicker_change_event.md)                 |
 | [](form/api/colorpicker/colorpicker_input_event.md)                  | @getshort(form/api/colorpicker/colorpicker_input_event.md)                  |
 | [](form/api/colorpicker/colorpicker_keydown_event.md)                | @getshort(form/api/colorpicker/colorpicker_keydown_event.md)                |
+| [](colorpicker/colorpicker_blur_event.md)                            | @getshort(colorpicker/colorpicker_blur_event.md)                            |
+| [](colorpicker/colorpicker_focus_event.md)                           | @getshort(colorpicker/colorpicker_focus_event.md)                           |
 
 ### Properties
 
@@ -308,6 +320,8 @@ title: Form API overview
 | [](form/api/combo/combo_beforevalidate_event.md)         | @getshort(form/api/combo/combo_beforevalidate_event.md)         |
 | [](form/api/combo/combo_change_event.md)                 | @getshort(form/api/combo/combo_change_event.md)                 |
 | [](form/api/combo/combo_keydown_event.md)                | @getshort(form/api/combo/combo_keydown_event.md)                |
+| [](combo/combo_blur_event.md)                            | @getshort(combo/combo_blur_event.md)                            |
+| [](combo/combo_focus_event.md)                           | @getshort(combo/combo_focus_event.md)                           |
 
 ### Properties
 
@@ -383,6 +397,8 @@ title: Form API overview
 | [](form/api/input/input_change_event.md)                 | @getshort(form/api/input/input_change_event.md)                 |
 | [](form/api/input/input_input_event.md)                  | @getshort(form/api/input/input_input_event.md)                  |
 | [](form/api/input/input_keydown_event.md)                | @getshort(form/api/input/input_keydown_event.md)                |
+| [](input/input_blur_event.md)                            | @getshort(input/input_blur_event.md)                            |
+| [](input/input_focus_event.md)                           | @getshort(input/input_focus_event.md)                           |
 
 ### Properties
 
@@ -424,6 +440,8 @@ title: Form API overview
 | [](form/api/radiogroup/radiogroup_beforevalidate_event.md)         | @getshort(form/api/radiogroup/radiogroup_beforevalidate_event.md)         |
 | [](form/api/radiogroup/radiogroup_change_event.md)                 | @getshort(form/api/radiogroup/radiogroup_change_event.md)                 |
 | [](form/api/radiogroup/radiogroup_keydown_event.md)                | @getshort(form/form/api/radiogroup/radiogroup_keydown_event.md)           |
+| [](radiogroup/radiogroup_blur_event.md)                            | @getshort(radiogroup/radiogroup_blur_event.md)                            |
+| [](radiogroup/radiogroup_focus_event.md)                           | @getshort(radiogroup/radiogroup_focus_event.md)                           |
 
 ### RadioGroup properties
 
@@ -472,6 +490,8 @@ title: Form API overview
 | [](form/api/select/select_change_event.md)                 | @getshort(form/api/select/select_change_event.md)                 |
 | [](form/api/select/select_changeoptions_event.md)          | @getshort(form/api/select/select_changeoptions_event.md)          |
 | [](form/api/select/select_keydown_event.md)                | @getshort(form/api/select/select_keydown_event.md)                |
+| [](select/select_blur_event.md)                            | @getshort(select/select_blur_event.md)                            |
+| [](select/select_focus_event.md)                           | @getshort(select/select_focus_event.md)                           |
 
 ### Properties
 
@@ -542,6 +562,7 @@ title: Form API overview
 | [](form/api/slider/slider_setvalue_method.md)      | @getshort(form/api/slider/slider_setvalue_method.md)      |
 | [](form/api/slider/slider_show_method.md)          | @getshort(form/api/slider/slider_show_method.md)          |
 | [](slider/slider_focus_method.md)                  | @getshort(slider/slider_focus_method.md)                  |
+| [](slider/slider_blur_method.md)                   | @getshort(slider/slider_blur_method.md)                   |
 
 ### Events
 
@@ -555,6 +576,8 @@ title: Form API overview
 | [](form/api/slider/slider_beforeshow_event.md)             | @getshort(form/api/slider/slider_beforeshow_event.md)             |
 | [](form/api/slider/slider_change_event.md)                 | @getshort(form/api/slider/slider_change_event.md)                 |
 | [](form/api/slider/slider_keydown_event.md)                | @getshort(form/api/slider/slider_keydown_event.md)                |
+| [](slider/slider_blur_event.md)                            | @getshort(slider/slider_blur_event.md)                            |
+| [](slider/slider_focus_event.md)                           | @getshort(slider/slider_focus_event.md)                           |
 
 ### Properties
 
@@ -660,6 +683,8 @@ title: Form API overview
 | [](form/api/textarea/textarea_change_event.md)                 | @getshort(form/api/textarea/textarea_change_event.md)                 |
 | [](form/api/textarea/textarea_input_event.md)                  | @getshort(form/api/textarea/textarea_input_event.md)                  |
 | [](form/api/textarea/textarea_keydown_event.md)                | @getshort(form/api/textarea/textarea_keydown_event.md)                |
+| [](textarea/textarea_blur_event.md)                            | @getshort(textarea/textarea_blur_event.md)                            |
+| [](textarea/textarea_focus_event.md)                           | @getshort(textarea/textarea_focus_event.md)                           |
 
 ### Properties
 
@@ -703,6 +728,8 @@ title: Form API overview
 | [](form/api/timepicker/timepicker_change_event.md)                 | @getshort(form/api/timepicker/timepicker_change_event.md)                 |
 | [](form/api/timepicker/timepicker_input_event.md)                  | @getshort(form/api/timepicker/timepicker_input_event.md)                  |
 | [](form/api/timepicker/timepicker_keydown_event.md)                | @getshort(form/api/timepicker/timepicker_keydown_event.md)                |
+| [](timepicker/timepicker_blur_event.md)                            | @getshort(timepicker/timepicker_blur_event.md)                            |
+| [](timepicker/timepicker_focus_event.md)                           | @getshort(timepicker/timepicker_focus_event.md)                           |
 
 ### Properties
 
