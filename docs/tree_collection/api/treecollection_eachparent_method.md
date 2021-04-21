@@ -2,8 +2,8 @@
 sidebar_label: eachParent
 title: eachParent
 ---          
-
-@short: iterates through all the parent items (the immediate parent and its parent, etc until the parent is the component itself)
+``` todoanton signature мещает документации собраться
+@short: iterates through all the parent items (the immediate parent and its parent, etc until the parent is the component itself
 
 @signature: eachParent(id: Id, cb: DataCallback<T>, self?: boolean): void;
 
@@ -16,3 +16,4 @@ toolbar.data.eachParent("new_btn", item => console.log(item));
 
 @template: api_method
 @descr:
+``` todo

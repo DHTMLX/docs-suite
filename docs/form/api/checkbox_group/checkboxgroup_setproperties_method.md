@@ -1,7 +1,9 @@
 ---
 sidebar_label: setProperties
 title: setProperties
----          
+---   
+
+``` todoanton signature мещает документации собраться
 
 @short:  allows changing available configuration attributes of the control dynamically
 
@@ -152,4 +154,4 @@ form.getItem("checkboxGroup").setProperties("first", {
 
 @changelog: added in v7.0
 
-
+``` todo

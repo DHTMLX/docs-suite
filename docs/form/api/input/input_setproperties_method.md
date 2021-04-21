@@ -3,7 +3,7 @@ sidebar_label: setProperties
 title: setProperties
 description: description
 ---          
-
+``` todoanton signature мещает документации собраться
 @short: allows changing available configuration attributes of the control dynamically
 
 @signature: setProperties(arg: string | { [name: string]: IFormProps; }, props?: IFormProps): void;
@@ -25,7 +25,6 @@ The method invokes the [](form/api/input/input_afterchangeproperties_event.md) a
 
 It is possible to change values of the following configuration attributes of the **Input** control:
 
-``` todo
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -123,6 +122,6 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
     </tbody>
 </table>
-```
 
 @changelog: added in v7.0
+``` todo

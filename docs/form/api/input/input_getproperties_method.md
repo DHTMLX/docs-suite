@@ -2,7 +2,9 @@
 sidebar_label: getProperties
 title: getProperties
 description: description
----          
+---    
+
+``` todoanton signature мещает документации собраться
 
 @short: returns an object with the available configuration attributes of the control
 
@@ -151,3 +153,4 @@ The returned object of the **Input** control can contain the following configura
 
 @changelog: added in v7.0
 
+``` todo
