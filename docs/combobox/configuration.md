@@ -97,7 +97,7 @@ var combobox = new dhx.Combobox("combobox", {
 Label
 --------------
 
-You can set a label for ComboBox, adjust its width and position using the following properties: [](combo/api/combobox_label_config.md), [](combo/api/combobox_labelwidth_config.md) and [](combo/api/combobox_labelposition_config.md). This is how it can be done:
+You can set a label for ComboBox, adjust its width and position using the following properties: [](combobox/api/combobox_label_config.md), [](combobox/api/combobox_labelwidth_config.md) and [](combobox/api/combobox_labelposition_config.md). This is how it can be done:
 
 ~~~js
 var combo = new dhx.Combobox("combo_container",{
@@ -130,7 +130,7 @@ Number of selected options
 
 {{editor    https://snippet.dhtmlx.com/fw2u2bww	Combobox. Items Count}}
 
-Instead of showing all selected options separately in the ComboBox input, you can group them and display just the number of selected options. For this, you should use the [](combo/api/combobox_itemscount_config.md) property. 
+Instead of showing all selected options separately in the ComboBox input, you can group them and display just the number of selected options. For this, you should use the [](combobox/api/combobox_itemscount_config.md) property. 
 
 There are two possible types of values for this config. You can either simply enable the default behavior of the option, 
 or specify a custom template function to display grouped options in the desired way. The function takes one parameter:
@@ -166,7 +166,7 @@ Placeholder
 
 {{editor    https://snippet.dhtmlx.com/759z23gh	Combobox. Placeholder}}
 
-To add some placeholder into the ComboBox input, apply the [](combo/api/combobox_placeholder_config.md) property:
+To add some placeholder into the ComboBox input, apply the [](combobox/api/combobox_placeholder_config.md) property:
 
 ~~~js
 var combobox = new dhx.Combobox("combo_container",{
@@ -181,7 +181,7 @@ Readonly mode
 
 {{editor    https://snippet.dhtmlx.com/igjsuf7y	Combobox. Readonly}}
 
-If needed, you can make ComboBox readonly via the [](combo/api/combobox_readonly_config.md) property, so that it will be impossible to enter text in the input. In this case a user will only be able to select options from the popup list.
+If needed, you can make ComboBox readonly via the [](combobox/api/combobox_readonly_config.md) property, so that it will be impossible to enter text in the input. In this case a user will only be able to select options from the popup list.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container",{
@@ -192,7 +192,7 @@ var combo = new dhx.Combobox("combo_container",{
 Selection of multiple options
 ----------------------
 
-In order to add the possibility to select several options in ComboBox at once, make use of the [](combo/api/combobox_multiselection_config.md) configuration option.
+In order to add the possibility to select several options in ComboBox at once, make use of the [](combobox/api/combobox_multiselection_config.md) configuration option.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container", {
@@ -203,8 +203,8 @@ var combo = new dhx.Combobox("combo_container", {
 Selection of all options in the list
 -----------------------
 
-There is the Select All button that allows selecting all options in the ComboBox list. To add this button into the component, use the [](combo/api/combobox_selectallbutton_config.md) property. Note that you also need to enable selection of
-multiple options by setting the [](combo/api/combobox_multiselection_config.md) configuration option to *true*:
+There is the Select All button that allows selecting all options in the ComboBox list. To add this button into the component, use the [](combobox/api/combobox_selectallbutton_config.md) property. Note that you also need to enable selection of
+multiple options by setting the [](combobox/api/combobox_multiselection_config.md) configuration option to *true*:
 
 ~~~js
 var combo = new dhx.Combobox("combo_container", {
@@ -225,7 +225,7 @@ Template for ComboBox options
 
 {{editor    https://snippet.dhtmlx.com/z7cpj76i	Combobox. Template}}
 
-You can specify the appearance of ComboBox options in the list with the help of the [](combo/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string 
+You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string 
 with a template for rendering options in the list.
 
 ~~~js
