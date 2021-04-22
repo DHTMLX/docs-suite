@@ -63,8 +63,8 @@ const getSignatureData = (fileData, signature, url, data, fileName) => {
 	const fileIncludes = fileData.includes("@signature");
 	if (signature) {
 		return fileIncludes ?
-			fileData.replace(/@signature:.*/g, `@signature: ${signature}`) :
-			fileData.replace(/@short:.*/g, str => `${str}\n\n@signature: ${signature}`);
+			fileData.replace(/@signature:.*/g, `@signature: {'${signature}'}`) :
+			fileData.replace(/@short:.*/g, str => `${str}\n\n@signature: {'${signature}'}`);
 	} else {
 		if (data.toLowerCase().includes(fileName.toLowerCase())) {
 			return fileIncludes ?
