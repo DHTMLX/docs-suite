@@ -2945,7 +2945,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Events",
+          label: "Properties",
           items: [
             "uploader/api/uploader_autosend_config",
             "uploader/api/uploader_fieldname_config",

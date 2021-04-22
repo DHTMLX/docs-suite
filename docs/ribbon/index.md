@@ -25,7 +25,6 @@ Check [online samples for dhtmlxRibbon](https://docs.dhtmlx.com/suite/samples/ri
 Introduces the steps of creating Ribbon and discusses the ways of customizing and manipulating this component.
 
 - [](ribbon/how_to_start.md)
-- [](ribbon/controls.md)
 - [](ribbon/loading_json.md) 
 - [](ribbon/operating_ribbon.md)                
 - [](ribbon/fa_icons.md)

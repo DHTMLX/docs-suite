@@ -103,7 +103,7 @@ dataview.data.remove("id");
 
 ### Filtering DataView data
 
-You can filter DataView data by the specified criteria with the help of the [](data_collection/api/filter.md) method of Data collection. Check all details on parameters of the method in the
+You can filter DataView data by the specified criteria with the help of the [](../data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the
 [Data collection API](data_collection/api/refs/datacollection.md).
 
 ~~~js
@@ -118,7 +118,7 @@ dataview.data.filter({
 
 ### Sorting DataView data
 
-It is possible to sort data in DataView via the [](data_collection/api/sort.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/api/refs/datacollection.md).
+It is possible to sort data in DataView via the [](../data_collection/api/datacollection_sort_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/api/refs/datacollection.md).
 
 ~~~js
 dataview.data.sort({ 

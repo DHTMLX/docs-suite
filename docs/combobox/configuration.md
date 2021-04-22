@@ -6,7 +6,7 @@ title: Configuration
 Disabled mode
 ---------------
 
-There is an option that allows making ComboBox disabled and blocks any operations with it. Use the [](combo/api/combobox_disabled_config.md) configuration property to enter the described mode.
+There is an option that allows making ComboBox disabled and blocks any operations with it. Use the [](combobox/api/combobox_disabled_config.md) configuration property to enter the described mode.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container",{
@@ -22,7 +22,7 @@ Dynamic rendering of options
 ---------------------
 
 When you load a list of options into ComboBox, all items are loaded at once. In case you have a large data collection, it is suitable to render data by portions. dhtmlxComboBox provides you with such an ability.
-Use the [](combo/api/combobox_virtual_config.md) property to render options in the ComboBox list dynamically on scrolling the list.
+Use the [](combobox/api/combobox_virtual_config.md) property to render options in the ComboBox list dynamically on scrolling the list.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container",{
@@ -39,7 +39,7 @@ Height of list of options and its items
 
 {{editor    https://snippet.dhtmlx.com/vilg4l7w	Combobox. List Height}}
 
-There are two useful options to adjust the height of the list of options and the height of a separate item of this list: [](combo/api/combobox_listheight_config.md) and [](combo/api/combobox_itemheight_config.md):
+There are two useful options to adjust the height of the list of options and the height of a separate item of this list: [](combobox/api/combobox_listheight_config.md) and [](combobox/api/combobox_itemheight_config.md):
 
 ~~~js
 var combo = new dhx.Combobox("combo_container",{
@@ -51,7 +51,7 @@ var combo = new dhx.Combobox("combo_container",{
 Help icon 
 -----------
 
-While using Combo in a form, it is useful to add some info about options that can be selected in it. Use the [](combo/api/combobox_helpmessage_config.md) configuration option for this purpose.
+While using Combo in a form, it is useful to add some info about options that can be selected in it. Use the [](combobox/api/combobox_helpmessage_config.md) configuration option for this purpose.
 Set the necessary tip for users as a value of the property.
 
 ~~~js
@@ -63,7 +63,7 @@ var combobox = new dhx.Combobox("combobox",{
 Hidden label
 -------------------
 
-While sending a form to the server you can add a label for a ComboBox input that won't be visible, but will be used to identify the input on the server side. Use the combo/[](api/combobox_hiddenlabel_config.md) configuration property for this property.
+While sending a form to the server you can add a label for a ComboBox input that won't be visible, but will be used to identify the input on the server side. Use the [](combobox/api/combobox_hiddenlabel_config.md) configuration property for this property.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container",{
@@ -75,7 +75,7 @@ var combo = new dhx.Combobox("combo_container",{
 Initial value
 -----------------
 
-Starting from v7.0, it is possible to define the values that will appear in the input on initialization of the component via the [](combo/api/combobox_value_config.md) property:
+Starting from v7.0, it is possible to define the values that will appear in the input on initialization of the component via the [](combobox/api/combobox_value_config.md) property:
 
 ~~~js
 var combobox = new dhx.Combobox("combobox", {

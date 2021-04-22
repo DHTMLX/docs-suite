@@ -86,7 +86,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - New Form controls: [CheckboxGroup](form/checkboxgroup.md) and [Spacer](form/spacer.md)
 - New "focus()" method of Form controls: [DatePicker](form/api/calendar/calendar_focus_method.md), [Checkbox](form/api/checkbox/checkbox_focus_method.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_method.md), [Combo](form/api/combo/combo_focus_method.md), [Input](form/api/input/input_focus_method.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_method.md), [Select](form/api/select/select_focus_method.md), [Textarea](form/api/textarea/textarea_focus_method.md), [TimePicker](form/api/timepicker/timepicker_focus_method.md) 
 - The new "getProperties()" and "setProperties()" methods are added for Form controls: [Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md#colorpicker-api), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api)
-- The Event Systems are added for Form controls: [Button](form/api/api_overview.md#events-1), [DatePicker](form/api/api_overview.md#events-2), [Checkbox](form/api/api_overview.md#events-3), [ColorPicker](form/api/api_overview.md#events-5), [Combo](form/api/api_overview.md#events-6), [Input](form/api/api_overview.md#events-7), [RadioGroup](form/api/api_overview.md#events-8), [Select](form/api/api_overview.md#events-9), [Slider](form/api/api_overview.md#events-11), [Text](form/api/api_overview.md#events-13), [Textarea](form/api/api_overview.md#events-14), [TimePicker](form/api/api_overview.md#events-15) 
+- The Event Systems are added for Form controls: [Button](form/api/api_overview.md#button-events), [DatePicker](form/api/api_overview.md#datepicker-events), [Checkbox](form/api/api_overview.md#checkbox-events), [ColorPicker](form/api/api_overview.md#color-picker-events), [Combo](form/api/api_overview.md#combo-events), [Input](form/api/api_overview.md#input-events), [RadioGroup](form/api/api_overview.md#radiogroup-events), [Select](form/api/api_overview.md#select-events), [Slider](form/api/api_overview.md#slider-events), [Text](form/api/api_overview.md#text-events), [Textarea](form/api/api_overview.md#textarea-events), [TimePicker](form/api/api_overview.md#timepicker-events) 
 - SimpleVault control. New events: 
 [AfterHide](form/api/simplevault/simplevault_afterhide_event.md), [AfterShow](form/api/simplevault/simplevault_aftershow_event.md), [AfterValidate](form/api/simplevault/simplevault_aftervalidate_event.md), [BeforeHide](form/api/simplevault/simplevault_beforehide_event.md), [BeforeShow](form/api/simplevault/simplevault_beforeshow_event.md), [BeforeValidate](form/api/simplevault/simplevault_beforevalidate_event.md), [Change](form/api/simplevault/simplevault_change_event.md)
 - Checkbox control. The [isChecked()](form/api/checkbox/checkbox_ischecked_method.md) method and the ["text"](form/api/checkbox/api_checkbox_properties.md) property are added
@@ -119,8 +119,8 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 #### Layout
 
-- New properties of a layout cell: [maxHeight](layout/api/layout_maxheight_config.md), [maxWidth](layout/api/layout_maxwidth_config.md), [minHeight](layout/api/layout_minheight_config.md), [minWidth](layout/api/layout_minwidth_config.md)
-- The ability to specify borders between cells via the [type](layout/api/layout_type_config.md) configuration option of a Layout cell
+- New properties of a layout cell: [maxHeight](layout/api/cell/layout_cell_maxheight_config.md), [maxWidth](layout/api/cell/layout_cell_maxwidth_config.md), [minHeight](layout/api/cell/layout_cell_minheight_config.md), [minWidth](layout/api/cell/layout_cell_minwidth_config.md)
+- The ability to specify borders between cells via the [type](layout/api/cell/layout_cell_type_config.md) configuration option of a Layout cell
 
 
 #### List
@@ -197,7 +197,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - [Grid](grid/api/grid_beforecolumndrag_event.md)/[TreeGrid](treegrid/api/treegrid_beforecolumndrag_event.md). The "beforeColumnDrag" event is updated - the `id` parameter is replaced with the `data` and `e` ones.
 - [Grid](grid/api/grid_beforecolumndrop_event.md)/[TreeGrid](treegrid/api/treegrid_beforecolumndrop_event.md). The "beforeColumnDrop" event is updated - the `sourceId`/ `targetId` parameters are replaced with the `data` and `e` ones.
 - Layout. [Layout patterns](layout/layout_patterns.md) section is added to docs
-- Layout. The [gravity](layout/api/layout_gravity_config.md) property of a Layout cell is updated
+- Layout. The [gravity](layout/api/cell/layout_cell_gravity_config.md) property of a Layout cell is updated
 - [Layout](layout/cell_configuration.md#autosize-for-cells). The ability to configure a Layout cell so that its width/ height would automatically adjust to the width/ height of the cell content
 - Menu, Ribbon, Sidebar, Toolbar. Improved controls.
 - [Menu](menu/work_with_menu.md#disablingenabling-menu-options)/[Ribbon](ribbon/operating_ribbon.md#disabling-and-enabling-controls)/[Sidebar](sidebar/work_with_sidebar.md#disabling-and-enabling-controls)/[Toolbar](toolbar/common_methods.md#disabling-and-enabling-controls). The "disable()"/"enable()" methods are updated - now it is possible to disable/enable all items of the widget at once.
@@ -214,7 +214,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 ### Fixes
 
 - The incorrect display of the [tooltip](slider/api/slider_tooltip_config.md) of Slider when the [range](slider/api/slider_range_config.md) property is enabled
-- Issues with the [width](layout/api/layout_width_config.md), [height](layout/api/layout_height_config.md), [padding](layout/api/layout_padding_config.md) properties of a Layout cell when setting their values as `number` type
+- Issues with the [width](layout/api/cell/layout_cell_width_config.md), [height](layout/api/cell/layout_cell_height_config.md), [padding](layout/api/cell/layout_cell_padding_config.md) properties of a Layout cell when setting their values as `number` type
 - Issues with the [](selection/api/selection_afterunselect_event.md) and [](selection/api/selection_beforeunselect_event.md) events of the Selection object when using in List/DataView 
 - Issue with the [update()](data_collection/api/datacollection_update_method.md) method of Data Collection
 - Issue with the [update()](tree_collection/api/treecollection_update_method.md) method of Tree Collection
@@ -541,10 +541,10 @@ Version 6.4
 #### Layout
 
 - The [](layout/api/layout_afterexpand_event.md) and [](layout/api/layout_beforeexpand_event.md) events are added
-- The ability to [collapse/expand a specified cell](layout/work_with_layout.md#collapsing-expanding-a-cell) using the corresponding [](layout/api/layout_collapse_method.md) and [](layout/api/layout_expand_method.md) methods 
-- The [](layout/api/layout_toggle_method.md) method is added
+- The ability to [collapse/expand a specified cell](layout/work_with_layout.md#collapsing-expanding-a-cell) using the corresponding [](layout/api/cell/layout_cell_collapse_method.md) and [](layout/api/cell/layout_cell_expand_method.md) methods 
+- The [](layout/api/cell/layout_cell_toggle_method.md) method is added
 - The [](layout/api/layout_foreach_method.md) method is added
-- The ability to set the height for a cell of a layout with a header via the [](layout/api/layout_headerheight_config.md) configuration property of a cell
+- The ability to set the height for a cell of a layout with a header via the [](layout/api/cell/layout_cell_headerheight_config.md) configuration property of a cell
 
 
 #### List
