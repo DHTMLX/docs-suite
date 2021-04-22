@@ -5,6 +5,8 @@ title: getWidget
 
 @short: returns the dhtmlxComboBox widget attached to a Combo control
 
+@signature: getWidget(): Combobox;
+
 
 
 @returns:

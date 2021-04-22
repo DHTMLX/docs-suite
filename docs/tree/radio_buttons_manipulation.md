@@ -3,7 +3,7 @@ sidebar_label: Manipulating Radio Buttons
 title: Manipulating Radio Buttons
 ---        
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 Enabling/Disabling Radio Buttons  
 --------------------------------

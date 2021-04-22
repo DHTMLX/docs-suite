@@ -18,12 +18,12 @@ var layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/bxqnzesl	Layout. Header
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
 @relatedapi: 
-layout/api/layout_headerheight_config.md
-layout/api/layout_headericon_config.md
-layout/api/layout_headerimage_config.md
+layout/api/cell/layout_cell_headerheight_config.md
+layout/api/cell/layout_cell_headericon_config.md
+layout/api/cell/layout_cell_headerimage_config.md
 
 @related: layout/init.md#initializelayout
 layout/cell_configuration.md#heightofaheadercell

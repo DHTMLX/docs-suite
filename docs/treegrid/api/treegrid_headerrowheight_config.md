@@ -22,4 +22,4 @@ The height of the header is calculated as a sum of all row heights in it.
 @related: treegrid/configuration.md#headerfooterheight
 treegrid/initialization.md#initializetreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/xl0i3yof	TreeGrid. Rows Height
+**Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)

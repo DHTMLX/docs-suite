@@ -17,7 +17,7 @@ grid.showColumn(col);
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/1gekn97m	TreeGrid. Show/Hide column
+**Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
 
 @relatedapi: treegrid/api/treegrid_hidecolumn_method.md
 

@@ -25,7 +25,7 @@ layout.events.on("BeforeRemove", function(id){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fyxw0map	Layout. Events
+**Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 @changelog:
 added in v6.2

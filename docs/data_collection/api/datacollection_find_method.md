@@ -25,5 +25,5 @@ var item = component.data.find(function(item){
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fpxhdc46	Data. Find
+**Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)
 

@@ -39,6 +39,6 @@ var layout = dhx.Layout("layout_container", {
 
 @related: layout/init.md#initializelayout
 
-@relatedsample: https://snippet.dhtmlx.com/4w1033c9	Layout. Align
+**Related sample**: [Layout. Align](https://snippet.dhtmlx.com/4w1033c9)
 
 

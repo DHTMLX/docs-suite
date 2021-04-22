@@ -5,7 +5,7 @@ title: cellRightClick
 
 @short: fires on right click on a grid cell
 
-@signature: cellRightClick: (row: object, col: object, e: MouseEvent) => void;
+@signature: cellRightClick: (row: IRow, col: ICol, e: MouseEvent) => void;
 
 @params:
 - row			object		an object with a row configuration
@@ -20,4 +20,4 @@ grid.events.on("CellRightClick", function(row,column,e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/sgwnxshe	TreeGrid. TreeGrid Events
+**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

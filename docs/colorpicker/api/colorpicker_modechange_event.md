@@ -18,6 +18,6 @@ colorpicker.events.on("ModeChange", function(mode) {
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fllgaabo	Colorpicker. Events
+**Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
 
 @changelog: added in v6.4

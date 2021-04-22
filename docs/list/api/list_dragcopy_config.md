@@ -15,5 +15,5 @@ var target = new dhx.List("list-target", {dragMode: "target", dragCopy: true});
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/b0dikxzp	List. Setup Drag Copy
+**Related sample**: [List. Setup Drag Copy](https://snippet.dhtmlx.com/b0dikxzp)
 

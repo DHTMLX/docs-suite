@@ -5,6 +5,8 @@ title: filter
 
 @short: filters controls by some criteria
 
+@signature: filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;
+
 @params:
 - rule      function,object     the filtering criteria
 - config 		object		 optional, defines the parameters of filtering
@@ -94,5 +96,5 @@ The **config** parameter may contain the following properties:
 
 
 
-@relatedsample: https://snippet.dhtmlx.com/epsslwcd	TreeGrid. Basic Filter
+**Related sample**: [TreeGrid. Basic Filter](https://snippet.dhtmlx.com/epsslwcd)
 

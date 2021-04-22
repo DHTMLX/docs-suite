@@ -5,7 +5,7 @@ title: beforeShow
 
 @short: fires before a window is shown
 
-@signature: beforeShow: (position: object) => boolean | void;
+@signature: beforeShow: (position: IPosition) => boolean | void;
 
 @params:
 - position  object      an object with coordinates of the window's position
@@ -30,7 +30,7 @@ The **position** parameter contains two attributes:
 - **left** - (*number*)	the left coordinate of the window's position (in pixels)
 - **top** - (*number*)	the top coordinate of the window's position (in pixels)
 
-@relatedsample: https://snippet.dhtmlx.com/jfu4upwd	Window. Events
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md
 

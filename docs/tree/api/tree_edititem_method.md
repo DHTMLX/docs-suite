@@ -42,6 +42,6 @@ The **config** parameter includes the following properties:
 
 @changelog:
 
-@relatedsample: https://snippet.dhtmlx.com/jaqx0rb4	Tree. Edit Item
+**Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 
 

@@ -34,7 +34,7 @@ var layout = new dhx.Layout("layout_container", {
 layout/cell_configuration.md#cellsize
 
 
-@relatedsample: https://snippet.dhtmlx.com/miej9gb9	Layout. Sizes
+**Related sample**: [Layout. Sizes](https://snippet.dhtmlx.com/miej9gb9)
 
 @relatedapi:
 layout/api/layout_minwidth_config.md

@@ -5,7 +5,7 @@ title: cellMouseDown
 
 @short: fires before releasing the left mouse button when clicking on a grid cell
 
-@signature: cellMouseDown: (row: object, col: object, e: MouseEvent & TouchEvent) => void;
+@signature: cellMouseDown: (row: IRow, col: ICol, e: MouseEvent & TouchEvent) => void;
 
 @params:
 - row			object		an object with a row configuration
@@ -20,4 +20,4 @@ grid.events.on("CellMouseDown", function(row,column,e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/sgwnxshe	TreeGrid. TreeGrid Events
+**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

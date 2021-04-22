@@ -24,7 +24,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 tabbar/init.md#definetabbarstructure
 tabbar/configuring_tabbar.md#disabledtabs
 
-@relatedsample: https://snippet.dhtmlx.com/pxa6rkpj	Tabbar. Disabled Tab
+**Related sample**: [Tabbar. Disabled Tab](https://snippet.dhtmlx.com/pxa6rkpj)
 
 @descr: 
 

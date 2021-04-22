@@ -20,4 +20,4 @@ var slider = new dhx.Slider("slider_container", {
 @related: slider/initializing_slider.md#configurationproperties
 slider/configuring_slider.md#scalesettings
 
-@relatedsample: https://snippet.dhtmlx.com/4a6l7cyy	Slider. Slider With A Scale
+**Related sample**: [Slider. Slider With A Scale](https://snippet.dhtmlx.com/4a6l7cyy)

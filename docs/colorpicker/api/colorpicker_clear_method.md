@@ -16,7 +16,7 @@ colorpicker.clear();
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/yg6boc09	Colorpicker. Clear
+**Related sample**: [Colorpicker. Clear](https://snippet.dhtmlx.com/yg6boc09)
 
 
 @changelog:

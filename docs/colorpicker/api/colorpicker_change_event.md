@@ -18,4 +18,4 @@ colorpicker.events.on("Change",function(color){
 
 @changelog: added in v6.3
 
-@relatedsample: https://snippet.dhtmlx.com/fllgaabo	Colorpicker. Events
+**Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)

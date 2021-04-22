@@ -22,4 +22,4 @@ window/configuration.md#overflowingbrowserwindow
 @descr: 
 {{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
 
-@relatedsample: https://snippet.dhtmlx.com/qfhdlzri	Window. Viewport Overflow
+**Related sample**: [Window. Viewport Overflow](https://snippet.dhtmlx.com/qfhdlzri)

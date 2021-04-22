@@ -26,4 +26,4 @@ calendar/api/calendar_value_config.md
 @related: calendar/how_to_start.md#initializecalendar
 calendar/configuring.md#initialcalendardate
 
-@relatedsample: https://snippet.dhtmlx.com/fyg6l65t	Calendar. Date Initialization
+**Related sample**: [Calendar. Date Initialization](https://snippet.dhtmlx.com/fyg6l65t)

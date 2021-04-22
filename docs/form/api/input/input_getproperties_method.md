@@ -2,13 +2,16 @@
 sidebar_label: getProperties
 title: getProperties
 description: description
----          
+---    
+
+``` todoanton signature мещает документации собраться
 
 @short: returns an object with the available configuration attributes of the control
 
+@signature: getProperties(name?: string): { [name: string]: IFormProps; } | IFormProps;
+
 @returns:
 param   object      an object with the available attributes of the control and their values
-
 
 @example:
 var form = new dhx.Form("form_container", {
@@ -54,7 +57,6 @@ form.getItem("input").getProperties();
 @descr:
 The returned object of the **Input** control can contain the following configuration attributes:
 
-``` todo
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -148,7 +150,7 @@ The returned object of the **Input** control can contain the following configura
 		</tr>
     </tbody>
 </table>
-```
 
 @changelog: added in v7.0
 
+``` todo

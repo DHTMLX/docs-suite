@@ -185,18 +185,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{editor    https://snippet.dhtmlx.com/dfdlzpqb	Setup drag column (Pro)}}
 
-To make the process of reordering columns by drag and drop more flexible, apply the related events: 
-
-todotw скорее всего можно просто сослаться на API
-- grid/api/grid_aftercolumndrag_event.md 
-- grid/api/grid_aftercolumndrop_event.md 
-- grid/api/grid_beforecolumndrag_event.md 
-- grid/api/grid_beforecolumndrop_event.md 
-- grid/api/grid_cancolumndrop_event.md 
-- grid/api/grid_cancelcolumndrop_event.md 
-- grid/api/grid_dragcolumnin_event.md 
-- grid/api/grid_dragcolumnout_event.md 
-- grid/api/grid_dragcolumnstart_event.md
+{{note To make the process of reordering columns by drag and drop more flexible, you can apply the [related](grid/api/api_overview.md#column-drag-and-drop) drag-n-drop events.}}
 
 Drag-n-drop of Grid rows
 -------------------------
@@ -220,17 +209,8 @@ var grid = new dhx.Grid("grid_container", {
 
 {{editor    https://snippet.dhtmlx.com/qx9a86ax	Grid. Setup Drag Mode}}
 
-Here is a list of drag-n-drop events that you can use while drag-n-drop of rows is enabled:
+{{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](grid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
-- grid/api/grid_afterrowdrag_event.md
-- grid/api/grid_afterrowdrop_event.md
-- grid/api/grid_beforerowdrag_event.md
-- grid/api/grid_beforerowdrop_event.md
-- grid/api/grid_canrowdrop_event.md
-- grid/api/grid_cancelrowdrop_event.md
-- grid/api/grid_dragrowin_event.md
-- grid/api/grid_dragrowout_event.md
-- grid/api/grid_dragrowstart_event.md
 
 Editing Grid and separate columns
 --------------------

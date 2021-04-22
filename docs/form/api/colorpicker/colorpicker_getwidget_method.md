@@ -5,6 +5,8 @@ title: getWidget
 
 @short: returns the dhtmlxColorPicker widget attached to a ColorPicker control
 
+@signature: getWidget(): Combobox;
+
 
 
 @returns:
@@ -26,5 +28,5 @@ var colorpicker = form.getItem("colorpicker").getWidget();  // -> ColorPicker
 colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control}}
+**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
 

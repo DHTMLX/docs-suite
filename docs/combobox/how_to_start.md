@@ -76,14 +76,14 @@ Load data into ComboBox
 
 There are two handy ways of loading data, i.e. a set of options into ComboBox:
 
-- from an external file with the help of the [](data_collection/api/load.md) method of Data collection:
+- from an external file with the help of the [load()](data_collection/api/datacollection_load_method.md) method of Data collection:
 
 ~~~js
 var combo = new dhx.Combobox("combo_container");
 combo.data.load("../common/dataset.json");
 ~~~
 
-- from a local source using the [](data_collection/api/parse.md) method of Data collection:
+- from a local source using the [parse()](data_collection/api/datacollection_parse_method.md) method of Data collection:
 
 ~~~js
 var countries = [

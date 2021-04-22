@@ -5,7 +5,7 @@ title: getCell
 
 @short: returns the config object of a cell
 
-```todoapi ```
+@signature: getCell(id: string): ICell;
 
 @params:
 - id	string		the id of a cell

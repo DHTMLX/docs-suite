@@ -64,4 +64,4 @@ var treegrid = new dhx.TreeGrid({
 @related: treegrid/initialization.md#initializetreegrid
 treegrid/customization.md#stylingtreegrid
 
-@relatedsample: https://snippet.dhtmlx.com/cpvir0od	TreeGrid. Styling Grid
+**Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)

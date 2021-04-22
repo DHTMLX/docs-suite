@@ -21,7 +21,7 @@ dhx.ajax.put(url, {id: "1", updated: true}).then(function (data) {
 	console.log(err);
 });
 
-@relatedsample: https://snippet.dhtmlx.com/i4v52yj8	Data. Ajax PUT
+**Related sample**: [Data. Ajax PUT](https://snippet.dhtmlx.com/i4v52yj8)
 @template:	api_method
 
 @descr:

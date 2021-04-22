@@ -4,6 +4,8 @@ title: beforeLazyLoad
 ---          
 
 @short: fires before sending a request to the server
+
+@signature: beforeLazyLoad: () => boolean | void;
 	
 @returns:
 - param		boolean			false - to block sending a request to the server, otherwise true

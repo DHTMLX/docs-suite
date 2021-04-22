@@ -5,6 +5,8 @@ title: setPage
 
 @short: sets an active page in the related widget
 
+@signature: setPage(v: number): void;
+
 
 @params:
 - pageIndex     number      the index of a page

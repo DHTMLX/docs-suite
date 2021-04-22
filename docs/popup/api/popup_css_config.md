@@ -5,9 +5,7 @@ title: css
 
 @short: adds style classes for the component
 
-```todoapi ```
-
-@type: string
+@signature: css?: string;
 
 @example: 
 var popup = new dhx.Popup({
@@ -53,4 +51,4 @@ var popup = new dhx.Popup({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample: https://snippet.dhtmlx.com/rd8zfw5h	Popup. Custom Css
+**Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)

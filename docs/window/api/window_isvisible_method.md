@@ -19,7 +19,7 @@ window.isVisible(); // -> true/false
 
 @related: window/usage.md#checkingvisibilityofwindow
 
-@relatedsample: https://snippet.dhtmlx.com/woz5c09h	Window. Get Window Visible Status
+**Related sample**: [Window. Get Window Visible Status](https://snippet.dhtmlx.com/woz5c09h)
 
 
 

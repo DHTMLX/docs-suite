@@ -36,5 +36,5 @@ The template function takes one parameter:
 
 @relatedapi: list/api/list_eventhandlers_config.md
 
-@relatedsample: https://snippet.dhtmlx.com/gtzdwpj4	List. Add Template To List Item
+**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
 

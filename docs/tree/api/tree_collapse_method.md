@@ -17,7 +17,7 @@ tree.collapse("history");
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/esxb15hm	Tree. Expand Item
+**Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
 
 @related: tree/work_with_tree.md#expandingcollapsingitems
 

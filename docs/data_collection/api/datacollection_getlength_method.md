@@ -5,6 +5,8 @@ title: getLength
 
 @short: returns the number of all elements of a data collection
 
+@signature: getLength(): number;
+
 @returns:
 - items        number       the number of elements of a data collection
 
@@ -15,4 +17,4 @@ datacollection.getLength();
 @template:	api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/4weiba8i	Data. Get Length
+**Related sample**: [Data. Get Length](https://snippet.dhtmlx.com/4weiba8i)

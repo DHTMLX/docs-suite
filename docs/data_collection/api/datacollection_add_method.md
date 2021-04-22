@@ -39,7 +39,7 @@ component.data.add([
 @template:	api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/ktd8ks0m	Data. Add
+**Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)
 
 @changelog:
 possibility to pass an array of items is added in v6.1

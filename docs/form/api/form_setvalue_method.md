@@ -32,7 +32,7 @@ form/api/form_getvalue_method.md
 
 @related:form/work_with_form.md#settingnewvaluesforcontrols
 
-@relatedsample: https://snippet.dhtmlx.com/7nxbtlzs	Form. Set Value
+**Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
 
 @changelog:added in v6.1 
 

@@ -1,14 +1,15 @@
 ---
-sidebar_label: show
-title: show
+sidebar_label: hide
+title: hide
 ---          
 
-@short: shows a hidden cell
+@short: hides a specified cell
 
 ```todoapi ```
 
+
 @example:
-layout.getCell("1").show();
+layout.getCell("1").hide();
 
 
 @template: api_method
@@ -17,12 +18,14 @@ layout.getCell("1").show();
 
 
 @relatedapi:
-layout/api/layout_hide_method.md
+layout/api/layout_show_method.md
 layout/api/layout_isvisible_method.md
 layout/api/layout_hidden_config.md
 
+
 @changelog:
+
 
 @related: layout/work_with_layout.md#hidingshowingacell
 
-@relatedsample: https://snippet.dhtmlx.com/v0q7gq26	Layout. Show
+**Related sample**: [Layout. Hide](https://snippet.dhtmlx.com/u0jd8ah3)

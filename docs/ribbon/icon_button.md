@@ -3,7 +3,7 @@ sidebar_label: iconButton Control
 title: iconButton Control
 ---  
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 ```
 

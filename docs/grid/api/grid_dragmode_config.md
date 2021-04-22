@@ -39,7 +39,7 @@ Drag-n-drop can work in three modes:
 </table>
 
 
-@relatedsample: https://snippet.dhtmlx.com/qx9a86ax	Grid. Setup Drag Mode
+**Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
 
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#dragndropofgridrows

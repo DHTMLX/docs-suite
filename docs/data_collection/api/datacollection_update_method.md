@@ -18,4 +18,4 @@ component.data.update(123, { text:"New text" });
 
 @related:window/customization.md#controlsandoperations
 
-@relatedsample: https://snippet.dhtmlx.com/4g90gi6b	Data. Update
+**Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)

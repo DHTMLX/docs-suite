@@ -5,11 +5,9 @@ title: pageSize
 
 @short: optional, the number of items displayed per page of the related widget
 
-@default:
-10
+@signature: pageSize?: number;
 
-
-@type: number
+@default: 10
 
 @example: 
 const pagination = new dhx.Pagination("pagination_container", {

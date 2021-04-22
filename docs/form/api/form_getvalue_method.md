@@ -5,6 +5,8 @@ title: getValue
 
 @short: gets current values/states of controls
 
+@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
+
 
 @params:
 - asFormData	boolean		optional, defines whether values of Form controls should be returned as Form Data
@@ -44,7 +46,7 @@ var state = form.getValue();
 
 @related: form/work_with_form.md#gettingvaluesofcontrols
 
-@relatedsample: https://snippet.dhtmlx.com/odod5v12	Form. Get Value
+**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
 
 

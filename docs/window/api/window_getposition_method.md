@@ -29,4 +29,4 @@ window/api/window_setposition_method.md
 
 @related:window/usage.md#positioningwindow
 
-@relatedsample: https://snippet.dhtmlx.com/hc3ronrk	Window. Get/Set Window Position
+**Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)

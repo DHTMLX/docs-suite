@@ -20,7 +20,7 @@ sidebar.isDisable("id"); // -> returns true/false
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable
+**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
 @changelog: added in v6.4
 

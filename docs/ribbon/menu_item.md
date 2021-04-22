@@ -3,7 +3,7 @@ sidebar_label: menuItem Control
 title: menuItem Control
 ---   
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 This is a dropdown menu.
 

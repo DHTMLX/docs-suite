@@ -15,7 +15,7 @@ toolbar.destructor();
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/3ivdiha0	Toolbar. Destructor
+**Related sample**: [Toolbar. Destructor](https://snippet.dhtmlx.com/3ivdiha0)
 
 
 @changelog:

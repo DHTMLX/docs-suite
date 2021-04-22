@@ -22,4 +22,4 @@ var combo = new dhx.Combobox("combo_container",{
 @related: combo/how_to_start.md#initializecombobox
 combo/configuration.md#heightoflistofoptionsanditsitems
 
-@relatedsample: https://snippet.dhtmlx.com/vilg4l7w	Combobox. List Height
+**Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)

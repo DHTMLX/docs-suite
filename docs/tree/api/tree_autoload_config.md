@@ -14,6 +14,6 @@ var tree = new dhx.Tree("tree_container", {autoload: true});
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/ahrblf1m	Tree. Autoload
+**Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
 @related: tree/initialization_of_dhtmlxtree.md#initializetree

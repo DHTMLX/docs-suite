@@ -28,7 +28,7 @@ There are three modes of behaviour of a dragged tree item, depending on the valu
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
 
-@relatedsample: https://snippet.dhtmlx.com/80mh3hly	Tree. Drop Behaviour
+**Related sample**: [Tree. Drop Behaviour](https://snippet.dhtmlx.com/80mh3hly)
 
 @related: tree/initialization_of_dhtmlxtree.md#initializetree
 tree/drag_and_drop_handling.md#dropbehaviour

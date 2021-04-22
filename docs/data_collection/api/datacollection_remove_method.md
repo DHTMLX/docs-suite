@@ -5,6 +5,8 @@ title: remove
 
 @short: deletes the specified item from the component
 
+@signature: remove(id: Id | Id[]): void;
+
 @params:
 - id 		string,string[]			the ids of the items that should be deleted 
 
@@ -19,4 +21,4 @@ component.data.remove(["2", "4"]);
 
 @related:window/customization.md#controlsandoperations
 
-@relatedsample: https://snippet.dhtmlx.com/ugdlqgp5	Data. Remove
+**Related sample**: [Data. Remove](https://snippet.dhtmlx.com/ugdlqgp5)

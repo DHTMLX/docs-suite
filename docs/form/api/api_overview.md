@@ -3,7 +3,7 @@ sidebar_label: API overview
 title: Form API overview
 ---
 
-## Common Form API 
+## Common Form API
 
 ### Methods
 
@@ -66,7 +66,7 @@ title: Form API overview
 
 ##  Button API
 
-### Methods
+### Button methods
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | --------------------------------------------------------- |
@@ -81,7 +81,7 @@ title: Form API overview
 | [](button/button_focus_method.md)                  | @getshort(button/button_focus_method.md)                  |
 | [](button/button_blur_method.md)                   | @getshort(button/button_blur_method.md)                   |
 
-### Events
+### Button events
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -96,13 +96,13 @@ title: Form API overview
 | [](button/button_focus_event.md)                           | @getshort(button/button_focus_event.md)                           |
 | [](button/button_blur_event.md)                            | @getshort(button/button_blur_event.md)                            |
 
-### Properties
+### Button properties
 
 [List of the Button properties](form/api/button/api_button_properties.md)
 
-## Datepicker API
+## DatePicker API
 
-### Methods
+### DatePicker methods
 
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
@@ -123,7 +123,7 @@ title: Form API overview
 | [](form/api/calendar/calendar_validate_method.md)      | @getshort(form/api/calendar/calendar_validate_method.md)      |
 | [](form/api/calendar/calendar_blur_method.md)          | @getshort(form/api/calendar/calendar_blur_method.md)          |
 
-### Events
+### DatePicker events
 
 | Name                                                           | Description                                                          |
 | :------------------------------------------------------------- | :------------------------------------------------------------------- |
@@ -141,14 +141,14 @@ title: Form API overview
 | [](calendar/calendar_blur_event.md)                            | @getshort(calendar/calendar_blur_event.md)                           |
 | [](calendar/calendar_focus_event.md)                           | @getshort(calendar/calendar_focus_event.md)                          |
 
-### Properties
+### DatePicker properties
 
-[List of the Datepicker properties](form/api/calendar/api_calendar_properties.md)
+[List of the DatePicker properties](form/api/calendar/api_calendar_properties.md)
 
 ## Checkbox API
 
-### Methods
-     
+### Checkbox methods
+
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
 | [](form/api/checkbox/checkbox_clear_method.md)         | @getshort(form/api/checkbox/checkbox_clear_method.md)         |
@@ -168,7 +168,7 @@ title: Form API overview
 | [](form/api/checkbox/checkbox_validate_method.md)      | @getshort(form/api/checkbox/checkbox_validate_method.md)      |
 | [](form/api/checkbox/checkbox_blur_method.md)          | @getshort(form/api/checkbox/checkbox_blur_method.md)          |
 
-### Events
+### Checkbox events
 
 | Name                                                           | Description                                                           |
 | :------------------------------------------------------------- | :-------------------------------------------------------------------- |
@@ -185,14 +185,14 @@ title: Form API overview
 | [](checkbox/checkbox_focus_event.md)                           | @getshort(checkbox/checkbox_focus_event.md)                           |
 | [](checkbox/checkbox_blur_event.md)                            | @getshort(checkbox/checkbox_blur_event.md)                            |
 
-### Properties
+### Checkbox properties
 
 [List of the Checkbox properties](form/api/checkbox/api_checkbox_properties.md)
 
 ## CheckboxGroup API
 
-### Methods
-     
+### CheckboxGroup methods
+
 | Name                                                              | Description                                                              |
 | :---------------------------------------------------------------- | :----------------------------------------------------------------------- |
 | [](form/api/checkbox_group/checkboxgroup_clear_method.md)         | @getshort(form/api/checkbox_group/checkboxgroup_clear_method.md)         |
@@ -212,7 +212,7 @@ title: Form API overview
 | [](form/api/checkbox_group/checkboxgroup_validate_method.md)      | @getshort(form/api/checkbox_group/checkboxgroup_validate_method.md)      |
 | [](form/api/checkbox_group/checkboxgroup_blur_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_blur_method.md)          |
 
-### Events
+### CheckboxGroup events
 
 | Name                                                                      | Description                                                                      |
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- |
@@ -237,9 +237,9 @@ title: Form API overview
 
 [List of properties of a Checkbox of the CheckboxGroup control](form/api/checkbox_group/api_checkboxgroup_properties.md#properties-of-a-checkbox-of-checkboxgroup)
 
-## Colorpicker API
+## Color Picker API
 
-### Methods
+### Color Picker methods
 
 | Name                                                         | Description                                                         |
 | :----------------------------------------------------------- | :------------------------------------------------------------------ |
@@ -261,7 +261,7 @@ title: Form API overview
 | [](form/api/colorpicker/colorpicker_blur_method.md)          | @getshort(form/api/colorpicker/colorpicker_blur_method.md)          |
        
 
-### Events
+### Color Picker events
 
 | Name                                                                 | Description                                                                 |
 | :------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
@@ -279,13 +279,13 @@ title: Form API overview
 | [](colorpicker/colorpicker_blur_event.md)                            | @getshort(colorpicker/colorpicker_blur_event.md)                            |
 | [](colorpicker/colorpicker_focus_event.md)                           | @getshort(colorpicker/colorpicker_focus_event.md)                           |
 
-### Properties
+### Color Picker properties
 
 [List of the Colorpicker properties](form/api/colorpicker/api_colorpicker_properties.md)
 
-## Combo API 
+## Combo API
 
-### Methods
+### Combo methods
 
 | Name                                             | Description                                             |
 | :----------------------------------------------- | :------------------------------------------------------ |
@@ -306,7 +306,7 @@ title: Form API overview
 | [](form/api/combo/combo_validate_method.md)      | @getshort(form/api/combo/combo_validate_method.md)      |
 | [](form/api/combo/combo_blur_method.md)          | @getshort(form/api/combo/combo_blur_method.md)          |
 
-### Events
+### Combo events
 
 | Name                                                     | Description                                                     |
 | :------------------------------------------------------- | :-------------------------------------------------------------- |
@@ -323,13 +323,13 @@ title: Form API overview
 | [](combo/combo_blur_event.md)                            | @getshort(combo/combo_blur_event.md)                            |
 | [](combo/combo_focus_event.md)                           | @getshort(combo/combo_focus_event.md)                           |
 
-### Properties
+### Combo properties
 
 [List of the Combo properties](form/api/combo/api_combo_properties.md)
 
 ## Container API
 
-### Methods
+### Container methods
 
 | Name                                                     | Description                                                     |
 | :------------------------------------------------------- | :-------------------------------------------------------------- |
@@ -344,7 +344,7 @@ title: Form API overview
 | [](form/api/container/container_setproperties_method.md) | @getshort(form/api/container/container_setproperties_method.md) |
 | [](form/api/container/container_getproperties_method.md) | @getshort(form/api/container/container_getproperties_method.md) |
 
-### Events
+### Container events
 
 | Name                                                    | Description                                                    |
 | :------------------------------------------------------ | :------------------------------------------------------------- |
@@ -355,14 +355,13 @@ title: Form API overview
 | [](container/container_beforehide_event.md)             | @getshort(container/container_beforehide_event.md)             |
 | [](container/container_beforeshow_event.md)             | @getshort(container/container_beforeshow_event.md)             |
 
-### Properties
+### Container properties
 
 [List of the Container control properties](form/api/container/api_container_properties.md) 
 
-
 ## Input API
 
-### Methods
+### Input methods
 
 | Name                                             | Description                                             |
 | :----------------------------------------------- | :------------------------------------------------------ |
@@ -382,7 +381,7 @@ title: Form API overview
 | [](form/api/input/input_validate_method.md)      | @getshort(form/api/input/input_validate_method.md)      |
 | [](form/api/input/input_blur_method.md)          | @getshort(form/api/input/input_blur_method.md)          |
 
-### Events
+### Input events
 
 | Name                                                     | Description                                                     |
 | :------------------------------------------------------- | :-------------------------------------------------------------- |
@@ -400,13 +399,13 @@ title: Form API overview
 | [](input/input_blur_event.md)                            | @getshort(input/input_blur_event.md)                            |
 | [](input/input_focus_event.md)                           | @getshort(input/input_focus_event.md)                           |
 
-### Properties
+### Input properties
 
 [List of the Input properties](form/api/input/api_input_properties.md)
 
-## Radiogroup API 
+## RadioGroup API
 
-### Methods
+### RadioGroup methods
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -426,7 +425,7 @@ title: Form API overview
 | [](form/api/radiogroup/radiogroup_validate_method.md)      | @getshort(form/api/radiogroup/radiogroup_validate_method.md)      |
 | [](form/api/radiogroup/radiogroup_blur_method.md)          | @getshort(form/api/radiogroup/radiogroup_blur_method.md)          |
 
-### Events
+### RadioGroup events
 
 | Name                                                               | Description                                                               |
 | :----------------------------------------------------------------- | :------------------------------------------------------------------------ |
@@ -453,7 +452,7 @@ title: Form API overview
 
 ## Select API
 
-### Methods
+### Select methods
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
@@ -475,7 +474,7 @@ title: Form API overview
 | [](form/api/select/select_validate_method.md)      | @getshort(form/api/select/select_validate_method.md)      |
 | [](form/api/select/select_blur_method.md)          | @getshort(form/api/select/select_blur_method.md)          |
 
-### Events
+### Select events
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -493,14 +492,14 @@ title: Form API overview
 | [](select/select_blur_event.md)                            | @getshort(select/select_blur_event.md)                            |
 | [](select/select_focus_event.md)                           | @getshort(select/select_focus_event.md)                           |
 
-### Properties
+### Select properties
 
 [List of the Select properties](form/api/select/api_select_properties.md)
 
 ## Simple Vault API
 
-### Methods
- 
+### Simple Vault methods
+
 | Name                                                         | Description                                                         |
 | :----------------------------------------------------------- | :------------------------------------------------------------------ |
 | [](form/api/simplevault/simplevault_clear_method.md)         | @getshort(form/api/simplevault/simplevault_clear_method.md)         |
@@ -519,7 +518,7 @@ title: Form API overview
 | [](form/api/simplevault/simplevault_show_method.md)          | @getshort(form/api/simplevault/simplevault_show_method.md)          |
 | [](form/api/simplevault/simplevault_validate_method.md)      | @getshort(form/api/simplevault/simplevault_validate_method.md)      |
 
-### Events
+### Simple Vault events
 
 | Name                                                                 | Description                                                                 |
 | :------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
@@ -539,13 +538,13 @@ title: Form API overview
 | [](form/api/simplevault/simplevault_uploadfile_event.md)             | @getshort(form/api/simplevault/simplevault_uploadfile_event.md)             |
 | [](form/api/simplevault/simplevault_uploadprogress_event.md)         | @getshort(form/api/simplevault/simplevault_uploadprogress_event.md)         |
 
-### Properties
+### Simple Vault properties
 
 [List of the Simple Vault properties](form/api/simplevault/api_simplevault_properties.md)
 
 ## Slider API
 
-### Methods
+### Slider methods
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
@@ -564,7 +563,7 @@ title: Form API overview
 | [](slider/slider_focus_method.md)                  | @getshort(slider/slider_focus_method.md)                  |
 | [](slider/slider_blur_method.md)                   | @getshort(slider/slider_blur_method.md)                   |
 
-### Events
+### Slider events
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -579,13 +578,13 @@ title: Form API overview
 | [](slider/slider_blur_event.md)                            | @getshort(slider/slider_blur_event.md)                            |
 | [](slider/slider_focus_event.md)                           | @getshort(slider/slider_focus_event.md)                           |
 
-### Properties
+### Slider properties
 
 [List of the Slider properties](form/api/slider/api_slider_properties.md)
 
 ## Spacer API
 
-### Methods
+### Spacer methods
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
@@ -595,7 +594,7 @@ title: Form API overview
 | [](form/api/spacer/spacer_setproperties_method.md) | @getshort(form/api/spacer/spacer_setproperties_method.md) |
 | [](form/api/spacer/spacer_show_method.md)          | @getshort(form/api/spacer/spacer_show_method.md)          |
 
-### Events
+### Spacer events
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -606,13 +605,13 @@ title: Form API overview
 | [](form/api/spacer/spacer_beforehide_event.md)             | @getshort(form/api/spacer/spacer_beforehide_event.md)             |
 | [](form/api/spacer/spacer_beforeshow_event.md)             | @getshort(form/api/spacer/spacer_beforeshow_event.md)             |
 
-### Properties
+### Spacer properties
 
 [List of the Spacer properties](form/api/spacer/api_spacer_properties.md)
 
 ## Text API
 
-### Methods
+### Text methods
 
 | Name                                           | Description                                           |
 | :--------------------------------------------- | :---------------------------------------------------- |
@@ -628,7 +627,7 @@ title: Form API overview
 | [](form/api/text/text_setvalue_method.md)      | @getshort(form/api/text/text_setvalue_method.md)      |
 | [](form/api/text/text_show_method.md)          | @getshort(form/api/text/text_show_method.md)          |
 
-### Events
+### Text events
 
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
@@ -642,13 +641,13 @@ title: Form API overview
 | [](form/api/text/text_beforevalidate_event.md)         | @getshort(form/api/text/text_beforevalidate_event.md)         |
 | [](form/api/text/text_change_event.md)                 | @getshort(form/api/text/text_change_event.md)                 |
 
-### Properties
+### Text properties
 
 [List of the Text properties](form/api/text/api_text_properties.md)
 
 ## Textarea API
 
-### Methods
+### Textarea methods
 
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
@@ -668,7 +667,7 @@ title: Form API overview
 | [](form/api/textarea/textarea_validate_method.md)      | @getshort(form/api/textarea/textarea_validate_method.md)      |
 | [](form/api/textarea/textarea_blur_method.md)          | @getshort(form/api/textarea/textarea_blur_method.md)          |
 
-### Events
+### Textarea events
 
 | Name                                                           | Description                                                           |
 | :------------------------------------------------------------- | :-------------------------------------------------------------------- |
@@ -686,13 +685,13 @@ title: Form API overview
 | [](textarea/textarea_blur_event.md)                            | @getshort(textarea/textarea_blur_event.md)                            |
 | [](textarea/textarea_focus_event.md)                           | @getshort(textarea/textarea_focus_event.md)                           |
 
-### Properties
+### Textarea properties
 
 [List of the Textarea properties](form/api/textarea/api_textarea_properties.md)
 
 ## Timepicker API
 
-### Methods
+### Timepicker methods
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
@@ -713,7 +712,7 @@ title: Form API overview
 | [](form/api/timepicker/timepicker_validate_method.md)      | @getshort(form/api/timepicker/timepicker_validate_method.md)      |
 | [](form/api/timepicker/timepicker_blur_method.md)          | @getshort(form/api/timepicker/timepicker_blur_method.md)          |
 
-### Events
+### Timepicker events
 
 | Name                                                               | Description                                                               |
 | :----------------------------------------------------------------- | :------------------------------------------------------------------------ |
@@ -731,6 +730,6 @@ title: Form API overview
 | [](timepicker/timepicker_blur_event.md)                            | @getshort(timepicker/timepicker_blur_event.md)                            |
 | [](timepicker/timepicker_focus_event.md)                           | @getshort(timepicker/timepicker_focus_event.md)                           |
 
-### Properties
+### Timepicker properties
 
 [List of the Timepicker properties](form/api/timepicker/api_timepicker_properties.md)

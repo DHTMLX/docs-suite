@@ -5,13 +5,7 @@ title: padding
 
 @short: defines the distance between the content of a cell and the border of tabbar
 
-```todoapi 
-паддинга нет?
-padding?: number | string;
-```
-
-
-@type: number
+@signature: padding?: number | string;
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar_container",{

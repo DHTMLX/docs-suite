@@ -21,4 +21,4 @@ By default a header is initialized with no controls. To add a control into the h
 
 
 
-@relatedsample: https://snippet.dhtmlx.com/o7xlvvv3	Window. Custom Buttons
+**Related sample**: [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)

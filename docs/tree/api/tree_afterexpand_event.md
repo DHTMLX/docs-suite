@@ -20,6 +20,6 @@ tree.events.on("AfterExpand", function(id) {
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/vux1ye9g	Tree. Events
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @related: tree/events_handling.md

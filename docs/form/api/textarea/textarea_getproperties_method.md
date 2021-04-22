@@ -3,7 +3,10 @@ sidebar_label: getProperties
 title: getProperties
 ---          
 
+``` todoanton signature мещает документации собраться
 @short: returns an object with the available configuration attributes of the control
+
+@signature: getProperties(name?: string): { [name: string]: IFormProps; } | IFormProps;
 
 @returns:
 param   object      an object with the available attributes of the control and their values
@@ -124,10 +127,6 @@ The returned object of the **Textarea** control can contain the following config
     </tbody>
 </table>
 
-
-
-
-
 @changelog: added in v7.0
 
-
+``` todo

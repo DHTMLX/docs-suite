@@ -17,4 +17,4 @@ var data = component.data.serialize("csv");
 @template:	api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/7c35n4uf	Data. Serialize
+**Related sample**: [Data. Serialize](https://snippet.dhtmlx.com/7c35n4uf)

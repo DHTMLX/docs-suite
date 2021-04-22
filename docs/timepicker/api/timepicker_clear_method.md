@@ -7,6 +7,6 @@ title: clear
 
 @signature: clear(): void;
 
-@relatedsample: https://snippet.dhtmlx.com/xiazmc27	Timepicker. Clear Timepicker Value
+**Related sample**: [Timepicker. Clear Timepicker Value](https://snippet.dhtmlx.com/xiazmc27)
 
 @changelog: added in v6.4

@@ -6,6 +6,8 @@ description: description
 
 @short: fires before a window is hidden
 
+@signature: beforeHide: (position: IPosition, e?: Event) => boolean | void;
+
 @params:
 - position  object      an object with coordinates of the window's position
 - events    Event       a native event object
@@ -36,7 +38,7 @@ Note, the event fires in 2 cases:
 1. While calling the [hide](window/api/window_hide_method.md) method
 2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
 
-@relatedsample: https://snippet.dhtmlx.com/jfu4upwd	Window. Events
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md
 

@@ -22,4 +22,4 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 @related: colorpicker/how_to_start.md#initializecolorpicker
 colorpicker/configuration.md#paletteorpickermodeonly
 
-@relatedsample: https://snippet.dhtmlx.com/3d75mz19	Colorpicker. Disabled Custom Colors
+**Related sample**: [Colorpicker. Disabled Custom Colors](https://snippet.dhtmlx.com/3d75mz19)

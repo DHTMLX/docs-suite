@@ -25,6 +25,6 @@ var tabbar = new dhx.Tabbar("tabbar", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/0y8kd9oa	Tabbar. Active Tab
+**Related sample**: [Tabbar. Active Tab](https://snippet.dhtmlx.com/0y8kd9oa)
 
 @changelog: added in v6.4

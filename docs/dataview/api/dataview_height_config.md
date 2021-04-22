@@ -22,7 +22,7 @@ The usage of the *CSS calc() function* within the **height** property is not pos
 
 @related: dataview/configuration.md#heightofthedataview
 
-@relatedsample: https://snippet.dhtmlx.com/g1k2l4q0	Dataview. Setup Dataview Height
+**Related sample**: [Dataview. Setup Dataview Height](https://snippet.dhtmlx.com/g1k2l4q0)
 
 
 

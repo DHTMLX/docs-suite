@@ -29,6 +29,6 @@ slider/api/slider_setvalue_method.md
 
 @changelog:
 
-@relatedsample: https://snippet.dhtmlx.com/xlb8nbdx	Slider. Get Slider Value
+**Related sample**: [Slider. Get Slider Value](https://snippet.dhtmlx.com/xlb8nbdx)
 
 @related: slider/usage.md#gettingvalue

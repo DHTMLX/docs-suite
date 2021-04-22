@@ -5,6 +5,8 @@ title: clear
 
 @short: clears the value of a TimePicker control
 
+@signature: clear(method?: ClearMethod): void;
+
 
 
 

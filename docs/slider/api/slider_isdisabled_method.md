@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether Slider is disabled
 
-@signature:  isDisabled(): boolean;
+@signature: isDisabled(): boolean;
 
 @returns:
 - param	boolean		true, if a slider is disabled, otherwise false
@@ -16,7 +16,7 @@ slider.isDisabled(); // -> true/false
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fbo18fue	Slider. Is Disabled Slider
+**Related sample**: [Slider. Is Disabled Slider](https://snippet.dhtmlx.com/fbo18fue)
 
 @changelog: added in v6.4
 

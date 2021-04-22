@@ -23,4 +23,4 @@ var grid = new dhx.Grid("grid_container", {
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#rowheight
 
-@relatedsample: https://snippet.dhtmlx.com/wjcjl80i	Grid. Rows Height
+**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)

@@ -18,7 +18,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 @descr: 
 
 
-@relatedsample: https://snippet.dhtmlx.com/ybnqq5ej	Timepicker. Timepicker With Controls
+**Related sample**: [Timepicker. Timepicker With Controls](https://snippet.dhtmlx.com/ybnqq5ej)
 
 @changelog: added in v6.4
 

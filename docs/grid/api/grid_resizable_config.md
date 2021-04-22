@@ -18,7 +18,7 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/aeqzuks0	Grid. Resizable Columns
+**Related sample**: [Grid. Resizable Columns](https://snippet.dhtmlx.com/aeqzuks0)
 
 @related:grid/initialization.md#initializegrid
 grid/configuration.md#resizing

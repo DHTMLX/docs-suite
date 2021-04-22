@@ -3,7 +3,7 @@ sidebar_label: Manipulating Nodes
 title: Manipulating Nodes 
 ---      
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 Adding/Removing Items  
 --------------------------

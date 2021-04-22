@@ -19,7 +19,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/irybslog	TreeGrid. Auto Width
+**Related sample**: [TreeGrid. Auto Width](https://snippet.dhtmlx.com/irybslog)
 
 @related: treegrid/configuration.md#autowidthforcolumns
 

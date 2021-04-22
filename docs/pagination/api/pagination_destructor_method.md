@@ -3,14 +3,9 @@ sidebar_label: destructor
 title: destructor
 ---
 
-destructor
-
-
 @short: removes a pagination instance and releases occupied resources
 
-@params:
-
-
+@signature: destructor(): void;
 
 
 @example:

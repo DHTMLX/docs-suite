@@ -25,4 +25,4 @@ var grid = new dhx.Grid("grid_container", {
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#sortingcolumns
 
-@relatedsample: https://snippet.dhtmlx.com/r3prvlmo	Grid. Sortable Columns
+**Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)

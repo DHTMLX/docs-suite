@@ -4,6 +4,8 @@ title: copy
 ---          
 
 @short: creates a copy of an item at the defined position
+
+@signature: copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
     
 @params:
 - id 			string,number		the id of an item to copy
@@ -16,4 +18,4 @@ component.data.copy("4",5); // copies the item with id:4 to the position with in
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/9rws8r05	Data. Copy
+**Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)

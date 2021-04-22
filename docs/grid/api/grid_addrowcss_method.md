@@ -26,6 +26,6 @@ grid.addRowCss("2", "myCustomClass");
 
 @related: grid/customization.md#stylingrows
 
-@relatedsample: https://snippet.dhtmlx.com/idvmge2d	Grid. Add Row Css
+**Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)
 
 @changelog:

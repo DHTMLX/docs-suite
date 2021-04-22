@@ -26,4 +26,4 @@ layout/api/layout_header_config.md
 layout/api/layout_headerheight_config.md
 layout/api/layout_headerimage_config.md
 
-@relatedsample: https://snippet.dhtmlx.com/bxqnzesl	Layout. Header
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)

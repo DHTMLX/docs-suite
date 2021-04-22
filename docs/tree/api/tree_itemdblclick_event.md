@@ -23,6 +23,6 @@ tree.events.on("ItemDblClick", function(id, e){
 @template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/vux1ye9g	Tree. Events
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @related: tree/events_handling.md

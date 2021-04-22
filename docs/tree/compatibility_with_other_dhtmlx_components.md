@@ -3,7 +3,7 @@ sidebar_label: Compatibility with Other DHTMLX Components
 title: Compatibility with Other DHTMLX Components
 ---      
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 Enabling Context Menu  
 ---------------------------

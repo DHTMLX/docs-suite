@@ -5,7 +5,7 @@ title: beforeColumnHide
 
 @short: fires before a column is hidden
 
-@signature: beforeColumnHide: (col: object) => boolean | void;
+@signature: beforeColumnHide: (col: ICol) => boolean | void;
 
 @params: 
 - col   object  an object with a column configuration

@@ -39,7 +39,7 @@ The returned value can be of several types, depending on the passed parameter an
 - for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
 - for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
 
-@relatedsample: https://snippet.dhtmlx.com/k4atpgnd	Timepicker. Get Timepicker Value
+**Related sample**: [Timepicker. Get Timepicker Value](https://snippet.dhtmlx.com/k4atpgnd)
 
 @relatedapi:
 timepicker/api/timepicker_setvalue_method.md

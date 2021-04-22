@@ -5,6 +5,8 @@ title: hide
 
 @short: hides a Button control
 
+@signature: hide(): void;
+
 
 
 

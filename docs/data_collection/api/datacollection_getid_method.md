@@ -5,6 +5,8 @@ title: getId
 
 @short: returns the id of the item by its index
 
+@signature: getId(index: number): Id;
+
 @params:
 - index		number		the index of the item
 
@@ -17,4 +19,4 @@ var id = component.data.getId(0); // -> returns "1"
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/8e02xliz	Data. Get Id
+**Related sample**: [Data. Get Id](https://snippet.dhtmlx.com/8e02xliz)

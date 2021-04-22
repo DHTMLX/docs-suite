@@ -25,7 +25,7 @@ dhxWindow.show();
 @descr:
 
 
-@relatedsample: https://snippet.dhtmlx.com/t9ncuuou	Window. Attaching Other Components
+**Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
 
 @changelog:

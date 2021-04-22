@@ -5,10 +5,10 @@ title: scroll
 
 @short: fires on scrolling a grid
 
-```todoapi ```
+@signature: scroll: (scrollState: ICoords) => void;
 
 @params:
-- coords	object		an object with new top and left coordinates
+- scrollState	object		an object with new top and left coordinates
 
 
 @example:

@@ -2,8 +2,10 @@
 sidebar_label: eachChild
 title: eachChild
 ---          
-
+``` todoanton signature мещает документации собраться
 @short: iterates through child items of a control
+
+@signature: eachChild(id: Id, cb: DataCallback<T>, direct?: boolean, checkItem?: (item: IDataItem) => boolean): void;
 
 @params:
 - id 		string		 the ID of a control
@@ -17,3 +19,4 @@ toolbar.data.eachChild("menu_1", item => {
 toolbar.paint();
 
 @template: api_method
+``` todo

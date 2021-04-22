@@ -91,7 +91,7 @@ Initialize Chart
 Initialize Chart with the `dhx.Chart` object constructor. The constructor has two parameters:
 
 - a container to place a Chart into. You've defined it at the previous step.
-- an object with configuration properties. See the full list below.
+- an object with configuration properties
 
 ~~~js
 var config = {
@@ -127,7 +127,7 @@ See the full list of all available configuration properties of Chart in the [Cha
 
 Finally, you are to load the chart with data. You can load inline or external data into the chart.
 
-- to load data from a local source, use the [](data_collection/api/parse.md) method of the Data Collection object:
+- to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
 
 ~~~js
 var data = [
@@ -154,7 +154,7 @@ chart.data.parse(data);
 
 {{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
 
-- to load data from an external file, use the [](data_collection/api/load.md) method of the Data Collection object:
+- to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
 ~~~js
 var chart = new dhx.Chart( "chart_container",{

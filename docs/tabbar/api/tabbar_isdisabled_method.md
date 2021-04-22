@@ -26,7 +26,7 @@ tabbar.isDisabled("London"); // -> returns true/false
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/86er2y7m	Tabbar. Is Disabled Tab
+**Related sample**: [Tabbar. Is Disabled Tab](https://snippet.dhtmlx.com/86er2y7m)
 
 @related: tabbar/work_with_tabbar.md#checkingifatabisdisabled
 

@@ -5,10 +5,7 @@ title: cols
 
 @short: an array of columns objects
 
-```todoapi
-array cols;
-cols?: ICellConfig[] | ILayoutConfig[];
-```
+@signature: cols?: ICellConfig[] | ILayoutConfig[];
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

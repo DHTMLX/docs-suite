@@ -18,7 +18,7 @@ var layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/6x76kgyq	Layout. Html Content
+**Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
 
 @related: layout/init.md#initializelayout
 layout/cell_configuration.md#htmlcontent

@@ -5,7 +5,7 @@ title: min
 
 @short: the minimal value of slider
 
-@signature:  min: number;
+@signature: min: number;
 
 @default: 0
 

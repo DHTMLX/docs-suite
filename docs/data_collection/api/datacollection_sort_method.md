@@ -5,6 +5,8 @@ title: sort
 
 @short: sorts data items in a component
 
+@signature: sort(by: ISortMode): void;
+
 @params:
 - rule		object		an object with parameters for sorting
 - config	object		defines the parameter of sorting
@@ -83,7 +85,7 @@ grid.data.sort({
 });
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/lz351u47	Data. Sort
+**Related sample**: [Data. Sort](https://snippet.dhtmlx.com/lz351u47)
 
 @changelog: 
 The **config** parameter is added in v7.0. 

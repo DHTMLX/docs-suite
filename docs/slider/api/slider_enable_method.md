@@ -13,5 +13,5 @@ slider.enable();
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/po9hsc2l	Slider. Disable/Enable Slider
+**Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)
 

@@ -16,7 +16,7 @@ var slider = new dhx.Slider("slider_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/xm8e84s2	Slider. Inverse Mode Of The Slider
+**Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)
 
 @related: slider/initializing_slider.md#configurationproperties
 slider/configuring_slider.md#verticalmode

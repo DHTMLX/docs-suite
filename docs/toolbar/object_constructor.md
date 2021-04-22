@@ -3,7 +3,7 @@ sidebar_label: Object Constructor
 title: Object Constructor
 ---  
 
-```tododelete не используется?``` 
+```todotw не используется? если да, удали``` 
 
 Initialize Toolbar with the object constructor:
 

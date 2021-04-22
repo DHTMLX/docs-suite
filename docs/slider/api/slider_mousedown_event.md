@@ -5,10 +5,10 @@ title: mouseDown
 
 @short: fires on pressing the left mouse button over the slider thumb
 
-```todoapi ```
+@signature: mousedown: (event: Event) => void;
 
 @params:
-- e 		Event		the native event object
+- event 		event		the native event object
 
 
 @example:

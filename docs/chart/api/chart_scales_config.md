@@ -148,7 +148,7 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
     </tbody>
 </table>
 
-{{editor    https://snippet.dhtmlx.com/yksfvhhl	Chart. Axis Configuration}}
+**Related sample**: [Chart. Axis Configuration](https://snippet.dhtmlx.com/yksfvhhl)
 
 @related:
 chart/configuration_properties.md#scales

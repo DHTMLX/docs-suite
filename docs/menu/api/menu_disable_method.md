@@ -25,7 +25,7 @@ Starting from v7.0, it is possible to disable all items at once by using the met
 menu.disable();
 ~~~
 
-@relatedsample: https://snippet.dhtmlx.com/zuoam7r7	Menu. Enable/Disable Menu Item
+**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
 
 

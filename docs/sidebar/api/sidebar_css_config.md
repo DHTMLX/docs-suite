@@ -60,4 +60,4 @@ var sidebar = new dhx.Sidebar({
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 @related: sidebar/customization.md#styling
-@relatedsample: https://snippet.dhtmlx.com/3mhhvvcr	Sidebar. Custom Css
+**Related sample**: [Sidebar. Custom Css](https://snippet.dhtmlx.com/3mhhvvcr)

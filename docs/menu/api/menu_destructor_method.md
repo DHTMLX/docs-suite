@@ -14,7 +14,7 @@ menu.destructor();
 @template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/q3x2uyex	Menu. Destructor
+**Related sample**: [Menu. Destructor](https://snippet.dhtmlx.com/q3x2uyex)
 
 
 

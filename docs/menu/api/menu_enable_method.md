@@ -26,7 +26,7 @@ menu.enable();
 ~~~
 
 
-@relatedsample: https://snippet.dhtmlx.com/zuoam7r7	Menu. Enable/Disable Menu Item
+**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
 
 

@@ -5,6 +5,8 @@ title: update
 
 @short: updates a class after its silent adding
 
+@signature: update(): void;
+
 
 @example:
 cssManager.add({

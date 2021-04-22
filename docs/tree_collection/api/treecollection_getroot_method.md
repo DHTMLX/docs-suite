@@ -5,8 +5,9 @@ title: getRoot
 
 @short: returns the ID of the master component
 
-@returns:
+@signature: getRoot(): Id;
 
+@returns:
 - ids    	string      	the id of the root element
 
 @example:

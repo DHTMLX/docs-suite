@@ -15,6 +15,6 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: https://snippet.dhtmlx.com/zf88vxd1	Colorpicker. Custom Colors
+**Related sample**: [Colorpicker. Custom Colors](https://snippet.dhtmlx.com/zf88vxd1)
 
 @related: colorpicker/how_to_start.md#initializecolorpicker

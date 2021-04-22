@@ -5,7 +5,7 @@ title: beforeColumnDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
-@signature: beforeColumnDrop: (data: object, events: MouseEvent) => void | boolean;
+@signature: beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;
 	
 @params:
 - data		object		data object

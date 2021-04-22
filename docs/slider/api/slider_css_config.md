@@ -60,6 +60,6 @@ var slider = new dhx.Slider({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample: https://snippet.dhtmlx.com/ewizud5e	Slider. Custom Colors
+**Related sample**: [Slider. Custom Colors](https://snippet.dhtmlx.com/ewizud5e)
 @related: slider/initializing_slider.md#configurationproperties
 slider/customization.md
