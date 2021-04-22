@@ -8,6 +8,7 @@ title: Combobox API overview
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](combobox/api/combobox_clear_method.md)      | @getshort(combobox/api/combobox_clear_method.md)      |
+| [](combobox/api/combobox_destructor_method.md) | @getshort(combobox/api/combobox_destructor_method.md) |
 | [](combobox/api/combobox_disable_method.md)    | @getshort(combobox/api/combobox_disable_method.md)    |
 | [](combobox/api/combobox_enable_method.md)     | @getshort(combobox/api/combobox_enable_method.md)     |
 | [](combobox/api/combobox_getvalue_method.md)   | @getshort(combobox/api/combobox_getvalue_method.md)   |
@@ -15,6 +16,8 @@ title: Combobox API overview
 | [](combobox/api/combobox_paint_method.md)      | @getshort(combobox/api/combobox_paint_method.md)      |
 | [](combobox/api/combobox_setstate_method.md)   | @getshort(combobox/api/combobox_setstate_method.md)   |
 | [](combobox/api/combobox_setvalue_method.md)   | @getshort(combobox/api/combobox_setvalue_method.md)   |
+| [](combobox_blur_method.md)                    | @getshort(combobox_blur_method.md)                    |
+| [](combobox_focus_method.md) `check`           | @getshort(combobox_focus_method.md)                   |
 
 :::info important
 Use [DataCollection methods](data_collection/index.md) to work with data. 
@@ -26,9 +29,11 @@ Use [DataCollection methods](data_collection/index.md) to work with data.
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](combobox/api/combobox_afterclose_event.md)  | @getshort(combobox/api/combobox_afterclose_event.md)  |
 | [](combobox/api/combobox_beforeclose_event.md) | @getshort(combobox/api/combobox_beforeclose_event.md) |
-| [](combobox/api/combobox_destructor_method.md) | @getshort(combobox/api/combobox_destructor_method.md) |
 | [](combobox/api/combobox_input_event.md)       | @getshort(combobox/api/combobox_input_event.md)       |
 | [](combobox/api/combobox_open_event.md)        | @getshort(combobox/api/combobox_open_event.md)        |
+| [](combobox_blur_event.md)                     | @getshort(combobox_blur_event.md)                     |
+| [](combobox_focus_event.md)                    | @getshort(combobox_focus_event.md)                    |
+| [](combobox_keydown_event.md)                  | @getshort(combobox_keydown_event.md)                  |
 
 :::info important
 Use [DataCollection events](data_collection/index.md#events) to work with data. 
