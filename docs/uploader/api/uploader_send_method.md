@@ -13,4 +13,4 @@ vault.uploader.send();
 
 @template: api_method
 @descr:
-The request URL is specified by the [](uploader/api/target_config.md) property.
+The request URL is specified by the [](uploader/api/uploader_target_config.md) property.

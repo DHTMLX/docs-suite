@@ -41,7 +41,7 @@ Besides initial controls, you can add other controls into the header/footer on t
 
 ![](../assets/window/custom_buttons.png)
 
-For this, you should apply the [](data_collection/api/add.md) method of Data Collection. It takes the parameters below:
+For this, you should apply the [](../data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
 
 
 <table class="webixdoc_links">
@@ -89,7 +89,7 @@ dhxWindow.header.data.update("close", {
 
 ### Deleting controls
 
-To remove a control from the header/footer, make use of the [](data_collection/api/remove) method of Data Collection. Pass the id of the control that should be removed to the method:
+To remove a control from the header/footer, make use of the [](../data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the control that should be removed to the method:
 
 ~~~js
 dhxWindow.footer.data.remove("accept");

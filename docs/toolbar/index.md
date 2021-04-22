@@ -44,4 +44,4 @@ Discusses the creation of Toolbar controls and the possibilities of manipulating
 - [](toolbar/selectbutton.md) 
 - [](toolbar/separator.md) 
 - [](toolbar/spacer.md) 
-- [](toolbar/text.md)  
+- [](toolbar/title.md)  
