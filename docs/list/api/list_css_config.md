@@ -7,7 +7,7 @@ title: css
 
 @short: adds a CSS class(es) to the component
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>

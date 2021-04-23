@@ -5,7 +5,7 @@ title: setActive
 
 @short: sets an active tab
 
-@signature: setActive(id: string): void;
+@signature: {'setActive(id: string): void;'}
 
 @params:
 - id 		string		the id of a tab

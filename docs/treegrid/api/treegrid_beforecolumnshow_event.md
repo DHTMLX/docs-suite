@@ -5,7 +5,7 @@ title: beforeColumnShow
 
 @short: fires before a column is shown on a page
 
-@signature: beforeColumnShow: (col: ICol) => boolean | void;
+@signature: {'beforeColumnShow: (col: ICol) => boolean | void;'}
 
 @params: 
 - col   object  an object with a column configuration

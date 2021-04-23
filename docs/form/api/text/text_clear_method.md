@@ -5,6 +5,8 @@ title: clear
 
 @short: clears a value of a Text control
 
+@signature: {'clear(method?: ClearMethod): void;'}
+
 
 
 

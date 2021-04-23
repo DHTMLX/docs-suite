@@ -5,6 +5,8 @@ title: clearValidate
 
 @short: clears validation of a Textarea control
 
+@signature: {'clearValidate(): void;'}
+
 
 
 

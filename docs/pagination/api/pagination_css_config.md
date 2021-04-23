@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to the pagination
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 ~~~js
 <style>

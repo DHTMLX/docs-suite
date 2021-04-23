@@ -5,7 +5,7 @@ title: getPagesCount
 
 @short: gets the total number of pages in the pagination
 
-@signature: getPagesCount(): number;
+@signature: {'getPagesCount(): number;'}
 
 
 @params:

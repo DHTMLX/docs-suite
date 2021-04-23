@@ -5,7 +5,7 @@ title: html
 
 @short: sets an HTML content into a window on initialization
 
-@signature: html?: string;
+@signature: {'html?: string;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

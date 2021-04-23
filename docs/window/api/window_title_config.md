@@ -5,7 +5,7 @@ title: title
 
 @short: adds some text into the header of a window
 
-@signature: title?: string;
+@signature: {'title?: string;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

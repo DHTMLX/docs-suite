@@ -5,7 +5,7 @@ title: data
 
 @short: the data collection of a widget to set into the pagination
 
-@signature: data: DataCollection;
+@signature: {'data: DataCollection;'}
 
 @example: 
 const list = new dhx.List("widget_container", {

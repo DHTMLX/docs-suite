@@ -5,7 +5,7 @@ title: isColumnHidden
 
 @short: checks whether a column is hidden
 
-@signature: isColumnHidden(colId: string | number): boolean;
+@signature: {'isColumnHidden(colId: string | number): boolean;'}
 
 @params:
 - colId	string | number   the id of a column

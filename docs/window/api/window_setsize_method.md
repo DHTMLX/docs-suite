@@ -5,7 +5,7 @@ title: setSize
 
 @short: sets the size of a window
 
-@signature: setSize(width: number, height: number): void;
+@signature: {'setSize(width: number, height: number): void;'}
 
 
 @params:

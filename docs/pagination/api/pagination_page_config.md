@@ -5,6 +5,8 @@ title: page
 
 @short: optional, the index of the initial page set in the pagination
 
+@signature: {'page?: number;'}
+
 @default:
 0
 

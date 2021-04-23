@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether Slider is disabled
 
-@signature: isDisabled(): boolean;
+@signature: {'isDisabled(): boolean;'}
 
 @returns:
 - param	boolean		true, if a slider is disabled, otherwise false

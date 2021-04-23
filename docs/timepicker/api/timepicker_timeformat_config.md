@@ -5,7 +5,7 @@ title: timeFormat
 
 @short: defines what clock format is activated: the 12-hour or 24-hour one
 
-@signature: timeFormat?: 12 | 24;
+@signature: {'timeFormat?: 12 | 24;'}
 
 @default: 24
 

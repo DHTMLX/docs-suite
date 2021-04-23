@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled Text control
 
+@signature: {'enable(): void;'}
+
 
 
 

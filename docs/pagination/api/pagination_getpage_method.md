@@ -5,7 +5,7 @@ title: getPage
 
 @short: returns the index of the active page
 
-@signature: getPage(): number;
+@signature: {'getPage(): number;'}
 
 
 @params:

@@ -5,7 +5,7 @@ title: setFullScreen
 
 @short: enters the full screen mode
 
-@signature: setFullScreen(): void;
+@signature: {'setFullScreen(): void;'}
 
 @example:
 dhxWindow.setFullScreen();

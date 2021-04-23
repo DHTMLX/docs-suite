@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints a popup on a page
 
-```todoapi ```
+@signature: {'paint(): void;'}
 
 @params:
 

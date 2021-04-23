@@ -5,6 +5,8 @@ title: hide
 
 @short: hides a Select control
 
+@signature: {'hide(): void;'}
+
 
 
 @example:

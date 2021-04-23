@@ -5,6 +5,8 @@ title: getValue
 
 @short: returns the current value of a SimpleVault control
 
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
+
 
 
 @returns:

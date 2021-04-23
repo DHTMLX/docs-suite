@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled TimePicker control
 
+@signature: {'enable(): void;'}
+
 
 
 

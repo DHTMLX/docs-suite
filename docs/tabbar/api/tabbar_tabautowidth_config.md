@@ -5,7 +5,7 @@ title: tabAutoWidth
 
 @short: defines whether the width of tabs is automatically adjusted to the width of the tabbar container
 
-@signature: tabAutoWidth?: boolean;
+@signature: {'tabAutoWidth?: boolean;'}
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar_container", {

@@ -5,7 +5,7 @@ title: headerIcon
 
 @short: an icon used in the header of a cell
 
-@signature: headerIcon?: string;
+@signature: {'headerIcon?: string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

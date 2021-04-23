@@ -4,8 +4,8 @@ title: expand
 ---          
 
 @short: fires on expanding a treegrid
-
-@signature: expand: (id: string | number	) => void;
+todoanton expand: (id: string | number	) => void;
+@signature: {'expand: (id: string) => void;'}
 
 @params:
 - rowId		string | number		the id of an expanded row

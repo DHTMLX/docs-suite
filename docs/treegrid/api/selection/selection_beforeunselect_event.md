@@ -5,6 +5,8 @@ title: beforeUnSelect
 
 @short: fires before unselecting a cell
 
+@signature: {'beforeUnSelect: (row: IRow, col: ICol) => boolean | void;'}
+
 
 @params:
 

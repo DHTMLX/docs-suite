@@ -5,7 +5,7 @@ title: resizable
 
 @short: defines whether a cell can be resized
 
-@signature: resizable?: boolean;
+@signature: {'resizable?: boolean;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

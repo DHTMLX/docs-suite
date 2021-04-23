@@ -8,7 +8,7 @@ description: description
 
 @short: defines the configuration of tabs
 
-@signature: views?: ICellConfig[] | ILayoutConfig[];
+@signature: {'views?: ICellConfig[] | ILayoutConfig[];'}
 
 ``` todoapi
  <!-- views?: ICellConfig[] | ILayoutConfig[]; возможо стоит понятнее расписать -->

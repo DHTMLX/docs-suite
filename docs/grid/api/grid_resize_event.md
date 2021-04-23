@@ -5,7 +5,7 @@ title: resize
 
 @short: fires on resizing a column
 
-@signature: resize: (col: ICol, e: MouseEvent) => void;
+@signature: {'resize: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
 - col		object		an object with a column configuration

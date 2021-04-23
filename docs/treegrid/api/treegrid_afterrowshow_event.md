@@ -5,7 +5,7 @@ title: afterRowShow
 
 @short: fires after a row is shown on a page
 
-@signature: afterRowShow: (row: IRow) => void;
+@signature: {'afterRowShow: (row: IRow) => void;'}
 
 @params: 
 - row   object  an object with a row configuration

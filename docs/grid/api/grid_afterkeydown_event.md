@@ -5,7 +5,7 @@ title: afterKeyDown
 
 @short: fires after the user is pressing a shortcut key
 
-@signature: afterKeyDown: (e: Event) => void;
+@signature: {'afterKeyDown: (e: Event) => void;'}
 
 <!-- @params:
 

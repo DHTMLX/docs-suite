@@ -5,7 +5,7 @@ title: beforeExpand
 
 @short: fires before expanding a Layout cell
 
-@signature: beforeExpand: (id: string) => boolean | void;
+@signature: {'beforeExpand: (id: string) => boolean | void;'}
 
 @params:
 - id		string		the id of a cell

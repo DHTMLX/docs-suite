@@ -5,7 +5,7 @@ title: beforeHide
 
 @short: fires before a cell is hidden
 
-@signature: beforeHide: (id: string) => boolean | void;
+@signature: {'beforeHide: (id: string) => boolean | void;'}
 
 @params:
 - id		string		the id of a cell

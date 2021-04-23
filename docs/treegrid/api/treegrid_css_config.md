@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to TreeGrid
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>

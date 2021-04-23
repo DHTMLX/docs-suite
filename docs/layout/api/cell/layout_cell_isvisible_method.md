@@ -5,8 +5,7 @@ title: isVisible
 
 @short: checks whether a cell is visible
 
-```todoapi ```
-
+@signature: {'isVisible(): boolean;'}
 
 @returns:
 - result	boolean		true, if the cell is visible

@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled Textarea control
 
+@signature: {'enable(): void;'}
+
 
 
 

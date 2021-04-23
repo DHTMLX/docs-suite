@@ -5,7 +5,7 @@ title: id
 
 @short: the id of a cell
 
-@signature: id?: string;
+@signature: {'id?: string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

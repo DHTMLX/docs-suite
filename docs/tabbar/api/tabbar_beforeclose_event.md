@@ -5,7 +5,7 @@ title: beforeClose
 
 @short: fires before closing a tab in Tabbar
 
-@signature: beforeClose: (id: string) => boolean | void;
+@signature: {'beforeClose: (id: string) => boolean | void;'}
 
 <!-- boolean beforeClose(string id){ ... };
  [TabbarEvents.beforeClose]: (id: string) => boolean | void; -->

@@ -5,7 +5,7 @@ title: disable
 
 @short: disables a RadioGroup control on a page
 
-@signature: disable(): void;
+@signature: {'disable(): void;'}
 
 
 

@@ -5,7 +5,7 @@ title: setPage
 
 @short: sets an active page in the related widget
 
-@signature: setPage(v: number): void;
+@signature: {'setPage(v: number): void;'}
 
 
 @params:

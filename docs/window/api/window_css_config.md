@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes for the component
 
-@signature:    css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

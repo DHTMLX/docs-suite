@@ -5,7 +5,7 @@ title: getValue
 
 @short: returns the current value of a Select control
 
-@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 
 @returns:

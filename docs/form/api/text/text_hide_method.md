@@ -5,6 +5,8 @@ title: hide
 
 @short: hides a Text control
 
+@signature: {'hide(): void;'}
+
 
 
 @example:

@@ -5,7 +5,7 @@ title: toggle
 
 @short: expands/collapses a Layout cell
 
-@signature: toggle(): void;
+@signature: {'toggle(): void;'}
 
 @example:
 layout.getCell("id").toggle();

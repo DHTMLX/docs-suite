@@ -5,7 +5,7 @@ title: afterResizeEnd
 
 @short: fires after resizing of a column is ended
 
-@signature: afterResizeEnd: (col: ICol, e: MouseEvent) => void;
+@signature: {'afterResizeEnd: (column: ICol, e: MouseEvent) => void;'}
 
 @params:
 - column		object		an object with a column configuration

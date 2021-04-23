@@ -5,7 +5,7 @@ title: clear
 
 @short: clears the value set in the timepicker
 
-@signature: clear(): void;
+@signature: {'clear(): void;'}
 
 **Related sample**: [Timepicker. Clear Timepicker Value](https://snippet.dhtmlx.com/xiazmc27)
 

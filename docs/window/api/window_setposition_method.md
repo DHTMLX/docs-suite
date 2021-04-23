@@ -5,7 +5,7 @@ title: setPosition
 
 @short: sets the position of a window
 
-@signature: setPosition(left: number, top: number): void;
+@signature: {'setPosition(left: number, top: number): void;'}
 
 @params:
 - left	number		the left coordinate of a window

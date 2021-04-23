@@ -5,7 +5,7 @@ title: header
 
 @short: adds a header with text for a cell
 
-@signature: header?: string;
+@signature: {'header?: string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

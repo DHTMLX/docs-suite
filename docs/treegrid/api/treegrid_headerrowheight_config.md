@@ -5,7 +5,7 @@ title: headerRowHeight
 
 @short: sets the height of rows in the header
 
-@signature: headerRowHeight?: number;
+@signature: {'headerRowHeight?: number;'}
 
 @default: 40
 

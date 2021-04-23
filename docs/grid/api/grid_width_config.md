@@ -5,10 +5,7 @@ title: width
 
 @short: sets the width of a grid
 
-@signature:  width?: number;
-
-
-@type: number
+@signature: {'width?: number;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

@@ -5,7 +5,7 @@ title: css
 
 @short: the name of a CSS class(es) applied to Tabbar
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>

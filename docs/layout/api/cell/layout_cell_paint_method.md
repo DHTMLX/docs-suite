@@ -5,8 +5,7 @@ title: paint
 
 @short: repaints Layout on a page
 
-```todoapi ```
-
+@signature: {'paint(): void;'}
 
 @example:
 layout.paint();
