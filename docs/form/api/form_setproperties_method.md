@@ -12,13 +12,13 @@ description: description
 - properties object optional, an object with the available attributes of the control and their new values
 
 @example:
-form.setProperties("input_name", {
-label: "new label",
-css: "new-css",
-padding: "20px",
-height: 100,
-maxlength:15,
-readOnly:true
+	form.setProperties("input_name", {
+	label: "new label",
+	css: "new-css",
+	padding: "20px",
+	height: 100,
+	maxlength: 15,
+	readOnly: true
 });
 
 @template: api_method
@@ -31,8 +31,8 @@ Here are two ways of using the **setProperties** method:
 
 1\. To change values for the available attributes of a separate control you need to pass two parameters to the method:
 
-- **arg** - (_string_) the name of the control (or its id)
-- **properties** - (_object_) an object with available attributes of the control and their new values
+- **arg** - (*string*) the name of the control (or its id)
+- **properties** - (*object*) an object with available attributes of the control and their new values
 
 For instance:
 
@@ -49,26 +49,26 @@ form.setProperties("input_name", {
 
 2\. You can also change values for the available properties of several controls at once. For that, you need to pass one parameter to the method:
 
-- **arg** - (_object_) an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
+- **arg** - (*object*) an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
 
 For example:
 
 ```js
 form.setProperties({
-  simplevault_name: {
-    label: "new label",
-    css: "new-css",
-    padding: 20,
-    required: true,
-  },
-  input_name: {
-    label: "new label",
-    css: "new-css",
-    padding: "20px",
-    height: 100,
-    maxlength: 15,
-    readOnly: true,
-  },
+    "simplevault_name": {
+        label: "new label",
+        css: "new-css",
+        padding: 20,
+        required: true
+    },
+    "input_name": {
+        label: "new label",
+        css: "new-css",
+        padding: "20px",
+        height: 100,
+        maxlength: 15,
+        readOnly: true
+    }
 });
 ```
 

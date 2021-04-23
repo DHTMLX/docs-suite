@@ -16,30 +16,30 @@ description: description
 
 @example:
 var form = new dhx.Form("form-sample", {
-css: "dhx_widget--bordered",
-rows: [
-{
-type: "input",
-label: "Name",
-icon: "dxi dxi-magnify",
-placeholder: "John Doe",
-name: "name"
-},
-{
-type: "input",
-inputType: "password",
-label: "Password",
-placeholder: "********",
-name: "password"
-},
-{
-type: "button",
-text: "Send",
-size: "medium",
-view: "flat",
-submit: true
-}
-]
+    css: "dhx_widget--bordered",
+    rows: [
+        {
+            type: "input",
+            label: "Name",
+            icon: "dxi dxi-magnify",
+            placeholder: "John Doe",
+            name: "name"
+        },
+        {
+            type: "input",
+            inputType: "password",
+            label: "Password",
+            placeholder: "********",
+            name: "password"
+        },
+        {
+            type: "button",
+            text: "Send",
+            size: "medium",
+            view: "flat",
+            submit: true
+        }
+    ]
 });
 
 form.getProperties();
@@ -47,7 +47,7 @@ form.getProperties();
 
 // or
 form.getProperties("password");
-// -> {inputType: "password", label: "Password", placeholder: "**\*\*\*\***", …}
+// -> {inputType: "password", label: "Password", placeholder: "********", …}
 
 @template: api_method
 @descr:

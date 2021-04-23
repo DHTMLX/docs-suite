@@ -9,14 +9,14 @@ title: spans
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-columns: [// columns config],
-spans: [
-{row:"0", column:"a", rowspan:5 },
-{row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
-{row:"0", column:"c", colspan:2, text:"Some content"},
-{row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
-],
-data: dataset
+	columns: [// columns config],
+	spans: [
+		{row:"0", column:"a", rowspan:5 },
+		{row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
+		{row:"0", column:"c", colspan:2, text:"Some content"},
+		{row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+	],
+	data: dataset
 });
 
 @template: api_config
