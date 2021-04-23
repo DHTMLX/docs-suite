@@ -23,12 +23,7 @@ list.selection.disable();
 [List. Disable/Enable Selection](https://snippet.dhtmlx.com/i4zj985o)
 
 
-Here is a list of events that you can apply while working with selection of items:
-todotw возможно отправлять на страницу со списком апи
-- list/api/selection/selection_afterselect_event.md
-- list/api/selection/selection_afterunselect_event.md
-- list/api/selection/selection_beforeselect_event.md
-- list/api/selection/selection_beforeunselect_event.md
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
 
 Selecting an item
 --------------------

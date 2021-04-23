@@ -1529,6 +1529,34 @@ module.exports = {
                 ],
               },
               "grid/api/api_gridcolumn_properties",
+              {
+                type: "category",
+                label: "Selection API",
+                items: [{
+                  type: "category",
+                  label: "Methods",
+                  items: [
+                    "grid/api/selection/selection_disable_method",
+                    "grid/api/selection/selection_enable_method",
+                    "grid/api/selection/selection_getcell_method",
+                    "grid/api/selection/selection_getcells_method",
+                    "grid/api/selection/selection_removecell_method",
+                    "grid/api/selection/selection_setcell_method",
+                  ],
+                },
+
+                {
+                  type: "category",
+                  label: "Events",
+                  items: [
+                    "grid/api/selection/selection_afterselect_event",
+                    "grid/api/selection/selection_afterunselect_event",
+                    "grid/api/selection/selection_beforeselect_event",
+                    "grid/api/selection/selection_beforeunselect_event",
+                  ],
+                },
+                ],
+              },
             ],
           },
           "grid/initialization",
@@ -3045,7 +3073,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Events",
+          label: "Properties",
           items: [
             "uploader/api/uploader_autosend_config",
             "uploader/api/uploader_fieldname_config",

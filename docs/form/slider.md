@@ -43,11 +43,11 @@ var value = form.getItem("slider_id").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Slider control](form/api/api_overview.md#methods-11).
+Check [the full list of methods of the Slider control](form/api/api_overview.md#slider-methods).
 
 ### Events
 
-Check [the full list of events of the Slider control](form/api/api_overview.md#events-11).
+Check [the full list of events of the Slider control](form/api/api_overview.md#slider-events).
 
 
 ### Working with the dhtmlxSlider widget

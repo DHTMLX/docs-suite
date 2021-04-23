@@ -64,8 +64,8 @@ var value = form.getItem("select").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Select control](form/api/api_overview.md#methods-9).
+Check [the full list of methods of the Select control](form/api/api_overview.md#select-methods).
 
 ### Events
 
-Check [the full list of events of the Select control](form/api/api_overview.md#events-9).
+Check [the full list of events of the Select control](form/api/api_overview.md#select-events).

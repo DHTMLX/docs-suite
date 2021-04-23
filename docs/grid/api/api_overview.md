@@ -36,8 +36,8 @@ title: Grid API overview
 | [](grid/api/grid_showrow_method.md)           | @getshort(grid/api/grid_showrow_method.md)           |
 
 :::info important
-- Use [DataCollection methods](data_collection/index.md) to work with data. 
-- А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the methods of DataCollection](data_collection/index.md) to work with data. 
+- Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manipulate the selection of Grid cells. 
 :::
 
 ## Grid events
@@ -154,8 +154,8 @@ add from v7.1
 
 
 :::info important
-- Use [DataCollection events](data_collection/index.md#events) to work with data. 
-- А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the events of DataCollection](data_collection/index.md#events) to work with data of Grid. 
+- Apply [the events of Selection](grid/api/api_overview.md#selection-events) to manipulate the selection of Grid cells. 
 :::
 
 ## Grid properties
@@ -191,4 +191,28 @@ add from v7.1
 
 ## Column properties
 
-See the list of all the available configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
+You will find the list of all the available configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
+
+## Selection API
+
+### Selection methods
+
+| Name                                                  | Description                                               |
+|-------------------------------------------------------|-----------------------------------------------------------|
+| [](grid/api/selection/selection_disable_method.md)    | @getshort(grid/api/selection/selection_disable_method)    |
+| [](grid/api/selection/selection_enable_method.md)     | @getshort(grid/api/selection/selection_enable_method)     |
+| [](grid/api/selection/selection_getcell_method.md)    | @getshort(grid/api/selection/selection_getcell_method)    |
+| [](grid/api/selection/selection_getcells_method.md)   | @getshort(grid/api/selection/selection_getcells_method)   |
+| [](grid/api/selection/selection_removecell_method.md) | @getshort(grid/api/selection/selection_removecell_method) |
+| [](grid/api/selection/selection_setcell_method.md)    | @getshort(grid/api/selection/selection_setcell_method)    |
+
+
+
+### Selection events
+
+| Name                                                     | Description                                                  |
+|----------------------------------------------------------|--------------------------------------------------------------|
+| [](grid/api/selection/selection_afterselect_event.md)    | @getshort(grid/api/selection/selection_afterselect_event)    |
+| [](grid/api/selection/selection_afterunselect_event.md)  | @getshort(grid/api/selection/selection_afterunselect_event)  |
+| [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event)   |
+| [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event) |

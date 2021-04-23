@@ -46,11 +46,11 @@ var value = form.getItem("colorpicker").getValue();
 
 ### Methods
 
-Check [the full list of methods of the ColorPicker control](form/api/api_overview.md#methods-5).
+Check [the full list of methods of the ColorPicker control](form/api/api_overview.md#color-picker-methods).
 
 ### Events
 
-Check [the full list of events of the ColorPicker control](form/api/api_overview.md#events-5).
+Check [the full list of events of the ColorPicker control](form/api/api_overview.md#color-picker-events).
 
 
 ## Working with the dhtmlxColorPicker widget

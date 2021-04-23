@@ -23,3 +23,4 @@ Starting from v7.0, the method unselects all previously selected items when call
 tree.selection.remove();
 ~~~
 
+{{note The method can be applied to the DataView, List, Tree components. }}

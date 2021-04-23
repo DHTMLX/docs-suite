@@ -45,8 +45,8 @@ var value = form.getItem("input").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Input control](form/api/api_overview.md#methods-7).
+Check [the full list of methods of the Input control](form/api/api_overview.md#input-methods).
 
 ### Events
 
-Check [the full list of events of the Input control](form/api/api_overview.md#events-7).
+Check [the full list of events of the Input control](form/api/api_overview.md#input-events).

@@ -69,8 +69,8 @@ var value = form.getItem("radiogroup").getValue();
 
 ### Methods
 
-Check [the full list of methods of the RadioGroup control](form/api/api_overview.md#methods-8).
+Check [the full list of methods of the RadioGroup control](form/api/api_overview.md#radiogroup-methods).
 
 ### Events
 
-Check [the full list of events of the RadioGroup control](form/api/api_overview.md#events-8).
+Check [the full list of events of the RadioGroup control](form/api/api_overview.md#radiogroup-events).

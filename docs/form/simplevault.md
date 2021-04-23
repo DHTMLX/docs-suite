@@ -47,11 +47,11 @@ var value = form.getItem("simpleVault").getValue();
 
 ### Methods
 
-Check [the full list of methods of the SimpleVault control](form/api/api_overview.md#methods-10).
+Check [the full list of methods of the SimpleVault control](form/api/api_overview.md#simple-vault-methods).
 
 ### Events
 
-Check [the full list of events of the SimpleVault control](form/api/api_overview.md#events-10).
+Check [the full list of events of the SimpleVault control](form/api/api_overview.md#simple-vault-events).
 
 
 ## Using DataCollection API

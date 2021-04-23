@@ -57,11 +57,11 @@ var value = form.getItem("Combo").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Combo control](form/api/api_overview.md#methods-6).
+Check [the full list of methods of the Combo control](form/api/api_overview.md#combo-methods).
 
 ### Events
 
-Check [the full list of events of the Combo control](form/api/api_overview.md#events-6).
+Check [the full list of events of the Combo control](form/api/api_overview.md#combo-events).
 
 ### Working with the dhtmlxComboBox widget
 
