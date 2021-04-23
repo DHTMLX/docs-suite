@@ -24,7 +24,7 @@ title: TreeGrid column properties
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a header</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#headerfootercontent"><b>content</b></a> - (<i>string</i>) additional content of a header, which can be:
                     <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                    <ol>- one of the methods that process values in a column and show result in the header:<br/> "avg" | "sum" | "max" | "min" </ol>
+                    <ol>- one of the methods that process values in a column and show result in the header:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
                     <ol> - some other string</ol>
                     </li>
                     <li><b>filterConfig</b> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
@@ -51,7 +51,7 @@ title: TreeGrid column properties
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a footer</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#headerfootercontent"><b>content</b></a> - (<i>string</i>) additional content of a footer, which can be:
                     <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                    <ol>- one of the methods that process values in a column and show result in the footer:<br/> "avg" | "sum" | "max" | "min" </ol>
+                    <ol>- one of the methods that process values in a column and show result in the footer:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
                     <ol> - some other string</ol>
                     </li>
                 </ul>

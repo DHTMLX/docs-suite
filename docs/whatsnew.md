@@ -5,6 +5,23 @@ title: What's new
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.0.3
+---------------
+
+<span class="rel_date">released on January 19, 2021</span>
+
+### Fixes
+
+- [Donut chart](chart/charts_overview.md#pie-pie-3d-and-donut-chart). Fix the issue with colors 
+- Grid. Fix the issue that caused the [frozen](grid/api/grid_leftsplit_config.md) columns to become movable when hiding columns 
+- Grid. Fix the issue with the [filter()](data_collection/api/datacollection_filter_method.md) method when the [](grid/api/grid_autoemptyrow_config.md) property is enabled
+- Grid. Fix the issue with alignment of spans in the header of the grid 
+- Grid. Fix the incorrect behavior of "comboFilter" after reloading data
+- Tabbar. Fix the incorrect alignment of bottom lines in the tabs
+- Tree. Fix the issue that caused Tree items not to be collapsed in the [autoload](tree/api/tree_autoload_config.md) mode
+- Window. Fix the issue that caused the text in the title of the window to overflow
+- Fix the issue with types
+  
 Version 7.0.2
 ---------------
 

@@ -94,3 +94,50 @@ You can add a tooltip to a navItem:
 ~~~
 
 {{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+
+## Two state NavItems
+
+You can create navItems with two states: active (pressed) and inactive (unpressed). The activity of a two state navItem is controlled via the **active** attribute of the navItem object:
+
+~~~js
+{
+    type: "navItem",
+    icon: "dxi dxi-format-bold",
+    tooltip: "bold text",
+    twoState: true, active: false /*!*/
+}
+~~~
+
+{{editor	https://snippet.dhtmlx.com/1pj4eqw0	Toolbar. Two State}}
+
+### Changing state of a two state navItem on the fly
+
+The state of a two state item can be changed programmatically with the [setState()](toolbar/api/toolbar_setstate_method.md) method of Toolbar as in:
+
+~~~js
+{
+    type: "navItem", icon: "dxi dxi-format-bold",
+    tooltip: "bold text", twoState: true, 
+	id:"bold"
+}
+...
+toolbar.setState({"bold":true});    // active:true  /*!*/
+// or
+toolbar.setState({"bold":false});   // active:false /*!*/
+~~~
+
+**setState()** accepts one parameter: a key-value pair with the ID of the item and the new value.
+
+### Accessing current state of a two state navItem
+
+The current state of a two state item can be checked with the [getState()](toolbar/api/toolbar_getstate_method.md) method:
+
+~~~js
+{
+    type: "navItem", icon: "dxi dxi-format-bold",
+    tooltip: "bold text", twoState: true, 
+	id:"bold"
+}
+...
+var state = toolbar.getState(); // -> { bold:true } or { bold:false } /*!*/
+~~~
