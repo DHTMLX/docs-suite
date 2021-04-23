@@ -2,16 +2,17 @@
 sidebar_label: getProperties
 title: getProperties
 description: description
----          
-
+---
 
 @short: returns objects with available configuration attributes of Form controls
 
 @params:
-- name|id	string  optional, the name of the control or its id (if the name attribute is not defined in the config of the control)
+
+- name|id string optional, the name of the control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
-- param     object      an object either with the available attributes of the control and their values or with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their values
+
+- param object an object either with the available attributes of the control and their values or with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their values
 
 @example:
 var form = new dhx.Form("form-sample", {
@@ -52,65 +53,62 @@ form.getProperties("password");
 @descr:
 {{note The returned object can contain only the properties that are listed below for each control.}}
 
-Here are two ways of using the method: 
+Here are two ways of using the method:
 
-- When using the method without the parameter, the method returns an object with a set of *key:value* pairs where *key* is the name of the control (or its ) and *value* is an object with the available attributes of the control and their values:
+- When using the method without the parameter, the method returns an object with a set of _key:value_ pairs where _key_ is the name of the control (or its ) and _value_ is an object with the available attributes of the control and their values:
 
-~~~js
+```js
 form.getProperties();
 // -> the returned object:
 {
     name: {
-		autocomplete: false, errorMessage: "", height: "content", helpMessage: "", 
+		autocomplete: false, errorMessage: "", height: "content", helpMessage: "",
 		hiddenLabel: false, icon: "dxi dxi-magnify", inputType: "text", …
-	}, 
+	},
 	password: {
-		autocomplete: false, errorMessage: "", height: "content", 
+		autocomplete: false, errorMessage: "", height: "content",
 		helpMessage: "", hiddenLabel: false, icon: "", inputType: "password", …
-	}, 
+	},
     u1604577858827: {
-		circle: false, color: "primary", full: false, height: "content", 
+		circle: false, color: "primary", full: false, height: "content",
 		icon: "", loading: false, padding: 0, size: "medium", submit: true, …
-		
+
 	}
-~~~
+```
 
 - When passing the name of the control (or its id) as a parameter to the method, the method will return an object with the available attributes of the control and their values:
 
-~~~js
+```js
 form.getProperties("name");
 
 // -> the returned object:
 {
-	autocomplete: false, 
-	errorMessage: "", 
-	height: "content", 
-	helpMessage: "", 
-	hiddenLabel: false, 
-	icon: "dxi dxi-magnify", 
-	inputType: "text", 
-	label: "Name", 
-	labelPosition: "top", 
-	labelWidth: "", 
-	max: undefined, 
-	maxlength: undefined, 
-	min: undefined, 
-	minlength: undefined, 
-	padding: 0, 
-	placeholder: "John Doe", 
-	preMessage: "", 
-	readOnly: false, 
-	required: false, 
-	successMessage: "", 
-	validation: undefined, 
+	autocomplete: false,
+	errorMessage: "",
+	height: "content",
+	helpMessage: "",
+	hiddenLabel: false,
+	icon: "dxi dxi-magnify",
+	inputType: "text",
+	label: "Name",
+	labelPosition: "top",
+	labelWidth: "",
+	max: undefined,
+	maxlength: undefined,
+	min: undefined,
+	minlength: undefined,
+	padding: 0,
+	placeholder: "John Doe",
+	preMessage: "",
+	readOnly: false,
+	required: false,
+	successMessage: "",
+	validation: undefined,
 	width: "content"
 }
-~~~
+```
 
-
-
-
-## Button 
+## Button
 
 The returned object of the **Button** control can contain the following configuration attributes:
 
@@ -171,7 +169,7 @@ The returned object of the **Button** control can contain the following configur
     </tbody>
 </table>
 
-## DatePicker 
+## DatePicker
 
 The returned object of the **DatePicker** control can contain the following configuration attributes:
 
@@ -284,7 +282,7 @@ The returned object of the **DatePicker** control can contain the following conf
     </tbody>
 </table>
 
-## Checkbox 
+## Checkbox
 
 The returned object of the **Checkbox** control can contain the following configuration attributes:
 
@@ -345,7 +343,7 @@ The returned object of the **Checkbox** control can contain the following config
     </tbody>
 </table>
 
-## CheckboxGroup 
+## CheckboxGroup
 
 The returned object of the **CheckboxGroup** control can contain the following configuration attributes:
 
@@ -430,7 +428,7 @@ The returned object of the **CheckboxGroup** control can contain the following c
 	</tbody>
 </table>
 
-## ColorPicker 
+## ColorPicker
 
 The returned object of the **ColorPicker** control can contain the following configuration attributes:
 
@@ -519,7 +517,7 @@ The returned object of the **ColorPicker** control can contain the following con
     </tbody>
 </table>
 
-## Combo 
+## Combo
 
 The returned object of the **Combo** control can contain the following configuration attributes:
 
@@ -620,14 +618,13 @@ The returned object of the **Combo** control can contain the following configura
     </tbody>
 </table>
 
-
-## Input 
+## Input
 
 The returned object of the **Input** control can contain the following configuration attributes:
 
 <table class="webixdoc_links">
 	<tbody>
-        <tr>
+   <tr>
 			<td class="webixdoc_links0"><b>inputType</b></td>
 			<td>(<i>string</i>) the type of an input: "text", "password", "number"</td>
 		</tr>
@@ -639,12 +636,11 @@ The returned object of the **Input** control can contain the following configura
 			<td class="webixdoc_links0"><b>max</b></td>
 			<td>(<i>string|number</i>) the maximal value allowed in the input. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>validation</b></td>
-			<td>(<i>object|function</i>) the rule of input validation
-            </td>
+			<td>(<i>object|function</i>) the rule of input validation</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
@@ -652,7 +648,7 @@ The returned object of the **Input** control can contain the following configura
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Input control</td>
 		</tr>
@@ -719,8 +715,7 @@ The returned object of the **Input** control can contain the following configura
     </tbody>
 </table>
 
-
-## RadioGroup 
+## RadioGroup
 
 The returned object of the **RadioGroup** control can contain the following configuration attributes:
 
@@ -804,7 +799,7 @@ The returned object of the **RadioGroup** control can contain the following conf
     </tbody>
 </table>
 
-## Select 
+## Select
 
 The returned object of the **Select** control can contain the following configuration attributes:
 
@@ -865,14 +860,13 @@ The returned object of the **Select** control can contain the following configur
     </tbody>
 </table>
 
-
-## SimpleVault 
+## SimpleVault
 
 The returned object of the **SimpleVault** control can contain the following configuration attributes:
-``` todo
+
+```todoanton не могу понять, что именно ломает движок
 <table class="webixdoc_links">
 	<tbody>
-		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
@@ -940,8 +934,7 @@ The returned object of the **SimpleVault** control can contain the following con
   </tbody>
 </table>
 
-
-## Slider 
+## Slider
 
 The returned object of the **Slider** control can contain the following configuration attributes:
 
@@ -1023,7 +1016,7 @@ The returned object of the **Slider** control can contain the following configur
 </table>
 
 
-## Spacer 
+## Spacer
 
 The returned object of the **Spacer** control can contain the following configuration attributes:
 
@@ -1033,10 +1026,10 @@ The returned object of the **Spacer** control can contain the following configur
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
-		</tr>	
+		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
@@ -1045,7 +1038,7 @@ The returned object of the **Spacer** control can contain the following configur
 </table>
 
 
-## Text 
+## Text
 
 The returned object of the **Text** control can contain the following configuration attributes:
 
@@ -1103,7 +1096,7 @@ The returned object of the **Text** control can contain the following configurat
 </table>
 
 
-## Textarea 
+## Textarea
 
 The returned object of the **Textarea** control can contain the following configuration attributes:
 
@@ -1130,7 +1123,7 @@ The returned object of the **Textarea** control can contain the following config
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Textarea control</td>
 		</tr>
@@ -1181,7 +1174,7 @@ The returned object of the **Textarea** control can contain the following config
     </tbody>
 </table>
 
-## TimePicker 
+## TimePicker
 
 The returned object of the **TimePicker** control can contain the following configuration attributes:
 
@@ -1215,7 +1208,7 @@ The returned object of the **TimePicker** control can contain the following conf
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the TimePicker control</td>
 		</tr>
@@ -1266,7 +1259,7 @@ The returned object of the **TimePicker** control can contain the following conf
     </tbody>
 </table>
 
-``` 
+```
 
 @relatedapi: form/api/form_setproperties_method.md
 

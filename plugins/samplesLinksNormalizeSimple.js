@@ -43,13 +43,23 @@ const getFiles = (dir, files_) => {
 	return files_;
 };
 
-const updateFileData = file => {
-	const fileData = fs.readFileSync(file.filePath, 'utf-8');
-	let newData = fileData.replace(/^(https:\/\/snippet.dhtmlx.com\/\w+\s+\w+.)\ (.+)$/gm, i => {
+const normalizeLink = (fileData, count, length) => {
+	fileData = fileData.replace(/^(https:\/\/snippet.dhtmlx.com\/\w+\s+\w+.)\ (.+)$/m, i => {
 		const signature = /^(https:\/\/snippet.dhtmlx.com\/\w+)\s+(\w+. .+)$/gm.exec(fileData);
-		return signature ? `**Related sample**: [${signature[2]}](${signature[1]})` : i;
+		return signature ? `${count === 0 ? `**Related sample${length > 1 ? "s" : ""}**:\n` : ""}- [${signature[2]}](${signature[1]})` : i;
 	});
-	fs.writeFileSync(file.filePath, newData, 'utf-8');
+	return fileData;
+};
+
+const updateFileData = file => {
+	let fileData = fs.readFileSync(file.filePath, 'utf-8');
+	const signature = fileData.match(/^(https:\/\/snippet.dhtmlx.com\/\w+\s+\w+.)\ (.+)$/gm);
+	if (signature) {
+		signature.forEach((_, i, array) => {
+			fileData = normalizeLink(fileData, i, array.length);
+		});
+		fs.writeFileSync(file.filePath, fileData, 'utf-8');
+	}
 };
 
 getFiles("../docs/").forEach(updateFileData);
