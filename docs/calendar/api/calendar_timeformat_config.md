@@ -5,7 +5,7 @@ title: timeFormat
 
 @short: defines the time format for a timepicker in the calendar
 
-@signature: timeFormat?: 24 | 12; 
+@signature: {'timeFormat?: 24 | 12;'}
 
 @default: 24
 

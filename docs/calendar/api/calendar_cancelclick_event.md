@@ -4,8 +4,8 @@ title: cancelClick
 ---          
 
 @short: fires when the user clicks on the "Cancel" control
-
-@signature: cancelClick: () => void;
+todoanton any приходит из d.ts
+@signature: {'cancelClick: () => any;'}
 
 @example:
 calendar.events.on("CancelClick", function() {

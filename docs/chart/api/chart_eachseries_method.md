@@ -5,6 +5,8 @@ title: eachSeries
 
 @short: iterates over Chart series
 
+@signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
+
 ```todoapi
 array eachSeries(function handler);
 eachSeries(handler: (seria: ISeria) => any): any[];

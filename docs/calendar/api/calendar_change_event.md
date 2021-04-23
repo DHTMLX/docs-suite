@@ -4,8 +4,8 @@ title: change
 ---          
 
 @short: fires on change of date selection
-
-@signature: change: (date: Date, oldDate: Date, byClick: boolean) => void;
+todoanton any приходит из d.ts
+@signature: {'change: (date: Date, oldDate: Date, byClick: boolean) => any;'}
 
 @params:
 - date  		Date    	the newly selected date

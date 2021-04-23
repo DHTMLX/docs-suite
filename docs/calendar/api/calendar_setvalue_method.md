@@ -5,7 +5,7 @@ title: setValue
 
 @short: selects a date in the calendar
 
-@signature: setValue(value: Date | Date[] | string | string[]): boolean;
+@signature: {'setValue(value: Date | Date[] | string | string[]): boolean;'}
 
 @params:
 - date 		Date,Date[],string,string[] 		the date to select

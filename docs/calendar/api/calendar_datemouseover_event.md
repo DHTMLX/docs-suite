@@ -4,8 +4,8 @@ title: dateMouseOver
 ---          
 
 @short: fires when the mouse pointer is over a date
-
-@signature: dateMouseOver: (date: Date, e: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'dateMouseOver: (date: Date, e: MouseEvent) => any;'}
 
 @params:
 - date  	Date    	the date under the pointer

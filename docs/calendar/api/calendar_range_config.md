@@ -5,7 +5,7 @@ title: range
 
 @short: enables/disables the possibility to select a range of dates on the calendar
 
-@signature: range?: boolean;
+@signature: {'range?: boolean;'}
 
 @type: boolean
 

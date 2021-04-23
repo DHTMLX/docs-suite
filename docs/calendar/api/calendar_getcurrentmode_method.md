@@ -4,6 +4,8 @@ title: getCurrentMode
 ---          
 
 @short: returns the current mode of displaying Calendar
+todoanton если развернутое описание правильное, примени его
+@signature: {'getCurrentMode(): ViewMode;'}
 
 ```todoapi
 string getCurrentMode();

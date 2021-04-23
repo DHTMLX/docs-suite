@@ -4,6 +4,8 @@ title: put
 ---          
 
 @short: sends a PUT request to the server
+todoanton any приходит из d.ts
+@signature: {'put<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
 
 @params:
 - url       string      the URL the request is sent to

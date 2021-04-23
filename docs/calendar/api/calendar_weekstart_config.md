@@ -5,7 +5,7 @@ title: weekStart
 
 @short: sets the starting day of the week
 
-@signature: weekStart?: "sunday" | "monday";
+@signature: {'weekStart?: "monday" | "sunday";'}
 
 @default: "sunday"
 

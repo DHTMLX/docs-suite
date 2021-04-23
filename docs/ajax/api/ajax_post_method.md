@@ -4,6 +4,8 @@ title: post
 ---          
 
 @short: sends a POST request to the server
+todoanton any приходит из d.ts
+@signature: {'post<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
 
 @params:
 - url       string      the URL the request is sent to

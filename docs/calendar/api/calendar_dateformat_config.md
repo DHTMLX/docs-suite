@@ -5,7 +5,7 @@ title: dateFormat
 
 @short: defines the format of dates in Сalendar
 
-@signature: dateFormat?: string;
+@signature: {'dateFormat?: string;'}
 
 @default: "%d/%m/%y"
 

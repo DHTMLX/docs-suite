@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to Calendar
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
