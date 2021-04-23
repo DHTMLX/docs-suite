@@ -19,3 +19,5 @@ selection.events.on("BeforeUnSelect", function(id){
 
 @template:	api_method
 @descr:
+
+{{note The event can be applied to the DataView, List, Tree components.}}

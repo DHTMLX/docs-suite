@@ -23,13 +23,9 @@ dataview.selection.disable();
 
 [Dataview. Disable/Enable selection](https://snippet.dhtmlx.com/kn42gb50)
 
-Here is a list of events that you can apply while working with selection of items:
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
 
-todotw возможно отправлять на страницу с перечислениями
-- dataview/api/selection/selection_afterselect_event.md
-- dataview/api/selection/selection_afterunselect_event.md
-- dataview/api/selection/selection_beforeselect_event.md
-- dataview/api/selection/selection_beforeunselect_event.md
+
 
 Selecting an item
 ----------------------

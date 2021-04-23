@@ -15,3 +15,5 @@ selection.events.on("AfterSelect", function(id){
 
 @template:	api_method
 @descr:
+
+{{note The event can be applied to the DataView, List, Tree components.}}
