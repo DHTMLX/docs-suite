@@ -21,8 +21,7 @@ All in all there are 11 types of chart, in the list below they are combined into
 - [Radar Chart](#radar-chart)
 - [Scatter Chart](#scatter-chart)
 
-Line and Spline chart
-------------------
+## Line and Spline chart
 
 This is a basic chart type that shows changes of trends in progress over a period of time. Thus it will help you to display the dynamics of prices over a year or
 how the number of staff has increased over several years. Choose this variant when your data has **more than 10 items**. 
@@ -42,8 +41,7 @@ how the number of staff has increased over several years. Choose this variant wh
 
 {{editor    https://snippet.dhtmlx.com/2wvmdm0y	Chart. Basic Initialization Spline Chart}}
 
-Bar and X-Bar chart
----------------------
+## Bar and X-Bar chart
 
 The same as Line chart it displays data for certain periods. It greatly suits you if there are **less then 10 items** in your data set.
 
@@ -59,8 +57,7 @@ The same as Line chart it displays data for certain periods. It greatly suits yo
 
 {{editor    https://snippet.dhtmlx.com/qz80yw84	Chart. Basic Initialization X-Bar Chart}}
 
-Area and SplineArea chart
---------------
+## Area and SplineArea chart
 
 Area chart is based on the Line chart. The difference is that areas below lines are filled with color. This type of chart allows you to provide visual comparison of two or more values over time.
 
@@ -76,8 +73,7 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 {{editor    https://snippet.dhtmlx.com/bo82km4n	Chart. Basic Initialization Spline Area Chart}}
 
-Pie, Pie 3D and Donut chart
-----------------------
+## Pie, Pie 3D and Donut chart
 
 Pie chart and its variations are the best choice when you deal with proportions and percentages. It is a circular chart divided into proportional parts that illustrate relations between items in a data set.
 
@@ -95,8 +91,7 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 {{editor    https://snippet.dhtmlx.com/lobb80ig	Chart. Basic Initialization Donut Chart}}
 
-Radar Chart
------------------
+## Radar Chart
 
 This one is a two-dimensional chart that allows placing one or several series of values over multiple numerical variables. For example, Radar chart will help you to study how a number of parameters 
 relate to one item (the center point of a chart) and compare their values.
@@ -105,8 +100,7 @@ relate to one item (the center point of a chart) and compare their values.
 
 {{editor    https://snippet.dhtmlx.com/6otf4h0t	Chart. Basic Initialization Radar Chart}}
 
-Scatter Chart
----------------
+## Scatter Chart
 
 The peculiarity of Scatter Chart is that it allows exploring relations between two sets of data in order to find out possible dependencies or patterns.
 
