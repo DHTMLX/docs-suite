@@ -4,6 +4,8 @@ title: setConfig
 ---          
 
 @short: sets configuration of a chart
+todoanton снизу есть type, css, barWidth и т.д. может быть можно их хотя бы вручную внести в сигнатуру?
+@signature: {'setConfig(config: IChartConfig): void;'}
 
 ```todoapi
 void setConfig(object config);

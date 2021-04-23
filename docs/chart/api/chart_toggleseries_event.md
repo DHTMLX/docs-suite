@@ -5,10 +5,7 @@ title: toggleSeries
 
 @short: fires on toggle on/off a series in a legend
 
-```todoapi
-void toggleSeries(string id){ ... };
-toggleSeries = "toggleSeries",
-```
+@signature: {'toggleSeries: (id: string, pieLike: boolean) => void;'}
 
 @params:
 - id	string		the id of a toggled series

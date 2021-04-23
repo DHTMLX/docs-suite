@@ -5,7 +5,7 @@ title: readOnly
 
 @short: makes Combo Box readonly
 
-@signature: readOnly?: boolean;
+@signature: {'readOnly?: boolean;'}
 
 @default: false
 

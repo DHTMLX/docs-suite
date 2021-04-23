@@ -5,7 +5,7 @@ title: getIndex
 
 @short: returns the index of the item by its id
 
-@signature: getIndex(id: Id): number;
+@signature: {'getIndex(id: Id): number;'}
 
 @params:
 

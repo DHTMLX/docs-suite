@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether a form is disabled
 
-@signature: isDisabled(name?: string): boolean;
+@signature: {'isDisabled(name?: string): boolean;'}
 
 
 

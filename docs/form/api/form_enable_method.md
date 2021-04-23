@@ -5,6 +5,8 @@ title: enable
 
 @short: enables a disabled form
 
+@signature: {'enable(): void;'}
+
 
 @params:
 

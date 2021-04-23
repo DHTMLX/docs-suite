@@ -5,7 +5,7 @@ title: labelWidth
 
 @short: sets the width of a label
 
-@signature: labelWidth?: string | number;
+@signature: {'labelWidth?: string | number;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {

@@ -5,7 +5,7 @@ title: clear
 
 @short: clears the value set in the colorpicker and removes focus
 
-@signature: clear(): void;
+@signature: {'clear(): void;'}
 
 
 @example:

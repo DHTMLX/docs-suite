@@ -5,7 +5,7 @@ title: paletteOnly
 
 @short: defines whether ColorPicker is shown only in the palette mode
 
-@signature: paletteOnly?: boolean;
+@signature: {'paletteOnly?: boolean;'}
 
 @default: false
 

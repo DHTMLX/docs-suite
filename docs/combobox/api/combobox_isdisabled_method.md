@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether a combobox is disabled
 
-@signature: isDisabled(): boolean;
+@signature: {'isDisabled(): boolean;'}
 
 <!-- todoapi
 указать значение по умолчанию -->

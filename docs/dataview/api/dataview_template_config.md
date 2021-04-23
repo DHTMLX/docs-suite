@@ -5,7 +5,7 @@ title: template
 
 @short: specifies a template for DataView items
 
-@signature: template?: (item: any) => string;
+@signature: {'template?: (item: any) => string;'}
 
 @example: 
 var dataview = new dhx.DataView("dataview", {

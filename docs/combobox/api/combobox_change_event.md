@@ -4,8 +4,8 @@ title: change
 ---          
 
 @short: fires when a new option is selected
-
-@signature: change: (id: string | string[]) => void;
+todoanton any приходит из d.ts
+@signature: {'change: (ids: string | string[]) => any;'}
 
 @params:
 - id 		string|string[] 		the id(s) of a newly selected option(s)

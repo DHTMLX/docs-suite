@@ -5,7 +5,7 @@ title: update
 
 @short: updates a class after its silent adding
 
-@signature: update(): void;
+@signature: {'update(): void;'}
 
 
 @example:

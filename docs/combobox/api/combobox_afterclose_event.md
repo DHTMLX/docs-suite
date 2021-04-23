@@ -4,8 +4,8 @@ title: afterClose
 ---          
 
 @short: fires after closing a list with options
-
-@signature: afterClose: () => void;
+todoanton any приходит из d.ts
+@signature: {'afterClose: () => any;'}
 
 @example:
 combobox.events.on("AfterClose", function() {

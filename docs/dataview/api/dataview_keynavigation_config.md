@@ -5,7 +5,7 @@ title: keyNavigation
 
 @short: enables/disables navigation in DataView by arrow keys
 
-@signature: keyNavigation?: boolean | (() => boolean);
+@signature: {'keyNavigation?: boolean | (() => boolean);'}
 
 @example: 
 var dataview = new dhx.DataView("dataview", {

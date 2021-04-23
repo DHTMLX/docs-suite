@@ -5,7 +5,7 @@ title: disabled
 
 @short: makes Combo Box disabled
 
-@signature: disabled?: boolean;
+@signature: {'disabled?: boolean;'}
 
 @default: false
 

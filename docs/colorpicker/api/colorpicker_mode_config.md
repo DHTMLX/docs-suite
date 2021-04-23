@@ -4,8 +4,8 @@ title: mode
 ---          
 
 @short: specifies the mode of displaying a colorpicker
-
-@signature: mode?: "palette" | "picker";
+todoanton если можно: mode?: "palette" | "picker";
+@signature: {'mode?: ViewsMode;'}
 
 @example: 
 var colorpicker = new dhx.Colorpicker("colorpicker", {

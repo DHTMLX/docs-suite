@@ -5,7 +5,7 @@ title: selection
 
 @short: enables selection of DataView items
 
-@signature: selection?: boolean;
+@signature: {'selection?: boolean;'}
 
 @default: true
 

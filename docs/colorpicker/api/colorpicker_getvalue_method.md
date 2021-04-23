@@ -5,7 +5,7 @@ title: getValue
 
 @short: returns the code of a selected color
 
-@signature: getValue(): string;
+@signature: {'getValue(): string;'}
 
 @returns:
 - value    string   the code of a selected color in the Hex format

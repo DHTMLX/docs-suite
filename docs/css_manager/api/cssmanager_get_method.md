@@ -5,7 +5,7 @@ title: get
 
 @short: returns a list of styles by the class name
 
-@signature: get(className: string): ICssList;
+@signature: {'get(className: string): ICssList;'}
 
 @params:
 - className      string     the name of the class

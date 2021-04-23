@@ -5,11 +5,12 @@ title: scales
 
 @short: defines configuration of chart scales
 
+@signature: {'scales?: IScalesConfig;'}
+```todoanton хотелось бы указать "left" | "right" | "top" | "bottom" | "radial";
 ```todoapi
 object scales;
 scales?: IScalesConfig;
 export declare type ScaleType = "left" | "right" | "top" | "bottom" | "radial";
-а еще не у всех чартов это есть
 ```
 
 @type: object

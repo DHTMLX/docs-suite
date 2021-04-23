@@ -4,6 +4,8 @@ title: add
 ---          
 
 @short: adds a new item to the component
+todoanton судя по params сигнатура не верна
+@signature: {'add?: boolean;'}
 
 @params:
 - new_item		object,array		the object of a new item or an array of item objects
