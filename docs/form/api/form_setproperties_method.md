@@ -12,7 +12,7 @@ description: description
 - properties object optional, an object with the available attributes of the control and their new values
 
 @example:
-	form.setProperties("input_name", {
+form.setProperties("input_name", {
 	label: "new label",
 	css: "new-css",
 	padding: "20px",
