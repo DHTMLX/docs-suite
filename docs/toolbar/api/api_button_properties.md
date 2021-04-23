@@ -42,14 +42,6 @@ title: Toolbar Button properties
 			<td>(<i>string</i>) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>twoState</b></td>
-			<td>(<i>boolean</i>) the flag that defines whether a button can be used in two states: active (pressed) and inactive (unpressed)</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>active</b></td>
-			<td>(<i>boolean</i>) for <i>twoState</i> buttons, if <i>true</i>, the button is in the active state</td>
-		</tr>
-        <tr>
 			<td class="webixdoc_links0"><b>hotkey</b></td>
 			<td>(<i>string</i>) the name of the hot key for the button</td>
 		</tr>

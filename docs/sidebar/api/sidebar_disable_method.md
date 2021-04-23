@@ -22,7 +22,7 @@ Starting from v7.0, it is possible to disable all items at once by using the met
 
 ~~~js
 // disables all Sidebar items
-sidebar.disabled();
+sidebar.disable();
 ~~~
 
 
@@ -32,4 +32,4 @@ https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable
 
 @changelog:
 
-@related: sidebar/work_with_sidebar.md#disablingandenablingcontrols
+@related: sidebar/work_with_sidebar.md#disabling-and-enabling-controls

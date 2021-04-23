@@ -9,12 +9,7 @@ title: add
 - id		string,number		the id of an item
 
 @example:
-// diagram must be created with the "select:true" option
-var tree = new dhx.Tree("tree_container", {
-    selection: true
-});
-tree.data.parse(data);
-
+var id = tree.selection.getId(); // -> "2"
 tree.selection.add("2");
 
 @template:	api_method

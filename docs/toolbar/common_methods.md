@@ -9,12 +9,12 @@ Setting/getting values and states
 
 ### Setting values/states
 
-You can change the value or state (for a TwoState button) of a control with the help of the [setState()](toolbar/api/toolbar_setstate_method.md) method. It takes one parameter: a *key-value* pair with the ID of the control and its new value (state).
+You can change the value or state (for a TwoState navItem) of a control with the help of the [setState()](toolbar/api/toolbar_setstate_method.md) method. It takes one parameter: a *key-value* pair with the ID of the control and its new value (state).
 
-Here is how you can use it to change the state of a TwoState button:
+Here is how you can use it to change the state of a TwoState navItem:
 
 ~~~js
-{type:"button", twoState:true, id:"check"}
+{type:"navItem", twoState:true, id:"check"}
 ...
 toolbar.setState({"check":true});
 //or
@@ -37,10 +37,10 @@ To get the current value of the control, use the [getState()](toolbar/api/toolba
 
 Starting from v7.0, the method can take the id of a Toolbar control as a parameter and return the value/state of the control. If id is not specified, the method returns an object with IDs of controls and their values/states.
 
-This is what the method returns for a TwoState button:
+This is what the method returns for a TwoState navItem:
 
 ~~~js
-{type:"button", twoState:true, id:"check"}
+{type:"navItem", twoState:true, id:"check"}
 ...
 toolbar.getState("check"); // -> true/false
 // or

@@ -8,11 +8,21 @@ title: autoload
 @signature: autoload?: string;
 
 @example: 
-var tree = new dhx.Tree("tree_container", {autoload: true});
+var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
+tree.data.load("/backend/autoload?id=tree");
 
 
 @template:	api_config
 @descr: 
+
+Here is an example of sending an HTTP GET request to the server using the Express library:
+
+~~~js
+app.get("/backend/autoload", (req, res) => {
+    const currentData = treeData.filter(i => i.parent === req.query.id);
+    return res.send(currentData);
+})
+~~~
 
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
