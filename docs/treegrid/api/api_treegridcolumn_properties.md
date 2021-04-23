@@ -46,8 +46,6 @@ title: TreeGrid column properties
 			<td>(<i>array</i>) an array of objects with footer rows configuration. Each footer object may include:
                 <ul>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__customization.html#stylingfootercells"><b>text</b></a> - (<i>string|number</i>) the text of a footer</li>
-                    <li><b>colspan</b> - (<i>number</i>) the number of columns in a colspan</li>
-                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan</li>
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a footer</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#headerfootercontent"><b>content</b></a> - (<i>string</i>) additional content of a footer, which can be:
                     <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
@@ -83,17 +81,23 @@ title: TreeGrid column properties
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#resizing"><b>resizable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column can be resized</td>
 		</tr>
-        <tr>
+           <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a column: "string"|"number"|"boolean"|"any"|"date"</td>
+			<td>(<i>string</i>) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:
+			<ul><li><i>"string" (by default)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li>
+			<li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li>
+			<li><i>"boolean"</i> - aligns data to the left side and applies the <i>"checkbox"</i> editor</li>
+			<li><i>"percent"</i> - aligns data to the left side and applies the <i>"input"</i> editor</li>
+			<li><i>"date"</i> - aligns data to the left side and applies the <i>"datePicker"</i> editor</li>
+			</ul></td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>dateFormat</b></td>
-			<td>(<i>string</i>) defines <a href="https://docs.dhtmlx.com/suite/calendar__api__calendar_dateformat_config.html">the format of dates</a> (type:"date")</td>
+		<tr>
+			<td class="webixdoc_links0"><a href="#formattingcolumns"><b>format</b></a></td>
+			<td>(<i>string</i>) defines the format for the content of the column's cells</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#columneditors"><b>editorType</b></a></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>options</b></td>
@@ -140,6 +144,15 @@ title: TreeGrid column properties
         <tr>
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a column, <i>true</i> by default</td>
+		</tr>
+        <tr>
+			<td class="webixdoc_links0"><a href="treegrid/customization.md#addingtemplatetotooltip"><b>tooltipTemplate</b></a></td>
+			<td>(<i>function</i>) returns a template for the content of the tooltip. Takes 3 parameters:
+            <ul>
+                <li><b>value</b> - (<i>any</i>) the value of a cell</li>
+                <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
+                <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
+            </ul></td>
 		</tr>
     </tbody>
 </table>

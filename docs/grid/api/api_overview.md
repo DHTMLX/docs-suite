@@ -46,110 +46,110 @@ title: Grid API overview
 
 | Name                                            | Description                                         |
 | ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_aftereditend_event.md)         | @getshort(grid/api/grid_aftereditend_event)         |
-| [](grid/api/grid_aftereditstart_event.md)       | @getshort(grid/api/grid_aftereditstart_event)       |
-| [](grid/api/grid_beforeeditend_event.md)        | @getshort(grid/api/grid_beforeeditend_event)        |
-| [](grid/api/grid_beforeeditstart_event.md)      | @getshort(grid/api/grid_beforeeditstart_event)      |
+| [](grid/api/grid_aftereditend_event.md)         | @getshort(grid/api/grid_aftereditend_event.md)         |
+| [](grid/api/grid_aftereditstart_event.md)       | @getshort(grid/api/grid_aftereditstart_event.md)       |
+| [](grid/api/grid_beforeeditend_event.md)        | @getshort(grid/api/grid_beforeeditend_event.md)        |
+| [](grid/api/grid_beforeeditstart_event.md)      | @getshort(grid/api/grid_beforeeditstart_event.md)      |
 
 
 ### Mouse
 
 | Name                                            | Description                                         |
 | ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event)            |
-| [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event)         |
-| [](grid/api/grid_cellmouseover_event.md)        | @getshort(grid/api/grid_cellmouseover_event)        |
-| [](grid/api/grid_cellrightclick_event.md)       | @getshort(grid/api/grid_cellrightclick_event)       |
-| [](grid/api/grid_footercellclick_event.md)      | @getshort(grid/api/grid_footercellclick_event)      |
-| [](grid/api/grid_footercelldblclick_event.md)   | @getshort(grid/api/grid_footercelldblclick_event)   |
-| [](grid/api/grid_footercellmousedown_event.md)  | @getshort(grid/api/grid_footercellmousedown_event)  |
-| [](grid/api/grid_footercellmouseover_event.md)  | @getshort(grid/api/grid_footercellmouseover_event)  |
-| [](grid/api/grid_footercellrightclick_event.md) | @getshort(grid/api/grid_footercellrightclick_event) |
-| [](grid/api/grid_headercellclick_event.md)      | @getshort(grid/api/grid_headercellclick_event)      |
-| [](grid/api/grid_headercelldblclick_event.md)   | @getshort(grid/api/grid_headercelldblclick_event)   |
-| [](grid/api/grid_headercellmousedown_event.md)  | @getshort(grid/api/grid_headercellmousedown_event)  |
-| [](grid/api/grid_headercellmouseover_event.md)  | @getshort(grid/api/grid_headercellmouseover_event)  |
-| [](grid/api/grid_headercellrightclick_event.md) | @getshort(grid/api/grid_headercellrightclick_event) |
+| [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event.md)            |
+| [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event.md)         |
+| [](grid/api/grid_cellmouseover_event.md)        | @getshort(grid/api/grid_cellmouseover_event.md)        |
+| [](grid/api/grid_cellrightclick_event.md)       | @getshort(grid/api/grid_cellrightclick_event.md)       |
+| [](grid/api/grid_footercellclick_event.md)      | @getshort(grid/api/grid_footercellclick_event.md)      |
+| [](grid/api/grid_footercelldblclick_event.md)   | @getshort(grid/api/grid_footercelldblclick_event.md)   |
+| [](grid/api/grid_footercellmousedown_event.md)  | @getshort(grid/api/grid_footercellmousedown_event.md)  |
+| [](grid/api/grid_footercellmouseover_event.md)  | @getshort(grid/api/grid_footercellmouseover_event.md)  |
+| [](grid/api/grid_footercellrightclick_event.md) | @getshort(grid/api/grid_footercellrightclick_event.md) |
+| [](grid/api/grid_headercellclick_event.md)      | @getshort(grid/api/grid_headercellclick_event.md)      |
+| [](grid/api/grid_headercelldblclick_event.md)   | @getshort(grid/api/grid_headercelldblclick_event.md)   |
+| [](grid/api/grid_headercellmousedown_event.md)  | @getshort(grid/api/grid_headercellmousedown_event.md)  |
+| [](grid/api/grid_headercellmouseover_event.md)  | @getshort(grid/api/grid_headercellmouseover_event.md)  |
+| [](grid/api/grid_headercellrightclick_event.md) | @getshort(grid/api/grid_headercellrightclick_event.md) |
 
 ### Key Navigation and Scroll
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_afterkeydown_event.md)         | @getshort(grid/api/grid_afterkeydown_event)         |
-| [](grid/api/grid_beforekeydown_event.md)        | @getshort(grid/api/grid_beforekeydown_event)        |
-| [](grid/api/grid_scroll_event.md)               | @getshort(grid/api/grid_scroll_event)               |
+| Name                                     | Description                                     |
+|------------------------------------------|-------------------------------------------------|
+| [](grid/api/grid_afterkeydown_event.md)  | @getshort(grid/api/grid_afterkeydown_event.md)  |
+| [](grid/api/grid_beforekeydown_event.md) | @getshort(grid/api/grid_beforekeydown_event.md) |
+| [](grid/api/grid_scroll_event.md)        | @getshort(grid/api/grid_scroll_event.md)        |
 
 
 ### Sort and Filter
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_filterchange_event.md)         | @getshort(grid/api/grid_filterchange_event)         |
-todotw
-add from v7.1
+| Name                                    | Description                                    |
+|-----------------------------------------|------------------------------------------------|
+| [](grid/api/grid_filterchange_event.md) | @getshort(grid/api/grid_filterchange_event.md) |
+
 
 ### Column Drag and Drop
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_aftercolumndrag_event.md)      | @getshort(grid/api/grid_aftercolumndrag_event)      |
-| [](grid/api/grid_aftercolumndrop_event.md)      | @getshort(grid/api/grid_aftercolumndrop_event)      |
-| [](grid/api/grid_beforecolumndrag_event.md)     | @getshort(grid/api/grid_beforecolumndrag_event)     |
-| [](grid/api/grid_beforecolumndrop_event.md)     | @getshort(grid/api/grid_beforecolumndrop_event)     |
-| [](grid/api/grid_cancelcolumndrop_event.md)     | @getshort(grid/api/grid_cancelcolumndrop_event)     |
-| [](grid/api/grid_cancolumndrop_event.md)        | @getshort(grid/api/grid_cancolumndrop_event)        |
-| [](grid/api/grid_dragcolumnin_event.md)         | @getshort(grid/api/grid_dragcolumnin_event)         |
-| [](grid/api/grid_dragcolumnout_event.md)        | @getshort(grid/api/grid_dragcolumnout_event)        |
-| [](grid/api/grid_dragcolumnstart_event.md)      | @getshort(grid/api/grid_dragcolumnstart_event)      |
+| Name                                        | Description                                        |
+|---------------------------------------------|----------------------------------------------------|
+| [](grid/api/grid_aftercolumndrag_event.md)  | @getshort(grid/api/grid_aftercolumndrag_event.md)  |
+| [](grid/api/grid_aftercolumndrop_event.md)  | @getshort(grid/api/grid_aftercolumndrop_event.md)  |
+| [](grid/api/grid_beforecolumndrag_event.md) | @getshort(grid/api/grid_beforecolumndrag_event.md) |
+| [](grid/api/grid_beforecolumndrop_event.md) | @getshort(grid/api/grid_beforecolumndrop_event.md) |
+| [](grid/api/grid_cancelcolumndrop_event.md) | @getshort(grid/api/grid_cancelcolumndrop_event.md) |
+| [](grid/api/grid_cancolumndrop_event.md)    | @getshort(grid/api/grid_cancolumndrop_event.md)    |
+| [](grid/api/grid_dragcolumnin_event.md)     | @getshort(grid/api/grid_dragcolumnin_event.md)     |
+| [](grid/api/grid_dragcolumnout_event.md)    | @getshort(grid/api/grid_dragcolumnout_event.md)    |
+| [](grid/api/grid_dragcolumnstart_event.md)  | @getshort(grid/api/grid_dragcolumnstart_event.md   |
 
 ### Column Hide and Show
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_aftercolumnhide_event.md)      | @getshort(grid/api/grid_aftercolumnhide_event)      |
-| [](grid/api/grid_aftercolumnshow_event.md)      | @getshort(grid/api/grid_aftercolumnshow_event)      |
-| [](grid/api/grid_beforecolumnhide_event.md)     | @getshort(grid/api/grid_beforecolumnhide_event)     |
-| [](grid/api/grid_beforecolumnshow_event.md)     | @getshort(grid/api/grid_beforecolumnshow_event)     |
+| Name                                        | Description                                        |
+|---------------------------------------------|----------------------------------------------------|
+| [](grid/api/grid_aftercolumnhide_event.md)  | @getshort(grid/api/grid_aftercolumnhide_event.md)  |
+| [](grid/api/grid_aftercolumnshow_event.md)  | @getshort(grid/api/grid_aftercolumnshow_event.md)  |
+| [](grid/api/grid_beforecolumnhide_event.md) | @getshort(grid/api/grid_beforecolumnhide_event.md) |
+| [](grid/api/grid_beforecolumnshow_event.md) | @getshort(grid/api/grid_beforecolumnshow_event.md) |
 
 ### Column Resize
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_afterresizeend_event.md)       | @getshort(grid/api/grid_afterresizeend_event)       |
-| [](grid/api/grid_beforeresizestart_event.md)    | @getshort(grid/api/grid_beforeresizestart_event)    |
-| [](grid/api/grid_resize_event.md)               | @getshort(grid/api/grid_resize_event)               |
+| Name                                         | Description                                         |
+|----------------------------------------------|-----------------------------------------------------|
+| [](grid/api/grid_afterresizeend_event.md)    | @getshort(grid/api/grid_afterresizeend_event.md)    |
+| [](grid/api/grid_beforeresizestart_event.md) | @getshort(grid/api/grid_beforeresizestart_event.md) |
+| [](grid/api/grid_resize_event.md)            | @getshort(grid/api/grid_resize_event.md)            |
 
 
 ### Row Drag and Drop
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_afterrowdrag_event.md)         | @getshort(grid/api/grid_afterrowdrag_event)         |
-| [](grid/api/grid_afterrowdrop_event.md)         | @getshort(grid/api/grid_afterrowdrop_event)         |
-| [](grid/api/grid_beforerowdrag_event.md)        | @getshort(grid/api/grid_beforerowdrag_event)        |
-| [](grid/api/grid_beforerowdrop_event.md)        | @getshort(grid/api/grid_beforerowdrop_event)        |
-| [](grid/api/grid_cancelrowdrop_event.md)        | @getshort(grid/api/grid_cancelrowdrop_event)        |
-| [](grid/api/grid_canrowdrop_event.md)           | @getshort(grid/api/grid_canrowdrop_event)           |
-| [](grid/api/grid_dragrowin_event.md)            | @getshort(grid/api/grid_dragrowin_event)            |
-| [](grid/api/grid_dragrowout_event.md)           | @getshort(grid/api/grid_dragrowout_event)           |
-| [](grid/api/grid_dragrowstart_event.md)         | @getshort(grid/api/grid_dragrowstart_event)         |
+| Name                                     | Description                                       |
+|------------------------------------------|---------------------------------------------------|
+| [](grid/api/grid_afterrowdrag_event.md)  | @getshort(grid/api/grid_afterrowdrag_event)       |
+| [](grid/api/grid_afterrowdrop_event.md)  | @getshort(grid/api/grid_afterrowdrop_event)       |
+| [](grid/api/grid_beforerowdrag_event.md) | @getshort(grid/api/grid_beforerowdrag_event.md)   |
+| [](grid/api/grid_beforerowdrop_event.md) | @getshort(grid/api/grid_beforerowdrop_event.md)   |
+| [](grid/api/grid_cancelrowdrop_event.md) | @getshort(grid/api/grid_cancelrowdrop_event.md)   |
+| [](grid/api/grid_canrowdrop_event.md)    | @getshort(grid/api/grid_canrowdrop_event.md)      |
+| [](grid/api/grid_dragrowin_event.md)     | @getshort(grid/api/grid_dragrowin_event.md)       |
+| [](grid/api/grid_dragrowout_event.md)    | @getshort(grid/api/grid_dragrowout_event.md)      |
+| [](grid/api/grid_dragrowstart_event.md)  | @getshort(grid/api/grid_dragrowstart_event.md.md) |
 
 ### Row Hide and Show
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_afterrowhide_event.md)         | @getshort(grid/api/grid_afterrowhide_event)         |
-| [](grid/api/grid_afterrowshow_event.md)         | @getshort(grid/api/grid_afterrowshow_event)         |
-| [](grid/api/grid_beforerowhide_event.md)        | @getshort(grid/api/grid_beforerowhide_event)        |
-| [](grid/api/grid_beforerowshow_event.md)        | @getshort(grid/api/grid_beforerowshow_event)        |
+| Name                                     | Description                                     |
+|------------------------------------------|-------------------------------------------------|
+| [](grid/api/grid_afterrowhide_event.md)  | @getshort(grid/api/grid_afterrowhide_event.md)  |
+| [](grid/api/grid_afterrowshow_event.md)  | @getshort(grid/api/grid_afterrowshow_event.md)  |
+| [](grid/api/grid_beforerowhide_event.md) | @getshort(grid/api/grid_beforerowhide_event.md) |
+| [](grid/api/grid_beforerowshow_event.md) | @getshort(grid/api/grid_beforerowshow_event.md) |
 
 
 ### Row Resize
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-todotw
-add from v7.1
+| Name                                       | Description                                       |
+|--------------------------------------------|---------------------------------------------------|
+| [](grid/api/grid_afterrowresize_event.md)  | @getshort(grid/api/grid_afterrowresize_event.md)  |
+| [](grid/api/grid_beforerowresize_event.md) | @getshort(grid/api/grid_beforerowresize_event.md) |
+
 
 
 
@@ -160,34 +160,36 @@ add from v7.1
 
 ## Grid properties
 
-| Name                                         | Description                                      |
-| -------------------------------------------- | ------------------------------------------------ |
-| [](grid/api/grid_adjust_config.md)           | @getshort(grid/api/grid_adjust_config)           |
-| [](grid/api/grid_autoemptyrow_config.md)     | @getshort(grid/api/grid_autoemptyrow_config)     |
-| [](grid/api/grid_autowidth_config.md)        | @getshort(grid/api/grid_autowidth_config)        |
-| [](grid/api/grid_columns_config.md)          | @getshort(grid/api/grid_columns_config)          |
-| [](grid/api/grid_css_config.md)              | @getshort(grid/api/grid_css_config)              |
-| [](grid/api/grid_data_config.md)             | @getshort(grid/api/grid_data_config)             |
-| [](grid/api/grid_dragcopy_config.md)         | @getshort(grid/api/grid_dragcopy_config)         |
-| [](grid/api/grid_dragitem_config.md)         | @getshort(grid/api/grid_dragitem_config)         |
-| [](grid/api/grid_dragmode_config.md)         | @getshort(grid/api/grid_dragmode_config)         |
-| [](grid/api/grid_editable_config.md)         | @getshort(grid/api/grid_editable_config)         |
-| [](grid/api/grid_eventhandlers_config.md)    | @getshort(grid/api/grid_eventhandlers_config)    |
-| [](grid/api/grid_footerrowheight_config.md)  | @getshort(grid/api/grid_footerrowheight_config)  |
-| [](grid/api/grid_headerrowheight_config.md)  | @getshort(grid/api/grid_headerrowheight_config)  |
-| [](grid/api/grid_height_config.md)           | @getshort(grid/api/grid_height_config)           |
-| [](grid/api/grid_htmlenable_config.md)       | @getshort(grid/api/grid_htmlenable_config)       |
-| [](grid/api/grid_keynavigation_config.md)    | @getshort(grid/api/grid_keynavigation_config)    |
-| [](grid/api/grid_leftsplit_config.md)        | @getshort(grid/api/grid_leftsplit_config)        |
-| [](grid/api/grid_multiselection_config.md)   | @getshort(grid/api/grid_multiselection_config)   |
-| [](grid/api/grid_resizable_config.md)        | @getshort(grid/api/grid_resizable_config)        |
-| [](grid/api/grid_rowcss_config.md)           | @getshort(grid/api/grid_rowcss_config)           |
-| [](grid/api/grid_rowheight_config.md)        | @getshort(grid/api/grid_rowheight_config)        |
-| [](grid/api/grid_selection_config.md)        | @getshort(grid/api/grid_selection_config)        |
-| [](grid/api/grid_sortable_config.md)         | @getshort(grid/api/grid_sortable_config)         |
-| [](grid/api/grid_spans_config.md)            | @getshort(grid/api/grid_spans_config)            |
-| [](grid/api/grid_tooltip_config.md)          | @getshort(grid/api/grid_tooltip_config)          |
-| [](grid/api/grid_width_config.md)            | @getshort(grid/api/grid_width_config)            |
+| Name                                        | Description                                        |
+|---------------------------------------------|----------------------------------------------------|
+| [](grid/api/grid_adjust_config.md)          | @getshort(grid/api/grid_adjust_config.md)          |
+| [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
+| [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
+| [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
+| [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
+| [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
+| [](grid/api/grid_css_config.md)             | @getshort(grid/api/grid_css_config.md)             |
+| [](grid/api/grid_data_config.md)            | @getshort(grid/api/grid_data_config.md)            |
+| [](grid/api/grid_dragcopy_config.md)        | @getshort(grid/api/grid_dragcopy_config.md)        |
+| [](grid/api/grid_dragitem_config.md)        | @getshort(grid/api/grid_dragitem_config.md)        |
+| [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
+| [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
+| [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
+| [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
+| [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
+| [](grid/api/grid_height_config.md)          | @getshort(grid/api/grid_height_config.md)          |
+| [](grid/api/grid_htmlenable_config.md)      | @getshort(grid/api/grid_htmlenable_config.md)      |
+| [](grid/api/grid_keynavigation_config.md)   | @getshort(grid/api/grid_keynavigation_config.md)   |
+| [](grid/api/grid_leftsplit_config.md)       | @getshort(grid/api/grid_leftsplit_config.md)       |
+| [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
+| [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
+| [](grid/api/grid_rowcss_config.md)          | @getshort(grid/api/grid_rowcss_config.md)          |
+| [](grid/api/grid_rowheight_config.md)       | @getshort(grid/api/grid_rowheight_config.md)       |
+| [](grid/api/grid_selection_config.md)       | @getshort(grid/api/grid_selection_config.md)       |
+| [](grid/api/grid_sortable_config.md)        | @getshort(grid/api/grid_sortable_config.md)        |
+| [](grid/api/grid_spans_config.md)           | @getshort(grid/api/grid_spans_config.md)           |
+| [](grid/api/grid_tooltip_config.md)         | @getshort(grid/api/grid_tooltip_config.md)         |
+| [](grid/api/grid_width_config.md)           | @getshort(grid/api/grid_width_config.md)           |
 
 ## Column properties
 
@@ -197,22 +199,22 @@ You will find the list of all the available configuration properties of a Grid c
 
 ### Selection methods
 
-| Name                                                  | Description                                               |
-|-------------------------------------------------------|-----------------------------------------------------------|
-| [](grid/api/selection/selection_disable_method.md)    | @getshort(grid/api/selection/selection_disable_method)    |
-| [](grid/api/selection/selection_enable_method.md)     | @getshort(grid/api/selection/selection_enable_method)     |
-| [](grid/api/selection/selection_getcell_method.md)    | @getshort(grid/api/selection/selection_getcell_method)    |
-| [](grid/api/selection/selection_getcells_method.md)   | @getshort(grid/api/selection/selection_getcells_method)   |
-| [](grid/api/selection/selection_removecell_method.md) | @getshort(grid/api/selection/selection_removecell_method) |
-| [](grid/api/selection/selection_setcell_method.md)    | @getshort(grid/api/selection/selection_setcell_method)    |
+| Name                                                  | Description                                                  |
+|-------------------------------------------------------|--------------------------------------------------------------|
+| [](grid/api/selection/selection_disable_method.md)    | @getshort(grid/api/selection/selection_disable_method.md)    |
+| [](grid/api/selection/selection_enable_method.md)     | @getshort(grid/api/selection/selection_enable_method.md)     |
+| [](grid/api/selection/selection_getcell_method.md)    | @getshort(grid/api/selection/selection_getcell_method.md)    |
+| [](grid/api/selection/selection_getcells_method.md)   | @getshort(grid/api/selection/selection_getcells_method.md)   |
+| [](grid/api/selection/selection_removecell_method.md) | @getshort(grid/api/selection/selection_removecell_method.md) |
+| [](grid/api/selection/selection_setcell_method.md)    | @getshort(grid/api/selection/selection_setcell_method.md)    |
 
 
 
 ### Selection events
 
-| Name                                                     | Description                                                  |
-|----------------------------------------------------------|--------------------------------------------------------------|
-| [](grid/api/selection/selection_afterselect_event.md)    | @getshort(grid/api/selection/selection_afterselect_event)    |
-| [](grid/api/selection/selection_afterunselect_event.md)  | @getshort(grid/api/selection/selection_afterunselect_event)  |
-| [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event)   |
-| [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event) |
+| Name                                                     | Description                                                     |
+|----------------------------------------------------------|-----------------------------------------------------------------|
+| [](grid/api/selection/selection_afterselect_event.md)    | @getshort(grid/api/selection/selection_afterselect_event.md)    |
+| [](grid/api/selection/selection_afterunselect_event.md)  | @getshort(grid/api/selection/selection_afterunselect_event.md)  |
+| [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event.md)   |
+| [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event.md) |

@@ -99,6 +99,25 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
+Autoheight for columns
+-------------------------
+
+Starting from v7.1, you can set the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) option in the configuration of TreeGrid to make long text to split into multiple lines automatically based on the width of the column:
+
+~~~js
+var treegrid = new dhx.TreeGrid("treegrid_container", {
+	columns: [// columns config],
+	autoHeight: true,  /*!*/
+	data: dataset
+});
+~~~
+
+{{editor	https://snippet.dhtmlx.com/4158ftak	TreeGrid. Auto height}}
+
+As a result, the height of the cells will automatically adjust to their content.
+
+Note, that the **autoHeight** option does not adjust the height in the cells of the header/footer of TreeGrid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](treegrid/api/treegrid_headerrowheight_config.md) and [](treegrid/api/treegrid_footerrowheight_config.md) configuration options of TreeGrid.
+
 Autowidth for columns
 --------------------
 
@@ -288,7 +307,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 - **datePicker** - an editor for cells with dates (default for a column with **type:"date"**)
 
 To use this editor, you should specify the **type:"date"** property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content 
-with the help of the **dateFormat** option.
+with the help of the **format** option.
 
 ~~~js
 { 
@@ -296,7 +315,7 @@ with the help of the **dateFormat** option.
     // there's no need to specify the type of the editor
 	width: 150, id: "start_date", 
     header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
-    type: "date", dateFormat: "%d/%m/%Y"  /*!*/
+    type: "date", format: "%d/%m/%Y"  /*!*/
 }
 ~~~
 
@@ -344,6 +363,81 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 ~~~
 
 {{editor	https://snippet.dhtmlx.com/sdbfbv2n	TreeGrid. Editable Data}}
+
+- **textarea** - an editor for cells that contain text
+
+To use this editor, you should specify the **editorType:"textarea"** property for a column.
+
+The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid is enabled.
+
+~~~js
+var treegrid = new dhx.TreeGrid("treegrid", {
+	columns: [
+		{
+			id: "name", header: [{ text: "Book Name" }], gravity: 1.5, 
+			editorType: "textarea" /*!*/
+		}
+    // more columns
+	],
+	data: data,
+	editable: true,
+	autoHeight: true /*!*/
+});
+~~~
+
+Formatting columns
+------------------
+
+Starting from v7.1, you can display the values of the cells of a TreeGrid column in the desired format:
+
+1\. To define the format for numeric values, apply the **format** configuration option of the column:
+
+~~~js
+{ 
+	width: 150, id: "price", header: [{ text: "Price" }],  
+	type: "number", format: "# #.000" /*!*/
+}
+// -> 4564.2 will be displayed as 4 564.200
+~~~
+
+The following characters can be used:
+
+- **#** - the integer part of the number
+- **0** - the fractional part of the number. The **0** placeholder displays insignificant zeros if a number has fewer digits than there are zeros in the format string, for instance, the **.00** format will display 0.298 as 0.30. <br>If a number has more digits to the right of the decimal point than there are placeholders in the format string, the number rounds to as many decimal places as there are placeholders, for instance, the **.000** format will display 0.2 as 0.200.
+- **# #** - sets the thousands separator in a number (123 456)
+- **#.0** - sets the separator for the decimal point in a number (123 456.357)
+
+2\. You can display the percentage value in the necessary format by setting the **type: "percent"** configuration option of a column together with the **format** option:
+
+~~~
+{ 
+	width: 150, id: "inStock", header: [{ text: "In stock" }], 
+	type: "percent", format: "#.00" /*!*/
+}
+// -> 0.0039 will be displayed as 0.39%
+~~~
+
+When using just the **type: "percent"** configuration option of a column, the result will be the following:
+
+~~~js
+{ 
+	width: 150, id: "inStock", header: [{ text: "In stock" }], 
+	type: "percent" /*!*/
+}
+// -> 0.0039 will be displayed as 0%
+~~~
+
+3\. To define the format for dates, set the **type: "date"** property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the **format** option:
+
+~~~js
+{ 
+	width: 150, id: "start_date", 
+    header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
+    type: "date", format: "%d/%m/%Y"  /*!*/
+}
+~~~
+
+{{editor https://snippet.dhtmlx.com/ampo9hsc	TreeGrid. Data formats}}
 
 Frozen columns
 ---------------
@@ -640,6 +734,36 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 {{editor	https://snippet.dhtmlx.com/xl0i3yof	TreeGrid. Rows Height}}
+
+In this case, the height of each row is 30.
+
+### Setting height for a separate row
+
+Starting with v7.1, it is possible to specify the height for the necessary row of data in TreeGrid via setting the number value to the **height** option when defining the [data set](treegrid/api/treegrid_data_config.md): 
+
+~~~js
+var dataset = [
+	{
+    	"name": "Argentina",
+        "native": "Argentina",
+        "phone": "54",
+        "continent": "SA",
+		"capital": "Buenos Aires",
+		"height": 70 /*!*/
+    },
+    {
+        "name": "American Samoa",
+        "native": "American Samoa",
+        "phone": "1684",
+        "continent": "OC",
+        "capital": "Pago Pago"
+    }
+];
+~~~
+
+{{editor	https://snippet.dhtmlx.com/kvl5y6nq	TreeGrid. Row height}}
+
+{{note The **height** option has a higher priority than the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid.}}
 
 Row style
 ------------

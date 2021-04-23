@@ -368,7 +368,7 @@ var grid = new dhx.Grid("grid", {
 
 {{editor    https://snippet.dhtmlx.com/9txizaow	Grid. Cell Templates}}
 
-<h3 id="eventhandling">Event handlers for the template</h3>
+### Event handlers for the template
 
 Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells via using the [](grid/api/grid_eventhandlers_config.md) configuration property of Grid, for instance:
 
@@ -419,3 +419,56 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
+
+Adding template to tooltip
+---------------------
+
+![](../assets/grid/tooltip_template.png)
+
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/configuration.md#columns) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
+
+<table class="webixdoc_links">
+	<tbody>
+        <tr>
+			<td class="webixdoc_links0"><b>value</b></td>
+			<td>(<i>any</i>) the value of a cell</td>
+		</tr>
+		<tr>
+			<td class="webixdoc_links0"><b>row</b></td>
+			<td>(<i>object</i>) an object with all cells in a row</td>
+		</tr>
+		<tr>
+			<td class="webixdoc_links0"><b>col</b></td>
+			<td>(<i>object</i>) the config of a column</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        {
+			width: 200, id: "country", header: [{ text: "Country" }], align: "left",
+			htmlEnable: true, /*!*/
+            tooltipTemplate: function (value, row, col) { /*!*/
+                return `<div class="custom-tooltip"> /*!*/
+                    <img src="../data/common/img/02/${row.avatar}.jpg" /> /*!*/
+                    <span>Last edit time:<br>${row.editing.toUTCString()}</span> /*!*/
+                </div>`; /*!*/
+            } /*!*/
+        },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+		// more options
+    ],
+    data: dataset
+});
+~~~
+
+{{editor	https://snippet.dhtmlx.com/md8tr3pr	Grid. Rich tooltip template for the first column}}
+
+{{editor	https://snippet.dhtmlx.com/954f7h9m	Grid. Tooltip template}}
+
+{{note You should enable the [htmlEnable](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.}}
+
