@@ -2519,16 +2519,16 @@ module.exports = {
                   ],
                 },
 
-                  {
-                    type: "category",
-                    label: "Events",
-                    items: [
-                      "tree/api/selection/selection_afterselect_event",
-                      "tree/api/selection/selection_afterunselect_event",
-                      "tree/api/selection/selection_beforeselect_event",
-                      "tree/api/selection/selection_beforeunselect_event",
-                    ],
-                  },
+                {
+                  type: "category",
+                  label: "Events",
+                  items: [
+                    "tree/api/selection/selection_afterselect_event",
+                    "tree/api/selection/selection_afterunselect_event",
+                    "tree/api/selection/selection_beforeselect_event",
+                    "tree/api/selection/selection_beforeunselect_event",
+                  ],
+                },
                 ],
               },
             ],
