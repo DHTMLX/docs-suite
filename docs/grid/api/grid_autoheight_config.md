@@ -4,8 +4,7 @@ title: autoHeight
 ---
 
 
-@short: 
-makes long text to split into multiple lines based on the width of the column
+@short: makes long text to split into multiple lines based on the width of the column
 
 
 @default: false

@@ -84,6 +84,8 @@ title: Grid API overview
 
 | Name                                    | Description                                    |
 |-----------------------------------------|------------------------------------------------|
+| [](grid/api/grid_aftersort_event.md)    | @getshort(grid/api/grid_aftersort_event.md)    |
+| [](grid/api/grid_beforesort_event.md)   | @getshort(grid/api/grid_beforesort_event.md)   |
 | [](grid/api/grid_filterchange_event.md) | @getshort(grid/api/grid_filterchange_event.md) |
 
 
