@@ -24,12 +24,7 @@ tree.selection.disable();
 [Tree. Disable/Enable selection](https://snippet.dhtmlx.com/g6cmggqt)
 
 
-See the list of events that you can apply while working with selection of items [here]
-todotw возможно отправлять на страницу со списком апи
-- tree/api/selection/selection_afterselect_event.md
-- tree/api/selection/selection_afterunselect_event.md
-- tree/api/selection/selection_beforeselect_event.md
-- tree/api/selection/selection_beforeunselect_event.md
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
 
 Selecting an item
 ----------------------

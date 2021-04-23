@@ -48,11 +48,11 @@ var value = form.getItem("timepicker").getValue();
 
 ### Methods:
 
-Check [the full list of methods of the Timepicker control](form/api/api_overview.md#methods-15).
+Check [the full list of methods of the Timepicker control](form/api/api_overview.md#timepicker-methods).
 
 ### Events:
 
-Check [the full list of events of the Timepicker control](form/api/api_overview.md#events-15).
+Check [the full list of events of the Timepicker control](form/api/api_overview.md#timepicker-events).
 
 ### Working with the dhtmlxTimePicker widget
 

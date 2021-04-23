@@ -45,10 +45,10 @@ form.getItem("button").disable();
 
 ### Methods
 
-Check [the full list of methods of the Button control](form/api/api_overview.md#methods-1).
+Check [the full list of methods of the Button control](form/api/api_overview.md#button-methods).
 
 
 ### Events
 
-Check [the full list of events of the Button control](form/api/api_overview.md#events-1)
+Check [the full list of events of the Button control](form/api/api_overview.md#button-events)
 

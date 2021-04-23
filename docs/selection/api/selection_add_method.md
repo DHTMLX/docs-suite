@@ -24,3 +24,5 @@ Starting from v7.0, the method selects all unselected items when calling without
 ~~~js
 list.selection.add();
 ~~~
+
+{{note The method can be applied to the DataView, List, Tree components. }}

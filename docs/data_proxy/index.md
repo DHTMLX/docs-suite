@@ -15,7 +15,7 @@ var proxy = new dhx.DataProxy("someUrl", {
 The `dhx.DataProxy` helper takes two parameters:
 
 - **url** - (string) ordinary, the external URL
-- **arams** - (object) optional, a set of custom parameters to be sent to the server with a request
+- **params** - (object) optional, a set of custom parameters to be sent to the server with a request
 
 For example, you can apply it either to DataCollection:
 

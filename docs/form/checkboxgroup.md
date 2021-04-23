@@ -70,8 +70,8 @@ var value = form.getItem("CheckboxGroup").hide();
 
 ### Methods 
 
-Check [the full list of methods of the CheckboxGroup control](form/api/api_overview.md#methods-4).
+Check [the full list of methods of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-methods).
 
 ### Events 
 
-Check [the full list of events of the CheckboxGroup control](form/api/api_overview.md#events-4).
+Check [the full list of events of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-events).

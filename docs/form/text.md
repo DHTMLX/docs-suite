@@ -42,9 +42,9 @@ var value = form.getItem("text").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Text control](form/api/api_overview.md#methods-13).
+Check [the full list of methods of the Text control](form/api/api_overview.md#text-methods).
 
 
 ### Events
 
-Check [the full list of events of the Text control](form/api/api_overview.md#events-13).
+Check [the full list of events of the Text control](form/api/api_overview.md#text-events).

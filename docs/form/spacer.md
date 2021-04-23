@@ -46,8 +46,8 @@ var value = form.getItem("spacer").hide();
 
 ### Methods
 
-Check [the full list of methods of the Spacer control](form/api/api_overview.md#methods-12).
+Check [the full list of methods of the Spacer control](form/api/api_overview.md#spacer-methods).
 
 ### Events
 
-Check [the full list of events of the Spacer control](form/api/api_overview.md#events-12).
+Check [the full list of events of the Spacer control](form/api/api_overview.md#spacer-events).
