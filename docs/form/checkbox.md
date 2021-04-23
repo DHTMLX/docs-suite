@@ -45,8 +45,8 @@ var value = form.getItem("checkbox").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Checkbox control](form/api/api_overview.md#methods-3).
+Check [the full list of methods of the Checkbox control](form/api/api_overview.md#checkbox-methods).
 
 ### Events
 
-Check [the full list of events of the Checkbox control](form/api/api_overview.md#events-3).
+Check [the full list of events of the Checkbox control](form/api/api_overview.md#checkbox-events).

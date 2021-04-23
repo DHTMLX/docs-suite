@@ -49,11 +49,11 @@ var value = form.getItem("datepicker").getValue(true);
 
 ### Methods
 
-Check [the full list of methods of the Datepicker control](form/api/api_overview.md#methods-2).
+Check [the full list of methods of the Datepicker control](form/api/api_overview.md#datepicker-methods).
 
 ### Events
 
-Check [the full list of events of the Datepicker control](form/api/api_overview.md#events-2).
+Check [the full list of events of the Datepicker control](form/api/api_overview.md#datepicker-events).
 
 ## Working with the dhtmlxCalendar widget
 

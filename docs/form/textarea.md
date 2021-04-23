@@ -46,9 +46,9 @@ var value = form.getItem("textarea").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Textarea control](form/api/api_overview.md#methods-14).
+Check [the full list of methods of the Textarea control](form/api/api_overview.md#textarea-methods).
 
 
 ### Events
 
-Check [the full list of events of the Textarea control](form/api/api_overview.md#events-14).
+Check [the full list of events of the Textarea control](form/api/api_overview.md#textarea-events).
