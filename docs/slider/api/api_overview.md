@@ -14,6 +14,7 @@ title: Slider API overview
 | [](slider/api/slider_isdisabled_method.md) | @getshoer(slider/api/slider_isdisabled_method.md) |
 | [](slider/api/slider_paint_method.md)      | @getshoer(slider/api/slider_paint_method.md)      |
 | [](slider/api/slider_setvalue_method.md)   | @getshoer(slider/api/slider_setvalue_method.md)   |
+| [](slider_blur_method.md)                  | @getshort(slider_blur_method.md)                  |
 
 ## Events
 
@@ -22,6 +23,9 @@ title: Slider API overview
 | [](slider/api/slider_change_event.md)    | @getshort(slider/api/slider_change_event.md)    |
 | [](slider/api/slider_mousedown_event.md) | @getshort(slider/api/slider_mousedown_event.md) |
 | [](slider/api/slider_mouseup_event.md)   | @getshort(slider/api/slider_mouseup_event.md)   |
+| [](slider_blur_event.md)                 | @getshort(slider_blur_event.md)                 |
+| [](slider_focus_event.md)                | @getshort(slider_focus_event.md)                |
+| [](slider_keydown_event.md)              | @getshort(slider_keydown_event.md)              |
 
 ## Properties
 

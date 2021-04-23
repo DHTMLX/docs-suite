@@ -317,10 +317,12 @@ module.exports = {
                 type: "category",
                 label: "Methods",
                 items: [
+                  "combobox/api/combobox_blur_method",
                   "combobox/api/combobox_clear_method",
                   "combobox/api/combobox_destructor_method",
                   "combobox/api/combobox_disable_method",
                   "combobox/api/combobox_enable_method",
+                  "combobox/api/combobox_focus_method",
                   "combobox/api/combobox_getvalue_method",
                   "combobox/api/combobox_isdisabled_method",
                   "combobox/api/combobox_paint_method",
@@ -335,8 +337,11 @@ module.exports = {
                 items: [
                   "combobox/api/combobox_afterclose_event",
                   "combobox/api/combobox_beforeclose_event",
+                  "combobox/api/combobox_blur_event",
                   "combobox/api/combobox_change_event",
+                  "combobox/api/combobox_focus_event",
                   "combobox/api/combobox_input_event",
+                  "combobox/api/combobox_keydown_event",
                   "combobox/api/combobox_open_event",
                 ],
               },
@@ -2163,6 +2168,7 @@ module.exports = {
                 type: "category",
                 label: "Methods",
                 items: [
+                  "slider/api/slider_blur_method",
                   "slider/api/slider_destructor_method",
                   "slider/api/slider_disable_method",
                   "slider/api/slider_enable_method",
@@ -2176,7 +2182,10 @@ module.exports = {
                 type: "category",
                 label: "Events",
                 items: [
+                  "slider/api/slider_blur_event",
                   "slider/api/slider_change_event",
+                  "slider/api/slider_focus_event",
+                  "slider/api/slider_keydown_event",
                   "slider/api/slider_mousedown_event",
                   "slider/api/slider_mouseup_event",
                 ],
