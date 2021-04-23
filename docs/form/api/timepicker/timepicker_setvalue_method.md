@@ -2,15 +2,14 @@
 sidebar_label: setValue
 title: setValue
 description: description
----          
-
+---
 
 @short: sets the value for a TimePicker control
 
 @params:
-- value     Date|number|string|array|object    the value to be set for the control
 
-``` todo
+- value Date|number|string|array|object the value to be set for the control
+
 @example:
 // set the value as a string
 form.getItem("timepicker").setValue("10:30");
@@ -26,8 +25,6 @@ form.getItem("timepicker").setValue(1559288966422);
 
 // set the value as an object
 form.getItem("timepicker").setValue({hour: 10, minute: 50, AM: true});
-
-```
 
 @template: api_method
 @descr:
@@ -45,5 +42,5 @@ form.getItem("timepicker").setValue({hour: 10, minute: 50, AM: true});
 3\. The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 method of the **Date** object.
 
-@changelog: 
+@changelog:
 The ability to set the value as a number, as an array, or as an object is added in v7.0.

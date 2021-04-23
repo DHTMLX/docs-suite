@@ -2,24 +2,23 @@
 sidebar_label: setProperties
 title: setProperties
 description: description
----          
+---
 
-
-
-@short: allows changing available configuration attributes of Form controls dynamically  
+@short: allows changing available configuration attributes of Form controls dynamically
 
 @params:
-- arg	string,object      either the name of the control or its id (if the name attribute is not defined in the config of the control), or an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
-- properties	    object      optional, an object with the available attributes of the control and their new values
+
+- arg string,object either the name of the control or its id (if the name attribute is not defined in the config of the control), or an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
+- properties object optional, an object with the available attributes of the control and their new values
 
 @example:
 form.setProperties("input_name", {
-    label: "new label",
-    css: "new-css",
-    padding: "20px",
-    height: 100,
-    maxlength:15,
-    readOnly:true
+label: "new label",
+css: "new-css",
+padding: "20px",
+height: 100,
+maxlength:15,
+readOnly:true
 });
 
 @template: api_method
@@ -32,48 +31,48 @@ Here are two ways of using the **setProperties** method:
 
 1\. To change values for the available attributes of a separate control you need to pass two parameters to the method:
 
-- **arg** - (*string*) the name of the control (or its id)
-- **properties** - (*object*) an object with available attributes of the control and their new values
+- **arg** - (_string_) the name of the control (or its id)
+- **properties** - (_object_) an object with available attributes of the control and their new values
 
 For instance:
 
-~~~js
+```js
 form.setProperties("input_name", {
+  label: "new label",
+  css: "new-css",
+  padding: "20px",
+  height: 100,
+  maxlength: 15,
+  readOnly: true,
+});
+```
+
+2\. You can also change values for the available properties of several controls at once. For that, you need to pass one parameter to the method:
+
+- **arg** - (_object_) an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
+
+For example:
+
+```js
+form.setProperties({
+  simplevault_name: {
+    label: "new label",
+    css: "new-css",
+    padding: 20,
+    required: true,
+  },
+  input_name: {
     label: "new label",
     css: "new-css",
     padding: "20px",
     height: 100,
-    maxlength:15,
-    readOnly:true
+    maxlength: 15,
+    readOnly: true,
+  },
 });
-~~~
+```
 
-2\. You can also change values for the available properties of several controls at once. For that, you need to pass one parameter to the method:
-
-- **arg** - (*object*) an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
-
-For example:
-
-~~~js
-form.setProperties({
-    "simplevault_name": {
-        label: "new label",
-        css: "new-css",
-        padding: 20,
-        required: true
-    },
-    "input_name": {
-        label: "new label",
-        css: "new-css",
-        padding: "20px",
-        height: 100,
-        maxlength:15,
-        readOnly:true
-    }
-});
-~~~
-
-## Button 
+## Button
 
 It is possible to change the following configuration attributes of the **Button** control:
 
@@ -138,7 +137,7 @@ It is possible to change the following configuration attributes of the **Button*
     </tbody>
 </table>
 
-## DatePicker 
+## DatePicker
 
 It is possible to change the following configuration attributes of the **DatePicker** control:
 
@@ -255,7 +254,7 @@ It is possible to change the following configuration attributes of the **DatePic
     </tbody>
 </table>
 
-## Checkbox 
+## Checkbox
 
 It is possible to change the following configuration attributes of the **Checkbox** control:
 
@@ -320,8 +319,7 @@ It is possible to change the following configuration attributes of the **Checkbo
     </tbody>
 </table>
 
-
-## CheckboxGroup 
+## CheckboxGroup
 
 It is possible to change the following configuration attributes of the **CheckboxGroup** control:
 
@@ -387,7 +385,6 @@ It is possible to change the following configuration attributes of the **Checkbo
     </tbody>
 </table>
 
-
 ### Checkbox properties
 
 <table class="webixdoc_links">
@@ -415,7 +412,7 @@ It is possible to change the following configuration attributes of the **Checkbo
 	</tbody>
 </table>
 
-## ColorPicker 
+## ColorPicker
 
 It is possible to change the following configuration attributes of the **ColorPicker** control:
 
@@ -508,7 +505,7 @@ It is possible to change the following configuration attributes of the **ColorPi
     </tbody>
 </table>
 
-## Combo 
+## Combo
 
 It is possible to change the following configuration attributes of the **Combo** control:
 
@@ -613,8 +610,7 @@ It is possible to change the following configuration attributes of the **Combo**
     </tbody>
 </table>
 
-
-## Input 
+## Input
 
 It is possible to change the following configuration attributes of the **Input** control:
 
@@ -665,19 +661,19 @@ It is possible to change the following configuration attributes of the **Input**
 			<td class="webixdoc_links0"><b>css</b></td>
 			<td>(<i>string</i>) adds style classes to a control</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>required</b></td>
 			<td>(<i>boolean</i>) defines whether a control is required</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>readOnly</b></td>
 			<td>(<i>boolean</i>) defines whether an input is readonly</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
 			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
 			<td>(<i>string</i>) a tip for the input</td>
 		</tr>
@@ -685,7 +681,7 @@ It is possible to change the following configuration attributes of the **Input**
 			<td class="webixdoc_links0"><b>autocomplete</b></td>
 			<td>(<i>boolean</i>) enables/disables the autocomplete functionality of the input</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>label</b></td>
 			<td>(<i>string</i>) specifies a label for a control</td>
 		</tr>
@@ -693,11 +689,11 @@ It is possible to change the following configuration attributes of the **Input**
 			<td class="webixdoc_links0"><b>labelWidth</b></td>
 			<td>(<i>string|number</i>) sets the width of the label of a control</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>hiddenLabel</b></td>
 			<td>(<i>boolean</i>) invisible label that will be used to identify the input on the server side</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>labelPosition</b></td>
 			<td>(<i>string</i>) defines the position of a label: "left"|"top"</td>
 		</tr>
@@ -705,23 +701,22 @@ It is possible to change the following configuration attributes of the **Input**
 			<td class="webixdoc_links0"><b>helpMessage</b></td>
 			<td>(<i>string</i>) adds a help message to a control</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>preMessage</b></td>
 			<td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>successMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
 		</tr>
-        <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>errorMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
 		</tr>
     </tbody>
 </table>
 
-
-## RadioGroup 
+## RadioGroup
 
 It is possible to change the following configuration attributes of the **RadioGroup** control:
 
@@ -813,7 +808,7 @@ It is possible to change the following configuration attributes of the **RadioGr
     </tbody>
 </table>
 
-## Select 
+## Select
 
 It is possible to change the following configuration attributes of the **Select** control:
 
@@ -878,14 +873,12 @@ It is possible to change the following configuration attributes of the **Select*
     </tbody>
 </table>
 
-
-## SimpleVault 
+## SimpleVault
 
 It is possible to change the following configuration attributes of the **SimpleVault** control:
-``` todo
+
 <table class="webixdoc_links">
 	<tbody>
-		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
@@ -957,8 +950,7 @@ It is possible to change the following configuration attributes of the **SimpleV
   </tbody>
 </table>
 
-
-## Slider 
+## Slider
 
 It is possible to change the following configuration attributes of the **Slider** control:
 
@@ -972,7 +964,7 @@ It is possible to change the following configuration attributes of the **Slider*
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Slider control</td>
 		</tr>	
@@ -1043,8 +1035,7 @@ It is possible to change the following configuration attributes of the **Slider*
   </tbody>
 </table>
 
-
-## Spacer 
+## Spacer
 
 It is possible to change the following configuration attributes of the **Spacer** control:
 
@@ -1054,7 +1045,7 @@ It is possible to change the following configuration attributes of the **Spacer*
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
 		</tr>	
@@ -1066,17 +1057,16 @@ It is possible to change the following configuration attributes of the **Spacer*
 			<td class="webixdoc_links0"><b>css</b></td>
 			<td>(<i>string</i>) adds style classes to a control</td>
 		</tr>
-    </tbody>
+  </tbody>
 </table>
 
-
-## Text 
+## Text
 
 It is possible to change the following configuration attributes of the **Text** control:
 
 <table class="webixdoc_links">
 	<tbody>
-		 <tr>
+		<tr>
 			<td class="webixdoc_links0"><b>inputType</b></td>
 			<td>(<i>string</i>)  the type of an input: "text", "password", "number".</td>
 		</tr>
@@ -1088,7 +1078,7 @@ It is possible to change the following configuration attributes of the **Text** 
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Text control</td>
 		</tr>	
@@ -1131,8 +1121,7 @@ It is possible to change the following configuration attributes of the **Text** 
     </tbody>
 </table>
 
-
-## Textarea 
+## Textarea
 
 It is possible to change the following configuration attributes of the **Textarea** control:
 
@@ -1214,7 +1203,7 @@ It is possible to change the following configuration attributes of the **Textare
     </tbody>
 </table>
 
-## TimePicker 
+## TimePicker
 
 It is possible to change the following configuration attributes of the **TimePicker** control:
 
@@ -1248,7 +1237,7 @@ It is possible to change the following configuration attributes of the **TimePic
 			<td class="webixdoc_links0"><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
-         <tr>
+    <tr>
 			<td class="webixdoc_links0"><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the TimePicker control</td>
 		</tr>	
@@ -1302,9 +1291,7 @@ It is possible to change the following configuration attributes of the **TimePic
 		</tr>
     </tbody>
 </table>
-```
 
 @relatedapi: form/api/form_getproperties_method.md
 
 @changelog: added in v7.0
-
