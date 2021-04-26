@@ -5,8 +5,8 @@ description: description
 ---          
 
 @short: defines whether the width of columns is automatically adjusted to the width of their content
-
-adjust?: "data" | "header" | "footer" | boolean;
+todoanton хотелось бы {'adjust?: "data" | "header" | "footer" | boolean;'}
+@signature: {'adjust?: IAdjustBy;'}
 
 @default: false
 

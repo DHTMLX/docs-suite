@@ -4,8 +4,8 @@ title: getParent
 ---          
 
 @short: returns the parent of a cell
-
-```todoapi ```
+todoanton config	object	 ?
+@signature: {'getParent(): ILayout;'}
 
 @returns:
 - config	object		the config object of the parent of a cell

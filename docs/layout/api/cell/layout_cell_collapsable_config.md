@@ -5,7 +5,7 @@ title: collapsable
 
 @short: defines whether a cell can be collapsed
 
-@signature: collapsable?: boolean;
+@signature: {'collapsable?: boolean;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

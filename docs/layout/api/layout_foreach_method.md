@@ -4,8 +4,8 @@ title: forEach
 ---          
 
 @short: iterates over all specified layout cells
-
-```todoapi ```
+todoanton снизу в params много того, чего нет в signature
+@signature: {'forEach(cb: LayoutCallback): void;'}
 
 @params:
 - callback 		function 		a function that will iterate over specified Layout cells

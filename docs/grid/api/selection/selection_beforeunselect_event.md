@@ -4,8 +4,8 @@ title: beforeUnSelect
 ---          
 
 @short: fires before unselecting a cell
-
-@signature: beforeUnSelect: (row: object, col: object) => boolean | void;
+todoanton => boolean | void или только boolean
+@signature: {'beforeUnSelect: (row: IRow, col: ICol) => boolean | void;'}
 
 @params:
 

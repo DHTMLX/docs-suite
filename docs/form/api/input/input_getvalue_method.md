@@ -4,6 +4,8 @@ title: getValue
 ---          
 
 @short: returns the current value of an Input control
+todoanton param   string|number ?
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 
 @returns:

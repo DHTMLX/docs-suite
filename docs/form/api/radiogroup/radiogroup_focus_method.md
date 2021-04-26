@@ -4,7 +4,8 @@ title: focus
 ---          
 
 @short: sets focus to the radio button of the RadioGroup control by its id
-
+todoanton не вижу в signature id
+@signature: {'focus(): void;'}
 
 @params:
 - id    string  optional, the id of a radio button 
@@ -12,10 +13,8 @@ title: focus
 @example:
 form.getItem("radiogroup").focus("radiobutton_1");
 
-
 @template: api_method
 @descr:
 If "id" is not specified, the method sets focus to the first radio button of the RadioGroup.
-
 
 @changelog: added in v7.0

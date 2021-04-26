@@ -4,6 +4,8 @@ title: setValue
 ---          
 
 @short: sets the value for a RadioGroup control
+todoanton в params указано value
+@signature: {'setValue(obj: FormData | IAnyObj): void;'}
 
 @params:
 - value     string     the value to be set  

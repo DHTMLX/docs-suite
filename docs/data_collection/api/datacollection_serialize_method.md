@@ -4,6 +4,8 @@ title: serialize
 ---          
 
 @short: serializes the component data into JSON, XML or CSV format
+todoanton в params есть некий type, а в returns data
+@signature: {'serialize(driver?: DataDriver): T[];'}
 
 @params:
 - type			string		optional, the format that the data will be serialized into (json, csv, xml), json by default

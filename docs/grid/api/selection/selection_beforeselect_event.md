@@ -4,8 +4,8 @@ title: beforeSelect
 ---          
 
 @short: fires before selecting a cell
-
-@signature: beforeSelect: (row: object, col: object) => boolean | void;
+todoanton boolean | void; или только boolean?
+@signature: {'beforeSelect: (row: IRow, col: ICol) => boolean | void;'}
 
 @params:
 

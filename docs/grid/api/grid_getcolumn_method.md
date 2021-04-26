@@ -4,11 +4,8 @@ title: getColumn
 ---          
 
 @short: returns an object with attributes of a column
-
-```todoapi
-object getColumn(string|number colId);
-getColumn(colId: string): ICol;
-```
+todoanton colId string,number и config object?
+@signature: {'getColumn(colId: string): ICol;'}
 
 @params:
 - colId		string,number		the id of a column
@@ -16,11 +13,9 @@ getColumn(colId: string): ICol;
 @returns:
 - config		object		an object with attributes of a column
 
-
 @example:
 var column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
-
 
 @template: api_method
 @descr:

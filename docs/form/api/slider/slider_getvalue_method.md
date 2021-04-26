@@ -4,8 +4,8 @@ title: getValue
 ---          
 
 @short: returns the current value of a Slider control
-
-@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
+todoanton param?
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 
 @returns:

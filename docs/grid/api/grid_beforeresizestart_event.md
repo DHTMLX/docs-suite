@@ -5,11 +5,11 @@ title: beforeResizeStart
 
 @short: fires before resizing of a column has started
 
-@signature: beforeResizeStart: (col: object, e: MouseEvent) => boolean | void;
+@signature: {'beforeResizeStart: (col: ICol, e: MouseEvent) => boolean | void;'}
 
-<!-- @params:
-- column		object		an object with a column configuration
-- e				Event		a native event object -->
+@params:
+- col		object		an object with a column configuration
+- e				Event		a native event object
 
 
 @returns:

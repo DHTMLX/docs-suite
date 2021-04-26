@@ -5,7 +5,7 @@ title: afterSelect
 
 @short: fires after selecting a cell
 
-@signature: afterSelect: (row: object, col: object) => void;
+@signature: {'afterSelect: (row: IRow, col: ICol) => void;'}
 
 @params:
 

@@ -4,8 +4,8 @@ title: type
 ---          
 
 @short: defines the type of borders between cells inside a layout
-
-@signature: type?: "line" | "wide" | "space" | "none";
+todoanton официально должно быть type?: "line" | "wide" | "space" | "none";
+@signature: {'type?: "line" | "wide" | "space" | string;'}
 
 @example: 
 const layout = new dhx.Layout("layout", {
