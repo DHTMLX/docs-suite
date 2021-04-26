@@ -5,6 +5,8 @@ title: beforeSort
 
 @short: fires before a column is sorted by clicking on its header
 
+@signature: beforeSort: (col: ICol, dir: Dirs) => void | boolean;
+
 @params:
 - col	object	an object with the configuration of a column
 - dir   string  the sorting direction (desc, asc)

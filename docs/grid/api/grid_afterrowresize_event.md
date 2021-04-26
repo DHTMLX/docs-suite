@@ -5,7 +5,9 @@ title: afterRowResize
 
 
 @short: fires after the height of a row is changed
-	
+
+@signature: afterRowResize: (row: IRow, events: Event, currentHeight: number) => void;
+
 @params:
 - row			object		an object with a row configuration
 - e	            Event	    a native event object

@@ -6,11 +6,10 @@ title: autoHeight
 
 @short: makes long text to split into multiple lines based on the width of the column
 
+@signature: autoWidth?: boolean;
 
 @default: false
 
-
-@type:boolean
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

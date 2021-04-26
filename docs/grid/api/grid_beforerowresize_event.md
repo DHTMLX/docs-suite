@@ -4,7 +4,9 @@ title: beforeRowResize
 ---
 
 @short: fires before the height of a row is changed
-	
+
+@signature: beforeRowResize: (row: IRow, events: Event, currentHeight: number) => boolean;
+
 @params:
 - row			object		an object with a row configuration
 - e	            Event	    a native event object
