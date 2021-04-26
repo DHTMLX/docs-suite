@@ -167,7 +167,6 @@ module.exports = {
               "calendar2/functionality_and_features/calendar_stylization",
             ],
           },
-
           //"calendar2/configuring",
           //"calendar2/localizing_calendar",
           //"calendar2/operating_calendar",
@@ -938,7 +937,6 @@ module.exports = {
                 },
                 ],
               },
-
               {
                 type: "category",
                 label: "Select API",
@@ -1674,7 +1672,6 @@ module.exports = {
                   "list/api/list_virtual_config",
                 ],
               },
-
               {
                 type: "category",
                 label: "Selection API",
@@ -1686,7 +1683,6 @@ module.exports = {
                     "list/api/selection/selection_enable_method",
                   ],
                 },
-
                 {
                   type: "category",
                   label: "Events",
@@ -2453,7 +2449,6 @@ module.exports = {
                     "tree/api/selection/selection_enable_method",
                   ],
                 },
-
                 {
                   type: "category",
                   label: "Events",
@@ -2636,7 +2631,6 @@ module.exports = {
                     "treegrid/api/selection/selection_setcell_method",
                   ],
                 },
-
                 {
                   type: "category",
                   label: "Events",
@@ -2943,7 +2937,6 @@ module.exports = {
             "tree_collection/api/treecollection_update_method",
           ],
         },
-
         {
           type: "category",
           label: "Events",
@@ -2992,7 +2985,6 @@ module.exports = {
     },
     ],
   },
-
   // end Helpers
 
   // start Common features
