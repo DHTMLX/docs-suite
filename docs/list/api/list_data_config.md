@@ -36,5 +36,5 @@ var list = new dhx.List("list", {
 @template:	api_config
 @descr: 
 
-@relatedsample:
-https://snippet.dhtmlx.com/20i6vbtj	List. Init With External Data
+**Related sample**:
+- [List. Init With External Data](https://snippet.dhtmlx.com/20i6vbtj)

@@ -33,8 +33,8 @@ combo/api/combobox_getvalue_method.md
 
 @related: combo/work_with_combo.md#settinggettingvalues
 
-@relatedsample:
-https://snippet.dhtmlx.com/xl1p7zcx	Combobox. Set Value
+**Related sample**:
+- [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
 
 @changelog:
 

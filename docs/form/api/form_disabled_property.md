@@ -18,8 +18,8 @@ var form = new dhx.Form("form_container", {
 @descr: 
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/7qjwg2sw	Form. Disabled
+**Related sample**:
+- [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
 
 @changelog: added in v6.4
 

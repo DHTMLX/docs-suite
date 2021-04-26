@@ -42,5 +42,5 @@ and must return a string with the name of the CSS class or an empty string.
 calendar/how_to_start.md#initializecalendar
 calendar/configuring.md#highlighteddates
 
-@relatedsample:
-https://snippet.dhtmlx.com/ic5oeiga	Calendar. Marked Dates
+**Related sample**:
+- [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)

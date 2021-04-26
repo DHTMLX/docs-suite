@@ -22,6 +22,6 @@ chart.events.on("ToggleSeries", function(id){
 @template: api_event
 @descr:
 
-@relatedsample: 
-https://snippet.dhtmlx.com/a1b9yfwo	Chart. Events
+**Related sample**:
+- [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
 

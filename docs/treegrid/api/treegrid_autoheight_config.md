@@ -29,4 +29,5 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 
 @changelog: added in v7.1
 
-@relatedsample: https://snippet.dhtmlx.com/4158ftak	TreeGrid. Auto height
+**Related sample**:
+- [TreeGrid. Auto height](https://snippet.dhtmlx.com/4158ftak)

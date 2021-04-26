@@ -13,8 +13,8 @@ combo.clear();
 @template: api_method
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/omlrtmj7	Combobox. Clear
+**Related sample**:
+- [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
 
 @changelog:
 

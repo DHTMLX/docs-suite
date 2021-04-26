@@ -39,8 +39,8 @@ var form = new dhx.Form("form_container", {
 @descr: 
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/1pzybtja	Form. Blocks
+**Related sample**:
+- [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 @changelog: added in v6.4
 

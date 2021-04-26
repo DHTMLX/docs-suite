@@ -62,7 +62,7 @@ See the list of chart configuration properties in the article chart/configuratio
 @related:
 chart/usage.md#settingchartconfiguration
 
-@relatedsample:
-https://snippet.dhtmlx.com/7umj531n	Chart. Change Configuration On The Fly
+**Related sample**:
+- [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
 
 @changelog:

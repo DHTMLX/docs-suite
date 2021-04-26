@@ -10,8 +10,8 @@ title: toggle
 @example:
 sidebar.toggle();
 
-@relatedsample:
-https://snippet.dhtmlx.com/wll2h9nd	Sidebar. Toggle
+**Related sample**:
+- [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
 @changelog:
 

@@ -19,7 +19,7 @@ calendar.events.on("MonthSelected", function(month) {
 @template: api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/7kj7fiek	Calendar. Events
+**Related sample**:
+- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
 

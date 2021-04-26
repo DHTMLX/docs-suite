@@ -18,8 +18,8 @@ dhxWindow.show();
 @template:	api_config
 @descr: 
 
-@relatedsample:
-https://snippet.dhtmlx.com/2rrclo09	Window. Window Container
+**Related sample**:
+- [Window. Window Container](https://snippet.dhtmlx.com/2rrclo09)
 
 @changelog: added in v6.4
 

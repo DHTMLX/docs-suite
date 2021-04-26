@@ -96,9 +96,9 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/00ei3q23	Chart. Enable Legend
-https://snippet.dhtmlx.com/pgqf1yxj	Chart. Legend Position
+**Related samples**:
+- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
+- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
 
 @related:
 chart/configuration_properties.md#legend

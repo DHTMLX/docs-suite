@@ -29,5 +29,5 @@ dataview.editItem("1");
 @relatedapi:
 dataview/api/dataview_editable_config.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/i09isp2d	Dataview. Edit Item
+**Related sample**:
+- [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)

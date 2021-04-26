@@ -34,8 +34,8 @@ The function passed to the method receives one parameter:
 
 and must return a boolean value to define whether a passed date should be blocked (if *true*, the date is inactive).
 
-@relatedsample:
-https://snippet.dhtmlx.com/27n67r91	Calendar. Disabled Dates
+**Related sample**:
+- [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
 
 @related:
 calendar/how_to_start.md#initializecalendar

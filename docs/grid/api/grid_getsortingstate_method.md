@@ -32,8 +32,8 @@ The return object includes the following attributes:
     </tbody>
 </table>
 
-@relatedsample:
-https://snippet.dhtmlx.com/u2vk3ri3	Grid. Get Sorting State
+**Related sample**:
+- [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
 
 
 @related: grid/usage.md#gettingthesortingstate

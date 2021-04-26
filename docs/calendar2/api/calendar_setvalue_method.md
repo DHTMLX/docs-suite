@@ -46,8 +46,8 @@ calendar/api/calendar_getvalue_method.md
 
 @changelog:
 
-@relatedsample:
-https://snippet.dhtmlx.com/vmg11002	Calendar. Preset Selected Date
+**Related sample**:
+- [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
 
 @related:
 calendar/operating_calendar.md#selectingdate,

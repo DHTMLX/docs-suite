@@ -18,8 +18,8 @@ combo.disable();
 @relatedapi:
 combo/api/combobox_enable_method.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/7bujtsuu	Combobox. Enable And Disable
+**Related sample**:
+- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
 @changelog:
 

@@ -21,6 +21,6 @@ By default a footer is initialized with no controls. To add a control into the f
 @related: window/how_to_start.md
 window/configuration.md#footer
 
-@relatedsample: 
-https://snippet.dhtmlx.com/o7xlvvv3	Window. Custom Buttons
-https://snippet.dhtmlx.com/qu5j85ag	Window. Window With Footer
+**Related samples**:
+- [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
+- [Window. Window With Footer](https://snippet.dhtmlx.com/qu5j85ag)

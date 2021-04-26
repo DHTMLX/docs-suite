@@ -23,5 +23,5 @@ grid.events.on("CellMouseDown", function(row,column,e){
 @descr:
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events
+**Related sample**:
+- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

@@ -42,4 +42,5 @@ grid/configuration.md#autoheightforcolumns
 
 @relatedapi: grid/api/grid_data_config.md
 
-@relatedsample: https://snippet.dhtmlx.com/zkcsyazg	Grid. Auto height
+**Related sample**:
+- [Grid. Auto height](https://snippet.dhtmlx.com/zkcsyazg)

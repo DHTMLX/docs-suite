@@ -29,7 +29,7 @@ You can block selection of particular dates by returning *false* from the event 
 @related:
 calendar/handling_events.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/7kj7fiek	Calendar. Events
+**Related sample**:
+- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
 @relatedapi:calendar/api/calendar_change_event.md

@@ -29,6 +29,6 @@ You should specify the name of the necessary icon type in the **icon** object an
 @related: tree/initialization_of_dhtmlxtree.md#initializetree
 tree/setting_tree_appearance.md#changingicons
 
-@relatedsample: 
-https://snippet.dhtmlx.com/lpsgn3j7	Tree. Custom Icons
-https://snippet.dhtmlx.com/h7mlx21q	Tree. Custom Dataset Icons
+**Related samples**:
+- [Tree. Custom Icons](https://snippet.dhtmlx.com/lpsgn3j7)
+- [Tree. Custom Dataset Icons](https://snippet.dhtmlx.com/h7mlx21q)

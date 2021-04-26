@@ -23,7 +23,7 @@ grid.editCell(grid.data.getId(0),"project");
 
 @related: grid/usage.md#editing-data
 
-@relatedsample:
-https://snippet.dhtmlx.com/pqbax5vs	Grid. Editing Data
+**Related sample**:
+- [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
 
 @relatedapi: grid/api/grid_editend_method.md

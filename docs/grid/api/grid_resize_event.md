@@ -24,5 +24,5 @@ grid.events.on("Resize", function(col,e){
 @changelog:
 added in v6.2
 
-@relatedsample:
-https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events
+**Related sample**:
+- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

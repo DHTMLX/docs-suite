@@ -27,8 +27,8 @@ sidebar.enable();
 
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable
+**Related sample**:
+- [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
 @changelog:
 

@@ -18,8 +18,8 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample:
-https://snippet.dhtmlx.com/ad6roqsx	Grid. Selection
+**Related sample**:
+- [Grid. Selection](https://snippet.dhtmlx.com/ad6roqsx)
 
 @related: grid/initialization.md#initializegrid
 grid/configuration.md#selection

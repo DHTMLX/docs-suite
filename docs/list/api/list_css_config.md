@@ -55,7 +55,7 @@ var list = new dhx.List("list", {css:"dhx_widget--bg_white"});
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 
-@relatedsample: 
-https://snippet.dhtmlx.com/s461f09w	List. Custom Styles
-https://snippet.dhtmlx.com/6hss19d3	List. Add Custom Selection With Custom Css
+**Related samples**:
+- [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
+- [List. Add Custom Selection With Custom Css](https://snippet.dhtmlx.com/6hss19d3)
 
