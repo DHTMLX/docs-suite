@@ -10,8 +10,7 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "generate": "cd plugins && node generate.js",
-    "normalizeLink": "cd plugins && node samplesLinksNormalize.js",
-    "normalizeSimpleLink": "cd plugins && node samplesLinksNormalizeSimple.js"
+    "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.bfea8d632",
