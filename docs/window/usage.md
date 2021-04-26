@@ -49,6 +49,19 @@ dhxWindow.setFullScreen();
 
 {{editor	https://snippet.dhtmlx.com/aftti5fy	Window. Fullscreen Mode}}
 
+To disable the full screen mode, apply the [](window/api/window_unsetfullscreen_method.md) method:
+
+~~~js
+dhxWindow.unsetFullScreen();
+~~~
+
+To check whether the full screen mode is activated or not, use the [](window/api/window_isfullscreen_method.md) method:
+
+~~~js
+dhxWindow.setFullScreen();
+dhxWindow.isFullScreen(); // -> true
+~~~
+
 Showing/hiding window
 --------------------
 

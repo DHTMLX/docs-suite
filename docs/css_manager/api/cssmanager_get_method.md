@@ -16,7 +16,7 @@ title: get
 - params      object     an object with a list of the class styles
 
 @example:
-var StyleList =  cssManager.get("myCustomClass");
+const StyleList =  dhx.cssManager.get("myCustomClass");
 // -> { color: "black", width: "200px" }
 
 @template:	api_method

@@ -56,6 +56,10 @@ title: Select properties
 			<td>(<i>string</i>) adds style classes to a control</td>
 		</tr>
 		<tr>
+			<td class="webixdoc_links0"><b>required</b></td>
+			<td>(<i>boolean</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a control is required</a></td>
+		</tr>
+		<tr>
 			<td class="webixdoc_links0"><b>disabled</b></td>
 			<td>(<i>boolean</i>) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
 		</tr>

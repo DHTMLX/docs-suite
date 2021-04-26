@@ -20,7 +20,7 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
         <link rel="stylesheet" href="../../codebase/grid.css">
     </head>
     <body>
-    	<div id="grid_container"></div>
+    	<div style="height:500px; width:600px" id="grid_container"></div>
         <script>
             // creating dhtmlxGrid 
             var grid = new dhx.Grid("grid_container", {

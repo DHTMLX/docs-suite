@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterSort
 title: afterSort
---- 
+---   
 
 @short: fires after a column is sorted by clicking on its header
 
@@ -14,7 +14,7 @@ title: afterSort
 
 
 @example:
-grid.events.on("afterSort", (col, dir) => {
+treegrid.events.on("afterSort", (col, dir) => {
 	console.log(col, dir);
 });
 
@@ -24,4 +24,4 @@ grid.events.on("afterSort", (col, dir) => {
 
 @changelog: added in v7.1
 
-@relatedapi: grid/api/grid_beforesort_event.md
+@relatedapi: treegrid/api/treegrid_beforesort_event.md

@@ -5,6 +5,177 @@ title: What's new
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.1.5
+------------------
+
+<span class="rel_date">released on April 22, 2021</span>
+
+### Fixes
+
+- Calendar, Colorpicker, Combobox, Dataview, Form, Layout, List, Tabbar, Timepicker, Window. Fix the "destructor()" method
+- Combobox. Fix the behavior of the [](combobox/api/combobox_css_config.md) configuration option
+- Tabbar. The recalculation function of the width of the tabs is optimized
+
+Version 7.1.4
+------------------
+
+<span class="rel_date">released on April 16, 2021</span>
+
+### Fixes
+
+- Chart. Fix the issue with display of chart tooltips when Chart is attached to Window
+- ComboBox. Fix the issue with filtering
+- Grid. Fix the issue with display of HTML content in the header of Grid
+- Grid. Fix the issue with applying of custom css styles to the header of a column when  the "colspan" attribute is set to the header
+- Grid. The [adjust](grid/api/grid_adjust_config.md) and [autoHeight](grid/api/grid_autoheight_config.md) configuration properties now should adjust the sizes of cells with account of [HTML content](grid/configuration.md#htmlcontentofgridcolumns) and [template](grid/api/api_gridcolumn_properties.md) applied to cells
+- Grid. Fix the incorrect work of drag-n-drop in Grid when the grid is attached to Window
+- Grid. Fix the issue with applying of custom css styles to the footer of the grid
+- LazyDataProxy in Grid. Fix the error occurred when returning `false` from the 'beforeLazyLoad" event handler
+- Window. Fix the issue with display of tooltips of Grid cells behind the window when Grid is attached to Window
+
+Version 7.1.3
+------------------
+
+<span class="rel_date">released on April 12, 2021</span>
+
+### Fixes
+
+- Form. Fix the behavior of [DatePicker](form/calendar.md) control when adding a timepicker into the control
+- Calendar. Fix the issue with the [dateFormat](calendar/api/calendar_dateformat_config.md) property that caused AM/PM to be ignored
+- Chart. Fix the issue with the [serieClick](chart/api/chart_serieclick_event.md) event in the Bar chart
+- ComboBox. Fix the issue with filtering
+- Form. Fix the incorrect work of the popup control that is located at the bottom of the page and is shown at the top relative to the input when opening
+- Grid. The [adjust](grid/api/grid_adjust_config.md) and [autoHeight](grid/api/grid_autoheight_config.md) configuration properties now should adjust the sizes of cells with account of [HTML content](grid/configuration.md#html-content-of-grid-columns) and [template](grid/api/api_gridcolumn_properties.md) added to cells
+- Grid. Fix the issue with editing of the value after its filtering
+- Grid. Fix the issue with filters in the header rowspans
+- Grid. Fix the issue with the border of the footer colspan
+- Grid. Fix the issue that caused the header to disappear after scrolling the grid with the frozen columns on Safari
+- Grid. Fix the issue with sorting 
+- Grid. Fix the issue that caused no line break to appear between the header and the first data row after exporting data to the CSV file
+- Grid. Fix the issue with applying of the styles to the grid footer
+- Grid. Fix the issue that caused extra footer rows to appear in the frozen part of the grid when the grid has several header rows
+- Grid. Fix the script error appeared when either `data: null` or `data: undefined` property is set in the configuration of Grid
+- Grid. Fix the issue with incorrect overflow of the text in the header of Grid
+- Grid, TreeGrid. Fix the issue with the column width
+- Layout. Fix the issue with the sizes of Layout when placing it inside the window
+- Menu. Fix the issue with display of menu items when placing the menu inside the window
+- Message. Fix the issue with display of the content of the alert box on touch devices
+- Slider. Fix the issue with key navigation
+- TreeGrid. Fix the issue with incorrect serialization of data
+- Tree Collection. Fix the issue with the "mapRange()" method
+  
+Version 7.1.2
+---------------
+
+<span class="rel_date">released on March 9, 2021</span>
+
+### Fixes
+
+- Chart. Fix the issue with display of the maximal value
+- Donut Chart. Fix the issue with the "stroke" property
+- DataDrivers. Fix the issue with serialization of Grid data when the data are serialized with the header  
+- DataView. Fix the script error thrown either when the user drags an item after its editing or when the user highlights the text of the item
+- Form. Fix the different behavior of margins between the label and input on Safari and Chrome
+- Grid. Fix the incorrect work of the keyboard navigation in Grid when placing it inside the HTML form 
+- Grid. Fix the issue with drag-n-drop of Grid columns when using several grids
+- Grid. Fix the issue with row selection
+- Grid. Fix the issue with keyboard navigation in Grid when initializing the grid in the cell of Layout that is hidden and then shown
+- Grid. Fix the issue with the [getHeaderFilter()](grid/api/grid_getheaderfilter_method.md) method
+- Grid. Fix the issue that caused the popup of the select filter to disappear after scrolling the page
+- Grid. Fix the issue with filtering data in the header of Grid on Safari
+- Grid. Fix the issue with the [autoWidth](grid/api/grid_autowidth_config.md) configuration option of a Grid column that caused the column not to shrink after its extending
+- Grid/TreeGrid. Fix the issue with hiding columns when the "autoWidth" configuration option is used
+- Layout. Fix the issue that caused an active focus not to be removed from the cell after its collapsing/expanding
+- Menu. Fix the incorrect display of the menu items when placing the menu inside the window
+- Menu. Fix the issue with the outline focus
+- Menu. Fix the issue with positioning of the popup after clicking an item with nested controls
+- Tabbar. Fix the issue with Tabbar when placing it inside the HTML form
+- TimePicker. The default height is reduced from 322px to 275px
+- Tree. Fix the issue that caused the expand/collapse events not to trigger on expanding/collapsing the Tree item first time when [autoload](tree/api/tree_autoload_config.md) is used
+
+Version 7.1.1
+---------------
+
+<span class="rel_date">released on February 23, 2021</span>
+
+### Fixes
+
+- Grid. Fix the issue with tooltips on Firefox
+- Grid. Fix the issue that caused a row selected in the movable part of the grid not being selected in the "frozen" part
+- Grid. Fix the issue that caused the script error to be thrown when applying a template to the cell with the footer
+- Grid. Fix the issue that caused the grid to crash when initializing the grid with "data: null"
+- Form. Fix the script error thrown when the container of Form is set to `null`
+- Form. Fix the issue with the "required" configuration option of the Select control
+- Window. Fix the incorrect display of the menu items when placing the menu inside the window
+
+Version 7.1
+---------------
+
+<span class="rel_date">released on February 18, 2021</span>
+
+Check the [Migration article](migration.md#70---71) to keep in step with the latest version.
+
+### New functionality
+
+#### Grid
+
+- The ability to display and edit multiline content in the cells of Grid via setting the [autoHeight: true](grid/api/grid_autoheight_config.md) configuration option of Grid (Pro version)
+- New [textarea editor](grid/configuration.md#setting-type-of-column-editor) is added 
+- The ability to set [the format the content of the cells to be displayed in](grid/configuration.md#formatting-columns)
+- Now [columns with dates support the Date() object](grid/api/grid_data_config.md) 
+- The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column
+- The ability [to define the height for a separate row of Grid](grid/configuration.md#row-height)
+- New events are added: [beforeRowResize](grid/api/grid_beforerowresize_event.md) and [afterRowResize](grid/api/grid_afterrowresize_event.md) (Pro version)
+- New events are added: [beforeSort](grid/api/grid_beforesort_event.md) and [afterSort](grid/api/grid_aftersort_event.md)
+
+#### Tree
+
+- New events: [beforeCheck](tree/api/tree_beforecheck_event.md) and [afterCheck](tree/api/tree_aftercheck_event.md)
+
+#### TreeGrid
+
+- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid 
+- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added 
+- The ability to set [the format the content of the cells to be displayed in](treegrid/configuration.md#formatting-columns)
+- Now [columns with dates support the Date() object](treegrid/api/treegrid_data_config.md)
+- The ability to [customize the tooltip of a column](treegrid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
+- The ability [to define the height for a separate row of TreeGrid](treegrid/configuration.md#row-height)
+- New events are added: [beforeRowResize](treegrid/api/treegrid_beforerowresize_event.md) and [afterRowResize](treegrid/api/treegrid_afterrowresize_event.md), [beforeSort](treegrid/api/treegrid_beforesort_event.md) and [afterSort](treegrid/api/treegrid_aftersort_event.md)
+- The ability to define the id of the parent root via the [rootParent](treegrid/api/treegrid_rootparent_config.md) configuration option of TreeGrid
+
+
+#### Window
+
+- New methods are added: [unsetFullScreen()](window/api/window_unsetfullscreen_method.md) and [isFullScreen()](window/api/window_isfullscreen_method.md)
+
+### Updates
+
+- Chart. [Improved tooltips for all charts](chart/charts_overview.md). 
+- Chart. Now the tooltip will contain values of multiple series on hovering over a chart ([Line](https://snippet.dhtmlx.com/t881qcim), [Spline](https://snippet.dhtmlx.com/2wvmdm0y), [Area](https://snippet.dhtmlx.com/nv6t6lvm), [Spline Area](https://snippet.dhtmlx.com/bo82km4n)).
+- Grid/TreeGrid. The values of the [type](grid/api/api_gridcolumn_properties.md) configuration property of the Grid/TreeGrid columns are updated. Now the type sets the alignment of content inside cells and defines the type of the editor used in the cells of the column.
+
+### Fixes
+
+- Chart. Fix the issue with Bar charts that caused series that are not filled in to be shown on the page
+- Chart. Fix the incorrect display of the line above the area filled with the color in the Bar chart
+- DataView. Fix the script error thrown after editing a DataView item
+- Grid/TreeGrid. Fix the incorrect work of selection when the "hidden: true" property is used
+- Grid/TreeGrid. Fix the issue with the incorrect size of selection when selecting the cell in the first column of the grid
+- Grid/TreeGrid. Speed optimization of the "adjust" property
+- Grid. Fix the issues with the "beforeRowDrop" and "columnDrag" events
+- Grid. Fix the issue with resizing of the column when the "autoWidth" property is used
+- Grid. Fix the issue with key navigation in the combobox editor
+- KeyManager module is reworked
+- List. Fix the issue with the "afterFocusChange" event  
+- Pagination. Fix the issues with the Pagination widget when using together with Grid, TreeGrid, DataView, List
+- Pagination. Fix the incorrect work of the "showItem" method 
+- Tabbar. Fix the issue that caused the usage of memory to increase when working in Firefox 
+- TreeGrid. Fix the issue with positioning of the input editor of a TreeGrid cell when editing a cell
+- Window. Fix the incorrect display of the menu items when placing the menu inside the window
+- Window. Fix the issue with the sequence of closing modal windows when using key navigation 
+- Fix the issue that invoked the `domvm.js` warning in the console
+
+
 Version 7.0.3
 ---------------
 

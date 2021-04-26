@@ -11,7 +11,7 @@ title: remove
 - className      string     the name of the class to be deleted
 
 @example:
-cssManager.remove("myCustomClass");
+dhx.cssManager.remove("myCustomClass");
 
 @template:	api_method
 

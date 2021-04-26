@@ -20,7 +20,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
         <link rel="stylesheet" href="../../codebase/treegrid.css">
     </head>
     <body>
-    	<div id="treegrid_container"></div>
+    	<div id="treegrid" style="height: 100%; width: 100%"></div>
         <script>
             // creating dhtmlxTreeGrid 
             var treegrid = new dhx.TreeGrid("treegrid_container", {
