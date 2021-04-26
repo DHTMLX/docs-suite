@@ -6,13 +6,7 @@ description: description
 
 The DHTMLX library provides you with the opportunity to create new classes and manipulate them dynamically with the help of the **CssManager** helper.
 
-To make use of the helper you need to initialize the CssManager object with the help of the *dhx.CssManager()* constructor:
-
-~~~js
-var cssManager = new dhx.CssManager();
-~~~
-
-The list of the available methods of `dhx.CssManager` is described below.
+The list of the available methods of `dhx.cssManager` is described below.
 
 ## Methods
 

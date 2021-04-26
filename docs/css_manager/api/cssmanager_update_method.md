@@ -9,12 +9,12 @@ title: update
 
 
 @example:
-cssManager.add({
+dhx.cssManager.add({
     display: "flex";
     flexDirection: "column"
 }, "myClassName", true);
 
-cssManager.update();
+dhx.cssManager.update();
 
 @template:	api_method
 

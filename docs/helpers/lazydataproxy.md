@@ -62,13 +62,13 @@ from: 15
 Updating URL
 ---------------
 
-You can use the **updateURL** method to update the URL where the data will be loaded or to change parameters for loading data from the backend. The method takes two parameters:
+You can use the **updateUrl** method to update the URL where the data will be loaded or to change parameters for loading data from the backend. The method takes two parameters:
 
 - **url** - (*string*) the URL which the component will use to load data after its initialization. If not specified, the currently existing URL will be used.
 - **config** - (*object*) a configuration object with parameters for loading data from the server. If not specified, clears parameters set earlier.
 
 ~~~js
-lazyDataProxy.updateURL("https://docs.dhtmlx.com/suite/backend/lazyload", {
+lazyDataProxy.updateUrl("https://docs.dhtmlx.com/suite/backend/lazyload", {
     limit: 30,
     prepare: 5,
     delay: 150,
