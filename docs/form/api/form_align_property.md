@@ -5,8 +5,7 @@ title: align
 
 @short: sets the alignment of controls inside the control group 
 
-
-@type: string
+todoanton возможно не подставилась signature
 @values: "start", "center", "end", "between", "around", "evenly"
 
 @example: 

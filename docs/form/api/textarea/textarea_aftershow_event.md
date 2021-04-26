@@ -4,12 +4,11 @@ title: afterShow
 ---          
 
 @short: fires after a control is shown
- 
+todoanton any приходит из d.ts
+@signature: {'afterShow: (name: string, value?: any) => void;'}
 
 @params:
 - value     string     the current value of the control
-
-
 
 @example:
 form.getItem("textarea").events.on("AfterShow", function(value) {

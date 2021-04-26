@@ -5,7 +5,7 @@ title: inputBlur
 
 @short: fires when a control is blurred
 
-@signature: inputBlur: (id: string) => void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
 
 @params:
 - id 		string		the ID of a new control

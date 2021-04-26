@@ -4,6 +4,8 @@ title: save
 ---          
 
 @short: saves changes made in a data collection to the server side
+todoanton any приходит из d.ts и params отличаются
+@signature: {'save?: (data: any, mode: string) => Promise<any>;'}
 
 @params:
 

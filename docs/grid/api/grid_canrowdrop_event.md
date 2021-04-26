@@ -4,18 +4,17 @@ title: canRowDrop
 ---          
 
 @short: fires when a dragged row is placed over a target row
+todoanton any приходит из d.ts
+@signature: {'canRowDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
-@signature: canRowDrop: (data: object, events: MouseEvent) => void;
-
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
+- e		    Event		a native event object
 
 @example:
 grid.events.on("CanRowDrop", function(data, events) {
   // your logic here
 });
-
 
 @template: api_event
 @descr:

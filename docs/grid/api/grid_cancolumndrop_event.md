@@ -4,13 +4,12 @@ title: canColumnDrop
 ---          
 
 @short: fires when a dragged column is placed over a target column
+todoanton any приходит из d.ts
+@signature: {'canColumnDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
-@signature: canColumnDrop: (data: object, events: MouseEvent) => void;
-
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
-
+- e		    Event		a native event object
 
 @example:
 grid.events.on("CanColumnDrop", function(data, events) {

@@ -5,6 +5,8 @@ title: getValue
 
 @short: returns the current value of a Textarea control
 
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
+
 
 @returns:
 param   string    the current value of the control

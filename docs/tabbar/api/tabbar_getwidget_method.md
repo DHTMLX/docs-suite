@@ -4,7 +4,7 @@ title: getWidget
 ---          
 
 @short: returns the widget attached to Tabbar
-
+todoanton any приходит из d.ts
 @signature: getWidget(): object;
 
 <!-- object getWidget();

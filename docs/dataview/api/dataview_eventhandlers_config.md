@@ -7,11 +7,8 @@ description: description
 ```
 
 @short: adds event handlers to the HTML elements of a custom template of DataView items
-
-@signature: 
-eventHandlers?: {
-    [key: string]: any;
-};
+todoanton any приходит из d.ts
+@signature: {'eventHandlers?: { [key: string]: any; };'}
 
 @example: 
 function template() {

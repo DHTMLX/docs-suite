@@ -5,10 +5,8 @@ title: data
 
 @short: specifies an array of data objects to set into the combobox
 
-```todoapi 
-data?: DataCollection<any> | any[];
-<any> не компилируется
-```
+todoanton any приходит из d.ts
+@signature: {'data?: DataCollection<any> | any[];'}
 
 @example:
 var combo = new dhx.Combobox("combo_container",{

@@ -4,8 +4,8 @@ title: removeRowCss
 ---          
 
 @short: removes a style from a row
-
-@signature: removeRowCss(id: string | number, css: string): void;
+todoanton any приходит из d.ts
+@signature: {'removeRowCss(id: any, css: string): void;'}
 
 @params:
 - id	string,number		the id of a row

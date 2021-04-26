@@ -4,6 +4,8 @@ title: beforeHide
 ---          
 
 @short: fires before a Button control is hidden
+todoanton any приходит из d.ts
+@signature: {'beforeHide: (name: string, value?: any) => boolean | void;'}
 
 @params:
 - text     string  the current text label of the control

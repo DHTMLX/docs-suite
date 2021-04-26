@@ -4,8 +4,8 @@ title: canRowDrop
 ---          
 
 @short: fires when a dragged row is placed over a target row
-
-@signature: canRowDrop: (data: object, events: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'canRowDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
 - data		object		data object

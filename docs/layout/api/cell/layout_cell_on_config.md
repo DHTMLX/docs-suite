@@ -5,6 +5,7 @@ title: on
 
 @short: adds handlers to DOM events of a cell
 
+todoanton возможно не подставилась signature
 ```todoapi
 object on;
 on?: {

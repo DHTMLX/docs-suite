@@ -4,8 +4,8 @@ title: afterColumnDrag
 ---          
 
 @short: fires after dragging of a column is finished
-
-@signature: afterColumnDrag: (data: object, events: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'afterColumnDrag: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
 - data		object		data object

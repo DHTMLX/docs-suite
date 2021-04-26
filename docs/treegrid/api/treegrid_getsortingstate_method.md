@@ -4,8 +4,8 @@ title: getSortingState
 ---          
 
 @short: returns the current state of sorting data in TreeGrid
-
-@signature: getSortingState(): object;
+todoanton any приходит из d.ts
+@signature: {'getSortingState(): any;'}
 
 @returns:
 - object   object	  an object with the current state of sorting data in the treegrid

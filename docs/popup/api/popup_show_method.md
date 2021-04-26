@@ -4,6 +4,8 @@ title: show
 ---          
 
 @short: shows a Popup
+todoanton any приходит из d.ts и может после show перед скобкой можно пробел
+@signature: {'show(node: HTMLElement, config?: IShowConfig, attach?: any): void;'}
 
 ```todoapi 
 void show(HTMLElement element,object config);

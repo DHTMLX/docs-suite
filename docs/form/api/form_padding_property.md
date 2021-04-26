@@ -4,8 +4,8 @@ title: padding
 ---          
 
 @short: sets padding for content inside the control group
-
-@type: string
+todoanton а что это значит?
+@signature: the object is described in another directory
 
 @example: 
 var form = new dhx.Form("form_container", {

@@ -4,6 +4,8 @@ title: reduce
 ---          
 
 @short: reduces the array to a single value
+todoanton тут описание сильно отличается от сигнатуры
+@signature: {'reduce<A>(cb: ReduceCallBack<T, A>, acc: A): A;'}
 
 @params:
 

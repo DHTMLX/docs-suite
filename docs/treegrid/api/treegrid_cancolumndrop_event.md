@@ -4,8 +4,8 @@ title: canColumnDrop
 ---          
 
 @short: fires when a dragged column is placed over a target column
-
-@signature: canColumnDrop: (data: object, events: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'canColumnDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
 - data		object		data object

@@ -5,6 +5,8 @@ title: changeId
 
 @short: changes the id of an element of a data collection
 
+@signature: {'changeId(id: Id, newId?: Id, silent?: boolean): void;'}
+
 @params:
 - id			string			the old id of an item
 - newId         string          optional, the new id; auto-generated if not set

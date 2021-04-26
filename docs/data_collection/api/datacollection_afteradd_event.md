@@ -4,6 +4,8 @@ title: afterAdd
 ---          
 
 @short: fires after adding a new item into a data collection
+todoanton any приходит из d.ts
+@signature: {'afterAdd: (obj: any) => void;'}
 	
 @params:
 - newItem		object			the object of an added item

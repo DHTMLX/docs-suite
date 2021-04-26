@@ -4,8 +4,7 @@ title: title
 ---          
 
 @short: specifies the title of the control group
-
-@type: string
+todoanton возможно не подставилась signature
 
 @example: 
 var form = new dhx.Form("form_container", {

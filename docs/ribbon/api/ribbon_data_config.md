@@ -5,6 +5,8 @@ title: data
 
 @short: specifies an array of data objects to set into Ribbon
 
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
+
 ```todoapi 
 array data;
 data?: any[] | TreeCollection<IRibbonElement>;

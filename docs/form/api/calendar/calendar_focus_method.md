@@ -5,6 +5,8 @@ title: focus
 
 @short: sets focus to a control
 
+@signature: {'focus(): void;'}
+
 
 
 

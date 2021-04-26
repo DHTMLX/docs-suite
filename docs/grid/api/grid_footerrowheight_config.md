@@ -7,11 +7,7 @@ title: footerRowHeight
 
 @signature: {'footerRowHeight?: number;'}
 
-
 @default: 40
-
-
-@type: number
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

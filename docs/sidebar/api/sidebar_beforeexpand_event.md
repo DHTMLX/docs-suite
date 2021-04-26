@@ -5,6 +5,8 @@ title: beforeExpand
 
 @short: fires before expanding a sidebar
 
+@signature: {'beforeExpand: () => boolean | void;'}
+
 beforeExpand: () => boolean | void;
 
 @returns: 

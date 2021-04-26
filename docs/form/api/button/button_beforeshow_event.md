@@ -4,6 +4,8 @@ title: beforeShow
 ---          
 
 @short: fires before a Button control is shown
+todoanton any приходит из d.ts
+@signature: {'beforeShow: (name: string, value?: any) => boolean | void;'}
 
 @params:
 - text     string  the current text label of the control

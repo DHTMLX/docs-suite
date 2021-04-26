@@ -4,8 +4,9 @@ title: beforeValidate
 ---          
 
 @short: fires before the control value is validated
+todoanton any приходит из d.ts
+@signature: {'beforeValidate: (name: string, value: any) => boolean | void;'}
  
-
 @params:
 - value       string  the value to be validated
 
@@ -17,7 +18,6 @@ form.getItem("textarea").events.on("BeforeValidate", function(value) {
     console.log("BeforeValidate", value);
     return true;
 });
-
 
 @template: api_event
 @descr:

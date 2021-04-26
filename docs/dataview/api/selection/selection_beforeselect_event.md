@@ -5,7 +5,7 @@ title: beforeSelect
 
 @short: fires on selecting an item, but before the item is really selected
 
-```todoapi ```
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
 
 @params:
 - id    string  the id of an item

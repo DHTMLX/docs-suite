@@ -5,7 +5,7 @@ title: click
 
 @short: fires after a click on a control
 
-@signature: click: (id: string, e: Event) => any;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
 
 <!-- void click(string id,Event e){ ... }; -- void??? -->
 

@@ -4,8 +4,8 @@ title: itemMouseOver
 ---          
 
 @short: fires on moving the mouse pointer over an item 
-
-@signature: itemMouseOver: (id: string | number, e: Event) => void;
+todoanton any приходит из d.ts
+@signature: {'itemMouseOver: (id: string, e: Event) => any;'}
 
 @params:
 - id 	string, number 		the id of an item

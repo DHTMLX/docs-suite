@@ -5,7 +5,7 @@ title: disable
 
 @short: disables and dims an item(s) of Menu
 
-@signature: disable(ids: string | string[]): void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
 
 @params:
 - ids 		string, array		optional, an ID or an array of IDs of items

@@ -4,8 +4,8 @@ title: afterShow
 ---          
 
 @short: fires after a popup is shown
-
-@signature: afterShow: (node: HTMLElement) => void;
+todoanton any приходит из d.ts
+@signature: {'afterShow: (node: HTMLElement) => any;'}
 
 @params:
 - node 		HTMLElement		 the container a popup is placed in

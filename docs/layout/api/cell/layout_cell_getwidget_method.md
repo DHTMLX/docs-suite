@@ -4,8 +4,8 @@ title: getWidget
 ---          
 
 @short: returns the widget attached to a layout cell
-
-```todoapi ```
+todoanton any приходит из d.ts
+@signature: {'getWidget(): any;'}
 
 @params:
 

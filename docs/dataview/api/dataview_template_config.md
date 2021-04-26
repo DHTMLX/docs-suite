@@ -4,7 +4,7 @@ title: template
 ---          
 
 @short: specifies a template for DataView items
-
+todoanton any приходит из d.ts
 @signature: {'template?: (item: any) => string;'}
 
 @example: 

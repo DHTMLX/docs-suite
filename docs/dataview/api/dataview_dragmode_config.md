@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in DataView
 
-@signature: dragMode?: "target" | "both" | "source";
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
 
 @example: 
 var dataview = new dhx.DataView("dataview_container", { 

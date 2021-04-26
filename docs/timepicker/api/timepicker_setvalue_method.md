@@ -4,8 +4,8 @@ title: setValue
 ---          
 
 @short: sets value for a TimePicker
-
-@signature: setValue(value: Date | number | string | array[] | hour: number, minute: number, AM?: boolean): void;
+todoanton any приходит из d.ts
+@signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
 <!-- void setValue(Date|number|string|array|object value);
 setValue(value: Date | number | string | any[] | ITimeObject): void;

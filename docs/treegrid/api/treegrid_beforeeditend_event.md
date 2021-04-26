@@ -4,8 +4,8 @@ title: beforeEditEnd
 ---          
 
 @short: fires before editing of a cell is ended
-
-@signature: beforeEditEnd: (value: string, row: string, col: object) => boolean | void;
+todoanton any приходит из d.ts
+@signature: {'beforeEditEnd: (value: any, row: IRow, col: ICol) => boolean | void;'}
 	
 @params:
 - value			string		the new value of a cell

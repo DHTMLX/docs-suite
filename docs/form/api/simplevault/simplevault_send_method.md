@@ -4,6 +4,8 @@ title: send
 ---          
 
 @short: sends a POST request for file upload to a server-side URL
+todoanton any приходит из d.ts
+@signature: {'send(url: string, method?: string, asFormData?: boolean): Promise<any> | void;'}
 
 @params:
 * params   object     optional, an object with additional parameters for a request

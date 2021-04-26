@@ -4,6 +4,8 @@ title: width
 ---          
 
 @short: sets the width of the control group
+todoanton не типичная запись
+@signature: the object is described in another directory
 
 @type: string|number|"content"
 

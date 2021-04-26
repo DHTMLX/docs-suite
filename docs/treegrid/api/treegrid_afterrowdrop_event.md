@@ -4,8 +4,8 @@ title: afterRowDrop
 ---          
 
 @short: fires before the user has finished dragging a row but after the mouse button is released
-
-@signature: afterRowDrop: (data: object, events: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'afterRowDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
 - data		object		data object

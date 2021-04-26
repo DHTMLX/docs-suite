@@ -5,7 +5,7 @@ title: select
 
 @short: selects a specified item of Toolbar
 
-@signature: select(id: string, unselect: boolean): void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
 
 @params:
 - id	string      the id of a Toolbar item

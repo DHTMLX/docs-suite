@@ -5,7 +5,7 @@ title: inputFocus
 
 @short: fires when a control is focused
 
-@signature: inputFocus: (id: string) => any;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
 
 @params:
 - id		string			the ID of a new control

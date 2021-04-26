@@ -4,8 +4,8 @@ title: disabled
 ---          
 
 @short: makes a form disabled
+todoanton возможно не подставилась signature
 
-@type: boolean
 
 @example: 
 var form = new dhx.Form("form_container", {

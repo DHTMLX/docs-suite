@@ -4,6 +4,8 @@ title: change
 ---          
 
 @short: fires when a data collection is modified
+todoanton any приходит из d.ts
+@signature: {'change: (id?: string, status?: Statuses, obj?: any) => any;'}
 	
 @params:
 - id				string		the id of an item

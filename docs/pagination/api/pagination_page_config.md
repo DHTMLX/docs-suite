@@ -7,11 +7,7 @@ title: page
 
 @signature: {'page?: number;'}
 
-@default:
-0
-
-
-@type: number
+@default: 0
 
 @example: 
 const pagination = new dhx.Pagination("pagination_container", {
@@ -19,11 +15,8 @@ const pagination = new dhx.Pagination("pagination_container", {
     page: 4 
 });
 
-
 @template:	api_config
 @descr: 
-
-
 
 [Pagination. Initial page index](https://snippet.dhtmlx.com/5vwz8tgb)
 

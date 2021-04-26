@@ -5,6 +5,8 @@ title: send
 
 @short: sends a POST request for file upload to a server-side URL 
 
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
+
 @params:
 * params 		object 			optional, additional parameters for a request
 

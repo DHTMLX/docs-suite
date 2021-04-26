@@ -4,8 +4,8 @@ title: input
 ---          
 
 @short: fires on typing text in an input of Combobox
-
-@signature: input: (value: string | number) => void;
+todoanton any приходит из d.ts
+@signature: {'input: (value: any) => any;'}
 
 @params:
 - value     string|number       an entered value

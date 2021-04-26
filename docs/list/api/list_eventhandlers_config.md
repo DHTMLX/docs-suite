@@ -7,15 +7,12 @@ title: eventHandlers
 ```todoapi 
 
 @short: adds event handlers to HTML elements of a custom template of List items
-
+todoanton возможно не подставилась signature
 
 object eventHandlers;
 eventHandlers?: {
     [key: string]: any;
 };
-
-
-@type: object
 
 @example: 
 function template() {

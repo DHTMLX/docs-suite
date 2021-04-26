@@ -5,7 +5,7 @@ title: isSelected
 
 @short: checks whether a specified Ribbon item is selected
 
-@signature: isSelected(id: string): boolean;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
 
 @params:
 - id	string  the id of a Ribbon item

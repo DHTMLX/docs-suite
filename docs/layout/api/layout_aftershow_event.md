@@ -4,8 +4,8 @@ title: afterShow
 ---          
 
 @short: fires after a cell is shown
-
-@signature: afterShow: (id: string) => void;
+todoanton any приходит из d.ts
+@signature: {'afterShow: (id: string) => any;'}
 
 @params:
 - id		string		the id of a cell
@@ -15,10 +15,6 @@ layout.events.on("AfterShow", function(id){
 	// your logic here
 });
 
-
-
-
-
 @template: api_event
 @descr:
 
@@ -26,5 +22,3 @@ layout.events.on("AfterShow", function(id){
 
 @changelog:
 added in v6.2
-
-

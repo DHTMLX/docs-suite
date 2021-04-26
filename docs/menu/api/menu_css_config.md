@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to Menu
 
-@signature: css?: string;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
 
 @example: 
 <style>

@@ -5,6 +5,8 @@ title: isVisible
 
 @short: checks whether a Text control is visible on the page
 
+@signature: {'isVisible(name?: string): boolean;'}
+
 @returns:
 param   boolean     true, if a control is visible, otherwise false
 

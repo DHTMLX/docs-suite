@@ -4,17 +4,16 @@ title: change
 ---          
 
 @short: fires on changing the value of a control
+todoanton any приходит из d.ts
+@signature: {'change: (name: string, value: any) => any;'}
  
-
 @params:
 - value     string     the current value of the control
-
 
 @example:
 form.getItem("textarea").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
 
 @template: api_event
 @descr:

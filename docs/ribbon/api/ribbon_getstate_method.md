@@ -5,7 +5,7 @@ title: getState
 
 @short: gets current values/states of controls
 
-@signature: getState(): object;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
 
 @returns:
 - state		object		an object with IDs of controls and their values/states

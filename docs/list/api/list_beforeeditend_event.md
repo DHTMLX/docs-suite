@@ -4,8 +4,8 @@ title: beforeEditEnd
 ---          
 
 @short: fires before editing of an item is ended
-
-@signature: beforeEditEnd: (value: string, id: string | number) => void | boolean;
+todoanton any приходит из d.ts
+@signature: {'beforeEditEnd: (value: any, id: string) => void | boolean;'}
 	
 @params:
 - value		string		the value of an item

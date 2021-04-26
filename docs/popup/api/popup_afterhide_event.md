@@ -4,8 +4,8 @@ title: afterHide
 ---          
 
 @short: fires after a popup is hidden
-
-@signature: afterHide: (e: Event) => void;
+todoanton any приходит из d.ts
+@signature: {'afterHide: (e: Event) => any;'}
 
 @params:
 - e				Event			the native mouse event

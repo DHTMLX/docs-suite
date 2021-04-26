@@ -4,8 +4,8 @@ title: dragColumnStart
 ---          
 
 @short: fires when dragging of a column has started
-
-@signature: dragColumnStart: (data: object, events: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'dragColumnStart: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
 - data		object		data object

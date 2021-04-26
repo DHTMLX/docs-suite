@@ -5,8 +5,7 @@ title: cols
 
 @short: arranges controls inside the control group horizontally
 
-
-@type: array
+todoanton возможно не подставилась signature
 
 @example: 
 var form = new dhx.Form("form_container", {

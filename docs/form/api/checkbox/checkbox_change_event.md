@@ -4,6 +4,8 @@ title: change
 ---          
 
 @short: fires on changing the value of a control
+todoanton any приходит из d.ts
+@signature: {'change: (name: string, value: any) => any;'}
  
 
 @params:

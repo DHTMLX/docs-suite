@@ -4,6 +4,8 @@ title: save
 ---          
 
 @short: sends an AJAX request to the server
+todoanton any приходит из d.ts
+@signature: {'save?: (data: any, mode: string) => Promise<any>;'}
 
 @params:
 - data      object      mandatory, data to be sent to the server

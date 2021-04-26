@@ -13,8 +13,6 @@ scales?: IScalesConfig;
 export declare type ScaleType = "left" | "right" | "top" | "bottom" | "radial";
 ```
 
-@type: object
-
 @example: 
 var chart = new dhx.Chart("chart_container",{
     type:"area",

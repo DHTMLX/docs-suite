@@ -5,7 +5,7 @@ title: inputCreated
 
 @short: fires when a new input is added
 
-@signature: inputCreated: (id: string, input: HTMLInputElement) => any;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
 
 <!-- todo void inputCreated(string id,HTMLElement el){ ... }; - в страрой доке void возвращало -->
 

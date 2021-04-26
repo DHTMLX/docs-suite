@@ -4,7 +4,7 @@ title: filter
 ---          
 
 @short: sets a custom function for filtering Combo Box options
-
+todoanton any приходит из d.ts
 @signature: {'filter?: (item: any, input: string) => boolean;'}
 
 @example: 

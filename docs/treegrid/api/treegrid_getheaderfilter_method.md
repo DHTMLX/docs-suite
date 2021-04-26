@@ -4,8 +4,8 @@ title: getHeaderFilter
 ---          
 
 @short: returns an object of the header filter by column id
-
-@signature: getHeaderFilter(colId: string | number): HTMLElement | object;
+todoanton any приходит из d.ts
+@signature: {'getHeaderFilter(colId: string | number): any;'}
 
 @params:
 - colId	string | number   the id of a column

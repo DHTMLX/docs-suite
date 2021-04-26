@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether an item of Menu is disabled
 
-@signature: isDisabled(id: string): boolean;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
 
 @params:
 - id 		string		an id of the Menu item

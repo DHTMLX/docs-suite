@@ -5,6 +5,8 @@ title: beforeHide
 
 @short: fires before hiding an item of Sidebar
 
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
+
 beforeExpand: () => boolean | void;
 
 @params:

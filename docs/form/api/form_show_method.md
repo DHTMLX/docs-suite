@@ -5,6 +5,8 @@ title: show
 
 @short: shows a form on the page
 
+@signature: {'show(): void;'}
+
 
 
 

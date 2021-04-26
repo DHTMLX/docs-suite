@@ -4,6 +4,8 @@ title: beforeAdd
 ---          
 
 @short: fires before adding a new item into a data collection
+todoanton any приходит из d.ts
+@signature: {'beforeAdd: (obj: any) => boolean | void;'}
 	
 @params:
 - newItem		object			the object of an added item

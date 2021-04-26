@@ -5,7 +5,7 @@ title: afterSelect
 
 @short: fires after selecting an item
 
-@signature: afterSelect: (id: string) => void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
 
 
 @params:

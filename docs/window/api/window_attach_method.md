@@ -5,6 +5,7 @@ title: attach
 
 @short: attaches a DHTMLX component to a dhtmlxWindow
 
+todoanton возможно не подставилась signature
 ```todoapi 
 <!-- void attach(string|object component,object config);
 attach(name: string | IViewFn | IView | IViewConstructor | any, config?: any): void; -->
@@ -13,8 +14,6 @@ attach(name: string | IViewFn | IView | IViewConstructor | any, config?: any): v
 @params:
 - component 		string,object 		the name or object of a component
 - config 			object 				optional, the configuration settings of a component
-
-
 
 @example:
 dhxWindow.attach("richtext",{mode: "document"});

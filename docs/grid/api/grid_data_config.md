@@ -4,8 +4,8 @@ title: data
 ---          
 
 @short: specifies an array of data objects to set into the grid
-
-@signature: data: array;
+todoanton any приходит из d.ts
+@signature: {'data?: any[];'}
 
 @example: 
 var dataset = [

@@ -5,7 +5,7 @@ title: showAt
 
 @short: shows a context menu
 
-@signature: showAt(elem: HTMLElement | MouseEvent | string, showAt?: "bottom" | "right"): void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
 
 
 @example:

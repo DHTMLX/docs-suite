@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether an item of Ribbon is disabled
 
-@signature: isDisabled(id: string): boolean;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
 
 @params:
 - id	string		the id of a Sidebar item

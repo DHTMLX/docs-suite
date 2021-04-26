@@ -4,6 +4,8 @@ title: find
 ---          
 
 @short: finds the item that corresponds to the specified parameters
+todoanton в параметрах ниже есть отличия
+@signature: {'find(rule: IFilterMode): T;'}
 
 @params:
 - by 				string,function			the search criterion (either the key of the item attribute or a filtering function)

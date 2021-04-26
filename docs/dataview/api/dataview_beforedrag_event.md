@@ -5,7 +5,7 @@ title: beforeDrag
 
 @short: fires before dragging of an item has started 
 
-@signature: beforeDrag: (data: object, events: MouseEvent) => void | boolean;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
 
 @returns:
 - result	boolean		false - to block dragging of an item, otherwise true

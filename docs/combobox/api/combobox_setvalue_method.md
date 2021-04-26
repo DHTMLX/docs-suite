@@ -5,15 +5,10 @@ title: setValue
 
 @short: selects option(s) in ComboBox
 
-```todoapi
-void setValue(string|number|array ids);
-setValue(ids: string[] | string): void;
-```
+@signature: {'setValue(ids: string[] | string): void;'}
 
 @params:
 - ids	 string,number,array	 the ids of items from data collection that should be selected in Combo Box
-
-
 
 @example:
 // selects one option

@@ -5,7 +5,7 @@ title: openMenu
 
 @short: fires on expanding a menu item
 
-@signature: openMenu: (id: string) => void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
 
 @params:
 - id 		string		the ID of an opened menu item

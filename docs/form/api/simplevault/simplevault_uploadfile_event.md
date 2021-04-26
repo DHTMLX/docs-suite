@@ -5,13 +5,11 @@ title: uploadFile
 
 @short: fires when a file has been uploaded
  
-
+todoanton возможно не подставилась signature
 @params:
 - file      object      the file object
 - value     array     the current value of the control 
 - extra     any         the server response
-
-
 
 @example:
 form.getItem("simpleVault").events.on("UploadFile", function(file, value, extra) {

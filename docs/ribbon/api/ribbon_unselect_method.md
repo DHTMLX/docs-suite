@@ -5,7 +5,7 @@ title: unselect
 
 @short: unselects a selected Ribbon item
 
-@signature: unselect(id?: string): void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
 
 @params:
 - id	string  optional, the id of a Ribbon item

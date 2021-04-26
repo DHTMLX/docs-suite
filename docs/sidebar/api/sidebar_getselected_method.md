@@ -5,7 +5,7 @@ title: getSelected
 
 @short: returns an array of IDs of selected items
 
-@signature: getSelected(): string[];
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
 
 @returns:
 - param     array     an array of IDs of selected items

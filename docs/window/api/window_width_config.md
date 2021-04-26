@@ -7,11 +7,7 @@ title: width
 
 @signature: {'width?: number;'}
 
-@default:
-50% of the browser window's width
-
-
-@type: number
+@default: 50% of the browser window's width
 
 @example: 
 var dhxWindow = new dhx.Window({

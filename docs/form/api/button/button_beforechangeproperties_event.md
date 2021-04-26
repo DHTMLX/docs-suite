@@ -4,6 +4,8 @@ title: beforeChangeProperties
 ---          
 
 @short: fires before configuration attributes of the control are changed dynamically
+todoanton any приходит из d.ts
+@signature: {'beforeChangeProperties: (name: string, props: any) => boolean | void;'}
 
 @params:
 - properties     object      an object with configuration attributes of the control and their new values

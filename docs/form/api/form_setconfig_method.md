@@ -5,6 +5,8 @@ title: setConfig
 
 @short: sets a new configuration for a form
 
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-layout/sources/types.d.ts)
+
 
 @params:
 - config	object		a configuration object of a form

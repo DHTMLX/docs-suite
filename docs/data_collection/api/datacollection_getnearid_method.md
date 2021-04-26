@@ -4,6 +4,8 @@ title: getNearId
 ---          
 
 @short: looks for a nearest item relative to the specified one
+
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-data/sources/types.d.ts)
     
 @params:
 

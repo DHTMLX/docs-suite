@@ -4,6 +4,8 @@ title: uploadComplete
 ---          
 
 @short: fires when upload is completed
+
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-layout/sources/types.d.ts)
  
 
 @params:

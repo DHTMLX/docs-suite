@@ -4,6 +4,8 @@ title: afterChangeProperties
 ---          
 
 @short: fires after configuration attributes of the control have been changed dynamically
+todoanton any приходит из d.ts
+@signature: {'afterChangeProperties: (name: string, props: any) => void;'}
 
 
 @params:

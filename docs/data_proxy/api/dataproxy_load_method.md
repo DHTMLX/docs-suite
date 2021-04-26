@@ -4,6 +4,8 @@ title: load
 ---          
 
 @short: loads data from an external URL
+todoanton any приходит из d.ts
+@signature: {'load?: () => Promise<any[]>;'}
 
 @returns: 
 - param     promise      "promise" of the data object

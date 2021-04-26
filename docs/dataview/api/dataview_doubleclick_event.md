@@ -4,8 +4,8 @@ title: doubleClick
 ---          
 
 @short: fires on double clicking an item
-
-@signature: doubleClick: (id: string | number, e: Event) => void;
+todoanton any приходит из d.ts
+@signature: {'doubleClick: (id: string, e: Event) => any;'}
 
 @params:
 - id 	string,number 		the id of a clicked item

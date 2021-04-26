@@ -4,7 +4,7 @@ title: afterRowDrag
 ---          
 
 @short: fires after dragging of a row is finished
-
+todoanton any приходит из d.ts
 @signature: {'afterRowDrag: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:

@@ -4,6 +4,8 @@ title: getId
 ---          
 
 @short: returns the id of a selected item
+
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-selection/sources/types.d.ts)
 	
 @returns:
 - id	string|string[]	the id of a selected item

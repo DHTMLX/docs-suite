@@ -5,7 +5,7 @@ title: getState
 
 @short: gets current values/states of controls
 
-@signature: getState(id?: string | number): [key: string]: string;;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
 
 @params:
 - id    string|number   optional, the id of a Toolbar control

@@ -4,7 +4,7 @@ title: eachSeries
 ---          
 
 @short: iterates over Chart series
-
+todoanton any приходит из d.ts
 @signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
 
 ```todoapi

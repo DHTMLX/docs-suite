@@ -4,8 +4,8 @@ title: itemRightClick
 ---          
 
 @short: fires on right clicking an item 
-
-@signature: itemRightClick: (id: string | number, e: MouseEvent) => void;
+todoanton any приходит из d.ts
+@signature: {'itemRightClick: (id: string, e: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("ItemRightClick", function(id, e){

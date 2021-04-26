@@ -5,7 +5,7 @@ title: afterHide
 
 @short: fires after hiding an item of Toolbar
 
-@signature: afterHide: (e: Event) => any;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
 
 <!-- void afterHide(Event e){ ... };  void??? -->
 

@@ -9,9 +9,6 @@ title: thisMonthOnly
 
 @default: false
 
-
-@type: boolean
-
 @example: 
 var calendar = new dhx.Calendar("calendar_container", {
    thisMonthOnly:true

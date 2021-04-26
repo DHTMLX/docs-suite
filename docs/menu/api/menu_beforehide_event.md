@@ -5,7 +5,7 @@ title: beforeHide
 
 @short: fires before hiding an item of Menu
 
-@signature: beforeHide: (id: string, e: Event) => void | boolean;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
 
 @params:
 - id 		string		the ID of a menu item

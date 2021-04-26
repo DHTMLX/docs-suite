@@ -4,8 +4,8 @@ title: enable
 ---          
 
 @short: enables selection of items in DataView
-
-```todoapi ```
+todoanton не тот метод
+@signature: {'enableSelection(): void;'}
 
 @example:
 dataview.selection.enable();

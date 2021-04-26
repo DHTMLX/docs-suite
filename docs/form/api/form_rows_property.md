@@ -5,7 +5,7 @@ title: rows
 
 @short: arranges controls inside the control group vertically
 
-@type: array
+todoanton возможно не подставилась signature
 
 @example: 
 var form = new dhx.Form("form_container", {

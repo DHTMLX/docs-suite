@@ -5,6 +5,8 @@ title: clearValidate
 
 @short: clears validation of a Select control
 
+@signature: {'clearValidate(): void;'}
+
 
 
 

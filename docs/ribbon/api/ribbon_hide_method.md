@@ -5,7 +5,7 @@ title: hide
 
 @short: hides an item of Ribbon
 
-@signature: hide(ids: string | string[]): void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
 
 @params:
 - ids 		string,array	optional, an ID or an array of IDs of items

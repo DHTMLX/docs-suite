@@ -4,8 +4,8 @@ title: getWidget
 ---          
 
 @short: returns the widget attached to Popup
-
-@signature: getWidget(): object;
+todoanton any приходит из d.ts
+@signature: {'getWidget(): any;'}
 
 @returns:
 - param	object      the widget attached to Popup
