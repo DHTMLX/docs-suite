@@ -4,6 +4,23 @@ title: Migration to Newer Versions
 description: description
 ---          
 
+7.0 -> 7.1
+----------------
+
+### Grid/TreeGrid
+
+1) Since v7.1, the **dateFormat** configuration option of the column has been deprecated. <br>
+Though the support of the option continues, we recommend that you use the **format** option together with **type: "date"** instead.
+
+~~~js
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", format: "%M.%d.%Y" 
+}
+~~~
+
+2) The **sort** event has been deprecated in v7.1. Instead of it, you should use the **afterSort** and **beforeSort** events. 
+
 6.5 -> 7.0
 ----------------
 

@@ -5,6 +5,74 @@ title: What's new
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.1
+---------------
+
+<span class="rel_date">released on February 17, 2021</span>
+
+Check the [Migration article](migration.md#70---71) to keep in step with the latest version.
+
+### New functionality
+
+#### Grid
+
+- The ability to display and edit multiline content in the cells of Grid via setting the [autoHeight: true](grid/api/grid_autoheight_config.md) configuration option of Grid (Pro version)
+- New [textarea editor](grid/configuration.md#setting-type-of-column-editor) is added 
+- The ability to set [the format the content of the cells to be displayed in](grid/configuration.md#formatting-columns)
+- Now [columns with dates support the Date() object](grid/api/grid_data_config.md) 
+- The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column
+- The ability [to define the height for a separate row of Grid](grid/configuration.md#row-height)
+- New events are added: [beforeRowResize](grid/api/grid_beforerowresize_event.md) and [afterRowResize](grid/api/grid_afterrowresize_event.md) (Pro version)
+- New events are added: [beforeSort](grid/api/grid_beforesort_event.md) and [afterSort](grid/api/grid_aftersort_event.md)
+
+#### Tree
+
+- New events: [beforeCheck](tree/api/tree_beforecheck_event.md) and [afterCheck](tree/api/tree_aftercheck_event.md)
+
+#### TreeGrid
+
+- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid 
+- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added 
+- The ability to set [the format the content of the cells to be displayed in](treegrid/configuration.md#formatting-columns)
+- Now [columns with dates support the Date() object](treegrid/api/treegrid_data_config.md)
+- The ability to [customize the tooltip of a column](treegrid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
+- The ability [to define the height for a separate row of TreeGrid](treegrid/configuration.md#row-height)
+- New events are added: [beforeRowResize](treegrid/api/treegrid_beforerowresize_event.md) and [afterRowResize](treegrid/api/treegrid_afterrowresize_event.md), [beforeSort](treegrid/api/treegrid_beforesort_event.md) and [afterSort](treegrid/api/treegrid_aftersort_event.md)
+- The ability to define the id of the parent root via the [rootParent](treegrid/api/treegrid_rootparent_config.md) configuration option of TreeGrid
+
+
+#### Window
+
+- New methods are added: [unsetFullScreen()](window/api/window_unsetfullscreen_method.md) and [isFullScreen()](window/api/window_isfullscreen_method.md)
+
+### Updates
+
+- Chart. [Improved tooltips for all charts](chart/charts_overview.md). 
+- Chart. Now the tooltip will contain values of multiple series on hovering over a chart ([Line](https://snippet.dhtmlx.com/t881qcim), [Spline](https://snippet.dhtmlx.com/2wvmdm0y), [Area](https://snippet.dhtmlx.com/nv6t6lvm), [Spline Area](https://snippet.dhtmlx.com/bo82km4n)).
+- Grid/TreeGrid. The values of the [type](grid/api/api_gridcolumn_properties.md) configuration property of the Grid/TreeGrid columns are updated. Now the type sets the alignment of content inside cells and defines the type of the editor used in the cells of the column.
+
+### Fixes
+
+- Chart. Fix the issue with Bar charts that caused series that are not filled in to be shown on the page
+- Chart. Fix the incorrect display of the line above the area filled with the color in the Bar chart
+- DataView. Fix the script error thrown after editing a DataView item
+- Grid/TreeGrid. Fix the incorrect work of selection when the "hidden: true" property is used
+- Grid/TreeGrid. Fix the issue with the incorrect size of selection when selecting the cell in the first column of the grid
+- Grid/TreeGrid. Speed optimization of the "adjust" property
+- Grid. Fix the issues with the "beforeRowDrop" and "columnDrag" events
+- Grid. Fix the issue with resizing of the column when the "autoWidth" property is used
+- Grid. Fix the issue with key navigation in the combobox editor
+- KeyManager module is reworked
+- List. Fix the issue with the "afterFocusChange" event  
+- Pagination. Fix the issues with the Pagination widget when using together with Grid, TreeGrid, DataView, List
+- Pagination. Fix the incorrect work of the "showItem" method 
+- Tabbar. Fix the issue that caused the usage of memory to increase when working in Firefox 
+- TreeGrid. Fix the issue with positioning of the input editor of a TreeGrid cell when editing a cell
+- Window. Fix the incorrect display of the menu items when placing the menu inside the window
+- Window. Fix the issue with the sequence of closing modal windows when using key navigation 
+- Fix the issue that invoked the `domvm.js` warning in the console
+
+
 Version 7.0.3
 ---------------
 

@@ -67,12 +67,12 @@ The returned object contains the following set of properties:
 			<td>(<i>string</i>) the type of a column: "string"|"number"|"boolean"|"any"|"date"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>dateFormat</b></td>
-			<td>(<i>string</i>) defines <a href="https://docs.dhtmlx.com/suite/calendar__api__calendar_dateformat_config.html">the format of dates</a> (type:"date")</td>
+			<td class="webixdoc_links0"><b>format</b></td>
+			<td>(<i>string</i>) defines the format for the content of the column's cells</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>options</b></td>
@@ -114,6 +114,10 @@ The returned object contains the following set of properties:
         <tr>
 			<td class="webixdoc_links0"><b>tooltip</b></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a column, <i>true</i> by default</td>
+		</tr>
+		<tr>
+			<td class="webixdoc_links0"><b>tooltipTemplate</b></td>
+			<td>(<i>function</i>) returns a template for the content of the tooltip</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>$cellCss</b></td>
