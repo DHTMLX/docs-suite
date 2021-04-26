@@ -30,13 +30,15 @@ title: Tree API overview
 ## Events
 
 | Name                                       | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
+|--------------------------------------------|---------------------------------------------------|
+| [](tree/api/tree_aftercheck_event.md)      | @getshort(tree/api/tree_aftercheck_event.md)      |
 | [](tree/api/tree_aftercollapse_event.md)   | @getshort(tree/api/tree_aftercollapse_event.md)   |
 | [](tree/api/tree_afterdrag_event.md)       | @getshort(tree/api/tree_afterdrag_event.md)       |
 | [](tree/api/tree_afterdrop_event.md)       | @getshort(tree/api/tree_afterdrop_event.md)       |
 | [](tree/api/tree_aftereditend_event.md)    | @getshort(tree/api/tree_aftereditend_event.md)    |
 | [](tree/api/tree_aftereditstart_event.md)  | @getshort(tree/api/tree_aftereditstart_event.md)  |
 | [](tree/api/tree_afterexpand_event.md)     | @getshort(tree/api/tree_afterexpand_event.md)     |
+| [](tree/api/tree_beforecheck_event.md)     | @getshort(tree/api/tree_beforecheck_event.md)     |
 | [](tree/api/tree_beforecollapse_event.md)  | @getshort(tree/api/tree_beforecollapse_event.md)  |
 | [](tree/api/tree_beforedrag_event.md)      | @getshort(tree/api/tree_beforedrag_event.md)      |
 | [](tree/api/tree_beforedrop_event.md)      | @getshort(tree/api/tree_beforedrop_event.md)      |
