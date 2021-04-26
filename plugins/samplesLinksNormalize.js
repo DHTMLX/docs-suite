@@ -64,8 +64,8 @@ const updateFileData = file => {
 	const t_signature = fileData.match(t_regex);
 	t_signature && t_signature.forEach((_, i) => fileData = normalizeLink(fileData, t_regex, i));
 
-	const hasTitle = /\*\*Related samples\*\*:\n((- \[.+\]\(.+\)\s+)+)/gm.exec(fileData);
-	const linksLength = hasTitle && hasTitle[1].match(/- \[.+\]\(.+\)\s+/gm).length;
+	const hasTitle = /\*\*Related samples\*\*:\n((- \[.+\]\(.+\)(\s+|)+)+)/gm.exec(fileData);
+	const linksLength = hasTitle && hasTitle[1].match(/- \[.+\]\(.+\)(\s+|)/gm).length;
 	fileData = linksLength ? fileData.replace(/\*\*Related samples\*\*/, () => {
 		return linksLength > 1 ? "**Related samples**" : "**Related sample**";
 	}) : fileData;
