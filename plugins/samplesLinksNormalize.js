@@ -43,17 +43,28 @@ const getFiles = (dir, files_) => {
 	return files_;
 };
 
+const normalizeLink = (fileData, regex, count) => fileData.replace(regex, i => {
+	const signature = regex.exec(fileData);
+	const title = count === 0 && fileData.indexOf("**Related samples**") === -1 ? `**Related samples**:\n` : "";
+	return signature ? `${title}- [${signature[2]}](${signature[1]})` : i;
+});
+
 const updateFileData = file => {
-	const fileData = fs.readFileSync(file.filePath, 'utf-8');
-	let newData = fileData.replace(/^@relatedsample:\s+(https:\/\/\w+.\w+.\w+\/\w+)\s(.*)$/gm, i => {
-		const signature = /^@relatedsample:\s+(https:\/\/\w+.\w+.\w+\/\w+)\s(.*)$/gm.exec(fileData);
-		return signature ? `**Related sample**: [${signature[2]}](${signature[1]})` : i;
-	});
-	newData = newData.replace(/^{{\w+\s+(https:\/\/\w+.\w+.\w+\/\w+)\s(.*)}}$/gm, i => {
-		const signature = /^{{\w+\s+(https:\/\/\w+.\w+.\w+\/\w+)\s(.*)}}$/gm.exec(fileData);
-		return signature ? `**Related sample**: [${signature[2]}](${signature[1]})` : i;
-	});
-	fs.writeFileSync(file.filePath, newData, 'utf-8');
+	let fileData = fs.readFileSync(file.filePath, 'utf-8');
+
+	const f_regex = new RegExp(/@relatedsample:\s+(https:\/\/\w+.\w+.\w+\/\w+)\s(.*)/gm);
+	const f_signature = fileData.match(f_regex);
+	f_signature && f_signature.forEach((_, i) => fileData = normalizeLink(fileData, f_regex, i));
+
+	const s_regex = new RegExp(/^{{\w+\s+(https:\/\/\w+.\w+.\w+\/\w+)\s(.*)}}$/gm);
+	const s_signature = fileData.match(s_regex);
+	s_signature && s_signature.forEach((_, i) => fileData = normalizeLink(fileData, s_regex, i));
+
+	const t_regex = new RegExp(/^(https:\/\/snippet.dhtmlx.com\/\w+)\s+(\w+. .+)$/gm);
+	const t_signature = fileData.match(t_regex);
+	t_signature && t_signature.forEach((_, i) => fileData = normalizeLink(fileData, t_regex, i));
+
+	fs.writeFileSync(file.filePath, fileData, 'utf-8');
 };
 
 getFiles("../docs/").forEach(updateFileData);
