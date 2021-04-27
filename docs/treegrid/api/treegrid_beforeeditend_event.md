@@ -4,11 +4,11 @@ title: beforeEditEnd
 ---          
 
 @short: fires before editing of a cell is ended
-todoanton any приходит из d.ts
-@signature: {'beforeEditEnd: (value: any, row: IRow, col: ICol) => boolean | void;'}
+
+@signature: {'beforeEditEnd: (value: string | number, row: IRow, col: ICol) => boolean | void;'}
 	
 @params:
-- value			string		the new value of a cell
+- value			string|number		the new value of a cell
 - row			object		an object with a row configuration
 - column		object		an object with a column configuration
 

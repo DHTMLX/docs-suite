@@ -4,8 +4,8 @@ title: mapRange
 ---          
 
 @short: returns a new array of the items correspond to the specified parameters
-todoanton any приходит из d.ts
-@signature: {'mapRange(from: number, to: number, cb: DataCallback<T>): any[];'}
+
+@signature: {'mapRange(from: number, to: number, cb: DataCallback<T>): T[];'}
 
 @params:
 - from			number		the initial position of an item in the range

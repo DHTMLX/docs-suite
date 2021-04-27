@@ -4,8 +4,8 @@ title: parse
 ---          
 
 @short: loads data from a local data source 
-todoanton any приходит из d.ts
-@signature: {'parse(data: T[]): any;'}
+
+@signature: {'parse(data: T[]): void;'}
 
 @params:
 

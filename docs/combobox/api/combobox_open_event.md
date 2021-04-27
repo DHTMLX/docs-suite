@@ -4,8 +4,8 @@ title: open
 ---          
 
 @short: fires when a list with options is opened
-todoanton any приходит из d.ts
-@signature: {'open: () => any;'}
+
+@signature: {'open: () => void;'}
 
 @example:
 combo.events.on("Open", function(){

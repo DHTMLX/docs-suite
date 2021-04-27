@@ -4,7 +4,7 @@ title: data
 ---          
 
 @short: specifies an array of data objects to set into the dataview
-todoanton any приходит из d.ts
+
 @signature: {'data?: DataCollection<any> | any[];'}
 
 @example: 

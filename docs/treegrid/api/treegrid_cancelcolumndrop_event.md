@@ -4,8 +4,8 @@ title: cancelColumnDrop
 ---          
 
 @short: fires on moving a mouse pointer out of borders of a column while dragging the column
-todoanton any приходит из d.ts
-@signature: {'cancelColumnDrop: (data: IDragInfo, events: MouseEvent) => any;'}
+
+@signature: {'cancelColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object

@@ -4,8 +4,8 @@ title: dragRowOut
 ---          
 
 @short: fires when a row is dragged out of a potential target
-todoanton any приходит из d.ts
-@signature: {'dragRowOut: (data: IDragInfo, events: MouseEvent) => any;'}
+
+@signature: {'dragRowOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object

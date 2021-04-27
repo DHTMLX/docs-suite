@@ -4,7 +4,7 @@ title: updateUrl
 ---    
 
 @short: updates the initial URL and parameters that were specified when initializing proxy
-todoanton any приходит из d.ts
+
 @signature: {'updateUrl?: (url?: string, params?: any) => void;'}
 
 @params:

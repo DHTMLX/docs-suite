@@ -4,8 +4,8 @@ title: afterValidate
 ---          
 
 @short: fires after the control value is validated
-todoanton any приходит из d.ts
-@signature: {'afterValidate: (name: string, value: any, isValid: boolean) => void;'}
+
+@signature: {'afterValidate: (value: ISimpleVaultValue[], isValid: boolean) => void;'}
  
 @params:
 - value       array  the validated value

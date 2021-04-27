@@ -4,8 +4,8 @@ title: modeChange
 ---          
 
 @short: fires on change of the calendar mode
-todoanton any приходит из d.ts
-@signature: {'modeChange: (mode: string) => any;'}
+
+@signature: {'modeChange: (mode: string) => void;'}
 
 @params:
 - mode      string      the calendar mode ("calendar", "year", "month", "timepicker")

@@ -4,7 +4,7 @@ title: update
 ---          
 
 @short: updates properties of the item
-todoanton any приходит из d.ts
+
 @signature: {'updateUrl?: (url?: string, params?: any) => void;'}
 	
 @params:

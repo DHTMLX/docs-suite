@@ -4,8 +4,8 @@ title: change
 ---          
 
 @short: fires on changing the active tab
-todoanton any приходит из d.ts
-@signature: {'change: (id: string, prev: string) => any;'}
+
+@signature: {'change: (id: string, prev: string) => void;'}
 <!-- void change(string activeId,string prevId){ ... };
  [TabbarEvents.change]: (id: string, prev: string) => any; -->
 

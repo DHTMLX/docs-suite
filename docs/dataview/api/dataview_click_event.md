@@ -4,11 +4,11 @@ title: click
 ---          
 
 @short: fires on clicking an item
-todoanton any приходит из d.ts
-@signature: {'click: (id: string, e: Event) => any;'}
+
+@signature: {'click: (id: string, e: Event) => void;'}
 
 @params:
-- id 	string,number 		the id of a clicked item
+- id 	string|number 		the id of a clicked item
 - e 	Event 				a native event object
 
 

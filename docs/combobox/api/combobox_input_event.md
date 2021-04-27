@@ -4,11 +4,11 @@ title: input
 ---          
 
 @short: fires on typing text in an input of Combobox
-todoanton any приходит из d.ts
-@signature: {'input: (value: any) => any;'}
+
+@signature: {'input: (value: string) => void;'}
 
 @params:
-- value     string|number       an entered value
+- value     string       an entered value
 
 @example:
 combobox.events.on("Input", function(value) {

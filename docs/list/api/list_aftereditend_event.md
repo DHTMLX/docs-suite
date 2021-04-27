@@ -4,8 +4,8 @@ title: afterEditEnd
 ---          
 
 @short: fires after editing of an item is ended
-todoanton any приходит из d.ts
-@signature: {'afterEditEnd: (value: any, id: string) => void;'}
+
+@signature: {'afterEditEnd: (value: string, id: string) => void;'}
 
 @params:
 - value		string		the value of an item

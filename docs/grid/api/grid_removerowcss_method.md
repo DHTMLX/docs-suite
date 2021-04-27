@@ -4,11 +4,11 @@ title: removeRowCss
 ---          
 
 @short: removes a style from a row
-todoanton any приходит из d.ts
-@signature: {'removeRowCss(id: any, css: string): void;'}
+
+@signature: {'removeRowCss(id: string | number, css: string): void;'}
 
 @params:
-- id	string,number		the id of a row
+- id	string|number		the id of a row
 - css 	string 				the name of the CSS class
 
 @example:

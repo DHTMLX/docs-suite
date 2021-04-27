@@ -5,7 +5,6 @@ title: data
 
 @short: specifies an array of data objects to set into the combobox
 
-todoanton any приходит из d.ts
 @signature: {'data?: DataCollection<any> | any[];'}
 
 @example:

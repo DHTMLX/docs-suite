@@ -4,8 +4,8 @@ title: monthSelected
 ---          
 
 @short: fires after a month was selected in the calendar
-todoanton any приходит из d.ts
-@signature: {'monthSelected: (month: number) => any;'}
+
+@signature: {'monthSelected: (month: number) => void;'}
 
 @params:
 - month     number      the number of the selected month (from 0 to 11)
