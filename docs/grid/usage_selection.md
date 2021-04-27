@@ -38,11 +38,11 @@ You can set selection to one or more rows or cells using the [setCell()](grid/ap
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>ctrlUp</b></td>
-			<td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="https://docs.dhtmlx.com/suite/grid__configuration.html#multipleselectionofgridcells">for multiselection mode</a>)</td>
+			<td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../grid/configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>shiftUp</b></td>
-			<td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="https://docs.dhtmlx.com/suite/grid__configuration.html#multipleselectionofgridcells">for multiselection mode</a>)</td>
+			<td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../grid/configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
 		</tr>
     </tbody>
 </table>

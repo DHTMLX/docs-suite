@@ -42,7 +42,7 @@ title: TreeGrid API overview
 
 :::info important
 - Use [the methods of TreeCollection](tree_collection/index.md) to work with data of TreeGrid. 
-- Apply [the methods of Selection](treegrid/api/api_overview.md#selection-methods) to manipulate the selection of TreeGrid cells.
+- Apply [the methods of Selection](treegrid/api/api_overview.md#selection-methods) to manage the selection of TreeGrid cells.
 :::
 
 ## TreeGrid events
@@ -170,7 +170,7 @@ title: TreeGrid API overview
 
 :::info important
 - Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of TreeGrid. 
-- Apply [the events of Selection](treegrid/api/api_overview.md#selection-events) to manipulate the selection of TreeGrid cells.
+- Apply [the events of Selection](treegrid/api/api_overview.md#selection-events) to control the selection of TreeGrid cells.
 :::
 
 ## TreeGrid properties

@@ -23,8 +23,8 @@ title: Tree API overview
 | [](tree/api/tree_uncheckitemnew_method.md) | @getshort(tree/api/tree_uncheckitemnew_method.md) |
 
 :::info important
-- Use [TreeCollection methods](tree_collection/index.md) to work with data. 
-- А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the methods of TreeCollection](tree_collection/index.md) to work with data. 
+- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of Tree items. 
 :::
 
 ## Events
@@ -56,8 +56,8 @@ title: Tree API overview
 | [](tree/api/tree_itemrightclick_event.md)  | @getshort(tree/api/tree_itemrightclick_event.md)  |
 
 :::info important
-- Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
-- А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of Tree. 
+- Apply [the events of Selection](selection/index.md#events) to control the selection of Tree items. 
 :::
 
 ## Properties

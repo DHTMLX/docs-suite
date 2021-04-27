@@ -37,7 +37,7 @@ title: Grid API overview
 
 :::info important
 - Use [the methods of DataCollection](data_collection/index.md) to work with data. 
-- Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manipulate the selection of Grid cells. 
+- Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
 :::
 
 ## Grid events
@@ -157,7 +157,7 @@ title: Grid API overview
 
 :::info important
 - Use [the events of DataCollection](data_collection/index.md#events) to work with data of Grid. 
-- Apply [the events of Selection](grid/api/api_overview.md#selection-events) to manipulate the selection of Grid cells. 
+- Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
 :::
 
 ## Grid properties
