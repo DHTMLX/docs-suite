@@ -120,6 +120,7 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
+    noIndex: true, // todo: delete on release
     title: 'DHTMLX Suite Documentation',
     tagline: 'DHTMLX Suite Documentation',
     url: 'https://docs.dhtmlx.com/suita/',
