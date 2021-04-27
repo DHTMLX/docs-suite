@@ -14,9 +14,10 @@ title: Dataview API overview
 | [](dataview/api/dataview_paint_method.md)            | @getshort(dataview/api/dataview_paint_method.md)            |
 | [](dataview/api/dataview_setfocus_method.md)         | @getshort(dataview/api/dataview_setfocus_method.md)         |
 
+
 :::info important
-- Use [DataCollection methods](data_collection/index.md) to work with data. 
-- А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the methods of DataCollection](data_collection/index.md) to work with data. 
+- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of DataView items. 
 :::
 
 ## Events
@@ -42,10 +43,9 @@ title: Dataview API overview
 | [](dataview/api/dataview_itemrightclick_event.md)    | @getshort(dataview/api/dataview_itemrightclick_event.md)  |
 
 :::info important
-Use [DataCollection events](data_collection/index.md#events) to work with data. 
-- А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the events of DataCollection](data_collection/index.md#events) to work with data of DataView. 
+- Apply [the events of Selection](selection/index.md#events) to control the selection of DataView items. 
 :::
-
 ## Properties
 
 | Name                                                   | Description                                                   |

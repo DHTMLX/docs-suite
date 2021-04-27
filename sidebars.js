@@ -445,29 +445,6 @@ module.exports = {
                   "dataview/api/dataview_template_config",
                 ],
               },
-              {
-                type: "category",
-                label: "Selection API",
-                items: [{
-                  type: "category",
-                  label: "Selection Methods",
-                  items: [
-                    "dataview/api/selection/selection_disable_method",
-                    "dataview/api/selection/selection_enable_method",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Selection Events",
-                  items: [
-                    "dataview/api/selection/selection_afterselect_event",
-                    "dataview/api/selection/selection_afterunselect_event",
-                    "dataview/api/selection/selection_beforeselect_event",
-                    "dataview/api/selection/selection_beforeunselect_event",
-                  ],
-                },
-                ],
-              },
             ],
           },
           "dataview/initialization",
@@ -1672,29 +1649,6 @@ module.exports = {
                   "list/api/list_virtual_config",
                 ],
               },
-              {
-                type: "category",
-                label: "Selection API",
-                items: [{
-                  type: "category",
-                  label: "Methods",
-                  items: [
-                    "list/api/selection/selection_disable_method",
-                    "list/api/selection/selection_enable_method",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Events",
-                  items: [
-                    "list/api/selection/selection_afterselect_event",
-                    "list/api/selection/selection_afterunselect_event",
-                    "list/api/selection/selection_beforeselect_event",
-                    "list/api/selection/selection_beforeunselect_event",
-                  ],
-                },
-                ],
-              },
             ],
           },
           "list/initialization",
@@ -2438,29 +2392,6 @@ module.exports = {
                   "tree/api/tree_keynavigation_config",
                   "tree/api/tree_rootid_config",
                   "tree/api/tree_selection_config",
-                ],
-              },
-              {
-                type: "category",
-                label: "Selection API",
-                items: [{
-                  type: "category",
-                  label: "Methods",
-                  items: [
-                    "tree/api/selection/selection_disable_method",
-                    "tree/api/selection/selection_enable_method",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Events",
-                  items: [
-                    "tree/api/selection/selection_afterselect_event",
-                    "tree/api/selection/selection_afterunselect_event",
-                    "tree/api/selection/selection_beforeselect_event",
-                    "tree/api/selection/selection_beforeunselect_event",
-                  ],
-                },
                 ],
               },
             ],
