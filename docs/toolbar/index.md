@@ -26,7 +26,7 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 
 Describes the steps of initializing Toolbar and working with it.
 
-- [](toolbar/how_to_start.md)                
+- [](toolbar/how_to_start.md)
 - [](toolbar/load_data.md) 
 - [](toolbar/common_methods.md)
 - [](toolbar/customization.md)
@@ -37,8 +37,9 @@ Describes the steps of initializing Toolbar and working with it.
 Discusses the creation of Toolbar controls and the possibilities of manipulating them.
 
 - [](toolbar/button.md)
-- [](toolbar/customhtmlbutton.md)                                                          
-- [](toolbar/image_button.md)   
+- [](toolbar/customhtmlbutton.md)
+- [](toolbar/image_button.md)
+- [](toolbar/datepicker.md) 
 - [](toolbar/input.md) 
 - [](toolbar/navitem.md)
 - [](toolbar/selectbutton.md) 

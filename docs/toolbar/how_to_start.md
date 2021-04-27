@@ -31,6 +31,8 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 
 {{editor	https://snippet.dhtmlx.com/i5a9mx2i	Toolbar. Basic Initialization}}
 
+
+
 Include source files
 --------------------
 
@@ -117,7 +119,3 @@ toolbar.data.parse(data);
 ~~~
 
 Detailed information on loading data into Toolbar is given in the article toolbar/load_data.md.
-
-
-
-

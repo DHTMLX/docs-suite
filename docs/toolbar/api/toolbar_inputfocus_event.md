@@ -1,7 +1,7 @@
 ---
 sidebar_label: inputFocus
 title: inputFocus
----          
+--- 
 
 @short: fires when a control is focused
 
@@ -14,7 +14,6 @@ title: inputFocus
 toolbar.events.on("inputFocus", function(id){
     console.log(id);
 });
-
 
 @template: api_event
 @descr:

@@ -39,5 +39,3 @@ var form = new dhx.Form("form_container");
 ~~~
 
 {{editor	https://snippet.dhtmlx.com/x8n18cr4	Form. Localization}}
-
-

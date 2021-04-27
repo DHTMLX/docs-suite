@@ -27,15 +27,16 @@ Use [TreeCollection methods](tree_collection/index.md) to work with data.
 
 ## Toolbar events
 
-| Name                                           | Description                                          |
-| ---------------------------------------------- | ---------------------------------------------------- |
-| [](toolbar/api/toolbar_afterhide_event.md)     | @getshort(toolbar/api/toolbar_afterhide_event.md)    |
-| [](toolbar/api/toolbar_beforehide_event.md)    | @getshort(toolbar/api/toolbar_beforehide_event.md)   |
-| [](toolbar/api/toolbar_click_event.md)         | @getshort(toolbar/api/toolbar_click_event.md)        |
-| [](toolbar/api/toolbar_inputblur_event.md)     | @getshort(toolbar/api/toolbar_inputblur_event.md)    |
-| [](toolbar/api/toolbar_inputcreated_event.md)  | @getshort(toolbar/api/toolbar_inputcreated_event.md) |
-| [](toolbar/api/toolbar_inputfocus_event.md)    | @getshort(toolbar/api/toolbar_inputfocus_event.md)   |
-| [](toolbar/api/toolbar_openmenu_event.md)      | @getshort(toolbar/api/toolbar_openmenu_event.md)     |
+| Name                                          | Description                                          |
+| --------------------------------------------- | ---------------------------------------------------- |
+| [](toolbar/api/toolbar_afterhide_event.md)    | @getshort(toolbar/api/toolbar_afterhide_event.md)    |
+| [](toolbar/api/toolbar_beforehide_event.md)   | @getshort(toolbar/api/toolbar_beforehide_event.md)   |
+| [](toolbar/api/toolbar_click_event.md)        | @getshort(toolbar/api/toolbar_click_event.md)        |
+| [](toolbar/api/toolbar_inputblur_event.md)    | @getshort(toolbar/api/toolbar_inputblur_event.md)    |
+| [](toolbar/api/toolbar_inputcreated_event.md) | @getshort(toolbar/api/toolbar_inputcreated_event.md) |
+| [](toolbar/api/toolbar_inputfocus_event.md)   | @getshort(toolbar/api/toolbar_inputfocus_event.md)   |
+| [](toolbar/api/toolbar_openmenu_event.md)     | @getshort(toolbar/api/toolbar_openmenu_event.md)     |
+| [](toolbar_inputchange_event.md)              | @getshort(toolbar_inputchange_event.md)              |
 
 :::info important
 Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
@@ -57,6 +58,10 @@ A Button control can have [next properties](toolbar/api/api_button_properties.md
 ## Toolbar Custom HTML button properties
 
 A Custom HTML button control may possess [next properties](toolbar/api/api_customhtmlbutton_properties.md).
+
+## Toolbar Datepicker properties
+
+A Datepicker control can have [next properties](toolbar/api/api_datepicker_properties.md).
 
 ## Toolbar ImageButton properties
 

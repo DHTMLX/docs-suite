@@ -21,15 +21,15 @@ You can also attach the HTML code directly to the Container control. See the sam
 
 ## Methods 
 
-[List of the Container control methods](form/api/api_overview.md#container-api) `to do anchor link`
+[List of the Container control methods](form/api/api_overview.md#container-methods)
 
 You can manipulate the Container control by using methods of the object returned by the [getItem](form/api/form_getitem_method.md) method. Use methods to hide or show the Container, set and get properties, and so on.
 
 ## Events
 
-[List of the Container control events](form/api/api_overview.md#container-api) `to do anchor link`
+[List of the Container control events](form/api/api_overview.md#container-events)
 
-You can manipulate the Container control by using events of the object returned by the [getItem](form/api/form_getitem_method.md) method. Events are helping you to manipulate Container control dynamically. 
+You can manipulate the Container control by using events of the object returned by the [getItem](form/api/form_getitem_method.md) method. Events are helping you to manipulate Container control dynamically.
 
 ## Properties
 
