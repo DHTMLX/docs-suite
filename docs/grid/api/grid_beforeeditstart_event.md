@@ -4,13 +4,13 @@ title: beforeEditStart
 ---          
 
 @short: fires before editing of a cell has started
-
-@signature: beforeEditStart: (row: object, col: object, editorType: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea") => boolean | void;
+todoanton => boolean | void
+@signature: {'beforeEditStart: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;'}
 	
-<!-- @params:
+@params:
 - row			object		an object with a row configuration
-- column		object		an object with a column configuration
-- editorType	string		the type of a cell editor:"input", "select", "datePicker", "checkbox", "combobox" -->
+- col		object		an object with a column configuration
+- editorType	string		the type of a cell editor:"input", "select", "datePicker", "checkbox", "combobox"
 
 
 @returns:

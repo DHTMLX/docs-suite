@@ -4,8 +4,8 @@ title: beforeRowHide
 ---          
 
 @short: fires before a row is hidden
-
-@signature: beforeRowHide: (row: object) => boolean | void;
+todoanton returns  => boolean | void; ?
+@signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
 
 @params: 
 - row   object  an object with a row configuration

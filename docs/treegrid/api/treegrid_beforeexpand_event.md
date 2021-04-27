@@ -4,8 +4,8 @@ title: beforeExpand
 ---          
 
 @short: fires before expanding a treegrid
-
-@signature: beforeExpand: (id: string | number) => boolean | void;
+todoanton string | number ?
+@signature: {'beforeExpand: (id: string) => boolean | void;'}
 	
 @params:
 - rowId			string,number		the id of an expanded row

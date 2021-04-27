@@ -5,12 +5,10 @@ title: afterUnSelect
 
 @short: fires after unselecting an item
 
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @params:
 - id    string  the id of an item
-
-
-
 
 @example:
 tree.selection.events.on("AfterUnSelect", function(id) {
@@ -30,8 +28,3 @@ tree.events.on("AfterUnSelect", function(id) {
 @relatedapi: 
 tree/api/selection/selection_enable_method.md
 tree/api/tree_selection_config.md
-
-
-
-
-

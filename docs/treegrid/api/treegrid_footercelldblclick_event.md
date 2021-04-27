@@ -5,10 +5,10 @@ title: footerCellDblClick
 
 @short: fires on double-click on a grid footer cell
 
-@signature: footerCellDblClick: (col: object, e: MouseEvent) => void;
+@signature: {'footerCellDblClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- column		object		an object with a column configuration
+- col		object		an object with a column configuration
 - e				Event		a native event object
 
 @example:

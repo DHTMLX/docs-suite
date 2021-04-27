@@ -4,6 +4,8 @@ title: setProperties
 ---          
 
 @short: allows changing available configuration attributes of the control dynamically
+todoanton распиши, может, на русском, что есть что  properties это props?
+@signature: {'setProperties(arg: string | { [name: string]: IFormProps; }, props?: IFormProps): void;'}
 
 @params:
 - properties   object      an object with the available attributes of the control and their new values

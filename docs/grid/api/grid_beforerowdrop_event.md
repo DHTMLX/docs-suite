@@ -4,12 +4,12 @@ title: beforeRowDrop
 ---          
 
 @short: fires before the user has finished dragging and released the mouse button over a target row
-
-@signature: beforeRowDrop: (data: object, events: MouseEvent) => void | boolean;
+todoanton => void | boolean;
+@signature: {'beforeRowDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
+- events		    Event		a native event object 
 
 @returns:
 - result	boolean		false - to block the default action, otherwise true

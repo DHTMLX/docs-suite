@@ -4,6 +4,8 @@ title: multiselection
 ---          
 
 @short: enables selection of multiple DataView items, sets the mode of multiselection
+todoanton было boolean|string multiselection; и может подставить true, false, "click", "ctrlClick"  ?
+@signature: {'multiselection?: boolean | MultiselectionMode;'}
 
 ```todoapi
 boolean|string multiselection;

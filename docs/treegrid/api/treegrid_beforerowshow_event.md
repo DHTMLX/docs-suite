@@ -4,8 +4,8 @@ title: beforeRowShow
 ---          
 
 @short: fires before a row is shown on a page
-
-@signature: beforeRowShow: (row: object) => boolean | void;
+todoanton => boolean | void или только boolean
+@signature: {'beforeRowShow: (row: IRow) => boolean | void;'}
 
 @params: 
 - row   object  an object with a row configuration

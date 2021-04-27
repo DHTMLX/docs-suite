@@ -4,12 +4,12 @@ title: beforeRowDrag
 ---          
 
 @short: fires before dragging of a row has started
-
-@signature: beforeRowDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;
+todoanton returns void | boolean; ?
+@signature: {'beforeRowDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @returns:
 - result	boolean		false - to prevent dragging a row, otherwise true

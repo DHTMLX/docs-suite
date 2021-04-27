@@ -4,8 +4,8 @@ title: dragItem
 ---          
 
 @short: enables the possibility to reorder treegrid columns by drag and drop
-
-@signature: dragItem?: "column";
+todoanton возможно dragItem?: "column";
+@signature: {'dragItem?: IDragType;'}
 
 @example: 
 var treegrid = new dhx.TreeGrid("treegrid_container", {

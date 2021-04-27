@@ -4,8 +4,8 @@ title: beforeCollapse
 ---          
 
 @short: fires before collapsing a treegrid
-
-@signature: afterExpand: (rowId: string | number) => boolean;
+todoanton rowId ??  string | number ?? result		boolean  ??
+@signature: {'beforeCollapse: (id: string) => boolean | void;'}
 	
 @params:
 - rowId			string | number		the id of a collapsed row
