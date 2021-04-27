@@ -85,8 +85,8 @@ var form = new dhx.Form("form_container", {
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample:
-https://snippet.dhtmlx.com/wnscgb50	Form. Form Custom Styles
+**Related sample**:
+- [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
 
 @related: form/how_to_start.md#initializeform
 form/customization.md

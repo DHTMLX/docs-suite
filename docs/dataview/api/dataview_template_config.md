@@ -34,8 +34,8 @@ The template function takes one parameter:
     </tbody>
 </table>
 
-@relatedsample:
-https://snippet.dhtmlx.com/d6l6grr7	Dataview. Render Template
+**Related sample**:
+- [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
 
 @related: dataview/configuration.md#templatefordataviewitems
 

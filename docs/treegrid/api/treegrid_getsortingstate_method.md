@@ -33,8 +33,8 @@ The return object includes the following attributes:
 </table>
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/bdwwhvls	TreeGrid. Get sorting state
+**Related sample**:
+- [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
 
 
 @related: treegrid/usage.md#gettingthesortingstate

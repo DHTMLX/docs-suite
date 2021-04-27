@@ -17,8 +17,8 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample:
-https://snippet.dhtmlx.com/v0dyh06q	TreeGrid. Selection
+**Related sample**:
+- [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
 
 @related: treegrid/configuration.md#selection
 treegrid/initialization.md#initializetreegrid

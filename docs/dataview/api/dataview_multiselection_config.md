@@ -22,7 +22,7 @@ Setting the **multiselection** property to *true* presupposes selection of multi
 
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/g0xwdx10	Dataview. Multiselection Dataview
+**Related sample**:
+- [Dataview. Multiselection Dataview](https://snippet.dhtmlx.com/g0xwdx10)
 
 @related: dataview/configuration.md#multipleselectionofitems

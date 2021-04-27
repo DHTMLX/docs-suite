@@ -47,7 +47,8 @@ The data object contains the following parameters:
 </table>
 
 
-@relatedsample:  https://snippet.dhtmlx.com/dfdlzpqb	Setup drag column (Pro)
+**Related sample**:
+- [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
  
 @relatedapi:

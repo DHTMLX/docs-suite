@@ -27,9 +27,9 @@ var sidebar = dhx.Sidebar("sidebar_container", {
 @template:	api_config
 @descr: 
 
-@relatedsample: 
-https://snippet.dhtmlx.com/y8y7iw42	Sidebar. Config Data
-https://snippet.dhtmlx.com/f4wo06yo	Sidebar. Init With External Data
+**Related samples**:
+- [Sidebar. Config Data](https://snippet.dhtmlx.com/y8y7iw42)
+- [Sidebar. Init With External Data](https://snippet.dhtmlx.com/f4wo06yo)
 
 @related: sidebar/data_loading.md
 

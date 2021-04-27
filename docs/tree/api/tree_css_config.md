@@ -59,6 +59,6 @@ var tree = new dhx.Tree("tree", {
 @related: tree/initialization_of_dhtmlxtree.md#initializetree
 tree/setting_tree_appearance.md#styling
 
-@relatedsample: 
-https://snippet.dhtmlx.com/ocv4p7zg	Tree. Custom Styles
-https://snippet.dhtmlx.com/zapehxd3	Tree. Custom Toggle Icon
+**Related samples**:
+- [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
+- [Tree. Custom Toggle Icon](https://snippet.dhtmlx.com/zapehxd3)

@@ -57,6 +57,6 @@ const ribbon = new dhx.Ribbon("ribbon", {
 
 @related: ribbon/loading_json.md
 
-@relatedsample: 
-https://snippet.dhtmlx.com/lek4v9m7	Ribbon. Config Data
-https://snippet.dhtmlx.com/aue48f5f	Ribbon. Init With External Data
+**Related samples**:
+- [Ribbon. Config Data](https://snippet.dhtmlx.com/lek4v9m7)
+- [Ribbon. Init With External Data](https://snippet.dhtmlx.com/aue48f5f)

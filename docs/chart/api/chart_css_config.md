@@ -67,8 +67,8 @@ var chart = new dhx.Chart({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample:
-https://snippet.dhtmlx.com/p82iew5s	Chart. Custom Styling
+**Related sample**:
+- [Chart. Custom Styling](https://snippet.dhtmlx.com/p82iew5s)
 
 @related: chart/customization.md#stylingchart
 

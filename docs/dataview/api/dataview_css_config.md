@@ -72,9 +72,9 @@ There is no need to use any additional custom classes.
 var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
 ~~~
 
-@relatedsample:
-https://snippet.dhtmlx.com/j1yv94o8	Dataview. Custom Widget Styles
-https://snippet.dhtmlx.com/kpnzizbf	Dataview. Custom Item Styles
+**Related samples**:
+- [Dataview. Custom Widget Styles](https://snippet.dhtmlx.com/j1yv94o8)
+- [Dataview. Custom Item Styles](https://snippet.dhtmlx.com/kpnzizbf)
 
 @related:
 dataview/customization.md

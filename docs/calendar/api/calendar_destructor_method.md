@@ -15,5 +15,5 @@ calendar.destructor();
 
 @changelog:
 
-@relatedsample:
-https://snippet.dhtmlx.com/f0kqjb13	Calendar. Destructor
+**Related sample**:
+- [Calendar. Destructor](https://snippet.dhtmlx.com/f0kqjb13)

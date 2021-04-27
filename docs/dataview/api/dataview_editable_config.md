@@ -18,7 +18,7 @@ dataview/api/dataview_edititem_method.md
 
 @related: dataview/configuration.md#editingitems
 
-@relatedsample:
-https://snippet.dhtmlx.com/m8fbqcza	Dataview. Editable Dataview
+**Related sample**:
+- [Dataview. Editable Dataview](https://snippet.dhtmlx.com/m8fbqcza)
 
 @changelog: added in v6.4

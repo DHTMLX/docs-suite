@@ -53,7 +53,7 @@ var dataset = [
 ];
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/2jo5lcuj	Grid. Row height}}
+- [Grid. Row height](https://snippet.dhtmlx.com/2jo5lcuj)
 
 {{note The **height** option has a higher priority than the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration property of Grid. <br>Thus, [autoHeight:true](grid/api/grid_autoheight_config.md) will be ignored for the cell that the **height** option is defined to.}}
 
@@ -72,7 +72,7 @@ var dataset = [
 ];
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ylbu791i	Grid. Date column and support of the Date() object}}
+- [Grid. Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
 
 
 @related: grid/initialization.md#initialize-grid
@@ -80,6 +80,6 @@ grid/configuration.md#data
 
 @relatedapi: grid/api/grid_autoheight_config.md
 
-@relatedsample: 
-https://snippet.dhtmlx.com/svkb27d5	Grid. External Data Loading
-https://snippet.dhtmlx.com/qrw1x949	Grid. External Datacollection
+**Related samples**:
+- [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
+- [Grid. External Datacollection](https://snippet.dhtmlx.com/qrw1x949)

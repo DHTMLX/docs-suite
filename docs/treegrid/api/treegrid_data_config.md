@@ -57,7 +57,8 @@ var dataset = [
 ];
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kvl5y6nq	TreeGrid. Row height}}
+**Related sample**:
+- [TreeGrid. Row height](https://snippet.dhtmlx.com/kvl5y6nq)
 
 {{note The **height** option has a higher priority than the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid. <br>Thus, [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) will be ignored for the cell that the **height** option is defined to.}}
 
@@ -76,7 +77,8 @@ var dataset = [
 ];
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/tb4o7ytt	Treegrid. Date column and support of the Date() object}}
+**Related samples**:
+- [Treegrid. Date column and support of the Date() object](https://snippet.dhtmlx.com/tb4o7ytt)
 
 
 @related: treegrid/configuration.md#data

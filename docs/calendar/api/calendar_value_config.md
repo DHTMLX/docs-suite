@@ -57,5 +57,5 @@ calendar/api/calendar_dateformat_config.md
 calendar/api/calendar_getvalue_method.md
 calendar/api/calendar_range_config.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/epjjww3l	Calendar. Value Initialization
+**Related sample**:
+- [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)

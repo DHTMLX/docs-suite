@@ -52,8 +52,8 @@ calendar.showDate(new Date(2020,11,12),"year");
 calendar.showDate(null,"year");
 ~~~
 
-@relatedsample:
-https://snippet.dhtmlx.com/nyfzc8cl	Calendar. Showing Particular Calendar Date And Mode
+**Related sample**:
+- [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
 
 @changelog:
 

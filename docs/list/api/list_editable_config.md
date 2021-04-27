@@ -22,5 +22,5 @@ list/api/list_edititem_method.md
 
 @related: list/configuration.md#editingitems
 
-@relatedsample:
-https://snippet.dhtmlx.com/f26lfcai	List. Editable List
+**Related sample**:
+- [List. Editable List](https://snippet.dhtmlx.com/f26lfcai)
