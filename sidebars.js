@@ -2890,6 +2890,8 @@ module.exports = {
           label: "Methods",
           items: [
             "selection/api/selection_add_method",
+            "selection/api/selection_disable_method",
+            "selection/api/selection_enable_method",
             "selection/api/selection_getid_method",
             "selection/api/selection_getitem_method",
             "selection/api/selection_remove_method",

@@ -14,6 +14,8 @@ You can apply the following methods of the Selection object to manage the select
 | Name                                          | Description                                          |
 | --------------------------------------------- | ---------------------------------------------------- |
 | [](selection/api/selection_add_method.md)     | @getshort(selection/api/selection_add_method.md)     |
+| [](selection/api/selection_disable_method.md) | @getshort(selection/api/selection_disable_method.md) |
+| [](selection/api/selection_enable_method.md)  | @getshort(selection/api/selection_enable_method.md)  |
 | [](selection/api/selection_getid_method.md)   | @getshort(selection/api/selection_getid_method.md)   |
 | [](selection/api/selection_getitem_method.md) | @getshort(selection/api/selection_getitem_method.md) |
 | [](selection/api/selection_remove_method.md)  | @getshort(selection/api/selection_remove_method.md)  |

@@ -16,4 +16,4 @@ var item = tree.selection.getItem();
 @descr:
 Starting from v7.0, the method can also return an array of selected items if the **multiselection** property of List or DataView is enabled.
 
-{{note The method can be applied to the DataView, List, Tree components. }}
+{{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}
