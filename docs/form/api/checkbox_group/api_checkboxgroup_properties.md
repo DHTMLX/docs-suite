@@ -38,9 +38,7 @@ title: CheckboxGroup properties
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>value</b></td>
-            <td>(<i>object</i>) the initial value of a CheckboxGroup. The value contain a set of <i>key:value</i> pairs
-                where <i>key</i> is the id of a checkbox and <i>value</i> defines the initial state of the checkbox. The
-                option has a higher priority than the <b>checked</b> attribute of a checkbox.</td>
+            <td>(<i>object</i>) the initial value of a CheckboxGroup. The value contain a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> defines the initial state of the checkbox. The option has a higher priority than the <b>checked</b> attribute of a checkbox.</td>
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>width</b></td>
@@ -64,9 +62,7 @@ title: CheckboxGroup properties
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>required</b></td>
-            <td>(<i>boolean</i>) <a
-                    href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a
-                    control is required</a></td>
+            <td>(<i>boolean</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a control is required</a></td>
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>padding</b></td>

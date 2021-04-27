@@ -91,7 +91,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>title</b></td>
-			<td>(<i>string</i>) sets a title for a scale <br/>{{editor    https://snippet.dhtmlx.com/5ir00fer	Chart. Scale Title}}</td>
+			<td>(<i>string</i>) sets a title for a scale <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/5ir00fer" target="_blank">Chart. Scale Title</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>text</b></td>
@@ -99,7 +101,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>textTemplate</b></td>
-			<td>(<i>function</i>) sets a template for scale labels <br/>{{editor    https://snippet.dhtmlx.com/nhm3438n	Chart. Text Template For Scale Labels}}</td>
+			<td>(<i>function</i>) sets a template for scale labels <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/nhm3438n" target="_blank">Chart. Text Template For Scale Labels</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>textPadding</b></td>
@@ -111,7 +115,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>scaleRotate</b></td>
-			<td>(<i>number</i>) the degree of rotation of labels of data items on the scale <br/>{{editor    https://snippet.dhtmlx.com/iw00fgl5	Chart. Scale Rotate}}</td>
+			<td>(<i>number</i>) the degree of rotation of labels of data items on the scale <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iw00fgl5" target="_blank">Chart. Scale Rotate</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>scalePadding</b></td>
@@ -123,20 +129,27 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>grid</b></td>
-			<td>(<i>boolean</i>) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale 
-<br/> {{editor    https://snippet.dhtmlx.com/leqdx9qr	Chart. Grid}}</td>
+			<td>(<i>boolean</i>) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale <br/> 
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Grid</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>dashed</b></td>
-			<td>(<i>boolean</i>) sets the dashed type for a scale. Use the <i>dashed:true</i> option in the configuration of the scale <br/>{{editor    https://snippet.dhtmlx.com/gnj1xc3r	Chart. Dashed Grid}}</td>
+			<td>(<i>boolean</i>) sets the dashed type for a scale. Use the <i>dashed:true</i> option in the configuration of the scale <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/gnj1xc3r" target="_blank">Chart. Dashed Grid</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>targetLine</b></td>
-			<td>(<i>number</i>) shows a threshold line (a target value); looks for the specified value in the data <br/>{{editor    https://snippet.dhtmlx.com/0h6n0yuy	Chart. Target Line}}</td>
+			<td>(<i>number</i>) shows a threshold line (a target value); looks for the specified value in the data <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0h6n0yuy" target="_blank">Chart. Target Line</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>targetValue</b></td>
-			<td>(<i>number</i>) allows setting a threshold line at any defined level (any number, not necessarily from the data) <br/>{{editor    https://snippet.dhtmlx.com/8d9kgw28	Chart. Target Value}}</td>
+			<td>(<i>number</i>) allows setting a threshold line at any defined level (any number, not necessarily from the data) <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/8d9kgw28" target="_blank">Chart. Target Value</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>max</b></td>
@@ -188,12 +201,12 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
     </tbody>
 </table>
 
-{{editor    https://snippet.dhtmlx.com/yksfvhhl	Chart. Axis Configuration}}
+**Related Sample:** [Chart. Axis Configuration](https://snippet.dhtmlx.com/yksfvhhl)
 
 Series
 ------------
 
-[Series](chart/api/chart_series_config.md) present an array of objects each of which contains a number of properties for rendering a separate [data set](chart/data_loading.md#preparingdataset) on a chart.
+[Series](chart/api/chart_series_config.md) present an array of objects each of which contains a number of properties for rendering a separate [data set](chart/data_loading.md#preparing-data-set) on a chart.
 
 ~~~js
 var chart = new dhx.Chart("chart_container",{
@@ -234,7 +247,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
        	<tr>
 			<td class="webixdoc_links0"><b>gradient</b></td>
-			<td>(<i>function</i>) a function that defines a color gradient for bars <br/>{{editor    https://snippet.dhtmlx.com/j3duyn2q	Chart. Bar Gradient}} </td>
+			<td>(<i>function</i>) a function that defines a color gradient for bars <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/j3duyn2q" target="_blank">Chart. Bar Gradient</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>type</b></td>
@@ -262,7 +277,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>pointType</b></td>
-			<td>(<i>string</i>) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/>{{editor    https://snippet.dhtmlx.com/cbj54wwu	Chart. Point Types}} </td>
+			<td>(<i>string</i>) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cbj54wwu" target="_blank">Chart. Point Types</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>css</b></td>
@@ -278,7 +295,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>tooltipTemplate</b></td>
-			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip <br/>{{editor    https://snippet.dhtmlx.com/mbz7dkku	Chart. Tooltip Template}}</td>
+			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/mbz7dkku" target="_blank">Chart. Tooltip Template</a>
+			</td>
 		</tr>
     </tbody>
 </table>
@@ -308,11 +327,15 @@ var chart = new dhx.Chart("chart_container",{
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>baseLine</b></td>
-			<td>(<i>number</i>) sets a base line for rendering data items (bars) <br/>{{editor    https://snippet.dhtmlx.com/6tls4qhf	Chart. Base Line}}</td>
+			<td>(<i>number</i>) sets a base line for rendering data items (bars) <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/6tls4qhf" target="_blank">Chart. Base Line</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>stacked</b></td>
-			<td>(<i>boolean</i>) defines whether a stacked chart will be rendered  <br/>{{editor    https://snippet.dhtmlx.com/ilew1ds4	Chart. Stacked Chart}}</td>
+			<td>(<i>boolean</i>) defines whether a stacked chart will be rendered  <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked Chart</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>barWidth</b></td>
@@ -328,7 +351,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>showTextRotate</b></td>
-			<td>(<i>number|string</i>) the degree of rotation of text values of data items in bars <br/>{{editor    https://snippet.dhtmlx.com/o7ke2f1s	Chart. Show Text}}</td>
+			<td>(<i>number|string</i>) the degree of rotation of text values of data items in bars <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show Text</a>
+			</td>
 		</tr>
     </tbody>
 </table>
@@ -414,10 +439,10 @@ var chart = new dhx.Chart("chart_container",{
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/00ei3q23	Chart. Enable Legend}}
+**Related Samples:**
 
-{{editor    https://snippet.dhtmlx.com/pgqf1yxj	Chart. Legend Position}}
-
+- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
+- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
 
 ### The list of config options for legend (for charts with scales)
 
@@ -425,7 +450,9 @@ var chart = new dhx.Chart("chart_container",{
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>form</b></td>
-			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>{{editor    https://snippet.dhtmlx.com/n8wsfv5n	Chart. Legend Form}}</td>
+			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n8wsfv5n" target="_blank">Chart. Legend Form</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>itemPadding</b></td>
