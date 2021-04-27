@@ -4,7 +4,7 @@ title: load
 ---          
 
 @short: loads data from an external file
-todoanton any приходит из d.ts
+
 @signature: {'load?: () => Promise<any[]>;'}
 
 @params:

@@ -4,7 +4,7 @@ title: setValue
 ---          
 
 @short: sets value for a TimePicker
-todoanton any приходит из d.ts
+
 @signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
 <!-- void setValue(Date|number|string|array|object value);

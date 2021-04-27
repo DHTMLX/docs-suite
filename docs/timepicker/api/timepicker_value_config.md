@@ -4,7 +4,7 @@ title: value
 ---          
 
 @short: the time value to be set on initialization of the timepicker
-todoanton any приходит из d.ts
+
 @signature: {'value?: Date | number | string | any[] | ITimeObject;'}
 
 @example:

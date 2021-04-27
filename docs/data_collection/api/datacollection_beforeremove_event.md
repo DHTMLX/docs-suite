@@ -4,7 +4,7 @@ title: beforeRemove
 ---          
 
 @short: fires before removing an item from a data collection
-todoanton any приходит из d.ts
+
 @signature: {'beforeRemove: (obj: any) => boolean | void;'}
 	
 @params:

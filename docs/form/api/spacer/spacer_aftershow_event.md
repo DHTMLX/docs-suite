@@ -4,8 +4,8 @@ title: afterShow
 ---          
 
 @short: fires after a control is shown
-todoanton any приходит из d.ts
-@signature: {'afterShow: (name: string, value?: any) => void;'}
+
+@signature: {'afterShow: (value: undefined) => void;'}
  
 @params:
 - value     undefined     the current value of the control, null

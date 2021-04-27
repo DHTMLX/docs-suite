@@ -4,8 +4,8 @@ title: afterExpand
 ---          
 
 @short: fires after expanding a treegrid
-todoanton any приходит из d.ts
-@signature: {'afterExpand: (id: string) => any;'}
+
+@signature: {'afterExpand: (id: string) => void;'}
 	
 @params:
 - id			string | number		the id of an expanded row

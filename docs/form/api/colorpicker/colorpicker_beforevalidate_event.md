@@ -4,8 +4,8 @@ title: beforeValidate
 ---          
 
 @short: fires before the control value is validated
-todoanton any приходит из d.ts
-@signature: {'beforeValidate: (name: string, value: any) => boolean | void;'}
+
+@signature: {'beforeValidate: (value: string) => boolean | void;'}
  
 
 @params:

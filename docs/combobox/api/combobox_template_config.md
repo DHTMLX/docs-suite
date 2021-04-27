@@ -5,7 +5,7 @@ title: template
 
 
 @short: sets a template of displaying options in the popup list
-todoanton any приходит из d.ts
+
 @signature: {'template?: (item: any) => string;'}
 
 @example: 

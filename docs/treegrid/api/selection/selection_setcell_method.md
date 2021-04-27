@@ -4,7 +4,7 @@ title: setCell
 ---          
 
 @short: sets selection to a specified cell
-todoanton any приходит из d.ts
+
 @signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:

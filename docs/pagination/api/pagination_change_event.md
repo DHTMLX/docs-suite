@@ -4,8 +4,8 @@ title: change
 ---          
 
 @short: fires on changing the active page
-todoanton any приходит из d.ts
-@signature: {'change: (index: number, previousIndex: number) => any;'}
+
+@signature: {'change: (index: number, previousIndex: number) => void;'}
 
 @params:
 - index     number  the index of a newly active page

@@ -4,8 +4,8 @@ title: beforeHide
 ---          
 
 @short: fires before a control is hidden
-todoanton any приходит из d.ts
-@signature: {'beforeHide: (name: string, value?: any) => boolean | void;'}
+
+@signature: {'beforeHide: (value: number[], init: boolean) => boolean | void;'}
  
 @params:
 - value     number[]     the current value of the control

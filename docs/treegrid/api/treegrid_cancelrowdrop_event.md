@@ -4,7 +4,7 @@ title: cancelRowDrop
 ---          
 
 @short: fires on moving a mouse pointer out of borders of a row while dragging the row
-todoanton any приходит из d.ts
+
 @signature: {'cancelRowDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
