@@ -24,5 +24,5 @@ chart.events.on("Resize", function({width:500, height:500}){
 @descr:
 
 
-@relatedsample: 
-https://snippet.dhtmlx.com/a1b9yfwo	Chart. Events
+**Related sample**:
+- [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)

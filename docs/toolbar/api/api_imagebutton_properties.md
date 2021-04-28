@@ -26,14 +26,6 @@ title: Toolbar ImageButton properties
 			<td>(<i>string|string[]</i>) adds style classes to a button </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>twoState</b></td>
-			<td>(<i>boolean</i>) adds two states to the button: active (pressed) and inactive  (unpressed)</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>active</b></td>
-			<td>(<i>boolean</i>) sets the state of a twoState button</td>
-		</tr>
-        <tr>
 			<td class="webixdoc_links0"><b>group</b></td>
 			<td>(<i>string</i>) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive</td>
 		</tr>

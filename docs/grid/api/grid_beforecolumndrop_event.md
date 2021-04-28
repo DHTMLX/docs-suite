@@ -32,7 +32,8 @@ The data object contains the following parameters:
 - **source** - (*string[]*) an array with ids of dragged columns
 - **target** - (*string*) the id of a potential target column
 
-@relatedsample:  https://snippet.dhtmlx.com/dfdlzpqb	Setup drag column (Pro)
+**Related sample**:
+- [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
 
 @relatedapi:

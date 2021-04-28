@@ -19,8 +19,8 @@ colorpicker.setCurrentMode("picker");
 @relatedapi:
 colorpicker/api/colorpicker_getcurrentmode_method.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/0mhp5cp6	Colorpicker. Set Current Mode
+**Related sample**:
+- [Colorpicker. Set Current Mode](https://snippet.dhtmlx.com/0mhp5cp6)
 
 @changelog:
 added in v6.3

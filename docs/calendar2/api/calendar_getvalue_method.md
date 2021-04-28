@@ -46,5 +46,5 @@ calendar/api/calendar_setvalue_method.md
 calendar/operating_calendar.md#gettingselecteddate
 calendar/configuring.md#rangemode
 
-@relatedsample:
-https://snippet.dhtmlx.com/k2vrfqj0	Calendar. Getting Selected Date
+**Related sample**:
+- [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)

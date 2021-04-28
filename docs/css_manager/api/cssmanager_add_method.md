@@ -16,22 +16,22 @@ title: add
 
 @example:
 // create a new CSS class
-var cssClassName = cssManager.add({
+const cssClassName = dhx.cssManager.add({
     display: "flex";
     flexDirection: "column"
 });
 
-var block = document.createElement("div");
+const block = document.createElement("div");
 block.classList.add(cssClassName);
 
 // or
 
-cssManager.add({
+dhx.cssManager.add({
     display: "flex";
     flexDirection: "column"
 }, "myCustomClass");
 
-var block = document.createElement("div");
+const block = document.createElement("div");
 block.classList.add("myCustomClass");
 
 @template:	api_method

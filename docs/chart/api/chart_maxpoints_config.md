@@ -13,8 +13,8 @@ var chart = new dhx.Chart("chart", {
 	maxPoints:100
 });
 
-@relatedsample:
-https://snippet.dhtmlx.com/6917eudu	Chart. Max Points
+**Related sample**:
+- [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
 
 @related:
 chart/configuration_properties.md#mainproperties

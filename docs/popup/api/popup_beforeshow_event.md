@@ -27,8 +27,8 @@ The event is blockable. Return *false* to block showing a popup.
 @relatedapi:
 popup/api/popup_aftershow_event.md
 
-@relatedsample: 
-https://snippet.dhtmlx.com/ro2lza9t	Popup. Events
-https://snippet.dhtmlx.com/z788l8r7	Popup. Prevent Show
+**Related samples**:
+- [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
+- [Popup. Prevent Show](https://snippet.dhtmlx.com/z788l8r7)
 
 @related: popup/event_handling.md

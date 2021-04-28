@@ -52,8 +52,8 @@ The **config** object can contain the properties below:
 @relatedapi:
 popup/api/popup_hide_method.md
 
-@relatedsample: 
-https://snippet.dhtmlx.com/bz1ekc71	Popup. Auto Positioning
+**Related sample**:
+- [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
 https://snippet.dhtmlx.com/bu4uj2ik	Popup.Show position
 
 @related:popup/work_with_popup.md#hidingshowingpopup

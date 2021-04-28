@@ -29,8 +29,8 @@ var result = form.validate(); // -> true/false
 ~~~
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/pmz0zk16	Form. Validate
+**Related sample**:
+- [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
 @related:
 form/work_with_form.md#validatingform

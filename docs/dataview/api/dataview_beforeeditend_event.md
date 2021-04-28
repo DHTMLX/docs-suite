@@ -25,8 +25,8 @@ dataview.events.on("BeforeEditEnd", function(value,id){
 @descr:
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/2d74uyoh	Dataview. Dataview Events
+**Related sample**:
+- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.1
 

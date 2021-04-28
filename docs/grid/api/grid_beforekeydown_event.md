@@ -25,8 +25,8 @@ grid.events.on("BeforeKeyDown", function (e) {
 @descr:
 The event fires when a cell of Grid has a keyboard focus.
 
-@relatedsample:
-https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events
+**Related sample**:
+- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.4
 

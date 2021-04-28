@@ -23,20 +23,22 @@ title: Tree API overview
 | [](tree/api/tree_uncheckitemnew_method.md) | @getshort(tree/api/tree_uncheckitemnew_method.md) |
 
 :::info important
-- Use [TreeCollection methods](tree_collection/index.md) to work with data. 
-- А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the methods of TreeCollection](tree_collection/index.md) to work with data. 
+- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of Tree items. 
 :::
 
 ## Events
 
 | Name                                       | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
+|--------------------------------------------|---------------------------------------------------|
+| [](tree/api/tree_aftercheck_event.md)      | @getshort(tree/api/tree_aftercheck_event.md)      |
 | [](tree/api/tree_aftercollapse_event.md)   | @getshort(tree/api/tree_aftercollapse_event.md)   |
 | [](tree/api/tree_afterdrag_event.md)       | @getshort(tree/api/tree_afterdrag_event.md)       |
 | [](tree/api/tree_afterdrop_event.md)       | @getshort(tree/api/tree_afterdrop_event.md)       |
 | [](tree/api/tree_aftereditend_event.md)    | @getshort(tree/api/tree_aftereditend_event.md)    |
 | [](tree/api/tree_aftereditstart_event.md)  | @getshort(tree/api/tree_aftereditstart_event.md)  |
 | [](tree/api/tree_afterexpand_event.md)     | @getshort(tree/api/tree_afterexpand_event.md)     |
+| [](tree/api/tree_beforecheck_event.md)     | @getshort(tree/api/tree_beforecheck_event.md)     |
 | [](tree/api/tree_beforecollapse_event.md)  | @getshort(tree/api/tree_beforecollapse_event.md)  |
 | [](tree/api/tree_beforedrag_event.md)      | @getshort(tree/api/tree_beforedrag_event.md)      |
 | [](tree/api/tree_beforedrop_event.md)      | @getshort(tree/api/tree_beforedrop_event.md)      |
@@ -54,8 +56,8 @@ title: Tree API overview
 | [](tree/api/tree_itemrightclick_event.md)  | @getshort(tree/api/tree_itemrightclick_event.md)  |
 
 :::info important
-- Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
-- А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of Tree. 
+- Apply [the events of Selection](selection/index.md#events) to control the selection of Tree items. 
 :::
 
 ## Properties

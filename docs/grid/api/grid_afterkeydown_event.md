@@ -20,8 +20,8 @@ grid.events.on("AfterKeyDown", function (e) {
 @template: api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events
+**Related sample**:
+- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @related: grid/configuration.md#keyboardnavigation
 

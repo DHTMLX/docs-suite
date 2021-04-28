@@ -3,7 +3,7 @@ sidebar_label: setFullScreen
 title: setFullScreen
 ---          
 
-@short: enters the full screen mode
+@short: switches the window into the full screen mode
 
 @signature: setFullScreen(): void;
 

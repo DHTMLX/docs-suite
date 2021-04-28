@@ -22,8 +22,8 @@ grid.isColumnHidden("country"); // -> true|false
 @descr:
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/rdqhwnjv	Grid. Is Column Hidden
+**Related sample**:
+- [Grid. Is Column Hidden](https://snippet.dhtmlx.com/rdqhwnjv)
 
 @related: grid/usage.md#checkingvisibilityofacolumn
 

@@ -33,6 +33,7 @@ grid.data.filter({
       return val === "New";
     }
     return false;
+  }
 }, {
   add: true
 });
@@ -131,6 +132,7 @@ grid.data.filter({
       return val === "New";
     }
     return false;
+  }
 }, {
   add: true,
   smartFilter: true

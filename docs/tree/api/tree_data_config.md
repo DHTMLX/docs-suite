@@ -92,7 +92,7 @@ tree.data.getItem("Books").parent
 @related: tree/initialization_of_dhtmlxtree.md#initializetree
 tree/loading_data.md#preparingdataset
 
-@relatedsample: 
-https://snippet.dhtmlx.com/r49y51k3	Tree. Config Data
-https://snippet.dhtmlx.com/osjo7t0h	Tree. Init With External Data
+**Related samples**:
+- [Tree. Config Data](https://snippet.dhtmlx.com/r49y51k3)
+- [Tree. Init With External Data](https://snippet.dhtmlx.com/osjo7t0h)
 

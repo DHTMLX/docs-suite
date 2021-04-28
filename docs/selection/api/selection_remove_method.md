@@ -23,4 +23,4 @@ Starting from v7.0, the method unselects all previously selected items when call
 tree.selection.remove();
 ~~~
 
-{{note The method can be applied to the DataView, List, Tree components. }}
+{{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}

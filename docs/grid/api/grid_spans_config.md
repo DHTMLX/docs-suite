@@ -49,7 +49,7 @@ var grid = new dhx.Grid("grid_container", {
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/grid__configuration.html#tooltip"></a><b>tooltip</b></td>
+			<td class="webixdoc_links0"><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>

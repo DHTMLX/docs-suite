@@ -59,8 +59,8 @@ var calendar = new dhx.Calendar({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@relatedsample:
-https://snippet.dhtmlx.com/2045cbe1	Calendar. Adding Custom Styles
+**Related sample**:
+- [Calendar. Adding Custom Styles](https://snippet.dhtmlx.com/2045cbe1)
 
 @related:
 calendar/customization.md#stylingcalendar

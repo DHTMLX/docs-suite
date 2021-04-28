@@ -377,7 +377,7 @@ var treeGrid = new dhx.TreeGrid("treegrid", {
 
 {{editor	https://snippet.dhtmlx.com/q76qcgn3	TreeGrid. Template with content for cells}}
 
-<h3 id="eventhandling">Event handlers for the template</h3>
+### Event handlers for the template
 
 Starting from v7.0, you can assign event handlers to HTML elements of a custom template of TreeGrid cells via using the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property of TreeGrid, for instance:
 
@@ -430,3 +430,58 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
+Adding template to tooltip
+---------------------
+
+![](../assets/treegrid/tooltip_template.png)
+
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](treegrid/configuration.md#columns) configuration option of the column. The **tooltipTemplate** function takes three parameters:
+
+<table class="webixdoc_links">
+	<tbody>
+        <tr>
+			<td class="webixdoc_links0"><b>value</b></td>
+			<td>(<i>any</i>) the value of a cell</td>
+		</tr>
+		<tr>
+			<td class="webixdoc_links0"><b>row</b></td>
+			<td>(<i>object</i>) an object with all cells in a row</td>
+		</tr>
+		<tr>
+			<td class="webixdoc_links0"><b>col</b></td>
+			<td>(<i>object</i>) the config of a column</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
+~~~js
+function rowDataTemplate(value, row, col) { /*!*/
+    if (!value) { /*!*/
+        return; /*!*/
+    } /*!*/
+    return `Country: ${row.country}</br> /*!*/
+            Population: ${row.population}</br> /*!*/
+            Yearly Change: ${row.yearlyChange}</br> /*!*/
+            Net Change: ${row.netChange}`; /*!*/
+}
+
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        { 
+			id: "country", header: [{ text: "Country" }], gravity: 1.2, 
+			tooltipTemplate: rowDataTemplate /*!*/
+		},
+        { 
+			id: "population", header: [{ text: "Population" }], 
+			tooltipTemplate: rowDataTemplate /*!*/
+		},
+        // more options
+    ],
+    data: dataset
+});
+~~~
+
+{{editor	https://snippet.dhtmlx.com/520i6vbt	TreeGrid. Tooltip template}}
+
+{{note You should enable the [htmlEnable](treegrid/configuration.md#html-content-of-treegrid-columns) option in the configuration of TreeGrid (or configuration of the column) to activate HTML support for the tooltip.}}

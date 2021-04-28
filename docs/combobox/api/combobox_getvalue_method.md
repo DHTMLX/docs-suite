@@ -34,8 +34,8 @@ var array_ids = combo.getValue(true);
 @relatedapi:
 combo/api/combobox_setvalue_method.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/ppvjknid	Combobox. Get Value
+**Related sample**:
+- [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
 
 @changelog:
 

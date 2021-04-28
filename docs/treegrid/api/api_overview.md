@@ -42,7 +42,7 @@ title: TreeGrid API overview
 
 :::info important
 - Use [the methods of TreeCollection](tree_collection/index.md) to work with data of TreeGrid. 
-- Apply [the methods of Selection](treegrid/api/api_overview.md#selection-methods) to manipulate the selection of TreeGrid cells.
+- Apply [the methods of Selection](treegrid/api/api_overview.md#selection-methods) to manage the selection of TreeGrid cells.
 :::
 
 ## TreeGrid events
@@ -97,8 +97,9 @@ title: TreeGrid API overview
 
 | Name                                            | Description                                            |
 |-------------------------------------------------|--------------------------------------------------------|
+| [](treegrid/api/treegrid_aftersort_event.md)    | @getshort(treegrid/api/treegrid_aftersort_event.md)    |
+| [](treegrid/api/treegrid_beforesort_event.md)   | @getshort(treegrid/api/treegrid_beforesort_event.md)   |
 | [](treegrid/api/treegrid_filterchange_event.md) | @getshort(treegrid/api/treegrid_filterchange_event.md) |
-
 
 
 ### Column Drag and Drop
@@ -161,23 +162,24 @@ title: TreeGrid API overview
 
 ### Row Resize
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-todotw
-add from v7.1
+| Name                                               | Description                                               |
+|----------------------------------------------------|-----------------------------------------------------------|
+| [](treegrid/api/treegrid_afterrowresize_event.md)  | @getshort(treegrid/api/treegrid_afterrowresize_event.md)  |
+| [](treegrid/api/treegrid_beforerowresize_event.md) | @getshort(treegrid/api/treegrid_beforerowresize_event.md) |
 
 
 :::info important
 - Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of TreeGrid. 
-- Apply [the events of Selection](treegrid/api/api_overview.md#selection-events) to manipulate the selection of TreeGrid cells.
+- Apply [the events of Selection](treegrid/api/api_overview.md#selection-events) to control the selection of TreeGrid cells.
 :::
 
 ## TreeGrid properties
 
 | Name                                                   | Description                                                   |
-| ------------------------------------------------------ | ------------------------------------------------------------- |
+|--------------------------------------------------------|---------------------------------------------------------------|
 | [](treegrid/api/treegrid_adjust_config.md)             | @getshort(treegrid/api/treegrid_adjust_config.md)             |
 | [](treegrid/api/treegrid_autoemptyrow_config.md)       | @getshort(treegrid/api/treegrid_autoemptyrow_config.md)       |
+| [](treegrid/api/treegrid_autoheight_config.md)         | @getshort(treegrid/api/treegrid_autoheight_config.md)         |
 | [](treegrid/api/treegrid_autowidth_config.md)          | @getshort(treegrid/api/treegrid_autowidth_config.md)          |
 | [](treegrid/api/treegrid_columns_config.md)            | @getshort(treegrid/api/treegrid_columns_config.md)            |
 | [](treegrid/api/treegrid_css_config.md)                | @getshort(treegrid/api/treegrid_css_config.md)                |
@@ -194,6 +196,7 @@ add from v7.1
 | [](treegrid/api/treegrid_htmlenable_config.md)         | @getshort(treegrid/api/treegrid_htmlenable_config.md)         |
 | [](treegrid/api/treegrid_leftsplit_config.md)          | @getshort(treegrid/api/treegrid_leftsplit_config.md)          |
 | [](treegrid/api/treegrid_resizable_config.md)          | @getshort(treegrid/api/treegrid_resizable_config.md)          |
+| [](treegrid/api/treegrid_rootparent_config.md)         | @getshort(treegrid/api/treegrid_rootparent_config.md)         |
 | [](treegrid/api/treegrid_rowcss_config.md)             | @getshort(treegrid/api/treegrid_rowcss_config.md)             |
 | [](treegrid/api/treegrid_rowheight_config.md)          | @getshort(treegrid/api/treegrid_rowheight_config.md)          |
 | [](treegrid/api/treegrid_selection_config.md)          | @getshort(treegrid/api/treegrid_selection_config.md)          |
@@ -210,21 +213,21 @@ You will find the list of all the available configuration properties of a TreeGr
 
 ### Selection methods
 
-| Name                                                      | Description                                                   |
-|-----------------------------------------------------------|---------------------------------------------------------------|
-| [](treegrid/api/selection/selection_disable_method.md)    | @getshort(treegrid/api/selection/selection_disable_method)    |
-| [](treegrid/api/selection/selection_enable_method.md)     | @getshort(treegrid/api/selection/selection_enable_method)     |
-| [](treegrid/api/selection/selection_getcell_method.md)    | @getshort(treegrid/api/selection/selection_getcell_method)    |
-| [](treegrid/api/selection/selection_removecell_method.md) | @getshort(treegrid/api/selection/selection_removecell_method) |
-| [](treegrid/api/selection/selection_setcell_method.md)    | @getshort(treegrid/api/selection/selection_setcell_method)    |
+| Name                                                      | Description                                                      |
+|-----------------------------------------------------------|------------------------------------------------------------------|
+| [](treegrid/api/selection/selection_disable_method.md)    | @getshort(treegrid/api/selection/selection_disable_method.md)    |
+| [](treegrid/api/selection/selection_enable_method.md)     | @getshort(treegrid/api/selection/selection_enable_method.md)     |
+| [](treegrid/api/selection/selection_getcell_method.md)    | @getshort(treegrid/api/selection/selection_getcell_method.md)    |
+| [](treegrid/api/selection/selection_removecell_method.md) | @getshort(treegrid/api/selection/selection_removecell_method.md) |
+| [](treegrid/api/selection/selection_setcell_method.md)    | @getshort(treegrid/api/selection/selection_setcell_method.md)    |
 
 
 
 ### Selection events
 
-| Name                                                         | Description                                                      |
-|--------------------------------------------------------------|------------------------------------------------------------------|
-| [](treegrid/api/selection/selection_afterselect_event.md)    | @getshort(treegrid/api/selection/selection_afterselect_event)    |
-| [](treegrid/api/selection/selection_afterunselect_event.md)  | @getshort(treegrid/api/selection/selection_afterunselect_event)  |
-| [](treegrid/api/selection/selection_beforeselect_event.md)   | @getshort(treegrid/api/selection/selection_beforeselect_event)   |
-| [](treegrid/api/selection/selection_beforeunselect_event.md) | @getshort(treegrid/api/selection/selection_beforeunselect_event) |
+| Name                                                         | Description                                                         |
+|--------------------------------------------------------------|---------------------------------------------------------------------|
+| [](treegrid/api/selection/selection_afterselect_event.md)    | @getshort(treegrid/api/selection/selection_afterselect_event.md)    |
+| [](treegrid/api/selection/selection_afterunselect_event.md)  | @getshort(treegrid/api/selection/selection_afterunselect_event.md)  |
+| [](treegrid/api/selection/selection_beforeselect_event.md)   | @getshort(treegrid/api/selection/selection_beforeselect_event.md)   |
+| [](treegrid/api/selection/selection_beforeunselect_event.md) | @getshort(treegrid/api/selection/selection_beforeunselect_event.md) |

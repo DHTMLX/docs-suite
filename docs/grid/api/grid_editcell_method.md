@@ -15,14 +15,15 @@ title: editCell
 @example:
 grid.editCell(grid.data.getId(0),"project");
 
-@rrelated: grid/usage.md#editingdata
 
 
-@changelog: added in v6.4
+@changelog: 
+- added in v6.4
+- the "textarea" type of the editor is added in v7.1
 
-@related: grid/usage.md#editingdata
+@related: grid/usage.md#editing-data
 
-@relatedsample:
-https://snippet.dhtmlx.com/pqbax5vs	Grid. Editing Data
+**Related sample**:
+- [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
 
 @relatedapi: grid/api/grid_editend_method.md

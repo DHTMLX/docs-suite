@@ -108,9 +108,28 @@ var grid = new dhx.Grid("grid_container", {
 
 {{note  In case complex HTML content is added into a column, the column width may be calculated incorrectly.}}
 
+## Autoheight for columns
+
+Starting from v7.1, you can set the [autoHeight:true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text to split into multiple lines automatically based on the width of the column
+
+~~~js
+var grid = new dhx.Grid("grid_container", {
+	columns: [// columns config],
+	autoHeight: true,  /*!*/
+	data: dataset
+});
+~~~
+
+{{editor	https://snippet.dhtmlx.com/zkcsyazg	Grid. Auto height}}
+
+As a result, the height of the cells will automatically adjust to their content.
+
+But, **note**, that the **autoHeight** option does not adjust the height in the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the grid/api/grid_headerrowheight_config.md and grid/api/grid_footerrowheight_config.md configuration options of Grid.
+
+
 ## Autowidth for columns
 
-It is possible to adjust the size of Grid columns to the size of Grid with the help of the [](grid/api/grid_autowidth_config.md) configuration option, like this:
+It is possible to automatically adjust the size of Grid columns to the size of Grid with the help of the [](grid/api/grid_autowidth_config.md) configuration option, like this:
 
 
 ~~~js
@@ -296,7 +315,7 @@ var grid = new dhx.Grid("grid", {
 - **datePicker** - an editor for cells with dates (default for a column with **type:"date"**)
 
 To use this editor, you should specify the **type:"date"** property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content 
-with the help of the **dateFormat** option.
+with the help of the **format** option.
 
 ~~~js
 { 
@@ -304,7 +323,7 @@ with the help of the **dateFormat** option.
     // there's no need to specify the type of the editor
 	width: 150, id: "start_date", 
     header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
-    type: "date", dateFormat: "%d/%m/%Y"  /*!*/
+    type: "date", format: "%d/%m/%Y"  /*!*/
 }
 ~~~
 
@@ -370,6 +389,82 @@ In this case, you can see the **id:** array of options in a cell (after a choice
 ```
 
 {{editor    https://snippet.dhtmlx.com/w2cdossn	Grid. Editable Data}}
+
+- **textarea** - an editor for cells that contain text
+
+To use this editor, you should specify the **editorType:"textarea"** property for a column.
+
+{{note The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration option of Grid is enabled. The functionality is available only in PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+
+~~~js
+var grid = new dhx.Grid("grid", {
+	columns: [
+		{
+			width: 150, id: "project", 
+			header: [{ text: "Project" }, { content: "selectFilter" }], 
+			editorType: "textarea" /*!*/
+		}
+    // more columns
+	],
+	data: data,
+	editable: true,
+	autoHeight: true /*!*/
+});
+~~~
+
+{{editor    https://snippet.dhtmlx.com/w2cdossn	Grid. Editable Data}}
+
+## Formatting columns
+
+Starting from v7.1, you can display the values of the cells of a Grid column in the desired format:
+
+1\. To define the format for numeric values, apply the **format** configuration option of the column:
+
+~~~js
+{ 
+	width: 150, id: "population", header: [{ text: "Population" }],  
+	format: "# #.0" /*!*/
+}
+// -> 1415045928 will be displayed as 1 415 045 928.0
+~~~
+
+The following characters can be used:
+
+- **#** - the integer part of the number
+- **0** - the fractional part of the number. The **0** placeholder displays insignificant zeros if a number has fewer digits than there are zeros in the format string, for instance, the **.00** format will display 0.298 as 0.30. <br>If a number has more digits to the right of the decimal point than there are placeholders in the format string, the number rounds to as many decimal places as there are placeholders, for instance, the **.000** format will display 0.2 as 0.200.
+- **# #** - sets the thousands separator in a number (123 456)
+- **#.0** - sets the separator for the decimal point in a number (123 456.357)
+
+2\. You can display the percentage value in the necessary format by setting the **type: "percent"** configuration option of a column together with the **format** option:
+
+~~~
+{ 
+	width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+	type: "percent", format: "#.00" /*!*/
+}
+// -> 0.0039 will be displayed as 0.39%
+~~~
+
+When using just the **type: "percent"** configuration option of a column, the result will be the following:
+
+~~~js
+{ 
+	width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+	type: "percent" /*!*/
+}
+// -> 0.0039 will be displayed as 0%
+~~~
+
+3\. To define the format for dates, set the **type: "date"** property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the **format** option:
+
+~~~js
+{ 
+	width: 150, id: "date", header: [{ text: "Date" }], 
+	type: "date", format: "%M %d %Y" /*!*/
+}
+~~~
+
+{{editor https://snippet.dhtmlx.com/ox37nvdm	Grid. Data formats}}
 
 ## Frozen columns
 
@@ -864,6 +959,32 @@ var grid = new dhx.Grid("grid_container", {
 
 {{editor    https://snippet.dhtmlx.com/wjcjl80i	Grid. Rows Height}}
 
+In this case, the height of each row is 30.
+
+### Setting height for a separate row
+
+Starting with v7.1, it is possible to specify the height for the necessary row of data in Grid via setting the number value to the **height** option when defining the [data set](grid/api/grid_data_config.md): 
+
+~~~js
+var dataset = [
+	{
+		"country": "China",
+		"population": "1415045928",
+		"height": 80, /*!*/
+		"id": "1"
+	},
+	{
+		"country": "India",
+		"population": "1354051854",
+		"id": "2",
+	}
+];
+~~~
+
+{{editor	https://snippet.dhtmlx.com/2jo5lcuj	Grid. Row height}}
+
+{{note The **height** option has a higher priority than the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration property of Grid. }}
+
 ## Row style
 
 There is a possibility to apply some styling to a row via the [rowCss](grid/api/grid_rowcss_config.md) property. It is a function that takes the id of a row as a parameter and returns a string with the name of a CSS class.
@@ -998,7 +1119,7 @@ Each span object contains the following properties:
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/grid__configuration.html#tooltip"><b>tooltip</b></a></td>
+			<td class="webixdoc_links0"><a href="#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>

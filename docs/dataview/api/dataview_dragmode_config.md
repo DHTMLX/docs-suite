@@ -21,8 +21,8 @@ Drag-n-drop can work in three modes:
 - "source" - a dataview allows dragging its items out and can't take items from other dataviews
 - "both" - a dataview both takes items from other dataviews and allows dragging its items out as well
 
-@relatedsample:
-https://snippet.dhtmlx.com/nia2e5a9	Dataview. Drag'n'drop
+**Related sample**:
+- [Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
 
 @relatedapi:
 dataview/configuration.md#dragndropofitems

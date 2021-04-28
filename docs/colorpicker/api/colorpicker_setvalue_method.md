@@ -26,5 +26,5 @@ colorpicker/api/colorpicker_getvalue_method.md
 @changelog:
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/h6oc5qsq	Colorpicker. Set Value
+**Related sample**:
+- [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)
