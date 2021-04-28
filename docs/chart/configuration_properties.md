@@ -192,7 +192,7 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
 			<td class="webixdoc_links0"><b>radial</b> scale</td>
 			<td>(<i>object</i>) the radial scale contains the following properties:
             	<ul>
-                	<li><b>value</b> - (<i>string</i>) the name of a <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to take data values from (map to)</li>
+                	<li><b>value</b> - (<i>string</i>) the name of a <a href="../chart/data_loading#preparing-data-set">data set</a> property to take data values from (map to)</li>
                     <li><b>zebra</b> - (<i>boolean</i>) sets a striped scale coloring for the Radar chart (alternation of two colors in a step)</li>
                     <li><b>showAxis</b> - (<i>boolean</i>) renders values of the scale</li>
                 </ul>
@@ -273,7 +273,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) the name of a <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to map data values to </td>
+			<td>(<i>string</i>) the name of a <a href="../chart/data_loading#preparing-data-set">data set</a> property to map data values to </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>pointType</b></td>
@@ -370,15 +370,15 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>text</b></td>
-			<td>(<i>string</i>) the name of the <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to map labels of data values to </td>
+			<td>(<i>string</i>) the name of the <a href="../chart/data_loading#preparing-data-set">data set</a> property to map labels of data values to </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) the name of the <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to map data values to</td>
+			<td>(<i>string</i>) the name of the <a href="../chart/data_loading#preparing-data-set">data set</a> property to map data values to</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>color</b></td>
-			<td>(<i>string</i>) points to the property in a <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> that defines the color of a pie/donut sector</td>
+			<td>(<i>string</i>) points to the property in a <a href="../chart/data_loading#preparing-data-set">data set</a> that defines the color of a pie/donut sector</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>useLines</b></td>
@@ -484,7 +484,7 @@ var chart = new dhx.Chart("chart_container",{
 	<tbody>
        <tr>
 			<td class="webixdoc_links0"><b>values</b></td>
-			<td>(<i>object</i>) maps attributes of legend items to <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> properties. Contains the following properties:
+			<td>(<i>object</i>) maps attributes of legend items to <a href="../chart/data_loading#preparing-data-set">data set</a> properties. Contains the following properties:
             	<ul>
                 	<li><b>id</b> - (<i>string/number</i>) the id of the series that will be bound to the legend </li>
                     <li><b>text</b> - (<i>string</i>) the pointer to the data value to take a text for the legend from</li>

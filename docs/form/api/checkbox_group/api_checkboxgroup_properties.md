@@ -62,7 +62,7 @@ title: CheckboxGroup properties
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>required</b></td>
-            <td>(<i>boolean</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a control is required</a></td>
+            <td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>padding</b></td>

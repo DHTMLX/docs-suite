@@ -27,15 +27,15 @@ title: Input properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>min</b></td>
-			<td>(<i>string|number</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+			<td>(<i>string|number</i>) <a href="../../../form/work_with_form#minimal-and-maximal-values">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>max</b></td>
-			<td>(<i>string|number</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+			<td>(<i>string|number</i>) <a href="../../../form/work_with_form#minimal-and-maximal-values">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>validation</b></td>
-			<td>(<i>string|function</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the rule of input validation</a>. Can be set in two ways:
+			<td>(<i>string|function</i>) <a href="../../../form/work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
             	<ul>
                 	<li>as a predefined string value: 
                     <ol>- "email" - validEmail</ol>
@@ -63,11 +63,11 @@ title: Input properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>minlength</b></td>
-			<td>(<i>string|number</i>) the minimum <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
+			<td>(<i>string|number</i>) the minimum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>maxlength</b></td>
-			<td>(<i>string|number</i>) the maximum <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
+			<td>(<i>string|number</i>) the maximum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
 		</tr>	
         <tr>
 			<td class="webixdoc_links0"><b>css</b></td>
@@ -79,7 +79,7 @@ title: Input properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a control is required</a></td>
+			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>readOnly</b></td>
@@ -91,7 +91,7 @@ title: Input properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
