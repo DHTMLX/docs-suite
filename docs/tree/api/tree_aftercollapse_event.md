@@ -4,8 +4,8 @@ title: afterCollapse
 ---          
 
 @short: fires after collapsing a tree item
-todoanton any приходит из d.ts
-@signature: {'afterCollapse: (id: string) => any;'}
+
+@signature: {'afterCollapse: (id: string) => void;'}
 
 @params:
 - id       string      the id of a collapsed item

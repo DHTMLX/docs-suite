@@ -4,12 +4,12 @@ title: focusChange
 ---          
 
 @short: fires on moving focus to a new item
-todoanton any приходит из d.ts и еще string, number
-@signature: {'focusChange: (focusIndex: number, id: string) => any;'}
+
+@signature: {'focusChange: (focusIndex: number, id: string | number) => void;'}
 
 @params:
 - focusIndex		number					the position of an item
-- id		string, number			the id of an item
+- id		string|number			the id of an item
 
 
 @example:

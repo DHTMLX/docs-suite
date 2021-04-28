@@ -4,7 +4,7 @@ title: itemRightClick
 ---          
 
 @short: fires on right-clicking a tree item
-todoanton any приходит из d.ts
+
 @signature: itemRightClick: (id: string, e: Event) => void;
 
 @params:

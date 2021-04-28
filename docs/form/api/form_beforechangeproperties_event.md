@@ -4,11 +4,11 @@ title: beforeChangeProperties
 ---          
 
 @short: fires before configuration attributes of a Form control are changed dynamically
-todoanton any приходит из d.ts и вроде name|id  должно быть
+
 @signature: {'beforeChangeProperties: (name: string, props: any) => boolean | void;'}
 
 @params:
-- name|id   string      the name (or id, if the name is not specified) of the Form control
+- name   string      the name (or id, if the name is not specified) of the Form control
 - props     object      an object with configuration attributes of the control and their new values
 
 @returns:

@@ -4,8 +4,8 @@ title: beforeShow
 ---          
 
 @short: fires before a control is shown
-todoanton any приходит из d.ts
-@signature: {'beforeShow: (name: string, value?: any) => boolean | void;'}
+
+@signature: {'beforeShow: (value: ICheckboxGroupValue) => boolean | void;'}
  
 
 @params:

@@ -4,8 +4,8 @@ title: afterClose
 ---     
 
 @short: fires after closing a tab in Tabbar
-todoanton any приходит из d.ts
-@signature: {'afterClose: (id: string) => any;'}
+
+@signature: {'afterClose: (id: string) => void;'}
 
 @params:
 - id 		string		the id of a closed tab

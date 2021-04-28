@@ -4,8 +4,8 @@ title: dragColumnOut
 ---          
 
 @short: fires when a column is dragged out of a potential target
-todoanton any приходит из d.ts
-@signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => any;'}
+
+@signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object

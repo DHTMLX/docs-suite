@@ -4,8 +4,8 @@ title: removeCell
 ---          
 
 @short: removes a specified cell
-todoanton any приходит из d.ts
-@signature: {'removeCell(id: string): any;'}
+
+@signature: {'removeCell(id: string): void;'}
 
 @params:
 - id 	string 	the id of a cell

@@ -4,8 +4,8 @@ title: afterCollapse
 ---          
 
 @short: fires after collapsing a sidebar
-todoanton any приходит из d.ts
-@signature: {'afterCollapse: () => any;'}
+
+@signature: {'afterCollapse: () => void;'}
 
 afterCollapse: () => void;
 

@@ -4,7 +4,7 @@ title: loadError
 ---          
 
 @short: fires when loading of data fails
-todoanton any приходит из d.ts
+
 @signature: {'loadError: (response: any) => boolean | void;'}
 	
 @params:
@@ -23,4 +23,3 @@ The **error** parameter can be either a string with the text of an error, or an 
 - status - the code of an error
 - text - the text of an error
 
-	

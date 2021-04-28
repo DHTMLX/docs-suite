@@ -4,8 +4,8 @@ title: afterExpand
 ---          
 
 @short: fires after expanding a sidebar
-todoanton any приходит из d.ts
-@signature: {'afterExpand: () => any;'}
+
+@signature: {'afterExpand: () => void;'}
 
 afterExpand: () => void;
 

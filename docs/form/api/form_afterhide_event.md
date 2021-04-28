@@ -4,7 +4,7 @@ title: afterHide
 ---          
 
 @short: fires after hiding a control of Form
-todoanton any приходит из d.ts
+
 @signature: {'afterHide: (name: string, value?: any) => void;'}
 
 @params:

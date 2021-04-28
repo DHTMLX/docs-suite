@@ -4,8 +4,8 @@ title: afterShow
 ---          
 
 @short: fires after a cell is shown
-todoanton any приходит из d.ts
-@signature: {'afterShow: (id: string) => any;'}
+
+@signature: {'afterShow: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

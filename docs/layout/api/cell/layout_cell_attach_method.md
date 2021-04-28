@@ -4,7 +4,7 @@ title: attach
 ---          
 
 @short: attaches a DHTMLX component into a Layout cell
-todoanton any приходит из d.ts
+
 @signature: {'attach(name: string | IViewFn | IView | IViewConstructor, config?: any): IViewLike;'}
 
 @params:

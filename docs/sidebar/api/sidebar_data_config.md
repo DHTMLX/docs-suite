@@ -4,7 +4,7 @@ title: data
 ---          
 
 @short: specifies an array of data objects to set into Sidebar
-todoanton any приходит из d.ts
+
 @signature: {'data?: any[] | TreeCollection<ISidebarElement>;'}
 
 @example: 

@@ -4,7 +4,7 @@ title: beforeRemove
 ---          
 
 @short: fires before removing an item from a tree collection
-todoanton any приходит из d.ts
+
 @signature: {'beforeRemove: (obj: any) => boolean | void;'}
 	
 @params:
@@ -23,4 +23,3 @@ data.events.on("BeforeRemove", function(removedItem){
 @descr:
 
 @relatedapi:tree_collection/api/afterremove_event.md
-	

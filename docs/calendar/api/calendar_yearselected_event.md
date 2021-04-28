@@ -4,8 +4,8 @@ title: yearSelected
 ---          
 
 @short: fires after a year was selected in the calendar
-todoanton any приходит из d.ts
-@signature: {'yearSelected: (year: number) => any;'}
+
+@signature: {'yearSelected: (year: number) => void;'}
 
 @params:
 - year      number      the number of the selected year

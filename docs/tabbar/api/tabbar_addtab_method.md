@@ -6,8 +6,7 @@ title: addTab
 
 @short: adds a new tab into a tabbar
 
-todoanton any приходит из d.ts
-@signature: {'addTab(config: ITabbarConfig, index: number): any;'}
+@signature: {'addTab(config: ITabbarConfig, index: number): void;'}
 
 <!-- void addTab(object view,number index);
 addTab(config: ITabbarConfig, index: number): any; -->

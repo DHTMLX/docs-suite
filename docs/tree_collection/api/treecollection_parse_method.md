@@ -4,12 +4,12 @@ title: parse
 ---          
 
 @short: loads a collection of items from a local source
-todoanton any приходит из d.ts
-@signature: {'parse(data: T[]): any;'}
+
+@signature: {'parse(data: T[], driver?: DataDriver | IDataDriver): void;'}
 
 @params:
-- data 		array,string		the data to load
-- type		string		optional, type of data (json, csv, xml), json by default
+- data 		array|string		the data to load
+- type		object|string		optional, type of data (json, csv, xml), json by default
 
 @returns: 
 - data		array		an array of loaded items	

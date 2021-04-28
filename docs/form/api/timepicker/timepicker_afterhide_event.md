@@ -4,8 +4,8 @@ title: afterHide
 ---          
 
 @short: fires after a control is hidden
-todoanton any приходит из d.ts
-@signature: {'afterHide: (name: string, value?: any) => void;'}
+
+@signature: {'afterHide: (value: string | ITimeObject, init: boolean) => void;'}
  
 @params:
 - value     string|object     the current value of the control
