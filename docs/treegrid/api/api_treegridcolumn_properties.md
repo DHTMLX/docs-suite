@@ -20,7 +20,7 @@ title: TreeGrid column properties
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__customization.html#stylingheadercells"><b>text</b></a> - (<i>string|number</i>) the text of a header</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#alignment"><b>align</b></a> - (<i>string</i>) aligns data in the header: "left"|"center"|"right"</li>
                     <li><b>colspan</b> - (<i>number</i>) the number of columns in a colspan</li>
-                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan <br/> {{editor	https://snippet.dhtmlx.com/t8iust6j	TreeGrid. Header spans}}</li>
+                    <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan <br/></li>
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a header</li>
                     <li><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#headerfootercontent"><b>content</b></a> - (<i>string</i>) additional content of a header, which can be:
                     <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
@@ -35,11 +35,14 @@ title: TreeGrid column properties
                     <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
                     </li>
                 </ul>
+				<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/t8iust6j" target="_blank">TreeGrid. Header spans</a>
             </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#htmlcontentoftreegridcolumns"><b>htmlEnable</b></a></td>
-			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> {{editor	https://snippet.dhtmlx.com/iubccmoi	TreeGrid. Html In Data}}</td>
+			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iubccmoi" target="_blank">TreeGrid. Html In Data</a>
+			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>footer</b></td>
@@ -57,11 +60,15 @@ title: TreeGrid column properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>maxWidth</b></td>
-			<td>(<i>number</i>) the maximal width to be set for a column <br/> {{editor	https://snippet.dhtmlx.com/pyrloz7y	TreeGrid. Max Width}}</td>
+			<td>(<i>number</i>) the maximal width to be set for a column <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/pyrloz7y" target="_blank">TreeGrid. Max Width</a>
+			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column <br/> {{editor	https://snippet.dhtmlx.com/cpgjyoxn	TreeGrid. Min Width}}</td>
+			<td>(<i>number</i>) the minimal width to be set for a column <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cpgjyoxn" target="_blank">TreeGrid. Min Width</a>
+			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__customization.html#addingcustommarkstocells"><b>mark</b></a></td>

@@ -80,7 +80,9 @@ title: Ribbon Button properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>size</b></td>
-			<td>(<i>string</i>) defines the size of a button: "small"|"medium"|"auto" <br/> {{editor	https://snippet.dhtmlx.com/1ayiafd1	Ribbon. Button Height}}</td>
+			<td>(<i>string</i>) defines the size of a button: "small"|"medium"|"auto" <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1ayiafd1" target="_blank">Ribbon. Button Height</a>
+            </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>color</b></td>
