@@ -15,9 +15,6 @@ combo.events.on("Change", function(id){
     // your logic here
 });
 
-
-@template: api_event
 @descr:
-
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

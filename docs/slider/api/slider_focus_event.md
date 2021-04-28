@@ -11,9 +11,11 @@ title: focus
 
 @example:
 slider.events.on("focus", function() {
-    console.log("focus on element"); - Сработает при приобритении ползунком фокуса
+    console.log("focus on element"); 
 });
+//Сработает при приобритении ползунком фокуса
+@examplestop:
 
-@relatedapi: 
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z) `to do - add focus`
 
 @changelog: added v7.2

@@ -16,10 +16,8 @@ combobox.events.on("BeforeClose", function( ) {
     return false;
 });
 
-
-@template: api_event
 @descr:
 
-@changelog: added in v6.4
-
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
+
+@changelog: added in v6.4

@@ -12,16 +12,10 @@ title: change
 - oldValue		number		the previous value of the slider
 - isRange		boolean		defines, whether the range mode is activated for the slider
 
-
 @example:
 slider.events.on("Change", function(newValue, oldValue, isRange){
     console.log("The value of a slider has changed to "+slider.getValue());
 });
+@examplestop:
 
-@relatedsample:https://snippet.dhtmlx.com/sc7ov54z	Slider. Slider Events
-
-@template: api_event
-@descr:
-
-
-
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)

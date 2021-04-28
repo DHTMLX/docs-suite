@@ -18,4 +18,3 @@ form.getItem("datepicker").events.on("keydown", function(event, name) {
 });
 
 @changelog: added in v7.2
-@relatedsample: https://snippet.dhtmlx.com/vyipsaoa Form. Events

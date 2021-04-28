@@ -18,5 +18,3 @@ form.getItem("combo").events.on("keydown", function(event, name, id) {
 });
 
 @changelog: added in v7.2
-
-@relatedsample: https://snippet.dhtmlx.com/vyipsaoa Form. Events
