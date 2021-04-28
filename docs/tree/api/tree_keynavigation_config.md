@@ -5,7 +5,7 @@ title: keyNavigation
 
 @short: enables key navigation in a tree
 
-@signature: keyNavigation?: boolean;
+@signature: {'keyNavigation?: boolean;'}
 
 @example: 
 var tree = new dhx.Tree("tree_container", {keyNavigation: true});

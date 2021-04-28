@@ -5,7 +5,7 @@ title: canDrop
 
 @short: fires when a dragged item is over a target item
 
-@signature: canDrop: (data: IDragInfo, events: MouseEvent) => void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @example:
 tree.events.on("CanDrop", function(data, events) {

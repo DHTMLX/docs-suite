@@ -5,7 +5,7 @@ title: dragIn
 
 @short: fires when an item is dragged to another potential target
 
-@signature: dragIn: (data: object, events: MouseEvent) => void | boolean;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @example:
 tree.events.on("DragIn", function(data, events) {

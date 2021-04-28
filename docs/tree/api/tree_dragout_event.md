@@ -5,7 +5,7 @@ title: dragOut
 
 @short: fires when an item is dragged out of a potential target
 
-@signature: dragOut: (data: object, events: MouseEvent) => void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @example:
 tree.events.on("DragOut", function(data, events) {

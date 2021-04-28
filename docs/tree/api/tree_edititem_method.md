@@ -5,7 +5,7 @@ title: editItem
 
 @short: edits a Tree item
 
-@signature:     editItem(id: string, config: object): void;
+@signature: {'editItem(id: Id, config: IEditorConfig): void;'}
 
 @params:
 - id		string		the id of an item

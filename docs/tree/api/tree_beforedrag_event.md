@@ -4,8 +4,9 @@ title: beforeDrag
 ---          
 
 @short: fires before dragging of an item has started 
-
+todoanton
 ```todoapi 
+<!-- @signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 <!-- @signature: beforeDrag: (data: {
     start: string;
     source: string[];

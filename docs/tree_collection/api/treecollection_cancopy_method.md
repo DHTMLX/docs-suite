@@ -5,7 +5,7 @@ title: canCopy
 
 @short: checks whether it is possible to copy a control into some other control
 
-@signature: canCopy(id: Id, target: Id): boolean;
+@signature: {'canCopy(id: Id, target: Id): boolean;'}
 
 @params:
 - id 			string	    the ID of the source control

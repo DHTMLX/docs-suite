@@ -4,12 +4,8 @@ title: resize
 ---          
 
 @short: fires on resizing a window
-
-```todoapi 
-void resize(object state,object oldState,object side){ ... };
-
-resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, editettypes: IDirectionConfig) => void;
-```
+todoanton было так {` void resize(object state,object oldState,object side){ ... };  `} и не  вижу side
+@signature: {'resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, editettypes: IDirectionConfig) => void;'}
 
 @params:
 - state     		object    an object with the new size and (or) position of a window

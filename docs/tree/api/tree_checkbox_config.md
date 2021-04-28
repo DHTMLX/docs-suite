@@ -5,7 +5,7 @@ title: checkbox
 
 @short: adds checkboxes to tree items
 
-@signature: checkbox?: boolean;
+@signature: {'checkbox?: boolean;'}
 
 @example: 
 var tree = new dhx.Tree("tree_container", {checkbox: true});

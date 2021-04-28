@@ -4,12 +4,8 @@ title: move
 ---          
 
 @short: fires on moving a window
-
-```todoapi 
-<!-- void move(object position,object oldPosition,object side){ ... };
-
-move: (position: IPosition, oldPosition: IPosition, editettypes: IDirectionConfig) => void; -->
-```
+todoanton было так {`void move(object position,object oldPosition,object side){ ... }; `} и  не вижу side
+@signature: {'move: (position: IPosition, oldPosition: IPosition, editettypes: IDirectionConfig) => void;'}
 
 @params:
 - position  object  an object with the new position of the window

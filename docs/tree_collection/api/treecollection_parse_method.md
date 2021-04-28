@@ -4,6 +4,8 @@ title: parse
 ---          
 
 @short: loads a collection of items from a local source
+todoanton any приходит из d.ts
+@signature: {'parse(data: T[]): any;'}
 
 @params:
 - data 		array,string		the data to load

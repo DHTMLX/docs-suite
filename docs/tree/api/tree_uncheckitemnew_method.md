@@ -5,7 +5,7 @@ title: uncheckItem
 
 @short: unchecks the checkbox of a tree item and all its sub-items
 
-@signature: uncheckItem(id: string): void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @params:
 - id 	string		the id of an item to uncheck

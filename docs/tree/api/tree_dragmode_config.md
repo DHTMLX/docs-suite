@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Tree
 
-@signature: dragMode?:  "target" | "both" | "source";;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @example: 
 var tree = new dhx.Tree("tree_container", { 

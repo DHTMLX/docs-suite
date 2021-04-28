@@ -5,7 +5,7 @@ title: destructor
 
 @short: releases the occupied resources
 
-@signature: destructor(): void;
+@signature: {'destructor(): void;'}
 
 @example:
 tree.destructor();

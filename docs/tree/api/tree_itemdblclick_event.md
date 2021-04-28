@@ -4,10 +4,8 @@ title: itemDblClick
 ---          
 
 @short: fires on double-clicking a tree item
-
-@signature: itemDblClick: (id: string, e: Event) => void;
-
-<!-- в d.ts any-->
+todoanton any приходит из d.ts
+@signature: {'itemDblClick: (id: string, e: Event) => any;'}
 
 @params:
 - id	string		the id of an item
