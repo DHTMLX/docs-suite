@@ -31,11 +31,11 @@ title: Ribbon NavItem properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/ribbon__fa_icons.html#icons">icon</a> of the navItem</td>
+			<td>(<i>string</i>) an <a href="../../ribbon/fa_icons">icon</a> of the navItem</td>
 		</tr>
 		 <tr>
 			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
 		 <tr>
 			<td class="webixdoc_links0"><b>twoState</b></td>

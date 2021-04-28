@@ -84,15 +84,15 @@ Structure of tabs
 
 The structure of Tabbar should be defined during initialization of the component. It is set within the [views](tabbar/api/tabbar_views_config.md) property. Each tab is an object with attributes, which are:
 
-- <b>id</b> - the id of a tab
-- <b>tab</b> - the name of a tab
-- <b>tabCss</b> - the name of the CSS class used for a tab
-- <b>css</b> - the name of the CSS class used for a cell
-- <b>header</b> - the header of a cell
-- <b>html</b> - HTML content for a tab
-- <b>padding</b> - the distance between the content of a cell and the border of tabbar
-- <b>tabWidth</b> - the width of a tab (for more information, see tabbar/api/tabbar_views_config.md)
-- <b>tabHeight</b> - the height of a tab (for more information, see tabbar/api/tabbar_views_config.md)
+- **id** - the id of a tab
+- **tab** - the name of a tab
+- **tabCss** - the name of the CSS class used for a tab
+- **css** - the name of the CSS class used for a cell
+- **header** - the header of a cell
+- **html** - HTML content for a tab
+- **padding** - the distance between the content of a cell and the border of tabbar
+- **tabWidth** - the width of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
+- **tabHeight** - the height of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
 
     
 ~~~js

@@ -7,7 +7,7 @@ title: Menu Custom HTML properties
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="../../menu/configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>id</b></td>

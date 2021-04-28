@@ -7,7 +7,7 @@ title: Ribbon Spacer properties
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "spacer". If not specified - the <a href="https://docs.dhtmlx.com/suite/ribbon__navitem.html">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the item type, set it to "spacer". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>id</b></td>
