@@ -4,8 +4,8 @@ title: beforeApply
 ---          
 
 @short: fires before saving the timepicker value
-
-@signature: afterApply: (time: string | hour: number, minute: number, AM?: boolean) => boolean | void;
+todoanton afterApply: (time: string | hour: number, minute: number, AM?: boolean) => boolean | void;
+@signature: {'beforeApply: (time: string | ITimeObject) => void;'}
 
 @params:
 - value		string|object	the value of a timepicker	

@@ -4,8 +4,8 @@ title: beforeClose
 ---          
 
 @short: fires before closing the timepicker
-
-@signature: beforeClose: (time: string | hour: number, minute: number, AM?: boolean) => boolean | void;
+todoanton beforeClose: (time: string | hour: number, minute: number, AM?: boolean) => boolean | void;
+@signature: {'beforeClose: (time: string | ITimeObject) => boolean | void;'}
 
 @params:
 - value		string|object	the current value of a timepicker	

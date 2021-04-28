@@ -4,8 +4,8 @@ title: labelPosition
 ---          
 
 @short: defines the position of a label of a slider
-
-@signature: labelPosition?: = "left" | "top";
+todoanton можно ли подставлять labelPosition?: = "left" | "top";
+@signature: {'labelPosition?: ILabelPosition;'}
 
 @example: 
 var slider = new dhx.Slider("slider_container", { 

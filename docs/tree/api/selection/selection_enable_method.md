@@ -5,9 +5,7 @@ title: enable
 
 @short: enables selection of items in Tree
 
-
-
-
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @example:
 tree.selection.enable();

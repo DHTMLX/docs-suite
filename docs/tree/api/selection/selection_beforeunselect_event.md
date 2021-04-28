@@ -5,6 +5,8 @@ title: beforeUnSelect
 
 @short: fires on unselecting an item, but before the item is really unselected
 
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
+
 @params:
 - id    string  the id of an item
 

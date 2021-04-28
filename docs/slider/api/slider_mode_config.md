@@ -4,6 +4,8 @@ title: mode
 ---          
 
 @short: the direction of the Slider scale
+todoanton mode?: "vertical" | "horizontal";
+@signature: {'mode?: Direction;'}
 
 mode?: "vertical" | "horizontal";
 

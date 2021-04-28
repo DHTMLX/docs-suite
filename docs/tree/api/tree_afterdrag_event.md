@@ -5,7 +5,7 @@ title: afterDrag
 
 @short: fires after dragging of an item is finished
 
-@signature: afterDrag: (data: object, events: MouseEvent) => void;
+@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
 
 @example:
 tree.events.on("AfterDrag", function(data, events) {

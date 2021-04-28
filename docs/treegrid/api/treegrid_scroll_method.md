@@ -4,8 +4,8 @@ title: scroll
 ---          
 
 @short: scrolls a grid according to specified coordinates
-
-@signature: scroll(x: number, y: number): void;
+todoanton scroll(x: number, y: number): void;
+@signature: {'scrollTo(row: string, col: string): void;'}
 
 @params:
 - x		number		the X coordinate
