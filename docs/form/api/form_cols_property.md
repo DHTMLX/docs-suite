@@ -5,7 +5,6 @@ title: cols
 
 @short: arranges controls inside the control group horizontally
 
-
 @type: array
 
 @example: 
@@ -35,10 +34,8 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-
 @template:	api_config
 @descr: 
-
 
 **Related sample**:
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)

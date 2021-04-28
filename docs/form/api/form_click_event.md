@@ -14,10 +14,8 @@ title: click
 form.events.on("Click", function(name, events) {
     console.log("Click", name, events); 
 });
+@examplestop:
 
-
-@template: api_event
-@descr:
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog: added in v7.0
-

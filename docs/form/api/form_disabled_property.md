@@ -13,10 +13,8 @@ var form = new dhx.Form("form_container", {
 	disabled: true
 });
 
-
 @template:	api_config
 @descr: 
-
 
 **Related sample**:
 - [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)

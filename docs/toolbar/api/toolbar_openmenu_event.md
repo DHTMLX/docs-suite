@@ -14,7 +14,6 @@ title: openMenu
 toolbar.events.on("OpenMenu", function(id){
     // your code here
 });
-
+@examplestop:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
-

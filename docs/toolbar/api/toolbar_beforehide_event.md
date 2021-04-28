@@ -19,8 +19,6 @@ toolbar.events.on("BeforeHide", function(id, event){
     // your code here
     return false;
 });
-
-@template: api_event
-@descr:
+@examplestop:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)

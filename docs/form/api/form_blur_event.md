@@ -18,8 +18,8 @@ title: blur
 form.event.on("blur", function(name, value, id) {
     console.log(name, value, id);
 });
+@examplestop: 
 
-
-@relatedapi: 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa) `to do add blur event`
 
 @changelog: added v7.2

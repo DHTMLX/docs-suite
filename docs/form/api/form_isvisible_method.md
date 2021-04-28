@@ -18,12 +18,7 @@ form.isVisible(); // -> true/false
 // checks whether a form control is visible
 form.isVisible("combo"); // -> true/false
 
-
-@template: api_method
 @descr:
-
-
-
 
 @related:form/work_with_form.md#checkingifaformisvisible
 
@@ -31,7 +26,4 @@ form.isVisible("combo"); // -> true/false
 form/api/form_hide_method.md
 form/api/form_show_method.md
 
-
-
 @changelog: added in v6.5
-

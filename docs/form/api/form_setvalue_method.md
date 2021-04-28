@@ -8,12 +8,9 @@ title: setValue
 @params:
 - values	object		an object with new values/states of controls
 
-
-
 @example:
 form.setValue({"input_name":"Jack London", "slider_id":10});
 
-@template: api_method
 @descr:
 The **values** object should contain a set of *key:value* pairs where *key* is either the name of the control or the control's id (if the name attribute is not defined in the config of the control)  and *value* is a new value/state of the control. 
 
@@ -35,4 +32,3 @@ form/api/form_getvalue_method.md
 **Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
 
 @changelog:added in v6.1 
-

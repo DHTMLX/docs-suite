@@ -14,9 +14,6 @@ title: inputFocus
 toolbar.events.on("inputFocus", function(id){
     console.log(id);
 });
-
-@template: api_event
-@descr:
+@examplestop:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
-

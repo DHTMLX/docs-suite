@@ -21,4 +21,6 @@ form.event.on("focus", function(name, value, id) {
 
 @relatedapi: 
 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa) `to do - add focus event`
+
 @changelog: Added in v7.2

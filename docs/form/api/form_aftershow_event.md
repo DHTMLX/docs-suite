@@ -9,16 +9,14 @@ title: afterShow
 - name|id		string		the name (or id, if the name is not specified) of the Form control
 - value     any         the current value of the control
 
-
-
 @example:
 form.events.on("AfterShow", function(name, value) {
     console.log("AfterShow", name, value); 
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @relatedapi: form/api/form_beforeshow_event.md
 

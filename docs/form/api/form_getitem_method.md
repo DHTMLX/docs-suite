@@ -11,13 +11,8 @@ title: getItem
 @returns:
 - state 		object		the object of the control
 
-
-
 @example:
 form.getItem("colorpicker").setValue("#02F7C6");
-
-
-@template: api_method
 
 @related: 
 form/calendar.md#workingwithdatepicker
@@ -43,4 +38,3 @@ form/timepicker.md#workingwithtimepicker
 - [Form. Disable Of Control](https://snippet.dhtmlx.com/n0ndn215)
 
 @changelog:added in v6.2 
-

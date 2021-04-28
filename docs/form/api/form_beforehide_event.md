@@ -19,9 +19,9 @@ form.events.on("BeforeHide", function(name, value) {
     return false;
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @relatedapi: form/api/form_afterhide_event.md
 
@@ -29,3 +29,4 @@ form.events.on("BeforeHide", function(name, value) {
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+  

@@ -15,9 +15,9 @@ form.events.on("AfterChangeProperties", function(name, properties) {
     console.log("AfterChangeProperties", name,  properties);
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @relatedapi: form/api/form_setproperties_method.md
 

@@ -8,8 +8,6 @@ title: keydown
 @short: fires on keyboard event in a Combobox
 fires on a keyboard event when a focus is in a Combobox `check`
 occurs for Combo in focus when a keyboard key is pressed
-response
-actuate
 
 @signature: 
 

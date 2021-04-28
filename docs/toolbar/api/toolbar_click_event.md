@@ -18,10 +18,6 @@ title: click
 toolbar.events.on("Click", function(id,e){
     console.log(id);
 });
-
-
-@template: api_event
-@descr:
+@examplestop:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
-

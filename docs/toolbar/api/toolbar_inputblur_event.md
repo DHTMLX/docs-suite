@@ -17,10 +17,6 @@ title: inputBlur
 toolbar.events.on("InputBlur", function(id){
     console.log(id);
 });
-
-
-@template: api_event
-@descr:
+@examplestop:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
-

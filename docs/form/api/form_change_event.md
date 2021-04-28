@@ -15,9 +15,6 @@ form.events.on("Change",function(name, new_value){
 	// your code here
 });
 
-
-@template: api_event
 @descr:
-
 
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)

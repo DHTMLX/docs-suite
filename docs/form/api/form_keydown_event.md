@@ -16,8 +16,8 @@ title: keydown
 form.events.on("keydown", function(event, name, id) {
     console.log(event, name, id);
 });
+@examplestop:
 
-@relatedsample: 
-https://snippet.dhtmlx.com/vyipsaoa Form. Events
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa) `to do add keydown event`
 
 @changelog: added in v7.2
