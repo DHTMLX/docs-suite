@@ -112,7 +112,7 @@ title: Grid column properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="../../grid/configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea" </td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea" </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>options</b></td>

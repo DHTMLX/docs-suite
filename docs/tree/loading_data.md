@@ -102,7 +102,7 @@ Each object in the data set contains configuration of a tree item. The structure
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>object</i>) allows adding <a href="https://docs.dhtmlx.com/suite/tree__api__tree_icon_config.html">custom icons</a> for a tree item</td>
+			<td>(<i>object</i>) allows adding <a href="../tree/api/tree_icon_config">custom icons</a> for a tree item</td>
 		</tr>
     </tbody>
 </table>
