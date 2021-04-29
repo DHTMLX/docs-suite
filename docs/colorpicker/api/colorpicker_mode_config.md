@@ -4,7 +4,7 @@ title: mode
 ---          
 
 @short: specifies the mode of displaying a colorpicker
-todoanton если можно: mode?: "palette" | "picker";
+TODO: api change (добавить в desc "palette" | "picker")
 @signature: {'mode?: ViewsMode;'}
 
 @example: 

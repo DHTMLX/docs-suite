@@ -4,8 +4,8 @@ title: getProperties
 ---          
 
 @short: returns an object with the available configuration attributes of the control
-todoanton не вижу id  и param в signature
-@signature: {'getProperties(name?: string): { [name: string]: IFormProps; } | IFormProps;'}
+
+@signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
 
 @params:
 - id	string  optional, the id of a radio button

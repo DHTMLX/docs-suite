@@ -4,8 +4,8 @@ title: disable
 ---          
 
 @short: disables selection of items in DataView
-todoanton не тот метод
-@signature: {'disableSelection(): void;'}
+
+@signature: {'disable(): void;'}
 
 ```todoapi ```
 

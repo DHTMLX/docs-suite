@@ -4,8 +4,8 @@ title: collapse
 ---          
 
 @short: collapses a sidebar
-todoanton не та переменная
-@signature: {'collapsed?: boolean;'}
+
+@signature: {'collapse(): void;'}
 
 @example:
 sidebar.collapse();

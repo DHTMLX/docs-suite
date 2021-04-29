@@ -4,8 +4,8 @@ title: setPageSize
 ---          
 
 @short: sets the number of items displayed on a page of the related widget
-todoanton size или v ?
-@signature: {'setPageSize(v: number): void;'}
+
+@signature: {'setPageSize(size: number): void;'}
 
 
 @params:

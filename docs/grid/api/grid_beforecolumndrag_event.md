@@ -4,7 +4,7 @@ title: beforeColumnDrag
 ---          
 
 @short: fires before dragging of a column has started
-todoanton => void | boolean
+
 @signature: {'beforeColumnDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
@@ -12,7 +12,7 @@ todoanton => void | boolean
 - events		    Event		a native event object
 
 @returns:
-- result	boolean		false - to prevent dragging a column, otherwise true
+- result	void | boolean		false - to prevent dragging a column, otherwise true
 
 @example:
 grid.events.on("BeforeColumnDrag", function(data, events){

@@ -5,7 +5,7 @@ title: forEach
 
 @short: iterates over all items of a data collection
 
-@signature: {'forEach(cb: DataCallback<T>): void;'}
+@signature: {'forEach(callback: DataCallback<T>): void;'}
 
 @params:
 - callback	function    a function that will iterate over items of a data collection

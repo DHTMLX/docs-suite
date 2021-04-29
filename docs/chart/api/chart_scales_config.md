@@ -4,9 +4,8 @@ title: scales
 ---          
 
 @short: defines configuration of chart scales
-
+TODO: api change (добавить в description "left" | "right" | "top" | "bottom" | "radial")
 @signature: {'scales?: IScalesConfig;'}
-```todoanton хотелось бы указать "left" | "right" | "top" | "bottom" | "radial";
 ```todoapi
 object scales;
 scales?: IScalesConfig;

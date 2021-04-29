@@ -4,7 +4,7 @@ title: beforeEditStart
 ---          
 
 @short: fires before editing of a cell has started
-todoanton => boolean | void
+
 @signature: {'beforeEditStart: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;'}
 	
 @params:
@@ -14,7 +14,7 @@ todoanton => boolean | void
 
 
 @returns:
-- result		boolean		false - to block editing of a cell, otherwise true
+- result		boolean	| void	false - to block editing of a cell, otherwise true
 
 @example:
 grid.events.on("BeforeEditStart", function(row,col,editorType){

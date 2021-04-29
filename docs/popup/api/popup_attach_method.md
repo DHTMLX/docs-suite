@@ -4,8 +4,8 @@ title: attach
 ---          
 
 @short: attaches a DHTMLX component to a dhtmlxPopup
-todoanton  нет метод
-@signature: {'attachHTML(html: string): void;'}
+
+@signature: {'attach(name: string | object, config?: any): VNode;'}
 
 ```todoapi 
 object attach(string|object component,object config);
@@ -13,7 +13,7 @@ attach(name: any, config?: any): VNode;
 ```
 
 @params:
-- component 	string|object		the name or object of a component
+- name 	string|object		the name or object of a component
 - config		object	    		optional, the configuration settings of a component
 
 @returns:

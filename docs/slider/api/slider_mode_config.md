@@ -4,7 +4,7 @@ title: mode
 ---          
 
 @short: the direction of the Slider scale
-todoanton mode?: "vertical" | "horizontal";
+TODO: api change (добавить в descr "vertical" | "horizontal")
 @signature: {'mode?: Direction;'}
 
 mode?: "vertical" | "horizontal";

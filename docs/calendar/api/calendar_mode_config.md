@@ -5,7 +5,6 @@ title: mode
 
 @short: the mode of Calendar initialization
 
-```todoanton хотелось бы так mode?: "calendar" | "year" | "month" | "timepicker";```
 @signature: {'mode?: ViewMode;'}
 
 @default: "calendar"

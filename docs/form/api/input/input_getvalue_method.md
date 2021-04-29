@@ -4,12 +4,12 @@ title: getValue
 ---          
 
 @short: returns the current value of an Input control
-todoanton param   string|number ?
-@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
+
+@signature: {'getValue(): string | number;'}
 
 
 @returns:
-param   string|number     the current value of the control
+param   string | number     the current value of the control
 
 @example:
 var value = form.getItem("input").getValue();

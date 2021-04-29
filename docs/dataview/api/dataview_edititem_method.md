@@ -4,8 +4,8 @@ title: editItem
 ---          
 
 @short: enables editing of an item
-todoanton string|number скорее всего
-@signature: {'editItem(id: string): void;'}
+
+@signature: {'editItem(id: string | number): void;'}
 
 @params:
 - id		string|number		the id of an item

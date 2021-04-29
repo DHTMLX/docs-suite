@@ -4,7 +4,7 @@ title: beforeRowDrag
 ---          
 
 @short: fires before dragging of a row has started
-todoanton returns void | boolean; ?
+
 @signature: {'beforeRowDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
@@ -12,7 +12,7 @@ todoanton returns void | boolean; ?
 - events		    Event		a native event object
 
 @returns:
-- result	boolean		false - to prevent dragging a row, otherwise true
+- result	void | boolean		false - to prevent dragging a row, otherwise true
 
 @example:
 treegrid.events.on("BeforeRowDrag", function(data, events){

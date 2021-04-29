@@ -4,12 +4,12 @@ title: afterClose
 ---          
 
 @short: fires after closing the timepicker
-todoanton afterClose: (time: string | hour: number, minute: number, AM?: boolean) => void;
+
 @signature: {'afterClose: (time: string | ITimeObject) => void;'}
 
 @params:
 - value		string|object	the current value of a timepicker	
-- 
+
 @example:
 timepicker.events.on("AfterClose", function(value){
     console.log(value);

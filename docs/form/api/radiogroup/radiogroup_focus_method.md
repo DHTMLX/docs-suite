@@ -4,8 +4,8 @@ title: focus
 ---          
 
 @short: sets focus to the radio button of the RadioGroup control by its id
-todoanton не вижу в signature id
-@signature: {'focus(): void;'}
+
+@signature: {'focus(id?: string): void;'}
 
 @params:
 - id    string  optional, the id of a radio button 

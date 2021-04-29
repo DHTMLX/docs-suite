@@ -4,7 +4,7 @@ title: getOptions
 ---          
 
 @short: returns an array of Select options
-todoanton param?
+
 @signature: {'getOptions(): IOption[];'}
 
 @returns:

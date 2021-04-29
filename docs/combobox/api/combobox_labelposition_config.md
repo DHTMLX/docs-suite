@@ -4,7 +4,7 @@ title: labelPosition
 ---          
 
 @short: defines the position of a label of a combobox
-todoanton можно ли записать labelPosition?: "left" | "top";
+TODO: api change (добавить в desc "left" | "top")
 @signature: {'labelPosition?: ILabelPosition;'}
 
 @example: 

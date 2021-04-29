@@ -4,7 +4,7 @@ title: labelPosition
 ---          
 
 @short: defines the position of a label of a slider
-todoanton можно ли подставлять labelPosition?: = "left" | "top";
+TODO: api change (подставлять в description "left" | "top")
 @signature: {'labelPosition?: ILabelPosition;'}
 
 @example: 

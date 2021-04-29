@@ -4,14 +4,14 @@ title: beforeRowHide
 ---          
 
 @short: fires before a row is hidden
-todoanton returns  => boolean | void; ?
+
 @signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
 
 @params: 
 - row   object  an object with a row configuration
 
 @returns:
-- result	boolean		false - to prevent a row from being hidden, otherwise true
+- result	boolean	| void	false - to prevent a row from being hidden, otherwise true
 
 @example:
 treegrid.events.on("BeforeRowHide", function(row){

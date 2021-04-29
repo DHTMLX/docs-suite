@@ -5,7 +5,6 @@ title: getPosition
 
 @short: gets the position of a window
 
-todoanton можно ли getPosition(): {left: number, top: number};
 @signature: {'getPosition(): IPosition;'}
 
 @returns:

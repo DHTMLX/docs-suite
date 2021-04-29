@@ -4,8 +4,8 @@ title: enable
 ---          
 
 @short: enables selection of items in DataView
-todoanton не тот метод
-@signature: {'enableSelection(): void;'}
+
+@signature: {'enable(): void;'}
 
 @example:
 dataview.selection.enable();
@@ -24,4 +24,3 @@ added in v7.0
 @related: dataview/usage_selection.md
 
 [Dataview. Disable/Enable selection](https://snippet.dhtmlx.com/kn42gb50)
-	

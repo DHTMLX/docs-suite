@@ -4,7 +4,7 @@ title: find
 ---          
 
 @short: finds the item that corresponds to the specified parameters
-todoanton в параметрах ниже есть отличия
+TODO: api change (изменить params - так как ожидается объект с набором текущих параметров, а не эти параметры)
 @signature: {'find(rule: IFilterMode): T;'}
 
 @params:

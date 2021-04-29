@@ -4,8 +4,8 @@ title: change
 ---          
 
 @short: fires on change of the timepicker value
-todoanton change: (time: string | hour: number, minute: number, AM?: boolean) => void;
-@signature: {'change: (time: string | ITimeObject) => void;'}
+
+@signature: {'change: (value: string | ITimeObject) => void;'}
 
 
 @example:

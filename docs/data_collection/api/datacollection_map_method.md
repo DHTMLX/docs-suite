@@ -4,11 +4,11 @@ title: map
 ---          
 
 @short: iterates through all items of the component
-todoanton в параметрах ниже есть отличия
-@signature: {'map(cb: DataCallback<T>): T[];'}
+
+@signature: {'map(callback: DataCallback<T>): T[];'}
 
 @params:
-- handler			function		a function that will be called for each item of a component
+- callback			function		a function that will be called for each item of a component
 
 @example:
 //getting ids of all items of the component

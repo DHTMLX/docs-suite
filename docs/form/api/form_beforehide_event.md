@@ -4,9 +4,11 @@ title: beforeHide
 ---          
 
 @short: fires before a Form control is hidden
-todoanton возможно не подставилась signature
+
+@signature: {'beforeHide: (name: string | number, value?: any) => boolean | void;'}
+
 @params:
-- name|id		string		the name (or id, if the name is not specified) of the Form control
+- name|id		string | number		the name (or id, if the name is not specified) of the Form control
 - value     any         the current value of the control
 
 @returns:

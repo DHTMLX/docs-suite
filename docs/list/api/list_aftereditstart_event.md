@@ -4,8 +4,8 @@ title: afterEditStart
 ---          
 
 @short: fires after editing of an item has started
-todoanton скорее всего string | number
-@signature: {'afterEditStart: (id: string) => void;'}
+
+@signature: {'afterEditStart: (id: string | number) => void;'}
 	
 @params:
 - id		string|number		the id of an item

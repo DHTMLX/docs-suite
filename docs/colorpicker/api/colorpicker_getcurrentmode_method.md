@@ -4,7 +4,7 @@ title: getCurrentMode
 ---          
 
 @short: returns the current mode of displaying ColorPicker
-todoanton если можно: getCurrentMode(): "palette" | "picker";
+TODO: api change (добавить в desc "palette" | "picker")
 @signature: {'getCurrentMode(): ViewsMode;'}
 
 @example:

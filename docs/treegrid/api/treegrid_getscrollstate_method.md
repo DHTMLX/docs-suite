@@ -4,7 +4,7 @@ title: getScrollState
 ---          
 
 @short: returns the coordinates of a position a grid has been scrolled to
-todoanton можно ли писать так? getScrollState(): x: number, y: number;
+
 @signature: {'getScrollState(): ICoords;'}
 
 @returns:

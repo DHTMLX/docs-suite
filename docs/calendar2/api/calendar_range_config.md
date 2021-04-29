@@ -4,8 +4,8 @@ title: range
 ---          
 
 @short: enables/disables the possibility to select a range of dates on the calendar
-todoanton возможно не подставилась signature, по крайней мере новых скобок не вижу
-@signature: range?: boolean;
+
+@signature: {'range?: boolean;'};
 
 @example: 
 var calendar = new dhx.Calendar("calendar", {

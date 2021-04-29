@@ -4,7 +4,7 @@ title: align
 ---          
 
 @short: sets the alignment of content inside a cell
-todoanton align?: "start" | "center" | "end" | "between" | "around" | "evenly"; ?
+TODO: api change (добавить в desc "start" | "center" | "end" | "between" | "around" | "evenly")
 @signature: {'align?: FlexDirection;'}
 
 @example: 

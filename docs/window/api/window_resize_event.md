@@ -4,7 +4,7 @@ title: resize
 ---          
 
 @short: fires on resizing a window
-todoanton было так {` void resize(object state,object oldState,object side){ ... };  `} и не  вижу side
+
 @signature: {'resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, editettypes: IDirectionConfig) => void;'}
 
 @params:

@@ -4,8 +4,8 @@ title: thisMonthOnly
 ---          
 
 @short: hides dates of the previous/next months relative to the currently displayed one
-todoanton возможно не подставилась signature, по крайней мере скобок не вижу
-@signature: thisMonthOnly?: boolean;
+
+@signature: {'thisMonthOnly?: boolean;'}
 
 @default: false
 

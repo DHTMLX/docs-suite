@@ -4,8 +4,8 @@ title: disable
 ---          
 
 @short: disables ComboBox on a page
-todoanton не тот метод было @signature: disable(): void;
-@signature: {'disabled?: boolean;'}
+
+@signature: {'disable(): void;'}
 
 
 @example:

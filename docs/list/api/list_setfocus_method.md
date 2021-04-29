@@ -5,8 +5,8 @@ title: setFocus
 
 ```todoapi 
 @short: sets focus to an item by its id
-todoanton string|number 
-@signature: {'setFocus(id: string): void;'}
+
+@signature: {'setFocus(id: string | number): void;'}
 
 @params:
 - id	string|number      the id of an item

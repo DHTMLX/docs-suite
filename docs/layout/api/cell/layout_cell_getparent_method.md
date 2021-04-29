@@ -4,7 +4,7 @@ title: getParent
 ---          
 
 @short: returns the parent of a cell
-todoanton config	object	 ?
+
 @signature: {'getParent(): ILayout;'}
 
 @returns:

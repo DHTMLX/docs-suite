@@ -4,7 +4,7 @@ title: setCurrentMode
 ---          
 
 @short: shows colopicker either in the "palette" or in the "picker" mode
-todoanton если можно: setCurrentMode(view: "palette" | "picker"): void;
+TODO: api change (добавить в desc "palette" | "picker")
 @signature: {'setCurrentMode(view: ViewsMode): void;'}
 
 @example:

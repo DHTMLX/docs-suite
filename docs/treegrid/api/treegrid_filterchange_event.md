@@ -4,7 +4,7 @@ title: filterChange
 ---          
 
 @short: fires on typing text in an input of a column's header
-todoanton filterChange: (value: string | number, colId: string | number, filterId: "inputFilter" | "selectFilter" | "comboFilter") => void;
+TODO: api change (добавить filterId в description "inputFilter" | "selectFilter" | "comboFilter")
 @signature: {'filterChange: (value: string, colId: string, filterId: fixedRowContent) => void;'}
 
 @params:

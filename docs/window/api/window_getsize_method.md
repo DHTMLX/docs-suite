@@ -5,7 +5,6 @@ title: getSize
 
 @short: gets the size of window
 
-todoanton можн ли getSize(): {width: number, height: number}
 @signature: {'getSize(): ISize;'}
 
 

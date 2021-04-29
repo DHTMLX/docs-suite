@@ -4,8 +4,8 @@ title: setValue
 ---          
 
 @short: sets the value for a Textarea control
-todoanton не вижу value
-@signature: {'setValue(obj: FormData | IAnyObj): void;'}
+
+@signature: {'setValue(value: string): void;'}
 
 @params:
 - value     string     the value to be set  

@@ -4,8 +4,8 @@ title: disable
 ---          
 
 @short: disables selection of cells in Grid
-todoanton не то API
-@signature: {'disabled?: boolean;'}
+
+@signature: {'disable(): void;'}
 
 
 
