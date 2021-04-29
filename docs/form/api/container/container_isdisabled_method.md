@@ -5,9 +5,9 @@ title: isDisabled
 
 @short: checks whether a Container control is disabled
 
+@signature:
 
-Returns:
-- true, if a control is disabled, otherwise false: boolean 
+@returns: true, if a control is disabled, otherwise false: boolean 
 
 @example: form.getItem("container").isDisabled(); 
 // -> true/false

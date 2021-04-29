@@ -3,8 +3,6 @@ sidebar_label: attachHTML
 title: attachHTML
 ---
 
-`to to Parameters and Returns after @signature: is ready`
-
 @short: attaches an HTML content into a Container control
 
 @signature:

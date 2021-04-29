@@ -2,8 +2,6 @@
 sidebar_label: attach
 title: attach
 ---
- `to do Parameters and Returns after @signature: is ready`
-
 
 @short: attaches a DHTMLX component into a Container control
 
@@ -31,6 +29,5 @@ const grid = new dhx.Grid(null, {
 });
 
 form.getItem("grid").attach(grid);
-
 
 @changelog: added in v7.2

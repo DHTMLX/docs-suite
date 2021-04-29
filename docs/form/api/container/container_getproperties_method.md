@@ -3,8 +3,6 @@ sidebar_label: getProperties
 title: getProperties
 ---
 
-`to do - Check - example, properties, @changelog: в конец, сейчас @example: захватывает текст в блок до @changelog:, как и @signature:`
-
 @short: returns an object with the available configuration properties of the control and their values
 
 @signature:
@@ -23,19 +21,19 @@ title: getProperties
 });
 
 form.getItem("container").getProperties();
-//-> the returned object:
+//-> the returned object
+
 {
-    "grid": {
-        "width": "content",
-        "height": "400px",
-        "padding": 0
-    },
-}
+    "width": "content",
+    "height": "400px",
+    "padding": 0
+},
 
-@changelog: added in v7.2
-
+@descr:
 The returned object of the Container control can contain the following properties:
 
-- `width` - (string|number|"content") the width of a control 
-- `height` - (string|number|"content") the height of a control 
-- `padding` - (string|number) sets padding between a cell and a border of a control
+- `width` - *string, number, "content"* - the width of a control 
+- `height` - *string, number, "content"* - the height of a control 
+- `padding` - *string, number* - sets padding between a cell and a border of a control
+
+@changelog: added in v7.2
