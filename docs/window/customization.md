@@ -71,7 +71,7 @@ dhxWindow.footer.data.add({icon: "mdi mdi-thumb-down", id: "dislike"})
 
 {{editor	https://snippet.dhtmlx.com/o7xlvvv3	Window. Custom Buttons}}
 
-<h3 id="updatecontrols"> Updating controls </h3> 
+### Updating controls
 
 You can change the icon of the Window control and its other config options with the help of the [](../data_collection/api/datacollection_update_method.md) method of Data Collection. It takes two parameters: 
 

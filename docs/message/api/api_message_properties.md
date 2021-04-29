@@ -15,7 +15,7 @@ The constructor of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) optional, an an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) optional, an an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>css</b></td>

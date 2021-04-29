@@ -63,7 +63,7 @@ var chart = new dhx.Chart("chart_container",{
 	<tbody>
        <tr>
 			<td class="webixdoc_links0"><b>values</b></td>
-			<td>(<i>object</i>) maps attributes of legend items to <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> properties. Contains the following properties:
+			<td>(<i>object</i>) maps attributes of legend items to <a href="../../chart/data_loading#preparing-data-set">data set</a> properties. Contains the following properties:
             	<ul>
                 	<li><b>id</b> - (<i>string/number</i>) the id of the series that will be bound to the legend </li>
                     <li><b>text</b> - (<i>string</i>) the pointer to the data value to take a text for the legend from</li>
