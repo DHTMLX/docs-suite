@@ -77,7 +77,7 @@ The returned object contains the following set of properties:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>options</b></td>

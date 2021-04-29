@@ -19,8 +19,7 @@ title: Slider properties
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>value</b></td>
-            <td>(<i>number|number[]</i>) the value (or values, if the <b>range</b> option is set to <i>true</i>) the
-                thumb will be set at on initialization of the slider</td>
+            <td>(<i>number|number[]</i>) the value (or values, if the <b>range</b> option is set to <i>true</i>) the thumb will be set at on initialization of the slider</td>
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>width</b></td>
@@ -84,8 +83,7 @@ title: Slider properties
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>tooltip</b></td>
-            <td>(<i>boolean</i>) enables prompt messages with ticks values on hovering over the slider thumb, true by
-                default</td>
+            <td>(<i>boolean</i>) enables prompt messages with ticks values on hovering over the slider thumb, true by default</td>
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>range</b></td>

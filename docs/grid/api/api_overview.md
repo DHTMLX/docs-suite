@@ -101,7 +101,7 @@ title: Grid API overview
 | [](grid/api/grid_cancolumndrop_event.md)    | @getshort(grid/api/grid_cancolumndrop_event.md)    |
 | [](grid/api/grid_dragcolumnin_event.md)     | @getshort(grid/api/grid_dragcolumnin_event.md)     |
 | [](grid/api/grid_dragcolumnout_event.md)    | @getshort(grid/api/grid_dragcolumnout_event.md)    |
-| [](grid/api/grid_dragcolumnstart_event.md)  | @getshort(grid/api/grid_dragcolumnstart_event.md   |
+| [](grid/api/grid_dragcolumnstart_event.md)  | @getshort(grid/api/grid_dragcolumnstart_event.md)   |
 
 ### Column Hide and Show
 
@@ -133,7 +133,7 @@ title: Grid API overview
 | [](grid/api/grid_canrowdrop_event.md)    | @getshort(grid/api/grid_canrowdrop_event.md)      |
 | [](grid/api/grid_dragrowin_event.md)     | @getshort(grid/api/grid_dragrowin_event.md)       |
 | [](grid/api/grid_dragrowout_event.md)    | @getshort(grid/api/grid_dragrowout_event.md)      |
-| [](grid/api/grid_dragrowstart_event.md)  | @getshort(grid/api/grid_dragrowstart_event.md.md) |
+| [](grid/api/grid_dragrowstart_event.md)  | @getshort(grid/api/grid_dragrowstart_event.md) |
 
 ### Row Hide and Show
 

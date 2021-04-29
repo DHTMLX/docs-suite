@@ -11,9 +11,7 @@ title: Text properties
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>inputType</b></td>
-            <td>(<i>string</i>) sets the type of an input: "text", "password", "number". <br />Using the "number" type
-                for the input sets the type of the <b>value</b> attribute to "number". <br />Use the "password" value to
-                specify a field for entering a password.</td>
+            <td>(<i>string</i>) sets the type of an input: "text", "password", "number". <br />Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br />Use the "password" value to specify a field for entering a password.</td>
         </tr>
         <tr>
             <td class="webixdoc_links0"><b>name</b></td>

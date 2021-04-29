@@ -7,7 +7,7 @@ title: Ribbon SelectButton properties
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "selectButton". If not specified - the <a href="https://docs.dhtmlx.com/suite/ribbon__navitem.html">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "selectButton". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>id</b></td>
@@ -27,11 +27,11 @@ title: Ribbon SelectButton properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/ribbon__fa_icons.html#icons">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../ribbon/fa_icons">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>size</b></td>

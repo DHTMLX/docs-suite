@@ -35,13 +35,13 @@ title: Grid column properties
             <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
             </li>
             </ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank"><b>Grid. Header Spans</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Header Spans</a>
             </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="../../grid/configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
 			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank"><b>Grid. Html In Data</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html In Data</a>
            </td>
 		</tr>
         <tr>
@@ -63,19 +63,19 @@ title: Grid column properties
             <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
             </li>
             </ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank"><b>Grid. Grid With Footer</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid With Footer</a>
             </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>maxWidth</b></td>
 			<td>(<i>number</i>) the maximal width to be set for a column <br/>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank"><b>Grid. Max Width</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank">Grid. Max Width</a>
             </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>minWidth</b></td>
 			<td>(<i>number</i>) the minimal width to be set for a column <br/> 
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank"><b>Grid. Min Width</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Min Width</a>
             </td>
 		</tr>
         <tr>
@@ -88,7 +88,7 @@ title: Grid column properties
             <ol>- <b>row</b> - (<i>object</i>) an object with all cells in a row</ol>
             <ol>- <b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</ol>
             </li></ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank"><b>Grid. Mark Cells</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark Cells</a>
             </td>
 		</tr>
         <tr>
@@ -112,7 +112,7 @@ title: Grid column properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="../../grid/configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea" </td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea" </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>options</b></td>
@@ -126,13 +126,13 @@ title: Grid column properties
                 <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
                 <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
             </ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank"><b>Grid. Cell Templates</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank">Grid. Cell Templates</a>
             </td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><a href="../../grid/configuration#hidden-columns"><b>hidden</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is hidden <br/>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank"><b>Grid. Hidden Columns</b></a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden Columns</a>
            </td>
 		</tr>
         <tr>

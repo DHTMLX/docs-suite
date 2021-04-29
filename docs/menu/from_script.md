@@ -50,13 +50,13 @@ var data = [
 ]
 ~~~
 
-A data set consists of objects with configurations of menu controls. Templates for Menu controls in JSON format are given [below](#jsonformattemplates).
+A data set consists of objects with configurations of menu controls. Templates for Menu controls in JSON format are given [below](#json-format-templates).
 
 
 Loading from a local source
 -------------------
 
-You can load data to a menu from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparingdataset) as a parameter of this method:
+You can load data to a menu from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 menu.data.parse(data);
@@ -91,6 +91,7 @@ JSON format templates
 
 This section will give you the idea of JSON format templates for separate Menu controls.
 
+todotw
 ### MenuItem
 
 The **menuItem** object has the following properties:

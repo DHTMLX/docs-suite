@@ -7,7 +7,7 @@ title: Menu NavItem properties
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "navItem". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "navItem". If not specified - the <a href="../../menu/configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>id</b></td>
@@ -31,7 +31,7 @@ title: Menu NavItem properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/menu__fa_icons.html">icon</a> of the navItem</td>
+			<td>(<i>string</i>) an <a href="../../menu/fa_icons">icon</a> of the navItem</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>items</b></td>

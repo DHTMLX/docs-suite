@@ -25,7 +25,7 @@ You can provide the [following properties](toolbar/api/api_button_properties.md)
 
 ## Adding an icon
 
-A button can have an icon which is set through the corresponding option [icon](toolbar__customization.html#icons):
+A button can have an icon which is set through the corresponding option [icon](toolbar/customization.md#icons):
 
 ~~~js
 {

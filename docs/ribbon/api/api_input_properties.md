@@ -7,7 +7,7 @@ title: Ribbon Input properties
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "input". If not specified - the <a href="https://docs.dhtmlx.com/suite/ribbon__navitem.html">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "input". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>id</b></td>
@@ -23,7 +23,7 @@ title: Ribbon Input properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/ribbon__fa_icons.html#icons">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../ribbon/fa_icons">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>css</b></td>

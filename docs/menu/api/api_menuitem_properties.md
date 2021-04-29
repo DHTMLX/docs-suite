@@ -31,7 +31,7 @@ title: Menu MenuItem properties
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/menu__fa_icons.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../menu/fa_icons">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>items</b></td>
