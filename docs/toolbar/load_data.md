@@ -117,107 +117,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 ]
 ~~~
 
-todotw  сослаться на апи
-### Button
-
-The **button** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "button". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the block</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) a value of the button. You need to set either the <b>value</b> or <b>html</b> property to the button</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the button</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string</i>) adds style classes to a button</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/toolbar__button.html#addinganicon">icon</a> of the button</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls.You can find the full list of all available controls <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>group</b></td>
-			<td>(<i>string</i>) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of the hot key for the button</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the button</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>multiClick</b></td>
-			<td>(<i>boolean</i>) defines the behavior of the Undo/Redo buttons:
-            <ul><li><i>true</i> - all the actions are reverted/re-applied one by one when the Undo/Redo button is clicked and held</li>
-            <li><i>false</i> - one action is reverted/re-applied on each click of the Undo/Redo button</li>
-            </ul></td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>view</b></td>
-			<td>(<i>string</i>) defines the look of a button: "flat"|"link"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>size</b></td>
-			<td>(<i>string</i>) defines the size of a button: "small"|"medium"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>color</b></td>
-			<td>(<i>string</i>) defines the color scheme of a button: "danger"|"secondary"|"primary"|"success"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>full</b></td>
-			<td>(<i>boolean</i>) extends a button to the full width of a form</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>circle</b></td>
-			<td>(<i>boolean</i>) makes the corners of a button round</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>loading</b></td>
-			<td>(<i>boolean</i>) adds a spinner into a button</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a button is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether a button is disabled</td>
-		</tr>
-    </tbody>
-</table>
-
+### Button template
 
 ~~~js 
 // button
@@ -231,39 +131,9 @@ The **button** object has the following properties:
 }
 ~~~
 
-### Custom HTML
+{{note View the full list of properties of the **button** object in the [related article](toolbar/api/api_button_properties.md). }}
 
-The **customHTML** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of an item, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) a string with HTML that should be inserted into the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether an item is hidden</td>
-		</tr>
-    </tbody>
-</table>
-
+### Custom HTML template
 
 ~~~js
 // custom HTML button
@@ -274,63 +144,9 @@ The **customHTML** object has the following properties:
 }
 ~~~
 
+{{note Check the full list of properties of the **customHTML** object in the [related article](toolbar/api/api_customhtmlbutton_properties.md). }}
 
-### ImageButton
-
-The **imageButton** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "imageButton". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>src</b></td>
-			<td>(<i>string</i>) the path to the image</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes to a button </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>group</b></td>
-			<td>(<i>string</i>) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of the hot key for the button</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the button</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a button is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether a button is disabled</td>
-		</tr>
-    </tbody>
-</table>
+### ImageButton template
 
 ~~~js
 // imageButton
@@ -341,63 +157,9 @@ The **imageButton** object has the following properties:
 }
 ~~~
 
-### Input
+{{note You can view the full list of properties of the **imageButton** object in the [related article](toolbar/api/api_imagebutton_properties.md). }}
 
-The **input** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) required, the type of a control, set it to "input". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) optional, the initial value of the field</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes to an input </td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) optional, the name of an <a href="https://docs.dhtmlx.com/suite/toolbar__customization.html#icons">icon</a> from the used icon font</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>placeholder</b></td>
-			<td>(<i>string</i>) optional, a tip for the input</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>width</b></td>
-			<td>(<i>number</i>) optional, the width of the input field</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>label</b></td>
-			<td>(<i>string</i>) optional, a text label for the Input control</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for an input</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether an input is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether an input is disabled</td>
-		</tr>
-    </tbody>
-</table>
-
+### Input template
 
 ~~~js 
 // input
@@ -411,70 +173,8 @@ The **input** object has the following properties:
 }
 ~~~
 
-### MenuItem
-
-The **menuItem** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "menuItem". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		 <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>)  a value for the menu item. You need to set either the <b>value</b> or <b>html</b> property to the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the menu item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/menu__fa_icons.html">icon</a> from the used icon font</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of children controls (note that all the children should have the type <i>menuItem</i>)</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of a keyboard shortcut for a menu item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the menuItem</td>
-		</tr>
-         <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number|string</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success" </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a control is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether an item is disabled</td>
-		</tr>
-    </tbody>
-</table>
+{{note You can check the full list of properties of the **input** object in the [related article](toolbar/api/api_input_properties.md). }}
+### MenuItem template
 
 ~~~js
 // menuItem
@@ -486,82 +186,9 @@ The **menuItem** object has the following properties:
 }
 ~~~
 
-### NavItem
+{{note You can find the full list of properties of the **menuItem** object in the [related article](toolbar/api/api_menuitem_properties.md). }}
 
-The **navItem** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "navItem" </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) a value of the navItem. You need to set either the <b>value</b> or <b>html</b> property to the navItem</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the navItem</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes to a navItem</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/toolbar__customization.html#icons">icon</a> of the navItem</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html">here</a>. If the type of a nested control is not specified, the *menuItem* type will be applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>twoState</b></td>
-			<td>(<i>boolean</i>) adds two states to the item: active (pressed) and inactive  (unpressed)</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>active</b></td>
-			<td>(<i>boolean</i>) sets the state of a twoState item</td>
-		</tr>
-		   <tr>
-			<td class="webixdoc_links0"><b>group</b></td>
-			<td>(<i>string</i>) defines the name of a group of controls a navItem belongs to. If one of the navItems in the group becomes active, all others automatically become inactive</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of the hot key for the item</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the navItem</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a control is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether an item is disabled</td>
-		</tr>
-    </tbody>
-</table>
+### NavItem template
 
 ~~~js
 // navItem
@@ -571,62 +198,8 @@ The **navItem** object has the following properties:
 }
 ~~~
 
-### SelectButton
-
-The **selectButton** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "selectButton". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) a value of the button</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes to a button</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/toolbar__customization.html#icons">icon</a> from the used icon font</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html">here</a>. If the type of a nested control is not specified, the *menuItem* type will be applied by default.</td>
-		</tr>
-		 <tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the control</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a button is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether a button is disabled</td>
-		</tr>
-    </tbody>
-</table>
+{{note You can take a look at the full list of properties of the **navItem** object in the [related article](toolbar/api/api_navitem_properties.md). }}
+### SelectButton template
 
 ~~~js
 // selectButton
@@ -638,111 +211,42 @@ The **selectButton** object has the following properties:
 }
 ~~~
 
-###  Separator
+{{note View the full list of properties of the **selectButton** object in the [related article](toolbar/api/api_selectbutton_properties.md). }}
 
-The **separator** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-    </tbody>
-</table>
+###  Separator template
 
 ~~~js
 // separator
 {
-	id:	 	"sepId",		
-	type:   "separator"	 	
+	id:	"sepId",		
+	type: "separator"	 	
 }
 ~~~
 
-### Spacer
+{{note Check the full list of properties of the **separator** object in the [related article](toolbar/api/api_separator_properties.md). }}
 
-The **spacer** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "spacer". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-    </tbody>
-</table>
+### Spacer template
 
 ~~~js
 // spacer
 {
-	id:	 	"spacerId",	  	
-	type:   "spacer"		
+	id:	"spacerId",	  	
+	type: "spacer"		
 }
 ~~~
 
-### Title
+{{note You can find the full list of properties of the **spacer** object in the [related article](toolbar/api/api_spacer_properties.md). }}
 
-The **title** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "title". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) the value of the Title control. You need to set either the <b>value</b> or <b>html</b> property to the title</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the title</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string</i>) adds a custom CSS class</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the control</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a control is hidden</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether a control is disabled</td>
-		</tr>
-    </tbody>
-</table>
+### Title template
 
 ~~~js
 // title
 {
-	id:		 	"collection",		
-	type:	   	"title", 				
-	value:	  	"Music",				
-	tooltip:	"Current collection"	
+	id: "collection",		
+	type: "title", 				
+	value: "Music",				
+	tooltip: "Current collection"	
 }
 ~~~
 
-
-@todo:
-check, add links to api and samples, update json templates for controls
+{{note Take a look at the full list of properties of the **title** object in the [related article](toolbar/api/api_title_properties.md). }}
