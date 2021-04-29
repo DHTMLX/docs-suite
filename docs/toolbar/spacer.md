@@ -11,7 +11,7 @@ This item takes space on the toolbar and is used for aligning controls.
 
 ## Adding Spacer
 
-A new Spacer can be created with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+A new Spacer can be created with the help of the **add()** method of [Tree Collection](tree_collection/api/treecollection_add_method.md):
 
 ~~~js
 toolbar.data.add({
@@ -34,4 +34,4 @@ toolbar.hide(id);
 
 {{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/refs/toolbar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

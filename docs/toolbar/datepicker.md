@@ -11,7 +11,7 @@ A control to select a date. Check the article below to see how easy and convenie
 
 ## Adding Datepicker
 
-The Datepicker control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+The Datepicker control can be easily added to a toolbar with the help of the [**add()**](tree_collection/api/treecollection_add_method.md) method of the Tree Collection.
 
 @example:
 toolbar.data.add({
@@ -25,12 +25,12 @@ You can provide the [following properties](toolbar/api/api_datepicker_properties
 
 ## Adding an icon
 
-The Datepicker control can have an icon which is set through the corresponding option [icon](toolbar__customization.html#icons): `check link`
+The Datepicker control can have an icon which is set through the corresponding option [icon](toolbar/customization.md).
 
 @example:
 {
-    type: "datePicker",
-    icon: "dxi dxi-calendar-today",
+  type: "datePicker",
+  icon: "dxi dxi-calendar-today",
 }
 @examplestop:
 
@@ -45,10 +45,9 @@ toolbar.hide(id);
 
 ## Enabling/disabling a Datepicker 
 
-Any control in the toolbar can be [enabled](toolbar/api/toolbar_enable_method.md)/[disabled](toolbar/api/toolbar_disable_method.md):
+Any control in the toolbar can be [enabled](toolbar/api/toolbar_enable_method.md) / [disabled](toolbar/api/toolbar_disable_method.md):
 
 @example:
 toolbar.enable(id);
 toolbar.disable(id);
 @examplestop:
-

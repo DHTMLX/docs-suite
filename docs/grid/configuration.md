@@ -362,7 +362,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 `to do check`
 
-- **combobox** - an editor for cells that should contain several options to choose from. Pay attention there are two ways to provide the options property. There is a possibility to find an option by entering text in the edit control
+- **combobox** - an editor for cells that should contain several options to choose from. Pay attention there are two ways to provide the options property. There is a possibility to find an option by entering text in the edit control.
 
 To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
 

@@ -7,3 +7,4 @@ title: paint
 
 @signature: paint(): void;
 
+@example: toolbar.paint();
