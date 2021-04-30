@@ -6,10 +6,10 @@ title: Initialization
 This article gives you detailed instructions on how to create dhtmlxCombo on a page. Follow the steps below:
 
 - [Download the dhtmlxComboBox package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize ComboBox](#initializecombo) with the object constructor
-- [Load data into ComboBox](#loaddataintocombobox)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize ComboBox](#initialize-combo) with the object constructor
+- [Load data into ComboBox](#load-data-into-combobox)
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -111,7 +111,7 @@ combo.data.parse(countries);
 
 {{editor    https://snippet.dhtmlx.com/69jnq5cn	Combobox. Basic Initialization}}
 
-Detailed information on loading data into ComboBox is given in the article combo/adding_options.md.
+Detailed information on loading data into ComboBox is given in the [](combobox/adding_options.md) article .
 
 
 

@@ -22,21 +22,21 @@ var grid = new dhx.Grid("grid_container", {
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
 @related: 
-grid/initialization.md#initializegrid
+grid/initialization.md#initialize-grid
 grid/configuration.md#dragndropofgridcolumns
 
 
 @changelog: added in v6.5
 
-@edition: pro
+
 
 @relatedapi:
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_beforecolumndrop_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
+[](grid/api/grid_aftercolumndrag_event.md)
+[](grid/api/grid_aftercolumndrop_event.md)
+[](grid/api/grid_beforecolumndrag_event.md)
+[](grid/api/grid_beforecolumndrop_event.md)
+[](grid/api/grid_cancolumndrop_event.md)
+[](grid/api/grid_cancelcolumndrop_event.md)
+[](grid/api/grid_dragcolumnin_event.md)
+[](grid/api/grid_dragcolumnout_event.md)
+[](grid/api/grid_dragcolumnstart_event.md)

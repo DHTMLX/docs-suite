@@ -18,4 +18,4 @@ var slider = new dhx.Slider("slider_container", {
 @descr: 
 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties

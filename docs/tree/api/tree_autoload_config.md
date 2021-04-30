@@ -26,4 +26,4 @@ app.get("/backend/autoload", (req, res) => {
 
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
+@related: tree/initialization_of_dhtmlxtree.md#initialize-tree

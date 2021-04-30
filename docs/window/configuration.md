@@ -52,7 +52,7 @@ var dhxWindow = new dhx.Window({
 
 {{editor	https://snippet.dhtmlx.com/qu5j85ag	Window. Window With Footer}}
 
-By default a footer is initialized with no controls. To add a control into the footer, you need to manipulate the [](window/api/window_footer_config.md) object of the toolbar. Follow the instructions given in the article window/customization.md.
+By default a footer is initialized with no controls. To add a control into the footer, you need to manipulate the [](window/api/window_footer_config.md) object of the toolbar. Follow the instructions given in the [](window/customization.md) article.
 
 Modality
 -------------
@@ -171,5 +171,5 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-The header can also contain some buttons. You can control them via the [](window/api/window_header_config.md) object of the toolbar. Check details in the article window/customization.md.
+The header can also contain some buttons. You can control them via the [](window/api/window_header_config.md) object of the toolbar. Check details in the [](window/customization.md) article.
 

@@ -109,7 +109,7 @@ Adding items into Chart
 -----------------------
 
 The API of [Data Collection](data_collection/api/refs/datacollection.md) allows you to perform operations with Chart data items. 
-For example, you can add more items (points) into your Chart using the [](data_collection/api/add.md) method, like this:
+For example, you can add more items (points) into your Chart using the [](data_collection/api/datacollection_add_method.md) method, like this:
 
 ~~~js
 var config = {
@@ -172,7 +172,7 @@ The method takes as a parameter an object with two properties:
     </tbody>
 </table>
 
-A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it corrrectly.
+A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it correctly.
 
 {{editor    https://snippet.dhtmlx.com/dpz4w5nr	Chart. Adding Data On The Fly}}
 

@@ -10,7 +10,7 @@ dhtmlxTreeGrid possesses flexible configuration that let you get desired look an
 Columns
 -----------
 
-It is possible to adjust the configuration of grid columns via the corresponding option treegrid/api/treegrid_columns_config.md. As a value it takes an array with objects each of which contains config of a column.
+It is possible to adjust the configuration of grid columns via the corresponding [](treegrid/api/treegrid_columns_config.md) option. As a value it takes an array with objects each of which contains config of a column.
 The full list of properties you can set for a column is given in the API reference.
 
 ~~~js
@@ -150,8 +150,7 @@ var treegrid = new dhx.TreeGrid("grid", {
 Data
 ---------
 
-You can specify data for your grid before initialization via the [](treegrid/api/treegrid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the article
-treegrid/data_loading.md.
+You can specify data for your grid before initialization via the [](treegrid/api/treegrid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the [](treegrid/data_loading.md) article.
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -901,7 +900,7 @@ Each span object contains the following properties:
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/treegrid__configuration.html#tooltip"><b>tooltip</b></a></td>
+			<td class="webixdoc_links0"><a href="#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>

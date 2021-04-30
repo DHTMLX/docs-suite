@@ -39,7 +39,7 @@ The function passed to the method receives one parameter:
 and must return a string with the name of the CSS class or an empty string.
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#highlighteddates
 
 **Related sample**:

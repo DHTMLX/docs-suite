@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxMenu into an application, you need to take the following simple steps:
 
 - [Download the Menu package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Menu](#initializemenu) with the object constructor
-- [Load data into Menu](#loaddataintomenu)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Menu](#initialize-menu) with the object constructor
+- [Load data into Menu](#load-data-into-menu)
 
 
 ~~~html

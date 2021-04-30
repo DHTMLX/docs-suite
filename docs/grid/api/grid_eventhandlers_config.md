@@ -103,7 +103,7 @@ const grid = new dhx.Grid("grid", {
 [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
 
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#eventhandlersforhtmlcontent
 grid/customization.md#addingtemplatetocells
 

@@ -20,7 +20,7 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#rowheight
 
 **Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)

@@ -25,6 +25,6 @@ var target = new dhx.Grid("grid-target", {
 
 **Related sample**: [Grid. Setup Drag Copy](https://snippet.dhtmlx.com/23slivyz)
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 
 @relatedapi: grid/api/grid_dragmode_config.md

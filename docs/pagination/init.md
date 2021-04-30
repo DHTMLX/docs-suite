@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxPagination into an application, you need to take the following simple steps:
 
 - [Download the dhtmlxPagination](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) package and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create two containers](#createcontainers)
-- [Add a related component](#addarelatedwidget)
-- [Initialize Pagination](#initializepagination) with the object constructor
+- [Include source files](#include-source-files)
+- [Create two containers](#create-containers)
+- [Add a related component](#add-a-related-widget)
+- [Initialize Pagination](#initialize-pagination) with the object constructor
 
 ~~~html
 <!DOCTYPE html>

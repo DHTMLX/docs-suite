@@ -21,5 +21,5 @@ var grid = new dhx.Grid("grid_container", {
 The height of the footer is calculated as a sum of all row heights in it.
 
 @related: treegrid/configuration.md#headerfooterheight
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 

@@ -77,4 +77,3 @@ lazyDataProxy.updateUrl("https://docs.dhtmlx.com/suite/backend/lazyload", {
 ~~~
 
 
-@edition: pro

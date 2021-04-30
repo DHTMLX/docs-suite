@@ -29,7 +29,7 @@ var layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Sizes](https://snippet.dhtmlx.com/miej9gb9)
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/cell_configuration.md#cellsize
 
 @relatedapi: 

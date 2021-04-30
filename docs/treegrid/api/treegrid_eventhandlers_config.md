@@ -98,6 +98,6 @@ const grid = new dhx.Grid("grid", {
 [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
 
-@related: treegrid/initialization.md#initializetreegrid
+@related: treegrid/initialization.md#initialize-treegrid
 treegrid/configuration.md#eventhandlersforhtmlcontent
 treegrid/customization.md#addingtemplatetocells

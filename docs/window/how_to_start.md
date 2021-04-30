@@ -6,8 +6,8 @@ title: Initialization
 To initialize dhtmlxWindow on a page, you need to take the following simple steps:
 
 - [Download the dhtmlxWindow package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Initialize Window](#initializewindow) with the object constructor
+- [Include source files](#include-source-files)
+- [Initialize Window](#initialize-window) with the object constructor
 - [Set content](#setcontent) into a created window
 
 ~~~html title="index.html"

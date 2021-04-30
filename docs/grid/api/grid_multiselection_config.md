@@ -22,7 +22,7 @@ To use the **multiselection** property, enable the [](grid/api/grid_selection_co
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#multipleselectionofgridcells
 
 @changelog: added in v6.4

@@ -22,6 +22,6 @@ If you set the property to *false*, the content of TreeGrid columns will be disp
 **Related sample**: [TreeGrid. Html In Data](https://snippet.dhtmlx.com/iubccmoi)
 
 @related: treegrid/configuration.md#htmlcontentoftreegridcolumns
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 
 @changelog: added in v6.3

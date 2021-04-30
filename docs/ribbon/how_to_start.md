@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxRibbon into an application, you need to take the following simple steps:
 
 - [Download the Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Ribbon](#initializeribbon) with the object constructor
-- [Load data into Ribbon](#loaddataintoribbon)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Ribbon](#initialize-ribbon) with the object constructor
+- [Load data into Ribbon](#load-data-into-ribbon)
 
 ~~~html
 <!DOCTYPE html>

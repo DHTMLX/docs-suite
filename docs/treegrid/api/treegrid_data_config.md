@@ -82,7 +82,7 @@ var dataset = [
 
 
 @related: treegrid/configuration.md#data
-treegrid/initialization.md#initialize-treegrid
+treegrid/initialization.md#initialize--treegrid
 
 @relatedapi: treegrid/api/treegrid_autoheight_config.md
 

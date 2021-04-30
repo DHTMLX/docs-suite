@@ -54,6 +54,6 @@ Each object in the spans array contains the following properties:
 </table>
 
 @related: treegrid/configuration.md#spans
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 
 **Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)

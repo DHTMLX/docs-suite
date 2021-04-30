@@ -57,7 +57,7 @@ chart.setConfig(config);
 
 @template: api_method
 @descr:
-See the list of chart configuration properties in the article chart/configuration_properties.md.
+See the list of chart configuration properties in the [](../../chart/configuration_properties.md) article.
 
 @related:
 chart/usage.md#settingchartconfiguration

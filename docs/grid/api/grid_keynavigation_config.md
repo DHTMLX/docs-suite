@@ -25,7 +25,7 @@ You need to set the [selection](grid/api/grid_selection_config.md) and [editable
 
 **Related sample**: [Grid. Key Navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#keyboardnavigation
 
 @changelog: added in v6.3

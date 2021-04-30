@@ -13,8 +13,8 @@ var chart = new dhx.Chart("chart_container",{
     type:"line" 
 });
 
-@descr: 
-### Available types of charts 
+@descr:
+## Available types of charts 
 
 - "bar", "x-bar"
 - "line", "spline"

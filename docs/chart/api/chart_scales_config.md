@@ -36,11 +36,9 @@ var chart = new dhx.Chart("chart_container",{
 });
 
 
-@template:	api_config
+@descr:
 
-@descr: 
-
-### The list of config options for scales
+## The list of config options for scales
 
 <table class="webixdoc_links">
 	<tbody>
@@ -50,7 +48,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>title</b></td>
-			<td>(<i>string</i>) sets a title for a scale <br/>{{editor    https://snippet.dhtmlx.com/5ir00fer	Chart. Scale Title}}</td>
+			<td>(<i>string</i>) sets a title for a scale <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/5ir00fer" target="_blank">Chart. Scale Title</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>text</b></td>
@@ -58,7 +58,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>textTemplate</b></td>
-			<td>(<i>function</i>) sets a template for scale labels <br/>{{editor    https://snippet.dhtmlx.com/nhm3438n	Chart. Text Template For Scale Labels}}</td>
+			<td>(<i>function</i>) sets a template for scale labels <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/nhm3438n" target="_blank">Chart. Text Template For Scale Labels</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>textPadding</b></td>
@@ -70,7 +72,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>scaleRotate</b></td>
-			<td>(<i>number</i>) the degree of rotation of labels of data items on the scale <br/>{{editor    https://snippet.dhtmlx.com/iw00fgl5	Chart. Scale Rotate}}</td>
+			<td>(<i>number</i>) the degree of rotation of labels of data items on the scale <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iw00fgl5" target="_blank">Chart. Scale Rotate</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>scalePadding</b></td>
@@ -82,20 +86,27 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>grid</b></td>
-			<td>(<i>boolean</i>) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale 
-<br/> {{editor    https://snippet.dhtmlx.com/leqdx9qr	Chart. Grid}}</td>
+			<td>(<i>boolean</i>) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale <br/> 
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Grid</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>dashed</b></td>
-			<td>(<i>boolean</i>) sets the dashed type for a scale. Use the <i>dashed:true</i> option in the configuration of the scale <br/>{{editor    https://snippet.dhtmlx.com/gnj1xc3r	Chart. Dashed Grid}}</td>
+			<td>(<i>boolean</i>) sets the dashed type for a scale. Use the <i>dashed:true</i> option in the configuration of the scale <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/gnj1xc3r" target="_blank">Chart. Dashed Grid</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>targetLine</b></td>
-			<td>(<i>number</i>) shows a threshold line (a target value); looks for the specified value in the data <br/>{{editor    https://snippet.dhtmlx.com/0h6n0yuy	Chart. Target Line}}</td>
+			<td>(<i>number</i>) shows a threshold line (a target value); looks for the specified value in the data <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0h6n0yuy" target="_blank">Chart. Target Line</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>targetValue</b></td>
-			<td>(<i>number</i>) allows setting a threshold line at any defined level (any number, not necessarily from the data) <br/>{{editor    https://snippet.dhtmlx.com/8d9kgw28	Chart. Target Value}}</td>
+			<td>(<i>number</i>) allows setting a threshold line at any defined level (any number, not necessarily from the data) <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/8d9kgw28" target="_blank">Chart. Target Value</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>max</b></td>
@@ -129,7 +140,7 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 <br/>
 
-
+### The list of config options for radial scales
 
 The **radial** scale is used for Radar chart and has its own properties, due to peculiarities of configuration:
 
@@ -139,7 +150,7 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
 			<td class="webixdoc_links0"><b>radial</b> scale</td>
 			<td>(<i>object</i>) the radial scale contains the following properties:
             	<ul>
-                	<li><b>value</b> - (<i>string</i>) the name of a <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to take data values from (map to)</li>
+                	<li><b>value</b> - (<i>string</i>) the name of a <a href="../../chart/data_loading#preparing-data-set">data set</a> property to take data values from (map to)</li>
                     <li><b>zebra</b> - (<i>boolean</i>) sets a striped scale coloring for the Radar chart (alternation of two colors in a step)</li>
                     <li><b>showAxis</b> - (<i>boolean</i>) renders values of the scale</li>
                 </ul>

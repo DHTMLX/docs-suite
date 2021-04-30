@@ -42,7 +42,7 @@ Each **data** object can have the following properties:
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>object</i>) allows adding <a href="https://docs.dhtmlx.com/suite/tree__api__tree_icon_config.html">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom Dataset Icons</a></td>
+			<td>(<i>object</i>) allows adding <a href="../../tree/api/tree_icon_config">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom Dataset Icons</a></td>
 		</tr>
     </tbody>
 </table>
@@ -89,8 +89,8 @@ tree.data.getItem("Books").parent
 // "_ROOT_u1574768464563"
 ~~~
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
-tree/loading_data.md#preparingdataset
+@related: tree/initialization_of_dhtmlxtree.md#initialize--tree
+tree/loading_data.md#preparing-data-set
 
 **Related samples**:
 - [Tree. Config Data](https://snippet.dhtmlx.com/r49y51k3)

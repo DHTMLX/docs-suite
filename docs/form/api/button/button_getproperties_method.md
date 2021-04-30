@@ -74,7 +74,7 @@ The returned object of the **Button** control can contain the following configur
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>view</b></td>

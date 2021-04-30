@@ -21,7 +21,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 In this mode it is only possible to select options from the list, without entering words in the input.
 
-@related: combo/how_to_start.md#initializecombobox
+@related: combo/how_to_start.md#initialize-combobox
 combo/configuration.md#readonlymode
 
 **Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)

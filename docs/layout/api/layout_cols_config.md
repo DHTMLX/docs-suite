@@ -40,6 +40,6 @@ var layout = new dhx.Layout("layout_container", {
 
 @relatedapi: layout/api/layout_rows_config.md
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/layout_structure.md
 
