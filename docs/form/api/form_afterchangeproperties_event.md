@@ -5,6 +5,8 @@ title: afterChangeProperties
 
 @short: fires after configuration attributes of a Form control have been changed dynamically
 
+@signature: {'afterChangeProperties: (name: string, props: any) => void;'}
+
 
 @params:
 - name|id   string      the name (or id, if the name is not specified) of the Form control

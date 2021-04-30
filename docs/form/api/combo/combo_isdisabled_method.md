@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether a Combo control is disabled
 
-@signature: {'isDisabled(name?: string): boolean;'}
+@signature: {'isDisabled(): boolean;'}
 
 @returns:
 param   boolean     true, if a control is disabled, otherwise false

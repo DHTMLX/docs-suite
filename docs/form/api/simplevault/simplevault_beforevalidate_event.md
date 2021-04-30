@@ -4,6 +4,8 @@ title: beforeValidate
 ---          
 
 @short: fires before the control value is validated
+
+@signature: {'beforeValidate: (value: ISimpleVaultValue[]) => boolean | void;'}
  
 
 @params:

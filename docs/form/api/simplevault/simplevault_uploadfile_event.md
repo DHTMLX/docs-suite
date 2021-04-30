@@ -4,8 +4,9 @@ title: uploadFile
 ---          
 
 @short: fires when a file has been uploaded
- 
-todoanton возможно не подставилась signature
+
+@signature: {'uploadFile: (file: ISimpleVaultValue, value: ISimpleVaultValue[], extra?: { [key: string]: string }) => void;'}
+
 @params:
 - file      object      the file object
 - value     array     the current value of the control 

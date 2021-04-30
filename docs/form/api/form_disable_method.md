@@ -5,6 +5,8 @@ title: disable
 
 @short: disables a form on a page
 
+@signature: {'disable(): void;'}
+
 
 @params:
 

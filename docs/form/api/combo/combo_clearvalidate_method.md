@@ -5,7 +5,7 @@ title: clearValidate
 
 @short: clears validation of a Combo control
 
-@signature: clearValidate(): void;
+@signature: {'clearValidate(): void;'}
 
 
 

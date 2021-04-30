@@ -5,7 +5,7 @@ title: clear
 
 @short: clears a value of a Combo control
 
-
+@signature: {'clear(): void;'}
 
 
 

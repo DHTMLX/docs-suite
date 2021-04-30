@@ -4,7 +4,9 @@ title: afterValidate
 ---          
 
 @short: fires after the control value is validated
- 
+
+@signature: {'afterValidate: (value: string | string[], isValidate: boolean) => void;'}
+
 
 @params:
 - value       string|string[]  the validated value

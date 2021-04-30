@@ -5,6 +5,9 @@ title: beforeSend
 
 @short: fires before a form is sent to the server
 	
+@signature: {'beforeSend: () => boolean;'}
+
+
 @params:
 
 @returns:

@@ -5,7 +5,7 @@ title: enable
 
 @short: enables a disabled Combo control
 
-
+@signature: {'enable(): void;'}
 
 
 

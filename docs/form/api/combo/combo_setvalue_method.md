@@ -5,6 +5,9 @@ title: setValue
 
 @short: sets the value for a Combo control
 
+@signature: {'setValue(value: string | string[]): void;'}
+
+
 @params:
 - value     string|string[]     the value to be set  
 

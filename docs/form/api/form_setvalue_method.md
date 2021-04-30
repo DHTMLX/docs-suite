@@ -5,6 +5,9 @@ title: setValue
 
 @short: sets values/states for controls
 
+@signature: {'setValue(obj: FormData | IAnyObj): void;'}
+
+
 @params:
 - values	object		an object with new values/states of controls
 

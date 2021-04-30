@@ -5,6 +5,9 @@ title: getItem
 
 @short: gives access to the object of Form control
 
+@signature: {'getItem(name: string): any;'}
+
+
 @params:
 - name|id	string		the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 

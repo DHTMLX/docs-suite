@@ -6,6 +6,9 @@ description: description
 
 @short: returns objects with available configuration attributes of Form controls
 
+@signature: {'getProperties(name?: string): { [name: string]: IFormProps } | IFormProps;'}
+
+
 @params:
 
 - name|id string optional, the name of the control or its id (if the name attribute is not defined in the config of the control)

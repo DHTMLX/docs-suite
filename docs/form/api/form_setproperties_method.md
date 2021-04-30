@@ -6,6 +6,9 @@ description: description
 
 @short: allows changing available configuration attributes of Form controls dynamically
 
+@signature: {'setProperties(arg: string | { [name: string]: IFormProps }, props?: IFormProps): void;'}
+
+
 @params:
 
 - arg string,object either the name of the control or its id (if the name attribute is not defined in the config of the control), or an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values

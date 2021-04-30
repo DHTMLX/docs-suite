@@ -5,6 +5,8 @@ title: afterChangeProperties
 
 @short: fires after configuration attributes of the control have been changed dynamically
 
+@signature: {'afterChangeProperties: (properties: IComboProps) => void;'}
+
 
 @params:
 - properties     object      an object with configuration attributes of the control and their new values

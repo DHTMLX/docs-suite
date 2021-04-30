@@ -4,13 +4,15 @@ title: beforeValidate
 ---          
 
 @short: fires before the control value is validated
+
+@signature: {'beforeValidate: (value: string | boolean) => boolean | void;'}
  
 
 @params:
 - value       string|boolean  the value to be validated
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+param   boolean | void     false - to cancel the default action of the event, otherwise true
 
 @example:
 form.getItem("checkbox").events.on("BeforeValidate", function(value) {

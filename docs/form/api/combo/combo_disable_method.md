@@ -5,7 +5,7 @@ title: disable
 
 @short: disables a Combo control on a page
 
-
+@signature: {'disable(): void;'}
 
 
 
