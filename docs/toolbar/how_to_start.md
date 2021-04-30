@@ -7,7 +7,7 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 
 - [Download the Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#createacontainer)
+- [Create a container](#create-a-container)
 - [Initialize Toolbar](#initializetoolbar) with the object constructor
 - [Load data into Toolbar](#loaddataintotoolbar)
 

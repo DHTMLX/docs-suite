@@ -7,7 +7,7 @@ This article gives you detailed instructions on how to create dhtmlxCombo on a p
 
 - [Download the dhtmlxComboBox package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#createacontainer)
+- [Create a container](#create-a-container)
 - [Initialize ComboBox](#initializecombo) with the object constructor
 - [Load data into ComboBox](#loaddataintocombobox)
 

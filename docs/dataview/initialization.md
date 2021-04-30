@@ -7,7 +7,7 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 
 - [Download the DataView package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#createacontainer)
+- [Create a container](#create-a-container)
 - [Initialize DataView](#initializedataview) with the object constructor
 - [Load data into DataView](#loaddataintodataview)
 

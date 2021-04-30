@@ -7,7 +7,7 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
 - [Download the Tree package](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#createacontainer)
+- [Create a container](#create-a-container)
 - [Initialize Tree](#initializetree) with the object constructor
 - [Load data into Tree](#loaddataintotree)
 

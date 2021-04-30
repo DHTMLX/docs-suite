@@ -6,7 +6,7 @@ title: Initialization
 To add a message on a page, you should take the following simple steps:
 
 - [Include the source files](#include-source-files)
-- [Create a container](#createcontainer) (optional)
+- [Create a container](#create-container) (optional)
 - [Create the necessary type of a message box](#createnecessarymessagebox)
 
 ~~~html

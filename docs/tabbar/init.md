@@ -7,7 +7,7 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 
 - [Download the Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#createacontainer)
+- [Create a container](#create-a-container)
 - [Define Tabbar structure](#definetabbarstructure)
 - [Initialize Tabbar](#initializetabbar) with the object constructor
 

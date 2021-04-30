@@ -7,7 +7,7 @@ To add dhtmlxForm into an application, you need to take the following simple ste
 
 - [Download the Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#createacontainer)
+- [Create a container](#create-a-container)
 - [Define Form structure](#defineformstructure)
 - [Initialize Form](#initializeform) with the object constructor
 
