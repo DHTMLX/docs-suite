@@ -21,4 +21,4 @@ The property is useful while using Slider in form.
 
 @changelog: added in v6.4 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties

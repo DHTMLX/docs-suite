@@ -8,7 +8,7 @@ To add dhtmlxPagination into an application, you need to take the following simp
 - [Download the dhtmlxPagination](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) package and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create two containers](#create-containers)
-- [Add a related component](#addarelatedwidget)
+- [Add a related component](#add-a-related-widget)
 - [Initialize Pagination](#initialize-pagination) with the object constructor
 
 ~~~html
