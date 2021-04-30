@@ -54,7 +54,7 @@ popup/api/popup_hide_method.md
 
 **Related sample**:
 - [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
-https://snippet.dhtmlx.com/bu4uj2ik	Popup.Show position
+- [Popup.Show position](https://snippet.dhtmlx.com/bu4uj2ik)	
 
 @related:popup/work_with_popup.md#hidingshowingpopup
 
