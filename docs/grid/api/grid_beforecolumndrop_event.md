@@ -57,4 +57,3 @@ grid/api/grid_dragcolumnstart_event.md
 - In v7.0, the parameters were replaced with new ones: **data** and **e**.
 
 
-@edition:pro

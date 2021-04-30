@@ -71,4 +71,3 @@ grid/api/grid_dragcolumnstart_event.md
 - Before v7.0, the event took one parameter - the column id. 
 - Starting from v7.0, the event takes two parameters: **data** and **e**.
 
-@edition: pro

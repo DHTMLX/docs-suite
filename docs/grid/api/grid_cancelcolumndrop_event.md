@@ -55,5 +55,5 @@ grid/api/grid_dragcolumnstart_event.md
 
 @related: grid/configuration.md#dragndropofgridcolumns
 
-@edition: pro
+
 

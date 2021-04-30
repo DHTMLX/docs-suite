@@ -28,7 +28,7 @@ grid/configuration.md#dragndropofgridcolumns
 
 @changelog: added in v6.5
 
-@edition: pro
+
 
 @relatedapi:
 grid/api/grid_aftercolumndrag_event.md

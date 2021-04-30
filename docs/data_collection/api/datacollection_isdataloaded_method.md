@@ -25,4 +25,3 @@ data.isDataLoaded();
 
 @changelog: added in v6.4
 
-@edition: pro
