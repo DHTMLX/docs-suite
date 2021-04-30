@@ -37,15 +37,15 @@ The data object contains the following parameters:
 
 
 @relatedapi:
-grid/api/grid_dragitem_config.md
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
+[](grid/api/grid_dragitem_config.md)
+[](grid/api/grid_aftercolumndrag_event.md)
+[](grid/api/grid_aftercolumndrop_event.md)
+[](grid/api/grid_beforecolumndrag_event.md)
+[](grid/api/grid_cancolumndrop_event.md)
+[](grid/api/grid_cancelcolumndrop_event.md)
+[](grid/api/grid_dragcolumnin_event.md)
+[](grid/api/grid_dragcolumnout_event.md)
+[](grid/api/grid_dragcolumnstart_event.md)
 
 @related: grid/configuration.md#dragndropofgridcolumns
 	
