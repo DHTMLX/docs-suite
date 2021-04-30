@@ -6,7 +6,7 @@ title: Initialization
 To initialize dhtmlxList on a page, you need to take the following simple steps:
 
 - [Download the List package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
+- [Include source files](#include-source-files)
 - [Create a container](#createacontainer)
 - [Initialize List](#initializelist) with the object constructor
 - [Load data into List](#loaddataintolist)

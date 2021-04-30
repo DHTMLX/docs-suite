@@ -6,7 +6,7 @@ title: Initialization
 To initialize dhtmlxTreeGrid on a page, you need to take the following simple steps:
 
 - [Download the dhtmlxTreeGrid package](https://dhtmlx.com/docs/products/dhtmlxTreeGrid/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
+- [Include source files](#include-source-files)
 - [Create a container](#createcontainer)
 - [Initialize TreeGrid](#initializegrid) with the object constructor
 - [Load data into TreeGrid](#loaddata)

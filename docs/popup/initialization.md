@@ -6,7 +6,7 @@ title: Initialization
 To add dhtmlxPopup into an application, you need to take the following simple steps:
 
 - [Download the Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
+- [Include source files](#include-source-files)
 - [Initialize Popup](#initializepopup) with the object constructor
 - [Set content into Popup](#attachcontentintopopup)
 

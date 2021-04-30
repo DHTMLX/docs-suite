@@ -6,7 +6,7 @@ title: Initialization
 This article gives you detailed instructions on how to create dhtmlxCombo on a page. Follow the steps below:
 
 - [Download the dhtmlxComboBox package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
+- [Include source files](#include-source-files)
 - [Create a container](#createacontainer)
 - [Initialize ComboBox](#initializecombo) with the object constructor
 - [Load data into ComboBox](#loaddataintocombobox)

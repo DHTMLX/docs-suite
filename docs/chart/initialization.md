@@ -6,7 +6,7 @@ title: Initialization
 To initialize dhtmlxChart in an application, you need to take the following steps:
 
 - [Download the dhtmlxChart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
+- [Include source files](#include-source-files)
 - [Create a container](#createacontainer)
 - [Initialize Chart](#initializechart) with the object constructor
 - [Load data into Chart](#loaddataintochart)

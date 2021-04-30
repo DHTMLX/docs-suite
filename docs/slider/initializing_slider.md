@@ -6,7 +6,7 @@ title: Initialization
 To initialize dhtmlxSlider on a page, you need to take the following simple steps:
 
 - [Download the Slider package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
+- [Include source files](#include-source-files)
 - [Create a container](#createcontainer)
 - [Initialize Slider](#initializeslider) with the object constructor
 
