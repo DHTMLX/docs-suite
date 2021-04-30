@@ -75,7 +75,7 @@ var dataset = [
 - [Grid. Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
 
 
-@related: grid/initialization.md#initialize-grid
+@related: grid/initialization.md#initialize--grid
 grid/configuration.md#data
 
 @relatedapi: grid/api/grid_autoheight_config.md

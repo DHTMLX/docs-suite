@@ -9,7 +9,7 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Layout structure](#definelayoutstructure)
-- [Initialize Layout](#initializelayout) with the object constructor
+- [Initialize Layout](#initialize-layout) with the object constructor
 
 
 ~~~html

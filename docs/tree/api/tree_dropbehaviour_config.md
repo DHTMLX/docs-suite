@@ -30,5 +30,5 @@ There are three modes of behaviour of a dragged tree item, depending on the valu
 
 **Related sample**: [Tree. Drop Behaviour](https://snippet.dhtmlx.com/80mh3hly)
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
+@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
 tree/drag_and_drop_handling.md#dropbehaviour

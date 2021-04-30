@@ -8,7 +8,7 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 - [Download the TimePicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
-- [Initialize TimePicker](#initializetimepicker) with the object constructor
+- [Initialize TimePicker](#initialize-timepicker) with the object constructor
 - [Set initial value (optional)](#setinitialvalueoptional)
 
 ~~~html

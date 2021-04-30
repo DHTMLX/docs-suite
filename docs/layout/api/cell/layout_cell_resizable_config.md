@@ -18,7 +18,7 @@ var layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/cell_configuration.md#resizability
 
 **Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)

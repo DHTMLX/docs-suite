@@ -8,7 +8,7 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 - [Download the Menu package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Initialize Menu](#initializemenu) with the object constructor
+- [Initialize Menu](#initialize-menu) with the object constructor
 - [Load data into Menu](#loaddataintomenu)
 
 

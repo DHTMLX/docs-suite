@@ -23,6 +23,6 @@ There are two types of navigation:
 - "click" - the menu is opened when a user clicks on it (used for mobile devices)
 
 @related:
-menu/how_to_start.md#initializemenu
+menu/how_to_start.md#initialize-menu
 
 **Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)

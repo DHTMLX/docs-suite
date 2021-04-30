@@ -42,7 +42,7 @@ var palette = [
 ~~~
 
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
+@related: colorpicker/how_to_start.md#initialize-colorpicker
 colorpicker/configuration.md
 
 **Related sample**: [Colorpicker. Custom Palette Colors](https://snippet.dhtmlx.com/j5gisdew)

@@ -52,7 +52,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @relatedapi: grid/api/grid_adjustcolumnwidth_method.md
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#autosizeforcolumns
 
 @changelog: added in v6.4

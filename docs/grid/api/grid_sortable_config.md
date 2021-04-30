@@ -22,7 +22,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @changelog: added in v6.4
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#sortingcolumns
 
 **Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)

@@ -8,7 +8,7 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 - [Download the dhtmlxGrid package](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
-- [Initialize Grid](#initializegrid) with the object constructor
+- [Initialize Grid](#initialize-grid) with the object constructor
 - [Load data into Grid](#loaddata)
 
 ~~~html title="index.html"

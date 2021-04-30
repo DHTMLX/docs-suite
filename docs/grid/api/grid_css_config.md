@@ -60,4 +60,4 @@ var grid = new dhx.Grid({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid

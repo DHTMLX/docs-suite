@@ -21,7 +21,7 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
  
 
-@related:grid/initialization.md#initializegrid
+@related:grid/initialization.md#initialize-grid
 grid/configuration.md#editinggridandseparatecolumns
 
 @changelog: added in v6.4

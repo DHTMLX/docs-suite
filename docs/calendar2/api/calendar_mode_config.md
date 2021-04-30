@@ -20,7 +20,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 @descr: 
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#calendarmodes
 
 **Related sample**: [Calendar. Calendar Modes](https://snippet.dhtmlx.com/n9q0tc0q)

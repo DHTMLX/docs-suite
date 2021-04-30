@@ -16,7 +16,7 @@ var calendar = new dhx.Calendar("calendar", {
 });
 
 @related: 
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#rangemode
 
 @template:	api_config

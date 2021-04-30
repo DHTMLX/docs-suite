@@ -31,5 +31,5 @@ Note that to select several options you need to enable the **multiselection** op
 @changelog: added in v6.4 
 
 
-@related: combo/how_to_start.md#initializecombobox
+@related: combo/how_to_start.md#initialize-combobox
 combo/configuration.md#numberofselectedoptions

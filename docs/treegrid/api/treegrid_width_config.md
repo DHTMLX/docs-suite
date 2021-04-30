@@ -19,6 +19,6 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
 
 @related: treegrid/configuration.md#widthheight
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 
 @relatedapi: treegrid/api/treegrid_height_config.md

@@ -64,4 +64,4 @@ var calendar = new dhx.Calendar({
 
 @related:
 calendar/customization.md#stylingcalendar
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar

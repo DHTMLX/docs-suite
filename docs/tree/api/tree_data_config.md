@@ -89,7 +89,7 @@ tree.data.getItem("Books").parent
 // "_ROOT_u1574768464563"
 ~~~
 
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
+@related: tree/initialization_of_dhtmlxtree.md#initialize--tree
 tree/loading_data.md#preparing-data-set
 
 **Related samples**:

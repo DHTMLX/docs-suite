@@ -46,5 +46,5 @@ var form = new dhx.Form("form_container", {
 
 @changelog: added in v6.4
 
-@related: form/how_to_start.md#initializeform
+@related: form/how_to_start.md#initialize-form
 form/configuration.md#alignment

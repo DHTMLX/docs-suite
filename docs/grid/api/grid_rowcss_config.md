@@ -34,5 +34,5 @@ The function takes the id of a row as a parameter and returns a string with the 
 
 **Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#rowstyle

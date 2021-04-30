@@ -8,7 +8,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 - [Download the dhtmlxTreeGrid package](https://dhtmlx.com/docs/products/dhtmlxTreeGrid/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
-- [Initialize TreeGrid](#initializegrid) with the object constructor
+- [Initialize TreeGrid](#initialize-grid) with the object constructor
 - [Load data into TreeGrid](#loaddata)
 
 ~~~html title="index.html"

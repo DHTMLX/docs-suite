@@ -20,5 +20,5 @@ var treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true
 
 **Related sample**: [Tree. Copy Dragged Item](https://snippet.dhtmlx.com/xm0lxbpj)
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
+@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
 tree/drag_and_drop_handling.md#copyingdraggeditem

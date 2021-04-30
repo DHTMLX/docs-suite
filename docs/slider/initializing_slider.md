@@ -8,7 +8,7 @@ To initialize dhtmlxSlider on a page, you need to take the following simple step
 - [Download the Slider package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
-- [Initialize Slider](#initializeslider) with the object constructor
+- [Initialize Slider](#initialize-slider) with the object constructor
 
 ~~~html
 <!DOCTYPE html>

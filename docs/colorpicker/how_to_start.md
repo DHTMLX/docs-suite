@@ -9,7 +9,7 @@ In general, to create dhtmlxColorPicker on a page, you need to take the followin
 
 - [Download the dhtmlxColorPicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Initialize ColorPicker](#initializecolorpicker) with the object constructor    
+- [Initialize ColorPicker](#initialize-colorpicker) with the object constructor    
 - [Set initially selected color (optional)](#selectinitialcoloroptional)
     
    

@@ -61,7 +61,7 @@ var combo = new dhx.Combobox({
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 
-@related: combo/how_to_start.md#initializecombobox
+@related: combo/how_to_start.md#initialize-combobox
 combo/customization.md#styling
 
 **Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)

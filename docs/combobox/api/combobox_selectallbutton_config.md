@@ -20,7 +20,7 @@ var combo = new dhx.Combobox("combo_container", {
 @descr: 
 Note that to select several options you need to enable the **multiselection** option.
 
-@related: combo/how_to_start.md#initializecombobox
+@related: combo/how_to_start.md#initialize-combobox
 combo/configuration.md#selectionofalloptionsinthelist
 
 **Related sample**: [Combobox. Select All Button](https://snippet.dhtmlx.com/ui7pi7ty)

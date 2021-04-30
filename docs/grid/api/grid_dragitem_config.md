@@ -22,7 +22,7 @@ var grid = new dhx.Grid("grid_container", {
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
 @related: 
-grid/initialization.md#initializegrid
+grid/initialization.md#initialize-grid
 grid/configuration.md#dragndropofgridcolumns
 
 

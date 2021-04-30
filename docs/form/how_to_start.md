@@ -9,7 +9,7 @@ To add dhtmlxForm into an application, you need to take the following simple ste
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Form structure](#defineformstructure)
-- [Initialize Form](#initializeform) with the object constructor
+- [Initialize Form](#initialize-form) with the object constructor
 
 
 ~~~html

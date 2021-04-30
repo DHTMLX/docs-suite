@@ -21,7 +21,7 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#widthheight
 
 **Related sample**: [Grid. Custom Sizes](https://snippet.dhtmlx.com/ffxj6se0)

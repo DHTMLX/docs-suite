@@ -8,7 +8,7 @@ To initialize dhtmlxChart in an application, you need to take the following step
 - [Download the dhtmlxChart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Initialize Chart](#initializechart) with the object constructor
+- [Initialize Chart](#initialize-chart) with the object constructor
 - [Load data into Chart](#loaddataintochart)
 
 ~~~html

@@ -9,7 +9,7 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Tabbar structure](#definetabbarstructure)
-- [Initialize Tabbar](#initializetabbar) with the object constructor
+- [Initialize Tabbar](#initialize-tabbar) with the object constructor
 
 
 ~~~html
