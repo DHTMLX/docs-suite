@@ -5,6 +5,8 @@ title: afterShow
 
 @short: fires after a Button control is shown
 
+@signature: {'afterShow: (text: string) => void;'}
+
 @params:
 - text     string  the current text label of the control
 

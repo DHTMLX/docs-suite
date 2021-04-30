@@ -8,7 +8,7 @@ title: getValue
 @signature: {'getValue(): string | string[];'}
 
 @returns:
-param   string|string[]     the current value of the control
+param   string | string[]     the current value of the control
 
 @example:
 var value = form.getItem("combo").getValue();

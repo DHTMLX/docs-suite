@@ -7,7 +7,6 @@ title: validate
  
 @signature: {'validate(silent: boolean, validateValue?: string | string[]): boolean;'}
 
-
 @params:
 - silent    boolean     optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
 - validateValue     string|string[]     optional, the value to be validated. If not specified, the method validates the current value of the control

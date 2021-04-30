@@ -5,10 +5,10 @@ title: setValue
 
 @short: sets the value for a Select control
 
-@signature: setValue(obj: FormData | IAnyObj): void;
+@signature: {'setValue(value: string | number): void;'}
 
 @params:
-- value     string|number     the value to be set  
+- value     string | number     the value to be set  
 
 
 @example:

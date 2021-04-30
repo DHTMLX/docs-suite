@@ -7,8 +7,6 @@ title: focus
 
 @signature: {'focus(): void;'}
 
-
-
 @example:
 form.getItem("combo").focus();
 

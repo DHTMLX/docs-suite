@@ -5,14 +5,14 @@ title: beforeDrop
 
 @short: fires before the user has finished dragging an item and released the mouse button
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
+@signature: {'beforeDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @returns:
-- result	boolean		false - to block the default action, otherwise true
+- result	void | boolean		false - to block the default action, otherwise true
 
 @example:
 dataview.events.on("BeforeDrop", function(data, events) {

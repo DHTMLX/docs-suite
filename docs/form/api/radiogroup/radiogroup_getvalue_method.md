@@ -5,7 +5,7 @@ title: getValue
 
 @short: returns the current value of a RadioGroup control
 
-
+@signature: {'getValue(): string;'}
 
 @returns:
 param   string     the current value of the control

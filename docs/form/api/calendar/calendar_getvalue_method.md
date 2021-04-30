@@ -5,6 +5,8 @@ title: getValue
 
 @short: returns the current value of a DatePicker control
 
+@signature: {'getValue<T extends boolean = false>(asDate?: T): string | Date;'}
+
 @params:
 - asDate    boolean     defines whether a date will be returned as a Date object
 

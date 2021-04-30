@@ -7,7 +7,6 @@ title: setProperties
 
 @signature: {'setProperties(propertyConfig: IComboProps): void;'}
 
-
 @params:
 - properties   object      an object with the available attributes of the control and their new values
 

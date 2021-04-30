@@ -7,7 +7,6 @@ title: show
  
 @signature: {'show(): void;'}
 
-
 @example:
 form.getItem("combo").show();
 

@@ -5,6 +5,8 @@ title: beforeUnSelect
 
 @short: fires on unselecting an item, but before the item is really unselected
 
+@signature: {'beforeUnSelect: (id: string) => void | boolean;'}
+
 ```todoapi ```
 
 @params:

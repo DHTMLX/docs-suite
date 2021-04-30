@@ -1,13 +1,11 @@
 ---
 sidebar_label: setProperties
 title: setProperties
----    
-
-``` todoanton signature мещает документации собраться
+---
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: setProperties(arg: string | { [name: string]: IFormProps; }, props?: IFormProps): void;
+@signature: {'setProperties(propertyConfig: IDatePickerProps): void;'}
 
 @params:
 - properties   object      an object with the available attributes of the control and their new values
@@ -143,6 +141,3 @@ It is possible to change values of the following configuration attributes of the
 
 
 @changelog: added in v7.0
-
-
-``` todo

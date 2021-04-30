@@ -6,7 +6,6 @@ title: afterHide
 @short: fires after a control is hidden
 
 @signature: {'afterHide: (value: string, init: boolean) => void;'}
- 
 
 @params:
 - value     string     the current value of the control

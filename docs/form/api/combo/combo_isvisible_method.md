@@ -7,7 +7,6 @@ title: isVisible
 
 @signature: {'isVisible(): boolean;'}
 
-
 @returns:
 param   boolean     true, if a control is visible, otherwise false
 

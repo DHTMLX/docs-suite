@@ -5,8 +5,7 @@ title: beforeValidate
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: string) => boolean | void;'}
- 
+@signature: {'beforeValidate: (value: string) => boolean | void;'} 
 
 @params:
 - value       string  the value to be validated

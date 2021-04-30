@@ -5,11 +5,11 @@ title: click
 
 @short: fires on clicking an item
 
-@signature: {'click: (id: string, e: Event) => void;'}
+@signature: {'click: (id: string | number, events: Event) => void;'}
 
 @params:
-- id 	string|number 		the id of a clicked item
-- e 	Event 				a native event object
+- id 	string | number 		the id of a clicked item
+- events 	Event 				a native event object
 
 
 @example:

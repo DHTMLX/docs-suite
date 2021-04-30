@@ -5,7 +5,7 @@ title: dragIn
 
 @short: fires when an item is dragged to another potential target
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
+@signature: {'(data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @example:
 dataview.events.on("DragIn", function(data, events) {

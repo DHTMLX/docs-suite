@@ -7,7 +7,6 @@ title: setValue
 
 @signature: {'setValue(value: string | string[]): void;'}
 
-
 @params:
 - value     string|string[]     the value to be set  
 

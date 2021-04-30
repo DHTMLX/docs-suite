@@ -5,7 +5,7 @@ title: dragStart
 
 @short: fires when dragging of an item has started 
 
-@signature: dragStart: (data: object, events: MouseEvent) => void;
+@signature: {'dragStart: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("DragStart", function(data, events) {

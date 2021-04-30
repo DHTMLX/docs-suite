@@ -7,7 +7,6 @@ title: beforeShow
 
 @signature: {'beforeShow: (value: string | string[]) => boolean | void;'}
 
-
 @params:
 - value     string|string[]     the current value of the control
 

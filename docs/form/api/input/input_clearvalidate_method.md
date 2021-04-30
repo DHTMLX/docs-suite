@@ -5,7 +5,7 @@ title: clearValidate
 
 @short: clears validation of an Input control
 
-
+@signature: {'clearValidate(): void;'}
 
 
 

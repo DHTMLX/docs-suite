@@ -7,7 +7,6 @@ title: getProperties
 
 @signature: {'getProperties(): IComboProps;'}
 
-
 @returns:
 param   object      an object with the available attributes of the control and their values
 

@@ -5,7 +5,7 @@ title: disable
 
 @short: disables an Input control on a page
 
-@signature: disable(): void;
+@signature: {'disable(): void;'}
 
 
 

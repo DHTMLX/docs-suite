@@ -5,7 +5,7 @@ title: isVisible
 
 @short: checks whether a CheckboxGroup control is visible on the page
 
-@signature: {'isVisible(name?: string): boolean;'}
+@signature: {'isVisible(): boolean;'}
 
 @returns:
 param   boolean     true, if a control is visible, otherwise - false

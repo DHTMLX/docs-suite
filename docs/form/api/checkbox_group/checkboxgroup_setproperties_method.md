@@ -3,11 +3,9 @@ sidebar_label: setProperties
 title: setProperties
 ---   
 
-``` todoanton signature мещает документации собраться
-
 @short:  allows changing available configuration attributes of the control dynamically
 
-@signature: setProperties(arg: string | { [name: string]: IFormProps; }, props?: IFormProps): void;
+@signature: {'setProperties(arg?: string | ICheckboxGroupProps, props?: ICheckboxGroupItemProps): void;'}
 
 @params:
 - arg	string,object      either the id of a checkbox, or an object with the available attributes of the CheckboxGroup control and their new values
@@ -154,4 +152,3 @@ form.getItem("checkboxGroup").setProperties("first", {
 
 @changelog: added in v7.0
 
-``` todo

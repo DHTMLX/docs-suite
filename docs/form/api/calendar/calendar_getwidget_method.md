@@ -5,7 +5,7 @@ title: getWidget
 
 @short: returns the dhtmlxCalendar widget attached to a DatePicker control
 
-@signature: {'getWidget(): Combobox;'}
+@signature: {'getWidget(): Calendar;'}
 
 
 

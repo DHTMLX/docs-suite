@@ -5,7 +5,7 @@ title: beforeEditEnd
 
 @short: fires before editing of an item is completed
 
-@signature: beforeEditEnd: (value: string, id: string | number) => boolean | void;
+@signature: {'beforeEditEnd: (value: string, id: string | number) => boolean | void;'}
 
 @params:
 - value		string		the value of an item

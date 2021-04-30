@@ -7,8 +7,6 @@ title: hide
 
 @signature: {'hide(): void;'}
 
-
-
 @example:
 form.getItem("select").hide(); 
 

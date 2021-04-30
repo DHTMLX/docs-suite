@@ -5,8 +5,7 @@ title: getValue
 
 @short: returns the current value/state of a Checkbox control
 
-@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
-
+@signature: {'getValue(): string | boolean;'}
 
 @returns:
 param   string|boolean     the current value/state of the control

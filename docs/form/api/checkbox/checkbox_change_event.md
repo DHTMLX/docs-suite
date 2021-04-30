@@ -5,11 +5,10 @@ title: change
 
 @short: fires on changing the value of a control
 
-@signature: {'change: (value: ICheckboxGroupValue) => any;'}
- 
+@signature: {'change: (value: string | boolean) => void;'}
 
 @params:
-- value     string|boolean     the current value of the control
+- value     string | boolean     the current value of the control
 
 
 @example:

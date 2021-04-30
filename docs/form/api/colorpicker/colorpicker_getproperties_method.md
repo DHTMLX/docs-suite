@@ -5,6 +5,8 @@ title: getProperties
 
 @short: returns an object with the available configuration attributes of the control
 
+@signature: {'getProperties(): IColorpickerProps;'}
+
 @returns:
 param   object      an object with the available attributes of the control and their values
 

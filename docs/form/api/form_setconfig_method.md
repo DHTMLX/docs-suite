@@ -4,7 +4,7 @@ title: setConfig
 ---          
 
 @short: sets a new configuration for a form
-
+TODO: change api (удалить эту страницу)
 @signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-layout/sources/types.d.ts)
 
 

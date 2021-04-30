@@ -7,10 +7,6 @@ title: clearValidate
 
 @signature: {'clearValidate(): void;'}
 
-
-
-
-
 @example:
 form.getItem("combo").clearValidate();
 

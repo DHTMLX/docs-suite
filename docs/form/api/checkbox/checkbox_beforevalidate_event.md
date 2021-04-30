@@ -9,7 +9,7 @@ title: beforeValidate
  
 
 @params:
-- value       string|boolean  the value to be validated
+- value       string | boolean  the value to be validated
 
 @returns:
 param   boolean | void     false - to cancel the default action of the event, otherwise true

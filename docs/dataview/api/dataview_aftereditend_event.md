@@ -5,7 +5,7 @@ title: afterEditEnd
 
 @short: fires after editing of an item is ended
 
-@signature: {'afterEditEnd: (value: string, id: string) => void;'}
+@signature: {'afterEditEnd: (value: string, id: string | number) => void;'}
 
 @params:
 - value		string		the value of an item

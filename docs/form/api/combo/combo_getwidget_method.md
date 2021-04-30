@@ -7,8 +7,6 @@ title: getWidget
 
 @signature: {'getWidget(): Combobox;'}
 
-
-
 @returns:
 param   object    the dhtmlxCombo widget
 

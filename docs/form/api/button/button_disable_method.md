@@ -5,7 +5,7 @@ title: disable
 
 @short: disables a Button control on a page
 
-
+@signature: {'disable(): void;'}
 
 
 @example:

@@ -7,10 +7,6 @@ title: disable
 
 @signature: {'disable(): void;'}
 
-
-
-
-
 @example:
 form.getItem("radiogroup").disable();
 

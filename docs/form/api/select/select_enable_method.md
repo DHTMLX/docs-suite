@@ -7,10 +7,6 @@ title: enable
 
 @signature: {'enable(): void;'}
 
-
-
-
-
 @example:
 form.getItem("select").enable();
 
