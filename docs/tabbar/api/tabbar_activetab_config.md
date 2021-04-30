@@ -4,8 +4,8 @@ title: activeTab
 ---          
 
 @short: sets the currently active tab
-todoanton возможно не подставилась signature, скобок новых нет
-@signature: activeTab?: string;
+
+@signature: {'activeTab?: string;'}
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar", {

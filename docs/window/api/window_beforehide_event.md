@@ -6,7 +6,7 @@ description: description
 
 @short: fires before a window is hidden
 
-@signature: beforeHide: (position: IPosition, e?: Event) => boolean | void;
+@signature: {'beforeHide: (position: IPosition, e?: Event) => boolean | void;'}
 
 @params:
 - position  object      an object with coordinates of the window's position

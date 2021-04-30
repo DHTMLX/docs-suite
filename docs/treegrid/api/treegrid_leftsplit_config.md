@@ -5,7 +5,7 @@ title: leftSplit
 
 @short: sets the number of frozen columns
 
-@signature: leftSplit?: number;
+@signature: {'leftSplit?: number;'}
 
 @example: 
 var treegrid = new dhx.TreeGrid("treegrid_container", {

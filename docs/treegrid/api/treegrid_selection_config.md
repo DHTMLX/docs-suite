@@ -5,7 +5,7 @@ title: selection
 
 @short: enables selection in a grid
 
-@signature: selection?: ISelectionType;
+@signature: {'selection?: ISelectionType;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

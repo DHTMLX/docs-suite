@@ -5,6 +5,8 @@ title: rows
 
 @short: an array of rows objects
 
+@signature: {'rows?: ICellConfig[] | ILayoutConfig[];'}
+
 ```todoapi
 array rows;
 rows?: ICellConfig[] | ILayoutConfig[];

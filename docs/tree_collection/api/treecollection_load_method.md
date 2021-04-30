@@ -5,9 +5,11 @@ title: load
 
 @short: loads items from a file
 
+@signature: {'load(url: IDataProxy, driver?: IDataDriver): Promise<any>'}
+
 @params:
-- path 		string		the path to the file
-- type		string		optional, type of data (json, csv, xml), json by default
+- url 		string		the path to the file
+- driver		string		optional, type of data (json, csv, xml), json by default
 
 @returns:
 

@@ -5,7 +5,7 @@ title: css
 
 @short: the name of a CSS class(es) applied to the control group
 
-todoanton возможно не подставилась signature
+@signature: {'css?: string;'}
 
 @example: 
 <style>

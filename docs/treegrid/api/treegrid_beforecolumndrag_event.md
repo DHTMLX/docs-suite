@@ -5,7 +5,7 @@ title: beforeColumnDrag
 
 @short: fires before dragging of a column has started
 
-@signature: {'beforeColumnDrag: (data: IDragInfo, e: MouseEvent) => void | boolean;'}
+@signature: {'beforeColumnDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
 - data		object		data object

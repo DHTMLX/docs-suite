@@ -5,7 +5,7 @@ title: rows
 
 @short: arranges controls inside the control group vertically
 
-todoanton возможно не подставилась signature
+@signature: {'rows?: IBlock;'}
 
 @example: 
 var form = new dhx.Form("form_container", {

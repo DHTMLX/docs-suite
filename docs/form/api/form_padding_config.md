@@ -5,7 +5,7 @@ title: padding
 
 @short: sets padding for content inside the control group
 
-@signature: {'padding?: number | string;'}
+@signature: {'padding?: string | number;'}
 
 @example: 
 var form = new dhx.Form("form_container", {

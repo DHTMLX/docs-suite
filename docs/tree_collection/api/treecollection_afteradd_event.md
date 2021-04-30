@@ -4,6 +4,8 @@ title: afterAdd
 ---          
 
 @short: fires after adding a new item into a tree collection
+
+@signature: {'afterAdd: (newItem: any) => void;'}
 	
 @params:
 - newItem		object			the object of an added item

@@ -5,7 +5,7 @@ title: footerCellRightClick
 
 @short: fires on right click on a grid footer cell
 
-@signature: footerCellRightClick: (col: ICol, e: MouseEvent) => void;
+@signature: {'footerCellRightClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
 - column		object		an object with a column configuration

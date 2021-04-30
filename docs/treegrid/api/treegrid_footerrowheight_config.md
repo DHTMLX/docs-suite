@@ -5,7 +5,7 @@ title: footerRowHeight
 
 @short: sets the height of rows in the footer
 
-@signature: footerRowHeight?: number;
+@signature: {'footerRowHeight?: number;'}
 
 @default: 40
 

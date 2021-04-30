@@ -5,7 +5,7 @@ title: cols
 
 @short: an array of columns objects
 
-@signature: cols?: ICellConfig[] | ILayoutConfig[];
+@signature: {'cols?: ICellConfig[] | ILayoutConfig[];'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

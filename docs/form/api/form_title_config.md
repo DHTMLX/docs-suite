@@ -1,20 +1,19 @@
 ---
-sidebar_label: align
-title: align
+sidebar_label: title
+title: title
 ---          
 
-@short: sets the alignment of controls inside the control group 
+@short: specifies the title of the control group
 
-todoanton возможно не подставилась signature
-@values: "start", "center", "end", "between", "around", "evenly"
+@signature: {'title?: string;'}
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	align: "center", /*!*/ // sets the alignment for rows 
-	rows: [
+	title: "Form", /*!*/ // title for rows
+    rows: [
         {
-            align: "start", /*!*/ // sets the alignment for cols
+            title: "Controls", /*!*/ // title for cols
             css: "dhx_layout-cell--bordered",
             cols: [{
                 type: "checkbox",
@@ -40,10 +39,10 @@ var form = new dhx.Form("form_container", {
 @descr: 
 
 
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
-
+@relatedsample:
+https://snippet.dhtmlx.com/1pzybtja	Form. Blocks
 
 @changelog: added in v6.4
 
 @related: form/how_to_start.md#initializeform
-form/configuration.md#alignment
+form/configuration.md#title

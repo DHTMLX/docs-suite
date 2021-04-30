@@ -4,7 +4,8 @@ title: disabled
 ---          
 
 @short: makes a form disabled
-todoanton возможно не подставилась signature
+
+@signature: {'disabled?: boolean;'}
 
 
 @example: 

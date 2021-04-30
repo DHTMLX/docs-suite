@@ -5,7 +5,7 @@ title: rowHeight
 
 @short: defines the height of a row in a grid
 
-@signature: rowHeight?: number;
+@signature: {'rowHeight?: number;'}
 
 @default: 40
 
