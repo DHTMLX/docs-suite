@@ -9,7 +9,7 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize DataView](#initialize-dataview) with the object constructor
-- [Load data into DataView](#loaddataintodataview)
+- [Load data into DataView](#load-data-into-dataview)
 
 ~~~html title="index.html"
 <!DOCTYPE html>

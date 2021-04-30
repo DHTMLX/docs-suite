@@ -9,7 +9,7 @@ To add dhtmlxRibbon into an application, you need to take the following simple s
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Ribbon](#initialize-ribbon) with the object constructor
-- [Load data into Ribbon](#loaddataintoribbon)
+- [Load data into Ribbon](#load-data-into-ribbon)
 
 ~~~html
 <!DOCTYPE html>

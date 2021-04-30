@@ -47,7 +47,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-You can also add an icon or an image into the header of a cell with the help of corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and layout/api/cell/layout_cell_headerimage_config.md.
+You can also add an icon or an image into the header of a cell with the help of corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and [](layout/api/cell/layout_cell_headerimage_config.md).
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {

@@ -9,7 +9,7 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Tree](#initialize-tree) with the object constructor
-- [Load data into Tree](#loaddataintotree)
+- [Load data into Tree](#load-data-into-tree)
 
 ~~~html
 <!DOCTYPE html>

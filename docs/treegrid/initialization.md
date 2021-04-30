@@ -9,7 +9,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
 - [Initialize TreeGrid](#initialize-grid) with the object constructor
-- [Load data into TreeGrid](#loaddata)
+- [Load data into TreeGrid](#load-data)
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -133,7 +133,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid.data.parse(dataset);
 ~~~
 
-Detailed information on loading data into TreeGrid is given in the article treegrid/data_loading.md.
+Detailed information on loading data into TreeGrid is given in the [](treegrid/data_loading.md) article.
 
 
 

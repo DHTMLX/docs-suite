@@ -9,7 +9,7 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Menu](#initialize-menu) with the object constructor
-- [Load data into Menu](#loaddataintomenu)
+- [Load data into Menu](#load-data-into-menu)
 
 
 ~~~html

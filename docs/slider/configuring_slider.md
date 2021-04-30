@@ -38,7 +38,7 @@ var slider = new dhx.Slider("slider_container", {
 Minimal and maximal values
 ------------------------------------------
 
-The minimal and maximal values define the start and end points of the slider. You can specify them via the corresponding configuration properties - [](slider/api/slider_min_config.md) and slider/api/slider_max_config.md. The default values are 0 and 100, correspondingly.
+The minimal and maximal values define the start and end points of the slider. You can specify them via the corresponding configuration properties - [](slider/api/slider_min_config.md) and [](slider/api/slider_max_config.md). The default values are 0 and 100, correspondingly.
 
 ~~~js
 var slider = new dhx.Slider("slider_container", { 
@@ -66,20 +66,16 @@ var slider = new dhx.Slider("slider", {
 
 {{editor	https://snippet.dhtmlx.com/nfdr84oy	Slider. Range Mode Of The Slider}}
 
-There are more details given in the article slider/range_slider.md.
+There are more details given in the [](slider/range_slider.md) article.
 
 Scale settings
 -----------------
 
 You can configure the look and feel of the Slider scale via the corresponding properties of the Slider configuration object:
 
-todotw скорее всего можно просто сослаться на API
-{{api
-- slider/api/slider_tick_config.md - (<i>number</i>) sets the interval of steps for rendering the slider scale 
-- slider/api/slider_majortick_config.md - (<i>number</i>) sets interval of rendering numeric values on the slider scale
-- slider/api/slider_ticktemplate_config.md - (<i>function</i>) sets a template for rendering values on the slider scale 
-}}
-
+- [](slider/api/slider_tick_config.md) - (<i>number</i>) sets the interval of steps for rendering the slider scale
+- [](slider/api/slider_majortick_config.md) - (<i>number</i>) sets interval of rendering numeric values on the slider scale
+- [](slider/api/slider_ticktemplate_config.md) - (<i>function</i>) sets a template for rendering values on the slider scale
 
 ![](../assets/slider/scale.png)
 

@@ -13,7 +13,7 @@ You can [enable checkbox for tree items](tree/configuration.md#checkboxesforitem
 
 ### Check/uncheck checkboxes
 
-To check the checkbox of a particular tree item, apply the tree/api/tree_checkitem_method.md. It takes the id of an item as a parameter:
+To check the checkbox of a particular tree item, apply the [](tree/api/tree_checkitem_method.md) method. It takes the id of an item as a parameter:
 
 ~~~js
 tree.checkItem("history");
@@ -110,7 +110,7 @@ The method can also take a second parameter to configure the editing process. It
 Setting/getting Tree state
 -------------------
 
-You can get/set the state of a tree using the Tree API - [](tree/api/tree_setstate_method.md) and tree/api/tree_getstate_method.md. **getState()** returns an object with the state of a tree, while **setState()** takes an
+You can get/set the state of a tree using the Tree API - [](tree/api/tree_setstate_method.md) and [](tree/api/tree_getstate_method.md). **getState()** returns an object with the state of a tree, while **setState()** takes an
 object with tree state as a parameter:
 
 ~~~js

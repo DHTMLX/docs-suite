@@ -9,7 +9,7 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Toolbar](#initialize-toolbar) with the object constructor
-- [Load data into Toolbar](#loaddataintotoolbar)
+- [Load data into Toolbar](#load-data-into-toolbar)
 
 ~~~html
 <!DOCTYPE html>
@@ -116,7 +116,7 @@ var toolbar = new dhx.Toolbar("toolbar_container", {css:"dhx_toolbar--bordered" 
 toolbar.data.parse(data);
 ~~~
 
-Detailed information on loading data into Toolbar is given in the article toolbar/load_data.md.
+Detailed information on loading data into Toolbar is given in the [](toolbar/load_data.md) article.
 
 
 

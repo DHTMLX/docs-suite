@@ -164,8 +164,7 @@ var grid = new dhx.Grid("grid", {
 Data
 ---------
 
-You can specify data for your grid before initialization via the [data](grid/api/grid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the article
-grid/data_loading.md.
+You can specify data for your grid before initialization via the [data](grid/api/grid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the [](grid/data_loading.md) article.
 
 ~~~js
 var grid = new dhx.Grid("grid_container", {

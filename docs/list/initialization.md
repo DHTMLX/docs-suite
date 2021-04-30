@@ -9,7 +9,7 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize List](#initialize-list) with the object constructor
-- [Load data into List](#loaddataintolist)
+- [Load data into List](#load-data-into-list)
 
 ~~~html
 <!DOCTYPE html>

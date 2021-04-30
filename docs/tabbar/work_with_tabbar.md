@@ -9,7 +9,7 @@ dhtmlxTabbar inherits its API from dhtmlxLayout. So, you can apply any methods o
 Adding/removing tabs
 ---------------
 
-You can quickly add/remove tabs of Tabbar on the fly with the help of the corresponding methods - [](tabbar/api/tabbar_addtab_method.md) and tabbar/api/tabbar_removetab_method.md.
+You can quickly add/remove tabs of Tabbar on the fly with the help of the corresponding methods - [](tabbar/api/tabbar_addtab_method.md) and [](tabbar/api/tabbar_removetab_method.md).
 
 The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 

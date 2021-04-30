@@ -9,7 +9,7 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Sidebar](#initialize-sidebar) with the object constructor
-- [Load data into Sidebar](#loaddataintosidebar)
+- [Load data into Sidebar](#load-data-into-sidebar)
 
 ~~~html
 <!DOCTYPE html>

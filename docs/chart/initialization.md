@@ -9,7 +9,7 @@ To initialize dhtmlxChart in an application, you need to take the following step
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Chart](#initialize-chart) with the object constructor
-- [Load data into Chart](#loaddataintochart)
+- [Load data into Chart](#load-data-into-chart)
 
 ~~~html
 <!DOCTYPE html>
