@@ -78,7 +78,7 @@ var dataview = new dhx.DataView("dataview_container", {
 });
 ~~~
 
-Read more about multiselection in DataView [below](#multipleselectionofitems).
+Read more about multiselection in DataView [below](#multiple-selection-of-items).
 
 [Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
 

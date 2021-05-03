@@ -20,10 +20,11 @@ var dataview = new dhx.DataView("dataview", {
 
 
 @template:	api_config
-@descr: 
+@descr:
+
 The usage of the *CSS calc() function* within the **itemHeight** property is not possible.
 
-@related: dataview/configuration.md#heightofanitem
+@related: dataview/configuration.md#height-of-an-item
 
 **Related sample**: [Dataview. Setup Dataview Item Height](https://snippet.dhtmlx.com/cth9mwrf)
 

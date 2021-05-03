@@ -22,5 +22,5 @@ var dataview = new dhx.DataView("dataview", {
 - [Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
 @related:
-dataview/configuration.md#arrowkeysnavigation
+dataview/configuration.md#arrow-keys-navigation
 

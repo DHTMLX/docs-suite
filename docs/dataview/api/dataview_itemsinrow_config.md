@@ -18,6 +18,6 @@ var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 - [Dataview. Amount Items In A Row](https://snippet.dhtmlx.com/de4r8km3)
 
 @related:
-dataview/configuration.md#numberofitemsinarow
+dataview/configuration.md#number-of-items-in-a-row
 
 

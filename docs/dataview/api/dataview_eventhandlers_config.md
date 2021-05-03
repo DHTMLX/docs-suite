@@ -65,6 +65,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 @relatedapi: dataview/api/dataview_template_config.md
 
-@related: dataview/configuration.md#eventhandlersforthetemplate
+@related: dataview/configuration.md#event-handlers-for-the-template
 
 ``` 
