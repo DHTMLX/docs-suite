@@ -8,7 +8,7 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 - [Download the Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Define Tabbar structure](#definetabbarstructure)
+- [Define Tabbar structure](#define-tabbar-structure)
 - [Initialize Tabbar](#initialize-tabbar) with the object constructor
 
 
@@ -74,7 +74,7 @@ var views = [
     { tab: "west", css:"panel flex"},
     { tab: "east", css:"panel flex"},
     { tab: "right", css:"panel flex"}
-]
+];
 ~~~
 
 
@@ -84,7 +84,7 @@ Initialize Tabbar
 Initialize Tabbar with the `dhx.Tabbar` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the Tabbar container
-- an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default
+- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
 var tabbar = new dhx.Tabbar("tabbar_container",{

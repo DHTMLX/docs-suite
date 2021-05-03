@@ -8,7 +8,7 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 - [Download the Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Define Layout structure](#definelayoutstructure)
+- [Define Layout structure](#define-layout-structure)
 - [Initialize Layout](#initialize-layout) with the object constructor
 
 
