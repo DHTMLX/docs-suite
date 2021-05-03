@@ -5,10 +5,10 @@ title: afterHide
 
 @short: fires after hiding an item of Menu
 
-@signature: afterHide: (e: Event) => void;
+@signature: {'afterHide: (events: Event) => void;'}
 
 @params:
-- e         Event       a native event object
+- events         Event       a native event object
 
 
 @example:

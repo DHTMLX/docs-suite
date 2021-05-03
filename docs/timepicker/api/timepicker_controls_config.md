@@ -5,7 +5,7 @@ title: controls
 
 @short: defines whether a timepicker is equipped with the Close and Save buttons
 
-@signature: controls?: boolean;
+@signature: {'controls?: boolean;'}
 
 @default: false
 

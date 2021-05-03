@@ -5,7 +5,7 @@ title: mouseDown
 
 @short: fires on pressing the left mouse button over the slider thumb
 
-@signature: mousedown: (event: Event) => void;
+@signature: {'mousedown: (event: Event) => void;'}
 
 @params:
 - event 		event		the native event object

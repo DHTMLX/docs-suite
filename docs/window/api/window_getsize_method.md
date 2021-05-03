@@ -5,9 +5,8 @@ title: getSize
 
 @short: gets the size of window
 
-```todoapi 
-<!-- @signature: getSize(): {width: number, height: number} -->
-```
+@signature: {'getSize(): ISize;'}
+
 
 @returns:
 - size		object		an object with width and height of a window

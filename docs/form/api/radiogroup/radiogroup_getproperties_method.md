@@ -5,6 +5,8 @@ title: getProperties
 
 @short: returns an object with the available configuration attributes of the control
 
+@signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
+
 @params:
 - id	string  optional, the id of a radio button
 

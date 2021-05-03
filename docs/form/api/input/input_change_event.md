@@ -5,9 +5,10 @@ title: change
 
 @short: fires on changing the value of a control
  
+@signature: {'change: (value: string | number) => void;'}
 
 @params:
-- value     string|number     the current value of the control
+- value     string | number     the current value of the control
 
 
 @example:

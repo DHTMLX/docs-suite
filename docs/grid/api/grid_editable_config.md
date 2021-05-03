@@ -5,7 +5,7 @@ title: editable
 
 @short: enables editing in Grid columns
 
-@signature: editable?: boolean;
+@signature: {'editable?: boolean;'}
 
 @default: false
 

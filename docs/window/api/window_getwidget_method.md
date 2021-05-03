@@ -5,7 +5,7 @@ title: getWidget
 
 @short: returns the widget attached to Window
 
-@signature: getWidget(): object;
+@signature: {'getWidget(): any;'}
 
 @returns:
 - param	object      the widget attached to Window

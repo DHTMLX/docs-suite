@@ -5,10 +5,10 @@ title: disable
 
 @short: disables and dims an item(s) of Menu
 
-@signature: disable(ids: string | string[]): void;
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string, array		optional, an ID or an array of IDs of items
+- ids 		string | array		optional, an ID or an array of IDs of items
 
 @example:
 menu.disable("save_btn");

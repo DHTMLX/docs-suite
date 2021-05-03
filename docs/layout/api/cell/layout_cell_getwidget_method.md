@@ -5,7 +5,7 @@ title: getWidget
 
 @short: returns the widget attached to a layout cell
 
-```todoapi ```
+@signature: {'getWidget(): any;'}
 
 @params:
 

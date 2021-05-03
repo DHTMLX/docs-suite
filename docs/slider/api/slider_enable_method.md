@@ -5,7 +5,7 @@ title: enable
 
 @short: enables slider
 
-@signature: enable(): void;
+@signature: {'enable(): void;'}
 
 @example:
 slider.enable();

@@ -5,7 +5,7 @@ title: destructor
 
 @short: removes a popup instance and releases occupied resources
 
-@signature: destructor(): void;
+@signature: {'destructor(): void;'}
 
 @example:
 popup.destructor();

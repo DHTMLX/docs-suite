@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints Menu on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 menu.paint();

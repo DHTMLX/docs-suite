@@ -4,7 +4,8 @@ title: afterShow
 ---          
 
 @short: fires after a control is shown
- 
+
+@signature: {'afterShow: (value: string | Date) => void;'} 
 
 @params:
 - value     Date|string     the current value of the control

@@ -5,7 +5,7 @@ title: removeAll
 
 @short: clears the component of all controls
 
-@signature: removeAll(): void;
+@signature: {'removeAll(): void;'}
 
 @example:
 toolbar.data.removeAll();

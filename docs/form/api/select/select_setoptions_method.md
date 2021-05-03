@@ -5,10 +5,10 @@ title: setOptions
 
 @short: allows changing a list of Select options dynamically
 
+@signature: {'setOptions(options: IOption[]): void;'}
+
 @params:
 - options   array   an array with new options
-
-
 
 @example:
 form.getItem("select").setOptions([

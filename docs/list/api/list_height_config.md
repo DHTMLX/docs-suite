@@ -5,7 +5,7 @@ title: height
 
 @short: sets the height of List
 
-@signature:  height?: number | string;
+@signature: {'height?: number | string;'}
 
 @example: 
 // sets the height as a number

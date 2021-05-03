@@ -5,10 +5,7 @@ title: resize
 
 @short: fires on changing the size of the chart container
 
-```todoapi
-void resize(object size){ ... };
-resize = "resize",
-```
+@signature: {'resize: (width: number, height: number) => void;'}
 
 @params:
 - size		object	 an object with new chart size

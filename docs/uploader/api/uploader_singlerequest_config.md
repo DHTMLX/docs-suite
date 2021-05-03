@@ -4,7 +4,9 @@ title: singleRequest
 ---          
 
 @short: defines whether files are sent in one request
-	
+
+@signature: {'singleRequest?: boolean;'}
+
 @default: false
 
 @example:

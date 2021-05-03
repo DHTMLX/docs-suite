@@ -5,15 +5,15 @@ title: setProperties
 
 @short: allows changing available configuration attributes of the control dynamically
 
+@signature: {'setProperties(propertyConfig: ITextProps): void;'}
+
 @params:
 - properties   object      an object with the available attributes of the control and their new values
-
 
 @example:
 form.getItem("text").setProperties({
 	label: " Some text"
 });
-
 
 @template: api_method
 @descr:
@@ -78,10 +78,4 @@ It is possible to change values of the following configuration attributes of the
     </tbody>
 </table>
 
-
-
-
-
 @changelog: added in v7.0
-
-

@@ -5,7 +5,7 @@ title: filter
 
 @short: sets a custom function for filtering Combo Box options
 
-@signature: filter?: (item: any, input: string) => boolean;
+@signature: {'filter?: (item: any, input: string) => boolean;'}
 
 @example: 
 function mySearch(item, target) {

@@ -5,7 +5,7 @@ title: spans
 
 @short: describes the configuration of cols/rows spans
 
-@signature: spans?: array[];
+@signature: {'spans?: array[];'}
 
 @example:
 var grid = new dhx.Grid("grid_container", {

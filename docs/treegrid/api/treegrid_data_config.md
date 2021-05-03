@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into the grid
 
-@signature: data: array[];
+@signature: {'data?: any[];'}
 
 @example: 
 var dataset = [

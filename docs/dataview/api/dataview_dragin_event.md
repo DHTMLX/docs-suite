@@ -5,7 +5,7 @@ title: dragIn
 
 @short: fires when an item is dragged to another potential target
 
-@signature: dragIn: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'(data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @example:
 dataview.events.on("DragIn", function(data, events) {

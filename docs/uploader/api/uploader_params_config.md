@@ -4,8 +4,9 @@ title: params
 ---          
 
 @short:  provides additional parameters for an XMLHttpRequest
-	
-@type: object
+
+@signature: {'params?: {[key: string]: any;};'}
+
 @example:
 var vault = new dhx.Vault("vault_container", { 
 	uploader:{

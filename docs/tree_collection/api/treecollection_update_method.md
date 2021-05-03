@@ -5,8 +5,10 @@ title: update
 
 @short: changes an item
 
+@signature: {'update(id: string | number, item: IUpdateObject): void;'}
+
 @params:
-- id         	string    	the ID of an item
+- id         	string | number    	the ID of an item
 - item			object	    new properties for an item
 
 @example:

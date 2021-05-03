@@ -5,11 +5,11 @@ title: afterResizeEnd
 
 @short: fires after resizing of a column is ended
 
-@signature: afterResizeEnd: (col: ICol, e: MouseEvent) => void;
+@signature: {'afterResizeEnd: (column: ICol, events: MouseEvent) => void;'}
 
 @params:
 - column		object		an object with a column configuration
-- e				Event		a native event object
+- events				Event		a native event object
 
 @example:
 grid.events.on("AfterResizeEnd", function(col,e){

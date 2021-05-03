@@ -5,7 +5,7 @@ title: select
 
 @short: selects a specified Sidebar item
 
-@signature: select(id: string, unselect?: boolean): void;
+@signature: {'select(id: string, unselect: boolean): void;'}
 
 @params:
 - id    string      the id of a Sidebar item

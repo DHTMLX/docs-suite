@@ -5,10 +5,12 @@ title: reduce
 
 @short: reduces the array to a single value
 
+@signature: {'reduce<A>(callback: ReduceCallBack<T, A>, acc: A): A;'}
+
 @params:
 
-- handler			function		a function that will be called for each item in the array
-- new_item          any             a value to be passed to the function as the initial value
+- callback			function		a function that will be called for each item in the array
+- acc          any             a value to be passed to the function as the initial value
 
 @example:
 var total = datacollection.reduce(function(new_item, item) {

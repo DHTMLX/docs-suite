@@ -5,7 +5,7 @@ title: pickerOnly
 
 @short: defines whether ColorPicker is shown only in the picker mode
 
-@signature: pickerOnly?: boolean;
+@signature: {'pickerOnly?: boolean;'}
 
 @default: false
 

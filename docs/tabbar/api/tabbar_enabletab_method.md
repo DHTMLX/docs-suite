@@ -5,7 +5,7 @@ title: enableTab
 
 @short: enables a disabled tab
 
-@signature: enableTab(id: string): void;
+@signature: {'enableTab(id: string): void;'}
 
 @params:
 - id	string      the id of a tab to enable

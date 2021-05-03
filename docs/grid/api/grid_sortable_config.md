@@ -5,7 +5,7 @@ title: sortable
 
 @short: defines whether sorting on clicking headers of columns is enabled
 
-@signature: sortable?: boolean;
+@signature: {'sortable?: boolean;'}
 
 @default: true
 

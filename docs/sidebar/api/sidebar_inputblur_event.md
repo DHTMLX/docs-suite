@@ -5,7 +5,7 @@ title: inputBlur
 
 @short: fires when a control is blurred
 
-inputBlur: (id: string) => void;
+@signature: {'inputBlur: (id: string) => void;'}
 
 @params:
 - id 		string		the ID of a new control

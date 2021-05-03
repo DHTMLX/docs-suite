@@ -5,7 +5,7 @@ title: afterExpand
 
 @short: fires after expanding a Layout cell
 
-@signature: afterExpand: (id: string) => void;
+@signature: {'afterExpand: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

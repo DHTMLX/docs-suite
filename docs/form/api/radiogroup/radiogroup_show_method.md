@@ -5,9 +5,7 @@ title: show
 
 @short: shows a RadioGroup control on the page
 
-@signature: show(): void;
- 
-
+@signature: {'show(): void;'}
 
 @example:
 form.getItem("radiogroup").show();

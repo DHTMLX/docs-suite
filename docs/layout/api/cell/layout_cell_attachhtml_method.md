@@ -5,7 +5,7 @@ title: attachHTML
 
 @short: adds an HTML content into a dhtmlxLayout cell
 
-```todoapi ```
+@signature: {'attachHTML(html: string): void;'}
 
 @params:
 - html		string		an HTML content to be added into a cell

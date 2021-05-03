@@ -5,6 +5,7 @@ title: input
 
 @short: fires when a user enters the value of a control in the input manually
  
+@signature: {'input: (inputValue: string) => void;'}
 
 @params:
 - inputValue        string  an entered value

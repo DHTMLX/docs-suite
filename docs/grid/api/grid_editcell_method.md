@@ -5,7 +5,7 @@ title: editCell
 
 @short: enables editing of a Grid cell
 
-@signature: editCell(rowId: string | number, colId: string | number, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea"): void;
+@signature: {'editCell(rowId: string | number, colId: string | number, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea"): void;'}
 
 @params:
 - row 		string				the id of a row

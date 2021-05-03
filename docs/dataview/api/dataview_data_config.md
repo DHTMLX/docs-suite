@@ -5,9 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into the dataview
 
-```todoapi ```
-
-@type: array
+@signature: {'data?: DataCollection<any> | any[];'}
 
 @example: 
 var dataview = new dhx.DataView("dataview_container", {

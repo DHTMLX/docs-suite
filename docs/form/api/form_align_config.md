@@ -1,19 +1,21 @@
 ---
-sidebar_label: padding
-title: padding
+sidebar_label: align
+title: align
 ---          
 
-@short: sets padding for content inside the control group
+@short: sets the alignment of controls inside the control group 
 
-@type: string
+@signature: {'align?: FlexDirection;'}
+
+@values: "start", "center", "end", "between", "around", "evenly"
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	padding: "10px", /*!*/ // padding for rows
-    rows: [
+	align: "center", /*!*/ // sets the alignment for rows 
+	rows: [
         {
-            padding: "10px", /*!*/ // padding for cols
+            align: "start", /*!*/ // sets the alignment for cols
             css: "dhx_layout-cell--bordered",
             cols: [{
                 type: "checkbox",
@@ -39,10 +41,10 @@ var form = new dhx.Form("form_container", {
 @descr: 
 
 
-**Related sample**:
-- [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+
 
 @changelog: added in v6.4
 
 @related: form/how_to_start.md#initialize-form
-form/configuration.md#padding
+form/configuration.md#alignment

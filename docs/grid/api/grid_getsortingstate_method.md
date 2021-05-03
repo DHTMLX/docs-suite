@@ -5,7 +5,7 @@ title: getSortingState
 
 @short: returns the current state of sorting data in Grid
 
-getSortingState(): object;
+@signature: {'getSortingState(): object;'}
 
 @returns:
 - any   object	  an object with the current state of sorting data in the grid

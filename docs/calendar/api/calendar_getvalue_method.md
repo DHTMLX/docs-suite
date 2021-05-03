@@ -5,10 +5,7 @@ title: getValue
 
 @short: returns the selected date
 
-```todoapi
-Date|Date[]|string|string[] getValue(boolean asDate);
-getValue(asDatObj?: boolean): Date | Date[] | string | string[];
-```
+@signature: {'getValue(asDatObj?: boolean): Date | Date[] | string | string[];'}
 
 @params:
 - asDate	boolean		defines whether a date will be returned as a Date object

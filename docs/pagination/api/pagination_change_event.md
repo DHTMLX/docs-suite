@@ -5,7 +5,7 @@ title: change
 
 @short: fires on changing the active page
 
-```todoapi ```
+@signature: {'change: (index: number, previousIndex: number) => void;'}
 
 @params:
 - index     number  the index of a newly active page

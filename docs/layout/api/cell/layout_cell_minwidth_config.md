@@ -5,7 +5,7 @@ title: minWidth
 
 @short: the minimal width to be set for a cell
 
-@signature: minWidth?: number | string;
+@signature: {'minWidth?: number | string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

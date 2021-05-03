@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into Sidebar
 
-@signature: data?: array[]
+@signature: {'data?: any[] | TreeCollection<ISidebarElement>;'}
 
 @example: 
 var sidebar = dhx.Sidebar("sidebar_container", {

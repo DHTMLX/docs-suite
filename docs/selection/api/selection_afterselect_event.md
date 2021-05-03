@@ -5,7 +5,7 @@ title: afterSelect
 
 @short: fires after selecting an item
 
-@signature: afterSelect: (id: string) => void;
+@signature: {'afterSelect: (id: string) => void;'}
 
 @params:
 - id		string		the id of an item

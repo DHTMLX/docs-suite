@@ -5,7 +5,7 @@ title: step
 
 @short: the step the slider thumb will be moved with
 
-@signature: step: number;
+@signature: {'step: number;'}
 
 @default: 1
 

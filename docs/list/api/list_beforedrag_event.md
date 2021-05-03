@@ -5,10 +5,10 @@ title: beforeDrag
 
 @short: fires before dragging of an item has started 
 
-@signature: beforeDrag: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'beforeDrag: (data: object, events: MouseEvent) => void | boolean;'}
 
 @returns:
-- result	boolean		false - to block dragging of an item, otherwise true
+- result	void | boolean		false - to block dragging of an item, otherwise true
 
 @example:
 list.events.on("BeforeDrag", function(data, events) {

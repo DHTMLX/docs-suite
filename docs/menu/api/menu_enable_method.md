@@ -5,10 +5,10 @@ title: enable
 
 @short: enables a disabled item(s) of Menu
 
-@signature: enable(ids: string | string[]): void;
+@signature: {'enable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, one ID or an array of IDs of items
+- ids 		string | array		optional, one ID or an array of IDs of items
 
 @example:
 menu.enable("save_btn");

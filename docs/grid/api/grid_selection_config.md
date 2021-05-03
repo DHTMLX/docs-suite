@@ -5,7 +5,7 @@ title: selection
 
 @short: enables selection in a grid
 
-selection?: "cell" | "row" | "complex";
+@signature: {'selection?: "cell" | "row" | "complex";'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

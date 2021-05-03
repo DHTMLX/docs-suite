@@ -5,6 +5,7 @@ title: afterShow
 
 @short: fires after a control is shown
  
+@signature: {'afterShow: (value: string | boolean) => void;'}
 
 @params:
 - value     string|boolean     the current value of the control

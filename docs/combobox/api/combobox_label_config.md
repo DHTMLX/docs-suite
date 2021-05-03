@@ -5,7 +5,7 @@ title: label
 
 @short: adds a label for ComboBox
 
-@signature: label?: string;
+@signature: {'label?: string;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {

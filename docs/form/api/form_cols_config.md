@@ -1,21 +1,21 @@
 ---
-sidebar_label: title
-title: title
+sidebar_label: cols
+title: cols
 ---          
 
-@short: specifies the title of the control group
+@short: arranges controls inside the control group horizontally
 
-@type: string
+@signature: {'cols?: IBlock;'}
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	title: "Form", /*!*/ // title for rows
     rows: [
-        {
-            title: "Controls", /*!*/ // title for cols
+    	{
+            title: "Align:",
+            padding: "10px",
             css: "dhx_layout-cell--bordered",
-            cols: [{
+            cols: [{ /*!*/
                 type: "checkbox",
                 label: "start",
                 name: "align",
@@ -45,4 +45,6 @@ var form = new dhx.Form("form_container", {
 @changelog: added in v6.4
 
 @related: form/how_to_start.md#initialize-form
-form/configuration.md#title
+form/configuration.md#groupingcontrolsinform
+
+@relatedapi: form/api/form_rows_property.md

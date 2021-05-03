@@ -5,7 +5,7 @@ title: beforeUnSelect
 
 @short: fires before unselecting a cell
 
-@signature: beforeUnSelect: (row: object, col: object) => boolean | void;
+@signature: {'beforeUnSelect: (row: IRow, col: ICol) => boolean | void;'}
 
 @params:
 
@@ -13,7 +13,7 @@ title: beforeUnSelect
 - col       object      the config of a column
 
 @returns:
-param   boolean     false - to prevent unselecting of a cell, otherwise - true
+param   boolean | void     false - to prevent unselecting of a cell, otherwise - true
 
 
 

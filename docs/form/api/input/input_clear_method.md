@@ -5,7 +5,7 @@ title: clear
 
 @short: clears a value of an Input control
 
-
+@signature: {'clear(): void;'}
 
 
 

@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints a dataview on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 dataview.paint();

@@ -5,7 +5,7 @@ title: value
 
 @short: selects the day (adds a round blue marker)
 
-@signature: value?: Date | Date[] | string | string[];
+@signature: {'value?: Date | Date[] | string | string[];'}
 
 @example: 
 // selects a date

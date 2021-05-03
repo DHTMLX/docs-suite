@@ -4,7 +4,8 @@ title: afterHide
 ---          
 
 @short: fires after a control is hidden
- 
+
+@signature: {'afterHide: (value: ISimpleVaultValue[], init: boolean) => void;'}
 
 @params:
 - value     array     the current value of the control

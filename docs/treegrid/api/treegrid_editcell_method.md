@@ -4,8 +4,8 @@ title: editCell
 ---          
 
 @short: enables editing of a TreeGrid cell
-
-@signature: editCell(rowId: string | number, colId: string | number, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea"): void;
+TODO: api change (добавить EditorType в description "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea")
+@signature: {'editCell(rowId: string | number, colId: string | number, editorType?: EditorType): void;'}
 
 @params:
 - rowId 		string | number				the id of a row

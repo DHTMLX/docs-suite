@@ -4,9 +4,11 @@ title: getId
 ---          
 
 @short: returns the id of a selected item
-	
+
+@signature: {'getId(): string | string[];'}
+
 @returns:
-- id	string|string[]	the id of a selected item
+- id	string | string[]	the id of a selected item
 
 @example:
 var id = tree.selection.getId(); // -> "2"

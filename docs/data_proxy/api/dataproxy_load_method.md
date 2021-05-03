@@ -5,6 +5,8 @@ title: load
 
 @short: loads data from an external URL
 
+@signature: {'load?: () => Promise<any[]>;'}
+
 @returns: 
 - param     promise      "promise" of the data object
 

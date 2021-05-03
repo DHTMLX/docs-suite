@@ -5,7 +5,7 @@ title: afterDrop
 
 @short: fires before the user has finished dragging an item but after the mouse button is released 
 
-@signature: afterDrop: (data: object, events: MouseEvent) => void;
+@signature: {'afterDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("AfterDrop", function(data, events) {

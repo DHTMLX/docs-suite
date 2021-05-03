@@ -5,7 +5,7 @@ title: height
 
 @short: sets the height of a window
 
-@signature: height?: number;
+@signature: {'height?: number;'}
 
 @default: 50% of the browser window's height
 

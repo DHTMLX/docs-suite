@@ -5,7 +5,7 @@ title: gap
 
 @short: sets margins for DataView items
 
-@signature: gap?: number;
+@signature: {'gap?: number;'}
 
 @example: 
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5, gap: 20});

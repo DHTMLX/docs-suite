@@ -5,7 +5,7 @@ title: multiselection
 
 @short: enables selection of multiple options in ComboBox
 
-@signature: multiselection?: boolean;
+@signature: {'multiselection?: boolean;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {

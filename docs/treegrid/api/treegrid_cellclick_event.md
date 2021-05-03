@@ -5,11 +5,11 @@ title: cellClick
 
 @short: fires on click on a grid cell
 
-@signature: cellClick: (row: object, col: object, e: MouseEvent) => void;
+@signature: {'cellClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
 
 @params:
 - row			object		an object with a row configuration
-- column		object		an object with a column configuration
+- col		object		an object with a column configuration
 - e				Event		a native event object
 
 @example:

@@ -5,7 +5,7 @@ title: dragRowStart
 
 @short: fires when dragging of a row has started
 
-@signature: dragRowStart: (data: object, events: MouseEvent) => void;
+@signature: {'dragRowStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object

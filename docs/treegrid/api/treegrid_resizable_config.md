@@ -5,7 +5,7 @@ title: resizable
 
 @short: defines whether columns can be resized
 
-@signature: resizable?: boolean;
+@signature: {'resizable?: boolean;'}
 
 @example: 
 var treegrid = new dhx.TreeGrid("treegrid_container", {

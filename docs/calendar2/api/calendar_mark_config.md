@@ -5,12 +5,11 @@ title: mark
 
 @short: adds a CSS class to specific days
 
+todoanton возможно не подставилась signature
 ```todoapi
 function mark;
 mark?: (a: Date) => string;
 ```
-
-@type: function
 
 @example: 
 <style>

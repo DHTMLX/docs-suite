@@ -5,17 +5,13 @@ title: dragMode
 
 @short: enables drag-n-drop in Grid
 
-```todoapi ```
-
-
-@type: string
+@signature: {'dragMode?: "target" | "both" | "source"'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     dragMode:"source"
 });
-
 
 @template:	api_config
 @descr: 

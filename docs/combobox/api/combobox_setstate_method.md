@@ -5,6 +5,8 @@ title: setState
 
 @short: sets the state of ComboBox, used for validation
 
+@signature: {'setState(state: State): void;'}
+
 ```todoapi
 удалено что ли?
 ```

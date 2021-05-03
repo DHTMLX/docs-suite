@@ -5,7 +5,7 @@ title: padding
 
 @short: defines the distance between a cell and the border of layout
 
-@signature: padding?: number | string;
+@signature: {'padding?: number | string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container",{

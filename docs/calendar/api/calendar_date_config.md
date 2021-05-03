@@ -5,7 +5,7 @@ title: date
 
 @short: defines the date that will be opened when the calendar is created
 
-@signature: date?: Date | string;
+@signature: {'date?: Date | string;'}
 
 
 @example: 

@@ -4,21 +4,19 @@ title: afterValidate
 ---          
 
 @short: fires after the control value is validated
- 
 
+@signature: {'afterValidate: (value: ISimpleVaultValue[], isValid: boolean) => void;'}
+ 
 @params:
 - value       array  the validated value
 - isValid     boolean     the result of validation
-
 
 @example:
 form.getItem("simplevault").events.on("AfterValidate", function(value, isValid) {
     console.log("AfterValidate", value, isValid);
 });
 
-
 @template: api_event
 @descr:
-
 
 @changelog: added in v7.0

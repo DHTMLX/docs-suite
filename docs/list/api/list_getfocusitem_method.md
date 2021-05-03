@@ -5,7 +5,7 @@ title: getFocusItem
 
 @short: returns the object of an item in focus
 
-@signature: getFocusItem(): object;
+@signature: {'getFocusItem(): object;'}
 
 @returns:
 - id 		object		the object of an item in focus

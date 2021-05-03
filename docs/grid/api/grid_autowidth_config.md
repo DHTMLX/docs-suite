@@ -5,7 +5,7 @@ title: autoWidth
 
 @short: makes grid's columns to fit the size of a grid
 
-@signature: autoWidth?: boolean;
+@signature: {'autoWidth?: boolean;'}
 
 @default: false
 

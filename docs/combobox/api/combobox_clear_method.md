@@ -5,7 +5,7 @@ title: clear
 
 @short: clears the value set in the Combo Box
 
-@signature: clear(): void;
+@signature: {'clear(): void;'}
 
 @example:
 combo.clear();

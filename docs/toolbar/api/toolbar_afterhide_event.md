@@ -5,12 +5,10 @@ title: afterHide
 
 @short: fires after hiding an item of Toolbar
 
-@signature: afterHide: (e: Event) => any;
-
-<!-- void afterHide(Event e){ ... };  void??? -->
+@signature: {'afterHide: (events: Event) => void;'}
 
 @params:
-- e         Event       a native event object
+- events         Event       a native event object
 
 @example:
 toolbar.events.on("AfterHide", function(event){

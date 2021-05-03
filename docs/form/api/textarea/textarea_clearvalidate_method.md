@@ -5,15 +5,10 @@ title: clearValidate
 
 @short: clears validation of a Textarea control
 
-
-
-
+@signature: {'clearValidate(): void;'}
 
 @example:
 form.getItem("textarea").clearValidate();
 
-
 @template: api_method
 @descr:
-
-

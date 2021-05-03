@@ -5,7 +5,7 @@ title: groupBy
 
 @short: groups grid content either by values of the specified column or by the result of calculation
 
-@signature: groupBy(property: string | ((item: IDataItem) => string)): void;
+@signature: {'groupBy(property: string | ((item: IDataItem) => string)): void;'}
 
 @params:
 - param    string | function   the id of the column or the rule of grouping     

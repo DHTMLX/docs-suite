@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints Sidebar on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 sidebar.paint();

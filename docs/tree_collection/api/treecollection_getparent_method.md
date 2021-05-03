@@ -5,7 +5,7 @@ title: getParent
 
 @short: gets the ID of the parent of the control
 
-@signature: getParent(id: Id): Id;
+@signature: {'getParent(id: Id): Id;'}
 
 @params:
 - id 		string		 the ID of a control

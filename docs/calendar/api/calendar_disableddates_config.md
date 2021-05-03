@@ -5,10 +5,7 @@ title: disabledDates
 
 @short: allows disabling some date intervals, day labels are dimmed
 
-```todoapi
-function disabledDates;
-disabledDates?: (a: Date) => boolean;
-```
+@signature: {'disabledDates?: (a: Date) => boolean;'}
 
 @example: 
 var calendar = new dhx.Calendar("calendar", {

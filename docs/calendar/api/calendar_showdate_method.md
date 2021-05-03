@@ -5,7 +5,7 @@ title: showDate
 
 @short: shows a specified date and/or opens the calendar in one of the available modes
 
-@signature: showDate(date?: Date, mode?: ViewMode): void;
+@signature: {'showDate(date?: Date, mode?: ViewMode): void;'}
 
 @params:
 - date	 Date    	the date that should be shown in the calendar

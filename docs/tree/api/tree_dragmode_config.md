@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Tree
 
-@signature: dragMode?:  "target" | "both" | "source";;
+@signature: {'dragMode?: "target" | "both" | "source";'}
 
 @example: 
 var tree = new dhx.Tree("tree_container", { 

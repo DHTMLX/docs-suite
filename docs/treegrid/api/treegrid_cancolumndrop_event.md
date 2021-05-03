@@ -5,11 +5,11 @@ title: canColumnDrop
 
 @short: fires when a dragged column is placed over a target column
 
-@signature: canColumnDrop: (data: object, events: MouseEvent) => void;
+@signature: {'canColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("CanColumnDrop", function(data, events) {

@@ -4,13 +4,14 @@ title: beforeShow
 ---          
 
 @short: fires before a control is shown
- 
+
+@signature: {'beforeShow: (value: string | number) => boolean | void;'} 
 
 @params:
 - value     string|number     the current value of the control
 
 @returns:
-param   boolean     false - to prevent a control from being shown, otherwise - true
+param   boolean | void    false - to prevent a control from being shown, otherwise - true
 
 
 @example:

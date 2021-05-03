@@ -5,9 +5,11 @@ title: map
 
 @short: iterates through items
 
+@signature: {'map(callback: DataCallback<T>, id?: string | number, direct?: boolean): any;'}
+
 @params:
-- cb 		function		 the function that will be applied to every item
-- id        string           the ID of a control the child items of which will be included
+- callback 		function		 the function that will be applied to every item
+- id        string | number           the ID of a control the child items of which will be included
 - direct    boolean          defines whether only direct children of the control will be included in the iteration   
 
 @example:

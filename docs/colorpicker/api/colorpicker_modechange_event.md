@@ -5,10 +5,10 @@ title: modeChange
 
 @short: fires on changing the mode of the colorpicker
 
-@signature: modeChange: (mode: string) => void;
+@signature: {'modeChange: (view: ViewsMode) => void;'}
 
 @params:
-- mode	string		the colorpicker mode ("palette", "picker")
+- view	string		the colorpicker mode ("palette", "picker")
 
 @example:
 colorpicker.events.on("ModeChange", function(mode) {

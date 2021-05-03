@@ -5,6 +5,8 @@ title: sort
 
 @short: sorts controls according to some criteria
 
+@signature: {'sort(by: ISortMode): void;'}
+
 @params:
 - rule		object		an object with parameters for sorting
 

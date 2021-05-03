@@ -4,7 +4,8 @@ title: afterHide
 ---          
 
 @short: fires after a control is hidden
- 
+
+@signature: {'afterHide: (value: number[], init: boolean) => void;'} 
 
 @params:
 - value     number[]     the current value of the control

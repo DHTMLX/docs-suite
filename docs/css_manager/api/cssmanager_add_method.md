@@ -5,6 +5,8 @@ title: add
 
 @short: creates a new class with a list of styles
 
+@signature: {'add(cssList: ICssList, customId?: string, silent?: boolean): string;'}
+
 @params:
 - cssStyleList       object     mandatory, an object with a list of styles
 - customId      string      optional, a custom name of the class

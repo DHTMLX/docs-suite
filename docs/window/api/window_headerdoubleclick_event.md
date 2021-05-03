@@ -5,7 +5,7 @@ title: headerDoubleClick
 
 @short: fires on double clicking the header of a window
 
-@signature: headerDoubleClick: (e: Event) => void;
+@signature: {'headerDoubleClick: (e: Event) => void;'}
 
 @params:
 - e    Event       a native event object 

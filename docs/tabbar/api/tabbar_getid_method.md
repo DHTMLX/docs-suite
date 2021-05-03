@@ -5,10 +5,7 @@ title: getId
 
 @short: returns the id of a tab by its index
 
-@signature: getId(index: number): string;
-
-<!-- void getId(number index);
-getId(index: number): string; -->
+@signature: {'getId(index: number): string;'}
 
 @params:
 - index 		number 		the position of a tab in the tabbar

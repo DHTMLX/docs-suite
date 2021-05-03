@@ -5,7 +5,7 @@ title: navigationType
 
 @short: defines the action that opens menu options
 
-navigationType?: "pointer" | "click";
+@signature: {'navigationType?: "pointer" | "click";'}
 
 @default: "click"
 

@@ -5,7 +5,7 @@ title: selectAllButton
 
 @short: defines whether the Select All button should be shown
 
-@signature: selectAllButton?: boolean;
+@signature: {'selectAllButton?: boolean;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {

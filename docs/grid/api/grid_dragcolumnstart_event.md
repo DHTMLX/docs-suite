@@ -5,7 +5,7 @@ title: dragColumnStart
 
 @short: fires when dragging of a column has started
 
-@signature: dragColumnStart: (data: object, events: MouseEvent) => void;
+@signature: {'dragColumnStart: (data: object, events: MouseEvent) => void;'}
 
 <!-- @params:
 - data		object		data object

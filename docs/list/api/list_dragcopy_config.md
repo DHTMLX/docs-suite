@@ -5,7 +5,7 @@ title: dragCopy
 
 @short: defines that an item is copied to a target during drag-n-drop
 
-```todoapi ```
+@signature: {'dragCopy?: boolean'}
 
 @example: 
 var source = new dhx.List("list-source", {dragMode: "source", dragCopy: true});

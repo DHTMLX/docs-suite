@@ -1,20 +1,21 @@
 ---
-sidebar_label: height
-title: height
+sidebar_label: width
+title: width
 ---          
 
-@short: sets the height of the control group 
+@short: sets the width of the control group
 
+@signature: {'width?: string | number | "content";'}
 
-@type: string|number|"content"
+@type: string | number | "content"
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	height: "400px", /*!*/ // height for rows
+	width: "500px", /*!*/ // the width for rows
     rows: [
         {
-            height: "200px", /*!*/ // height for cols
+            width: "500px", /*!*/ // the width for cols
             css: "dhx_layout-cell--bordered",
             cols: [{
                 type: "checkbox",
@@ -36,7 +37,6 @@ var form = new dhx.Form("form_container", {
 });
 
 
-
 @template:	api_config
 @descr: 
 
@@ -49,4 +49,4 @@ var form = new dhx.Form("form_container", {
 @related: form/how_to_start.md#initialize-form
 form/configuration.md#widthheight
 
-@relatedapi: form/api/form_width_property.md
+@relatedapi: form/api/form_height_property.md

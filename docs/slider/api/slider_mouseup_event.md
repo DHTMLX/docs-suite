@@ -5,10 +5,10 @@ title: mouseUp
 
 @short: fires on releasing the left mouse button over the slider thumb
 
-```todoapi ```
+@signature: {'mouseUp: (event: Event) => void;'}
 
 @params:
-- e		Event		the native event object
+- event		Event		the native event object
 
 
 @example:

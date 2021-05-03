@@ -5,11 +5,13 @@ title: beforeChangeProperties
 
 @short: fires before configuration attributes of the control are changed dynamically
 
+@signature: {'beforeChangeProperties: (properties: ICheckboxGroupProps) => boolean | void;'}
+
 @params:
 - properties     object      an object with configuration attributes of the control and their new values
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+param   boolean | void     false - to cancel the default action of the event, otherwise true
 
 @example:
 form.getItem("checkboxGroup").events.on("BeforeChangeProperties", function(properties) {

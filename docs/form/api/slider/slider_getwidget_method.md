@@ -5,9 +5,7 @@ title: getWidget
 
 @short: returns the dhtmlxSlider widget attached to a Slider control
 
-@signature: getWidget(): Combobox;
-
-
+@signature: {'getWidget(): Slider;'}
 
 @returns:
 param   object    the dhtmlxSlider widget

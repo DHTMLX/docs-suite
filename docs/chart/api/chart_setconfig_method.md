@@ -5,6 +5,8 @@ title: setConfig
 
 @short: sets configuration of a chart
 
+@signature: {'setConfig(config: IChartConfig): void;'}
+
 ```todoapi
 void setConfig(object config);
 setConfig(config: IChartConfig): void;

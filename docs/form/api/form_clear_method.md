@@ -5,6 +5,8 @@ title: clear
 
 @short: clears a form
 
+@signature: {'clear(method?: ClearMethod): void;'}
+
 @params:
 
 - mode		string		optional, the mode of clearing a form

@@ -5,7 +5,7 @@ title: filter
 
 @short: filters controls by some criteria
 
-@signature: filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;
+@signature: {'filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;'}
 
 @params:
 - rule      function,object     the filtering criteria

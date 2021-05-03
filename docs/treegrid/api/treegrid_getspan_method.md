@@ -5,7 +5,7 @@ title: getSpan
 
 @short: returns an object with spans
 
-@signature: getSpan(row: string | number, col: string | number): object;
+@signature: {'getSpan(row: string | number, col: string | number): ISpan;'}
 
 @params:
 - row		string | number		the id of a row

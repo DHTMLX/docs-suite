@@ -5,7 +5,7 @@ title: addCellCss
 
 @short: adds a style to a cell
 
-@signature: addCellCss(row: string | number, col: string | number , css: string): void;
+@signature: {'addCellCss(row: string | number, col: string | number, css: string): void;'}
 
 @params:
 - row 		string | number 		the id of a row

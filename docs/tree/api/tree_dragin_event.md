@@ -5,7 +5,7 @@ title: dragIn
 
 @short: fires when an item is dragged to another potential target
 
-@signature: dragIn: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'dragIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @example:
 tree.events.on("DragIn", function(data, events) {

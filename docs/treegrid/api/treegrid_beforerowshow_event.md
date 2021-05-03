@@ -5,14 +5,14 @@ title: beforeRowShow
 
 @short: fires before a row is shown on a page
 
-@signature: beforeRowShow: (row: object) => boolean | void;
+@signature: {'beforeRowShow: (row: IRow) => boolean | void;'}
 
 @params: 
 - row   object  an object with a row configuration
 
 
 @returns:
-- result	boolean		false - to prevent a row from being shown, otherwise true
+- result	boolean | void		false - to prevent a row from being shown, otherwise true
 
 @example:
 treegrid.events.on("BeforeRowShow", function(row){

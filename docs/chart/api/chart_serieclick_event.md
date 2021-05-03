@@ -5,10 +5,7 @@ title: serieClick
 
 @short: fires on clicking a series
 
-```todoapi
-void serieClick(string id,string value){ ... };
-serieClick = "serieClick",
-```
+@signature: {'serieClick: (id: string, value: string) => void;'}
 
 @params:
 - id    string      the id of a clicked series

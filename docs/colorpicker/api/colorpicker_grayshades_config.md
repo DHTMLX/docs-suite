@@ -5,7 +5,7 @@ title: grayShades
 
 @short: defines whether the section with gray shades is displayed in the palette
 
-@signature: grayShades?: boolean;
+@signature: {'grayShades?: boolean;'}
 
 @default: true
 

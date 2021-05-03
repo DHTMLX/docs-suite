@@ -5,7 +5,7 @@ title: max
 
 @short: the maximal value of slider
 
-@signature: max: number;
+@signature: {'max: number;'}
 
 @default: 100
 

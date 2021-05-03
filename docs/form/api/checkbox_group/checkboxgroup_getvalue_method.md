@@ -5,6 +5,8 @@ title: getValue
 
 @short: returns the current value/state of a checkbox(s)
 
+@signature: {'getValue(id?: string): ICheckboxGroupValue | string | boolean;'}
+
 @params:
 - id    string  optional, the id of a checkbox
 

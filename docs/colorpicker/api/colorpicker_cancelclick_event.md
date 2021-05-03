@@ -5,7 +5,7 @@ title: cancelClick
 
 @short: fires on clicking the "Cancel" button
  
-@signature: cancelClick: () => void;
+@signature: {'cancelClick: () => void;'}
 
 @example:
 colorpicker.events.on("CancelClick",function(){

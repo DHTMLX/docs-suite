@@ -5,7 +5,7 @@ title: timePicker
 
 @short: adds a timepicker into the calendar
 
-@signature: timePicker?: boolean;
+@signature: {'timePicker?: boolean;'}
 
 @default: false
 

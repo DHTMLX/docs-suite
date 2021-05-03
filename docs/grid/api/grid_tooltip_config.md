@@ -5,7 +5,7 @@ title: tooltip
 
 @short: enables a tooltip on hovering over the content of a column
 
-@signature: tooltip?: boolean;
+@signature: {'tooltip?: boolean;'}
 
 @default: true
 

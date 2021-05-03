@@ -5,7 +5,7 @@ title: afterColumnDrag
 
 @short: fires after dragging of a column is finished
 
-@signature: afterColumnDrag: (data: object, events: MouseEvent) => void;
+@signature: {'afterColumnDrag: (data: object, events: MouseEvent) => void;'}
 
 <!-- @params:
 - data		object		data object

@@ -5,7 +5,7 @@ title: removeSpan
 
 @short: removes a cols/rows span
 
-@signature: removeSpan(row: string | number, col: string | number): void;
+@signature: {'removeSpan(row: string | number, col: string | number): void;'}
 
 @params:
 - row 	string | number 	the id of a row

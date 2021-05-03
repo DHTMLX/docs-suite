@@ -5,7 +5,7 @@ title: tick
 
 @short: sets the interval of steps for rendering the slider scale
 
-@signature: tick?: number;
+@signature: {'tick?: number;'}
 
 @example: 
 var slider = new dhx.Slider("slider_container", { 

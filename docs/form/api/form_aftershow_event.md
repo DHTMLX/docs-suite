@@ -5,17 +5,16 @@ title: afterShow
 
 @short: fires after a control of Form is shown
 
+@signature: {'afterShow: (name: string, value?: any) => void;'}
+
 @params:
-- name|id		string		the name (or id, if the name is not specified) of the Form control
+- name | id		string		the name (or id, if the name is not specified) of the Form control
 - value     any         the current value of the control
-
-
 
 @example:
 form.events.on("AfterShow", function(name, value) {
     console.log("AfterShow", name, value); 
 });
-
 
 @template: api_event
 @descr:

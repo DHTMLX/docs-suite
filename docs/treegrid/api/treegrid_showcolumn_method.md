@@ -5,7 +5,7 @@ title: showColumn
 
 @short: makes a specified column visible on a page
 
-@signature: showColumn(colId: string | number): void;
+@signature: {'showColumn(colId: string | number): void;'}
 
 @params:
 - colId	string | number	the id of a column

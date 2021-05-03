@@ -5,10 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into Ribbon
 
-```todoapi 
-array data;
-data?: any[] | TreeCollection<IRibbonElement>;
-```
+@signature: {'data?: array;'}
 
 @example: 
 const data = [

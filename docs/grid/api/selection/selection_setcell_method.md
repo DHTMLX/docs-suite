@@ -5,7 +5,7 @@ title: setCell
 
 @short: sets selection to specified cells
 
-@signature: etCell(row?: object | string, col?: object |  string, ctrlUp?: boolean, shiftUp?: boolean): void;
+@signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:
 - row     object|string    an object with a cell to be selected or the id of a row

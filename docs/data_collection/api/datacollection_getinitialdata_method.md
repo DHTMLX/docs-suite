@@ -5,6 +5,8 @@ title: getInitialData
 
 @short: returns the initial values of the items of a widget initialized in a data collection
 
+@signature: {'getInitialData(): T[];'}
+
 @returns:
 - function        array      an array of item objects with initial values
 

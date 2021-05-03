@@ -5,11 +5,11 @@ title: itemRightClick
 
 @short: fires on right clicking an item
 
-@signature: itemRightClick: (id: string | number, e: MouseEvent) => void;
+@signature: {'itemRightClick: (id: string | number, events: MouseEvent) => void;'}
 
 @params:
 - id   		string,number			the id of a right-clicked item
-- e			MouseEvent				an event object
+- events	MouseEvent				an event object
 
 @example:
 list.events.on("itemRightClick", function(id, e){

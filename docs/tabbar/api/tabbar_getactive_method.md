@@ -5,7 +5,7 @@ title: getActive
 
 @short: gets the id of the active tab
 
-@signature: getActive(): string;
+@signature: {'getActive(): string;'}
 
 @returns:
 - id 		string		the id of the active tab
