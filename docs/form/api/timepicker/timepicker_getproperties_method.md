@@ -5,11 +5,10 @@ title: getProperties
 
 @short: returns an object with the available configuration attributes of the control
 
-@signature: {'getProperties(name?: string): { [name: string]: IFormProps; } | IFormProps;'}
+@signature: {'getProperties(): ITimePickerProps;'}
 
 @returns:
 param   object      an object with the available attributes of the control and their values
-
 
 @example:
 var form = new dhx.Form("form_container", {

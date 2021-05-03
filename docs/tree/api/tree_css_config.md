@@ -1,9 +1,7 @@
 ---
 sidebar_label: css
 title: css
----          
-
-
+---
 
 @short: adds a CSS class(es) to the component
 

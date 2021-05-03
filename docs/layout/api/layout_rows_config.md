@@ -7,11 +7,6 @@ title: rows
 
 @signature: {'rows?: ICellConfig[] | ILayoutConfig[];'}
 
-```todoapi
-array rows;
-rows?: ICellConfig[] | ILayoutConfig[];
-```
-
 @example: 
 var layout = new dhx.Layout("layout_container", {
     header: "Main Block Header",

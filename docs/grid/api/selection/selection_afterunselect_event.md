@@ -5,7 +5,7 @@ title: afterUnSelect
 
 @short: fires after unselecting a cell
 
-@signature: afterUnSelect: (row: object, col: object) => void;
+@signature: {'afterUnSelect: (row: object, col: object) => void;'}
 
 @params:
 

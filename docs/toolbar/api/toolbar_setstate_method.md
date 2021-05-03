@@ -5,8 +5,7 @@ title: setState
 
 @short: sets values/states of controls
 
-было так {`setState(state: {[key: string]: string}): void'} не вижу state
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
+@signature: {'setState(state: IState): void;'}
 
 @params:
 - state 		object			a hash of <i>key:value</i> pairs, where the key is the ID of a control and the value is a new value/state of the control

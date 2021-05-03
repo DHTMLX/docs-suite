@@ -5,10 +5,10 @@ title: show
 
 @short: shows an item of Toolbar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
+@signature: {'show(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		an ID or an array of IDs of items
+- ids 		string | array		an ID or an array of IDs of items
 
 @example:
 toolbar.show("save_btn");

@@ -5,10 +5,10 @@ title: disable
 
 @short: disables and dims an item(s) of Ribbon
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, an ID or an array of IDs of items
+- ids 		string | array		optional, an ID or an array of IDs of items
 
 @example:
 ribbon.disable("save_btn");

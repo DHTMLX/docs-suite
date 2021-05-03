@@ -5,10 +5,10 @@ title: change
 
 @short: fires on changing the value of a control
  
+@signatur: {'change: (value: number[]) => void;'}
 
 @params:
 - value     number[]     the current value of the control
-
 
 @example:
 form.getItem("slider").events.on("Change", function(value) {

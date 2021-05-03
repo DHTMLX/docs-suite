@@ -5,12 +5,11 @@ title: beforeUploadFile
 
 @short: fires before file upload begins
  
+@signature: {'beforeUploadFile: (file: ISimpleVaultValue, value: ISimpleVaultValue[]) => boolean | void;'}
 
 @params:
 - file      object      the file object
 - value     array     the current value of the control
-
-
 
 @example:
 form.getItem("simpleVault").events.on("BeforeUploadFile", function(file, value) {

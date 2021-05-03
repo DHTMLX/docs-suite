@@ -7,9 +7,6 @@ title: beforeClose
 
 @signature: {'beforeClose: (id: string) => boolean | void;'}
 
-<!-- boolean beforeClose(string id){ ... };
- [TabbarEvents.beforeClose]: (id: string) => boolean | void; -->
-
 @params:
 - id 		string		the id of a closed tab
 

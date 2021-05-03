@@ -5,10 +5,10 @@ title: enable
 
 @short: enables a disabled item(s) of Menu
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
+@signature: {'enable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, one ID or an array of IDs of items
+- ids 		string | array		optional, one ID or an array of IDs of items
 
 @example:
 menu.enable("save_btn");

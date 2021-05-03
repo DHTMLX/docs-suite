@@ -5,17 +5,10 @@ title: disable
 
 @short: disables a Slider control on a page
 
-@signature: disable(): void;
-
-
-
-
+@signature: {'disable(): void;'}
 
 @example:
 form.getItem("slider").disable();
 
-
 @template: api_method
 @descr:
-
-

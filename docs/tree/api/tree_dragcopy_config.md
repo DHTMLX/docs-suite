@@ -5,7 +5,7 @@ title: dragCopy
 
 @short: defines that an item is copied to a target during drag-n-drop
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
+@signature: {'dragCopy?: boolean;'}
 
 @example: 
 var treeSource = new dhx.Tree("tree-source", {dragMode: "source", dragCopy: true});

@@ -5,7 +5,7 @@ title: enable
 
 @short: enables disabled items of Sidebar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
+@signature: {'enable(ids: string | string[]): void;'}
 
 @params:
 - ids 		string,array		optional, one ID or an array of IDs of items

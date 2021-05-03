@@ -5,7 +5,7 @@ title: destructor
 
 @short: removes a Menu instance and releases occupied resources
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
+@signature: {'destructor(): void;'}
 
 @example:
 menu.destructor();

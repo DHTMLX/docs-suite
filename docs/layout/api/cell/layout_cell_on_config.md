@@ -5,13 +5,7 @@ title: on
 
 @short: adds handlers to DOM events of a cell
 
-todoanton возможно не подставилась signature
-```todoapi
-object on;
-on?: {
-	[key: string]: any;
-};
-```
+@signature: {'on?: {[key: string]: any; };'}
 
 @example: 
 // adds a click event handler to the element of a cell

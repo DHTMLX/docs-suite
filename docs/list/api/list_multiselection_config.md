@@ -5,7 +5,7 @@ title: multiselection
 
 @short: enables selection of multiple List items, sets the mode of multiselection
 
-multiselection?: boolean | "click" | "ctrlClick";
+@signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 
 @example: 
 var list = new dhx.List("list", {multiselection:true});

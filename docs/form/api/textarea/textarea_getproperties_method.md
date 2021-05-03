@@ -3,14 +3,12 @@ sidebar_label: getProperties
 title: getProperties
 ---          
 
-``` todoanton signature мещает документации собраться
 @short: returns an object with the available configuration attributes of the control
 
-@signature: getProperties(name?: string): { [name: string]: IFormProps; } | IFormProps;
+@signature: {'getProperties(): ITextareaProps;'}
 
 @returns:
 param   object      an object with the available attributes of the control and their values
-
 
 @example:
 var form = new dhx.Form("form_container", {
@@ -128,5 +126,3 @@ The returned object of the **Textarea** control can contain the following config
 </table>
 
 @changelog: added in v7.0
-
-``` todo

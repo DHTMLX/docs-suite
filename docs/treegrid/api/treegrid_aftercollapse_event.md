@@ -5,7 +5,7 @@ title: afterCollapse
 
 @short: fires after collapsing a treegrid
 
-@signature: afterCollapse: (rowId: string | number) => void;
+@signature: {'afterCollapse: (rowId: string | number) => void;'}
 	
 @params:
 - rowId			string,number		the id of a collapsed row

@@ -11,7 +11,7 @@ title: beforeShow
 - value     array     the current value of the control
 
 @returns:
-param   boolean     false - to prevent a control from being shown, otherwise - true
+param   boolean | void     false - to prevent a control from being shown, otherwise - true
 
 @example:
 form.getItem("simplevault").events.on("BeforeShow", function(value) {

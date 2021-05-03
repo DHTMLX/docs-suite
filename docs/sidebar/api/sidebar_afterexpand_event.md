@@ -7,8 +7,6 @@ title: afterExpand
 
 @signature: {'afterExpand: () => void;'}
 
-afterExpand: () => void;
-
 @example:
 sidebar.events.on("AfterExpand", function() {
     // your logic here

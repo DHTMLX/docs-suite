@@ -7,10 +7,8 @@ title: beforeExpand
 
 @signature: {'beforeExpand: () => boolean | void;'}
 
-beforeExpand: () => boolean | void;
-
 @returns: 
-param       boolean     false - to prevent expanding a sidebar, otherwise - false
+param       boolean | void     false - to prevent expanding a sidebar, otherwise - false
 
 
 @example:

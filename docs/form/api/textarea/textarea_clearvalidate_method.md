@@ -7,15 +7,8 @@ title: clearValidate
 
 @signature: {'clearValidate(): void;'}
 
-
-
-
-
 @example:
 form.getItem("textarea").clearValidate();
 
-
 @template: api_method
 @descr:
-
-

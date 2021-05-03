@@ -10,10 +10,8 @@ title: send
 @params:
 * params   object     optional, an object with additional parameters for a request
 
-
 @example:
-form.getItem("simplevault").send(); 
-
+form.getItem("simplevault").send();
 
 @template: api_method
 @descr:

@@ -5,7 +5,7 @@ title: isSelected
 
 @short: checks whether a specified Menu item is selected
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
+@signature: {'isSelected(id: string): boolean;'}
 
 @params:
 - id	string  the id of a Menu item

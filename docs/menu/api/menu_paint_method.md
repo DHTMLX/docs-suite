@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints Menu on a page
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
+@signature: {'paint(): void;'}
 
 @example:
 menu.paint();

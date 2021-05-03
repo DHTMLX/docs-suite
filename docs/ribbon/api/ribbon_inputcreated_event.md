@@ -5,7 +5,7 @@ title: inputCreated
 
 @short: fires when a new input is added
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
+@signature: {'inputCreated: (id: string, input: HTMLInputElement) => void;'}
 
 @params:
 - id 		string			the ID of a new input

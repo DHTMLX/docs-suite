@@ -7,17 +7,14 @@ title: disabled
 
 @signature: {'disabled?: boolean;'}
 
-
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	disabled: true
 });
 
-
 @template:	api_config
 @descr: 
-
 
 @relatedsample:
 https://snippet.dhtmlx.com/7qjwg2sw	Form. Disabled

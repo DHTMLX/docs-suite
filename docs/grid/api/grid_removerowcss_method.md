@@ -8,7 +8,7 @@ title: removeRowCss
 @signature: {'removeRowCss(id: string | number, css: string): void;'}
 
 @params:
-- id	string|number		the id of a row
+- id	string | number		the id of a row
 - css 	string 				the name of the CSS class
 
 @example:

@@ -5,7 +5,7 @@ title: add
 
 @short: adds an item to a component
 
-@signature: {'add(config: IDataItem | IDataItem[], index?: number, parent?: Id): Id | Id[];'}
+@signature: {'add(obj: IDataItem | IDataItem[], index?: number, parent?: Id): Id | Id[];'}
 
 @params:
 - config 		object    		the configuration of the added item

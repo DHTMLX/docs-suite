@@ -5,11 +5,13 @@ title: beforeUnSelect
 
 @short: fires on unselecting an item, but before the item is really unselected
 
+@signature: {'beforeUnSelect: (id: string) => void | boolean;'}
+
 @params:
 - id		string		the id of an item
 
 @returns:
-- param		boolean		false - to prevent unselecting of an item, otherwise - true
+- param		void | boolean		false - to prevent unselecting of an item, otherwise - true
 
 @example:
 selection.events.on("BeforeUnSelect", function(id){

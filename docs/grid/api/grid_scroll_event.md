@@ -5,7 +5,7 @@ title: scroll
 
 @short: fires on scrolling a grid
 
-@signature: scroll: (scrollState: ICoords) => void;
+@signature: {'scroll: (scrollState: ICoords) => void;'}
 
 @params:
 - scrollState	object		an object with new top and left coordinates

@@ -5,17 +5,10 @@ title: clear
 
 @short: clears a value of a Text control
 
-@signature: {'clear(method?: ClearMethod): void;'}
-
-
-
-
+@signature: {'clear(): void;'}
 
 @example:
 form.getItem("text").clear();
 
-
 @template: api_method
 @descr:
-
-

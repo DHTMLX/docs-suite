@@ -5,7 +5,7 @@ title: params
 
 @short:  provides additional parameters for an XMLHttpRequest
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
+@signature: {'params?: {[key: string]: any;};'}
 
 @example:
 var vault = new dhx.Vault("vault_container", { 

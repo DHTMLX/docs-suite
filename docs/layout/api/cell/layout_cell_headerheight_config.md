@@ -5,7 +5,7 @@ title: headerHeight
 
 @short: sets the height of a Layout cell
 
-@signature: headerHeight?: number;
+@signature: {'headerHeight?: number;'}
 
 @default: 37
 

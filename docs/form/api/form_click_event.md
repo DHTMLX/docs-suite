@@ -7,7 +7,6 @@ title: click
 
 @signature: {'click: (name: string, e: Event) => any;'}
 
-
 @params:
 - name 	string	 	the name  (or id, if the name is not specified) of a clicked button
 - e 	Event 		a native event object

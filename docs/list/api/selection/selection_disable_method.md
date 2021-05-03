@@ -5,7 +5,7 @@ title: disable
 
 @short: disables selection of items in List
 
-@signature: disable(): void;
+@signature: {'disable(): void;'}
 
 @example:
 list.selection.disable();

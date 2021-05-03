@@ -4,13 +4,9 @@ title: columns
 description: description
 ---          
 
-
-
 @short: specifies the configuration of grid columns
 
-
-
-@signature: columns?: ICol[];
+@signature: {'columns?: ICol[];'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

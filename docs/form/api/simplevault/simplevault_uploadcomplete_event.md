@@ -5,13 +5,11 @@ title: uploadComplete
 
 @short: fires when upload is completed
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-layout/sources/types.d.ts)
- 
+@signature: {'uploadComplete: (files: ISimpleVaultValue[], value: ISimpleVaultValue[]) => void;'}
 
 @params:
 - files      array      file objects that were uploaded
-- value     array     the current value of the control 
-
+- value     array     the current value of the control
 
 @example:
 form.getItem("simpleVault").events.on("UploadComplete", function(files, value) {

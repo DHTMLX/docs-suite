@@ -9,7 +9,7 @@ title: canColumnDrop
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("CanColumnDrop", function(data, events) {

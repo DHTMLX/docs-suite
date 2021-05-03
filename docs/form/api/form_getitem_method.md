@@ -7,18 +7,14 @@ title: getItem
 
 @signature: {'getItem(name: string): any;'}
 
-
 @params:
 - name|id	string		the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
 - state 		object		the object of the control
 
-
-
 @example:
 form.getItem("colorpicker").setValue("#02F7C6");
-
 
 @template: api_method
 
@@ -46,4 +42,3 @@ https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control
 https://snippet.dhtmlx.com/n0ndn215	Form. Disable Of Control
 
 @changelog:added in v6.2 
-

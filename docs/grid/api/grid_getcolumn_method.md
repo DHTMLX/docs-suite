@@ -8,7 +8,7 @@ title: getColumn
 @signature: {'getColumn(colId: string | number): ICol;'}
 
 @params:
-- colId		string,number		the id of a column
+- colId		string | number		the id of a column
 
 @returns:
 - config		object		an object with attributes of a column

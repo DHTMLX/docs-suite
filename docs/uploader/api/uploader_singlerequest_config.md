@@ -5,8 +5,8 @@ title: singleRequest
 
 @short: defines whether files are sent in one request
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
-	
+@signature: {'singleRequest?: boolean;'}
+
 @default: false
 
 @example:

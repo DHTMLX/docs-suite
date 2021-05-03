@@ -5,13 +5,12 @@ title: afterChangeProperties
 
 @short: fires after configuration attributes of the control have been changed dynamically
 
-@signature: {'afterChangeProperties: (properties: IInputProps | ITextProps | ITextareaProps) => void;'}
-
+@signature: {'afterChangeProperties: (properties: ITextareaProps) => void;'}
 
 @params:
 - properties     object      an object with configuration attributes of the control and their new values
 
-@example:
+@example:s
 form.getItem("textarea").events.on("AfterChangeProperties", function(properties) {
     console.log("AfterChangeProperties", properties);
 });

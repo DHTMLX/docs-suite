@@ -7,7 +7,6 @@ title: change
 
 @signature: {'change: (value: string | ITimeObject) => void;'}
 
-
 @example:
 timepicker.events.on("change", function(value){
 	console.log("The value of a timepicker has changed to "+ value);

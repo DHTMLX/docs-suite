@@ -5,7 +5,7 @@ title: dragStart
 
 @short: fires when dragging of an item has started 
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
+@signature: {'dragStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @example:
 list.events.on("DragStart", function(data, events) {

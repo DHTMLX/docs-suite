@@ -5,8 +5,7 @@ title: showAt
 
 @short: shows a context menu
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
-
+@signature: {'showAt(elem: HTMLElement | MouseEvent | string, showAt: "bottom" | "right"): void;'}
 
 @example:
 var cmenu = new dhx.ContextMenu();

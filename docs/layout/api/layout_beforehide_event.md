@@ -17,7 +17,7 @@ layout.events.on("BeforeHide", function(id){
 });
 
 @returns:
-- result	boolean		false - to prevent a cell from being hidden, otherwise true
+- result	boolean | void		false - to prevent a cell from being hidden, otherwise true
 
 
 @example:

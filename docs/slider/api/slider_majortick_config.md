@@ -5,7 +5,7 @@ title: majorTick
 
 @short: sets interval of rendering numeric values on the slider scale
 
-@signature: majorTick?: number;
+@signature: {'majorTick?: number;'}
 
 @example: 
 var slider = new dhx.Slider("slider_container", { 

@@ -6,7 +6,6 @@ description: description
 
 @short: sets the id of a tab
 
-```todoapi  в старой доке не вижу```
 @signature: {'id?: string;'}
 
 @example: 

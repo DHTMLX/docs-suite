@@ -7,8 +7,6 @@ title: afterCollapse
 
 @signature: {'afterCollapse: () => void;'}
 
-afterCollapse: () => void;
-
 @example:
 sidebar.events.on("AfterCollapse", function() {
     // your logic here

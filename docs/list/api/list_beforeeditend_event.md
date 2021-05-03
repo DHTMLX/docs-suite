@@ -12,7 +12,7 @@ title: beforeEditEnd
 - id		string | number		the id of an item
 
 @returns:
-- result	boolean		false - to prevent closing of an editor, otherwise true
+- result	void | boolean		false - to prevent closing of an editor, otherwise true
 
 @example:
 list.events.on("BeforeEditEnd", function(value,id){

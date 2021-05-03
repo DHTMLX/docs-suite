@@ -5,7 +5,7 @@ title: fieldName
 
 @short: sets the name of the file field in the form data
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
+@signature: {'fieldName?: string;'}
 
 @default: "file"
 

@@ -5,7 +5,7 @@ title: editable
 
 @short: enables editing of Tree items on a double-click  
 
-@signature: editable?: boolean;
+@signature: {'editable?: boolean;'}
 
 @default: false
 

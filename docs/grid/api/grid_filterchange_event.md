@@ -6,7 +6,6 @@ title: filterChange
 @short: fires on typing text in an input of a column's header
 
 @signature: {'filterChange: (value: string, colId: string | number, filterId: fixedRowContent) => void;'}
-<!-- void filterChange(string|number value,string|number colId,string filter){ ... }; -->
 
 @params:
 - value		string		an entered value

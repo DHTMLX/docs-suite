@@ -6,8 +6,6 @@ title: change
 @short: fires on changing the active tab
 
 @signature: {'change: (id: string, prev: string) => void;'}
-<!-- void change(string activeId,string prevId){ ... };
- [TabbarEvents.change]: (id: string, prev: string) => any; -->
 
 @params:
 - id		string		the id of a newly active tab

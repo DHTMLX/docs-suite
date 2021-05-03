@@ -5,11 +5,10 @@ title: isVisible
 
 @short: checks whether a Text control is visible on the page
 
-@signature: {'isVisible(name?: string): boolean;'}
+@signature: {'isVisible(): boolean;'}
 
 @returns:
 param   boolean     true, if a control is visible, otherwise false
-
 
 @example:
 form.getItem("text").isVisible(); 
@@ -17,5 +16,3 @@ form.getItem("text").isVisible();
 
 @template: api_method
 @descr:
-
-

@@ -5,7 +5,7 @@ title: getValue
 
 @short: returns the current value of a TimePicker control
 
-@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
+@signature: {'getValue<T extends boolean = false>(asOBject?: T): T extends true ? ITimeObject : string;'}
 
 @params:
 * asObject 		boolean		 optional, specifies that the value will be returned as an object, false by default

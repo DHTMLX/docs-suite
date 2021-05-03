@@ -6,7 +6,6 @@ title: beforeHide
 @short: fires before a control is hidden
 
 @signature: {'beforeHide: (value: undefined, init: boolean) => boolean | void;'}
- 
 
 @params:
 - value     undefined     the current value of the control, null

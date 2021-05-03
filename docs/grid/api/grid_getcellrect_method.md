@@ -5,11 +5,11 @@ title: getCellRect
 
 @short: returns the parameters of a cell
 
-@signature: getCellRect(row: string | number, col: string | number): object;
+@signature: {'getCellRect(row: string | number, col: string | number): object;'}
 
 @params:
-- row	string,number		the id of a row
-- col	string,number		the id of a column
+- row	string | number		the id of a row
+- col	string | number		the id of a column
 
 @returns:
 - rect		object		an object with parameters of a cell

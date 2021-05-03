@@ -7,11 +7,6 @@ title: show
 
 @signature: {'show(node: HTMLElement, config?: IShowConfig, attach?: any): void;'}
 
-```todoapi 
-void show(HTMLElement element,object config);
-show(node: HTMLElement, config?: IShowConfig, attached?: any): void;
-```
-
 @params:
 - element 		HTMLElement		 mandatory, the container to place a popup in
 - config 		object			 optional, the configuration object of a popup

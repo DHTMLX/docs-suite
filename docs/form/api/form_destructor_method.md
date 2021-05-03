@@ -7,23 +7,12 @@ title: destructor
 
 @signature: {'destructor(): void;'}
 
-
 @params:
-
-
-
 
 @example:
 form.destructor();
 
-
 @template: api_method
 @descr:
 
-
-
-
-
 @changelog:
-
-

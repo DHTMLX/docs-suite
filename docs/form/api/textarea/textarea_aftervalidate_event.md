@@ -8,7 +8,7 @@ title: afterValidate
 @signature: {'afterValidate: (value: string | number, isValid: boolean) => void;'}
  
 @params:
-- value       string    the validated value
+- value       string | number    the validated value
 - isValid     boolean     the result of validation
 
 @example:

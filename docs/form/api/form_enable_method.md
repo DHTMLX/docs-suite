@@ -7,22 +7,16 @@ title: enable
 
 @signature: {'enable(): void;'}
 
-
 @params:
-
-
-
 
 @example:
 form.enable();
-
 
 @template: api_method
 @descr:
 
 @relatedapi: form/api/form_disable_method.md
 form/api/form_isdisabled_method.md
-
 
 @changelog: added in v6.4
 

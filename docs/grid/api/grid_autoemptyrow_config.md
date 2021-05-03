@@ -5,7 +5,7 @@ title: autoEmptyRow
 
 @short: adds an empty row after the last filled row in the Grid
 
-@signature: autoEmptyRow?: boolean;
+@signature: {'autoEmptyRow?: boolean;'}
 
 @default: true
 

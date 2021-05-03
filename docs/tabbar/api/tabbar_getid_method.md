@@ -7,9 +7,6 @@ title: getId
 
 @signature: {'getId(index: number): string;'}
 
-<!-- void getId(number index);
-getId(index: number): string; -->
-
 @params:
 - index 		number 		the position of a tab in the tabbar
 

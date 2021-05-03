@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Grid
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-grid/sources/types.d.ts)
+@signature: {'dragMode?: "target" | "both" | "source"'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

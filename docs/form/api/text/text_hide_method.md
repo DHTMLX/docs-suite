@@ -7,13 +7,8 @@ title: hide
 
 @signature: {'hide(): void;'}
 
-
-
 @example:
 form.getItem("text").hide(); 
 
-
 @template: api_method
 @descr:
-
-

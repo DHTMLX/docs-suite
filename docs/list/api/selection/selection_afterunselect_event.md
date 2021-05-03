@@ -5,7 +5,7 @@ title: afterUnSelect
 
 @short: fires after unselecting an item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-list/sources/types.d.ts)
+@signature: {'afterUnSelect: (row: IRow, col: ICol) => void;'}
 
 @params:
 - id    string  the id of an item

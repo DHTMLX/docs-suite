@@ -3,13 +3,12 @@ sidebar_label: setFocus
 title: setFocus
 ---          
 
-```todoapi 
 @short: sets focus to an item by its id
 
 @signature: {'setFocus(id: string | number): void;'}
 
 @params:
-- id	string|number      the id of an item
+- id	string | number      the id of an item
 
 @example:
 list.setFocus("item_id");
@@ -20,11 +19,7 @@ list.setFocus("item_id");
 
 @related: list/work_with_list.md#settingfocusonitem
 
-
-
 @changelog:
 added in v6.3
 
 **Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
-
-```todoapi 

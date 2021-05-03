@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints Sidebar on a page
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
+@signature: {'paint(): void;'}
 
 @example:
 sidebar.paint();

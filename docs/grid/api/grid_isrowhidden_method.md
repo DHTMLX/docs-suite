@@ -8,7 +8,7 @@ title: isRowHidden
 @signature: {'isRowHidden(rowId: string | number): boolean;'}
 
 @params:
-- rowId	    string|number   the id of a row   
+- rowId	    string | number   the id of a row   
 
 
 @returns:

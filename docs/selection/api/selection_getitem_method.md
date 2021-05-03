@@ -5,10 +5,10 @@ title: getItem
 
 @short: returns the object of a selected item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-selection/sources/types.d.ts)
+@signature: {'getItem(): any;'}
 
 @returns:
-- item		object|array		the object of a selected item
+- item		object | array		the object of a selected item
 
 @example:
 var item = tree.selection.getItem();

@@ -5,11 +5,11 @@ title: headerCellRightClick
 
 @short: fires on right click on a grid header cell
 
-@signature: headerCellRightClick: (col: object, e: MouseEvent) => void;
+@signature: {'headerCellRightClick: (col: object, events: MouseEvent) => void;'}
 
 <!-- @params:
 - column		object		an object with a column configuration
-- e				Event		a native event object -->
+- events		Event		a native event object -->
 
 @example:
 grid.events.on("HeaderCellRightClick", function(column,e){

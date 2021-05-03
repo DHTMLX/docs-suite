@@ -5,7 +5,7 @@ title: select
 
 @short: selects a specified item of Ribbon
 
-@signature: select(id: string, unselect: boolean): void;
+@signature: {'select(id: string, unselect: boolean): void;'}
 
 @params:
 - id	string      the id of a Ribbon item

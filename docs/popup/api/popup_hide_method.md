@@ -5,7 +5,7 @@ title: hide
 
 @short: hides a Popup
 
-@signature: hide(): void;
+@signature: {'hide(): void;'}
 
 @example:
 popup.hide();

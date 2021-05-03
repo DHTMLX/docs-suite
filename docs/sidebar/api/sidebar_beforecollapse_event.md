@@ -8,7 +8,7 @@ title: beforeCollapse
 @signature: {'beforeCollapse: () => boolean | void;'}
 
 @returns:
-param   boolean         false - to prevent collapsing a sidebar, otherwise - true
+param   boolean | void         false - to prevent collapsing a sidebar, otherwise - true
 
 @example:
 sidebar.events.on("BeforeCollapse", function() {

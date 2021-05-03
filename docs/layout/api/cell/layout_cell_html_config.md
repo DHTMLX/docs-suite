@@ -5,7 +5,7 @@ title: html
 
 @short: sets HTML content for a cell
 
-@signature: html?: string;
+@signature: {'html?: string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

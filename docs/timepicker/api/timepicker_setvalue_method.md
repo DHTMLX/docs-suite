@@ -7,14 +7,6 @@ title: setValue
 
 @signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
-<!-- void setValue(Date|number|string|array|object value);
-setValue(value: Date | number | string | any[] | ITimeObject): void;
-export interface ITimeObject {
-    hour: number;
-    minute: number;
-    AM?: boolean;
-} -->
-
 @example:
 // set the value as a string
 timepicker.setValue("00:39");

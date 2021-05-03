@@ -9,7 +9,7 @@ title: dragColumnOut
 
 @params:
 - data		object		data object
-- e		    MouseEvent		a native event object
+- events		    MouseEvent		a native event object
 
 @example:
 treegrid.events.on("DragColumnOut", function(data, events) {

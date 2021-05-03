@@ -5,8 +5,8 @@ title: updateFromResponse
 
 @short:  updates file attributes with data from a server response
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
-	
+@signature: {'updateFromResponse?: boolean;'}
+
 @default: true
 
 @example:

@@ -3,16 +3,9 @@ sidebar_label: eventHandlers
 title: eventHandlers
 ---          
 
-
-```todoapi 
-
 @short: adds event handlers to HTML elements of a custom template of List items
-todoanton возможно не подставилась signature
 
-object eventHandlers;
-eventHandlers?: {
-    [key: string]: any;
-};
+@signature: {'eventHandlers?: {[key: string]: any;};'}
 
 @example: 
 function template() {
@@ -36,7 +29,6 @@ const list = new dhx.List("list", {
 });
 
 
-
 @template:	api_config
 @descr: 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
@@ -50,10 +42,11 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
         <tr>
 			<td class="webixdoc_links0"><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>id</b> - the id of a List item
-            </ul></td>
+                <ul>
+                    <li><b>event</b> - an event object</li>
+                    <li><b>id</b> - the id of a List item</li>
+                </ul>
+            </td>
 		</tr>
     </tbody>
 </table>
@@ -65,5 +58,3 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 @relatedapi: list/api/list_template_config.md
 
 @related: list/configuration.md#eventhandlersforthetemplate
-
-```

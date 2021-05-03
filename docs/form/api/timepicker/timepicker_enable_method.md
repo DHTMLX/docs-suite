@@ -7,15 +7,8 @@ title: enable
 
 @signature: {'enable(): void;'}
 
-
-
-
-
 @example:
 form.getItem("timepicker").enable();
 
-
 @template: api_method
 @descr:
-
-

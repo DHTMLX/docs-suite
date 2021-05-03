@@ -7,9 +7,6 @@ title: selectFile
 
 @signature: {'selectFile(): void;'}
 
-
-
-
 @example:
 form.getItem("simplevault").selectFile(); 
 // -> true/false

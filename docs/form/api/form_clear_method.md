@@ -7,7 +7,6 @@ title: clear
 
 @signature: {'clear(method?: ClearMethod): void;'}
 
-
 @params:
 
 - mode		string		optional, the mode of clearing a form

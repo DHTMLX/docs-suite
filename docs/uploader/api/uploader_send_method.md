@@ -5,10 +5,10 @@ title: send
 
 @short: sends a POST request for file upload to a server-side URL 
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
+@signature: {'send(params?: IParams): void;'}
 
 @params:
-* params 		object 			optional, additional parameters for a request
+- params 		object 			optional, additional parameters for a request
 
 @example:
 vault.uploader.send();

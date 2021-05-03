@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into Toolbar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
+@signature: {'data?: any[];'}
 
 @example: 
 const toolbar = new dhx.Toolbar("toolbar", {

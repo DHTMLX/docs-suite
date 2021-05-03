@@ -5,10 +5,10 @@ title: add
 
 @short: selects a specified item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-selection/sources/types.d.ts)
+@signature: {'add(id: string | number): void;'}
 
 @params:
-- id		string,number		the id of an item
+- id		string | number		the id of an item
 
 @example:
 // diagram must be created with the "select:true" option

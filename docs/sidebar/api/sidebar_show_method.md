@@ -5,10 +5,10 @@ title: show
 
 @short: shows items of Sidebar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
+@signature: {'show(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, an ID or an array of IDs of items
+- ids 		string | array		optional, an ID or an array of IDs of items
 
 @example:
 sidebar.show("search");

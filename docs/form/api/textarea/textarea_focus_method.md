@@ -7,13 +7,8 @@ title: focus
 
 @signature: {'focus(): void;'}
 
-
-
-
-
 @example:
 form.getItem("textarea").focus();
-
 
 @template: api_method
 @descr:

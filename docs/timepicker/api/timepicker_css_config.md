@@ -7,7 +7,6 @@ title: css
 
 @signature: {'css?: string;'}
 
-
 @example: 
 <style>
 	.bg-grey {

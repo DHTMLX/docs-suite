@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints a grid on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 grid.paint();

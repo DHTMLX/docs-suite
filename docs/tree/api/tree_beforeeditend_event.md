@@ -12,7 +12,7 @@ title: beforeEditEnd
 - id        string  the id of an item
 
 @returns:
-- result	boolean		false - to block closing of an editor, otherwise true
+- result	boolean | void		false - to block closing of an editor, otherwise true
 
 @example:
 tree.events.on("BeforeEditEnd", function(value, id) {

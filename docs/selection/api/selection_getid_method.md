@@ -5,10 +5,10 @@ title: getId
 
 @short: returns the id of a selected item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-selection/sources/types.d.ts)
-	
+@signature: {'getId(): string | string[];'}
+
 @returns:
-- id	string|string[]	the id of a selected item
+- id	string | string[]	the id of a selected item
 
 @example:
 var id = tree.selection.getId(); // -> "2"

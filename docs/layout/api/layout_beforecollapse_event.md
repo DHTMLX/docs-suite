@@ -5,7 +5,7 @@ title: beforeCollapse
 
 @short: fires before a cell is collapsed
 
-@signature: beforeCollapse: (id: string) => boolean | void;
+@signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
 @params:
 - id		string		the id of a cell
@@ -17,7 +17,7 @@ layout.events.on("BeforeCollapse", function(id){
 });
 
 @returns:
-- result	boolean		false - to prevent a cell from being collapsed, otherwise true
+- result	boolean | void		false - to prevent a cell from being collapsed, otherwise true
 
 
 

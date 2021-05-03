@@ -5,7 +5,7 @@ title: dragCopy
 
 @short: defines that a row is copied to a target during drag-n-drop
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-grid/sources/types.d.ts)
+@signature: {'dragCopy?: boolean;'}
 
 @example: 
 var source = new dhx.TreeGrid("treegrid-source", {dragMode: "source", dragCopy: true});

@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into the list
 
-@signature: data: array;
+@signature: {'data: array;'}
 
 @example: 
 const data = [

@@ -8,7 +8,7 @@ title: hideRow
 @signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
-- rowId	string|number   the id of a row
+- rowId	string | number   the id of a row
 
 @example:
 grid.hideRow(rowId);

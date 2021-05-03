@@ -5,7 +5,7 @@ title: remove
 
 @short: unselects a previously selected item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-selection/sources/types.d.ts)
+@signature: {'remove(id?: string | number): boolean;'}
 
 @params:
 - id		string,number		optional, the id of an item

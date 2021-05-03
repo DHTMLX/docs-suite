@@ -5,7 +5,7 @@ title: menuCss
 
 @short: adds style classes to all containers of Menu controls with nested items 
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
+@signature: {'menuCss?: string;'}
 
 @example: 
 <style>

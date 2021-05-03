@@ -5,14 +5,14 @@ title: beforeHide
 
 @short: fires before hiding an item of Toolbar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
+@signature: {'beforeHide: (id: string, events: Event) => void | boolean;'}
 
 @params:
 - id 		string		the ID of a toolbar item
-- e         Event       a native event object
+- events         Event       a native event object
 
-<!-- возможно не полная информация @returns:
-- result        boolean     false - to prevent hiding of a toolbar item, otherwise - true -->
+@returns:
+- result        void | boolean     false - to prevent hiding of a toolbar item, otherwise - true -->
 
 @example:
 toolbar.events.on("BeforeHide", function(id, event){

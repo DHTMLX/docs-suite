@@ -6,7 +6,7 @@ description: description
 
 @short: sets a dataset for a tree
 
-@signature: data?: array;
+@signature: {'data?: array;'}
 
 @example: 
 var data = new dhx.TreeCollection();

@@ -5,11 +5,11 @@ title: click
 
 @short: fires after a click on a control
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
+@signature: {'click: (id: string, events: Event) => void;'}
 
 @params:
 - id 		string		the ID of a clicked control
-- e 		Event		a native event object
+- events 		Event		a native event object
 
 @example:
 ribbon.events.on("Click", function(id,e){

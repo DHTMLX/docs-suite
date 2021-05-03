@@ -5,7 +5,7 @@ title: unselect
 
 @short: unselects a selected Toolbar item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
+@signature: {'unselect(id?: string): void;'}
 
 @params:
 - id	string  optional, the id of a Toolbar item

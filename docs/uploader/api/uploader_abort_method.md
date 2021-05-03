@@ -5,11 +5,11 @@ title: abort
 
 @short: cancels the upload of a file(s)
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
+@signature: {'abort(id?: string): void;'}
 
 @params:
 
-* id	 string 		optional, the ID of a file
+- id	 string 		optional, the ID of a file
 
 @example:
 vault.uploader.abort("file_id");

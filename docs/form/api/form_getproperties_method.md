@@ -8,7 +8,6 @@ description: description
 
 @signature: {'getProperties(name?: string): { [name: string]: IFormProps } | IFormProps;'}
 
-
 @params:
 
 - name|id string optional, the name of the control or its id (if the name attribute is not defined in the config of the control)
@@ -867,7 +866,6 @@ The returned object of the **Select** control can contain the following configur
 
 The returned object of the **SimpleVault** control can contain the following configuration attributes:
 
-```todoanton не могу понять, что именно ломает движок
 <table class="webixdoc_links">
 	<tbody>
     <tr>
@@ -1261,8 +1259,6 @@ The returned object of the **TimePicker** control can contain the following conf
 		</tr>
     </tbody>
 </table>
-
-```
 
 @relatedapi: form/api/form_setproperties_method.md
 

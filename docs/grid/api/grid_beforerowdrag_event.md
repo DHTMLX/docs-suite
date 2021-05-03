@@ -5,8 +5,8 @@ title: beforeRowDrag
 
 @short: fires before dragging of a row has started
 
-@signature: beforeRowDrag: (data: object, events: MouseEvent) => void | boolean;
-	
+@signature: {'beforeRowDrag: (data: object, events: MouseEvent) => void | boolean;'}
+
 <!-- @params:
 - data		object		data object
 - e		    Event		a native event object -->

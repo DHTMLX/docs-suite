@@ -5,7 +5,7 @@ title: unlinkDropArea
 
 @short: unlinks an extra drop area from Uploader
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-uploader/sources/types.d.ts)
+@signature: {'unlinkDropArea(el?: HTMLElement | string): void;'}
 
 @params:
 

@@ -5,16 +5,15 @@ title: input
 
 @short: fires when a user enters the value of a control in the input manually
  
+@signature: {'input: (inputValue: string) => void;'}
 
 @params:
 - inputValue        string  an entered value
-
 
 @example:
 form.getItem("timepicker").events.on("Input", function(inputValue) {
     console.log("Input", inputValue);
 });
-
 
 @template: api_event
 @descr:

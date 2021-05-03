@@ -3,13 +3,9 @@ sidebar_label: addTab
 title: addTab
 ---          
 
-
 @short: adds a new tab into a tabbar
 
 @signature: {'addTab(config: ITabbarConfig, index: number): void;'}
-
-<!-- void addTab(object view,number index);
-addTab(config: ITabbarConfig, index: number): any; -->
 
 @params:
 - view 		object		an object of a tab 

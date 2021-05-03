@@ -11,7 +11,7 @@ title: beforeExpand
 - id		string		the id of a cell
 
 @returns:
-param       boolean     false - to block expanding a cell, otherwise true
+param       boolean | void     false - to block expanding a cell, otherwise true
 
 @example:
 layout.events.on("BeforeExpand", function(id){

@@ -5,7 +5,7 @@ title: setValue
 
 @short: sets the value for a SimpleVault control
 
-@signature: {'setValue(obj: FormData | IAnyObj): void;'}
+@signature: {'setValue(value): void;'}
 
 @params:
 - value     array     the value to be set  

@@ -10,7 +10,6 @@ title: setProperties
 @params:
 - properties   object      an object with the available attributes of the control and their new values
 
-
 @example:
 form.getItem("spacer").setProperties({
     height: "50px"

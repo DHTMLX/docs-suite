@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to Ribbon
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-ribbon/sources/types.d.ts)
+@signature: {'css?: string;'}
 
 @example: 
 <style>

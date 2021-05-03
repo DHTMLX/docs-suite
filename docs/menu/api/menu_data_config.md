@@ -5,12 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into Menu
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
-
-```todoapi 
-array data;
-data?: any[] | TreeCollection<any>;
-```
+@signature: {'data?: array;'}
 
 @example: 
 const menu = new dhx.Menu("menu_container", {

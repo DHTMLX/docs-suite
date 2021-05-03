@@ -5,7 +5,7 @@ title: afterHide
 
 @short: fires after a cell is hidden
 
-@signature: afterHide: (id: string) => void;
+@signature: {'afterHide: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

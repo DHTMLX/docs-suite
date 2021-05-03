@@ -5,7 +5,7 @@ title: expand
 
 @short: expands a collapsed cell
 
-```todoapi ```
+@signature: {'expand(): void;'}
 
 @example:
 layout.getCell("id").expand();

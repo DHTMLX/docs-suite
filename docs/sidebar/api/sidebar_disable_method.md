@@ -5,10 +5,10 @@ title: disable
 
 @short: disables and dims items of Sidebar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-sidebar/sources/types.d.ts)
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array	 	optional, the ID or an array of IDs of items
+- ids 		string | array	 	optional, the ID or an array of IDs of items
 
 @example:
 sidebar.disable("search");

@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether a tab is disabled
 
-@signature: isDisabled(id?: string): boolean;
+@signature: {'isDisabled(id?: string): boolean;'}
 
 @params:
 - id	string      the id of a tab

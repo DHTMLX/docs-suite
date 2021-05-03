@@ -7,7 +7,6 @@ title: beforeSend
 	
 @signature: {'beforeSend: () => boolean;'}
 
-
 @params:
 
 @returns:

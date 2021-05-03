@@ -5,11 +5,10 @@ title: disable
 
 @short: disables and dims an item(s) of Toolbar
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-toolbar/sources/types.d.ts)
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string, array		an ID or an array of IDs of items
-
+- ids 		string | array		an ID or an array of IDs of items
 
 @example:
 toolbar.disable("save_btn");

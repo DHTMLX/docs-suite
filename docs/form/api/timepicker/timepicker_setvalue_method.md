@@ -6,11 +6,10 @@ description: description
 
 @short: sets the value for a TimePicker control
 
-@signature: {'setValue(obj: FormData | IAnyObj): void;'}
+@signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
 @params:
-
-- value     Date|number|string|array|object    the value to be set for the control
+- value     Date | number | string | array | object    the value to be set for the control
 
 @example:
 // set the value as a string

@@ -5,11 +5,11 @@ title: headerCellClick
 
 @short: fires on click on a grid header cell
 
-```todoapi ```
+@signature: {'headerCellClick: (col: ICol, events: MouseEvent) => void;'}
 
 @params:
 - column		object		an object with a column configuration
-- e				Event		a native event object
+- events		Event		a native event object
 
 
 @example:

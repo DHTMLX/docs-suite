@@ -4,13 +4,12 @@ title: uploadProgress
 ---          
 
 @short: fires on each percent of files uploading
- 
+
+@signature: {'uploadProgress: (progress: number, value: ISimpleVaultValue[]) => void;'}
 
 @params:
 - progress      number      the current percent of files uploading, a number from 0 to 100
-- value     array     the current value of the control 
-
-
+- value     array     the current value of the control
 
 @example:
 form.getItem("simpleVault").events.on("UploadProgress", function(progress, value) {

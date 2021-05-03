@@ -7,9 +7,6 @@ title: getWidget
 
 @signature: getWidget(): any;
 
-<!-- object getWidget();
- getWidget(): any; -->
- 
 @returns:
 - param	object      the widget attached to Tabbar
 

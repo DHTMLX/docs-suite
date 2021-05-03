@@ -5,13 +5,11 @@ title: afterValidate
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: string | ITimeObject, isValidate: boolean) => void;'}
- 
+@signature: {'afterValidate: (value: string | ITimeObject, isValid: boolean) => void;'}
 
 @params:
 - value       string|object  the validated value
 - isValid     boolean     the result of validation
-
 
 @example:
 form.getItem("timepicker").events.on("AfterValidate", function(value, isValid) {

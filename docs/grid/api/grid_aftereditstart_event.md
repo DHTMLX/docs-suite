@@ -5,8 +5,8 @@ title: afterEditStart
 
 @short: fires after editing of a cell has started
 
-@signature: afterEditStart: (row: object, col: object, editorType: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea") => void;
-	
+@signature: {'afterEditStart: (row: object, col: object, editorType: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea") => void;'}
+
 <!-- @params:
 - row			object		an object with a row configuration
 - col		object		an object with a column configuration

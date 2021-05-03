@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Treegrid
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-grid/sources/types.d.ts)
+@signature: {'dragMode?: "target" | "both" | "source";'}
 
 @params:
 - "target" - a grid takes rows from other grids, while its rows can't be dragged out of it

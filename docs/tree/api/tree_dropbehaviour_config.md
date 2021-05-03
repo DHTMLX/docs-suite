@@ -5,7 +5,7 @@ title: dropBehaviour
 
 @short: defines the behaviour of a dragged item
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-tree/sources/types.d.ts)
+@signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 
 @example: 
 var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});

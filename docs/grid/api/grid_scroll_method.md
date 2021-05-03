@@ -5,7 +5,7 @@ title: scroll
 
 @short: scrolls a grid according to specified coordinates
 
-@signature: scroll(x?: number, y?: number): void;
+@signature: {'scroll(x?: number, y?: number): void;'}
 
 @params:
 - x		number		the X coordinate

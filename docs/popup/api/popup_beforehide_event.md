@@ -12,7 +12,7 @@ title: beforeHide
 - e						Event			the native mouse event
 
 @returns:
-- result		boolean			true to hide a popup, false to block hiding a popup
+- result		void | boolean			true to hide a popup, false to block hiding a popup
 
 @example:
 popup.events.on("BeforeHide", function(fromOuterClick,e){

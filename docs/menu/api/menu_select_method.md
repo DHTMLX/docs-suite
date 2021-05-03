@@ -5,7 +5,7 @@ title: select
 
 @short: selects a specified item of Menu
 
-@signature: todo, not found [here](https://cdn.dhtmlx.com/suite/pro/edge/types/ts-menu/sources/types.d.ts)
+@signature: {'select(id: string, unselect: boolean): void;'}
 
 @params:
 - id	string      the id of a Menu item

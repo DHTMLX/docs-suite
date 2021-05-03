@@ -9,7 +9,7 @@ title: focusChange
 
 @params:
 - focusIndex		number					the position of an item
-- id		string|number			the id of an item
+- id		string | number			the id of an item
 
 
 @example:

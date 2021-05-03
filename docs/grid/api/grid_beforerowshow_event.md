@@ -12,7 +12,7 @@ title: beforeRowShow
 
 
 @returns:
-- result	boolean		false - to prevent a row from being shown, otherwise true
+- result	boolean | void		false - to prevent a row from being shown, otherwise true
 
 @example:
 grid.events.on("BeforeRowShow", function(row){

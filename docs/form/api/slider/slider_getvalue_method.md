@@ -7,7 +7,6 @@ title: getValue
 
 @signature: {'getValue(): number[];'}
 
-
 @returns:
 param   number[]    the current value of the control
 

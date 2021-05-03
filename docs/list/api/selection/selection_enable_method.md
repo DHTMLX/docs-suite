@@ -5,7 +5,7 @@ title: enable
 
 @short: enables selection of items in List
 
-@signature: enable(): void;
+@signature: {'enable(): void;'}
 
 @example:
 list.selection.enable();
