@@ -12,7 +12,7 @@ Check [online samples for dhtmlxChart](https://docs.dhtmlx.com/suite/samples/cha
 
 ## API reference
 
-[](api/api_overview.md)
+- [](api/api_overview.md)
 
 ## Related resources
 

@@ -42,12 +42,12 @@ var data = [
 				value:  "Redo",
 				icon: "dxi dxi-redo",
 			}
-         ]
+        ]
     },
     {
     	type: "spacer"
     }
-]
+];
 ~~~
 
 A data set consists of objects with configurations of menu controls. Templates for Menu controls in JSON format are given [below](#json-format-templates).
@@ -141,7 +141,7 @@ This section will give you the idea of JSON format templates for separate Menu c
     type: "customHTML",
 	html: "<img src='../logo.svg' alt=''/>",
 	css: "custom-image"
-});
+}
 ~~~
 
 {{note You will find the full list of properties of the **customHTML** object [here](menu/api/api_customhtml_properties.md).}}

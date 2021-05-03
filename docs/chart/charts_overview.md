@@ -45,7 +45,7 @@ how the number of staff has increased over several years. Choose this variant wh
 Bar and X-Bar chart
 ---------------------
 
-The same as Line chart it displays data for certain periods. It greatly suits you if there are **less then 10 items** in your data set.
+The same as Line chart it displays data for certain periods. It greatly suits you if there are **less than 10 items** in your data set.
 
 ### Bar chart
 
