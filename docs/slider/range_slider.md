@@ -25,9 +25,8 @@ var slider = new dhx.Slider("slider", {
 The same as the default slider, a slider in the range mode works smoothly both in the horizontal and vertical modes, as well as in the inverse mode.
 You can manipulate the scale settings by adjusting the ticks-related options and use labels for its thumbs. 
 
-``` todo ссылка пустая
-In short, the full set of [Slider configuration properties](slider/configuring_slider.md) can be applied to the range slider. All the standard [Slider API]() is supported.
-```
+In short, the full set of [Slider configuration properties](slider/configuring_slider.md) can be applied to the range slider. All the standard [Slider API](slider/api/api_overview.md) is supported.
+
 
 ## API specificity
 

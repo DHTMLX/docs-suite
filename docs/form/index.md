@@ -11,7 +11,7 @@ Check [online samples for dhtmlxForm](https://docs.dhtmlx.com/suite/samples/form
 
 ## API reference
 
-- form/api/refs/form.md
+- [](api/api_overview.md)
 
 ## Related resources
 
@@ -21,13 +21,12 @@ Check [online samples for dhtmlxForm](https://docs.dhtmlx.com/suite/samples/form
 ## Guides
 
 ### Working with Form
+
 Guides you through common information you may need while working with Form.
 
-
-- [](form/how_to_start.md) 		    
-- [](form/controls_list.md)
-- [](form/localization.md)
-- [](form/configuration.md)
+- [](how_to_start.md) 		    
+- [](localization.md)
+- [](configuration.md)
 - [](form/work_with_form.md)
 - [](form/customization.md)
 - [](form/handling_events.md)

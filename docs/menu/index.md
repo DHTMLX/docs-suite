@@ -28,3 +28,4 @@ You can read the following articles to find out how to add Menu on the page and 
 - [](menu/creating_context_menu.md)
 - [](menu/fa_icons.md)                 
 - [](menu/handling_events.md)   
+

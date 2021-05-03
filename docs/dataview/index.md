@@ -13,7 +13,7 @@ Check [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/
 
 ## API reference
 
-- [](dataview/api/api_overview.md)
+- [](api/api_overview.md)
 
 
 ## Related resources
@@ -25,13 +25,13 @@ Check [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/
 
 You can read the following articles to find out how to add DataView on the page and work with it.
 
-- [](dataview/initialization.md)
-- [](dataview/configuration.md)
-- [](dataview/data_loading.md)              
-- [](dataview/manipulating_data.md) 
-- [](dataview/usage_selection.md)         	
-- [](dataview/customization.md)	
-- [](dataview/events.md)   
+- [](initialization.md)
+- [](configuration.md)
+- [](data_loading.md)              
+- [](manipulating_data.md) 
+- [](usage_selection.md)         	
+- [](customization.md)	
+- [](events.md)   
 
 ## Other
 

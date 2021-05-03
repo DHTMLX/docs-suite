@@ -11,7 +11,7 @@ It allows you to arrange multiple objects with similar properties within a singl
 
 ## API reference
 
-- list/api/refs/list.md
+- [](api/api_overview.md)
 
 ## Related resources
 
@@ -30,4 +30,4 @@ It allows you to arrange multiple objects with similar properties within a singl
 
 ## Other
 
--[](migration.md)
+- [](../migration.md)
