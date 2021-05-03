@@ -21,9 +21,10 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	]
 });
 
-
-@template:	api_config
 @descr: 
+
+### Details
+
 This is the **default** array of colors of the ColorPicker:
 
 ~~~js

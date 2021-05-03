@@ -18,4 +18,4 @@ combo.clear();
 
 @changelog:
 
-@related: combo/work_with_combo.md#clearinginput
+@related: combobox/work_with_combo.md#clearinginput

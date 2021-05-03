@@ -40,4 +40,4 @@ var combo = new dhx.Combobox("combo_container",{
 
 @changelog: added in v6.4
 
-@related: combo/how_to_start.md#initialize-combobox	
+@related: combobox/how_to_start.md#initialize-combobox	

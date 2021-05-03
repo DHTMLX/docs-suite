@@ -16,6 +16,6 @@ var combo = new dhx.Combobox("combo_container", {
 @template:	api_config
 @descr: 
 
-@related: combo/how_to_start.md#initialize-combobox
-combo/configuration.md#selectionofmultipleoptions
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#selection-of-multiple-options
 

@@ -24,5 +24,5 @@ var chart = new dhx.Chart("chart_container",{
 - "radar"
 
 @related:
-chart/configuration_properties.md#mainproperties
+chart/configuration_properties.md#main-properties
 chart/charts_overview.md

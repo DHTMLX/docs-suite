@@ -1,4 +1,4 @@
----
+box---
 sidebar_label: isDisabled
 title: isDisabled
 ---          
@@ -22,7 +22,7 @@ combobox.isDisabled(); // -> returns true/false
 @template: api_method
 @descr:
 
-@related: combo/work_with_combo.md#checkingifacomboboxisdisabled
+@related: combobox/work_with_combo.md#checkingifacomboboxisdisabled
 
 **Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 

@@ -15,7 +15,7 @@ var combo = new dhx.Combobox("combo_container",{
 @template:	api_config
 @descr: 
 
-@related: combo/how_to_start.md#initialize-combobox
-combo/configuration.md#placeholder
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#placeholder
 
 **Related sample**: [Combobox. Placeholder](https://snippet.dhtmlx.com/759z23gh)

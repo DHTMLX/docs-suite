@@ -14,12 +14,10 @@ combo.focus();
 @template: api_method
 @descr:
 
-@related: combo/work_with_combo.md#settingfocus
+@related: combobox/work_with_combo.md#settingfocus
 
 
 **Related sample**:
 - [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
-
-@changelog:
 
 

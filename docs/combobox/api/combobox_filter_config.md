@@ -24,5 +24,5 @@ var combo = new dhx.Combobox("combo_container", {
 **Related sample**:
 - [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
 
-@related: combo/how_to_start.md#initialize-combobox
-combo/customization.md#customfilterforoptions
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/customization.md#customfilterforoptions

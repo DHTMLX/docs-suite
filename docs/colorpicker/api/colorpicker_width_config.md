@@ -19,5 +19,5 @@ var colorpicker = new dhx.Colorpicker("colorpicker", {
 @descr: 
 
 @related: colorpicker/how_to_start.md#initialize-colorpicker
-colorpicker/configuration.md#widthofcolorpicker
+colorpicker/configuration.md#width-of-colorpicker
 
