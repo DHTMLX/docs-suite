@@ -2959,6 +2959,13 @@ module.exports = {
         items: [
           "optimus_guides/index",
           "optimus_guides/how_to_start_optimus",
+          "optimus_guides/filemanager_demo",
+          "optimus_guides/dashboard_demo",
+          "optimus_guides/hotelms_demo",
+          "optimus_guides/geotracking_demo",
+          "optimus_guides/kpisystem_demo",
+          "optimus_guides/hospitalms_demo",
+          "optimus_guides/examsystem_demo",
         ],
       },
     ],
