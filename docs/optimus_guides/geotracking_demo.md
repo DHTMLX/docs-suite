@@ -1,6 +1,6 @@
 ---
-sidebar_label: Geo tracking demo
-title: Geo tracking demo
+sidebar_label: Geo Tracking Demo
+title: Geo Tracking Demo
 --- 
 
 ![](../assets/optimus/demo/geotracking_demo.png)
@@ -17,7 +17,7 @@ Click the Download Demo button at the right bottom corner.
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the UI Dashboard demo. Save the file and unpack it to your working directory.
+Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the Geo Tracking demo. Save the file and unpack it to your working directory.
 
 ## How to start
 

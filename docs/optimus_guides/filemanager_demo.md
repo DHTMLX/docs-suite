@@ -1,11 +1,11 @@
 ---
-sidebar_label: File manager demo
-title: File manager demo
+sidebar_label: File Manager Demo
+title: File Manager Demo
 --- 
 
 ![](../assets/optimus/demo/filemanager_demo.png)
 
-This demo application shows how to create a Material-style file explorer app based on DHTMLX Suite widgets: Grid, Tree, Layout, DataView, Toolbar, Sidebar, Menu, Form, and Tabbar.
+This demo application shows how to create a Material-style file manager app based on DHTMLX Suite widgets: Grid, Tree, Layout, DataView, Toolbar, Sidebar, Menu, Form, and Tabbar.
 
 ## How to download
 
@@ -15,7 +15,7 @@ The Download Demo button on both pages will start downloading process of the dem
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the Hotel Management System demo. Save the file and unpack it to your working directory.
+Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the File Manager demo. Save the file and unpack it to your working directory.
 
 ## How to start
 
@@ -23,7 +23,7 @@ Follow the instruction in the README.md file to run the demo.
 
 ## Demo overview
 
-The File Manager demo is a very usable solution to work with files of any size. You can easily integrate the demo with your project and modify it for your purposes.
+The File Manager demo is a very usable solution to work with files of any size. You can easily integrate the demo into your project and modify it according to your needs.
 
 We used the DHTMLX Optimus framework to create the File manager demo. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
 
