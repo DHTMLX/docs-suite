@@ -18,7 +18,7 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wk50830i	Sidebar. Spacer}}
+**Related sample**: [Sidebar. Spacer](https://snippet.dhtmlx.com/wk50830i)
 
 ### Properties
 

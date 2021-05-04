@@ -29,7 +29,7 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x0qpt7pk	Sidebar. Basic Initialization}}
+**Related sample**: [Sidebar. Basic Initialization](https://snippet.dhtmlx.com/x0qpt7pk)
 
 Include source files
 --------------------
@@ -67,7 +67,7 @@ var sidebar = new dhx.Sidebar("sidebar_container",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x0qpt7pk	Sidebar. Basic Initialization}}
+**Related sample**: [Sidebar. Basic Initialization](https://snippet.dhtmlx.com/x0qpt7pk)
 
 ### Configuration properties
 
@@ -85,7 +85,7 @@ var sidebar = new dhx.Sidebar("sidebar_container");
 sidebar.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/mq4ggjmm	Sidebar. Init Load}}
+**Related sample**: [Sidebar. Init Load](https://snippet.dhtmlx.com/mq4ggjmm)
 
 - from a local source using the **parse()** method of tree collection:
 

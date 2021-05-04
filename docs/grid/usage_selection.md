@@ -66,7 +66,7 @@ var column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 {{note The **multiselection** property is disabled.}}
 
@@ -89,7 +89,7 @@ grid.selection.setCell(grid.data.getId(1),"netChange", true, false);
 grid.selection.setCell(grid.data.getId(3),"netChange", true, false);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 It is also possible to select a range of cells at once:
 
@@ -102,7 +102,7 @@ grid.selection.setCell(grid.data.getId(1),"yearlyChange");
 grid.selection.setCell(grid.data.getId(3),"destiny", false, true);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 {{note Use the **selection:"rows"** property to be able to operate rows. }}
 

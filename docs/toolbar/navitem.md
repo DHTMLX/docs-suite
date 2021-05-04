@@ -7,7 +7,7 @@ This is a default control for navigation-related components, can contain any oth
 
 ![](../assets/toolbar/navitem.png)
 
-{{editor	https://snippet.dhtmlx.com/os48cj6x	Toolbar. Nav Item}}
+**Related sample**: [Toolbar. Nav Item](https://snippet.dhtmlx.com/os48cj6x)
 
 ## Adding NavItem
 
@@ -57,7 +57,7 @@ You can add any custom HTML content to a navItem with the help of the **html** p
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5n2b8x84	Toolbar. Item HTML Content}}
+**Related sample**: [Toolbar. Item HTML Content](https://snippet.dhtmlx.com/5n2b8x84)
 
 ## Showing/hiding a navItem
 
@@ -68,7 +68,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Enabling/disabling a navItem 
 
@@ -79,7 +79,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 
@@ -93,7 +93,7 @@ You can add a tooltip to a navItem:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
 ## Two state NavItems
 
@@ -108,7 +108,7 @@ You can create navItems with two states: active (pressed) and inactive (unpresse
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pj4eqw0	Toolbar. Two State}}
+**Related sample**: [Toolbar. Two State](https://snippet.dhtmlx.com/1pj4eqw0)
 
 ### Changing state of a two state navItem on the fly
 

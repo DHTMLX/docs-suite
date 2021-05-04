@@ -15,7 +15,7 @@ tree.events.on("ItemClick", function(id, e){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor	https://snippet.dhtmlx.com/vux1ye9g	Tree. Events}}
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 ## Detaching event listeners
 

@@ -7,9 +7,9 @@ An input that represents an advanced select box with a set of options. It is abl
 
 ![Combo control](../assets/form/form_combo.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/wla7u1xq	Form. Combo}}
+**Related sample**: [Form. Combo](https://snippet.dhtmlx.com/wla7u1xq)
 
 ## Adding Combo
 

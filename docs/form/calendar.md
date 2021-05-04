@@ -7,9 +7,9 @@ An input with a calendar attached to it for selecting a date.
 
 ![DatePicker](../assets/form/form_datepicker.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/q3yk7e6s	Form. DatePicker}}
+**Related sample**: [Form. DatePicker](https://snippet.dhtmlx.com/q3yk7e6s)
 
 ## Adding DatePicker
 
@@ -66,4 +66,4 @@ var datepicker = form.getItem("datepicker").getWidget();  // -> dhtmlxCalendar
 datepicker.showDate(null,"month"); // shows the current month
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control}}
+**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)

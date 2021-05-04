@@ -31,7 +31,7 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/scq85iip	Timepicker. Basic Initialization}}
+**Related sample**: [Timepicker. Basic Initialization](https://snippet.dhtmlx.com/scq85iip)
 
 
 Include source files

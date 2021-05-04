@@ -64,7 +64,7 @@ var list = new dhx.List("list_container", {
 
 Read more about multiselection in List [below](#multipleselectionofitems).
 
-{{editor	https://snippet.dhtmlx.com/yfz6ai7j	List. Setup Drag Mode}}
+**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
 
 Dynamic rendering of items
 ----------------
@@ -80,14 +80,14 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x4gxy38e	List. Virtual List}}
+**Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)
 
 Editing items
 ----------------
 
 ![](../assets/list/editable.png)
 
-{{editor	https://snippet.dhtmlx.com/f26lfcai	List. Editable List}}
+**Related sample**: [List. Editable List](https://snippet.dhtmlx.com/f26lfcai)
 
 You can enable the possibility to edit List items with the help of the [](list/api/list_editable_config.md) configuration option:
 
@@ -102,7 +102,7 @@ Height of an item
 ![](../assets/list/item_height.png)
 
 
-{{editor	https://snippet.dhtmlx.com/89buovn2	List. Setup List Item Height}}
+**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)
 
 You can specify the necessary height of an item and set it before initialization of List via the [itemHeight](list/api/list_itemheight_config.md) property either as a number:
 
@@ -132,7 +132,7 @@ Height of the List
 
 ![](../assets/list/list_height.png)
 
-{{editor	https://snippet.dhtmlx.com/k2mj2sz7	List. Setup List Height}}
+**Related sample**: [List. Setup List Height](https://snippet.dhtmlx.com/k2mj2sz7)
 
 You can define the desired height of a list via the [height](list/api/list_height_config.md) configuration option as easy as that:
 
@@ -153,7 +153,7 @@ Multiple selection of items
 
 ![](../assets/list/multiselection.png)
 
-{{editor	https://snippet.dhtmlx.com/0sorkczm	List. List Multiselection}}
+**Related sample**: [List. List Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
 By default, you can select only one item in a list, since selection of another item resets selection of the previous one. To enable the possibility to select several List items, make use of the 
 [](list/api/list_multiselection_config.md) configuration option:
@@ -190,7 +190,7 @@ Template for List items
 
 ![](../assets/list/list_template.png)
 
-{{editor	https://snippet.dhtmlx.com/gtzdwpj4	List. Add Template To List Item}}
+**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
 
 You can define a template for rendering items in a List with the help of the [](list/api/list_template_config.md) configuration property. Set as its value a function that takes one parameter:
 

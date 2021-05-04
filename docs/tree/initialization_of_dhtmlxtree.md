@@ -31,7 +31,7 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
 Include source files
 --------------------
@@ -107,7 +107,7 @@ var tree = new dhx.Tree("tree_container",{
 tree.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
 - to load data from an external file, use the **load()** method of the Tree Collection object:
 
@@ -119,4 +119,4 @@ var tree = new dhx.Tree("tree_container",{
 tree.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)

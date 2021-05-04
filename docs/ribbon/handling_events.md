@@ -37,7 +37,7 @@ Several handlers can be attached to one and the same event, and all of them will
 The names of the events are case-insensitive.
 }}
 
-{{editor	https://snippet.dhtmlx.com/i7cfddkl	Ribbon. Events}}
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
 ## Detaching event handlers 
 

@@ -30,7 +30,7 @@ To add dhtmlxForm into an application, you need to take the following simple ste
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
+**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
 
 Include source files
 --------------------
@@ -136,7 +136,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
+**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
 
 ### Configuration properties
 

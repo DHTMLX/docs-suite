@@ -16,7 +16,7 @@ var combo = new dhx.Combobox("combo_container",{
 
 ![](../assets/combo/disabled.png)
 
-{{editor    https://snippet.dhtmlx.com/ductsm0f	Combobox. Disabled}}
+**Related sample**: [Combobox. Disabled](https://snippet.dhtmlx.com/ductsm0f)
 
 Dynamic rendering of options
 ---------------------
@@ -30,14 +30,14 @@ var combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/5srwualw	Combobox. Virtual List}}
+**Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)
 
 Height of list of options and its items
 ----------------
 
 ![](../assets/combo/height.png)
 
-{{editor    https://snippet.dhtmlx.com/vilg4l7w	Combobox. List Height}}
+**Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)
 
 There are two useful options to adjust the height of the list of options and the height of a separate item of this list: [](combobox/api/combobox_listheight_config.md) and [](combobox/api/combobox_itemheight_config.md):
 
@@ -121,14 +121,14 @@ var combo = new dhx.Combobox("combo_container",{
 
 ![](../assets/combo/label_top.png)
 
-{{editor    https://snippet.dhtmlx.com/2936fray	Combobox. Label Position}}
+**Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)
 
 Number of selected options
 --------------------
 
 ![](../assets/combo/selected_item.png)
 
-{{editor    https://snippet.dhtmlx.com/fw2u2bww	Combobox. Items Count}}
+**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
 
 Instead of showing all selected options separately in the ComboBox input, you can group them and display just the number of selected options. For this, you should use the [](combobox/api/combobox_itemscount_config.md) property. 
 
@@ -164,7 +164,7 @@ Placeholder
 
 ![](../assets/combo/placeholder.png)
 
-{{editor    https://snippet.dhtmlx.com/759z23gh	Combobox. Placeholder}}
+**Related sample**: [Combobox. Placeholder](https://snippet.dhtmlx.com/759z23gh)
 
 To add some placeholder into the ComboBox input, apply the [](combobox/api/combobox_placeholder_config.md) property:
 
@@ -179,7 +179,7 @@ Readonly mode
 
 ![](../assets/combo/readonly.png)
 
-{{editor    https://snippet.dhtmlx.com/igjsuf7y	Combobox. Readonly}}
+**Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
 
 If needed, you can make ComboBox readonly via the [](combobox/api/combobox_readonly_config.md) property, so that it will be impossible to enter text in the input. In this case a user will only be able to select options from the popup list.
 
@@ -215,7 +215,7 @@ var combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ui7pi7ty	Combobox. Select All Button}}
+**Related sample**: [Combobox. Select All Button](https://snippet.dhtmlx.com/ui7pi7ty)
 
 
 Template for ComboBox options
@@ -223,7 +223,7 @@ Template for ComboBox options
 
 ![](../assets/combo/combo_template.png)
 
-{{editor    https://snippet.dhtmlx.com/z7cpj76i	Combobox. Template}}
+**Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
 
 You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string 
 with a template for rendering options in the list.

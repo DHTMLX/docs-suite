@@ -7,7 +7,7 @@ This is an item that contains some text.
 
 ![](../assets/toolbar/title.png)
 
-{{editor	https://snippet.dhtmlx.com/dwynhb7o	Toolbar. Title}}
+**Related sample**: [Toolbar. Title](https://snippet.dhtmlx.com/dwynhb7o)
 
 ## Adding Title control
 
@@ -33,7 +33,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Adding a tooltip
 
@@ -47,4 +47,4 @@ You can add a tooltip to a Title control:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)

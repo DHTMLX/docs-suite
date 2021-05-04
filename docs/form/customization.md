@@ -30,7 +30,7 @@ var form = new dhx.Form({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wnscgb50	Form. Form Custom Styles}}
+**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
 
 
 ## Styling Form controls
@@ -66,4 +66,4 @@ var form = new dhx.Form("form-sample", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wnscgb50	Form. Form Custom Styles}}
+**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)

@@ -17,7 +17,7 @@ slider.events.on("Change", function(newValue, oldValue, isRange){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor	https://snippet.dhtmlx.com/sc7ov54z	Slider. Slider Events}}
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
 
 ## Detaching event listeners
 

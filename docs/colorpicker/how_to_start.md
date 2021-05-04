@@ -33,7 +33,7 @@ In general, to create dhtmlxColorPicker on a page, you need to take the followin
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ezk8rk4m	Colorpicker. Basic Initialization}}
+**Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
   
 Include source files 
 -----------------------
@@ -73,7 +73,7 @@ var colorpicker = new dhx.ColorPicker("colorpicker_container",{
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ezk8rk4m	Colorpicker. Basic Initialization}}
+**Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
 
 ### Initialization in a popup
@@ -107,7 +107,7 @@ colorpicker.events.on("colorChange", function (color) {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/kw3e0h4j	Colorpicker. Colorpicker Inside Popup}}
+**Related sample**: [Colorpicker. Colorpicker Inside Popup](https://snippet.dhtmlx.com/kw3e0h4j)
 
 ### Configuration properties
 
@@ -125,4 +125,4 @@ var colorpicker = new dhx.ColorPicker({
 colorpicker.setValue("#BDF0E9");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/h6oc5qsq	Colorpicker. Set Value}}
+**Related sample**: [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)

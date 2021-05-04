@@ -35,7 +35,7 @@ var id = list.selection.getId(); // -> "2"
 list.selection.add("2");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/io8oxxg2	List. Set Selection}}
+**Related sample**: [List. Set Selection](https://snippet.dhtmlx.com/io8oxxg2)
 
 Starting from v7.0, the method selects all unselected items when calling without parameters:
 
@@ -67,7 +67,7 @@ You can get the id of the currently selected item with the **getId()** method of
 var selected = list.selection.getId(); // -> "2"
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/elonnovx	List. Get Selection}}
+**Related sample**: [List. Get Selection](https://snippet.dhtmlx.com/elonnovx)
 
 Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](list/api/list_multiselection_config.md) property of List is enabled.
 

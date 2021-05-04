@@ -26,7 +26,7 @@ sidebar.hide(id); // hides a control
 sidebar.show(id); // shows a control
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5hsowdoy	Sidebar. Show/Hide}}
+**Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
 
 Starting from v7.0, it is possible to hide/show all Sidebar controls on the page at once by using the methods without parameters:
 
@@ -47,7 +47,7 @@ sidebar.expand(); // expands a sidebar
 sidebar.collapse(); // collapses a sidebar
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ydlltdq6	Sidebar. Collapse/Expand}}
+**Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
 
 Checking if Sidebar is collapsed
 ------------------------------
@@ -69,7 +69,7 @@ sidebar.disable(id); // disables a control
 sidebar.enable(id);  // enables a control
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable}}
+**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
 Starting from v7.0, it is possible to disable/enable all Sidebar controls on the page at once by using the methods without parameters:
 
@@ -98,7 +98,7 @@ To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/
 sidebar.isDisabled("1"); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable}}
+**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
 Selecting/Unselecting an item
 -----------------------------------------
@@ -183,7 +183,7 @@ You can collapse and expand a sidebar with the help of the [toggle()](sidebar/ap
 sidebar.toggle();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wll2h9nd	Sidebar. Toggle}}
+**Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
 
 Using Tree collection API
@@ -226,7 +226,7 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jcnw95ac	Sidebar. Data Add}}
+**Related sample**: [Sidebar. Data Add](https://snippet.dhtmlx.com/jcnw95ac)
 
 Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#jsonformattemplates).
 
@@ -255,7 +255,7 @@ sidebar.data.update("add", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/p1zu63le	Sidebar. Data Update}}
+**Related sample**: [Sidebar. Data Update](https://snippet.dhtmlx.com/p1zu63le)
 
 ### Removing controls from Sidebar
 
@@ -265,7 +265,7 @@ To remove a control, make use of the **remove()** method of Tree Collection. Pas
 sidebar.data.remove("control-id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ecp3etuf	Sidebar. Data Remove}}
+**Related sample**: [Sidebar. Data Remove](https://snippet.dhtmlx.com/ecp3etuf)
 
 ### Rearranging controls
 

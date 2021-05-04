@@ -10,7 +10,7 @@ There is a possibility to make changes in the look and feel of a tree.
 
 ![](../assets/tree/custom_style.png)
 
-{{editor	https://snippet.dhtmlx.com/ocv4p7zg	Tree. Custom Styles}}
+**Related sample**: [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
 
 For this you need to take the following steps:
 
@@ -63,7 +63,7 @@ Changing icons
 
 ![](../assets/tree/custom_icons.png)
 
-{{editor	https://snippet.dhtmlx.com/lpsgn3j7	Tree. Custom Icons}}
+**Related sample**: [Tree. Custom Icons](https://snippet.dhtmlx.com/lpsgn3j7)
 
 
 You can change the default icons used for tree items. dhtmlxTree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 

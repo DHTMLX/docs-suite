@@ -62,7 +62,7 @@ You can load data to a menu from an array with the **parse()** method of TreeCol
 menu.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cg62qa9v	Menu. Basic Initialization}}
+**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
 Loading from an external file
 ------------------
@@ -73,7 +73,7 @@ The **load** method of Tree Collection loads menu data from an external JSON fil
 menu.data.load("[path to this file]/file.json");
 ~~~	
 
-{{editor	https://snippet.dhtmlx.com/cg62qa9v	Menu. Basic Initialization}}
+**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 	
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 

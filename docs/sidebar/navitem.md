@@ -18,7 +18,7 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/potv580p	Sidebar. Navigation Items}}
+**Related sample**: [Sidebar. Navigation Items](https://snippet.dhtmlx.com/potv580p)
 
 ### Properties
 
@@ -58,7 +58,7 @@ You can add any custom HTML content to a navItem with the help of the **html** p
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xb6av4qj	Sidebar. Item HTML Content}}
+**Related sample**: [Sidebar. Item HTML Content](https://snippet.dhtmlx.com/xb6av4qj)
 
 ## Showing/hiding a navItem
 

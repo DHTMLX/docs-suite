@@ -19,7 +19,7 @@ ribbon.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jjnzc3ng	Ribbon. Input}}
+**Related sample**: [Ribbon. Input](https://snippet.dhtmlx.com/jjnzc3ng)
 
 ### Properties
 

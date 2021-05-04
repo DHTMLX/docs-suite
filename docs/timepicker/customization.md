@@ -10,7 +10,7 @@ There is a possibility to make changes in the look and feel of a timepicker.
 
 ![](../assets/timepicker/custom_style.png)
 
-{{editor	https://snippet.dhtmlx.com/n4xfu4e9	Timepicker. Custom Style}}
+**Related sample**: [Timepicker. Custom Style](https://snippet.dhtmlx.com/n4xfu4e9)
 
 For this you need to take the following steps:
 

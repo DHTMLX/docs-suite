@@ -32,7 +32,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xm8e84s2	Slider. Inverse Mode Of The Slider}}
+**Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)
 
 
 Minimal and maximal values
@@ -64,7 +64,7 @@ var slider = new dhx.Slider("slider", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/nfdr84oy	Slider. Range Mode Of The Slider}}
+**Related sample**: [Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
 There are more details given in the [](slider/range_slider.md) article.
 
@@ -89,9 +89,9 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jsfxnplp	Slider. Custom Scale}}
+**Related sample**: [Slider. Custom Scale](https://snippet.dhtmlx.com/jsfxnplp)
 
-{{editor	https://snippet.dhtmlx.com/4a6l7cyy	Slider. Slider With A Scale}}
+**Related sample**: [Slider. Slider With A Scale](https://snippet.dhtmlx.com/4a6l7cyy)
 
 ### Showing only the first and the last ticks
 
@@ -131,7 +131,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4o7yttam	Slider. Slider Label}}
+**Related sample**: [Slider. Slider Label](https://snippet.dhtmlx.com/4o7yttam)
 
 Step  
 -----------------
@@ -159,7 +159,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sxh66mnu	Slider. Tooltip For The Slider}}
+**Related sample**: [Slider. Tooltip For The Slider](https://snippet.dhtmlx.com/sxh66mnu)
 
 Vertical mode
 ---------------
@@ -172,7 +172,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/rjborkca	Slider. Vertical Mode Of The Slider}}
+**Related sample**: [Slider. Vertical Mode Of The Slider](https://snippet.dhtmlx.com/rjborkca)
 
 
 

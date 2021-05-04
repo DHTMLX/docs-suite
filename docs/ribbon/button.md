@@ -9,7 +9,7 @@ This is a simple button that can have an icon. Button can be *twoState* and can 
 
 ![](../assets/ribbon/ribbon_button.png)
 
-{{editor	https://snippet.dhtmlx.com/nlviu82g	Ribbon. Group Buttons}}
+**Related sample**: [Ribbon. Group Buttons](https://snippet.dhtmlx.com/nlviu82g)
 
 ## Creating Buttons
 
@@ -92,7 +92,7 @@ You can add a number badge to the button to display information like the number 
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/trli6sq7	Ribbon. Buttons}}
+**Related sample**: [Ribbon. Buttons](https://snippet.dhtmlx.com/trli6sq7)
 
 ## Styling buttons
 

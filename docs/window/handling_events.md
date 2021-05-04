@@ -15,7 +15,7 @@ dhxWindow.events.on("Move", function(left,top){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor	https://snippet.dhtmlx.com/jfu4upwd	Window. Events}}
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 ## Detaching event listeners
 

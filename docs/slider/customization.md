@@ -34,5 +34,5 @@ var slider = new dhx.Slider({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ewizud5e	Slider. Custom Colors}}
+**Related sample**: [Slider. Custom Colors](https://snippet.dhtmlx.com/ewizud5e)
 

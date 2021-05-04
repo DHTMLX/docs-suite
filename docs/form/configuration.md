@@ -39,7 +39,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 The tables below demonstrate using the possible values for the **align** property in Form:
 
@@ -100,7 +100,7 @@ Grouping Controls in Form
 
 ![](../assets/form/blocks.png)
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md) options in the configuration object of the component:
 
@@ -139,7 +139,7 @@ Making Form disabled
 
 ![](../assets/form/disabled.png)
 
-{{editor	https://snippet.dhtmlx.com/7qjwg2sw	Form. Disabled}}
+**Related sample**: [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
 
 
 By default, Form is enabled. To make Form disabled, set the [](form/api/form_disabled_config.md) configuration property to *true*:
@@ -196,7 +196,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 Title
 ----------
@@ -231,7 +231,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 Width/Height
 ---------------
@@ -270,7 +270,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 
 

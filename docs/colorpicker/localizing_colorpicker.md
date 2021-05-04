@@ -45,4 +45,4 @@ dhx.i18n.setLocale("colorpicker", de);
 var colorpicker = new dhx.ColorPicker();
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/l870h1gh	Colorpicker. Localization}}
+**Related sample**: [Colorpicker. Localization](https://snippet.dhtmlx.com/l870h1gh)

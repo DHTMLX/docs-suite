@@ -31,7 +31,7 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7rjmp5ol	Dataview. Basic Initialization}}
+**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
 
 Include source files
 --------------------
@@ -101,5 +101,5 @@ var dataview = new dhx.DataView("dataview_container",{
 dataview.data.load("../common/dataset.json");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7rjmp5ol	Dataview. Basic Initialization}}
+**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
 

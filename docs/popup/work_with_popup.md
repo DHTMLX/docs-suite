@@ -42,7 +42,7 @@ This is how you can hide a popup:
 popup.hide();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/aqzy536h	Popup. Show/Hide}}
+**Related sample**: [Popup. Show/Hide](https://snippet.dhtmlx.com/aqzy536h)
 
 Checking visibility of Popup
 --------------
@@ -53,7 +53,7 @@ You can easily check whether a popup is visible with the help of the [isVisible(
 popup.isVisible(); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/f614sdm3	Popup. Is Visible}}
+**Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
 Attaching content
 ------------
@@ -66,7 +66,7 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ajv5qqxq	Popup. Html Content}}
+**Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 Attaching DHTMLX components
 --------------
@@ -93,5 +93,5 @@ popup.attach("Timepicker");
 popup.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7x6hlbqx	Popup. Attach Timepicker}}
+**Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
 

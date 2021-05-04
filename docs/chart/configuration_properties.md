@@ -54,7 +54,7 @@ var chart = new dhx.Chart("chart", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/6917eudu	Chart. Max Points}}
+**Related sample**: [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
 
 Scales
 -------------

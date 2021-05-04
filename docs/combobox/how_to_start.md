@@ -28,7 +28,7 @@ This article gives you detailed instructions on how to create dhtmlxCombo on a p
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/69jnq5cn	Combobox. Basic Initialization}}
+**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
 
 Include source files
 ----------------
@@ -65,7 +65,7 @@ To initialize dhtmlxComboBox, you should use the `dhx.Combobox` constructor. The
 var combo = new dhx.Combobox("combo_container", {// config options});
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/69jnq5cn	Combobox. Basic Initialization}}
+**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
 
 ### Configuration properties
 
@@ -109,7 +109,7 @@ var combo = new dhx.Combobox("combo_container");
 combo.data.parse(countries);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/69jnq5cn	Combobox. Basic Initialization}}
+**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
 
 Detailed information on loading data into ComboBox is given in the [](combobox/adding_options.md) article .
 

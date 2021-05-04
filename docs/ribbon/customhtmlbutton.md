@@ -7,7 +7,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ![](../assets/ribbon/custom_html.png)
 
-{{editor	https://snippet.dhtmlx.com/c0i0q3cu	Ribbon. Custom HTML}}
+**Related sample**: [Ribbon. Custom HTML](https://snippet.dhtmlx.com/c0i0q3cu)
 
 Adding Custom HTML
 -----------------
@@ -21,7 +21,7 @@ ribbon.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/c0i0q3cu	Ribbon. Custom HTML}}
+**Related sample**: [Ribbon. Custom HTML](https://snippet.dhtmlx.com/c0i0q3cu)
 
 ### Properties
 

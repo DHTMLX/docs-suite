@@ -36,7 +36,7 @@ var dataset = [
 ];
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/w3p07d6s	Grid. Large Dataset}}
+**Related sample**: [Grid. Large Dataset](https://snippet.dhtmlx.com/w3p07d6s)
 
 Each object in the data set contains configuration of a grid row. The structure of a row is rather flexible. It may include:
 
@@ -65,7 +65,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/luh8d0vv	Grid. Basic Initialization}}
+**Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
 
 
 External data loading
@@ -98,7 +98,7 @@ var grid = new dhx.Grid("grid_container");
 grid.data.parse(dataset);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/svkb27d5	Grid. External Data Loading}}
+**Related sample**: [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
 
 Saving and restoring state
 ----------------------------
@@ -143,6 +143,6 @@ var grid = new dhx.Grid("grid_container");
 grid.data.load(lazyDataProxy);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/grid_lazy_loading	External data lazy load}}
+**Related sample**: [External data lazy load](https://snippet.dhtmlx.com/grid_lazy_loading)
 
 {{note The add, remove, copy, move, update, changeId, sort and filter methods of Data Collection will not work until all data are loaded into Grid.}}

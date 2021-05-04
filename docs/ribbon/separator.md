@@ -17,7 +17,7 @@ ribbon.data.add({
 });
 ~~~
 
-{{editor	 https://snippet.dhtmlx.com/wqhahyw8	Ribbon. Separator}}
+**Related sample**: [Ribbon. Separator](https://snippet.dhtmlx.com/wqhahyw8)
 
 ### Properties
 

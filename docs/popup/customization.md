@@ -35,4 +35,4 @@ var dhxPopup = new dhx.Popup({
 popup.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/rd8zfw5h	Popup. Custom Css}}
+**Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)

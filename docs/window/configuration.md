@@ -20,7 +20,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/d1nbhada	Window. Closable Window}}
+**Related sample**: [Window. Closable Window](https://snippet.dhtmlx.com/d1nbhada)
 
 Custom node
 ------------------
@@ -33,7 +33,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/2rrclo09	Window. Window Container}}
+**Related sample**: [Window. Window Container](https://snippet.dhtmlx.com/2rrclo09)
 
 {{note If no HTML container is specified, the window will be placed in the body.}}
 
@@ -50,7 +50,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qu5j85ag	Window. Window With Footer}}
+**Related sample**: [Window. Window With Footer](https://snippet.dhtmlx.com/qu5j85ag)
 
 By default a footer is initialized with no controls. To add a control into the footer, you need to manipulate the [](window/api/window_footer_config.md) object of the toolbar. Follow the instructions given in the [](window/customization.md) article.
 
@@ -68,7 +68,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ioejsm4e	Window. Modal Window}}
+**Related sample**: [Window. Modal Window](https://snippet.dhtmlx.com/ioejsm4e)
 
 A modal window blocks the main window on its calling. It means that only the modal window remains active, while the main window becomes gray and unresponsive.
 
@@ -89,7 +89,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/mkwuasj0	Window.  Movable Window}}
+**Related sample**: [Window.  Movable Window](https://snippet.dhtmlx.com/mkwuasj0)
 
 Overflowing browser window
 ----------------
@@ -102,7 +102,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qfhdlzri	Window. Viewport Overflow}}
+**Related sample**: [Window. Viewport Overflow](https://snippet.dhtmlx.com/qfhdlzri)
 
 {{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
 
@@ -120,7 +120,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1suzi8gj	Window. Resizable Window.}}
+**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
 
 Then you will be able to regulate the sizes of a window by dragging resizers that appear on hovering sides of a window. 
 
@@ -151,7 +151,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
  
-{{editor	https://snippet.dhtmlx.com/1suzi8gj	Window. Resizable Window.}}
+**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
 
 Default values of the size-related properties are:
 

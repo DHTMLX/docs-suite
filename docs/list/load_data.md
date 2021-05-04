@@ -49,7 +49,7 @@ list.data.load("/some/data").then(function(){
 ~~~
 
 
-{{editor	https://snippet.dhtmlx.com/1it5kfhq	List. Load Data}}
+**Related sample**: [List. Load Data](https://snippet.dhtmlx.com/1it5kfhq)
 
 Loading from local source
 ------------------
@@ -61,7 +61,7 @@ var list = new dhx.List("list_container");
 list.data.parse(dataset);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/0xmyywi1	List. Parse Data}}
+**Related sample**: [List. Parse Data](https://snippet.dhtmlx.com/0xmyywi1)
 
 Saving and restoring state
 ----------------------------
@@ -112,7 +112,7 @@ var list = new dhx.list("list_container", {
 list.data.load(lazyDataProxy);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/list_lazy_loading	External data lazy load}}
+**Related sample**: [External data lazy load](https://snippet.dhtmlx.com/list_lazy_loading)
 
 You need to set the virtual:true property in the configuration object of List
 

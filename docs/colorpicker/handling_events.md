@@ -15,7 +15,7 @@ colorpicker.events.on("ModeChange", function(mode) {
 
 {{note The names of events are case-insensitive.}}
 
-{{editor    https://snippet.dhtmlx.com/fllgaabo	Colorpicker. Events}}
+**Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
 
 ## Detaching event listeners
 
