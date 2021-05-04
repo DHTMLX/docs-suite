@@ -29,10 +29,10 @@ var array_ids = combo.getValue(true);
 @template: api_method
 @descr:
 
-@related: combo/work_with_combo.md#settinggettingvalues
+@related: combobox/work_with_combo.md#settinggettingvalues
 
 @relatedapi:
-combo/api/combobox_setvalue_method.md
+combobox/api/combobox_setvalue_method.md
 
 **Related sample**:
 - [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)

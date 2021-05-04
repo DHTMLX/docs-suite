@@ -5,9 +5,10 @@ title: Initialization
 
 To add a message on a page, you should take the following simple steps:
 
-- [Include the source files](#include-source-files)
-- [Create a container](#create-container) (optional)
-- [Create the necessary type of a message box](#createnecessarymessagebox)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Create necessary message box](#create-necessary-message-box)
+- [Configuration properties](#configuration-properties)
 
 ~~~html
 <!DOCTYPE html>
@@ -47,7 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create container 
+Create a container 
 -----------------
 
 {{note This is an optional step. By default a message appears in the top right corner of the screen.}}

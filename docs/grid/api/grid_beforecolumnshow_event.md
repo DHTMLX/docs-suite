@@ -24,7 +24,7 @@ grid.events.on("BeforeColumnShow", function(column){
 @template: api_event
 @descr:
 
-@changelog: added in v7.0
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
+@changelog: added in v7.0

@@ -20,7 +20,7 @@ grid.scrollTo("15","c");
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
-@related: grid/usage.md#controllingscrollbehavior
+@related: grid/usage.md#controlling-scroll-behavior
 
 @changelog:
 

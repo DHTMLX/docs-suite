@@ -25,16 +25,15 @@ var send = form.send("myserver.com", "POST");
 
 @template: api_method
 @descr:
+
 The **method** parameter can take "PUT", "POST", "DELETE", "GET" values, depending on the used type of the request. 
 
 
-@related: form/work_with_form.md#sendingformtoserver
 
-@relatedsample:
-
-@changelog: added in v6.1
-
+@related: form/work_with_form.md#sending-form-to-server
 
 @relatedapi:
 form/api/form_aftersend_event.md
 form/api/form_beforesend_event.md
+
+@changelog: added in v6.1

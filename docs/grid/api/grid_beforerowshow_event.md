@@ -24,6 +24,7 @@ grid.events.on("BeforeRowShow", function(row){
 @template: api_event
 @descr:
 
-@changelog: added in v7.0
+**Related Sample:** [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+
+@changelog: added in v7.0

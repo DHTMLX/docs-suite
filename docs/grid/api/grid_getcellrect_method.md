@@ -22,6 +22,7 @@ var rect = grid.getCellRect("1","c");
 
 @template: api_method
 @descr:
+
 The return object includes the following attributes:
 
 <table class="webixdoc_links">
@@ -46,7 +47,7 @@ The return object includes the following attributes:
 </table>
 
 
-@related: grid/usage.md#workingwithcolumnsandcells
+@related: grid/usage.md#working-with-columns-and-cells
 
 @changelog:
 

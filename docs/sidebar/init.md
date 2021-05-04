@@ -59,7 +59,7 @@ Initialize Sidebar
 Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the sidebar container
-- an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default
+- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
 var sidebar = new dhx.Sidebar("sidebar_container",{

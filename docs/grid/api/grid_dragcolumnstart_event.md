@@ -19,6 +19,7 @@ grid.events.on("DragColumnStart", function(data, events) {
 
 @template: api_event
 @descr:
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
@@ -41,7 +42,6 @@ The data object contains the following parameters:
 </table>
 
 
-@changelog: added in v7.0
 
 @relatedapi:
 [](grid/api/grid_dragitem_config.md)
@@ -54,5 +54,6 @@ The data object contains the following parameters:
 [](grid/api/grid_dragcolumnin_event.md)
 [](grid/api/grid_dragcolumnout_event.md)
 
-@related: grid/configuration.md#dragndropofgridcolumns
+@related: grid/configuration.md#drag-n-drop-of-grid-columns
 
+@changelog: added in v7.0

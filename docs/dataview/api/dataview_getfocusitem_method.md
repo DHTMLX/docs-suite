@@ -21,7 +21,3 @@ var focus = dataview.getFocusItem();
 
 
 
-
-@changelog:
-
-

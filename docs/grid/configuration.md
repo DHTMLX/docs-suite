@@ -23,7 +23,9 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
+Each column object may contain a set of properties. 
+
+{{note You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).}}
 
 
 Alignment
@@ -41,7 +43,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-[Grid. Content Align](https://snippet.dhtmlx.com/eyreddku)
+**Related Sample:** [Grid. Content Align](https://snippet.dhtmlx.com/eyreddku)
 
 The available values of the option are "left", "center" and "right".
 
@@ -97,7 +99,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{editor	https://snippet.dhtmlx.com/zfrpe22d	Grid. Adjust Columns}}
 
-It is also possible to set the [](grid/api/grid_adjust_config.md) property to *true* in the configuration of a separate column to make its width adjust automatically to the content:
+It is also possible to set the [](grid/api/grid_adjust_config.md) property to *true* in the configuration of a separate column to make its width to adjust automatically to the content:
 
 ~~~js
 var grid = new dhx.Grid("grid_container", { 
@@ -129,7 +131,7 @@ var grid = new dhx.Grid("grid_container", {
 
 As a result, the height of the cells will automatically adjust to their content.
 
-But, **note**, that the **autoHeight** option does not adjust the height in the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the grid/api/grid_headerrowheight_config.md and grid/api/grid_footerrowheight_config.md configuration options of Grid.
+But, **note**, that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.
 
 
 Autowidth for columns
@@ -146,7 +148,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-[Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
+**Related Sample:** [Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
 
 You can disable this functionality for a specified column via setting the [](grid/api/grid_autowidth_config.md) property to *false* in the configuration of the column:
 
@@ -1146,7 +1148,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{editor    https://snippet.dhtmlx.com/1775dwbl	Grid. Spans Cells}}
 
-**Note**, that if both the **spans** and [leftSplit](grid/configuration.md#frozencolumns) properties are set in the Grid config, the following rules will be applied:
+**Note**, that if both the **spans** and [leftSplit](grid/api/grid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
 
 - All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
 - If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.

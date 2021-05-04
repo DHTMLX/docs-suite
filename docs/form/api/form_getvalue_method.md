@@ -43,16 +43,10 @@ var state = form.getValue();
 - If *valueFormat: "timeObject"*  and *timeFormat:24* are specified, a return object value will contain key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
 - If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
 
-
-@related: form/work_with_form.md#gettingvaluesofcontrols
-
 **Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
-
-
-
-
-@changelog:
 
 @relatedapi:
 form/api/form_setvalue_method.md
+
+@related: form/work_with_form.md#getting-values-of-controls
 

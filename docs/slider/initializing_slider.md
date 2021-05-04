@@ -7,7 +7,7 @@ To initialize dhtmlxSlider on a page, you need to take the following simple step
 
 - [Download the Slider package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Create a container](#create-container)
+- [Create a container](#create-a-container)
 - [Initialize Slider](#initialize-slider) with the object constructor
 
 ~~~html
@@ -48,7 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create container 
+Create a container 
 -----------------
 
 Add a container for Slider and give it an id, for example "slider_container":
@@ -63,7 +63,7 @@ Initialize Slider
 Initialize Slider with the `dhx.Slider` object constructor. The constructor has two parameters:
 
 - the HTML container for Slider,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxSlider

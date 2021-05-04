@@ -18,12 +18,10 @@ grid.events.on("BeforeColumnHide", function(column){
     // your logic here
     return false;
 });
-s
 
 @template: api_event
 @descr:
 
-@changelog: added in v7.0
-
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
+@changelog: added in v7.0
