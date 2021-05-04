@@ -33,8 +33,9 @@ var result = form.validate(); // -> true/false
 - [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
 @related:
-form/work_with_form.md#validatingform
+form/work_with_form.md#validating-form
 
 @changelog:
+
 The **silent** parameter is added in v7.0.
 

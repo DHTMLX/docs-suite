@@ -25,7 +25,7 @@ form.isVisible("combo"); // -> true/false
 
 
 
-@related:form/work_with_form.md#checkingifaformisvisible
+@related:form/work_with_form.md#checking-if-a-form-is-visible
 
 @relatedapi: 
 form/api/form_hide_method.md

@@ -51,6 +51,7 @@ form.getProperties("password");
 
 @template: api_method
 @descr:
+
 {{note The returned object can contain only the properties that are listed below for each control.}}
 
 Here are two ways of using the method:

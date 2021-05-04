@@ -27,12 +27,14 @@ Depending on the type of a control, the method may take different types of param
 - Combo - setValue(value: string | string[]): void;
 - Slider - setValue(value: string | number | number[]): void;
 
+**Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
+
 @relatedapi:
 form/api/form_getvalue_method.md
 
-@related:form/work_with_form.md#settingnewvaluesforcontrols
+@related:form/work_with_form.md#setting-new-values-for-controls
 
-**Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
+
 
 @changelog:added in v6.1 
 
