@@ -19,6 +19,7 @@ var column = grid.getColumn("b"); // ->
 
 @template: api_method
 @descr:
+
 The returned object contains the following set of properties:
 
 <table class="webixdoc_links">
@@ -130,7 +131,8 @@ The returned object contains the following set of properties:
     </tbody>
 </table>
 
-@related: grid/usage.md#workingwithcolumnsandcells
+@related: grid/usage.md#working-with-columns-and-cells
+
 @relatedapi: grid/api/grid_setcolumns_method.md
 
 @changelog:

@@ -81,7 +81,7 @@ Initialize TreeGrid
 Initialize TreeGrid with the `dhx.TreeGrid` object constructor. The constructor has two parameters:
 
 - the HTML container for TreeGrid,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxTreeGrid
@@ -101,7 +101,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 There is a set of properties you can specify for TreeGrid to optimize its configuration for your needs. 
 
-See the detailed information on configuration properties of TreeGrid in the [TreeGrid API overview](treegrid/api/api_overview.md#properties) article.
+See the detailed information on configuration properties of TreeGrid in the [TreeGrid API overview](treegrid/api/api_overview.md#treegrid-properties) article.
 
 Load data into TreeGrid
 ------------------

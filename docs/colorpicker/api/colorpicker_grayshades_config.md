@@ -18,6 +18,6 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 @descr: 
 
 @related:colorpicker/how_to_start.md#initialize-colorpicker
-colorpicker/configuration.md#grayshades
+colorpicker/configuration.md#gray-shades
 
 **Related sample**: [Colorpicker. Palette Without Gray Shades](https://snippet.dhtmlx.com/b44fp8q2)

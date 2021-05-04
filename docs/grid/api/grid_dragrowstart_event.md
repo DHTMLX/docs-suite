@@ -19,6 +19,7 @@ grid.events.on("DragRowStart", function(data, events) {
 
 @template: api_event
 @descr:
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -38,7 +39,6 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-@changelog: added in v7.0
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
@@ -52,4 +52,6 @@ grid/api/grid_cancelrowdrop_event.md
 grid/api/grid_dragrowin_event.md
 grid/api/grid_dragrowout_event.md
 
-@related: grid/configuration.md#dragndropofgridrows
+@related: grid/configuration.md#drag-n-drop-of-grid-rows
+
+@changelog: added in v7.0

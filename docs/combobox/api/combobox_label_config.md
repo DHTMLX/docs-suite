@@ -16,7 +16,7 @@ var combo = new dhx.Combobox("combo_container", {
 @template:	api_config
 @descr: 
 
-@related: combo/how_to_start.md#initialize-combobox
-combo/configuration.md#label
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#label
 
 **Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)

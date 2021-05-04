@@ -23,11 +23,10 @@ var selectedCells = grid.selection.getCells();
 @template: api_method
 @descr:
 
-@related: grid/usage_selection.md#gettingobjectofselectedcells
+@related: grid/usage_selection.md#getting-object-of-selected-cells
 
 @relatedapi: grid/api/selection/selection_enable_method.md
 grid/api/selection/selection_getcell_method.md
 
-@changelog:
 
 

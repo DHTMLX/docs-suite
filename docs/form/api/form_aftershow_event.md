@@ -21,7 +21,8 @@ form.events.on("AfterShow", function(name, value) {
 
 @relatedapi: form/api/form_beforeshow_event.md
 
-@changelog: 
+@changelog:
+
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.

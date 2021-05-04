@@ -22,7 +22,7 @@ grid.showColumn(col);
 
 @relatedapi: grid/api/grid_hidecolumn_method.md
 
-@related: grid/usage.md#hidingshowingacolumn
+@related: grid/usage.md#hidingshowing-a-column
 
 @changelog: added in v6.3
 

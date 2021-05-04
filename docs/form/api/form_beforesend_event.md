@@ -28,9 +28,5 @@ The event is blockable. Return *false* to prevent a form sending to the server.
 @relatedapi: 
 form/api/form_aftersend_event.md
 form/api/form_send_method.md
-	
-
-
-
 
 @changelog: added in v6.1

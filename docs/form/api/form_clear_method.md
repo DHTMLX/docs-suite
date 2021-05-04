@@ -23,8 +23,8 @@ form.clear("value");
 form.clear();
 
 
-@template: api_method
 @descr:
+
 The method may clear a form in one of three modes:
 
 - "value" - clears only form values
@@ -33,7 +33,7 @@ The method may clear a form in one of three modes:
 
 
 
-@related:form/work_with_form.md#clearingform
+@related:form/work_with_form.md#clearing-form
 
 **Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 

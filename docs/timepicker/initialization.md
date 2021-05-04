@@ -9,7 +9,7 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
 - [Initialize TimePicker](#initialize-timepicker) with the object constructor
-- [Set initial value (optional)](#setinitialvalueoptional)
+- [Set initial value (optional)](#set-initial-value-optional)
 
 ~~~html
 <!DOCTYPE html>
@@ -63,7 +63,7 @@ Initialize TimePicker
 Initialize TimePicker with the **`dhx.Timepicker`** object constructor. The constructor has two parameters:
 
 - the HTML container for TimePicker,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxTimePicker

@@ -37,6 +37,6 @@ The template function takes one parameter:
 **Related sample**:
 - [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
 
-@related: dataview/configuration.md#templatefordataviewitems
+@related: dataview/configuration.md#template-for-dataview-items
 
 @relateapi: dataview/api/dataview_eventhandlers_config.md

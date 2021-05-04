@@ -16,8 +16,7 @@ grid.adjustColumnWidth("b", "header");
 
 @template: api_method
 @descr:
+
 If no value is set to the *adjust* parameter, the **adjustColumnWidth** method sets it to *true*.
 
 @relatedapi: grid/api/grid_adjust_config.md
-
-@changelog:

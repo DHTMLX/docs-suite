@@ -22,7 +22,7 @@ form.show();
 
 
 
-@related:form/work_with_form.md#hidingshowingaform
+@related:form/work_with_form.md#hidingshowing-a-form
 
 @relatedapi: 
 form/api/form_hide_method.md

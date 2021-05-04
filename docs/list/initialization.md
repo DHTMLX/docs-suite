@@ -63,7 +63,7 @@ Initialize List
 Initialize List with the `dhx.List` object constructor. The constructor has two parameters:
 
 - the HTML container for List,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxList

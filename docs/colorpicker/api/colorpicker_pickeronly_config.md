@@ -19,7 +19,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 @descr: 
 
 @related: colorpicker/how_to_start.md#initialize-colorpicker
-colorpicker/configuration.md#paletteorpickermodeonly
+colorpicker/configuration.md#palette-or-picker-mode-only
 
 
 **Related sample**: [Colorpicker. Picker Only](https://snippet.dhtmlx.com/5zlvvwpl)

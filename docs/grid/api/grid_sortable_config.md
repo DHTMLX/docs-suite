@@ -20,9 +20,9 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@changelog: added in v6.4
+**Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)
 
 @related: grid/initialization.md#initialize-grid
-grid/configuration.md#sortingcolumns
+grid/configuration.md#sorting-columns
 
-**Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)
+@changelog: added in v6.4

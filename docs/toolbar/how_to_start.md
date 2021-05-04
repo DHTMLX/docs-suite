@@ -59,7 +59,7 @@ Initialize Toolbar
 Initialize Toolbar with the `dhx.Toolbar` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the toolbar container
-- an object with configuration properties (see the full list below)
+- an object with [configuration properties](#configuration-properties)
 
 ~~~js
 var toolbar = new dhx.Toolbar("toolbar_container", {
@@ -69,7 +69,7 @@ var toolbar = new dhx.Toolbar("toolbar_container", {
 
 ### Configuration properties
 
-See the detailed information on configuration properties of Toolbar in the [Toolbar API overview](toolbar/api/api_overview.md#properties) article.
+See the detailed information on configuration properties of Toolbar in the [Toolbar API overview](toolbar/api/api_overview.md#toolbar-properties) article.
 
 
 Load data into Toolbar
@@ -110,7 +110,7 @@ var data = [
     	icon: "dxi-delete",
     	value: "delete"
     }
-]
+];
 
 var toolbar = new dhx.Toolbar("toolbar_container", {css:"dhx_toolbar--bordered" });
 toolbar.data.parse(data);
