@@ -16,4 +16,4 @@ sidebar.destructor();
 
 **Related sample**: [Sidebar. Destructor](https://snippet.dhtmlx.com/7bwnymvz)
 
-@changelog:
+

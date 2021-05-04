@@ -26,6 +26,6 @@ var color = colorpicker.getValue();
 colorpicker/api/colorpicker_setvalue_method.md
 
 
-@changelog:
+
 
 

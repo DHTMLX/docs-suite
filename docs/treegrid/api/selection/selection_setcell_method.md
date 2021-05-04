@@ -25,5 +25,5 @@ treegrid.selection.setCell(row, column);
 treegrid/api/selection/selection_enable_method.md
 treegrid/api/selection/selection_removecell_method.md
 
-@changelog:
+
 

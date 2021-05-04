@@ -28,6 +28,4 @@ var mode = calendar.getCurrentMode(); // -> "calendar"
 @related: calendar/operating_calendar.md#gettingcurrentmode
 
 
-@changelog:
-
 

@@ -25,6 +25,3 @@ toolbar.setState({
 
 @related: toolbar/common_methods.md#settinggettingvaluesandstates
 
-@changelog:
-
-

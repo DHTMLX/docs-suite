@@ -20,6 +20,4 @@ grid/api/grid_addspan_method.md
 grid/api/grid_getspan_method.md
 
 
-@changelog:
-
 @related: grid/usage.md#addingremoving-spans

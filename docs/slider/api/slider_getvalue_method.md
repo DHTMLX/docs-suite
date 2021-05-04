@@ -27,7 +27,7 @@ with numbers in the ascending order, that is [20,50].}}
 slider/api/slider_setvalue_method.md
 
 
-@changelog:
+
 
 **Related sample**: [Slider. Get Slider Value](https://snippet.dhtmlx.com/xlb8nbdx)
 

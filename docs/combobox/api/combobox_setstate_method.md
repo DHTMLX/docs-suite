@@ -28,6 +28,3 @@ Depending on the set state the input of Combo Box gets a colored border: green f
 
 
 
-@changelog:
-
-

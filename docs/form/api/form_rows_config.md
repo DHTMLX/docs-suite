@@ -49,6 +49,6 @@ var form = new dhx.Form("form_container", {
 @related: form/how_to_start.md#initialize-form
 form/configuration.md#grouping-controls-in-form
 
-@relatedapi: form/api/form_cols_property.md
+@relatedapi: form/api/form_cols_config.md
 
 @changelog: added in v6.4

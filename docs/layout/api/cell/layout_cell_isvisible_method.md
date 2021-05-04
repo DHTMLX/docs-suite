@@ -26,6 +26,3 @@ layout/api/layout_hide_method.md
 layout/api/layout_hidden_config.md
 
 
-@changelog:
-
-

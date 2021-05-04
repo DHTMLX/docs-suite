@@ -27,6 +27,6 @@ const totalPages = pagination.getPagesCount();
 
 
 
-@changelog:
+
 
 @related: pagination/usage.md#gettingtotalnumberofpages

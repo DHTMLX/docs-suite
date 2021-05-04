@@ -10,5 +10,5 @@ title: paint
 @example:
 ribbon.paint();
 
-@changelog:
+
 

@@ -26,7 +26,7 @@ dhxWindow.show();
 window/api/window_getsize_method.md
 
 
-@changelog:
+
 
 @related:window/usage.md#sizingwindow
 

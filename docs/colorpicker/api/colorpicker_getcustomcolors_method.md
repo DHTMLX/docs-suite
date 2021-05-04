@@ -23,6 +23,6 @@ var colors = colorpicker.getCustomColors();
 colorpicker/api/colorpicker_setcustomcolors_method.md
 
 
-@changelog:
+
 
 

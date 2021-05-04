@@ -31,6 +31,6 @@ combobox/api/combobox_getvalue_method.md
 **Related sample**:
 - [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
 
-@changelog:
+
 
 

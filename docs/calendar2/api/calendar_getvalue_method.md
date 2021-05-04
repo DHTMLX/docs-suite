@@ -35,10 +35,6 @@ var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 @descr:
 
 
-
-@changelog:
-
-
 @relatedapi:
 calendar/api/calendar_setvalue_method.md
 

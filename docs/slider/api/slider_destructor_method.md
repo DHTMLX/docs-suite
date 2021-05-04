@@ -18,6 +18,6 @@ slider.destructor();
 
 
 
-@changelog:
+
 
 

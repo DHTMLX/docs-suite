@@ -28,4 +28,4 @@ grid.addRowCss("2", "myCustomClass");
 
 **Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
 
-@changelog:
+

@@ -26,4 +26,4 @@ combobox/configuration.md#readonly-mode
 
 **Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
 
-@changelog:
+

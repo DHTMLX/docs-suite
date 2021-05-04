@@ -29,6 +29,6 @@ menu.show();
 **Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
 
 
-@changelog:
+
 
 

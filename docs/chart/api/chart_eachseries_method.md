@@ -61,6 +61,4 @@ chart/usage.md#iteratingoverseries
 
 **Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
-@changelog:
-
 

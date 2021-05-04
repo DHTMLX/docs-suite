@@ -41,7 +41,7 @@ For information on disabling/enabling selection of an item, read [Enabling/Disab
 Using Data Collection API
 ------------------------
 
-You can manipulate List items with the help of the [Data collection API](data_collection/api/refs/datacollection.md). 
+You can manipulate List items with the help of the [Data collection API](data_collection/index.md). 
 
 ### Adding items into List
 
@@ -106,8 +106,7 @@ list.data.remove("option_id");
 
 ###Filtering List data
 
-You can filter List data by the specified criteria with the help of the [](data_collection/api/filter.md) method of Data collection. Check all details on parameters of the method in the
-[Data collection API](data_collection/api/refs/datacollection.md).
+You can filter List data by the specified criteria with the help of the [](data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
 ~~~js
 list.data.filter({
@@ -123,7 +122,7 @@ Filtering can be applied to any attribute of a data item.
 
 ###Sorting List data
 
-It is possible to sort data in List via the [](data_collection/api/sort.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/api/refs/datacollection.md).
+It is possible to sort data in List via the [](data_collection/api/datacollection_sort_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
 ~~~js
 list.data.sort({ 

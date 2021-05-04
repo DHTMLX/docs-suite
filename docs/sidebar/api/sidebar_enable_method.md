@@ -30,6 +30,6 @@ sidebar.enable();
 **Related sample**:
 - [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
-@changelog:
+
 
 @related: sidebar/work_with_sidebar.md#disablingandenablingcontrols

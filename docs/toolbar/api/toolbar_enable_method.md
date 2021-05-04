@@ -29,6 +29,6 @@ toolbar.enable();
 
 @related: toolbar/common_methods.md#disablingandenablingcontrols
 
-@changelog:
+
 
 

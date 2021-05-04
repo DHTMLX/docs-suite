@@ -27,6 +27,6 @@ pagination.setPage(0);
 
 [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
-@changelog:
+
 
 @related: pagination/usage.md#settinggettingtheactivepage

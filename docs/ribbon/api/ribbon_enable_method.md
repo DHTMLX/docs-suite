@@ -29,6 +29,6 @@ ribbon.enable();
 
 @related: ribbon/operating_ribbon.md#disablingandenablingcontrols
 
-@changelog:
+
 
 
