@@ -92,7 +92,7 @@ var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: 
 var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/h89c3gl3	Dataview. Drag'n'drop Сopy}}
+**Related sample**: [Dataview. Drag'n'drop Сopy](https://snippet.dhtmlx.com/h89c3gl3)
 
 
 Editing items
@@ -100,7 +100,7 @@ Editing items
 
 ![](../assets/dataview/editable.png)
 
-{{editor    https://snippet.dhtmlx.com/m8fbqcza	Dataview. Editable Dataview}}
+**Related sample**: [Dataview. Editable Dataview](https://snippet.dhtmlx.com/m8fbqcza)
 
 You can enable the possibility to edit DataView items with the help of the [](dataview/api/dataview_editable_config.md) configuration option:
 
@@ -113,7 +113,7 @@ Height of an item
 
 ![](../assets/dataview/item_height.png)
 
-{{editor    https://snippet.dhtmlx.com/cth9mwrf	Dataview. Setup Dataview Item Height}}
+**Related sample**: [Dataview. Setup Dataview Item Height](https://snippet.dhtmlx.com/cth9mwrf)
 
 You can specify the necessary height of a Dataview item and set it before initialization of Dataview via the [itemHeight](dataview/api/dataview_itemheight_config.md) property either as a number:
 
@@ -140,7 +140,7 @@ Height of the Dataview
 
 ![](../assets/dataview/dataview_height.png)
 
-{{editor    https://snippet.dhtmlx.com/g1k2l4q0	Dataview. Setup Dataview Height}}
+**Related sample**: [Dataview. Setup Dataview Height](https://snippet.dhtmlx.com/g1k2l4q0)
 
 You can define the desired height of a dataview via the [height](dataview/api/dataview_height_config.md) configuration option as easy as that:
 
@@ -161,7 +161,7 @@ Margins around DataView items
 
 ![](../assets/dataview/gap.png)
 
-{{editor    https://snippet.dhtmlx.com/ozsuww1q	Dataview. Configure Gap Size}}
+**Related sample**: [Dataview. Configure Gap Size](https://snippet.dhtmlx.com/ozsuww1q)
 
 It is possible to add margins around DataView items to increase distance between two items as well as between an item and DataView borders. Use the [](dataview/api/dataview_gap_config.md) configuration property 
 to define the desired margin:
@@ -190,7 +190,7 @@ var dataview = new dhx.DataView("dataview", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/g0xwdx10	Dataview. Multiselection Dataview}}
+**Related sample**: [Dataview. Multiselection Dataview](https://snippet.dhtmlx.com/g0xwdx10)
 
 
 Number of items in a row
@@ -198,7 +198,7 @@ Number of items in a row
 
 ![](../assets/dataview/items_in_row.png)
 
-{{editor    https://snippet.dhtmlx.com/de4r8km3	Dataview. Amount Items In A Row}}
+**Related sample**: [Dataview. Amount Items In A Row](https://snippet.dhtmlx.com/de4r8km3)
 
 You can define the number of items that should be displayed in a row of DataView with the help of the [](dataview/api/dataview_itemsinrow_config.md) configuration property:
 
@@ -226,7 +226,7 @@ Template for DataView items
 
 ![](../assets/dataview/template.png)
 
-{{editor    https://snippet.dhtmlx.com/d6l6grr7	Dataview. Render Template}}
+**Related sample**: [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
 
 You can define a template for rendering items in a dataview with the help of the [](dataview/api/dataview_template_config.md) configuration property. You need to set a function as its value and pass one parameter to it:
 

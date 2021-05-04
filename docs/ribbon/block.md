@@ -7,7 +7,7 @@ The Block control is used for grouping related controls.
  
 ![DHX Ribbon Block groups controls](../assets/ribbon/ribbon_block.png)
 
-{{editor	https://snippet.dhtmlx.com/yr8oepq8	Ribbon. Blocks}}
+**Related sample**: [Ribbon. Blocks](https://snippet.dhtmlx.com/yr8oepq8)
 
 ## Creating a Block
 
@@ -94,7 +94,7 @@ You can add any custom HTML content to an item of the block with the help of the
 };
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3djaib6o	Ribbon. Item HTML Content}}
+**Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
 
 ## Nesting blocks
 

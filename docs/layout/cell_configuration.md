@@ -19,7 +19,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6x76kgyq	Layout. Html Content}}
+**Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
 
 Hidden cell
 --------------
@@ -64,7 +64,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bxqnzesl	Layout. Header}}
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
 Height of a header cell
 ---------------------------
@@ -86,7 +86,7 @@ var layout = new dhx.Layout("layout", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bxqnzesl	Layout. Header}}
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
 If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the [](layout/api/cell/layout_cell_headerheight_config.md) option will add a header without text for a cell.
 
@@ -191,9 +191,9 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/8u4ok0os	Layout. Collapsable}}
+**Related sample**: [Layout. Collapsable](https://snippet.dhtmlx.com/8u4ok0os)
 
-{{editor	https://snippet.dhtmlx.com/r2e0y6n7	Layout. Accordion}}
+**Related sample**: [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
 
 Resizability
 ------------
@@ -208,7 +208,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/k2fj4nm0	Layout. Resizable}}
+**Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)
 
 {{note Starting from v7.0, you can define the resizing limits by setting necessary values to the [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md), [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) properties in the config of a cell.}}
 
@@ -234,7 +234,7 @@ const layout = new dhx.Layout("layout", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9ge1a4zx	Layout.Type}}
+**Related sample**: [Layout.Type](https://snippet.dhtmlx.com/9ge1a4zx)
 
 [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 

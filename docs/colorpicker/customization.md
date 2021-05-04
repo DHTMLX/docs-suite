@@ -10,7 +10,7 @@ There is a possibility to make changes in the look and feel of a colorpicker.
 
 ![](../assets/colorpicker/colorpicker_css.png)
 
-{{editor    https://snippet.dhtmlx.com/mnwi3sp0	Colorpicker. Custom CSS}}
+**Related sample**: [Colorpicker. Custom CSS](https://snippet.dhtmlx.com/mnwi3sp0)
 
 For this you need to take the following steps:
 

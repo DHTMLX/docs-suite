@@ -15,7 +15,7 @@ dhx.awaitRedraw().then(function() {
 })
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/r4ck0smz	Helpers. Await Redraw. Initialization}}
+**Related sample**: [Helpers. Await Redraw. Initialization](https://snippet.dhtmlx.com/r4ck0smz)
 
 
 

@@ -27,7 +27,7 @@ var tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7idtw7i4	Tree. Drag Modes}}
+**Related sample**: [Tree. Drag Modes](https://snippet.dhtmlx.com/7idtw7i4)
 
 {{note Please note that drag-n-drop within a tree works, if it has **dragMode:"both"** setting in its configuration object.}}
 
@@ -57,4 +57,4 @@ var treeSource = new dhx.Tree("tree-source", {dragMode: "source", dragCopy: true
 var treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xm0lxbpj	Tree. Copy Dragged Item}}
+**Related sample**: [Tree. Copy Dragged Item](https://snippet.dhtmlx.com/xm0lxbpj)

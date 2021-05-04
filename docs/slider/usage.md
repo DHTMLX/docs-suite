@@ -18,7 +18,7 @@ slider.disable();
 slider.enable();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/po9hsc2l	Slider. Disable/Enable Slider}}
+**Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)
 
 Checking if a slider is disabled
 -----------------------------------
@@ -29,7 +29,7 @@ To check if a slider is disabled, call the [isDisabled()](slider/api/slider_isdi
 slider.isDisabled(); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/fbo18fue	Slider. Is Disabled Slider}}
+**Related sample**: [Slider. Is Disabled Slider](https://snippet.dhtmlx.com/fbo18fue)
 
 Setting value
 -----------------
@@ -40,7 +40,7 @@ While a user sets the value of a slider by dragging the thumb to the desired pos
 slider.setValue(20);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/shw55sub	Slider. Set Slider Value}}
+**Related sample**: [Slider. Set Slider Value](https://snippet.dhtmlx.com/shw55sub)
 
 Getting value
 -------------------
@@ -55,7 +55,7 @@ var value = slider.getValue(); // -> [20]
 var value = slider.getValue(); // -> [20,50]
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xlb8nbdx	Slider. Get Slider Value}}
+**Related sample**: [Slider. Get Slider Value](https://snippet.dhtmlx.com/xlb8nbdx)
 
 In case you've set the value of Slider as an array where the first number is greater than the second one, e.g. [50,20], **getValue()** will return the value as an array with numbers in the ascending order, that is [20,50].
 

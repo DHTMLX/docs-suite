@@ -15,7 +15,7 @@ grid.events.on("Scroll", function({top,left}){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor    https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events}}
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 ## Detaching event listeners
 

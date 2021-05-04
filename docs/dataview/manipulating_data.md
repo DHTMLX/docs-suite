@@ -23,7 +23,7 @@ You can edit a particular DataView item with the help of the [editItem()](datavi
 dataview.editItem("1");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/i09isp2d	Dataview. Edit Item}}
+**Related sample**: [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
 
 Disabling and enabling selection of an item
 ----------------------------------
@@ -61,7 +61,7 @@ dataview.data.add({
 },0);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/k4sbj47b	Dataview. Add}}
+**Related sample**: [Dataview. Add](https://snippet.dhtmlx.com/k4sbj47b)
 
 ### Updating DataView items
 
@@ -89,7 +89,7 @@ dataview.data.update("item_id",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/we9vm6iz	Dataview. Update}}
+**Related sample**: [Dataview. Update](https://snippet.dhtmlx.com/we9vm6iz)
 
 ### Removing items from DataView
 
@@ -99,7 +99,7 @@ To remove an item, make use of the **remove()** method of Data Collection. Pass 
 dataview.data.remove("id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/i5cjuj2y	Dataview. Delete}}
+**Related sample**: [Dataview. Delete](https://snippet.dhtmlx.com/i5cjuj2y)
 
 ### Filtering DataView data
 
@@ -114,7 +114,7 @@ dataview.data.filter({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/8f970hby	Dataview. Filter}}
+**Related sample**: [Dataview. Filter](https://snippet.dhtmlx.com/8f970hby)
 
 ### Sorting DataView data
 
@@ -127,7 +127,7 @@ dataview.data.sort({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/mix83emb	Dataview. Sort}}
+**Related sample**: [Dataview. Sort](https://snippet.dhtmlx.com/mix83emb)
 
 Using Selection API
 -------------

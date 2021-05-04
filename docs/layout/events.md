@@ -33,7 +33,7 @@ Several handlers can be attached to one and the same event, and all of them will
 The names of the events are case-insensitive.
 }}
 
-{{editor	https://snippet.dhtmlx.com/fyxw0map	Layout. Events}}
+**Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 ## Detaching event listeners
 

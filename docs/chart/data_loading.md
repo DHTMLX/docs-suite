@@ -86,7 +86,7 @@ chart.data.load("/some/data").then(function(){
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/qah8exx2	Chart. Load Data}}
+**Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)
 
 Loading from local source
 ------------------
@@ -98,7 +98,7 @@ var chart = new dhx.Chart("chart_container");
 chart.data.parse(dataset);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
 Saving and restoring state
 ----------------------------
@@ -119,4 +119,4 @@ var chart2 = new dhx.Chart(document.body);
 chart2.data.parse(state);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/rqvvpopp	Chart. Serialize}}
+**Related sample**: [Chart. Serialize](https://snippet.dhtmlx.com/rqvvpopp)

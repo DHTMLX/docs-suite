@@ -47,7 +47,7 @@ You can load data to a sidebar from an array with the **parse()** method of Tree
 sidebar.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x0qpt7pk	Sidebar. Basic Initialization}}
+**Related sample**: [Sidebar. Basic Initialization](https://snippet.dhtmlx.com/x0qpt7pk)
 
 Loading from an external file
 ------------------
@@ -58,7 +58,7 @@ The **load** method loads the sidebar data from an external JSON file. All the d
 sidebar.data.load("[path to this file]/file.json");
 ~~~	
 
-{{editor	https://snippet.dhtmlx.com/mq4ggjmm	Sidebar. Init Load}}
+**Related sample**: [Sidebar. Init Load](https://snippet.dhtmlx.com/mq4ggjmm)
 	
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 

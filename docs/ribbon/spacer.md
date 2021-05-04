@@ -18,7 +18,7 @@ ribbon.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/a8c6y3ob	Ribbon. Spacer}}
+**Related sample**: [Ribbon. Spacer](https://snippet.dhtmlx.com/a8c6y3ob)
 
 ### Properties
 

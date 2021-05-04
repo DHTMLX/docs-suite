@@ -106,7 +106,7 @@ grid.showColumn(col);
 grid.hideColumn(col);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/n4zjwsqj	Grid. Show/Hide Column}}
+**Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)
 
 Since the object of a column has the [hidden](grid/configuration.md#hiddencolumns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
 
@@ -119,7 +119,7 @@ You can check whether a column is hidden or shown on a page using the [](grid/ap
 grid.isColumnHidden("country"); // -> true|false
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/rdqhwnjv	Grid. Is Column Hidden}}
+**Related sample**: [Grid. Is Column Hidden](https://snippet.dhtmlx.com/rdqhwnjv)
 
 
 Hiding/showing a row
@@ -238,7 +238,7 @@ It is also possible to scroll grid content to a particular cell. Pass the ids of
 grid.scrollTo("15","c");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/usu1rnpu	Grid. Controlling Scroll Behavior}}
+**Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
 ### Getting the state of scroll
 
@@ -311,7 +311,7 @@ grid.data.filter({
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/g0zpjqi1	Grid. Basic Filter}}
+**Related sample**: [Grid. Basic Filter](https://snippet.dhtmlx.com/g0zpjqi1)
 
 
 Sorting data
@@ -357,7 +357,7 @@ grid.data.sort({
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/81dmbdfd	Grid. Sorting Data}}
+**Related sample**: [Grid. Sorting Data](https://snippet.dhtmlx.com/81dmbdfd)
 
 To discard all applied sorting rules, call the method without parameters:
 
@@ -399,7 +399,7 @@ var state = grid.getSortingState();
 // -> {dir: "desc", by: "country"}
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/u2vk3ri3	Grid. Get Sorting State}}
+**Related sample**: [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
 
 Editing data
 ------------------
@@ -425,7 +425,7 @@ For example, you can edit the first cell of the "project" column like this:
 grid.editCell(grid.data.getId(0),"project");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/pqbax5vs	Grid. Editing Data}}
+**Related sample**: [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
 
 To finish editing of a cell, use the [editEnd()](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
@@ -469,7 +469,7 @@ Export settings include:
     </tbody>
 </table>
 
-{{editor    https://snippet.dhtmlx.com/58oqij47	Grid. Export}}
+**Related sample**: [Grid. Export](https://snippet.dhtmlx.com/58oqij47)
 
 ### Exporting data to CSV
 
@@ -505,7 +505,7 @@ grid.export.csv({
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/58oqij47	Grid. Export}}
+**Related sample**: [Grid. Export](https://snippet.dhtmlx.com/58oqij47)
 
 The **csv()** method returns a CSV string with Grid data.
 

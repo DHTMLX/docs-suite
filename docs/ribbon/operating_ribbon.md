@@ -19,7 +19,7 @@ ribbon.setState({"check":true});
 ribbon.setState({"check":false});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/i7kabram	Ribbon. Set State}}
+**Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)
 
 And this is how you can change the value of an input:
 
@@ -42,7 +42,7 @@ ribbon.getState();
 // { check:false }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/coei9fys	Ribbon. Get State}}
+**Related sample**: [Ribbon. Get State](https://snippet.dhtmlx.com/coei9fys)
 
 And this is how you can get the current value of an input:
 
@@ -65,7 +65,7 @@ ribbon.hide("add_btn");
 ribbon.show(["save_btn","del_btn"]);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1jkf7954	Ribbon. Show/Hide Ribbon Item}}
+**Related sample**: [Ribbon. Show/Hide Ribbon Item](https://snippet.dhtmlx.com/1jkf7954)
 
 Starting from v7.0, it is possible to hide/show all Ribbon controls on the page at once by using the methods without parameters:
 
@@ -86,7 +86,7 @@ ribbon.disable("add_btn");
 ribbon.enable(["save_btn","del_btn"]);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/l3f8pq2g	Ribbon. Enable/Disable Ribbon Item}}
+**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 Starting from v7.0, it is possible to disable/enable all Ribbon controls on the page at once by using the methods without parameters:
 
@@ -116,7 +116,7 @@ To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ri
 ribbon.isDisabled("1"); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/l3f8pq2g	Ribbon. Enable/Disable Ribbon Item}}
+**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 Selecting/Unselecting an item
 -----------------------------------------
@@ -208,7 +208,7 @@ ribbon.data.add({
 },-1,"blockId");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bphk7h9u	Ribbon. Add}}
+**Related sample**: [Ribbon. Add](https://snippet.dhtmlx.com/bphk7h9u)
 
 This is how you can add a block of controls:
 

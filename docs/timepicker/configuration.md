@@ -20,7 +20,7 @@ var timepicker = new dhx.Timepicker("timepicker_container",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ybnqq5ej	Timepicker. Timepicker With Controls}}
+**Related sample**: [Timepicker. Timepicker With Controls](https://snippet.dhtmlx.com/ybnqq5ej)
 
 
 Time format
@@ -48,7 +48,7 @@ var timepicker2 = new dhx.Timepicker("timepicker_container2",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/u9ge1a4z	Timepicker. 12 Hour Format In Timepicker}}
+**Related sample**: [Timepicker. 12 Hour Format In Timepicker](https://snippet.dhtmlx.com/u9ge1a4z)
 
 Initial value
 -----------------------

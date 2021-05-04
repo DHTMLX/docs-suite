@@ -35,7 +35,7 @@ ribbon.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5acqc24m	Ribbon. Select Button}}
+**Related sample**: [Ribbon. Select Button](https://snippet.dhtmlx.com/5acqc24m)
 
 ### Properties
 

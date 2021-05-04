@@ -49,7 +49,7 @@ To initialize dhtmlxChart in an application, you need to take the following step
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
 Include source files
 ----------------------
@@ -152,7 +152,7 @@ var chart = new dhx.Chart("chart_container",{
 chart.data.parse(data);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
 - to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
@@ -170,5 +170,5 @@ var chart = new dhx.Chart( "chart_container",{
 chart.data.load("../common/dataset.json");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/qah8exx2	Chart. Load Data}}
+**Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)
 

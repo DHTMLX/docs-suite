@@ -42,7 +42,7 @@ dhx.i18n.setLocale("combo", de);
 var combo = new dhx.Combobox("combo_container");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/cnj0j9g0	Combobox. Localization}}
+**Related sample**: [Combobox. Localization](https://snippet.dhtmlx.com/cnj0j9g0)
 
 
 

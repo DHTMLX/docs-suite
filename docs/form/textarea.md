@@ -7,9 +7,9 @@ A control that allows a user to enter a simple multi-line text.
 
 ![Textarea control](../assets/form/form_textarea.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/mt93jzrk	Form. Textareas}}
+**Related sample**: [Form. Textareas](https://snippet.dhtmlx.com/mt93jzrk)
 
 ## Adding Textarea
 

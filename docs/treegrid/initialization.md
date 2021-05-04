@@ -38,7 +38,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kob9385v	TreeGrid. Basic initialization}}
+**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
 Include source files
 --------------------
@@ -124,7 +124,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/44rmxlmq	TreeGrid.  External data loading}}
+**Related sample**: [TreeGrid.  External data loading](https://snippet.dhtmlx.com/44rmxlmq)
 
 - from a local source using the **parse** method of data collection:
 

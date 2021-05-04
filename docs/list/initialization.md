@@ -32,7 +32,7 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
 ~~~
 
 
-{{editor	https://snippet.dhtmlx.com/anj2keoc	List. Basic Initialization}}
+**Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
 Include source files
 --------------------
@@ -72,7 +72,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/anj2keoc	List. Basic Initialization}}
+**Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
 ### Configuration properties
 
@@ -95,7 +95,7 @@ var list = new dhx.List("list_container",{
 list.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/0xmyywi1	List. Parse Data}}
+**Related sample**: [List. Parse Data](https://snippet.dhtmlx.com/0xmyywi1)
 
 - to load data from an external file, use the **load()** method of the Data Collection object:
 
@@ -107,4 +107,4 @@ var list = new dhx.List("list_container",{
 list.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1it5kfhq	List. Load Data}}
+**Related sample**: [List. Load Data](https://snippet.dhtmlx.com/1it5kfhq)

@@ -29,7 +29,7 @@ And this is how you can change the value of an input:
 toolbar.setState({"name":"Maintenance"});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/h34uh1dr	Toolbar. Set State}}
+**Related sample**: [Toolbar. Set State](https://snippet.dhtmlx.com/h34uh1dr)
 
 ### Getting values/states
 
@@ -57,7 +57,7 @@ toolbar.getState("name"); // -> "Maintenance"
 toolbar.getState(); // -> {"name":"Maintenance"}
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kvttdgad	Toolbar. Get State}}
+**Related sample**: [Toolbar. Get State](https://snippet.dhtmlx.com/kvttdgad)
 
 Hiding and showing controls
 -----------------
@@ -69,7 +69,7 @@ toolbar.hide(id); // hides a control
 toolbar.show(id); // shows a control
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 Starting from v7.0, it is possible to hide/show all Toolbar controls on the page at once by using the methods without parameters:
 
@@ -90,7 +90,7 @@ toolbar.disable(id); // disables a control
 toolbar.enable(id);  // enables a control
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 Starting from v7.0, it is possible to disable/enable all Toolbar controls on the page at once by using the methods without parameters:
 
@@ -120,7 +120,7 @@ To check if an item of Toolbar is disabled, call the [isDisabled()](toolbar/api/
 menu.isDisabled("1"); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 Adding a tooltip to a control
 --------------------
@@ -209,7 +209,7 @@ To get the selected items, call the [getSelected()](toolbar/api/toolbar_getselec
 toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
 Using Tree collection API
 ---------------
@@ -251,7 +251,7 @@ toolbar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/r6jv9kk2	Toolbar. Add}}
+**Related sample**: [Toolbar. Add](https://snippet.dhtmlx.com/r6jv9kk2)
 
 Templates for Toolbar controls in the JSON format are given [here](toolbar/load_data.md#jsonformattemplates).
 
@@ -280,7 +280,7 @@ toolbar.data.update("edit", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xfs5gh5t	Toolbar. Update}}
+**Related sample**: [Toolbar. Update](https://snippet.dhtmlx.com/xfs5gh5t)
 
 ### Removing controls from Toolbar
 
@@ -290,7 +290,7 @@ To remove a control, make use of the **remove()** method of Tree Collection. Pas
 toolbar.data.remove("control-id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/w8jcn1t2	Toolbar. Remove}}
+**Related sample**: [Toolbar. Remove](https://snippet.dhtmlx.com/w8jcn1t2)
 
 ### Rearranging controls
 

@@ -8,9 +8,9 @@ A control that allows a user to select time value either by moving handles along
 
 ![TimePicker](../assets/form/form_timepicker.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/4k3o8p7b	Form. TimePicker}}
+**Related sample**: [Form. TimePicker](https://snippet.dhtmlx.com/4k3o8p7b)
 
 ## Adding TimePicker 
 
@@ -65,4 +65,4 @@ var timepicker = form.getItem("timepicker").getWidget();  // -> TimePicker
 timepicker.setValue("00:39"); //set the value as a string
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control}}
+**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)

@@ -74,7 +74,7 @@ dhx.message({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/rsxdlicg	Message. Show Message}}
+**Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
 - **dhx.alert()** - to create an alert message box
 
@@ -86,7 +86,7 @@ dhx.alert({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/m4xka888	Message. Show Alert}}
+**Related sample**: [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
 - **dhx.confirm()** - to create a confirm message box 
 
@@ -99,7 +99,7 @@ dhx.confirm({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/iss7twe6	Message. Show Confirm}}
+**Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
 - **dhx.tooltip()** - to create a tooltip. The method takes two parameters:
     - **text** - (*string*) a string with the text of tooltip
@@ -109,7 +109,7 @@ dhx.confirm({
 dhx.tooltip("Current Value 1", {node: "first", position: "center"});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/c6jm8if6	Message. Show Tooltip}}
+**Related sample**: [Message. Show Tooltip](https://snippet.dhtmlx.com/c6jm8if6)
 
 ### Configuration properties
 

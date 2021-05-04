@@ -68,7 +68,7 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ajv5qqxq	Popup. Html Content}}
+**Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 - by calling [attach()](popup/api/popup_attach_method.md) to add other DHTMLX components into a popup
 
@@ -77,5 +77,5 @@ popup.attach("Timepicker");
 popup.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7x6hlbqx	Popup. Attach Timepicker}}
+**Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
 

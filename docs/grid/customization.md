@@ -11,7 +11,7 @@ There is a possibility to make changes in the look and feel of a grid.
 
 ![](../assets/grid/styling_grid.png)
 
-{{editor    https://snippet.dhtmlx.com/xs7bixmg	Grid. Styling Selection}}
+**Related sample**: [Grid. Styling Selection](https://snippet.dhtmlx.com/xs7bixmg)
 
 For this you need to take the following steps:
 
@@ -37,7 +37,7 @@ var grid = new dhx.Grid({
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/c5tr3s5r	Grid. Styling Grid}}
+**Related sample**: [Grid. Styling Grid](https://snippet.dhtmlx.com/c5tr3s5r)
 
 
 Styling header cells
@@ -73,7 +73,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7o4elf48	Grid. Styling Header Cells}}
+**Related sample**: [Grid. Styling Header Cells](https://snippet.dhtmlx.com/7o4elf48)
 
 
 Styling footer cells
@@ -110,7 +110,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/d254hcvp	Grid. Styling Footer Cells}}
+**Related sample**: [Grid. Styling Footer Cells](https://snippet.dhtmlx.com/d254hcvp)
 
 Styling rows
 ---------------
@@ -137,7 +137,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/2dxtwf9n	Grid. Custom Row Style}}
+**Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
 
 - with the help of the **addRowCss()** method:
 
@@ -154,7 +154,7 @@ var rowId = grid.data.getId(1);
 grid.addRowCss(rowId, "myCustomClass"); /*!*/
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/idvmge2d	Grid. Add Row Css}}
+**Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)
 
 where:
 
@@ -208,7 +208,7 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
 grid.addCellCss(rowId, "netChange", "myCustomClass");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/hskmp8rh	Grid. Add Cell Css}}
+**Related sample**: [Grid. Add Cell Css](https://snippet.dhtmlx.com/hskmp8rh)
 
 Adding custom marks to cells
 -------------------
@@ -323,7 +323,7 @@ var grid = new dhx.Grid("grid", {
 
 ![](../assets/grid/mark_cell.png)
 
-{{editor    https://snippet.dhtmlx.com/buirf16n	Grid. Mark Cells}}
+**Related sample**: [Grid. Mark Cells](https://snippet.dhtmlx.com/buirf16n)
 
 Adding template to cells
 -----------------------------
@@ -366,7 +366,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/9txizaow	Grid. Cell Templates}}
+**Related sample**: [Grid. Cell Templates](https://snippet.dhtmlx.com/9txizaow)
 
 ### Event handlers for the template
 
@@ -466,9 +466,9 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/md8tr3pr	Grid. Rich tooltip template for the first column}}
+**Related sample**: [Grid. Rich tooltip template for the first column](https://snippet.dhtmlx.com/md8tr3pr)
 
-{{editor	https://snippet.dhtmlx.com/954f7h9m	Grid. Tooltip template}}
+**Related sample**: [Grid. Tooltip template](https://snippet.dhtmlx.com/954f7h9m)
 
 {{note You should enable the [htmlEnable](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.}}
 

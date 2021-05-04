@@ -86,6 +86,6 @@ var sidebar = new dhx.Sidebar({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3mhhvvcr	Sidebar. Custom Css}}
+**Related sample**: [Sidebar. Custom Css](https://snippet.dhtmlx.com/3mhhvvcr)
 
 

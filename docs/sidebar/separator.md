@@ -17,7 +17,7 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/aq2l1z5n	Sidebar. Separator}}
+**Related sample**: [Sidebar. Separator](https://snippet.dhtmlx.com/aq2l1z5n)
 
 ### Properties
 

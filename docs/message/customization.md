@@ -53,12 +53,12 @@ dhx.message({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7s6p67ht	Message. Message Custom Styles}}
+**Related sample**: [Message. Message Custom Styles](https://snippet.dhtmlx.com/7s6p67ht)
 
 
-{{editor	https://snippet.dhtmlx.com/g9tba9xi	Message. Alert Custom Styles}}
+**Related sample**: [Message. Alert Custom Styles](https://snippet.dhtmlx.com/g9tba9xi)
 
-{{editor	https://snippet.dhtmlx.com/x0barf98	Message. Confirm Custom Styles}}
+**Related sample**: [Message. Confirm Custom Styles](https://snippet.dhtmlx.com/x0barf98)
 
 
 

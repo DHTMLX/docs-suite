@@ -25,7 +25,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kob9385v	TreeGrid. Basic initialization}}
+**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
 Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
 
@@ -84,7 +84,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/lgvoz0ar	TreeGrid. Adjust Columns}}
+**Related sample**: [TreeGrid. Adjust Columns](https://snippet.dhtmlx.com/lgvoz0ar)
 
 It is also possible to set the [](treegrid/api/treegrid_adjust_config.md) property to *true* in the configuration of a separate column to make its width adjust automatically to the content:
 
@@ -112,7 +112,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4158ftak	TreeGrid. Auto height}}
+**Related sample**: [TreeGrid. Auto height](https://snippet.dhtmlx.com/4158ftak)
 
 As a result, the height of the cells will automatically adjust to their content.
 
@@ -132,7 +132,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/irybslog	TreeGrid. Auto Width}}
+**Related sample**: [TreeGrid. Auto Width](https://snippet.dhtmlx.com/irybslog)
 
 You can disable this functionality for a specified column via setting the [](treegrid/api/treegrid_autowidth_config.md) property to *false* in the configuration of the column:
 
@@ -159,7 +159,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kob9385v	TreeGrid. Basic initialization}}
+**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
 Drag-n-drop of TreeGrid columns
 ----------------------------
@@ -188,7 +188,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ax5vs4a8	Setup drag column}}
+**Related sample**: [Setup drag column](https://snippet.dhtmlx.com/ax5vs4a8)
 
 {{note To make the process of reordering columns by drag and drop more flexible, you can apply the [related](treegrid/api/api_overview.md#column-drag-and-drop) drag-n-drop events.}}
 
@@ -212,7 +212,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/43covmy2	TreeGrid. Setup Drag Mode}}
+**Related sample**: [TreeGrid. Setup Drag Mode](https://snippet.dhtmlx.com/43covmy2)
 
 {{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](treegrid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
@@ -233,7 +233,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sdbfbv2n	TreeGrid. Editable Data}}
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 - editing of the specified columns only
 
@@ -328,7 +328,7 @@ To set this editor type you need to provide the **options** property with an arr
 } 
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sdbfbv2n	TreeGrid. Editable Data}}
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 
 - **checkbox** - an editor for cells with a two-state check box
@@ -345,7 +345,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sdbfbv2n	TreeGrid. Editable Data}}
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 {{note If you specify the **editable** option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
 
@@ -360,7 +360,7 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sdbfbv2n	TreeGrid. Editable Data}}
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 - **textarea** - an editor for cells that contain text
 
@@ -435,7 +435,7 @@ When using just the **type: "percent"** configuration option of a column, the re
 }
 ~~~
 
-{{editor https://snippet.dhtmlx.com/ampo9hsc	TreeGrid. Data formats}}
+**Related sample**: [TreeGrid. Data formats](https://snippet.dhtmlx.com/ampo9hsc)
 
 Frozen columns
 ---------------
@@ -452,7 +452,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/46me58ze	TreeGrid. Frozen Columns}}
+**Related sample**: [TreeGrid. Frozen Columns](https://snippet.dhtmlx.com/46me58ze)
 
 Header/footer content
 ----------------------------
@@ -548,7 +548,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xl0i3yof	TreeGrid. Rows Height}}
+**Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)
 
 The default value of the mentioned properties is 40.
 
@@ -566,7 +566,7 @@ You can set the **hidden:true** property in the [config of a column](treegrid/co
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/w3yg99la	TreeGrid. Hidden Columns}}
+**Related sample**: [TreeGrid. Hidden Columns](https://snippet.dhtmlx.com/w3yg99la)
 
 HTML content of TreeGrid columns
 ---------------------------------
@@ -620,7 +620,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/iubccmoi	TreeGrid. Html In Data}}
+**Related sample**: [TreeGrid. Html In Data](https://snippet.dhtmlx.com/iubccmoi)
 
 Event handlers for HTML content
 -----------------------------------
@@ -713,7 +713,7 @@ var grid = new dhx.Grid("grid_container", {
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/vq3i9maq	TreeGrid. Resizable Columns}}
+**Related sample**: [TreeGrid. Resizable Columns](https://snippet.dhtmlx.com/vq3i9maq)
 
 {{note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
 }}
@@ -731,7 +731,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xl0i3yof	TreeGrid. Rows Height}}
+**Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)
 
 In this case, the height of each row is 30.
 
@@ -759,7 +759,7 @@ var dataset = [
 ];
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kvl5y6nq	TreeGrid. Row height}}
+**Related sample**: [TreeGrid. Row height](https://snippet.dhtmlx.com/kvl5y6nq)
 
 {{note The **height** option has a higher priority than the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid.}}
 
@@ -784,7 +784,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3ojyoryn	TreeGrid. Custom Row Style}}
+**Related sample**: [TreeGrid. Custom Row Style](https://snippet.dhtmlx.com/3ojyoryn)
 
 Selection
 ------------
@@ -817,7 +817,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/v0dyh06q	TreeGrid. Selection}}
+**Related sample**: [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
 
 Sorting columns
 --------------------
@@ -834,7 +834,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/r4xfph82	TreeGrid. Sortable Columns}}
+**Related sample**: [TreeGrid. Sortable Columns](https://snippet.dhtmlx.com/r4xfph82)
 
 ### Sorting separate columns
 
@@ -920,7 +920,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/o62liqew	TreeGrid. Spans Cells}}
+**Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)
 
 **Note**, that if both the **spans** and [splitAt](treegrid/configuration.md#frozencolumns) properties are set in the Grid config, the following rules will be applied:
 

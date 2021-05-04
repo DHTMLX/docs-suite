@@ -104,7 +104,7 @@ treegrid.showColumn(col);
 treegrid.hideColumn(col);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1gekn97m	TreeGrid. Show/Hide column}}
+**Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
 
 Since the object of a column has the [hidden](treegrid/configuration.md#hiddencolumns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
 
@@ -117,7 +117,7 @@ You can check whether a column is hidden or shown on a page using the [](treegri
 treegrid.isColumnHidden("country"); // -> true|false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/fcjfp19d	TreeGrid. Is column hidden}}
+**Related sample**: [TreeGrid. Is column hidden](https://snippet.dhtmlx.com/fcjfp19d)
 
 Hiding/showing a row
 --------------------------
@@ -233,7 +233,7 @@ It is also possible to scroll treegrid content to a particular cell. Pass the id
 treegrid.scrollTo("15","c");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kxytdnvi	TreeGrid. Controlling Scroll Behavior}}
+**Related sample**: [TreeGrid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/kxytdnvi)
 
 ### Getting the state of scroll
 
@@ -345,9 +345,9 @@ treegrid.data.filter({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/epsslwcd	TreeGrid. Basic Filter}}
+**Related sample**: [TreeGrid. Basic Filter](https://snippet.dhtmlx.com/epsslwcd)
 
-{{editor	https://snippet.dhtmlx.com/zdecovib	TreeGrid. External filter}}
+**Related sample**: [TreeGrid. External filter](https://snippet.dhtmlx.com/zdecovib)
 
 Sorting data
 --------------
@@ -380,7 +380,7 @@ treeGrid.data.sort({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bvfnpvwv	TreeGrid. Sorting data}}
+**Related sample**: [TreeGrid. Sorting data](https://snippet.dhtmlx.com/bvfnpvwv)
 
 To discard all applied sorting rules, call the method without parameters:
 
@@ -422,7 +422,7 @@ var state = treegrid.getSortingState();
 // -> {dir: "desc", by: "country"}
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bdwwhvls	TreeGrid. Get sorting state}}
+**Related sample**: [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
 
 Editing data
 ------------------
@@ -448,7 +448,7 @@ For example, you can edit the first cell of the "project" column like this:
 treegrid.editCell(grid.data.getId(0),"project");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/zm6wh1ss	TreeGrid. Editing data}}
+**Related sample**: [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
 
 To finish editing of a cell, use the [editEnd()](treegrid/api/treegrid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
@@ -478,7 +478,7 @@ To collapse a treegrid node, make use of the [](treegrid/api/treegrid_collapse_m
 treegrid.collapse("native");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1grpsaa2	TreeGrid. Expand/Collapse nodes}}
+**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
 ### Expand/collapse all nodes
 
@@ -491,7 +491,7 @@ treegrid.expandAll();
 treegrid.collapseAll();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1grpsaa2	TreeGrid. Expand/Collapse nodes}}
+**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
 Exporting TreeGrid
 -------------------
@@ -508,7 +508,7 @@ treegrid.export.xls({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/zyfois4q	TreeGrid. Export}}
+**Related sample**: [TreeGrid. Export](https://snippet.dhtmlx.com/zyfois4q)
 
 Export settings include:
 
@@ -563,7 +563,7 @@ treegrid.export.csv({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/zyfois4q	TreeGrid. Export}}
+**Related sample**: [TreeGrid. Export](https://snippet.dhtmlx.com/zyfois4q)
 
 The **csv()** method returns a CSV string with TreeGrid data.
 

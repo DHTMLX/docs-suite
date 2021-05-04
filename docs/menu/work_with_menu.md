@@ -15,7 +15,7 @@ menu.hide(id);
 menu.show(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/a9vbhxgd	Menu. Show/Hide Menu Item}}
+**Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
 
 Both methods can take one parameter - the ID of a menu item or an array with IDs of menu items.
 
@@ -45,7 +45,7 @@ menu.enable("1");
 menu.enable(["1","3"]);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/zuoam7r7	Menu. Enable/Disable Menu Item}}
+**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
 Both methods can take one parameter: the ID of a menu item or an array of IDs.
 
@@ -76,7 +76,7 @@ To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_i
 menu.isDisabled("1"); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/zuoam7r7	Menu. Enable/Disable Menu Item}}
+**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
 Selecting/Unselecting an item
 -----------------------------------------
@@ -176,7 +176,7 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/nood4bfx	Menu. Add/Remove Item}}
+**Related sample**: [Menu. Add/Remove Item](https://snippet.dhtmlx.com/nood4bfx)
 
 ### Rearranging menu items
 
@@ -239,7 +239,7 @@ You can remove any item from a menu with the **remove()** method. The item will 
 menu.data.remove("id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/nood4bfx	Menu. Add/Remove Item}}
+**Related sample**: [Menu. Add/Remove Item](https://snippet.dhtmlx.com/nood4bfx)
 
 To remove all items from Menu, call the **removeAll()** method. Afterwards, you can load other options.
 

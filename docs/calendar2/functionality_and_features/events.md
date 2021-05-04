@@ -32,7 +32,7 @@ Several handlers can be attached to one event, and all of them will be executed.
 
 {{note The names of events are case-insensitive.}}
 
-{{editor    https://snippet.dhtmlx.com/7kj7fiek	Calendar. Events}}
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
 ## Detaching event listeners
 

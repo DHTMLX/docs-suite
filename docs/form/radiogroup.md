@@ -7,11 +7,11 @@ A control intended for creating groups of Radio buttons.
 
 ![RadioGroup control](../assets/form/form_radio.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/ycp1cbct	Form. Radio Buttons}}
+**Related sample**: [Form. Radio Buttons](https://snippet.dhtmlx.com/ycp1cbct)
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 ## Adding RadioGroup
 

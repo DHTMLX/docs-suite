@@ -27,7 +27,7 @@ after the source files of dhtmlxWindow as follows:
 
 Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for the header or the footer. [See details below](window/customization.md#updatecontrols).
 
-{{editor	https://snippet.dhtmlx.com/ucozvx01	Window. Custom Icons}}
+**Related sample**: [Window. Custom Icons](https://snippet.dhtmlx.com/ucozvx01)
 
 Controls and operations
 ----------------------
@@ -69,7 +69,7 @@ dhxWindow.footer.data.add({icon: "mdi mdi-thumb-up", id: "like"});
 dhxWindow.footer.data.add({icon: "mdi mdi-thumb-down", id: "dislike"})
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/o7xlvvv3	Window. Custom Buttons}}
+**Related sample**: [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
 
 ### Updating controls
 
@@ -85,7 +85,7 @@ dhxWindow.header.data.update("close", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ucozvx01	Window. Custom Icons}}
+**Related sample**: [Window. Custom Icons](https://snippet.dhtmlx.com/ucozvx01)
 
 ### Deleting controls
 
@@ -102,7 +102,7 @@ There is a possibility to make changes in the look and feel of a window.
 
 ![](../assets/window/custom_style.png)
 
-{{editor	https://snippet.dhtmlx.com/t5mvhwx8	Window. Custom Styles}}
+**Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)
 
 For this you need to take the following steps:
 

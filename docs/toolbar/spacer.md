@@ -7,7 +7,7 @@ This item takes space on the toolbar and is used for aligning controls.
 
 ![](../assets/toolbar/spacer.png)
 
-{{editor	https://snippet.dhtmlx.com/0wt6z7sc	Toolbar. Spacer}}
+**Related sample**: [Toolbar. Spacer](https://snippet.dhtmlx.com/0wt6z7sc)
 
 ## Adding Spacer
 
@@ -32,6 +32,6 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 Check the full list of available operations in the [Toolbar API](toolbar/api/refs/toolbar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).

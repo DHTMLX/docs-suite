@@ -7,7 +7,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ![](../assets/sidebar/htmlcontent.png)
 
-{{editor	https://snippet.dhtmlx.com/26ds0gxp	Sidebar. Custom HTML}}
+**Related sample**: [Sidebar. Custom HTML](https://snippet.dhtmlx.com/26ds0gxp)
 
 Adding Custom HTML
 -----------------

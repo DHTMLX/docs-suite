@@ -7,9 +7,9 @@ An input with a color picker attached to it for selecting a color.
 
 ![ColorPicker](../assets/form/form_colorpicker.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/n52dl19s	Form. ColorPicker}}
+**Related sample**: [Form. ColorPicker](https://snippet.dhtmlx.com/n52dl19s)
 
 ## Adding ColorPicker
 
@@ -42,7 +42,7 @@ For example, you can get the value of the control:
 var value = form.getItem("colorpicker").getValue();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ocfas6go	Form. Get Item}}
+**Related sample**: [Form. Get Item](https://snippet.dhtmlx.com/ocfas6go)
 
 ### Methods
 
@@ -64,4 +64,4 @@ var colorpicker = form.getItem("colorpicker").getWidget();  // -> ColorPicker
 colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control}}
+**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)

@@ -32,7 +32,7 @@ var list = new dhx.List({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/s461f09w	List. Custom Styles}}
+**Related sample**: [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
 
 Styling items
 ----------------
@@ -60,7 +60,7 @@ list.data.map(function (item, i) {
 </style>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ipu9yshl	List. Custom item Styles}}
+**Related sample**: [List. Custom item Styles](https://snippet.dhtmlx.com/ipu9yshl)
 
 Adding custom selection
 ----------------------
@@ -69,7 +69,7 @@ It is also possible to customize selection of an item.
 
 ![](../assets/list/custom_selection.png)
 
-{{editor	https://snippet.dhtmlx.com/6hss19d3	List. Add Custom Selection With Custom Css}}
+**Related sample**: [List. Add Custom Selection With Custom Css](https://snippet.dhtmlx.com/6hss19d3)
 
 ~~~js
 <style>

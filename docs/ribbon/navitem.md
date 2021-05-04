@@ -18,7 +18,7 @@ ribbon.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/zijc2nta	Ribbon. Nav Items}}
+**Related sample**: [Ribbon. Nav Items](https://snippet.dhtmlx.com/zijc2nta)
 
 ### Properties
 
@@ -58,7 +58,7 @@ You can add a custom HTML content to a navItem with the help of the **html** pro
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3djaib6o	Ribbon. Item HTML Content}}
+**Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
 
 
 ## Showing/hiding a navItem
