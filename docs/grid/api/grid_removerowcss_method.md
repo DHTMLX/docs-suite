@@ -24,6 +24,6 @@ grid.removeRowCss("2", "myCustomClass");
 grid/api/grid_addrowcss_method.md
 
 
-@changelog:
+
 
 

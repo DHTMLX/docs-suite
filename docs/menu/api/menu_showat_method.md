@@ -23,7 +23,4 @@ document.querySelector('#menu').oncontextmenu = function(e) {
 menu/creating_context_menu.md
 
 
-@changelog:
-
-
 **Related sample**: [Menu. Show At](https://snippet.dhtmlx.com/9xfpymlg)

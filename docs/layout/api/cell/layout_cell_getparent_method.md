@@ -40,6 +40,6 @@ An example of a returned config object:
 
 
 
-@changelog:
+
 
 

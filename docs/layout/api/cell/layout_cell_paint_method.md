@@ -18,6 +18,3 @@ layout.paint();
 
 
 
-@changelog:
-
-

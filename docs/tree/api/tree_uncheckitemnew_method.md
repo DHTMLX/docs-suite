@@ -27,6 +27,6 @@ tree.uncheckItem("history");
 tree/api/tree_checkitem_method.md
 tree/api/tree_getchecked_method.md
 
-@changelog:
+
 
 @related: tree/work_with_tree.md#workingwithcheckboxes

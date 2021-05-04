@@ -25,7 +25,7 @@ dhxWindow.show();
 window/api/window_getposition_method.md
 
 
-@changelog:
+
 
 @related:window/usage.md#positioningwindow
 

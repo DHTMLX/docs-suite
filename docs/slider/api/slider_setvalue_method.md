@@ -27,6 +27,6 @@ slider.setValue([2,10]);
 slider/api/slider_getvalue_method.md
 
 
-@changelog:
+
 
 **Related sample**: [Slider. Set Slider Value](https://snippet.dhtmlx.com/shw55sub)

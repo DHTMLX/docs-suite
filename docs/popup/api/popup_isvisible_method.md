@@ -22,6 +22,6 @@ popup.isVisible(); // -> true/false
 @related: popup/work_with_popup.md#checkingvisibilityofpopup
 
 
-@changelog:
+
 
 

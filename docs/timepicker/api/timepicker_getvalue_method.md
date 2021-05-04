@@ -43,6 +43,3 @@ timepicker/api/timepicker_setvalue_method.md
 
 @related: timepicker/usage.md#settingvalue
 
-@changelog:
-
-

@@ -27,6 +27,6 @@ colorpicker/api/colorpicker_getcustomcolors_method.md
 **Related sample**:
 - [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
 
-@changelog:
+
 
 

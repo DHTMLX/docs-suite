@@ -23,6 +23,6 @@ tree.checkItem("history");
 tree/api/tree_uncheckitemnew_method.md
 tree/api/tree_getchecked_method.md
 
-@changelog:
+
 
 @related: tree/work_with_tree.md#workingwithcheckboxes

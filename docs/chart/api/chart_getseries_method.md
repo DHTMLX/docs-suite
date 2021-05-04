@@ -40,6 +40,4 @@ chart/usage.md#gettingseriesconfiguration
 
 **Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
 
-@changelog:
-
 

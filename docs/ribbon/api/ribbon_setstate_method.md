@@ -24,6 +24,6 @@ ribbon.setState({
 
 @related: ribbon/operating_ribbon.md#settinggettingvaluesandstates
 
-@changelog:
+
 
 

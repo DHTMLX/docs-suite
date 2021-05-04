@@ -13,7 +13,4 @@ dhxWindow.paint();
 @template: api_method
 @descr:
 
-
-@changelog:
-
 @related:window/usage.md#repaintingwindow

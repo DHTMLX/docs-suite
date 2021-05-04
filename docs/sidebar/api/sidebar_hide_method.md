@@ -32,6 +32,6 @@ sidebar.hide();
 **Related sample**:
 - [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
 
-@changelog:
+
 
 

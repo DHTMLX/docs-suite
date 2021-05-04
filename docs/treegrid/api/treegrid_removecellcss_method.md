@@ -26,6 +26,6 @@ grid.removeCellCss("1", "b", "myCustomClass");
 grid/api/grid_addcellcss_method.md
 
 
-@changelog:
+
 
 

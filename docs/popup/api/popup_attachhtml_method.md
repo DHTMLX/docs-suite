@@ -23,6 +23,6 @@ popup.show("popup");
 **Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 
-@changelog:
+
 
 

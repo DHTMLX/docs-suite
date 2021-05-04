@@ -29,6 +29,6 @@ toolbar.show();
 
 @related: toolbar/common_methods.md#hidingandshowingcontrols
 
-@changelog:
+
 
 

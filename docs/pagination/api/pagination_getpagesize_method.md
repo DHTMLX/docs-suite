@@ -29,7 +29,7 @@ pagination.getPageSize();
 
 [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
-@changelog:
+
 
 
 @related: pagination/usage.md#settinggettingcountofitemsperpage

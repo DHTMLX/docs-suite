@@ -66,5 +66,3 @@ chart/usage.md#settingchartconfiguration
 
 **Related sample**:
 - [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
-
-@changelog:

@@ -166,4 +166,4 @@ Each column object may contain the followings fields:
 @relatedapi: treegrid/api/treegrid_getcolumn_method.md
 @related: treegrid/usage.md#workingwithcolumnsandcells
 
-@changelog:
+

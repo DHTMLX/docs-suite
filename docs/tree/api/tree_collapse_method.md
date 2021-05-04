@@ -21,6 +21,6 @@ tree.collapse("history");
 
 @related: tree/work_with_tree.md#expandingcollapsingitems
 
-@changelog:
+
 
 @relatedapi: tree/api/tree_expand_method.md

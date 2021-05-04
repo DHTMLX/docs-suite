@@ -23,7 +23,7 @@ colorpicker.setValue("#BDF0E9");
 colorpicker/api/colorpicker_getvalue_method.md
 
 
-@changelog:
+
 
 
 **Related sample**:

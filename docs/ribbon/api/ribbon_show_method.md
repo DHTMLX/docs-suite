@@ -29,6 +29,6 @@ ribbon.show();
 
 @related: ribbon/operating_ribbon.md#hidingandshowingcontrols
 
-@changelog:
+
 
 

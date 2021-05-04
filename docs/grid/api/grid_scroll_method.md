@@ -22,6 +22,6 @@ grid.scroll(75,230);
 
 @related: grid/usage.md#controlling-scroll-behavior
 
-@changelog:
+
 
 

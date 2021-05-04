@@ -34,6 +34,6 @@ layout.getCell("sidebar").attach(sidebar);
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
-@changelog:
+
 
 

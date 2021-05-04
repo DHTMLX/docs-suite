@@ -18,6 +18,6 @@ toolbar.destructor();
 **Related sample**: [Toolbar. Destructor](https://snippet.dhtmlx.com/3ivdiha0)
 
 
-@changelog:
+
 
 

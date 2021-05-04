@@ -23,7 +23,5 @@ dhxWindow.show();
 **Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
 
-@changelog:
-
 @related: window/how_to_start.md
 window/usage.md#attachingdhtmlxcomponents
