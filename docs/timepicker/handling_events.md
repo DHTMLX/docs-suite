@@ -13,7 +13,7 @@ timepicker.events.on("Change", function(value){
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5ccptwy7	Timepicker. Timepicker Events}}
+**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
 
 {{note The names of events are case-insensitive.}}
 

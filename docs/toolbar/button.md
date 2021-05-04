@@ -7,7 +7,7 @@ This is a simple button that can have an icon. Button can have two states and a 
 
 ![](../assets/toolbar/buttons.png)
 
-{{editor	https://snippet.dhtmlx.com/7aysw3gb	Toolbar. Buttons}}
+**Related sample**: [Toolbar. Buttons](https://snippet.dhtmlx.com/7aysw3gb)
 
 ## Adding Button
 
@@ -25,7 +25,7 @@ You can provide the [following properties](toolbar/api/api_button_properties.md)
 
 ## Adding an icon
 
-A button can have an icon which is set through the corresponding option [icon](toolbar__customization.html#icons):
+A button can have an icon which is set through the corresponding option [icon](toolbar/customization.md#icons):
 
 ~~~js
 {
@@ -57,7 +57,7 @@ You can add any custom HTML content to a button with the help of the **html** pr
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5n2b8x84	Toolbar. Item HTML Content}}
+**Related sample**: [Toolbar. Item HTML Content](https://snippet.dhtmlx.com/5n2b8x84)
 
 ## Showing/hiding a button 
 
@@ -68,7 +68,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Enabling/disabling a button 
 
@@ -79,7 +79,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 
@@ -93,7 +93,7 @@ You can add a tooltip to a button:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
 ## Two state buttons
 
@@ -107,7 +107,7 @@ You can create buttons with two states: active (pressed) and inactive (unpressed
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pj4eqw0	Toolbar. Two State}}
+**Related sample**: [Toolbar. Two State](https://snippet.dhtmlx.com/1pj4eqw0)
 
 ### Changing state of a two state button on the fly
 

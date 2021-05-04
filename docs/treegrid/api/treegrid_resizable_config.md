@@ -5,7 +5,7 @@ title: resizable
 
 @short: defines whether columns can be resized
 
-@signature: resizable?: boolean;
+@signature: {'resizable?: boolean;'}
 
 @example: 
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -19,6 +19,6 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @related:
 treegrid/configuration.md#resizing
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 
 **Related sample**: [TreeGrid. Resizable Columns](https://snippet.dhtmlx.com/vq3i9maq)

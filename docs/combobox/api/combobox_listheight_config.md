@@ -5,7 +5,7 @@ title: listHeight
 
 @short: sets the height of the list of options
 
-@signature: listHeight?: number | string;
+@signature: {'listHeight?: number | string;'}
 
 @default: 224
 
@@ -19,7 +19,7 @@ var combo = new dhx.Combobox("combo_container",{
 @descr: 
 
 
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#heightoflistofoptionsanditsitems
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#height-of-list-of-options-and-its-items
 
 **Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)

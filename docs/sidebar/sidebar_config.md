@@ -15,7 +15,7 @@ var sidebar = new dhx.Sidebar(document.body, {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bkh54ir7	Sidebar. Sidebar Collapsed}}
+**Related sample**: [Sidebar. Sidebar Collapsed](https://snippet.dhtmlx.com/bkh54ir7)
 
 
 Minimal width 

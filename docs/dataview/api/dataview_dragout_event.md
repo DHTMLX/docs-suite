@@ -5,16 +5,15 @@ title: dragOut
 
 @short: fires when an item is dragged out of a potential target
 
-@signature: dragOut: (data: object, events: MouseEvent) => void;
+@signature: {'dragOut: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("DragOut", function(data, events) {
     // your logic here
 });
 
-
-@template: api_event
 @descr:
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -34,9 +33,6 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
-@changelog: added in v7.0
-
 @relatedapi:
 dataview/api/dataview_afterdrag_event.md
 dataview/api/dataview_afterdrop_event.md
@@ -48,3 +44,5 @@ dataview/api/dataview_dragin_event.md
 dataview/api/dataview_dragstart_event.md
 
 [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+
+@changelog: added in v7.0

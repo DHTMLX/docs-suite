@@ -42,7 +42,7 @@ Then you can use the name of the icon as the value of the **icon** property in t
 
 ![](../assets/menu/custom_icons.png)
 
-{{editor	https://snippet.dhtmlx.com/nkmz6ilv	Menu. Custom Icons}}
+**Related sample**: [Menu. Custom Icons](https://snippet.dhtmlx.com/nkmz6ilv)
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
 
@@ -77,4 +77,4 @@ var menu = new dhx.Menu({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kfy2th5n	Menu. Custom Css}}
+**Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)

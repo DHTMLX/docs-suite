@@ -6,9 +6,9 @@ title: Initialization
 To add dhtmlxPopup into an application, you need to take the following simple steps:
 
 - [Download the Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Initialize Popup](#initializepopup) with the object constructor
-- [Set content into Popup](#attachcontentintopopup)
+- [Include source files](#include-source-files)
+- [Initialize Popup](#initialize-popup) with the object constructor
+- [Set content into Popup](#set-content)
 
 ~~~html
 <!DOCTYPE html>
@@ -68,7 +68,7 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ajv5qqxq	Popup. Html Content}}
+**Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 - by calling [attach()](popup/api/popup_attach_method.md) to add other DHTMLX components into a popup
 
@@ -77,5 +77,5 @@ popup.attach("Timepicker");
 popup.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7x6hlbqx	Popup. Attach Timepicker}}
+**Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
 

@@ -5,10 +5,7 @@ title: editItem
 
 @short: enables editing of an item
 
-```todoapi 
-void editItem(string|number id);
-editItem(id: string): void;
-```
+@signature: {'editItem(id: string | number): void;'}
 
 @params:
 - id		string|number		the id of an item
@@ -20,14 +17,12 @@ dataview.editItem("1");
 @template: api_method
 @descr:
 
-
-@changelog: added in v6.4
-
-
-@related: dataview/manipulating_data.md#editingitems
+@related: dataview/manipulating_data.md#editing-items
 
 @relatedapi:
 dataview/api/dataview_editable_config.md
 
 **Related sample**:
 - [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
+
+@changelog: added in v6.4

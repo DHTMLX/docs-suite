@@ -5,7 +5,7 @@ title: footer
 
 @short: adds a footer to a window
 
-@signature: footer?: boolean;
+@signature: {'footer?: boolean;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

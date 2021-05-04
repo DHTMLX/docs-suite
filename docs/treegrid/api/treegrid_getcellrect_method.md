@@ -5,7 +5,7 @@ title: getCellRect
 
 @short: returns the parameters of a cell
 
-@signature: getCellRect(row: string | number, col: string | number): object;
+@signature: {'getCellRect(row: string | number, col: string | number): ICellRect;'}
 
 @params:
 - row	string | number		the id of a row

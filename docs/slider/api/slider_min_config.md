@@ -5,7 +5,7 @@ title: min
 
 @short: the minimal value of slider
 
-@signature: min: number;
+@signature: {'min: number;'}
 
 @default: 0
 
@@ -18,5 +18,5 @@ var slider = new dhx.Slider("slider_container", {
 @descr: 
 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#minimalandmaximalvalues

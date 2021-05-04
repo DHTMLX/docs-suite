@@ -10,7 +10,7 @@ There is a possibility to make changes in the look and feel of a chart.
 
 ![](../assets/chart/custom_style.png)
 
-{{editor	https://snippet.dhtmlx.com/p82iew5s	Chart. Custom Styling}}
+**Related sample**: [Chart. Custom Styling](https://snippet.dhtmlx.com/p82iew5s)
 
 For this you need to take the following steps:
 
@@ -83,7 +83,7 @@ Adding template to scale labels
 
 ![](../assets/chart/text_template.png)
 
-{{editor	https://snippet.dhtmlx.com/nhm3438n	Chart. Text Template For Scale Labels}}
+**Related sample**: [Chart. Text Template For Scale Labels](https://snippet.dhtmlx.com/nhm3438n)
 
 While configuring chart scales you can add a template for the labels of the scales by using the **textTemplate** configuration option of [scales](chart/configuration_properties.md#scales):
 
@@ -116,7 +116,7 @@ Adding color gradient for bars
 
 ![](../assets/chart/bar_gradient.png)
 
-{{editor	https://snippet.dhtmlx.com/j3duyn2q	Chart. Bar Gradient}}
+**Related sample**: [Chart. Bar Gradient](https://snippet.dhtmlx.com/j3duyn2q)
 
 It is possible to define a color gradient for bars with the help of the **gradient** option of [series](chart/configuration_properties.md#series). You need to set its value as a function that takes the color of the series filling in Hex format as a parameter:
 
@@ -162,7 +162,7 @@ Adding template to tooltips
 
 ![](../assets/chart/show_tooltip.png)
 
-{{editor	https://snippet.dhtmlx.com/mbz7dkku	Chart. Tooltip Template}}
+**Related sample**: [Chart. Tooltip Template](https://snippet.dhtmlx.com/mbz7dkku)
 
 You can easily define a template for showing values of data items in tooltip via the **tooltipTemplate** option of [series](chart/configuration_properties.md#series):
 
@@ -203,7 +203,7 @@ Adding template to text values of data items in bars
 
 ![](../assets/chart/show_text.png)
 
-{{editor	https://snippet.dhtmlx.com/o7ke2f1s	Chart. Show Text}}
+**Related sample**: [Chart. Show Text](https://snippet.dhtmlx.com/o7ke2f1s)
 
 The **showTextTemplate** option of [series](chart/configuration_properties.md#series) lets you an opportunity to add a template to values that are shown for data items in bars:
 

@@ -5,7 +5,7 @@ title: width
 
 @short:  sets the width of ColorPicker
 
-@signature: width?: string | number;
+@signature: {'width?: string | number;'}
 
 @default: "238px"
 
@@ -18,6 +18,6 @@ var colorpicker = new dhx.Colorpicker("colorpicker", {
 @template:	api_config
 @descr: 
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
-colorpicker/configuration.md#widthofcolorpicker
+@related: colorpicker/how_to_start.md#initialize-colorpicker
+colorpicker/configuration.md#width-of-colorpicker
 

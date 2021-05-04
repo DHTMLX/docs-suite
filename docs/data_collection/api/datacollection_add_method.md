@@ -5,8 +5,10 @@ title: add
 
 @short: adds a new item to the component
 
+@signature: {'add(new_item: IDataItem | IDataItem[], index?: number): Id | Id[];'}
+
 @params:
-- new_item		object,array		the object of a new item or an array of item objects
+- new_item		object | array		the object of a new item or an array of item objects
 - index			number 				optional, the index of the position starting from which new items will be added
 
 @returns:

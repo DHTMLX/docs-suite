@@ -15,7 +15,7 @@ popup.events.on("Click", function(e){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor	https://snippet.dhtmlx.com/ro2lza9t	Popup. Events}}
+**Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
 ## Detaching event listeners
 

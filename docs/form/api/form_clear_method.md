@@ -5,6 +5,8 @@ title: clear
 
 @short: clears a form
 
+@signature: {'clear(method?: ClearMethod): void;'}
+
 @params:
 
 - mode		string		optional, the mode of clearing a form
@@ -27,7 +29,7 @@ The method may clear a form in one of three modes:
 - "validation" - clears only form validation
 - without parameters - clears both form values and validation
 
-@related:form/work_with_form.md#clearingform
+@related:form/work_with_form.md#clearing-form
 
 **Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 

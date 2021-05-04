@@ -5,7 +5,7 @@ title: getContainer
 
 @short: returns the HTML element of Window
 
-@signature: getContainer(): HTMLElement;
+@signature: {'getContainer(): HTMLElement;'}
 
 @returns:
 - param	HTMLElement     the HTML element 

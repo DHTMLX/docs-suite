@@ -5,7 +5,7 @@ title: tooltip
 
 @short: enables a tooltip on hovering over the content of a column
 
-@signature: tooltip?: boolean;
+@signature: {'tooltip?: boolean;'}
 
 @default: true
 
@@ -25,7 +25,7 @@ var grid = new dhx.Grid("grid", {
 
 
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#tooltip
 
 @changelog: added in v6.5

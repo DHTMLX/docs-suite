@@ -5,6 +5,8 @@ title: click
 
 @short: fires after a click on a Button control
 
+@signature: {'click: (events: Event) => void;'}
+
 @params:
 - events    Event   a native event object
 

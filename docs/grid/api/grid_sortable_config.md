@@ -5,7 +5,7 @@ title: sortable
 
 @short: defines whether sorting on clicking headers of columns is enabled
 
-@signature: sortable?: boolean;
+@signature: {'sortable?: boolean;'}
 
 @default: true
 
@@ -20,9 +20,9 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@changelog: added in v6.4
-
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#sortingcolumns
-
 **Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)
+
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#sorting-columns
+
+@changelog: added in v6.4

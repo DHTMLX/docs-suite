@@ -5,7 +5,7 @@ title: removeAll
 
 @short: fires when all items are removed from a data collection
 
-@signature: removeAll: () => void;
+@signature: {'removeAll: () => void;'}
 	
 @params:
 

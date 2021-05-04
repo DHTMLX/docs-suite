@@ -5,7 +5,7 @@ title: editable
 
 @short: enables editing in DataView
 
-@signature: editable?: boolean;
+@signature: {'editable?: boolean;'}
 
 @default: false
 
@@ -16,7 +16,7 @@ var dataview = new dhx.DataView("dataview_container", {editable:true});
 @relatedapi:
 dataview/api/dataview_edititem_method.md
 
-@related: dataview/configuration.md#editingitems
+@related: dataview/configuration.md#editing-items
 
 **Related sample**:
 - [Dataview. Editable Dataview](https://snippet.dhtmlx.com/m8fbqcza)

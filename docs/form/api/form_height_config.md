@@ -1,19 +1,22 @@
 ---
-sidebar_label: title
-title: title
+sidebar_label: height
+title: height
 ---          
 
-@short: specifies the title of the control group
+@short: sets the height of the control group 
 
-@type: string
+@signature: {'height?: string | number | "content";'}
+
+
+@type: string|number|"content"
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	title: "Form", /*!*/ // title for rows
+	height: "400px", /*!*/ // height for rows
     rows: [
         {
-            title: "Controls", /*!*/ // title for cols
+            height: "200px", /*!*/ // height for cols
             css: "dhx_layout-cell--bordered",
             cols: [{
                 type: "checkbox",
@@ -35,6 +38,7 @@ var form = new dhx.Form("form_container", {
 });
 
 
+
 @template:	api_config
 @descr: 
 
@@ -42,7 +46,10 @@ var form = new dhx.Form("form_container", {
 **Related sample**:
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
+@related: form/how_to_start.md#initialize-form
+form/configuration.md#widthheight
+
+@relatedapi: form/api/form_width_property.md
+
 @changelog: added in v6.4
 
-@related: form/how_to_start.md#initializeform
-form/configuration.md#title

@@ -25,13 +25,6 @@ Check [online samples for dhtmlxSidebar](https://docs.dhtmlx.com/suite/samples/s
 Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
 
 - [](init.md)
-- controls:
-- - [](customhtmlbutton.md)
-- - [](menuitem.md)
-- - [](navitem.md)
-- - [](separator.md)
-- - [](spacer.md)
-- - [](title.md)
 - [](data_loading.md)
 - [](sidebar_config.md)                   
 - [](work_with_sidebar.md)
@@ -42,7 +35,8 @@ Tells about creation of Sidebar and shows all available ways of data loading, co
 
 Dwells on the creation of Sidebar controls and the possibilities of manipulating them.
               	
-- [](customhtmlbutton.md)                                                           
+- [](customhtmlbutton.md)
+- [](menuitem.md)                                                           
 - [](navitem.md)
 - [](separator.md) 
 - [](spacer.md) 

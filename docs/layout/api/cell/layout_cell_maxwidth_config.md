@@ -5,7 +5,7 @@ title: maxWidth
 
 @short: the maximal width to be set for a cell
 
-@signature:  maxWidth?: number | string;
+@signature: {'maxWidth?: number | string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

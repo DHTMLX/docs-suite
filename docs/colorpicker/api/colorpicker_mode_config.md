@@ -4,8 +4,8 @@ title: mode
 ---          
 
 @short: specifies the mode of displaying a colorpicker
-
-@signature: mode?: "palette" | "picker";
+TODO: api change (добавить в desc "palette" | "picker")
+@signature: {'mode?: ViewsMode;'}
 
 @example: 
 var colorpicker = new dhx.Colorpicker("colorpicker", {
@@ -18,6 +18,6 @@ var colorpicker = new dhx.Colorpicker("colorpicker", {
 @template:	api_config
 @descr: 
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
+@related: colorpicker/how_to_start.md#initialize-colorpicker
 
 @changelog: added in v6.4

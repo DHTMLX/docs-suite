@@ -5,7 +5,7 @@ title: open
 
 @short: fires when a list with options is opened
 
-@signature: open: () => void;
+@signature: {'open: () => void;'}
 
 @example:
 combo.events.on("Open", function(){

@@ -7,7 +7,7 @@ title: Toolbar Custom HTML button properties
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="https://docs.dhtmlx.com/suite/toolbar__navitem.html">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="../../toolbar/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>id</b></td>

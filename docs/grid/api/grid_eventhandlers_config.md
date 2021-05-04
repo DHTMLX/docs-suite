@@ -5,12 +5,7 @@ title: eventHandlers
 
 @short: adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
 
-```todoapi 
-object eventHandlers;
-eventHandlers?: {
-	[key: string]: any;
-};
-```
+@signature: {'eventHandlers?: {[key: string]: any; };'}
 
 @example: 
 
@@ -40,7 +35,8 @@ const grid = new dhx.Grid("grid", {
 
 
 @template:	api_config
-@descr: 
+@descr:
+
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 <table class="webixdoc_links">
@@ -98,12 +94,12 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-@changelog: added in v7.0
 
 [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
 
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#eventhandlersforhtmlcontent
-grid/customization.md#addingtemplatetocells
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#event-handlers-for-html-content
+grid/customization.md#adding-template-to-cells
 
+@changelog: added in v7.0

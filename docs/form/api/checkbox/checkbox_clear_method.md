@@ -5,7 +5,7 @@ title: clear
 
 @short: clears a value of a Checkbox control
 
-@signature: clear(method?: ClearMethod): void;
+@signature: {'clear(): void;'}
 
 
 

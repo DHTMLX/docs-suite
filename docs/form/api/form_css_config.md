@@ -5,7 +5,7 @@ title: css
 
 @short: the name of a CSS class(es) applied to the control group
 
-@type: string
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -88,5 +88,5 @@ var form = new dhx.Form("form_container", {
 **Related sample**:
 - [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
 
-@related: form/how_to_start.md#initializeform
+@related: form/how_to_start.md#initialize-form
 form/customization.md

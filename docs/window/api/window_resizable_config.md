@@ -5,7 +5,7 @@ title: resizable
 
 @short: defines whether a window can be resized
 
-@signature: resizable?: boolean;
+@signature: {'resizable?: boolean;'}
 
 @default: false
 

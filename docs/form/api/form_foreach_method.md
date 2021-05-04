@@ -5,6 +5,8 @@ title: forEach
 
 @short: iterates over all controls of a from
 
+@signature: {'forEach(callback: FormDataCallback): void;'}
+
 @params:
 - callback	function    a function that will iterate over Form controls
 
@@ -35,7 +37,6 @@ The callback function takes three parameters:
 		</tr>
     </tbody>
 </table>
- 
 
 **Related sample**: [Form. ForEach](https://snippet.dhtmlx.com/hqzqpavs)
 

@@ -5,7 +5,7 @@ title: collapsable
 
 @short: defines whether a cell can be collapsed
 
-@signature: collapsable?: boolean;
+@signature: {'collapsable?: boolean;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {
@@ -19,7 +19,7 @@ var layout = new dhx.Layout("layout_container", {
 @descr: 
 
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/cell_configuration.md#collapsibility
 
 @relatedapi: layout/api/layout_collapsed_config.md

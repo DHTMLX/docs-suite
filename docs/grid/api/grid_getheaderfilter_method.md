@@ -5,10 +5,10 @@ title: getHeaderFilter
 
 @short: returns an object of the header filter by column id
 
-@signature: getHeaderFilter(colId: string | number): HTMLElement | object;
+@signature: {'getHeaderFilter(colId: string | number): HTMLElement | object;'}
 
 @params:
-- colId	string|number   the id of a column
+- colId	string | number   the id of a column
 
 @returns:
 - param	HTMLElement|object      an HTML object or an object with Combobox configuration
@@ -35,7 +35,7 @@ countryFilter.blur();
 
 [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
 
-@related: grid/usage.md#gettingheaderfilter
+@related: grid/usage.md#getting-header-filter
 
 @changelog:
 added in 7.0

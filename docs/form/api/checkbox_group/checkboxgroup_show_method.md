@@ -5,7 +5,7 @@ title: show
 
 @short: shows a CheckboxGroup control on the page
 
-@signature: show(): void;
+@signature: {'show(): void;'}
 
 
 @example:

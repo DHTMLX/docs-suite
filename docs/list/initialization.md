@@ -6,10 +6,10 @@ title: Initialization
 To initialize dhtmlxList on a page, you need to take the following simple steps:
 
 - [Download the List package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize List](#initializelist) with the object constructor
-- [Load data into List](#loaddataintolist)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize List](#initialize-list) with the object constructor
+- [Load data into List](#load-data-into-list)
 
 ~~~html
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
 ~~~
 
 
-{{editor	https://snippet.dhtmlx.com/anj2keoc	List. Basic Initialization}}
+**Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
 Include source files
 --------------------
@@ -63,7 +63,7 @@ Initialize List
 Initialize List with the `dhx.List` object constructor. The constructor has two parameters:
 
 - the HTML container for List,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxList
@@ -72,7 +72,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/anj2keoc	List. Basic Initialization}}
+**Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
 ### Configuration properties
 
@@ -95,7 +95,7 @@ var list = new dhx.List("list_container",{
 list.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/0xmyywi1	List. Parse Data}}
+**Related sample**: [List. Parse Data](https://snippet.dhtmlx.com/0xmyywi1)
 
 - to load data from an external file, use the **load()** method of the Data Collection object:
 
@@ -107,4 +107,4 @@ var list = new dhx.List("list_container",{
 list.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1it5kfhq	List. Load Data}}
+**Related sample**: [List. Load Data](https://snippet.dhtmlx.com/1it5kfhq)

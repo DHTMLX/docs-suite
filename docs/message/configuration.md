@@ -10,9 +10,9 @@ In this article you will find the detailed list of properties that you can use i
 
 ![](../assets/message/show_message.png)
 
-{{editor	https://snippet.dhtmlx.com/rsxdlicg	Message. Show Message}}
+**Related Sample:** [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
-The constructor of a message box may take [the following parameters](message/api/api_message_properties.md).
+You can configure a message box on its initialization:
 
 ~~~js
 dhx.message({
@@ -23,15 +23,17 @@ dhx.message({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qfmd877x	Message. Message Configuration}}
+**Related Sample:** [Message. Message Configuration](https://snippet.dhtmlx.com/qfmd877x)
+
+You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).
 
 ## Alert Box
 
 ![](../assets/message/show_alert.png)
 
-{{editor	https://snippet.dhtmlx.com/m4xka888	Message. Show Alert}}
+**Related Sample:** [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
-The constructor of an alert box may take [the following parameters](message/api/api_message_properties.md#alert-box).
+You can define the configuration of an alert box on its initialization:
 
 ~~~js
 dhx.alert({
@@ -41,15 +43,17 @@ dhx.alert({
 });
 ~~~
 
-{{editor	 https://snippet.dhtmlx.com/dk4a7959	Message. Alert And Confirm Configuration}}
+**Related Sample:** [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
+
+See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).
 
 ## Confirm Box
 
 ![](../assets/message/show_confirm.png)
 
-{{editor	https://snippet.dhtmlx.com/iss7twe6	Message. Show Confirm}}
+**Related Sample:** [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
-The constructor of a confirm box may take [the following parameters](message/api/api_message_properties.md#confirm-box).
+You can configure a confirm box on its initialization:
 
 ~~~js
 dhx.confirm({
@@ -60,7 +64,9 @@ dhx.confirm({
 });
 ~~~
 
-{{editor	 https://snippet.dhtmlx.com/dk4a7959	Message. Alert And Confirm Configuration}}
+**Related Sample:** [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
+
+You can find the list of configuration properties the constructor of the confirm box may take [in the related article](message/api/api_message_properties.md#confirm-box).
 
 ### Working with confirm
 
@@ -85,9 +91,10 @@ dhx.confirm({
 
 ![](../assets/message/show_tooltip.png)
 
-{{editor	https://snippet.dhtmlx.com/c6jm8if6	Message. Show Tooltip}}
+**Related Sample:** [Message. Show Tooltip](https://snippet.dhtmlx.com/c6jm8if6)
 
-The constructor of a tooltip may take [the following parameters](message/api/api_message_properties.md#tooltip).
+You can configure a tooltip on its initialization:
+
 ~~~js
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
@@ -95,9 +102,12 @@ dhx.tooltip("Tooltip From Right", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4wrrsr67	Message. Tooltip Position}}
+**Related Samples:** 
 
-{{editor	https://snippet.dhtmlx.com/zts0avym	Message. Tooltip Delay Configuration}}
+- [Message. Tooltip Position](https://snippet.dhtmlx.com/4wrrsr67)
+- [Message. Tooltip Delay Configuration](https://snippet.dhtmlx.com/zts0avym)
+
+See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).
 
 ### Smart positioning
 

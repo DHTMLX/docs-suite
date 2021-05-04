@@ -5,7 +5,7 @@ title: editable
 
 @short: enables editing of Tree items on a double-click  
 
-@signature: editable?: boolean;
+@signature: {'editable?: boolean;'}
 
 @default: false
 
@@ -16,7 +16,7 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 @descr: 
 
 @related:tree/configuration.md#editingofitems
- tree/initialization_of_dhtmlxtree.md#initializetree
+ tree/initialization_of_dhtmlxtree.md#initialize-tree
 
 **Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
 

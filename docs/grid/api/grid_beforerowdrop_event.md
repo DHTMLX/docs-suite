@@ -5,14 +5,14 @@ title: beforeRowDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target row
 
-@signature: beforeRowDrop: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'beforeRowDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
+- events		    Event		a native event object 
 
 @returns:
-- result	boolean		false - to block the default action, otherwise true
+- result	void | boolean		false - to block the default action, otherwise true
 
 
 @example:
@@ -54,11 +54,11 @@ grid/api/grid_cancelrowdrop_event.md
 grid/api/grid_dragrowin_event.md
 grid/api/grid_dragrowout_event.md
 grid/api/grid_dragrowstart_event.md
-grid/api/grid_dragitem_config.md
+[](grid/api/grid_dragitem_config.md)
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)	
 
+
+@related: grid/configuration.md#drag-n-drop-of-grid-rows
+
 @changelog: added in v7.0
-
-@related: grid/configuration.md#dragndropofgridrows
-

@@ -5,7 +5,7 @@ title: inputFocus
 
 @short: fires when a control is focused
 
-@signature: inputFocus: (id: string) => void;
+@signature: {'inputFocus: (id: string) => void;'}
 
 @params:
 - id		string			the ID of a new control

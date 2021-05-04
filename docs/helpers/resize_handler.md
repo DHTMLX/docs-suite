@@ -13,7 +13,7 @@ dhx.resizeHandler(container, function (width, height) {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qf2tb3em	Helpers. Resizer. Initialization}}
+**Related sample**: [Helpers. Resizer. Initialization](https://snippet.dhtmlx.com/qf2tb3em)
 
 The helper takes two parameters:
 

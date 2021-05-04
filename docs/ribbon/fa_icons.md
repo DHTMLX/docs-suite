@@ -60,7 +60,7 @@ var data = [
 ]
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sfkou9gp	Ribbon. Custom Icons}}
+**Related sample**: [Ribbon. Custom Icons](https://snippet.dhtmlx.com/sfkou9gp)
 
 {{note You can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) in the same way.}}
 
@@ -72,7 +72,7 @@ There is a possibility to make changes in the look and feel of a ribbon.
 ![](../assets/ribbon/custom_style.png)
 
 
-{{editor	https://snippet.dhtmlx.com/9ckg47ro	Ribbon. Custom Css}}
+**Related sample**: [Ribbon. Custom Css](https://snippet.dhtmlx.com/9ckg47ro)
 
 For this you need to take the following steps:
 

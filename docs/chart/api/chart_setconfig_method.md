@@ -5,6 +5,8 @@ title: setConfig
 
 @short: sets configuration of a chart
 
+@signature: {'setConfig(config: IChartConfig): void;'}
+
 ```todoapi
 void setConfig(object config);
 setConfig(config: IChartConfig): void;
@@ -57,7 +59,7 @@ chart.setConfig(config);
 
 @template: api_method
 @descr:
-See the list of chart configuration properties in the article chart/configuration_properties.md.
+See the list of chart configuration properties in the [](../../chart/configuration_properties.md) article.
 
 @related:
 chart/usage.md#settingchartconfiguration

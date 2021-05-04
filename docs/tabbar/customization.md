@@ -34,5 +34,5 @@ var tabbar = new dhx.Tabbar({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/47en9f0a	Tabbar. Custom Css}}
+**Related sample**: [Tabbar. Custom Css](https://snippet.dhtmlx.com/47en9f0a)
 

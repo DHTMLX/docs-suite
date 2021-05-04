@@ -15,7 +15,7 @@ The constructor of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) optional, an an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) optional, an an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>css</b></td>
@@ -23,7 +23,9 @@ The constructor of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, the HTML content to be displayed in a message box <br/> {{editor	https://snippet.dhtmlx.com/1stqqejp	Message. Message With Html Content}}</td>
+			<td>(<i>string</i>) optional, the HTML content to be displayed in a message box <br/> 
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1stqqejp" target="_blank">Message. Message With Html Content</a>
+			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>node</b></td>
@@ -31,7 +33,9 @@ The constructor of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>position</b></td>
-			<td>(<i>string</i>) optional, the position of a message box:"top-left"|"top-right"|"bottom-left"|"bottom-right" <br/> {{editor	https://snippet.dhtmlx.com/3wxrafmo	Message. Message Container}}</td>
+			<td>(<i>string</i>) optional, the position of a message box:"top-left"|"top-right"|"bottom-left"|"bottom-right" <br/> 
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message Container</a>
+			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>expire</b></td>

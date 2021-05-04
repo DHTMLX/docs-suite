@@ -5,8 +5,7 @@ title: html
 
 @short: sets HTML content for a tab
 
-```todoapi  в старой доке не вижу```
-@signature: html?: string;
+@signature: {'html?: string;'}
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar_container",{

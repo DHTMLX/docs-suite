@@ -5,7 +5,7 @@ title: focus
 
 @short: sets focus in the input without opening a popup with options
 
-@signature: focus(): void;
+@signature: {'focus(): void;'}
 
 @example:
 combo.focus();
@@ -14,12 +14,10 @@ combo.focus();
 @template: api_method
 @descr:
 
-@related: combo/work_with_combo.md#settingfocus
+@related: combobox/work_with_combo.md#settingfocus
 
 
 **Related sample**:
 - [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
-
-@changelog:
 
 

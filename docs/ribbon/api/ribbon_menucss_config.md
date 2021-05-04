@@ -5,7 +5,7 @@ title: menuCss
 
 @short: adds style classes to all containers of Ribbon controls with nested items
 
-@signature: menuCss?: string;
+@signature: {'menuCss?: string;'}
 
 @example: 
 <style>

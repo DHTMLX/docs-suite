@@ -4,13 +4,9 @@ title: columns
 description: description
 ---          
 
-
-
 @short: specifies the configuration of grid columns
 
-
-
-@signature: columns?: ICol[];
+@signature: {'columns?: ICol[];'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -32,7 +28,7 @@ Each column object may contain a set of properties. You will find the full list 
 
 
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#columns
 
 grid/customization.md

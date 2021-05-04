@@ -5,6 +5,8 @@ title: enable
 
 @short: enables selection of cells in Grid
 
+@signature: {'enable(): void;'}
+
 
 
 

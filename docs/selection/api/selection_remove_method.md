@@ -5,6 +5,8 @@ title: remove
 
 @short: unselects a previously selected item
 
+@signature: {'remove(id?: string | number): boolean;'}
+
 @params:
 - id		string,number		optional, the id of an item
 

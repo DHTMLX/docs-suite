@@ -5,13 +5,11 @@ title: click
 
 @short: fires after a click on a control
 
-@signature: click: (id: string, e: Event) => any;
-
-<!-- void click(string id,Event e){ ... }; -- void??? -->
+@signature: {'click: (id: string, events: Event) => void;'}
 
 @params:
 - id 		string		the ID of a clicked control
-- e 		Event		a native event object
+- events 		Event		a native event object
 
 
 @example:

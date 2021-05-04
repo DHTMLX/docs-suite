@@ -5,7 +5,7 @@ title: disabled
 
 @short: makes a form disabled
 
-@type: boolean
+@signature: {'disabled?: boolean;'}
 
 @example: 
 var form = new dhx.Form("form_container", {
@@ -18,6 +18,9 @@ var form = new dhx.Form("form_container", {
 
 **Related sample**:
 - [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
+
+@related: form/how_to_start.md#initialize-form
+form/configuration.md#making-form-disabled
 
 @changelog: added in v6.4
 

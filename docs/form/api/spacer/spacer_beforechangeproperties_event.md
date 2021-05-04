@@ -5,6 +5,8 @@ title: beforeChangeProperties
 
 @short: fires before configuration attributes of the control are changed dynamically
 
+@signature: {'beforeChangeProperties: (properties: IBaseLayoutItem) => boolean | void;'}
+
 @params:
 - properties     object      an object with configuration attributes of the control and their new values
 
@@ -17,12 +19,9 @@ form.getItem("spacer").events.on("BeforeChangeProperties", function(properties) 
     return true;
 });
 
-
 @template: api_event
 @descr:
 
 @relatedapi: form/api/spacer/spacer_setproperties_method.md
 
-
 @changelog: added in v7.0
-

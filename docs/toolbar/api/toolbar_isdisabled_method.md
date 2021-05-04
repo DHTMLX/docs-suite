@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether an item of Toolbar is disabled
 
-@signature: isDisabled(id: string): boolean;
+@signature: {'isDisabled(id: string): boolean;'}
 
 @params:
 - id		string		an id of the Toolbar item

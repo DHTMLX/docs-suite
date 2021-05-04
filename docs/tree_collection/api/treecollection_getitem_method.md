@@ -5,6 +5,8 @@ title: getItem
 
 @short: gets an item by its ID
 
+@signature: {'getItem(id: Id): T;'}
+
 @params:
 - id 		string		 the ID of an item
 

@@ -5,12 +5,7 @@ title: on
 
 @short: adds handlers to DOM events of a cell
 
-```todoapi
-object on;
-on?: {
-	[key: string]: any;
-};
-```
+@signature: {'on?: {[key: string]: any; };'}
 
 @example: 
 // adds a click event handler to the element of a cell
@@ -46,4 +41,4 @@ const layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout

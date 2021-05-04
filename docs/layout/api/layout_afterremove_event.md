@@ -5,7 +5,7 @@ title: afterRemove
 
 @short: fires after removing a cell
 
-@signature: afterRemove: (id: string) => void;
+@signature: {'afterRemove: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

@@ -11,7 +11,7 @@ title: beforeShow
 - element 		HTMLElement		 the container a popup is placed in
 
 @returns:
-- result		boolean			true to show a popup, false to block showing a popup
+- result		void | boolean			true to show a popup, false to block showing a popup
 
 @example:
 popup.events.on("BeforeShow", function(element){

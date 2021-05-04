@@ -5,7 +5,7 @@ title: legend
 
 @short: defines the configuration of a chart legend
 
-@signature: legend?: object;
+@signature: {'legend?: ILegendConfig;'}
 
 @example: 
 var chart = new dhx.Chart("chart_container",{
@@ -23,16 +23,17 @@ var chart = new dhx.Chart("chart_container",{
 });
 
 
-@template:	api_config
-@descr: 
+@descr:
 
-### The list of config options for legend (for charts with scales)
+## The list of config options for legend (for charts with scales)
 
 <table class="webixdoc_links">
 	<tbody>
         <tr>
 			<td class="webixdoc_links0"><b>form</b></td>
-			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>{{editor    https://snippet.dhtmlx.com/n8wsfv5n	Chart. Legend Form}}</td>
+			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n8wsfv5n" target="_blank">Chart. Legend Form</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>itemPadding</b></td>
@@ -57,13 +58,13 @@ var chart = new dhx.Chart("chart_container",{
     </tbody>
 </table>
 
-### The list of config options for legend (for charts without scales: Pie, Pie3D, Donut)
+## The list of config options for legend (for charts without scales: Pie, Pie3D, Donut)
 
 <table class="webixdoc_links">
 	<tbody>
        <tr>
 			<td class="webixdoc_links0"><b>values</b></td>
-			<td>(<i>object</i>) maps attributes of legend items to <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> properties. Contains the following properties:
+			<td>(<i>object</i>) maps attributes of legend items to <a href="../../chart/data_loading#preparing-data-set">data set</a> properties. Contains the following properties:
             	<ul>
                 	<li><b>id</b> - (<i>string/number</i>) the id of the series that will be bound to the legend </li>
                     <li><b>text</b> - (<i>string</i>) the pointer to the data value to take a text for the legend from</li>

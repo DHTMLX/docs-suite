@@ -7,9 +7,9 @@ An input field for typing some text inside.
 
 ![Input control](../assets/form/form_input.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/9q8fubjm	Form. Inputs}}
+**Related sample**: [Form. Inputs](https://snippet.dhtmlx.com/9q8fubjm)
 
 ## Adding Input 
 

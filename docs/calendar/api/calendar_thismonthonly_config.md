@@ -5,12 +5,9 @@ title: thisMonthOnly
 
 @short: hides dates of the previous/next months relative to the currently displayed one
 
-@signature: thisMonthOnly?: boolean;
+@signature: {'thisMonthOnly?: boolean;'}
 
 @default: false
-
-
-@type: boolean
 
 @example: 
 var calendar = new dhx.Calendar("calendar_container", {
@@ -23,7 +20,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#displayingonlycurrentmonth
 
 **Related sample**:

@@ -5,6 +5,8 @@ title: beforeChangeProperties
 
 @short: fires before configuration attributes of the control are changed dynamically
 
+@signature: {'beforeChangeProperties: (properties: ICheckboxProps) => boolean | void;'}
+
 @params:
 - properties     object      an object with configuration attributes of the control and their new values
 

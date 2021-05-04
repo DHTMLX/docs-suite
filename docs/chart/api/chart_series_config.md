@@ -3,11 +3,11 @@ sidebar_label: series
 title: series
 ---          
 
-``` todo спросить про нижнюю таблицу
+
 
 @short: defines configuration of chart series
 
-@signature: series?: SeriaConfig[];
+@signature: {'series?: SeriaConfig[];'}
 
 @example: 
 var chart = new dhx.Chart("chart_container",{
@@ -36,11 +36,9 @@ var chart = new dhx.Chart("chart_container",{
     ]
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
-
-### The list of config options for series (for charts with scales)
+## The list of config options for series (for charts with scales)
 
 <table class="webixdoc_links">
 	<tbody>
@@ -48,7 +46,6 @@ var chart = new dhx.Chart("chart_container",{
 			<td class="webixdoc_links0"><b>id</b></td>
 			<td>(<i>string</i>) the id of a series </td>
 		</tr>
-
 		<tr>
 			<td class="webixdoc_links0"><b>type</b></td>
 			<td>(<i>string</i>) the type of a chart </td>
@@ -71,11 +68,13 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) the name of a <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to map data values to </td>
+			<td>(<i>string</i>) the name of a <a href="../../chart/data_loading#preparing-data-set">data set</a> property to map data values to </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>pointType</b></td>
-			<td>(<i>string</i>) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/>{{editor    https://snippet.dhtmlx.com/cbj54wwu	Chart. Point Types}} </td>
+			<td>(<i>string</i>) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cbj54wwu" target="_blank">Chart. Point Types</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>css</b></td>
@@ -91,14 +90,15 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>tooltipTemplate</b></td>
-			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip <br/>{{editor    https://snippet.dhtmlx.com/mbz7dkku	Chart. Tooltip Template}}</td>
+			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/mbz7dkku" target="_blank">Chart. Tooltip Template</a>
+			</td>
 		</tr>
     </tbody>
 </table>
 
-####Options specific for Area, Bar and Radar charts
+### Options specific for Area, Bar and Radar charts
 
-<br/>
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -113,22 +113,27 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 <br/>
 
-####Options specific for Bar charts
+### Options specific for Bar charts
 
-<br/>
 <table class="webixdoc_links">
 	<tbody>
     	<tr>
 			<td class="webixdoc_links0"><b>gradient</b></td>
-			<td>(<i>function</i>) a function that defines a color gradient for bars <br/>{{editor    https://snippet.dhtmlx.com/j3duyn2q	Chart. Bar Gradient}} </td>
+			<td>(<i>function</i>) a function that defines a color gradient for bars <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/j3duyn2q" target="_blank">Chart. Bar Gradient</a>
+			</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>baseLine</b></td>
-			<td>(<i>number</i>) sets a base line for rendering data items (bars) <br/>{{editor    https://snippet.dhtmlx.com/6tls4qhf	Chart. Base Line}}</td>
+			<td>(<i>number</i>) sets a base line for rendering data items (bars) <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/6tls4qhf" target="_blank">Chart. Base Line</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>stacked</b></td>
-			<td>(<i>boolean</i>) defines whether a stacked chart will be rendered  <br/>{{editor    https://snippet.dhtmlx.com/ilew1ds4	Chart. Stacked Chart}}</td>
+			<td>(<i>boolean</i>) defines whether a stacked chart will be rendered  <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked Chart</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>barWidth</b></td>
@@ -144,14 +149,16 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>showTextRotate</b></td>
-			<td>(<i>number|string</i>) the degree of rotation of text values of data items in bars <br/>{{editor    https://snippet.dhtmlx.com/o7ke2f1s	Chart. Show Text}}</td>
+			<td>(<i>number|string</i>) the degree of rotation of text values of data items in bars <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show Text</a>
+			</td>
 		</tr>
     </tbody>
 </table>
 <br/>
 
 
-### The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
+## The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
 
 <table class="webixdoc_links">
 	<tbody>
@@ -161,15 +168,15 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>text</b></td>
-			<td>(<i>string</i>) the name of the <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to map labels of data values to </td>
+			<td>(<i>string</i>) the name of the <a href="../../chart/data_loading#preparing-data-set">data set</a> property to map labels of data values to </td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) the name of the <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> property to map data values to</td>
+			<td>(<i>string</i>) the name of the <a href="../../chart/data_loading#preparing-data-set">data set</a> property to map data values to</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>color</b></td>
-			<td>(<i>string</i>) points to the property in a <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> that defines the color of a pie/donut sector</td>
+			<td>(<i>string</i>) points to the property in a <a href="../../chart/data_loading#preparing-data-set">data set</a> that defines the color of a pie/donut sector</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>useLines</b></td>
@@ -210,4 +217,3 @@ var chart = new dhx.Chart("chart_container",{
 @related:
 chart/configuration_properties.md#series
 
-``` todo

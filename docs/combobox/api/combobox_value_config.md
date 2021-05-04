@@ -6,7 +6,7 @@ description: description
 
 @short: specifies the values that will appear in the input on initialization of the combobox
 
-@signature: value?: string | string[];
+@signature: {'value?: string | string[];'}
 
 @example: 
 var combobox = new dhx.Combobox("combobox", {

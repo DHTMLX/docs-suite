@@ -5,7 +5,7 @@ title: getCell
 
 @short: returns the object of a selected cell
 
-@signature: getCells(): array[];
+@signature: {'getCells(): array[];'}
 
 @returns:
 param   object  an object with parameters of a selected cell
@@ -20,12 +20,11 @@ var selectedCell = grid.selection.getCell();
 @template: api_method
 @descr:
 
-@related: grid/usage_selection.md#gettingobjectofselectedcells
+@related: grid/usage_selection.md#getting-object-of-selected-cells
 
 
 @relatedapi: grid/api/selection/selection_enable_method.md
 grid/api/selection/selection_getcells_method.md
 
-@changelog:
 
 

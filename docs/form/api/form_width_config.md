@@ -5,7 +5,9 @@ title: width
 
 @short: sets the width of the control group
 
-@type: string|number|"content"
+@signature: {'width?: string | number | "content";'}
+
+@type: string | number | "content"
 
 @example: 
 var form = new dhx.Form("form_container", {
@@ -42,9 +44,10 @@ var form = new dhx.Form("form_container", {
 **Related sample**:
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
-@changelog: added in v6.4
 
-@related: form/how_to_start.md#initializeform
+@related: form/how_to_start.md#initialize-form
 form/configuration.md#widthheight
 
 @relatedapi: form/api/form_height_property.md
+
+@changelog: added in v6.4

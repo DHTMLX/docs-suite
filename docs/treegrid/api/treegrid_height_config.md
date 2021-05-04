@@ -5,7 +5,7 @@ title: height
 
 @short: sets the height of a grid
 
-@signature: height?: number;
+@signature: {'height?: number;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -18,6 +18,6 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
 
 @related: treegrid/configuration.md#widthheight
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 
 @relatedapi: treegrid/api/treegrid_width_config.md

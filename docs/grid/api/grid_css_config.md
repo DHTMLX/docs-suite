@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to Grid
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -60,4 +60,4 @@ var grid = new dhx.Grid({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid

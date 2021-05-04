@@ -5,7 +5,7 @@ title: autoload
 
 @short: defines that the structure of a tree is being built while opening items
 
-@signature: autoload?: string;
+@signature: {'autoload?: string;'}
 
 @example: 
 var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
@@ -26,4 +26,4 @@ app.get("/backend/autoload", (req, res) => {
 
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
+@related: tree/initialization_of_dhtmlxtree.md#initialize-tree

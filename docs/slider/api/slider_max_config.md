@@ -5,7 +5,7 @@ title: max
 
 @short: the maximal value of slider
 
-@signature: max: number;
+@signature: {'max: number;'}
 
 @default: 100
 
@@ -17,5 +17,5 @@ var slider = new dhx.Slider("slider_container", {
 @template:	api_config
 @descr: 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#minimalandmaximalvalues

@@ -5,7 +5,7 @@ title: htmlEnable
 
 @short: specifies the HTML content (inner HTML) of Grid columns
 
-@signature: htmlEnable?: boolean;
+@signature: {'htmlEnable?: boolean;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -21,7 +21,7 @@ If you set the property to *false*, the content of Grid columns will be displaye
 
 **Related sample**: [Grid. Html In Data](https://snippet.dhtmlx.com/chitkvkc)
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#htmlcontentofgridcolumns
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#html-content-of-grid-columns
 
 @changelog: added in v6.3

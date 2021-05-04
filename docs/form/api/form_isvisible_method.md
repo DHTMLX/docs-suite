@@ -5,6 +5,8 @@ title: isVisible
 
 @short: checks whether a form is visible
 
+@signature: {'isVisible(name?: string): boolean;'}
+
 @params:
 - name|id			string		the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 

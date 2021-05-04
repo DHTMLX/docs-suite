@@ -5,7 +5,7 @@ title: weekNumbers
 
 @short: defines whether to show the numbers of weeks
 
-@signature: weekNumbers?: boolean;
+@signature: {'weekNumbers?: boolean;'}
 
 @default: false
 
@@ -22,5 +22,5 @@ var calendar = new dhx.Calendar("calendar_container", {
 - [Calendar. Numbers Of Weeks](https://snippet.dhtmlx.com/9692gk6n)
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#numbersofweeks

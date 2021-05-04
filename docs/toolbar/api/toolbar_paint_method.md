@@ -5,6 +5,6 @@ title: paint
 
 @short: repaints Toolbar on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example: toolbar.paint();

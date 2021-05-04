@@ -5,7 +5,7 @@ title: afterUnSelect
 
 @short: fires after unselecting an item
 
-@signature: afterUnSelect: (id: string) => void;
+@singnature: {'afterUnSelect: (id: string) => void;'}
 
 @params:
 - id		string		the id of an item

@@ -5,6 +5,8 @@ title: getProperties
 
 @short: returns an object with the available configuration attributes of the control
 
+@signature: {'getProperties(): IComboProps;'}
+
 @returns:
 param   object      an object with the available attributes of the control and their values
 
@@ -143,7 +145,7 @@ The returned object of the **Combo** control can contain the following configura
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="https://docs.dhtmlx.com/suite/combo__customization.html#customfilterforoptions">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>multiselection</b></td>

@@ -5,7 +5,8 @@ title: hidden
 
 @short: defines whether a form is hidden
 
-@type: boolean
+@signature: {'hidden?: boolean;'}
+
 
 @example: 
 var form = new dhx.Form("form_container", {
@@ -21,7 +22,7 @@ var form = new dhx.Form("form_container", {
 @relatedsample:
 
 
-@changelog: added in v6.5
+@related: form/how_to_start.md#initialize-form
+form/configuration.md#making-form-hidden
 
-@related: form/how_to_start.md#initializeform
-form/configuration.md#makingformhidden
+@changelog: added in v6.5

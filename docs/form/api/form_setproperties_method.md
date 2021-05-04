@@ -6,6 +6,9 @@ description: description
 
 @short: allows changing available configuration attributes of Form controls dynamically
 
+@signature: {'setProperties(arg: string | { [name: string]: IFormProps }, props?: IFormProps): void;'}
+
+
 @params:
 
 - arg string,object either the name of the control or its id (if the name attribute is not defined in the config of the control), or an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
@@ -104,7 +107,7 @@ It is possible to change the following configuration attributes of the **Button*
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>view</b></td>
@@ -205,7 +208,7 @@ It is possible to change the following configuration attributes of the **DatePic
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -440,7 +443,7 @@ It is possible to change the following configuration attributes of the **ColorPi
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -589,7 +592,7 @@ It is possible to change the following configuration attributes of the **Combo**
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="https://docs.dhtmlx.com/suite/combo__customization.html#customfilterforoptions">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>multiselection</b></td>
@@ -671,7 +674,7 @@ It is possible to change the following configuration attributes of the **Input**
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -820,7 +823,7 @@ It is possible to change the following configuration attributes of the **Select*
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>width</b></td>
@@ -1219,7 +1222,7 @@ It is possible to change the following configuration attributes of the **TimePic
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>

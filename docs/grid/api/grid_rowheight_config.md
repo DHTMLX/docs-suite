@@ -5,7 +5,7 @@ title: rowHeight
 
 @short: defines the height of a row in a grid
 
-@signature: rowHeight?: number;
+@signature: {'rowHeight?: number;'}
 
 @default: 40
 
@@ -20,7 +20,9 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@related: grid/initialization.md#initializegrid
+**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
+
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#rowheight
 
-**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
+

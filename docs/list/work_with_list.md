@@ -13,7 +13,7 @@ To set focus on a List item, make use of the [](list/api/list_setfocus_method.md
 list.setFocus("7");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ermcjx3d	List. Set Active Index}}
+**Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
 
 To get the id of a List item in focus, use the [](list/api/list_getfocus_method.md) method. It will return the id of an item in focus:
 
@@ -30,7 +30,7 @@ You can edit a particular List item with the help of the [](list/api/list_editit
 list.editItem("1");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6wsxgswc	List. Edit Items}}
+**Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
 
 Disabling and enabling selection of an item
 ----------------------------------
@@ -65,7 +65,7 @@ It is possible to add more items into the initialized List on the fly. Use the *
 list.data.add({value:"New item"},1);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/f7cbdiqg	List. Add}}
+**Related sample**: [List. Add](https://snippet.dhtmlx.com/f7cbdiqg)
 
 ###Updating List items
 
@@ -92,7 +92,7 @@ list.data.update("option_id",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6jpn7a6h	List. Update}}
+**Related sample**: [List. Update](https://snippet.dhtmlx.com/6jpn7a6h)
 
 ###Removing items from List
 
@@ -102,7 +102,7 @@ To remove an item, make use of the **remove()** method of Data Collection. Pass 
 list.data.remove("option_id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wmozu18g	List. Delete}}
+**Related sample**: [List. Delete](https://snippet.dhtmlx.com/wmozu18g)
 
 ###Filtering List data
 
@@ -117,7 +117,7 @@ list.data.filter({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/k8kvmy8v	List. Filter}}
+**Related sample**: [List. Filter](https://snippet.dhtmlx.com/k8kvmy8v)
 
 Filtering can be applied to any attribute of a data item.
 
@@ -132,7 +132,7 @@ list.data.sort({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/876meu9a	List. Sort}}
+**Related sample**: [List. Sort](https://snippet.dhtmlx.com/876meu9a)
 
 Sorting can be applied to any attribute of a data item.
 

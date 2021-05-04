@@ -5,7 +5,7 @@ title: afterCollapse
 
 @short: fires after collapsing a sidebar
 
-afterCollapse: () => void;
+@signature: {'afterCollapse: () => void;'}
 
 @example:
 sidebar.events.on("AfterCollapse", function() {

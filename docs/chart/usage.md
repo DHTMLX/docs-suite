@@ -38,7 +38,7 @@ var config = {
 chart.setConfig(config);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7umj531n	Chart. Change Configuration On The Fly}}
+**Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
 
 Getting series configuration
 -----------------------------
@@ -62,7 +62,7 @@ var config = chart.getSeries("A");
 */
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/9jtscd9q	Chart. Get Series}}
+**Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
 
 Iterating over series
 ----------------------
@@ -103,13 +103,13 @@ chart.eachSeries(function(seria){
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4kbj4lmw	Chart. Each Series}}
+**Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
 Adding items into Chart
 -----------------------
 
 The API of [Data Collection](data_collection/api/refs/datacollection.md) allows you to perform operations with Chart data items. 
-For example, you can add more items (points) into your Chart using the [](data_collection/api/add.md) method, like this:
+For example, you can add more items (points) into your Chart using the [](data_collection/api/datacollection_add_method.md) method, like this:
 
 ~~~js
 var config = {
@@ -172,9 +172,9 @@ The method takes as a parameter an object with two properties:
     </tbody>
 </table>
 
-A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it corrrectly.
+A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it correctly.
 
-{{editor    https://snippet.dhtmlx.com/dpz4w5nr	Chart. Adding Data On The Fly}}
+**Related sample**: [Chart. Adding Data On The Fly](https://snippet.dhtmlx.com/dpz4w5nr)
 
 @todo:
 add section "work with data"

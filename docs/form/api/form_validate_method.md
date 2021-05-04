@@ -5,6 +5,8 @@ title: validate
 
 @short: validates form fields
 
+@signature: {'validate(silent): boolean;'}
+
 @params:
 - silent    boolean     optional, if true - the method will return the result of validation without calling validation events and without modifying the form visually
 
@@ -26,7 +28,7 @@ var result = form.validate(); // -> true/false
 **Related sample**: [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
 @related:
-form/work_with_form.md#validatingform
+form/work_with_form.md#validating-form
 
 @changelog:
 The **silent** parameter is added in v7.0.

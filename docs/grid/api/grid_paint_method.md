@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints a grid on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 grid.paint();
@@ -14,7 +14,7 @@ grid.paint();
 @template: api_method
 @descr:
 
-@related: grid/usage.md#repaintinggrid
+@related: grid/usage.md#repainting-grid
 
 
 

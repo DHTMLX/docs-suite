@@ -5,8 +5,10 @@ title: send
 
 @short: sends a POST request for file upload to a server-side URL 
 
+@signature: {'send(params?: IParams): void;'}
+
 @params:
-* params 		object 			optional, additional parameters for a request
+- params 		object 			optional, additional parameters for a request
 
 @example:
 vault.uploader.send();

@@ -5,7 +5,7 @@ title: getChecked
 
 @short: gets all checked tree items
 
-@signature: getChecked(): string[];
+@signature: {'getChecked(): Id[];'}
 
 @returns:
 - checked	array		an array of ids of checked items

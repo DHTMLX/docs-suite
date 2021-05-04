@@ -10,12 +10,12 @@ title: Timepicker properties
         - the hour value
         - the minutes value
         - the "AM/PM" identifier for 12-hour format as a string
-    -  The value set as an object:
-        - for the 24-hour format contains key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
-        - or the 12-hour format contains key:value pairs for for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
+    - The value set as an object:
+        - for the `24-hour` format contains key:value pairs for hours, minutes and their values:<br> `{hour: 0, minute: 39}`
+        - for the `12-hour` format contains key:value pairs for hours, minutes, am/pm identifiers and their values: <br> `{hour: 6, minute: 0, AM: true}`
     -  The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the `getTime()` method of the `Date` object.
 - `valueFormat` - (string) defines the format of the value to be applied when working with the events of the timepicker control: "string", "timeObject"
-- `validation` - (function) the validation function, takes as a parameter the value to validate and returns true/false to indicate the result of validation
+- `validation` - (function) [the validation function](form/work_with_form.md#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
 - `icon` - (string) the name of an icon from the used icon font
 - `placeholder` - (string) a tip for the input
 - `editable` - (boolean) allows a user to enter the value of the control manually

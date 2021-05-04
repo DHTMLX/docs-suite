@@ -5,8 +5,10 @@ title: add
 
 @short: selects a specified item
 
+@signature: {'add(id: string | number): void;'}
+
 @params:
-- id		string,number		the id of an item
+- id		string | number		the id of an item
 
 @example:
 var id = tree.selection.getId(); // -> "2"

@@ -5,11 +5,11 @@ title: dragColumnStart
 
 @short: fires when dragging of a column has started
 
-@signature: dragColumnStart: (data: object, events: MouseEvent) => void;
+@signature: {'dragColumnStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("DragColumnStart", function(data, events) {

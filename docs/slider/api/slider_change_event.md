@@ -5,7 +5,7 @@ title: change
 
 @short: fires on change of the slider value
 
-@signature: change: (value: number, oldValue: number, isRange: boolean) => void;
+@signature: {'change: (value: number, oldValue: number, isRange: boolean) => void;'}
 
 @params:
 - newValue		number		the new value set for the slider

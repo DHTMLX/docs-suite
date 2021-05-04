@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Tree
 
-@signature: dragMode?:  "target" | "both" | "source";;
+@signature: {'dragMode?: "target" | "both" | "source";'}
 
 @example: 
 var tree = new dhx.Tree("tree_container", { 
@@ -22,5 +22,5 @@ Drag-n-drop can work in three modes:
 
 **Related sample**: [Tree. Drag Modes](https://snippet.dhtmlx.com/7idtw7i4)
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
+@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
 tree/drag_and_drop_handling.md#dragmode

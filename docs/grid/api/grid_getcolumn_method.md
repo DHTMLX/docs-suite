@@ -5,25 +5,21 @@ title: getColumn
 
 @short: returns an object with attributes of a column
 
-```todoapi
-object getColumn(string|number colId);
-getColumn(colId: string): ICol;
-```
+@signature: {'getColumn(colId: string | number): ICol;'}
 
 @params:
-- colId		string,number		the id of a column
+- colId		string | number		the id of a column
 
 @returns:
 - config		object		an object with attributes of a column
-
 
 @example:
 var column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 
-
 @template: api_method
 @descr:
+
 The returned object contains the following set of properties:
 
 <table class="webixdoc_links">
@@ -77,7 +73,7 @@ The returned object contains the following set of properties:
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>options</b></td>
@@ -135,7 +131,8 @@ The returned object contains the following set of properties:
     </tbody>
 </table>
 
-@related: grid/usage.md#workingwithcolumnsandcells
+@related: grid/usage.md#working-with-columns-and-cells
+
 @relatedapi: grid/api/grid_setcolumns_method.md
 
 @changelog:

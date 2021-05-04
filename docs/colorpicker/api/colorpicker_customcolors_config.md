@@ -5,7 +5,7 @@ title: customColors
 
 @short: shows a section with custom colors in the bottom part of ColorPicker
 
-@signature: setCustomColors(customColors: string[]): void;
+@signature: {'customColors?: string[];'}
 
 @example: 
 var colorpicker = new dhx.Colorpicker("colorpicker_container", {
@@ -17,4 +17,4 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 **Related sample**: [Colorpicker. Custom Colors](https://snippet.dhtmlx.com/zf88vxd1)
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
+@related: colorpicker/how_to_start.md#initialize-colorpicker

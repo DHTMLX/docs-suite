@@ -5,7 +5,7 @@ title: autoEmptyRow
 
 @short: adds an empty row after the last filled row in the Grid
 
-@signature: autoEmptyRow?: boolean;
+@signature: {'autoEmptyRow?: boolean;'}
 
 @default: true
 
@@ -20,8 +20,8 @@ var grid = new dhx.Grid("grid_container", {
 @template:	api_config
 @descr: 
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#automaticaddingofemptyrowintogrid
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#automatic-adding-of-empty-row-into-grid
 
 **Related sample**:
 - [Grid. Auto Empty Row](https://snippet.dhtmlx.com/rkytig73)

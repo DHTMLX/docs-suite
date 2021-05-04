@@ -5,10 +5,7 @@ title: rows
 
 @short: an array of rows objects
 
-```todoapi
-array rows;
-rows?: ICellConfig[] | ILayoutConfig[];
-```
+@signature: {'rows?: ICellConfig[] | ILayoutConfig[];'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {
@@ -47,5 +44,5 @@ var layout = new dhx.Layout("layout_container", {
 
 @relatedapi: layout/api/layout_cols_config.md
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/layout_structure.md

@@ -5,7 +5,7 @@ title: timePicker
 
 @short: adds a timepicker into the calendar
 
-@signature: timePicker?: boolean;
+@signature: {'timePicker?: boolean;'}
 
 @default: false
 
@@ -26,5 +26,5 @@ calendar/api/calendar_timeformat_config.md
 **Related sample**:
 - [Calendar. Timepicker In Calendar](https://snippet.dhtmlx.com/jkbfb202)
 
-@related: calendar/how_to_start.md#initializecalendar
+@related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#timepicker

@@ -5,7 +5,7 @@ title: expand
 
 @short: expands a tree node by id
 
-@signature: expand(id: string): void;
+@signature: {'expand(id: string): void;'}
 
 @params:
 - id	string		the id of a node to expand

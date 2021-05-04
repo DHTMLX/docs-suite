@@ -6,9 +6,9 @@ title: Initialization
 To initialize dhtmlxWindow on a page, you need to take the following simple steps:
 
 - [Download the dhtmlxWindow package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Initialize Window](#initializewindow) with the object constructor
-- [Set content](#setcontent) into a created window
+- [Include source files](#include-source-files)
+- [Initialize Window](#initialize-window) with the object constructor
+- [Set content](#set-content) into a created window
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -32,7 +32,7 @@ To initialize dhtmlxWindow on a page, you need to take the following simple step
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6qqezjxe	Window. Basic Initialization}}
+**Related sample**: [Window. Basic Initialization](https://snippet.dhtmlx.com/6qqezjxe)
 
 Include source files
 --------------------
@@ -67,7 +67,7 @@ var dhxWindow = new dhx.Window({
 dhxWindow.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6qqezjxe	Window. Basic Initialization}}
+**Related sample**: [Window. Basic Initialization](https://snippet.dhtmlx.com/6qqezjxe)
 
 {{note To show a created window on a page, you should call the [show()](window/api/window_show_method.md) method after initialization of the component.}}
 
@@ -91,7 +91,7 @@ dhxWindow.attachHTML(html);
 dhxWindow.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6uelt44m	Window. Attach HTML To Window}}
+**Related sample**: [Window. Attach HTML To Window](https://snippet.dhtmlx.com/6uelt44m)
 
 - by calling [](window/api/window_attach_method.md) to attach other DHTMLX components
 
@@ -100,7 +100,7 @@ dhxWindow.attach("richtext",{mode: "document"});
 dhxWindow.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/t9ncuuou	Window. Attaching Other Components}}
+**Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
 
 - via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization

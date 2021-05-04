@@ -5,7 +5,7 @@ title: enable
 
 @short: enables selection of cells in Grid
 
-@signature: enable(): void;
+@signature: {'enable(): void;'}
 
 @example:
 grid.selection.enable();
@@ -17,7 +17,7 @@ grid.selection.enable();
 grid/api/selection/selection_disable_method.md
 grid/api/grid_selection_config.md
 
+@related: grid/usage_selection.md
+
 @changelog:
 added in v7.0
-
-@related: grid/usage_selection.md

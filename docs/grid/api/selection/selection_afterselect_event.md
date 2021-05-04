@@ -5,7 +5,7 @@ title: afterSelect
 
 @short: fires after selecting a cell
 
-@signature: afterSelect: (row: object, col: object) => void;
+@signature: {'afterSelect: (row: IRow, col: ICol) => void;'}
 
 @params:
 
@@ -31,8 +31,9 @@ grid.events.on("AfterSelect", function(row, col){
 ~~~
 
 
-@changelog:
-added in v7.0
 
 @relatedapi: 
 grid/api/selection/selection_enable_method.md
+
+@changelog:
+added in v7.0

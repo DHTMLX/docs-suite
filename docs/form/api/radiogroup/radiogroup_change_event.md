@@ -4,7 +4,8 @@ title: change
 ---          
 
 @short: fires on changing the value of a control
- 
+
+@signature: {'(value: string) => void;'} 
 
 @params:
 - value     string     the current value of the control

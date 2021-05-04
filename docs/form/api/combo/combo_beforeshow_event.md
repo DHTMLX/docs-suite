@@ -4,7 +4,8 @@ title: beforeShow
 ---          
 
 @short: fires before a control is shown
- 
+
+@signature: {'beforeShow: (value: string | string[]) => boolean | void;'}
 
 @params:
 - value     string|string[]     the current value of the control

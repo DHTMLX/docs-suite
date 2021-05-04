@@ -5,9 +5,10 @@ title: setValue
 
 @short: sets the value for a Slider control
 
+@signature: {'setValue(value: number | number[]): void;'}
+
 @params:
 - value     number|number[]     the value to be set  
-
 
 @example:
 form.getItem("slider").setValue([2]);

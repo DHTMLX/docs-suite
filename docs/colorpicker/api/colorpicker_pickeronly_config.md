@@ -5,7 +5,7 @@ title: pickerOnly
 
 @short: defines whether ColorPicker is shown only in the picker mode
 
-@signature: pickerOnly?: boolean;
+@signature: {'pickerOnly?: boolean;'}
 
 @default: false
 
@@ -18,8 +18,8 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 @template:	api_config
 @descr: 
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
-colorpicker/configuration.md#paletteorpickermodeonly
+@related: colorpicker/how_to_start.md#initialize-colorpicker
+colorpicker/configuration.md#palette-or-picker-mode-only
 
 
 **Related sample**: [Colorpicker. Picker Only](https://snippet.dhtmlx.com/5zlvvwpl)

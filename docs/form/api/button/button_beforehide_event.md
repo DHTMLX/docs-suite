@@ -5,6 +5,8 @@ title: beforeHide
 
 @short: fires before a Button control is hidden
 
+@signature: {'beforeHide: (text: string, init: boolean) => boolean | void;'}
+
 @params:
 - text     string  the current text label of the control
 - init    boolean     true if the event is triggered on the button control initialization

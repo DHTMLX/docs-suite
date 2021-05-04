@@ -5,6 +5,7 @@ title: focus
 
 @short: sets focus to the checkbox of the CheckboxGroup control by its id
 
+@signature: {'focus(id?: string): void;'}
 
 @params:
 - id    string  optional, the id of a checkbox 

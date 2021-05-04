@@ -7,7 +7,7 @@ This is a horizontal (between menu options) or vertical (between toolbar control
 
 ![](../assets/toolbar/separator.png)
 
-{{editor	https://snippet.dhtmlx.com/sguwr3m9	Toolbar. Separator}}
+**Related sample**: [Toolbar. Separator](https://snippet.dhtmlx.com/sguwr3m9)
 
 ## Adding Separator
 
@@ -32,6 +32,6 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

@@ -5,7 +5,7 @@ title: dragItem
 
 @short: enables the possibility to reorder grid columns by drag and drop
 
-dragItem?: "row" | "column" | "complex";
+@signature: {'dragItem?: "row" | "column" | "complex";'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -16,27 +16,26 @@ var grid = new dhx.Grid("grid_container", {
 
 
 @template:	api_config
-@descr: 
+@descr:
+ 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
 @related: 
-grid/initialization.md#initializegrid
-grid/configuration.md#dragndropofgridcolumns
+grid/initialization.md#initialize-grid
+grid/configuration.md#drag-n-drop-of-grid-columns
 
-
-@changelog: added in v6.5
-
-@edition: pro
 
 @relatedapi:
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_beforecolumndrop_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
+[](grid/api/grid_aftercolumndrag_event.md)
+[](grid/api/grid_aftercolumndrop_event.md)
+[](grid/api/grid_beforecolumndrag_event.md)
+[](grid/api/grid_beforecolumndrop_event.md)
+[](grid/api/grid_cancolumndrop_event.md)
+[](grid/api/grid_cancelcolumndrop_event.md)
+[](grid/api/grid_dragcolumnin_event.md)
+[](grid/api/grid_dragcolumnout_event.md)
+[](grid/api/grid_dragcolumnstart_event.md)
+
+@changelog: added in v6.5

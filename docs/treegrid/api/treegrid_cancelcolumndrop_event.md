@@ -5,11 +5,11 @@ title: cancelColumnDrop
 
 @short: fires on moving a mouse pointer out of borders of a column while dragging the column
 
-@signature: cancelColumnDrop: (data: object, events: MouseEvent) => any;
+@signature: {'cancelColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("CancelColumnDrop", function(data, events) {

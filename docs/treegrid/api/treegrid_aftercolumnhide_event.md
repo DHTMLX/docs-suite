@@ -5,7 +5,7 @@ title: afterColumnHide
 
 @short: fires after a column is hidden
 
-@signature: afterColumnHide: (col: object) => void;
+@signature: {'afterColumnHide: (col: ICol) => void;'}
 
 @params: 
 - col   object  an object with a column configuration

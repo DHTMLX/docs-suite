@@ -5,7 +5,7 @@ title: itemsCount
 
 @short: shows the total number of selected options
 
-@signature: showItemsCount?: boolean | ((count: number) => string);
+@signature: {'itemsCount?: boolean | ((count: number) => string);'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {
@@ -31,5 +31,5 @@ Note that to select several options you need to enable the **multiselection** op
 @changelog: added in v6.4 
 
 
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#numberofselectedoptions
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#number-of-selected-options

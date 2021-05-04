@@ -5,7 +5,7 @@ title: afterColumnHide
 
 @short: fires after a column is hidden
 
-@signature: afterColumnHide: (col: object) => void;
+@signature: {'afterColumnHide: (col: object) => void;'}
 
 @params: 
 - col   object  an object with a column configuration
@@ -19,6 +19,6 @@ grid.events.on("AfterColumnHide", function(column){
 @template: api_event
 @descr:
 
-@changelog: added in v7.0
+**Related Sample:** [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+@changelog: added in v7.0

@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether an item of Ribbon is disabled
 
-@signature: isDisabled(id: string): boolean;
+@signature: {'isDisabled(id: string): boolean;'}
 
 @params:
 - id	string		the id of a Sidebar item

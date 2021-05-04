@@ -5,7 +5,7 @@ title: modeChange
 
 @short: fires on change of the calendar mode
 
-@signature: modeChange: (mode: string) => void;
+@signature: {'modeChange: (mode: string) => void;'}
 
 @params:
 - mode      string      the calendar mode ("calendar", "year", "month", "timepicker")

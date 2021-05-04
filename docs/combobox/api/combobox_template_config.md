@@ -6,7 +6,7 @@ title: template
 
 @short: sets a template of displaying options in the popup list
 
-@signature: template?: (item: any) => string;
+@signature: {'template?: (item: any) => string;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {
@@ -22,8 +22,8 @@ var combo = new dhx.Combobox("combo_container", {
 The **template** function takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 
 
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#templateforcomboboxoptions
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#template-for-combobox-options
 
 **Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
 

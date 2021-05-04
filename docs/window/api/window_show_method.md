@@ -5,7 +5,7 @@ title: show
 
 @short: shows a window on a page
 
-@signature: show(left?: number, top?: number): void;
+@signature: {'show(left?: number, top?: number): void;'}
 
 @params:
 - left 		number 	optional, the left coordinate of a window position

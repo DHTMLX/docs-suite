@@ -33,7 +33,7 @@ Several handlers can be attached to one and the same event, and all of them will
 The names of the events are case-insensitive.
 }}
 
-{{editor	https://snippet.dhtmlx.com/iwt1yd61	List. List Events}}
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 
 ## Detaching event listeners
 

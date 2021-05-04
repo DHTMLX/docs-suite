@@ -5,7 +5,7 @@ title: disableTab
 
 @short: disables a tab on a page
 
-@signature: disableTab(id: string): boolean;
+@signature: {'disableTab(id: string): boolean;'}
 
 @params:
 - id	string  the id of a tab

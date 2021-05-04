@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to ComboBox
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -61,7 +61,7 @@ var combo = new dhx.Combobox({
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 
-@related: combo/how_to_start.md#initializecombobox
-combo/customization.md#styling
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/customization.md#styling
 
 **Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)

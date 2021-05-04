@@ -5,7 +5,7 @@ title: selection
 
 @short: enables selection of DataView items
 
-@signature: selection?: boolean;
+@signature: {'selection?: boolean;'}
 
 @default: true
 
@@ -25,7 +25,7 @@ var dataview = new dhx.DataView("dataview", {
 @relatedapi: dataview/api/selection/selection_enable_method.md
 dataview/api/selection/selection_disable_method.md
 
-@related: dataview/configuration.md#selectionofitems
+@related: dataview/configuration.md#selection-of-items
 dataview/usage_selection.md
 
 

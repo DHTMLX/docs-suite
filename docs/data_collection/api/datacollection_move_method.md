@@ -5,6 +5,8 @@ title: move
 
 @short: moves an item to the defined position
 
+@signature: {'move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];'}
+
 @params:
 - id 			string,string[]		the ids of items to move
 - index			number				the index to move items to

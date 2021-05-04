@@ -38,4 +38,4 @@ dhx.i18n.setLocale("form", de);
 var form = new dhx.Form("form_container");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x8n18cr4	Form. Localization}}
+**Related sample**: [Form. Localization](https://snippet.dhtmlx.com/x8n18cr4)

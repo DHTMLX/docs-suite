@@ -5,7 +5,7 @@ title: isSelected
 
 @short: checks whether a specified Ribbon item is selected
 
-@signature: isSelected(id: string): boolean;
+@signature: {'isSelected(id: string): boolean;'}
 
 @params:
 - id	string  the id of a Ribbon item

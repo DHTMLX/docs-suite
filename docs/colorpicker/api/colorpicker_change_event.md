@@ -5,7 +5,7 @@ title: change
 
 @short: fires on changing selected color in ColorPicker
 
-@signature: change: (color: string) => void;
+@signature: {'change: (color: string) => void;'}
 
 @example:
 colorpicker.events.on("Change",function(color){

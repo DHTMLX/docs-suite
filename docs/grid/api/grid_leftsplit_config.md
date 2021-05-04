@@ -5,7 +5,7 @@ title: leftSplit
 
 @short: sets the number of frozen columns
 
-@signature: leftSplit?: number;
+@signature: {'leftSplit?: number;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -20,7 +20,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#frozencolumns
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#frozen-columns
 
 @changelog: added in v7.0

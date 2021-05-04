@@ -23,7 +23,7 @@ It is also possible to get this information in the form of FormData. For this, y
 var state = form.getValue(true);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/odod5v12	Form. Get Value}}
+**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
 ## Setting new values for controls
 
@@ -38,7 +38,7 @@ form.setValue({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7nxbtlzs	Form. Set Value}}
+**Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
 
 Enabling/Disabling a form
 --------------------------
@@ -55,7 +55,7 @@ form.disable();
 // -> true|false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/few71nk2	Form. Disable}}
+**Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
 
 ## Checking if a form is disabled
 
@@ -71,7 +71,7 @@ To check whether a form control is disabled, pass either the name of the control
 form.isDisabled("input"); // -> returns true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/lthu8p6p	Form. Is Disabled}}
+**Related sample**: [Form. Is Disabled](https://snippet.dhtmlx.com/lthu8p6p)
 
 ## Hiding/Showing a form
 
@@ -125,7 +125,7 @@ While you've set **required:true** for a field, it gets an asterisk next to its 
 
 ![Required fields](../assets/form/required_fields.png)
 
-{{editor	https://snippet.dhtmlx.com/0pr3var0	Form. Required}}
+**Related sample**: [Form. Required](https://snippet.dhtmlx.com/0pr3var0)
 
 The attribute is applicable to the input fields with the input types: "number", "text", "password".
 
@@ -208,7 +208,7 @@ There is also a possibility to specify *a custom validation rule* by setting it 
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3cz9v7rm	Form. Validation}}
+**Related sample**: [Form. Validation](https://snippet.dhtmlx.com/3cz9v7rm)
 
 {{note If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function.}}
 
@@ -246,7 +246,7 @@ For example, a configuration object for an input with email may look as in:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/yhiuq2mi	Form. Messages}}
+**Related sample**: [Form. Messages](https://snippet.dhtmlx.com/yhiuq2mi)
 
 ### Validation API
 
@@ -259,7 +259,7 @@ var result = form.validate();
 
 The method should return *true*, if all the fields are filled as required, or *false* if there are fields that require attention.
 
-{{editor	https://snippet.dhtmlx.com/pmz0zk16	Form. Validate}}
+**Related sample**: [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
 ## Sending form to server
 
@@ -321,7 +321,7 @@ form.clear("value");
 form.clear();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/a64ih4ih	Form. Clear}}
+**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 
 ## Setting focus to a control
 

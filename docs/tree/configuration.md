@@ -17,7 +17,7 @@ In order to enable checkboxes for items, make use of the [](tree/api/tree_checkb
 var tree = new dhx.Tree("tree_container", {checkbox: true});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/hgsivvpb	Tree. Checkboxes For Items}}
+**Related sample**: [Tree. Checkboxes For Items](https://snippet.dhtmlx.com/hgsivvpb)
 
 Editing of items
 -------------------
@@ -30,7 +30,7 @@ It is possible to enable editing of the text of Tree items before initialization
 var tree = new dhx.Tree("tree_container", {editable: true});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/re4h88w7	Tree. Editable}}
+**Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
 
 
 
@@ -67,7 +67,7 @@ After that you need to select any item and then apply Arrow keys:
 </table>
 
 
-{{editor	https://snippet.dhtmlx.com/icql8fwq	Tree. Key Navigation}}
+**Related sample**: [Tree. Key Navigation](https://snippet.dhtmlx.com/icql8fwq)
 
 Selection of items
 ---------------------

@@ -5,7 +5,7 @@ title: clearValidate
 
 @short: clears validation of a CheckboxGroup control
 
-
+@signature: {'clearValidate(): void;'}
 
 
 

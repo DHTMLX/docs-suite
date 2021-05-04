@@ -5,11 +5,11 @@ title: getCellRect
 
 @short: returns the parameters of a cell
 
-@signature: getCellRect(row: string | number, col: string | number): object;
+@signature: {'getCellRect(row: string | number, col: string | number): object;'}
 
 @params:
-- row	string,number		the id of a row
-- col	string,number		the id of a column
+- row	string | number		the id of a row
+- col	string | number		the id of a column
 
 @returns:
 - rect		object		an object with parameters of a cell
@@ -22,6 +22,7 @@ var rect = grid.getCellRect("1","c");
 
 @template: api_method
 @descr:
+
 The return object includes the following attributes:
 
 <table class="webixdoc_links">
@@ -46,7 +47,7 @@ The return object includes the following attributes:
 </table>
 
 
-@related: grid/usage.md#workingwithcolumnsandcells
+@related: grid/usage.md#working-with-columns-and-cells
 
 @changelog:
 

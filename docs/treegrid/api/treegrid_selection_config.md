@@ -5,7 +5,7 @@ title: selection
 
 @short: enables selection in a grid
 
-@signature: selection?: ISelectionType;
+@signature: {'selection?: ISelectionType;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -21,4 +21,4 @@ var grid = new dhx.Grid("grid_container", {
 - [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
 
 @related: treegrid/configuration.md#selection
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid

@@ -5,7 +5,7 @@ title: spans
 
 @short: describes the configuration of cols/rows spans
 
-@signature: spans?: array[];
+@signature: {'spans?: array[];'}
 
 @example:
 var grid = new dhx.Grid("grid_container", {
@@ -20,7 +20,9 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 @template: api_config
-@descr: Each object in the spans array contains the following properties:
+@descr:
+
+Each object in the spans array contains the following properties:
 
 <table class="webixdoc_links">
 	<tbody>
@@ -55,7 +57,7 @@ var grid = new dhx.Grid("grid_container", {
     </tbody>
 </table>
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#spans
 
 **Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)

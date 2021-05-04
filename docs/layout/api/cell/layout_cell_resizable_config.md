@@ -5,7 +5,7 @@ title: resizable
 
 @short: defines whether a cell can be resized
 
-@signature: resizable?: boolean;
+@signature: {'resizable?: boolean;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {
@@ -18,7 +18,7 @@ var layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/cell_configuration.md#resizability
 
 **Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)

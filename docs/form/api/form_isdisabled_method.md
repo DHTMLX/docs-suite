@@ -5,7 +5,7 @@ title: isDisabled
 
 @short: checks whether a form is disabled
 
-@signature: isDisabled(name?: string): boolean;
+@signature: {'isDisabled(name?: string): boolean;'}
 
 @returns:
 - param	boolean     true, if a form is disabled, otherwise false
@@ -20,7 +20,7 @@ To check whether a form control is disabled, pass either the name of the control
 form.isDisabled("combo"); // -> true/false
 ~~~
 
-@related: form/work_with_form.md#checkingifaformisdisabled
+**Related sample**: [Form. Is Disabled](https://snippet.dhtmlx.com/lthu8p6p)
 
 @relatedapi: form/api/form_disable_method.md
 form/api/form_enable_method.md

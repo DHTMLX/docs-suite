@@ -5,6 +5,8 @@ title: setFocus
 
 @short: sets focus to an item by its id
 
+@signature: {'setFocus(id: string | number): void;'}
+
 ```todoapi
 void setFocus(string|number id);
 setFocus(id: string): void;
@@ -20,7 +22,7 @@ dataview.setFocus("item_id");
 @template: api_method
 @descr:
 
-@related: dataview/manipulating_data.md#settingfocusonitem
+@related: dataview/manipulating_data.md#setting-focus-on-item
 
 @relatedapi: dataview/api/dataview_getfocus_method.md
 

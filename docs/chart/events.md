@@ -15,7 +15,7 @@ chart.events.on("Resize", function({width:500, height:500}){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor    https://snippet.dhtmlx.com/a1b9yfwo	Chart. Events}}
+**Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
 
 ## Detaching event listeners
 

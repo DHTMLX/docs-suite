@@ -11,7 +11,7 @@ title: beforeEditStart
 - id		string | number		the id of an item
 
 @returns:
-- result		boolean		false- to block item editing, true otherwise
+- result		void | boolean		false- to block item editing, true otherwise
 
 @example:
 list.events.on("BeforeEditStart", function(value,id){

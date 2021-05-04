@@ -5,10 +5,10 @@ title: beforeExpand
 
 @short: fires before expanding a sidebar
 
-beforeExpand: () => boolean | void;
+@signature: {'beforeExpand: () => boolean | void;'}
 
 @returns: 
-param       boolean     false - to prevent expanding a sidebar, otherwise - false
+param       boolean | void     false - to prevent expanding a sidebar, otherwise - false
 
 
 @example:

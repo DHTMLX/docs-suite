@@ -5,6 +5,8 @@ title: beforeShow
 
 @short: fires before a Button control is shown
 
+@signature: {'beforeShow: (text: string) => boolean | void;'}
+
 @params:
 - text     string  the current text label of the control
 

@@ -5,7 +5,7 @@ title: toggle
 
 @short: expands/collapses Sidebar
 
-@signature:  toggle(): void;
+@signature: {'toggle(): void;'}
 
 @example:
 sidebar.toggle();

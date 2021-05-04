@@ -5,7 +5,7 @@ title: tickTemplate
 
 @short: sets a template for rendering values on the scale
 
-@signature: tickTemplate?: (position: number) => string;
+@signature: {'tickTemplate?: (position: number) => string;'}
 
 @example: 
 var slider = new dhx.Slider("slider_container", { 
@@ -20,7 +20,7 @@ var slider = new dhx.Slider("slider_container", {
 @descr: 
 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#scalesettings
 
 **Related sample**: [Slider. Custom Scale](https://snippet.dhtmlx.com/jsfxnplp)

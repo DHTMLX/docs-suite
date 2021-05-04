@@ -5,7 +5,7 @@ title: copy
 
 @short: adds a copy of an item and places it in the specified position
 
-@signature: copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];
+@signature: {'copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];'}
 
 @params:
 - id 			string				the ID of the item

@@ -6,10 +6,10 @@ title: Initialization
 To initialize dhtmlxTreeGrid on a page, you need to take the following simple steps:
 
 - [Download the dhtmlxTreeGrid package](https://dhtmlx.com/docs/products/dhtmlxTreeGrid/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createcontainer)
-- [Initialize TreeGrid](#initializegrid) with the object constructor
-- [Load data into TreeGrid](#loaddata)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize TreeGrid](#initialize-grid) with the object constructor
+- [Load data into TreeGrid](#load-data-into-treegrid)
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kob9385v	TreeGrid. Basic initialization}}
+**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
 Include source files
 --------------------
@@ -81,7 +81,7 @@ Initialize TreeGrid
 Initialize TreeGrid with the `dhx.TreeGrid` object constructor. The constructor has two parameters:
 
 - the HTML container for TreeGrid,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxTreeGrid
@@ -101,7 +101,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 There is a set of properties you can specify for TreeGrid to optimize its configuration for your needs. 
 
-See the detailed information on configuration properties of TreeGrid in the [TreeGrid API overview](treegrid/api/api_overview.md#properties) article.
+See the detailed information on configuration properties of TreeGrid in the [TreeGrid API overview](treegrid/api/api_overview.md#treegrid-properties) article.
 
 Load data into TreeGrid
 ------------------
@@ -124,7 +124,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/44rmxlmq	TreeGrid.  External data loading}}
+**Related sample**: [TreeGrid.  External data loading](https://snippet.dhtmlx.com/44rmxlmq)
 
 - from a local source using the **parse** method of data collection:
 
@@ -133,7 +133,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid.data.parse(dataset);
 ~~~
 
-Detailed information on loading data into TreeGrid is given in the article treegrid/data_loading.md.
+Detailed information on loading data into TreeGrid is given in the [](treegrid/data_loading.md) article.
 
 
 

@@ -5,7 +5,7 @@ title: tabHeight
 
 @short: sets the height of a tab
 
-@signature: tabHeight?: number | string;
+@signature: {'tabHeight?: number | string;'}
 
 @default: 45
 

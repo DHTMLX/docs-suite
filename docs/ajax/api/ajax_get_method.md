@@ -5,6 +5,8 @@ title: get
 
 @short: sends a GET request to the server
 
+@signature: {'getInitialData(): T[];'}
+
 @params:
 - url       string      the URL the request is sent to
 - data      object      optional, the data sent to the server by the GET-request

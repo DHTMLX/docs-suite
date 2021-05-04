@@ -5,7 +5,7 @@ title: destructor
 
 @short: removes a Grid instance and releases occupied resources
 
-@signature: destructor(): void;
+@signature: {'destructor(): void;'}
 
 @example:
 grid.destructor();
@@ -14,7 +14,7 @@ grid.destructor();
 @template: api_method
 @descr:
 
-@related: grid/usage.md#destructinggrid
+@related: grid/usage.md#destructing-grid
 
 
 

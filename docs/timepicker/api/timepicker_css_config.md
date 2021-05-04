@@ -5,8 +5,7 @@ title: css
 
 @short: adds style classes to TimePicker
 
-@signature: css?: string;
-
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -58,7 +57,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 @related: timepicker/customization.md#styling
-timepicker/initialization.md#initializetimepicker
+timepicker/initialization.md#initialize-timepicker
 
 **Related sample**: [Timepicker. Custom Style](https://snippet.dhtmlx.com/n4xfu4e9)
 

@@ -5,7 +5,7 @@ title: scroll
 
 @short: scrolls a grid according to specified coordinates
 
-@signature: scroll(x?: number, y?: number): void;
+@signature: {'scroll(x?: number, y?: number): void;'}
 
 @params:
 - x		number		the X coordinate
@@ -20,7 +20,7 @@ grid.scroll(75,230);
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
-@related: grid/usage.md#controllingscrollbehavior
+@related: grid/usage.md#controlling-scroll-behavior
 
 @changelog:
 

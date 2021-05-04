@@ -5,7 +5,7 @@ title: destructor
 
 @short: removes a Ribbon instance and releases occupied resources
 
-@signature: destructor(): void;
+@signature: {'destructor(): void;'}
 
 @example:
 ribbon.destructor();

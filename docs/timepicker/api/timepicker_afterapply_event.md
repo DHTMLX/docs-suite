@@ -5,7 +5,7 @@ title: afterApply
 
 @short: fires after saving the timepicker value
 
-@signature: afterApply: (time: string | hour: number, minute: number, AM?: boolean) => boolean | void;
+@signature: {'afterApply: (time: string | ITimeObject) => boolean | void;'}
 
 @params:
 - value		string|object	the value of a timepicker	

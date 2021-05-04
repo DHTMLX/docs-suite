@@ -5,7 +5,7 @@ title: itemClick
 
 @short: fires on clicking a tree item
 
-@signature: itemClick: (id: string, e: Event) => void;
+@signature: {'itemClick: (id: string, e: Event) => void;'}
 
 @params:
 - id	string		the id of an item

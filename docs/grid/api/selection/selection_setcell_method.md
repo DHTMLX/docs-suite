@@ -5,7 +5,7 @@ title: setCell
 
 @short: sets selection to specified cells
 
-@signature: etCell(row?: object | string, col?: object |  string, ctrlUp?: boolean, shiftUp?: boolean): void;
+@signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:
 - row     object|string    an object with a cell to be selected or the id of a row
@@ -32,7 +32,9 @@ grid.selection.setCell(row, column);
 @descr:
 
 
-{{note For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#settingselectiontocells).}}
+{{note For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#setting-selection-to-cells).}}
+
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 @related: grid/usage_selection.md
 
@@ -40,6 +42,4 @@ grid.selection.setCell(row, column);
 grid/api/selection/selection_enable_method.md
 grid/api/selection/selection_removecell_method.md
 
-@changelog:
 
-**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)

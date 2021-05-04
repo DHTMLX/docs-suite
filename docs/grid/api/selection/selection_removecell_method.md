@@ -5,7 +5,7 @@ title: removeCell
 
 @short: unselects previously selected cells
 
-@signature: removeCell(rowId?: string | number, colId?: string | number): void;
+@signature: {'removeCell(rowId?: string | number, colId?: string | number): void;'}
 
 @params:
 - rowId     string,number   optional, the id of a row
@@ -26,7 +26,7 @@ grid.selection.removeCell(rowId, colId);
 @descr:
 
 
-@related: grid/usage_selection.md#removingselection
+@related: grid/usage_selection.md#removing-selection
 
 @relatedapi: 
 grid/api/selection/selection_enable_method.md

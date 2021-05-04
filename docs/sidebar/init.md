@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxSidebar into an application, you need to take the following simple steps:
 
 - [Download the Sidebar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Sidebar](#initializesidebar) with the object constructor
-- [Load data into Sidebar](#loaddataintosidebar)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Sidebar](#initialize-sidebar) with the object constructor
+- [Load data into Sidebar](#load-data-into-sidebar)
 
 ~~~html
 <!DOCTYPE html>
@@ -29,7 +29,7 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x0qpt7pk	Sidebar. Basic Initialization}}
+**Related sample**: [Sidebar. Basic Initialization](https://snippet.dhtmlx.com/x0qpt7pk)
 
 Include source files
 --------------------
@@ -59,7 +59,7 @@ Initialize Sidebar
 Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the sidebar container
-- an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default
+- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
 var sidebar = new dhx.Sidebar("sidebar_container",{
@@ -67,7 +67,7 @@ var sidebar = new dhx.Sidebar("sidebar_container",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x0qpt7pk	Sidebar. Basic Initialization}}
+**Related sample**: [Sidebar. Basic Initialization](https://snippet.dhtmlx.com/x0qpt7pk)
 
 ### Configuration properties
 
@@ -85,7 +85,7 @@ var sidebar = new dhx.Sidebar("sidebar_container");
 sidebar.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/mq4ggjmm	Sidebar. Init Load}}
+**Related sample**: [Sidebar. Init Load](https://snippet.dhtmlx.com/mq4ggjmm)
 
 - from a local source using the **parse()** method of tree collection:
 

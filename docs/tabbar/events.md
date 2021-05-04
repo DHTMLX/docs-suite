@@ -31,7 +31,7 @@ Several handlers can be attached to one and the same event, and all of them will
 
 {{note  The names of the events are case-insensitive. }}
 
-{{editor	https://snippet.dhtmlx.com/dld2qo1m	Tabbar. Events}}
+**Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
 
 ## Detaching event listeners 
 

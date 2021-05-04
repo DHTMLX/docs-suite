@@ -5,7 +5,7 @@ title: select
 
 @short: selects a specified item of Menu
 
-@signature: select(id: string, unselect: boolean): void;
+@signature: {'select(id: string, unselect: boolean): void;'}
 
 @params:
 - id	string      the id of a Menu item

@@ -5,7 +5,7 @@ title: getValue
 
 @short: returns the current value of Slider
 
-@signature: getValue(): number[];
+@signature: {'getValue(): number[];'}
 
 @returns:
 - value 	array		the current value of the slider

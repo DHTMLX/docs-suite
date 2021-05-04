@@ -14,7 +14,7 @@ Check [online samples for dhtmlxComboBox](https://docs.dhtmlx.com/suite/samples/
 
 ## API reference
 
-- [](combo/api/api_overview.md)
+- [](api/api_overview.md)
 
 ## Related resources
 

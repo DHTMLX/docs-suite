@@ -5,7 +5,7 @@ title: paletteOnly
 
 @short: defines whether ColorPicker is shown only in the palette mode
 
-@signature: paletteOnly?: boolean;
+@signature: {'paletteOnly?: boolean;'}
 
 @default: false
 
@@ -17,9 +17,10 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 
 @template:	api_config
 @descr: 
+
 {{note Note that in the **paletteOnly** mode the palette is displayed without the panel with custom (user-defined) colors.}}
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
-colorpicker/configuration.md#paletteorpickermodeonly
+@related: colorpicker/how_to_start.md#initialize-colorpicker
+colorpicker/configuration.md#palette-or-picker-mode-only
 
 **Related sample**: [Colorpicker. Disabled Custom Colors](https://snippet.dhtmlx.com/3d75mz19)

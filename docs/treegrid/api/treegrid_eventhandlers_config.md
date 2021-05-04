@@ -5,7 +5,7 @@ title: eventHandlers
 
 @short: adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
 
-@signature: eventHandlers?: object;
+@signature: {'eventHandlers?: { [key: string]: any; };'}
 
 @example: 
 
@@ -98,6 +98,6 @@ const grid = new dhx.Grid("grid", {
 [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
 
-@related: treegrid/initialization.md#initializetreegrid
+@related: treegrid/initialization.md#initialize-treegrid
 treegrid/configuration.md#eventhandlersforhtmlcontent
 treegrid/customization.md#addingtemplatetocells

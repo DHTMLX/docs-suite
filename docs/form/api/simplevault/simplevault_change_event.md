@@ -4,7 +4,8 @@ title: change
 ---          
 
 @short: fires on changing the value of a control
- 
+
+@signature: {'change: (value: ISimpleVaultValue[]) => void;'} 
 
 @params:
 - value     array     the current value of the control

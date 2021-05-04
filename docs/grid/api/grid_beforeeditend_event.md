@@ -5,10 +5,10 @@ title: beforeEditEnd
 
 @short: fires before editing of a cell is completed
 
-@signature: beforeEditEnd: (value: string, row: object, col: object) => boolean | void;
+@signature: {'beforeEditEnd: (value: string | number, row: IRow, col: ICol) => boolean | void;'}
 	
 @params:
-- value			string		the new value of a cell
+- value			string|number		the new value of a cell
 - row			object		an object with a row configuration
 - col		object		an object with a column configuration
 

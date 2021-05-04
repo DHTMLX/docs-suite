@@ -5,7 +5,7 @@ title: openMenu
 
 @short: fires on expanding a menu control
 
-@signature: openMenu: (id: string) => void;
+@signature: {'openMenu: (id: string) => void;'}
 
 @params:
 - id 		string		the ID of an opened menu item

@@ -4,8 +4,8 @@ title: align
 ---          
 
 @short: sets the alignment of content inside a cell
-
-@signature: align?: "start" | "center" | "end" | "between" | "around" | "evenly";
+TODO: api change (добавить в desc "start" | "center" | "end" | "between" | "around" | "evenly")
+@signature: {'align?: FlexDirection;'}
 
 @example: 
 var layout = dhx.Layout("layout_container", {
@@ -37,7 +37,7 @@ var layout = dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 
 **Related sample**: [Layout. Align](https://snippet.dhtmlx.com/4w1033c9)
 

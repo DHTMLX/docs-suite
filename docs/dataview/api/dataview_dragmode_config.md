@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in DataView
 
-@signature: dragMode?: "target" | "both" | "source";
+@signature: {'dragMode?: boolean;'}
 
 @example: 
 var dataview = new dhx.DataView("dataview_container", { 
@@ -15,6 +15,7 @@ var dataview = new dhx.DataView("dataview_container", {
 
 @template:	api_config
 @descr: 
+
 Drag-n-drop can work in three modes:
 
 - "target" - a dataview takes items from other dataviews, while its items can't be dragged out of it
@@ -25,4 +26,4 @@ Drag-n-drop can work in three modes:
 - [Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
 
 @relatedapi:
-dataview/configuration.md#dragndropofitems
+dataview/configuration.md#drag-n-drop-of-items

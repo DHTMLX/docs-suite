@@ -4,6 +4,8 @@ title: afterRemove
 ---          
 
 @short: fires after removing a new item from a data collection
+
+@signature: {'afterRemove: (obj: any) => void;'}
 	
 @params:
 - removedItem		object			the object of a removed item
@@ -17,4 +19,3 @@ data.events.on("AfterRemove", function(removedItem){
 @descr:
 
 @relatedapi:data_collection/api/beforeremove_event.md
-	

@@ -5,7 +5,7 @@ title: height
 
 @short: sets the height of a grid
 
-@signature: height?: number;
+@signature: {'height?: number;'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -20,5 +20,5 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Custom Sizes](https://snippet.dhtmlx.com/ffxj6se0)
 
-@related: grid/initialization.md#initializegrid
+@related: grid/initialization.md#initialize-grid
 grid/configuration.md#widthheight

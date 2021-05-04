@@ -5,6 +5,8 @@ title: save
 
 @short: saves changes made in a data collection to the server side
 
+@signature: {'save?: (url: IDataProxy | string) => void;'}
+
 @params:
 
 - url			string|DataDriver		the URL of a server side or DataDriver with the URL configured

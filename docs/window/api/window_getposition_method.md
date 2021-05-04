@@ -5,9 +5,7 @@ title: getPosition
 
 @short: gets the position of a window
 
-```todoapi 
-<!-- @signature: getPosition(): {left: number, top: number}; -->
-```
+@signature: {'getPosition(): IPosition;'}
 
 @returns:
 - position		object		an object with left and top coordinates of a window

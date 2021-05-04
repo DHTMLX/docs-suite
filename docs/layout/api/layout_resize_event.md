@@ -5,7 +5,7 @@ title: resize
 
 @short: fires on resizing a cell
 
-@signature: resize: (id: string) => void;
+@signature: {'resize: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

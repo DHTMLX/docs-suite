@@ -5,7 +5,7 @@ title: afterCollapse
 
 @short: fires after a cell is collapsed
 
-@signature: afterCollapse: (id: string) => void;
+@signature: {'afterCollapse: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

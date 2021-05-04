@@ -5,11 +5,11 @@ title: beforeColumnDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
-@signature: beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;
+@signature: {'beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @returns:
 - result	boolean		false - to block the default action, otherwise true

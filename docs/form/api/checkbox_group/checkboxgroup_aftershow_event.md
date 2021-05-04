@@ -4,6 +4,8 @@ title: afterShow
 ---          
 
 @short: fires after a control is shown
+
+@signature: {'afterShow: (value: ICheckboxGroupValue) => void;'}
  
 
 @params:

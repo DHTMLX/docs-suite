@@ -5,7 +5,7 @@ title: clear
 
 @short: clears a value of a ColorPicker control
 
-
+@signature: {'clear(): void;'}
 
 
 

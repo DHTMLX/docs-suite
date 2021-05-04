@@ -6,10 +6,10 @@ title: Initialization
 To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 
 - [Download the dhtmlxGrid package](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createcontainer)
-- [Initialize Grid](#initializegrid) with the object constructor
-- [Load data into Grid](#loaddata)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Grid](#initialize-grid) with the object constructor
+- [Load data into Grid](#load-data-into-grid)
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/luh8d0vv	Grid. Basic Initialization}}
+**Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
 
 Include source files
 --------------------
@@ -96,7 +96,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/luh8d0vv	Grid. Basic Initialization}}
+**Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
 
  
 ### Configuration properties
@@ -133,6 +133,6 @@ var grid = new dhx.Grid("grid_container");
 grid.data.parse(dataset);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/svkb27d5	Grid. External Data Loading}}
+**Related sample**: [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
 
 Detailed information on loading data into Grid is given in the article [](grid/data_loading.md).

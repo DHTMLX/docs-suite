@@ -5,7 +5,7 @@ title: css
 
 @short: adds custom CSS classes to ColorPicker
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -59,6 +59,6 @@ var colorpicker = new dhx.Colorpicker({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: colorpicker/how_to_start.md#initializecolorpicker
+@related: colorpicker/how_to_start.md#initialize-colorpicker
 
 **Related sample**: [Colorpicker. Custom CSS](https://snippet.dhtmlx.com/mnwi3sp0)

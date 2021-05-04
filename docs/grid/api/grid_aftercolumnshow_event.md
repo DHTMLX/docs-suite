@@ -5,7 +5,7 @@ title: afterColumnShow
 
 @short: fires after a column is shown
 
-@signature: afterColumnShow: (col: object) => void;
+@signature: {'afterColumnShow: (col: ICol) => void;'}
 
 @params:
 - col   object  an object with a column configuration
@@ -22,5 +22,5 @@ grid.events.on("AfterColumnShow", function(column){
 
 @changelog: added in v7.0
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related Sample:** [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

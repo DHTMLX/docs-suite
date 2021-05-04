@@ -7,7 +7,7 @@ This is an input field for entering some text.
 
 ![](../assets/toolbar/input.png)
 
-{{editor	https://snippet.dhtmlx.com/ykd0uii1	Toolbar. Input}}
+**Related sample**: [Toolbar. Input](https://snippet.dhtmlx.com/ykd0uii1)
 
 ## Adding Input
 
@@ -34,7 +34,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Enabling/disabling input
 
@@ -45,7 +45,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 
@@ -59,7 +59,7 @@ You can create a tooltip for an input:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
 ## Setting/getting value
 

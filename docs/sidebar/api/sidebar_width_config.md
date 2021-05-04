@@ -5,7 +5,7 @@ title: width
 
 @short: sets the width of a sidebar
 
-@signature: width?: number | string;
+@signature: {'width?: number | string;'}
 
 @default: "200"
 

@@ -5,9 +5,7 @@ title: activeTab
 
 @short: sets the currently active tab
 
-@signature: activeTab?: string;
-
-@type: string
+@signature: {'activeTab?: string;'}
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar", {

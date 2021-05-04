@@ -8,10 +8,7 @@ description: description
 
 @short: adds event handlers to the HTML elements of a custom template of DataView items
 
-@signature: 
-eventHandlers?: {
-    [key: string]: any;
-};
+@signature: {'eventHandlers?: { [key: string]: any; };'}
 
 @example: 
 function template() {
@@ -52,7 +49,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>
-                <li><b>id</b> - the id of a DataView item
+                <li><b>id</b> - the id of a DataView item</li>
             </ul></td>
 		</tr>
     </tbody>
@@ -65,6 +62,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 @relatedapi: dataview/api/dataview_template_config.md
 
-@related: dataview/configuration.md#eventhandlersforthetemplate
+@related: dataview/configuration.md#event-handlers-for-the-template
 
 ``` 

@@ -6,8 +6,7 @@ description: description
 
 @short: sets the id of a tab
 
-```todoapi  в старой локе не вижу```
-@signature: id?: string;
+@signature: {'id?: string;'}
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar_container",{

@@ -5,7 +5,7 @@ title: hide
 
 @short: hides a CheckboxGroup control
 
-
+@signature: {'hide(): void;'}
 
 @example:
 form.getItem("CheckboxGroup").hide(); 

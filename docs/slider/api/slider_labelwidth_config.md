@@ -5,7 +5,7 @@ title: labelWidth
 
 @short: sets the width of a label
 
-@signature: labelWidth?: string | number;
+@signature: {'labelWidth?: string | number;'}
 
 
 @example: 
@@ -18,4 +18,4 @@ var slider = new dhx.Slider("slider_container", {
 @descr: 
 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties

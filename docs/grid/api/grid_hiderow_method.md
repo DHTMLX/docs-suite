@@ -5,10 +5,10 @@ title: hideRow
 
 @short: hides a row of Grid
 
-@signature: hideRow(rowId: string | number): void;
+@signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
-- rowId	string|number   the id of a row
+- rowId	string | number   the id of a row
 
 @example:
 grid.hideRow(rowId);
@@ -23,7 +23,7 @@ grid.hideRow(rowId);
 grid/api/grid_showrow_method.md
 grid/api/grid_isrowhidden_method.md
 
-@related: grid/usage.md#hidingshowingarow
+@related: grid/usage.md#hidingshowing-a-row
 
 @changelog:
 added in v7.0

@@ -5,7 +5,7 @@ title: readOnly
 
 @short: makes Combo Box readonly
 
-@signature: readOnly?: boolean;
+@signature: {'readOnly?: boolean;'}
 
 @default: false
 
@@ -21,8 +21,8 @@ var combo = new dhx.Combobox("combo_container", {
 
 In this mode it is only possible to select options from the list, without entering words in the input.
 
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#readonlymode
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#readonly-mode
 
 **Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
 

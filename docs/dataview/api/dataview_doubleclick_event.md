@@ -5,11 +5,11 @@ title: doubleClick
 
 @short: fires on double clicking an item
 
-@signature: doubleClick: (id: string | number, e: Event) => void;
+@signature: {'doubleClick: (id: string | number, events: Event) => void;'}
 
 @params:
-- id 	string,number 		the id of a clicked item
-- e 	Event 				a native event object
+- id 	string | number 		the id of a clicked item
+- events 	Event 				a native event object
 
 @example:
 dataview.events.on("DoubleClick", function(id, e){

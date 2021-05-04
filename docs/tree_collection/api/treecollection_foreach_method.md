@@ -5,9 +5,11 @@ title: forEach
 
 @short: iterates over all items of a tree collection
 
+@signature: {'forEach(callback: DataCallback<T>, parentID?: string | number, level?: number): void;'}
+
 @params:
 - callback	    function    a function that will iterate over items of a tree collection
-- parentID      string      optional, the parent id. If not specified, the function will start iterating over from the root item.
+- parentID      string | number      optional, the parent id. If not specified, the function will start iterating over from the root item.
 - level         number      optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
 
 @example:

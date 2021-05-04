@@ -5,7 +5,7 @@ title: step
 
 @short: the step the slider thumb will be moved with
 
-@signature: step: number;
+@signature: {'step: number;'}
 
 @default: 1
 
@@ -18,5 +18,5 @@ var slider = new dhx.Slider("slider_container", {
 @template:	api_config
 @descr: 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#step

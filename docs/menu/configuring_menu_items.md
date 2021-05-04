@@ -29,7 +29,7 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qkxeer2h	Menu. Menu Item}}
+**Related sample**: [Menu. Menu Item](https://snippet.dhtmlx.com/qkxeer2h)
 
 #### Properties
 
@@ -51,7 +51,7 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/uhv64cm7	Menu. Navigation Type}}
+**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
 
 
 #### Properties
@@ -94,7 +94,7 @@ You can add a custom image into the navItem with the help of the **html** proper
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/2hr77egx	Menu. Item HTML Content}}
+**Related sample**: [Menu. Item HTML Content](https://snippet.dhtmlx.com/2hr77egx)
 
 ### Showing/hiding a navItem
 
@@ -135,7 +135,7 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/nk65jfmx	Menu. Custom HTML}}
+**Related sample**: [Menu. Custom HTML](https://snippet.dhtmlx.com/nk65jfmx)
 
 #### Properties
 
@@ -159,7 +159,7 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/71tybx5j	Menu. Separator}}
+**Related sample**: [Menu. Separator](https://snippet.dhtmlx.com/71tybx5j)
 
 #### Properties
 
@@ -183,7 +183,7 @@ toolbar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/fjaolual	Menu. Spacer}}
+**Related sample**: [Menu. Spacer](https://snippet.dhtmlx.com/fjaolual)
 
 #### Properties
 

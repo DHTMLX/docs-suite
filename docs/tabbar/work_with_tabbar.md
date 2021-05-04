@@ -9,7 +9,7 @@ dhtmlxTabbar inherits its API from dhtmlxLayout. So, you can apply any methods o
 Adding/removing tabs
 ---------------
 
-You can quickly add/remove tabs of Tabbar on the fly with the help of the corresponding methods - [](tabbar/api/tabbar_addtab_method.md) and tabbar/api/tabbar_removetab_method.md.
+You can quickly add/remove tabs of Tabbar on the fly with the help of the corresponding methods - [](tabbar/api/tabbar_addtab_method.md) and [](tabbar/api/tabbar_removetab_method.md).
 
 The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 
@@ -39,7 +39,7 @@ The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ekke2q8t	Tabbar. Add Tab}}
+**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
 
 The [removeTab()](tabbar/api/tabbar_removetab_method.md) method expects the id of a tab you want to remove as its parameter. You can get the id of a tab via the [getId()](tabbar/api/tabbar_getid_method.md) method:
 
@@ -49,7 +49,7 @@ var id = tabbar.getId(0);
 tabbar.removeTab(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/z5vjj83y	Tabbar. Remove Tab}}
+**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
 
 Getting the id of a tab
 ---------------
@@ -79,7 +79,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 tabbar.setActive("2");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/u9ryz38f	Tabbar. Set Active}}
+**Related sample**: [Tabbar. Set Active](https://snippet.dhtmlx.com/u9ryz38f)
 
 To identify what tab is currently active, apply the [getActive()](tabbar/api/tabbar_getactive_method.md) method. It will return the id of the active tab.
 
@@ -97,7 +97,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 var active = tabbar.getActive(); // -> "2"
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xpvkcwiu	Tabbar. Get Active}}
+**Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
 
 Enabling/Disabling a tab
 --------------------------
@@ -114,7 +114,7 @@ tabbar.disableTab("London");
 // -> true|false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9l3egq3z	Tabbar. Disable Tab}}
+**Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 Checking if a tab is disabled
 -----------------------------
@@ -131,7 +131,7 @@ To check if a currently active tab is disabled, call the [isDisabled()](tabbar/a
 tabbar.isDisabled(); // -> returns true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/86er2y7m	Tabbar. Is Disabled Tab}}
+**Related sample**: [Tabbar. Is Disabled Tab](https://snippet.dhtmlx.com/86er2y7m)
 
 Attaching a component to a cell
 ---------------------------------------
@@ -149,5 +149,5 @@ dataview.data.parse(dataset);
 tabbar.getCell("dataview").attach(dataview);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/o1jwmw1l	Tabbar. Attach}}
+**Related sample**: [Tabbar. Attach](https://snippet.dhtmlx.com/o1jwmw1l)
 

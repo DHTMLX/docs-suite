@@ -5,7 +5,7 @@ title: afterHide
 
 @short: fires after a popup is hidden
 
-@signature: afterHide: (e: Event) => void;
+@signature: {'afterHide: (e: Event) => void;'}
 
 @params:
 - e				Event			the native mouse event

@@ -4,10 +4,11 @@ title: input
 ---          
 
 @short: fires when a user types some text in the input
- 
+
+@signature: {'input: (value: string | number) => void;'} 
 
 @params:
-- inputValue        string|number  an entered value
+- inputValue        string | number  an entered value
 
 
 @example:

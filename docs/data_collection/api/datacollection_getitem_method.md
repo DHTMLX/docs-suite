@@ -4,6 +4,8 @@ title: getItem
 ---          
 
 @short: returns the object of an item by its id
+
+@signature: {'getItem(id: Id): T;'}
 	
 @params:
 

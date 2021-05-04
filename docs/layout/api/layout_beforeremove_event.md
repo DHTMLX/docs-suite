@@ -5,7 +5,7 @@ title: beforeRemove
 
 @short: fires before removing a cell
 
-@signature: beforeRemove: (id: string) => boolean | void;
+@signature: {'beforeRemove: (id: string) => boolean | void;'}
 
 @params:
 - id		string		the id of a cell
@@ -17,7 +17,7 @@ layout.events.on("BeforeRemove", function(id){
 });
 
 @returns:
-- result	boolean		false - to prevent removing of a cell, otherwise true
+- result	boolean | void		false - to prevent removing of a cell, otherwise true
 
 
 

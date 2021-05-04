@@ -5,7 +5,7 @@ title: minWidth
 
 @short: sets the minimal width of a window
 
-@signature: minWidth?: number;
+@signature: {'minWidth?: number;'}
 
 @default: 100
 

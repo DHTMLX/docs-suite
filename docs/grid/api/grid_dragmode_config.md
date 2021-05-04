@@ -5,10 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Grid
 
-```todoapi ```
-
-
-@type: string
+@signature: {'dragMode?: "target" | "both" | "source"'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -16,9 +13,9 @@ var grid = new dhx.Grid("grid_container", {
     dragMode:"source"
 });
 
-
 @template:	api_config
-@descr: 
+@descr:
+ 
 Drag-n-drop can work in three modes: 
 
 <table class="webixdoc_links">
@@ -41,8 +38,8 @@ Drag-n-drop can work in three modes:
 
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#dragndropofgridrows
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#drag-n-drop-of-grid-rows
 
 @relatedapi: 
 - grid/api/grid_afterrowdrag_event.md

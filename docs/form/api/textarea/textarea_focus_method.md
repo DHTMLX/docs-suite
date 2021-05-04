@@ -5,15 +5,10 @@ title: focus
 
 @short: sets focus to a control
 
-@signature: focus(): void;
-
-
-
-
+@signature: {'focus(): void;'}
 
 @example:
 form.getItem("textarea").focus();
-
 
 @template: api_method
 @descr:

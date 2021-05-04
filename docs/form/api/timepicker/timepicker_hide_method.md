@@ -5,15 +5,10 @@ title: hide
 
 @short: hides a TimePicker control
 
-@signature: hide(): void;
-
-
+@signature: {'hide(): void;'}
 
 @example:
 form.getItem("timepicker").hide(); 
 
-
 @template: api_method
 @descr:
-
-

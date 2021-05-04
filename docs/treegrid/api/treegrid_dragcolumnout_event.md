@@ -5,11 +5,11 @@ title: dragColumnOut
 
 @short: fires when a column is dragged out of a potential target
 
-@signature: dragColumnOut: (data: object, events: MouseEvent) => void;
+@signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object
-- e		    MouseEvent		a native event object
+- events		    MouseEvent		a native event object
 
 @example:
 treegrid.events.on("DragColumnOut", function(data, events) {

@@ -4,6 +4,8 @@ title: loadError
 ---          
 
 @short: fires when loading of data fails
+
+@signature: {'loadError: (response: any) => boolean | void;'}
 	
 @params:
 - error			string,object		info about the error
@@ -21,4 +23,3 @@ The **error** parameter can be either a string with the text of an error, or an 
 - status - the code of an error
 - text - the text of an error
 
-	

@@ -4,8 +4,8 @@ title: labelPosition
 ---          
 
 @short: defines the position of a label of a combobox
-
-labelPosition?: "left" | "top";
+TODO: api change (добавить в desc "left" | "top")
+@signature: {'labelPosition?: ILabelPosition;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container", {
@@ -18,5 +18,5 @@ var combo = new dhx.Combobox("combo_container", {
 @changelog: added in v6.4
 
 @related: 
-combo/how_to_start.md#initializecombobox
-combo/configuration.md#label
+combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#label

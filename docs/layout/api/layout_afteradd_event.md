@@ -5,7 +5,7 @@ title: afterAdd
 
 @short: fires after adding a new cell
 
-@signature: afterAdd: (id: string) => void;
+@signature: {'afterAdd: (id: string) => void;'}
 
 @params:
 - id		string		the id of a cell

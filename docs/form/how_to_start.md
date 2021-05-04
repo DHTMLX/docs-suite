@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxForm into an application, you need to take the following simple steps:
 
 - [Download the Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Define Form structure](#defineformstructure)
-- [Initialize Form](#initializeform) with the object constructor
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Define Form structure](#define-form-structure)
+- [Initialize Form](#initialize-form) with the object constructor
 
 
 ~~~html
@@ -30,7 +30,7 @@ To add dhtmlxForm into an application, you need to take the following simple ste
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
+**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
 
 Include source files
 --------------------
@@ -136,7 +136,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
+**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
 
 ### Configuration properties
 

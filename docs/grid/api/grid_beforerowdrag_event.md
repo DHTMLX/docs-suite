@@ -5,8 +5,8 @@ title: beforeRowDrag
 
 @short: fires before dragging of a row has started
 
-@signature: beforeRowDrag: (data: object, events: MouseEvent) => void | boolean;
-	
+@signature: {'beforeRowDrag: (data: object, events: MouseEvent) => void | boolean;'}
+
 <!-- @params:
 - data		object		data object
 - e		    Event		a native event object -->
@@ -59,8 +59,7 @@ grid/api/grid_dragrowstart_event.md
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)	
 
+@related: grid/configuration.md#drag-n-drop-of-grid-rows
+
 @changelog: added in v7.0
-
-@related: grid/configuration.md#dragndropofgridrows
-
 

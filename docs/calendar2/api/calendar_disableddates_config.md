@@ -38,7 +38,7 @@ and must return a boolean value to define whether a passed date should be blocke
 - [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#disableddates
 
 @changelog: added in v6.4

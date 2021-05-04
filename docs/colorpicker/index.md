@@ -13,7 +13,7 @@ Check [online samples for dhtmlxColorPicker](https://docs.dhtmlx.com/suite/sampl
 
 ## API reference
 
-[](colorpicker/api/refs/colorpicker)
+- [](api/api_overview.md)
 
 ## Related resources
 
@@ -22,14 +22,14 @@ Check [online samples for dhtmlxColorPicker](https://docs.dhtmlx.com/suite/sampl
 
 ## Guides
 
-Covers the processes of creating, configuring, localizing, customizing Colorpicker, and working with it.
+Covers the processes of creating, configuring, localizing, customizing ColorPicker, and working with it.
 
-- [](how_to_start)
-- [](configuration)
-- [](localizing_colorpicker)
-- [](manipulating_colorpicker)
-- [](customization)
-- [](handling_events)
+- [](how_to_start.md)
+- [](configuration.md)
+- [](localizing_colorpicker.md)
+- [](manipulating_colorpicker.md)
+- [](customization.md)
+- [](handling_events.md)
 
 
 ## Other

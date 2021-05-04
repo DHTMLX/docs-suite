@@ -5,7 +5,7 @@ title: noContent
 
 @short: defines whether tabs contain any content
 
-@signature: noContent?: boolean;
+@signature: {'noContent?: boolean;'}
 
 @default: false
 

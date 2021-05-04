@@ -5,7 +5,7 @@ title: template
 
 @short: specifies a template for DataView items
 
-@signature: template?: (item: any) => string;
+@signature: {'template?: (item: any) => string;'}
 
 @example: 
 var dataview = new dhx.DataView("dataview", {
@@ -37,6 +37,6 @@ The template function takes one parameter:
 **Related sample**:
 - [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
 
-@related: dataview/configuration.md#templatefordataviewitems
+@related: dataview/configuration.md#template-for-dataview-items
 
 @relateapi: dataview/api/dataview_eventhandlers_config.md

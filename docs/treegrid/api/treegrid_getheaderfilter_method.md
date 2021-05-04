@@ -5,13 +5,13 @@ title: getHeaderFilter
 
 @short: returns an object of the header filter by column id
 
-@signature: getHeaderFilter(colId: string | number): HTMLElement | object;
+@signature: {'getHeaderFilter(colId: string | number): HTMLElement | Combobox;'}
 
 @params:
 - colId	string | number   the id of a column
 
 @returns:
-- param	HTMLElement | object  an HTML object or an object with Combobox configuration
+- element	HTMLElement | object  an HTML object or an object with Combobox configuration
 
 @example:
 var countryFilter = treegrid.getHeaderFilter("capital");

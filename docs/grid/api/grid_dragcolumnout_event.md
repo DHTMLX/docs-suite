@@ -5,11 +5,11 @@ title: dragColumnOut
 
 @short: fires when a column is dragged out of a potential target
 
-@signature: dragColumnOut: (data: object, events: MouseEvent) => void;
+@signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
+- e		    Event		a native event object
 
 @example:
 grid.events.on("DragColumnOut", function(data, events) {
@@ -19,6 +19,7 @@ grid.events.on("DragColumnOut", function(data, events) {
 
 @template: api_event
 @descr:
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 The data object contains the following parameters:
 
@@ -39,20 +40,17 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
+@relatedapi:
+[](grid/api/grid_dragitem_config.md)
+[](grid/api/grid_aftercolumndrag_event.md)
+[](grid/api/grid_aftercolumndrop_event.md)
+[](grid/api/grid_beforecolumndrag_event.md)
+[](grid/api/grid_beforecolumndrop_event.md)
+[](grid/api/grid_cancolumndrop_event.md)
+[](grid/api/grid_cancelcolumndrop_event.md)
+[](grid/api/grid_dragcolumnin_event.md)
+[](grid/api/grid_dragcolumnstart_event.md)
+
+@related: grid/configuration.md#drag-n-drop-of-grid-columns
 
 @changelog: added in v7.0
-
-@relatedapi:
-grid/api/grid_dragitem_config.md
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_beforecolumndrop_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnstart_event.md
-
-@related: grid/configuration.md#dragndropofgridcolumns
-
-@edition: pro

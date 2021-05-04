@@ -5,7 +5,7 @@ title: editable
 
 @short: enables editing in TreeGrid columns
 
-@signature: editable?: boolean;
+@signature: {'editable?: boolean;'}
 
 @default: false
 
@@ -22,7 +22,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @related:
 treegrid/configuration.md#editinggridandseparatecolumns
-treegrid/initialization.md#initializetreegrid
+treegrid/initialization.md#initialize-treegrid
 
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 

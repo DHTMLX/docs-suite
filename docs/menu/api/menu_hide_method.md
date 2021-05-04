@@ -5,7 +5,7 @@ title: hide
 
 @short: hides an item of Menu
 
-@signature: hide(ids: string | string[]): void;
+@signature: {'hide(ids: string | string[]): void;'}
 
 @params:
 - ids 		string,array	optional, one ID or an array of IDs of items

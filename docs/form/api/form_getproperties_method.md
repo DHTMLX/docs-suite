@@ -6,6 +6,8 @@ description: description
 
 @short: returns objects with available configuration attributes of Form controls
 
+@signature: {'getProperties(name?: string): { [name: string]: IFormProps } | IFormProps;'}
+
 @params:
 
 - name|id string optional, the name of the control or its id (if the name attribute is not defined in the config of the control)
@@ -51,6 +53,7 @@ form.getProperties("password");
 
 @template: api_method
 @descr:
+
 {{note The returned object can contain only the properties that are listed below for each control.}}
 
 Here are two ways of using the method:
@@ -136,7 +139,7 @@ The returned object of the **Button** control can contain the following configur
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>view</b></td>
@@ -233,7 +236,7 @@ The returned object of the **DatePicker** control can contain the following conf
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -452,7 +455,7 @@ The returned object of the **ColorPicker** control can contain the following con
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -597,7 +600,7 @@ The returned object of the **Combo** control can contain the following configura
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="https://docs.dhtmlx.com/suite/combo__customization.html#customfilterforoptions">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>multiselection</b></td>
@@ -678,7 +681,7 @@ The returned object of the **Input** control can contain the following configura
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -819,7 +822,7 @@ The returned object of the **Select** control can contain the following configur
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>width</b></td>
@@ -872,7 +875,6 @@ The returned object of the **Select** control can contain the following configur
 
 The returned object of the **SimpleVault** control can contain the following configuration attributes:
 
-```todoanton не могу понять, что именно ломает движок
 <table class="webixdoc_links">
 	<tbody>
     <tr>
@@ -1198,7 +1200,7 @@ The returned object of the **TimePicker** control can contain the following conf
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -1266,8 +1268,6 @@ The returned object of the **TimePicker** control can contain the following conf
 		</tr>
     </tbody>
 </table>
-
-```
 
 @relatedapi: form/api/form_setproperties_method.md
 

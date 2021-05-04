@@ -5,11 +5,11 @@ title: afterRowDrop
 
 @short: fires before the user has finished dragging a row but after the mouse button is released
 
-@signature: afterRowDrop: (data: object, events: MouseEvent) => void;
+@signature: {'afterRowDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
+- e		    Event		a native event object
 
 @example:
 grid.events.on("AfterRowDrop", function(data, events) {
@@ -19,6 +19,7 @@ grid.events.on("AfterRowDrop", function(data, events) {
 
 @template: api_event
 @descr:
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -39,7 +40,6 @@ The data object contains the following parameters:
 </table>
 
 
-@changelog: added in v7.0
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
@@ -53,4 +53,6 @@ grid/api/grid_dragrowin_event.md
 grid/api/grid_dragrowout_event.md
 grid/api/grid_dragrowstart_event.md
 
-@related: grid/configuration.md#dragndropofgridrows
+@related: grid/configuration.md#drag-n-drop-of-grid-rows
+
+@changelog: added in v7.0

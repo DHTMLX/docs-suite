@@ -9,7 +9,7 @@ Alignment
 
 The [](form/api/form_align_property.md) property allows you to set aligning direction for all controls in Form. 
 
-You can apply various options of alignment for different [control groups](form/configuration.md#groupingcontrolsinform) by specifying the [](form/api/form_align_property.md) property for the [](form/api/form_rows_property.md) and form/api/form_cols_property.md:
+You can apply various options of alignment for different [control groups](form/configuration.md#grouping-controls-in-form) by specifying the [](form/api/form_align_property.md) property for the [](form/api/form_rows_property.md) and [](form/api/form_cols_property.md):
 
 ~~~js
 var form = new dhx.Form("form_container", {
@@ -39,7 +39,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 The tables below demonstrate using the possible values for the **align** property in Form:
 
@@ -100,7 +100,7 @@ Grouping Controls in Form
 
 ![](../assets/form/blocks.png)
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [](form/api/form_rows_property.md) and [](form/api/form_cols_property.md) options in the configuration object of the component:
 
@@ -139,7 +139,7 @@ Making Form disabled
 
 ![](../assets/form/disabled.png)
 
-{{editor	https://snippet.dhtmlx.com/7qjwg2sw	Form. Disabled}}
+**Related sample**: [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
 
 
 By default, Form is enabled. To make Form disabled, set the [](form/api/form_disabled_property.md) configuration property to *true*:
@@ -166,7 +166,7 @@ var form = new dhx.Form("form_container", {
 Padding
 ---------------
 
-To generate space around a [control group](form/configuration.md#groupingcontrolsinform), make use of the [](form/api/form_padding_property.md) parameter:
+To generate space around a [control group](form/configuration.md#grouping-controls-in-form), make use of the [](form/api/form_padding_property.md) parameter:
 
 ~~~js
 var form = new dhx.Form("form_container", {
@@ -196,12 +196,12 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 Title
 ----------
 
-You can define a title for a [control group](form/configuration.md#groupingcontrolsinform) with the help of the [](form/api/form_title_property.md) property:
+You can define a title for a [control group](form/configuration.md#grouping-controls-in-form) with the help of the [](form/api/form_title_property.md) property:
 
 ~~~js
 var form = new dhx.Form("form_container", {
@@ -231,12 +231,12 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 Width/Height
 ---------------
 
-You can adjust sizes of a [control group](form/configuration.md#groupingcontrolsinform) with the corresponding properties [](form/api/form_height_property.md) and [](form/api/form_width_property.md):
+You can adjust sizes of a [control group](form/configuration.md#grouping-controls-in-form) with the corresponding properties [](form/api/form_height_property.md) and [](form/api/form_width_property.md):
 
 ~~~js
 var form = new dhx.Form("form_container", {
@@ -270,7 +270,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 
 

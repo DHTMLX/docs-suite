@@ -5,15 +5,10 @@ title: setValue
 
 @short: selects option(s) in ComboBox
 
-```todoapi
-void setValue(string|number|array ids);
-setValue(ids: string[] | string): void;
-```
+@signature: {'setValue(ids: string[] | string): void;'}
 
 @params:
 - ids	 string,number,array	 the ids of items from data collection that should be selected in Combo Box
-
-
 
 @example:
 // selects one option
@@ -29,9 +24,9 @@ combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 
 @relatedapi:
-combo/api/combobox_getvalue_method.md
+combobox/api/combobox_getvalue_method.md
 
-@related: combo/work_with_combo.md#settinggettingvalues
+@related: combobox/work_with_combo.md#settinggettingvalues
 
 **Related sample**:
 - [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)

@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxToolbar into an application, you need to take the following simple steps:
 
 - [Download the Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Toolbar](#initializetoolbar) with the object constructor
-- [Load data into Toolbar](#loaddataintotoolbar)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Toolbar](#initialize-toolbar) with the object constructor
+- [Load data into Toolbar](#load-data-into-toolbar)
 
 ~~~html
 <!DOCTYPE html>
@@ -29,9 +29,7 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/i5a9mx2i	Toolbar. Basic Initialization}}
-
-
+**Related sample**: [Toolbar. Basic Initialization](https://snippet.dhtmlx.com/i5a9mx2i)
 
 Include source files
 --------------------
@@ -61,7 +59,7 @@ Initialize Toolbar
 Initialize Toolbar with the `dhx.Toolbar` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the toolbar container
-- an object with configuration properties (see the full list below)
+- an object with [configuration properties](#configuration-properties)
 
 ~~~js
 var toolbar = new dhx.Toolbar("toolbar_container", {
@@ -71,7 +69,7 @@ var toolbar = new dhx.Toolbar("toolbar_container", {
 
 ### Configuration properties
 
-See the detailed information on configuration properties of Toolbar in the [Toolbar API overview](toolbar/api/api_overview.md#properties) article.
+See the detailed information on configuration properties of Toolbar in the [Toolbar API overview](toolbar/api/api_overview.md#toolbar-properties) article.
 
 
 Load data into Toolbar
@@ -86,7 +84,7 @@ var toolbar = new dhx.Toolbar("toolbar_container");
 toolbar.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/b0fmkwg5	Toolbar. Init With External Data}}
+**Related sample**: [Toolbar. Init With External Data](https://snippet.dhtmlx.com/b0fmkwg5)
 
 - from a local source using the **parse()** method of tree collection:
 
@@ -112,10 +110,10 @@ var data = [
     	icon: "dxi-delete",
     	value: "delete"
     }
-]
+];
 
 var toolbar = new dhx.Toolbar("toolbar_container", {css:"dhx_toolbar--bordered" });
 toolbar.data.parse(data);
 ~~~
 
-Detailed information on loading data into Toolbar is given in the article toolbar/load_data.md.
+Detailed information on loading data into Toolbar is given in the [](toolbar/load_data.md) article.

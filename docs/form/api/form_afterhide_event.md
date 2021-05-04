@@ -5,8 +5,10 @@ title: afterHide
 
 @short: fires after hiding a control of Form
 
+@signature: {'afterHide: (name: string, value?: any) => void;'}
+
 @params:
-- name|id		string		the name (or id, if the name is not specified) of the Form control
+- name | id		string		the name (or id, if the name is not specified) of the Form control
 - value     any         the current value of the control
 
 @example:

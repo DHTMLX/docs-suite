@@ -21,7 +21,7 @@ combo.setValue(combo.data.getId(1));
 combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/xl1p7zcx	Combobox. Set Value}}
+**Related sample**: [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
 
 To get the list of selected options, apply the [getValue()](combo/api/combobox_getvalue_method.md) method. It returns ids of selected options either as string(s) (by default) or as an array of strings. 
 In the latter case you need to pass the following parameter:
@@ -41,7 +41,7 @@ var array_ids = combo.getValue(true);
 // -> ["u1556097609214", "u1556097609228", "u1556097609244"]
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ppvjknid	Combobox. Get Value}}
+**Related sample**: [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
 
 Disabling/enabling ComboBox
 -----------------
@@ -55,7 +55,7 @@ combo.disable();
 combo.enable();
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7bujtsuu	Combobox. Enable And Disable}}
+**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
 Checking if a combobox is disabled
 --------------------------------
@@ -66,7 +66,7 @@ To check if a combobox is disabled, call the [isDisabled()](combo/api/combobox_i
 combo.isDisabled(); // -> true/false
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7bujtsuu	Combobox. Enable And Disable}}
+**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
 Repainting ComboBox
 ----------------
@@ -90,7 +90,7 @@ It is possible to clear the ComboBox input from the selected value(s) with the h
 combo.clear();
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/omlrtmj7	Combobox. Clear}}
+**Related sample**: [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
 
 Setting focus
 --------------
@@ -101,7 +101,7 @@ When needed, you can set focus in the ComboBox input without opening the list of
 combo.focus();
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/hp6b5sxe	Combobox. Focus}}
+**Related sample**: [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
 
 Hiding/showing the popup
 -----------------
@@ -136,7 +136,7 @@ combo.popup.show(container);
 combo.popup.hide();
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ztc4sko8	Combobox. Popup}}
+**Related sample**: [Combobox. Popup](https://snippet.dhtmlx.com/ztc4sko8)
 
 To control the process of showing/hiding the popup, apply the related events:
 
@@ -201,7 +201,7 @@ combo.popup.events.on("AfterHide", function(e){
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ll0uykpk	Combobox. Popup Events}}
+**Related sample**: [Combobox. Popup Events](https://snippet.dhtmlx.com/ll0uykpk)
 
 Using Data Collection API
 ------------------------
@@ -231,7 +231,7 @@ For instance:
 combo.data.add({value:"Russia"},1);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/o7vd331z	Combobox. Add/Remove}}
+**Related sample**: [Combobox. Add/Remove](https://snippet.dhtmlx.com/o7vd331z)
 
 ### Updating ComboBox options 
 
@@ -258,7 +258,7 @@ combo.data.update("option_id",{
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/y7hpq0x8	Combobox. Update}}
+**Related sample**: [Combobox. Update](https://snippet.dhtmlx.com/y7hpq0x8)
 
 ### Removing options from ComboBox
 

@@ -5,11 +5,11 @@ title: dragColumnIn
 
 @short: fires when a column is dragged to another potential target
 
-@signature: dragColumnIn: (data: IDragInfo, events: MouseEvent) => void | boolean;
+@signature: {'dragColumnIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("DragColumnIn", function(data, events) {

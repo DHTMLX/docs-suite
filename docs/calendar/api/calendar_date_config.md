@@ -5,7 +5,7 @@ title: date
 
 @short: defines the date that will be opened when the calendar is created
 
-@signature: date?: Date | string;
+@signature: {'date?: Date | string;'}
 
 
 @example: 
@@ -23,7 +23,7 @@ By default, it is either the same as calendar/api/calendar_value_config.md, or s
 @relatedapi: 
 calendar/api/calendar_value_config.md
 
-@related: calendar/how_to_start.md#initializecalendar
+@related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#initialcalendardate
 
 **Related sample**: [Calendar. Date Initialization](https://snippet.dhtmlx.com/fyg6l65t)

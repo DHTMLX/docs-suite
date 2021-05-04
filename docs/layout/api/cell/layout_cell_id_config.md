@@ -5,7 +5,7 @@ title: id
 
 @short: the id of a cell
 
-@signature: id?: string;
+@signature: {'id?: string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {
@@ -19,5 +19,5 @@ var layout = new dhx.Layout("layout_container", {
 @template:	api_config
 @descr: 
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 

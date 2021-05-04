@@ -1,13 +1,11 @@
 ---
 sidebar_label: css
 title: css
----          
-
-
+---
 
 @short: adds a CSS class(es) to the component
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -56,7 +54,7 @@ var tree = new dhx.Tree("tree", {
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
+@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
 tree/setting_tree_appearance.md#styling
 
 **Related samples**:

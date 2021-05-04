@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxPagination into an application, you need to take the following simple steps:
 
 - [Download the dhtmlxPagination](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) package and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create two containers](#createcontainers)
-- [Add a related component](#addarelatedwidget)
-- [Initialize Pagination](#initializepagination) with the object constructor
+- [Include source files](#include-source-files)
+- [Create two containers](#create-containers)
+- [Add a related component](#add-a-related-widget)
+- [Initialize Pagination](#initialize-pagination) with the object constructor
 
 ~~~html
 <!DOCTYPE html>
@@ -97,7 +97,7 @@ const widget = new dhx.List("widget_container", {
 The constructor has two parameters:
 
 - the HTML container for List,
-- an object with the List configuration properties (see the full list [here](list/api/refs/list_properties.md)). 
+- an object with the List configuration properties (see the full list [here](list/api/api_overview.md#properties)). 
 
 2\. Load data into the widget:
 
@@ -114,7 +114,7 @@ Initialize Pagination
 Initialize pagination with the *dhx.Pagination* object constructor. The constructor takes two parameters:
 
 - the HTML container for Pagination, 
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxPagination

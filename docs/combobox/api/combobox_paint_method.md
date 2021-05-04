@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints a Combo Box
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 combo.config.disabled = true;

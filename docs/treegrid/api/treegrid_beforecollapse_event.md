@@ -5,13 +5,13 @@ title: beforeCollapse
 
 @short: fires before collapsing a treegrid
 
-@signature: afterExpand: (rowId: string | number) => boolean;
+@signature: {'beforeCollapse: (id: string) => boolean | void;'}
 	
 @params:
-- rowId			string | number		the id of a collapsed row
+- id			string | number		the id of a collapsed row
 
 @returns:
-- result		boolean		false - to block collapsing a treegrid, otherwise true
+- result		boolean | void		false - to block collapsing a treegrid, otherwise true
 
 @example:
 treeGrid.events.on("BeforeCollapse", function(rowId) {

@@ -27,7 +27,9 @@ title: Button properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>url</b></td>
-			<td>(<i>string</i>) the URL the post request with form data will be sent to (if the <b>submit</b> property is set to <i>true</i>)  <br/>{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}</td>
+			<td>(<i>string</i>) the URL the post request with form data will be sent to (if the <b>submit</b> property is set to <i>true</i>)  <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ikyyekxq" target="_blank">Form. All DhxForm Inputs</a>
+			</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>width</b></td>
@@ -51,7 +53,7 @@ title: Button properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>view</b></td>

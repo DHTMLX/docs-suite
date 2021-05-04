@@ -5,7 +5,7 @@ title: headerHeight
 
 @short: sets the height of a Layout cell
 
-@signature: headerHeight?: number;
+@signature: {'headerHeight?: number;'}
 
 @default: 37
 
@@ -37,5 +37,5 @@ layout/api/layout_headerimage_config.md
 
 @changelog: added in v6.4
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/cell_configuration.md#heightofaheadercell

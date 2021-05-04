@@ -4,6 +4,8 @@ title: multiselection
 ---          
 
 @short: enables selection of multiple DataView items, sets the mode of multiselection
+TODO: api change (добавить в description true, false, "click", "ctrlClick")
+@signature: {'multiselection?: boolean | MultiselectionMode;'}
 
 ```todoapi
 boolean|string multiselection;
@@ -17,7 +19,8 @@ var dataview = new dhx.DataView("list", {multiselection:true});
 
 
 @template:	api_config
-@descr: 
+@descr:
+
 Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
 
 
@@ -25,4 +28,4 @@ Setting the **multiselection** property to *true* presupposes selection of multi
 **Related sample**:
 - [Dataview. Multiselection Dataview](https://snippet.dhtmlx.com/g0xwdx10)
 
-@related: dataview/configuration.md#multipleselectionofitems
+@related: dataview/configuration.md#multiple-selection-of-items

@@ -5,7 +5,7 @@ title: ungroup
 
 @short: ungroups the grid to return it into the plain view
 
-@signature: ungroup(): void;
+@signature: {'ungroup(): void;'}
 
 @example:
 treegrid.ungroup();

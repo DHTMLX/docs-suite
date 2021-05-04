@@ -5,7 +5,7 @@ title: getSelected
 
 @short: returns an array of IDs of selected items
 
-@signature: getSelected(): string[];
+@signature: {'getSelected(): string[];'}
 
 @returns:
 - param     array    an array of string values with IDs of selected items

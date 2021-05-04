@@ -5,7 +5,7 @@ title: minHeight
 
 @short: sets the minimal height of a window
 
-@signature: minHeight?: number;
+@signature: {'minHeight?: number;'}
 
 @default: 100
 

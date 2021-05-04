@@ -7,7 +7,7 @@ A control for adding some text.
 
 ![Text](../assets/form/form_text.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
 ## Adding Text
 

@@ -6,10 +6,10 @@ title: Initialization
 To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
 - [Download the Tree package](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Tree](#initializetree) with the object constructor
-- [Load data into Tree](#loaddataintotree)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Tree](#initialize-tree) with the object constructor
+- [Load data into Tree](#load-data-into-tree)
 
 ~~~html
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
 Include source files
 --------------------
@@ -76,7 +76,7 @@ Initialize Tree
 Initialize Tree with the `dhx.Tree` object constructor. The constructor has two parameters:
 
 - the HTML container for Tree,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxTree
@@ -107,7 +107,7 @@ var tree = new dhx.Tree("tree_container",{
 tree.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
 - to load data from an external file, use the **load()** method of the Tree Collection object:
 
@@ -119,4 +119,4 @@ var tree = new dhx.Tree("tree_container",{
 tree.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)

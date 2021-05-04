@@ -5,16 +5,15 @@ title: change
 
 @short: fires on changing the value of a control
  
+@signature: {'change: (value: string | ITimeObject) => void;'}
 
 @params:
-- value     string|object     the current value of the control
-
+- value     string | object     the current value of the control
 
 @example:
 form.getItem("timepicker").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
 
 @template: api_event
 @descr:

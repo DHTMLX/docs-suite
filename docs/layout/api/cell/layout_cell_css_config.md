@@ -5,7 +5,7 @@ title: css
 
 @short: the name of a CSS class(es) applied to Layout
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -67,7 +67,7 @@ var layout = new dhx.Layout("layout", {
 
 - <b>dhx_layout-cell--no-border_left</b> - Removes the left border of a layout-cell
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 layout/customization.md
 
 **Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)

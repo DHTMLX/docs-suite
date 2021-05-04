@@ -5,7 +5,7 @@ title: afterExpand
 
 @short: fires after expanding a sidebar
 
-afterExpand: () => void;
+@signature: {'afterExpand: () => void;'}
 
 @example:
 sidebar.events.on("AfterExpand", function() {

@@ -5,7 +5,7 @@ title: beforeColumnDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
-@signature: beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;
+@signature: {'beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
 - data		object		data object
@@ -24,6 +24,7 @@ grid.events.on("BeforeColumnDrop", function(data, events){
 
 @template:	api_event
 @descr:
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
@@ -37,24 +38,23 @@ The data object contains the following parameters:
 
 
 @relatedapi:
-grid/api/grid_dragitem_config.md
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
+[](grid/api/grid_dragitem_config.md)
+[](grid/api/grid_aftercolumndrag_event.md)
+[](grid/api/grid_aftercolumndrop_event.md)
+[](grid/api/grid_beforecolumndrag_event.md)
+[](grid/api/grid_cancolumndrop_event.md)
+[](grid/api/grid_cancelcolumndrop_event.md)
+[](grid/api/grid_dragcolumnin_event.md)
+[](grid/api/grid_dragcolumnout_event.md)
+[](grid/api/grid_dragcolumnstart_event.md)
 
-@related: grid/configuration.md#dragndropofgridcolumns
+@related: grid/configuration.md#drag-n-drop-of-grid-columns
 	
 
-@changelog: 
+@changelog:
 
 - added in v6.5
 - Before v7.0, the event took two parameters - **sourceId** and **targetId**. 
 - In v7.0, the parameters were replaced with new ones: **data** and **e**.
 
 
-@edition:pro

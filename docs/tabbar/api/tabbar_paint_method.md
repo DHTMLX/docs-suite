@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints a tabbar on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 tabbar.paint();

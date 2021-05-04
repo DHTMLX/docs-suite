@@ -5,10 +5,7 @@ title: show
 
 @short: shows a Popup
 
-```todoapi 
-void show(HTMLElement element,object config);
-show(node: HTMLElement, config?: IShowConfig, attached?: any): void;
-```
+@signature: {'show(node: HTMLElement, config?: IShowConfig, attach?: any): void;'}
 
 @params:
 - element 		HTMLElement		 mandatory, the container to place a popup in
@@ -54,7 +51,7 @@ popup/api/popup_hide_method.md
 
 **Related sample**:
 - [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
-https://snippet.dhtmlx.com/bu4uj2ik	Popup.Show position
+- [Popup.Show position](https://snippet.dhtmlx.com/bu4uj2ik)	
 
 @related:popup/work_with_popup.md#hidingshowingpopup
 

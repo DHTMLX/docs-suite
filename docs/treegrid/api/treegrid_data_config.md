@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into the grid
 
-@signature: data: array[];
+@signature: {'data?: any[];'}
 
 @example: 
 var dataset = [
@@ -82,7 +82,7 @@ var dataset = [
 
 
 @related: treegrid/configuration.md#data
-treegrid/initialization.md#initialize-treegrid
+treegrid/initialization.md#initialize--treegrid
 
 @relatedapi: treegrid/api/treegrid_autoheight_config.md
 

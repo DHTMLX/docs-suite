@@ -27,7 +27,7 @@ Version 7.1.4
 - ComboBox. Fix the issue with filtering
 - Grid. Fix the issue with display of HTML content in the header of Grid
 - Grid. Fix the issue with applying of custom css styles to the header of a column when  the "colspan" attribute is set to the header
-- Grid. The [adjust](grid/api/grid_adjust_config.md) and [autoHeight](grid/api/grid_autoheight_config.md) configuration properties now should adjust the sizes of cells with account of [HTML content](grid/configuration.md#htmlcontentofgridcolumns) and [template](grid/api/api_gridcolumn_properties.md) applied to cells
+- Grid. The [adjust](grid/api/grid_adjust_config.md) and [autoHeight](grid/api/grid_autoheight_config.md) configuration properties now should adjust the sizes of cells with account of [HTML content](grid/configuration.md#html-content-of-grid-columns) and [template](grid/api/api_gridcolumn_properties.md) applied to cells
 - Grid. Fix the incorrect work of drag-n-drop in Grid when the grid is attached to Window
 - Grid. Fix the issue with applying of custom css styles to the footer of the grid
 - LazyDataProxy in Grid. Fix the error occurred when returning `false` from the 'beforeLazyLoad" event handler

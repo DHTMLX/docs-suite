@@ -5,9 +5,7 @@ title: range
 
 @short: enables/disables the possibility to select a range of dates on the calendar
 
-@signature: range?: boolean;
-
-@type: boolean
+@signature: {'range?: boolean;'};
 
 @example: 
 var calendar = new dhx.Calendar("calendar", {
@@ -16,7 +14,7 @@ var calendar = new dhx.Calendar("calendar", {
 });
 
 @related: 
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#rangemode
 
 @template:	api_config

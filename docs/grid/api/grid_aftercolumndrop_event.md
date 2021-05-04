@@ -5,12 +5,11 @@ title: afterColumnDrop
 
 @short: fires before the user has finished dragging a column but after the mouse button is released
 
-@signature: afterColumnDrop: (data: object, events: MouseEvent) => void;
+@signature: {'afterColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
-
+- e		    Event		a native event object
 
 @example:
 grid.events.on("AfterColumnDrop", function(data, events) {
@@ -20,6 +19,7 @@ grid.events.on("AfterColumnDrop", function(data, events) {
 
 @template: api_event
 @descr:
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
@@ -41,20 +41,20 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-@changelog: added in v7.0
-
 
 @relatedapi:
-grid/api/grid_dragitem_config.md
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_beforecolumndrop_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
+[](grid/api/grid_dragitem_config.md)
+[](grid/api/grid_aftercolumndrag_event.md)
+[](grid/api/grid_beforecolumndrag_event.md)
+[](grid/api/grid_beforecolumndrop_event.md)
+[](grid/api/grid_cancolumndrop_event.md)
+[](grid/api/grid_cancelcolumndrop_event.md)
+[](grid/api/grid_dragcolumnin_event.md)
+[](grid/api/grid_dragcolumnout_event.md)
+[](grid/api/grid_dragcolumnstart_event.md)
 
-@edition: pro
 
-@related: grid/configuration.md#dragndropofgridcolumns
+
+@related: grid/configuration.md#drag-n-drop-of-grid-columns
+
+@changelog: added in v7.0

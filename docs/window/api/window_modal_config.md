@@ -5,7 +5,7 @@ title: modal
 
 @short: defines whether a window is modal
 
-@signature: modal?: boolean;
+@signature: {'modal?: boolean;'}
 
 @default: false
 

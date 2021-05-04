@@ -6,10 +6,10 @@ title: Initialization
 To initialize dhtmlxChart in an application, you need to take the following steps:
 
 - [Download the dhtmlxChart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Chart](#initializechart) with the object constructor
-- [Load data into Chart](#loaddataintochart)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Chart](#initialize-chart) with the object constructor
+- [Load data into Chart](#load-data-into-chart)
 
 ~~~html
 <!DOCTYPE html>
@@ -49,7 +49,7 @@ To initialize dhtmlxChart in an application, you need to take the following step
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
 Include source files
 ----------------------
@@ -152,7 +152,7 @@ var chart = new dhx.Chart("chart_container",{
 chart.data.parse(data);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
 - to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
@@ -170,5 +170,5 @@ var chart = new dhx.Chart( "chart_container",{
 chart.data.load("../common/dataset.json");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/qah8exx2	Chart. Load Data}}
+**Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)
 

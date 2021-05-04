@@ -5,6 +5,8 @@ title: send
 
 @short: sends a form to the server
 
+@signature: {'send(url: string, method?: string, asFormData?: boolean): Promise<any> | void;'}
+
 @params:
 - url			string		the URL of the server
 - method 		string		the request type, "POST" by default
@@ -21,7 +23,8 @@ The **method** parameter can take "PUT", "POST", "DELETE", "GET" values, dependi
 
 @changelog: added in v6.1
 
-@related: form/work_with_form.md#sendingformtoserver
+@related: form/work_with_form.md#sending-form-to-server
+
 @relatedapi:
 form/api/form_aftersend_event.md
 form/api/form_beforesend_event.md

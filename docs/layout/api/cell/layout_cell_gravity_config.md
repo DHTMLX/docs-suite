@@ -5,7 +5,7 @@ title: gravity
 
 @short: sets the "weight" of a cell in relation to other cells placed in the same row and within one parent
 
-@signature: gravity?: number | boolean;
+@signature: {'gravity?: number | boolean;'}
 
 @example: 
 var layout = dhx.Layout("layout_container", {
@@ -48,7 +48,7 @@ The negative number set as a value to the **gravity** property is equated to zer
 
 [Layout. Gravity](https://snippet.dhtmlx.com/1u521djj)
 
-@related: layout/init.md#initializelayout
+@related: layout/init.md#initialize-layout
 
 @changelog:
 The property is updated in v7.0. For more information, see [Migration article](migration/index.md#65270).

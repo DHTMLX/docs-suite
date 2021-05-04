@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to Toolbar
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>

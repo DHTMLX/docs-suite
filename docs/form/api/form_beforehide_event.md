@@ -5,8 +5,10 @@ title: beforeHide
 
 @short: fires before a Form control is hidden
 
+@signature: {'beforeHide: (name: string | number, value?: any) => boolean | void;'}
+
 @params:
-- name|id		string		the name (or id, if the name is not specified) of the Form control
+- name | id		string | number		the name (or id, if the name is not specified) of the Form control
 - value     any         the current value of the control
 
 @returns:
@@ -29,4 +31,3 @@ form.events.on("BeforeHide", function(name, value) {
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
-  

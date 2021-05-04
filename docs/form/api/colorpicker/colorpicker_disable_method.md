@@ -5,6 +5,8 @@ title: disable
 
 @short: disables a ColorPicker control on a page
 
+@signature: {'disable(): void;'}
+
 
 
 

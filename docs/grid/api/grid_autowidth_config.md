@@ -5,7 +5,7 @@ title: autoWidth
 
 @short: makes grid's columns to fit the size of a grid
 
-@signature: autoWidth?: boolean;
+@signature: {'autoWidth?: boolean;'}
 
 @default: false
 
@@ -22,8 +22,8 @@ var grid = new dhx.Grid("grid_container", {
 
 [Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#autowidthforcolumns
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#autowidth-for-columns
 
 @changelog: added in v6.4
 

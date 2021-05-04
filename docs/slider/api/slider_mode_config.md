@@ -4,6 +4,8 @@ title: mode
 ---          
 
 @short: the direction of the Slider scale
+TODO: api change (добавить в descr "vertical" | "horizontal")
+@signature: {'mode?: Direction;'}
 
 mode?: "vertical" | "horizontal";
 
@@ -18,5 +20,5 @@ var slider = new dhx.Slider("slider_container", {
 @template:	api_config
 @descr: 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties
 

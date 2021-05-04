@@ -5,7 +5,7 @@ title: type
 
 @short: specifies the type of a chart
 
-@signature: type?: "bar" | "line" | "spline" | "scatter" | "area" | "donut" | "pie" | "pie3D" | "radar" | "xbar" | "splineArea";
+@signature: {'type?: ChartType;'}
 
 
 @example: 
@@ -13,8 +13,8 @@ var chart = new dhx.Chart("chart_container",{
     type:"line" 
 });
 
-@descr: 
-### Available types of charts 
+@descr:
+## Available types of charts 
 
 - "bar", "x-bar"
 - "line", "spline"
@@ -24,5 +24,5 @@ var chart = new dhx.Chart("chart_container",{
 - "radar"
 
 @related:
-chart/configuration_properties.md#mainproperties
+chart/configuration_properties.md#main-properties
 chart/charts_overview.md

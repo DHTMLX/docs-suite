@@ -5,13 +5,13 @@ title: getSeries
 
 @short: returns an object with configuration of a specified series
 
-@signature: getSeries(id: string): object;
+@signature: {'getSeries(id: string): ISeria;'}
 
 @params:
 - id	string		the id of a series
 
 @returns:
-- series	object		 an object with configuration of a series
+- ISeria	object		 an object with configuration of a series
 
 
 @example:

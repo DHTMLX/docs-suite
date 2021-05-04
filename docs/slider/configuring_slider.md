@@ -32,13 +32,13 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xm8e84s2	Slider. Inverse Mode Of The Slider}}
+**Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)
 
 
 Minimal and maximal values
 ------------------------------------------
 
-The minimal and maximal values define the start and end points of the slider. You can specify them via the corresponding configuration properties - [](slider/api/slider_min_config.md) and slider/api/slider_max_config.md. The default values are 0 and 100, correspondingly.
+The minimal and maximal values define the start and end points of the slider. You can specify them via the corresponding configuration properties - [](slider/api/slider_min_config.md) and [](slider/api/slider_max_config.md). The default values are 0 and 100, correspondingly.
 
 ~~~js
 var slider = new dhx.Slider("slider_container", { 
@@ -64,22 +64,18 @@ var slider = new dhx.Slider("slider", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/nfdr84oy	Slider. Range Mode Of The Slider}}
+**Related sample**: [Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
-There are more details given in the article slider/range_slider.md.
+There are more details given in the [](slider/range_slider.md) article.
 
 Scale settings
 -----------------
 
 You can configure the look and feel of the Slider scale via the corresponding properties of the Slider configuration object:
 
-todotw скорее всего можно просто сослаться на API
-{{api
-- slider/api/slider_tick_config.md - (<i>number</i>) sets the interval of steps for rendering the slider scale 
-- slider/api/slider_majortick_config.md - (<i>number</i>) sets interval of rendering numeric values on the slider scale
-- slider/api/slider_ticktemplate_config.md - (<i>function</i>) sets a template for rendering values on the slider scale 
-}}
-
+- [](slider/api/slider_tick_config.md) - (<i>number</i>) sets the interval of steps for rendering the slider scale
+- [](slider/api/slider_majortick_config.md) - (<i>number</i>) sets interval of rendering numeric values on the slider scale
+- [](slider/api/slider_ticktemplate_config.md) - (<i>function</i>) sets a template for rendering values on the slider scale
 
 ![](../assets/slider/scale.png)
 
@@ -93,9 +89,9 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jsfxnplp	Slider. Custom Scale}}
+**Related sample**: [Slider. Custom Scale](https://snippet.dhtmlx.com/jsfxnplp)
 
-{{editor	https://snippet.dhtmlx.com/4a6l7cyy	Slider. Slider With A Scale}}
+**Related sample**: [Slider. Slider With A Scale](https://snippet.dhtmlx.com/4a6l7cyy)
 
 ### Showing only the first and the last ticks
 
@@ -135,7 +131,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4o7yttam	Slider. Slider Label}}
+**Related sample**: [Slider. Slider Label](https://snippet.dhtmlx.com/4o7yttam)
 
 Step  
 -----------------
@@ -163,7 +159,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/sxh66mnu	Slider. Tooltip For The Slider}}
+**Related sample**: [Slider. Tooltip For The Slider](https://snippet.dhtmlx.com/sxh66mnu)
 
 Vertical mode
 ---------------
@@ -176,7 +172,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/rjborkca	Slider. Vertical Mode Of The Slider}}
+**Related sample**: [Slider. Vertical Mode Of The Slider](https://snippet.dhtmlx.com/rjborkca)
 
 
 

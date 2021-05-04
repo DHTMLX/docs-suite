@@ -5,7 +5,7 @@ title: controls
 
 @short: defines whether a timepicker is equipped with the Close and Save buttons
 
-@signature: controls?: boolean;
+@signature: {'controls?: boolean;'}
 
 @default: false
 
@@ -23,4 +23,4 @@ var timepicker = new dhx.Timepicker("timepicker", {
 @changelog: added in v6.4
 
 @related: timepicker/configuration.md#actionsbuttons
-timepicker/initialization.md#initializetimepicker
+timepicker/initialization.md#initialize-timepicker

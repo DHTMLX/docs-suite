@@ -5,7 +5,7 @@ title: getValue
 
 @short: gets current values/states of controls
 
-@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 @params:
 - asFormData	boolean		optional, defines whether values of Form controls should be returned as Form Data
@@ -41,7 +41,7 @@ var state = form.getValue();
 - If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
 
 
-@related: form/work_with_form.md#gettingvaluesofcontrols
+@related: form/work_with_form.md#getting-values-of-controls
 
 @relatedapi:
 form/api/form_setvalue_method.md
@@ -49,3 +49,4 @@ form/api/form_setvalue_method.md
 **Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
 @changelog:
+

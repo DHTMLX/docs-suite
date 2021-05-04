@@ -4,6 +4,8 @@ title: beforeAdd
 ---          
 
 @short: fires before adding a new item into a data collection
+
+@signature: {'beforeAdd: (obj: any) => boolean | void;'}
 	
 @params:
 - newItem		object			the object of an added item
@@ -23,4 +25,3 @@ The event is blockable. Return *false* to prevent an item adding into a data col
 
 @relatedapi:
 data_collection/api/afteradd_event.md
-	

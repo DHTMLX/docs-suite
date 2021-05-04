@@ -5,7 +5,7 @@ title: dragStart
 
 @short: fires when dragging of an item has started 
 
-@signature: dragStart: (data: object, events: MouseEvent) => void;
+@signature: {'dragStart: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("DragStart", function(data, events) {
@@ -34,9 +34,6 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
-@changelog: added in v7.0
-
 @relatedapi:
 dataview/api/dataview_afterdrag_event.md
 dataview/api/dataview_afterdrop_event.md
@@ -48,3 +45,5 @@ dataview/api/dataview_dragin_event.md
 dataview/api/dataview_dragout_event.md
 
 [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+
+@changelog: added in v7.0

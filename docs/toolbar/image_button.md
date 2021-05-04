@@ -7,7 +7,7 @@ This is a button with an image. Unlike toolbar/button.md, it does not have a tex
 
 ![](../assets/toolbar/image_button.png)
 
-{{editor	https://snippet.dhtmlx.com/vdiha09g	Toolbar. Image Button}}
+**Related sample**: [Toolbar. Image Button](https://snippet.dhtmlx.com/vdiha09g)
 
 ## Adding ImageButton
 

@@ -5,6 +5,8 @@ title: beforeValidate
 
 @short: fires before validation of form fields has started
 
+@signature: {'beforeValidate: (name: string, value: any) => boolean | void;'}
+
 @params:
 - name|id  string  the name (or id, if the name is not specified) of the Form control
 - value     any     the value to be validated

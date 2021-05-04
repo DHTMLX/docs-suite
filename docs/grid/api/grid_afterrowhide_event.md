@@ -5,7 +5,7 @@ title: afterRowHide
 
 @short: fires after a row is hidden
 
-@signature: afterRowHide: (row: object) => void;
+@signature: {'afterRowHide: (row: object) => void;'}
 
 @params: 
 - row   object  an object with a row configuration
@@ -19,8 +19,8 @@ grid.events.on("AfterRowHide", function(row){
 @template: api_event
 @descr:
 
-@changelog: added in v7.0
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
+@changelog: added in v7.0
 

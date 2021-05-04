@@ -6,7 +6,7 @@ description: description
 
 @short: fires after a window is hidden
 
-@signature: afterHide: (position: IPosition, e?: Event) => void;
+@signature: {'afterHide: (position: IPosition, events?: Event) => void;'}
 
 @params:
 - position  object      an object with coordinates of the window's position
@@ -25,7 +25,7 @@ The **position** parameter contains two attributes:
 - **left** - (*number*)	the left coordinate of the window's position (in pixels)
 - **top** - (*number*)	the top coordinate of the window's position (in pixels)
 
-When the user closes the window by clicking on the Close icon (when the <a href="https://docs.dhtmlx.com/suite/window__api__window_closable_config.html">closable</a> option is enabled), the native event object will be passed into the second argument.
+When the user closes the window by clicking on the Close icon (when the [](window/api/window_closable_config.md) option is enabled), the native event object will be passed into the second argument.
 
 <br/>
 Note, the event fires in 2 cases:

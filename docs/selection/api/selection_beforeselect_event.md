@@ -5,7 +5,7 @@ title: beforeSelect
 
 @short: fires on selecting an item, but before the item is really selected
 
-@signature: beforeSelect: (id: string) => void | boolean;
+@signature: {'beforeSelect: (id: string) => void | boolean;'}
 
 @params:
 - id		string		the id of an item

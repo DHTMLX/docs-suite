@@ -23,7 +23,7 @@ title: Colorpicker properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>validation</b></td>
-			<td>(<i>function</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
+			<td>(<i>function</i>) <a href="../../../form/work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>width</b></td>
@@ -43,7 +43,7 @@ title: Colorpicker properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>placeholder</b></td>
@@ -59,7 +59,7 @@ title: Colorpicker properties
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a control is required</a></td>
+			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
 		<tr>
 			<td class="webixdoc_links0"><b>hidden</b></td>

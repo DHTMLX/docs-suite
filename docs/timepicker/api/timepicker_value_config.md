@@ -5,7 +5,7 @@ title: value
 
 @short: the time value to be set on initialization of the timepicker
 
-@signature: value?: Date | number | string | any[] | hour: number, minute: number,  AM?: boolean;
+@signature: {'value?: Date | number | string | any[] | ITimeObject;'}
 
 @example:
 // the value as a Date object 

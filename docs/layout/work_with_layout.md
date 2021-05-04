@@ -14,7 +14,7 @@ To remove a certain cell from a layout, apply the [removeCell](layout/api/layout
 layout.removeCell(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/tnujp7jk	Layout. Remove Cell}}
+**Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
 
 Getting the object of a cell
 --------------------
@@ -46,7 +46,7 @@ list.data.load('../common/library.json');
 layout.getCell("list").attach(list);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6wuxj6sh	Layout. Attach}}
+**Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
 Attaching an HTML content to a cell
 ------------------------------
@@ -69,14 +69,14 @@ It is possible to hide/show a cell with the help of its API. Both the [hide](lay
 layout.getCell("toolbar").hide();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/u0jd8ah3	Layout. Hide}}
+**Related sample**: [Layout. Hide](https://snippet.dhtmlx.com/u0jd8ah3)
 
 ~~~js
 // showing a cell
 layout.getCell("toolbar").show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/v0q7gq26	Layout. Show}}
+**Related sample**: [Layout. Show](https://snippet.dhtmlx.com/v0q7gq26)
 
 
 Checking visibility of a cell
@@ -101,7 +101,7 @@ layout.getCell("sidebar").collapse();
 layout.getCell("sidebar").expand();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/h0wtlpyk	Layout. Expand/Collapse}}
+**Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
 
 Toggling a cell
 --------------------
@@ -112,7 +112,7 @@ It is also possible to collapse and expand a specified cell of Layout using the 
 layout.getCell("toolbar").toggle();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/t38tqk0k	Layout. Toggle}}
+**Related sample**: [Layout. Toggle](https://snippet.dhtmlx.com/t38tqk0k)
 
 @todo:
 complete<br/>

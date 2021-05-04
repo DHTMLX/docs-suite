@@ -5,7 +5,7 @@ title: css
 
 @short: adds style classes to TreeGrid
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>
@@ -61,7 +61,7 @@ var treegrid = new dhx.TreeGrid({
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 
-@related: treegrid/initialization.md#initializetreegrid
+@related: treegrid/initialization.md#initialize-treegrid
 treegrid/customization.md#stylingtreegrid
 
 **Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)

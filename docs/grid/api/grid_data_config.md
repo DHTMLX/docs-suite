@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into the grid
 
-@signature: data: array;
+@signature: {'data?: any[];'}
 
 @example: 
 var dataset = [
@@ -34,7 +34,12 @@ var grid = new dhx.Grid("grid_container", {
 
 
 @template:	api_config
-@descr: 
+@descr:
+
+**Related samples**:
+- [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
+- [Grid. External Datacollection](https://snippet.dhtmlx.com/qrw1x949)
+
 1. Starting with v7.1, you can specify the height for the necessary row of data via setting the number value to the <b>height</b> option when defining the data set: 
 
 ~~~js
@@ -53,7 +58,7 @@ var dataset = [
 ];
 ~~~
 
-- [Grid. Row height](https://snippet.dhtmlx.com/2jo5lcuj)
+**Related Sample:** [Grid. Row height](https://snippet.dhtmlx.com/2jo5lcuj)
 
 {{note The **height** option has a higher priority than the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration property of Grid. <br>Thus, [autoHeight:true](grid/api/grid_autoheight_config.md) will be ignored for the cell that the **height** option is defined to.}}
 
@@ -72,7 +77,7 @@ var dataset = [
 ];
 ~~~
 
-- [Grid. Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
+**Related Sample:** [Grid. Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
 
 
 @related: grid/initialization.md#initialize-grid
@@ -80,6 +85,3 @@ grid/configuration.md#data
 
 @relatedapi: grid/api/grid_autoheight_config.md
 
-**Related samples**:
-- [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
-- [Grid. External Datacollection](https://snippet.dhtmlx.com/qrw1x949)

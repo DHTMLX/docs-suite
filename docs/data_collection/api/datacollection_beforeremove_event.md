@@ -4,6 +4,8 @@ title: beforeRemove
 ---          
 
 @short: fires before removing an item from a data collection
+
+@signature: {'beforeRemove: (obj: any) => boolean | void;'}
 	
 @params:
 - removedItem		object			the object of an item to remove

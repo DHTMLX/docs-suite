@@ -5,10 +5,7 @@ title: apply
 
 @short: fires on clicking the "Select" button
 
-```todoapi
-void apply(){ ... };
-apply = "apply",
-```
+@signature: {'apply: () => void;'}
 
 @example:
 colorpicker.events.on("Apply", function() {

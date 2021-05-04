@@ -5,10 +5,10 @@ title: setColumns
 
 @short: sets configuration for TreeGrid columns
 
-@signature: setColumns(columns: ICol[]): void;
+@signature: {'setColumns(col: ICol[]): void;'}
 
 @params:
-- columns	array	an array of objects with configuration of columns
+- col	array	an array of objects with configuration of columns
 
 @example:
 grid.setColumns([

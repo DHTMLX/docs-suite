@@ -5,13 +5,9 @@ title: footerRowHeight
 
 @short: sets the height of rows in the footer
 
-@signature: footerRowHeight?: number;
-
+@signature: {'footerRowHeight?: number;'}
 
 @default: 40
-
-
-@type: number
 
 @example: 
 var grid = new dhx.Grid("grid_container", {
@@ -24,5 +20,5 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
 The height of the footer is calculated as a sum of all row heights in it.
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#headerfooterheight
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#headerfooter-height

@@ -5,7 +5,7 @@ title: disabled
 
 @short: makes Combo Box disabled
 
-@signature: disabled?: boolean;
+@signature: {'disabled?: boolean;'}
 
 @default: false
 
@@ -18,7 +18,7 @@ var combo = new dhx.Combobox("combo_container", {
 @template:	api_config
 @descr: 
 
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#disabledmode
+@related: combobox/how_to_start.md#initialize-combobox
+combobox/configuration.md#disabled-mode
 
 **Related sample**: [Combobox. Disabled](https://snippet.dhtmlx.com/ductsm0f)

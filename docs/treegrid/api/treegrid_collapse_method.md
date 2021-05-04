@@ -5,7 +5,7 @@ title: collapse
 
 @short: collapses a tree node by id
 
-@signature: collapse(id: string): void;
+@signature: {'collapse(id: string): void;'}
 
 @params:
 - id	string		the id of a node to collapse

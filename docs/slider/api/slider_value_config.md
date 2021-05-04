@@ -5,7 +5,7 @@ title: value
 
 @short: the value the thumb will be set at on initialization of the slider
 
-@signature: value?: number[] | number | string;
+@signature: {'value?: number[] | number | string;'}
 
 @example: 
 var slider = new dhx.Slider("slider_container", { 
@@ -17,5 +17,5 @@ var slider = new dhx.Slider("slider_container", {
 @descr: 
 
 
-@related: slider/initializing_slider.md#configurationproperties
+@related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#initialvalue

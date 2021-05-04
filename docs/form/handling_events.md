@@ -29,7 +29,7 @@ form.events.on("Click", function(name,e){
 
 Several handlers can be attached to one and the same event, and all of them will be executed.
 
-{{editor	https://snippet.dhtmlx.com/vyipsaoa	Form. Events}}
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 {{note  The names of the events are case-insensitive. }}
 

@@ -6,10 +6,10 @@ title: Initialization
 To add dhtmlxLayout into an application, you need to take the following simple steps:
 
 - [Download the Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Define Layout structure](#definelayoutstructure)
-- [Initialize Layout](#initializelayout) with the object constructor
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Define Layout structure](#define-layout-structure)
+- [Initialize Layout](#initialize-layout) with the object constructor
 
 
 ~~~html
@@ -42,7 +42,7 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ls3cbcys	Layout. Basic Initialization}}
+**Related sample**: [Layout. Basic Initialization](https://snippet.dhtmlx.com/ls3cbcys)
 
 Include source files
 --------------------

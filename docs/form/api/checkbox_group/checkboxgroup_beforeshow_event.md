@@ -4,6 +4,8 @@ title: beforeShow
 ---          
 
 @short: fires before a control is shown
+
+@signature: {'beforeShow: (value: ICheckboxGroupValue) => boolean | void;'}
  
 
 @params:

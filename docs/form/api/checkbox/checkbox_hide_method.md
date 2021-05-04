@@ -5,6 +5,8 @@ title: hide
 
 @short: hides a Checkbox control
 
+@signature: {'hide(): void;'}
+
 
 
 @example:

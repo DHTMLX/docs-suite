@@ -5,7 +5,7 @@ title: left
 
 @short: the left coordinate of a window position
 
-@signature: left?: number;
+@signature: {'left?: number;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

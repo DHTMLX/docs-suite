@@ -5,7 +5,7 @@ title: setValue
 
 @short: selects a color in ColorPicker
 
-@signature: setValue(value: string): void;
+@signature: {'setValue(value: string): void;'}
 
 @params:
 - value    string   the code of a color (in the Hex format) to select

@@ -5,10 +5,10 @@ title: disable
 
 @short: disables and dims items of Sidebar
 
-@signature: disable(ids: string | string[]): void;
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array	 	optional, the ID or an array of IDs of items
+- ids 		string | array	 	optional, the ID or an array of IDs of items
 
 @example:
 sidebar.disable("search");
