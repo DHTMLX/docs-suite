@@ -28,8 +28,9 @@ The event fires when a cell of Grid has a keyboard focus.
 **Related sample**:
 - [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
-@changelog: added in v6.4
 
-@related: grid/configuration.md#keyboardnavigation
+@related: grid/configuration.md#keyboard-navigation
 
 @relatedapi: grid/api/grid_afterkeydown_event.md
+
+@changelog: added in v6.4

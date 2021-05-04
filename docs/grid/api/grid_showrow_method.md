@@ -24,7 +24,7 @@ grid.showRow(rowId);
 grid/api/grid_hiderow_method.md
 grid/api/grid_isrowhidden_method.md
 
-@related: grid/usage.md#hidingshowingarow
+@related: grid/usage.md#hidingshowing-a-row
 
 @changelog:
 added in v7.0

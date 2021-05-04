@@ -18,12 +18,11 @@ var grid = new dhx.Grid("grid_container", {
 
 
 @template:	api_config
-@descr: 
+@descr:
  
+**Related sample:** [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
 
 @related:grid/initialization.md#initialize-grid
-grid/configuration.md#editinggridandseparatecolumns
+grid/configuration.md#editing-grid-and-separate-columns
 
 @changelog: added in v6.4
-
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)

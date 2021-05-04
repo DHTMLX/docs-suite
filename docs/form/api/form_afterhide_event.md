@@ -22,7 +22,7 @@ form.events.on("AfterHide", function(name, value) {
 
 @relatedapi: form/api/form_beforehide_event.md
 
-@changelog: 
+@changelog:
 
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.

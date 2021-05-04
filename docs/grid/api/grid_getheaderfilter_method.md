@@ -35,7 +35,7 @@ countryFilter.blur();
 
 [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
 
-@related: grid/usage.md#gettingheaderfilter
+@related: grid/usage.md#getting-header-filter
 
 @changelog:
 added in 7.0

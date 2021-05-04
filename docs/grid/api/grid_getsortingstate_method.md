@@ -36,7 +36,7 @@ The return object includes the following attributes:
 - [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
 
 
-@related: grid/usage.md#gettingthesortingstate
+@related: grid/usage.md#getting-the-sorting-state
 
 @changelog:
 added in v6.4

@@ -21,8 +21,8 @@ grid.events.on("Resize", function(col,e){
 @template: api_event
 @descr:
 
-@changelog:
-added in v6.2
-
 **Related sample**:
 - [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+
+@changelog:
+added in v6.2

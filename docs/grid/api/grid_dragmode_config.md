@@ -18,7 +18,8 @@ var grid = new dhx.Grid("grid_container", {
 
 
 @template:	api_config
-@descr: 
+@descr:
+ 
 Drag-n-drop can work in three modes: 
 
 <table class="webixdoc_links">
@@ -42,7 +43,7 @@ Drag-n-drop can work in three modes:
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
 
 @related: grid/initialization.md#initialize-grid
-grid/configuration.md#dragndropofgridrows
+grid/configuration.md#drag-n-drop-of-grid-rows
 
 @relatedapi: 
 - grid/api/grid_afterrowdrag_event.md

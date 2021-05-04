@@ -17,7 +17,9 @@ var grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 
-@descr: The property can be specified to one of the available adjustment modes:
+@descr: 
+
+The property can be specified to one of the available adjustment modes:
 
 <table class="webixdoc_links">
 	<tbody>
@@ -53,6 +55,6 @@ var grid = new dhx.Grid("grid_container", {
 @relatedapi: grid/api/grid_adjustcolumnwidth_method.md
 
 @related: grid/initialization.md#initialize-grid
-grid/configuration.md#autosizeforcolumns
+grid/configuration.md#autosize-for-columns
 
 @changelog: added in v6.4

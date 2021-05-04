@@ -24,8 +24,6 @@ grid.addRowCss("2", "myCustomClass");
 @template: api_method
 @descr:
 
-@related: grid/customization.md#stylingrows
-
 **Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)
 
-@changelog:
+@related: grid/customization.md#styling-rows

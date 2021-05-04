@@ -12,7 +12,7 @@ var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     data: dataset,
     resizable: true /*!*/
-}
+});
 
 
 @template:	api_config

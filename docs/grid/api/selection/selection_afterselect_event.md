@@ -31,8 +31,9 @@ grid.events.on("AfterSelect", function(row, col){
 ~~~
 
 
-@changelog:
-added in v7.0
 
 @relatedapi: 
 grid/api/selection/selection_enable_method.md
+
+@changelog:
+added in v7.0

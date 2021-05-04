@@ -21,7 +21,7 @@ var grid = new dhx.Grid("grid_container", {
 @descr: 
 
 @related: grid/initialization.md#initialize-grid
-grid/configuration.md#automaticaddingofemptyrowintogrid
+grid/configuration.md#automatic-adding-of-empty-row-into-grid
 
 **Related sample**:
 - [Grid. Auto Empty Row](https://snippet.dhtmlx.com/rkytig73)

@@ -55,7 +55,7 @@ treegrid/api/treegrid_dragcolumnstart_event.md
 
 @related: treegrid/configuration.md#dragndropofgridcolumns
 
-@changelog: 
+@changelog:
 
 - added in v6.5
 - Before v7.0, the event took one parameter - the column id. 

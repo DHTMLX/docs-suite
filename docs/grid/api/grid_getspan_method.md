@@ -21,6 +21,7 @@ var span = grid.getSpan("10","a");
 
 @template: api_method
 @descr:
+
 A returned **span** object contains the following properties:
 
 <table class="webixdoc_links">
@@ -60,4 +61,4 @@ grid/api/grid_removespan_method.md
 
 @changelog:
 
-@related: grid/usage.md#addingremovingspans
+@related: grid/usage.md#addingremoving-spans

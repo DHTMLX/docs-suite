@@ -18,7 +18,7 @@ var state = grid.getScrollState(); // -> {x:0,y:0}
 @descr:
 
 
-@related: grid/usage.md#controllingscrollbehavior
+@related: grid/usage.md#controlling-scroll-behavior
 
 
 @changelog:
