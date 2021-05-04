@@ -1,6 +1,6 @@
 ---
-sidebar_label: Sales KPI tracking system demo
-title: Sales KPI tracking system demo
+sidebar_label: Sales KPI Tracking System Demo
+title: Sales KPI Tracking System Demo
 --- 
 
 ![](../assets/optimus/demo/kpi_demo.png)

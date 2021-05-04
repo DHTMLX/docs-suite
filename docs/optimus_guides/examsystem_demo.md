@@ -1,6 +1,6 @@
 ---
-sidebar_label: Online Exam System demo
-title: Online Exam System demo
+sidebar_label: Online Exam System Demo
+title: Online Exam System Demo
 --- 
 
 ![](../assets/optimus/demo/examsystem_demo.png)
@@ -15,7 +15,7 @@ The Download Demo button on both pages will start downloading process of the dem
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the Hotel Management System demo. Save the file and unpack it to your working directory.
+Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the Online Exam System demo. Save the file and unpack it to your working directory.
 
 ## How to start
 
