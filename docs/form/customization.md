@@ -22,7 +22,7 @@ There is a possibility to make changes in the look and feel of a form. For this 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](form/api/form_css_property.md) property in the Form configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](form/api/form_css_config.md) property in the Form configuration:
 
 ~~~js
 var form = new dhx.Form({

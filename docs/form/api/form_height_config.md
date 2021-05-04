@@ -49,7 +49,7 @@ var form = new dhx.Form("form_container", {
 @related: form/how_to_start.md#initialize-form
 form/configuration.md#widthheight
 
-@relatedapi: form/api/form_width_property.md
+@relatedapi: form/api/form_width_config.md
 
 @changelog: added in v6.4
 
