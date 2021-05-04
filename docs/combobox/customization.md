@@ -8,7 +8,7 @@ Custom filter for options
 
 ![](../assets/combo/custom_filter.png)
 
-It is possible to set a custom filtering function for the options of ComboBox via the [](combo/api/combobox_filter_config.md) option. A custom function takes two parameters:
+It is possible to set a custom filtering function for the options of ComboBox via the [](combobox/api/combobox_filter_config.md) option. A custom function takes two parameters:
 
 <table class="webixdoc_links">
 	<tbody>

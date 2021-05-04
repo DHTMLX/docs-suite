@@ -53,16 +53,16 @@ title: Form API overview
 
 | Name                                   | Description                                   |
 | -------------------------------------- | --------------------------------------------- |
-| [](form/api/form_align_property.md)    | @getshort(form/api/form_align_property.md)    |
-| [](form/api/form_cols_property.md)     | @getshort(form/api/form_cols_property.md)     |
-| [](form/api/form_css_property.md)      | @getshort(form/api/form_css_property.md)      |
-| [](form/api/form_disabled_property.md) | @getshort(form/api/form_disabled_property.md) |
-| [](form/api/form_height_property.md)   | @getshort(form/api/form_height_property.md)   |
-| [](form/api/form_hidden_property.md)   | @getshort(form/api/form_hidden_property.md)   |
-| [](form/api/form_padding_property.md)  | @getshort(form/api/form_padding_property.md)  |
-| [](form/api/form_rows_property.md)     | @getshort(form/api/form_rows_property.md)     |
-| [](form/api/form_title_property.md)    | @getshort(form/api/form_title_property.md)    |
-| [](form/api/form_width_property.md)    | @getshort(form/api/form_width_property.md)    |
+| [](form/api/form_align_config.md)    | @getshort(form/api/form_align_config.md)    |
+| [](form/api/form_cols_config.md)     | @getshort(form/api/form_cols_config.md)     |
+| [](form/api/form_css_config.md)      | @getshort(form/api/form_css_config.md)      |
+| [](form/api/form_disabled_config.md) | @getshort(form/api/form_disabled_config.md) |
+| [](form/api/form_height_config.md)   | @getshort(form/api/form_height_config.md)   |
+| [](form/api/form_hidden_config.md)   | @getshort(form/api/form_hidden_config.md)   |
+| [](form/api/form_padding_config.md)  | @getshort(form/api/form_padding_config.md)  |
+| [](form/api/form_rows_config.md)     | @getshort(form/api/form_rows_config.md)     |
+| [](form/api/form_title_config.md)    | @getshort(form/api/form_title_config.md)    |
+| [](form/api/form_width_config.md)    | @getshort(form/api/form_width_config.md)    |
 
 ##  Button API
 
