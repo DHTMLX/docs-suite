@@ -15,5 +15,4 @@ list.destructor();
 
 **Related sample**: [List. Destructor](https://snippet.dhtmlx.com/f0zto6m4)
 
-@changelog:
 

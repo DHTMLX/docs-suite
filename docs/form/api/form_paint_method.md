@@ -24,6 +24,4 @@ form.paint();
 
 
 
-@changelog:
-
 

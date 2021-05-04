@@ -49,6 +49,6 @@ The return object includes the following attributes:
 @related: treegrid/usage.md#workingwithcolumnsandcells
 
 
-@changelog:
+
 
 

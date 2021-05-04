@@ -20,4 +20,4 @@ If no value is set to the *adjust* parameter, the **adjustColumnWidth** method s
 
 @relatedapi: treegrid/api/treegrid_adjust_config.md
 
-@changelog:
+

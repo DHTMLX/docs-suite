@@ -49,6 +49,5 @@ The return object includes the following attributes:
 
 @related: grid/usage.md#working-with-columns-and-cells
 
-@changelog:
 
 

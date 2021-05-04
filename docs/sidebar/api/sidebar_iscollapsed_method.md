@@ -22,7 +22,7 @@ sidebar.isCollapsed(); // -> true/false
 
 
 
-@changelog:
+
 
 
 

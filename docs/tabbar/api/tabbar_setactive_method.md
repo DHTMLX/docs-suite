@@ -33,6 +33,6 @@ tabbar.setActive("2");
 
 @related: tabbar/work_with_tabbar.md#settinggettingtheactivetab
 
-@changelog:
+
 
 

@@ -18,8 +18,3 @@ combo.paint();
 
 
 
-
-
-@changelog:
-
-

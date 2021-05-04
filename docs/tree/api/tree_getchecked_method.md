@@ -25,6 +25,6 @@ tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 tree/api/tree_uncheckitemnew_method.md
 
 
-@changelog:
+
 
 

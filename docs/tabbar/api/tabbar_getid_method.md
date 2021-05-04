@@ -21,6 +21,4 @@ var id = tabbar.getId(0);
 @related: tabbar/work_with_tabbar.md#gettingtheidofatab
 
 
-@changelog:
-
 

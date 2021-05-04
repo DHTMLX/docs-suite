@@ -87,7 +87,7 @@ tree/api/tree_getstate_method.md
 
 **Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
 
-@changelog:
+
 
 @related: tree/work_with_tree.md#settinggettingtreestate
 

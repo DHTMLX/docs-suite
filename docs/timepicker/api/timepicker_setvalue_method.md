@@ -41,7 +41,5 @@ timepicker/api/timepicker_getvalue_method.md
 
 @related: timepicker/usage.md#settingvalue
 
-@changelog:
-
 **Related sample**: [Timepicker. Set Timepicker Value](https://snippet.dhtmlx.com/6r8lkhbg)
 

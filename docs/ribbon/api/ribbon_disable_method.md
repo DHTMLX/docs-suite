@@ -28,6 +28,6 @@ ribbon.disable();
 
 **Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
-@changelog:
+
 
 @related: ribbon/operating_ribbon.md#disablingandenablingcontrols

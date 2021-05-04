@@ -29,6 +29,6 @@ ribbon.hide();
 
 @related: ribbon/operating_ribbon.md#hidingandshowingcontrols
 
-@changelog:
+
 
 

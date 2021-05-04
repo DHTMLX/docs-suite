@@ -21,4 +21,4 @@ var state = grid.getScrollState(); // -> {x:0,y:0}
 @relatedapi: treegrid/api/treegrid_scroll_method.md
 treegrid/api/treegrid_scrollto_method.md
 
-@changelog:
+

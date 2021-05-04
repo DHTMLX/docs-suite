@@ -25,4 +25,4 @@ Each column object may contain a set of properties. You will find the full list 
 @relatedapi: treegrid/api/treegrid_getcolumn_method.md
 @related: treegrid/usage.md#workingwithcolumnsandcells
 
-@changelog:
+

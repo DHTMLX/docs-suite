@@ -24,7 +24,7 @@ dhxWindow.show();
 
 
 
-@changelog:
+
 
 @related: window/how_to_start.md
 window/usage.md#attachingcontent

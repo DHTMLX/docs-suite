@@ -55,7 +55,5 @@ calendar.showDate(null,"year");
 **Related sample**:
 - [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
 
-@changelog:
-
 @related:
 calendar/operating_calendar.md#changingcalendarmode

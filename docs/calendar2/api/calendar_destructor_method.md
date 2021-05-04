@@ -13,7 +13,5 @@ calendar.destructor();
 @template: api_method
 @descr:
 
-@changelog:
-
 **Related sample**:
 - [Calendar. Destructor](https://snippet.dhtmlx.com/f0kqjb13)

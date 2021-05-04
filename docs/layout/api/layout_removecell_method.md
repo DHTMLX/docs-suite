@@ -20,4 +20,3 @@ layout.removeCell("1");
 
 **Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
 
-@changelog:

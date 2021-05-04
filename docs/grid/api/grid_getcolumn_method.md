@@ -135,6 +135,4 @@ The returned object contains the following set of properties:
 
 @relatedapi: grid/api/grid_setcolumns_method.md
 
-@changelog:
-
 

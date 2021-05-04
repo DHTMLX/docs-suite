@@ -25,6 +25,5 @@ var selectedCell = treegrid.selection.getCell();
 
 @relatedapi: treegrid/api/selection/selection_enable_method.md
 
-@changelog:
 
 

@@ -44,8 +44,6 @@ calendar.setValue(["03/06/19", "15/06/19"]);
 calendar/api/calendar_dateformat_config.md
 calendar/api/calendar_getvalue_method.md
 
-@changelog:
-
 **Related sample**:
 - [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
 

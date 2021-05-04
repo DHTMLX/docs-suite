@@ -18,7 +18,7 @@ tree.expandAll();
 
 **Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
 
-@changelog:
+
 
 @relatedapi:
 tree/api/tree_collapseall_method.md
