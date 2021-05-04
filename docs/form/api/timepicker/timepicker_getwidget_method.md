@@ -5,9 +5,7 @@ title: getWidget
 
 @short: returns the dhtmlxTimePicker widget attached to a TimePicker control
 
-@signature: getWidget(): Combobox;
-
-
+@signature: {'getWidget(): Timepicker;'}
 
 @returns:
 param   object    the dhtmlxTimePicker widget
@@ -15,7 +13,6 @@ param   object    the dhtmlxTimePicker widget
 @example:
 var timepicker = form.getItem("timepicker").getWidget();  
 // -> dhtmlxTimePicker
-
 
 @template: api_method
 @descr:
@@ -27,4 +24,3 @@ For example, you can set value for a TimePicker control. To do this, you need to
 var timepicker = form.getItem("timepicker").getWidget();  // -> TimePicker
 timepicker.setValue("00:39"); //set the value as a string
 ~~~
-

@@ -5,7 +5,7 @@ title: top
 
 @short: the top coordinate of a window position
 
-@signature: top?: number;
+@signature: {'top?: number;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

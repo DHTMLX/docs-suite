@@ -5,7 +5,7 @@ title: beforeClose
 
 @short: fires before closing a list with options
 
-@signature: beforeClose: () => boolean | void;
+@signature: {'beforeClose: () => boolean | void;'}
 
 @returns:
 param 	boolean		false-to prevent closing a combobox, otherwise true

@@ -5,7 +5,7 @@ title: removeRowCss
 
 @short: removes a style from a row
 
-@signature: removeRowCss(id: string | number, css: string): void;
+@signature: {'removeRowCss(id: string | number, css: string): void;'}
 
 @params:
 - id	string | number		the id of a row

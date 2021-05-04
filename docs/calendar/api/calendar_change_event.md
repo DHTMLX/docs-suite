@@ -5,7 +5,7 @@ title: change
 
 @short: fires on change of date selection
 
-@signature: change: (date: Date, oldDate: Date, byClick: boolean) => void;
+@signature: {'change: (date: Date, oldDate: Date, byClick: boolean) => void;'}
 
 @params:
 - date  		Date    	the newly selected date

@@ -5,7 +5,7 @@ title: movable
 
 @short: defines whether a window is movable
 
-@signature: movable?: boolean;
+@signature: {'movable?: boolean;'}
 
 @default: false
 

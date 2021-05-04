@@ -5,7 +5,7 @@ title: afterRowDrag
 
 @short: fires after dragging of a row is finished
 
-@signature: afterRowDrag: (data: object, events: MouseEvent) => void;
+@signature: {'afterRowDrag: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object

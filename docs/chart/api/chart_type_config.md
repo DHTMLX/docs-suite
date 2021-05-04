@@ -5,7 +5,7 @@ title: type
 
 @short: specifies the type of a chart
 
-@signature: type?: "bar" | "line" | "spline" | "scatter" | "area" | "donut" | "pie" | "pie3D" | "radar" | "xbar" | "splineArea";
+@signature: {'type?: ChartType;'}
 
 
 @example: 

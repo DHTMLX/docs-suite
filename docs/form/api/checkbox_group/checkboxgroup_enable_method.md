@@ -5,7 +5,7 @@ title: enable
 
 @short: enables a disabled CheckboxGroup control
 
-
+@signature: {'enable(): void;'}
 
 
 

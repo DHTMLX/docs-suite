@@ -5,17 +5,15 @@ title: mode
 
 @short: the mode of Calendar initialization
 
-@signature: mode?: "calendar" | "year" | "month" | "timepicker";
+@signature: {'mode?: ViewMode;'}
 
-@default:
-"calendar"
+@default: "calendar"
 
 @example: 
 var calendar = new dhx.Calendar("calendar_container", {
     mode: "month"
 });
  
-
 @template:	api_config
 @descr: 
 

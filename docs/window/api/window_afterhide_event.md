@@ -6,7 +6,7 @@ description: description
 
 @short: fires after a window is hidden
 
-@signature: afterHide: (position: IPosition, e?: Event) => void;
+@signature: {'afterHide: (position: IPosition, events?: Event) => void;'}
 
 @params:
 - position  object      an object with coordinates of the window's position

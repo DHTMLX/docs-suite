@@ -4,15 +4,9 @@ title: rowCss
 description: description
 ---          
 
-
 @short: sets style for a row
 
-@signature: 
-rowCss?: (row: IRow) => string;
-rowCss?: (row: object) => string;
-
-
-@type: function
+@signature: {'rowCss?: (row: IRow) => string;'}
 
 @example: 
 <style>

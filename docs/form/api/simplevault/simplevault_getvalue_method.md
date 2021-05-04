@@ -5,7 +5,7 @@ title: getValue
 
 @short: returns the current value of a SimpleVault control
 
-
+@signature: {'getValue(): ISimpleVaultValue[];'}
 
 @returns:
 param   array     the current value of the control

@@ -1,19 +1,21 @@
 ---
-sidebar_label: padding
-title: padding
+sidebar_label: width
+title: width
 ---          
 
-@short: sets padding for content inside the control group
+@short: sets the width of the control group
 
-@type: string
+@signature: {'width?: string | number | "content";'}
+
+@type: string | number | "content"
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	padding: "10px", /*!*/ // padding for rows
+	width: "500px", /*!*/ // the width for rows
     rows: [
         {
-            padding: "10px", /*!*/ // padding for cols
+            width: "500px", /*!*/ // the width for cols
             css: "dhx_layout-cell--bordered",
             cols: [{
                 type: "checkbox",
@@ -42,7 +44,10 @@ var form = new dhx.Form("form_container", {
 **Related sample**:
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
+
 @related: form/how_to_start.md#initialize-form
-form/configuration.md#padding
+form/configuration.md#widthheight
+
+@relatedapi: form/api/form_height_property.md
 
 @changelog: added in v6.4

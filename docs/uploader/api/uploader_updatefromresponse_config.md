@@ -4,9 +4,11 @@ title: updateFromResponse
 ---          
 
 @short:  updates file attributes with data from a server response
-	
+
+@signature: {'updateFromResponse?: boolean;'}
+
 @default: true
-@type: boolean
+
 @example:
 var vault = new dhx.Vault("vault_container", { 
     uploader:{

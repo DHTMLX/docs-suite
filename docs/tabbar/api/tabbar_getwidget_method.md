@@ -5,11 +5,8 @@ title: getWidget
 
 @short: returns the widget attached to Tabbar
 
-@signature: getWidget(): object;
+@signature: getWidget(): any;
 
-<!-- object getWidget();
- getWidget(): any; -->
- 
 @returns:
 - param	object      the widget attached to Tabbar
 

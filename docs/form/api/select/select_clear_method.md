@@ -5,11 +5,7 @@ title: clear
 
 @short: clears a value of a Select control
 
-@signature: clear(method?: ClearMethod): void;
-
-
-
-
+@signature: {'clear(): void;'}
 
 @example:
 form.getItem("select").clear();

@@ -5,13 +5,13 @@ title: beforeEditStart
 
 @short: fires before editing of an item has started
 
-beforeEditStart: (value: string, id: string | number) => boolean | void;
+@signature: {'beforeEditStart: (id: string | number) => void | boolean;'}
 
 @params:
 - id		string | number		the id of an item
 
 @returns:
-- result		boolean | void		false - to block item editing, otherwise true
+- result		void | boolean		false - to block item editing, otherwise true
 
 @example:
 dataview.events.on("BeforeEditStart", function(id){

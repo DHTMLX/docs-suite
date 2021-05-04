@@ -5,11 +5,11 @@ title: itemMouseOver
 
 @short: fires on moving the mouse pointer over an item
 
-@signature: itemMouseOver: (id: string | number, e: Event) => void;
+@signature: {'itemMouseOver: (id: string | number, events: Event) => void;'}
 
 @params:
-- id   		string,number			the id of an item
-- e			Event					a native event object
+- id   		string | number			the id of an item
+- events	Event					a native event object
 
 @example:
 list.events.on("ItemMouseOver", function(id, event) {

@@ -5,7 +5,7 @@ title: getColumn
 
 @short: returns an object with attributes of a column
 
-@signature: getColumn(colId: string | number): object;
+@signature: {'getColumn(colId: string | number): ICol;'}
 
 @params:
 - colId		string | number		the id of a column

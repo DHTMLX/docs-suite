@@ -5,7 +5,7 @@ title: afterExpand
 
 @short: fires after expanding a tree item
 
-@signature: afterExpand: (id: string) => void;
+@signature: {'afterExpand: (id: string) => void;'}
 
 @params:
 - id    string      the id of an expanded item

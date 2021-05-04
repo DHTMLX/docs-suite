@@ -5,11 +5,11 @@ title: click
 
 @short: fires after a click on a button or a menu option
 
-@signature: click: (id: string, e: Event) => void;
+@signature: {'click: (id: string, events: Event) => void;'}
 
 @params:
 - id 		string		the ID of a clicked control
-- e 		Event		a native event object
+- events	Event		a native event object
 
 
 @example:

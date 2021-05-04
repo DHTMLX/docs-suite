@@ -5,7 +5,7 @@ title: disable
 
 @short: disables a Checkbox control on a page
 
-
+@signature: {'disable(): void;'}
 
 
 

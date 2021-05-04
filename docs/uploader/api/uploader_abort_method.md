@@ -5,9 +5,11 @@ title: abort
 
 @short: cancels the upload of a file(s)
 
+@signature: {'abort(id?: string): void;'}
+
 @params:
 
-* id	 string 		optional, the ID of a file
+- id	 string 		optional, the ID of a file
 
 @example:
 vault.uploader.abort("file_id");

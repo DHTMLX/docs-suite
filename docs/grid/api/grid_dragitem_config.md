@@ -5,7 +5,7 @@ title: dragItem
 
 @short: enables the possibility to reorder grid columns by drag and drop
 
-dragItem?: "row" | "column" | "complex";
+@signature: {'dragItem?: "row" | "column" | "complex";'}
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

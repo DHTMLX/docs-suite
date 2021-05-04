@@ -5,6 +5,8 @@ title: setValue
 
 @short: sets a date in a DatePicker control
 
+@signature: {'setValue(value: string | Date): void;'}
+
 @params:
 - value     string|Date     the value to be set  
 

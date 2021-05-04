@@ -5,8 +5,10 @@ title: fieldName
 
 @short: sets the name of the file field in the form data
 
-@default:"file"
-@type: string
+@signature: {'fieldName?: string;'}
+
+@default: "file"
+
 @example:
 var vault = new dhx.Vault("vault_container", { 
     uploader:{

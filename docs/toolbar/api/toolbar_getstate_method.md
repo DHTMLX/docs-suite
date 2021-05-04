@@ -5,13 +5,13 @@ title: getState
 
 @short: gets current values/states of controls
 
-@signature: getState(id?: string | number): [key: string]: string;;
+@signature: {'getState(id?: string | number): IState;'}
 
 @params:
-- id    string|number   optional, the id of a Toolbar control
+- id    string | number   optional, the id of a Toolbar control
 
 @returns:
-- state		string|boolean|object		the value/state of the control, or an object with IDs of controls and their values/states
+- state		string | boolean | object		the value/state of the control, or an object with IDs of controls and their values/states
 
 
 @example:

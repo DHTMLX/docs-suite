@@ -5,7 +5,7 @@ title: afterEditEnd
 
 @short: fires after editing of a tree item is finished
 
-@signature: afterEditEnd: (value: string, id: string) => void;
+@signature: {'afterEditEnd: (value: string, id: string) => void;'}
 
 @params: 
 - value     string  the value of an item

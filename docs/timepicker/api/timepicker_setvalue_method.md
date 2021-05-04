@@ -5,15 +5,7 @@ title: setValue
 
 @short: sets value for a TimePicker
 
-@signature: setValue(value: Date | number | string | array[] | hour: number, minute: number, AM?: boolean): void;
-
-<!-- void setValue(Date|number|string|array|object value);
-setValue(value: Date | number | string | any[] | ITimeObject): void;
-export interface ITimeObject {
-    hour: number;
-    minute: number;
-    AM?: boolean;
-} -->
+@signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
 @example:
 // set the value as a string

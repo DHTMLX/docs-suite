@@ -5,7 +5,7 @@ title: dragCopy
 
 @short: defines that a row is copied to a target during drag-n-drop
 
-@signature: dragCopy?: boolean;
+@signature: {'dragCopy?: boolean;'}
 
 @example: 
 var source = new dhx.Grid("grid-source", {

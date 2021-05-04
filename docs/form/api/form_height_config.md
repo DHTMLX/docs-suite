@@ -1,22 +1,24 @@
 ---
-sidebar_label: cols
-title: cols
+sidebar_label: height
+title: height
 ---          
 
-@short: arranges controls inside the control group horizontally
+@short: sets the height of the control group 
+
+@signature: {'height?: string | number | "content";'}
 
 
-@type: array
+@type: string|number|"content"
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
+	height: "400px", /*!*/ // height for rows
     rows: [
-    	{
-            title: "Align:",
-            padding: "10px",
+        {
+            height: "200px", /*!*/ // height for cols
             css: "dhx_layout-cell--bordered",
-            cols: [{ /*!*/
+            cols: [{
                 type: "checkbox",
                 label: "start",
                 name: "align",
@@ -36,6 +38,7 @@ var form = new dhx.Form("form_container", {
 });
 
 
+
 @template:	api_config
 @descr: 
 
@@ -44,8 +47,9 @@ var form = new dhx.Form("form_container", {
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 @related: form/how_to_start.md#initialize-form
-form/configuration.md#grouping-controls-in-form
+form/configuration.md#widthheight
 
-@relatedapi: form/api/form_rows_property.md
+@relatedapi: form/api/form_width_property.md
 
 @changelog: added in v6.4
+

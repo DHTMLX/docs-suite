@@ -5,7 +5,8 @@ title: disable
 
 @short: disables ComboBox on a page
 
-@signature: disable(): void;
+@signature: {'disable(): void;'}
+
 
 @example:
 combo.disable();

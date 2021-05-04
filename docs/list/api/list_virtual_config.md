@@ -5,7 +5,7 @@ title: virtual
 
 @short: enables dynamic rendering of List items
 
-@signature: virtual?: boolean;
+@signature: {'virtual?: boolean;'}
 
 @default: false
 

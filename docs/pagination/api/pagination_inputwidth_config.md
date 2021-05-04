@@ -5,7 +5,7 @@ title: inputWidth
 
 @short: optional, sets the width for the input of the pagination
 
-@signature: inputWidth?: number;
+@signature: {'inputWidth?: number;'}
 
 @example: 
 const pagination = new dhx.Pagination("pagination_container", {

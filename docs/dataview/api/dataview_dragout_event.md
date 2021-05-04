@@ -5,7 +5,7 @@ title: dragOut
 
 @short: fires when an item is dragged out of a potential target
 
-@signature: dragOut: (data: object, events: MouseEvent) => void;
+@signature: {'dragOut: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("DragOut", function(data, events) {

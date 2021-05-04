@@ -5,11 +5,7 @@ title: enable
 
 @short: enables a disabled SimpleVault control
 
-@signature: enable(): void;
-
-
-
-
+@signature: {'enable(): void;'}
 
 @example:
 form.getItem("simplevault").enable();

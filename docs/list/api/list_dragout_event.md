@@ -5,15 +5,12 @@ title: dragOut
 
 @short: fires when an item is dragged out of a potential target
 
-@signature: dragOut: (data: object, events: MouseEvent) => void;
-
+@signature: {'dragOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @example:
 list.events.on("DragOut", function(data, events) {
     // your logic here
 });
-
-
 
 @template: api_event
 @descr:

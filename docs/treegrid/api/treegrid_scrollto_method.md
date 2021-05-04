@@ -5,7 +5,7 @@ title: scrollTo
 
 @short: scrolls a grid to a specified cell
 
-@signature: scrollTo(row: string | number, col: string | number): void;
+@signature: {'scrollTo(row: string | number, col: string | number): void;'}
 
 @params:
 - row 	string | number 	the id of a row

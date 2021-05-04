@@ -7,7 +7,7 @@ title: series
 
 @short: defines configuration of chart series
 
-@signature: series?: SeriaConfig[];
+@signature: {'series?: SeriaConfig[];'}
 
 @example: 
 var chart = new dhx.Chart("chart_container",{

@@ -5,6 +5,8 @@ title: disable
 
 @short: disables selection of cells in Grid
 
+@signature: {'disable(): void;'}
+
 
 
 

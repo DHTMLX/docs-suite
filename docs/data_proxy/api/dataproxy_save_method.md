@@ -5,6 +5,8 @@ title: save
 
 @short: sends an AJAX request to the server
 
+@signature: {'save?: (data: any, mode: string) => Promise<any>;'}
+
 @params:
 - data      object      mandatory, data to be sent to the server
 - mode      string      mandatory, a mode of the request ("delete", "update", "insert")

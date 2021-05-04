@@ -5,11 +5,11 @@ title: focusChange
 
 @short: fires on moving focus to a new item
 
-@signature: focusChange: (focusIndex: number, id: string | numbe) => void;
+@signature: {'focusChange: (focusIndex: number, id: string | number) => void;'}
 
 @params:
 - focusIndex		number					the position of an item
-- id		string, number			the id of an item
+- id		string | number			the id of an item
 
 
 @example:

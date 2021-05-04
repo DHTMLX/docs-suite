@@ -5,7 +5,7 @@ title: itemHeight
 
 @short: sets the height of an item in the list of options
 
-@signature: itemHeight?: number | string;
+@signature: {'itemHeight?: number | string;'}
 
 @default: 32
 

@@ -5,7 +5,7 @@ title: clearValidate
 
 @short: clears validation of a DatePicker control
 
-
+@signature: {'clearValidate(): void;'}
 
 
 

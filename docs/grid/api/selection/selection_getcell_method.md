@@ -5,7 +5,7 @@ title: getCell
 
 @short: returns the object of a selected cell
 
-@signature: getCells(): array[];
+@signature: {'getCells(): array[];'}
 
 @returns:
 param   object  an object with parameters of a selected cell

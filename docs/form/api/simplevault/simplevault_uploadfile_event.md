@@ -4,14 +4,13 @@ title: uploadFile
 ---          
 
 @short: fires when a file has been uploaded
- 
+
+@signature: {'uploadFile: (file: ISimpleVaultValue, value: ISimpleVaultValue[], extra?: { [key: string]: string }) => void;'}
 
 @params:
 - file      object      the file object
 - value     array     the current value of the control 
 - extra     any         the server response
-
-
 
 @example:
 form.getItem("simpleVault").events.on("UploadFile", function(file, value, extra) {

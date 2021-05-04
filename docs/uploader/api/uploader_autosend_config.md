@@ -4,9 +4,11 @@ title: autosend
 ---          
 
 @short: enables automatic sending of the added file
-	
-@default:false
-@type: boolean
+
+@signature: {'autosend?: boolean;'}
+
+@default: false
+
 @example:
 var vault = new dhx.Vault("vault_container", { 
     uploader:{

@@ -5,7 +5,7 @@ title: getValue
 
 @short: gets current values/states of controls
 
-@signature: getValue(asFormData?: boolean): FormData | IAnyObj;
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 
 @params:

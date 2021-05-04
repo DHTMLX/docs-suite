@@ -5,7 +5,7 @@ title: expandAll
 
 @short: expands all collapsed tree nodes
 
-@signature: expandAll(): void;
+@signature: {'expandAll(): void;'}
 
 @example:
 treegrid.expandAll();

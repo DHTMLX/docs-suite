@@ -5,11 +5,11 @@ title: dragRowStart
 
 @short: fires when dragging of a row has started
 
-@signature: dragRowStart: (data: object, events: MouseEvent) => void;
+@signature: {'dragRowStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
+- e		    Event		a native event object
 
 @example:
 grid.events.on("DragRowStart", function(data, events) {

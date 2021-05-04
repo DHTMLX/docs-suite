@@ -5,7 +5,7 @@ title: keyNavigation
 
 @short: enables/disables navigation in List by arrow keys
 
-@signature: keyNavigation?: boolean | (() => boolean);
+@signature: {'keyNavigation?: boolean | (() => boolean);'}
 
 @example: 
 var list = new dhx.List("list", {keyNavigation:true});

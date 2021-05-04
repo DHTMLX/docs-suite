@@ -5,7 +5,7 @@ title: css
 
 @short: adds custom CSS classes to ColorPicker
 
-@signature: css?: string;
+@signature: {'css?: string;'}
 
 @example: 
 <style>

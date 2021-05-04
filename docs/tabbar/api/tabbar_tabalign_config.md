@@ -5,7 +5,7 @@ title: tabAlign
 
 @short: sets alignment for tabs
 
-@signature: tabAlign?: "left" | "start" | "center" | "middle" | "right" | "end";
+@signature: {'tabAlign?: "left" | "start" | "center" | "middle" | "right" | "end";'}
 
 @example: 
 var tabbar = new dhx.Tabbar("tabbar_container", {

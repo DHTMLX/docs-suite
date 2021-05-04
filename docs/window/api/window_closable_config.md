@@ -5,7 +5,7 @@ title: closable
 
 @short: defines whether a window can be closed
 
-@signature: closable?: boolean;
+@signature: {'closable?: boolean;'}
 
 @default: false
 

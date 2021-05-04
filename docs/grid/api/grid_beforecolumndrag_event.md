@@ -5,23 +5,20 @@ title: beforeColumnDrag
 
 @short: fires before dragging of a column has started
 
-@signature: beforeColumnDrag: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'beforeColumnDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
-<!-- @params:
+@params:
 - data		object		data object
-- e		    Event		a native event object -->
-
+- events		    Event		a native event object
 
 @returns:
-- result	boolean		false - to prevent dragging a column, otherwise true
-
+- result	void | boolean		false - to prevent dragging a column, otherwise true
 
 @example:
 grid.events.on("BeforeColumnDrag", function(data, events){
 	// your logic here
     return false;
 });
-
 
 @template:	api_event
 @descr:

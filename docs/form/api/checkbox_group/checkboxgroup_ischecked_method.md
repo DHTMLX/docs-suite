@@ -5,6 +5,8 @@ title: isChecked
 
 @short: checks whether a checkbox of the CheckboxGroup control is checked
 
+@signature: {'isChecked(id?: string): boolean | { [key: string]: boolean };'}
+
 @params:
 - id    string  optional, the id of a checkbox
 

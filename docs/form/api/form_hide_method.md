@@ -5,7 +5,7 @@ title: hide
 
 @short: hides a form
 
-
+@signature: {'hide(): void;'}
 
 
 @example:

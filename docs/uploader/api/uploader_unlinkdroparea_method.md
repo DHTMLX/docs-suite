@@ -5,6 +5,8 @@ title: unlinkDropArea
 
 @short: unlinks an extra drop area from Uploader
 
+@signature: {'unlinkDropArea(el?: HTMLElement | string): void;'}
+
 @params:
 
 - el 	HTMLElement,string 		the drop area or its ID

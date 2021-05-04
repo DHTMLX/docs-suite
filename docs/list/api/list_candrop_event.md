@@ -5,7 +5,7 @@ title: canDrop
 
 @short: fires when a dragged item is over a target item
 
-@signature: canDrop: (data: object, events: MouseEvent) => void;
+@signature: {'canDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @example:
 list.events.on("CanDrop", function(data, events) {

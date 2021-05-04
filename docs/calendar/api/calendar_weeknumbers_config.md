@@ -5,7 +5,7 @@ title: weekNumbers
 
 @short: defines whether to show the numbers of weeks
 
-@signature: weekNumbers?: boolean;
+@signature: {'weekNumbers?: boolean;'}
 
 @default: false
 

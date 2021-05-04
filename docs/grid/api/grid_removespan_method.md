@@ -5,11 +5,11 @@ title: removeSpan
 
 @short: removes a cols/rows span
 
-@signature: removeSpan(row: string | number, col: string | number): void;
+@signature: {'removeSpan(row: string | number, col: string | number): void;'}
 
 @params:
-- row 	string,number 	the id of a row
-- col 	string,number 	the id of a column
+- row 	string | number 	the id of a row
+- col 	string | number 	the id of a column
 
 @example:
 grid.removeSpan("10","a");

@@ -5,7 +5,7 @@ title: placeholder
 
 @short: sets a placeholder in the input of Combo
 
-@signature: placeholder?: string;
+@signature: {'placeholder?: string;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container",{

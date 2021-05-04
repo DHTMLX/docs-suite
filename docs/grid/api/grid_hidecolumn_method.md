@@ -5,10 +5,10 @@ title: hideColumn
 
 @short: hides a column of Grid
 
-@signature: hideColumn(colId: string | number): void;
+@signature: {'hideColumn(colId: string | number): void;'}
 
 @params:
-- colId	string,number	the id of a column
+- colId	string | number	the id of a column
 
 @example:
 grid.hideColumn(col);

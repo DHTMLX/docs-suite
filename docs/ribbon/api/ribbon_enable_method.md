@@ -5,10 +5,10 @@ title: enable
 
 @short: enables a disabled item(s) of Ribbon
 
-@signature: enable(ids: string | string[]): void;
+@signature: {'enable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, one ID or an array of IDs of items
+- ids 		string | array		optional, one ID or an array of IDs of items
 
 @example:
 ribbon.enable("save_btn");

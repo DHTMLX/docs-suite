@@ -5,7 +5,7 @@ title: rowCss
 
 @short: sets style for a row
 
-@signature: rowCss?: (row: IRow) => string;
+@signature: {'rowCss?: (row: IRow) => string;'}
 
 @example: 
 <style>

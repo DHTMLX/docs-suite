@@ -5,7 +5,7 @@ title: dragRowOut
 
 @short: fires when a row is dragged out of a potential target
 
-@signature: dragRowOut: (data: object, events: MouseEvent) => void;
+@signature: {'dragRowOut: (data: object, events: MouseEvent) => void;'}
 
 <!-- @params:
 - data		object		data object

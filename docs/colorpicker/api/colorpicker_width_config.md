@@ -5,7 +5,7 @@ title: width
 
 @short:  sets the width of ColorPicker
 
-@signature: width?: string | number;
+@signature: {'width?: string | number;'}
 
 @default: "238px"
 

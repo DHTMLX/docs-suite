@@ -5,7 +5,7 @@ title: cancelDrop
 
 @short: fires on moving a mouse pointer out of item's borders while dragging the item
 
-@signature: cancelDrop: (data: object, events: MouseEvent) => void;
+@signature: {'cancelDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @example:
 dataview.events.on("CancelDrop", function(data, events) {

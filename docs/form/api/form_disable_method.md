@@ -5,15 +5,12 @@ title: disable
 
 @short: disables a form on a page
 
+@signature: {'disable(): void;'}
 
 @params:
 
-
-
-
 @example:
 form.disable();
-
 
 @template: api_method
 @descr:

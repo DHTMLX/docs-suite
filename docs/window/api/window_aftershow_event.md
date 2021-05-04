@@ -5,7 +5,7 @@ title: afterShow
 
 @short: fires after a window is shown
 
-@signature: afterShow: (position: object) => void;
+@signature: {'afterShow: (position: IPosition) => void;'}
 
 @params:
 - position  object      an object with coordinates of the window's position

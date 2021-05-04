@@ -5,7 +5,7 @@ title: afterEditEnd
 
 @short: fires after editing of a cell is ended
 
-@signature: afterEditEnd: (value: string, row: object, col: object) => void;
+@signature: {'afterEditEnd: (value: string, row: object, col: object) => void;'}
 	
 @params:
 - value			string		the new value of a cell

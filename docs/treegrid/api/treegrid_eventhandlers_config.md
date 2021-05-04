@@ -5,7 +5,7 @@ title: eventHandlers
 
 @short: adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
 
-@signature: eventHandlers?: object;
+@signature: {'eventHandlers?: { [key: string]: any; };'}
 
 @example: 
 

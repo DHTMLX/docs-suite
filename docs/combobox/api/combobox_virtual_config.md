@@ -5,7 +5,7 @@ title: virtual
 
 @short: enables dynamic loading of data on scrolling the list of options
 
-@signature: virtual?: boolean;
+@signature: {'virtual?: boolean;'}
 
 @example: 
 var combo = new dhx.Combobox("combo_container",{

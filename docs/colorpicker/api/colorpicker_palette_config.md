@@ -5,7 +5,7 @@ title: palette
 
 @short: contains arrays of colors you want to show in a colorpicker
 
-@signature: paletteOnly?: boolean;
+@signature: {'palette?: string[][];'}
 
 @default: false
 

@@ -5,7 +5,7 @@ title: beforeResizeStart
 
 @short: fires before resizing of a cell has started
 
-@signature: beforeResizeStart: (id: string) => boolean | void;
+@signature: {'beforeResizeStart: (id: string) => boolean | void;'}
 
 @params:
 - id		string		the id of a cell
@@ -18,7 +18,7 @@ layout.events.on("BeforeResizeStart", function(id){
 });
 
 @returns:
-- result	boolean		false - to prevent resizing of a cell, otherwise true
+- result	boolean | void		false - to prevent resizing of a cell, otherwise true
 
 
 

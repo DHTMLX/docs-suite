@@ -5,7 +5,7 @@ title: disable
 
 @short: disables slider
 
-@signature: isDisabled(): boolean;
+@signature: {'isDisabled(): boolean;'}
 
 @example:
 slider.disable();

@@ -5,17 +5,10 @@ title: beforeDrag
 
 @short: fires before dragging of an item has started 
 
-```todoapi 
-<!-- @signature: beforeDrag: (data: {
-    start: string;
-    source: string[];
-    target: string;
-    dropPosition?: DropPosition;
-}, events: MouseEvent) => boolean; -->
-```
+@signature: {'beforeDrag: (data: IDragInfo, events: MouseEvent, ghost: HTMLElement) => void | boolean;'}
 
 @returns:
-- result	boolean		false - to block dragging of an item, otherwise true
+- result	void | boolean		false - to block dragging of an item, otherwise true
 
 @example:
 tree.events.on("BeforeDrag", function(data, events) {

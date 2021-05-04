@@ -5,7 +5,7 @@ title: dragRowIn
 
 @short: fires when a row is dragged to another potential target
 
-@signature: dragRowIn: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'dragRowIn: (data: object, events: MouseEvent) => void | boolean;'}
 
 <!-- @params:
 - data		object		data object

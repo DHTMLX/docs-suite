@@ -5,17 +5,10 @@ title: clear
 
 @short: clears the value of a TimePicker control
 
-@signature: clear(method?: ClearMethod): void;
-
-
-
-
+@signature: {'clear(): void;'}
 
 @example:
 form.getItem("timepicker").clear();
 
-
 @template: api_method
 @descr:
-
-

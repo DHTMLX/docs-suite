@@ -5,9 +5,7 @@ title: getWidget
 
 @short: returns the dhtmlxColorPicker widget attached to a ColorPicker control
 
-@signature: getWidget(): Combobox;
-
-
+@signature: {'getWidget(): Colorpicker;'}
 
 @returns:
 param   object    the dhtmlxColorPicker widget

@@ -5,8 +5,7 @@ title: change
 
 @short: fires on change of the timepicker value
 
-@signature: change: (time: string | hour: number, minute: number, AM?: boolean) => void;
-
+@signature: {'change: (value: string | ITimeObject) => void;'}
 
 @example:
 timepicker.events.on("change", function(value){

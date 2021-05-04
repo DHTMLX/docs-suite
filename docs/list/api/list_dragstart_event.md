@@ -5,7 +5,7 @@ title: dragStart
 
 @short: fires when dragging of an item has started 
 
-@signature: focusChange: (focusIndex: number, id: string) => void;
+@signature: {'dragStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @example:
 list.events.on("DragStart", function(data, events) {

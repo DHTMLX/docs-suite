@@ -5,7 +5,7 @@ title: hideRow
 
 @short: hides a row of TreeGrid
 
-@signature: hideRow(rowId: string | number): void;
+@signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
 - rowId	string | number   the id of a row

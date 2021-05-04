@@ -5,7 +5,7 @@ title: getFocus
 
 @short: returns the id of an item in focus
 
-@signature: getFocus(): string;
+@signature: {'getFocus(): string | number;'}
 
 @returns:
 - param	string|number      the id of an item in focus

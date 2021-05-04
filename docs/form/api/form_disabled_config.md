@@ -5,14 +5,13 @@ title: disabled
 
 @short: makes a form disabled
 
-@type: boolean
+@signature: {'disabled?: boolean;'}
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	disabled: true
 });
-
 
 @template:	api_config
 @descr: 

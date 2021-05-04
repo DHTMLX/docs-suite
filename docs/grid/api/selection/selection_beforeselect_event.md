@@ -5,7 +5,7 @@ title: beforeSelect
 
 @short: fires before selecting a cell
 
-@signature: beforeSelect: (row: object, col: object) => boolean | void;
+@signature: {'beforeSelect: (row: IRow, col: ICol) => boolean | void;'}
 
 @params:
 
@@ -13,7 +13,7 @@ title: beforeSelect
 - col       object      the config of a column
 
 @returns:
-param   boolean     false - to prevent selecting of a cell, otherwise - true
+param   boolean | void     false - to prevent selecting of a cell, otherwise - true
 
 
 

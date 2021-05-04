@@ -5,10 +5,10 @@ title: input
 
 @short: fires on typing text in an input of Combobox
 
-@signature: input: (value: string | number) => void;
+@signature: {'input: (value: string) => void;'}
 
 @params:
-- value     string|number       an entered value
+- value     string       an entered value
 
 @example:
 combobox.events.on("Input", function(value) {

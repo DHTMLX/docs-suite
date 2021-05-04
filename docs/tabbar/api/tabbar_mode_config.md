@@ -5,7 +5,7 @@ title: mode
 
 @short: specifies the mode of displaying a tabbar
 
-@signature: mode?: "left" | "right" | "bottom" | "top";
+@signature: {'mode?: "left" | "right" | "bottom" | "top";'}
 
 @default: "top"
 

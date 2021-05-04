@@ -5,7 +5,7 @@ title: paint
 
 @short: repaints Slider on a page
 
-@signature: paint(): void;
+@signature: {'paint(): void;'}
 
 @example:
 slider.paint();

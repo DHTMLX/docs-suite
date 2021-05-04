@@ -5,7 +5,7 @@ title: afterLazyLoad
 
 @short: fires after getting a response from the server
 
-@signature: afterLazyLoad: (from: number, count: number) => void;
+@signature: {'afterLazyLoad: (from: number, count: number) => void;'}
 	
 @params:
 - from		number		the index of the first loaded item 	

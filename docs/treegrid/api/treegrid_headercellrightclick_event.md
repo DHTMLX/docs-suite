@@ -5,7 +5,7 @@ title: headerCellRightClick
 
 @short: fires on right click on a grid header cell
 
-@signature: headerCellRightClick: (col: ICol, e: MouseEvent) => void;
+@signature: {'headerCellRightClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
 - column		object		an object with a column configuration

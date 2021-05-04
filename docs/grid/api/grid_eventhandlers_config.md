@@ -5,12 +5,7 @@ title: eventHandlers
 
 @short: adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
 
-```todoapi 
-object eventHandlers;
-eventHandlers?: {
-	[key: string]: any;
-};
-```
+@signature: {'eventHandlers?: {[key: string]: any; };'}
 
 @example: 
 

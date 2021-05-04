@@ -6,6 +6,8 @@ description: description
 
 @short: allows changing available configuration attributes of the control dynamically
 
+@signature: {'setProperties(propertyConfig: ICheckboxProps): void;'}
+
 @params:
 - properties   object      an object with the available attributes of the control and their new values
 

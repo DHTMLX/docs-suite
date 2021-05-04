@@ -5,7 +5,7 @@ title: data
 
 @short: specifies an array of data objects to set into Toolbar
 
-@signature: data?: array;
+@signature: {'data?: any[];'}
 
 @example: 
 const toolbar = new dhx.Toolbar("toolbar", {

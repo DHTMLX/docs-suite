@@ -5,7 +5,7 @@ title: viewportOverflow
 
 @short: defines whether a window can go beyond borders of a browser
 
-@signature: viewportOverflow?: boolean;
+@signature: {'viewportOverflow?: boolean;'}
 
 @default: false
 

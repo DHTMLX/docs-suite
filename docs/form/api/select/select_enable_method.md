@@ -5,9 +5,7 @@ title: enable
 
 @short: enables a disabled Select control
 
-
-
-
+@signature: {'enable(): void;'}
 
 @example:
 form.getItem("select").enable();

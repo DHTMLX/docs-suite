@@ -5,7 +5,7 @@ title: width
 
 @short: sets the width of a cell
 
-@signature: width?: number | string;
+@signature: {'width?: number | string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

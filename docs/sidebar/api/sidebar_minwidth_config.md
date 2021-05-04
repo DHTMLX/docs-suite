@@ -5,7 +5,7 @@ title: minWidth
 
 @short: sets the minimal width of a sidebar in the collapsed state
 
-@signature: minWidth?: number | string;
+@signature: {'minWidth?: number | string;'}
 
 @default: "44"
 

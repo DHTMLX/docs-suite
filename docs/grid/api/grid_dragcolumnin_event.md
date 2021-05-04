@@ -5,7 +5,7 @@ title: dragColumnIn
 
 @short: fires when a column is dragged to another potential target
 
-@signature: dragColumnIn: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'dragColumnIn: (data: object, events: MouseEvent) => void | boolean;'}
 
 <!-- @params:
 - data		object		data object

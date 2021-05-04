@@ -5,7 +5,7 @@ title: afterRowHide
 
 @short: fires after a row is hidden
 
-@signature: afterRowHide: (row: object) => void;
+@signature: {'afterRowHide: (row: object) => void;'}
 
 @params: 
 - row   object  an object with a row configuration

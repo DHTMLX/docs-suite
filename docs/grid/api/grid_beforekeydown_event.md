@@ -5,7 +5,7 @@ title: beforeKeyDown
 
 @short: fires before the user is pressing a shortcut key
 
-@signature: beforeKeyDown: (e: Event) => boolean | void;
+@signature: {'beforeKeyDown: (e: Event) => boolean | void;'}
 
 <!-- @params:
 - e		KeyboardEvent		a native KeyboardEvent object -->

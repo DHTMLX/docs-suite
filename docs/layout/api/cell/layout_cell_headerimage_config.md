@@ -5,7 +5,7 @@ title: headerImage
 
 @short: an image used in the header of a cell
 
-@signature: headerImage?: string;
+@signature: {'headerImage?: string;'}
 
 
 @example: 

@@ -5,7 +5,7 @@ title: beforeAdd
 
 @short: fires before adding a cell
 
-@signature: beforeAdd: (id: string) => boolean | void;
+@signature: {'beforeAdd: (id: string) => boolean | void;'}
 
 @params:
 - id		string		the id of a cell

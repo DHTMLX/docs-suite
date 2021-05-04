@@ -3,10 +3,10 @@ sidebar_label: setProperties
 title: setProperties
 description: description
 ---          
-``` todoanton signature мещает документации собраться
+
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: setProperties(arg: string | { [name: string]: IFormProps; }, props?: IFormProps): void;
+@signature: {'setProperties(propertyConfig: IInputProps): void;'}
 
 @params:
 - properties   object      an object with the available attributes of the control and their new values
@@ -124,4 +124,3 @@ It is possible to change values of the following configuration attributes of the
 </table>
 
 @changelog: added in v7.0
-``` todo

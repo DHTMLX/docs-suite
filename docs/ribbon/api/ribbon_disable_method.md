@@ -5,10 +5,10 @@ title: disable
 
 @short: disables and dims an item(s) of Ribbon
 
-@signature: disable(ids: string | string[]): void;
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, an ID or an array of IDs of items
+- ids 		string | array		optional, an ID or an array of IDs of items
 
 @example:
 ribbon.disable("save_btn");

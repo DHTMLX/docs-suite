@@ -5,7 +5,7 @@ title: inverse
 
 @short: enables/disables the inverse slider mode
 
-@signature:  inverse?: boolean;
+@signature: {'inverse?: boolean;'}
 
 @example: 
 var slider = new dhx.Slider("slider_container", { 

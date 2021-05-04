@@ -5,7 +5,7 @@ title: tabWidth
 
 @short: sets the width of a tab
 
-@signature: tabWidth?: number | string;
+@signature: {'tabWidth?: number | string;'}
 
 @default: 200
 

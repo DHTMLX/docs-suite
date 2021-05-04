@@ -5,11 +5,11 @@ title: cancelRowDrop
 
 @short: fires on moving a mouse pointer out of borders of a row while dragging the row
 
-@signature: cancelRowDrop: (data: object, events: MouseEvent) => void;
+@signature: {'cancelRowDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("CancelRowDrop", function(data, events) {

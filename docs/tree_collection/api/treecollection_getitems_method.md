@@ -5,6 +5,8 @@ title: getItems
 
 @short: gets the child items of a control
 
+@signature: {'getItems(id: Id): T[];'}
+
 @params:
 - id 		string		 the ID of a control
 

@@ -5,7 +5,7 @@ title: enable
 
 @short: enables a disabled ColorPicker control
 
-
+@signature: {'enable(): void;'}
 
 
 

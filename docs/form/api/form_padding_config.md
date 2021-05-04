@@ -1,19 +1,20 @@
 ---
-sidebar_label: title
-title: title
+sidebar_label: padding
+title: padding
 ---          
 
-@short: specifies the title of the control group
+@short: sets padding for content inside the control group
 
-@type: string
+@signature: {'padding?: string | number;'}
+
 
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
-	title: "Form", /*!*/ // title for rows
+	padding: "10px", /*!*/ // padding for rows
     rows: [
         {
-            title: "Controls", /*!*/ // title for cols
+            padding: "10px", /*!*/ // padding for cols
             css: "dhx_layout-cell--bordered",
             cols: [{
                 type: "checkbox",
@@ -42,8 +43,7 @@ var form = new dhx.Form("form_container", {
 **Related sample**:
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
-
 @related: form/how_to_start.md#initialize-form
-form/configuration.md#title
+form/configuration.md#padding
 
 @changelog: added in v6.4

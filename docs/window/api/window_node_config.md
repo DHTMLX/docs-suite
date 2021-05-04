@@ -5,7 +5,7 @@ title: node
 
 @short: optional, the container for a window or its id
 
-@signature: node?: HTMLElement | string;
+@signature: {'node?: HTMLElement | string;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

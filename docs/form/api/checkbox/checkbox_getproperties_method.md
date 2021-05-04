@@ -6,6 +6,8 @@ description: description
 
 @short: returns an object with the available configuration attributes of the control
 
+@signature: {'getProperties(): ICheckboxProps;'}
+
 @returns:
 param   object      an object with the available attributes of the control and their values
 

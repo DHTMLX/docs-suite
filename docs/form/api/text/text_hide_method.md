@@ -5,13 +5,10 @@ title: hide
 
 @short: hides a Text control
 
-
+@signature: {'hide(): void;'}
 
 @example:
 form.getItem("text").hide(); 
 
-
 @template: api_method
 @descr:
-
-

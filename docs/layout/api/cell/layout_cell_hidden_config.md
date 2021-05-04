@@ -5,7 +5,7 @@ title: hidden
 
 @short: defines whether a cell is hidden
 
-@signature: hidden?: boolean;
+@signature: {'hidden?: boolean;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

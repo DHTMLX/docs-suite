@@ -5,7 +5,7 @@ title: disabled
 
 @short: makes a tab/tabs disabled
 
-@signature: disabled?: string | string[];
+@signature: {'disabled?: string | string[];'}
 
 @example: 
 // make a tab disabled

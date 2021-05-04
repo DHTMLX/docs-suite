@@ -5,7 +5,7 @@ title: editable
 
 @short: enables editing in List
 
-@signature:  editable?: boolean;
+@signature: {'editable?: boolean;'}
 
 @default:false
 

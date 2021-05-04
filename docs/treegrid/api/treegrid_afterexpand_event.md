@@ -5,7 +5,7 @@ title: afterExpand
 
 @short: fires after expanding a treegrid
 
-@signature: afterExpand: (id: string | number) => void;
+@signature: {'afterExpand: (id: string) => void;'}
 	
 @params:
 - id			string | number		the id of an expanded row

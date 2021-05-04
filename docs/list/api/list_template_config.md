@@ -5,10 +5,7 @@ title: template
 
 @short: specifies a template for List items
 
-```todoapi 
-function template;
-template?: (obj: IDataItem) => string;
-```
+@signature: {'template?: (obj: IDataItem) => string;'}
 
 @example: 
 var list = new dhx.List("list", {

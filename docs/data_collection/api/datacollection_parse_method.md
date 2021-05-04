@@ -5,6 +5,8 @@ title: parse
 
 @short: loads data from a local data source 
 
+@signature: {'parse(data: T[]): void;'}
+
 @params:
 
 - data			any 		the data to load

@@ -5,7 +5,7 @@ title: htmlEnable
 
 @short: specifies the HTML content (inner HTML) of TreeGrid columns
 
-@signature: htmlEnable?: boolean;
+@signature: {'htmlEnable?: boolean;'}
 
 @example: 
 var treegrid = new dhx.TreeGrid("treegrid_container", {

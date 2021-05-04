@@ -5,7 +5,7 @@ title: beforeCollapse
 
 @short: fires before collapsing a tree item
 
-@signature: beforeCollapse: (id: string) => boolean | void;
+@signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
 @params: 
 - id    string      the id of a collapsed item

@@ -5,7 +5,7 @@ title: dropBehaviour
 
 @short: defines the behaviour of a dragged item
 
-```todoapi ```
+@signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 
 @example: 
 var source = new dhx.List("list-source",{

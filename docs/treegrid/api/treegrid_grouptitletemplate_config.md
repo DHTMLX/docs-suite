@@ -5,7 +5,7 @@ title: groupTitleTemplate
 
 @short: sets a template to the title of a group
 
-@signature: groupTitleTemplate?: (groupName: string, groupItems: IDataItem[]) => string;
+@signature: {'groupTitleTemplate?: (groupName: string, groupItems: IDataItem[]) => string;'}
 
 @example: 
 var treegrid = new dhx.TreeGrid("treegrid_container", {

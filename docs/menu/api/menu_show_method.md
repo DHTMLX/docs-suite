@@ -5,10 +5,10 @@ title: show
 
 @short: shows an item of Menu
 
-@signature: show(ids: string | string[]): void;
+@signature: {'show(ids: string | string[]): void;'}
 
 @params:
-- ids 		string, array		optional, an ID or an array of IDs of items
+- ids 		string | array		optional, an ID or an array of IDs of items
 
 
 @example:

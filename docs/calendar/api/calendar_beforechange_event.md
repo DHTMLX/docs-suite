@@ -5,7 +5,7 @@ title: beforeChange
 
 @short: fires before the change of date selection
 
-@signature: beforeChange: (date: Date, oldDate: Date, byClick: boolean) => boolean | void;
+@signature: {'beforeChange: (date: Date, oldDate: Date, byClick: boolean) => boolean | void;'}
 
 @params:
 - date  		Date    	the newly selected date

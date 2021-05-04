@@ -5,7 +5,7 @@ title: icon
 
 @short: allows adding custom icons for tree items
 
-@signature: icon?: object;
+@signature: {'icon?: ITreeCustomIcon;'}
 
 @example: 
 var tree = new dhx.Tree("tree_container", {

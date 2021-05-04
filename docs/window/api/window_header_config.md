@@ -5,7 +5,7 @@ title: header
 
 @short: adds a header to a window
 
-@signature: header?: boolean;
+@signature: {'header?: boolean;'}
 
 @example: 
 var dhxWindow = new dhx.Window({

@@ -5,7 +5,7 @@ title: footerCellMouseOver
 
 @short: fires on moving the mouse pointer over a grid footer cell
 
-@signature: footerCellMouseOver: (col: object, e: MouseEvent) => void;
+@signature: {'footerCellMouseOver: (col: object, e: MouseEvent) => void;'}
 
 <!-- @params:
 - column		object		an object with a column configuration

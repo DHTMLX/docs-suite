@@ -5,7 +5,7 @@ title: minHeight
 
 @short: the minimal height to be set for a cell
 
-@signature: minHeight?: number | string;
+@signature: {'minHeight?: number | string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

@@ -5,9 +5,11 @@ title: save
 
 @short: saves changes made in a tree collection to the server side
 
+@signature: {'save(url: IDataProxy | string): void;'}
+
 @params:
 
-- url			string		the URL of a server side
+- url			object | string		the URL of a server side (or DataProxy object)
 
 @example:
 diagram.data.save("http://userurl/");

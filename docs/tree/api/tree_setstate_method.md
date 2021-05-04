@@ -5,7 +5,7 @@ title: setState
 
 @short: sets state for a tree
 
-@signature: setState(state: object): void;
+@signature: {'setState(state: ITreeState): void;'}
 
 @params:
 - treeState 	object 		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state

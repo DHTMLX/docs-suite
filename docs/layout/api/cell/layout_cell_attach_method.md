@@ -5,7 +5,7 @@ title: attach
 
 @short: attaches a DHTMLX component into a Layout cell
 
-```todoapi ```
+@signature: {'attach(name: string | IViewFn | IView | IViewConstructor, config?: any): IViewLike;'}
 
 @params:
 - component 		string,object 		the name or object of a component

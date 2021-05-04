@@ -5,10 +5,9 @@ title: thisMonthOnly
 
 @short: hides dates of the previous/next months relative to the currently displayed one
 
-@signature: thisMonthOnly?: boolean;
+@signature: {'thisMonthOnly?: boolean;'}
 
 @default: false
-
 
 @type: boolean
 

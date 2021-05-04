@@ -5,8 +5,10 @@ title: getItem
 
 @short: returns the object of a selected item
 
+@signature: {'getItem(): any;'}
+
 @returns:
-- item		object|array		the object of a selected item
+- item		object | array		the object of a selected item
 
 @example:
 var item = tree.selection.getItem();

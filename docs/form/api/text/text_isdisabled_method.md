@@ -5,9 +5,10 @@ title: isDisabled
 
 @short: checks whether a Text control is disabled
 
+@signature: {'isDisabled(): boolean;'}
+
 @returns:
 param   boolean     true, if a control is disabled, otherwise false
-
 
 @example:
 form.getItem("text").isDisabled(); 
@@ -15,5 +16,3 @@ form.getItem("text").isDisabled();
 
 @template: api_method
 @descr:
-
-

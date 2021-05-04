@@ -5,7 +5,7 @@ title: disable
 
 @short: disables a DatePicker control on a page
 
-
+@signature: {'disable(): void;'}
 
 
 

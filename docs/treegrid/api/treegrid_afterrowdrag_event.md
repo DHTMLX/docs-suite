@@ -5,11 +5,11 @@ title: afterRowDrag
 
 @short: fires after dragging of a row is finished
 
-@signature: afterRowDrag: (data: IDragInfo, events: MouseEvent) => void;
+@signature: {'afterRowDrag: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @example:
 treegrid.events.on("AfterRowDrag", function(data, events) {

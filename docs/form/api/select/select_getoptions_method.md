@@ -5,10 +5,10 @@ title: getOptions
 
 @short: returns an array of Select options
 
+@signature: {'getOptions(): IOption[];'}
+
 @returns:
 - param   array   an array with options
-
-
 
 @example:
 form.getItem("select").getOptions(); --> [{…}, {…}]
@@ -22,4 +22,3 @@ their values:
 - **value** - (*string|number*) mandatory, sets the value for the select option
 - **content** - (*string*) mandatory, the content displayed in the select option
 - **disabled** - (*boolean*) optional, defines whether the option is enabled (*false*) or disabled (*true*)
-

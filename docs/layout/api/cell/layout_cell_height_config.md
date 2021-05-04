@@ -5,7 +5,7 @@ title: height
 
 @short: sets the height of a cell
 
-@signature: height?: number | string;
+@signature: {'height?: number | string;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

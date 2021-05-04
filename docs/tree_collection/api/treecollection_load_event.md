@@ -5,7 +5,7 @@ title: load
 
 @short: fires when items are loaded in a tree collection
 
-@signature: load: () => void;
+@signature: {'load: () => void;'}
 	
 @params:
 

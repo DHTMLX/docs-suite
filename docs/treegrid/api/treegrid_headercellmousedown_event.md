@@ -5,7 +5,7 @@ title: headerCellMouseDown
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: headerCellMouseDown: (col: ICol, e: MouseEvent & TouchEvent) => void;
+@signature: {'headerCellMouseDown: (col: ICol, e: MouseEvent & TouchEvent) => void;'}
 
 @example:
 grid.events.on("HeaderCellMouseDown", function(column,e){

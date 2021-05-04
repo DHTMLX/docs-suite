@@ -5,10 +5,10 @@ title: hide
 
 @short: hides an item of Ribbon
 
-@signature: hide(ids: string | string[]): void;
+@signature: {'hide(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array	optional, an ID or an array of IDs of items
+- ids 		string | array	optional, an ID or an array of IDs of items
 
 @example:
 ribbon.hide("save_btn");

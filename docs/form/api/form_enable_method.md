@@ -5,15 +5,12 @@ title: enable
 
 @short: enables a disabled form
 
+@signature: {'enable(): void;'}
 
 @params:
 
-
-
-
 @example:
 form.enable();
-
 
 @template: api_method
 @descr:

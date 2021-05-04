@@ -5,7 +5,7 @@ title: cancelDrop
 
 @short: fires on moving a mouse pointer out of item's borders while dragging the item
 
-@signature: cancelDrop: (data: object, events: MouseEvent) => void;
+@signature: {'cancelDrop: (data: object, events: MouseEvent) => void;'}
 
 @example:
 list.events.on("CancelDrop", function(data, events) {

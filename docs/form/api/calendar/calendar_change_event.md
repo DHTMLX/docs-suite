@@ -4,6 +4,8 @@ title: change
 ---          
 
 @short: fires on changing the value of a control
+
+@signature: {'change: (value: string | Date) => void;'}
  
 
 @params:

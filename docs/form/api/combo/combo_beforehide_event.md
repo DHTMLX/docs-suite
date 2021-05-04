@@ -4,7 +4,8 @@ title: beforeHide
 ---          
 
 @short: fires before a control is hidden
- 
+
+@signature: {'beforeHide: (value: string | string[], init: boolean) => boolean | void;'}
 
 @params:
 - value     string|string[]     the current value of the control

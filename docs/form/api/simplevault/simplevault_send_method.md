@@ -5,13 +5,13 @@ title: send
 
 @short: sends a POST request for file upload to a server-side URL
 
+@signature: {'send(params?: IParams): void;'}
+
 @params:
 * params   object     optional, an object with additional parameters for a request
 
-
 @example:
-form.getItem("simplevault").send(); 
-
+form.getItem("simplevault").send();
 
 @template: api_method
 @descr:

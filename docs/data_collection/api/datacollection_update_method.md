@@ -4,6 +4,8 @@ title: update
 ---          
 
 @short: updates properties of the item
+
+@signature: {'updateUrl?: (url?: string, params?: any) => void;'}
 	
 @params:
 - id			string,number		the id of the item which needs to be updated

@@ -5,7 +5,7 @@ title: cellRightClick
 
 @short: fires on right click on a grid cell
 
-@signature: cellRightClick: (row: IRow, col: ICol, e: MouseEvent) => void;
+@signature: {'cellRightClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
 
 @params:
 - row			object		an object with a row configuration

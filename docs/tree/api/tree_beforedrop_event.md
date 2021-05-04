@@ -5,14 +5,14 @@ title: beforeDrop
 
 @short: fires before the user has finished dragging an item and released the mouse button
 
-@signature: beforeDrop: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'beforeDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
 - data		object		data object
-- e		    Event		a native event object
+- events		    Event		a native event object
 
 @returns:
-- result	boolean, void		false - to block the default action, otherwise true
+- result	boolean | void		false - to block the default action, otherwise true
 
 @example:
 tree.events.on("BeforeDrop", function(data, events) {

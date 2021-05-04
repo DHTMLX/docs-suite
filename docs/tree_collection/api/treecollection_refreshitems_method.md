@@ -5,6 +5,8 @@ title: refreshItems
 
 @short: refreshes child items of a control
 
+@signature: {'refreshItems(id: Id, driver?: any): void;'}
+
 @params:
 - id 		string		 the ID of a control
 

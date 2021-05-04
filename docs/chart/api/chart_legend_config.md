@@ -5,7 +5,7 @@ title: legend
 
 @short: defines the configuration of a chart legend
 
-@signature: legend?: object;
+@signature: {'legend?: ILegendConfig;'}
 
 @example: 
 var chart = new dhx.Chart("chart_container",{

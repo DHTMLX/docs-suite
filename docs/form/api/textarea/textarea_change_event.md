@@ -4,17 +4,16 @@ title: change
 ---          
 
 @short: fires on changing the value of a control
+
+@signature: {'change: (value: string | number) => void;'}
  
-
 @params:
-- value     string     the current value of the control
-
+- value     string | number     the current value of the control
 
 @example:
 form.getItem("textarea").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
 
 @template: api_event
 @descr:

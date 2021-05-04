@@ -5,10 +5,10 @@ title: isRowHidden
 
 @short: checks whether a row is hidden
 
-@signature: isRowHidden(rowId: string | number): boolean;
+@signature: {'isRowHidden(rowId: string | number): boolean;'}
 
 @params:
-- rowId	    string|number   the id of a row   
+- rowId	    string | number   the id of a row   
 
 
 @returns:

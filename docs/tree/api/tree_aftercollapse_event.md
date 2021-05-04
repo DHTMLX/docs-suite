@@ -5,7 +5,7 @@ title: afterCollapse
 
 @short: fires after collapsing a tree item
 
-@signature: afterCollapse: (id: string) => void;
+@signature: {'afterCollapse: (id: string) => void;'}
 
 @params:
 - id       string      the id of a collapsed item

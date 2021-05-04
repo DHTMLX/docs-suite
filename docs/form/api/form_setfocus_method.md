@@ -5,6 +5,8 @@ title: setFocus
 
 @short: sets focus to a Form control by its id
 
+@signature: {'setFocus(name: string): void;'}
+
 
 @params:
 - name|id	string  the name of the control or its id (if the name attribute is not defined in the config of the control)

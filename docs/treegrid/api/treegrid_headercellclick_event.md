@@ -5,7 +5,7 @@ title: headerCellClick
 
 @short: fires on click on a grid header cell
 
-@signature: headerCellClick: (col: object, e: MouseEvent) => void;
+@signature: {'headerCellClick: (col: ICol, e: MouseEvent) => void;'}
 
 @example:
 grid.events.on("HeaderCellClick", function(column,e){

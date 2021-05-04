@@ -5,7 +5,7 @@ title: collapsed
 
 @short: defines whether a cell is collapsed
 
-@signature: collapsed?: boolean;
+@signature: {'collapsed?: boolean;'}
 
 @example: 
 var layout = new dhx.Layout("layout_container", {

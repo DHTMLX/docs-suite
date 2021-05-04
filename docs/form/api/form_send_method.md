@@ -5,6 +5,9 @@ title: send
 
 @short: sends a form to the server
 
+@signature: {'send(url: string, method?: string, asFormData?: boolean): Promise<any> | void;'}
+
+
 @params:
 - url			string		the URL of the server
 - method 		string		the request type, "POST" by default

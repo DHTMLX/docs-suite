@@ -5,10 +5,10 @@ title: link
 
 @short: links a calendar to another calendar for selecting a date range
 
-@signature: link(calendar: object): void; 
+@signature: {'link(calendar: ICalendar): void;'}
 
 @params:
-- calendar2 		object		an object of a calendar to link to
+- calendar		object		an object of a calendar to link to
 
 @example:
 calendar.link(calendar2);

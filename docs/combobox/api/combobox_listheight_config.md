@@ -5,7 +5,7 @@ title: listHeight
 
 @short: sets the height of the list of options
 
-@signature: listHeight?: number | string;
+@signature: {'listHeight?: number | string;'}
 
 @default: 224
 

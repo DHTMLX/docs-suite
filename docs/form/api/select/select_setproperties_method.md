@@ -5,9 +5,10 @@ title: setProperties
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@params:
-- properties   object      an object with the available attributes of the control and their new values
+@signature: {'setProperties(propertyConfig: ISelectProps): void;'}
 
+@params:
+- props   object      an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("select").setProperties({

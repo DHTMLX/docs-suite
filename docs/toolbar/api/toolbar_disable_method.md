@@ -5,11 +5,10 @@ title: disable
 
 @short: disables and dims an item(s) of Toolbar
 
-@signature: disable(ids: string | string[]): void;
+@signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string, array		an ID or an array of IDs of items
-
+- ids 		string | array		an ID or an array of IDs of items
 
 @example:
 toolbar.disable("save_btn");

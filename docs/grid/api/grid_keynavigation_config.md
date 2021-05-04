@@ -5,7 +5,7 @@ title: keyNavigation
 
 @short: enables keyboard navigation in Grid
 
-@signature: keyNavigation?: boolean;
+@signature: {'keyNavigation?: boolean;'}
 
 @default: true
 
