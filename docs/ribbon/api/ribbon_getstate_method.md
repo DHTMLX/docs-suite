@@ -20,4 +20,4 @@ var state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"righ
 
 
 
-@related: ribbon/operating_ribbon.md#settinggettingvaluesandstates
+@related: ribbon/operating_ribbon.md#settinggetting-values-and-states

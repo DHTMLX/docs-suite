@@ -18,7 +18,7 @@ ribbon.select("print");
 
 @descr:
 
-@related: ribbon/operating_ribbon.md#selectingunselectinganitem
+@related: ribbon/operating_ribbon.md#selectingunselecting-an-item
 
 @relatedapi:
 ribbon/api/ribbon_unselect_method.md
