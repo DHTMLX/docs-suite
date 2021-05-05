@@ -117,11 +117,8 @@ There is a possibility to show a label next to the slider.
 
 There are two properties that allow manipulating the label of the slider: 
 
-todotw скорее всего можно просто сослаться на API
-{{api
 - [](slider/api/slider_label_config.md) - specifies the label of a slider
 - [](slider/api/slider_labelposition_config.md) - defines the position of a label of a slider: "left"|"top"
-}}
 
 ~~~js
 var slider = new dhx.Slider("slider_container", { 
