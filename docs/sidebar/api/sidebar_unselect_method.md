@@ -33,4 +33,4 @@ sidebar/api/sidebar_select_method.md
 @changelog: added in v6.5
 
 
-@related: sidebar/work_with_sidebar.md#selectingunselectinganitem
+@related: sidebar/work_with_sidebar.md#selectingunselecting-an-item
