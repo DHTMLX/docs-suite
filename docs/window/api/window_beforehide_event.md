@@ -21,7 +21,7 @@ dhxWindow.events.on("BeforeHide", function(position, events){
     return true;
 });
 
-@template: api_event
+
 @descr:
 The event is blockable. Return *false* to block hiding a window.
 

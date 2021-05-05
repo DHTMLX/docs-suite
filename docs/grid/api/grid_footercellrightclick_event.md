@@ -18,7 +18,7 @@ grid.events.on("FooterCellRightClick", function(column,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 

@@ -19,7 +19,7 @@ form.getItem("button").events.on("AfterShow", function(text) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

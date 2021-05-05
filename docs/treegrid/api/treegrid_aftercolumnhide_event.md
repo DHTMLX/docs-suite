@@ -15,7 +15,7 @@ treegrid.events.on("AfterColumnHide", function(column){
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

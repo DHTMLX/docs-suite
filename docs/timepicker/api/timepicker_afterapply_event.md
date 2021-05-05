@@ -15,7 +15,7 @@ timepicker.events.on("AfterApply", function(value) {
     console.log(value);
 });
 
-@template: api_event
+
 @descr:
 The type of the value parameter depends on the applied [valueFormat](timepicker/api/timepicker_valueformat_config.md) and [timeFormat](timepicker/api/timepicker_timeformat_config.md):
 

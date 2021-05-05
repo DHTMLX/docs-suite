@@ -18,7 +18,7 @@ form.getItem("colorpicker").events.on("AfterShow", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

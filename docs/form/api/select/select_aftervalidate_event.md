@@ -18,7 +18,7 @@ form.getItem("select").events.on("AfterValidate", function(value, isValid) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

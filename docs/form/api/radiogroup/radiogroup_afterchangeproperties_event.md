@@ -16,7 +16,7 @@ form.getItem("radiogroup").events.on("AfterChangeProperties", function(propertie
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/radiogroup/radiogroup_setproperties_method.md

@@ -18,7 +18,7 @@ form.getItem("datepicker").events.on("AfterValidate", function(value, isValid) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/calendar/calendar_validate_method.md

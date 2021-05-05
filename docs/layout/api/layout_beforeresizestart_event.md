@@ -22,7 +22,7 @@ layout.events.on("BeforeResizeStart", function(id){
 
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)

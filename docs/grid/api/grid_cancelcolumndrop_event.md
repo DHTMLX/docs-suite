@@ -17,7 +17,7 @@ grid.events.on("CancelColumnDrop", function(data, events) {
 });
 
 
-@template: api_event
+
 @descr:
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}

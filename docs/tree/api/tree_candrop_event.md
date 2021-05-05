@@ -13,7 +13,7 @@ tree.events.on("CanDrop", function(data, events) {
 });
 
 
-@template: api_event
+
 @descr:
 The data object can contain the following parameters:
 

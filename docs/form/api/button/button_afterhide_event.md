@@ -18,7 +18,7 @@ form.getItem("button").events.on("AfterHide", function(text, init) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

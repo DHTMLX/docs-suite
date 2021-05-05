@@ -17,7 +17,7 @@ grid.events.on("HeaderCellRightClick", function(column,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 

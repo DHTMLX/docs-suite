@@ -16,7 +16,7 @@ sidebar.events.on("OpenMenu", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 

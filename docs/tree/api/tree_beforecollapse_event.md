@@ -20,7 +20,7 @@ tree.events.on("BeforeCollapse", function(id) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v6.4

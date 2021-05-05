@@ -20,7 +20,7 @@ grid.events.on("BeforeRowHide", function(row){
 });
 
 
-@template: api_event
+
 @descr:
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

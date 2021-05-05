@@ -17,7 +17,7 @@ list.events.on("DoubleClick", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedsample:https://snippet.dhtmlx.com/iwt1yd61	List. List Events

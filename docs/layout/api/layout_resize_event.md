@@ -18,7 +18,7 @@ layout.events.on("resize", function(id){
 
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)

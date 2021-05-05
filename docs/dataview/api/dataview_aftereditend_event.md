@@ -16,7 +16,7 @@ dataview.events.on("AfterEditEnd", function(value,id){
 	// your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

@@ -16,7 +16,7 @@ form.getItem("textarea").events.on("AfterChangeProperties", function(properties)
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/textarea/textarea_setproperties_method.md

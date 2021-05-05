@@ -20,7 +20,7 @@ form.getItem("text").events.on("BeforeChangeProperties", function(properties) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/text/text_setproperties_method.md

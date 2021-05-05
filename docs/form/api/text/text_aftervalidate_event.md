@@ -16,7 +16,7 @@ form.getItem("text").events.on("AfterValidate", function(value, isValid) {
     console.log("AfterValidate", value, isValid);
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

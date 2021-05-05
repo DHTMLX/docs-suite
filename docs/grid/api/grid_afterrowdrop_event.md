@@ -17,7 +17,7 @@ grid.events.on("AfterRowDrop", function(data, events) {
 });
 
 
-@template: api_event
+
 @descr:
 
 The data object contains the following parameters:

@@ -20,7 +20,7 @@ form.getItem("input").events.on("BeforeValidate", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/input/input_validate_method.md

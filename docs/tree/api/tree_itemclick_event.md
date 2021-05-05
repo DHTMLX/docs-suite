@@ -17,7 +17,7 @@ tree.events.on("itemClick", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 

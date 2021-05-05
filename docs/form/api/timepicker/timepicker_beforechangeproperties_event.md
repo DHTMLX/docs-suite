@@ -19,7 +19,7 @@ form.getItem("timepicker").events.on("BeforeChangeProperties", function(properti
     return true;
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/timepicker/timepicker_setproperties_method.md

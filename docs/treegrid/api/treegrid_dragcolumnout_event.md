@@ -16,7 +16,7 @@ treegrid.events.on("DragColumnOut", function(data, events) {
   // your logic here
 });
 
-@template: api_event
+
 @descr:
 The data object contains the following parameters:
 

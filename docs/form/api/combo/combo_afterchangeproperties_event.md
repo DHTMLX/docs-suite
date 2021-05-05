@@ -16,7 +16,7 @@ form.getItem("combo").events.on("AfterChangeProperties", function(properties) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/combo/combo_setproperties_method.md

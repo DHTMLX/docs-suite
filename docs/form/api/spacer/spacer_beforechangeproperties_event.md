@@ -19,7 +19,7 @@ form.getItem("spacer").events.on("BeforeChangeProperties", function(properties) 
     return true;
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/spacer/spacer_setproperties_method.md

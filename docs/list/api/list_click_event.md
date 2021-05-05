@@ -18,7 +18,7 @@ list.events.on("Click", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)

@@ -19,7 +19,7 @@ grid.events.on("CellClick", function(row,column,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

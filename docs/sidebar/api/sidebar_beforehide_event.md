@@ -21,7 +21,7 @@ sidebar.events.on("BeforeHide", function(id, event){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)

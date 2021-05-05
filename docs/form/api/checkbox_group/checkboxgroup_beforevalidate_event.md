@@ -21,7 +21,7 @@ form.getItem("CheckboxGroup").events.on("BeforeValidate", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

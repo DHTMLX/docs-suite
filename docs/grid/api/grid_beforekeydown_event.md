@@ -21,7 +21,7 @@ grid.events.on("BeforeKeyDown", function (e) {
 });
 
 
-@template: api_event
+
 @descr:
 The event fires when a cell of Grid has a keyboard focus.
 

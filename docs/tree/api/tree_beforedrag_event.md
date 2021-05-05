@@ -17,7 +17,7 @@ tree.events.on("BeforeDrag", function(data, events) {
 });
 
 
-@template: api_event
+
 @descr:
 The data object can contain the following parameters:
 

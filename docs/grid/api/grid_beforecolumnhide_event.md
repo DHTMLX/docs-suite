@@ -19,7 +19,7 @@ grid.events.on("BeforeColumnHide", function(column){
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

@@ -20,7 +20,7 @@ calendar.events.on("Change",function(date, oldDate, click){
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi:calendar/api/calendar_beforechange_event.md

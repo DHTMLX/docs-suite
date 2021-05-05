@@ -18,7 +18,7 @@ ribbon.events.on("InputCreated", function(id, el){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)

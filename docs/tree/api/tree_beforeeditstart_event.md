@@ -22,7 +22,7 @@ tree.events.on("BeforeEditStart", function(value, id) {
 });
 
 
-@template: api_event
+
 @descr:
 
 [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
