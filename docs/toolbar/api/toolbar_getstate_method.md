@@ -24,6 +24,7 @@ var state2 = toolbar.getState();
 
 
 @descr:
+
 Starting from v7.0, the method can return the value/state of the control by its id:
 
 ~~~js
@@ -42,7 +43,7 @@ var state = toolbar.getState();
 
 **Related sample**: [Toolbar. Get State](https://snippet.dhtmlx.com/kvttdgad)
 
-@related: toolbar/common_methods.md#settinggettingvaluesandstates
+@related: toolbar/common_methods.md#settinggetting-values-and-states
 
 @changelog:
 The ability to pass the **id** parameter to the method is added in v7.0.

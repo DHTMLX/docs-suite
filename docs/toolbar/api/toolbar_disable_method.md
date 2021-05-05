@@ -18,6 +18,7 @@ toolbar.disable(["cancel_btn","del_btn"]);
 
 
 @descr:
+
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 
 ~~~js
@@ -27,6 +28,6 @@ toolbar.disable();
 
 **Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
-@related: toolbar/common_methods.md#disablingandenablingcontrols
+@related: toolbar/common_methods.md#disabling-and-enabling-controls
 
 
