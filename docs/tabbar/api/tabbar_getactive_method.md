@@ -31,7 +31,7 @@ var active = tabbar.getActive(); // -> "2"
 
 @relatedapi: tabbar/api/tabbar_setactive_method.md
 
-@related: tabbar/work_with_tabbar.md#settinggettingtheactivetab
+@related: tabbar/work_with_tabbar.md#settinggetting-the-active-tab
 
 
 

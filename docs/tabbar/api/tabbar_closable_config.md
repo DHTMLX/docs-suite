@@ -18,15 +18,15 @@ var tabbar = new dhx.Tabbar("tabbar", {
 	closable: ["paris", "london"]
 });
 
-
+@descr:
 
 **Related sample**: [Tabbar. Close Button](https://snippet.dhtmlx.com/cysre4v8)
 
 @related: 
-tabbar/init.md#definetabbarstructure
-tabbar/configuring_tabbar.md#closebuttonsfortabs
+tabbar/init.md#define-tabbar-structure
+tabbar/configuring_tabbar.md#close-buttons-for-tabs
 
-@descr: 
+ 
 
 @changelog: added in v6.4
 

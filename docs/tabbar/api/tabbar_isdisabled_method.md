@@ -28,7 +28,7 @@ tabbar.isDisabled("London"); // -> returns true/false
 
 **Related sample**: [Tabbar. Is Disabled Tab](https://snippet.dhtmlx.com/86er2y7m)
 
-@related: tabbar/work_with_tabbar.md#checkingifatabisdisabled
+@related: tabbar/work_with_tabbar.md#checking-if-a-tab-is-disabled
 
 @changelog: added in v6.4
 

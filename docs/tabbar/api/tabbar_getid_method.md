@@ -18,7 +18,7 @@ var id = tabbar.getId(0);
 @descr:
 
 
-@related: tabbar/work_with_tabbar.md#gettingtheidofatab
+@related: tabbar/work_with_tabbar.md#getting-the-id-of-a-tab
 
 
 
