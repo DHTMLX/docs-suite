@@ -22,7 +22,7 @@ ribbon.setState({
 
 **Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)
 
-@related: ribbon/operating_ribbon.md#settinggettingvaluesandstates
+@related: ribbon/operating_ribbon.md#settinggetting-values-and-states
 
 
 

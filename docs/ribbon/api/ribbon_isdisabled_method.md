@@ -26,4 +26,4 @@ ribbon.isDisable("id"); // -> returns true/false
 
 @changelog: added in v6.4
 
-@related: ribbon/operating_ribbon.md#checkingifaribbonitemisdisabled
+@related: ribbon/operating_ribbon.md#checking-if-a-ribbon-item-is-disabled
