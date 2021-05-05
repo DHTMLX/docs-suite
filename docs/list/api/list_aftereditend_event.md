@@ -17,7 +17,7 @@ list.events.on("AfterEditEnd", function(value,id){
 });
 
 
-@template:	api_event
+
 @descr:
 
 

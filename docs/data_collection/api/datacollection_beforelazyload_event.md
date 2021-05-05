@@ -16,7 +16,7 @@ data.events.on("BeforeLazyLoad", function () {
     return false;
 });
 
-@template:	api_event
+
 @descr:
 
 @relatedapi: data_collection/api/afterlazyload_event.md

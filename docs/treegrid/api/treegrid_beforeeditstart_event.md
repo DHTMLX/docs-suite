@@ -21,7 +21,7 @@ grid.events.on("BeforeEditStart", function(row,col,editorType){
     return false;
 });
 
-@template:	api_event
+
 @descr:
 
 @changelog: added in v6.1

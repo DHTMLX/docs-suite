@@ -20,7 +20,7 @@ treegrid.events.on("BeforeColumnDrag", function(data, events){
     return false;
 });
 
-@template:	api_event
+
 @descr:
 The data object contains the following parameters:
 

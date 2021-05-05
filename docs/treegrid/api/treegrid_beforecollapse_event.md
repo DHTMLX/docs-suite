@@ -19,7 +19,7 @@ treeGrid.events.on("BeforeCollapse", function(rowId) {
     return false;
 });
 
-@template:	api_event
+
 @descr:
 
 **Related sample**:
