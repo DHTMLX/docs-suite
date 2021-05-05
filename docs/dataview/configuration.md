@@ -281,7 +281,7 @@ var dataview = new dhx.DataView("dataview", {
 [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
-``` todo нужна ли таблица
+
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -298,5 +298,3 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
-
-```

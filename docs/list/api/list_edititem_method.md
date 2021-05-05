@@ -27,7 +27,7 @@ list.editItem("1");
 
 @relatedapi: list/api/list_editable_config.md
 
-@related: list/work_with_list.md#editingitems
+@related: list/work_with_list.md#editing-items
 
 
 **Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)

@@ -14,6 +14,7 @@ list.events.on("DragStart", function(data, events) {
 
 
 @descr:
+
 The data object can contain the following parameters:
 
 <table class="webixdoc_links">

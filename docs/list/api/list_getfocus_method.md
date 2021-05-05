@@ -18,7 +18,7 @@ list.getFocus(); // -> "item_id"
 @descr:
 
 
-@related: list/work_with_list.md#settingfocusonitem
+@related: list/work_with_list.md#setting-focus-on-item
 
 
 @changelog:
