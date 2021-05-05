@@ -22,7 +22,7 @@ layout/api/layout_toggle_method.md
 
 **Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
 
-@related: layout/work_with_layout.md#collapsingexpandingacell
+@related: layout/work_with_layout.md#collapsingexpanding-a-cell
 
 @changelog: added in v6.4
 

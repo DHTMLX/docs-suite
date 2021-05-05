@@ -19,7 +19,8 @@ var list = new dhx.List("list", {css: "bg-gray"});
 
 
 
-@descr: 
+@descr:
+ 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of List.
 
 ~~~js

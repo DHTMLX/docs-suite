@@ -17,6 +17,7 @@ layout.getCell("1").getParent();
 
 
 @descr:
+
 An example of a returned config object:
 
 ~~~js

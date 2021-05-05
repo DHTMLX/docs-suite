@@ -22,12 +22,13 @@ var list = new dhx.List("list_container", {
 
 
 
-@descr: 
+@descr:
+
 The usage of the *CSS calc() function* within the **itemHeight** property is not possible.
 
-The default height of a list item is 37  when the [virtual](list/api/list_virtual_config.md) property is set to *true*. See the list/configuration.md#heightofanitem article for more information. 
+The default height of a list item is 37  when the [virtual](list/api/list_virtual_config.md) property is set to *true*. See the [Configuration](list/configuration.md#height-of-an-item) article for more information. 
 
-@related: list/configuration.md#heightofanitem
+@related: list/configuration.md#height-of-an-item
 
 @relatedapi: list/api/list_virtual_config.md
 

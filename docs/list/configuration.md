@@ -53,7 +53,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the list/api/list_dragmode_config.md:
+In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the [](list/api/list_dragmode_config.md):
 
 ~~~js
 var list = new dhx.List("list_container", { 
@@ -62,7 +62,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-Read more about multiselection in List [below](#multipleselectionofitems).
+Read more about multiselection in List [below](#multiple-selection-of-items).
 
 **Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
 
@@ -261,7 +261,6 @@ const list = new dhx.List("list", {
 
 The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pairs, where: 
 
-``` todo это же есть на странице API, возможно не стоит дублировать
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -278,5 +277,3 @@ The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pa
 		</tr>
     </tbody>
 </table>
-
-```

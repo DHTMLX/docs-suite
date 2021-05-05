@@ -236,7 +236,7 @@ const layout = new dhx.Layout("layout", {
 
 **Related sample**: [Layout.Type](https://snippet.dhtmlx.com/9ge1a4zx)
 
-[Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
+**Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 The available values of the option are "line", "wide", "space", "none". 
 
