@@ -23,4 +23,4 @@ pagination.setPageSize(24);
 
 [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
-@related: pagination/usage.md#settinggettingcountofitemsperpage
+@related: pagination/usage.md#settinggetting-count-of-items-per-page

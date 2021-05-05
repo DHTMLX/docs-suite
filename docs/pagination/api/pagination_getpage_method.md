@@ -31,4 +31,4 @@ const pageIndex = pagination.getPage();
 
 
 
-@related: pagination/usage.md#settinggettingtheactivepage
+@related: pagination/usage.md#settinggetting-the-active-page
