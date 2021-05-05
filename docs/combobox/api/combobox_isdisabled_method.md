@@ -1,4 +1,4 @@
-box---
+---
 sidebar_label: isDisabled
 title: isDisabled
 ---          
