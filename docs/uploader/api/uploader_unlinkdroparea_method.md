@@ -20,5 +20,5 @@ vault.uploader.linkDropArea("drophere");
 // detaches the extra drop area  
 vault.uploader.unlinkDropArea("drophere");
 
-@template: api_method
+
 @descr:

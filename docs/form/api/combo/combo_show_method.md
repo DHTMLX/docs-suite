@@ -11,7 +11,7 @@ title: show
 form.getItem("combo").show();
 
 
-@template: api_method
+
 @descr:
 
 

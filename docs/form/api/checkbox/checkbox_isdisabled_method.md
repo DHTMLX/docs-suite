@@ -14,7 +14,7 @@ param   boolean     true, if a control is disabled, otherwise - false
 form.getItem("checkbox").isDisabled(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

@@ -19,6 +19,6 @@ title: move
 @example:
 toolbar.data.move("profile_btn",-1);
 
-@template: api_method
+
 @descr:
 {{note The ID should always be a string, even if in the control configuration you've set it as a number.}}

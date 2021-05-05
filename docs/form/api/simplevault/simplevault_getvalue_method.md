@@ -17,7 +17,7 @@ var value = form.getItem("simplevault").getValue();
 
 
 
-@template: api_method
+
 @descr:
 
 

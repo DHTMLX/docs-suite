@@ -11,7 +11,7 @@ title: collapse
 layout.getCell("id").collapse();
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)

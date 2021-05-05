@@ -14,6 +14,8 @@ title: setFocus
 @example:
 form.setFocus("checkbox");
 
+
+
 @descr:
 {{note The method is applicable to Button, DatePicker, Checkbox, CheckboxGroup, ColorPicker, Combo, Input, RadioGroup, Select, Slider, Textarea, TimePicker controls of Form.}}
 

@@ -11,7 +11,7 @@ TODO: api change (добавить в desc "palette" | "picker")
 var mode = colorpicker.getCurrentMode(); // -> "palette"
 
 
-@template: api_method
+
 @descr:
 
 

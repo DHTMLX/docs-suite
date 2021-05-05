@@ -16,7 +16,7 @@ dhxWindow.attach("richtext",{mode: "document"});
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 

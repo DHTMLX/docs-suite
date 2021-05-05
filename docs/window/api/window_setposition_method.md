@@ -16,7 +16,7 @@ dhxWindow.setPosition(20,20);
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 

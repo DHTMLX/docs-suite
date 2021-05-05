@@ -22,7 +22,7 @@ form.getItem("simpleVault").setValue([
 ]);
 
 
-@template: api_method
+
 @descr:
 
 

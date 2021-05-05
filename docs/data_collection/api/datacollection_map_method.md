@@ -16,7 +16,7 @@ component.data.map(function(item){
     return item;
 });
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Data. Map](https://snippet.dhtmlx.com/louctp61)

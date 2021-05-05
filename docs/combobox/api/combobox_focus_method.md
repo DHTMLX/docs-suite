@@ -11,7 +11,7 @@ title: focus
 combo.focus();
 
 
-@template: api_method
+
 @descr:
 
 @related: combobox/work_with_combo.md#settingfocus

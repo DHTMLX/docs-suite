@@ -17,7 +17,7 @@ title: isSelected
 sidebar.isSelected("categoryPost"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)

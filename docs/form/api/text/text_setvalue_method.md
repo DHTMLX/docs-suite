@@ -13,5 +13,5 @@ title: setValue
 @example:
 form.getItem("text").setValue("This is the Text control");
 
-@template: api_method
+
 @descr:

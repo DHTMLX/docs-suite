@@ -22,7 +22,7 @@ form.getItem("datepicker").validate(true, "03/10/20"); // -> true/false
 form.getItem("datepicker").validate(true); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 When calling without parameters or setting the **silent** parameter to *false*, the method invokes the [BeforeValidate](form/api/calendar/calendar_beforevalidate_event.md) and [AfterValidate](form/api/calendar/calendar_aftervalidate_event.md) events and visually modifies the control.

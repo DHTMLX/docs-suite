@@ -27,7 +27,7 @@ var val3 = timepicker2.getValue(); // -> "06:00AM"
 var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
 
-@template: api_method
+
 @descr:
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 

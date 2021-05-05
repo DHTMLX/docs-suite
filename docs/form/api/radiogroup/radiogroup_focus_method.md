@@ -13,7 +13,7 @@ title: focus
 @example:
 form.getItem("radiogroup").focus("radiobutton_1");
 
-@template: api_method
+
 @descr:
 If "id" is not specified, the method sets focus to the first radio button of the RadioGroup.
 

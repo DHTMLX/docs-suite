@@ -12,7 +12,7 @@ title: enable
 form.getItem("button").enable();
 
 
-@template: api_method
+
 @descr:
 
 

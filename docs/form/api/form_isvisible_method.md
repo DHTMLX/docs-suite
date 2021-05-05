@@ -20,6 +20,8 @@ form.isVisible(); // -> true/false
 // checks whether a form control is visible
 form.isVisible("combo"); // -> true/false
 
+
+
 @descr:
 
 @related:form/work_with_form.md#checkingifaformisvisible

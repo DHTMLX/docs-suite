@@ -25,7 +25,7 @@ layout.forEach(function(cell, index, array) {
 
 
 
-@template: api_method
+
 @descr:
 
 The callback function takes three parameters:

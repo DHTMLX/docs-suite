@@ -31,7 +31,7 @@ var config = chart.getSeries("A");
 */
 
 
-@template: api_method
+
 @descr:
 
 

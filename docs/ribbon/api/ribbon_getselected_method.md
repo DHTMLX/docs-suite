@@ -14,7 +14,7 @@ title: getSelected
 ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 
-@template: api_method
+
 @descr:
 
 @related: menu/work_with_menu.md#gettingselecteditems

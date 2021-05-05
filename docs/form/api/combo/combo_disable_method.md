@@ -11,7 +11,7 @@ title: disable
 form.getItem("combo").disable();
 
 
-@template: api_method
+
 @descr:
 
 

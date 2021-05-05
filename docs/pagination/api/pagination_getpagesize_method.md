@@ -20,7 +20,7 @@ pagination.getPageSize();
 // -> 22
 
 
-@template: api_method
+
 @descr:
 
 

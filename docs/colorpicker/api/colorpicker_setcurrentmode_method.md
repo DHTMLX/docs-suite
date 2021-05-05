@@ -11,7 +11,7 @@ TODO: api change (добавить в desc "palette" | "picker")
 colorpicker.setCurrentMode("picker");
 
 
-@template: api_method
+
 @descr:
 
 @related: colorpicker/manipulating_colorpicker.md#settinggettingcurrentmode

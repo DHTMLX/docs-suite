@@ -11,7 +11,7 @@ title: destructor
 toolbar.destructor();
 
 
-@template: api_method
+
 @descr:
 
 

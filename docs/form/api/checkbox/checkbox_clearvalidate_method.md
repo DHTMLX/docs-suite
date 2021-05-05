@@ -13,7 +13,7 @@ title: clearValidate
 form.getItem("checkbox").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

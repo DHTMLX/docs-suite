@@ -21,7 +21,7 @@ var value = form.getItem("datepicker").getValue(true);
 // -> Mon Jun 03 2019 00:00:00 GMT+0300
 
 
-@template: api_method
+
 @descr:
 
 

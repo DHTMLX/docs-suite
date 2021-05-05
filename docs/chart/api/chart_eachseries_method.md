@@ -52,7 +52,7 @@ chart.eachSeries(function(seria){
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 
 
-@template: api_method
+
 @descr:
 
 

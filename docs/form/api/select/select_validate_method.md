@@ -15,7 +15,7 @@ form.getItem("select").validate();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

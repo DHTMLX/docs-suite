@@ -16,7 +16,7 @@ form.getItem("input").setValue("Mike");
 
 
 
-@template: api_method
+
 @descr:
 
 

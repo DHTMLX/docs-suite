@@ -10,5 +10,5 @@ title: enable
 @example:
 form.getItem("text").enable();
 
-@template: api_method
+
 @descr:

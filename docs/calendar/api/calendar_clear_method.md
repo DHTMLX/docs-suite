@@ -10,7 +10,7 @@ title: clear
 @example:
 calendar.clear()
 
-@template: api_method
+
 
 @descr:
 

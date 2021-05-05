@@ -22,7 +22,7 @@ var state2 = toolbar.getState();
 // -> {"search":"toolbar","edit":true,"align":"right"}
 
 
-@template: api_method
+
 @descr:
 Starting from v7.0, the method can return the value/state of the control by its id:
 

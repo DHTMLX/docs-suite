@@ -11,7 +11,7 @@ title: setFullScreen
 dhxWindow.setFullScreen();
 
 
-@template: api_method
+
 @descr:
 
 @related:window/usage.md#fullscreenmode

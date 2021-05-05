@@ -13,5 +13,5 @@ title: getParent
 @example:
 var parentId = toolbar.data.getParent("add_btn");
 
-@template: api_method
+
 @descr:

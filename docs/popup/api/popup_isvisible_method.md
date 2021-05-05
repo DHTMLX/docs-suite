@@ -14,7 +14,7 @@ title: isVisible
 popup.isVisible(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)

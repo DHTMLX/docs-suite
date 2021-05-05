@@ -11,7 +11,7 @@ title: expand
 layout.getCell("id").expand();
 
 
-@template: api_method
+
 @descr:
 
 

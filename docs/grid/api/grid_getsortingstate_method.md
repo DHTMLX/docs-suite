@@ -15,7 +15,7 @@ var state = grid.getSortingState();
 // -> {dir: "desc", by: "country"}
 
 
-@template: api_method
+
 @descr:
 The return object includes the following attributes:
 

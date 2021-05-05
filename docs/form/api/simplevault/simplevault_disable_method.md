@@ -11,7 +11,7 @@ title: disable
 form.getItem("simplevault").disable();
 
 
-@template: api_method
+
 @descr:
 
 

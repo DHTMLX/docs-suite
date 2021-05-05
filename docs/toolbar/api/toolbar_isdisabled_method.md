@@ -17,7 +17,7 @@ param	boolean		true, if an item of Toolbar is disabled, otherwise false
 toolbar.isDisabled("id"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 @related: toolbar/common_methods.md#checkingifatoolbaritemisdisabled

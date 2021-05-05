@@ -26,7 +26,7 @@ var array_ids = combo.getValue(true);
 // -> ["u1556097609214", "u1556097609228", "u1556097609244"]
 
 
-@template: api_method
+
 @descr:
 
 @related: combobox/work_with_combo.md#settinggettingvalues

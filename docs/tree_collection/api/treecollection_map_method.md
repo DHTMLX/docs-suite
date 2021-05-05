@@ -19,7 +19,7 @@ toolbar.data.map((item)=>{
 });
 toolbar.paint();
 
-@template: api_method
+
 @descr:
 To work with all childs of a particular control, pass one more parameter to **map()** - the ID of the control:
 

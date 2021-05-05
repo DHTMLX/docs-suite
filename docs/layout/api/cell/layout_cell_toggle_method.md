@@ -11,7 +11,7 @@ title: toggle
 layout.getCell("id").toggle();
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Layout. Toggle](https://snippet.dhtmlx.com/t38tqk0k)

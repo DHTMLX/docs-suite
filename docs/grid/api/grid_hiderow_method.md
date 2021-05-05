@@ -14,7 +14,7 @@ title: hideRow
 grid.hideRow(rowId);
 
 
-@template: api_method
+
 @descr:
 
 [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)

@@ -18,7 +18,7 @@ title: getIndex
 @example:
 var index = component.data.getIndex("1"); // -> returns 0
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Data. Get Index](https://snippet.dhtmlx.com/1ottirdt)

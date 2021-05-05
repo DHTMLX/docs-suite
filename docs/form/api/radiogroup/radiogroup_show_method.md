@@ -11,7 +11,7 @@ title: show
 form.getItem("radiogroup").show();
 
 
-@template: api_method
+
 @descr:
 
 

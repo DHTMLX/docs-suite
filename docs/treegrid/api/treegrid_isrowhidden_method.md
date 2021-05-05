@@ -16,7 +16,7 @@ title: isRowHidden
 @example:
 treegrid.isRowHidden("1"); //-> true/false
 
-@template: api_method
+
 @descr:
 
 [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)

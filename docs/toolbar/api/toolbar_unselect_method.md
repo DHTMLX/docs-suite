@@ -18,7 +18,7 @@ toolbar.unselect();
 toolbar.unselect("web");
 
 
-@template: api_method
+
 @descr:
 
 @related: toolbar/common_methods.md#selectingunselectinganitem

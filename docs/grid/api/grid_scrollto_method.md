@@ -15,7 +15,7 @@ title: scrollTo
 grid.scrollTo("15","c");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)

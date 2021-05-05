@@ -10,7 +10,7 @@ title: destructor
 @example:
 ribbon.destructor();
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Ribbon. Destructor](https://snippet.dhtmlx.com/h9m26vy5)

@@ -12,6 +12,8 @@ title: paint
 @example:
 form.paint();
 
+
+
 @descr:
 
 

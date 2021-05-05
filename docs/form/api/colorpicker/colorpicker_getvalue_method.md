@@ -16,7 +16,7 @@ var value = form.getItem("colorpicker").getValue();
 
 
 
-@template: api_method
+
 @descr:
 
 

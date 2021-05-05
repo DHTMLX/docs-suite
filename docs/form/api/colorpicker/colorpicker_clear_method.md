@@ -13,7 +13,7 @@ title: clear
 form.getItem("colorpicker").clear();
 
 
-@template: api_method
+
 @descr:
 
 

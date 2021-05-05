@@ -18,7 +18,7 @@ title: load
 @example:
 myToolbar.data.load("[path to this file]/file.xml", "xml");
 
-@template: api_method
+
 @descr:
 
 

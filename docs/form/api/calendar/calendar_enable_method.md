@@ -13,7 +13,7 @@ title: enable
 form.getItem("datepicker").enable();
 
 
-@template: api_method
+
 @descr:
 
 

@@ -23,7 +23,7 @@ tabbar.isDisabled("London"); // -> returns true/false
 
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tabbar. Is Disabled Tab](https://snippet.dhtmlx.com/86er2y7m)

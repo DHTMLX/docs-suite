@@ -45,7 +45,7 @@ form.getItem("button").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 
 The returned object of the **Button** control can contain the following configuration attributes:

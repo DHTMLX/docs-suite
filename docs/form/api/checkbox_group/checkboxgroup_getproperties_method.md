@@ -80,7 +80,7 @@ form.getItem("checkboxGroup").getProperties("second");
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **CheckboxGroup** control can contain the following configuration attributes:
 

@@ -11,7 +11,7 @@ title: hide
 form.getItem("spacer").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

@@ -15,7 +15,7 @@ title: getParent
 layout.getCell("1").getParent();
 
 
-@template: api_method
+
 @descr:
 An example of a returned config object:
 

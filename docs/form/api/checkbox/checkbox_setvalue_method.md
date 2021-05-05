@@ -14,7 +14,7 @@ title: setValue
 form.getItem("checkbox").setValue(true); 
 
 
-@template: api_method
+
 @descr:
 
 

@@ -11,7 +11,7 @@ title: hide
 form.getItem("combo").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

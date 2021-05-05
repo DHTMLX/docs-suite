@@ -16,6 +16,8 @@ title: validate
 @example:
 var result = form.validate(true); // -> true/false
 
+
+
 @descr:
 Starting with v7.0, the method validates only [the required fields or the fields that contain validation rules](form/work_with_form.md#validatingform).
 

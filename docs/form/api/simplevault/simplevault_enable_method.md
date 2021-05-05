@@ -11,7 +11,7 @@ title: enable
 form.getItem("simplevault").enable();
 
 
-@template: api_method
+
 @descr:
 
 

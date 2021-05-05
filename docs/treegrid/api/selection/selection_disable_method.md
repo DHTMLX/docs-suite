@@ -14,7 +14,7 @@ title: disable
 @example:
 treegrid.selection.disable();
 
-@template: api_method
+
 @descr:
 
 @relatedapi: 

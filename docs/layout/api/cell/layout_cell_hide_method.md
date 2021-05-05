@@ -10,7 +10,7 @@ title: hide
 @example:
 layout.getCell("1").hide();
 
-@template: api_method
+
 @descr:
 
 @relatedapi:

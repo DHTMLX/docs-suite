@@ -16,7 +16,7 @@ form.getItem("radiogroup").setValue("2");
 
 
 
-@template: api_method
+
 @descr:
 
 

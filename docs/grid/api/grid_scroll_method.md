@@ -15,7 +15,7 @@ title: scroll
 grid.scroll(75,230);
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)

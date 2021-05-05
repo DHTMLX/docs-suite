@@ -17,7 +17,7 @@ title: setPageSize
 pagination.setPageSize(24);
 
 
-@template: api_method
+
 @descr:
 
 

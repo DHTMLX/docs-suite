@@ -17,7 +17,7 @@ form.getItem("datepicker").setValue("30/05/19");
 form.getItem("datepicker").setValue(new Date('2019-05-30'));
 
 
-@template: api_method
+
 @descr:
 
 

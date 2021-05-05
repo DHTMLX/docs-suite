@@ -10,7 +10,7 @@ title: collapseAll
 @example:
 tree.collapseAll();
 
-@template: api_method
+
 @descr:
 
 @related: tree/work_with_tree.md#expandingcollapsingitems

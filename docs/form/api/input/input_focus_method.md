@@ -13,7 +13,7 @@ title: focus
 form.getItem("input").focus();
 
 
-@template: api_method
+
 @descr:
 
 @changelog: added in v7.0

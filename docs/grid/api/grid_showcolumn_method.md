@@ -14,7 +14,7 @@ title: showColumn
 grid.showColumn(col);
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)

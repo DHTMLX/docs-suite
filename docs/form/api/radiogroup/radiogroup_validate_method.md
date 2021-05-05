@@ -15,7 +15,7 @@ form.getItem("radiogroup").validate();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

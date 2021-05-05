@@ -11,7 +11,7 @@ title: destructor
 menu.destructor();
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Menu. Destructor](https://snippet.dhtmlx.com/q3x2uyex)

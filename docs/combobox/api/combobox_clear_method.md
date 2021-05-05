@@ -10,7 +10,7 @@ title: clear
 @example:
 combo.clear();
 
-@template: api_method
+
 @descr:
 
 **Related sample**:

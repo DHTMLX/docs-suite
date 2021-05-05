@@ -50,7 +50,7 @@ form.getItem("timepicker").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **TimePicker** control can contain the following configuration attributes:
 

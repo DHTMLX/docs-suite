@@ -13,7 +13,7 @@ title: enable
 form.getItem("CheckboxGroup").enable();
 
 
-@template: api_method
+
 @descr:
 
 

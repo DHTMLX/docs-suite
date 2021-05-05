@@ -17,7 +17,7 @@ title: showDate
 calendar.showDate(new Date(2020,11,12));
 
 
-@template: api_method
+
 @descr:
 The **modes** are:
 

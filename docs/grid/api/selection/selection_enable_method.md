@@ -10,7 +10,7 @@ title: enable
 @example:
 grid.selection.enable();
 
-@template: api_method
+
 @descr:
 
 @relatedapi: 

@@ -14,7 +14,7 @@ title: enableTab
 tabbar.enableTab("London");
 
 
-@template: api_method
+
 @descr:
 
 

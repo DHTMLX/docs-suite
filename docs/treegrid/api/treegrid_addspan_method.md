@@ -19,7 +19,7 @@ grid.addSpan({
 // grid.paint();
 
 
-@template: api_method
+
 @descr:
 The **span** object contains the following properties:
 

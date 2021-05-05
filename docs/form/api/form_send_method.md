@@ -18,6 +18,8 @@ title: send
 @example:
 var send = form.send("myserver.com", "POST");
 
+
+
 @descr:
 The **method** parameter can take "PUT", "POST", "DELETE", "GET" values, depending on the used type of the request. 
 

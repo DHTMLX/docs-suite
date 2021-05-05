@@ -21,7 +21,7 @@ form.getItem("CheckboxGroup").getValue("checkbox_id_1"); //-> "some_value"
 form.getItem("CheckboxGroup").getValue("checkbox_id_2"); //-> true/false 
 
 
-@template: api_method
+
 @descr:
 If the id of a checkbox is not specified, the method returns an object. The object contains a set of *key:value* pairs where *key* is the id of a checkbox and *value* is either the value of a checkbox or its state (if the value attribute is not specified for the checkbox).
 

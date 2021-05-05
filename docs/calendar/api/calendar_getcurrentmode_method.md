@@ -15,7 +15,7 @@ title: getCurrentMode
 var mode = calendar.getCurrentMode(); // -> "calendar"
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Calendar. Get Current Mode](https://snippet.dhtmlx.com/fadykqoc)

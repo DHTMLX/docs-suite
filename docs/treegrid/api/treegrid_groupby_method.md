@@ -28,7 +28,7 @@ treegrid.groupBy(function (item) {
 });
 
 
-@template: api_method
+
 @descr:
 
 The method takes one parameter, which can be:

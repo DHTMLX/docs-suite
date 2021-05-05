@@ -18,7 +18,7 @@ combo.setValue(combo.data.getId(1));
 combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 
-@template: api_method
+
 @descr:
 
 

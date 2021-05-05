@@ -10,7 +10,7 @@ title: paint
 @example:
 dhxWindow.paint();
 
-@template: api_method
+
 @descr:
 
 @related:window/usage.md#repaintingwindow

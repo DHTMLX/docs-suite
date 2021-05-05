@@ -10,7 +10,7 @@ title: paint
 @example:
 list.paint();
 
-@template: api_method
+
 @descr:
 
 

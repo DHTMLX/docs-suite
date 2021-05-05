@@ -14,6 +14,7 @@ title: setValue
 @example:
 form.setValue({"input_name":"Jack London", "slider_id":10});
 
+
 @descr:
 The **values** object should contain a set of *key:value* pairs where *key* is either the name of the control or the control's id (if the name attribute is not defined in the config of the control)  and *value* is a new value/state of the control. 
 

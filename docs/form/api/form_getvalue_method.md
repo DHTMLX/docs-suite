@@ -18,6 +18,7 @@ var state = form.getValue();
 // -> {"name":"John Doe"}
 
 
+
 @descr:
 1\. In case both the name and id of the control are specified in the config of Control, the returned object will contain the name of Control:
 

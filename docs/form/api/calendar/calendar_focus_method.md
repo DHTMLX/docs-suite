@@ -15,7 +15,7 @@ title: focus
 form.getItem("datepicker").focus();
 
 
-@template: api_method
+
 @descr:
 
 @changelog: added in v7.0

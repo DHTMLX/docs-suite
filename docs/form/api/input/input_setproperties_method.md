@@ -19,7 +19,7 @@ form.getItem("input").setProperties({
     minLength: 4
 });
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/input/input_afterchangeproperties_event.md) and [](form/api/input/input_beforechangeproperties_event.md) events.
 

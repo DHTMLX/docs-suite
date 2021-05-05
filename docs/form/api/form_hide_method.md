@@ -10,6 +10,10 @@ title: hide
 @example:
 form.hide();
 
+
+
+
+
 @descr:
 
 @related:form/work_with_form.md#hidingshowingaform

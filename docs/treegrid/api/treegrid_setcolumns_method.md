@@ -17,7 +17,7 @@ grid.setColumns([
 	// more columns objects
 ]);
 
-@template: api_method
+
 @descr:
 Each column object may contain the followings fields:
 

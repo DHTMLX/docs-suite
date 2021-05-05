@@ -17,7 +17,7 @@ dhxWindow.attachHTML(html);
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 
