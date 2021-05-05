@@ -21,4 +21,3 @@ grid.events.on("FilterChange", function(value,colId,filter){
 @descr:
 
 @changelog: added in v6.3
-

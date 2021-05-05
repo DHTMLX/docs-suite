@@ -20,7 +20,7 @@ const tree = new dhx.Tree("tree_container", {
 
 
 
-[Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
+**Related sample**: [Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
 
 @relatedapi: tree/api/selection/selection_enable_method.md
 tree/api/selection/selection_disable_method.md

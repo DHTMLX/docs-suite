@@ -140,5 +140,3 @@ The returned object of the **TimePicker** control can contain the following conf
 
 
 @changelog: added in v7.0
-
-

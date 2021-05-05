@@ -28,7 +28,7 @@ ribbon/api/ribbon_select_method.md
 ribbon/api/ribbon_unselect_method.md
 ribbon/api/ribbon_getselected_method.md
 
-**Related Sample:**
+**Related sample**:
 - [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 @changelog:

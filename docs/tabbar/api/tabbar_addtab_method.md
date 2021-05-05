@@ -41,10 +41,12 @@ The **view** object may include the following properties:
     </tbody>
 </table>
 
+
+**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+
 @relatedapi: tabbar/api/tabbar_removetab_method.md
 
-@changelog: added in v6.4
 
 @related: tabbar/work_with_tabbar.md#addingremoving-tabs
 
-**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+@changelog: added in v6.4

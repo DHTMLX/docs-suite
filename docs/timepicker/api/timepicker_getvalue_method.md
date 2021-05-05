@@ -29,6 +29,7 @@ var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
 
 @descr:
+
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 
 - for the 24-hour format a return string value will include just the hour and minutes: "00:39"
@@ -41,5 +42,5 @@ The returned value can be of several types, depending on the passed parameter an
 @relatedapi:
 timepicker/api/timepicker_setvalue_method.md
 
-@related: timepicker/usage.md#settingvalue
+@related: timepicker/usage.md#setting-value
 

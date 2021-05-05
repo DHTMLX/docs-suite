@@ -19,4 +19,3 @@ colorpicker.events.on("Apply", function() {
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
 
 @changelog: added in v6.4
-

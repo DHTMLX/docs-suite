@@ -30,5 +30,3 @@ tabbar.disableTab("London");
 @related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab
 
 @changelog: added in v6.4
-
-

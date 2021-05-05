@@ -18,6 +18,7 @@ sidebar.expand();
 **Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
 
 
-@changelog: added in v6.4
 
 @related: sidebar/work_with_sidebar.md#expanding-and-collapsing-sidebar
+
+@changelog: added in v6.4

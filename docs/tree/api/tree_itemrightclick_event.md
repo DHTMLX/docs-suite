@@ -19,8 +19,9 @@ tree.events.on("itemRightClick", function(id, e){
 
 @descr:
 
-@changelog: added in v6.3
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @related: tree/events_handling.md
+
+@changelog: added in v6.3

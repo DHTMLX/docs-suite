@@ -20,7 +20,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
  
-**Related sample:** [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
 
 @related:grid/initialization.md#initialize-grid
 grid/configuration.md#editing-grid-and-separate-columns

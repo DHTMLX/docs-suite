@@ -23,5 +23,5 @@ toolbar.setState({
 
 **Related sample**: [Toolbar. Set State](https://snippet.dhtmlx.com/h34uh1dr)
 
-@related: toolbar/common_methods.md#settinggettingvaluesandstates
+@related: toolbar/common_methods.md#settinggetting-values-and-states
 

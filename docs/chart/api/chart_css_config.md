@@ -70,5 +70,5 @@ var chart = new dhx.Chart({
 **Related sample**:
 - [Chart. Custom Styling](https://snippet.dhtmlx.com/p82iew5s)
 
-@related: chart/customization.md#stylingchart
+@related: chart/customization.md#styling-chart
 

@@ -18,6 +18,7 @@ timepicker.events.on("AfterClose", function(value){
 
 
 @descr:
+
 The type of the value parameter depends on the applied [valueFormat](timepicker/api/timepicker_valueformat_config.md) and [timeFormat](timepicker/api/timepicker_timeformat_config.md):
 
 - If *valueFormat: "string"*  and *timeFormat:24* are specified, the string value will include just the hour and minutes: "00:39"

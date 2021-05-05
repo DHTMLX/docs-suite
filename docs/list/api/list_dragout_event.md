@@ -47,5 +47,5 @@ list/api/list_candrop_event.md
 list/api/list_dragin_event.md
 list/api/list_dragstart_event.md
 
-[List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 

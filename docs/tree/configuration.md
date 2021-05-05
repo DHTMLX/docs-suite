@@ -74,7 +74,7 @@ Selection of items
 
 ![](../assets/tree/disable_selection.png)
 
-[Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
+**Related sample**: [Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
 
 The default configuration of Tree provides you with the selection feature that allows highlighting a Tree item. To disable selection in a Tree you need to set the [](tree/api/tree_selection_config.md) configuration property to *false*:
 

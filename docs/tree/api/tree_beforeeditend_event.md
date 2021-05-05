@@ -23,7 +23,7 @@ tree.events.on("BeforeEditEnd", function(value, id) {
 
 @descr:
 
-[Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @changelog: added in v7.0
 

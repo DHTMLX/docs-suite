@@ -124,7 +124,7 @@ To select a particular Sidebar item, make use of the [select()](sidebar/api/side
 sidebar.select("categoryPost");
 ~~~
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 ### Unselecting a sidebar item
 
@@ -142,7 +142,7 @@ It is also possible to remove selection from all previously selected items of Si
 sidebar.unselect();
 ~~~
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 Checking if a sidebar item is selected
 -------------------------------------
@@ -163,7 +163,7 @@ To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/
 sidebar.isSelected("categoryPost"); // -> returns true/false
 ~~~
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 Getting selected items
 ---------------------------

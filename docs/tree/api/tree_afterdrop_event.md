@@ -46,4 +46,4 @@ tree/api/tree_dragin_event.md
 tree/api/tree_dragout_event.md
 tree/api/tree_dragstart_event.md
 
-[Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)

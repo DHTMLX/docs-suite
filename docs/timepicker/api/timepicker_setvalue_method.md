@@ -26,20 +26,20 @@ timepicker.setValue({hour: 10, minute: 50, AM: true});
 
 
 @descr:
+
 The value of timepicker set as an array should have the following elements:
 
 - the hour value
 - the minutes value
 - the "AM/PM" identifier for 12-hour format as a string
 
-The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
-method of the **Date** object.
+The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) method of the **Date** object.
 
 
 @relatedapi:
 timepicker/api/timepicker_getvalue_method.md
 
-@related: timepicker/usage.md#settingvalue
+@related: timepicker/usage.md#setting-value
 
 **Related sample**: [Timepicker. Set Timepicker Value](https://snippet.dhtmlx.com/6r8lkhbg)
 

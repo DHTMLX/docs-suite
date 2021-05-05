@@ -18,7 +18,7 @@ slider.events.on("MouseDown", function(e){
 
 @descr:
 
-**Related Sample:**
+**Related sample**:
 - [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)	
 
 

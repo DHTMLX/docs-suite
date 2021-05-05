@@ -23,5 +23,3 @@ layout/api/layout_toggle_method.md
 @related: layout/work_with_layout.md#collapsingexpanding-a-cell
 
 @changelog: added in v6.4
-
-

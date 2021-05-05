@@ -20,7 +20,7 @@ slider.events.on("Change", function(newValue, oldValue, isRange){
 
 @descr:
 
-**Related Sample:**
+**Related sample**:
 - [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)	
 
 

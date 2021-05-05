@@ -23,4 +23,4 @@ pagination.events.on("Change", function(index, previousIndex) {
 
 
 
-[Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)
+**Related sample**: [Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)

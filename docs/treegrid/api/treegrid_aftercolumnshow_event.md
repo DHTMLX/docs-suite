@@ -20,5 +20,5 @@ treegrid.events.on("AfterColumnShow", function(column){
 
 @changelog: added in v7.0
 
-[TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 

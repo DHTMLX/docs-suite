@@ -60,7 +60,7 @@ As a result, the height of a tab is 45 and the width is 100.
 tabbar/init.md#define-tabbar-structure
 tabbar/configuring_tabbar.md#structure-of-tabs 
 
-[Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
+**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 

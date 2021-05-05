@@ -43,5 +43,3 @@ The callback function takes three parameters:
 
 
 @changelog: added in v6.4
-
-

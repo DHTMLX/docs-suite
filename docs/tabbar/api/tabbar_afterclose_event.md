@@ -20,6 +20,7 @@ tabbar.events.on("AfterClose", function(id){
 
 @descr:
 
-@changelog: added in v6.4
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
+
+@changelog: added in v6.4

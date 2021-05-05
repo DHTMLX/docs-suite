@@ -44,6 +44,6 @@ dataview/api/dataview_candrop_event.md
 dataview/api/dataview_dragin_event.md
 dataview/api/dataview_dragout_event.md
 
-[Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v7.0

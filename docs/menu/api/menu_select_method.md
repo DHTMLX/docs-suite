@@ -26,7 +26,7 @@ menu/api/menu_isselected_method.md
 menu/api/menu_getselected_method.md
 
 
-[Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 @changelog:
 added in v7.0

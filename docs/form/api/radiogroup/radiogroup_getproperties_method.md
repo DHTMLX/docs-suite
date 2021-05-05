@@ -160,5 +160,3 @@ The returned object of the **RadioGroup** control can contain the following conf
 </table>
 
 @changelog: added in v7.0
-
-

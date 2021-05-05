@@ -168,5 +168,3 @@ The returned object of the **Combo** control can contain the following configura
 
 
 @changelog: added in v7.0
-
-

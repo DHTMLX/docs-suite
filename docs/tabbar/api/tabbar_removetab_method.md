@@ -18,10 +18,12 @@ tabbar.removeTab(id);
 
 @descr:
 
+
+**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
+
 @relatedapi: tabbar/api/tabbar_addtab_method.md
 
-@changelog: added in v6.4
 
 @related: tabbar/work_with_tabbar.md#addingremoving-tabs
 
-**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
+@changelog: added in v6.4

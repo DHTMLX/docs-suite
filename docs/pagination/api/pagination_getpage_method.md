@@ -27,7 +27,7 @@ const pageIndex = pagination.getPage();
 
 
 
-[Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
+**Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
 
 
