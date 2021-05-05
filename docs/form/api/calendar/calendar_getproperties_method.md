@@ -171,5 +171,3 @@ The returned object of the **DatePicker** control can contain the following conf
 
 
 @changelog: added in v7.0
-
-

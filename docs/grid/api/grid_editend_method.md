@@ -27,5 +27,3 @@ The method works with [any type of cell editors](grid/configuration.md#columnedi
 @related: grid/usage.md#editing-data
 
 @changelog: added in v6.3
-
-

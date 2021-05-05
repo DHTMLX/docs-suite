@@ -32,5 +32,3 @@ timepicker/api/timepicker_valueformat_config.md
 timepicker/api/timepicker_timeformat_config.md
 
 @changelog: added in v7.0
-
-

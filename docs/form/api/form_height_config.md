@@ -52,4 +52,3 @@ form/configuration.md#widthheight
 @relatedapi: form/api/form_width_config.md
 
 @changelog: added in v6.4
-

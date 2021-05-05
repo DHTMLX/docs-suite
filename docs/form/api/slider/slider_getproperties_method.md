@@ -135,5 +135,3 @@ The returned object of the **Slider** control can contain the following configur
 
 
 @changelog: added in v7.0
-
-

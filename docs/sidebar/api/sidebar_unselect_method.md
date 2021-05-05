@@ -28,9 +28,6 @@ sidebar/api/sidebar_getselected_method.md
 sidebar/api/sidebar_isselected_method.md
 sidebar/api/sidebar_select_method.md
 
-
+@related: sidebar/work_with_sidebar.md#selectingunselecting-an-item
 
 @changelog: added in v6.5
-
-
-@related: sidebar/work_with_sidebar.md#selectingunselecting-an-item

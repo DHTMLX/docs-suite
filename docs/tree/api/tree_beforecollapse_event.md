@@ -23,8 +23,9 @@ tree.events.on("BeforeCollapse", function(id) {
 
 @descr:
 
-@changelog: added in v6.4
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @related: tree/events_handling.md
+
+@changelog: added in v6.4

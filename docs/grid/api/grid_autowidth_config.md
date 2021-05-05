@@ -26,4 +26,3 @@ var grid = new dhx.Grid("grid_container", {
 grid/configuration.md#autowidth-for-columns
 
 @changelog: added in v6.4
-

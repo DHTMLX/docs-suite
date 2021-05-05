@@ -29,4 +29,3 @@ var grid = new dhx.Grid("grid", {
 grid/configuration.md#tooltip
 
 @changelog: added in v6.5
-

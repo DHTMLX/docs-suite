@@ -32,9 +32,8 @@ var combo = new dhx.Combobox("combo_container",{
 
 @descr: 
 
-
 **Related sample**: [Combobox. Config Data](https://snippet.dhtmlx.com/8bsb9dji)
 
-@changelog: added in v6.4
-
 @related: combobox/how_to_start.md#initialize-combobox
+
+@changelog: added in v6.4

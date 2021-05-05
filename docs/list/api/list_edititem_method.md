@@ -17,17 +17,10 @@ list.editItem("1");
 
 @descr:
 
-
-
-
-
-@changelog: added in v6.4
-
-
+**Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
 
 @relatedapi: list/api/list_editable_config.md
 
 @related: list/work_with_list.md#editing-items
 
-
-**Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
+@changelog: added in v6.4

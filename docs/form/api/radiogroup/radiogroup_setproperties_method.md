@@ -49,6 +49,7 @@ form.getItem("radiogroup").setProperties("first", {
 
 
 @descr:
+
 The method invokes [](the form/api/radiogroup/radiogroup_afterchangeproperties_event.md) and [](form/api/radiogroup/radiogroup_beforechangeproperties_event.md) events.
 
 It is possible to change values of the following configuration attributes of the **RadioGroup** control:
@@ -151,5 +152,3 @@ form.getItem("radiogroup").setProperties("first", {
 ~~~
 
 @changelog: added in v7.0
-
-

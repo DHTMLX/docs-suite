@@ -14,16 +14,12 @@ layout.getCell("id").expand();
 
 @descr:
 
-
+**Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
 
 @relatedapi:
 layout/api/layout_collapse_method.md
 layout/api/layout_toggle_method.md
 
-**Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
-
 @related: layout/work_with_layout.md#collapsingexpanding-a-cell
 
 @changelog: added in v6.4
-
-

@@ -52,5 +52,3 @@ The callback function takes three parameters:
 **Related sample**: [Layout. ForEach](https://snippet.dhtmlx.com/9hfntqpy)
 
 @changelog: added in v6.4
-
-
