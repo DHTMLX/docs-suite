@@ -17,7 +17,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 [Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)

@@ -16,7 +16,7 @@ var combo = new dhx.Combobox("combo_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 Note that to select several options you need to enable the **multiselection** option.

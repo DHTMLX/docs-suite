@@ -15,7 +15,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 In case both **height** and **maxHeight** properties are set in the configuration of a cell, the **maxHeight** option is a priority.
 

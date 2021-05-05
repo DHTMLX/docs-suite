@@ -33,7 +33,7 @@ var list = new dhx.List("list", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**:

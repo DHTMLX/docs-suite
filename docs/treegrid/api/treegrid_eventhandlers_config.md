@@ -34,7 +34,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 });
 
 
-@template:	api_config
+
 @descr: 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 

@@ -20,7 +20,7 @@ title: css
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5, css: "bg-gray"});
 
 
-@template:	api_config
+
 @descr: 
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Window.

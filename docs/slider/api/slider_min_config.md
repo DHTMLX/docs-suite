@@ -14,7 +14,7 @@ var slider = new dhx.Slider("slider_container", {
     min:2
 });
 
-@template:	api_config
+
 @descr: 
 
 

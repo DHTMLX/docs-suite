@@ -16,7 +16,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
  
 
-@template:	api_config
+
 @descr: 
 
 @related:

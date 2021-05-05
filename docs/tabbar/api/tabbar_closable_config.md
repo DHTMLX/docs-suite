@@ -18,7 +18,7 @@ var tabbar = new dhx.Tabbar("tabbar", {
 	closable: ["paris", "london"]
 });
 
-@template:	api_config
+
 
 **Related sample**: [Tabbar. Close Button](https://snippet.dhtmlx.com/cysre4v8)
 

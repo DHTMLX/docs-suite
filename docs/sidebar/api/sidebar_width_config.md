@@ -16,7 +16,7 @@ var sidebar = new dhx.Sidebar(document.body, {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 

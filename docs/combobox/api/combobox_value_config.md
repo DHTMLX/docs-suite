@@ -20,7 +20,7 @@ var combobox = new dhx.Combobox("combobox", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 - If *multiselection:true* is set for a combo, the property takes an array of string values as:<br/> *value: ["1","2","3"]*,

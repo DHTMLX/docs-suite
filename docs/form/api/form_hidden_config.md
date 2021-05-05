@@ -15,7 +15,7 @@ var form = new dhx.Form("form_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 

@@ -18,7 +18,7 @@ dhxWindow.show();
 
 @related: window/how_to_start.md
 window/configuration.md#overflowingbrowserwindow
-@template:	api_config
+
 @descr: 
 {{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
 

@@ -14,7 +14,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     noContent:true
 });
 
-@template:	api_config
+
 @descr: 
 
 @related: tabbar/configuring_tabbar.md#tabswithoutcontent,

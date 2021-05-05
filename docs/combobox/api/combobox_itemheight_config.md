@@ -15,7 +15,7 @@ var combo = new dhx.Combobox("combo_container",{
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)

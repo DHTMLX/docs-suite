@@ -15,7 +15,7 @@ var dhxWindow = new dhx.Window({
 dhxWindow.show();
 
 
-@template:	api_config
+
 @descr: 
 By default a header is initialized with no controls. To add a control into the header, follow the instructions given in the article window/customization.md#controlsandoperations.
 

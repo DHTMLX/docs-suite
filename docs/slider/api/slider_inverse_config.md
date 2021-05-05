@@ -13,7 +13,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)

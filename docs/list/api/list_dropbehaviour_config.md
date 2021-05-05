@@ -16,7 +16,7 @@ var target = new dhx.List("list-target",{
 });
 
 
-@template:	api_config
+
 @descr: 
 There are three modes of behaviour of a dragged list item:
 

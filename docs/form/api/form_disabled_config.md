@@ -13,7 +13,7 @@ var form = new dhx.Form("form_container", {
 	disabled: true
 });
 
-@template:	api_config
+
 @descr: 
 
 

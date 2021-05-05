@@ -42,7 +42,7 @@ const menu = new dhx.Menu("menu_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @related: menu/from_script.md

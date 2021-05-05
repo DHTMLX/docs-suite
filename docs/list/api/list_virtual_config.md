@@ -15,7 +15,7 @@ var list = new dhx.List("list_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @related: list/configuration.md#dynamicrenderingofitems

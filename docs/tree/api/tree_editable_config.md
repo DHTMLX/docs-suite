@@ -12,7 +12,7 @@ title: editable
 @example: 
 var tree = new dhx.Tree("tree_container", {editable: true});
 
-@template:	api_config
+
 @descr: 
 
 @related:tree/configuration.md#editingofitems

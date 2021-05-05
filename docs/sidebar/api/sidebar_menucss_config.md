@@ -23,7 +23,7 @@ var sidebar = new dhx.Sidebar("sidebar", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 

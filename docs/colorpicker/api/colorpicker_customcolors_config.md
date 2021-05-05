@@ -12,7 +12,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]					
 });
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Colorpicker. Custom Colors](https://snippet.dhtmlx.com/zf88vxd1)

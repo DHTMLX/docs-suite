@@ -12,7 +12,7 @@ var combo = new dhx.Combobox("combo_container",{
     placeholder: "Some placeholder"
 });
 
-@template:	api_config
+
 @descr: 
 
 @related: combobox/how_to_start.md#initialize-combobox
