@@ -15,7 +15,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 In case both **width** and **maxWidth** properties are set in the configuration of a cell, the **maxWidth** option is a priority.
 

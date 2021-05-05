@@ -14,7 +14,7 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-@template:	api_config
+
 @descr: 
 By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the article window/customization.md#controlsandoperations.
 

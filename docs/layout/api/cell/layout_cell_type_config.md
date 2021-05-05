@@ -24,7 +24,7 @@ const layout = new dhx.Layout("layout", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 <table class="webixdoc_links">

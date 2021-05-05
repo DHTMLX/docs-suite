@@ -17,7 +17,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr:
  
 **Related sample:** [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)

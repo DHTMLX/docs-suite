@@ -14,7 +14,7 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 In case the option isn't set in the Pagination configuration, the input will take the auto-width that fits its maximum content.
 

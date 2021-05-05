@@ -15,7 +15,7 @@ var list = new dhx.List("list", {
 });
 
 
-@template:	api_config
+
 @descr: 
 The template function takes one parameter:
 

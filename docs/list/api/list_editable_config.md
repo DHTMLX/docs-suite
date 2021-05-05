@@ -13,7 +13,7 @@ title: editable
 var list = new dhx.List("list_container", {editable:true});
 
 
-@template:	api_config
+
 @descr: 
 
 

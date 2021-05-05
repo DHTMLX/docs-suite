@@ -23,6 +23,6 @@ var menu = new dhx.Menu({
 });
 
 
-@template:	api_config
+
 @descr: 
 

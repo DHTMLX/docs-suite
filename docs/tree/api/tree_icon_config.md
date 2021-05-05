@@ -16,7 +16,7 @@ var tree = new dhx.Tree("tree_container", {
 	}
 });
 
-@template:	api_config
+
 @descr: 
 There are three types of [icons](tree/setting_tree_appearance.md#changingicons) that can be customized:
 

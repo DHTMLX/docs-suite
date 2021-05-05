@@ -42,7 +42,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 
-@template:	api_config
+
 @descr: 
 If the property is not specified in the configuration object, nothing is selected in the calendar on initialization.
 

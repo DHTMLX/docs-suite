@@ -16,7 +16,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 The height of the footer is calculated as a sum of all row heights in it.
 

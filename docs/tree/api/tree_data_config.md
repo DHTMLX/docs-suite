@@ -13,7 +13,7 @@ var data = new dhx.TreeCollection();
 data.load("../common/treedata.json");
 var tree = new dhx.Tree("tree", {data: data});
 
-@template:	api_config
+
 @descr: 
 Each **data** object can have the following properties:
 

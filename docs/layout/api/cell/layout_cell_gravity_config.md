@@ -38,7 +38,7 @@ var layout = dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 {{note You can use the **gravity** property only when a cell has no specified sizes - width and height, otherwise - the property does not work.}} 
 

@@ -13,7 +13,7 @@ title: selection
 var list = new dhx.List("list_container", {selection:false});
 
 
-@template:	api_config
+
 @descr: 
 
 

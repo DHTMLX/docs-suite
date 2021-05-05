@@ -14,7 +14,7 @@ var slider = new dhx.Slider("slider_container",{
 
 
 
-@template:	api_config
+
 @descr: 
 The property is useful while using Slider in form.
  

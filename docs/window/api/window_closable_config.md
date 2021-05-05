@@ -16,7 +16,7 @@ var dhxWindow = new dhx.Window({
 dhxWindow.show();
 
 
-@template:	api_config
+
 @descr: 
 A closable window gets the Close icon in the right top corner.
 

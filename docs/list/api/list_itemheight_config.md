@@ -21,7 +21,7 @@ var list = new dhx.List("list_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 The usage of the *CSS calc() function* within the **itemHeight** property is not possible.
 

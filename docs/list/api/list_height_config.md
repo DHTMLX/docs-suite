@@ -15,7 +15,7 @@ var list = new dhx.List("list", {height: 700});
 var list = new dhx.List("list", {height: "700px"});
 
 
-@template:	api_config
+
 @descr: 
 The usage of the *CSS calc() function* within the **height** property is not possible.
 

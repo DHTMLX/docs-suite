@@ -17,7 +17,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @changelog: added in v6.4

@@ -15,7 +15,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @related: colorpicker/how_to_start.md#initialize-colorpicker

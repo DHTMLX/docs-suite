@@ -15,7 +15,7 @@ var grid = new dhx.Grid("grid_container", {
 	headerRowHeight: 50
 });
 
-@template:	api_config
+
 @descr: 
 The height of the header is calculated as a sum of all row heights in it.
 

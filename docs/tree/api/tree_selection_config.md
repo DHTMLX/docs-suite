@@ -15,7 +15,7 @@ const tree = new dhx.Tree("tree_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 

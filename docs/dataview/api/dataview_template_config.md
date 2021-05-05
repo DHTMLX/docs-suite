@@ -21,7 +21,7 @@ var dataview = new dhx.DataView("dataview", {
 });
 
 
-@template:	api_config
+
 @descr: 
 The template function takes one parameter:
 

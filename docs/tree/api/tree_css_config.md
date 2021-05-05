@@ -16,7 +16,7 @@ title: css
 
 var tree = new dhx.Tree("tree_container", {css: "bg-gray"});
 
-@template:	api_config
+
 @descr: 
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Tree.

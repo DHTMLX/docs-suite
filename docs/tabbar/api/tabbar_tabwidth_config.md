@@ -14,7 +14,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     tabWidth: 120
 });
 
-@template:	api_config
+
 @descr: 
 
 @related: tabbar/configuring_tabbar.md#sizeoftabs

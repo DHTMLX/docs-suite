@@ -12,7 +12,7 @@ var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: 
 var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
 
 
-@template:	api_config
+
 @descr:
 
 {{note Don't forget to enable drag-n-drop via the [](dataview/api/dataview_dragmode_config.md) property to use dragCopy.}}

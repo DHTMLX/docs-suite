@@ -23,7 +23,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of the Layout cell.

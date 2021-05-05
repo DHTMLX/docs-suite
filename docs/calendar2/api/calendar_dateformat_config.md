@@ -14,7 +14,7 @@ var calendar = new dhx.Calendar("calendar_container", {
    dateFormat:"%d.%m.%Y"
 });
 
-@template:	api_config
+
 @descr: 
 dhtmlxCalendar uses the following characters for setting a date format:
 

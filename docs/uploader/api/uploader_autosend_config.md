@@ -18,7 +18,7 @@ var vault = new dhx.Vault("vault_container", {
    	}
 });
 
-@template:	api_config
+
 @descr:
 
 

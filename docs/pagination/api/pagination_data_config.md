@@ -19,7 +19,7 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 

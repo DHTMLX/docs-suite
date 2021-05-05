@@ -14,7 +14,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Setup drag column](https://snippet.dhtmlx.com/ax5vs4a8)

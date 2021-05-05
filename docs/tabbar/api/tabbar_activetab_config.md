@@ -20,7 +20,7 @@ var tabbar = new dhx.Tabbar("tabbar", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Tabbar. Active Tab](https://snippet.dhtmlx.com/0y8kd9oa)

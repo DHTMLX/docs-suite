@@ -18,7 +18,7 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-@template:	api_config
+
 @descr: 
 
 #### Details:

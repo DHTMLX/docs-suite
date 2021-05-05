@@ -13,7 +13,7 @@ var dataview = new dhx.DataView("dataview_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 Drag-n-drop can work in three modes:

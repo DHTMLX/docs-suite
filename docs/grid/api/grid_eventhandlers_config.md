@@ -34,7 +34,7 @@ const grid = new dhx.Grid("grid", {
 });
 
 
-@template:	api_config
+
 @descr:
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:

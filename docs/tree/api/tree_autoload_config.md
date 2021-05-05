@@ -12,7 +12,7 @@ var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
 tree.data.load("/backend/autoload?id=tree");
 
 
-@template:	api_config
+
 @descr: 
 
 Here is an example of sending an HTTP GET request to the server using the Express library:

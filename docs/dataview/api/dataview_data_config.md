@@ -29,7 +29,7 @@ var dataview = new dhx.DataView("dataview_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @related: dataview/data_loading.md

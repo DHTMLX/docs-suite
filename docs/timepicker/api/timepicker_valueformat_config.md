@@ -22,7 +22,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 });
 
 
-@template:	api_config
+
 @descr:   
 
 

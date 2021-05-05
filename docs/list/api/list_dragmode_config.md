@@ -13,7 +13,7 @@ var list = new dhx.List("list_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 Drag-n-drop can work in three modes: 
 

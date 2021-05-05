@@ -15,7 +15,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 In case both **width** and **minWidth** properties are set in the configuration of a cell, the **minWidth** option is a priority.
 
