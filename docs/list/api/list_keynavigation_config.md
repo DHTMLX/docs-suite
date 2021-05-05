@@ -13,5 +13,5 @@ var list = new dhx.List("list", {keyNavigation:true});
 
 @descr: 
 
-@related: list/configuration.md#arrowkeysnavigation
+@related: list/configuration.md#arrow-keys-navigation
 

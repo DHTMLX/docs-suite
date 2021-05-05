@@ -30,7 +30,8 @@ const list = new dhx.List("list", {
 
 
 
-@descr: 
+@descr:
+
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 <table class="webixdoc_links">
@@ -57,4 +58,4 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 @relatedapi: list/api/list_template_config.md
 
-@related: list/configuration.md#eventhandlersforthetemplate
+@related: list/configuration.md#event-handlers-for-the-template

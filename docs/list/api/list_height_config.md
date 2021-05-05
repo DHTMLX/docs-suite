@@ -16,10 +16,11 @@ var list = new dhx.List("list", {height: "700px"});
 
 
 
-@descr: 
+@descr:
+ 
 The usage of the *CSS calc() function* within the **height** property is not possible.
 
 
-@related: list/configuration.md#heightofthelist
+@related: list/configuration.md#height-of-the-list
 
 **Related sample**: [List. Setup List Height](https://snippet.dhtmlx.com/k2mj2sz7)

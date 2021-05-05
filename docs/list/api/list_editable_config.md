@@ -20,7 +20,7 @@ var list = new dhx.List("list_container", {editable:true});
 @relatedapi:
 list/api/list_edititem_method.md
 
-@related: list/configuration.md#editingitems
+@related: list/configuration.md#editing-items
 
 **Related sample**:
 - [List. Editable List](https://snippet.dhtmlx.com/f26lfcai)

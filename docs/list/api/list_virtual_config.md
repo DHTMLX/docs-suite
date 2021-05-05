@@ -18,6 +18,6 @@ var list = new dhx.List("list_container", {
 
 @descr: 
 
-@related: list/configuration.md#dynamicrenderingofitems
+@related: list/configuration.md#dynamic-rendering-of-items
 
 **Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)
