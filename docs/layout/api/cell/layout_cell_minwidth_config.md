@@ -16,7 +16,8 @@ var layout = new dhx.Layout("layout_container", {
 
 
 
-@descr: 
+@descr:
+
 In case both **width** and **minWidth** properties are set in the configuration of a cell, the **minWidth** option is a priority.
 
 @changelog: added in v7.0
@@ -25,4 +26,4 @@ In case both **width** and **minWidth** properties are set in the configuration 
 layout/api/layout_width_config.md
 layout/api/layout_maxwidth_config.md
 
-@related: layout/cell_configuration.md#cellsize
+@related: layout/cell_configuration.md#cell-size

@@ -18,7 +18,7 @@ layout.getCell("1").isVisible(); // -> true|false
 
 @descr:
 
-@related: layout/work_with_layout.md#checkingvisibilityofacell
+@related: layout/work_with_layout.md#checking-visibility-of-a-cell
 
 @relatedapi: 
 layout/api/layout_show_method.md

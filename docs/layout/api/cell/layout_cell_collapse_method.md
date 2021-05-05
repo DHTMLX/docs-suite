@@ -20,7 +20,7 @@ layout.getCell("id").collapse();
 layout/api/layout_expand_method.md
 layout/api/layout_toggle_method.md
 
-@related: layout/work_with_layout.md#collapsingexpandingacell
+@related: layout/work_with_layout.md#collapsingexpanding-a-cell
 
 @changelog: added in v6.4
 
