@@ -19,7 +19,7 @@ popup.isVisible(); // -> true/false
 
 **Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
-@related: popup/work_with_popup.md#checkingvisibilityofpopup
+@related: popup/work_with_popup.md#checking-visibility-of-popup
 
 
 

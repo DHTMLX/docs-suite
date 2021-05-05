@@ -23,6 +23,7 @@ popup.events.on("BeforeHide", function(fromOuterClick,e){
 
 
 @descr:
+
 The event is blockable. Return *false* to block hiding a popup.
 
 **Related samples**:
