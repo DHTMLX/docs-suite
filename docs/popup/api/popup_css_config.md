@@ -16,7 +16,8 @@ popup.show();
 
 
 
-@descr: 
+@descr:
+ 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Popup.
 
 ~~~js

@@ -18,7 +18,7 @@ popup.hide();
 @relatedapi:
 popup/api/popup_show_method.md
 
-@related:popup/work_with_popup.md#hidingshowingpopup
+@related:popup/work_with_popup.md#hidingshowing-popup
 
 
 
