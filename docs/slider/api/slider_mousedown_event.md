@@ -16,11 +16,13 @@ slider.events.on("MouseDown", function(e){
     // your code here
 });
 
-
-@relatedsample:https://snippet.dhtmlx.com/sc7ov54z	Slider. Slider Events
-
-
 @descr:
+
+**Related Sample:**
+- [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)	
+
+
+
 
 
 
