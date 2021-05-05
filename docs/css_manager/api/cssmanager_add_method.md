@@ -36,9 +36,9 @@ dhx.cssManager.add({
 const block = document.createElement("div");
 block.classList.add("myCustomClass");
 
-@template:	api_method
 
 @descr:
+
 The new created styles will be added to the HTML document in the &lt;head&gt; section.
 
 If the **silent** parameter is set to *true*, you need to use the [update()](css_manager/api/update.md) method after **add** to apply the made changes to the HTML page.

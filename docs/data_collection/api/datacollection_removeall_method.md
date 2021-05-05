@@ -10,7 +10,7 @@ title: removeAll
 @example:
 component.data.removeAll();
 
-@template:	api_method
+
 @descr:
 
 **Related sample**: [Data. Remove All](https://snippet.dhtmlx.com/ykk2ne82)

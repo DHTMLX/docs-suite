@@ -16,7 +16,7 @@ dhx.cssManager.add({
 
 dhx.cssManager.update();
 
-@template:	api_method
+
 
 @descr:
 

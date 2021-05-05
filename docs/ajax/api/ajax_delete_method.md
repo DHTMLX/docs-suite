@@ -21,10 +21,9 @@ dhx.ajax.delete(url, {id: "2"}).then(function (data){
     console.log(data);
 });
 
-**Related sample**: [Data. Ajax Delete](https://snippet.dhtmlx.com/6nlb0bfu)
-@template:	api_method
-
 @descr:
+**Related sample**: [Data. Ajax Delete](https://snippet.dhtmlx.com/6nlb0bfu)
+
 The **config** object can contain following options:
 
 - **responseType** - the type of data that you are expecting back from the server. The available types are:

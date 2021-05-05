@@ -15,7 +15,7 @@ title: changeId
 @example:
 data.changeId("1", "22");
 
-@template:	api_method
+
 @descr:
 
 @changelog: added in v6.4

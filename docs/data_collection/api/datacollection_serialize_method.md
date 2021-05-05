@@ -16,7 +16,7 @@ title: serialize
 @example:
 var data = component.data.serialize("csv");
 
-@template:	api_method
+
 @descr:
 
 **Related sample**: [Data. Serialize](https://snippet.dhtmlx.com/7c35n4uf)

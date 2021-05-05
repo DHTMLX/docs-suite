@@ -19,7 +19,7 @@ tree.selection.events.on("BeforeSelect", function(id) {
     return false;
 });
 
-@template:	api_method
+
 @descr:
 
 {{note The event can be applied to the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components.}}
