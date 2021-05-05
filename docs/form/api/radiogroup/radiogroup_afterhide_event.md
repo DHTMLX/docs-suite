@@ -18,7 +18,7 @@ form.getItem("radiogroup").events.on("AfterHide", function(value, init) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

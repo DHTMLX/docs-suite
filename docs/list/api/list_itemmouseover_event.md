@@ -17,7 +17,7 @@ list.events.on("ItemMouseOver", function(id, event) {
 );
 
 
-@template: api_event
+
 @descr:
 
 

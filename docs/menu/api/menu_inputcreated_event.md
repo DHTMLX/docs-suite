@@ -18,7 +18,7 @@ menu.events.on("InputCreated", function(id, el){
 });
 
 
-@template: api_event
+
 @descr:
 
 

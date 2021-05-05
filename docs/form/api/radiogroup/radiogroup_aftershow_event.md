@@ -16,7 +16,7 @@ form.getItem("radiogroup").events.on("AfterShow", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

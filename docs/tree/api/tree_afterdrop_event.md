@@ -12,7 +12,7 @@ tree.events.on("AfterDrop", function(data, events) {
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 The data object can contain the following parameters:
 

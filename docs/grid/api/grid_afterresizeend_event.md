@@ -17,7 +17,7 @@ grid.events.on("AfterResizeEnd", function(col,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

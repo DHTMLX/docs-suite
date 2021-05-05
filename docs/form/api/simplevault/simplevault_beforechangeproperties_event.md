@@ -20,7 +20,7 @@ form.getItem("simplevault").events.on("BeforeChangeProperties", function(propert
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/simplevault/simplevault_setproperties_method.md

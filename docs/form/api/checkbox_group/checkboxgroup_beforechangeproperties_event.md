@@ -20,7 +20,7 @@ form.getItem("checkboxGroup").events.on("BeforeChangeProperties", function(prope
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/checkbox_group/checkboxgroup_setproperties_method.md

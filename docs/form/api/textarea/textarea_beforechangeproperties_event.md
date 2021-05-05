@@ -20,7 +20,7 @@ form.getItem("textarea").events.on("BeforeChangeProperties", function(properties
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/textarea/textarea_setproperties_method.md

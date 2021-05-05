@@ -13,7 +13,7 @@ combobox.events.on("AfterClose", function() {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v6.4

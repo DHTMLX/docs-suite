@@ -19,7 +19,7 @@ dataview.events.on("BeforeEditStart", function(id){
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

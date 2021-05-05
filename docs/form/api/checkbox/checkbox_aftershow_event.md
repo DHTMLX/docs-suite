@@ -18,7 +18,7 @@ form.getItem("checkbox").events.on("AfterShow", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

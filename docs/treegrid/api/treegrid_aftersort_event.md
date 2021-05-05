@@ -19,7 +19,7 @@ treegrid.events.on("afterSort", (col, dir) => {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.1

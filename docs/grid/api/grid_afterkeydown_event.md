@@ -17,7 +17,7 @@ grid.events.on("AfterKeyDown", function (e) {
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

@@ -21,7 +21,7 @@ form.getItem("checkbox").events.on("BeforeValidate", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

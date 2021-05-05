@@ -17,7 +17,7 @@ calendar.events.on("DateMouseOver", function(date, e) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

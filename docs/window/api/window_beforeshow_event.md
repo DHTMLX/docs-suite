@@ -20,7 +20,7 @@ dhxWindow.events.on("BeforeShow", function(position){
 });
 
 
-@template: api_event
+
 @descr:
 The event is blockable. Return *false* to block showing a window.
 

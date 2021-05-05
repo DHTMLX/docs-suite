@@ -14,7 +14,7 @@ sidebar.events.on("AfterCollapse", function() {
 
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)

@@ -16,7 +16,7 @@ form.getItem("simplevault").events.on("AfterChangeProperties", function(properti
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/simplevault/simplevault_setproperties_method.md

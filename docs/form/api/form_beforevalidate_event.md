@@ -21,7 +21,7 @@ form.events.on("BeforeValidate", function(name, value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_validate_method.md

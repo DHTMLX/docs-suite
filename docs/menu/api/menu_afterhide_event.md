@@ -17,6 +17,6 @@ menu.events.on("AfterHide", function(event){
 });
 
 
-@template: api_event
+
 @descr:
 

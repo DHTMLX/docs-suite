@@ -16,7 +16,7 @@ form.events.on("AfterShow", function(name, value) {
     console.log("AfterShow", name, value); 
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_beforeshow_event.md

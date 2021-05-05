@@ -18,7 +18,7 @@ list.events.on("FocusChange", function(index, id){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)

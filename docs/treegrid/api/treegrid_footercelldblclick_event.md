@@ -16,5 +16,5 @@ grid.events.on("FooterCellDblClick", function(column,e){
     // your logic here
 });
 
-@template: api_event
+
 @descr:

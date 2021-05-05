@@ -18,7 +18,7 @@ form.getItem("input").events.on("AfterValidate", function(value, isValid) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/input/input_validate_method.md

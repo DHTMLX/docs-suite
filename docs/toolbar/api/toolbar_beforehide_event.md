@@ -20,7 +20,7 @@ toolbar.events.on("BeforeHide", function(id, event){
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)

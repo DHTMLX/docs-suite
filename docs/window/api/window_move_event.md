@@ -17,7 +17,7 @@ dhxWindow.events.on("Move", function(position, oldPosition, side) {
     console.log("The window is moved to " + position.left, position.top)
 });
 
-@template: api_event
+
 @descr:
 The **position/oldPosition** parameter contains two attributes:
 

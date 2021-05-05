@@ -15,7 +15,7 @@ tree.events.on("AfterCollapse", function(id) {
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)

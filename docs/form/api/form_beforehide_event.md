@@ -22,7 +22,7 @@ form.events.on("BeforeHide", function(name, value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_afterhide_event.md

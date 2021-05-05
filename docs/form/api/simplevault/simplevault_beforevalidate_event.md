@@ -20,7 +20,7 @@ form.getItem("simplevault").events.on("BeforeValidate", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

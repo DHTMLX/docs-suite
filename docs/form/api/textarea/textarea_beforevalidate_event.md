@@ -19,7 +19,7 @@ form.getItem("textarea").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/textarea/textarea_validate_method.md

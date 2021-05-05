@@ -13,7 +13,7 @@ colorpicker.events.on("Apply", function() {
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)

@@ -18,7 +18,7 @@ menu.events.on("Click", function(id,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k)

@@ -16,7 +16,7 @@ form.getItem("simpleVault").events.on("UploadProgress", function(progress, value
     console.log("UploadProgress", progress, value);
 });
 
-@template: api_event
+
 @descr:
 
 @changelog:

@@ -19,7 +19,7 @@ grid.events.on("afterSort", (col, dir) => {
 });
 
 
-@template: api_event
+
 @descr:
 
 

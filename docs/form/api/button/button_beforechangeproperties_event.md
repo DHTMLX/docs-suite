@@ -20,7 +20,7 @@ form.getItem("button").events.on("BeforeChangeProperties", function(properties) 
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/button/button_setproperties_method.md

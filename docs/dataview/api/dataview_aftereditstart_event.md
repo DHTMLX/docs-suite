@@ -16,7 +16,7 @@ dataview.events.on("AfterEditStart", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 

@@ -18,7 +18,7 @@ form.getItem("checkbox").events.on("AfterValidate", function(value, isValid) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

@@ -19,5 +19,5 @@ form.getItem("spacer").events.on("BeforeShow", function(value) {
     return true;
 });
 
-@template: api_event
+
 @descr:

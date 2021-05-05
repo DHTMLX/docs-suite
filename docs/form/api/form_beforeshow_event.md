@@ -22,7 +22,7 @@ form.events.on("beforeShow", function(name, value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_aftershow_event.md

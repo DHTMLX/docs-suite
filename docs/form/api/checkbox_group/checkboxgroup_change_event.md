@@ -17,7 +17,7 @@ form.getItem("CheckboxGroup").events.on("Change", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

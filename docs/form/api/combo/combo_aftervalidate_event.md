@@ -18,7 +18,7 @@ form.getItem("combo").events.on("AfterValidate", function(value, isValid) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/combo/combo_validate_method.md

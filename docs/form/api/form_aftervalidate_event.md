@@ -17,7 +17,7 @@ form.events.on("AfterValidate", function(name, value, isValid) {
     console.log("AfterValidate", name, value, isValid); 
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_validate_method.md

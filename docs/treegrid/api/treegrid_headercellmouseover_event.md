@@ -16,7 +16,7 @@ grid.events.on("HeaderCellMouseOver", function(column,e){
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

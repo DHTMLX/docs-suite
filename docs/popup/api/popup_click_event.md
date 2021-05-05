@@ -16,7 +16,7 @@ popup.events.on("Click",function(e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

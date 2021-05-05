@@ -15,7 +15,7 @@ tree.events.on("AfterExpand", function(id) {
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v6.4

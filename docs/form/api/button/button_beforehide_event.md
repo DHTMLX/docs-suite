@@ -21,7 +21,7 @@ form.getItem("button").events.on("BeforeHide", function(text, init) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

@@ -20,7 +20,7 @@ layout.events.on("BeforeAdd", function(id){
 - result	boolean		false - to prevent adding of a cell, otherwise true
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)

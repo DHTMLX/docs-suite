@@ -16,7 +16,7 @@ treegrid.events.on("AfterRowShow", function(row){
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

@@ -16,7 +16,7 @@ form.getItem("text").events.on("Change", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

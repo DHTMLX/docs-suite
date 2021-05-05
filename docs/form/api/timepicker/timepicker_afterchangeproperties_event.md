@@ -16,7 +16,7 @@ form.getItem("timepicker").events.on("AfterChangeProperties", function(propertie
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/timepicker/timepicker_setproperties_method.md

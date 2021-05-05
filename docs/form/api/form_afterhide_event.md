@@ -16,7 +16,7 @@ form.events.on("AfterHide", function(name, value) {
     console.log("AfterHide", name, value); 
 });
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_beforehide_event.md

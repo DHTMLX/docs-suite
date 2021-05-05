@@ -17,7 +17,7 @@ form.getItem("colorpicker").events.on("Input", function(inputValue) {
 });
 
 
-@template: api_event
+
 @descr:
 
 {{note The functionality is available when the "editable" option of the ColorPicker control is set to *true*.}}

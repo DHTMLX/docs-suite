@@ -21,6 +21,6 @@ menu.events.on("BeforeHide", function(id, event){
 });
 
 
-@template: api_event
+
 @descr:
 

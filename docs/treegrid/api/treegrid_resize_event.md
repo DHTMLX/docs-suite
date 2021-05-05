@@ -16,7 +16,7 @@ grid.events.on("Resize", function(col,e){
 	// your code here
 });
 
-@template: api_event
+
 @descr:
 
 @changelog:

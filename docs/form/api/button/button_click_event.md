@@ -19,7 +19,7 @@ form.getItem("button").events.on("Click", function(events) {
 });
 
 
-@template: api_event
+
 @descr:
 
 
