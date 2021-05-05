@@ -34,5 +34,3 @@ form/api/form_enable_method.md
 @related: form/work_with_form.md#checking-if-a-form-is-disabled
 
 @changelog: added in v6.4
-
-

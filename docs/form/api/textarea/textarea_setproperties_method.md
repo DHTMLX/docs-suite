@@ -107,5 +107,3 @@ It is possible to change values of the following configuration attributes of the
 
 
 @changelog: added in v7.0
-
-

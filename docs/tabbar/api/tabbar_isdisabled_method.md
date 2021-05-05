@@ -31,5 +31,3 @@ tabbar.isDisabled("London"); // -> returns true/false
 @related: tabbar/work_with_tabbar.md#checking-if-a-tab-is-disabled
 
 @changelog: added in v6.4
-
-

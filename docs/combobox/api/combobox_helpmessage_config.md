@@ -13,10 +13,11 @@ var combobox = new dhx.Combobox("combo_container",{
 });
 
 
-@descr:  
-The property is useful while using Combobox in form.
+@descr:
 
-@changelog: added in v6.4
+The property is useful while using Combobox in form.
 
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/configuration.md#help-icon
+
+@changelog: added in v6.4

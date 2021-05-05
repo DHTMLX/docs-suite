@@ -139,5 +139,3 @@ The returned object of the **ColorPicker** control can contain the following con
 
 
 @changelog: added in v7.0
-
-

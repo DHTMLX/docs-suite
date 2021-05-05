@@ -29,4 +29,3 @@ tabbar/configuring_tabbar.md#close-buttons-for-tabs
  
 
 @changelog: added in v6.4
-

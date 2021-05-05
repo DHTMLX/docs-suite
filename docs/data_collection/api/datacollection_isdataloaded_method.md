@@ -21,7 +21,7 @@ data.isDataLoaded();
 
 
 @descr:
+
 {{pronote This functionality is available in the PRO edition only.}}
 
 @changelog: added in v6.4
-

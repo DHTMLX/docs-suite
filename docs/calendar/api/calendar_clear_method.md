@@ -17,5 +17,3 @@ calendar.clear()
 **Related sample**: [Calendar. Clear Value](https://snippet.dhtmlx.com/zu2n05at)
 
 @changelog: added in v6.4
-
-

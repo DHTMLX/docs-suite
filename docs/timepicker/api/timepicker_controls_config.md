@@ -20,7 +20,8 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 **Related sample**: [Timepicker. Timepicker With Controls](https://snippet.dhtmlx.com/ybnqq5ej)
 
-@changelog: added in v6.4
 
-@related: timepicker/configuration.md#actions-buttons
+@related: timepicker/configuration.md#actionsbuttons
 timepicker/initialization.md#initialize-timepicker
+
+@changelog: added in v6.4

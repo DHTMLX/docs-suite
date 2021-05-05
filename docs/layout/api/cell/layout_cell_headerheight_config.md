@@ -36,7 +36,8 @@ layout/api/layout_header_config.md
 layout/api/layout_headericon_config.md
 layout/api/layout_headerimage_config.md
 
-@changelog: added in v6.4
 
 @related: layout/init.md#initialize-layout
 layout/cell_configuration.md#height-of-a-header-cell
+
+@changelog: added in v6.4

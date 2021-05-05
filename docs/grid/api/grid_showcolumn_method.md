@@ -25,4 +25,3 @@ grid.showColumn(col);
 @related: grid/usage.md#hidingshowing-a-column
 
 @changelog: added in v6.3
-

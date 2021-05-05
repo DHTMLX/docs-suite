@@ -17,13 +17,10 @@ tabbar.enableTab("London");
 
 @descr:
 
+**Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 @relatedapi: tabbar/api/tabbar_disabletab_method.md
-
-**Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 @related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab
 
 @changelog: added in v6.4
-
-

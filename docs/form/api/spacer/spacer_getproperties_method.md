@@ -54,5 +54,3 @@ The returned object of the **Spacer** control can contain the following configur
 
 
 @changelog: added in v7.0
-
-

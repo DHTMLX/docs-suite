@@ -56,5 +56,3 @@ The data object contains the following parameters:
 @related: grid/configuration.md#drag-n-drop-of-grid-columns
 
 @changelog: added in v7.0
-
-

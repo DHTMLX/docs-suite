@@ -35,4 +35,3 @@ treegrid/api/treegrid_dragcolumnout_event.md
 treegrid/api/treegrid_dragcolumnstart_event.md
 
 @changelog: added in v6.5
-

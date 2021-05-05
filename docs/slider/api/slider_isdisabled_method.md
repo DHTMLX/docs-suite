@@ -18,6 +18,7 @@ slider.isDisabled(); // -> true/false
 
 **Related sample**: [Slider. Is Disabled Slider](https://snippet.dhtmlx.com/fbo18fue)
 
-@changelog: added in v6.4
 
 @related: slider/usage.md#checking-if-a-slider-is-disabled
+
+@changelog: added in v6.4
