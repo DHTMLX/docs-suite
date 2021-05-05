@@ -15,7 +15,7 @@ treeGrid.events.on("AfterExpand", function(rowId) {
     // your logic here
 });
 
-@template:	api_event
+
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events	](https://snippet.dhtmlx.com/sgwnxshe)

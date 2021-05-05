@@ -15,7 +15,7 @@ data.events.on("AfterRemove", function(removedItem){
 	console.log("An item is removed");
 });
 
-@template:	api_event
+
 @descr:
 
 @relatedapi:data_collection/api/beforeremove_event.md

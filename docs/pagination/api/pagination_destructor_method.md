@@ -12,6 +12,6 @@ title: destructor
 pagination.destructor();
 
 
-@template: api_method
+
 @descr:
 

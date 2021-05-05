@@ -13,7 +13,7 @@ title: disable
 form.getItem("CheckboxGroup").disable();
 
 
-@template: api_method
+
 @descr:
 
 

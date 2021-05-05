@@ -15,7 +15,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 });
 
 
-@template:	api_config
+
 @descr: 
 
 {{note Note that in the **paletteOnly** mode the palette is displayed without the panel with custom (user-defined) colors.}}

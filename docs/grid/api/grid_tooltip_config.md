@@ -17,7 +17,7 @@ var grid = new dhx.Grid("grid", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 

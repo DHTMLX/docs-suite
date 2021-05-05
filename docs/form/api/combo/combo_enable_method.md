@@ -11,7 +11,7 @@ title: enable
 form.getItem("combo").enable();
 
 
-@template: api_method
+
 @descr:
 
 

@@ -20,7 +20,7 @@ dhxWindow.events.on("Resize", function(state, oldState, side) {
 });
 
 
-@template: api_event
+
 @descr:
 The **state/oldState** object contains two attributes:
 

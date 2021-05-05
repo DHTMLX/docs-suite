@@ -17,7 +17,7 @@ title: paint
 form.paint();
 
 
-@template: api_method
+
 @descr:
 
 

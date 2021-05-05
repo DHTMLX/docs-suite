@@ -15,7 +15,7 @@ treegrid.editEnd(); // the edited data will be saved
 
 treegrid.editEnd(true); // the edited data won't be saved
 
-@template: api_method
+
 @descr:
 The method works with [any type of cell editors](treegrid/configuration.md#columneditors), except for **checkbox**. 
 

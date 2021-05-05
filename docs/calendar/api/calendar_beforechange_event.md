@@ -22,7 +22,7 @@ calendar.events.on("BeforeChange",function(date, oldDate, click){
 });
 
 
-@template: api_event
+
 @descr:
 You can block selection of particular dates by returning *false* from the event handler.
 

@@ -19,7 +19,7 @@ grid.events.on("CellMouseDown", function(row,column,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 

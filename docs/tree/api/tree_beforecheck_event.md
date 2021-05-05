@@ -21,7 +21,7 @@ tree.events.on("beforeCheck", function (index, id) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.1

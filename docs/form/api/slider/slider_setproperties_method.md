@@ -18,7 +18,7 @@ form.getItem("slider").setProperties({
 });
 
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/slider/slider_afterchangeproperties_event.md) and [](form/api/slider/slider_beforechangeproperties_event.md) events.
 

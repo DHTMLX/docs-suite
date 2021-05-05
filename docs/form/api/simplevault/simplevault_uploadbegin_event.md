@@ -17,7 +17,7 @@ form.getItem("simpleVault").events.on("UploadBegin", function(files, value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog:

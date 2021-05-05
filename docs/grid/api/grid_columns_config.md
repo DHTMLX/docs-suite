@@ -20,7 +20,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 
 
 #### Details:

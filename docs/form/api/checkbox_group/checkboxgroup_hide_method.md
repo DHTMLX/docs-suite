@@ -11,7 +11,7 @@ title: hide
 form.getItem("CheckboxGroup").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

@@ -20,7 +20,7 @@ form.getItem("slider").events.on("BeforeHide", function(value, init) {
     return true;
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

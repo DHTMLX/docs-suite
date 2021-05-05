@@ -16,7 +16,7 @@ title: select
 toolbar.select("web");
 
 
-@template: api_method
+
 @descr:
 
 @related: toolbar/common_methods.md#selectingunselectinganitem

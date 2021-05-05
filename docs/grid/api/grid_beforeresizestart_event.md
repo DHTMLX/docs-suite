@@ -22,7 +22,7 @@ grid.events.on("BeforeResizeStart", function(col,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

@@ -34,7 +34,7 @@ calendar.setValue([new Date(2019,05,03), new Date(2019,05,19)]);
 calendar.setValue(["03/06/19", "15/06/19"]);
 
 
-@template: api_method
+
 @descr:
 {{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the
 **setValue()** method and in the **dateFormat** property. Otherwise, the default format (**"%d/%m/%y"**) will be used.}}

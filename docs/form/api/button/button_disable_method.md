@@ -12,7 +12,7 @@ title: disable
 form.getItem("button").disable();
 
 
-@template: api_method
+
 @descr:
 
 

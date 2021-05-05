@@ -19,7 +19,7 @@ treegrid.events.on("BeforeRowHide", function(row){
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

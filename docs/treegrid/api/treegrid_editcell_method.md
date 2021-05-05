@@ -15,7 +15,7 @@ TODO: api change (добавить EditorType в description "input" | "select" 
 @example:
 grid.editCell(grid.data.getId(0),"project");
 
-@template: api_method
+
 @descr:
 
 @changelog:

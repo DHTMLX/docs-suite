@@ -23,7 +23,7 @@ treegrid.events.on("beforeRowResize", function(row, events, currentHeight) {
 });
 
 
-@template:	api_event
+
 @descr:
 To be able to change the height of the row, you should specify the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) and [editable:true](treegrid/api/treegrid_editable_config.md) options in the configuration of Grid. 
 

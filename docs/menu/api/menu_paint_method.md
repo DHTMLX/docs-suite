@@ -11,7 +11,7 @@ title: paint
 menu.paint();
 
 
-@template: api_method
+
 @descr:
 
 

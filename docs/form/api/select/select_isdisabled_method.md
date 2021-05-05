@@ -14,7 +14,7 @@ param   boolean     true, if a control is disabled, otherwise false
 form.getItem("select").isDisabled(); 
 // -> true/false
 
-@template: api_method
+
 @descr:
 
 

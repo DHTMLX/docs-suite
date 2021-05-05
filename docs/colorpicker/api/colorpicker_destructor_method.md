@@ -11,7 +11,7 @@ title: destructor
 colorpicker.destructor();
 
 
-@template: api_method
+
 @descr:
 
 @changelog:

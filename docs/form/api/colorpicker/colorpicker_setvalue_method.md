@@ -15,7 +15,7 @@ title: setValue
 form.getItem("colorpicker").setValue("#02F7C6");
 
 
-@template: api_method
+
 @descr:
 
 

@@ -13,5 +13,5 @@ title: getItem
 @example:
 var add_btn = toolbar.data.getItem("add_btn");
 
-@template: api_method
+
 @descr:

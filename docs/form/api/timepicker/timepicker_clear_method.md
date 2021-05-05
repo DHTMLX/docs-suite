@@ -10,5 +10,5 @@ title: clear
 @example:
 form.getItem("timepicker").clear();
 
-@template: api_method
+
 @descr:

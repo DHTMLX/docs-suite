@@ -13,7 +13,7 @@ title: send
 @example:
 form.getItem("simplevault").send();
 
-@template: api_method
+
 @descr:
 The request URL is specified by the [target](form/simplevault.md#addingsimplevault) property.
 

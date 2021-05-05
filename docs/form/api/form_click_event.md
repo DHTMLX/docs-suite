@@ -18,7 +18,7 @@ form.events.on("Click", function(name, events) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

@@ -13,7 +13,7 @@ dataview.events.on("CanDrop", function(data, events) {
 });
 
 
-@template: api_event
+
 @descr:
 The data object contains the following parameters:
 

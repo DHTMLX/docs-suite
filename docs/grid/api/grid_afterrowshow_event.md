@@ -16,7 +16,7 @@ grid.events.on("AfterRowShow", function(row){
 });
 
 
-@template: api_event
+
 @descr:
 
 

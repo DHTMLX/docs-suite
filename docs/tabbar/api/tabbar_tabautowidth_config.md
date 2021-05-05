@@ -20,7 +20,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 {{note The property can be applicable when [mode](tabbar/api/tabbar_mode_config.md) is set to "top" or "bottom".}}
 

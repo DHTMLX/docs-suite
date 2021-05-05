@@ -20,7 +20,7 @@ var target = new dhx.Grid("grid-target", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Grid. Setup Drag Copy](https://snippet.dhtmlx.com/23slivyz)

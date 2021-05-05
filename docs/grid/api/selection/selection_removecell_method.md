@@ -22,7 +22,7 @@ grid.selection.removeCell(rowId);
 grid.selection.removeCell(rowId, colId);
 
 
-@template: api_method
+
 @descr:
 
 

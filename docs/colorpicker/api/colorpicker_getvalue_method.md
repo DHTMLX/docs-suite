@@ -17,7 +17,7 @@ var color = colorpicker.getValue();
 // -> "#BDF0E9"
 
 
-@template: api_method
+
 @descr:
 
 @related: colorpicker/manipulating_colorpicker.md#settinggettingselectedcolor

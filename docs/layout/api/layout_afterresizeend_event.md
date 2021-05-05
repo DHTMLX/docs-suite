@@ -18,7 +18,7 @@ layout.events.on("AfterResizeEnd", function(id){
 
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)

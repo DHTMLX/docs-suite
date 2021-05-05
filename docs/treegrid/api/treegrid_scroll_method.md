@@ -14,7 +14,7 @@ title: scroll
 @example:
 grid.scroll(75,230);
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [TreeGrid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/kxytdnvi)

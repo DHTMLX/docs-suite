@@ -51,7 +51,7 @@ form.getProperties();
 form.getProperties("password");
 // -> {inputType: "password", label: "Password", placeholder: "********", …}
 
-@template: api_method
+
 @descr:
 
 {{note The returned object can contain only the properties that are listed below for each control.}}

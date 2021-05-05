@@ -43,7 +43,7 @@ form.getItem("checkbox").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 
 

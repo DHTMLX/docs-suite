@@ -10,5 +10,5 @@ title: restoreOrder
 @example:
 toolbar.restoreOrder();
 
-@template: api_method
+
 @descr:

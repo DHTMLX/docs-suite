@@ -28,7 +28,7 @@ var column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 
 
-@template: api_method
+
 @descr:
 
 

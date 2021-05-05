@@ -16,7 +16,7 @@ var row = treegrid.data.getItem(treegrid.data.getId(0));
 var column = treegrid.getColumn("population");
 treegrid.selection.setCell(row, column);
 
-@template: api_method
+
 @descr:
 
 @related: treegrid/usage_selection.md#settingselectiontoacell

@@ -13,7 +13,7 @@ title: isVisible
 @example:
 window.isVisible(); // -> true/false
 
-@template: api_method
+
 @descr:
 
 

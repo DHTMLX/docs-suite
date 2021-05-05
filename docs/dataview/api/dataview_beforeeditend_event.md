@@ -21,7 +21,7 @@ dataview.events.on("BeforeEditEnd", function(value,id){
 });
 
 
-@template: api_event
+
 @descr:
 
 

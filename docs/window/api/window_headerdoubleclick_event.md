@@ -16,7 +16,7 @@ dhxWindow.events.on("HeaderDoubleclick", function(events) {
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)

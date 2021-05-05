@@ -33,7 +33,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 	value: {hour: 10, minute: 50, AM: true}
 });
 
-@template:	api_config
+
 @descr: 
 1\. The value of timepicker set as an **array** should have the following elements:
 

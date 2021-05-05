@@ -18,7 +18,7 @@ slider.setValue(2);
 slider.setValue([2,10]);
 
 
-@template: api_method
+
 @descr:
 
 

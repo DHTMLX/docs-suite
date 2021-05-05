@@ -13,7 +13,7 @@ combo.config.disabled = true;
 combo.paint();
 
 
-@template: api_method
+
 @descr:
 
 

@@ -11,7 +11,7 @@ title: enable
 form.getItem("radiogroup").enable();
 
 
-@template: api_method
+
 @descr:
 
 

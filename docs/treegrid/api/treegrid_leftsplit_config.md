@@ -14,7 +14,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 
-@template:	api_config
+
 @descr: 
 
 @related: treegrid/configuration.md#frozencolumns

@@ -13,7 +13,7 @@ title: focus
 form.getItem("checkbox").focus();
 
 
-@template: api_method
+
 @descr:
 
 

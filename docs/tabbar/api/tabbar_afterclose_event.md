@@ -17,7 +17,7 @@ tabbar.events.on("AfterClose", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v6.4

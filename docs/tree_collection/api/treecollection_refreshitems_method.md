@@ -13,5 +13,5 @@ title: refreshItems
 @example:
 myToolbar.data.refreshItems("menu_id");
 
-@template: api_method
+
 @descr:

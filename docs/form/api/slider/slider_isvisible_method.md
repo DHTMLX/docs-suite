@@ -14,7 +14,7 @@ param   boolean     true, if a control is visible, otherwise false
 form.getItem("slider").isVisible(); 
 // -> true/false
 
-@template: api_method
+
 @descr:
 
 

@@ -47,7 +47,7 @@ form.getItem("textarea").getProperties();
 	width: 400
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **Textarea** control can contain the following configuration attributes:
 

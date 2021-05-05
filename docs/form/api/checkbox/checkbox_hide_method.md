@@ -13,7 +13,7 @@ title: hide
 form.getItem("checkbox").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

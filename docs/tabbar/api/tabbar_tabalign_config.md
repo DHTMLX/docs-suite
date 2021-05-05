@@ -19,7 +19,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @changelog: added in v7.0

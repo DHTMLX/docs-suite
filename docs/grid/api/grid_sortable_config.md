@@ -17,7 +17,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)

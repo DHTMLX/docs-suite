@@ -17,7 +17,7 @@ sidebar.events.on("AfterHide", function(event){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)

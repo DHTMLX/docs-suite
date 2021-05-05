@@ -15,7 +15,7 @@ var id = tabbar.getId(0);
 tabbar.removeTab(id);
 
 
-@template: api_method
+
 @descr:
 
 @relatedapi: tabbar/api/tabbar_addtab_method.md

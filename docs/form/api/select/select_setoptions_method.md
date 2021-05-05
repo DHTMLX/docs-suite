@@ -17,7 +17,7 @@ form.getItem("select").setOptions([
 ]);
 
 
-@template: api_method
+
 @descr:
 Each option is an object with a set of *key:value* pairs - attributes of options and
 their values:

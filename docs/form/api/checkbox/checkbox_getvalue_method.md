@@ -18,7 +18,7 @@ var value = form.getItem("checkbox").getValue(); // -> "checkbox_value"
 var state = form.getItem("checkbox").getValue(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 - If the **value** property is not set for a control, the method returns the state of the control:
 

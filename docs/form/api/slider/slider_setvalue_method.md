@@ -16,7 +16,7 @@ form.getItem("slider").setValue([2]);
 form.getItem("slider").setValue([2,10]);
 
 
-@template: api_method
+
 @descr:
 
 

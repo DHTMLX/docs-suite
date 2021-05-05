@@ -15,7 +15,7 @@ title: save
 diagram.data.save("http://userurl/");
 
 
-@template:	api_method
+
 @descr:
 
 The component will make an AJAX call and expect the remote URL to save data changes.

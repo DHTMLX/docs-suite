@@ -57,7 +57,7 @@ var config = {
 chart.setConfig(config);
 
 
-@template: api_method
+
 @descr:
 See the list of chart configuration properties in the [](../../chart/configuration_properties.md) article.
 

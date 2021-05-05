@@ -18,7 +18,7 @@ sidebar.events.on("Click", function(id,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)

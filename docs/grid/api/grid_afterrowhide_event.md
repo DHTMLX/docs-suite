@@ -16,7 +16,7 @@ grid.events.on("AfterRowHide", function(row){
 });
 
 
-@template: api_event
+
 @descr:
 
 

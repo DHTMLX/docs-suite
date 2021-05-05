@@ -18,5 +18,5 @@ data.events.on("Change", function(id,status,updatedItem){
 	console.log("An item is updated");
 });
 
-@template:	api_event
+
 @descr:

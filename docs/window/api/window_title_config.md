@@ -16,7 +16,7 @@ dhxWindow.show();
 
 @related: window/how_to_start.md
 window/configuration.md#title
-@template:	api_config
+
 @descr: 
 
 

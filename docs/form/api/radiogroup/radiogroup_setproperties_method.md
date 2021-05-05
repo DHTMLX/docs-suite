@@ -47,7 +47,7 @@ form.getItem("radiogroup").setProperties("first", {
 	padding: 20
 });
 
-@template: api_method
+
 @descr:
 The method invokes [](the form/api/radiogroup/radiogroup_afterchangeproperties_event.md) and [](form/api/radiogroup/radiogroup_beforechangeproperties_event.md) events.
 

@@ -26,7 +26,7 @@ var calendar = new dhx.Calendar("calendar", {
 	}
 });
 
-@template:	api_config
+
 @descr: 
 The function passed to the method receives one parameter:
 

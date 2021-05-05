@@ -11,7 +11,7 @@ title: show
 form.getItem("slider").show();
 
 
-@template: api_method
+
 @descr:
 
 

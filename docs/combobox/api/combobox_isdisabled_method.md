@@ -19,7 +19,7 @@ title: isDisabled
 combobox.isDisabled(); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 @related: combobox/work_with_combo.md#checkingifacomboboxisdisabled

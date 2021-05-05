@@ -23,10 +23,10 @@ dhx.ajax.put(url, {id: "1", updated: true}).then(function (data) {
 	console.log(err);
 });
 
-**Related sample**: [Data. Ajax PUT](https://snippet.dhtmlx.com/i4v52yj8)
-@template:	api_method
-
 @descr:
+
+**Related sample**: [Data. Ajax PUT](https://snippet.dhtmlx.com/i4v52yj8)
+
 The **config** object can contain following options:
 
 - **responseType** - the type of data that you are expecting back from the server. The available types are:

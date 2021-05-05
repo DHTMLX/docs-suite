@@ -15,7 +15,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)

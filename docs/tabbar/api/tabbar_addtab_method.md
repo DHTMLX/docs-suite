@@ -15,7 +15,7 @@ title: addTab
 tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 
-@template: api_method
+
 @descr:
 The **view** object may include the following properties:
 

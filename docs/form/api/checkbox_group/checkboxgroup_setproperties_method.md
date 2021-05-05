@@ -45,7 +45,7 @@ form.getItem("checkboxGroup").setProperties("first", {
 	padding: 20
 });
 
-@template: api_method
+
 @descr:
 
 The method invokes the [](form/api/checkbox_group/checkboxgroup_afterchangeproperties_event.md) and [](form/api/checkbox_group/checkboxgroup_beforechangeproperties_event.md) events.

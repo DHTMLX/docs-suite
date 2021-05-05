@@ -18,7 +18,7 @@ pagination.events.on("Change", function(index, previousIndex) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

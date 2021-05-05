@@ -17,7 +17,7 @@ dataview.events.on("DoubleClick", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 

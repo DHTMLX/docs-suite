@@ -11,7 +11,7 @@ title: clearValidate
 form.getItem("select").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

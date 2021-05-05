@@ -13,7 +13,7 @@ title: enable
 form.getItem("colorpicker").enable();
 
 
-@template: api_method
+
 @descr:
 
 

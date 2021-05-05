@@ -17,7 +17,7 @@ title: remove
 tree.selection.remove("1"); // -> true
 
 
-@template:	api_method
+
 @descr:
 Starting from v7.0, the method unselects all previously selected items when calling without parameters:
 

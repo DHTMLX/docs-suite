@@ -14,6 +14,6 @@ title: update
 @example:
 toolbar.data.update("add_btn",{ value:"Add new" });
 
-@template: api_method
+
 @descr:
 

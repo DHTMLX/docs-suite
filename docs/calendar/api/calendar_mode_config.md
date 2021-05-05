@@ -14,7 +14,7 @@ var calendar = new dhx.Calendar("calendar_container", {
     mode: "month"
 });
  
-@template:	api_config
+
 @descr: 
 
 @related:

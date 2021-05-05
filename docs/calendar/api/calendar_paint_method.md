@@ -11,6 +11,6 @@ title: paint
 calendar.paint();
 
 
-@template: api_method
+
 @descr:
 

@@ -10,5 +10,5 @@ title: removeAll
 @example:
 toolbar.data.removeAll();
 
-@template: api_method
+
 @descr:

@@ -10,5 +10,5 @@ title: hide
 @example:
 form.getItem("timepicker").hide(); 
 
-@template: api_method
+
 @descr:

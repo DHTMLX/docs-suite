@@ -17,5 +17,5 @@ TODO: change api (удалить эту страницу можно)
 @example:
 var nearId = component.data.getNearId(id);
 
-@template: api_method
+
 @descr:

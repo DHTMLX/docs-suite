@@ -11,7 +11,7 @@ title: hide
 dhxWindow.hide();
 
 
-@template: api_method
+
 @descr:
 
 

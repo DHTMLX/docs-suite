@@ -10,7 +10,7 @@ title: destructor
 @example:
 layout.destructor();
 
-@template: api_method
+
 @descr:
 
 

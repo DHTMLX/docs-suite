@@ -13,5 +13,5 @@ title: canCopy
 
 @example:
 
-@template: api_method
+
 @descr:

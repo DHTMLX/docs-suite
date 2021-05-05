@@ -20,7 +20,7 @@ title: load
 diagram.data.load("../common/data.xml", "xml");
 
 
-@template:	api_method
+
 @descr:
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.

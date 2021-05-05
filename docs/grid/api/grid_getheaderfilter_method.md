@@ -30,7 +30,7 @@ var countryFilter = grid.getHeaderFilter("density");
 countryFilter.blur();
 
 
-@template: api_method
+
 @descr:
 
 [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)

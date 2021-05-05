@@ -11,6 +11,6 @@ title: destructor
 combo.destructor();
 
 
-@template: api_method
+
 @descr:
 

@@ -16,7 +16,7 @@ chart.events.on("ToggleSeries", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

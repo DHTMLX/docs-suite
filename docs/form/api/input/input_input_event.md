@@ -17,7 +17,7 @@ form.getItem("input").events.on("Input", function(inputValue) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

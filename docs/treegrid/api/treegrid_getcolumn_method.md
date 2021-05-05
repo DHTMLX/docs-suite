@@ -17,7 +17,7 @@ title: getColumn
 var column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 
-@template: api_method
+
 @descr:
 The returned object contains the following set of properties:
 

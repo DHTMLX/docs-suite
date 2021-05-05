@@ -16,5 +16,5 @@ form.getItem("spacer").events.on("AfterHide", function(value, init) {
     console.log("AfterHide", value, init);
 });
 
-@template: api_event
+
 @descr:

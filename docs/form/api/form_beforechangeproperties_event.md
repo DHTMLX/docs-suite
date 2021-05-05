@@ -21,7 +21,7 @@ form.events.on("BeforeChangeProperties", function(name, properties) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/form_setproperties_method.md

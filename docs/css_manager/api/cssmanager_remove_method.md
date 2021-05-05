@@ -13,6 +13,6 @@ title: remove
 @example:
 dhx.cssManager.remove("myCustomClass");
 
-@template:	api_method
+
 
 @descr:

@@ -14,7 +14,7 @@ menu.config.navigationType = "pointer";
 menu.paint();
 
 
-@template:	api_config
+
 @descr: 
 
 There are two types of navigation:

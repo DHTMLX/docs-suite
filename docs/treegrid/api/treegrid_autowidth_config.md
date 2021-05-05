@@ -16,7 +16,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [TreeGrid. Auto Width](https://snippet.dhtmlx.com/irybslog)

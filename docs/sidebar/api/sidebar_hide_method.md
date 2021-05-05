@@ -16,7 +16,7 @@ sidebar.hide("search");
 sidebar.hide(["search","currentButton","edit"]);
 
 
-@template: api_method
+
 @descr:
 Starting from v7.0, it is possible to hide all items at once by using the method without the parameter:
 

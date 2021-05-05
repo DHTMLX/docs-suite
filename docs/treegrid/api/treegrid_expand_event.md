@@ -15,6 +15,6 @@ grid.events.on("Expand", function(rowId){
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 

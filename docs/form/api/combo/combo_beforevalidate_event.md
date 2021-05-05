@@ -20,7 +20,7 @@ form.getItem("combo").events.on("BeforeValidate", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/combo/combo_validate_method.md

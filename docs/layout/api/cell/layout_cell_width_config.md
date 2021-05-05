@@ -15,7 +15,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 Starting from v7.0, the width of a cell can be automatically adjusted to the width of its content. For that, set the **width** configuration option to *"content"*:
 

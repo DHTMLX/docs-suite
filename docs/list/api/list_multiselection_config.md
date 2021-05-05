@@ -11,7 +11,7 @@ title: multiselection
 var list = new dhx.List("list", {multiselection:true});
 
 
-@template:	api_config
+
 @descr: 
 Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
 

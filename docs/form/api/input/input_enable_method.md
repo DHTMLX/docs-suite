@@ -15,7 +15,7 @@ title: enable
 form.getItem("input").enable();
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Form. Disable Of Control](https://snippet.dhtmlx.com/n0ndn215)

@@ -19,7 +19,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 1\. The **views** array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
 

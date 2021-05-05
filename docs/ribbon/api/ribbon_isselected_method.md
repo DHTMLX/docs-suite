@@ -18,7 +18,7 @@ title: isSelected
 ribbon.isSelected("print"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 @related: ribbon/operating_ribbon.md#checkingifaribbonitemisselected

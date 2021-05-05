@@ -10,5 +10,5 @@ title: hide
 @example:
 form.getItem("textarea").hide(); 
 
-@template: api_method
+
 @descr:

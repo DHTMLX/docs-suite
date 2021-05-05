@@ -18,7 +18,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     disabled: ["London", "Rome"]
 });
 
-@template:	api_config
+
 
 @related: 
 tabbar/init.md#definetabbarstructure

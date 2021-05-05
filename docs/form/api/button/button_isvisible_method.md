@@ -15,7 +15,7 @@ form.getItem("button").isVisible();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

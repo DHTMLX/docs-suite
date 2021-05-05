@@ -16,7 +16,7 @@ var value = form.getItem("slider").getValue();
 
 
 
-@template: api_method
+
 @descr:
 
 

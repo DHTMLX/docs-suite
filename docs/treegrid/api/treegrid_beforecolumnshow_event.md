@@ -19,7 +19,7 @@ treegrid.events.on("BeforeColumnShow", function(column){
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

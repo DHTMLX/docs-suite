@@ -17,7 +17,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)

@@ -11,7 +11,7 @@ title: gap
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5, gap: 20});
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**:

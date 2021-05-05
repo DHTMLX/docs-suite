@@ -17,7 +17,7 @@ calendar.events.on("YearSelected", function(year) {
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

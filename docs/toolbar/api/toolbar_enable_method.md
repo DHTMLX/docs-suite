@@ -16,7 +16,7 @@ toolbar.enable("save_btn");
 toolbar.enable(["cancel_btn","del_btn"]);
 
 
-@template: api_method
+
 @descr:
 Starting from v7.0, it is possible to enable all items at once by using the method without the parameter:
 

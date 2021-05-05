@@ -24,7 +24,7 @@ form.setProperties("input_name", {
 	readOnly: true
 });
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/form_afterchangeproperties_event.md) and [](form/api/form_beforechangeproperties_event.md) events.
 

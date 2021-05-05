@@ -17,7 +17,7 @@ var datepicker = form.getItem("datepicker").getWidget();
 // -> dhtmlxCalendar
 
 
-@template: api_method
+
 @descr:
 It is possible to use methods of dhtmlxCalendar via the **getWidget()** method of a DatePicker control.
 

@@ -14,7 +14,7 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-@template:	api_config
+
 @descr: 
 
 

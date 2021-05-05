@@ -11,7 +11,7 @@ title: clearValidate
 form.getItem("radiogroup").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

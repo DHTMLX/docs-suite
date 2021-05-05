@@ -10,5 +10,5 @@ title: clear
 @example:
 form.getItem("text").clear();
 
-@template: api_method
+
 @descr:

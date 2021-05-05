@@ -16,7 +16,7 @@ calendar.events.on("MonthSelected", function(month) {
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

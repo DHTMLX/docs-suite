@@ -27,7 +27,7 @@ form.getItem("timepicker").setValue(1559288966422);
 // set the value as an object
 form.getItem("timepicker").setValue({hour: 10, minute: 50, AM: true});
 
-@template: api_method
+
 @descr:
 1\. The value of a timepicker control set as an array should have the following elements:
 

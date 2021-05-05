@@ -10,7 +10,7 @@ title: destructor
 @example:
 calendar.destructor();
 
-@template: api_method
+
 @descr:
 
 **Related sample**:

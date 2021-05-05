@@ -13,7 +13,7 @@ combo.events.on("Open", function(){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

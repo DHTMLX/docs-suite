@@ -15,7 +15,7 @@ var slider = form.getItem("slider").getWidget();
 // -> dhtmlxSlider
 
 
-@template: api_method
+
 @descr:
 It is possible to use methods of dhtmlxSlider via the **getWidget()** method of a Slider control.
 

@@ -14,7 +14,7 @@ title: editItem
 dataview.editItem("1");
 
 
-@template: api_method
+
 @descr:
 
 @related: dataview/manipulating_data.md#editing-items

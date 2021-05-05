@@ -11,7 +11,7 @@ title: hide
 form.getItem("slider").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

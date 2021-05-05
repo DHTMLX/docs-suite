@@ -17,7 +17,7 @@ var selectedCell = treegrid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
 
-@template: api_method
+
 @descr:
 
 

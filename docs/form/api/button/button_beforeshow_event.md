@@ -22,7 +22,7 @@ form.getItem("button").events.on("BeforeShow", function(text) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

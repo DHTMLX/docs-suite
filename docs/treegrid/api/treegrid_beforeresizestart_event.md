@@ -20,7 +20,7 @@ grid.events.on("BeforeResizeStart", function(col,e){
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 @changelog:

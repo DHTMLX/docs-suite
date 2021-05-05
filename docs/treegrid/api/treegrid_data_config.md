@@ -33,7 +33,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 1\. Starting with v7.1, you can specify the height of the cell via setting the number value to the **height** option when defining the data set: 
 

@@ -15,7 +15,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 By default, it is either the same as calendar/api/calendar_value_config.md, or shows the current date, if **value** is not specified.
 

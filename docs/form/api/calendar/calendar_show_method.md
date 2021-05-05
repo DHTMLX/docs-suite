@@ -11,7 +11,7 @@ title: show
 form.getItem("datepicker").show();
 
 
-@template: api_method
+
 @descr:
 
 

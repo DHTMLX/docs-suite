@@ -14,7 +14,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 	controls: true
 });
 
-@template:	api_config
+
 @descr: 
 
 

@@ -15,7 +15,7 @@ title: update
 @example:
 component.data.update(123, { text:"New text" });
 
-@template:	api_method
+
 @descr:
 
 @related:window/customization.md#controlsandoperations

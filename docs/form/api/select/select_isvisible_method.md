@@ -15,7 +15,7 @@ param   boolean     true, if a control is visible, otherwise false
 form.getItem("select").isVisible(); 
 // -> true/false
 
-@template: api_method
+
 @descr:
 
 

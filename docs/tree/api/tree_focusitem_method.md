@@ -14,7 +14,7 @@ title: focusItem
 tree.focusItem("1");
 
 
-@template: api_method
+
 @descr:
 
 

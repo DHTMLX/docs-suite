@@ -17,7 +17,7 @@ form.getItem("select").setProperties({
     width: "300px"
 });
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/select/select_afterchangeproperties_event.md) and [](form/api/select/select_beforechangeproperties_event.md) events.
 

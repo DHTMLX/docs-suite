@@ -10,7 +10,7 @@ title: expandAll
 @example:
 treegrid.expandAll();
 
-@template: api_method
+
 @descr:
 
 @related: treegrid/usage.md#expandingcollapsingnodes

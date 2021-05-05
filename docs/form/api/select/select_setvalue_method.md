@@ -16,7 +16,7 @@ form.getItem("select").setValue("2");
 
 
 
-@template: api_method
+
 @descr:
 
 

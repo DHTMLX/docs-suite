@@ -15,7 +15,7 @@ title: editItem
 tree.editItem(id);
 
 
-@template: api_method
+
 @descr:
 The **config** parameter includes the following properties:
 

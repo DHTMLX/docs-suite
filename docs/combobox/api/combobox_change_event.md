@@ -16,7 +16,7 @@ combo.events.on("Change", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 

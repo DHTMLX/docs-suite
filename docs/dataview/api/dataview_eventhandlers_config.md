@@ -32,7 +32,7 @@ const dataview = new dhx.DataView("dataview", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:

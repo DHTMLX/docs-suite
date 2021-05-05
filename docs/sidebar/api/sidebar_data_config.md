@@ -24,7 +24,7 @@ var sidebar = dhx.Sidebar("sidebar_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related samples**:

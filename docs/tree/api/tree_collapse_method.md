@@ -14,7 +14,7 @@ title: collapse
 tree.collapse("history");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)

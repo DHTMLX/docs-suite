@@ -10,5 +10,5 @@ title: clearValidate
 @example:
 form.getItem("timepicker").clearValidate();
 
-@template: api_method
+
 @descr:

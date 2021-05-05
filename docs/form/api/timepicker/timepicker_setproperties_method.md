@@ -17,7 +17,7 @@ form.getItem("timepicker").setProperties({
     timeFormat: 24, 
 });
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/timepicker/timepicker_afterchangeproperties_event.md) and [](form/api/timepicker/timepicker_beforechangeproperties_event.md) events.
 

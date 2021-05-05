@@ -23,7 +23,7 @@ grid.data.sort({
 // cancels applied sorting rules
 grid.data.sort();
 
-@template: api_method
+
 @descr:
 The **rule** object has the following attributes:
 

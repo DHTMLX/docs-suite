@@ -18,7 +18,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 The time format can be presented either in the 12-hour or in the 24-hour format.
 

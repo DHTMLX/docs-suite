@@ -13,7 +13,7 @@ dataview.events.on("ItemRightClick", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

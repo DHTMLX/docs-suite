@@ -17,7 +17,7 @@ grid.events.on("Scroll", function({top,left}){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

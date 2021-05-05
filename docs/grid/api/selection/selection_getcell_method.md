@@ -17,7 +17,7 @@ var selectedCell = grid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
 
-@template: api_method
+
 @descr:
 
 @related: grid/usage_selection.md#getting-object-of-selected-cells

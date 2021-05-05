@@ -17,7 +17,7 @@ title: setPage
 pagination.setPage(0);
 
 
-@template: api_method
+
 
 @descr:
 

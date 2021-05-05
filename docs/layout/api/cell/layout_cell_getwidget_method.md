@@ -19,7 +19,7 @@ title: getWidget
 var widget = layout.getCell("id").getWidget();
 
 
-@template: api_method
+
 @descr:
 
 

@@ -17,7 +17,7 @@ form.getItem("timepicker").events.on("AfterValidate", function(value, isValid) {
 });
 
 
-@template: api_event
+
 @descr:
 The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):
 

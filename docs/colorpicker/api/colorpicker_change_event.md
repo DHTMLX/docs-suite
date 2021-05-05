@@ -12,7 +12,7 @@ colorpicker.events.on("Change",function(color){
 	// your logic here
 });
 
-@template: api_event
+
 @descr:
 
 

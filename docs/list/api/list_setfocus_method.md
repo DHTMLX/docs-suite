@@ -14,7 +14,7 @@ title: setFocus
 list.setFocus("item_id");
 
 
-@template: api_method
+
 @descr:
 
 @related: list/work_with_list.md#settingfocusonitem

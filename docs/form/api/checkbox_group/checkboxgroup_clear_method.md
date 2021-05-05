@@ -13,7 +13,7 @@ title: clear
 form.getItem("CheckboxGroup").clear();
 
 
-@template: api_method
+
 @descr:
 
 

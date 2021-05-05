@@ -19,7 +19,7 @@ form.getItem("simplevault").events.on("BeforeShow", function(value) {
     return true;
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

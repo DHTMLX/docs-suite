@@ -21,7 +21,7 @@ grid.events.on("BeforeColumnShow", function(column){
 });
 
 
-@template: api_event
+
 @descr:
 
 

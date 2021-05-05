@@ -16,7 +16,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 	tooltip: false /*!*/
 });
 
-@template:	api_config
+
 @descr: 
 
 [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)

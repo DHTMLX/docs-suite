@@ -22,7 +22,7 @@ form.isVisible(); // -> true/false
 form.isVisible("combo"); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

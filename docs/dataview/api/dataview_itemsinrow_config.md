@@ -11,7 +11,7 @@ title: itemsInRow
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**:

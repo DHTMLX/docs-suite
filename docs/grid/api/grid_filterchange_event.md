@@ -17,7 +17,7 @@ grid.events.on("FilterChange", function(value,colId,filter){
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v6.3

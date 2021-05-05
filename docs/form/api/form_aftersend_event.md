@@ -14,7 +14,7 @@ form.events.on("AfterSend", function(){
    // your logic here
 });
 
-@template:	api_event
+
 @descr:
 
 @relatedapi: 

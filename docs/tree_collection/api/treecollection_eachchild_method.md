@@ -18,4 +18,4 @@ toolbar.data.eachChild("menu_1", item => {
 });
 toolbar.paint();
 
-@template: api_method
+

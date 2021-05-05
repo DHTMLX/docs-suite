@@ -13,5 +13,5 @@ title: loadItems
 @example:
 myToolbar.data.loadItems("menu_id");
 
-@template: api_method
+
 @descr:

@@ -11,7 +11,7 @@ title: show
 form.getItem("colorpicker").show();
 
 
-@template: api_method
+
 @descr:
 
 

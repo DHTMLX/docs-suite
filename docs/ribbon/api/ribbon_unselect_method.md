@@ -18,7 +18,7 @@ ribbon.unselect();
 ribbon.unselect("print");
 
 
-@template: api_method
+
 @descr:
 
 @related: ribbon/operating_ribbon.md#selectingunselectinganitem

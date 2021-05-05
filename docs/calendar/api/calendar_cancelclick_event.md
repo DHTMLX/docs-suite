@@ -13,7 +13,7 @@ calendar.events.on("CancelClick", function() {
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:
