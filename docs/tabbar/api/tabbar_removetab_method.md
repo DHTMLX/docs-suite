@@ -22,6 +22,6 @@ tabbar.removeTab(id);
 
 @changelog: added in v6.4
 
-@related: tabbar/work_with_tabbar.md#addingremovingtabs
+@related: tabbar/work_with_tabbar.md#addingremoving-tabs
 
 **Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)

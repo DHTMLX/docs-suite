@@ -21,11 +21,12 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 
 
-@descr: 
+@descr:
+ 
 {{note The property can be applicable when [mode](tabbar/api/tabbar_mode_config.md) is set to "top" or "bottom".}}
 
 @changelog: added in v7.0
 
 [Tabbar. Tab auto width](https://snippet.dhtmlx.com/mlzko8am)
 
-@related: tabbar/configuring_tabbar.md#autosizefortabs
+@related: tabbar/configuring_tabbar.md#autosize-for-tabs
