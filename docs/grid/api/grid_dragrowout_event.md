@@ -39,7 +39,7 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @relatedapi:
 grid/api/grid_afterrowdrag_event.md

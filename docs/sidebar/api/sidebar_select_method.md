@@ -17,7 +17,7 @@ sidebar.select("categoryPost");
 
 @descr:
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 @changelog: added in v6.5
 

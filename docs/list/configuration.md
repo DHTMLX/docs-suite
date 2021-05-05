@@ -176,7 +176,7 @@ Selection of items
 
 ![](../assets/list/disable_selection.png)
 
-[List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
+**Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 
 The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [](list/api/list_selection_config.md) configuration property to *false*:
@@ -257,7 +257,7 @@ const list = new dhx.List("list", {
 });
 ~~~
 
-[List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
+**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
 
 The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pairs, where: 
 

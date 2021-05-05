@@ -52,7 +52,7 @@ const layout = new dhx.Layout("layout", {
 
 @related: layout/cell_configuration.md#setting-borders-for-cells
 
-[Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
+**Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 @changelog: added in v7.0
 

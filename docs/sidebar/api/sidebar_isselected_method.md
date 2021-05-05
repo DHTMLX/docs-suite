@@ -20,7 +20,7 @@ sidebar.isSelected("categoryPost"); // -> returns true/false
 
 @descr:
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 
 

@@ -27,7 +27,7 @@ pagination.getPageSize();
 
 
 
-[Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
+**Related sample**: [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
 
 

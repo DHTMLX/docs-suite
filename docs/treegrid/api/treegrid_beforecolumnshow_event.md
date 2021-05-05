@@ -24,4 +24,4 @@ treegrid.events.on("BeforeColumnShow", function(column){
 
 @changelog: added in v7.0
 
-[TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**:  Events](https://snippet.dhtmlx.com/sgwnxshe)

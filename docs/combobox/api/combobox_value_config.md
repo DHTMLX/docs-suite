@@ -27,6 +27,6 @@ var combobox = new dhx.Combobox("combobox", {
 - If *multiselection:false* is set or the *multiselection* config is not defined, the property gets either of the two values: *value:"1"* or *value: ["1"]*
 @related: combo/configuration.md#initialvalue
 
-[Combobox. Initial Value](https://snippet.dhtmlx.com/spnausim)
+**Related sample**: [Combobox. Initial Value](https://snippet.dhtmlx.com/spnausim)
 
 @changelog: added in v7.0

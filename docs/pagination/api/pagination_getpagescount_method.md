@@ -23,7 +23,7 @@ const totalPages = pagination.getPagesCount();
 
 @descr:
 
-[Pagination. Get page count](https://snippet.dhtmlx.com/k5j6acc5)
+**Related sample**: [Pagination. Get page count](https://snippet.dhtmlx.com/k5j6acc5)
 
 
 

@@ -83,7 +83,7 @@ var chart = new dhx.Chart("chart_container",{
 });
 ~~~
 
-**Related Sample:** [Chart. Scale Title](https://snippet.dhtmlx.com/5ir00fer)
+**Related sample**: [Chart. Scale Title](https://snippet.dhtmlx.com/5ir00fer)
 
 Scales have both common and specific options. Check the full list of the available options for scales in the [API reference](chart/api/chart_scales_config.md).
 
@@ -120,7 +120,7 @@ var chart = new dhx.Chart("chart_container",{
 });
 ~~~
 
-**Related Sample:** [Chart. Point Types](https://snippet.dhtmlx.com/cbj54wwu)
+**Related sample**: [Chart. Point Types](https://snippet.dhtmlx.com/cbj54wwu)
 
 See the full list of configuration options for chart series in the [API reference](chart/api/chart_series_config.md).
 

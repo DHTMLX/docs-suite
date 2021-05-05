@@ -88,7 +88,7 @@ var countryFilter = treegrid.getHeaderFilter("name");
 countryFilter.blur();
 ~~~
 
-[TreeGrid. Get Header Filter](https://snippet.dhtmlx.com/vg5o912t)
+**Related sample**: [TreeGrid. Get Header Filter](https://snippet.dhtmlx.com/vg5o912t)
 
 The method returns either an HTML object or an object with Combobox configuration.
 
@@ -131,7 +131,7 @@ treegrid.showRow(rowId);
 treegrid.hideRow(rowId);
 ~~~
 
-[TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
 
 Checking visibility of a row
@@ -143,7 +143,7 @@ You can check whether a row is hidden or shown on a page using the [](treegrid/a
 treegrid.isRowHidden("1"); // -> true|false
 ~~~
 
-[TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
 Adding/removing spans
 ---------------------
@@ -261,7 +261,7 @@ To group the content of a treegrid by values of the specified column, pass the i
 treegrid.groupBy("age");
 ~~~
 
-[TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
+**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
 ### Grouping by the result of calculation
 
@@ -283,7 +283,7 @@ treegrid.groupBy(function (item) {
 });
 ~~~
 
-[TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
+**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
 If necessary, you can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 
