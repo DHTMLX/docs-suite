@@ -1,6 +1,6 @@
 ---
-sidebar_label: Hospital Management System demo
-title: Hospital Management System demo
+sidebar_label: Hospital Management System Demo
+title: Hospital Management System Demo
 --- 
 
 ![](../assets/optimus/demo/hospital_demo.png)
@@ -17,7 +17,7 @@ Click the Download Demo button at the right bottom corner.
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the UI Dashboard demo. Save the file and unpack it to your working directory.
+Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the Hospital Management System demo. Save the file and unpack it to your working directory.
 
 ## How to start
 
