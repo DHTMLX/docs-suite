@@ -19,8 +19,6 @@ var form = new dhx.Form("form_container", {
 @descr: 
 
 
-@relatedsample:
-
 
 @related: form/how_to_start.md#initialize-form
 form/configuration.md#making-form-hidden
