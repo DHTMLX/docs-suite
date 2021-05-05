@@ -24,4 +24,4 @@ const pagination = new dhx.Pagination("pagination_container", {
 
 
 
-[Pagination. Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)
+**Related sample**: [Pagination. Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)

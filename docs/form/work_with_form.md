@@ -333,6 +333,6 @@ Starting from v7.0, you can set focus to a Form control via the [setFocus()](for
 form.setFocus("input");
 ~~~
 
-[Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
+**Related sample**: [Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
 
 It is possible to set focus to DatePicker, Checkbox, ColorPicker, Combo, Input, RadioGroup, Select, Textarea, TimePicker controls of Form.

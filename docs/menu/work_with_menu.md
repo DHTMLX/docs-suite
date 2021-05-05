@@ -103,7 +103,7 @@ To select a particular Menu item, make use of the [select()](menu/api/menu_selec
 menu.select("align-left");
 ~~~
 
-[Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 ### Unselecting a menu item
 
@@ -121,7 +121,7 @@ It is also possible to remove selection from all previously selected items of Me
 menu.unselect();
 ~~~
 
-[Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 Checking if a menu item is selected
 -------------------------------------
@@ -142,7 +142,7 @@ To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_i
 menu.isSelected("align-left"); // -> returns true/false
 ~~~
 
-[Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 Getting selected items
 ---------------------------

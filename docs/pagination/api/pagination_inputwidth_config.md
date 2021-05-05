@@ -20,6 +20,6 @@ const pagination = new dhx.Pagination("pagination_container", {
 In case the option isn't set in the Pagination configuration, the input will take the auto-width that fits its maximum content.
 
 
-[Pagination. Input width](https://snippet.dhtmlx.com/1fttbjh9)
+**Related sample**: [Pagination. Input width](https://snippet.dhtmlx.com/1fttbjh9)
 
 @related: pagination/configuration.md#input-width 

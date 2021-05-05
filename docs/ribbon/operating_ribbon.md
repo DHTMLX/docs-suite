@@ -143,7 +143,7 @@ To select a particular Ribbon item, make use of the [select()](ribbon/api/ribbon
 ribbon.select("print");
 ~~~
 
-[Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 ### Unselecting a ribbon item
 
@@ -161,7 +161,7 @@ It is also possible to remove selection from all previously selected items of Ri
 ribbon.unselect();
 ~~~
 
-[Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 Checking if a ribbon item is selected
 -------------------------------------
@@ -182,7 +182,7 @@ To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ri
 ribbon.isSelected("print"); // -> returns true/false
 ~~~
 
-[Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 Getting selected items
 ---------------------------

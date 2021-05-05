@@ -56,7 +56,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 </table>
 
 
-[Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
+**Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
 
 @changelog: added in v7.0
 

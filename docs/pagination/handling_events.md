@@ -15,7 +15,7 @@ pagination.events.on("Change", function(index, previousIndex){
 
 {{note The names of events are case-insensitive.}}
 
-[Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)
+**Related sample**: [Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)
 
 ## Detaching event listeners
 

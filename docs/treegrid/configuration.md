@@ -660,7 +660,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-[TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
+**Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
@@ -940,7 +940,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-[TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
+**Related sample**: [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
 
 There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](treegrid/configuration.md#columns) or [spans](treegrid/configuration.md#spans) accordingly:
 
@@ -957,7 +957,7 @@ var treeGrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-[TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
+**Related sample**: [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
 
 Width/height
 --------------

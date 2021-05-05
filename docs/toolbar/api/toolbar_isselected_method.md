@@ -27,7 +27,7 @@ toolbar/api/toolbar_select_method.md
 toolbar/api/toolbar_unselect_method.md
 toolbar/api/toolbar_getselected_method.md
 
-[Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
+**Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
 
 @changelog:
 added in v7.0

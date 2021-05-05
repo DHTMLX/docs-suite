@@ -20,7 +20,7 @@ var slider = new dhx.Slider("slider", {
 });
 ~~~
 
-[Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
+**Related sample**: [Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
 The same as the default slider, a slider in the range mode works smoothly both in the horizontal and vertical modes, as well as in the inverse mode.
 You can manipulate the scale settings by adjusting the ticks-related options and use labels for its thumbs. 
