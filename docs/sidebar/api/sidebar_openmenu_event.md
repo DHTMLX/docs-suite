@@ -21,4 +21,5 @@ sidebar.events.on("OpenMenu", function(id){
 
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
+
 @related: sidebar/events.md
