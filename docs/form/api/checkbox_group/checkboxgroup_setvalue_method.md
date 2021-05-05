@@ -18,7 +18,7 @@ form.getItem("CheckboxGroup").setValue({
 });
 
 
-@template: api_method
+
 @descr:
 
 

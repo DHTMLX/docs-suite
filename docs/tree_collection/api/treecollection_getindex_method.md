@@ -13,5 +13,5 @@ title: getIndex
 @example:
 toolbar.data.getIndex("add_btn");
 
-@template: api_method
+
 @descr:

@@ -13,7 +13,7 @@ title: expand
 @example:
 treegrid.expand("native");
 
-@template: api_method
+
 @descr:
 
 @related: treegrid/usage.md#expandingcollapsingnodes

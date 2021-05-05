@@ -19,7 +19,7 @@ var span = grid.getSpan("10","a");
 // -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
 
 
-@template: api_method
+
 @descr:
 A returned **span** object contains the following properties:
 

@@ -17,7 +17,7 @@ title: isSelected
 toolbar.isSelected("web"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 @related: toolbar/common_methods.md#checkingifatoolbaritemisselected

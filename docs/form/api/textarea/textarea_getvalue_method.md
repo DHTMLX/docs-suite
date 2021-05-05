@@ -14,5 +14,5 @@ param   string    the current value of the control
 var value = form.getItem("textarea").getValue();
 // -> "Some nice text"
 
-@template: api_method
+
 @descr:

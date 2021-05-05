@@ -28,7 +28,7 @@ var date = calendar.getValue(true);
 var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 
 
-@template: api_method
+
 @descr:
 
 

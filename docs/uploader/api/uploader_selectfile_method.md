@@ -12,5 +12,5 @@ title: selectFile
 @example:
 vault.uploader.selectFile();
 
-@template: api_method
+
 @descr:

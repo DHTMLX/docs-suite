@@ -16,7 +16,7 @@ sidebar.show("search");
 sidebar.show(["search","currentButton","edit"]);
 
 
-@template: api_method
+
 @descr:
 Starting from v7.0, it is possible to show all items on the page at once by using the method without the parameter:
 

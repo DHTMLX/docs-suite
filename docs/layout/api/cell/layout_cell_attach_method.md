@@ -27,7 +27,7 @@ var sidebar = new dhx.Sidebar(null, {
 layout.getCell("sidebar").attach(sidebar);
 
 
-@template: api_method
+
 @descr:
 
 @related: layout/work_with_layout.md#attachingacomponenttoacell

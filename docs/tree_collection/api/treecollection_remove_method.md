@@ -13,5 +13,5 @@ title: remove
 @example:
 toolbar.data.remove("id");
 
-@template: api_method
+
 @descr:

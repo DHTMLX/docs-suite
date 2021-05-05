@@ -19,5 +19,5 @@ myToolbar.data.add({
     value:"New"
 },1);
 
-@template: api_method
+
 @descr:

@@ -26,7 +26,7 @@ treegrid.selection.removeCell(rowId);
 treegrid.selection.removeCell(rowId, colId);
 
 
-@template: api_method
+
 @descr:
 
 

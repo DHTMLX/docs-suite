@@ -15,5 +15,5 @@ title: linkDropArea
 
 vault.uploader.linkDropArea('drophere');
 
-@template: api_method
+
 @descr:

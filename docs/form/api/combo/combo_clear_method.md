@@ -11,7 +11,7 @@ title: clear
 form.getItem("combo").clear();
 
 
-@template: api_method
+
 @descr:
 
 

@@ -14,7 +14,7 @@ title: collapse
 treegrid.collapse("native");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)

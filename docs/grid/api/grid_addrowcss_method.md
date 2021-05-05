@@ -21,7 +21,7 @@ description: description
 
 grid.addRowCss("2", "myCustomClass");
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)

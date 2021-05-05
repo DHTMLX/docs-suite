@@ -14,7 +14,7 @@ form.hide();
 
 
 
-@template: api_method
+
 @descr:
 
 

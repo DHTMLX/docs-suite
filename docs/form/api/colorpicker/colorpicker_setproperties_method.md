@@ -19,7 +19,7 @@ form.getItem("colorpicker").setProperties({
 });
  
 
-@template: api_method
+
 @descr:
 
 The method invokes the [](form/api/colorpicker/colorpicker_afterchangeproperties_event.md) and [](form/api/colorpicker/colorpicker_beforechangeproperties_event.md) events.

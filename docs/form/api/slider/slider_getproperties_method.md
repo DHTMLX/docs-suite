@@ -49,7 +49,7 @@ form.getItem("slider").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **Slider** control can contain the following configuration attributes:
 

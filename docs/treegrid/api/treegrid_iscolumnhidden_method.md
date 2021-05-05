@@ -18,7 +18,7 @@ title: isColumnHidden
 grid.isColumnHidden("country"); // -> true|false
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**:

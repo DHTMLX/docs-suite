@@ -17,7 +17,7 @@ dhxWindow.setSize(250, 250);
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 

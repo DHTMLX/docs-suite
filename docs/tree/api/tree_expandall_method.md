@@ -11,7 +11,7 @@ title: expandAll
 tree.expandAll();
 
 
-@template: api_method
+
 @descr:
 
 @related: tree/work_with_tree.md#expandingcollapsingitems

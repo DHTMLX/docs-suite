@@ -13,5 +13,5 @@ title: getItems
 @example:
 var items = toolbar.data.getItems("menu1");
 
-@template: api_method
+
 @descr:

@@ -14,7 +14,7 @@ title: select
 @example:
 sidebar.select("categoryPost");
 
-@template: api_method
+
 @descr:
 
 [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)

@@ -15,7 +15,7 @@ title: getFocusItem
 var focus = dataview.getFocusItem();
 
 
-@template: api_method
+
 @descr:
 
 

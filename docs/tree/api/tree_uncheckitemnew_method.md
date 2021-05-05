@@ -18,7 +18,7 @@ tree.checkItem("history");
 tree.uncheckItem("history");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tree. Check/Uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)

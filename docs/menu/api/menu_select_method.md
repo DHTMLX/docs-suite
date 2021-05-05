@@ -15,7 +15,7 @@ title: select
 menu.select("align-left");
 
 
-@template: api_method
+
 @descr:
 
 @related: menu/work_with_menu.md#selectingunselectinganitem

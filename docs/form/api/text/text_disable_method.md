@@ -10,5 +10,5 @@ title: disable
 @example:
 form.getItem("text").disable();
 
-@template: api_method
+
 @descr:

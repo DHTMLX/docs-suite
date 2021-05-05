@@ -16,7 +16,7 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 
 
-@template: api_method
+
 @descr:
 
 

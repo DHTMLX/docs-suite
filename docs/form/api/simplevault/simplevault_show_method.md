@@ -10,7 +10,7 @@ title: show
 @example:
 form.getItem("simplevault").show();
 
-@template: api_method
+
 @descr:
 
 

@@ -14,7 +14,7 @@ title: toggle
 tree.toggle("history");
 
 
-@template: api_method
+
 @descr:
 
 

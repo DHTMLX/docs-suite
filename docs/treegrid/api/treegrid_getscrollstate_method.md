@@ -13,7 +13,7 @@ title: getScrollState
 @example:
 var state = grid.getScrollState(); // -> {x:0,y:0}
 
-@template: api_method
+
 @descr:
 
 @related: treegrid/usage.md#controllingscrollbehavior

@@ -14,7 +14,7 @@ param   boolean     true, if a control is valid, otherwise - false
 form.getItem("CheckboxGroup").validate(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

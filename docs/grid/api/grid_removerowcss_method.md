@@ -15,7 +15,7 @@ title: removeRowCss
 grid.removeRowCss("2", "myCustomClass");
 
 
-@template: api_method
+
 @descr:
 
 

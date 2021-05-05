@@ -24,7 +24,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 var active = tabbar.getActive(); // -> "2"
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)

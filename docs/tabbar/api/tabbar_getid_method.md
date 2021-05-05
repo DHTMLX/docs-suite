@@ -14,7 +14,7 @@ title: getId
 var id = tabbar.getId(0);
 
 
-@template: api_method
+
 @descr:
 
 

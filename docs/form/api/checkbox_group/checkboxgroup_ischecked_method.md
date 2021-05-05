@@ -18,7 +18,7 @@ form.getItem("CheckboxGroup").isChecked("checkbox_id_3")
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 If the id of a checkbox is not specified, the method returns an object with a set of *key:value* pairs where *key* is the id of a checkbox and *value* is the state of a checkbox:
 

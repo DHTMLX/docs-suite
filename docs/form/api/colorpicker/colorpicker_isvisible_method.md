@@ -16,7 +16,7 @@ form.getItem("colorpicker").isVisible();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

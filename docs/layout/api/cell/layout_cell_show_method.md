@@ -11,7 +11,7 @@ title: show
 layout.getCell("1").show();
 
 
-@template: api_method
+
 @descr:
 
 

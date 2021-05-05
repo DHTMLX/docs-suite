@@ -11,7 +11,7 @@ title: expand
 sidebar.expand();
 
 
-@template: api_method
+
 @descr:
 
 

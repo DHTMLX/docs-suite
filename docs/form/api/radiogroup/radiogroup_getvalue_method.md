@@ -16,7 +16,7 @@ var value = form.getItem("radiogroup").getValue();
 
 
 
-@template: api_method
+
 @descr:
 
 

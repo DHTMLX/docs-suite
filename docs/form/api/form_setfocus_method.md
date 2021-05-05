@@ -18,7 +18,7 @@ title: setFocus
 form.setFocus("checkbox");
 
 
-@template: api_method
+
 @descr:
 {{note The method is applicable to DatePicker, Checkbox, ColorPicker, Combo, Input, RadioGroup, Select, Textarea, TimePicker controls of Form.}}
 

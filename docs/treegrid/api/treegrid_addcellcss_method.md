@@ -22,7 +22,7 @@ title: addCellCss
 grid.addCellCss("1", "b", "myCustomClass");
 
 
-@template: api_method
+
 @descr:
 
 

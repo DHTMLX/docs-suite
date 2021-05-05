@@ -15,7 +15,7 @@ title: isCollapsed
 sidebar.isCollapsed(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 @related: sidebar/work_with_sidebar.md#checkingifsidebariscollapsed

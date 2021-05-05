@@ -14,7 +14,7 @@ title: editItem
 list.editItem("1");
 
 
-@template: api_method
+
 @descr:
 
 

@@ -13,5 +13,5 @@ title: getRoot
 @example:
 toolbar.data.getRoot();
 
-@template: api_method
+
 @descr:

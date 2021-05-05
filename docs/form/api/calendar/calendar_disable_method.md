@@ -13,7 +13,7 @@ title: disable
 form.getItem("datepicker").disable();
 
 
-@template: api_method
+
 @descr:
 
 

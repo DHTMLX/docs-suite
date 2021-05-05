@@ -12,7 +12,7 @@ title: paint
 @example:
 popup.paint();
 
-@template: api_method
+
 @descr:
 
 

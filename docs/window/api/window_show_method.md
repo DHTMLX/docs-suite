@@ -18,7 +18,7 @@ dhxWindow.show();
 dhxWindow.show("550", "230");
 
 
-@template: api_method
+
 @descr:
 
 @related:

@@ -17,7 +17,7 @@ title: removeCellCss
 grid.removeCellCss("1", "b", "myCustomClass");
 
 
-@template: api_method
+
 @descr:
 
 

@@ -23,7 +23,7 @@ title: send
 var send = form.send("myserver.com", "POST");
 
 
-@template: api_method
+
 @descr:
 
 The **method** parameter can take "PUT", "POST", "DELETE", "GET" values, depending on the used type of the request. 

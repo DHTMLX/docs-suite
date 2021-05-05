@@ -16,7 +16,7 @@ param   object  the config object of a cell
 @example:
 tabbar.getCell("rome");
 
-@template: api_method
+
 @descr:
 A returned object looks like this:
 

@@ -16,7 +16,7 @@ form.getItem("colorpicker").isDisabled();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

@@ -16,7 +16,7 @@ var value = form.getItem("select").getValue();
 
 
 
-@template: api_method
+
 @descr:
 
 

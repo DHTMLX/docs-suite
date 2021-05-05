@@ -24,7 +24,7 @@ timepicker.setValue(1559288966422);
 timepicker.setValue({hour: 10, minute: 50, AM: true});
 
 
-@template: api_method
+
 @descr:
 The value of timepicker set as an array should have the following elements:
 

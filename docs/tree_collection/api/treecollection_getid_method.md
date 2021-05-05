@@ -17,5 +17,5 @@ title: getId
 @example:
 const id = tree.data.getId(2, "1"); -> returns "3"
 
-@template: api_method
+
 @descr:

@@ -14,7 +14,7 @@ title: getFocus
 list.getFocus(); // -> "item_id"
 
 
-@template: api_method
+
 @descr:
 
 

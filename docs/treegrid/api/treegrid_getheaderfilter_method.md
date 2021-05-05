@@ -29,7 +29,7 @@ var countryFilter = treegrid.getHeaderFilter("name");
 
 countryFilter.blur();
 
-@template: api_method
+
 @descr:
 
 [TreeGrid. Get Header Filter](https://snippet.dhtmlx.com/vg5o912t)

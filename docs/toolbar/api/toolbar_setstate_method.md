@@ -18,7 +18,7 @@ toolbar.setState({
 });
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Toolbar. Set State](https://snippet.dhtmlx.com/h34uh1dr)

@@ -13,7 +13,7 @@ title: disable
 form.getItem("checkbox").disable();
 
 
-@template: api_method
+
 @descr:
 
 

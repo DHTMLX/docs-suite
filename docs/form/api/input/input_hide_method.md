@@ -11,7 +11,7 @@ title: hide
 form.getItem("input").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

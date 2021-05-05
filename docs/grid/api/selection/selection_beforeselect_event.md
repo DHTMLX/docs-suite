@@ -24,7 +24,7 @@ grid.selection.events.on("BeforeSelect", function(row, col){
 });
 
 
-@template: api_method
+
 @descr:
 It is also possible to use the simplified version of the event:
 

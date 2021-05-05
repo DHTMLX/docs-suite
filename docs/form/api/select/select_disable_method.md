@@ -11,7 +11,7 @@ title: disable
 form.getItem("select").disable();
 
 
-@template: api_method
+
 @descr:
 
 

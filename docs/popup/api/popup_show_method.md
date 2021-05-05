@@ -20,7 +20,7 @@ var popup = new dhx.Popup();
 popup.show("popup_container");
 
 
-@template: api_method
+
 @descr:
 The **config** object can contain the properties below:
 

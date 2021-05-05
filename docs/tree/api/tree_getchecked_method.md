@@ -14,7 +14,7 @@ title: getChecked
 tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tree. Get Checked Items](https://snippet.dhtmlx.com/cz7xypgz)

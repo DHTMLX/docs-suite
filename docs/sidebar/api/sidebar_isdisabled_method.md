@@ -17,7 +17,7 @@ param 	boolean		true, if an item of Sidebar is disabled, otherwise false
 @example:
 sidebar.isDisable("id"); // -> returns true/false
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)

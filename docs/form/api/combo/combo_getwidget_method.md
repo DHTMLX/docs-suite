@@ -15,7 +15,7 @@ var combo = form.getItem("combo").getWidget();
 // -> dhtmlxComboBox
 
 
-@template: api_method
+
 @descr:
 It is possible to use methods of dhtmlxComboBox via the **getWidget()** method of a Combo control.
 

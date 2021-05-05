@@ -10,7 +10,7 @@ title: enable
 @example:
 slider.enable();
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)

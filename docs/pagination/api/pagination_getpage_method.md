@@ -20,7 +20,7 @@ const pageIndex = pagination.getPage();
 // -> 3
 
 
-@template: api_method
+
 @descr:
 
 

@@ -11,7 +11,7 @@ title: clear
 form.getItem("simplevault").clear();
 
 
-@template: api_method
+
 @descr:
 
 

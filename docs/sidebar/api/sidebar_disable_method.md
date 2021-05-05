@@ -16,7 +16,7 @@ sidebar.disable("search");
 sidebar.disable(["search", "currentButton", "edit"]);
 
 
-@template: api_method
+
 @descr:
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 

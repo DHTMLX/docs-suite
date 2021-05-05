@@ -11,7 +11,7 @@ title: show
 form.getItem("input").show();
 
 
-@template: api_method
+
 @descr:
 
 

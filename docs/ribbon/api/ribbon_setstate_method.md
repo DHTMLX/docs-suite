@@ -17,7 +17,7 @@ ribbon.setState({
     "align": "right"
 });
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)

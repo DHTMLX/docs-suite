@@ -11,7 +11,7 @@ title: hide
 form.getItem("radiogroup").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

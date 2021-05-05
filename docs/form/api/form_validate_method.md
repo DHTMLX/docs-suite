@@ -20,7 +20,7 @@ title: validate
 var result = form.validate(true); // -> true/false
 
 
-@template: api_method
+
 @descr:
 Starting with v7.0, the method validates only [the required fields or the fields that contain validation rules](form/work_with_form.md#validatingform).
 

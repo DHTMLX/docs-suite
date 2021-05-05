@@ -13,7 +13,7 @@ title: clear
 form.getItem("datepicker").clear();
 
 
-@template: api_method
+
 @descr:
 
 

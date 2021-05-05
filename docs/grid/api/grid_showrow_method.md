@@ -14,7 +14,7 @@ title: showRow
 grid.showRow(rowId);
 
 
-@template: api_method
+
 @descr:
 
 

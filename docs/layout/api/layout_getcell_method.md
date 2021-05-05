@@ -20,7 +20,7 @@ layout.getCell("toolbar");
 
 
 
-@template: api_method
+
 @descr:
 A returned object looks like this:
 ~~~js

@@ -15,7 +15,7 @@ title: disable
 form.getItem("colorpicker").disable();
 
 
-@template: api_method
+
 @descr:
 
 

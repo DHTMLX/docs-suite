@@ -75,7 +75,7 @@ form.getItem("radiogroup").getProperties("1");
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **RadioGroup** control can contain the following configuration attributes:
 

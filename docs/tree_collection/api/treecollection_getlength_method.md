@@ -13,5 +13,5 @@ title: getLength
 @example:
 toolbar.data.getLength("menu1");
 
-@template: api_method
+
 @descr:

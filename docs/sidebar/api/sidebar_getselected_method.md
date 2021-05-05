@@ -13,7 +13,7 @@ title: getSelected
 @example:
 sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
-@template: api_method
+
 @descr:
 
 [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)

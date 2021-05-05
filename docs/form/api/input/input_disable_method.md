@@ -15,7 +15,7 @@ title: disable
 form.getItem("input").disable();
 
 
-@template: api_method
+
 @descr:
 
 

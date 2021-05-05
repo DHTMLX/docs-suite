@@ -14,7 +14,7 @@ title: getPosition
 var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 
 
-@template: api_method
+
 @descr:
 
 

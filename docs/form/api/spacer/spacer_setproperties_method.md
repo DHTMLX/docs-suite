@@ -16,7 +16,7 @@ form.getItem("spacer").setProperties({
 });
 
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/spacer/spacer_afterchangeproperties_event.md) and [](form/api/spacer/spacer_beforechangeproperties_event.md) events.
 

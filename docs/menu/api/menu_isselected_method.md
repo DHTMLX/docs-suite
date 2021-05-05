@@ -17,7 +17,7 @@ title: isSelected
 menu.isSelected("align-left"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 @related: menu/work_with_menu.md#checkingifamenuitemisselected

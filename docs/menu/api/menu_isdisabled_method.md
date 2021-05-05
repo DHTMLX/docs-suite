@@ -18,7 +18,7 @@ param 	boolean		true, if an item of Menu is disabled, otherwise false
 menu.isDisabled("id"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 
