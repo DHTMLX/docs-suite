@@ -34,7 +34,8 @@ var timepicker = new dhx.Timepicker("timepicker", {
 });
 
 
-@descr: 
+@descr:
+
 1\. The value of timepicker set as an **array** should have the following elements:
 
 - the hour value
@@ -51,6 +52,6 @@ method of the **Date** object.
 
 [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
 
-@related: timepicker/configuration.md#initialvalue
+@related: timepicker/configuration.md#initial-value
 
 @changelog: added in v7.0

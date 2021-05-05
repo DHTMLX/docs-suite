@@ -22,5 +22,5 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 @changelog: added in v6.4
 
-@related: timepicker/configuration.md#actionsbuttons
+@related: timepicker/configuration.md#actions-buttons
 timepicker/initialization.md#initialize-timepicker
