@@ -24,7 +24,8 @@ var layout = new dhx.Layout("layout", {
 
 
 
-@descr: 
+@descr:
+
 If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the **headerHeight** option will add a header without text for a cell.
 
 
@@ -38,4 +39,4 @@ layout/api/layout_headerimage_config.md
 @changelog: added in v6.4
 
 @related: layout/init.md#initialize-layout
-layout/cell_configuration.md#heightofaheadercell
+layout/cell_configuration.md#height-of-a-header-cell

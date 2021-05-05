@@ -27,7 +27,7 @@ A returned object looks like this:
 {gravity: false, id: "toolbar", header: "Header"}
 ~~~
 
-@related: layout/work_with_layout.md#gettingtheobjectofacell
+@related: layout/work_with_layout.md#getting-the-object-of-a-cell
 
 @changelog:
 added in v6.3
