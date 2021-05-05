@@ -38,7 +38,7 @@ component.data.add([
     }
 ]);
 
-@template:	api_method
+
 @descr:
 
 **Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)

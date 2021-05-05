@@ -13,7 +13,7 @@ title: isSaved
 @example:
 myToolbar.data.isSaved();
 
-@template:	api_method
+
 @descr:
 
 @relatedapi: tree_collection/api/save.md

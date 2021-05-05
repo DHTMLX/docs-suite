@@ -19,7 +19,7 @@ title: get
 const StyleList =  dhx.cssManager.get("myCustomClass");
 // -> { color: "black", width: "200px" }
 
-@template:	api_method
+
 
 @descr:
 

@@ -18,7 +18,7 @@ var total = datacollection.reduce(function(new_item, item) {
 }, 0);
 
 
-@template:	api_method
+
 @descr:
 
 A handler function takes two parameters:

@@ -20,7 +20,7 @@ title: getItem
 var item = component.data.getItem(123);
 
 
-@template:	api_method
+
 @descr:
 
 You can access the original properties of an item like this:

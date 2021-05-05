@@ -15,4 +15,4 @@ proxy.load().then(function () {
    console.log("Loading is done!");
 });
 
-@template:	api_method
+

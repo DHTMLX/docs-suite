@@ -17,5 +17,5 @@ title: exists
 @example:
 var item = component.data.exists("1"); 
 
-@template:	api_method
+
 @descr:

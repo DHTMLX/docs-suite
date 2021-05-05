@@ -13,7 +13,7 @@ title: getInitialData
 @example:
 var startingData = component.data.getInitialData();
 
-@template:	api_method
+
 @descr:
 
 **Related sample**: [Data. Get Initial Data](https://snippet.dhtmlx.com/l6wun9j4)

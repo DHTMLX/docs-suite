@@ -19,7 +19,7 @@ data.isDataLoaded();
 
 @related: helpers/lazydataproxy.md
 
-@template:	api_method
+
 @descr:
 {{pronote This functionality is available in the PRO edition only.}}
 

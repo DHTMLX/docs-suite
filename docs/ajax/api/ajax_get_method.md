@@ -23,10 +23,10 @@ dhx.ajax.get(url).then(function (data) {
 	console.log(err);
 });
 
-**Related sample**: [Data. Ajax GET](https://snippet.dhtmlx.com/81oqx20v)
-@template:	api_method
-
 @descr:
+
+**Related sample**: [Data. Ajax GET](https://snippet.dhtmlx.com/81oqx20v)
+
 The **config** object can contain following options:
 
 - **responseType** - the type of data that you are expecting back from the server. The available types are:
