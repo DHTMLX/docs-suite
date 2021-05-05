@@ -29,4 +29,4 @@ pagination.setPage(0);
 
 
 
-@related: pagination/usage.md#settinggettingtheactivepage
+@related: pagination/usage.md#settinggetting-the-active-page

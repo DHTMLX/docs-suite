@@ -20,4 +20,4 @@ sidebar.expand();
 
 @changelog: added in v6.4
 
-@related: sidebar/work_with_sidebar.md#expandingandcollapsingsidebar
+@related: sidebar/work_with_sidebar.md#expanding-and-collapsing-sidebar

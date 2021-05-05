@@ -213,7 +213,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 {{note View the full list of properties of the **selectButton** object in the [related article](toolbar/api/api_selectbutton_properties.md). }}
 
-###  Separator template
+### Separator template
 
 ~~~js
 // separator

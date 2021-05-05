@@ -22,6 +22,7 @@ popup.events.on("BeforeShow", function(element){
 
 
 @descr:
+
 The event is blockable. Return *false* to block showing a popup.
 
 @relatedapi:

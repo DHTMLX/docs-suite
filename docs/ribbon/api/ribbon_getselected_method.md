@@ -17,7 +17,7 @@ ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 @descr:
 
-@related: menu/work_with_menu.md#gettingselecteditems
+@related: menu/work_with_menu.md#getting-selected-items
 
 @relatedapi:
 ribbon/api/ribbon_select_method.md

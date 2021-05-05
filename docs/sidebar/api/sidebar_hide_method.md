@@ -18,6 +18,7 @@ sidebar.hide(["search","currentButton","edit"]);
 
 
 @descr:
+
 Starting from v7.0, it is possible to hide all items at once by using the method without the parameter:
 
 ~~~js
@@ -26,7 +27,7 @@ sidebar.hide();
 ~~~
 
 
-@related: sidebar/work_with_sidebar.md#hidingandshowingcontrols
+@related: sidebar/work_with_sidebar.md#hiding-and-showing-controls
 
 
 **Related sample**:

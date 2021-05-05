@@ -24,4 +24,4 @@ sidebar.isDisable("id"); // -> returns true/false
 
 @changelog: added in v6.4
 
-@related: sidebar/work_with_sidebar.md#checkingifasidebaritemisdisabled
+@related: sidebar/work_with_sidebar.md#checking-if-a-sidebar-item-is-disabled

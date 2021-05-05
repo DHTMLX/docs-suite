@@ -20,4 +20,4 @@ const pagination = new dhx.Pagination("pagination_container", {
 
 [Pagination. Initial page index](https://snippet.dhtmlx.com/5vwz8tgb)
 
-@related: pagination/configuration.md#initialpage
+@related: pagination/configuration.md#initial-page

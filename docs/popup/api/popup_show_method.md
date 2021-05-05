@@ -22,6 +22,7 @@ popup.show("popup_container");
 
 
 @descr:
+
 The **config** object can contain the properties below:
 
 <table class="webixdoc_links">
@@ -53,7 +54,7 @@ popup/api/popup_hide_method.md
 - [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
 - [Popup.Show position](https://snippet.dhtmlx.com/bu4uj2ik)	
 
-@related:popup/work_with_popup.md#hidingshowingpopup
+@related:popup/work_with_popup.md#hidingshowing-popup
 
 @changelog:
 - the **indent** property of the **config** parameter is added in v6.1

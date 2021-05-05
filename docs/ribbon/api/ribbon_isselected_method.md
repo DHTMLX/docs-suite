@@ -21,7 +21,7 @@ ribbon.isSelected("print"); // -> returns true/false
 
 @descr:
 
-@related: ribbon/operating_ribbon.md#checkingifaribbonitemisselected
+@related: ribbon/operating_ribbon.md#checking-if-a-ribbon-item-is-selected
 
 @relatedapi:
 ribbon/api/ribbon_select_method.md

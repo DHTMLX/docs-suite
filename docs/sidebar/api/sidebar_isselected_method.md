@@ -31,4 +31,4 @@ sidebar/api/sidebar_getselected_method.md
 sidebar/api/sidebar_select_method.md
 sidebar/api/sidebar_unselect_method.md
 
-@related: sidebar/work_with_sidebar.md#checkingifasidebaritemisselected
+@related: sidebar/work_with_sidebar.md#checking-if-a-sidebar-item-is-selected

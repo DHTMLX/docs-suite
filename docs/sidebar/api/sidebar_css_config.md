@@ -25,6 +25,7 @@ var sidebar = new dhx.Sidebar({
 
 
 @descr: 
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Sidebar.
 
 ~~~js
@@ -60,4 +61,5 @@ var sidebar = new dhx.Sidebar({
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 @related: sidebar/customization.md#styling
+
 **Related sample**: [Sidebar. Custom Css](https://snippet.dhtmlx.com/3mhhvvcr)

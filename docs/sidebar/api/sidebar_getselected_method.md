@@ -25,4 +25,4 @@ sidebar/api/sidebar_isselected_method.md
 sidebar/api/sidebar_select_method.md
 sidebar/api/sidebar_unselect_method.md
 
-@related: sidebar/work_with_sidebar.md#gettingselecteditems
+@related: sidebar/work_with_sidebar.md#getting-selected-items

@@ -29,4 +29,4 @@ const totalPages = pagination.getPagesCount();
 
 
 
-@related: pagination/usage.md#gettingtotalnumberofpages
+@related: pagination/usage.md#getting-total-number-of-pages

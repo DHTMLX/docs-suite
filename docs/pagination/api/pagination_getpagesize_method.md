@@ -32,4 +32,4 @@ pagination.getPageSize();
 
 
 
-@related: pagination/usage.md#settinggettingcountofitemsperpage
+@related: pagination/usage.md#settinggetting-count-of-items-per-page
