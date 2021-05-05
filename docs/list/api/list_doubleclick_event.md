@@ -20,7 +20,8 @@ list.events.on("DoubleClick", function(id, e){
 
 @descr:
 
-@relatedsample:https://snippet.dhtmlx.com/iwt1yd61	List. List Events
+**Related Sample:**
+- [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)	
 
 @changelog: added in v6.1
 

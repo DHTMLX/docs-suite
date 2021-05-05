@@ -18,10 +18,13 @@ slider.events.on("Change", function(newValue, oldValue, isRange){
     console.log("The value of a slider has changed to "+slider.getValue());
 });
 
-@relatedsample:https://snippet.dhtmlx.com/sc7ov54z	Slider. Slider Events
-
-
 @descr:
+
+**Related Sample:**
+- [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)	
+
+
+
 
 
 
