@@ -153,7 +153,7 @@ Adding/removing spans
 
 You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: **addSpan()**, **removeSpan()** and **getSpan()**.
 
-###Adding spans
+### Adding spans
 
 In order to add a col/row span into the grid, use the [addSpan()](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 

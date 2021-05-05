@@ -67,7 +67,7 @@ list.data.add({value:"New item"},1);
 
 **Related sample**: [List. Add](https://snippet.dhtmlx.com/f7cbdiqg)
 
-###Updating List items
+### Updating List items
 
 You can change config options of the item via the **update()** method of Data Collection. It takes two parameters:
 
@@ -94,7 +94,7 @@ list.data.update("option_id",{
 
 **Related sample**: [List. Update](https://snippet.dhtmlx.com/6jpn7a6h)
 
-###Removing items from List
+### Removing items from List
 
 To remove an item, make use of the **remove()** method of Data Collection. Pass the id of the item that should be removed to the method:
 
@@ -104,7 +104,7 @@ list.data.remove("option_id");
 
 **Related sample**: [List. Delete](https://snippet.dhtmlx.com/wmozu18g)
 
-###Filtering List data
+### Filtering List data
 
 You can filter List data by the specified criteria with the help of the [](data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
@@ -120,7 +120,7 @@ list.data.filter({
 
 Filtering can be applied to any attribute of a data item.
 
-###Sorting List data
+### Sorting List data
 
 It is possible to sort data in List via the [](data_collection/api/datacollection_sort_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
