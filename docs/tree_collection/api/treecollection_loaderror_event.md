@@ -16,7 +16,7 @@ data.events.on("LoadError", function(error){
 });
 
 
-@template:	api_event
+
 @descr:
 The **error** parameter can be either a string with the text of an error, or an object with two properties:
 

@@ -17,7 +17,7 @@ grid.events.on("AfterEditStart", function(row,col, editorType){
 	// your logic here
 });
 
-@template:	api_event
+
 @descr:
 
 @changelog: added in v6.1

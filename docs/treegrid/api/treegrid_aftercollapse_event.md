@@ -15,7 +15,7 @@ treeGrid.events.on("AfterCollapse", function(rowId) {
     // your logic here
 });
 
-@template:	api_event
+
 @descr:
 
 **Related sample**:

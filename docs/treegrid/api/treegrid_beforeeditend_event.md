@@ -21,7 +21,7 @@ grid.events.on("BeforeEditEnd", function(value,row,column){
     return false;
 });
 
-@template:	api_event
+
 @descr:
 
 @changelog: added in v6.1

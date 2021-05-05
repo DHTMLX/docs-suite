@@ -23,7 +23,7 @@ grid.events.on("BeforeEditStart", function(row,col,editorType){
 });
 
 
-@template:	api_event
+
 @descr:
 
 

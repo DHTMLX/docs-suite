@@ -20,7 +20,7 @@ form.events.on("BeforeSend", function(){
 });
 
 
-@template:	api_event
+
 @descr:
 The event is blockable. Return *false* to prevent a form sending to the server.
 

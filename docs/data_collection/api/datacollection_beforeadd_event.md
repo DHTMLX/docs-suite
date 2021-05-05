@@ -19,7 +19,7 @@ data.events.on("BeforeAdd", function(newItem){
     return true;
 });
 
-@template:	api_event
+
 @descr:
 The event is blockable. Return *false* to prevent an item adding into a data collection.
 
