@@ -18,6 +18,7 @@ tabbar.getCell("rome");
 
 
 @descr:
+
 A returned object looks like this:
 
 ~~~js

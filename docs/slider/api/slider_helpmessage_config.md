@@ -15,7 +15,8 @@ var slider = new dhx.Slider("slider_container",{
 
 
 
-@descr: 
+@descr:
+ 
 The property is useful while using Slider in form.
  
 

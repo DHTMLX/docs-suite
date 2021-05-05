@@ -111,7 +111,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 Autosize for tabs
 -----------------
 
-When the width or height of tabs are not specified, you can configure the tabs so that their width/height would automatically adjust to the size of the container of Tabbar. For this purpose, make use of the [](tabbar/api/tabbar_tabautowidth_config.md) [](tabbar/api/tabbar_tabautoheight_config.md) properties of Tabbar.
+When the width or height of tabs are not specified, you can configure the tabs so that their width/height would automatically adjust to the size of the container of Tabbar. For this purpose, make use of the [](tabbar/api/tabbar_tabautowidth_config.md)/[](tabbar/api/tabbar_tabautoheight_config.md) properties of Tabbar.
 
 ~~~js
 var tabbar = new dhx.Tabbar("tabbar_container", {

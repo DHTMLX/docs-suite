@@ -22,7 +22,7 @@ tabbar.enableTab("London");
 
 **Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
-@related: tabbar/work_with_tabbar.md#enablingdisablingatab
+@related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab
 
 @changelog: added in v6.4
 

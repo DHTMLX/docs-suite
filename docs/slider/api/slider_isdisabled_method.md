@@ -20,4 +20,4 @@ slider.isDisabled(); // -> true/false
 
 @changelog: added in v6.4
 
-@related: slider/usage.md#checkingifasliderisdisabled
+@related: slider/usage.md#checking-if-a-slider-is-disabled
