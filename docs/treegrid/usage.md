@@ -204,7 +204,7 @@ var span = treegrid.getSpan("10","a");
 
 As a result, you'll get an object with a span configuration, if any span includes the specified cell. Attributes of a span object are described above.
 
-###Removing spans
+### Removing spans
 
 To remove an existing span, make use of the [removeSpan()](treegrid/api/treegrid_removespan_method.md) method. It takes the ids of the row and the column as parameters: 
 
@@ -251,7 +251,7 @@ Grouping data
 
 To make data in TreeGrid well-structured and easily understood you can group data with the help of the [groupBy()](treegrid/api/treegrid_groupby_method.md) method. There are two options of grouping data.
 
-###Grouping by a column
+### Grouping by a column
 
 To group the content of a treegrid by values of the specified column, pass the id of the column as a parameter to the **groupBy()** method:
 
@@ -263,7 +263,7 @@ treegrid.groupBy("age");
 
 [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
-###Grouping by the result of calculation
+### Grouping by the result of calculation
 
 You can pass a function with a rule of grouping data in the treegrid as a parameter to the **groupBy()** method. The function returns the name of a group and takes one parameter: 
 
@@ -498,7 +498,7 @@ Exporting TreeGrid
 
 You can easily export data of TreeGrid into the Excel or CSV format.
 
-###Exporting data to Excel 
+### Exporting data to Excel 
 
 dhtmlxTreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the **export()** method of the export module. The method takes an object with export settings as a parameter.
 
@@ -525,7 +525,7 @@ Export settings include:
     </tbody>
 </table>
 
-###Exporting data to CSV
+### Exporting data to CSV
 
 You can export data from TreeGrid to the CSV format with the **csv()** method of the Export module. The method takes an object with export settings as a parameter:
 
