@@ -20,7 +20,7 @@ toolbar.isSelected("web"); // -> returns true/false
 
 @descr:
 
-@related: toolbar/common_methods.md#checkingifatoolbaritemisselected
+@related: toolbar/common_methods.md#checking-if-a-toolbar-item-is-selected
 
 @relatedapi:
 toolbar/api/toolbar_select_method.md
