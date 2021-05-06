@@ -28,10 +28,7 @@ grid.events.on("BeforeEditEnd", function(value,row,column){
 @descr:
 
 
-
-
 **Related sample**:
 - [Grid. Events	](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.1
-

@@ -19,6 +19,7 @@ var column = grid.getColumn("b"); // ->
 
 
 @descr:
+
 The returned object contains the following set of properties:
 
 <table class="webixdoc_links">
@@ -132,7 +133,7 @@ The returned object contains the following set of properties:
 
 
 @relatedapi: treegrid/api/treegrid_setcolumns_method.md
-@related: treegrid/usage.md#workingwithcolumnsandcells
+@related: treegrid/usage.md#working-with-columns-and-cells
 
 
 

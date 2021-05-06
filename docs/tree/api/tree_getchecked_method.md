@@ -19,7 +19,7 @@ tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 
 **Related sample**: [Tree. Get Checked Items](https://snippet.dhtmlx.com/cz7xypgz)
 
-@related: tree/work_with_tree.md#workingwithcheckboxes
+@related: tree/work_with_tree.md#working-with-checkboxes
 
 @relatedapi: tree/api/tree_checkitem_method.md
 tree/api/tree_uncheckitemnew_method.md

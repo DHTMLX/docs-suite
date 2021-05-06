@@ -29,5 +29,3 @@ dataview.events.on("BeforeEditEnd", function(value,id){
 - [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.1
-
-

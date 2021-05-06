@@ -21,7 +21,8 @@ var grid = new dhx.Grid("grid_container", {
 
 
 
-@descr: 
+@descr:
+
 Each object in the spans array contains the following properties:
 
 <table class="webixdoc_links">
@@ -53,7 +54,7 @@ Each object in the spans array contains the following properties:
     </tbody>
 </table>
 
+**Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)
+
 @related: treegrid/configuration.md#spans
 treegrid/initialization.md#initialize-treegrid
-
-**Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)

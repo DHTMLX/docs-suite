@@ -4,7 +4,6 @@ title: eventHandlers
 description: description
 ---          
 
-```
 
 @short: adds event handlers to the HTML elements of a custom template of DataView items
 
@@ -35,9 +34,10 @@ const dataview = new dhx.DataView("dataview", {
 
 @descr: 
 
+**Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
+
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
-``` todo нужна ли таблица
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -55,13 +55,8 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
-
-**Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
-
-@changelog: added in v7.0
-
 @relatedapi: dataview/api/dataview_template_config.md
 
 @related: dataview/configuration.md#event-handlers-for-the-template
 
-``` 
+@changelog: added in v7.0

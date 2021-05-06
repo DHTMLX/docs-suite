@@ -20,7 +20,7 @@ dhxWindow.show();
 
 @descr: 
 
+**Related sample**: [Window.  Movable Window](https://snippet.dhtmlx.com/mkwuasj0)
+
 @related: window/how_to_start.md
 window/configuration.md#movability
-
-**Related sample**: [Window.  Movable Window](https://snippet.dhtmlx.com/mkwuasj0)

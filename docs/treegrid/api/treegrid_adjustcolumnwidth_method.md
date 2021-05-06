@@ -16,6 +16,7 @@ treegrid.adjustColumnWidth("b", "header");
 
 
 @descr:
+
 If no value is set to the *adjust* parameter, the **adjustColumnWidth** method sets it to *true*.
 
 @relatedapi: treegrid/api/treegrid_adjust_config.md

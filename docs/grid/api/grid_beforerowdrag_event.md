@@ -26,6 +26,8 @@ grid.events.on("BeforeRowDrag", function(data, events){
 
 @descr:
 
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)	
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -45,8 +47,6 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
-
 @relatedapi:
 grid/api/grid_afterrowdrag_event.md
 grid/api/grid_afterrowdrop_event.md
@@ -57,9 +57,7 @@ grid/api/grid_dragrowin_event.md
 grid/api/grid_dragrowout_event.md
 grid/api/grid_dragrowstart_event.md
 
-**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)	
 
 @related: grid/configuration.md#drag-n-drop-of-grid-rows
 
 @changelog: added in v7.0
-

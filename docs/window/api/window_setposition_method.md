@@ -20,13 +20,10 @@ dhxWindow.show();
 @descr:
 
 
+**Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
 
 @relatedapi:
 window/api/window_getposition_method.md
 
 
-
-
-@related:window/usage.md#positioningwindow
-
-**Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
+@related:window/usage.md#positioning-window

@@ -16,10 +16,11 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@descr: 
-The height of the header is calculated as a sum of all row heights in it.
-
-@related: treegrid/configuration.md#headerfooterheight
-treegrid/initialization.md#initialize-treegrid
+@descr:
 
 **Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)
+
+The height of the header is calculated as a sum of all row heights in it.
+
+@related: treegrid/configuration.md#headerfooter-height
+treegrid/initialization.md#initialize-treegrid

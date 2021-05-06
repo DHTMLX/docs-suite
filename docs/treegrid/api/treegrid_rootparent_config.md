@@ -22,11 +22,11 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 
 
 
-@descr: 
+@descr:
+
 By default, the root parent takes the id of the TreeGrid container. 
 If the id of the container is set to null or defined as an HTML element, the value of the root parent will be auto-generated. 
 
 
 
 @changelog: added in v7.1
-

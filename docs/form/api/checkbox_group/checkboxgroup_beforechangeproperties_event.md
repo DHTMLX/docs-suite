@@ -27,4 +27,3 @@ form.getItem("checkboxGroup").events.on("BeforeChangeProperties", function(prope
 
 
 @changelog: added in v7.0
-

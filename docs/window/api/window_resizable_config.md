@@ -20,7 +20,7 @@ dhxWindow.show();
 
 @descr: 
 
+**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
+
 @related: window/how_to_start.md
 window/configuration.md#resizing
-
-**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)

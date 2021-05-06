@@ -31,6 +31,8 @@ treegrid.groupBy(function (item) {
 
 @descr:
 
+**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
+
 The method takes one parameter, which can be:
 
 - **id** - (*string*) the id of the column 
@@ -40,9 +42,8 @@ The method takes one parameter, which can be:
 
 You can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 
-**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
-@related: treegrid/usage.md#groupingdata
+@related: treegrid/usage.md#grouping-data
 @relatedapi: treegrid/api/treegrid_grouptitletemplate_config.md
 treegrid/api/treegrid_ungroup_method.md
 

@@ -22,10 +22,13 @@ var grid = new dhx.Grid("grid_container", {
 
 
 
-@descr: 
+@descr:
+
+
 The function takes the id of a row as a parameter and returns a string with the name of a CSS class.
 
-@related: treegrid/configuration.md#rowstyle
+**Related sample**: [TreeGrid. Custom Row Style](https://snippet.dhtmlx.com/3ojyoryn)
+
+@related: treegrid/configuration.md#row-style
 treegrid/initialization.md#initialize-treegrid
 
-**Related sample**: [TreeGrid. Custom Row Style](https://snippet.dhtmlx.com/3ojyoryn)

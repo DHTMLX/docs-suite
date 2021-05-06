@@ -21,4 +21,3 @@ form.getItem("slider").events.on("AfterChangeProperties", function(properties) {
 @relatedapi: form/api/slider/slider_setproperties_method.md
 
 @changelog: added in v7.0
-

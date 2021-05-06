@@ -22,4 +22,3 @@ form.getItem("checkboxGroup").events.on("AfterChangeProperties", function(proper
 @relatedapi: form/api/checkbox_group/checkboxgroup_setproperties_method.md
 
 @changelog: added in v7.0
-

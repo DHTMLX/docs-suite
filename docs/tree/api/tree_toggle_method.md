@@ -17,10 +17,10 @@ tree.toggle("history");
 
 @descr:
 
-
-@related: tree/work_with_tree.md#expandingcollapsingitems
-
 **Related sample**: [Tree. Toggle Item](https://snippet.dhtmlx.com/qjk56co2)
+
+@related: tree/work_with_tree.md#expandingcollapsing-items
+
 
 
 

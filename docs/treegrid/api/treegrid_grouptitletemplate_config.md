@@ -18,12 +18,12 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr: 
 
+**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
 @related:
-treegrid/usage.md#groupingdata
+treegrid/usage.md#grouping-data
 
 @relatedapi: treegrid/api/treegrid_groupby_method.md
 
-**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
 @changelog: added in v6.5

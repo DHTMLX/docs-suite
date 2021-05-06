@@ -19,7 +19,7 @@ treegrid.selection.setCell(row, column);
 
 @descr:
 
-@related: treegrid/usage_selection.md#settingselectiontoacell
+@related: treegrid/usage_selection.md#setting-selection-to-a-cell
 
 @relatedapi: 
 treegrid/api/selection/selection_enable_method.md

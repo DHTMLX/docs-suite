@@ -31,4 +31,3 @@ To be able to change the height of the row, you should specify the [autoHeight:t
 	
 
 @changelog: added in v7.1
-

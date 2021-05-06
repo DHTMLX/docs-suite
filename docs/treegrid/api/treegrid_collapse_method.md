@@ -19,7 +19,7 @@ treegrid.collapse("native");
 
 **Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
-@related: treegrid/usage.md#expandingcollapsingnodes
+@related: treegrid/usage.md#expandingcollapsing-nodes
 
 
 

@@ -19,10 +19,11 @@ grid.setColumns([
 
 
 @descr:
+
 Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_gridcolumn_properties.md).
 
 
 @relatedapi: treegrid/api/treegrid_getcolumn_method.md
-@related: treegrid/usage.md#workingwithcolumnsandcells
+@related: treegrid/usage.md#working-with-columns-and-cells
 
 

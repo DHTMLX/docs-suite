@@ -22,6 +22,7 @@ treegrid.events.on("BeforeColumnHide", function(column){
 
 @descr:
 
-@changelog: added in v7.0
 
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+
+@changelog: added in v7.0

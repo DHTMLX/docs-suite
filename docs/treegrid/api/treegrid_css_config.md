@@ -26,6 +26,8 @@ var treegrid = new dhx.TreeGrid({
 
 @descr: 
 
+**Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of TreeGrid.
 
 ~~~js
@@ -62,6 +64,4 @@ var treegrid = new dhx.TreeGrid({
 
 
 @related: treegrid/initialization.md#initialize-treegrid
-treegrid/customization.md#stylingtreegrid
-
-**Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)
+treegrid/customization.md#styling-treegrid

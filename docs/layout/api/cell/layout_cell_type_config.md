@@ -27,6 +27,8 @@ const layout = new dhx.Layout("layout", {
 
 @descr: 
 
+**Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
+
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -52,7 +54,5 @@ const layout = new dhx.Layout("layout", {
 
 @related: layout/cell_configuration.md#setting-borders-for-cells
 
-**Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 @changelog: added in v7.0
-

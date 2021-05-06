@@ -22,4 +22,3 @@ form.getItem("input").events.on("AfterChangeProperties", function(properties) {
 @relatedapi: form/api/input/input_setproperties_method.md
 
 @changelog: added in v7.0
-

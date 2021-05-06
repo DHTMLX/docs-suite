@@ -22,6 +22,7 @@ form.events.on("BeforeSend", function(){
 
 
 @descr:
+
 The event is blockable. Return *false* to prevent a form sending to the server.
 
 

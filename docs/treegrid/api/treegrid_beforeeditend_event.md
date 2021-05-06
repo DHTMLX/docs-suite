@@ -25,4 +25,3 @@ grid.events.on("BeforeEditEnd", function(value,row,column){
 @descr:
 
 @changelog: added in v6.1
-

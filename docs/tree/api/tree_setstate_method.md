@@ -20,6 +20,9 @@ tree.setState(treeState);
 
 
 @descr:
+
+**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
+
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
 <table class="webixdoc_links">
@@ -55,7 +58,7 @@ Here is an example of a treeState object:
 		"selected": 2
 	},
 
-	"bsthrillers": {
+	"thrillers": {
 		"selected": 1
 	},
 
@@ -85,10 +88,7 @@ Here is an example of a treeState object:
 @relatedapi:
 tree/api/tree_getstate_method.md
 
-**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
 
-
-
-@related: tree/work_with_tree.md#settinggettingtreestate
+@related: tree/work_with_tree.md#settinggetting-tree-state
 
 

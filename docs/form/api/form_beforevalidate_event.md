@@ -27,4 +27,3 @@ form.events.on("BeforeValidate", function(name, value) {
 @relatedapi: form/api/form_validate_method.md
 
 @changelog: added in v7.0
-

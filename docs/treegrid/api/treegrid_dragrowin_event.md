@@ -18,6 +18,7 @@ treegrid.events.on("DragRowIn", function(data, events) {
 
 
 @descr:
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -38,7 +39,6 @@ The data object contains the following parameters:
 </table>
 
 
-@changelog: added in v7.0
 
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
@@ -53,4 +53,6 @@ treegrid/api/treegrid_cancelrowdrop_event.md
 treegrid/api/treegrid_dragrowout_event.md
 treegrid/api/treegrid_dragrowstart_event.md
 
-@related: treegrid/configuration.md#dragndropofgridrows
+@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows
+
+@changelog: added in v7.0

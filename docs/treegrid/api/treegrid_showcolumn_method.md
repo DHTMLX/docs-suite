@@ -21,6 +21,6 @@ grid.showColumn(col);
 
 @relatedapi: treegrid/api/treegrid_hidecolumn_method.md
 
-@related: treegrid/usage.md#hidingshowingacolumn
+@related: treegrid/usage.md#hidingshowing-a-column
 
 @changelog: added in v6.3

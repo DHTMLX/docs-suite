@@ -22,6 +22,9 @@ dhxWindow.events.on("Resize", function(state, oldState, side) {
 
 
 @descr:
+
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
+
 The **state/oldState** object contains two attributes:
 
 - **size** - (*object*) optional, an object with the size of a window. It contains two options:
@@ -38,6 +41,5 @@ The **side** object can contain the following directions:
 - **top** - (*boolean*) optional, the top direction
 - **bottom** - (*boolean*) optional, the bottom direction
 
-**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md

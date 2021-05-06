@@ -24,4 +24,4 @@ dhxWindow.show();
 
 
 @related: window/how_to_start.md
-window/usage.md#attachingdhtmlxcomponents
+window/usage.md#attaching-dhtmlx-components

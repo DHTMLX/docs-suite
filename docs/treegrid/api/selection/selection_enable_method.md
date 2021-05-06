@@ -21,7 +21,8 @@ treegrid.selection.enable();
 treegrid/api/selection/selection_disable_method.md
 treegrid/api/treegrid_selection_config.md
 
+@related: treegrid/usage_selection.md
+
 @changelog:
 added in v7.0
 
-@related: treegrid/usage_selection.md

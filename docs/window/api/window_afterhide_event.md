@@ -20,6 +20,9 @@ dhxWindow.events.on("AfterHide", function(position, events){
 
 
 @descr:
+
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
+
 The **position** parameter contains two attributes:
 
 - **left** - (*number*)	the left coordinate of the window's position (in pixels)
@@ -34,7 +37,6 @@ Note, the event fires in 2 cases:
 2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
 
 
-**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md
 

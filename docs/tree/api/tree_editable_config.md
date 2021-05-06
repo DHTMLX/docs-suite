@@ -19,7 +19,7 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 
 **Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
 
-@related:tree/configuration.md#editingofitems
+@related:tree/configuration.md#editing-of-items
  tree/initialization_of_dhtmlxtree.md#initialize-tree
  
 @relatedapi: tree/api/tree_edititem_method.md

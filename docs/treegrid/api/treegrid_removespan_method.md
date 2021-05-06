@@ -24,4 +24,4 @@ grid/api/grid_getspan_method.md
 
 
 
-@related: treegrid/usage.md#addingremovingspans
+@related: treegrid/usage.md#addingremoving-spans

@@ -27,4 +27,3 @@ form.getItem("textarea").events.on("BeforeChangeProperties", function(properties
 
 
 @changelog: added in v7.0
-

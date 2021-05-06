@@ -16,7 +16,7 @@ var state = grid.getScrollState(); // -> {x:0,y:0}
 
 @descr:
 
-@related: treegrid/usage.md#controllingscrollbehavior
+@related: treegrid/usage.md#controlling-scroll-behavior
 
 @relatedapi: treegrid/api/treegrid_scroll_method.md
 treegrid/api/treegrid_scrollto_method.md

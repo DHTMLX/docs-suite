@@ -21,13 +21,12 @@ dhxWindow.show();
 @descr:
 
 
+**Related sample**:
+- [Window. Attach HTML To Window](https://snippet.dhtmlx.com/6uelt44m)
 
 
 
 
 
 @related: window/how_to_start.md
-window/usage.md#attachingcontent
-
-**Related sample**:
-- [Window. Attach HTML To Window](https://snippet.dhtmlx.com/6uelt44m)
+window/usage.md#attaching-content

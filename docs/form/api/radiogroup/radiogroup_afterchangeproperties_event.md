@@ -22,4 +22,3 @@ form.getItem("radiogroup").events.on("AfterChangeProperties", function(propertie
 @relatedapi: form/api/radiogroup/radiogroup_setproperties_method.md
 
 @changelog: added in v7.0
-

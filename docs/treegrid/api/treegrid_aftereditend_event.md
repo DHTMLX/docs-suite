@@ -21,4 +21,3 @@ grid.events.on("AfterEditEnd", function(value,row,column){
 @descr:
 
 @changelog: added in v6.1
-

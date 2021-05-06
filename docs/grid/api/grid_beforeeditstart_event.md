@@ -33,4 +33,3 @@ grid.events.on("BeforeEditStart", function(row,col,editorType){
 - [Grid. Events	](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.1
-

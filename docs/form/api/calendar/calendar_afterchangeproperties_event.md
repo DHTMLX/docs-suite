@@ -22,4 +22,3 @@ form.getItem("datepicker").events.on("AfterChangeProperties", function(propertie
 @relatedapi: form/api/calendar/calendar_setproperties_method.md
 
 @changelog: added in v7.0
-

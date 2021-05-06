@@ -15,12 +15,13 @@ var dhxWindow = new dhx.Window({
 dhxWindow.show();
 
 
-@descr: 
-By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the article window/customization.md#controlsandoperations.
-
-@related: window/how_to_start.md
-window/configuration.md#footer
+@descr:
 
 **Related samples**:
 - [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
 - [Window. Window With Footer](https://snippet.dhtmlx.com/qu5j85ag)
+
+By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the [Customization](window/customization.md#controls-and-operations) article.
+
+@related: window/how_to_start.md
+window/configuration.md#footer

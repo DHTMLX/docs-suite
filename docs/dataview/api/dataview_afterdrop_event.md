@@ -14,6 +14,7 @@ dataview.events.on("AfterDrop", function(data, events) {
 
 
 @descr:
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -34,7 +35,7 @@ The data object contains the following parameters:
 </table>
 
 
-@changelog: added in v7.0
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @relatedapi:
 dataview/api/dataview_afterdrag_event.md
@@ -46,4 +47,5 @@ dataview/api/dataview_dragin_event.md
 dataview/api/dataview_dragout_event.md
 dataview/api/dataview_dragstart_event.md
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+
+@changelog: added in v7.0

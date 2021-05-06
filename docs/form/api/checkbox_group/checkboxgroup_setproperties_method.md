@@ -151,4 +151,3 @@ form.getItem("checkboxGroup").setProperties("first", {
 ~~~
 
 @changelog: added in v7.0
-

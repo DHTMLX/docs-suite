@@ -14,9 +14,10 @@ dhxWindow.setFullScreen();
 
 @descr:
 
-@related:window/usage.md#fullscreenmode
-
 **Related sample**: [Window. Fullscreen Mode](https://snippet.dhtmlx.com/aftti5fy)
+
+@related:window/usage.md#fullscreen-mode
+
 
 @changelog:
 added in v6.3
