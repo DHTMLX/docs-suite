@@ -10,7 +10,7 @@ TODO: api change (добавить filterId в description "inputFilter" | "sele
 @params:
 - value		string,number		an entered value
 - colId		string,number		the id of a column
-- filter	string				the type of a filter: "inputFilter", "selectFilter", "comboFilter"
+- filterId	string				the type of a filter: "inputFilter", "selectFilter", "comboFilter"
 
 @example:
 grid.events.on("FilterChange", function(value,colId,filter){

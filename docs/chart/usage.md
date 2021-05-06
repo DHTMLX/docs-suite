@@ -176,5 +176,4 @@ A new data item is added relative to the X-axis. In case of adding many items, y
 
 **Related sample**: [Chart. Adding Data On The Fly](https://snippet.dhtmlx.com/dpz4w5nr)
 
-@todo:
-add section "work with data"
+

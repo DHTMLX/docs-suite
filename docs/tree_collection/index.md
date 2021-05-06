@@ -3,7 +3,7 @@ sidebar_label: Overview
 title: TreeCollection overview
 ---
 
-A set of APIs that allow you to work with the Selection object. Applicable to DataView, List, Tree.
+A set of API methods that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid.
 
 ## Methods
 

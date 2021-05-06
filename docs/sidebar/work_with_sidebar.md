@@ -275,7 +275,4 @@ You can move menu controls to different positions with the **move()** method of 
 sidebar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}}
-
-@todo:
-check 
+{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}} 

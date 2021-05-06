@@ -3,14 +3,14 @@ sidebar_label: DataDrivers
 title: DataDrivers
 ---          
 
-By default, the components of the DHTMLX Suite library operate data in JSON format. But, if necessary, they can also handle data in CSV or XML formats. Using API of [Data Collection](data_collection/api/refs/datacollection.md) or [Tree Collection](tree_collection/api/refs/treecollection.md) provides an opportunity to parse, load or serialize data of a component in any of the mentioned formats. 
+By default, the components of the DHTMLX Suite library operate data in JSON format. But, if necessary, they can also handle data in CSV or XML formats. Using API of [Data Collection](data_collection/index.md) or [Tree Collection](tree_collection/index.md) provides an opportunity to parse, load or serialize data of a component in any of the mentioned formats. 
 
 However, for further work, you may need to get the same data in different formats, and, in that case, you need to convert the data between them. The best way to do this is to use the **DataDrivers** helper.
 
 **DataDrivers** is a tool that helps you convert data of a component from JSON format to one of the following formats:
 
-- [CSV format](#csvformat)
-- [XML format](#xmlformat)
+- [CSV format](#csv-format)
+- [XML format](#xml-format)
 
 CSV format
 -------------------------

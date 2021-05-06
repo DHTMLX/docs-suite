@@ -42,7 +42,4 @@ You can add a tooltip to a Title control:
     value:"2K",
     tooltip:"Your subscribers"
 }
-~~~
-
-@todo:
-check links to samples and api, add the image 
+~~~ 

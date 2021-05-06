@@ -5,7 +5,7 @@ title: filter
 
 @short: filters data items in a component
 
-@signature: {'filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;'}
+@signature: {'filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;'}
 
 @params:
 - rule				function,object			the filtering criteria
@@ -47,7 +47,7 @@ Calling the **filter()** method without parameters reverts the component to the 
 grid.data.filter();
 ~~~
 
-<br/>
+
 The **rule** parameter:
 
 - if set as a function, the filtering will be applied by the rule specified in the function:
@@ -97,7 +97,6 @@ grid.data.filter({
 });
 ~~~
 
-<br/><br/>
 The **config** parameter may contain two properties:
 
 <table class="webixdoc_links">
