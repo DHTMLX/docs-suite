@@ -14,10 +14,10 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-@related: window/how_to_start.md
-window/configuration.md#title
 
 @descr: 
 
 
+@related: window/how_to_start.md
+window/configuration.md#title
 

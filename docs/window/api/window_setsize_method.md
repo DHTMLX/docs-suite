@@ -21,6 +21,7 @@ dhxWindow.show();
 @descr:
 
 
+**Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
 
 @relatedapi:
 window/api/window_getsize_method.md
@@ -28,6 +29,4 @@ window/api/window_getsize_method.md
 
 
 
-@related:window/usage.md#sizingwindow
-
-**Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
+@related:window/usage.md#sizing-window

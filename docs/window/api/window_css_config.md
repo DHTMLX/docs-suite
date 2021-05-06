@@ -17,6 +17,9 @@ dhxWindow.show();
 
 
 @descr: 
+
+**Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Window.
 
 ~~~js
@@ -57,5 +60,3 @@ dhxWindow.show();
 
 @related: window/how_to_start.md
 window/customization.md#styling
-
-**Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)

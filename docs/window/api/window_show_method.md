@@ -23,7 +23,7 @@ dhxWindow.show("550", "230");
 
 @related:
 window/how_to_start.md
-window/usage.md#showinghidingwindow
+window/usage.md#showinghiding-window
 
 @relatedapi:
 window/api/window_hide_method.md

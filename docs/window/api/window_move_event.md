@@ -19,6 +19,9 @@ dhxWindow.events.on("Move", function(position, oldPosition, side) {
 
 
 @descr:
+
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
+
 The **position/oldPosition** parameter contains two attributes:
 
 - **left** - (*number*)	the left coordinate of the window's position (in pixels)
@@ -32,7 +35,6 @@ The **side** object contains four directions:
 - **bottom** - (*boolean*) optional, the bottom direction
 
 
-**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 @related: window/handling_events.md
 

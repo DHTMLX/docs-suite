@@ -15,6 +15,7 @@ dhxWindow.hide();
 @descr:
 
 
+**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
 @relatedapi:
 window/api/window_show_method.md
@@ -22,6 +23,4 @@ window/api/window_show_method.md
 
 
 
-@related:window/usage.md#showinghidingwindow
-
-**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
+@related:window/usage.md#showinghiding-window

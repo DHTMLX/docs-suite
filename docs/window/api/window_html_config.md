@@ -18,4 +18,4 @@ dhxWindow.show();
 @descr: 
 
 @related: window/how_to_start.md
-window/configuration.md#settinghtmlcontent
+window/configuration.md#setting-html-content

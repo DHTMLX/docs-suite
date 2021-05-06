@@ -13,4 +13,4 @@ dhxWindow.paint();
 
 @descr:
 
-@related:window/usage.md#repaintingwindow
+@related:window/usage.md#repainting-window

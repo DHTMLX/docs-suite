@@ -24,6 +24,6 @@ dhxWindow.show();
 
 @related: 
 window/how_to_start.md#initialize-window
-window/configuration.md#customnode
+window/configuration.md#custom-node
 
 @changelog: added in v6.4

@@ -171,5 +171,5 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-The header can also contain some buttons. You can control them via the [](window/api/window_header_config.md) object of the toolbar. Check details in the [](window/customization.md) article.
+The header can also contain some buttons. You can control them via the [](window/api/window_header_config.md) object of the window. Check details in the [](window/customization.md) article.
 
