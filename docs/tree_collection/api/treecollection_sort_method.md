@@ -19,6 +19,7 @@ treeGrid.data.sort({
 
 
 @descr:
+
 The **rule** object has the following attributes:
 
 <table class="webixdoc_links">
@@ -45,7 +46,7 @@ The **rule** object has the following attributes:
 
 {{note Calling the method without parameters will discard all applied sorting rules.}}
 
-###Custom sorting
+### Custom sorting
 
 To set a custom function for sorting you need to specify the **rule** attribute in a passed object. For example:
 

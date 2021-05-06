@@ -4,7 +4,7 @@ title: DataCollection overview
 description: description
 ---          
 
-A set of APIs that allow you to work with data of a component.
+A set of APIs that allow you to work with data of a component. Applicable to Chart, Combobox, DataView, Grid, List.
 ## Methods
 
 | Name                                            | Description                                            |

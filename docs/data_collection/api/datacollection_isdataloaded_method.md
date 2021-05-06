@@ -17,11 +17,12 @@ title: isDataLoaded
 @example:
 data.isDataLoaded();
 
-@related: helpers/lazydataproxy.md
 
 
 @descr:
 
 {{pronote This functionality is available in the PRO edition only.}}
+
+@related: helpers/lazydataproxy.md
 
 @changelog: added in v6.4

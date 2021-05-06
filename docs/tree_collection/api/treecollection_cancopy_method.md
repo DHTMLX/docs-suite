@@ -12,6 +12,6 @@ title: canCopy
 - targetId	 	string	    the ID of the target control
 
 @example:
-
+component.data.canCopy(from.id, id);
 
 @descr:

@@ -23,4 +23,5 @@ data.events.on("BeforeLazyLoad", function () {
 
 @related: helpers/lazydataproxy.md
 
-@added in v6.4
+@changelog:
+added in v6.4

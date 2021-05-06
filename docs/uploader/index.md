@@ -26,4 +26,3 @@ The API set for controlling the work of the Uploader object.
 | [](uploader/api/uploader_target_config.md)             | @getshort(uploader/api/uploader_target_config.md)             |
 | [](uploader/api/uploader_updatefromresponse_config.md) | @getshort(uploader/api/uploader_updatefromresponse_config.md) |
 
-@todo: update examples and descrs from vault to uploader

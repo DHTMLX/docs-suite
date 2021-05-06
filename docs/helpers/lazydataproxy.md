@@ -10,8 +10,8 @@ This helper allows getting data partially, on demand, and rendering only those r
 
 Read the related articles for detailed information about how to display large lists and tabular data efficiently:
 
-- [dynamic loading in Grid](grid/data_loading.md#dynamicloading)
-- [dynamic loading in List](list/load_data.md#dynamicloading) (You need to set the **virtual:true** property in the configuration object of List) 
+- [dynamic loading in Grid](grid/data_loading.md#dynamic-loading)
+- [dynamic loading in List](list/load_data.md#dynamic-loading) (You need to set the **virtual:true** property in the configuration object of List) 
 
 Initialize LazyDataProxy
 ---------------------------
