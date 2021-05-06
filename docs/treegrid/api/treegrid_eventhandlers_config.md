@@ -99,7 +99,7 @@ const grid = new dhx.Grid("grid", {
 
 
 @related: treegrid/initialization.md#initialize-treegrid
-treegrid/configuration.md#eventhandlersforhtmlcontent
-treegrid/customization.md#addingtemplatetocells
+treegrid/configuration.md#event-handlers-for-html-content
+treegrid/customization.md#adding-template-to-cells
 
 @changelog: added in v7.0

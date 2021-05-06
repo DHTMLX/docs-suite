@@ -20,10 +20,11 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr: 
 
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
+
 @related:
-treegrid/configuration.md#editinggridandseparatecolumns
+treegrid/configuration.md#editing-grid-and-separate-columns
 treegrid/initialization.md#initialize-treegrid
 
-**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 @changelog: added in v6.4

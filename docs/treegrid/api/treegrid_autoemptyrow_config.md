@@ -3,14 +3,14 @@ sidebar_label: autoEmptyRow
 title: autoEmptyRow
 ---          
 
-@short: adds an empty row after the last filled row in the Grid
+@short: adds an empty row after the last filled row in the TreeGrid
 
 @signature: {'autoEmptyRow?: boolean;'}
 
 @default: true
 
 @example: 
-var grid = new dhx.Grid("grid_container", {
+var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [// columns config],
 	autoEmptyRow:true,  /*!*/
 	data: dataset
@@ -20,6 +20,5 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
-@related:
-grid/configuration.md#automaticaddingofemptyrowintogrid
+
 

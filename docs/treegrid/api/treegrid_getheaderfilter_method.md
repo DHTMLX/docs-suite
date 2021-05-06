@@ -34,7 +34,7 @@ countryFilter.blur();
 
 **Related sample**: [TreeGrid. Get Header Filter](https://snippet.dhtmlx.com/vg5o912t)
 
-@related: treegrid/usage.md#gettingheaderfilter
+@related: treegrid/usage.md#getting-header-filter
 
 @changelog:
 added in 7.0

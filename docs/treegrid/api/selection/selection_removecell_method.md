@@ -31,7 +31,7 @@ treegrid.selection.removeCell(rowId, colId);
 
 
 
-@related: treegrid/usage_selection.md#removingselection
+@related: treegrid/usage_selection.md#removing-selection
 treegrid/configuration.md#selection
 
 @relatedapi: 

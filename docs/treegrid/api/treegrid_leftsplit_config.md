@@ -17,9 +17,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr: 
 
-@related: treegrid/configuration.md#frozencolumns
+**Related sample**: [TreeGrid. Frozen Columns](https://snippet.dhtmlx.com/46me58ze)
+
+@related: treegrid/configuration.md#frozen-columns
 treegrid/initialization.md#initialize-treegrid
 
-**Related sample**: [TreeGrid. Frozen Columns](https://snippet.dhtmlx.com/46me58ze)
 
 @changelog: added in v7.0

@@ -56,6 +56,6 @@ treegrid/api/treegrid_dragrowin_event.md
 treegrid/api/treegrid_dragrowout_event.md
 treegrid/api/treegrid_dragrowstart_event.md
 
-@related: treegrid/configuration.md#dragndropofgridrows
+@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows
 
 @changelog: added in v7.0

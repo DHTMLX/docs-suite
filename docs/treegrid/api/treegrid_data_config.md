@@ -34,7 +34,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 
 
-@descr: 
+@descr:
+
+**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
+
 1\. Starting with v7.1, you can specify the height of the cell via setting the number value to the **height** option when defining the data set: 
 
 ~~~js
@@ -82,8 +85,7 @@ var dataset = [
 
 
 @related: treegrid/configuration.md#data
-treegrid/initialization.md#initialize--treegrid
+treegrid/initialization.md#initialize-treegrid
 
 @relatedapi: treegrid/api/treegrid_autoheight_config.md
 
-**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)

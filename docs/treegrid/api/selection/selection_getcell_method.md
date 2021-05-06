@@ -21,7 +21,7 @@ var selectedCell = treegrid.selection.getCell();
 @descr:
 
 
-@related: treegrid/usage_selection.md#gettingobjectofaselectedcell
+@related: treegrid/usage_selection.md#getting-object-of-a-selected-cell
 
 @relatedapi: treegrid/api/selection/selection_enable_method.md
 

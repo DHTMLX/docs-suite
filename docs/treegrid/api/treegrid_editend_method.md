@@ -23,6 +23,6 @@ The method works with [any type of cell editors](treegrid/configuration.md#colum
 
 @relatedapi: treegrid/api/treegrid_editcell_method.md
 
-@related: treegrid/usage.md#editingdata, 
+@related: treegrid/usage.md#editing-data 
 
 @changelog: added in v6.3

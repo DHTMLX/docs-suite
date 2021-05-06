@@ -19,6 +19,7 @@ treegrid.events.on("CancelColumnDrop", function(data, events) {
 
 
 @descr:
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -52,6 +53,6 @@ treegrid/api/treegrid_dragcolumnin_event.md
 treegrid/api/treegrid_dragcolumnout_event.md
 treegrid/api/treegrid_dragcolumnstart_event.md
 
-@related: treegrid/configuration.md#dragndropofgridcolumns
+@related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns
 
 @changelog: added in v7.0

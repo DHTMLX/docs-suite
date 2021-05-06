@@ -23,6 +23,6 @@ treegrid.events.on("BeforeColumnShow", function(column){
 @descr:
 
 
-**Related sample**:  Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**:  [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @changelog: added in v7.0

@@ -45,7 +45,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-[https://snippet.dhtmlx.com/g38rr3so](https://snippet.dhtmlx.com/g38rr3so)
+**Related sample**: [TreeGrid. Content align](https://snippet.dhtmlx.com/g38rr3so)
 
 The available values of the option are "left", "center" and "right".
 
@@ -625,7 +625,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 Event handlers for HTML content
 -----------------------------------
 
-Starting from v7.0, you can add event handlers to the [HTML elements defined in the data set of TreeGrid](treegrid/configuration.md#htmlcontentoftreegridcolumns) with the help of the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property, for instance:
+Starting from v7.0, you can add event handlers to the [HTML elements defined in the data set of TreeGrid](treegrid/configuration.md#html-content-of-treegrid-columns) with the help of the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property, for instance:
 
 ~~~js
 const data = [
@@ -696,7 +696,7 @@ var grid = new dhx.Grid("grid_container", {
 }
 ~~~
 
-Then you will be able to change the width of columns using the mouse. With the cursor grab the right border and drag to the desired width.
+Then you will be able to change the width of columns using the mouse. Grab the right border цith the cursor and drag to the desired width.
 
 {{note If you also set the **autoWidth** configuration option, you will be able to change the width of columns only inside the container of Grid. }}
 
@@ -922,7 +922,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)
 
-**Note**, that if both the **spans** and [splitAt](treegrid/configuration.md#frozencolumns) properties are set in the Grid config, the following rules will be applied:
+**Note**, that if both the **spans** and [leftSplit](treegrid/api/treegrid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
 
 - All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
 - If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
@@ -962,7 +962,7 @@ var treeGrid = new dhx.TreeGrid("treegrid", {
 Width/height
 --------------
 
-You can specify necessary size of your TreeGrid via the configuration properties [](treegrid/api/treegrid_width_config.md) and treegrid/api/treegrid_height_config.md:
+You can specify necessary size of your TreeGrid via the configuration properties [](treegrid/api/treegrid_width_config.md) and [](treegrid/api/treegrid_height_config.md):
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {

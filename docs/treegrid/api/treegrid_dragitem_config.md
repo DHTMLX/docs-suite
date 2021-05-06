@@ -21,7 +21,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @related: 
 treegrid/initialization.md#initialize-treegrid
-treegrid/configuration.md#dragndropofgridcolumns
+treegrid/configuration.md#drag-n-drop-of-treegrid-columns
 
 @relatedapi: 
 treegrid/api/treegrid_aftercolumndrag_event.md

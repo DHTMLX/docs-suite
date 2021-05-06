@@ -27,6 +27,7 @@ treegrid.selection.events.on("BeforeSelect", function(row, col){
 
 
 @descr:
+
 It is also possible to use the simplified version of the event:
 
 ~~~js

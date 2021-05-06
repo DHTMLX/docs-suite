@@ -22,7 +22,7 @@ treegrid.hideRow(rowId);
 treegrid/api/treegrid_showrow_method.md
 treegrid/api/treegrid_isrowhidden_method.md
 
-@related: treegrid/usage.md#hidingshowingarow
+@related: treegrid/usage.md#hidingshowing-a-row
 
 @changelog:
 added in v7.0

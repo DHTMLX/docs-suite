@@ -24,7 +24,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 **Related sample**:
 - [TreeGrid. Auto height](https://snippet.dhtmlx.com/4158ftak)
 
-Note, that the **autoHeight** option does not adjust the height of the cells in the header/footer of TreeGrid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the treegrid/api/treegrid_headerrowheight_config.md and treegrid/api/treegrid_footerrowheight_config.md configuration options of TreeGrid.
+Note, that the **autoHeight** option does not adjust the height of the cells in the header/footer of TreeGrid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](treegrid/api/treegrid_headerrowheight_config.md) and [](treegrid/api/treegrid_footerrowheight_config.md) configuration options of TreeGrid.
 
 @related: treegrid/configuration.md#autoheight-for-columns
 
