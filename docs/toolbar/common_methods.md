@@ -301,6 +301,3 @@ toolbar.data.move("2",0);
 ~~~
 
 {{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}}
-
-@todo:
-check, add info about adding popup into toolbar

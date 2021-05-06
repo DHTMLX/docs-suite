@@ -30,8 +30,3 @@ Title can be hidden and shown with the help of the related methods. Pass the id 
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
-
-
-
-@todo:
-add an image, when fixed 

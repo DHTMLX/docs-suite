@@ -189,5 +189,3 @@ toolbar.data.add({
 
 See [the full list of properties](menu/api/api_spacer_properties.md) that you can provide in the configuration object of a Spacer control.
 
-@todo:
-add links to api and to samples, complete the list of attrs for item

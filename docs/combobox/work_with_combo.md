@@ -273,6 +273,3 @@ combo.data.remove("option_id");
 {{note Check the full list of [Data collection API](data_collection/api/refs/datacollection.md)}}
 
 
-@todo:
-add a section about sorting in ComboBox<br/>
-

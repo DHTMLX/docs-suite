@@ -113,7 +113,3 @@ layout.getCell("toolbar").toggle();
 ~~~
 
 **Related sample**: [Layout. Toggle](https://snippet.dhtmlx.com/t38tqk0k)
-
-@todo:
-complete<br/>
-attach()? getParent()? 
