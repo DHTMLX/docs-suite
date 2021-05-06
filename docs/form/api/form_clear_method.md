@@ -25,6 +25,8 @@ form.clear();
 
 @descr:
 
+**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
+
 The method may clear a form in one of three modes:
 
 - "value" - clears only form values
@@ -35,7 +37,5 @@ The method may clear a form in one of three modes:
 
 @related:form/work_with_form.md#clearing-form
 
-**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 
 @changelog: added in v6.1
-

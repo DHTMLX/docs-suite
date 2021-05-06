@@ -27,4 +27,3 @@ form.getItem("radiogroup").events.on("BeforeChangeProperties", function(properti
 
 
 @changelog: added in v7.0
-

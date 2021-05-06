@@ -22,6 +22,7 @@ tree.events.on("afterCheck", function (index, id, value) {
 
 @descr:
 
-@changelog: added in v7.1
 
 @relatedapi: tree/api/tree_beforecheck_event.md
+
+@changelog: added in v7.1

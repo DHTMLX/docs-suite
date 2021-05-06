@@ -27,4 +27,3 @@ form.getItem("simplevault").events.on("BeforeChangeProperties", function(propert
 
 
 @changelog: added in v7.0
-

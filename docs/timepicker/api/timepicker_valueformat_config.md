@@ -34,4 +34,3 @@ timepicker/api/timepicker_beforeclose_event.md
 timepicker/api/timepicker_change_event.md
 
 @changelog: added in v7.0
-

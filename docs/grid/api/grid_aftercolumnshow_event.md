@@ -20,7 +20,6 @@ grid.events.on("AfterColumnShow", function(column){
 
 @descr:
 
-@changelog: added in v7.0
-
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
+@changelog: added in v7.0

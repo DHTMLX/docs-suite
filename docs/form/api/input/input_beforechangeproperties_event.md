@@ -27,4 +27,3 @@ form.getItem("input").events.on("BeforeChangeProperties", function(properties) {
 
 
 @changelog: added in v7.0
-

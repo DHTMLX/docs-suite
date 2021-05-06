@@ -37,7 +37,6 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-@changelog: added in v7.0
 
 @relatedapi:
 treegrid/api/treegrid_dragitem_config.md
@@ -51,3 +50,5 @@ treegrid/api/treegrid_dragcolumnout_event.md
 treegrid/api/treegrid_dragcolumnstart_event.md
 
 @related: treegrid/configuration.md#dragndropofgridcolumns
+
+@changelog: added in v7.0

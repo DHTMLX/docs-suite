@@ -35,7 +35,8 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 
 
-@descr: 
+@descr:
+
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 <table class="webixdoc_links">
@@ -93,7 +94,6 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-@changelog: added in v7.0
 
 **Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
@@ -101,3 +101,5 @@ const grid = new dhx.Grid("grid", {
 @related: treegrid/initialization.md#initialize-treegrid
 treegrid/configuration.md#eventhandlersforhtmlcontent
 treegrid/customization.md#addingtemplatetocells
+
+@changelog: added in v7.0

@@ -40,7 +40,7 @@ The data object can contain the following parameters:
 </table>
 
 
-@changelog: added in v7.0
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 
 @relatedapi:
 list/api/list_afterdrag_event.md
@@ -52,5 +52,5 @@ list/api/list_dragin_event.md
 list/api/list_dragout_event.md
 list/api/list_dragstart_event.md
 
-**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 
+@changelog: added in v7.0

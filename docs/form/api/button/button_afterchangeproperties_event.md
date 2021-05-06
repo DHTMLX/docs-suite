@@ -22,4 +22,3 @@ form.getItem("button").events.on("AfterChangeProperties", function(properties) {
 @relatedapi: form/api/button/button_setproperties_method.md
 
 @changelog: added in v7.0
-

@@ -22,4 +22,3 @@ form.getItem("simplevault").events.on("AfterChangeProperties", function(properti
 @relatedapi: form/api/simplevault/simplevault_setproperties_method.md
 
 @changelog: added in v7.0
-

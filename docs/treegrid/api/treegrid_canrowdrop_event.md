@@ -38,9 +38,6 @@ The data object contains the following parameters:
 </table>
 
 
-
-@changelog: added in v7.0
-
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @relatedapi:
@@ -55,3 +52,5 @@ treegrid/api/treegrid_dragrowout_event.md
 treegrid/api/treegrid_dragrowstart_event.md
 
 @related: treegrid/configuration.md#dragndropofgridrows
+
+@changelog: added in v7.0

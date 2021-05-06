@@ -22,6 +22,7 @@ treegrid.events.on("afterSort", (col, dir) => {
 
 @descr:
 
-@changelog: added in v7.1
 
 @relatedapi: treegrid/api/treegrid_beforesort_event.md
+
+@changelog: added in v7.1

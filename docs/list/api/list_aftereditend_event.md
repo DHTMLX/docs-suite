@@ -28,4 +28,3 @@ list.events.on("AfterEditEnd", function(value,id){
 - [List. List Events	](https://snippet.dhtmlx.com/iwt1yd61)
 
 @changelog: added in v6.1
-

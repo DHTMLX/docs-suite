@@ -42,7 +42,7 @@ The data object can contain the following parameters:
 </table>
 
 
-@changelog: added in v7.0
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @relatedapi:
 tree/api/tree_afterdrag_event.md
@@ -54,4 +54,5 @@ tree/api/tree_dragin_event.md
 tree/api/tree_dragout_event.md
 tree/api/tree_dragstart_event.md
 
-**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+
+@changelog: added in v7.0
