@@ -19,6 +19,10 @@ var tree = new dhx.Tree("tree_container", {css: "bg-gray"});
 
 @descr: 
 
+**Related samples**:
+- [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
+- [Tree. Custom Toggle Icon](https://snippet.dhtmlx.com/zapehxd3)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Tree.
 
 ~~~js
@@ -57,6 +61,3 @@ var tree = new dhx.Tree("tree", {
 @related: tree/initialization_of_dhtmlxtree.md#initialize-tree
 tree/setting_tree_appearance.md#styling
 
-**Related samples**:
-- [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
-- [Tree. Custom Toggle Icon](https://snippet.dhtmlx.com/zapehxd3)

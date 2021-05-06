@@ -29,4 +29,4 @@ tree/api/tree_getchecked_method.md
 
 
 
-@related: tree/work_with_tree.md#workingwithcheckboxes
+@related: tree/work_with_tree.md#working-with-checkboxes

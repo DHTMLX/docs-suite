@@ -24,6 +24,7 @@ var treeState = tree.getState();
 
 
 @descr:
+
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
 <table class="webixdoc_links">
@@ -46,14 +47,12 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
 </table>
 
 
+**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
 
 @relatedapi:
 tree/api/tree_setstate_method.md
 
-**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
 
-
-
-@related: tree/work_with_tree.md#settinggettingtreestate
+@related: tree/work_with_tree.md#settinggetting-tree-state
 
 

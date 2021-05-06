@@ -19,7 +19,7 @@ tree.collapse("history");
 
 **Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
 
-@related: tree/work_with_tree.md#expandingcollapsingitems
+@related: tree/work_with_tree.md#expandingcollapsing-items
 
 
 

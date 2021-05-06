@@ -13,7 +13,8 @@ var tree = new dhx.Tree("tree_container", {
 });
 
 
-@descr: 
+@descr:
+
 Drag-n-drop can work in three modes: 
 
 - "target" - a tree takes items from other trees, while its items can't be dragged out of it
@@ -23,4 +24,4 @@ Drag-n-drop can work in three modes:
 **Related sample**: [Tree. Drag Modes](https://snippet.dhtmlx.com/7idtw7i4)
 
 @related: tree/initialization_of_dhtmlxtree.md#initialize-tree
-tree/drag_and_drop_handling.md#dragmode
+tree/drag_and_drop_handling.md#drag-mode

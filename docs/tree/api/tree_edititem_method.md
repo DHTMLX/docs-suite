@@ -17,6 +17,7 @@ tree.editItem(id);
 
 
 @descr:
+
 The **config** parameter includes the following properties:
 
 <table class="webixdoc_links">
@@ -35,13 +36,13 @@ The **config** parameter includes the following properties:
     </tbody>
 </table>
 
+**Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 
-@related: tree/work_with_tree.md#editinganitem
+@related: tree/work_with_tree.md#editing-an-item
 
 @relatedapi: tree/api/tree_editable_config.md
 
 
 
-**Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 
 

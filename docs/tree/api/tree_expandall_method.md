@@ -14,10 +14,9 @@ tree.expandAll();
 
 @descr:
 
-@related: tree/work_with_tree.md#expandingcollapsingitems
-
 **Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
 
+@related: tree/work_with_tree.md#expandingcollapsing-items
 
 
 @relatedapi:

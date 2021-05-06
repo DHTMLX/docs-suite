@@ -14,10 +14,14 @@ data.load("../common/treedata.json");
 var tree = new dhx.Tree("tree", {data: data});
 
 
-@descr: 
+@descr:
+
+**Related samples**:
+- [Tree. Config Data](https://snippet.dhtmlx.com/r49y51k3)
+- [Tree. Init With External Data](https://snippet.dhtmlx.com/osjo7t0h)
+
 Each **data** object can have the following properties:
 
-``` todo
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -46,7 +50,7 @@ Each **data** object can have the following properties:
 		</tr>
     </tbody>
 </table>
-``` 
+
 ~~~js
 var tree = new dhx.Tree("tree", {
     data:[
@@ -92,7 +96,4 @@ tree.data.getItem("Books").parent
 @related: tree/initialization_of_dhtmlxtree.md#initialize--tree
 tree/loading_data.md#preparing-data-set
 
-**Related samples**:
-- [Tree. Config Data](https://snippet.dhtmlx.com/r49y51k3)
-- [Tree. Init With External Data](https://snippet.dhtmlx.com/osjo7t0h)
 
