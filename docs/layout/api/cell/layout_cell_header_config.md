@@ -15,7 +15,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
@@ -26,4 +26,4 @@ layout/api/cell/layout_cell_headericon_config.md
 layout/api/cell/layout_cell_headerimage_config.md
 
 @related: layout/init.md#initialize-layout
-layout/cell_configuration.md#heightofaheadercell
+layout/cell_configuration.md#height-of-a-header-cell

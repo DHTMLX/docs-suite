@@ -18,6 +18,6 @@ form.getItem("CheckboxGroup").events.on("AfterHide", function(value, init) {
 });
 
 
-@template: api_event
+
 @descr:
 

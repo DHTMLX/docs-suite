@@ -12,7 +12,7 @@ tree.events.on("AfterDrop", function(data, events) {
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 The data object can contain the following parameters:
 
@@ -46,4 +46,4 @@ tree/api/tree_dragin_event.md
 tree/api/tree_dragout_event.md
 tree/api/tree_dragstart_event.md
 
-[Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)

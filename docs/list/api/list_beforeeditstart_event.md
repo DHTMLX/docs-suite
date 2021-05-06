@@ -20,7 +20,7 @@ list.events.on("BeforeEditStart", function(value,id){
 });
 
 
-@template:	api_event
+
 @descr:
 
 

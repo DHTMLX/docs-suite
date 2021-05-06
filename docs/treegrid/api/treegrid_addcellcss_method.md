@@ -22,7 +22,7 @@ title: addCellCss
 grid.addCellCss("1", "b", "myCustomClass");
 
 
-@template: api_method
+
 @descr:
 
 
@@ -30,6 +30,6 @@ grid.addCellCss("1", "b", "myCustomClass");
 
 **Related sample**: [TreeGrid. Add cell css](https://snippet.dhtmlx.com/smjecfzp)
 
-@changelog:
+
 
 

@@ -24,7 +24,7 @@ var items = component.data.findAll(function(items){
 	if(items.text==="Manager"||items.text==="Marketer"){return true}
 });
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Data. Find All](https://snippet.dhtmlx.com/kvemrz93)

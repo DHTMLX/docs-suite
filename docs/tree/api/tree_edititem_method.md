@@ -15,7 +15,7 @@ title: editItem
 tree.editItem(id);
 
 
-@template: api_method
+
 @descr:
 The **config** parameter includes the following properties:
 
@@ -40,7 +40,7 @@ The **config** parameter includes the following properties:
 
 @relatedapi: tree/api/tree_editable_config.md
 
-@changelog:
+
 
 **Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 

@@ -20,7 +20,7 @@ form.getItem("colorpicker").events.on("BeforeChangeProperties", function(propert
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/colorpicker/colorpicker_setproperties_method.md

@@ -20,7 +20,7 @@ var rect = grid.getCellRect("1","c");
 // -> {x: 200, y: -40, height: 40, width: 200}
 
 
-@template: api_method
+
 @descr:
 
 The return object includes the following attributes:
@@ -49,6 +49,5 @@ The return object includes the following attributes:
 
 @related: grid/usage.md#working-with-columns-and-cells
 
-@changelog:
 
 

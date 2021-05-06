@@ -11,13 +11,13 @@ title: destructor
 grid.destructor();
 
 
-@template: api_method
+
 @descr:
 
 @related: grid/usage.md#destructing-grid
 
 
 
-@changelog:
+
 
 

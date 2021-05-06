@@ -16,8 +16,9 @@ ribbon.disable("save_btn");
 ribbon.disable(["cancel_btn","del_btn"]);
 
 
-@template: api_method
+
 @descr:
+
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 
 ~~~js
@@ -28,6 +29,6 @@ ribbon.disable();
 
 **Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
-@changelog:
 
-@related: ribbon/operating_ribbon.md#disablingandenablingcontrols
+
+@related: ribbon/operating_ribbon.md#disabling-and-enabling-controls

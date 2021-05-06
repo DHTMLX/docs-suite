@@ -12,11 +12,12 @@ var combobox = new dhx.Combobox("combo_container",{
 	helpMessage:"Some text"
 });
 
-@template:	api_config
-@descr:  
-The property is useful while using Combobox in form.
 
-@changelog: added in v6.4
+@descr:
+
+The property is useful while using Combobox in form.
 
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/configuration.md#help-icon
+
+@changelog: added in v6.4

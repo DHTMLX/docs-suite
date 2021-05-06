@@ -15,7 +15,7 @@ title: scrollTo
 grid.scrollTo("15","c");
 
 
-@template: api_method
+
 @descr:
 
 @related: treegrid/usage.md#controllingscrollbehavior
@@ -25,6 +25,6 @@ grid.scrollTo("15","c");
 @relatedapi: treegrid/api/treegrid_scroll_method.md
 treegrid/api/treegrid_getscrollstate_method.md
 
-@changelog:
+
 
 

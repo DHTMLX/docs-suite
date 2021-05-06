@@ -23,8 +23,9 @@ var ribbon = new dhx.Ribbon({
 });
 
 
-@template:	api_config
-@descr: 
+
+@descr:
+ 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Ribbon.
 
 ~~~js

@@ -19,7 +19,7 @@ tree.events.on("afterCheck", function (index, id, value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.1

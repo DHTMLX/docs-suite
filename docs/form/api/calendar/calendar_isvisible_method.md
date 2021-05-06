@@ -15,7 +15,7 @@ param   boolean     true, if a control is visible, otherwise false
 form.getItem("datepicker").isVisible(); 
 // -> true/false
 
-@template: api_method
+
 @descr:
 
 

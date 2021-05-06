@@ -17,7 +17,7 @@ grid.events.on("HeaderCellMouseOver", function(column,e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

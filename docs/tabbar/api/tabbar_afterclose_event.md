@@ -17,9 +17,10 @@ tabbar.events.on("AfterClose", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
-@changelog: added in v6.4
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
+
+@changelog: added in v6.4

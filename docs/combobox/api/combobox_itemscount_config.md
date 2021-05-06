@@ -16,7 +16,7 @@ var combo = new dhx.Combobox("combo_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 As a function takes one parameter:
 

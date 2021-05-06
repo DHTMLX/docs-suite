@@ -16,7 +16,7 @@ form.getItem("combo").isDisabled();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

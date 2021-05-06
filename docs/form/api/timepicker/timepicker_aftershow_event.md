@@ -15,7 +15,7 @@ form.getItem("timepicker").events.on("AfterShow", function(value) {
     console.log("AfterShow", value);
 });
 
-@template: api_event
+
 @descr:
 The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):
 

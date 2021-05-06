@@ -14,13 +14,14 @@ var timepicker = new dhx.Timepicker("timepicker", {
 	controls: true
 });
 
-@template:	api_config
+
 @descr: 
 
 
 **Related sample**: [Timepicker. Timepicker With Controls](https://snippet.dhtmlx.com/ybnqq5ej)
 
-@changelog: added in v6.4
 
 @related: timepicker/configuration.md#actionsbuttons
 timepicker/initialization.md#initialize-timepicker
+
+@changelog: added in v6.4

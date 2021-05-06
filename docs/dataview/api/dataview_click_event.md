@@ -18,7 +18,7 @@ dataview.events.on("Click", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

@@ -14,7 +14,7 @@ var calendar = new dhx.Calendar("calendar_container", {
     timePicker: true      
 });
 
-@template:	api_config
+
 @descr: 
 You can define the format of displaying time in a timepicker via the [](calendar/api/calendar_timeformat_config.md) property.
 

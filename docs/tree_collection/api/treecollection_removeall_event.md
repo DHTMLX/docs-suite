@@ -14,5 +14,5 @@ data.events.on("RemoveAll", function(){
 	console.log("Items are removed");
 });
 
-@template:	api_event
+
 @descr:

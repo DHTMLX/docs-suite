@@ -23,10 +23,10 @@ dhx.ajax.post(url, {name: "foo", title: "bar"}).then(function (data) {
 	console.log(err);
 });
 
-**Related sample**: [Data. Ajax POST](https://snippet.dhtmlx.com/eyr9mapj)
-@template:	api_method
-
 @descr:
+
+**Related sample**: [Data. Ajax POST](https://snippet.dhtmlx.com/eyr9mapj)
+
 The **config** object can contain following options:
 
 - **responseType** - the type of data that you are expecting back from the server. The available types are:

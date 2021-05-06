@@ -16,7 +16,7 @@ title: unsetFullScreen
 dhxWindow.unsetFullScreen();
 
 
-@template: api_method
+
 @descr:
 
 @related:window/usage.md#fullscreen-mode

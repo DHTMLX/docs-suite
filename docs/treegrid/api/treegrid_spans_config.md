@@ -20,7 +20,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 Each object in the spans array contains the following properties:
 

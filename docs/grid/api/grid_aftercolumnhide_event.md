@@ -16,9 +16,9 @@ grid.events.on("AfterColumnHide", function(column){
 });
 
 
-@template: api_event
+
 @descr:
 
-**Related Sample:** [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v7.0

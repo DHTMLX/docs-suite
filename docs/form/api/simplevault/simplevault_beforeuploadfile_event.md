@@ -18,7 +18,7 @@ form.getItem("simpleVault").events.on("BeforeUploadFile", function(file, value) 
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: 

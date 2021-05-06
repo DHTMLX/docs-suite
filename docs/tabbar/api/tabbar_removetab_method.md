@@ -15,13 +15,15 @@ var id = tabbar.getId(0);
 tabbar.removeTab(id);
 
 
-@template: api_method
+
 @descr:
+
+
+**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
 
 @relatedapi: tabbar/api/tabbar_addtab_method.md
 
+
+@related: tabbar/work_with_tabbar.md#addingremoving-tabs
+
 @changelog: added in v6.4
-
-@related: tabbar/work_with_tabbar.md#addingremovingtabs
-
-**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)

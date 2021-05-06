@@ -15,7 +15,7 @@ data.events.on("AfterAdd", function(newItem){
 	console.log("A new item is added");
 });
 
-@template:	api_event
+
 @descr:
 
 @relatedapi:data_collection/api/beforeadd_event.md

@@ -14,7 +14,7 @@ title: setFocus
 colorpicker.setFocus("#BDF0E9");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Colorpicker. Set Focus](https://snippet.dhtmlx.com/fg13r3uh)

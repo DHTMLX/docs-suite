@@ -11,13 +11,13 @@ title: paint
 tree.paint();
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-@changelog:
+
 
 

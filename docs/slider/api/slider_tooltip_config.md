@@ -15,14 +15,15 @@ var slider = new dhx.Slider("slider_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
 
 **Related sample**: [Slider. Tooltip For The Slider](https://snippet.dhtmlx.com/sxh66mnu)
 
-@changelog: added in v6.4
 
 @related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#tooltip
+
+@changelog: added in v6.4

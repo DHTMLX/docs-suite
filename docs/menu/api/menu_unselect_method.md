@@ -18,7 +18,7 @@ menu.unselect();
 menu.unselect("align-left");
 
 
-@template: api_method
+
 @descr:
 
 @related: menu/work_with_menu.md#selectingunselectinganitem
@@ -29,7 +29,7 @@ menu/api/menu_isselected_method.md
 menu/api/menu_getselected_method.md
 
 
-[Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 @changelog:
 added in v7.0

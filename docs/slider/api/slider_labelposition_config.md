@@ -13,14 +13,15 @@ var slider = new dhx.Slider("slider_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
-@changelog: added in v6.4
 
 **Related sample**: [Slider. Slider Label](https://snippet.dhtmlx.com/4o7yttam)
 
 @related: 
 @related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#sliderlabel
+slider/configuring_slider.md#slider-label
+
+@changelog: added in v6.4

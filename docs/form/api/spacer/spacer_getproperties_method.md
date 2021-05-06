@@ -29,7 +29,7 @@ form.getItem("spacer").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **Spacer** control can contain the following configuration attributes:
 
@@ -54,5 +54,3 @@ The returned object of the **Spacer** control can contain the following configur
 
 
 @changelog: added in v7.0
-
-

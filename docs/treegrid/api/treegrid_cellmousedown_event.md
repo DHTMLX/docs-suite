@@ -17,7 +17,7 @@ grid.events.on("CellMouseDown", function(row,column,e){
      // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

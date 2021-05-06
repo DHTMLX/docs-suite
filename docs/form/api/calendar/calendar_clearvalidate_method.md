@@ -13,7 +13,7 @@ title: clearValidate
 form.getItem("datepicker").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

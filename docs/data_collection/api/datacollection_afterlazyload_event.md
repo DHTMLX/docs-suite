@@ -16,7 +16,7 @@ data.events.on("AfterLazyLoad", function (from, count) {
     // your code here
 });
 
-@template:	api_event
+
 @descr:
 
 @related: helpers/lazydataproxy.md

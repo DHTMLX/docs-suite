@@ -14,7 +14,7 @@ title: getWidget
 var window = dhxWindow.getWidget(); 
 
 
-@template: api_method
+
 @descr:
 
 @changelog:

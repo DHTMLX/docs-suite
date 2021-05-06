@@ -19,11 +19,12 @@ ribbon.isDisable("id"); // -> returns true/false
 
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
-@changelog: added in v6.4
 
-@related: ribbon/operating_ribbon.md#checkingifaribbonitemisdisabled
+@related: ribbon/operating_ribbon.md#checking-if-a-ribbon-item-is-disabled
+
+@changelog: added in v6.4

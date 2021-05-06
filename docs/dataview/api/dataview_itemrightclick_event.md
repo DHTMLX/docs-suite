@@ -13,18 +13,10 @@ dataview.events.on("ItemRightClick", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**:
 - [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.4
-
-
-
-
-
-
-
-

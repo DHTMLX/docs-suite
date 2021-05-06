@@ -53,7 +53,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the list/api/list_dragmode_config.md:
+In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the [](list/api/list_dragmode_config.md):
 
 ~~~js
 var list = new dhx.List("list_container", { 
@@ -62,7 +62,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-Read more about multiselection in List [below](#multipleselectionofitems).
+Read more about multiselection in List [below](#multiple-selection-of-items).
 
 **Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
 
@@ -176,7 +176,7 @@ Selection of items
 
 ![](../assets/list/disable_selection.png)
 
-[List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
+**Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 
 The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [](list/api/list_selection_config.md) configuration property to *false*:
@@ -257,11 +257,10 @@ const list = new dhx.List("list", {
 });
 ~~~
 
-[List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
+**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
 
 The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pairs, where: 
 
-``` todo это же есть на странице API, возможно не стоит дублировать
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -278,5 +277,3 @@ The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pa
 		</tr>
     </tbody>
 </table>
-
-```

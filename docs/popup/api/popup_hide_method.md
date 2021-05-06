@@ -10,7 +10,7 @@ title: hide
 @example:
 popup.hide();
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
@@ -18,8 +18,8 @@ popup.hide();
 @relatedapi:
 popup/api/popup_show_method.md
 
-@related:popup/work_with_popup.md#hidingshowingpopup
+@related:popup/work_with_popup.md#hidingshowing-popup
 
-@changelog:
+
 
 

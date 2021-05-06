@@ -17,11 +17,11 @@ var grid = new dhx.Grid("grid", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
-[Grid. Hiding Tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
+**Related sample**: [Grid. Hiding Tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 
 
 
@@ -29,4 +29,3 @@ var grid = new dhx.Grid("grid", {
 grid/configuration.md#tooltip
 
 @changelog: added in v6.5
-

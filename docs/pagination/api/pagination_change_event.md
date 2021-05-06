@@ -18,9 +18,9 @@ pagination.events.on("Change", function(index, previousIndex) {
 });
 
 
-@template: api_event
+
 @descr:
 
 
 
-[Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)
+**Related sample**: [Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)

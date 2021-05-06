@@ -11,7 +11,7 @@ title: clearValidate
 form.getItem("combo").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

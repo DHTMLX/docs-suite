@@ -22,7 +22,7 @@ form.getItem("CheckboxGroup").events.on("BeforeShow", function(value) {
 });
 
 
-@template: api_event
+
 @descr:
 
 

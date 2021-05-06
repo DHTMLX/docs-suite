@@ -11,7 +11,7 @@ title: disable
 form.getItem("radiogroup").disable();
 
 
-@template: api_method
+
 @descr:
 
 

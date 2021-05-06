@@ -16,7 +16,7 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-@template:	api_config
+
 @descr: 
 
 @related: window/how_to_start.md

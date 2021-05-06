@@ -15,7 +15,7 @@ dhxWindow.getContainer();
 // -> div.dhx_popup.dhx_widget.dhx_popup--window
 
 
-@template: api_method
+
 @descr:
 
 

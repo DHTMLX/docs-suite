@@ -24,15 +24,15 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 tabbar.setActive("2");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tabbar. Set Active](https://snippet.dhtmlx.com/u9ryz38f)
 
 @relatedapi: tabbar/api/tabbar_getactive_method.md
 
-@related: tabbar/work_with_tabbar.md#settinggettingtheactivetab
+@related: tabbar/work_with_tabbar.md#settinggetting-the-active-tab
 
-@changelog:
+
 
 

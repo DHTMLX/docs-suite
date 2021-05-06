@@ -11,7 +11,7 @@ title: show
 form.getItem("checkbox").show(); 
 
 
-@template: api_method
+
 @descr:
 
 

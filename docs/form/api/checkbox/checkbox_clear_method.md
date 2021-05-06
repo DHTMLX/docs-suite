@@ -15,7 +15,7 @@ title: clear
 form.getItem("checkbox").clear();
 
 
-@template: api_method
+
 @descr:
 
 

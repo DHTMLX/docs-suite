@@ -17,7 +17,7 @@ form.getItem("select").events.on("ChangeOptions", function(options) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

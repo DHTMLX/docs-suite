@@ -31,7 +31,7 @@ var config = chart.getSeries("A");
 */
 
 
-@template: api_method
+
 @descr:
 
 
@@ -39,7 +39,5 @@ var config = chart.getSeries("A");
 chart/usage.md#gettingseriesconfiguration
 
 **Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
-
-@changelog:
 
 

@@ -16,7 +16,7 @@ treegrid.events.on("DragRowStart", function(data, events) {
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 The data object contains the following parameters:
 
@@ -41,7 +41,7 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-[TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @relatedapi:
 treegrid/api/treegrid_dragmode_config.md

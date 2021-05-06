@@ -13,11 +13,12 @@ title: isDisabled
 @example:
 slider.isDisabled(); // -> true/false
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Slider. Is Disabled Slider](https://snippet.dhtmlx.com/fbo18fue)
 
-@changelog: added in v6.4
 
-@related: slider/usage.md#checkingifasliderisdisabled
+@related: slider/usage.md#checking-if-a-slider-is-disabled
+
+@changelog: added in v6.4

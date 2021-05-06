@@ -14,13 +14,13 @@ title: getWidget
 popup.getWidget();  
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-@changelog:
+
 
 

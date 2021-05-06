@@ -20,15 +20,15 @@ const pageIndex = pagination.getPage();
 // -> 3
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-[Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
+**Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
-@changelog:
 
-@related: pagination/usage.md#settinggettingtheactivepage
+
+@related: pagination/usage.md#settinggetting-the-active-page

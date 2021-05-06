@@ -14,8 +14,8 @@ var slider = new dhx.Slider("slider_container", {
     max:200
 });
 
-@template:	api_config
+
 @descr: 
 
 @related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#minimalandmaximalvalues
+slider/configuring_slider.md#minimal-and-maximal-values

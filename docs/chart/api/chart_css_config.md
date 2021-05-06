@@ -31,7 +31,7 @@ var chart = new dhx.Chart("chart", {
     ]
 });
 
-@template:	api_config
+
 @descr: 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Chart.
 
@@ -70,5 +70,5 @@ var chart = new dhx.Chart({
 **Related sample**:
 - [Chart. Custom Styling](https://snippet.dhtmlx.com/p82iew5s)
 
-@related: chart/customization.md#stylingchart
+@related: chart/customization.md#styling-chart
 

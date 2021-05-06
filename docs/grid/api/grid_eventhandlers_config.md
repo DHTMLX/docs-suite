@@ -34,7 +34,7 @@ const grid = new dhx.Grid("grid", {
 });
 
 
-@template:	api_config
+
 @descr:
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
@@ -95,7 +95,7 @@ const grid = new dhx.Grid("grid", {
 ~~~
 
 
-[Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
+**Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
 
 
 @related: grid/initialization.md#initialize-grid

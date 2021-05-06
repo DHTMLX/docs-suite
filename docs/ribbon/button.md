@@ -49,7 +49,7 @@ You can add a custom element to a button with the help of the **html** property:
 }
 ~~~
 
-[Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
+**Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
 
 ## Showing/hiding Button 
 

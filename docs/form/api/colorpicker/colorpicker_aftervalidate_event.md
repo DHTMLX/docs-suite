@@ -18,7 +18,7 @@ form.getItem("colorpicker").events.on("AfterValidate", function(value, isValid) 
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/colorpicker/colorpicker_validate_method.md

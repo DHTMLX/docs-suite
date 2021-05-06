@@ -15,12 +15,12 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
 @related: layout/init.md#initialize-layout
-layout/cell_configuration.md#hiddencell
+layout/cell_configuration.md#hidden-cell
 
 @relatedapi: 
 layout/api/layout_show_method.md

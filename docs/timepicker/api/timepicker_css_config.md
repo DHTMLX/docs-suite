@@ -20,8 +20,9 @@ var timepicker = new dhx.Timepicker("timepicker", {
 });
 
 
-@template:	api_config
+
 @descr:
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of TimePicker.
 
 ~~~js

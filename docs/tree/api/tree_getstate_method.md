@@ -22,7 +22,7 @@ var treeState = tree.getState();
 */
 
 
-@template: api_method
+
 @descr:
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
@@ -52,7 +52,7 @@ tree/api/tree_setstate_method.md
 
 **Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
 
-@changelog:
+
 
 @related: tree/work_with_tree.md#settinggettingtreestate
 

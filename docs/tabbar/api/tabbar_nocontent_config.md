@@ -14,10 +14,10 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     noContent:true
 });
 
-@template:	api_config
+
 @descr: 
 
-@related: tabbar/configuring_tabbar.md#tabswithoutcontent,
-tabbar/init.md#definetabbarstructure
+@related: tabbar/configuring_tabbar.md#tabs-without-content
+tabbar/init.md#define-tabbar-structure
 
 **Related sample**: [Tabbar. Without Content](https://snippet.dhtmlx.com/7jzrifql)

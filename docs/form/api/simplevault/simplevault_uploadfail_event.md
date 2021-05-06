@@ -16,7 +16,7 @@ form.getItem("simpleVault").events.on("UploadFail", function(file, value) {
     console.log("UploadFail", file, value);
 });
 
-@template: api_event
+
 @descr:
 
 @changelog:

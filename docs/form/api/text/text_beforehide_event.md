@@ -23,7 +23,7 @@ form.getItem("text").events.on("BeforeHide", function(value, init) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0

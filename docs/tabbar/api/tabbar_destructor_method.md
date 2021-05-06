@@ -10,9 +10,9 @@ title: destructor
 @example:
 tabbar.destructor();
 
-@template: api_method
+
 @descr:
 
-@changelog:
+
 
 

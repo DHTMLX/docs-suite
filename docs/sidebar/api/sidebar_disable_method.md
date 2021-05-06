@@ -16,8 +16,9 @@ sidebar.disable("search");
 sidebar.disable(["search", "currentButton", "edit"]);
 
 
-@template: api_method
+
 @descr:
+
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 
 ~~~js
@@ -30,6 +31,6 @@ sidebar.disable();
 **Related sample**:
 - [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
-@changelog:
+
 
 @related: sidebar/work_with_sidebar.md#disabling-and-enabling-controls

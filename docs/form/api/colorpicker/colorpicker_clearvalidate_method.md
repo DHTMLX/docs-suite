@@ -13,7 +13,7 @@ title: clearValidate
 form.getItem("colorpicker").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

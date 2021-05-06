@@ -11,13 +11,13 @@ title: destructor
 popup.destructor();
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-@changelog:
+
 
 

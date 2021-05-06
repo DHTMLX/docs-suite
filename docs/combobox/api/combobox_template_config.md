@@ -17,7 +17,7 @@ var combo = new dhx.Combobox("combo_container", {
     }
 });
 
-@template:	api_config
+
 @descr: 
 The **template** function takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 

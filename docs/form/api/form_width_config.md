@@ -37,7 +37,7 @@ var form = new dhx.Form("form_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
@@ -48,6 +48,6 @@ var form = new dhx.Form("form_container", {
 @related: form/how_to_start.md#initialize-form
 form/configuration.md#widthheight
 
-@relatedapi: form/api/form_height_property.md
+@relatedapi: form/api/form_height_config.md
 
 @changelog: added in v6.4

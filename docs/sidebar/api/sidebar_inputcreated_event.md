@@ -18,7 +18,7 @@ sidebar.events.on("InputCreated", function(id, el){
 });
 
 
-@template: api_event
+
 @descr:
 
 @related: sidebar/events.md

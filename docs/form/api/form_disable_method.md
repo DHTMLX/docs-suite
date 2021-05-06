@@ -12,7 +12,7 @@ title: disable
 @example:
 form.disable();
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)

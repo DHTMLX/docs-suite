@@ -21,7 +21,7 @@ grid.events.on("beforeSort", (col, dir) => {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: grid/api/grid_aftersort_event.md

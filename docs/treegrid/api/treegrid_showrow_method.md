@@ -13,10 +13,10 @@ title: showRow
 @example:
 treegrid.showRow(rowId);
 
-@template: api_method
+
 @descr:
 
-[TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
 @relatedapi: 
 treegrid/api/treegrid_hiderow_method.md

@@ -21,11 +21,11 @@ title: addRowCss
 grid.addRowCss("2", "myCustomClass");
 
 
-@template: api_method
+
 @descr:
 
 @related: treegrid/customization.md#stylingrows
 
 **Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
 
-@changelog:
+

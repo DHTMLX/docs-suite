@@ -17,7 +17,7 @@ title: isFullScreen
 dhxWindow.isFullScreen(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 @related:window/usage.md#fullscreen-mode

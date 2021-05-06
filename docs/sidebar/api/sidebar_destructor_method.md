@@ -11,9 +11,9 @@ title: destructor
 sidebar.destructor();
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Sidebar. Destructor](https://snippet.dhtmlx.com/7bwnymvz)
 
-@changelog:
+

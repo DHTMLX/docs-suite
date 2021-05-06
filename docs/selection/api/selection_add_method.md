@@ -14,7 +14,7 @@ title: add
 var id = tree.selection.getId(); // -> "2"
 tree.selection.add("2");
 
-@template:	api_method
+
 @descr:
 Starting from v7.0, the method selects all unselected items when calling without parameters (in List/DataView):
 

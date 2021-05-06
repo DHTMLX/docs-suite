@@ -12,7 +12,7 @@ title: clear
 colorpicker.clear();
 
 
-@template: api_method
+
 @descr:
 
 

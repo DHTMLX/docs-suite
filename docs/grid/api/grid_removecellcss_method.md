@@ -17,15 +17,12 @@ title: removeCellCss
 grid.removeCellCss("1", "b", "myCustomClass");
 
 
-@template: api_method
+
 @descr:
 
 
 
 @relatedapi:
 grid/api/grid_addcellcss_method.md
-
-
-@changelog:
 
 

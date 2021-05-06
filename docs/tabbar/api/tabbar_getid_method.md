@@ -14,13 +14,11 @@ title: getId
 var id = tabbar.getId(0);
 
 
-@template: api_method
+
 @descr:
 
 
-@related: tabbar/work_with_tabbar.md#gettingtheidofatab
+@related: tabbar/work_with_tabbar.md#getting-the-id-of-a-tab
 
-
-@changelog:
 
 

@@ -15,17 +15,14 @@ title: isVisible
 layout.getCell("1").isVisible(); // -> true|false
 
 
-@template: api_method
+
 @descr:
 
-@related: layout/work_with_layout.md#checkingvisibilityofacell
+@related: layout/work_with_layout.md#checking-visibility-of-a-cell
 
 @relatedapi: 
 layout/api/layout_show_method.md
 layout/api/layout_hide_method.md
 layout/api/layout_hidden_config.md
-
-
-@changelog:
 
 

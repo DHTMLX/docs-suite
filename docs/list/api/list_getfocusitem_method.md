@@ -14,13 +14,8 @@ title: getFocusItem
 var focus = list.getFocusItem(); 
 
 
-@template: api_method
+
 @descr:
 
-
-
-
-
-@changelog:
 
 

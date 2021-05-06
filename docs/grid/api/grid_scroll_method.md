@@ -15,13 +15,13 @@ title: scroll
 grid.scroll(75,230);
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
 @related: grid/usage.md#controlling-scroll-behavior
 
-@changelog:
+
 
 

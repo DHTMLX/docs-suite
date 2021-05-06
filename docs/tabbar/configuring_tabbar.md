@@ -106,12 +106,12 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-[Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
+**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
 Autosize for tabs
 -----------------
 
-When the width or height of tabs are not specified, you can configure the tabs so that their width/height would automatically adjust to the size of the container of Tabbar. For this purpose, make use of the [](tabbar/api/tabbar_tabautowidth_config.md) [](tabbar/api/tabbar_tabautoheight_config.md) properties of Tabbar.
+When the width or height of tabs are not specified, you can configure the tabs so that their width/height would automatically adjust to the size of the container of Tabbar. For this purpose, make use of the [](tabbar/api/tabbar_tabautowidth_config.md)/[](tabbar/api/tabbar_tabautoheight_config.md) properties of Tabbar.
 
 ~~~js
 var tabbar = new dhx.Tabbar("tabbar_container", {
@@ -126,9 +126,9 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-[Tabbar. Tab auto width](https://snippet.dhtmlx.com/mlzko8am)
+**Related sample**: [Tabbar. Tab auto width](https://snippet.dhtmlx.com/mlzko8am)
 
-[Tabbar. Tab auto height](https://snippet.dhtmlx.com/pqvycp1c)
+**Related sample**: [Tabbar. Tab auto height](https://snippet.dhtmlx.com/pqvycp1c)
 
 {{note The [](tabbar/api/tabbar_tabautowidth_config.md) configuration option is used when [mode](tabbar/api/tabbar_mode_config.md) is set to "top" or "bottom", whereas [](tabbar/api/tabbar_tabautoheight_config.md) is applied when [mode](tabbar/api/tabbar_mode_config.md) is set to "right" or "left".}}
 
@@ -167,7 +167,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-[Tabbar. Tab align](https://snippet.dhtmlx.com/bctscs71)
+**Related sample**: [Tabbar. Tab align](https://snippet.dhtmlx.com/bctscs71)
 
 The available values of the option are "left" | "start", "center" | "middle", "right" | "end".
 

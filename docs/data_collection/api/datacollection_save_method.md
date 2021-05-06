@@ -18,7 +18,7 @@ diagram.data.save("http://userurl/");
 diagram.data.save(new DataDriver({url:"http://userurl/"}));
 
 
-@template:	api_method
+
 @descr:
 
 The component will make an AJAX call and expect the remote URL to save data changes.

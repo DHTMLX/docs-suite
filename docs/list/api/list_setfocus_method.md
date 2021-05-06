@@ -14,10 +14,10 @@ title: setFocus
 list.setFocus("item_id");
 
 
-@template: api_method
+
 @descr:
 
-@related: list/work_with_list.md#settingfocusonitem
+@related: list/work_with_list.md#setting-focus-on-item
 
 @changelog:
 added in v6.3

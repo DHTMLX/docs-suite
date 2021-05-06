@@ -16,7 +16,7 @@ grid.editEnd(); // the edited data will be saved
 grid.editEnd(true); // the edited data won't be saved
 
 
-@template: api_method
+
 @descr:
 
 The method works with [any type of cell editors](grid/configuration.md#columneditors), except for **checkbox**. 
@@ -27,5 +27,3 @@ The method works with [any type of cell editors](grid/configuration.md#columnedi
 @related: grid/usage.md#editing-data
 
 @changelog: added in v6.3
-
-

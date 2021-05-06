@@ -65,7 +65,7 @@ form.getItem("combo").getProperties();
 	width: "content"	
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **Combo** control can contain the following configuration attributes:
 
@@ -168,5 +168,3 @@ The returned object of the **Combo** control can contain the following configura
 
 
 @changelog: added in v7.0
-
-

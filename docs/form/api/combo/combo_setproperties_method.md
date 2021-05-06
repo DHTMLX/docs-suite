@@ -17,7 +17,7 @@ form.getItem("combo").getProperties({
 });
 
 
-@template: api_method
+
 @descr:
 The method invokes the [](form/api/combo/combo_afterchangeproperties_event.md) and [](form/api/combo/combo_beforechangeproperties_event.md) events.
 
@@ -126,5 +126,3 @@ It is possible to change values of the following configuration attributes of the
 
 
 @changelog: added in v7.0
-
-

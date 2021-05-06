@@ -12,7 +12,7 @@ dataview.events.on("AfterDrop", function(data, events) {
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 The data object contains the following parameters:
 
@@ -46,4 +46,4 @@ dataview/api/dataview_dragin_event.md
 dataview/api/dataview_dragout_event.md
 dataview/api/dataview_dragstart_event.md
 
-[Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)

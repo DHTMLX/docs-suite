@@ -22,7 +22,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr:
 
 The function takes the id of a row as a parameter and returns a string with the name of a CSS class.

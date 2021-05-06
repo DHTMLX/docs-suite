@@ -11,13 +11,13 @@ title: destructor
 toolbar.destructor();
 
 
-@template: api_method
+
 @descr:
 
 
 **Related sample**: [Toolbar. Destructor](https://snippet.dhtmlx.com/3ivdiha0)
 
 
-@changelog:
+
 
 

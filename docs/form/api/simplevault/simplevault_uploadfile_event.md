@@ -17,7 +17,7 @@ form.getItem("simpleVault").events.on("UploadFile", function(file, value, extra)
     console.log("UploadFile", file, value, extra);
 });
 
-@template: api_event
+
 @descr:
 
 @changelog:

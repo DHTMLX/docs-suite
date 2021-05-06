@@ -18,7 +18,7 @@ dhxWindow.show();
 dhxWindow.show("550", "230");
 
 
-@template: api_method
+
 @descr:
 
 @related:
@@ -29,7 +29,7 @@ window/usage.md#showinghidingwindow
 window/api/window_hide_method.md
 
 
-@changelog:
+
 
 
 **Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)

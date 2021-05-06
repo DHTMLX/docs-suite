@@ -14,7 +14,7 @@ title: enable
 @example:
 treegrid.selection.enable();
 
-@template: api_method
+
 @descr:
 
 @relatedapi: 

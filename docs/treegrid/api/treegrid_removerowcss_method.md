@@ -14,10 +14,10 @@ title: removeRowCss
 @example:
 grid.removeRowCss("2", "myCustomClass");
 
-@template: api_method
+
 @descr:
 
 @relatedapi:
 grid/api/grid_addrowcss_method.md
 
-@changelog:
+

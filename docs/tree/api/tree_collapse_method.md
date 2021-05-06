@@ -14,13 +14,13 @@ title: collapse
 tree.collapse("history");
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
 
 @related: tree/work_with_tree.md#expandingcollapsingitems
 
-@changelog:
+
 
 @relatedapi: tree/api/tree_expand_method.md

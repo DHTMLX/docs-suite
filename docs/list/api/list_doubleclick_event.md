@@ -17,10 +17,11 @@ list.events.on("DoubleClick", function(id, e){
 });
 
 
-@template: api_event
+
 @descr:
 
-@relatedsample:https://snippet.dhtmlx.com/iwt1yd61	List. List Events
+**Related sample**:
+- [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)	
 
 @changelog: added in v6.1
 

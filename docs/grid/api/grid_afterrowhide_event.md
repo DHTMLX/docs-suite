@@ -16,11 +16,11 @@ grid.events.on("AfterRowHide", function(row){
 });
 
 
-@template: api_event
+
 @descr:
 
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v7.0
 

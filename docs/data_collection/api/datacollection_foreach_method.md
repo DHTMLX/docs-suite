@@ -17,7 +17,7 @@ datacollection.forEach(function(element, index, array) {
     console.log("This is an array of the elements: ", array);
 });
 
-@template: api_method
+
 @descr:
 The callback function takes three parameters:
 
@@ -43,5 +43,3 @@ The callback function takes three parameters:
 
 
 @changelog: added in v6.4
-
-

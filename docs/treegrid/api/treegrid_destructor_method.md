@@ -10,7 +10,7 @@ title: destructor
 @example:
 grid.destructor();
 
-@template: api_method
+
 @descr:
 
-@changelog:
+

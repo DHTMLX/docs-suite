@@ -10,7 +10,7 @@ title: disable
 @example:
 grid.selection.disable();
 
-@template: api_method
+
 @descr:
 
 @relatedapi: 

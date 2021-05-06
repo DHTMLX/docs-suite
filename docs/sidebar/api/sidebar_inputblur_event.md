@@ -17,7 +17,7 @@ sidebar.events.on("InputBlur", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 

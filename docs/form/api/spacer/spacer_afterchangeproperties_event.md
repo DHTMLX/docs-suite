@@ -16,7 +16,7 @@ form.getItem("spacer").events.on("AfterChangeProperties", function(properties) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/spacer/spacer_setproperties_method.md

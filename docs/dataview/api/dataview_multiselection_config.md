@@ -18,7 +18,7 @@ multiselection?: boolean | MultiselectionMode;
 var dataview = new dhx.DataView("list", {multiselection:true});
 
 
-@template:	api_config
+
 @descr:
 
 Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.

@@ -16,7 +16,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr:
 
 To use the **multiselection** property, enable the [](grid/api/grid_selection_config.md) configuration option when initializing a grid.

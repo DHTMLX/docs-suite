@@ -20,7 +20,7 @@ form.getItem("slider").events.on("BeforeChangeProperties", function(properties) 
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/slider/slider_setproperties_method.md

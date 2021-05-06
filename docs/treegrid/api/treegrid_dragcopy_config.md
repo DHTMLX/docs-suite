@@ -11,7 +11,7 @@ title: dragCopy
 var source = new dhx.TreeGrid("treegrid-source", {dragMode: "source", dragCopy: true});
 var target = new dhx.TreeGrid("treegrid-target", {dragMode: "target", dragCopy: true});
 
-@template:	api_config
+
 @descr: 
 
 @related: treegrid/initialization.md#initialize-treegrid

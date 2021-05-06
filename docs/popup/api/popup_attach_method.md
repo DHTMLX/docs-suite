@@ -24,7 +24,7 @@ const timepicker = new dhx.Timepicker();
 popup.attach(timepicker);
 popup.show();
 
-**Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
+@descr:
 
-@changelog:
+**Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
 

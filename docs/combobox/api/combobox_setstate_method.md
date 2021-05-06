@@ -21,13 +21,10 @@ title: setState
 combo.setState("success");
 
 
-@template: api_method
+
 @descr:
 Depending on the set state the input of Combo Box gets a colored border: green for "success", red for "error".
 
 
-
-
-@changelog:
 
 

@@ -17,7 +17,7 @@ form.forEach(function(item, index, array) {
     console.log("This is the array with form controls: ", array);
 });
 
-@template: api_method
+
 @descr:
 The callback function takes three parameters:
 

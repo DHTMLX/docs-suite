@@ -14,10 +14,10 @@ title: getSelected
 toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 
-@template: api_method
+
 @descr:
 
-@related: toolbar/common_methods.md#gettingselecteditems
+@related: toolbar/common_methods.md#getting-selected-items
 
 @relatedapi:
 toolbar/api/toolbar_select_method.md

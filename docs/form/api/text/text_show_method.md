@@ -10,5 +10,5 @@ title: show
 @example:
 form.getItem("text").show();
 
-@template: api_method
+
 @descr:

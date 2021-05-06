@@ -16,19 +16,7 @@ title: getItem
 @example:
 form.getItem("colorpicker").setValue("#02F7C6");
 
-@related: 
-form/calendar.md#workingwithdatepicker
-form/checkbox.md#workingwithcheckbox
-form/colorpicker.md#workingwithcolorpicker
-form/combo.md#workingwithcombo
-form/input.md#workingwithinput
-form/radiogroup.md#workingwithradiogroup
-form/select.md#workingwithselect
-form/simplevault.md#workingwithsimplevault
-form/slider.md#workingwithslider
-form/text.md#workingwithtext
-form/textarea.md#workingwithtextarea
-form/timepicker.md#workingwithtimepicker
+
 
 **Related samples**:
 - [Form. Get Control Value](https://snippet.dhtmlx.com/q3u16v01)

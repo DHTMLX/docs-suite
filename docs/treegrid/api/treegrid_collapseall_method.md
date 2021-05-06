@@ -10,14 +10,15 @@ title: collapseAll
 @example:
 treegrid.collapseAll();
 
-@template: api_method
+
 @descr:
 
-@related: treegrid/usage.md#expandingcollapsingnodes
 
 **Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
-@changelog: added in v6.3
+@related: treegrid/usage.md#expandingcollapsingnodes
 
 @relatedapi:
 treegrid/api/treegrid_expandall_method.md
+
+@changelog: added in v6.3

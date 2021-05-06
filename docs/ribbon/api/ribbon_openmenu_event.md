@@ -16,7 +16,7 @@ ribbon.events.on("OpenMenu", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 @related: ribbon/handling_events.md

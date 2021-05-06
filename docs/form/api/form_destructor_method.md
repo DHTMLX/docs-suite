@@ -12,7 +12,6 @@ title: destructor
 @example:
 form.destructor();
 
-@template: api_method
+
 @descr:
 
-@changelog:

@@ -11,7 +11,7 @@ title: selectFile
 form.getItem("simplevault").selectFile(); 
 // -> true/false
 
-@template: api_method
+
 @descr:
 
 

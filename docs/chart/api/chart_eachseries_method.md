@@ -52,7 +52,7 @@ chart.eachSeries(function(seria){
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 
 
-@template: api_method
+
 @descr:
 
 
@@ -60,7 +60,5 @@ chart.eachSeries(function(seria){
 chart/usage.md#iteratingoverseries
 
 **Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
-
-@changelog:
 
 

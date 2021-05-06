@@ -16,8 +16,9 @@ var target = new dhx.List("list-target",{
 });
 
 
-@template:	api_config
-@descr: 
+
+@descr:
+ 
 There are three modes of behaviour of a dragged list item:
 
 - "child" - a dragged item becomes a child of the item it is dragged to

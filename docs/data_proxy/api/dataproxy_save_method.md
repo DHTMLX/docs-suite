@@ -20,4 +20,4 @@ proxy.save({ a: "bad" }, "delete").then(function() {
    console.log("'Bad' is deleted!");
 });
 
-@template:	api_method
+

@@ -17,10 +17,10 @@ grid.events.on("AfterColumnShow", function(column){
 });
 
 
-@template: api_event
+
 @descr:
 
 @changelog: added in v7.0
 
-**Related Sample:** [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

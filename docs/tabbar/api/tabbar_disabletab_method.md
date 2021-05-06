@@ -20,15 +20,13 @@ tabbar.disableTab("London");
 // -> true|false
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 @relatedapi: tabbar/api/tabbar_enabletab_method.md
 
-@related: tabbar/work_with_tabbar.md#enablingdisablingatab
+@related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab
 
 @changelog: added in v6.4
-
-

@@ -15,10 +15,10 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 **Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
 
 @related: layout/init.md#initialize-layout
-layout/cell_configuration.md#htmlcontent
+layout/cell_configuration.md#html-content

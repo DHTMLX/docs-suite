@@ -16,7 +16,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 
-@template:	api_config
+
 @descr: 
 The property can be specified to one of the available adjustment modes:
 
@@ -48,4 +48,3 @@ The property can be specified to one of the available adjustment modes:
 @related: treegrid/configuration.md#autosizeforcolumns
 
 @changelog: added in v6.4
-

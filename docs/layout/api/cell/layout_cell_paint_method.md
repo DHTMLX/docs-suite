@@ -11,13 +11,10 @@ title: paint
 layout.paint();
 
 
-@template: api_method
+
 @descr:
 
 
 
-
-
-@changelog:
 
 

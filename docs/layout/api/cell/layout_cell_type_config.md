@@ -24,7 +24,7 @@ const layout = new dhx.Layout("layout", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 <table class="webixdoc_links">
@@ -50,9 +50,9 @@ const layout = new dhx.Layout("layout", {
 
 {{note Note, that if the children cell has no specified type of borders, the cell has the same type of borders as its parent cell. }} 
 
-@related: layout/cell_configuration.md#settingbordersforcells
+@related: layout/cell_configuration.md#setting-borders-for-cells
 
-[Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
+**Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 @changelog: added in v7.0
 

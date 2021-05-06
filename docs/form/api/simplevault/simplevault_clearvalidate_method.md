@@ -11,7 +11,7 @@ title: clearValidate
 form.getItem("simplevault").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

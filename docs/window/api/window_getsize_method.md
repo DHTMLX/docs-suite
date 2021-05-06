@@ -15,16 +15,13 @@ title: getSize
 var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 
 
-@template: api_method
+
 @descr:
 
 
 
 @relatedapi:
 window/api/window_setsize_method.md
-
-
-@changelog:
 
 @related:window/usage.md#sizingwindow
 

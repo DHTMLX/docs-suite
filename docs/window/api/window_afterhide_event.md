@@ -18,7 +18,7 @@ dhxWindow.events.on("AfterHide", function(position, events){
 });
 
 
-@template: api_event
+
 @descr:
 The **position** parameter contains two attributes:
 

@@ -55,7 +55,7 @@ form.getItem("datepicker").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 
 The returned object of the **DatePicker** control can contain the following configuration attributes:
@@ -171,5 +171,3 @@ The returned object of the **DatePicker** control can contain the following conf
 
 
 @changelog: added in v7.0
-
-

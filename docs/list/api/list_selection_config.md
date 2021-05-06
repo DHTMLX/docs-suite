@@ -13,18 +13,18 @@ title: selection
 var list = new dhx.List("list_container", {selection:false});
 
 
-@template:	api_config
+
 @descr: 
 
+**Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 @relatedapi:
 list/api/selection/selection_disable_method.md
 list/api/selection/selection_enable_method.md
 
 
-@related: list/configuration.md#selectionofitems
+@related: list/configuration.md#selection-of-items
 
 
-[List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 @changelog: added in v6.5

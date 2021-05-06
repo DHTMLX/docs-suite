@@ -10,12 +10,12 @@ title: clear
 @example:
 combo.clear();
 
-@template: api_method
+
 @descr:
 
 **Related sample**:
 - [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
 
-@changelog:
+
 
 @related: combobox/work_with_combo.md#clearinginput

@@ -37,7 +37,7 @@ form.getItem("text").getProperties();
 	width: "content"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **Text** control can contain the following configuration attributes:
 
@@ -87,5 +87,3 @@ The returned object of the **Text** control can contain the following configurat
 
 
 @changelog: added in v7.0
-
-

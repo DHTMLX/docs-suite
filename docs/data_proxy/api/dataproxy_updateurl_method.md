@@ -12,9 +12,9 @@ title: updateUrl
 - params    object      optional, a configuration object with new parameters. If not specified, clears parameters set earlier.
 
 @example:
-~~~js
+
 proxy.updateUrl("https://newCustomUrl.com", { a: "customParam", b: 2 });
 // url: https://newCustomUrl.com?a=customParam&b=2
-~~~
 
-@template:	api_method
+
+

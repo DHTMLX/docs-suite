@@ -22,7 +22,7 @@ grid.events.on("BeforeRowDrop", function(data, events){
 });
 
 
-@template:	api_event
+
 @descr:
 
 The data object contains the following parameters:
@@ -56,7 +56,7 @@ grid/api/grid_dragrowout_event.md
 grid/api/grid_dragrowstart_event.md
 [](grid/api/grid_dragitem_config.md)
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)	
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)	
 
 
 @related: grid/configuration.md#drag-n-drop-of-grid-rows

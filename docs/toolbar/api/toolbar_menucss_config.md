@@ -23,6 +23,6 @@ var toolbar = new dhx.Toolbar({
 });
 
 
-@template:	api_config
+
 @descr: 
 

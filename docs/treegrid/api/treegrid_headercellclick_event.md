@@ -12,7 +12,7 @@ grid.events.on("HeaderCellClick", function(column,e){
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

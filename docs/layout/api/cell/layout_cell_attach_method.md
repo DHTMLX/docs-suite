@@ -27,13 +27,13 @@ var sidebar = new dhx.Sidebar(null, {
 layout.getCell("sidebar").attach(sidebar);
 
 
-@template: api_method
+
 @descr:
 
-@related: layout/work_with_layout.md#attachingacomponenttoacell
+@related: layout/work_with_layout.md#attaching-a-component-to-a-cell
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
-@changelog:
+
 
 

@@ -14,7 +14,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     htmlEnable: true /*!*/
 });
 
-@template:	api_config
+
 @descr: 
 
 If you set the property to *false*, the content of TreeGrid columns will be displayed as a *string* value.

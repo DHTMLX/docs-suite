@@ -14,7 +14,7 @@ title: toggle
 tree.toggle("history");
 
 
-@template: api_method
+
 @descr:
 
 
@@ -22,6 +22,6 @@ tree.toggle("history");
 
 **Related sample**: [Tree. Toggle Item](https://snippet.dhtmlx.com/qjk56co2)
 
-@changelog:
+
 
 

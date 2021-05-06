@@ -34,7 +34,7 @@ var toolbarData = [
 
 ![](../assets/toolbar/fa_icons.png)
 
-[Toolbar. Custom Icons](https://snippet.dhtmlx.com/4aiwvow7)
+**Related sample**: [Toolbar. Custom Icons](https://snippet.dhtmlx.com/4aiwvow7)
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
 
@@ -45,7 +45,7 @@ There is a possibility to make changes in the look and feel of a toolbar.
 
 ![](../assets/toolbar/custom_style.png)
 
-[Toolbar. Custom CSS](https://snippet.dhtmlx.com/uekgjwsi)
+**Related sample**: [Toolbar. Custom CSS](https://snippet.dhtmlx.com/uekgjwsi)
 
 For this you need to take the following steps:
 

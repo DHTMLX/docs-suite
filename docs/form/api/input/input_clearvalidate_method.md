@@ -13,7 +13,7 @@ title: clearValidate
 form.getItem("input").clearValidate();
 
 
-@template: api_method
+
 @descr:
 
 

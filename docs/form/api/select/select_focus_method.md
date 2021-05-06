@@ -10,7 +10,8 @@ title: focus
 @example:
 form.getItem("select").focus();
 
-@template: api_method
+
+
 @descr:
 
 @changelog: added in v7.0

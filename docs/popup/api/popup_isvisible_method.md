@@ -14,14 +14,14 @@ title: isVisible
 popup.isVisible(); // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
-@related: popup/work_with_popup.md#checkingvisibilityofpopup
+@related: popup/work_with_popup.md#checking-visibility-of-popup
 
 
-@changelog:
+
 
 

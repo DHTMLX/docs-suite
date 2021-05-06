@@ -159,7 +159,7 @@ To select a particular Toolbar item, make use of the [select()](toolbar/api/tool
 toolbar.select("web");
 ~~~
 
-[Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
+**Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
 
 ### Unselecting a toolbar item
 
@@ -177,7 +177,7 @@ It is also possible to remove selection from all previously selected items of To
 toolbar.unselect();
 ~~~
 
-[Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
+**Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
 
 Checking if a toolbar item is selected
 -------------------------------------
@@ -198,7 +198,7 @@ To check if an item of Toolbar is selected, call the [isSelected()](toolbar/api/
 toolbar.isSelected("web"); // -> returns true/false
 ~~~
 
-[Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
+**Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
 
 Getting selected items
 ---------------------------

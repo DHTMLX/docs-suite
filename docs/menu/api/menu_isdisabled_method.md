@@ -18,14 +18,13 @@ param 	boolean		true, if an item of Menu is disabled, otherwise false
 menu.isDisabled("id"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
 
 **Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
 
-@changelog: added in v6.4
-
-
 @related: menu/work_with_menu.md#checkingifamenuoptionisdisabled
+
+@changelog: added in v6.4

@@ -16,7 +16,7 @@ dhxWindow.setPosition(20,20);
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 
@@ -25,7 +25,7 @@ dhxWindow.show();
 window/api/window_getposition_method.md
 
 
-@changelog:
+
 
 @related:window/usage.md#positioningwindow
 

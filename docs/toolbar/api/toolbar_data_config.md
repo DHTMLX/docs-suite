@@ -39,7 +39,7 @@ const toolbar = new dhx.Toolbar("toolbar", {
 
 
 
-@template:	api_config
+
 @descr: 
 
 @related: toolbar/load_data.md

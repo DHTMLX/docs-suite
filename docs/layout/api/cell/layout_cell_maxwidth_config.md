@@ -15,8 +15,9 @@ var layout = new dhx.Layout("layout_container", {
 });
 
 
-@template:	api_config
-@descr: 
+
+@descr:
+
 In case both **width** and **maxWidth** properties are set in the configuration of a cell, the **maxWidth** option is a priority.
 
 @changelog: added in v7.0
@@ -25,4 +26,4 @@ In case both **width** and **maxWidth** properties are set in the configuration 
 layout/api/layout_width_config.md
 layout/api/layout_minwidth_config.md
 
-@related: layout/cell_configuration.md#cellsize
+@related: layout/cell_configuration.md#cell-size

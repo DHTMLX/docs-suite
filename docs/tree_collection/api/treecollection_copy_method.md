@@ -18,5 +18,5 @@ toolbar.data.copy("print_btn",2)
 // another toolbar
 toolbar2.data.copy("save_btn",1,toolbar1.data);
 
-@template: api_method
+
 @descr:

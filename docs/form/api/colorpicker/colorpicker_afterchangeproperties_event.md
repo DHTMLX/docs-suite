@@ -16,7 +16,7 @@ form.getItem("colorpicker").events.on("AfterChangeProperties", function(properti
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/colorpicker/colorpicker_setproperties_method.md

@@ -16,7 +16,7 @@ form.getItem("combo").isVisible();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

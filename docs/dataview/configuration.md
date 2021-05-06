@@ -8,7 +8,7 @@ description: description
 
 ![](../assets/dataview/arrow_navigation.png)
 
-[Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
+**Related sample**: [Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
 The DataView component provides the possibility to navigate its items with arrow keys. You can enable this functionality using the [](dataview/api/dataview_keynavigation_config.md) property:
 
@@ -80,7 +80,7 @@ var dataview = new dhx.DataView("dataview_container", {
 
 Read more about multiselection in DataView [below](#multiple-selection-of-items).
 
-[Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
+**Related sample**: [Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
 
 ### Copying dragged item
 
@@ -211,7 +211,7 @@ Selection of items
 
 ![](../assets/dataview/disable_selection.png)
 
-[Dataview. Disable selection](https://snippet.dhtmlx.com/xh66mnu3)
+**Related sample**: [Dataview. Disable selection](https://snippet.dhtmlx.com/xh66mnu3)
 
 The default configuration of DataView provides you with the selection feature that allows highlighting a DataView item. To disable selection in a DataView you need to set the [](dataview/api/dataview_selection_config.md) configuration property to *false*:
 
@@ -278,10 +278,10 @@ var dataview = new dhx.DataView("dataview", {
 });
 ~~~
 
-[Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
+**Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
-``` todo нужна ли таблица
+
 <table class="webixdoc_links">
 	<tbody>
         <tr>
@@ -298,5 +298,3 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
-
-```

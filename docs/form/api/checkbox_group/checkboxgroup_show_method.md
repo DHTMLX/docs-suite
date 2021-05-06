@@ -12,7 +12,7 @@ title: show
 form.getItem("CheckboxGroup").show(); 
 
 
-@template: api_method
+
 @descr:
 
 

@@ -17,7 +17,7 @@ title: getColumn
 var column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 
-@template: api_method
+
 @descr:
 
 The returned object contains the following set of properties:
@@ -134,7 +134,5 @@ The returned object contains the following set of properties:
 @related: grid/usage.md#working-with-columns-and-cells
 
 @relatedapi: grid/api/grid_setcolumns_method.md
-
-@changelog:
 
 

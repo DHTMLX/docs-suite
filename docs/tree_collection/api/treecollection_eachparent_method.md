@@ -14,6 +14,6 @@ title: eachParent
 @example:
 toolbar.data.eachParent("new_btn", item => console.log(item));
 
-@template: api_method
+
 @descr:
 

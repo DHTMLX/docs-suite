@@ -16,11 +16,12 @@ sidebar.events.on("BeforeCollapse", function() {
     return false;
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@changelog: added in v6.4
 
 @related: sidebar/events.md
+
+@changelog: added in v6.4

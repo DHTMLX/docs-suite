@@ -10,10 +10,10 @@ title: ungroup
 @example:
 treegrid.ungroup();
 
-@template: api_method
+
 @descr:
 
-[TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
+**Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
 @relatedapi: treegrid/api/treegrid_groupby_method.md
 

@@ -16,6 +16,7 @@ form.events.on("AfterHide", function(name, value) {
     console.log("AfterHide", name, value); 
 });
 
+
 @descr:
 
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)

@@ -10,10 +10,8 @@ title: destructor
 @example:
 calendar.destructor();
 
-@template: api_method
-@descr:
 
-@changelog:
+@descr:
 
 **Related sample**:
 - [Calendar. Destructor](https://snippet.dhtmlx.com/f0kqjb13)

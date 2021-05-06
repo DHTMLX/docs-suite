@@ -1,6 +1,6 @@
 ---
-sidebar_label: Hotel Management System demo
-title: Hotel Management System demo
+sidebar_label: Hotel Management System Demo
+title: Hotel Management System Demo
 --- 
 
 ![](../assets/optimus/demo/hotel_demo.png)

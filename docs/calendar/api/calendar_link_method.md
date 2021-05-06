@@ -13,7 +13,7 @@ title: link
 @example:
 calendar.link(calendar2);
 
-@template: api_method
+
 @descr:
 
 See the code and result in the live example below:

@@ -16,7 +16,7 @@ popup.events.on("AfterHide", function(e){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)

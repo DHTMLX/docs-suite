@@ -15,18 +15,18 @@ title: select
 ribbon.select("print");
 
 
-@template: api_method
+
 @descr:
 
-@related: ribbon/operating_ribbon.md#selectingunselectinganitem
+@related: ribbon/operating_ribbon.md#selectingunselecting-an-item
 
 @relatedapi:
 ribbon/api/ribbon_unselect_method.md
 ribbon/api/ribbon_isselected_method.md
 ribbon/api/ribbon_getselected_method.md
 
-@relatedsample:
-[Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**:
+- [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 @changelog:
 added in v7.0

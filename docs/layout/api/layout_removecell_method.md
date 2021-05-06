@@ -13,11 +13,10 @@ title: removeCell
 @example:
 layout.removeCell("1");
 
-@template: api_method
+
 @descr:
 
-@related: layout/work_with_layout.md#removingcells
+@related: layout/work_with_layout.md#removing-cells
 
 **Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
 
-@changelog:

@@ -14,5 +14,5 @@ title: haveItems
 if (toolbar.data.haveItems("menu1"))
     //do something;
 
-@template: api_method
+
 @descr:

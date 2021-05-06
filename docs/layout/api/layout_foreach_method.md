@@ -25,7 +25,7 @@ layout.forEach(function(cell, index, array) {
 
 
 
-@template: api_method
+
 @descr:
 
 The callback function takes three parameters:
@@ -52,5 +52,3 @@ The callback function takes three parameters:
 **Related sample**: [Layout. ForEach](https://snippet.dhtmlx.com/9hfntqpy)
 
 @changelog: added in v6.4
-
-

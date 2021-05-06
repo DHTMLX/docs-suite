@@ -15,8 +15,9 @@ var list = new dhx.List("list", {
 });
 
 
-@template:	api_config
-@descr: 
+
+@descr:
+
 The template function takes one parameter:
 
 <table class="webixdoc_links">
@@ -28,7 +29,7 @@ The template function takes one parameter:
     </tbody>
 </table>
 
-@related: list/configuration.md#templateforlistitems
+@related: list/configuration.md#template-for-list-items
 
 
 @relatedapi: list/api/list_eventhandlers_config.md

@@ -14,11 +14,11 @@ title: showRow
 grid.showRow(rowId);
 
 
-@template: api_method
+
 @descr:
 
 
-[Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
+**Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
 @relatedapi: 
 grid/api/grid_hiderow_method.md

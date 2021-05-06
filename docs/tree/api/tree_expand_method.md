@@ -14,7 +14,7 @@ title: expand
 tree.expand("history");
 
 
-@template: api_method
+
 @descr:
 
 @related: tree/work_with_tree.md#expandingcollapsingitems

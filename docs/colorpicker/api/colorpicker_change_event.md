@@ -12,10 +12,10 @@ colorpicker.events.on("Change",function(color){
 	// your logic here
 });
 
-@template: api_event
+
 @descr:
 
 
-@changelog: added in v6.3
-
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
+
+@changelog: added in v6.3

@@ -53,7 +53,7 @@ form.getItem("select").getProperties();
 	width: "200px"
 }
 
-@template: api_method
+
 @descr:
 The returned object of the **Select** control can contain the following configuration attributes:
 
@@ -118,5 +118,3 @@ The returned object of the **Select** control can contain the following configur
 
 
 @changelog: added in v7.0
-
-

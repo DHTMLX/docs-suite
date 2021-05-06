@@ -49,7 +49,7 @@ const ribbon = new dhx.Ribbon("ribbon", {
     data: data
 });
 
-@template:	api_config
+
 @descr: 
 
 @related: ribbon/loading_json.md

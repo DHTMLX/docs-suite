@@ -16,7 +16,7 @@ form.getItem("checkbox").events.on("AfterChangeProperties", function(properties)
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/checkbox/checkbox_setproperties_method.md

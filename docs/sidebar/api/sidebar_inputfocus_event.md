@@ -17,7 +17,7 @@ sidebar.events.on("InputFocus", function(id){
 });
 
 
-@template: api_event
+
 @descr:
 
 

@@ -11,7 +11,7 @@ title: clear
 form.getItem("slider").clear();
 
 
-@template: api_method
+
 @descr:
 
 

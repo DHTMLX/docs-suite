@@ -16,7 +16,7 @@ grid.events.on("HeaderCellMouseDown", function(column,e){
     // your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**:

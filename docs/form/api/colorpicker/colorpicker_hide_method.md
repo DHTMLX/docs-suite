@@ -11,7 +11,7 @@ title: hide
 form.getItem("colorpicker").hide(); 
 
 
-@template: api_method
+
 @descr:
 
 

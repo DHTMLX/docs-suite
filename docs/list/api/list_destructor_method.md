@@ -10,10 +10,9 @@ title: destructor
 @example:
 list.destructor();
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [List. Destructor](https://snippet.dhtmlx.com/f0zto6m4)
 
-@changelog:
 

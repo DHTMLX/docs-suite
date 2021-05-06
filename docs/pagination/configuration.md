@@ -17,7 +17,7 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-[Pagination. Input width](https://snippet.dhtmlx.com/1fttbjh9)
+**Related sample**: [Pagination. Input width](https://snippet.dhtmlx.com/1fttbjh9)
 
 Initial page
 -------------

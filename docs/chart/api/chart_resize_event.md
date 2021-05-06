@@ -17,7 +17,7 @@ chart.events.on("Resize", function({width:500, height:500}){
 });
 
 
-@template: api_event
+
 @descr:
 
 

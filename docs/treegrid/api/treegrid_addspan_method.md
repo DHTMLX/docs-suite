@@ -19,7 +19,7 @@ grid.addSpan({
 // grid.paint();
 
 
-@template: api_method
+
 @descr:
 The **span** object contains the following properties:
 
@@ -59,6 +59,6 @@ grid/api/grid_getspan_method.md
 grid/api/grid_removespan_method.md
 
 
-@changelog:
+
 
 @related: treegrid/usage.md#addingremovingspans

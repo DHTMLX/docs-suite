@@ -38,7 +38,7 @@ grid.data.filter({
   add: true
 });
 
-@template: api_method
+
 @descr:
 
 Calling the **filter()** method without parameters reverts the component to the initial state:

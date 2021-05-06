@@ -13,7 +13,7 @@ title: clear
 form.getItem("input").clear();
 
 
-@template: api_method
+
 @descr:
 
 

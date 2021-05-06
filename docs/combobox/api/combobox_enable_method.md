@@ -11,7 +11,7 @@ title: enable
 combo.enable();
 
 
-@template: api_method
+
 @descr:
 
 @related: combobox/work_with_combo.md#disablingenablingcombobox

@@ -16,13 +16,13 @@ var html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-@changelog:
+
 
 

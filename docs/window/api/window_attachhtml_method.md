@@ -17,14 +17,14 @@ dhxWindow.attachHTML(html);
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-@changelog:
+
 
 @related: window/how_to_start.md
 window/usage.md#attachingcontent

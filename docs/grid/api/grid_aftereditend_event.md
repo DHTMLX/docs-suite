@@ -19,7 +19,7 @@ grid.events.on("AfterEditEnd", function(value,row,column){
 });
 
 
-@template:	api_event
+
 @descr:
 
 

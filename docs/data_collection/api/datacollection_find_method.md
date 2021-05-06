@@ -24,7 +24,7 @@ var item = component.data.find(function(item){
 	if(item.text==="Manager"||item.text==="Marketer"){return true}
 });
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)

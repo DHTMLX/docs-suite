@@ -17,7 +17,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     dragMode:"source"
 });
 
-@template:	api_config
+
 @descr: 
 Drag-n-drop can work in three modes: 
 

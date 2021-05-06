@@ -10,6 +10,3 @@ title: destructor
 @example:
 calendar.destructor();
 
-@changelog:
-
-

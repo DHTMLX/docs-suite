@@ -13,13 +13,8 @@ title: getWidget
 @example:
 tabbar.getWidget();
 
-@template: api_method
+
 @descr:
 
-
-
-
-
-@changelog:
 
 

@@ -15,7 +15,7 @@ grid.events.on("Scroll", function({top,left}){
     console.log("The grid is scrolled to "+top,left);
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)

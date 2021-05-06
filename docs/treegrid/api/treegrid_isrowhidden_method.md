@@ -16,10 +16,10 @@ title: isRowHidden
 @example:
 treegrid.isRowHidden("1"); //-> true/false
 
-@template: api_method
+
 @descr:
 
-[TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
 @relatedapi: 
 treegrid/api/treegrid_hiderow_method.md

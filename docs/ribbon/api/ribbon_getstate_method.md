@@ -13,11 +13,11 @@ title: getState
 @example:
 var state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"right"}
 
-@template: api_method
+
 @descr:
 
 **Related sample**: [Ribbon. Get State](https://snippet.dhtmlx.com/coei9fys)
 
-@changelog:
 
-@related: ribbon/operating_ribbon.md#settinggettingvaluesandstates
+
+@related: ribbon/operating_ribbon.md#settinggetting-values-and-states

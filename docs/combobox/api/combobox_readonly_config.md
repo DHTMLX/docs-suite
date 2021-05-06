@@ -14,7 +14,7 @@ var combo = new dhx.Combobox("combo_container", {
     readOnly:true
 });
 
-@template:	api_config
+
 @descr: 
 
 {{note Note, that in v7.0, the **readonly** property have been deprecated and renamed to **readOnly**. }}
@@ -26,4 +26,4 @@ combobox/configuration.md#readonly-mode
 
 **Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
 
-@changelog:
+

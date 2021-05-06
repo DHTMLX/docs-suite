@@ -16,7 +16,7 @@ component.data.remove("2");
 //or
 component.data.remove(["2", "4"]);
 
-@template: api_method
+
 @descr:
 
 @related:window/customization.md#controlsandoperations

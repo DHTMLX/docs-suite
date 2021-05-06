@@ -11,13 +11,13 @@ title: destructor
 slider.destructor();
 
 
-@template: api_method
+
 @descr:
 
 
 
 
 
-@changelog:
+
 
 

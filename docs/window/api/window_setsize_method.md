@@ -17,7 +17,7 @@ dhxWindow.setSize(250, 250);
 dhxWindow.show();
 
 
-@template: api_method
+
 @descr:
 
 
@@ -26,7 +26,7 @@ dhxWindow.show();
 window/api/window_getsize_method.md
 
 
-@changelog:
+
 
 @related:window/usage.md#sizingwindow
 

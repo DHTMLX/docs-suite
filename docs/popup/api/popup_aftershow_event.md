@@ -16,7 +16,7 @@ popup.events.on("AfterShow", function(element){
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi:

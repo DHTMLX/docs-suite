@@ -14,7 +14,7 @@ title: abort
 @example:
 vault.uploader.abort("file_id");
 
-@template: api_method
+
 @descr:
 If the parameter isn't passed, the method cancels upload of all files in the queue.
 

@@ -24,6 +24,6 @@ toolbar.data.parse(data,"xml");
 // parse toolbar from the csv string
 toolbar.data.parse(data,"csv");
 
-@template: api_method
+
 @descr:
 

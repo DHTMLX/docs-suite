@@ -20,13 +20,13 @@ const totalPages = pagination.getPagesCount();
 // -> 10
 
 
-@template: api_method
+
 @descr:
 
-[Pagination. Get page count](https://snippet.dhtmlx.com/k5j6acc5)
+**Related sample**: [Pagination. Get page count](https://snippet.dhtmlx.com/k5j6acc5)
 
 
 
-@changelog:
 
-@related: pagination/usage.md#gettingtotalnumberofpages
+
+@related: pagination/usage.md#getting-total-number-of-pages

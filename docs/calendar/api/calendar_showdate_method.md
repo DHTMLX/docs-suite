@@ -17,7 +17,7 @@ title: showDate
 calendar.showDate(new Date(2020,11,12));
 
 
-@template: api_method
+
 @descr:
 The **modes** are:
 
@@ -54,8 +54,6 @@ calendar.showDate(null,"year");
 
 **Related sample**:
 - [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
-
-@changelog:
 
 @related:
 calendar/operating_calendar.md#changingcalendarmode

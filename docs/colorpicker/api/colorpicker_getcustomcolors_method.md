@@ -14,7 +14,7 @@ var colors = colorpicker.getCustomColors();
 // -> ["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]
 
 
-@template: api_method
+
 @descr:
 
 @related: colorpicker/manipulating_colorpicker.md#settinggettingcustomcolors
@@ -23,6 +23,6 @@ var colors = colorpicker.getCustomColors();
 colorpicker/api/colorpicker_setcustomcolors_method.md
 
 
-@changelog:
+
 
 

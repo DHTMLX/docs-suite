@@ -16,13 +16,13 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 
 
-@template: api_method
+
 @descr:
 
 
 **Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 
-@changelog:
+
 
 

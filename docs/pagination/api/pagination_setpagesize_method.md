@@ -17,15 +17,10 @@ title: setPageSize
 pagination.setPageSize(24);
 
 
-@template: api_method
+
 @descr:
 
 
+**Related sample**: [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
-
-
-[Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
-
-@changelog:
-
-@related: pagination/usage.md#settinggettingcountofitemsperpage
+@related: pagination/usage.md#settinggetting-count-of-items-per-page

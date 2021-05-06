@@ -17,7 +17,7 @@ tabbar.events.on("Change", function(activeId, prevId){
 });
 
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)

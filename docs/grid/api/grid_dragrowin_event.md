@@ -17,7 +17,7 @@ grid.events.on("DragRowIn", function(data, events) {
 });
 
 
-@template: api_event
+
 @descr:
 
 The data object contains the following parameters:
@@ -41,7 +41,7 @@ The data object contains the following parameters:
 
 
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @relatedapi:
 grid/api/grid_afterrowdrag_event.md

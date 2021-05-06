@@ -11,7 +11,7 @@ title: enable
 form.getItem("select").enable();
 
 
-@template: api_method
+
 @descr:
 
 

@@ -20,7 +20,7 @@ form.getItem("input").events.on("BeforeChangeProperties", function(properties) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/input/input_setproperties_method.md

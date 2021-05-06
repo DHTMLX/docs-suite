@@ -16,7 +16,7 @@ form.getItem("select").events.on("AfterChangeProperties", function(properties) {
 });
 
 
-@template: api_event
+
 @descr:
 
 @relatedapi: form/api/select/select_setproperties_method.md

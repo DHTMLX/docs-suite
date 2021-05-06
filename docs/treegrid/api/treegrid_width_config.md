@@ -15,7 +15,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 
 
-@template:	api_config
+
 @descr: 
 
 @related: treegrid/configuration.md#widthheight

@@ -19,8 +19,9 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 
 
-@template:	api_config
-@descr: 
+
+@descr:
+
 1\. The **views** array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
 
 - <b>id</b> - the id of a tab
@@ -56,10 +57,10 @@ As a result, the height of a tab is 45 and the width is 100.
 
 
 @related: 
-tabbar/init.md#definetabbarstructure
-tabbar/configuring_tabbar.md#structureoftabs 
+tabbar/init.md#define-tabbar-structure
+tabbar/configuring_tabbar.md#structure-of-tabs 
 
-[Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
+**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 

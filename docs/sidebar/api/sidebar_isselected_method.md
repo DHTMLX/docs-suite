@@ -17,18 +17,16 @@ title: isSelected
 sidebar.isSelected("categoryPost"); // -> returns true/false
 
 
-@template: api_method
+
 @descr:
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
-
-
-
-@changelog: added in v6.5
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 @relatedapi: 
 sidebar/api/sidebar_getselected_method.md
 sidebar/api/sidebar_select_method.md
 sidebar/api/sidebar_unselect_method.md
 
-@related: sidebar/work_with_sidebar.md#checkingifasidebaritemisselected
+@related: sidebar/work_with_sidebar.md#checking-if-a-sidebar-item-is-selected
+
+@changelog: added in v6.5

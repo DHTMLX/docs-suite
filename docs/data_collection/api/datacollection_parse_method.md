@@ -44,7 +44,7 @@ var diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
 
-@template:	api_method
+
 @descr:
 
 **Related sample**: [Data. Parse](https://snippet.dhtmlx.com/0zrxtmvi)

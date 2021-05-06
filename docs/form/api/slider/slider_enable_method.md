@@ -10,5 +10,5 @@ title: enable
 @example:
 form.getItem("slider").enable();
 
-@template: api_method
+
 @descr:

@@ -11,7 +11,7 @@ title: hide
 dhxWindow.hide();
 
 
-@template: api_method
+
 @descr:
 
 
@@ -20,7 +20,7 @@ dhxWindow.hide();
 window/api/window_show_method.md
 
 
-@changelog:
+
 
 @related:window/usage.md#showinghidingwindow
 

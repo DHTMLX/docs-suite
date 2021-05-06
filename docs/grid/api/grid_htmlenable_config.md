@@ -14,7 +14,7 @@ var grid = new dhx.Grid("grid_container", {
     htmlEnable: true /*!*/
 });
 
-@template:	api_config
+
 @descr: 
 
 If you set the property to *false*, the content of Grid columns will be displayed as a *string* value.

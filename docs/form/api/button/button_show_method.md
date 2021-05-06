@@ -12,7 +12,7 @@ form.getItem("button").show();
 // -> true/false
 
 
-@template: api_method
+
 @descr:
 
 

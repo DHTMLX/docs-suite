@@ -14,7 +14,7 @@ title: getLength
 datacollection.getLength();
 
 
-@template:	api_method
+
 @descr:
 
 **Related sample**: [Data. Get Length](https://snippet.dhtmlx.com/4weiba8i)

@@ -16,7 +16,7 @@ title: setCustomColors
 colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 
 
-@template: api_method
+
 @descr:
 
 @related: colorpicker/manipulating_colorpicker.md#settinggettingcustomcolors
@@ -27,6 +27,6 @@ colorpicker/api/colorpicker_getcustomcolors_method.md
 **Related sample**:
 - [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
 
-@changelog:
+
 
 

@@ -15,7 +15,7 @@ layout.events.on("AfterHide", function(id){
 	// your logic here
 });
 
-@template: api_event
+
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)

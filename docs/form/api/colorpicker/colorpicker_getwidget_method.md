@@ -15,7 +15,7 @@ var colorpicker = form.getItem("colorpicker").getWidget();
 // -> dhtmlxColorPicker
 
 
-@template: api_method
+
 @descr:
 It is possible to use methods of dhtmlxColorPicker via the **getWidget()** method of a ColorPicker control.
 
