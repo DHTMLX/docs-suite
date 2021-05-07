@@ -9,7 +9,7 @@ title: Work with ComboBox
 Setting/getting value(s)
 ---------------------
 
-In order to select options in ComboBox, use the [setValue()](combo/api/combobox_setvalue_method.md) method. It takes one parameter:
+In order to select options in ComboBox, use the [setValue()](combobox/api/combobox_setvalue_method.md) method. It takes one parameter:
 
 - **ids** - (*string|number|array*) the ids of items from data collection that should be selected in ComboBox
 
@@ -23,7 +23,7 @@ combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 **Related sample**: [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
 
-To get the list of selected options, apply the [getValue()](combo/api/combobox_getvalue_method.md) method. It returns ids of selected options either as string(s) (by default) or as an array of strings. 
+To get the list of selected options, apply the [getValue()](combobox/api/combobox_getvalue_method.md) method. It returns ids of selected options either as string(s) (by default) or as an array of strings. 
 In the latter case you need to pass the following parameter:
 
 - **asArray**  - (*boolean*) true, to return ids as an array of strings
@@ -46,7 +46,7 @@ var array_ids = combo.getValue(true);
 Disabling/enabling ComboBox
 -----------------
 
-To disable/enable ComboBox, make use of the [disable()](combo/api/combobox_disable_method.md)/[enable()](combo/api/combobox_enable_method.md) methods:
+To disable/enable ComboBox, make use of the [disable()](combobox/api/combobox_disable_method.md)/[enable()](combobox/api/combobox_enable_method.md) methods:
 
 ~~~js
 // disabling a combo box
@@ -60,7 +60,7 @@ combo.enable();
 Checking if a combobox is disabled
 --------------------------------
 
-To check if a combobox is disabled, call the [isDisabled()](combo/api/combobox_isdisabled_method.md) method:
+To check if a combobox is disabled, call the [isDisabled()](combobox/api/combobox_isdisabled_method.md) method:
 
 ~~~js
 combo.isDisabled(); // -> true/false
@@ -71,7 +71,7 @@ combo.isDisabled(); // -> true/false
 Repainting ComboBox
 ----------------
 
-You can repaint ComboBox on a page, e.g. after changing its configuration, using the [paint()](combo/api/combobox_paint_method.md) method:
+You can repaint ComboBox on a page, e.g. after changing its configuration, using the [paint()](combobox/api/combobox_paint_method.md) method:
 
 ~~~js
 // disabling ComboBox via the configuration object
@@ -84,7 +84,7 @@ combo.paint();
 Clearing input
 ---------------
 
-It is possible to clear the ComboBox input from the selected value(s) with the help of the [clear()](combo/api/combobox_clear_method.md) method:
+It is possible to clear the ComboBox input from the selected value(s) with the help of the [clear()](combobox/api/combobox_clear_method.md) method:
 
 ~~~js
 combo.clear();
@@ -95,7 +95,7 @@ combo.clear();
 Setting focus
 --------------
 
-When needed, you can set focus in the ComboBox input without opening the list of options. Use the [focus()](combo/api/combobox_focus_method.md) method for this purpose:
+When needed, you can set focus in the ComboBox input without opening the list of options. Use the [focus()](combobox/api/combobox_focus_method.md) method for this purpose:
 
 ~~~js
 combo.focus();
@@ -206,11 +206,11 @@ combo.popup.events.on("AfterHide", function(e){
 Using Data Collection API
 ------------------------
 
-You can manipulate ComboBox options with the help of the [Data collection API](data_collection/api/refs/datacollection.md). 
+You can manipulate ComboBox options with the help of the [Data collection API](data_collection/index.md). 
 
 ### Adding options into ComboBox
 
-It is possible to add more options into the initialized ComboBox on the fly. Use the **add()** method of [Data Collection](data_collection/api/refs/datacollection.md). It takes two parameters:
+It is possible to add more options into the initialized ComboBox on the fly. Use the **add()** method of [Data Collection](data_collection/index.md). It takes two parameters:
 
 <table class="webixdoc_links">
 	<tbody>
@@ -270,6 +270,6 @@ combo.data.remove("option_id");
 
 <br/>
 
-{{note Check the full list of [Data collection API](data_collection/api/refs/datacollection.md)}}
+{{note Check the full list of [Data collection API](data_collection/index.md)}}
 
 

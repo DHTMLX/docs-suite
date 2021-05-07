@@ -6,14 +6,14 @@ title: Combobox API overview
 ## Methods
 
 | Name                                           | Description                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
+|------------------------------------------------|-------------------------------------------------------|
 | [](combobox/api/combobox_clear_method.md)      | @getshort(combobox/api/combobox_clear_method.md)      |
 | [](combobox/api/combobox_disable_method.md)    | @getshort(combobox/api/combobox_disable_method.md)    |
 | [](combobox/api/combobox_enable_method.md)     | @getshort(combobox/api/combobox_enable_method.md)     |
+| [](combobox/api/combobox_focus_method.md)      | @getshort(combobox/api/combobox_focus_method.md)      |
 | [](combobox/api/combobox_getvalue_method.md)   | @getshort(combobox/api/combobox_getvalue_method.md)   |
 | [](combobox/api/combobox_isdisabled_method.md) | @getshort(combobox/api/combobox_isdisabled_method.md) |
 | [](combobox/api/combobox_paint_method.md)      | @getshort(combobox/api/combobox_paint_method.md)      |
-| [](combobox/api/combobox_setstate_method.md)   | @getshort(combobox/api/combobox_setstate_method.md)   |
 | [](combobox/api/combobox_setvalue_method.md)   | @getshort(combobox/api/combobox_setvalue_method.md)   |
 
 :::info important
