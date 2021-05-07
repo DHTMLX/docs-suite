@@ -55,6 +55,4 @@ tabbar.events.fire(evName,[args]);
 
 ## List of supported events 
 
-You can find the full list of Tabbar events in the [API section](tabbar/api/refs/tabbar_events.md).
-
-
+You can find the full list of Tabbar events in the [API section](tabbar/api/api_overview.md#events).

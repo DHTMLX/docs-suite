@@ -40,6 +40,4 @@ chart.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](chart/api/refs/chart_events.md).
-
-
+The full list of events is available in the related [API section](chart/api/api_overview.md#events).

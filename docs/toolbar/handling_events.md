@@ -3,8 +3,6 @@ sidebar_label: Event Handling
 title: Event Handling
 ---          
 
-
-
 ## Attaching event listeners
 
 You can add any handler to the events of Toolbar. To do this, use the **toolbar.events.on()** method with the following parameters:
@@ -57,5 +55,4 @@ toolbar.events.fire(evName,[args]);
 
 ## List of supported events 
 
-You can find the full list of toolbar events in the [API section](toolbar/api/refs/toolbar_events.md).
-
+You can find the full list of toolbar events in the [API section](toolbar/api/api_overview.md#toolbar-events).

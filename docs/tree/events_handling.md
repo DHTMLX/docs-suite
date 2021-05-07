@@ -40,7 +40,4 @@ tree.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](tree/api/refs/tree_events.md).
-
-
-
+The full list of events is available in the related [API section](tree/api/api_overview.md#events).

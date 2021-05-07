@@ -13,8 +13,6 @@ slider.events.on("Change", function(newValue, oldValue, isRange){
 });
 ~~~
 
-
-
 {{note The names of events are case-insensitive.}}
 
 **Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
@@ -42,6 +40,4 @@ slider.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](slider/api/refs/slider_events.md).
-
-
+The full list of events is available in the related [API section](slider/api/api_overview.md#events).

@@ -3,8 +3,6 @@ sidebar_label: Event Handling
 title: Event Handling
 ---          
 
-
-
 ## Attaching event listeners
 
 You can add any handler to the events of Menu. To do this, use the **menu.events.on()** method with the following parameters:
@@ -57,5 +55,4 @@ menu.events.fire(evName,[args]);
 
 ## List of supported events 
 
-You can find the full list of Menu events in the [API section](menu/api/refs/menu.md).
-
+You can find the full list of Menu events in the [API section](menu/api/api_overview.md#menu-events).
