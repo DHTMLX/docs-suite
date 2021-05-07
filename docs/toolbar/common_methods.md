@@ -214,7 +214,7 @@ toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 Using Tree collection API
 ---------------
 
-You can manipulate the controls of Toolbar with the help of the [Tree collection API](tree_collection/api/refs/treecollection.md). 
+You can manipulate the controls of Toolbar with the help of the [Tree collection API](tree_collection/index.md). 
 
 
 ### Adding new controls into Toolbar
@@ -253,7 +253,7 @@ toolbar.data.add({
 
 **Related sample**: [Toolbar. Add](https://snippet.dhtmlx.com/r6jv9kk2)
 
-Templates for Toolbar controls in the JSON format are given [here](toolbar/load_data.md#jsonformattemplates).
+Templates for Toolbar controls in the JSON format are given [here](toolbar/load_data.md#json-format-templates).
 
 ### Updating config of controls
 
@@ -300,4 +300,4 @@ You can move menu controls to different positions with the **move()** method of 
 toolbar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}}
+{{note Check the full list of [Tree collection API](tree_collection/index.md).}}

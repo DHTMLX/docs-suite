@@ -10,31 +10,30 @@ Hiding/showing Popup
 
 You can hide and show a popup using the [hide()](popup/api/popup_hide_method.md) and [show()](popup/api/popup_show_method.md) methods. The **show()** method takes the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>element</b></td>
+			<td><b>element</b></td>
 			<td>(<i>HTMLElement</i>) mandatory, the container to place a popup in</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) optional, the configuration object of a popup. Can contain the properties below:
             <ul>
                 <li><b>centering</b> - (<i>boolean</i>) defines whether a popup should be centered relative to the element, <i>true</i> by default</li>
-                <li><b>auto</b> - (<i>boolean</i>) enables autopositioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</li>
+                <li><b>auto</b> - (<i>boolean</i>) enables auto-positioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</li>
                 <li><b>mode</b> - (<i>string</i>) the position relative to the element to show a popup at:"left","right","bottom" (default),"top"</li>
                 <li><b>indent</b> - (<i>number</i>) the offset of a popup relative to the element</li>
             </ul></td>
 		</tr>
     </tbody>
 </table> 
-    
-This method should be called each time you need to render a popup on a page.
 
+This method should be called each time you need to render a popup on a page.
     
-```js
-	popup.show("popup_container");
-```
+~~~js
+popup.show("popup_container");
+~~~
 
 This is how you can hide a popup:
 

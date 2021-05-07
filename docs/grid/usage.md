@@ -108,7 +108,7 @@ grid.hideColumn(col);
 
 **Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)
 
-Since the object of a column has the [hidden](grid/configuration.md#hiddencolumns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
+Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
 
 Checking visibility of a column
 ----------------------------------
@@ -253,7 +253,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 Filtering data
 ------------------
 
-You can filter grid data by the specified criteria with the help of the **filter()** method of [data collection](data_collection/api/refs/datacollection.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the **filter()** method of [data collection](data_collection/index.md). The method takes as a parameter an object with the properties described below:
 
 <table>
 	<tbody>
@@ -317,7 +317,7 @@ grid.data.filter({
 Sorting data
 --------------
 
-It is possible to sort data in the grid via the **sort()** method of [data collection](data_collection/api/refs/datacollection.md). The method takes two parameters:
+It is possible to sort data in the grid via the **sort()** method of [data collection](data_collection/index.md). The method takes two parameters:
 
 <table>
 	<tbody>
@@ -435,7 +435,7 @@ grid.editEnd(); // the edited data will be saved
 grid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [editEnd()](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#columneditors) is defined as **checkbox**.}}
+{{note The [editEnd()](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
 
 
 Exporting Grid

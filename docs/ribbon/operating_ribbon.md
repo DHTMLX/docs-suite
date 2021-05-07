@@ -198,7 +198,7 @@ Using Tree collection API
 
 ### Adding controls
 
-You can add controls dynamically with the **add()** method of [TreeCollection](tree_collection/api/refs/treecollection.md).
+You can add controls dynamically with the **add()** method of [TreeCollection](tree_collection/index.md).
 
 ~~~js
 ribbon.data.add({

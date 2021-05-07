@@ -8,7 +8,7 @@ Working with checkboxes
 
 
 
-You can [enable checkbox for tree items](tree/configuration.md#checkboxesforitems) with the [](tree/api/tree_checkbox_config.md) configuration option. Then you can manipulate items with checkboxes with the help of Tree API.
+You can [enable checkbox for tree items](tree/configuration.md#checkboxes-for-items) with the [](tree/api/tree_checkbox_config.md) configuration option. Then you can manipulate items with checkboxes with the help of Tree API.
 
 
 ### Check/uncheck checkboxes
@@ -67,7 +67,7 @@ tree.toggle("history");
 
 ### Expand/collapse all items
 
-It is also possible to expand/collapse all Tree items using the two corresponding methods - [](tree/api/tree_expandall_method.md) and tree/api/tree_collapseall_method.md:
+It is also possible to expand/collapse all Tree items using the two corresponding methods - [](tree/api/tree_expandall_method.md) and [](tree/api/tree_collapseall_method.md):
 
 ~~~js
 // expand all tree items
@@ -189,7 +189,7 @@ Here is an example of a treeState object:
 Using Tree Collection API
 ---------------------------
 
-You can manipulate Tree items with the help of the [Tree collection API](tree_collection/api/refs/treecollection.md).
+You can manipulate Tree items with the help of the [Tree collection API](tree_collection/index.md).
 
 ### Adding items into Tree
 
@@ -255,6 +255,6 @@ tree.data.remove("id");
 **Related sample**: [Tree. Delete Data](https://snippet.dhtmlx.com/efy72vz8)
 
 
-{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}}
+{{note Check the full list of [Tree collection API](tree_collection/index.md).}}
 
 

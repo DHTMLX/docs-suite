@@ -106,7 +106,7 @@ combo.focus();
 Hiding/showing the popup
 -----------------
 
-You can manipulate the visibility of the Combo popup with the help of the [Popup](popup/api/refs/popup.md) API.
+You can manipulate the visibility of the Combo popup with the help of the [Popup](popup/api/api_overview.md) API.
 
 To hide/show the popup, use the corresponding methods:
 

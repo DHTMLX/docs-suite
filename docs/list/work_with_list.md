@@ -35,7 +35,7 @@ list.editItem("1");
 Disabling and enabling selection of an item
 ----------------------------------
 
-For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](list/usage_selection.md#enablingdisablingselectionobject).
+For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](list/usage_selection.md#enablingdisabling-selection-object).
 
 
 Using Data Collection API
