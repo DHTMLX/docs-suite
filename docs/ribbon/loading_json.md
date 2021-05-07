@@ -50,12 +50,12 @@ var data = [
 ];
 ~~~
 
-A data set consists of objects with configurations of Ribbon controls. Templates for Ribbon controls in JSON format are given [below](#jsonformattemplate).
+A data set consists of objects with configurations of Ribbon controls. Templates for Ribbon controls in JSON format are given [below](#json-format-templates).
 
 Loading from a local source
 -------------------
 
-You can load data to a ribbon from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparingdataset) as a parameter of this method:
+You can load data to a ribbon from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 ribbon.data.parse(data);

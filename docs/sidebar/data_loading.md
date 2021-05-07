@@ -36,12 +36,12 @@ var data = [
 ];
 ~~~
 
-A data set consists of objects with configurations of sidebar controls. Templates for Sidebar controls in JSON format are given [below](#jsonformattemplates).
+A data set consists of objects with configurations of sidebar controls. Templates for Sidebar controls in JSON format are given [below](#json-format-templates).
 
 Loading from a local source
 -------------------
 
-You can load data to a sidebar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparingdataset) as a parameter of this method:
+You can load data to a sidebar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 sidebar.data.parse(data);

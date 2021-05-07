@@ -134,7 +134,7 @@ tree.data.load("/some/data").then(function(){
 Loading from local source
 ------------------
 
-To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparingdataset) as a parameter of this method:
+To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var tree = new dhx.Tree("tree_container");
