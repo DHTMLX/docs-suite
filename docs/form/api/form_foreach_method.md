@@ -3,7 +3,7 @@ sidebar_label: forEach
 title: forEach
 ---          
 
-@short: iterates over all controls of a from
+@short: iterates over all controls of a form
 
 @signature: {'forEach(callback: FormDataCallback): void;'}
 

@@ -77,7 +77,7 @@ There is a possibility to make changes in the look and feel of a combo box. For 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combo/api/combobox_css_config.md) property in the ComboBox configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combobox/api/combobox_css_config.md) property in the ComboBox configuration:
 
 ~~~js
 var combo = new dhx.Combobox({

@@ -20,7 +20,7 @@ after the source files of dhtmlxRibbon as follows:
 	media="all" rel="stylesheet" type="text/css">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](ribbon/loading_json.md#jsonformattemplates) for ribbon:
+Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](ribbon/loading_json.md#json-format-templates) for ribbon:
 
 ![](../assets/ribbon/fa_icons.png)
 

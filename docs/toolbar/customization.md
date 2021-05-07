@@ -21,7 +21,7 @@ after the source files of dhtmlxToolbar as follows:
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](toolbar/load_data.md#jsonformattemplates) for toolbar:
+Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](toolbar/load_data.md#json-format-templates) for toolbar:
 
 ~~~js
 var toolbarData = [

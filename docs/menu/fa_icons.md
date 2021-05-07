@@ -21,7 +21,7 @@ after the source files of dhtmlxMenu as follows:
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/from_script.md#jsonformattemplates) for menu:
+Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/from_script.md#json-format-templates) for menu:
 
 ~~~js
 [
