@@ -35,7 +35,7 @@ View [the full list of configuration properties of the Input control](form/api/i
 
 ## Working with Input
 
-You can manipulate a Input control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate an Input control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 

@@ -15,6 +15,7 @@ title: Combobox API overview
 | [](combobox/api/combobox_paint_method.md)      | @getshort(combobox/api/combobox_paint_method.md)      |
 | [](combobox/api/combobox_setstate_method.md)   | @getshort(combobox/api/combobox_setstate_method.md)   |
 | [](combobox/api/combobox_setvalue_method.md)   | @getshort(combobox/api/combobox_setvalue_method.md)   |
+| [](combobox/api/combobox_focus_method.md)      | @getshort(combobox/api/combobox_focus_method.md)      |
 
 :::info important
 Use [DataCollection methods](data_collection/index.md) to work with data. 

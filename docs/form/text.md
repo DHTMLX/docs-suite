@@ -32,7 +32,7 @@ View [the full list of configuration properties of the Text control](form/api/te
 
 ## Working with Text
 
-You can manipulate a Text control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Text control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -43,7 +43,6 @@ var value = form.getItem("text").getValue();
 ### Methods
 
 Check [the full list of methods of the Text control](form/api/api_overview.md#text-methods).
-
 
 ### Events
 

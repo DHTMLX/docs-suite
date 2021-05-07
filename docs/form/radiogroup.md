@@ -59,7 +59,7 @@ View [the full list of properties](form/api/radiogroup/api_radiogroup_properties
 
 ## Working with RadioGroup
 
-You can manipulate a RadioGroup control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a RadioGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 

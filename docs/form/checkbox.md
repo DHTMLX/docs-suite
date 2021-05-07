@@ -35,7 +35,7 @@ View [the full list of configuration properties of the Checkbox control](form/ap
 
 ## Working with Checkbox
 
-You can manipulate a Checkbox control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Checkbox control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 

@@ -325,6 +325,7 @@ module.exports = {
                   "combobox/api/combobox_paint_method",
                   "combobox/api/combobox_setstate_method",
                   "combobox/api/combobox_setvalue_method",
+                  "combobox/api/combobox_focus_method",
                 ],
               },
               {

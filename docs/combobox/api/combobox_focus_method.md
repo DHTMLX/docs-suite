@@ -9,15 +9,8 @@ title: focus
 
 @example:
 combo.focus();
+@examplestop:
 
-
-
-@descr:
+**Related sample**: [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
 
 @related: combobox/work_with_combo.md#settingfocus
-
-
-**Related sample**:
-- [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
-
-
