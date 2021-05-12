@@ -10,24 +10,13 @@ title: setCustomColors
 @params:
 - customColors    array    an array with custom colors
 
-
-
 @example:
 colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 
-
-
 @descr:
 
-**Related sample**:
-- [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
+**Related sample**: [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
 
-@related: colorpicker/manipulating_colorpicker.md#settinggetting-custom-colors
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#settinggetting-custom-colors)
 
-@relatedapi:
-colorpicker/api/colorpicker_getcustomcolors_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: colorpicker/api/colorpicker_getcustomcolors_method.md)

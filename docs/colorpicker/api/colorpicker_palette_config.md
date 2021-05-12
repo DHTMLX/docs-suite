@@ -44,6 +44,4 @@ var palette = [
 ];
 ~~~
 
-
-@related: colorpicker/how_to_start.md#initialize-colorpicker
-colorpicker/configuration.md
+[comment]: # (@related: colorpicker/how_to_start.md#initialize-colorpicker colorpicker/configuration.md)

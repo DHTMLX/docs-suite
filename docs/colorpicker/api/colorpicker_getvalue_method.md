@@ -16,16 +16,8 @@ colorpicker.setValue("#BDF0E9");
 var color = colorpicker.getValue();
 // -> "#BDF0E9"
 
-
-
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggetting-selected-color
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#settinggetting-selected-color)
 
-@relatedapi:
-colorpicker/api/colorpicker_setvalue_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: colorpicker/api/colorpicker_setvalue_method.md)

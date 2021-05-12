@@ -15,7 +15,6 @@ colorpicker.events.on("ModeChange", function(mode) {
    console.log("Selected mode: " + mode); 
 });
  
-
 @descr:
 
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)

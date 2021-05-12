@@ -15,9 +15,8 @@ var colorpicker = new dhx.Colorpicker("colorpicker", {
 
 **Related sample**: [Colorpicker. Colorpicker Modes](https://snippet.dhtmlx.com/add0g4je)
 
-
 @descr: 
 
-@related: colorpicker/how_to_start.md#initialize-colorpicker
-
 @changelog: added in v6.4
+
+[comment]: # (@related: colorpicker/how_to_start.md#initialize-colorpicker)

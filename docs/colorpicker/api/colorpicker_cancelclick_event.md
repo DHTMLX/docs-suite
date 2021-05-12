@@ -12,7 +12,6 @@ colorpicker.events.on("CancelClick",function(){
 	// your logic here
 });
 
-
 @descr:
 
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)

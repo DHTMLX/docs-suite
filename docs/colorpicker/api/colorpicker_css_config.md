@@ -22,8 +22,6 @@ var colorpicker = new dhx.Colorpicker({
     css:"my_first_class my_second_class"
 });
 
-
-
 @descr:
 
 **Related sample**: [Colorpicker. Custom CSS](https://snippet.dhtmlx.com/mnwi3sp0)
@@ -35,7 +33,6 @@ var colorpicker = new dhx.Colorpicker({
     css:"dhx_widget--bg_white"
 });
 ~~~
-
     
 ### List of CSS classes
 
@@ -63,4 +60,4 @@ var colorpicker = new dhx.Colorpicker({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: colorpicker/how_to_start.md#initialize-colorpicker
+[comment]: # (@related: colorpicker/how_to_start.md#initialize-colorpicker)

@@ -10,15 +10,11 @@ TODO: api change (добавить в desc "palette" | "picker")
 @example:
 var mode = colorpicker.getCurrentMode(); // -> "palette"
 
-
-
 @descr:
-
-
-@related: colorpicker/manipulating_colorpicker.md#settinggetting-current-mode
-
-@relatedapi: colorpicker/api/colorpicker_setcurrentmode_method.md
 
 @changelog:
 added in v6.3
 
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#settinggetting-current-mode)
+
+[comment]: # (@relatedapi: colorpicker/api/colorpicker_setcurrentmode_method.md)

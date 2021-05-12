@@ -13,16 +13,8 @@ colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 var colors = colorpicker.getCustomColors();
 // -> ["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]
 
-
-
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggetting-custom-colors
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#settinggetting-custom-colors)
 
-@relatedapi:
-colorpicker/api/colorpicker_setcustomcolors_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: colorpicker/api/colorpicker_setcustomcolors_method.md)
