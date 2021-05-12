@@ -31,4 +31,3 @@ You can hide and show Separator with the methods of Ribbon:
 ribbon.showItem(id);
 ribbon.hideItem(id);
 ~~~
-

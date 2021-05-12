@@ -3,7 +3,6 @@ sidebar_label: Spacer
 title: Spacer
 ---          
 
-
 This item takes space on the sidebar and is used for aligning controls.
 
 ![](../assets/sidebar/spacer.png)
@@ -24,7 +23,6 @@ sidebar.data.add({
 
 You can provide the [following properties](sidebar/api/api_spacer_properties.md) in the configuration object of a Spacer control.
 
-
 ## Showing/hiding spacer
 
 You can hide and show Spacer with the methods of sidebar:
@@ -34,8 +32,4 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-<br/>
-
-Check the full list of available operations in the [Sidebar API](sidebar/api/refs/sidebar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
-
-
+Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

@@ -3,8 +3,6 @@ sidebar_label: Button
 title: Button
 ---          
 
-
-
 This is a simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
 
 ![](../assets/ribbon/ribbon_button.png)
@@ -21,11 +19,9 @@ This is the basic syntax of a button:
 }
 ~~~
 
-
 ### Properties
 
 You can provide the [following properties](ribbon/api/api_button_properties.md) in the configuration object of a Button control.
-
 
 ## Adding Buttons
 
@@ -155,4 +151,3 @@ ribbon.getState();
 // or
 // { check:false }
 ~~~
-

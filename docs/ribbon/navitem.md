@@ -7,8 +7,7 @@ This is a default control for navigation-related components, can contain any oth
 
 ![](../assets/ribbon/navitem.png)
 
-Adding NavItem
-----------------
+## Adding NavItem
 
 A navItem can be easily added to a ribbon with the help of the **add()** method of Tree Collection:
 
@@ -59,7 +58,6 @@ You can add a custom HTML content to a navItem with the help of the **html** pro
 ~~~
 
 **Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
-
 
 ## Showing/hiding a navItem
 

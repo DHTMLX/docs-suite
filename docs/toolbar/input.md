@@ -11,7 +11,7 @@ This is an input field for entering some text.
 
 ## Adding Input
 
-The following example shows how an Input control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+The following example shows how an Input control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({
@@ -83,4 +83,4 @@ To get the text that is currently inside the Input control, call **getState()**:
 toolbar.getState(); //-> {search:"Summer"}
 ~~~
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/refs/toolbar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

@@ -11,7 +11,7 @@ This is an item that contains some text.
 
 ## Adding Title control
 
-A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({

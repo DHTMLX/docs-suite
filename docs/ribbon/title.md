@@ -5,7 +5,6 @@ title: Title
 
 This is an item that contains some text.
 
-
 ## Adding Title control
 
 A Title control can be added to a ribbon with the help of the **add()** method of TreeCollection:
@@ -20,7 +19,6 @@ ribbon.data.add({
 ### Properties
 
 You can provide the [following properties](ribbon/api/api_title_properties.md) in the configuration object of a Title control.
-
 
 ## Showing/hiding title
 

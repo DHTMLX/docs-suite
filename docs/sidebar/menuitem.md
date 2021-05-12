@@ -7,8 +7,7 @@ MenuItem is a drop-down list of options, can contain its own sub-menu.
 
 ![](../assets/sidebar/menuitem.png)
 
-Adding MenuItem
-----------------
+## Adding MenuItem
 
 A menuItem can be easily added to a sidebar with the help of the **add()** method of Tree Collection:
 
@@ -26,7 +25,6 @@ sidebar.data.add({
 ### Properties
 
 You can provide the [following properties](sidebar/api/api_menuitem_properties.md) in the configuration object of a MenuItem control.
-
 
 ## Adding an icon
 
@@ -91,4 +89,3 @@ You can add a tooltip to a menuItem:
     tooltip:"Click me and find out why"  /*!*/
 }
 ~~~
-
