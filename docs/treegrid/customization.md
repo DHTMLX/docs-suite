@@ -43,7 +43,7 @@ Styling header cells
 
 **Related sample**: [TreeGrid. Styling Header Cells](https://snippet.dhtmlx.com/vf0ws454)
 
-You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the [text](treegrid/configuration.md#columns) property of the header of a column:
+You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the [text](treegrid/api/api_treegridcolumn_properties.md) property of the header of a column:
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", { 
@@ -67,7 +67,7 @@ Styling footer cells
 
 **Related sample**: [TreeGrid. Styling Footer Cells](https://snippet.dhtmlx.com/wi39d42e)
 
-You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the [text](treegrid/configuration.md#columns) property of the footer of a column:
+You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the [text](treegrid/api/api_treegridcolumn_properties.md) property of the footer of a column:
 
 ~~~html
 <style>	    
@@ -435,7 +435,7 @@ Adding template to tooltip
 
 ![](../assets/treegrid/tooltip_template.png)
 
-Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](treegrid/configuration.md#columns) configuration option of the column. The **tooltipTemplate** function takes three parameters:
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of the column. The **tooltipTemplate** function takes three parameters:
 
 <table class="webixdoc_links">
 	<tbody>

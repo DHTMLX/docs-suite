@@ -28,12 +28,12 @@ dataview.editItem("1");
 Disabling and enabling selection of an item
 ----------------------------------
 
-For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](dataview/usage_selection.md#enablingdisablingselectionobject).
+For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](dataview/usage_selection.md#enablingdisabling-selection-object).
 
 Using Data Collection API
 ------------------------
 
-You can manipulate DataView items with the help of the [Data collection API](data_collection/api/refs/datacollection.md). 
+You can manipulate DataView items with the help of the [Data collection API](data_collection/index.md). 
 
 ### Adding items into DataView
 
@@ -104,7 +104,7 @@ dataview.data.remove("id");
 ### Filtering DataView data
 
 You can filter DataView data by the specified criteria with the help of the [](../data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the
-[Data collection API](data_collection/api/refs/datacollection.md).
+[Data collection API](data_collection/index.md).
 
 ~~~js
 dataview.data.filter({
@@ -118,7 +118,7 @@ dataview.data.filter({
 
 ### Sorting DataView data
 
-It is possible to sort data in DataView via the [](../data_collection/api/datacollection_sort_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/api/refs/datacollection.md).
+It is possible to sort data in DataView via the [](../data_collection/api/datacollection_sort_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
 ~~~js
 dataview.data.sort({ 

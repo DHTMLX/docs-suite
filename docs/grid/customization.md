@@ -330,7 +330,7 @@ Adding template to cells
 
 ![](../assets/grid/cell_templates.png)
 
-It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/configuration.md#columns). The template option is a function that takes three parameters:
+It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/api/api_gridcolumn_properties.md). The template option is a function that takes three parameters:
 
 <table class="webixdoc_links">
 	<tbody>
@@ -425,7 +425,7 @@ Adding template to tooltip
 
 ![](../assets/grid/tooltip_template.png)
 
-Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/configuration.md#columns) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
 
 <table class="webixdoc_links">
 	<tbody>

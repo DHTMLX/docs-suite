@@ -29,7 +29,7 @@ layout.getCell("header");
 Attaching a component to a cell
 ---------------------------------
 
-You can easily attach any DHTMLX component to a cell of Layout using the [attach](layout/api/layout_attach_method.md) method of a cell:
+You can easily attach any DHTMLX component to a cell of Layout using the [attach](layout/api/cell/layout_cell_attach_method.md) method of a cell:
 
 ~~~js
 var layout = new dhx.Layout({width:"400px", height:"600px"});
@@ -51,7 +51,7 @@ layout.getCell("list").attach(list);
 Attaching an HTML content to a cell
 ------------------------------
 
-You can easily attach some HTML content to a cell of Layout via the [attachHTML()](layout/api/layout_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
+You can easily attach some HTML content to a cell of Layout via the [attachHTML()](layout/api/cell/layout_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
 
 ~~~js
 var layout = new dhx.Layout({width:"400px", height:"600px"});
@@ -62,7 +62,7 @@ layout.getCell("content").attachHTML(html);
 Hiding/showing a cell
 ----------------------
 
-It is possible to hide/show a cell with the help of its API. Both the [hide](layout/api/layout_hide_method.md) and [show](layout/api/layout_show_method.md) methods take the id of a cell as a parameter.
+It is possible to hide/show a cell with the help of its API. Both the [hide](layout/api/cell/layout_cell_hide_method.md) and [show](layout/api/cell/layout_cell_show_method.md) methods take the id of a cell as a parameter.
 
 ~~~js
 // hiding a cell
@@ -82,7 +82,7 @@ layout.getCell("toolbar").show();
 Checking visibility of a cell
 -------------------
 
-Since the object of a cell has the [hidden](layout/api/layout_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibilty of cell via the [isVisible](layout/api/layout_isvisible_method.md) method. It returns *true* if a cell is visible and *false* if it is hidden.
+Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibilty of cell via the [isVisible](layout/api/cell/layout_cell_isvisible_method.md) method. It returns *true* if a cell is visible and *false* if it is hidden.
 
 ~~~js
 layout.getCell("sidebar").isVisible(); // -> true|false
@@ -91,7 +91,7 @@ layout.getCell("sidebar").isVisible(); // -> true|false
 Collapsing/expanding a cell
 ------------------------------
 
-You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [collapse()](layout/api/layout_collapse_method.md) and [expand()](layout/api/layout_expand_method.md):
+You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [collapse()](layout/api/cell/layout_cell_collapse_method.md) and [expand()](layout/api/cell/layout_cell_expand_method.md):
 
 ~~~js
 // collapsing a cell by its id
@@ -106,7 +106,7 @@ layout.getCell("sidebar").expand();
 Toggling a cell
 --------------------
 
-It is also possible to collapse and expand a specified cell of Layout using the [toggle()](layout/api/layout_toggle_method.md) method of a cell:
+It is also possible to collapse and expand a specified cell of Layout using the [toggle()](layout/api/cell/layout_cell_toggle_method.md) method of a cell:
 
 ~~~js
 layout.getCell("toolbar").toggle();

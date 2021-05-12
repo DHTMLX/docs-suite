@@ -108,7 +108,7 @@ chart.eachSeries(function(seria){
 Adding items into Chart
 -----------------------
 
-The API of [Data Collection](data_collection/api/refs/datacollection.md) allows you to perform operations with Chart data items. 
+The API of [Data Collection](data_collection/index.md) allows you to perform operations with Chart data items. 
 For example, you can add more items (points) into your Chart using the [](data_collection/api/datacollection_add_method.md) method, like this:
 
 ~~~js

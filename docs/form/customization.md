@@ -37,7 +37,7 @@ var form = new dhx.Form({
 
 ![](../assets/form/custom_styles.png)
 
-You can modify styling of Form controls as well using the **css** option inside the object of a [related control](form/controls_list.md).
+You can modify styling of Form controls as well using the **css** option inside the object of a related control.
 
 ~~~html
 <style>

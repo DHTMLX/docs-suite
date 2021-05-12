@@ -189,7 +189,7 @@ sidebar.toggle();
 Using Tree collection API
 ---------------
 
-You can manipulate the controls of Sidebar with the help of the [Tree collection API](tree_collection/api/refs/treecollection.md). 
+You can manipulate the controls of Sidebar with the help of the [Tree collection API](tree_collection/index.md). 
 
 
 ### Adding new controls into Sidebar
@@ -228,7 +228,7 @@ sidebar.data.add({
 
 **Related sample**: [Sidebar. Data Add](https://snippet.dhtmlx.com/jcnw95ac)
 
-Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#jsonformattemplates).
+Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#json-format-templates).
 
 ### Updating config of controls
 
@@ -275,4 +275,4 @@ You can move menu controls to different positions with the **move()** method of 
 sidebar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}} 
+{{note Check the full list of [Tree collection API](tree_collection/index.md).}} 

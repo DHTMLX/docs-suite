@@ -23,7 +23,7 @@ after the source files of dhtmlxSidebar as follows:
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](sidebar/data_loading.md#jsonformattemplates) for Sidebar:
+Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](sidebar/data_loading.md#json-format-templates) for Sidebar:
 
 ~~~js
 var sidebarData = [

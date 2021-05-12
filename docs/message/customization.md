@@ -26,7 +26,7 @@ To use a new CSS class you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the **css** property in the [message box](message/configuration.md#messagebox) ([alert](message/configuration.md#alertbox), [confirm](message/configuration.md#confirmbox)), [tooltip](message/configuration.md#tooltip) configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the **css** property in the [message box](message/configuration.md#message-box) ([alert](message/configuration.md#alert-box), [confirm](message/configuration.md#confirm-box)), [tooltip](message/configuration.md#tooltip) configuration:
 
 ~~~js
 dhx.message({

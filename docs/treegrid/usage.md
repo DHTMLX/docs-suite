@@ -106,7 +106,7 @@ treegrid.hideColumn(col);
 
 **Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
 
-Since the object of a column has the [hidden](treegrid/configuration.md#hiddencolumns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
+Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
 
 Checking visibility of a column
 ----------------------------------
@@ -150,7 +150,7 @@ Adding/removing spans
 
 You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: [addSpan()](treegrid/api/treegrid_addspan_method.md), [removeSpan()](treegrid/api/treegrid_removespan_method.md) and [getSpan()](treegrid/api/treegrid_getspan_method.md).
 
-###Adding spans
+### Adding spans
 
 In order to add a col/row span into the grid, use the [addSpan()](treegrid/api/treegrid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
@@ -193,7 +193,7 @@ These are possible fields of a span object:
     </tbody>
 </table>
 
-###Getting spans
+### Getting spans
 
 You can return the col/row span a cell is a part of using the [getSpan()](treegrid/api/treegrid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
@@ -458,7 +458,7 @@ treegrid.editEnd(); // the edited data will be saved
 treegrid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [editEnd()](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#columneditors) is defined as **checkbox**.}}
+{{note The [editEnd()](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
 
 
 Expanding/collapsing nodes
@@ -482,7 +482,7 @@ treegrid.collapse("native");
 
 ### Expand/collapse all nodes
 
-It is also possible to expand/collapse all TreeGrid nodes using the two corresponding methods - [](treegrid/api/treegrid_expandall_method.md) and treegrid/api/treegrid_collapseall_method.md:
+It is also possible to expand/collapse all TreeGrid nodes using the two corresponding methods - [](treegrid/api/treegrid_expandall_method.md) and [](treegrid/api/treegrid_collapseall_method.md):
 
 ~~~js
 // expand all treegrid nodes
