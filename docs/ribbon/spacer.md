@@ -7,7 +7,6 @@ This item takes space on the ribbon and is used for aligning controls.
 
 ![DHX Ribbon spacer](../assets/ribbon/spacer.png)
 
-
 ## Adding Spacer
 
 A new Spacer can be created with the help of the **add()** method of Tree Collection:
@@ -24,7 +23,6 @@ ribbon.data.add({
 
 You can provide the [following properties](ribbon/api/api_spacer_properties.md) in the configuration object of a Spacer control.
 
-
 ## Showing/hiding spacer
 
 You can hide and show Spacer with the methods of ribbon:
@@ -33,8 +31,3 @@ You can hide and show Spacer with the methods of ribbon:
 ribbon.show(id);
 ribbon.hide(id);
 ~~~
-
-
-
-
-

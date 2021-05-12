@@ -41,9 +41,6 @@ ribbon.data.add({
 
 You can provide the [following properties](ribbon/api/api_selectbutton_properties.md) in the configuration object of a SelectButton control.
 
+## Operations with a button
 
-Operations with a button
------------------------
-
-You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/refs/ribbon.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
-
+You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
