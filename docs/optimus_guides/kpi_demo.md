@@ -1,5 +1,5 @@
 ---
-sidebar_label: Sales KPI Tracking System Demo
+sidebar_label: Sales KPI tracking system demo
 title: Sales KPI Tracking System Demo
 --- 
 

@@ -1,6 +1,6 @@
 ---
-sidebar_label: Dashboard Framework Demo
-title: Dashboard Framework Demo
+sidebar_label: UI dashboard demo
+title: UI Dashboard Demo
 --- 
 
 ![](../assets/optimus/demo/dashboard_demo.png)

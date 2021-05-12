@@ -1,5 +1,5 @@
 ---
-sidebar_label: Online Exam System Demo
+sidebar_label: Online exam system demo
 title: Online Exam System Demo
 --- 
 

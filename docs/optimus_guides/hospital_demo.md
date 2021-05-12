@@ -1,5 +1,5 @@
 ---
-sidebar_label: Hospital Management System Demo
+sidebar_label: Hospital management system demo
 title: Hospital Management System Demo
 --- 
 

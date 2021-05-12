@@ -1,5 +1,5 @@
 ---
-sidebar_label: File Manager Demo
+sidebar_label: File manager demo
 title: File Manager Demo
 --- 
 

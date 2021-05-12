@@ -1,5 +1,5 @@
 ---
-sidebar_label: Hotel Management System Demo
+sidebar_label: Hotel management system demo
 title: Hotel Management System Demo
 --- 
 
