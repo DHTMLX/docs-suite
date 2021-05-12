@@ -17,12 +17,12 @@ dataview.editItem("1");
 
 @descr:
 
+**Related sample**:
+- [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
+
 @related: dataview/manipulating_data.md#editing-items
 
 @relatedapi:
 dataview/api/dataview_editable_config.md
-
-**Related sample**:
-- [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
 
 @changelog: added in v6.4

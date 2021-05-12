@@ -33,6 +33,7 @@ var val4 = timepicker.getItem("timepicker").getValue(true);
 
 
 @descr:
+
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 
 - for the 24-hour format a return string value will include just the hour and minutes: "00:39"

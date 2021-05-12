@@ -49,12 +49,11 @@ form.getItem("simplevault").getProperties();
 
 
 @descr:
+
 The returned object of the **SimpleVault** control can contain the following configuration attributes:
 
-``` todo нужна ли таблица
 <table class="webixdoc_links">
 	<tbody>
-		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
@@ -122,6 +121,5 @@ The returned object of the **SimpleVault** control can contain the following con
   </tbody>
 </table>
 
-``` 
 
 @changelog: added in v7.0

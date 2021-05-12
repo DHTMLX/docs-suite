@@ -22,7 +22,11 @@ var dataview = new dhx.DataView("dataview", {
 
 
 
-@descr: 
+@descr:
+
+**Related sample**:
+- [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
+
 The template function takes one parameter:
 
 <table class="webixdoc_links">
@@ -34,8 +38,6 @@ The template function takes one parameter:
     </tbody>
 </table>
 
-**Related sample**:
-- [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
 
 @related: dataview/configuration.md#template-for-dataview-items
 

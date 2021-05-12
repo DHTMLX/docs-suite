@@ -45,10 +45,9 @@ var form = new dhx.Form("form_container", {
 **Related sample**:
 - [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
+@changelog: added in v6.4
 
 @related: form/how_to_start.md#initialize-form
 form/configuration.md#grouping-controls-in-form
 
 @relatedapi: form/api/form_cols_config.md
-
-@changelog: added in v6.4

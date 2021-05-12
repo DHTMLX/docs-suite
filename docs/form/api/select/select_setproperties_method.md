@@ -19,6 +19,7 @@ form.getItem("select").setProperties({
 
 
 @descr:
+
 The method invokes the [](form/api/select/select_afterchangeproperties_event.md) and [](form/api/select/select_beforechangeproperties_event.md) events.
 
 It is possible to change values of the following configuration attributes of the **Select** control:

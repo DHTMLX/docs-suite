@@ -28,6 +28,7 @@ var send = form.send("myserver.com", "POST");
 
 The **method** parameter can take "PUT", "POST", "DELETE", "GET" values, depending on the used type of the request. 
 
+@changelog: added in v6.1
 
 
 @related: form/work_with_form.md#sending-form-to-server
@@ -36,4 +37,3 @@ The **method** parameter can take "PUT", "POST", "DELETE", "GET" values, dependi
 form/api/form_aftersend_event.md
 form/api/form_beforesend_event.md
 
-@changelog: added in v6.1

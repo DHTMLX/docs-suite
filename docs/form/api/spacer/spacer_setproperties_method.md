@@ -18,6 +18,7 @@ form.getItem("spacer").setProperties({
 
 
 @descr:
+
 The method invokes the [](form/api/spacer/spacer_afterchangeproperties_event.md) and [](form/api/spacer/spacer_beforechangeproperties_event.md) events.
 
 It is possible to change values of the following configuration attributes of the **Spacer** control:

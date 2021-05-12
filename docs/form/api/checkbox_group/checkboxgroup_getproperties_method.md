@@ -82,6 +82,7 @@ form.getItem("checkboxGroup").getProperties("second");
 
 
 @descr:
+
 The returned object of the **CheckboxGroup** control can contain the following configuration attributes:
 
 <table class="webixdoc_links">

@@ -17,6 +17,7 @@ form.getItem("text").setProperties({
 
 
 @descr:
+
 The method invokes the [](form/api/text/text_afterchangeproperties_event.md) and [](form/api/text/text_beforechangeproperties_event.md) events.
 
 It is possible to change values of the following configuration attributes of the **Text** control:

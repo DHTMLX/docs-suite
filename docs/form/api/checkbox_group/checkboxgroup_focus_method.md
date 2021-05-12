@@ -16,6 +16,7 @@ form.getItem("CheckboxGroup").focus("checkbox_1");
 
 
 @descr:
+
 If "id" is not specified, the method sets focus to the first checkbox of the Checkbox Group.
 
 

@@ -20,6 +20,7 @@ var state = form.getItem("checkbox").getValue(); // -> true/false
 
 
 @descr:
+
 - If the **value** property is not set for a control, the method returns the state of the control:
 
 ~~~js
