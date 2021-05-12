@@ -1,5 +1,5 @@
 ---
-sidebar_label: Geo Tracking Demo
+sidebar_label: Geo tracking demo
 title: Geo Tracking Demo
 --- 
 
