@@ -26,6 +26,7 @@ form.setProperties("input_name", {
 
 
 @descr:
+
 The method invokes the [](form/api/form_afterchangeproperties_event.md) and [](form/api/form_beforechangeproperties_event.md) events.
 
 {{note Note, that the method allows changing values only for the properties that are listed below for each control.}}
@@ -1295,6 +1296,7 @@ It is possible to change the following configuration attributes of the **TimePic
     </tbody>
 </table>
 
+@changelog: added in v7.0
+
 @relatedapi: form/api/form_getproperties_method.md
 
-@changelog: added in v7.0

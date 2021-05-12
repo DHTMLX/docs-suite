@@ -18,6 +18,7 @@ form.setValue({"input_name":"Jack London", "slider_id":10});
 
 
 @descr:
+
 The **values** object should contain a set of *key:value* pairs where *key* is either the name of the control or the control's id (if the name attribute is not defined in the config of the control)  and *value* is a new value/state of the control. 
 
 {{note If both the name and id of the control are specified in the config of Control, then you need to set the name of the control as *key*.
@@ -32,6 +33,8 @@ Depending on the type of a control, the method may take different types of param
 
 **Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
 
+@changelog:added in v6.1 
+
 @relatedapi:
 form/api/form_getvalue_method.md
 
@@ -39,5 +42,4 @@ form/api/form_getvalue_method.md
 
 
 
-@changelog:added in v6.1 
 

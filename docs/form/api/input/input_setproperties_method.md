@@ -21,6 +21,7 @@ form.getItem("input").setProperties({
 
 
 @descr:
+
 The method invokes the [](form/api/input/input_afterchangeproperties_event.md) and [](form/api/input/input_beforechangeproperties_event.md) events.
 
 It is possible to change values of the following configuration attributes of the **Input** control:

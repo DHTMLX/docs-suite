@@ -31,6 +31,7 @@ form.getItem("spacer").getProperties();
 
 
 @descr:
+
 The returned object of the **Spacer** control can contain the following configuration attributes:
 
 <table class="webixdoc_links">

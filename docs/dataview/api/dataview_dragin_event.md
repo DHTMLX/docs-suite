@@ -16,6 +16,8 @@ dataview.events.on("DragIn", function(data, events) {
 
 @descr:
 
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -46,6 +48,5 @@ dataview/api/dataview_candrop_event.md
 dataview/api/dataview_dragout_event.md
 dataview/api/dataview_dragstart_event.md
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v7.0

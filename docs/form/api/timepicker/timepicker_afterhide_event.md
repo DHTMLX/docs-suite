@@ -18,6 +18,7 @@ form.getItem("timepicker").events.on("AfterHide", function(value, init) {
 
 
 @descr:
+
 The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):
 
 - If *valueFormat: "string"*  and *timeFormat:24* are specified, the string value will include just the hour and minutes: "00:39"

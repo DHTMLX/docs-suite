@@ -21,6 +21,7 @@ form.show();
 
 
 
+@changelog: added in v6.5
 
 @related:form/work_with_form.md#hidingshowing-a-form
 
@@ -30,4 +31,3 @@ form/api/form_isvisible_method.md
 
 
 
-@changelog: added in v6.5

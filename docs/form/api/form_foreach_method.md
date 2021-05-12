@@ -19,6 +19,9 @@ form.forEach(function(item, index, array) {
 
 
 @descr:
+
+**Related sample**: [Form. ForEach](https://snippet.dhtmlx.com/hqzqpavs)
+
 The callback function takes three parameters:
 
 <table class="webixdoc_links">
@@ -38,6 +41,5 @@ The callback function takes three parameters:
     </tbody>
 </table>
 
-**Related sample**: [Form. ForEach](https://snippet.dhtmlx.com/hqzqpavs)
 
 @changelog: added in v6.4

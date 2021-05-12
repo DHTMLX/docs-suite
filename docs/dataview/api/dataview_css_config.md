@@ -23,6 +23,10 @@ var dataview = new dhx.DataView("dataview", {itemsInRow: 5, css: "bg-gray"});
 
 @descr: 
 
+**Related samples**:
+- [Dataview. Custom Widget Styles](https://snippet.dhtmlx.com/j1yv94o8)
+- [Dataview. Custom Item Styles](https://snippet.dhtmlx.com/kpnzizbf)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Window.
 
 ~~~js
@@ -71,10 +75,6 @@ There is no need to use any additional custom classes.
  
 var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
 ~~~
-
-**Related samples**:
-- [Dataview. Custom Widget Styles](https://snippet.dhtmlx.com/j1yv94o8)
-- [Dataview. Custom Item Styles](https://snippet.dhtmlx.com/kpnzizbf)
 
 @related:
 dataview/customization.md

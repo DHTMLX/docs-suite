@@ -26,6 +26,7 @@ form.getItem("colorpicker").validate(true); // -> true/false
 
 
 @descr:
+
 When calling without parameters or setting the **silent** parameter to *false*, the method invokes the [BeforeValidate](form/api/colorpicker/colorpicker_beforevalidate_event.md) and [AfterValidate](form/api/colorpicker/colorpicker_aftervalidate_event.md) events and visually modifies the control.
 
 ~~~js
@@ -37,6 +38,6 @@ form.getItem("colorpicker").validate(); // -> true/false
 ~~~
 
 
-@changelog: 
+@changelog:
 The **silent** and **validateValue** parameters are added in v7.0
 

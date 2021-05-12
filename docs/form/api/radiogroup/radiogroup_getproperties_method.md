@@ -77,6 +77,7 @@ form.getItem("radiogroup").getProperties("1");
 
 
 @descr:
+
 The returned object of the **RadioGroup** control can contain the following configuration attributes:
 
 <table class="webixdoc_links">
