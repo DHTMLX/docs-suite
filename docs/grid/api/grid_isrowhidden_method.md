@@ -24,10 +24,10 @@ grid.isRowHidden("1"); //-> true/false
 
 **Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
+@changelog:
+added in v7.0
+
 @relatedapi: 
 grid/api/grid_hiderow_method.md
 grid/api/grid_showrow_method.md
-
-@changelog:
-added in v7.0
 

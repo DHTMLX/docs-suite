@@ -47,8 +47,14 @@ The data object contains the following parameters:
 
 **Related sample**:
 - [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+	
 
- 
+@changelog:
+
+- added in v6.5
+- Before v7.0, the event took one parameter - the column id. 
+- Starting from v7.0, the event takes two parameters: **data** and **e**.
+
 @relatedapi:
 [](grid/api/grid_dragitem_config.md)
 [](grid/api/grid_aftercolumndrag_event.md)
@@ -61,11 +67,4 @@ The data object contains the following parameters:
 [](grid/api/grid_dragcolumnstart_event.md)
 
 @related: grid/configuration.md#drag-n-drop-of-grid-columns
-	
-
-@changelog:
-
-- added in v6.5
-- Before v7.0, the event took one parameter - the column id. 
-- Starting from v7.0, the event takes two parameters: **data** and **e**.
 

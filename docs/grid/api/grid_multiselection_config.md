@@ -19,11 +19,12 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
+
 To use the **multiselection** property, enable the [](grid/api/grid_selection_config.md) configuration option when initializing a grid.
 
-**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
+@changelog: added in v6.4
 
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#multiple-selection-of-grid-cells
 
-@changelog: added in v6.4

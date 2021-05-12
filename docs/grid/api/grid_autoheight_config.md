@@ -33,15 +33,16 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content.
 - the **autoHeight** configuration option enabled adjusts the height of the cells with account of [template](grid/api/grid_columns_config.md) added to cells.
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#autoheight-for-columns
 
 
 
-
-@relatedapi: grid/api/grid_data_config.md
 
 **Related sample**:
 - [Grid. Auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
 @changelog: added in v7.1
+
+@relatedapi: grid/api/grid_data_config.md
+
+@related: grid/initialization.md#initialize-grid
+grid/configuration.md#autoheight-for-columns

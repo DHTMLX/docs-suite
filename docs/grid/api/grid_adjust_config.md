@@ -52,9 +52,10 @@ The property can be specified to one of the available adjustment modes:
 
 **Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
 
+@changelog: added in v6.4
+
 @relatedapi: grid/api/grid_adjustcolumnwidth_method.md
 
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#autosize-for-columns
 
-@changelog: added in v6.4

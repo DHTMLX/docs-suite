@@ -36,6 +36,8 @@ const grid = new dhx.Grid("grid", {
 
 
 @descr:
+	
+**Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
@@ -95,11 +97,10 @@ const grid = new dhx.Grid("grid", {
 ~~~
 
 
-**Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
 
+@changelog: added in v7.0
 
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#event-handlers-for-html-content
 grid/customization.md#adding-template-to-cells
 
-@changelog: added in v7.0

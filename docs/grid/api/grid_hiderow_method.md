@@ -19,12 +19,13 @@ grid.hideRow(rowId);
 
 **Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
+
+
+@changelog:
+added in v7.0
+
 @relatedapi: 
 grid/api/grid_showrow_method.md
 grid/api/grid_isrowhidden_method.md
 
 @related: grid/usage.md#hidingshowing-a-row
-
-@changelog:
-added in v7.0
-

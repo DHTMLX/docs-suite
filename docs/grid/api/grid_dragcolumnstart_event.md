@@ -41,6 +41,7 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
+@changelog: added in v7.0
 
 
 @relatedapi:
@@ -56,4 +57,3 @@ The data object contains the following parameters:
 
 @related: grid/configuration.md#drag-n-drop-of-grid-columns
 
-@changelog: added in v7.0

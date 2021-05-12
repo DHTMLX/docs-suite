@@ -21,7 +21,7 @@ If you set the property to *false*, the content of Grid columns will be displaye
 
 **Related sample**: [Grid. Html In Data](https://snippet.dhtmlx.com/chitkvkc)
 
+@changelog: added in v6.3
+
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#html-content-of-grid-columns
-
-@changelog: added in v6.3

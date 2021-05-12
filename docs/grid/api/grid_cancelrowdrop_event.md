@@ -21,6 +21,8 @@ grid.events.on("CancelRowDrop", function(data, events) {
 
 @descr:
 
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -41,7 +43,7 @@ The data object contains the following parameters:
 </table>
 
 
-**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+@changelog: added in v7.0
 
 @relatedapi:
 grid/api/grid_afterrowdrag_event.md
@@ -54,5 +56,3 @@ grid/api/grid_dragrowout_event.md
 grid/api/grid_dragrowstart_event.md
 
 @related: grid/configuration.md#drag-n-drop-of-grid-rows
-
-@changelog: added in v7.0

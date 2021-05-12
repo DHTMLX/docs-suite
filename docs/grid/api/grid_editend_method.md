@@ -21,9 +21,9 @@ grid.editEnd(true); // the edited data won't be saved
 
 The method works with [any type of cell editors](grid/configuration.md#columneditors), except for **checkbox**. 
 
+@changelog: added in v6.3
 
 @relatedapi: grid/api/grid_editcell_method.md
 
 @related: grid/usage.md#editing-data
 
-@changelog: added in v6.3

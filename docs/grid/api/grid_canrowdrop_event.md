@@ -19,6 +19,8 @@ grid.events.on("CanRowDrop", function(data, events) {
 
 @descr:
 
+@changelog: added in v7.0
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -52,5 +54,3 @@ grid/api/grid_dragrowout_event.md
 grid/api/grid_dragrowstart_event.md
 
 @related: grid/configuration.md#drag-n-drop-of-grid-rows
-
-@changelog: added in v7.0

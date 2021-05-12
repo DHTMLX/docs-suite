@@ -17,10 +17,13 @@ var grid = new dhx.Grid("grid_container", {
 
 
 @descr:
+
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
  
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
-**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+
+@changelog: added in v6.5
 
 @related: 
 grid/initialization.md#initialize-grid
@@ -37,5 +40,3 @@ grid/configuration.md#drag-n-drop-of-grid-columns
 [](grid/api/grid_dragcolumnin_event.md)
 [](grid/api/grid_dragcolumnout_event.md)
 [](grid/api/grid_dragcolumnstart_event.md)
-
-@changelog: added in v6.5

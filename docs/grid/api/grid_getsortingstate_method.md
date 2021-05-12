@@ -17,6 +17,10 @@ var state = grid.getSortingState();
 
 
 @descr:
+
+**Related sample**:
+- [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
+
 The return object includes the following attributes:
 
 <table class="webixdoc_links">
@@ -32,12 +36,10 @@ The return object includes the following attributes:
     </tbody>
 </table>
 
-**Related sample**:
-- [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
-
+@changelog:
+added in v6.4
 
 @related: grid/usage.md#getting-the-sorting-state
 
-@changelog:
-added in v6.4
+
 

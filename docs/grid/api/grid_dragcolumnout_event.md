@@ -21,6 +21,7 @@ grid.events.on("DragColumnOut", function(data, events) {
 @descr:
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -40,6 +41,8 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
+@changelog: added in v7.0
+
 @relatedapi:
 [](grid/api/grid_dragitem_config.md)
 [](grid/api/grid_aftercolumndrag_event.md)
@@ -53,4 +56,3 @@ The data object contains the following parameters:
 
 @related: grid/configuration.md#drag-n-drop-of-grid-columns
 
-@changelog: added in v7.0

@@ -24,8 +24,8 @@ var grid = new dhx.Grid("grid", {
 **Related sample**: [Grid. Hiding Tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 
 
+@changelog: added in v6.5
 
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#tooltip
 
-@changelog: added in v6.5
