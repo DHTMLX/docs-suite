@@ -19,11 +19,6 @@ list.events.on("AfterEditStart", function(id){
 
 @descr:
 
-
-
-
-	
-
 **Related sample**:
 - [List. List Events	](https://snippet.dhtmlx.com/iwt1yd61)
 

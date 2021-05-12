@@ -18,6 +18,8 @@ var list = new dhx.List("list", {
 
 @descr:
 
+**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
+
 The template function takes one parameter:
 
 <table class="webixdoc_links">
@@ -34,5 +36,4 @@ The template function takes one parameter:
 
 @relatedapi: list/api/list_eventhandlers_config.md
 
-**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
 

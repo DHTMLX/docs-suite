@@ -32,6 +32,8 @@ const list = new dhx.List("list", {
 
 @descr:
 
+**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
+
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 <table class="webixdoc_links">
@@ -52,11 +54,9 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
+@changelog: added in v7.0
 
-**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
 
 @relatedapi: list/api/list_template_config.md
 
 @related: list/configuration.md#event-handlers-for-the-template
-
-@changelog: added in v7.0
