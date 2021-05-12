@@ -13,7 +13,6 @@ title: getSeries
 @returns:
 - ISeria	object		 an object with configuration of a series
 
-
 @example:
 var config = chart.getSeries("A");
 /* => 
@@ -29,15 +28,8 @@ var config = chart.getSeries("A");
     ]
 }
 */
-
-
-
 @descr:
-
-
-@related:
 
 **Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
 
-chart/usage.md#getting-series-configuration
-
+[comment]: # (@related: chart/usage.md#getting-series-configuration)

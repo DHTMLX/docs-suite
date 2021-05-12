@@ -33,7 +33,6 @@ var chart = new dhx.Chart("chart_container",{
     ]
 });
 
-
 @descr:
 
 ## The list of config options for scales
@@ -159,5 +158,4 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
 
 **Related sample**: [Chart. Axis Configuration](https://snippet.dhtmlx.com/yksfvhhl)
 
-@related:
-chart/configuration_properties.md#scales
+[comment]: # (@related: chart/configuration_properties.md#scales)

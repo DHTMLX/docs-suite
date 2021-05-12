@@ -15,10 +15,6 @@ chart.events.on("ToggleSeries", function(id){
     console.log("The "+id+" series is toggled");
 });
 
-
-
 @descr:
 
-**Related sample**:
-- [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
-
+**Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
