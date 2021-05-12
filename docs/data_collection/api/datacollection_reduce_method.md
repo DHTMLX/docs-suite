@@ -21,6 +21,8 @@ var total = datacollection.reduce(function(new_item, item) {
 
 @descr:
 
+**Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)
+
 A handler function takes two parameters:
 
 <table class="webixdoc_links">
@@ -36,4 +38,3 @@ A handler function takes two parameters:
     </tbody>
 </table>
 
-**Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)

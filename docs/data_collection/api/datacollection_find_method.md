@@ -30,7 +30,7 @@ var item = component.data.find({by:"text",match:"Manager"});
 
 The **rule** parameter:
 
-- if set as `DataCallback(item: T, index?: number, array?: T[])`, the searching will be applied by the rule specified in the function
+- if set as `DataCallback(item: T, index?: number, array?: T[])`, the search will be applied by the rule specified in the function
 - if set as an `IFilterMode` object, the parameter contains the following attributes:
   - **by** - (*string,function*) the search criterion (either the key of the item attribute or a search function)
   - **match** - (*string*) the value of the item attribute

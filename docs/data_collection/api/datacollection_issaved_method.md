@@ -16,4 +16,4 @@ diagram.data.isSaved();
 
 @descr:
 
-@relatedapi: data_collection/api/save.md
+@relatedapi: data_collection/api/datacollection_save_method.md

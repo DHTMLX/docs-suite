@@ -21,7 +21,8 @@ data.events.on("BeforeAdd", function(newItem){
 
 
 @descr:
+
 The event is blockable. Return *false* to prevent an item adding into a data collection.
 
 @relatedapi:
-data_collection/api/afteradd_event.md
+data_collection/api/datacollection_afteradd_event.md

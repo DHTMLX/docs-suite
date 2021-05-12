@@ -20,4 +20,4 @@ component.data.update(123, { text:"New text" });
 
 **Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
 
-@related:window/customization.md#controlsandoperations
+@related:window/customization.md#controls-and-operations
