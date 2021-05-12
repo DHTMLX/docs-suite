@@ -26,7 +26,6 @@ setConfig(config: IChartConfig): void;
 - config	object	 an object with chart configuration
 
 
-
 @example:
 var config = {
     type: "radar",
@@ -56,15 +55,8 @@ var config = {
  
 chart.setConfig(config);
 
-
-
 @descr:
 
-**Related sample**:
-- [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
+**Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
 
-@related:
-chart/configuration_properties.md
-chart/usage.md#setting-chart-configuration
-
-
+[comment]: # (@related: chart/configuration_properties.md chart/usage.md#setting-chart-configuration)

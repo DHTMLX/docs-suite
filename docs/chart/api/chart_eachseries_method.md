@@ -18,7 +18,6 @@ eachSeries(handler: (seria: ISeria) => any): any[];
 @returns:
 - result	array		an array with the result of iteration
 
-
 @example:
 var chart = new dhx.Chart("chart", {
 	type: "radar",
@@ -52,13 +51,8 @@ chart.eachSeries(function(seria){
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 
 
-
 @descr:
 
 **Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
-@related:
-chart/usage.md#iterating-over-series
-
-
-
+[comment]: # (@related: chart/usage.md#iterating-over-series)

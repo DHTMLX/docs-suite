@@ -3,8 +3,6 @@ sidebar_label: series
 title: series
 ---          
 
-
-
 @short: defines configuration of chart series
 
 @signature: {'series?: SeriaConfig[];'}
@@ -157,7 +155,6 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 <br/>
 
-
 ## The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
 
 <table class="webixdoc_links">
@@ -214,6 +211,4 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 <br/>
 
-@related:
-chart/configuration_properties.md#series
-
+[comment]: # (@related: chart/configuration_properties.md#series)

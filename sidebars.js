@@ -195,9 +195,9 @@ module.exports = {
                 label: "Methods",
                 collapsed: true,
                 items: [
-                  "chart/api/chart_getseries_method",
-                  "chart/api/chart_eachseries_method",
                   "chart/api/chart_destructor_method",
+                  "chart/api/chart_eachseries_method",
+                  "chart/api/chart_getseries_method",
                   "chart/api/chart_paint_method",
                   "chart/api/chart_setconfig_method",
                 ],
@@ -207,9 +207,9 @@ module.exports = {
                 label: "Events",
                 collapsed: true,
                 items: [
-                  "chart/api/chart_toggleseries_event",
-                  "chart/api/chart_serieclick_event",
                   "chart/api/chart_resize_event",
+                  "chart/api/chart_serieclick_event",
+                  "chart/api/chart_toggleseries_event",
                 ],
               },
               {
@@ -218,11 +218,11 @@ module.exports = {
                 collapsed: true,
                 items: [
                   "chart/api/chart_css_config",
-                  "chart/api/chart_series_config",
-                  "chart/api/chart_type_config",
+                  "chart/api/chart_legend_config",
                   "chart/api/chart_maxpoints_config",
                   "chart/api/chart_scales_config",
-                  "chart/api/chart_legend_config",
+                  "chart/api/chart_series_config",
+                  "chart/api/chart_type_config",
                 ],
               },
             ],

@@ -16,9 +16,7 @@ chart.events.on("serieClick", function (id, value) {
     // your logic here
 });
 
-
 @descr: 
-
 
 **Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
 

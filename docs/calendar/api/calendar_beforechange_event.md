@@ -21,15 +21,10 @@ calendar.events.on("BeforeChange",function(date, oldDate, click){
     	return false;
 });
 
-
-
 @descr:
 You can block selection of particular dates by returning *false* from the event handler.
 
-@related:
-calendar/handling_events.md
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
-**Related sample**:
-- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
-
-@relatedapi:calendar/api/calendar_change_event.md
+[comment]: # (@related:calendar/handling_events.md) 
+[comment]: # (@relatedapi:calendar/api/calendar_change_event.md)

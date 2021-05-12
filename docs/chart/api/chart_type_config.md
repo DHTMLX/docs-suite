@@ -7,7 +7,6 @@ title: type
 
 @signature: {'type?: ChartType;'}
 
-
 @example: 
 var chart = new dhx.Chart("chart_container",{
     type:"line" 
@@ -23,6 +22,4 @@ var chart = new dhx.Chart("chart_container",{
 - "donut", "pie", "pie3D"
 - "radar"
 
-@related:
-chart/configuration_properties.md#main-properties
-chart/charts_overview.md
+[comment]: # (@related: chart/configuration_properties.md#main-properties chart/charts_overview.md)
