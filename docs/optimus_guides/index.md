@@ -169,9 +169,9 @@ Application Structure
 
 To create a structure of your own app, extend the existing classes. DHTMLX Optimus contains three main classes:
 
-- [App class](#app_class)
-- [View class](#view_class)
-- [Component class](#component_class)
+- [App class](#app-class)
+- [View class](#view-class)
+- [Component class](#component-class)
 
 ### App class
 
@@ -893,7 +893,7 @@ The *App's* constructor provides the following method:
 	<tbody>
          <tr>
 			<td class="webixdoc_links0"><b>init()</b></td>
-			<td>mandatory, allows initializing available views and logic of the components. <br>For more details, see the <a href="optimus_guides/index.md#app-class">App class</a>.
+			<td>mandatory, allows initializing available views and logic of the components. <br>For more details, see the <a href="../optimus_guides/index#app-class">App class</a>.
             </td>
 		</tr>
     </tbody>
@@ -905,7 +905,7 @@ The <i>Component's</i> constructor provides the following methods:
 	<tbody>
          <tr>
 			<td class="webixdoc_links0"><b>init()</b></td>
-			<td>mandatory, allows initializing the logic of the Component. This logic will be called on  initialization of the Component. For more details, see the <a href="optimus_guides/index.md#component-class">Component class</a>.
+			<td>mandatory, allows initializing the logic of the Component. This logic will be called on  initialization of the Component. For more details, see the <a href="../optimus_guides/index#component-class">Component class</a>.
             </td>
 		</tr>
 		<tr>
@@ -922,7 +922,7 @@ The <i>View's</i> constructor provides the following methods:
 	<tbody>
 		<tr>
 			<td class="webixdoc_links0"><b>init(): string|DHXWidget</b></td>
-			<td>obligatory, allows initializing and returning the view. For more details, see the <a href="optimus_guides/index.md#view_class">View class</a>.
+			<td>obligatory, allows initializing and returning the view. For more details, see the <a href="../optimus_guides/index#view-class">View class</a>.
             </td>
 		</tr>
         <tr>
@@ -960,7 +960,7 @@ The <i>App's</i> constructor also provides the method that can be called outside
 Other Materials
 ----------------------
 
-- optimus_guides/how_to_start_optimus.md step-by-step guide
+- [](optimus_guides/how_to_start_optimus.md) step-by-step guide
 - <a href="https://github.com/DHTMLX/optimus-starter-app/" target="_blank">DHTMLX Optimus</a> demo on GitHub
 - Other demos build with Optimus: 
 	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/" target="_blank">File Explorer</a>
