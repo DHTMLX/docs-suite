@@ -52,7 +52,8 @@ const layout = new dhx.Layout("layout", {
 
 {{note Note, that if the children cell has no specified type of borders, the cell has the same type of borders as its parent cell. }} 
 
+@changelog: added in v7.0
+
 @related: layout/cell_configuration.md#setting-borders-for-cells
 
 
-@changelog: added in v7.0
