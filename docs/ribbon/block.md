@@ -28,7 +28,6 @@ This is the basic syntax of a block with two buttons in a row:
 
 You can provide the [following properties](ribbon/api/api_block_properties.md) in the configuration object of a Block control.
 
-
 ## Adding a Block
 
 A block can be added to a ribbon with the help of the **add()** method of TreeCollection:
@@ -75,7 +74,6 @@ ribbon.data.add({
 		</tr>
     </tbody>
 </table>
-
 
 ## Adding HTML content
 
@@ -147,5 +145,3 @@ A block can be enabled/disabled:
 ribbon.enable(id);
 ribbon.disable(id);
 ~~~
-
-
