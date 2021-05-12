@@ -17,7 +17,7 @@ var colors = colorpicker.getCustomColors();
 
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingcustomcolors
+@related: colorpicker/manipulating_colorpicker.md#settinggetting-custom-colors
 
 @relatedapi:
 colorpicker/api/colorpicker_setcustomcolors_method.md

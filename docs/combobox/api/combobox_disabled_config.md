@@ -18,7 +18,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 @descr: 
 
+**Related sample**: [Combobox. Disabled](https://snippet.dhtmlx.com/ductsm0f)
+
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/configuration.md#disabled-mode
-
-**Related sample**: [Combobox. Disabled](https://snippet.dhtmlx.com/ductsm0f)

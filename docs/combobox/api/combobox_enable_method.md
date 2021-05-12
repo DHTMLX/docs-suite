@@ -14,13 +14,14 @@ combo.enable();
 
 @descr:
 
-@related: combobox/work_with_combo.md#disablingenablingcombobox
+**Related sample**:
+- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+
+@related: combobox/work_with_combo.md#disablingenabling-combobox
 
 @relatedapi:
 combobox/api/combobox_disable_method.md
 
-**Related sample**:
-- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
 
 

@@ -17,6 +17,9 @@ chart.events.on("serieClick", function (id, value) {
 });
 
 
-@descr: This event can be used for Bar, X-Bar, Pie, Pie 3D, Donut charts.
+@descr: 
+
 
 **Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
+
+This event can be used for Bar, X-Bar, Pie, Pie 3D, Donut charts.

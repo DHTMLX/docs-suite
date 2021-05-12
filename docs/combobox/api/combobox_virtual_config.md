@@ -16,8 +16,7 @@ var combo = new dhx.Combobox("combo_container",{
 
 @descr: 
 
+**Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)
 
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/configuration.md#dynamic-rendering-of-options
-
-**Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)

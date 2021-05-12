@@ -18,18 +18,18 @@ var combo = new dhx.Combobox("combo_container", {
 
 
 @descr: 
+
+**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
+
 As a function takes one parameter:
 
 - **count** - (*number*) the number of options
 
 and should return a template for displaying a result.
 
-Note that to select several options you need to enable the **multiselection** option.
- 
-**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
-
-@changelog: added in v6.4 
-
+{{note To be able to select several options you need to enable the **multiselection** option.}}
 
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/configuration.md#number-of-selected-options
+
+@changelog: added in v6.4 

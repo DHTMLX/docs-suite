@@ -14,13 +14,14 @@ colorpicker.setCurrentMode("picker");
 
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingcurrentmode
+**Related sample**:
+- [Colorpicker. Set Current Mode](https://snippet.dhtmlx.com/0mhp5cp6)
+
+@related: colorpicker/manipulating_colorpicker.md#settinggetting-current-mode
 
 @relatedapi:
 colorpicker/api/colorpicker_getcurrentmode_method.md
 
-**Related sample**:
-- [Colorpicker. Set Current Mode](https://snippet.dhtmlx.com/0mhp5cp6)
 
 @changelog:
 added in v6.3

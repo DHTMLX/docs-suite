@@ -20,7 +20,7 @@ var color = colorpicker.getValue();
 
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingselectedcolor
+@related: colorpicker/manipulating_colorpicker.md#settinggetting-selected-color
 
 @relatedapi:
 colorpicker/api/colorpicker_setvalue_method.md

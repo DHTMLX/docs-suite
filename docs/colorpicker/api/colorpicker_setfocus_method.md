@@ -19,7 +19,7 @@ colorpicker.setFocus("#BDF0E9");
 
 **Related sample**: [Colorpicker. Set Focus](https://snippet.dhtmlx.com/fg13r3uh)
 
-@related: colorpicker/manipulating_colorpicker.md#settingfocusonacolor
+@related: colorpicker/manipulating_colorpicker.md#setting-focus-on-a-color
 
 @changelog:
 added in v6.4

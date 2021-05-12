@@ -24,7 +24,10 @@ var colorpicker = new dhx.Colorpicker({
 
 
 
-@descr: 
+@descr:
+
+**Related sample**: [Colorpicker. Custom CSS](https://snippet.dhtmlx.com/mnwi3sp0)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of ColorPicker.
 
 ~~~js
@@ -33,6 +36,7 @@ var colorpicker = new dhx.Colorpicker({
 });
 ~~~
 
+    
 ### List of CSS classes
 
 - <b>dhx_widget--bg_white</b> - Sets white background to a widget
@@ -60,5 +64,3 @@ var colorpicker = new dhx.Colorpicker({
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 @related: colorpicker/how_to_start.md#initialize-colorpicker
-
-**Related sample**: [Colorpicker. Custom CSS](https://snippet.dhtmlx.com/mnwi3sp0)
