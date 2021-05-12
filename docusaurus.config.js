@@ -173,9 +173,9 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'Suite Documenation',
+            title: 'Suite Documentation',
             logo: {
-                alt: 'DHTMLX Suite Documenation',
+                alt: 'DHTMLX Suite Documentation',
                 src: 'img/dhtmlx_logo.svg',
                 href: 'https://docs.dhtmlx.com/',
 
