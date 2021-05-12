@@ -40,6 +40,4 @@ grid.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](grid/api/refs/grid_events.md).
-
-
+The full list of events is available in the related [API section](grid/api/api_overview.md#grid-events).

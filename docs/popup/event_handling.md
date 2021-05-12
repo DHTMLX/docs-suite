@@ -40,6 +40,4 @@ popup.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](popup/api/refs/popup_events.md).
-
-
+The full list of events is available in the related [API section](popup/api/api_overview.md#events).

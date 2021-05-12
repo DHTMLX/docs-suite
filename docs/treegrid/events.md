@@ -40,5 +40,4 @@ treegrid.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](treegrid/api/refs/treegrid_events.md).
-
+The full list of events is available in the related [API section](treegrid/api/api_overview.md#treegrid-events).

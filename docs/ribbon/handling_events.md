@@ -3,8 +3,6 @@ sidebar_label: Event Handling
 title: Event Handling
 ---          
 
-
-
 To handle events of Ribbon and its TreeCollection, use the methods of the **events** module.
 
 ## Attaching event handlers
@@ -61,5 +59,4 @@ ribbon.events.fire(evName,[parameters]);
 
 ## List of supported events 
 
-You can find the full list of Ribbon events in the [related API section](ribbon/api/refs/ribbon_events.md).
-
+You can find the full list of Ribbon events in the [related API section](ribbon/api/api_overview.md#ribbon-events).

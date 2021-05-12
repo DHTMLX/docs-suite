@@ -37,7 +37,7 @@ View [the full list of configuration properties of the SimpleVault control](form
 
 ## Working with SimpleVault
 
-You can manipulate a SimpleVault control by using methods ([events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a SimpleVault control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -66,8 +66,6 @@ form.getItem("simpleVault").data.remove("file_id");
 form.getItem("simpleVault").data.removeAll();
 ~~~
 
-{{note Check the full list of [Data Collection API](https://docs.dhtmlx.com/vault/api__refs__data_methods.html).}}
-
 ## Uploading files
 
-You can read about uploading files into a SimpleVault control in the [related article](https://docs.dhtmlx.com/vault/uploading_files.html). 
+You can read about uploading files into a SimpleVault control in the [related article](https://docs.dhtmlx.com/vault/uploading_files.html).

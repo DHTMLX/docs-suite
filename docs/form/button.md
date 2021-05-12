@@ -11,7 +11,6 @@ A simple button that can have an icon. Button can be *twoState* and can have a b
 
 ## Adding Button 
 
-
 You can easily add a Button control during initialization of a form:
 
 ~~~js
@@ -35,7 +34,7 @@ View [the full list of configuration properties of the Button control](form/api/
 
 ## Working with Button
 
-You can manipulate a Button control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Button control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can disable a control on a page:
 
@@ -47,8 +46,6 @@ form.getItem("button").disable();
 
 Check [the full list of methods of the Button control](form/api/api_overview.md#button-methods).
 
-
 ### Events
 
-Check [the full list of events of the Button control](form/api/api_overview.md#button-events)
-
+Check [the full list of events of the Button control](form/api/api_overview.md#button-events).

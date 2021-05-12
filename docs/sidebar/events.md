@@ -3,8 +3,6 @@ sidebar_label: Event Handling
 title: Event Handling
 ---          
 
-
-
 ## Attaching event listeners
 
 You can add any handler to the events of Sidebar. To do this, use the **sidebar.events.on()** method with the following parameters:
@@ -57,5 +55,4 @@ sidebar.events.fire(evName,[args]);
 
 ## List of supported events 
 
-You can find the full list of sidebar events in the [API section](sidebar/api/refs/sidebar_events.md).
-
+You can find the full list of sidebar events in the [API section](sidebar/api/api_overview.md#sidebar-events).

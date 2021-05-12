@@ -37,7 +37,4 @@ timepicker.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-The list of events is available in the [API section](timepicker/api/refs/timepicker_events.md).
-
-
-
+The list of events is available in the [API section](timepicker/api/api_overview.md#events).

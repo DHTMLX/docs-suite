@@ -40,6 +40,4 @@ dhxWindow.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](window/api/refs/window_events.md).
-
-
+The full list of events is available in the related [API section](window/api/api_overview.md#events).

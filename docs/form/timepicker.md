@@ -38,7 +38,7 @@ View [the full list of configuration properties of the TimePicker control](form/
 
 ## Working with TimePicker
 
-You can manipulate a TimePicker control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a TimePicker control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -56,7 +56,7 @@ Check [the full list of events of the Timepicker control](form/api/api_overview.
 
 ### Working with the dhtmlxTimePicker widget
 
-There is a possibility to use methods of dhtmlxTimePicker via the **getWidget()** method of a TimePicker control.
+There is a possibility to use methods of dhtmlxTimePicker via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
 
 For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
 

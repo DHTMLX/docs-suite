@@ -60,7 +60,7 @@ Check [the full list of configuration properties of a Checkbox of the CheckboxGr
 
 ## Working with CheckboxGroup
 
-You can manipulate a CheckboxGroup control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a CheckboxGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can hide a control on a page:
 

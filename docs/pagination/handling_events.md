@@ -40,4 +40,4 @@ pagination.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](pagination/api/refs/pagination_events.md).
+The full list of events is available in the related [API section](pagination/api/api_overview.md#events).

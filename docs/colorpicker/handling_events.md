@@ -40,7 +40,4 @@ colorpicker.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](colorpicker/api/refs/colorpicker_events.md).
-
-
-
+The full list of events is available in the related [API section](colorpicker/api/api_overview.md#events).
