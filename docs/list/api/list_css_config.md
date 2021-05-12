@@ -20,7 +20,11 @@ var list = new dhx.List("list", {css: "bg-gray"});
 
 
 @descr:
- 
+
+**Related samples**:
+- [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
+- [List. Add Custom Selection With Custom Css](https://snippet.dhtmlx.com/6hss19d3)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of List.
 
 ~~~js
@@ -54,7 +58,5 @@ var list = new dhx.List("list", {css:"dhx_widget--bg_white"});
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 
-**Related samples**:
-- [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
-- [List. Add Custom Selection With Custom Css](https://snippet.dhtmlx.com/6hss19d3)
+
 

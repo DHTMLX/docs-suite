@@ -30,9 +30,10 @@ layout.getCell("sidebar").attach(sidebar);
 
 @descr:
 
+**Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
+
 @related: layout/work_with_layout.md#attaching-a-component-to-a-cell
 
-**Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
 
 

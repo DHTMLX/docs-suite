@@ -14,6 +14,8 @@ title: removeSpan
 @example:
 grid.removeSpan("10","a");
 
+@descr:
+
 @relatedapi:
 grid/api/grid_spans_config.md
 grid/api/grid_addspan_method.md

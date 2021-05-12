@@ -16,6 +16,8 @@ var list = new dhx.List("list_container", {
 
 @descr:
 
+**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
+
 Drag-n-drop can work in three modes: 
 
 - "target" - a list takes items from other lists, while its items can't be dragged out of it
@@ -23,5 +25,3 @@ Drag-n-drop can work in three modes:
 - "both" - a list both takes items from other lists and allows dragging its items out as well
 
 @related: list/configuration.md#drag-n-drop-of-items
-
-**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)

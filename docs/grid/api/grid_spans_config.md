@@ -22,6 +22,8 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
+**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
+
 Each object in the spans array contains the following properties:
 
 <table class="webixdoc_links">
@@ -57,9 +59,9 @@ Each object in the spans array contains the following properties:
     </tbody>
 </table>
 
+@changelog: The **tooltip** property is added in v6.5.
+
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#spans
 
-**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
 
-@changelog: The **tooltip** property is added in v6.5.

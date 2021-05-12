@@ -26,13 +26,15 @@ var layout = new dhx.Layout("layout_container", {
 
 @descr: 
 
+**Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of the Layout cell.
 
 ~~~js
 var layout = new dhx.Layout("layout", {
     css: "dhx_layout-cell--bordered",
 		rows: [{
-		        id: "toolbar",
+            id: "toolbar",
                 html: "Header",
                 css: "dhx_layout-cell--border_bottom layout-header",
                 gravity: false,
@@ -70,4 +72,3 @@ var layout = new dhx.Layout("layout", {
 @related: layout/init.md#initialize-layout
 layout/customization.md
 
-**Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)

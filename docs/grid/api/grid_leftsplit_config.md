@@ -20,7 +20,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)
 
+@changelog: added in v7.0
+
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#frozen-columns
-
-@changelog: added in v7.0

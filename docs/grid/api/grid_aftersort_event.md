@@ -23,6 +23,6 @@ grid.events.on("afterSort", (col, dir) => {
 @descr:
 
 
-@relatedapi: grid/api/grid_beforesort_event.md
-
 @changelog: added in v7.1
+
+@relatedapi: grid/api/grid_beforesort_event.md

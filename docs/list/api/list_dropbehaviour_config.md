@@ -19,7 +19,7 @@ var target = new dhx.List("list-target",{
 
 @descr:
  
-There are three modes of behaviour of a dragged list item:
+There are three modes of behavior of a dragged list item:
 
 - "child" - a dragged item becomes a child of the item it is dragged to
 - "sibling" - a dragged item becomes a sibling of the item it is dragged to

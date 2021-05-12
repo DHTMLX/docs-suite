@@ -18,6 +18,8 @@ var layout = new dhx.Layout("layout_container", {
 
 @descr: 
 
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
+
 @related: layout/init.md#initialize-layout
 layout/cell_configuration.md#cellheader
 
@@ -25,5 +27,3 @@ layout/cell_configuration.md#cellheader
 layout/api/layout_header_config.md
 layout/api/layout_headerheight_config.md
 layout/api/layout_headerimage_config.md
-
-**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)

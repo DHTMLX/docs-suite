@@ -13,12 +13,10 @@ var list = new dhx.List("list", {multiselection:true});
 
 
 @descr:
- 
-Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
-
 
 **Related sample**:
 - [List. List Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
+Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
 
 @related: list/configuration.md#multiple-selection-of-items

@@ -16,6 +16,8 @@ list.events.on("CanDrop", function(data, events) {
 
 @descr:
 
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
+
 The data object can contain the following parameters:
 
 <table class="webixdoc_links">
@@ -35,7 +37,7 @@ The data object can contain the following parameters:
     </tbody>
 </table>
 
-**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
+@changelog: added in v7.0
 
 @relatedapi:
 list/api/list_afterdrag_event.md
@@ -48,4 +50,3 @@ list/api/list_dragout_event.md
 list/api/list_dragstart_event.md
 
 
-@changelog: added in v7.0

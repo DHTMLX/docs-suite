@@ -25,8 +25,8 @@ grid.isColumnHidden("country"); // -> true|false
 **Related sample**:
 - [Grid. Is Column Hidden](https://snippet.dhtmlx.com/rdqhwnjv)
 
-@related: grid/usage.md#checking-visibility-of-a-column
 
 @changelog:
 added in v6.4
 
+@related: grid/usage.md#checking-visibility-of-a-column

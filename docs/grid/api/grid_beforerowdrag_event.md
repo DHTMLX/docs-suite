@@ -47,6 +47,8 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
+@changelog: added in v7.0
+
 @relatedapi:
 grid/api/grid_afterrowdrag_event.md
 grid/api/grid_afterrowdrop_event.md
@@ -60,4 +62,3 @@ grid/api/grid_dragrowstart_event.md
 
 @related: grid/configuration.md#drag-n-drop-of-grid-rows
 
-@changelog: added in v7.0
