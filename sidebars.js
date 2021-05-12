@@ -320,12 +320,12 @@ module.exports = {
                   "combobox/api/combobox_destructor_method",
                   "combobox/api/combobox_disable_method",
                   "combobox/api/combobox_enable_method",
+                  "combobox/api/combobox_focus_method",
                   "combobox/api/combobox_getvalue_method",
                   "combobox/api/combobox_isdisabled_method",
                   "combobox/api/combobox_paint_method",
                   "combobox/api/combobox_setstate_method",
                   "combobox/api/combobox_setvalue_method",
-                  "combobox/api/combobox_focus_method",
                 ],
               },
               {
