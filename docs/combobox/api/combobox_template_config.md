@@ -18,12 +18,14 @@ var combo = new dhx.Combobox("combo_container", {
 });
 
 
-@descr: 
+@descr:
+
+**Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
+
 The **template** function takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 
 
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/configuration.md#template-for-combobox-options
 
-**Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
 

@@ -21,4 +21,4 @@ data.events.on("AfterLazyLoad", function (from, count) {
 
 @related: helpers/lazydataproxy.md
 
-@relatedapi:data_collection/api/beforelazyload_event.md
+@relatedapi:data_collection/api/datacollection_beforelazyload_event.md

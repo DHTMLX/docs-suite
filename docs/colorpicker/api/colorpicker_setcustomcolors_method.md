@@ -19,13 +19,14 @@ colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingcustomcolors
+**Related sample**:
+- [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
+
+@related: colorpicker/manipulating_colorpicker.md#settinggetting-custom-colors
 
 @relatedapi:
 colorpicker/api/colorpicker_getcustomcolors_method.md
 
-**Related sample**:
-- [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
 
 
 

@@ -23,6 +23,8 @@ diagram.data.load("../common/data.xml", "xml");
 
 @descr:
 
+**Related sample**: [Data. Load](https://snippet.dhtmlx.com/dyykcnxi)
+
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
@@ -44,4 +46,3 @@ diagram.data.loadData.then(function(){
 // data loading has completed
 ~~~
 
-**Related sample**: [Data. Load](https://snippet.dhtmlx.com/dyykcnxi)

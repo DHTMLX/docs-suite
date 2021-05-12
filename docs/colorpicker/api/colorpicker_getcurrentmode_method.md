@@ -15,7 +15,7 @@ var mode = colorpicker.getCurrentMode(); // -> "palette"
 @descr:
 
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingcurrentmode
+@related: colorpicker/manipulating_colorpicker.md#settinggetting-current-mode
 
 @relatedapi: colorpicker/api/colorpicker_setcurrentmode_method.md
 

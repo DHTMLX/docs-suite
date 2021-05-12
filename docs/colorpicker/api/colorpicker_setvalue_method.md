@@ -17,7 +17,10 @@ colorpicker.setValue("#BDF0E9");
 
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingselectedcolor
+**Related sample**:
+- [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)
+
+@related: colorpicker/manipulating_colorpicker.md#settinggetting-selected-color
 
 @relatedapi:
 colorpicker/api/colorpicker_getvalue_method.md
@@ -25,6 +28,3 @@ colorpicker/api/colorpicker_getvalue_method.md
 
 
 
-
-**Related sample**:
-- [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)

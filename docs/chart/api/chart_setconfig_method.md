@@ -59,10 +59,12 @@ chart.setConfig(config);
 
 
 @descr:
-See the list of chart configuration properties in the [](../../chart/configuration_properties.md) article.
-
-@related:
-chart/usage.md#settingchartconfiguration
 
 **Related sample**:
 - [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
+
+@related:
+chart/configuration_properties.md
+chart/usage.md#setting-chart-configuration
+
+

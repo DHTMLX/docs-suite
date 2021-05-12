@@ -29,13 +29,14 @@ var array_ids = combo.getValue(true);
 
 @descr:
 
-@related: combobox/work_with_combo.md#settinggettingvalues
+**Related sample**:
+- [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
+
+@related: combobox/work_with_combo.md#settinggetting-values
 
 @relatedapi:
 combobox/api/combobox_setvalue_method.md
 
-**Related sample**:
-- [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
 
 
 

@@ -21,15 +21,15 @@ combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 @descr:
 
+**Related sample**:
+- [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
 
 
 @relatedapi:
 combobox/api/combobox_getvalue_method.md
 
-@related: combobox/work_with_combo.md#settinggettingvalues
+@related: combobox/work_with_combo.md#settinggetting-values
 
-**Related sample**:
-- [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
 
 
 

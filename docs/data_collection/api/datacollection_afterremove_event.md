@@ -18,4 +18,4 @@ data.events.on("AfterRemove", function(removedItem){
 
 @descr:
 
-@relatedapi:data_collection/api/beforeremove_event.md
+@relatedapi:data_collection/api/datacollection_beforeremove_event.md

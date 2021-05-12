@@ -55,10 +55,10 @@ chart.eachSeries(function(seria){
 
 @descr:
 
+**Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
 @related:
-chart/usage.md#iteratingoverseries
+chart/usage.md#iterating-over-series
 
-**Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
 

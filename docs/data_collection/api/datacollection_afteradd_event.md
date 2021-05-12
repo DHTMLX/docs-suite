@@ -18,4 +18,4 @@ data.events.on("AfterAdd", function(newItem){
 
 @descr:
 
-@relatedapi:data_collection/api/beforeadd_event.md
+@relatedapi:data_collection/api/datacollection_beforeadd_event.md

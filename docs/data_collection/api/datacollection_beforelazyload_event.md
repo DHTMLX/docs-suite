@@ -19,7 +19,7 @@ data.events.on("BeforeLazyLoad", function () {
 
 @descr:
 
-@relatedapi: data_collection/api/afterlazyload_event.md
+@relatedapi: data_collection/api/datacollection_afterlazyload_event.md
 
 @related: helpers/lazydataproxy.md
 

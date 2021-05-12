@@ -25,6 +25,9 @@ grid.data.sort();
 
 
 @descr:
+
+**Related sample**: [Data. Sort](https://snippet.dhtmlx.com/lz351u47)
+
 The **rule** object has the following attributes:
 
 <table class="webixdoc_links">
@@ -85,7 +88,6 @@ grid.data.sort({
 });
 ~~~
 
-**Related sample**: [Data. Sort](https://snippet.dhtmlx.com/lz351u47)
 
 @changelog:
 

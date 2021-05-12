@@ -1,7 +1,7 @@
----
 sidebar_label: disable
 title: disable
 ---          
+---
 
 @short: disables ComboBox on a page
 
@@ -14,13 +14,14 @@ combo.disable();
 
 @descr:
 
-@related: combobox/work_with_combo.md#disablingenablingcombobox
+**Related sample**:
+- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+
+@related: combobox/work_with_combo.md#disablingenabling-combobox
 
 @relatedapi:
 combobox/api/combobox_enable_method.md
 
-**Related sample**:
-- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
 
 

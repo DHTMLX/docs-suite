@@ -25,4 +25,4 @@ var combo = new dhx.Combobox("combo_container", {
 - [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
 
 @related: combobox/how_to_start.md#initialize-combobox
-combobox/customization.md#customfilterforoptions
+combobox/customization.md#custom-filter-for-options

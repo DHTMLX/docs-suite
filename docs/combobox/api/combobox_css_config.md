@@ -25,6 +25,8 @@ var combo = new dhx.Combobox("combo_container", {
 
 
 @descr: 
+    
+**Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of ComboBox.
 
@@ -63,5 +65,3 @@ var combo = new dhx.Combobox({
 
 @related: combobox/how_to_start.md#initialize-combobox
 combobox/customization.md#styling
-
-**Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)

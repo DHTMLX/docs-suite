@@ -41,6 +41,8 @@ grid.data.filter({
 
 @descr:
 
+**Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
+
 Calling the **filter()** method without parameters reverts the component to the initial state:
 
 ~~~js
@@ -137,7 +139,4 @@ grid.data.filter({
   smartFilter: true
 });
 ~~~
-
-
-**Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 

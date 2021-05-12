@@ -25,6 +25,9 @@ var chart = new dhx.Chart("chart_container",{
 
 @descr:
 
+**Related samples**:
+- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
+- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
 ## The list of config options for legend (for charts with scales)
 
 <table class="webixdoc_links">
@@ -97,9 +100,6 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 
 
-**Related samples**:
-- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
-- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
 
 @related:
 chart/configuration_properties.md#legend

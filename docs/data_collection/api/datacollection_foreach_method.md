@@ -19,6 +19,9 @@ datacollection.forEach(function(element, index, array) {
 
 
 @descr:
+
+**Related sample**: [Data. ForEach](https://snippet.dhtmlx.com/wa6tcmtn)
+
 The callback function takes three parameters:
 
 <table class="webixdoc_links">
@@ -39,7 +42,6 @@ The callback function takes three parameters:
 </table>
 
 
-**Related sample**: [Data. ForEach](https://snippet.dhtmlx.com/wa6tcmtn)
 
 
 @changelog: added in v6.4
