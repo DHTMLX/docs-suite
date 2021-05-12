@@ -37,4 +37,5 @@ form.getItem("datepicker").validate(); // -> true/false
 
 
 @changelog: 
+
 The **silent** and **validateValue** parameters are added in v7.0

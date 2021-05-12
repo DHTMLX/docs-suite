@@ -19,6 +19,7 @@ form.getItem("timepicker").setProperties({
 
 
 @descr:
+
 The method invokes the [](form/api/timepicker/timepicker_afterchangeproperties_event.md) and [](form/api/timepicker/timepicker_beforechangeproperties_event.md) events.
 
 It is possible to change values of the following configuration attributes of the **TimePicker** control:

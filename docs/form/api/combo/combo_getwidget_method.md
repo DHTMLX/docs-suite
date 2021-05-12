@@ -15,6 +15,7 @@ var combo = form.getItem("combo").getWidget();
 // -> dhtmlxComboBox
 
 @descr:
+
 It is possible to use methods of dhtmlxComboBox via the **getWidget()** method of a Combo control.
 
 For example, you can set focus in the Combo input without opening a popup with options. To do this, you need to get the widget attached to the Combo control and then use the [focus()](combobox/api/combobox_focus_method.md) method of this widget.

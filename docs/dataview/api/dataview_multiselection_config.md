@@ -21,11 +21,9 @@ var dataview = new dhx.DataView("list", {multiselection:true});
 
 @descr:
 
-Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
-
-
-
 **Related sample**:
 - [Dataview. Multiselection Dataview](https://snippet.dhtmlx.com/g0xwdx10)
+
+Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
 
 @related: dataview/configuration.md#multiple-selection-of-items

@@ -25,7 +25,7 @@ form.isVisible("combo"); // -> true/false
 
 @descr:
 
-
+@changelog: added in v6.5
 
 
 @related:form/work_with_form.md#checking-if-a-form-is-visible
@@ -36,4 +36,4 @@ form/api/form_show_method.md
 
 
 
-@changelog: added in v6.5
+

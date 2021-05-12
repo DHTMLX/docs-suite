@@ -23,10 +23,8 @@ The method invokes the [](form/api/simplevault/simplevault_afterchangeproperties
 
 It is possible to change values of the following configuration attributes of the **SimpleVault** control:
 
-``` todo нужна ли таблица
 <table class="webixdoc_links">
 	<tbody>
-		</tr>
     <tr>
 			<td class="webixdoc_links0"><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
@@ -97,7 +95,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
   </tbody>
 </table>
-
-```
 
 @changelog: added in v7.0

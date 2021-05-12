@@ -52,6 +52,7 @@ form.getItem("timepicker").getProperties();
 
 
 @descr:
+
 The returned object of the **TimePicker** control can contain the following configuration attributes:
 
 <table class="webixdoc_links">

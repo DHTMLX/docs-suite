@@ -13,6 +13,7 @@ title: getFocus
 @example:
 dataview.getFocus(); // -> "item_id"
 
+
 @relatedapi: dataview/api/dataview_setfocus_method.md
 
 @changelog:

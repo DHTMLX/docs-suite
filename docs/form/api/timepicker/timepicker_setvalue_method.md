@@ -29,6 +29,7 @@ form.getItem("timepicker").setValue({hour: 10, minute: 50, AM: true});
 
 
 @descr:
+
 1\. The value of a timepicker control set as an array should have the following elements:
 
 - the hour value

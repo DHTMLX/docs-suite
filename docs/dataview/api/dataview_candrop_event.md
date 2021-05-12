@@ -16,6 +16,8 @@ dataview.events.on("CanDrop", function(data, events) {
 
 @descr:
 
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -36,7 +38,6 @@ The data object contains the following parameters:
 </table>
 
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @relatedapi:
 dataview/api/dataview_afterdrag_event.md

@@ -16,6 +16,7 @@ var timepicker = form.getItem("timepicker").getWidget();
 
 
 @descr:
+
 It is possible to use methods of dhtmlxTimePicker via the **getWidget()** method of a TimePicker control.
 
 For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
