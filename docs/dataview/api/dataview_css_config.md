@@ -3,8 +3,6 @@ sidebar_label: css
 title: css
 ---          
 
-
-
 @short: adds a CSS class(es) to the component
 
 @signature: {'css?: string;'}
@@ -16,10 +14,7 @@ title: css
     }
 </style>
  
- 
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5, css: "bg-gray"});
-
-
 
 @descr: 
 
@@ -76,5 +71,4 @@ There is no need to use any additional custom classes.
 var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
 ~~~
 
-@related:
-dataview/customization.md
+[comment]: # (@related: dataview/customization.md)

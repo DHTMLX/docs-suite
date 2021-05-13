@@ -12,8 +12,6 @@ combobox.events.on("AfterClose", function() {
     // your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

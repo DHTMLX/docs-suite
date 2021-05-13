@@ -10,14 +10,7 @@ title: getFocusItem
 @returns:
 - focus		object		the object of an item in focus
 
-
 @example:
 var focus = dataview.getFocusItem();
 
-
-
 @descr:
-
-
-
-

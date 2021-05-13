@@ -4,7 +4,6 @@ title: eventHandlers
 description: description
 ---          
 
-
 @short: adds event handlers to the HTML elements of a custom template of DataView items
 
 @signature: {'eventHandlers?: { [key: string]: any; };'}
@@ -30,8 +29,6 @@ const dataview = new dhx.DataView("dataview", {
     }
 });
 
-
-
 @descr: 
 
 **Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
@@ -55,8 +52,8 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
-@relatedapi: dataview/api/dataview_template_config.md
-
-@related: dataview/configuration.md#event-handlers-for-the-template
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: dataview/api/dataview_template_config.md)
+
+[comment]: # (@related: dataview/configuration.md#event-handlers-for-the-template)

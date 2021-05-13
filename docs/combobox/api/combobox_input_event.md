@@ -15,9 +15,6 @@ combobox.events.on("Input", function(value) {
     console.log("You've entered: " + value);
 });
 
-
-
 @descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
-

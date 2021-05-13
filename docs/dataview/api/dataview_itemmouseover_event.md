@@ -16,10 +16,8 @@ dataview.events.on("ItemMouseOver", function(id, event) {
     console.log("Item id:" + id);
 );
 
-
 @descr:
 
-**Related sample**:
-- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.4

@@ -15,13 +15,8 @@ dataview.events.on("AfterEditStart", function(id){
 	// your logic here
 });
 
-
-
 @descr:
 
-
-**Related sample**:
-- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
-
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.1

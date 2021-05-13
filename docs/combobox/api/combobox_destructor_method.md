@@ -10,7 +10,4 @@ title: destructor
 @example:
 combo.destructor();
 
-
-
 @descr:
-

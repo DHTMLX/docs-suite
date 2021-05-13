@@ -28,12 +28,10 @@ var dataview = new dhx.DataView("dataview_container", {
 	]
 });
 
-
-
 @descr: 
 
 **Related samples**:
 - [Dataview. Config Data](https://snippet.dhtmlx.com/s547z4xr)
 - [Dataview. Init With External Data](https://snippet.dhtmlx.com/t632x22i)
 
-@related: dataview/data_loading.md
+[comment]: # (@related: dataview/data_loading.md)

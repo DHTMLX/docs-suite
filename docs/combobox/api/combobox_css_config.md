@@ -22,8 +22,6 @@ var combo = new dhx.Combobox("combo_container", {
     css:"my_first_class my_second_class"
 });
 
-
-
 @descr: 
     
 **Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)
@@ -62,6 +60,4 @@ var combo = new dhx.Combobox({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/customization.md#styling
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/customization.md#styling)

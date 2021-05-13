@@ -13,9 +13,4 @@ var combo = new dhx.Combobox("combo_container",{
     required:true
 });
 
-
-
 @descr: 
-
-
-

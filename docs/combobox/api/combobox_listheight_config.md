@@ -14,11 +14,8 @@ var combo = new dhx.Combobox("combo_container",{
     listHeight:50
 });
 
-
-
 @descr: 
 
 **Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)
 
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/configuration.md#height-of-list-of-options-and-its-items
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#height-of-list-of-options-and-its-items)

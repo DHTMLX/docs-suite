@@ -20,12 +20,8 @@ dataview.events.on("BeforeEditEnd", function(value,id){
     return false;
 });
 
-
-
 @descr:
 
-
-**Related sample**:
-- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.1

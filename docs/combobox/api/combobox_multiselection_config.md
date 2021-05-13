@@ -12,10 +12,6 @@ var combo = new dhx.Combobox("combo_container", {
     multiselection:true
 });
 
-
-
 @descr: 
 
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/configuration.md#selection-of-multiple-options
-
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#selection-of-multiple-options)

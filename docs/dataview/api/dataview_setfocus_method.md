@@ -18,14 +18,10 @@ setFocus(id: string): void;
 @example:
 dataview.setFocus("item_id");
 
-
-
 @descr:
 
-@related: dataview/manipulating_data.md#setting-focus-on-item
+@changelog: added in v6.3
 
-@relatedapi: dataview/api/dataview_getfocus_method.md
+[comment]: # (@related: dataview/manipulating_data.md#setting-focus-on-item)
 
-@changelog:
-added in v6.3
-
+[comment]: # (@relatedapi: dataview/api/dataview_getfocus_method.md)

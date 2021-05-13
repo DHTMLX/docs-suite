@@ -14,19 +14,12 @@ var dataview = new dhx.DataView("dataview", {
     selection: false
 });
 
-
-
 @descr: 
-
-
 
 **Related sample**: [Dataview. Disable selection](https://snippet.dhtmlx.com/xh66mnu3)
 
-@relatedapi: dataview/api/selection/selection_enable_method.md
-dataview/api/selection/selection_disable_method.md
-
-@related: dataview/configuration.md#selection-of-items
-dataview/usage_selection.md
-
-
 @changelog: added in v6.5
+
+[comment]: # (@relatedapi: dataview/api/selection/selection_enable_method.md dataview/api/selection/selection_disable_method.md)
+
+[comment]: # (@related: dataview/configuration.md#selection-of-items dataview/usage_selection.md)

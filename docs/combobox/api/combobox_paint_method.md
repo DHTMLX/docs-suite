@@ -12,9 +12,4 @@ combo.config.disabled = true;
 // repaints Combo with a new config
 combo.paint();
 
-
-
 @descr:
-
-
-

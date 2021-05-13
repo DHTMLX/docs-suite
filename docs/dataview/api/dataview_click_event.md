@@ -11,16 +11,11 @@ title: click
 - id 	string | number 		the id of a clicked item
 - events 	Event 				a native event object
 
-
 @example:
 dataview.events.on("Click", function(id, e){
    console.log("The item with the id "+ dataview.selection.getId(id) +" was clicked.");
 });
 
-
-
 @descr:
 
-**Related sample**:
-- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
-
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)

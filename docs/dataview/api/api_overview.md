@@ -14,7 +14,6 @@ title: Dataview API overview
 | [](dataview/api/dataview_paint_method.md)            | @getshort(dataview/api/dataview_paint_method.md)            |
 | [](dataview/api/dataview_setfocus_method.md)         | @getshort(dataview/api/dataview_setfocus_method.md)         |
 
-
 :::info important
 - Use [the methods of DataCollection](data_collection/index.md) to work with data. 
 - Apply [the methods of Selection](selection/index.md#methods) to manage the selection of DataView items. 
@@ -46,6 +45,7 @@ title: Dataview API overview
 - Use [the events of DataCollection](data_collection/index.md#events) to work with data of DataView. 
 - Apply [the events of Selection](selection/index.md#events) to control the selection of DataView items. 
 :::
+
 ## Properties
 
 | Name                                                   | Description                                                   |

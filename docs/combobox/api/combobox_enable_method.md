@@ -10,18 +10,10 @@ title: enable
 @example:
 combo.enable();
 
-
-
 @descr:
 
-**Related sample**:
-- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
-@related: combobox/work_with_combo.md#disablingenabling-combobox
+[comment]: # (@related: combobox/work_with_combo.md#disablingenabling-combobox)
 
-@relatedapi:
-combobox/api/combobox_disable_method.md
-
-
-
-
+[comment]: # (@relatedapi: combobox/api/combobox_disable_method.md)

@@ -12,11 +12,8 @@ var combo = new dhx.Combobox("combo_container",{
     virtual:true
 });
 
-
-
 @descr: 
 
 **Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)
 
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/configuration.md#dynamic-rendering-of-options
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#dynamic-rendering-of-options)

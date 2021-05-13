@@ -13,14 +13,8 @@ var dataview = new dhx.DataView("dataview", {
     keyNavigation: true
 });
 
-
-
 @descr: 
 
+**Related sample**: [Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
-**Related sample**:
-- [Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
-
-@related:
-dataview/configuration.md#arrow-keys-navigation
-
+[comment]: # (@related: dataview/configuration.md#arrow-keys-navigation)

@@ -12,11 +12,6 @@ var combo = new dhx.Combobox("combo_container",{
     hiddenLabel:true
 });
 
-
-
 @descr: 
 
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/configuration.md#hidden-label
-
-
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#hidden-label)

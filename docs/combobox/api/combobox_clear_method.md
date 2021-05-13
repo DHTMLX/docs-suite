@@ -10,12 +10,8 @@ title: clear
 @example:
 combo.clear();
 
-
 @descr:
 
-**Related sample**:
-- [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
+**Related sample**: [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
 
-
-
-@related: combobox/work_with_combo.md#clearing-input
+[comment]: # (@related: combobox/work_with_combo.md#clearing-input)
