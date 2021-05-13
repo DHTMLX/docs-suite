@@ -43,7 +43,7 @@ var form = new dhx.Form("form_container", {
 
 The tables below demonstrate using the possible values for the **align** property in Form:
 
-``` todo скорее всего можно просто прикрепить подходящий семпл
+``` todovika сделай простой семпл и в коментариях в семпле распиши возможные варианты выравнивания, добавь к семплу теги и заголовок, вставь сюда https://docs.dhtmlx.com/suite/form__configuration.html
 <style>
 	table.my_table {
 		width: 100%;  

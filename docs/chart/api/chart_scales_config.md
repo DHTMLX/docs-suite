@@ -4,13 +4,8 @@ title: scales
 ---          
 
 @short: defines configuration of chart scales
-TODO: api change (добавить в description "left" | "right" | "top" | "bottom" | "radial")
-@signature: {'scales?: IScalesConfig;'}
-```todoapi
-object scales;
-scales?: IScalesConfig;
-export declare type ScaleType = "left" | "right" | "top" | "bottom" | "radial";
-```
+
+@signature: {'scales?: "left" | "right" | "top" | "bottom" | "radial";'}
 
 @example: 
 var chart = new dhx.Chart("chart_container",{

@@ -7,11 +7,6 @@ title: eachSeries
 
 @signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
 
-```todoapi
-array eachSeries(function handler);
-eachSeries(handler: (seria: ISeria) => any): any[];
-```
-
 @params:
 - handler	function	 a handler function that takes an array with series objects as a parameter
 

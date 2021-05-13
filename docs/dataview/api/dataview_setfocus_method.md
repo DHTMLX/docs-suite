@@ -7,11 +7,6 @@ title: setFocus
 
 @signature: {'setFocus(id: string | number): void;'}
 
-```todoapi
-void setFocus(string|number id);
-setFocus(id: string): void;
-```
-
 @params:
 - id	string|number      the id of an item
 

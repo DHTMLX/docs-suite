@@ -5,10 +5,12 @@ description: description
 ---          
 
 @short: defines whether the width of columns is automatically adjusted to the width of their content
-TODO: api change (нужно добавить список возможных опций в desc)
+
 @signature: {'adjust?: IAdjustBy;'}
 
 @default: false
+
+[comment]: # (TODO: api change (нужно добавить список возможных опций в desc, можно после релиза)
 
 @example: 
 var grid = new dhx.Grid("grid_container", {

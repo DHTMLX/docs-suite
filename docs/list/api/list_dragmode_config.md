@@ -5,14 +5,12 @@ title: dragMode
 
 @short: enables drag-n-drop in List
 
-```todoapi ```
+@signature: {'dragMode?: string'}
 
 @example: 
 var list = new dhx.List("list_container", { 
     dragMode:"source"
 });
-
-
 
 @descr:
 

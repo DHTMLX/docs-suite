@@ -7,11 +7,10 @@ title: isDisabled
 
 @signature: {'isDisabled(): boolean;'}
 
-<!-- todoapi
-указать значение по умолчанию -->
+[comment]: # (@default:  todo указать значение по умолчанию) 
 
 @returns:
-- param	boolean		true, if a combobox is disabled, otherwise false
+- param	boolean		true, if a combobox is disabled, otherwise faslse
 
 @example:
 combobox.isDisabled(); // -> returns true/false
