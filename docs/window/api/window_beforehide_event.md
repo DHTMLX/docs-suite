@@ -42,6 +42,7 @@ Note, the event fires in 2 cases:
 2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
 
 @changelog:
+
 The **position** and **events** parameters have been added in v7.0.
 
 @related: window/handling_events.md

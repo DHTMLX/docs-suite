@@ -21,7 +21,7 @@ dhxWindow.unsetFullScreen();
 
 **Related sample**: [Window. Fullscreen Mode](https://snippet.dhtmlx.com/aftti5fy)
 
-@changelog:  added in v7.1
+@changelog: added in v7.1
 
 @related:window/usage.md#fullscreen-mode
 

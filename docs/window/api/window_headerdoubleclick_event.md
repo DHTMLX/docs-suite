@@ -21,7 +21,8 @@ dhxWindow.events.on("HeaderDoubleclick", function(events) {
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
-@changelog: 
+@changelog:
+
 The **events** parameter has been added in v7.0.
 
 @related: window/handling_events.md
