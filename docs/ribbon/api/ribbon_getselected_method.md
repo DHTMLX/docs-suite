@@ -17,6 +17,9 @@ ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 @descr:
 
+@changelog:
+added in v7.0
+
 @related: menu/work_with_menu.md#getting-selected-items
 
 @relatedapi:
@@ -26,6 +29,5 @@ ribbon/api/ribbon_isselected_method.md
 
 
 
-@changelog:
-added in v7.0
+
 

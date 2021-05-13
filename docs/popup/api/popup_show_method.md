@@ -23,6 +23,10 @@ popup.show("popup_container");
 
 @descr:
 
+**Related samples**:
+- [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
+- [Popup.Show position](https://snippet.dhtmlx.com/bu4uj2ik)
+
 The **config** object can contain the properties below:
 
 <table class="webixdoc_links">
@@ -47,15 +51,12 @@ The **config** object can contain the properties below:
 </table>
 
 
-@relatedapi:
-popup/api/popup_hide_method.md
-
-**Related sample**:
-- [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
-- [Popup.Show position](https://snippet.dhtmlx.com/bu4uj2ik)	
+@changelog:
+- the **indent** property of the **config** parameter is added in v6.1
 
 @related:popup/work_with_popup.md#hidingshowing-popup
 
-@changelog:
-- the **indent** property of the **config** parameter is added in v6.1
+@relatedapi:
+popup/api/popup_hide_method.md
+
 

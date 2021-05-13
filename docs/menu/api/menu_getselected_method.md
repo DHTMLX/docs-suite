@@ -18,6 +18,8 @@ menu.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 @descr:
 
+@changelog:
+added in v7.0
 
 
 @relatedapi:
@@ -26,5 +28,3 @@ menu/api/menu_unselect_method.md
 menu/api/menu_isselected_method.md
 
 
-@changelog:
-added in v7.0

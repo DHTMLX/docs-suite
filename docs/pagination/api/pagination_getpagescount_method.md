@@ -25,8 +25,4 @@ const totalPages = pagination.getPagesCount();
 
 **Related sample**: [Pagination. Get page count](https://snippet.dhtmlx.com/k5j6acc5)
 
-
-
-
-
 @related: pagination/usage.md#getting-total-number-of-pages

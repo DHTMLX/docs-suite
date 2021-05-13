@@ -21,6 +21,9 @@ tree.selection.disable();
 
 {{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}
 
+@changelog:
+added in v7.0
+
 @relatedapi: 
 dataview/api/dataview_selection_config.md
 list/api/list_selection_config.md
@@ -28,5 +31,3 @@ tree/api/tree_selection_config.md
 
 
 
-@changelog:
-added in v7.0

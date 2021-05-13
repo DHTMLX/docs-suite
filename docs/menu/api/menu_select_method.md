@@ -18,6 +18,11 @@ menu.select("align-left");
 
 @descr:
 
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+
+@changelog:
+added in v7.0
+
 @related: menu/work_with_menu.md#selectingunselectinganitem
 
 @relatedapi:
@@ -26,8 +31,4 @@ menu/api/menu_isselected_method.md
 menu/api/menu_getselected_method.md
 
 
-**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
-
-@changelog:
-added in v7.0
 

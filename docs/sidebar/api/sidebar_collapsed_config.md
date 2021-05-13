@@ -18,6 +18,5 @@ var sidebar = new dhx.Sidebar(document.body, {
 @descr: 
 
 
-**Related sample**:
-- [Sidebar. Sidebar Collapsed](https://snippet.dhtmlx.com/bkh54ir7)
+**Related sample**: [Sidebar. Sidebar Collapsed](https://snippet.dhtmlx.com/bkh54ir7)
 

@@ -26,6 +26,8 @@ var menu = new dhx.Menu({
 
 @descr: 
 
+**Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Grid.
 
 ~~~js
@@ -60,4 +62,3 @@ var menu = new dhx.Menu({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-**Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)

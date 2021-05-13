@@ -20,6 +20,11 @@ menu.isSelected("align-left"); // -> returns true/false
 
 @descr:
 
+**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+
+@changelog:
+added in v7.0
+
 @related: menu/work_with_menu.md#checkingifamenuitemisselected
 
 @relatedapi:
@@ -28,7 +33,3 @@ menu/api/menu_unselect_method.md
 menu/api/menu_getselected_method.md
 
 
-**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
-
-@changelog:
-added in v7.0
