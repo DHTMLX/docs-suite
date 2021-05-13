@@ -25,19 +25,10 @@ var ids = combo.getValue();
 var array_ids = combo.getValue(true);
 // -> ["u1556097609214", "u1556097609228", "u1556097609244"]
 
-
-
 @descr:
 
-**Related sample**:
-- [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
+**Related sample**: [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
 
-@related: combobox/work_with_combo.md#settinggetting-values
+[comment]: # (@related: combobox/work_with_combo.md#settinggetting-values)
 
-@relatedapi:
-combobox/api/combobox_setvalue_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: combobox/api/combobox_setvalue_method.md)

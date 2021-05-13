@@ -16,8 +16,6 @@ combobox.events.on("BeforeClose", function( ) {
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

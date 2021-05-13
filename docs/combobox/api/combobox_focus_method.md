@@ -13,4 +13,4 @@ combo.focus();
 
 **Related sample**: [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
 
-@related: combobox/work_with_combo.md#setting-focus
+[comment]: # (@related: combobox/work_with_combo.md#setting-focus)

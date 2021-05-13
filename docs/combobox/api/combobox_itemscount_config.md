@@ -15,8 +15,6 @@ var combo = new dhx.Combobox("combo_container", {
     }
 });
 
-
-
 @descr: 
 
 **Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
@@ -29,7 +27,6 @@ and should return a template for displaying a result.
 
 {{note To be able to select several options you need to enable the **multiselection** option.}}
 
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/configuration.md#number-of-selected-options
-
 @changelog: added in v6.4 
+
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#number-of-selected-options)

@@ -15,14 +15,8 @@ var combo = new dhx.Combobox("combo_container", {
     filter: mySearch
 });
 
-
-
-
 @descr: 
 
+**Related sample**: [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
 
-**Related sample**:
-- [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
-
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/customization.md#custom-filter-for-options
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/customization.md#custom-filter-for-options)

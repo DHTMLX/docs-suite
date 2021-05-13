@@ -14,7 +14,6 @@ var combo = new dhx.Combobox("combo_container", {
     readOnly:true
 });
 
-
 @descr: 
 
 **Related sample**: [Combobox. Readonly](https://snippet.dhtmlx.com/igjsuf7y)
@@ -23,8 +22,4 @@ var combo = new dhx.Combobox("combo_container", {
 
 In this mode it is only possible to select options from the list, without entering words in the input.
 
-@related: combobox/how_to_start.md#initialize-combobox
-combobox/configuration.md#readonly-mode
-
-
-
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#readonly-mode)

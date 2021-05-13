@@ -10,20 +10,16 @@ title: isDisabled
 <!-- todoapi
 указать значение по умолчанию -->
 
-
 @returns:
 - param	boolean		true, if a combobox is disabled, otherwise false
 
-
 @example:
 combobox.isDisabled(); // -> returns true/false
-
-
 
 @descr:
 
 **Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
-@related: combobox/work_with_combo.md#checking-if-a-combobox-is-disabled
-
 @changelog: added in v6.4
+
+[comment]: # (@related: combobox/work_with_combo.md#checking-if-a-combobox-is-disabled)
