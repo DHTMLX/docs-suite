@@ -59,7 +59,4 @@ grid/api/grid_spans_config.md
 grid/api/grid_getspan_method.md
 grid/api/grid_removespan_method.md
 
-
-
-
 @related: treegrid/usage.md#addingremoving-spans

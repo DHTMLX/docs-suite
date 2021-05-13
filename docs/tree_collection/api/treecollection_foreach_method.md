@@ -21,6 +21,7 @@ treecollection.forEach(function(element, index, array) {
 
 
 @descr:
+
 The callback function takes three parameters:
 
 <table class="webixdoc_links">
@@ -39,7 +40,5 @@ The callback function takes three parameters:
 		</tr>
     </tbody>
 </table>
-
-
 
 @changelog: added in v6.4

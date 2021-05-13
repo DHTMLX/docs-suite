@@ -17,7 +17,8 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 @descr: 
 
+**Related sample**: [Tabbar. Mode](https://snippet.dhtmlx.com/xq6k0tts)
+
 @related: tabbar/configuring_tabbar.md#position-of-tabbar
 tabbar/init.md#define-tabbar-structure
 
-**Related sample**: [Tabbar. Mode](https://snippet.dhtmlx.com/xq6k0tts)

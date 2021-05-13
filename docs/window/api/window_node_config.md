@@ -21,9 +21,8 @@ dhxWindow.show();
 **Related sample**:
 - [Window. Window Container](https://snippet.dhtmlx.com/2rrclo09)
 
+@changelog: added in v6.4
 
 @related: 
 window/how_to_start.md#initialize-window
 window/configuration.md#custom-node
-
-@changelog: added in v6.4

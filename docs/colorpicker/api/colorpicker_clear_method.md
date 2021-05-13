@@ -15,4 +15,4 @@ colorpicker.clear();
 **Related sample**: [Colorpicker. Clear](https://snippet.dhtmlx.com/yg6boc09)
 
 @changelog:
-add in v6.4
+added in v6.4

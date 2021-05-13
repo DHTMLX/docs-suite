@@ -17,11 +17,13 @@ treegrid.selection.disable();
 
 @descr:
 
+@changelog:
+added in v7.0
+
 @relatedapi: 
 treegrid/api/selection/selection_enable_method.md
 
 @related: treegrid/usage_selection.md
 
-@changelog:
-added in v7.0
+
 

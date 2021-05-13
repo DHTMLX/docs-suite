@@ -29,7 +29,8 @@ treegrid.selection.removeCell(rowId, colId);
 
 @descr:
 
-
+@changelog:
+added in v7.0
 
 @related: treegrid/usage_selection.md#removing-selection
 treegrid/configuration.md#selection
@@ -38,6 +39,5 @@ treegrid/configuration.md#selection
 treegrid/api/selection/selection_enable_method.md
 treegrid/api/selection/selection_setcell_method.md
 
-@changelog:
-added in v7.0
+
 

@@ -23,6 +23,8 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 @descr:
 
+**Related sample**: [Timepicker. Custom Style](https://snippet.dhtmlx.com/n4xfu4e9)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of TimePicker.
 
 ~~~js
@@ -60,5 +62,4 @@ var timepicker = new dhx.Timepicker("timepicker", {
 @related: timepicker/customization.md#styling
 timepicker/initialization.md#initialize-timepicker
 
-**Related sample**: [Timepicker. Custom Style](https://snippet.dhtmlx.com/n4xfu4e9)
 

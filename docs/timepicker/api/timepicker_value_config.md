@@ -36,6 +36,8 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 @descr:
 
+**Related sample**: [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
+
 1\. The value of timepicker set as an **array** should have the following elements:
 
 - the hour value
@@ -50,8 +52,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 3\. The date set as a **number** is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 method of the **Date** object.
 
-**Related sample**: [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
+@changelog: added in v7.0
 
 @related: timepicker/configuration.md#initial-value
 
-@changelog: added in v7.0

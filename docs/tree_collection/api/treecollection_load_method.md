@@ -21,7 +21,6 @@ myToolbar.data.load("[path to this file]/file.xml", "xml");
 
 @descr:
 
-
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:

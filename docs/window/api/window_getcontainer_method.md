@@ -18,10 +18,6 @@ dhxWindow.getContainer();
 
 @descr:
 
-
-
-
-
 @changelog:
 added in v6.3
 

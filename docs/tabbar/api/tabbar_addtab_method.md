@@ -18,6 +18,8 @@ tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 @descr:
 
+**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+
 The **view** object may include the following properties:
 
 <table class="webixdoc_links">
@@ -42,11 +44,8 @@ The **view** object may include the following properties:
 </table>
 
 
-**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+@changelog: added in v6.4
 
 @relatedapi: tabbar/api/tabbar_removetab_method.md
 
-
 @related: tabbar/work_with_tabbar.md#addingremoving-tabs
-
-@changelog: added in v6.4

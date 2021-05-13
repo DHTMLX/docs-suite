@@ -42,6 +42,11 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
+@changelog:
+
+- added in v6.5
+- Before v7.0, the event took one parameter - the column id. 
+- Starting from v7.0, the event takes two parameters: **data** and **e**.
 
 @relatedapi:
 treegrid/api/treegrid_dragitem_config.md
@@ -56,8 +61,3 @@ treegrid/api/treegrid_dragcolumnstart_event.md
 
 @related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns
 
-@changelog:
-
-- added in v6.5
-- Before v7.0, the event took one parameter - the column id. 
-- Starting from v7.0, the event takes two parameters: **data** and **e**.

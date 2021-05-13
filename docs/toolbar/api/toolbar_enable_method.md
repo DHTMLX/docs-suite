@@ -19,14 +19,14 @@ toolbar.enable(["cancel_btn","del_btn"]);
 
 @descr:
 
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
+
 Starting from v7.0, it is possible to enable all items at once by using the method without the parameter:
 
 ~~~js
 // enables all Toolbar items
 toolbar.enable();
 ~~~
-
-**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 @related: toolbar/common_methods.md#disabling-and-enabling-controls
 

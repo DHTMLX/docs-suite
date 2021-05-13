@@ -42,8 +42,9 @@ const toolbar = new dhx.Toolbar("toolbar", {
 
 @descr: 
 
-@related: toolbar/load_data.md
 
 **Related samples**:
 - [Toolbar. Config Data ](https://snippet.dhtmlx.com/nie9tuks)
 - [Toolbar. Init With External Data](https://snippet.dhtmlx.com/b0fmkwg5)
+
+@related: toolbar/load_data.md

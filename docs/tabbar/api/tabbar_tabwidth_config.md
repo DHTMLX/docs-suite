@@ -17,10 +17,11 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 @descr: 
 
+**Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
+
 @related: tabbar/configuring_tabbar.md#size-of-tabs
 tabbar/init.md#define-tabbar-structure
 
-**Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 

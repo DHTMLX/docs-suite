@@ -22,10 +22,11 @@ var tabbar = new dhx.Tabbar("tabbar", {
 
 **Related sample**: [Tabbar. Close Button](https://snippet.dhtmlx.com/cysre4v8)
 
+@changelog: added in v6.4
+
 @related: 
 tabbar/init.md#define-tabbar-structure
 tabbar/configuring_tabbar.md#close-buttons-for-tabs
 
  
 
-@changelog: added in v6.4

@@ -20,9 +20,9 @@ treegrid.editEnd(true); // the edited data won't be saved
 
 The method works with [any type of cell editors](treegrid/configuration.md#columneditors), except for **checkbox**. 
 
+@changelog: added in v6.3
 
 @relatedapi: treegrid/api/treegrid_editcell_method.md
 
 @related: treegrid/usage.md#editing-data 
 
-@changelog: added in v6.3

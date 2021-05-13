@@ -25,6 +25,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 @descr:   
 
+@changelog: added in v7.0
 
 @relatedapi:
 timepicker/api/timepicker_afterapply_event.md
@@ -33,4 +34,3 @@ timepicker/api/timepicker_beforeapply_event.md
 timepicker/api/timepicker_beforeclose_event.md
 timepicker/api/timepicker_change_event.md
 
-@changelog: added in v7.0

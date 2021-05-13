@@ -17,7 +17,7 @@ var slider = new dhx.Slider("slider_container",{
 
 @descr:
  
-The property is useful while using Slider in form.
+The property is useful while using Slider in Form.
  
 
 @changelog: added in v6.4 

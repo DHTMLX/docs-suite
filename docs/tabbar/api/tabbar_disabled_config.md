@@ -20,13 +20,10 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 @descr:
 
+**Related sample**: [Tabbar. Disabled Tab](https://snippet.dhtmlx.com/pxa6rkpj)
+
+@changelog:added in v6.4
+
 @related: 
 tabbar/init.md#define-tabbar-structure
 tabbar/configuring_tabbar.md#disabled-tabs
-
-**Related sample**: [Tabbar. Disabled Tab](https://snippet.dhtmlx.com/pxa6rkpj)
-
- 
-
-
-@changelog:added in v6.4

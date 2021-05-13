@@ -19,8 +19,9 @@ grid.hideColumn(col);
 
 **Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
 
+@changelog: added in v6.2
+
 @relatedapi: treegrid/api/treegrid_showcolumn_method.md
 
 @related: treegrid/usage.md#hidingshowing-a-column
 
-@changelog: added in v6.2

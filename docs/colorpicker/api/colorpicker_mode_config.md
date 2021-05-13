@@ -13,9 +13,10 @@ var colorpicker = new dhx.Colorpicker("colorpicker", {
 	css: "dhx_widget--bordered"
 });
 
-**Related sample**: [Colorpicker. Colorpicker Modes](https://snippet.dhtmlx.com/add0g4je)
 
 @descr: 
+
+**Related sample**: [Colorpicker. Colorpicker Modes](https://snippet.dhtmlx.com/add0g4je)
 
 @changelog: added in v6.4
 

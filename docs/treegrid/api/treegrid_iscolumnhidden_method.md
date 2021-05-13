@@ -24,7 +24,7 @@ grid.isColumnHidden("country"); // -> true|false
 **Related sample**:
 - [TreeGrid. Is column hidden](https://snippet.dhtmlx.com/fcjfp19d)
 
-@related: treegrid/usage.md#checking-visibility-of-a-column
-
 @changelog:
 added in v6.4
+
+@related: treegrid/usage.md#checking-visibility-of-a-column

@@ -21,7 +21,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 
 **Related sample**: [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
 
+@changelog: added in v6.5
+
 @related: treegrid/initialization.md#initialize-treegrid
 treegrid/configuration.md#tooltip
-
-@changelog: added in v6.5

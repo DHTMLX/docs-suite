@@ -19,6 +19,8 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [Setup drag column](https://snippet.dhtmlx.com/ax5vs4a8)
 
+@changelog: added in v6.5
+
 @related: 
 treegrid/initialization.md#initialize-treegrid
 treegrid/configuration.md#drag-n-drop-of-treegrid-columns
@@ -34,4 +36,3 @@ treegrid/api/treegrid_dragcolumnin_event.md
 treegrid/api/treegrid_dragcolumnout_event.md
 treegrid/api/treegrid_dragcolumnstart_event.md
 
-@changelog: added in v6.5

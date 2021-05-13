@@ -19,6 +19,8 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
+**Related sample**: [TreeGrid. Adjust Columns](https://snippet.dhtmlx.com/lgvoz0ar)
+
 The property can be specified to one of the available adjustment modes:
 
 <table class="webixdoc_links">
@@ -42,10 +44,9 @@ The property can be specified to one of the available adjustment modes:
     </tbody>
 </table>
 
-**Related sample**: [TreeGrid. Adjust Columns](https://snippet.dhtmlx.com/lgvoz0ar)
+@changelog: added in v6.4
 
 @relatedapi: treegrid/api/treegrid_adjustcolumnwidth_method.md
 
 @related: treegrid/configuration.md#autosize-for-columns
 
-@changelog: added in v6.4
