@@ -25,6 +25,8 @@ grid.events.on("BeforeColumnDrop", function(data, events){
 
 @descr:
 
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
@@ -33,8 +35,6 @@ The data object contains the following parameters:
 - **source** - (*string[]*) an array with ids of dragged columns
 - **target** - (*string*) the id of a potential target column
 
-**Related sample**:
-- [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
 @changelog:
 

@@ -23,6 +23,8 @@ grid.events.on("BeforeColumnDrag", function(data, events){
 
 @descr:
 
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
@@ -43,11 +45,6 @@ The data object contains the following parameters:
 		</tr>
     </tbody>
 </table>
-
-
-**Related sample**:
-- [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
-	
 
 @changelog:
 

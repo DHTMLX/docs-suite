@@ -17,8 +17,7 @@ grid.editCell(grid.data.getId(0),"project");
 
 @descr:
 
-**Related sample**:
-- [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
+**Related sample**: [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
 
 @changelog:
 

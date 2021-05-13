@@ -20,6 +20,5 @@ grid.events.on("Scroll", function({top,left}){
 
 @descr:
 
-**Related sample**:
-- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

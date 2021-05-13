@@ -20,6 +20,5 @@ grid.events.on("HeaderCellMouseOver", function(column,e){
 
 @descr:
 
-**Related sample**:
-- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

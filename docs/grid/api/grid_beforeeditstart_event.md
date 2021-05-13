@@ -29,7 +29,6 @@ grid.events.on("BeforeEditStart", function(row,col,editorType){
 
 	
 
-**Related sample**:
-- [Grid. Events	](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.1

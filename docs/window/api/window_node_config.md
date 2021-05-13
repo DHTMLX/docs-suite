@@ -18,8 +18,7 @@ dhxWindow.show();
 
 @descr: 
 
-**Related sample**:
-- [Window. Window Container](https://snippet.dhtmlx.com/2rrclo09)
+**Related sample**: [Window. Window Container](https://snippet.dhtmlx.com/2rrclo09)
 
 @changelog: added in v6.4
 
