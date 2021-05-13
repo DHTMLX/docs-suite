@@ -20,8 +20,6 @@ dataview.events.on("BeforeDrop", function(data, events) {
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
@@ -45,16 +43,7 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
-@relatedapi:
-dataview/api/dataview_afterdrag_event.md
-dataview/api/dataview_afterdrop_event.md
-dataview/api/dataview_beforedrag_event.md
-dataview/api/dataview_canceldrop_event.md
-dataview/api/dataview_candrop_event.md
-dataview/api/dataview_dragin_event.md
-dataview/api/dataview_dragout_event.md
-dataview/api/dataview_dragstart_event.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi:
+dataview/api/dataview_afterdrag_event.md dataview/api/dataview_afterdrop_event.md dataview/api/dataview_beforedrag_event.md dataview/api/dataview_canceldrop_event.md dataview/api/dataview_candrop_event.md dataview/api/dataview_dragin_event.md dataview/api/dataview_dragout_event.md dataview/api/dataview_dragstart_event.md)

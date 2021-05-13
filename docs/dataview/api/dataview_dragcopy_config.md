@@ -11,14 +11,10 @@ title: dragCopy
 var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: true});
 var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
 
-
-
 @descr:
 
-**Related sample**:
-- [Dataview. Drag'n'drop Сopy](https://snippet.dhtmlx.com/h89c3gl3)
+**Related sample**: [Dataview. Drag'n'drop Сopy](https://snippet.dhtmlx.com/h89c3gl3)
 
 {{note Don't forget to enable drag-n-drop via the [](dataview/api/dataview_dragmode_config.md) property to use dragCopy.}}
 
-@relatedapi:
-dataview/configuration.md#drag-n-drop-of-items
+[comment]: # (@relatedapi: dataview/configuration.md#drag-n-drop-of-items)

@@ -20,12 +20,9 @@ var dataview = new dhx.DataView("dataview", {
 	}
 });
 
-
-
 @descr:
 
-**Related sample**:
-- [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
+**Related sample**: [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
 
 The template function takes one parameter:
 
@@ -38,7 +35,6 @@ The template function takes one parameter:
     </tbody>
 </table>
 
+[comment]: # (@related: dataview/configuration.md#template-for-dataview-items)
 
-@related: dataview/configuration.md#template-for-dataview-items
-
-@relateapi: dataview/api/dataview_eventhandlers_config.md
+[comment]: # (@relateapi: dataview/api/dataview_eventhandlers_config.md)

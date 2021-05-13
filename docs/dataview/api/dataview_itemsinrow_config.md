@@ -10,14 +10,8 @@ title: itemsInRow
 @example: 
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 
-
-
 @descr: 
 
-**Related sample**:
-- [Dataview. Amount Items In A Row](https://snippet.dhtmlx.com/de4r8km3)
+**Related sample**: [Dataview. Amount Items In A Row](https://snippet.dhtmlx.com/de4r8km3)
 
-@related:
-dataview/configuration.md#number-of-items-in-a-row
-
-
+[comment]: # (@related: dataview/configuration.md#number-of-items-in-a-row)

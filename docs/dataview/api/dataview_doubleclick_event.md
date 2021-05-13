@@ -16,13 +16,8 @@ dataview.events.on("DoubleClick", function(id, e){
    console.log("The item "+ dataview.selection.getId(id) +" was double clicked.");
 });
 
-
-
 @descr:
 
-
-**Related sample**:
-- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
-
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.1

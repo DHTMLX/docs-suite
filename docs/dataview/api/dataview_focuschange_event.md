@@ -11,16 +11,11 @@ title: focusChange
 - index 	number 				the position of an item
 - id 		string|number 		the id of an item
 
-
 @example:
 dataview.events.on("FocusChange", function(index, id){
     // your code here
 });
 
-
-
 @descr:
 
-
-**Related sample**:
-- [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
