@@ -10,10 +10,8 @@ title: beforeShow
 @params:
 - text     string  the current text label of the control
 
-
 @returns:
 - param   boolean     true - to prevent a control from being shown, otherwise - true
-
 
 @example:
 form.getItem("button").events.on("BeforeShow", function(text) {
@@ -21,9 +19,6 @@ form.getItem("button").events.on("BeforeShow", function(text) {
     return true;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

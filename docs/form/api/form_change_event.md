@@ -16,9 +16,6 @@ form.events.on("Change",function(name, new_value){
 	// your code here
 });
 
-
-
 @descr:
-
 
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)

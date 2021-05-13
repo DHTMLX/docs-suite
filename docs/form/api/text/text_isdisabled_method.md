@@ -14,5 +14,4 @@ param   boolean     true, if a control is disabled, otherwise false
 form.getItem("text").isDisabled(); 
 // -> true/false
 
-
 @descr:

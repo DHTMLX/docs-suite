@@ -13,7 +13,6 @@ title: getProperties
 @returns:
 param   object      an object either with the available attributes of the control and their values, or with the available attributes of the radio button and their values
 
-
 @example:
 var form = new dhx.Form("form_container", { 
     rows: [
@@ -74,7 +73,6 @@ form.getItem("radiogroup").getProperties("1");
 	text: "Select 1"
 	width: "content"
 }
-
 
 @descr:
 

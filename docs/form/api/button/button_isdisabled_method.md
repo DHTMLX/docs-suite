@@ -7,7 +7,6 @@ title: isDisabled
 
 @signature: isDisabled(name?: string): boolean;
 
-
 @returns:
 param   boolean     true, if a control is disabled, otherwise false
 
@@ -15,9 +14,4 @@ param   boolean     true, if a control is disabled, otherwise false
 form.getItem("button").isDisabled();
 // -> true/false
 
-
-
 @descr:
-
-
-

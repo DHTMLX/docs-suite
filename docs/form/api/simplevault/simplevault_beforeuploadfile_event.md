@@ -17,9 +17,8 @@ form.getItem("simpleVault").events.on("BeforeUploadFile", function(file, value) 
     return true;
 });
 
-
-
 @descr:
 
 @changelog:
+
 The **value** parameter is added in v7.0.

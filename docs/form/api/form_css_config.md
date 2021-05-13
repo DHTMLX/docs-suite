@@ -47,12 +47,9 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
+@descr:
 
-
-@descr: 
-    
-**Related sample**:
-- [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
+**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Form.
 
@@ -88,6 +85,4 @@ var form = new dhx.Form("form_container", {
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-
-@related: form/how_to_start.md#initialize-form
-form/customization.md
+[comment]: # (@related: form/how_to_start.md#initialize-form form/customization.md)

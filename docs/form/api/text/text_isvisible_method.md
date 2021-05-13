@@ -14,5 +14,4 @@ param   boolean     true, if a control is visible, otherwise false
 form.getItem("text").isVisible(); 
 // -> true/false
 
-
 @descr:

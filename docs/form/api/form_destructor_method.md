@@ -12,6 +12,4 @@ title: destructor
 @example:
 form.destructor();
 
-
 @descr:
-

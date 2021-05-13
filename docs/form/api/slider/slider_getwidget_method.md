@@ -14,8 +14,6 @@ param   object    the dhtmlxSlider widget
 var slider = form.getItem("slider").getWidget();  
 // -> dhtmlxSlider
 
-
-
 @descr:
 
 It is possible to use methods of dhtmlxSlider via the **getWidget()** method of a Slider control.
@@ -26,4 +24,3 @@ For example, you can disable a Slider control. To do this, you need to get the w
 var slider = form.getItem("slider").getWidget();  // -> dhtmlxSlider
 slider.disable(); // disables slider
 ~~~
-

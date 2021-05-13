@@ -10,7 +10,4 @@ title: show
 @example:
 form.getItem("simplevault").show();
 
-
 @descr:
-
-

@@ -13,8 +13,4 @@ param   boolean     true, if a control is visible, otherwise - false
 @example:
 form.getItem("spacer").isVisible(); // -> true/false
 
-
-
 @descr:
-
-

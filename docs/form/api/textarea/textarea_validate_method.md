@@ -21,7 +21,6 @@ form.getItem("textarea").validate(true, "I am Text"); // -> true/false
 // the method validates the current value
 form.getItem("textarea").validate(true); // -> true/false
 
-
 @descr:
 
 When calling without parameters or setting the **silent** parameter to *false*, the method invokes the [BeforeValidate](form/api/textarea/textarea_beforevalidate_event.md) and [AfterValidate](form/api/textarea/textarea_aftervalidate_event.md) events and visually modifies the control.
@@ -34,8 +33,6 @@ form.getItem("textarea").validate(false, "I am Input"); // -> true/false
 form.getItem("textarea").validate(); // -> true/false
 ~~~
 
-
 @changelog:
+
 The **silent** and **validateValue** parameters are added in v7.0
-
-

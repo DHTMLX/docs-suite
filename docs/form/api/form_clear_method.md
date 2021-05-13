@@ -11,7 +11,6 @@ title: clear
 
 - mode		string		optional, the mode of clearing a form
 
-
 @example:
 // clears only form validation
 form.clear("validation");
@@ -21,7 +20,6 @@ form.clear("value");
 
 // clears both form values and validation
 form.clear();
-
 
 @descr:
 
@@ -33,9 +31,6 @@ The method may clear a form in one of three modes:
 - "validation" - clears only form validation
 - without parameters - clears both form values and validation
 
-
-
-@related:form/work_with_form.md#clearing-form
-
-
 @changelog: added in v6.1
+
+[comment]: # (@related:form/work_with_form.md#clearing-form)

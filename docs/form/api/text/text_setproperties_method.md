@@ -15,7 +15,6 @@ form.getItem("text").setProperties({
 	label: " Some text"
 });
 
-
 @descr:
 
 The method invokes the [](form/api/text/text_afterchangeproperties_event.md) and [](form/api/text/text_beforechangeproperties_event.md) events.

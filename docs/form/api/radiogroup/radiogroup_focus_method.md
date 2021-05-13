@@ -13,7 +13,6 @@ title: focus
 @example:
 form.getItem("radiogroup").focus("radiobutton_1");
 
-
 @descr:
 
 If "id" is not specified, the method sets focus to the first radio button of the RadioGroup.

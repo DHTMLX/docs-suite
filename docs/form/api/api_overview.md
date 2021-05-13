@@ -60,8 +60,7 @@ title: Form API overview
 | [](form/api/form_title_config.md)    | @getshort(form/api/form_title_config.md)    |
 | [](form/api/form_width_config.md)    | @getshort(form/api/form_width_config.md)    |
 
-
-##  Button API
+## Button API
 
 ### Button methods
 
@@ -238,7 +237,6 @@ title: Form API overview
 | [](form/api/colorpicker/colorpicker_setvalue_method.md)      | @getshort(form/api/colorpicker/colorpicker_setvalue_method.md)      |
 | [](form/api/colorpicker/colorpicker_show_method.md)          | @getshort(form/api/colorpicker/colorpicker_show_method.md)          |
 | [](form/api/colorpicker/colorpicker_validate_method.md)      | @getshort(form/api/colorpicker/colorpicker_validate_method.md)      |
-
 
 ### Color Picker events
 

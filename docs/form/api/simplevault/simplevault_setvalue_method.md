@@ -10,7 +10,6 @@ title: setValue
 @params:
 - value     array     the value to be set  
 
-
 @example:
 form.getItem("simpleVault").setValue([
     {
@@ -21,8 +20,4 @@ form.getItem("simpleVault").setValue([
     }
 ]);
 
-
-
 @descr:
-
-

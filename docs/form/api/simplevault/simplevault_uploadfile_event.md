@@ -17,8 +17,8 @@ form.getItem("simpleVault").events.on("UploadFile", function(file, value, extra)
     console.log("UploadFile", file, value, extra);
 });
 
-
 @descr:
 
 @changelog:
+
 The **value** and **extra** parameters are added in v7.0.

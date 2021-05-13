@@ -10,5 +10,4 @@ title: enable
 @example:
 form.getItem("textarea").enable();
 
-
 @descr:

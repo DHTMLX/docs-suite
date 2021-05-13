@@ -7,14 +7,8 @@ title: enable
 
 @signature: {'enable(): void;'}
 
-
-
-
-
 @example:
 form.getItem("input").enable();
-
-
 
 @descr:
 

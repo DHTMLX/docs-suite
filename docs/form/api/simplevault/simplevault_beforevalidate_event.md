@@ -19,9 +19,6 @@ form.getItem("simplevault").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

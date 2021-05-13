@@ -10,7 +10,6 @@ title: getProperties
 @returns:
 param   object      an object with the available attributes of the control and their values
 
-
 @example:
 var form = new dhx.Form("form_container", {
     rows: [
@@ -168,6 +167,5 @@ The returned object of the **DatePicker** control can contain the following conf
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

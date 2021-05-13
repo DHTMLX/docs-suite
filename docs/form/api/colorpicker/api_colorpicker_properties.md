@@ -123,5 +123,3 @@ title: Colorpicker properties
 		</tr>
     </tbody>
 </table>
-
-

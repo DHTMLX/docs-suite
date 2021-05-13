@@ -14,9 +14,4 @@ param   number[]    the current value of the control
 var value = form.getItem("slider").getValue();
 // -> [1,20]
 
-
-
-
 @descr:
-
-

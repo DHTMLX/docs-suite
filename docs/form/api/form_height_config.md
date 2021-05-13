@@ -7,7 +7,6 @@ title: height
 
 @signature: {'height?: string | number | "content";'}
 
-
 @type: string|number|"content"
 
 @example: 
@@ -37,18 +36,12 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-
-
-
 @descr: 
 
-
-**Related sample**:
-- [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
-
-@related: form/how_to_start.md#initialize-form
-form/configuration.md#widthheight
-
-@relatedapi: form/api/form_width_config.md
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 @changelog: added in v6.4
+
+[comment]: # (@related: form/how_to_start.md#initialize-form form/configuration.md#widthheight)
+
+[comment]: # (@relatedapi: form/api/form_width_config.md)

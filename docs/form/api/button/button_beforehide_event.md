@@ -20,9 +20,6 @@ form.getItem("button").events.on("BeforeHide", function(text, init) {
     return true;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

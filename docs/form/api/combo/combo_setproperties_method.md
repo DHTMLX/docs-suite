@@ -16,8 +16,6 @@ form.getItem("combo").getProperties({
     labelPosition: "top"
 });
 
-
-
 @descr:
 
 The method invokes the [](form/api/combo/combo_afterchangeproperties_event.md) and [](form/api/combo/combo_beforechangeproperties_event.md) events.
@@ -124,6 +122,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

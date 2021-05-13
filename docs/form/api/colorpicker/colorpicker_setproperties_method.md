@@ -10,7 +10,6 @@ title: setProperties
 @params:
 - properties   object      an object with the available attributes of the control and their new values
 
-
 @example:
 form.getItem("colorpicker").setProperties({
     editable: true, 
@@ -18,8 +17,6 @@ form.getItem("colorpicker").setProperties({
     label: "New label"
 });
  
-
-
 @descr:
 
 The method invokes the [](form/api/colorpicker/colorpicker_afterchangeproperties_event.md) and [](form/api/colorpicker/colorpicker_beforechangeproperties_event.md) events.
@@ -114,6 +111,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

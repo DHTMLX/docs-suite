@@ -10,5 +10,4 @@ title: clearValidate
 @example:
 form.getItem("textarea").clearValidate();
 
-
 @descr:

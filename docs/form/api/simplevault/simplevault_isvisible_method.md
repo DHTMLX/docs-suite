@@ -10,12 +10,8 @@ title: isVisible
 @returns:
 param   boolean     true, if a control is visible, otherwise false
 
-
 @example:
 form.getItem("simplevault").isVisible(); 
 // -> true/false
 
-
 @descr:
-
-

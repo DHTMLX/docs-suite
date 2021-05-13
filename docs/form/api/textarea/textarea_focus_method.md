@@ -10,7 +10,6 @@ title: focus
 @example:
 form.getItem("textarea").focus();
 
-
 @descr:
 
 @changelog: added in v7.0

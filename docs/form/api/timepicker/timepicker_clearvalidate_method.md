@@ -10,5 +10,4 @@ title: clearValidate
 @example:
 form.getItem("timepicker").clearValidate();
 
-
 @descr:

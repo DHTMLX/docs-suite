@@ -10,5 +10,4 @@ title: enable
 @example:
 form.getItem("text").enable();
 
-
 @descr:

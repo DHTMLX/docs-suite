@@ -10,5 +10,4 @@ title: clear
 @example:
 form.getItem("text").clear();
 
-
 @descr:

@@ -7,14 +7,9 @@ title: focus
 
 @signature: {'focus(): void;'}
 
-
-
 @example:
 form.getItem("checkbox").focus();
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

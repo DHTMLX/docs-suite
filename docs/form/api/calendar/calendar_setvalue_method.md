@@ -10,14 +10,9 @@ title: setValue
 @params:
 - value     string|Date     the value to be set  
 
-
 @example:
 form.getItem("datepicker").setValue("30/05/19");
 
 form.getItem("datepicker").setValue(new Date('2019-05-30'));
 
-
-
 @descr:
-
-

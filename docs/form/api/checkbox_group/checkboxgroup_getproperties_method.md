@@ -4,8 +4,6 @@ title: getProperties
 description: description
 ---          
 
-
-
 @short: returns an object with the available configuration attributes of the control
 
 @signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
@@ -70,7 +68,6 @@ form.getItem("checkboxGroup").getProperties();
 	width: "content"
 }
 
-
 form.getItem("checkboxGroup").getProperties("second");
 // -> the returned object for the specified checkbox of the control:
 {
@@ -79,7 +76,6 @@ form.getItem("checkboxGroup").getProperties("second");
 	text: "Select 2",
 	width: "content"
 }
-
 
 @descr:
 

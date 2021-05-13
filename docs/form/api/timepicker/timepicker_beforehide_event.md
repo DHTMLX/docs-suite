@@ -20,7 +20,6 @@ form.getItem("timepicker").events.on("BeforeHide", function(value, init) {
     return true;
 });
 
-
 @descr:
 
 The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):

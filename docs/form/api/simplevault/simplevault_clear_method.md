@@ -10,8 +10,4 @@ title: clear
 @example:
 form.getItem("simplevault").clear();
 
-
-
 @descr:
-
-

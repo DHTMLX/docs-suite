@@ -30,8 +30,6 @@ var val3 = timepicker.getItem("timepicker").getValue();
 var val4 = timepicker.getItem("timepicker").getValue(true); 
 // -> {hour: 6, minute: 0, AM: true}
 
-
-
 @descr:
 
 The returned value can be of several types, depending on the passed parameter and the applied time format:
@@ -41,4 +39,6 @@ The returned value can be of several types, depending on the passed parameter an
 - for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
 - for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
 
-@changelog: The *asObject* parameter of the method is added in v7.0
+@changelog: 
+
+The *asObject* parameter of the method is added in v7.0

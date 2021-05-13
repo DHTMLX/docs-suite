@@ -14,21 +14,17 @@ title: beforeHide
 @returns:
 - param     boolean     false - to prevent a control from being hidden, otherwise true
 
-
 @example:
 form.events.on("BeforeHide", function(name, value) {
     console.log("BeforeHide", name, value); 
     return false;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/form_afterhide_event.md
-
 @changelog:
-
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+
+[comment]: # (@relatedapi: form/api/form_afterhide_event.md)

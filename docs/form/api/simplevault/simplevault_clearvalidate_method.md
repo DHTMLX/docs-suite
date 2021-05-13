@@ -10,8 +10,4 @@ title: clearValidate
 @example:
 form.getItem("simplevault").clearValidate();
 
-
-
 @descr:
-
-

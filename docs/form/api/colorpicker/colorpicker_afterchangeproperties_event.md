@@ -15,10 +15,8 @@ form.getItem("colorpicker").events.on("AfterChangeProperties", function(properti
     console.log("AfterChangeProperties", properties);
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/colorpicker/colorpicker_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/colorpicker/colorpicker_setproperties_method.md)

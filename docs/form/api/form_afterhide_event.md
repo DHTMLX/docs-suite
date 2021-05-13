@@ -16,13 +16,11 @@ form.events.on("AfterHide", function(name, value) {
     console.log("AfterHide", name, value); 
 });
 
-
 @descr:
 
-@relatedapi: form/api/form_beforehide_event.md
-
 @changelog:
-
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+
+[comment]: # (@relatedapi: form/api/form_beforehide_event.md)

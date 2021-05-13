@@ -17,8 +17,4 @@ form.getItem("CheckboxGroup").setValue({
     "checkbox_id_3": true
 });
 
-
-
 @descr:
-
-

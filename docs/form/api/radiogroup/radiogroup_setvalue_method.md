@@ -10,13 +10,7 @@ title: setValue
 @params:
 - value     string     the value to be set  
 
-
 @example:
 form.getItem("radiogroup").setValue("2");
 
-
-
-
 @descr:
-
-

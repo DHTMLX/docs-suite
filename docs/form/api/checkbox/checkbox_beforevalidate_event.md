@@ -7,7 +7,6 @@ title: beforeValidate
 
 @signature: {'beforeValidate: (value: string | boolean) => boolean | void;'}
  
-
 @params:
 - value       string | boolean  the value to be validated
 
@@ -20,9 +19,6 @@ form.getItem("checkbox").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

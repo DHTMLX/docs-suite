@@ -7,14 +7,8 @@ title: focus
 
 @signature: {'focus(): void;'}
 
-
-
-
-
 @example:
 form.getItem("colorpicker").focus();
-
-
 
 @descr:
 

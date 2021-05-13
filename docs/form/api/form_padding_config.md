@@ -7,7 +7,6 @@ title: padding
 
 @signature: {'padding?: string | number;'}
 
-
 @example: 
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
@@ -35,15 +34,10 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-
-
 @descr: 
 
-
-**Related sample**:
-- [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 @changelog: added in v6.4
 
-@related: form/how_to_start.md#initialize-form
-form/configuration.md#padding
+[comment]: # (@related: form/how_to_start.md#initialize-form form/configuration.md#padding)

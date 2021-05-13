@@ -10,5 +10,4 @@ title: hide
 @example:
 form.getItem("textarea").hide(); 
 
-
 @descr:

@@ -19,9 +19,8 @@ form.getItem("timepicker").events.on("BeforeChangeProperties", function(properti
     return true;
 });
 
-
 @descr:
 
-@relatedapi: form/api/timepicker/timepicker_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/timepicker/timepicker_setproperties_method.md)

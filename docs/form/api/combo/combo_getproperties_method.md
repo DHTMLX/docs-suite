@@ -10,7 +10,6 @@ title: getProperties
 @returns:
 param   object      an object with the available attributes of the control and their values
 
-
 @example:
 var form = new dhx.Form("form_container", {
     rows: [
@@ -64,7 +63,6 @@ form.getItem("combo").getProperties();
 	virtual: false,
 	width: "content"	
 }
-
 
 @descr:
 
@@ -166,6 +164,5 @@ The returned object of the **Combo** control can contain the following configura
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

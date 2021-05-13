@@ -7,12 +7,7 @@ title: show
 
 @signature: {'show(): void;'}
 
-
 @example:
 form.getItem("CheckboxGroup").show(); 
 
-
-
 @descr:
-
-

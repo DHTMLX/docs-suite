@@ -14,9 +14,4 @@ param   string | number     the current value of the control
 var value = form.getItem("select").getValue();
 // -> "1"
 
-
-
-
 @descr:
-
-

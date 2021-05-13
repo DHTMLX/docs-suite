@@ -7,15 +7,11 @@ title: setValue
 
 @signature: {'setValue(obj: FormData | IAnyObj): void;'}
 
-
 @params:
 - values	object		an object with new values/states of controls
 
-
-
 @example:
 form.setValue({"input_name":"Jack London", "slider_id":10});
-
 
 @descr:
 
@@ -35,11 +31,6 @@ Depending on the type of a control, the method may take different types of param
 
 @changelog:added in v6.1 
 
-@relatedapi:
-form/api/form_getvalue_method.md
+[comment]: # (@relatedapi: form/api/form_getvalue_method.md)
 
-@related:form/work_with_form.md#setting-new-values-for-controls
-
-
-
-
+[comment]: # (@related:form/work_with_form.md#setting-new-values-for-controls)

@@ -10,15 +10,12 @@ title: setProperties
 @params:
 - properties   object      an object with the available attributes of the control and their new values
 
-
 @example:
 form.getItem("datepicker").setProperties({
     editable: true,
     labelWidth: "100px",
     required: true
 });
- 
-
 
 @descr:
 
@@ -138,6 +135,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

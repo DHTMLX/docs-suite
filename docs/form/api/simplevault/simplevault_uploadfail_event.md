@@ -16,8 +16,8 @@ form.getItem("simpleVault").events.on("UploadFail", function(file, value) {
     console.log("UploadFail", file, value);
 });
 
-
 @descr:
 
 @changelog:
+
 The **value** parameter is added in v7.0.

@@ -7,16 +7,11 @@ title: isDisabled
 
 @signature: {'isDisabled(name?: string): boolean;'}
 
-
-
 @returns:
 - param	boolean     true, if a form is disabled, otherwise false
 
-
 @example:
 form.isDisabled(); // -> true/false
-
-
 
 @descr:
 
@@ -30,9 +25,6 @@ form.isDisabled("combo"); // -> true/false
 
 @changelog: added in v6.4
 
-@relatedapi: form/api/form_disable_method.md
-form/api/form_enable_method.md
+[comment]: # (@relatedapi: form/api/form_disable_method.md form/api/form_enable_method.md)
 
-@related: form/work_with_form.md#checking-if-a-form-is-disabled
-
-
+[comment]: # (@related: form/work_with_form.md#checking-if-a-form-is-disabled)

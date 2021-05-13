@@ -14,8 +14,4 @@ param   string | number     the current value of the control
 var value = form.getItem("text").getValue();
 // -> "I am a nice text"
 
-
-
 @descr:
-
-

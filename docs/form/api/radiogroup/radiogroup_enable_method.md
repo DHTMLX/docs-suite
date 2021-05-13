@@ -10,8 +10,4 @@ title: enable
 @example:
 form.getItem("radiogroup").enable();
 
-
-
 @descr:
-
-

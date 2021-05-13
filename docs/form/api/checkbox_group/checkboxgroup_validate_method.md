@@ -13,8 +13,4 @@ param   boolean     true, if a control is valid, otherwise - false
 @example:
 form.getItem("CheckboxGroup").validate(); // -> true/false
 
-
-
 @descr:
-
-

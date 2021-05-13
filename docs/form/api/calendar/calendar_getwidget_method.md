@@ -7,16 +7,12 @@ title: getWidget
 
 @signature: {'getWidget(): Calendar;'}
 
-
-
 @returns:
 param   object    the dhtmlxCalendar widget
 
 @example:
 var datepicker = form.getItem("datepicker").getWidget();  
 // -> dhtmlxCalendar
-
-
 
 @descr:
 
@@ -30,5 +26,3 @@ For example, you can show the current month in the control. To do this, you need
 var datepicker = form.getItem("datepicker").getWidget();  // -> dhtmlxCalendar
 datepicker.showDate(null,"month"); // shows the current month
 ~~~
-
-

@@ -10,13 +10,7 @@ title: setValue
 @params:
 - value     string|number     the value to be set  
 
-
 @example:
 form.getItem("input").setValue("Mike");
 
-
-
-
 @descr:
-
-

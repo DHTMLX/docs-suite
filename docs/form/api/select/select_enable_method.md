@@ -10,8 +10,4 @@ title: enable
 @example:
 form.getItem("select").enable();
 
-
-
 @descr:
-
-

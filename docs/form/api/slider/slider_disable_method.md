@@ -10,5 +10,4 @@ title: disable
 @example:
 form.getItem("slider").disable();
 
-
 @descr:

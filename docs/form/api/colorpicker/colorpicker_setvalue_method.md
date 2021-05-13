@@ -10,12 +10,7 @@ title: setValue
 @params:
 - value     string     the value to be set  
 
-
 @example:
 form.getItem("colorpicker").setValue("#02F7C6");
 
-
-
 @descr:
-
-

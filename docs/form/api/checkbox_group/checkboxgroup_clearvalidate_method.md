@@ -7,13 +7,7 @@ title: clearValidate
 
 @signature: {'clearValidate(): void;'}
 
-
-
 @example:
 form.getItem("CheckboxGroup").clearValidate();
 
-
-
 @descr:
-
-

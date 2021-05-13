@@ -50,7 +50,6 @@ form.getItem("timepicker").getProperties();
 	width: "content"
 }
 
-
 @descr:
 
 The returned object of the **TimePicker** control can contain the following configuration attributes:
@@ -135,9 +134,5 @@ The returned object of the **TimePicker** control can contain the following conf
 		</tr>
     </tbody>
 </table>
-
-
-
-
 
 @changelog: added in v7.0

@@ -19,11 +19,8 @@ form.getItem("combo").events.on("BeforeChangeProperties", function(properties) {
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/combo/combo_setproperties_method.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/combo/combo_setproperties_method.md)

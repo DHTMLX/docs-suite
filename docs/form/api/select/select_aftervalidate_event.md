@@ -11,15 +11,11 @@ title: afterValidate
 - value       string | number  the validated value
 - isValid     boolean     the result of validation
 
-
 @example:
 form.getItem("select").events.on("AfterValidate", function(value, isValid) {
     console.log("AfterValidate", value, isValid);
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

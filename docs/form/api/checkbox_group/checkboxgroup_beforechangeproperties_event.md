@@ -19,11 +19,8 @@ form.getItem("checkboxGroup").events.on("BeforeChangeProperties", function(prope
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/checkbox_group/checkboxgroup_setproperties_method.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/checkbox_group/checkboxgroup_setproperties_method.md)

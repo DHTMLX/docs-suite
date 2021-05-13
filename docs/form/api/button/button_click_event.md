@@ -10,17 +10,11 @@ title: click
 @params:
 - events    Event   a native event object
 
-
-
-
 @example:
 form.getItem("button").events.on("Click", function(events) {
     console.log("Click", events);
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

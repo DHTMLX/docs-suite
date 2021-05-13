@@ -16,7 +16,6 @@ form.getItem("button").setProperties({
     view: "link"
 });
  
-
 @descr:
 
 The method invokes the [](form/api/button/button_afterchangeproperties_event.md) and [](form/api/button/button_beforechangeproperties_event.md) events.
@@ -83,6 +82,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

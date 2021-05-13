@@ -7,19 +7,15 @@ title: getValue
 
 @signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
-
 @params:
 - asFormData	boolean		optional, defines whether values of Form controls should be returned as Form Data
 
 @returns:
 - state 		object		an object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states
 
-
 @example:
 var state = form.getValue();
 // -> {"name":"John Doe"}
-
-
 
 @descr:
 1\. In case both the name and id of the control are specified in the config of Control, the returned object will contain the name of Control:
@@ -45,8 +41,6 @@ var state = form.getValue();
 
 **Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
-@relatedapi:
-form/api/form_setvalue_method.md
+[comment]: # (@relatedapi: form/api/form_setvalue_method.md)
 
-@related: form/work_with_form.md#getting-values-of-controls
-
+[comment]: # (@related: form/work_with_form.md#getting-values-of-controls)

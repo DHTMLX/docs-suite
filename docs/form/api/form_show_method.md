@@ -7,27 +7,13 @@ title: show
 
 @signature: {'show(): void;'}
 
-
-
-
 @example:
 form.show();
 
-
-
-
-
 @descr:
-
-
 
 @changelog: added in v6.5
 
-@related:form/work_with_form.md#hidingshowing-a-form
+[comment]: # (@related:form/work_with_form.md#hidingshowing-a-form)
 
-@relatedapi: 
-form/api/form_hide_method.md
-form/api/form_isvisible_method.md
-
-
-
+[comment]: # (@relatedapi: form/api/form_hide_method.md form/api/form_isvisible_method.md)

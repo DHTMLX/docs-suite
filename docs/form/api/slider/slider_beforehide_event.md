@@ -20,7 +20,6 @@ form.getItem("slider").events.on("BeforeHide", function(value, init) {
     return true;
 });
 
-
 @descr:
 
 @changelog: added in v7.0

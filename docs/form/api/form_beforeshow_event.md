@@ -14,21 +14,17 @@ title: beforeShow
 @returns:
 - param     boolean     false - to prevent a control from being shown, otherwise true
 
-
 @example:
 form.events.on("beforeShow", function(name, value) {
     console.log("beforeShow", name, value); 
     return false;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/form_aftershow_event.md
-
 @changelog:
- 
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+
+[comment]: # (@relatedapi: form/api/form_aftershow_event.md)

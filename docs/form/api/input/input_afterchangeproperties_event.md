@@ -15,10 +15,8 @@ form.getItem("input").events.on("AfterChangeProperties", function(properties) {
     console.log("AfterChangeProperties", properties);
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/input/input_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/input/input_setproperties_method.md)

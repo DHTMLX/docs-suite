@@ -8,7 +8,6 @@ description: description
 
 @signature: {'getProperties(): IInputProps;'}
 
-
 @returns:
 param   object      an object with the available attributes of the control and their values
 
@@ -51,7 +50,6 @@ form.getItem("input").getProperties();
 	validation: undefined,
 	width: "content"	
 }
-
 
 @descr:
 
