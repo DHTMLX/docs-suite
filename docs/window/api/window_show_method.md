@@ -21,6 +21,8 @@ dhxWindow.show("550", "230");
 
 @descr:
 
+**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
+
 @related:
 window/how_to_start.md
 window/usage.md#showinghiding-window
@@ -31,5 +33,3 @@ window/api/window_hide_method.md
 
 
 
-
-**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
