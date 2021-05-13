@@ -6,6 +6,9 @@ import Descr from './Descr';
 import Note from './Note';
 import ProNote from './ProNote';
 import CustomHeader from './CustomHead';
+import Params from './Params';
+import Returns from "./Returns";
+import Values from "./Values";
 
 export {
   Short,
@@ -15,5 +18,8 @@ export {
   Descr,
   Note,
   ProNote,
-  CustomHeader
+  CustomHeader,
+  Params,
+  Returns,
+  Values
 };
