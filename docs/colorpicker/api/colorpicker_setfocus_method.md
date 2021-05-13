@@ -13,14 +13,11 @@ title: setFocus
 @example:
 colorpicker.setFocus("#BDF0E9");
 
-
-
 @descr:
 
 **Related sample**: [Colorpicker. Set Focus](https://snippet.dhtmlx.com/fg13r3uh)
 
-@related: colorpicker/manipulating_colorpicker.md#setting-focus-on-a-color
-
 @changelog:
 added in v6.4
 
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#setting-focus-on-a-color)

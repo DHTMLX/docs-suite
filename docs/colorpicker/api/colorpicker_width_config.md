@@ -14,10 +14,6 @@ var colorpicker = new dhx.Colorpicker("colorpicker", {
 	width: "300px"				
 });
 
-
-
 @descr: 
 
-@related: colorpicker/how_to_start.md#initialize-colorpicker
-colorpicker/configuration.md#width-of-colorpicker
-
+[comment]: # (@related: colorpicker/how_to_start.md#initialize-colorpicker colorpicker/configuration.md#width-of-colorpicker)

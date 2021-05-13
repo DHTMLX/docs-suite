@@ -12,8 +12,6 @@ colorpicker.events.on("Apply", function() {
     // your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)

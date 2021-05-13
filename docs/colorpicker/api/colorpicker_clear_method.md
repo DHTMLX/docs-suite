@@ -7,18 +7,12 @@ title: clear
 
 @signature: {'clear(): void;'}
 
-
 @example:
 colorpicker.clear();
 
-
-
 @descr:
-
 
 **Related sample**: [Colorpicker. Clear](https://snippet.dhtmlx.com/yg6boc09)
 
-
 @changelog:
 add in v6.4
-

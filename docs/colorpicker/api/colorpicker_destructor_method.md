@@ -10,10 +10,6 @@ title: destructor
 @example:
 colorpicker.destructor();
 
-
-
 @descr:
 
 @changelog:
-
-
