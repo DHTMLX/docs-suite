@@ -36,9 +36,7 @@ Note, the event fires in 2 cases:
 1. While calling the [hide](window/api/window_hide_method.md) method
 2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
 
-
-
-@related: window/handling_events.md
-
 @changelog: 
 The **position** and **events** parameters have been added in v7.0.
+
+@related: window/handling_events.md

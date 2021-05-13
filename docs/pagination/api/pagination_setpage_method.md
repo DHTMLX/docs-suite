@@ -21,12 +21,6 @@ pagination.setPage(0);
 
 @descr:
 
-
-
-
-
 **Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
-
-
 
 @related: pagination/usage.md#settinggetting-the-active-page

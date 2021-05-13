@@ -18,6 +18,8 @@ var state = treegrid.getSortingState();
 
 @descr:
 
+**Related sample**: [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
+
 The return object includes the following attributes:
 
 <table class="webixdoc_links">
@@ -34,12 +36,7 @@ The return object includes the following attributes:
 </table>
 
 
-**Related sample**:
-- [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
-
-
-@related: treegrid/usage.md#getting-the-sorting-state
-
 @changelog:
 added in v6.4
 
+@related: treegrid/usage.md#getting-the-sorting-state

@@ -19,6 +19,9 @@ menu.show(["cancel_btn","del_btn"]);
 
 
 @descr:
+
+**Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
+
 Starting from v7.0, it is possible to show all items on the page at once by using the method without the parameter:
 
 ~~~js
@@ -26,7 +29,6 @@ Starting from v7.0, it is possible to show all items on the page at once by usin
 menu.show();
 ~~~
 
-**Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
 
 
 

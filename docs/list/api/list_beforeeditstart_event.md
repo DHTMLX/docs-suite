@@ -25,7 +25,6 @@ list.events.on("BeforeEditStart", function(value,id){
 
 
 
-**Related sample**:
-- [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 
 @changelog: added in v6.1

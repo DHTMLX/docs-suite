@@ -21,6 +21,7 @@ grid.addSpan({
 
 
 @descr:
+
 The **span** object contains the following properties:
 
 <table class="webixdoc_links">

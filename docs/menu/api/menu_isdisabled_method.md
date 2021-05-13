@@ -24,7 +24,7 @@ menu.isDisabled("id"); // -> returns true/false
 
 **Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
+@changelog: added in v6.4
 
 @related: menu/work_with_menu.md#checkingifamenuoptionisdisabled
 
-@changelog: added in v6.4

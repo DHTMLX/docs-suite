@@ -19,6 +19,8 @@ treegrid.events.on("CancelRowDrop", function(data, events) {
 
 @descr:
 
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+
 The data object contains the following parameters:
 
 <table class="webixdoc_links">
@@ -38,8 +40,7 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
-**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+@changelog: added in v7.0
 
 @relatedapi:
 treegrid/api/treegrid_dragmode_config.md
@@ -53,5 +54,3 @@ treegrid/api/treegrid_dragrowout_event.md
 treegrid/api/treegrid_dragrowstart_event.md
 
 @related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows
-
-@changelog: added in v7.0

@@ -19,6 +19,8 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
+**Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
+
 The property can be specified to one of the available adjustment modes:
 
 <table class="webixdoc_links">
@@ -50,7 +52,6 @@ The property can be specified to one of the available adjustment modes:
 - the **adjust** option enabled (including the "header", "footer", "data" modes) adjusts the width of columns with account of [template](grid/api/grid_columns_config.md) added to cells. You need to set the **content** attribute of the [header/footer](grid/api/grid_columns_config.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
 
 
-**Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
 
 @changelog: added in v6.4
 

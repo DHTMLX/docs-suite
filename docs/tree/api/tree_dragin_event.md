@@ -37,6 +37,7 @@ The data object can contain the following parameters:
     </tbody>
 </table>
 
+@changelog: added in v7.0
 
 @relatedapi:
 tree/api/tree_afterdrag_event.md
@@ -48,5 +49,3 @@ tree/api/tree_candrop_event.md
 tree/api/tree_dragout_event.md
 tree/api/tree_dragstart_event.md
 
-
-@changelog: added in v7.0

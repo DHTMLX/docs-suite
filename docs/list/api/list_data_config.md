@@ -36,5 +36,4 @@ var list = new dhx.List("list", {
 
 @descr: 
 
-**Related sample**:
-- [List. Init With External Data](https://snippet.dhtmlx.com/20i6vbtj)
+**Related sample**: [List. Init With External Data](https://snippet.dhtmlx.com/20i6vbtj)

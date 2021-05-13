@@ -22,7 +22,6 @@ grid.events.on("AfterEditStart", function(row,col, editorType){
 
 @descr:
 
-**Related sample**:
-- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.1

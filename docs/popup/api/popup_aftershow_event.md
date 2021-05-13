@@ -19,9 +19,10 @@ popup.events.on("AfterShow", function(element){
 
 @descr:
 
+**Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
+
 @relatedapi:
 popup/api/popup_beforeshow_event.md
 
-**Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
 @related: popup/event_handling.md

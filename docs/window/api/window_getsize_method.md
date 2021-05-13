@@ -18,7 +18,6 @@ var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 
 @descr:
 
-
 **Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
 
 @relatedapi:

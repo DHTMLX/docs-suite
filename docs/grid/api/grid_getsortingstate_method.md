@@ -18,8 +18,7 @@ var state = grid.getSortingState();
 
 @descr:
 
-**Related sample**:
-- [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
+**Related sample**: [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
 
 The return object includes the following attributes:
 

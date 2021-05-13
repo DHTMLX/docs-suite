@@ -18,7 +18,8 @@ dhxWindow.show();
 
 
 
-@descr: 
+@descr:
+ 
 A modal window blocks the main browser window when called.
 
 @related: window/how_to_start.md

@@ -20,8 +20,7 @@ var slider = new dhx.Slider("slider_container", {
 
 **Related sample**: [Slider. Slider Label](https://snippet.dhtmlx.com/4o7yttam)
 
-@related: 
+@changelog: added in v6.4
+ 
 @related: slider/initializing_slider.md#configuration-properties
 slider/configuring_slider.md#slider-label
-
-@changelog: added in v6.4

@@ -15,10 +15,9 @@ treegrid.expandAll();
 
 **Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
-@related: treegrid/usage.md#expandingcollapsing-nodes
+@changelog: added in v6.3
 
+@related: treegrid/usage.md#expandingcollapsing-nodes
 
 @relatedapi:
 treegrid/api/treegrid_collapseall_method.md
-
-@changelog: added in v6.3

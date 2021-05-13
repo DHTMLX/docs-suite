@@ -17,7 +17,6 @@ var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 
 @descr:
 
-
 **Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
 
 @relatedapi:

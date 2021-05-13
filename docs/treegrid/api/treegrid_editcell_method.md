@@ -19,11 +19,10 @@ grid.editCell(grid.data.getId(0),"project");
 @descr:
 
 
-**Related sample**:
-- [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
-
-@related: treegrid/usage.md#editing-data
+**Related sample**: [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
 
 @changelog:
 - added in v6.4
 - the "textarea" type of the editor is added in v7.1
+
+@related: treegrid/usage.md#editing-data

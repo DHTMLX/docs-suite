@@ -21,8 +21,6 @@ treegrid.collapse("native");
 
 @related: treegrid/usage.md#expandingcollapsing-nodes
 
-
-
 @relatedapi: treegrid/api/treegrid_expand_method.md
 
 

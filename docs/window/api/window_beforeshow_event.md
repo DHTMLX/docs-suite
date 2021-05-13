@@ -33,8 +33,7 @@ The **position** parameter contains two attributes:
 - **left** - (*number*)	the left coordinate of the window's position (in pixels)
 - **top** - (*number*)	the top coordinate of the window's position (in pixels)
 
+@changelog:
+The **position** parameter has been added in v7.0.
 
 @related: window/handling_events.md
-
-@changelog: 
-The **position** parameter has been added in v7.0.

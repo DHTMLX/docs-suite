@@ -18,6 +18,9 @@ menu.disable(["cancel_btn","del_btn"]);
 
 
 @descr:
+
+**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
+
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 
 ~~~js
@@ -25,7 +28,6 @@ Starting from v7.0, it is possible to disable all items at once by using the met
 menu.disable();
 ~~~
 
-**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
 
 

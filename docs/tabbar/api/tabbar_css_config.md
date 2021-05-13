@@ -26,6 +26,8 @@ var tabbar = new dhx.Tabbar({
 
 @descr: 
 
+**Related sample**: [Tabbar. Custom Css](https://snippet.dhtmlx.com/47en9f0a)
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Tabbar.
 
 ~~~js
@@ -59,5 +61,3 @@ var tabbar = new dhx.Tabbar({
 - <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
-
-**Related sample**: [Tabbar. Custom Css](https://snippet.dhtmlx.com/47en9f0a)

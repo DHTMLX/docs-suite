@@ -11,31 +11,33 @@ title: eventHandlers
 
 // adds event handler to the HTML element of the template of a cell
 const treeGrid = new dhx.TreeGrid("treegrid", {
-	columns: [
-		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
-		{
-			width: 160, id: "price", type: "string", 
-            header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
-			htmlEnable: true,
-			template: function (text, row, col) { /*!*/
-				return text ? "<div class='cell__template'>$ " + text + "</div>" : ""; /*!*/
-			} /*!*/
-		},
+		columns: [
+			{ width: 280, id: "name", header: [{ text: "Book Name" }] },
+			{
+					width: 160, id: "price", type: "string", 
+          header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
+					htmlEnable: true,
+					template: function (text, row, col) { /*!*/
+							return text ? "<div class='cell__template'>$ " + text + "</div>" : ""; /*!*/
+					} /*!*/
+			},
 		// more options
 	],
-	data: data,
-	eventHandlers: { /*!*/
-		onmouseover: { /*!*/
-			cell__template: function(event, data) { /*!*/
-				display(JSON.stringify(data.row, null, 2)); /*!*/
-			} /*!*/
+		data: data,
+		eventHandlers: { /*!*/
+				onmouseover: { /*!*/
+						cell__template: function(event, data) { /*!*/
+								display(JSON.stringify(data.row, null, 2)); /*!*/
+						} /*!*/
+				} /*!*/
 		} /*!*/
-	} /*!*/
 });
 
 
 
 @descr:
+
+**Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
@@ -94,12 +96,8 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-
-**Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
-
+@changelog: added in v7.0
 
 @related: treegrid/initialization.md#initialize-treegrid
 treegrid/configuration.md#event-handlers-for-html-content
 treegrid/customization.md#adding-template-to-cells
-
-@changelog: added in v7.0

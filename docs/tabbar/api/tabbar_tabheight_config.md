@@ -17,10 +17,10 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 @descr: 
 
-@related: tabbar/configuring_tabbar.md#size-of-tabs
-tabbar/init.md#define-tabbar-structure
-
 **Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 The "string" type is added in v7.0.
+
+@related: tabbar/configuring_tabbar.md#size-of-tabs
+tabbar/init.md#define-tabbar-structure

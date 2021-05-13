@@ -16,6 +16,8 @@ tree.events.on("DragOut", function(data, events) {
 
 @descr:
 
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+
 The data object can contain the following parameters:
 
 <table class="webixdoc_links">
@@ -35,8 +37,8 @@ The data object can contain the following parameters:
     </tbody>
 </table>
 
-**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
+@changelog: added in v7.0
 
 @relatedapi:
 tree/api/tree_afterdrag_event.md
@@ -47,5 +49,3 @@ tree/api/tree_canceldrop_event.md
 tree/api/tree_candrop_event.md
 tree/api/tree_dragin_event.md
 tree/api/tree_dragstart_event.md
-
-@changelog: added in v7.0

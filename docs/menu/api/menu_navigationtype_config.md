@@ -17,6 +17,8 @@ menu.paint();
 
 @descr: 
 
+**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
+
 There are two types of navigation:
 
 - "pointer" - the menu is opened when a user hovers the mouse pointer over it
@@ -25,4 +27,3 @@ There are two types of navigation:
 @related:
 menu/how_to_start.md#initialize-menu
 
-**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)

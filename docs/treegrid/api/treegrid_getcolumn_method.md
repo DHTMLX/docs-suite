@@ -133,6 +133,7 @@ The returned object contains the following set of properties:
 
 
 @relatedapi: treegrid/api/treegrid_setcolumns_method.md
+
 @related: treegrid/usage.md#working-with-columns-and-cells
 
 

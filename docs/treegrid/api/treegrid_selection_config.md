@@ -17,8 +17,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
-**Related sample**:
-- [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
+**Related sample**: [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
 
 @related: treegrid/configuration.md#selection
 treegrid/initialization.md#initialize-treegrid

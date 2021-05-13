@@ -20,8 +20,7 @@ grid.events.on("AfterKeyDown", function (e) {
 
 @descr:
 
-**Related sample**:
-- [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.4
 

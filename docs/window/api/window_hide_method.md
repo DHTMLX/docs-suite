@@ -20,7 +20,4 @@ dhxWindow.hide();
 @relatedapi:
 window/api/window_show_method.md
 
-
-
-
 @related:window/usage.md#showinghiding-window

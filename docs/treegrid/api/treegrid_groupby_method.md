@@ -42,11 +42,13 @@ The method takes one parameter, which can be:
 
 You can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 
+@changelog:
+added in v6.5
 
 @related: treegrid/usage.md#grouping-data
+
 @relatedapi: treegrid/api/treegrid_grouptitletemplate_config.md
 treegrid/api/treegrid_ungroup_method.md
 
-@changelog:
-added in v6.5
+
 

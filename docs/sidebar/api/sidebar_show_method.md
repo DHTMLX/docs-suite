@@ -19,6 +19,8 @@ sidebar.show(["search","currentButton","edit"]);
 
 @descr:
 
+**Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
+
 Starting from v7.0, it is possible to show all items on the page at once by using the method without the parameter:
 
 ~~~js
@@ -28,7 +30,6 @@ sidebar.show();
 
 @related: sidebar/work_with_sidebar.md#hiding-and-showing-controls
 
-**Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
 
 
 

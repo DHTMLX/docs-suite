@@ -17,6 +17,8 @@ popup.show();
 
 
 @descr:
+
+**Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)
  
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Popup.
 
@@ -51,5 +53,3 @@ var popup = new dhx.Popup({
 - <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
-
-**Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)

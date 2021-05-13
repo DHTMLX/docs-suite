@@ -19,7 +19,6 @@ popup.events.on("Click",function(e){
 
 @descr:
 
-**Related sample**:
-- [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
+**Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
 @related: popup/event_handling.md
