@@ -4,8 +4,8 @@ title: filterChange
 ---          
 
 @short: fires on typing text in an input of a column's header
-TODO: api change (добавить filterId в description "inputFilter" | "selectFilter" | "comboFilter")
-@signature: {'filterChange: (value: string, colId: string, filterId: fixedRowContent) => void;'}
+
+@signature: {'filterChange: (value: string, colId: string, filterId: "inputFilter" | "selectFilter" | "comboFilter") => void;'}
 
 @params:
 - value		string,number		an entered value
@@ -16,7 +16,6 @@ TODO: api change (добавить filterId в description "inputFilter" | "sele
 grid.events.on("FilterChange", function(value,colId,filter){
     console.log("You've entered "+value+" into the "+colId+" column");
 });
-
 
 @descr:
 

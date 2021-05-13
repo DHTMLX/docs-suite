@@ -7,25 +7,9 @@ title: setConfig
 
 @signature: {'setConfig(config: IChartConfig): void;'}
 
-```todoapi
-void setConfig(object config);
-setConfig(config: IChartConfig): void;
-    export interface IChartConfig {
-    type?: ChartType;
-    css?: string;
-    barWidth?: number;
-    scales?: IScalesConfig;
-    legend?: ILegendConfig;
-    series?: SeriaConfig[];
-    maxPoints?: number;
-    data?: DataCollection<any> | any[];
-}
-```
-
 @params:
 - config	object	 an object with chart configuration
-
-
+s
 @example:
 var config = {
     type: "radar",

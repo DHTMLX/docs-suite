@@ -4,7 +4,7 @@ title: forEach
 ---          
 
 @short: iterates over all specified layout cells
-TODO: api change (параметры сейчас - это параметры приходящие в callback)
+[comment]: # (TODO: api change (параметры сейчас - это параметры приходящие в callback, можно после релиза)
 @signature: {'forEach(callback: LayoutCallback): void;'}
 
 @params:

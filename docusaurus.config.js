@@ -6,7 +6,10 @@ const AT_NOTATION_KEYS = {
     type: 'Type',
     descr: 'Descr',
     changelog: 'Changelog',
-    signature: 'Signature'
+    signature: 'Signature',
+    params: 'Params',
+    returns: 'Returns',
+    values: 'Values'
 };
 
 const COMPONENTS_PATH = '@site/src/components';
@@ -310,7 +313,7 @@ module.exports = {
             require.resolve('docusaurus-gtm-plugin'),
             {
               id: 'GTM-5M5RCSJ',
-            }     
+            }
         ]
     ]
 };

@@ -4,8 +4,8 @@ title: mode
 ---          
 
 @short: specifies the mode of displaying a colorpicker
-TODO: api change (добавить в desc "palette" | "picker")
-@signature: {'mode?: ViewsMode;'}
+
+@signature: {'mode?: "palette" | "picker";'}
 
 @example: 
 var colorpicker = new dhx.Colorpicker("colorpicker", {

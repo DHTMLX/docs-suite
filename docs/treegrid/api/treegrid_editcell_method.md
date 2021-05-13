@@ -4,8 +4,8 @@ title: editCell
 ---          
 
 @short: enables editing of a TreeGrid cell
-TODO: api change (добавить EditorType в description "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea")
-@signature: {'editCell(rowId: string | number, colId: string | number, editorType?: EditorType): void;'}
+
+@signature: {'editCell(rowId: string | number, colId: string | number, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea"): void;'}
 
 @params:
 - rowId 		string | number				the id of a row
@@ -15,9 +15,7 @@ TODO: api change (добавить EditorType в description "input" | "select" 
 @example:
 grid.editCell(grid.data.getId(0),"project");
 
-
 @descr:
-
 
 **Related sample**: [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
 

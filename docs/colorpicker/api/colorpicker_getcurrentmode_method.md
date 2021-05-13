@@ -4,8 +4,8 @@ title: getCurrentMode
 ---          
 
 @short: returns the current mode of displaying ColorPicker
-TODO: api change (добавить в desc "palette" | "picker")
-@signature: {'getCurrentMode(): ViewsMode;'}
+
+@signature: {'getCurrentMode(): "palette" | "picker";'}
 
 @example:
 var mode = colorpicker.getCurrentMode(); // -> "palette"
