@@ -45,22 +45,22 @@ var rect = treegrid.getCellRect("1","c");
 
 The return object includes the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>x</b></td>
+			<td><b>x</b></td>
 			<td>(<i>number</i>) the X coordinate of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>y</b></td>
+			<td><b>y</b></td>
 			<td>(<i>number</i>) the Y coordinate of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>height</b></td>
+			<td><b>height</b></td>
 			<td>(<i>number</i>) the height of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>number</i>) the width of a cell</td>
 		</tr>
     </tbody>
@@ -164,30 +164,30 @@ treegrid.addSpan({
 
 These are possible fields of a span object:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string|number</i>) mandatory, the id of a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+			<td><b>column</b></td>
 			<td>(<i>string|number</i>) mandatory, the id of a column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>rowspan</b></td>
+			<td><b>rowspan</b></td>
 			<td>(<i>number</i>) optional, the number of rows in a span</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>colspan</b></td>
+			<td><b>colspan</b></td>
 			<td>(<i>number</i>) optional, the number of columns in a span</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
 		</tr>
     </tbody>

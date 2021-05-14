@@ -22,22 +22,22 @@ tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 The **view** object may include the following properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>tab</b></td>
+			<td><b>tab</b></td>
 			<td>the name of a tab</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>tabCss</b></td>
+			<td><b>tabCss</b></td>
 			<td>the name of the CSS class used for a tab</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>the name of the CSS class used for a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>header</b></td>
+			<td><b>header</b></td>
 			<td>the header of a cell</td>
 		</tr>
     </tbody>

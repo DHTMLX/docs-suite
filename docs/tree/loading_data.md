@@ -78,30 +78,30 @@ var dataset = [
 
 Each object in the data set contains configuration of a tree item. The structure of an item is rather flexible. It may include:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>string</i>) the name of an item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of an item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>opened</b></td>
+			<td><b>opened</b></td>
 			<td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>checkbox</b></td>
+			<td><b>checkbox</b></td>
 			<td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>items</b></td>
+			<td><b>items</b></td>
 			<td>(<i>array</i>) an array of nested items</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
+			<td><b>icon</b></td>
 			<td>(<i>object</i>) allows adding <a href="../tree/api/tree_icon_config">custom icons</a> for a tree item</td>
 		</tr>
     </tbody>

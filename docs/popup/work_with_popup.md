@@ -72,14 +72,14 @@ Attaching DHTMLX components
 
 dhtmlxPopup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>name</b></td>
+			<td><b>name</b></td>
 			<td>(<i>string</i>) the name of a component</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) optional, the configuration settings of a component</td>
 		</tr>
     </tbody>

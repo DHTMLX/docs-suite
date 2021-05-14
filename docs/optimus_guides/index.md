@@ -835,10 +835,10 @@ export class TopLayout extends View {
 
 The DHTMLX Optimus provides the following API methods that are available from any point of the app:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
          <tr>
-			<td class="webixdoc_links0"><b>show()</b></td>
+			<td><b>show()</b></td>
 			<td>shows the specified view in a cell of the app. It takes three parameters:
             <ul>
             <li><b>cell</b> - (<i>object|null</i>) a reference to the cell to render the view inside, or the unique selector of the container element </li>
@@ -848,7 +848,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>use()</b></td>
+			<td><b>use()</b></td>
 			<td>initializes Component. It takes 2 parameters:
             <ul>
             <li><b>component</b> - constructor of the component</li>
@@ -857,7 +857,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>on()</b></td>
+			<td><b>on()</b></td>
 			<td>registers an event handler in the global event bus. It takes 2 parameters:
             <ul>
             <li><b>name</b> - (<i>string</i>) the name of the event</li>
@@ -866,7 +866,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>fire()</b></td>
+			<td><b>fire()</b></td>
 			<td>calls an event handler of the global event bus. It takes 2 parameters:
             <ul>
             <li><b>name</b> - (<i>string</i>) the name of the event</li>
@@ -875,7 +875,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>detach()</b></td>
+			<td><b>detach()</b></td>
 			<td>unsubscribes an event handler from the global event bus. It takes one parameter:
             <ul>
             <li><b>name</b> - (<i>string</i>) the event name</li>
@@ -889,10 +889,10 @@ The DHTMLX Optimus provides the following API methods that are available from an
 
 The *App's* constructor provides the following method:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
          <tr>
-			<td class="webixdoc_links0"><b>init()</b></td>
+			<td><b>init()</b></td>
 			<td>mandatory, allows initializing available views and logic of the components. <br>For more details, see the <a href="../optimus_guides/index#app-class">App class</a>.
             </td>
 		</tr>
@@ -901,15 +901,15 @@ The *App's* constructor provides the following method:
 <br/>
 The <i>Component's</i> constructor provides the following methods:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
          <tr>
-			<td class="webixdoc_links0"><b>init()</b></td>
+			<td><b>init()</b></td>
 			<td>mandatory, allows initializing the logic of the Component. This logic will be called on  initialization of the Component. For more details, see the <a href="../optimus_guides/index#component-class">Component class</a>.
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>destroy()</b></td>
+			<td><b>destroy()</b></td>
 			<td>the method is called on destroying the Component
             </td>
 		</tr>
@@ -918,15 +918,15 @@ The <i>Component's</i> constructor provides the following methods:
 <br/>
 The <i>View's</i> constructor provides the following methods:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
 		<tr>
-			<td class="webixdoc_links0"><b>init(): string|DHXWidget</b></td>
+			<td><b>init(): string|DHXWidget</b></td>
 			<td>obligatory, allows initializing and returning the view. For more details, see the <a href="../optimus_guides/index#view-class">View class</a>.
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ready()</b></td>
+			<td><b>ready()</b></td>
 			<td>allows implementing an additional logic after rendering View to DOM. It takes one parameter:
             <ul>
             <li><b>root</b> - (<i>HTMLElement</i>) returns an HTML element of the parent container of the view </li>
@@ -934,7 +934,7 @@ The <i>View's</i> constructor provides the following methods:
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>destroy()</b></td>
+			<td><b>destroy()</b></td>
 			<td>allows implementing an additional logic on destroying the component, and unmounts the View from DOM. In most cases, you don't need to use this method, as the views based on the DHTMLX widgets are destroyed automatically.
             </td>
 		</tr>
@@ -943,10 +943,10 @@ The <i>View's</i> constructor provides the following methods:
 <br/>
 The <i>App's</i> constructor also provides the method that can be called outside the application:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
          <tr>
-			<td class="webixdoc_links0"><b>render()</b></td>
+			<td><b>render()</b></td>
 			<td>renders an application inside the specified container. It takes one parameter:
 			<ul>
 			<li><b>container</b> - (<i>string|cell|HTMLElement</i>) the container where the app will be rendered</li>

@@ -7,38 +7,38 @@ title: Message properties
 
 The constructor of a message box may take the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string</i>) required, the text of a message box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
+			<td><b>icon</b></td>
 			<td>(<i>string</i>) optional, an an <a href="../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the style of a message box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>html</b></td>
+			<td><b>html</b></td>
 			<td>(<i>string</i>) optional, the HTML content to be displayed in a message box <br/> 
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1stqqejp" target="_blank">Message. Message With Html Content</a>
 			</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>node</b></td>
+			<td><b>node</b></td>
 			<td>(<i>HTMLELement|string</i>) optional, the container for a message box or its id</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>position</b></td>
+			<td><b>position</b></td>
 			<td>(<i>string</i>) optional, the position of a message box:"top-left"|"top-right"|"bottom-left"|"bottom-right" <br/> 
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message Container</a>
 			</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>expire</b></td>
+			<td><b>expire</b></td>
 			<td>(<i>number</i>) optional, the time period of displaying a message box before it disappears, in ms</td>
 		</tr>
     </tbody>
@@ -57,30 +57,30 @@ dhx.message({
 
 The constructor of an alert box may take the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string</i>) required, the text of an alert box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>header</b></td>
+			<td><b>header</b></td>
 			<td>(<i>string</i>) optional, the text of an alert box header</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the style of an alert box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>buttons</b></td>
+			<td><b>buttons</b></td>
 			<td>(<i>array</i>) optional, an array with the name of the alert button. By default, the button's name is "Apply"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>buttonsAlignment</b></td>
+			<td><b>buttonsAlignment</b></td>
 			<td>(<i>string</i>) optional, the position of buttons:"left"|"center"|"right"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>blockerCss</b></td>
+			<td><b>blockerCss</b></td>
 			<td>(<i>string</i>) optional, the style of blocking the window when an alert box appears</td>
 		</tr>
     </tbody>
@@ -98,30 +98,30 @@ dhx.alert({
 
 The constructor of a confirm box may take the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string</i>) required, the text of a confirm box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>header</b></td>
+			<td><b>header</b></td>
 			<td>(<i>string</i>) optional, the text of a confirm box header</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the style of a confirm box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>buttons</b></td>
+			<td><b>buttons</b></td>
 			<td>(<i>array</i>) optional, an array with the names of the confirm buttons. By default, the buttons' names are "Reject" and "Apply"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>buttonsAlignment</b></td>
+			<td><b>buttonsAlignment</b></td>
 			<td>(<i>string</i>) optional, the position of the button: "left", "center", or "right" (by default)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>blockerCss</b></td>
+			<td><b>blockerCss</b></td>
 			<td>(<i>string</i>) optional, the style of blocking the window when a confirm box appears</td>
 		</tr>
     </tbody>
@@ -140,30 +140,30 @@ dhx.confirm({
 
 The constructor of a tooltip may take the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>node</b></td>
+			<td><b>node</b></td>
 			<td>(<i>HTMLELement|string</i>) required, the target of tooltip or its id</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>position</b></td>
+			<td><b>position</b></td>
 			<td>(<i>string</i>) optional, the position of a tooltip:"right", "bottom", "center"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the style of a tooltip box</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>force</b></td>
+			<td><b>force</b></td>
 			<td>(<i>boolean</i>) optional, forces opening of a tooltip</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>showDelay</b></td>
+			<td><b>showDelay</b></td>
 			<td>(<i>number</i>) optional, the time period that should pass before showing a tooltip, in ms</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>hideDelay</b></td>
+			<td><b>hideDelay</b></td>
 			<td>(<i>number</i>) optional, the time period that should pass before hiding a tooltip, in ms</td>
 		</tr>
     </tbody>

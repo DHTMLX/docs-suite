@@ -44,18 +44,18 @@ Besides initial controls, you can add other controls into the header/footer on t
 For this, you should apply the [](../data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
 
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add a control at</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
 		</tr>
     </tbody>

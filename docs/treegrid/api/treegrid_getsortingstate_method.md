@@ -22,14 +22,14 @@ var state = treegrid.getSortingState();
 
 The return object includes the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>dir</b></td>
+			<td><b>dir</b></td>
 			<td>(<i>string</i>) the sorting direction (desc, asc)</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>)the id of a column that the treegrid is sorted by</td>
 		</tr>
     </tbody>

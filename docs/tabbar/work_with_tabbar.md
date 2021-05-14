@@ -13,10 +13,10 @@ You can quickly add/remove tabs of Tabbar on the fly with the help of the corres
 
 The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>view</b></td>
+			<td><b>view</b></td>
 			<td>(<i>object</i>) an object of a tab. It may include the following properties:
 				<ul>
 					<li>tab - the name of a tab</li>
@@ -27,7 +27,7 @@ The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) the position to add a tab into</td>
 		</tr>
     </tbody>

@@ -102,10 +102,10 @@ Checking if a Ribbon item is disabled
 
 To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ribbon_isdisabled_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of an item</td>
 		</tr>
     </tbody>
@@ -125,14 +125,14 @@ Selecting/Unselecting an item
 
 To select a particular Ribbon item, make use of the [select()](ribbon/api/ribbon_select_method.md) method of Ribbon. The method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of an item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>unselect</b></td>
+			<td><b>unselect</b></td>
 			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
 		</tr>
     </tbody>
@@ -168,10 +168,10 @@ Checking if a ribbon item is selected
 
 To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ribbon_isselected_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a ribbon item</td>
 		</tr>
     </tbody>

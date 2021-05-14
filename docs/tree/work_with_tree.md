@@ -91,17 +91,17 @@ tree.editItem(id);
 
 The method can also take a second parameter to configure the editing process. It may include two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>mode</b></td>
+			<td><b>mode</b></td>
 			<td>(<i>string</i>) the type of an editor:
 				<ul><li>"text" for an input</li>
 				<li>"select" for a select</li></ul>
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>options</b></td>
+			<td><b>options</b></td>
 			<td>(<i>array</i>) optional, an array of additional options</td>
 		</tr>
     </tbody>
@@ -127,10 +127,10 @@ tree.setState(treeState);
 
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>selected</b></td>
+			<td><b>selected</b></td>
 			<td>(<i>number</i>) the status of a checkbox of an item: 
 				<ul>
 					<li>0 - unselected </li>
@@ -140,7 +140,7 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>open</b></td>
+			<td><b>open</b></td>
 			<td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
 		</tr>
     </tbody>
@@ -195,18 +195,18 @@ You can manipulate Tree items with the help of the [Tree collection API](tree_co
 
 It is possible to add more items into the initialized Tree on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add an item at</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) the ID of the future parent item</td>
 		</tr>
     </tbody>
@@ -223,14 +223,14 @@ tree.data.add({"value": "Life"}, -1, "Magazines");
 
 You can change config options of the item via the **update()** method of Tree Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>the id of the item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>an object with new configuration of the item</td>
 		</tr>
     </tbody>

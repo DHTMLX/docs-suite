@@ -7,14 +7,14 @@ title: Event Handling
 
 You can add any handler to the events of Toolbar. To do this, use the **toolbar.events.on()** method with the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>evName</b></td>
+			<td><b>evName</b></td>
 			<td>name of the event</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>evHandler</b></td>
+			<td><b>evHandler</b></td>
 			<td>user-defined event handler</td>
 		</tr>
     </tbody>

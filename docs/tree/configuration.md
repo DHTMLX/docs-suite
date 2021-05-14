@@ -45,22 +45,22 @@ var tree = new dhx.Tree("tree_container", {keyNavigation: true});
 
 After that you need to select any item and then apply Arrow keys:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>Up arrow key</b></td>
+			<td><b>Up arrow key</b></td>
 			<td>to move selection to the item above the currently selected one</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Down arrow key</b></td>
+			<td><b>Down arrow key</b></td>
 			<td>to move selection to the item below the currently selected one</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Right arrow key</b></td>
+			<td><b>Right arrow key</b></td>
 			<td>to open a selected folder</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Left arrow key</b></td>
+			<td><b>Left arrow key</b></td>
 			<td>to close a selected opened folder</td>
 		</tr>
     </tbody>
