@@ -14,29 +14,23 @@ var grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 
-
-
 @descr:
 
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
  
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
-
 @changelog: added in v6.5
 
-@related: 
-grid/initialization.md#initialize-grid
-grid/configuration.md#drag-n-drop-of-grid-columns
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-of-grid-columns)
 
-
-@relatedapi:
-[](grid/api/grid_aftercolumndrag_event.md)
-[](grid/api/grid_aftercolumndrop_event.md)
-[](grid/api/grid_beforecolumndrag_event.md)
-[](grid/api/grid_beforecolumndrop_event.md)
-[](grid/api/grid_cancolumndrop_event.md)
-[](grid/api/grid_cancelcolumndrop_event.md)
-[](grid/api/grid_dragcolumnin_event.md)
-[](grid/api/grid_dragcolumnout_event.md)
-[](grid/api/grid_dragcolumnstart_event.md)
+[comment]: # (@relatedapi:)
+[comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
+[comment]: # ([](grid/api/grid_aftercolumndrop_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrag_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancelcolumndrop_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnin_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnout_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnstart_event.md)

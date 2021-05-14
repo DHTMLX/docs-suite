@@ -16,14 +16,10 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-
 @descr:
  
 **Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
 
 @changelog: added in v6.4
 
-@related:grid/initialization.md#initialize-grid
-grid/configuration.md#editing-grid-and-separate-columns
-
+[comment]: # (@related:grid/initialization.md#initialize-grid grid/configuration.md#editing-grid-and-separate-columns)

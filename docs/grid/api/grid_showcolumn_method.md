@@ -13,15 +13,12 @@ title: showColumn
 @example:
 grid.showColumn(col);
 
-
-
 @descr:
 
 **Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)
 
 @changelog: added in v6.3
 
-@relatedapi: grid/api/grid_hidecolumn_method.md
+[comment]: # (@relatedapi: grid/api/grid_hidecolumn_method.md)
 
-@related: grid/usage.md#hidingshowing-a-column
-
+[comment]: # (@related: grid/usage.md#hidingshowing-a-column)

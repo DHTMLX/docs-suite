@@ -20,8 +20,6 @@ grid.events.on("BeforeKeyDown", function (e) {
     // return true
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
@@ -30,6 +28,6 @@ The event fires when a cell of Grid has a keyboard focus.
 
 @changelog: added in v6.4
 
-@related: grid/configuration.md#keyboard-navigation
+[comment]: # (@related: grid/configuration.md#keyboard-navigation)
 
-@relatedapi: grid/api/grid_afterkeydown_event.md
+[comment]: # (@relatedapi: grid/api/grid_afterkeydown_event.md)

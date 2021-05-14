@@ -19,7 +19,7 @@ description: description
         background:greenyellow;
     }
 </style>
- 
+
 grid.addCellCss("1", "b", "myCustomClass");
 
 @descr:

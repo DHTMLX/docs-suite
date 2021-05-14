@@ -3,13 +3,11 @@ sidebar_label: autoHeight
 title: autoHeight
 ---
 
-
 @short: makes long text to split into multiple lines based on the width of the column
 
 @signature: autoHeight?: boolean;
 
 @default: false
-
 
 @example:
 var grid = new dhx.Grid("grid_container", {
@@ -17,8 +15,6 @@ var grid = new dhx.Grid("grid_container", {
 	autoHeight: true,  /*!*/
 	data: dataset
 });
-
-
 
 @descr: 
 
@@ -35,10 +31,8 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content.
 - the **autoHeight** configuration option enabled adjusts the height of the cells with account of [template](grid/api/grid_columns_config.md) added to cells.
 
-
 @changelog: added in v7.1
 
-@relatedapi: grid/api/grid_data_config.md
+[comment]: # (@relatedapi: grid/api/grid_data_config.md)
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#autoheight-for-columns
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autoheight-for-columns)

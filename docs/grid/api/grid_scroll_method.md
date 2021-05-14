@@ -14,14 +14,8 @@ title: scroll
 @example:
 grid.scroll(75,230);
 
-
-
 @descr:
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
-@related: grid/usage.md#controlling-scroll-behavior
-
-
-
-
+[comment]: # (@related: grid/usage.md#controlling-scroll-behavior)

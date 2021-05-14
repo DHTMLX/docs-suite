@@ -20,11 +20,8 @@ grid.events.on("beforeSort", (col, dir) => {
 	// return false;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.1
 
-@relatedapi: grid/api/grid_aftersort_event.md
+[comment]: # (@relatedapi: grid/api/grid_aftersort_event.md)

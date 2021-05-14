@@ -12,13 +12,10 @@ title: afterUnSelect
 - row		object		the config of a row
 - col       object      the config of a column
 
-
 @example:
 grid.selection.events.on("AfterUnSelect", function(row, col){
     console.log("afterUnSelect", row, col); 
 });
-
-
 
 @descr:
 It is also possible to use the simplified version of the event:
@@ -29,10 +26,7 @@ grid.events.on("AfterUnSelect", function(row, col){
 });
 ~~~
 
-
-
-@relatedapi: 
-grid/api/selection/selection_enable_method.md
-
 @changelog:
 added in v7.0
+
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md)

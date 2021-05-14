@@ -11,7 +11,6 @@ title: beforeResizeStart
 - col		object		an object with a column configuration
 - e				Event		a native event object
 
-
 @returns:
 - result		boolean		false - to block resizing of a column, otherwise true
 
@@ -21,12 +20,9 @@ grid.events.on("BeforeResizeStart", function(col,e){
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog:
 added in v6.2
-

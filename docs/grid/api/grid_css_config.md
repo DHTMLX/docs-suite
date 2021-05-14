@@ -22,8 +22,6 @@ var grid = new dhx.Grid({
     css:"my_first_class my_second_class"
 });
 
-
-
 @descr:
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Grid.
@@ -60,4 +58,4 @@ var grid = new dhx.Grid({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: grid/initialization.md#initialize-grid
+[comment]: # (@related: grid/initialization.md#initialize-grid)

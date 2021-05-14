@@ -33,8 +33,6 @@ const grid = new dhx.Grid("grid", {
     } /*!*/
 });
 
-
-
 @descr:
 	
 **Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
@@ -59,7 +57,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
-
 
 An example of adding event handlers to the HTML elements defined in the data set of Grid is given below:
 
@@ -96,11 +93,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-
-
 @changelog: added in v7.0
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#event-handlers-for-html-content
-grid/customization.md#adding-template-to-cells
-
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#event-handlers-for-html-content grid/customization.md#adding-template-to-cells)
+ 

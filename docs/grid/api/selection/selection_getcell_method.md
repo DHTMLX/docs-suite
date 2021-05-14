@@ -10,21 +10,12 @@ title: getCell
 @returns:
 param   object  an object with parameters of a selected cell
 
-
-
 @example:
 var selectedCell = grid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
-
-
 @descr:
 
-@related: grid/usage_selection.md#getting-object-of-selected-cells
+[comment]: # (@related: grid/usage_selection.md#getting-object-of-selected-cells)
 
-
-@relatedapi: grid/api/selection/selection_enable_method.md
-grid/api/selection/selection_getcells_method.md
-
-
-
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_getcells_method.md)

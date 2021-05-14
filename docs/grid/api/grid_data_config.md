@@ -26,13 +26,10 @@ var dataset = [
     // more columns
 ];
 
-
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	data: dataset
 });
-
-
 
 @descr:
 
@@ -79,9 +76,6 @@ var dataset = [
 
 **Related sample**: [Grid. Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
 
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#data)
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#data
-
-@relatedapi: grid/api/grid_autoheight_config.md
-
+[comment]: # (@relatedapi: grid/api/grid_autoheight_config.md)

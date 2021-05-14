@@ -15,15 +15,11 @@ title: beforeSelect
 @returns:
 param   boolean | void     false - to prevent selecting of a cell, otherwise - true
 
-
-
 @example:
 grid.selection.events.on("BeforeSelect", function(row, col){
     console.log("beforeSelect", row, col); 
     return false;
 });
-
-
 
 @descr:
 It is also possible to use the simplified version of the event:
@@ -38,5 +34,4 @@ grid.events.on("BeforeSelect", function(row, col){
 @changelog:
 added in v7.0
 
-@relatedapi: 
-grid/api/selection/selection_enable_method.md
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md)

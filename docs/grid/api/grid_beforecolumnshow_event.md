@@ -10,7 +10,6 @@ title: beforeColumnShow
 @params: 
 - col   object  an object with a column configuration
 
-
 @returns:
 - result	boolean		false - to prevent a column from being shown, otherwise true
 
@@ -20,10 +19,7 @@ grid.events.on("BeforeColumnShow", function(column){
     return false;
 });
 
-
-
 @descr:
-
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

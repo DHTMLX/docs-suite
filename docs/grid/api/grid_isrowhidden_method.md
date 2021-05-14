@@ -10,15 +10,11 @@ title: isRowHidden
 @params:
 - rowId	    string | number   the id of a row   
 
-
 @returns:
 - param	boolean     'true' if the row is hidden, 'false' otherwise
 
-
 @example:
 grid.isRowHidden("1"); //-> true/false
-
-
 
 @descr:
 
@@ -27,7 +23,4 @@ grid.isRowHidden("1"); //-> true/false
 @changelog:
 added in v7.0
 
-@relatedapi: 
-grid/api/grid_hiderow_method.md
-grid/api/grid_showrow_method.md
-
+[comment]: # (@relatedapi: grid/api/grid_hiderow_method.md grid/api/grid_showrow_method.md)

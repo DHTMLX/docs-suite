@@ -13,19 +13,14 @@ title: isColumnHidden
 @returns:
 - param	boolean     'true' if the column is hidden, 'false' otherwise
 
-
 @example:
 grid.isColumnHidden("country"); // -> true|false
 
-
-
 @descr:
 
-
 **Related sample**: [Grid. Is Column Hidden](https://snippet.dhtmlx.com/rdqhwnjv)
-
 
 @changelog:
 added in v6.4
 
-@related: grid/usage.md#checking-visibility-of-a-column
+[comment]: # (@related: grid/usage.md#checking-visibility-of-a-column)

@@ -14,8 +14,6 @@ title: getSortingState
 var state = grid.getSortingState(); 
 // -> {dir: "desc", by: "country"}
 
-
-
 @descr:
 
 **Related sample**: [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
@@ -38,7 +36,4 @@ The return object includes the following attributes:
 @changelog:
 added in v6.4
 
-@related: grid/usage.md#getting-the-sorting-state
-
-
-
+[comment]: # (@related: grid/usage.md#getting-the-sorting-state)

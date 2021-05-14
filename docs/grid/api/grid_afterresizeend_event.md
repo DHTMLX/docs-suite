@@ -16,12 +16,9 @@ grid.events.on("AfterResizeEnd", function(col,e){
 	// your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog:
 added in v6.2
-

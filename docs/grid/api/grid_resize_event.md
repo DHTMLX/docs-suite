@@ -11,13 +11,10 @@ title: resize
 - col		object		an object with a column configuration
 - events	Event		a native event object
 
-
 @example:
 grid.events.on("Resize", function(col,e){
 	// your code here
 });
-
-
 
 @descr:
 

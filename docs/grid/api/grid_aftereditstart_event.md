@@ -12,13 +12,10 @@ title: afterEditStart
 - col		object		an object with a column configuration
 - editorType	string		the type of a cell editor:"input", "select", "datePicker", "checkbox", "combobox" -->
 
-
 @example:
 grid.events.on("AfterEditStart", function(row,col, editorType){
 	// your logic here
 });
-
-
 
 @descr:
 

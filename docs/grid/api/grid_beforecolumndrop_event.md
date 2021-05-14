@@ -14,14 +14,11 @@ title: beforeColumnDrop
 @returns:
 - result	boolean		false - to block the default action, otherwise true
 
-
 @example:
 grid.events.on("BeforeColumnDrop", function(data, events){
 	// your logic here
     return false;
 });
-
-
 
 @descr:
 
@@ -48,27 +45,21 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
 @changelog:
 
 - added in v6.5
 - Before v7.0, the event took two parameters - **sourceId** and **targetId**. 
 - In v7.0, the parameters were replaced with new ones: **data** and **e**.
 
-@relatedapi:
-[](grid/api/grid_dragitem_config.md)
-[](grid/api/grid_aftercolumndrag_event.md)
-[](grid/api/grid_aftercolumndrop_event.md)
-[](grid/api/grid_beforecolumndrag_event.md)
-[](grid/api/grid_cancolumndrop_event.md)
-[](grid/api/grid_cancelcolumndrop_event.md)
-[](grid/api/grid_dragcolumnin_event.md)
-[](grid/api/grid_dragcolumnout_event.md)
-[](grid/api/grid_dragcolumnstart_event.md)
+[comment]: # (@relatedapi:) 
+[comment]: # ([](grid/api/grid_dragitem_config.md)
+[comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
+[comment]: # ([](grid/api/grid_aftercolumndrop_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrag_event.md)
+[comment]: # ([](grid/api/grid_cancolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancelcolumndrop_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnin_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnout_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnstart_event.md)
 
-@related: grid/configuration.md#drag-n-drop-of-grid-columns
-	
-
-
-
-
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-columns)

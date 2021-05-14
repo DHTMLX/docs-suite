@@ -13,7 +13,6 @@ title: setCell
 - ctrlUp  boolean     <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (for multiselection mode)
 - shiftUp   boolean     <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (for multiselection mode)
 
-
 @example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
@@ -22,24 +21,16 @@ var grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 
-
 var row = grid.data.getItem(grid.data.getId(0));
 var column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 
-
-
 @descr:
-
 
 {{note For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#setting-selection-to-cells).}}
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-@related: grid/usage_selection.md
+[comment]: # (@related: grid/usage_selection.md)
 
-@relatedapi: 
-grid/api/selection/selection_enable_method.md
-grid/api/selection/selection_removecell_method.md
-
-
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_removecell_method.md)

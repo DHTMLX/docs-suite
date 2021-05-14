@@ -16,8 +16,6 @@ grid.events.on("CancelColumnDrop", function(data, events) {
   // your logic here
 });
 
-
-
 @descr:
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
@@ -43,16 +41,15 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-[](grid/api/grid_dragitem_config.md)
-[](grid/api/grid_aftercolumndrag_event.md)
-[](grid/api/grid_aftercolumndrop_event.md)
-[](grid/api/grid_beforecolumndrag_event.md)
-[](grid/api/grid_beforecolumndrop_event.md)
-[](grid/api/grid_cancolumndrop_event.md)
-[](grid/api/grid_dragcolumnin_event.md)
-[](grid/api/grid_dragcolumnout_event.md)
-[](grid/api/grid_dragcolumnstart_event.md)
+[comment]: # (@relatedapi:)
+[comment]: # ([](grid/api/grid_dragitem_config.md)
+[comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
+[comment]: # ([](grid/api/grid_aftercolumndrop_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrag_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancolumndrop_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnin_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnout_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnstart_event.md)
 
-@related: grid/configuration.md#drag-n-drop-of-grid-columns
-
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-columns)

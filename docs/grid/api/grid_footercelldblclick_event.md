@@ -11,15 +11,9 @@ title: footerCellDblClick
 - col		object		an object with a column configuration
 - e				Event		a native event object
 
-
 @example:
 grid.events.on("FooterCellDblClick", function(column,e){
     // your logic here
 });
 
-
-
 @descr:
-
-
-

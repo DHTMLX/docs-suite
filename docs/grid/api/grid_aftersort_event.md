@@ -11,18 +11,13 @@ title: afterSort
 - col	object	an object with the configuration of a column
 - dir   string  the sorting direction (desc, asc)
 
-
-
 @example:
 grid.events.on("afterSort", (col, dir) => {
 	console.log(col, dir);
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.1
 
-@relatedapi: grid/api/grid_beforesort_event.md
+[comment]: # (@relatedapi: grid/api/grid_beforesort_event.md)

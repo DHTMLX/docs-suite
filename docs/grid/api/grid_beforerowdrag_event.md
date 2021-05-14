@@ -11,18 +11,14 @@ title: beforeRowDrag
 - data		object		data object
 - e		    Event		a native event object -->
 
-
 @returns:
 - result	boolean		false - to prevent dragging a row, otherwise true
-
 
 @example:
 grid.events.on("BeforeRowDrag", function(data, events){
 	// your logic here
     return false;
 });
-
-
 
 @descr:
 
@@ -49,16 +45,6 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-grid/api/grid_afterrowdrag_event.md
-grid/api/grid_afterrowdrop_event.md
-grid/api/grid_beforerowdrop_event.md
-grid/api/grid_canrowdrop_event.md
-grid/api/grid_cancelrowdrop_event.md
-grid/api/grid_dragrowin_event.md
-grid/api/grid_dragrowout_event.md
-grid/api/grid_dragrowstart_event.md
+[comment]: # (@relatedapi: grid/api/grid_afterrowdrag_event.md grid/api/grid_afterrowdrop_event.md grid/api/grid_beforerowdrop_event.md grid/api/grid_canrowdrop_event.md grid/api/grid_cancelrowdrop_event.md grid/api/grid_dragrowin_event.md grid/api/grid_dragrowout_event.md grid/api/grid_dragrowstart_event.md) 
 
-
-@related: grid/configuration.md#drag-n-drop-of-grid-rows
-
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-rows)

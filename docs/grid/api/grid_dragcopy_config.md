@@ -19,12 +19,10 @@ var target = new dhx.Grid("grid-target", {
     dragCopy: true
 });
 
-
-
 @descr: 
 
 **Related sample**: [Grid. Setup Drag Copy](https://snippet.dhtmlx.com/23slivyz)
 
-@related: grid/initialization.md#initialize-grid
+[comment]: # (@related: grid/initialization.md#initialize-grid)
 
-@relatedapi: grid/api/grid_dragmode_config.md
+[comment]: # (@relatedapi: grid/api/grid_dragmode_config.md)

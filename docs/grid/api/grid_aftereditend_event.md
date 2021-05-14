@@ -12,13 +12,10 @@ title: afterEditEnd
 - row			object		an object with a row configuration
 - col		object		an object with a column configuration
 
-
 @example:
 grid.events.on("AfterEditEnd", function(value,row,column){
 	// your logic here
 });
-
-
 
 @descr:
 

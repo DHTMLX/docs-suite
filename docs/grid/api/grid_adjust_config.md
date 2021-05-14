@@ -53,12 +53,8 @@ The property can be specified to one of the available adjustment modes:
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content;
 - the **adjust** option enabled (including the "header", "footer", "data" modes) adjusts the width of columns with account of [template](grid/api/grid_columns_config.md) added to cells. You need to set the **content** attribute of the [header/footer](grid/api/grid_columns_config.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
 
-
-
 @changelog: added in v6.4
 
-@relatedapi: grid/api/grid_adjustcolumnwidth_method.md
+[comment]: # (@relatedapi: grid/api/grid_adjustcolumnwidth_method.md)
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#autosize-for-columns
-
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autosize-for-columns)
