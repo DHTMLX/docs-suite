@@ -52,7 +52,7 @@ The **config** object can contain the properties below:
 
 
 @changelog:
-- the **indent** property of the **config** parameter is added in v6.1
+The **indent** property of the **config** parameter is added in v6.1.
 
 @related:popup/work_with_popup.md#hidingshowing-popup
 
