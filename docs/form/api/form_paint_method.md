@@ -7,8 +7,6 @@ title: paint
 
 @signature: {'paint(): void;'}
 
-@params:
-
 @example:
 form.paint();
 
