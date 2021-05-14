@@ -6,7 +6,7 @@ description: description
 
 @short: defines the configuration of tabs
 
-@signature: {'views?: ICellConfig[] | ILayoutConfig[];'}
+@signature: {'views?: ICellConfig[];'}
 
 @example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
