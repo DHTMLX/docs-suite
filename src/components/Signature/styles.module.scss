@@ -1,7 +1,6 @@
 .signature {
-  font-family: var(--ifm-font-family-monospace);
-  background-color: #f8e8b8;
-  font-size: var(--ifm-code-font-size);
+  font: var(--ifm-code-font-size) / var(--ifm-pre-line-height) var(--ifm-font-family-monospace);
+  background-color: #e8f3ff;
   border-radius: var(--ifm-global-radius);
   padding: var(--ifm-pre-padding);
   margin-bottom: var(--ifm-leading);
@@ -9,6 +8,6 @@
 
 html[data-theme="dark"] {
   .signature {
-    background-color: rgb(40, 42, 54);
+    background-color: #393c4a;
   }
 }
