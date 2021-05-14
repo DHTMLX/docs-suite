@@ -12,4 +12,3 @@ colorpicker.destructor();
 
 @descr:
 
-@changelog:

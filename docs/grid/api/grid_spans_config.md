@@ -59,7 +59,9 @@ Each object in the spans array contains the following properties:
     </tbody>
 </table>
 
-@changelog: The **tooltip** property is added in v6.5.
+@changelog:
+
+The **tooltip** property is added in v6.5.
 
 @related: grid/initialization.md#initialize-grid
 grid/configuration.md#spans
