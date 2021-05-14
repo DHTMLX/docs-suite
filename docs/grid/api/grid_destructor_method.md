@@ -10,14 +10,6 @@ title: destructor
 @example:
 grid.destructor();
 
-
-
 @descr:
 
-@related: grid/usage.md#destructing-grid
-
-
-
-
-
-
+[comment]: # (@related: grid/usage.md#destructing-grid)

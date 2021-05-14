@@ -10,14 +10,6 @@ title: paint
 @example:
 grid.paint();
 
-
-
 @descr:
 
-@related: grid/usage.md#repainting-grid
-
-
-
-
-
-
+[comment]: # (@related: grid/usage.md#repainting-grid)

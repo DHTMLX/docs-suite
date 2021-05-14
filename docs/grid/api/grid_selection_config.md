@@ -14,11 +14,8 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-
 @descr: 
 
 **Related sample**: [Grid. Selection](https://snippet.dhtmlx.com/ad6roqsx)
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#selection
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#selection)

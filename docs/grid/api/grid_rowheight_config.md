@@ -16,13 +16,8 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-
 @descr: 
 
 **Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#rowheight
-
-
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#rowheight)

@@ -10,5 +10,4 @@ title: restoreOrder
 @example:
 toolbar.restoreOrder();
 
-
 @descr:

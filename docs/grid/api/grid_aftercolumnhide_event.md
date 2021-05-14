@@ -15,8 +15,6 @@ grid.events.on("AfterColumnHide", function(column){
     // your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

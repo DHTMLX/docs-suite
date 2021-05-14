@@ -8,10 +8,9 @@ title: getLength
 @signature: {'getLength(): number;'}
 
 @params:
-- id 		string		 the ID of a control
+- `id: string` - the ID of a control
 
 @example:
 toolbar.data.getLength("menu1");
-
 
 @descr:

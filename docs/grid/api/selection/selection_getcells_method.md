@@ -10,8 +10,6 @@ title: getCells
 @returns:
 param       array      an array with configuration objects of selected cells
 
-
-
 @example:
 var selectedCells = grid.selection.getCells();
 // -> [{…}, {…}, {…}]
@@ -19,14 +17,8 @@ var selectedCells = grid.selection.getCells();
 1: {row: {…}, column: {…}}
 2: {row: {…}, column: {…}}
 
-
-
 @descr:
 
-@related: grid/usage_selection.md#getting-object-of-selected-cells
+[comment]: # (@related: grid/usage_selection.md#getting-object-of-selected-cells)
 
-@relatedapi: grid/api/selection/selection_enable_method.md
-grid/api/selection/selection_getcell_method.md
-
-
-
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_getcell_method.md)

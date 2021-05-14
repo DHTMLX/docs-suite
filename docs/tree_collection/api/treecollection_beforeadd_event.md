@@ -8,17 +8,16 @@ title: beforeAdd
 @signature: {'beforeAdd: (newItem: any) => boolean | void;'}
 	
 @params:
-- newItem		object			the object of an added item
+- `newItem: object` - the object of an added item
 
 @returns:
-- result		boolean | void		true/false to add/not add an item
+- `boolean | void` - true/false to add/not add an item
 
 @example:
 data.events.on("BeforeAdd", function(newItem){
 	console.log("A new item will be added");
     return true;
 });
-
 
 @descr:
 

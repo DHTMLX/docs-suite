@@ -10,7 +10,6 @@ title: beforeRowShow
 @params: 
 - row   object  an object with a row configuration
 
-
 @returns:
 - result	boolean | void		false - to prevent a row from being shown, otherwise true
 
@@ -20,11 +19,8 @@ grid.events.on("BeforeRowShow", function(row){
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
-
 
 @changelog: added in v7.0

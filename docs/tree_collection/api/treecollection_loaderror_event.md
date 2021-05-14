@@ -7,15 +7,13 @@ title: loadError
 
 @signature: {'loadError: (response: any) => boolean | void;'}
 	
-@params:
-- error			string,object		info about the error
+[comment]: # (@params:
+- `error: string, object` - info about the error)
 
 @example:
 data.events.on("LoadError", function(error){
 	// your code here
 });
-
-
 
 @descr:
 
@@ -23,4 +21,3 @@ The **error** parameter can be either a string with the text of an error, or an 
 
 - status - the code of an error
 - text - the text of an error
-

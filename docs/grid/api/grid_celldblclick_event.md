@@ -12,15 +12,11 @@ title: cellDblClick
 - col		object		an object with a column configuration
 - e				MouseEvent		a MouseEvent object
 
-
 @example:
 grid.events.on("CellDblClick", function(row,column,e){
     // your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
-

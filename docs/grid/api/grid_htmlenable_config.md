@@ -14,7 +14,6 @@ var grid = new dhx.Grid("grid_container", {
     htmlEnable: true /*!*/
 });
 
-
 @descr: 
 
 If you set the property to *false*, the content of Grid columns will be displayed as a *string* value.
@@ -23,5 +22,4 @@ If you set the property to *false*, the content of Grid columns will be displaye
 
 @changelog: added in v6.3
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#html-content-of-grid-columns
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#html-content-of-grid-columns)

@@ -14,14 +14,11 @@ title: beforeRowDrop
 @returns:
 - result	void | boolean		false - to block the default action, otherwise true
 
-
 @example:
 grid.events.on("BeforeRowDrop", function(data, events){
 	// your logic here
     return false;
 });
-
-
 
 @descr:
 
@@ -48,18 +45,6 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-grid/api/grid_afterrowdrag_event.md
-grid/api/grid_afterrowdrop_event.md
-grid/api/grid_beforerowdrag_event.md
-grid/api/grid_canrowdrop_event.md
-grid/api/grid_cancelrowdrop_event.md
-grid/api/grid_dragrowin_event.md
-grid/api/grid_dragrowout_event.md
-grid/api/grid_dragrowstart_event.md
-[](grid/api/grid_dragitem_config.md)
+[comment]: # (@relatedapi: grid/api/grid_afterrowdrag_event.md grid/api/grid_afterrowdrop_event.md grid/api/grid_beforerowdrag_event.md grid/api/grid_canrowdrop_event.md grid/api/grid_cancelrowdrop_event.md grid/api/grid_dragrowin_event.md grid/api/grid_dragrowout_event.md grid/api/grid_dragrowstart_event.md grid/api/grid_dragitem_config.md)
 
-	
-@related: grid/configuration.md#drag-n-drop-of-grid-rows
-
-
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-rows)

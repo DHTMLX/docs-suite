@@ -21,17 +21,11 @@ grid.selection.removeCell(rowId);
 // removes selection from the specified cell
 grid.selection.removeCell(rowId, colId);
 
-
-
 @descr:
-
-
-@related: grid/usage_selection.md#removing-selection
-
-@relatedapi: 
-grid/api/selection/selection_enable_method.md
-grid/api/selection/selection_setcell_method.md
 
 @changelog:
 added in v7.0
 
+[comment]: # (@related: grid/usage_selection.md#removing-selection)
+
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_setcell_method.md)

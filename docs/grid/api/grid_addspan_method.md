@@ -18,8 +18,6 @@ grid.addSpan({
 });
 // grid.paint();
 
-
-
 @descr:
 
 The **span** object contains the following properties:
@@ -53,10 +51,6 @@ The **span** object contains the following properties:
     </tbody>
 </table>
 
+[comment]: # (@relatedapi: grid/api/grid_spans_config.md grid/api/grid_getspan_method.md grid/api/grid_removespan_method.md)
 
-@relatedapi:
-grid/api/grid_spans_config.md
-grid/api/grid_getspan_method.md
-grid/api/grid_removespan_method.md
-
-@related: grid/usage.md#addingremoving-spans
+[comment]: # (@related: grid/usage.md#addingremoving-spans)

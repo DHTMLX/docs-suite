@@ -14,13 +14,10 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-
 @descr: 
 
 **Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)
 
 @changelog: added in v7.0
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#frozen-columns
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#frozen-columns)

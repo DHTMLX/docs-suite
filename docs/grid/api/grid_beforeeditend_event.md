@@ -12,18 +12,14 @@ title: beforeEditEnd
 - row			object		an object with a row configuration
 - col		object		an object with a column configuration
 
-
 @returns:
 - result	boolean		false - to prevent closing of an editor, otherwise true
-
 
 @example:
 grid.events.on("BeforeEditEnd", function(value,row,column){
 	// your logic here
     return false;
 });
-
-
 
 @descr:
 

@@ -10,14 +10,11 @@ title: enable
 @example:
 grid.selection.enable();
 
-
 @descr:
-
-@relatedapi: 
-grid/api/selection/selection_disable_method.md
-grid/api/grid_selection_config.md
-
-@related: grid/usage_selection.md
 
 @changelog:
 added in v7.0
+
+[comment]: # (@relatedapi: grid/api/selection/selection_disable_method.md grid/api/grid_selection_config.md)
+
+[comment]: # (@related: grid/usage_selection.md)

@@ -13,8 +13,6 @@ title: getScrollState
 @example:
 var state = grid.getScrollState(); // -> {x:0,y:0}
 
-
 @descr:
 
-
-@related: grid/usage.md#controlling-scroll-behavior
+[comment]: # (@related: grid/usage.md#controlling-scroll-behavior)

@@ -14,10 +14,8 @@ title: scrollTo
 @example:
 grid.scrollTo("15","c");
 
-
-
 @descr:
 
 **Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
-@related: grid/usage.md#controlling-scroll-behavior
+[comment]: # (@related: grid/usage.md#controlling-scroll-behavior)

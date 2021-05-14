@@ -19,7 +19,6 @@ grid.events.on("BeforeColumnHide", function(column){
     return false;
 });
 
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

@@ -8,11 +8,11 @@ title: serialize
 @signature: {'serialize(driver?: DataDriver): T[];'}
 
 @params:
-- type      string		optional, the format that the data will be serialized into (json, csv, xml), json by default
-- callback  function    optional,  a function that will be applied to every item of the component
+- `type: string` - optional, the format that the data will be serialized into (json, csv, xml), json by default
+- `callback: function` - optional,  a function that will be applied to every item of the component
 
 @returns:
-data  array,string		serialized data of the component either as an array of JSON objects or as a CSV/XML string 
+- `data: array, string` - serialized data of the component either as an array of JSON objects or as a CSV/XML string 
 
 @example:
 // serialize data to an array of JSON objects

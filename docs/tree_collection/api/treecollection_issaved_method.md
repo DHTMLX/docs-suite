@@ -8,11 +8,10 @@ title: isSaved
 @signature: {'isSaved(): boolean;'}
 
 @returns:
-- result		boolean				true if the changes are saved, otherwise false
+- `boolean` - true if the changes are saved, otherwise false
 
 @example:
 myToolbar.data.isSaved();
-
 
 @descr:
 

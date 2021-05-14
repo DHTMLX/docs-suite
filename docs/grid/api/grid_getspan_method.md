@@ -18,8 +18,6 @@ title: getSpan
 var span = grid.getSpan("10","a"); 
 // -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
 
-
-
 @descr:
 
 A returned **span** object contains the following properties:
@@ -53,10 +51,6 @@ A returned **span** object contains the following properties:
     </tbody>
 </table>
 
-@relatedapi:
-grid/api/grid_spans_config.md
-grid/api/grid_addspan_method.md
-grid/api/grid_removespan_method.md
+[comment]: # (@relatedapi: grid/api/grid_spans_config.md grid/api/grid_addspan_method.md grid/api/grid_removespan_method.md)
 
-
-@related: grid/usage.md#addingremoving-spans
+[comment]: # (@related: grid/usage.md#addingremoving-spans)

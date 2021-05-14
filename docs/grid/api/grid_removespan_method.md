@@ -16,10 +16,6 @@ grid.removeSpan("10","a");
 
 @descr:
 
-@relatedapi:
-grid/api/grid_spans_config.md
-grid/api/grid_addspan_method.md
-grid/api/grid_getspan_method.md
+[comment]: # (@relatedapi: grid/api/grid_spans_config.md grid/api/grid_addspan_method.md grid/api/grid_getspan_method.md)
 
-
-@related: grid/usage.md#addingremoving-spans
+[comment]: # (@related: grid/usage.md#addingremoving-spans)

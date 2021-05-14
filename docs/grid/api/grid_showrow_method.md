@@ -13,21 +13,13 @@ title: showRow
 @example:
 grid.showRow(rowId);
 
-
-
 @descr:
-
 
 **Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
 @changelog:
 added in v7.0
 
-@relatedapi: 
-grid/api/grid_hiderow_method.md
-grid/api/grid_isrowhidden_method.md
+[comment]: # (@relatedapi: grid/api/grid_hiderow_method.md grid/api/grid_isrowhidden_method.md)
 
-@related: grid/usage.md#hidingshowing-a-row
-
-
-
+[comment]: # (@related: grid/usage.md#hidingshowing-a-row)

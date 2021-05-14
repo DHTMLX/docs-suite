@@ -16,13 +16,10 @@ var grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 
-
-
 @descr: 
 
 **Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)
 
 @changelog: added in v6.4
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#sorting-columns
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#sorting-columns)

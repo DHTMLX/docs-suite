@@ -12,13 +12,10 @@ title: cellClick
 - column		object		an object with a column configuration
 - e				Event		a MouseEvent object
 
-
 @example:
 grid.events.on("CellClick", function(row,column,e){
      // your logic here
 });
-
-
 
 @descr:
 

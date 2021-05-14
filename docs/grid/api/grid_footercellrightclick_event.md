@@ -11,15 +11,9 @@ title: footerCellRightClick
 - column		object		an object with a column configuration
 - e				Event		a native event object -->
 
-
 @example:
 grid.events.on("FooterCellRightClick", function(column,e){
     // your logic here
 });
 
-
-
 @descr:
-
-
-

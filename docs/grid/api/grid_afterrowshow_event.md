@@ -15,10 +15,7 @@ grid.events.on("AfterRowShow", function(row){
     // your logic here
 });
 
-
-
 @descr:
-
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

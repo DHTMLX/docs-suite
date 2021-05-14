@@ -8,16 +8,14 @@ title: load
 @signature: {'load(url: IDataProxy, driver?: IDataDriver): Promise<any>'}
 
 @params:
-- url 		string		the path to the file
-- driver		string		optional, type of data (json, csv, xml), json by default
+- `url: string` - the path to the file
+- `driver: string` - optional, type of data (json, csv, xml), json by default
 
 @returns:
-
-- loaded		promise		a promise of data loading
+- `promise` - a promise of data loading
 
 @example:
 myToolbar.data.load("[path to this file]/file.xml", "xml");
-
 
 @descr:
 

@@ -19,8 +19,6 @@ grid.events.on("BeforeRowHide", function(row){
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

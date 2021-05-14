@@ -21,9 +21,8 @@ description: description
 
 grid.addRowCss("2", "myCustomClass");
 
-
 @descr:
 
 **Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)
 
-@related: grid/customization.md#styling-rows
+[comment]: # (@related: grid/customization.md#styling-rows)

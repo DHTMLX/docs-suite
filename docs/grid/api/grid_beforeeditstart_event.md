@@ -12,7 +12,6 @@ title: beforeEditStart
 - col		object		an object with a column configuration
 - editorType	string		the type of a cell editor:"input", "select", "datePicker", "checkbox", "combobox"
 
-
 @returns:
 - result		boolean	| void	false - to block editing of a cell, otherwise true
 
@@ -22,12 +21,7 @@ grid.events.on("BeforeEditStart", function(row,col,editorType){
     return false;
 });
 
-
-
 @descr:
-
-
-	
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 

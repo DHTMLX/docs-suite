@@ -16,8 +16,6 @@ grid.events.on("AfterRowDrop", function(data, events) {
     // your logic here
 });
 
-
-
 @descr:
 
 The data object contains the following parameters:
@@ -39,20 +37,10 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-
-
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v7.0
 
-@relatedapi:
-grid/api/grid_afterrowdrag_event.md
-grid/api/grid_beforerowdrag_event.md
-grid/api/grid_beforerowdrop_event.md
-grid/api/grid_canrowdrop_event.md
-grid/api/grid_cancelrowdrop_event.md
-grid/api/grid_dragrowin_event.md
-grid/api/grid_dragrowout_event.md
-grid/api/grid_dragrowstart_event.md
+[comment]: # (@relatedapi: grid/api/grid_afterrowdrag_event.md grid/api/grid_beforerowdrag_event.md grid/api/grid_beforerowdrop_event.md grid/api/grid_canrowdrop_event.md grid/api/grid_cancelrowdrop_event.md grid/api/grid_dragrowin_event.md grid/api/grid_dragrowout_event.md grid/api/grid_dragrowstart_event.md)
 
-@related: grid/configuration.md#drag-n-drop-of-grid-rows
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-rows)

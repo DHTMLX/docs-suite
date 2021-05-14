@@ -10,15 +10,11 @@ title: scroll
 @params:
 - scrollState	object		an object with new top and left coordinates
 
-
 @example:
 grid.events.on("Scroll", function({top,left}){
     console.log("The grid is scrolled to "+top,left);
 });
 
-
-
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
-
