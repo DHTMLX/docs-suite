@@ -9,7 +9,7 @@ title: paletteOnly
 
 @default: false
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 	paletteOnly: true
 });

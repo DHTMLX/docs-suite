@@ -9,7 +9,7 @@ title: page
 
 @default: 0
 
-@example: 
+@example:
 const pagination = new dhx.Pagination("pagination_container", {
     css: "dhx_widget--bordered",
     page: 4 

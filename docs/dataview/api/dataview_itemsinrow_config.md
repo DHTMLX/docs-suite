@@ -7,7 +7,7 @@ title: itemsInRow
 
 @signature: {'itemsInRow?: number;'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 
 @descr: 

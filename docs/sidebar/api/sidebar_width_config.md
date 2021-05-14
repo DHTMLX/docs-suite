@@ -9,7 +9,7 @@ title: width
 
 @default: "200"
 
-@example: 
+@example:
 var sidebar = new dhx.Sidebar(document.body, {
     css: "dhx_widget--border_right",
     width:450

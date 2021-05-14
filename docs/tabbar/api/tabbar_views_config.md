@@ -8,7 +8,7 @@ description: description
 
 @signature: {'views?: ICellConfig[] | ILayoutConfig[];'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     views:[
         { tab: "left", css:"panel flex", header:"Left"},

@@ -7,7 +7,7 @@ title: width
 
 @signature: {'width?: number;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	width: 400,  /*!*/

@@ -7,7 +7,7 @@ title: maxHeight
 
 @signature: {'maxHeight?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", maxHeight: "100px"}

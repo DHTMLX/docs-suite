@@ -7,7 +7,7 @@ title: css
 
 @signature: {'css?: string;'}
 
-@example: 
+@example:
 var popup = new dhx.Popup({
     css:"my_first_class my_second_class"
 }); 

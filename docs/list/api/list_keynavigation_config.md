@@ -7,7 +7,7 @@ title: keyNavigation
 
 @signature: {'keyNavigation?: boolean | (() => boolean);'}
 
-@example: 
+@example:
 var list = new dhx.List("list", {keyNavigation:true});
 
 

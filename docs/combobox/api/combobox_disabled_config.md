@@ -9,7 +9,7 @@ title: disabled
 
 @default: false
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", { 
     disabled:true
 });

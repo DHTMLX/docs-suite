@@ -9,7 +9,7 @@ title: max
 
 @default: 100
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     max:200
 });

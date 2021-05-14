@@ -7,7 +7,7 @@ title: minWidth
 
 @signature: {'minWidth?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", minWidth: "400px"}

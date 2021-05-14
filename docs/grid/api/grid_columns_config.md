@@ -8,7 +8,7 @@ description: description
 
 @signature: {'columns?: ICol[];'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 100, id: "a", header: [{ text: "#" }] },

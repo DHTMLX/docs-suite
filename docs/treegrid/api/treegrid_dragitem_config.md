@@ -7,7 +7,7 @@ title: dragItem
 
 @signature: {'dragItem?: "row" | "column";'}
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [// columns config],
     dragItem: "column", /*!*/ 

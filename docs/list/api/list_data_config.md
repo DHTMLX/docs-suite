@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data: array;'}
 
-@example: 
+@example:
 const data = [
     {
         "title": "The Hobbit and The Lord of the Rings",

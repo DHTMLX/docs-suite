@@ -11,7 +11,7 @@ title: autoHeight
 @default: false
 
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	autoHeight: true,  /*!*/

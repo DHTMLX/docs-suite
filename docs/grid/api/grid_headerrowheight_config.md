@@ -9,7 +9,7 @@ title: headerRowHeight
 
 @default: 40
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	headerRowHeight: 50

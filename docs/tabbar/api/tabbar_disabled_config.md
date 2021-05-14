@@ -7,7 +7,7 @@ title: disabled
 
 @signature: {'disabled?: string | string[];'}
 
-@example: 
+@example:
 // make a tab disabled
 var tabbar = new dhx.Tabbar("tabbar_container", {
     disabled: "London"

@@ -8,7 +8,7 @@ description: description
 
 @signature: {'data?: array;'}
 
-@example: 
+@example:
 var data = new dhx.TreeCollection();
 data.load("../common/treedata.json");
 var tree = new dhx.Tree("tree", {data: data});

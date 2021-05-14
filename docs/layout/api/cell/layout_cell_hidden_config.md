@@ -7,7 +7,7 @@ title: hidden
 
 @signature: {'hidden?: boolean;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", hidden:true}

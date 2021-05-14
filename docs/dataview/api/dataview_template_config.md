@@ -7,7 +7,7 @@ title: template
 
 @signature: {'template?: (item: any) => string;'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview", {
 	itemsInRow: 4, 
     template: function(item) {

@@ -7,7 +7,7 @@ title: majorTick
 
 @signature: {'majorTick?: number;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     majorTick:3
 });

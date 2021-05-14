@@ -7,7 +7,7 @@ title: cols
 
 @signature: {'cols?: IBlock;'}
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
     rows: [

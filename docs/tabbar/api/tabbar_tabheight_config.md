@@ -9,7 +9,7 @@ title: tabHeight
 
 @default: 45
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     tabHeight: 50
 });

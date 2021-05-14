@@ -7,7 +7,7 @@ title: padding
 
 @signature: {'padding?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container",{
 	padding: 10,
 	css: "dhx_layout-cell--bordered",

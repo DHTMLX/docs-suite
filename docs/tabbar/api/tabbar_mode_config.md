@@ -9,7 +9,7 @@ title: mode
 
 @default: "top"
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     mode: "bottom"
 });

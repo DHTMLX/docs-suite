@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data: DataCollection;'}
 
-@example: 
+@example:
 const list = new dhx.List("widget_container", {
     css: "dhx_widget--bordered"
 });

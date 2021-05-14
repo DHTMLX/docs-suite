@@ -7,7 +7,7 @@ title: left
 
 @signature: {'left?: number;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     left:250
 });

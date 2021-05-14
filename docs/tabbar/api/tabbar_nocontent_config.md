@@ -9,7 +9,7 @@ title: noContent
 
 @default: false
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     noContent:true
 });

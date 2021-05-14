@@ -9,7 +9,7 @@ title: selection
 
 @default: true
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview", {
     selection: false
 });

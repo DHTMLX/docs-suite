@@ -9,7 +9,7 @@ title: virtual
 
 @default: false
 
-@example: 
+@example:
 var list = new dhx.List("list_container", {
 	virtual: true
 });

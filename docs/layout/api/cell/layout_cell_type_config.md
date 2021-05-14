@@ -7,7 +7,7 @@ title: type
 
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 
-@example: 
+@example:
 const layout = new dhx.Layout("layout", {
     type: "space", /*!*/
     cols: [

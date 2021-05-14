@@ -7,7 +7,7 @@ title: valueFormat
 
 @signature: {'valueFormat?: "string" | "timeObject";'}
 
-@example: 
+@example:
 var timepicker = new dhx.Timepicker("timepicker", {
 	value: "06:00",
 	timeFormat: 24,

@@ -7,7 +7,7 @@ title: padding
 
 @signature: {'padding?: string | number;'}
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	padding: "10px", /*!*/ // padding for rows

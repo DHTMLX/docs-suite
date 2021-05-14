@@ -7,7 +7,7 @@ title: eventHandlers
 
 @signature: {'eventHandlers?: {[key: string]: any;};'}
 
-@example: 
+@example:
 function template() {
     return "<div class='class_name'></div>";
 }

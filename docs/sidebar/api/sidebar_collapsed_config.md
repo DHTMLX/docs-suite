@@ -7,7 +7,7 @@ title: collapsed
 
 @signature: {'collapsed?: boolean;'}
 
-@example: 
+@example:
 var sidebar = new dhx.Sidebar(document.body, {
     css: "dhx_widget--border_right",
     collapsed: true

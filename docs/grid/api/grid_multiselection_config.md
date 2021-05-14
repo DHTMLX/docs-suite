@@ -7,7 +7,7 @@ title: multiselection
 
 @signature: {'multiselection?: boolean;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     multiselection:true, /*!*/

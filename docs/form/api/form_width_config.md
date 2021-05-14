@@ -9,7 +9,7 @@ title: width
 
 @type: string | number | "content"
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	width: "500px", /*!*/ // the width for rows

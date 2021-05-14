@@ -7,7 +7,7 @@ title: height
 
 @signature: {'height?: number | string;'}
 
-@example: 
+@example:
 // sets the height as a number
 var dataview = new dhx.DataView("dataview", {height: 700});
 

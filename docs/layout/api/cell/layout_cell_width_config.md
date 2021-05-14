@@ -7,7 +7,7 @@ title: width
 
 @signature: {'width?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", width: "300px" }

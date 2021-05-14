@@ -8,7 +8,7 @@ description: description
 
 @signature: {'id?: string;'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container",{
 	views:[ 
 		{ tab: "left", id:"1"},

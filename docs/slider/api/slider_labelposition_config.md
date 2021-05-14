@@ -7,7 +7,7 @@ title: labelPosition
 
 @signature: {'labelPosition?: "left" | "top";'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
    labelPosition:"left" 
 });

@@ -9,7 +9,7 @@ title: tabWidth
 
 @default: 200
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     tabWidth: 120
 });

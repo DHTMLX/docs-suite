@@ -9,7 +9,7 @@ title: timeFormat
 
 @default: 24
 
-@example: 
+@example:
 var timepicker = new dhx.Timepicker("timepicker", {
 	timeFormat: 12
 });

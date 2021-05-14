@@ -9,7 +9,7 @@ title: movable
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     movable:true
 });

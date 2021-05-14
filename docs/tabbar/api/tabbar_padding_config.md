@@ -7,7 +7,7 @@ title: padding
 
 @signature: {'padding?: number | string;'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container",{
 	views:[ 
     	{ tab: "left", padding:20},

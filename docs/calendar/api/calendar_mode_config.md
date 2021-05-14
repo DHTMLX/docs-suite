@@ -9,7 +9,7 @@ title: mode
 
 @default: "calendar"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     mode: "month"
 });

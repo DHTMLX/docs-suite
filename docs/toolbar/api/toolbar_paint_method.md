@@ -7,5 +7,5 @@ title: paint
 
 @signature: {'paint(): void;'}
 
-@example: 
+@example:
 toolbar.paint();

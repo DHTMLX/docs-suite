@@ -7,7 +7,7 @@ title: dragItem
 
 @signature: {'dragItem?: "row" | "column" | "complex";'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     dragItem: "column", /*!*/ 

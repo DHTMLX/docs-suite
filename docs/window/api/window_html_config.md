@@ -7,7 +7,7 @@ title: html
 
 @signature: {'html?: string;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
 	html:"<h1>Header</h1><p>paragraph</p>"
 });

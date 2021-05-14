@@ -7,7 +7,7 @@ title: activeTab
 
 @signature: {'activeTab?: string;'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar", {
 	activeTab:"3",
     mode: "top",

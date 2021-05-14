@@ -7,7 +7,7 @@ title: top
 
 @signature: {'top?: number;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     top:250
 });

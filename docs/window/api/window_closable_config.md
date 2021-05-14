@@ -9,7 +9,7 @@ title: closable
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     closable:true
 });

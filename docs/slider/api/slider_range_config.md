@@ -7,7 +7,7 @@ title: range
 
 @signature: {'range?: boolean;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     range:true
 });

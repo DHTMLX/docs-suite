@@ -7,7 +7,7 @@ title: helpMessage
 
 @signature: {'helpMessage?: string;'}
 
-@example: 
+@example:
 var combobox = new dhx.Combobox("combo_container",{
 	helpMessage:"Some text"
 });

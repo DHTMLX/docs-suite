@@ -7,7 +7,7 @@ title: on
 
 @signature: {'on?: {[key: string]: any; };'}
 
-@example: 
+@example:
 // adds a click event handler to the element of a cell
 const layout = new dhx.Layout("layout_container", {
 	height: "100%", 

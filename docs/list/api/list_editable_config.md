@@ -9,7 +9,7 @@ title: editable
 
 @default:false
 
-@example: 
+@example:
 var list = new dhx.List("list_container", {editable:true});
 
 

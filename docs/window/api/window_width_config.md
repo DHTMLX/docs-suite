@@ -9,7 +9,7 @@ title: width
 
 @default: 50% of the browser window's width
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     width:250
 });

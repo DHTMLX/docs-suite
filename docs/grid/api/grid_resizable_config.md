@@ -7,7 +7,7 @@ title: resizable
 
 @signature: {'resizable?: boolean;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     data: dataset,

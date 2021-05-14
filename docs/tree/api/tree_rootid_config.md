@@ -7,7 +7,7 @@ title: rootId
 
 @signature: {'rootId?: Id;'}
 
-@example: 
+@example:
 const tree = new dhx.Tree("tree_container", {
     rootId: "root"
 });

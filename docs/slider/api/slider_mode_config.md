@@ -9,7 +9,7 @@ title: mode
 
 @default: "horizontal"
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     mode:"vertical"
 });

@@ -9,7 +9,7 @@ title: selection
 
 @default: true
 
-@example: 
+@example:
 const tree = new dhx.Tree("tree_container", {
     selection: false,
 });

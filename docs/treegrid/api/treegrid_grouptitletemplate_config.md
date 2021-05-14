@@ -7,7 +7,7 @@ title: groupTitleTemplate
 
 @signature: {'groupTitleTemplate?: (groupName: string, groupItems: IDataItem[]) => string;'}
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [// columns config],
     groupTitleTemplate: function(groupName, groupItems){ /*!*/

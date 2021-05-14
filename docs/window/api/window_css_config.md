@@ -7,7 +7,7 @@ title: css
 
 @signature: {'css?: string;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     title: "Window", 
     css:"my_first_class my_second_class"

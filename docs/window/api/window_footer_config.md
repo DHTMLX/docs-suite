@@ -7,7 +7,7 @@ title: footer
 
 @signature: {'footer?: boolean;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     footer: true
 });

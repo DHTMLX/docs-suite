@@ -7,7 +7,7 @@ title: helpMessage
 
 @signature: {'helpMessage?: string;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container",{
 	helpMessage:"Some text"
 });

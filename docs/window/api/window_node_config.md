@@ -7,7 +7,7 @@ title: node
 
 @signature: {'node?: HTMLElement | string;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     node:"customDiv"
 });

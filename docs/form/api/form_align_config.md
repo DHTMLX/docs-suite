@@ -9,7 +9,7 @@ title: align
 
 @values: "start", "center", "end", "between", "around", "evenly"
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	align: "center", /*!*/ // sets the alignment for rows 

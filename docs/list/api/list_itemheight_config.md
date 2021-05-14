@@ -9,7 +9,7 @@ title: itemHeight
 
 @default:37
 
-@example: 
+@example:
 // sets the height of an item as a number
 var list = new dhx.List("list_container", { 
     itemHeight:30

@@ -7,7 +7,7 @@ title: scales
 
 @signature: {'scales?: "left" | "right" | "top" | "bottom" | "radial";'}
 
-@example: 
+@example:
 var chart = new dhx.Chart("chart_container",{
     type:"area",
     scales: {

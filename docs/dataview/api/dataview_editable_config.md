@@ -9,7 +9,7 @@ title: editable
 
 @default: false
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview_container", {editable:true});
 
 @descr:

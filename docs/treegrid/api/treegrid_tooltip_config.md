@@ -9,7 +9,7 @@ title: tooltip
 
 @default: true
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid", {
 	columns: [//columns config],
 	data: dataset,

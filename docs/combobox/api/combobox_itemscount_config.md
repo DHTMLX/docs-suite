@@ -7,7 +7,7 @@ title: itemsCount
 
 @signature: {'itemsCount?: boolean | ((count: number) => string);'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     multiselection: true,
     itemsCount: function (num) {

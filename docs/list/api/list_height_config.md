@@ -7,7 +7,7 @@ title: height
 
 @signature: {'height?: number | string;'}
 
-@example: 
+@example:
 // sets the height as a number
 var list = new dhx.List("list", {height: 700});
 

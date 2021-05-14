@@ -7,7 +7,7 @@ title: label
 
 l@signature: {'label?: string;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
    label:"Volume" 
 });

@@ -9,7 +9,7 @@ title: itemHeight
 
 @default: 32
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     itemHeight:50
 });

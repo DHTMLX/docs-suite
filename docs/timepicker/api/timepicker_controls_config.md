@@ -9,7 +9,7 @@ title: controls
 
 @default: false
 
-@example: 
+@example:
 var timepicker = new dhx.Timepicker("timepicker", {
 	controls: true
 });

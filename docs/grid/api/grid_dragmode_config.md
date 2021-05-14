@@ -7,7 +7,7 @@ title: dragMode
 
 @signature: {'dragMode?: "target" | "both" | "source"'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     dragMode:"source"

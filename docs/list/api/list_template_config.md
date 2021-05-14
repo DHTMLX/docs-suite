@@ -7,7 +7,7 @@ title: template
 
 @signature: {'template?: (obj: IDataItem) => string;'}
 
-@example: 
+@example:
 var list = new dhx.List("list", {
 	template: function(item) {
 		return "<strong>!!!</strong>" + item.value;

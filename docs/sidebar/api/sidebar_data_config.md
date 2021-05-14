@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data?: any[] | TreeCollection<ISidebarElement>;'}
 
-@example: 
+@example:
 var sidebar = dhx.Sidebar("sidebar_container", {
     data: [
     	{

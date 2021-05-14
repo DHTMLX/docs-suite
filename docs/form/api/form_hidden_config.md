@@ -7,7 +7,7 @@ title: hidden
 
 @signature: {'hidden?: boolean;'}
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	hidden: true

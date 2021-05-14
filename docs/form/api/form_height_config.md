@@ -9,7 +9,7 @@ title: height
 
 @type: string|number|"content"
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	height: "400px", /*!*/ // height for rows

@@ -9,7 +9,7 @@ title: minWidth
 
 @default: "44"
 
-@example: 
+@example:
 var sidebar = new dhx.Sidebar(document.body, {
     css: "dhx_widget--border_right",
     minWidth: 80,

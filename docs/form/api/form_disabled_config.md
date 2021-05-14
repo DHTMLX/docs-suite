@@ -7,7 +7,7 @@ title: disabled
 
 @signature: {'disabled?: boolean;'}
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	disabled: true

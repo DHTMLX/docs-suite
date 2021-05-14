@@ -8,7 +8,7 @@ description: description
 
 @signature: {'value?: string | string[];'}
 
-@example: 
+@example:
 var combobox = new dhx.Combobox("combobox", {
     multiselection: true,
     value: ["austria", "estonia"] /*!*/

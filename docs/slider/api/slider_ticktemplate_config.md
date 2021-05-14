@@ -7,7 +7,7 @@ title: tickTemplate
 
 @signature: {'tickTemplate?: (position: number) => string;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
 	// v is the value of majorTick
     tickTemplate: function(v){

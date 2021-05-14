@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data?: array;'}
 
-@example: 
+@example:
 const menu = new dhx.Menu("menu_container", {
     data: [{
         "id": "edit",

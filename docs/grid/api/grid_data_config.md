@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data?: any[];'}
 
-@example: 
+@example:
 var dataset = [
     {
       "country": "China",

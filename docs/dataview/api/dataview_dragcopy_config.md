@@ -7,7 +7,7 @@ title: dragCopy
 
 @signature: {'dragCopy?: boolean;'}
 
-@example: 
+@example:
 var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: true});
 var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
 

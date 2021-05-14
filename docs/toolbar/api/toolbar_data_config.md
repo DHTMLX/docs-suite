@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data?: any[];'}
 
-@example: 
+@example:
 const toolbar = new dhx.Toolbar("toolbar", {
     css: "dhx_widget--bordered",
     data: [ 

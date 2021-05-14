@@ -9,7 +9,7 @@ title: height
 
 @default: 50% of the browser window's height
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     height:250
 });

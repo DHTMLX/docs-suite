@@ -9,7 +9,7 @@ title: sortable
 
 @default: true
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     sortable:false, /*!*/  

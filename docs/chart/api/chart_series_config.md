@@ -7,7 +7,7 @@ title: series
 
 @signature: {'series?: SeriaConfig[];'}
 
-@example: 
+@example:
 var chart = new dhx.Chart("chart_container",{
     type:"bar",
     scales: {

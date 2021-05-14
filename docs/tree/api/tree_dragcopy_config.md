@@ -7,7 +7,7 @@ title: dragCopy
 
 @signature: {'dragCopy?: boolean;'}
 
-@example: 
+@example:
 var treeSource = new dhx.Tree("tree-source", {dragMode: "source", dragCopy: true});
 var treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true});
 

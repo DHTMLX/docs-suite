@@ -9,7 +9,7 @@ title: step
 
 @default: 1
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     step:3
 });

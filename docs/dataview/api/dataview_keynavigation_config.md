@@ -7,7 +7,7 @@ title: keyNavigation
 
 @signature: {'keyNavigation?: boolean | (() => boolean);'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview", {
     itemsInRow: 5, 
     keyNavigation: true

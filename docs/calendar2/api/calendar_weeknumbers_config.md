@@ -9,7 +9,7 @@ title: weekNumbers
 
 @default: false
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", { 
     weekNumbers: true
 });

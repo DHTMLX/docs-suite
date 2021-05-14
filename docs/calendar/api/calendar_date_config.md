@@ -8,7 +8,7 @@ title: date
 @signature: {'date?: Date | string;'}
 
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     value: new Date(),
     date: new Date(2019, 0, 1)

@@ -7,7 +7,7 @@ title: rowCss
 
 @signature: {'rowCss?: (row: IRow) => string;'}
 
-@example: 
+@example:
 <style>
 	.my_custom_row {
 		background: coral;
