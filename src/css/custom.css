@@ -11,7 +11,7 @@
 /* You can override the default Infima variables here. */
 
 :root {
-    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary: #0288D1;
     --ifm-color-primary-dark: rgb(33, 175, 144);
     --ifm-color-primary-darker: rgb(31, 165, 136);
     --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -22,6 +22,10 @@
     --dhx-color-brand: #2095F3;
     --ifm-hr-border-color: var(--ifm-color-emphasis-200);
     --ifm-list-item-margin: 0.7rem;
+}
+
+html[data-theme=dark] {
+    --ifm-color-primary: #26adf7;
 }
 
 .docusaurus-highlight-code-line {
