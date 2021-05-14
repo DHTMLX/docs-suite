@@ -25,14 +25,14 @@ var total = datacollection.reduce(function(new_item, item) {
 
 A handler function takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>new_item</b></td>
+			<td><b>new_item</b></td>
 			<td>(<i>any</i>) the <i>initialValue</i>, or the previously returned value of the function</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>(<i>any</i>) the current item of a data collection</td>
 		</tr>
     </tbody>
