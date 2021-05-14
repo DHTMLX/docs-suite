@@ -7,7 +7,7 @@ title: labelWidth
 
 @signature: {'labelWidth?: string | number;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     labelWidth:100
 });

@@ -7,7 +7,7 @@ title: tabAlign
 
 @signature: {'tabAlign?: "left" | "start" | "center" | "middle" | "right" | "end";'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     views:[
         { tab: "left", css:"panel flex", header:"Left"},

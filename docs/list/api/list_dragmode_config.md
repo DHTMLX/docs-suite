@@ -7,7 +7,7 @@ title: dragMode
 
 @signature: {'dragMode?: string'}
 
-@example: 
+@example:
 var list = new dhx.List("list_container", { 
     dragMode:"source"
 });

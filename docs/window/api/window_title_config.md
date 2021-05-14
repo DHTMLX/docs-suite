@@ -7,7 +7,7 @@ title: title
 
 @signature: {'title?: string;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     title: "DHX Window Sample"
 });

@@ -7,7 +7,7 @@ title: required
 
 @signature: {'required?: boolean;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     label:"My Combo",
     required:true

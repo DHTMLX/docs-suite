@@ -7,7 +7,7 @@ title: icon
 
 @signature: {'icon?: ITreeCustomIcon;'}
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", {
 	icon: {
 		folder: "fas fa-book",

@@ -8,7 +8,7 @@ title: rootParent
 
 @signature: rootParent?: string;
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid", {
     rootParent: "root", /*!*/
 	columns: [

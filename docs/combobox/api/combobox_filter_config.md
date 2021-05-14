@@ -7,7 +7,7 @@ title: filter
 
 @signature: {'filter?: (item: any, input: string) => boolean;'}
 
-@example: 
+@example:
 function mySearch(item, target) {
     // your filtering logic here            
 }

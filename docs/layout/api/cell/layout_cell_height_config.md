@@ -7,7 +7,7 @@ title: height
 
 @signature: {'height?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", height: "300px" }

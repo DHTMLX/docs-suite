@@ -9,7 +9,7 @@ title: grayShades
 
 @default: true
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 	grayShades: false
 });

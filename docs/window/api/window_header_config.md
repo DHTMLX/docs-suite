@@ -7,7 +7,7 @@ title: header
 
 @signature: {'header?: boolean;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     header: true
 });

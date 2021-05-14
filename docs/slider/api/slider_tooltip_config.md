@@ -9,7 +9,7 @@ title: tooltip
 
 @default: true
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     tooltip:false
 });

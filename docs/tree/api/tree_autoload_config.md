@@ -7,7 +7,7 @@ title: autoload
 
 @signature: {'autoload?: string;'}
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
 tree.data.load("/backend/autoload?id=tree");
 

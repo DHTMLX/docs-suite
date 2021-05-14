@@ -9,7 +9,7 @@ title: weekStart
 
 @default: "sunday"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     weekStart:"monday"
 });

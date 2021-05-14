@@ -7,7 +7,7 @@ title: value
 
 @signature: {'value?: number[] | number | string;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     value:20
 });

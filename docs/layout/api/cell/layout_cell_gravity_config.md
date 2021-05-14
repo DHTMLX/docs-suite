@@ -7,7 +7,7 @@ title: gravity
 
 @signature: {'gravity?: number | boolean;'}
 
-@example: 
+@example:
 var layout = dhx.Layout("layout_container", {
 	css: "dhx_widget--bordered",
 	rows: [

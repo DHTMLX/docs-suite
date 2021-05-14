@@ -47,4 +47,5 @@ component.data.add([
 @related:window/customization.md#controls-and-operations
 
 @changelog:
-possibility to pass an array of items is added in v6.1
+
+The possibility to pass an array of items is added in v6.1.

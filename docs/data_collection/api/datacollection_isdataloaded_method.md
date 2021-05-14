@@ -23,6 +23,6 @@ data.isDataLoaded();
 
 {{pronote This functionality is available in the PRO edition only.}}
 
-@related: helpers/lazydataproxy.md
-
 @changelog: added in v6.4
+
+@related: helpers/lazydataproxy.md

@@ -7,7 +7,7 @@ title: inputWidth
 
 @signature: {'inputWidth?: number;'}
 
-@example: 
+@example:
 const pagination = new dhx.Pagination("pagination_container", {
     css: "dhx_widget--bordered",
     inputWidth: 220 

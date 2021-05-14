@@ -7,7 +7,7 @@ title: menuCss
 
 @signature: {'menuCss?: string;'}
 
-@example: 
+@example:
 <style>
     .my_first_class {
         /*some styles*/

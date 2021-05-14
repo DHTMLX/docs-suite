@@ -9,7 +9,7 @@ title: width
 
 @default: "238px"
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker", {	
 	width: "300px"				
 });

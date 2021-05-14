@@ -9,7 +9,7 @@ title: multiselection
 
 @values: true, false, "click", "ctrlClick" 
 
-@example: 
+@example:
 var dataview = new dhx.DataView("list", {multiselection:true});
 
 @descr:

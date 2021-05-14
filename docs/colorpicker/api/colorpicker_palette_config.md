@@ -9,7 +9,7 @@ title: palette
 
 @default: false
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	grayShades: false,
 	palette: [

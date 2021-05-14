@@ -7,7 +7,7 @@ title: dragCopy
 
 @signature: {'dragCopy?: boolean;'}
 
-@example: 
+@example:
 var source = new dhx.Grid("grid-source", {
     columns: [// columns config],
     dragMode: "source", 

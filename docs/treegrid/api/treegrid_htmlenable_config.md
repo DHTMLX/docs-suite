@@ -7,7 +7,7 @@ title: htmlEnable
 
 @signature: {'htmlEnable?: boolean;'}
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [// columns config],
     data: dataset,

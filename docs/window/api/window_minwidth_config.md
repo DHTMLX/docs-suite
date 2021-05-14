@@ -9,7 +9,7 @@ title: minWidth
 
 @default: 100
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     minWidth:170
 });

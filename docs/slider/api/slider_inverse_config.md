@@ -7,7 +7,7 @@ title: inverse
 
 @signature: {'inverse?: boolean;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     inverse:true
 });

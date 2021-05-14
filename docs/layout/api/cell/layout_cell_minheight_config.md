@@ -7,7 +7,7 @@ title: minHeight
 
 @signature: {'minHeight?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", minHeight: "40px"}

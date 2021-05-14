@@ -7,7 +7,7 @@ title: multiselection
 
 @signature: {'multiselection?: boolean;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     multiselection:true
 });

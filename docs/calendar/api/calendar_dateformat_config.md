@@ -9,7 +9,7 @@ title: dateFormat
 
 @default: "%d/%m/%y"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    dateFormat:"%d.%m.%Y"
 });

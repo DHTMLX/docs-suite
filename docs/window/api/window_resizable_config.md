@@ -9,7 +9,7 @@ title: resizable
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     resizable:true
 });

@@ -9,7 +9,7 @@ title: pageSize
 
 @default: 10
 
-@example: 
+@example:
 const pagination = new dhx.Pagination("pagination_container", {
     pageSize: 22 
 });

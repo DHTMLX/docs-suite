@@ -7,7 +7,7 @@ title: template
 
 @signature: {'template?: (item: any) => string;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     template: function (item) {
       return "<div style='display:inline-block'>"

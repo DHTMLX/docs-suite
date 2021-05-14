@@ -9,7 +9,7 @@ title: timePicker
 
 @default: false
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     timePicker: true      
 });

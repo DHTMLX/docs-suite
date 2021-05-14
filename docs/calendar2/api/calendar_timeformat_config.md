@@ -11,7 +11,7 @@ title: timeFormat
 
 
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     timePicker: true,
     timeFormat: 12

@@ -7,7 +7,7 @@ title: mode
 
 @signature: {'mode?: "palette" | "picker";'}
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker", {
 	mode: "palette",
 	css: "dhx_widget--bordered"

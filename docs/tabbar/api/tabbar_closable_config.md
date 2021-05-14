@@ -7,7 +7,7 @@ title: closable
 
 @signature: {'closable?: boolean | string[];'}
 
-@example: 
+@example:
 // adds close buttons for all tabs
 var tabbar = new dhx.Tabbar("tabbar", {
 	closable: true

@@ -9,7 +9,7 @@ title: minHeight
 
 @default: 100
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     minHeight:170
 });

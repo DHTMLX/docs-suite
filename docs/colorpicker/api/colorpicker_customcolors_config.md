@@ -7,7 +7,7 @@ title: customColors
 
 @signature: {'customColors?: string[];'}
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]					
 });

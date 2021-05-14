@@ -9,7 +9,7 @@ title: modal
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     modal:true
 });

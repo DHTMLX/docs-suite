@@ -7,7 +7,7 @@ title: css
 
 @signature: {'css?: string;'}
 
-@example: 
+@example:
 <style>
 	.custom-class .dhx_chart-graph_area {
 		fill:#444;

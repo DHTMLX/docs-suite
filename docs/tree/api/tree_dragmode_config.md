@@ -7,7 +7,7 @@ title: dragMode
 
 @signature: {'dragMode?: "target" | "both" | "source";'}
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", { 
     dragMode:"source"
 });

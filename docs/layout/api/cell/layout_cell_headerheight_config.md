@@ -9,7 +9,7 @@ title: headerHeight
 
 @default: 37
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout", {
     rows: [
         {

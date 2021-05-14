@@ -7,7 +7,7 @@ title: css
 
 @signature: {'css?: string;'}
 
-@example: 
+@example:
 <style>
     .my_first_class {
         /*some styles*/

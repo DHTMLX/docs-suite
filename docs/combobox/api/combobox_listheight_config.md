@@ -9,7 +9,7 @@ title: listHeight
 
 @default: 224
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     listHeight:50
 });

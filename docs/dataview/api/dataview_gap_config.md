@@ -7,7 +7,7 @@ title: gap
 
 @signature: {'gap?: number;'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5, gap: 20});
 
 @descr: 

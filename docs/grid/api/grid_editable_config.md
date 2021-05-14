@@ -9,7 +9,7 @@ title: editable
 
 @default: false
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	editable:true, /*!*/

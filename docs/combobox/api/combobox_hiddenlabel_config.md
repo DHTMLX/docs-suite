@@ -7,7 +7,7 @@ title: hiddenLabel
 
 @signature: {'hiddenLabel?: boolean;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     hiddenLabel:true
 });

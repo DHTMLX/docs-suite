@@ -7,7 +7,7 @@ title: itemHeight
 
 @signature: {'itemHeight?: number | string;'}
 
-@example: 
+@example:
 // sets the height of an item as a number
 var dataview = new dhx.DataView("dataview", { 
     itemHeight:30

@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data?: array;'}
 
-@example: 
+@example:
 const data = [
     {
         id: "fileBlock",

@@ -7,7 +7,7 @@ title: height
 
 @signature: {'height?: number;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	height: 400,   /*!*/

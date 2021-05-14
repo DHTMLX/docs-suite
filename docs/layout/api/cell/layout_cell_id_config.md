@@ -7,7 +7,7 @@ title: id
 
 @signature: {'id?: string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
         cols: [
             { header: "Cell header", id:"1"}

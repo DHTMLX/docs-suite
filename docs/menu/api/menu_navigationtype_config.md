@@ -9,7 +9,7 @@ title: navigationType
 
 @default: "click"
 
-@example: 
+@example:
 menu.config.navigationType = "pointer";
 menu.paint();
 

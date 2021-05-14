@@ -9,7 +9,7 @@ title: editable
 
 @default: false
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", {editable: true});
 
 

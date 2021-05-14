@@ -7,7 +7,7 @@ title: maxPoints
 
 @signature: {'maxPoints?: number;'}
 
-@example: 
+@example:
 var chart = new dhx.Chart("chart", {
 	type:"line",
 	maxPoints:100

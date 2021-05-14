@@ -7,7 +7,7 @@ title: range
 
 @signature: {'range?: boolean;'}
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar", {
 	css: "dhx_widget--bordered",
 	range: true

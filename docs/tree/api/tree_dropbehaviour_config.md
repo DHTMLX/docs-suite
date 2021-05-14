@@ -7,7 +7,7 @@ title: dropBehaviour
 
 @signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 
-@example: 
+@example:
 var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
 var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
 

@@ -9,7 +9,7 @@ title: selection
 
 @default: true
 
-@example: 
+@example:
 var list = new dhx.List("list_container", {selection:false});
 
 

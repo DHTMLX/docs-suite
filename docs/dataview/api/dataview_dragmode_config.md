@@ -7,7 +7,7 @@ title: dragMode
 
 @signature: {'dragMode?: boolean;'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview_container", { 
     dragMode:"source"
 });

@@ -9,7 +9,7 @@ title: min
 
 @default: 0
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     min:2
 });

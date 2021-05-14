@@ -12,7 +12,7 @@ description: description
 
 [comment]: # (TODO: api change (нужно добавить список возможных опций в desc, можно после релиза)
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     adjust: true, /*!*/ 

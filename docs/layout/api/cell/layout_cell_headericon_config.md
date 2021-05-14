@@ -7,7 +7,7 @@ title: headerIcon
 
 @signature: {'headerIcon?: string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header:"Cell header", headerIcon:"dxi dxi-check"}

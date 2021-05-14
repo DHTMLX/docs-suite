@@ -7,7 +7,7 @@ title: hiddenLabel
 
 @signature: {'hiddenLabel?: boolean;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container",{
     hiddenLabel:true
 });

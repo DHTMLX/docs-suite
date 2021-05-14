@@ -7,7 +7,7 @@ title: dragCopy
 
 @signature: {'dragCopy?: boolean'}
 
-@example: 
+@example:
 var source = new dhx.List("list-source", {dragMode: "source", dragCopy: true});
 var target = new dhx.List("list-target", {dragMode: "target", dragCopy: true});
 

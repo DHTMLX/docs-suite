@@ -7,7 +7,7 @@ title: dropBehaviour
 
 @signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 
-@example: 
+@example:
 var source = new dhx.List("list-source",{
 	dragMode:"source", dropBehaviour:"complex"
 });

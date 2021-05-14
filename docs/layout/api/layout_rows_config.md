@@ -7,7 +7,7 @@ title: rows
 
 @signature: {'rows?: ICellConfig[] | ILayoutConfig[];'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     header: "Main Block Header",
     rows: [

@@ -7,7 +7,7 @@ title: keyNavigation
 
 @signature: {'keyNavigation?: boolean;'}
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", {keyNavigation: true});
 
 @descr:

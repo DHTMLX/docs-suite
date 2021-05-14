@@ -9,7 +9,7 @@ title: rowHeight
 
 @default: 40
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	rowHeight: 30, /*!*/

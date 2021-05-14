@@ -9,7 +9,7 @@ title: adjust
 
 @default: false
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [// columns config],
     adjust: true, /*!*/ 

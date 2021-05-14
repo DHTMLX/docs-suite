@@ -7,7 +7,7 @@ title: htmlEnable
 
 @signature: {'htmlEnable?: boolean;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     data: dataset,

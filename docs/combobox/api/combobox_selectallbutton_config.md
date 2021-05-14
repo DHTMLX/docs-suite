@@ -7,7 +7,7 @@ title: selectAllButton
 
 @signature: {'selectAllButton?: boolean;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     // enables multiple selection of options
     multiselection:true,

@@ -9,7 +9,7 @@ title: keyNavigation
 
 @default: true
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid", {
 	columns: [// columns config],
 	data: dataset,

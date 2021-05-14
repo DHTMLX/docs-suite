@@ -7,7 +7,7 @@ title: tick
 
 @signature: {'tick?: number;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     tick:2
 });

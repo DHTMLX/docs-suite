@@ -7,7 +7,7 @@ title: placeholder
 
 @signature: {'placeholder?: string;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     placeholder: "Some placeholder"
 });

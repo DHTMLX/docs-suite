@@ -7,7 +7,7 @@ title: multiselection
 
 @signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 
-@example: 
+@example:
 var list = new dhx.List("list", {multiselection:true});
 
 

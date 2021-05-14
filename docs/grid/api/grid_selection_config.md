@@ -7,7 +7,7 @@ title: selection
 
 @signature: {'selection?: "cell" | "row" | "complex";'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	selection:"complex",  /*!*/

@@ -7,7 +7,7 @@ title: collapsed
 
 @signature: {'collapsed?: boolean;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", collapsed:true}

@@ -7,7 +7,7 @@ title: html
 
 @signature: {'html?: string;'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container",{
 	views:[ 
 		{ tab: "left", html:"Some HTML1"},

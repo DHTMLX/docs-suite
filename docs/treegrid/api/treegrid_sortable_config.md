@@ -9,7 +9,7 @@ title: sortable
 
 @default: true
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [// columns config],
     sortable:false, /*!*/  

@@ -7,7 +7,7 @@ title: value
 
 @signature: value?: Date | Date[] | string | string[];
 
-@example: 
+@example:
 // selects a date
 var calendar = new dhx.Calendar("calendar_container", {
     value: new Date(2019,01,10)

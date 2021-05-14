@@ -9,7 +9,7 @@ title: viewportOverflow
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     viewportOverflow:true
 });

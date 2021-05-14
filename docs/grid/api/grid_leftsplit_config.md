@@ -7,7 +7,7 @@ title: leftSplit
 
 @signature: {'leftSplit?: number;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	leftSplit:2,  /*!*/

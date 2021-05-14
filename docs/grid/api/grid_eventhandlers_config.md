@@ -7,7 +7,7 @@ title: eventHandlers
 
 @signature: {'eventHandlers?: {[key: string]: any; };'}
 
-@example: 
+@example:
 
 // adds event handler to the HTML element of a custom template of a cell
 const grid = new dhx.Grid("grid", {

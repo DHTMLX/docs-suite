@@ -8,8 +8,8 @@ title: setConfig
 @signature: {'setConfig(config: IChartConfig): void;'}
 
 @params:
-- config	object	 an object with chart configuration
-s
+- config	object	 an object with chart configurations
+
 @example:
 var config = {
     type: "radar",

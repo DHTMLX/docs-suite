@@ -7,7 +7,7 @@ title: spans
 
 @signature: {'spans?: ISpan[];'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	spans: [

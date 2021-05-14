@@ -7,7 +7,7 @@ title: leftSplit
 
 @signature: {'leftSplit?: number;'}
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [// columns config],
 	leftSplit:2,  /*!*/

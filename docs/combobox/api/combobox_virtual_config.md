@@ -7,7 +7,7 @@ title: virtual
 
 @signature: {'virtual?: boolean;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     virtual:true
 });

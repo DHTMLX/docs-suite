@@ -7,7 +7,7 @@ title: align
 
 @signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
 
-@example: 
+@example:
 var layout = dhx.Layout("layout_container", {
    rows: [
         {

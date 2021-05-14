@@ -7,7 +7,7 @@ title: data
 
 @signature: {'data?: DataCollection<any> | any[];'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview_container", {
     data: [
     	{

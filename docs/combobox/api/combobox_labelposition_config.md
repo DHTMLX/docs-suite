@@ -7,7 +7,7 @@ title: labelPosition
 
 @signature: {'labelPosition?: "left" | "top";'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     labelPosition:"left"
 });

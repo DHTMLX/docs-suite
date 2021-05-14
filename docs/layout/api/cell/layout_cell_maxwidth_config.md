@@ -7,7 +7,7 @@ title: maxWidth
 
 @signature: {'maxWidth?: number | string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
       { header: "Cell header", maxWidth: "700px"}

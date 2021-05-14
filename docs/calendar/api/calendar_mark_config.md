@@ -7,7 +7,7 @@ title: mark
 
 @signature: {'mark?: (a: Date) => string;'}
 
-@example: 
+@example:
 <style>
     .highlight-date {
         color: #fff;

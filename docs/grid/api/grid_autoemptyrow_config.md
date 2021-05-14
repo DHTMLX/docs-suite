@@ -9,7 +9,7 @@ title: autoEmptyRow
 
 @default: true
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	autoEmptyRow:true,  /*!*/

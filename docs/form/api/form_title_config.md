@@ -7,7 +7,7 @@ title: title
 
 @signature: {'title?: string;'}
 
-@example: 
+@example:
 var form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	title: "Form", /*!*/ // title for rows

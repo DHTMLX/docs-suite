@@ -7,7 +7,7 @@ title: label
 
 @signature: {'label?: string;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     label:"My Combo label"
 });

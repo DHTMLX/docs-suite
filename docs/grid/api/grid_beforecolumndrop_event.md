@@ -31,9 +31,22 @@ grid.events.on("BeforeColumnDrop", function(data, events){
 
 The data object contains the following parameters:
 
-- **start** - (*string*) the id of a column, from which the dragging process has started
-- **source** - (*string[]*) an array with ids of dragged columns
-- **target** - (*string*) the id of a potential target column
+<table>
+	<tbody>
+        <tr>
+			<td><b>start</b></td>
+			<td>(<i>string</i>) the id of a column, from which the dragging process has started</td>
+		</tr>
+        <tr>
+			<td><b>source</b></td>
+			<td>(<i>string[]</i>) an array with ids of dragged columns</td>
+		</tr>
+        <tr>
+			<td><b>target</b></td>
+			<td>(<i>string</i>) the id of a potential target column</td>
+		</tr>
+    </tbody>
+</table>
 
 
 @changelog:

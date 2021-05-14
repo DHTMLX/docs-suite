@@ -9,7 +9,7 @@ title: editable
 
 @default: false
 
-@example: 
+@example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [// columns config],
 	editable:true, /*!*/

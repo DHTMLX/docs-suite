@@ -7,7 +7,7 @@ title: checkbox
 
 @signature: {'checkbox?: boolean;'}
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", {checkbox: true});
 
 
