@@ -36,14 +36,10 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-
-
 @descr: 
-
 
 **Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
-@related: form/how_to_start.md#initialize-form
-form/configuration.md#alignment
-
 @changelog: added in v6.4
+
+[comment]: # (@related: form/how_to_start.md#initialize-form form/configuration.md#alignment)

@@ -10,8 +10,4 @@ title: disable
 @example:
 form.getItem("combo").disable();
 
-
-
 @descr:
-
-

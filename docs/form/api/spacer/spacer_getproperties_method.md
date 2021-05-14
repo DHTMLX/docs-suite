@@ -29,7 +29,6 @@ form.getItem("spacer").getProperties();
 	width: "content"
 }
 
-
 @descr:
 
 The returned object of the **Spacer** control can contain the following configuration attributes:
@@ -50,8 +49,5 @@ The returned object of the **Spacer** control can contain the following configur
 		</tr>
     </tbody>
 </table>
-
-
-
 
 @changelog: added in v7.0

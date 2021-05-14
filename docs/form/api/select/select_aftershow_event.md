@@ -15,9 +15,6 @@ form.getItem("select").events.on("AfterShow", function(value) {
     console.log("AfterShow", value);
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

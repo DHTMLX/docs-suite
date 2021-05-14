@@ -19,7 +19,6 @@ form.getItem("timepicker").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
 @descr:
 
 The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):
@@ -29,6 +28,6 @@ The type of the value parameter depends on the applied [valueFormat](form/timepi
 - If *valueFormat: "timeObject"*  and *timeFormat:24* are specified, the object value will contain key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
 - If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, the object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
 
-@relatedapi: form/api/timepicker/timepicker_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/timepicker/timepicker_validate_method.md)

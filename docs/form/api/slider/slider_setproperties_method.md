@@ -17,8 +17,6 @@ form.getItem("slider").setProperties({
     tooltip: false
 });
 
-
-
 @descr:
 
 The method invokes the [](form/api/slider/slider_afterchangeproperties_event.md) and [](form/api/slider/slider_beforechangeproperties_event.md) events.
@@ -105,9 +103,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
   </tbody>
 </table>
-
-
-
-
 
 @changelog: added in v7.0

@@ -7,7 +7,6 @@ title: isVisible
 
 @signature: {'isVisible(name?: string): boolean;'}
 
-
 @params:
 - name|id			string		the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
@@ -21,19 +20,10 @@ form.isVisible(); // -> true/false
 // checks whether a form control is visible
 form.isVisible("combo"); // -> true/false
 
-
-
 @descr:
 
 @changelog: added in v6.5
 
+[comment]: # (@related:form/work_with_form.md#checking-if-a-form-is-visible)
 
-@related:form/work_with_form.md#checking-if-a-form-is-visible
-
-@relatedapi: 
-form/api/form_hide_method.md
-form/api/form_show_method.md
-
-
-
-
+[comment]: # (@relatedapi: form/api/form_hide_method.md form/api/form_show_method.md)

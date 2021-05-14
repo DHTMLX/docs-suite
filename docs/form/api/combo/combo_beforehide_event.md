@@ -14,14 +14,11 @@ title: beforeHide
 @returns:
 param   boolean     false - to prevent a control from being hidden, otherwise - true
 
-
 @example:
 form.getItem("combo").events.on("BeforeHide", function(value, init) {
     console.log("BeforeHide", value, init);
     return true;
 });
-
-
 
 @descr:
 

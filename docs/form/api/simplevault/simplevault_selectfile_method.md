@@ -11,7 +11,4 @@ title: selectFile
 form.getItem("simplevault").selectFile(); 
 // -> true/false
 
-
 @descr:
-
-

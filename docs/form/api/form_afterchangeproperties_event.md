@@ -16,9 +16,8 @@ form.events.on("AfterChangeProperties", function(name, properties) {
     console.log("AfterChangeProperties", name,  properties);
 });
 
-
 @descr:
 
-@relatedapi: form/api/form_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/form_setproperties_method.md)

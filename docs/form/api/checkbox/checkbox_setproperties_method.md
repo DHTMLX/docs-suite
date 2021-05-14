@@ -18,7 +18,6 @@ form.getItem("checkbox").setProperties({
     padding: 20
 });
 
-
 @descr:
 
 The method invokes the [](form/api/checkbox/checkbox_afterchangeproperties_event.md) and [](form/api/checkbox/checkbox_beforechangeproperties_event.md) events.

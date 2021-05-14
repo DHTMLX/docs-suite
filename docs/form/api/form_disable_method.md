@@ -12,15 +12,12 @@ title: disable
 @example:
 form.disable();
 
-
 @descr:
 
 **Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
 
-@relatedapi: form/api/form_enable_method.md
-form/api/form_isdisabled_method.md
+@changelog: added in v6.4
 
-@related: form/work_with_form.md#enablingdisabling-a-form
+[comment]: # (@relatedapi: form/api/form_enable_method.md form/api/form_isdisabled_method.md)
 
-@changelog:
-added in v6.4
+[comment]: # (@related: form/work_with_form.md#enablingdisabling-a-form)

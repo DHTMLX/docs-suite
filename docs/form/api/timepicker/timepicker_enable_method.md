@@ -10,5 +10,4 @@ title: enable
 @example:
 form.getItem("timepicker").enable();
 
-
 @descr:

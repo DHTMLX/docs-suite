@@ -10,8 +10,4 @@ title: show
 @example:
 form.getItem("input").show();
 
-
-
 @descr:
-
-

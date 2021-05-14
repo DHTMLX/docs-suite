@@ -19,11 +19,8 @@ form.getItem("button").events.on("BeforeChangeProperties", function(properties) 
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/button/button_setproperties_method.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/button/button_setproperties_method.md)

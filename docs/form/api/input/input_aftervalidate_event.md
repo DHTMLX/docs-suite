@@ -11,16 +11,13 @@ title: afterValidate
 - value       string | number  the validated value
 - isValid     boolean     the result of validation
 
-
 @example:
 form.getItem("input").events.on("AfterValidate", function(value, isValid) {
     console.log("AfterValidate", value, isValid);
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/input/input_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/input/input_validate_method.md)

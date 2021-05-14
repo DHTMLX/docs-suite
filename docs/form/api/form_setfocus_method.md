@@ -7,17 +7,11 @@ title: setFocus
 
 @signature: {'setFocus(name: string): void;'}
 
-
 @params:
 - name|id	string  the name of the control or its id (if the name attribute is not defined in the config of the control)
 
-
-
-
 @example:
 form.setFocus("checkbox");
-
-
 
 @descr:
 
@@ -25,10 +19,6 @@ form.setFocus("checkbox");
 
 **Related sample**: [Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
 
-@changelog:
-added in v7.0
+@changelog: added in v7.0
 
-@related: form/work_with_form.md#setting-focus-to-a-control
-
-
-
+[comment]: # (@related: form/work_with_form.md#setting-focus-to-a-control)

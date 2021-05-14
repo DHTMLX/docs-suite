@@ -10,8 +10,4 @@ title: show
 @example:
 form.getItem("select").show();
 
-
-
 @descr:
-
-

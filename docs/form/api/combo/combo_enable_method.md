@@ -10,8 +10,4 @@ title: enable
 @example:
 form.getItem("combo").enable();
 
-
-
 @descr:
-
-

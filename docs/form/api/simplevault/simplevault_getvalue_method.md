@@ -14,10 +14,4 @@ param   array     the current value of the control
 var value = form.getItem("simplevault").getValue();
 // -> [{...}, {...}]
 
-
-
-
-
 @descr:
-
-

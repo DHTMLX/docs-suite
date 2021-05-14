@@ -7,15 +7,7 @@ title: clear
 
 @signature: {'clear(): void;'}
 
-
-
-
-
 @example:
 form.getItem("checkbox").clear();
 
-
-
 @descr:
-
-

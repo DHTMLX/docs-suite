@@ -10,8 +10,4 @@ title: hide
 @example:
 form.getItem("input").hide(); 
 
-
-
 @descr:
-
-

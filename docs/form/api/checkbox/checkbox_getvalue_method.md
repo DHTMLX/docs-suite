@@ -17,8 +17,6 @@ var value = form.getItem("checkbox").getValue(); // -> "checkbox_value"
 // returns state if the value is not specified for the checkbox
 var state = form.getItem("checkbox").getValue(); // -> true/false
 
-
-
 @descr:
 
 - If the **value** property is not set for a control, the method returns the state of the control:
@@ -59,4 +57,3 @@ var form = new dhx.Form("form_container", {
 
 var value = form.getItem("checkbox").getValue(); // -> ""
 ~~~
-

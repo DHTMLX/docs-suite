@@ -37,7 +37,6 @@ form.getItem("text").getProperties();
 	width: "content"
 }
 
-
 @descr:
 
 The returned object of the **Text** control can contain the following configuration attributes:
@@ -82,9 +81,5 @@ The returned object of the **Text** control can contain the following configurat
 		</tr>
     </tbody>
 </table>
-
-
-
-
 
 @changelog: added in v7.0

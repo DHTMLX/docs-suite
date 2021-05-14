@@ -14,9 +14,4 @@ param   string     the current value of the control
 var value = form.getItem("colorpicker").getValue();
 // -> "#90D2AF"
 
-
-
-
 @descr:
-
-

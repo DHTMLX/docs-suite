@@ -15,8 +15,4 @@ form.getItem("slider").setValue([2]);
 // or
 form.getItem("slider").setValue([2,10]);
 
-
-
 @descr:
-
-

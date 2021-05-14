@@ -10,13 +10,10 @@ title: change
 @params:
 - value     string | number     the current value of the control
 
-
 @example:
 form.getItem("input").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
-
 
 @descr:
 

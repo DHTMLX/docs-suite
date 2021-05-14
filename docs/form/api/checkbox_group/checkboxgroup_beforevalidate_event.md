@@ -7,7 +7,6 @@ title: beforeValidate
 
 @signature: {'beforeValidate: (value: ICheckboxGroupValue) => boolean | void;'}
  
-
 @params:
 - value       object  the value to be validated. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of a checkbox.
 
@@ -20,8 +19,4 @@ form.getItem("CheckboxGroup").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
-
-

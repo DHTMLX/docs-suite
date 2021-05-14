@@ -10,13 +10,10 @@ title: change
 @params:
 - value     array     the current value of the control
 
-
 @example:
 form.getItem("simplevault").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
-
 
 @descr:
 

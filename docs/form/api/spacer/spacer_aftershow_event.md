@@ -15,6 +15,4 @@ form.getItem("spacer").events.on("AfterShow", function(value) {
     console.log("AfterShow", value);
 });
 
-
 @descr:
-

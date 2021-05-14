@@ -10,8 +10,4 @@ title: show
 @example:
 form.getItem("combo").show();
 
-
-
 @descr:
-
-

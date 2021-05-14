@@ -14,8 +14,6 @@ param   object    the dhtmlxColorPicker widget
 var colorpicker = form.getItem("colorpicker").getWidget();  
 // -> dhtmlxColorPicker
 
-
-
 @descr:
 
 **Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
@@ -28,5 +26,3 @@ For example, you can set focus on the specified value in the control. To do this
 var colorpicker = form.getItem("colorpicker").getWidget();  // -> ColorPicker
 colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 ~~~
-
-

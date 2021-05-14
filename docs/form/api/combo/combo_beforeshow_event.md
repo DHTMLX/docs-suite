@@ -13,14 +13,11 @@ title: beforeShow
 @returns:
 param   boolean     false - to prevent a control from being shown, otherwise - true
 
-
 @example:
 form.getItem("combo").events.on("BeforeShow", function(value) {
     console.log("BeforeShow", value);
     return true;
 });
-
-
 
 @descr:
 

@@ -17,8 +17,6 @@ form.getItem("textarea").setProperties({
     width: 500
 });
 
-
-
 @descr:
 
 The method invokes the [](form/api/textarea/textarea_afterchangeproperties_event.md) and [](form/api/textarea/textarea_beforechangeproperties_event.md) events.
@@ -102,9 +100,5 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
     </tbody>
 </table>
-
-
-
-
 
 @changelog: added in v7.0

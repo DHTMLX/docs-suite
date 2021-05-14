@@ -7,23 +7,18 @@ title: validate
 
 @signature: {'validate(silent): boolean;'}
 
-
 @params:
 - silent    boolean     optional, if true - the method will return the result of validation without calling validation events and without modifying the form visually
-
 
 @returns:
 - result	boolean 	the result of validation: true, if a form is valid, otherwise - false
 
-
 @example:
 var result = form.validate(true); // -> true/false
 
-
-
 @descr:
-**Related sample**:
-- [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
+
+**Related sample**: [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
 Starting with v7.0, the method validates only [the required fields or the fields that contain validation rules](form/work_with_form.md#validatingform).
 
@@ -33,12 +28,8 @@ Calling without the **silent** parameter, the method invokes the [BeforeValidate
 var result = form.validate(); // -> true/false
 ~~~
 
+@changelog: 
 
-@changelog:
 The **silent** parameter is added in v7.0.
 
-@related:
-form/work_with_form.md#validating-form
-
-
-
+[comment]: # (@related: form/work_with_form.md#validating-form)

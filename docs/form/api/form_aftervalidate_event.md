@@ -17,9 +17,8 @@ form.events.on("AfterValidate", function(name, value, isValid) {
     console.log("AfterValidate", name, value, isValid); 
 });
 
-
 @descr:
 
-@relatedapi: form/api/form_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/form_validate_method.md)

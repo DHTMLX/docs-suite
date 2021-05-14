@@ -13,8 +13,4 @@ title: setValue
 @example:
 form.getItem("checkbox").setValue(true); 
 
-
-
 @descr:
-
-

@@ -15,7 +15,6 @@ form.getItem("timepicker").events.on("Input", function(inputValue) {
     console.log("Input", inputValue);
 });
 
-
 @descr:
 
 {{note The functionality is available when the "editable" option of the TimePicker control is set to *true*.}}

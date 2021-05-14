@@ -51,7 +51,6 @@ form.getProperties();
 form.getProperties("password");
 // -> {inputType: "password", label: "Password", placeholder: "********", …}
 
-
 @descr:
 
 {{note The returned object can contain only the properties that are listed below for each control.}}
@@ -110,7 +109,6 @@ form.getProperties("name");
 	width: "content"
 }
 ```
-
 ## Button
 
 The returned object of the **Button** control can contain the following configuration attributes:
@@ -1017,7 +1015,6 @@ The returned object of the **Slider** control can contain the following configur
   </tbody>
 </table>
 
-
 ## Spacer
 
 The returned object of the **Spacer** control can contain the following configuration attributes:
@@ -1038,7 +1035,6 @@ The returned object of the **Spacer** control can contain the following configur
 		</tr>
     </tbody>
 </table>
-
 
 ## Text
 
@@ -1096,7 +1092,6 @@ The returned object of the **Text** control can contain the following configurat
 		</tr>
     </tbody>
 </table>
-
 
 ## Textarea
 
@@ -1261,6 +1256,6 @@ The returned object of the **TimePicker** control can contain the following conf
     </tbody>
 </table>
 
-@relatedapi: form/api/form_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/form_setproperties_method.md)

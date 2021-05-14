@@ -8,7 +8,6 @@ description: description
 
 @signature: {'setProperties(arg: string | { [name: string]: IFormProps }, props?: IFormProps): void;'}
 
-
 @params:
 
 - arg string,object either the name of the control or its id (if the name attribute is not defined in the config of the control), or an object with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their new values
@@ -23,7 +22,6 @@ form.setProperties("input_name", {
 	maxlength: 15,
 	readOnly: true
 });
-
 
 @descr:
 
@@ -1298,5 +1296,4 @@ It is possible to change the following configuration attributes of the **TimePic
 
 @changelog: added in v7.0
 
-@relatedapi: form/api/form_getproperties_method.md
-
+[comment]: # (@relatedapi: form/api/form_getproperties_method.md)

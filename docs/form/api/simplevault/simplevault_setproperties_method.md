@@ -17,7 +17,6 @@ form.getItem("simplevault").setProperties({
     labelPosition: "top"
 });
  
-
 @descr:
 The method invokes the [](form/api/simplevault/simplevault_afterchangeproperties_event.md) and [](form/api/simplevault/simplevault_beforechangeproperties_event.md) events.
 

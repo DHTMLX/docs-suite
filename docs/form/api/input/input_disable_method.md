@@ -7,15 +7,7 @@ title: disable
 
 @signature: {'disable(): void;'}
 
-
-
-
-
 @example:
 form.getItem("input").disable();
 
-
-
 @descr:
-
-

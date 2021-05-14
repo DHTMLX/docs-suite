@@ -11,9 +11,4 @@ title: show
 form.getItem("button").show();
 // -> true/false
 
-
-
 @descr:
-
-
-

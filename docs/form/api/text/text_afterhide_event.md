@@ -16,7 +16,6 @@ form.getItem("text").events.on("AfterHide", function(value, init) {
     console.log("AfterHide", value, init);
 });
 
-
 @descr:
 
 @changelog: added in v7.0

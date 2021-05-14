@@ -10,16 +10,11 @@ title: afterShow
 @params:
 - value     string | number     the current value of the control
 
-
-
 @example:
 form.getItem("input").events.on("AfterShow", function(value) {
     console.log("AfterShow", value);
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

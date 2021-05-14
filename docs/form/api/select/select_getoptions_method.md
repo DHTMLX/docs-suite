@@ -13,12 +13,9 @@ title: getOptions
 @example:
 form.getItem("select").getOptions(); --> [{…}, {…}]
 
-
-
 @descr:
 
-Each option is an object with a set of *key:value* pairs - attributes of options and
-their values:
+Each option is an object with a set of *key:value* pairs - attributes of options and their values:
 
 - **value** - (*string|number*) mandatory, sets the value for the select option
 - **content** - (*string*) mandatory, the content displayed in the select option

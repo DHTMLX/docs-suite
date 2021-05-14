@@ -19,9 +19,8 @@ form.getItem("textarea").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
 @descr:
 
-@relatedapi: form/api/textarea/textarea_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/textarea/textarea_validate_method.md)

@@ -19,11 +19,8 @@ form.getItem("slider").events.on("BeforeChangeProperties", function(properties) 
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/slider/slider_setproperties_method.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/slider/slider_setproperties_method.md)

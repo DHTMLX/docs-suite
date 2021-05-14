@@ -15,10 +15,8 @@ form.getItem("checkboxGroup").events.on("AfterChangeProperties", function(proper
     console.log("AfterChangeProperties", properties);
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/checkbox_group/checkboxgroup_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/checkbox_group/checkboxgroup_setproperties_method.md)

@@ -19,10 +19,8 @@ form.getItem("combo").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/combo/combo_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/combo/combo_validate_method.md)

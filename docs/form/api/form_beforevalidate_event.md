@@ -20,10 +20,8 @@ form.events.on("BeforeValidate", function(name, value) {
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/form_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/form_validate_method.md)

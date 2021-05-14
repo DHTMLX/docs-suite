@@ -14,7 +14,4 @@ param   boolean     true, if a control is disabled, otherwise false
 form.getItem("simplevault").isDisabled(); 
 // -> true/false
 
-
 @descr:
-
-

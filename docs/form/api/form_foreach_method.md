@@ -17,7 +17,6 @@ form.forEach(function(item, index, array) {
     console.log("This is the array with form controls: ", array);
 });
 
-
 @descr:
 
 **Related sample**: [Form. ForEach](https://snippet.dhtmlx.com/hqzqpavs)
@@ -40,6 +39,5 @@ The callback function takes three parameters:
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v6.4

@@ -10,13 +10,10 @@ title: change
 @params:
 - value     string|string[]     the current value of the control
 
-
 @example:
 form.getItem("combo").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
-
 
 @descr:
 

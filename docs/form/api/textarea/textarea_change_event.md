@@ -15,7 +15,6 @@ form.getItem("textarea").events.on("Change", function(value) {
     console.log("Change", value);
 });
 
-
 @descr:
 
 @changelog: added in v7.0

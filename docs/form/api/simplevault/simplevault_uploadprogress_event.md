@@ -16,8 +16,8 @@ form.getItem("simpleVault").events.on("UploadProgress", function(progress, value
     console.log("UploadProgress", progress, value);
 });
 
-
 @descr:
 
 @changelog:
+
 The **value** parameter is added in v7.0.

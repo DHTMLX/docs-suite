@@ -10,7 +10,6 @@ title: getProperties
 @returns:
 param   object      an object with the available attributes of the control and their values
 
-
 @example:
 var form = new dhx.Form("form_container", {
     rows: [
@@ -47,7 +46,6 @@ form.getItem("colorpicker").getProperties();
 	validation: undefined,
 	width: "content"
 }
-
 
 @descr:
 
@@ -137,6 +135,5 @@ The returned object of the **ColorPicker** control can contain the following con
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

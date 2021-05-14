@@ -16,9 +16,8 @@ form.getItem("simpleVault").events.on("UploadComplete", function(files, value) {
     console.log("UploadComplete", files, value);
 });
 
-
-
 @descr:
 
 @changelog:
+
 The **value** parameter is added in v7.0.

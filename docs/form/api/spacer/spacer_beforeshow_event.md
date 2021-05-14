@@ -19,5 +19,4 @@ form.getItem("spacer").events.on("BeforeShow", function(value) {
     return true;
 });
 
-
 @descr:

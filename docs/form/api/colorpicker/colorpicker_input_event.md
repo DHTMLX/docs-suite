@@ -10,13 +10,10 @@ title: input
 @params:
 - inputValue        string  an entered value
 
-
 @example:
 form.getItem("colorpicker").events.on("Input", function(inputValue) {
     console.log("Input", inputValue);
 });
-
-
 
 @descr:
 

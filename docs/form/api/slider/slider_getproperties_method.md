@@ -49,7 +49,6 @@ form.getItem("slider").getProperties();
 	width: "content"
 }
 
-
 @descr:
 
 The returned object of the **Slider** control can contain the following configuration attributes:
@@ -130,9 +129,5 @@ The returned object of the **Slider** control can contain the following configur
 		</tr>
   </tbody>
 </table>
-
-
-
-
 
 @changelog: added in v7.0

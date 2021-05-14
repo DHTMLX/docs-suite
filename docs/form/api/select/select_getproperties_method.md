@@ -53,7 +53,6 @@ form.getItem("select").getProperties();
 	width: "200px"
 }
 
-
 @descr:
 
 The returned object of the **Select** control can contain the following configuration attributes:
@@ -114,8 +113,5 @@ The returned object of the **Select** control can contain the following configur
 		</tr>
     </tbody>
 </table>
-
-
-
 
 @changelog: added in v7.0

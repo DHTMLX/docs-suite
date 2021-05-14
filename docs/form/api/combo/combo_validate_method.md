@@ -21,7 +21,6 @@ form.getItem("combo").validate(true, "id_2"); // -> true/false
 // the method validates the current value
 form.getItem("combo").validate(true); // -> true/false
 
-
 @descr:
 
 When calling without parameters or setting the **silent** parameter to *false*, the method invokes the [BeforeValidate](form/api/combo/combo_beforevalidate_event.md) and [AfterValidate](form/api/combo/combo_aftervalidate_event.md) events and visually modifies the control.
@@ -34,7 +33,6 @@ form.getItem("combo").validate(false, "id_2"); // -> true/false
 form.getItem("combo").validate(); // -> true/false
 ~~~
 
-
 @changelog: 
-The **silent** and **validateValue** parameters are added in v7.0
 
+The **silent** and **validateValue** parameters are added in v7.0

@@ -34,17 +34,12 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-
-
 @descr: 
 
-
-**Related sample**:
-- [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
-
-@related: form/how_to_start.md#initialize-form
-form/configuration.md#grouping-controls-in-form
-
-@relatedapi: form/api/form_rows_config.md
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 @changelog: added in v6.4
+
+[comment]: # (@related: form/how_to_start.md#initialize-form form/configuration.md#grouping-controls-in-form)
+
+[comment]: # (@relatedapi: form/api/form_rows_config.md)

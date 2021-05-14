@@ -10,5 +10,4 @@ title: show
 @example:
 form.getItem("spacer").show(); 
 
-
 @descr:

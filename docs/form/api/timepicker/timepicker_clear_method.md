@@ -10,5 +10,4 @@ title: clear
 @example:
 form.getItem("timepicker").clear();
 
-
 @descr:

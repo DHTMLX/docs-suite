@@ -13,5 +13,4 @@ title: setValue
 @example:
 form.getItem("text").setValue("This is the Text control");
 
-
 @descr:

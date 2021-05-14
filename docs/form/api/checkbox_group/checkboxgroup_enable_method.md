@@ -7,13 +7,7 @@ title: enable
 
 @signature: {'enable(): void;'}
 
-
-
 @example:
 form.getItem("CheckboxGroup").enable();
 
-
-
 @descr:
-
-

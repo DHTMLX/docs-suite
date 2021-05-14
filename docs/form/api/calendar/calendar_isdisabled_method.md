@@ -10,12 +10,8 @@ title: isDisabled
 @returns:
 param   boolean     true, if a control is disabled, otherwise false
 
-
 @example:
 form.getItem("datepicker").isDisabled(); 
 // -> true/false
 
-
 @descr:
-
-

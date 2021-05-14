@@ -10,8 +10,4 @@ title: clear
 @example:
 form.getItem("slider").clear();
 
-
-
 @descr:
-
-

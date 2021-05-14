@@ -10,16 +10,11 @@ title: afterShow
 @params:
 - value     Date|string     the current value of the control
 
-
-
 @example:
 form.getItem("datepicker").events.on("AfterShow", function(value) {
     console.log("AfterShow", value);
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

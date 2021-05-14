@@ -16,7 +16,6 @@ form.getItem("timepicker").events.on("AfterHide", function(value, init) {
     console.log("AfterHide", value, init);
 });
 
-
 @descr:
 
 The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):

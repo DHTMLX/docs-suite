@@ -15,10 +15,8 @@ form.getItem("radiogroup").events.on("AfterChangeProperties", function(propertie
     console.log("AfterChangeProperties", properties);
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/radiogroup/radiogroup_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/radiogroup/radiogroup_setproperties_method.md)

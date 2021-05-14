@@ -10,8 +10,4 @@ title: show
 @example:
 form.getItem("radiogroup").show();
 
-
-
 @descr:
-
-

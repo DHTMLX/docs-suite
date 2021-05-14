@@ -43,9 +43,7 @@ form.getItem("checkbox").getProperties();
 	width: "content"
 }
 
-
 @descr:
-
 
 The returned object of the **Checkbox** control can contain the following configuration attributes:
 

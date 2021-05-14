@@ -15,9 +15,8 @@ form.getItem("slider").events.on("AfterChangeProperties", function(properties) {
     console.log("AfterChangeProperties", properties);
 });
 
-
 @descr:
 
-@relatedapi: form/api/slider/slider_setproperties_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/slider/slider_setproperties_method.md)

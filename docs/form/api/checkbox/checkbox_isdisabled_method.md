@@ -13,8 +13,4 @@ param   boolean     true, if a control is disabled, otherwise - false
 @example:
 form.getItem("checkbox").isDisabled(); // -> true/false
 
-
-
 @descr:
-
-

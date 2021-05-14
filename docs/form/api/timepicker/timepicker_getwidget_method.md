@@ -14,7 +14,6 @@ param   object    the dhtmlxTimePicker widget
 var timepicker = form.getItem("timepicker").getWidget();  
 // -> dhtmlxTimePicker
 
-
 @descr:
 
 It is possible to use methods of dhtmlxTimePicker via the **getWidget()** method of a TimePicker control.

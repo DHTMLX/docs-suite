@@ -10,7 +10,6 @@ title: getProperties
 @returns:
 param   object      an object with the available attributes of the control and their values
 
-
 @example:
 var form = new dhx.Form("form_container", {
     rows: [
@@ -44,7 +43,6 @@ form.getItem("button").getProperties();
 	view: "flat",
 	width: "content"
 }
-
 
 @descr:
 
@@ -106,6 +104,5 @@ The returned object of the **Button** control can contain the following configur
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v7.0

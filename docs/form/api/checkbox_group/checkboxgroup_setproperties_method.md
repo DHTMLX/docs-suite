@@ -11,8 +11,6 @@ title: setProperties
 - arg	string,object      either the id of a checkbox, or an object with the available attributes of the CheckboxGroup control and their new values
 - props	    object      optional, an object with the available attributes of the checkbox and their new values
 
-
-
 @example:
 // 1. Changes values in the configuration of the CheckboxGroup control
 form.getItem("checkboxGroup").setProperties({
@@ -44,7 +42,6 @@ form.getItem("checkboxGroup").setProperties("first", {
     text: "New Text",
 	padding: 20
 });
-
 
 @descr:
 

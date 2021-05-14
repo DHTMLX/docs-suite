@@ -19,11 +19,8 @@ form.getItem("input").events.on("BeforeChangeProperties", function(properties) {
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/input/input_setproperties_method.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/input/input_setproperties_method.md)

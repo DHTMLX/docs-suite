@@ -10,13 +10,10 @@ title: change
 @params:
 - value     string     the current value of the control
 
-
 @example:
 form.getItem("colorpicker").events.on("Change", function(value) {
     console.log("Change", value);
 });
-
-
 
 @descr:
 

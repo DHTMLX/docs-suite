@@ -14,11 +14,8 @@ form.events.on("AfterSend", function(){
    // your logic here
 });
 
-
 @descr:
 
-@relatedapi: 
-form/api/form_beforesend_event.md
-form/api/form_send_method.md
-
 @changelog: added in v6.1
+
+[comment]: # (@relatedapi: form/api/form_beforesend_event.md form/api/form_send_method.md)

@@ -14,8 +14,4 @@ param   boolean     true - if a control is valid, otherwise false
 form.getItem("select").validate();
 // -> true/false
 
-
-
 @descr:
-
-
