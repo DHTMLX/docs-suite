@@ -15,9 +15,8 @@ const pagination = new dhx.Pagination("pagination_container", {
     page: 4 
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [Pagination. Initial page index](https://snippet.dhtmlx.com/5vwz8tgb)
 
-@related: pagination/configuration.md#initial-page
+[comment]: # (@related: pagination/configuration.md#initial-page)

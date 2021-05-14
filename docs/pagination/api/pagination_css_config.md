@@ -7,7 +7,7 @@ title: css
 
 @signature: {'css?: string;'}
 
-~~~js
+@example:
 <style>
 	.custom_class {
 		margin: 0px;
@@ -17,16 +17,13 @@ title: css
 		color: #5858E3;
 	}
 </style>
-~~~
 
 const pagination = new dhx.Pagination("pagination_container", {
     css: "custom_class" 
 });
 
-
-
 @descr:
- 
+
 **Related sample**: [Pagination. Custom style](https://snippet.dhtmlx.com/e7bujtsu)
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Pagination.
@@ -63,6 +60,4 @@ var chart = new dhx.Pagination("pagination_container", {
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-
-
-@related: pagination/customization.md
+[comment]: # (@related: pagination/customization.md)

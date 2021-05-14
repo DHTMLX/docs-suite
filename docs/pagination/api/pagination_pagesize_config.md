@@ -14,12 +14,8 @@ const pagination = new dhx.Pagination("pagination_container", {
     pageSize: 22 
 });
 
-
-
-@descr: 
-
-
+@descr:
 
 **Related sample**: [Pagination. Page size](https://snippet.dhtmlx.com/m57w0vlb)
 
-@related: pagination/configuration.md#number-of-items-per-page
+[comment]: # (@related: pagination/configuration.md#number-of-items-per-page)
