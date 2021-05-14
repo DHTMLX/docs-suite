@@ -15,14 +15,6 @@ var popup = new dhx.Popup();
 popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 
-
-
 @descr:
 
-
 **Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
-
-
-
-
-

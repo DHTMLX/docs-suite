@@ -19,8 +19,6 @@ popup.events.on("BeforeShow", function(element){
     return true;
 });
 
-
-
 @descr:
 
 **Related samples**:
@@ -29,7 +27,6 @@ popup.events.on("BeforeShow", function(element){
 
 The event is blockable. Return *false* to block showing a popup.
 
-@related: popup/event_handling.md
+[comment]: # (@related: popup/event_handling.md)
 
-@relatedapi:
-popup/api/popup_aftershow_event.md
+[comment]: # (@relatedapi: popup/api/popup_aftershow_event.md)

@@ -10,14 +10,4 @@ title: destructor
 @example:
 popup.destructor();
 
-
-
 @descr:
-
-
-
-
-
-
-
-

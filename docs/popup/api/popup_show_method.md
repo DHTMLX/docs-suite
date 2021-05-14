@@ -11,15 +11,12 @@ title: show
 - element 		HTMLElement		 mandatory, the container to place a popup in
 - config 		object			 optional, the configuration object of a popup
 
-
 @example:
 <div id="popup_container"></div>
 
 var popup = new dhx.Popup();
- 
+
 popup.show("popup_container");
-
-
 
 @descr:
 
@@ -50,13 +47,9 @@ The **config** object can contain the properties below:
     </tbody>
 </table>
 
-
 @changelog:
 The **indent** property of the **config** parameter is added in v6.1.
 
-@related:popup/work_with_popup.md#hidingshowing-popup
+[comment]: # (@related:popup/work_with_popup.md#hidingshowing-popup)
 
-@relatedapi:
-popup/api/popup_hide_method.md
-
-
+[comment]: # (@relatedapi: popup/api/popup_hide_method.md)

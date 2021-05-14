@@ -20,10 +20,7 @@ popup.events.on("BeforeHide", function(fromOuterClick,e){
     return true;
 });
 
-
-
 @descr:
-
 
 **Related samples**:
 - [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
@@ -31,4 +28,4 @@ popup.events.on("BeforeHide", function(fromOuterClick,e){
 
 The event is blockable. Return *false* to block hiding a popup.
 
-@related: popup/event_handling.md
+[comment]: # (@related: popup/event_handling.md)
