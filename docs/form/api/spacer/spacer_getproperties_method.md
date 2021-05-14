@@ -33,18 +33,18 @@ form.getItem("spacer").getProperties();
 
 The returned object of the **Spacer** control can contain the following configuration attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
 		<tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
          <tr>
-			<td class="webixdoc_links0"><b>padding</b></td>
+			<td><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
 		</tr>	
 		<tr>
-			<td class="webixdoc_links0"><b>height</b></td>
+			<td><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
     </tbody>

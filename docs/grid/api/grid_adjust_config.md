@@ -25,22 +25,22 @@ var grid = new dhx.Grid("grid_container", {
 
 The property can be specified to one of the available adjustment modes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>"header"</b></td>
+			<td><b>"header"</b></td>
 			<td>adjusts the columns to the width of their header</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"footer"</b></td>
+			<td><b>"footer"</b></td>
 			<td>adjusts the columns to the width of their footer</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"data"</b></td>
+			<td><b>"data"</b></td>
 			<td>adjusts the columns to the width of their content</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>true</b></td>
+			<td><b>true</b></td>
 			<td>combines the above mentioned modes and adjusts the column to the bigger value</td>
 		</tr>
     </tbody>

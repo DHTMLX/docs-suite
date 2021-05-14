@@ -24,18 +24,18 @@ grid.events.on("DragColumnStart", function(data, events) {
 
 The data object contains the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>start</b></td>
+			<td><b>start</b></td>
 			<td>(<i>string</i>) the id of a column, from which the dragging process has started</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>source</b></td>
+			<td><b>source</b></td>
 			<td>(<i>string[]</i>) an array with ids of dragged columns</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the id of a potential target column</td>
 		</tr>
     </tbody>

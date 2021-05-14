@@ -29,22 +29,22 @@ const layout = new dhx.Layout("layout", {
 
 **Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>"line"</b></td>
+			<td><b>"line"</b></td>
 			<td>adds a border to a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"space"</b></td>
+			<td><b>"space"</b></td>
 			<td>adds a border and space around a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"wide"</b></td>
+			<td><b>"wide"</b></td>
 			<td>adds a border to a cell and space between the neighboring cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"none"</b></td>
+			<td><b>"none"</b></td>
 			<td>removes visible borders and space between cells</td>
 		</tr>
     </tbody>

@@ -47,14 +47,14 @@ You can manipulate List items with the help of the [Data collection API](data_co
 
 It is possible to add more items into the initialized List on the fly. Use the **add()** method of Data Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add an item at</td>
 		</tr>
     </tbody>
@@ -71,14 +71,14 @@ list.data.add({value:"New item"},1);
 
 You can change config options of the item via the **update()** method of Data Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>the id of the item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>an object with new configuration of the item</td>
 		</tr>
     </tbody>

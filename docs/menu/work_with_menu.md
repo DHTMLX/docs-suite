@@ -63,10 +63,10 @@ Checking if a menu option is disabled
 
 To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_isdisabled_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a menu item</td>
 		</tr>
     </tbody>
@@ -85,14 +85,14 @@ Selecting/Unselecting an item
 
 To select a particular Menu item, make use of the [select()](menu/api/menu_select_method.md) method of Menu. The method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of an item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>unselect</b></td>
+			<td><b>unselect</b></td>
 			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
 		</tr>
     </tbody>
@@ -128,10 +128,10 @@ Checking if a menu item is selected
 
 To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_isselected_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a menu item</td>
 		</tr>
     </tbody>

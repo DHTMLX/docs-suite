@@ -24,30 +24,30 @@ grid.addSpan({
 
 The **span** object contains the following properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string|number</i>) mandatory, the id of a row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+			<td><b>column</b></td>
 			<td>(<i>string|number</i>) mandatory, the id of a column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>rowspan</b></td>
+			<td><b>rowspan</b></td>
 			<td>(<i>number</i>) optional, the number of rows in a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>colspan</b></td>
+			<td><b>colspan</b></td>
 			<td>(<i>number</i>) optional, the number of columns in a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string|number</i>)  optional, the name of the CSS class that will be applied to a span</td>
 		</tr>
     </tbody>

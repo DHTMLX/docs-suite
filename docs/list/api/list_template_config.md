@@ -22,10 +22,10 @@ var list = new dhx.List("list", {
 
 The template function takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>(<i>object</i>) an object of a data item</td>
 		</tr>
     </tbody>

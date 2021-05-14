@@ -26,22 +26,22 @@ Setting selection to cells
 
 You can set selection to one or more rows or cells using the [setCell()](grid/api/selection/selection_setcell_method.md) method of the selection object. The method takes the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object|string</i>) an object with a cell to be selected or the id of a row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+			<td><b>column</b></td>
 			<td>(<i>object|string</i>) the config of a column or its id</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ctrlUp</b></td>
+			<td><b>ctrlUp</b></td>
 			<td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../grid/configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>shiftUp</b></td>
+			<td><b>shiftUp</b></td>
 			<td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../grid/configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
 		</tr>
     </tbody>
@@ -117,14 +117,14 @@ Removing selection
 
 Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [](grid/api/selection/selection_removecell_method.md) method of the selection object. The method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>rowId</b></td>
+			<td><b>rowId</b></td>
 			<td>(<i>string|number</i>) optional, the id of a row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>colId</b></td>
+			<td><b>colId</b></td>
 			<td>(<i>string|number</i>) optional, the id of a column</td>
 		</tr>
     </tbody>

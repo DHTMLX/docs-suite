@@ -32,18 +32,18 @@ layout.forEach(function(cell, index, array) {
 
 The callback function takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>cell</b></td>
+			<td><b>cell</b></td>
 			<td>(<i>object</i>) the object of a layout cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) the index of a layout cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>array</b></td>
+			<td><b>array</b></td>
 			<td>(<i>array</i>) an array with layout cells</td>
 		</tr>
     </tbody>
