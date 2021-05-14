@@ -58,18 +58,18 @@ ribbon.data.add({
 
 **add()** in this case receives three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>the configuration of the added item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>defines the position of the item in the block (-1 will place it after the last control)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>blockId</b></td>
+			<td><b>blockId</b></td>
 			<td>the ID of the block</td>
 		</tr>
     </tbody>

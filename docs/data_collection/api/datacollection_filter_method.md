@@ -62,18 +62,18 @@ grid.data.filter(function (item) {
 
 - if set as an object, the parameter has the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>) mandatory, the id of a data field (the column of Grid)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>match</b></td>
+			<td><b>match</b></td>
 			<td>(<i>string</i>) mandatory, a pattern to match</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>compare</b></td>
+			<td><b>compare</b></td>
 			<td>(<i>function</i>) optional, a function for extended filtering that takes three parameters:
                 <ul>
                     <li><b>value</b> - the value to compare (e.g. a column in a row for Grid)</li>
@@ -101,14 +101,14 @@ grid.data.filter({
 
 The **config** parameter may contain two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>add</b></td>
+			<td><b>add</b></td>
 			<td>(<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>smartFilter</b></td>
+			<td><b>smartFilter</b></td>
 			<td>(<i>boolean</i>) defines whether a filtering rule will be applied after adding and editing items of the collection
             </td>
 		</tr>

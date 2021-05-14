@@ -216,18 +216,18 @@ There is also a possibility to specify *a custom validation rule* by setting it 
 
 While specifying validation rules for form fields, you can also provide a set of messages that will notify the end user, whether he/she is filling the form in correctly. There are three types of messages available:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>preMessage</b></td>
+			<td><b>preMessage</b></td>
 			<td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>successMessage</b></td>
+			<td><b>successMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>errorMessage</b></td>
+			<td><b>errorMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
 		</tr>
     </tbody>
@@ -265,18 +265,18 @@ The method should return *true*, if all the fields are filled as required, or *f
 
 To send a form to the server, make use of the [](form/api/form_send_method.md) method. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>url</b></td>
+			<td><b>url</b></td>
 			<td>(<i>string</i>) the URL of the server</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>method</b></td>
+			<td><b>method</b></td>
 			<td>(<i>string</i>) the request type, "POST" by default</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>asFormData</b></td>
+			<td><b>asFormData</b></td>
 			<td>(<i>boolean</i>) optional, defines whether values of Form controls should be sent as Form Data</td>
 		</tr>
     </tbody>

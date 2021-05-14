@@ -50,19 +50,19 @@ The return object includes the following attributes:
 <table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>x</b></td>
+			<td><b>x</b></td>
 			<td>(<i>number</i>) the X coordinate of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>y</b></td>
+			<td><b>y</b></td>
 			<td>(<i>number</i>) the Y coordinate of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>height</b></td>
+			<td><b>height</b></td>
 			<td>(<i>number</i>) the height of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>number</i>) the width of a cell</td>
 		</tr>
     </tbody>
@@ -463,7 +463,7 @@ Export settings include:
 			<td>(<i>string</i>) the link to the server side where export will be processed. <br/>By default, it is <b>"//export.dhtmlx.com/excel"</b></td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>name</b></td>
+			<td><b>name</b></td>
 			<td>(<i>string</i>) the name of a ready Excel file</td>
 		</tr>
     </tbody>

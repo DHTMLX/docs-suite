@@ -35,14 +35,14 @@ const dataview = new dhx.DataView("dataview", {
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><i>key</i></td>
+			<td><i>key</i></td>
 			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><i>value</i></td>
+			<td><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>

@@ -22,30 +22,30 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 
 ### Default shortcut keys
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowUp</b></td>
+			<td><b>ArrowUp</b></td>
 			<td>to move focus to the previous vertical item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowDown</b></td>
+			<td><b>ArrowDown</b></td>
 			<td>to move focus to the next vertical item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>ArrowLeft</b></td>
+			<td><b>ArrowLeft</b></td>
 			<td>to move focus to the previous horizontal item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowRight</b></td>
+			<td><b>ArrowRight</b></td>
 			<td>to move focus to the next horizontal item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
+			<td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
 			<td>to add selection to a DataView item in focus</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+A</b></td>
+			<td><b>Ctrl+A</b></td>
 			<td>to select all items at once (when the "multiselection" property is enabled)</td>
 		</tr>
     </tbody>
@@ -282,14 +282,14 @@ var dataview = new dhx.DataView("dataview", {
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><i>key</i></td>
+			<td><i>key</i></td>
 			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><i>value</i></td>
+			<td><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>

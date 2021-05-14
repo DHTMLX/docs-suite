@@ -34,22 +34,22 @@ Each object in the data set contains a number of *key:value* pairs for data titl
 
 A data set for Pie, Pie3D and Donut charts differs a little bit. You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string,number</i>) the id of a series </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string</i>) the name of the data set property to map labels of data values to</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>string</i>) the name of the data set property to map data values to </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>color</b></td>
+			<td><b>color</b></td>
 			<td>(<i>string</i>) points to the property in a data set that defines the color of a pie/donut sector</td>
 		</tr>
     </tbody>

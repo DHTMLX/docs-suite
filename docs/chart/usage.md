@@ -159,14 +159,14 @@ function add() {
 
 The method takes as a parameter an object with two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0">- value</td>
+			<td><b>value</b></td>
 			<td>the value of an item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0">- text</td>
+			<td><b>text</b></td>
 			<td>the text of an item on the X-axis</td>
 		</tr>
     </tbody>

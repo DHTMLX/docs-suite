@@ -29,10 +29,10 @@ var treeState = tree.getState();
 
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>selected</b></td>
+			<td><b>selected</b></td>
 			<td>(<i>number</i>) the status of a checkbox of an item: 
 				<ul>
 					<li>0 - unselected </li>
@@ -42,7 +42,7 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>open</b></td>
+			<td><b>open</b></td>
 			<td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
 		</tr>
     </tbody>

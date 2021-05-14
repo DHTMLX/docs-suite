@@ -18,18 +18,18 @@ var grid = new dhx.Grid("grid_container", {
  
 Drag-n-drop can work in three modes: 
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0">"target"</td>
+			<td>"target"</td>
 			<td>a grid takes rows from other grids, while its rows can't be dragged out of it</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0">"source"</td>
+			<td>"source"</td>
 			<td>a grid allows dragging its rows out and can't take rows from other grids</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0">"both"</td>
+			<td>"both"</td>
 			<td>a grid both takes rows from other grids and allows dragging its rows out as well</td>
 		</tr>
     </tbody>

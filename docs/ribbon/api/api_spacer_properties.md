@@ -3,14 +3,14 @@ sidebar_label: Spacer properties
 title: Ribbon Spacer properties
 ---
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
+			<td><b>type</b></td>
 			<td>(<i>string</i>) the item type, set it to "spacer". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
 		</tr>
     </tbody>

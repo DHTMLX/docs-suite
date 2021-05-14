@@ -25,22 +25,22 @@ var rect = grid.getCellRect("1","c");
 
 The return object includes the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>x</b></td>
+			<td><b>x</b></td>
 			<td>(<i>number</i>) the X coordinate of a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>y</b></td>
+			<td><b>y</b></td>
 			<td>(<i>number</i>) the Y coordinate of a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>height</b></td>
+			<td><b>height</b></td>
 			<td>(<i>number</i>) the height of a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>number</i>) the width of a cell</td>
 		</tr>
     </tbody>

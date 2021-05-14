@@ -7,14 +7,14 @@ title: Event Handling
 
 The user can add any user-defined handler to any of the available events. To do this, the user can use the **dataview.events.on()** method with the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>evName</b></td>
+			<td><b>evName</b></td>
 			<td>name of the event</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>evHandler</b></td>
+			<td><b>evHandler</b></td>
 			<td>user-defined event handler</td>
 		</tr>
     </tbody>

@@ -85,10 +85,10 @@ Checking if a sidebar item is disabled
 
 To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/sidebar_isdisabled_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a sidebar item</td>
 		</tr>
     </tbody>
@@ -107,14 +107,14 @@ Selecting/Unselecting an item
 
 To select a particular Sidebar item, make use of the [select()](sidebar/api/sidebar_select_method.md) method of Sidebar. The method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of an item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>unselect</b></td>
+			<td><b>unselect</b></td>
 			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
 		</tr>
     </tbody>
@@ -149,10 +149,10 @@ Checking if a sidebar item is selected
 
 To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/sidebar_isselected_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a sidebar item</td>
 		</tr>
     </tbody>
@@ -196,18 +196,18 @@ You can manipulate the controls of Sidebar with the help of the [Tree collection
 
 It is possible to add more controls into the initialized Sidebar on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add a control at</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
 		</tr>
     </tbody>
@@ -234,14 +234,14 @@ Templates for Sidebar controls in the JSON format are given [here](sidebar/data_
 
 You can change config options of the control via the **update()** method of Tree Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>the id of the control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>an object with new configuration of the control</td>
 		</tr>
     </tbody>

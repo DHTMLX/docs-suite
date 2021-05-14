@@ -40,14 +40,14 @@ var dataset = [
 
 Each object in the data set contains configuration of a grid row. The structure of a row is rather flexible. It may include:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string|number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>columnContent</b></td>
+			<td><b>columnContent</b></td>
 			<td>(<i>string|number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
 		</tr>
     </tbody>

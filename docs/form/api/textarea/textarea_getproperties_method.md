@@ -51,75 +51,75 @@ form.getItem("textarea").getProperties();
 
 The returned object of the **Textarea** control can contain the following configuration attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
     <tr>
-			<td class="webixdoc_links0"><b>validation</b></td>
+			<td><b>validation</b></td>
 			<td>(<i>object,function</i>) the rule of input validation
 	    </td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>placeholder</b></td>
+			<td><b>placeholder</b></td>
 			<td>(<i>string</i>) a tip for the textarea</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>readOnly</b></td>
+			<td><b>readOnly</b></td>
 			<td>(<i>boolean</i>) defines whether a textarea is readonly</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>height</b></td>
+			<td><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
          <tr>
-			<td class="webixdoc_links0"><b>padding</b></td>
+			<td><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Textarea control</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>minlength</b></td>
+			<td><b>minlength</b></td>
 			<td>(<i>string|number</i>) the minimum number of characters allowed in the textarea</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>maxlength</b></td>
+			<td><b>maxlength</b></td>
 			<td>(<i>string|number</i>) the maximum number of characters allowed in the textarea</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>label</b></td>
+			<td><b>label</b></td>
 			<td>(<i>string</i>) specifies a label for a control</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>labelWidth</b></td>
+			<td><b>labelWidth</b></td>
 			<td>(<i>string|number</i>) sets the width of the label of a control</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>hiddenLabel</b></td>
+			<td><b>hiddenLabel</b></td>
 			<td>(<i>boolean</i>) invisible label that will be used to identify the input on the server side</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>labelPosition</b></td>
+			<td><b>labelPosition</b></td>
 			<td>(<i>string</i>) defines the position of a label: "left"|"top"</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>required</b></td>
+			<td><b>required</b></td>
 			<td>(<i>boolean</i>) defines whether a control is required</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>helpMessage</b></td>
+			<td><b>helpMessage</b></td>
 			<td>(<i>string</i>) adds a help message to a control</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>preMessage</b></td>
+			<td><b>preMessage</b></td>
 			<td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>successMessage</b></td>
+			<td><b>successMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>errorMessage</b></td>
+			<td><b>errorMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of error during validation of the control value	</td>
 		</tr>
     </tbody>

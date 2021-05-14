@@ -23,18 +23,18 @@ form.forEach(function(item, index, array) {
 
 The callback function takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>(<i>object</i>) the object of a form control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) the index of a form control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>array</b></td>
+			<td><b>array</b></td>
 			<td>(<i>array</i>) an array with form controls</td>
 		</tr>
     </tbody>

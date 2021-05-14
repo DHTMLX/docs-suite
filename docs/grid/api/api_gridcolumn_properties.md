@@ -3,18 +3,18 @@ sidebar_label: Column properties
 title: Grid column properties
 ---
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string|number</i>) mandatory, the id of a column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>number</i>) the width of a column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>header</b></td>
+			<td><b>header</b></td>
 			<td>(<i>array</i>) mandatory, an array of objects with header rows configuration. Each header object may include:
             <ul>
             <li><b>text</b> - (<i>string|number</i>) the text of a header</li>
@@ -39,13 +39,13 @@ title: Grid column properties
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
+			<td><a href="../../grid/configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
 			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html In Data</a>
            </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>footer</b></td>
+			<td><b>footer</b></td>
 			<td>(<i>array</i>) an array of objects with footer rows configuration. Each footer object may include:
             <ul>
             <li><a href="../../grid/customization#styling-footer-cells"><b>text</b></a> - (<i>string|number</i>) the text of a footer </li>
@@ -67,19 +67,19 @@ title: Grid column properties
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>maxWidth</b></td>
+			<td><b>maxWidth</b></td>
 			<td>(<i>number</i>) the maximal width to be set for a column <br/>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank">Grid. Max Width</a>
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>minWidth</b></td>
+			<td><b>minWidth</b></td>
 			<td>(<i>number</i>) the minimal width to be set for a column <br/> 
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Min Width</a>
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/customization#adding-custom-marks-to-cells"><b>mark</b></a></td>
+			<td><a href="../../grid/customization#adding-custom-marks-to-cells"><b>mark</b></a></td>
 			<td>(<i>object|function</i>) returns a template for marking a cell(s)
             <ul><li>as an <i>object</i> contains <b>min</b> and <b>max</b> properties, to apply desired CSS classes to cells with minimal|maximal values in a column </li>
             <li>as a <i>function</i> takes several parameters:
@@ -92,11 +92,11 @@ title: Grid column properties
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#resizing"><b>resizable</b></a></td>
+			<td><a href="../../grid/configuration#resizing"><b>resizable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column can be resized</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
+			<td><b>type</b></td>
 			<td>(<i>string</i>) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:
 			<ul><li><i>"string" (by default)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li>
 			<li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li>
@@ -107,19 +107,19 @@ title: Grid column properties
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#formatting-columns"><b>format</b></a></td>
+			<td><a href="../../grid/configuration#formatting-columns"><b>format</b></a></td>
 			<td>(<i>string</i>) defines the format for the content of the column's cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
+			<td><a href="../../grid/configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
 			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea" </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>options</b></td>
+			<td><b>options</b></td>
 			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox")</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/customization#adding-template-to-cells"><b>template</b></a></td>
+			<td><a href="../../grid/customization#adding-template-to-cells"><b>template</b></a></td>
 			<td>(<i>function</i>) returns a template with content for a cell(s). Takes 3 parameters:
             <ul>
                 <li><b>cellValue</b> - (<i>any</i>) the value of a cell</li>
@@ -130,41 +130,41 @@ title: Grid column properties
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#hidden-columns"><b>hidden</b></a></td>
+			<td><a href="../../grid/configuration#hidden-columns"><b>hidden</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is hidden <br/>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden Columns</a>
            </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#drag-n-drop-of-grid-columns"><b>draggable</b></a></td>
+			<td><a href="../../grid/configuration#drag-n-drop-of-grid-columns"><b>draggable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is draggable</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#editing-grid-and-separate-columns"><b>editable</b></a></td>
+			<td><a href="../../grid/configuration#editing-grid-and-separate-columns"><b>editable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is editable</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#sorting-columns"><b>sortable</b></a></td>
+			<td><a href="../../grid/configuration#sorting-columns"><b>sortable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is sortable</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#autosize-for-columns"><b>adjust</b></a></td>
+			<td><a href="../../grid/configuration#autosize-for-columns"><b>adjust</b></a></td>
 			<td>(<i>boolean|string</i>) defines whether the width of a column is automatically adjusted to its content</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
+			<td><a href="../../grid/configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
 			<td>(<i>boolean</i>) enables/disables the ability of a column to adjust its size to the size of Grid</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#alignment"><b>align</b></a></td>
+			<td><a href="../../grid/configuration#alignment"><b>align</b></a></td>
 			<td>(<i>string</i>) aligns data in a column: "left" | "center" | "right"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
+			<td><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a column, <i>true</i> by default</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="../../grid/customization#adding-template-to-tooltip"><b>tooltipTemplate</b></a></td>
+			<td><a href="../../grid/customization#adding-template-to-tooltip"><b>tooltipTemplate</b></a></td>
 			<td>(<i>function</i>) returns a template for the content of the tooltip. Takes 3 parameters:
             <ul>
                 <li><b>value</b> - (<i>any</i>) the value of a cell</li>

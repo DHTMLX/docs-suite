@@ -30,22 +30,22 @@ grid.data.sort();
 
 The **rule** object has the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>) the id of a data field (a column of Grid)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>dir</b></td>
+			<td><b>dir</b></td>
 			<td>(<i>function</i>) the direction of sorting "asc" or "desc"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>as</b></td>
+			<td><b>as</b></td>
 			<td>(<i>function</i>) a function that specifies the type to sort data as</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>rule</b></td>
+			<td><b>rule</b></td>
 			<td>(<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</td>
 		</tr>
     </tbody>
@@ -55,10 +55,10 @@ The **rule** object has the following attributes:
 
 The **config** parameter may contain one property:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>smartSorting</b></td>
+			<td><b>smartSorting</b></td>
 			<td>(<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set
             </td>
 		</tr>
