@@ -9,6 +9,3 @@ title: paint
 
 @example:
 ribbon.paint();
-
-
-

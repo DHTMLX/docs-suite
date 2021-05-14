@@ -13,21 +13,11 @@ title: getSelected
 @example:
 ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 
-
-
 @descr:
 
 @changelog:
 added in v7.0
 
-@related: menu/work_with_menu.md#getting-selected-items
+[comment]: # (@related: menu/work_with_menu.md#getting-selected-items)
 
-@relatedapi:
-ribbon/api/ribbon_select_method.md
-ribbon/api/ribbon_unselect_method.md
-ribbon/api/ribbon_isselected_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: ribbon/api/ribbon_select_method.md ribbon/api/ribbon_unselect_method.md ribbon/api/ribbon_isselected_method.md)

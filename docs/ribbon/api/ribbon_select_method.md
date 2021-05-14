@@ -14,8 +14,6 @@ title: select
 @example:
 ribbon.select("print");
 
-
-
 @descr:
 
 **Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
@@ -23,12 +21,6 @@ ribbon.select("print");
 @changelog:
 added in v7.0
 
-@related: ribbon/operating_ribbon.md#selectingunselecting-an-item
+[comment]: # (@related: ribbon/operating_ribbon.md#selectingunselecting-an-item)
 
-@relatedapi:
-ribbon/api/ribbon_unselect_method.md
-ribbon/api/ribbon_isselected_method.md
-ribbon/api/ribbon_getselected_method.md
-
-
-
+[comment]: # (@relatedapi: ribbon/api/ribbon_unselect_method.md ribbon/api/ribbon_isselected_method.md ribbon/api/ribbon_getselected_method.md)

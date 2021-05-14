@@ -10,16 +10,13 @@ title: inputFocus
 @params:
 - id		string			the ID of a new control
 
-
 @example:
 ribbon.events.on("InputFocus", function(id){
     console.log(id);
 });
 
-
-
 @descr:
 
 **Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
-@related: ribbon/handling_events.md
+[comment]: # (@related: ribbon/handling_events.md)

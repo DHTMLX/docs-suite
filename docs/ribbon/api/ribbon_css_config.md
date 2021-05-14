@@ -17,15 +17,13 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var ribbon = new dhx.Ribbon({
     css:"my_first_class my_second_class"
 });
 
-
-
 @descr:
- 
+
 **Related sample**: [Ribbon. Custom Css](https://snippet.dhtmlx.com/9ckg47ro)
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Ribbon.
@@ -61,4 +59,3 @@ var ribbon = new dhx.Ribbon({
 - <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
-

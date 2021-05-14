@@ -17,13 +17,8 @@ ribbon.setState({
     "align": "right"
 });
 
-
 @descr:
 
 **Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)
 
-@related: ribbon/operating_ribbon.md#settinggetting-values-and-states
-
-
-
-
+[comment]: # (@related: ribbon/operating_ribbon.md#settinggetting-values-and-states)

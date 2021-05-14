@@ -17,10 +17,9 @@ title: menuCss
         /*some styles*/
     }
 </style>
- 
+
 var ribbon = new dhx.Ribbon({
     menuCss:"my_first_class my_second_class"
 });
 
-
-@descr: 
+@descr:
