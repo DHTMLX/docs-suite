@@ -10,7 +10,7 @@ title: isDisabled
 [comment]: # (@default:  todo указать значение по умолчанию) 
 
 @returns:
-- param	boolean		true, if a combobox is disabled, otherwise faslse
+- param	boolean		true, if a combobox is disabled, otherwise false
 
 @example:
 combobox.isDisabled(); // -> returns true/false
