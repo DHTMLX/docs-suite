@@ -32,8 +32,6 @@ var list = new dhx.List("list", {
 	  data: data
 });
 
-
-
 @descr: 
 
 **Related sample**: [List. Init With External Data](https://snippet.dhtmlx.com/20i6vbtj)

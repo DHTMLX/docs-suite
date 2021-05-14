@@ -10,8 +10,6 @@ title: keyNavigation
 @example:
 var list = new dhx.List("list", {keyNavigation:true});
 
-
 @descr: 
 
-@related: list/configuration.md#arrow-keys-navigation
-
+[comment]: # (@related: list/configuration.md#arrow-keys-navigation)

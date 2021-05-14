@@ -13,14 +13,12 @@ title: editItem
 @example:
 list.editItem("1");
 
-
-
 @descr:
 
 **Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
 
 @changelog: added in v6.4
 
-@relatedapi: list/api/list_editable_config.md
+[comment]: # (@relatedapi: list/api/list_editable_config.md)
 
-@related: list/work_with_list.md#editing-items
+[comment]: # (@related: list/work_with_list.md#editing-items)

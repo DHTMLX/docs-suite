@@ -14,8 +14,6 @@ var list = new dhx.List("list", {
 	}
 });
 
-
-
 @descr:
 
 **Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
@@ -31,9 +29,6 @@ The template function takes one parameter:
     </tbody>
 </table>
 
-@related: list/configuration.md#template-for-list-items
+[comment]: # (@related: list/configuration.md#template-for-list-items)
 
-
-@relatedapi: list/api/list_eventhandlers_config.md
-
-
+[comment]: # (@relatedapi: list/api/list_eventhandlers_config.md)

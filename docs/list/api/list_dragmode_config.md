@@ -22,4 +22,4 @@ Drag-n-drop can work in three modes:
 - "source" - a list allows dragging its items out and can't take items from other lists
 - "both" - a list both takes items from other lists and allows dragging its items out as well
 
-@related: list/configuration.md#drag-n-drop-of-items
+[comment]: # (@related: list/configuration.md#drag-n-drop-of-items)

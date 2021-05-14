@@ -19,11 +19,7 @@ list.events.on("BeforeEditStart", function(value,id){
     return false;
 });
 
-
-
 @descr:
-
-
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 

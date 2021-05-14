@@ -14,7 +14,6 @@ title: List API overview
 | [](list/api/list_paint_method.md)            | @getshort(list/api/list_paint_method.md)            |
 | [](list/api/list_setfocus_method.md)         | @getshort(list/api/list_setfocus_method.md)         |
 
-
 :::info important
 - Use [the methods of DataCollection](data_collection/index.md) to work with data. 
 - Apply [the methods of Selection](selection/index.md#methods) to manage the selection of List items. 

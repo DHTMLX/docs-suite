@@ -28,8 +28,6 @@ const list = new dhx.List("list", {
     }
 });
 
-
-
 @descr:
 
 **Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
@@ -56,7 +54,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 @changelog: added in v7.0
 
+[comment]: # (@relatedapi: list/api/list_template_config.md)
 
-@relatedapi: list/api/list_template_config.md
-
-@related: list/configuration.md#event-handlers-for-the-template
+[comment]: # (@related: list/configuration.md#event-handlers-for-the-template)

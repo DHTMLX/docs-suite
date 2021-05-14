@@ -10,9 +10,6 @@ title: destructor
 @example:
 list.destructor();
 
-
 @descr:
 
 **Related sample**: [List. Destructor](https://snippet.dhtmlx.com/f0zto6m4)
-
-
