@@ -20,7 +20,4 @@ menu.events.on("BeforeHide", function(id, event){
     return false;
 });
 
-
-
 @descr:
-

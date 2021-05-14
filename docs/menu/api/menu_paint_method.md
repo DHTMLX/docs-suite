@@ -10,8 +10,4 @@ title: paint
 @example:
 menu.paint();
 
-
-
 @descr:
-
-

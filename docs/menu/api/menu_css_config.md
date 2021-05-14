@@ -17,14 +17,12 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var menu = new dhx.Menu({
     css:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)
 
@@ -61,4 +59,3 @@ var menu = new dhx.Menu({
 - <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
-

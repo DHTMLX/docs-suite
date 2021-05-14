@@ -41,11 +41,8 @@ const menu = new dhx.Menu("menu_container", {
     ]
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-@related: menu/from_script.md
-
+[comment]: # (@related: menu/from_script.md)

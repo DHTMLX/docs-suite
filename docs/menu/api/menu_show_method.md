@@ -10,13 +10,10 @@ title: show
 @params:
 - ids 		string | array		optional, an ID or an array of IDs of items
 
-
 @example:
 menu.show("save_btn");
 // several at a time
 menu.show(["cancel_btn","del_btn"]);
-
-
 
 @descr:
 
@@ -28,9 +25,3 @@ Starting from v7.0, it is possible to show all items on the page at once by usin
 // shows all Menu items
 menu.show();
 ~~~
-
-
-
-
-
-

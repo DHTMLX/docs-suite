@@ -17,12 +17,9 @@ title: menuCss
         /*some styles*/
     }
 </style>
- 
+
 var menu = new dhx.Menu({
     menuCss:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
-
+@descr:
