@@ -23,8 +23,6 @@ const layout = new dhx.Layout("layout", {
     ]
 });
 
-
-
 @descr: 
 
 **Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
@@ -54,6 +52,4 @@ const layout = new dhx.Layout("layout", {
 
 @changelog: added in v7.0
 
-@related: layout/cell_configuration.md#setting-borders-for-cells
-
-
+[comment]: # (@related: layout/cell_configuration.md#setting-borders-for-cells)

@@ -12,19 +12,12 @@ title: forEach
 - parentID      string          optional, the parent id. If not specified, the function will start iterating over from the root item.
 - level         number          optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
 
-
-
-
 @example:
 layout.forEach(function(cell, index, array) {
     console.log("This is a cell: ", cell);
     console.log("This is a cell index: ", index);
     console.log("This is an array of cells: ", array);
 }, parentID, level);
-
-
-
-
 
 @descr:
 
@@ -48,6 +41,5 @@ The callback function takes three parameters:
 		</tr>
     </tbody>
 </table>
-
 
 @changelog: added in v6.4

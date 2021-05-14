@@ -37,8 +37,6 @@ const layout = new dhx.Layout("layout_container", {
 	]
 });
 
-
-
 @descr: 
 
-@related: layout/init.md#initialize-layout
+[comment]: # (@related: layout/init.md#initialize-layout)

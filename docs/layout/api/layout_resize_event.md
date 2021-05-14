@@ -15,14 +15,9 @@ layout.events.on("resize", function(id){
 	// your logic here
 });
 
-
-
-
-
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 @changelog:
 added in v6.2
-

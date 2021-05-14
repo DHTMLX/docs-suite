@@ -15,14 +15,4 @@ var layout = new dhx.Layout({width:"400px", height:"600px"});
 var html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);
 
-
-
 @descr:
-
-
-
-
-
-
-
-

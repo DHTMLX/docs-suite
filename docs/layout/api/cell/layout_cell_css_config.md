@@ -22,8 +22,6 @@ var layout = new dhx.Layout("layout_container", {
     css:"my_first_class my_second_class"
 });
 
-
-
 @descr: 
 
 **Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)
@@ -69,6 +67,4 @@ var layout = new dhx.Layout("layout", {
 
 - <b>dhx_layout-cell--no-border_left</b> - Removes the left border of a layout-cell
 
-@related: layout/init.md#initialize-layout
-layout/customization.md
-
+[comment]: # (@related: layout/init.md#initialize-layout layout/customization.md)

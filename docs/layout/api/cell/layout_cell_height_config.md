@@ -14,8 +14,6 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-
-
 @descr:
 
 **Related sample**: [Layout. Sizes](https://snippet.dhtmlx.com/miej9gb9)
@@ -30,10 +28,6 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
+[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#cell-size)
 
-@related: layout/init.md#initialize-layout
-layout/cell_configuration.md#cell-size
-
-@relatedapi: 
-layout/api/layout_minheight_config.md
-layout/api/layout_maxheight_config.md
+[comment]: # (@relatedapi: layout/api/layout_minheight_config.md layout/api/layout_maxheight_config.md)

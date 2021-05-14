@@ -34,12 +34,8 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-
-
 @descr: 
 
-@relatedapi: layout/api/layout_rows_config.md
+[comment]: # (@relatedapi: layout/api/layout_rows_config.md)
 
-@related: layout/init.md#initialize-layout
-layout/layout_structure.md
-
+[comment]: # (@related: layout/init.md#initialize-layout layout/layout_structure.md)

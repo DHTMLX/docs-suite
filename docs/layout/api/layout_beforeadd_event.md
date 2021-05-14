@@ -10,16 +10,14 @@ title: beforeAdd
 @params:
 - id		string		the id of a cell
 
+@returns:
+- result	boolean		false - to prevent adding of a cell, otherwise true
+
 @example:
 layout.events.on("BeforeAdd", function(id){
 	// your logic here
     return false;
 });
-
-@returns:
-- result	boolean		false - to prevent adding of a cell, otherwise true
-
-
 
 @descr:
 
@@ -27,5 +25,3 @@ layout.events.on("BeforeAdd", function(id){
 
 @changelog:
 added in v6.2
-
-

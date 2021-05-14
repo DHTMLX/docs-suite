@@ -37,8 +37,6 @@ var layout = dhx.Layout("layout_container", {
     ]
 });
 
-
-
 @descr:
 
 **Related sample**: [Layout. Gravity](https://snippet.dhtmlx.com/1u521djj)
@@ -52,4 +50,4 @@ The negative number set as a value to the **gravity** property is equated to zer
 @changelog:
 The property is updated in v7.0. For more information, see [Migration article](migration/index.md#65270).
 
-@related: layout/init.md#initialize-layout
+[comment]: # (@related: layout/init.md#initialize-layout)

@@ -19,13 +19,9 @@ layout.events.on("BeforeExpand", function(id){
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 @changelog:
 added in v6.4
-
-

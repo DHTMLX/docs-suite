@@ -15,14 +15,8 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-
-
 @descr: 
 
-@related: layout/init.md#initialize-layout
-layout/cell_configuration.md#cellheader
+[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#cellheader)
 
-@relatedapi: 
-layout/api/layout_header_config.md
-layout/api/layout_headerheight_config.md
-layout/api/layout_headericon_config.md
+[comment]: # (@relatedapi: layout/api/layout_header_config.md layout/api/layout_headerheight_config.md layout/api/layout_headericon_config.md)

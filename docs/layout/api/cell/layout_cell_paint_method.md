@@ -10,11 +10,4 @@ title: paint
 @example:
 layout.paint();
 
-
-
 @descr:
-
-
-
-
-

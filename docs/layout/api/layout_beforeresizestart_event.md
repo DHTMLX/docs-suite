@@ -10,6 +10,8 @@ title: beforeResizeStart
 @params:
 - id		string		the id of a cell
 
+@returns:
+- result	boolean | void		false - to prevent resizing of a cell, otherwise true
 
 @example:
 layout.events.on("BeforeResizeStart", function(id){
@@ -17,16 +19,9 @@ layout.events.on("BeforeResizeStart", function(id){
     return false;
 });
 
-@returns:
-- result	boolean | void		false - to prevent resizing of a cell, otherwise true
-
-
-
-
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 @changelog:
 added in v6.2
-
