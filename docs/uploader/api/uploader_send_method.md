@@ -8,12 +8,10 @@ title: send
 @signature: {'send(params?: IParams): void;'}
 
 @params:
-- params 		object 			optional, additional parameters for a request
+- `params: object` - optional, additional parameters for a request
 
 @example:
 vault.uploader.send();
 
-
 @descr:
-
 The request URL is specified by the [](uploader/api/uploader_target_config.md) property.

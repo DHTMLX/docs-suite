@@ -8,10 +8,9 @@ title: getItems
 @signature: {'getItems(id: Id): T[];'}
 
 @params:
-- id 		string		 the ID of a control
+- `id: string` - the ID of a control
 
 @example:
 var items = toolbar.data.getItems("menu1");
-
 
 @descr:

@@ -8,14 +8,12 @@ title: exists
 @signature: {'exists(id: Id): boolean;'}
 
 @params:
-- id 			string,number			the id of the item in question
+- `id: string, number` - the id of the item in question
 
 @returns:
-- result		boolean				true if the item exists, otherwise false
-
+- `boolean` - true if the item exists, otherwise false
 
 @example:
 var item = component.data.exists("1"); 
-
 
 @descr:

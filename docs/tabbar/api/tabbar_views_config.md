@@ -60,7 +60,7 @@ As a result, the height of a tab is 45 and the width is 100.
 
 @changelog:
 
-**tabWidth** and **tabHeight** properties of a tab object are added in v7.0.
+The **tabWidth** and **tabHeight** properties of a tab object are added in v7.0.
 
 @related: 
 tabbar/init.md#define-tabbar-structure

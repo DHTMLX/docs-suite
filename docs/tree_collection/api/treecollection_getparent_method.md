@@ -8,10 +8,9 @@ title: getParent
 @signature: {'getParent(id: Id): Id;'}
 
 @params:
-- id 		string		 the ID of a control
+- `id: string` - the ID of a control
 
 @example:
 var parentId = toolbar.data.getParent("add_btn");
-
 
 @descr:

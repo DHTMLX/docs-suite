@@ -8,9 +8,9 @@ title: forEach
 @signature: {'forEach(callback: DataCallback<T>, parentID?: string | number, level?: number): void;'}
 
 @params:
-- callback	    function    a function that will iterate over items of a tree collection
-- parentID      string | number      optional, the parent id. If not specified, the function will start iterating over from the root item.
-- level         number      optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
+- `callback: function` - a function that will iterate over items of a tree collection
+- `parentID: string | number` - optional, the parent id. If not specified, the function will start iterating over from the root item.
+- `level: number` - optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
 
 @example:
 treecollection.forEach(function(element, index, array) {
@@ -18,7 +18,6 @@ treecollection.forEach(function(element, index, array) {
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);
 });
-
 
 @descr:
 

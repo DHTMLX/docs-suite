@@ -8,13 +8,12 @@ title: afterAdd
 @signature: {'afterAdd: (newItem: any) => void;'}
 	
 @params:
-- newItem		object			the object of an added item
+- `newItem: object` - the object of an added item
 
 @example:
 data.events.on("AfterAdd", function(newItem){
 	console.log("A new item is added");
 });
-
 
 @descr:
 

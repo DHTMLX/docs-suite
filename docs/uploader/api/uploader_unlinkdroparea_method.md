@@ -8,8 +8,7 @@ title: unlinkDropArea
 @signature: {'unlinkDropArea(el?: HTMLElement | string): void;'}
 
 @params:
-
-- el 	HTMLElement,string 		the drop area or its ID
+- `el: HTMLElement, string` - the drop area or its ID
 
 @example:
 <div id="drophere">DROP HERE</div>
@@ -19,6 +18,5 @@ vault.uploader.linkDropArea("drophere");
 
 // detaches the extra drop area  
 vault.uploader.unlinkDropArea("drophere");
-
 
 @descr:

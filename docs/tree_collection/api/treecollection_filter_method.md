@@ -8,15 +8,14 @@ title: filter
 @signature: {'filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;'}
 
 @params:
-- rule      function,object     the filtering criteria
-- config 		object		 optional, defines the parameters of filtering
+- `rule: function, object` - the filtering criteria
+- `config: object` - optional, defines the parameters of filtering
 
 @example:
 treeGrid.data.filter({
     by: "name",
     match: "Angola"
 });
-
 
 @descr:
 
@@ -69,8 +68,6 @@ treeGrid.data.filter({
     match: "Angola"
 });
 ~~~
-
-<br/><br/>
 
 The **config** parameter may contain the following properties:
 

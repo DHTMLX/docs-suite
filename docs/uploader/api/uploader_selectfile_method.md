@@ -7,10 +7,7 @@ title: selectFile
 
 @signature: {'selectFile(): void;'}
 
-@params:
-
 @example:
 vault.uploader.selectFile();
-
 
 @descr:

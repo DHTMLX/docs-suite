@@ -10,5 +10,4 @@ title: removeAll
 @example:
 toolbar.data.removeAll();
 
-
 @descr:

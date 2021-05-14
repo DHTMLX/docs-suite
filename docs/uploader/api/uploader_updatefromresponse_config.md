@@ -18,5 +18,4 @@ var vault = new dhx.Vault("vault_container", {
    	}
 });
 
-
 @descr:
