@@ -14,13 +14,10 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-
-
 @descr: 
 
 **Related sample**: [Layout. Collapsable](https://snippet.dhtmlx.com/8u4ok0os)
 
-@related: layout/init.md#initialize-layout
-layout/cell_configuration.md#collapsibility
+[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#collapsibility)
 
-@relatedapi: layout/api/layout_collapsed_config.md
+[comment]: # (@relatedapi: layout/api/layout_collapsed_config.md)

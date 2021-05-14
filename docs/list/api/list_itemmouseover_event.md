@@ -16,11 +16,7 @@ list.events.on("ItemMouseOver", function(id, event) {
     console.log("Item id:" + id);
 );
 
-
-
 @descr:
-
-
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 

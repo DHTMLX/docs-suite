@@ -10,7 +10,4 @@ title: destructor
 @example:
 layout.destructor();
 
-
 @descr:
-
-

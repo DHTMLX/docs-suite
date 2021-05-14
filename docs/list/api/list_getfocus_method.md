@@ -13,11 +13,9 @@ title: getFocus
 @example:
 list.getFocus(); // -> "item_id"
 
-
-
 @descr:
 
 @changelog:
 added in v6.3
 
-@related: list/work_with_list.md#setting-focus-on-item
+[comment]: # (@related: list/work_with_list.md#setting-focus-on-item)

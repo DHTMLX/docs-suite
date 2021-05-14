@@ -10,6 +10,8 @@ title: beforeShow
 @params:
 - id		string		the id of a cell
 
+@returns:
+- result	boolean | void		false - to prevent a cell from being shown, otherwise true
 
 @example:
 layout.events.on("BeforeShow", function(id){
@@ -17,16 +19,9 @@ layout.events.on("BeforeShow", function(id){
     return false;
 });
 
-@returns:
-- result	boolean | void		false - to prevent a cell from being shown, otherwise true
-
-
-
-
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)
 
 @changelog:
 added in v6.2
-

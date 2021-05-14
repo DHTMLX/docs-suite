@@ -16,8 +16,6 @@ list.events.on("BeforeDrag", function(data, events) {
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
@@ -43,15 +41,4 @@ The data object can contain the following parameters:
 
 @changelog: added in v7.0
 
-
-@relatedapi:
-list/api/list_afterdrag_event.md
-list/api/list_afterdrop_event.md
-list/api/list_beforedrop_event.md
-list/api/list_canceldrop_event.md
-list/api/list_candrop_event.md
-list/api/list_dragin_event.md
-list/api/list_dragout_event.md
-list/api/list_dragstart_event.md
-
-
+[comment]: # (@relatedapi: list/api/list_afterdrag_event.md list/api/list_afterdrop_event.md list/api/list_beforedrop_event.md list/api/list_canceldrop_event.md list/api/list_candrop_event.md list/api/list_dragin_event.md list/api/list_dragout_event.md list/api/list_dragstart_event.md) 

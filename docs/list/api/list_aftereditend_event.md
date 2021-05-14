@@ -16,8 +16,6 @@ list.events.on("AfterEditEnd", function(value,id){
 	// your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [List. List Events	](https://snippet.dhtmlx.com/iwt1yd61)

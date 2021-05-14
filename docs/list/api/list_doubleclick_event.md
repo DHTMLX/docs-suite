@@ -16,8 +16,6 @@ list.events.on("DoubleClick", function(id, e){
    console.log("The item "+ list.selection.getId(id) +" was double clicked.");
 });
 
-
-
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)	

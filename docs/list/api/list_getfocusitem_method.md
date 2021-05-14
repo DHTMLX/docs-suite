@@ -13,9 +13,4 @@ title: getFocusItem
 @example:
 var focus = list.getFocusItem(); 
 
-
-
 @descr:
-
-
-

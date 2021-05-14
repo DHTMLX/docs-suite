@@ -14,7 +14,6 @@ title: attach
 @returns:
 - attached			object			the object of the attached component
 
-
 @example:
 var layout = new dhx.Layout({
 	width:"400px", height:"600px"
@@ -26,15 +25,8 @@ var sidebar = new dhx.Sidebar(null, {
 
 layout.getCell("sidebar").attach(sidebar);
 
-
-
 @descr:
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
-@related: layout/work_with_layout.md#attaching-a-component-to-a-cell
-
-
-
-
-
+[comment]: # (@related: layout/work_with_layout.md#attaching-a-component-to-a-cell)

@@ -11,15 +11,11 @@ title: click
 - id		string | number			the id of a clicked item
 - events	Event					a native event object
 
-
 @example:
 list.events.on("Click", function(id, e){
     console.log("The item with the id "+ list.selection.getId(id) +" was clicked.");
 });
 
-
-
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
-

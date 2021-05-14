@@ -10,18 +10,14 @@ title: beforeRemove
 @params:
 - id		string		the id of a cell
 
+@returns:
+- result	boolean | void		false - to prevent removing of a cell, otherwise true
+
 @example:
 layout.events.on("BeforeRemove", function(id){
 	// your logic here
     return false;
 });
-
-@returns:
-- result	boolean | void		false - to prevent removing of a cell, otherwise true
-
-
-
-
 
 @descr:
 
@@ -29,4 +25,3 @@ layout.events.on("BeforeRemove", function(id){
 
 @changelog:
 added in v6.2
-

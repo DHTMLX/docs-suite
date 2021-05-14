@@ -13,8 +13,6 @@ title: setFocus
 @example:
 list.setFocus("item_id");
 
-
-
 @descr:
 
 **Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
@@ -22,5 +20,4 @@ list.setFocus("item_id");
 @changelog:
 added in v6.3
 
-
-@related: list/work_with_list.md#setting-focus-on-item
+[comment]: # (@related: list/work_with_list.md#setting-focus-on-item)

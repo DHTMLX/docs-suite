@@ -14,10 +14,7 @@ title: css
 	}
 </style>
 
-
 var list = new dhx.List("list", {css: "bg-gray"});
-
-
 
 @descr:
 
@@ -56,7 +53,3 @@ var list = new dhx.List("list", {css:"dhx_widget--bg_white"});
 - <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
-
-
-
-

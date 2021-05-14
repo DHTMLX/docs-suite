@@ -11,15 +11,11 @@ title: focusChange
 - focusIndex		number					the position of an item
 - id		string | number			the id of an item
 
-
 @example:
 list.events.on("FocusChange", function(index, id){
     // your code here
 });
 
-
-
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
-

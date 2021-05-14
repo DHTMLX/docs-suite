@@ -13,9 +13,8 @@ title: removeCell
 @example:
 layout.removeCell("1");
 
-
 @descr:
 
 **Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
 
-@related: layout/work_with_layout.md#removing-cells
+[comment]: # (@related: layout/work_with_layout.md#removing-cells)

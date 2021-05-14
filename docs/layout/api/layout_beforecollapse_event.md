@@ -10,21 +10,16 @@ title: beforeCollapse
 @params:
 - id		string		the id of a cell
 
+@returns:
+- result	boolean | void		false - to prevent a cell from being collapsed, otherwise true
+
 @example:
 layout.events.on("BeforeCollapse", function(id){
 	// your logic here
     return false;
 });
 
-@returns:
-- result	boolean | void		false - to prevent a cell from being collapsed, otherwise true
-
-
-
 @example:
-
-
-
 
 @descr:
 
@@ -32,4 +27,3 @@ layout.events.on("BeforeCollapse", function(id){
 
 @changelog:
 added in v6.2
-

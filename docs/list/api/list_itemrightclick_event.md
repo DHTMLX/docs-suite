@@ -16,8 +16,6 @@ list.events.on("itemRightClick", function(id, e){
     // your code here
 });
 
-
-
 @descr:
 
 **Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)

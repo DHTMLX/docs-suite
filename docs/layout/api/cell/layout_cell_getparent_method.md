@@ -10,11 +10,8 @@ title: getParent
 @returns:
 - config	object		the config object of the parent of a cell
 
-
 @example:
 layout.getCell("1").getParent();
-
-
 
 @descr:
 
@@ -37,10 +34,3 @@ An example of a returned config object:
     ]
 }
 ~~~
-
-
-
-
-
-
-

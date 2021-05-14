@@ -10,16 +10,11 @@ title: getCurrentMode
 @returns:
 - mode	string      the current mode of the calendar ("calendar", "year", "month", "timepicker")
 
-
 @example:
 var mode = calendar.getCurrentMode(); // -> "calendar"
-
-
 
 @descr:
 
 **Related sample**: [Calendar. Get Current Mode](https://snippet.dhtmlx.com/fadykqoc)
 
-@related: calendar/operating_calendar.md#gettingcurrentmode
-
-
+[comment]: # (@related: calendar/operating_calendar.md#gettingcurrentmode)
