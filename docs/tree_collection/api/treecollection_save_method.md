@@ -9,12 +9,10 @@ title: save
 
 @params:
 
-- url			object | string		the URL of a server side (or DataProxy object)
+- `url: object | string` - the URL of a server side (or DataProxy object)
 
 @example:
 diagram.data.save("http://userurl/");
-
-
 
 @descr:
 
@@ -37,4 +35,3 @@ diagram.data.saveData.then(function () {
 	console.log(diagram.data.isSaved());
 });
 ~~~
-

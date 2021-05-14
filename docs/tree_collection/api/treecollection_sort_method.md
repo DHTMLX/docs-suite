@@ -8,7 +8,7 @@ title: sort
 @signature: {'sort(by: ISortMode): void;'}
 
 @params:
-- rule		object		an object with parameters for sorting
+- `rule: object` - an object with parameters for sorting
 
 @example:
 treeGrid.data.sort({
@@ -16,7 +16,6 @@ treeGrid.data.sort({
 	dir: "asc",
 	as: function (value) { return value ? value : "" }
 });
-
 
 @descr:
 

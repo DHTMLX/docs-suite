@@ -157,4 +157,8 @@ code {
     margin-top: 10px;
 }
 
+::marker {
+    color: #9c9c9c;
+}
+
 /* end list */

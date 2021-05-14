@@ -8,8 +8,8 @@ title: canCopy
 @signature: {'canCopy(id: Id, target: Id): boolean;'}
 
 @params:
-- id 			string	    the ID of the source control
-- targetId	 	string	    the ID of the target control
+- `id: string` - the ID of the source control
+- `target: string` - the ID of the target control
 
 @example:
 component.data.canCopy(from.id, id);

@@ -8,10 +8,9 @@ title: getRoot
 @signature: {'getRoot(): Id;'}
 
 @returns:
-- ids    	string      	the id of the root element
+- `Id: string` - the id of the root element
 
 @example:
 toolbar.data.getRoot();
-
 
 @descr:
