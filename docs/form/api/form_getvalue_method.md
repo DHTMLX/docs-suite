@@ -18,6 +18,9 @@ var state = form.getValue();
 // -> {"name":"John Doe"}
 
 @descr:
+
+**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
+
 1\. In case both the name and id of the control are specified in the config of Control, the returned object will contain the name of Control:
 
 ~~~js
@@ -38,8 +41,6 @@ var state = form.getValue();
 - If *valueFormat: "string"*  and *timeFormat:12* are specified, a return string value will include hour, minutes, and am/pm identifiers: "06:00AM"
 - If *valueFormat: "timeObject"*  and *timeFormat:24* are specified, a return object value will contain key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
 - If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
-
-**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
 [comment]: # (@relatedapi: form/api/form_setvalue_method.md)
 

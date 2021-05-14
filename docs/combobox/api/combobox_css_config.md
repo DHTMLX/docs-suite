@@ -22,8 +22,8 @@ var combo = new dhx.Combobox("combo_container", {
     css:"my_first_class my_second_class"
 });
 
-@descr: 
-    
+@descr:
+
 **Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of ComboBox.
