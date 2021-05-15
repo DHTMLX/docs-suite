@@ -10,16 +10,13 @@ title: afterHide
 @params:
 - events         Event       a native event object
 
-
 @example:
 sidebar.events.on("AfterHide", function(event){
     // your code here
 });
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

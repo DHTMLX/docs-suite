@@ -58,8 +58,6 @@ Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 | [](sidebar/api/sidebar_minwidth_config.md)  | @getshort(sidebar/api/sidebar_minwidth_config.md)  |
 | [](sidebar/api/sidebar_width_config.md)     | @getshort(sidebar/api/sidebar_width_config.md)     |
 
-
-
 ## Sidebar Custom HTML properties
 
 A Custom HTML control can possess the [following properties](sidebar/api/api_customhtml_properties.md).

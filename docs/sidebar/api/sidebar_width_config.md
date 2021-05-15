@@ -15,9 +15,4 @@ var sidebar = new dhx.Sidebar(document.body, {
     width:450
 });
 
-
-
-@descr: 
-
-
-
+@descr:

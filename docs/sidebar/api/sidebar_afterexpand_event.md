@@ -12,13 +12,10 @@ sidebar.events.on("AfterExpand", function() {
     // your logic here
 });
 
-
-
-
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
 @changelog: added in v6.4
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

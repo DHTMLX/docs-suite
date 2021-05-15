@@ -13,10 +13,8 @@ title: isDisabled
 @returns:
 param 	boolean		true, if an item of Sidebar is disabled, otherwise false
 
-
 @example:
 sidebar.isDisable("id"); // -> returns true/false
-
 
 @descr:
 
@@ -24,4 +22,4 @@ sidebar.isDisable("id"); // -> returns true/false
 
 @changelog: added in v6.4
 
-@related: sidebar/work_with_sidebar.md#checking-if-a-sidebar-item-is-disabled
+[comment]: # (@related: sidebar/work_with_sidebar.md#checking-if-a-sidebar-item-is-disabled)

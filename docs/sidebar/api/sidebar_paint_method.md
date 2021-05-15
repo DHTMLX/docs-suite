@@ -9,4 +9,3 @@ title: paint
 
 @example:
 sidebar.paint();
-

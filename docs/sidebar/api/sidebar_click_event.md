@@ -17,10 +17,8 @@ sidebar.events.on("Click", function(id,e){
     console.log(id);
 });
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

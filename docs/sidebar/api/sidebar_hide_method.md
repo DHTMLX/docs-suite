@@ -15,8 +15,6 @@ sidebar.hide("search");
 // several at a time
 sidebar.hide(["search","currentButton","edit"]);
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
@@ -28,12 +26,4 @@ Starting from v7.0, it is possible to hide all items at once by using the method
 sidebar.hide();
 ~~~
 
-
-@related: sidebar/work_with_sidebar.md#hiding-and-showing-controls
-
-
-
-
-
-
-
+[comment]: # (@related: sidebar/work_with_sidebar.md#hiding-and-showing-controls)

@@ -22,9 +22,4 @@ var sidebar = new dhx.Sidebar("sidebar", {
     menuCss:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
-
-
-
+@descr:

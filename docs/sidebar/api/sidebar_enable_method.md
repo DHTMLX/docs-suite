@@ -15,8 +15,6 @@ sidebar.enable("search");
 // several at a time
 sidebar.enable(["search", "currentButton", "edit"]);
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
@@ -28,4 +26,4 @@ Starting from v7.0, it is possible to enable all items at once by using the meth
 sidebar.enable();
 ~~~
 
-@related: sidebar/work_with_sidebar.md#disabling-and-enabling-controls
+[comment]: # (@related: sidebar/work_with_sidebar.md#disabling-and-enabling-controls)

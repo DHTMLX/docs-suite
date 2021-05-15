@@ -20,10 +20,8 @@ sidebar.events.on("BeforeHide", function(id, event){
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

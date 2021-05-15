@@ -15,8 +15,6 @@ sidebar.show("search");
 // several at a time
 sidebar.show(["search","currentButton","edit"]);
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
@@ -28,9 +26,4 @@ Starting from v7.0, it is possible to show all items on the page at once by usin
 sidebar.show();
 ~~~
 
-@related: sidebar/work_with_sidebar.md#hiding-and-showing-controls
-
-
-
-
-
+[comment]: # (@related: sidebar/work_with_sidebar.md#hiding-and-showing-controls)
