@@ -20,19 +20,13 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
         { id: "4", tab: "tab-4", css:"panel flex"}
     ]
 });
- 
+
 tabbar.setActive("2");
-
-
 
 @descr:
 
 **Related sample**: [Tabbar. Set Active](https://snippet.dhtmlx.com/u9ryz38f)
 
-@relatedapi: tabbar/api/tabbar_getactive_method.md
+[comment]: # (@relatedapi: tabbar/api/tabbar_getactive_method.md)
 
-@related: tabbar/work_with_tabbar.md#settinggetting-the-active-tab
-
-
-
-
+[comment]: # (@related: tabbar/work_with_tabbar.md#settinggetting-the-active-tab)

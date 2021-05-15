@@ -19,9 +19,7 @@ var tabbar = new dhx.Tabbar("tabbar", {
     ]
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Tabbar. Active Tab](https://snippet.dhtmlx.com/0y8kd9oa)
 

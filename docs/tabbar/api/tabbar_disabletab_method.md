@@ -10,16 +10,12 @@ title: disableTab
 @params:
 - id	string  the id of a tab
 
-
 @returns:
 - param	boolean     'true' if the tab is disabled, 'false' otherwise
-
 
 @example:
 tabbar.disableTab("London");
 // -> true|false
-
-
 
 @descr:
 
@@ -27,7 +23,6 @@ tabbar.disableTab("London");
 
 @changelog: added in v6.4
 
-@relatedapi: tabbar/api/tabbar_enabletab_method.md
+[comment]: # (@relatedapi: tabbar/api/tabbar_enabletab_method.md)
 
-@related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab
-
+[comment]: # (@related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab)

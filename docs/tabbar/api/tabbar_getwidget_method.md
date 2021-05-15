@@ -13,8 +13,5 @@ title: getWidget
 @example:
 tabbar.getWidget();
 
-
 @descr:
-
-
 

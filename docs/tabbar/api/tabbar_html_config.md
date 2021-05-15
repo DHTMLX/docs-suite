@@ -16,6 +16,3 @@ var tabbar = new dhx.Tabbar("tabbar_container",{
 		{ tab: "right", html:"Some HTML4"}
    ]
 });
-
-
-

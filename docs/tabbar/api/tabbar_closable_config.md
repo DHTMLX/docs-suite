@@ -24,9 +24,5 @@ var tabbar = new dhx.Tabbar("tabbar", {
 
 @changelog: added in v6.4
 
-@related: 
-tabbar/init.md#define-tabbar-structure
-tabbar/configuring_tabbar.md#close-buttons-for-tabs
-
- 
+@related: [comment]: # (tabbar/init.md#define-tabbar-structure [comment]: # (tabbar/configuring_tabbar.md#close-buttons-for-tabs)
 

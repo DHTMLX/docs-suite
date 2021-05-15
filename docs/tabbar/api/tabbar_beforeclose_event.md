@@ -20,9 +20,6 @@ tabbar.events.on("BeforeClose", function(id){
     return true;
 });
 
-
-
 @descr:
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
-

@@ -14,11 +14,8 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     noContent:true
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [Tabbar. Without Content](https://snippet.dhtmlx.com/7jzrifql)
 
-@related: tabbar/configuring_tabbar.md#tabs-without-content
-tabbar/init.md#define-tabbar-structure
-
+[comment]: # (@related: tabbar/configuring_tabbar.md#tabs-without-content tabbar/init.md#define-tabbar-structure)

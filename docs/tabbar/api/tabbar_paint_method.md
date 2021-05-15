@@ -9,4 +9,3 @@ title: paint
 
 @example:
 tabbar.paint();
-

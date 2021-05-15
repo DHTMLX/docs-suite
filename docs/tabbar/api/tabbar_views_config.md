@@ -18,8 +18,6 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     ]
 });
 
-
-
 @descr:
 
 **Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
@@ -57,11 +55,8 @@ As a result, the height of a tab is 45 and the width is 100.
 
 - If the mode of displaying a tabbar is set to "left"|"right", there is no the ability to define the width for a separate tab. <br/> The default height of the tabs is 45px, default width is 200px.
 
-
 @changelog:
 
 The **tabWidth** and **tabHeight** properties of a tab object are added in v7.0.
 
-@related: 
-tabbar/init.md#define-tabbar-structure
-tabbar/configuring_tabbar.md#structure-of-tabs 
+[comment]: # (@related: tabbar/init.md#define-tabbar-structure tabbar/configuring_tabbar.md#structure-of-tabs)
