@@ -7,20 +7,15 @@ title: afterSelect
 
 @signature: {'afterSelect: (row: IRow, col: ICol) => void;'}
 
-
 @params:
 
 - row		object		the config of a row
 - col       object      the config of a column
 
-
-
-
 @example:
 treegrid.selection.events.on("AfterSelect", function(row, col){
     console.log("afterSelect", row, col); 
 });
-
 
 @descr:
 
@@ -32,9 +27,5 @@ treegrid.events.on("AfterSelect", function(row, col){
 });
 ~~~
 
-
-
 @changelog:
 added in v7.0
-
-

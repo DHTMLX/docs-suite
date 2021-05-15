@@ -16,10 +16,8 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)
 
-@related: treegrid/configuration.md#row-height
-treegrid/initialization.md#initialize-treegrid
+[comment]: # (@related: treegrid/configuration.md#row-height treegrid/initialization.md#initialize-treegrid)

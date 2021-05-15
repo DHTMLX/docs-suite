@@ -6,7 +6,7 @@ title: beforeEditStart
 @short: fires before editing of a cell has started
 
 @signature: {'beforeEditStart: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;'}
-	
+
 @params:
 - row			object		an object with a row configuration
 - col		object		an object with a column configuration
@@ -20,7 +20,6 @@ grid.events.on("BeforeEditStart", function(row,col,editorType){
 	// your logic here
     return false;
 });
-
 
 @descr:
 

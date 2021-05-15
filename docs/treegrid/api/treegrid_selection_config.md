@@ -14,10 +14,8 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
 
-@related: treegrid/configuration.md#selection
-treegrid/initialization.md#initialize-treegrid
+[comment]: # (@related: treegrid/configuration.md#selection treegrid/initialization.md#initialize-treegrid)

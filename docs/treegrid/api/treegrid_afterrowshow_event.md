@@ -15,10 +15,7 @@ treegrid.events.on("AfterRowShow", function(row){
     // your logic here
 });
 
-
-
 @descr:
-
 
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 

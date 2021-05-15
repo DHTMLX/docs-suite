@@ -16,5 +16,4 @@ grid.events.on("FooterCellMouseDown", function(column,e){
     // your logic here
 });
 
-
 @descr:

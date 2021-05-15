@@ -5,7 +5,6 @@ title: rootParent
 
 @short: defines the id of the root parent
 
-
 @signature: rootParent?: string;
 
 @example:
@@ -19,8 +18,6 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 	],
 	data: dataset
 });
-
-
 
 @descr:
 

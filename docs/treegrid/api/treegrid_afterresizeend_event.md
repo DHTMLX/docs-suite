@@ -16,8 +16,6 @@ grid.events.on("AfterResizeEnd", function(col,e){
 	// your logic here
 });
 
-
-
 @descr:
 
 @changelog:

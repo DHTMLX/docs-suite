@@ -14,25 +14,12 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [Setup drag column](https://snippet.dhtmlx.com/ax5vs4a8)
 
 @changelog: added in v6.5
 
-@related: 
-treegrid/initialization.md#initialize-treegrid
-treegrid/configuration.md#drag-n-drop-of-treegrid-columns
+[comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/configuration.md#drag-n-drop-of-treegrid-columns)
 
-@relatedapi: 
-treegrid/api/treegrid_aftercolumndrag_event.md
-treegrid/api/treegrid_aftercolumndrop_event.md
-treegrid/api/treegrid_beforecolumndrag_event.md
-treegrid/api/treegrid_beforecolumndrop_event.md
-treegrid/api/treegrid_cancolumndrop_event.md
-treegrid/api/treegrid_cancelcolumndrop_event.md
-treegrid/api/treegrid_dragcolumnin_event.md
-treegrid/api/treegrid_dragcolumnout_event.md
-treegrid/api/treegrid_dragcolumnstart_event.md
-
+[comment]: # (@relatedapi: treegrid/api/treegrid_aftercolumndrag_event.md treegrid/api/treegrid_aftercolumndrop_event.md treegrid/api/treegrid_beforecolumndrag_event.md treegrid/api/treegrid_beforecolumndrop_event.md treegrid/api/treegrid_cancolumndrop_event.md treegrid/api/treegrid_cancelcolumndrop_event.md treegrid/api/treegrid_dragcolumnin_event.md treegrid/api/treegrid_dragcolumnout_event.md treegrid/api/treegrid_dragcolumnstart_event.md)

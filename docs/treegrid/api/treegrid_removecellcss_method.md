@@ -12,18 +12,9 @@ title: removeCellCss
 - col		string | number		the id of a column
 - css		string				the name of the CSS class
 
-
 @example:
 grid.removeCellCss("1", "b", "myCustomClass");
 
-
-
 @descr:
 
-@relatedapi:
-grid/api/grid_addcellcss_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: grid/api/grid_addcellcss_method.md)

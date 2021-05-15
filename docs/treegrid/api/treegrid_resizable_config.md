@@ -14,11 +14,8 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     resizable: true /*!*/
 }
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Resizable Columns](https://snippet.dhtmlx.com/vq3i9maq)
 
-@related:
-treegrid/configuration.md#resizing
-treegrid/initialization.md#initialize-treegrid
+[comment]: # (@related: treegrid/configuration.md#resizing treegrid/initialization.md#initialize-treegrid)

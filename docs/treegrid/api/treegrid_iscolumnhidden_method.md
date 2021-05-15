@@ -13,11 +13,8 @@ title: isColumnHidden
 @returns:
 - param	boolean     'true' if the column is hidden, 'false' otherwise
 
-
 @example:
 grid.isColumnHidden("country"); // -> true|false
-
-
 
 @descr:
 
@@ -26,4 +23,4 @@ grid.isColumnHidden("country"); // -> true|false
 @changelog:
 added in v6.4
 
-@related: treegrid/usage.md#checking-visibility-of-a-column
+[comment]: # (@related: treegrid/usage.md#checking-visibility-of-a-column)

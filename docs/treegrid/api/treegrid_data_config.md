@@ -26,13 +26,10 @@ var dataset = [
     // more columns
 ];
 
-
 var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [// columns config],
 	data: dataset
 });
-
-
 
 @descr:
 
@@ -81,9 +78,6 @@ var dataset = [
 
 **Related samples**: [Treegrid. Date column and support of the Date() object](https://snippet.dhtmlx.com/tb4o7ytt)
 
+[comment]: # (@related: treegrid/configuration.md#data treegrid/initialization.md#initialize-treegrid)
 
-@related: treegrid/configuration.md#data
-treegrid/initialization.md#initialize-treegrid
-
-@relatedapi: treegrid/api/treegrid_autoheight_config.md
-
+[comment]: # (@relatedapi: treegrid/api/treegrid_autoheight_config.md)

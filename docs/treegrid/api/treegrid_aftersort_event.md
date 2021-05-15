@@ -11,18 +11,13 @@ title: afterSort
 - col	object	an object with the configuration of a column
 - dir   string  the sorting direction (desc, asc)
 
-
-
 @example:
 treegrid.events.on("afterSort", (col, dir) => {
 	console.log(col, dir);
 });
 
-
-
 @descr:
 
+[comment]: # (@relatedapi: treegrid/api/treegrid_beforesort_event.md)
 
-@relatedapi: treegrid/api/treegrid_beforesort_event.md
-
-@changelog: added in v7.1
+[comment]: # (@changelog: added in v7.1)

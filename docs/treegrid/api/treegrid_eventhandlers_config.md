@@ -33,8 +33,6 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 		} /*!*/
 });
 
-
-
 @descr:
 
 **Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
@@ -59,7 +57,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
-
 
 An example of adding event handlers to the HTML elements defined in the data set of TreeGrid is given below:
 
@@ -98,6 +95,4 @@ const grid = new dhx.Grid("grid", {
 
 @changelog: added in v7.0
 
-@related: treegrid/initialization.md#initialize-treegrid
-treegrid/configuration.md#event-handlers-for-html-content
-treegrid/customization.md#adding-template-to-cells
+[comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/configuration.md#event-handlers-for-html-content treegrid/customization.md#adding-template-to-cells)

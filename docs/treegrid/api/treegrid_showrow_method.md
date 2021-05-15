@@ -13,7 +13,6 @@ title: showRow
 @example:
 treegrid.showRow(rowId);
 
-
 @descr:
 
 **Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
@@ -21,8 +20,6 @@ treegrid.showRow(rowId);
 @changelog:
 added in v7.0
 
-@relatedapi: 
-treegrid/api/treegrid_hiderow_method.md
-treegrid/api/treegrid_isrowhidden_method.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_hiderow_method.md treegrid/api/treegrid_isrowhidden_method.md)
 
-@related: treegrid/usage.md#hidingshowing-a-row
+[comment]: # (@related: treegrid/usage.md#hidingshowing-a-row)

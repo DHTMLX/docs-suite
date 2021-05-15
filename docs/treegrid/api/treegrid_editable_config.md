@@ -16,15 +16,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 @changelog: added in v6.4
 
-@related:
-treegrid/configuration.md#editing-grid-and-separate-columns
-treegrid/initialization.md#initialize-treegrid
-
+[comment]: # (@related: treegrid/configuration.md#editing-grid-and-separate-columns treegrid/initialization.md#initialize-treegrid)

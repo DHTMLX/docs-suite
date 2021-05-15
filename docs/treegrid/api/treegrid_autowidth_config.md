@@ -16,11 +16,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Auto Width](https://snippet.dhtmlx.com/irybslog)
 
 @changelog: added in v6.4
 
-@related: treegrid/configuration.md#autowidth-for-columns
+[comment]: # (@related: treegrid/configuration.md#autowidth-for-columns)

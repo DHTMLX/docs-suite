@@ -6,7 +6,7 @@ title: beforeCollapse
 @short: fires before collapsing a treegrid
 
 @signature: {'beforeCollapse: (id: string) => boolean | void;'}
-	
+
 @params:
 - id			string | number		the id of a collapsed row
 
@@ -18,7 +18,6 @@ treeGrid.events.on("BeforeCollapse", function(rowId) {
     // your logic here
     return false;
 });
-
 
 @descr:
 

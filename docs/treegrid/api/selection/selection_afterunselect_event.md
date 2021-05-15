@@ -12,13 +12,10 @@ title: afterUnSelect
 - row		object		the config of a row
 - col       object      the config of a column
 
-
 @example:
 treegrid.selection.events.on("AfterUnSelect", function(row, col){
     console.log("afterUnSelect", row, col); 
 });
-
-
 
 @descr:
 
@@ -32,4 +29,3 @@ treegrid.events.on("AfterUnSelect", function(row, col){
 
 @changelog:
 added in v7.0
-

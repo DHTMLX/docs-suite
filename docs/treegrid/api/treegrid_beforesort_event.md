@@ -20,10 +20,8 @@ treegrid.events.on("beforeSort", (col, dir) => {
 	// return false;
 });
 
-
-
 @descr:
 
 @changelog: added in v7.1
 
-@relatedapi: treegrid/api/treegrid_aftersort_event.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_aftersort_event.md)

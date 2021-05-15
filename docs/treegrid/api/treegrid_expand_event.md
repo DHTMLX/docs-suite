@@ -15,6 +15,4 @@ grid.events.on("Expand", function(rowId){
     // your logic here
 });
 
-
 @descr:
-

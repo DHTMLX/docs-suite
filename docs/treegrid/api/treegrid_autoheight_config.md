@@ -9,7 +9,6 @@ title: autoHeight
 
 @default: false
 
-
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [// columns config],
@@ -17,9 +16,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Auto height](https://snippet.dhtmlx.com/4158ftak)
 
@@ -27,6 +24,6 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 
 @changelog: added in v7.1
 
-@related: treegrid/configuration.md#autoheight-for-columns
+[comment]: # (@related: treegrid/configuration.md#autoheight-for-columns)
 
-@relatedapi: treegrid/api/treegrid_data_config.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_data_config.md)

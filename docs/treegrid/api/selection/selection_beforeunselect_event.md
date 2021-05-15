@@ -7,7 +7,6 @@ title: beforeUnSelect
 
 @signature: {'beforeUnSelect: (row: IRow, col: ICol) => boolean | void;'}
 
-
 @params:
 
 - row		object		the config of a row
@@ -16,16 +15,11 @@ title: beforeUnSelect
 @returns:
 param   boolean     false - to prevent unselecting of a cell, otherwise - true
 
-
-
-
 @example:
 treegrid.selection.events.on("BeforeUnSelect", function(row, col){
     console.log("beforeUnSelect", row, col); 
     return false;
 });
-
-
 
 @descr:
 
@@ -38,8 +32,5 @@ treegrid.events.on("BeforeUnSelect", function(row, col){
 });
 ~~~
 
-
-
 @changelog:
 added in v7.0
-

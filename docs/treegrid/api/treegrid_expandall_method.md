@@ -17,7 +17,6 @@ treegrid.expandAll();
 
 @changelog: added in v6.3
 
-@related: treegrid/usage.md#expandingcollapsing-nodes
+[comment]: # (@related: treegrid/usage.md#expandingcollapsing-nodes)
 
-@relatedapi:
-treegrid/api/treegrid_collapseall_method.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_collapseall_method.md)

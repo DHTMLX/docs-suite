@@ -10,7 +10,4 @@ title: paint
 @example:
 grid.paint();
 
-
 @descr:
-
-

@@ -16,9 +16,4 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 
-
-
-@descr: 
-
-
-
+@descr:

@@ -17,7 +17,6 @@ grid.events.on("AfterEditStart", function(row,col, editorType){
 	// your logic here
 });
 
-
 @descr:
 
 @changelog: added in v6.1

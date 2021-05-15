@@ -7,7 +7,6 @@ title: beforeSelect
 
 @signature: {'beforeSelect: (row: IRow, col: ICol) => boolean | void;'}
 
-
 @params:
 
 - row		object		the config of a row
@@ -16,15 +15,11 @@ title: beforeSelect
 @returns:
 param   boolean | void     false - to prevent selecting of a cell, otherwise - true
 
-
-
 @example:
 treegrid.selection.events.on("BeforeSelect", function(row, col){
     console.log("beforeSelect", row, col); 
     return false;
 });
-
-
 
 @descr:
 
@@ -37,8 +32,5 @@ treegrid.events.on("BeforeSelect", function(row, col){
 });
 ~~~
 
-
-
 @changelog:
 added in v7.0
-

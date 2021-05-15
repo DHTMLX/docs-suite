@@ -19,9 +19,7 @@ treegrid.events.on("BeforeColumnShow", function(column){
     return false;
 });
 
-
 @descr:
-
 
 **Related sample**:  [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 

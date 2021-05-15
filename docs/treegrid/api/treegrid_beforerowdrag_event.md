@@ -6,7 +6,7 @@ title: beforeRowDrag
 @short: fires before dragging of a row has started
 
 @signature: {'beforeRowDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
-	
+
 @params:
 - data		object		data object
 - events		    Event		a native event object
@@ -19,7 +19,6 @@ treegrid.events.on("BeforeRowDrag", function(data, events){
 	// your logic here
     return false;
 });
-
 
 @descr:
 
@@ -46,15 +45,6 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-treegrid/api/treegrid_dragmode_config.md
-treegrid/api/treegrid_afterrowdrag_event.md
-treegrid/api/treegrid_afterrowdrop_event.md
-treegrid/api/treegrid_beforerowdrop_event.md
-treegrid/api/treegrid_canrowdrop_event.md
-treegrid/api/treegrid_cancelrowdrop_event.md
-treegrid/api/treegrid_dragrowin_event.md
-treegrid/api/treegrid_dragrowout_event.md
-treegrid/api/treegrid_dragrowstart_event.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_dragmode_config.md treegrid/api/treegrid_afterrowdrag_event.md treegrid/api/treegrid_afterrowdrop_event.md treegrid/api/treegrid_beforerowdrop_event.md treegrid/api/treegrid_canrowdrop_event.md treegrid/api/treegrid_cancelrowdrop_event.md treegrid/api/treegrid_dragrowin_event.md treegrid/api/treegrid_dragrowout_event.md treegrid/api/treegrid_dragrowstart_event.md)
 
-@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows)

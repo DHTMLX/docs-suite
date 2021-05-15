@@ -17,7 +17,6 @@ title: getColumn
 var column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 
-
 @descr:
 
 The returned object contains the following set of properties:
@@ -131,11 +130,6 @@ The returned object contains the following set of properties:
     </tbody>
 </table>
 
+[comment]: # (@relatedapi: treegrid/api/treegrid_setcolumns_method.md)
 
-@relatedapi: treegrid/api/treegrid_setcolumns_method.md
-
-@related: treegrid/usage.md#working-with-columns-and-cells
-
-
-
-
+[comment]: # (@related: treegrid/usage.md#working-with-columns-and-cells)
