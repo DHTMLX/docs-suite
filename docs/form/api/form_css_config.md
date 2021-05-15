@@ -9,41 +9,28 @@ title: css
 
 @example:
 <style>
-    .my_first_class {
-        /*some styles*/
+    .bg-white .dhx_input {
+        background: #fff;
     }
- 
-    .my_second_class {
-        /*some styles*/
-    }
-    
-    .my_third_class {
-    	/*some styles*/
-    }
-   
 </style>
-
-var form = new dhx.Form("form_container", {
-    css:"my_first_class my_second_class", /*!*/ // Css classes for rows
+ 
+ 
+var form = new dhx.Form("form-sample", {
+    css:"bg-gray",
     rows: [
-        { 
-            css: ".my_third_class", /*!*/ // the CSS class for cols
-            cols: [{
-                type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
-                checked: true
-            },
-            {
-                type: "checkbox",
-                label: "center",
-                name: "align",
-                labelInline: true,
-                value: "center"
-            }]
-        }
+        {   
+            css:"bg-white",
+            type: "input",
+            label: "Name",
+            placeholder: "John Doe"
+        },
+        {
+            css:"bg-white",
+            type: "input",
+            label: "Email",
+            placeholder: "jd@mail.name"
+        },
+        // more options
     ]
 });
 
