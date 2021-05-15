@@ -17,11 +17,8 @@ toolbar.setState({
     "align": "right"
 });
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Set State](https://snippet.dhtmlx.com/h34uh1dr)
 
-@related: toolbar/common_methods.md#settinggetting-values-and-states
-
+[comment]: # (@related: toolbar/common_methods.md#settinggetting-values-and-states)

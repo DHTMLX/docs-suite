@@ -15,8 +15,6 @@ toolbar.events.on("AfterHide", function(event){
     // your code here
 });
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)

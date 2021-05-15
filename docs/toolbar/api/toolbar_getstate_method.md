@@ -13,15 +13,12 @@ title: getState
 @returns:
 - state		string | boolean | object		the value/state of the control, or an object with IDs of controls and their values/states
 
-
 @example:
 var state1 = toolbar.getState("search"); 
 // -> "toolbar"
 
 var state2 = toolbar.getState(); 
 // -> {"search":"toolbar","edit":true,"align":"right"}
-
-
 
 @descr:
 
@@ -45,4 +42,4 @@ var state = toolbar.getState();
 @changelog:
 The ability to pass the **id** parameter to the method is added in v7.0.
 
-@related: toolbar/common_methods.md#settinggetting-values-and-states
+[comment]: # (@related: toolbar/common_methods.md#settinggetting-values-and-states)

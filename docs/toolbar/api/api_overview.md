@@ -49,7 +49,6 @@ Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 | [](toolbar/api/toolbar_data_config.md)    | @getshort(toolbar/api/toolbar_data_config.md)    |
 | [](toolbar/api/toolbar_menucss_config.md) | @getshort(toolbar/api/toolbar_menucss_config.md) |
 
-
 ## Toolbar Button properties
 
 A Button control can have [next properties](toolbar/api/api_button_properties.md).

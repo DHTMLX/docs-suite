@@ -15,8 +15,6 @@ toolbar.enable("save_btn");
 // several at a time
 toolbar.enable(["cancel_btn","del_btn"]);
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
@@ -28,8 +26,4 @@ Starting from v7.0, it is possible to enable all items at once by using the meth
 toolbar.enable();
 ~~~
 
-@related: toolbar/common_methods.md#disabling-and-enabling-controls
-
-
-
-
+[comment]: # (@related: toolbar/common_methods.md#disabling-and-enabling-controls)

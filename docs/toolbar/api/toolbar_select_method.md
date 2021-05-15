@@ -11,11 +11,8 @@ title: select
 - id	string      the id of a Toolbar item
 - unselect	boolean   optional, true - to unselect previously selected items, otherwise - false; true by default
 
-
 @example:
 toolbar.select("web");
-
-
 
 @descr:
 
@@ -24,13 +21,6 @@ toolbar.select("web");
 @changelog:
 added in v7.0
 
-@related: toolbar/common_methods.md#selectingunselecting-an-item
+[comment]: # (@related: toolbar/common_methods.md#selectingunselecting-an-item)
 
-@relatedapi:
-toolbar/api/toolbar_unselect_method.md
-toolbar/api/toolbar_isselected_method.md
-toolbar/api/toolbar_getselected_method.md
-
-
-
-
+[comment]: # (@relatedapi: toolbar/api/toolbar_unselect_method.md toolbar/api/toolbar_isselected_method.md toolbar/api/toolbar_getselected_method.md)

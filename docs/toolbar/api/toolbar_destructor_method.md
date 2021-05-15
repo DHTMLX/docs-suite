@@ -10,14 +10,6 @@ title: destructor
 @example:
 toolbar.destructor();
 
-
-
 @descr:
 
-
 **Related sample**: [Toolbar. Destructor](https://snippet.dhtmlx.com/3ivdiha0)
-
-
-
-
-
