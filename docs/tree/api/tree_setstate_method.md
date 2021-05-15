@@ -17,8 +17,6 @@ var treeState = tree.getState();
 // restoring the state of a tree
 tree.setState(treeState);
 
-
-
 @descr:
 
 **Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
@@ -84,11 +82,6 @@ Here is an example of a treeState object:
 }
 ~~~
 
+[comment]: # (@relatedapi: tree/api/tree_getstate_method.md)
 
-@relatedapi:
-tree/api/tree_getstate_method.md
-
-
-@related: tree/work_with_tree.md#settinggetting-tree-state
-
-
+[comment]: # (@related: tree/work_with_tree.md#settinggetting-tree-state)

@@ -14,8 +14,6 @@ title: editItem
 @example:
 tree.editItem(id);
 
-
-
 @descr:
 
 **Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
@@ -38,12 +36,6 @@ The **config** parameter includes the following properties:
     </tbody>
 </table>
 
+[comment]: # (@related: tree/work_with_tree.md#editing-an-item)
 
-@related: tree/work_with_tree.md#editing-an-item
-
-@relatedapi: tree/api/tree_editable_config.md
-
-
-
-
-
+[comment]: # (@relatedapi: tree/api/tree_editable_config.md)

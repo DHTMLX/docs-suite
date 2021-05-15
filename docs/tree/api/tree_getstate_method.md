@@ -10,7 +10,6 @@ title: getState
 @returns:
 - treeState		object		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state
 
-
 @example:
 var treeState = tree.getState();
 /* -> 
@@ -20,8 +19,6 @@ var treeState = tree.getState();
     fantasy: {open: undefined, selected: 0}
 }
 */
-
-
 
 @descr:
 
@@ -48,9 +45,6 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
     </tbody>
 </table>
 
-@relatedapi:
-tree/api/tree_setstate_method.md
+[comment]: # (@relatedapi: tree/api/tree_setstate_method.md)
 
-@related: tree/work_with_tree.md#settinggetting-tree-state
-
-
+[comment]: # (@related: tree/work_with_tree.md#settinggetting-tree-state)

@@ -16,8 +16,6 @@ tree.events.on("AfterEditEnd", function(value, id) {
     // your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)

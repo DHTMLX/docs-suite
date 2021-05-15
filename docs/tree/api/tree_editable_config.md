@@ -12,14 +12,12 @@ title: editable
 @example:
 var tree = new dhx.Tree("tree_container", {editable: true});
 
-
-@descr: 
+@descr:
 
 **Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
 
 @changelog: added in v6.4
 
-@related:tree/configuration.md#editing-of-items
- tree/initialization_of_dhtmlxtree.md#initialize-tree
- 
-@relatedapi: tree/api/tree_edititem_method.md
+[comment]: # (@related:tree/configuration.md#editing-of-items tree/initialization_of_dhtmlxtree.md#initialize-tree)
+
+[comment]: # (@relatedapi: tree/api/tree_edititem_method.md)

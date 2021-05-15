@@ -16,12 +16,10 @@ tree.events.on("itemRightClick", function(id, e){
     console.log("The item with the id "+ id +" was right-clicked.");
 });
 
-
 @descr:
-
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @changelog: added in v6.3
 
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)

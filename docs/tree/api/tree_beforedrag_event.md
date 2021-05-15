@@ -16,8 +16,6 @@ tree.events.on("BeforeDrag", function(data, events) {
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
@@ -43,13 +41,4 @@ The data object can contain the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-tree/api/tree_afterdrag_event.md
-tree/api/tree_afterdrop_event.md
-tree/api/tree_beforedrop_event.md
-tree/api/tree_canceldrop_event.md
-tree/api/tree_candrop_event.md
-tree/api/tree_dragin_event.md
-tree/api/tree_dragout_event.md
-tree/api/tree_dragstart_event.md
-
+[comment]: # (@relatedapi: tree/api/tree_afterdrag_event.md tree/api/tree_afterdrop_event.md tree/api/tree_beforedrop_event.md tree/api/tree_canceldrop_event.md tree/api/tree_candrop_event.md tree/api/tree_dragin_event.md tree/api/tree_dragout_event.md tree/api/tree_dragstart_event.md)

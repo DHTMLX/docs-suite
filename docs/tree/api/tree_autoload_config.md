@@ -11,10 +11,8 @@ title: autoload
 var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
 tree.data.load("/backend/autoload?id=tree");
 
+@descr:
 
-
-@descr: 
-    
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
 Here is an example of sending an HTTP GET request to the server using the Express library:
@@ -26,4 +24,4 @@ app.get("/backend/autoload", (req, res) => {
 })
 ~~~
 
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree)

@@ -10,14 +10,4 @@ title: paint
 @example:
 tree.paint();
 
-
-
 @descr:
-
-
-
-
-
-
-
-

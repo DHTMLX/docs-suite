@@ -14,18 +14,12 @@ const tree = new dhx.Tree("tree_container", {
     selection: false,
 });
 
-
-
-@descr: 
-
+@descr:
 
 **Related sample**: [Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
 
 @changelog: added in v7.0
 
-@relatedapi: tree/api/selection/selection_enable_method.md
-tree/api/selection/selection_disable_method.md
+[comment]: # (@relatedapi: tree/api/selection/selection_enable_method.md tree/api/selection/selection_disable_method.md)
 
-@related: tree/configuration.md#selection-of-items
-tree/usage_selection.md
-
+[comment]: # (@related: tree/configuration.md#selection-of-items tree/usage_selection.md)

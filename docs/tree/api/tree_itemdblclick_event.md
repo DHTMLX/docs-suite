@@ -17,10 +17,8 @@ tree.events.on("ItemDblClick", function(id, e){
 	tree.data.update(id, {opened: !tree.data.getItem(id).opened})
 });
 
-
-
 @descr:
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)
