@@ -10,35 +10,41 @@ title: align
 @values: "start", "center", "end", "between", "around", "evenly"
 
 @example:
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	align: "center", /*!*/ // sets the alignment for rows 
-	rows: [
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered",
+    height: "200px",
+    width: "400px",
+    align: "end", // sets the alignment for rows 
+    padding: "20px",  
+    rows: [
         {
-            align: "start", /*!*/ // sets the alignment for cols
-            css: "dhx_layout-cell--bordered",
+            type: "text",
+            name: "text",
+            value: "Do you agree with our terms and conditions?"
+        },
+        {
+            padding: "10px",  
+            align: "start", // sets the alignment for cols 
             cols: [{
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "80px",
+                label: "I agree",
+                name: "agree",
+                id: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
         }
     ]
 });
 
-@descr: 
+@descr:
 
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+**Related Sample**: [Form. Alignment](https://snippet.dhtmlx.com/jjhkypod)
 
 @changelog: added in v6.4
 

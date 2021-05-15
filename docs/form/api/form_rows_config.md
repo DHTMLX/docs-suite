@@ -8,38 +8,35 @@ title: rows
 @signature: {'rows?: IBlock;'}
 
 @example:
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	rows:[ /*!*/
-    	{
-			type: "radioGroup",
-			name: "dir",
-			options: {
-				padding: "10px",
-				align: "center",
-				cols:[
-                	{
-						type: "radioButton",
-                        label: "as rows",
-                        labelInline: true,
-                        value: "rows",
-                        checked: true
-					},
-					{
-						type: "radioButton",
-                        label: "as cols",
-                        labelInline: true,
-                        value: "cols"
-                     }
-                ]
-            }
-    	}
-	]
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered dhx_layout-cell--bordered",
+    height: "300px",
+    rows: [ /*!*/
+        {
+            type: "input",
+            label: "Name",
+            icon: "dxi dxi-magnify",
+            placeholder: "John Doe",
+            labelPosition: "right",
+        },
+        {
+            type: "input",
+            label: "Email",
+            placeholder: "jd@mail.name",
+            labelPosition: "right",
+        },
+        {
+            type: "button",
+            submit: true,
+            text: "Send",
+            size: "medium",
+            view: "flat",
+            color: "primary",
+        }
+    ]
 });
 
-@descr: 
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+@descr:
 
 @changelog: added in v6.4
 

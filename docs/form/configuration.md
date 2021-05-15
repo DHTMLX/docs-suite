@@ -12,88 +12,43 @@ The [](form/api/form_align_config.md) property allows you to set aligning direct
 You can apply various options of alignment for different [control groups](form/configuration.md#grouping-controls-in-form) by specifying the [](form/api/form_align_config.md) property for the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md):
 
 ~~~js
-var form = new dhx.Form("form_container", {
+var form = new dhx.Form("form", {
     css: "dhx_widget--bordered",
-    align: "center", // set alignment for rows /*!*/
+    height: "200px",
+    width: "400px",
+    align: "end", // sets the alignment for rows 
+    padding: "20px",  
     rows: [
         {
-            align: "start", // set alignment for cols /*!*/
-            css: "dhx_layout-cell--bordered",
+            type: "text",
+            name: "text",
+            value: "Do you agree with our terms and conditions?"
+        },
+        {
+            padding: "10px",  
+            align: "start", // sets the alignment for columns 
             cols: [{
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "80px",
+                label: "I agree",
+                name: "agree",
+                id: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
         }
     ]
 });
 ~~~
 
+**Related Sample**: [Form. Alignment](https://snippet.dhtmlx.com/jjhkypod)
+
 **Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
-The tables below demonstrate using the possible values for the **align** property in Form:
-
-``` todovika сделай простой семпл и в коментариях в семпле распиши возможные варианты выравнивания, добавь к семплу теги и заголовок, вставь сюда https://docs.dhtmlx.com/suite/form__configuration.html
-<style>
-	table.my_table {
-		width: 100%;  
-	}
-    table.my_table caption{
-        vertical-align: center;
-        width: 100%;
-	}
-    table.my_table caption.title{
-        font-size: 15px;
-        padding: 10px;
-        text-align: center;
-	}
-    .img_center {
-        padding-top: 10px;
-        height: 100%;
-    }
-</style>
-<table class="my_table">
-	<tbody>
-    <caption class="title">Basic positional alignment</caption>
-    <tr>
-    <th>"start"</th>
-    <th>"center"</th>
-    <th>"end"</th></tr>
-    <tr>
-        <td id="start" class="img_center"><img src="form/alignment_start.png">
-        </td>
-        <td id="center" class="img_center"><img src="form/alignment_center.png"></td>
-        <td id="end" class="img_center"><img src="form/alignment_end.png"></td>
-    </tr>           
-   	</tbody>
-</table>
-
-<table class="my_table">
-	<tbody>
-    <caption class="title">Distributed alignment</caption>
-    <tr>
-    <th>"between"</th>
-    <th>"around"</th>
-    <th>"evenly"</th></tr>
-    <tr>
-        <td id="between" class="img_center"><img src="form/alignment_between.png">
-        </td>
-        <td id="around" class="img_center"><img src="form/alignment_around.png"></td>
-        <td id="evenly" class="img_center"><img src="form/alignment_evenly.png"></td>
-    </tr>           
-   	</tbody>
-</table>
-```
 
 Grouping Controls in Form
 -------------------------
@@ -169,34 +124,33 @@ Padding
 To generate space around a [control group](form/configuration.md#grouping-controls-in-form), make use of the [](form/api/form_padding_config.md) parameter:
 
 ~~~js
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	padding: "10px", /*!*/ // padding for rows
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered",
+    padding: "20px",  // sets padding for rows 
     rows: [
         {
-            padding: "10px", /*!*/ // padding for cols
-            css: "dhx_layout-cell--bordered",
+            type: "text",
+            name: "text",
+            value: "Do you agree with our terms and conditions?"
+        },
+        {
+            padding: "10px", // sets padding for cols
             cols: [{
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "80px", 
+                label: "I agree",
+                name: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
         }
     ]
 });
 ~~~
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 Title
 ----------
@@ -204,34 +158,31 @@ Title
 You can define a title for a [control group](form/configuration.md#grouping-controls-in-form) with the help of the [](form/api/form_title_config.md) property:
 
 ~~~js
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	title: "Form", /*!*/ // title for rows
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered",
+    padding: "20px",  
+    title: "Form", // sets the title for rows
     rows: [
         {
-            title: "Controls", /*!*/ // title for cols
-            css: "dhx_layout-cell--bordered",
+            padding: "10px",
+            title: "Checkbox controls of Form", // sets the title for cols
+            css: "dhx_widget--bordered",
             cols: [{
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "80px", 
+                label: "I agree",
+                name: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
-        }
+        }  
     ]
 });
 ~~~
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 Width/Height
 ---------------
@@ -239,38 +190,39 @@ Width/Height
 You can adjust sizes of a [control group](form/configuration.md#grouping-controls-in-form) with the corresponding properties [](form/api/form_height_config.md) and [](form/api/form_width_config.md):
 
 ~~~js
-var form = new dhx.Form("form_container", {
+var form = new dhx.Form("form", {
     css: "dhx_widget--bordered",
-    height: "300px", // height for rows /*!*/
-    width: "", // width for rows /*!*/
-    cols: [{ /*!*/
-		padding: "20px",
-		rows: [ /*!*/
-			{
-            	type: "input",
-            	label: "title",
-            	name: "title",
-            	value: blockConfig.title,
-            	labelWidth: "100px",
-            	labelPosition: "right"
-			},
-			{
-				type: "input",
-				label: "width",
-				name: "width",
-				value: blockConfig.width,
-				labelWidth: "100px",
-				labelPosition: "right"
-			},
+    height: "200px", // sets the common height for rows 
+    width: "400px", // sets the common width for rows
+    padding: "20px",   
+    rows: [
+        {
+            type: "text",
+            name: "text",
+            value: "Do you agree with our terms and conditions?"
+        },
+        {
+            padding: "10px",
+            height: "100px", // sets the common height for cols
+            width: "200px", // sets the common width for cols
+            align: "end",
+            cols: [{
+                type: "checkbox",
+                width: "80px", 
+                label: "I agree",
+                name: "agree",
+                id: "agree",
+                checked: true
+            },
             {
-                // more controls
-          	}
-        ]
-    }]
+                type: "checkbox",
+                label: "I disagree",
+                name: "align",
+            }]
+        }
+    ]
 });
 ~~~
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 
 

@@ -8,35 +8,30 @@ title: cols
 @signature: {'cols?: IBlock;'}
 
 @example:
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered",
+    width: "250px",
     rows: [
-    	{
-            title: "Align:",
+        {
             padding: "10px",
-            css: "dhx_layout-cell--bordered",
             cols: [{ /*!*/
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "100px",
+                label: "I agree",
+                name: "agree",
+                id: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
         }
     ]
 });
 
-@descr: 
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+@descr:
 
 @changelog: added in v6.4
 

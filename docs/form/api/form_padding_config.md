@@ -8,35 +8,34 @@ title: padding
 @signature: {'padding?: string | number;'}
 
 @example:
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	padding: "10px", /*!*/ // padding for rows
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered",
+    padding: "20px",  // sets padding for rows 
     rows: [
         {
-            padding: "10px", /*!*/ // padding for cols
-            css: "dhx_layout-cell--bordered",
+            type: "text",
+            name: "text",
+            value: "Do you agree with our terms and conditions?"
+        },
+        {
+            padding: "10px", // sets padding for cols
             cols: [{
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "80px", 
+                label: "I agree",
+                name: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
         }
     ]
 });
 
-@descr: 
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+@descr:
 
 @changelog: added in v6.4
 
