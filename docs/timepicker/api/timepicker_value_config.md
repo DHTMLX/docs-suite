@@ -33,7 +33,6 @@ var timepicker = new dhx.Timepicker("timepicker", {
 	value: {hour: 10, minute: 50, AM: true}
 });
 
-
 @descr:
 
 **Related sample**: [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
@@ -54,5 +53,4 @@ method of the **Date** object.
 
 @changelog: added in v7.0
 
-@related: timepicker/configuration.md#initial-value
-
+[comment]: # (@related: timepicker/configuration.md#initial-value)

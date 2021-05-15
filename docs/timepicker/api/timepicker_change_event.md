@@ -12,8 +12,6 @@ timepicker.events.on("change", function(value){
 	console.log("The value of a timepicker has changed to "+ value);
 });
 
-
-
 @descr:
 
 **Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
@@ -28,9 +26,4 @@ The type of the value parameter depends on the applied [valueFormat](timepicker/
 @changelog:
 The object type of the **value** parameter is added in v7.0.
 
-@relatedapi: 
-timepicker/api/timepicker_valueformat_config.md
-timepicker/api/timepicker_timeformat_config.md
-
-
-
+[comment]: # (@relatedapi: timepicker/api/timepicker_valueformat_config.md timepicker/api/timepicker_timeformat_config.md)

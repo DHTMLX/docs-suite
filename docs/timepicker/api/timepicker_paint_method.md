@@ -9,5 +9,3 @@ title: paint
 
 @example:
 timepicker.paint();
-
-

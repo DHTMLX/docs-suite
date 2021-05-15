@@ -26,8 +26,6 @@ var val3 = timepicker2.getValue(); // -> "06:00AM"
 // return value as an object in the 12-hour format
 var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
-
-
 @descr:
 
 **Related sample**: [Timepicker. Get Timepicker Value](https://snippet.dhtmlx.com/k4atpgnd)
@@ -39,9 +37,6 @@ The returned value can be of several types, depending on the passed parameter an
 - for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
 - for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
 
+[comment]: # (@relatedapi: timepicker/api/timepicker_setvalue_method.md)
 
-@relatedapi:
-timepicker/api/timepicker_setvalue_method.md
-
-@related: timepicker/usage.md#setting-value
-
+[comment]: # (@related: timepicker/usage.md#setting-value)

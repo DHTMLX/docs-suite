@@ -18,5 +18,4 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 **Related sample**: [Timepicker. 12 Hour Format In Timepicker](https://snippet.dhtmlx.com/u9ge1a4z)
 
-@related: timepicker/configuration.md#time-format
-timepicker/initialization.md#initialize-timepicker
+[comment]: # (@related: timepicker/configuration.md#time-format timepicker/initialization.md#initialize-timepicker)
