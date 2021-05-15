@@ -20,7 +20,6 @@ You can apply the following methods of the Selection object to manage the select
 | [](selection/api/selection_getitem_method.md) | @getshort(selection/api/selection_getitem_method.md) |
 | [](selection/api/selection_remove_method.md)  | @getshort(selection/api/selection_remove_method.md)  |
 
-
 ### Events
 
 You can apply the following events of the Selection object when working with the selection of items in **DataView**, **List**, **Tree**:
@@ -41,7 +40,6 @@ See the full lists of the methods of the Selection object you can use to manage 
 - [Grid. Selection methods](grid/api/api_overview.md#selection-methods)
 
 - [TreeGrid. Selection methods](treegrid/api/api_overview.md#selection-methods) 
-
 
 ### Events
 
