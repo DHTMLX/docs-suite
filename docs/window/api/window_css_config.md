@@ -15,8 +15,7 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-
-@descr: 
+@descr:
 
 **Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)
 
@@ -57,6 +56,4 @@ dhxWindow.show();
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-
-@related: window/how_to_start.md
-window/customization.md#styling
+[comment]: # (@related: window/how_to_start.md window/customization.md#styling)

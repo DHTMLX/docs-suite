@@ -15,13 +15,10 @@ var dhxWindow = new dhx.Window({
 });
 dhxWindow.show();
 
-
-
 @descr:
 
 **Related sample**: [Window. Closable Window](https://snippet.dhtmlx.com/d1nbhada)
- 
+
 A closable window gets the Close icon in the right top corner.
 
-@related:window/configuration.md#closability
-window/how_to_start.md
+[comment]: # (@related:window/configuration.md#closability window/how_to_start.md)

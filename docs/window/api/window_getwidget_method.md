@@ -13,10 +13,7 @@ title: getWidget
 @example:
 var window = dhxWindow.getWidget(); 
 
-
-
 @descr:
 
 @changelog:
 added in v6.3
-

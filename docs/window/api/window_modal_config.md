@@ -16,11 +16,8 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-
-
 @descr:
- 
+
 A modal window blocks the main browser window when called.
 
-@related: window/how_to_start.md
-window/configuration.md#modality
+[comment]: # (@related: window/how_to_start.md window/configuration.md#modality)

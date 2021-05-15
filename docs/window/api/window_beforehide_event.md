@@ -21,7 +21,6 @@ dhxWindow.events.on("BeforeHide", function(position, events){
     return true;
 });
 
-
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
@@ -45,4 +44,4 @@ Note, the event fires in 2 cases:
 
 The **position** and **events** parameters have been added in v7.0.
 
-@related: window/handling_events.md
+[comment]: # (@related: window/handling_events.md)

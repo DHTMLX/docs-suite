@@ -7,7 +7,6 @@ title: setSize
 
 @signature: {'setSize(width: number, height: number): void;'}
 
-
 @params:
 - width		number		the width of a window
 - height	number		the height of a window
@@ -16,13 +15,10 @@ title: setSize
 dhxWindow.setSize(250, 250);
 dhxWindow.show();
 
-
-
 @descr:
 
 **Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
 
-@relatedapi:
-window/api/window_getsize_method.md
+[comment]: # (@relatedapi: window/api/window_getsize_method.md)
 
-@related:window/usage.md#sizing-window
+[comment]: # (@related:window/usage.md#sizing-window)

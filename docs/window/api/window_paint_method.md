@@ -10,7 +10,6 @@ title: paint
 @example:
 dhxWindow.paint();
 
-
 @descr:
 
-@related:window/usage.md#repainting-window
+[comment]: # (@related:window/usage.md#repainting-window)

@@ -6,16 +6,10 @@ title: unsetFullScreen
 
 @short: switches the window from the full screen mode into the windowed mode
 
-
-
 @signature: unsetFullScreen(): void;
-
-
 
 @example:
 dhxWindow.unsetFullScreen();
-
-
 
 @descr:
 
@@ -23,5 +17,4 @@ dhxWindow.unsetFullScreen();
 
 @changelog: added in v7.1
 
-@related:window/usage.md#fullscreen-mode
-
+[comment]: # (@related:window/usage.md#fullscreen-mode)

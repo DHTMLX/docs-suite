@@ -15,8 +15,6 @@ dhxWindow.events.on("HeaderDoubleclick", function(events) {
    console.log(events)
 });
 
-
-
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
@@ -25,4 +23,4 @@ dhxWindow.events.on("HeaderDoubleclick", function(events) {
 
 The **events** parameter has been added in v7.0.
 
-@related: window/handling_events.md
+[comment]: # (@related: window/handling_events.md)
