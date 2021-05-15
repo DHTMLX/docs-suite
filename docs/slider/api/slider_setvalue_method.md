@@ -13,20 +13,12 @@ title: setValue
 @example:
 // sets value as a number
 slider.setValue(2);
- 
+
 // sets value as an array (for the range mode)
 slider.setValue([2,10]);
 
-
-
 @descr:
-
 
 **Related sample**: [Slider. Set Slider Value](https://snippet.dhtmlx.com/shw55sub)
 
-@relatedapi:
-slider/api/slider_getvalue_method.md
-
-
-
-
+[comment]: # (@relatedapi: slider/api/slider_getvalue_method.md)

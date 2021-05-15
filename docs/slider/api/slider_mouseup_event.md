@@ -10,15 +10,11 @@ title: mouseUp
 @params:
 - event		Event		the native event object
 
-
 @example:
 slider.events.on("MouseUp", function(e){
     // your code here
 });
 
-
 @descr:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)	
-
-
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)

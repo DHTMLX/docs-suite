@@ -12,11 +12,8 @@ var slider = new dhx.Slider("slider_container", {
     inverse:true
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)
 
-@related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#vertical-mode
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#vertical-mode)

@@ -14,9 +14,6 @@ var slider = new dhx.Slider("slider_container", {
     min:2
 });
 
+@descr:
 
-@descr: 
-
-
-@related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#minimal-and-maximal-values
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#minimal-and-maximal-values)

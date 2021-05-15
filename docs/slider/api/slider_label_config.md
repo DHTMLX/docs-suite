@@ -12,13 +12,8 @@ var slider = new dhx.Slider("slider_container", {
    label:"Volume" 
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Slider. Slider Label](https://snippet.dhtmlx.com/4o7yttam)
 
-@related: 
-slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#slider-label
-
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#slider-label)

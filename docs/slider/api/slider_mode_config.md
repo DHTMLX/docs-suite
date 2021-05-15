@@ -14,9 +14,6 @@ var slider = new dhx.Slider("slider_container", {
     mode:"vertical"
 });
 
+@descr:
 
-
-@descr: 
-
-@related: slider/initializing_slider.md#configuration-properties
-
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties)

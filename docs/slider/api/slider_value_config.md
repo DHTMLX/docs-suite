@@ -12,9 +12,6 @@ var slider = new dhx.Slider("slider_container", {
     value:20
 });
 
+@descr:
 
-
-@descr: 
-
-@related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#initial-value
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#initial-value)
