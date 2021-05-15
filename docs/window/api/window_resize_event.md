@@ -12,14 +12,11 @@ title: resize
 - oldState   	object    an object with the previous size and (or) position of a window
 - side  object  an object that specifies the direction of resizing
 
-
 @example:
 dhxWindow.events.on("Resize", function(state, oldState, side) {
     console.log("The window is resized" + state.left, state.top, 
                 state.width, state.height)
 });
-
-
 
 @descr:
 
@@ -41,5 +38,4 @@ The **side** object can contain the following directions:
 - **top** - (*boolean*) optional, the top direction
 - **bottom** - (*boolean*) optional, the bottom direction
 
-
-@related: window/handling_events.md
+[comment]: # (@related: window/handling_events.md)

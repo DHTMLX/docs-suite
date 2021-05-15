@@ -14,13 +14,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Frozen Columns](https://snippet.dhtmlx.com/46me58ze)
 
 @changelog: added in v7.0
 
-@related: treegrid/configuration.md#frozen-columns
-treegrid/initialization.md#initialize-treegrid
-
+[comment]: # (@related: treegrid/configuration.md#frozen-columns treegrid/initialization.md#initialize-treegrid)

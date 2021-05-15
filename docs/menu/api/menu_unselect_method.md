@@ -17,8 +17,6 @@ menu.unselect();
 // unselects a specified selected item
 menu.unselect("align-left");
 
-
-
 @descr:
 
 **Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
@@ -26,12 +24,6 @@ menu.unselect("align-left");
 @changelog:
 added in v7.0
 
-@related: menu/work_with_menu.md#selectingunselectinganitem
+[comment]: # (@related: menu/work_with_menu.md#selectingunselectinganitem)
 
-@relatedapi:
-menu/api/menu_select_method.md
-menu/api/menu_isselected_method.md
-menu/api/menu_getselected_method.md
-
-
-
+[comment]: # (@relatedapi: menu/api/menu_select_method.md menu/api/menu_isselected_method.md menu/api/menu_getselected_method.md)

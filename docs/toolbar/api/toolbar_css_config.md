@@ -17,14 +17,12 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var toolbar = new dhx.Toolbar({
     css:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
+@descr:
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Toolbar.
 

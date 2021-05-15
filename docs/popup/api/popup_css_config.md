@@ -14,12 +14,10 @@ var popup = new dhx.Popup({
 
 popup.show();
 
-
-
 @descr:
 
 **Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)
- 
+
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Popup.
 
 ~~~js

@@ -12,9 +12,6 @@ var slider = new dhx.Slider("slider_container",{
     hiddenLabel:true
 });
 
+@descr:
 
-
-@descr: 
-
-
-@related: slider/initializing_slider.md#configuration-properties
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties)

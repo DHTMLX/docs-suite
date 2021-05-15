@@ -14,4 +14,4 @@ sidebar.toggle();
 
 **Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
-@related: sidebar/work_with_sidebar.md#toggling-sidebar
+[comment]: # (@related: sidebar/work_with_sidebar.md#toggling-sidebar)

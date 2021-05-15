@@ -10,9 +10,4 @@ title: destructor
 @example:
 tabbar.destructor();
 
-
 @descr:
-
-
-
-

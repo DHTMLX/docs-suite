@@ -18,10 +18,6 @@ const pagination = new dhx.Pagination("pagination_container", {
     data: list.data /*!*/
 });
 
-
-
-@descr: 
-
-
+@descr:
 
 **Related sample**: [Pagination. Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)

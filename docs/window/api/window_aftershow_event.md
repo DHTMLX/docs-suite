@@ -15,8 +15,6 @@ dhxWindow.events.on("AfterShow", function(position){
     console.log("A window is shown");
 });
 
-
-
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
@@ -30,4 +28,4 @@ The **position** parameter contains two attributes:
 
 The **position** parameter has been added in v7.0.
 
-@related: window/handling_events.md
+[comment]: # (@related: window/handling_events.md)

@@ -16,12 +16,10 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-
 @descr:
 
 **Related sample**: [Window. Viewport Overflow](https://snippet.dhtmlx.com/qfhdlzri)
 
 {{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
 
-@related: window/how_to_start.md
-window/configuration.md#overflowing-browser-window
+[comment]: # (@related: window/how_to_start.md window/configuration.md#overflowing-browser-window)

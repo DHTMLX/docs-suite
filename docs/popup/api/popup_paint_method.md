@@ -12,7 +12,4 @@ title: paint
 @example:
 popup.paint();
 
-
 @descr:
-
-

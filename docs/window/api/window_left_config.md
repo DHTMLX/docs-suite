@@ -14,9 +14,4 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-
-
-@descr: 
-
-
-
+@descr:

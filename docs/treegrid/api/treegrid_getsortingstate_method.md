@@ -14,8 +14,6 @@ title: getSortingState
 var state = treegrid.getSortingState(); 
 // -> {dir: "desc", by: "country"}
 
-
-
 @descr:
 
 **Related sample**: [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
@@ -35,8 +33,7 @@ The return object includes the following attributes:
     </tbody>
 </table>
 
-
 @changelog:
 added in v6.4
 
-@related: treegrid/usage.md#getting-the-sorting-state
+[comment]: # (@related: treegrid/usage.md#getting-the-sorting-state)

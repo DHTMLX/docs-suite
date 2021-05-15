@@ -13,11 +13,9 @@ title: unselect
 @example:
 // unselects all previously selected items
 ribbon.unselect();
- 
+
 // unselects a specified selected item
 ribbon.unselect("print");
-
-
 
 @descr:
 
@@ -26,12 +24,6 @@ ribbon.unselect("print");
 @changelog:
 added in v7.0
 
-@related: ribbon/operating_ribbon.md#selectingunselecting-an-item
+[comment]: # (@related: ribbon/operating_ribbon.md#selectingunselecting-an-item)
 
-@relatedapi:
-ribbon/api/ribbon_select_method.md
-ribbon/api/ribbon_isselected_method.md
-ribbon/api/ribbon_getselected_method.md
-
-
-
+[comment]: # (@relatedapi: ribbon/api/ribbon_select_method.md ribbon/api/ribbon_isselected_method.md ribbon/api/ribbon_getselected_method.md)

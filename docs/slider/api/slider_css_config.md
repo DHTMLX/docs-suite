@@ -22,9 +22,7 @@ var slider = new dhx.Slider({
     css:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Slider. Custom Colors](https://snippet.dhtmlx.com/ewizud5e)
 
@@ -62,5 +60,4 @@ var slider = new dhx.Slider({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: slider/initializing_slider.md#configuration-properties
-slider/customization.md
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/customization.md)

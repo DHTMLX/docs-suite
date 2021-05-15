@@ -6,7 +6,7 @@ title: beforeColumnDrag
 @short: fires before dragging of a column has started
 
 @signature: {'beforeColumnDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
-	
+
 @params:
 - data		object		data object
 - e		    Event		a native event object
@@ -19,7 +19,6 @@ treegrid.events.on("BeforeColumnDrag", function(data, events){
 	// your logic here
     return false;
 });
-
 
 @descr:
 
@@ -48,16 +47,6 @@ The data object contains the following parameters:
 - Before v7.0, the event took one parameter - the column id. 
 - Starting from v7.0, the event takes two parameters: **data** and **e**.
 
-@relatedapi:
-treegrid/api/treegrid_dragitem_config.md
-treegrid/api/treegrid_aftercolumndrag_event.md
-treegrid/api/treegrid_aftercolumndrop_event.md
-treegrid/api/treegrid_beforecolumndrop_event.md
-treegrid/api/treegrid_cancolumndrop_event.md
-treegrid/api/treegrid_cancelcolumndrop_event.md
-treegrid/api/treegrid_dragcolumnin_event.md
-treegrid/api/treegrid_dragcolumnout_event.md
-treegrid/api/treegrid_dragcolumnstart_event.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_dragitem_config.md treegrid/api/treegrid_aftercolumndrag_event.md treegrid/api/treegrid_aftercolumndrop_event.md treegrid/api/treegrid_beforecolumndrop_event.md treegrid/api/treegrid_cancolumndrop_event.md treegrid/api/treegrid_cancelcolumndrop_event.md treegrid/api/treegrid_dragcolumnin_event.md treegrid/api/treegrid_dragcolumnout_event.md treegrid/api/treegrid_dragcolumnstart_event.md)
 
-@related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns
-
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns)

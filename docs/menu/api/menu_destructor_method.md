@@ -10,11 +10,6 @@ title: destructor
 @example:
 menu.destructor();
 
-
-
 @descr:
 
 **Related sample**: [Menu. Destructor](https://snippet.dhtmlx.com/q3x2uyex)
-
-
-

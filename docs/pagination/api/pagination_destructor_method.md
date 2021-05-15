@@ -7,11 +7,7 @@ title: destructor
 
 @signature: {'destructor(): void;'}
 
-
 @example:
 pagination.destructor();
 
-
-
 @descr:
-

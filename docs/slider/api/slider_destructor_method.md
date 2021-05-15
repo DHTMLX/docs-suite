@@ -10,14 +10,4 @@ title: destructor
 @example:
 slider.destructor();
 
-
-
 @descr:
-
-
-
-
-
-
-
-

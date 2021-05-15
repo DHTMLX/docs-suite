@@ -16,5 +16,4 @@ grid.events.on("FooterCellMouseOver ", function(column,e){
     // your logic here
 });
 
-
 @descr:

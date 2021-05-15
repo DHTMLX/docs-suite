@@ -11,15 +11,11 @@ title: inputCreated
 - id 		string			the ID of a new input
 - input		HTMLInputElement		a newly created input
 
-
 @example:
 sidebar.events.on("InputCreated", function(id, el){
     console.log(id);
 });
 
-
-
 @descr:
 
-@related: sidebar/events.md
-
+[comment]: # (@related: sidebar/events.md_

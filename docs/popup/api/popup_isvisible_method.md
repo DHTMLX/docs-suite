@@ -13,15 +13,8 @@ title: isVisible
 @example:
 popup.isVisible(); // -> true/false
 
-
-
 @descr:
 
 **Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
-@related: popup/work_with_popup.md#checking-visibility-of-popup
-
-
-
-
-
+[comment]: # (@related: popup/work_with_popup.md#checking-visibility-of-popup)

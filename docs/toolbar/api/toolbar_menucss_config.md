@@ -17,12 +17,9 @@ title: menuCss
         /*some styles*/
     }
 </style>
- 
+
 var toolbar = new dhx.Toolbar({
     menuCss:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
-
+@descr:

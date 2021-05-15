@@ -10,7 +10,6 @@ title: mouseDown
 @params:
 - event 		event		the native event object
 
-
 @example:
 slider.events.on("MouseDown", function(e){
     // your code here
@@ -18,10 +17,4 @@ slider.events.on("MouseDown", function(e){
 
 @descr:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)	
-
-
-
-
-
-
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)

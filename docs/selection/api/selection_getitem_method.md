@@ -14,7 +14,6 @@ title: getItem
 var item = tree.selection.getItem();
 // -> {value: "Books", id: "Books", opened: true, …}
 
-
 @descr:
 
 {{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}

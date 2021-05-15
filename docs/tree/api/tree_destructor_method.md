@@ -9,4 +9,3 @@ title: destructor
 
 @example:
 tree.destructor();
-

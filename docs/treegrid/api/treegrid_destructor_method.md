@@ -10,7 +10,4 @@ title: destructor
 @example:
 grid.destructor();
 
-
 @descr:
-
-

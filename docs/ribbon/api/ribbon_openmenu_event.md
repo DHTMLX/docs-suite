@@ -15,9 +15,6 @@ ribbon.events.on("OpenMenu", function(id){
     // your code here
 });
 
-
-
 @descr:
 
-@related: ribbon/handling_events.md
-
+[comment]: # (@related: ribbon/handling_events.md)

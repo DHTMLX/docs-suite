@@ -16,7 +16,6 @@ var tree = new dhx.Tree("tree_container", {
 	}
 });
 
-
 @descr:
 
 **Related samples**:
@@ -31,6 +30,4 @@ There are three types of [icons](tree/setting_tree_appearance.md#changingicons) 
 
 You should specify the name of the necessary icon type in the **icon** object and set the name of an icon from the used icon pack as its value.
 
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
-tree/setting_tree_appearance.md#changing-icons
-
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/setting_tree_appearance.md#changing-icons)

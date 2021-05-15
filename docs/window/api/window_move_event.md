@@ -17,7 +17,6 @@ dhxWindow.events.on("Move", function(position, oldPosition, side) {
     console.log("The window is moved to " + position.left, position.top)
 });
 
-
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
@@ -34,7 +33,4 @@ The **side** object contains four directions:
 - **top** - (*boolean*) optional, the top direction
 - **bottom** - (*boolean*) optional, the bottom direction
 
-
-
-@related: window/handling_events.md
-
+[comment]: # (@related: window/handling_events.md)

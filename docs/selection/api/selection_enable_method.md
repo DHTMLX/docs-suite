@@ -10,7 +10,6 @@ title: enable
 @example:
 tree.selection.enable();
 
-
 @descr:
 
 **Related Samples:**
@@ -23,10 +22,4 @@ tree.selection.enable();
 @changelog:
 added in v7.0
 
-@relatedapi: 
-dataview/api/dataview_selection_config.md
-list/api/list_selection_config.md
-tree/api/tree_selection_config.md
-
-
-
+[comment]: # (@relatedapi: dataview/api/dataview_selection_config.md list/api/list_selection_config.md tree/api/tree_selection_config.md)

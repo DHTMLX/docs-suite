@@ -13,7 +13,6 @@ var data = new dhx.TreeCollection();
 data.load("../common/treedata.json");
 var tree = new dhx.Tree("tree", {data: data});
 
-
 @descr:
 
 **Related samples**:
@@ -93,7 +92,4 @@ tree.data.getItem("Books").parent
 // "_ROOT_u1574768464563"
 ~~~
 
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
-tree/loading_data.md#preparing-data-set
-
-
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/loading_data.md#preparing-data-set)

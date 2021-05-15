@@ -14,7 +14,6 @@ var dhxWindow = new dhx.Window({
 
 dhxWindow.show();
 
-
 @descr:
 
 **Related samples**:
@@ -23,5 +22,4 @@ dhxWindow.show();
 
 By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the [Customization](window/customization.md#controls-and-operations) article.
 
-@related: window/how_to_start.md
-window/configuration.md#footer
+[comment]: # (@related: window/how_to_start.md window/configuration.md#footer)

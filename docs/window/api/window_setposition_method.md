@@ -15,14 +15,10 @@ title: setPosition
 dhxWindow.setPosition(20,20);
 dhxWindow.show();
 
-
-
 @descr:
 
 **Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
 
-@relatedapi:
-window/api/window_getposition_method.md
+[comment]: # (@relatedapi: window/api/window_getposition_method.md)
 
-
-@related:window/usage.md#positioning-window
+[comment]: # (@related:window/usage.md#positioning-window)

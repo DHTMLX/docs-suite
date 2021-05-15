@@ -14,13 +14,10 @@ var slider = new dhx.Slider("slider_container", {
     tooltip:false
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Slider. Tooltip For The Slider](https://snippet.dhtmlx.com/sxh66mnu)
 
 @changelog: added in v6.4
 
-@related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#tooltip
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#tooltip)

@@ -18,18 +18,11 @@ title: addCellCss
         background:greenyellow;
     }
 </style>
- 
+
 grid.addCellCss("1", "b", "myCustomClass");
-
-
 
 @descr:
 
 **Related sample**: [TreeGrid. Add cell css](https://snippet.dhtmlx.com/smjecfzp)
 
-@related: treegrid/customization.md#styling-cells
-
-
-
-
-
+[comment]: # (@related: treegrid/customization.md#styling-cells)

@@ -10,15 +10,11 @@ title: inputBlur
 @params:
 - id 		string		the ID of a new control
 
-
 @example:
 sidebar.events.on("InputBlur", function(id){
     console.log(id);
 });
 
-
-
 @descr:
 
-
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

@@ -10,16 +10,12 @@ title: afterClose
 @params:
 - id 		string		the id of a closed tab
 
-
 @example:
 tabbar.events.on("AfterClose", function(id){
     console.log(id);
 });
 
-
-
 @descr:
-
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
 

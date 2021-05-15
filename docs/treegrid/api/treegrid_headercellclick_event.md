@@ -12,8 +12,6 @@ grid.events.on("HeaderCellClick", function(column,e){
     // your logic here
 });
 
-
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
-

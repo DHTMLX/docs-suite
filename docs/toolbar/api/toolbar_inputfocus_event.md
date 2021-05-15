@@ -15,9 +15,6 @@ toolbar.events.on("inputFocus", function(id){
     console.log(id);
 });
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
-

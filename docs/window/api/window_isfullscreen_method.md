@@ -5,18 +5,13 @@ title: isFullScreen
 
 @short: checks whether the window is in the full screen mode
 
-
 @signature: isFullScreen(): boolean;
-
 
 @returns:
 - param     boolean     true, if a window is in the full screen mode, otherwise false
 
-
 @example:
 dhxWindow.isFullScreen(); // -> true/false
-
-
 
 @descr:
 
@@ -24,4 +19,4 @@ dhxWindow.isFullScreen(); // -> true/false
 
 @changelog: added in v7.1
 
-@related:window/usage.md#fullscreen-mode
+[comment]: # (@related:window/usage.md#fullscreen-mode)

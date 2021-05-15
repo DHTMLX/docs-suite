@@ -13,18 +13,10 @@ title: getChecked
 @example:
 tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 
-
-
 @descr:
 
 **Related sample**: [Tree. Get Checked Items](https://snippet.dhtmlx.com/cz7xypgz)
 
-@related: tree/work_with_tree.md#working-with-checkboxes
+[comment]: # (@related: tree/work_with_tree.md#working-with-checkboxes)
 
-@relatedapi: tree/api/tree_checkitem_method.md
-tree/api/tree_uncheckitemnew_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: tree/api/tree_checkitem_method.md tree/api/tree_uncheckitemnew_method.md)

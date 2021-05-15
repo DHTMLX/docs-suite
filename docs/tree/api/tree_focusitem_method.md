@@ -13,8 +13,4 @@ title: focusItem
 @example:
 tree.focusItem("1");
 
-
-
 @descr:
-
-

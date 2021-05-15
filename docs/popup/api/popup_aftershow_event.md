@@ -15,14 +15,10 @@ popup.events.on("AfterShow", function(element){
     console.log("A popup is shown");
 });
 
-
-
 @descr:
 
 **Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
-@relatedapi:
-popup/api/popup_beforeshow_event.md
+[comment]: # (@relatedapi: popup/api/popup_beforeshow_event.md)
 
-
-@related: popup/event_handling.md
+[comment]: # (@related: popup/event_handling.md)

@@ -10,13 +10,9 @@ title: afterHide
 @params:
 - events         Event       a native event object
 
-
 @example:
 menu.events.on("AfterHide", function(event){
     // your code here
 });
 
-
-
 @descr:
-

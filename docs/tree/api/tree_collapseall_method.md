@@ -10,13 +10,10 @@ title: collapseAll
 @example:
 tree.collapseAll();
 
-
 @descr:
 
 **Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
 
-@related: tree/work_with_tree.md#expandingcollapsing-items
+[comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)
 
-
-@relatedapi:
-tree/api/tree_expandall_method.md
+[comment]: # (@relatedapi: tree/api/tree_expandall_method.md)

@@ -7,22 +7,17 @@ title: getPageSize
 
 @signature: {'getPageSize(): number;'}
 
-
 @params:
-
 
 @returns:
 - param	number  the number of items
-
 
 @example:
 pagination.getPageSize();
 // -> 22
 
-
-
 @descr:
 
 **Related sample**: [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
-@related: pagination/usage.md#settinggetting-count-of-items-per-page
+[comment]: # (@related: pagination/usage.md#settinggetting-count-of-items-per-page)

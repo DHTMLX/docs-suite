@@ -15,8 +15,6 @@ timepicker.events.on("AfterClose", function(value){
     console.log(value);
 });
 
-
-
 @descr:
 
 **Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
@@ -33,8 +31,4 @@ The type of the value parameter depends on the applied [valueFormat](timepicker/
 - added in v6.4
 - The **value** parameter is added in v7.0
 
-@relatedapi: 
-timepicker/api/timepicker_valueformat_config.md
-timepicker/api/timepicker_timeformat_config.md
-
-
+[comment]: # (@relatedapi: timepicker/api/timepicker_valueformat_config.md timepicker/api/timepicker_timeformat_config.md)

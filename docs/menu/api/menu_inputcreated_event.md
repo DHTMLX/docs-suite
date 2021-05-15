@@ -11,15 +11,9 @@ title: inputCreated
 - id 		string			the ID of a new input
 - input		HTMLElement		a newly created input
 
-
 @example:
 menu.events.on("InputCreated", function(id, el){
     console.log(id);
 });
 
-
-
 @descr:
-
-
-

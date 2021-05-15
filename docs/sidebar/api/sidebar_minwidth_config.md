@@ -16,6 +16,4 @@ var sidebar = new dhx.Sidebar(document.body, {
     collapsed: true
 });
 
-
-@descr: 
-
+@descr:

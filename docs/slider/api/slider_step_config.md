@@ -14,9 +14,6 @@ var slider = new dhx.Slider("slider_container", {
     step:3
 });
 
+@descr:
 
-
-@descr: 
-
-@related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#step
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#step)

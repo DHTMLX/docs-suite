@@ -19,8 +19,6 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-
 @descr:
 
 **Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)
@@ -56,6 +54,4 @@ Each object in the spans array contains the following properties:
     </tbody>
 </table>
 
-
-@related: treegrid/configuration.md#spans
-treegrid/initialization.md#initialize-treegrid
+[comment]: # (@related: treegrid/configuration.md#spans treegrid/initialization.md#initialize-treegrid)

@@ -15,13 +15,8 @@ title: attach
 dhxWindow.attach("richtext",{mode: "document"});
 dhxWindow.show();
 
-
-
 @descr:
-
 
 **Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
-
-@related: window/how_to_start.md
-window/usage.md#attaching-dhtmlx-components
+[comment]: # (@related: window/how_to_start.md window/usage.md#attaching-dhtmlx-components)

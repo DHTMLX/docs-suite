@@ -13,12 +13,8 @@ title: isDisabled
 @returns:
 param 	boolean		true, if an item of Ribbon is disabled, otherwise false
 
-
 @example:
 ribbon.isDisable("id"); // -> returns true/false
-
-
-
 
 @descr:
 
@@ -26,4 +22,4 @@ ribbon.isDisable("id"); // -> returns true/false
 
 @changelog: added in v6.4
 
-@related: ribbon/operating_ribbon.md#checking-if-a-ribbon-item-is-disabled
+[comment]: # (@related: ribbon/operating_ribbon.md#checking-if-a-ribbon-item-is-disabled)

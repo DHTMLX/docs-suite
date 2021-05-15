@@ -19,14 +19,11 @@ dhxWindow.events.on("BeforeShow", function(position){
     return true;
 });
 
-
-
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 The event is blockable. Return *false* to block showing a window.
-
 
 The **position** parameter contains two attributes:
 
@@ -37,4 +34,4 @@ The **position** parameter contains two attributes:
 
 The **position** parameter has been added in v7.0.
 
-@related: window/handling_events.md
+[comment]: # (@related: window/handling_events.md)

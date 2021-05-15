@@ -7,22 +7,17 @@ title: getPage
 
 @signature: {'getPage(): number;'}
 
-
 @params:
-
 
 @returns:
 - param	number      the index of the active page
-
 
 @example:
 const pageIndex = pagination.getPage();
 // -> 3
 
-
-
 @descr:
 
 **Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
-@related: pagination/usage.md#settinggetting-the-active-page
+[comment]: # (@related: pagination/usage.md#settinggetting-the-active-page)

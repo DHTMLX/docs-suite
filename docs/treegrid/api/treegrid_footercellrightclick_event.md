@@ -16,5 +16,4 @@ grid.events.on("FooterCellRightClick", function(column,e){
     // your logic here
 });
 
-
 @descr:

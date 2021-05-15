@@ -11,13 +11,11 @@ title: dropBehaviour
 var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
 var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
 
-
 @descr:
 
 **Related sample**: [Tree. Drop Behaviour](https://snippet.dhtmlx.com/80mh3hly)
 
 {{note Don't forget to enable drag-n-drop via the [](tree/api/tree_dragmode_config.md) property to use dropBehaviour.}}
-
 
 There are three modes of behaviour of a dragged tree item, depending on the value set for the **dropBehaviour** option in the configuration object of a tree:
 
@@ -31,6 +29,4 @@ There are three modes of behaviour of a dragged tree item, depending on the valu
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
 
-
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
-tree/drag_and_drop_handling.md#drop-behaviour
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/drag_and_drop_handling.md#drop-behaviour)

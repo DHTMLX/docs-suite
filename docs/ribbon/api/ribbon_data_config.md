@@ -49,11 +49,10 @@ const ribbon = new dhx.Ribbon("ribbon", {
     data: data
 });
 
-
-@descr: 
+@descr:
 
 **Related samples**:
 - [Ribbon. Config Data](https://snippet.dhtmlx.com/lek4v9m7)
 - [Ribbon. Init With External Data](https://snippet.dhtmlx.com/aue48f5f)
 
-@related: ribbon/loading_json.md
+[comment]: # (@related: ribbon/loading_json.md)

@@ -92,7 +92,6 @@ title: TreeGrid API overview
 |-------------------------------------------|--------------------------------------------------|
 | [](treegrid/api/treegrid_scroll_event.md) | @getshort(treegrid/api/treegrid_scroll_event.md) |
 
-
 ### Sort and Filter
 
 | Name                                            | Description                                            |
@@ -100,7 +99,6 @@ title: TreeGrid API overview
 | [](treegrid/api/treegrid_aftersort_event.md)    | @getshort(treegrid/api/treegrid_aftersort_event.md)    |
 | [](treegrid/api/treegrid_beforesort_event.md)   | @getshort(treegrid/api/treegrid_beforesort_event.md)   |
 | [](treegrid/api/treegrid_filterchange_event.md) | @getshort(treegrid/api/treegrid_filterchange_event.md) |
-
 
 ### Column Drag and Drop
 
@@ -125,7 +123,6 @@ title: TreeGrid API overview
 | [](treegrid/api/treegrid_beforecolumnhide_event.md) | @getshort(treegrid/api/treegrid_beforecolumnhide_event.md) |
 | [](treegrid/api/treegrid_beforecolumnshow_event.md) | @getshort(treegrid/api/treegrid_beforecolumnshow_event.md) |
 
-
 ### Column Resize
 
 | Name                                                 | Description                                                 |
@@ -148,8 +145,6 @@ title: TreeGrid API overview
 | [](treegrid/api/treegrid_dragrowout_event.md)    | @getshort(treegrid/api/treegrid_dragrowout_event.md)    |
 | [](treegrid/api/treegrid_dragrowstart_event.md)  | @getshort(treegrid/api/treegrid_dragrowstart_event.md)  |
 
-
-
 ### Row Hide and Show
 
 | Name                                             | Description                                             |
@@ -159,14 +154,12 @@ title: TreeGrid API overview
 | [](treegrid/api/treegrid_beforerowhide_event.md) | @getshort(treegrid/api/treegrid_beforerowhide_event.md) |
 | [](treegrid/api/treegrid_beforerowshow_event.md) | @getshort(treegrid/api/treegrid_beforerowshow_event.md) |
 
-
 ### Row Resize
 
 | Name                                               | Description                                               |
 |----------------------------------------------------|-----------------------------------------------------------|
 | [](treegrid/api/treegrid_afterrowresize_event.md)  | @getshort(treegrid/api/treegrid_afterrowresize_event.md)  |
 | [](treegrid/api/treegrid_beforerowresize_event.md) | @getshort(treegrid/api/treegrid_beforerowresize_event.md) |
-
 
 :::info important
 - Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of TreeGrid. 
@@ -220,8 +213,6 @@ You will find the list of all the available configuration properties of a TreeGr
 | [](treegrid/api/selection/selection_getcell_method.md)    | @getshort(treegrid/api/selection/selection_getcell_method.md)    |
 | [](treegrid/api/selection/selection_removecell_method.md) | @getshort(treegrid/api/selection/selection_removecell_method.md) |
 | [](treegrid/api/selection/selection_setcell_method.md)    | @getshort(treegrid/api/selection/selection_setcell_method.md)    |
-
-
 
 ### Selection events
 

@@ -10,10 +10,6 @@ title: destructor
 @example:
 sidebar.destructor();
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Destructor](https://snippet.dhtmlx.com/7bwnymvz)
-
-

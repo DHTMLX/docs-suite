@@ -17,14 +17,12 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var tabbar = new dhx.Tabbar({
     css:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Tabbar. Custom Css](https://snippet.dhtmlx.com/47en9f0a)
 

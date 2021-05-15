@@ -13,9 +13,6 @@ var dhxWindow = new dhx.Window({
 });
 dhxWindow.show();
 
+@descr:
 
-
-@descr: 
-
-@related: window/how_to_start.md
-window/configuration.md#setting-html-content
+[comment]: # (@related: window/how_to_start.md window/configuration.md#setting-html-content)

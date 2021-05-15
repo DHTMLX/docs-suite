@@ -13,7 +13,6 @@ title: getId
 @example:
 var id = tree.selection.getId(); // -> "2"
 
-
 @descr:
 
 {{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}

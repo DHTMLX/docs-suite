@@ -16,13 +16,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Sortable Columns](https://snippet.dhtmlx.com/r4xfph82)
 
 @changelog: added in v6.4
 
-@related: treegrid/configuration.md#sorting-columns
-
+[comment]: # (@related: treegrid/configuration.md#sorting-columns)

@@ -17,14 +17,12 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var treegrid = new dhx.TreeGrid({
     css:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)
 
@@ -62,6 +60,4 @@ var treegrid = new dhx.TreeGrid({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-
-@related: treegrid/initialization.md#initialize-treegrid
-treegrid/customization.md#styling-treegrid
+[comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/customization.md#styling-treegrid)

@@ -15,8 +15,6 @@ toolbar.show("save_btn");
 // several at a time
 toolbar.show(["cancel_btn","del_btn"]);
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
@@ -28,8 +26,4 @@ Starting from v7.0, it is possible to show all items on the page at once by usin
 toolbar.show();
 ~~~
 
-@related: toolbar/common_methods.md#hiding-and-showing-controls
-
-
-
-
+[comment]: # (@related: toolbar/common_methods.md#hiding-and-showing-controls)

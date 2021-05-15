@@ -16,11 +16,8 @@ tree.events.on("itemClick", function(id, e){
     console.log("The item with the id "+ id +" was clicked.");
 });
 
-
-
 @descr:
-
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)

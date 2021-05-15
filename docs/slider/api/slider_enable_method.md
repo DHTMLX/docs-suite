@@ -10,8 +10,6 @@ title: enable
 @example:
 slider.enable();
 
-
 @descr:
 
 **Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)
-

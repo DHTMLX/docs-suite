@@ -49,7 +49,6 @@ Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 | [](menu/api/menu_menucss_config.md)        | @getshort(menu/api/menu_menucss_config.md)        |
 | [](menu/api/menu_navigationtype_config.md) | @getshort(menu/api/menu_navigationtype_config.md) |
 
-
 ## Menu MenuItem properties
 
 A MenuItem control can possess the [following properties](menu/api/api_menuitem_properties.md).
@@ -69,4 +68,3 @@ A Separator control can have the [following properties](menu/api/api_separator_p
 ## Menu Spacer properties
 
 A Spacer control can possess the [following properties](menu/api/api_spacer_properties.md).
-

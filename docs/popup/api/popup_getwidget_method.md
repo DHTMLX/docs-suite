@@ -13,14 +13,4 @@ title: getWidget
 @example:
 popup.getWidget();  
 
-
-
 @descr:
-
-
-
-
-
-
-
-

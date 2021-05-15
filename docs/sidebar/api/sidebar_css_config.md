@@ -17,14 +17,12 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var sidebar = new dhx.Sidebar({
     css:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Sidebar. Custom Css](https://snippet.dhtmlx.com/3mhhvvcr)
 
@@ -62,4 +60,4 @@ var sidebar = new dhx.Sidebar({
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: sidebar/customization.md#styling
+[comment]: # (@related: sidebar/customization.md#styling)

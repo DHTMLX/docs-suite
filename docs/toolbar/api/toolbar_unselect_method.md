@@ -17,8 +17,6 @@ toolbar.unselect();
 // unselects a specified selected item
 toolbar.unselect("web");
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
@@ -26,13 +24,6 @@ toolbar.unselect("web");
 @changelog:
 added in v7.0
 
-@related: toolbar/common_methods.md#selectingunselecting-an-item
+[comment]: # (@related: toolbar/common_methods.md#selectingunselecting-an-item)
 
-@relatedapi:
-toolbar/api/toolbar_select_method.md
-toolbar/api/toolbar_isselected_method.md
-toolbar/api/toolbar_getselected_method.md
-
-
-
-
+[comment]: # (@relatedapi: toolbar/api/toolbar_select_method.md toolbar/api/toolbar_isselected_method.md toolbar/api/toolbar_getselected_method.md)

@@ -18,4 +18,3 @@ toolbar.events.on("OpenMenu", function(id){
 @descr:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
-

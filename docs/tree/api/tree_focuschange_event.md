@@ -11,15 +11,11 @@ title: focusChange
 - index		number			the position of an item
 - id		string			the id of an item
 
-
 @example:
 tree.events.on("FocusChange", function(index, id){
     // your code here
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

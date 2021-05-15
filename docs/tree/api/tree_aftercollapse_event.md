@@ -15,11 +15,10 @@ tree.events.on("AfterCollapse", function(id) {
     // your logic here
 });
 
-
 @descr:
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @changelog: added in v6.4
 
-@related: [](tree/events_handling.md) 
+[comment]: # (@related: [](tree/events_handling.md)

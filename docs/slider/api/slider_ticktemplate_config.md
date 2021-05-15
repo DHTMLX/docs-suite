@@ -15,12 +15,8 @@ var slider = new dhx.Slider("slider_container", {
     } 
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Slider. Custom Scale](https://snippet.dhtmlx.com/jsfxnplp)
 
-@related: slider/initializing_slider.md#configuration-properties
-slider/configuring_slider.md#scale-settings
-
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#scale-settings)

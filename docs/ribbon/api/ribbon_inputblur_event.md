@@ -15,10 +15,8 @@ ribbon.events.on("InputBlur", function(id){
     console.log(id);
 });
 
-
-
 @descr:
 
 **Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
-@related: ribbon/handling_events.md
+[comment]: # (@related: ribbon/handling_events.md)

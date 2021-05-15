@@ -15,8 +15,6 @@ menu.hide("save_btn");
 // several at a time
 menu.hide(["cancel_btn","del_btn"]);
 
-
-
 @descr:
 
 **Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
@@ -27,11 +25,3 @@ Starting from v7.0, it is possible to hide all items at once by using the method
 // hides all Menu items
 menu.hide();
 ~~~
-
-
-
-
-
-
-
-

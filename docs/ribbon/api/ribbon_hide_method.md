@@ -15,8 +15,6 @@ ribbon.hide("save_btn");
 // several at a time
 ribbon.hide(["cancel_btn","del_btn"]);
 
-
-
 @descr:
 
 **Related sample**: [Ribbon. Show/Hide Ribbon Item](https://snippet.dhtmlx.com/1jkf7954)
@@ -28,8 +26,4 @@ Starting from v7.0, it is possible to hide all items at once by using the method
 ribbon.hide();
 ~~~
 
-@related: ribbon/operating_ribbon.md#hiding-and-showing-controls
-
-
-
-
+[comment]: # (@related: ribbon/operating_ribbon.md#hiding-and-showing-controls)

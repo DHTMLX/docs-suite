@@ -13,9 +13,7 @@ title: navigationType
 menu.config.navigationType = "pointer";
 menu.paint();
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
 
@@ -24,6 +22,4 @@ There are two types of navigation:
 - "pointer" - the menu is opened when a user hovers the mouse pointer over it
 - "click" - the menu is opened when a user clicks on it (used for mobile devices)
 
-@related:
-menu/how_to_start.md#initialize-menu
-
+[comment]: # (@related: menu/how_to_start.md#initialize-menu)

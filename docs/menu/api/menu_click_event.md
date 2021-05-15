@@ -11,15 +11,11 @@ title: click
 - id 		string		the ID of a clicked control
 - events	Event		a native event object
 
-
 @example:
 menu.events.on("Click", function(id,e){
     console.log(id);
 });
 
-
-
 @descr:
 
 **Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k)
-

@@ -15,10 +15,8 @@ popup.events.on("Click",function(e){
     // your logic here
 });
 
-
-
 @descr:
 
 **Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
-@related: popup/event_handling.md
+[comment]: # (@related: popup/event_handling.md)

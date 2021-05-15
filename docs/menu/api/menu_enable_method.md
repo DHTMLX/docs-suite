@@ -15,8 +15,6 @@ menu.enable("save_btn");
 // several at a time
 menu.enable(["cancel_btn","del_btn"]);
 
-
-
 @descr:
 
 **Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
@@ -27,11 +25,3 @@ Starting from v7.0, it is possible to enable all items at once by using the meth
 // enables all Menu items
 menu.enable();
 ~~~
-
-
-
-
-
-
-
-

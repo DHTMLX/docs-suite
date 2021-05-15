@@ -12,7 +12,6 @@ title: beforeRowResize
 - e	            Event	    a native event object
 - currentHeight	number		the current height of the row
 
-
 @returns:
 - result		boolean		false - to block resizing of a row, otherwise true
 
@@ -22,12 +21,8 @@ treegrid.events.on("beforeRowResize", function(row, events, currentHeight) {
     return true;
 });
 
-
-
 @descr:
 
 To be able to change the height of the row, you should specify the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) and [editable:true](treegrid/api/treegrid_editable_config.md) options in the configuration of Grid. 
-
-	
 
 @changelog: added in v7.1

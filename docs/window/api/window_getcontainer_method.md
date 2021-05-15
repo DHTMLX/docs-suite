@@ -14,10 +14,7 @@ title: getContainer
 dhxWindow.getContainer();
 // -> div.dhx_popup.dhx_widget.dhx_popup--window
 
-
-
 @descr:
 
 @changelog:
 added in v6.3
-

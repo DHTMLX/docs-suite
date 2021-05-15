@@ -14,8 +14,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     htmlEnable: true /*!*/
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Html In Data](https://snippet.dhtmlx.com/iubccmoi)
 
@@ -23,5 +22,4 @@ If you set the property to *false*, the content of TreeGrid columns will be disp
 
 @changelog: added in v6.3
 
-@related: treegrid/configuration.md#html-content-of-treegrid-columns
-treegrid/initialization.md#initialize-treegrid
+[comment]: # (@related: treegrid/configuration.md#html-content-of-treegrid-columns treegrid/initialization.md#initialize-treegrid)

@@ -10,20 +10,12 @@ title: getCell
 @returns:
 param   object  an object with parameters of a selected cell
 
-
-
 @example:
 var selectedCell = treegrid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
-
-
 @descr:
 
+[comment]: # (@related: treegrid/usage_selection.md#getting-object-of-a-selected-cell)
 
-@related: treegrid/usage_selection.md#getting-object-of-a-selected-cell
-
-@relatedapi: treegrid/api/selection/selection_enable_method.md
-
-
-
+[comment]: # (@relatedapi: treegrid/api/selection/selection_enable_method.md)

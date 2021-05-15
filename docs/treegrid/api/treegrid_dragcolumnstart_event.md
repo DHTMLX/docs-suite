@@ -16,7 +16,6 @@ treegrid.events.on("DragColumnStart", function(data, events) {
   // your logic here
 });
 
-
 @descr:
 
 The data object contains the following parameters:
@@ -40,15 +39,6 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-treegrid/api/treegrid_dragitem_config.md
-treegrid/api/treegrid_aftercolumndrag_event.md
-treegrid/api/treegrid_aftercolumndrop_event.md
-treegrid/api/treegrid_beforecolumndrag_event.md
-treegrid/api/treegrid_beforecolumndrop_event.md
-treegrid/api/treegrid_cancolumndrop_event.md
-treegrid/api/treegrid_cancelcolumndrop_event.md
-treegrid/api/treegrid_dragcolumnin_event.md
-treegrid/api/treegrid_dragcolumnout_event.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_dragitem_config.md treegrid/api/treegrid_aftercolumndrag_event.md treegrid/api/treegrid_aftercolumndrop_event.md treegrid/api/treegrid_beforecolumndrag_event.md treegrid/api/treegrid_beforecolumndrop_event.md treegrid/api/treegrid_cancolumndrop_event.md treegrid/api/treegrid_cancelcolumndrop_event.md treegrid/api/treegrid_dragcolumnin_event.md treegrid/api/treegrid_dragcolumnout_event.md)
 
-@related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns)

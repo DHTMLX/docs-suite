@@ -14,12 +14,9 @@ title: css
 	}
 </style>
 
-
 var timepicker = new dhx.Timepicker("timepicker", {
 	css: "dhx_timepicker--bordered bg-grey"
 });
-
-
 
 @descr:
 
@@ -59,7 +56,4 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-@related: timepicker/customization.md#styling
-timepicker/initialization.md#initialize-timepicker
-
-
+[comment]: # (@related: timepicker/customization.md#styling timepicker/initialization.md#initialize-timepicker)

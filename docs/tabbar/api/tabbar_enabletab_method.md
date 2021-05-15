@@ -13,15 +13,12 @@ title: enableTab
 @example:
 tabbar.enableTab("London");
 
-
-
 @descr:
 
 **Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 @changelog: added in v6.4
 
-@relatedapi: tabbar/api/tabbar_disabletab_method.md
+[comment]: # (@relatedapi: tabbar/api/tabbar_disabletab_method.md)
 
-@related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab
-
+[comment]: # (@related: tabbar/work_with_tabbar.md#enablingdisabling-a-tab)

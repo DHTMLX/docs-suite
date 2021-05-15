@@ -15,9 +15,6 @@ menu.events.on("OpenMenu", function(id){
     // your code here
 });
 
-
-
 @descr:
-
 
 **Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k)

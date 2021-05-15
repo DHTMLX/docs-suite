@@ -18,15 +18,10 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-@descr: 
+@descr:
 
 **Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
 Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
 
-@related: treegrid/configuration.md#columns
-treegrid/initialization.md#initialize-treegrid
-treegrid/customization.md
-
-
+[comment]: # (@related: treegrid/configuration.md#columns treegrid/initialization.md#initialize-treegrid treegrid/customization.md)

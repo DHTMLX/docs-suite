@@ -10,19 +10,9 @@ title: isCollapsed
 @returns:
 - result		boolean			<i>true</i>, if Sidebar is collapsed, otherwise <i>false</i>
 
-
 @example:
 sidebar.isCollapsed(); // -> true/false
 
-
-
 @descr:
 
-@related: sidebar/work_with_sidebar.md#checking-if-sidebar-is-collapsed
-
-
-
-
-
-
-
+[comment]: # (@related: sidebar/work_with_sidebar.md#checking-if-sidebar-is-collapsed)

@@ -27,8 +27,6 @@ treegrid.groupBy(function (item) {
 	return "Big";
 });
 
-
-
 @descr:
 
 **Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
@@ -39,16 +37,11 @@ The method takes one parameter, which can be:
 - a function with a rule of grouping data.The function returns the name of a group and takes one parameter:
     - **item** - a data item
 
-
 You can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 
 @changelog:
 added in v6.5
 
-@related: treegrid/usage.md#grouping-data
+[comment]: # (@related: treegrid/usage.md#grouping-data)
 
-@relatedapi: treegrid/api/treegrid_grouptitletemplate_config.md
-treegrid/api/treegrid_ungroup_method.md
-
-
-
+[comment]: # (@relatedapi: treegrid/api/treegrid_grouptitletemplate_config.md treegrid/api/treegrid_ungroup_method.md)

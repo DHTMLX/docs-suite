@@ -12,9 +12,8 @@ const tree = new dhx.Tree("tree_container", {
     rootId: "root"
 });
 
-
 @descr:
- 
+
 By default, the root element takes the id of a Tree container.
 
 ~~~js

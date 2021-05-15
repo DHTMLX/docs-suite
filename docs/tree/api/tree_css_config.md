@@ -16,8 +16,7 @@ title: css
 
 var tree = new dhx.Tree("tree_container", {css: "bg-gray"});
 
-
-@descr: 
+@descr:
 
 **Related samples**:
 - [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
@@ -57,7 +56,4 @@ var tree = new dhx.Tree("tree", {
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
-
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
-tree/setting_tree_appearance.md#styling
-
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/setting_tree_appearance.md#styling)

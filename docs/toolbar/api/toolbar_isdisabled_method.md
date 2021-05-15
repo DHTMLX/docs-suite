@@ -16,12 +16,10 @@ param	boolean		true, if an item of Toolbar is disabled, otherwise false
 @example:
 toolbar.isDisabled("id"); // -> returns true/false
 
-
-
 @descr:
 
 **Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 @changelog: added in v6.4
 
-@related: toolbar/common_methods.md#checkingifatoolbaritemisdisabled
+[comment]: # (@related: toolbar/common_methods.md#checkingifatoolbaritemisdisabled)

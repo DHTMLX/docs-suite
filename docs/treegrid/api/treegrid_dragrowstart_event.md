@@ -16,7 +16,6 @@ treegrid.events.on("DragRowStart", function(data, events) {
     // your logic here
 });
 
-
 @descr:
 
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
@@ -42,15 +41,6 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
-@relatedapi:
-treegrid/api/treegrid_dragmode_config.md
-treegrid/api/treegrid_afterrowdrag_event.md
-treegrid/api/treegrid_afterrowdrop_event.md
-treegrid/api/treegrid_beforerowdrag_event.md
-treegrid/api/treegrid_beforerowdrop_event.md
-treegrid/api/treegrid_canrowdrop_event.md
-treegrid/api/treegrid_cancelrowdrop_event.md
-treegrid/api/treegrid_dragrowin_event.md
-treegrid/api/treegrid_dragrowout_event.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_dragmode_config.md treegrid/api/treegrid_afterrowdrag_event.md treegrid/api/treegrid_afterrowdrop_event.md treegrid/api/treegrid_beforerowdrag_event.md treegrid/api/treegrid_beforerowdrop_event.md treegrid/api/treegrid_canrowdrop_event.md treegrid/api/treegrid_cancelrowdrop_event.md treegrid/api/treegrid_dragrowin_event.md treegrid/api/treegrid_dragrowout_event.md)
 
-@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows)

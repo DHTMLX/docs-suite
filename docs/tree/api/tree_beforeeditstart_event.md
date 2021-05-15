@@ -14,14 +14,11 @@ title: beforeEditStart
 @returns:
 - result	boolean | void		false - to block editing of an item, otherwise true
 
-
 @example:
 tree.events.on("BeforeEditStart", function(value, id) {
     // your logic here
     return false;
 });
-
-
 
 @descr:
 

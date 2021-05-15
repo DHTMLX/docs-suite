@@ -14,10 +14,8 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
+@descr:
 
-@descr: 
+[comment]: # (@related: treegrid/configuration.md#widthheight treegrid/initialization.md#initialize-treegrid)
 
-@related: treegrid/configuration.md#widthheight
-treegrid/initialization.md#initialize-treegrid
-
-@relatedapi: treegrid/api/treegrid_width_config.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_width_config.md)

@@ -20,10 +20,8 @@ tree.events.on("beforeCheck", function (index, id) {
     // return false;
 });
 
-
-
 @descr:
 
 @changelog: added in v7.1
 
-@relatedapi: tree/api/tree_aftercheck_event.md
+[comment]: # (@relatedapi: tree/api/tree_aftercheck_event.md)

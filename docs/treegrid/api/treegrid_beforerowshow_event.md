@@ -10,7 +10,6 @@ title: beforeRowShow
 @params: 
 - row   object  an object with a row configuration
 
-
 @returns:
 - result	boolean | void		false - to prevent a row from being shown, otherwise true
 
@@ -20,10 +19,7 @@ treegrid.events.on("BeforeRowShow", function(row){
     return false;
 });
 
-
-
 @descr:
-
 
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 

@@ -22,4 +22,3 @@ popup.show();
 @descr:
 
 **Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
-

@@ -19,14 +19,12 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     mode: "right"
 });
 
-
-
 @descr:
 
 **Related sample**: [Tabbar. Tab auto height](https://snippet.dhtmlx.com/pqvycp1c)
 
 {{note The property can be applicable when [mode](tabbar/api/tabbar_mode_config.md) is set to "right" or "left". }}
 
-@changelog: added in v7.0
+[comment]: # (@changelog: added in v7.0)
 
-@related: tabbar/configuring_tabbar.md#autosize-for-tabs
+[comment]: # (@related: tabbar/configuring_tabbar.md#autosize-for-tabs)

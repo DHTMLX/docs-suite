@@ -16,9 +16,6 @@ tabbar.events.on("Change", function(activeId, prevId){
     console.log(activeId);
 });
 
-
-
 @descr:
 
 **Related sample**: [Tabbar. Events](https://snippet.dhtmlx.com/dld2qo1m)
-

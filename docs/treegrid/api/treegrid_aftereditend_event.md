@@ -17,7 +17,6 @@ grid.events.on("AfterEditEnd", function(value,row,column){
 	// your logic here
 });
 
-
 @descr:
 
 @changelog: added in v6.1

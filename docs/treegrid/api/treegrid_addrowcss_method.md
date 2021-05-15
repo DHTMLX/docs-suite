@@ -17,16 +17,11 @@ title: addRowCss
         background:greenyellow;
     }
 </style>
- 
+
 grid.addRowCss("2", "myCustomClass");
-
-
 
 @descr:
 
 **Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
 
-@related: treegrid/customization.md#styling-rows
-
-
-
+[comment]: # (@related: treegrid/customization.md#styling-rows)
