@@ -3,9 +3,6 @@ sidebar_label: Configuration
 title: Configuration
 ---
 
-import { Note } from '@site/src/components';
-
-
 ## Calendar modes
 
 There are several modes of displaying Calendar, which are set via the [](calendar/api/calendar_mode_config.md) property:
