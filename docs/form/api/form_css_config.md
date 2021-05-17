@@ -15,7 +15,7 @@ title: css
 </style>
  
  
-var form = new dhx.Form("form-sample", {
+var form = new dhx.Form("form", {
     css:"bg-gray",
     rows: [
         {   
@@ -41,7 +41,7 @@ var form = new dhx.Form("form-sample", {
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Form.
 
 ~~~js
-var form = new dhx.Form("form_container", {
+var form = new dhx.Form("form", {
     css:"dhx_widget--bg_white"
 });
 ~~~
