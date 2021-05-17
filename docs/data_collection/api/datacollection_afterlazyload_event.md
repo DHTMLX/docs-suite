@@ -8,8 +8,8 @@ title: afterLazyLoad
 @signature: {'afterLazyLoad: (from: number, count: number) => void;'}
 
 @params:
-- from		number		the index of the first loaded item 	
-- count     number      the count of records loaded from the server 
+- `from: number` - the index of the first loaded item 	
+- `count: number` - the count of records loaded from the server 
 
 @example:
 data.events.on("AfterLazyLoad", function (from, count) {

@@ -8,7 +8,7 @@ title: beforeLazyLoad
 @signature: {'beforeLazyLoad: () => boolean | void;'}
 
 @returns:
-- param		boolean			false - to block sending a request to the server, otherwise true
+Return `false` to block sending a request to the server; otherwise, `true`.
 
 @example:
 data.events.on("BeforeLazyLoad", function () {

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getInitialData
-title: getInitialData
+sidebar_label: getInitialData()
+title: getInitialData()
 ---          
 
 @short: returns the initial values of the items of a widget initialized in a data collection
@@ -8,7 +8,7 @@ title: getInitialData
 @signature: {'getInitialData(): T[];'}
 
 @returns:
-- function        array      an array of item objects with initial values
+An array of item objects with initial values.
 
 @example:
 var startingData = component.data.getInitialData();
