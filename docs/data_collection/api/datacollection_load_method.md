@@ -1,6 +1,6 @@
 ---
-sidebar_label: load
-title: load
+sidebar_label: load()
+title: load()
 ---          
 
 @short: loads data from an external file
@@ -9,12 +9,11 @@ title: load
 
 @params:
 
-- url			string		the URL of an external file
-- type			string		optional, type of data (json, csv, xml), json by default
+- `url: string` - the URL of an external file
+- `type: string` - optional, type of data (json, csv, xml), json by default
 
 @returns:
-
-- loaded		promise		a promise of data loading
+A promise of data loading.
 
 @example:
 diagram.data.load("../common/data.xml", "xml");

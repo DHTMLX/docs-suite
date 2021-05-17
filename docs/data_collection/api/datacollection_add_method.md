@@ -1,6 +1,6 @@
 ---
-sidebar_label: add
-title: add
+sidebar_label: add()
+title: add()
 ---          
 
 @short: adds a new item to the component
@@ -8,11 +8,11 @@ title: add
 @signature: {'add(new_item: IDataItem | IDataItem[], index?: number): Id | Id[];'}
 
 @params:
-- new_item		object | array		the object of a new item or an array of item objects
-- index			number 				optional, the index of the position starting from which new items will be added
+- `new_item: object | array` - the object of a new item or an array of item objects
+- `index: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
-- id    string|string[]   the item's id or an array with ids of items
+Either a string with the item's id or an array of string values with ids of items.
 
 @example:
 // adding a new item into the beginning of a data collection 

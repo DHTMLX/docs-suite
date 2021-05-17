@@ -7,8 +7,6 @@ title: load
 
 @signature: {'load: () => void;'}
 
-@params:
-
 @example:
 data.events.on("Load", function(){
 	console.log("Items are loaded.");

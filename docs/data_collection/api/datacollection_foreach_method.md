@@ -1,6 +1,6 @@
 ---
-sidebar_label: forEach
-title: forEach
+sidebar_label: forEach()
+title: forEach()
 ---          
 
 @short: iterates over all items of a data collection
@@ -8,7 +8,7 @@ title: forEach
 @signature: {'forEach(callback: DataCallback<T>): void;'}
 
 @params:
-- callback	function    a function that will iterate over items of a data collection
+`callback: function` - a function that will iterate over items of a data collection
 
 @example:
 datacollection.forEach(function(element, index, array) {

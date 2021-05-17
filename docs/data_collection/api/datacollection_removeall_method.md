@@ -1,6 +1,6 @@
 ---
-sidebar_label: removeAll
-title: removeAll
+sidebar_label: removeAll()
+title: removeAll()
 ---          
 
 @short: deletes all items from the component

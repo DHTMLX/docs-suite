@@ -8,10 +8,10 @@ title: beforeAdd
 @signature: {'beforeAdd: (obj: any) => boolean | void;'}
 
 @params:
-- newItem		object			the object of an added item
+`newItem: object` - the object of an added item
 
 @returns:
-- result		boolean		true/false to add/not add an item
+Return `false` to prevent an item adding into a data collection; otherwise, `true`.
 
 @example:
 data.events.on("BeforeAdd", function(newItem){
@@ -20,7 +20,5 @@ data.events.on("BeforeAdd", function(newItem){
 });
 
 @descr:
-
-The event is blockable. Return *false* to prevent an item adding into a data collection.
 
 [comment]: # (@relatedapi: data_collection/api/datacollection_afteradd_event.md)

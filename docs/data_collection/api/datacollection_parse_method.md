@@ -1,6 +1,6 @@
 ---
-sidebar_label: parse
-title: parse
+sidebar_label: parse()
+title: parse()
 ---          
 
 @short: loads data from a local data source 
@@ -9,14 +9,13 @@ title: parse
 
 @params:
 
-- data			any 		the data to load
-- type			string		optional, type of data (json, xml, csv), json by default
+- `data: any` - the data to load
+- `type: string` - optional, type of data (json, xml, csv), json by default
 
-@returns: 
-- data		array		an array of loaded items		
+@returns:
+An array of loaded items.		
 
 @example:
-
 var data = [
 	{
 		id: "1",

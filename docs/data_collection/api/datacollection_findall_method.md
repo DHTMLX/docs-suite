@@ -1,6 +1,6 @@
 ---
-sidebar_label: findAll
-title: findAll
+sidebar_label: findAll()
+title: findAll()
 ---          
 
 @short: finds all the items that correspond to the specified rule
@@ -8,11 +8,10 @@ title: findAll
 @signature: {'findAll(rule: IFilterMode | DataCallback<T>): T[];'}
 
 @params:
-- rule	object, function	the search criteria
+`rule: object, function` - the search criteria
 
 @returns:
-
-- items		array		an array of matching item objects
+An array of matching item objects.
 
 @example:
 //searching for items by the function
