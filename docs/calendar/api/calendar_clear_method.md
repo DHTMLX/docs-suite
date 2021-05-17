@@ -10,8 +10,6 @@ title: clear
 @example:
 calendar.clear()
 
-
-
 @descr:
 
 **Related sample**: [Calendar. Clear Value](https://snippet.dhtmlx.com/zu2n05at)

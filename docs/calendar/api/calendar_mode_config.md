@@ -15,12 +15,9 @@ title: mode
 var calendar = new dhx.Calendar("calendar_container", {
     mode: "month"
 });
- 
 
-@descr: 
-
-@related:
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#calendarmodes
+@descr:
 
 **Related sample**: [Calendar. Calendar Modes](https://snippet.dhtmlx.com/n9q0tc0q)
+
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#calendarmodes)

@@ -14,13 +14,8 @@ var calendar = new dhx.Calendar("calendar_container", {
     weekNumbers: true
 });
 
+@descr:
 
+**Related sample**: [Calendar. Numbers Of Weeks](https://snippet.dhtmlx.com/9692gk6n)
 
-@descr: 
-
-**Related sample**:
-- [Calendar. Numbers Of Weeks](https://snippet.dhtmlx.com/9692gk6n)
-
-@related:
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#numbersofweeks
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#numbersofweeks)

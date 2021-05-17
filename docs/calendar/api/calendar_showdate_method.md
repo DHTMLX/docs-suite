@@ -11,12 +11,11 @@ title: showDate
 - date	 Date    	the date that should be shown in the calendar
 - mode   string  	optional, the mode in which the calendar will be opened
 
-
-
 @example:
 calendar.showDate(new Date(2020,11,12));
+@examplestop:
 
-
+**Related sample**: [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
 
 @descr:
 
@@ -53,8 +52,4 @@ calendar.showDate(new Date(2020,11,12),"year");
 calendar.showDate(null,"year");
 ~~~
 
-**Related sample**:
-- [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
-
-@related:
-calendar/operating_calendar.md#changingcalendarmode
+[comment]: # (@related: calendar/operating_calendar.md#changingcalendarmode)

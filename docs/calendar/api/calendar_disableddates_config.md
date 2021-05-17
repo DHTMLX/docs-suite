@@ -22,20 +22,17 @@ var calendar = new dhx.Calendar("calendar", {
 		return disabled[date.getDay()];
 	}
 });
+@exmplestop:
 
+**Related sample**: [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
 
-@descr: 
+@descr:
 The function passed to the method receives one parameter:
 
-- **date** (*Date*) - a date object 
+- **date** (*Date*) - a date object
 
 and must return a boolean value to define whether a passed date should be blocked (if *true*, the date is inactive).
 
-**Related sample**:
-- [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
-
-@related:
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#disableddates
-
 @changelog: added in v6.4
+
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#disableddates)

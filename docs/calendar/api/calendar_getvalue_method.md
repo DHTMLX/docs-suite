@@ -13,7 +13,6 @@ title: getValue
 @returns:
 - date		Date,Date[],string,string[]		the selected date
 
-
 @example:
 
 var date = calendar.getValue(); // -> "03/06/19"
@@ -27,17 +26,10 @@ var date = calendar.getValue(true);
 // for a range calendar as an array of string values 
 var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 
-
-
 @descr:
 
+**Related sample**: [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
 
-@relatedapi:
-calendar/api/calendar_setvalue_method.md
+[comment]: # (@relatedapi: calendar/api/calendar_setvalue_method.md)
 
-@related:
-calendar/operating_calendar.md#gettingselecteddate
-calendar/configuring.md#rangemode
-
-**Related sample**:
-- [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
+[comment]: # (@related: calendar/operating_calendar.md#gettingselecteddate calendar/configuring.md#rangemode)

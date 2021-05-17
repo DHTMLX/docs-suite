@@ -10,16 +10,11 @@ title: yearSelected
 @params:
 - year      number      the number of the selected year
 
-
 @example:
 calendar.events.on("YearSelected", function(year) {
     console.log("Selected year: " + year);
 });
 
-
-
 @descr:
 
-**Related sample**:
-- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
-
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)

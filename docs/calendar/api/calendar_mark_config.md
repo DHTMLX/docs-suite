@@ -22,20 +22,15 @@ var calendar = new dhx.Calendar("calendar", {
     },
     css: "dhx_widget--bordered"
 });
+@examplestop:
 
+**Related sample**: [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
 
-
-
-@descr: 
+@descr:
 The function passed to the method receives one parameter:
 
 - **date** (*Date*) - a date object 
 
 and must return a string with the name of the CSS class or an empty string.
 
-@related:
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#highlighteddates
-
-**Related sample**:
-- [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#highlighteddates)

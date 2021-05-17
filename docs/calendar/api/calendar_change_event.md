@@ -12,21 +12,16 @@ title: change
 - oldDate   	Date    	the previously selected date
 - click 		boolean 	defines whether the change happened because of a click on a date (true), or due to an API call (false)
 
-
 @example:
 calendar.events.on("Change",function(date, oldDate, click){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });
 
-
-
 @descr:
 
-@relatedapi:calendar/api/calendar_beforechange_event.md
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
-@related:
-calendar/handling_events.md
+[comment]: # (@related: calendar/handling_events.md)
 
-**Related sample**:
-- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
+[comment]: # (@relatedapi:calendar/api/calendar_beforechange_event.md)

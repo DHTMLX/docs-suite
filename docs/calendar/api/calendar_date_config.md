@@ -7,23 +7,18 @@ title: date
 
 @signature: {'date?: Date | string;'}
 
-
 @example:
 var calendar = new dhx.Calendar("calendar_container", {
     value: new Date(),
     date: new Date(2019, 0, 1)
 });
-
-
-
-@descr: 
-By default, it is either the same as calendar/api/calendar_value_config.md, or shows the current date, if **value** is not specified.
-
-
-@relatedapi: 
-calendar/api/calendar_value_config.md
-
-@related: calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#initialcalendardate
+@examplestop:
 
 **Related sample**: [Calendar. Date Initialization](https://snippet.dhtmlx.com/fyg6l65t)
+
+@descr:
+By default, it is either the same as calendar/api/calendar_value_config.md, or shows the current date, if **value** is not specified.
+
+[comment]: # (@relatedapi: calendar/api/calendar_value_config.md)
+
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#initialcalendardate)

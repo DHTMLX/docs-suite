@@ -10,7 +10,4 @@ title: paint
 @example:
 calendar.paint();
 
-
-
 @descr:
-

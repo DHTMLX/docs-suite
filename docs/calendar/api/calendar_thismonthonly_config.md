@@ -14,14 +14,8 @@ var calendar = new dhx.Calendar("calendar_container", {
    thisMonthOnly:true
 });
 
+@descr:
 
+**Related sample**: [Calendar. The Days Of This Month Only](https://snippet.dhtmlx.com/4wi5hbtr)
 
-@descr: 
-
-
-@related:
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#displayingonlycurrentmonth
-
-**Related sample**:
-- [Calendar. The Days Of This Month Only](https://snippet.dhtmlx.com/4wi5hbtr)
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#displayingonlycurrentmonth)
