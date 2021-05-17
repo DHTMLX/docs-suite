@@ -10,7 +10,6 @@ title: get
 @params:
 - className      string     the name of the class
 
-
 @returns:
 
 - params      object     an object with a list of the class styles
@@ -19,10 +18,4 @@ title: get
 const StyleList =  dhx.cssManager.get("myCustomClass");
 // -> { color: "black", width: "200px" }
 
-
-
 @descr:
-
-
-
-

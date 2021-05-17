@@ -13,8 +13,7 @@ Read the related articles for detailed information about how to display large li
 - [dynamic loading in Grid](grid/data_loading.md#dynamic-loading)
 - [dynamic loading in List](list/load_data.md#dynamic-loading) (You need to set the **virtual:true** property in the configuration object of List) 
 
-Initialize LazyDataProxy
----------------------------
+## Initialize LazyDataProxy
 
 Initialize LazyDataProxy with the dhx.LazyDataProxy object constructor. The constructor takes two parameters:
 
@@ -39,8 +38,7 @@ There is a list of parameters that you can specify in the configuration object. 
 - **delay** - (*number*) time interval (in milliseconds) to wait before the next dynamic loading request to the server (allows decreasing the number of server request during quick scrolling); default value: 50
 - **prepare** - (*number*) the count of extra records that should be loaded from the server; default value: 0
 
-Server-side Response
--------------------------
+## Server-side Response
 
 Server side will send the following data to the client side:
 
@@ -59,8 +57,7 @@ total_count: 233,
 from: 15
 ~~~
 
-Updating URL
----------------
+## Updating URL
 
 You can use the **updateUrl** method to update the URL where the data will be loaded or to change parameters for loading data from the backend. The method takes two parameters:
 
@@ -75,5 +72,3 @@ lazyDataProxy.updateUrl("https://docs.dhtmlx.com/suite/backend/lazyload", {
     from: 0
 });
 ~~~
-
-

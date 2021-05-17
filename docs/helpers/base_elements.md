@@ -19,12 +19,11 @@ Block and elements' names are separated from modifier names by a double hyphen: 
 
 {{note The **'dhx'** prefix is used at the beginning of all class names in the DHTMLX library}}
 
-
 **The full list of CSS classes of the DHTMLX library you can use to style HTML elements is described below.**
 
 ## Form group
 
-### Block 
+### Block
 
 | Name                  | Description                                                                                                                                                       |
 | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,7 +42,6 @@ Block and elements' names are separated from modifier names by a double hyphen: 
 | <b>dhx_form-group--label_sr</b>          | Hides a label inside a form group visually                                                                               |
 | <b>dhx_form-group--inline</b>            | Puts a  label and an input in one line                                                                                   |
 | <b>dhx_form-group--textarea</b>          | Add this class to the form group, <br/> which contains a &lt;textarea&gt; element, to style it                           |
-
 
 Here's what markup looks like using a form-group example:
 
@@ -297,7 +295,6 @@ The DHTMLX library also provides you with a set of CSS classes that you can appl
 | <b>dhx_widget--no-border_right</b>  | Removes the right border of a widget         |
 | <b>dhx_widget--no-border_left</b>   | Removes the left border of a widget          |
 
-
 Here is an example of Ribbon customization:
 
 ~~~js
@@ -323,7 +320,6 @@ var ribbon = new dhx.Ribbon({
 | <b>dhx_layout-cell--no-border_right</b>  | Removes the right border of a layout-cell         |
 | <b>dhx_layout-cell--no-border_left</b>   | Removes the left border of a layout-cell          |
 
-
 An example of customization of a Layout cell is given below:
 
 ~~~js
@@ -338,4 +334,3 @@ var layout = new dhx.Layout("layout", {
     }]
 });
 ~~~
-

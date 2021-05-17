@@ -16,7 +16,3 @@ dhx.awaitRedraw().then(function() {
 ~~~
 
 **Related sample**: [Helpers. Await Redraw. Initialization](https://snippet.dhtmlx.com/r4ck0smz)
-
-
-
-
