@@ -1,6 +1,6 @@
 ---
-sidebar_label: filter
-title: filter
+sidebar_label: filter()
+title: filter()
 ---          
 
 @short: filters data items in a component
@@ -8,34 +8,34 @@ title: filter
 @signature: {'filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;'}
 
 @params:
-- rule				function,object			the filtering criteria
-- config 			object					optional, defines the parameters of filtering
+- `rule: function,object` - the filtering criteria
+- `config: object` - optional, defines the parameters of filtering
 
 @example:
 
 grid.data.filter(function (item) {
-  return item.a > 0 && item.b !== "Apple";
+    return item.a > 0 && item.b !== "Apple";
 });
 
 // or
 grid.data.filter(function (item) {
     return item.a > 0 && item.b !== "Apple";
 }, {
-  add: true
+    add: true
 });
 
 // or
 grid.data.filter({
-  by: "a",
-  match: "Orange",
-  compare: function (value, match, item) {
-    if (item.a !== "Some") {
-      return val === "New";
-    }
+    by: "a",
+    match: "Orange",
+    compare: function (value, match, item) {
+        if (item.a !== "Some") {
+            return val === "New";
+        }
     return false;
-  }
+    }
 }, {
-  add: true
+    add: true
 });
 
 @descr:
@@ -88,12 +88,12 @@ For example:
 
 ~~~js
 grid.data.filter({
-  by: "a",
-  match: "Orange",
-  compare: function (value, match, item) {
-    if (item.a !== "Some") {
-      return val === "New";
-    }
+    by: "a",
+    match: "Orange",
+    compare: function (value, match, item) {
+        if (item.a !== "Some") {
+            return val === "New";
+        }
     return false;
 });
 ~~~
@@ -118,23 +118,23 @@ For instance:
 
 ~~~js
 grid.data.filter(function (item) {
-  return item.a > 0 && item.b !== "Apple";
+    return item.a > 0 && item.b !== "Apple";
 }, {
-  add: true,
-  smartFilter: true
+    add: true,
+    smartFilter: true
 });
 
 grid.data.filter({
-  by: "a",
-  match: "Orange",
-  compare: function (value, match, item) {
-    if (item.a !== "Some") {
-      return val === "New";
-    }
+    by: "a",
+    match: "Orange",
+    compare: function (value, match, item) {
+        if (item.a !== "Some") {
+            return val === "New";
+        }
     return false;
-  }
+    }
 }, {
-  add: true,
-  smartFilter: true
+    add: true,
+    smartFilter: true
 });
 ~~~

@@ -8,10 +8,10 @@ title: beforeRemove
 @signature: {'beforeRemove: (obj: any) => boolean | void;'}
 
 @params:
-- removedItem		object			the object of an item to remove
+`removedItem: object` - the object of an item to remove
 
 @returns:
-- result		boolean		true/false to remove/not remove an item from a data collection
+Return `false` to block removing an item from a data collection; otherwise, `true`.
 
 @example:
 data.events.on("BeforeRemove", function(removedItem){

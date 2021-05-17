@@ -1,6 +1,6 @@
 ---
-sidebar_label: find
-title: find
+sidebar_label: find()
+title: find()
 ---          
 
 @short: finds the item that corresponds to the specified rule
@@ -8,11 +8,10 @@ title: find
 @signature: {'find(rule: IFilterMode | DataCallback<T>): T;'}
 
 @params:
-- rule	object,function	the search criteria
+`rule: object,function` - the search criteria
 
 @returns:
-
-- item		object		the object of the matching item
+An object of the matching item.
 
 @example:
 //searching for an item by the function

@@ -1,6 +1,6 @@
 ---
-sidebar_label: reduce
-title: reduce
+sidebar_label: reduce()
+title: reduce()
 ---          
 
 @short: reduces the array to a single value
@@ -9,8 +9,8 @@ title: reduce
 
 @params:
 
-- callback			function		a function that will be called for each item in the array
-- acc          any             a value to be passed to the function as the initial value
+- `callback: function` - a function that will be called for each item in the array
+- `acc: any` - a value to be passed to the function as the initial value
 
 @example:
 var total = datacollection.reduce(function(new_item, item) {
