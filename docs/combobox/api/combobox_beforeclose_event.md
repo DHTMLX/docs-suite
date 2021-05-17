@@ -8,7 +8,7 @@ title: beforeClose
 @signature: {'beforeClose: () => boolean | void;'}
 
 @returns:
-param 	boolean		false-to prevent closing a combobox, otherwise true
+Return `false` to prevent closing a combobox, otherwise `true`.
 
 @example:
 combobox.events.on("BeforeClose", function( ) {

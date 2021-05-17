@@ -8,7 +8,7 @@ title: input
 @signature: {'input: (value: string) => void;'}
 
 @params:
-- value     string       an entered value
+- `value: string` - an entered value
 
 @example:
 combobox.events.on("Input", function(value) {

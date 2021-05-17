@@ -1,6 +1,6 @@
 ---
-sidebar_label: setCustomColors
-title: setCustomColors
+sidebar_label: setCustomColors()
+title: setCustomColors()
 ---          
 
 @short: sets custom colors that will be displayed at the bottom of the palette

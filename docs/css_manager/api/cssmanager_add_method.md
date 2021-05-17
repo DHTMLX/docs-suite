@@ -1,6 +1,6 @@
 ---
-sidebar_label: add
-title: add
+sidebar_label: add()
+title: add()
 ---  
 
 @short: creates a new class with a list of styles
@@ -8,13 +8,12 @@ title: add
 @signature: {'add(cssList: ICssList, customId?: string, silent?: boolean): string;'}
 
 @params:
-- cssStyleList       object     mandatory, an object with a list of styles
-- customId      string      optional, a custom name of the class
-- silent    boolean      optional, if true - a new class will be created but not added to an HTML page
+- `cssList: object` - mandatory, an object with a list of styles
+- `customId: string` - optional, a custom name of the class
+- `silent: boolean` - optional, if true - a new class will be created but not added to an HTML page
 
 @returns:
-
-- CustomId      string     the name of the created class
+A string with the name of the created class.
 
 @example:
 // create a new CSS class

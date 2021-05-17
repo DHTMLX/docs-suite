@@ -1,6 +1,6 @@
 ---
-sidebar_label: update
-title: update
+sidebar_label: update()
+title: update()
 ---          
 
 @short: updates a class after its silent adding
