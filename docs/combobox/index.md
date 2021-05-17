@@ -34,6 +34,3 @@ Check [online samples for dhtmlxComboBox](https://docs.dhtmlx.com/suite/samples/
 ## Other
 
 - [](../migration.md)
-
-
-

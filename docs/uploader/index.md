@@ -25,4 +25,3 @@ The API set for controlling the work of the Uploader object.
 | [](uploader/api/uploader_singlerequest_config.md)      | @getshort(uploader/api/uploader_singlerequest_config.md)      |
 | [](uploader/api/uploader_target_config.md)             | @getshort(uploader/api/uploader_target_config.md)             |
 | [](uploader/api/uploader_updatefromresponse_config.md) | @getshort(uploader/api/uploader_updatefromresponse_config.md) |
-
