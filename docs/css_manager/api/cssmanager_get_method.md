@@ -1,6 +1,6 @@
 ---
-sidebar_label: get
-title: get
+sidebar_label: get()
+title: get()
 ---          
 
 @short: returns a list of styles by the class name
@@ -8,11 +8,10 @@ title: get
 @signature: {'get(className: string): ICssList;'}
 
 @params:
-- className      string     the name of the class
+- `className: string` - the name of the class
 
 @returns:
-
-- params      object     an object with a list of the class styles
+An object with a list of the class styles.
 
 @example:
 const StyleList =  dhx.cssManager.get("myCustomClass");

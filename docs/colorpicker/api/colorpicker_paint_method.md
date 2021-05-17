@@ -1,6 +1,6 @@
 ---
-sidebar_label: paint
-title: paint
+sidebar_label: paint()
+title: paint()
 ---          
 
 @short: repaints ColorPicker on a page

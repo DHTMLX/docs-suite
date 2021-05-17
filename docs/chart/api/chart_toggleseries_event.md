@@ -8,7 +8,7 @@ title: toggleSeries
 @signature: {'toggleSeries: (id: string, pieLike: boolean) => void;'}
 
 @params:
-- id	string		the id of a toggled series
+- `id: string` - the id of a toggled series
 
 @example:
 chart.events.on("ToggleSeries", function(id){

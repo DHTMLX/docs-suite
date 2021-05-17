@@ -1,6 +1,6 @@
 ---
-sidebar_label: eachSeries
-title: eachSeries
+sidebar_label: eachSeries()
+title: eachSeries()
 ---          
 
 @short: iterates over Chart series
@@ -8,10 +8,10 @@ title: eachSeries
 @signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
 
 @params:
-- handler	function	 a handler function that takes an array with series objects as a parameter
+- `handler: function` - a handler function that takes an array with series objects as a parameter
 
 @returns:
-- result	array		an array with the result of iteration
+An array with the result of iteration.
 
 @example:
 var chart = new dhx.Chart("chart", {

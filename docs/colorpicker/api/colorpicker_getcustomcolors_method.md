@@ -1,6 +1,6 @@
 ---
-sidebar_label: getCustomColors
-title: getCustomColors
+sidebar_label: getCustomColors()
+title: getCustomColors()
 ---          
 
 @short: returns an array of selected custom colors

@@ -1,6 +1,6 @@
 ---
-sidebar_label: focus
-title: focus
+sidebar_label: focus()
+title: focus()
 ---          
 
 @short: sets focus in the input without opening a popup with options
@@ -9,7 +9,8 @@ title: focus
 
 @example:
 combo.focus();
-@examplestop:
+
+@descr:
 
 **Related sample**: [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
 

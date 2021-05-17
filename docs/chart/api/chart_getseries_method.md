@@ -1,6 +1,6 @@
 ---
-sidebar_label: getSeries
-title: getSeries
+sidebar_label: getSeries()
+title: getSeries()
 ---          
 
 @short: returns an object with configuration of a specified series
@@ -8,10 +8,10 @@ title: getSeries
 @signature: {'getSeries(id: string): ISeria;'}
 
 @params:
-- id	string		the id of a series
+- `id: string` - the id of a series
 
 @returns:
-- ISeria	object		 an object with configuration of a series
+An object with configuration of a series.
 
 @example:
 var config = chart.getSeries("A");

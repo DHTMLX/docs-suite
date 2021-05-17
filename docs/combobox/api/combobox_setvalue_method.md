@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: selects option(s) in ComboBox
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(ids: string[] | string): void;'}
 
 @params:
-- ids	 string,number,array	 the ids of items from data collection that should be selected in Combo Box
+- `ids: string, array` - the ids of items from data collection that should be selected in Combo Box
 
 @example:
 // selects one option

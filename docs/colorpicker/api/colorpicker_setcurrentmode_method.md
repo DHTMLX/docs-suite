@@ -1,6 +1,6 @@
 ---
-sidebar_label: setCurrentMode
-title: setCurrentMode
+sidebar_label: setCurrentMode()
+title: setCurrentMode()
 ---          
 
 @short: shows colopicker either in the "palette" or in the "picker" mode
