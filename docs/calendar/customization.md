@@ -3,8 +3,7 @@ sidebar_label: Customization
 title: Customization
 ---          
 
-Styling Calendar
------------
+## Styling Calendar
 
 There is a possibility to make changes in the look and feel of a calendar. For example, change its background color:
 
@@ -50,15 +49,13 @@ var calendar = new dhx.Calendar("calendar", {
 });
 ~~~
 
-
-Styling selected dates
--------------------
+## Styling selected dates
 
 ![](../assets/calendar/calendar_range_styling.png)
 
 **Related sample**: [Calendar. Custom Styles For Selected Date](https://snippet.dhtmlx.com/9u0ix3na)
 
-You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linkingtwocalendars). There are system styles you need to change for this purpose:
+You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linking-two-calendars). There are system styles you need to change for this purpose:
 
 ~~~js
 <style>
@@ -76,6 +73,3 @@ You can apply custom styling to dates selected in a calender as well as to [date
 var calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
 var calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
 ~~~
-
-
-

@@ -7,8 +7,7 @@ You can apply different languages to the interface of dhtmlxCalendar. You just n
 
 ![](../assets/calendar/locale.png)
 
-Default locale
-------------
+## Default locale
 
 The default locale for Calendar looks like this:
 
@@ -28,8 +27,7 @@ var en = {
 };
 ~~~
 
-Custom locale
-------------
+## Custom locale
 
 To use a different locale, your need to:
 

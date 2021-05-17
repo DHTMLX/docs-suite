@@ -22,13 +22,13 @@ var calendar = new dhx.Calendar(null, {dateFormat: "%d/%m/%y"});
 var popup = new dhx.Popup();
 ~~~
 
-3\. attach the calendar to the popup using the [](popup/api/popup_attach_method.md) method of Popup:
+3\. attach the calendar to the popup using the [](../popup/api/popup_attach_method.md) method of Popup:
 
 ~~~js
 popup.attach(calendar);
 ~~~
 
-4\. use the [](popup/api/popup_show_method.md) method of Popup inside a click handler to define that a popup with calendar will open on click in the "date-input" input:
+4\. use the [](../popup/api/popup_show_method.md) method of Popup inside a click handler to define that a popup with calendar will open on click in the "date-input" input:
 
 ~~~js
 var dateInput = document.getElementById("date-input");
@@ -37,7 +37,7 @@ dateInput.addEventListener("click", function() {
 });
 ~~~
 
-5\. define the logic of closing the popup with calendar using the [](popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar:
+5\. define the logic of closing the popup with calendar using the [](../popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar:
 
 ~~~js
 calendar.events.on("change", function() {
