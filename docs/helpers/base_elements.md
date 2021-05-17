@@ -329,13 +329,13 @@ An example of customization of a Layout cell is given below:
 ~~~js
 var layout = new dhx.Layout("layout", {
     css: "dhx_layout-cell--bordered",
-        rows: [{
-                id: "toolbar",
-                html: "Header",
-                css: "dhx_layout-cell--border_bottom layout-header",
-                gravity: false,
-                height: "60px"
-        }]
+    rows: [{
+        id: "toolbar",
+        html: "Header",
+        css: "dhx_layout-cell--border_bottom layout-header",
+        gravity: false,
+        height: "60px"
+    }]
 });
 ~~~
 

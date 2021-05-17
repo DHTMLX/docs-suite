@@ -10,8 +10,6 @@ description: description
 
 @default: false
 
-[comment]: # (TODO: api change (нужно добавить список возможных опций в desc, можно после релиза)
-
 @example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
