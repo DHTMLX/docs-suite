@@ -10,8 +10,6 @@ title: destructor
 @example:
 calendar.destructor();
 
-
 @descr:
 
-**Related sample**:
-- [Calendar. Destructor](https://snippet.dhtmlx.com/f0kqjb13)
+**Related sample**: [Calendar. Destructor](https://snippet.dhtmlx.com/f0kqjb13)

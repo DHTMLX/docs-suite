@@ -31,4 +31,3 @@ The **config** object can contain following options:
     - xml - returns the result parsed as XML
     - json - returns the result as JSON
 - **headers** - (*object*) optional, the headers of the request
-

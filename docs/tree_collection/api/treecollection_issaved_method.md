@@ -15,4 +15,4 @@ myToolbar.data.isSaved();
 
 @descr:
 
-@relatedapi: tree_collection/api/save.md
+[comment]: # (@relatedapi: tree_collection/api/save.md)

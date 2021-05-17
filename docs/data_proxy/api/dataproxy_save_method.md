@@ -14,10 +14,7 @@ title: save
 @returns: 
 - param     promise        "promise" of the data object
 
-
 @example:
 proxy.save({ a: "bad" }, "delete").then(function() {
    console.log("'Bad' is deleted!");
 });
-
-

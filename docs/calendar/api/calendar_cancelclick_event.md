@@ -12,10 +12,6 @@ calendar.events.on("CancelClick", function() {
     // your logic here
 });
 
-
-
 @descr:
 
-**Related sample**:
-- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
-
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)

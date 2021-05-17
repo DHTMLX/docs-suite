@@ -24,5 +24,4 @@ treegrid.data.serialize("xml");
 // serialize data to a CSV string
 treegrid.data.serialize("csv");
 
-
 @descr:

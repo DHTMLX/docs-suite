@@ -7,7 +7,6 @@ title: update()
 
 @signature: {'update(): void;'}
 
-
 @example:
 dhx.cssManager.add({
     display: "flex";
@@ -16,11 +15,6 @@ dhx.cssManager.add({
 
 dhx.cssManager.update();
 
-
-
 @descr:
 
-@relatedapi: css_manager/api/add.md
-
-
-
+[comment]: # (@relatedapi: css_manager/api/add.md)

@@ -13,6 +13,4 @@ title: remove()
 @example:
 dhx.cssManager.remove("myCustomClass");
 
-
-
 @descr:

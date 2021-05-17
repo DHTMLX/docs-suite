@@ -15,11 +15,6 @@ calendar.events.on("MonthSelected", function(month) {
    console.log("Selected month: " + (month + 1));
 });
 
-
-
 @descr:
 
-**Related sample**:
-- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
-
-
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)

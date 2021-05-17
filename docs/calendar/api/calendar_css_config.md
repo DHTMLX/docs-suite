@@ -17,16 +17,15 @@ title: css
         /*some styles*/
     }
 </style>
- 
+
 var calendar = new dhx.Calendar({
     css:"my_first_class my_second_class"
 });
+@examplestop:
 
-
-
-@descr:
 **Related sample**: [Calendar. Adding Custom Styles](https://snippet.dhtmlx.com/2045cbe1)
 
+@descr:
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Calendar:
 
 ~~~js
@@ -35,8 +34,4 @@ var calendar = new dhx.Calendar({
 });
 ~~~
 
-
-
-@related:
-calendar/customization.md#stylingcalendar
-calendar/how_to_start.md#initialize-calendar
+[comment]: # (@related: calendar/customization.md#stylingcalendar calendar/how_to_start.md#initialize-calendar)

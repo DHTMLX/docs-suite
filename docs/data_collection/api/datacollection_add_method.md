@@ -38,14 +38,10 @@ component.data.add([
     }
 ]);
 
-
 @descr:
 
 **Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)
 
+@changelog: The possibility to pass an array of items is added in v6.1.
 
-@related:window/customization.md#controls-and-operations
-
-@changelog:
-
-The possibility to pass an array of items is added in v6.1.
+[comment]: # (@related:window/customization.md#controls-and-operations)

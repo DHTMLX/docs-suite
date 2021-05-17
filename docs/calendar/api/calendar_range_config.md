@@ -12,14 +12,11 @@ var calendar = new dhx.Calendar("calendar", {
 	css: "dhx_widget--bordered",
 	range: true
 });
-
-@related: 
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#rangemode
-
-
-@descr:
-added in v6.2
+@examplestop:
 
 **Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 
+@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#rangemode
+
+@descr:
+added in v6.2

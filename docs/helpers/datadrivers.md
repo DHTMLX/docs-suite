@@ -12,8 +12,7 @@ However, for further work, you may need to get the same data in different format
 - [CSV format](#csv-format)
 - [XML format](#xml-format)
 
-CSV format
--------------------------
+## CSV format
 
 To create dataDrivers object, use the *dhx.dataDrivers.csv* constructor:
 
@@ -58,11 +57,9 @@ As a result, the converted to **CSV format** data of the chart look like this:
 `05 | 30 | 11 | 62 | 22 | 4 | "
 ~~~
 
-XML format
----------------
+## XML format
 
 {{pronote This functionality requires PRO version of the DHTMLX suite package.}}
-
 
 To create dataDrivers object, use the *dhx.dataDrivers.xml* constructor:
 

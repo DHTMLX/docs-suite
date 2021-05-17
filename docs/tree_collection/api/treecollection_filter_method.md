@@ -92,8 +92,3 @@ The **config** parameter may contain the following properties:
 		</tr>
     </tbody>
 </table>
-
-
-
-
-

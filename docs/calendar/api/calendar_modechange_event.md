@@ -15,9 +15,6 @@ calendar.events.on("ModeChange", function(mode) {
    console.log("Selected mode: " + mode);
 });
 
-
 @descr:
 
-**Related sample**:
-- [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
-
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)

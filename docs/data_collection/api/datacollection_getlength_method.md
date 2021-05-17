@@ -13,8 +13,6 @@ title: getLength
 @example:
 datacollection.getLength();
 
-
-
 @descr:
 
 **Related sample**: [Data. Get Length](https://snippet.dhtmlx.com/4weiba8i)

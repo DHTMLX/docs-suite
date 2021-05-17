@@ -19,8 +19,6 @@ title: load
 @example:
 diagram.data.load("../common/data.xml", "xml");
 
-
-
 @descr:
 
 **Related sample**: [Data. Load](https://snippet.dhtmlx.com/dyykcnxi)
@@ -45,4 +43,3 @@ diagram.data.loadData.then(function(){
 // loadData executes a callback function after an asynchronous
 // data loading has completed
 ~~~
-

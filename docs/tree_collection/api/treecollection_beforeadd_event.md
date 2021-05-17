@@ -6,7 +6,7 @@ title: beforeAdd
 @short: fires before adding a new item into a tree collection
 
 @signature: {'beforeAdd: (newItem: any) => boolean | void;'}
-	
+
 @params:
 - `newItem: object` - the object of an added item
 
@@ -23,5 +23,4 @@ data.events.on("BeforeAdd", function(newItem){
 
 The event is blockable. Return *false* to prevent an item adding into a data collection.
 
-@relatedapi:
-tree_collection/api/afteradd_event.md
+[comment]: # (@relatedapi: tree_collection/api/afteradd_event.md)

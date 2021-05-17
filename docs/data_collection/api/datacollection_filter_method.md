@@ -12,7 +12,7 @@ title: filter
 - config 			object					optional, defines the parameters of filtering
 
 @example:
- 
+
 grid.data.filter(function (item) {
   return item.a > 0 && item.b !== "Apple";
 });
@@ -37,7 +37,6 @@ grid.data.filter({
 }, {
   add: true
 });
-
 
 @descr:
 
@@ -139,4 +138,3 @@ grid.data.filter({
   smartFilter: true
 });
 ~~~
-

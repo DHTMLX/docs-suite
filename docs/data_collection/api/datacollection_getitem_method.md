@@ -6,7 +6,7 @@ title: getItem
 @short: returns the object of an item by its id
 
 @signature: {'getItem(id: Id): T;'}
-	
+
 @params:
 
 - id		string,number		the id of a selected item
@@ -18,8 +18,6 @@ title: getItem
 @example:
 
 var item = component.data.getItem(123);
-
-
 
 @descr:
 

@@ -16,4 +16,3 @@ The list of the available methods of `dhx.cssManager` is described below.
 | [](css_manager/api/cssmanager_get_method.md)    | @getshort(css_manager/api/cssmanager_get_method.md)    |
 | [](css_manager/api/cssmanager_remove_method.md) | @getshort(css_manager/api/cssmanager_remove_method.md) |
 | [](css_manager/api/cssmanager_update_method.md) | @getshort(css_manager/api/cssmanager_update_method.md) |
-

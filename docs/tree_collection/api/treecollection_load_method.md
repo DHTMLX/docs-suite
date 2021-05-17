@@ -39,4 +39,3 @@ myToolbar.data.loadData.then(function(){
 // loadData executes a callback function after an asynchronous
 // data loading has completed
 ~~~
-

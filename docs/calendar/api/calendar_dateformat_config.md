@@ -13,9 +13,11 @@ title: dateFormat
 var calendar = new dhx.Calendar("calendar_container", {
    dateFormat:"%d.%m.%Y"
 });
+@examplestop:
 
+**Related sample**: [Calendar. Date Format](https://snippet.dhtmlx.com/2co9z3bi)
 
-@descr: 
+@descr:
 dhtmlxCalendar uses the following characters for setting a date format:
 
 | Character		|	Definition
@@ -40,12 +42,6 @@ dhtmlxCalendar uses the following characters for setting a date format:
 |**%A**			|AM or PM										|
 |**%u**			|milliseconds									|
 
+[comment]: # (@relatedapi: calendar/api/calendar_setvalue_method.md)
 
-
-@relatedapi:
-calendar/api/calendar_setvalue_method.md
-
-@related: calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#dateformat
-
-**Related sample**: [Calendar. Date Format](https://snippet.dhtmlx.com/2co9z3bi)
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#dateformat)
