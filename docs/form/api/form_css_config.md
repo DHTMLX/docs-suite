@@ -38,38 +38,12 @@ var form = new dhx.Form("form", {
 
 **Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
 
-The DHTMLX library provides a set of CSS classes that you can apply to change appearance of Form.
+Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Form:
 
 ~~~js
 var form = new dhx.Form("form", {
-    css:"dhx_widget--bg_white"
+    css: "dhx_widget--bg_white"
 });
 ~~~
-
-### List of CSS classes
-
-- <b>dhx_widget--bg_white</b> - Sets white background to a widget
-
-- <b>dhx_widget--bg_gray</b> - Sets gray background to a widget
-
-- <b>dhx_widget--bordered</b> - Sets borders on all sides of a widget
-
-- <b>dhx_widget--border_top</b> - Sets a border on the top side of a widget
-
-- <b>dhx_widget--border_bottom</b> - Sets a border on the bottom side of a widget
-
-- <b>dhx_widget--border_left</b> - Sets a border on the left side of a widget
-
-- <b>dhx_widget--border_right</b> - Sets a border on the right side of a widget
-
-- <b>dhx_widget--border-shadow</b> - Adds a shadow border to a widget
-
-- <b>dhx_widget--no-border_top</b> - Removes the top border of a  widget
-
-- <b>dhx_widget--no-border_bottom</b> - Removes the bottom border of a widget
-
-- <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
-
-- <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
 
 [comment]: # (@related: form/how_to_start.md#initialize-form form/customization.md)
