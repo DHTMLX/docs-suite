@@ -20,5 +20,4 @@ var result = diagram.data.mapRange(0, 20, function(item, index) {
     console.log(item.id, index);
 });
 
-
 @descr:

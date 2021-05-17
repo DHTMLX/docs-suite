@@ -16,7 +16,6 @@ title: getId
 @example:
 var id = component.data.getId(0); // -> returns "1"
 
-
 @descr:
 
 **Related sample**: [Data. Get Id](https://snippet.dhtmlx.com/8e02xliz)

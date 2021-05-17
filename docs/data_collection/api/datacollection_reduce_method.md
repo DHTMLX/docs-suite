@@ -17,8 +17,6 @@ var total = datacollection.reduce(function(new_item, item) {
     return new_item + item.value;
 }, 0);
 
-
-
 @descr:
 
 **Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)
@@ -37,4 +35,3 @@ A handler function takes two parameters:
 		</tr>
     </tbody>
 </table>
-

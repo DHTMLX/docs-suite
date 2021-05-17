@@ -17,7 +17,6 @@ datacollection.forEach(function(element, index, array) {
     console.log("This is an array of the elements: ", array);
 });
 
-
 @descr:
 
 **Related sample**: [Data. ForEach](https://snippet.dhtmlx.com/wa6tcmtn)
@@ -40,8 +39,5 @@ The callback function takes three parameters:
 		</tr>
     </tbody>
 </table>
-
-
-
 
 @changelog: added in v6.4

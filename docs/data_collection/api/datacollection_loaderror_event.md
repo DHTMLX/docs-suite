@@ -6,7 +6,7 @@ title: loadError
 @short: fires when loading of data fails
 
 @signature: {'loadError: (response: any) => boolean | void;'}
-	
+
 @params:
 - error			string,object		info about the error
 
@@ -14,8 +14,6 @@ title: loadError
 data.events.on("LoadError", function(error){
 	// your code here
 });
-
-
 
 @descr:
 

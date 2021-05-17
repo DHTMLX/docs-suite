@@ -16,8 +16,6 @@ title: exists
 @example:
 var item = component.data.exists("1"); 
 
-
-
 @descr:
 
 **Related sample**: [Data. Exists](https://snippet.dhtmlx.com/2ekntrbk)

@@ -16,9 +16,8 @@ component.data.remove("2");
 //or
 component.data.remove(["2", "4"]);
 
-
 @descr:
 
 **Related sample**: [Data. Remove](https://snippet.dhtmlx.com/ugdlqgp5)
 
-@related:window/customization.md#controls-and-operations
+[comment]: # (@related:window/customization.md#controls-and-operations)

@@ -13,7 +13,6 @@ title: isSaved
 @example:
 diagram.data.isSaved();
 
-
 @descr:
 
-@relatedapi: data_collection/api/datacollection_save_method.md
+[comment]: # (@relatedapi: data_collection/api/datacollection_save_method.md)

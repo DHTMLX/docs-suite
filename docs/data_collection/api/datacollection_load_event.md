@@ -6,13 +6,12 @@ title: load
 @short: fires when items are loaded in a data collection
 
 @signature: {'load: () => void;'}
-	
+
 @params:
 
 @example:
 data.events.on("Load", function(){
 	console.log("Items are loaded.");
 });
-
 
 @descr:

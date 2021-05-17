@@ -43,12 +43,6 @@ var data = [
 var diagram = new dhx.Diagram("diagram_container", { type: "org" });
 diagram.data.parse(data);
 
-
-
 @descr:
 
 **Related sample**: [Data. Parse](https://snippet.dhtmlx.com/0zrxtmvi)
-
-
-
-    

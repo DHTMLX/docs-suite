@@ -23,7 +23,6 @@ var item = component.data.find(function(item){
 //searching for an item by the attribute key
 var item = component.data.find({by:"text",match:"Manager"});
 
-
 @descr:
 
 **Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)

@@ -19,7 +19,6 @@ title: move
 @example:
 component.data.move("4",5); // moves the item with id:4 to the position with index 5
 
-
 @descr:
 
 **Related sample**: [Data. Move](https://snippet.dhtmlx.com/fi66bi8h)

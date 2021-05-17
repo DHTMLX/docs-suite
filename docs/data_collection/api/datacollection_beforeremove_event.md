@@ -6,7 +6,7 @@ title: beforeRemove
 @short: fires before removing an item from a data collection
 
 @signature: {'beforeRemove: (obj: any) => boolean | void;'}
-	
+
 @params:
 - removedItem		object			the object of an item to remove
 
@@ -19,7 +19,6 @@ data.events.on("BeforeRemove", function(removedItem){
     return true;
 });
 
-
 @descr:
 
-@relatedapi:data_collection/api/datacollection_afterremove_event.md
+[comment]: # (@relatedapi:data_collection/api/datacollection_afterremove_event.md)

@@ -23,7 +23,6 @@ grid.data.sort({
 // cancels applied sorting rules
 grid.data.sort();
 
-
 @descr:
 
 **Related sample**: [Data. Sort](https://snippet.dhtmlx.com/lz351u47)
@@ -88,7 +87,6 @@ grid.data.sort({
 });
 ~~~
 
-
 @changelog:
 
-The **config** parameter is added in v7.0. 
+The **config** parameter is added in v7.0.

@@ -6,7 +6,7 @@ title: beforeLazyLoad
 @short: fires before sending a request to the server
 
 @signature: {'beforeLazyLoad: () => boolean | void;'}
-	
+
 @returns:
 - param		boolean			false - to block sending a request to the server, otherwise true
 
@@ -16,12 +16,11 @@ data.events.on("BeforeLazyLoad", function () {
     return false;
 });
 
-
 @descr:
-
-@relatedapi: data_collection/api/datacollection_afterlazyload_event.md
-
-@related: helpers/lazydataproxy.md
 
 @changelog:
 added in v6.4
+
+[comment]: # (@relatedapi: data_collection/api/datacollection_afterlazyload_event.md)
+
+[comment]: # (@related: helpers/lazydataproxy.md)

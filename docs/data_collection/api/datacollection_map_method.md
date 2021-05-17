@@ -16,7 +16,6 @@ component.data.map(function(item){
     return item;
 });
 
-
 @descr:
 
 **Related sample**: [Data. Map](https://snippet.dhtmlx.com/louctp61)
