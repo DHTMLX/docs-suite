@@ -15,6 +15,3 @@ title: updateUrl
 
 proxy.updateUrl("https://newCustomUrl.com", { a: "customParam", b: 2 });
 // url: https://newCustomUrl.com?a=customParam&b=2
-
-
-

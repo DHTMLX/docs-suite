@@ -17,4 +17,4 @@ data.events.on("AfterRemove", function(removedItem){
 
 @descr:
 
-@relatedapi:tree_collection/api/beforeremove_event.md
+[comment]: # (@relatedapi:tree_collection/api/beforeremove_event.md)

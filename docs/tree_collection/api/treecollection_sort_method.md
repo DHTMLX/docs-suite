@@ -42,7 +42,6 @@ The **rule** object has the following attributes:
     </tbody>
 </table>
 
-
 {{note Calling the method without parameters will discard all applied sorting rules.}}
 
 ### Custom sorting

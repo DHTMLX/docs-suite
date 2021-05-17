@@ -41,4 +41,3 @@ The list of the available methods of `dhx.DataProxy` is described below.
 | [](api/dataproxy_load_method.md)      | @getshort(api/dataproxy_load_method.md)      |
 | [](api/dataproxy_save_method.md)      | @getshort(api/dataproxy_save_method.md)      |
 | [](api/dataproxy_updateurl_method.md) | @getshort(api/dataproxy_updateurl_method.md) |
-     

@@ -6,7 +6,7 @@ title: loadError
 @short: fires when loading of data fails
 
 @signature: {'loadError: (response: any) => boolean | void;'}
-	
+
 [comment]: # (@params:
 - `error: string, object` - info about the error)
 

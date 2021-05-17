@@ -6,7 +6,7 @@ title: change
 @short: fires when a tree collection is modified
 
 @signature: {'change: (id?: string, status?: Statuses, updatedItem?: any) => void;'}
-	
+
 @params:
 - `id: string` - the id of an item
 - `status: string` - the status of the operation:"add"|"update"|"remove"

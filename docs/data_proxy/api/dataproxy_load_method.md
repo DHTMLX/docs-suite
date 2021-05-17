@@ -14,5 +14,3 @@ title: load
 proxy.load().then(function () {
    console.log("Loading is done!");
 });
-
-

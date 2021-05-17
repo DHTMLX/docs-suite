@@ -17,4 +17,4 @@ data.events.on("AfterAdd", function(newItem){
 
 @descr:
 
-@relatedapi:tree_collection/api/beforeadd_event.md
+[comment]: # (@relatedapi:tree_collection/api/beforeadd_event.md)
