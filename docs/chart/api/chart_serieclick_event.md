@@ -8,8 +8,8 @@ title: serieClick
 @signature: {'serieClick: (id: string, value: string) => void;'}
 
 @params:
-- id    string      the id of a clicked series
-- value     string  the value of a series
+- `id: string` - the id of a clicked series
+- `value: string` - the value of a series
 
 @example:
 chart.events.on("serieClick", function (id, value) {

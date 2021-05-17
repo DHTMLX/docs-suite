@@ -8,7 +8,7 @@ title: resize
 @signature: {'resize: (width: number, height: number) => void;'}
 
 @params:
-- size		object	 an object with new chart size
+- `size: object` - an object with new chart size
 
 @example:
 chart.events.on("Resize", function({width:500, height:500}){

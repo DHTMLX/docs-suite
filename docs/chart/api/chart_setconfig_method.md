@@ -1,6 +1,6 @@
 ---
-sidebar_label: setConfig
-title: setConfig
+sidebar_label: setConfig()
+title: setConfig()
 ---          
 
 @short: sets configuration of a chart
@@ -8,7 +8,7 @@ title: setConfig
 @signature: {'setConfig(config: IChartConfig): void;'}
 
 @params:
-- config	object	 an object with chart configurations
+- `config: object` - an object with chart configurations
 
 @example:
 var config = {

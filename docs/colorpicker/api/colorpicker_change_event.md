@@ -7,6 +7,9 @@ title: change
 
 @signature: {'change: (color: string) => void;'}
 
+@params:
+- `color: string` - the newly selected color
+
 @example:
 colorpicker.events.on("Change",function(color){
 	// your logic here

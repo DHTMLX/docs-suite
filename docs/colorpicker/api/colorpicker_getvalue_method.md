@@ -3,12 +3,9 @@ sidebar_label: getValue
 title: getValue
 ---          
 
-@short: returns the code of a selected color
+@short: returns a string with the code of a selected color in the Hex format
 
 @signature: {'getValue(): string;'}
-
-@returns:
-- value    string   the code of a selected color in the Hex format
 
 @example:
 colorpicker.setValue("#BDF0E9");
