@@ -23,14 +23,14 @@ This component is a great date picker solution for your website or application. 
 
 You can read the following articles to find out how to add Calendar on the page and work with it.
 
-- [Initialization](how_to_start)
-- [Configuration](configuring)
-- [Localization](localizing_calendar)  
-- [Work with Calendar](operating_calendar)
-- [DatePicker](datepicker)
-- [Customization](customization)
-- [Event Handling](handling_events)  
+- [](how_to_start)
+- [](configuring)
+- [](localizing_calendar)  
+- [](operating_calendar)
+- [](datepicker)
+- [](customization)
+- [](handling_events)  
 
 ## Other
 
-[Migration to Newer Versions](migration) 
+- [](../migration.md)
