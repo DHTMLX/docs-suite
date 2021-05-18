@@ -1,6 +1,6 @@
 ---
-sidebar_label: show
-title: show
+sidebar_label: show()
+title: show()
 ---          
 
 @short: shows a window on a page
@@ -8,8 +8,8 @@ title: show
 @signature: {'show(left?: number, top?: number): void;'}
 
 @params:
-- left 		number 	optional, the left coordinate of a window position
-- top 		number 	optional, the top coordinate of a window position
+- `left: number` - optional, the left coordinate of a window position
+- `top: number` - optional, the top coordinate of a window position
 
 @example:
 dhxWindow.show();

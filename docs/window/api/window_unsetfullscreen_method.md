@@ -1,8 +1,7 @@
 ---
-sidebar_label: unsetFullScreen
-title: unsetFullScreen
+sidebar_label: unsetFullScreen()
+title: unsetFullScreen()
 ---
-
 
 @short: switches the window from the full screen mode into the windowed mode
 

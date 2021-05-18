@@ -9,11 +9,11 @@ description: description
 @signature: {'beforeHide: (position: IPosition, e?: Event) => boolean | void;'}
 
 @params:
-- position  object      an object with coordinates of the window's position
-- events    Event       a native event object
+- `position: object` - an object with coordinates of the window's position
+- `events: Event` - a native event object
 
 @returns:
-- result		boolean			true to hide a window, false to block hiding a window
+Return `true` to hide a window, otherwise `false`
 
 @example:
 dhxWindow.events.on("BeforeHide", function(position, events){

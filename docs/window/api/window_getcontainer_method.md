@@ -1,6 +1,6 @@
 ---
-sidebar_label: getContainer
-title: getContainer
+sidebar_label: getContainer()
+title: getContainer()
 ---          
 
 @short: returns the HTML element of Window
@@ -8,7 +8,7 @@ title: getContainer
 @signature: {'getContainer(): HTMLElement;'}
 
 @returns:
-- param	HTMLElement     the HTML element 
+The HTML element
 
 @example:
 dhxWindow.getContainer();

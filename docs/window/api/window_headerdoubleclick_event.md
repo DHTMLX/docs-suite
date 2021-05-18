@@ -8,7 +8,7 @@ title: headerDoubleClick
 @signature: {'headerDoubleClick: (e: Event) => void;'}
 
 @params:
-- e    Event       a native event object 
+`e: Event` - a native event object
 
 @example:
 dhxWindow.events.on("HeaderDoubleclick", function(events) {

@@ -1,6 +1,6 @@
 ---
-sidebar_label: attach
-title: attach
+sidebar_label: attach()
+title: attach()
 ---          
 
 @short: attaches a DHTMLX component to a dhtmlxWindow
@@ -8,8 +8,8 @@ title: attach
 @signature: {'attach(name: string | IViewFn | IView | IViewConstructor | any, config?: any): void;'}
 
 @params:
-- component 		string,object 		the name or object of a component
-- config 			object 				optional, the configuration settings of a component
+- `component: string, object` -	the name or object of a component
+- `config: object` - optional, the configuration settings of a component
 
 @example:
 dhxWindow.attach("richtext",{mode: "document"});

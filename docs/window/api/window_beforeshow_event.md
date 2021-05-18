@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (position: IPosition) => boolean | void;'}
 
 @params:
-- position  object      an object with coordinates of the window's position
+`position: object` - an object with coordinates of the window's position
 
 @returns:
-- result		boolean			true to show a window, false to block showing a window
+Return `true` to show a window, otherwise `false`
 
 @example:
 dhxWindow.events.on("BeforeShow", function(position){

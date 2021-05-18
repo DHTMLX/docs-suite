@@ -1,6 +1,6 @@
 ---
-sidebar_label: getWidget
-title: getWidget
+sidebar_label: getWidget()
+title: getWidget()
 ---          
 
 @short: returns the widget attached to Window
@@ -8,7 +8,7 @@ title: getWidget
 @signature: {'getWidget(): any;'}
 
 @returns:
-- param	object      the widget attached to Window
+The widget attached to Window
 
 @example:
 var window = dhxWindow.getWidget(); 

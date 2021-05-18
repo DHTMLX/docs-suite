@@ -1,6 +1,6 @@
 ---
-sidebar_label: setSize
-title: setSize
+sidebar_label: setSize()
+title: setSize()
 ---          
 
 @short: sets the size of a window
@@ -8,8 +8,8 @@ title: setSize
 @signature: {'setSize(width: number, height: number): void;'}
 
 @params:
-- width		number		the width of a window
-- height	number		the height of a window
+- `width: number` - the width of a window
+- `height: number` - the height of a window
 
 @example:
 dhxWindow.setSize(250, 250);

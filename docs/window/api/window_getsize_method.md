@@ -1,15 +1,14 @@
 ---
-sidebar_label: getSize
-title: getSize
+sidebar_label: getSize()
+title: getSize()
 ---          
 
 @short: gets the size of window
 
 @signature: {'getSize(): ISize;'}
 
-
 @returns:
-- size		object		an object with width and height of a window
+An object with width and height of a window
 
 @example:
 var size = dhxWindow.getSize(); // -> {width: 960, height: 469}

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getPosition
-title: getPosition
+sidebar_label: getPosition()
+title: getPosition()
 ---          
 
 @short: gets the position of a window
@@ -8,7 +8,7 @@ title: getPosition
 @signature: {'getPosition(): IPosition;'}
 
 @returns:
-- position		object		an object with left and top coordinates of a window
+An object with left and top coordinates of a window
 
 @example:
 var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
