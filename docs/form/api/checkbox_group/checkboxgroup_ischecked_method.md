@@ -1,6 +1,6 @@
 ---
-sidebar_label: isChecked
-title: isChecked
+sidebar_label: isChecked()
+title: isChecked()
 ---          
 
 @short: checks whether a checkbox of the CheckboxGroup control is checked
@@ -8,10 +8,14 @@ title: isChecked
 @signature: {'isChecked(id?: string): boolean | { [key: string]: boolean };'}
 
 @params:
-- id    string  optional, the id of a checkbox
+`id: string` - optional, the id of a checkbox
 
 @returns:
-param   boolean|object     true, if a checkbox is checked, otherwise - false
+Either a boolean value or an object.
+
+Returns boolean value if the id of a checkbox is specified. `true`, if the checkbox is checked; otherwise, `false`.
+
+Returns an object if the id of a checkbox is not specified.
 
 @example:
 form.getItem("CheckboxGroup").isChecked("checkbox_id_3") 

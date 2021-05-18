@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value/state of a checkbox(s)
@@ -8,10 +8,7 @@ title: getValue
 @signature: {'getValue(id?: string): ICheckboxGroupValue | string | boolean;'}
 
 @params:
-- id    string  optional, the id of a checkbox
-
-@returns:
-param   string|boolean|object     the current value/state of the checkbox
+`id: string` - optional, the id of a checkbox
 
 @example:
 // returns string value if the value is specified in the checkbox configuration

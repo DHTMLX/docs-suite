@@ -1,6 +1,6 @@
 ---
-sidebar_label: disable
-title: disable
+sidebar_label: disable()
+title: disable()
 ---          
 
 @short: disables a CheckboxGroup control on a page

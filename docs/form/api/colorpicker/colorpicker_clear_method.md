@@ -1,5 +1,5 @@
 ---
-sidebar_label: clear
+sidebar_label: clear()
 title: clear
 ---          
 

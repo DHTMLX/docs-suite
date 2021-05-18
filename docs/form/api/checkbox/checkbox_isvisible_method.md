@@ -1,6 +1,6 @@
 ---
-sidebar_label: isVisible
-title: isVisible
+sidebar_label: isVisible()
+title: isVisible()
 ---          
 
 @short: checks whether a Checkbox control is visible on the page
@@ -8,7 +8,7 @@ title: isVisible
 @signature: {'isVisible(): boolean;'}
 
 @returns:
-param   boolean     true, if a control is visible, otherwise - false
+`true`, if a control is visible. Otherwise, `false`.
 
 @example:
 form.getItem("checkbox").isVisible(); // -> true/false

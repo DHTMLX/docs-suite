@@ -8,8 +8,8 @@ title: afterValidate
 @signature: {'afterValidate: (value: ICheckboxGroupValue, isValid: boolean) => void;'} 
 
 @params:
-- value       object  the validated value. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of a checkbox.
-- isValid     boolean     the result of validation
+- `value: object` - the validated value. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of a checkbox.
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("CheckboxGroup").events.on("AfterValidate", function(value, isValid) {

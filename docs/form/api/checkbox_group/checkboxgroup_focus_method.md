@@ -1,6 +1,6 @@
 ---
-sidebar_label: focus
-title: focus
+sidebar_label: focus()
+title: focus()
 ---          
 
 @short: sets focus to the checkbox of the CheckboxGroup control by its id
@@ -8,7 +8,7 @@ title: focus
 @signature: {'focus(id?: string): void;'}
 
 @params:
-- id    string  optional, the id of a checkbox 
+`id: string` - optional, the id of a checkbox 
 
 @example:
 form.getItem("CheckboxGroup").focus("checkbox_1");

@@ -1,6 +1,6 @@
 ---
-sidebar_label: disable
-title: disable
+sidebar_label: disable()
+title: disable()
 ---          
 
 @short: disables a ColorPicker control on a page

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getWidget
-title: getWidget
+sidebar_label: getWidget()
+title: getWidget()
 ---          
 
 @short: returns the dhtmlxColorPicker widget attached to a ColorPicker control
@@ -8,7 +8,7 @@ title: getWidget
 @signature: {'getWidget(): Colorpicker;'}
 
 @returns:
-param   object    the dhtmlxColorPicker widget
+An object of the dhtmlxColorPicker widget.
 
 @example:
 var colorpicker = form.getItem("colorpicker").getWidget();  

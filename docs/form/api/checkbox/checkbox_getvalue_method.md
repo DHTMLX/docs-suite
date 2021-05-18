@@ -1,14 +1,11 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value/state of a Checkbox control
 
 @signature: {'getValue(): string | boolean;'}
-
-@returns:
-param   string|boolean     the current value/state of the control
 
 @example:
 // returns value if the value is specified for the checkbox
@@ -38,7 +35,7 @@ var form = new dhx.Form("form_container", {
 var state = form.getItem("checkbox").getValue(); // -> true/false
 ~~~
 
-- If the **value** property is defined, the method returns string value. In addition, if the **checked** option is set to *true*, the method returns the value of a control, otherwise - returns an empty string (""):
+- If the **value** property is defined, the method returns a string value. In addition, if the **checked** option is set to *true*, the method returns the value of a control, otherwise - returns an empty string (""):
 
 ~~~js
 var form = new dhx.Form("form_container", {

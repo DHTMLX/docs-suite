@@ -8,12 +8,12 @@ title: afterValidate
 @signature: {'afterValidate: (value: string | boolean, isValidate: boolean) => void;'}
 
 @params:
-- value       string|boolean  the validated value
-- isValid     boolean     the result of validation
+- `value: string | boolean` - the validated value
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("checkbox").events.on("AfterValidate", function(value, isValid) {
-    console.log("AfterValidate", value, isValid);
+    console.log("AfterValidate", value, isValidate);
 });
 
 @descr:
