@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (text: string, init: boolean) => boolean | void;'}
 
 @params:
-- text     string  the current text label of the control
-- init    boolean     true if the event is triggered on the button control initialization
+- `text: string` - the current text label of the control
+- `init: boolean` - true if the event is triggered on the button control initialization
 
 @returns:
-param      boolean  false - to prevent a control from being hidden, otherwise - true
+Return `false` to prevent a control from being hidden; otherwise - `true`.
 
 @example:
 form.getItem("button").events.on("BeforeHide", function(text, init) {

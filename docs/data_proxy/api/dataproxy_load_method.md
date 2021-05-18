@@ -1,6 +1,6 @@
 ---
-sidebar_label: load
-title: load
+sidebar_label: load()
+title: load()
 ---          
 
 @short: loads data from an external URL
@@ -8,7 +8,7 @@ title: load
 @signature: {'load?: () => Promise<any[]>;'}
 
 @returns: 
-- param     promise      "promise" of the data object
+A promise of the data object.
 
 @example:
 proxy.load().then(function () {

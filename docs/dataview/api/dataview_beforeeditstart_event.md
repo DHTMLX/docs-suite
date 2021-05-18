@@ -8,10 +8,10 @@ title: beforeEditStart
 @signature: {'beforeEditStart: (id: string | number) => void | boolean;'}
 
 @params:
-- id		string | number		the id of an item
+`id: string | number` - the id of an item
 
 @returns:
-- result		void | boolean		false - to block item editing, otherwise true
+Return `false` to block item editing; otherwise, `true`.
 
 @example:
 dataview.events.on("BeforeEditStart", function(id){

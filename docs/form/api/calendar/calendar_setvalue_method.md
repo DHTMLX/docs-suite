@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets a date in a DatePicker control
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value: string | Date): void;'}
 
 @params:
-- value     string|Date     the value to be set  
+`value: string|Date` - the value to be set  
 
 @example:
 form.getItem("datepicker").setValue("30/05/19");

@@ -1,9 +1,9 @@
 ---
-sidebar_label: destructor
-title: destructor
+sidebar_label: destructor()
+title: destructor()
 ---          
 
-@short: removes Dataview instance and releases occupied resources
+@short: removes DataView instance and releases occupied resources
 
 @signature: {'destructor(): void;'}
 

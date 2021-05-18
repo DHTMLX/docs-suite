@@ -8,8 +8,8 @@ title: itemMouseOver
 @signature: {'itemMouseOver: (id: string | number, e: Event) => void;'}
 
 @params:
-- id 	string|number 		the id of an item
-- e 	Event 				a native event object
+- `id: string|number` - the id of an item
+- `e: Event` - a native event object
 
 @example:
 dataview.events.on("ItemMouseOver", function(id, event) {

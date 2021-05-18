@@ -8,7 +8,7 @@ title: change
 @signature: {'change: (value: string | Date) => void;'}
 
 @params:
-- value     Date|string     the current value of the control
+`value: string | Date` - the current value of the control
 
 @example:
 form.getItem("datepicker").events.on("Change", function(value) {

@@ -8,11 +8,11 @@ title: beforeEditEnd
 @signature: {'beforeEditEnd: (value: string, id: string | number) => boolean | void;'}
 
 @params:
-- value		string		the value of an item
-- id		string | number		the id of an item
+- `value: string` - the value of an item
+- `id: string | number` - the id of an item
 
 @returns:
-- result	boolean		false - to prevent closing of an editor, otherwise true
+Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
 dataview.events.on("BeforeEditEnd", function(value,id){

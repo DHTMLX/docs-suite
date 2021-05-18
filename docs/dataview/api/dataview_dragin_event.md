@@ -7,6 +7,10 @@ title: dragIn
 
 @signature: {'(data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 dataview.events.on("DragIn", function(data, events) {
     // your logic here
@@ -16,7 +20,7 @@ dataview.events.on("DragIn", function(data, events) {
 
 **Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
-The data object contains the following parameters:
+The `data` object contains the following parameters:
 
 <table>
 	<tbody>

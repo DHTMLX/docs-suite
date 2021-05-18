@@ -16,7 +16,7 @@ dataview.events.on("CancelDrop", function(data, events) {
 
 **Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
-The data object contains the following parameters:
+The `data` object contains the following parameters:
 
 <table>
 	<tbody>

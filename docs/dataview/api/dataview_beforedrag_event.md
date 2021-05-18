@@ -7,8 +7,13 @@ title: beforeDrag
 
 @signature: {'beforeDrag: (data: IDragInfo, events: MouseEvent, ghost: HTMLElement) => void | boolean;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+- `ghost: HTMLElement` - an HTML element
+
 @returns:
-- result	void | boolean		false - to block dragging of an item, otherwise true
+Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
 dataview.events.on("BeforeDrag", function(data, events) {
@@ -20,7 +25,7 @@ dataview.events.on("BeforeDrag", function(data, events) {
 
 **Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
 
-The data object contains the following parameters:
+The `data` object contains the following parameters:
 
 <table>
 	<tbody>
