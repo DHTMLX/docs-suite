@@ -1,6 +1,6 @@
 ---
-sidebar_label: abort
-title: abort
+sidebar_label: abort()
+title: abort()
 ---          
 
 @short: cancels the upload of a file(s)
@@ -8,7 +8,7 @@ title: abort
 @signature: {'abort(id?: string): void;'}
 
 @params:
-- `id: string` - optional, the ID of a file
+`id: string` - optional, the ID of a file
 
 @example:
 vault.uploader.abort("file_id");
