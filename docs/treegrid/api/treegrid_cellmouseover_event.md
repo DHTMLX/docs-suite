@@ -8,9 +8,9 @@ title: cellMouseOver
 @signature: {'cellMouseOver: (row: IRow, col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- row			object		an object with a row configuration
-- column		object		an object with a column configuration
-- e				Event		a native event object
+`row: object` - an object with a row configuration
+`column: object` - an object with a column configuration
+`e: Event` - a native event object
 
 @example:
 grid.events.on("CellMouseOver", function(row,column,e){

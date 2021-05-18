@@ -8,7 +8,7 @@ title: expand
 @signature: {'expand: (id: string | number) => void;'}
 
 @params:
-- rowId		string | number		the id of an expanded row
+`rowId: string | number` - the id of an expanded row
 
 @example:
 grid.events.on("Expand", function(rowId){

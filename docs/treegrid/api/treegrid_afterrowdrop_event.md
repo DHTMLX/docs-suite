@@ -8,8 +8,8 @@ title: afterRowDrop
 @signature: {'afterRowDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-- data		object		data object
-- e		    Event		a native event object
+`data: object` - data object
+`e: Event` - a native event object
 
 @example:
 treegrid.events.on("AfterRowDrop", function(data, events) {

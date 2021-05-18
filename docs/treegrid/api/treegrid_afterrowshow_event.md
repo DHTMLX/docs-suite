@@ -7,8 +7,8 @@ title: afterRowShow
 
 @signature: {'afterRowShow: (row: IRow) => void;'}
 
-@params: 
-- row   object  an object with a row configuration
+@params:
+`row: object` - an object with a row configuration
 
 @example:
 treegrid.events.on("AfterRowShow", function(row){

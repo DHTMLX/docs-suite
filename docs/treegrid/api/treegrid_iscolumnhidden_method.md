@@ -1,6 +1,6 @@
 ---
-sidebar_label: isColumnHidden
-title: isColumnHidden
+sidebar_label: isColumnHidden()
+title: isColumnHidden()
 ---          
 
 @short: checks whether a column is hidden
@@ -8,10 +8,10 @@ title: isColumnHidden
 @signature: {'isColumnHidden(colId: string | number): boolean;'}
 
 @params:
-- colId	string | number   the id of a column
+`colId: string | number` - the id of a column
 
 @returns:
-- param	boolean     'true' if the column is hidden, 'false' otherwise
+`true` if the column is hidden; otherwise, `false`.
 
 @example:
 grid.isColumnHidden("country"); // -> true|false

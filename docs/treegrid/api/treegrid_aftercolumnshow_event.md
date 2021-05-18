@@ -8,7 +8,7 @@ title: afterColumnShow
 @signature: {'afterColumnShow: (column: ICol) => void;'}
 
 @params:
-- column   object  an object with a column configuration
+`column: object` - an object with a column configuration
 
 @example:
 treegrid.events.on("AfterColumnShow", function(column){

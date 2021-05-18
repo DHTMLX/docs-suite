@@ -8,8 +8,8 @@ title: footerCellClick
 @signature: {'footerCellClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- column		object		an object with a column configuration
-- e				Event		a native event object
+`column: object` - an object with a column configuration
+`e: Event` - a native event object
 
 @example:
 grid.events.on("FooterCellClick", function(column,e){

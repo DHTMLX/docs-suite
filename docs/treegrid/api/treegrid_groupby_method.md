@@ -1,6 +1,6 @@
 ---
-sidebar_label: groupBy
-title: groupBy
+sidebar_label: groupBy()
+title: groupBy()
 ---          
 
 @short: groups grid content either by values of the specified column or by the result of calculation
@@ -8,7 +8,7 @@ title: groupBy
 @signature: {'groupBy(property: string | ((item: IDataItem) => string)): void;'}
 
 @params:
-- param    string | function   the id of the column or the rule of grouping     
+`param: string | function` - the id of the column or the rule of grouping
 
 @example:
 //Grouping by values of the specified column

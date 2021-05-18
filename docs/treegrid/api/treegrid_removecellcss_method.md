@@ -1,6 +1,6 @@
 ---
 sidebar_label: removeCellCss
-title: removeCellCss
+title: removeCellCss()
 ---          
 
 @short: removes a style from a cell
@@ -8,9 +8,9 @@ title: removeCellCss
 @signature: {'removeCellCss(row: string, col: string, css: string): void;'}
 
 @params:
-- row		string | number		the id of a row
-- col		string | number		the id of a column
-- css		string				the name of the CSS class
+`row: string` - the id of a row
+`col: string` - the id of a column
+`css: string` - the name of the CSS class
 
 @example:
 grid.removeCellCss("1", "b", "myCustomClass");

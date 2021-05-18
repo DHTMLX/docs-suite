@@ -9,8 +9,8 @@ title: beforeUnSelect
 
 @params:
 
-- row		object		the config of a row
-- col       object      the config of a column
+- `row: object` - the config of a row
+- `col: object` - the config of a column
 
 @returns:
 param   boolean     false - to prevent unselecting of a cell, otherwise - true

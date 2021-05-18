@@ -8,8 +8,8 @@ title: dragColumnOut
 @signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-- data		object		data object
-- events		    MouseEvent		a native event object
+`data: object` - data object
+`events: MouseEvent` - a native event object
 
 @example:
 treegrid.events.on("DragColumnOut", function(data, events) {

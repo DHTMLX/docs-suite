@@ -8,7 +8,7 @@ title: afterColumnHide
 @signature: {'afterColumnHide: (col: ICol) => void;'}
 
 @params: 
-- col   object  an object with a column configuration
+`col: object` - an object with a column configuration
 
 @example:
 treegrid.events.on("AfterColumnHide", function(column){

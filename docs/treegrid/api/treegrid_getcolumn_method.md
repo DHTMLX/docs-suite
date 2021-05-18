@@ -1,6 +1,6 @@
 ---
-sidebar_label: getColumn
-title: getColumn
+sidebar_label: getColumn()
+title: getColumn()
 ---          
 
 @short: returns an object with attributes of a column
@@ -8,10 +8,10 @@ title: getColumn
 @signature: {'getColumn(colId: string | number): ICol;'}
 
 @params:
-- colId		string | number		the id of a column
+`colId: string | number` - the id of a column
 
 @returns:
-- config		object		an object with attributes of a column
+An object with attributes of a column.
 
 @example:
 var column = grid.getColumn("b"); // ->

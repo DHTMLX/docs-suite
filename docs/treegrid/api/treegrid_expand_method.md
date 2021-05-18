@@ -1,6 +1,6 @@
 ---
-sidebar_label: expand
-title: expand
+sidebar_label: expand()
+title: expand()
 ---          
 
 @short: expands a tree node by id
@@ -8,7 +8,7 @@ title: expand
 @signature: {'expand(id: string): void;'}
 
 @params:
-- id	string		the id of a node to expand
+`id: string` - the id of a node to expand
 
 @example:
 treegrid.expand("native");

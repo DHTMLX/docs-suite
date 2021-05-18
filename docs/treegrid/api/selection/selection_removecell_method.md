@@ -1,6 +1,6 @@
 ---
-sidebar_label: removeCell
-title: removeCell
+sidebar_label: removeCell()
+title: removeCell()
 ---          
 
 @short: unselects previously selected cells
@@ -8,8 +8,8 @@ title: removeCell
 @signature: {'removeCell(rowId?: string | number, colId?: string | number): void;'}
 
 @params:
-- rowId     string,number   optional, the id of a row
-- colId     string,number   optional, the id of a column
+- `rowId: string | number` - optional, the id of a row
+- `colId: string | number` - optional, the id of a column
 
 @example:
 treegrid.selection.enable();
