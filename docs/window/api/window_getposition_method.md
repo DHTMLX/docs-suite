@@ -8,7 +8,7 @@ title: getPosition()
 @signature: {'getPosition(): IPosition;'}
 
 @returns:
-An object with left and top coordinates of a window
+An object with left and top coordinates of a window.
 
 @example:
 var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}

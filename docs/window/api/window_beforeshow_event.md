@@ -11,7 +11,7 @@ title: beforeShow
 `position: object` - an object with coordinates of the window's position
 
 @returns:
-Return `true` to show a window, otherwise `false`
+Return `true` to show a window, `false` to block showing a window.
 
 @example:
 dhxWindow.events.on("BeforeShow", function(position){
@@ -23,12 +23,10 @@ dhxWindow.events.on("BeforeShow", function(position){
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
-The event is blockable. Return *false* to block showing a window.
-
 The **position** parameter contains two attributes:
 
-- **left** - (*number*)	the left coordinate of the window's position (in pixels)
-- **top** - (*number*)	the top coordinate of the window's position (in pixels)
+- **left** - (*number*) the left coordinate of the window's position (in pixels)
+- **top** - (*number*) the top coordinate of the window's position (in pixels)
 
 @changelog:
 

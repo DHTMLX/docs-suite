@@ -8,7 +8,7 @@ title: attach()
 @signature: {'attach(name: string | IViewFn | IView | IViewConstructor | any, config?: any): void;'}
 
 @params:
-- `component: string, object` -	the name or object of a component
+- `name: string, object` -	the name or object of a component
 - `config: object` - optional, the configuration settings of a component
 
 @example:

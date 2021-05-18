@@ -8,7 +8,7 @@ title: getContainer()
 @signature: {'getContainer(): HTMLElement;'}
 
 @returns:
-The HTML element
+The HTML element.
 
 @example:
 dhxWindow.getContainer();

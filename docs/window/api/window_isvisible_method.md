@@ -8,7 +8,7 @@ title: isVisible()
 @signature: {'isVisible(): boolean;'}
 
 @returns:
-`true`, if a window is visible, otherwise `false`
+`true`, if a window is visible; otherwise, `false`.
 
 @example:
 window.isVisible(); // -> true/false

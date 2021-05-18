@@ -8,7 +8,7 @@ title: isFullScreen()
 @signature: isFullScreen(): boolean;
 
 @returns:
-`true`, if a window is in the full screen mode, otherwise `false`
+`true`, if a window is in the full screen mode; otherwise, `false`.
 
 @example:
 dhxWindow.isFullScreen(); // -> true/false
