@@ -8,9 +8,9 @@ title: beforeEditEnd
 @signature: {'beforeEditEnd: (value: string | number, row: IRow, col: ICol) => boolean | void;'}
 
 @params:
-`value: string | number` - the new value of a cell
-`row: object` - an object with a row configuration
-`column: object` - an object with a column configuration
+- `value: string | number` - the new value of a cell
+- `row: object` - an object with a row configuration
+- `column: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent closing of an editor; otherwise, `true`.

@@ -7,7 +7,7 @@ title: beforeRowShow
 
 @signature: {'beforeRowShow: (row: IRow) => boolean | void;'}
 
-@params: 
+@params:
 `row: object` - an object with a row configuration
 
 @returns:

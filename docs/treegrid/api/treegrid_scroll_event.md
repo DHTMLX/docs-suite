@@ -8,7 +8,7 @@ title: scroll
 @signature: {'scroll: (scrollState: ICoords) => void;'}
 
 @params:
-- coords	object		an object with new top and left coordinates
+`coords: object` - an object with new top and left coordinates
 
 @example:
 grid.events.on("Scroll", function({top,left}){

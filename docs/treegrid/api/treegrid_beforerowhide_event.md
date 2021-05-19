@@ -7,7 +7,7 @@ title: beforeRowHide
 
 @signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
 
-@params: 
+@params:
 `row: object` - an object with a row configuration
 
 @returns:

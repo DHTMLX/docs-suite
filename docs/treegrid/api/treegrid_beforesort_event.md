@@ -8,8 +8,8 @@ title: beforeSort
 @signature: beforeSort: (col: ICol, dir: Dirs) => void | boolean;
 
 @params:
-`col: object` - an object with the configuration of a column
-`dir: string` - the sorting direction (desc, asc)
+- `col: object` - an object with the configuration of a column
+- `dir: string` - the sorting direction (desc, asc)
 
 @returns:
 Return `false` to prevent a column from being sorted; otherwise, `true`.

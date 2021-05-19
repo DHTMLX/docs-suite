@@ -8,9 +8,9 @@ title: beforeRowResize
 @signature: beforeRowResize: (row: IRow, events: Event, currentHeight: number) => boolean;
 
 @params:
-`row: object` - an object with a row configuration
-`e: Event` - a native event object
-`currentHeight: number` - the current height of the row
+- `row: object` - an object with a row configuration
+- `events: Event` - a native event object
+- `currentHeight: number` - the current height of the row
 
 @returns:
 Return `false` to block resizing of a row; otherwise, `true`.

@@ -1,6 +1,6 @@
 ---
-sidebar_label: scroll
-title: scroll
+sidebar_label: scroll()
+title: scroll()
 ---          
 
 @short: scrolls a grid according to specified coordinates
@@ -8,8 +8,8 @@ title: scroll
 @signature: {'scroll(x?: number, y?: number): void;'}
 
 @params:
-- x		number		the X coordinate
-- y		number		the Y coordinate
+- `x: number` - the X coordinate
+- `y: number` - the Y coordinate
 
 @example:
 grid.scroll(75,230);

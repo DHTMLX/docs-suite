@@ -1,6 +1,6 @@
 ---
-sidebar_label: showRow
-title: showRow
+sidebar_label: showRow()
+title: showRow()
 ---          
 
 @short: makes a specified row visible on a page
@@ -8,7 +8,7 @@ title: showRow
 @signature: {'showRow(rowId: string | number): void;'}
 
 @params:
-- rowId	    string | number   the id of a row
+`rowId: string | number` - the id of a row
 
 @example:
 treegrid.showRow(rowId);

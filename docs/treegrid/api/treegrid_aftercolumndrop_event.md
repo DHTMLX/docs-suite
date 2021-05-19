@@ -9,7 +9,7 @@ title: afterColumnDrop
 
 @params:
 - `data: object` - data object
-- `e: Event` - a native event object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 treegrid.events.on("AfterColumnDrop", function(data, events) {

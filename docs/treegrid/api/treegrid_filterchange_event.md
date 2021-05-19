@@ -8,9 +8,9 @@ title: filterChange
 @signature: {'filterChange: (value: string, colId: string, filterId: "inputFilter" | "selectFilter" | "comboFilter") => void;'}
 
 @params:
-`value: string` - an entered value
-`colId: string` - the id of a column
-`filterId: string` - the type of a filter: "inputFilter", "selectFilter", "comboFilter"
+- `value: string` - an entered value
+- `colId: string` - the id of a column
+- `filterId: string` - the type of a filter: "inputFilter", "selectFilter", "comboFilter"
 
 @example:
 grid.events.on("FilterChange", function(value,colId,filter){

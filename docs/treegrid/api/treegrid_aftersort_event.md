@@ -8,8 +8,8 @@ title: afterSort
 @signature: afterSort: (col: ICol, dir: Dirs) => void;
 
 @params:
-`col: object` - an object with the configuration of a column
-`dir: string` - the sorting direction (desc, asc)
+- `col: object` - an object with the configuration of a column
+- `dir: string` - the sorting direction (desc, asc)
 
 @example:
 treegrid.events.on("afterSort", (col, dir) => {
