@@ -8,7 +8,7 @@ title: afterShow
 @signature: {'afterShow: (position: IPosition) => void;'}
 
 @params:
-- position  object      an object with coordinates of the window's position
+`position: object` - an object with coordinates of the window's position
 
 @example:
 dhxWindow.events.on("AfterShow", function(position){
@@ -21,8 +21,8 @@ dhxWindow.events.on("AfterShow", function(position){
 
 The **position** parameter contains two attributes:
 
-- **left** - (*number*)	the left coordinate of the window's position (in pixels)
-- **top** - (*number*)	the top coordinate of the window's position (in pixels)
+- **left** - (*number*) the left coordinate of the window's position (in pixels)
+- **top** - (*number*) the top coordinate of the window's position (in pixels)
 
 @changelog:
 

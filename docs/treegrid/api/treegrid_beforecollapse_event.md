@@ -8,10 +8,10 @@ title: beforeCollapse
 @signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
 @params:
-- id			string | number		the id of a collapsed row
+`id: string` - the id of a collapsed row
 
 @returns:
-- result		boolean | void		false - to block collapsing a treegrid, otherwise true
+Return `false` to block collapsing a treegrid; otherwise, `true`.
 
 @example:
 treeGrid.events.on("BeforeCollapse", function(rowId) {

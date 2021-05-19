@@ -8,9 +8,9 @@ title: resize
 @signature: {'resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, editettypes: IDirectionConfig) => void;'}
 
 @params:
-- state     		object    an object with the new size and (or) position of a window
-- oldState   	object    an object with the previous size and (or) position of a window
-- side  object  an object that specifies the direction of resizing
+- `state: object` - an object with the new size and (or) position of a window
+- `oldState: object` - an object with the previous size and (or) position of a window
+- `side: object` - an object that specifies the direction of resizing
 
 @example:
 dhxWindow.events.on("Resize", function(state, oldState, side) {

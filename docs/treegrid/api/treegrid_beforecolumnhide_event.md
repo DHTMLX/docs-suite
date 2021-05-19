@@ -7,11 +7,11 @@ title: beforeColumnHide
 
 @signature: {'beforeColumnHide: (col: ICol) => boolean | void;'}
 
-@params: 
-- col   object  an object with a column configuration
+@params:
+`col: object` - an object with a column configuration
 
 @returns:
-- result	boolean		false - to prevent a column from being hidden, otherwise true
+Return `false` to prevent a column from being hidden; otherwise, `true`.
 
 @example:
 treegrid.events.on("BeforeColumnHide", function(column){

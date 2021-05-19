@@ -1,6 +1,6 @@
 ---
-sidebar_label: getCell
-title: getCell
+sidebar_label: getCell()
+title: getCell()
 ---          
 
 @short: returns the object of a selected cell
@@ -8,7 +8,7 @@ title: getCell
 @signature: {'getCellRect(row: string | number, col: string | number): ICellRect;'}
 
 @returns:
-param   object  an object with parameters of a selected cell
+An object with parameters of a selected cell.
 
 @example:
 var selectedCell = treegrid.selection.getCell();

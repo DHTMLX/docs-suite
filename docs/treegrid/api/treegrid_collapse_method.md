@@ -1,6 +1,6 @@
 ---
-sidebar_label: collapse
-title: collapse
+sidebar_label: collapse()
+title: collapse()
 ---          
 
 @short: collapses a tree node by id
@@ -8,7 +8,7 @@ title: collapse
 @signature: {'collapse(id: string): void;'}
 
 @params:
-- id	string		the id of a node to collapse
+`id: string` - the id of a node to collapse
 
 @example:
 treegrid.collapse("native");

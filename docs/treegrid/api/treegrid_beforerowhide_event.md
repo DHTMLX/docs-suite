@@ -8,10 +8,10 @@ title: beforeRowHide
 @signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
 
 @params: 
-- row   object  an object with a row configuration
+`row: object` - an object with a row configuration
 
 @returns:
-- result	boolean	| void	false - to prevent a row from being hidden, otherwise true
+Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
 treegrid.events.on("BeforeRowHide", function(row){

@@ -1,6 +1,6 @@
 ---
-sidebar_label: adjustColumnWidth
-title: adjustColumnWidth
+sidebar_label: adjustColumnWidth()
+title: adjustColumnWidth()
 ---          
 
 @short: adjusts the width of a column to make all its content visible
@@ -8,8 +8,8 @@ title: adjustColumnWidth
 @signature: {'adjustColumnWidth(id: string | number, adjust?: string | boolean): void;'}
 
 @params:
-- id		string | number		the id of a column
-- adjust	string | boolean		optional, the mode of adjusting a column ("header", "data", true)
+- `id: string | number` - the id of a column
+- `adjust: string | boolean` - optional, the mode of adjusting a column ("header", "data", true)
 
 @example:
 treegrid.adjustColumnWidth("b", "header");

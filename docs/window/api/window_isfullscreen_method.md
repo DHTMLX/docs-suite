@@ -1,6 +1,6 @@
 ---
-sidebar_label: isFullScreen
-title: isFullScreen
+sidebar_label: isFullScreen()
+title: isFullScreen()
 ---
 
 @short: checks whether the window is in the full screen mode
@@ -8,7 +8,7 @@ title: isFullScreen
 @signature: isFullScreen(): boolean;
 
 @returns:
-- param     boolean     true, if a window is in the full screen mode, otherwise false
+`true`, if a window is in the full screen mode; otherwise, `false`.
 
 @example:
 dhxWindow.isFullScreen(); // -> true/false

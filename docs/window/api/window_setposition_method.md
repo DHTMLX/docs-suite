@@ -1,6 +1,6 @@
 ---
-sidebar_label: setPosition
-title: setPosition
+sidebar_label: setPosition()
+title: setPosition()
 ---          
 
 @short: sets the position of a window
@@ -8,8 +8,8 @@ title: setPosition
 @signature: {'setPosition(left: number, top: number): void;'}
 
 @params:
-- left	number		the left coordinate of a window
-- top	number		the top coordinate of a window
+- `left: number` - the left coordinate of a window
+- `top: number` - the top coordinate of a window
 
 @example:
 dhxWindow.setPosition(20,20);

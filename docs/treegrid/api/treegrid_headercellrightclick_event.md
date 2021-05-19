@@ -8,8 +8,8 @@ title: headerCellRightClick
 @signature: {'headerCellRightClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- column		object		an object with a column configuration
-- e				MouseEvent		a native event object
+`column: object` - an object with a column configuration
+`e: MouseEvent` - a native event object
 
 @example:
 grid.events.on("HeaderCellRightClick", function(column,e){

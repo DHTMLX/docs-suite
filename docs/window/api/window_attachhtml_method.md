@@ -1,6 +1,6 @@
 ---
-sidebar_label: attachHTML
-title: attachHTML
+sidebar_label: attachHTML()
+title: attachHTML()
 ---          
 
 @short: adds an HTML content into a dhtmlxWindow
@@ -8,7 +8,7 @@ title: attachHTML
 @signature: {'attachHTML(html: string): void;'}
 
 @params:
-- html		string		an HTML content to be added into a window
+`html: string` - an HTML content to be added into a window
 
 @example:
 var dhxWindow = new dhx.Window({title: "Window"});

@@ -6,9 +6,9 @@ title: afterExpand
 @short: fires after expanding a treegrid
 
 @signature: {'afterExpand: (id: string) => void;'}
-	
+
 @params:
-- id			string | number		the id of an expanded row
+`id: string` - the id of an expanded row
 
 @example:
 treeGrid.events.on("AfterExpand", function(rowId) {

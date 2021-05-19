@@ -8,8 +8,8 @@ title: dragRowIn
 @signature: {'dragRowIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
-- data		object		data object
-- e		    Event		a native event object
+`data: object` - data object
+`e: Event` - a native event object
 
 @example:
 treegrid.events.on("DragRowIn", function(data, events) {

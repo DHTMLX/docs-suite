@@ -8,9 +8,8 @@ title: afterSelect
 @signature: {'afterSelect: (row: IRow, col: ICol) => void;'}
 
 @params:
-
-- row		object		the config of a row
-- col       object      the config of a column
+- `row: object` - the config of a row
+- `col: object` - the config of a column
 
 @example:
 treegrid.selection.events.on("AfterSelect", function(row, col){

@@ -1,6 +1,6 @@
 ---
-sidebar_label: send
-title: send
+sidebar_label: send()
+title: send()
 ---          
 
 @short: sends a POST request for file upload to a server-side URL 
@@ -8,7 +8,7 @@ title: send
 @signature: {'send(params?: IParams): void;'}
 
 @params:
-- `params: object` - optional, additional parameters for a request
+`params: object` - optional, additional parameters for a request
 
 @example:
 vault.uploader.send();

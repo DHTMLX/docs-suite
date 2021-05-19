@@ -16,7 +16,6 @@ var calendar = new dhx.Calendar("calendar", {
 
 **Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 
-@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#rangemode
+@changelog: added in v6.2
 
-@descr:
-added in v6.2
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#rangemode)

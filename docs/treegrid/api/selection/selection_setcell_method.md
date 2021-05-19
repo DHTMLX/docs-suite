@@ -1,6 +1,6 @@
 ---
-sidebar_label: setCell
-title: setCell
+sidebar_label: setCell()
+title: setCell()
 ---          
 
 @short: sets selection to a specified cell
@@ -8,8 +8,8 @@ title: setCell
 @signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:
-- row     object    an object with a cell to be selected
-- column  object    the config of a column
+- `row: object` - an object with a cell to be selected
+- `column: object` - the config of a column
 
 @example:
 var row = treegrid.data.getItem(treegrid.data.getId(0));

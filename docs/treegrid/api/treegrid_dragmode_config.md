@@ -16,7 +16,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Setup Drag Mode](https://snippet.dhtmlx.com/43covmy2)
 
-Drag-n-drop can work in three modes: 
+Drag-n-drop can work in three modes:
 
 - "target" - a grid takes rows from other grids, while its rows can't be dragged out of it
 - "source" - a grid allows dragging its rows out and can't take rows from other grids

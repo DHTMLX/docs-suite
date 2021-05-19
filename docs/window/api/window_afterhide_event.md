@@ -9,8 +9,8 @@ description: description
 @signature: {'afterHide: (position: IPosition, events?: Event) => void;'}
 
 @params:
-- position  object      an object with coordinates of the window's position
-- events    Event       a native event object
+- `position: object` - an object with coordinates of the window's position
+- `events: Event` - a native event object
 
 @example:
 dhxWindow.events.on("AfterHide", function(position, events){

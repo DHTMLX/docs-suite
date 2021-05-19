@@ -1,6 +1,6 @@
 ---
-sidebar_label: isRowHidden
-title: isRowHidden
+sidebar_label: isRowHidden()
+title: isRowHidden()
 ---          
 
 @short: checks whether a row is hidden
@@ -8,10 +8,10 @@ title: isRowHidden
 @signature: {'isRowHidden(rowId: string | number): boolean;'}
 
 @params:
-- rowId	    string | number   the id of a row   
+`rowId: string | number` - the id of a row
 
 @returns:
-- param	boolean     'true' if the row is hidden, 'false' otherwise
+`true` if the row is hidden, otherwise `false`.
 
 @example:
 treegrid.isRowHidden("1"); //-> true/false

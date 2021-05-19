@@ -6,9 +6,9 @@ title: afterCollapse
 @short: fires after collapsing a treegrid
 
 @signature: {'afterCollapse: (rowId: string | number) => void;'}
-	
+
 @params:
-- rowId			string,number		the id of a collapsed row
+`rowId: string,number` - the id of a collapsed row
 
 @example:
 treeGrid.events.on("AfterCollapse", function(rowId) {

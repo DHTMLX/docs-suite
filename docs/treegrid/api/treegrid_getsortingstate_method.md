@@ -1,6 +1,6 @@
 ---
-sidebar_label: getSortingState
-title: getSortingState
+sidebar_label: getSortingState()
+title: getSortingState()
 ---          
 
 @short: returns the current state of sorting data in TreeGrid
@@ -8,7 +8,7 @@ title: getSortingState
 @signature: {'getSortingState(): any;'}
 
 @returns:
-- object   object	  an object with the current state of sorting data in the treegrid
+An object with the current state of sorting data in the treegrid.
 
 @example:
 var state = treegrid.getSortingState(); 

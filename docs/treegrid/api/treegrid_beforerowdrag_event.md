@@ -8,11 +8,11 @@ title: beforeRowDrag
 @signature: {'beforeRowDrag: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
-- data		object		data object
-- events		    Event		a native event object
+`data: object` - data object
+`events: Event` - a native event object
 
 @returns:
-- result	void | boolean		false - to prevent dragging a row, otherwise true
+Return `false` to prevent dragging a row; otherwise, `true`.
 
 @example:
 treegrid.events.on("BeforeRowDrag", function(data, events){

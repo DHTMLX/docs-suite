@@ -8,9 +8,9 @@ title: cellClick
 @signature: {'cellClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- row			object		an object with a row configuration
-- col		object		an object with a column configuration
-- e				Event		a native event object
+`row: object` - an object with a row configuration
+`col: object` - an object with a column configuration
+`e: Event` - a native event object
 
 @example:
 grid.events.on("CellClick", function(row,column,e){
