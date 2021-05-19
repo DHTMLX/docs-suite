@@ -8,7 +8,7 @@ title: headerCellDblClick
 @signature: {'headerCellDblClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- `col: object ` - an object with a column configuration
+- `col: object` - an object with a column configuration
 - `e: MouseEvent` - a native HTML event object
 
 @example:
