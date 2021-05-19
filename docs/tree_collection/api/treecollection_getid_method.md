@@ -1,6 +1,6 @@
 ---
-sidebar_label: getId
-title: getId
+sidebar_label: getId()
+title: getId()
 ---          
 
 @short: gets the ID of an item

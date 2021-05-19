@@ -1,6 +1,6 @@
 ---
-sidebar_label: getParent
-title: getParent
+sidebar_label: getParent()
+title: getParent()
 ---          
 
 @short: gets the ID of the parent of the control

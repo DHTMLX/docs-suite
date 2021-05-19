@@ -1,6 +1,6 @@
 ---
-sidebar_label: exists
-title: exists
+sidebar_label: exists()
+title: exists()
 ---          
 
 @short: checks whether the specified item exists in the component
@@ -8,10 +8,10 @@ title: exists
 @signature: {'exists(id: Id): boolean;'}
 
 @params:
-- `id: string, number` - the id of the item in question
+`id: string, number` - the id of the item in question
 
 @returns:
-- `boolean` - true if the item exists, otherwise false
+`true` if the item exists; otherwise, `false`.
 
 @example:
 var item = component.data.exists("1"); 

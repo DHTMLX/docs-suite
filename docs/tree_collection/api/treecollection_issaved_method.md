@@ -1,6 +1,6 @@
 ---
-sidebar_label: isSaved
-title: isSaved
+sidebar_label: isSaved()
+title: isSaved()
 ---          
 
 @short: checks whether the changes made in a tree collection are saved
@@ -8,7 +8,7 @@ title: isSaved
 @signature: {'isSaved(): boolean;'}
 
 @returns:
-- `boolean` - true if the changes are saved, otherwise false
+`true` if the changes are saved; otherwise, `false`.
 
 @example:
 myToolbar.data.isSaved();

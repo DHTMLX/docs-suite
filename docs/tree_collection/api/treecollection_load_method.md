@@ -1,6 +1,6 @@
 ---
-sidebar_label: load
-title: load
+sidebar_label: load()
+title: load()
 ---          
 
 @short: loads items from a file
@@ -12,7 +12,7 @@ title: load
 - `driver: string` - optional, type of data (json, csv, xml), json by default
 
 @returns:
-- `promise` - a promise of data loading
+A promise of data loading.
 
 @example:
 myToolbar.data.load("[path to this file]/file.xml", "xml");

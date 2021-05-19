@@ -1,6 +1,6 @@
 ---
-sidebar_label: filter
-title: filter
+sidebar_label: filter()
+title: filter()
 ---          
 
 @short: filters controls by some criteria

@@ -1,6 +1,6 @@
 ---
-sidebar_label: canCopy
-title: canCopy
+sidebar_label: canCopy()
+title: canCopy()
 ---          
 
 @short: checks whether it is possible to copy a control into some other control

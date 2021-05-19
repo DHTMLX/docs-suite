@@ -1,6 +1,6 @@
 ---
-sidebar_label: update
-title: update
+sidebar_label: update()
+title: update()
 ---          
 
 @short: changes an item

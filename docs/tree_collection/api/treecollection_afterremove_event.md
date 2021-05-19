@@ -6,9 +6,9 @@ title: afterRemove
 @short: fires after removing a new item from a tree collection
 
 @signature: {'afterRemove: (removedItem: any) => void;'}
-	
+
 @params:
-- `removedItem: object` - the object of a removed item
+`removedItem: object` - the object of a removed item
 
 @example:
 data.events.on("AfterRemove", function(removedItem){

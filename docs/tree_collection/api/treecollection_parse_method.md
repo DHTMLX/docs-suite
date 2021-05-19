@@ -1,6 +1,6 @@
 ---
-sidebar_label: parse
-title: parse
+sidebar_label: parse()
+title: parse()
 ---          
 
 @short: loads a collection of items from a local source
@@ -12,7 +12,7 @@ title: parse
 - `driver: object | string` - optional, type of data (json, csv, xml), json by default
 
 @returns:
-- `data: array` - an array of loaded items	
+An array of loaded items.
 
 @example:
 // parse toolbar from the json array

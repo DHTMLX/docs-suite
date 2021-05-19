@@ -1,6 +1,6 @@
 ---
-sidebar_label: eachChild
-title: eachChild
+sidebar_label: eachChild()
+title: eachChild()
 ---          
 
 @short: iterates through child items of a control

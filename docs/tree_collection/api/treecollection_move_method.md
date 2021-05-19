@@ -1,6 +1,6 @@
 ---
-sidebar_label: move
-title: move
+sidebar_label: move()
+title: move()
 ---          
 
 @short: moves items to different positions
@@ -14,7 +14,7 @@ title: move
 - `targetId: string` - optional, the id of the parent item where the moved items will be placed
 
 @returns:
-- `id: string | string[]` - the item's id or an array with ids of items
+The item's id or an array with ids of items.
 
 @example:
 toolbar.data.move("profile_btn",-1);
