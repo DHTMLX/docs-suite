@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (value: number[]) => boolean | void;'}
 
 @params:
-- value     number[]    the current value of the control
+`value: number[]` - the current value of the control
 
 @returns:
-param   boolean | void     false - to prevent a control from being shown, otherwise - true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("slider").events.on("BeforeShow", function(value) {

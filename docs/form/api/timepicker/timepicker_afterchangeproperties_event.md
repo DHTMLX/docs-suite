@@ -8,7 +8,7 @@ title: afterChangeProperties
 @signature: {'afterChangeProperties: (properties: ITimePickerProps) => void;'}
 
 @params:
-- properties     object      an object with configuration attributes of the control and their new values
+`properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("timepicker").events.on("AfterChangeProperties", function(properties) {

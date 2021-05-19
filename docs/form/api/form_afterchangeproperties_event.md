@@ -8,8 +8,8 @@ title: afterChangeProperties
 @signature: {'afterChangeProperties: (name: string, props: any) => void;'}
 
 @params:
-- name | id   string      the name (or id, if the name is not specified) of the Form control
-- properties     object      an object with configuration attributes of the control and their new values
+- `name: string` - the name (or id, if the name is not specified) of the Form control
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.events.on("AfterChangeProperties", function(name, properties) {

@@ -8,7 +8,7 @@ title: input
 @signature: {'input: (value: string | number) => void;'} 
 
 @params:
-- value        string | number  an entered value
+`value: string | number` - an entered value
 
 @example:
 form.getItem("textarea").events.on("Input", function(inputValue) {

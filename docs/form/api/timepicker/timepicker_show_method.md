@@ -1,6 +1,6 @@
 ---
-sidebar_label: show
-title: show
+sidebar_label: show()
+title: show()
 ---          
 
 @short: shows a TimePicker control on the page

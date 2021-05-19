@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets the value for a Textarea control
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value: string): void;'}
 
 @params:
-- value     string     the value to be set  
+`value: string` - the value to be set  
 
 @example:
 form.getItem("textarea").setValue("Some text");

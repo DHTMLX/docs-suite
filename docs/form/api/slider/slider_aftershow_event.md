@@ -8,7 +8,7 @@ title: afterShow
 @signature: {'afterShow: (value: number[]) => void;'}
  
 @params:
-- value     number[]     the current value of the control
+`value: number[]` - the current value of the control
 
 @example:
 form.getItem("slider").events.on("AfterShow", function(value) {

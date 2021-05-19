@@ -8,8 +8,8 @@ title: afterValidate
 @signature: {'afterValidate: (value: string | ITimeObject, isValid: boolean) => void;'}
 
 @params:
-- value       string|object  the validated value
-- isValid     boolean     the result of validation
+- `value: string | object` - the validated value
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("timepicker").events.on("AfterValidate", function(value, isValid) {

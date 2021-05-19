@@ -7,8 +7,6 @@ title: enable
 
 @signature: {'enable(): void;'}
 
-@params:
-
 @example:
 form.enable();
 

@@ -8,8 +8,8 @@ title: afterShow
 @signature: {'afterShow: (name: string, value?: any) => void;'}
 
 @params:
-- name | id		string		the name (or id, if the name is not specified) of the Form control
-- value     any         the current value of the control
+- `name: string` - the name (or id, if the name is not specified) of the Form control
+- `value: any` - the current value of the control
 
 @example:
 form.events.on("AfterShow", function(name, value) {

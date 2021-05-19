@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (value: string | ITimeObject) => boolean | void;'}
  
 @params:
-- value     string | object     the current value of the control
+`value: string | object` - the current value of the control
 
 @returns:
-param   boolean | void     false - to prevent a control from being shown, otherwise - true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("timepicker").events.on("BeforeShow", function(value) {

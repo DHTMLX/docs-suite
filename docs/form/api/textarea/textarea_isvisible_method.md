@@ -1,6 +1,6 @@
 ---
-sidebar_label: isVisible
-title: isVisible
+sidebar_label: isVisible()
+title: isVisible()
 ---          
 
 @short: checks whether a Textarea control is visible on the page
@@ -8,7 +8,7 @@ title: isVisible
 @signature: {'isVisible(): boolean;'}
 
 @returns:
-param   boolean     true, if a control is visible, otherwise false
+Return `true`, if a control is visible; otherwise, `false`.
 
 @example:
 form.getItem("textarea").isVisible(); 

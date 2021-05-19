@@ -7,11 +7,8 @@ title: beforeSend
 	
 @signature: {'beforeSend: () => boolean;'}
 
-@params:
-
 @returns:
-
-- result		boolean			true/false, to allow/forbid a form sending to the server
+Return `true/false` to allow/forbid a form sending to the server.
 
 @example:
 form.events.on("BeforeSend", function(){
@@ -20,8 +17,6 @@ form.events.on("BeforeSend", function(){
 });
 
 @descr:
-
-The event is blockable. Return *false* to prevent a form sending to the server.
 
 @changelog: added in v6.1
 

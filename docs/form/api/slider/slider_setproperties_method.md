@@ -1,6 +1,6 @@
 ---
-sidebar_label: setProperties
-title: setProperties
+sidebar_label: setProperties()
+title: setProperties()
 ---          
 
 @short: allows changing available configuration attributes of the control dynamically
@@ -8,7 +8,7 @@ title: setProperties
 @signature: {'setProperties(propertyConfig: ISliderProps): void;'}
 
 @params:
-- properties   object      an object with the available attributes of the control and their new values
+`propertyConfig: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("slider").setProperties({ 

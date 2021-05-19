@@ -8,7 +8,7 @@ title: afterShow
 @signature: {'afterShow: (value: undefined) => void;'}
  
 @params:
-- value     undefined     the current value of the control, null
+`value: undefined` - the current value of the control, null
 
 @example:
 form.getItem("spacer").events.on("AfterShow", function(value) {
