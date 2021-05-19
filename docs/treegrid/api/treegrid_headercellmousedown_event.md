@@ -8,7 +8,7 @@ title: headerCellMouseDown
 @signature: {'headerCellMouseDown: (col: ICol, e: MouseEvent & TouchEvent) => void;'}
 
 @params:
-- `col: object ` - an object with a column configuration
+- `col: object` - an object with a column configuration
 - `e: MouseEvent | TouchEvent` - a native HTML event object
 
 @example:
