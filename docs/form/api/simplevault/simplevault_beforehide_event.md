@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (value: ISimpleVaultValue[], init: boolean) => boolean | void;'}
 
 @params:
-- value     array     the current value of the control
-- init      boolean     true, if the event is triggered on the control initialization, otherwise false
+- `value: array` - the current value of the control
+- `init: boolean` - true, if the event is triggered on the control initialization, otherwise false
 
 @returns:
-param   boolean | void     false - to prevent a control from being hidden, otherwise - true
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.getItem("simplevault").events.on("BeforeHide", function(value, init) {

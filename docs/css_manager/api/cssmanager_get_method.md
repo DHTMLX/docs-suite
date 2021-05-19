@@ -8,7 +8,7 @@ title: get()
 @signature: {'get(className: string): ICssList;'}
 
 @params:
-- `className: string` - the name of the class
+`className: string` - the name of the class
 
 @returns:
 An object with a list of the class styles.

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getWidget
-title: getWidget
+sidebar_label: getWidget()
+title: getWidget()
 ---          
 
 @short: returns the dhtmlxComboBox widget attached to a Combo control
@@ -8,7 +8,7 @@ title: getWidget
 @signature: {'getWidget(): Combobox;'}
 
 @returns:
-param   object    the dhtmlxCombo widget
+An object of the dhtmlxCombo widget.
 
 @example:
 var combo = form.getItem("combo").getWidget();  

@@ -8,8 +8,8 @@ title: afterValidate
 @signature: {'afterValidate: (value: string | number, isValid: boolean) => void;'}
 
 @params:
-- value       string | number  the validated value
-- isValid     boolean     the result of validation
+- `value: string | number` - the validated value
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("select").events.on("AfterValidate", function(value, isValid) {

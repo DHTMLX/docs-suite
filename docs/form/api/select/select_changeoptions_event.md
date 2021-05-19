@@ -8,7 +8,7 @@ title: changeOptions
 @signature: {'changeOptions: (options: IOption[]) => void;'}
 
 @params:
-- options     array     a new array of Select options
+`options: array` - a new array of Select options
 
 @example:
 form.getItem("select").events.on("ChangeOptions", function(options) {

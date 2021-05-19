@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets the value for a Combo control
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value: string | string[]): void;'}
 
 @params:
-- value     string|string[]     the value to be set  
+`value: string | string[]` - the value to be set  
 
 @example:
 form.getItem("combo").setValue("1");

@@ -8,7 +8,7 @@ title: change
 @signature: {'change: (value: ISimpleVaultValue[]) => void;'} 
 
 @params:
-- value     array     the current value of the control
+`value: array` - the current value of the control
 
 @example:
 form.getItem("simplevault").events.on("Change", function(value) {

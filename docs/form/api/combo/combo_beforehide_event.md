@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (value: string | string[], init: boolean) => boolean | void;'}
 
 @params:
-- value     string|string[]     the current value of the control
-- init      boolean     true, if the event is triggered on the control initialization, otherwise false
+- `value: string | string[]` - the current value of the control
+- `init: boolean` - true, if the event is triggered on the control initialization, otherwise false
 
 @returns:
-param   boolean     false - to prevent a control from being hidden, otherwise - true
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.getItem("combo").events.on("BeforeHide", function(value, init) {

@@ -8,10 +8,10 @@ title: beforeValidate
 @signature: {'beforeValidate: (value: string | string[]) => boolean | void;'}
 
 @params:
-- value       string|string[]  the value to be validated
+`value: string | string[]` - the value to be validated
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("combo").events.on("BeforeValidate", function(value) {

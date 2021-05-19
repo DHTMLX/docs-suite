@@ -1,6 +1,6 @@
 ---
-sidebar_label: setProperties
-title: setProperties
+sidebar_label: setProperties()
+title: setProperties()
 description: description
 ---          
 
@@ -9,7 +9,7 @@ description: description
 @signature: {'setProperties(propertyConfig: ISimpleVaultProps): void;'}
 
 @params:
-- props   object      an object with the available attributes of the control and their new values
+`propertyConfig: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("simplevault").setProperties({

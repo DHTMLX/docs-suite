@@ -8,7 +8,7 @@ title: afterShow
 @signature: {'afterShow: (value: ISimpleVaultValue[]) => void;'}
  
 @params:
-- value     array     the current value of the control
+`value: array` - the current value of the control
 
 @example:
 form.getItem("simplevault").events.on("AfterShow", function(value) {

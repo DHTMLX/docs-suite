@@ -1,6 +1,6 @@
 ---
-sidebar_label: getProperties
-title: getProperties
+sidebar_label: getProperties()
+title: getProperties()
 ---          
 
 @short: returns an object with the available configuration attributes of the control
@@ -8,10 +8,10 @@ title: getProperties
 @signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
 
 @params:
-- id	string  optional, the id of a radio button
+`id: string` - optional, the id of a radio button
 
 @returns:
-param   object      an object either with the available attributes of the control and their values, or with the available attributes of the radio button and their values
+An object either with the available attributes of the control and their values, or with the available attributes of the radio button and their values.
 
 @example:
 var form = new dhx.Form("form_container", { 

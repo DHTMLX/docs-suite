@@ -1,6 +1,6 @@
 ---
-sidebar_label: show
-title: show
+sidebar_label: show()
+title: show()
 ---          
 
 @short: shows a RadioGroup control on the page

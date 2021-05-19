@@ -8,8 +8,8 @@ title: uploadFail
 @signature: {'uploadFail: (file: ISimpleVaultValue, value: ISimpleVaultValue[]) => void;'}
 
 @params:
-- file      object      the file object
-- value     array     the current value of the control
+- `file: object` - the file object
+- `value: array` - the current value of the control
 
 @example:
 form.getItem("simpleVault").events.on("UploadFail", function(file, value) {

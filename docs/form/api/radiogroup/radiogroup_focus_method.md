@@ -1,6 +1,6 @@
 ---
-sidebar_label: focus
-title: focus
+sidebar_label: focus()
+title: focus()
 ---          
 
 @short: sets focus to the radio button of the RadioGroup control by its id
@@ -8,7 +8,7 @@ title: focus
 @signature: {'focus(id?: string): void;'}
 
 @params:
-- id    string  optional, the id of a radio button 
+`id: string` - optional, the id of a radio button 
 
 @example:
 form.getItem("radiogroup").focus("radiobutton_1");

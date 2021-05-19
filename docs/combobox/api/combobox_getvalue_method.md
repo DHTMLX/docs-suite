@@ -8,7 +8,7 @@ title: getValue()
 @signature: {'getValue(asArray?: boolean): string[] | string;'}
 
 @params:
-- `asArray: boolean` - true, to return ids as an array of strings
+`asArray: boolean` - true, to return ids as an array of strings
 
 @returns:
 A string, or array that contains id(s) of options selected in ComboBox.

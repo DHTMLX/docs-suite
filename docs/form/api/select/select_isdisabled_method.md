@@ -1,6 +1,6 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
+sidebar_label: isDisabled()
+title: isDisabled()
 ---          
 
 @short: checks whether a Select control is disabled
@@ -8,7 +8,7 @@ title: isDisabled
 @signature: {'isDisabled(): boolean;'}
 
 @returns:
-param   boolean     true, if a control is disabled, otherwise false
+`true`, if a control is disabled; otherwise, `false`.
 
 @example:
 form.getItem("select").isDisabled(); 

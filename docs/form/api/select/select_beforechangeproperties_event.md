@@ -8,10 +8,10 @@ title: beforeChangeProperties
 @signature: {'beforeChangeProperties: (properties: ISelectProps) => boolean | void;'}
 
 @params:
-- properties     object      an object with configuration attributes of the control and their new values
+`properties: object` - an object with configuration attributes of the control and their new values
 
 @returns:
-param   boolean | void    false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("select").events.on("BeforeChangeProperties", function(properties) {

@@ -1,6 +1,6 @@
 ---
-sidebar_label: clear
-title: clear
+sidebar_label: clear()
+title: clear()
 ---          
 
 @short: clears a value of a Select control

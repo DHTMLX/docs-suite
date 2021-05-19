@@ -8,7 +8,7 @@ title: change
 @signature: {'change: (value: string | string[]) => void;'}
 
 @params:
-- value     string|string[]     the current value of the control
+`value: string | string[]` - the current value of the control
 
 @example:
 form.getItem("combo").events.on("Change", function(value) {

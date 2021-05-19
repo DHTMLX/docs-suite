@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (value: string | string[]) => boolean | void;'}
 
 @params:
-- value     string|string[]     the current value of the control
+`value: string | string[]` - the current value of the control
 
 @returns:
-param   boolean     false - to prevent a control from being shown, otherwise - true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("combo").events.on("BeforeShow", function(value) {

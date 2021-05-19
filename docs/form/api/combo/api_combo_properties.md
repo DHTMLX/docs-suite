@@ -19,7 +19,7 @@ title: Combo properties
 		</tr>
        	<tr>
 			<td><b>value</b></td>
-			<td>(<i>string|array</i>) specifies the values that will appear in the input:
+			<td>(<i>string, array</i>) specifies the values that will appear in the input:
             	<ul>
                 	<li>if <i>multiselection:true</i> is set for a combo, the property takes an array of string values as: <i>value: ["1","2","3"]</i>, </li>
                     <li>if <i>multiselection:false</i> is set or the <i>multiselection</i> config is not defined, the property gets either of the two values: <i>value:"1"</i> or <i>value: ["1"]</i></li>
@@ -41,15 +41,15 @@ title: Combo properties
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
+			<td>(<i>string, number, "content"</i>) the width of a control</td>
 		</tr>
 		<tr>
 			<td><b>height</b></td>
-			<td>(<i>string|number|"content"</i>) the height of a control</td>
+			<td>(<i>string, number, "content"</i>) the height of a control</td>
 		</tr>
          <tr>
 			<td><b>padding</b></td>
-			<td>(<i>string|number</i>) sets padding between a cell and a border of the Combo control</td>
+			<td>(<i>string, number</i>) sets padding between a cell and a border of the Combo control</td>
 		</tr>	
 		<tr>
 			<td><b>css</b></td>
@@ -81,7 +81,7 @@ title: Combo properties
 		</tr>
 		<tr>
 			<td><b>labelWidth</b></td>
-			<td>(<i>string|number</i>) sets the width of the label of a control</td>
+			<td>(<i>string, number</i>) sets the width of the label of a control</td>
 		</tr>
 		<tr>
 			<td><b>hiddenLabel</b></td>

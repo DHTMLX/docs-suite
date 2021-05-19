@@ -9,7 +9,7 @@ title: save()
 
 @params:
 
-- `url: string|DataDriver` - the URL of a server side or DataDriver with the URL configured
+`url: string|DataDriver` - the URL of a server side or DataDriver with the URL configured
 
 @example:
 diagram.data.save("http://userurl/");
