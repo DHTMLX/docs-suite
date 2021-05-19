@@ -1,6 +1,6 @@
 ---
-sidebar_label: getWidget
-title: getWidget
+sidebar_label: getWidget()
+title: getWidget()
 ---          
 
 @short: returns the dhtmlxCalendar widget attached to a DatePicker control
@@ -8,7 +8,7 @@ title: getWidget
 @signature: {'getWidget(): Calendar;'}
 
 @returns:
-param   object    the dhtmlxCalendar widget
+An object of the dhtmlxCalendar widget.
 
 @example:
 var datepicker = form.getItem("datepicker").getWidget();  

@@ -8,10 +8,10 @@ title: beforeChangeProperties
 @signature: {'beforeChangeProperties: (properties: ICheckboxProps) => boolean | void;'}
 
 @params:
-- properties     object      an object with configuration attributes of the control and their new values
+`properties: object` - an object with configuration attributes of the control and their new values
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("checkbox").events.on("BeforeChangeProperties", function(properties) {

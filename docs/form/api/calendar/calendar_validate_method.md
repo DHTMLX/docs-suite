@@ -1,6 +1,6 @@
 ---
-sidebar_label: validate
-title: validate
+sidebar_label: validate()
+title: validate()
 ---          
 
 @short: validates a DatePicker control
@@ -8,11 +8,11 @@ title: validate
 @signature: {'validate(silent: boolean, validateValue?: string | Date): boolean;'}
  
 @params:
-- silent    boolean     optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
-- validateValue     string|Date     optional, the value to be validated. If not specified, the method validates the current value of the control
+- `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
+- `validateValue: string|Date` - optional, the value to be validated. If not specified, the method validates the current value of the control
 
 @returns:
-param   boolean     the result of validation: true - if a control is valid, otherwise false
+The result of validation: `true` - if a control is valid; otherwise, `false`.
 
 @example:
 // the method validates the specified value

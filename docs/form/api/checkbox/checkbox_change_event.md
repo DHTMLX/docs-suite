@@ -8,7 +8,7 @@ title: change
 @signature: {'change: (value: string | boolean) => void;'}
 
 @params:
-- value     string | boolean     the current value of the control
+`value: string | boolean` - the current value of the control
 
 @example:
 form.getItem("checkbox").events.on("Change", function(value) {

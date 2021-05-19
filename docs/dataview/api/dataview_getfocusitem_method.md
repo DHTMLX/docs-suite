@@ -1,6 +1,6 @@
 ---
-sidebar_label: getFocusItem
-title: getFocusItem
+sidebar_label: getFocusItem()
+title: getFocusItem()
 ---          
 
 @short: returns the object of an item in focus
@@ -8,7 +8,7 @@ title: getFocusItem
 @signature: {'getFocusItem(): T;'}
 
 @returns:
-- focus		object		the object of an item in focus
+The object of an item in focus.
 
 @example:
 var focus = dataview.getFocusItem();

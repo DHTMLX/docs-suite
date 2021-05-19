@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (value: string | boolean) => boolean | void;'}
 
 @params:
-- value     string | boolean     the current value of the control
+`value: string | boolean` - the current value of the control
 
 @returns:
-param   boolean | void     false - to prevent a control from being shown, otherwise - true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("checkbox").events.on("BeforeShow", function(value) {

@@ -7,6 +7,10 @@ title: itemRightClick
 
 @signature: {'itemRightClick: (id: string, e: MouseEvent) => void;'}
 
+@params:
+- `id: string` - the id of a right-clicked item
+- `e: MouseEvent` - a native HTML event object
+
 @example:
 dataview.events.on("ItemRightClick", function(id, e){
     // your code here

@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (text: string) => boolean | void;'}
 
 @params:
-- text     string  the current text label of the control
+`text: string` - the current text label of the control
 
 @returns:
-- param   boolean     true - to prevent a control from being shown, otherwise - true
+Return `true` to prevent a control from being shown; otherwise - `true`.
 
 @example:
 form.getItem("button").events.on("BeforeShow", function(text) {

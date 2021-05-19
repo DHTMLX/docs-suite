@@ -1,6 +1,6 @@
 ---
-sidebar_label: focus
-title: focus
+sidebar_label: focus()
+title: focus()
 ---          
 
 @short: sets focus to a control

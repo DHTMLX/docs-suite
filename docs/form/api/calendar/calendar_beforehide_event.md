@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (value: string | Date, init: boolean) => boolean | void;'}
 
 @params:
-- value     Date|string     the current value of the control
-- init      boolean     true, if the event is triggered on the datepicker control initialization, otherwise false
+- `value: string | Date` - the current value of the control
+- `init: boolean` - true, if the event is triggered on the datepicker control initialization; otherwise, false
 
 @returns:
-param   boolean     false - to prevent a control from being hidden, otherwise - true
+Return `false` to prevent a control from being hidden; otherwise - `true`.
 
 @example:
 form.getItem("datepicker").events.on("BeforeHide", function(value, init) {

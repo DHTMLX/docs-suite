@@ -8,10 +8,10 @@ title: beforeValidate
 @signature: {'beforeValidate: (value: string | Date) => boolean | void;'}
 
 @params:
-- value       Date|string  the value to be validated
+`value: string | Date` - the value to be validated
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise - `true`.
 
 @example:
 form.getItem("datepicker").events.on("BeforeValidate", function(value) {

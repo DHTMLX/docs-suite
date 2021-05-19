@@ -1,6 +1,6 @@
 ---
-sidebar_label: validate
-title: validate
+sidebar_label: validate()
+title: validate()
 ---          
 
 @short: validates a Checkbox control
@@ -8,7 +8,7 @@ title: validate
 @signature: {'validate(): boolean;'}
 
 @returns:
-param   boolean     true, if a control is valid, otherwise - false
+`true`, if a control is valid. Otherwise, `false`.
 
 @example:
 form.getItem("checkbox").validate(); // -> true/false

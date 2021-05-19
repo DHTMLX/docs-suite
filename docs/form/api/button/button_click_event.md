@@ -8,7 +8,7 @@ title: click
 @signature: {'click: (events: Event) => void;'}
 
 @params:
-- events    Event   a native event object
+`events: Event` - a native event object
 
 @example:
 form.getItem("button").events.on("Click", function(events) {

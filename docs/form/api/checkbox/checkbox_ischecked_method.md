@@ -1,6 +1,6 @@
 ---
-sidebar_label: isChecked
-title: isChecked
+sidebar_label: isChecked()
+title: isChecked()
 ---          
 
 @short: checks whether a Checkbox control is checked
@@ -8,7 +8,7 @@ title: isChecked
 @signature: {'isChecked(): boolean;'}
 
 @returns:
-param   boolean     true, if a control is checked, otherwise - false
+`true`, if a control is checked. Otherwise, `false`.
 
 @example:
 form.getItem("checkbox").isChecked(); // -> true/false

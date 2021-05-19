@@ -8,7 +8,7 @@ title: afterShow
 @signature: {'afterShow: (value: string) => void;'}
 
 @params:
-- value     string     the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("colorpicker").events.on("AfterShow", function(value) {

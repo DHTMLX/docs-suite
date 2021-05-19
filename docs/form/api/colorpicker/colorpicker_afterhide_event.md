@@ -8,8 +8,8 @@ title: afterHide
 @signature: {'afterHide: (value: string, init: boolean) => void;'}
 
 @params:
-- value     string     the current value of the control
-- init      boolean     true if the event is triggered on the colorpicker control initialization
+- `value: string` - the current value of the control
+- `init: boolean` - true if the event is triggered on the colorpicker control initialization
 
 @example:
 form.getItem("colorpicker").events.on("AfterHide", function(value, init) {

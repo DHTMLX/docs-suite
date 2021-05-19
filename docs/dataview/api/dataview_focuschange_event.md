@@ -8,8 +8,8 @@ title: focusChange
 @signature: {'focusChange: (focusIndex: number, id: string | number) => void;'}
 
 @params:
-- index 	number 				the position of an item
-- id 		string|number 		the id of an item
+- `focusIndex: number` - the position of an item in focus
+- `id: string|number` - the id of the item
 
 @example:
 dataview.events.on("FocusChange", function(index, id){
