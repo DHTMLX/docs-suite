@@ -1,6 +1,6 @@
 ---
-sidebar_label: expandAll
-title: expandAll
+sidebar_label: expandAll()
+title: expandAll()
 ---          
 
 @short: expands all collapsed tree items

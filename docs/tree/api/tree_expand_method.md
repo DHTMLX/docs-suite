@@ -1,6 +1,6 @@
 ---
-sidebar_label: expand
-title: expand
+sidebar_label: expand()
+title: expand()
 ---          
 
 @short: expands a tree item by id
@@ -8,7 +8,7 @@ title: expand
 @signature: {'expand(id: Id): void;'}
 
 @params:
-- id	string		the id of an item to expand
+`id: string` - the id of an item to expand
 
 @example:
 tree.expand("history");

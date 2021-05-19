@@ -8,8 +8,8 @@ title: beforeCheck
 @signature: beforeCheck: (index: number, id: Id) => boolean | void;
 
 @params:
-- index		number		the position of an item
-- id		string		the id of the item
+- `index: number` - the position of an item
+- `id: string` - the id of the item
 
 @returns:
 - param     boolean     false - to block changing the state of a tree item, otherwise true

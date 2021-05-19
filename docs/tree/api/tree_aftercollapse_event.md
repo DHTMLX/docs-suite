@@ -8,7 +8,7 @@ title: afterCollapse
 @signature: {'afterCollapse: (id: string) => void;'}
 
 @params:
-- id       string      the id of a collapsed item
+`id: string` - the id of a collapsed item
 
 @example:
 tree.events.on("AfterCollapse", function(id) {

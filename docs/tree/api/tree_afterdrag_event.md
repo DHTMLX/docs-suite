@@ -7,6 +7,10 @@ title: afterDrag
 
 @signature: {'afterDrag: (data: IDragInfo, events: MouseEvent) => any;'}
 
+@params:
+data:
+events: MouseEvent
+
 @example:
 tree.events.on("AfterDrag", function(data, events) {
     // your logic here

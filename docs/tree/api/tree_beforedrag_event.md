@@ -7,8 +7,10 @@ title: beforeDrag
 
 @signature: {'beforeDrag: (data: IDragInfo, events: MouseEvent, ghost: HTMLElement) => void | boolean;'}
 
+@params:
+
 @returns:
-- result	void | boolean		false - to block dragging of an item, otherwise true
+Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
 tree.events.on("BeforeDrag", function(data, events) {

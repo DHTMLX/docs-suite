@@ -1,6 +1,6 @@
 ---
-sidebar_label: toggle
-title: toggle
+sidebar_label: toggle()
+title: toggle()
 ---          
 
 @short: opens/closes a tree item by id
@@ -8,7 +8,7 @@ title: toggle
 @signature: {'toggle(id: string): void;'}
 
 @params:
-- id	string		the id of a tree item to toggle
+`id: string` - the id of a tree item to toggle
 
 @example:
 tree.toggle("history");

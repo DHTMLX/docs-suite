@@ -8,10 +8,10 @@ title: beforeCollapse
 @signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
 @params: 
-- id    string      the id of a collapsed item
+`id: string` - the id of a collapsed item
 
 @returns:
-- param     boolean     false - to block collapsing  a tree item, otherwise true
+Return `false` to block collapsing  a tree item; otherwise, `true`.
 
 @example:
 tree.events.on("BeforeCollapse", function(id) {

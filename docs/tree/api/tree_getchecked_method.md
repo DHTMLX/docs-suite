@@ -1,6 +1,6 @@
 ---
-sidebar_label: getChecked
-title: getChecked
+sidebar_label: getChecked()
+title: getChecked()
 ---          
 
 @short: gets all checked tree items
@@ -8,7 +8,7 @@ title: getChecked
 @signature: {'getChecked(): Id[];'}
 
 @returns:
-- checked	array		an array of ids of checked items
+An array of ids of checked items.
 
 @example:
 tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]

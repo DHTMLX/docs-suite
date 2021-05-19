@@ -8,9 +8,9 @@ title: afterCheck
 @signature: afterCheck: (index: number, id: Id, value: boolean) => void;
 
 @params:
-- index		number		the position of an item
-- id		string		the id of the item
-- value     boolean     the state of the item (<i>true</i> if the item is checked, <i>false</i> otherwise)
+- `index: number` - the position of an item
+- `id: string` - the id of the item
+- `value: boolean` - the state of the item (`true` if the item is checked; otherwise, `false`)
 
 @example:
 tree.events.on("afterCheck", function (index, id, value) {

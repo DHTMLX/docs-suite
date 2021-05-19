@@ -1,6 +1,6 @@
 ---
-sidebar_label: editItem
-title: editItem
+sidebar_label: editItem()
+title: editItem()
 ---          
 
 @short: edits a Tree item
@@ -8,8 +8,8 @@ title: editItem
 @signature: {'editItem(id: Id, config: IEditorConfig): void;'}
 
 @params:
-- id		string		the id of an item
-- config	object		optional, the config object of an editor
+- `id: string` - the id of an item
+- `config: object` - optional, the config object of an editor
 
 @example:
 tree.editItem(id);

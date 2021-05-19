@@ -8,8 +8,8 @@ title: afterEditStart
 @signature: {'afterEditStart: (value: string, id: string) => void;'}
 
 @params: 
-- value     string  the value of an item
-- id        string  the id of an item
+- `value: string` - the value of an item
+- `id: string` - the id of an item
 
 @example:
 tree.events.on("AfterEditStart", function(value, id) {

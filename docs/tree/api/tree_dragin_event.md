@@ -7,6 +7,8 @@ title: dragIn
 
 @signature: {'dragIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
+@params:
+
 @example:
 tree.events.on("DragIn", function(data, events) {
     // your logic here
