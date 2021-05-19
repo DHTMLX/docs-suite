@@ -13,7 +13,7 @@ title: beforeUnSelect
 - `col: object` - the config of a column
 
 @returns:
-param   boolean     false - to prevent unselecting of a cell, otherwise - true
+Return `false` to prevent unselecting of a cell; otherwise, `true`.
 
 @example:
 treegrid.selection.events.on("BeforeUnSelect", function(row, col){

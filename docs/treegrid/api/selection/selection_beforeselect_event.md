@@ -13,7 +13,7 @@ title: beforeSelect
 - `col: object` - the config of a column
 
 @returns:
-param   boolean | void     false - to prevent selecting of a cell, otherwise - true
+Return `false` to prevent selecting of a cell; otherwise, `true`.
 
 @example:
 treegrid.selection.events.on("BeforeSelect", function(row, col){

@@ -7,6 +7,10 @@ title: headerCellDblClick
 
 @signature: {'headerCellDblClick: (col: ICol, e: MouseEvent) => void;'}
 
+@params:
+- `col: object ` - an object with a column configuration
+- `e: MouseEvent` - a native HTML event object
+
 @example:
 grid.events.on("HeaderCellDblClick", function(column,e){
     // your logic here
