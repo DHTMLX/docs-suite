@@ -8,8 +8,8 @@ title: beforeResizeStart
 @signature: {'beforeResizeStart: (col: ICol, events: MouseEvent) => boolean | void;'}
 
 @params:
-`column: object` - an object with a column configuration
-`events: Event` - a native event object
+- `column: object` - an object with a column configuration
+- `events: MouseEvent` - a native HTML event object
 
 @returns:
 Return `false` to block resizing of a column; otherwise, `true`.

@@ -8,8 +8,8 @@ title: footerCellMouseDown
 @signature: {'footerCellMouseDown: (col: ICol, e: MouseEvent & TouchEvent) => void;'}
 
 @params:
-`col: object` - an object with a column configuration
-`e: Event` - a native event object
+- `col: object` - an object with a column configuration
+- `e: MouseEvent | TouchEvent` - a native HTML event object
 
 @example:
 grid.events.on("FooterCellMouseDown", function(column,e){

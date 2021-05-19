@@ -8,7 +8,7 @@ title: editEnd()
 @signature: {'editEnd(withoutSave?: boolean): void;'}
 
 @params:
-`withoutSave: boolean` - defines whether the edited data will be saved after the editing of a cell is complete. If set to `true`, the edited data won't be saved. 
+`withoutSave: boolean` - defines whether the edited data will be saved after the editing of a cell is complete. If set to `true`, the edited data won't be saved.
 
 @example:
 treegrid.editEnd(); // the edited data will be saved

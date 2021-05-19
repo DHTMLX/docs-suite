@@ -8,9 +8,9 @@ title: afterRowResize
 @signature: afterRowResize: (row: IRow, events: Event, currentHeight: number) => void;
 
 @params:
-`row: object` - an object with a row configuration
-`e: Event` - a native event object
-`currentHeight: number` - the current height of the row
+- `row: object` - an object with a row configuration
+- `events: Event` - a native event object
+- `currentHeight: number` - the current height of the row
 
 @example:
 treegrid.events.on("afterRowResize", function(row, events, currentHeight) {

@@ -8,8 +8,8 @@ title: getCellRect()
 @signature: {'getCellRect(row: string | number, col: string | number): ICellRect;'}
 
 @params:
-`row: string | number` - the id of a row
-`col: string | number` - the id of a column
+- `row: string | number` - the id of a row
+- `col: string | number` - the id of a column
 
 @returns:
 An object with parameters of a cell.

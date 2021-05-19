@@ -8,7 +8,7 @@ title: setColumns
 @signature: {'setColumns(col: ICol[]): void;'}
 
 @params:
-- col	array	an array of objects with configuration of columns
+`col: array` - an array of objects with configuration of columns
 
 @example:
 grid.setColumns([

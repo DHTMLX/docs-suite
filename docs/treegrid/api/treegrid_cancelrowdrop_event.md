@@ -8,8 +8,8 @@ title: cancelRowDrop
 @signature: {'cancelRowDrop: (data: IDragInfo, events: MouseEvent) => any;'}
 
 @params:
-`data: object` - data object
-`events: Event` - a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 treegrid.events.on("CancelRowDrop", function(data, events) {

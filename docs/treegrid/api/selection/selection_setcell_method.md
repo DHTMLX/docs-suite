@@ -9,7 +9,7 @@ title: setCell()
 
 @params:
 - `row: object` - an object with a cell to be selected
-- `column: object` - the config of a column
+- `col: object` - the config of a column
 
 @example:
 var row = treegrid.data.getItem(treegrid.data.getId(0));

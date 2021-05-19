@@ -8,9 +8,9 @@ title: removeCellCss()
 @signature: {'removeCellCss(row: string, col: string, css: string): void;'}
 
 @params:
-`row: string` - the id of a row
-`col: string` - the id of a column
-`css: string` - the name of the CSS class
+- `row: string` - the id of a row
+- `col: string` - the id of a column
+- `css: string` - the name of the CSS class
 
 @example:
 grid.removeCellCss("1", "b", "myCustomClass");

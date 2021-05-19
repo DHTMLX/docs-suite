@@ -8,8 +8,8 @@ title: getSpan()
 @signature: {'getSpan(row: string | number, col: string | number): ISpan;'}
 
 @params:
-`row: string | number` - the id of a row
-`col: string | number` - the id of a column
+- `row: string | number` - the id of a row
+- `col: string | number` - the id of a column
 
 @returns:
 An object with configuration of a span.

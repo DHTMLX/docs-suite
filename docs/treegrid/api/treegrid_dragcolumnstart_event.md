@@ -8,8 +8,8 @@ title: dragColumnStart
 @signature: {'dragColumnStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-`data: object` - data object
-`events: Event` - a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 treegrid.events.on("DragColumnStart", function(data, events) {

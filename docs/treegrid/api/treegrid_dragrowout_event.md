@@ -8,8 +8,8 @@ title: dragRowOut
 @signature: {'dragRowOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-`data: object` - data object
-`e: Event` - a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 treegrid.events.on("DragRowOut", function(data, events) {

@@ -7,7 +7,7 @@ title: afterColumnHide
 
 @signature: {'afterColumnHide: (col: ICol) => void;'}
 
-@params: 
+@params:
 `col: object` - an object with a column configuration
 
 @example:
