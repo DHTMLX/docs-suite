@@ -8,7 +8,7 @@ title: afterApply
 @signature: {'afterApply: (time: string | ITimeObject) => boolean | void;'}
 
 @params:
-- value		string|object	the value of a timepicker	
+`value: string | object` - the value of a timepicker
 
 @example:
 timepicker.events.on("AfterApply", function(value) {

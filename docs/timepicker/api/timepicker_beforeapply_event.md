@@ -8,10 +8,10 @@ title: beforeApply
 @signature: {'beforeApply: (time: string | ITimeObject) => void;'}
 
 @params:
-- value		string|object	the value of a timepicker	
+`value: string | object` - the value of a timepicker
 
 @returns:
--result		boolean		false - to prevent saving the timepicker value, otherwise true
+Return `false` to prevent saving the timepicker value; otherwise, `true`.
 
 @example:
 timepicker.events.on("BeforeApply", function(value) {

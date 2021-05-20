@@ -8,7 +8,7 @@ title: beforeClose
 @signature: {'beforeClose: (time: string | ITimeObject) => boolean | void;'}
 
 @params:
-- value		string|object	the current value of a timepicker	
+`value: string|object` - the current value of a timepicker
 
 <!-- @returns:
 -result		boolean|void		false - to prevent closing the timepicker, otherwise true -->

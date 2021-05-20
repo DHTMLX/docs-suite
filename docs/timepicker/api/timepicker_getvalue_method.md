@@ -8,10 +8,10 @@ title: getValue
 @signature: {'getValue(asOBject?: boolean): ITimeObject | string;'}
 
 @params:
-* asObject 		boolean		 optional, specifies that the value will be returned as an object, false by default
+`asObject: boolean` - optional, specifies that the value will be returned as an object, false by default
 
 @returns:
-- value	 		object | string		 the value of a timepicker
+The value of a timepicker.
 
 @example:
 // return value as a string in the 24-hour format
