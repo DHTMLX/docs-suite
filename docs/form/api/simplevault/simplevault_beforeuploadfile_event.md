@@ -8,11 +8,11 @@ title: beforeUploadFile
 @signature: {'beforeUploadFile: (file: ISimpleVaultValue, value: ISimpleVaultValue[]) => boolean | void;'}
 
 @params:
-- file      object      the file object
-- value     array     the current value of the control
+- `file: object` - the file object
+- `value: array` - the current value of the control
 
 @example:
-form.getItem("simpleVault").events.on("BeforeUploadFile", function(file, value) {
+form.getItem("simplevault").events.on("BeforeUploadFile", function(file, value) {
     console.log("BeforeUploadFile", file, value);
     return true;
 });

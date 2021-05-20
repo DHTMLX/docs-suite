@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (value: undefined, init: boolean) => boolean | void;'}
 
 @params:
-- value     undefined     the current value of the control, null
-- init      boolean     true, if the event is triggered on the control initialization, otherwise false
+- `value: undefined` - the current value of the control, null
+- `init: boolean` - true, if the event is triggered on the control initialization; otherwise, false
 
 @returns:
-param   boolean     false - to prevent a control from being hidden, otherwise - true
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.getItem("spacer").events.on("BeforeHide", function(value, init) {

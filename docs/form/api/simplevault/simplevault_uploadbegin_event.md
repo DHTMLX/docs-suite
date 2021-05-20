@@ -8,8 +8,8 @@ title: uploadBegin
 @signature: {'uploadBegin: (files: ISimpleVaultValue[], value: ISimpleVaultValue[]) => void;'} 
 
 @params:
-- files      array      the array of files to be uploaded
-- value     array     the current value of the control
+- `files: array` - the array of files to be uploaded
+- `value: array` - the current value of the control
 
 @example:
 form.getItem("simpleVault").events.on("UploadBegin", function(files, value) {

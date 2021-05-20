@@ -14,7 +14,7 @@ var combobox = new dhx.Combobox("combo_container",{
 
 @descr:
 
-The property is useful while using Combobox in form.
+The property is useful while using Combobox in Form.
 
 @changelog: added in v6.4
 

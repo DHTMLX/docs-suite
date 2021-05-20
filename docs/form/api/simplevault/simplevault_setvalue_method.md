@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets the value for a SimpleVault control
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value): void;'}
 
 @params:
-- value     array     the value to be set  
+`value: array` - the value to be set  
 
 @example:
 form.getItem("simpleVault").setValue([

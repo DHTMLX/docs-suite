@@ -8,7 +8,7 @@ title: modeChange
 @signature: {'modeChange: (view: ViewsMode) => void;'}
 
 @params:
-- `view: string` - the colorpicker mode ("palette", "picker")
+`view: string` - the colorpicker mode ("palette", "picker")
 
 @example:
 colorpicker.events.on("ModeChange", function(mode) {

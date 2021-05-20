@@ -27,15 +27,15 @@ title: Colorpicker properties
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
+			<td>(<i>string, number, "content"</i>) the width of a control</td>
 		</tr>
 		<tr>
 			<td><b>height</b></td>
-			<td>(<i>string|number|"content"</i>) the height of a control</td>
+			<td>(<i>string, number, "content"</i>) the height of a control</td>
 		</tr>
          <tr>
 			<td><b>padding</b></td>
-			<td>(<i>string|number</i>) sets padding between a cell and a border of the ColorPicker control</td>
+			<td>(<i>string, number</i>) sets padding between a cell and a border of the ColorPicker control</td>
 		</tr>	
 		<tr>
 			<td><b>css</b></td>
@@ -71,7 +71,7 @@ title: Colorpicker properties
 		</tr>
 		<tr>
 			<td><b>labelWidth</b></td>
-			<td>(<i>string|number</i>) sets the width of the label of a control</td>
+			<td>(<i>string, number</i>) sets the width of the label of a control</td>
 		</tr>
 		<tr>
 			<td><b>hiddenLabel</b></td>

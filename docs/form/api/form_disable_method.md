@@ -7,8 +7,6 @@ title: disable
 
 @signature: {'disable(): void;'}
 
-@params:
-
 @example:
 form.disable();
 

@@ -1,6 +1,6 @@
 ---
-sidebar_label: clearValidate
-title: clearValidate
+sidebar_label: clearValidate()
+title: clearValidate()
 ---          
 
 @short: clears validation of a Textarea control

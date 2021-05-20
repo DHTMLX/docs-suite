@@ -8,8 +8,8 @@ title: afterValidate
 @signature: {'afterValidate: (value: string, isValidate: boolean) => void;'}
 
 @params:
-- value       string    the validated value
-- isValid     boolean     the result of validation
+- `value: string` - the validated value
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("radiogroup").events.on("AfterValidate", function(value, isValid) {

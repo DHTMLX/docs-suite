@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (value: undefined) => boolean | void;'}
 
 @params:
-- value     undefined     the current value of the control, null
+`value: undefined` - the current value of the control, null
 
 @returns:
-param   boolean     false - to prevent a control from being shown, otherwise - true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("spacer").events.on("BeforeShow", function(value) {

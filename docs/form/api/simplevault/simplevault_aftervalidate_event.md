@@ -8,8 +8,8 @@ title: afterValidate
 @signature: {'afterValidate: (value: ISimpleVaultValue[], isValid: boolean) => void;'}
  
 @params:
-- value       array  the validated value
-- isValid     boolean     the result of validation
+- `value: array` - the validated value
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("simplevault").events.on("AfterValidate", function(value, isValid) {

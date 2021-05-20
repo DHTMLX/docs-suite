@@ -24,9 +24,9 @@ title: CheckboxGroup properties
             <td>(<i>object</i>) an object with options of a CheckboxGroup. The object can contain the following
                 attributes:
                 <ul>
-                    <li><b>width</b> - (<i>string|number|"content"</i>) the width of a CheckboxGroup</li>
-                    <li><b>height</b> - (<i>string|number|"content"</i>) the height of a CheckboxGroup</li>
-                    <li><b>padding</b> - (<i>string|number</i>) sets padding between a cell and a border of a
+                    <li><b>width</b> - (<i>string, number, "content"</i>) the width of a CheckboxGroup</li>
+                    <li><b>height</b> - (<i>string, number, "content"</i>) the height of a CheckboxGroup</li>
+                    <li><b>padding</b> - (<i>string, number</i>) sets padding between a cell and a border of a
                         CheckboxGroup</li>
                     <li><b>css</b> - (<i>string</i>) adds style classes to a CheckboxGroup</li>
                     <li><b>rows</b> - (<i>array</i>) arranges checkboxes inside the CheckboxGroup control vertically
@@ -42,11 +42,11 @@ title: CheckboxGroup properties
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(<i>string|number|"content"</i>) the width of a control</td>
+            <td>(<i>string, number, "content"</i>) the width of a control</td>
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(<i>string|number|"content"</i>) the height of a control</td>
+            <td>(<i>string, number, "content"</i>) the height of a control</td>
         </tr>
         <tr>
             <td><b>css</b></td>
@@ -66,7 +66,7 @@ title: CheckboxGroup properties
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(<i>string|number</i>) sets padding between a cell and a border of a CheckboxGroup control</td>
+            <td>(<i>string, number</i>) sets padding between a cell and a border of a CheckboxGroup control</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -82,7 +82,7 @@ title: CheckboxGroup properties
         </tr>
         <tr>
             <td><b>labelWidth</b></td>
-            <td>(<i>string|number</i>) sets the width of the label of a control</td>
+            <td>(<i>string, number</i>) sets the width of the label of a control</td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>

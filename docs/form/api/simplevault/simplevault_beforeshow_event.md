@@ -8,10 +8,10 @@ title: beforeShow
 @signature: {'beforeShow: (value: ISimpleVaultValue[]) => boolean | void;'}
  
 @params:
-- value     array     the current value of the control
+`value: array` - the current value of the control
 
 @returns:
-param   boolean | void     false - to prevent a control from being shown, otherwise - true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("simplevault").events.on("BeforeShow", function(value) {

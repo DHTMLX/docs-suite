@@ -9,7 +9,7 @@ title: clear
 
 @params:
 
-- mode		string		optional, the mode of clearing a form
+- `mode: string` - optional, the mode of clearing a form
 
 @example:
 // clears only form validation

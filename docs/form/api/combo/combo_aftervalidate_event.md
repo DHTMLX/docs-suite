@@ -8,8 +8,8 @@ title: afterValidate
 @signature: {'afterValidate: (value: string | string[], isValid: boolean) => void;'}
 
 @params:
-- value       string | string[]  the validated value
-- isValid     boolean     the result of validation
+- `value: string | string[]` - the validated value
+- `isValid: boolean` - the result of validation
 
 @example:
 form.getItem("combo").events.on("AfterValidate", function(value, isValid) {

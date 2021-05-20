@@ -8,11 +8,11 @@ title: beforeShow
 @signature: {'beforeShow: (name: string, value?: any) => boolean | void;'}
 
 @params:
-- name		string		the name (or id, if the name is not specified) of the Form control
-- value     any         the current value of the control
+- `name: string` - the name (or id, if the name is not specified) of the Form control
+- `value: any` - the current value of the control
 
 @returns:
-- param     boolean     false - to prevent a control from being shown, otherwise true
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.events.on("beforeShow", function(name, value) {

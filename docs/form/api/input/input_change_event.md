@@ -8,7 +8,7 @@ title: change
 @signature: {'change: (value: string | number) => void;'}
 
 @params:
-- value     string | number     the current value of the control
+`value: string | number` - the current value of the control
 
 @example:
 form.getItem("input").events.on("Change", function(value) {

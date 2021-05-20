@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (name: string | number, value?: any) => boolean | void;'}
 
 @params:
-- name|id		string | number		the name (or id, if the name is not specified) of the Form control
-- value     any         the current value of the control
+- `name: string | number` - the name (or id, if the name is not specified) of the Form control
+- `value: any` - the current value of the control
 
 @returns:
-- param     boolean     false - to prevent a control from being hidden, otherwise true
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.events.on("BeforeHide", function(name, value) {

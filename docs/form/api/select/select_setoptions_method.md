@@ -1,6 +1,6 @@
 ---
-sidebar_label: setOptions
-title: setOptions
+sidebar_label: setOptions()
+title: setOptions()
 ---          
 
 @short: allows changing a list of Select options dynamically
@@ -8,7 +8,7 @@ title: setOptions
 @signature: {'setOptions(options: IOption[]): void;'}
 
 @params:
-- options   array   an array with new options
+`options: array` - an array with new options
 
 @example:
 form.getItem("select").setOptions([

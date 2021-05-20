@@ -8,8 +8,8 @@ title: afterHide
 @signature: {'afterHide: (value: undefined, init: boolean) => void;'}
 
 @params:
-- value     undefined   the current value of the control, null
-- init      boolean     true, if the event is triggered on the control initialization
+- `value: undefined` - the current value of the control, null
+- `init: boolean` - true, if the event is triggered on the control initialization
 
 @example:
 form.getItem("spacer").events.on("AfterHide", function(value, init) {

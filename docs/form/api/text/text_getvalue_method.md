@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value of a Text control
@@ -8,7 +8,7 @@ title: getValue
 @signature: {'getValue(): string | number;'}
 
 @returns:
-param   string | number     the current value of the control
+A string, or number with the current value of the control.
 
 @example:
 var value = form.getItem("text").getValue();

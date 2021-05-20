@@ -1,6 +1,6 @@
 ---
-sidebar_label: getWidget
-title: getWidget
+sidebar_label: getWidget()
+title: getWidget()
 ---          
 
 @short: returns the dhtmlxTimePicker widget attached to a TimePicker control
@@ -8,7 +8,7 @@ title: getWidget
 @signature: {'getWidget(): Timepicker;'}
 
 @returns:
-param   object    the dhtmlxTimePicker widget
+An object of the dhtmlxTimePicker widget.
 
 @example:
 var timepicker = form.getItem("timepicker").getWidget();  

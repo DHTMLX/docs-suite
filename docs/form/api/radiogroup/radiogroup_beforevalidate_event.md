@@ -8,10 +8,10 @@ title: beforeValidate
 @signature: {'beforeValidate: (value: string) => boolean | void;'}
 
 @params:
-- value       string  the value to be validated
+`value: string` - the value to be validated
 
 @returns:
-param   boolean | void     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("radiogroup").events.on("BeforeValidate", function(value) {

@@ -8,10 +8,10 @@ title: beforeValidate
 @signature: {'beforeValidate: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-- value       string | object  the value to be validated
+`value: string | object` - the value to be validated
 
 @returns:
-param   boolean | void     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("timepicker").events.on("BeforeValidate", function(value) {

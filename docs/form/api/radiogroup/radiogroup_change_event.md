@@ -5,10 +5,10 @@ title: change
 
 @short: fires on changing the value of a control
 
-@signature: {'(value: string) => void;'} 
+@signature: {'change: (value: string) => void;'} 
 
 @params:
-- value     string     the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("radiogroup").events.on("Change", function(value) {

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getProperties
-title: getProperties
+sidebar_label: getProperties()
+title: getProperties()
 description: description
 ---          
 
@@ -9,7 +9,7 @@ description: description
 @signature: {'getProperties(): ISimpleVaultProps;'}
 
 @returns:
-param   object      an object with the available attributes of the control and their values
+An object with the available attributes of the control and their values.
 
 @example:
 var form = new dhx.Form("form_container", {

@@ -8,7 +8,7 @@ title: remove()
 @signature: {'remove(id: Id | Id[]): void;'}
 
 @params:
-- `id: string,string[]` - the ids of the items that should be deleted 
+`id: string,string[]` - the ids of the items that should be deleted 
 
 @example:
 component.data.remove("2");

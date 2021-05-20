@@ -1,6 +1,6 @@
 ---
-sidebar_label: getProperties
-title: getProperties
+sidebar_label: getProperties()
+title: getProperties()
 ---          
 
 @short: returns an object with the available configuration attributes of the control
@@ -8,7 +8,7 @@ title: getProperties
 @signature: {'getProperties(): ITextareaProps;'}
 
 @returns:
-param   object      an object with the available attributes of the control and their values
+An object with the available attributes of the control and their values.
 
 @example:
 var form = new dhx.Form("form_container", {

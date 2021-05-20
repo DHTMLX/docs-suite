@@ -1,6 +1,6 @@
 ---
-sidebar_label: getWidget
-title: getWidget
+sidebar_label: getWidget()
+title: getWidget()
 ---          
 
 @short: returns the dhtmlxSlider widget attached to a Slider control
@@ -8,7 +8,7 @@ title: getWidget
 @signature: {'getWidget(): Slider;'}
 
 @returns:
-param   object    the dhtmlxSlider widget
+An object of the dhtmlxSlider widget.
 
 @example:
 var slider = form.getItem("slider").getWidget();  

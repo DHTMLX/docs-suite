@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets the value for a Select control
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value: string | number): void;'}
 
 @params:
-- value     string | number     the value to be set  
+`value: string | number` - the value to be set  
 
 @example:
 form.getItem("select").setValue("2");

@@ -8,10 +8,10 @@ title: getItem
 @signature: {'getItem(name: string): any;'}
 
 @params:
-- name|id	string		the name of a Form control or its id (if the name attribute is not defined in the config of the control)
+- `name: string` - the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
-- state 		object		the object of the control
+The object of the control.
 
 @example:
 form.getItem("colorpicker").setValue("#02F7C6");

@@ -1,6 +1,6 @@
 ---
-sidebar_label: setProperties
-title: setProperties
+sidebar_label: setProperties()
+title: setProperties()
 ---          
 
 @short: allows changing available configuration attributes of the control dynamically
@@ -8,8 +8,8 @@ title: setProperties
 @signature: {'setProperties(arg?: string | ICheckboxGroupProps, props?: ICheckboxGroupItemProps): void;'}
 
 @params:
-- arg	string | object      either the id of a radio button, or an object with the available attributes of the RadioGroup control and their new values
-- properties	    object      optional, an object with the available attributes of the radio button and their new values
+- `arg: string | object` - either the id of a radio button, or an object with the available attributes of the RadioGroup control and their new values
+- `props: object` - optional, an object with the available attributes of the radio button and their new values
 
 @example:
 // 1. Changes values in the configuration of the RadioGroup control

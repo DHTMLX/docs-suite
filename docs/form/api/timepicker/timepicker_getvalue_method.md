@@ -1,17 +1,17 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value of a TimePicker control
 
-@signature: {'getValue<T extends boolean = false>(asOBject?: T): T extends true ? ITimeObject : string;'}
+@signature: {'getValue<T extends boolean = false>(asObject?: T): T extends true ? ITimeObject : string;'}
 
 @params:
-* asObject 		boolean		 optional, specifies that the value will be returned as an object, false by default
+`asObject: boolean` - optional, specifies that the value will be returned as an object, `false` by default
 
 @returns:
-param   string|object     the current value of the control
+Either a string, or object with the current value of the control.
 
 @example:
 // return value as a string in the 24-hour format

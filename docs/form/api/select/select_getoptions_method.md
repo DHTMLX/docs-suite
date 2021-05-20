@@ -1,6 +1,6 @@
 ---
-sidebar_label: getOptions
-title: getOptions
+sidebar_label: getOptions()
+title: getOptions()
 ---          
 
 @short: returns an array of Select options
@@ -8,7 +8,7 @@ title: getOptions
 @signature: {'getOptions(): IOption[];'}
 
 @returns:
-- param   array   an array with options
+An array with options.
 
 @example:
 form.getItem("select").getOptions(); --> [{…}, {…}]

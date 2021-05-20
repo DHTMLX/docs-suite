@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value of a Combo control
@@ -8,7 +8,7 @@ title: getValue
 @signature: {'getValue(): string | string[];'}
 
 @returns:
-param   string | string[]     the current value of the control
+A string, or array with the current value of the control.
 
 @example:
 var value = form.getItem("combo").getValue();

@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets the value for a Slider control
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value: number | number[]): void;'}
 
 @params:
-- value     number|number[]     the value to be set  
+`value: number | number[]` - the value to be set  
 
 @example:
 form.getItem("slider").setValue([2]);

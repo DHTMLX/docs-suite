@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value of a SimpleVault control
@@ -8,7 +8,7 @@ title: getValue
 @signature: {'getValue(): ISimpleVaultValue[];'}
 
 @returns:
-param   array     the current value of the control
+An array with the current value of the control.
 
 @example:
 var value = form.getItem("simplevault").getValue();

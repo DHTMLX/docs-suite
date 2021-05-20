@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value of a Slider control
@@ -8,7 +8,7 @@ title: getValue
 @signature: {'getValue(): number[];'}
 
 @returns:
-param   number[]    the current value of the control
+An array of numbers that represent the current value of the control.
 
 @example:
 var value = form.getItem("slider").getValue();
