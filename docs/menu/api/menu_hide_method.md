@@ -8,7 +8,7 @@ title: hide
 @signature: {'hide(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array	optional, one ID or an array of IDs of items
+`ids: string | array` - optional, one ID or an array of IDs of items
 
 @example:
 menu.hide("save_btn");

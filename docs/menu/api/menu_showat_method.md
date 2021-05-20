@@ -1,6 +1,6 @@
 ---
-sidebar_label: showAt
-title: showAt
+sidebar_label: showAt()
+title: showAt()
 ---          
 
 @short: shows a context menu

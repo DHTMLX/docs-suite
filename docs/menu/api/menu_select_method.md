@@ -1,6 +1,6 @@
 ---
-sidebar_label: select
-title: select
+sidebar_label: select()
+title: select()
 ---          
 
 @short: selects a specified item of Menu
@@ -8,8 +8,8 @@ title: select
 @signature: {'select(id: string, unselect: boolean): void;'}
 
 @params:
-- id	string      the id of a Menu item
-- unselect	boolean   optional, true - to unselect previously selected items, otherwise - false; true by default
+- `id: string` - the id of a Menu item
+- `unselect: boolean` - optional, true - to unselect previously selected items; otherwise, false; true by default `check form`
 
 @example:
 menu.select("align-left");

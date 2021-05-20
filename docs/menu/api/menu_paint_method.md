@@ -1,6 +1,6 @@
 ---
-sidebar_label: paint
-title: paint
+sidebar_label: paint()
+title: paint()
 ---          
 
 @short: repaints Menu on a page
