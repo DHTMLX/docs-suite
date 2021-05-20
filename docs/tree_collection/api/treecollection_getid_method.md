@@ -12,7 +12,7 @@ title: getId()
 - `parentId: string` - the id of the parent of an item
 
 @returns:
-- `Id: string` - the id of the item
+The id of the item.
 
 @example:
 const id = tree.data.getId(2, "1"); -> returns "3"
