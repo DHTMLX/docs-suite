@@ -1,6 +1,6 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
+sidebar_label: isDisabled()
+title: isDisabled()
 ---          
 
 @short: checks whether an item of Toolbar is disabled
@@ -8,10 +8,10 @@ title: isDisabled
 @signature: {'isDisabled(id: string): boolean;'}
 
 @params:
-- id		string		an id of the Toolbar item
+`id: string` - an id of the Toolbar item
 
-@returns: 
-param	boolean		true, if an item of Toolbar is disabled, otherwise false
+@returns:
+`True`, if an item of Toolbar is disabled; otherwise, `false`.
 
 @example:
 toolbar.isDisabled("id"); // -> returns true/false
