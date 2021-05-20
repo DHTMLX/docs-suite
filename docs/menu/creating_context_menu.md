@@ -9,8 +9,7 @@ dhtmlxContextMenu is a component that provides an easy way to add a contextual m
 
 **Related sample**: [Menu. Basic Context Menu Initialization](https://snippet.dhtmlx.com/mgya9p1l)
 
-Initialization 
---------------
+## Initialization
 
 You can initialize dhtmlxContextMenu with the constructor:
 
@@ -23,9 +22,7 @@ It takes two parameters:
 - *container* - optional, set it to *null*, since ContentMenu is created inside a popup
 - *config* - optional, a configuration object. You can set the CSS classes to style a context menu here 
 
-
-Loading menu options
----------------
+## Loading menu options
 
 Like with dhtmlxMenu, options can be either parsed from a JSON array:
 
@@ -60,8 +57,7 @@ or loaded from a JSON file:
 cmenu.data.load("[path_to_file]/file.json");
 ~~~
 
-Showing dhtmlxContextMenu
--------------------
+## Showing dhtmlxContextMenu
 
 dhtmlxContextMenu is attached to a context zone, and can be shown with the **showAt()** method. It takes two parameters:
 
@@ -77,7 +73,6 @@ dhtmlxContextMenu is attached to a context zone, and can be shown with the **sho
 		</tr>
     </tbody>
 </table>
-
 
 ### Attaching to HTML object
 
@@ -98,7 +93,7 @@ document.querySelector('#menu').oncontextmenu = function(e) {
 
 - **e** is the mouse event.
 
-### Attaching to a mouse event 
+### Attaching to a mouse event
 
 This is how you can attach dhtmlxContextMenu to a mouse event:
 

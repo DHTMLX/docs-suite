@@ -3,8 +3,7 @@ sidebar_label: Customization
 title: Customization
 ---          
 
-Icons
-------------
+## Icons
 
 dhtmlxMenu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Menu controls.
@@ -46,8 +45,7 @@ Then you can use the name of the icon as the value of the **icon** property in t
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
 
-Styling 
------------
+## Styling
 
 There is a possibility to make changes in the look and feel of a menu. 
 

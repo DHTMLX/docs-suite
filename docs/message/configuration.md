@@ -102,7 +102,7 @@ dhx.tooltip("Tooltip From Right", {
 });
 ~~~
 
-**Related Samples:** 
+**Related Samples:**
 
 - [Message. Tooltip Position](https://snippet.dhtmlx.com/4wrrsr67)
 - [Message. Tooltip Delay Configuration](https://snippet.dhtmlx.com/zts0avym)
@@ -116,7 +116,6 @@ See the list of configuration properties the constructor of the tooltip may take
 In the image below the target is adjacent to the right side of screen. Its tooltip that has the *position:"right"* attribute in the config object appears from the left side of the target.
 
 ![Smart positioning](../assets/message/smart_tooltip.png)
-
 
 ### Tooltip API
 
@@ -133,4 +132,3 @@ dhx.disableTooltip();
 ~~~js
 dhx.enableTooltip();
 ~~~
-

@@ -14,7 +14,7 @@ dhtmlxMenu is a component that provides an easy way to add a drop down menu to u
 
 ## Related resources
 
-- You can get dhtmlxMenu as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- You can get dhtmlxMenu as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxMenu](https://docs.dhtmlx.com/suite/samples/menu/)  
 
 ## Guides
@@ -22,10 +22,9 @@ dhtmlxMenu is a component that provides an easy way to add a drop down menu to u
 You can read the following articles to find out how to add Menu on the page and work with it.
 
 - [](menu/how_to_start.md)
-- [](menu/configuring_menu_items.md)                
-- [](menu/from_script.md)                        
-- [](menu/work_with_menu.md)	
+- [](menu/configuring_menu_items.md)
+- [](menu/from_script.md)
+- [](menu/work_with_menu.md)
 - [](menu/creating_context_menu.md)
-- [](menu/fa_icons.md)                 
-- [](menu/handling_events.md)   
-
+- [](menu/fa_icons.md)
+- [](menu/handling_events.md)

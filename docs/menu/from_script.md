@@ -10,8 +10,7 @@ There are several simple ways of loading options into dhtmlxMenu:
 
 First, you need to prepare a data set that will be loaded into Menu.
 
-Preparing data set
-----------------------
+## Preparing data set
 
 dhtmlxMenu expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -52,9 +51,7 @@ var data = [
 
 A data set consists of objects with configurations of menu controls. Templates for Menu controls in JSON format are given [below](#json-format-templates).
 
-
-Loading from a local source
--------------------
+## Loading from a local source
 
 You can load data to a menu from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -64,8 +61,7 @@ menu.data.parse(data);
 
 **Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-Loading from an external file
-------------------
+## Loading from an external file
 
 The **load** method of Tree Collection loads menu data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 
@@ -74,7 +70,7 @@ menu.data.load("[path to this file]/file.json");
 ~~~	
 
 **Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
-	
+
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
@@ -85,9 +81,7 @@ menu.data.load("/some/data").then(function(){
 });
 ~~~
 
-
-JSON format templates
------------------
+## JSON format templates
 
 This section will give you the idea of JSON format templates for separate Menu controls.
 
@@ -146,7 +140,7 @@ This section will give you the idea of JSON format templates for separate Menu c
 
 {{note You will find the full list of properties of the **customHTML** object [here](menu/api/api_customhtml_properties.md).}}
 
-###  Separator template
+### Separator template
 
 You can add separators that will draw horizontal lines between menu options or vertical lines between menu items. 
 
@@ -172,11 +166,9 @@ You can add separators that will draw horizontal lines between menu options or v
 
 {{note You will find the full list of properties of the **spacer** object [here](menu/api/api_spacer_properties.md).}}
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
-To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. 
-Each JSON object contains the configuration of a separate Menu item.
+To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. Each JSON object contains the configuration of a separate Menu item.
 
 ~~~js
 var state = menu1.data.serialize();
@@ -190,4 +182,3 @@ var menu2 = new dhx.Menu(document.body);
 // parsing the state of menu1 into menu2
 menu2.data.parse(state);
 ~~~
-

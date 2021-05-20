@@ -5,8 +5,7 @@ title: Customization
 
 There is a possibility to make changes in the look and feel of a message box or a tooltip. You can either create a new CSS class or use a CSS class that DHTMLX library provides.
 
-Using new CSS classes
-----------------------------------------
+## Using new CSS classes
 
 ![](../assets/message/custom_style.png)
 
@@ -55,15 +54,11 @@ dhx.message({
 
 **Related sample**: [Message. Message Custom Styles](https://snippet.dhtmlx.com/7s6p67ht)
 
-
 **Related sample**: [Message. Alert Custom Styles](https://snippet.dhtmlx.com/g9tba9xi)
 
 **Related sample**: [Message. Confirm Custom Styles](https://snippet.dhtmlx.com/x0barf98)
 
-
-
-Using default CSS classes
-------------------------------------------------------
+## Using default CSS classes
 
 The DHTMLX library provides a set of CSS classes that you can apply to change appearance of a message box or a tooltip.
 
@@ -98,4 +93,3 @@ dhx.message({
 - <b>dhx_widget--no-border_right</b> - Removes the right border of a widget
 
 - <b>dhx_widget--no-border_left</b> - Removes the left border of a widget
-

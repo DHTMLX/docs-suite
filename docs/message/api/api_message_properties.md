@@ -94,7 +94,7 @@ dhx.alert({
 });
 ~~~
 
-##  Confirm Box
+## Confirm Box
 
 The constructor of a confirm box may take the following parameters:
 

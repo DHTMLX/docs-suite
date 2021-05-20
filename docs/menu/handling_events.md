@@ -53,6 +53,6 @@ A custom event can be called with the **fire()** method of the **events** module
 menu.events.fire(evName,[args]);
 ~~~
 
-## List of supported events 
+## List of supported events
 
 You can find the full list of Menu events in the [API section](menu/api/api_overview.md#menu-events).

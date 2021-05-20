@@ -3,10 +3,7 @@ sidebar_label: Work with Menu
 title: Work with Menu
 ---          
 
-
-
-Hiding/showing menu options
-------------------
+## Hiding/showing menu options
 
 You can hide and show menu items (one or several at once) with the help of the [hide()](menu/api/menu_hide_method.md) / [show()](menu/api/menu_show_method.md) methods:
 
@@ -28,8 +25,7 @@ menu.hide();
 menu.show();
 ~~~
 
-Disabling/enabling menu options
-----------------------
+## Disabling/enabling menu options
 
 You can disable one menu option or several options at a time with the [disable()](menu/api/menu_disable_method.md) method:
 
@@ -58,8 +54,7 @@ menu.disable();
 menu.enable();
 ~~~
 
-Checking if a menu option is disabled
--------------------------------------
+## Checking if a menu option is disabled
 
 To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_isdisabled_method.md) method. The method takes one parameter:
 
@@ -78,8 +73,7 @@ menu.isDisabled("1"); // -> true/false
 
 **Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
 
-Selecting/Unselecting an item
------------------------------------------
+## Selecting/Unselecting an item
 
 ### Selecting a menu item
 
@@ -123,8 +117,7 @@ menu.unselect();
 
 **Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
-Checking if a menu item is selected
--------------------------------------
+## Checking if a menu item is selected
 
 To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_isselected_method.md) method. The method takes one parameter:
 
@@ -144,8 +137,7 @@ menu.isSelected("align-left"); // -> returns true/false
 
 **Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
-Getting selected items
----------------------------
+## Getting selected items
 
 To get the selected items, call the [getSelected()](menu/api/menu_getselected_method.md) method. The method returns an array of string values with IDs of selected items:
 
@@ -153,11 +145,9 @@ To get the selected items, call the [getSelected()](menu/api/menu_getselected_me
 menu.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-Using Tree collection API
----------------
+## Using Tree collection API
 
 You can manipulate the controls of Menu with the help of the [Tree collection API](tree_collection/index.md). 
-
 
 ### Adding menu items
 
@@ -230,7 +220,6 @@ menu.data.getItem("id").hotkey = "Ctrl+N";
 menu.paint();
 ~~~
 
-
 ## Removing menu items  
 
 You can remove any item from a menu with the **remove()** method. The item will be removed with all its sub-items.
@@ -249,4 +238,3 @@ menu.data.parse(new_options);
 ~~~
 
 {{note Check the full list of [Tree collection API](tree_collection/index.md).}}
-
