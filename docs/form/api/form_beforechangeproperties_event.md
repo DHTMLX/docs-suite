@@ -8,11 +8,11 @@ title: beforeChangeProperties
 @signature: {'beforeChangeProperties: (name: string, props: any) => boolean | void;'}
 
 @params:
-- `name: string` - the name (or id, if the name is not specified) of the Form control
+- `name|id: string` - the name (or id, if the name is not specified) of the Form control
 - `props: object` - an object with configuration attributes of the control and their new values
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.events.on("BeforeChangeProperties", function(name, properties) {

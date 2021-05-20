@@ -7,8 +7,6 @@ title: height
 
 @signature: {'height?: string | number | "content";'}
 
-@type: string|number|"content"
-
 @example:
 var form = new dhx.Form("form", {
     css: "dhx_widget--bordered",

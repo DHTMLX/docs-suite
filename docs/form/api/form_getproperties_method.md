@@ -1,6 +1,6 @@
 ---
-sidebar_label: getProperties
-title: getProperties
+sidebar_label: getProperties()
+title: getProperties()
 description: description
 ---
 
@@ -9,12 +9,10 @@ description: description
 @signature: {'getProperties(name?: string): { [name: string]: IFormProps } | IFormProps;'}
 
 @params:
-
-- name|id string optional, the name of the control or its id (if the name attribute is not defined in the config of the control)
+`name|id: string` -  optional, the name of the control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
-
-- param object an object either with the available attributes of the control and their values or with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their values
+An object either with the available attributes of the control and their values or with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their values.
 
 @example:
 var form = new dhx.Form("form-sample", {

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: gets current values/states of controls
@@ -8,10 +8,10 @@ title: getValue
 @signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 @params:
-- asFormData	boolean		optional, defines whether values of Form controls should be returned as Form Data
+`asFormData: boolean` - optional, defines whether values of Form controls should be returned as Form Data
 
 @returns:
-- state 		object		an object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states
+An object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.
 
 @example:
 var state = form.getValue();

@@ -1,6 +1,6 @@
 ---
-sidebar_label: isVisible
-title: isVisible
+sidebar_label: isVisible()
+title: isVisible()
 ---          
 
 @short: checks whether a form is visible
@@ -8,10 +8,10 @@ title: isVisible
 @signature: {'isVisible(name?: string): boolean;'}
 
 @params:
-- name|id			string		the name of a Form control or its id (if the name attribute is not defined in the config of the control)
+- `name|id: string` - optional, the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
-- param	boolean     true, if a form is visible, otherwise false
+`true`, if a form is visible; otherwise, `false`.
 
 @example:
 // checks whether a form is visible

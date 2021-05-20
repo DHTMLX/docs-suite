@@ -1,6 +1,6 @@
 ---
-sidebar_label: validate
-title: validate
+sidebar_label: validate()
+title: validate()
 ---          
 
 @short: validates form fields
@@ -8,10 +8,10 @@ title: validate
 @signature: {'validate(silent): boolean;'}
 
 @params:
-- silent    boolean     optional, if true - the method will return the result of validation without calling validation events and without modifying the form visually
+`silent: boolean` - optional, if `true` - the method will return the result of validation without calling validation events and without modifying the form visually
 
 @returns:
-- result	boolean 	the result of validation: true, if a form is valid, otherwise - false
+The result of validation: `true`, if a form is valid; otherwise, `false`.
 
 @example:
 var result = form.validate(true); // -> true/false

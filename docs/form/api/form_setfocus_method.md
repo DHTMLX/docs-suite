@@ -1,6 +1,6 @@
 ---
-sidebar_label: setFocus
-title: setFocus
+sidebar_label: setFocus()
+title: setFocus()
 ---          
 
 @short: sets focus to a Form control by its id
@@ -8,7 +8,7 @@ title: setFocus
 @signature: {'setFocus(name: string): void;'}
 
 @params:
-- name|id	string  the name of the control or its id (if the name attribute is not defined in the config of the control)
+`name|id: string` - the name of the control or its id (if the name attribute is not defined in the config of the control)
 
 @example:
 form.setFocus("checkbox");
