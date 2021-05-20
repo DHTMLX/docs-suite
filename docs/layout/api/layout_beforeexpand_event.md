@@ -8,10 +8,10 @@ title: beforeExpand
 @signature: {'beforeExpand: (id: string) => boolean | void;'}
 
 @params:
-- id		string		the id of a cell
+`id: string` - the id of a cell
 
 @returns:
-param       boolean | void     false - to block expanding a cell, otherwise true
+Return `false` to block expanding a cell; otherwise, `true`.
 
 @example:
 layout.events.on("BeforeExpand", function(id){

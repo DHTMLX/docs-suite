@@ -14,8 +14,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
-
+@descr:
 
 [comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#hidden-cell)
 

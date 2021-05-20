@@ -14,7 +14,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Collapsable](https://snippet.dhtmlx.com/8u4ok0os)
 

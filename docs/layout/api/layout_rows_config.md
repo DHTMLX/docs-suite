@@ -38,7 +38,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
+@descr:
 
 [comment]: # (@relatedapi: layout/api/layout_cols_config.md)
 

@@ -8,7 +8,7 @@ title: beforeAdd
 @signature: {'beforeAdd: (id: string) => boolean | void;'}
 
 @params:
-- id		string		the id of a cell
+`id: string` - the id of a cell
 
 @returns:
 - result	boolean		false - to prevent adding of a cell, otherwise true

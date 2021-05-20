@@ -41,7 +41,7 @@ var layout = dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Gravity](https://snippet.dhtmlx.com/1u521djj)
 
-{{note You can use the **gravity** property only when a cell has no specified sizes - width and height, otherwise - the property does not work.}} 
+{{note You can use the **gravity** property only when a cell has no specified sizes - width and height, otherwise - the property does not work.}}
 
 If you specify the property for a cell, its size will be adjusted regarding the sizes of the cells that are in the same row, within the same parent and have **gravity** in their configuration.  
 

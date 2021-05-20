@@ -25,7 +25,7 @@ var layout = new dhx.Layout("layout_container",{
     ]
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Padding](https://snippet.dhtmlx.com/tk6tpwwv)
 

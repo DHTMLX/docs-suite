@@ -1,6 +1,6 @@
 ---
-sidebar_label: attachHTML
-title: attachHTML
+sidebar_label: attachHTML()
+title: attachHTML()
 ---          
 
 @short: adds an HTML content into a dhtmlxLayout cell
@@ -8,7 +8,7 @@ title: attachHTML
 @signature: {'attachHTML(html: string): void;'}
 
 @params:
-- html		string		an HTML content to be added into a cell
+`html: string` - an HTML content to be added into a cell
 
 @example:
 var layout = new dhx.Layout({width:"400px", height:"600px"});

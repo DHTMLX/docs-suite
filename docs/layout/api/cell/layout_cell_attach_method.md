@@ -1,6 +1,6 @@
 ---
-sidebar_label: attach
-title: attach
+sidebar_label: attach()
+title: attach()
 ---          
 
 @short: attaches a DHTMLX component into a Layout cell
@@ -8,11 +8,11 @@ title: attach
 @signature: {'attach(name: string | IViewFn | IView | IViewConstructor, config?: any): IViewLike;'}
 
 @params:
-- component 		string,object 		the name or object of a component
-- config 			object 				optional, the configuration settings of a component
+- `component: string | object` - the name or object of a component
+- `config: object` - optional, the configuration settings of a component
 
 @returns:
-- attached			object			the object of the attached component
+The object of the attached component.
 
 @example:
 var layout = new dhx.Layout({

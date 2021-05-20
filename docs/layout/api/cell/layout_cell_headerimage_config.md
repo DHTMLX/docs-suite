@@ -7,7 +7,6 @@ title: headerImage
 
 @signature: {'headerImage?: string;'}
 
-
 @example:
 var layout = new dhx.Layout("layout_container", {
     cols: [
@@ -15,7 +14,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
+@descr:
 
 [comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#cellheader)
 

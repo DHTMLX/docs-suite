@@ -14,7 +14,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
 

@@ -1,6 +1,6 @@
 ---
-sidebar_label: expand
-title: expand
+sidebar_label: expand()
+title: expand()
 ---          
 
 @short: expands a collapsed cell

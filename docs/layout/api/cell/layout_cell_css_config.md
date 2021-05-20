@@ -22,7 +22,7 @@ var layout = new dhx.Layout("layout_container", {
     css:"my_first_class my_second_class"
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)
 

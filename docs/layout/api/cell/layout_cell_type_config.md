@@ -23,7 +23,7 @@ const layout = new dhx.Layout("layout", {
     ]
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
@@ -48,7 +48,7 @@ const layout = new dhx.Layout("layout", {
     </tbody>
 </table>
 
-{{note Note, that if the children cell has no specified type of borders, the cell has the same type of borders as its parent cell. }} 
+{{note Note, that if the children cell has no specified type of borders, the cell has the same type of borders as its parent cell. }}
 
 @changelog: added in v7.0
 
