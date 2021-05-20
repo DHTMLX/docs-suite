@@ -8,7 +8,7 @@ title: inputBlur
 @signature: {'inputBlur: (id: string) => void;'}
 
 @params:
-- id 		string		the ID of a new control
+`id: string` - the ID of a new control
 
 @example:
 ribbon.events.on("InputBlur", function(id){

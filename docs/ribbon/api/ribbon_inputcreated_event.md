@@ -8,8 +8,8 @@ title: inputCreated
 @signature: {'inputCreated: (id: string, input: HTMLInputElement) => void;'}
 
 @params:
-- id 		string			the ID of a new input
-- input		HTMLInputElement		a newly created input
+- `id: string` - the ID of a new input
+- `input: HTMLInputElement` - a newly created input
 
 @example:
 ribbon.events.on("InputCreated", function(id, el){
