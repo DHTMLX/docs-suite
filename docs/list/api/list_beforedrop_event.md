@@ -8,7 +8,7 @@ title: beforeDrop
 @signature: {'beforeDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @returns:
-- result	void | boolean		false - to block the default action, otherwise true
+Return `false` to block the default action; otherwise, `true`.
 
 @example:
 list.events.on("BeforeDrop", function(data, events) {

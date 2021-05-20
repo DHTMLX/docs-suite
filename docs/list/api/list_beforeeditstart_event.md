@@ -6,12 +6,12 @@ title: beforeEditStart
 @short: fires before editing of an item has started
 
 @signature: beforeEditStart: (id: string | number) => void | boolean;
-	
+
 @params:
-- id		string | number		the id of an item
+`id: string | number` - the id of an item
 
 @returns:
-- result		void | boolean		false- to block item editing, true otherwise
+Return `false` to block item editing; otherwise, `true`.
 
 @example:
 list.events.on("BeforeEditStart", function(value,id){

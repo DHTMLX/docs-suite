@@ -12,7 +12,7 @@ title: selection
 @example:
 var list = new dhx.List("list_container", {selection:false});
 
-@descr: 
+@descr:
 
 **Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
 

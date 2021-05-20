@@ -8,8 +8,8 @@ title: itemRightClick
 @signature: {'itemRightClick: (id: string | number, events: MouseEvent) => void;'}
 
 @params:
-- id   		string,number			the id of a right-clicked item
-- events	MouseEvent				an event object
+- `id: string,number` - the id of a right-clicked item
+- `events: MouseEvent` - an event object
 
 @example:
 list.events.on("itemRightClick", function(id, e){

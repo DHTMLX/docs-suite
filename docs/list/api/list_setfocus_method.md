@@ -1,6 +1,6 @@
 ---
-sidebar_label: setFocus
-title: setFocus
+sidebar_label: setFocus()
+title: setFocus()
 ---          
 
 @short: sets focus to an item by its id
@@ -8,7 +8,7 @@ title: setFocus
 @signature: {'setFocus(id: string | number): void;'}
 
 @params:
-- id	string | number      the id of an item
+`id: string | number` - the id of an item
 
 @example:
 list.setFocus("item_id");

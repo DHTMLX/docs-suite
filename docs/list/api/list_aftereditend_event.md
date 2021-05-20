@@ -8,8 +8,8 @@ title: afterEditEnd
 @signature: {'afterEditEnd: (value: string, id: string) => void;'}
 
 @params:
-- value		string		the value of an item
-- id		string | number		the id of an item
+- `value: string` - the value of an item
+- `id: string | number` - the id of an item
 
 @example:
 list.events.on("AfterEditEnd", function(value,id){

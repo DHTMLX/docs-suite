@@ -8,7 +8,7 @@ title: beforeDrag
 @signature: {'beforeDrag: (data: object, events: MouseEvent) => void | boolean;'}
 
 @returns:
-- result	void | boolean		false - to block dragging of an item, otherwise true
+Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
 list.events.on("BeforeDrag", function(data, events) {

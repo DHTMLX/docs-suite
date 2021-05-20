@@ -12,7 +12,7 @@ title: editable
 @example:
 var list = new dhx.List("list_container", {editable:true});
 
-@descr: 
+@descr:
 
 **Related sample**: [List. Editable List](https://snippet.dhtmlx.com/f26lfcai)
 
