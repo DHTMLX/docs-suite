@@ -8,8 +8,8 @@ title: canRowDrop
 @signature: {'canRowDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-- data		object		data object
-- e		    Event		a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("CanRowDrop", function(data, events) {
@@ -18,7 +18,7 @@ grid.events.on("CanRowDrop", function(data, events) {
 
 @descr:
 
-@changelog: added in v7.0
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 The data object contains the following parameters:
 
@@ -39,7 +39,7 @@ The data object contains the following parameters:
     </tbody>
 </table>
 
-**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+@changelog: added in v7.0
 
 [comment]: # (@relatedapi: grid/api/grid_afterrowdrag_event.md grid/api/grid_afterrowdrop_event.md grid/api/grid_beforerowdrag_event.md grid/api/grid_beforerowdrop_event.md grid/api/grid_cancelrowdrop_event.md grid/api/grid_dragrowin_event.md grid/api/grid_dragrowout_event.md grid/api/grid_dragrowstart_event.md)
 

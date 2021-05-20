@@ -7,10 +7,10 @@ title: cellMouseDown
 
 @signature: {'cellMouseDown: (row: object, col: object, e: MouseEvent & TouchEvent) => void;'}
 
-<!-- @params:
-- row			object		an object with a row configuration
-- column		object		an object with a column configuration
-- e				Event		a native event object -->
+@params:
+- `row: object` - an object with a row configuration
+- `column: object` - an object with a column configuration
+- `e: MouseEvent & TouchEvent` - a native HTML event object
 
 @example:
 grid.events.on("CellMouseDown", function(row,column,e){

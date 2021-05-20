@@ -8,12 +8,12 @@ title: beforeEditStart
 @signature: {'beforeEditStart: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;'}
 	
 @params:
-- row			object		an object with a row configuration
-- col		object		an object with a column configuration
-- editorType	string		the type of a cell editor:"input", "select", "datePicker", "checkbox", "combobox"
+- `row: object` - an object with a row configuration
+- `col: object` - an object with a column configuration
+- `editorType: string` - the type of a cell editor:"input", "select", "datePicker", "checkbox", "combobox", "textarea"
 
 @returns:
-- result		boolean	| void	false - to block editing of a cell, otherwise true
+Return `false` to block editing of a cell; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeEditStart", function(row,col,editorType){

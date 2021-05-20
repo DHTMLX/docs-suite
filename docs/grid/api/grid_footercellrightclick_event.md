@@ -7,9 +7,9 @@ title: footerCellRightClick
 
 @signature: {'footerCellRightClick: (col: object, e: MouseEvent) => void;'}
 
-<!-- @params:
-- column		object		an object with a column configuration
-- e				Event		a native event object -->
+@params:
+- `column: object` - an object with a column configuration
+- `e: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("FooterCellRightClick", function(column,e){

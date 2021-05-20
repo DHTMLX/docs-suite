@@ -1,6 +1,6 @@
 ---
-sidebar_label: getCellRect
-title: getCellRect
+sidebar_label: getCellRect()
+title: getCellRect()
 ---          
 
 @short: returns the parameters of a cell
@@ -8,11 +8,11 @@ title: getCellRect
 @signature: {'getCellRect(row: string | number, col: string | number): object;'}
 
 @params:
-- row	string | number		the id of a row
-- col	string | number		the id of a column
+- `row: string | number` - the id of a row
+- `col: string | number` - the id of a column
 
 @returns:
-- rect		object		an object with parameters of a cell
+An object with parameters of a cell.
 
 @example:
 var rect = grid.getCellRect("1","c");

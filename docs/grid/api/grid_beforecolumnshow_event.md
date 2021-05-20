@@ -7,11 +7,11 @@ title: beforeColumnShow
 
 @signature: {'beforeColumnShow: (col: object) => boolean | void;'}
 
-@params: 
-- col   object  an object with a column configuration
+@params:
+`col: object` - an object with a column configuration
 
 @returns:
-- result	boolean		false - to prevent a column from being shown, otherwise true
+Return `false` to prevent a column from being shown; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeColumnShow", function(column){

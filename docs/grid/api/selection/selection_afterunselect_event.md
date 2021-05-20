@@ -9,8 +9,8 @@ title: afterUnSelect
 
 @params:
 
-- row		object		the config of a row
-- col       object      the config of a column
+- `row: object` - the config of a row
+- `col: object` - the config of a column
 
 @example:
 grid.selection.events.on("AfterUnSelect", function(row, col){

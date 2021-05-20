@@ -7,8 +7,8 @@ title: afterColumnHide
 
 @signature: {'afterColumnHide: (col: object) => void;'}
 
-@params: 
-- col   object  an object with a column configuration
+@params:
+`col: object` - an object with a column configuration
 
 @example:
 grid.events.on("AfterColumnHide", function(column){

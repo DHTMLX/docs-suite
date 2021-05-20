@@ -1,6 +1,6 @@
 ---
-sidebar_label: hideColumn
-title: hideColumn
+sidebar_label: hideColumn()
+title: hideColumn()
 ---          
 
 @short: hides a column of Grid
@@ -8,7 +8,7 @@ title: hideColumn
 @signature: {'hideColumn(colId: string | number): void;'}
 
 @params:
-- colId	string | number	the id of a column
+`colId: string | number` - the id of a column
 
 @example:
 grid.hideColumn(col);

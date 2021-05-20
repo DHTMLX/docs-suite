@@ -7,9 +7,8 @@ title: afterKeyDown
 
 @signature: {'afterKeyDown: (e: Event) => void;'}
 
-<!-- @params:
-
-- e		KeyboardEvent		a native KeyboardEvent object -->
+@params:
+`e: Event` - a native KeyboardEvent object
 
 @example:
 grid.events.on("AfterKeyDown", function (e) {

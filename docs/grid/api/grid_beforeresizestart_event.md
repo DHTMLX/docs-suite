@@ -8,11 +8,11 @@ title: beforeResizeStart
 @signature: {'beforeResizeStart: (col: ICol, e: MouseEvent) => boolean | void;'}
 
 @params:
-- col		object		an object with a column configuration
-- e				Event		a native event object
+- `col: object` - an object with a column configuration
+- `e: MouseEvent` - a native HTML event object
 
 @returns:
-- result		boolean		false - to block resizing of a column, otherwise true
+Return `false` to block resizing of a column; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeResizeStart", function(col,e){

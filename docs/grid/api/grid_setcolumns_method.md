@@ -1,6 +1,6 @@
 ---
-sidebar_label: setColumns
-title: setColumns
+sidebar_label: setColumns()
+title: setColumns()
 description: description
 ---          
 
@@ -9,7 +9,7 @@ description: description
 @signature: {'setColumns(columns: ICol[]): void;'}
 
 @params:
-- columns	array	an array of objects with configuration of columns
+`columns: array` - an array of objects with configuration of columns
 
 @example:
 grid.setColumns([

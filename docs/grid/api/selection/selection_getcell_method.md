@@ -1,14 +1,14 @@
 ---
-sidebar_label: getCell
-title: getCell
+sidebar_label: getCell()
+title: getCell()
 ---          
 
 @short: returns the object of a selected cell
 
-@signature: {'getCells(): array[];'}
+@signature: {'getCell(): ICell;'}
 
 @returns:
-param   object  an object with parameters of a selected cell
+An object with parameters of a selected cell.
 
 @example:
 var selectedCell = grid.selection.getCell();
