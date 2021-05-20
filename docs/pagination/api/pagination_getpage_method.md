@@ -1,16 +1,14 @@
 ---
-sidebar_label: getPage
-title: getPage
+sidebar_label: getPage()
+title: getPage()
 ---          
 
 @short: returns the index of the active page
 
 @signature: {'getPage(): number;'}
 
-@params:
-
 @returns:
-- param	number      the index of the active page
+The index of the active page.
 
 @example:
 const pageIndex = pagination.getPage();

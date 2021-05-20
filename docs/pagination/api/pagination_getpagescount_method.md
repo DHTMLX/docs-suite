@@ -1,16 +1,14 @@
 ---
-sidebar_label: getPagesCount
-title: getPagesCount
+sidebar_label: getPagesCount()
+title: getPagesCount()
 ---          
 
 @short: gets the total number of pages in the pagination
 
 @signature: {'getPagesCount(): number;'}
 
-@params:
-
 @returns:
-- param	number      the total number of pages
+The total number of pages.
 
 @example:
 const totalPages = pagination.getPagesCount();
