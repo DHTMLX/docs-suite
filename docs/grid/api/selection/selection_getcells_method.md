@@ -1,6 +1,6 @@
 ---
-sidebar_label: getCells
-title: getCells
+sidebar_label: getCells()
+title: getCells()
 ---          
 
 @short: returns an array with config objects of selected cells
@@ -8,7 +8,7 @@ title: getCells
 @signature: {'getCells(): array[];'}
 
 @returns:
-param       array      an array with configuration objects of selected cells
+An array with configuration objects of selected cells.
 
 @example:
 var selectedCells = grid.selection.getCells();

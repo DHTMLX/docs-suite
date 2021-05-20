@@ -7,11 +7,11 @@ title: beforeRowHide
 
 @signature: {'beforeRowHide: (row: object) => boolean | void;'}
 
-@params: 
-- row   object  an object with a row configuration
+@params:
+`row: object` - an object with a row configuration
 
 @returns:
-- result	boolean | void		false - to prevent a row from being hidden, otherwise true
+Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeRowHide", function(row){

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getItem
-title: getItem
+sidebar_label: getItem()
+title: getItem()
 ---          
 
 @short: gives access to the object of Form control
@@ -8,7 +8,7 @@ title: getItem
 @signature: {'getItem(name: string): any;'}
 
 @params:
-- `name: string` - the name of a Form control or its id (if the name attribute is not defined in the config of the control)
+`name|id: string` - the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
 The object of the control.

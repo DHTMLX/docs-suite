@@ -11,7 +11,6 @@ title: Grid API overview
 | [](grid/api/grid_addrowcss_method.md)         | @getshort(grid/api/grid_addrowcss_method.md)         |
 | [](grid/api/grid_addspan_method.md)           | @getshort(grid/api/grid_addspan_method.md)           |
 | [](grid/api/grid_adjustcolumnwidth_method.md) | @getshort(grid/api/grid_adjustcolumnwidth_method.md) |
-| [](grid/api/grid_cellmousedown_event.md)      | @getshort(grid/api/grid_cellmousedown_event.md)      |
 | [](grid/api/grid_destructor_method.md)        | @getshort(grid/api/grid_destructor_method.md)        |
 | [](grid/api/grid_editcell_method.md)          | @getshort(grid/api/grid_editcell_method.md)          |
 | [](grid/api/grid_editend_method.md)           | @getshort(grid/api/grid_editend_method.md)           |
@@ -53,10 +52,11 @@ title: Grid API overview
 
 ### Mouse
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
+| Name                                            | Description                                            |
+|-------------------------------------------------|--------------------------------------------------------|
 | [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event.md)            |
 | [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event.md)         |
+| [](grid/api/grid_cellmousedown_event.md)        | @getshort(grid/api/grid_cellmousedown_event.md)        |
 | [](grid/api/grid_cellmouseover_event.md)        | @getshort(grid/api/grid_cellmouseover_event.md)        |
 | [](grid/api/grid_cellrightclick_event.md)       | @getshort(grid/api/grid_cellrightclick_event.md)       |
 | [](grid/api/grid_footercellclick_event.md)      | @getshort(grid/api/grid_footercellclick_event.md)      |

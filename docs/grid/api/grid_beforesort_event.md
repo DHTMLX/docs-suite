@@ -8,11 +8,11 @@ title: beforeSort
 @signature: beforeSort: (col: ICol, dir: Dirs) => void | boolean;
 
 @params:
-- col	object	an object with the configuration of a column
-- dir   string  the sorting direction (desc, asc)
+- `col: object` - an object with the configuration of a column
+- `dir: string` - the sorting direction (desc, asc)
 
 @returns:
-- param     boolean     false - to prevent a column from being sorted, otherwise true
+Return `false` to prevent a column from being sorted; otherwise, `true`.
 
 @example:
 grid.events.on("beforeSort", (col, dir) => {

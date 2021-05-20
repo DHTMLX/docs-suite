@@ -7,12 +7,11 @@ title: beforeKeyDown
 
 @signature: {'beforeKeyDown: (e: Event) => boolean | void;'}
 
-<!-- @params:
-- e		KeyboardEvent		a native KeyboardEvent object -->
+@params:
+- `e: Event` - a native KeyboardEvent object
 
 @returns:
-
-- param		boolean			false - to prevent pressing a shortcut key, otherwise false
+Return `false` to prevent pressing a shortcut key; otherwise, `false`.
 
 @example:
 grid.events.on("BeforeKeyDown", function (e) {

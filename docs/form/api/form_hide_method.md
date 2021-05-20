@@ -1,6 +1,6 @@
 ---
-sidebar_label: hide
-title: hide
+sidebar_label: hide()
+title: hide()
 ---          
 
 @short: hides a form

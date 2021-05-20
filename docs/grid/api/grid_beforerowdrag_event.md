@@ -7,12 +7,12 @@ title: beforeRowDrag
 
 @signature: {'beforeRowDrag: (data: object, events: MouseEvent) => void | boolean;'}
 
-<!-- @params:
-- data		object		data object
-- e		    Event		a native event object -->
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @returns:
-- result	boolean		false - to prevent dragging a row, otherwise true
+Return `false` to prevent dragging a row; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeRowDrag", function(data, events){

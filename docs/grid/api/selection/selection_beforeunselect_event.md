@@ -9,11 +9,11 @@ title: beforeUnSelect
 
 @params:
 
-- row		object		the config of a row
-- col       object      the config of a column
+- `row: object` - the config of a row
+- `col: object` - the config of a column
 
 @returns:
-param   boolean | void     false - to prevent unselecting of a cell, otherwise - true
+Return `false` to prevent unselecting of a cell; otherwise, `true`.
 
 @example:
 grid.selection.events.on("BeforeUnSelect", function(row, col){

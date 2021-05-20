@@ -8,8 +8,8 @@ title: headerCellMouseOver
 @signature: {'headerCellMouseOver: (col: ICol, events: MouseEvent) => void;'}
 
 @params:
-- col		object		an object with a column configuration
-- events	Event		a native event object
+- `col: object` - an object with a column configuration
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("HeaderCellMouseOver", function(column,e){

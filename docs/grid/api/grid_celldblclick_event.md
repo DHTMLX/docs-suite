@@ -8,9 +8,9 @@ title: cellDblClick
 @signature: {'cellDblClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- row			object		an object with a row configuration
-- col		object		an object with a column configuration
-- e				MouseEvent		a MouseEvent object
+- `row: object` - an object with a row configuration
+- `col: object` - an object with a column configuration
+- `e: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("CellDblClick", function(row,column,e){

@@ -1,6 +1,6 @@
 ---
-sidebar_label: send
-title: send
+sidebar_label: send()
+title: send()
 ---          
 
 @short: sends a form to the server
@@ -8,12 +8,12 @@ title: send
 @signature: {'send(url: string, method?: string, asFormData?: boolean): Promise<any> | void;'}
 
 @params:
-- url			string		the URL of the server
-- method 		string		the request type, "POST" by default
-- asFormData	boolean		optional, defines whether values of Form controls should be sent as Form Data
+- `url: string` - the URL of the server
+- `method: string` - the request type, "POST" by default
+- `asFormData: boolean` - optional, defines whether values of Form controls should be sent as Form Data
 
 @returns:
-- promise 		object		a promise object
+An object of the promise.
 
 @example:
 var send = form.send("myserver.com", "POST");

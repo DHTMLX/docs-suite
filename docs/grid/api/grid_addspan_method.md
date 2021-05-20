@@ -1,14 +1,14 @@
 ---
-sidebar_label: addSpan
-title: addSpan
+sidebar_label: addSpan()
+title: addSpan()
 ---          
 
 @short: adds a rows/cols span
 
-@signature: addSpan(object: span): void;
+@signature: addSpan(spanObj: ISpan): void;
 
 @params:
-- span 		object 		an object with configuration of a span
+`spanObj: object` - an object with configuration of a span
 
 @example:
 grid.addSpan({ 

@@ -8,7 +8,7 @@ title: beforeValidate
 @signature: {'beforeValidate: (name: string, value: any) => boolean | void;'}
 
 @params:
-- `name: string` - the name (or id, if the name is not specified) of the Form control
+- `name|id: string` - the name (or id, if the name is not specified) of the Form control
 - `value: any` - the value to be validated
 
 @returns:

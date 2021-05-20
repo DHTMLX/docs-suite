@@ -8,11 +8,11 @@ title: beforeRowDrop
 @signature: {'beforeRowDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 	
 @params:
-- data		object		data object
-- events		    Event		a native event object 
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object 
 
 @returns:
-- result	void | boolean		false - to block the default action, otherwise true
+Return `false` to block the default action; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeRowDrop", function(data, events){

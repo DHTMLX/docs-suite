@@ -1,6 +1,6 @@
 ---
-sidebar_label: destructor
-title: destructor
+sidebar_label: destructor()
+title: destructor()
 ---          
 
 @short: removes a form instance and releases occupied resources

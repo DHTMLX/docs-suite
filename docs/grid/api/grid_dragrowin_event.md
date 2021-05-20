@@ -7,14 +7,18 @@ title: dragRowIn
 
 @signature: {'dragRowIn: (data: object, events: MouseEvent) => void | boolean;'}
 
-<!-- @params:
-- data		object		data object
-- e		    Event		a native event object -->
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
+@returns:
+Return `false` to prevent dragging a row to another potential target; otherwise, `true`.
 
 @example:
 grid.events.on("DragRowIn", function(data, events) {
   // your logic here
 });
+
 
 @descr:
 

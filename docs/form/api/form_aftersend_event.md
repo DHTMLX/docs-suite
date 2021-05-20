@@ -7,8 +7,6 @@ title: afterSend
 
 @signature: {'afterSend: () => void;'}
 
-@params:
-
 @example:
 form.events.on("AfterSend", function(){
    // your logic here

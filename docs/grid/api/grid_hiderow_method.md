@@ -1,6 +1,6 @@
 ---
-sidebar_label: hideRow
-title: hideRow
+sidebar_label: hideRow()
+title: hideRow()
 ---          
 
 @short: hides a row of Grid
@@ -8,7 +8,7 @@ title: hideRow
 @signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
-- rowId	string | number   the id of a row
+`rowId: string | number` - the id of a row
 
 @example:
 grid.hideRow(rowId);

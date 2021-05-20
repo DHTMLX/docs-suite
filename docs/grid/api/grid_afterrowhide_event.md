@@ -7,8 +7,8 @@ title: afterRowHide
 
 @signature: {'afterRowHide: (row: object) => void;'}
 
-@params: 
-- row   object  an object with a row configuration
+@params:
+`row: object` - an object with a row configuration
 
 @example:
 grid.events.on("AfterRowHide", function(row){

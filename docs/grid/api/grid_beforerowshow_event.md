@@ -7,11 +7,11 @@ title: beforeRowShow
 
 @signature: {'beforeRowShow: (row: IRow) => boolean | void;'}
 
-@params: 
-- row   object  an object with a row configuration
+@params:
+`row: object` - an object with a row configuration
 
 @returns:
-- result	boolean | void		false - to prevent a row from being shown, otherwise true
+Return `false` to prevent a row from being shown; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeRowShow", function(row){

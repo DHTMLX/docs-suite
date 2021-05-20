@@ -1,6 +1,6 @@
 ---
-sidebar_label: getSortingState
-title: getSortingState
+sidebar_label: getSortingState()
+title: getSortingState()
 ---          
 
 @short: returns the current state of sorting data in Grid
@@ -8,7 +8,7 @@ title: getSortingState
 @signature: {'getSortingState(): object;'}
 
 @returns:
-- any   object	  an object with the current state of sorting data in the grid
+An object with the current state of sorting data in the grid.
 
 @example:
 var state = grid.getSortingState(); 

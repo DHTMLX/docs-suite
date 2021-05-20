@@ -1,6 +1,6 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
+sidebar_label: isDisabled()
+title: isDisabled()
 ---          
 
 @short: checks whether a form is disabled
@@ -8,7 +8,7 @@ title: isDisabled
 @signature: {'isDisabled(name?: string): boolean;'}
 
 @returns:
-- param	boolean     true, if a form is disabled, otherwise false
+`true`, if a form is disabled; otherwise, `false`.
 
 @example:
 form.isDisabled(); // -> true/false

@@ -7,9 +7,9 @@ title: afterColumnDrag
 
 @signature: {'afterColumnDrag: (data: object, events: MouseEvent) => void;'}
 
-<!-- @params:
-- data		object		data object
-- e		    Event		a native event object -->
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("AfterColumnDrag", function(data, events) {

@@ -1,6 +1,6 @@
 ---
 sidebar_label: clear()
-title: clear
+title: clear()
 ---          
 
 @short: clears a value of a ColorPicker control

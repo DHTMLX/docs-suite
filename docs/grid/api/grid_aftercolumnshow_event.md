@@ -8,7 +8,7 @@ title: afterColumnShow
 @signature: {'afterColumnShow: (col: ICol) => void;'}
 
 @params:
-- col   object  an object with a column configuration
+`col: object` - an object with a column configuration
 
 @example:
 grid.events.on("AfterColumnShow", function(column){

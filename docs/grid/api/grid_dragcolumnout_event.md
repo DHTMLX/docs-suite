@@ -8,8 +8,8 @@ title: dragColumnOut
 @signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-- data		object		data object
-- e		    Event		a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("DragColumnOut", function(data, events) {

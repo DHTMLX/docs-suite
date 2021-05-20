@@ -7,8 +7,6 @@ title: width
 
 @signature: {'width?: string | number | "content";'}
 
-@type: string | number | "content"
-
 @example:
 var form = new dhx.Form("form", {
     css: "dhx_widget--bordered",

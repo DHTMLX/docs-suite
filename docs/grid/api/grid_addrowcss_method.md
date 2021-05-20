@@ -1,6 +1,6 @@
 ---
-sidebar_label: addRowCss
-title: addRowCss
+sidebar_label: addRowCss()
+title: addRowCss()
 description: description
 ---          
 
@@ -9,8 +9,8 @@ description: description
 @signature: {'addRowCss(id: string | number, css: string): void;'}
 
 @params:
-- id 		string | number 		the id of a row
-- css 		string 				the name of the CSS class
+- `id: string | number` - the id of a row
+- `css: string` - the name of the CSS class
 
 @example:
 <style>

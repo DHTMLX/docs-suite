@@ -1,6 +1,6 @@
 ---
-sidebar_label: addCellCss
-title: addCellCss
+sidebar_label: addCellCss()
+title: addCellCss()
 description: description
 ---          
 
@@ -9,9 +9,9 @@ description: description
 @signature: {'addCellCss(row: string | number, col: string | number, css: string): void;'}
 
 @params:
-- row 		string | number 		the id of a row
-- col 		string | number 		the id of a column
-- css 		string 				the name of the CSS class
+- `row: string | number` - the id of a row
+- `col: string | number` - the id of a column
+- `css: string` - the name of the CSS class
 
 @example:
 <style>
