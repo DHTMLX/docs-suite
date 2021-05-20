@@ -8,9 +8,9 @@ title: change
 @signature: {'change: (value: number, oldValue: number, isRange: boolean) => void;'}
 
 @params:
-- newValue		number		the new value set for the slider
-- oldValue		number		the previous value of the slider
-- isRange		boolean		defines, whether the range mode is activated for the slider
+- `newValue: number` - the new value set for the slider
+- `oldValue: number` - the previous value of the slider
+- `isRange: boolean` - defines, whether the range mode is activated for the slider
 
 @example:
 slider.events.on("Change", function(newValue, oldValue, isRange){

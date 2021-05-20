@@ -5,7 +5,7 @@ title: label
 
 @short: specifies the label of a slider
 
-l@signature: {'label?: string;'}
+@signature: {'label?: string;'}
 
 @example:
 var slider = new dhx.Slider("slider_container", { 
