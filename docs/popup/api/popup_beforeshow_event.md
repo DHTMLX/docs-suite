@@ -8,10 +8,10 @@ title: beforeShow
 @signature: beforeShow: (node: HTMLElement) => void | boolean;
 
 @params:
-- element 		HTMLElement		 the container a popup is placed in
+`element: HTMLElement` - the container a popup is placed in
 
 @returns:
-- result		void | boolean			true to show a popup, false to block showing a popup
+Return `true` to show a popup, `false` to block showing a popup.
 
 @example:
 popup.events.on("BeforeShow", function(element){

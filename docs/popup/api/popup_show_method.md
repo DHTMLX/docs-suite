@@ -1,6 +1,6 @@
 ---
-sidebar_label: show
-title: show
+sidebar_label: show()
+title: show()
 ---          
 
 @short: shows a Popup
@@ -8,8 +8,8 @@ title: show
 @signature: {'show(node: HTMLElement, config?: IShowConfig, attach?: any): void;'}
 
 @params:
-- element 		HTMLElement		 mandatory, the container to place a popup in
-- config 		object			 optional, the configuration object of a popup
+- `element: HTMLElement` - mandatory, the container to place a popup in
+- `config: object` - optional, the configuration object of a popup
 
 @example:
 <div id="popup_container"></div>

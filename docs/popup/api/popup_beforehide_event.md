@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (fromOuterClick: boolean, e: Event) => void | boolean;'}
 
 @params:
-- fromOuterClick		boolean			true, for a click outside a popup, otherwise - false
-- e						Event			the native mouse event
+- `fromOuterClick: boolean` - true, for a click outside a popup, otherwise - false
+- `e: Event` - the native mouse event
 
 @returns:
-- result		void | boolean			true to hide a popup, false to block hiding a popup
+Return `true` to hide a popup, `false` to block hiding a popup.
 
 @example:
 popup.events.on("BeforeHide", function(fromOuterClick,e){

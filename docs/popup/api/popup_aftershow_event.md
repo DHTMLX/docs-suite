@@ -8,7 +8,7 @@ title: afterShow
 @signature: {'afterShow: (node: HTMLElement) => void;'}
 
 @params:
-- node 		HTMLElement		 the container a popup is placed in
+`node: HTMLElement` - the container a popup is placed in
 
 @example:
 popup.events.on("AfterShow", function(element){

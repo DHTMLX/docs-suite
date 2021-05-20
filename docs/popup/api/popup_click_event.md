@@ -8,7 +8,7 @@ title: click
 @signature: click: (e: Event) => void;
 
 @params:
-- e						Event			the native mouse event
+`e: Event` - the native mouse event
 
 @example:
 popup.events.on("Click",function(e){
