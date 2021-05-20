@@ -1,6 +1,6 @@
 ---
-sidebar_label: remove
-title: remove
+sidebar_label: remove()
+title: remove()
 ---          
 
 @short: removes an item

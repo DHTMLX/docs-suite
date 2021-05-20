@@ -7,11 +7,11 @@ title: beforeExpand
 
 @signature: {'beforeExpand: (id: string) => boolean | void;'}
 
-@params: 
-- id    string      the id of an expanded item
+@params:
+`id: string` - the id of an expanded item
 
 @returns:
-- param     boolean | void     false - to block expanding  a tree item, otherwise true
+Return `false` to block expanding  a tree item; otherwise, `true`.
 
 @example:
 tree.events.on("BeforeExpand", function(id) {

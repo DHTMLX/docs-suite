@@ -8,8 +8,10 @@ title: itemDblClick
 @signature: {'itemDblClick: (id: string, e: Event) => void;'}
 
 @params:
-- id	string		the id of an item
-- e		Event		a native event object
+
+@params:
+- `id: string` - the id of an item
+- `e: Event` - a native event object
 
 @example:
 // allows opening folders on double click

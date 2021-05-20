@@ -1,6 +1,6 @@
 ---
-sidebar_label: getItems
-title: getItems
+sidebar_label: getItems()
+title: getItems()
 ---          
 
 @short: gets the child items of a control

@@ -1,6 +1,6 @@
 ---
-sidebar_label: refreshItems
-title: refreshItems
+sidebar_label: refreshItems()
+title: refreshItems()
 ---          
 
 @short: refreshes child items of a control

@@ -1,6 +1,6 @@
 ---
-sidebar_label: collapseAll
-title: collapseAll
+sidebar_label: collapseAll()
+title: collapseAll()
 ---          
 
 @short: collapses all expanded Tree items

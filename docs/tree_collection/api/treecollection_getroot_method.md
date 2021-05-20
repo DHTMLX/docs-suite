@@ -1,6 +1,6 @@
 ---
-sidebar_label: getRoot
-title: getRoot
+sidebar_label: getRoot()
+title: getRoot()
 ---          
 
 @short: returns the ID of the master component

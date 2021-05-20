@@ -1,6 +1,6 @@
 ---
-sidebar_label: sort
-title: sort
+sidebar_label: sort()
+title: sort()
 ---          
 
 @short: sorts controls according to some criteria
@@ -8,7 +8,7 @@ title: sort
 @signature: {'sort(by: ISortMode): void;'}
 
 @params:
-- `rule: object` - an object with parameters for sorting
+`rule: object` - an object with parameters for sorting
 
 @example:
 treeGrid.data.sort({

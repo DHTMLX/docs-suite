@@ -1,12 +1,13 @@
 ---
-sidebar_label: getState
-title: getState
+sidebar_label: getState()
+title: getState()
 ---          
 
 @short: gets the state of a tree
 
 @signature: {'getState(): ITreeState;'}
 
+`check`
 @returns:
 - treeState		object		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state
 

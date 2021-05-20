@@ -1,6 +1,6 @@
 ---
-sidebar_label: haveItems
-title: haveItems
+sidebar_label: haveItems()
+title: haveItems()
 ---          
 
 @short: checks whether an item has children

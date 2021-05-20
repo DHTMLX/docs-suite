@@ -8,7 +8,7 @@ title: afterExpand
 @signature: {'afterExpand: (id: string) => void;'}
 
 @params:
-- id    string      the id of an expanded item
+`id: string` - the id of an expanded item
 
 @example:
 tree.events.on("AfterExpand", function(id) {

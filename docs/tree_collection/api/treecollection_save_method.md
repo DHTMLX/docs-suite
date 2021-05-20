@@ -1,6 +1,6 @@
 ---
-sidebar_label: save
-title: save
+sidebar_label: save()
+title: save()
 ---          
 
 @short: saves changes made in a tree collection to the server side
@@ -9,7 +9,7 @@ title: save
 
 @params:
 
-- `url: object | string` - the URL of a server side (or DataProxy object)
+`url: object | string` - the URL of a server side (or DataProxy object)
 
 @example:
 diagram.data.save("http://userurl/");

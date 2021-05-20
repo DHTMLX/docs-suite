@@ -7,12 +7,12 @@ title: beforeEditStart
 
 @signature: {'beforeEditStart: (value: string, id: string) => boolean | void;'}
 
-@params: 
-- value     string  the value of an item
-- id        string  the id of an item
+@params:
+- `value: string` - the value of an item
+- `id: string` - the id of an item
 
 @returns:
-- result	boolean | void		false - to block editing of an item, otherwise true
+Return `false` to block editing of an item; otherwise, `true`.
 
 @example:
 tree.events.on("BeforeEditStart", function(value, id) {

@@ -1,6 +1,6 @@
 ---
-sidebar_label: uncheckItem
-title: uncheckItem
+sidebar_label: uncheckItem()
+title: uncheckItem()
 ---          
 
 @short: unchecks the checkbox of a tree item and all its sub-items
@@ -8,7 +8,7 @@ title: uncheckItem
 @signature: {'uncheckItem(id: string): void;'}
 
 @params:
-- id 	string		the id of an item to uncheck
+`id: string` - the id of an item to uncheck
 
 @example:
 // checking an item

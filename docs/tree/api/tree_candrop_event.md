@@ -7,6 +7,8 @@ title: canDrop
 
 @signature: {'canDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
+@params:
+
 @example:
 tree.events.on("CanDrop", function(data, events) {
     // your logic here

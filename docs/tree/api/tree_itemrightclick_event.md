@@ -8,8 +8,8 @@ title: itemRightClick
 @signature: {'itemRightClick: (id: string, e: Event) => void;'}
 
 @params:
-- id	string		the id of an item
-- e		Event		a native event object
+- `id: string` - the id of an item
+- `e: Event` - a native event object
 
 @example:
 tree.events.on("itemRightClick", function(id, e){

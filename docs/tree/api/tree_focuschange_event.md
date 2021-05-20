@@ -8,8 +8,8 @@ title: focusChange
 @signature: {'focusChange: (index: number, id: string) => void;'}
 
 @params:
-- index		number			the position of an item
-- id		string			the id of an item
+- `index: number` - the position of an item
+- `id: string` - the id of an item
 
 @example:
 tree.events.on("FocusChange", function(index, id){

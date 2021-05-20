@@ -1,6 +1,6 @@
 ---
-sidebar_label: collapse
-title: collapse
+sidebar_label: collapse()
+title: collapse()
 ---          
 
 @short: collapses a tree item by id
@@ -8,7 +8,7 @@ title: collapse
 @signature: {'collapse(id: Id): void;'}
 
 @params:
-- id	string		the id of an item to collapse
+`id: string` - the id of an item to collapse
 
 @example:
 tree.collapse("history");
