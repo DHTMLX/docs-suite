@@ -1,6 +1,6 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
+sidebar_label: isDisabled()
+title: isDisabled()
 ---          
 
 @short: checks whether an item of Ribbon is disabled
@@ -8,10 +8,10 @@ title: isDisabled
 @signature: {'isDisabled(id: string): boolean;'}
 
 @params:
-- id	string		the id of a Sidebar item
+`id: string` - the id of a Sidebar item
 
 @returns:
-param 	boolean		true, if an item of Sidebar is disabled, otherwise false
+`true`, if an item of Sidebar is disabled; otherwise, `false`.
 
 @example:
 sidebar.isDisable("id"); // -> returns true/false

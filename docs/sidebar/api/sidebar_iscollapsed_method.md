@@ -1,6 +1,6 @@
 ---
-sidebar_label: isCollapsed
-title: isCollapsed
+sidebar_label: isCollapsed()
+title: isCollapsed()
 ---          
 
 @short: checks whether Sidebar is collapsed
@@ -8,7 +8,7 @@ title: isCollapsed
 @signature: {'isCollapsed(): boolean;'}
 
 @returns:
-- result		boolean			<i>true</i>, if Sidebar is collapsed, otherwise <i>false</i>
+`true`, if Sidebar is collapsed; otherwise, `false`.
 
 @example:
 sidebar.isCollapsed(); // -> true/false

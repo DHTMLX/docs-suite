@@ -1,6 +1,6 @@
 ---
-sidebar_label: collapse
-title: collapse
+sidebar_label: collapse()
+title: collapse()
 ---          
 
 @short: collapses a sidebar
