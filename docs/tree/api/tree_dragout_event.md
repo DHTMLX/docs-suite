@@ -7,8 +7,6 @@ title: dragOut
 
 @signature: {'dragOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
-@params:
-
 @example:
 tree.events.on("DragOut", function(data, events) {
     // your logic here

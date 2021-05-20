@@ -7,7 +7,7 @@ title: afterEditStart
 
 @signature: {'afterEditStart: (value: string, id: string) => void;'}
 
-@params: 
+@params:
 - `value: string` - the value of an item
 - `id: string` - the id of an item
 

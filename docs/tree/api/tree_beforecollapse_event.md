@@ -7,7 +7,7 @@ title: beforeCollapse
 
 @signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
-@params: 
+@params:
 `id: string` - the id of a collapsed item
 
 @returns:

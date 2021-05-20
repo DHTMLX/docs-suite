@@ -8,8 +8,6 @@ title: itemDblClick
 @signature: {'itemDblClick: (id: string, e: Event) => void;'}
 
 @params:
-
-@params:
 - `id: string` - the id of an item
 - `e: Event` - a native event object
 

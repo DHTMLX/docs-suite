@@ -7,10 +7,6 @@ title: afterDrop
 
 @signature: {'afterDrop: (data: object, events: MouseEvent) => void;'}
 
-@params:
-data:
-events: MouseEvent
-
 @example:
 tree.events.on("AfterDrop", function(data, events) {
     // your logic here
