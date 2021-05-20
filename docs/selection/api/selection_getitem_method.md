@@ -1,6 +1,6 @@
 ---
-sidebar_label: getItem
-title: getItem
+sidebar_label: getItem()
+title: getItem()
 ---          
 
 @short: returns the object of a selected item
@@ -8,7 +8,7 @@ title: getItem
 @signature: {'getItem(): any;'}
 
 @returns:
-- item		object | array		the object of a selected item
+The object of a selected item.
 
 @example:
 var item = tree.selection.getItem();

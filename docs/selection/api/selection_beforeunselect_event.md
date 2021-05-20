@@ -8,10 +8,10 @@ title: beforeUnSelect
 @signature: {'beforeUnSelect: (id: string) => void | boolean;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @returns:
-- param		void | boolean		false - to prevent unselecting of an item, otherwise - true
+Return `false` to prevent unselecting of an item; otherwise, `true`.
 
 @example:
 tree.selection.events.on("BeforeUnSelect", function(id) {

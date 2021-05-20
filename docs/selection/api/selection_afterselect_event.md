@@ -8,7 +8,7 @@ title: afterSelect
 @signature: {'afterSelect: (id: string) => void;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @example:
 tree.selection.events.on("AfterSelect", function(id){

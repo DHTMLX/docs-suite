@@ -1,6 +1,6 @@
 ---
-sidebar_label: getId
-title: getId
+sidebar_label: getId()
+title: getId()
 ---          
 
 @short: returns the id of a selected item
@@ -8,7 +8,7 @@ title: getId
 @signature: {'getId(): string | string[];'}
 
 @returns:
-- id	string | string[]	the id of a selected item
+The id of a selected item.
 
 @example:
 var id = tree.selection.getId(); // -> "2"

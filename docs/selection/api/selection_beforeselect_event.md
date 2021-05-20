@@ -8,10 +8,10 @@ title: beforeSelect
 @signature: {'beforeSelect: (id: string) => void | boolean;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @returns:
-- param		boolean		false - to prevent selecting of an item, otherwise - true
+Return `false` to prevent selecting of an item; otherwise, `true`.
 
 @example:
 tree.selection.events.on("BeforeSelect", function(id) {
