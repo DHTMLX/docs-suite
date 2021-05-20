@@ -1,6 +1,6 @@
 ---
-sidebar_label: destructor
-title: destructor
+sidebar_label: destructor()
+title: destructor()
 ---          
 
 @short: removes a Tabbar instance and releases occupied resources

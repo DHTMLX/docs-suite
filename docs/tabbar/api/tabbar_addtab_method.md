@@ -1,6 +1,6 @@
 ---
-sidebar_label: addTab
-title: addTab
+sidebar_label: addTab()
+title: addTab()
 ---          
 
 @short: adds a new tab into a tabbar
@@ -8,8 +8,8 @@ title: addTab
 @signature: {'addTab(config: ITabbarConfig, index: number): void;'}
 
 @params:
-- view 		object		an object of a tab 
-- index 	number		the position to add a tab into
+- `view: object` - an object of a tab 
+- `index: number` - the position to add a tab into
 
 @example:
 tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);

@@ -1,6 +1,6 @@
 ---
-sidebar_label: enableTab
-title: enableTab
+sidebar_label: enableTab()
+title: enableTab()
 ---          
 
 @short: enables a disabled tab
@@ -8,7 +8,7 @@ title: enableTab
 @signature: {'enableTab(id: string): void;'}
 
 @params:
-- id	string      the id of a tab to enable
+`id: string` - the id of a tab to enable
 
 @example:
 tabbar.enableTab("London");

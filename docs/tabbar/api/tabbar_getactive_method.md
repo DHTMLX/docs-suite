@@ -1,6 +1,6 @@
 ---
-sidebar_label: getActive
-title: getActive
+sidebar_label: getActive()
+title: getActive()
 ---          
 
 @short: gets the id of the active tab
@@ -8,7 +8,7 @@ title: getActive
 @signature: {'getActive(): string;'}
 
 @returns:
-- id 		string		the id of the active tab
+`id: string` - the id of the active tab
 
 @example:
 var tabbar = new dhx.Tabbar("tabbar_container", {

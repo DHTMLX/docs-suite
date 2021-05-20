@@ -1,6 +1,6 @@
 ---
-sidebar_label: getId
-title: getId
+sidebar_label: getId()
+title: getId()
 ---          
 
 @short: returns the id of a tab by its index
@@ -8,7 +8,7 @@ title: getId
 @signature: {'getId(index: number): string;'}
 
 @params:
-- index 		number 		the position of a tab in the tabbar
+`index: number` - the position of a tab in the tabbar
 
 @example:
 var id = tabbar.getId(0);
