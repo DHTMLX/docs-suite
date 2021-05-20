@@ -9,7 +9,7 @@ title: select()
 
 @params:
 - `id: string` - the id of a Ribbon item
-- `unselect: boolean` - optional, true - to unselect previously selected items; otherwise, false; true by default `check format`
+- `unselect: boolean` - optional, *true* to unselect previously selected items; otherwise, *false*; *true* by default
 
 @example:
 ribbon.select("print");

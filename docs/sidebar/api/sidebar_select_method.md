@@ -9,7 +9,7 @@ title: select()
 
 @params:
 - `id: string` - the id of a Sidebar item
-- `unselect: boolean` - optional, true - to unselect previously selected items, otherwise - false; true by default
+- `unselect: boolean` - optional, *true* to unselect previously selected items; otherwise, *false*; *true* by default
 
 @example:
 sidebar.select("categoryPost");
