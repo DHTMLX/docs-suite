@@ -3,6 +3,8 @@ sidebar_label: Hospital management system demo
 title: Hospital Management System Demo
 --- 
 
+[comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
+
 ![](../assets/optimus/demo/hospital_demo.png)
 
 This demo application shows how to create a hospital management system with a clear and accurate UI based on DHTMLX Diagram and DHTMLX Suite widgets: Sidebar, TreeGrid, Tabbar, Dataview, Window, Toolbar, and Form.
