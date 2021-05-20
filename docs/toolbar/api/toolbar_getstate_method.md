@@ -1,6 +1,6 @@
 ---
-sidebar_label: getState
-title: getState
+sidebar_label: getState()
+title: getState()
 ---          
 
 @short: gets current values/states of controls
@@ -8,10 +8,10 @@ title: getState
 @signature: {'getState(id?: string | number): IState;'}
 
 @params:
-- id    string | number   optional, the id of a Toolbar control
+`id: string | number` - optional, the id of a Toolbar control
 
 @returns:
-- state		string | boolean | object		the value/state of the control, or an object with IDs of controls and their values/states
+The value/state of the control, or an object with IDs of controls and their values/states.
 
 @example:
 var state1 = toolbar.getState("search"); 

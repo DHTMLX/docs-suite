@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (id: string, events: Event) => void | boolean;'}
 
 @params:
-- id 		string		the ID of a sidebar item
-- events         Event       a native event object
+- `id: string` - the ID of a sidebar item
+- `events: Event` - a native event object
 
 @returns:
-- result        void | boolean     false - to prevent hiding of a sidebar item, otherwise - true
+Return `false` to prevent hiding of a sidebar item; otherwise, `true`.
 
 @example:
 sidebar.events.on("BeforeHide", function(id, event){

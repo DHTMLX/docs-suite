@@ -1,6 +1,6 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
+sidebar_label: isDisabled()
+title: isDisabled()
 ---          
 
 @short: checks whether a tab is disabled
@@ -8,10 +8,10 @@ title: isDisabled
 @signature: {'isDisabled(id?: string): boolean;'}
 
 @params:
-- id	string      the id of a tab
+`id: string` - the id of a tab
 
 @returns:
-- param	boolean     true, if a tab is disabled, otherwise false
+`true`, if a tab is disabled; otherwise, `false`.
 
 @example:
 // checks whether a currently active tab is disabled

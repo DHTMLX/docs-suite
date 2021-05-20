@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the current value of Slider
@@ -8,7 +8,7 @@ title: getValue
 @signature: {'getValue(): number[];'}
 
 @returns:
-- value 	array		the current value of the slider
+The current value of the slider.
 
 @example:
 var value = slider.getValue(); // -> [20]

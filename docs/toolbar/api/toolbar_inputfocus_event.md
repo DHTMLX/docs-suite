@@ -8,7 +8,7 @@ title: inputFocus
 @signature: {'inputFocus: (id: string) => void;'}
 
 @params:
-- id		string			the ID of a new control
+`id: string` - the ID of a new control
 
 @example:
 toolbar.events.on("inputFocus", function(id){

@@ -10,7 +10,7 @@ title: css
 @example:
 var popup = new dhx.Popup({
     css:"my_first_class my_second_class"
-}); 
+});
 
 popup.show();
 

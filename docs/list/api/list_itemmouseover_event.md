@@ -8,8 +8,8 @@ title: itemMouseOver
 @signature: {'itemMouseOver: (id: string | number, events: Event) => void;'}
 
 @params:
-- id   		string | number			the id of an item
-- events	Event					a native event object
+- `id: string | number` - the id of an item
+- `events: Event` - a native event object
 
 @example:
 list.events.on("ItemMouseOver", function(id, event) {

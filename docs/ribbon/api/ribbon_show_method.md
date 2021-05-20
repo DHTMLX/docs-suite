@@ -1,6 +1,6 @@
 ---
-sidebar_label: show
-title: show
+sidebar_label: show()
+title: show()
 ---          
 
 @short: shows an item of Ribbon
@@ -8,7 +8,7 @@ title: show
 @signature: {'show(ids: string | string[]): void;'}
 
 @params:
-- ids 		string | array		optional, an ID or an array of IDs of items
+`ids: string | array` - optional, an ID or an array of IDs of items
 
 @example:
 ribbon.show("save_btn");

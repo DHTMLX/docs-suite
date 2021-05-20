@@ -1,6 +1,6 @@
 ---
-sidebar_label: paint
-title: paint
+sidebar_label: paint()
+title: paint()
 ---          
 
 @short: repaints Toolbar on a page

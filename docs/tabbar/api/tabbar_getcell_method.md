@@ -1,6 +1,6 @@
 ---
-sidebar_label: getCell
-title: getCell
+sidebar_label: getCell()
+title: getCell()
 ---          
 
 @short: returns the config object of a cell
@@ -8,10 +8,10 @@ title: getCell
 @signature: getCell(id: string): object;
 
 @params:
-- id		string		the id of a cell
+`id: string` - the id of a cell
 
 @returns:
-param   object  the config object of a cell
+The config object of a cell.
 
 @example:
 tabbar.getCell("rome");

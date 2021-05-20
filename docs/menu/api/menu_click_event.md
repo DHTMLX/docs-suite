@@ -8,8 +8,8 @@ title: click
 @signature: {'click: (id: string, events: Event) => void;'}
 
 @params:
-- id 		string		the ID of a clicked control
-- events	Event		a native event object
+- `id: string` - the ID of a clicked control
+- `events: Event` - a native event object
 
 @example:
 menu.events.on("Click", function(id,e){

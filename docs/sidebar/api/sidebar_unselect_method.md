@@ -1,6 +1,6 @@
 ---
-sidebar_label: unselect
-title: unselect
+sidebar_label: unselect()
+title: unselect()
 ---          
 
 @short: unselects a selected Sidebar item
@@ -8,7 +8,7 @@ title: unselect
 @signature: {'unselect(id?: string): void;'}
 
 @params:
-- id    string      optional, the id of a Sidebar item
+`id: string` - optional, the id of a Sidebar item
 
 @example:
 // unselects all previously selected items

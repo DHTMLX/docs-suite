@@ -33,7 +33,7 @@ var layout = dhx.Layout("layout_container", {
 	]
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Align](https://snippet.dhtmlx.com/4w1033c9)
 

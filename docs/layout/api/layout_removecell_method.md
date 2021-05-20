@@ -1,6 +1,6 @@
 ---
-sidebar_label: removeCell
-title: removeCell
+sidebar_label: removeCell()
+title: removeCell()
 ---          
 
 @short: removes a specified cell
@@ -8,7 +8,7 @@ title: removeCell
 @signature: {'removeCell(id: string): void;'}
 
 @params:
-- id 	string 	the id of a cell
+`id: string` - the id of a cell
 
 @example:
 layout.removeCell("1");

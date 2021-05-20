@@ -7,7 +7,6 @@ title: labelWidth
 
 @signature: {'labelWidth?: string | number;'}
 
-
 @example:
 var slider = new dhx.Slider("slider_container", {
     labelWidth:100

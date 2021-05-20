@@ -8,8 +8,8 @@ title: doubleClick
 @signature: {'doubleClick: (id: string | number, events: Event) => void;'}
 
 @params:
-- id 	string, number 		the id of a clicked item
-- events 	Event 				a native event object
+- `id: string, number` - the id of a clicked item
+- `events: Event` - a native event object
 
 @example:
 list.events.on("DoubleClick", function(id, e){

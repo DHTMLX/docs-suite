@@ -8,7 +8,7 @@ title: afterHide
 @signature: {'afterHide: (events: Event) => void;'}
 
 @params:
-- events         Event       a native event object
+`events: Event` - a native event object
 
 @example:
 sidebar.events.on("AfterHide", function(event){

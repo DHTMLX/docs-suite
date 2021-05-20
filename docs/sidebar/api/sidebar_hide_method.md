@@ -1,6 +1,6 @@
 ---
-sidebar_label: hide
-title: hide
+sidebar_label: hide()
+title: hide()
 ---          
 
 @short: hides items of Sidebar
@@ -8,7 +8,7 @@ title: hide
 @signature: {'hide(ids: string | string[]): void;'}
 
 @params:
-- ids 		string | array		optional, an ID or an array of IDs of items
+`ids: string | array` - optional, an ID or an array of IDs of items
 
 @example:
 sidebar.hide("search");

@@ -8,10 +8,10 @@ title: beforeCollapse
 @signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
 @params:
-- id		string		the id of a cell
+`id: string` - the id of a cell
 
 @returns:
-- result	boolean | void		false - to prevent a cell from being collapsed, otherwise true
+Return `false` to prevent a cell from being collapsed; otherwise, `true`.
 
 @example:
 layout.events.on("BeforeCollapse", function(id){

@@ -1,6 +1,6 @@
 ---
-sidebar_label: getParent
-title: getParent
+sidebar_label: getParent()
+title: getParent()
 ---          
 
 @short: returns the parent of a cell
@@ -8,7 +8,7 @@ title: getParent
 @signature: {'getParent(): ILayout;'}
 
 @returns:
-- config	object		the config object of the parent of a cell
+The config object of the parent of a cell.
 
 @example:
 layout.getCell("1").getParent();

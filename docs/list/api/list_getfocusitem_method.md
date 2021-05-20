@@ -1,6 +1,6 @@
 ---
-sidebar_label: getFocusItem
-title: getFocusItem
+sidebar_label: getFocusItem()
+title: getFocusItem()
 ---          
 
 @short: returns the object of an item in focus
@@ -8,9 +8,9 @@ title: getFocusItem
 @signature: {'getFocusItem(): object;'}
 
 @returns:
-- id 		object		the object of an item in focus
+The object of an item in focus.
 
 @example:
-var focus = list.getFocusItem(); 
+var focus = list.getFocusItem();
 
 @descr:

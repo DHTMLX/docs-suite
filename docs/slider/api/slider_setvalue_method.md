@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: sets a value for the slider
@@ -8,7 +8,7 @@ title: setValue
 @signature: {'setValue(value: string | number | number[]): void;'}
 
 @params:
-- value		number,array		 the value to be set for Slider
+`value: number | array` - the value to be set for Slider
 
 @example:
 // sets value as a number

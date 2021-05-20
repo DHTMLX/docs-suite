@@ -8,8 +8,8 @@ title: change
 @signature: {'change: (index: number, previousIndex: number) => void;'}
 
 @params:
-- index     number  the index of a newly active page
-- previousIndex     number  the index of a previously active page
+- `index: number` - the index of a newly active page
+- `previousIndex: number` - the index of a previously active page
 
 @example:
 pagination.events.on("Change", function(index, previousIndex) {

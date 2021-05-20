@@ -1,6 +1,6 @@
 ---
-sidebar_label: disableTab
-title: disableTab
+sidebar_label: disableTab()
+title: disableTab()
 ---          
 
 @short: disables a tab on a page
@@ -8,10 +8,10 @@ title: disableTab
 @signature: {'disableTab(id: string): boolean;'}
 
 @params:
-- id	string  the id of a tab
+`id: string` - the id of a tab
 
 @returns:
-- param	boolean     'true' if the tab is disabled, 'false' otherwise
+`true` if the tab is disabled; otherwise, `false`.
 
 @example:
 tabbar.disableTab("London");

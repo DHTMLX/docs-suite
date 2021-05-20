@@ -1,6 +1,6 @@
 ---
-sidebar_label: setPageSize
-title: setPageSize
+sidebar_label: setPageSize()
+title: setPageSize()
 ---          
 
 @short: sets the number of items displayed on a page of the related widget
@@ -8,7 +8,7 @@ title: setPageSize
 @signature: {'setPageSize(size: number): void;'}
 
 @params:
-- size	number  the number of items
+`size: number` - the number of items
 
 @example:
 pagination.setPageSize(24);

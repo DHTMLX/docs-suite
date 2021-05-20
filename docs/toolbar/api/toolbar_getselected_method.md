@@ -1,6 +1,6 @@
 ---
-sidebar_label: getSelected
-title: getSelected
+sidebar_label: getSelected()
+title: getSelected()
 ---          
 
 @short: returns an array with IDs of selected items
@@ -8,7 +8,7 @@ title: getSelected
 @signature: {'getSelected(): string[];'}
 
 @returns:
-- param     array    an array of string values with IDs of selected items
+`param: array` - an array of string values with IDs of selected items
 
 @example:
 toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]

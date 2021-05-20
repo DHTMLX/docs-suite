@@ -1,6 +1,6 @@
 ---
-sidebar_label: getFocus
-title: getFocus
+sidebar_label: getFocus()
+title: getFocus()
 ---          
 
 @short: returns the id of an item in focus
@@ -8,7 +8,7 @@ title: getFocus
 @signature: {'getFocus(): string | number;'}
 
 @returns:
-- param	string | number      the id of an item in focus
+The id of an item in focus.
 
 @example:
 list.getFocus(); // -> "item_id"

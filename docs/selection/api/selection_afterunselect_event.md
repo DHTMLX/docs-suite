@@ -8,7 +8,7 @@ title: afterUnSelect
 @signature: {'afterUnSelect: (id: string) => void;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @example:
 tree.selection.events.on("AfterUnSelect", function(id){

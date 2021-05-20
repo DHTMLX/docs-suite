@@ -1,6 +1,6 @@
 ---
-sidebar_label: editItem
-title: editItem
+sidebar_label: editItem()
+title: editItem()
 ---          
 
 @short: enables editing of an item
@@ -8,7 +8,7 @@ title: editItem
 @signature: {'editItem(id: string): void;'}
 
 @params:
-- id	string|number		the id of an item
+`id: string|number` - the id of an item
 
 @example:
 list.editItem("1");

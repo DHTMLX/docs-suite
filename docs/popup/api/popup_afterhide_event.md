@@ -8,7 +8,7 @@ title: afterHide
 @signature: {'afterHide: (e: Event) => void;'}
 
 @params:
-- e				Event			the native mouse event
+`e: Event` - the native mouse event
 
 @example:
 popup.events.on("AfterHide", function(e){

@@ -8,7 +8,7 @@ title: afterClose
 @signature: {'afterClose: (id: string) => void;'}
 
 @params:
-- id 		string		the id of a closed tab
+`id: string` - the id of a closed tab
 
 @example:
 tabbar.events.on("AfterClose", function(id){

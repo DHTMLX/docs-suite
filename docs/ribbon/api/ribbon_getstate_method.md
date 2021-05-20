@@ -1,6 +1,6 @@
 ---
-sidebar_label: getState
-title: getState
+sidebar_label: getState()
+title: getState()
 ---          
 
 @short: gets current values/states of controls
@@ -8,7 +8,7 @@ title: getState
 @signature: {'getState(): IState;'}
 
 @returns:
-- state		object		an object with IDs of controls and their values/states
+An object with IDs of controls and their values/states.
 
 @example:
 var state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"right"}

@@ -1,6 +1,6 @@
 ---
-sidebar_label: enable
-title: enable
+sidebar_label: enable()
+title: enable()
 ---          
 
 @short: enables selection functionality in the component

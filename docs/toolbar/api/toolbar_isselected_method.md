@@ -8,10 +8,10 @@ title: isSelected
 @signature: {'isSelected(id: string): boolean;'}
 
 @params:
-- id	string  the id of a Toolbar item
+`id: string` - the id of a Toolbar item
 
 @returns:
-- param	boolean     true, if an item of Toolbar is selected, otherwise false
+`True`, if an item of Toolbar is selected, otherwise `false`.
 
 @example:
 toolbar.isSelected("web"); // -> returns true/false

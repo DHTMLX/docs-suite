@@ -1,6 +1,6 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
+sidebar_label: isDisabled()
+title: isDisabled()
 ---          
 
 @short: checks whether an item of Menu is disabled
@@ -8,10 +8,10 @@ title: isDisabled
 @signature: {'isDisabled(id: string): boolean;'}
 
 @params:
-- id 		string		an id of the Menu item
+`id: string` - an id of the Menu item
 
 @returns:
-param 	boolean		true, if an item of Menu is disabled, otherwise false
+`true`, if an item of Menu is disabled; otherwise, `false`.
 
 @example:
 menu.isDisabled("id"); // -> returns true/false

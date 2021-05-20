@@ -1,6 +1,6 @@
 ---
-sidebar_label: isSelected
-title: isSelected
+sidebar_label: isSelected()
+title: isSelected()
 ---          
 
 @short: checks whether a specified Sidebar item is selected
@@ -8,10 +8,10 @@ title: isSelected
 @signature: {'isSelected(id: string): boolean;'}
 
 @params:
-- id    string      the id of a Sidebar item
+`id: string` - the id of a Sidebar item
 
 @returns:
-- param     boolean     true, if an item of Sidebar is selected, otherwise false
+`true`, if an item of Sidebar is selected; otherwise, `false`.
 
 @example:
 sidebar.isSelected("categoryPost"); // -> returns true/false

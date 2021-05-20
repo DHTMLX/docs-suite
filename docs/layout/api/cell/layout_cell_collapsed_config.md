@@ -14,7 +14,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
+@descr:
 
 [comment]: # (@relatedapi: layout/api/layout_collapsable_config.md)
 

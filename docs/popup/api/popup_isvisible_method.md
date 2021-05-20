@@ -1,6 +1,6 @@
 ---
-sidebar_label: isVisible
-title: isVisible
+sidebar_label: isVisible()
+title: isVisible()
 ---          
 
 @short: checks whether a popup is visible
@@ -8,7 +8,7 @@ title: isVisible
 @signature: {'isVisible(): boolean;'}
 
 @returns:
-- result	boolean 		true, if a popup is visible, otherwise - false
+`true`, if a popup is visible; otherwise, `false`.
 
 @example:
 popup.isVisible(); // -> true/false

@@ -14,7 +14,7 @@ var list = new dhx.List("list_container", {
 	virtual: true
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)
 

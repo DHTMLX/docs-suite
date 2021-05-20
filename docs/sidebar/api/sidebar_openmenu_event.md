@@ -8,7 +8,7 @@ title: openMenu
 @signature: {'openMenu: (id: string) => void;'}
 
 @params:
-- id 		string		the ID of an opened menu item
+`id: string` - the ID of an opened menu item
 
 @example:
 sidebar.events.on("OpenMenu", function(id){

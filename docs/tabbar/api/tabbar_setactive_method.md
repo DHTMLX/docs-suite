@@ -1,6 +1,6 @@
 ---
-sidebar_label: setActive
-title: setActive
+sidebar_label: setActive()
+title: setActive()
 ---          
 
 @short: sets an active tab
@@ -8,7 +8,7 @@ title: setActive
 @signature: {'setActive(id: string): void;'}
 
 @params:
-- id 		string		the id of a tab
+`id: string` - the id of a tab
 
 @example:
 var tabbar = new dhx.Tabbar("tabbar_container", {

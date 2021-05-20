@@ -8,7 +8,7 @@ title: mouseDown
 @signature: {'mousedown: (event: Event) => void;'}
 
 @params:
-- event 		event		the native event object
+`event: event` - the native event object
 
 @example:
 slider.events.on("MouseDown", function(e){

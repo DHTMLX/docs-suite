@@ -100,7 +100,7 @@ menu.show(id);
 menu.hide(id);
 ~~~
 
-### Enabling/disabling a navItem 
+### Enabling/disabling a navItem
 
 Any navItem in the menu can be enabled/disabled:
 

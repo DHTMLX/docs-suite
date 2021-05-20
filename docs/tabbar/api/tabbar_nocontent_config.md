@@ -1,6 +1,6 @@
 ---
-sidebar_label: noContent
-title: noContent
+sidebar_label: noContent()
+title: noContent()
 ---  
 
 @short: defines whether tabs contain any content

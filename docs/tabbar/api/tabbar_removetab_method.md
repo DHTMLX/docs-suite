@@ -1,6 +1,6 @@
 ---
-sidebar_label: removeTab
-title: removeTab
+sidebar_label: removeTab()
+title: removeTab()
 ---          
 
 @short: removes a tab from a tabbar
@@ -8,7 +8,7 @@ title: removeTab
 @signature: {'removeTab(id: string): void;'}
 
 @params:
-- id 		string 			the id of a tab to remove
+`id: string` - the id of a tab to remove
 
 @example:
 var id = tabbar.getId(0);

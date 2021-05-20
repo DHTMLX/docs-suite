@@ -8,10 +8,10 @@ title: beforeClose
 @signature: {'beforeClose: (id: string) => boolean | void;'}
 
 @params:
-- id 		string		the id of a closed tab
+`id: string` - the id of a closed tab
 
 @returns:
-- result	boolean		false - to prevent closing of a tab, otherwise true
+Return `false` to prevent closing of a tab; otherwise, `true`.
 <!-- boolean | void; ??? -->
 
 @example:

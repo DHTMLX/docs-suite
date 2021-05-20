@@ -1,6 +1,6 @@
 ---
-sidebar_label: enable
-title: enable
+sidebar_label: enable()
+title: enable()
 ---          
 
 @short: enables disabled items of Sidebar
@@ -8,7 +8,7 @@ title: enable
 @signature: {'enable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string,array		optional, one ID or an array of IDs of items
+`ids: string | array` - optional, one ID or an array of IDs of items
 
 @example:
 sidebar.enable("search");

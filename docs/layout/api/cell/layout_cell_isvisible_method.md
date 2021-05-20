@@ -1,6 +1,6 @@
 ---
-sidebar_label: isVisible
-title: isVisible
+sidebar_label: isVisible()
+title: isVisible()
 ---          
 
 @short: checks whether a cell is visible
@@ -8,7 +8,7 @@ title: isVisible
 @signature: {'isVisible(): boolean;'}
 
 @returns:
-- result	boolean		true, if the cell is visible
+`true`, if the cell is visible.
 
 @example:
 layout.getCell("1").isVisible(); // -> true|false

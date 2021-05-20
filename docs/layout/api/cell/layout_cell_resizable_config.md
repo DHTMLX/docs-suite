@@ -14,7 +14,7 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)
 

@@ -8,11 +8,11 @@ title: beforeHide
 @signature: {'beforeHide: (id: string, events: Event) => void | boolean;'}
 
 @params:
-- id 		string		the ID of a menu item
-- events    Event       a native event object
+- `id: string` - the ID of a menu item
+- `events: Event` - a native event object
 
 @returns:
-- result        void | boolean     false - to prevent hiding of a menu item, otherwise - true
+Return `false` to prevent hiding of a menu item; otherwise, `true`.
 
 @example:
 menu.events.on("BeforeHide", function(id, event){

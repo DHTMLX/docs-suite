@@ -8,8 +8,8 @@ title: beforeHide
 @signature: {'beforeHide: (id: string, events: Event) => void | boolean;'}
 
 @params:
-- id 		string		the ID of a toolbar item
-- events         Event       a native event object
+- `id: string` - the ID of a toolbar item
+- `events: Event` - a native event object
 
 @returns:
 - result        void | boolean     false - to prevent hiding of a toolbar item, otherwise - true -->
