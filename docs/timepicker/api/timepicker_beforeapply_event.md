@@ -8,7 +8,7 @@ title: beforeApply
 @signature: {'beforeApply: (time: string | ITimeObject) => void;'}
 
 @params:
-`value: string | object` - the value of a timepicker
+`time: string | object` - the value of a timepicker
 
 @returns:
 Return `false` to prevent saving the timepicker value; otherwise, `true`.
