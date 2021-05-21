@@ -8,7 +8,7 @@ title: beforeShow
 @signature: beforeShow: (node: HTMLElement) => void | boolean;
 
 @params:
-`element: HTMLElement` - the container a popup is placed in
+`node: HTMLElement` - the container a popup is placed in
 
 @returns:
 Return `true` to show a popup, `false` to block showing a popup.

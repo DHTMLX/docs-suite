@@ -18,4 +18,4 @@ sidebar.events.on("InputCreated", function(id, el){
 
 @descr:
 
-[comment]: # (@related: sidebar/events.md_
+[comment]: # (@related: sidebar/events.md_)

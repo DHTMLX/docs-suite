@@ -8,7 +8,7 @@ title: attach()
 @signature: {'attach(name: string | object, config?: any): VNode;'}
 
 @params:
-- `name: string|object` - the name or object of a component
+- `name: string | object` - the name or object of a component
 - `config: object` - optional, the configuration settings of a component
 
 @returns:

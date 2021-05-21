@@ -8,7 +8,7 @@ title: show()
 @signature: {'show(node: HTMLElement, config?: IShowConfig, attach?: any): void;'}
 
 @params:
-- `element: HTMLElement` - mandatory, the container to place a popup in
+- `node: HTMLElement` - mandatory, the container to place a popup in
 - `config: object` - optional, the configuration object of a popup
 
 @example:
@@ -22,7 +22,7 @@ popup.show("popup_container");
 
 **Related samples**:
 - [Popup. Auto Positioning](https://snippet.dhtmlx.com/bz1ekc71)
-- [Popup.Show position](https://snippet.dhtmlx.com/bu4uj2ik)
+- [Popup. Show position](https://snippet.dhtmlx.com/bu4uj2ik)
 
 The **config** object can contain the properties below:
 
