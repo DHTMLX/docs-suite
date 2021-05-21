@@ -8,7 +8,7 @@ title: beforeHide
 @signature: {'beforeHide: (fromOuterClick: boolean, e: Event) => void | boolean;'}
 
 @params:
-- `fromOuterClick: boolean` - true, for a click outside a popup, otherwise - false
+- `fromOuterClick: boolean` - *true*, for a click outside a popup; otherwise, *false*
 - `e: Event` - the native mouse event
 
 @returns:
