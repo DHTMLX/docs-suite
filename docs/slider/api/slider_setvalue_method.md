@@ -8,7 +8,7 @@ title: setValue()
 @signature: {'setValue(value: string | number | number[]): void;'}
 
 @params:
-`value: number | array` - the value to be set for Slider
+`value: string | number | array` - the value to be set for Slider
 
 @example:
 // sets value as a number

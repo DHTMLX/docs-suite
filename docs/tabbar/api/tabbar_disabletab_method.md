@@ -11,7 +11,7 @@ title: disableTab()
 `id: string` - the id of a tab
 
 @returns:
-`true` if the tab is disabled; otherwise, `false`.
+`true`, if the tab is disabled; otherwise, `false`.
 
 @example:
 tabbar.disableTab("London");

@@ -11,7 +11,7 @@ title: isSelected
 `id: string` - the id of a Toolbar item
 
 @returns:
-`True`, if an item of Toolbar is selected, otherwise `false`.
+`True`, if an item of Toolbar is selected; otherwise, `false`.
 
 @example:
 toolbar.isSelected("web"); // -> returns true/false

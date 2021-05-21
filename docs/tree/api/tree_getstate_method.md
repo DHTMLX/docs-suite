@@ -7,9 +7,8 @@ title: getState()
 
 @signature: {'getState(): ITreeState;'}
 
-`check`
 @returns:
-- treeState		object		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state
+An object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state.
 
 @example:
 var treeState = tree.getState();

@@ -12,7 +12,6 @@ title: beforeClose
 
 @returns:
 Return `false` to prevent closing of a tab; otherwise, `true`.
-<!-- boolean | void; ??? -->
 
 @example:
 tabbar.events.on("BeforeClose", function(id){

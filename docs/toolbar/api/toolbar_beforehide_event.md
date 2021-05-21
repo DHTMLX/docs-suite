@@ -12,7 +12,7 @@ title: beforeHide
 - `events: Event` - a native event object
 
 @returns:
-- result        void | boolean     false - to prevent hiding of a toolbar item, otherwise - true -->
+Return `false` to prevent hiding of a toolbar item; otherwise, `true`.
 
 @example:
 toolbar.events.on("BeforeHide", function(id, event){

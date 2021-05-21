@@ -12,7 +12,7 @@ title: beforeCheck
 - `id: string` - the id of the item
 
 @returns:
-- param     boolean     false - to block changing the state of a tree item, otherwise true
+Return `false` to block changing the state of a tree item; otherwise, `true`.
 
 @example:
 tree.events.on("beforeCheck", function (index, id) {

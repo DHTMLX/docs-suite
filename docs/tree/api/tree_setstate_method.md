@@ -7,9 +7,8 @@ title: setState()
 
 @signature: {'setState(state: ITreeState): void;'}
 
-`check`
 @params:
-- treeState 	object 		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state
+`state: object` - an object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state
 
 @example:
 // getting the state of a tree
