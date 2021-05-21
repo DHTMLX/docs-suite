@@ -4,8 +4,8 @@ title: forEach()
 ---          
 
 @short: iterates over all specified layout cells
-[comment]: # (TODO: api change (параметры сейчас - это параметры приходящие в callback, можно после релиза)
-@signature: {'forEach(callback: LayoutCallback): void;'}
+
+@signature: {'forEach(callback: LayoutCallback, parentID: string, level: number): void;'}
 
 @params:
 - `callback: function` - a function that will iterate over specified Layout cells

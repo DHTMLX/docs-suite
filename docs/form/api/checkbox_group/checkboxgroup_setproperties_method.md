@@ -8,7 +8,7 @@ title: setProperties()
 @signature: {'setProperties(arg?: string | ICheckboxGroupProps, props?: ICheckboxGroupItemProps): void;'}
 
 @params:
-- `arg: string,object` - optional, either the id of a checkbox, or an object with the available attributes of the CheckboxGroup control and their new values
+- `arg: string | object` - optional, either the id of a checkbox, or an object with the available attributes of the CheckboxGroup control and their new values
 - `props: object` - optional, an object with the available attributes of the checkbox and their new values
 
 @example:

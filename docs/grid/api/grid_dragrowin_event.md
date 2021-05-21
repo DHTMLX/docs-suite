@@ -12,7 +12,7 @@ title: dragRowIn
 - `events: MouseEvent` - a native HTML event object
 
 @returns:
-Return `false` to prevent dragging a row to another potential target; otherwise, `true`.
+Return `false` to prevent dragging of a row to another potential target; otherwise, `true`.
 
 @example:
 grid.events.on("DragRowIn", function(data, events) {

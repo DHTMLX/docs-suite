@@ -7,6 +7,10 @@ title: beforeDrop
 
 @signature: {'beforeDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @returns:
 Return `false` to block the default action; otherwise, `true`.
 

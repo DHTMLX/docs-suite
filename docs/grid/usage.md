@@ -12,7 +12,7 @@ The API of dhtmlxGrid allows setting configuration of columns, getting an object
 
 ### Setting columns configuration
 
-You can specify the configuration of Grid columns on the fly via the [setColumns()](grid/api/grid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
+You can specify the configuration of Grid columns on the fly via the [](grid/api/grid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
 
 ~~~js
 grid.setColumns([
@@ -26,7 +26,7 @@ You can find the full list of the available configuration options of a Grid colu
 
 ### Getting configuration of a column
 
-It is possible to return an object with attributes of a column via its id. Use the [getColumn()](grid/api/grid_getcolumn_method.md) method for this purpose.
+It is possible to return an object with attributes of a column via its id. Use the [](grid/api/grid_getcolumn_method.md) method for this purpose.
 
 ~~~js
 var column = grid.getColumn("b"); // ->
@@ -38,7 +38,7 @@ The method returns an object with configuration of the specified column. You can
 
 ### Getting configuration of a cell
 
-There is the [getCellRect()](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
+There is the [](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
 ~~~js
 var rect = grid.getCellRect("1","c");
@@ -71,7 +71,7 @@ The return object includes the following attributes:
 Getting header filter
 --------------------
 
-You may want to manipulate a filter specified in the header of a grid, for example, to set/unset the focus on the filter, to change the filter, or clear it. To do that, you should get an object of the header filter by column id via the [getHeaderFilter](grid/api/grid_getheaderfilter_method.md) method: 
+You may want to manipulate a filter specified in the header of a grid, for example, to set/unset the focus on the filter, to change the filter, or clear it. To do that, you should get an object of the header filter by column id via the [](grid/api/grid_getheaderfilter_method.md) method: 
 
 ~~~js
 var countryFilter = grid.getHeaderFilter("country");
@@ -97,7 +97,7 @@ The method returns either an HTML object or an object with Combobox configuratio
 Hiding/showing a column
 --------------------------
 
-It is possible to show and hide a column in the grid via the [showColumn()](grid/api/grid_showcolumn_method.md) and [hideColumn()](grid/api/grid_hidecolumn_method.md) methods. 
+It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods. 
 
 ~~~js
 //showing a column
@@ -125,7 +125,7 @@ grid.isColumnHidden("country"); // -> true|false
 Hiding/showing a row
 --------------------------
 
-Starting from v7.0, it is possible to show and hide a row in the grid via the [showRow()](grid/api/grid_showrow_method.md) and [hideRow()](grid/api/grid_hiderow_method.md) methods. 
+Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods. 
 
 ~~~js
 //showing a row
@@ -155,7 +155,7 @@ You can manipulate columns and rows spans inside the grid with the help of corre
 
 ### Adding spans
 
-In order to add a col/row span into the grid, use the [addSpan()](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
+In order to add a col/row span into the grid, use the [](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
 ~~~js
 grid.addSpan({ 
@@ -200,7 +200,7 @@ These are possible fields of a span object:
 
 ### Getting spans
 
-You can return the col/row span a cell is a part of using the [getSpan()](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
+You can return the col/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~js
 var span = grid.getSpan("10","a"); 
@@ -211,7 +211,7 @@ As a result, you'll get an object with a span configuration, if any span include
 
 ### Removing spans
 
-To remove an existing span, make use of the [removeSpan()](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters: 
+To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters: 
 
 ~~~js
 grid.removeSpan("10","a");
@@ -224,7 +224,7 @@ The API of dhtmlxGrid provides the possibility to set scrolls to the necessary p
 
 ### Scrolling to specific coordinates
 
-You can scroll grid content to exact position defined by x and y coordinates via the [scroll()](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
+You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
 
 ~~~js
 grid.scroll(75,230);
@@ -242,7 +242,7 @@ grid.scrollTo("15","c");
 
 ### Getting the state of scroll
 
-To return the current state of scroll, use the [getScrollState()](grid/api/grid_getscrollstate_method.md) method. 
+To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
 
 ~~~js
 var state = grid.getScrollState(); // -> {x:0,y:0}
@@ -427,7 +427,7 @@ grid.editCell(grid.data.getId(0),"project");
 
 **Related sample**: [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
 
-To finish editing of a cell, use the [editEnd()](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
+To finish editing of a cell, use the [](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
 ~~~js
 grid.editEnd(); // the edited data will be saved
@@ -435,7 +435,7 @@ grid.editEnd(); // the edited data will be saved
 grid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [editEnd()](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
+{{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
 
 
 Exporting Grid
@@ -512,7 +512,7 @@ The **csv()** method returns a CSV string with Grid data.
 Repainting Grid
 ------------------
 
-In case you've changed some configuration settings of a grid, you can repaint it on a page via the [paint()](grid/api/grid_paint_method.md) method:
+In case you've changed some configuration settings of a grid, you can repaint it on a page via the [](grid/api/grid_paint_method.md) method:
 
 ~~~js
 grid.paint();
@@ -521,7 +521,7 @@ grid.paint();
 Destructing Grid
 -------------------
 
-When it's necessary to release resources occupied by Grid during its activity, you can make use of the [destructor()](grid/api/grid_destructor_method.md) method:
+When it's necessary to release resources occupied by Grid during its activity, you can make use of the [](grid/api/grid_destructor_method.md) method:
 
 ~~~js
 grid.destructor();

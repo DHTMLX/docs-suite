@@ -1639,7 +1639,6 @@ module.exports = {
                   "list/api/list_data_config",
                   "list/api/list_dragcopy_config",
                   "list/api/list_dragmode_config",
-                  "list/api/list_dropbehaviour_config",
                   "list/api/list_editable_config",
                   "list/api/list_eventhandlers_config",
                   "list/api/list_height_config",

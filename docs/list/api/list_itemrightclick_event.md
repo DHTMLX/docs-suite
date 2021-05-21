@@ -9,10 +9,10 @@ title: itemRightClick
 
 @params:
 - `id: string,number` - the id of a right-clicked item
-- `events: MouseEvent` - an event object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("itemRightClick", function(id, e){
+list.events.on("itemRightClick", function(id, events){
     // your code here
 });
 

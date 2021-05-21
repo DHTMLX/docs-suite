@@ -7,6 +7,10 @@ title: cancelDrop
 
 @signature: {'cancelDrop: (data: object, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 list.events.on("CancelDrop", function(data, events) {
     // your logic here

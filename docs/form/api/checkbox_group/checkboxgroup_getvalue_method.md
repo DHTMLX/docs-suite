@@ -10,6 +10,9 @@ title: getValue()
 @params:
 `id: string` - optional, the id of a checkbox
 
+@returns:
+Either a string with the current value of the checkbox, or boolean value with the state of the checkbox, or an object with current values/states of the checkboxes.
+
 @example:
 // returns string value if the value is specified in the checkbox configuration
 form.getItem("CheckboxGroup").getValue("checkbox_id_1"); //-> "some_value"

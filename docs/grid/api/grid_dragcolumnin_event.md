@@ -12,7 +12,7 @@ title: dragColumnIn
 - `events: MouseEvent`		a native HTML event object
 
 @returns:
-Return `false` to prevent dragging a column to another potential target; otherwise, `true`.
+Return `false` to prevent dragging of a column to another potential target; otherwise, `true`.
 
 @example:
 grid.events.on("DragColumnIn", function(data, events) {
