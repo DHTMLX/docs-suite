@@ -5,7 +5,7 @@ title: getValue()
 
 @short: gets id(s) of items from data collection selected in ComboBox
 
-@signature: {'getValue(asArray?: boolean): string[] | string;'}
+@signature: {'getValue(asArray?: boolean): string | string[];'}
 
 @params:
 `asArray: boolean` - true, to return ids as an array of strings
