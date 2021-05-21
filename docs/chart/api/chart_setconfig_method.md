@@ -36,7 +36,7 @@ var config = {
         }
     ]
 }
- 
+
 chart.setConfig(config);
 
 @descr:

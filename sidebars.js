@@ -405,6 +405,7 @@ module.exports = {
                 type: "category",
                 label: "Events",
                 items: [
+                  "dataview/api/dataview_afterdrag_event",
                   "dataview/api/dataview_afterdrop_event",
                   "dataview/api/dataview_aftereditend_event",
                   "dataview/api/dataview_aftereditstart_event",
@@ -428,7 +429,6 @@ module.exports = {
                 type: "category",
                 label: "Properties",
                 items: [
-                  "dataview/api/dataview_afterdrag_event",
                   "dataview/api/dataview_css_config",
                   "dataview/api/dataview_data_config",
                   "dataview/api/dataview_dragcopy_config",
