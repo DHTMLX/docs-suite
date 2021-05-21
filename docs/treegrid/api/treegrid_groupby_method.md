@@ -8,7 +8,7 @@ title: groupBy()
 @signature: {'groupBy(property: string | ((item: IDataItem) => string)): void;'}
 
 @params:
-`param: string | function` - the id of the column or the rule of grouping
+`property: string | function` - the id of the column or the rule of grouping
 
 @example:
 //Grouping by values of the specified column

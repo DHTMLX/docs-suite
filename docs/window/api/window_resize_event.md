@@ -5,7 +5,7 @@ title: resize
 
 @short: fires on resizing a window
 
-@signature: {'resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, editettypes: IDirectionConfig) => void;'}
+@signature: {'resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, side: IDirectionConfig) => void;'}
 
 @params:
 - `state: object` - an object with the new size and (or) position of a window

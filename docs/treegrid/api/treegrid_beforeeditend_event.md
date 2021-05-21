@@ -10,7 +10,7 @@ title: beforeEditEnd
 @params:
 - `value: string | number` - the new value of a cell
 - `row: object` - an object with a row configuration
-- `column: object` - an object with a column configuration
+- `col: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent closing of an editor; otherwise, `true`.
