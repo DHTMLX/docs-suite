@@ -7,11 +7,15 @@ title: showAt()
 
 @signature: {'showAt(elem: HTMLElement | MouseEvent | string, showAt: "bottom" | "right"): void;'}
 
+@params:
+- `elem: HTMLElement | MouseEvent | string` - a master HTML element (or its id) or the mouse event that will trigger the context menu
+- `showAt: string` - a place where the context menu will be shown relative to the element
+
 @example:
 var cmenu = new dhx.ContextMenu();
 document.querySelector('#menu').oncontextmenu = function(e) {
     e.preventDefault();
-    cmenu.showAt("menu", 'right');    
+    cmenu.showAt("menu", 'right');
 }
 
 @descr:
