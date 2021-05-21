@@ -7,6 +7,10 @@ title: canDrop
 
 @signature: {'canDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 list.events.on("CanDrop", function(data, events) {
     // your logic here

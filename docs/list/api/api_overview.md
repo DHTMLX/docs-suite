@@ -55,7 +55,6 @@ title: List API overview
 | [](list/api/list_data_config.md)               | @getshort(list/api/list_data_config.md)               |
 | [](list/api/list_dragcopy_config.md)           | @getshort(list/api/list_dragcopy_config.md)           |
 | [](list/api/list_dragmode_config.md)           | @getshort(list/api/list_dragmode_config.md)           |
-| [](list/api/list_dropbehaviour_config.md)      | @getshort(list/api/list_dropbehaviour_config.md)      |
 | [](list/api/list_editable_config.md)           | @getshort(list/api/list_editable_config.md)           |
 | [](list/api/list_eventhandlers_config.md)      | @getshort(list/api/list_eventhandlers_config.md)      |
 | [](list/api/list_height_config.md)             | @getshort(list/api/list_height_config.md)             |

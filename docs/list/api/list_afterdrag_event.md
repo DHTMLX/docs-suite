@@ -7,6 +7,10 @@ title: afterDrag
 
 @signature: afterDrag: (data: object, events: MouseEvent) => void;
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 list.events.on("AfterDrag", function(data, events) {
     // your logic here

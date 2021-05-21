@@ -11,7 +11,7 @@ title: beforeAdd
 `id: string` - the id of a cell
 
 @returns:
-- result	boolean		false - to prevent adding of a cell, otherwise true
+Return `false` to prevent adding of a cell; otherwise, `true`.
 
 @example:
 layout.events.on("BeforeAdd", function(id){

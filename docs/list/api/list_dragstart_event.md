@@ -7,6 +7,10 @@ title: dragStart
 
 @signature: {'dragStart: (data: IDragInfo, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 list.events.on("DragStart", function(data, events) {
     // your logic here

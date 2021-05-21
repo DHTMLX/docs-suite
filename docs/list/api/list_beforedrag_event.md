@@ -7,6 +7,10 @@ title: beforeDrag
 
 @signature: {'beforeDrag: (data: object, events: MouseEvent) => void | boolean;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @returns:
 Return `false` to block dragging of an item; otherwise, `true`.
 

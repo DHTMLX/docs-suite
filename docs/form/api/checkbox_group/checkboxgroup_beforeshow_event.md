@@ -8,7 +8,7 @@ title: beforeShow
 @signature: {'beforeShow: (value: ICheckboxGroupValue) => boolean | void;'}
  
 @params:
-`value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of a checkbox.
+`value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

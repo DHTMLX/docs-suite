@@ -11,6 +11,9 @@ title: beforeUploadFile
 - `file: object` - the file object
 - `value: array` - the current value of the control
 
+@returns:
+Return `false` to cancel file uploading; otherwise, `true`.
+
 @example:
 form.getItem("simplevault").events.on("BeforeUploadFile", function(file, value) {
     console.log("BeforeUploadFile", file, value);

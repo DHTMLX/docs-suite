@@ -19,8 +19,6 @@ layout.events.on("BeforeCollapse", function(id){
     return false;
 });
 
-@example:
-
 @descr:
 
 **Related sample**: [Layout. Events](https://snippet.dhtmlx.com/fyxw0map)

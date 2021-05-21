@@ -9,7 +9,7 @@ title: focusChange
 
 @params:
 - `focusIndex: number` - the position of an item in focus
-- `id: string|number` - the id of the item
+- `id: string | number` - the id of the item
 
 @example:
 dataview.events.on("FocusChange", function(index, id){

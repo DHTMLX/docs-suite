@@ -8,7 +8,7 @@ title: change
 @signature: {'change: (ids: string | string[]) => void;'}
 
 @params:
-`id: string|string[]` - the id(s) of a newly selected option(s)
+`id: string | string[]` - the id(s) of a newly selected option(s)
 
 @example:
 combo.events.on("Change", function(id){
