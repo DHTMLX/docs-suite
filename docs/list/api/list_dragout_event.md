@@ -7,6 +7,10 @@ title: dragOut
 
 @signature: {'dragOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 list.events.on("DragOut", function(data, events) {
     // your logic here

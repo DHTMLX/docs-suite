@@ -7,6 +7,10 @@ title: dragIn
 
 @signature: {'dragIn: (data: object, events: MouseEvent) => void | boolean;'}
 
+@params:
+- `id: string | number` - the id of a clicked item
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 list.events.on("DragIn", function(data, events) {
     // your logic here
