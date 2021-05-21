@@ -25,8 +25,6 @@ popup.events.on("BeforeShow", function(element){
 - [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 - [Popup. Prevent Show](https://snippet.dhtmlx.com/z788l8r7)
 
-The event is blockable. Return *false* to block showing a popup.
-
 [comment]: # (@related: popup/event_handling.md)
 
 [comment]: # (@relatedapi: popup/api/popup_aftershow_event.md)

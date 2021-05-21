@@ -8,7 +8,7 @@ title: addTab()
 @signature: {'addTab(config: ITabbarConfig, index: number): void;'}
 
 @params:
-- `view: object` - an object of a tab 
+- `config: object` - an object of a tab 
 - `index: number` - the position to add a tab into
 
 @example:
@@ -18,7 +18,7 @@ tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 **Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
 
-The **view** object may include the following properties:
+The **config** object may include the following properties:
 
 <table>
 	<tbody>
