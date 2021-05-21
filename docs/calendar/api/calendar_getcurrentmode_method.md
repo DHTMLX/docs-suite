@@ -1,6 +1,6 @@
 ---
-sidebar_label: getCurrentMode
-title: getCurrentMode
+sidebar_label: getCurrentMode()
+title: getCurrentMode()
 ---          
 
 @short: returns the current mode of displaying Calendar
@@ -8,7 +8,7 @@ title: getCurrentMode
 @signature: {'getCurrentMode(): ViewMode;'}
 
 @returns:
-- mode	string      the current mode of the calendar ("calendar", "year", "month", "timepicker")
+The current mode of the calendar ("calendar", "year", "month", "timepicker").
 
 @example:
 var mode = calendar.getCurrentMode(); // -> "calendar"

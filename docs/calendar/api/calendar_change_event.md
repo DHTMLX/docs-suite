@@ -8,9 +8,9 @@ title: change
 @signature: {'change: (date: Date, oldDate: Date, byClick: boolean) => void;'}
 
 @params:
-- date  		Date    	the newly selected date
-- oldDate   	Date    	the previously selected date
-- click 		boolean 	defines whether the change happened because of a click on a date (true), or due to an API call (false)
+- `date: Date` - the newly selected date
+- `oldDate: Date` - the previously selected date
+- `byClick: boolean` - defines whether the change happened because of a click on a date - *true*, or due to an API call - *false*
 
 @example:
 calendar.events.on("Change",function(date, oldDate, click){

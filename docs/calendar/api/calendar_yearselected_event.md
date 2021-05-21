@@ -8,7 +8,7 @@ title: yearSelected
 @signature: {'yearSelected: (year: number) => void;'}
 
 @params:
-- year      number      the number of the selected year
+`year: number` - the number of the selected year
 
 @example:
 calendar.events.on("YearSelected", function(year) {

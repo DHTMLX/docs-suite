@@ -7,7 +7,7 @@ title: mode
 
 @signature: {'mode?: ViewMode;'}
 
-@values: "calendar","month","year","timepicker" 
+@values: "calendar", "month", "year", "timepicker"
 
 @default: "calendar"
 
