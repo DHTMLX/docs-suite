@@ -3,6 +3,8 @@ sidebar_label: Geo tracking demo
 title: Geo Tracking Demo
 --- 
 
+[comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
+
 ![](../assets/optimus/demo/geotracking_demo.png)
 
 This demo shows how to create a geo tracking application for delivery management. It is developed using DHTMLX Suite widgets: Layout, Sidebar, Tabbar, Form, and Dataview.

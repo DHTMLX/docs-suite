@@ -3,6 +3,8 @@ sidebar_label: UI dashboard demo
 title: UI Dashboard Demo
 --- 
 
+[comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
+
 ![](../assets/optimus/demo/dashboard_demo.png)
 
 This demo application shows how to create a dashboard for a ticketing system based on DHTMLX Suite widgets: Layout, Grid, DataView, Toolbar, Chart, Window, and Form.

@@ -3,6 +3,8 @@ sidebar_label: File manager demo
 title: File Manager Demo
 --- 
 
+[comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
+
 ![](../assets/optimus/demo/filemanager_demo.png)
 
 This demo application shows how to create a Material-style file manager app based on DHTMLX Suite widgets: Grid, Tree, Layout, DataView, Toolbar, Sidebar, Menu, Form, and Tabbar.

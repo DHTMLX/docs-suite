@@ -3,6 +3,8 @@ sidebar_label: Sales KPI tracking system demo
 title: Sales KPI Tracking System Demo
 --- 
 
+[comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
+
 ![](../assets/optimus/demo/kpi_demo.png)
 
 This demo application shows how to create a Sales KPI tracking system based on the DHTMLX Suite widgets: Layout, List, Toolbar, and Charts.

@@ -3,6 +3,8 @@ sidebar_label: Online exam system demo
 title: Online Exam System Demo
 --- 
 
+[comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
+
 ![](../assets/optimus/demo/examsystem_demo.png)
 
 This demo application shows how to create an online examination system for an educational project with subjects, exams, and students' results. It is developed using DHTMLX Suite widgets: TreeGrid, Form, Sidebar, and Toolbar.
