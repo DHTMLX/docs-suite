@@ -8,7 +8,7 @@ title: beforeExpand
 @signature: {'beforeExpand: () => boolean | void;'}
 
 @returns:
-param       boolean | void     false - to prevent expanding a sidebar, otherwise - false `check`
+Return `false` to prevent expanding a sidebar; otherwise, `true`.
 
 @example:
 sidebar.events.on("BeforeExpand", function() {

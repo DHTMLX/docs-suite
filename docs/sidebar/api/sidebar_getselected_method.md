@@ -8,7 +8,7 @@ title: getSelected()
 @signature: {'getSelected(): string[];'}
 
 @returns:
-`param: array` - an array of IDs of selected items
+An array of IDs of selected items
 
 @example:
 sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
