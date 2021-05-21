@@ -12,7 +12,7 @@ title: beforeHide
 - `init: boolean` - true, if the event is triggered on the control initialization; otherwise, false
 
 @returns:
-Return `false` to prevent a control from being hidden; otherwise, true.
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.getItem("text").events.on("BeforeHide", function(value, init) {

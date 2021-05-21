@@ -8,7 +8,7 @@ title: isVisible()
 @signature: {'isVisible(name?: string): boolean;'}
 
 @params:
-- `name|id: string` - optional, the name of a Form control or its id (if the name attribute is not defined in the config of the control)
+`name|id: string` - optional, the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
 `true`, if a form is visible; otherwise, `false`.

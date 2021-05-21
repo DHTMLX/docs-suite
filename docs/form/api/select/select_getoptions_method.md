@@ -11,7 +11,7 @@ title: getOptions()
 An array with options.
 
 @example:
-form.getItem("select").getOptions(); --> [{…}, {…}]
+form.getItem("select").getOptions(); // -> [{…}, {…}]
 
 @descr:
 

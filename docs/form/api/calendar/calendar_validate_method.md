@@ -9,7 +9,7 @@ title: validate()
  
 @params:
 - `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
-- `validateValue: string|Date` - optional, the value to be validated. If not specified, the method validates the current value of the control
+- `validateValue: string | Date` - optional, the value to be validated. If not specified, the method validates the current value of the control
 
 @returns:
 The result of validation: `true` - if a control is valid; otherwise, `false`.

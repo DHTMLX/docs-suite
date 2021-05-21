@@ -8,7 +8,7 @@ title: setValue()
 @signature: {'setValue(checked: boolean): void;'}
 
 @params:
-`checked: boolean`      the state to be set for the checkbox
+`checked: boolean` - the state to be set for the checkbox
 
 @example:
 form.getItem("checkbox").setValue(true); 

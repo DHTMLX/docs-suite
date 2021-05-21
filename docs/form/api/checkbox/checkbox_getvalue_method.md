@@ -7,6 +7,9 @@ title: getValue()
 
 @signature: {'getValue(): string | boolean;'}
 
+@returns:
+Either a string with the current value of the control or boolean value with the state of the control.
+
 @example:
 // returns value if the value is specified for the checkbox
 var value = form.getItem("checkbox").getValue(); // -> "checkbox_value"
