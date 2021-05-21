@@ -12,7 +12,7 @@ title: serialize()
 - `callback: function` - optional,  a function that will be applied to every item of the component
 
 @returns:
-- `data: array, string` - serialized data of the component either as an array of JSON objects or as a CSV/XML string 
+Serialized data of the component either as an array of JSON objects or as a CSV/XML string.
 
 @example:
 // serialize data to an array of JSON objects

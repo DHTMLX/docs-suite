@@ -8,7 +8,7 @@ title: move()
 @signature: {'move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];'}
 
 @params:
-- `id: string,string[]` - the ids of items to move
+- `id: string | string[]` - the ids of items to move
 - `index: number` - the index to move items to
 - `target: object` - optional, the target tree collection object
 - `targetId: string` - optional, the id of the parent item where the moved items will be placed

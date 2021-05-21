@@ -9,6 +9,8 @@ import CustomHeader from './CustomHead';
 import Params from './Params';
 import Returns from "./Returns";
 import Values from "./Values";
+import WidgetIcons from "./WidgetIcons";
+
 
 export {
   Short,
@@ -21,5 +23,6 @@ export {
   CustomHeader,
   Params,
   Returns,
-  Values
+  Values,
+  WidgetIcons
 };
