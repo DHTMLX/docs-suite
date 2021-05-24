@@ -10,10 +10,10 @@ title: beforeChange
 @params:
 - `date: Date` - the newly selected date
 - `oldDate: Date` - the previously selected date
-- `byClick: boolean` - defines whether the change happened because of a click on a date (true), or due to an API call (false)
+- `byClick: boolean` - defines whether the change happened because of a click on a date  - *true*, or due to an API call - *false*
 
 @returns:
-- `true` - to allow changing date selection, `false` - to prevent changing date selection
+Return `true` to allow changing date selection, `false` to prevent changing date selection.
 
 @example:
 calendar.events.on("BeforeChange",function(date, oldDate, click){

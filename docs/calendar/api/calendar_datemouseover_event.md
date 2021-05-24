@@ -8,8 +8,8 @@ title: dateMouseOver
 @signature: {'dateMouseOver: (date: Date, e: MouseEvent) => void;'}
 
 @params:
-- date  	Date    	the date under the pointer
-- e 		Event		a native event object
+- `date: Date` - the date under the pointer
+- `e: MouseEvent` - a native HTML event object
 
 @example:
 calendar.events.on("DateMouseOver", function(date, e) {

@@ -8,7 +8,7 @@ title: monthSelected
 @signature: {'monthSelected: (month: number) => void;'}
 
 @params:
-- month     number      the number of the selected month (from 0 to 11)
+`month: number` - the number of the selected month (from 0 to 11)
 
 @example:
 calendar.events.on("MonthSelected", function(month) {

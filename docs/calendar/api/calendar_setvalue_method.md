@@ -1,6 +1,6 @@
 ---
-sidebar_label: setValue
-title: setValue
+sidebar_label: setValue()
+title: setValue()
 ---          
 
 @short: selects a date in the calendar
@@ -8,10 +8,10 @@ title: setValue
 @signature: {'setValue(value: Date | Date[] | string | string[]): boolean;'}
 
 @params:
-- date 		Date,Date[],string,string[] 		the date to select
+`value: Date | Date[] | string | string[]` - the date to select
 
 @returns:
-- result 	boolean 	defines, whether a date has been successfully added into the calendar
+Defines, whether a date has been successfully added into the calendar.
 
 @example:
 // sets the current date

@@ -1,6 +1,6 @@
 ---
-sidebar_label: link
-title: link
+sidebar_label: link()
+title: link()
 ---          
 
 @short: links a calendar to another calendar for selecting a date range
@@ -8,7 +8,7 @@ title: link
 @signature: {'link(calendar: ICalendar): void;'}
 
 @params:
-- calendar		object		an object of a calendar to link to
+`calendar: object` - an object of a calendar to link to
 
 @example:
 calendar.link(calendar2);

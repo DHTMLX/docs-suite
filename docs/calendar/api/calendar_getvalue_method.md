@@ -1,6 +1,6 @@
 ---
-sidebar_label: getValue
-title: getValue
+sidebar_label: getValue()
+title: getValue()
 ---          
 
 @short: returns the selected date
@@ -8,10 +8,10 @@ title: getValue
 @signature: {'getValue(asDatObj?: boolean): Date | Date[] | string | string[];'}
 
 @params:
-- asDate	boolean		defines whether a date will be returned as a Date object
+`asDatObj: boolean` - defines whether a date will be returned as a Date object
 
 @returns:
-- date		Date,Date[],string,string[]		the selected date
+The selected date.
 
 @example:
 

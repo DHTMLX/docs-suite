@@ -1,6 +1,6 @@
 ---
-sidebar_label: showDate
-title: showDate
+sidebar_label: showDate()
+title: showDate()
 ---          
 
 @short: shows a specified date and/or opens the calendar in one of the available modes
@@ -8,8 +8,8 @@ title: showDate
 @signature: {'showDate(date?: Date, mode?: ViewMode): void;'}
 
 @params:
-- date	 Date    	the date that should be shown in the calendar
-- mode   string  	optional, the mode in which the calendar will be opened
+- `date: Date` - the date that should be shown in the calendar
+- `mode: string` - optional, the mode in which the calendar will be opened
 
 @example:
 calendar.showDate(new Date(2020,11,12));
