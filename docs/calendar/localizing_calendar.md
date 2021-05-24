@@ -7,6 +7,8 @@ description: You can explore the localization of Calendar in the documentation o
  
 # Localization
 
+@short:
+
 You can apply different languages to the interface of dhtmlxCalendar. You just need to translate the corresponding strings for Calendar labels and apply a ready locale to the component.
 
 ![](../assets/calendar/locale.png)

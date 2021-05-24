@@ -4,10 +4,12 @@ title: JavaScript Calendar - Work with Calendar
 hide_title: true
 description: You can explore how to work with Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # Work with Calendar
 
 ## Changing calendar mode
+
+@short:
 
 You can show a particular date in the calendar and/or open Calendar in a certain mode via the [](calendar/api/calendar_showdate_method.md) method. It takes two parameters:
 

@@ -9,6 +9,8 @@ description: You can explore the configuration of Calendar in the documentation 
 
 ## Calendar modes
 
+@short:
+
 There are several modes of displaying Calendar, which are set via the [](calendar/api/calendar_mode_config.md) property:
 
 - **"calendar"** - the default mode. The current date (year and month) is shown in the calendar

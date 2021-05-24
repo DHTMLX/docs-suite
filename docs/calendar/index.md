@@ -7,6 +7,8 @@ description: You can have an overview of Calendar in the documentation of the DH
 
 # Calendar overview
 
+@short:
+
 dhtmlxCalendar is a component that allows users to view and select dates. You can create calendar in one of 4 modes: days, months, years, or as a timepicker.
 This component is a great date picker solution for your website or application. Check [online samples for dhtmlxCalendar](https://docs.dhtmlx.com/suite/samples/calendar/).  
 

@@ -9,6 +9,8 @@ description: You can explore the customization of Calendar in the documentation 
 
 ## Styling Calendar
 
+@short:
+
 There is a possibility to make changes in the look and feel of a calendar. For example, change its background color:
 
 ![](../assets/calendar/styled_calendar.png)

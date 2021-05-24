@@ -7,6 +7,8 @@ description: You can explore the initialization of Calendar in the documentation
 
 # Initialization
 
+@short:
+
 To use dhtmlxCalendar in your application, you need to take the following simple steps:
 
 - [Download the dhtmlxCalendar package](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml) and unpack it into a folder of your project

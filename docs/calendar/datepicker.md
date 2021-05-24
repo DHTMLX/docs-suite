@@ -7,6 +7,8 @@ description: You can explore the DatePicker of Calendar in the documentation of 
  
 # DatePicker
 
+@short:
+
 You can use dhtmlxCalendar as a date picker by putting it inside a popup. 
 
 ![Date picker](./../assets/calendar/date_picker.png)
