@@ -11,7 +11,7 @@ title: getValue
 `asObject: boolean` - optional, specifies that the value will be returned as an object, false by default
 
 @returns:
-The value of a timepicker.
+Either an object or a string with the value of a timepicker.
 
 @example:
 // return value as a string in the 24-hour format

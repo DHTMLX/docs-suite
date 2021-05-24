@@ -358,7 +358,6 @@ module.exports = {
                   "combobox/api/combobox_multiselection_config",
                   "combobox/api/combobox_placeholder_config",
                   "combobox/api/combobox_readonly_config",
-                  "combobox/api/combobox_required_config",
                   "combobox/api/combobox_selectallbutton_config",
                   "combobox/api/combobox_template_config",
                   "combobox/api/combobox_value_config",
