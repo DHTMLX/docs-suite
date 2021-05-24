@@ -124,8 +124,8 @@ const onAfterDataTransformation = (data) => {
 
 module.exports = {
     noIndex: true, // todo: delete on release
-    title: 'DHTMLX Suite Documentation',
-    tagline: 'DHTMLX Suite Documentation',
+    title: 'DHTMLX Suite 7 Docs',
+    tagline: 'DHTMLX Suite 7 Docs',
     url: 'https://docs.dhtmlx.com/suita/',
     baseUrl: '/suita/',
     onBrokenLinks: 'log',
