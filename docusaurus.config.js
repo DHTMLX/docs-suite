@@ -91,7 +91,7 @@ const onEmptyLinkMatch = (data, { key, fullMatch, dir }) => {
     const filePath = fullMatch.substring(fullMatch.indexOf('(') + 1, fullMatch.length - 1);
     if (filePath.indexOf('.md') !== -1 || filePath.indexOf('.mdx') !== -1 || filePath.indexOf('.') === -1) {
         const data = readFile(dir, filePath);
-        return data ? `[${/.*title: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
+        return data ? `[${/.*sidebar_label: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
     }
     return fullMatch;
 };
