@@ -5,7 +5,7 @@ title: move()
 
 @short: moves items to different positions
 
-@signature: {'move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];'}
+@signature: {'move(id: Id | Id[], index: number, target?: TreeCollection, targetId?: Id): Id | Id[];'}
 
 @params:
 - `id: string | string[]` - the ids of items to move

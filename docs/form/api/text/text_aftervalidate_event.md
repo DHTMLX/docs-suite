@@ -5,15 +5,15 @@ title: afterValidate
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: string | number, isValid: boolean) => void;'}
+@signature: {'afterValidate: (value: string | number, isValidate: boolean) => void;'}
  
 @params:
 - `value: string | number` - the validated value
-- `isValid: boolean` - the result of validation
+- `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("text").events.on("AfterValidate", function(value, isValid) {
-    console.log("AfterValidate", value, isValid);
+form.getItem("text").events.on("AfterValidate", function(value, isValidate) {
+    console.log("AfterValidate", value, isValidate);
 });
 
 @descr:

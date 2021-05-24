@@ -7,7 +7,7 @@ title: load()
 
 @signature: {'load?: () => Promise<any[]>;'}
 
-@returns: 
+@returns:
 A promise of the data object.
 
 @example:

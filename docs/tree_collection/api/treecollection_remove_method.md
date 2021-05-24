@@ -8,7 +8,7 @@ title: remove()
 @signature: {'remove(id: Id | Id[]): void;'}
 
 @params:
-- `id: string` - the ID of an item
+`id: string | string[]` - the ids of items to remove
 
 @example:
 toolbar.data.remove("id");

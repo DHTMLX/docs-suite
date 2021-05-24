@@ -5,12 +5,15 @@ title: copy()
 
 @short: creates a copy of an item at the defined position
 
-@signature: {'copy(id: Id | Id[], index: number, target?: IDataCollection | ITreeCollection, targetId?: Id): Id | Id[];'}
+@signature: {'copy(id: Id | Id[], index: number, target?: IDataCollection): Id | Id[];'}
 
 @params:
-- `id: string,number` - the id of an item to copy
+- `id: string | string[]` - the id of an item to copy
 - `index: number` - the index to create a copy at
 - `target: object` - optional, the target data collection object
+
+@returns:
+The item's id or an array with ids of items.
 
 @example:
 component.data.copy("4",5); // copies the item with id:4 to the position with index 5

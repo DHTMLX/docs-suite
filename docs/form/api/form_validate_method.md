@@ -5,7 +5,7 @@ title: validate()
 
 @short: validates form fields
 
-@signature: {'validate(silent): boolean;'}
+@signature: {'validate(silent?: boolean): boolean;'}
 
 @params:
 `silent: boolean` - optional, if `true` - the method will return the result of validation without calling validation events and without modifying the form visually

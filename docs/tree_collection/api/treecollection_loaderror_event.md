@@ -7,8 +7,8 @@ title: loadError
 
 @signature: {'loadError: (response: any) => boolean | void;'}
 
-[comment]: # (@params:
-- `error: string, object` - info about the error)
+@params:
+`response: string|object` - info about the error
 
 @example:
 data.events.on("LoadError", function(error){

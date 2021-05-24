@@ -8,7 +8,7 @@ title: itemRightClick
 @signature: {'itemRightClick: (id: string | number, events: MouseEvent) => void;'}
 
 @params:
-- `id: string,number` - the id of a right-clicked item
+- `id: string | number` - the id of a right-clicked item
 - `events: MouseEvent` - a native HTML event object
 
 @example:

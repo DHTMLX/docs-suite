@@ -5,7 +5,7 @@ title: validate()
 
 @short: validates a DatePicker control
 
-@signature: {'validate(silent: boolean, validateValue?: string | Date): boolean;'}
+@signature: {'validate(silent?: boolean, validateValue?: string | Date): boolean;'}
  
 @params:
 - `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually

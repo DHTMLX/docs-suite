@@ -11,7 +11,7 @@ title: save()
 - `data: object` - mandatory, data to be sent to the server
 - `mode: string` - mandatory, a mode of the request ("delete", "update", "insert")
 
-@returns: 
+@returns:
 A promise of the data object
 
 @example:

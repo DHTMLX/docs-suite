@@ -9,11 +9,7 @@ title: parse()
 
 @params:
 
-- `data: any` - the data to load
-- `type: string` - optional, type of data (json, xml, csv), json by default
-
-@returns:
-An array of loaded items.		
+- `data: any` - the data to load		
 
 @example:
 var data = [

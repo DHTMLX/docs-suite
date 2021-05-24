@@ -7,8 +7,6 @@ title: removeAll
 
 @signature: {'removeAll: () => void;'}
 
-@params:
-
 @example:
 data.events.on("RemoveAll", function(){
 	console.log("Items are removed");

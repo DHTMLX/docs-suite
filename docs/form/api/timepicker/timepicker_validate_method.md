@@ -5,7 +5,7 @@ title: validate()
 
 @short: validates a TimePicker control
 
-@signature: {'validate(silent: boolean, validateValue?: string): boolean;'}
+@signature: {'validate(silent?: boolean, validateValue?: string): boolean;'}
  
 @params:
 - `silent: boolean` - optional, if `true` - the method will return the result of validation without calling validation events and without modifying the control visually

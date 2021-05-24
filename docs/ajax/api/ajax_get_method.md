@@ -1,20 +1,19 @@
 ---
-sidebar_label: get
-title: get
+sidebar_label: get()
+title: get()
 ---          
 
 @short: sends a GET request to the server
 
-@signature: {'getInitialData(): T[];'}
+@signature: {'get<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
 
 @params:
-- url       string      the URL the request is sent to
-- data      object      optional, the data sent to the server by the GET-request
-- config    object      the configuration object of the request
+- `url: string` - the URL the request is sent to
+- `data: object` - optional, the data sent to the server by the GET-request
+- `config: object` - the configuration object of the request
 
 @returns:
-
-- data      promise     "promise" of the data object
+A "promise" of the data object.
 
 @example:
 dhx.ajax.get(url).then(function (data) {

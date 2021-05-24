@@ -1,6 +1,6 @@
 ---
-sidebar_label: put
-title: put
+sidebar_label: put()
+title: put()
 ---          
 
 @short: sends a PUT request to the server
@@ -8,13 +8,13 @@ title: put
 @signature: {'put<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
 
 @params:
-- url       string      the URL the request is sent to
-- data      object      optional, the data sent to the server by the PUT-request
-- config    object      the configuration object of the request
+- `url: string` - the URL the request is sent to
+- `data: object` - optional, the data sent to the server by the PUT-request
+- `config: object` - the configuration object of the request
 
 @returns:
 
-- data      promise     "promise" of the data object
+A "promise" of the data object.
 
 @example:
 dhx.ajax.put(url, {id: "1", updated: true}).then(function (data) {
