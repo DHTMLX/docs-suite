@@ -1,9 +1,13 @@
 ---
 sidebar_label: parse()
-title: parse()
----          
+title: JavaScript DataCollection - parse Method 
+hide_title: true
+description: You can explore the parse method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-@short: loads data from a local data source 
+# parse()
+
+@short: loads data from a local data source
 
 @signature: {'parse(data: T[]): void;'}
 
@@ -13,7 +17,7 @@ title: parse()
 - `type: string` - optional, type of data (json, xml, csv), json by default
 
 @returns:
-An array of loaded items.		
+An array of loaded items.
 
 @example:
 var data = [

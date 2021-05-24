@@ -1,14 +1,18 @@
 ---
 sidebar_label: find()
-title: find()
----          
+title: JavaScript DataCollection - find Method 
+hide_title: true
+description: You can explore the find method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# find()
 
 @short: finds the item that corresponds to the specified rule
 
 @signature: {'find(rule: IFilterMode | DataCallback<T>): T;'}
 
 @params:
-`rule: object,function` - the search criteria
+`rule: object | function` - the search criteria
 
 @returns:
 An object of the matching item.

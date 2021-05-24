@@ -1,14 +1,18 @@
 ---
 sidebar_label: findAll()
-title: findAll()
----          
+title: JavaScript DataCollection - findAll Method 
+hide_title: true
+description: You can explore the findAll method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# findAll()
 
 @short: finds all the items that correspond to the specified rule
 
 @signature: {'findAll(rule: IFilterMode | DataCallback<T>): T[];'}
 
 @params:
-`rule: object, function` - the search criteria
+`rule: object | function` - the search criteria
 
 @returns:
 An array of matching item objects.
