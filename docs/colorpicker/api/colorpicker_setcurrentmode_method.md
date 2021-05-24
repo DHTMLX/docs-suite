@@ -1,7 +1,11 @@
 ---
 sidebar_label: setCurrentMode()
-title: setCurrentMode()
----          
+title: JavaScript Colorpicker - setCurrentMode Method ()
+hide_title: true
+description: You can explore the setCurrentMode method of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# setCurrentMode()
 
 @short: shows colopicker either in the "palette" or in the "picker" mode
 
