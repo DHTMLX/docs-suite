@@ -53,7 +53,6 @@ Use [DataCollection events](data_collection/index.md#events) to work with data.
 | [](combobox/api/combobox_multiselection_config.md)  | @getshort(combobox/api/combobox_multiselection_config.md)  |
 | [](combobox/api/combobox_placeholder_config.md)     | @getshort(combobox/api/combobox_placeholder_config.md)     |
 | [](combobox/api/combobox_readonly_config.md)        | @getshort(combobox/api/combobox_readonly_config.md)        |
-| [](combobox/api/combobox_required_config.md)        | @getshort(combobox/api/combobox_required_config.md)        |
 | [](combobox/api/combobox_selectallbutton_config.md) | @getshort(combobox/api/combobox_selectallbutton_config.md) |
 | [](combobox/api/combobox_template_config.md)        | @getshort(combobox/api/combobox_template_config.md)        |
 | [](combobox/api/combobox_value_config.md)           | @getshort(combobox/api/combobox_value_config.md)           |
