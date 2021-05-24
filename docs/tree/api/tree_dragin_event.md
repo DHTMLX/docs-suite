@@ -8,6 +8,8 @@ title: dragIn
 @signature: {'dragIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 tree.events.on("DragIn", function(data, events) {

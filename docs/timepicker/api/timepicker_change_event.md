@@ -5,10 +5,10 @@ title: change
 
 @short: fires on change of the timepicker value
 
-@signature: {'change: (time: string | ITimeObject) => void;'}
+@signature: {'change: (value: string | ITimeObject) => void;'}
 
 @params:
-`time: string | object` - the value of a timepicker
+`value: string | object` - the value of a timepicker
 
 @example:
 timepicker.events.on("change", function(value){

@@ -1,6 +1,6 @@
 ---
-sidebar_label: isSelected
-title: isSelected
+sidebar_label: isSelected()
+title: isSelected()
 ---          
 
 @short: checks whether a specified Toolbar item is selected
@@ -11,7 +11,7 @@ title: isSelected
 `id: string` - the id of a Toolbar item
 
 @returns:
-`True`, if an item of Toolbar is selected; otherwise, `false`.
+`true`, if an item of Toolbar is selected; otherwise, `false`.
 
 @example:
 toolbar.isSelected("web"); // -> returns true/false

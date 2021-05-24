@@ -5,10 +5,10 @@ title: afterClose
 
 @short: fires after closing the timepicker
 
-@signature: {'afterClose: (time: string | ITimeObject) => void;'}
+@signature: {'afterClose: (value: string | ITimeObject) => void;'}
 
 @params:
-`time: string | object` - the current value of a timepicker
+`value: string | object` - the current value of a timepicker
 
 @example:
 timepicker.events.on("AfterClose", function(value){

@@ -5,7 +5,7 @@ title: setCell()
 
 @short: sets selection to a specified cell
 
-@signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
+@signature: {'setCell(row?: any, col?: any): void;'}
 
 @params:
 - `row: object` - an object with a cell to be selected

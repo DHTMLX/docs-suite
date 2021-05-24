@@ -5,14 +5,11 @@ title: dragRowIn
 
 @short: fires when a row is dragged to another potential target
 
-@signature: {'dragRowIn: (data: object, events: MouseEvent) => void | boolean;'}
+@signature: {'dragRowIn: (data: object, events: MouseEvent) => void;'}
 
 @params:
 - `data: object` - data object
 - `events: MouseEvent` - a native HTML event object
-
-@returns:
-Return `false` to prevent dragging of a row to another potential target; otherwise, `true`.
 
 @example:
 grid.events.on("DragRowIn", function(data, events) {

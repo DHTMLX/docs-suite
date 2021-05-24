@@ -11,7 +11,7 @@ title: isDisabled()
 `id: string` - an id of the Toolbar item
 
 @returns:
-`True`, if an item of Toolbar is disabled; otherwise, `false`.
+`true`, if an item of Toolbar is disabled; otherwise, `false`.
 
 @example:
 toolbar.isDisabled("id"); // -> returns true/false

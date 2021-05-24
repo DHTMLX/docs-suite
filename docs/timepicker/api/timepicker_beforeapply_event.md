@@ -5,10 +5,10 @@ title: beforeApply
 
 @short: fires before saving the timepicker value
 
-@signature: {'beforeApply: (time: string | ITimeObject) => void;'}
+@signature: {'beforeApply: (value: string | ITimeObject) => void;'}
 
 @params:
-`time: string | object` - the value of a timepicker
+`value: string | object` - the value of a timepicker
 
 @returns:
 Return `false` to prevent saving the timepicker value; otherwise, `true`.

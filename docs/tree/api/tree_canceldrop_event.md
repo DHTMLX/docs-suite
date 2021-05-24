@@ -7,6 +7,10 @@ title: cancelDrop
 
 @signature: {'cancelDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 tree.events.on("CancelDrop", function(data, events) {
     // your logic here

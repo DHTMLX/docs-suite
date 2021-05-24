@@ -1,6 +1,6 @@
 ---
-sidebar_label: setColumns
-title: setColumns
+sidebar_label: setColumns()
+title: setColumns()
 ---          
 
 @short: sets configuration for TreeGrid columns

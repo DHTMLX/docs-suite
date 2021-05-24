@@ -11,7 +11,7 @@ title: isVisible()
 `true`, if a window is visible; otherwise, `false`.
 
 @example:
-window.isVisible(); // -> true/false
+dhxWindow.isVisible(); // -> true/false
 
 @descr:
 

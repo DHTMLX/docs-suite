@@ -5,14 +5,11 @@ title: dragColumnIn
 
 @short: fires when a column is dragged to another potential target
 
-@signature: {'dragColumnIn: (data: object, events: MouseEvent) => void | boolean;'}
+@signature: {'dragColumnIn: (data: object, events: MouseEvent) => void;'}
 
 @params:
 - `data: object`		data object
 - `events: MouseEvent`		a native HTML event object
-
-@returns:
-Return `false` to prevent dragging of a column to another potential target; otherwise, `true`.
 
 @example:
 grid.events.on("DragColumnIn", function(data, events) {

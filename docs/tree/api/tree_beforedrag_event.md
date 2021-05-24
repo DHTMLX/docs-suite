@@ -10,6 +10,7 @@ title: beforeDrag
 @params:
 - `data: object` - data object
 - `events: MouseEvent` - a native HTML event object
+- `ghost: HTMLElement` - an HTML element
 
 @returns:
 Return `false` to block dragging of an item; otherwise, `true`.

@@ -5,10 +5,10 @@ title: afterApply
 
 @short: fires after saving the timepicker value
 
-@signature: {'afterApply: (time: string | ITimeObject) => boolean | void;'}
+@signature: {'afterApply: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-`time: string | object` - the value of a timepicker
+`value: string | object` - the value of a timepicker
 
 @example:
 timepicker.events.on("AfterApply", function(value) {

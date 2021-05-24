@@ -11,7 +11,7 @@ The API of dhtmlxTreeGrid allows setting configuration of columns, getting an ob
 
 ### Setting columns configuration
 
-You can specify the configuration of TreeGrid columns on the fly via the [setColumns()](treegrid/api/treegrid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
+You can specify the configuration of TreeGrid columns on the fly via the [](treegrid/api/treegrid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
 
 ~~~js
 treegrid.setColumns([
@@ -25,7 +25,7 @@ You can find the full list of the available configuration options of a TreeGrid 
 
 ### Getting configuration of a column
 
-It is possible to return an object with attributes of a column via its id. Use the [getColumn()](treegrid/api/treegrid_getcolumn_method.md) method for this purpose.
+It is possible to return an object with attributes of a column via its id. Use the [](treegrid/api/treegrid_getcolumn_method.md) method for this purpose.
 
 ~~~js
 var column = treegrid.getColumn("b"); // ->
@@ -36,7 +36,7 @@ The method returns an object with configuration of the specified column. You can
 
 ### Getting configuration of a cell
 
-There is the [getCellRect()](treegrid/api/treegrid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
+There is the [](treegrid/api/treegrid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
 ~~~js
 var rect = treegrid.getCellRect("1","c");
@@ -69,7 +69,7 @@ The return object includes the following attributes:
 Getting header filter
 ---------------------
 
-You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset the focus on the filter, to change the filter, or clear it. For that, you should get an object of the header filter by column id via the [getHeaderFilter](treegrid/api/treegrid_getheaderfilter_method.md) method: 
+You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset the focus on the filter, to change the filter, or clear it. For that, you should get an object of the header filter by column id via the [](treegrid/api/treegrid_getheaderfilter_method.md) method: 
 
 ~~~js
 var countryFilter = treegrid.getHeaderFilter("capital");
@@ -95,7 +95,7 @@ The method returns either an HTML object or an object with Combobox configuratio
 Hiding/showing a column
 --------------------------
 
-It is possible to show and hide a column in the grid via the [showColumn()](treegrid/api/treegrid_showcolumn_method.md) and [hideColumn()](treegrid/api/treegrid_hidecolumn_method.md) methods. 
+It is possible to show and hide a column in the grid via the [](treegrid/api/treegrid_showcolumn_method.md) and [](treegrid/api/treegrid_hidecolumn_method.md) methods. 
 
 ~~~js
 //showing a column
@@ -122,7 +122,7 @@ treegrid.isColumnHidden("country"); // -> true|false
 Hiding/showing a row
 --------------------------
 
-Starting from v7.0, it is possible to show and hide a row in the treegrid via the [showRow()](treegrid/api/treegrid_showrow_method.md) and [hideRow()](treegrid/api/treegrid_hiderow_method.md) methods. 
+Starting from v7.0, it is possible to show and hide a row in the treegrid via the [](treegrid/api/treegrid_showrow_method.md) and [](treegrid/api/treegrid_hiderow_method.md) methods. 
 
 ~~~js
 //showing a row
@@ -148,11 +148,11 @@ treegrid.isRowHidden("1"); // -> true|false
 Adding/removing spans
 ---------------------
 
-You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: [addSpan()](treegrid/api/treegrid_addspan_method.md), [removeSpan()](treegrid/api/treegrid_removespan_method.md) and [getSpan()](treegrid/api/treegrid_getspan_method.md).
+You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: [](treegrid/api/treegrid_addspan_method.md), [](treegrid/api/treegrid_removespan_method.md) and [](treegrid/api/treegrid_getspan_method.md).
 
 ### Adding spans
 
-In order to add a col/row span into the grid, use the [addSpan()](treegrid/api/treegrid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
+In order to add a col/row span into the grid, use the [](treegrid/api/treegrid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
 ~~~js
 treegrid.addSpan({ 
@@ -195,7 +195,7 @@ These are possible fields of a span object:
 
 ### Getting spans
 
-You can return the col/row span a cell is a part of using the [getSpan()](treegrid/api/treegrid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
+You can return the col/row span a cell is a part of using the [](treegrid/api/treegrid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~js
 var span = treegrid.getSpan("10","a"); 
@@ -206,7 +206,7 @@ As a result, you'll get an object with a span configuration, if any span include
 
 ### Removing spans
 
-To remove an existing span, make use of the [removeSpan()](treegrid/api/treegrid_removespan_method.md) method. It takes the ids of the row and the column as parameters: 
+To remove an existing span, make use of the [](treegrid/api/treegrid_removespan_method.md) method. It takes the ids of the row and the column as parameters: 
 
 ~~~js
 treegrid.removeSpan("10","a");
@@ -219,7 +219,7 @@ The API of dhtmlxTreeGrid provides the possibility to set scrolls to the nevessa
 
 ### Scrolling to specific coordinates
 
-You can scroll grid content to exact position defined by x and y coordinates via the [scroll()](treegrid/api/treegrid_scroll_method.md) method. Pass the coordinates as parameters of the method.
+You can scroll grid content to exact position defined by x and y coordinates via the [](treegrid/api/treegrid_scroll_method.md) method. Pass the coordinates as parameters of the method.
 
 ~~~js
 treegrid.scroll(75,230);
@@ -237,7 +237,7 @@ treegrid.scrollTo("15","c");
 
 ### Getting the state of scroll
 
-To return the current state of scroll, use the [getScrollState()](treegrid/api/treegrid_getscrollstate_method.md) method. 
+To return the current state of scroll, use the [](treegrid/api/treegrid_getscrollstate_method.md) method. 
 
 ~~~js
 var state = treegrid.getScrollState(); // -> {x:0,y:0}
@@ -249,7 +249,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 Grouping data
 -----------------
 
-To make data in TreeGrid well-structured and easily understood you can group data with the help of the [groupBy()](treegrid/api/treegrid_groupby_method.md) method. There are two options of grouping data.
+To make data in TreeGrid well-structured and easily understood you can group data with the help of the [](treegrid/api/treegrid_groupby_method.md) method. There are two options of grouping data.
 
 ### Grouping by a column
 
@@ -427,7 +427,7 @@ var state = treegrid.getSortingState();
 Editing data
 ------------------
 
-You can easily edit the desired cell of a treegrid with the help of the [editCell()](treegrid/api/treegrid_editcell_method.md) method. It takes two parameters:
+You can easily edit the desired cell of a treegrid with the help of the [](treegrid/api/treegrid_editcell_method.md) method. It takes two parameters:
 
 <table>
 	<tbody>
@@ -450,7 +450,7 @@ treegrid.editCell(grid.data.getId(0),"project");
 
 **Related sample**: [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
 
-To finish editing of a cell, use the [editEnd()](treegrid/api/treegrid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
+To finish editing of a cell, use the [](treegrid/api/treegrid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
 ~~~js
 treegrid.editEnd(); // the edited data will be saved
@@ -458,7 +458,7 @@ treegrid.editEnd(); // the edited data will be saved
 treegrid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [editEnd()](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
+{{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
 
 
 Expanding/collapsing nodes
