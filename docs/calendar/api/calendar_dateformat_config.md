@@ -1,7 +1,11 @@
 ---
 sidebar_label: dateFormat
-title: dateFormat
+title: JavaScript Calendar - dateFormat Config
+hide_title: true
+description: You can explore the dateFormat config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---          
+
+# dateFormat
 
 @short: defines the format of dates in Сalendar
 

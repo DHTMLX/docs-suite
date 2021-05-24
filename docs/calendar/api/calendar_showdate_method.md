@@ -1,7 +1,11 @@
 ---
 sidebar_label: showDate()
-title: showDate()
----          
+title: JavaScript Calendar - showDate Method 
+hide_title: true
+description: You can explore the showDate method of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# showDate()
 
 @short: shows a specified date and/or opens the calendar in one of the available modes
 
