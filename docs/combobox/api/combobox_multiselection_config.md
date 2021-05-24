@@ -1,7 +1,11 @@
 ---
 sidebar_label: multiselection
-title: multiselection
----          
+title: JavaScript Combo Box - multiselection Config 
+hide_title: true
+description: You can explore the multiselection config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# multiselection
 
 @short: enables selection of multiple options in ComboBox
 
@@ -12,6 +16,6 @@ var combo = new dhx.Combobox("combo_container", {
     multiselection:true
 });
 
-@descr: 
+@descr:
 
 [comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#selection-of-multiple-options)

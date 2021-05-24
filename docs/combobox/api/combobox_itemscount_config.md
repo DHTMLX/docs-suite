@@ -1,7 +1,11 @@
 ---
 sidebar_label: itemsCount
-title: itemsCount
----          
+title: JavaScript Combo Box - itemsCount Config 
+hide_title: true
+description: You can explore the itemsCount config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# itemsCount
 
 @short: shows the total number of selected options
 
@@ -15,7 +19,7 @@ var combo = new dhx.Combobox("combo_container", {
     }
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
 
