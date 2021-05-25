@@ -1,7 +1,11 @@
 ---
 sidebar_label: selection
-title: selection
----          
+title: JavaScript DataView - selection Config 
+hide_title: true
+description: You can explore the selection config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# selection
 
 @short: enables selection of DataView items
 
@@ -14,7 +18,7 @@ var dataview = new dhx.DataView("dataview", {
     selection: false
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Dataview. Disable selection](https://snippet.dhtmlx.com/xh66mnu3)
 
