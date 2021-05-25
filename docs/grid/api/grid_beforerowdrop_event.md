@@ -1,12 +1,16 @@
 ---
 sidebar_label: beforeRowDrop
-title: beforeRowDrop
----          
+title: JavaScript Grid - beforeRowDrop Event 
+hide_title: true
+description: You can explore the beforeRowDrop event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeRowDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target row
 
 @signature: {'beforeRowDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
-	
+
 @params:
 - `data: object` - data object
 - `events: MouseEvent` - a native HTML event object 

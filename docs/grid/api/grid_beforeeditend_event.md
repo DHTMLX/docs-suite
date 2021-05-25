@@ -1,12 +1,16 @@
 ---
 sidebar_label: beforeEditEnd
-title: beforeEditEnd
----          
+title: JavaScript Grid - beforeEditEnd Event 
+hide_title: true
+description: You can explore the beforeEditEnd event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeEditEnd
 
 @short: fires before editing of a cell is completed
 
 @signature: {'beforeEditEnd: (value: string | number, row: IRow, col: ICol) => boolean | void;'}
-	
+
 @params:
 - `value: string | number` - the new value of a cell
 - `row: object` - an object with a row configuration

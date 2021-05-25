@@ -1,7 +1,11 @@
 ---
 sidebar_label: htmlEnable
-title: htmlEnable
----          
+title: JavaScript Grid - htmlEnable Config 
+hide_title: true
+description: You can explore the htmlEnable config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# htmlEnable
 
 @short: specifies the HTML content (inner HTML) of Grid columns
 
@@ -14,7 +18,7 @@ var grid = new dhx.Grid("grid_container", {
     htmlEnable: true /*!*/
 });
 
-@descr: 
+@descr:
 
 If you set the property to *false*, the content of Grid columns will be displayed as a *string* value.
 

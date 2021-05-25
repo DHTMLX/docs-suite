@@ -1,7 +1,11 @@
 ---
 sidebar_label: canColumnDrop
-title: canColumnDrop
----          
+title: JavaScript Grid - canColumnDrop Event 
+hide_title: true
+description: You can explore the canColumnDrop event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# canColumnDrop
 
 @short: fires when a dragged column is placed over a target column
 

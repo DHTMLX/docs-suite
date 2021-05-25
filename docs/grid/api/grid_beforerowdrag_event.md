@@ -1,7 +1,11 @@
 ---
 sidebar_label: beforeRowDrag
-title: beforeRowDrag
----          
+title: JavaScript Grid - beforeRowDrag Event 
+hide_title: true
+description: You can explore the beforeRowDrag event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeRowDrag
 
 @short: fires before dragging of a row has started
 
