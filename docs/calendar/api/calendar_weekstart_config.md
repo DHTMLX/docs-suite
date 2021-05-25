@@ -13,10 +13,8 @@ title: weekStart
 var calendar = new dhx.Calendar("calendar_container", {
     weekStart:"monday"
 });
-@exanplestop:
-
-**Related sample**: [Calendar. Week Start](https://snippet.dhtmlx.com/kaxmurh9)
 
 @descr:
+**Related sample**: [Calendar. Week Start](https://snippet.dhtmlx.com/kaxmurh9)
 
 [comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#startoftheweek)

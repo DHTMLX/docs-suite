@@ -22,11 +22,11 @@ var calendar = new dhx.Calendar("calendar", {
     },
     css: "dhx_widget--bordered"
 });
-@examplestop:
 
-**Related sample**: [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
 
 @descr:
+**Related sample**: [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
+
 The function passed to the method receives one parameter:
 
 - **date** (*Date*) - a date object 

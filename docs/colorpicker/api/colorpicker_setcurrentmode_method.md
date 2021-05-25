@@ -7,6 +7,10 @@ title: setCurrentMode()
 
 @signature: {'setCurrentMode(view: "palette" | "picker"): void;'}
 
+@params:
+`view: string` - the mode to show: "palette" or "picker"
+
+
 @example:
 colorpicker.setCurrentMode("picker");
 

@@ -16,15 +16,16 @@ title: beforeChange
 Return `true` to allow changing date selection, `false` to prevent changing date selection.
 
 @example:
-calendar.events.on("BeforeChange",function(date, oldDate, click){
+calendar.events.on("BeforeChange",function(date, oldDate, byClick){
 	if (date > new Date())
     	return false;
 });
 
 @descr:
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
+
 You can block selection of particular dates by returning *false* from the event handler.
 
-**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
 [comment]: # (@related:calendar/handling_events.md) 
 [comment]: # (@relatedapi:calendar/api/calendar_change_event.md)

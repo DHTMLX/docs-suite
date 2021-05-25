@@ -8,6 +8,7 @@ title: Combobox API overview
 | Name                                           | Description                                           |
 |------------------------------------------------|-------------------------------------------------------|
 | [](combobox/api/combobox_clear_method.md)      | @getshort(combobox/api/combobox_clear_method.md)      |
+| [](combobox/api/combobox_destructor_method.md) | @getshort(combobox/api/combobox_destructor_method.md) |
 | [](combobox/api/combobox_disable_method.md)    | @getshort(combobox/api/combobox_disable_method.md)    |
 | [](combobox/api/combobox_enable_method.md)     | @getshort(combobox/api/combobox_enable_method.md)     |
 | [](combobox/api/combobox_focus_method.md)      | @getshort(combobox/api/combobox_focus_method.md)      |
@@ -23,10 +24,10 @@ Use [DataCollection methods](data_collection/index.md) to work with data.
 ## Events
 
 | Name                                           | Description                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
+|------------------------------------------------|-------------------------------------------------------|
 | [](combobox/api/combobox_afterclose_event.md)  | @getshort(combobox/api/combobox_afterclose_event.md)  |
 | [](combobox/api/combobox_beforeclose_event.md) | @getshort(combobox/api/combobox_beforeclose_event.md) |
-| [](combobox/api/combobox_destructor_method.md) | @getshort(combobox/api/combobox_destructor_method.md) |
+| [](combobox/api/combobox_change_event.md)      | @getshort(combobox/api/combobox_change_event.md)      |
 | [](combobox/api/combobox_input_event.md)       | @getshort(combobox/api/combobox_input_event.md)       |
 | [](combobox/api/combobox_open_event.md)        | @getshort(combobox/api/combobox_open_event.md)        |
 

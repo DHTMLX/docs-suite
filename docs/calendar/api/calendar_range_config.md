@@ -12,7 +12,8 @@ var calendar = new dhx.Calendar("calendar", {
 	css: "dhx_widget--bordered",
 	range: true
 });
-@examplestop:
+
+@descr:
 
 **Related sample**: [Calendar. Range](https://snippet.dhtmlx.com/2mrj53h0)
 

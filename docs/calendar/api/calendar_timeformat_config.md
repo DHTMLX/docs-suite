@@ -14,11 +14,11 @@ var calendar = new dhx.Calendar("calendar_container", {
     timePicker: true,
     timeFormat: 12
 });
-@examplestop:
 
-**Related sample**: [Calendar. Time Format](https://snippet.dhtmlx.com/9xi24if2)
 
 @descr:
+**Related sample**: [Calendar. Time Format](https://snippet.dhtmlx.com/9xi24if2)
+
 The time format can be presented either in the 12-hour or in the 24-hour format.
 
 [comment]: # (@relatedapi: calendar/api/calendar_timepicker_config.md)

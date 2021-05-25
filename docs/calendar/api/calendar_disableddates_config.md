@@ -22,11 +22,11 @@ var calendar = new dhx.Calendar("calendar", {
 		return disabled[date.getDay()];
 	}
 });
-@exmplestop:
 
-**Related sample**: [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
 
 @descr:
+**Related sample**: [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
+
 The function passed to the method receives one parameter:
 
 - **date** (*Date*) - a date object

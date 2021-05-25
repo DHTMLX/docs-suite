@@ -7,6 +7,9 @@ title: getCurrentMode()
 
 @signature: {'getCurrentMode(): "palette" | "picker";'}
 
+@returns:
+A string with the the current mode of the colorpicker: "palette" or "picker".
+
 @example:
 var mode = colorpicker.getCurrentMode(); // -> "palette"
 
