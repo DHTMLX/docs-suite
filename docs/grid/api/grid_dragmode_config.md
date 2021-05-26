@@ -5,7 +5,7 @@ title: dragMode
 
 @short: enables drag-n-drop in Grid
 
-@signature: {'dragMode?: "target" | "both" | "source"'}
+@signature: {'dragMode?: "target" | "both" | "source";'}
 
 @example:
 var grid = new dhx.Grid("grid_container", {

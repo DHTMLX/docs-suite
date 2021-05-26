@@ -6,7 +6,7 @@ description: description
 
 @short: defines whether the width of columns is automatically adjusted to the width of their content
 
-@signature: {'adjust?: IAdjustBy;'}
+@signature: {'adjust?: "header" | "footer" | "data" | boolean;'}
 
 @default: false
 
@@ -49,7 +49,7 @@ The property can be specified to one of the available adjustment modes:
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content;
 - you can also specify `htmlEnable:true` in the configuration object of Grid;
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content;
-- the **adjust** option enabled (including the "header", "footer", "data" modes) adjusts the width of columns with account of [template](grid/api/grid_columns_config.md) added to cells. You need to set the **content** attribute of the [header/footer](grid/api/grid_columns_config.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
+- the **adjust** option enabled (including the "header", "footer", "data" modes) adjusts the width of columns with account of [template](grid/api/api_gridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [header/footer](grid/api/api_gridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
 
 @changelog: added in v6.4
 
