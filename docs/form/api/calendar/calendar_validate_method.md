@@ -1,12 +1,16 @@
 ---
 sidebar_label: validate()
-title: validate()
----          
+title: JavaScript Form - validate Datepicker Method 
+hide_title: true
+description: You can explore the validate Datepicker method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# validate()
 
 @short: validates a DatePicker control
 
 @signature: {'validate(silent: boolean, validateValue?: string | Date): boolean;'}
- 
+
 @params:
 - `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
 - `validateValue: string | Date` - optional, the value to be validated. If not specified, the method validates the current value of the control
