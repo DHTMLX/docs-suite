@@ -12,7 +12,7 @@ title: footerCellDblClick
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("FooterCellDblClick", function(column,e){
+grid.events.on("FooterCellDblClick", function(col,e){
     // your logic here
 });
 

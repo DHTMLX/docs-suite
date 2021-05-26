@@ -8,8 +8,8 @@ title: dragColumnIn
 @signature: {'dragColumnIn: (data: object, events: MouseEvent) => void;'}
 
 @params:
-- `data: object`		data object
-- `events: MouseEvent`		a native HTML event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("DragColumnIn", function(data, events) {

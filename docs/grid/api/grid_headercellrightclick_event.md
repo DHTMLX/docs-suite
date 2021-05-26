@@ -12,7 +12,7 @@ title: headerCellRightClick
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellRightClick", function(column,e){
+grid.events.on("HeaderCellRightClick", function(col,e){
     // your logic here
 });
 

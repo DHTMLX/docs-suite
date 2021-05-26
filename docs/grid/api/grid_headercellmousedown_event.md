@@ -12,7 +12,7 @@ title: headerCellMouseDown
 - `events: MouseEvent & TouchEvent` - a native HTML event object 
 
 @example:
-grid.events.on("HeaderCellMouseDown", function(column,e){
+grid.events.on("HeaderCellMouseDown", function(col,e){
     // your logic here
 });
 

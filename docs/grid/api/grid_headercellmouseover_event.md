@@ -12,7 +12,7 @@ title: headerCellMouseOver
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellMouseOver", function(column,e){
+grid.events.on("HeaderCellMouseOver", function(col,e){
     // your logic here
 });
 

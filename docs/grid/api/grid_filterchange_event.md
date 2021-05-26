@@ -13,7 +13,7 @@ title: filterChange
 - `filterId: string` - the type of a filter: "inputFilter" or "selectFilter"
 
 @example:
-grid.events.on("FilterChange", function(value,colId,filter){
+grid.events.on("FilterChange", function(value,colId,filterId){
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 
