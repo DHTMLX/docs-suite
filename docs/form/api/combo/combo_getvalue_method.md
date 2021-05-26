@@ -16,4 +16,4 @@ var value = form.getItem("combo").getValue();
 
 @descr:
 
-The method returns the current string value, if *multiselection:false* is set or the multiselection config is not defined, otherwise - returns an array of string value of a Combo control.
+The method returns the current string value, if either *multiselection:false* is set or the multiselection config is not defined, otherwise - returns an array of string values of a Combo control.

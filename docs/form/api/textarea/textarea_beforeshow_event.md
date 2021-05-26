@@ -5,10 +5,10 @@ title: beforeShow
 
 @short: fires before a control is shown
 
-@signature: {'beforeShow: (value: string | number) => boolean | void;'}
+@signature: {'beforeShow: (value: string) => boolean | void;'}
  
 @params:
-`value: string | number` - the current value of the control
+`value: string` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

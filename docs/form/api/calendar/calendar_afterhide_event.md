@@ -9,7 +9,7 @@ title: afterHide
 
 @params:
 - `value: string | Date` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the datepicker control initialization
+- `init: boolean` - *true*, if the event is triggered on the datepicker control initialization
 
 @example:
 form.getItem("datepicker").events.on("AfterHide", function(value, init) {

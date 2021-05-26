@@ -5,10 +5,10 @@ title: afterShow
 
 @short: fires after a control is shown
 
-@signature: {'afterShow: (value: string | number) => void;'}
+@signature: {'afterShow: (value: string) => void;'}
 
 @params:
-`value: string | number` - the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("textarea").events.on("AfterShow", function(value) {

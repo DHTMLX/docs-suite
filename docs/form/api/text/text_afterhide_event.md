@@ -9,7 +9,7 @@ title: afterHide
 
 @params:
 - `value: string | number` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the control initialization
+- `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
 form.getItem("text").events.on("AfterHide", function(value, init) {

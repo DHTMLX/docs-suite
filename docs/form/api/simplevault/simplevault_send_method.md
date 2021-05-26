@@ -15,4 +15,4 @@ form.getItem("simplevault").send();
 
 @descr:
 
-The request URL is specified by the [target](form/simplevault.md#addingsimplevault) property.
+The request URL is specified by the [target](form/api/simplevault/api_simplevault_properties.md) property.
