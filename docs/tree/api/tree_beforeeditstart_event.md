@@ -1,7 +1,11 @@
 ---
 sidebar_label: beforeEditStart
-title: beforeEditStart
----          
+title: JavaScript Tree - beforeEditStart Event 
+hide_title: true
+description: You can explore the beforeEditStart event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeEditStart
 
 @short: fires before editing of an item has started
 

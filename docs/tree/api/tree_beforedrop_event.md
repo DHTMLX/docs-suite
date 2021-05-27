@@ -1,7 +1,11 @@
 ---
 sidebar_label: beforeDrop
-title: beforeDrop
----          
+title: JavaScript Tree - beforeDrop Event 
+hide_title: true
+description: You can explore the beforeDrop event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeDrop
 
 @short: fires before the user has finished dragging an item and released the mouse button
 
