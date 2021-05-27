@@ -1,7 +1,11 @@
 ---
 sidebar_label: data
-title: data
----          
+title: JavaScript Sidebar - data Config 
+hide_title: true
+description: You can explore the data config of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# data
 
 @short: specifies an array of data objects to set into Sidebar
 
