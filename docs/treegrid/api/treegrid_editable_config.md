@@ -1,7 +1,11 @@
 ---
 sidebar_label: editable
-title: editable
----          
+title: JavaScript TreeGrid - editable Config 
+hide_title: true
+description: You can explore the editable config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# editable
 
 @short: enables editing in TreeGrid columns
 

@@ -1,7 +1,11 @@
 ---
 sidebar_label: dragRowStart
-title: dragRowStart
----          
+title: JavaScript TreeGrid - dragRowStart Event 
+hide_title: true
+description: You can explore the dragRowStart event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# dragRowStart
 
 @short: fires when dragging of a row has started
 

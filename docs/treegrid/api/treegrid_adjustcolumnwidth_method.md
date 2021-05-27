@@ -1,7 +1,11 @@
 ---
 sidebar_label: adjustColumnWidth()
-title: adjustColumnWidth()
----          
+title: JavaScript TreeGrid - adjustColumnWidth Method 
+hide_title: true
+description: You can explore the adjustColumnWidth method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# adjustColumnWidth()
 
 @short: adjusts the width of a column to make all its content visible
 

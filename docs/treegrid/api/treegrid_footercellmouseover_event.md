@@ -1,7 +1,11 @@
 ---
 sidebar_label: footerCellMouseOver
-title: footerCellMouseOver
----          
+title: JavaScript TreeGrid - footerCellMouseOver Event 
+hide_title: true
+description: You can explore the footerCellMouseOver event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# footerCellMouseOver
 
 @short: fires on moving the mouse pointer over a grid footer cell
 
