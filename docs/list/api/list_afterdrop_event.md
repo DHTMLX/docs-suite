@@ -3,7 +3,7 @@ sidebar_label: afterDrop
 title: afterDrop
 ---          
 
-@short: fires before the user has finished dragging an item but after the mouse button is released 
+@short: fires before the user has finished dragging of an item but after the mouse button is released 
 
 @signature: afterDrop: (data: object, events: MouseEvent) => void;
 

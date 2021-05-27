@@ -25,7 +25,7 @@ dhx.message({
 
 **Related sample**: [Message. Message Configuration](https://snippet.dhtmlx.com/qfmd877x)
 
-You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).
+{{note You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).}}
 
 ## Alert Box
 
@@ -45,7 +45,7 @@ dhx.alert({
 
 **Related sample**: [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
 
-See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).
+{{note See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).}}
 
 ## Confirm Box
 
@@ -66,7 +66,7 @@ dhx.confirm({
 
 **Related sample**: [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
 
-You can find the list of configuration properties the constructor of the confirm box may take [in the related article](message/api/api_message_properties.md#confirm-box).
+{{note You can find the list of configuration properties the constructor of the confirm box may take [in the related article](message/api/api_message_properties.md#confirm-box).}}
 
 ### Working with confirm
 
@@ -107,7 +107,7 @@ dhx.tooltip("Tooltip From Right", {
 - [Message. Tooltip Position](https://snippet.dhtmlx.com/4wrrsr67)
 - [Message. Tooltip Delay Configuration](https://snippet.dhtmlx.com/zts0avym)
 
-See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).
+{{note See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).}}
 
 ### Smart positioning
 

@@ -8,7 +8,7 @@ title: dragIn
 @signature: {'dragIn: (data: object, events: MouseEvent) => void | boolean;'}
 
 @params:
-- `id: string | number` - the id of a clicked item
+- `data: object` - data object
 - `events: MouseEvent` - a native HTML event object
 
 @example:

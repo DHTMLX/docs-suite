@@ -5,7 +5,7 @@ title: collapse()
 
 @short: collapses a specified cell
 
-@signature: {'collapsed?: boolean;'}
+@signature: {'collapse(): void;'}
 
 @example:
 layout.getCell("id").collapse();

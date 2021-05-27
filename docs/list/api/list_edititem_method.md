@@ -5,7 +5,7 @@ title: editItem()
 
 @short: enables editing of an item
 
-@signature: {'editItem(id: string): void;'}
+@signature: {'editItem(id: string | number): void;'}
 
 @params:
 `id: string|number` - the id of an item

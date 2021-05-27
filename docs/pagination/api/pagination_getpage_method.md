@@ -8,7 +8,7 @@ title: getPage()
 @signature: {'getPage(): number;'}
 
 @returns:
-The index of the active page.
+A number with the index of the active page.
 
 @example:
 const pageIndex = pagination.getPage();
