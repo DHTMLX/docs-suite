@@ -2147,8 +2147,6 @@ module.exports = {
                   "tabbar/api/tabbar_closable_config",
                   "tabbar/api/tabbar_css_config",
                   "tabbar/api/tabbar_disabled_config",
-                  "tabbar/api/tabbar_html_config",
-                  "tabbar/api/tabbar_id_config",
                   "tabbar/api/tabbar_mode_config",
                   "tabbar/api/tabbar_nocontent_config",
                   "tabbar/api/tabbar_tabalign_config",

@@ -8,7 +8,7 @@ title: getWidget()
 @signature: getWidget(): any;
 
 @returns:
-The widget attached to Tabbar.
+An object with the widget attached to Tabbar.
 
 @example:
 tabbar.getWidget();

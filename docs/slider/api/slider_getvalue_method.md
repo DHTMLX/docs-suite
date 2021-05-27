@@ -8,7 +8,7 @@ title: getValue()
 @signature: {'getValue(): number[];'}
 
 @returns:
-The current value of the slider.
+An array with the current value of the slider.
 
 @example:
 var value = slider.getValue(); // -> [20]
