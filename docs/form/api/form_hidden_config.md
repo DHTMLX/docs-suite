@@ -1,7 +1,11 @@
 ---
 sidebar_label: hidden
-title: hidden
----          
+title: JavaScript Form - hidden Config 
+hide_title: true
+description: You can explore the hidden Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# hidden
 
 @short: defines whether a form is hidden
 
