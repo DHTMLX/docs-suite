@@ -1,7 +1,11 @@
 ---
 sidebar_label: closable
-title: closable
----          
+title: JavaScript Window - closable Config 
+hide_title: true
+description: You can explore the closable config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# closable
 
 @short: defines whether a window can be closed
 

@@ -1,7 +1,11 @@
 ---
 sidebar_label: title
-title: title
----          
+title: JavaScript Window - title Config 
+hide_title: true
+description: You can explore the title config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# title
 
 @short: adds some text into the header of a window
 
