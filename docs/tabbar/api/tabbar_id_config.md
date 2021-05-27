@@ -1,8 +1,11 @@
 ---
 sidebar_label: id
-title: id
-description: description
----          
+title: JavaScript Tabbar - id Config 
+hide_title: true
+description: You can explore the id config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# id
 
 @short: sets the id of a tab
 

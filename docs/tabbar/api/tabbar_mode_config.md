@@ -1,7 +1,11 @@
 ---
 sidebar_label: mode
-title: mode
----   
+title: JavaScript Tabbar - mode Config 
+hide_title: true
+description: You can explore the mode config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# mode
 
 @short: specifies the mode of displaying a tabbar
 
