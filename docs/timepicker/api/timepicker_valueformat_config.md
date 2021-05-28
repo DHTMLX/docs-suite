@@ -1,10 +1,9 @@
 ---
 sidebar_label: valueFormat
 title: JavaScript Timepicker - valueFormat Config 
-hide_title: true
 description: You can explore the valueFormat config of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # valueFormat
 
 @short: defines the format of the value to be applied when working with TimePicker events

@@ -1,10 +1,9 @@
 ---
 sidebar_label: getOptions()
 title: JavaScript Form - getOptions Select Method 
-hide_title: true
 description: You can explore the getOptions Select method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # getOptions()
 
 @short: returns an array of Select options

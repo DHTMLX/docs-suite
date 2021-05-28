@@ -1,10 +1,9 @@
 ---
 sidebar_label: maxHeight
 title: JavaScript Layout - maxHeight Config 
-hide_title: true
 description: You can explore the maxHeight config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # maxHeight
 
 @short: the maximal height to be set for a cell

@@ -1,10 +1,9 @@
 ---
 sidebar_label: beforeColumnDrop
 title: JavaScript TreeGrid - beforeColumnDrop Event 
-hide_title: true
 description: You can explore the beforeColumnDrop event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # beforeColumnDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target column

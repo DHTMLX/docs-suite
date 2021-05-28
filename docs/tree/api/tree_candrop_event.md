@@ -1,10 +1,9 @@
 ---
 sidebar_label: canDrop
 title: JavaScript Tree - canDrop Event 
-hide_title: true
 description: You can explore the canDrop event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # canDrop
 
 @short: fires when a dragged item is over a target item

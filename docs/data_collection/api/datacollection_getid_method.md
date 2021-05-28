@@ -1,10 +1,9 @@
 ---
 sidebar_label: getId()
 title: JavaScript DataCollection - getId Method 
-hide_title: true
 description: description
 ---
- 
+
 # getId()
 
 @short: returns the id of the item by its index

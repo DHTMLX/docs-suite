@@ -1,10 +1,9 @@
 ---
 sidebar_label: tick
 title: JavaScript Slider - tick Config 
-hide_title: true
 description: You can explore the tick config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # tick
 
 @short: sets the interval of steps for rendering the slider scale

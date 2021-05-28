@@ -1,10 +1,9 @@
 ---
 sidebar_label: select()
 title: JavaScript Menu - select Method 
-hide_title: true
 description: You can explore the select method of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # select()
 
 @short: selects a specified item of Menu

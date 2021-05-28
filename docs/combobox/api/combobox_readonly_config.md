@@ -1,10 +1,9 @@
 ---
 sidebar_label: readOnly
 title: JavaScript Combo Box - readOnly Config 
-hide_title: true
 description: You can explore the readOnly config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # readOnly
 
 @short: makes Combo Box readonly

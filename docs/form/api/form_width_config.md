@@ -1,10 +1,9 @@
 ---
 sidebar_label: width
 title: JavaScript Form - width Config 
-hide_title: true
 description: You can explore the width Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # width
 
 @short: sets the width of the control group

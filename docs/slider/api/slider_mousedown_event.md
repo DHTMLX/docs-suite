@@ -1,10 +1,9 @@
 ---
 sidebar_label: mouseDown
 title: JavaScript Slider - mouseDown Event 
-hide_title: true
 description: You can explore the mouseDown event of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # mouseDown
 
 @short: fires on pressing the left mouse button over the slider thumb

@@ -1,10 +1,9 @@
 ---
 sidebar_label: addTab()
 title: JavaScript Tabbar - addTab Method 
-hide_title: true
 description: You can explore the addTab method of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # addTab()
 
 @short: adds a new tab into a tabbar

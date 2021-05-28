@@ -1,10 +1,9 @@
 ---
 sidebar_label: updateUrl()
 title: DataProxy - updateUrl Method 
-hide_title: true
 description: You can explore the updateUrl method of DataProxy in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # updateUrl()
 
 @short: updates the initial URL and parameters that were specified when initializing proxy

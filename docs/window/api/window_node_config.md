@@ -1,10 +1,9 @@
 ---
 sidebar_label: node
 title: JavaScript Window - node Config 
-hide_title: true
 description: You can explore the node config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # node
 
 @short: optional, the container for a window or its id

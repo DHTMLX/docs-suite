@@ -1,10 +1,9 @@
 ---
 sidebar_label: cancelDrop
 title: JavaScript DataView - cancelDrop Event 
-hide_title: true
 description: You can explore the cancelDrop event of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # cancelDrop
 
 @short: fires on moving a mouse pointer out of item's borders while dragging the item
