@@ -37,7 +37,7 @@ There are no specific backend requirements. The demo is based on the REST API an
 
 The free trial version is given to you for 30 days only for evaluation purposes. After a trial term is over, you will receive messages about using an unlicensed product.
 
-Learn more about [Evaluation License Terms](https://dhtmlx.com/docs/products/license.shtml?eval). `check`
+Learn more about [Evaluation License Terms](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/#dashboard). `check`
 
 ### How to start with license
 

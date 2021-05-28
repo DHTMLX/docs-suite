@@ -12,7 +12,7 @@ title: inputCreated
 - `input: HTMLElement` - a newly created input
 
 @example:
-toolbar.events.on("InputCreated", function(id, el){
+toolbar.events.on("InputCreated", function(id, input){
     console.log(id);
 });
 
