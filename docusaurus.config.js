@@ -128,7 +128,8 @@ module.exports = {
     tagline: 'DHTMLX Suite 7 Docs',
     url: 'https://docs.dhtmlx.com/suita/',
     baseUrl: '/suita/',
-    onBrokenLinks: 'log',
+    onBrokenLinks: 'warn',
+    onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name.
     projectName: 'docs-suite', // Usually your repo name.
