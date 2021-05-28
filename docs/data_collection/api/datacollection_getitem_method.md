@@ -12,7 +12,7 @@ description: You can explore the getItem method of DataCollection in the documen
 @signature: {'getItem(id: Id): T;'}
 
 @params:
-`id: string,number` - the id of a selected item
+`id: string | number` - the id of a selected item
 
 @returns:
 The object of an item.

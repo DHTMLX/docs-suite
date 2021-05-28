@@ -12,7 +12,7 @@ description: You can explore the itemRightClick event of List in the documentati
 @signature: {'itemRightClick: (id: string | number, events: MouseEvent) => void;'}
 
 @params:
-- `id: string,number` - the id of a right-clicked item
+- `id: string | number` - the id of a right-clicked item
 - `events: MouseEvent` - a native HTML event object
 
 @example:

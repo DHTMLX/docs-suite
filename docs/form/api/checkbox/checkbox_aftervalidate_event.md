@@ -8,15 +8,15 @@ description: You can explore the afterValidate Checkbox event of Form in the doc
 # afterValidate
 
 @short: fires after the control value is validated
-
-@signature: {'afterValidate: (value: string | boolean, isValid: boolean) => void;'}
+ 
+@signature: {'afterValidate: (value: string | boolean, isValidate: boolean) => void;'}
 
 @params:
 - `value: string | boolean` - the validated value
-- `isValid: boolean` - the result of validation
+- `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("checkbox").events.on("AfterValidate", function(value, isValid) {
+form.getItem("checkbox").events.on("AfterValidate", function(value, isValidate) {
     console.log("AfterValidate", value, isValidate);
 });
 

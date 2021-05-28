@@ -82,7 +82,7 @@ layout.getCell("toolbar").show();
 Checking visibility of a cell
 -------------------
 
-Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibilty of cell via the [](layout/api/cell/layout_cell_isvisible_method.md) method. It returns *true* if a cell is visible and *false* if it is hidden.
+Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibility of a cell via the [](layout/api/cell/layout_cell_isvisible_method.md) method. It returns *true* if the cell is visible and *false* if it is hidden.
 
 ~~~js
 layout.getCell("sidebar").isVisible(); // -> true|false

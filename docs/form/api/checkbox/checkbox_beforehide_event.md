@@ -13,7 +13,7 @@ description: You can explore the beforeHide Checkbox event of Form in the docume
 
 @params:
 - `value: string | boolean` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the control initialization, otherwise false
+- `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
 Return `false` to prevent a control from being hidden; otherwise, `true`.

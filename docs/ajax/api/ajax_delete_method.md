@@ -1,6 +1,6 @@
 ---
-sidebar_label: delete
-title: delete
+sidebar_label: delete()
+title: delete()
 ---          
 
 @short: sends a DELETE request to the server
@@ -8,13 +8,12 @@ title: delete
 @signature: {'delete<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
 
 @params:
-- url       string      the URL the request is sent to
-- data      object      optional, the data sent to the server by the DELETE-request
-- config    object      the configuration object of the request
+- `url: string` - the URL the request is sent to
+- `data: object` - optional, the data sent to the server by the DELETE-request
+- `config: object` - the configuration object of the request
 
 @returns:
-
-- data      promise     "promise" of the data object
+A "promise" of the data object.
 
 @example:
 dhx.ajax.delete(url, {id: "2"}).then(function (data){

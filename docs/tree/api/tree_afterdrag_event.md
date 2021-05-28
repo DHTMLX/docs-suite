@@ -11,6 +11,10 @@ description: You can explore the afterDrag event of Tree in the documentation of
 
 @signature: {'afterDrag: (data: IDragInfo, events: MouseEvent) => any;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 tree.events.on("AfterDrag", function(data, events) {
     // your logic here

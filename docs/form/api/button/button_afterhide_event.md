@@ -13,7 +13,7 @@ description: You can explore the afterHide Button event of Form in the documenta
 
 @params:
 - `text: string` - the current text label of the control
-- `init: boolean` - true, if the event is triggered on the button control initialization
+- `init: boolean` - *true*, if the event is triggered on the button control initialization
 
 @example:
 form.getItem("button").events.on("AfterHide", function(text, init) {

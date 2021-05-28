@@ -14,10 +14,6 @@ description: You can explore the parse method of DataCollection in the documenta
 @params:
 
 - `data: any` - the data to load
-- `type: string` - optional, type of data (json, xml, csv), json by default
-
-@returns:
-An array of loaded items.
 
 @example:
 var data = [

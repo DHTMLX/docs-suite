@@ -9,20 +9,20 @@ description: You can explore the afterValidate Timepicker event of Form in the d
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: string | ITimeObject, isValid: boolean) => void;'}
+@signature: {'afterValidate: (value: string | ITimeObject, isValidate: boolean) => void;'}
 
 @params:
 - `value: string | object` - the validated value
-- `isValid: boolean` - the result of validation
+- `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("timepicker").events.on("AfterValidate", function(value, isValid) {
-    console.log("AfterValidate", value, isValid);
+form.getItem("timepicker").events.on("AfterValidate", function(value, isValidate) {
+    console.log("AfterValidate", value, isValidate);
 });
 
 @descr:
 
-The type of the value parameter depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):
+The type of the value parameter depends on the applied [valueFormat](form/api/timepicker/api_timepicker_properties.md) and [timeFormat](form/api/timepicker/api_timepicker_properties.md):
 
 - If *valueFormat: "string"*  and *timeFormat:24* are specified, the string value will include just the hour and minutes: "00:39"
 - If *valueFormat: "string"*  and *timeFormat:12* are specified, the string value will include hour, minutes, and am/pm identifiers: "06:00AM"

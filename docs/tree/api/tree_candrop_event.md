@@ -11,6 +11,10 @@ description: You can explore the canDrop event of Tree in the documentation of t
 
 @signature: {'canDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 tree.events.on("CanDrop", function(data, events) {
     // your logic here

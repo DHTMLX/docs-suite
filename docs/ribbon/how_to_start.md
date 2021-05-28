@@ -59,7 +59,7 @@ Initialize Ribbon
 Initialize Ribbon with the `dhx.Ribbon` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the toolbar container
-- an object with configuration properties (see the full list below)
+- an object with configuration properties
 
 ~~~js
 var ribbon = new dhx.Ribbon("ribbon_container", {

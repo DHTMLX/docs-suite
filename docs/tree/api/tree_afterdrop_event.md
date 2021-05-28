@@ -11,6 +11,10 @@ description: You can explore the afterDrop event of Tree in the documentation of
 
 @signature: {'afterDrop: (data: object, events: MouseEvent) => void;'}
 
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+
 @example:
 tree.events.on("AfterDrop", function(data, events) {
     // your logic here

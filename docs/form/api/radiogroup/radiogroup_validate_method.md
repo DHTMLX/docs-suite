@@ -8,8 +8,11 @@ description: You can explore the validate Radiogroup method of Form in the docum
 # validate()
 
 @short: validates a RadioGroup control
+ 
+@signature: {'validate(silent?: boolean): boolean;'}
 
-@signature: {'validate(silent: boolean): boolean;'}
+@params:
+`silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
 
 @returns:
 `true`, if a control is valid; otherwise, `false`.
@@ -19,3 +22,13 @@ form.getItem("radiogroup").validate();
 // -> true/false
 
 @descr:
+
+When calling without the  **silent** parameter or setting it to *false*, the method invokes the [BeforeValidate](form/api/radiogroup/radiogroup_beforevalidate_event.md) and [AfterValidate](form/api/radiogroup/radiogroup_aftervalidate_event.md) events and visually modifies the control.
+
+~~~js
+form.getItem("radiogroup").validate(); // -> true/false
+form.getItem("radiogroup").validate(false); // -> true/false
+~~~
+
+@changelog:
+The **silent** parameter is added in v7.0

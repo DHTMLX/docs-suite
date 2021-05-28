@@ -13,7 +13,7 @@ description: You can explore the afterHide Select event of Form in the documenta
 
 @params:
 - `value: string | number` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the control initialization
+- `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
 form.getItem("select").events.on("AfterHide", function(value, init) {

@@ -9,7 +9,7 @@ description: You can explore the dragColumnIn event of TreeGrid in the documenta
 
 @short: fires when a column is dragged to another potential target
 
-@signature: {'dragColumnIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
+@signature: {'dragColumnIn: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - `data: object` - data object

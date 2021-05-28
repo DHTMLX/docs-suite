@@ -14,6 +14,7 @@ description: You can explore the beforeDrag event of Tree in the documentation o
 @params:
 - `data: object` - data object
 - `events: MouseEvent` - a native HTML event object
+- `ghost: HTMLElement` - an HTML element
 
 @returns:
 Return `false` to block dragging of an item; otherwise, `true`.

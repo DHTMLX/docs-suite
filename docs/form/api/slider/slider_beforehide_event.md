@@ -13,7 +13,7 @@ description: You can explore the beforeHide Slider event of Form in the document
 
 @params:
 - `value: number[]` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the control initialization; otherwise, false
+- `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
 Return `false` to prevent a control from being hidden; otherwise, `true`.

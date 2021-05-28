@@ -9,7 +9,7 @@ description: You can explore the getCell method of TreeGrid in the documentation
 
 @short: returns the object of a selected cell
 
-@signature: {'getCellRect(row: string | number, col: string | number): ICellRect;'}
+@signature: {'getCell(): ICell;'}
 
 @returns:
 An object with parameters of a selected cell.

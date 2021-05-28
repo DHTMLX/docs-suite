@@ -13,7 +13,7 @@ description: You can explore the beforeHide Button event of Form in the document
 
 @params:
 - `text: string` - the current text label of the control
-- `init: boolean` - true, if the event is triggered on the button control initialization
+- `init: boolean` - *true*, if the event is triggered on the button control initialization; otherwise, *false*
 
 @returns:
 Return `false` to prevent a control from being hidden; otherwise - `true`.

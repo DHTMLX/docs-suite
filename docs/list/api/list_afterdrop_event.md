@@ -7,7 +7,7 @@ description: You can explore the afterDrop event of List in the documentation of
  
 # afterDrop
 
-@short: fires before the user has finished dragging an item but after the mouse button is released 
+@short: fires before the user has finished dragging of an item but after the mouse button is released 
 
 @signature: afterDrop: (data: object, events: MouseEvent) => void;
 

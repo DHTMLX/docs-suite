@@ -13,7 +13,7 @@ description: You can explore the afterHide Colorpicker event of Form in the docu
 
 @params:
 - `value: string` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the colorpicker control initialization
+- `init: boolean` - *true*, if the event is triggered on the colorpicker control initialization
 
 @example:
 form.getItem("colorpicker").events.on("AfterHide", function(value, init) {

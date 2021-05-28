@@ -9,13 +9,12 @@ description: You can explore the move method of DataCollection in the documentat
 
 @short: moves an item to the defined position
 
-@signature: {'move(id: Id | Id[], index: number, target?: DataCollection | TreeCollection, targetId?: Id): Id | Id[];'}
+@signature: {'move(id: Id | Id[], index: number, target?: DataCollection): Id | Id[];'}
 
 @params:
-- `id: string,string[]` - the ids of items to move
+- `id: string | string[]` - the ids of items to move
 - `index: number` - the index to move items to
 - `target: object` - optional, the target data collection object
-- `targetId: string` - optional, the id of the parent item where the moved items will be placed
 
 @returns:
 Either a string with the item's id or an array of string values with ids of items.

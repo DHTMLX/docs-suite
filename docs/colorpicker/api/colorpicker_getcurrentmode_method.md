@@ -11,6 +11,9 @@ description: You can explore the getCurrentMode method of Colorpicker in the doc
 
 @signature: {'getCurrentMode(): "palette" | "picker";'}
 
+@returns:
+A string with the the current mode of the colorpicker: "palette" or "picker".
+
 @example:
 var mode = colorpicker.getCurrentMode(); // -> "palette"
 

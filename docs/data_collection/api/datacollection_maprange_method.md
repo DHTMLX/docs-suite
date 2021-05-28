@@ -14,7 +14,7 @@ description: You can explore the mapRange method of DataCollection in the docume
 @params:
 - `from: number` - the initial position of an item in the range
 - `to: number` - the final position of an item in the range
-- `handler: function` - a function that will be called for each item from the specified range
+- `callback: function` - a function that will be called for each item from the specified range
 
 @returns:
 A new array of matching item objects.

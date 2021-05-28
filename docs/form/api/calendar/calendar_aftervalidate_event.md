@@ -9,15 +9,15 @@ description: You can explore the afterValidate Datepicker event of Form in the d
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: string | Date, isValid: boolean) => void;'} 
+@signature: {'afterValidate: (value: string | Date, isValidate: boolean) => void;'} 
 
 @params:
 - `value: string | Date` - the validated value
-- `isValid: boolean` - the result of validation
+- `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("datepicker").events.on("AfterValidate", function(value, isValid) {
-    console.log("AfterValidate", value, isValid);
+form.getItem("datepicker").events.on("AfterValidate", function(value, isValidate) {
+    console.log("AfterValidate", value, isValidate);
 });
 
 @descr:

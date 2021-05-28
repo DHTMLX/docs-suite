@@ -33,7 +33,7 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content;
 - you can also specify `htmlEnable:true` in the configuration object of Grid;
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content.
-- the **autoHeight** configuration option enabled adjusts the height of the cells with account of [template](grid/api/grid_columns_config.md) added to cells.
+- the **autoHeight** configuration option enabled adjusts the height of the cells with account of [template](grid/api/api_gridcolumn_properties.md) added to cells.
 
 @changelog: added in v7.1
 

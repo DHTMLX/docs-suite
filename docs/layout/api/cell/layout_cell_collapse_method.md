@@ -9,7 +9,7 @@ description: You can explore the collapse method of Layout in the documentation 
 
 @short: collapses a specified cell
 
-@signature: {'collapsed?: boolean;'}
+@signature: {'collapse(): void;'}
 
 @example:
 layout.getCell("id").collapse();

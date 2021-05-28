@@ -12,9 +12,12 @@ description: You can explore the add method of TreeCollection in the documentati
 @signature: {'add(obj: IDataItem | IDataItem[], index?: number, parent?: Id): Id | Id[];'}
 
 @params:
-- `obj: object` - the configuration of the added item
+- `obj: object | array` - the configuration of the added item
 - `index: number` - defines the position of the item in the component
 - `parent: string` - the ID of the future parent item
+
+@returns:
+The item's id or an array with ids of items.
 
 @example:
 myToolbar.data.add({

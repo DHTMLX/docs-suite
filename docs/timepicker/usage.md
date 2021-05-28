@@ -13,9 +13,9 @@ There is the [setValue()](timepicker/api/timepicker_setvalue_method.md) method t
 - as a Date object
 - as a string
 - as an array with the following elements:
-	- the hour value
-    - the minutes value
-    - the "AM/PM" identifier for 12-hour format as a string
+  - the hour value
+  - the minutes value
+  - the "AM/PM" identifier for 12-hour format as a string
 - as a number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 method of the **Date** object
 

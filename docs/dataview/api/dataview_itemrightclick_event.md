@@ -9,10 +9,10 @@ description: You can explore the itemRightClick event of DataView in the documen
 
 @short: fires on right clicking an item
 
-@signature: {'itemRightClick: (id: string, e: MouseEvent) => void;'}
+@signature: {'itemRightClick: (id: string | number, e: MouseEvent) => void;'}
 
 @params:
-- `id: string` - the id of a right-clicked item
+- `id: string | number` - the id of a right-clicked item
 - `e: MouseEvent` - a native HTML event object
 
 @example:

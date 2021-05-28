@@ -13,7 +13,7 @@ description: You can explore the afterHide Spacer event of Form in the documenta
 
 @params:
 - `value: undefined` - the current value of the control, null
-- `init: boolean` - true, if the event is triggered on the control initialization
+- `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
 form.getItem("spacer").events.on("AfterHide", function(value, init) {

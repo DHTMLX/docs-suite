@@ -15,7 +15,7 @@ description: You can explore the isVisible method of Window in the documentation
 `true`, if a window is visible; otherwise, `false`.
 
 @example:
-window.isVisible(); // -> true/false
+dhxWindow.isVisible(); // -> true/false
 
 @descr:
 

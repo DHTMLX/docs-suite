@@ -7,7 +7,7 @@ description: You can explore the beforeDrop event of List in the documentation o
  
 # beforeDrop
 
-@short: fires before the user has finished dragging an item and released the mouse button
+@short: fires before the user has finished dragging of an item and released the mouse button
 
 @signature: {'beforeDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 

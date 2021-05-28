@@ -15,7 +15,7 @@ description: You can explore the save method of DataProxy in the documentation o
 - `data: object` - mandatory, data to be sent to the server
 - `mode: string` - mandatory, a mode of the request ("delete", "update", "insert")
 
-@returns: 
+@returns:
 A promise of the data object
 
 @example:

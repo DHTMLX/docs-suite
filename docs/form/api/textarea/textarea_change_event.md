@@ -9,10 +9,10 @@ description: You can explore the change Textarea event of Form in the documentat
 
 @short: fires on changing the value of a control
 
-@signature: {'change: (value: string | number) => void;'}
-
+@signature: {'change: (value: string) => void;'}
+ 
 @params:
-`value: string | number` - the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("textarea").events.on("Change", function(value) {

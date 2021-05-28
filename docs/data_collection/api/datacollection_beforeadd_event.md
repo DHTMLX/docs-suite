@@ -9,7 +9,7 @@ description: You can explore the beforeAdd event of DataCollection in the docume
 
 @short: fires before adding a new item into a data collection
 
-@signature: {'beforeAdd: (obj: any) => boolean | void;'}
+@signature: {'beforeAdd: (newItem: any) => boolean | void;'}
 
 @params:
 `newItem: object` - the object of an added item

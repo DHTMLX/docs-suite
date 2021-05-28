@@ -11,6 +11,10 @@ description: You can explore the setValue method of Timepicker in the documentat
 
 @signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
+@params:
+`value: Date|number|string|array|object` - the value to be set for a timepicker
+
+
 @example:
 // set the value as a string
 timepicker.setValue("00:39");

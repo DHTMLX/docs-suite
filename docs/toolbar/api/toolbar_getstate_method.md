@@ -15,7 +15,7 @@ description: You can explore the getState method of Toolbar in the documentation
 `id: string | number` - optional, the id of a Toolbar control
 
 @returns:
-The value/state of the control, or an object with IDs of controls and their values/states.
+Either a string with the value of the control, or a boolean value with the state of the control, or an object with IDs of controls and their values/states.
 
 @example:
 var state1 = toolbar.getState("search"); 

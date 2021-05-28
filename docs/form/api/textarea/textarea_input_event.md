@@ -9,10 +9,10 @@ description: You can explore the input Textarea event of Form in the documentati
 
 @short: fires when a user types some text in the textarea
 
-@signature: {'input: (value: string | number) => void;'} 
+@signature: {'input: (value: string) => void;'} 
 
 @params:
-`value: string | number` - an entered value
+`value: string` - an entered value
 
 @example:
 form.getItem("textarea").events.on("Input", function(inputValue) {

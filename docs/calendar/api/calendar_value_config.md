@@ -43,11 +43,11 @@ var calendar = new dhx.Calendar("calendar_container", {
     value: (["03/06/19", "15/06/19"]),
     range: true  
 });
-@examplestop:
 
-**Related sample**: [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
 
 @descr:
+**Related sample**: [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
+
 If the property is not specified in the configuration object, nothing is selected in the calendar on initialization.
 
 {{note Please note that the format of date in the Calendar is defined by the dateFormat option. So, check that you've set the format of date you want to use in the calendar both in the **value** and in the **dateFormat** property. Otherwise, the default format ("%d/%m/%y") will be used.}}

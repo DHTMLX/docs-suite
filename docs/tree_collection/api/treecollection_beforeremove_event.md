@@ -15,7 +15,7 @@ description: You can explore the beforeRemove event of TreeCollection in the doc
 `removedItem: object `- the object of an item to remove
 
 @returns:
-Return `true` to remove an item from a data collection, `false` not to remove an item from a data collection.
+Return `false` to prevent removing of an item from a data collection; otherwise `true.`
 
 @example:
 data.events.on("BeforeRemove", function(removedItem){

@@ -9,7 +9,7 @@ description: You can explore the filter config of Combo Box in the documentation
 
 @short: sets a custom function for filtering Combo Box options
 
-@signature: {'filter?: (item: any, input: string) => boolean;'}
+@signature: {'filter?: (item: any, target: string) => boolean;'}
 
 @example:
 function mySearch(item, target) {
@@ -22,5 +22,22 @@ var combo = new dhx.Combobox("combo_container", {
 @descr: 
 
 **Related sample**: [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
+
+A custom function takes two parameters:
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>item</b></td>
+			<td>(<i>object</i>) an item of data collection</td>
+		</tr>
+		<tr>
+			<td><b>target</b></td>
+			<td>(<i>string</i>) the string to compare to</td>
+		</tr>
+    </tbody>
+</table>
+
+and should return *true/false* to specify whether an item should be displayed in the filtered list of options.
 
 [comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/customization.md#custom-filter-for-options)

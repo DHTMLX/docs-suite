@@ -12,6 +12,8 @@ description: You can explore the dragIn event of Tree in the documentation of th
 @signature: {'dragIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 tree.events.on("DragIn", function(data, events) {

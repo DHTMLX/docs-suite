@@ -12,7 +12,7 @@ description: You can explore the exists method of TreeCollection in the document
 @signature: {'exists(id: Id): boolean;'}
 
 @params:
-`id: string, number` - the id of the item in question
+`id: string` - the id of the item in question
 
 @returns:
 `true` if the item exists; otherwise, `false`.

@@ -12,7 +12,7 @@ description: You can explore the getRoot method of TreeCollection in the documen
 @signature: {'getRoot(): Id;'}
 
 @returns:
-- `Id: string` - the id of the root element
+A string with the id of the root element.
 
 @example:
 toolbar.data.getRoot();

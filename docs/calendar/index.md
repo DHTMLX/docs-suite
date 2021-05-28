@@ -16,7 +16,7 @@ This component is a great date picker solution for your website or application. 
 
 ## API reference
 
-[Calendar API](api/api_overview)
+- [Calendar API](api/api_overview)
 
 ## Related resources
 

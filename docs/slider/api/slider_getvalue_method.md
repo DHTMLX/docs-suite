@@ -12,7 +12,7 @@ description: You can explore the getValue method of Slider in the documentation 
 @signature: {'getValue(): number[];'}
 
 @returns:
-The current value of the slider.
+An array with the current value of the slider.
 
 @example:
 var value = slider.getValue(); // -> [20]

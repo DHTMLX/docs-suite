@@ -15,8 +15,8 @@ description: You can explore the modeChange event of Colorpicker in the document
 `view: string` - the colorpicker mode ("palette", "picker")
 
 @example:
-colorpicker.events.on("ModeChange", function(mode) {
-   console.log("Selected mode: " + mode); 
+colorpicker.events.on("ModeChange", function(view) {
+   console.log("Selected mode: " + view); 
 });
  
 @descr:

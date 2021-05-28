@@ -47,4 +47,6 @@ chart.setConfig(config);
 
 **Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
 
+See the list of chart configuration properties in the [Configuration](chart/configuration_properties.md) article.
+
 [comment]: # (@related: chart/configuration_properties.md chart/usage.md#setting-chart-configuration)

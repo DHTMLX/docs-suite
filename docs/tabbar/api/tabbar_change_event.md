@@ -16,7 +16,7 @@ description: You can explore the change event of Tabbar in the documentation of 
 - `prev: string` - the id of a previously active tab
 
 @example:
-tabbar.events.on("Change", function(activeId, prevId){
+tabbar.events.on("Change", function(id, prev){
     console.log(activeId);
 });
 

@@ -9,10 +9,10 @@ description: You can explore the beforeValidate Textarea event of Form in the do
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: string | number) => boolean | void;'}
+@signature: {'beforeValidate: (value: string) => boolean | void;'}
 
 @params:
-`value: string | number` - the value to be validated
+`value: string` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

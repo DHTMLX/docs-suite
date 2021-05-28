@@ -14,7 +14,7 @@ description: You can explore the event handling of Calendar in the documentation
 You can attach event listeners with the **calendar.events.on()** method of the *events* module:
 
 ~~~js
-calendar.events.on("Change",function(date, oldDate, click){
+calendar.events.on("Change",function(date, oldDate, byClick){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });
@@ -45,7 +45,7 @@ Several handlers can be attached to one event, and all of them will be executed.
 To detach an event listener, use **calendar.events.detach()**:
 
 ~~~js
-calendar.events.on("Change",function(date, oldDate, click){
+calendar.events.on("Change",function(date, oldDate, byClick){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });

@@ -13,7 +13,7 @@ description: You can explore the afterHide Checkbox event of Form in the documen
 
 @params:
 - `value: string | boolean` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the checkbox control initialization; otherwise, false
+- `init: boolean` - *true*, if the event is triggered on the checkbox control initialization; otherwise, *false*
 
 @example:
 form.getItem("checkbox").events.on("AfterHide", function(value, init) {

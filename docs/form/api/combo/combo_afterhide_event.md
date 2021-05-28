@@ -13,7 +13,7 @@ description: You can explore the afterHide Combo Box event of Form in the docume
 
 @params:
 - `value: string | string[]` - the current value of the control
-- `init: boolean` - true if the event is triggered on the control initialization
+- `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
 form.getItem("combo").events.on("AfterHide", function(value, init) {

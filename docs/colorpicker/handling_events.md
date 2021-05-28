@@ -8,8 +8,8 @@ title: Event Handling
 You can attach event listeners with the **colorpicker.events.on()** method:
 
 ~~~js
-colorpicker.events.on("ModeChange", function(mode) {
-   console.log("Selected mode: " + mode); 
+colorpicker.events.on("ModeChange", function(view) {
+   console.log("Selected mode: " + view); 
 });
 ~~~
 
@@ -22,8 +22,8 @@ colorpicker.events.on("ModeChange", function(mode) {
 To detach events, use **colorpicker.events.detach()**:
 
 ~~~js
-colorpicker.events.on("ModeChange", function(mode) {
-   console.log("Selected mode: " + mode); 
+colorpicker.events.on("ModeChange", function(view) {
+   console.log("Selected mode: " + view); 
 });
 
 colorpicker.events.detach("ModeChange");

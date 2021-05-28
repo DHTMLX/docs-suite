@@ -15,9 +15,6 @@ description: You can explore the parse method of TreeCollection in the documenta
 - `data: array | string` - the data to load
 - `driver: object | string` - optional, type of data (json, csv, xml), json by default
 
-@returns:
-An array of loaded items.
-
 @example:
 // parse toolbar from the json array
 toolbar.data.parse(data);

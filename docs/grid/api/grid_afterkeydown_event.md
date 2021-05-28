@@ -25,6 +25,6 @@ grid.events.on("AfterKeyDown", function (e) {
 
 @changelog: added in v6.4
 
-@related: grid/configuration.md#keyboard-navigation
+[comment]: # (@related: grid/configuration.md#keyboard-navigation)
 
 [comment]: # (@relatedapi: grid/api/grid_beforekeydown_event.md)

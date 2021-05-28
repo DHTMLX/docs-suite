@@ -12,7 +12,7 @@ description: You can explore the getWidget method of Tabbar in the documentation
 @signature: getWidget(): any;
 
 @returns:
-The widget attached to Tabbar.
+An object with the widget attached to Tabbar.
 
 @example:
 tabbar.getWidget();

@@ -9,7 +9,7 @@ description: You can explore the afterAdd event of DataCollection in the documen
 
 @short: fires after adding a new item into a data collection
 
-@signature: {'afterAdd: (obj: any) => void;'}
+@signature: {'afterAdd: (newItem: any) => void;'}
 
 @params:
 `newItem: object` - the object of an added item

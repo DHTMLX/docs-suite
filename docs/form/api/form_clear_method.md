@@ -13,7 +13,7 @@ description: You can explore the clear method of Form in the documentation of th
 
 @params:
 
-`mode: string` - optional, the mode of clearing a form
+`method: string` - optional, the method of clearing a form
 
 @example:
 // clears only form validation
@@ -29,7 +29,7 @@ form.clear();
 
 **Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 
-The method may clear a form in one of three modes:
+The method may clear a form in one of three ways:
 
 - "value" - clears only form values
 - "validation" - clears only form validation

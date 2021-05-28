@@ -12,7 +12,7 @@ description: You can explore the getActive method of Tabbar in the documentation
 @signature: {'getActive(): string;'}
 
 @returns:
-The id of the active tab.
+A string with the id of the active tab.
 
 @example:
 var tabbar = new dhx.Tabbar("tabbar_container", {

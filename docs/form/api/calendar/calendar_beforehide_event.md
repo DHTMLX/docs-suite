@@ -13,7 +13,7 @@ description: You can explore the beforeHide Datepicker event of Form in the docu
 
 @params:
 - `value: string | Date` - the current value of the control
-- `init: boolean` - true, if the event is triggered on the datepicker control initialization; otherwise, false
+- `init: boolean` - *true*, if the event is triggered on the datepicker control initialization; otherwise, *false*
 
 @returns:
 Return `false` to prevent a control from being hidden; otherwise - `true`.

@@ -9,10 +9,10 @@ description: You can explore the setValue method of Combo Box in the documentati
 
 @short: selects option(s) in ComboBox
 
-@signature: {'setValue(ids: string | string[]): void;'}
+@signature: {'setValue(ids: number | string | string[] ): void;'}
 
 @params:
-`ids: string | array` - the ids of items from data collection that should be selected in Combo Box
+`ids: number | string | string[]` - the ids of items from data collection that should be selected in Combo Box
 
 @example:
 // selects one option

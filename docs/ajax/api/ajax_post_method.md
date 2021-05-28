@@ -1,6 +1,6 @@
 ---
-sidebar_label: post
-title: post
+sidebar_label: post()
+title: post()
 ---          
 
 @short: sends a POST request to the server
@@ -8,13 +8,12 @@ title: post
 @signature: {'post<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
 
 @params:
-- url       string      the URL the request is sent to
-- data      object      optional, the data sent to the server by the POST-request
-- config    object      the configuration object of the request
+- `url: string` - the URL the request is sent to
+- `data: object` - optional, the data sent to the server by the POST-request
+- `config: object` - the configuration object of the request
 
 @returns:
-
-- data      promise     "promise" of the data object
+A "promise" of the data object.
 
 @example:
 dhx.ajax.post(url, {name: "foo", title: "bar"}).then(function (data) {

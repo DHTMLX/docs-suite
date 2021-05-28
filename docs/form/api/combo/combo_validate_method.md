@@ -8,8 +8,8 @@ description: You can explore the validate Combo Box method of Form in the docume
 # validate()
 
 @short: validates a Combo control
-
-@signature: {'validate(silent: boolean, validateValue?: string | string[]): boolean;'}
+ 
+@signature: {'validate(silent?: boolean, validateValue?: string | string[]): boolean;'}
 
 @params:
 - `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually

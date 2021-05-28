@@ -12,11 +12,11 @@ description: You can explore the headerCellClick event of Grid in the documentat
 @signature: {'headerCellClick: (col: ICol, events: MouseEvent) => void;'}
 
 @params:
-- `column: object` - an object with a column configuration
+- `col: object` - an object with a column configuration
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellClick", function(column,e){
+grid.events.on("HeaderCellClick", function(col,e){
     // your logic here
 });
 

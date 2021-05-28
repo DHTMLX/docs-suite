@@ -9,7 +9,7 @@ description: You can explore the change event of DataCollection in the documenta
 
 @short: fires when a data collection is modified
 
-@signature: {'change: (id?: string, status?: Statuses, obj?: any) => void;'}
+@signature: {'change: (id?: string, status?: Statuses, updatedItem?: any) => void;'}
 
 @params:
 - `id: string` - the id of an item

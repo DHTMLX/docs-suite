@@ -11,6 +11,9 @@ description: You can explore the getCustomColors method of Colorpicker in the do
 
 @signature: {'getCustomColors(): string[];'}
 
+@returns:
+An array of custom colors.
+
 @example:
 colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 

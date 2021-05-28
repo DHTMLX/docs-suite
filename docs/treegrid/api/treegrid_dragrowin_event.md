@@ -9,7 +9,7 @@ description: You can explore the dragRowIn event of TreeGrid in the documentatio
 
 @short: fires when a row is dragged to another potential target
 
-@signature: {'dragRowIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
+@signature: {'dragRowIn: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - `data: object` - data object
