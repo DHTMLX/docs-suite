@@ -1,7 +1,11 @@
 ---
 sidebar_label: itemsInRow
-title: itemsInRow
----          
+title: JavaScript DataView - itemsInRow Config 
+hide_title: true
+description: You can explore the itemsInRow config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# itemsInRow
 
 @short: specifies the number of data items in a row
 
@@ -10,7 +14,7 @@ title: itemsInRow
 @example:
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 
-@descr: 
+@descr:
 
 **Related sample**: [Dataview. Amount Items In A Row](https://snippet.dhtmlx.com/de4r8km3)
 

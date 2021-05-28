@@ -1,7 +1,11 @@
 ---
 sidebar_label: afterEditEnd
-title: afterEditEnd
----          
+title: JavaScript Tree - afterEditEnd Event 
+hide_title: true
+description: You can explore the afterEditEnd event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# afterEditEnd
 
 @short: fires after editing of a tree item is finished
 

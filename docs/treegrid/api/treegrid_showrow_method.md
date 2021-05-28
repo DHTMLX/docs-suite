@@ -1,7 +1,11 @@
 ---
 sidebar_label: showRow()
-title: showRow()
----          
+title: JavaScript TreeGrid - showRow Method 
+hide_title: true
+description: You can explore the showRow method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# showRow()
 
 @short: makes a specified row visible on a page
 

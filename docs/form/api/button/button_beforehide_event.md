@@ -1,7 +1,11 @@
 ---
 sidebar_label: beforeHide
-title: beforeHide
----          
+title: JavaScript Form - beforeHide Button Event 
+hide_title: true
+description: You can explore the beforeHide Button event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeHide
 
 @short: fires before a Button control is hidden
 

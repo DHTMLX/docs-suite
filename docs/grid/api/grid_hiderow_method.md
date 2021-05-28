@@ -1,7 +1,11 @@
 ---
 sidebar_label: hideRow()
-title: hideRow()
----          
+title: JavaScript Grid - hideRow Method 
+hide_title: true
+description: You can explore the hideRow method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# hideRow()
 
 @short: hides a row of Grid
 

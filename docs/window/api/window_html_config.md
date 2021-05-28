@@ -1,7 +1,11 @@
 ---
 sidebar_label: html
-title: html
----          
+title: JavaScript Window - html Config 
+hide_title: true
+description: You can explore the html config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# html
 
 @short: sets an HTML content into a window on initialization
 

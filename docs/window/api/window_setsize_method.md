@@ -1,7 +1,11 @@
 ---
 sidebar_label: setSize()
-title: setSize()
----          
+title: JavaScript Window - setSize Method 
+hide_title: true
+description: You can explore the setSize method of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# setSize()
 
 @short: sets the size of a window
 

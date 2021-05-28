@@ -1,7 +1,11 @@
 ---
 sidebar_label: afterDrop
-title: afterDrop
----          
+title: JavaScript Tree - afterDrop Event 
+hide_title: true
+description: You can explore the afterDrop event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# afterDrop
 
 @short: fires before the user has finished dragging an item but after the mouse button is released 
 

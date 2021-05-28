@@ -1,7 +1,11 @@
 ---
 sidebar_label: serieClick
-title: serieClick
----          
+title: JavaScript Chart - serieClick Event 
+hide_title: true
+description: You can explore the serieClick event of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# serieClick
 
 @short: fires on clicking a series
 

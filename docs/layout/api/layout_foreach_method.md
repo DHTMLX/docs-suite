@@ -1,7 +1,11 @@
 ---
 sidebar_label: forEach()
-title: forEach()
----          
+title: JavaScript Layout - forEach Method 
+hide_title: true
+description: You can explore the forEach method of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# forEach()
 
 @short: iterates over all specified layout cells
 

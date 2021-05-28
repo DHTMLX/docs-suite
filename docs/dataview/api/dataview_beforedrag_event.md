@@ -1,7 +1,11 @@
 ---
 sidebar_label: beforeDrag
-title: beforeDrag
----          
+title: JavaScript DataView - beforeDrag Event 
+hide_title: true
+description: You can explore the beforeDrag event of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeDrag
 
 @short: fires before dragging of an item has started 
 

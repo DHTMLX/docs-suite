@@ -1,7 +1,11 @@
 ---
 sidebar_label: viewportOverflow
-title: viewportOverflow
----          
+title: JavaScript Window - viewportOverflow Config 
+hide_title: true
+description: You can explore the viewportOverflow config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# viewportOverflow
 
 @short: defines whether a window can go beyond borders of a browser
 

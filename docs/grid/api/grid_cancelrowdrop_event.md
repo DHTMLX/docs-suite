@@ -1,7 +1,11 @@
 ---
 sidebar_label: cancelRowDrop
-title: cancelRowDrop
----          
+title: JavaScript Grid - cancelRowDrop Event 
+hide_title: true
+description: You can explore the cancelRowDrop event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# cancelRowDrop
 
 @short: fires on moving a mouse pointer out of borders of a row while dragging the row
 

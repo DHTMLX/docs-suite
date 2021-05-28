@@ -1,7 +1,11 @@
 ---
 sidebar_label: addSpan()
-title: addSpan()
----          
+title: JavaScript TreeGrid - addSpan Method 
+hide_title: true
+description: You can explore the addSpan method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# addSpan()
 
 @short: adds a rows/cols span
 

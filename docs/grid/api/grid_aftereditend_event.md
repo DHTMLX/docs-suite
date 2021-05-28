@@ -1,12 +1,16 @@
 ---
 sidebar_label: afterEditEnd
-title: afterEditEnd
----          
+title: JavaScript Grid - afterEditEnd Event 
+hide_title: true
+description: You can explore the afterEditEnd event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# afterEditEnd
 
 @short: fires after editing of a cell is ended
 
 @signature: {'afterEditEnd: (value: string, row: object, col: object) => void;'}
-	
+
 @params:
 - `value: string` - the new value of a cell
 - `row: object` - an object with a row configuration

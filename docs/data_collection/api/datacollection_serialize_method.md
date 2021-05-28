@@ -1,7 +1,11 @@
 ---
 sidebar_label: serialize()
-title: serialize()
----          
+title: JavaScript DataCollection - serialize Method 
+hide_title: true
+description: You can explore the serialize method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# serialize()
 
 @short: serializes the component data into JSON, XML or CSV format
 

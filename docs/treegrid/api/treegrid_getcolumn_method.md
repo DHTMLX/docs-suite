@@ -1,7 +1,11 @@
 ---
 sidebar_label: getColumn()
-title: getColumn()
----          
+title: JavaScript TreeGrid - getColumn Method 
+hide_title: true
+description: You can explore the getColumn method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# getColumn()
 
 @short: returns an object with attributes of a column
 

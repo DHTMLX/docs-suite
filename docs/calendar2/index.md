@@ -22,7 +22,7 @@ This component is a great solution for your website or application. Check [onlin
   
 ## Guides 1
 
-You can read the following articles to find out how to add the Calendar to the page, configure and work with it. Covers all the possible ways you can use this widget. 
+You can read the following articles to find out how to add the Calendar to the page, configure and work with it. Covers all the possible ways you can use this widget.
 
 - [Initialization](how_to_start)
 - [Configuration](configuring)
@@ -41,7 +41,7 @@ Covers the initialization of Calendar on a page
 
 ### How to localize
 Covers languages interface settings. You can set the language you need in an easy way.
-- [Localization](localizing_calendar) 
+- [Localization](localizing_calendar)
 
 ### How to work with
 Covers the ways of specifying date format, design of the widget, customization, modes, working with two calendars. Includes the operations that can be performed with Calendar and available events.
@@ -130,4 +130,5 @@ Explore how to work with the solutions the Calendar provides to you.
 
 ## Migration to Newer Versions
 
-Please check ... article to learn about new upgrades. 
+Please check ... article to learn about new upgrades.
+

@@ -1,7 +1,11 @@
 ---
 sidebar_label: save()
-title: save()
----          
+title: JavaScript DataCollection - save Method 
+hide_title: true
+description: You can explore the save method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# save()
 
 @short: saves changes made in a data collection to the server side
 
@@ -9,15 +13,13 @@ title: save()
 
 @params:
 
-`url: string|DataDriver` - the URL of a server side or DataDriver with the URL configured
+`url: string | DataDriver` - the URL of a server side or DataDriver with the URL configured
 
 @example:
 diagram.data.save("http://userurl/");
 
 //or
 diagram.data.save(new DataDriver({url:"http://userurl/"}));
-
-
 
 @descr:
 

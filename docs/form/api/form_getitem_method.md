@@ -1,7 +1,11 @@
 ---
 sidebar_label: getItem()
-title: getItem()
----          
+title: JavaScript Form - getItem Method 
+hide_title: true
+description: You can explore the getItem method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# getItem()
 
 @short: gives access to the object of Form control
 

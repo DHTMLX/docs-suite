@@ -1,7 +1,11 @@
 ---
 sidebar_label: map()
 title: map()
----          
+hide_title: true
+description: description
+---
+ 
+# map()
 
 @short: iterates through items
 

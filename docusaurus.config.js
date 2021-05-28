@@ -91,7 +91,7 @@ const onEmptyLinkMatch = (data, { key, fullMatch, dir }) => {
     const filePath = fullMatch.substring(fullMatch.indexOf('(') + 1, fullMatch.length - 1);
     if (filePath.indexOf('.md') !== -1 || filePath.indexOf('.mdx') !== -1 || filePath.indexOf('.') === -1) {
         const data = readFile(dir, filePath);
-        return data ? `[${/.*title: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
+        return data ? `[${/.*sidebar_label: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
     }
     return fullMatch;
 };
@@ -124,8 +124,8 @@ const onAfterDataTransformation = (data) => {
 
 module.exports = {
     noIndex: true, // todo: delete on release
-    title: 'DHTMLX Suite Documentation',
-    tagline: 'DHTMLX Suite Documentation',
+    title: 'DHTMLX Suite 7 Docs',
+    tagline: 'DHTMLX Suite 7 Docs',
     url: 'https://docs.dhtmlx.com/suita/',
     baseUrl: '/suita/',
     onBrokenLinks: 'log',

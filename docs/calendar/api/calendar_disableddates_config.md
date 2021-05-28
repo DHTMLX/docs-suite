@@ -1,7 +1,11 @@
 ---
 sidebar_label: disabledDates
-title: disabledDates
+title: JavaScript Calendar - disabledDates Config
+hide_title: true
+description: You can explore the disabledDates config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---          
+
+# disabledDates
 
 @short: allows disabling some date intervals, day labels are dimmed
 

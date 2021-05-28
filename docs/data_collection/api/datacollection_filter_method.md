@@ -1,14 +1,18 @@
 ---
 sidebar_label: filter()
-title: filter()
----          
+title: JavaScript DataCollection - filter Method 
+hide_title: true
+description: You can explore the filter method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# filter()
 
 @short: filters data items in a component
 
 @signature: {'filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;'}
 
 @params:
-- `rule: function,object` - the filtering criteria
+- `rule: function | object` - the filtering criteria
 - `config: object` - optional, defines the parameters of filtering
 
 @example:

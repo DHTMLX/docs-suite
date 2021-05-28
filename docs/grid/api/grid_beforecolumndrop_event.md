@@ -1,12 +1,16 @@
 ---
 sidebar_label: beforeColumnDrop
-title: beforeColumnDrop
----          
+title: JavaScript Grid - beforeColumnDrop Event 
+hide_title: true
+description: You can explore the beforeColumnDrop event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeColumnDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
 @signature: {'beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
-	
+
 @params:
 - `data: object` - data object
 - `events: MouseEvent` - a native HTML event object
@@ -51,7 +55,7 @@ The data object contains the following parameters:
 - Before v7.0, the event took two parameters - **sourceId** and **targetId**. 
 - In v7.0, the parameters were replaced with new ones: **data** and **e**.
 
-[comment]: # (@relatedapi:) 
+[comment]: # (@relatedapi:)
 [comment]: # ([](grid/api/grid_dragitem_config.md)
 [comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
 [comment]: # ([](grid/api/grid_aftercolumndrop_event.md)

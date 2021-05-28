@@ -1,7 +1,11 @@
 ---
 sidebar_label: selection
-title: selection
----          
+title: JavaScript TreeGrid - selection Config 
+hide_title: true
+description: You can explore the selection config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# selection
 
 @short: enables selection in a grid
 

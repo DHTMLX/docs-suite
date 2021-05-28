@@ -1,7 +1,11 @@
 ---
 sidebar_label: autoload
-title: autoload
----          
+title: JavaScript Tree - autoload Config 
+hide_title: true
+description: You can explore the autoload config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# autoload
 
 @short: defines that the structure of a tree is being built while opening items
 

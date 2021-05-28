@@ -1,7 +1,11 @@
 ---
 sidebar_label: resizable
-title: resizable
----          
+title: JavaScript Grid - resizable Config 
+hide_title: true
+description: You can explore the resizable config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# resizable
 
 @short: defines whether columns can be resized
 
@@ -14,7 +18,7 @@ var grid = new dhx.Grid("grid_container", {
     resizable: true /*!*/
 });
 
-@descr: 
+@descr:
 
 **Related sample**: [Grid. Resizable Columns](https://snippet.dhtmlx.com/aeqzuks0)
 

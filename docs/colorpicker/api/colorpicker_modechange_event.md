@@ -1,7 +1,11 @@
 ---
 sidebar_label: modeChange
-title: modeChange
----          
+title: JavaScript Colorpicker - modeChange Event 
+hide_title: true
+description: You can explore the modeChange event of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# modeChange
 
 @short: fires on changing the mode of the colorpicker
 

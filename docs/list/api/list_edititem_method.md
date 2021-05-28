@@ -1,7 +1,11 @@
 ---
 sidebar_label: editItem()
-title: editItem()
----          
+title: JavaScript List - editItem Method 
+hide_title: true
+description: You can explore the editItem method of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# editItem()
 
 @short: enables editing of an item
 

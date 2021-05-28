@@ -1,7 +1,11 @@
 ---
 sidebar_label: afterSelect
-title: afterSelect
----          
+title: JavaScript TreeGrid - afterSelect Event 
+hide_title: true
+description: You can explore the afterSelect event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# afterSelect
 
 @short: fires after selecting a cell
 

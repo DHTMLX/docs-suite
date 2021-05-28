@@ -1,12 +1,16 @@
 ---
 sidebar_label: beforeEditStart
-title: beforeEditStart
----          
+title: JavaScript Grid - beforeEditStart Event 
+hide_title: true
+description: You can explore the beforeEditStart event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# beforeEditStart
 
 @short: fires before editing of a cell has started
 
 @signature: {'beforeEditStart: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;'}
-	
+
 @params:
 - `row: object` - an object with a row configuration
 - `col: object` - an object with a column configuration

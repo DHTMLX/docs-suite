@@ -1,7 +1,11 @@
 ---
 sidebar_label: legend
-title: legend
----          
+title: JavaScript Chart - legend Config 
+hide_title: true
+description: You can explore the legend config of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# legend
 
 @short: defines the configuration of a chart legend
 

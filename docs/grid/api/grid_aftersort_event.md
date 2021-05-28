@@ -1,7 +1,11 @@
 ---
 sidebar_label: afterSort
-title: afterSort
---- 
+title: JavaScript Grid - afterSort Event 
+hide_title: true
+description: You can explore the afterSort event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# afterSort
 
 @short: fires after a column is sorted by clicking on its header
 

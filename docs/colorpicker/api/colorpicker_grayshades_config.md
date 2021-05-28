@@ -1,7 +1,11 @@
 ---
 sidebar_label: grayShades
-title: grayShades
----          
+title: JavaScript Colorpicker - grayShades Config 
+hide_title: true
+description: You can explore the grayShades config of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# grayShades
 
 @short: defines whether the section with gray shades is displayed in the palette
 

@@ -1,7 +1,11 @@
 ---
 sidebar_label: uncheckItem()
-title: uncheckItem()
----          
+title: JavaScript Tree - uncheckItem Method 
+hide_title: true
+description: You can explore the uncheckItem method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# uncheckItem()
 
 @short: unchecks the checkbox of a tree item and all its sub-items
 

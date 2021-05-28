@@ -1,7 +1,11 @@
 ---
 sidebar_label: multiselection
-title: multiselection
----          
+title: JavaScript List - multiselection Config 
+hide_title: true
+description: You can explore the multiselection config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# multiselection
 
 @short: enables selection of multiple List items, sets the mode of multiselection
 

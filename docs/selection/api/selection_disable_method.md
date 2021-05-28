@@ -1,7 +1,11 @@
 ---
 sidebar_label: disable()
-title: disable()
----          
+title: JavaScript Selection - disable Method 
+hide_title: true
+description: You can explore the disable method of Selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+ 
+# disable()
 
 @short: disables selection functionality in the component
 
