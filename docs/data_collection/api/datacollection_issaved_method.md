@@ -4,7 +4,7 @@ title: JavaScript DataCollection - isSaved Method
 hide_title: true
 description: You can explore the isSaved method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
-
+ 
 # isSaved()
 
 @short: checks whether the changes made in a data collection are saved

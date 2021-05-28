@@ -4,7 +4,7 @@ title: JavaScript CSS Manager - add Method
 hide_title: true
 description: You can explore the add method of CSS Manager in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
-
+ 
 # add()
 
 @short: creates a new class with a list of styles
