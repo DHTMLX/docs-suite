@@ -4,7 +4,7 @@ title: JavaScript DataCollection - isDataLoaded Method
 hide_title: true
 description: You can explore the isDataLoaded method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
-
+ 
 # isDataLoaded()
 
 @short: checks whether the specified data range is loaded from the server

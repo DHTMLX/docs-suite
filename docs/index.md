@@ -40,11 +40,7 @@ Here you can find best practices in working with DHTMLX Suite widgets and explor
 
 ### Optimus Micro-Framework
 
-Optimus acts as a facilitator of web development based on DHTMLX Suite. It helps to assemble and reuse widgets within a web app and ensures communication between widgets and the environment.
-
-### CSS Widget Templates
-
-A [set of CSS templates](https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications/) is specially designed for various use cases that can be implemented using DHTMLX widgets. You can borrow the CSS code and apply the styles you like in your web app.
+[Optimus](/optimus_guides/index) acts as a facilitator of web development based on DHTMLX Suite. It helps to assemble and reuse widgets within a web app and ensures communication between widgets and the environment.
 
 ### Live Demo Apps
 
@@ -58,13 +54,23 @@ A gallery of live demos provides real-life examples of using DHTMLX widgets in w
 -  [Hospital management demo](optimus_guides/hospital_demo)
 -  [Online exam demo](optimus_guides/exam_demo)
 
+### CSS Widget Templates
+
+A [set of CSS templates](https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications/) is specially designed for various use cases that can be implemented using DHTMLX widgets. You can borrow the CSS code and apply the styles you like in your web app.
+
 ### Integration with Angular, React, and Vue.js
 [comment]: # (ссылки ниже должны уводить на страницы доки)
 DHTMLX Suite is compatible with any client-side framework. There are code examples of how to use DHTMLX widgets with [Angular](https://dhtmlx.github.io/angular-suite-demo/?path=/story/calendar--base), [React](https://dhtmlx.github.io/react-widgets/#/), and [Vue.js](https://dhtmlx.github.io/vue-suite-demo/?path=/story/calendar--base) available on our GitHub pages. 
 
 ### Integration with any backend technologies
 
-Being a fully client-side library, DHTMLX Suite can be used with any backend. There is an example of integrating [DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo) in our GitHub repository. 
+Being a fully client-side library, DHTMLX Suite can be used with any backend. There is an example of integrating [DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo) in our GitHub repository.
+
+### Touch support
+You can easily create responsive web applications using DHTMLX Suite due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch Support](/guides/touch_support/) guide. 
+
+### TypeScript support
+The Suite library is equipped with built-in type definitions allowing you to write clean code faster. Browse the [TypeScript Support](/guides/using_typescript/) guide with code snippets to learn more.
 
 ### Accessibility
 
@@ -72,4 +78,4 @@ All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to 
 
 ## Release History
 
-The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the “What’s new” section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the migration guide will instruct you on the changes in the code.
+The list of all DHTMLX Suite versions including maintenance, minor, and major releases is available in the [“What’s new”](/whatsnew/) section of the documentation. If you are using an older version of DHTMLX Suite than the current one, the [migration guide](/migration/) will instruct you on the changes in the code.
