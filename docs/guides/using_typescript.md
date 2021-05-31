@@ -1,7 +1,10 @@
 ---
 sidebar_label: TypeScript support
-title: TypeScript support
----          
+title: JavaScript Guides - TypeScript Support 
+description: You can learn about TypeScript support in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# TypeScript support
 
 The dhtmlxSuite library of version 6.5 and higher lets you work with DHTMLX components faster and more effectively by using TypeScript definitions.
 
