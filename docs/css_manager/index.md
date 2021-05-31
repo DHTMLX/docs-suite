@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: CSS Manager overview
-description: description
----  
+title: JavaScript CSS Manager - CSS Manager Overview 
+description: You can have an overview of CSS Manager in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# CSS Manager overview
 
 The DHTMLX library provides you with the opportunity to create new classes and manipulate them dynamically with the help of the **CssManager** helper.
 

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript DataView - Data Loading 
+description: You can explore the data loading of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are several ways of loading DataView items:
 
@@ -10,8 +13,7 @@ There are several ways of loading DataView items:
 
 First, you need to prepare a data set that will be loaded into DataView.
 
-Preparing data set
--------------------
+## Preparing data set
 
 dhtmlxDataView expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -29,9 +31,7 @@ var dataset = [
 Each object in the data set contains a number of *key:value* pairs that represent attributes of DataView items. 
 You can specify your own template of rendering DataView items with the help of the [](dataview/api/dataview_template_config.md) configuration option.
 
-
-External data loading
---------------------
+## External data loading
 
 To load data from an external file, make use of the **load** method of Data Collection. It takes the URL of the file with data as a parameter:
 
@@ -52,9 +52,7 @@ dataview.data.load("/some/data").then(function(){
 });
 ~~~
 
-
-Loading from local source
-------------------
+## Loading from local source
 
 To load data from a local data source, use the **parse** method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -65,8 +63,7 @@ dataview.data.parse(dataset);
 
 **Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
 To save the current state of a dataview, use the **serialize** method of Data Collection. It converts the data of a dataview into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs that represent attributes of DataView items.

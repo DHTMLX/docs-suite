@@ -1,12 +1,12 @@
 ---
 sidebar_label: Work with DataView
-title: Work with DataView
----          
+title: JavaScript DataView - Work with DataView 
+description: You can explore how to work with DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with DataView
 
-
-Setting focus on item
---------------------------
+## Setting focus on item
 
 To set focus on a DataView item, make use of the [setFocus()](dataview/api/dataview_setfocus_method.md) method. It takes the id of an item as a parameter:
 
@@ -14,8 +14,7 @@ To set focus on a DataView item, make use of the [setFocus()](dataview/api/datav
 dataview.setFocus("7");
 ~~~
 
-Editing items
--------------
+## Editing items
 
 You can edit a particular DataView item with the help of the [editItem()](dataview/api/dataview_edititem_method.md) method. It takes as a parameter the id of an item:
 
@@ -25,13 +24,11 @@ dataview.editItem("1");
 
 **Related sample**: [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
 
-Disabling and enabling selection of an item
-----------------------------------
+## Disabling and enabling selection of an item
 
 For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](dataview/usage_selection.md#enablingdisabling-selection-object).
 
-Using Data Collection API
-------------------------
+## Using Data Collection API
 
 You can manipulate DataView items with the help of the [Data collection API](data_collection/index.md). 
 
@@ -129,8 +126,6 @@ dataview.data.sort({
 
 **Related sample**: [Dataview. Sort](https://snippet.dhtmlx.com/mix83emb)
 
-Using Selection API
--------------
+## Using Selection API
 
 For information on using Selection API, read [Work with Selection Object](dataview/usage_selection.md).
-

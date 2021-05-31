@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: DataCollection overview
-description: description
----          
+title: JavaScript DataCollection - DataCollection Overview 
+description: You can have an overview of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# DataCollection overview
 
 A set of APIs that allow you to work with data of a component. Applicable to Chart, Combobox, DataView, Grid, List.
 ## Methods
