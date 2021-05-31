@@ -1,12 +1,12 @@
 ---
 sidebar_label: Work with Ribbon
-title: Work with Ribbon
----          
+title: JavaScript Ribbon - Work with Ribbon 
+description: You can explore how to work with Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with Ribbon
 
-
-Setting/getting values and states
------------------------
+## Setting/getting values and states
 
 You can change the value or state (for a TwoState button) of a control with the help of the [setState()](ribbon/api/ribbon_setstate_method.md) method. It takes one parameter: a *key-value* pair with the ID of the control and its new value (state).
 
@@ -54,9 +54,7 @@ ribbon.getState();
 // {"file_name":"My file"}
 ~~~
 
-
-Hiding and showing controls
---------------------------
+## Hiding and showing controls
 
 You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](ribbon/api/ribbon_show_method.md) and [hide()](ribbon/api/ribbon_hide_method.md):
 
@@ -76,8 +74,7 @@ ribbon.hide();
 ribbon.show();
 ~~~
 
-Disabling and enabling controls
--------------------------
+## Disabling and enabling controls
 
 You can disable or enable controls. The related methods - [enable()](ribbon/api/ribbon_enable_method.md) and [disable()](ribbon/api/ribbon_disable_method.md) - take the IDs of controls as parameters:
 
@@ -97,8 +94,7 @@ ribbon.disable();
 ribbon.enable();
 ~~~
 
-Checking if a Ribbon item is disabled
-----------------------------------------
+## Checking if a Ribbon item is disabled
 
 To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ribbon_isdisabled_method.md) method. The method takes one parameter:
 
@@ -118,8 +114,7 @@ ribbon.isDisabled("1"); // -> true/false
 
 **Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
-Selecting/Unselecting an item
------------------------------------------
+## Selecting/Unselecting an item
 
 ### Selecting a ribbon item
 
@@ -163,8 +158,7 @@ ribbon.unselect();
 
 **Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
-Checking if a ribbon item is selected
--------------------------------------
+## Checking if a ribbon item is selected
 
 To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ribbon_isselected_method.md) method. The method takes one parameter:
 
@@ -184,8 +178,7 @@ ribbon.isSelected("print"); // -> returns true/false
 
 **Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
-Getting selected items
----------------------------
+## Getting selected items
 
 To get the selected items, call the [getSelected()](ribbon/api/ribbon_getselected_method.md) method. The method returns an array of IDs of selected items:
 
@@ -193,8 +186,7 @@ To get the selected items, call the [getSelected()](ribbon/api/ribbon_getselecte
 ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-Using Tree collection API
----------------------
+## Using Tree collection API
 
 ### Adding controls
 
@@ -368,7 +360,6 @@ You can also copy a control and place it into another ribbon:
 ribbon1.data.copy("save_btn",1,ribbon2.data,"block3");
 ~~~
 
-
 ### Clearing Ribbon
 
 To remove all controls from Ribbon, users should call the **removeAll()** method of TreeCollection. Afterwards, you can load other items.
@@ -377,4 +368,3 @@ To remove all controls from Ribbon, users should call the **removeAll()** method
 ribbon.data.removeAll();
 ribbon.data.parse(new_controls);
 ~~~
-

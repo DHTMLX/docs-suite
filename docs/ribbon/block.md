@@ -1,10 +1,13 @@
 ---
 sidebar_label: Block
-title: Block
----          
+title: JavaScript Ribbon - Block 
+description: You can explore the Block of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Block
 
 The Block control is used for grouping related controls.
- 
+
 ![DHX Ribbon Block groups controls](../assets/ribbon/ribbon_block.png)
 
 **Related sample**: [Ribbon. Blocks](https://snippet.dhtmlx.com/yr8oepq8)
@@ -137,7 +140,7 @@ ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Disabling/enabling blocks 
+## Disabling/enabling blocks
 
 A block can be enabled/disabled:
 

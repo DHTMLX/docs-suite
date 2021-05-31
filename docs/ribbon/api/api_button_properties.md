@@ -1,7 +1,10 @@
 ---
 sidebar_label: Button properties
-title: Ribbon Button properties
+title: JavaScript Ribbon - Button Properties 
+description: You can explore the Button properties of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Ribbon Button properties
 
 <table>
 	<tbody>
