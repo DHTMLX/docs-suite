@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: TimePicker overview
-description: dhtmlxTimePicker is a JavaScript component for quick and handy time selection either in 12-hour or 24-hour clock format.
----          
+title: JavaScript Timepicker - TimePicker Overview 
+description: You can have an overview of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# TimePicker overview
 
 dhtmlxTimePicker is a useful component for selecting time in both 12-hour and 24-hour clock format. Based on Layout and Slider components, it will work smoothly as a part of any DHTMLX-based application.<br/>
 Check [online samples for dhtmlxTimePicker](https://docs.dhtmlx.com/suite/samples/timepicker/). 
@@ -15,16 +17,16 @@ Check [online samples for dhtmlxTimePicker](https://docs.dhtmlx.com/suite/sample
 
 ## Related resources
 
-- You can get dhtmlxTimePicker as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- You can get dhtmlxTimePicker as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxTimePicker](https://docs.dhtmlx.com/suite/samples/timepicker/)  
 
 ## Guides
 
-- [](initialization.md)                  
+- [](initialization.md)
 - [](configuration.md)
-- [](usage.md)    
+- [](usage.md)
 - [](customization.md)
-- [](handling_events.md)                      
+- [](handling_events.md)
 
 ## Other
 
