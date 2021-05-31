@@ -255,8 +255,8 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 - The ability to add event handlers to custom templates of DataView items via the [eventHandlers](dataview/api/dataview_eventhandlers_config.md) property 
 - New drag-n-drop events: [afterDrag](dataview/api/dataview_afterdrag_event.md), [afterDrop](dataview/api/dataview_afterdrop_event.md), [beforeDrag](dataview/api/dataview_beforedrag_event.md), [beforeDrop](dataview/api/dataview_beforedrop_event.md), [cancelDrop](dataview/api/dataview_canceldrop_event.md), [canDrop](dataview/api/dataview_candrop_event.md), [dragIn](dataview/api/dataview_dragin_event.md), [dragOut](dataview/api/dataview_dragout_event.md), [dragStart](dataview/api/dataview_dragstart_event.md)
-- The ability [to enable/disable selection of items](dataview/usage_selection.md) in DataView via the related [enable()](dataview/api/selection/selection_enable_method.md)/ [disable()](dataview/api/selection/selection_disable_method.md) methods of the selection object
-- The ability to use simplified versions of the [afterSelect](dataview/api/selection/selection_afterselect_event.md), [afterUnSelect](dataview/api/selection/selection_afterunselect_event.md), [beforeSelect](dataview/api/selection/selection_beforeselect_event.md), [beforeUnSelect](dataview/api/selection/selection_beforeunselect_event.md) events of DataView
+- The ability [to enable/disable selection of items](dataview/usage_selection.md) in DataView via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the selection object
+- The ability to use the simplified versions of the [afterSelect](selection/api/selection_afterselect_event.md), [afterUnSelect](selection/api/selection_afterunselect_event.md), [beforeSelect](selection/api/selection_beforeselect_event.md), [beforeUnSelect](selection/api/selection_beforeunselect_event.md) events of Selection object
 - The ability to select all DataView items at once by using ["Ctrl+A"](dataview/configuration.md#arrow-keys-navigation) combination 
 
 #### Form
@@ -315,8 +315,8 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 - The ability to add event handlers to custom templates of List items via the [eventHandlers](list/api/list_eventhandlers_config.md) property 
 - New drag-n-drop events of List: [afterDrag](list/api/list_afterdrag_event.md), [afterDrop](list/api/list_afterdrop_event.md), [beforeDrag](list/api/list_beforedrag_event.md), [beforeDrop](list/api/list_beforedrop_event.md), [cancelDrop](list/api/list_canceldrop_event.md), [canDrop](list/api/list_candrop_event.md), [dragIn](list/api/list_dragin_event.md), [dragOut](list/api/list_dragout_event.md), [dragStart](list/api/list_dragstart_event.md)
-- The ability [to enable/disable selection of items](list/usage_selection.md) in List via the related [enable](list/api/selection/selection_enable_method.md)/ [disable](list/api/selection/selection_disable_method.md) methods of the Selection object
-- The ability to use simplified versions of the [afterSelect](list/api/selection/selection_afterselect_event.md), [afterUnSelect](list/api/selection/selection_afterunselect_event.md), [beforeSelect](list/api/selection/selection_beforeselect_event.md), [beforeUnSelect](list/api/selection/selection_beforeunselect_event.md) events of List
+- The ability [to enable/disable selection of items](list/usage_selection.md) in List via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the Selection object
+- The ability to use the simplified versions of the [afterSelect](selection/api/selection_afterselect_event.md), [afterUnSelect](selection/api/selection_afterunselect_event.md), [beforeSelect](selection/api/selection_beforeselect_event.md), [beforeUnSelect](selection/api/selection_beforeunselect_event.md) events of Selection object
 - The ability to select all List items at once by using ["Ctrl+A"](list/configuration.md#arrow-keys-navigation) combination 
 
 #### Menu
@@ -348,9 +348,9 @@ The update brings various changes in the API methods. Check the [Migration artic
 - New drag-n-drop events of Tree: [afterDrag](tree/api/tree_afterdrag_event.md), [afterDrop](tree/api/tree_afterdrop_event.md), [beforeDrag](tree/api/tree_beforedrag_event.md), [beforeDrop](tree/api/tree_beforedrop_event.md), [cancelDrop](tree/api/tree_canceldrop_event.md), [canDrop](tree/api/tree_candrop_event.md), [dragIn](tree/api/tree_dragin_event.md), [dragOut](tree/api/tree_dragout_event.md), [dragStart](tree/api/tree_dragstart_event.md)
 - New editing-related events of Tree: [afterEditEnd](tree/api/tree_aftereditend_event.md), [afterEditStart](tree/api/tree_aftereditstart_event.md), [beforeEditEnd](tree/api/tree_beforeeditend_event.md), [beforeEditStart](tree/api/tree_beforeeditstart_event.md)
 - The [focusChange](tree/api/tree_focuschange_event.md) event is added
-- The ability [to enable/disable selection of items](tree/usage_selection.md) in Tree via the related [enable()](tree/api/selection/selection_enable_method.md)/ [disable()](tree/api/selection/selection_disable_method.md) methods of the Selection object
+- The ability [to enable/disable selection of items](tree/usage_selection.md) in Tree via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the Selection object
 - The ability [to enable selection of Tree items](tree/configuration.md#selection-of-items) via the [selection](tree/api/tree_selection_config.md) configuration property of Tree
-- The ability to use simplified versions of the [afterSelect](tree/api/selection/selection_afterselect_event.md), [afterUnSelect](tree/api/selection/selection_afterunselect_event.md), [beforeSelect](tree/api/selection/selection_beforeselect_event.md), [beforeUnSelect](tree/api/selection/selection_beforeunselect_event.md) events of Tree
+- The ability to use the simplified versions of the [afterSelect](selection/api/selection_afterselect_event.md), [afterUnSelect](selection/api/selection_afterunselect_event.md), [beforeSelect](selection/api/selection_beforeselect_event.md), [beforeUnSelect](selection/api/selection_beforeunselect_event.md) events of the Selection object
 - The ability to set the id for the root element via the [rootId](tree/api/tree_rootid_config.md) configuration property of Tree
 
 #### TreeGrid
