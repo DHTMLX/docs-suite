@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Slider - Initialization 
+description: You can explore the initialization of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxSlider on a page, you need to take the following simple steps:
 
@@ -35,8 +38,7 @@ To initialize dhtmlxSlider on a page, you need to take the following simple step
 
 **Related sample**: [Slider.Basic Initialization](https://snippet.dhtmlx.com/wipdmzbp)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -48,8 +50,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container 
------------------
+## Create a container
 
 Add a container for Slider and give it an id, for example "slider_container":
 
@@ -57,8 +58,7 @@ Add a container for Slider and give it an id, for example "slider_container":
 <div id="slider_container"></div>
 ~~~
 
-Initialize Slider
-----------------------
+## Initialize Slider
 
 Initialize Slider with the `dhx.Slider` object constructor. The constructor has two parameters:
 
@@ -81,4 +81,3 @@ var slider = new dhx.Slider("slider_container", {
 There is a set of properties you can specify for Slider to optimize its configuration for your needs.
 
 See the detailed information on configuration properties of Slider in the [Slider API overview](slider/api/api_overview.md#properties) article.
-

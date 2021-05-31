@@ -1,7 +1,10 @@
 ---
 sidebar_label: Separator
-title: Separator
----          
+title: JavaScript Sidebar - Separator 
+description: You can explore the Separator of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Separator
 
 This is a line separating items/groups of items from each other.
 

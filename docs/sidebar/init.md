@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Sidebar - Initialization 
+description: You can explore the initialization of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxSidebar into an application, you need to take the following simple steps:
 
@@ -31,8 +34,7 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
 
 **Related sample**: [Sidebar. Basic Initialization](https://snippet.dhtmlx.com/x0qpt7pk)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -44,8 +46,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container
--------------------
+## Create a container
 
 Add a container for the Sidebar and give it an id, e.g. "sidebar_container":
 
@@ -53,8 +54,7 @@ Add a container for the Sidebar and give it an id, e.g. "sidebar_container":
 <div id="sidebar_container"></div>
 ~~~
 
-Initialize Sidebar
----------------------
+## Initialize Sidebar
 
 Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor takes two parameters:
 
@@ -73,8 +73,7 @@ var sidebar = new dhx.Sidebar("sidebar_container",{
 
 The detailed information on Sidebar configuration options can be found in the [Sidebar API overview](sidebar/api/api_overview.md#properties) article.
 
-Load data into Sidebar
-------------------
+## Load data into Sidebar
 
 There are two handy ways of loading data, i.e. a set of controls into Sidebar:
 
@@ -113,4 +112,3 @@ sidebar.data.parse(data);
 ~~~
 
 Detailed information on loading data into Sidebar is given in the article [](sidebar/data_loading.md).
-

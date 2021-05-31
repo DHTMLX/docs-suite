@@ -1,10 +1,12 @@
 ---
 sidebar_label: Work with Sidebar
-title: Work with Sidebar
----          
+title: JavaScript Sidebar - Work with Sidebar 
+description: You can explore how to work with Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Adding a tooltip to a control
---------------------
+# Work with Sidebar
+
+## Adding a tooltip to a control
 
 You can attach a tooltip to a control. For this you need to provide the **tooltip** property with the tooltip text in the control object before the sidebar initialization:
 
@@ -16,8 +18,7 @@ You can attach a tooltip to a control. For this you need to provide the **toolti
 }
 ~~~
 
-Hiding and showing controls
------------------
+## Hiding and showing controls
 
 You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](sidebar/api/sidebar_show_method.md) and [hide()](sidebar/api/sidebar_hide_method.md):
 
@@ -37,8 +38,7 @@ sidebar.hide();
 sidebar.show();
 ~~~
 
-Expanding and collapsing Sidebar
-----------------------------------
+## Expanding and collapsing Sidebar
 
 It is possible to expand/collapse a sidebar using two corresponding methods - [expand()](sidebar/api/sidebar_expand_method.md) and [collapse()](sidebar/api/sidebar_collapse_method.md):
 
@@ -49,8 +49,7 @@ sidebar.collapse(); // collapses a sidebar
 
 **Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
 
-Checking if Sidebar is collapsed
-------------------------------
+## Checking if Sidebar is collapsed
 
 To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/api/sidebar_iscollapsed_method.md) method of the Sidebar API. The method returns *true*, if a sidebar is collapsed, and *false* if it's expanded.
 
@@ -58,9 +57,7 @@ To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/a
 sidebar.isCollapsed(); // -> true/false
 ~~~
 
-
-Disabling and enabling controls
----------------------
+## Disabling and enabling controls
 
 You can disable or enable controls. The related methods - [enable()](sidebar/api/sidebar_enable_method.md) and [disable()](sidebar/api/sidebar_disable_method.md) - take the IDs of controls as parameters:
 
@@ -80,8 +77,7 @@ sidebar.disable();
 sidebar.enable();
 ~~~
 
-Checking if a sidebar item is disabled
--------------------------------------
+## Checking if a sidebar item is disabled
 
 To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/sidebar_isdisabled_method.md) method. The method takes one parameter:
 
@@ -100,8 +96,7 @@ sidebar.isDisabled("1"); // -> true/false
 
 **Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
-Selecting/Unselecting an item
------------------------------------------
+## Selecting/Unselecting an item
 
 ### Selecting a sidebar item
 
@@ -144,8 +139,7 @@ sidebar.unselect();
 
 **Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-Checking if a sidebar item is selected
--------------------------------------
+## Checking if a sidebar item is selected
 
 To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/sidebar_isselected_method.md) method. The method takes one parameter:
 
@@ -165,8 +159,7 @@ sidebar.isSelected("categoryPost"); // -> returns true/false
 
 **Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-Getting selected items
----------------------------
+## Getting selected items
 
 To get the selected items, call the [getSelected()](sidebar/api/sidebar_getselected_method.md) method. The method returns an array of IDs of selected items:
 
@@ -174,8 +167,7 @@ To get the selected items, call the [getSelected()](sidebar/api/sidebar_getselec
 sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-Toggling Sidebar
----------------
+## Toggling Sidebar
 
 You can collapse and expand a sidebar with the help of the [toggle()](sidebar/api/sidebar_toggle_method.md) method as easy as that:
 
@@ -185,12 +177,9 @@ sidebar.toggle();
 
 **Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
-
-Using Tree collection API
----------------
+## Using Tree collection API
 
 You can manipulate the controls of Sidebar with the help of the [Tree collection API](tree_collection/index.md). 
-
 
 ### Adding new controls into Sidebar
 

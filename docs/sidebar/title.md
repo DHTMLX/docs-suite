@@ -1,7 +1,10 @@
 ---
 sidebar_label: Title
-title: Title
----          
+title: JavaScript Sidebar - Title 
+description: You can explore the Title of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Title
 
 This is an item that contains some text.
 

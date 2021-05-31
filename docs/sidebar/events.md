@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Sidebar - Event Handling 
+description: You can explore the event handling of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -33,7 +36,7 @@ Several handlers can be attached to one and the same event, and all of them will
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-## Detaching event listeners 
+## Detaching event listeners
 
 There is a simple way of removing an event handler with the **sidebar.events.detach()** method:
 
@@ -53,6 +56,6 @@ A custom event can be called with the **fire()** method of the **events** module
 sidebar.events.fire(evName,[args]);
 ~~~
 
-## List of supported events 
+## List of supported events
 
 You can find the full list of sidebar events in the [API section](sidebar/api/api_overview.md#sidebar-events).

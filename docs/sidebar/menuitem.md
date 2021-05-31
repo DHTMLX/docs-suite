@@ -1,7 +1,10 @@
 ---
 sidebar_label: MenuItem
-title: MenuItem
----          
+title: JavaScript Sidebar - MenuItem 
+description: You can explore the MenuItem of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# MenuItem
 
 MenuItem is a drop-down list of options, can contain its own sub-menu. 
 
@@ -69,7 +72,7 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-## Enabling/disabling a navItem 
+## Enabling/disabling a navItem
 
 Any menuItem in the sidebar can be enabled/disabled:
 

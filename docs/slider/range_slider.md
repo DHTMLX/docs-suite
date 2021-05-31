@@ -1,8 +1,10 @@
 ---
 sidebar_label: Range Mode
-title: Range Mode
-description: description
----          
+title: JavaScript Slider - Range Mode 
+description: You can explore the range mode of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Range Mode
 
 The range mode of slider presupposes the usage of two thumbs for selecting the starting and ending values of a range. 
 
@@ -27,13 +29,11 @@ You can manipulate the scale settings by adjusting the ticks-related options and
 
 In short, the full set of [Slider configuration properties](slider/configuring_slider.md) can be applied to the range slider. All the standard [Slider API](slider/api/api_overview.md) is supported.
 
-
 ## API specificity
 
 ### Configuration
 
 Note that the **value** option should have the *array* type and contain a pair of values for both thumbs.
-
 
 ### Get/set value
 
