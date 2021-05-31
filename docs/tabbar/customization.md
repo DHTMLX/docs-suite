@@ -1,12 +1,14 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Tabbar - Customization 
+description: You can explore the customization of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling Tabbar
------------
+# Customization
 
-There is a possibility to make changes in the look and feel of a tabbar. 
+## Styling Tabbar
+
+There is a possibility to make changes in the look and feel of a tabbar.
 
 ![](../assets/tabbar/custom_style.png)
 
@@ -35,4 +37,3 @@ var tabbar = new dhx.Tabbar({
 ~~~
 
 **Related sample**: [Tabbar. Custom Css](https://snippet.dhtmlx.com/47en9f0a)
-

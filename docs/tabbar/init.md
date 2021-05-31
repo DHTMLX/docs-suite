@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Tabbar - Initialization 
+description: You can explore the initialization of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxTabbar into an application, you need to take the following simple steps:
 
@@ -10,7 +13,6 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 - [Create a container](#create-a-container)
 - [Define Tabbar structure](#define-tabbar-structure)
 - [Initialize Tabbar](#initialize-tabbar) with the object constructor
-
 
 ~~~html
 <!DOCTYPE html>
@@ -39,8 +41,7 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 
 **Related sample**: [Tabbar. Basic Initialization](https://snippet.dhtmlx.com/uysfjo5z)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -52,9 +53,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create a container
--------------------
+## Create a container
 
 Add a container for the Tabbar and give it an id, e.g. "tabbar_container":
 
@@ -62,8 +61,7 @@ Add a container for the Tabbar and give it an id, e.g. "tabbar_container":
 <div id="tabbar_container"></div>
 ~~~
 
-Define Tabbar structure
-------------------
+## Define Tabbar structure
 
 At this step you should specify the structure of your future Tabbar. Each tab represents an object with attributes, such as the name of a tab and a CSS class applied to a tab. 
 For example, Tabbar can have 4 tabs. You need to define their configuration objects and place them into the **views** array, like this:
@@ -77,9 +75,7 @@ var views = [
 ];
 ~~~
 
-
-Initialize Tabbar
----------------------
+## Initialize Tabbar
 
 Initialize Tabbar with the `dhx.Tabbar` object constructor. The constructor takes two parameters:
 
