@@ -1,12 +1,14 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Menu - Customization 
+description: You can explore the customization of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Customization
 
 ## Icons
 
-dhtmlxMenu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
-a page and apply icons for Menu controls.
+dhtmlxMenu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Menu controls.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
 after the source files of dhtmlxMenu as follows:

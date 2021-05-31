@@ -1,7 +1,10 @@
 ---
 sidebar_label: Context Menu
-title: Context Menu
----          
+title: JavaScript Menu - Context Menu 
+description: You can explore the Context Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Context Menu
 
 dhtmlxContextMenu is a component that provides an easy way to add a contextual menu to projects. It will be of great help for frequently used actions in web sites, help systems, etc.
 

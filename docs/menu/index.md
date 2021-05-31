@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: Menu overview
-description: DHTMLX Menu is an easy configurable JavaScript component that provides handy navigation between items in a drop-down or context menu. 
----          
+title: JavaScript Menu - Menu Overview 
+description: You can have an overview of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Menu overview
 
 dhtmlxMenu is a component that provides an easy way to add a drop down menu to user's projects. This component is highly customizable and supports a wide range of features. dhtmlxMenu component can be a good navigation aid to web sites, help systems, etc. Check [online samples for dhtmlxMenu](https://docs.dhtmlx.com/suite/samples/menu/). 
 

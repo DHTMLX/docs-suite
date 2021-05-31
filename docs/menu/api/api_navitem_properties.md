@@ -1,7 +1,10 @@
 ---
 sidebar_label: NavItem properties
-title: Menu NavItem properties
+title: JavaScript Menu - NavItem Properties 
+description: You can explore the NavItem properties of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Menu NavItem properties
 
 <table>
 	<tbody>
