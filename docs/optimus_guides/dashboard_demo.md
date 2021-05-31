@@ -39,7 +39,6 @@ A free 30-day trial version of the demo is given to you only for evaluation purp
 
 After the trial period is over, you will receive messages about using an unlicensed product.
 
-
 ### How to start with license
 
 If you want to continue to use this demo in your project after the evaluation period expires, you will have to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.

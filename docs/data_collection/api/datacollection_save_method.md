@@ -9,7 +9,7 @@ description: You can explore the save method of DataCollection in the documentat
 
 @short: saves changes made in a data collection to the server side
 
-@signature: {'save?: (url: IDataProxy | string) => void;'}
+@signature: {'save?: (url: string | IDataProxy) => void;'}
 
 @params:
 
