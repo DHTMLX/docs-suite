@@ -1,10 +1,9 @@
 ---
 sidebar_label: date
 title: JavaScript Calendar - date Config
-hide_title: true
 description: You can explore the date config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # date
 
 @short: defines the date that will be opened when the calendar is created

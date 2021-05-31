@@ -1,10 +1,9 @@
 ---
 sidebar_label: range
 title: JavaScript Calendar - range Config 
-hide_title: true
 description: You can explore the range config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # range
 
 @short: enables/disables the possibility to select a range of dates on the calendar

@@ -1,15 +1,12 @@
 ---
 sidebar_label: Customization
 title: JavaScript Calendar - Customization 
-hide_title: true
 description: You can explore the customization of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # Customization
 
 ## Styling Calendar
-
-@short:
 
 There is a possibility to make changes in the look and feel of a calendar. For example, change its background color:
 

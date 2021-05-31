@@ -1,10 +1,9 @@
 ---
 sidebar_label: beforeChange
 title: JavaScript Calendar - beforeChange Event 
-hide_title: true
 description: You can explore the beforeChange event of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # beforeChange
 
 @short: fires before the change of date selection
@@ -26,10 +25,10 @@ calendar.events.on("BeforeChange",function(date, oldDate, byClick){
 });
 
 @descr:
+
 **Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
 You can block selection of particular dates by returning *false* from the event handler.
-
 
 [comment]: # (@related:calendar/handling_events.md) 
 [comment]: # (@relatedapi:calendar/api/calendar_change_event.md)
