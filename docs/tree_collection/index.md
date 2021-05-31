@@ -1,7 +1,10 @@
 ---
 sidebar_label: Overview
-title: TreeCollection overview
+title: JavaScript TreeCollection - TreeCollection Overview 
+description: You can have an overview of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# TreeCollection overview
 
 A set of API methods that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid.
 

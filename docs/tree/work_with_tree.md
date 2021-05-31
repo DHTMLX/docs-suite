@@ -1,15 +1,14 @@
 ---
 sidebar_label: Work with Tree
-title: Work with Tree
----          
+title: JavaScript Tree - Work with Tree 
+description: You can explore how to work with Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Working with checkboxes
--------------------
+# Work with Tree
 
-
+## Working with checkboxes
 
 You can [enable checkbox for tree items](tree/configuration.md#checkboxes-for-items) with the [](tree/api/tree_checkbox_config.md) configuration option. Then you can manipulate items with checkboxes with the help of Tree API.
-
 
 ### Check/uncheck checkboxes
 
@@ -37,8 +36,7 @@ tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 
 **Related sample**: [Tree. Get Checked Items](https://snippet.dhtmlx.com/cz7xypgz)
 
-Expanding/collapsing items
-------------------
+## Expanding/collapsing items
 
 ### Expand/collapse a certain item
 
@@ -55,7 +53,6 @@ tree.collapse("history");
 ~~~
 
 **Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
-
 
 You can also alternately expand/collapse a tree item (folder) via the [](tree/api/tree_toggle_method.md) method:
 
@@ -78,8 +75,7 @@ tree.collapseAll();
 
 **Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
 
-Editing an item
--------------------
+## Editing an item
 
 There is the [](tree/api/tree_edititem_method.md) method that allows editing a certain tree item. Pass the id of an item to the method to initiate editing:
 
@@ -107,8 +103,7 @@ The method can also take a second parameter to configure the editing process. It
     </tbody>
 </table>
 
-Setting/getting Tree state
--------------------
+## Setting/getting Tree state
 
 You can get/set the state of a tree using the Tree API - [](tree/api/tree_setstate_method.md) and [](tree/api/tree_getstate_method.md). **getState()** returns an object with the state of a tree, while **setState()** takes an
 object with tree state as a parameter:
@@ -186,8 +181,7 @@ Here is an example of a treeState object:
 }
 ~~~
 
-Using Tree Collection API
----------------------------
+## Using Tree Collection API
 
 You can manipulate Tree items with the help of the [Tree collection API](tree_collection/index.md).
 
@@ -244,7 +238,7 @@ tree.data.update("item_id", {value: "New value"});
 
 **Related sample**: [Tree. Data Update](https://snippet.dhtmlx.com/e0vgry6n)
 
-### Removing items from Tree 
+### Removing items from Tree
 
 To remove an item, make use of the **remove()** method of Tree Collection. Pass the id of the item that should be removed to the method:
 
@@ -254,7 +248,4 @@ tree.data.remove("id");
 
 **Related sample**: [Tree. Delete Data](https://snippet.dhtmlx.com/efy72vz8)
 
-
 {{note Check the full list of [Tree collection API](tree_collection/index.md).}}
-
-

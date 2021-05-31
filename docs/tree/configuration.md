@@ -1,10 +1,12 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Tree - Configuration 
+description: You can explore the configuration of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Checkboxes for items
----------------
+# Configuration
+
+## Checkboxes for items
 
 ![](../assets/tree/checkbox.png)
 
@@ -19,8 +21,7 @@ var tree = new dhx.Tree("tree_container", {checkbox: true});
 
 **Related sample**: [Tree. Checkboxes For Items](https://snippet.dhtmlx.com/hgsivvpb)
 
-Editing of items
--------------------
+## Editing of items
 
 ![](../assets/tree/editable.png)
 
@@ -32,10 +33,7 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 
 **Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
 
-
-
-Key navigation
-----------------
+## Key navigation
 
 You can switch on key navigation in a tree with the [](tree/api/tree_keynavigation_config.md) property before initialization of the component: 
 
@@ -66,11 +64,9 @@ After that you need to select any item and then apply Arrow keys:
     </tbody>
 </table>
 
-
 **Related sample**: [Tree. Key Navigation](https://snippet.dhtmlx.com/icql8fwq)
 
-Selection of items
----------------------
+## Selection of items
 
 ![](../assets/tree/disable_selection.png)
 

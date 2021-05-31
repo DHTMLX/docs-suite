@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Tree - Initialization 
+description: You can explore the initialization of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
@@ -33,8 +36,7 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
 **Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into the header of the created file. The Tree component can be used standalone or as a part of the Suite library.
 
@@ -48,7 +50,6 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into 
 <link rel="stylesheet" href="../../codebase/tree.css">
 ~~~
 
-
 **If you use dhtmlxTree as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
 
 - suite.js
@@ -59,10 +60,7 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into 
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
 
-
-
-Create a container 
------------------
+## Create a container
 
 Add a container for Tree and give it an id, for example "tree_container":
 
@@ -70,8 +68,7 @@ Add a container for Tree and give it an id, for example "tree_container":
 <div id="tree_container"></div>
 ~~~
 
-Initialize Tree
-----------------------
+## Initialize Tree
 
 Initialize Tree with the `dhx.Tree` object constructor. The constructor has two parameters:
 
@@ -85,15 +82,13 @@ var tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-
 ### Configuration properties
 
 There is a set of properties you can specify for Tree to optimize its configuration for your needs.
 
 See the detailed information on configuration properties of Tree in the [Tree API overview](tree/api/api_overview.md#properties) article.
 
-Load data into Tree
----------------------
+## Load data into Tree
 
 Finally, you are to load the tree with data. You can load inline or external data into the tree.
 
