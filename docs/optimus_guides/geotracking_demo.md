@@ -28,9 +28,9 @@ To run the demo, follow the instructions given in the README.md file.
 
 ## Demo overview
 
-The Geo Tracking demo is a nice and easy solution for business. It is created to check and manage the delivery process in real-time. The Tracking system is integrated with Google Maps and shows the real-time geolocation of couriers. You can visualize the information you need with the help of a Form.
+The geo tracking demo is a nice and easy solution for business. It is created to check and manage the delivery process in real-time. The Tracking system is integrated with Google Maps and shows the real-time geolocation of couriers. You can visualize the information you need with the help of a Form.
 
-The Geo Tracking demo is developed on the base of the DHTMLX Optimus framework. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
+The geo tracking demo is developed on the base of the DHTMLX Optimus framework. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
 
 There are no specific backend requirements. The demo is based on the REST API and you can use any backend platform which supports it (PHP, Nodejs, .Net, Java, etc.).
 
@@ -43,6 +43,6 @@ After the trial period is over, you will receive messages about using an unlicen
 
 ### How to start with license
 
-If you want to use this demo in your project after the evaluation period expires, you will need to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
+If you want to continue usage of the demo in your project after the evaluation period expires, you will need to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
 You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
