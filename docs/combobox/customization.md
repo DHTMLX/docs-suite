@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Combo Box - Customization 
+description: You can explore the customization of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Custom filter for options
------------------------
+# Customization
+
+## Custom filter for options
 
 ![](../assets/combo/custom_filter.png)
 
@@ -55,9 +57,7 @@ var combo = new dhx.Combobox("combo_container", {
 In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows in the popup list all the words that contain entered letters independent of their 
 order in a word.
 
-
-Styling 
------------
+## Styling
 
 ![](../assets/combo/custom_css.png)
 

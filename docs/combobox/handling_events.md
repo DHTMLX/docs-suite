@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Combo Box - Event Handling 
+description: You can explore the event handling of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -55,6 +58,6 @@ combo.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## List of supported events 
+## List of supported events
 
 You can find the full list of ComboBox events in the [API Reference](combobox/api/api_overview.md#events).
