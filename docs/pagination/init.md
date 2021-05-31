@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Pagination - Initialization 
+description: You can explore the initialization of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxPagination into an application, you need to take the following simple steps:
 
@@ -51,8 +54,7 @@ To add dhtmlxPagination into an application, you need to take the following simp
 
 **Related sample**: [Pagination. Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -64,8 +66,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create containers
--------------------
+## Create containers
 
 Add two containers:
 
@@ -77,8 +78,7 @@ Add two containers:
 <div id="pagination_container"></div>
 ~~~
 
-Add a related widget
----------------------------------
+## Add a related widget
 
 {{note dhtmlxPagination can be used in conjunction with data components like [List](list/index.md), [DataView](dataview/index.md), [Tree](tree/index.md), [Grid](grid/index.md), or [TreeGrid](treegrid/index.md).}}
 
@@ -106,10 +106,7 @@ The constructor has two parameters:
 widget.data.parse(widget_data);
 ~~~
 
- 
-
-Initialize Pagination
----------------------
+## Initialize Pagination
 
 Initialize pagination with the *dhx.Pagination* object constructor. The constructor takes two parameters:
 
@@ -129,4 +126,3 @@ const pagination = new dhx.Pagination("pagination_container", {
 There is a set of properties you can specify in the Pagination configuration object (the second parameter of the constructor function). 
 
 See the detailed information on configuration properties of Pagination in the [Pagination API overview](pagination/api/api_overview.md#properties) article.
-

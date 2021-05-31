@@ -1,11 +1,12 @@
 ---
 sidebar_label: Work with Pagination
-title: Work with Pagination
----          
+title: JavaScript Pagination - Work with Pagination 
+description: You can explore how to work with Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with Pagination
 
-Setting/getting the active page
---------------------------
+## Setting/getting the active page
 
 It is possible to set the active page in a widget via Pagination API, i.e. with the help of the [](pagination/api/pagination_setpage_method.md) method. It takes the index of a page as a parameter:
 
@@ -22,8 +23,7 @@ const pageIndex = pagination.getPage();
 
 **Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
-Setting/getting count of items per page
------------------------------------------
+## Setting/getting count of items per page
 
 You can define the size of the widget page, i.e specify the number of items to be displayed on each page of the widget via the [](pagination/api/pagination_setpagesize_method.md) method. Pass the necessary number of items as a parameter to the method:
 
@@ -40,8 +40,7 @@ pagination.getPageSize();
 
 **Related sample**: [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
-Getting total number of pages
--------------------------------
+## Getting total number of pages
 
 You can get the total number of pages by applying the [](pagination/api/pagination_getpagescount_method.md) method:
 
