@@ -1,11 +1,12 @@
 ---
 sidebar_label: Work with TreeGrid
-title: Work with TreeGrid
-description: description
----          
+title: JavaScript TreeGrid - Work with TreeGrid 
+description: You can explore how to work with TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Working with columns and cells
----------------------
+# Work with TreeGrid
+
+## Working with columns and cells
 
 The API of dhtmlxTreeGrid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
 
@@ -21,7 +22,7 @@ treegrid.setColumns([
 ]);
 ~~~
 
-You can find the full list of the available configuration options of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).      
+You can find the full list of the available configuration options of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
 
 ### Getting configuration of a column
 
@@ -66,8 +67,7 @@ The return object includes the following attributes:
     </tbody>
 </table>
 
-Getting header filter
----------------------
+## Getting header filter
 
 You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset the focus on the filter, to change the filter, or clear it. For that, you should get an object of the header filter by column id via the [](treegrid/api/treegrid_getheaderfilter_method.md) method: 
 
@@ -92,8 +92,7 @@ countryFilter.blur();
 
 The method returns either an HTML object or an object with Combobox configuration.
 
-Hiding/showing a column
---------------------------
+## Hiding/showing a column
 
 It is possible to show and hide a column in the grid via the [](treegrid/api/treegrid_showcolumn_method.md) and [](treegrid/api/treegrid_hidecolumn_method.md) methods. 
 
@@ -108,8 +107,7 @@ treegrid.hideColumn(col);
 
 Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
 
-Checking visibility of a column
-----------------------------------
+## Checking visibility of a column
 
 You can check whether a column is hidden or shown on a page using the [](treegrid/api/treegrid_iscolumnhidden_method.md) method. The method returns *true*, if a column is visible, and *false* if it's hidden.
 
@@ -119,8 +117,7 @@ treegrid.isColumnHidden("country"); // -> true|false
 
 **Related sample**: [TreeGrid. Is column hidden](https://snippet.dhtmlx.com/fcjfp19d)
 
-Hiding/showing a row
---------------------------
+## Hiding/showing a row
 
 Starting from v7.0, it is possible to show and hide a row in the treegrid via the [](treegrid/api/treegrid_showrow_method.md) and [](treegrid/api/treegrid_hiderow_method.md) methods. 
 
@@ -133,9 +130,7 @@ treegrid.hideRow(rowId);
 
 **Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
-
-Checking visibility of a row
-----------------------------------
+## Checking visibility of a row
 
 You can check whether a row is hidden or shown on a page using the [](treegrid/api/treegrid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
 
@@ -145,8 +140,7 @@ treegrid.isRowHidden("1"); // -> true|false
 
 **Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
-Adding/removing spans
----------------------
+## Adding/removing spans
 
 You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: [](treegrid/api/treegrid_addspan_method.md), [](treegrid/api/treegrid_removespan_method.md) and [](treegrid/api/treegrid_getspan_method.md).
 
@@ -212,8 +206,7 @@ To remove an existing span, make use of the [](treegrid/api/treegrid_removespan_
 treegrid.removeSpan("10","a");
 ~~~
 
-Controlling scroll behavior 
------------------------------
+## Controlling scroll behavior
 
 The API of dhtmlxTreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
 
@@ -225,7 +218,7 @@ You can scroll grid content to exact position defined by x and y coordinates via
 treegrid.scroll(75,230);
 ~~~
 
-### Scrolling to specific treegrid cell   
+### Scrolling to specific treegrid cell
 
 It is also possible to scroll treegrid content to a particular cell. Pass the ids of the row and the column as parameters:
 
@@ -245,9 +238,7 @@ var state = treegrid.getScrollState(); // -> {x:0,y:0}
 
 It returns an object with x,y coordinates of a position the grid has been scrolled to.
 
-
-Grouping data
------------------
+## Grouping data
 
 To make data in TreeGrid well-structured and easily understood you can group data with the help of the [](treegrid/api/treegrid_groupby_method.md) method. There are two options of grouping data.
 
@@ -287,8 +278,7 @@ treegrid.groupBy(function (item) {
 
 If necessary, you can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 
-Filtering data
-------------------
+## Filtering data
 
 You can filter grid data by the specified criteria with the help of the **filter()** method of data collection. The method takes as a parameter an object with the properties described below:
 
@@ -349,8 +339,7 @@ treegrid.data.filter({
 
 **Related sample**: [TreeGrid. External filter](https://snippet.dhtmlx.com/zdecovib)
 
-Sorting data
---------------
+## Sorting data
 
 It is possible to sort data in the grid via the **sort()** method of data collection. The method takes an object with the following attributes:
 
@@ -398,8 +387,7 @@ treegrid.data.sort({
 });
 ~~~
 
-Getting the sorting state
---------------------------
+## Getting the sorting state
 
 To get the current state of sorting data in TreeGrid, use the [](treegrid/api/treegrid_getsortingstate_method.md) method. The method returns an object with two attributes:
 
@@ -424,8 +412,7 @@ var state = treegrid.getSortingState();
 
 **Related sample**: [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
 
-Editing data
-------------------
+## Editing data
 
 You can easily edit the desired cell of a treegrid with the help of the [](treegrid/api/treegrid_editcell_method.md) method. It takes two parameters:
 
@@ -460,9 +447,7 @@ treegrid.editEnd(true); // the edited data won't be saved
 
 {{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
 
-
-Expanding/collapsing nodes
--------------------------
+## Expanding/collapsing nodes
 
 ### Expand/collapse a certain node
 
@@ -493,8 +478,7 @@ treegrid.collapseAll();
 
 **Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
-Exporting TreeGrid
--------------------
+## Exporting TreeGrid
 
 You can easily export data of TreeGrid into the Excel or CSV format.
 
@@ -567,9 +551,7 @@ treegrid.export.csv({
 
 The **csv()** method returns a CSV string with TreeGrid data.
 
-
-Repainting TreeGrid
-------------------
+## Repainting TreeGrid
 
 In case you've changed some configuration settings of a treegrid, you can repaint it on a page via the **paint()** method:
 
@@ -577,8 +559,7 @@ In case you've changed some configuration settings of a treegrid, you can repain
 treegrid.paint();
 ~~~
 
-Destructing TreeGrid
--------------------
+## Destructing TreeGrid
 
 When it's necessary to release resources occupied by TreeGrid during its activity, you can make use of the **destructor()** method:
 
@@ -586,9 +567,6 @@ When it's necessary to release resources occupied by TreeGrid during its activit
 treegrid.destructor();
 ~~~
 
-Using Selection API
---------------------
+## Using Selection API
 
 For information on using Selection API, read [Work with Selection Object](treegrid/usage_selection.md).
-
-
