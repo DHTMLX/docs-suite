@@ -1,7 +1,10 @@
 ---
 sidebar_label: Custom HTML button
-title: Custom HTML button
----          
+title: JavaScript Toolbar - Custom HTML Button 
+description: You can explore the custom HTML button of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Custom HTML button
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 

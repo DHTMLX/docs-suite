@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript Toolbar - Data Loading 
+description: You can explore the data loading of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are several simple ways of loading data into dhtmlxToolbar:
 
@@ -10,9 +13,7 @@ There are several simple ways of loading data into dhtmlxToolbar:
 
 First, you need to prepare a data set that will be loaded into Toolbar.
 
-
-Preparing data set
-----------------------
+## Preparing data set
 
 dhtmlxToolbar expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -49,8 +50,7 @@ var data = [
 
 A data set consists of objects with configurations of toolbar controls. Templates for Toolbar controls in JSON format are given [below](#json-format-templates).
 
-Loading from a local source
--------------------
+## Loading from a local source
 
 You can load data to a toolbar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -60,9 +60,7 @@ toolbar.data.parse(data);
 
 **Related sample**: [Toolbar. Basic Initialization](https://snippet.dhtmlx.com/i5a9mx2i)
 
-
-Loading from an external file
-------------------
+## Loading from an external file
 
 The **load** method loads the toolbar data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 
@@ -82,8 +80,7 @@ toolbar.data.load("/some/data").then(function(){
 });
 ~~~
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
 To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a toolbar into an array of JSON objects. 
 Each JSON object contains the configuration of a separate Toolbar control.
@@ -101,8 +98,7 @@ var toolbar2 = new dhx.Toolbar(document.body);
 toolbar2.data.parse(state);
 ~~~
 
-JSON format templates
------------------
+## JSON format templates
 
 This section will give you the idea of JSON format templates for separate Toolbar controls.
 

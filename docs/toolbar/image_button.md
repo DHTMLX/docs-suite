@@ -1,7 +1,10 @@
 ---
 sidebar_label: ImageButton
-title: ImageButton
----          
+title: JavaScript Toolbar - ImageButton 
+description: You can explore the ImageButton of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# ImageButton
 
 This is a button with an image. Unlike a [button](toolbar/button.md), it does not have a text label, but can also have a badge with a number and can be two state.
 

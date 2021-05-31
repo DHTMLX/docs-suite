@@ -1,7 +1,10 @@
 ---
 sidebar_label: Button
-title: Button
----          
+title: JavaScript Toolbar - Button 
+description: You can explore the Button of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Button
 
 This is a simple button that can have an icon. Button can have two states and a badge with a number, which can be useful for displaying the number of new messages, etc.
 
@@ -59,7 +62,7 @@ You can add any custom HTML content to a button with the help of the **html** pr
 
 **Related sample**: [Toolbar. Item HTML Content](https://snippet.dhtmlx.com/5n2b8x84)
 
-## Showing/hiding a button 
+## Showing/hiding a button
 
 To hide/show a button, you should pass the ID of the button to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) Toolbar methods:
 
@@ -70,7 +73,7 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-## Enabling/disabling a button 
+## Enabling/disabling a button
 
 Any button in the toolbar can be [enabled](toolbar/api/toolbar_enable_method.md)/[disabled](toolbar/api/toolbar_disable_method.md):
 
