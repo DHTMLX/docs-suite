@@ -8,10 +8,11 @@ description: You can explore the toggleSeries event of Chart in the documentatio
 
 @short: fires on toggle on/off a series in a legend
 
-@signature: {'toggleSeries: (id: string, pieLike: boolean) => void;'}
+@signature: {'toggleSeries: (id: string, pieLike: object | undefined) => void;'}
 
 @params:
-`id: string` - the id of a toggled series
+- `id: string` - the id of a toggled series
+- `pieLike: object | undefined` - an object with the configuration of a series in a legend (only for Pie, Pie 3D and Donut charts)
 
 @example:
 chart.events.on("ToggleSeries", function(id){
@@ -21,3 +22,9 @@ chart.events.on("ToggleSeries", function(id){
 @descr:
 
 **Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
+
+The **pieLike** object can contain the following parameters:
+
+- **color** - (*string*) the color of the legend item
+- **id** - (*string*) the id of the legend item
+- **text** - (*string*) the text label of the legend item

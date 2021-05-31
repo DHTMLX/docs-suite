@@ -28,7 +28,7 @@ To run the demo, follow the instructions given in the README.md file.
 
 ## Demo overview
 
-The HTML/JavaScript Hotel Management System demo helps you to understand how to build a user-friendly solution for hotel management with the help of the DHTMLX Suite library.
+The HTML/JavaScript hotel management system demo helps you to understand how to build a user-friendly solution for hotel management with the help of the DHTMLX Suite library.
 
 One of the main components of the project is Grid. You can add multiline headers and footers, set frozen columns, apply column editors such as a checkbox or combobox, and much more. Please check all the possibilities – the demo is interactive. Pay attention to all widgets in it.
 

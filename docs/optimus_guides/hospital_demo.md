@@ -14,42 +14,38 @@ This demo application shows how to create a hospital management system with a cl
 
 ## How to download
 
-Open the [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page. Here you can find demo applications made with DHTMLX. Choose Hospital Management System and click on it. Here is the direct way to the [Hospital Management System demo](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/#patients) page.
-
-Tip: Use the navigation arrows at the left bottom corner of the page to surf all the demos.
-
-Click the Download Demo button at the right bottom corner.
+Open the [Hospital Management System](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/#patients) demo and click the Download Demo button in the bottom right corner of the page.
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the Hospital Management System demo. Save the file and unpack it to your working directory.
+Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the File Manager demo. Save the file and unpack it into your working directory.
+
+You will find more demos on the [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page. To view the desired one, just click on it.
 
 ## How to start
 
-Follow the instruction in the README.md file to run the demo.
+To run the demo, follow the instructions in the README.md file.
 
 ## Demo overview
 
-The Hospital Management System demo is a complex solution to show you the way how DHTMLX widgets can be organized and what components they have on board. You can use the demo to build your management system easily.
+The hospital management system demo is a complex solution to show you how DHTMLX widgets can be organized and what components they have on board. You can use the demo to build your management system easily.
 
-Pay attention to how the Patient Registration Form is realized. Here you can find built-in Datepicker, Combobox,  Input fields, RadioGroup controls, and even more.
+Pay attention to how the Patient Registration Form is realized. Here you can find built-in Datepicker, Combobox, Input fields, RadioGroup controls, and even more.
 
-Treegrid is the main widget of the demo. With a help of it, you can manage the hospital in real-time. Tabbar helps you to organize the information in the Treegrid in a convenient way.
+Treegrid is the main widget of the demo. With the help of it, you can manage the hospital in real-time. Tabbar helps you to organize the information in the Treegrid in a convenient way.
 
 DHTMLX diagram is one more feature of the demo. It helps to visualize a hospital management hierarchy.
 
-We used the DHTMLX Optimus framework to create The Hospital Management System demo. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
-
-There are no specific backend requirements. The demo is based on the REST API and you can use any backend platform which supports it (PHP, Nodejs, .Net, Java, etc.).
+For more details, check [Hospital Management System in JavaScript](https://dhtmlx.com/docs/products/dhtmlxHospitalManagement/).
 
 ## License
 
-A free 30-day trial version is provided only for evaluation purposes. After a trial term is over, you will receive messages about using an unlicensed product.
+A free 30-day trial version of the demo is provided to you only for evaluation purposes. You can read more about *Evaluation License Terms* when filling the form to download the demo.
 
-Learn more about [Evaluation License Terms](https://dhtmlx.com/docs/products/license.shtml?eval).
+After the trial period is over, you will receive messages about using an unlicensed product.
 
 ### How to start with license
 
-If you would like to use this demo in your project after the evaluation period expires, you should purchase the DHTMLX Suite PRO Edition license. You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
+If you want to continue to use this demo in your project after the evaluation, you have to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
-Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
+You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.

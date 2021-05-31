@@ -15,6 +15,9 @@ description: You can explore the reduce method of DataCollection in the document
 - `callback: function` - a function that will be called for each item in the array
 - `acc: any` - a value to be passed to the function as the initial value
 
+@returns:
+A single output value.
+
 @example:
 var total = datacollection.reduce(function(new_item, item) {
     return new_item + item.value;

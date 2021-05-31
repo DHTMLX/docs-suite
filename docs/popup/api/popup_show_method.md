@@ -8,7 +8,7 @@ description: You can explore the show method of Popup in the documentation of th
 
 @short: shows a Popup
 
-@signature: {'show(node: HTMLElement, config?: IShowConfig, attach?: any): void;'}
+@signature: {'show(node: HTMLElement, config?: IShowConfig): void;'}
 
 @params:
 - `node: HTMLElement` - mandatory, the container to place a popup in

@@ -8,7 +8,7 @@ description: You can explore the sort method of DataCollection in the documentat
 
 @short: sorts data items in a component
 
-@signature: {'sort(by: ISortMode): void;'}
+@signature: {'sort(rule?: ISortMode, config?: ISortConfig): void;'}
 
 @params:
 - `rule: object` - an object with parameters for sorting
