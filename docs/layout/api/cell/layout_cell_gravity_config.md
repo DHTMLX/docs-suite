@@ -1,10 +1,9 @@
 ---
 sidebar_label: gravity
 title: JavaScript Layout - gravity Config 
-hide_title: true
 description: You can explore the gravity config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # gravity
 
 @short: sets the "weight" of a cell in relation to other cells placed in the same row and within one parent

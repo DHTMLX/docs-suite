@@ -1,10 +1,9 @@
 ---
 sidebar_label: change
 title: JavaScript DataCollection - change Event 
-hide_title: true
 description: You can explore the change event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # change
 
 @short: fires when a data collection is modified

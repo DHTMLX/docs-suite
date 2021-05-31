@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript TreeGrid - Initialization 
+description: You can explore the initialization of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxTreeGrid on a page, you need to take the following simple steps:
 
@@ -40,8 +43,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 
 **Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of dhtmlxTreeGrid into the header of the created file. The TreeGrid component can be used standalone or as a part of the Suite library.
 
@@ -65,8 +67,7 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxTreeGrid i
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
 
-Create a container 
------------------
+## Create a container
 
 Add a container for TreeGrid and give it an id, for example "treegrid_container". To display TreeGrid on the page correctly, define width and height of the container.
 
@@ -74,9 +75,7 @@ Add a container for TreeGrid and give it an id, for example "treegrid_container"
 <div id="treegrid_container" style="width:800px; height:600px"></div>
 ~~~
 
-
-Initialize TreeGrid
-----------------------
+## Initialize TreeGrid
 
 Initialize TreeGrid with the `dhx.TreeGrid` object constructor. The constructor has two parameters:
 
@@ -103,8 +102,7 @@ There is a set of properties you can specify for TreeGrid to optimize its config
 
 See the detailed information on configuration properties of TreeGrid in the [TreeGrid API overview](treegrid/api/api_overview.md#treegrid-properties) article.
 
-Load data into TreeGrid
-------------------
+## Load data into TreeGrid
 
 There are several handy ways of loading data into TreeGrid. You can add data both before and after initialization of the component.
 
@@ -134,10 +132,3 @@ treegrid.data.parse(dataset);
 ~~~
 
 Detailed information on loading data into TreeGrid is given in the [](treegrid/data_loading.md) article.
-
-
-
-
-
-
-

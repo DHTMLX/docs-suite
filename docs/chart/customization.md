@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Chart - Customization 
+description: You can explore the customization of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling chart
-----------------
+# Customization
+
+## Styling chart
 
 There is a possibility to make changes in the look and feel of a chart.
 
@@ -78,8 +80,7 @@ const chart = new dhx.Chart("chart", {
 });
 ~~~
 
-Adding template to scale labels
--------------------------------
+## Adding template to scale labels
 
 ![](../assets/chart/text_template.png)
 
@@ -110,9 +111,7 @@ const chart = new dhx.Chart("chart", {
 });
 ~~~
 
-
-Adding color gradient for bars
---------------------------------
+## Adding color gradient for bars
 
 ![](../assets/chart/bar_gradient.png)
 
@@ -157,8 +156,7 @@ const chart = new dhx.Chart("chart", {
 });
 ~~~
 
-Adding template to tooltips
----------------------------
+## Adding template to tooltips
 
 ![](../assets/chart/show_tooltip.png)
 
@@ -198,8 +196,7 @@ const chart = new dhx.Chart("chart", {
 });
 ~~~
 
-Adding template to text values of data items in bars
-----------------------------
+## Adding template to text values of data items in bars
 
 ![](../assets/chart/show_text.png)
 
@@ -249,4 +246,3 @@ const chart = new dhx.Chart("chart", {
     }
 });
 ~~~
-

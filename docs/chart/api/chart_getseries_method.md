@@ -1,10 +1,9 @@
 ---
 sidebar_label: getSeries()
 title: JavaScript Chart - getSeries Method 
-hide_title: true
 description: You can explore the getSeries method of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # getSeries()
 
 @short: returns an object with configuration of a specified series

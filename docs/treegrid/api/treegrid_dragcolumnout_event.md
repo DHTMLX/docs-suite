@@ -1,10 +1,9 @@
 ---
 sidebar_label: dragColumnOut
 title: JavaScript TreeGrid - dragColumnOut Event 
-hide_title: true
 description: You can explore the dragColumnOut event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # dragColumnOut
 
 @short: fires when a column is dragged out of a potential target

@@ -1,13 +1,12 @@
 ---
 sidebar_label: Work with ComboBox
-title: Work with ComboBox
----          
+title: JavaScript Combo Box - Work with Combo Box 
+description: You can explore how to work with Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with ComboBox
 
-
-
-Setting/getting value(s)
----------------------
+## Setting/getting value(s)
 
 In order to select options in ComboBox, use the [setValue()](combobox/api/combobox_setvalue_method.md) method. It takes one parameter:
 
@@ -43,8 +42,7 @@ var array_ids = combo.getValue(true);
 
 **Related sample**: [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
 
-Disabling/enabling ComboBox
------------------
+## Disabling/enabling ComboBox
 
 To disable/enable ComboBox, make use of the [disable()](combobox/api/combobox_disable_method.md)/[enable()](combobox/api/combobox_enable_method.md) methods:
 
@@ -57,8 +55,7 @@ combo.enable();
 
 **Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
-Checking if a combobox is disabled
---------------------------------
+## Checking if a combobox is disabled
 
 To check if a combobox is disabled, call the [isDisabled()](combobox/api/combobox_isdisabled_method.md) method:
 
@@ -68,8 +65,7 @@ combo.isDisabled(); // -> true/false
 
 **Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
-Repainting ComboBox
-----------------
+## Repainting ComboBox
 
 You can repaint ComboBox on a page, e.g. after changing its configuration, using the [paint()](combobox/api/combobox_paint_method.md) method:
 
@@ -80,9 +76,7 @@ combo.config.disabled = true;
 combo.paint();
 ~~~
 
-
-Clearing input
----------------
+## Clearing input
 
 It is possible to clear the ComboBox input from the selected value(s) with the help of the [clear()](combobox/api/combobox_clear_method.md) method:
 
@@ -92,8 +86,7 @@ combo.clear();
 
 **Related sample**: [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
 
-Setting focus
---------------
+## Setting focus
 
 When needed, you can set focus in the ComboBox input without opening the list of options. Use the [focus()](combobox/api/combobox_focus_method.md) method for this purpose:
 
@@ -103,8 +96,7 @@ combo.focus();
 
 **Related sample**: [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
 
-Hiding/showing the popup
------------------
+## Hiding/showing the popup
 
 You can manipulate the visibility of the Combo popup with the help of the [Popup](popup/api/api_overview.md) API.
 
@@ -203,8 +195,7 @@ combo.popup.events.on("AfterHide", function(e){
 
 **Related sample**: [Combobox. Popup Events](https://snippet.dhtmlx.com/ll0uykpk)
 
-Using Data Collection API
-------------------------
+## Using Data Collection API
 
 You can manipulate ComboBox options with the help of the [Data collection API](data_collection/index.md). 
 
@@ -233,7 +224,7 @@ combo.data.add({value:"Russia"},1);
 
 **Related sample**: [Combobox. Add/Remove](https://snippet.dhtmlx.com/o7vd331z)
 
-### Updating ComboBox options 
+### Updating ComboBox options
 
 You can change config options of the option via the **update()** method of Data Collection. It takes two parameters:
 
@@ -268,8 +259,4 @@ To remove an option, make use of the **remove()** method of Data Collection. Pas
 combo.data.remove("option_id");
 ~~~
 
-<br/>
-
 {{note Check the full list of [Data collection API](data_collection/index.md)}}
-
-

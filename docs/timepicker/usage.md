@@ -1,12 +1,14 @@
 ---
 sidebar_label: Work with TimePicker
-title: Work with TimePicker
----          
+title: JavaScript Timepicker - Work with TimePicker 
+description: You can explore how to work with TimePicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Work with TimePicker
 
 You can change the value of the TimePicker or get its current value via the related API methods.
 
-Setting value
----------------
+## Setting value
 
 There is the [setValue()](timepicker/api/timepicker_setvalue_method.md) method that makes it easy to change the value of the timepicker on the fly. The method takes as a parameter the value which can be passed in several formats:
 
@@ -37,8 +39,7 @@ timepicker.setValue(1559288966422);
 
 **Related sample**: [Timepicker. Set Timepicker Value](https://snippet.dhtmlx.com/6r8lkhbg)
 
-Getting value 
-------------------
+## Getting value
 
 You can get the value of TimePicker either as an object or as a string via the [getValue()](timepicker/api/timepicker_getvalue_method.md) method. It takes one parameter: 
 
@@ -66,4 +67,3 @@ The returned value can be of several types, depending on the passed parameter an
 - for the 12-hour format a return string value will include hour, minutes, and am/pm identifiers: "06:00AM"
 - for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
 - for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
-

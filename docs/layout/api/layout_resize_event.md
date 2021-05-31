@@ -1,10 +1,9 @@
 ---
 sidebar_label: resize
 title: JavaScript Layout - resize Event 
-hide_title: true
 description: You can explore the resize event of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # resize
 
 @short: fires on resizing a cell

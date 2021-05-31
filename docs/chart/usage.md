@@ -1,10 +1,12 @@
 ---
 sidebar_label: Work with Chart
-title: Work with Chart
----          
+title: JavaScript Chart - Work with Chart 
+description: You can explore how to work with Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Setting Chart configuration
-------------------------
+# Work with Chart
+
+## Setting Chart configuration
 
 You can change configuration of Chart on the fly with the help of the [](chart/api/chart_setconfig_method.md) method. It takes as a parameter an object with updated [chart configuration](chart/configuration_properties.md).
 
@@ -40,8 +42,7 @@ chart.setConfig(config);
 
 **Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
 
-Getting series configuration
------------------------------
+## Getting series configuration
 
 The Chart API gives you the possibility to get an object with the configuration of a certain series. Use the [](chart/api/chart_getseries_method.md) method for this purpose. It takes the id of a series as a parameter:
 
@@ -64,8 +65,7 @@ var config = chart.getSeries("A");
 
 **Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
 
-Iterating over series
-----------------------
+## Iterating over series
 
 It is possible to iterate over chart series using the [](chart/api/chart_eachseries_method.md). As a parameter it takes a handler function that will perform iteration. 
 Pass an array with series objects as a parameter of the handler function:
@@ -105,8 +105,7 @@ chart.eachSeries(function(seria){
 
 **Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
-Adding items into Chart
------------------------
+## Adding items into Chart
 
 The API of [Data Collection](data_collection/index.md) allows you to perform operations with Chart data items. 
 For example, you can add more items (points) into your Chart using the [](data_collection/api/datacollection_add_method.md) method, like this:
@@ -175,5 +174,3 @@ The method takes as a parameter an object with two properties:
 A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it correctly.
 
 **Related sample**: [Chart. Adding Data On The Fly](https://snippet.dhtmlx.com/dpz4w5nr)
-
-

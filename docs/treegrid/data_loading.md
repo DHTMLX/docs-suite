@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript TreeGrid - Data Loading 
+description: You can explore the data loading of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are several simple ways of loading data into dhtmlxTreeGrid:
 
@@ -11,8 +14,7 @@ There are several simple ways of loading data into dhtmlxTreeGrid:
 
 First, you need to prepare a data set that will be loaded into TreeGrid.
 
-Preparing data set
--------------------
+## Preparing data set
 
 dhtmlxTreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -56,9 +58,7 @@ Each object in the data set contains configuration of a grid row. The structure 
     </tbody>
 </table>
 
-
-Adding data on TreeGrid initialization
----------------------
+## Adding data on TreeGrid initialization
 
 You can specify data you want to add into TreeGrid on the initialization stage. Make use of the **data** configuration property, as in:
 
@@ -71,9 +71,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
-
-External data loading
---------------------
+## External data loading
 
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
@@ -94,9 +92,7 @@ treegrid.data.load("/some/data").then(function(){
 });
 ~~~
 
-
-Loading from local source
-------------------
+## Loading from local source
 
 To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -105,8 +101,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid.data.parse(dataset);
 ~~~
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
 To save the current state of a treegrid, use the **serialize** method of Tree Collection. It converts the data of a treegrid into an array of JSON objects. 
 Each JSON object contains the configuration of a separate row.
@@ -123,5 +118,3 @@ var treegrid2 = new dhx.TreeGrid(document.body);
 // parsing the state of treegrid1 into treegrid2
 treegrid2.data.parse(state);
 ~~~
-
-

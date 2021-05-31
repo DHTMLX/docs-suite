@@ -1,13 +1,14 @@
 ---
 sidebar_label: Work with Tabbar
-title: Work with Tabbar
----          
+title: JavaScript Tabbar - Work with Tabbar 
+description: You can explore how to work with Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with Tabbar
 
 dhtmlxTabbar inherits its API from dhtmlxLayout. So, you can apply any methods of Layout to manipulate Tabbar.
 
-Adding/removing tabs
----------------
+## Adding/removing tabs
 
 You can quickly add/remove tabs of Tabbar on the fly with the help of the corresponding methods - [](tabbar/api/tabbar_addtab_method.md) and [](tabbar/api/tabbar_removetab_method.md).
 
@@ -51,8 +52,7 @@ tabbar.removeTab(id);
 
 **Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
 
-Getting the id of a tab
----------------
+## Getting the id of a tab
 
 In order to get the id of a tab, make use of the [getId()](tabbar/api/tabbar_getid_method.md) method. It takes the index of the tab in question as a parameter:
 
@@ -60,8 +60,7 @@ In order to get the id of a tab, make use of the [getId()](tabbar/api/tabbar_get
 var id = tabbar.getId(0);
 ~~~
 
-Setting/getting the active tab
-------------------
+## Setting/getting the active tab
 
 It is possible to set the active tab via Tabbar API, i.e. with the help of the [setActive()](tabbar/api/tabbar_setactive_method.md) method. It takes the id of a tab as a parameter:
 
@@ -99,8 +98,8 @@ var active = tabbar.getActive(); // -> "2"
 
 **Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
 
-Enabling/Disabling a tab
---------------------------
+## Enabling/Disabling a tab
+
 To enable a tab, use the [enableTab()](tabbar/api/tabbar_enabletab_method.md) method:
 
 ~~~js
@@ -116,8 +115,7 @@ tabbar.disableTab("London");
 
 **Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
 
-Checking if a tab is disabled
------------------------------
+## Checking if a tab is disabled
 
 To check if a tab is disabled, pass the id of the tab as an argument to the [isDisabled()](tabbar/api/tabbar_isdisabled_method.md) method:
 
@@ -133,8 +131,8 @@ tabbar.isDisabled(); // -> returns true/false
 
 **Related sample**: [Tabbar. Is Disabled Tab](https://snippet.dhtmlx.com/86er2y7m)
 
-Attaching a component to a cell
----------------------------------------
+## Attaching a component to a cell
+
 You can easily attach any DHTMLX component to a cell of Tabbar using the attach method of a cell:
 
 ~~~js
@@ -150,4 +148,3 @@ tabbar.getCell("dataview").attach(dataview);
 ~~~
 
 **Related sample**: [Tabbar. Attach](https://snippet.dhtmlx.com/o1jwmw1l)
-

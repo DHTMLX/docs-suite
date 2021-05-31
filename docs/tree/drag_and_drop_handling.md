@@ -1,7 +1,10 @@
 ---
 sidebar_label: Drag-n-Drop
-title: Drag-n-Drop
----          
+title: JavaScript Tree - Drag-n-Drop 
+description: You can explore the drag-n-drop of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Drag-n-Drop
 
 dhtmlxTree possesses an advanced drag-n-drop functionality. With this feature, it is possible to reorder items in a tree and drag items between trees. To enable drag-n-drop, you should define the drag mode.
 
@@ -9,7 +12,6 @@ dhtmlxTree possesses an advanced drag-n-drop functionality. With this feature, i
 var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
 var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
 ~~~
-
 
 ## Drag mode
 
@@ -46,7 +48,6 @@ There are three modes of behaviour of a dragged tree item:
 ![Sibling](../assets/tree/drag_behaviour_sibling.png)
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
-
 
 ## Copying dragged item
 

@@ -1,10 +1,9 @@
 ---
 sidebar_label: tabAutoWidth
 title: JavaScript Tabbar - tabAutoWidth Config 
-hide_title: true
 description: You can explore the tabAutoWidth config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # tabAutoWidth
 
 @short: defines whether the width of tabs is automatically adjusted to the width of the tabbar container

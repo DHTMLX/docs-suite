@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: DataProxy overview
-description: description
----          
+title: DataProxy Overview 
+description: You can have an overview of DataProxy in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# DataProxy overview
 
 DataProxy is a helper that enables communication with external datasources. Using the helper allows creating a custom URL and assigning it to a variable that considerably simplifies work with server-side backend.
 

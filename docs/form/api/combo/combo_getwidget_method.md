@@ -1,10 +1,9 @@
 ---
 sidebar_label: getWidget()
 title: JavaScript Form - getWidget Combo Box Method 
-hide_title: true
 description: You can explore the getWidget Combo Box method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # getWidget()
 
 @short: returns the dhtmlxComboBox widget attached to a Combo control

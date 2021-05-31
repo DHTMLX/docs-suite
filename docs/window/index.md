@@ -1,15 +1,16 @@
 ---
 sidebar_label: Overview
-title: Window overview
-description: dhtmlxWindow is a JavaScript component for adding easy-to-use windows to applications. The component possesses rich configuration possibilities and provides a lot of means for creating attractive windows that have the desktop functionality.
----          
+title: JavaScript Window - Window Overview 
+description: You can have an overview of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Window overview
 
 dhtmlxWindow allows working with several windows and their content at the same time. The component provides means for performing standard operations with windows, 
 such as moving/resizing a window, sending a window to the foreground/background, making a window modal, changing position and size of a window, setting content inside a window, etc.
 Check [online samples for dhtmlxWindow](https://docs.dhtmlx.com/suite/samples/window/).
 
 ![](../assets/window/window_front.png)
-
 
 ## API reference
 
@@ -22,12 +23,11 @@ Check [online samples for dhtmlxWindow](https://docs.dhtmlx.com/suite/samples/wi
 
 ## Guides
 
-- [](how_to_start)	
+- [](how_to_start)
 - [](configuration)
 - [](usage)
 - [](customization)
 - [](handling_events)
-
 
 ## Other
 

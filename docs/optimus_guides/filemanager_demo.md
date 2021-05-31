@@ -1,7 +1,10 @@
 ---
 sidebar_label: File manager demo
-title: File Manager Demo
---- 
+title: File Manager Demo with Optimus Framework 
+description: You can explore how to work with File Manager Demo using Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# File Manager Demo
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
@@ -38,12 +41,9 @@ A free 30-day trial version of the demo is provided to you only for evaluation p
 
 After the trial period is over, you will receive messages about using an unlicensed product.
 
-
 ### How to start with license
 
-If you want to use this demo in your project after the evaluation period expires, you will need to purchase the DHTMLX Suite PRO Edition license. 
+If you want to use this demo in your project after the evaluation period expires, you will need to purchase the DHTMLX Suite PRO Edition license.
 Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
 After the purchase, you will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite.
-
-

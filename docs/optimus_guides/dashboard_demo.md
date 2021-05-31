@@ -1,7 +1,10 @@
 ---
 sidebar_label: UI dashboard demo
-title: UI Dashboard Demo
---- 
+title: UI Dashboard Demo with Optimus Framework 
+description: You can explore how to work with UI Dashboard Demo using Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# UI Dashboard Demo
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
@@ -44,4 +47,3 @@ After the trial period is over, you will receive messages about using an unlicen
 If you want to continue to use this demo in your project after the evaluation period expires, you will have to purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
 You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
-

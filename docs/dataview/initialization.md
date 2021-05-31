@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript DataView - Initialization 
+description: You can explore the initialization of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxDataView on a page, you need to take the following simple steps:
 
@@ -33,8 +36,7 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 
 **Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -46,8 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container 
------------------
+## Create a container
 
 Add a container for DataView and give it an id, for example "dataview_container":
 
@@ -55,8 +56,7 @@ Add a container for DataView and give it an id, for example "dataview_container"
 <div id="dataview_container"></div>
 ~~~
 
-Initialize DataView
----------------------------------
+## Initialize DataView
 
 Initialize DataView with the `dhx.DataView` object constructor. The constructor has two parameters:
 
@@ -76,8 +76,7 @@ There is a set of properties you can specify for DataView to optimize its config
 
 The detailed information on DataView configuration options can be found in the [Dataview API overview](dataview/api/api_overview.md#properties) article.
 
-Load data into DataView
----------------------
+## Load data into DataView
 
 Finally, you are able to load DataView with data. You can load inline or external data into DataView.
 
@@ -102,4 +101,3 @@ dataview.data.load("../common/dataset.json");
 ~~~
 
 **Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
-

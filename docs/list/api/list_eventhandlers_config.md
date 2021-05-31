@@ -1,10 +1,9 @@
 ---
 sidebar_label: eventHandlers
 title: JavaScript List - eventHandlers Config 
-hide_title: true
 description: You can explore the eventHandlers config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # eventHandlers
 
 @short: adds event handlers to HTML elements of a custom template of List items

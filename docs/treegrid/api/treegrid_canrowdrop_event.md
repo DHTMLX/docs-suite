@@ -1,10 +1,9 @@
 ---
 sidebar_label: canRowDrop
 title: JavaScript TreeGrid - canRowDrop Event 
-hide_title: true
 description: You can explore the canRowDrop event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # canRowDrop
 
 @short: fires when a dragged row is placed over a target row

@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript TreeGrid - Customization 
+description: You can explore the customization of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling TreeGrid
-----------------
+# Customization
+
+## Styling TreeGrid
 
 There is a possibility to make changes in the look and feel of a treegrid. 
 
@@ -36,8 +38,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-Styling header cells
--------------------
+## Styling header cells
 
 ![](../assets/treegrid/styling_header.png)
 
@@ -59,9 +60,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-
-Styling footer cells
--------------------
+## Styling footer cells
 
 ![](../assets/treegrid/styling_footer.png)
 
@@ -100,8 +99,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-Styling rows
----------------
+## Styling rows
 
 It is possible to change the appearance of treegrid rows by applying custom CSS styles to them. 
 
@@ -128,7 +126,6 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 ~~~
-
 
 - with the help of the [addRowCss()](treegrid/api/treegrid_addrowcss_method.md) method:
 
@@ -162,9 +159,7 @@ where:
     </tbody>
 </table>
 
-
-Styling cells
-----------------
+## Styling cells
 
 ![](../assets/treegrid/cell_css.png)
 
@@ -202,10 +197,7 @@ It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegr
 treegrid.addCellCss(rowId, "name", "myCustomClass");
 ~~~
 
-
-
-Adding custom marks to cells
--------------------
+## Adding custom marks to cells
 
 ![](../assets/treegrid/mark_cell.png)
 
@@ -331,8 +323,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [TreeGrid. Mark Cells](https://snippet.dhtmlx.com/um9mjrs5)
 
-Adding template to cells
------------------------------
+## Adding template to cells
 
 ![](../assets/treegrid/cell_templates.png)
 
@@ -430,8 +421,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
-Adding template to tooltip
----------------------
+## Adding template to tooltip
 
 ![](../assets/treegrid/tooltip_template.png)
 

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Hotel management system demo
-title: Hotel Management System Demo
---- 
+title: Hotel Management Demo with Optimus Framework 
+description: description
+---
+
+# Hotel Management System Demo
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
@@ -44,5 +47,3 @@ After the trial period is over, you will receive messages about using an unlicen
 If you want to use this demo in your project after the evaluation, you will need to purchase the DHTMLX Suite PRO Edition license. Have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
 You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
-
-

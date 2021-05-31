@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript DataView - Customization 
+description: You can explore the customization of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Сustom styling of widget
-----------------
+# Customization
+
+## Сustom styling of widget
 
 There is a possibility to make changes in the look and feel of a dataview. For this you need to take the following steps:
 
@@ -34,8 +36,7 @@ var dataview = new dhx.DataView({
 
 **Related sample**: [Dataview. Custom Widget Styles](https://snippet.dhtmlx.com/j1yv94o8)
 
-Custom styling of items 
-----------------
+## Custom styling of items
 
 You can style particular cells in the dataview. For example, apply some color to each even item, as in:
 
@@ -62,8 +63,7 @@ The image below and the related sample demonstrate another example of customizat
 
 **Related sample**: [Dataview. Custom Item Styles](https://snippet.dhtmlx.com/kpnzizbf)
 
-Custom styling of selection and focus
---------------------------
+## Custom styling of selection and focus
 
 You can apply your own styles for selection of items and focus with the help of the corresponding CSS classes: **.dhx_dataview-item--selected** and **.dhx_dataview-item--focus**. There is no need to use any
 additional custom classes.
@@ -83,5 +83,3 @@ var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
 ![Custom selection styles](../assets/dataview/custom_selection_styles.png)
 
 **Related sample**: [Dataview. Custom Selection Styles](https://snippet.dhtmlx.com/n98tzmzp)
-
-

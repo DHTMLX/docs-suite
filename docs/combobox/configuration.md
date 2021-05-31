@@ -1,10 +1,12 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Combo Box - Configuration 
+description: You can explore the configuration of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Disabled mode
----------------
+# Configuration
+
+## Disabled mode
 
 There is an option that allows making ComboBox disabled and blocks any operations with it. Use the [](combobox/api/combobox_disabled_config.md) configuration property to enter the described mode.
 
@@ -18,8 +20,7 @@ var combo = new dhx.Combobox("combo_container",{
 
 **Related sample**: [Combobox. Disabled](https://snippet.dhtmlx.com/ductsm0f)
 
-Dynamic rendering of options
----------------------
+## Dynamic rendering of options
 
 When you load a list of options into ComboBox, all items are loaded at once. In case you have a large data collection, it is suitable to render data by portions. dhtmlxComboBox provides you with such an ability.
 Use the [](combobox/api/combobox_virtual_config.md) property to render options in the ComboBox list dynamically on scrolling the list.
@@ -32,8 +33,7 @@ var combo = new dhx.Combobox("combo_container",{
 
 **Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)
 
-Height of list of options and its items
-----------------
+## Height of list of options and its items
 
 ![](../assets/combo/height.png)
 
@@ -48,8 +48,7 @@ var combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-Help icon 
------------
+## Help icon
 
 While using Combo in a form, it is useful to add some info about options that can be selected in it. Use the [](combobox/api/combobox_helpmessage_config.md) configuration option for this purpose.
 Set the necessary tip for users as a value of the property.
@@ -60,8 +59,7 @@ var combobox = new dhx.Combobox("combobox",{
 });
 ~~~
 
-Hidden label
--------------------
+## Hidden label
 
 While sending a form to the server you can add a label for a ComboBox input that won't be visible, but will be used to identify the input on the server side. Use the [](combobox/api/combobox_hiddenlabel_config.md) configuration property for this property.
 
@@ -72,8 +70,7 @@ var combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-Initial value
------------------
+## Initial value
 
 Starting from v7.0, it is possible to define the values that will appear in the input on initialization of the component via the [](combobox/api/combobox_value_config.md) property:
 
@@ -94,8 +91,7 @@ var combobox = new dhx.Combobox("combobox", {
 - If *multiselection:true* is set for a combo, the property takes an array of string values as: *value: ["1","2","3"]*,
 - If *multiselection:false* is set or the *multiselection* config is not defined, the property gets either of the two values: *value:"1"* or *value: ["1"]*.
 
-Label
---------------
+## Label
 
 You can set a label for ComboBox, adjust its width and position using the following properties: [](combobox/api/combobox_label_config.md), [](combobox/api/combobox_labelwidth_config.md) and [](combobox/api/combobox_labelposition_config.md). This is how it can be done:
 
@@ -123,8 +119,7 @@ var combo = new dhx.Combobox("combo_container",{
 
 **Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)
 
-Number of selected options
---------------------
+## Number of selected options
 
 ![](../assets/combo/selected_item.png)
 
@@ -159,8 +154,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 {{note Don't forget to enable the **multiselection** option to select several options at once.}}
 
-Placeholder 
--------------
+## Placeholder
 
 ![](../assets/combo/placeholder.png)
 
@@ -174,8 +168,7 @@ var combobox = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-Readonly mode
-----------------
+## Readonly mode
 
 ![](../assets/combo/readonly.png)
 
@@ -189,8 +182,7 @@ var combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-Selection of multiple options
-----------------------
+## Selection of multiple options
 
 In order to add the possibility to select several options in ComboBox at once, make use of the [](combobox/api/combobox_multiselection_config.md) configuration option.
 
@@ -200,8 +192,7 @@ var combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-Selection of all options in the list
------------------------
+## Selection of all options in the list
 
 There is the Select All button that allows selecting all options in the ComboBox list. To add this button into the component, use the [](combobox/api/combobox_selectallbutton_config.md) property. Note that you also need to enable selection of
 multiple options by setting the [](combobox/api/combobox_multiselection_config.md) configuration option to *true*:
@@ -217,9 +208,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Select All Button](https://snippet.dhtmlx.com/ui7pi7ty)
 
-
-Template for ComboBox options
---------------------------
+## Template for ComboBox options
 
 ![](../assets/combo/combo_template.png)
 
@@ -237,4 +226,3 @@ var combo = new dhx.Combobox("combo_container", {
 	}
 });			
 ~~~
-

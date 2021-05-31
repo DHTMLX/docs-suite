@@ -1,8 +1,10 @@
 ---
 sidebar_label: Configuration
-title: Configuration
-description: description
----          
+title: JavaScript DataView - Configuration 
+description: You can explore the configuration of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Configuration
 
 ## Arrow keys navigation
 
@@ -51,9 +53,7 @@ As a value of this option you can use either *true/false* to switch it on/off, o
     </tbody>
 </table>
 
-
-Drag-n-drop of items
-------------------
+## Drag-n-drop of items
 
 dhtmlxDataView supports drag-n-drop of items between dataviews in several modes. To begin with, you should specify the [](dataview/api/dataview_dragmode_config.md) property in the configuration object of DataView.
 Then define which mode you need:
@@ -94,9 +94,7 @@ var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: 
 
 **Related sample**: [Dataview. Drag'n'drop Сopy](https://snippet.dhtmlx.com/h89c3gl3)
 
-
-Editing items
-----------------
+## Editing items
 
 ![](../assets/dataview/editable.png)
 
@@ -108,8 +106,7 @@ You can enable the possibility to edit DataView items with the help of the [](da
 var dataview = new dhx.DataView("dataview_container", {editable:true});
 ~~~
 
-Height of an item
-----------------
+## Height of an item
 
 ![](../assets/dataview/item_height.png)
 
@@ -135,8 +132,7 @@ var dataview = new dhx.DataView("dataview", {
 
 {{note The usage of the *CSS calc() function* within the [](dataview/api/dataview_itemheight_config.md) property is not possible.}}
 
-Height of the Dataview
----------------
+## Height of the Dataview
 
 ![](../assets/dataview/dataview_height.png)
 
@@ -156,8 +152,7 @@ var dataview = new dhx.DataView("dataview", {height: "400px"});
 
 {{note The usage of the *CSS calc() function* within the [](dataview/api/dataview_height_config.md) property is not possible.}}
 
-Margins around DataView items
------------------------
+## Margins around DataView items
 
 ![](../assets/dataview/gap.png)
 
@@ -170,8 +165,7 @@ to define the desired margin:
 var dataview = new dhx.DataView("dataview", {itemsInRow: 4, gap: 20});
 ~~~
 
-Multiple selection of items
----------------------------
+## Multiple selection of items
 
 ![](../assets/dataview/multiselection.png)
 
@@ -192,9 +186,7 @@ var dataview = new dhx.DataView("dataview", {
 
 **Related sample**: [Dataview. Multiselection Dataview](https://snippet.dhtmlx.com/g0xwdx10)
 
-
-Number of items in a row
------------------------
+## Number of items in a row
 
 ![](../assets/dataview/items_in_row.png)
 
@@ -206,8 +198,7 @@ You can define the number of items that should be displayed in a row of DataView
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 ~~~
 
-Selection of items
----------------------
+## Selection of items
 
 ![](../assets/dataview/disable_selection.png)
 
@@ -221,8 +212,7 @@ var dataview = new dhx.DataView("dataview", {
 });
 ~~~
 
-Template for DataView items
--------------------
+## Template for DataView items
 
 ![](../assets/dataview/template.png)
 
@@ -246,8 +236,7 @@ var dataview = new dhx.DataView("dataview", {
 });
 ~~~
 
-Event handlers for the template
--------------------------------
+## Event handlers for the template
 
 Starting from v7.0, it is possible to assign event handlers to the HTML elements of a custom template of DataView items by using the [](dataview/api/dataview_eventhandlers_config.md) configuration option:
 

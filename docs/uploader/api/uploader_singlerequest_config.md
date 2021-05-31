@@ -1,10 +1,9 @@
 ---
 sidebar_label: singleRequest
 title: JavaScript Uploader - singleRequest Config 
-hide_title: true
 description: You can explore the singleRequest config of Uploader in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
- 
+
 # singleRequest
 
 @short: defines whether files are sent in one request

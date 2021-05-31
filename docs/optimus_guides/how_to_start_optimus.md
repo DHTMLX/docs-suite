@@ -1,7 +1,10 @@
 ---
 sidebar_label: How to start with Optimus
-title: How to start with Optimus
----  
+title: How to Start with Optimus 
+description: You can explore how to start with Optimus in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# How to start with Optimus
 
 This guide gives you step-by-step instructions on how to create a simple application with lightweight JavaScript UI Framework.
 
