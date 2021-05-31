@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: Chart API overview
+title: JavaScript Chart - API Overview 
+description: You can explore the API of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Chart API overview
 
 ## Methods
 

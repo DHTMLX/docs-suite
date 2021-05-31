@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Colorpicker - Initialization 
+description: You can explore the initialization of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 There are two ways of initializing dhtmlxColorPicker: inside a container or inside a popup. Both ways are described below in detail.
 
@@ -9,10 +12,9 @@ In general, to create dhtmlxColorPicker on a page, you need to take the followin
 
 - [Download the dhtmlxColorPicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Initialize ColorPicker](#initialize-colorpicker) with the object constructor    
+- [Initialize ColorPicker](#initialize-colorpicker) with the object constructor
 - [Set initially selected color (optional)](#select-initial-color-optional)
-    
-   
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -35,8 +37,7 @@ In general, to create dhtmlxColorPicker on a page, you need to take the followin
 
 **Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
   
-Include source files 
------------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -48,9 +49,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Initialize ColorPicker
-----------------------
+## Initialize ColorPicker
 
 You can initialize ColorpIcker in a container or in a popup.
 
@@ -75,7 +74,6 @@ var colorpicker = new dhx.ColorPicker("colorpicker_container",{
 
 **Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
-
 ### Initialization in a popup
 
 This variant presupposes that you create a popup first and then attach a colorpicker into it. 
@@ -95,8 +93,6 @@ popup.attach(colorpicker);
 
 - use the [](../popup/api/popup_show_method.md) and [hide](../popup/api/popup_hide_method) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
 
-
-
 ~~~js
 popup.show("showButton");
 
@@ -113,8 +109,7 @@ colorpicker.events.on("colorChange", function (color) {
 
 The detailed information on ColorPicker configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
 
-Select initial color (optional)
-----------------
+## Select initial color (optional)
 
 You can specify the color that should be selected in the palette after ColorPicker initialization with the help of the [](colorpicker/api/colorpicker_setvalue_method.md) method:
 

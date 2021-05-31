@@ -1,13 +1,15 @@
 ---
 sidebar_label: Overview
-title: ColorPicker overview
-description: dhtmlxColorPicker is a graphical tool that allows either selecting colors from a palette of colors or picking a color using a color spectrum. It is possible to change the default colors and specify your own palette.  
----          
+title: JavaScript Colorpicker - ColorPicker Overview 
+description: You can have an overview of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# ColorPicker overview
 
 dhtmlxColorPicker is a smart component for selecting colors that can be used both as an inline control and as a popup dialog box. 
 It possesses easy-to-configure interface that can be simply localized and customized depending on the need of the project and complete API for handy control over the behavior of the component. 
 
-Check [online samples for dhtmlxColorPicker](https://docs.dhtmlx.com/suite/samples/colorpicker/). 
+Check [online samples for dhtmlxColorPicker](https://docs.dhtmlx.com/suite/samples/colorpicker/).
 
 ![DHTMLX Colorpicker](../assets/colorpicker/colorpicker_front.png)
 
@@ -17,7 +19,7 @@ Check [online samples for dhtmlxColorPicker](https://docs.dhtmlx.com/suite/sampl
 
 ## Related resources
 
-- You can get dhtmlxColorPicker as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- You can get dhtmlxColorPicker as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxColorPicker](https://docs.dhtmlx.com/suite/samples/colorpicker/)  
 
 ## Guides
@@ -30,7 +32,6 @@ Covers the processes of creating, configuring, localizing, customizing ColorPick
 - [](manipulating_colorpicker.md)
 - [](customization.md)
 - [](handling_events.md)
-
 
 ## Other
 
