@@ -1,7 +1,10 @@
 ---
 sidebar_label: Layout Structure
-title: Layout Structure
----          
+title: JavaScript Layout - Layout Structure 
+description: You can explore the structure of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Layout Structure
 
 You can use dhtmlxLayout to build the necessary composition of blocks to arrange parts of your application. There are three common types of layout:
 
@@ -19,7 +22,6 @@ var layout = new dhx.Layout("layout_container", {
     ]                                        
 });
 ~~~
-
 
 - vertical layout
 
@@ -66,6 +68,3 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 ~~~
-
-
-

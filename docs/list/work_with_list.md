@@ -1,11 +1,12 @@
 ---
 sidebar_label: Work with List
-title: Work with List
+title: JavaScript List - Work with List
+description: You can explore how to work with List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
----          
+# Work with List
 
-Setting focus on item
---------------------------
+## Setting focus on item
 
 To set focus on a List item, make use of the [](list/api/list_setfocus_method.md) method. It takes the id of an item as a parameter:
 
@@ -21,8 +22,7 @@ To get the id of a List item in focus, use the [](list/api/list_getfocus_method.
 list.getFocus(); // -> "6"
 ~~~
 
-Editing items
--------------
+## Editing items
 
 You can edit a particular List item with the help of the [](list/api/list_edititem_method.md) method. It takes as a parameter the id of an item:
 
@@ -32,14 +32,11 @@ list.editItem("1");
 
 **Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
 
-Disabling and enabling selection of an item
-----------------------------------
+## Disabling and enabling selection of an item
 
 For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](list/usage_selection.md#enablingdisabling-selection-object).
 
-
-Using Data Collection API
-------------------------
+## Using Data Collection API
 
 You can manipulate List items with the help of the [Data collection API](data_collection/index.md). 
 
@@ -135,8 +132,6 @@ list.data.sort({
 
 Sorting can be applied to any attribute of a data item.
 
-Using Selection API
--------------
+## Using Selection API
 
 For information on using Selection API, read [Work with Selection Object](list/usage_selection.md).
-

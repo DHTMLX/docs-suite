@@ -1,11 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Layout - Customization 
+description: You can explore the customization of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling Layout cells
-----------------
+# Customization
 
+## Styling Layout cells
 
 There is a possibility to make changes in the look and feel of a layout by styling its cells. 
 
@@ -39,7 +40,6 @@ var layout = new dhx.Layout("layout_container",{
     ]    
 });
 ~~~
-
 
 For example:
 
