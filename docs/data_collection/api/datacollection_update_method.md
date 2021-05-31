@@ -9,11 +9,11 @@ description: You can explore the update method of DataCollection in the document
 
 @short: updates properties of the item
 
-@signature: {'updateUrl?: (url?: string, params?: any) => void;'}
+@signature: {'updateUrl?: (id: string | number, newItem: IUpdateObject) => void;'}
 
 @params:
 - `id: string | number` - the id of the item which needs to be updated
-- `config: object` - a hash of properties which need to be updated
+- `newItem: object` - a hash of properties which need to be updated
 
 @example:
 component.data.update(123, { text:"New text" });

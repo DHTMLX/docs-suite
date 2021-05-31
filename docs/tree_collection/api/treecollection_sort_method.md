@@ -9,7 +9,7 @@ description: You can explore the sort method of TreeCollection in the documentat
 
 @short: sorts controls according to some criteria
 
-@signature: {'sort(by: ISortMode): void;'}
+@signature: {'sort(rule?: ISortMode): void;'}
 
 @params:
 `rule: object` - an object with parameters for sorting

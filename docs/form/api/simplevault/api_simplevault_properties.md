@@ -22,8 +22,8 @@ title: Simple Vault properties
             <td>(<i>array</i>) sets the default list of loaded files. Each file object can contain the following properties:
                 <ul>
                     <li><b>id</b> - (<i>string</i>) mandatory, the id of the file</li>
-                    <li><b>status</b> - (<i>string</i>) optional, the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
-                    <li><b>progress</b> - (<i>number</i>) optional, the progress of the file upload</li>
+                    <li><b>status</b> - (<i>string</i>) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
+                    <li><b>progress</b> - (<i>number</i>) the progress of the file upload</li>
                     <li><b>link</b> - (<i>string</i>) optional, the path to the uploaded file on a server. In order to download files from SimpleVault to the computer, file objects must have the link attribute specified with the path to their location on the server.</li>
                     <li><b>request</b> - (<i>object</i>) optional, an XMLHttpRequest object sent to server when an upload begins</li>
                     <li><b>path</b> - (<i>string</i>) optional, the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li>

@@ -13,13 +13,13 @@ description: You can explore the save method of DataCollection in the documentat
 
 @params:
 
-`url: string | DataDriver` - the URL of a server side or DataDriver with the URL configured
+`url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
 
 @example:
 diagram.data.save("http://userurl/");
 
 //or
-diagram.data.save(new DataDriver({url:"http://userurl/"}));
+diagram.data.save(new DataProxy({url:"http://userurl/"}));
 
 @descr:
 

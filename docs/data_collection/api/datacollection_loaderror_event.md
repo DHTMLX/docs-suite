@@ -9,7 +9,7 @@ description: You can explore the loadError event of DataCollection in the docume
 
 @short: fires when loading of data fails
 
-@signature: {'loadError: (response: any) => boolean | void;'}
+@signature: {'loadError: (response: any) => void;'}
 
 @params:
 `response: string | object` - info about the error
