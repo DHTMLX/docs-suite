@@ -1,10 +1,12 @@
 ---
 sidebar_label: Work with Window
-title: Work with Window
----          
+title: JavaScript Window - Work with Window 
+description: You can explore how to work with Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Attaching content
---------------------
+# Work with Window
+
+## Attaching content
 
 You can easily attach some HTML content to a window via the [](window/api/window_attachhtml_method.md) method. It takes as a parameter a string with HTML.
 
@@ -17,8 +19,7 @@ dhxWindow.show();
 
 **Related sample**: [Window. Attach HTML To Window](https://snippet.dhtmlx.com/6uelt44m)
 
-Attaching DHTMLX components
-------------------
+## Attaching DHTMLX components
 
 dhtmlxWindow allows attaching other DHTMLX components inside it.
 
@@ -29,17 +30,15 @@ dhxWindow.show();
 
 **Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
-Repainting window
-------------------
- 
+## Repainting window
+
 In case you've changed some configuration settings of a window, you can repaint it on a page via the [](window/api/window_paint_method.md) method:
 
 ~~~js
 dhxWindow.paint();
 ~~~
 
-Fullscreen mode
------------------
+## Fullscreen mode
 
 dhtmlxWindow can be displayed in the full screen mode. To activate the full screen mode, make use of the [](window/api/window_setfullscreen_method.md) method:
 
@@ -62,14 +61,13 @@ dhxWindow.setFullScreen();
 dhxWindow.isFullScreen(); // -> true
 ~~~
 
-Showing/hiding window
---------------------
+## Showing/hiding window
 
 You can hide a particular window or show it in a particular position on a page with the help of the [](window/api/window_hide_method.md) and [](window/api/window_show_method.md) methods. The [](window/api/window_show_method.md) method takes two optional parameters:
- 
+
 - [left](window/api/window_show_method.md) - (*number*) the left margin of a window
 - [top](window/api/window_show_method.md) - (*number*) the top margin of a window
- 
+
 If called without parameters, the method shows a window in the default position on a page.
 
 ~~~js
@@ -82,8 +80,7 @@ dhxWindow.hide();
 
 **Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
-Sizing window
--------------
+## Sizing window
 
 You can change the size of a window via the [](window/api/window_setsize_method.md) method. It takes two parameters:
 
@@ -99,10 +96,10 @@ To get the current size of a window, use the [](window/api/window_getsize_method
 ~~~js
 var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 ~~~
+
 **Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
 
-Positioning window
--------------------
+## Positioning window
 
 To set the position of a window on the fly, make use of the [](window/api/window_setposition_method.md) method. You should pass two parameters to the method:
 
@@ -122,8 +119,7 @@ var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 
 **Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
 
-Checking visibility of window
-------------------------------
+## Checking visibility of window
 
 You can check whether a window is hidden or shown on a page using the [](window/api/window_isvisible_method.md) method of the Window API. The method returns *true*, if a window is visible, and *false* if it's hidden.
 
@@ -132,5 +128,3 @@ var visible = window.isVisible(); // -> true/false
 ~~~
 
 **Related sample**: [Window. Get Window Visible Status](https://snippet.dhtmlx.com/woz5c09h)
-
-
