@@ -1,7 +1,10 @@
 ---
 sidebar_label: SelectButton
-title: SelectButton
----          
+title: JavaScript Ribbon - SelectButton 
+description: You can explore the SelectButton of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# SelectButton
 
 This is a button that contains a drop-down list of options.
 

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Ribbon - Event Handling 
+description: You can explore the event handling of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 To handle events of Ribbon and its TreeCollection, use the methods of the **events** module.
 
@@ -37,7 +40,7 @@ The names of the events are case-insensitive.
 
 **Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
-## Detaching event handlers 
+## Detaching event handlers
 
 There is a simple way of removing an event-handler. Call the **ribbon.events.detach()** method:
 
@@ -57,6 +60,6 @@ You do not need to call events of Ribbon and its TreeCollection. Yet, you can ca
 ribbon.events.fire(evName,[parameters]);
 ~~~
 
-## List of supported events 
+## List of supported events
 
 You can find the full list of Ribbon events in the [related API section](ribbon/api/api_overview.md#ribbon-events).

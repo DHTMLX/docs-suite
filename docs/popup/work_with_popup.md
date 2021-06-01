@@ -1,12 +1,12 @@
 ---
 sidebar_label: Work with Popup
-title: Work with Popup
----          
+title: JavaScript Popup - Work with Popup 
+description: You can explore how to work with Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+#  Work with Popup
 
-
-Hiding/showing Popup
--------------
+## Hiding/showing Popup
 
 You can hide and show a popup using the [hide()](popup/api/popup_hide_method.md) and [show()](popup/api/popup_show_method.md) methods. The **show()** method takes the following parameters:
 
@@ -30,7 +30,7 @@ You can hide and show a popup using the [hide()](popup/api/popup_hide_method.md)
 </table> 
 
 This method should be called each time you need to render a popup on a page.
-    
+
 ~~~js
 popup.show("popup_container");
 ~~~
@@ -43,8 +43,7 @@ popup.hide();
 
 **Related sample**: [Popup. Show/Hide](https://snippet.dhtmlx.com/aqzy536h)
 
-Checking visibility of Popup
---------------
+## Checking visibility of Popup
 
 You can easily check whether a popup is visible with the help of the [isVisible()](popup/api/popup_isvisible_method.md) method. It returns *true*, if a popup is visible.
 
@@ -54,8 +53,7 @@ popup.isVisible(); // -> true/false
 
 **Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
-Attaching content
-------------
+## Attaching content
 
 You can easily attach some HTML content to a popup via the [attachHTML()](popup/api/popup_attachhtml_method.md) method. It takes as a parameter a string with HTML.
 
@@ -67,8 +65,7 @@ popup.show("popup");
 
 **Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
 
-Attaching DHTMLX components
---------------
+## Attaching DHTMLX components
 
 dhtmlxPopup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
 
@@ -93,4 +90,3 @@ popup.show();
 ~~~
 
 **Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
-

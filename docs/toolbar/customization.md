@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Toolbar - Customization 
+description: You can explore the customization of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Icons
-------------
+# Customization
+
+## Icons
 
 dhtmlxToolbar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Toolbar controls.
@@ -38,8 +40,7 @@ var toolbarData = [
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
 
-Styling 
------------
+## Styling 
 
 There is a possibility to make changes in the look and feel of a toolbar. 
 
@@ -92,8 +93,3 @@ var toolbar = new dhx.Toolbar("toolbar", {
 	css: "custom-class"
 });
 ~~~
-
-
-
-
-

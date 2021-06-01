@@ -1,7 +1,10 @@
 ---
 sidebar_label: SelectButton
-title: SelectButton
----          
+title: JavaScript Toolbar - SelectButton 
+description: You can explore the SelectButton of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# SelectButton
 
 This is a button that contains a drop-down list of options.
 
@@ -49,6 +52,6 @@ toolbar.data.add(
 
 The configuration object of the SelectButton control can have [the following properties](toolbar/api/api_selectbutton_properties.md).
 
-##  Operations with a button
+## Operations with a button
 
 You can perform operations over the SelectButton control with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Message - Customization 
+description: You can explore the customization of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Customization
 
 There is a possibility to make changes in the look and feel of a message box or a tooltip. You can either create a new CSS class or use a CSS class that DHTMLX library provides.
 

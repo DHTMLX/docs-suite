@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Ribbon - Customization 
+description: You can explore the customization of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Icons
-------------
+# Customization
+
+## Icons
 
 dhtmlxRibbon uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Ribbon controls.
@@ -64,13 +66,11 @@ var data = [
 
 {{note You can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) in the same way.}}
 
-Styling 
------------
+## Styling 
 
 There is a possibility to make changes in the look and feel of a ribbon. 
 
 ![](../assets/ribbon/custom_style.png)
-
 
 **Related sample**: [Ribbon. Custom Css](https://snippet.dhtmlx.com/9ckg47ro)
 
@@ -97,8 +97,3 @@ var ribbon = new dhx.Ribbon({
     css:"my_first_class my_second_class"
 });
 ~~~
-
-
-
-
-

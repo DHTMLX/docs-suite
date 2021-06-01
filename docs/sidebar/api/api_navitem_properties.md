@@ -1,7 +1,10 @@
 ---
 sidebar_label: NavItem properties
-title: Sidebar NavItem properties
+title: JavaScript Sidebar - Sidebar NavItem Properties 
+description: You can explore the Sidebar NavItem properties of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Sidebar NavItem properties
 
 <table>
 	<tbody>

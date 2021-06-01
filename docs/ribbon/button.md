@@ -1,7 +1,10 @@
 ---
 sidebar_label: Button
-title: Button
----          
+title: JavaScript Ribbon - Button 
+description: You can explore the Button of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Button
 
 This is a simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
 
@@ -47,7 +50,7 @@ You can add a custom element to a button with the help of the **html** property:
 
 **Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
 
-## Showing/hiding Button 
+## Showing/hiding Button
 
 To hide/show a button, you should pass the ID of the button to the **hide()/show()** methods:
 
@@ -56,7 +59,7 @@ ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Enabling/disabling Button 
+## Enabling/disabling Button
 
 Any button in the ribbon can be enabled/disabled:
 

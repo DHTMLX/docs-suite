@@ -1,11 +1,12 @@
 ---
 sidebar_label: Work with Toolbar
-title: Work with Toolbar
----          
+title: JavaScript Toolbar - Work with Toolbar 
+description: You can explore how to work with Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with Toolbar
 
-Setting/getting values and states
-------------------
+## Setting/getting values and states
 
 ### Setting values/states
 
@@ -59,8 +60,7 @@ toolbar.getState(); // -> {"name":"Maintenance"}
 
 **Related sample**: [Toolbar. Get State](https://snippet.dhtmlx.com/kvttdgad)
 
-Hiding and showing controls
------------------
+## Hiding and showing controls
 
 You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](toolbar/api/toolbar_show_method.md) and [hide()](toolbar/api/toolbar_hide_method.md):
 
@@ -80,8 +80,7 @@ toolbar.hide();
 toolbar.show();
 ~~~
 
-Disabling and enabling controls
----------------------
+## Disabling and enabling controls
 
 You can disable or enable controls. The related methods - [enable()](toolbar/api/toolbar_enable_method.md) and [disable()](toolbar/api/toolbar_disable_method.md) - take the IDs of controls as parameters:
 
@@ -101,8 +100,7 @@ toolbar.disable();
 toolbar.enable();
 ~~~
 
-Checking if a Toolbar item is disabled
-----------------------------------------
+## Checking if a Toolbar item is disabled
 
 To check if an item of Toolbar is disabled, call the [isDisabled()](toolbar/api/toolbar_isdisabled_method.md) method. The method takes one parameter:
 
@@ -122,8 +120,7 @@ menu.isDisabled("1"); // -> true/false
 
 **Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
-Adding a tooltip to a control
---------------------
+## Adding a tooltip to a control
 
 You can attach a tooltip to a control. For this you need to provide the **tooltip** property with the tooltip text in the control object before the toolbar initialization:
 
@@ -135,8 +132,7 @@ You can attach a tooltip to a control. For this you need to provide the **toolti
 }
 ~~~
 
-Selecting/Unselecting an item
------------------------------------------
+## Selecting/Unselecting an item
 
 ### Selecting a toolbar item
 
@@ -179,8 +175,7 @@ toolbar.unselect();
 
 **Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
 
-Checking if a toolbar item is selected
--------------------------------------
+## Checking if a toolbar item is selected
 
 To check if an item of Toolbar is selected, call the [isSelected()](toolbar/api/toolbar_isselected_method.md) method. The method takes one parameter:
 
@@ -200,8 +195,7 @@ toolbar.isSelected("web"); // -> returns true/false
 
 **Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
 
-Getting selected items
----------------------------
+## Getting selected items
 
 To get the selected items, call the [getSelected()](toolbar/api/toolbar_getselected_method.md) method. The method returns an array of IDs of selected items:
 
@@ -211,11 +205,9 @@ toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 **Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
-Using Tree collection API
----------------
+## Using Tree collection API
 
 You can manipulate the controls of Toolbar with the help of the [Tree collection API](tree_collection/index.md). 
-
 
 ### Adding new controls into Toolbar
 

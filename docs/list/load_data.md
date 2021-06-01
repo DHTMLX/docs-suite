@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript List - Data Loading 
+description: You can explore the data loading of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are several ways of loading List items:
 
@@ -10,8 +13,7 @@ There are several ways of loading List items:
 
 First, you need to prepare a data set that will be loaded into List.
 
-Preparing data set
--------------------
+## Preparing data set
 
 dhtmlxList expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -27,9 +29,7 @@ var dataset = [
 Each object in the data set contains a number of *key:value* pairs that represent attributes of List items. 
 You can specify your own template of rendering List items with the help of the [template](list/api/list_template_config.md) configuration option.
 
-
-External data loading
---------------------
+## External data loading
 
 To load data from an external file, make use of the **load** method of Data Collection. It takes the URL of the file with data as a parameter:
 
@@ -48,11 +48,9 @@ list.data.load("/some/data").then(function(){
 });
 ~~~
 
-
 **Related sample**: [List. Load Data](https://snippet.dhtmlx.com/1it5kfhq)
 
-Loading from local source
-------------------
+## Loading from local source
 
 To load data from a local data source, use the **parse** method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -63,8 +61,8 @@ list.data.parse(dataset);
 
 **Related sample**: [List. Parse Data](https://snippet.dhtmlx.com/0xmyywi1)
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
+
 
 To save the current state of a list, use the **serialize** method of Data Collection. It converts the data of a list into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs that represent attributes of List items.
@@ -82,9 +80,7 @@ var list2 = new dhx.List(document.body);
 list2.data.parse(state);
 ~~~
 
-
-Dynamic loading 
-------------------
+## Dynamic loading
 
 {{pronote This functionality requires PRO version of the DHTMLX suite package.}}
 
@@ -103,7 +99,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 });
 ~~~
 
--  load data into List via the **load** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
+- load data into List via the **load** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
 ~~~js
 var list = new dhx.list("list_container", {

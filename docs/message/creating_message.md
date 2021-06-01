@@ -1,14 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Message - Initialization 
+description: You can explore the initialization of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add a message on a page, you should take the following simple steps:
 
-- [Include source files](#include-source-files)
-- [Create a container](#create-a-container)
-- [Create necessary message box](#create-necessary-message-box)
-  - [Configuration properties](#configuration-properties)
+- [Initialization](#initialization)
+  - [Include source files](#include-source-files)
+  - [Create a container](#create-a-container)
+  - [Create necessary message box](#create-necessary-message-box)
+    - [Configuration properties](#configuration-properties)
 
 ~~~html
 <!DOCTYPE html>

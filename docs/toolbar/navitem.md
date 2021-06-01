@@ -1,7 +1,10 @@
 ---
 sidebar_label: NavItem
-title: NavItem
----          
+title: JavaScript Toolbar - NavItem 
+description: You can explore the NavItem of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# NavItem
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
@@ -70,7 +73,7 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-## Enabling/disabling a navItem 
+## Enabling/disabling a navItem
 
 You can also enable and disable any navItem with the [enable()](toolbar/api/toolbar_enable_method.md)/[disable()](toolbar/api/toolbar_disable_method.md) methods of Toolbar:
 

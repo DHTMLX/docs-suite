@@ -1,7 +1,10 @@
 ---
 sidebar_label: Overview
-title: Pagination overview
----          
+title: JavaScript Pagination - Pagination Overview 
+description: You can have an overview of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Pagination overview
 
 {{pronote
 The Pagination component is available in the **PRO** version only.
@@ -12,14 +15,13 @@ The component is easy-to-use and provides handy navigation that allows you to qu
 
 ![](../assets/pagination/init.png)
 
-
 ## API Reference
 
 - [](pagination/api/api_overview.md)
 
 ## Related resources
 
-- You can get dhtmlxPagination as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- You can get dhtmlxPagination as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxPagination](https://docs.dhtmlx.com/suite/samples/pagination/)  
 
 ## Guides

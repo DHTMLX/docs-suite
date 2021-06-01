@@ -1,8 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
-description: description
----          
+title: JavaScript Layout - Event Handling 
+description: You can explore the event handling of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -56,6 +58,6 @@ layout.events.fire("BeforeHide",args);
 // where args is an array of arguments
 ~~~
 
-## List of supported events 
+## List of supported events
 
 You can find the full list of Layout events in the [API Reference](layout/api/api_overview.md#layout-events).

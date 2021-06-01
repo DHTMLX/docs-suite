@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript List - Customization 
+description: You can explore the customization of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling 
-----------------
+# Customization
+
+## Styling
 
 ![](../assets/list/custom_style.png)
 
@@ -34,10 +36,9 @@ var list = new dhx.List({
 
 **Related sample**: [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
 
-Styling items
-----------------
+## Styling items
 
-You can style particular cells in the list. 
+You can style particular cells in the list.
 
 ![](../assets/list/custom_css.png)
 
@@ -62,8 +63,7 @@ list.data.map(function (item, i) {
 
 **Related sample**: [List. Custom item Styles](https://snippet.dhtmlx.com/ipu9yshl)
 
-Adding custom selection
-----------------------
+## Adding custom selection
 
 It is also possible to customize selection of an item.
 
@@ -92,7 +92,3 @@ list.data.map(function (item, i) {
 	list.data.update(item.id, {css: "custom-class"})
 });
 ~~~
-
-
-
-
