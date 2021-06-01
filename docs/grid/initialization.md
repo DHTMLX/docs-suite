@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Grid - Initialization 
+description: You can explore the initialization of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 
@@ -40,8 +43,7 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 
 **Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of dhtmlxGrid into the header of the created file. The Grid component can be used standalone or as a part of the Suite library.
 
@@ -65,8 +67,7 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxGrid into 
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
 
-Create a container 
------------------
+## Create a container
 
 Add a container for Grid and give it an id, for example "grid_container":
 
@@ -74,8 +75,7 @@ Add a container for Grid and give it an id, for example "grid_container":
 <div id="grid_container"></div>
 ~~~
 
-Initialize Grid
-----------------------
+## Initialize Grid
 
 Initialize Grid with the `dhx.Grid` object constructor. The constructor has two parameters:
 
@@ -98,15 +98,13 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
 
- 
 ### Configuration properties
 
 There is a set of properties you can specify for Grid to optimize its configuration for your needs.
 
 See the full list of properties that you can specify in the Grid configuration object (the second parameter of the constructor function) in the [Grid API overview](grid/api/api_overview.md#grid-properties) article.
 
-Load data into Grid
-------------------
+## Load data into Grid
 
 There are several handy ways of loading data into Grid. You can add data both before and after initialization of the component.
 
