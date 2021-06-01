@@ -1,7 +1,10 @@
 ---
 sidebar_label: Slider
-title: Slider
----          
+title: JavaScript Form - Slider 
+description: You can explore the Slider of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Slider
 
 A control that allows selecting a numeric value by moving a thumb along a line with a fixed set of options.
 

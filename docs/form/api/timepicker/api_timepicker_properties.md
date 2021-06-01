@@ -1,7 +1,10 @@
 ---
 sidebar_label: Properties
-title: Timepicker properties
+title: JavaScript Form - Timepicker Properties 
+description: You can explore the Timepicker Properties of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Timepicker properties
 
 - `type` - (string) the type of a control, set it to "timepicker"
 - `id` - (string) the id of a control, auto-generated if not set

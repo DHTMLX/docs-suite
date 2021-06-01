@@ -1,11 +1,12 @@
 ---
 sidebar_label: Configuration
-title: Configuration
-description: description
----          
+title: JavaScript Form - Configuration 
+description: You can explore the configuration of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Alignment
-------------
+# Configuration
+
+## Alignment
 
 The [](form/api/form_align_config.md) property allows you to set aligning direction for all controls in Form. 
 
@@ -49,9 +50,7 @@ var form = new dhx.Form("form", {
 
 **Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
-
-Grouping Controls in Form
--------------------------
+## Grouping Controls in Form
 
 ![](../assets/form/blocks.png)
 
@@ -89,13 +88,11 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-Making Form disabled
----------------
+## Making Form disabled
 
 ![](../assets/form/disabled.png)
 
 **Related sample**: [Form. Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
-
 
 By default, Form is enabled. To make Form disabled, set the [](form/api/form_disabled_config.md) configuration property to *true*:
 
@@ -106,8 +103,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-Making Form hidden
----------------
+## Making Form hidden
 
 By default, Form is visible. To make Form hidden, set the [](form/api/form_hidden_config.md) configuration property to *true*:
 
@@ -118,8 +114,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-Padding
----------------
+## Padding
 
 To generate space around a [control group](form/configuration.md#grouping-controls-in-form), make use of the [](form/api/form_padding_config.md) parameter:
 
@@ -152,8 +147,7 @@ var form = new dhx.Form("form", {
 });
 ~~~
 
-Title
-----------
+## Title
 
 You can define a title for a [control group](form/configuration.md#grouping-controls-in-form) with the help of the [](form/api/form_title_config.md) property:
 
@@ -184,8 +178,7 @@ var form = new dhx.Form("form", {
 });
 ~~~
 
-Width/Height
----------------
+## Width/Height
 
 You can adjust sizes of a [control group](form/configuration.md#grouping-controls-in-form) with the corresponding properties [](form/api/form_height_config.md) and [](form/api/form_width_config.md):
 
@@ -223,8 +216,3 @@ var form = new dhx.Form("form", {
     ]
 });
 ~~~
-
-
-
-
-

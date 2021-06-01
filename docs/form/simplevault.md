@@ -1,7 +1,10 @@
 ---
 sidebar_label: SimpleVault
-title: SimpleVault
----          
+title: JavaScript Form - Simple Vault 
+description: You can explore the Simple Vault of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# SimpleVault
 
 A handy control for quick and easy uploading of a file or a set of files.
 
@@ -11,7 +14,7 @@ A handy control for quick and easy uploading of a file or a set of files.
 
 **Related sample**: [Form. Simple Vault](https://snippet.dhtmlx.com/ofy4k51o)
 
-## Adding SimpleVault 
+## Adding SimpleVault
 
 You can easily add a SimpleVault control during initialization of a form:
 
@@ -52,7 +55,6 @@ Check [the full list of methods of the SimpleVault control](form/api/api_overvie
 ### Events
 
 Check [the full list of events of the SimpleVault control](form/api/api_overview.md#simple-vault-events).
-
 
 ## Using DataCollection API
 
