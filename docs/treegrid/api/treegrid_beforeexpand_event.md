@@ -14,7 +14,7 @@ description: You can explore the beforeExpand event of TreeGrid in the documenta
 `rowId: string | number` - the id of an expanded row
 
 @returns:
-Return `false` to block expanding a treegrid; otherwise, `true`.
+Return `false` to block expanding of a treegrid; otherwise, `true`.
 
 @example:
 treeGrid.events.on("BeforeExpand", function(rowId) {

@@ -8,11 +8,11 @@ description: You can explore the removeCellCss method of TreeGrid in the documen
 
 @short: removes a style from a cell
 
-@signature: {'removeCellCss(row: string, col: string, css: string): void;'}
+@signature: {'removeCellCss(row: string | number, col: string | number, css: string): void;'}
 
 @params:
-- `row: string` - the id of a row
-- `col: string` - the id of a column
+- `row: string | number` - the id of a row
+- `col: string | number` - the id of a column
 - `css: string` - the name of the CSS class
 
 @example:

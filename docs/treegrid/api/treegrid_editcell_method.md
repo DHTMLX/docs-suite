@@ -24,6 +24,6 @@ grid.editCell(grid.data.getId(0),"project");
 
 @changelog:
 - added in v6.4
-- the "textarea" type of the editor is added in v7.1
+- The "textarea" type of the editor is added in v7.1
 
 [comment]: # (@related: treegrid/usage.md#editing-data)

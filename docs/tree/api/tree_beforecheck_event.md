@@ -15,7 +15,7 @@ description: You can explore the beforeCheck event of Tree in the documentation 
 - `id: string` - the id of the item
 
 @returns:
-Return `false` to block changing the state of a tree item; otherwise, `true`.
+Return `false` to block changing of the state of a tree item; otherwise, `true`.
 
 @example:
 tree.events.on("beforeCheck", function (index, id) {

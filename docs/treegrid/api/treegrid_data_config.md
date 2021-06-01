@@ -72,10 +72,10 @@ var dataset = [
         "country": "China",
         "date": new Date() /*!*/
     },
-	  {
+	{
         "country": "India",
         "date": new Date(2010, 02, 10) /*!*/
-	  }
+	}
 ];
 ~~~
 

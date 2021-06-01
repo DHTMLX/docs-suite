@@ -14,26 +14,26 @@ description: You can explore the eventHandlers config of TreeGrid in the documen
 
 // adds event handler to the HTML element of the template of a cell
 const treeGrid = new dhx.TreeGrid("treegrid", {
-		columns: [
-			{ width: 280, id: "name", header: [{ text: "Book Name" }] },
-			{
-					width: 160, id: "price", type: "string", 
-          header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
-					htmlEnable: true,
-					template: function (text, row, col) { /*!*/
-							return text ? "<div class='cell__template'>$ " + text + "</div>" : ""; /*!*/
-					} /*!*/
-			},
+	columns: [
+		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
+		{
+			width: 160, id: "price", type: "string", 
+          	header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
+			htmlEnable: true,
+			template: function (text, row, col) { /*!*/
+				return text ? "<div class='cell__template'>$ " + text + "</div>" : ""; /*!*/
+			} /*!*/
+		},
 		// more options
 	],
-		data: data,
-		eventHandlers: { /*!*/
-				onmouseover: { /*!*/
-						cell__template: function(event, data) { /*!*/
-								display(JSON.stringify(data.row, null, 2)); /*!*/
-						} /*!*/
-				} /*!*/
+	data: data,
+	eventHandlers: { /*!*/
+		onmouseover: { /*!*/
+			cell__template: function(event, data) { /*!*/
+				display(JSON.stringify(data.row, null, 2)); /*!*/
+			} /*!*/
 		} /*!*/
+	} /*!*/
 });
 
 @descr:
