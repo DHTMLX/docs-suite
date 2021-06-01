@@ -18,7 +18,7 @@ Open the [Hotel Management System](https://dhtmlx.com/docs/products/demoApps/dht
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
-Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the File Manager demo. Save the file and unpack it into your working directory.
+Follow the link in the email to get a free 30-day trial version. You will receive a .zip file with the hotel management system demo. Save the file and unpack it into your working directory.
 
 You will find more demos on the [DHTMLX JavaScript Demos](https://dhtmlx.com/docs/products/demoApps/) page. To view the desired one, just click on it.
 
