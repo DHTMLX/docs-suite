@@ -6,6 +6,8 @@ description: You can explore the configuration of Timepicker in the documentatio
 
 # Configuration
 
+Some changes
+
 ## Actions buttons
 
 The default TimePicker doesn't have any buttons. However, you can add two buttons that will allow you to close the timepicker after selecting necessary time or save the values selected for hour and minutes.
