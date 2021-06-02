@@ -30,7 +30,7 @@ dhx.ajax.put(url, {id: "1", updated: true}).then(function (data) {
 
 **Related sample**: [Data. Ajax PUT](https://snippet.dhtmlx.com/i4v52yj8)
 
-The **config** object can contain following options:
+The **config** object can contain the following options:
 
 - **responseType** - the type of data that you are expecting back from the server. The available types are:
     - text - returns the plain text as a string

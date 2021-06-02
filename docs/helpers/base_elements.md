@@ -58,11 +58,7 @@ Here's what markup looks like using a form-group example:
 		<!-- 'container' element in the 'input' block-->
 		<div class="dhx_input__container">
 			<!-- Style the input-->
-			<input id="input" 
-					placeholder="I am input" 
-					class="dhx_input" 
-					autocomplete="off"
-			>
+			<input id="input" placeholder="I am input" class="dhx_input" autocomplete="off">
 		</div>
 	</div>
 </div>
@@ -106,8 +102,7 @@ Here is an example how you can specify a markup for a button:
 
 ~~~html
 <!-- Create a link button with red color-->
-<button type="button" 
-		class="dhx_button dhx_button--color_danger dhx_button--view_link">
+<button type="button" class="dhx_button dhx_button--color_danger dhx_button--view_link">
 	<!-- The button has the "plus" icon-->	
 	<span class="dhx_button__icon dxi dxi-plus"></span>
 	<!-- The "Send text" button-->
@@ -147,10 +142,8 @@ You can style a &lt;label&gt; element, as in:
 You can change the appearance of a native browser checkbox by using a markup given below:
 
 ~~~html
-<!-- Create a label for a checkbox 
-	 	and put it and an input in one line inside the form-group-->
-<label class="dhx_form-group dhx_checkbox dhx_form-group--inline" 
-		style="margin-left: calc(116px);">
+<!-- Create a label for a checkbox and put it and an input in one line inside the form-group-->
+<label class="dhx_form-group dhx_checkbox dhx_form-group--inline" style="margin-left: calc(116px);">
 	<!-- Hide a native browser checkbox but save its behavior-->	
 	<input type="checkbox" class="dhx_checkbox__input">
 	<!-- Display the checkbox with its native browser behavior visually-->
@@ -178,10 +171,8 @@ You can change the appearance of a native browser checkbox by using a markup giv
 You can apply a markup to style a radiobutton, like this:
 
 ~~~html
-<!-- Create a label for a radiobutton 
-		and put it and an input in one line inside the form-group-->
-<label class="dhx_form-group dhx_radiobutton dhx_form-group--inline" 
-		style="margin-left: calc(116px);">
+<!-- Create a label for a radiobutton and put it and an input in one line inside the form-group-->
+<label class="dhx_form-group dhx_radiobutton dhx_form-group--inline" style="margin-left: calc(116px);">
 	<!-- Hide a native browser radiobutton but save its behavior-->	
 	<input type="radiobutton" class="dhx_radiobutton__input">
 	<!-- Display the radiobutton with its native browser behavior visually-->
@@ -222,8 +213,7 @@ An example of the input markup is given below:
 <!-- Create a form-group and put an input and its label in one line-->
 <div class="dhx_form-group dhx_form-group--inline">
 	<!-- Create the label for the input and style it-->
-	<label for="input" class="dhx_label" 
-			style="min-width: 100px; max-width: 100px;">I am label</label>
+	<label for="input" class="dhx_label" style="min-width: 100px; max-width: 100px;">I am label</label>
 	<!-- Create a wrapper for the input container inside form-group -->		
 	<div class="dhx_input__wrapper">
 		<!-- Create the container for the input with icon-->
@@ -231,8 +221,7 @@ An example of the input markup is given below:
 			<!-- Put the "dxi-magnify" icon into the container-->
 			<div class="dhx_input__icon dxi dxi-magnify"></div>
 			<!-- Create the input with the padding for the icon-->
-			<input id="input" placeholder="I am input" name="" 
-					class="dhx_input dhx_input--icon-padding" autocomplete="off">
+			<input id="input" placeholder="I am input" name="" class="dhx_input dhx_input--icon-padding" autocomplete="off">
 		</div>
 		<!--Create "Message text" caption -->
 		<span class="dhx_input__caption">Message text</span>
@@ -254,8 +243,7 @@ The markup of select looks like this:
 <!-- Create a form-group and put an input and its label in one line-->
 <div class="dhx_form-group dhx_form-group--inline">
 	<!-- Create the label for the select and style it-->
-	<label for="select_id" class="dhx_label" 
-			style="min-width: 100px; max-width: 100px;">select</label>
+	<label for="select_id" class="dhx_label" style="min-width: 100px; max-width: 100px;">select</label>
 	<!-- Create the wrapper for the input container inside form-group -->			
 	<div class="dhx_input__wrapper">
 		<!-- Create the container for the input with icon-->

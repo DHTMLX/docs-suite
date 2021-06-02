@@ -17,7 +17,7 @@ description: You can explore the beforeRemove event of DataCollection in the doc
 Return `false` to block removing an item from a data collection; otherwise, `true`.
 
 @example:
-data.events.on("BeforeRemove", function(removedItem){
+component.data.events.on("BeforeRemove", function(removedItem){
 	console.log("An item will be removed");
     return true;
 });

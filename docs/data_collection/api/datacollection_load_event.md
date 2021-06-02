@@ -11,7 +11,7 @@ description: You can explore the load event of DataCollection in the documentati
 @signature: {'load: () => void;'}
 
 @example:
-data.events.on("Load", function(){
+component.data.events.on("Load", function(){
 	console.log("Items are loaded.");
 });
 

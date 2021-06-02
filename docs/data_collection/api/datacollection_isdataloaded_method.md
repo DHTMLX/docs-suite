@@ -18,7 +18,7 @@ description: You can explore the isDataLoaded method of DataCollection in the do
 `true`, if a range of data is loaded; otherwise, `false`.
 
 @example:
-data.isDataLoaded();
+component.data.isDataLoaded();
 
 @descr:
 

@@ -11,8 +11,8 @@ description: You can explore the event handling of Window in the documentation o
 You can attach event listeners with the **dhxWindow.events.on()** method:
 
 ~~~js
-dhxWindow.events.on("Move", function(left,top){
-    console.log("The window moved to "+left,top)
+dhxWindow.events.on("Move", function(position, oldPosition, side) {
+    console.log("The window is moved to " + position.left, position.top)
 });
 ~~~
 
@@ -25,8 +25,8 @@ dhxWindow.events.on("Move", function(left,top){
 To detach events, use **dhxWindow.events.detach()**:
 
 ~~~js
-var onmove = dhxWindow.events.on("Move", function(left,top){
-    console.log("The window moved to "+left,top)
+var onmove = dhxWindow.events.on("Move", function(position, oldPosition, side) {
+    console.log("The window is moved to " + position.left, position.top)
 });
 
 dhxWindow.events.detach(onmove);

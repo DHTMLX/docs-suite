@@ -17,7 +17,7 @@ description: You can explore the beforeAdd event of DataCollection in the docume
 Return `false` to prevent an item adding into a data collection; otherwise, `true`.
 
 @example:
-data.events.on("BeforeAdd", function(newItem){
+component.data.events.on("BeforeAdd", function(newItem){
 	console.log("A new item will be added");
     return true;
 });

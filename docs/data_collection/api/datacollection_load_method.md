@@ -19,7 +19,7 @@ description: You can explore the load method of DataCollection in the documentat
 A promise of data loading.
 
 @example:
-diagram.data.load("../common/data.xml", "xml");
+component.data.load("../common/data.xml", "xml");
 
 @descr:
 
@@ -30,7 +30,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
 ~~~js
-diagram.data.load(url).then(function(){
+component.data.load(url).then(function(){
 	//do something after load;
 });
 ~~~
@@ -38,8 +38,8 @@ diagram.data.load(url).then(function(){
 or
 
 ~~~js
-diagram.data.load(url);
-diagram.data.loadData.then(function(){
+component.data.load(url);
+component.data.loadData.then(function(){
 	//do something after load;
 });
 // loadData executes a callback function after an asynchronous

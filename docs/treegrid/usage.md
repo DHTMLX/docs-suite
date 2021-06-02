@@ -105,7 +105,7 @@ treegrid.hideColumn(col);
 
 **Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
 
-Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the showColumn() method changes it value to *false* while the hideColumn() method changes the hidden property to *true*.
+Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
 
 ## Checking visibility of a column
 
@@ -425,6 +425,10 @@ You can easily edit the desired cell of a treegrid with the help of the [](treeg
 		<tr>
 			<td><b>col</b></td>
 			<td>(<i>string</i>) the id of a column</td>
+		</tr>
+		<tr>
+			<td><b>editorType</b></td>
+			<td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datepicker"|"checkbox"|"combobox"|"textarea"</td>
 		</tr>
     </tbody>
 </table>
