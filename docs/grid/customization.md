@@ -1,11 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
-description: description
----          
+title: JavaScript Grid - Customization 
+description: You can explore the customization of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling grid
-----------------
+# Customization
+
+## Styling grid
 
 There is a possibility to make changes in the look and feel of a grid. 
 
@@ -39,9 +40,7 @@ var grid = new dhx.Grid({
 
 **Related sample**: [Grid. Styling Grid](https://snippet.dhtmlx.com/c5tr3s5r)
 
-
-Styling header cells
--------------------
+## Styling header cells
 
 ![](../assets/grid/styling_header.png)
 
@@ -75,9 +74,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Styling Header Cells](https://snippet.dhtmlx.com/7o4elf48)
 
-
-Styling footer cells
--------------------
+## Styling footer cells
 
 You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the **text** property of the footer of a column:
 
@@ -112,8 +109,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Styling Footer Cells](https://snippet.dhtmlx.com/d254hcvp)
 
-Styling rows
----------------
+## Styling rows
 
 ![](../assets/grid/rowcss.png)
 
@@ -171,9 +167,7 @@ where:
     </tbody>
 </table>
 
-
-Styling cells
-----------------
+## Styling cells
 
 ![](../assets/grid/cellcss.png)
 
@@ -210,8 +204,7 @@ grid.addCellCss(rowId, "netChange", "myCustomClass");
 
 **Related sample**: [Grid. Add Cell Css](https://snippet.dhtmlx.com/hskmp8rh)
 
-Adding custom marks to cells
--------------------
+## Adding custom marks to cells
 
 ![](../assets/grid/markcells.png)
 
@@ -325,8 +318,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Mark Cells](https://snippet.dhtmlx.com/buirf16n)
 
-Adding template to cells
------------------------------
+## Adding template to cells
 
 ![](../assets/grid/cell_templates.png)
 
@@ -420,8 +412,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
-Adding template to tooltip
----------------------
+## Adding template to tooltip
 
 ![](../assets/grid/tooltip_template.png)
 
@@ -471,4 +462,3 @@ const grid = new dhx.Grid("grid", {
 **Related sample**: [Grid. Tooltip template](https://snippet.dhtmlx.com/954f7h9m)
 
 {{note You should enable the [htmlEnable](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.}}
-

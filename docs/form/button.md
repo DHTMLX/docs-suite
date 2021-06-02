@@ -1,7 +1,10 @@
 ---
 sidebar_label: Button
-title: Button
----          
+title: JavaScript Form - Button 
+description: You can explore the Button of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Button
 
 A simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
 
@@ -9,7 +12,7 @@ A simple button that can have an icon. Button can be *twoState* and can have a b
 
 **Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-## Adding Button 
+## Adding Button
 
 You can easily add a Button control during initialization of a form:
 

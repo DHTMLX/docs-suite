@@ -1,7 +1,10 @@
 ---
 sidebar_label: Textarea
-title: Textarea
----          
+title: JavaScript Form - Textarea 
+description: You can explore the Textarea of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Textarea
 
 A control that allows a user to enter a simple multi-line text.
 

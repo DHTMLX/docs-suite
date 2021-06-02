@@ -1,13 +1,14 @@
 ---
 sidebar_label: Work with Selection Object
-title: Work with Selection Object
-description: description
----          
+title: JavaScript Grid - Work with Selection Object 
+description: You can explore how to work with Selection Object of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Work with Selection Object
 
 You can manipulate with Grid cells via the API of the selection object. It is possible to get the object of one or more selected cells or rows, to set selection as to a single row or cell as to multiple rows or cells. The selection object also allows removing selection from previously selected cells.
 
-Enabling/Disabling Selection object
----------------------------------
+## Enabling/Disabling Selection object
 
 Starting from v7.0, you can activate selection of cells via the [](grid/api/selection/selection_enable_method.md) method of the selection object.
 
@@ -21,8 +22,7 @@ To disable selection of cells in Grid, make use of the [](grid/api/selection/sel
 grid.selection.disable();
 ~~~
 
-Setting selection to cells
------------------------------
+## Setting selection to cells
 
 You can set selection to one or more rows or cells using the [setCell()](grid/api/selection/selection_setcell_method.md) method of the selection object. The method takes the following parameters:
 
@@ -111,9 +111,7 @@ To make the process of selecting cells more flexible, you can apply the related 
 - [afterSelect](grid/api/selection/selection_afterselect_event.md)
 - [beforeSelect](grid/api/selection/selection_beforeselect_event.md)
 
-
-Removing selection
--------------------
+## Removing selection
 
 Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [](grid/api/selection/selection_removecell_method.md) method of the selection object. The method takes two parameters:
 
@@ -141,14 +139,12 @@ grid.selection.removeCell(rowId);
 grid.selection.removeCell(rowId, colId);
 ~~~
 
-
 To make the process of unselecting cells more flexible, you can apply the related events of the selection object:
 
 - [afterUnSelect](grid/api/selection/selection_afterunselect_event.md) 
 - [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md)
 
-Getting object of selected cells
--------------------------------
+## Getting object of selected cells
 
 To get the object of a selected Grid cell, use the [getCell()](grid/api/selection/selection_getcell_method.md) method of the selection object:
 

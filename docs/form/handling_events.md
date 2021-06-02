@@ -1,8 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
-description: description
----          
+title: JavaScript Form - Event Handling 
+description: You can explore the event handling of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -33,7 +35,7 @@ Several handlers can be attached to one and the same event, and all of them will
 
 {{note  The names of the events are case-insensitive. }}
 
-## Detaching event listeners 
+## Detaching event listeners
 
 There is a simple way of removing an event handler with the **form.events.detach()** method:
 
@@ -53,6 +55,6 @@ A custom event can be called with the **fire()** method of the **events** module
 form.events.fire(evName,[args]);
 ~~~
 
-## List of supported events 
+## List of supported events
 
 You can find the full list of Form events in the [API section](form/api/api_overview.md#events).

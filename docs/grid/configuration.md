@@ -1,12 +1,14 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Grid - Configuration 
+description: You can explore the configuration of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Configuration
 
 dhtmlxGrid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
 
-Columns
------------
+## Columns
 
 It is possible to adjust the configuration of grid columns via the corresponding option [columns](grid/api/grid_columns_config.md). As a value it takes an array with objects each of which contains config of a column.
 The full list of properties you can set for a column is given in the API reference.
@@ -23,13 +25,11 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Each column object may contain a set of properties. 
+Each column object may contain a set of properties.
 
 {{note You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).}}
 
-
-Alignment
----------------
+## Alignment
 
 Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the **align** option:
 
@@ -47,8 +47,7 @@ var grid = new dhx.Grid("grid_container", {
 
 The available values of the option are "left", "center" and "right".
 
-Automatic adding of empty row into Grid
------------------------------
+## Automatic adding of empty row into Grid
 
 There is a possibility to automatically add an empty row after the last filled row in the grid. Use the [](grid/api/grid_autoemptyrow_config.md) property in the Grid configuration object to enable this feature:
 
@@ -62,8 +61,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Auto Empty Row](https://snippet.dhtmlx.com/rkytig73)
 
-Autosize for columns
-----------------------
+## Autosize for columns
 
 You can configure columns' settings so that their width would automatically adjust to their content. Use the [](grid/api/grid_adjust_config.md) property for this purpose. The property can take one of four values:
 
@@ -114,8 +112,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{note  In case complex HTML content is added into a column, the column width may be calculated incorrectly.}}
 
-Autoheight for columns
--------------------------
+## Autoheight for columns
 
 Starting from v7.1, you can set the [autoHeight:true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text to split into multiple lines automatically based on the width of the column
 
@@ -133,12 +130,9 @@ As a result, the height of the cells will automatically adjust to their content.
 
 But, **note**, that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.
 
-
-Autowidth for columns
---------------------
+## Autowidth for columns
 
 It is possible to automatically adjust the size of Grid columns to the size of Grid with the help of the [](grid/api/grid_autowidth_config.md) configuration option, like this:
-
 
 ~~~js
 var grid = new dhx.Grid("grid_container", {
@@ -163,8 +157,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-Data
----------
+## Data
 
 You can specify data for your grid before initialization via the [data](grid/api/grid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the [](grid/data_loading.md) article.
 
@@ -175,8 +168,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Drag-n-drop of Grid columns
-----------------------------
+## Drag-n-drop of Grid columns
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
@@ -208,8 +200,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{note To make the process of reordering columns by drag and drop more flexible, you can apply the [related](grid/api/api_overview.md#column-drag-and-drop) drag-n-drop events.}}
 
-Drag-n-drop of Grid rows
--------------------------
+## Drag-n-drop of Grid rows
 
 dhtmlxGrid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
 
@@ -232,9 +223,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](grid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
-
-Editing Grid and separate columns
---------------------
+## Editing Grid and separate columns
 
 dhtmlxGrid provides the editing feature that includes two options:
 
@@ -406,8 +395,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
 
-Formatting columns
-------------------
+## Formatting columns
 
 Starting from v7.1, you can display the values of the cells of a Grid column in the desired format:
 
@@ -458,9 +446,8 @@ When using just the **type: "percent"** configuration option of a column, the re
 ~~~
 
 **Related sample**: [Grid. Data formats](https://snippet.dhtmlx.com/ox37nvdm)
- 
-Frozen columns
----------------
+
+## Frozen columns
 
 You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. 
 There is the [leftSplit](grid/api/grid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze 
@@ -476,8 +463,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)
 
-Header/footer content
-----------------------------
+## Header/footer content
 
 There are three types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md):
 
@@ -564,9 +550,7 @@ var grid = new dhx.Grid("grid_container", {
 </table>
 <br/>
 
-
-Header/footer height
-------------------------
+## Header/footer height
 
 The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [headerRowHeight](grid/api/grid_headerrowheight_config.md)/[footerRowHeight](grid/api/grid_footerrowheight_config.md)
 properties, correspondingly.
@@ -583,9 +567,7 @@ var grid = new dhx.Grid("grid_container", {
 
 The default value of the mentioned properties is 40.
 
-
-Hidden columns
-----------------
+## Hidden columns
 
 You can set the **hidden:true** property in the [config of a column](grid/configuration.md#columns) so that it doesn't appear on a page.
 
@@ -600,8 +582,7 @@ You can set the **hidden:true** property in the [config of a column](grid/config
 
 **Related sample**: [Grid. Hidden Columns](https://snippet.dhtmlx.com/lh7ma639)
 
-HTML content of Grid columns
----------------------------------
+## HTML content of Grid columns
 
 dhtmlxGrid allows adding an image or an icon into Grid cells in two ways:
 
@@ -656,8 +637,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Html In Data](https://snippet.dhtmlx.com/chitkvkc)
 
-Event handlers for HTML content
------------------------------------
+## Event handlers for HTML content
 
 Starting from v7.0, you can add event handlers to the HTML elements defined in a data set of Grid with the help of the [](grid/api/grid_eventhandlers_config.md) configuration property, for instance:
 
@@ -718,9 +698,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 </table>
 <br/>
 
-
-Keyboard Navigation
---------------------
+## Keyboard Navigation
 
 dhtmlxGrid provides the keyboard navigation that will help you manipulate your grid faster. 
 
@@ -762,6 +740,7 @@ var grid = new dhx.Grid("grid", {
 **Related sample**: [Grid. Key Navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
 ### Arrow shortcut keys
+
 In case you want to enable the arrow keys that allow moving the selection between cells, you need to specify the [selection](grid/api/grid_selection_config.md) property for Grid.
 
 ~~~js
@@ -892,8 +871,7 @@ The list of the shortcut keys for editing:
     </tbody>
 </table>
 
-Multiple selection of Grid cells
-------------------------------------
+## Multiple selection of Grid cells
 
 While setting the [selection](grid/configuration.md#selection) property either to *"row"* or to *"cell"* value, you can enable the [](grid/api/grid_multiselection_config.md) property to allow a user to select multiple Grid elements:
 
@@ -909,10 +887,9 @@ var grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 Since the **multiselection** configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
-A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select. 
+A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select.
 
-Resizing
---------------
+## Resizing
 
 Columns of Grid have fixed width with no possibility to change them from UI. You can switch on the corresponding configuration option to make all columns of Grid resizable.
 
@@ -943,12 +920,10 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Resizable Columns](https://snippet.dhtmlx.com/aeqzuks0)
 
-
 {{note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
 }}
 
-Row height
-----------
+## Row height
 
 The default height of a grid row is 40. You can change it and set any other height via the [rowHeight](grid/api/grid_rowheight_config.md) property, e.g.:
 
@@ -988,11 +963,9 @@ var dataset = [
 
 {{note The **height** option has a higher priority than the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration property of Grid. }}
 
-Row style
-------------
+## Row style
 
 There is a possibility to apply some styling to a row via the [rowCss](grid/api/grid_rowcss_config.md) property. It is a function that takes the id of a row as a parameter and returns a string with the name of a CSS class.
-
 
 ~~~js
 <style>
@@ -1011,9 +984,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
 
-
-Selection
-------------
+## Selection
 
 dhtmlxGrid includes the selection feature that allows highlighting Grid elements depending on the chosen mode. The [selection](grid/api/grid_selection_config.md) property enables selection in a grid. It can take three values:
 
@@ -1045,8 +1016,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Selection](https://snippet.dhtmlx.com/ad6roqsx)
 
-Sorting columns
---------------------
+## Sorting columns
 
 By default, dhtmlxGrid allows sorting content of any Grid column by clicking on its header. 
 
@@ -1093,8 +1063,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Spans
--------------
+## Spans
 
 The component has the [spans](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
 Each span object contains the following properties:
@@ -1153,8 +1122,7 @@ var grid = new dhx.Grid("grid_container", {
 - All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
 - If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
 
-Tooltip
------------
+## Tooltip
 
 The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column. Starting from v6.5, you can hide the tooltips via setting the [](grid/api/grid_tooltip_config.md) configuration property of Grid to *false*:
 
@@ -1184,8 +1152,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-Width/height
---------------
+## Width/height
 
 You can specify necessary size of your Grid via the configuration properties [width](grid/api/grid_width_config.md) and [height](grid/api/grid_height_config.md):
 

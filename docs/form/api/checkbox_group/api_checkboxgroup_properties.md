@@ -1,7 +1,10 @@
 ---
 sidebar_label: Properties
-title: CheckboxGroup properties
+title: JavaScript Form - Checkbox Group Properties 
+description: You can explore the Checkbox Group Properties of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# CheckboxGroup properties
 
 ## CheckboxGroup properties
 

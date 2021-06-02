@@ -1,7 +1,10 @@
 ---
 sidebar_label: Combo
-title: Combo
----          
+title: JavaScript Form - Combo 
+description: You can explore the Combo of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Combo
 
 An input that represents an advanced select box with a set of options. It is able to provide suggestions while a user is typing text.
 

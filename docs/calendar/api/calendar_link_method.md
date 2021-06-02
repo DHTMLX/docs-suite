@@ -18,7 +18,4 @@ calendar.link(calendar2);
 
 @descr:
 
-See the code and result in the live example below:
-<iframe src="https://snippet.dhtmlx.com/dxo54017?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
-
 [comment]: # (@related:calendar/operating_calendar.md#linkingtwocalendars)

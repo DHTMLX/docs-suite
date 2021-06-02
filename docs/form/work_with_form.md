@@ -1,8 +1,10 @@
 ---
 sidebar_label: Work with Form
-title: Work with Form
+title: JavaScript Form - Work with Form 
 description: description
----          
+---
+
+# Work with Form
 
 ## Getting values of controls
 
@@ -40,8 +42,8 @@ form.setValue({
 
 **Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
 
-Enabling/Disabling a form
---------------------------
+## Enabling/Disabling a form
+
 To enable a form, use the [enable()](form/api/form_enable_method.md) method:
 
 ~~~js
@@ -64,7 +66,7 @@ To check if a form is disabled, call the [isDisabled()](form/api/form_isdisabled
 ~~~js
 form.isDisabled(); // -> true/false
 ~~~
- 
+
 To check whether a form control is disabled, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isDisabled()](form/api/form_isdisabled_method.md) method:
 
 ~~~js
@@ -94,18 +96,18 @@ To check if a form is visible, call the [isVisible()](form/api/form_isvisible_me
 ~~~js
 form.isVisible(); // -> true/false
 ~~~
- 
+
 To check whether a form control is visible, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isVisible()](form/api/form_isvisible_method.md) method:
 
 ~~~js
 form.isVisible("input"); // -> returns true/false
 ~~~
 
-## Validating form 
+## Validating form
 
 In order to validate a form, you should deal with several aspects: required fields, minimal and maximal values, number of allowed characters, and validation rules.
 
-### Required fields 
+### Required fields
 
 You can easily specify that an input is obligatory to be treated by a user with the help of the **required** attribute. 
 
@@ -175,12 +177,12 @@ The attributes are applicable to the input/textarea fields with the input types:
 ### Validation rules
 
 To specify the way of validating a particular input/textarea, you can make use of predefined validation rules, they are:
- 
-- "email" - validEmail 
+
+- "email" - validEmail
 - "integer" - validInteger
 - "numeric" - validNumeric
-- "alphanumeric" - validAplhaNumeric 
-- "IPv4" - validIPv4 
+- "alphanumeric" - validAplhaNumeric
+- "IPv4" - validIPv4
 
 Set a string with the name of the necessary rule as a value of the **validation** attribute:
 
