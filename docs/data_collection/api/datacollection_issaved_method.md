@@ -14,7 +14,7 @@ description: You can explore the isSaved method of DataCollection in the documen
 `true`, if the changes are saved; otherwise, `false`.
 
 @example:
-diagram.data.isSaved();
+component.data.isSaved();
 
 @descr:
 

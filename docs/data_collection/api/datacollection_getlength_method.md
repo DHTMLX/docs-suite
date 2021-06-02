@@ -14,7 +14,7 @@ description: You can explore the getLength method of DataCollection in the docum
 The number of elements of a data collection.
 
 @example:
-datacollection.getLength();
+component.data.getLength();
 
 @descr:
 

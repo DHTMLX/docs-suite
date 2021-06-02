@@ -11,7 +11,7 @@ description: You can explore the removeAll event of DataCollection in the docume
 @signature: {'removeAll: () => void;'}
 
 @example:
-data.events.on("RemoveAll", function(){
+component.data.events.on("RemoveAll", function(){
 	console.log("Items are removed");
 });
 

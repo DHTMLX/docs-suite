@@ -14,7 +14,7 @@ description: You can explore the beforeLazyLoad event of DataCollection in the d
 Return `false` to block sending a request to the server; otherwise, `true`.
 
 @example:
-data.events.on("BeforeLazyLoad", function () {
+component.data.events.on("BeforeLazyLoad", function () {
     // your code here
     return false;
 });

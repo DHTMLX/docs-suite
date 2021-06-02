@@ -16,7 +16,7 @@ description: You can explore the changeId method of DataCollection in the docume
 - `silent: boolean` - true, to prevent changing the id; otherwise, false
 
 @example:
-data.changeId("1", "22");
+component.data.changeId("1", "22");
 
 @descr:
 

@@ -12,7 +12,6 @@ However, for further work, you may need to get the same data in different format
 
 **DataDrivers** is a tool that helps you convert data of a component from JSON format to one of the following formats:
 
-- [DataDrivers](#datadrivers)
   - [CSV format](#csv-format)
   - [XML format](#xml-format)
 

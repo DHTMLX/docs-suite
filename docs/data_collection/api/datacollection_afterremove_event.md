@@ -14,7 +14,7 @@ description: You can explore the afterRemove event of DataCollection in the docu
 `removedItem: object` - the object of a removed item
 
 @example:
-data.events.on("AfterRemove", function(removedItem){
+component.data.events.on("AfterRemove", function(removedItem){
 	console.log("An item is removed");
 });
 

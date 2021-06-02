@@ -15,7 +15,7 @@ description: You can explore the afterLazyLoad event of DataCollection in the do
 - `count: number` - the count of records loaded from the server 
 
 @example:
-data.events.on("AfterLazyLoad", function (from, count) {
+component.data.events.on("AfterLazyLoad", function (from, count) {
     // your code here
 });
 

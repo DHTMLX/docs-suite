@@ -14,7 +14,7 @@ description: You can explore the forEach method of DataCollection in the documen
 `callback: function` - a function that will iterate over items of a data collection
 
 @example:
-datacollection.forEach(function(element, index, array) {
+component.data.forEach(function(element, index, array) {
     console.log("This is an item of dataCollection: ", element);
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);
