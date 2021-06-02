@@ -22,7 +22,7 @@ grid.setColumns([
 
 @descr:
 
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_gridcolumn_properties.md).
+Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
 
 [comment]: # (@relatedapi: treegrid/api/treegrid_getcolumn_method.md)
 

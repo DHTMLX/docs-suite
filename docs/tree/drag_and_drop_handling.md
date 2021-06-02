@@ -47,7 +47,7 @@ There are three modes of behaviour of a dragged tree item:
 
 ![Sibling](../assets/tree/drag_behaviour_sibling.png)
 
-- "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
+- "complex" - a dragged item can become both a child and a sibling of a target item, depending on the position specified by highlighting (check the above images)
 
 ## Copying dragged item
 

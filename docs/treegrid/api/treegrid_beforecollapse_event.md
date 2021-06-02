@@ -14,7 +14,7 @@ description: You can explore the beforeCollapse event of TreeGrid in the documen
 `id: string` - the id of a collapsed row
 
 @returns:
-Return `false` to block collapsing a treegrid; otherwise, `true`.
+Return `false` to block collapsing of a treegrid; otherwise, `true`.
 
 @example:
 treeGrid.events.on("BeforeCollapse", function(rowId) {

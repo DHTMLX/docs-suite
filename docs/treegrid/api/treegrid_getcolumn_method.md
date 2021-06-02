@@ -67,7 +67,7 @@ The returned object contains the following set of properties:
 		</tr>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a column: "string"|"number"|"boolean"|"any"|"date"</td>
+			<td>(<i>string</i>) the type of a column: "string"|"number"|"boolean"|"percent"|"date"</td>
 		</tr>
         <tr>
 			<td><b>format</b></td>
