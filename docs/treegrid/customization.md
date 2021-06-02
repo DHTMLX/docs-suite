@@ -113,9 +113,9 @@ There are two ways to do it:
 
 ~~~html
 <style>
-.my_custom_row {
-	background: coral;
-}
+	.my_custom_row {
+		background: coral;
+	}
 </style>
 ~~~
 
@@ -187,9 +187,9 @@ It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegr
 
 ~~~html
 <style>
-.myCustomClass{
-	background:greenyellow;
-}
+	.myCustomClass{
+		background:greenyellow;
+	}
 </style>
 ~~~
 

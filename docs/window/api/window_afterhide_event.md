@@ -31,10 +31,11 @@ The **position** parameter contains two attributes:
 When the user closes the window by clicking on the Close icon (when the [](window/api/window_closable_config.md) option is enabled), the native event object will be passed into the second argument.
 
 <br/>
+
 Note, the event fires in 2 cases:
 
-1. While calling the [hide](window/api/window_hide_method.md) method
-2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
+1. While calling the [](window/api/window_hide_method.md) method.
+2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon.
 
 @changelog:
 

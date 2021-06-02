@@ -286,7 +286,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 			id: "project",
 			header: [{ text: "Project" }, { content: "selectFilter" }]
 		}
-    // more columns
+        // more columns
 	],
 	data: data,
 	editable: true
@@ -363,8 +363,8 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 		{
 			id: "name", header: [{ text: "Book Name" }], gravity: 1.5, 
 			editorType: "textarea" /*!*/
-		}
-    // more columns
+		},
+        // more columns
 	],
 	data: data,
 	editable: true,
@@ -596,7 +596,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
             width: 160, id: "inStock", type: "string", 
             header: [{ text: "In stock" }], 
             htmlEnable: true /*!*/
-        } 
+        },
 		// more columns	
 	],
 	data: dataset
