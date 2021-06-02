@@ -29,7 +29,7 @@ dhx.ajax.post(url, {name: "foo", title: "bar"}).then(function (data) {
 
 **Related sample**: [Data. Ajax POST](https://snippet.dhtmlx.com/eyr9mapj)
 
-The **config** object can contain following options:
+The **config** object can contain the following options:
 
 - **responseType** - the type of data that you are expecting back from the server. The available types are:
     - text - returns the plain text as a string
