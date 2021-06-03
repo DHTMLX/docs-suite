@@ -1,7 +1,10 @@
 ---
 sidebar_label: Title
-title: Title
----          
+title: JavaScript Sidebar - Title 
+description: You can explore the Title of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Title
 
 This is an item that contains some text.
 
@@ -22,7 +25,6 @@ sidebar.data.add({
 
 You can provide the [following properties](sidebar/api/api_title_properties.md) in the configuration object of a Title control.
 
-
 ## Showing/hiding title
 
 Title can be hidden and shown with the help of the related methods. Pass the id of a Title control as a parameter.
@@ -42,7 +44,4 @@ You can add a tooltip to a Title control:
     value:"2K",
     tooltip:"Your subscribers"
 }
-~~~
-
-@todo:
-check links to samples and api, add the image 
+~~~ 

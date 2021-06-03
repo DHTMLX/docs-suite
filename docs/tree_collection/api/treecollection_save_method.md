@@ -1,7 +1,10 @@
 ---
-sidebar_label: save
-title: save
----          
+sidebar_label: save()
+title: JavaScript TreeCollection - save Method 
+description: You can explore the save method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# save()
 
 @short: saves changes made in a tree collection to the server side
 
@@ -9,12 +12,10 @@ title: save
 
 @params:
 
-- url			object | string		the URL of a server side (or DataProxy object)
+`url: object | string` - the URL of a server side (or DataProxy object)
 
 @example:
 diagram.data.save("http://userurl/");
-
-
 
 @descr:
 
@@ -30,11 +31,10 @@ return data.saveData.then(function () {
 });
 ~~~
 
-Use the [isSaved](tree_collection/api/issaved.md) method to know whether the changes are saved:
+Use the [](tree_collection/api/treecollection_issaved_method.md) method to know whether the changes are saved:
 
 ~~~js
 diagram.data.saveData.then(function () {
 	console.log(diagram.data.isSaved());
 });
 ~~~
-

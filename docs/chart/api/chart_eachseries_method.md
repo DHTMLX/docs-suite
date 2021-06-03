@@ -1,23 +1,20 @@
 ---
-sidebar_label: eachSeries
-title: eachSeries
----          
+sidebar_label: eachSeries()
+title: JavaScript Chart - eachSeries Method 
+description: You can explore the eachSeries method of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# eachSeries()
 
 @short: iterates over Chart series
 
 @signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
 
-```todoapi
-array eachSeries(function handler);
-eachSeries(handler: (seria: ISeria) => any): any[];
-```
-
 @params:
-- handler	function	 a handler function that takes an array with series objects as a parameter
+`handler: function` - a handler function that takes an array with series objects as a parameter
 
 @returns:
-- result	array		an array with the result of iteration
-
+An array with the result of iteration.
 
 @example:
 var chart = new dhx.Chart("chart", {
@@ -51,14 +48,8 @@ chart.eachSeries(function(seria){
 });
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 
-
-
 @descr:
-
-
-@related:
-chart/usage.md#iteratingoverseries
 
 **Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
 
-
+[comment]: # (@related: chart/usage.md#iterating-over-series)

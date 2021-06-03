@@ -1,7 +1,10 @@
 ---
 sidebar_label: SimpleVault
-title: SimpleVault
----          
+title: JavaScript Form - Simple Vault 
+description: You can explore the Simple Vault of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# SimpleVault
 
 A handy control for quick and easy uploading of a file or a set of files.
 
@@ -11,7 +14,7 @@ A handy control for quick and easy uploading of a file or a set of files.
 
 **Related sample**: [Form. Simple Vault](https://snippet.dhtmlx.com/ofy4k51o)
 
-## Adding SimpleVault 
+## Adding SimpleVault
 
 You can easily add a SimpleVault control during initialization of a form:
 
@@ -37,7 +40,7 @@ View [the full list of configuration properties of the SimpleVault control](form
 
 ## Working with SimpleVault
 
-You can manipulate a SimpleVault control by using methods ([events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a SimpleVault control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -53,7 +56,6 @@ Check [the full list of methods of the SimpleVault control](form/api/api_overvie
 
 Check [the full list of events of the SimpleVault control](form/api/api_overview.md#simple-vault-events).
 
-
 ## Using DataCollection API
 
 You can manipulate a SimpleVault control with the help of the [DataCollection API](https://docs.dhtmlx.com/vault/api__refs__data_methods.html).
@@ -66,8 +68,6 @@ form.getItem("simpleVault").data.remove("file_id");
 form.getItem("simpleVault").data.removeAll();
 ~~~
 
-{{note Check the full list of [Data Collection API](https://docs.dhtmlx.com/vault/api__refs__data_methods.html).}}
-
 ## Uploading files
 
-You can read about uploading files into a SimpleVault control in the [related article](https://docs.dhtmlx.com/vault/uploading_files.html). 
+You can read about uploading files into a SimpleVault control in the [related article](https://docs.dhtmlx.com/vault/uploading_files.html).

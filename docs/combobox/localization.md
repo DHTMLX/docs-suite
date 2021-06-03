@@ -1,12 +1,14 @@
 ---
 sidebar_label: Localization
-title: Localization
----          
+title: JavaScript Combo Box - Localization 
+description: You can explore the localization of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Localization
 
 You can apply different languages to the interface of dhtmlxCombo. You just need to translate the corresponding strings for Combobox labels and apply a ready locale to the component.
 
-Default locale
-------------
+## Default locale
 
 The default locale for Combobox looks like this:
 
@@ -19,8 +21,7 @@ var en = {
 };
 ~~~
 
-Custom locale
-------------
+## Custom locale
 
 To use a different locale, your need to:
 
@@ -43,6 +44,3 @@ var combo = new dhx.Combobox("combo_container");
 ~~~
 
 **Related sample**: [Combobox. Localization](https://snippet.dhtmlx.com/cnj0j9g0)
-
-
-

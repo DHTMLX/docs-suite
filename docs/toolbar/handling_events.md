@@ -1,22 +1,23 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Toolbar - Event Handling 
+description: You can explore the event handling of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-
+# Event Handling
 
 ## Attaching event listeners
 
 You can add any handler to the events of Toolbar. To do this, use the **toolbar.events.on()** method with the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>evName</b></td>
+			<td><b>evName</b></td>
 			<td>name of the event</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>evHandler</b></td>
+			<td><b>evHandler</b></td>
 			<td>user-defined event handler</td>
 		</tr>
     </tbody>
@@ -35,7 +36,7 @@ Several handlers can be attached to one and the same event, and all of them will
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
 
-## Detaching event listeners 
+## Detaching event listeners
 
 There is a simple way of removing an event handler with the **toolbar.events.detach()** method:
 
@@ -55,7 +56,6 @@ A custom event can be called with the **fire()** method of the **events** module
 toolbar.events.fire(evName,[args]);
 ~~~
 
-## List of supported events 
+## List of supported events
 
-You can find the full list of toolbar events in the [API section](toolbar/api/refs/toolbar_events.md).
-
+You can find the full list of toolbar events in the [API section](toolbar/api/api_overview.md#toolbar-events).

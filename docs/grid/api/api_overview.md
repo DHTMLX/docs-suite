@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: Grid API overview
+title: JavaScript Grid - API Overview 
+description: You can explore the API of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Grid API overview
 
 ## Grid methods
 
@@ -11,7 +14,6 @@ title: Grid API overview
 | [](grid/api/grid_addrowcss_method.md)         | @getshort(grid/api/grid_addrowcss_method.md)         |
 | [](grid/api/grid_addspan_method.md)           | @getshort(grid/api/grid_addspan_method.md)           |
 | [](grid/api/grid_adjustcolumnwidth_method.md) | @getshort(grid/api/grid_adjustcolumnwidth_method.md) |
-| [](grid/api/grid_cellmousedown_event.md)      | @getshort(grid/api/grid_cellmousedown_event.md)      |
 | [](grid/api/grid_destructor_method.md)        | @getshort(grid/api/grid_destructor_method.md)        |
 | [](grid/api/grid_editcell_method.md)          | @getshort(grid/api/grid_editcell_method.md)          |
 | [](grid/api/grid_editend_method.md)           | @getshort(grid/api/grid_editend_method.md)           |
@@ -51,13 +53,13 @@ title: Grid API overview
 | [](grid/api/grid_beforeeditend_event.md)        | @getshort(grid/api/grid_beforeeditend_event.md)        |
 | [](grid/api/grid_beforeeditstart_event.md)      | @getshort(grid/api/grid_beforeeditstart_event.md)      |
 
-
 ### Mouse
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
+| Name                                            | Description                                            |
+|-------------------------------------------------|--------------------------------------------------------|
 | [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event.md)            |
 | [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event.md)         |
+| [](grid/api/grid_cellmousedown_event.md)        | @getshort(grid/api/grid_cellmousedown_event.md)        |
 | [](grid/api/grid_cellmouseover_event.md)        | @getshort(grid/api/grid_cellmouseover_event.md)        |
 | [](grid/api/grid_cellrightclick_event.md)       | @getshort(grid/api/grid_cellrightclick_event.md)       |
 | [](grid/api/grid_footercellclick_event.md)      | @getshort(grid/api/grid_footercellclick_event.md)      |
@@ -79,7 +81,6 @@ title: Grid API overview
 | [](grid/api/grid_beforekeydown_event.md) | @getshort(grid/api/grid_beforekeydown_event.md) |
 | [](grid/api/grid_scroll_event.md)        | @getshort(grid/api/grid_scroll_event.md)        |
 
-
 ### Sort and Filter
 
 | Name                                    | Description                                    |
@@ -87,7 +88,6 @@ title: Grid API overview
 | [](grid/api/grid_aftersort_event.md)    | @getshort(grid/api/grid_aftersort_event.md)    |
 | [](grid/api/grid_beforesort_event.md)   | @getshort(grid/api/grid_beforesort_event.md)   |
 | [](grid/api/grid_filterchange_event.md) | @getshort(grid/api/grid_filterchange_event.md) |
-
 
 ### Column Drag and Drop
 
@@ -120,7 +120,6 @@ title: Grid API overview
 | [](grid/api/grid_beforeresizestart_event.md) | @getshort(grid/api/grid_beforeresizestart_event.md) |
 | [](grid/api/grid_resize_event.md)            | @getshort(grid/api/grid_resize_event.md)            |
 
-
 ### Row Drag and Drop
 
 | Name                                     | Description                                       |
@@ -144,16 +143,12 @@ title: Grid API overview
 | [](grid/api/grid_beforerowhide_event.md) | @getshort(grid/api/grid_beforerowhide_event.md) |
 | [](grid/api/grid_beforerowshow_event.md) | @getshort(grid/api/grid_beforerowshow_event.md) |
 
-
 ### Row Resize
 
 | Name                                       | Description                                       |
 |--------------------------------------------|---------------------------------------------------|
 | [](grid/api/grid_afterrowresize_event.md)  | @getshort(grid/api/grid_afterrowresize_event.md)  |
 | [](grid/api/grid_beforerowresize_event.md) | @getshort(grid/api/grid_beforerowresize_event.md) |
-
-
-
 
 :::info important
 - Use [the events of DataCollection](data_collection/index.md#events) to work with data of Grid. 
@@ -168,7 +163,6 @@ title: Grid API overview
 | [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
-| [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
 | [](grid/api/grid_css_config.md)             | @getshort(grid/api/grid_css_config.md)             |
 | [](grid/api/grid_data_config.md)            | @getshort(grid/api/grid_data_config.md)            |
@@ -209,8 +203,6 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/selection/selection_getcells_method.md)   | @getshort(grid/api/selection/selection_getcells_method.md)   |
 | [](grid/api/selection/selection_removecell_method.md) | @getshort(grid/api/selection/selection_removecell_method.md) |
 | [](grid/api/selection/selection_setcell_method.md)    | @getshort(grid/api/selection/selection_setcell_method.md)    |
-
-
 
 ### Selection events
 

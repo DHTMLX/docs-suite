@@ -1,20 +1,23 @@
 ---
 sidebar_label: dragMode
-title: dragMode
----          
+title: JavaScript DataView - dragMode Config 
+description: You can explore the dragMode config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# dragMode
 
 @short: enables drag-n-drop in DataView
 
 @signature: {'dragMode?: boolean;'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview_container", { 
     dragMode:"source"
 });
 
+@descr:
 
-
-@descr: 
+**Related sample**: [Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
 
 Drag-n-drop can work in three modes:
 
@@ -22,8 +25,4 @@ Drag-n-drop can work in three modes:
 - "source" - a dataview allows dragging its items out and can't take items from other dataviews
 - "both" - a dataview both takes items from other dataviews and allows dragging its items out as well
 
-**Related sample**:
-- [Dataview. Drag'n'drop](https://snippet.dhtmlx.com/nia2e5a9)
-
-@relatedapi:
-dataview/configuration.md#drag-n-drop-of-items
+[comment]: # (@relatedapi: dataview/configuration.md#drag-n-drop-of-items)

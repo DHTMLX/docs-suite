@@ -1,9 +1,12 @@
 ---
 sidebar_label: ImageButton
-title: ImageButton
----          
+title: JavaScript Toolbar - ImageButton 
+description: You can explore the ImageButton of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-This is a button with an image. Unlike toolbar/button.md, it does not have a text label, but can also have a badge with a number and can be two state.
+# ImageButton
+
+This is a button with an image. Unlike a [button](toolbar/button.md), it does not have a text label, but can also have a badge with a number and can be two state.
 
 ![](../assets/toolbar/image_button.png)
 
@@ -11,7 +14,7 @@ This is a button with an image. Unlike toolbar/button.md, it does not have a tex
 
 ## Adding ImageButton
 
-ImageButton can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/treecollection_add_method.md):
+ImageButton can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({
@@ -27,6 +30,6 @@ You can provide [the following properties](toolbar/api/api_imagebutton_propertie
 
 ## Working with ImageButton
 
-Just like toolbar/button.md, imageButton can be hidden, disabled and can have a tooltip. You can also manipulate the states of a two state imageButton.
+Just like a [button](toolbar/button.md), imageButton can be hidden, disabled and can have a tooltip. You can also manipulate the states of a two state imageButton.
 
 Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

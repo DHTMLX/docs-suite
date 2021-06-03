@@ -1,14 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Message - Initialization 
+description: You can explore the initialization of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add a message on a page, you should take the following simple steps:
 
-- [Include source files](#include-source-files)
-- [Create a container](#create-a-container)
-- [Create necessary message box](#create-necessary-message-box)
-- [Configuration properties](#configuration-properties)
+- [Initialization](#initialization)
+  - [Include source files](#include-source-files)
+  - [Create a container](#create-a-container)
+  - [Create necessary message box](#create-necessary-message-box)
+    - [Configuration properties](#configuration-properties)
 
 ~~~html
 <!DOCTYPE html>
@@ -34,9 +38,7 @@ To add a message on a page, you should take the following simple steps:
 </html>
 ~~~
 
-
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -48,8 +50,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container 
------------------
+## Create a container
 
 {{note This is an optional step. By default a message appears in the top right corner of the screen.}}
 
@@ -59,8 +60,7 @@ Add a container for Message and give it an id, for example "message_container":
 <div id="message_container"></div>
 ~~~
 
-Create necessary message box
-----------------------
+## Create necessary message box
 
 Create a desired message box with the corresponding method. The listed methods take an [**object with configuration options of message boxes**](message/configuration.md) as a parameter.
 
@@ -115,6 +115,3 @@ dhx.tooltip("Current Value 1", {node: "first", position: "center"});
 ### Configuration properties
 
 There is a set of properties you can specify for message boxes to optimize their configuration for your needs. Read details in the [related article](message/configuration.md).
-
-
-

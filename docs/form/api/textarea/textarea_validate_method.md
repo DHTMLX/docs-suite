@@ -1,18 +1,21 @@
 ---
-sidebar_label: validate
-title: validate
----          
+sidebar_label: validate()
+title: JavaScript Form - validate Textarea Method 
+description: You can explore the validate Textarea method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# validate()
 
 @short: validates a Textarea control
 
-@signature: {'validate(silent: boolean, validateValue?: string | number): boolean;'}
+@signature: {'validate(silent?: boolean, validateValue?: string): boolean;'}
 
 @params:
-- silent    boolean     optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
-- validateValue     string     optional, the value to be validated. If not specified, the method validates the current value of the control
+- `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
+- `validateValue: string` - optional, the value to be validated. If not specified, the method validates the current value of the control
 
 @returns:
-param   boolean     true - if a control is valid, otherwise false
+`true`, if a control is valid; otherwise, `false`.
 
 @example:
 // the method validates the specified value
@@ -21,8 +24,8 @@ form.getItem("textarea").validate(true, "I am Text"); // -> true/false
 // the method validates the current value
 form.getItem("textarea").validate(true); // -> true/false
 
-
 @descr:
+
 When calling without parameters or setting the **silent** parameter to *false*, the method invokes the [BeforeValidate](form/api/textarea/textarea_beforevalidate_event.md) and [AfterValidate](form/api/textarea/textarea_aftervalidate_event.md) events and visually modifies the control.
 
 ~~~js
@@ -33,8 +36,6 @@ form.getItem("textarea").validate(false, "I am Input"); // -> true/false
 form.getItem("textarea").validate(); // -> true/false
 ~~~
 
+@changelog:
 
-@changelog: 
 The **silent** and **validateValue** parameters are added in v7.0
-
-

@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeChangeProperties
-title: beforeChangeProperties
----          
+title: JavaScript Form - beforeChangeProperties Radiogroup Event 
+description: You can explore the beforeChangeProperties Radiogroup event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeChangeProperties
 
 @short: fires before configuration attributes of the control are changed dynamically
 
 @signature: {'beforeChangeProperties: (properties: ICheckboxGroupProps) => boolean | void;'}
 
 @params:
-- properties     object      an object with configuration attributes of the control and their new values
+`properties: object` - an object with configuration attributes of the control and their new values
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("radiogroup").events.on("BeforeChangeProperties", function(properties) {
@@ -19,12 +22,8 @@ form.getItem("radiogroup").events.on("BeforeChangeProperties", function(properti
     return true;
 });
 
-
-
 @descr:
-
-@relatedapi: form/api/radiogroup/radiogroup_setproperties_method.md
-
 
 @changelog: added in v7.0
 
+[comment]: # (@relatedapi: form/api/radiogroup/radiogroup_setproperties_method.md)

@@ -1,14 +1,16 @@
 ---
 sidebar_label: MenuItem
-title: MenuItem
----          
+title: JavaScript Sidebar - MenuItem 
+description: You can explore the MenuItem of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# MenuItem
 
 MenuItem is a drop-down list of options, can contain its own sub-menu. 
 
 ![](../assets/sidebar/menuitem.png)
 
-Adding MenuItem
-----------------
+## Adding MenuItem
 
 A menuItem can be easily added to a sidebar with the help of the **add()** method of Tree Collection:
 
@@ -26,7 +28,6 @@ sidebar.data.add({
 ### Properties
 
 You can provide the [following properties](sidebar/api/api_menuitem_properties.md) in the configuration object of a MenuItem control.
-
 
 ## Adding an icon
 
@@ -71,7 +72,7 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-## Enabling/disabling a navItem 
+## Enabling/disabling a navItem
 
 Any menuItem in the sidebar can be enabled/disabled:
 
@@ -91,4 +92,3 @@ You can add a tooltip to a menuItem:
     tooltip:"Click me and find out why"  /*!*/
 }
 ~~~
-

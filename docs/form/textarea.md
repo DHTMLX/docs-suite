@@ -1,7 +1,10 @@
 ---
 sidebar_label: Textarea
-title: Textarea
----          
+title: JavaScript Form - Textarea 
+description: You can explore the Textarea of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Textarea
 
 A control that allows a user to enter a simple multi-line text.
 
@@ -36,7 +39,7 @@ View [the full list of configuration properties of the Textarea control](form/ap
 
 ## Working with Textarea
 
-You can manipulate a Textarea control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Textarea control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -47,7 +50,6 @@ var value = form.getItem("textarea").getValue();
 ### Methods
 
 Check [the full list of methods of the Textarea control](form/api/api_overview.md#textarea-methods).
-
 
 ### Events
 

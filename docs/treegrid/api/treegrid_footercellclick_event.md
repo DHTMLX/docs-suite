@@ -1,20 +1,22 @@
 ---
 sidebar_label: footerCellClick
-title: footerCellClick
----          
+title: JavaScript TreeGrid - footerCellClick Event 
+description: You can explore the footerCellClick event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# footerCellClick
 
 @short: fires on click on a grid footer cell
 
 @signature: {'footerCellClick: (col: ICol, e: MouseEvent) => void;'}
 
 @params:
-- column		object		an object with a column configuration
-- e				Event		a native event object
+- `col: object` - an object with a column configuration
+- `e: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("FooterCellClick", function(column,e){
     // your logic here
 });
-
 
 @descr:

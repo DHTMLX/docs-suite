@@ -1,13 +1,16 @@
 ---
 sidebar_label: data
-title: data
----          
+title: JavaScript Grid - data Config 
+description: You can explore the data config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# data
 
 @short: specifies an array of data objects to set into the grid
 
 @signature: {'data?: any[];'}
 
-@example: 
+@example:
 var dataset = [
     {
       "country": "China",
@@ -26,13 +29,10 @@ var dataset = [
     // more columns
 ];
 
-
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	data: dataset
 });
-
-
 
 @descr:
 
@@ -79,9 +79,6 @@ var dataset = [
 
 **Related sample**: [Grid. Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
 
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#data)
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#data
-
-@relatedapi: grid/api/grid_autoheight_config.md
-
+[comment]: # (@relatedapi: grid/api/grid_autoheight_config.md)

@@ -1,13 +1,16 @@
 ---
 sidebar_label: columns
-title: columns
----          
+title: JavaScript TreeGrid - columns Config 
+description: You can explore the columns config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# columns
 
 @short: specifies the configuration of grid columns
 
 @signature: {'columns?: ICol[];'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 100, id: "a", header: [{ text: "#" }] },
@@ -18,15 +21,10 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
-@descr: 
-
-#### Details:
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
-
-@related: treegrid/configuration.md#columns
-treegrid/initialization.md#initialize-treegrid
-treegrid/customization.md
+@descr:
 
 **Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
+Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
+
+[comment]: # (@related: treegrid/configuration.md#columns treegrid/initialization.md#initialize-treegrid treegrid/customization.md)

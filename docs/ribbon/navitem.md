@@ -1,14 +1,16 @@
 ---
 sidebar_label: NavItem
-title: NavItem
----          
+title: JavaScript Ribbon - NavItem 
+description: You can explore the NavItem of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# NavItem
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
 ![](../assets/ribbon/navitem.png)
 
-Adding NavItem
-----------------
+## Adding NavItem
 
 A navItem can be easily added to a ribbon with the help of the **add()** method of Tree Collection:
 
@@ -60,7 +62,6 @@ You can add a custom HTML content to a navItem with the help of the **html** pro
 
 **Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
 
-
 ## Showing/hiding a navItem
 
 To hide/show a navItem, you should pass the ID of the navItem to the **hide() / show()** Ribbon methods:
@@ -70,7 +71,7 @@ ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Enabling/disabling a navItem 
+## Enabling/disabling a navItem
 
 Any navItem in the ribbon can be enabled/disabled:
 

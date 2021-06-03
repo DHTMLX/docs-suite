@@ -1,22 +1,20 @@
 ---
-sidebar_label: isVisible
-title: isVisible
----          
+sidebar_label: isVisible()
+title: JavaScript Form - isVisible Button Method 
+description: You can explore the isVisible Button method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# isVisible()
 
 @short: checks whether a Button control is visible on the page
 
 @signature: {'isVisible(): boolean;'}
 
 @returns:
-param   boolean     true, if a control is visible, otherwise false
+`true`, if a control is visible; otherwise, `false`.
 
 @example:
 form.getItem("button").isVisible();
 // -> true/false
 
-
-
 @descr:
-
-
-

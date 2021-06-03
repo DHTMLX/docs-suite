@@ -1,15 +1,15 @@
 ---
 sidebar_label: Overview
-title: Toolbar overview
-description: dhtmlxToolbar is a flexible tool for creating a comfy horizontal navigation bar. Advanced API allows you to easily adjust the structure of the component by combining and customizing diverse types of its controls.
----          
+title: JavaScript Toolbar - Toolbar Overview 
+description: You can have an overview of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Toolbar overview
 
 dhtmlxToolbar is a JavaScript component that allows you to keep all main commands and tools of the app in one place and define their look and feel.
 Being a great tool for fast and handy navigation, it will make work with your app or website clear and easy. Check [online samples for dhtmlxToolbar](https://docs.dhtmlx.com/suite/samples/toolbar/).
 
-
 ![](../assets/toolbar/toolbar_front.png)
-
 
 ## API reference
 
@@ -17,7 +17,7 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 
 ## Related resources
 
-- You can get dhtmlxToolbar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- You can get dhtmlxToolbar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxToolbar](https://docs.dhtmlx.com/suite/samples/toolbar/)  
 
 ## Guides
@@ -27,7 +27,7 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 Describes the steps of initializing Toolbar and working with it.
 
 - [](toolbar/how_to_start.md)
-- [](toolbar/load_data.md) 
+- [](toolbar/load_data.md)
 - [](toolbar/common_methods.md)
 - [](toolbar/customization.md)
 - [](toolbar/handling_events.md)
@@ -40,9 +40,9 @@ Discusses the creation of Toolbar controls and the possibilities of manipulating
 - [](toolbar/customhtmlbutton.md)
 - [](toolbar/image_button.md)
 - [](toolbar/datepicker.md) 
-- [](toolbar/input.md) 
+- [](toolbar/input.md)
 - [](toolbar/navitem.md)
-- [](toolbar/selectbutton.md) 
-- [](toolbar/separator.md) 
-- [](toolbar/spacer.md) 
+- [](toolbar/selectbutton.md)
+- [](toolbar/separator.md)
+- [](toolbar/spacer.md)
 - [](toolbar/title.md)  

@@ -1,14 +1,16 @@
 ---
 sidebar_label: Localization
-title: Localization
----      
-    
+title: JavaScript Calendar - Localization 
+description: You can explore the localization of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Localization
+
 You can apply different languages to the interface of dhtmlxCalendar. You just need to translate the corresponding strings for Calendar labels and apply a ready locale to the component.
 
 ![](../assets/calendar/locale.png)
 
-Default locale
-------------
+## Default locale
 
 The default locale for Calendar looks like this:
 
@@ -28,8 +30,7 @@ var en = {
 };
 ~~~
 
-Custom locale
-------------
+## Custom locale
 
 To use a different locale, your need to:
 

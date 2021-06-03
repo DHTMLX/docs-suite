@@ -1,17 +1,20 @@
 ---
-sidebar_label: getHeaderFilter
-title: getHeaderFilter
----          
+sidebar_label: getHeaderFilter()
+title: JavaScript TreeGrid - getHeaderFilter Method 
+description: You can explore the getHeaderFilter method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getHeaderFilter()
 
 @short: returns an object of the header filter by column id
 
 @signature: {'getHeaderFilter(colId: string | number): HTMLElement | Combobox;'}
 
 @params:
-- colId	string | number   the id of a column
+`colId: string | number` - the id of a column
 
 @returns:
-- element	HTMLElement | object  an HTML object or an object with Combobox configuration
+An HTML object or an object with Combobox configuration.
 
 @example:
 var countryFilter = treegrid.getHeaderFilter("capital");
@@ -29,13 +32,11 @@ var countryFilter = treegrid.getHeaderFilter("name");
 
 countryFilter.blur();
 
-
 @descr:
 
 **Related sample**: [TreeGrid. Get Header Filter](https://snippet.dhtmlx.com/vg5o912t)
 
-@related: treegrid/usage.md#gettingheaderfilter
-
 @changelog:
 added in 7.0
 
+[comment]: # (@related: treegrid/usage.md#getting-header-filter)

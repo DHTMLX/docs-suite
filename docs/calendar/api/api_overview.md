@@ -1,8 +1,10 @@
 ---
 sidebar_label: API overview
-title: Calendar API overview
-description: DHTMLX Calendar is a smart datepicker solution for websites or applications that allows selecting dates, ranges of dates, and time. It's easily configurable and highly customizable.
+title: JavaScript Calendar - API Overview
+description: You can explore the API of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Calendar API Overview
 
 ## Methods
 

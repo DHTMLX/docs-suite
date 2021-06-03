@@ -1,13 +1,16 @@
 ---
 sidebar_label: data
-title: data
----          
+title: JavaScript Toolbar - data Config 
+description: You can explore the data config of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# data
 
 @short: specifies an array of data objects to set into Toolbar
 
 @signature: {'data?: any[];'}
 
-@example: 
+@example:
 const toolbar = new dhx.Toolbar("toolbar", {
     css: "dhx_widget--bordered",
     data: [ 
@@ -37,13 +40,10 @@ const toolbar = new dhx.Toolbar("toolbar", {
     ]
 )};
 
-
-
-
-@descr: 
-
-@related: toolbar/load_data.md
+@descr:
 
 **Related samples**:
 - [Toolbar. Config Data ](https://snippet.dhtmlx.com/nie9tuks)
 - [Toolbar. Init With External Data](https://snippet.dhtmlx.com/b0fmkwg5)
+
+[comment]: # (@related: toolbar/load_data.md)

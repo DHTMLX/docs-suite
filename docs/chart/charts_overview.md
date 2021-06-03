@@ -1,7 +1,10 @@
 ---
 sidebar_label: Overview of Chart Types 
-title: Overview of Chart Types 
----          
+title: JavaScript Chart - Overview of Chart Types 
+description: You can have an overview of various Chart types in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Overview of Chart Types
 
 dhtmlxChart provides a variety of charts types that will help you to represent you data in the most suitable way. Each type of chart is easily configurable and can be adjusted according to your preferences.
 All in all there are 11 types of chart, in the list below they are combined into groups for the sake of convenience:
@@ -30,14 +33,11 @@ how the number of staff has increased over several years. Choose this variant wh
 
 ![Line chart](../assets/chart/line_overview.png)
 
-
-
 **Related sample**: [Chart. Basic Initialization Line Chart](https://snippet.dhtmlx.com/t881qcim)
 
 ### Spline chart
 
 ![Spline chart](../assets/chart/spline_overview.png)
-
 
 **Related sample**: [Chart. Basic Initialization Spline Chart](https://snippet.dhtmlx.com/2wvmdm0y)
 
@@ -105,6 +105,5 @@ relate to one item (the center point of a chart) and compare their values.
 The peculiarity of Scatter Chart is that it allows exploring relations between two sets of data in order to find out possible dependencies or patterns.
 
 ![Scatter chart](../assets/chart/scatter_overview.png)
-
 
 **Related sample**: [Chart. Basic Initialization Scatter Chart](https://snippet.dhtmlx.com/pkczfmpu)

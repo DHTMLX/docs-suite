@@ -1,17 +1,20 @@
 ---
-sidebar_label: getValue
-title: getValue
----          
+sidebar_label: getValue()
+title: JavaScript Form - getValue Timepicker Method 
+description: You can explore the getValue Timepicker method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getValue()
 
 @short: returns the current value of a TimePicker control
 
-@signature: {'getValue<T extends boolean = false>(asOBject?: T): T extends true ? ITimeObject : string;'}
+@signature: {'getValue<T extends boolean = false>(asObject?: T): T extends true ? ITimeObject : string;'}
 
 @params:
-* asObject 		boolean		 optional, specifies that the value will be returned as an object, false by default
+`asObject: boolean` - optional, specifies that the value will be returned as an object, `false` by default
 
 @returns:
-param   string|object     the current value of the control
+Either a string, or object with the current value of the control.
 
 @example:
 // return value as a string in the 24-hour format
@@ -30,9 +33,8 @@ var val3 = timepicker.getItem("timepicker").getValue();
 var val4 = timepicker.getItem("timepicker").getValue(true); 
 // -> {hour: 6, minute: 0, AM: true}
 
-
-
 @descr:
+
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 
 - for the 24-hour format a return string value will include just the hour and minutes: "00:39"
@@ -40,4 +42,6 @@ The returned value can be of several types, depending on the passed parameter an
 - for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
 - for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
 
-@changelog: The *asObject* parameter of the method is added in v7.0
+@changelog: 
+
+The *asObject* parameter of the method is added in v7.0

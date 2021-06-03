@@ -11,7 +11,7 @@ title: thisMonthOnly
 
 @type: boolean
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    thisMonthOnly:true
 });

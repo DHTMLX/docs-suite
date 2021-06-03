@@ -1,7 +1,10 @@
 ---
-sidebar_label: enable
-title: enable
----          
+sidebar_label: enable()
+title: JavaScript Combo Box - enable Method 
+description: You can explore the enable method of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# enable()
 
 @short: enables a disabled ComboBox
 
@@ -10,17 +13,10 @@ title: enable
 @example:
 combo.enable();
 
-
-
 @descr:
 
-@related: combobox/work_with_combo.md#disablingenablingcombobox
+**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
 
-@relatedapi:
-combobox/api/combobox_disable_method.md
+[comment]: # (@related: combobox/work_with_combo.md#disablingenabling-combobox)
 
-**Related sample**:
-- [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
-
-
-
+[comment]: # (@relatedapi: combobox/api/combobox_disable_method.md)

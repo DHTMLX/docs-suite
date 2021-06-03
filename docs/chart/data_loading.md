@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript Chart - Data Loading 
+description: You can explore the data loading of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are two ways of loading data into dhtmlxChart:
 
@@ -10,8 +13,7 @@ There are two ways of loading data into dhtmlxChart:
 
 First, you need to prepare a data set that will be loaded into Chart.
 
-Preparing data set
--------------------
+## Preparing data set
 
 dhtmlxChart expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -34,22 +36,22 @@ Each object in the data set contains a number of *key:value* pairs for data titl
 
 A data set for Pie, Pie3D and Donut charts differs a little bit. You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string,number</i>) the id of a series </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string</i>) the name of the data set property to map labels of data values to</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>string</i>) the name of the data set property to map data values to </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>color</b></td>
+			<td><b>color</b></td>
 			<td>(<i>string</i>) points to the property in a data set that defines the color of a pie/donut sector</td>
 		</tr>
     </tbody>
@@ -66,10 +68,9 @@ var pie_dataset = [
 ];
 ~~~
 
-External data loading
---------------------
+## External data loading
 
-To load data from an external file, make use of the [](data_collection/api/datacollection_load_method.md) method of Data Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [](../data_collection/api/datacollection_load_method.md) method of Data Collection. It takes the URL of the file with data as a parameter:
 
 ~~~js
 var chart = new dhx.Chart("chart_container");
@@ -88,10 +89,9 @@ chart.data.load("/some/data").then(function(){
 
 **Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)
 
-Loading from local source
-------------------
+## Loading from local source
 
-To load data from a local data source, use the [](data_collection/api/datacollection_parse_method.md) method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [](../data_collection/api/datacollection_parse_method.md) method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var chart = new dhx.Chart("chart_container");
@@ -100,10 +100,9 @@ chart.data.parse(dataset);
 
 **Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
-To save the current state of a chart, use the [](data_collection/api/datacollection_serialize_method.md) method of Data Collection. It converts the data of a chart into an array of JSON objects. 
+To save the current state of a chart, use the [](../data_collection/api/datacollection_serialize_method.md) method of Data Collection. It converts the data of a chart into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs for data titles and values.
 
 ~~~js

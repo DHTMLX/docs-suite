@@ -1,7 +1,10 @@
 ---
 sidebar_label: Input
-title: Input
----          
+title: JavaScript Ribbon - Input 
+description: You can explore the Input of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Input
 
 A text input field with an icon.
 
@@ -25,8 +28,7 @@ ribbon.data.add({
 
 You can provide the [following properties](ribbon/api/api_input_properties.md) in the configuration object of an Input control.
 
-
-## Showing/hiding Input 
+## Showing/hiding Input
 
 You can show or hide Input with the methods of Ribbon:
 

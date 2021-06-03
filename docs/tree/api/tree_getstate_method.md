@@ -1,15 +1,17 @@
 ---
-sidebar_label: getState
-title: getState
----          
+sidebar_label: getState()
+title: JavaScript Tree - getState Method 
+description: You can explore the getState method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getState()
 
 @short: gets the state of a tree
 
 @signature: {'getState(): ITreeState;'}
 
 @returns:
-- treeState		object		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state
-
+An object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state.
 
 @example:
 var treeState = tree.getState();
@@ -21,39 +23,31 @@ var treeState = tree.getState();
 }
 */
 
-
-
 @descr:
+
+**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
+
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>selected</b></td>
+			<td><b>selected</b></td>
 			<td>(<i>number</i>) the status of a checkbox of an item: 
 				<ul>
 					<li>0 - unselected </li>
 					<li>1 - selected  </li>
-					<li>indeterminate (for the parent item, in case its children are partially checked) </li>
+					<li>2 - indeterminate (for the parent item, in case its children are partially checked) </li>
 				</ul>
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>open</b></td>
+			<td><b>open</b></td>
 			<td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
 		</tr>
     </tbody>
 </table>
 
+[comment]: # (@relatedapi: tree/api/tree_setstate_method.md)
 
-
-@relatedapi:
-tree/api/tree_setstate_method.md
-
-**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
-
-
-
-@related: tree/work_with_tree.md#settinggettingtreestate
-
-
+[comment]: # (@related: tree/work_with_tree.md#settinggetting-tree-state)

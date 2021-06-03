@@ -1,7 +1,10 @@
 ---
 sidebar_label: Custom HTML
-title: Custom HTML
----          
+title: JavaScript Sidebar - Custom HTML Button 
+description: You can explore the custom HTML button of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Custom HTML
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
@@ -9,10 +12,9 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 **Related sample**: [Sidebar. Custom HTML](https://snippet.dhtmlx.com/26ds0gxp)
 
-Adding Custom HTML
------------------
+## Adding Custom HTML
 
-Any custom HTML content can be easily added to a sidebar with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+Any custom HTML content can be easily added to a sidebar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 sidebar.data.add({
@@ -35,7 +37,6 @@ sidebar.data.add({
 
 You can provide the [following properties](sidebar/api/api_customhtml_properties.md) in the configuration object of a Custom HTML control.
 
-Working with Custom HTML
------------------------
+##  Working with Custom HTML
 
-You can perform operations over the **Custom HTML** item with the help of the available [Sidebar API](sidebar/api/refs/sidebar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
+You can perform operations over the **Custom HTML** item with the help of the available [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

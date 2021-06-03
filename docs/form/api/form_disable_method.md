@@ -1,27 +1,24 @@
 ---
-sidebar_label: disable
-title: disable
----          
+sidebar_label: disable()
+title: JavaScript Form - disable Method 
+description: You can explore the disable method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# disable()
 
 @short: disables a form on a page
 
 @signature: {'disable(): void;'}
 
-@params:
-
 @example:
 form.disable();
-
 
 @descr:
 
 **Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
 
-@relatedapi: form/api/form_enable_method.md
-form/api/form_isdisabled_method.md
+@changelog: added in v6.4
 
-@related: form/work_with_form.md#enablingdisablingaform
+[comment]: # (@relatedapi: form/api/form_enable_method.md form/api/form_isdisabled_method.md)
 
-**Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
-
-@changelog:added in v6.4
+[comment]: # (@related: form/work_with_form.md#enablingdisabling-a-form)

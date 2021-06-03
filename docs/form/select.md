@@ -1,7 +1,10 @@
 ---
 sidebar_label: Select
-title: Select
----          
+title: JavaScript Form - Select 
+description: You can explore the Select of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Select
 
 An advanced select box that provides a set of options to choose from.
 
@@ -54,7 +57,7 @@ View [the full list of configuration properties of the Select control](form/api/
 
 ## Working with Select
 
-You can manipulate a Select control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Select control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 

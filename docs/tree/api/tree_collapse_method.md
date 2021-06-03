@@ -1,26 +1,25 @@
 ---
-sidebar_label: collapse
-title: collapse
----          
+sidebar_label: collapse()
+title: JavaScript Tree - collapse Method 
+description: You can explore the collapse method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# collapse()
 
 @short: collapses a tree item by id
 
 @signature: {'collapse(id: Id): void;'}
 
 @params:
-- id	string		the id of an item to collapse
+`id: string` - the id of an item to collapse
 
 @example:
 tree.collapse("history");
-
-
 
 @descr:
 
 **Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
 
-@related: tree/work_with_tree.md#expandingcollapsingitems
+[comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)
 
-
-
-@relatedapi: tree/api/tree_expand_method.md
+[comment]: # (@relatedapi: tree/api/tree_expand_method.md)

@@ -1,19 +1,21 @@
 ---
 sidebar_label: beforeHide
-title: beforeHide
----          
+title: JavaScript Form - beforeHide Event 
+description: You can explore the beforeHide event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeHide
 
 @short: fires before a Form control is hidden
 
 @signature: {'beforeHide: (name: string | number, value?: any) => boolean | void;'}
 
 @params:
-- name | id		string | number		the name (or id, if the name is not specified) of the Form control
-- value     any         the current value of the control
+- `name|id: string | number` - the name (or id, if the name is not specified) of the Form control
+- `value: any` - the current value of the control
 
 @returns:
-- param     boolean     false - to prevent a control from being hidden, otherwise true
-
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.events.on("BeforeHide", function(name, value) {
@@ -25,9 +27,9 @@ form.events.on("BeforeHide", function(name, value) {
 
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
-@relatedapi: form/api/form_afterhide_event.md
-
 @changelog:
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+
+[comment]: # (@relatedapi: form/api/form_afterhide_event.md)

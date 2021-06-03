@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Menu - Initialization 
+description: You can explore the initialization of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxMenu into an application, you need to take the following simple steps:
 
@@ -10,7 +13,6 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 - [Create a container](#create-a-container)
 - [Initialize Menu](#initialize-menu) with the object constructor
 - [Load data into Menu](#load-data-into-menu)
-
 
 ~~~html
 <!DOCTYPE html>
@@ -32,8 +34,7 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 
 **Related sample**: [Menu. Basic Menu Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -45,8 +46,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container
--------------------
+## Create a container
 
 Add a container for the Menu and give it an id, e.g. "menu_container":
 
@@ -54,9 +54,7 @@ Add a container for the Menu and give it an id, e.g. "menu_container":
 <div id="menu_container"></div>
 ~~~
 
-
-Initialize Menu
-----------------
+## Initialize Menu
 
 Initialize Menu with the `dhx.Menu` object constructor. The constructor takes two parameters:
 
@@ -71,8 +69,7 @@ var menu = new dhx.Menu("menu_container");
 
 You can find the full list of Menu configuration properties in the [Menu API overview](menu/api/api_overview.md#properties) article.
 
-Load data into Menu
-------------------
+## Load data into Menu
 
 There are two handy ways of loading data, i.e. a set of controls into Menu:
 
@@ -130,4 +127,3 @@ menu.data.parse(data);
 **Related sample**: [Menu. Basic Menu Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
 Detailed information on loading data into Menu is given in the article [](menu/from_script.md).
-

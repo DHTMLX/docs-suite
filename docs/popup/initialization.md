@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Popup - Initialization 
+description: You can explore the initialization of Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxPopup into an application, you need to take the following simple steps:
 
@@ -55,7 +58,7 @@ popup.show("popup_container");
 ~~~
 
 To show a created popup on a page, you should call the [](popup/api/popup_show_method.md) method after initialization of the component.
-    
+
 ### Set content
 
 There are several ways of adding content into the dhtmlxPopup:
@@ -78,4 +81,3 @@ popup.show();
 ~~~
 
 **Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
-

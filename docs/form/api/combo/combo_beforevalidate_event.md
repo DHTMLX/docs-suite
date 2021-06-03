@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeValidate
-title: beforeValidate
----          
+title: JavaScript Form - beforeValidate Combo Box Event 
+description: You can explore the beforeValidate Combo Box event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeValidate
 
 @short: fires before the control value is validated
 
 @signature: {'beforeValidate: (value: string | string[]) => boolean | void;'}
 
 @params:
-- value       string|string[]  the value to be validated
+`value: string | string[]` - the value to be validated
 
 @returns:
-param   boolean     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("combo").events.on("BeforeValidate", function(value) {
@@ -19,10 +22,8 @@ form.getItem("combo").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
 
-@relatedapi: form/api/combo/combo_validate_method.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: form/api/combo/combo_validate_method.md)

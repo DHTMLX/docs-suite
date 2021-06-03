@@ -1,20 +1,22 @@
 ---
 sidebar_label: afterHide
-title: afterHide
----          
+title: JavaScript Layout - afterHide Event 
+description: You can explore the afterHide event of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterHide
 
 @short: fires after a cell is hidden
 
 @signature: {'afterHide: (id: string) => void;'}
 
 @params:
-- id		string		the id of a cell
+`id: string` - the id of a cell
 
 @example:
 layout.events.on("AfterHide", function(id){
 	// your logic here
 });
-
 
 @descr:
 
@@ -22,4 +24,3 @@ layout.events.on("AfterHide", function(id){
 
 @changelog:
 added in v6.2
-

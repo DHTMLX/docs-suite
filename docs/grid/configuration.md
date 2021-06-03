@@ -1,7 +1,10 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Grid - Configuration 
+description: You can explore the configuration of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Configuration
 
 DHTMLX Grid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
 
@@ -22,10 +25,9 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Each column object may contain a set of properties. 
+Each column object may contain a set of properties.
 
 {{note You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).}}
-
 
 ## Alignment
 
@@ -63,22 +65,22 @@ var grid = new dhx.Grid("grid_container", {
 
 You can configure columns' settings so that their width would automatically adjust to their content. Use the [](grid/api/grid_adjust_config.md) property for this purpose. The property can take one of four values:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>"header"</b></td>
+			<td><b>"header"</b></td>
 			<td>adjusts the columns to the width of their header</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"footer"</b></td>
+			<td><b>"footer"</b></td>
 			<td>adjusts the columns to the width of their footer</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"data"</b></td>
+			<td><b>"data"</b></td>
 			<td>adjusts the columns to the width of their content</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>true</b></td>
+			<td><b>true</b></td>
 			<td>combines the above mentioned modes and adjusts the column to the bigger value</td>
 		</tr>
     </tbody>
@@ -128,11 +130,9 @@ As a result, the height of the cells will automatically adjust to their content.
 
 But, **note**, that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.
 
-
 ## Autowidth for columns
 
 It is possible to automatically adjust the size of Grid columns to the size of Grid with the help of the [](grid/api/grid_autowidth_config.md) configuration option, like this:
-
 
 ~~~js
 var grid = new dhx.Grid("grid_container", {
@@ -168,8 +168,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Drag-n-drop of Grid columns
-----------------------------
+## Drag-n-drop of Grid columns
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
@@ -223,7 +222,6 @@ var grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
 
 {{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](grid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
-
 
 ## Editing Grid and separate columns
 
@@ -543,32 +541,31 @@ var grid = new dhx.Grid("grid_container", {
 
 ### The list of configuration properties for comboFilter
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>filter</b></td>
+			<td><b>filter</b></td>
 			<td>(<i>function</i>) sets a custom function for filtering Combo Box options</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>readonly</b></td>
+			<td><b>readonly</b></td>
 			<td>(<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>template</b></td>
+			<td><b>template</b></td>
 			<td>(<i>function</i>) sets a template of displaying options in the popup list</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>placeholder</b></td>
+			<td><b>placeholder</b></td>
 			<td>(<i>string</i>) sets a placeholder in the input of ComboBox</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>virtual</b></td>
+			<td><b>virtual</b></td>
 			<td>(<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</td>
 		</tr>
     </tbody>
 </table>
 <br/>
-
 
 ## Header/footer height
 
@@ -586,7 +583,6 @@ var grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
 
 The default value of the mentioned properties is 40.
-
 
 ## Hidden columns
 
@@ -719,7 +715,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 </table>
 <br/>
 
-
 ## Keyboard Navigation
 
 dhtmlxGrid provides the keyboard navigation that will help you manipulate your grid faster. 
@@ -728,22 +723,22 @@ dhtmlxGrid provides the keyboard navigation that will help you manipulate your g
 
 There are four navigation keys that Grid enables by default:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>PageUp</b></td>
+			<td><b>PageUp</b></td>
 			<td>scroll Grid up to the height of the visible content (without change of the selected cell)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>PageDown</b></td>
+			<td><b>PageDown</b></td>
 			<td>scroll Grid down to the height of the visible content (without change of the selected cell)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Home</b></td>
+			<td><b>Home</b></td>
 			<td>navigate to the beginning of the Grid content (without change of the selected cell)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>End</b></td>
+			<td><b>End</b></td>
 			<td>navigate to the end of the Grid content (without change of the selected cell)</td>
 		</tr>
     </tbody>
@@ -762,6 +757,7 @@ var grid = new dhx.Grid("grid", {
 **Related sample**: [Grid. Key Navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
 ### Arrow shortcut keys
+
 In case you want to enable the arrow keys that allow moving the selection between cells, you need to specify the [selection](grid/api/grid_selection_config.md) property for Grid.
 
 ~~~js
@@ -777,46 +773,46 @@ var grid = new dhx.Grid("grid", {
 
 The list of the arrow shortcut keys:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowUp</b></td>
+			<td><b>ArrowUp</b></td>
 			<td>move selection to the previous vertical cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowDown</b></td>
+			<td><b>ArrowDown</b></td>
 			<td>move selection to the next vertical cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowLeft</b></td>
+			<td><b>ArrowLeft</b></td>
 			<td>move selection to the previous horizontal cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowRight</b></td>
+			<td><b>ArrowRight</b></td>
 			<td>move selection to the next horizontal cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+ArrowUp</b></td>
+			<td><b>Ctrl+ArrowUp</b></td>
 			<td>move selection to the first vertical cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+ArrowDown</b></td>
+			<td><b>Ctrl+ArrowDown</b></td>
 			<td>move selection to the last vertical cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+ArrowLeft</b></td>
+			<td><b>Ctrl+ArrowLeft</b></td>
 			<td> move selection to the first horizontal cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+ArrowRight</b></td>
+			<td><b>Ctrl+ArrowRight</b></td>
 			<td> move selection to the last horizontal cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Tab</b></td>
+			<td><b>Tab</b></td>
 			<td> move selection to the next horizontal cell or the first cell of the next row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Shit+Tab</b></td>
+			<td><b>Shit+Tab</b></td>
 			<td> move selection to the previous horizontal cell or to the first cell of the previous row</td>
 		</tr>
     </tbody>
@@ -824,38 +820,38 @@ The list of the arrow shortcut keys:
 
 The arrow shortcut keys listed below do not work when the **selection** property is set to *"complex"*. Use another mode (*"cell" or "row"*) in case you you want to activate these navigation keys:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>Shift+ArrowUp</b></td>
+			<td><b>Shift+ArrowUp</b></td>
 			<td>move selection to the previous vertical cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Shift+ArrowDown</b></td>
+			<td><b>Shift+ArrowDown</b></td>
 			<td>move selection to the next vertical cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Shift+ArrowLeft</b></td>
+			<td><b>Shift+ArrowLeft</b></td>
 			<td>move selection to the previous horizontal cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Shift+ArrowRight</b></td>
+			<td><b>Shift+ArrowRight</b></td>
 			<td>move selection to the next horizontal cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+Shift+ArrowUp</b></td>
+			<td><b>Ctrl+Shift+ArrowUp</b></td>
 			<td>move selection to the first vertical cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+Shift+ArrowDown</b></td>
+			<td><b>Ctrl+Shift+ArrowDown</b></td>
 			<td>move selection to the last vertical cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+Shift+ArrowLeft</b></td>
+			<td><b>Ctrl+Shift+ArrowLeft</b></td>
 			<td>move selection to the first horizontal cell with the change of the selected cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+Shift+ArrowRight</b></td>
+			<td><b>Ctrl+Shift+ArrowRight</b></td>
 			<td>move selection to the last horizontal cell with the change of the selected cells</td>
 		</tr>
     </tbody>
@@ -879,14 +875,14 @@ var grid = new dhx.Grid("grid", {
 
 The list of the shortcut keys for editing:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>Enter</b></td>
+			<td><b>Enter</b></td>
 			<td>open the editor in the selected cell. If the editor is currently opened - close the editor and save changes</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Escape</b></td>
+			<td><b>Escape</b></td>
 			<td>close the editor of the selected cell without saving</td>
 		</tr>
     </tbody>
@@ -908,7 +904,7 @@ var grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 Since the **multiselection** configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
-A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select. 
+A range of Grid cells/rows can be selected by clicking the first element to select and then, while holding down the Shift key, clicking the last element to select.
 
 ## Resizing
 
@@ -940,7 +936,6 @@ var grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Resizable Columns](https://snippet.dhtmlx.com/aeqzuks0)
-
 
 {{note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
 }}
@@ -989,7 +984,6 @@ var dataset = [
 
 There is a possibility to apply some styling to a row via the [rowCss](grid/api/grid_rowcss_config.md) property. It is a function that takes the id of a row as a parameter and returns a string with the name of a CSS class.
 
-
 ~~~js
 <style>
     .my_custom_row {
@@ -1007,23 +1001,22 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
 
-
 ## Selection
 
 dhtmlxGrid includes the selection feature that allows highlighting Grid elements depending on the chosen mode. The [selection](grid/api/grid_selection_config.md) property enables selection in a grid. It can take three values:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>to move selection between Grid rows</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>cell</b></td>
+			<td><b>cell</b></td>
 			<td>to move selection between Grid cells</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>complex</b></td>
+			<td><b>complex</b></td>
 			<td>to highlight both a selected cell and the row it belongs to</td>
 		</tr>
     </tbody>
@@ -1092,34 +1085,34 @@ var grid = new dhx.Grid("grid_container", {
 The component has the [spans](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
 Each span object contains the following properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string|number</i>) obligatory, the id of a row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+			<td><b>column</b></td>
 			<td>(<i>string|number</i>) obligatory, the id of a column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>rowspan</b></td>
+			<td><b>rowspan</b></td>
 			<td>(<i>number</i>) optional, the number of rows in a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>colspan</b></td>
+			<td><b>colspan</b></td>
 			<td>(<i>number</i>) optional, the number of columns in a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string|number</i>) optional, the content of a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><a href="#tooltip"><b>tooltip</b></a></td>
+			<td><a href="#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>

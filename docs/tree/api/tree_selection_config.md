@@ -1,7 +1,10 @@
 ---
 sidebar_label: selection
-title: selection
----          
+title: JavaScript Tree - selection Config 
+description: You can explore the selection config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# selection
 
 @short: enables selection of Tree items
 
@@ -9,24 +12,17 @@ title: selection
 
 @default: true
 
-@example: 
+@example:
 const tree = new dhx.Tree("tree_container", {
     selection: false,
 });
 
-
-
-@descr: 
-
-
+@descr:
 
 **Related sample**: [Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
 
-@relatedapi: tree/api/selection/selection_enable_method.md
-tree/api/selection/selection_disable_method.md
-
-@related: tree/configuration.md#selectionofitems
-tree/usage_selection.md
-
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: tree/api/selection/selection_enable_method.md tree/api/selection/selection_disable_method.md)
+
+[comment]: # (@related: tree/configuration.md#selection-of-items tree/usage_selection.md)

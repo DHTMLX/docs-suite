@@ -1,18 +1,20 @@
 ---
-sidebar_label: getSeries
-title: getSeries
----          
+sidebar_label: getSeries()
+title: JavaScript Chart - getSeries Method 
+description: You can explore the getSeries method of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getSeries()
 
 @short: returns an object with configuration of a specified series
 
 @signature: {'getSeries(id: string): ISeria;'}
 
 @params:
-- id	string		the id of a series
+`id: string` - the id of a series
 
 @returns:
-- ISeria	object		 an object with configuration of a series
-
+An object with configuration of a series.
 
 @example:
 var config = chart.getSeries("A");
@@ -29,15 +31,8 @@ var config = chart.getSeries("A");
     ]
 }
 */
-
-
-
 @descr:
-
-
-@related:
-chart/usage.md#gettingseriesconfiguration
 
 **Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
 
-
+[comment]: # (@related: chart/usage.md#getting-series-configuration)

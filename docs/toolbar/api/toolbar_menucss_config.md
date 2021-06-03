@@ -1,13 +1,16 @@
 ---
 sidebar_label: menuCss
-title: menuCss
----          
+title: JavaScript Toolbar - menuCss Config 
+description: You can explore the menuCss config of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# menuCss
 
 @short: adds style classes to all containers of Toolbar controls with nested items 
 
 @signature: {'menuCss?: string;'}
 
-@example: 
+@example:
 <style>
     .my_first_class {
         /*some styles*/
@@ -17,12 +20,9 @@ title: menuCss
         /*some styles*/
     }
 </style>
- 
+
 var toolbar = new dhx.Toolbar({
     menuCss:"my_first_class my_second_class"
 });
 
-
-
-@descr: 
-
+@descr:

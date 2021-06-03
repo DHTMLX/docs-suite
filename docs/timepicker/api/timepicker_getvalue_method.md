@@ -1,17 +1,20 @@
 ---
-sidebar_label: getValue
-title: getValue
----          
+sidebar_label: getValue()
+title: JavaScript Timepicker - getValue Method 
+description: You can explore the getValue method of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getValue()
 
 @short: returns the current value of a TimePicker
 
 @signature: {'getValue(asOBject?: boolean): ITimeObject | string;'}
 
 @params:
-* asObject 		boolean		 optional, specifies that the value will be returned as an object, false by default
+`asObject: boolean` - optional, specifies that the value will be returned as an object, false by default
 
 @returns:
-- value	 		object | string		 the value of a timepicker
+Either an object or a string with the value of a timepicker.
 
 @example:
 // return value as a string in the 24-hour format
@@ -26,9 +29,9 @@ var val3 = timepicker2.getValue(); // -> "06:00AM"
 // return value as an object in the 12-hour format
 var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
-
-
 @descr:
+
+**Related sample**: [Timepicker. Get Timepicker Value](https://snippet.dhtmlx.com/k4atpgnd)
 
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 
@@ -37,10 +40,6 @@ The returned value can be of several types, depending on the passed parameter an
 - for the 24-hour format a return object value will contain key:value pairs for hours, minutes and their values
 - for the 12-hour format a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values
 
-**Related sample**: [Timepicker. Get Timepicker Value](https://snippet.dhtmlx.com/k4atpgnd)
+[comment]: # (@relatedapi: timepicker/api/timepicker_setvalue_method.md)
 
-@relatedapi:
-timepicker/api/timepicker_setvalue_method.md
-
-@related: timepicker/usage.md#setting-value
-
+[comment]: # (@related: timepicker/usage.md#setting-value)

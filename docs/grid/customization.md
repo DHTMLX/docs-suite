@@ -1,11 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
-description: description
----          
+title: JavaScript Grid - Customization 
+description: You can explore the customization of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling grid
-----------------
+# Customization
+
+## Styling grid
 
 There is a possibility to make changes in the look and feel of a grid. 
 
@@ -39,9 +40,7 @@ var grid = new dhx.Grid({
 
 **Related sample**: [Grid. Styling Grid](https://snippet.dhtmlx.com/c5tr3s5r)
 
-
-Styling header cells
--------------------
+## Styling header cells
 
 ![](../assets/grid/styling_header.png)
 
@@ -75,9 +74,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Styling Header Cells](https://snippet.dhtmlx.com/7o4elf48)
 
-
-Styling footer cells
--------------------
+## Styling footer cells
 
 You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the **text** property of the footer of a column:
 
@@ -112,8 +109,7 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Styling Footer Cells](https://snippet.dhtmlx.com/d254hcvp)
 
-Styling rows
----------------
+## Styling rows
 
 ![](../assets/grid/rowcss.png)
 
@@ -158,39 +154,37 @@ grid.addRowCss(rowId, "myCustomClass"); /*!*/
 
 where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>rowId</b></td>
+			<td><b>rowId</b></td>
 			<td>(<i>string,number</i>) the id of a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) the name of a CSS class</td>
 		</tr>
     </tbody>
 </table>
 
-
-Styling cells
-----------------
+## Styling cells
 
 ![](../assets/grid/cellcss.png)
 
 It is easy to style necessary cells using the **addCellCss()** method. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string,number</i>) the id of a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>string,number</i>) the id of a column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) the name of the CSS class</td>
 		</tr>
     </tbody>
@@ -210,29 +204,28 @@ grid.addCellCss(rowId, "netChange", "myCustomClass");
 
 **Related sample**: [Grid. Add Cell Css](https://snippet.dhtmlx.com/hskmp8rh)
 
-Adding custom marks to cells
--------------------
+## Adding custom marks to cells
 
 ![](../assets/grid/markcells.png)
 
 You can mark particular cells in a grid using the **mark** property of a column configuration. You need to set its value as a function that takes the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>cell</b></td>
+			<td><b>cell</b></td>
 			<td>(<i>string</i>) the value of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>columnCells</b></td>
+			<td><b>columnCells</b></td>
 			<td>(<i>array</i>) an array of all cell values in the specified column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>object</i>) the config of a column (see the columns config)</td>
 		</tr>
     </tbody>
@@ -276,14 +269,14 @@ var grid = new dhx.Grid("grid", {
 
 It is also possible to highlight cells with minimum and (or) maximum values in a grid using the **mark** property of a column configuration. The property is an object which takes two optional parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>min</b></td>
+			<td><b>min</b></td>
 			<td>(<i>string</i>) a custom CSS class to mark a cell that contains the minimum value</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>max</b></td>
+			<td><b>max</b></td>
 			<td>(<i>string</i>) a custom CSS class to mark a cell that contains the maximum value</td>
 		</tr>
     </tbody>
@@ -325,25 +318,24 @@ var grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Mark Cells](https://snippet.dhtmlx.com/buirf16n)
 
-Adding template to cells
------------------------------
+## Adding template to cells
 
 ![](../assets/grid/cell_templates.png)
 
-It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/configuration.md#columns). The template option is a function that takes three parameters:
+It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/api/api_gridcolumn_properties.md). The template option is a function that takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>cellValue</b></td>
+			<td><b>cellValue</b></td>
 			<td>(<i>any</i>) the value of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>object</i>) the config of a column</td>
 		</tr>
     </tbody>
@@ -401,14 +393,14 @@ const grid = new dhx.Grid("grid", {
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><i>key</i></td>
+			<td><i>key</i></td>
 			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><i>value</i></td>
+			<td><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>
@@ -420,25 +412,24 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
-Adding template to tooltip
----------------------
+## Adding template to tooltip
 
 ![](../assets/grid/tooltip_template.png)
 
-Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/configuration.md#columns) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>any</i>) the value of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>object</i>) the config of a column</td>
 		</tr>
     </tbody>
@@ -471,4 +462,3 @@ const grid = new dhx.Grid("grid", {
 **Related sample**: [Grid. Tooltip template](https://snippet.dhtmlx.com/954f7h9m)
 
 {{note You should enable the [htmlEnable](grid/configuration.md#html-content-of-grid-columns) option in the configuration of Grid (or configuration of the column) to activate HTML support for the tooltip.}}
-

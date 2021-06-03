@@ -1,26 +1,26 @@
 ---
-sidebar_label: load
-title: load
----          
+sidebar_label: load()
+title: JavaScript TreeCollection - load Method 
+description: You can explore the load method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# load()
 
 @short: loads items from a file
 
-@signature: {'load(url: IDataProxy, driver?: IDataDriver): Promise<any>'}
+@signature: {'load(url: IDataProxy | string, driver?: IDataDriver | DataDriver): Promise<any>'}
 
 @params:
-- url 		string		the path to the file
-- driver		string		optional, type of data (json, csv, xml), json by default
+- `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
+- `driver: object | string` - optional, DataDriver or type of data (json, csv, xml), json by default
 
 @returns:
-
-- loaded		promise		a promise of data loading
+A promise of data loading.
 
 @example:
 myToolbar.data.load("[path to this file]/file.xml", "xml");
 
-
 @descr:
-
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -42,4 +42,3 @@ myToolbar.data.loadData.then(function(){
 // loadData executes a callback function after an asynchronous
 // data loading has completed
 ~~~
-

@@ -1,29 +1,24 @@
 ---
-sidebar_label: getCell
-title: getCell
----          
+sidebar_label: getCell()
+title: JavaScript TreeGrid - getCell Method 
+description: You can explore the getCell method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getCell()
 
 @short: returns the object of a selected cell
 
-@signature: {'getCellRect(row: string | number, col: string | number): ICellRect;'}
+@signature: {'getCell(): ICell;'}
 
 @returns:
-param   object  an object with parameters of a selected cell
-
-
+An object with parameters of a selected cell.
 
 @example:
 var selectedCell = treegrid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
-
-
 @descr:
 
+[comment]: # (@related: treegrid/usage_selection.md#getting-object-of-a-selected-cell)
 
-@related: treegrid/usage_selection.md#gettingobjectofaselectedcell
-
-@relatedapi: treegrid/api/selection/selection_enable_method.md
-
-
-
+[comment]: # (@relatedapi: treegrid/api/selection/selection_enable_method.md)

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Chart - Initialization 
+description: You can explore the initialization of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxChart in an application, you need to take the following steps:
 
@@ -51,8 +54,7 @@ To initialize dhtmlxChart in an application, you need to take the following step
 
 **Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
-Include source files
-----------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of dhtmlxChart into the header of the created file. The Chart component can be used standalone or as a part of the Suite library.
 
@@ -76,8 +78,7 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxChart into
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
 
-Create a container 
------------------
+## Create a container 
 
 Add a container for Chart and give it an id, "chart_container", for example: 
 
@@ -85,8 +86,7 @@ Add a container for Chart and give it an id, "chart_container", for example:
 <div id="chart_container"></div>
 ```
 
-Initialize Chart
-----------------------
+## Initialize Chart
 
 Initialize Chart with the `dhx.Chart` object constructor. The constructor has two parameters:
 
@@ -171,4 +171,3 @@ chart.data.load("../common/dataset.json");
 ~~~
 
 **Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)
-

@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Tree - Customization 
+description: You can explore the customization of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling 
-----------------
+# Customization
+
+## Styling
 
 There is a possibility to make changes in the look and feel of a tree. 
 
@@ -27,7 +29,6 @@ For this you need to take the following steps:
 	}
 </style>
 ~~~
-
 
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](tree/api/tree_css_config.md) property in the Tree configuration:
 
@@ -58,13 +59,11 @@ var tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-Changing icons 
-----------------
+## Changing icons
 
 ![](../assets/tree/custom_icons.png)
 
 **Related sample**: [Tree. Custom Icons](https://snippet.dhtmlx.com/lpsgn3j7)
-
 
 You can change the default icons used for tree items. dhtmlxTree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
 For this, you need to include the desired icon font on a page and apply icons to necessary items.
@@ -95,5 +94,3 @@ tree.data.update("history", {
 ~~~
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
-
-

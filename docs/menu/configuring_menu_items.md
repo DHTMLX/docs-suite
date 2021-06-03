@@ -1,14 +1,16 @@
 ---
 sidebar_label: List of Menu Controls
-title: List of Menu Controls
----          
+title: JavaScript Menu - List of Menu Controls 
+description: You can explore the list of Menu controls of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# List of Menu Controls
 
 In this article you'll find the controls you can use in dhtmlxMenu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
-To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection/api/refs/treecollection.md). Check the [related article](menu/work_with_menu.md).
+To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection/index.md). Check the [related article](menu/work_with_menu.md).
 
-MenuItem
------------
+## MenuItem
 
 MenuItem is a drop-down list of options.
 
@@ -35,9 +37,7 @@ menu.data.add({
 
 See [the full list of properties](menu/api/api_menuitem_properties.md) that you can provide in the configuration object of a MenuItem control.
 
-
-NavItem
-----------
+## NavItem
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
@@ -53,11 +53,9 @@ menu.data.add({
 
 **Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
 
-
 #### Properties
 
 See [the full list of properties](menu/api/api_navitem_properties.md) that you can provide in the configuration object of a NavItem control.
-
 
 ### Adding an icon
 
@@ -105,7 +103,7 @@ menu.show(id);
 menu.hide(id);
 ~~~
 
-### Enabling/disabling a navItem 
+### Enabling/disabling a navItem
 
 Any navItem in the menu can be enabled/disabled:
 
@@ -113,7 +111,6 @@ Any navItem in the menu can be enabled/disabled:
 menu.enable(id);
 menu.disable(id);
 ~~~
-
 
 ## Custom HTML
 
@@ -123,7 +120,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ### Adding Custom HTML
 
-Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 menu.data.add({
@@ -141,9 +138,7 @@ menu.data.add({
 
 See [the full list of properties](menu/api/api_customhtml_properties.md) that you can provide in the configuration object of a Custom HTML control.
 
-
-Separator
-------------
+## Separator
 
 This is a horizontal (between menu options) or vertical (between menu items) line separating items/groups of items from each other.
 
@@ -165,13 +160,11 @@ menu.data.add({
 
 See [the full list of properties](menu/api/api_separator_properties.md) that you can provide in the configuration object of a Separator control.
 
-Spacer
------------
+## Spacer
 
 This item takes space on the toolbar and is used for aligning controls.
 
 ![DHX Toolbar spacer](../assets/menu/spacer.png)
-
 
 ### Adding Spacer
 
@@ -188,6 +181,3 @@ toolbar.data.add({
 #### Properties
 
 See [the full list of properties](menu/api/api_spacer_properties.md) that you can provide in the configuration object of a Spacer control.
-
-@todo:
-add links to api and to samples, complete the list of attrs for item

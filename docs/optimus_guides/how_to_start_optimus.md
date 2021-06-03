@@ -1,7 +1,10 @@
 ---
 sidebar_label: How to start with Optimus
-title: How to start with Optimus
----  
+title: How to Start with Optimus 
+description: You can explore how to start with Optimus in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# How to start with Optimus
 
 This guide gives you step-by-step instructions on how to create a simple application with lightweight JavaScript UI Framework.
 
@@ -9,7 +12,7 @@ The guide will teach you how to create your own views on the base of DHTMLX Opti
 
 {{note The complete source code is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-5" target="_blank">GitHub</a>. You can check the step-by-step changes by switching between the branches with the related names.}}
 
-For more information about working with the components of DHTMLX Suite, see [DHTMLX documentation](https://docs.dhtmlx.com). The detailed information on DHTMLX Optimus is presented [here](optimus_guides/index.md).
+For more information about working with the components of DHTMLX Suite, see **DHTMLX documentation**. The detailed information on DHTMLX Optimus is presented [here](optimus_guides/index.md).
 
 So, let's get started! 
 
@@ -82,8 +85,7 @@ Let's consider how we've initialized our starter application:
 
 2\. Next, we've created an *index.js* file - the entry point of the app.  
 
-{{snippet   src/index.js}}
-~~~js
+~~~js title="src/index.js"
 // import css styles
 import "./assets/css/index.css"; 
 // import the App class from the "dhx-optimus" library
@@ -265,13 +267,13 @@ export class TopLayout extends View {
 
 In the above code we've returned Layout as a view and placed the *EmptyView* and *ToolbarView* views into the cells of the layout. 
 
-To render the views, the **show()** method is called. For details about rendering of the components of the DHTMLX Suite library, see the [documentation](optimus_guides/index.md#initialization-of-the-dhtmlxlayout-component).
+To render the views, the **show()** method is called. For details about rendering of the components of the DHTMLX Suite library, see the [documentation](optimus_guides/index.md#initialization-of-the-dhtmlx-layout-component).
 
 But, if you've already run your app, you can notice that nothing happens when switching the buttons in the toolbar. To solve this problem, we need to add global events.
 
 ### Adding the global event bus
 
-Adding global events is the best way to implement exchanging data between the components. 
+Adding global events is the best way to implement exchanging of data between the components. 
 
 Open the *ToolbarView.js* file and apply the **ready()** method to add the *click* event handler of the toolbar.
 
@@ -331,7 +333,7 @@ You can also learn more details about how to:
 
 - [pass parameters to child components](optimus_guides/index.md#passing-data-to-child-components);
 - [use global event bus](optimus_guides/index.md#subscribing-to-global-events); 
-- [work with the DHTMLX Suite library in views](optimus_guides/index.md#working-with-dhtmlxsuites-widgets).
+- [work with the DHTMLX Suite library in views](optimus_guides/index.md#working-with-widgets-of-suite).
 
 Step 3. Define the global state of the app
 --------------------------------
@@ -421,7 +423,7 @@ export class ToolbarView extends View {
 }
 ~~~
 
-The **observe()** method is add. Now, after the *active* state of the app changes, the *select* method of the toolbar will set the actual state of the toolbar.
+The **observe()** method is added. Now, after the *active* state of the app changes, the *select* method of the toolbar will set the actual state of the toolbar.
 
 The updated *TopLayout.js* file will look like this:
 
@@ -511,7 +513,7 @@ export const data = [
 
 In practice, you can get the data by sending AJAX request to the server.
 
-3\. After that, we'll initialize DHTMLX DataCollection in the MyApp class to simplify exchanging data between the DHTMLX widgets.
+3\. After that, we'll initialize DHTMLX DataCollection in the MyApp class to simplify exchanging of data between the DHTMLX widgets.
 
 ~~~js title="src/index.js"
 ...
@@ -698,7 +700,7 @@ Step 5. Provide editing data
 
 {{note The full code for Step 5 is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-5" target="_blank">GitHub</a>.}}
 
-In the previous steps we have configured the logic for exchanging data between the components and for asynchronously observing the data changes. However, the widgets are still static. 
+In the previous steps we have configured the logic for exchanging of data between the components and for asynchronously observing the data changes. However, the widgets are still static. 
 
 Let's add dynamics into the app and make it possible to add and remove data:  
 
@@ -811,7 +813,7 @@ export class ToolbarView extends View {
 }
 ~~~
 
-2\. Next we'll expand the DataView class by adding a handler to the "removeItem" event, as in:
+2\. Next, we'll expand the DataView class by adding a handler to the "removeItem" event, as in:
 
 ~~~js title="src/views/content/DataView.js"
 import { View } from "dhx-optimus";
@@ -948,7 +950,7 @@ We hope you have learned how to build the DHTMLX-based app with DHTMLX Optimus a
 
 You can find the initial code on <a href="https://github.com/DHTMLX/optimus-starter-app/" target="_blank">GitHub</a>, clone or download it and use it for your projects.
 
-You can read more information about DHTMLX Suite [here](https://docs.dhtmlx.com). For details about API methods of DHTMLX Optimus, see [the documentation](optimus_guides/index.md).
+For details about API methods of DHTMLX Optimus, see [the documentation](optimus_guides/index.md).
 
 Check more demos build with Optimus:
 

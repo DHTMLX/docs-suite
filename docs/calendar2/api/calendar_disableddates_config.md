@@ -10,7 +10,7 @@ function disabledDates;
 disabledDates?: (a: Date) => boolean;
 ```
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar", {
 	disabledDates: function(date) {
 		var disabled = {

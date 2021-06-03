@@ -1,7 +1,10 @@
 ---
-sidebar_label: collapseAll
-title: collapseAll
----          
+sidebar_label: collapseAll()
+title: JavaScript Tree - collapseAll Method 
+description: You can explore the collapseAll method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# collapseAll()
 
 @short: collapses all expanded Tree items
 
@@ -10,14 +13,10 @@ title: collapseAll
 @example:
 tree.collapseAll();
 
-
 @descr:
-
-@related: tree/work_with_tree.md#expandingcollapsingitems
 
 **Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
 
+[comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)
 
-
-@relatedapi:
-tree/api/tree_expandall_method.md
+[comment]: # (@relatedapi: tree/api/tree_expandall_method.md)

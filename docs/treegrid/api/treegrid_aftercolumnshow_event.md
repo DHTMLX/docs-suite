@@ -1,24 +1,25 @@
 ---
 sidebar_label: afterColumnShow
-title: afterColumnShow
----          
+title: JavaScript TreeGrid - afterColumnShow Event 
+description: You can explore the afterColumnShow event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterColumnShow
 
 @short: fires after a column is shown
 
 @signature: {'afterColumnShow: (column: ICol) => void;'}
 
 @params:
-- column   object  an object with a column configuration
+`column: object` - an object with a column configuration
 
 @example:
 treegrid.events.on("AfterColumnShow", function(column){
     // your logic here
 });
 
-
 @descr:
-
-@changelog: added in v7.0
 
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
+@changelog: added in v7.0

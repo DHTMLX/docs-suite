@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Layout - Initialization 
+description: You can explore the initialization of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxLayout into an application, you need to take the following simple steps:
 
@@ -10,7 +13,6 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 - [Create a container](#create-a-container)
 - [Define Layout structure](#define-layout-structure)
 - [Initialize Layout](#initialize-layout) with the object constructor
-
 
 ~~~html
 <!DOCTYPE html>
@@ -44,8 +46,7 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 
 **Related sample**: [Layout. Basic Initialization](https://snippet.dhtmlx.com/ls3cbcys)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -57,9 +58,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create a container
--------------------
+## Create a container
 
 Add a container for the Layout and give it an id, e.g. "layout_container":
 
@@ -67,8 +66,7 @@ Add a container for the Layout and give it an id, e.g. "layout_container":
 <div id="layout_container"></div>
 ~~~
 
-Define Layout structure
-------------------
+## Define Layout structure
 
 Layout consists of a set of cells arranged either into rows or into columns. The structure of a layout can be rather complex, since there can also be nested rows and columns.
 
@@ -103,8 +101,7 @@ var	cols = [
 ]
 ~~~
 
-Initialize Layout
----------------------
+## Initialize Layout
 
 Initialize Layout with the `dhx.Layout` object constructor. The constructor takes two parameters:
 
@@ -114,7 +111,6 @@ Initialize Layout with the `dhx.Layout` object constructor. The constructor take
 ~~~js
 var layout = new dhx.Layout("layout_container", {cols});
 ~~~
-
 
 ### Configuration properties
 
@@ -129,7 +125,3 @@ See the list of Layout properties [here](layout/api/api_overview.md#layout-prope
 There is also a set of properties you can specify for a Layout cell to configure it according to your needs. 
 
 You will find the detailed information on configuration options of the cell object in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
-
-
-
-

@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: Sidebar API overview
+title: JavaScript Sidebar - API Overview 
+description: You can explore the API of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Sidebar API overview
 
 ## Sidebar methods
 
@@ -58,28 +61,26 @@ Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 | [](sidebar/api/sidebar_minwidth_config.md)  | @getshort(sidebar/api/sidebar_minwidth_config.md)  |
 | [](sidebar/api/sidebar_width_config.md)     | @getshort(sidebar/api/sidebar_width_config.md)     |
 
-
-
 ## Sidebar Custom HTML properties
 
 A Custom HTML control can possess the [following properties](sidebar/api/api_customhtml_properties.md).
 
-## Sidebar MenuItem properties 
+## Sidebar MenuItem properties
 
 A MenuItem control may have the [following properties](sidebar/api/api_menuitem_properties.md).
 
-## Sidebar NavItem properties 
+## Sidebar NavItem properties
 
 A NavItem control can have the [following properties](sidebar/api/api_navitem_properties.md).
 
-## Sidebar Separator properties 
+## Sidebar Separator properties
 
 A Separator control may possess the [following properties](sidebar/api/api_separator_properties.md).
 
-## Sidebar Spacer properties 
+## Sidebar Spacer properties
 
 A Spacer control may have the [following properties](sidebar/api/api_spacer_properties.md).
 
-## Sidebar Title properties 
+## Sidebar Title properties
 
 A Title control may possess the [following properties](sidebar/api/api_title_properties.md).

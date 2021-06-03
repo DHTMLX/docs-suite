@@ -1,13 +1,16 @@
 ---
 sidebar_label: maxPoints
-title: maxPoints
----          
+title: JavaScript Chart - maxPoints Config 
+description: You can explore the maxPoints config of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# maxPoints
 
 @short: displays an average number of values in case a data set is too large to show all the values in the chart
 
 @signature: {'maxPoints?: number;'}
 
-@example: 
+@example:
 var chart = new dhx.Chart("chart", {
 	type:"line",
 	maxPoints:100
@@ -15,8 +18,6 @@ var chart = new dhx.Chart("chart", {
 
 @descr:
 
-**Related sample**:
-- [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
+**Related sample**: [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
 
-@related:
-chart/configuration_properties.md#main-properties
+[comment]: # (@related: chart/configuration_properties.md#main-properties)

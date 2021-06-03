@@ -1,19 +1,20 @@
 ---
-sidebar_label: getLength
-title: getLength
----          
+sidebar_label: getLength()
+title: JavaScript DataCollection - getLength Method 
+description: You can explore the getLength method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getLength()
 
 @short: returns the number of all elements of a data collection
 
 @signature: {'getLength(): number;'}
 
 @returns:
-- items        number       the number of elements of a data collection
+The number of elements of a data collection.
 
 @example:
-datacollection.getLength();
-
-
+component.data.getLength();
 
 @descr:
 

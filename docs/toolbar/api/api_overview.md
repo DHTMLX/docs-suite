@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: Toolbar API overview
+title: JavaScript Toolbar - API Overview 
+description: You can explore the API of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Toolbar API overview
 
 ## Toolbar methods
 
@@ -50,14 +53,13 @@ Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 | [](toolbar/api/toolbar_data_config.md)    | @getshort(toolbar/api/toolbar_data_config.md)    |
 | [](toolbar/api/toolbar_menucss_config.md) | @getshort(toolbar/api/toolbar_menucss_config.md) |
 
-
 ## Toolbar Button properties
 
-A Button control can have [next properties](toolbar/api/api_button_properties.md).
+A Button control can have the [following properties](toolbar/api/api_button_properties.md).
 
 ## Toolbar Custom HTML button properties
 
-A Custom HTML button control may possess [next properties](toolbar/api/api_customhtmlbutton_properties.md).
+A Custom HTML button control may possess the [following properties](toolbar/api/api_customhtmlbutton_properties.md).
 
 ## Toolbar Datepicker properties
 
@@ -65,32 +67,32 @@ A Datepicker control can have [next properties](toolbar/api/api_datepicker_prope
 
 ## Toolbar ImageButton properties
 
-An ImageButton control can have [next properties](toolbar/api/api_imagebutton_properties.md).
+An ImageButton control can have the [following properties](toolbar/api/api_imagebutton_properties.md).
 
 ## Toolbar Input properties
 
-An Input control can possess [next properties](toolbar/api/api_input_properties.md).
+An Input control can possess the [following properties](toolbar/api/api_input_properties.md).
 
 ## Toolbar MenuItem properties
 
-A MenuItem control can have [next properties](toolbar/api/api_menuitem_properties.md).
+A MenuItem control can have the [following properties](toolbar/api/api_menuitem_properties.md).
 
 ## Toolbar NavItem properties
 
-A NavItem control may have [next properties](toolbar/api/api_navitem_properties.md).
+A NavItem control may have the [following properties](toolbar/api/api_navitem_properties.md).
 
 ## Toolbar SelectButton properties
 
-A SelectButton control can have [next properties](toolbar/api/api_selectbutton_properties.md).
+A SelectButton control can have the [following properties](toolbar/api/api_selectbutton_properties.md).
 
 ## Toolbar Separator properties
 
-A Separator control may have [next properties](toolbar/api/api_separator_properties.md).
+A Separator control may have the [following properties](toolbar/api/api_separator_properties.md).
 
 ## Toolbar Spacer properties
 
-A Spacer control can possess [next properties](toolbar/api/api_spacer_properties.md).
+A Spacer control can possess the [following properties](toolbar/api/api_spacer_properties.md).
 
 ## Toolbar Title properties
 
-A Title control can have [next properties](toolbar/api/api_title_properties.md).
+A Title control can have the [following properties](toolbar/api/api_title_properties.md).

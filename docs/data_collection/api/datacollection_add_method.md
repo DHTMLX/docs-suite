@@ -1,18 +1,21 @@
 ---
-sidebar_label: add
-title: add
----          
+sidebar_label: add()
+title: JavaScript DataCollection - add Method 
+description: You can explore the add method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# add()
 
 @short: adds a new item to the component
 
 @signature: {'add(new_item: IDataItem | IDataItem[], index?: number): Id | Id[];'}
 
 @params:
-- new_item		object | array		the object of a new item or an array of item objects
-- index			number 				optional, the index of the position starting from which new items will be added
+- `new_item: object | array` - the object of a new item or an array of item objects
+- `index: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
-- id    string|string[]   the item's id or an array with ids of items
+Either a string with the item's id or an array of string values with ids of items.
 
 @example:
 // adding a new item into the beginning of a data collection 
@@ -38,12 +41,10 @@ component.data.add([
     }
 ]);
 
-
 @descr:
 
 **Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)
 
-@changelog:
-possibility to pass an array of items is added in v6.1
+@changelog: The possibility to pass an array of items is added in v6.1.
 
-@related:window/customization.md#controlsandoperations
+[comment]: # (@related:window/customization.md#controls-and-operations)

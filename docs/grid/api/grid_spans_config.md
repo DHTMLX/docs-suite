@@ -1,7 +1,10 @@
 ---
 sidebar_label: spans
-title: spans
+title: JavaScript Grid - spans Config 
+description: You can explore the spans config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# spans
 
 @short: describes the configuration of cols/rows spans
 
@@ -19,47 +22,47 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-
 @descr:
+
+**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
 
 Each object in the spans array contains the following properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
     <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string|number</i>) obligatory, the id of a row</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+			<td><b>column</b></td>
 			<td>(<i>string|number</i>) obligatory, the id of a column</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>rowspan</b></td>
+			<td><b>rowspan</b></td>
 			<td>(<i>number</i>) optional, the number of rows in a span</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>colspan</b></td>
+			<td><b>colspan</b></td>
 			<td>(<i>number</i>) optional, the number of columns in a span</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+			<td><b>text</b></td>
 			<td>(<i>string|number</i>) optional, the content of a span</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
     <tr>
-			<td class="webixdoc_links0"><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
+			<td><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>
 </table>
 
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#spans
+@changelog:
 
-**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
+The **tooltip** property is added in v6.5.
 
-@changelog: The **tooltip** property is added in v6.5.
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#spans)

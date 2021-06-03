@@ -1,7 +1,10 @@
 ---
 sidebar_label: align
-title: align
----          
+title: JavaScript Form - align Config 
+description: You can explore the align Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# align
 
 @short: sets the alignment of controls inside the control group 
 
@@ -9,41 +12,43 @@ title: align
 
 @values: "start", "center", "end", "between", "around", "evenly"
 
-@example: 
-var form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	align: "center", /*!*/ // sets the alignment for rows 
-	rows: [
+@example:
+var form = new dhx.Form("form", {
+    css: "dhx_widget--bordered",
+    height: "200px",
+    width: "400px",
+    align: "end", // sets the alignment for rows 
+    padding: "20px",  
+    rows: [
         {
-            align: "start", /*!*/ // sets the alignment for cols
-            css: "dhx_layout-cell--bordered",
+            type: "text",
+            name: "text",
+            value: "Do you agree with our terms and conditions?"
+        },
+        {
+            padding: "10px",  
+            align: "start", // sets the alignment for cols 
             cols: [{
                 type: "checkbox",
-                label: "start",
-                name: "align",
-                labelInline: true,
-                value: "start",
+                width: "80px",
+                label: "I agree",
+                name: "agree",
+                id: "agree",
                 checked: true
             },
             {
                 type: "checkbox",
-                label: "center",
+                label: "I disagree",
                 name: "align",
-                labelInline: true,
-                value: "center"
             }]
         }
     ]
 });
 
+@descr:
 
-
-@descr: 
-
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
-
-@related: form/how_to_start.md#initialize-form
-form/configuration.md#alignment
+**Related Sample**: [Form. Alignment](https://snippet.dhtmlx.com/jjhkypod)
 
 @changelog: added in v6.4
+
+[comment]: # (@related: form/how_to_start.md#initialize-form form/configuration.md#alignment)

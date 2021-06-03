@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Grid - Event Handling 
+description: You can explore the event handling of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -40,6 +43,4 @@ grid.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](grid/api/refs/grid_events.md).
-
-
+The full list of events is available in the related [API section](grid/api/api_overview.md#grid-events).

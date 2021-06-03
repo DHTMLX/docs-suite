@@ -1,16 +1,19 @@
 ---
-sidebar_label: map
-title: map
----          
+sidebar_label: map()
+title: map()
+description: description
+---
+
+# map()
 
 @short: iterates through items
 
 @signature: {'map(callback: DataCallback<T>, id?: string | number, direct?: boolean): any;'}
 
 @params:
-- callback 		function		 the function that will be applied to every item
-- id        string | number           the ID of a control the child items of which will be included
-- direct    boolean          defines whether only direct children of the control will be included in the iteration   
+- `callback: function` - the function that will be applied to every item
+- `id: string | number` - the ID of a control the child items of which will be included
+- `direct: boolean` - defines whether only direct children of the control will be included in the iteration
 
 @example:
 toolbar.data.map((item)=>{
@@ -19,8 +22,8 @@ toolbar.data.map((item)=>{
 });
 toolbar.paint();
 
-
 @descr:
+
 To work with all childs of a particular control, pass one more parameter to **map()** - the ID of the control:
 
 ~~~js

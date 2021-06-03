@@ -1,7 +1,10 @@
 ---
 sidebar_label: Checkbox
-title: Checkbox
----          
+title: JavaScript Form - Checkbox 
+description: You can explore the Checkbox of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Checkbox
 
 A control that allows a user to make a choice between one or several opposite options by toggling them.
 
@@ -35,7 +38,7 @@ View [the full list of configuration properties of the Checkbox control](form/ap
 
 ## Working with Checkbox
 
-You can manipulate a Checkbox control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Checkbox control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 

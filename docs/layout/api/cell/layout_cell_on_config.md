@@ -1,13 +1,16 @@
 ---
 sidebar_label: on
-title: on
----          
+title: JavaScript Layout - on Config 
+description: You can explore the on config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# on
 
 @short: adds handlers to DOM events of a cell
 
 @signature: {'on?: {[key: string]: any; };'}
 
-@example: 
+@example:
 // adds a click event handler to the element of a cell
 const layout = new dhx.Layout("layout_container", {
 	height: "100%", 
@@ -37,8 +40,6 @@ const layout = new dhx.Layout("layout_container", {
 	]
 });
 
+@descr:
 
-
-@descr: 
-
-@related: layout/init.md#initialize-layout
+[comment]: # (@related: layout/init.md#initialize-layout)

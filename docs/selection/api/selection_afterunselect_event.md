@@ -1,20 +1,22 @@
 ---
 sidebar_label: afterUnSelect
-title: afterUnSelect
----          
+title: JavaScript Selection - afterUnSelect Event 
+description: You can explore the afterUnSelect event of Selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterUnSelect
 
 @short: fires after unselecting an item
 
-@singnature: {'afterUnSelect: (id: string) => void;'}
+@signature: {'afterUnSelect: (id: string) => void;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @example:
-tree.selection.events.on("AfterUnSelect", function(id){
+component.selection.events.on("AfterUnSelect", function(id){
     console.log("An item is unselected");
 });
-
 
 @descr:
 
@@ -23,7 +25,7 @@ tree.selection.events.on("AfterUnSelect", function(id){
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-tree.events.on("AfterUnSelect", function(id) {
+component.events.on("AfterUnSelect", function(id) {
     console.log(id);
 });
 ~~~

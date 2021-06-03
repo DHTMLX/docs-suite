@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeValidate
-title: beforeValidate
----          
+title: JavaScript Form - beforeValidate Text Event 
+description: You can explore the beforeValidate Text event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeValidate
 
 @short: fires before the control value is validated
 
 @signature: {'beforeValidate: (value: string | number) => boolean | void;'}
 
 @params:
-- value       string | number  the value to be validated
+`value: string | number` - the value to be validated
 
 @returns:
-param   boolean | void     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("text").events.on("BeforeValidate", function(value) {
@@ -19,9 +22,6 @@ form.getItem("text").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

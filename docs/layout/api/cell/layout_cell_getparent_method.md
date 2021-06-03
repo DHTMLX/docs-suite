@@ -1,20 +1,20 @@
 ---
-sidebar_label: getParent
-title: getParent
----          
+sidebar_label: getParent()
+title: JavaScript Layout - getParent Method 
+description: You can explore the getParent method of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getParent()
 
 @short: returns the parent of a cell
 
 @signature: {'getParent(): ILayout;'}
 
 @returns:
-- config	object		the config object of the parent of a cell
-
+The config object of the parent of a cell.
 
 @example:
 layout.getCell("1").getParent();
-
-
 
 @descr:
 
@@ -37,10 +37,3 @@ An example of a returned config object:
     ]
 }
 ~~~
-
-
-
-
-
-
-

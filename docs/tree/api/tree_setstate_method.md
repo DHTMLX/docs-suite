@@ -1,14 +1,17 @@
 ---
-sidebar_label: setState
-title: setState
----          
+sidebar_label: setState()
+title: JavaScript Tree - setState Method 
+description: You can explore the setState method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setState()
 
 @short: sets state for a tree
 
 @signature: {'setState(state: ITreeState): void;'}
 
 @params:
-- treeState 	object 		an object of <i>key:value</i> pairs, where <i>key</i> is the id of a tree item and <i>value</i> is its state
+`state: object` - an object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state
 
 @example:
 // getting the state of a tree
@@ -17,15 +20,16 @@ var treeState = tree.getState();
 // restoring the state of a tree
 tree.setState(treeState);
 
-
-
 @descr:
+
+**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
+
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>selected</b></td>
+			<td><b>selected</b></td>
 			<td>(<i>number</i>) the status of a checkbox of an item: 
 				<ul>
 					<li>0 - unselected </li>
@@ -35,7 +39,7 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>open</b></td>
+			<td><b>open</b></td>
 			<td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
 		</tr>
     </tbody>
@@ -55,7 +59,7 @@ Here is an example of a treeState object:
 		"selected": 2
 	},
 
-	"bsthrillers": {
+	"thrillers": {
 		"selected": 1
 	},
 
@@ -81,14 +85,6 @@ Here is an example of a treeState object:
 }
 ~~~
 
+[comment]: # (@relatedapi: tree/api/tree_getstate_method.md)
 
-@relatedapi:
-tree/api/tree_getstate_method.md
-
-**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
-
-
-
-@related: tree/work_with_tree.md#settinggettingtreestate
-
-
+[comment]: # (@related: tree/work_with_tree.md#settinggetting-tree-state)

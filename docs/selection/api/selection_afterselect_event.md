@@ -1,20 +1,22 @@
 ---
 sidebar_label: afterSelect
-title: afterSelect
----          
+title: JavaScript Selection - afterSelect Event 
+description: You can explore the afterSelect event of Selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterSelect
 
 @short: fires after selecting an item
 
 @signature: {'afterSelect: (id: string) => void;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @example:
-tree.selection.events.on("AfterSelect", function(id){
+component.selection.events.on("AfterSelect", function(id){
     console.log("An item is selected");
 });
-
 
 @descr:
 
@@ -23,7 +25,7 @@ tree.selection.events.on("AfterSelect", function(id){
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-tree.events.on("AfterSelect", function(id) {
+component.events.on("AfterSelect", function(id) {
     console.log(id);
 });
 ~~~

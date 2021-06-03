@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Timepicker - Initialization 
+description: You can explore the initialization of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxTimePicker on a page, you need to take the following simple steps:
 
@@ -33,9 +36,7 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 
 **Related sample**: [Timepicker. Basic Initialization](https://snippet.dhtmlx.com/scq85iip)
 
-
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -47,9 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create container 
------------------
+## Create container
 
 Add a container for TimePicker and give it an id, for example "timepicker_container":
 
@@ -57,8 +56,7 @@ Add a container for TimePicker and give it an id, for example "timepicker_contai
 <div id="timepicker_container"></div>
 ~~~
 
-Initialize TimePicker
-----------------------
+## Initialize TimePicker
 
 Initialize TimePicker with the **`dhx.Timepicker`** object constructor. The constructor has two parameters:
 
@@ -78,8 +76,7 @@ There is a set of properties you can specify for TimePicker to optimize its conf
 
 The detailed information on TimePicker configuration options can be found in the [TimePicker API overview](timepicker/api/api_overview.md#properties) article.
 
-Set initial value (optional)
---------------------
+## Set initial value (optional)
 
 You can set initial value for TimePicker using the **setValue()** method. It takes as a parameter the value to be set as a object Date, a string, or an array. Check details in the API reference.
 
@@ -91,5 +88,3 @@ timepicker.setValue(new Date('January 10, 2019 17:54:00'));
 // set the value as an array
 timepicker.setValue([6,20,"AM"]);
 ~~~
-
-

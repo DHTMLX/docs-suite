@@ -1,8 +1,10 @@
 ---
 sidebar_label: TimePicker
-title: TimePicker
-description: description
----          
+title: JavaScript Form - TimePicker 
+description: You can explore the TimePicker of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# TimePicker
 
 A control that allows a user to select time value either by moving handles along track bars or by entering hour and minutes values directly into related inputs.
 
@@ -12,7 +14,7 @@ A control that allows a user to select time value either by moving handles along
 
 **Related sample**: [Form. TimePicker](https://snippet.dhtmlx.com/4k3o8p7b)
 
-## Adding TimePicker 
+## Adding TimePicker
 
 You can easily add a TimePicker control during initialization of a form:
 
@@ -38,7 +40,7 @@ View [the full list of configuration properties of the TimePicker control](form/
 
 ## Working with TimePicker
 
-You can manipulate a TimePicker control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a TimePicker control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -56,7 +58,7 @@ Check [the full list of events of the Timepicker control](form/api/api_overview.
 
 ### Working with the dhtmlxTimePicker widget
 
-There is a possibility to use methods of dhtmlxTimePicker via the **getWidget()** method of a TimePicker control.
+There is a possibility to use methods of dhtmlxTimePicker via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
 
 For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
 

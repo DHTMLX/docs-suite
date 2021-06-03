@@ -1,7 +1,10 @@
 ---
 sidebar_label: palette
-title: palette
----          
+title: JavaScript Colorpicker - palette Config 
+description: You can explore the palette config of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# palette
 
 @short: contains arrays of colors you want to show in a colorpicker
 
@@ -9,7 +12,7 @@ title: palette
 
 @default: false
 
-@example: 
+@example:
 var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	grayShades: false,
 	palette: [
@@ -23,7 +26,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 @descr: 
 
-### Details
+**Related sample**: [Colorpicker. Custom Palette Colors](https://snippet.dhtmlx.com/j5gisdew)
 
 This is the **default** array of colors of the ColorPicker:
 
@@ -42,8 +45,4 @@ var palette = [
 ];
 ~~~
 
-
-@related: colorpicker/how_to_start.md#initialize-colorpicker
-colorpicker/configuration.md
-
-**Related sample**: [Colorpicker. Custom Palette Colors](https://snippet.dhtmlx.com/j5gisdew)
+[comment]: # (@related: colorpicker/how_to_start.md#initialize-colorpicker colorpicker/configuration.md)

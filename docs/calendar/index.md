@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: Calendar overview
-description: dhtmlxCalendar is a smart datepicker solution for websites or applications that allows selecting dates, ranges of dates, and time. It's easily configurable and highly customizable.
+title: JavaScript Calendar - Calendar Overview 
+description: You can have an overview of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---          
+
+# Calendar Overview
 
 dhtmlxCalendar is a component that allows users to view and select dates. You can create calendar in one of 4 modes: days, months, years, or as a timepicker.
 This component is a great date picker solution for your website or application. Check [online samples for dhtmlxCalendar](https://docs.dhtmlx.com/suite/samples/calendar/).  
@@ -11,7 +13,7 @@ This component is a great date picker solution for your website or application. 
 
 ## API reference
 
-[Calendar API](api/api_overview)
+- [Calendar API](api/api_overview)
 
 ## Related resources
 
@@ -23,14 +25,14 @@ This component is a great date picker solution for your website or application. 
 
 You can read the following articles to find out how to add Calendar on the page and work with it.
 
-- [Initialization](how_to_start)
-- [Configuration](configuring)
-- [Localization](localizing_calendar)  
-- [Work with Calendar](operating_calendar)
-- [DatePicker](datepicker)
-- [Customization](customization)
-- [Event Handling](handling_events)  
+- [](how_to_start)
+- [](configuring)
+- [](localizing_calendar)  
+- [](operating_calendar)
+- [](datepicker)
+- [](customization)
+- [](handling_events)  
 
 ## Other
 
-[Migration to Newer Versions](migration) 
+- [](../migration.md)

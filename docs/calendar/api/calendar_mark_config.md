@@ -1,13 +1,16 @@
 ---
 sidebar_label: mark
-title: mark
----          
+title: JavaScript Calendar - mark Config 
+description: You can explore the mark config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# mark
 
 @short: adds a CSS class to specific days
 
 @signature: {'mark?: (a: Date) => string;'}
 
-@example: 
+@example:
 <style>
     .highlight-date {
         color: #fff;
@@ -24,18 +27,13 @@ var calendar = new dhx.Calendar("calendar", {
 });
 
 
+@descr:
+**Related sample**: [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
 
-
-@descr: 
 The function passed to the method receives one parameter:
 
 - **date** (*Date*) - a date object 
 
 and must return a string with the name of the CSS class or an empty string.
 
-@related:
-calendar/how_to_start.md#initialize-calendar
-calendar/configuring.md#highlighteddates
-
-**Related sample**:
-- [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#highlighteddates)

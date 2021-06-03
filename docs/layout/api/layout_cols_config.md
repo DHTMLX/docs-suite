@@ -1,13 +1,16 @@
 ---
 sidebar_label: cols
-title: cols
----          
+title: JavaScript Layout - cols Config 
+description: You can explore the cols config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# cols
 
 @short: an array of columns objects
 
 @signature: {'cols?: ICellConfig[] | ILayoutConfig[];'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
     header: "Main Block Header",
     cols: [
@@ -34,12 +37,8 @@ var layout = new dhx.Layout("layout_container", {
     ]
 });
 
+@descr:
 
+[comment]: # (@relatedapi: layout/api/layout_rows_config.md)
 
-@descr: 
-
-@relatedapi: layout/api/layout_rows_config.md
-
-@related: layout/init.md#initialize-layout
-layout/layout_structure.md
-
+[comment]: # (@related: layout/init.md#initialize-layout layout/layout_structure.md)

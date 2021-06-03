@@ -1,10 +1,12 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Tabbar - Configuration 
+description: You can explore the configuration of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Close buttons for tabs
----------------
+# Configuration
+
+## Close buttons for tabs
 
 ![](../assets/tabbar/close_button.png)
 
@@ -27,8 +29,7 @@ var tabbar = new dhx.Tabbar("tabbar", {
 });
 ~~~
 
-Disabled tabs
-------------------
+## Disabled tabs
 
 ![](../assets/tabbar/disabled_tab.png)
 
@@ -48,9 +49,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Disabled Tab](https://snippet.dhtmlx.com/pxa6rkpj)
 
-
-Position of tabbar
-------------
+## Position of tabbar
 
 ![](../assets/tabbar/mode.png)
 
@@ -65,8 +64,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-Size of tabs
------------
+## Size of tabs
 
 dhtmlxTabbar allows you to control the height and width of tabs with the help of appropriate configuration options - [tabWidth](tabbar/api/tabbar_tabwidth_config.md) and [tabHeight](tabbar/api/tabbar_tabheight_config.md). By default, they are set to 200px and 45px, correspondingly. This is how you can change the default settings:
 
@@ -79,8 +77,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
 
-Structure of tabs
--------------
+## Structure of tabs
 
 The structure of Tabbar should be defined during initialization of the component. It is set within the [views](tabbar/api/tabbar_views_config.md) property. Each tab is an object with attributes, which are:
 
@@ -94,7 +91,7 @@ The structure of Tabbar should be defined during initialization of the component
 - **tabWidth** - the width of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
 - **tabHeight** - the height of a tab (for more information, see [](tabbar/api/tabbar_views_config.md))
 
-    
+
 ~~~js
 var tabbar = new dhx.Tabbar("tabbar_container", {
 	views:[
@@ -108,8 +105,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
-Autosize for tabs
------------------
+## Autosize for tabs
 
 When the width or height of tabs are not specified, you can configure the tabs so that their width/height would automatically adjust to the size of the container of Tabbar. For this purpose, make use of the [](tabbar/api/tabbar_tabautowidth_config.md)/[](tabbar/api/tabbar_tabautoheight_config.md) properties of Tabbar.
 
@@ -132,8 +128,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 {{note The [](tabbar/api/tabbar_tabautowidth_config.md) configuration option is used when [mode](tabbar/api/tabbar_mode_config.md) is set to "top" or "bottom", whereas [](tabbar/api/tabbar_tabautoheight_config.md) is applied when [mode](tabbar/api/tabbar_mode_config.md) is set to "right" or "left".}}
 
-Tabs without content 
----------------
+## Tabs without content
 
 ![](../assets/tabbar/no_content.png)
 
@@ -147,9 +142,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Without Content](https://snippet.dhtmlx.com/7jzrifql)
 
-
-Alignment
-------------
+## Alignment
 
 ![](../assets/tabbar/tabbar_align.png)
 
@@ -170,5 +163,3 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 **Related sample**: [Tabbar. Tab align](https://snippet.dhtmlx.com/bctscs71)
 
 The available values of the option are "left" | "start", "center" | "middle", "right" | "end".
-
-

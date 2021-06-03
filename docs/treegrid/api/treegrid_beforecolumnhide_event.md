@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeColumnHide
-title: beforeColumnHide
----          
+title: JavaScript TreeGrid - beforeColumnHide Event 
+description: You can explore the beforeColumnHide event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeColumnHide
 
 @short: fires before a column is hidden
 
 @signature: {'beforeColumnHide: (col: ICol) => boolean | void;'}
 
-@params: 
-- col   object  an object with a column configuration
+@params:
+`col: object` - an object with a column configuration
 
 @returns:
-- result	boolean		false - to prevent a column from being hidden, otherwise true
+Return `false` to prevent a column from being hidden; otherwise, `true`.
 
 @example:
 treegrid.events.on("BeforeColumnHide", function(column){
@@ -19,9 +22,8 @@ treegrid.events.on("BeforeColumnHide", function(column){
     return false;
 });
 
-
 @descr:
 
-@changelog: added in v7.0
-
 **Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+
+@changelog: added in v7.0

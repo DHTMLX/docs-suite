@@ -1,14 +1,14 @@
 ---
 sidebar_label: Work with Layout
-title: Work with Layout
-description: description
----          
+title: JavaScript Layout - Work with Layout 
+description: You can explore how to work with Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Work with Layout
 
-Removing cells
------------------
+## Removing cells
 
-To remove a certain cell from a layout, apply the [removeCell](layout/api/layout_removecell_method.md) method. As a parameter it takes the id of a cell to be removed:
+To remove a certain cell from a layout, apply the [](layout/api/layout_removecell_method.md) method. As a parameter it takes the id of a cell to be removed:
 
 ~~~js
 layout.removeCell(id);
@@ -16,8 +16,7 @@ layout.removeCell(id);
 
 **Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
 
-Getting the object of a cell
---------------------
+## Getting the object of a cell
 
 You can get the object of a cell by its id. Use the [](layout/api/layout_getcell_method.md) method for this purpose:
 
@@ -25,11 +24,9 @@ You can get the object of a cell by its id. Use the [](layout/api/layout_getcell
 layout.getCell("header");
 ~~~
 
+## Attaching a component to a cell
 
-Attaching a component to a cell
----------------------------------
-
-You can easily attach any DHTMLX component to a cell of Layout using the [attach](layout/api/layout_attach_method.md) method of a cell:
+You can easily attach any DHTMLX component to a cell of Layout using the [](layout/api/cell/layout_cell_attach_method.md) method of a cell:
 
 ~~~js
 var layout = new dhx.Layout({width:"400px", height:"600px"});
@@ -48,10 +45,9 @@ layout.getCell("list").attach(list);
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
-Attaching an HTML content to a cell
-------------------------------
+## Attaching an HTML content to a cell
 
-You can easily attach some HTML content to a cell of Layout via the [attachHTML()](layout/api/layout_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
+You can easily attach some HTML content to a cell of Layout via the [](layout/api/cell/layout_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
 
 ~~~js
 var layout = new dhx.Layout({width:"400px", height:"600px"});
@@ -59,10 +55,9 @@ var html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);
 ~~~
 
-Hiding/showing a cell
-----------------------
+## Hiding/showing a cell
 
-It is possible to hide/show a cell with the help of its API. Both the [hide](layout/api/layout_hide_method.md) and [show](layout/api/layout_show_method.md) methods take the id of a cell as a parameter.
+It is possible to hide/show a cell with the help of its API. Both the [](layout/api/cell/layout_cell_hide_method.md) and [](layout/api/cell/layout_cell_show_method.md) methods take the id of a cell as a parameter.
 
 ~~~js
 // hiding a cell
@@ -78,20 +73,17 @@ layout.getCell("toolbar").show();
 
 **Related sample**: [Layout. Show](https://snippet.dhtmlx.com/v0q7gq26)
 
+## Checking visibility of a cell
 
-Checking visibility of a cell
--------------------
-
-Since the object of a cell has the [hidden](layout/api/layout_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibilty of cell via the [isVisible](layout/api/layout_isvisible_method.md) method. It returns *true* if a cell is visible and *false* if it is hidden.
+Since the object of a cell has the [hidden](layout/api/cell/layout_cell_hidden_config.md) attribute, a cell can be hidden in a layout. You can check the visibility of a cell via the [](layout/api/cell/layout_cell_isvisible_method.md) method. It returns *true* if the cell is visible and *false* if it is hidden.
 
 ~~~js
 layout.getCell("sidebar").isVisible(); // -> true|false
 ~~~
 
-Collapsing/expanding a cell
-------------------------------
+## Collapsing/expanding a cell
 
-You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [collapse()](layout/api/layout_collapse_method.md) and [expand()](layout/api/layout_expand_method.md):
+You can collapse/expand a specified cell using two corresponding methods of a Layout cell - [](layout/api/cell/layout_cell_collapse_method.md) and [](layout/api/cell/layout_cell_expand_method.md):
 
 ~~~js
 // collapsing a cell by its id
@@ -103,17 +95,12 @@ layout.getCell("sidebar").expand();
 
 **Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
 
-Toggling a cell
---------------------
+## Toggling a cell
 
-It is also possible to collapse and expand a specified cell of Layout using the [toggle()](layout/api/layout_toggle_method.md) method of a cell:
+It is also possible to collapse and expand a specified cell of Layout using the [](layout/api/cell/layout_cell_toggle_method.md) method of a cell:
 
 ~~~js
 layout.getCell("toolbar").toggle();
 ~~~
 
 **Related sample**: [Layout. Toggle](https://snippet.dhtmlx.com/t38tqk0k)
-
-@todo:
-complete<br/>
-attach()? getParent()? 

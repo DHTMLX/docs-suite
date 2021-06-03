@@ -1,13 +1,16 @@
 ---
 sidebar_label: tabAlign
-title: tabAlign
----          
+title: JavaScript Tabbar - tabAlign Config 
+description: You can explore the tabAlign config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# tabAlign
 
 @short: sets alignment for tabs
 
 @signature: {'tabAlign?: "left" | "start" | "center" | "middle" | "right" | "end";'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     views:[
         { tab: "left", css:"panel flex", header:"Left"},
@@ -18,13 +21,10 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     tabAlign: "right" /*!*/
 });
 
-
-
-@descr: 
-
-@changelog: added in v7.0
+@descr:
 
 **Related sample**: [Tabbar. Tab align](https://snippet.dhtmlx.com/bctscs71)
 
-@related: tabbar/configuring_tabbar.md#alignment
+@changelog: added in v7.0
 
+[comment]: # (@related: tabbar/configuring_tabbar.md#alignment)

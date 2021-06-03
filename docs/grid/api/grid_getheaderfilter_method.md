@@ -1,17 +1,20 @@
 ---
-sidebar_label: getHeaderFilter
-title: getHeaderFilter
----          
+sidebar_label: getHeaderFilter()
+title: JavaScript Grid - getHeaderFilter Method 
+description: You can explore the getHeaderFilter method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getHeaderFilter()
 
 @short: returns an object of the header filter by column id
 
 @signature: {'getHeaderFilter(colId: string | number): HTMLElement | object;'}
 
 @params:
-- colId	string | number   the id of a column
+`colId: string | number` - the id of a column
 
 @returns:
-- param	HTMLElement|object      an HTML object or an object with Combobox configuration
+Either an HTML object or an object with Combobox configuration.
 
 @example:
 var countryFilter = grid.getHeaderFilter("country");
@@ -29,17 +32,11 @@ var countryFilter = grid.getHeaderFilter("density");
 
 countryFilter.blur();
 
-
-
 @descr:
 
 **Related sample**: [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
 
-@related: grid/usage.md#getting-header-filter
-
 @changelog:
 added in 7.0
 
-
-
-
+[comment]: # (@related: grid/usage.md#getting-header-filter)

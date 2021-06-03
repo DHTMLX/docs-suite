@@ -1,27 +1,24 @@
 ---
-sidebar_label: enable
-title: enable
----          
+sidebar_label: enable()
+title: JavaScript Form - enable Method 
+description: You can explore the enable method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# enable()
 
 @short: enables a disabled form
 
 @signature: {'enable(): void;'}
 
-@params:
-
 @example:
 form.enable();
-
 
 @descr:
 
 **Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
 
-@relatedapi: form/api/form_disable_method.md
-form/api/form_isdisabled_method.md
-
-@related: form/work_with_form.md#enablingdisablingaform
-
-**Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
-
 @changelog: added in v6.4
+
+[comment]: # (@relatedapi: form/api/form_disable_method.md form/api/form_isdisabled_method.md)
+
+[comment]: # (@related: form/work_with_form.md#enablingdisabling-a-form)

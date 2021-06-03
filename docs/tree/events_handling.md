@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Tree - Event Handling 
+description: You can explore the event handling of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -40,7 +43,4 @@ tree.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](tree/api/refs/tree_events.md).
-
-
-
+The full list of events is available in the related [API section](tree/api/api_overview.md#events).

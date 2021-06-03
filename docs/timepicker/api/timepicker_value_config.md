@@ -1,7 +1,10 @@
 ---
 sidebar_label: value
-title: value
----          
+title: JavaScript Timepicker - value Config 
+description: You can explore the value config of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# value
 
 @short: the time value to be set on initialization of the timepicker
 
@@ -33,8 +36,9 @@ var timepicker = new dhx.Timepicker("timepicker", {
 	value: {hour: 10, minute: 50, AM: true}
 });
 
-
 @descr:
+
+**Related sample**: [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
 
 1\. The value of timepicker set as an **array** should have the following elements:
 
@@ -50,8 +54,6 @@ var timepicker = new dhx.Timepicker("timepicker", {
 3\. The date set as a **number** is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 method of the **Date** object.
 
-**Related sample**: [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
-
-@related: timepicker/configuration.md#initial-value
-
 @changelog: added in v7.0
+
+[comment]: # (@related: timepicker/configuration.md#initial-value)

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Window - Initialization 
+description: You can explore the initialization of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxWindow on a page, you need to take the following simple steps:
 
@@ -34,8 +37,7 @@ To initialize dhtmlxWindow on a page, you need to take the following simple step
 
 **Related sample**: [Window. Basic Initialization](https://snippet.dhtmlx.com/6qqezjxe)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -47,9 +49,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Initialize Window
-----------------------
+## Initialize Window
 
 Initialize Window with the `dhx.Window` object constructor. The constructor takes an optional parameter:
 
@@ -77,8 +77,7 @@ There is a set of properties you can specify for Window to optimize its configur
 
 The detailed information on Window configuration options can be found in the [Window API overview](window/api/api_overview.md#properties) article.
 
-Set content
---------------
+## Set content
 
 There are several ways of adding content into the dhtmlxWindow:
 
@@ -102,7 +101,6 @@ dhxWindow.show();
 
 **Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
-
 - via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization
 
 ~~~js
@@ -110,7 +108,3 @@ var dhxWindow = new dhx.Window({
 	htmlContent:"<h1>Header</h1><p>paragraph</p>"
 });
 ~~~
-
-
-
-

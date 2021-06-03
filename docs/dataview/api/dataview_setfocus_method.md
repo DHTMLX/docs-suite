@@ -1,31 +1,25 @@
 ---
-sidebar_label: setFocus
-title: setFocus
----          
+sidebar_label: setFocus()
+title: JavaScript DataView - setFocus Method 
+description: You can explore the setFocus method of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setFocus()
 
 @short: sets focus to an item by its id
 
 @signature: {'setFocus(id: string | number): void;'}
 
-```todoapi
-void setFocus(string|number id);
-setFocus(id: string): void;
-```
-
 @params:
-- id	string|number      the id of an item
+`id: string | number` - the id of an item
 
 @example:
 dataview.setFocus("item_id");
 
-
-
 @descr:
 
-@related: dataview/manipulating_data.md#setting-focus-on-item
+@changelog: added in v6.3
 
-@relatedapi: dataview/api/dataview_getfocus_method.md
+[comment]: # (@related: dataview/manipulating_data.md#setting-focus-on-item)
 
-@changelog:
-added in v6.3
-
+[comment]: # (@relatedapi: dataview/api/dataview_getfocus_method.md)

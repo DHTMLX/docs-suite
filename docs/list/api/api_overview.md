@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: List API overview
+title: JavaScript List - API Overview 
+description: You can explore the API of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# List API overview
 
 ## Methods
 
@@ -13,7 +16,6 @@ title: List API overview
 | [](list/api/list_getfocusitem_method.md)     | @getshort(list/api/list_getfocusitem_method.md)     |
 | [](list/api/list_paint_method.md)            | @getshort(list/api/list_paint_method.md)            |
 | [](list/api/list_setfocus_method.md)         | @getshort(list/api/list_setfocus_method.md)         |
-
 
 :::info important
 - Use [the methods of DataCollection](data_collection/index.md) to work with data. 
@@ -56,7 +58,6 @@ title: List API overview
 | [](list/api/list_data_config.md)               | @getshort(list/api/list_data_config.md)               |
 | [](list/api/list_dragcopy_config.md)           | @getshort(list/api/list_dragcopy_config.md)           |
 | [](list/api/list_dragmode_config.md)           | @getshort(list/api/list_dragmode_config.md)           |
-| [](list/api/list_dropbehaviour_config.md)      | @getshort(list/api/list_dropbehaviour_config.md)      |
 | [](list/api/list_editable_config.md)           | @getshort(list/api/list_editable_config.md)           |
 | [](list/api/list_eventhandlers_config.md)      | @getshort(list/api/list_eventhandlers_config.md)      |
 | [](list/api/list_height_config.md)             | @getshort(list/api/list_height_config.md)             |

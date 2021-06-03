@@ -1,7 +1,10 @@
 ---
 sidebar_label: headerHeight
-title: headerHeight
----          
+title: JavaScript Layout - headerHeight Config 
+description: You can explore the headerHeight config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# headerHeight
 
 @short: sets the height of a Layout cell
 
@@ -9,7 +12,7 @@ title: headerHeight
 
 @default: 37
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout", {
     rows: [
         {
@@ -22,22 +25,14 @@ var layout = new dhx.Layout("layout", {
     ]
 });
 
-
-
 @descr:
-
-If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the **headerHeight** option will add a header without text for a cell.
-
 
 **Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-@relatedapi: 
-layout/api/layout_header_config.md
-layout/api/layout_headericon_config.md
-layout/api/layout_headerimage_config.md
-
-
-@related: layout/init.md#initialize-layout
-layout/cell_configuration.md#height-of-a-header-cell
+If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the **headerHeight** option will add a header without text for a cell.
 
 @changelog: added in v6.4
+
+[comment]: # (@relatedapi: layout/api/layout_header_config.md layout/api/layout_headericon_config.md layout/api/layout_headerimage_config.md)
+
+[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#height-of-a-header-cell)

@@ -1,13 +1,16 @@
 ---
 sidebar_label: value
-title: value
----          
+title: JavaScript Calendar - value Config 
+description: You can explore the value config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# value
 
 @short: selects the day (adds a round blue marker)
 
 @signature: {'value?: Date | Date[] | string | string[];'}
 
-@example: 
+@example:
 // selects a date
 var calendar = new dhx.Calendar("calendar_container", {
     value: new Date(2019,01,10)
@@ -41,21 +44,13 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 
 
+@descr:
+**Related sample**: [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
 
-
-@descr: 
 If the property is not specified in the configuration object, nothing is selected in the calendar on initialization.
 
 {{note Please note that the format of date in the Calendar is defined by the dateFormat option. So, check that you've set the format of date you want to use in the calendar both in the **value** and in the **dateFormat** property. Otherwise, the default format ("%d/%m/%y") will be used.}}
 
-@related:
-calendar/how_to_start.md#selectinitialdateoptional
-calendar/configuring.md#initiallyselecteddate
+[comment]: # (@related: calendar/how_to_start.md#selectinitialdateoptional calendar/configuring.md#initiallyselecteddate)
 
-@relatedapi:
-calendar/api/calendar_dateformat_config.md
-calendar/api/calendar_getvalue_method.md
-calendar/api/calendar_range_config.md
-
-**Related sample**:
-- [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
+[comment]: # (@relatedapi: calendar/api/calendar_dateformat_config.md calendar/api/calendar_getvalue_method.md calendar/api/calendar_range_config.md)

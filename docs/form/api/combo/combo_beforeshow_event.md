@@ -1,26 +1,26 @@
 ---
 sidebar_label: beforeShow
-title: beforeShow
----          
+title: JavaScript Form - beforeShow Combo Box Event 
+description: You can explore the beforeShow Combo Box event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeShow
 
 @short: fires before a control is shown
 
 @signature: {'beforeShow: (value: string | string[]) => boolean | void;'}
 
 @params:
-- value     string|string[]     the current value of the control
+`value: string | string[]` - the current value of the control
 
 @returns:
-param   boolean     false - to prevent a control from being shown, otherwise - true
-
+Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
 form.getItem("combo").events.on("BeforeShow", function(value) {
     console.log("BeforeShow", value);
     return true;
 });
-
-
 
 @descr:
 

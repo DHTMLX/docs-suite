@@ -1,7 +1,10 @@
 ---     
 sidebar_label: API overview
-title: Colorpicker API overview
----     
+title: JavaScript Colorpicker - API Overview 
+description: You can explore the API of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Colorpicker API overview
 
 ## Methods
 
@@ -18,7 +21,7 @@ title: Colorpicker API overview
 | [](colorpicker/api/colorpicker_setfocus_method.md)        | @getshort(colorpicker/api/colorpicker_setfocus_method.md)        |
 | [](colorpicker/api/colorpicker_setvalue_method.md)        | @getshort(colorpicker/api/colorpicker_setvalue_method.md)        |
 
-## Events 
+## Events
 
 | Name                                                 | Description                                                 |
 | ---------------------------------------------------- | ----------------------------------------------------------- |

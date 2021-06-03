@@ -1,22 +1,20 @@
 ---
-sidebar_label: getValue
-title: getValue
----          
+sidebar_label: getValue()
+title: JavaScript Form - getValue Select Method 
+description: You can explore the getValue Select method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getValue()
 
 @short: returns the current value of a Select control
 
 @signature: {'getValue(): string | number;'}
 
 @returns:
-param   string | number     the current value of the control
+A string, or number with the current value of the control.
 
 @example:
 var value = form.getItem("select").getValue();
 // -> "1"
 
-
-
-
 @descr:
-
-

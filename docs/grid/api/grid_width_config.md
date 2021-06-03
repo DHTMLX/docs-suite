@@ -1,24 +1,24 @@
 ---
 sidebar_label: width
-title: width
----          
+title: JavaScript Grid - width Config 
+description: You can explore the width config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# width
 
 @short: sets the width of a grid
 
 @signature: {'width?: number;'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	width: 400,  /*!*/
 	data: dataset
 });
 
-
-
-@descr: 
-
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#widthheight
+@descr:
 
 **Related sample**: [Grid. Custom Sizes](https://snippet.dhtmlx.com/ffxj6se0)
+
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#widthheight)

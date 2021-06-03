@@ -1,18 +1,20 @@
 ---
 sidebar_label: beforeValidate
-title: beforeValidate
----          
+title: JavaScript Form - beforeValidate Checkbox Event 
+description: You can explore the beforeValidate Checkbox event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeValidate
 
 @short: fires before the control value is validated
 
 @signature: {'beforeValidate: (value: string | boolean) => boolean | void;'}
- 
 
 @params:
-- value       string | boolean  the value to be validated
+`value: string | boolean` - the value to be validated
 
 @returns:
-param   boolean | void     false - to cancel the default action of the event, otherwise true
+Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
 form.getItem("checkbox").events.on("BeforeValidate", function(value) {
@@ -20,9 +22,6 @@ form.getItem("checkbox").events.on("BeforeValidate", function(value) {
     return true;
 });
 
-
-
 @descr:
-
 
 @changelog: added in v7.0

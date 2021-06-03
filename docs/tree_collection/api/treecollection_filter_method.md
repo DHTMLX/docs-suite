@@ -1,15 +1,18 @@
 ---
-sidebar_label: filter
-title: filter
----          
+sidebar_label: filter()
+title: JavaScript TreeCollection - filter Method 
+description: You can explore the filter method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# filter()
 
 @short: filters controls by some criteria
 
 @signature: {'filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;'}
 
 @params:
-- rule      function,object     the filtering criteria
-- config 		object		 optional, defines the parameters of filtering
+- `rule: function | object` - the filtering criteria
+- `config: object` - optional, defines the parameters of filtering
 
 @example:
 treeGrid.data.filter({
@@ -17,8 +20,9 @@ treeGrid.data.filter({
     match: "Angola"
 });
 
-
 @descr:
+
+**Related sample**: [TreeGrid. Basic Filter](https://snippet.dhtmlx.com/epsslwcd)
 
 Calling the **filter()** method without parameters reverts the component to the initial state:
 
@@ -38,18 +42,18 @@ tree.data.filter(function (item) {
 
 - if set as an object, the parameter has the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>) mandatory, the id of a column</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>match</b></td>
+			<td><b>match</b></td>
 			<td>(<i>string</i>) mandatory, a pattern to match</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>compare</b></td>
+			<td><b>compare</b></td>
 			<td>(<i>function</i>) optional, a function for extended filtering that takes three parameters:
                 <ul>
                     <li><b>value</b> - the value to compare (e.g. a column in a row for Grid)</li>
@@ -68,33 +72,26 @@ treeGrid.data.filter({
 });
 ~~~
 
-<br/><br/>
-
 The **config** parameter may contain the following properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
+			<td><b>type</b></td>
 			<td>(<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>level</b></td>
+			<td><b>level</b></td>
 			<td>(<i>number</i>) optional, the level the filtering will be applied to</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>add</b></td>
+			<td><b>add</b></td>
 			<td>(<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>smartFilter</b></td>
+			<td><b>smartFilter</b></td>
 			<td>(<i>boolean</i>) defines whether a filtering rule will be applied after adding and editing items of the collection
             </td>
 		</tr>
     </tbody>
 </table>
-
-
-
-**Related sample**: [TreeGrid. Basic Filter](https://snippet.dhtmlx.com/epsslwcd)
-

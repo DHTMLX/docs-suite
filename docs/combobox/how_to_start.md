@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Combo Box - Initialization 
+description: You can explore the initialization of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 This article gives you detailed instructions on how to create dhtmlxCombo on a page. Follow the steps below:
 
@@ -30,8 +33,7 @@ This article gives you detailed instructions on how to create dhtmlxCombo on a p
 
 **Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
 
-Include source files
-----------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -43,8 +45,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container 
--------------
+## Create a container
 
 Add a container for ComboBox and give it an id, for example "combo_container":
 
@@ -52,9 +53,8 @@ Add a container for ComboBox and give it an id, for example "combo_container":
 ~~~html title="index.html"
 <div id="combo_container"></div>
 ~~~
- 
-Initialize ComboBox
------------
+
+## Initialize ComboBox
 
 To initialize dhtmlxComboBox, you should use the `dhx.Combobox` constructor. The constructor function takes two parameters:
 
@@ -71,8 +71,7 @@ var combo = new dhx.Combobox("combo_container", {// config options});
 
 See the detailed description of Combo configuration options in the [Combobox API overview](combobox/api/api_overview.md#properties) article.
 
-Load data into ComboBox
--------------
+## Load data into ComboBox
 
 There are two handy ways of loading data, i.e. a set of options into ComboBox:
 
@@ -112,11 +111,3 @@ combo.data.parse(countries);
 **Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
 
 Detailed information on loading data into ComboBox is given in the [](combobox/adding_options.md) article .
-
-
-
-
-
-
-
-

@@ -1,19 +1,22 @@
 ---
 sidebar_label: autoload
-title: autoload
----          
+title: JavaScript Tree - autoload Config 
+description: You can explore the autoload config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# autoload
 
 @short: defines that the structure of a tree is being built while opening items
 
 @signature: {'autoload?: string;'}
 
-@example: 
+@example:
 var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
 tree.data.load("/backend/autoload?id=tree");
 
+@descr:
 
-
-@descr: 
+**Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
 Here is an example of sending an HTTP GET request to the server using the Express library:
 
@@ -24,6 +27,4 @@ app.get("/backend/autoload", (req, res) => {
 })
 ~~~
 
-**Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
-
-@related: tree/initialization_of_dhtmlxtree.md#initialize-tree
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree)

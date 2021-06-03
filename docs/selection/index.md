@@ -1,7 +1,10 @@
 ---
 sidebar_label: Overview
-title: Selection overview
----          
+title: JavaScript Selection - Selection Object Overview 
+description: You can have an overview of the Selection object in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Selection overview
 
 A set of APIs that allow you to work with the Selection object. You can use the API of the Selection object when working with the following components: Grid, DataView, List, Tree, TreeGrid.
 
@@ -19,7 +22,6 @@ You can apply the following methods of the Selection object to manage the select
 | [](selection/api/selection_getid_method.md)   | @getshort(selection/api/selection_getid_method.md)   |
 | [](selection/api/selection_getitem_method.md) | @getshort(selection/api/selection_getitem_method.md) |
 | [](selection/api/selection_remove_method.md)  | @getshort(selection/api/selection_remove_method.md)  |
-
 
 ### Events
 
@@ -41,7 +43,6 @@ See the full lists of the methods of the Selection object you can use to manage 
 - [Grid. Selection methods](grid/api/api_overview.md#selection-methods)
 
 - [TreeGrid. Selection methods](treegrid/api/api_overview.md#selection-methods) 
-
 
 ### Events
 

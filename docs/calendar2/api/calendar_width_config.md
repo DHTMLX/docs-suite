@@ -9,7 +9,7 @@ title: width
 
 @default: "250px"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    width: "300px"
 });

@@ -1,18 +1,21 @@
 ---
 sidebar_label: beforeHide
-title: beforeHide
----          
+title: JavaScript Sidebar - beforeHide Event 
+description: You can explore the beforeHide event of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeHide
 
 @short: fires before hiding an item of Sidebar
 
 @signature: {'beforeHide: (id: string, events: Event) => void | boolean;'}
 
 @params:
-- id 		string		the ID of a sidebar item
-- events         Event       a native event object
+- `id: string` - the ID of a sidebar item
+- `events: Event` - a native event object
 
 @returns:
-- result        void | boolean     false - to prevent hiding of a sidebar item, otherwise - true
+Return `false` to prevent hiding of a sidebar item; otherwise, `true`.
 
 @example:
 sidebar.events.on("BeforeHide", function(id, event){
@@ -20,10 +23,8 @@ sidebar.events.on("BeforeHide", function(id, event){
     return false;
 });
 
-
-
 @descr:
 
 **Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

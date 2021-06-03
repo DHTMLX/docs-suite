@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript Tree - Data Loading 
+description: You can explore the data loading of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are several simple ways of loading data into dhtmlxTree:
 
@@ -10,8 +13,7 @@ There are several simple ways of loading data into dhtmlxTree:
 
 First, you need to prepare a data set that will be loaded into Tree.
 
-Preparing data set
--------------------
+## Preparing data set
 
 dhtmlxTree expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -78,38 +80,36 @@ var dataset = [
 
 Each object in the data set contains configuration of a tree item. The structure of an item is rather flexible. It may include:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>string</i>) the name of an item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of an item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>opened</b></td>
+			<td><b>opened</b></td>
 			<td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>checkbox</b></td>
+			<td><b>checkbox</b></td>
 			<td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>items</b></td>
+			<td><b>items</b></td>
 			<td>(<i>array</i>) an array of nested items</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
+			<td><b>icon</b></td>
 			<td>(<i>object</i>) allows adding <a href="../tree/api/tree_icon_config">custom icons</a> for a tree item</td>
 		</tr>
     </tbody>
 </table>
 
-
-External data loading
---------------------
+## External data loading
 
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
@@ -130,11 +130,9 @@ tree.data.load("/some/data").then(function(){
 });
 ~~~
 
+## Loading from local source
 
-Loading from local source
-------------------
-
-To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparingdataset) as a parameter of this method:
+To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var tree = new dhx.Tree("tree_container");
@@ -143,8 +141,7 @@ tree.data.parse(dataset);
 
 **Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
 To save the current state of a tree, use the **serialize** method of Tree Collection. It converts the data of a tree into an array of JSON objects. 
 Each JSON object contains the configuration of a separate row.
@@ -161,4 +158,3 @@ var tree2 = new dhx.Tree(document.body);
 // parsing the state of tree1 into tree2
 tree2.data.parse(state);
 ~~~
-

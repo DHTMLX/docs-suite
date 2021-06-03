@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeShow
-title: beforeShow
----          
+title: JavaScript Window - beforeShow Event 
+description: You can explore the beforeShow event of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeShow
 
 @short: fires before a window is shown
 
 @signature: {'beforeShow: (position: IPosition) => boolean | void;'}
 
 @params:
-- position  object      an object with coordinates of the window's position
+`position: object` - an object with coordinates of the window's position
 
 @returns:
-- result		boolean			true to show a window, false to block showing a window
+Return `true` to show a window, `false` to block showing a window.
 
 @example:
 dhxWindow.events.on("BeforeShow", function(position){
@@ -19,20 +22,17 @@ dhxWindow.events.on("BeforeShow", function(position){
     return true;
 });
 
-
-
 @descr:
-The event is blockable. Return *false* to block showing a window.
-
-
-The **position** parameter contains two attributes:
-
-- **left** - (*number*)	the left coordinate of the window's position (in pixels)
-- **top** - (*number*)	the top coordinate of the window's position (in pixels)
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
-@related: window/handling_events.md
+The **position** parameter contains two attributes:
 
-@changelog: 
+- **left** - (*number*) the left coordinate of the window's position (in pixels)
+- **top** - (*number*) the top coordinate of the window's position (in pixels)
+
+@changelog:
+
 The **position** parameter has been added in v7.0.
+
+[comment]: # (@related: window/handling_events.md)

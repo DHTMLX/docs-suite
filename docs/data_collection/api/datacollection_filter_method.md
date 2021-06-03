@@ -1,45 +1,49 @@
 ---
-sidebar_label: filter
-title: filter
----          
+sidebar_label: filter()
+title: JavaScript DataCollection - filter Method 
+description: You can explore the filter method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# filter()
 
 @short: filters data items in a component
 
-@signature: {'filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;'}
+@signature: {'filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;'}
 
 @params:
-- rule				function,object			the filtering criteria
-- config 			object					optional, defines the parameters of filtering
+- `rule: function | object` - the filtering criteria
+- `config: object` - optional, defines the parameters of filtering
 
 @example:
- 
+
 grid.data.filter(function (item) {
-  return item.a > 0 && item.b !== "Apple";
+    return item.a > 0 && item.b !== "Apple";
 });
 
 // or
 grid.data.filter(function (item) {
     return item.a > 0 && item.b !== "Apple";
 }, {
-  add: true
+    add: true
 });
 
 // or
 grid.data.filter({
-  by: "a",
-  match: "Orange",
-  compare: function (value, match, item) {
-    if (item.a !== "Some") {
-      return val === "New";
-    }
+    by: "a",
+    match: "Orange",
+    compare: function (value, match, item) {
+        if (item.a !== "Some") {
+            return val === "New";
+        }
     return false;
-  }
+    }
 }, {
-  add: true
+    add: true
 });
 
-
 @descr:
+
+**Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 
 Calling the **filter()** method without parameters reverts the component to the initial state:
 
@@ -47,7 +51,7 @@ Calling the **filter()** method without parameters reverts the component to the 
 grid.data.filter();
 ~~~
 
-<br/>
+
 The **rule** parameter:
 
 - if set as a function, the filtering will be applied by the rule specified in the function:
@@ -60,18 +64,18 @@ grid.data.filter(function (item) {
 
 - if set as an object, the parameter has the following attributes:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>by</b></td>
+			<td><b>by</b></td>
 			<td>(<i>string</i>) mandatory, the id of a data field (the column of Grid)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>match</b></td>
+			<td><b>match</b></td>
 			<td>(<i>string</i>) mandatory, a pattern to match</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>compare</b></td>
+			<td><b>compare</b></td>
 			<td>(<i>function</i>) optional, a function for extended filtering that takes three parameters:
                 <ul>
                     <li><b>value</b> - the value to compare (e.g. a column in a row for Grid)</li>
@@ -87,27 +91,26 @@ For example:
 
 ~~~js
 grid.data.filter({
-  by: "a",
-  match: "Orange",
-  compare: function (value, match, item) {
-    if (item.a !== "Some") {
-      return val === "New";
-    }
+    by: "a",
+    match: "Orange",
+    compare: function (value, match, item) {
+        if (item.a !== "Some") {
+            return val === "New";
+        }
     return false;
 });
 ~~~
 
-<br/><br/>
 The **config** parameter may contain two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>add</b></td>
+			<td><b>add</b></td>
 			<td>(<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>smartFilter</b></td>
+			<td><b>smartFilter</b></td>
 			<td>(<i>boolean</i>) defines whether a filtering rule will be applied after adding and editing items of the collection
             </td>
 		</tr>
@@ -118,27 +121,23 @@ For instance:
 
 ~~~js
 grid.data.filter(function (item) {
-  return item.a > 0 && item.b !== "Apple";
+    return item.a > 0 && item.b !== "Apple";
 }, {
-  add: true,
-  smartFilter: true
+    add: true,
+    smartFilter: true
 });
 
 grid.data.filter({
-  by: "a",
-  match: "Orange",
-  compare: function (value, match, item) {
-    if (item.a !== "Some") {
-      return val === "New";
-    }
+    by: "a",
+    match: "Orange",
+    compare: function (value, match, item) {
+        if (item.a !== "Some") {
+            return val === "New";
+        }
     return false;
-  }
+    }
 }, {
-  add: true,
-  smartFilter: true
+    add: true,
+    smartFilter: true
 });
 ~~~
-
-
-**Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
-

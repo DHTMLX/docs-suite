@@ -1,7 +1,10 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript List - Initialization 
+description: You can explore the initialization of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxList on a page, you need to take the following simple steps:
 
@@ -31,11 +34,9 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-
 **Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -47,9 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create a container 
------------------
+## Create a container
 
 Add a container for List and give it an id, for example "list_container":
 
@@ -57,8 +56,7 @@ Add a container for List and give it an id, for example "list_container":
 <div id="list_container"></div>
 ~~~
 
-Initialize List
-----------------------
+## Initialize List
 
 Initialize List with the `dhx.List` object constructor. The constructor has two parameters:
 
@@ -80,8 +78,7 @@ There is a set of properties you can specify for List to optimize its configurat
 
 The detailed information on List configuration options can be found in the [List API overview](list/api/api_overview.md#properties) article.
 
-Load data into List
----------------------
+## Load data into List
 
 Finally, you are to load the list with data. You can load inline or external data into the list.
 

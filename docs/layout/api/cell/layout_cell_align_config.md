@@ -1,13 +1,16 @@
 ---
 sidebar_label: align
-title: align
----          
+title: JavaScript Layout - align Config 
+description: You can explore the align config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# align
 
 @short: sets the alignment of content inside a cell
-TODO: api change (добавить в desc "start" | "center" | "end" | "between" | "around" | "evenly")
-@signature: {'align?: FlexDirection;'}
 
-@example: 
+@signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
+
+@example:
 var layout = dhx.Layout("layout_container", {
    rows: [
         {
@@ -33,12 +36,8 @@ var layout = dhx.Layout("layout_container", {
 	]
 });
 
-
-
-@descr: 
-
-@related: layout/init.md#initialize-layout
+@descr:
 
 **Related sample**: [Layout. Align](https://snippet.dhtmlx.com/4w1033c9)
 
-
+[comment]: # (@related: layout/init.md#initialize-layout)

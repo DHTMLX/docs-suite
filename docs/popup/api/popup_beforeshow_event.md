@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeShow
-title: beforeShow
----          
+title: JavaScript Popup - beforeShow Event 
+description: You can explore the beforeShow event of Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeShow
 
 @short: fires before a popup is shown
 
 @signature: beforeShow: (node: HTMLElement) => void | boolean;
 
 @params:
-- element 		HTMLElement		 the container a popup is placed in
+`node: HTMLElement` - the container a popup is placed in
 
 @returns:
-- result		void | boolean			true to show a popup, false to block showing a popup
+Return `true` to show a popup, `false` to block showing a popup.
 
 @example:
 popup.events.on("BeforeShow", function(element){
@@ -19,17 +22,12 @@ popup.events.on("BeforeShow", function(element){
     return true;
 });
 
-
-
 @descr:
-
-The event is blockable. Return *false* to block showing a popup.
-
-@relatedapi:
-popup/api/popup_aftershow_event.md
 
 **Related samples**:
 - [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 - [Popup. Prevent Show](https://snippet.dhtmlx.com/z788l8r7)
 
-@related: popup/event_handling.md
+[comment]: # (@related: popup/event_handling.md)
+
+[comment]: # (@relatedapi: popup/api/popup_aftershow_event.md)

@@ -1,8 +1,10 @@
 ---
 sidebar_label: Work with Calendar
-title: Work with Calendar
-description: description
----          
+title: JavaScript Calendar - Work with Calendar 
+description: You can explore how to work with Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Work with Calendar
 
 ## Changing calendar mode
 
@@ -69,8 +71,7 @@ var mode = calendar.getCurrentMode(); // -> "calendar"
 
 ## Getting selected date
 
-To get the selected date, call the [](calendar/api/calendar_getvalue_method.md) method. The method returns selected date either as a string (default) or as a Date object. 
-To get a date as an object, pass the *true* parameter to the method.
+To get the selected date, call the [](calendar/api/calendar_getvalue_method.md) method. The method returns selected date either as a string (default) or as a Date object. To get a date as an object, pass the *true* parameter to the method.
 
 ~~~js
 var date1 = calendar.getValue(); // -> "20/08/19"
@@ -80,7 +81,7 @@ var date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300
 
 **Related sample**: [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
 
-If you work with a calendar in the [range mode](calendar/configuring.md#rangemode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
+If you work with a calendar in the [range mode](calendar/configuring.md#range-mode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
 
 ~~~js
 // for a range calendar as an array of Date values 
@@ -94,12 +95,11 @@ var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 ## Linking two calendars
 
 You can create two calendars and link them to provide the ability of selecting a date range. The first calendar will be used for setting the start date of the range, while the end date of the range will be specified in the
-second calendar. 
+second calendar.
 
 ![](../assets/calendar/date_range.png)
 
-Use the [](calendar/api/calendar_link_method.md) method and pass as a parameter the object of the second calendar to link the first calendar to.
-In the example below the [Change](calendar/api/calendar_change_event.md) event is intended to output the start and end dates of the selected range:
+Use the [](calendar/api/calendar_link_method.md) method and pass as a parameter the object of the second calendar to link the first calendar to. In the example below the [Change](calendar/api/calendar_change_event.md) event is intended to output the start and end dates of the selected range:
 
 ~~~js
 var calendar = new dhx.Calendar("calendar1", { css: "dhx_calendar--bordered" });
@@ -120,7 +120,7 @@ calendar2.events.on("change", function (date) {
 
 **Related sample**: [Calendar. Date Range](https://snippet.dhtmlx.com/dxo54017)
 
-## Selecting date 
+## Selecting date
 
 To select a date in a calendar, call the [](calendar/api/calendar_setvalue_method.md) method. The method has one mandatory parameter - a date that should be selected, which can be passed in several formats:
 
@@ -153,7 +153,6 @@ In case a date has been successfully added into the calendar, the method will re
 
 **Related sample**: [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
 
-
 {{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the
 **setValue()** method and in the **dateFormat** property. Otherwise, the default format (**"%d/%m/%y"**) will be used.}}
 
@@ -176,8 +175,3 @@ calendar.events.on("DateMouseOver", function(date, e) {
 	}
 });
 ~~~
-
-
-
-
-

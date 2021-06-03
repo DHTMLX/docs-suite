@@ -1,21 +1,22 @@
 ---
 sidebar_label: change
-title: change
----          
+title: JavaScript Combo Box - change Event 
+description: You can explore the change event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# change
 
 @short: fires when a new option is selected
 
 @signature: {'change: (ids: string | string[]) => void;'}
 
 @params:
-- id 		string|string[] 		the id(s) of a newly selected option(s)
+`id: string | string[]` - the id(s) of a newly selected option(s)
 
 @example:
 combo.events.on("Change", function(id){
     // your logic here
 });
-
-
 
 @descr:
 

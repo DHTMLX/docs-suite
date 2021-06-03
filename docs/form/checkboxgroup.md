@@ -1,7 +1,10 @@
 ---
 sidebar_label: CheckboxGroup
-title: CheckboxGroup
----          
+title: JavaScript Form - CheckboxGroup 
+description: You can explore the CheckboxGroup of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# CheckboxGroup
 
 A control intended for creating groups of checkboxes.
 
@@ -50,7 +53,7 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-### Properties of CheckboxGroup 
+### Properties of CheckboxGroup
 
 View [the full list of configuration properties of the CheckboxGroup control](form/api/checkbox_group/api_checkboxgroup_properties.md).
 
@@ -60,7 +63,7 @@ Check [the full list of configuration properties of a Checkbox of the CheckboxGr
 
 ## Working with CheckboxGroup
 
-You can manipulate a CheckboxGroup control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a CheckboxGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can hide a control on a page:
 
@@ -68,10 +71,10 @@ For example, you can hide a control on a page:
 var value = form.getItem("CheckboxGroup").hide();
 ~~~
 
-### Methods 
+### Methods
 
 Check [the full list of methods of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-methods).
 
-### Events 
+### Events
 
 Check [the full list of events of the CheckboxGroup control](form/api/api_overview.md#checkboxgroup-events).

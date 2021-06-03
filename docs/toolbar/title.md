@@ -1,7 +1,10 @@
 ---
 sidebar_label: Title
-title: Title
----          
+title: JavaScript Toolbar - Title 
+description: You can explore the Title of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Title
 
 This is an item that contains some text.
 
@@ -11,7 +14,7 @@ This is an item that contains some text.
 
 ## Adding Title control
 
-A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/treecollection_add_method.md):
+A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({

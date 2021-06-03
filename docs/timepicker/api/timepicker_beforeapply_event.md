@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeApply
-title: beforeApply
----          
+title: JavaScript Timepicker - beforeApply Event 
+description: You can explore the beforeApply event of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeApply
 
 @short: fires before saving the timepicker value
 
-@signature: {'beforeApply: (time: string | ITimeObject) => void;'}
+@signature: {'beforeApply: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-- value		string|object	the value of a timepicker	
+`value: string | object` - the value of a timepicker
 
 @returns:
--result		boolean		false - to prevent saving the timepicker value, otherwise true
+Return `false` to prevent saving the timepicker value; otherwise, `true`.
 
 @example:
 timepicker.events.on("BeforeApply", function(value) {
@@ -19,9 +22,9 @@ timepicker.events.on("BeforeApply", function(value) {
     return false;
 });
 
-
-
 @descr:
+
+**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
 
 The type of the value parameter depends on the applied [valueFormat](timepicker/api/timepicker_valueformat_config.md) and [timeFormat](timepicker/api/timepicker_timeformat_config.md):
 
@@ -30,10 +33,6 @@ The type of the value parameter depends on the applied [valueFormat](timepicker/
 - If *valueFormat: "timeObject"*  and *timeFormat:24* are specified, the object value will contain key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
 - If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, the object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
 
-**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
-
-@relatedapi: 
-timepicker/api/timepicker_valueformat_config.md
-timepicker/api/timepicker_timeformat_config.md
-
 @changelog: added in v7.0
+
+[comment]: # (@relatedapi: timepicker/api/timepicker_valueformat_config.md timepicker/api/timepicker_timeformat_config.md)

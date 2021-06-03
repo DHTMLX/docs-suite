@@ -1,7 +1,10 @@
 ---
-sidebar_label: Custom HTML button
-title: Custom HTML button
----          
+sidebar_label: Custom HTML
+title: JavaScript Toolbar - Custom HTML Button 
+description: You can explore the Custom HTML of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Custom HTML
 
 This is an item that contains any custom HTML content (for example, an image, icon or other element).
 
@@ -11,7 +14,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ## Adding Custom HTML
 
-Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/treecollection_add_method.md):
+Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({

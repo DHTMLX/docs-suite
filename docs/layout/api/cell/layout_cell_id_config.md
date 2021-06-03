@@ -1,13 +1,16 @@
 ---
 sidebar_label: id
-title: id
----          
+title: JavaScript Layout - id Config 
+description: You can explore the id config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# id
 
 @short: the id of a cell
 
 @signature: {'id?: string;'}
 
-@example: 
+@example:
 var layout = new dhx.Layout("layout_container", {
         cols: [
             { header: "Cell header", id:"1"}
@@ -15,9 +18,6 @@ var layout = new dhx.Layout("layout_container", {
     }
 );
 
+@descr:
 
-
-@descr: 
-
-@related: layout/init.md#initialize-layout
-
+[comment]: # (@related: layout/init.md#initialize-layout)

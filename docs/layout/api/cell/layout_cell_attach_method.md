@@ -1,19 +1,21 @@
 ---
-sidebar_label: attach
-title: attach
----          
+sidebar_label: attach()
+title: JavaScript Layout - attach Method 
+description: You can explore the attach method of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# attach()
 
 @short: attaches a DHTMLX component into a Layout cell
 
 @signature: {'attach(name: string | IViewFn | IView | IViewConstructor, config?: any): IViewLike;'}
 
 @params:
-- component 		string,object 		the name or object of a component
-- config 			object 				optional, the configuration settings of a component
+- `component: string | object` - the name or object of a component
+- `config: object` - optional, the configuration settings of a component
 
 @returns:
-- attached			object			the object of the attached component
-
+The object of the attached component.
 
 @example:
 var layout = new dhx.Layout({
@@ -26,14 +28,8 @@ var sidebar = new dhx.Sidebar(null, {
 
 layout.getCell("sidebar").attach(sidebar);
 
-
-
 @descr:
-
-@related: layout/work_with_layout.md#attaching-a-component-to-a-cell
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
-
-
-
+[comment]: # (@related: layout/work_with_layout.md#attaching-a-component-to-a-cell)

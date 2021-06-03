@@ -1,7 +1,10 @@
 ---
 sidebar_label: itemHeight
-title: itemHeight
----          
+title: JavaScript List - itemHeight Config 
+description: You can explore the itemHeight config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# itemHeight
 
 @short: sets the height of an item
 
@@ -9,7 +12,7 @@ title: itemHeight
 
 @default:37
 
-@example: 
+@example:
 // sets the height of an item as a number
 var list = new dhx.List("list_container", { 
     itemHeight:30
@@ -20,16 +23,14 @@ var list = new dhx.List("list_container", {
     itemHeight:"30px"
 });
 
-
-
 @descr:
+
+**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)
 
 The usage of the *CSS calc() function* within the **itemHeight** property is not possible.
 
 The default height of a list item is 37  when the [virtual](list/api/list_virtual_config.md) property is set to *true*. See the [Configuration](list/configuration.md#height-of-an-item) article for more information. 
 
-@related: list/configuration.md#height-of-an-item
+[comment]: # (@related: list/configuration.md#height-of-an-item)
 
-@relatedapi: list/api/list_virtual_config.md
-
-**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)
+[comment]: # (@relatedapi: list/api/list_virtual_config.md)

@@ -1,7 +1,10 @@
 ---
 sidebar_label: beforeSelect
-title: beforeSelect
----          
+title: JavaScript Grid - beforeSelect Event 
+description: You can explore the beforeSelect event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeSelect
 
 @short: fires before selecting a cell
 
@@ -9,21 +12,17 @@ title: beforeSelect
 
 @params:
 
-- row		object		the config of a row
-- col       object      the config of a column
+- `row: object` - the config of a row
+- `col: object` - the config of a column
 
 @returns:
-param   boolean | void     false - to prevent selecting of a cell, otherwise - true
-
-
+Return `false` to prevent selecting of a cell; otherwise, `true`.
 
 @example:
 grid.selection.events.on("BeforeSelect", function(row, col){
     console.log("beforeSelect", row, col); 
     return false;
 });
-
-
 
 @descr:
 It is also possible to use the simplified version of the event:
@@ -38,5 +37,4 @@ grid.events.on("BeforeSelect", function(row, col){
 @changelog:
 added in v7.0
 
-@relatedapi: 
-grid/api/selection/selection_enable_method.md
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md)

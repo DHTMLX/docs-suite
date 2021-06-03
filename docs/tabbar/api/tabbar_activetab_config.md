@@ -1,13 +1,16 @@
 ---
 sidebar_label: activeTab
-title: activeTab
----          
+title: JavaScript Tabbar - activeTab Config 
+description: You can explore the activeTab config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# activeTab
 
 @short: sets the currently active tab
 
 @signature: {'activeTab?: string;'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar", {
 	activeTab:"3",
     mode: "top",
@@ -19,9 +22,7 @@ var tabbar = new dhx.Tabbar("tabbar", {
     ]
 });
 
-
-
-@descr: 
+@descr:
 
 **Related sample**: [Tabbar. Active Tab](https://snippet.dhtmlx.com/0y8kd9oa)
 

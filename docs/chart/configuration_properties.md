@@ -1,14 +1,16 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Chart - Configuration 
+description: You can explore the configuration of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Configuration
 
 This chapter will guide you through the set of Chart configuration options. It explores both common dhtmlxChart properties actual for all chart types and the config options individual for particular types.
 
 You need to set necessary properties from those listed below within the configuration object passed to the chart constructor function and thus adjust the chart settings to meet your needs.
 
-Main properties
------------------------
+## Main properties
 
 dhtmlxChart includes several configuration options that are mostly common for all chart types. They are: 
 
@@ -56,8 +58,7 @@ var chart = new dhx.Chart("chart", {
 
 **Related sample**: [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
 
-Scales
--------------
+## Scales
 
 There are "left","right","top","bottom" and "radial" (for Radar chart) types of [scales](chart/api/chart_scales_config.md). 
 
@@ -87,8 +88,7 @@ var chart = new dhx.Chart("chart_container",{
 
 Scales have both common and specific options. Check the full list of the available options for scales in the [API reference](chart/api/chart_scales_config.md).
 
-Series
-------------
+## Series
 
 [Series](chart/api/chart_series_config.md) present an array of objects each of which contains a number of properties for rendering a separate [data set](chart/data_loading.md#preparing-data-set) on a chart.
 
@@ -124,8 +124,7 @@ var chart = new dhx.Chart("chart_container",{
 
 See the full list of configuration options for chart series in the [API reference](chart/api/chart_series_config.md).
 
-Legend
------------
+## Legend
 
 The [](chart/api/chart_legend_config.md) object may contain a number of options that define its configuration.
 

@@ -1,24 +1,26 @@
 ---
 sidebar_label: beforeSelect
-title: beforeSelect
----          
+title: JavaScript Selection - beforeSelect Event 
+description: You can explore the beforeSelect event of Selection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeSelect
 
 @short: fires on selecting an item, but before the item is really selected
 
 @signature: {'beforeSelect: (id: string) => void | boolean;'}
 
 @params:
-- id		string		the id of an item
+`id: string` - the id of an item
 
 @returns:
-- param		boolean		false - to prevent selecting of an item, otherwise - true
+Return `false` to prevent selecting of an item; otherwise, `true`.
 
 @example:
-tree.selection.events.on("BeforeSelect", function(id) {
+component.selection.events.on("BeforeSelect", function(id) {
     console.log(id);
     return false;
 });
-
 
 @descr:
 
@@ -27,7 +29,7 @@ tree.selection.events.on("BeforeSelect", function(id) {
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-tree.events.on("BeforeSelect", function(id) {
+component.events.on("BeforeSelect", function(id) {
     console.log(id);
     return false;
 });

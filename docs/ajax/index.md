@@ -1,8 +1,10 @@
 ---
 sidebar_label: Overview
-title: AJAX overview
-description: description
----   
+title: JavaScript Ajax - AJAX Overview 
+description: You can have an overview of Ajax in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# AJAX overview
 
 The DHTMLX library provides you with a possibility to use AJAX (Asynchronous Java Script and XML) technique for exchanging data with a web server without reloading the whole page.
 

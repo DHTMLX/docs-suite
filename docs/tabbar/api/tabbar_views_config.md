@@ -1,14 +1,16 @@
 ---
 sidebar_label: views
-title: views
-description: description
----          
+title: JavaScript Tabbar - views Config 
+description: You can explore the views config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# views
 
 @short: defines the configuration of tabs
 
-@signature: {'views?: ICellConfig[] | ILayoutConfig[];'}
+@signature: {'views?: ICellConfig[];'}
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     views:[
         { tab: "left", css:"panel flex", header:"Left"},
@@ -18,9 +20,9 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     ]
 });
 
-
-
 @descr:
+
+**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
 1\. The **views** array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
 
@@ -55,13 +57,8 @@ As a result, the height of a tab is 45 and the width is 100.
 
 - If the mode of displaying a tabbar is set to "left"|"right", there is no the ability to define the width for a separate tab. <br/> The default height of the tabs is 45px, default width is 200px.
 
-
-@related: 
-tabbar/init.md#define-tabbar-structure
-tabbar/configuring_tabbar.md#structure-of-tabs 
-
-**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
-
 @changelog:
 
-**tabWidth** and **tabHeight** properties of a tab object are added in v7.0.
+The **tabWidth** and **tabHeight** properties of a tab object are added in v7.0.
+
+[comment]: # (@related: tabbar/init.md#define-tabbar-structure tabbar/configuring_tabbar.md#structure-of-tabs)

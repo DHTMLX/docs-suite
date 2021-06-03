@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling 
-title: Event Handling 
----          
+title: JavaScript Slider - Event Handling 
+description: You can explore the event handling of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -12,8 +15,6 @@ slider.events.on("Change", function(newValue, oldValue, isRange){
     console.log("The value of a slider has changed to "+slider.getValue());
 });
 ~~~
-
-
 
 {{note The names of events are case-insensitive.}}
 
@@ -42,6 +43,4 @@ slider.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](slider/api/refs/slider_events.md).
-
-
+The full list of events is available in the related [API section](slider/api/api_overview.md#events).

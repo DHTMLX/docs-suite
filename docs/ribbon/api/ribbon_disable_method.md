@@ -1,23 +1,26 @@
 ---
-sidebar_label: disable
-title: disable
----          
+sidebar_label: disable()
+title: JavaScript Ribbon - disable Method 
+description: You can explore the disable method of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# disable()
 
 @short: disables and dims an item(s) of Ribbon
 
 @signature: {'disable(ids: string | string[]): void;'}
 
 @params:
-- ids 		string | array		optional, an ID or an array of IDs of items
+`ids: string | array` - optional, an ID or an array of IDs of items
 
 @example:
 ribbon.disable("save_btn");
 // several at a time
 ribbon.disable(["cancel_btn","del_btn"]);
 
-
-
 @descr:
+
+**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 
@@ -26,9 +29,4 @@ Starting from v7.0, it is possible to disable all items at once by using the met
 ribbon.disable();
 ~~~
 
-
-**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
-
-
-
-@related: ribbon/operating_ribbon.md#disabling-and-enabling-controls
+[comment]: # (@related: ribbon/operating_ribbon.md#disabling-and-enabling-controls)

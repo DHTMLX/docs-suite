@@ -1,44 +1,47 @@
 ---
 sidebar_label: Title properties
-title: Sidebar Title properties
+title: JavaScript Sidebar - Title Properties 
+description: You can explore the Title properties of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-<table class="webixdoc_links">
+# Sidebar Title properties
+
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
+			<td><b>type</b></td>
 			<td>(<i>string</i>) the item type, set it to "title". If not specified - the <a href="../../sidebar/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) the parent of the item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>string</i>) the value of the Title control. You need to set either the <b>value</b> or <b>html</b> property to the title</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>html</b></td>
+			<td><b>html</b></td>
 			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the title</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) adds a custom CSS class</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>tooltip</b></td>
+			<td><b>tooltip</b></td>
 			<td>(<i>string</i>) a tooltip for the control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
+			<td><b>hidden</b></td>
 			<td>(<i>boolean</i>) defines whether a control is hidden</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
+			<td><b>disabled</b></td>
 			<td>(<i>boolean</i>) defines whether a control is disabled</td>
 		</tr>
     </tbody>

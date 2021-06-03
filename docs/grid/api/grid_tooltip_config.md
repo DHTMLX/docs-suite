@@ -1,7 +1,10 @@
 ---
 sidebar_label: tooltip
-title: tooltip
----          
+title: JavaScript Grid - tooltip Config 
+description: You can explore the tooltip config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# tooltip
 
 @short: enables a tooltip on hovering over the content of a column
 
@@ -9,23 +12,17 @@ title: tooltip
 
 @default: true
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid", {
 	columns: [//columns config],
 	data: dataset,
 	tooltip: false /*!*/
 });
 
-
-
-@descr: 
-
+@descr:
 
 **Related sample**: [Grid. Hiding Tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 
-
-
-@related: grid/initialization.md#initialize-grid
-grid/configuration.md#tooltip
-
 @changelog: added in v6.5
+
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#tooltip)

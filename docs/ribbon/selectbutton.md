@@ -1,7 +1,10 @@
 ---
 sidebar_label: SelectButton
-title: SelectButton
----          
+title: JavaScript Ribbon - SelectButton 
+description: You can explore the SelectButton of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# SelectButton
 
 This is a button that contains a drop-down list of options.
 
@@ -41,12 +44,6 @@ ribbon.data.add({
 
 You can provide the [following properties](ribbon/api/api_selectbutton_properties.md) in the configuration object of a SelectButton control.
 
+## Operations with a button
 
-Operations with a button
------------------------
-
-You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/refs/ribbon.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
-
-
-@todo:
-check attrs
+You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
