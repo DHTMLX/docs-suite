@@ -11,11 +11,11 @@ description: You can explore the getItem method of Selection in the documentatio
 @signature: {'getItem(): any;'}
 
 @returns:
-The object of a selected item.
+Either an object of a selected item, or an array of selected items.
 
 @example:
-var item = tree.selection.getItem();
-// -> {value: "Books", id: "Books", opened: true, …}
+var item = component.selection.getItem();
+// -> {…}
 
 @descr:
 

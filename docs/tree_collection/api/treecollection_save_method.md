@@ -31,7 +31,7 @@ return data.saveData.then(function () {
 });
 ~~~
 
-Use the [isSaved](tree_collection/api/issaved.md) method to know whether the changes are saved:
+Use the [](tree_collection/api/treecollection_issaved_method.md) method to know whether the changes are saved:
 
 ~~~js
 diagram.data.saveData.then(function () {

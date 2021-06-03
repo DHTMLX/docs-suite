@@ -15,7 +15,7 @@ description: You can explore the canCopy method of TreeCollection in the documen
 - `target: string` - the ID of the target control
 
 @returns:
-`true` if the control can be copied into other control; otherwise, `false`.
+`true` if the control can be copied into another control; otherwise, `false`.
 
 @example:
 component.data.canCopy(from.id, id);

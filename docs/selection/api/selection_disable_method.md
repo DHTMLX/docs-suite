@@ -11,7 +11,7 @@ description: You can explore the disable method of Selection in the documentatio
 @signature: disable(): void;
 
 @example:
-tree.selection.disable();
+component.selection.disable();
 
 @descr:
 
