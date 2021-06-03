@@ -8,6 +8,36 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.1.7
+------------------
+
+<span class="rel_date">released on May 17, 2021</span>
+
+### Fixes
+
+- Grid. Fix the issue with the "adjust" and "maxWidth" properties
+- Menu. Fix the issue with the ability to block the context menu from being hidden via returning `false` to the "beforeHide" event
+- TreeGrid. Fix the issue that caused an item to disappear after dragging and dropping it under the container
+- TreeGrid. Fix the issue with selection when some of items are collapsed in TreeGrid
+- Window. Fix the issue with showing of the context menu which is attached to the window
+- Data Collection. Fix the error fired after an item with the already existing id is added to the component via the "add()" method of the data collection
+- Tree Collection. Fix the issue with the "filter()" method
+
+Version 7.1.6
+------------------
+
+<span class="rel_date">released on May 5, 2021</span>
+
+### Fixes
+
+- DataView, List. Fix the issue with removing of items
+- Grid. Fix the issue that caused filtering to reset after the data are reloaded
+- Grid. Fix the issue with dynamic showing of a hidden column when the "autoWidth" configuration property of Grid is enabled
+- Grid. Fix the issue with number formatting
+- TreeGrid. Fix the issue with adding of nested items to the treegrid
+- TreeGrid. Fix the issue with drag-n-drop of rows
+- Tree Collection. Fix the issue with the "copy" and "move" methods
+
 Version 7.1.5
 ------------------
 

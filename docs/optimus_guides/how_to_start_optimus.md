@@ -813,7 +813,7 @@ export class ToolbarView extends View {
 }
 ~~~
 
-2\. Next we'll expand the DataView class by adding a handler to the "removeItem" event, as in:
+2\. Next, we'll expand the DataView class by adding a handler to the "removeItem" event, as in:
 
 ~~~js title="src/views/content/DataView.js"
 import { View } from "dhx-optimus";

@@ -48,6 +48,7 @@ npm start
 ~~~
 
 <br>
+
 *In other cases*, DHTMLX Optimus can be added into your own project via the `npm` package manager. For that, run the following commands in your project directory:
 
 - to install "dhx-optimus":
@@ -697,7 +698,7 @@ export class TopLayout extends View {
 }
 ~~~
 
-To listen the changes made to the global state, we should update the code of *WindowView* and apply the **observe()** method.  As a result, the *WindowView* will be rendered when switching to the second page of the app:  
+To listen to the changes made to the global state, we should update the code of *WindowView* and apply the **observe()** method.  As a result, the *WindowView* will be rendered when switching to the second page of the app:  
 
 ~~~js
 import { View } from "dhx-optimus";
@@ -890,7 +891,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
 
 ### Methods used inside the classes
 
-The *App's* constructor provides the following method:
+- The *App's* constructor provides the following method:
 
 <table>
 	<tbody>
@@ -902,7 +903,8 @@ The *App's* constructor provides the following method:
     </tbody>
 </table>
 <br/>
-The <i>Component's</i> constructor provides the following methods:
+
+- The <i>Component's</i> constructor provides the following methods:
 
 <table>
 	<tbody>
@@ -919,7 +921,8 @@ The <i>Component's</i> constructor provides the following methods:
     </tbody>
 </table>
 <br/>
-The <i>View's</i> constructor provides the following methods:
+
+- The <i>View's</i> constructor provides the following methods:
 
 <table>
 	<tbody>
@@ -944,7 +947,8 @@ The <i>View's</i> constructor provides the following methods:
     </tbody>
 </table>
 <br/>
-The <i>App's</i> constructor also provides the method that can be called outside the application:
+
+- The <i>App's</i> constructor also provides the method that can be called outside the application:
 
 <table>
 	<tbody>
