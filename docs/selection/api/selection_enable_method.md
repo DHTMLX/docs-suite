@@ -11,7 +11,7 @@ description: You can explore the enable method of Selection in the documentation
 @signature: enable(): void;
 
 @example:
-tree.selection.enable();
+component.selection.enable();
 
 @descr:
 

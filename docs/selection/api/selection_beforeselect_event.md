@@ -17,7 +17,7 @@ description: You can explore the beforeSelect event of Selection in the document
 Return `false` to prevent selecting of an item; otherwise, `true`.
 
 @example:
-tree.selection.events.on("BeforeSelect", function(id) {
+component.selection.events.on("BeforeSelect", function(id) {
     console.log(id);
     return false;
 });
@@ -29,7 +29,7 @@ tree.selection.events.on("BeforeSelect", function(id) {
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-tree.events.on("BeforeSelect", function(id) {
+component.events.on("BeforeSelect", function(id) {
     console.log(id);
     return false;
 });

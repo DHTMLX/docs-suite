@@ -11,7 +11,7 @@ description: You can explore the filter method of TreeCollection in the document
 @signature: {'filter(rule?: IFilterMode | IFilterCallback, config?: IFilterConfig): void;'}
 
 @params:
-- `rule: function, object` - the filtering criteria
+- `rule: function | object` - the filtering criteria
 - `config: object` - optional, defines the parameters of filtering
 
 @example:

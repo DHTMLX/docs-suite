@@ -17,7 +17,7 @@ description: You can explore the remove method of Selection in the documentation
 `true` if an item is unselected; otherwise, `false`.
 
 @example:
-tree.selection.remove("1"); // -> true
+component.selection.remove("1"); // -> true
 
 @descr:
 
@@ -26,5 +26,5 @@ tree.selection.remove("1"); // -> true
 Starting from v7.0, the method unselects all previously selected items when calling without parameters:
 
 ~~~js
-tree.selection.remove();
+component.selection.remove();
 ~~~

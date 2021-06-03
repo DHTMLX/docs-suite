@@ -11,6 +11,6 @@ description: You can explore the restoreOrder method of TreeCollection in the do
 @signature: {'restoreOrder(): void;'}
 
 @example:
-toolbar.restoreOrder();
+toolbar.data.restoreOrder();
 
 @descr:

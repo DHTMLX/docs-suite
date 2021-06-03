@@ -14,7 +14,7 @@ description: You can explore the getId method of Selection in the documentation 
 The id of a selected item.
 
 @example:
-var id = tree.selection.getId(); // -> "2"
+var id = component.selection.getId(); // -> "2"
 
 @descr:
 

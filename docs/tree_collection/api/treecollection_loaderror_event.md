@@ -14,7 +14,7 @@ description: You can explore the loadError event of TreeCollection in the docume
 `response: string | object` - info about the error
 
 @example:
-data.events.on("LoadError", function(error){
+component.data.events.on("LoadError", function(error){
 	// your code here
 });
 

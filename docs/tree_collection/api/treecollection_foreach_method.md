@@ -16,7 +16,7 @@ description: You can explore the forEach method of TreeCollection in the documen
 - `level: number` - optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
 
 @example:
-treecollection.forEach(function(element, index, array) {
+component.data.forEach(function(element, index, array) {
     console.log("This is an item of treeCollection: ", element);
     console.log("This is an index of the element: ", index);
     console.log("This is an array of the elements: ", array);

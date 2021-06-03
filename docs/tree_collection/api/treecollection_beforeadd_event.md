@@ -17,13 +17,11 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 Return `false` to prevent adding of an item; otherwise, `true`.
 
 @example:
-data.events.on("BeforeAdd", function(newItem){
+component.data.events.on("BeforeAdd", function(newItem){
 	console.log("A new item will be added");
     return true;
 });
 
 @descr:
-
-The event is blockable. Return *false* to prevent an item adding into a data collection.
 
 [comment]: # (@relatedapi: tree_collection/api/afteradd_event.md)
