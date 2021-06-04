@@ -8,20 +8,50 @@ description: You can explore the parse method of TreeCollection in the documenta
 
 @short: loads a collection of items from a local source
 
-@signature: {'parse(data: T[], driver?: DataDriver | IDataDriver): void;'}
+@signature: {'parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;'}
 
 @params:
 - `data: array | string` - the data to load
-- `driver: object | string` - optional, type of data (json, csv, xml), json by default
+- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
-// parse toolbar from the json array
-toolbar.data.parse(data);
+// loads data into the toolbar from the JSON array
+toolbar.data.parse([
+    {
+        type: "button",
+        icon: "dxi-plus",
+        value: "Tania",
+        count: 11
+    },
+    {
+        type: "separator"
+    },			
+    {
+        type: "navItem",
+        icon: "",
+        value: "Language",
+        items: [
+            {
+                icon: "dxi-printer",
+                value: "English"
+            },
+            {
+                icon: "dxi-printer",
+                value: "日本語"
+            }
+        ]
+    }
+]);
 
-// parse toolbar from the xml string
-toolbar.data.parse(data,"xml");
+// loads data into the toolbar from the XML string
+toolbar.data.parse("<root>"
+    +"<item><type>button</type><icon>dxi-plus</icon><value>Tania</value>"
+    +"<count>11</count></item>"
+    +"<item><type>separator</type></item>"
+    +"<item><type>navItem</type><value>Language</value><items>"
+    +"<item><icon>dxi-printer</icon><value>English</value></item>"
+    +"<item><icon>dxi-printer</icon><value>日本語</value></item>"
+    +"</root>","xml");
 
-// parse toolbar from the csv string
-toolbar.data.parse(data,"csv");
 
 @descr:

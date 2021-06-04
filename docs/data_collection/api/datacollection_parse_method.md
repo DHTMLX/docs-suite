@@ -8,11 +8,11 @@ description: You can explore the parse method of DataCollection in the documenta
 
 @short: loads data from a local data source
 
-@signature: {'parse(data: T[]): void;'}
+@signature: {'parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;'}
 
 @params:
-
-- `data: any` - the data to load
+- `data: array | string` - the data to load
+- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
 var data = [
@@ -39,6 +39,8 @@ var data = [
 ];
 
 var diagram = new dhx.Diagram("diagram_container", { type: "org" });
+
+// loads data into the diagram from the JSON array
 diagram.data.parse(data);
 
 @descr:
