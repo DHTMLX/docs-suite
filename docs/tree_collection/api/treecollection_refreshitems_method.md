@@ -12,7 +12,7 @@ description: You can explore the refreshItems method of TreeCollection in the do
 
 @params:
 - `id: string` - the ID of a control
-- `driver: object | string` - optional, DataDriver or type of data (json, csv, xml), json by default
+- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
 myToolbar.data.refreshItems("menu_id");

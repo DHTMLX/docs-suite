@@ -8,10 +8,10 @@ description: You can explore the afterEditEnd event of Grid in the documentation
 
 @short: fires after editing of a cell is ended
 
-@signature: {'afterEditEnd: (value: string, row: object, col: object) => void;'}
+@signature: {'afterEditEnd: (value: string | number | boolean, row: object, col: object) => void;'}
 
 @params:
-- `value: string` - the new value of a cell
+- `value: string | number | boolean` - the new value of a cell
 - `row: object` - an object with a row configuration
 - `col: object` - an object with a column configuration
 
