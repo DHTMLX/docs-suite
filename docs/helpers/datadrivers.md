@@ -46,7 +46,7 @@ The method takes two parameters:
 - **data** - (*array*) - the data to be converted
 - **withoutHeader** - (*boolean*) optional, defines whether the returned string will contain the header, *false* by default
 
-As a result, the converted to **CSV format** data of the chart look like this: 
+As a result, the converted into **CSV format** data of the chart look like this: 
 
 ~~~js title="CSV format"
 "month | company A | company B | company C | company D | id
@@ -92,7 +92,7 @@ The method takes one parameter:
 
 - **data** - (*array*) - the data to be converted
 
-As a result, the converted to **XML format** data of the grid look like this: 
+As a result, the converted into **XML format** data of the grid look like this: 
 
 ~~~js title="XML format"
 "<?xml version="1.0" encoding="iso-8859-1"?>

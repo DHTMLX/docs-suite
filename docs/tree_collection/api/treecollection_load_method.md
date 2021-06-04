@@ -12,7 +12,7 @@ description: You can explore the load method of TreeCollection in the documentat
 
 @params:
 - `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
-- `driver: object | string` - optional, DataDriver or type of data (json, csv, xml), json by default
+- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @returns:
 A promise of data loading.
