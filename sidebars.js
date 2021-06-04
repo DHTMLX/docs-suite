@@ -3,6 +3,14 @@ module.exports = {
     type: "doc",
     id: "index",
   },
+  {
+    type: "category",
+    label: "What's new and migration",
+    items: [
+      "whatsnew",
+      "migration",
+    ],
+  },
   //todo How to start нет (папка tutorial, они сильно устрели)
   {
     type: "category",
@@ -2965,14 +2973,6 @@ module.exports = {
           "optimus_guides/exam_demo",
         ],
       },
-    ],
-  },
-  {
-    type: "category",
-    label: "What's new and migration",
-    items: [
-      "whatsnew",
-      "migration",
     ],
   },
   ],
