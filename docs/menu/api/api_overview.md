@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: Menu API overview
+title: JavaScript Menu - API Overview 
+description: You can explore the API of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Menu API overview
 
 ## Menu methods
 
@@ -49,7 +52,6 @@ Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 | [](menu/api/menu_menucss_config.md)        | @getshort(menu/api/menu_menucss_config.md)        |
 | [](menu/api/menu_navigationtype_config.md) | @getshort(menu/api/menu_navigationtype_config.md) |
 
-
 ## Menu MenuItem properties
 
 A MenuItem control can possess the [following properties](menu/api/api_menuitem_properties.md).
@@ -69,4 +71,3 @@ A Separator control can have the [following properties](menu/api/api_separator_p
 ## Menu Spacer properties
 
 A Spacer control can possess the [following properties](menu/api/api_spacer_properties.md).
-

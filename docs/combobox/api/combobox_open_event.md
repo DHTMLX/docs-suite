@@ -1,20 +1,20 @@
 ---
 sidebar_label: open
-title: open
----          
+title: JavaScript Combo Box - open Event 
+description: You can explore the open event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# open
 
 @short: fires when a list with options is opened
 
-@signature: open: () => void;
+@signature: {'open: () => void;'}
 
 @example:
 combo.events.on("Open", function(){
     // your logic here
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/n70eqx5l	Combobox. Events
-
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)

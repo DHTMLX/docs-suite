@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Pagination - Customization 
+description: You can explore the customization of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling
-----------------
+# Customization
+
+## Styling
 
 There is a possibility to make changes in the look and feel of a pagination. 
 
@@ -34,7 +36,6 @@ var pagination = new dhx.Pagination("pagination_container",{
 });
 ~~~
 
-
 For example:
 
 ~~~js
@@ -59,4 +60,4 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-[Pagination. Custom style](https://snippet.dhtmlx.com/e7bujtsu)
+**Related sample**: [Pagination. Custom style](https://snippet.dhtmlx.com/e7bujtsu)

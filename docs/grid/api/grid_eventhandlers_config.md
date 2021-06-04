@@ -1,18 +1,16 @@
 ---
 sidebar_label: eventHandlers
-title: eventHandlers
----          
+title: JavaScript Grid - eventHandlers Config 
+description: You can explore the eventHandlers config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# eventHandlers
 
 @short: adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
 
-```todoapi 
-object eventHandlers;
-eventHandlers?: {
-	[key: string]: any;
-};
-```
+@signature: {'eventHandlers?: {[key: string]: any; };'}
 
-@example: 
+@example:
 
 // adds event handler to the HTML element of a custom template of a cell
 const grid = new dhx.Grid("grid", {
@@ -38,19 +36,20 @@ const grid = new dhx.Grid("grid", {
     } /*!*/
 });
 
+@descr:
+	
+**Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
 
-@template:	api_config
-@descr: 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><i>key</i></td>
+			<td><i>key</i></td>
 			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><i>value</i></td>
+			<td><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>
@@ -61,7 +60,6 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
-
 
 An example of adding event handlers to the HTML elements defined in the data set of Grid is given below:
 
@@ -100,10 +98,5 @@ const grid = new dhx.Grid("grid", {
 
 @changelog: added in v7.0
 
-[Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
-
-
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#eventhandlersforhtmlcontent
-grid/customization.md#addingtemplatetocells
-
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#event-handlers-for-html-content grid/customization.md#adding-template-to-cells)
+ 

@@ -1,15 +1,14 @@
 ---
 sidebar_label: Configuration of a Cell
-title: Configuration of a Cell
-description: description
----          
+title: JavaScript Layout - Configuration of a Cell 
+description: You can explore the configuration of a Cell of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Configuration of a Cell
 
+## HTML content
 
-HTML content
-----------------
-
-A layout cell can have any HTML content inside it. You can set it with the [](layout/api/layout_html_config.md) attribute in the object of a cell.
+A layout cell can have any HTML content inside it. You can set it with the [](layout/api/cell/layout_cell_html_config.md) attribute in the object of a cell.
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -19,12 +18,11 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6x76kgyq	Layout. Html Content}}
+**Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
 
-Hidden cell
---------------
+## Hidden cell
 
-It is possible to add the [](layout/api/layout_hidden_config.md) attribute into the the object of a cell(s) to render a layout with some cells hidden:
+It is possible to add the [](layout/api/cell/layout_cell_hidden_config.md) attribute into the the object of a cell(s) to render a layout with some cells hidden:
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -34,8 +32,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-Cell header
----------------
+## Cell header
 
 Each layout cell can have a header with some text that describes the content of this cell.
 
@@ -47,7 +44,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-You can also add an icon or an image into the header of a cell with the help of corresponding attributes - [](layout/api/layout_headericon_config.md) and layout/api/layout_headerimage_config.md.
+You can also add an icon or an image into the header of a cell with the help of corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and [](layout/api/cell/layout_cell_headerimage_config.md).
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -64,12 +61,11 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bxqnzesl	Layout. Header}}
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-Height of a header cell
----------------------------
+## Height of a header cell
 
-You can specify the necessary height of cell with a header using the [](layout/api/layout_headerheight_config.md) configuration option of a cell:
+You can specify the necessary height of cell with a header using the [](layout/api/cell/layout_cell_headerheight_config.md) configuration option of a cell:
 
 ~~~js
 var layout = new dhx.Layout("layout", {
@@ -86,15 +82,13 @@ var layout = new dhx.Layout("layout", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/bxqnzesl	Layout. Header}}
+**Related sample**: [Layout. Header](https://snippet.dhtmlx.com/bxqnzesl)
 
-If the [](layout/api/layout_header_config.md) property is not set in the config of a cell, the [](layout/api/layout_headerheight_config.md) option will add a header without text for a cell.
+If the [](layout/api/cell/layout_cell_header_config.md) property is not set in the config of a cell, the [](layout/api/cell/layout_cell_headerheight_config.md) option will add a header without text for a cell.
 
+## Cell size
 
-Cell size
-------------
-
-You can easily control and change the size of a cell via the [](layout/api/layout_width_config.md) and [](layout/api/layout_height_config.md) attributes of the object of a cell.
+You can easily control and change the size of a cell via the [](layout/api/cell/layout_cell_width_config.md) and [](layout/api/cell/layout_cell_height_config.md) attributes of the object of a cell.
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {   
@@ -127,7 +121,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-Starting from v7.0, you can define the maximal and minimal sizes for a cell by using its corresponding configuration properties: layout/api/layout_maxheight_config.md, layout/api/layout_maxwidth_config.md, layout/api/layout_minheight_config.md, layout/api/layout_minwidth_config.md.
+Starting from v7.0, you can define the maximal and minimal sizes for a cell by using its corresponding configuration properties: [](layout/api/cell/layout_cell_maxheight_config.md), [](layout/api/cell/layout_cell_maxwidth_config.md), [](layout/api/cell/layout_cell_minheight_config.md), [](layout/api/cell/layout_cell_minwidth_config.md).
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -143,7 +137,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{note Note, that [minWidth](layout/api/layout_minwidth_config.md)/[maxWidth](layout/api/layout_maxwidth_config.md) properties prevent [the width of a cell](layout/api/layout_width_config.md) from being less/greater than minWidth/maxWidth values accordingly. The [minHeight](layout/api/layout_minheight_config.md)/[maxHeight](layout/api/layout_maxheight_config.md) options work in the same way. }}
+{{note Note, that [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md) properties prevent [the width of a cell](layout/api/cell/layout_cell_width_config.md) from being less/greater than minWidth/maxWidth values accordingly. The [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) options work in the same way. }}
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -159,10 +153,9 @@ var layout = new dhx.Layout("layout_container", {
 
 As you can see from the code example above, the width of the cell occupies 50% of the parent container width but is not larger than 200px.
 
-Autosize for cells
----------
+## Autosize for cells
 
-Starting with v7.0, you can configure a cell so that its width/ height would automatically adjust to the width/ height of the cell content. For this purpose, you need to set the [width](layout/api/layout_width_config.md)/ [height](layout/api/layout_height_config.md) options to *"content"*:
+Starting with v7.0, you can configure a cell so that its width/ height would automatically adjust to the width/ height of the cell content. For this purpose, you need to set the [width](layout/api/cell/layout_cell_width_config.md)/ [height](layout/api/cell/layout_cell_height_config.md) options to *"content"*:
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -176,11 +169,9 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
+## Collapsibility
 
-Collapsibility
-----------------
-
-There are two attributes of the object of a cell: [](layout/api/layout_collapsable_config.md) and layout/api/layout_collapsed_config.md. The first one defines whether a cell can be collapsed and expanded, and the second one checks whether a cell is collapsed during
+There are two attributes of the object of a cell: [](layout/api/cell/layout_cell_collapsable_config.md) and [](layout/api/cell/layout_cell_collapsed_config.md). The first one defines whether a cell can be collapsed and expanded, and the second one checks whether a cell is collapsed during
 the initialization of a layout.
 
 ~~~js
@@ -191,14 +182,13 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/8u4ok0os	Layout. Collapsable}}
+**Related sample**: [Layout. Collapsable](https://snippet.dhtmlx.com/8u4ok0os)
 
-{{editor	https://snippet.dhtmlx.com/r2e0y6n7	Layout. Accordion}}
+**Related sample**: [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
 
-Resizability
-------------
+## Resizability
 
-To allow resizing of a cell, make use of the [](layout/api/layout_resizable_config.md) option in the object of a cell. 
+To allow resizing of a cell, make use of the [](layout/api/cell/layout_cell_resizable_config.md) option in the object of a cell. 
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {
@@ -208,14 +198,13 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/k2fj4nm0	Layout. Resizable}}
+**Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)
 
-{{note Starting from v7.0, you can define the resizing limits by setting necessary values to the [minWidth](layout/api/layout_minwidth_config.md)/[maxWidth](layout/api/layout_maxwidth_config.md), [minHeight](layout/api/layout_minheight_config.md)/[maxHeight](layout/api/layout_maxheight_config.md) properties in the config of a cell.}}
+{{note Starting from v7.0, you can define the resizing limits by setting necessary values to the [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md), [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) properties in the config of a cell.}}
 
-Setting borders for cells
------------------
+## Setting borders for cells
 
-By default, there is no space and borders between cells inside a layout and the cells look like they are merged. Starting from v7.0, it is possible to split the cells by adding borders or space between them via the [](layout/api/layout_type_config.md) configuration property of a Layout cell:
+By default, there is no space and borders between cells inside a layout and the cells look like they are merged. Starting from v7.0, it is possible to split the cells by adding borders or space between them via the [](layout/api/cell/layout_cell_type_config.md) configuration property of a Layout cell:
 
 ~~~js
 const layout = new dhx.Layout("layout", {
@@ -234,42 +223,12 @@ const layout = new dhx.Layout("layout", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/9ge1a4zx	Layout.Type}}
+**Related sample**: [Layout.Type](https://snippet.dhtmlx.com/9ge1a4zx)
 
-[Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
+**Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 The available values of the option are "line", "wide", "space", "none". 
-``` todo таблица 
-<style>
 
-	table.my_table td {
-		text-align: left;
-		vertical-align: middle;
-		width: 50%;
-	}
-	table.my_table td.version_info {
-		text-align: left;
-        background-color: white;
-	}
-</style>
-
-<table class="my_table">
-	<tbody>
-        <tr>
-			<td><b>type:"line"</b></td>
-			<td><b>type:"wide"</b></td>
-			<td><b>type:"space"</b></td>
-			<td><b>without borders</b></td>
-        </tr>
-        <tr>
-			<td class="version_info"><img src="layout/line_type.png"/></td>
-			<td class="version_info"><img src="layout/wide_type.png"/></td>
-			<td class="version_info"><img src="layout/space_type.png"/></td>
-			<td class="version_info"><img src="layout/without_borders.png"/></td>
-		</tr>  
-    </tbody>
-</table>
-```
-
-@todo:
-check, improve and complete<br/>
+| type:"line"                         | type:"wide"                         | type:"space"                         | type:"none"                               |
+| ----------------------------------- | ----------------------------------- | ------------------------------------ | ----------------------------------------- |
+| ![](../assets/layout/line_type.png) | ![](../assets/layout/wide_type.png) | ![](../assets/layout/space_type.png) | ![](../assets/layout/without_borders.png) |

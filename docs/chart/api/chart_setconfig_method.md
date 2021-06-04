@@ -1,29 +1,17 @@
 ---
-sidebar_label: setConfig
-title: setConfig
----          
+sidebar_label: setConfig()
+title: JavaScript Chart - setConfig Method 
+description: You can explore the setconfig method of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setConfig()
 
 @short: sets configuration of a chart
 
-```todoapi
-void setConfig(object config);
-setConfig(config: IChartConfig): void;
-    export interface IChartConfig {
-    type?: ChartType;
-    css?: string;
-    barWidth?: number;
-    scales?: IScalesConfig;
-    legend?: ILegendConfig;
-    series?: SeriaConfig[];
-    maxPoints?: number;
-    data?: DataCollection<any> | any[];
-}
-```
+@signature: {'setConfig(config: IChartConfig): void;'}
 
 @params:
-- config	object	 an object with chart configuration
-
-
+`config: object` - an object with chart configurations
 
 @example:
 var config = {
@@ -51,18 +39,13 @@ var config = {
         }
     ]
 }
- 
+
 chart.setConfig(config);
 
-
-@template: api_method
 @descr:
-See the list of chart configuration properties in the article chart/configuration_properties.md.
 
-@related:
-chart/usage.md#settingchartconfiguration
+**Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
 
-@relatedsample:
-https://snippet.dhtmlx.com/7umj531n	Chart. Change Configuration On The Fly
+See the list of chart configuration properties in the [Configuration](chart/configuration_properties.md) article.
 
-@changelog:
+[comment]: # (@related: chart/configuration_properties.md chart/usage.md#setting-chart-configuration)

@@ -1,18 +1,21 @@
 ---
 sidebar_label: beforeDrop
-title: beforeDrop
----          
+title: JavaScript DataView - beforeDrop Event 
+description: You can explore the beforeDrop event of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeDrop
 
 @short: fires before the user has finished dragging an item and released the mouse button
 
-@signature: beforeDrop: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'beforeDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
 
 @params:
-- data		object		data object
-- e		    Event		a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @returns:
-- result	boolean		false - to block the default action, otherwise true
+Return `false` to block the default action; otherwise, `true`.
 
 @example:
 dataview.events.on("BeforeDrop", function(data, events) {
@@ -20,39 +23,30 @@ dataview.events.on("BeforeDrop", function(data, events) {
     return false;
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+
 The data object contains the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>start</b></td>
+			<td><b>start</b></td>
 			<td>(<i>string</i>) the id of an item, from which the dragging process has started</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>source</b></td>
+			<td><b>source</b></td>
 			<td>(<i>string[]</i>) an array with ids of dragged items</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the id of a potential target item</td>
 		</tr>
     </tbody>
 </table>
 
-
 @changelog: added in v7.0
 
-@relatedapi:
-dataview/api/dataview_afterdrag_event.md
-dataview/api/dataview_afterdrop_event.md
-dataview/api/dataview_beforedrag_event.md
-dataview/api/dataview_canceldrop_event.md
-dataview/api/dataview_candrop_event.md
-dataview/api/dataview_dragin_event.md
-dataview/api/dataview_dragout_event.md
-dataview/api/dataview_dragstart_event.md
-
-[Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+[comment]: # (@relatedapi:
+dataview/api/dataview_afterdrag_event.md dataview/api/dataview_afterdrop_event.md dataview/api/dataview_beforedrag_event.md dataview/api/dataview_canceldrop_event.md dataview/api/dataview_candrop_event.md dataview/api/dataview_dragin_event.md dataview/api/dataview_dragout_event.md dataview/api/dataview_dragstart_event.md)

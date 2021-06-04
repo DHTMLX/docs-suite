@@ -1,15 +1,17 @@
 ---
 sidebar_label: beforeSend
-title: beforeSend
----          
+title: JavaScript Form - beforeSend Event 
+description: You can explore the beforeSend event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeSend
 
 @short: fires before a form is sent to the server
-	
-@params:
+
+@signature: {'beforeSend: () => boolean;'}
 
 @returns:
-
-- result		boolean			true/false, to allow/forbid a form sending to the server
+Return `true/false` to allow/forbid a form sending to the server.
 
 @example:
 form.events.on("BeforeSend", function(){
@@ -17,18 +19,8 @@ form.events.on("BeforeSend", function(){
    return true;
 });
 
-
-@template:	api_event
 @descr:
-The event is blockable. Return *false* to prevent a form sending to the server.
-
-
-@relatedapi: 
-form/api/form_aftersend_event.md
-form/api/form_send_method.md
-	
-
-
-
 
 @changelog: added in v6.1
+
+[comment]: # (@relatedapi: form/api/form_aftersend_event.md form/api/form_send_method.md)

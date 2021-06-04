@@ -1,20 +1,23 @@
 ---
 sidebar_label: change
-title: change
----          
+title: JavaScript DataCollection - change Event 
+description: You can explore the change event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# change
 
 @short: fires when a data collection is modified
-	
-@params:
-- id				string		the id of an item
-- status			string 		the status of the operation:"add"|"update"|"remove"
-- updatedItem		object		the object of an updated item		
 
+@signature: {'change: (id?: string, status?: Statuses, updatedItem?: any) => void;'}
+
+@params:
+- `id: string` - the id of an item
+- `status: string` - the status of the operation:"add"|"update"|"remove"
+- `updatedItem: object` - the object of an updated item
 
 @example:
-data.events.on("Change", function(id,status,updatedItem){
+component.data.events.on("Change", function(id,status,updatedItem){
 	console.log("An item is updated");
 });
 
-@template:	api_event
 @descr:

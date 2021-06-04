@@ -1,25 +1,26 @@
 ---
 sidebar_label: modal
-title: modal
----          
+title: JavaScript Window - modal Config 
+description: You can explore the modal config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# modal
 
 @short: defines whether a window is modal
 
-@signature: modal?: boolean;
+@signature: {'modal?: boolean;'}
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     modal:true
 });
 
 dhxWindow.show();
 
+@descr:
 
-@template:	api_config
-@descr: 
 A modal window blocks the main browser window when called.
 
-@related: window/how_to_start.md
-window/configuration.md#modality
+[comment]: # (@related: window/how_to_start.md window/configuration.md#modality)

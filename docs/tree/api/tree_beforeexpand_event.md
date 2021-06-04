@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeExpand
-title: beforeExpand
----          
+title: JavaScript Tree - beforeExpand Event 
+description: You can explore the beforeExpand event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeExpand
 
 @short: fires before expanding a tree item
 
-@signature: beforeExpand: (id: string) => boolean | void;
+@signature: {'beforeExpand: (id: string) => boolean | void;'}
 
-@params: 
-- id    string      the id of an expanded item
+@params:
+`id: string` - the id of an expanded item
 
 @returns:
-- param     boolean, void     false - to block expanding  a tree item, otherwise true
+Return `false` to block expanding  a tree item; otherwise, `true`.
 
 @example:
 tree.events.on("BeforeExpand", function(id) {
@@ -19,12 +22,10 @@ tree.events.on("BeforeExpand", function(id) {
     return false;
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/vux1ye9g	Tree. Events
-
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)

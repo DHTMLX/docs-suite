@@ -1,10 +1,12 @@
 ---
 sidebar_label: Configuration
-title: Configuration
----          
+title: JavaScript Colorpicker - Configuration 
+description: You can explore the configuration of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Custom colors in palette
----------------------
+# Configuration
+
+## Custom colors in palette
 
 The palette of ColorPicker contains a set of default colors. They are enumerated below:
 
@@ -25,7 +27,7 @@ var palette = [
 
 ![](../assets/colorpicker/default_palette.png)
 
-{{editor    https://snippet.dhtmlx.com/ezk8rk4m	Colorpicker. Basic Initialization}}
+**Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
 It is possible to redefine the structure of a palette via the [](colorpicker/api/colorpicker_palette_config.md) config option, and set an array of custom colors that will be shown on initialization of the component. 
 For example:
@@ -46,17 +48,15 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 ![](../assets/colorpicker/custom_palette.png)
 
-{{editor    https://snippet.dhtmlx.com/j5gisdew	Colorpicker. Custom Palette Colors}}
+**Related sample**: [Colorpicker. Custom Palette Colors](https://snippet.dhtmlx.com/j5gisdew)
 
-
-Gray shades
------------------------
+## Gray shades
 
 The default configuration of the ColorPicker palette includes a section with gray shades, which is shown at the top of palette. There is a possibility to hide this section showing just main colors: default or custom.
 
 ![](../assets/colorpicker/no_shades_palette.png)
 
-{{editor    https://snippet.dhtmlx.com/b44fp8q2	Colorpicker. Palette Without Gray Shades}}
+**Related sample**: [Colorpicker. Palette Without Gray Shades](https://snippet.dhtmlx.com/b44fp8q2)
 
 Use the [](colorpicker/api/colorpicker_grayshades_config.md) configuration option for this purpose:
 
@@ -66,12 +66,11 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 });
 ~~~
 
-List of custom colors
----------------------
+## List of custom colors
 
 ![](../assets/colorpicker/custom_colors.png)
 
-{{editor    https://snippet.dhtmlx.com/zf88vxd1	Colorpicker. Custom Colors}}
+**Related sample**: [Colorpicker. Custom Colors](https://snippet.dhtmlx.com/zf88vxd1)
 
 When ColorPicker is rendered on a page, its list of custom (user-defined) colors is empty. You can change this configuration and specify custom colors that should be shown in the related section on initialization of 
 the component via the [](colorpicker/api/colorpicker_customcolors_config.md) configuration option. Colors should be specified as an array of strings in the Hex format:
@@ -82,8 +81,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 });
 ~~~
 
-"palette" or "picker" mode only
---------------------
+## "palette" or "picker" mode only
 
 dhtmlxColorPicker has two main modes: "palette" (default) and "picker". To initialize the component in the "picker" mode, set the [](colorpicker/api/colorpicker_pickeronly_config.md) property in the ColorPicker 
 configuration to *true*.
@@ -98,7 +96,7 @@ In this mode the palette is not available and only the picker is displayed.
 
 ![](../assets/colorpicker/picker_only.png)
 
-{{editor    https://snippet.dhtmlx.com/5zlvvwpl	Colorpicker. Picker Only}}
+**Related sample**: [Colorpicker. Picker Only](https://snippet.dhtmlx.com/5zlvvwpl)
 
 It is also possible to create the component in the palette mode only using the [](colorpicker/api/colorpicker_paletteonly_config.md) mode:
 
@@ -112,12 +110,9 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 
 {{note Note that in the **paletteOnly** mode the palette is displayed without the panel with custom (user-defined) colors.}}
 
+**Related sample**: [Colorpicker. Disabled Custom Colors](https://snippet.dhtmlx.com/3d75mz19)
 
-{{editor    https://snippet.dhtmlx.com/3d75mz19	Colorpicker. Disabled Custom Colors}}
-
-
-Width of ColorPicker
--------------------
+## Width of ColorPicker
 
 By default, the width of the component is 238 px. In case you change the number of colors in the palette, it may be necessary to adjust the width of ColorPicker accordingly. You can do this with the help of the [](colorpicker/api/colorpicker_width_config.md) property:
 
@@ -126,4 +121,3 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
     width: "300px"              
 });
 ~~~
-

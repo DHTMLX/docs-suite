@@ -1,24 +1,25 @@
 ---
 sidebar_label: afterCollapse
-title: afterCollapse
----          
+title: JavaScript TreeGrid - afterCollapse Event 
+description: You can explore the afterCollapse event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterCollapse
 
 @short: fires after collapsing a treegrid
 
-@signature: afterCollapse: (rowId: string | number) => void;
-	
+@signature: {'afterCollapse: (rowId: string | number) => void;'}
+
 @params:
-- rowId			string,number		the id of a collapsed row
+`rowId: string | number` - the id of a collapsed row
 
 @example:
 treeGrid.events.on("AfterCollapse", function(rowId) {
     // your logic here
 });
 
-@template:	api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/sgwnxshe	TreeGrid. TreeGrid Events	
+**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @changelog: added in v6.4

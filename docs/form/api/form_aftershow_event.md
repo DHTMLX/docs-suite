@@ -1,28 +1,29 @@
 ---
 sidebar_label: afterShow
-title: afterShow
----          
+title: JavaScript Form - afterShow Event 
+description: You can explore the afterShow event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterShow
 
 @short: fires after a control of Form is shown
 
+@signature: {'afterShow: (name: string, value?: any) => void;'}
+
 @params:
-- name|id		string		the name (or id, if the name is not specified) of the Form control
-- value     any         the current value of the control
-
-
+- `name|id: string` - the name (or id, if the name is not specified) of the Form control
+- `value: any` - the current value of the control
 
 @example:
 form.events.on("AfterShow", function(name, value) {
     console.log("AfterShow", name, value); 
 });
 
-
-@template: api_event
 @descr:
 
-@relatedapi: form/api/form_beforeshow_event.md
-
-@changelog: 
+@changelog:
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+
+[comment]: # (@relatedapi: form/api/form_beforeshow_event.md)

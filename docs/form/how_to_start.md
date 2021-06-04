@@ -1,16 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Form - Initialization 
+description: You can explore the initialization of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxForm into an application, you need to take the following simple steps:
 
 - [Download the Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Define Form structure](#defineformstructure)
-- [Initialize Form](#initializeform) with the object constructor
-
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Define Form structure](#define-form-structure)
+- [Initialize Form](#initialize-form) with the object constructor
 
 ~~~html
 <!DOCTYPE html>
@@ -30,10 +32,9 @@ To add dhtmlxForm into an application, you need to take the following simple ste
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
+**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -45,9 +46,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create a container
--------------------
+## Create a container
 
 Add a container for the Form and give it an id, e.g. "form_container":
 
@@ -55,9 +54,7 @@ Add a container for the Form and give it an id, e.g. "form_container":
 <div id="form_container"></div>
 ~~~
 
-
-Define Form structure
------------------
+## Define Form structure
 
 Now you need to specify the list of Form controls. For example, you can create a form with two text fields for entering a name and an email, a checkbox for the user to give consent to data processing and a button to 
 send a form to a server.
@@ -111,9 +108,7 @@ var form_data = {
 };
 ~~~
 
-
-Initialize Form
----------------------
+## Initialize Form
 
 Initialize Form with the `dhx.Form` object constructor. The constructor takes two parameters:
 
@@ -136,26 +131,8 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/yut2mnsz	Form. Initialization}}
+**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
 
-### Configuration properties:
+### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
-- form/api/form_align_property.md - sets the alignment of controls inside the control group
-- form/api/form_cols_property.md - arranges controls inside the control group horizontally
-- form/api/form_css_property.md - the name of a CSS class(es) applied to the control group
-- form/api/form_disabled_property.md - makes a form disabled
-- form/api/form_height_property.md - sets the height of the control group
-- form/api/form_hidden_property.md - defines whether a form is hidden
-- form/api/form_padding_property.md - sets padding for content inside the control group
-- form/api/form_rows_property.md - arranges controls inside the control group vertically
-- form/api/form_title_property.md - specifies the title of the control group
-- form/api/form_width_property.md - sets the width of the control group
-}}
-
-
-
-
-
-
+You can find the full list of Form configuration properties in the [Form API overview](form/api/api_overview.md#properties) article.

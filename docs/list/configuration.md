@@ -1,11 +1,12 @@
 ---
 sidebar_label: Configuration
-title: Configuration
-description: description
----          
+title: JavaScript List - Configuration 
+description: You can explore the configuration of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Arrow keys navigation
---------------------
+# Configuration
+
+## Arrow keys navigation
 
 The List component provides the possibility to navigate its items with arrow keys. You can enable this functionality using the [](list/api/list_keynavigation_config.md) property:
 
@@ -17,29 +18,28 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 
 ### Default shortcut keys
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowUp</b></td>
+			<td><b>ArrowUp</b></td>
 			<td>to move focus to the previous item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ArrowDown</b></td>
+			<td><b>ArrowDown</b></td>
 			<td>to move focus to the next item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
+			<td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
 			<td>to add selection to a List item in focus</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>Ctrl+A</b></td>
+			<td><b>Ctrl+A</b></td>
 			<td>to select all items at once (when the "multiselection" property is enabled)</td>
 		</tr>
     </tbody>
 </table>
 
-Drag-n-drop of items
-------------------
+## Drag-n-drop of items
 
 dhtmlxList supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [](list/api/list_dragmode_config.md) property in the configuration object of List. Then define which mode you need:
 
@@ -53,7 +53,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the list/api/list_dragmode_config.md:
+In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the [](list/api/list_dragmode_config.md):
 
 ~~~js
 var list = new dhx.List("list_container", { 
@@ -62,12 +62,11 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-Read more about multiselection in List [below](#multipleselectionofitems).
+Read more about multiselection in List [below](#multiple-selection-of-items).
 
-{{editor	https://snippet.dhtmlx.com/yfz6ai7j	List. Setup Drag Mode}}
+**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
 
-Dynamic rendering of items
-----------------
+## Dynamic rendering of items
 
 All data is loaded into List and rendered at once. In case you use large amounts of data in the list, it may slow down the work of your app.
 
@@ -80,14 +79,13 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x4gxy38e	List. Virtual List}}
+**Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)
 
-Editing items
-----------------
+## Editing items
 
 ![](../assets/list/editable.png)
 
-{{editor	https://snippet.dhtmlx.com/f26lfcai	List. Editable List}}
+**Related sample**: [List. Editable List](https://snippet.dhtmlx.com/f26lfcai)
 
 You can enable the possibility to edit List items with the help of the [](list/api/list_editable_config.md) configuration option:
 
@@ -95,14 +93,11 @@ You can enable the possibility to edit List items with the help of the [](list/a
 var list = new dhx.List("list_container", {editable:true});
 ~~~
 
-
-Height of an item
-----------------
+## Height of an item
 
 ![](../assets/list/item_height.png)
 
-
-{{editor	https://snippet.dhtmlx.com/89buovn2	List. Setup List Item Height}}
+**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)
 
 You can specify the necessary height of an item and set it before initialization of List via the [itemHeight](list/api/list_itemheight_config.md) property either as a number:
 
@@ -112,7 +107,6 @@ var list = new dhx.List("list_container", {
     itemHeight:30 /*!*/
 });
 ~~~
-
 
 or as a string value
 
@@ -127,12 +121,11 @@ var list = new dhx.List("list_container", {
 
 When the [virtual](list/api/list_virtual_config.md) property is set to *true*, the default height of a list item is 37. To change this value, make use of the **itemHeight** property, as described above.
 
-Height of the List
----------------
+## Height of the List
 
 ![](../assets/list/list_height.png)
 
-{{editor	https://snippet.dhtmlx.com/k2mj2sz7	List. Setup List Height}}
+**Related sample**: [List. Setup List Height](https://snippet.dhtmlx.com/k2mj2sz7)
 
 You can define the desired height of a list via the [height](list/api/list_height_config.md) configuration option as easy as that:
 
@@ -148,12 +141,11 @@ var list = new dhx.List("list", {height: "700px"});
 
 {{note The usage of the *CSS calc() function* within the [](list/api/list_height_config.md) property is not possible.}}
 
-Multiple selection of items
----------------------------
+## Multiple selection of items
 
 ![](../assets/list/multiselection.png)
 
-{{editor	https://snippet.dhtmlx.com/0sorkczm	List. List Multiselection}}
+**Related sample**: [List. List Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
 By default, you can select only one item in a list, since selection of another item resets selection of the previous one. To enable the possibility to select several List items, make use of the 
 [](list/api/list_multiselection_config.md) configuration option:
@@ -171,13 +163,11 @@ var list = new dhx.List("list", {
 });
 ~~~
 
-Selection of items
----------------------
+## Selection of items
 
 ![](../assets/list/disable_selection.png)
 
-[List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
-
+**Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [](list/api/list_selection_config.md) configuration property to *false*:
 
@@ -185,12 +175,11 @@ The default configuration of List provides you with the selection feature that a
 var list = new dhx.List("list_container", {selection: false});
 ~~~
 
-Template for List items
--------------------
+## Template for List items
 
 ![](../assets/list/list_template.png)
 
-{{editor	https://snippet.dhtmlx.com/gtzdwpj4	List. Add Template To List Item}}
+**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
 
 You can define a template for rendering items in a List with the help of the [](list/api/list_template_config.md) configuration property. Set as its value a function that takes one parameter:
 
@@ -219,8 +208,7 @@ var list = new dhx.List("list", {
 });
 ~~~
 
-Event handlers for the template
--------------------------------
+## Event handlers for the template
 
 Starting from v7.0, it is possible to assign event handlers to HTML elements of a custom template of List items by using the [](list/api/list_eventhandlers_config.md) configuration option:
 
@@ -257,26 +245,23 @@ const list = new dhx.List("list", {
 });
 ~~~
 
-[List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
+**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
 
 The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pairs, where: 
 
-``` todo это же есть на странице API, возможно не стоит дублировать
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><i>key</i></td>
+			<td><i>key</i></td>
 			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><i>value</i></td>
+			<td><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>
-                <li><b>id</b> - the id of a List item
+                <li><b>id</b> - the id of a List item</li>
             </ul></td>
 		</tr>
     </tbody>
 </table>
-
-```

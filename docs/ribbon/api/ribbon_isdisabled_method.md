@@ -1,29 +1,28 @@
 ---
-sidebar_label: isDisabled
-title: isDisabled
----          
+sidebar_label: isDisabled()
+title: JavaScript Ribbon - isDisabled Method 
+description: You can explore the isDisabled method of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# isDisabled()
 
 @short: checks whether an item of Ribbon is disabled
 
-@signature: isDisabled(id: string): boolean;
+@signature: {'isDisabled(id: string): boolean;'}
 
 @params:
-- id 		string		an id of the Ribbon item
+`id: string` - an id of the Ribbon item
 
 @returns:
-param 	boolean		true, if an item of Ribbon is disabled, otherwise false
-
+`true`, if an item of Ribbon is disabled; otherwise, `false`.
 
 @example:
 ribbon.isDisable("id"); // -> returns true/false
 
-
-
-@template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/l3f8pq2g	Ribbon. Enable/Disable Ribbon Item
+**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 @changelog: added in v6.4
 
-@related: ribbon/operating_ribbon.md#checkingifaribbonitemisdisabled
+[comment]: # (@related: ribbon/operating_ribbon.md#checking-if-a-ribbon-item-is-disabled)

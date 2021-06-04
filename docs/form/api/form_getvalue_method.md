@@ -1,25 +1,29 @@
 ---
-sidebar_label: getValue
-title: getValue
----          
+sidebar_label: getValue()
+title: JavaScript Form - getValue Method 
+description: You can explore the getValue method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getValue()
 
 @short: gets current values/states of controls
 
+@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 @params:
-- asFormData	boolean		optional, defines whether values of Form controls should be returned as Form Data
+`asFormData: boolean` - optional, defines whether values of Form controls should be returned as Form Data
 
 @returns:
-- state 		object		an object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states
-
+An object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.
 
 @example:
 var state = form.getValue();
 // -> {"name":"John Doe"}
 
-
-@template: api_method
 @descr:
+
+**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
+
 1\. In case both the name and id of the control are specified in the config of Control, the returned object will contain the name of Control:
 
 ~~~js
@@ -41,16 +45,6 @@ var state = form.getValue();
 - If *valueFormat: "timeObject"*  and *timeFormat:24* are specified, a return object value will contain key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
 - If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
 
+[comment]: # (@relatedapi: form/api/form_setvalue_method.md)
 
-@related: form/work_with_form.md#gettingvaluesofcontrols
-
-@relatedsample: https://snippet.dhtmlx.com/odod5v12	Form. Get Value
-
-
-
-
-@changelog:
-
-@relatedapi:
-form/api/form_setvalue_method.md
-
+[comment]: # (@related: form/work_with_form.md#getting-values-of-controls)

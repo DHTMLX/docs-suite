@@ -20,7 +20,7 @@ There is a possibility to make changes in the look and feel of a calendar. For e
 
 ![](../../assets/calendar/styled_calendar.png)
 
-{{editor    https://snippet.dhtmlx.com/2045cbe1	Calendar. Adding Custom Styles}}
+**Related sample**: [Calendar. Adding Custom Styles](https://snippet.dhtmlx.com/2045cbe1)
 
 For this you need to take the following steps:
 
@@ -65,7 +65,7 @@ var calendar = new dhx.Calendar("calendar", {
 
 ![](../../assets/calendar/calendar_range_styling.png)
 
-{{editor    https://snippet.dhtmlx.com/9u0ix3na	Calendar. Custom Styles For Selected Date}}
+**Related sample**: [Calendar. Custom Styles For Selected Date](https://snippet.dhtmlx.com/9u0ix3na)
 
 You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linkingtwocalendars). There are system styles you need to change for this purpose:
 

@@ -1,24 +1,23 @@
 ---
 sidebar_label: afterShow
-title: afterShow
----          
+title: JavaScript Form - afterShow Datepicker Event 
+description: You can explore the afterShow Datepicker event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterShow
 
 @short: fires after a control is shown
- 
+
+@signature: {'afterShow: (value: string | Date) => void;'} 
 
 @params:
-- value     Date|string     the current value of the control
-
-
+`value: string | Date` - the current value of the control
 
 @example:
 form.getItem("datepicker").events.on("AfterShow", function(value) {
     console.log("AfterShow", value);
 });
 
-
-@template: api_event
 @descr:
-
 
 @changelog: added in v7.0

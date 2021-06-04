@@ -1,54 +1,51 @@
 ---
-sidebar_label: addTab
-title: addTab
----          
+sidebar_label: addTab()
+title: JavaScript Tabbar - addTab Method 
+description: You can explore the addTab method of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# addTab()
 
 @short: adds a new tab into a tabbar
 
-
-@signature: addTab(object view,, index: number): void; 
-
-<!-- void addTab(object view,number index);
-addTab(config: ITabbarConfig, index: number): any; -->
+@signature: {'addTab(config: ITabbarConfig, index: number): void;'}
 
 @params:
-- view 		object		an object of a tab 
-- index 	number		the position to add a tab into
+- `config: object` - an object of a tab 
+- `index: number` - the position to add a tab into
 
 @example:
 tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
-
-@template: api_method
 @descr:
-The **view** object may include the following properties:
 
-<table class="webixdoc_links">
+**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+
+The **config** object may include the following properties:
+
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>tab</b></td>
+			<td><b>tab</b></td>
 			<td>the name of a tab</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>tabCss</b></td>
+			<td><b>tabCss</b></td>
 			<td>the name of the CSS class used for a tab</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>the name of the CSS class used for a cell</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>header</b></td>
+			<td><b>header</b></td>
 			<td>the header of a cell</td>
 		</tr>
     </tbody>
 </table>
 
-@relatedapi: tabbar/api/tabbar_removetab_method.md
-
 @changelog: added in v6.4
 
-@related: tabbar/work_with_tabbar.md#addingremovingtabs
+[comment]: # (@relatedapi: tabbar/api/tabbar_removetab_method.md)
 
-@relatedsample: https://snippet.dhtmlx.com/ekke2q8t	Tabbar. Add Tab
+[comment]: # (@related: tabbar/work_with_tabbar.md#addingremoving-tabs)

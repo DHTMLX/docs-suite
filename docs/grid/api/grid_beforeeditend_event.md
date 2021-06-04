@@ -1,21 +1,22 @@
 ---
 sidebar_label: beforeEditEnd
-title: beforeEditEnd
----          
+title: JavaScript Grid - beforeEditEnd Event 
+description: You can explore the beforeEditEnd event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeEditEnd
 
 @short: fires before editing of a cell is completed
 
-@signature: beforeEditEnd: (value: string, row: object, col: object) => boolean | void;
-	
-@params:
-- value			string		the new value of a cell
-- row			object		an object with a row configuration
-- col		object		an object with a column configuration
+@signature: {'beforeEditEnd: (value: string | number, row: IRow, col: ICol) => boolean | void;'}
 
+@params:
+- `value: string | number` - the new value of a cell
+- `row: object` - an object with a row configuration
+- `col: object` - an object with a column configuration
 
 @returns:
-- result	boolean		false - to prevent closing of an editor, otherwise true
-
+Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeEditEnd", function(value,row,column){
@@ -23,15 +24,9 @@ grid.events.on("BeforeEditEnd", function(value,row,column){
     return false;
 });
 
-
-@template:	api_event
 @descr:
 
 
-
-
-@relatedsample:
-https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events	
+**Related sample**: [Grid. Events	](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.1
-

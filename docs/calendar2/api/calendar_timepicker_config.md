@@ -9,12 +9,12 @@ title: timePicker
 
 @default: false
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     timePicker: true      
 });
 
-@template:	api_config
+
 @descr: 
 You can define the format of displaying time in a timepicker via the [](calendar/api/calendar_timeformat_config.md) property.
 
@@ -22,8 +22,8 @@ You can define the format of displaying time in a timepicker via the [](calendar
 @relatedapi:
 calendar/api/calendar_timeformat_config.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/jkbfb202	Calendar. Timepicker In Calendar
+**Related sample**:
+- [Calendar. Timepicker In Calendar](https://snippet.dhtmlx.com/jkbfb202)
 
-@related: calendar/how_to_start.md#initializecalendar
+@related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#timepicker

@@ -1,19 +1,16 @@
 ---
-sidebar_label: disable
-title: disable
----          
+sidebar_label: disable()
+title: JavaScript Form - disable Checkbox Method 
+description: You can explore the disable Checkbox method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# disable()
 
 @short: disables a Checkbox control on a page
 
-
-
-
+@signature: {'disable(): void;'}
 
 @example:
 form.getItem("checkbox").disable();
 
-
-@template: api_method
 @descr:
-
-

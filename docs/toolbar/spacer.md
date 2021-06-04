@@ -1,17 +1,20 @@
 ---
 sidebar_label: Spacer
-title: Spacer
----          
+title: JavaScript Toolbar - Spacer 
+description: You can explore the Spacer of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Spacer
 
 This item takes space on the toolbar and is used for aligning controls.
 
 ![](../assets/toolbar/spacer.png)
 
-{{editor	https://snippet.dhtmlx.com/0wt6z7sc	Toolbar. Spacer}}
+**Related sample**: [Toolbar. Spacer](https://snippet.dhtmlx.com/0wt6z7sc)
 
 ## Adding Spacer
 
-A new Spacer can be created with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+A new Spacer can be created with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({
@@ -32,6 +35,6 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/refs/toolbar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

@@ -8,14 +8,14 @@ title: date
 @signature: date?: Date | string;
 
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     value: new Date(),
     date: new Date(2019, 0, 1)
 });
 
 
-@template:	api_config
+
 @descr: 
 By default, it is either the same as calendar/api/calendar_value_config.md, or shows the current date, if **value** is not specified.
 
@@ -23,7 +23,7 @@ By default, it is either the same as calendar/api/calendar_value_config.md, or s
 @relatedapi: 
 calendar/api/calendar_value_config.md
 
-@related: calendar/how_to_start.md#initializecalendar
+@related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#initialcalendardate
 
-@relatedsample: https://snippet.dhtmlx.com/fyg6l65t	Calendar. Date Initialization
+**Related sample**: [Calendar. Date Initialization](https://snippet.dhtmlx.com/fyg6l65t)

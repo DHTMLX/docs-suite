@@ -1,18 +1,16 @@
 ---
 sidebar_label: columns
-title: columns
-description: description
----          
+title: JavaScript Grid - columns Config 
+description: You can explore the columns config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-
+# columns
 
 @short: specifies the configuration of grid columns
 
+@signature: {'columns?: ICol[];'}
 
-
-@signature: columns?: ICol[];
-
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 100, id: "a", header: [{ text: "#" }] },
@@ -23,17 +21,8 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
+@descr:
 
-@template:	api_config
-
-
-#### Details:
 Each column object may contain a set of properties. You will find the full list of the configuration properties of a Grid column [here](grid/api/api_gridcolumn_properties.md).
 
-
-
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#columns
-
-grid/customization.md
-
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#columns grid/customization.md) 

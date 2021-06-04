@@ -1,26 +1,27 @@
 ---
-sidebar_label: hideColumn
-title: hideColumn
----          
+sidebar_label: hideColumn()
+title: JavaScript TreeGrid - hideColumn Method 
+description: You can explore the hideColumn method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# hideColumn()
 
 @short: hides a column of Grid
 
-@signature: hideColumn(colId: string | number): void;
+@signature: {'hideColumn(colId: string | number): void;'}
 
 @params:
-- colId	– string | number	the id of a column
+`colId: string | number` - the id of a column
 
 @example:
 grid.hideColumn(col);
 
-
-@template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/1gekn97m	TreeGrid. Show/Hide column
-
-@relatedapi: treegrid/api/treegrid_showcolumn_method.md
-
-@related: treegrid/usage.md#hidingshowingacolumn
+**Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
 
 @changelog: added in v6.2
+
+[comment]: # (@relatedapi: treegrid/api/treegrid_showcolumn_method.md)
+
+[comment]: # (@related: treegrid/usage.md#hidingshowing-a-column)

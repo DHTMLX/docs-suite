@@ -1,26 +1,21 @@
 ---
-sidebar_label: getScrollState
-title: getScrollState
----          
+sidebar_label: getScrollState()
+title: JavaScript Grid - getScrollState Method 
+description: You can explore the getScrollState method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getScrollState()
 
 @short: returns the coordinates of a position a grid has been scrolled to
 
-getScrollState(): position;
+@signature: {'getScrollState(): ICoords;'}
 
 @returns:
--  position		object		an object with x,y coordinates of a position the grid has been scrolled to
+An object with x,y coordinates of a position the grid has been scrolled to.
 
 @example:
 var state = grid.getScrollState(); // -> {x:0,y:0}
 
-
-@template: api_method
 @descr:
 
-
-@related: grid/usage.md#controllingscrollbehavior
-
-
-@changelog:
-
-
+[comment]: # (@related: grid/usage.md#controlling-scroll-behavior)

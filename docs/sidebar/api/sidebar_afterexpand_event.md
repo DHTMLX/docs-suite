@@ -1,24 +1,24 @@
 ---
 sidebar_label: afterExpand
-title: afterExpand
----          
+title: JavaScript Sidebar - afterExpand Event 
+description: You can explore the afterExpand event of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterExpand
 
 @short: fires after expanding a sidebar
 
-afterExpand: () => void;
+@signature: {'afterExpand: () => void;'}
 
 @example:
 sidebar.events.on("AfterExpand", function() {
     // your logic here
 });
 
-
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/qfddiu3i	Sidebar. Events
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
 @changelog: added in v6.4
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

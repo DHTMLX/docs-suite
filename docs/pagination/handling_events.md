@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Pagination - Event Handling 
+description: You can explore the event handling of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -15,7 +18,7 @@ pagination.events.on("Change", function(index, previousIndex){
 
 {{note The names of events are case-insensitive.}}
 
-[Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)
+**Related sample**: [Pagination. Pagination events](https://snippet.dhtmlx.com/mlrtmj7p)
 
 ## Detaching event listeners
 
@@ -40,4 +43,4 @@ pagination.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](pagination/api/refs/pagination_events.md).
+The full list of events is available in the related [API section](pagination/api/api_overview.md#events).

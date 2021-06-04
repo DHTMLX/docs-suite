@@ -1,16 +1,19 @@
 ---
 sidebar_label: Spacer properties
-title: Menu Spacer properties
+title: JavaScript Menu - Spacer Properties 
+description: You can explore the Spacer properties of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-<table class="webixdoc_links">
+# Menu Spacer properties
+
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "spacer". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
+			<td><b>type</b></td>
+			<td>(<i>string</i>) the item type, set it to "spacer". If not specified - the <a href="../../menu/configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the ID of a control, auto-generated if not set</td>
 		</tr>
     </tbody>

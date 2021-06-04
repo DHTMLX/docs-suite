@@ -1,26 +1,28 @@
 ---
 sidebar_label: footer
-title: footer
----          
+title: JavaScript Window - footer Config 
+description: You can explore the footer config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# footer
 
 @short: adds a footer to a window
 
-@signature: footer?: boolean;
+@signature: {'footer?: boolean;'}
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     footer: true
 });
 
 dhxWindow.show();
 
-@template:	api_config
-@descr: 
-By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the article window/customization.md#controlsandoperations.
+@descr:
 
-@related: window/how_to_start.md
-window/configuration.md#footer
+**Related samples**:
+- [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
+- [Window. Window With Footer](https://snippet.dhtmlx.com/qu5j85ag)
 
-@relatedsample: 
-https://snippet.dhtmlx.com/o7xlvvv3	Window. Custom Buttons
-https://snippet.dhtmlx.com/qu5j85ag	Window. Window With Footer
+By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the [Customization](window/customization.md#controls-and-operations) article.
+
+[comment]: # (@related: window/how_to_start.md window/configuration.md#footer)

@@ -1,17 +1,20 @@
 ---
 sidebar_label: RadioGroup
-title: RadioGroup
----          
+title: JavaScript Form - RadioGroup 
+description: You can explore the RadioGroup of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# RadioGroup
 
 A control intended for creating groups of Radio buttons.
 
 ![RadioGroup control](../assets/form/form_radio.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/ycp1cbct	Form. Radio Buttons}}
+**Related sample**: [Form. Radio Buttons](https://snippet.dhtmlx.com/ycp1cbct)
 
-{{editor	https://snippet.dhtmlx.com/1pzybtja	Form. Blocks}}
+**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
 
 ## Adding RadioGroup
 
@@ -59,7 +62,7 @@ View [the full list of properties](form/api/radiogroup/api_radiogroup_properties
 
 ## Working with RadioGroup
 
-You can manipulate a RadioGroup control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a RadioGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -69,8 +72,8 @@ var value = form.getItem("radiogroup").getValue();
 
 ### Methods
 
-Check [the full list of methods of the RadioGroup control](form/api/api_overview.md#methods-8).
+Check [the full list of methods of the RadioGroup control](form/api/api_overview.md#radiogroup-methods).
 
 ### Events
 
-Check [the full list of events of the RadioGroup control](form/api/api_overview.md#events-8).
+Check [the full list of events of the RadioGroup control](form/api/api_overview.md#radiogroup-events).

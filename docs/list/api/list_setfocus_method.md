@@ -1,33 +1,26 @@
 ---
-sidebar_label: setFocus
-title: setFocus
----          
+sidebar_label: setFocus()
+title: JavaScript List - setFocus Method 
+description: You can explore the setFocus method of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-```todoapi 
+# setFocus()
+
 @short: sets focus to an item by its id
 
-
-void setFocus(string|number id);
-setFocus(id: string): void;
-
+@signature: {'setFocus(id: string | number): void;'}
 
 @params:
-- id	string|number      the id of an item
+`id: string | number` - the id of an item
 
 @example:
 list.setFocus("item_id");
 
-
-@template: api_method
 @descr:
 
-@related: list/work_with_list.md#settingfocusonitem
-
-
+**Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
 
 @changelog:
 added in v6.3
 
-@relatedsample: https://snippet.dhtmlx.com/ermcjx3d	List. Set Active Index
-
-```
+[comment]: # (@related: list/work_with_list.md#setting-focus-on-item)

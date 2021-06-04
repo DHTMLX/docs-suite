@@ -1,7 +1,10 @@
 ---
 sidebar_label: Overview
-title: Uploader overview
+title: JavaScript Uploader - Uploader Overview 
+description: You can have an overview of Uploader in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Uploader overview
 
 The API set for controlling the work of the Uploader object.
 
@@ -25,5 +28,3 @@ The API set for controlling the work of the Uploader object.
 | [](uploader/api/uploader_singlerequest_config.md)      | @getshort(uploader/api/uploader_singlerequest_config.md)      |
 | [](uploader/api/uploader_target_config.md)             | @getshort(uploader/api/uploader_target_config.md)             |
 | [](uploader/api/uploader_updatefromresponse_config.md) | @getshort(uploader/api/uploader_updatefromresponse_config.md) |
-
-@todo: update examples and descrs from vault to uploader

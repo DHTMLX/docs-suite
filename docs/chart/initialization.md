@@ -1,15 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Chart - Initialization 
+description: You can explore the initialization of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxChart in an application, you need to take the following steps:
 
 - [Download the dhtmlxChart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Chart](#initializechart) with the object constructor
-- [Load data into Chart](#loaddataintochart)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Chart](#initialize-chart) with the object constructor
+- [Load data into Chart](#load-data-into-chart)
 
 ~~~html
 <!DOCTYPE html>
@@ -49,10 +52,9 @@ To initialize dhtmlxChart in an application, you need to take the following step
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
-Include source files
-----------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of dhtmlxChart into the header of the created file. The Chart component can be used standalone or as a part of the Suite library.
 
@@ -76,8 +78,7 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxChart into
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
 
-Create a container 
------------------
+## Create a container 
 
 Add a container for Chart and give it an id, "chart_container", for example: 
 
@@ -85,13 +86,12 @@ Add a container for Chart and give it an id, "chart_container", for example:
 <div id="chart_container"></div>
 ```
 
-Initialize Chart
-----------------------
+## Initialize Chart
 
 Initialize Chart with the `dhx.Chart` object constructor. The constructor has two parameters:
 
 - a container to place a Chart into. You've defined it at the previous step.
-- an object with configuration properties. See the full list below.
+- an object with configuration properties
 
 ~~~js
 var config = {
@@ -121,13 +121,13 @@ var chart = new dhx.Chart("chart_container", config);
 
 ### Configuration properties
 
-See the full list of all available configuration properties in the article chart/configuration_properties.md.
+See the full list of all available configuration properties of Chart in the [Chart API overview](chart/api/api_overview.md#properties) article.
 
 ## Load data into Chart
 
 Finally, you are to load the chart with data. You can load inline or external data into the chart.
 
-- to load data from a local source, use the [](data_collection/api/parse.md) method of the Data Collection object:
+- to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
 
 ~~~js
 var data = [
@@ -152,9 +152,9 @@ var chart = new dhx.Chart("chart_container",{
 chart.data.parse(data);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/id9nbujd	Chart. Basic Initialization Bar Chart}}
+**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
 
-- to load data from an external file, use the [](data_collection/api/load.md) method of the Data Collection object:
+- to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
 ~~~js
 var chart = new dhx.Chart( "chart_container",{
@@ -170,5 +170,4 @@ var chart = new dhx.Chart( "chart_container",{
 chart.data.load("../common/dataset.json");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/qah8exx2	Chart. Load Data}}
-
+**Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)

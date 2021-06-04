@@ -1,15 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Pagination - Initialization 
+description: You can explore the initialization of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxPagination into an application, you need to take the following simple steps:
 
 - [Download the dhtmlxPagination](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) package and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create two containers](#createcontainers)
-- [Add a related component](#addarelatedwidget)
-- [Initialize Pagination](#initializepagination) with the object constructor
+- [Include source files](#include-source-files)
+- [Create two containers](#create-containers)
+- [Add a related component](#add-a-related-widget)
+- [Initialize Pagination](#initialize-pagination) with the object constructor
 
 ~~~html
 <!DOCTYPE html>
@@ -41,18 +44,17 @@ To add dhtmlxPagination into an application, you need to take the following simp
 </html>
 ~~~
 
-[Pagination. Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)
+**Related sample**: [Pagination. Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)
 
-[Pagination. Pagination with Dataview](https://snippet.dhtmlx.com/xmf0lx8z)
+**Related sample**: [Pagination. Pagination with Dataview](https://snippet.dhtmlx.com/xmf0lx8z)
 
-[Pagination. Pagination with Tree](https://snippet.dhtmlx.com/a0jhoipw)
+**Related sample**: [Pagination. Pagination with Tree](https://snippet.dhtmlx.com/a0jhoipw)
 
-[Pagination. Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)
+**Related sample**: [Pagination. Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)
 
-[Pagination. Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m)
+**Related sample**: [Pagination. Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -64,8 +66,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create containers
--------------------
+## Create containers
 
 Add two containers:
 
@@ -77,8 +78,7 @@ Add two containers:
 <div id="pagination_container"></div>
 ~~~
 
-Add a related widget
----------------------------------
+## Add a related widget
 
 {{note dhtmlxPagination can be used in conjunction with data components like [List](list/index.md), [DataView](dataview/index.md), [Tree](tree/index.md), [Grid](grid/index.md), or [TreeGrid](treegrid/index.md).}}
 
@@ -97,7 +97,7 @@ const widget = new dhx.List("widget_container", {
 The constructor has two parameters:
 
 - the HTML container for List,
-- an object with the List configuration properties (see the full list [here](list/api/refs/list_properties.md)). 
+- an object with the List configuration properties (see the full list [here](list/api/api_overview.md#properties)). 
 
 2\. Load data into the widget:
 
@@ -106,15 +106,12 @@ The constructor has two parameters:
 widget.data.parse(widget_data);
 ~~~
 
- 
-
-Initialize Pagination
----------------------
+## Initialize Pagination
 
 Initialize pagination with the *dhx.Pagination* object constructor. The constructor takes two parameters:
 
 - the HTML container for Pagination, 
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxPagination
@@ -124,19 +121,8 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-There is a set of properties you can specify for Pagination to optimize its configuration for your needs. Read the details below.
-
 ### Configuration properties
 
-There is a list of properties that you can specify in the Pagination configuration object (the second parameter of the constructor function):
+There is a set of properties you can specify in the Pagination configuration object (the second parameter of the constructor function). 
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- pagination/api/pagination_css_config.md - adds style classes to the pagination
-- pagination/api/pagination_data_config.md - the data collection of a widget to set into the pagination
-- pagination/api/pagination_inputwidth_config.md - optional, sets the width for the input of the pagination
-- pagination/api/pagination_page_config.md - optional, the index of the initial page set in the pagination
-- pagination/api/pagination_pagesize_config.md - optional, the number of items displayed per page
-
-}}
+See the detailed information on configuration properties of Pagination in the [Pagination API overview](pagination/api/api_overview.md#properties) article.

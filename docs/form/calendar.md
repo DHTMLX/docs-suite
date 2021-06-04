@@ -1,15 +1,18 @@
 ---
 sidebar_label: DatePicker
-title: DatePicker
----          
+title: JavaScript Form - DatePicker 
+description: You can explore the DatePicker of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# DatePicker
 
 An input with a calendar attached to it for selecting a date.
 
 ![DatePicker](../assets/form/form_datepicker.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/q3yk7e6s	Form. DatePicker}}
+**Related sample**: [Form. DatePicker](https://snippet.dhtmlx.com/q3yk7e6s)
 
 ## Adding DatePicker
 
@@ -32,10 +35,9 @@ var form = new dhx.Form("form_container", {
 
 View [the full list of configuration properties of the Datepicker control](form/api/calendar/api_calendar_properties.md).
 
-
 ## Working with DatePicker
 
-You can manipulate a DatePicker control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a DatePicker control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -49,15 +51,15 @@ var value = form.getItem("datepicker").getValue(true);
 
 ### Methods
 
-Check [the full list of methods of the Datepicker control](form/api/api_overview.md#methods-2).
+Check [the full list of methods of the Datepicker control](form/api/api_overview.md#datepicker-methods).
 
 ### Events
 
-Check [the full list of events of the Datepicker control](form/api/api_overview.md#events-2).
+Check [the full list of events of the Datepicker control](form/api/api_overview.md#datepicker-events).
 
 ## Working with the dhtmlxCalendar widget
 
-There is a possibility to use methods of dhtmlxCalendar via the **getWidget()** method of a DatePicker control.
+There is a possibility to use methods of dhtmlxCalendar via the [getWidget()](form/api/calendar/calendar_getwidget_method.md) method of a DatePicker control.
 
 For example, you can show the current month in the control. To do this, you need to get the widget attached to the DatePicker control and then use the [showDate()](calendar/api/calendar_showdate_method.md) method of this widget.
 
@@ -66,4 +68,4 @@ var datepicker = form.getItem("datepicker").getWidget();  // -> dhtmlxCalendar
 datepicker.showDate(null,"month"); // shows the current month
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/0aqkdsi7	Form. Get Widget Of Control}}
+**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)

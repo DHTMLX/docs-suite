@@ -1,16 +1,18 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript TreeGrid - Customization 
+description: You can explore the customization of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling TreeGrid
-----------------
+# Customization
+
+## Styling TreeGrid
 
 There is a possibility to make changes in the look and feel of a treegrid. 
 
 ![](../assets/treegrid/custom_style.png)
 
-{{editor	https://snippet.dhtmlx.com/cpvir0od	TreeGrid. Styling Grid}}
+**Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)
 
 For this you need to take the following steps:
 
@@ -36,14 +38,13 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-Styling header cells
--------------------
+## Styling header cells
 
 ![](../assets/treegrid/styling_header.png)
 
-{{editor	https://snippet.dhtmlx.com/vf0ws454	TreeGrid. Styling Header Cells}}
+**Related sample**: [TreeGrid. Styling Header Cells](https://snippet.dhtmlx.com/vf0ws454)
 
-You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the [text](treegrid/configuration.md#columns) property of the header of a column:
+You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the [text](treegrid/api/api_treegridcolumn_properties.md) property of the header of a column:
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", { 
@@ -59,15 +60,13 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-
-Styling footer cells
--------------------
+## Styling footer cells
 
 ![](../assets/treegrid/styling_footer.png)
 
-{{editor	https://snippet.dhtmlx.com/wi39d42e	TreeGrid. Styling Footer Cells}}
+**Related sample**: [TreeGrid. Styling Footer Cells](https://snippet.dhtmlx.com/wi39d42e)
 
-You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the [text](treegrid/configuration.md#columns) property of the footer of a column:
+You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the [text](treegrid/api/api_treegridcolumn_properties.md) property of the footer of a column:
 
 ~~~html
 <style>	    
@@ -100,14 +99,13 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-Styling rows
----------------
+## Styling rows
 
 It is possible to change the appearance of treegrid rows by applying custom CSS styles to them. 
 
 ![](../assets/treegrid/row_css.png)
 
-{{editor	https://snippet.dhtmlx.com/3ojyoryn	TreeGrid. Custom Row Style}}
+**Related sample**: [TreeGrid. Custom Row Style](https://snippet.dhtmlx.com/3ojyoryn)
 
 There are two ways to do it:
 
@@ -115,9 +113,9 @@ There are two ways to do it:
 
 ~~~html
 <style>
-.my_custom_row {
-	background: coral;
-}
+	.my_custom_row {
+		background: coral;
+	}
 </style>
 ~~~
 
@@ -128,7 +126,6 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 	data: dataset
 });
 ~~~
-
 
 - with the help of the [addRowCss()](treegrid/api/treegrid_addrowcss_method.md) method:
 
@@ -145,45 +142,43 @@ var rowId = treegrid.data.getId(1);
 treegrid.addRowCss(rowId, "myCustomClass"); /*!*/
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kort67nu	TreeGrid. Add row css}}
+**Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
 
 where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>rowId</b></td>
+			<td><b>rowId</b></td>
 			<td>(<i>string|number</i>) the id of a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) the name of a CSS class</td>
 		</tr>
     </tbody>
 </table>
 
-
-Styling cells
-----------------
+## Styling cells
 
 ![](../assets/treegrid/cell_css.png)
 
-{{editor	https://snippet.dhtmlx.com/smjecfzp	TreeGrid. Add cell css}}
+**Related sample**: [TreeGrid. Add cell css](https://snippet.dhtmlx.com/smjecfzp)
 
 It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegrid_addcellcss_method.md) method. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>string|number</i>) the id of a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>string|number</i>) the id of a column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) the name of the CSS class</td>
 		</tr>
     </tbody>
@@ -192,9 +187,9 @@ It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegr
 
 ~~~html
 <style>
-.myCustomClass{
-	background:greenyellow;
-}
+	.myCustomClass{
+		background:greenyellow;
+	}
 </style>
 ~~~
 
@@ -202,33 +197,30 @@ It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegr
 treegrid.addCellCss(rowId, "name", "myCustomClass");
 ~~~
 
-
-
-Adding custom marks to cells
--------------------
+## Adding custom marks to cells
 
 ![](../assets/treegrid/mark_cell.png)
 
-{{editor	https://snippet.dhtmlx.com/14jkc5s3	TreeGrid. Custom Mark Cells}}
+**Related sample**: [TreeGrid. Custom Mark Cells](https://snippet.dhtmlx.com/14jkc5s3)
 
 You can mark particular cells in a treegrid using the **mark** property of a column configuration. You need to set its value as a function that takes the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>cell</b></td>
+			<td><b>cell</b></td>
 			<td>(<i>string</i>) the value of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>columnCells</b></td>
+			<td><b>columnCells</b></td>
 			<td>(<i>array</i>) an array of all cell values in the specified column</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>object</i>) the config of a column (see the columns config)</td>
 		</tr>
     </tbody>
@@ -278,14 +270,14 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 It is also possible to highlight cells with minimum and (or) maximum values in a grid using the **mark** property of a column configuration. The property is an object which takes two optional parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>min</b></td>
+			<td><b>min</b></td>
 			<td>(<i>string</i>) a custom CSS class to mark a cell that contains the minimum value</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>max</b></td>
+			<td><b>max</b></td>
 			<td>(<i>string</i>) a custom CSS class to mark a cell that contains the maximum value</td>
 		</tr>
     </tbody>
@@ -329,27 +321,26 @@ var grid = new dhx.Grid("grid", {
 
 ![](../assets/treegrid/min_max_mark.png)
 
-{{editor	https://snippet.dhtmlx.com/um9mjrs5	TreeGrid. Mark Cells}}
+**Related sample**: [TreeGrid. Mark Cells](https://snippet.dhtmlx.com/um9mjrs5)
 
-Adding template to cells
------------------------------
+## Adding template to cells
 
 ![](../assets/treegrid/cell_templates.png)
 
 It is possible to customize the content of cells of TreeGrid via the **template** property of a [column configuration](treegrid/configuration.md#columns). The template option is a function that takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>cellValue</b></td>
+			<td><b>cellValue</b></td>
 			<td>(<i>any</i>) the value of a cell</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>col</b></td>
+			<td><b>col</b></td>
 			<td>(<i>object</i>) the config of a column</td>
 		</tr>
     </tbody>
@@ -375,9 +366,9 @@ var treeGrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/q76qcgn3	TreeGrid. Template with content for cells}}
+**Related sample**: [TreeGrid. Template with content for cells](https://snippet.dhtmlx.com/q76qcgn3)
 
-<h3 id="eventhandling">Event handlers for the template</h3>
+### Event handlers for the template
 
 Starting from v7.0, you can assign event handlers to HTML elements of a custom template of TreeGrid cells via using the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property of TreeGrid, for instance:
 
@@ -407,18 +398,18 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 ~~~
 
-[TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
+**Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><i>key</i></td>
+			<td><i>key</i></td>
 			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><i>value</i></td>
+			<td><i>value</i></td>
 			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
             <ul>
                 <li><b>event</b> - an event object</li>
@@ -430,3 +421,57 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
     </tbody>
 </table>
 
+## Adding template to tooltip
+
+![](../assets/treegrid/tooltip_template.png)
+
+Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of the column. The **tooltipTemplate** function takes three parameters:
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>value</b></td>
+			<td>(<i>any</i>) the value of a cell</td>
+		</tr>
+		<tr>
+			<td><b>row</b></td>
+			<td>(<i>object</i>) an object with all cells in a row</td>
+		</tr>
+		<tr>
+			<td><b>col</b></td>
+			<td>(<i>object</i>) the config of a column</td>
+		</tr>
+    </tbody>
+</table>
+<br>
+
+~~~js
+function rowDataTemplate(value, row, col) { /*!*/
+    if (!value) { /*!*/
+        return; /*!*/
+    } /*!*/
+    return `Country: ${row.country}</br> /*!*/
+            Population: ${row.population}</br> /*!*/
+            Yearly Change: ${row.yearlyChange}</br> /*!*/
+            Net Change: ${row.netChange}`; /*!*/
+}
+
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        { 
+			id: "country", header: [{ text: "Country" }], gravity: 1.2, 
+			tooltipTemplate: rowDataTemplate /*!*/
+		},
+        { 
+			id: "population", header: [{ text: "Population" }], 
+			tooltipTemplate: rowDataTemplate /*!*/
+		},
+        // more options
+    ],
+    data: dataset
+});
+~~~
+
+**Related sample**: [TreeGrid. Tooltip template](https://snippet.dhtmlx.com/520i6vbt)
+
+{{note You should enable the [htmlEnable](treegrid/configuration.md#html-content-of-treegrid-columns) option in the configuration of TreeGrid (or configuration of the column) to activate HTML support for the tooltip.}}

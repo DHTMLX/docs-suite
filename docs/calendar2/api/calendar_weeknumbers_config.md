@@ -9,18 +9,18 @@ title: weekNumbers
 
 @default: false
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", { 
     weekNumbers: true
 });
 
 
-@template:	api_config
+
 @descr: 
 
-@relatedsample:
-https://snippet.dhtmlx.com/9692gk6n	Calendar. Numbers Of Weeks
+**Related sample**:
+- [Calendar. Numbers Of Weeks](https://snippet.dhtmlx.com/9692gk6n)
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#numbersofweeks

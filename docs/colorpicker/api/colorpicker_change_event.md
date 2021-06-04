@@ -1,21 +1,25 @@
 ---
 sidebar_label: change
-title: change
----          
+title: JavaScript Colorpicker - change Event 
+description: You can explore the change event of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# change
 
 @short: fires on changing selected color in ColorPicker
 
-@signature: change: (color: string) => void;
+@signature: {'change: (color: string) => void;'}
+
+@params:
+`color: string` - the newly selected color
 
 @example:
 colorpicker.events.on("Change",function(color){
 	// your logic here
 });
 
-@template: api_event
 @descr:
 
+**Related sample**: [Colorpicker. Events](https://snippet.dhtmlx.com/fllgaabo)
 
 @changelog: added in v6.3
-
-@relatedsample: https://snippet.dhtmlx.com/fllgaabo	Colorpicker. Events

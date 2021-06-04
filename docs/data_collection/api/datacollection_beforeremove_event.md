@@ -1,23 +1,27 @@
 ---
 sidebar_label: beforeRemove
-title: beforeRemove
----          
+title: JavaScript DataCollection - beforeRemove Event 
+description: You can explore the beforeRemove event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeRemove
 
 @short: fires before removing an item from a data collection
-	
+
+@signature: {'beforeRemove: (removedItem: any) => boolean | void;'}
+
 @params:
-- removedItem		object			the object of an item to remove
+`removedItem: object` - the object of an item to remove
 
 @returns:
-- result		boolean		true/false to remove/not remove an item from a data collection
+Return `false` to block removing an item from a data collection; otherwise, `true`.
 
 @example:
-data.events.on("BeforeRemove", function(removedItem){
+component.data.events.on("BeforeRemove", function(removedItem){
 	console.log("An item will be removed");
     return true;
 });
 
-@template:	api_event
 @descr:
 
-@relatedapi:data_collection/api/afterremove_event.md
+[comment]: # (@relatedapi:data_collection/api/datacollection_afterremove_event.md)

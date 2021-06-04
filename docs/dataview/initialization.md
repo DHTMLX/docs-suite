@@ -1,15 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript DataView - Initialization 
+description: You can explore the initialization of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxDataView on a page, you need to take the following simple steps:
 
 - [Download the DataView package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize DataView](#initializedataview) with the object constructor
-- [Load data into DataView](#loaddataintodataview)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize DataView](#initialize-dataview) with the object constructor
+- [Load data into DataView](#load-data-into-dataview)
 
 ~~~html title="index.html"
 <!DOCTYPE html>
@@ -31,10 +34,9 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7rjmp5ol	Dataview. Basic Initialization}}
+**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -46,8 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container 
------------------
+## Create a container
 
 Add a container for DataView and give it an id, for example "dataview_container":
 
@@ -55,13 +56,12 @@ Add a container for DataView and give it an id, for example "dataview_container"
 <div id="dataview_container"></div>
 ~~~
 
-Initialize DataView
----------------------------------
+## Initialize DataView
 
 Initialize DataView with the `dhx.DataView` object constructor. The constructor has two parameters:
 
 - the HTML container for DataView,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxDataView
@@ -70,39 +70,17 @@ var dataview = new dhx.DataView("dataview_container", {
 });
 ~~~
 
-There is a set of properties you can specify for DataView to optimize its configuration for your needs. Read the details below.
-
 ### Configuration properties
 
+There is a set of properties you can specify for DataView to optimize its configuration for your needs.
 
-You can specify the following properties in the configuration object of DataView:
+The detailed information on DataView configuration options can be found in the [Dataview API overview](dataview/api/api_overview.md#properties) article.
 
-todotw скорее всего можно просто сослаться на API
-{{api
+## Load data into DataView
 
-- dataview/api/dataview_css_config.md - adds a CSS class(es) to the component
-- dataview/api/dataview_data_config.md - specifies an array of data objects to set into the dataview 
-- dataview/api/dataview_dragcopy_config.md - defines that an item is copied to a target during drag-n-drop
-- dataview/api/dataview_dragmode_config.md - enables drag-n-drop in DataView
-- dataview/api/dataview_editable_config.md - enables editing in DataView
-- dataview/api/dataview_eventhandlers_config.md - adds event handlers to HTML elements of a custom template of DataView items
-- dataview/api/dataview_gap_config.md - sets margins for DataView items
-- dataview/api/dataview_height_config.md - sets the height of Dataview
-- dataview/api/dataview_itemheight_config.md - sets the height of an item
-- dataview/api/dataview_itemsinrow_config.md - specifies the number of data items in a row
-- dataview/api/dataview_keynavigation_config.md - enables/disables navigation in DataView by arrow keys
-- dataview/api/dataview_multiselection_config.md - enables selection of multiple DataView items
-- dataview/api/dataview_selection_config.md - enables selection of DataView items
-- dataview/api/dataview_template_config.md - specifies a template for DataView items
+Finally, you are able to load DataView with data. You can load inline or external data into DataView.
 
-}}
-
-Load data into DataView
----------------------
-
-Finally, you are to load DataView with data. You can load inline or external data into DataView.
-
-- to load data from a local source, use the [](data_collection/api/parse.md) method of the Data Collection object:
+- to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container",{
@@ -112,7 +90,7 @@ var dataview = new dhx.DataView("dataview_container",{
 dataview.data.parse(data);
 ~~~
 
-- to load data from an external file, use the [](data_collection/api/load.md) method of the Data Collection object:
+- to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container",{
@@ -122,5 +100,4 @@ var dataview = new dhx.DataView("dataview_container",{
 dataview.data.load("../common/dataset.json");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/7rjmp5ol	Dataview. Basic Initialization}}
-
+**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)

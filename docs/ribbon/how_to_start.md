@@ -1,15 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Ribbon - Initialization 
+description: You can explore the initialization of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxRibbon into an application, you need to take the following simple steps:
 
 - [Download the Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Ribbon](#initializeribbon) with the object constructor
-- [Load data into Ribbon](#loaddataintoribbon)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Ribbon](#initialize-ribbon) with the object constructor
+- [Load data into Ribbon](#load-data-into-ribbon)
 
 ~~~html
 <!DOCTYPE html>
@@ -29,10 +32,9 @@ To add dhtmlxRibbon into an application, you need to take the following simple s
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1gd5tbcf	Ribbon. Basic Initialization}}
+**Related sample**: [Ribbon. Basic Initialization](https://snippet.dhtmlx.com/1gd5tbcf)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -44,8 +46,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-Create a container
--------------------
+## Create a container
 
 Add a container for the Ribbon and give it an id, e.g. "ribbon_container":
 
@@ -53,13 +54,12 @@ Add a container for the Ribbon and give it an id, e.g. "ribbon_container":
 <div id="ribbon_container"></div>
 ~~~
 
-Initialize Ribbon
----------------------
+## Initialize Ribbon
 
 Initialize Ribbon with the `dhx.Ribbon` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the toolbar container
-- an object with configuration properties (see the full list below)
+- an object with configuration properties
 
 ~~~js
 var ribbon = new dhx.Ribbon("ribbon_container", {
@@ -67,21 +67,13 @@ var ribbon = new dhx.Ribbon("ribbon_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1gd5tbcf	Ribbon. Basic Initialization}}
+**Related sample**: [Ribbon. Basic Initialization](https://snippet.dhtmlx.com/1gd5tbcf)
 
-### Configuration properties:
+### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
+The detailed information on Ribbon configuration options can be found in the [Ribbon API overview](ribbon/api/api_overview.md#properties) article.
 
-- ribbon/api/ribbon_css_config.md - adds style classes to Ribbon
-- ribbon/api/ribbon_data_config.md - specifies an array of data objects to set into Ribbon
-- ribbon/api/ribbon_menucss_config.md - adds style classes to all containers of Ribbon controls with nested items
-
-}}
-
-Load data into Ribbon
-------------------
+## Load data into Ribbon
 
 There are two handy ways of loading data, i.e. a set of controls into Ribbon:
 
@@ -130,4 +122,3 @@ ribbon.data.parse(data);
 ~~~
 
 Detailed information on loading data into Ribbon is given in the article [](ribbon/loading_json.md).
-

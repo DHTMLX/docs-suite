@@ -1,18 +1,21 @@
 ---
 sidebar_label: beforeResizeStart
-title: beforeResizeStart
----          
+title: JavaScript TreeGrid - beforeResizeStart Event 
+description: You can explore the beforeResizeStart event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeResizeStart
 
 @short: fires before resizing of a column has started
 
-@signature: beforeResizeStart: (col: object, e: MouseEvent) => boolean | void;
+@signature: {'beforeResizeStart: (col: ICol, events: MouseEvent) => boolean | void;'}
 
 @params:
-- column		object		an object with a column configuration
-- e				Event		a native event object
+- `column: object` - an object with a column configuration
+- `events: MouseEvent` - a native HTML event object
 
 @returns:
-- result		boolean		false - to block resizing of a column, otherwise true
+Return `false` to block resizing of a column; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeResizeStart", function(col,e){
@@ -20,7 +23,6 @@ grid.events.on("BeforeResizeStart", function(col,e){
     return false;
 });
 
-@template: api_event
 @descr:
 
 @changelog:

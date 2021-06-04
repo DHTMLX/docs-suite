@@ -1,42 +1,39 @@
 ---
 sidebar_label: dragItem
-title: dragItem
----          
+title: JavaScript Grid - dragItem Config 
+description: You can explore the dragItem config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# dragItem
 
 @short: enables the possibility to reorder grid columns by drag and drop
 
-dragItem?: "row" | "column" | "complex";
+@signature: {'dragItem?: "row" | "column" | "complex";'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     dragItem: "column", /*!*/ 
     data: dataset
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+ 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
-
-@relatedsample: https://snippet.dhtmlx.com/dfdlzpqb	Setup drag column (Pro)
-
-@related: 
-grid/initialization.md#initializegrid
-grid/configuration.md#dragndropofgridcolumns
-
 
 @changelog: added in v6.5
 
-@edition: pro
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-of-grid-columns)
 
-@relatedapi:
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_beforecolumndrop_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
+[comment]: # (@relatedapi:)
+[comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
+[comment]: # ([](grid/api/grid_aftercolumndrop_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrag_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancelcolumndrop_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnin_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnout_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnstart_event.md)

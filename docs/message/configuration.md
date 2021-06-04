@@ -1,8 +1,10 @@
 ---
 sidebar_label: Configuration
-title: Configuration
-description: description
----          
+title: JavaScript Message - Configuration 
+description: You can explore the configuration of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Configuration
 
 In this article you will find the detailed list of properties that you can use inside the constructors of message boxes and tooltip to adjust their configuration.
 
@@ -10,9 +12,9 @@ In this article you will find the detailed list of properties that you can use i
 
 ![](../assets/message/show_message.png)
 
-{{editor	https://snippet.dhtmlx.com/rsxdlicg	Message. Show Message}}
+**Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
-The constructor of a message box may take [the following parameters](message/api/api_message_properties.md).
+You can configure a message box on its initialization:
 
 ~~~js
 dhx.message({
@@ -23,15 +25,17 @@ dhx.message({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qfmd877x	Message. Message Configuration}}
+**Related sample**: [Message. Message Configuration](https://snippet.dhtmlx.com/qfmd877x)
+
+{{note You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).}}
 
 ## Alert Box
 
 ![](../assets/message/show_alert.png)
 
-{{editor	https://snippet.dhtmlx.com/m4xka888	Message. Show Alert}}
+**Related sample**: [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
-The constructor of an alert box may take [the following parameters](message/api/api_message_properties.md#alert-box).
+You can define the configuration of an alert box on its initialization:
 
 ~~~js
 dhx.alert({
@@ -41,15 +45,17 @@ dhx.alert({
 });
 ~~~
 
-{{editor	 https://snippet.dhtmlx.com/dk4a7959	Message. Alert And Confirm Configuration}}
+**Related sample**: [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
+
+{{note See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).}}
 
 ## Confirm Box
 
 ![](../assets/message/show_confirm.png)
 
-{{editor	https://snippet.dhtmlx.com/iss7twe6	Message. Show Confirm}}
+**Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
-The constructor of a confirm box may take [the following parameters](message/api/api_message_properties.md#confirm-box).
+You can configure a confirm box on its initialization:
 
 ~~~js
 dhx.confirm({
@@ -60,7 +66,9 @@ dhx.confirm({
 });
 ~~~
 
-{{editor	 https://snippet.dhtmlx.com/dk4a7959	Message. Alert And Confirm Configuration}}
+**Related sample**: [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
+
+{{note You can find the list of configuration properties the constructor of the confirm box may take [in the related article](message/api/api_message_properties.md#confirm-box).}}
 
 ### Working with confirm
 
@@ -85,9 +93,10 @@ dhx.confirm({
 
 ![](../assets/message/show_tooltip.png)
 
-{{editor	https://snippet.dhtmlx.com/c6jm8if6	Message. Show Tooltip}}
+**Related sample**: [Message. Show Tooltip](https://snippet.dhtmlx.com/c6jm8if6)
 
-The constructor of a tooltip may take [the following parameters](message/api/api_message_properties.md#tooltip).
+You can configure a tooltip on its initialization:
+
 ~~~js
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
@@ -95,9 +104,12 @@ dhx.tooltip("Tooltip From Right", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/4wrrsr67	Message. Tooltip Position}}
+**Related Samples:**
 
-{{editor	https://snippet.dhtmlx.com/zts0avym	Message. Tooltip Delay Configuration}}
+- [Message. Tooltip Position](https://snippet.dhtmlx.com/4wrrsr67)
+- [Message. Tooltip Delay Configuration](https://snippet.dhtmlx.com/zts0avym)
+
+{{note See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).}}
 
 ### Smart positioning
 
@@ -106,7 +118,6 @@ dhx.tooltip("Tooltip From Right", {
 In the image below the target is adjacent to the right side of screen. Its tooltip that has the *position:"right"* attribute in the config object appears from the left side of the target.
 
 ![Smart positioning](../assets/message/smart_tooltip.png)
-
 
 ### Tooltip API
 
@@ -123,4 +134,3 @@ dhx.disableTooltip();
 ~~~js
 dhx.enableTooltip();
 ~~~
-

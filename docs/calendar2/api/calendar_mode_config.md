@@ -10,17 +10,17 @@ title: mode
 @default:
 "calendar"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     mode: "month"
 });
  
 
-@template:	api_config
+
 @descr: 
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#calendarmodes
 
-@relatedsample: https://snippet.dhtmlx.com/n9q0tc0q	Calendar. Calendar Modes
+**Related sample**: [Calendar. Calendar Modes](https://snippet.dhtmlx.com/n9q0tc0q)

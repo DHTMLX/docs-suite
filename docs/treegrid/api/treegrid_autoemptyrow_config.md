@@ -1,25 +1,22 @@
 ---
 sidebar_label: autoEmptyRow
-title: autoEmptyRow
----          
+title: JavaScript TreeGrid - autoEmptyRow Config 
+description: You can explore the autoEmptyRow config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-@short: adds an empty row after the last filled row in the Grid
+# autoEmptyRow
 
-@signature: autoEmptyRow?: boolean;
+@short: adds an empty row after the last filled row in the TreeGrid
+
+@signature: {'autoEmptyRow?: boolean;'}
 
 @default: true
 
-@example: 
-var grid = new dhx.Grid("grid_container", {
+@example:
+var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [// columns config],
 	autoEmptyRow:true,  /*!*/
 	data: dataset
 });
 
-
-@template:	api_config
-@descr: 
-
-@related:
-grid/configuration.md#automaticaddingofemptyrowintogrid
-
+@descr:

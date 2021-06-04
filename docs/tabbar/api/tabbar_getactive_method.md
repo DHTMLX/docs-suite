@@ -1,14 +1,17 @@
 ---
-sidebar_label: getActive
-title: getActive
----          
+sidebar_label: getActive()
+title: JavaScript Tabbar - getActive Method 
+description: You can explore the getActive method of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getActive()
 
 @short: gets the id of the active tab
 
-@signature: getActive(): string;
+@signature: {'getActive(): string;'}
 
 @returns:
-- id 		string		the id of the active tab
+A string with the id of the active tab.
 
 @example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
@@ -20,19 +23,13 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
         { id: "4", tab: "tab-4", css:"panel flex"}
     ]
 });
- 
+
 var active = tabbar.getActive(); // -> "2"
 
-
-@template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/xpvkcwiu	Tabbar. Get Active
+**Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
 
-@relatedapi: tabbar/api/tabbar_setactive_method.md
+[comment]: # (@relatedapi: tabbar/api/tabbar_setactive_method.md)
 
-@related: tabbar/work_with_tabbar.md#settinggettingtheactivetab
-
-@changelog:
-
-
+[comment]: # (@related: tabbar/work_with_tabbar.md#settinggetting-the-active-tab)

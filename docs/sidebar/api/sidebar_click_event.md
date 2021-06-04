@@ -1,26 +1,26 @@
 ---
 sidebar_label: click
-title: click
----          
+title: JavaScript Sidebar - click Event 
+description: You can explore the click event of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# click
 
 @short: fires after a click on a control
 
-click: (id: string, e: Event) => void;
+@signature: {'click: (id: string, events: Event) => void;'}
 
 @params:
-- id 		string		the ID of a clicked control
-- e 		Event		a native event object
-
+- `id: string` - the ID of a clicked control
+- `events: Event` - a native event object
 
 @example:
 sidebar.events.on("Click", function(id,e){
     console.log(id);
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/qfddiu3i	Sidebar. Events
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

@@ -1,14 +1,17 @@
 ---
-sidebar_label: setColumns
-title: setColumns
----          
+sidebar_label: setColumns()
+title: JavaScript TreeGrid - setColumns Method 
+description: You can explore the setColumns method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setColumns()
 
 @short: sets configuration for TreeGrid columns
 
-@signature: setColumns(columns: ICol[]): void;
+@signature: {'setColumns(col: ICol[]): void;'}
 
 @params:
-- columns	array	an array of objects with configuration of columns
+`col: array` - an array of objects with configuration of columns
 
 @example:
 grid.setColumns([
@@ -17,12 +20,10 @@ grid.setColumns([
 	// more columns objects
 ]);
 
-@template: api_method
 @descr:
-Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_gridcolumn_properties.md).
 
+Each column object may contain a set of properties. You will find the full list of the configuration properties of a TreeGrid column [here](treegrid/api/api_treegridcolumn_properties.md).
 
-@relatedapi: treegrid/api/treegrid_getcolumn_method.md
-@related: treegrid/usage.md#workingwithcolumnsandcells
+[comment]: # (@relatedapi: treegrid/api/treegrid_getcolumn_method.md)
 
-@changelog:
+[comment]: # (@related: treegrid/usage.md#working-with-columns-and-cells)

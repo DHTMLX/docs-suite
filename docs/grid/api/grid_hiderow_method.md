@@ -1,30 +1,28 @@
 ---
-sidebar_label: hideRow
-title: hideRow
----          
+sidebar_label: hideRow()
+title: JavaScript Grid - hideRow Method 
+description: You can explore the hideRow method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# hideRow()
 
 @short: hides a row of Grid
 
-@signature: hideRow(rowId: string | number): void;
+@signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
-- rowId	string|number   the id of a row
+`rowId: string | number` - the id of a row
 
 @example:
 grid.hideRow(rowId);
 
-
-@template: api_method
 @descr:
 
-[Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
-
-@relatedapi: 
-grid/api/grid_showrow_method.md
-grid/api/grid_isrowhidden_method.md
-
-@related: grid/usage.md#hidingshowingarow
+**Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
 @changelog:
 added in v7.0
 
+[comment]: # (@relatedapi: grid/api/grid_showrow_method.md grid/api/grid_isrowhidden_method.md)
+
+[comment]: # (@related: grid/usage.md#hidingshowing-a-row)

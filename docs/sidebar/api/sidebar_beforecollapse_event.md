@@ -1,14 +1,17 @@
 ---
 sidebar_label: beforeCollapse
-title: beforeCollapse
----          
+title: JavaScript Sidebar - beforeCollapse Event 
+description: You can explore the beforeCollapse event of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeCollapse
 
 @short: fires before collapsing a sidebar
 
-beforeCollapse: () => boolean | void;
+@signature: {'beforeCollapse: () => boolean | void;'}
 
 @returns:
-param   boolean         false - to prevent collapsing a sidebar, otherwise - true
+Return `false` to prevent collapsing a sidebar; otherwise,`true`.
 
 @example:
 sidebar.events.on("BeforeCollapse", function() {
@@ -16,11 +19,10 @@ sidebar.events.on("BeforeCollapse", function() {
     return false;
 });
 
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/qfddiu3i	Sidebar. Events
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
 @changelog: added in v6.4
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

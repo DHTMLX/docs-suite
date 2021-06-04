@@ -1,18 +1,14 @@
 ---
 sidebar_label: Overview
-title: CSS Manager overview
-description: description
----  
+title: JavaScript CSS Manager - CSS Manager Overview 
+description: You can have an overview of CSS Manager in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# CSS Manager overview
 
 The DHTMLX library provides you with the opportunity to create new classes and manipulate them dynamically with the help of the **CssManager** helper.
 
-To make use of the helper you need to initialize the CssManager object with the help of the *dhx.CssManager()* constructor:
-
-~~~js
-var cssManager = new dhx.CssManager();
-~~~
-
-The list of the available methods of `dhx.CssManager` is described below.
+The list of the available methods of `dhx.cssManager` is described below.
 
 ## Methods
 
@@ -22,4 +18,3 @@ The list of the available methods of `dhx.CssManager` is described below.
 | [](css_manager/api/cssmanager_get_method.md)    | @getshort(css_manager/api/cssmanager_get_method.md)    |
 | [](css_manager/api/cssmanager_remove_method.md) | @getshort(css_manager/api/cssmanager_remove_method.md) |
 | [](css_manager/api/cssmanager_update_method.md) | @getshort(css_manager/api/cssmanager_update_method.md) |
-

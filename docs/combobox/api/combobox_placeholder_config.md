@@ -1,21 +1,22 @@
 ---
 sidebar_label: placeholder
-title: placeholder
----          
+title: JavaScript Combo Box - placeholder Config 
+description: You can explore the placeholder config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# placeholder
 
 @short: sets a placeholder in the input of Combo
 
-@signature: placeholder?: string;
+@signature: {'placeholder?: string;'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container",{
     placeholder: "Some placeholder"
 });
 
-@template:	api_config
-@descr: 
+@descr:
 
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#placeholder
+**Related sample**: [Combobox. Placeholder](https://snippet.dhtmlx.com/759z23gh)
 
-@relatedsample: https://snippet.dhtmlx.com/759z23gh	Combobox. Placeholder
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#placeholder)

@@ -1,25 +1,24 @@
 ---
 sidebar_label: headerCellMouseDown
-title: headerCellMouseDown
----          
+title: JavaScript Grid - headerCellMouseDown Event 
+description: You can explore the headerCellMouseDown event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# headerCellMouseDown
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: headerCellMouseDown: (col: object, e: MouseEvent & TouchEvent) => void;
+@signature: {'headerCellMouseDown: (col: ICol, events: MouseEvent & TouchEvent) => void;'}
 
-<!--todo @params:
-- column		object		an object with a column configuration
-- e				Event		a native event object -->
+@params:
+- `col: object` - an object with a column configuration
+- `events: MouseEvent & TouchEvent` - a native HTML event object 
 
 @example:
-grid.events.on("HeaderCellMouseDown", function(column,e){
+grid.events.on("HeaderCellMouseDown", function(col,e){
     // your logic here
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/9zeyp4ds	Grid. Events
-
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)

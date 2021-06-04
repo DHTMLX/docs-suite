@@ -1,27 +1,23 @@
 ---
-sidebar_label: isVisible
-title: isVisible
----          
+sidebar_label: isVisible()
+title: JavaScript Popup - isVisible Method 
+description: You can explore the isVisible method of Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# isVisible()
 
 @short: checks whether a popup is visible
 
-@signature: isVisible(): boolean;
+@signature: {'isVisible(): boolean;'}
 
 @returns:
-- result	boolean 		true, if a popup is visible, otherwise - false
+`true`, if a popup is visible; otherwise, `false`.
 
 @example:
 popup.isVisible(); // -> true/false
 
-
-@template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/f614sdm3	Popup. Is Visible
+**Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
 
-@related: popup/work_with_popup.md#checkingvisibilityofpopup
-
-
-@changelog:
-
-
+[comment]: # (@related: popup/work_with_popup.md#checking-visibility-of-popup)

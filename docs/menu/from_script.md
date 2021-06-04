@@ -1,7 +1,10 @@
 ---
 sidebar_label: Data Loading
-title: Data Loading
----          
+title: JavaScript Menu - Data Loading 
+description: You can explore the data loading of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Data Loading
 
 There are several simple ways of loading options into dhtmlxMenu:
 
@@ -10,8 +13,7 @@ There are several simple ways of loading options into dhtmlxMenu:
 
 First, you need to prepare a data set that will be loaded into Menu.
 
-Preparing data set
-----------------------
+## Preparing data set
 
 dhtmlxMenu expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
@@ -42,30 +44,27 @@ var data = [
 				value:  "Redo",
 				icon: "dxi dxi-redo",
 			}
-         ]
+        ]
     },
     {
     	type: "spacer"
     }
-]
+];
 ~~~
 
-A data set consists of objects with configurations of menu controls. Templates for Menu controls in JSON format are given [below](#jsonformattemplates).
+A data set consists of objects with configurations of menu controls. Templates for Menu controls in JSON format are given [below](#json-format-templates).
 
+## Loading from a local source
 
-Loading from a local source
--------------------
-
-You can load data to a menu from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparingdataset) as a parameter of this method:
+You can load data to a menu from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 menu.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cg62qa9v	Menu. Basic Initialization}}
+**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-Loading from an external file
-------------------
+## Loading from an external file
 
 The **load** method of Tree Collection loads menu data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 
@@ -73,8 +72,8 @@ The **load** method of Tree Collection loads menu data from an external JSON fil
 menu.data.load("[path to this file]/file.json");
 ~~~	
 
-{{editor	https://snippet.dhtmlx.com/cg62qa9v	Menu. Basic Initialization}}
-	
+**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
+
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
@@ -85,72 +84,11 @@ menu.data.load("/some/data").then(function(){
 });
 ~~~
 
-
-JSON format templates
------------------
+## JSON format templates
 
 This section will give you the idea of JSON format templates for separate Menu controls.
 
-### MenuItem
-
-The **menuItem** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "menuItem"</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>)  a value for the menu item. You need to set either the <b>value</b> or <b>html</b> property to the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the menu item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/menu__fa_icons.html">icon</a> from the used icon font</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of children controls (note that all the children should have the type <i>menuItem</i>)</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of a keyboard shortcut for a menu item</td>
-		</tr>
-         <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number|string</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success" </td>
-		</tr>
-			<tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a control is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether an item is disabled</td>
-		</tr>
-    </tbody>
-</table>
+### MenuItem template
 
 ~~~js
 // menuItem
@@ -174,79 +112,9 @@ The **menuItem** object has the following properties:
 }
 ~~~
 
-### NavItem
+{{note You can find the full list of properties of the **menuItem** object [here](menu/api/api_menuitem_properties.md).}}
 
-The **navItem** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "navItem". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>value</b></td>
-			<td>(<i>string</i>) a value of the navItem. You need to set either the <b>value</b> or <b>html</b> property to the navItem</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the navItem</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes to a navItem</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="https://docs.dhtmlx.com/suite/menu__fa_icons.html">icon</a> of the navItem</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>twoState</b></td>
-			<td>(<i>boolean</i>) adds two states to the item: active (pressed) and inactive (unpressed)</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>group</b></td>
-			<td>(<i>string</i>) defines the name of a group of controls a navItem belongs to. If one of the navItems in the group becomes active, all others automatically become inactive</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>active</b></td>
-			<td>(<i>boolean</i>) sets the state of a twoState item</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of a keyboard shortcut for a menu item</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>count</b></td>
-			<td>(<i>number</i>) a badge with a number</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success" </td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether an item is hidden</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether an item is disabled</td>
-		</tr>
-    </tbody>
-</table>
-
+### NavItem template
 
 ~~~js
 // navItem
@@ -258,38 +126,9 @@ The **navItem** object has the following properties:
 }
 ~~~
 
-### Custom HTML
+{{note You will find the full list of properties of the **navItem** object [here](menu/api/api_navitem_properties.md).}}
 
-The **customHTML** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the id of an item, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>html</b></td>
-			<td>(<i>string</i>) a string with HTML that should be inserted into the item</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes</td>
-		</tr>
-		<tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a control is hidden</td>
-		</tr>
-    </tbody>
-</table>
+### Custom HTML template
 
 ~~~js
 // customHTML
@@ -299,26 +138,14 @@ The **customHTML** object has the following properties:
     type: "customHTML",
 	html: "<img src='../logo.svg' alt=''/>",
 	css: "custom-image"
-});
+}
 ~~~
 
+{{note You will find the full list of properties of the **customHTML** object [here](menu/api/api_customhtml_properties.md).}}
 
-###  Separator
+### Separator template
 
-You can add separators that will draw horizontal lines between menu options or vertical lines between menu items. The **separator** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the ID of a control, auto-generated if not set</td>
-		</tr>
-    </tbody>
-</table>
+You can add separators that will draw horizontal lines between menu options or vertical lines between menu items. 
 
 ~~~js 
 // separator
@@ -328,22 +155,9 @@ You can add separators that will draw horizontal lines between menu options or v
 }
 ~~~
 
-### Spacer
+{{note You will find the full list of properties of the **separator** object [here](menu/api/api_separator_properties.md).}}
 
-The **spacer** object has the following properties:
-
-<table class="webixdoc_links">
-	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "spacer". If not specified - the <a href="https://docs.dhtmlx.com/suite/menu__configuring_menu_items.html#menuitem">"menuItem"</a> type is applied by default.</td>
-		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
-			<td>(<i>string</i>) the ID of a control, auto-generated if not set</td>
-		</tr>
-    </tbody>
-</table>
+### Spacer template
 
 ~~~js
 // spacer
@@ -353,12 +167,11 @@ The **spacer** object has the following properties:
 }
 ~~~
 
+{{note You will find the full list of properties of the **spacer** object [here](menu/api/api_spacer_properties.md).}}
 
-Saving and restoring state
-----------------------------
+## Saving and restoring state
 
-To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. 
-Each JSON object contains the configuration of a separate Menu item.
+To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. Each JSON object contains the configuration of a separate Menu item.
 
 ~~~js
 var state = menu1.data.serialize();
@@ -372,4 +185,3 @@ var menu2 = new dhx.Menu(document.body);
 // parsing the state of menu1 into menu2
 menu2.data.parse(state);
 ~~~
-

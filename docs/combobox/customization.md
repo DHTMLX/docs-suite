@@ -1,23 +1,25 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Combo Box - Customization 
+description: You can explore the customization of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Custom filter for options
------------------------
+# Customization
+
+## Custom filter for options
 
 ![](../assets/combo/custom_filter.png)
 
-It is possible to set a custom filtering function for the options of ComboBox via the [](combo/api/combobox_filter_config.md) option. A custom function takes two parameters:
+It is possible to set a custom filtering function for the options of ComboBox via the [](combobox/api/combobox_filter_config.md) option. A custom function takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>(<i>object</i>) an item of data collection</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the string to compare to</td>
 		</tr>
     </tbody>
@@ -50,14 +52,12 @@ var combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/791incm9	Combobox. Custom Filter}}
+**Related sample**: [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
 
 In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows in the popup list all the words that contain entered letters independent of their 
 order in a word.
 
-
-Styling 
------------
+## Styling
 
 ![](../assets/combo/custom_css.png)
 
@@ -77,7 +77,7 @@ There is a possibility to make changes in the look and feel of a combo box. For 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combo/api/combobox_css_config.md) property in the ComboBox configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combobox/api/combobox_css_config.md) property in the ComboBox configuration:
 
 ~~~js
 var combo = new dhx.Combobox({
@@ -85,4 +85,4 @@ var combo = new dhx.Combobox({
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/lldd739i	Combobox. Custom CSS}}
+**Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)

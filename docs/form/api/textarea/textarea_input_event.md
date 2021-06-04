@@ -1,23 +1,23 @@
 ---
 sidebar_label: input
-title: input
----          
+title: JavaScript Form - input Textarea Event 
+description: You can explore the input Textarea event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# input
 
 @short: fires when a user types some text in the textarea
- 
+
+@signature: {'input: (value: string) => void;'} 
 
 @params:
-- inputValue        string  an entered value
-
+`value: string` - an entered value
 
 @example:
 form.getItem("textarea").events.on("Input", function(inputValue) {
     console.log("Input", inputValue);
 });
 
-
-@template: api_event
 @descr:
-
 
 @changelog: added in v7.0

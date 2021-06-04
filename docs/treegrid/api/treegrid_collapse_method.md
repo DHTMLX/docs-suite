@@ -1,29 +1,25 @@
 ---
-sidebar_label: collapse
-title: collapse
----          
+sidebar_label: collapse()
+title: JavaScript TreeGrid - collapse Method 
+description: You can explore the collapse method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# collapse()
 
 @short: collapses a tree node by id
 
-@signature: collapse(id: string): void;
+@signature: {'collapse(id: string): void;'}
 
 @params:
-- id	string		the id of a node to collapse
+`id: string` - the id of a node to collapse
 
 @example:
 treegrid.collapse("native");
 
-
-@template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/1grpsaa2	TreeGrid. Expand/Collapse nodes
+**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
-@related: treegrid/usage.md#expandingcollapsingnodes
+[comment]: # (@related: treegrid/usage.md#expandingcollapsing-nodes)
 
-@changelog:
-
-@relatedapi: treegrid/api/treegrid_expand_method.md
-
-
-
+[comment]: # (@relatedapi: treegrid/api/treegrid_expand_method.md)

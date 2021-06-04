@@ -1,26 +1,26 @@
 ---
 sidebar_label: itemClick
-title: itemClick
----          
+title: JavaScript Tree - itemClick Event 
+description: You can explore the itemClick event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# itemClick
 
 @short: fires on clicking a tree item
 
-@signature: itemClick: (id: string, e: Event) => void;
+@signature: {'itemClick: (id: string, e: Event) => void;'}
 
 @params:
-- id	string		the id of an item
-- e		Event		a native event object
+- `id: string` - the id of an item
+- `e: Event` - a native event object
 
 @example:
 tree.events.on("itemClick", function(id, e){
     console.log("The item with the id "+ id +" was clicked.");
 });
 
-
-@template: api_event
 @descr:
 
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
-@relatedsample: https://snippet.dhtmlx.com/vux1ye9g	Tree. Events
-
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)

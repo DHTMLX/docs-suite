@@ -1,13 +1,16 @@
 ---
 sidebar_label: legend
-title: legend
----          
+title: JavaScript Chart - legend Config 
+description: You can explore the legend config of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# legend
 
 @short: defines the configuration of a chart legend
 
-@signature: legend?: object;
+@signature: {'legend?: ILegendConfig;'}
 
-@example: 
+@example:
 var chart = new dhx.Chart("chart_container",{
     scales: {
     	// scales config
@@ -23,47 +26,52 @@ var chart = new dhx.Chart("chart_container",{
 });
 
 
-@template:	api_config
-@descr: 
+@descr:
 
-### The list of config options for legend (for charts with scales)
+**Related samples**:
+- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
+- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
+  
+## The list of config options for legend (for charts with scales)
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>form</b></td>
-			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>{{editor    https://snippet.dhtmlx.com/n8wsfv5n	Chart. Legend Form}}</td>
+			<td><b>form</b></td>
+			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n8wsfv5n" target="_blank">Chart. Legend Form</a>
+			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>itemPadding</b></td>
+			<td><b>itemPadding</b></td>
 			<td>(<i>number</i>) padding between legend items</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>halign</b></td>
+			<td><b>halign</b></td>
 			<td>(<i>string</i>) the horizontal alignment of the legend block: "left"|"right"|"center"</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>valign</b></td>
+			<td><b>valign</b></td>
 			<td>(<i>string</i>) the vertical alignment of the block: "top"|"bottom"|"middle"</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>series</b></td>
+			<td><b>series</b></td>
 			<td>(<i>array</i>) the list of series that should be shown in the legend</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>margin</b></td>
+			<td><b>margin</b></td>
 			<td>(<i>number</i>) margin between the scale and the legend</td>
 		</tr>
     </tbody>
 </table>
 
-### The list of config options for legend (for charts without scales: Pie, Pie3D, Donut)
+## The list of config options for legend (for charts without scales: Pie, Pie3D, Donut)
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
        <tr>
-			<td class="webixdoc_links0"><b>values</b></td>
-			<td>(<i>object</i>) maps attributes of legend items to <a href="https://docs.dhtmlx.com/suite/chart__data_loading.html#preparingdataset">data set</a> properties. Contains the following properties:
+			<td><b>values</b></td>
+			<td>(<i>object</i>) maps attributes of legend items to <a href="../../chart/data_loading#preparing-data-set">data set</a> properties. Contains the following properties:
             	<ul>
                 	<li><b>id</b> - (<i>string/number</i>) the id of the series that will be bound to the legend </li>
                     <li><b>text</b> - (<i>string</i>) the pointer to the data value to take a text for the legend from</li>
@@ -73,33 +81,27 @@ var chart = new dhx.Chart("chart_container",{
             </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>form</b></td>
+			<td><b>form</b></td>
 			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>itemPadding</b></td>
+			<td><b>itemPadding</b></td>
 			<td>(<i>number</i>) padding between legend items</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>halign</b></td>
+			<td><b>halign</b></td>
 			<td>(<i>string</i>) the horizontal alignment of the legend block: "left"|"right"|"center"</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>valign</b></td>
+			<td><b>valign</b></td>
 			<td>(<i>string</i>) the vertical alignment of the block: "top"|"bottom"|"middle"</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>margin</b></td>
+			<td><b>margin</b></td>
 			<td>(<i>number</i>) margin between the scale and the legend</td>
 		</tr>
     </tbody>
 </table>
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/00ei3q23	Chart. Enable Legend
-https://snippet.dhtmlx.com/pgqf1yxj	Chart. Legend Position
-
-@related:
-chart/configuration_properties.md#legend
-
+[comment]: # (@related: chart/configuration_properties.md#legend)

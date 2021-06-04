@@ -1,18 +1,20 @@
 ---
-sidebar_label: getState
-title: getState
----          
+sidebar_label: getState()
+title: JavaScript Toolbar - getState Method 
+description: You can explore the getState method of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getState()
 
 @short: gets current values/states of controls
 
-@signature: getState(id?: string | number): [key: string]: string;;
+@signature: {'getState(id?: string | number): IState;'}
 
 @params:
-- id    string|number   optional, the id of a Toolbar control
+`id: string | number` - optional, the id of a Toolbar control
 
 @returns:
-- state		string|boolean|object		the value/state of the control, or an object with IDs of controls and their values/states
-
+Either a string with the value of the control, or a boolean value with the state of the control, or an object with IDs of controls and their values/states.
 
 @example:
 var state1 = toolbar.getState("search"); 
@@ -21,9 +23,10 @@ var state1 = toolbar.getState("search");
 var state2 = toolbar.getState(); 
 // -> {"search":"toolbar","edit":true,"align":"right"}
 
-
-@template: api_method
 @descr:
+
+**Related sample**: [Toolbar. Get State](https://snippet.dhtmlx.com/kvttdgad)
+
 Starting from v7.0, the method can return the value/state of the control by its id:
 
 ~~~js
@@ -39,11 +42,7 @@ var state = toolbar.getState();
 // -> {"search":"toolbar","edit":true,"align":"right"}
 ~~~
 
-
-@relatedsample: https://snippet.dhtmlx.com/kvttdgad	Toolbar. Get State
-
-@related: toolbar/common_methods.md#settinggettingvaluesandstates
-
 @changelog:
 The ability to pass the **id** parameter to the method is added in v7.0.
 
+[comment]: # (@related: toolbar/common_methods.md#settinggetting-values-and-states)

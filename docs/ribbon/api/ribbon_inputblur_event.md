@@ -1,24 +1,25 @@
 ---
 sidebar_label: inputBlur
-title: inputBlur
----          
+title: JavaScript Ribbon - inputBlur Event 
+description: You can explore the inputBlur event of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# inputBlur
 
 @short: fires when a control is blurred
 
-@signature: inputBlur: (id: string) => void;
+@signature: {'inputBlur: (id: string) => void;'}
 
 @params:
-- id 		string		the ID of a new control
+`id: string` - the ID of a new control
 
 @example:
 ribbon.events.on("InputBlur", function(id){
     console.log(id);
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/i7cfddkl	Ribbon. Events
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
 
-@related: ribbon/handling_events.md
+[comment]: # (@related: ribbon/handling_events.md)

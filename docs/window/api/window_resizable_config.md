@@ -1,26 +1,26 @@
 ---
 sidebar_label: resizable
-title: resizable
----          
+title: JavaScript Window - resizable Config 
+description: You can explore the resizable config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# resizable
 
 @short: defines whether a window can be resized
 
-@signature: resizable?: boolean;
+@signature: {'resizable?: boolean;'}
 
 @default: false
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     resizable:true
 });
 
 dhxWindow.show();
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
 
-@related: window/how_to_start.md
-window/configuration.md#resizing
-
-@relatedsample: https://snippet.dhtmlx.com/1suzi8gj	Window. Resizable Window.
+[comment]: # (@related: window/how_to_start.md window/configuration.md#resizing)

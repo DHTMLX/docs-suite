@@ -1,21 +1,22 @@
 ---
 sidebar_label: beforeDrag
-title: beforeDrag
----          
+title: JavaScript Tree - beforeDrag Event 
+description: You can explore the beforeDrag event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeDrag
 
 @short: fires before dragging of an item has started 
 
-```todoapi 
-<!-- @signature: beforeDrag: (data: {
-    start: string;
-    source: string[];
-    target: string;
-    dropPosition?: DropPosition;
-}, events: MouseEvent) => boolean; -->
-```
+@signature: {'beforeDrag: (data: IDragInfo, events: MouseEvent, ghost: HTMLElement) => void | boolean;'}
+
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
+- `ghost: HTMLElement` - an HTML element
 
 @returns:
-- result	boolean		false - to block dragging of an item, otherwise true
+Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
 tree.events.on("BeforeDrag", function(data, events) {
@@ -23,39 +24,29 @@ tree.events.on("BeforeDrag", function(data, events) {
     return false;
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+
 The data object can contain the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>start</b></td>
+			<td><b>start</b></td>
 			<td>(<i>string</i>) the id of an item, from which the dragging process has started</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>source</b></td>
+			<td><b>source</b></td>
 			<td>(<i>string[]</i>) an array with ids of dragged items</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the id of a potential target item</td>
 		</tr>
     </tbody>
 </table>
 
-
 @changelog: added in v7.0
 
-@relatedapi:
-tree/api/tree_afterdrag_event.md
-tree/api/tree_afterdrop_event.md
-tree/api/tree_beforedrop_event.md
-tree/api/tree_canceldrop_event.md
-tree/api/tree_candrop_event.md
-tree/api/tree_dragin_event.md
-tree/api/tree_dragout_event.md
-tree/api/tree_dragstart_event.md
-
-[Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+[comment]: # (@relatedapi: tree/api/tree_afterdrag_event.md tree/api/tree_afterdrop_event.md tree/api/tree_beforedrop_event.md tree/api/tree_canceldrop_event.md tree/api/tree_candrop_event.md tree/api/tree_dragin_event.md tree/api/tree_dragout_event.md tree/api/tree_dragstart_event.md)

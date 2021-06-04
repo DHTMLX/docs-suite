@@ -1,16 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Layout - Initialization 
+description: You can explore the initialization of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To add dhtmlxLayout into an application, you need to take the following simple steps:
 
 - [Download the Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Define Layout structure](#definelayoutstructure)
-- [Initialize Layout](#initializelayout) with the object constructor
-
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Define Layout structure](#define-layout-structure)
+- [Initialize Layout](#initialize-layout) with the object constructor
 
 ~~~html
 <!DOCTYPE html>
@@ -42,10 +44,9 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ls3cbcys	Layout. Basic Initialization}}
+**Related sample**: [Layout. Basic Initialization](https://snippet.dhtmlx.com/ls3cbcys)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -57,9 +58,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create a container
--------------------
+## Create a container
 
 Add a container for the Layout and give it an id, e.g. "layout_container":
 
@@ -67,8 +66,7 @@ Add a container for the Layout and give it an id, e.g. "layout_container":
 <div id="layout_container"></div>
 ~~~
 
-Define Layout structure
-------------------
+## Define Layout structure
 
 Layout consists of a set of cells arranged either into rows or into columns. The structure of a layout can be rather complex, since there can also be nested rows and columns.
 
@@ -103,60 +101,27 @@ var	cols = [
 ]
 ~~~
 
-Initialize Layout
----------------------
+## Initialize Layout
 
 Initialize Layout with the `dhx.Layout` object constructor. The constructor takes two parameters:
 
 - the HTML object on the page that serves as the layout container
-- a configuration object which (besides config options listed below) contains the structure of Layout 
+- a configuration object which contains the structure of Layout 
 
 ~~~js
 var layout = new dhx.Layout("layout_container", {cols});
 ~~~
 
+### Configuration properties
 
-### Configuration properties:
+#### Layout object
 
-### Cell object
+The properties of the configuration object of Layout allow you to define the structure of Layout.
 
-todotw скорее всего можно просто сослаться на API
-{{api
+See the list of Layout properties [here](layout/api/api_overview.md#layout-properties).
 
-- layout/api/layout_align_config.md - sets the alignment of content inside a cell
-- layout/api/layout_collapsable_config.md  - defines whether a cell can be collapsed 
-- layout/api/layout_collapsed_config.md -  defines whether a cell is collapsed 
-- layout/api/layout_css_config.md - the name of a CSS class applied to a cell
-- layout/api/layout_gravity_config.md - sets the "weight" of a cell in relation to other cells placed in the same row and within one parent
-- layout/api/layout_header_config.md - the text of the header of a cell
-- layout/api/layout_headerheight_config.md - sets the height of a Layout cell
-- layout/api/layout_headericon_config.md - an <a href = "https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> used in the header of a cell
-- layout/api/layout_headerimage_config.md - an image used in the header of a cell
-- layout/api/layout_height_config.md - sets the height of a cell
-- layout/api/layout_hidden_config.md - defines whether a cell is hidden
-- layout/api/layout_html_config.md - sets HTML content for a cell
-- layout/api/layout_id_config.md - the id of a cell
-- layout/api/layout_maxheight_config.md - the maximal height to be set for a cell
-- layout/api/layout_maxwidth_config.md - the maximal width to be set for a cell
-- layout/api/layout_minheight_config.md - the minimal height to be set for a cell
-- layout/api/layout_minwidth_config.md - the minimal width to be set for a cell
-- layout/api/layout_on_config.md - adds handlers to DOM events of a cell
-- layout/api/layout_padding_config.md - defines the distance between a cell and the border of layout 
-- layout/api/layout_resizable_config.md - defines whether a cell can be resized
-- layout/api/layout_type_config.md - defines the type of borders between cells inside a layout
-- layout/api/layout_width_config.md - sets the width of a cell
+#### Cell object
 
-}}
+There is also a set of properties you can specify for a Layout cell to configure it according to your needs. 
 
-### Layout object
-
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- layout/api/layout_rows_config.md - an array of rows objects
-- layout/api/layout_cols_config.md - an array of columns objects
-
-}}
-
-
-
+You will find the detailed information on configuration options of the cell object in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.

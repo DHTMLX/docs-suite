@@ -1,27 +1,24 @@
 ---
-sidebar_label: scroll
-title: scroll
----          
+sidebar_label: scroll()
+title: JavaScript Grid - scroll Method 
+description: You can explore the scroll method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# scroll()
 
 @short: scrolls a grid according to specified coordinates
 
-@signature: scroll(x?: number, y?: number): void;
+@signature: {'scroll(x?: number, y?: number): void;'}
 
 @params:
-- x		number		the X coordinate
-- y		number		the Y coordinate
+- `x: number` - the X coordinate
+- `y: number` - the Y coordinate
 
 @example:
 grid.scroll(75,230);
 
-
-@template: api_method
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/usu1rnpu	Grid. Controlling Scroll Behavior
+**Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
-@related: grid/usage.md#controllingscrollbehavior
-
-@changelog:
-
-
+[comment]: # (@related: grid/usage.md#controlling-scroll-behavior)

@@ -1,7 +1,10 @@
 ---
 sidebar_label: API overview
-title: List API overview
+title: JavaScript List - API Overview 
+description: You can explore the API of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# List API overview
 
 ## Methods
 
@@ -15,8 +18,8 @@ title: List API overview
 | [](list/api/list_setfocus_method.md)         | @getshort(list/api/list_setfocus_method.md)         |
 
 :::info important
-- Use [DataCollection methods](data_collection/index.md) to work with data. 
-- А для работы с выделением (?) используйте методы Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the methods of DataCollection](data_collection/index.md) to work with data. 
+- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of List items. 
 :::
 
 ## Events
@@ -43,8 +46,8 @@ title: List API overview
 | [](list/api/list_itemrightclick_event.md)     | @getshort(list/api/list_itemrightclick_event.md)  |
 
 :::info important
-- Use [DataCollection events](data_collection/index.md#events) to work with data. 
-- А для работы с выделением (?) используйте события Selection. (todo свести Selection разных виджетов в таблицу, а потом попробовать вынести в Helpers c третьей колонкой для какого виджета применимо)
+- Use [the events of DataCollection](data_collection/index.md#events) to work with data of List. 
+- Apply [the events of Selection](selection/index.md#events) to control the selection of List items. 
 :::
 
 ## Properties
@@ -55,7 +58,6 @@ title: List API overview
 | [](list/api/list_data_config.md)               | @getshort(list/api/list_data_config.md)               |
 | [](list/api/list_dragcopy_config.md)           | @getshort(list/api/list_dragcopy_config.md)           |
 | [](list/api/list_dragmode_config.md)           | @getshort(list/api/list_dragmode_config.md)           |
-| [](list/api/list_dropbehaviour_config.md)      | @getshort(list/api/list_dropbehaviour_config.md)      |
 | [](list/api/list_editable_config.md)           | @getshort(list/api/list_editable_config.md)           |
 | [](list/api/list_eventhandlers_config.md)      | @getshort(list/api/list_eventhandlers_config.md)      |
 | [](list/api/list_height_config.md)             | @getshort(list/api/list_height_config.md)             |

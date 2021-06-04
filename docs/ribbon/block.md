@@ -1,13 +1,16 @@
 ---
 sidebar_label: Block
-title: Block
----          
+title: JavaScript Ribbon - Block 
+description: You can explore the Block of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Block
 
 The Block control is used for grouping related controls.
- 
+
 ![DHX Ribbon Block groups controls](../assets/ribbon/ribbon_block.png)
 
-{{editor	https://snippet.dhtmlx.com/yr8oepq8	Ribbon. Blocks}}
+**Related sample**: [Ribbon. Blocks](https://snippet.dhtmlx.com/yr8oepq8)
 
 ## Creating a Block
 
@@ -27,7 +30,6 @@ This is the basic syntax of a block with two buttons in a row:
 ### Properties
 
 You can provide the [following properties](ribbon/api/api_block_properties.md) in the configuration object of a Block control.
-
 
 ## Adding a Block
 
@@ -59,23 +61,22 @@ ribbon.data.add({
 
 **add()** in this case receives three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>the configuration of the added item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>defines the position of the item in the block (-1 will place it after the last control)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>blockId</b></td>
+			<td><b>blockId</b></td>
 			<td>the ID of the block</td>
 		</tr>
     </tbody>
 </table>
-
 
 ## Adding HTML content
 
@@ -94,7 +95,7 @@ You can add any custom HTML content to an item of the block with the help of the
 };
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3djaib6o	Ribbon. Item HTML Content}}
+**Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
 
 ## Nesting blocks
 
@@ -139,7 +140,7 @@ ribbon.show(id);
 ribbon.hide(id);
 ~~~
 
-## Disabling/enabling blocks 
+## Disabling/enabling blocks
 
 A block can be enabled/disabled:
 
@@ -147,5 +148,3 @@ A block can be enabled/disabled:
 ribbon.enable(id);
 ribbon.disable(id);
 ~~~
-
-

@@ -1,15 +1,18 @@
 ---
-sidebar_label: show
-title: show
----          
+sidebar_label: show()
+title: JavaScript Window - show Method 
+description: You can explore the show method of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# show()
 
 @short: shows a window on a page
 
-@signature: show(left?: number, top?: number): void;
+@signature: {'show(left?: number, top?: number): void;'}
 
 @params:
-- left 		number 	optional, the left coordinate of a window position
-- top 		number 	optional, the top coordinate of a window position
+- `left: number` - optional, the left coordinate of a window position
+- `top: number` - optional, the top coordinate of a window position
 
 @example:
 dhxWindow.show();
@@ -17,19 +20,10 @@ dhxWindow.show();
 // showing a window at a specified position
 dhxWindow.show("550", "230");
 
-
-@template: api_method
 @descr:
 
-@related:
-window/how_to_start.md
-window/usage.md#showinghidingwindow
+**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
-@relatedapi:
-window/api/window_hide_method.md
+[comment]: # (@related: window/how_to_start.md window/usage.md#showinghiding-window)
 
-
-@changelog:
-
-
-@relatedsample: https://snippet.dhtmlx.com/ee2vf9xw	Window. Showing/Hiding Window
+[comment]: # (@relatedapi: window/api/window_hide_method.md)

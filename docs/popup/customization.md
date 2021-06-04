@@ -1,9 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
-Styling 
------------
+title: JavaScript Popup - Customization 
+description: You can explore the customization of Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Customization
+
+## Styling
 
 There is a possibility to make changes in the look and feel of a popup. 
 
@@ -35,4 +38,4 @@ var dhxPopup = new dhx.Popup({
 popup.show();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/rd8zfw5h	Popup. Custom Css}}
+**Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)

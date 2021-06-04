@@ -1,13 +1,14 @@
 ---
 sidebar_label: Work with Selection Object
-title: Work with Selection Object
-description: description
----          
+title: JavaScript Grid - Work with Selection Object 
+description: You can explore how to work with Selection Object of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Work with Selection Object
 
 You can manipulate with Grid cells via the API of the selection object. It is possible to get the object of one or more selected cells or rows, to set selection as to a single row or cell as to multiple rows or cells. The selection object also allows removing selection from previously selected cells.
 
-Enabling/Disabling Selection object
----------------------------------
+## Enabling/Disabling Selection object
 
 Starting from v7.0, you can activate selection of cells via the [](grid/api/selection/selection_enable_method.md) method of the selection object.
 
@@ -21,28 +22,27 @@ To disable selection of cells in Grid, make use of the [](grid/api/selection/sel
 grid.selection.disable();
 ~~~
 
-Setting selection to cells
------------------------------
+## Setting selection to cells
 
 You can set selection to one or more rows or cells using the [setCell()](grid/api/selection/selection_setcell_method.md) method of the selection object. The method takes the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+			<td><b>row</b></td>
 			<td>(<i>object|string</i>) an object with a cell to be selected or the id of a row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+			<td><b>column</b></td>
 			<td>(<i>object|string</i>) the config of a column or its id</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>ctrlUp</b></td>
-			<td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="https://docs.dhtmlx.com/suite/grid__configuration.html#multipleselectionofgridcells">for multiselection mode</a>)</td>
+			<td><b>ctrlUp</b></td>
+			<td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../grid/configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>shiftUp</b></td>
-			<td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="https://docs.dhtmlx.com/suite/grid__configuration.html#multipleselectionofgridcells">for multiselection mode</a>)</td>
+			<td><b>shiftUp</b></td>
+			<td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../grid/configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
 		</tr>
     </tbody>
 </table>
@@ -66,7 +66,7 @@ var column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 {{note The **multiselection** property is disabled.}}
 
@@ -89,7 +89,7 @@ grid.selection.setCell(grid.data.getId(1),"netChange", true, false);
 grid.selection.setCell(grid.data.getId(3),"netChange", true, false);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 It is also possible to select a range of cells at once:
 
@@ -102,7 +102,7 @@ grid.selection.setCell(grid.data.getId(1),"yearlyChange");
 grid.selection.setCell(grid.data.getId(3),"destiny", false, true);
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
 {{note Use the **selection:"rows"** property to be able to operate rows. }}
 
@@ -111,20 +111,18 @@ To make the process of selecting cells more flexible, you can apply the related 
 - [afterSelect](grid/api/selection/selection_afterselect_event.md)
 - [beforeSelect](grid/api/selection/selection_beforeselect_event.md)
 
-
-Removing selection
--------------------
+## Removing selection
 
 Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [](grid/api/selection/selection_removecell_method.md) method of the selection object. The method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>rowId</b></td>
+			<td><b>rowId</b></td>
 			<td>(<i>string|number</i>) optional, the id of a row</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>colId</b></td>
+			<td><b>colId</b></td>
 			<td>(<i>string|number</i>) optional, the id of a column</td>
 		</tr>
     </tbody>
@@ -141,14 +139,12 @@ grid.selection.removeCell(rowId);
 grid.selection.removeCell(rowId, colId);
 ~~~
 
-
 To make the process of unselecting cells more flexible, you can apply the related events of the selection object:
 
 - [afterUnSelect](grid/api/selection/selection_afterunselect_event.md) 
 - [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md)
 
-Getting object of selected cells
--------------------------------
+## Getting object of selected cells
 
 To get the object of a selected Grid cell, use the [getCell()](grid/api/selection/selection_getcell_method.md) method of the selection object:
 

@@ -1,21 +1,23 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
-description: description
----          
+title: JavaScript List - Event Handling 
+description: You can explore the event handling of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
 The user can add any user-defined handler to any of the available events. To do this, the user can use the **list.events.on()** method with the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>evName</b></td>
+			<td><b>evName</b></td>
 			<td>name of the event</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>evHandler</b></td>
+			<td><b>evHandler</b></td>
 			<td>user-defined event handler</td>
 		</tr>
     </tbody>
@@ -33,7 +35,7 @@ Several handlers can be attached to one and the same event, and all of them will
 The names of the events are case-insensitive.
 }}
 
-{{editor	https://snippet.dhtmlx.com/iwt1yd61	List. List Events}}
+**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
 
 ## Detaching event listeners
 
@@ -56,6 +58,6 @@ list.events.fire("name",args);
 // where args is an array of arguments
 ~~~
 
-## List of supported events 
+## List of supported events
 
-You can find the full list of List events in the [API Reference](list/api/refs/list_events.md).
+You can find the full list of List events in the [API Reference](list/api/api_overview.md#events).

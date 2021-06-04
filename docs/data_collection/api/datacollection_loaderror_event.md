@@ -1,23 +1,26 @@
 ---
 sidebar_label: loadError
-title: loadError
----          
+title: JavaScript DataCollection - loadError Event 
+description: You can explore the loadError event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# loadError
 
 @short: fires when loading of data fails
-	
+
+@signature: {'loadError: (response: any) => void;'}
+
 @params:
-- error			string,object		info about the error
+`response: string | object` - info about the error
 
 @example:
-data.events.on("LoadError", function(error){
+component.data.events.on("LoadError", function(error){
 	// your code here
 });
 
-
-@template:	api_event
 @descr:
-The **error** parameter can be either a string with the text of an error, or an object with two properties:
+
+The **response** parameter can be either a string with the text of an error, or an object with two properties:
 
 - status - the code of an error
 - text - the text of an error
-	

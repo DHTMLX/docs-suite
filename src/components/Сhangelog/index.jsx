@@ -4,7 +4,10 @@ import cssstyles from './styles.module.scss';
 
 const Changelog = ({ children }) => {
   return (
-    <p className={cssstyles.changelog}>{children}</p>
+    <div>
+      <h4>Change log:</h4>
+      <p className={cssstyles.changelog}>{children}</p>
+    </div>
   );
 };
 

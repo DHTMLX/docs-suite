@@ -1,27 +1,23 @@
 ---
-sidebar_label: toggle
-title: toggle
----          
+sidebar_label: toggle()
+title: JavaScript Tree - toggle Method 
+description: You can explore the toggle method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# toggle()
 
 @short: opens/closes a tree item by id
 
-@signature: toggle(id: string): void;
+@signature: {'toggle(id: string): void;'}
 
 @params:
-- id	string		the id of a tree item to toggle
+`id: string` - the id of a tree item to toggle
 
 @example:
 tree.toggle("history");
 
-
-@template: api_method
 @descr:
 
+**Related sample**: [Tree. Toggle Item](https://snippet.dhtmlx.com/qjk56co2)
 
-@related: tree/work_with_tree.md#expandingcollapsingitems
-
-@relatedsample: https://snippet.dhtmlx.com/qjk56co2	Tree. Toggle Item
-
-@changelog:
-
-
+[comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)

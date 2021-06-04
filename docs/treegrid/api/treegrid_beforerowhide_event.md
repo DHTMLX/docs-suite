@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeRowHide
-title: beforeRowHide
----          
+title: JavaScript TreeGrid - beforeRowHide Event 
+description: You can explore the beforeRowHide event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeRowHide
 
 @short: fires before a row is hidden
 
-@signature: beforeRowHide: (row: object) => boolean | void;
+@signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
 
-@params: 
-- row   object  an object with a row configuration
+@params:
+`row: object` - an object with a row configuration
 
 @returns:
-- result	boolean		false - to prevent a row from being hidden, otherwise true
+Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
 treegrid.events.on("BeforeRowHide", function(row){
@@ -19,9 +22,8 @@ treegrid.events.on("BeforeRowHide", function(row){
     return false;
 });
 
-@template: api_event
 @descr:
 
-@changelog: added in v7.0
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
-[TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+@changelog: added in v7.0

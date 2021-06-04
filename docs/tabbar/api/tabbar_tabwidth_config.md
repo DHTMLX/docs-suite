@@ -1,27 +1,28 @@
 ---
 sidebar_label: tabWidth
-title: tabWidth
----          
+title: JavaScript Tabbar - tabWidth Config 
+description: You can explore the tabWidth config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# tabWidth
 
 @short: sets the width of a tab
 
-@signature: tabWidth?: number | string;
+@signature: {'tabWidth?: number | string;'}
 
 @default: 200
 
-@example: 
+@example:
 var tabbar = new dhx.Tabbar("tabbar_container", {
     tabWidth: 120
 });
 
-@template:	api_config
-@descr: 
+@descr:
 
-@related: tabbar/configuring_tabbar.md#sizeoftabs
-tabbar/init.md#definetabbarstructure
-
-@relatedsample: https://snippet.dhtmlx.com/yy841z3j	Tabbar. Tab Size
+**Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 
 The "string" type is added in v7.0.
+
+[comment]: # (@related: tabbar/configuring_tabbar.md#size-of-tabs tabbar/init.md#define-tabbar-structure)

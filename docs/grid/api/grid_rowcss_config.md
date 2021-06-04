@@ -1,20 +1,16 @@
 ---
 sidebar_label: rowCss
-title: rowCss
-description: description
----          
+title: JavaScript Grid - rowCss Config 
+description: You can explore the rowCss config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# rowCss
 
 @short: sets style for a row
 
-@signature: 
-rowCss?: (row: IRow) => string;
-rowCss?: (row: object) => string;
+@signature: {'rowCss?: (row: IRow) => string;'}
 
-
-@type: function
-
-@example: 
+@example:
 <style>
 	.my_custom_row {
 		background: coral;
@@ -27,12 +23,10 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
+
 The function takes the id of a row as a parameter and returns a string with the name of a CSS class.
 
-@relatedsample: https://snippet.dhtmlx.com/2dxtwf9n	Grid. Custom Row Style
-
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#rowstyle
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#row-style)

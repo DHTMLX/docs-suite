@@ -1,26 +1,23 @@
 ---
-sidebar_label: get
-title: get
----          
+sidebar_label: get()
+title: JavaScript CSS Manager - get Method 
+description: You can explore the get method of CSS Manager in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# get()
 
 @short: returns a list of styles by the class name
 
-@params:
-- className      string     the name of the class
+@signature: {'get(className: string): ICssList;'}
 
+@params:
+`className: string` - the name of the class
 
 @returns:
-
-- params      object     an object with a list of the class styles
+An object with a list of the class styles.
 
 @example:
-var StyleList =  cssManager.get("myCustomClass");
+const StyleList =  dhx.cssManager.get("myCustomClass");
 // -> { color: "black", width: "200px" }
 
-@template:	api_method
-
 @descr:
-
-
-
-

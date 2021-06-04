@@ -1,10 +1,12 @@
 ---
 sidebar_label: Work with Sidebar
-title: Work with Sidebar
----          
+title: JavaScript Sidebar - Work with Sidebar 
+description: You can explore how to work with Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Adding a tooltip to a control
---------------------
+# Work with Sidebar
+
+## Adding a tooltip to a control
 
 You can attach a tooltip to a control. For this you need to provide the **tooltip** property with the tooltip text in the control object before the sidebar initialization:
 
@@ -16,8 +18,7 @@ You can attach a tooltip to a control. For this you need to provide the **toolti
 }
 ~~~
 
-Hiding and showing controls
------------------
+## Hiding and showing controls
 
 You can show or hide controls by their IDs. Pass them to the corresponding methods - [show()](sidebar/api/sidebar_show_method.md) and [hide()](sidebar/api/sidebar_hide_method.md):
 
@@ -26,7 +27,7 @@ sidebar.hide(id); // hides a control
 sidebar.show(id); // shows a control
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5hsowdoy	Sidebar. Show/Hide}}
+**Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
 
 Starting from v7.0, it is possible to hide/show all Sidebar controls on the page at once by using the methods without parameters:
 
@@ -37,8 +38,7 @@ sidebar.hide();
 sidebar.show();
 ~~~
 
-Expanding and collapsing Sidebar
-----------------------------------
+## Expanding and collapsing Sidebar
 
 It is possible to expand/collapse a sidebar using two corresponding methods - [expand()](sidebar/api/sidebar_expand_method.md) and [collapse()](sidebar/api/sidebar_collapse_method.md):
 
@@ -47,10 +47,9 @@ sidebar.expand(); // expands a sidebar
 sidebar.collapse(); // collapses a sidebar
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ydlltdq6	Sidebar. Collapse/Expand}}
+**Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
 
-Checking if Sidebar is collapsed
-------------------------------
+## Checking if Sidebar is collapsed
 
 To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/api/sidebar_iscollapsed_method.md) method of the Sidebar API. The method returns *true*, if a sidebar is collapsed, and *false* if it's expanded.
 
@@ -58,9 +57,7 @@ To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/a
 sidebar.isCollapsed(); // -> true/false
 ~~~
 
-
-Disabling and enabling controls
----------------------
+## Disabling and enabling controls
 
 You can disable or enable controls. The related methods - [enable()](sidebar/api/sidebar_enable_method.md) and [disable()](sidebar/api/sidebar_disable_method.md) - take the IDs of controls as parameters:
 
@@ -69,7 +66,7 @@ sidebar.disable(id); // disables a control
 sidebar.enable(id);  // enables a control
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable}}
+**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
 Starting from v7.0, it is possible to disable/enable all Sidebar controls on the page at once by using the methods without parameters:
 
@@ -80,15 +77,14 @@ sidebar.disable();
 sidebar.enable();
 ~~~
 
-Checking if a sidebar item is disabled
--------------------------------------
+## Checking if a sidebar item is disabled
 
 To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/sidebar_isdisabled_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a sidebar item</td>
 		</tr>
     </tbody>
@@ -98,23 +94,22 @@ To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/
 sidebar.isDisabled("1"); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ea9fywne	Sidebar. Enable/Disable}}
+**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
 
-Selecting/Unselecting an item
------------------------------------------
+## Selecting/Unselecting an item
 
 ### Selecting a sidebar item
 
 To select a particular Sidebar item, make use of the [select()](sidebar/api/sidebar_select_method.md) method of Sidebar. The method takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of an item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>unselect</b></td>
+			<td><b>unselect</b></td>
 			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
 		</tr>
     </tbody>
@@ -124,7 +119,7 @@ To select a particular Sidebar item, make use of the [select()](sidebar/api/side
 sidebar.select("categoryPost");
 ~~~
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 ### Unselecting a sidebar item
 
@@ -142,17 +137,16 @@ It is also possible to remove selection from all previously selected items of Si
 sidebar.unselect();
 ~~~
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-Checking if a sidebar item is selected
--------------------------------------
+## Checking if a sidebar item is selected
 
 To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/sidebar_isselected_method.md) method. The method takes one parameter:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) an id of a sidebar item</td>
 		</tr>
     </tbody>
@@ -163,10 +157,9 @@ To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/
 sidebar.isSelected("categoryPost"); // -> returns true/false
 ~~~
 
-[Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-Getting selected items
----------------------------
+## Getting selected items
 
 To get the selected items, call the [getSelected()](sidebar/api/sidebar_getselected_method.md) method. The method returns an array of IDs of selected items:
 
@@ -174,8 +167,7 @@ To get the selected items, call the [getSelected()](sidebar/api/sidebar_getselec
 sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
 
-Toggling Sidebar
----------------
+## Toggling Sidebar
 
 You can collapse and expand a sidebar with the help of the [toggle()](sidebar/api/sidebar_toggle_method.md) method as easy as that:
 
@@ -183,31 +175,28 @@ You can collapse and expand a sidebar with the help of the [toggle()](sidebar/ap
 sidebar.toggle();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wll2h9nd	Sidebar. Toggle}}
+**Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
+## Using Tree collection API
 
-Using Tree collection API
----------------
-
-You can manipulate the controls of Sidebar with the help of the [Tree collection API](tree_collection/api/refs/treecollection.md). 
-
+You can manipulate the controls of Sidebar with the help of the [Tree collection API](tree_collection/index.md). 
 
 ### Adding new controls into Sidebar
 
 It is possible to add more controls into the initialized Sidebar on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add a control at</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
 		</tr>
     </tbody>
@@ -226,22 +215,22 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jcnw95ac	Sidebar. Data Add}}
+**Related sample**: [Sidebar. Data Add](https://snippet.dhtmlx.com/jcnw95ac)
 
-Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#jsonformattemplates).
+Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#json-format-templates).
 
 ### Updating config of controls
 
 You can change config options of the control via the **update()** method of Tree Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>the id of the control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>an object with new configuration of the control</td>
 		</tr>
     </tbody>
@@ -255,7 +244,7 @@ sidebar.data.update("add", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/p1zu63le	Sidebar. Data Update}}
+**Related sample**: [Sidebar. Data Update](https://snippet.dhtmlx.com/p1zu63le)
 
 ### Removing controls from Sidebar
 
@@ -265,7 +254,7 @@ To remove a control, make use of the **remove()** method of Tree Collection. Pas
 sidebar.data.remove("control-id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ecp3etuf	Sidebar. Data Remove}}
+**Related sample**: [Sidebar. Data Remove](https://snippet.dhtmlx.com/ecp3etuf)
 
 ### Rearranging controls
 
@@ -275,7 +264,4 @@ You can move menu controls to different positions with the **move()** method of 
 sidebar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}}
-
-@todo:
-check 
+{{note Check the full list of [Tree collection API](tree_collection/index.md).}} 

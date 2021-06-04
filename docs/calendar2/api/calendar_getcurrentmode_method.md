@@ -20,14 +20,12 @@ export declare type ViewMode = "calendar" | "year" | "month" | "timepicker";
 var mode = calendar.getCurrentMode(); // -> "calendar"
 
 
-@template: api_method
+
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/fadykqoc	Calendar. Get Current Mode
+**Related sample**: [Calendar. Get Current Mode](https://snippet.dhtmlx.com/fadykqoc)
 
 @related: calendar/operating_calendar.md#gettingcurrentmode
 
-
-@changelog:
 
 

@@ -1,8 +1,10 @@
 ---
 sidebar_label: Customization
-title: Customization
-description: description
----          
+title: JavaScript Form - Customization 
+description: You can explore the customization of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Customization
 
 ## Styling Form
 
@@ -22,7 +24,7 @@ There is a possibility to make changes in the look and feel of a form. For this 
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](form/api/form_css_property.md) property in the Form configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](form/api/form_css_config.md) property in the Form configuration:
 
 ~~~js
 var form = new dhx.Form({
@@ -30,14 +32,13 @@ var form = new dhx.Form({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wnscgb50	Form. Form Custom Styles}}
-
+**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
 
 ## Styling Form controls
 
 ![](../assets/form/custom_styles.png)
 
-You can modify styling of Form controls as well using the **css** option inside the object of a [related control](form/controls_list.md).
+You can modify styling of Form controls as well using the **css** option inside the object of a related control.
 
 ~~~html
 <style>
@@ -45,7 +46,6 @@ You can modify styling of Form controls as well using the **css** option inside 
 		background: #fff;
 	}
 </style>
-
 
 var form = new dhx.Form("form-sample", {
 	css:"bg-gray",
@@ -66,4 +66,4 @@ var form = new dhx.Form("form-sample", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wnscgb50	Form. Form Custom Styles}}
+**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)

@@ -1,15 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Tree - Initialization 
+description: You can explore the initialization of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
 - [Download the Tree package](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize Tree](#initializetree) with the object constructor
-- [Load data into Tree](#loaddataintotree)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize Tree](#initialize-tree) with the object constructor
+- [Load data into Tree](#load-data-into-tree)
 
 ~~~html
 <!DOCTYPE html>
@@ -31,10 +34,9 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into the header of the created file. The Tree component can be used standalone or as a part of the Suite library.
 
@@ -48,7 +50,6 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into 
 <link rel="stylesheet" href="../../codebase/tree.css">
 ~~~
 
-
 **If you use dhtmlxTree as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
 
 - suite.js
@@ -59,10 +60,7 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into 
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
 
-
-
-Create a container 
------------------
+## Create a container
 
 Add a container for Tree and give it an id, for example "tree_container":
 
@@ -70,13 +68,12 @@ Add a container for Tree and give it an id, for example "tree_container":
 <div id="tree_container"></div>
 ~~~
 
-Initialize Tree
-----------------------
+## Initialize Tree
 
 Initialize Tree with the `dhx.Tree` object constructor. The constructor has two parameters:
 
 - the HTML container for Tree,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxTree
@@ -85,34 +82,13 @@ var tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-There is a set of properties you can specify for Tree to optimize its configuration for your needs. Read the details below.
-
-
 ### Configuration properties
 
+There is a set of properties you can specify for Tree to optimize its configuration for your needs.
 
-You can specify the following properties in the configuration object of List:
+See the detailed information on configuration properties of Tree in the [Tree API overview](tree/api/api_overview.md#properties) article.
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- tree/api/tree_autoload_config.md - defines that the structure of a tree is being built while opening items
-- tree/api/tree_checkbox_config.md - adds checkboxes to tree items
-- tree/api/tree_css_config.md - adds a CSS class(es) to the component
-- tree/api/tree_data_config.md - sets a data set for a tree
-- tree/api/tree_dragcopy_config.md - defines that an item is copied to a target during drag-n-drop
-- tree/api/tree_dragmode_config.md - enables drag-n-drop in Tree
-- tree/api/tree_dropbehaviour_config.md - defines the behaviour of a dragged item
-- tree/api/tree_editable_config.md - enables editing of Tree items on a double-click
-- tree/api/tree_icon_config.md - allows adding custom icons for tree items
-- tree/api/tree_keynavigation_config.md - enables key navigation in a tree
-- tree/api/tree_rootid_config.md - sets an id for the root element
-- tree/api/tree_selection_config.md - enables selection of Tree items
-
-}}
-
-Load data into Tree
----------------------
+## Load data into Tree
 
 Finally, you are to load the tree with data. You can load inline or external data into the tree.
 
@@ -126,7 +102,7 @@ var tree = new dhx.Tree("tree_container",{
 tree.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
 
 - to load data from an external file, use the **load()** method of the Tree Collection object:
 
@@ -138,4 +114,4 @@ var tree = new dhx.Tree("tree_container",{
 tree.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/oz4jd5hc	Tree. Basic Initialization}}
+**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)

@@ -1,18 +1,20 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript Colorpicker - Initialization 
+description: You can explore the initialization of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 There are two ways of initializing dhtmlxColorPicker: inside a container or inside a popup. Both ways are described below in detail.
 
 In general, to create dhtmlxColorPicker on a page, you need to take the following simple steps:
 
 - [Download the dhtmlxColorPicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Initialize ColorPicker](#initializecolorpicker) with the object constructor    
-- [Set initially selected color (optional)](#selectinitialcoloroptional)
-    
-   
+- [Include source files](#include-source-files)
+- [Initialize ColorPicker](#initialize-colorpicker) with the object constructor
+- [Set initially selected color (optional)](#select-initial-color-optional)
+
 ~~~html
 <!DOCTYPE html>
 <html>
@@ -33,10 +35,9 @@ In general, to create dhtmlxColorPicker on a page, you need to take the followin
 </html>
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ezk8rk4m	Colorpicker. Basic Initialization}}
+**Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
   
-Include source files 
------------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -48,9 +49,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Initialize ColorPicker
-----------------------
+## Initialize ColorPicker
 
 You can initialize ColorpIcker in a container or in a popup.
 
@@ -64,7 +63,7 @@ In this case you initialize ColorPicker with the `dhx.Colorpicker` object constr
 <div id="colorpicker_container"></div>
 ~~~
 
-- an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js
 // creating dhtmlxColorPicker
@@ -73,12 +72,11 @@ var colorpicker = new dhx.ColorPicker("colorpicker_container",{
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/ezk8rk4m	Colorpicker. Basic Initialization}}
-
+**Related sample**: [Colorpicker. Basic Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
 ### Initialization in a popup
 
-This variant pressupposes that you create a popup first and then attach a colorpicker into it. 
+This variant presupposes that you create a popup first and then attach a colorpicker into it. 
 
 - use corresponding object constructors to create a colorpicker and a popup objects. Note that in this case *null* is used instead of container for ColorPicker:
 
@@ -87,46 +85,31 @@ var colorpicker = new dhx.Colorpicker(null, { customColors: ["#f2f2f2"] });
 var popup = new dhx.Popup();
 ~~~
 
-- attach the colorpicker to the popup using the [](popup/api/popup_attach_method.md) method of Popup:
+- attach the colorpicker to the popup using the [](../popup/api/popup_attach_method.md) method of Popup:
 
 ~~~js
 popup.attach(colorpicker);
 ~~~
 
-- use the [](popup/api/popup_show_method.md) / [](popup/api/popup_hide_method.md) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
+- use the [](../popup/api/popup_show_method.md) and [hide](../popup/api/popup_hide_method) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
 
 ~~~js
 popup.show("showButton");
 
 var colorExample = document.querySelector(".dhx_color-sample");
-	colorpicker.events.on("colorChange", function (color) {
-		colorExample.style.backgroundColor = color;
-		popup.hide();
+colorpicker.events.on("colorChange", function (color) {
+	colorExample.style.backgroundColor = color;
+	popup.hide();
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/kw3e0h4j	Colorpicker. Colorpicker Inside Popup}}
+**Related sample**: [Colorpicker. Colorpicker Inside Popup](https://snippet.dhtmlx.com/kw3e0h4j)
 
 ### Configuration properties
 
-todotw скорее всего можно просто сослаться на API
-{{api
+The detailed information on ColorPicker configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
 
-- colorpicker/api/colorpicker_css_config.md - adds CSS classes for the component
-- colorpicker/api/colorpicker_customcolors_config.md - shows a section for custom colors in the bottom part of the colorpicker
-- colorpicker/api/colorpicker_grayshades_config.md - defines whether the section with gray shades is displayed in the palette
-- colorpicker/api/colorpicker_mode_config.md - specifies the mode of displaying a colorpicker: "palette", "picker"
-- colorpicker/api/colorpicker_palette_config.md - contains arrays of colors you want to be shown in a colorpicker
-- colorpicker/api/colorpicker_paletteonly_config.md - defines whether ColorPicker is shown only in the palette mode
-- colorpicker/api/colorpicker_pickeronly_config.md - defines whether ColorPicker is shown only in the picker mode
-- colorpicker/api/colorpicker_width_config.md - sets the width of ColorPicker
-
-}}
-
-The detailed information on configuration options can be found in the [](colorpicker/configuration.md) article.
-
-Select initial color (optional)
-----------------
+## Select initial color (optional)
 
 You can specify the color that should be selected in the palette after ColorPicker initialization with the help of the [](colorpicker/api/colorpicker_setvalue_method.md) method:
 
@@ -137,4 +120,4 @@ var colorpicker = new dhx.ColorPicker({
 colorpicker.setValue("#BDF0E9");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/h6oc5qsq	Colorpicker. Set Value}}
+**Related sample**: [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)

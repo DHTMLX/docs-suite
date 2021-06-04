@@ -9,12 +9,12 @@ title: dateFormat
 
 @default: "%d/%m/%y"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    dateFormat:"%d.%m.%Y"
 });
 
-@template:	api_config
+
 @descr: 
 dhtmlxCalendar uses the following characters for setting a date format:
 
@@ -45,7 +45,7 @@ dhtmlxCalendar uses the following characters for setting a date format:
 @relatedapi:
 calendar/api/calendar_setvalue_method.md
 
-@related: calendar/how_to_start.md#initializecalendar
+@related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#dateformat
 
-@relatedsample: https://snippet.dhtmlx.com/2co9z3bi	Calendar. Date Format
+**Related sample**: [Calendar. Date Format](https://snippet.dhtmlx.com/2co9z3bi)

@@ -1,21 +1,22 @@
 ---
 sidebar_label: afterClose
-title: afterClose
----          
+title: JavaScript Combo Box - afterClose Event 
+description: You can explore the afterClose event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterClose
 
 @short: fires after closing a list with options
 
-@signature: afterClose: () => void;
+@signature: {'afterClose: () => void;'}
 
 @example:
 combobox.events.on("AfterClose", function() {
     // your logic here
 });
 
-
-@template: api_event
 @descr:
 
-@changelog: added in v6.4
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 
-@relatedsample: https://snippet.dhtmlx.com/n70eqx5l	Combobox. Events
+@changelog: added in v6.4

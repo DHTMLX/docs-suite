@@ -1,30 +1,24 @@
 ---
 sidebar_label: thisMonthOnly
-title: thisMonthOnly
----          
+title: JavaScript Calendar - thisMonthOnly Config 
+description: You can explore the thisMonthOnly config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# thisMonthOnly
 
 @short: hides dates of the previous/next months relative to the currently displayed one
 
-@signature: thisMonthOnly?: boolean;
+@signature: {'thisMonthOnly?: boolean;'}
 
 @default: false
 
-
-@type: boolean
-
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    thisMonthOnly:true
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Calendar. The Days Of This Month Only](https://snippet.dhtmlx.com/4wi5hbtr)
 
-
-@related:
-calendar/how_to_start.md#initializecalendar
-calendar/configuring.md#displayingonlycurrentmonth
-
-@relatedsample:
-https://snippet.dhtmlx.com/4wi5hbtr	Calendar. The Days Of This Month Only
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#displayingonlycurrentmonth)

@@ -1,25 +1,25 @@
 ---
 sidebar_label: afterHide
-title: afterHide
----          
+title: JavaScript Sidebar - afterHide Event 
+description: You can explore the afterHide event of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterHide
 
 @short: fires after hiding an item of Sidebar
 
-afterHide: (e: Event) => void;
+@signature: {'afterHide: (events: Event) => void;'}
 
 @params:
-- e         Event       a native event object
-
+`events: Event` - a native event object
 
 @example:
 sidebar.events.on("AfterHide", function(event){
     // your code here
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/qfddiu3i	Sidebar. Events
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
 
-@related: sidebar/events.md
+[comment]: # (@related: sidebar/events.md)

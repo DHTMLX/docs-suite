@@ -1,23 +1,25 @@
 ---
 sidebar_label: afterColumnHide
-title: afterColumnHide
----          
+title: JavaScript TreeGrid - afterColumnHide Event 
+description: You can explore the afterColumnHide event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterColumnHide
 
 @short: fires after a column is hidden
 
-@signature: afterColumnHide: (col: object) => void;
+@signature: {'afterColumnHide: (col: ICol) => void;'}
 
-@params: 
-- col   object  an object with a column configuration
+@params:
+`col: object` - an object with a column configuration
 
 @example:
 treegrid.events.on("AfterColumnHide", function(column){
     // your logic here
 });
 
-@template: api_event
 @descr:
 
-@changelog: added in v7.0
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
-[TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+@changelog: added in v7.0

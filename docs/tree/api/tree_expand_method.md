@@ -1,30 +1,25 @@
 ---
-sidebar_label: expand
-title: expand
----          
+sidebar_label: expand()
+title: JavaScript Tree - expand Method 
+description: You can explore the expand method of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# expand()
 
 @short: expands a tree item by id
 
-@signature: expand(id: string): void;
+@signature: {'expand(id: Id): void;'}
 
 @params:
-- id	string		the id of an item to expand
+`id: string` - the id of an item to expand
 
 @example:
 tree.expand("history");
 
-
-@template: api_method
 @descr:
 
-@related: tree/work_with_tree.md#expandingcollapsingitems
+**Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
 
-@relatedsample: https://snippet.dhtmlx.com/esxb15hm	Tree. Expand Item
+[comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)
 
-@relatedapi:
-tree/api/tree_collapse_method.md
-
-
-
-
-
+[comment]: # (@relatedapi: tree/api/tree_collapse_method.md)

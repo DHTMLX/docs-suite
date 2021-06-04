@@ -1,23 +1,23 @@
 ---
 sidebar_label: inputFocus
-title: inputFocus
----          
+title: JavaScript Toolbar - inputFocus Event 
+description: You can explore the inputFocus event of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# inputFocus
 
 @short: fires when a control is focused
 
-@signature: inputFocus: (id: string) => any;
+@signature: {'inputFocus: (id: string) => void;'}
 
 @params:
-- id		string			the ID of a new control
+`id: string` - the ID of a new control
 
 @example:
 toolbar.events.on("inputFocus", function(id){
     console.log(id);
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/xvak1p5y	Toolbar. Events
-
+**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)

@@ -1,32 +1,35 @@
 ---
 sidebar_label: Custom HTML properties
-title: Sidebar Custom HTML properties
+title: JavaScript Sidebar - Sidebar Custom HTML Properties 
+description: You can explore the Sidebar custom HTML properties of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-<table class="webixdoc_links">
+# Sidebar Custom HTML properties
+
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="https://docs.dhtmlx.com/suite/sidebar__navitem.html">"navItem"</a> type is applied by default.</td>
+			<td><b>type</b></td>
+			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="../../sidebar/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of an item, auto-generated if not set</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) the parent of the item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>html</b></td>
+			<td><b>html</b></td>
 			<td>(<i>string</i>) a string with HTML that should be inserted into the item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string|string[]</i>) adds style classes</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
+			<td><b>hidden</b></td>
 			<td>(<i>boolean</i>) defines whether an item is hidden</td>
 		</tr>
     </tbody>

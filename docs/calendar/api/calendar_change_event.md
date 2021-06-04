@@ -1,32 +1,30 @@
 ---
 sidebar_label: change
-title: change
----          
+title: JavaScript Calendar - change Event
+description: You can explore the change event of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# change
 
 @short: fires on change of date selection
 
-@signature: change: (date: Date, oldDate: Date, byClick: boolean) => void;
+@signature: {'change: (date: Date, oldDate: Date, byClick: boolean) => void;'}
 
 @params:
-- date  		Date    	the newly selected date
-- oldDate   	Date    	the previously selected date
-- click 		boolean 	defines whether the change happened because of a click on a date (true), or due to an API call (false)
-
+- `date: Date` - the newly selected date
+- `oldDate: Date` - the previously selected date
+- `byClick: boolean` - defines whether the change happened because of a click on a date - *true*, or due to an API call - *false*
 
 @example:
-calendar.events.on("Change",function(date, oldDate, click){
+calendar.events.on("Change",function(date, oldDate, byClick){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });
 
-
-@template: api_event
 @descr:
 
-@relatedapi:calendar/api/calendar_beforechange_event.md
+**Related sample**: [Calendar. Events](https://snippet.dhtmlx.com/7kj7fiek)
 
-@related:
-calendar/handling_events.md
+[comment]: # (@related: calendar/handling_events.md)
 
-@relatedsample:
-https://snippet.dhtmlx.com/7kj7fiek	Calendar. Events
+[comment]: # (@relatedapi:calendar/api/calendar_beforechange_event.md)

@@ -1,37 +1,43 @@
 ---
-sidebar_label: reduce
-title: reduce
----          
+sidebar_label: reduce()
+title: JavaScript DataCollection - reduce Method 
+description: You can explore the reduce method of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# reduce()
 
 @short: reduces the array to a single value
 
+@signature: {'reduce<A>(callback: ReduceCallBack<T, A>, acc: A): A;'}
+
 @params:
 
-- handler			function		a function that will be called for each item in the array
-- new_item          any             a value to be passed to the function as the initial value
+- `callback: function` - a function that will be called for each item in the array
+- `acc: any` - a value to be passed to the function as the initial value
+
+@returns:
+A single output value.
 
 @example:
-var total = datacollection.reduce(function(new_item, item) {
+var total = component.data.reduce(function(new_item, item) {
     return new_item + item.value;
 }, 0);
 
-
-@template:	api_method
 @descr:
+
+**Related sample**: [Data. Reduce](https://snippet.dhtmlx.com/pv7hewc7)
 
 A handler function takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>new_item</b></td>
+			<td><b>new_item</b></td>
 			<td>(<i>any</i>) the <i>initialValue</i>, or the previously returned value of the function</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>item</b></td>
+			<td><b>item</b></td>
 			<td>(<i>any</i>) the current item of a data collection</td>
 		</tr>
     </tbody>
 </table>
-
-@relatedsample: https://snippet.dhtmlx.com/pv7hewc7	Data. Reduce

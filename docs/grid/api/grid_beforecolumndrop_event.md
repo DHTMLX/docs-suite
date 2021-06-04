@@ -1,19 +1,21 @@
 ---
 sidebar_label: beforeColumnDrop
-title: beforeColumnDrop
----          
+title: JavaScript Grid - beforeColumnDrop Event 
+description: You can explore the beforeColumnDrop event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeColumnDrop
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
-@signature: beforeColumnDrop: (data: object, events: MouseEvent) => void | boolean;
-	
-<!-- @params:
-- data		object		data object
-- e		    Event		a native event object -->
+@signature: {'beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
+
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @returns:
-- result	boolean		false - to block the default action, otherwise true
-
+Return `false` to block the default action; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeColumnDrop", function(data, events){
@@ -21,39 +23,46 @@ grid.events.on("BeforeColumnDrop", function(data, events){
     return false;
 });
 
-
-@template:	api_event
 @descr:
+
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
 
-- **start** - (*string*) the id of a column, from which the dragging process has started
-- **source** - (*string[]*) an array with ids of dragged columns
-- **target** - (*string*) the id of a potential target column
+<table>
+	<tbody>
+        <tr>
+			<td><b>start</b></td>
+			<td>(<i>string</i>) the id of a column, from which the dragging process has started</td>
+		</tr>
+        <tr>
+			<td><b>source</b></td>
+			<td>(<i>string[]</i>) an array with ids of dragged columns</td>
+		</tr>
+        <tr>
+			<td><b>target</b></td>
+			<td>(<i>string</i>) the id of a potential target column</td>
+		</tr>
+    </tbody>
+</table>
 
-@relatedsample:  https://snippet.dhtmlx.com/dfdlzpqb	Setup drag column (Pro)
-
-
-@relatedapi:
-grid/api/grid_dragitem_config.md
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_aftercolumndrop_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
-
-@related: grid/configuration.md#dragndropofgridcolumns
-	
-
-@changelog: 
+@changelog:
 
 - added in v6.5
 - Before v7.0, the event took two parameters - **sourceId** and **targetId**. 
 - In v7.0, the parameters were replaced with new ones: **data** and **e**.
 
+[comment]: # (@relatedapi:)
+[comment]: # ([](grid/api/grid_dragitem_config.md)
+[comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
+[comment]: # ([](grid/api/grid_aftercolumndrop_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrag_event.md)
+[comment]: # ([](grid/api/grid_cancolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancelcolumndrop_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnin_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnout_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnstart_event.md)
 
-@edition:pro
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-columns)

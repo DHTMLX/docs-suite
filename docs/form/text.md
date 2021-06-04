@@ -1,13 +1,16 @@
 ---
 sidebar_label: Text
-title: Text
----          
+title: JavaScript Form - Text 
+description: You can explore the Text of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Text
 
 A control for adding some text.
 
 ![Text](../assets/form/form_text.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
 ## Adding Text
 
@@ -32,7 +35,7 @@ View [the full list of configuration properties of the Text control](form/api/te
 
 ## Working with Text
 
-You can manipulate a Text control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Text control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -42,9 +45,8 @@ var value = form.getItem("text").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Text control](form/api/api_overview.md#methods-13).
-
+Check [the full list of methods of the Text control](form/api/api_overview.md#text-methods).
 
 ### Events
 
-Check [the full list of events of the Text control](form/api/api_overview.md#events-13).
+Check [the full list of events of the Text control](form/api/api_overview.md#text-events).

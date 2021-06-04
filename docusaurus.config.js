@@ -6,7 +6,10 @@ const AT_NOTATION_KEYS = {
     type: 'Type',
     descr: 'Descr',
     changelog: 'Changelog',
-    signature: 'Signature'
+    signature: 'Signature',
+    params: 'Params',
+    returns: 'Returns',
+    values: 'Values'
 };
 
 const COMPONENTS_PATH = '@site/src/components';
@@ -88,7 +91,7 @@ const onEmptyLinkMatch = (data, { key, fullMatch, dir }) => {
     const filePath = fullMatch.substring(fullMatch.indexOf('(') + 1, fullMatch.length - 1);
     if (filePath.indexOf('.md') !== -1 || filePath.indexOf('.mdx') !== -1 || filePath.indexOf('.') === -1) {
         const data = readFile(dir, filePath);
-        return data ? `[${/.*title: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
+        return data ? `[${/.*sidebar_label: (.+)/g.exec(data)[1]}]${fullMatch.match(/\(\D+\)/g)[0]}` : fullMatch;
     }
     return fullMatch;
 };
@@ -121,8 +124,8 @@ const onAfterDataTransformation = (data) => {
 
 module.exports = {
     noIndex: true, // todo: delete on release
-    title: 'DHTMLX Suite Documentation',
-    tagline: 'DHTMLX Suite Documentation',
+    title: 'DHTMLX Suite 7 Docs',
+    tagline: 'DHTMLX Suite 7 Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/suita/',
     onBrokenLinks: 'warn',
@@ -174,9 +177,9 @@ module.exports = {
             darkTheme: require('prism-react-renderer/themes/dracula'),
         },
         navbar: {
-            title: 'Suite Documenation',
+            title: 'Suite Documentation',
             logo: {
-                alt: 'DHTMLX Suite Documenation',
+                alt: 'DHTMLX Suite Documentation',
                 src: 'img/dhtmlx_logo.svg',
                 href: 'https://docs.dhtmlx.com/',
 
@@ -266,7 +269,7 @@ module.exports = {
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#editions-licenses',
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#licensing',
                         },
                     ],
                 },
@@ -311,7 +314,7 @@ module.exports = {
             require.resolve('docusaurus-gtm-plugin'),
             {
               id: 'GTM-5M5RCSJ',
-            }     
+            }
         ]
     ]
 };

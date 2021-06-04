@@ -1,18 +1,20 @@
 ---
-sidebar_label: setValue
-title: setValue
----          
+sidebar_label: setValue()
+title: JavaScript Calendar - setValue Method 
+description: You can explore the setValue method of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setValue()
 
 @short: selects a date in the calendar
 
-@signature: setValue(value: Date | Date[] | string | string[]): boolean;
+@signature: {'setValue(value: Date | Date[] | string | string[]): boolean;'}
 
 @params:
-- date 		Date,Date[],string,string[] 		the date to select
+`value: Date | Date[] | string | string[]` - the date to select
 
 @returns:
-- result 	boolean 	defines, whether a date has been successfully added into the calendar
-
+Defines, whether a date has been successfully added into the calendar.
 
 @example:
 // sets the current date
@@ -33,22 +35,12 @@ calendar.setValue([new Date(2019,05,03), new Date(2019,05,19)]);
 //sets dates as an array of string values(for the range mode)
 calendar.setValue(["03/06/19", "15/06/19"]);
 
-
-@template: api_method
 @descr:
+**Related sample**: [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
+
 {{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the
 **setValue()** method and in the **dateFormat** property. Otherwise, the default format (**"%d/%m/%y"**) will be used.}}
 
+[comment]: # (@relatedapi: calendar/api/calendar_dateformat_config.md calendar/api/calendar_getvalue_method.md)
 
-@relatedapi:
-calendar/api/calendar_dateformat_config.md
-calendar/api/calendar_getvalue_method.md
-
-@changelog:
-
-@relatedsample:
-https://snippet.dhtmlx.com/vmg11002	Calendar. Preset Selected Date
-
-@related:
-calendar/operating_calendar.md#selectingdate,
-calendar/configuring.md#rangemode
+[comment]: # (@related: calendar/operating_calendar.md#selectingdate calendar/configuring.md#rangemode)

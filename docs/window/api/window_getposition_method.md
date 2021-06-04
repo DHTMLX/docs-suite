@@ -1,32 +1,25 @@
 ---
-sidebar_label: getPosition
-title: getPosition
----          
+sidebar_label: getPosition()
+title: JavaScript Window - getPosition Method 
+description: You can explore the getPosition method of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getPosition()
 
 @short: gets the position of a window
 
-```todoapi 
-<!-- @signature: getPosition(): {left: number, top: number}; -->
-```
+@signature: {'getPosition(): IPosition;'}
 
 @returns:
-- position		object		an object with left and top coordinates of a window
+An object with left and top coordinates of a window.
 
 @example:
 var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 
-
-@template: api_method
 @descr:
 
+**Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
 
+[comment]: # (@relatedapi: window/api/window_setposition_method.md)
 
-@relatedapi:
-window/api/window_setposition_method.md
-
-
-@changelog:
-
-@related:window/usage.md#positioningwindow
-
-@relatedsample: https://snippet.dhtmlx.com/hc3ronrk	Window. Get/Set Window Position
+[comment]: # (@related:window/usage.md#positioning-window)

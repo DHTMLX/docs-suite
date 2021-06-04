@@ -1,50 +1,47 @@
 ---
 sidebar_label: dragIn
-title: dragIn
----          
+title: JavaScript Tree - dragIn Event 
+description: You can explore the dragIn event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# dragIn
 
 @short: fires when an item is dragged to another potential target
 
-@signature: dragIn: (data: object, events: MouseEvent) => void | boolean;
+@signature: {'dragIn: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
+
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 tree.events.on("DragIn", function(data, events) {
     // your logic here
 });
 
-
-@template: api_event
 @descr:
+
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+
 The data object can contain the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>start</b></td>
+			<td><b>start</b></td>
 			<td>(<i>string</i>) the id of an item, from which the dragging process has started</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>source</b></td>
+			<td><b>source</b></td>
 			<td>(<i>string[]</i>) an array with ids of dragged items</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the id of a potential target item</td>
 		</tr>
     </tbody>
 </table>
 
-
 @changelog: added in v7.0
 
-@relatedapi:
-tree/api/tree_afterdrag_event.md
-tree/api/tree_afterdrop_event.md
-tree/api/tree_beforedrag_event.md
-tree/api/tree_beforedrop_event.md
-tree/api/tree_canceldrop_event.md
-tree/api/tree_candrop_event.md
-tree/api/tree_dragout_event.md
-tree/api/tree_dragstart_event.md
-
-[Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
+[comment]: # (@relatedapi: tree/api/tree_afterdrag_event.md tree/api/tree_afterdrop_event.md tree/api/tree_beforedrag_event.md tree/api/tree_beforedrop_event.md tree/api/tree_canceldrop_event.md tree/api/tree_candrop_event.md tree/api/tree_dragout_event.md tree/api/tree_dragstart_event.md)

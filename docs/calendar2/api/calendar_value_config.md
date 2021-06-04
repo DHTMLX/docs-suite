@@ -7,7 +7,7 @@ title: value
 
 @signature: value?: Date | Date[] | string | string[];
 
-@example: 
+@example:
 // selects a date
 var calendar = new dhx.Calendar("calendar_container", {
     value: new Date(2019,01,10)
@@ -42,7 +42,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 
-@template:	api_config
+
 @descr: 
 If the property is not specified in the configuration object, nothing is selected in the calendar on initialization.
 
@@ -57,5 +57,5 @@ calendar/api/calendar_dateformat_config.md
 calendar/api/calendar_getvalue_method.md
 calendar/api/calendar_range_config.md
 
-@relatedsample:
-https://snippet.dhtmlx.com/epjjww3l	Calendar. Value Initialization
+**Related sample**:
+- [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)

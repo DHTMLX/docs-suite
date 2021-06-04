@@ -1,23 +1,23 @@
 ---
-sidebar_label: setFullScreen
-title: setFullScreen
----          
+sidebar_label: setFullScreen()
+title: JavaScript Window - setFullScreen Method 
+description: You can explore the setFullScreen method of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-@short: enters the full screen mode
+# setFullScreen()
 
-@signature: setFullScreen(): void;
+@short: switches the window into the full screen mode
+
+@signature: {'setFullScreen(): void;'}
 
 @example:
 dhxWindow.setFullScreen();
 
-
-@template: api_method
 @descr:
 
-@related:window/usage.md#fullscreenmode
-
-@relatedsample: https://snippet.dhtmlx.com/aftti5fy	Window. Fullscreen Mode
+**Related sample**: [Window. Fullscreen Mode](https://snippet.dhtmlx.com/aftti5fy)
 
 @changelog:
 added in v6.3
 
+[comment]: # (@related:window/usage.md#fullscreen-mode)

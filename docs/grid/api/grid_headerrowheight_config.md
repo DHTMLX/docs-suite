@@ -1,26 +1,27 @@
 ---
 sidebar_label: headerRowHeight
-title: headerRowHeight
----          
+title: JavaScript Grid - headerRowHeight Config 
+description: You can explore the headerRowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# headerRowHeight
 
 @short: sets the height of rows in the header
 
-@signature: headerRowHeight?: number;
+@signature: {'headerRowHeight?: number;'}
 
 @default: 40
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	headerRowHeight: 50
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
+
 The height of the header is calculated as a sum of all row heights in it.
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#headerfooterheight
-
-@relatedsample: https://snippet.dhtmlx.com/wjcjl80i	Grid. Rows Height
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#headerfooter-height)

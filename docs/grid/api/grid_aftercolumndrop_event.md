@@ -1,41 +1,42 @@
 ---
 sidebar_label: afterColumnDrop
-title: afterColumnDrop
----          
+title: JavaScript Grid - afterColumnDrop Event 
+description: You can explore the afterColumnDrop event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterColumnDrop
 
 @short: fires before the user has finished dragging a column but after the mouse button is released
 
-@signature: afterColumnDrop: (data: object, events: MouseEvent) => void;
+@signature: {'afterColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
-<!-- @params:
-- data		object		data object
-- e		    Event		a native event object -->
-
+@params:
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 grid.events.on("AfterColumnDrop", function(data, events) {
     // your logic here
 });
 
-
-@template: api_event
 @descr:
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 The data object contains the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>start</b></td>
+			<td><b>start</b></td>
 			<td>(<i>string</i>) the id of a column, from which the dragging process has started</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>source</b></td>
+			<td><b>source</b></td>
 			<td>(<i>string[]</i>) an array with ids of dragged columns</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the id of a potential target column</td>
 		</tr>
     </tbody>
@@ -43,18 +44,15 @@ The data object contains the following parameters:
 
 @changelog: added in v7.0
 
+[comment]: # (@relatedapi:) 
+[comment]: # ([](grid/api/grid_dragitem_config.md)
+[comment]: # ([](grid/api/grid_aftercolumndrag_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrag_event.md)
+[comment]: # ([](grid/api/grid_beforecolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancolumndrop_event.md)
+[comment]: # ([](grid/api/grid_cancelcolumndrop_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnin_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnout_event.md)
+[comment]: # ([](grid/api/grid_dragcolumnstart_event.md)
 
-@relatedapi:
-grid/api/grid_dragitem_config.md
-grid/api/grid_aftercolumndrag_event.md
-grid/api/grid_beforecolumndrag_event.md
-grid/api/grid_beforecolumndrop_event.md
-grid/api/grid_cancolumndrop_event.md
-grid/api/grid_cancelcolumndrop_event.md
-grid/api/grid_dragcolumnin_event.md
-grid/api/grid_dragcolumnout_event.md
-grid/api/grid_dragcolumnstart_event.md
-
-@edition: pro
-
-@related: grid/configuration.md#dragndropofgridcolumns
+[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-columns)

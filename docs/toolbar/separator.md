@@ -1,17 +1,20 @@
 ---
 sidebar_label: Separator
-title: Separator
----          
+title: JavaScript Toolbar - Separator 
+description: You can explore the Separator of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Separator
 
 This is a horizontal (between menu options) or vertical (between toolbar controls) line separating items/groups of items from each other.
 
 ![](../assets/toolbar/separator.png)
 
-{{editor	https://snippet.dhtmlx.com/sguwr3m9	Toolbar. Separator}}
+**Related sample**: [Toolbar. Separator](https://snippet.dhtmlx.com/sguwr3m9)
 
 ## Adding Separator
 
-A new Separator can be created with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+A new Separator can be created with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({
@@ -32,6 +35,6 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/refs/toolbar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

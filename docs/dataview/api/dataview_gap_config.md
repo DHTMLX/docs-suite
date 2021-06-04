@@ -1,21 +1,20 @@
 ---
 sidebar_label: gap
-title: gap
----          
+title: JavaScript DataView - gap Config 
+description: You can explore the gap config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# gap
 
 @short: sets margins for DataView items
 
-@signature: gap?: number;
+@signature: {'gap?: number;'}
 
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview", {itemsInRow: 5, gap: 20});
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Dataview. Configure Gap Size](https://snippet.dhtmlx.com/ozsuww1q)
 
-@relatedsample:
-https://snippet.dhtmlx.com/ozsuww1q	Dataview. Configure Gap Size
-
-@related:
-dataview/configuration.md#marginsarounddataviewitems
+[comment]: # (@related: dataview/configuration.md#margins-around-dataview-items)

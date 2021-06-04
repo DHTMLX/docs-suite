@@ -1,26 +1,31 @@
 ---
 sidebar_label: API overview
-title: Window API overview
+title: JavaScript Window - API Overview 
+description: You can explore the API of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# Window API overview
 
 ## Methods
 
-| Name                                          | Description                                          |
-| --------------------------------------------- | ---------------------------------------------------- |
-| [](window/api/window_attach_method.md)        | @getshort(window/api/window_attach_method.md)        |
-| [](window/api/window_attachhtml_method.md)    | @getshort(window/api/window_attachhtml_method.md)    |
-| [](window/api/window_destructor_method.md)    | @getshort(window/api/window_destructor_method.md)    |
-| [](window/api/window_getcontainer_method.md)  | @getshort(window/api/window_getcontainer_method.md)  |
-| [](window/api/window_getposition_method.md)   | @getshort(window/api/window_getposition_method.md)   |
-| [](window/api/window_getsize_method.md)       | @getshort(window/api/window_getsize_method.md)       |
-| [](window/api/window_getwidget_method.md)     | @getshort(window/api/window_getwidget_method.md)     |
-| [](window/api/window_hide_method.md)          | @getshort(window/api/window_hide_method.md)          |
-| [](window/api/window_isvisible_method.md)     | @getshort(window/api/window_isvisible_method.md)     |
-| [](window/api/window_paint_method.md)         | @getshort(window/api/window_paint_method.md)         |
-| [](window/api/window_setfullscreen_method.md) | @getshort(window/api/window_setfullscreen_method.md) |
-| [](window/api/window_setposition_method.md)   | @getshort(window/api/window_setposition_method.md)   |
-| [](window/api/window_setsize_method.md)       | @getshort(window/api/window_setsize_method.md)       |
-| [](window/api/window_show_method.md)          | @getshort(window/api/window_show_method.md)          |
+| Name                                            | Description                                            |
+|-------------------------------------------------|--------------------------------------------------------|
+| [](window/api/window_attach_method.md)          | @getshort(window/api/window_attach_method.md)          |
+| [](window/api/window_attachhtml_method.md)      | @getshort(window/api/window_attachhtml_method.md)      |
+| [](window/api/window_destructor_method.md)      | @getshort(window/api/window_destructor_method.md)      |
+| [](window/api/window_getcontainer_method.md)    | @getshort(window/api/window_getcontainer_method.md)    |
+| [](window/api/window_getposition_method.md)     | @getshort(window/api/window_getposition_method.md)     |
+| [](window/api/window_getsize_method.md)         | @getshort(window/api/window_getsize_method.md)         |
+| [](window/api/window_getwidget_method.md)       | @getshort(window/api/window_getwidget_method.md)       |
+| [](window/api/window_hide_method.md)            | @getshort(window/api/window_hide_method.md)            |
+| [](window/api/window_isfullscreen_method.md)    | @getshort(window/api/window_isfullscreen_method.md)    |
+| [](window/api/window_isvisible_method.md)       | @getshort(window/api/window_isvisible_method.md)       |
+| [](window/api/window_paint_method.md)           | @getshort(window/api/window_paint_method.md)           |
+| [](window/api/window_setfullscreen_method.md)   | @getshort(window/api/window_setfullscreen_method.md)   |
+| [](window/api/window_setposition_method.md)     | @getshort(window/api/window_setposition_method.md)     |
+| [](window/api/window_setsize_method.md)         | @getshort(window/api/window_setsize_method.md)         |
+| [](window/api/window_show_method.md)            | @getshort(window/api/window_show_method.md)            |
+| [](window/api/window_unsetfullscreen_method.md) | @getshort(window/api/window_unsetfullscreen_method.md) |
 
 ## Events
 

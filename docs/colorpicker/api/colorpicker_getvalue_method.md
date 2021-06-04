@@ -1,14 +1,17 @@
 ---
-sidebar_label: getValue
-title: getValue
----          
+sidebar_label: getValue()
+title: JavaScript Colorpicker - getValue Method 
+description: You can explore the getValue method of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-@short: returns the code of a selected color
+# getValue()
 
-@signature: getValue(): string;
+@short: returns the code of a selected color in the Hex format
+
+@signature: {'getValue(): string;'}
 
 @returns:
-- value    string   the code of a selected color in the Hex format
+A string with the code of a selected color in the Hex format.
 
 @example:
 colorpicker.setValue("#BDF0E9");
@@ -16,16 +19,8 @@ colorpicker.setValue("#BDF0E9");
 var color = colorpicker.getValue();
 // -> "#BDF0E9"
 
-
-@template: api_method
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingselectedcolor
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#settinggetting-selected-color)
 
-@relatedapi:
-colorpicker/api/colorpicker_setvalue_method.md
-
-
-@changelog:
-
-
+[comment]: # (@relatedapi: colorpicker/api/colorpicker_setvalue_method.md)

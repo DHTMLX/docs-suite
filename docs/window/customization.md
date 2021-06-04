@@ -1,13 +1,14 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Window - Customization 
+description: You can explore the customization of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Customization
 
 You can customize the look and feel of the header and footer of Window together with their functionality.
 
-Default and custom icons
-----------
+## Default and custom icons
 
 dhtmlxWindow uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons in any possible part of the window: in the header or the footer.
@@ -24,38 +25,35 @@ after the source files of dhtmlxWindow as follows:
   crossorigin="anonymous">
 ~~~
 
-
 Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for the header or the footer. [See details below](window/customization.md#updatecontrols).
 
-{{editor	https://snippet.dhtmlx.com/ucozvx01	Window. Custom Icons}}
+**Related sample**: [Window. Custom Icons](https://snippet.dhtmlx.com/ucozvx01)
 
-Controls and operations
-----------------------
+## Controls and operations
 
 It is possible to add any Toolbar controls into the header/footer of a window.
-You can work with controls in the header/footer of a window in the same way as with [](toolbar/index.md) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
+You can work with controls in the header/footer of a window in the same way as with [Toolbar](toolbar/index.md) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
 
-### Adding controls 
+### Adding controls
 
 Besides initial controls, you can add other controls into the header/footer on the fly. 
 
 ![](../assets/window/custom_buttons.png)
 
-For this, you should apply the [](data_collection/api/add.md) method of Data Collection. It takes the parameters below:
+For this, you should apply the [](../data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
 
-
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add a control at</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
 		</tr>
     </tbody>
@@ -69,9 +67,9 @@ dhxWindow.footer.data.add({icon: "mdi mdi-thumb-up", id: "like"});
 dhxWindow.footer.data.add({icon: "mdi mdi-thumb-down", id: "dislike"})
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/o7xlvvv3	Window. Custom Buttons}}
+**Related sample**: [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
 
-<h3 id="updatecontrols"> Updating controls </h3> 
+### Updating controls
 
 You can change the icon of the Window control and its other config options with the help of the [](../data_collection/api/datacollection_update_method.md) method of Data Collection. It takes two parameters: 
 
@@ -85,24 +83,23 @@ dhxWindow.header.data.update("close", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ucozvx01	Window. Custom Icons}}
+**Related sample**: [Window. Custom Icons](https://snippet.dhtmlx.com/ucozvx01)
 
 ### Deleting controls
 
-To remove a control from the header/footer, make use of the [](data_collection/api/remove) method of Data Collection. Pass the id of the control that should be removed to the method:
+To remove a control from the header/footer, make use of the [](../data_collection/api/datacollection_remove_method.md) method of Data Collection. Pass the id of the control that should be removed to the method:
 
 ~~~js
 dhxWindow.footer.data.remove("accept");
 ~~~
 
-Styling 
------------
+## Styling
 
 There is a possibility to make changes in the look and feel of a window. 
 
 ![](../assets/window/custom_style.png)
 
-{{editor	https://snippet.dhtmlx.com/t5mvhwx8	Window. Custom Styles}}
+**Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)
 
 For this you need to take the following steps:
 
@@ -129,4 +126,3 @@ var dhxWindow = new dhx.Window({
 });
 dhxWindow.show();
 ~~~
-

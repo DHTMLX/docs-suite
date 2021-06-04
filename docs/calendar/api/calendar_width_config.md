@@ -1,27 +1,24 @@
 ---
 sidebar_label: width
-title: width
----          
+title: JavaScript Calendar - width Config 
+description: You can explore the width config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# width
 
 @short: sets the width of the calendar
 
-@signature: width?: string | number;
+@signature: {'width?: string | number;'}
 
 @default: "250px"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    width: "300px"
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Calendar. Calendar Width](https://snippet.dhtmlx.com/azm0u5ns)
 
-
-@relatedsample:
-https://snippet.dhtmlx.com/azm0u5ns	Calendar. Calendar Width
-
-@related: 
-calendar/how_to_start.md#initializecalendar
-calendar/configuring.md#widthofcalendar
+[comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#widthofcalendar)

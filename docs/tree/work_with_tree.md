@@ -1,19 +1,18 @@
 ---
 sidebar_label: Work with Tree
-title: Work with Tree
----          
+title: JavaScript Tree - Work with Tree 
+description: You can explore how to work with Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Working with checkboxes
--------------------
+# Work with Tree
 
+## Working with checkboxes
 
-
-You can [enable checkbox for tree items](tree/configuration.md#checkboxesforitems) with the [](tree/api/tree_checkbox_config.md) configuration option. Then you can manipulate items with checkboxes with the help of Tree API.
-
+You can [enable checkbox for tree items](tree/configuration.md#checkboxes-for-items) with the [](tree/api/tree_checkbox_config.md) configuration option. Then you can manipulate items with checkboxes with the help of Tree API.
 
 ### Check/uncheck checkboxes
 
-To check the checkbox of a particular tree item, apply the tree/api/tree_checkitem_method.md. It takes the id of an item as a parameter:
+To check the checkbox of a particular tree item, apply the [](tree/api/tree_checkitem_method.md) method. It takes the id of an item as a parameter:
 
 ~~~js
 tree.checkItem("history");
@@ -25,7 +24,7 @@ The [](tree/api/tree_uncheckitemnew_method.md) method will uncheck a tree item b
 tree.uncheckItem("history");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/uzz6uknx	Tree. Check/Uncheck Item}}
+**Related sample**: [Tree. Check/Uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)
 
 ### Get checked checkboxes
 
@@ -35,10 +34,9 @@ There is a possibility to get the list of all checked items in a tree with the [
 tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cz7xypgz	Tree. Get Checked Items}}
+**Related sample**: [Tree. Get Checked Items](https://snippet.dhtmlx.com/cz7xypgz)
 
-Expanding/collapsing items
-------------------
+## Expanding/collapsing items
 
 ### Expand/collapse a certain item
 
@@ -54,8 +52,7 @@ To collapse a tree item, make use of the [](tree/api/tree_collapse_method.md) me
 tree.collapse("history");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/esxb15hm	Tree. Expand Item}}
-
+**Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
 
 You can also alternately expand/collapse a tree item (folder) via the [](tree/api/tree_toggle_method.md) method:
 
@@ -63,11 +60,11 @@ You can also alternately expand/collapse a tree item (folder) via the [](tree/ap
 tree.toggle("history");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qjk56co2	Tree. Toggle Item}}
+**Related sample**: [Tree. Toggle Item](https://snippet.dhtmlx.com/qjk56co2)
 
 ### Expand/collapse all items
 
-It is also possible to expand/collapse all Tree items using the two corresponding methods - [](tree/api/tree_expandall_method.md) and tree/api/tree_collapseall_method.md:
+It is also possible to expand/collapse all Tree items using the two corresponding methods - [](tree/api/tree_expandall_method.md) and [](tree/api/tree_collapseall_method.md):
 
 ~~~js
 // expand all tree items
@@ -76,10 +73,9 @@ tree.expandAll();
 tree.collapseAll();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/c0nqyz60	Tree. Expand All Items}}
+**Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
 
-Editing an item
--------------------
+## Editing an item
 
 There is the [](tree/api/tree_edititem_method.md) method that allows editing a certain tree item. Pass the id of an item to the method to initiate editing:
 
@@ -87,30 +83,29 @@ There is the [](tree/api/tree_edititem_method.md) method that allows editing a c
 tree.editItem(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/jaqx0rb4	Tree. Edit Item}}
+**Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 
 The method can also take a second parameter to configure the editing process. It may include two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>mode</b></td>
+			<td><b>mode</b></td>
 			<td>(<i>string</i>) the type of an editor:
 				<ul><li>"text" for an input</li>
 				<li>"select" for a select</li></ul>
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>options</b></td>
+			<td><b>options</b></td>
 			<td>(<i>array</i>) optional, an array of additional options</td>
 		</tr>
     </tbody>
 </table>
 
-Setting/getting Tree state
--------------------
+## Setting/getting Tree state
 
-You can get/set the state of a tree using the Tree API - [](tree/api/tree_setstate_method.md) and tree/api/tree_getstate_method.md. **getState()** returns an object with the state of a tree, while **setState()** takes an
+You can get/set the state of a tree using the Tree API - [](tree/api/tree_setstate_method.md) and [](tree/api/tree_getstate_method.md). **getState()** returns an object with the state of a tree, while **setState()** takes an
 object with tree state as a parameter:
 
 ~~~js
@@ -121,26 +116,26 @@ var treeState = tree.getState();
 tree.setState(treeState);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xo6y6xi6	Tree. Getting Tree State}}
+**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
 
-{{editor	https://snippet.dhtmlx.com/g0539az1	Tree. Setting Tree State}}
+**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
 
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>selected</b></td>
+			<td><b>selected</b></td>
 			<td>(<i>number</i>) the status of a checkbox of an item: 
 				<ul>
 					<li>0 - unselected </li>
 					<li>1 - selected  </li>
-					<li>indeterminate (for the parent item, in case its children are partially checked) </li>
+					<li>2 - indeterminate (for the parent item, in case its children are partially checked) </li>
 				</ul>
 			</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>open</b></td>
+			<td><b>open</b></td>
 			<td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
 		</tr>
     </tbody>
@@ -186,27 +181,26 @@ Here is an example of a treeState object:
 }
 ~~~
 
-Using Tree Collection API
----------------------------
+## Using Tree Collection API
 
-You can manipulate Tree items with the help of the [Tree collection API](tree_collection/api/refs/treecollection.md).
+You can manipulate Tree items with the help of the [Tree collection API](tree_collection/index.md).
 
 ### Adding items into Tree
 
 It is possible to add more items into the initialized Tree on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add an item at</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>parent</b></td>
+			<td><b>parent</b></td>
 			<td>(<i>string</i>) the ID of the future parent item</td>
 		</tr>
     </tbody>
@@ -217,20 +211,20 @@ It is possible to add more items into the initialized Tree on the fly. Use the *
 tree.data.add({"value": "Life"}, -1, "Magazines");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/hugcdfo9	Tree. Adding Data}}
+**Related sample**: [Tree. Adding Data](https://snippet.dhtmlx.com/hugcdfo9)
 
 ### Updating Tree items
 
 You can change config options of the item via the **update()** method of Tree Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>the id of the item</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>an object with new configuration of the item</td>
 		</tr>
     </tbody>
@@ -242,9 +236,9 @@ For example, you can change the value of an item:
 tree.data.update("item_id", {value: "New value"});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/e0vgry6n	Tree. Data Update}}
+**Related sample**: [Tree. Data Update](https://snippet.dhtmlx.com/e0vgry6n)
 
-### Removing items from Tree 
+### Removing items from Tree
 
 To remove an item, make use of the **remove()** method of Tree Collection. Pass the id of the item that should be removed to the method:
 
@@ -252,9 +246,6 @@ To remove an item, make use of the **remove()** method of Tree Collection. Pass 
 tree.data.remove("id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/efy72vz8	Tree. Delete Data}}
+**Related sample**: [Tree. Delete Data](https://snippet.dhtmlx.com/efy72vz8)
 
-
-{{note Check the full list of [Tree collection API](tree_collection/api/refs/treecollection.md).}}
-
-
+{{note Check the full list of [Tree collection API](tree_collection/index.md).}}

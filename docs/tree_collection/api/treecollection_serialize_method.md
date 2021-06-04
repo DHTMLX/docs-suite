@@ -1,16 +1,20 @@
 ---
-sidebar_label: serialize
-title: serialize
----          
+sidebar_label: serialize()
+title: JavaScript TreeCollection - serialize Method 
+description: You can explore the serialize method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# serialize()
 
 @short: serializes the component data into JSON, XML or CSV format
 
+@signature: {'serialize(driver?: DataDriver): T[];'}
+
 @params:
-- type      string		optional, the format that the data will be serialized into (json, csv, xml), json by default
-- callback  function    optional,  a function that will be applied to every item of the component
+`driver: string` - optional, the format that the data will be serialized into (json, csv, xml), json by default
 
 @returns:
-data  array,string		serialized data of the component either as an array of JSON objects or as a CSV/XML string 
+Serialized data of the component either as an array of JSON objects or as a CSV/XML string.
 
 @example:
 // serialize data to an array of JSON objects
@@ -22,5 +26,4 @@ treegrid.data.serialize("xml");
 // serialize data to a CSV string
 treegrid.data.serialize("csv");
 
-@template: api_method
 @descr:

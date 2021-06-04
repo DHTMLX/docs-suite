@@ -1,45 +1,44 @@
 ---
-sidebar_label: showDate
-title: showDate
----          
+sidebar_label: showDate()
+title: JavaScript Calendar - showDate Method 
+description: You can explore the showDate method of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-```todo
+# showDate()
 
 @short: shows a specified date and/or opens the calendar in one of the available modes
 
-@signature: showDate(date?: Date, mode?: ViewMode): void;
+@signature: {'showDate(date?: Date, mode?: ViewMode): void;'}
 
 @params:
-- date	 Date    	the date that should be shown in the calendar
-- mode   string  	optional, the mode in which the calendar will be opened
-
-
+- `date: Date` - the date that should be shown in the calendar
+- `mode: string` - optional, the mode in which the calendar will be opened
 
 @example:
 calendar.showDate(new Date(2020,11,12));
 
-
-@template: api_method
 @descr:
+**Related sample**: [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
+
 The **modes** are:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>"calendar"</b></td>
+			<td><b>"calendar"</b></td>
 			<td>shows the days of a month, the default mode</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"month"</b></td>
+			<td><b>"month"</b></td>
 			<td>allows selecting a month of a year</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>"year"</b></td>
+			<td><b>"year"</b></td>
 			<td>allows selecting a year</td>
 		</tr>
     </tbody>
 </table>
-<br/>
+
 ~~~js
 // shows the month of the specified date
 calendar.showDate(new Date(2020,11,12),"month");
@@ -54,14 +53,4 @@ calendar.showDate(new Date(2020,11,12),"year");
 calendar.showDate(null,"year");
 ~~~
 
-@relatedsample:
-https://snippet.dhtmlx.com/nyfzc8cl	Calendar. Showing Particular Calendar Date And Mode
-
-
-@changelog:
-
-
-@related:
-calendar/operating_calendar.md#changingcalendarmode
-
-```todo
+[comment]: # (@related: calendar/operating_calendar.md#changingcalendarmode)

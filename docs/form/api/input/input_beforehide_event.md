@@ -1,18 +1,21 @@
 ---
 sidebar_label: beforeHide
-title: beforeHide
----          
+title: JavaScript Form - beforeHide Input Event 
+description: You can explore the beforeHide Input event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeHide
 
 @short: fires before a control is hidden
- 
+
+@signature: {'beforeHide: (value: string | number, init: boolean) => boolean | void;'} 
 
 @params:
-- value     string|number    the current value of the control
-- init      boolean     true, if the event is triggered on the control initialization, otherwise false
+- `value: string | number` - the current value of the control
+- `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
-param   boolean     false - to prevent a control from being hidden, otherwise - true
-
+Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.getItem("input").events.on("BeforeHide", function(value, init) {
@@ -20,8 +23,6 @@ form.getItem("input").events.on("BeforeHide", function(value, init) {
     return true;
 });
 
-
-@template: api_event
 @descr:
 
 @changelog: added in v7.0

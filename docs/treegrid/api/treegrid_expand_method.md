@@ -1,24 +1,25 @@
 ---
-sidebar_label: expand
-title: expand
----          
+sidebar_label: expand()
+title: JavaScript TreeGrid - expand Method 
+description: You can explore the expand method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# expand()
 
 @short: expands a tree node by id
 
-@signature: expand(id: string): void;
+@signature: {'expand(id: string): void;'}
 
 @params:
-- id	string		the id of a node to expand
+`id: string` - the id of a node to expand
 
 @example:
 treegrid.expand("native");
 
-@template: api_method
 @descr:
 
-@related: treegrid/usage.md#expandingcollapsingnodes
+**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
 
-@relatedsample: https://snippet.dhtmlx.com/1grpsaa2	TreeGrid. Expand/Collapse nodes
+[comment]: # (@related: treegrid/usage.md#expandingcollapsing-nodes)
 
-@relatedapi:
-treegrid/api/treegrid_collapse_method.md
+[comment]: # (@relatedapi: treegrid/api/treegrid_collapse_method.md)

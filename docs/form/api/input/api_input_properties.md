@@ -1,41 +1,44 @@
 ---
 sidebar_label: Properties
-title: Input properties
+title: JavaScript Form - Input Properties 
+description: You can explore the Input Properties of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-<table class="webixdoc_links">
+# Input properties
+
+<table>
 	<tbody>
     	<tr>
-			<td class="webixdoc_links0"><b>type</b></td>
+			<td><b>type</b></td>
 			<td>(<i>string</i>) the type of a control, set it to "input" </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>inputType</b></td>
+			<td><b>inputType</b></td>
 			<td>(<i>string</i>) sets the type of an input: "text", "password", "number". <br/>Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br/>Use the "password" value to specify a field for entering a password.</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>name</b></td>
+			<td><b>name</b></td>
 			<td>(<i>string</i>) the name of a control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>value</b></td>
+			<td><b>value</b></td>
 			<td>(<i>string|number</i>) the initial value of the input</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>min</b></td>
-			<td>(<i>string|number</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+			<td><b>min</b></td>
+			<td>(<i>string|number</i>) <a href="../../../form/work_with_form#minimal-and-maximal-values">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>max</b></td>
-			<td>(<i>string|number</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+			<td><b>max</b></td>
+			<td>(<i>string|number</i>) <a href="../../../form/work_with_form#minimal-and-maximal-values">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>validation</b></td>
-			<td>(<i>string|function</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">the rule of input validation</a>. Can be set in two ways:
+			<td><b>validation</b></td>
+			<td>(<i>string|function</i>) <a href="../../../form/work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
             	<ul>
                 	<li>as a predefined string value: 
                     <ol>- "email" - validEmail</ol>
@@ -50,87 +53,87 @@ title: Input properties
             </td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>width</b></td>
+			<td><b>width</b></td>
 			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>height</b></td>
+			<td><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
          <tr>
-			<td class="webixdoc_links0"><b>padding</b></td>
+			<td><b>padding</b></td>
 			<td>(<i>string|number</i>) sets padding between a cell and a border of the Input control</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>minlength</b></td>
-			<td>(<i>string|number</i>) the minimum <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
+			<td><b>minlength</b></td>
+			<td>(<i>string|number</i>) the minimum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>maxlength</b></td>
-			<td>(<i>string|number</i>) the maximum <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
+			<td><b>maxlength</b></td>
+			<td>(<i>string|number</i>) the maximum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
 		</tr>	
         <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) adds style classes to a control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>disabled</b></td>
+			<td><b>disabled</b></td>
 			<td>(<i>boolean</i>) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="https://docs.dhtmlx.com/suite/form__work_with_form.html#validatingform">defines whether a control is required</a></td>
+			<td><b>required</b></td>
+			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>readOnly</b></td>
+			<td><b>readOnly</b></td>
 			<td>(<i>boolean</i>) defines whether an input is readonly</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>hidden</b></td>
+			<td><b>hidden</b></td>
 			<td>(<i>boolean</i>) makes an input hidden</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="https://docs.dhtmlx.com/suite/helpers__icon.html">icon</a> from the used icon font</td>
+			<td><b>icon</b></td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>placeholder</b></td>
+			<td><b>placeholder</b></td>
 			<td>(<i>string</i>) a tip for the input</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>autocomplete</b></td>
+			<td><b>autocomplete</b></td>
 			<td>(<i>boolean</i>) enables/disables the autocomplete functionality of the input</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>label</b></td>
+			<td><b>label</b></td>
 			<td>(<i>string</i>) specifies a label for a control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>labelWidth</b></td>
+			<td><b>labelWidth</b></td>
 			<td>(<i>string|number</i>) sets the width of the label of a control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>hiddenLabel</b></td>
+			<td><b>hiddenLabel</b></td>
 			<td>(<i>boolean</i>) invisible label that will be used to identify the input on the server side</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>labelPosition</b></td>
+			<td><b>labelPosition</b></td>
 			<td>(<i>string</i>) defines the position of a label: "left"|"top"</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>helpMessage</b></td>
+			<td><b>helpMessage</b></td>
 			<td>(<i>string</i>) adds a help message to a control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>preMessage</b></td>
+			<td><b>preMessage</b></td>
 			<td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>successMessage</b></td>
+			<td><b>successMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>errorMessage</b></td>
+			<td><b>errorMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
 		</tr>
     </tbody>

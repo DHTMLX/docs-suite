@@ -1,17 +1,20 @@
 ---
 sidebar_label: NavItem
-title: NavItem
----          
+title: JavaScript Toolbar - NavItem 
+description: You can explore the NavItem of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# NavItem
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
 ![](../assets/toolbar/navitem.png)
 
-{{editor	https://snippet.dhtmlx.com/os48cj6x	Toolbar. Nav Item}}
+**Related sample**: [Toolbar. Nav Item](https://snippet.dhtmlx.com/os48cj6x)
 
 ## Adding NavItem
 
-A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md).
+A navItem can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md).
 
 ~~~js
 toolbar.data.add({
@@ -57,7 +60,7 @@ You can add any custom HTML content to a navItem with the help of the **html** p
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/5n2b8x84	Toolbar. Item HTML Content}}
+**Related sample**: [Toolbar. Item HTML Content](https://snippet.dhtmlx.com/5n2b8x84)
 
 ## Showing/hiding a navItem
 
@@ -68,9 +71,9 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-## Enabling/disabling a navItem 
+## Enabling/disabling a navItem
 
 You can also enable and disable any navItem with the [enable()](toolbar/api/toolbar_enable_method.md)/[disable()](toolbar/api/toolbar_disable_method.md) methods of Toolbar:
 
@@ -79,7 +82,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 
@@ -93,4 +96,51 @@ You can add a tooltip to a navItem:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
+
+## Two state NavItems
+
+You can create navItems with two states: active (pressed) and inactive (unpressed). The activity of a two state navItem is controlled via the **active** attribute of the navItem object:
+
+~~~js
+{
+    type: "navItem",
+    icon: "dxi dxi-format-bold",
+    tooltip: "bold text",
+    twoState: true, active: false /*!*/
+}
+~~~
+
+**Related sample**: [Toolbar. Two State](https://snippet.dhtmlx.com/1pj4eqw0)
+
+### Changing state of a two state navItem on the fly
+
+The state of a two state item can be changed programmatically with the [setState()](toolbar/api/toolbar_setstate_method.md) method of Toolbar as in:
+
+~~~js
+{
+    type: "navItem", icon: "dxi dxi-format-bold",
+    tooltip: "bold text", twoState: true, 
+	id:"bold"
+}
+...
+toolbar.setState({"bold":true});    // active:true  /*!*/
+// or
+toolbar.setState({"bold":false});   // active:false /*!*/
+~~~
+
+**setState()** accepts one parameter: a key-value pair with the ID of the item and the new value.
+
+### Accessing current state of a two state navItem
+
+The current state of a two state item can be checked with the [getState()](toolbar/api/toolbar_getstate_method.md) method:
+
+~~~js
+{
+    type: "navItem", icon: "dxi dxi-format-bold",
+    tooltip: "bold text", twoState: true, 
+	id:"bold"
+}
+...
+var state = toolbar.getState(); // -> { bold:true } or { bold:false } /*!*/
+~~~

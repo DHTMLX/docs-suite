@@ -1,20 +1,24 @@
 ---
 sidebar_label: dropBehaviour
-title: dropBehaviour
----          
+title: JavaScript Tree - dropBehaviour Config 
+description: You can explore the dropBehaviour config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# dropBehaviour
 
 @short: defines the behaviour of a dragged item
 
-@signature: dropBehaviour?: "child" | "sibling" | "complex";
+@signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 
-@example: 
+@example:
 var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
 var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
 
-@template:	api_config
-@descr: 
-{{note Don't forget to enable drag-n-drop via the [](tree/api/tree_dragmode_config.md) property to use dropBehaviour.}}
+@descr:
 
+**Related sample**: [Tree. Drop Behaviour](https://snippet.dhtmlx.com/80mh3hly)
+
+{{note Don't forget to enable drag-n-drop via the [](tree/api/tree_dragmode_config.md) property to use dropBehaviour.}}
 
 There are three modes of behaviour of a dragged tree item, depending on the value set for the **dropBehaviour** option in the configuration object of a tree:
 
@@ -28,7 +32,4 @@ There are three modes of behaviour of a dragged tree item, depending on the valu
 
 - "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
 
-@relatedsample: https://snippet.dhtmlx.com/80mh3hly	Tree. Drop Behaviour
-
-@related: tree/initialization_of_dhtmlxtree.md#initializetree
-tree/drag_and_drop_handling.md#dropbehaviour
+[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/drag_and_drop_handling.md#drop-behaviour)

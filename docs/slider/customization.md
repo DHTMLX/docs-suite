@@ -1,10 +1,12 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Slider - Customization 
+description: You can explore the customization of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Styling 
------------
+# Customization
+
+## Styling
 
 There is a possibility to make changes in the look and feel of a slider. 
 
@@ -34,5 +36,4 @@ var slider = new dhx.Slider({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ewizud5e	Slider. Custom Colors}}
-
+**Related sample**: [Slider. Custom Colors](https://snippet.dhtmlx.com/ewizud5e)

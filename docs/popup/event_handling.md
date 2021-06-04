@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Popup - Event Handling 
+description: You can explore the event handling of Popup in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -15,7 +18,7 @@ popup.events.on("Click", function(e){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor	https://snippet.dhtmlx.com/ro2lza9t	Popup. Events}}
+**Related sample**: [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
 
 ## Detaching event listeners
 
@@ -40,6 +43,4 @@ popup.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](popup/api/refs/popup_events.md).
-
-
+The full list of events is available in the related [API section](popup/api/api_overview.md#events).

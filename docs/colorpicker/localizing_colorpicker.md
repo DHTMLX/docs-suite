@@ -1,13 +1,14 @@
 ---
 sidebar_label: Localization
-title: Localization
----          
+title: JavaScript Colorpicker - Localization 
+description: You can explore the localization of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Localization
 
 dhtmlxColorPicker allows you to apply different languages to its interface. You just need to translate the corresponding strings for ColorPicker labels and tooltips and apply a ready locale to the component.
 
-
-Default locale
-------------
+## Default locale
 
 The default locale for ColorPicker looks like this:
 
@@ -21,8 +22,7 @@ var en = {
 };
 ~~~
 
-Custom locale
-------------
+## Custom locale
 
 To use a different locale, your need to:
 
@@ -45,4 +45,4 @@ dhx.i18n.setLocale("colorpicker", de);
 var colorpicker = new dhx.ColorPicker();
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/l870h1gh	Colorpicker. Localization}}
+**Related sample**: [Colorpicker. Localization](https://snippet.dhtmlx.com/l870h1gh)

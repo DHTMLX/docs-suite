@@ -1,22 +1,22 @@
 ---
 sidebar_label: min
-title: min
----          
+title: JavaScript Slider - min Config 
+description: You can explore the min config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# min
 
 @short: the minimal value of slider
 
-@signature:  min: number;
+@signature: {'min: number;'}
 
 @default: 0
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     min:2
 });
 
-@template:	api_config
-@descr: 
+@descr:
 
-
-@related: slider/initializing_slider.md#configurationproperties
-slider/configuring_slider.md#minimalandmaximalvalues
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#minimal-and-maximal-values)

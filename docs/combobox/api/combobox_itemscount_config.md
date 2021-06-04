@@ -1,13 +1,16 @@
 ---
 sidebar_label: itemsCount
-title: itemsCount
----          
+title: JavaScript Combo Box - itemsCount Config 
+description: You can explore the itemsCount config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# itemsCount
 
 @short: shows the total number of selected options
 
-@signature: showItemsCount?: boolean | ((count: number) => string);
+@signature: {'itemsCount?: boolean | ((count: number) => string);'}
 
-@example: 
+@example:
 var combo = new dhx.Combobox("combo_container", {
     multiselection: true,
     itemsCount: function (num) {
@@ -15,21 +18,18 @@ var combo = new dhx.Combobox("combo_container", {
     }
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
+
 As a function takes one parameter:
 
 - **count** - (*number*) the number of options
 
 and should return a template for displaying a result.
 
-Note that to select several options you need to enable the **multiselection** option.
- 
-@relatedsample: https://snippet.dhtmlx.com/fw2u2bww	Combobox. Items Count
+{{note To be able to select several options you need to enable the **multiselection** option.}}
 
 @changelog: added in v6.4 
 
-
-@related: combo/how_to_start.md#initializecombobox
-combo/configuration.md#numberofselectedoptions
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#number-of-selected-options)

@@ -1,14 +1,16 @@
 ---
 sidebar_label: NavItem
-title: NavItem
----          
+title: JavaScript Sidebar - NavItem 
+description: You can explore the NavItem of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# NavItem
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
-<img style="margin: 0px 0px 0px 20px; display: block;" src="sidebar/navitem.png" alt=""/>
+![](../assets/sidebar/navitem.png)
 
-Adding NavItem
-----------------
+## Adding NavItem
 
 A navItem can be easily added to a sidebar with the help of the **add()** method of Tree Collection:
 
@@ -18,7 +20,7 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/potv580p	Sidebar. Navigation Items}}
+**Related sample**: [Sidebar. Navigation Items](https://snippet.dhtmlx.com/potv580p)
 
 ### Properties
 
@@ -58,7 +60,7 @@ You can add any custom HTML content to a navItem with the help of the **html** p
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xb6av4qj	Sidebar. Item HTML Content}}
+**Related sample**: [Sidebar. Item HTML Content](https://snippet.dhtmlx.com/xb6av4qj)
 
 ## Showing/hiding a navItem
 

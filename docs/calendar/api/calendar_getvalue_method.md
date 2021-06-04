@@ -1,21 +1,20 @@
 ---
-sidebar_label: getValue
-title: getValue
----          
+sidebar_label: getValue()
+title: JavaScript Calendar - getValue Method 
+description: You can explore the getValue method of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getValue()
 
 @short: returns the selected date
 
-```todoapi
-Date|Date[]|string|string[] getValue(boolean asDate);
-getValue(asDatObj?: boolean): Date | Date[] | string | string[];
-```
+@signature: {'getValue(asDatObj?: boolean): Date | Date[] | string | string[];'}
 
 @params:
-- asDate	boolean		defines whether a date will be returned as a Date object
+`asDatObj: boolean` - defines whether a date will be returned as a Date object
 
 @returns:
-- date		Date,Date[],string,string[]		the selected date
-
+The selected date.
 
 @example:
 
@@ -30,21 +29,10 @@ var date = calendar.getValue(true);
 // for a range calendar as an array of string values 
 var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 
-
-@template: api_method
 @descr:
 
+**Related sample**: [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
 
+[comment]: # (@relatedapi: calendar/api/calendar_setvalue_method.md)
 
-@changelog:
-
-
-@relatedapi:
-calendar/api/calendar_setvalue_method.md
-
-@related:
-calendar/operating_calendar.md#gettingselecteddate
-calendar/configuring.md#rangemode
-
-@relatedsample:
-https://snippet.dhtmlx.com/k2vrfqj0	Calendar. Getting Selected Date
+[comment]: # (@related: calendar/operating_calendar.md#gettingselecteddate calendar/configuring.md#rangemode)

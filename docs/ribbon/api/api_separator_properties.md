@@ -1,16 +1,19 @@
 ---
 sidebar_label: Separator properties
-title: Ribbon Separator properties
+title: JavaScript Ribbon - Separator Properties 
+description: You can explore the Separator properties of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-<table class="webixdoc_links">
+# Ribbon Separator properties
+
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="https://docs.dhtmlx.com/suite/ribbon__navitem.html">"navItem"</a> type is applied by default.</td>
+			<td><b>type</b></td>
+			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
 		</tr>
     </tbody>

@@ -1,14 +1,14 @@
 ---
 sidebar_label: data
-title: data
----          
+title: JavaScript Combo Box - data Config 
+description: You can explore the data config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# data
 
 @short: specifies an array of data objects to set into the combobox
 
-```todoapi 
-data?: DataCollection<any> | any[];
-<any> не компилируется
-```
+@signature: {'data?: DataCollection<any> | any[];'}
 
 @example:
 var combo = new dhx.Combobox("combo_container",{
@@ -31,13 +31,10 @@ var combo = new dhx.Combobox("combo_container",{
 		}
 });
 
-
-@template:	api_config
 @descr: 
 
-
-@relatedsample: https://snippet.dhtmlx.com/8bsb9dji	Combobox. Config Data
+**Related sample**: [Combobox. Config Data](https://snippet.dhtmlx.com/8bsb9dji)
 
 @changelog: added in v6.4
 
-@related: combo/how_to_start.md#initializecombobox	
+[comment]: # (@related: combobox/how_to_start.md#initialize-combobox)

@@ -1,14 +1,16 @@
 ---
 sidebar_label: spans
-title: spans
-description: description
----          
-``` todo
+title: JavaScript Grid - spans Config 
+description: You can explore the spans config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# spans
+
 @short: describes the configuration of cols/rows spans
 
-@signature: spans?: [];
+@signature: {'spans?: array[];'}
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	spans: [
@@ -20,49 +22,47 @@ var grid = new dhx.Grid("grid_container", {
 	data: dataset
 });
 
-@template:	api_config
-@descr: 
+@descr:
+
+**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
+
 Each object in the spans array contains the following properties:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
-        <tr>
-			<td class="webixdoc_links0"><b>row</b></td>
+    <tr>
+			<td><b>row</b></td>
 			<td>(<i>string|number</i>) obligatory, the id of a row</td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>column</b></td>
+    <tr>
+			<td><b>column</b></td>
 			<td>(<i>string|number</i>) obligatory, the id of a column</td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>rowspan</b></td>
+    <tr>
+			<td><b>rowspan</b></td>
 			<td>(<i>number</i>) optional, the number of rows in a span</td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>colspan</b></td>
+    <tr>
+			<td><b>colspan</b></td>
 			<td>(<i>number</i>) optional, the number of columns in a span</td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>text</b></td>
+    <tr>
+			<td><b>text</b></td>
 			<td>(<i>string|number</i>) optional, the content of a span</td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><b>css</b></td>
+    <tr>
+			<td><b>css</b></td>
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
-        <tr>
-			<td class="webixdoc_links0"><a href="https://docs.dhtmlx.com/suite/grid__configuration.html#tooltip"><b>tooltip</b></td>
+    <tr>
+			<td><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>
 </table>
 
+@changelog:
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#spans
+The **tooltip** property is added in v6.5.
 
-@relatedsample: https://snippet.dhtmlx.com/eol76o68	Grid. Header Spans
-
-@changelog: The **tooltip** property is added in v6.5.
-
-``` todo
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#spans)

@@ -1,22 +1,22 @@
 ---
 sidebar_label: inverse
-title: inverse
----          
+title: JavaScript Slider - inverse Config 
+description: You can explore the inverse config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# inverse
 
 @short: enables/disables the inverse slider mode
 
-@signature:  inverse?: boolean;
+@signature: {'inverse?: boolean;'}
 
-@example: 
+@example:
 var slider = new dhx.Slider("slider_container", { 
     inverse:true
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)
 
-@relatedsample: https://snippet.dhtmlx.com/xm8e84s2	Slider. Inverse Mode Of The Slider
-
-@related: slider/initializing_slider.md#configurationproperties
-slider/configuring_slider.md#verticalmode
+[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#vertical-mode)

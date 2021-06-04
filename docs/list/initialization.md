@@ -1,15 +1,18 @@
 ---
 sidebar_label: Initialization
-title: Initialization
----          
+title: JavaScript List - Initialization 
+description: You can explore the initialization of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Initialization
 
 To initialize dhtmlxList on a page, you need to take the following simple steps:
 
 - [Download the List package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
-- [Include source files](#includesourcefiles)
-- [Create a container](#createacontainer)
-- [Initialize List](#initializelist) with the object constructor
-- [Load data into List](#loaddataintolist)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Initialize List](#initialize-list) with the object constructor
+- [Load data into List](#load-data-into-list)
 
 ~~~html
 <!DOCTYPE html>
@@ -31,11 +34,9 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
 </html>
 ~~~
 
+**Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
-{{editor	https://snippet.dhtmlx.com/anj2keoc	List. Basic Initialization}}
-
-Include source files
---------------------
+## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
@@ -47,9 +48,7 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-
-Create a container 
------------------
+## Create a container
 
 Add a container for List and give it an id, for example "list_container":
 
@@ -57,13 +56,12 @@ Add a container for List and give it an id, for example "list_container":
 <div id="list_container"></div>
 ~~~
 
-Initialize List
-----------------------
+## Initialize List
 
 Initialize List with the `dhx.List` object constructor. The constructor has two parameters:
 
 - the HTML container for List,
-- optional, an object with configuration properties (see the full list below). If this argument is not passed to the constructor, the settings will be default.
+- optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="script.js"
 // creating dhtmlxList
@@ -72,37 +70,15 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/anj2keoc	List. Basic Initialization}}
-
-There is a set of properties you can specify for List to optimize its configuration for your needs. Read the details below.
-
+**Related sample**: [List. Basic Initialization](https://snippet.dhtmlx.com/anj2keoc)
 
 ### Configuration properties
 
+There is a set of properties you can specify for List to optimize its configuration for your needs.
 
-You can specify the following properties in the configuration object of List:
+The detailed information on List configuration options can be found in the [List API overview](list/api/api_overview.md#properties) article.
 
-todotw скорее всего можно просто сослаться на API
-{{api
-
-- list/api/list_css_config.md - adds a CSS class(es) to the component
-- list/api/list_data_config.md - specifies an array of data objects to set into the dataview
-- list/api/list_dragcopy_config.md - defines that an item is copied to a target during drag-n-drop
-- list/api/list_dragmode_config.md - enables drag-n-drop in List
-- list/api/list_editable_config.md - enables editing in List
-- list/api/list_eventhandlers_config.md - adds event handlers to HTML elements of a custom template of List items
-- list/api/list_height_config.md - sets the height of List
-- list/api/list_itemheight_config.md - sets the height of a List item
-- list/api/list_keynavigation_config.md - enables/disables navigation in List by arrow keys
-- list/api/list_multiselection_config.md - enables selection of multiple List items
-- list/api/list_selection_config.md - enables selection of a List item
-- list/api/list_template_config.md - specifies a template for List items
-- list/api/list_virtual_config.md - enables dynamic rendering of List items
-
-}}
-
-Load data into List
----------------------
+## Load data into List
 
 Finally, you are to load the list with data. You can load inline or external data into the list.
 
@@ -116,7 +92,7 @@ var list = new dhx.List("list_container",{
 list.data.parse(data);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/0xmyywi1	List. Parse Data}}
+**Related sample**: [List. Parse Data](https://snippet.dhtmlx.com/0xmyywi1)
 
 - to load data from an external file, use the **load()** method of the Data Collection object:
 
@@ -128,4 +104,4 @@ var list = new dhx.List("list_container",{
 list.data.load("../common/dataset.json");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/1it5kfhq	List. Load Data}}
+**Related sample**: [List. Load Data](https://snippet.dhtmlx.com/1it5kfhq)

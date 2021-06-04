@@ -1,32 +1,25 @@
 ---
-sidebar_label: getSize
-title: getSize
----          
+sidebar_label: getSize()
+title: JavaScript Window - getSize Method 
+description: You can explore the getSize method of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getSize()
 
 @short: gets the size of window
 
-```todoapi 
-<!-- @signature: getSize(): {width: number, height: number} -->
-```
+@signature: {'getSize(): ISize;'}
 
 @returns:
-- size		object		an object with width and height of a window
+An object with width and height of a window
 
 @example:
 var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 
-
-@template: api_method
 @descr:
 
+**Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
 
+[comment]: # (@relatedapi: window/api/window_setsize_method.md)
 
-@relatedapi:
-window/api/window_setsize_method.md
-
-
-@changelog:
-
-@related:window/usage.md#sizingwindow
-
-@relatedsample: https://snippet.dhtmlx.com/0zqxydvm	Window. Set/Get Window Size
+[comment]: # (@related:window/usage.md#sizing-window)

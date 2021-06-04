@@ -1,16 +1,18 @@
 ---
 sidebar_label: Button
-title: Button
----          
+title: JavaScript Form - Button 
+description: You can explore the Button of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Button
 
 A simple button that can have an icon. Button can be *twoState* and can have a badge with a number, which can be useful for displaying the number of new messages, etc.
 
 ![Button control](../assets/form/form_button.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-## Adding Button 
-
+## Adding Button
 
 You can easily add a Button control during initialization of a form:
 
@@ -35,7 +37,7 @@ View [the full list of configuration properties of the Button control](form/api/
 
 ## Working with Button
 
-You can manipulate a Button control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Button control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can disable a control on a page:
 
@@ -45,10 +47,8 @@ form.getItem("button").disable();
 
 ### Methods
 
-Check [the full list of methods of the Button control](form/api/api_overview.md#methods-1).
-
+Check [the full list of methods of the Button control](form/api/api_overview.md#button-methods).
 
 ### Events
 
-Check [the full list of events of the Button control](form/api/api_overview.md#events-1)
-
+Check [the full list of events of the Button control](form/api/api_overview.md#button-events).

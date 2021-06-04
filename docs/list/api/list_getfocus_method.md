@@ -1,29 +1,24 @@
 ---
-sidebar_label: getFocus
-title: getFocus
----          
+sidebar_label: getFocus()
+title: JavaScript List - getFocus Method 
+description: You can explore the getFocus method of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getFocus()
 
 @short: returns the id of an item in focus
 
-```todoapi 
-string|number getFocus();
-getFocus(): string;
-```
+@signature: {'getFocus(): string | number;'}
 
 @returns:
-- param	string|number      the id of an item in focus
+The id of an item in focus.
 
 @example:
 list.getFocus(); // -> "item_id"
 
-
-@template: api_method
 @descr:
-
-
-@related: list/work_with_list.md#settingfocusonitem
-
 
 @changelog:
 added in v6.3
 
+[comment]: # (@related: list/work_with_list.md#setting-focus-on-item)

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Drag-n-Drop
-title: Drag-n-Drop
----          
+title: JavaScript Tree - Drag-n-Drop 
+description: You can explore the drag-n-drop of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Drag-n-Drop
 
 dhtmlxTree possesses an advanced drag-n-drop functionality. With this feature, it is possible to reorder items in a tree and drag items between trees. To enable drag-n-drop, you should define the drag mode.
 
@@ -9,7 +12,6 @@ dhtmlxTree possesses an advanced drag-n-drop functionality. With this feature, i
 var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
 var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
 ~~~
-
 
 ## Drag mode
 
@@ -27,7 +29,7 @@ var tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7idtw7i4	Tree. Drag Modes}}
+**Related sample**: [Tree. Drag Modes](https://snippet.dhtmlx.com/7idtw7i4)
 
 {{note Please note that drag-n-drop within a tree works, if it has **dragMode:"both"** setting in its configuration object.}}
 
@@ -45,8 +47,7 @@ There are three modes of behaviour of a dragged tree item:
 
 ![Sibling](../assets/tree/drag_behaviour_sibling.png)
 
-- "complex" - a dragged item can become both a child or a sibling of a target item, depending on the position specified by highlighting (check the above images)
-
+- "complex" - a dragged item can become both a child and a sibling of a target item, depending on the position specified by highlighting (check the above images)
 
 ## Copying dragged item
 
@@ -57,4 +58,4 @@ var treeSource = new dhx.Tree("tree-source", {dragMode: "source", dragCopy: true
 var treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true});
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xm0lxbpj	Tree. Copy Dragged Item}}
+**Related sample**: [Tree. Copy Dragged Item](https://snippet.dhtmlx.com/xm0lxbpj)

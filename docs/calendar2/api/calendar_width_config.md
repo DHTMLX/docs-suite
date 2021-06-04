@@ -9,19 +9,19 @@ title: width
 
 @default: "250px"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
    width: "300px"
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
-@relatedsample:
-https://snippet.dhtmlx.com/azm0u5ns	Calendar. Calendar Width
+**Related sample**:
+- [Calendar. Calendar Width](https://snippet.dhtmlx.com/azm0u5ns)
 
 @related: 
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#widthofcalendar

@@ -1,31 +1,24 @@
 ---
-sidebar_label: getCell
-title: getCell
----          
+sidebar_label: getCell()
+title: JavaScript Grid - getCell Method 
+description: You can explore the getCell method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getCell()
 
 @short: returns the object of a selected cell
 
-@signature: getCells(): array[];
+@signature: {'getCell(): ICell;'}
 
 @returns:
-param   object  an object with parameters of a selected cell
-
-
+An object with parameters of a selected cell.
 
 @example:
 var selectedCell = grid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
-
-@template: api_method
 @descr:
 
-@related: grid/usage_selection.md#gettingobjectofselectedcells
+[comment]: # (@related: grid/usage_selection.md#getting-object-of-selected-cells)
 
-
-@relatedapi: grid/api/selection/selection_enable_method.md
-grid/api/selection/selection_getcells_method.md
-
-@changelog:
-
-
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_getcells_method.md)

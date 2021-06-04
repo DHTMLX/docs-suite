@@ -1,17 +1,21 @@
 ---
 sidebar_label: beforeHide
-title: beforeHide
-description: description
----          
+title: JavaScript Window - beforeHide Event 
+description: You can explore the beforeHide event of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeHide
 
 @short: fires before a window is hidden
 
+@signature: {'beforeHide: (position: IPosition, e?: Event) => boolean | void;'}
+
 @params:
-- position  object      an object with coordinates of the window's position
-- events    Event       a native event object
+- `position: object` - an object with coordinates of the window's position
+- `events: Event` - a native event object
 
 @returns:
-- result		boolean			true to hide a window, false to block hiding a window
+Return `true` to hide a window, `false` to block hiding a window.
 
 @example:
 dhxWindow.events.on("BeforeHide", function(position, events){
@@ -19,26 +23,24 @@ dhxWindow.events.on("BeforeHide", function(position, events){
     return true;
 });
 
-@template: api_event
 @descr:
-The event is blockable. Return *false* to block hiding a window.
+
+**Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
 The **position** parameter contains two attributes:
 
-- **left** - (*number*)	the left coordinate of the window's position (in pixels)
-- **top** - (*number*)	the top coordinate of the window's position (in pixels)
+- **left** - (*number*) the left coordinate of the window's position (in pixels)
+- **top** - (*number*) the top coordinate of the window's position (in pixels)
 
-When the user closes the window by clicking on the Close icon (when the <a href="https://docs.dhtmlx.com/suite/window__api__window_closable_config.html">closable</a> option is enabled), the native event object will be passed into the second argument.
+When the user closes the window by clicking on the Close icon (when the [](window/api/window_closable_config.md) option is enabled), the native event object will be passed into the second argument.
 
-<br/>
 Note, the event fires in 2 cases:
 
-1. While calling the [hide](window/api/window_hide_method.md) method
-2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon
+1. While calling the [](window/api/window_hide_method.md) method.
+2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon.
 
-@relatedsample: https://snippet.dhtmlx.com/jfu4upwd	Window. Events
+@changelog:
 
-@related: window/handling_events.md
-
-@changelog: 
 The **position** and **events** parameters have been added in v7.0.
+
+[comment]: # (@related: window/handling_events.md)

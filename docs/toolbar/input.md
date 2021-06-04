@@ -1,17 +1,20 @@
 ---
 sidebar_label: Input
-title: Input
----          
+title: JavaScript Toolbar - Input 
+description: You can explore the Input of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-This is an input field for entering some text. 
+# Input
+
+This is an input field for entering some text.
 
 ![](../assets/toolbar/input.png)
 
-{{editor	https://snippet.dhtmlx.com/ykd0uii1	Toolbar. Input}}
+**Related sample**: [Toolbar. Input](https://snippet.dhtmlx.com/ykd0uii1)
 
 ## Adding Input
 
-The following example shows how an Input control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+The following example shows how an Input control can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 toolbar.data.add({
@@ -25,7 +28,7 @@ toolbar.data.add({
 
 You can provide [the following properties](toolbar/api/api_input_properties.md) in the configuration object of an Input control.
 
-## Showing/hiding input 
+## Showing/hiding input
 
 You can show or hide Input with the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md) methods of Toolbar:
 
@@ -34,7 +37,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/cldp89u4	Toolbar. Hide/Show}}
+**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Enabling/disabling input
 
@@ -45,7 +48,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ovblenaf	Toolbar. Enable/Disable}}
+**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 
@@ -59,7 +62,7 @@ You can create a tooltip for an input:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/105levtd	Toolbar. Tooltips}}
+**Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
 ## Setting/getting value
 
@@ -83,4 +86,4 @@ To get the text that is currently inside the Input control, call **getState()**:
 toolbar.getState(); //-> {search:"Summer"}
 ~~~
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/refs/toolbar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

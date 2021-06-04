@@ -1,16 +1,19 @@
 ---
-sidebar_label: addCellCss
-title: addCellCss
----          
+sidebar_label: addCellCss()
+title: JavaScript TreeGrid - addCellCss Method 
+description: You can explore the addCellCss method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# addCellCss()
 
 @short: adds a style to a cell
 
-@signature: addCellCss(row: string | number, col: string | number , css: string): void;
+@signature: {'addCellCss(row: string | number, col: string | number, css: string): void;'}
 
 @params:
-- row 		string | number 		the id of a row
-- col 		string | number 		the id of a column
-- css 		string 				the name of the CSS class
+- `row: string | number` - the id of a row
+- `col: string | number` - the id of a column
+- `css: string` - the name of the CSS class
 
 @example:
 <style>
@@ -18,18 +21,11 @@ title: addCellCss
         background:greenyellow;
     }
 </style>
- 
+
 grid.addCellCss("1", "b", "myCustomClass");
 
-
-@template: api_method
 @descr:
 
+**Related sample**: [TreeGrid. Add cell css](https://snippet.dhtmlx.com/smjecfzp)
 
-@related: treegrid/customization.md#stylingcells
-
-@relatedsample: https://snippet.dhtmlx.com/smjecfzp	TreeGrid. Add cell css
-
-@changelog:
-
-
+[comment]: # (@related: treegrid/customization.md#styling-cells)

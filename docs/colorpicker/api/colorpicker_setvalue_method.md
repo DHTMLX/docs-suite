@@ -1,30 +1,25 @@
 ---
-sidebar_label: setValue
-title: setValue
----          
+sidebar_label: setValue()
+title: JavaScript Colorpicker - setValue Method 
+description: You can explore the setValue method of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setValue()
 
 @short: selects a color in ColorPicker
 
-@signature: setValue(value: string): void;
+@signature: {'setValue(value: string): void;'}
 
 @params:
-- value    string   the code of a color (in the Hex format) to select
+`value: string` - the code of a color (in the Hex format) to select
 
 @example:
 colorpicker.setValue("#BDF0E9");
 
-
-@template: api_method
 @descr:
 
-@related: colorpicker/manipulating_colorpicker.md#settinggettingselectedcolor
+**Related sample**: [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)
 
-@relatedapi:
-colorpicker/api/colorpicker_getvalue_method.md
+[comment]: # (@related: colorpicker/manipulating_colorpicker.md#settinggetting-selected-color)
 
-
-@changelog:
-
-
-@relatedsample:
-https://snippet.dhtmlx.com/h6oc5qsq	Colorpicker. Set Value
+[comment]: # (@relatedapi: colorpicker/api/colorpicker_getvalue_method.md)

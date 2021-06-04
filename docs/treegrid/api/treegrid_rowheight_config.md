@@ -1,25 +1,26 @@
 ---
 sidebar_label: rowHeight
-title: rowHeight
----          
+title: JavaScript TreeGrid - rowHeight Config 
+description: You can explore the rowHeight config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# rowHeight
 
 @short: defines the height of a row in a grid
 
-@signature: rowHeight?: number;
+@signature: {'rowHeight?: number;'}
 
 @default: 40
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	rowHeight: 30, /*!*/
 	data: dataset
 });
 
-@template:	api_config
-@descr: 
+@descr:
 
-@related: treegrid/configuration.md#rowheight
-treegrid/initialization.md#initializetreegrid
+**Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)
 
-@relatedsample: https://snippet.dhtmlx.com/xl0i3yof	TreeGrid. Rows Height
+[comment]: # (@related: treegrid/configuration.md#row-height treegrid/initialization.md#initialize-treegrid)

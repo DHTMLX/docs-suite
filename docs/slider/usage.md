@@ -1,12 +1,14 @@
 ---
 sidebar_label: Work with Slider
-title: Work with Slider
----          
+title: JavaScript Slider - Work with Slider 
+description: You can explore how to work with Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Work with Slider
 
 The Slider API helps you control the functionality of the component through a set of handy methods.
 
-Disabling/enabling Slider
---------------
+## Disabling/enabling Slider
 
 You can control the activity of the slider via the [disable()](slider/api/slider_disable_method.md)/[enable()](slider/api/slider_enable_method.md) methods:
 
@@ -18,10 +20,9 @@ slider.disable();
 slider.enable();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/po9hsc2l	Slider. Disable/Enable Slider}}
+**Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)
 
-Checking if a slider is disabled
------------------------------------
+## Checking if a slider is disabled
 
 To check if a slider is disabled, call the [isDisabled()](slider/api/slider_isdisabled_method.md) method:
 
@@ -29,10 +30,9 @@ To check if a slider is disabled, call the [isDisabled()](slider/api/slider_isdi
 slider.isDisabled(); // -> true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/fbo18fue	Slider. Is Disabled Slider}}
+**Related sample**: [Slider. Is Disabled Slider](https://snippet.dhtmlx.com/fbo18fue)
 
-Setting value
------------------
+## Setting value
 
 While a user sets the value of a slider by dragging the thumb to the desired position, you can set the value from the code via the [setValue()](slider/api/slider_setvalue_method.md) method:
 
@@ -40,13 +40,11 @@ While a user sets the value of a slider by dragging the thumb to the desired pos
 slider.setValue(20);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/shw55sub	Slider. Set Slider Value}}
+**Related sample**: [Slider. Set Slider Value](https://snippet.dhtmlx.com/shw55sub)
 
-Getting value
--------------------
+## Getting value
 
 You can get the current value of Slider with the help of the [getValue()](slider/api/slider_getvalue_method.md) method.
-
 
 ~~~
 var value = slider.getValue(); // -> [20]
@@ -55,7 +53,7 @@ var value = slider.getValue(); // -> [20]
 var value = slider.getValue(); // -> [20,50]
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/xlb8nbdx	Slider. Get Slider Value}}
+**Related sample**: [Slider. Get Slider Value](https://snippet.dhtmlx.com/xlb8nbdx)
 
 In case you've set the value of Slider as an array where the first number is greater than the second one, e.g. [50,20], **getValue()** will return the value as an array with numbers in the ascending order, that is [20,50].
 
@@ -66,4 +64,3 @@ slider.setValue([50,20]);
 // returns an array of numbers (the numbers are ascending)
 var value = slider.getValue(); // -> [20,50]
 ~~~
-

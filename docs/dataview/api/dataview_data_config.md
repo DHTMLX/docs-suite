@@ -1,15 +1,16 @@
 ---
 sidebar_label: data
-title: data
----          
+title: JavaScript DataView - data Config 
+description: You can explore the data config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# data
 
 @short: specifies an array of data objects to set into the dataview
 
-```todoapi ```
+@signature: {'data?: DataCollection<any> | any[];'}
 
-@type: array
-
-@example: 
+@example:
 var dataview = new dhx.DataView("dataview_container", {
     data: [
     	{
@@ -30,13 +31,10 @@ var dataview = new dhx.DataView("dataview_container", {
 	]
 });
 
-
-@template:	api_config
 @descr: 
 
-@related: dataview/data_loading.md
+**Related samples**:
+- [Dataview. Config Data](https://snippet.dhtmlx.com/s547z4xr)
+- [Dataview. Init With External Data](https://snippet.dhtmlx.com/t632x22i)
 
-@relatedsample: 
-https://snippet.dhtmlx.com/s547z4xr	Dataview. Config Data
-https://snippet.dhtmlx.com/t632x22i	Dataview. Init With External Data
-
+[comment]: # (@related: dataview/data_loading.md)

@@ -9,19 +9,19 @@ title: weekStart
 
 @default: "sunday"
 
-@example: 
+@example:
 var calendar = new dhx.Calendar("calendar_container", {
     weekStart:"monday"
 });
 
 
-@template:	api_config
+
 @descr: 
 
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#startoftheweek
 
 
-@relatedsample: https://snippet.dhtmlx.com/kaxmurh9	Calendar. Week Start
+**Related sample**: [Calendar. Week Start](https://snippet.dhtmlx.com/kaxmurh9)

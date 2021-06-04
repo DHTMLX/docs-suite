@@ -1,20 +1,23 @@
 ---
 sidebar_label: afterRemove
-title: afterRemove
----          
+title: JavaScript DataCollection - afterRemove Event 
+description: You can explore the afterRemove event of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterRemove
 
 @short: fires after removing a new item from a data collection
-	
+
+@signature: {'afterRemove: (removedItem: any) => void;'}
+
 @params:
-- removedItem		object			the object of a removed item
+`removedItem: object` - the object of a removed item
 
 @example:
-data.events.on("AfterRemove", function(removedItem){
+component.data.events.on("AfterRemove", function(removedItem){
 	console.log("An item is removed");
 });
 
-@template:	api_event
 @descr:
 
-@relatedapi:data_collection/api/beforeremove_event.md
-	
+[comment]: # (@relatedapi:data_collection/api/datacollection_beforeremove_event.md)

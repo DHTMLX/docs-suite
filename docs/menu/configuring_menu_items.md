@@ -1,14 +1,16 @@
 ---
 sidebar_label: List of Menu Controls
-title: List of Menu Controls
----          
+title: JavaScript Menu - List of Menu Controls 
+description: You can explore the list of Menu controls of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# List of Menu Controls
 
 In this article you'll find the controls you can use in dhtmlxMenu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
-To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection/api/refs/treecollection.md). Check the [related article](menu/work_with_menu.md).
+To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection/index.md). Check the [related article](menu/work_with_menu.md).
 
-MenuItem
------------
+## MenuItem
 
 MenuItem is a drop-down list of options.
 
@@ -29,15 +31,13 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/qkxeer2h	Menu. Menu Item}}
+**Related sample**: [Menu. Menu Item](https://snippet.dhtmlx.com/qkxeer2h)
 
 #### Properties
 
 See [the full list of properties](menu/api/api_menuitem_properties.md) that you can provide in the configuration object of a MenuItem control.
 
-
-NavItem
-----------
+## NavItem
 
 This is a default control for navigation-related components, can contain any other controls as nested items. 
 
@@ -51,13 +51,11 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/uhv64cm7	Menu. Navigation Type}}
-
+**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
 
 #### Properties
 
 See [the full list of properties](menu/api/api_navitem_properties.md) that you can provide in the configuration object of a NavItem control.
-
 
 ### Adding an icon
 
@@ -82,7 +80,7 @@ You can add a number badge to the navItem to display information like the number
 }
 ~~~
 
-<h3 id="htmlcontent">Adding HTML content</h3>
+### Adding HTML content
 
 You can add a custom image into the navItem with the help of the **html** property:
 
@@ -94,7 +92,7 @@ You can add a custom image into the navItem with the help of the **html** proper
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/2hr77egx	Menu. Item HTML Content}}
+**Related sample**: [Menu. Item HTML Content](https://snippet.dhtmlx.com/2hr77egx)
 
 ### Showing/hiding a navItem
 
@@ -105,7 +103,7 @@ menu.show(id);
 menu.hide(id);
 ~~~
 
-### Enabling/disabling a navItem 
+### Enabling/disabling a navItem
 
 Any navItem in the menu can be enabled/disabled:
 
@@ -113,7 +111,6 @@ Any navItem in the menu can be enabled/disabled:
 menu.enable(id);
 menu.disable(id);
 ~~~
-
 
 ## Custom HTML
 
@@ -123,7 +120,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ### Adding Custom HTML
 
-Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection/api/refs/treecollection.md):
+Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
 
 ~~~js
 menu.data.add({
@@ -135,15 +132,13 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/nk65jfmx	Menu. Custom HTML}}
+**Related sample**: [Menu. Custom HTML](https://snippet.dhtmlx.com/nk65jfmx)
 
 #### Properties
 
 See [the full list of properties](menu/api/api_customhtml_properties.md) that you can provide in the configuration object of a Custom HTML control.
 
-
-Separator
-------------
+## Separator
 
 This is a horizontal (between menu options) or vertical (between menu items) line separating items/groups of items from each other.
 
@@ -159,19 +154,17 @@ menu.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/71tybx5j	Menu. Separator}}
+**Related sample**: [Menu. Separator](https://snippet.dhtmlx.com/71tybx5j)
 
 #### Properties
 
 See [the full list of properties](menu/api/api_separator_properties.md) that you can provide in the configuration object of a Separator control.
 
-Spacer
------------
+## Spacer
 
 This item takes space on the toolbar and is used for aligning controls.
 
 ![DHX Toolbar spacer](../assets/menu/spacer.png)
-
 
 ### Adding Spacer
 
@@ -183,11 +176,8 @@ toolbar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/fjaolual	Menu. Spacer}}
+**Related sample**: [Menu. Spacer](https://snippet.dhtmlx.com/fjaolual)
 
 #### Properties
 
 See [the full list of properties](menu/api/api_spacer_properties.md) that you can provide in the configuration object of a Spacer control.
-
-@todo:
-add links to api and to samples, complete the list of attrs for item

@@ -1,16 +1,16 @@
 ---
 sidebar_label: data
-title: data
----          
+title: JavaScript Menu - data Config 
+description: You can explore the data config of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# data
 
 @short: specifies an array of data objects to set into Menu
 
-```todoapi 
-array data;
-data?: any[] | TreeCollection<any>;
-```
+@signature: {'data?: array;'}
 
-@example: 
+@example:
 const menu = new dhx.Menu("menu_container", {
     data: [{
         "id": "edit",
@@ -44,10 +44,8 @@ const menu = new dhx.Menu("menu_container", {
     ]
 });
 
+@descr:
 
-@template:	api_config
-@descr: 
+**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-@related: menu/from_script.md
-
-@relatedsample: https://snippet.dhtmlx.com/cg62qa9v	Menu. Basic Initialization
+[comment]: # (@related: menu/from_script.md)

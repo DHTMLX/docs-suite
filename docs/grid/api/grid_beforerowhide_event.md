@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeRowHide
-title: beforeRowHide
----          
+title: JavaScript Grid - beforeRowHide Event 
+description: You can explore the beforeRowHide event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeRowHide
 
 @short: fires before a row is hidden
 
-@signature: beforeRowHide: (row: object) => boolean | void;
+@signature: {'beforeRowHide: (row: object) => boolean | void;'}
 
-@params: 
-- row   object  an object with a row configuration
+@params:
+`row: object` - an object with a row configuration
 
 @returns:
-- result	boolean		false - to prevent a row from being hidden, otherwise true
+Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
 grid.events.on("BeforeRowHide", function(row){
@@ -19,10 +22,8 @@ grid.events.on("BeforeRowHide", function(row){
     return false;
 });
 
-
-@template: api_event
 @descr:
 
-@changelog: added in v7.0
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
-[Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+@changelog: added in v7.0

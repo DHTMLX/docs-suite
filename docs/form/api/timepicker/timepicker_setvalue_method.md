@@ -1,16 +1,18 @@
 ---
-sidebar_label: setValue
-title: setValue
-description: description
----          
+sidebar_label: setValue()
+title: JavaScript Form - setValue Timepicker Method 
+description: You can explore the setValue Timepicker method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# setValue()
 
 @short: sets the value for a TimePicker control
 
-@params:
-- value     Date|number|string|array|object    the value to be set for the control
+@signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
 
-``` todo
+@params:
+`value: Date | number | string | array | object` - the value to be set for the control
+
 @example:
 // set the value as a string
 form.getItem("timepicker").setValue("10:30");
@@ -27,10 +29,9 @@ form.getItem("timepicker").setValue(1559288966422);
 // set the value as an object
 form.getItem("timepicker").setValue({hour: 10, minute: 50, AM: true});
 
-```
 
-@template: api_method
 @descr:
+
 1\. The value of a timepicker control set as an array should have the following elements:
 
 - the hour value
@@ -45,5 +46,5 @@ form.getItem("timepicker").setValue({hour: 10, minute: 50, AM: true});
 3\. The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)
 method of the **Date** object.
 
-@changelog: 
+@changelog:
 The ability to set the value as a number, as an array, or as an object is added in v7.0.

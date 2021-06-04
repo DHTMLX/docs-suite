@@ -1,55 +1,47 @@
 ---
 sidebar_label: canColumnDrop
-title: canColumnDrop
----          
+title: JavaScript TreeGrid - canColumnDrop Event 
+description: You can explore the canColumnDrop event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# canColumnDrop
 
 @short: fires when a dragged column is placed over a target column
 
-@signature: canColumnDrop: (data: object, events: MouseEvent) => void;
+@signature: {'canColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
-- data		object		data object
-- e		    Event		a native event object
+- `data: object` - data object
+- `events: MouseEvent` - a native HTML event object
 
 @example:
 treegrid.events.on("CanColumnDrop", function(data, events) {
   // your logic here
 });
 
-@template: api_event
 @descr:
+
 The data object contains the following parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>start</b></td>
+			<td><b>start</b></td>
 			<td>(<i>string</i>) the id of a column, from which the dragging process has started</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>source</b></td>
+			<td><b>source</b></td>
 			<td>(<i>string[]</i>) an array with ids of dragged columns</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>target</b></td>
+			<td><b>target</b></td>
 			<td>(<i>string</i>) the id of a potential target column</td>
 		</tr>
     </tbody>
 </table>
 
-
 @changelog: added in v7.0
 
+[comment]: # (@relatedapi: treegrid/api/treegrid_dragitem_config.md treegrid/api/treegrid_aftercolumndrag_event.md treegrid/api/treegrid_aftercolumndrop_event.md treegrid/api/treegrid_beforecolumndrag_event.md treegrid/api/treegrid_beforecolumndrop_event.md treegrid/api/treegrid_cancelcolumndrop_event.md treegrid/api/treegrid_dragcolumnin_event.md treegrid/api/treegrid_dragcolumnout_event.md treegrid/api/treegrid_dragcolumnstart_event.md)
 
-@relatedapi:
-treegrid/api/treegrid_dragitem_config.md
-treegrid/api/treegrid_aftercolumndrag_event.md
-treegrid/api/treegrid_aftercolumndrop_event.md
-treegrid/api/treegrid_beforecolumndrag_event.md
-treegrid/api/treegrid_beforecolumndrop_event.md
-treegrid/api/treegrid_cancelcolumndrop_event.md
-treegrid/api/treegrid_dragcolumnin_event.md
-treegrid/api/treegrid_dragcolumnout_event.md
-treegrid/api/treegrid_dragcolumnstart_event.md
-
-@related: treegrid/configuration.md#dragndropofgridcolumns
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-columns)

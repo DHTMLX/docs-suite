@@ -1,13 +1,14 @@
 ---
 sidebar_label: Customization
-title: Customization
----          
+title: JavaScript Menu - Customization 
+description: You can explore the customization of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-Icons
-------------
+# Customization
 
-dhtmlxMenu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
-a page and apply icons for Menu controls.
+## Icons
+
+dhtmlxMenu uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on a page and apply icons for Menu controls.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
 after the source files of dhtmlxMenu as follows:
@@ -21,7 +22,7 @@ after the source files of dhtmlxMenu as follows:
     crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/from_script.md#jsonformattemplates) for menu:
+Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/from_script.md#json-format-templates) for menu:
 
 ~~~js
 [
@@ -42,12 +43,11 @@ Then you can use the name of the icon as the value of the **icon** property in t
 
 ![](../assets/menu/custom_icons.png)
 
-{{editor	https://snippet.dhtmlx.com/nkmz6ilv	Menu. Custom Icons}}
+**Related sample**: [Menu. Custom Icons](https://snippet.dhtmlx.com/nkmz6ilv)
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
 
-Styling 
------------
+## Styling
 
 There is a possibility to make changes in the look and feel of a menu. 
 
@@ -77,4 +77,4 @@ var menu = new dhx.Menu({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/kfy2th5n	Menu. Custom Css}}
+**Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)

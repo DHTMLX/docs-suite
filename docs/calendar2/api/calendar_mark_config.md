@@ -5,14 +5,13 @@ title: mark
 
 @short: adds a CSS class to specific days
 
+todoanton возможно не подставилась signature
 ```todoapi
 function mark;
 mark?: (a: Date) => string;
 ```
 
-@type: function
-
-@example: 
+@example:
 <style>
     .highlight-date {
         color: #fff;
@@ -30,7 +29,7 @@ var calendar = new dhx.Calendar("calendar", {
 
 
 
-@template:	api_config
+
 @descr: 
 The function passed to the method receives one parameter:
 
@@ -39,8 +38,8 @@ The function passed to the method receives one parameter:
 and must return a string with the name of the CSS class or an empty string.
 
 @related:
-calendar/how_to_start.md#initializecalendar
+calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#highlighteddates
 
-@relatedsample:
-https://snippet.dhtmlx.com/ic5oeiga	Calendar. Marked Dates
+**Related sample**:
+- [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)

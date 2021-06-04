@@ -1,29 +1,28 @@
 ---
 sidebar_label: autoWidth
-title: autoWidth
----          
+title: JavaScript Grid - autoWidth Config 
+description: You can explore the autoWidth config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# autoWidth
 
 @short: makes grid's columns to fit the size of a grid
 
-@signature: autoWidth?: boolean;
+@signature: {'autoWidth?: boolean;'}
 
 @default: false
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     autoWidth:true, /*!*/
     data: dataset
 });
 
-
-@template:	api_config
 @descr: 
 
-[Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
-
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#autowidthforcolumns
+**Related sample**: [Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
 
 @changelog: added in v6.4
 
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autowidth-for-columns)

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Spacer
-title: Spacer
----          
+title: JavaScript Form - Spacer 
+description: You can explore the Spacer of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Spacer
 
 This item takes space on the form and is used for aligning controls.
 
@@ -36,7 +39,7 @@ View [the full list of configuration properties of the Spacer control](form/api/
 
 ## Working with Spacer
 
-You can manipulate a Spacer control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Spacer control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can hide the control:
 
@@ -46,8 +49,8 @@ var value = form.getItem("spacer").hide();
 
 ### Methods
 
-Check [the full list of methods of the Spacer control](form/api/api_overview.md#methods-12).
+Check [the full list of methods of the Spacer control](form/api/api_overview.md#spacer-methods).
 
 ### Events
 
-Check [the full list of events of the Spacer control](form/api/api_overview.md#events-12).
+Check [the full list of events of the Spacer control](form/api/api_overview.md#spacer-events).

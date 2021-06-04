@@ -1,25 +1,27 @@
 ---
 sidebar_label: afterExpand
-title: afterExpand
----          
+title: JavaScript Tree - afterExpand Event 
+description: You can explore the afterExpand event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# afterExpand
 
 @short: fires after expanding a tree item
 
-@signature: afterExpand: (id: string) => void;
+@signature: {'afterExpand: (id: string) => void;'}
 
 @params:
-- id    string      the id of an expanded item
+`id: string` - the id of an expanded item
 
 @example:
 tree.events.on("AfterExpand", function(id) {
     // your logic here
 });
 
-@template: api_event
 @descr:
+
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
 @changelog: added in v6.4
 
-@relatedsample: https://snippet.dhtmlx.com/vux1ye9g	Tree. Events
-
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)

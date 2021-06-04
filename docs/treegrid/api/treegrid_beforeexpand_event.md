@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeExpand
-title: beforeExpand
----          
+title: JavaScript TreeGrid - beforeExpand Event 
+description: You can explore the beforeExpand event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeExpand
 
 @short: fires before expanding a treegrid
 
-@signature: beforeExpand: (id: string | number) => boolean | void;
-	
+@signature: {'beforeExpand: (rowId: string | number) => boolean | void;'}
+
 @params:
-- rowId			string,number		the id of an expanded row
+`rowId: string | number` - the id of an expanded row
 
 @returns:
-- result		boolean		false - to block expanding a treegrid, otherwise true
+Return `false` to block expanding of a treegrid; otherwise, `true`.
 
 @example:
 treeGrid.events.on("BeforeExpand", function(rowId) {
@@ -19,10 +22,8 @@ treeGrid.events.on("BeforeExpand", function(rowId) {
     return false;
 });
 
-@template:	api_event
 @descr:
 
-@relatedsample:
-https://snippet.dhtmlx.com/sgwnxshe	TreeGrid. TreeGrid Events	
+**Related sample**: [TreeGrid. TreeGrid Events	](https://snippet.dhtmlx.com/sgwnxshe)
 
 @changelog: added in v6.4

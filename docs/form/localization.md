@@ -1,12 +1,14 @@
 ---
 sidebar_label: Localization
-title: Localization
----          
+title: JavaScript Form - Localization 
+description: You can explore the localization of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Localization
 
 You can apply different languages to the interface of dhtmlxForm, specifically to its SimpleVault control. You just need to translate the corresponding strings for Form labels and apply a ready locale to the component.
 
-Default locale
-------------
+## Default locale
 
 The default (English) locale for Form looks like this:
 
@@ -17,8 +19,7 @@ var en = {
 };
 ~~~
 
-Custom locale
-------------
+## Custom locale
 
 To use a different locale, your need to:
 
@@ -38,6 +39,4 @@ dhx.i18n.setLocale("form", de);
 var form = new dhx.Form("form_container");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/x8n18cr4	Form. Localization}}
-
-
+**Related sample**: [Form. Localization](https://snippet.dhtmlx.com/x8n18cr4)

@@ -1,28 +1,28 @@
 ---
-sidebar_label: hideRow
-title: hideRow
----          
+sidebar_label: hideRow()
+title: JavaScript TreeGrid - hideRow Method 
+description: You can explore the hideRow method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# hideRow()
 
 @short: hides a row of TreeGrid
 
-@signature: hideRow(rowId: string | number): void;
+@signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
-- rowId	string | number   the id of a row
+`rowId: string | number` - the id of a row
 
 @example:
 treegrid.hideRow(rowId);
 
-@template: api_method
 @descr:
 
-[TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
-
-@relatedapi: 
-treegrid/api/treegrid_showrow_method.md
-treegrid/api/treegrid_isrowhidden_method.md
-
-@related: treegrid/usage.md#hidingshowingarow
+**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
 @changelog:
 added in v7.0
+
+[comment]: # (@relatedapi: treegrid/api/treegrid_showrow_method.md treegrid/api/treegrid_isrowhidden_method.md)
+
+[comment]: # (@related: treegrid/usage.md#hidingshowing-a-row)

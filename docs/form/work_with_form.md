@@ -1,8 +1,10 @@
 ---
 sidebar_label: Work with Form
-title: Work with Form
+title: JavaScript Form - Work with Form 
 description: description
----          
+---
+
+# Work with Form
 
 ## Getting values of controls
 
@@ -23,7 +25,7 @@ It is also possible to get this information in the form of FormData. For this, y
 var state = form.getValue(true);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/odod5v12	Form. Get Value}}
+**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
 
 ## Setting new values for controls
 
@@ -38,10 +40,10 @@ form.setValue({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/7nxbtlzs	Form. Set Value}}
+**Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
 
-Enabling/Disabling a form
---------------------------
+## Enabling/Disabling a form
+
 To enable a form, use the [enable()](form/api/form_enable_method.md) method:
 
 ~~~js
@@ -55,7 +57,7 @@ form.disable();
 // -> true|false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/few71nk2	Form. Disable}}
+**Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
 
 ## Checking if a form is disabled
 
@@ -64,14 +66,14 @@ To check if a form is disabled, call the [isDisabled()](form/api/form_isdisabled
 ~~~js
 form.isDisabled(); // -> true/false
 ~~~
- 
+
 To check whether a form control is disabled, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isDisabled()](form/api/form_isdisabled_method.md) method:
 
 ~~~js
 form.isDisabled("input"); // -> returns true/false
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/lthu8p6p	Form. Is Disabled}}
+**Related sample**: [Form. Is Disabled](https://snippet.dhtmlx.com/lthu8p6p)
 
 ## Hiding/Showing a form
 
@@ -94,18 +96,18 @@ To check if a form is visible, call the [isVisible()](form/api/form_isvisible_me
 ~~~js
 form.isVisible(); // -> true/false
 ~~~
- 
+
 To check whether a form control is visible, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isVisible()](form/api/form_isvisible_method.md) method:
 
 ~~~js
 form.isVisible("input"); // -> returns true/false
 ~~~
 
-## Validating form 
+## Validating form
 
 In order to validate a form, you should deal with several aspects: required fields, minimal and maximal values, number of allowed characters, and validation rules.
 
-### Required fields 
+### Required fields
 
 You can easily specify that an input is obligatory to be treated by a user with the help of the **required** attribute. 
 
@@ -125,7 +127,7 @@ While you've set **required:true** for a field, it gets an asterisk next to its 
 
 ![Required fields](../assets/form/required_fields.png)
 
-{{editor	https://snippet.dhtmlx.com/0pr3var0	Form. Required}}
+**Related sample**: [Form. Required](https://snippet.dhtmlx.com/0pr3var0)
 
 The attribute is applicable to the input fields with the input types: "number", "text", "password".
 
@@ -175,12 +177,12 @@ The attributes are applicable to the input/textarea fields with the input types:
 ### Validation rules
 
 To specify the way of validating a particular input/textarea, you can make use of predefined validation rules, they are:
- 
-- "email" - validEmail 
+
+- "email" - validEmail
 - "integer" - validInteger
 - "numeric" - validNumeric
-- "alphanumeric" - validAplhaNumeric 
-- "IPv4" - validIPv4 
+- "alphanumeric" - validAplhaNumeric
+- "IPv4" - validIPv4
 
 Set a string with the name of the necessary rule as a value of the **validation** attribute:
 
@@ -208,7 +210,7 @@ There is also a possibility to specify *a custom validation rule* by setting it 
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/3cz9v7rm	Form. Validation}}
+**Related sample**: [Form. Validation](https://snippet.dhtmlx.com/3cz9v7rm)
 
 {{note If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function.}}
 
@@ -216,18 +218,18 @@ There is also a possibility to specify *a custom validation rule* by setting it 
 
 While specifying validation rules for form fields, you can also provide a set of messages that will notify the end user, whether he/she is filling the form in correctly. There are three types of messages available:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>preMessage</b></td>
+			<td><b>preMessage</b></td>
 			<td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>successMessage</b></td>
+			<td><b>successMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>errorMessage</b></td>
+			<td><b>errorMessage</b></td>
 			<td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
 		</tr>
     </tbody>
@@ -246,7 +248,7 @@ For example, a configuration object for an input with email may look as in:
 }
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/yhiuq2mi	Form. Messages}}
+**Related sample**: [Form. Messages](https://snippet.dhtmlx.com/yhiuq2mi)
 
 ### Validation API
 
@@ -259,24 +261,24 @@ var result = form.validate();
 
 The method should return *true*, if all the fields are filled as required, or *false* if there are fields that require attention.
 
-{{editor	https://snippet.dhtmlx.com/pmz0zk16	Form. Validate}}
+**Related sample**: [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
 ## Sending form to server
 
 To send a form to the server, make use of the [](form/api/form_send_method.md) method. It takes three parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>url</b></td>
+			<td><b>url</b></td>
 			<td>(<i>string</i>) the URL of the server</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>method</b></td>
+			<td><b>method</b></td>
 			<td>(<i>string</i>) the request type, "POST" by default</td>
 		</tr>
 		<tr>
-			<td class="webixdoc_links0"><b>asFormData</b></td>
+			<td><b>asFormData</b></td>
 			<td>(<i>boolean</i>) optional, defines whether values of Form controls should be sent as Form Data</td>
 		</tr>
     </tbody>
@@ -321,7 +323,7 @@ form.clear("value");
 form.clear();
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/a64ih4ih	Form. Clear}}
+**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
 
 ## Setting focus to a control
 
@@ -333,6 +335,6 @@ Starting from v7.0, you can set focus to a Form control via the [setFocus()](for
 form.setFocus("input");
 ~~~
 
-[Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
+**Related sample**: [Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
 
 It is possible to set focus to DatePicker, Checkbox, ColorPicker, Combo, Input, RadioGroup, Select, Textarea, TimePicker controls of Form.

@@ -1,11 +1,12 @@
 ---
 sidebar_label: Work with List
-title: Work with List
+title: JavaScript List - Work with List
+description: You can explore how to work with List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
----          
+# Work with List
 
-Setting focus on item
---------------------------
+## Setting focus on item
 
 To set focus on a List item, make use of the [](list/api/list_setfocus_method.md) method. It takes the id of an item as a parameter:
 
@@ -13,7 +14,7 @@ To set focus on a List item, make use of the [](list/api/list_setfocus_method.md
 list.setFocus("7");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/ermcjx3d	List. Set Active Index}}
+**Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
 
 To get the id of a List item in focus, use the [](list/api/list_getfocus_method.md) method. It will return the id of an item in focus:
 
@@ -21,8 +22,7 @@ To get the id of a List item in focus, use the [](list/api/list_getfocus_method.
 list.getFocus(); // -> "6"
 ~~~
 
-Editing items
--------------
+## Editing items
 
 You can edit a particular List item with the help of the [](list/api/list_edititem_method.md) method. It takes as a parameter the id of an item:
 
@@ -30,31 +30,28 @@ You can edit a particular List item with the help of the [](list/api/list_editit
 list.editItem("1");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6wsxgswc	List. Edit Items}}
+**Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
 
-Disabling and enabling selection of an item
-----------------------------------
+## Disabling and enabling selection of an item
 
-For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](list/usage_selection.md#enablingdisablingselectionobject).
+For information on disabling/enabling selection of an item, read [Enabling/Disabling Selection object](list/usage_selection.md#enablingdisabling-selection-object).
 
+## Using Data Collection API
 
-Using Data Collection API
-------------------------
-
-You can manipulate List items with the help of the [Data collection API](data_collection/api/refs/datacollection.md). 
+You can manipulate List items with the help of the [Data collection API](data_collection/index.md). 
 
 ### Adding items into List
 
 It is possible to add more items into the initialized List on the fly. Use the **add()** method of Data Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>(<i>object</i>) the configuration object of the added item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>index</b></td>
+			<td><b>index</b></td>
 			<td>(<i>number</i>) optional, the position to add an item at</td>
 		</tr>
     </tbody>
@@ -65,20 +62,20 @@ It is possible to add more items into the initialized List on the fly. Use the *
 list.data.add({value:"New item"},1);
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/f7cbdiqg	List. Add}}
+**Related sample**: [List. Add](https://snippet.dhtmlx.com/f7cbdiqg)
 
-###Updating List items
+### Updating List items
 
 You can change config options of the item via the **update()** method of Data Collection. It takes two parameters:
 
-<table class="webixdoc_links">
+<table>
 	<tbody>
         <tr>
-			<td class="webixdoc_links0"><b>id</b></td>
+			<td><b>id</b></td>
 			<td>the id of the item</td>
 		</tr>
         <tr>
-			<td class="webixdoc_links0"><b>config</b></td>
+			<td><b>config</b></td>
 			<td>an object with new configuration of the item</td>
 		</tr>
     </tbody>
@@ -92,9 +89,9 @@ list.data.update("option_id",{
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/6jpn7a6h	List. Update}}
+**Related sample**: [List. Update](https://snippet.dhtmlx.com/6jpn7a6h)
 
-###Removing items from List
+### Removing items from List
 
 To remove an item, make use of the **remove()** method of Data Collection. Pass the id of the item that should be removed to the method:
 
@@ -102,12 +99,11 @@ To remove an item, make use of the **remove()** method of Data Collection. Pass 
 list.data.remove("option_id");
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wmozu18g	List. Delete}}
+**Related sample**: [List. Delete](https://snippet.dhtmlx.com/wmozu18g)
 
-###Filtering List data
+### Filtering List data
 
-You can filter List data by the specified criteria with the help of the [](data_collection/api/filter.md) method of Data collection. Check all details on parameters of the method in the
-[Data collection API](data_collection/api/refs/datacollection.md).
+You can filter List data by the specified criteria with the help of the [](data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
 ~~~js
 list.data.filter({
@@ -117,13 +113,13 @@ list.data.filter({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/k8kvmy8v	List. Filter}}
+**Related sample**: [List. Filter](https://snippet.dhtmlx.com/k8kvmy8v)
 
 Filtering can be applied to any attribute of a data item.
 
-###Sorting List data
+### Sorting List data
 
-It is possible to sort data in List via the [](data_collection/api/sort.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/api/refs/datacollection.md).
+It is possible to sort data in List via the [](data_collection/api/datacollection_sort_method.md) method of Data collection. Check all details on parameters of the method in the [Data collection API](data_collection/index.md).
 
 ~~~js
 list.data.sort({ 
@@ -132,12 +128,10 @@ list.data.sort({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/876meu9a	List. Sort}}
+**Related sample**: [List. Sort](https://snippet.dhtmlx.com/876meu9a)
 
 Sorting can be applied to any attribute of a data item.
 
-Using Selection API
--------------
+## Using Selection API
 
 For information on using Selection API, read [Work with Selection Object](list/usage_selection.md).
-

@@ -28,7 +28,7 @@ calendar.showDate(new Date(2020,11,12),"month");
 calendar.showDate(null,"month");
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/nyfzc8cl	Calendar. Showing Particular Calendar Date And Mode}}
+**Related sample**: [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
 
 - **"year"** - allows selecting a year
 
@@ -65,7 +65,7 @@ There is a possibility to get the current mode of displaying Calendar via the [g
 var mode = calendar.getCurrentMode(); // -> "calendar"
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/fadykqoc	Calendar. Get Current Mode}}
+**Related sample**: [Calendar. Get Current Mode](https://snippet.dhtmlx.com/fadykqoc)
 
 ## Getting selected date
 
@@ -78,7 +78,7 @@ var date1 = calendar.getValue(); // -> "20/08/19"
 var date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300 
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/k2vrfqj0	Calendar. Getting Selected Date}}
+**Related sample**: [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
 
 If you work with a calendar in the [range mode](calendar/configuring.md#rangemode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
 
@@ -118,7 +118,7 @@ calendar2.events.on("change", function (date) {
 });
 ~~~
 
-{{editor    https://snippet.dhtmlx.com/dxo54017	Calendar. Date Range}}
+**Related sample**: [Calendar. Date Range](https://snippet.dhtmlx.com/dxo54017)
 
 ## Selecting date 
 
@@ -151,7 +151,7 @@ calendar.setValue(["03/06/19", "15/06/19"]);
 
 In case a date has been successfully added into the calendar, the method will return *true*.
 
-{{editor    https://snippet.dhtmlx.com/vmg11002	Calendar. Preset Selected Date}}
+**Related sample**: [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
 
 
 {{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the

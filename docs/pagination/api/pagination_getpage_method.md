@@ -1,32 +1,24 @@
 ---
-sidebar_label: getPage
-title: getPage
----          
+sidebar_label: getPage()
+title: JavaScript Pagination - getPage Method 
+description: You can explore the getPage method of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# getPage()
 
 @short: returns the index of the active page
 
-
-@params:
-
+@signature: {'getPage(): number;'}
 
 @returns:
-- param	number      the index of the active page
-
+A number with the index of the active page.
 
 @example:
 const pageIndex = pagination.getPage();
 // -> 3
 
-
-@template: api_method
 @descr:
 
+**Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
-
-
-
-[Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
-
-@changelog:
-
-@related: pagination/usage.md#settinggettingtheactivepage
+[comment]: # (@related: pagination/usage.md#settinggetting-the-active-page)

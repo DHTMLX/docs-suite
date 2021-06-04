@@ -1,26 +1,23 @@
 ---
 sidebar_label: mouseDown
-title: mouseDown
----          
+title: JavaScript Slider - mouseDown Event 
+description: You can explore the mouseDown event of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# mouseDown
 
 @short: fires on pressing the left mouse button over the slider thumb
 
-```todoapi ```
+@signature: {'mousedown: (event: Event) => void;'}
 
 @params:
-- e 		Event		the native event object
-
+`event: event` - the native event object
 
 @example:
 slider.events.on("MouseDown", function(e){
     // your code here
 });
 
-
-@relatedsample:https://snippet.dhtmlx.com/sc7ov54z	Slider. Slider Events
-
-@template: api_event
 @descr:
 
-
-
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)

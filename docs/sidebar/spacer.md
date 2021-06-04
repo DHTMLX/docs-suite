@@ -1,8 +1,10 @@
 ---
 sidebar_label: Spacer
-title: Spacer
----          
+title: JavaScript Sidebar - Spacer 
+description: You can explore the Spacer of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
+# Spacer
 
 This item takes space on the sidebar and is used for aligning controls.
 
@@ -18,12 +20,11 @@ sidebar.data.add({
 });
 ~~~
 
-{{editor	https://snippet.dhtmlx.com/wk50830i	Sidebar. Spacer}}
+**Related sample**: [Sidebar. Spacer](https://snippet.dhtmlx.com/wk50830i)
 
 ### Properties
 
 You can provide the [following properties](sidebar/api/api_spacer_properties.md) in the configuration object of a Spacer control.
-
 
 ## Showing/hiding spacer
 
@@ -34,8 +35,4 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-<br/>
-
-Check the full list of available operations in the [Sidebar API](sidebar/api/refs/sidebar.md) and [Tree Collection API](tree_collection/api/refs/treecollection.md).
-
-
+Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).

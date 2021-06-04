@@ -1,15 +1,18 @@
 ---
 sidebar_label: Select
-title: Select
----          
+title: JavaScript Form - Select 
+description: You can explore the Select of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Select
 
 An advanced select box that provides a set of options to choose from.
 
 ![Select control](../assets/form/form_select.png)
 
-{{editor    https://snippet.dhtmlx.com/ikyyekxq	Form. All DhxForm Inputs}}
+**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
 
-{{editor	https://snippet.dhtmlx.com/yo9w9o2t	Form. Select}}
+**Related sample**: [Form. Select](https://snippet.dhtmlx.com/yo9w9o2t)
 
 ## Adding Select
 
@@ -54,7 +57,7 @@ View [the full list of configuration properties of the Select control](form/api/
 
 ## Working with Select
 
-You can manipulate a Select control by using methods (or [events](#eventhandling)) of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+You can manipulate a Select control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
 
 For example, you can get the value of the control:
 
@@ -64,8 +67,8 @@ var value = form.getItem("select").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Select control](form/api/api_overview.md#methods-9).
+Check [the full list of methods of the Select control](form/api/api_overview.md#select-methods).
 
 ### Events
 
-Check [the full list of events of the Select control](form/api/api_overview.md#events-9).
+Check [the full list of events of the Select control](form/api/api_overview.md#select-events).

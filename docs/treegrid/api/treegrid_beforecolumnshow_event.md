@@ -1,17 +1,20 @@
 ---
 sidebar_label: beforeColumnShow
-title: beforeColumnShow
----          
+title: JavaScript TreeGrid - beforeColumnShow Event 
+description: You can explore the beforeColumnShow event of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# beforeColumnShow
 
 @short: fires before a column is shown on a page
 
-@signature: beforeColumnShow: (col: object) => boolean | void;
+@signature: {'beforeColumnShow: (col: ICol) => boolean | void;'}
 
-@params: 
-- col   object  an object with a column configuration
+@params:
+`col: object` - an object with a column configuration
 
 @returns:
-- result	boolean		false - to prevent a column from being shown, otherwise true
+Return `false` to prevent a column from being shown; otherwise, `true`.
 
 @example:
 treegrid.events.on("BeforeColumnShow", function(column){
@@ -19,9 +22,8 @@ treegrid.events.on("BeforeColumnShow", function(column){
     return false;
 });
 
-@template: api_event
 @descr:
 
-@changelog: added in v7.0
+**Related sample**:  [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
-[TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
+@changelog: added in v7.0

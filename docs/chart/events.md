@@ -1,7 +1,10 @@
 ---
 sidebar_label: Event Handling
-title: Event Handling
----          
+title: JavaScript Chart - Event Handling 
+description: You can explore the event handling of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Event Handling
 
 ## Attaching event listeners
 
@@ -15,7 +18,7 @@ chart.events.on("Resize", function({width:500, height:500}){
 
 {{note The names of events are case-insensitive.}}
 
-{{editor    https://snippet.dhtmlx.com/a1b9yfwo	Chart. Events}}
+**Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
 
 ## Detaching event listeners
 
@@ -40,6 +43,4 @@ chart.events.fire("name",args);
 
 ## The list of events
 
-The full list of events is available in the related [API section](chart/api/refs/chart_events.md).
-
-
+The full list of events is available in the related [API section](chart/api/api_overview.md#events).

@@ -1,18 +1,20 @@
 ---
-sidebar_label: setCell
-title: setCell
----          
+sidebar_label: setCell()
+title: JavaScript Grid - setCell Method 
+description: You can explore the setCell method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# setCell()
 
 @short: sets selection to specified cells
 
-@signature: etCell(row?: object | string, col?: object |  string, ctrlUp?: boolean, shiftUp?: boolean): void;
+@signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:
-- row     object|string    an object with a cell to be selected or the id of a row
-- column  object|string    the config of a column or its id
-- ctrlUp  boolean     <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (for multiselection mode)
-- shiftUp   boolean     <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (for multiselection mode)
-
+- `row: object | string` - an object with a cell to be selected or the id of a row
+- `column: object | string` - the config of a column or its id
+- `ctrlUp: boolean` - *true* - to select the desired rows or cells, otherwise - *false* (for multiselection mode)
+- `shiftUp: boolean` - *true* - to select a range of rows or cells, otherwise - *false* (for multiselection mode)
 
 @example:
 var grid = new dhx.Grid("grid_container", {
@@ -22,24 +24,16 @@ var grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 
-
 var row = grid.data.getItem(grid.data.getId(0));
 var column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 
-
-@template: api_method
 @descr:
 
+{{note For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#setting-selection-to-cells).}}
 
-{{note For details about how to set selection to multiple cells/rows, see [Setting selection to cells](grid/usage_selection.md#settingselectiontocells).}}
+**Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
 
-@related: grid/usage_selection.md
+[comment]: # (@related: grid/usage_selection.md)
 
-@relatedapi: 
-grid/api/selection/selection_enable_method.md
-grid/api/selection/selection_removecell_method.md
-
-@changelog:
-
-@relatedsample: https://snippet.dhtmlx.com/4nj0e9ye	Grid. Multiselection
+[comment]: # (@relatedapi: grid/api/selection/selection_enable_method.md grid/api/selection/selection_removecell_method.md)

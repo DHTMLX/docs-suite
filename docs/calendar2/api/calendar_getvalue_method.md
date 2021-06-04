@@ -31,12 +31,8 @@ var date = calendar.getValue(true);
 var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 
 
-@template: api_method
+
 @descr:
-
-
-
-@changelog:
 
 
 @relatedapi:
@@ -46,5 +42,5 @@ calendar/api/calendar_setvalue_method.md
 calendar/operating_calendar.md#gettingselecteddate
 calendar/configuring.md#rangemode
 
-@relatedsample:
-https://snippet.dhtmlx.com/k2vrfqj0	Calendar. Getting Selected Date
+**Related sample**:
+- [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)

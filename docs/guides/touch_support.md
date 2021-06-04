@@ -1,7 +1,10 @@
 ---
 sidebar_label: Touch Support
-title: Touch Support
----          
+title: JavaScript Guides - Touch Support 
+description: You can learn about touch support in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Touch Support
 
 Since version 7.0 and upper, the dhtmlxSuite library provides the built-in Touch support that should work out of the box. As a result, the interaction with the DHTMLX-based apps on touch devices becomes more comfy and predictable. 
 
@@ -15,7 +18,3 @@ Touch support works for all DHTMLX widgets and enables recognition for the follo
 - **Double Tap** - to edit items
 - **Press and Hold** - to call the context menu
 - **Drag** - to resize and reorder items, to change the value in Slider, ColorPicker, or TimePicker
-
-
-
-

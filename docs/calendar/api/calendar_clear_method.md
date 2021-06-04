@@ -1,21 +1,20 @@
 ---
-sidebar_label: clear
-title: clear
----          
+sidebar_label: clear()
+title: JavaScript Calendar - clear Method 
+description: You can explore the clear method of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# clear()
 
 @short: clears the value set in the calendar
 
-@signature: clear(): void;
+@signature: {'clear(): void;'}
 
 @example:
 calendar.clear()
 
-@template: api_method
-
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/zu2n05at	Calendar. Clear Value
+**Related sample**: [Calendar. Clear Value](https://snippet.dhtmlx.com/zu2n05at)
 
 @changelog: added in v6.4
-
-

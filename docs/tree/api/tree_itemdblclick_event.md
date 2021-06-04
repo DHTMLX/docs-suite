@@ -1,17 +1,18 @@
 ---
 sidebar_label: itemDblClick
-title: itemDblClick
----          
+title: JavaScript Tree - itemDblClick Event 
+description: You can explore the itemDblClick event of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# itemDblClick
 
 @short: fires on double-clicking a tree item
 
-@signature: itemDblClick: (id: string, e: Event) => void;
-
-<!-- в d.ts any-->
+@signature: {'itemDblClick: (id: string, e: Event) => void;'}
 
 @params:
-- id	string		the id of an item
-- e		Event		a native event object
+- `id: string` - the id of an item
+- `e: Event` - a native event object
 
 @example:
 // allows opening folders on double click
@@ -19,10 +20,8 @@ tree.events.on("ItemDblClick", function(id, e){
 	tree.data.update(id, {opened: !tree.data.getItem(id).opened})
 });
 
-
-@template: api_event
 @descr:
 
-@relatedsample: https://snippet.dhtmlx.com/vux1ye9g	Tree. Events
+**Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
 
-@related: tree/events_handling.md
+[comment]: # (@related: tree/events_handling.md)

@@ -1,25 +1,24 @@
 ---
 sidebar_label: minHeight
-title: minHeight
----          
+title: JavaScript Window - minHeight Config 
+description: You can explore the minHeight config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# minHeight
 
 @short: sets the minimal height of a window
 
-@signature: minHeight?: number;
+@signature: {'minHeight?: number;'}
 
 @default: 100
 
-@example: 
+@example:
 var dhxWindow = new dhx.Window({
     minHeight:170
 });
 
 dhxWindow.show();
 
+@descr:
 
-@template:	api_config
-@descr: 
-
-@related: window/how_to_start.md
-window/configuration.md#sizing
-
+[comment]: # (@related: window/how_to_start.md window/configuration.md#sizing)

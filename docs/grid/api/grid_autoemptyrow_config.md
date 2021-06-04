@@ -1,27 +1,26 @@
 ---
 sidebar_label: autoEmptyRow
-title: autoEmptyRow
----          
+title: JavaScript Grid - autoEmptyRow Config 
+description: You can explore the autoEmptyRow config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# autoEmptyRow
 
 @short: adds an empty row after the last filled row in the Grid
 
-@signature: autoEmptyRow?: boolean;
+@signature: {'autoEmptyRow?: boolean;'}
 
 @default: true
 
-@example: 
+@example:
 var grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	autoEmptyRow:true,  /*!*/
 	data: dataset
 });
 
-
-@template:	api_config
 @descr: 
 
-@related: grid/initialization.md#initializegrid
-grid/configuration.md#automaticaddingofemptyrowintogrid
+**Related sample**: [Grid. Auto Empty Row](https://snippet.dhtmlx.com/rkytig73)
 
-@relatedsample:
-https://snippet.dhtmlx.com/rkytig73	Grid. Auto Empty Row
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#automatic-adding-of-empty-row-into-grid)

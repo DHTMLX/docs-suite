@@ -1,7 +1,10 @@
 ---
 sidebar_label: Dynamic Loading
-title: Dynamic Loading
----          
+title: JavaScript Helpers - Dynamic Loading 
+description: You can learn about dynamic loading in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Dynamic Loading
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
@@ -10,11 +13,10 @@ This helper allows getting data partially, on demand, and rendering only those r
 
 Read the related articles for detailed information about how to display large lists and tabular data efficiently:
 
-- [dynamic loading in Grid](grid/data_loading.md#dynamicloading)
-- [dynamic loading in List](list/load_data.md#dynamicloading) (You need to set the **virtual:true** property in the configuration object of List) 
+- [dynamic loading in Grid](grid/data_loading.md#dynamic-loading)
+- [dynamic loading in List](list/load_data.md#dynamic-loading) (You need to set the **virtual:true** property in the configuration object of List) 
 
-Initialize LazyDataProxy
----------------------------
+## Initialize LazyDataProxy
 
 Initialize LazyDataProxy with the dhx.LazyDataProxy object constructor. The constructor takes two parameters:
 
@@ -39,8 +41,7 @@ There is a list of parameters that you can specify in the configuration object. 
 - **delay** - (*number*) time interval (in milliseconds) to wait before the next dynamic loading request to the server (allows decreasing the number of server request during quick scrolling); default value: 50
 - **prepare** - (*number*) the count of extra records that should be loaded from the server; default value: 0
 
-Server-side Response
--------------------------
+## Server-side Response
 
 Server side will send the following data to the client side:
 
@@ -59,22 +60,18 @@ total_count: 233,
 from: 15
 ~~~
 
-Updating URL
----------------
+## Updating URL
 
-You can use the **updateURL** method to update the URL where the data will be loaded or to change parameters for loading data from the backend. The method takes two parameters:
+You can use the **updateUrl** method to update the URL where the data will be loaded or to change parameters for loading data from the backend. The method takes two parameters:
 
 - **url** - (*string*) the URL which the component will use to load data after its initialization. If not specified, the currently existing URL will be used.
 - **config** - (*object*) a configuration object with parameters for loading data from the server. If not specified, clears parameters set earlier.
 
 ~~~js
-lazyDataProxy.updateURL("https://docs.dhtmlx.com/suite/backend/lazyload", {
+lazyDataProxy.updateUrl("https://docs.dhtmlx.com/suite/backend/lazyload", {
     limit: 30,
     prepare: 5,
     delay: 150,
     from: 0
 });
 ~~~
-
-
-@edition: pro
