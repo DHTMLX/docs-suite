@@ -58,7 +58,7 @@ const onBraceNotationMatch = (data, { key, fullMatch }) => {
         case 'note':
             return `:::note\n${data}\n:::`;
         case 'pronote':
-            return `:::danger Pro Note\n${data}\n:::`;
+            return `:::tip Pro version only\n${data}\n:::`;
         case 'editor':
             return data;
         default:
