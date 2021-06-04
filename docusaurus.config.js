@@ -123,7 +123,7 @@ module.exports = {
     noIndex: true, // todo: delete on release
     title: 'DHTMLX Suite Documentation',
     tagline: 'DHTMLX Suite Documentation',
-    url: 'https://docs.dhtmlx.com/suita/',
+    url: 'https://docs.dhtmlx.com',
     baseUrl: '/suita/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
