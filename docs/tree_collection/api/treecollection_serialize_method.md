@@ -11,19 +11,19 @@ description: You can explore the serialize method of TreeCollection in the docum
 @signature: {'serialize(driver?: DataDriver): T[];'}
 
 @params:
-`driver: string` - optional, the format that the data will be serialized into (json, csv, xml), json by default
+`driver: string` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default
 
 @returns:
 Serialized data of the component either as an array of JSON objects or as a CSV/XML string.
 
 @example:
-// serialize data to an array of JSON objects
+// serialize data into an array of JSON objects
 treegrid.data.serialize();
 
-// serialize data to an XML string
+// serialize data into an XML string
 treegrid.data.serialize("xml");
 
-// serialize data to a CSV string
+// serialize data into a CSV string
 treegrid.data.serialize("csv");
 
 @descr:

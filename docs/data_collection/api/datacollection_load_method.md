@@ -13,7 +13,7 @@ description: You can explore the load method of DataCollection in the documentat
 @params:
 
 - `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
-- `driver: string` - optional, DataDriver or type of data (json, csv, xml), json by default
+- `driver: string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @returns:
 A promise of data loading.
