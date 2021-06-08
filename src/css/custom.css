@@ -111,13 +111,14 @@ table {
 /* end styles for tables */
 
 
-/* indent for imgs */
+/* imgs */
 
 .markdown img {
     margin-bottom: var(--ifm-leading);
+    border: 1px solid #e0e0e0;
 }
 
-/* end indent for imgs */
+/* imgs */
 
 
 /* Change the appearance of mobile navigation */
