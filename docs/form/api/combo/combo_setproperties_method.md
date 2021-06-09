@@ -14,7 +14,7 @@ description: You can explore the setProperties Combo Box method of Form in the d
 `properties: object` - an object with the available attributes of the control and their new values
 
 @example:
-form.getItem("combo").getProperties({
+form.getItem("combo").setProperties({
     label: "New label",
     labelPosition: "top"
 });

@@ -8,7 +8,7 @@ description: You can explore the dragItem config of Grid in the documentation of
 
 @short: enables the possibility to reorder grid columns by drag and drop
 
-@signature: {'dragItem?: "row" | "column" | "complex";'}
+@signature: {'dragItem?: "row" | "column";'}
 
 @example:
 var grid = new dhx.Grid("grid_container", {
