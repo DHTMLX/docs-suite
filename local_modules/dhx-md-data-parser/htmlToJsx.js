@@ -196,14 +196,24 @@ const attrs = [
   'wrap',
 ];
 
+const blockChecking = (text, index, all, newText) => {
+  const startingIndex = all.indexOf("```html") || all.indexOf("~~~html");
+  const endingIndex = all.indexOf("```\n") || all.indexOf("~~~");
+  if (index < startingIndex && index > endingIndex) {
+    return newText;
+  } else {
+    return text;
+  }
+}
+
 function convert(stringhtml) {
   let html = stringhtml;
   html = html
-    .replace(/\sclass=/g, ' className=')
-    .replace(/\sfor=/g, ' htmlFor=')
+    .replace(/\sclass=/g, (text, index, all) => blockChecking(text, index, all, ' className='))
+    .replace(/\sfor=/g, (text, index, all) => blockChecking(text, index, all, ' htmlFor='))
     // replace comments
-    .replace(/<!--/g, '{/*')
-    .replace(/-->/g, '*/}');
+    .replace(/<!--/g, (text, index, all) => blockChecking(text, index, all, '{/*'))
+    .replace(/-->/g, (text, index, all) => blockChecking(text, index, all, '*/}'));
 
   [
     'area',
@@ -236,9 +246,16 @@ function convert(stringhtml) {
   });
 
   // replace styles
-  html = html.replace(/\sstyle="(.+?)"/g, (attr, styles) => {
-    const jsxStyles = new StyleParser(styles).toJSXString();
-    return ` style={{${jsxStyles}}}`;
+  html = html.replace(/\sstyle="(.+?)"/g, (attr, styles, index, all) => {
+    const startingIndex = all.indexOf("```html") || all.indexOf("~~~html");
+    const endingIndex = all.indexOf("```\n") || all.indexOf("~~~");
+    if (index < startingIndex && index > endingIndex) {
+      const jsxStyles = new StyleParser(styles).toJSXString();
+      return ` style={{${jsxStyles}}}`;
+    } else {
+      return attr;
+    }
+
   });
   return html;
 }
