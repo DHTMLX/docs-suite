@@ -8,7 +8,7 @@ description: You can explore the getCells method of Grid in the documentation of
 
 @short: returns an array with config objects of selected cells
 
-@signature: {'getCells(): array[];'}
+@signature: {'getCells(): ICell[];'}
 
 @returns:
 An array with configuration objects of selected cells.

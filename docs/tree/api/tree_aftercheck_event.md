@@ -12,7 +12,7 @@ description: You can explore the afterCheck event of Tree in the documentation o
 
 @params:
 - `index: number` - the position of an item
-- `id: string` - the id of the item
+- `id: string | number` - the id of the item
 - `value: boolean` - the state of the item, *true* if the item is checked; otherwise, *false*
 
 @example:

@@ -34,7 +34,7 @@ The **treeState** object contains *key:value* pairs, where *key* is the id of a 
 				<ul>
 					<li>0 - unselected </li>
 					<li>1 - selected  </li>
-					<li>indeterminate (for the parent item, in case its children are partially checked) </li>
+					<li>2 - indeterminate (for the parent item, in case its children are partially checked) </li>
 				</ul>
 			</td>
 		</tr>

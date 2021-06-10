@@ -8,7 +8,7 @@ description: You can explore the getHeaderFilter method of Grid in the documenta
 
 @short: returns an object of the header filter by column id
 
-@signature: {'getHeaderFilter(colId: string | number): HTMLElement | object;'}
+@signature: {'getHeaderFilter(colId: Id): HTMLElement | object;'}
 
 @params:
 `colId: string | number` - the id of a column

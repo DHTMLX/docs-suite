@@ -8,11 +8,11 @@ description: You can explore the scrollTo method of Grid in the documentation of
 
 @short: scrolls a grid to a specified cell
 
-@signature: {'scrollTo(row: string | number, col: string | number): void;'}
+@signature: {'scrollTo(rowId: Id, colId: Id): void;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 
 @example:
 grid.scrollTo("15","c");

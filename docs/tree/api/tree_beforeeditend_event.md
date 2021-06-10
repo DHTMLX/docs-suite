@@ -12,7 +12,7 @@ description: You can explore the beforeEditEnd event of Tree in the documentatio
 
 @params:
 - `value: string` - the value of an item
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 
 @returns:
 Return `false` to block closing of an editor; otherwise, `true`.

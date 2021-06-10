@@ -8,10 +8,10 @@ description: You can explore the afterExpand event of Tree in the documentation 
 
 @short: fires after expanding a tree item
 
-@signature: {'afterExpand: (id: string) => void;'}
+@signature: {'afterExpand: (id: Id) => void;'}
 
 @params:
-`id: string` - the id of an expanded item
+`id: string | number` - the id of an expanded item
 
 @example:
 tree.events.on("AfterExpand", function(id) {
