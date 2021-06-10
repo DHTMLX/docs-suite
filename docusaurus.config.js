@@ -274,7 +274,7 @@ module.exports = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} DHTMLX, Inc. Built with Docusaurus.`,
+            copyright: `Copyright © ${new Date().getFullYear()} XB Software Ltd.`,
         },
     },
     presets: [
