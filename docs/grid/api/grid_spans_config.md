@@ -8,7 +8,7 @@ description: You can explore the spans config of Grid in the documentation of th
 
 @short: describes the configuration of cols/rows spans
 
-@signature: {'spans?: array[];'}
+@signature: {'spans?: ISpan[];'}
 
 @example:
 var grid = new dhx.Grid("grid_container", {

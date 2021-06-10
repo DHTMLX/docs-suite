@@ -8,10 +8,10 @@ description: You can explore the toggle method of Tree in the documentation of t
 
 @short: opens/closes a tree item by id
 
-@signature: {'toggle(id: string): void;'}
+@signature: {'toggle(id: Id): void;'}
 
 @params:
-`id: string` - the id of a tree item to toggle
+`id: string | number` - the id of a tree item to toggle
 
 @example:
 tree.toggle("history");

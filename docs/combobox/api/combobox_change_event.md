@@ -8,10 +8,10 @@ description: You can explore the change event of Combo Box in the documentation 
 
 @short: fires when a new option is selected
 
-@signature: {'change: (ids: string | string[]) => void;'}
+@signature: {'change: (ids: Id | Id[]) => void;'}
 
 @params:
-`id: string | string[]` - the id(s) of a newly selected option(s)
+`ids: string | number | array` - the id(s) of a newly selected option(s)
 
 @example:
 combo.events.on("Change", function(id){

@@ -8,11 +8,11 @@ description: You can explore the getCellRect method of Grid in the documentation
 
 @short: returns the parameters of a cell
 
-@signature: {'getCellRect(row: string | number, col: string | number): object;'}
+@signature: {'getCellRect(rowId: Id, colId: Id): object;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 
 @returns:
 An object with parameters of a cell.

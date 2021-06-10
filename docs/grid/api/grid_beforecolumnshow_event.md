@@ -8,7 +8,7 @@ description: You can explore the beforeColumnShow event of Grid in the documenta
 
 @short: fires before a column is shown on a page
 
-@signature: {'beforeColumnShow: (col: object) => boolean | void;'}
+@signature: {'beforeColumnShow: (col: ICol) => boolean | void;'}
 
 @params:
 `col: object` - an object with a column configuration

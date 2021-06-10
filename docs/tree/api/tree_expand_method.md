@@ -11,7 +11,7 @@ description: You can explore the expand method of Tree in the documentation of t
 @signature: {'expand(id: Id): void;'}
 
 @params:
-`id: string` - the id of an item to expand
+`id: string | number` - the id of an item to expand
 
 @example:
 tree.expand("history");
