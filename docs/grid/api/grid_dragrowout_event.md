@@ -8,7 +8,7 @@ description: You can explore the dragRowOut event of Grid in the documentation o
 
 @short: fires when a row is dragged out of a potential target
 
-@signature: {'dragRowOut: (data: object, events: MouseEvent) => void;'}
+@signature: {'dragRowOut: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - `data: object` - data object
@@ -29,15 +29,15 @@ The data object contains the following parameters:
 	<tbody>
         <tr>
 			<td><b>start</b></td>
-			<td>(<i>string</i>) the id of a row, from which the dragging process has started</td>
+			<td>(<i>string, number</i>) the id of a row, from which the dragging process has started</td>
 		</tr>
         <tr>
 			<td><b>source</b></td>
-			<td>(<i>string[]</i>) an array with ids of dragged rows</td>
+			<td>(<i>array</i>) an array with ids of dragged rows</td>
 		</tr>
         <tr>
 			<td><b>target</b></td>
-			<td>(<i>string</i>) the id of a potential target row</td>
+			<td>(<i>string, number</i>) the id of a potential target row</td>
 		</tr>
     </tbody>
 </table>

@@ -8,7 +8,7 @@ description: You can explore the afterRowHide event of Grid in the documentation
 
 @short: fires after a row is hidden
 
-@signature: {'afterRowHide: (row: object) => void;'}
+@signature: {'afterRowHide: (row: IRow) => void;'}
 
 @params:
 `row: object` - an object with a row configuration

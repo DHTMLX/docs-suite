@@ -8,10 +8,10 @@ description: You can explore the checkItem method of Tree in the documentation o
 
 @short: checks the checkbox of a tree item and all its sub-items
 
-@signature: {'checkItem(id: string): void;'}
+@signature: {'checkItem(id: Id): void;'}
 
 @params:
-`id: string` - the id of an item to check
+`id: string | number` - the id of an item to check
 
 @example:
 tree.checkItem("history");

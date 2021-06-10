@@ -8,7 +8,7 @@ description: You can explore the filterChange event of Grid in the documentation
 
 @short: fires on typing text in an input of a column's header
 
-@signature: {'filterChange: (value: string, colId: string | number, filterId: fixedRowContent) => void;'}
+@signature: {'filterChange: (value: string, colId: Id, filterId: fixedRowContent) => void;'}
 
 @params:
 - `value: string` - an entered value

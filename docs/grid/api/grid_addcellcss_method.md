@@ -8,11 +8,11 @@ description: You can explore the addCellCss method of Grid in the documentation 
 
 @short: adds a style to a cell
 
-@signature: {'addCellCss(row: string | number, col: string | number, css: string): void;'}
+@signature: {'addCellCss(rowId: Id, colId: Id, css: string): void;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 - `css: string` - the name of the CSS class
 
 @example:

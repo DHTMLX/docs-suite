@@ -34,15 +34,15 @@ The data object can contain the following parameters:
 	<tbody>
         <tr>
 			<td><b>start</b></td>
-			<td>(<i>string</i>) the id of an item, from which the dragging process has started</td>
+			<td>(<i>string, number</i>) the id of an item, from which the dragging process has started</td>
 		</tr>
         <tr>
 			<td><b>source</b></td>
-			<td>(<i>string[]</i>) an array with ids of dragged items</td>
+			<td>(<i>array</i>) an array with ids of dragged items</td>
 		</tr>
         <tr>
 			<td><b>target</b></td>
-			<td>(<i>string</i>) the id of a potential target item</td>
+			<td>(<i>string, number</i>) the id of a potential target item</td>
 		</tr>
     </tbody>
 </table>

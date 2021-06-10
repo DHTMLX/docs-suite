@@ -8,7 +8,7 @@ description: You can explore the dragMode config of Tree in the documentation of
 
 @short: enables drag-n-drop in Tree
 
-@signature: {'dragMode?: "target" | "both" | "source";'}
+@signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
 var tree = new dhx.Tree("tree_container", { 

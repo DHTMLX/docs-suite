@@ -8,10 +8,10 @@ description: You can explore the adjustColumnWidth method of Grid in the documen
 
 @short: adjusts the width of a column to make all its content visible
 
-@signature: {'adjustColumnWidth(id: string | number, adjust?: "data" | "header" | "footer" | boolean): void;'}
+@signature: {'adjustColumnWidth(rowId: Id, adjust?: "data" | "header" | "footer" | boolean): void;'}
 
 @params:
-- `id: string | number` - the id of a column
+- `rowId: string | number` - the id of a column
 - `adjust: string | boolean` - optional, the mode of adjusting a column ("data" | "header" | "footer" | boolean)
 
 @example:
