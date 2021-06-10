@@ -8,7 +8,7 @@ description: You can explore the afterRowShow event of Grid in the documentation
 
 @short: fires after a row is shown on a page
 
-@signature: {'afterRowShow: (row: object) => void;'}
+@signature: {'afterRowShow: (row: IRow) => void;'}
 
 @params:
 `row: object` - an object with a row configuration

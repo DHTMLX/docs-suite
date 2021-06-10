@@ -8,7 +8,7 @@ description: You can explore the cancelColumnDrop event of Grid in the documenta
 
 @short: fires on moving a mouse pointer out of borders of a column while dragging the column
 
-@signature: {'cancelColumnDrop: (data: object, events: MouseEvent) => void;'}
+@signature: {'cancelColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
 
 @params:
 - `data: object` - data object
@@ -29,15 +29,15 @@ The data object contains the following parameters:
 	<tbody>
         <tr>
 			<td><b>start</b></td>
-			<td>(<i>string</i>) the id of a column, from which the dragging process has started</td>
+			<td>(<i>string, number</i>) the id of a column, from which the dragging process has started</td>
 		</tr>
         <tr>
 			<td><b>source</b></td>
-			<td>(<i>string[]</i>) an array with ids of dragged columns</td>
+			<td>(<i>array</i>) an array with ids of dragged columns</td>
 		</tr>
         <tr>
 			<td><b>target</b></td>
-			<td>(<i>string</i>) the id of a potential target column</td>
+			<td>(<i>string, number</i>) the id of a potential target column</td>
 		</tr>
     </tbody>
 </table>

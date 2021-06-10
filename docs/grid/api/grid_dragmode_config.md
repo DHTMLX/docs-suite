@@ -8,7 +8,7 @@ description: You can explore the dragMode config of Grid in the documentation of
 
 @short: enables drag-n-drop in Grid
 
-@signature: {'dragMode?: "target" | "both" | "source";'}
+@signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
 var grid = new dhx.Grid("grid_container", {

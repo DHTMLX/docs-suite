@@ -8,10 +8,10 @@ description: You can explore the focusItem method of Tree in the documentation o
 
 @short: sets focus to a specified tree item
 
-@signature: {'focusItem(id: string): void;'}
+@signature: {'focusItem(id: Id): void;'}
 
 @params:
-`id: string` - the id of an item
+`id: string | number` - the id of an item
 
 @example:
 tree.focusItem("1");
