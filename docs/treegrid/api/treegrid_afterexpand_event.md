@@ -8,10 +8,10 @@ description: You can explore the afterExpand event of TreeGrid in the documentat
 
 @short: fires after expanding a treegrid
 
-@signature: {'afterExpand: (id: string) => void;'}
+@signature: {'afterExpand: (rowId: Id) => void;'}
 
 @params:
-`id: string` - the id of an expanded row
+`rowId: string | number` - the id of an expanded row
 
 @example:
 treeGrid.events.on("AfterExpand", function(rowId) {

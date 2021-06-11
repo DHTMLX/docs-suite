@@ -8,10 +8,10 @@ description: You can explore the expand method of TreeGrid in the documentation 
 
 @short: expands a tree node by id
 
-@signature: {'expand(id: string): void;'}
+@signature: {'expand(id: Id): void;'}
 
 @params:
-`id: string` - the id of a node to expand
+`id: string | number` - the id of a node to expand
 
 @example:
 treegrid.expand("native");

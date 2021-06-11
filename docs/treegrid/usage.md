@@ -246,7 +246,7 @@ To make data in TreeGrid well-structured and easily understood you can group dat
 
 To group the content of a treegrid by values of the specified column, pass the id of the column as a parameter to the **groupBy()** method:
 
-- **id** - (*string*) the id of a column
+- **id** - (*string, number*) the id of a column
 
 ~~~
 treegrid.groupBy("age");
@@ -420,11 +420,11 @@ You can easily edit the desired cell of a treegrid with the help of the [](treeg
 	<tbody>
         <tr>
 			<td><b>row</b></td>
-			<td>(<i>string</i>) the id of a row</td>
+			<td>(<i>string, number</i>) the id of a row</td>
 		</tr>
 		<tr>
 			<td><b>col</b></td>
-			<td>(<i>string</i>) the id of a column</td>
+			<td>(<i>string, number</i>) the id of a column</td>
 		</tr>
 		<tr>
 			<td><b>editorType</b></td>

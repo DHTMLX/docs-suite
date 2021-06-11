@@ -36,7 +36,7 @@ treegrid.groupBy(function (item) {
 
 The method takes one parameter, which can be:
 
-- **id** - (*string*) the id of the column 
+- **id** - (*string, number*) the id of the column 
 - a function with a rule of grouping data.The function returns the name of a group and takes one parameter:
     - **item** - a data item
 
