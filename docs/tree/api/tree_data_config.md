@@ -31,7 +31,7 @@ Each **data** object can have the following properties:
 		</tr>
 		<tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the id of an item</td>
+			<td>(<i>string, number</i>) the id of an item</td>
 		</tr>
 		<tr>
 			<td><b>opened</b></td>

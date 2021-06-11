@@ -8,13 +8,13 @@ description: You can explore the getValue method of Combo Box in the documentati
 
 @short: gets id(s) of items from data collection selected in ComboBox
 
-@signature: {'getValue(asArray?: boolean): string | string[];'}
+@signature: {'getValue(asArray?: boolean): Id | Id[];'}
 
 @params:
 `asArray: boolean` - *true*, to return ids as an array of strings
 
 @returns:
-A string, or array that contains id(s) of options selected in ComboBox.
+A string, number, or array that contains id(s) of options selected in ComboBox.
 
 @example:
 var id = combo.getValue();

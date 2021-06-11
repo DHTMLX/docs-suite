@@ -12,7 +12,7 @@ description: You can explore the beforeCheck event of Tree in the documentation 
 
 @params:
 - `index: number` - the position of an item
-- `id: string` - the id of the item
+- `id: string | number` - the id of the item
 
 @returns:
 Return `false` to block changing of the state of a tree item; otherwise, `true`.

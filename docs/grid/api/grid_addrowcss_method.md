@@ -8,10 +8,10 @@ description: You can explore the addRowCss method of Grid in the documentation o
 
 @short: adds a style to a row
 
-@signature: {'addRowCss(id: string | number, css: string): void;'}
+@signature: {'addRowCss(rowId: Id, css: string): void;'}
 
 @params:
-- `id: string | number` - the id of a row
+- `rowId: string | number` - the id of a row
 - `css: string` - the name of the CSS class
 
 @example:

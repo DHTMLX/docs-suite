@@ -8,11 +8,11 @@ description: You can explore the removeCellCss method of Grid in the documentati
 
 @short: removes a style from a cell
 
-@signature: {'removeCellCss(row: string | number, col: string | number, css: string): void;'}
+@signature: {'removeCellCss(rowId: Id, colId: Id, css: string): void;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 - `css: string` - the name of the CSS class
 
 @example:

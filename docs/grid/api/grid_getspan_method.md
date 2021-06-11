@@ -8,11 +8,11 @@ description: You can explore the getSpan method of Grid in the documentation of 
 
 @short: returns an object with spans
 
-@signature: {'getSpan(row: string | number, col: string | number): object;'}
+@signature: {'getSpan(rowId: Id, colId: Id): ISpan;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 
 @returns:
 An object with configuration of a span.
@@ -23,7 +23,7 @@ var span = grid.getSpan("10","a");
 
 @descr:
 
-A returned **span** object contains the following properties:
+A returned **ISpan** object contains the following properties:
 
 <table>
 	<tbody>

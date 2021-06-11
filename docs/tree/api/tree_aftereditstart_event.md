@@ -8,11 +8,11 @@ description: You can explore the afterEditStart event of Tree in the documentati
 
 @short: fires after editing of a tree item has started
 
-@signature: {'afterEditStart: (value: string, id: string) => void;'}
+@signature: {'afterEditStart: (value: string, id: Id) => void;'}
 
 @params:
 - `value: string` - the value of an item
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 tree.events.on("AfterEditStart", function(value, id) {

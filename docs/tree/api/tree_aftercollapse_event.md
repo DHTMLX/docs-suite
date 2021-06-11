@@ -8,10 +8,10 @@ description: You can explore the afterCollapse event of Tree in the documentatio
 
 @short: fires after collapsing a tree item
 
-@signature: {'afterCollapse: (id: string) => void;'}
+@signature: {'afterCollapse: (id: Id) => void;'}
 
 @params:
-`id: string` - the id of a collapsed item
+`id: string | number` - the id of a collapsed item
 
 @example:
 tree.events.on("AfterCollapse", function(id) {

@@ -11,7 +11,7 @@ description: You can explore the editItem method of Tree in the documentation of
 @signature: {'editItem(id: Id, config: IEditorConfig): void;'}
 
 @params:
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 - `config: object` - optional, the config object of an editor
 
 @example:
