@@ -8,10 +8,10 @@ description: You can explore the enable method of Menu in the documentation of t
 
 @short: enables a disabled item(s) of Menu
 
-@signature: {'enable(ids: string | string[]): void;'}
+@signature: {'enable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, one ID or an array of IDs of items
+`ids: string | number | array` - optional, one ID or an array of IDs of items
 
 @example:
 menu.enable("save_btn");

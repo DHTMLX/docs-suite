@@ -11,7 +11,7 @@ description: You can explore the setCell method of Grid in the documentation of 
 @signature: {'setCell(row?: any, col?: any, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:
-- `row: object | string` - an object with a cell to be selected or the id of a row
+- `row: object | string | number` - an object with a cell to be selected or the id of a row
 - `column: object | string` - the config of a column or its id
 - `ctrlUp: boolean` - *true* - to select the desired rows or cells, otherwise - *false* (for multiselection mode)
 - `shiftUp: boolean` - *true* - to select a range of rows or cells, otherwise - *false* (for multiselection mode)

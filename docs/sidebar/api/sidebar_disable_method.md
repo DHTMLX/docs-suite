@@ -8,10 +8,10 @@ description: You can explore the disable method of Sidebar in the documentation 
 
 @short: disables and dims items of Sidebar
 
-@signature: {'disable(ids: string | string[]): void;'}
+@signature: {'disable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, the ID or an array of IDs of items
+`ids: string | number | array` - optional, the ID or an array of IDs of items
 
 @example:
 sidebar.disable("search");

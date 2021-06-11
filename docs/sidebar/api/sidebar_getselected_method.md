@@ -8,7 +8,7 @@ description: You can explore the getSelected method of Sidebar in the documentat
 
 @short: returns an array of IDs of selected items
 
-@signature: {'getSelected(): string[];'}
+@signature: {'getSelected(): Id[];'}
 
 @returns:
 An array of IDs of selected items

@@ -8,7 +8,7 @@ description: You can explore the getHeaderFilter method of TreeGrid in the docum
 
 @short: returns an object of the header filter by column id
 
-@signature: {'getHeaderFilter(colId: string | number): HTMLElement | Combobox;'}
+@signature: {'getHeaderFilter(colId: Id): HTMLElement | Combobox;'}
 
 @params:
 `colId: string | number` - the id of a column

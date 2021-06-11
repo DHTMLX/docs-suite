@@ -8,10 +8,10 @@ description: You can explore the show method of Menu in the documentation of the
 
 @short: shows an item of Menu
 
-@signature: {'show(ids: string | string[]): void;'}
+@signature: {'show(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, an ID or an array of IDs of items
+`ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 menu.show("save_btn");

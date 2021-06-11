@@ -394,11 +394,11 @@ You can easily edit the desired cell of a grid with the help of the [](grid/api/
 	<tbody>
         <tr>
 			<td><b>row</b></td>
-			<td>(<i>string</i>) the id of a row</td>
+			<td>(<i>string, number</i>) the id of a row</td>
 		</tr>
 		<tr>
 			<td><b>col</b></td>
-			<td>(<i>string</i>) the id of a column</td>
+			<td>(<i>string, number</i>) the id of a column</td>
 		</tr>
     </tbody>
 </table>

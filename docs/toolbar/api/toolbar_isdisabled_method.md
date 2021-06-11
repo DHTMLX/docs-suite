@@ -8,10 +8,10 @@ description: You can explore the isDisabled method of Toolbar in the documentati
 
 @short: checks whether an item of Toolbar is disabled
 
-@signature: {'isDisabled(id: string): boolean;'}
+@signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string` - an id of the Toolbar item
+`id: string | number` - an id of the Toolbar item
 
 @returns:
 `true`, if an item of Toolbar is disabled; otherwise, `false`.

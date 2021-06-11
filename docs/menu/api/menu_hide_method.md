@@ -8,10 +8,10 @@ description: You can explore the hide method of Menu in the documentation of the
 
 @short: hides an item of Menu
 
-@signature: {'hide(ids: string | string[]): void;'}
+@signature: {'hide(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, one ID or an array of IDs of items
+`ids: string | number | array` - optional, one ID or an array of IDs of items
 
 @example:
 menu.hide("save_btn");

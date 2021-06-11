@@ -8,10 +8,10 @@ description: You can explore the inputFocus event of Sidebar in the documentatio
 
 @short: fires when a control is focused
 
-@signature: {'inputFocus: (id: string) => void;'}
+@signature: {'inputFocus: (id: Id) => void;'}
 
 @params:
-`id: string` - the ID of a new control
+`id: string | number` - the ID of a new control
 
 @example:
 sidebar.events.on("InputFocus", function(id){

@@ -14,7 +14,7 @@ description: You can explore the Sidebar custom HTML properties of Sidebar in th
 		</tr>
 		<tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the id of an item, auto-generated if not set</td>
+			<td>(<i>string, number</i>) the id of an item, auto-generated if not set</td>
 		</tr>
 		<tr>
 			<td><b>parent</b></td>

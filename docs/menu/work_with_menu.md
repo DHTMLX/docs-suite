@@ -65,7 +65,7 @@ To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_i
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of a menu item</td>
+			<td>(<i>string, number</i>) an id of a menu item</td>
 		</tr>
     </tbody>
 </table>
@@ -86,7 +86,7 @@ To select a particular Menu item, make use of the [select()](menu/api/menu_selec
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of an item</td>
+			<td>(<i>string, number</i>) an id of an item</td>
 		</tr>
         <tr>
 			<td><b>unselect</b></td>
@@ -128,7 +128,7 @@ To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_i
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of a menu item</td>
+			<td>(<i>string, number</i>) an id of a menu item</td>
 		</tr>
     </tbody>
 </table>

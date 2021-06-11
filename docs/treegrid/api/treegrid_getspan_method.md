@@ -8,11 +8,11 @@ description: You can explore the getSpan method of TreeGrid in the documentation
 
 @short: returns an object with spans
 
-@signature: {'getSpan(row: string | number, col: string | number): ISpan;'}
+@signature: {'getSpan(rowId: Id, colId: Id): ISpan;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 
 @returns:
 An object with configuration of a span.
@@ -32,7 +32,7 @@ A returned **span** object contains the following properties:
 			<td>(<i>string|number</i>) mandatory, the id of a row</td>
 		</tr>
 		<tr>
-			<td><b>column</b></td>
+			<td><b>col</b></td>
 			<td>(<i>string|number</i>) mandatory, the id of a column</td>
 		</tr>
 		<tr>

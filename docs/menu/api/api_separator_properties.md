@@ -14,7 +14,7 @@ description: You can explore the Separator properties of Menu in the documentati
 		</tr>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the ID of a control, auto-generated if not set</td>
+			<td>(<i>string, number</i>) the ID of a control, auto-generated if not set</td>
 		</tr>
     </tbody>
 </table>

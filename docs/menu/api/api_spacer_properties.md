@@ -14,7 +14,7 @@ description: You can explore the Spacer properties of Menu in the documentation 
 		</tr>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the ID of a control, auto-generated if not set</td>
+			<td>(<i>string, number</i>) the ID of a control, auto-generated if not set</td>
 		</tr>
     </tbody>
 </table>
