@@ -197,10 +197,14 @@ const attrs = [
 ];
 
 const blockChecking = (text, index, all, newText) => {
-  const startingIndex = all.indexOf("~~~html") || all.indexOf("```html");
-  const endingIndex = all.indexOf("~~~") || all.indexOf("```\n");
+  let startingIndex;
+  let endingIndex;
+  all.replace(/~~~html[\s\S](.*)[\s\S]~~~/g, (_, text, index) => {
+    startingIndex = index;
+    endingIndex = index + text.length - 1;
+  });
 
-  if (((startingIndex === -1 || index > startingIndex) && (endingIndex === -1 || index < endingIndex))) {
+  if (index < startingIndex && index > endingIndex) {
     return newText;
   } else {
     return text;
@@ -248,10 +252,14 @@ function convert(stringhtml) {
 
   // replace styles
   html = html.replace(/\sstyle="(.+?)"/g, (attr, styles, index, all) => {
-    const startingIndex = all.indexOf("~~~html") || all.indexOf("```html");
-    const endingIndex = all.indexOf("~~~") || all.indexOf("```\n");
+    let startingIndex;
+    let endingIndex;
+    all.replace(/~~~html[\s\S](.*)[\s\S]~~~/g, (_, text, index) => {
+      startingIndex = index;
+      endingIndex = index + text.length - 1;
+    });
 
-    if (((startingIndex === -1 || index > startingIndex) && (endingIndex === -1 || index < endingIndex))) {
+    if (index < startingIndex && index > endingIndex) {
       const jsxStyles = new StyleParser(styles).toJSXString();
       return ` style={{${jsxStyles}}}`;
     } else {
