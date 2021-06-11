@@ -6,7 +6,7 @@ description: You can have an overview of the Selection object in the documentati
 
 # Selection overview
 
-A set of APIs that allow you to work with the Selection object. You can use the API of the Selection object when working with the following components: Grid, DataView, List, Tree, TreeGrid.
+A set of APIs that allow you to work with the Selection object. You can use the API of the Selection object when working with the following components: DataView, List, Tree, Grid, TreeGrid.
 
 ## DataView, List, Tree
 
