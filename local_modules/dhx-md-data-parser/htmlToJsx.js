@@ -199,7 +199,7 @@ const attrs = [
 const blockChecking = (text, index, all, newText) => {
   const startingIndex = all.indexOf("```html") || all.indexOf("~~~html");
   const endingIndex = all.indexOf("```\n") || all.indexOf("~~~");
-  if ((startingIndex === -1 || endingIndex === -1) || (index < startingIndex && index > endingIndex)) {
+  if (!(startingIndex === -1 && endingIndex === -1) || (index < startingIndex && index > endingIndex)) {
     return newText;
   } else {
     return text;
@@ -249,7 +249,7 @@ function convert(stringhtml) {
   html = html.replace(/\sstyle="(.+?)"/g, (attr, styles, index, all) => {
     const startingIndex = all.indexOf("```html") || all.indexOf("~~~html");
     const endingIndex = all.indexOf("```\n") || all.indexOf("~~~");
-    if ((startingIndex === -1 || endingIndex === -1) || (index < startingIndex && index > endingIndex)) {
+    if (!(startingIndex === -1 && endingIndex === -1) || (index < startingIndex && index > endingIndex)) {
       const jsxStyles = new StyleParser(styles).toJSXString();
       return ` style={{${jsxStyles}}}`;
     } else {
