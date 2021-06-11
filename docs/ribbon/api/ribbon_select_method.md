@@ -8,10 +8,10 @@ description: You can explore the select method of Ribbon in the documentation of
 
 @short: selects a specified item of Ribbon
 
-@signature: {'select(id: string, unselect: boolean): void;'}
+@signature: {'select(id: Id, unselect: boolean): void;'}
 
 @params:
-- `id: string` - the id of a Ribbon item
+- `id: string | number` - the id of a Ribbon item
 - `unselect: boolean` - optional, *true* to unselect previously selected items; otherwise, *false*; *true* by default
 
 @example:

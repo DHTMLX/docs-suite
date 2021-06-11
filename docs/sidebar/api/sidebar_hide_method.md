@@ -8,10 +8,10 @@ description: You can explore the hide method of Sidebar in the documentation of 
 
 @short: hides items of Sidebar
 
-@signature: {'hide(ids: string | string[]): void;'}
+@signature: {'hide(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, an ID or an array of IDs of items
+`ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 sidebar.hide("search");

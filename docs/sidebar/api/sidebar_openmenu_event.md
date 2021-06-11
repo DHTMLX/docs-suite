@@ -8,10 +8,10 @@ description: You can explore the openMenu event of Sidebar in the documentation 
 
 @short: fires on expanding a menu control
 
-@signature: {'openMenu: (id: string) => void;'}
+@signature: {'openMenu: (id: Id) => void;'}
 
 @params:
-`id: string` - the ID of an opened menu item
+`id: string | number` - the ID of an opened menu item
 
 @example:
 sidebar.events.on("OpenMenu", function(id){

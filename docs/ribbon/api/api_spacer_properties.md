@@ -14,7 +14,7 @@ description: You can explore the Spacer properties of Ribbon in the documentatio
 		</tr>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
+			<td>(<i>string, number</i>) the id of a control, auto-generated if not set</td>
 		</tr>
     </tbody>
 </table>

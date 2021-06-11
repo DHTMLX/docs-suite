@@ -8,10 +8,10 @@ description: You can explore the isSelected method of Sidebar in the documentati
 
 @short: checks whether a specified Sidebar item is selected
 
-@signature: {'isSelected(id: string): boolean;'}
+@signature: {'isSelected(id: Id): boolean;'}
 
 @params:
-`id: string` - the id of a Sidebar item
+`id: string | number` - the id of a Sidebar item
 
 @returns:
 `true`, if an item of Sidebar is selected; otherwise, `false`.

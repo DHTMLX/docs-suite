@@ -8,10 +8,10 @@ description: You can explore the openMenu event of Ribbon in the documentation o
 
 @short: fires on expanding a menu control
 
-@signature: {'openMenu: (id: string) => void;'}
+@signature: {'openMenu: (id: Id) => void;'}
 
 @params:
-`id: string` - the ID of an opened menu item
+`id: string | number` - the ID of an opened menu item
 
 @example:
 ribbon.events.on("OpenMenu", function(id){

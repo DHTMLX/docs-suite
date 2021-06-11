@@ -102,7 +102,7 @@ To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ri
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of an item</td>
+			<td>(<i>string, number</i>) an id of an item</td>
 		</tr>
     </tbody>
 </table>
@@ -124,7 +124,7 @@ To select a particular Ribbon item, make use of the [select()](ribbon/api/ribbon
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of an item</td>
+			<td>(<i>string, number</i>) an id of an item</td>
 		</tr>
         <tr>
 			<td><b>unselect</b></td>
@@ -166,7 +166,7 @@ To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ri
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of a ribbon item</td>
+			<td>(<i>string, number</i>) an id of a ribbon item</td>
 		</tr>
     </tbody>
 </table>

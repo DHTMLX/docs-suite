@@ -8,10 +8,10 @@ description: You can explore the getSelected method of Toolbar in the documentat
 
 @short: returns an array with IDs of selected items
 
-@signature: {'getSelected(): string[];'}
+@signature: {'getSelected(): Id[];'}
 
 @returns:
-An array of string values with IDs of selected items.
+An array of string/number values with IDs of selected items.
 
 @example:
 toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]

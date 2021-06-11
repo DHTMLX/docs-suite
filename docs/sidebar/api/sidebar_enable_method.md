@@ -8,10 +8,10 @@ description: You can explore the enable method of Sidebar in the documentation o
 
 @short: enables disabled items of Sidebar
 
-@signature: {'enable(ids: string | string[]): void;'}
+@signature: {'enable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, one ID or an array of IDs of items
+`ids: string | number | array` - optional, one ID or an array of IDs of items
 
 @example:
 sidebar.enable("search");

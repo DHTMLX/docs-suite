@@ -8,10 +8,10 @@ description: You can explore the hide method of Toolbar in the documentation of 
 
 @short: hides an item of Toolbar
 
-@signature: {'hide(ids: string | string[]): void;'}
+@signature: {'hide(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - one ID or an array of IDs of items
+`ids: string | number | array` - one ID or an array of IDs of items
 
 @example:
 toolbar.hide("save_btn");
