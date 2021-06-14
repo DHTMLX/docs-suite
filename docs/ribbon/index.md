@@ -17,7 +17,8 @@ dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and
 ## Related resources
 
 - You can get dhtmlxRibbon as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxRibbon](https://docs.dhtmlx.com/suite/samples/ribbon/)  
+- There are also [online samples for dhtmlxRibbon](https://docs.dhtmlx.com/suite/samples/ribbon/)
+- To work with data of Ribbon check [TreeCollection API](tree_collection/index.md)
 
 ## Guides
 

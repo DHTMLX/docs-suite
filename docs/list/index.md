@@ -18,7 +18,8 @@ It allows you to arrange multiple objects with similar properties within a singl
 ## Related resources
 
 - You can get dhtmlxList as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxList](https://docs.dhtmlx.com/suite/samples/list/)  
+- There are also [online samples for dhtmlxList](https://docs.dhtmlx.com/suite/samples/list/)
+- To work with data of List check [DataCollection API](data_collection/index.md)
 
 ## Guides
 

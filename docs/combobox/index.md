@@ -19,7 +19,8 @@ Check [online samples for dhtmlxComboBox](https://docs.dhtmlx.com/suite/samples/
 ## Related resources
 
 - You can get dhtmlxComboBox as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxComboBox](https://docs.dhtmlx.com/suite/samples/combobox/)  
+- There are also [online samples for dhtmlxComboBox](https://docs.dhtmlx.com/suite/samples/combobox/)
+- To work with data of ComboBox check [DataCollection API](data_collection/index.md)
 
 ## Guides
 
