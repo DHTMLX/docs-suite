@@ -196,19 +196,41 @@ const attrs = [
   'wrap',
 ];
 
-const blockChecking = (text, index, all, newText) => {
-  let startingIndex;
-  let endingIndex;
-  all.replace(/~~~html[\s\S](.*)[\s\S]~~~/g, (_, text, index) => {
-    startingIndex = index;
-    endingIndex = index + text.length - 1;
-  });
+const getHtmlBlockIndex = all => {
+  const fullIndex = [];
 
-  if (index < startingIndex && index > endingIndex) {
-    return newText;
-  } else {
-    return text;
+  if (all.indexOf("~~~html") !== -1) {
+    all.replace(/~~~html([\s\S]+?)~~~/g, (_, text, index) => {
+      const startingIndex = index;
+      const endingIndex = index + text.length - 1;
+      fullIndex.push({ start: startingIndex, end: endingIndex });
+    });
   }
+
+  if (all.indexOf("```html") !== -1) {
+    all.replace(/```html([\s\S]+?)```/g, (_, text, index) => {
+      const startingIndex = index;
+      const endingIndex = index + text.length - 1;
+      fullIndex.push({ start: startingIndex, end: endingIndex });
+    });
+  }
+
+  return fullIndex;
+}
+
+const blockChecking = (text, index, all, newText) => {
+  let check = false;
+  const fullIndex = getHtmlBlockIndex(all);
+
+  if (fullIndex.length) {
+    fullIndex.forEach(({ start, end }) => {
+      if (index >= start && index <= end) {
+        check = true;
+      }
+    });
+  }
+
+  return check ? text : newText;
 }
 
 function convert(stringhtml) {
@@ -252,20 +274,23 @@ function convert(stringhtml) {
 
   // replace styles
   html = html.replace(/\sstyle="(.+?)"/g, (attr, styles, index, all) => {
-    let startingIndex;
-    let endingIndex;
-    all.replace(/~~~html[\s\S](.*)[\s\S]~~~/g, (_, text, index) => {
-      startingIndex = index;
-      endingIndex = index + text.length - 1;
-    });
+    let check = false;
+    const fullIndex = getHtmlBlockIndex(all);
 
-    if (index < startingIndex && index > endingIndex) {
-      const jsxStyles = new StyleParser(styles).toJSXString();
-      return ` style={{${jsxStyles}}}`;
-    } else {
-      return attr;
+    if (fullIndex.length) {
+      fullIndex.forEach(({ start, end }) => {
+        if (index >= start && index <= end) {
+          check = true;
+        }
+      });
     }
 
+    if (check) {
+      return attr;
+    } else {
+      const jsxStyles = new StyleParser(styles).toJSXString();
+      return ` style={{${jsxStyles}}}`;
+    }
   });
   return html;
 }
