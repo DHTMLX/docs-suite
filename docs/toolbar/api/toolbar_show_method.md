@@ -8,10 +8,10 @@ description: You can explore the show method of Toolbar in the documentation of 
 
 @short: shows an item of Toolbar
 
-@signature: {'show(ids: string | string[]): void;'}
+@signature: {'show(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - an ID or an array of IDs of items
+`ids: string | number | array` - an ID or an array of IDs of items
 
 @example:
 toolbar.show("save_btn");

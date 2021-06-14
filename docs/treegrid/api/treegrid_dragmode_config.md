@@ -8,7 +8,7 @@ description: You can explore the dragMode config of TreeGrid in the documentatio
 
 @short: enables drag-n-drop in Treegrid
 
-@signature: {'dragMode?: "target" | "both" | "source";'}
+@signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", { 

@@ -8,10 +8,10 @@ description: You can explore the disable method of Ribbon in the documentation o
 
 @short: disables and dims an item(s) of Ribbon
 
-@signature: {'disable(ids: string | string[]): void;'}
+@signature: {'disable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, an ID or an array of IDs of items
+`ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 ribbon.disable("save_btn");

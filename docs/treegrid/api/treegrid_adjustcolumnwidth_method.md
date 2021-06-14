@@ -8,10 +8,10 @@ description: You can explore the adjustColumnWidth method of TreeGrid in the doc
 
 @short: adjusts the width of a column to make all its content visible
 
-@signature: {'adjustColumnWidth(id: string | number, adjust?: string | boolean): void;'}
+@signature: {'adjustColumnWidth(colId: Id, adjust?: string | boolean): void;'}
 
 @params:
-- `id: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 - `adjust: string | boolean` - optional, the mode of adjusting a column ("header", "data", true)
 
 @example:

@@ -8,10 +8,10 @@ description: You can explore the getSelected method of Ribbon in the documentati
 
 @short: returns an array of IDs of selected items
 
-@signature: {'getSelected(): string[];'}
+@signature: {'getSelected(): Id[];'}
 
 @returns:
-An array of string values with IDs of selected items.
+An array of string/number values with IDs of selected items.
 
 @example:
 ribbon.getSelected(); // -> ["selected_1", "selected_1.1"]

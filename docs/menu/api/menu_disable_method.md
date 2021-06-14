@@ -8,10 +8,10 @@ description: You can explore the disable method of Menu in the documentation of 
 
 @short: disables and dims an item(s) of Menu
 
-@signature: {'disable(ids: string | string[]): void;'}
+@signature: {'disable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - optional, an ID or an array of IDs of items
+`ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 menu.disable("save_btn");

@@ -6,7 +6,7 @@ description: You can have an overview of TreeCollection in the documentation of 
 
 # TreeCollection overview
 
-A set of API methods that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, TreeGrid.
+A set of API methods and events that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, TreeGrid.
 
 ## Methods
 

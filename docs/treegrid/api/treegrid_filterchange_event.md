@@ -8,11 +8,11 @@ description: You can explore the filterChange event of TreeGrid in the documenta
 
 @short: fires on typing text in an input of a column's header
 
-@signature: {'filterChange: (value: string, colId: string, filterId: "inputFilter" | "selectFilter" | "comboFilter") => void;'}
+@signature: {'filterChange: (value: string, colId: Id, filterId: "inputFilter" | "selectFilter" | "comboFilter") => void;'}
 
 @params:
 - `value: string` - an entered value
-- `colId: string` - the id of a column
+- `colId: string | number` - the id of a column
 - `filterId: string` - the type of a filter: "inputFilter", "selectFilter", "comboFilter"
 
 @example:

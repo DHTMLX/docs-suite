@@ -18,7 +18,8 @@ Check [online samples for dhtmlxSidebar](https://docs.dhtmlx.com/suite/samples/s
 ## Related resources
 
 - You can get dhtmlxSidebar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxSidebar](https://docs.dhtmlx.com/suite/samples/sidebar/)  
+- There are also [online samples for dhtmlxSidebar](https://docs.dhtmlx.com/suite/samples/sidebar/)
+- To work with data of Sidebar check [TreeCollection API](tree_collection/index.md)
 
 ## Guides
 

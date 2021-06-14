@@ -8,10 +8,10 @@ description: You can explore the inputFocus event of Menu in the documentation o
 
 @short: fires when a control is focused
 
-@signature: {'inputFocus: (id: string) => void;'}
+@signature: {'inputFocus: (id: Id) => void;'}
 
 @params:
-`id: string` - the ID of a new control
+`id: string | number` - the ID of a new control
 
 @example:
 menu.events.on("InputFocus", function(id){

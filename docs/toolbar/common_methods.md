@@ -108,7 +108,7 @@ To check if an item of Toolbar is disabled, call the [isDisabled()](toolbar/api/
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of a toolbar item</td>
+			<td>(<i>string, number</i>) an id of a toolbar item</td>
 		</tr>
     </tbody>
 </table>
@@ -142,7 +142,7 @@ To select a particular Toolbar item, make use of the [select()](toolbar/api/tool
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the id of an item</td>
+			<td>(<i>string, number</i>) the id of an item</td>
 		</tr>
         <tr>
 			<td><b>unselect</b></td>
@@ -183,7 +183,7 @@ To check if an item of Toolbar is selected, call the [isSelected()](toolbar/api/
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) an id of a toolbar item</td>
+			<td>(<i>string, number</i>) an id of a toolbar item</td>
 		</tr>
     </tbody>
 </table>

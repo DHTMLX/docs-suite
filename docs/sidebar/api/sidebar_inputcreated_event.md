@@ -8,10 +8,10 @@ description: You can explore the inputCreated event of Sidebar in the documentat
 
 @short: fires when a new input is added
 
-@signature: {'inputCreated: (id: string, input: HTMLInputElement) => void;'}
+@signature: {'inputCreated: (id: Id, input: HTMLInputElement) => void;'}
 
 @params:
-- `id: string` - the ID of a new input
+- `id: string | number` - the ID of a new input
 - `input: HTMLInputElement` - a newly created input
 
 @example:

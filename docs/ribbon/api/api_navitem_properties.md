@@ -14,7 +14,7 @@ description: You can explore the NavItem properties of Ribbon in the documentati
 		</tr>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string</i>) the id of a control, auto-generated if not set</td>
+			<td>(<i>string, number</i>) the id of a control, auto-generated if not set</td>
 		</tr>
 		<tr>
 			<td><b>parent</b></td>

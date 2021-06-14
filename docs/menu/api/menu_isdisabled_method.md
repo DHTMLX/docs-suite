@@ -8,10 +8,10 @@ description: You can explore the isDisabled method of Menu in the documentation 
 
 @short: checks whether an item of Menu is disabled
 
-@signature: {'isDisabled(id: string): boolean;'}
+@signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string` - an id of the Menu item
+`id: string | number` - an id of the Menu item
 
 @returns:
 `true`, if an item of Menu is disabled; otherwise, `false`.

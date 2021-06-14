@@ -8,7 +8,7 @@ description: You can explore the showRow method of TreeGrid in the documentation
 
 @short: makes a specified row visible on a page
 
-@signature: {'showRow(rowId: string | number): void;'}
+@signature: {'showRow(rowId: Id): void;'}
 
 @params:
 `rowId: string | number` - the id of a row

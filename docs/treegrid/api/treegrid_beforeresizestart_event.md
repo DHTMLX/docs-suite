@@ -11,7 +11,7 @@ description: You can explore the beforeResizeStart event of TreeGrid in the docu
 @signature: {'beforeResizeStart: (col: ICol, events: MouseEvent) => boolean | void;'}
 
 @params:
-- `column: object` - an object with a column configuration
+- `col: object` - an object with a column configuration
 - `events: MouseEvent` - a native HTML event object
 
 @returns:
