@@ -32,4 +32,6 @@ layout.getCell("sidebar").attach(sidebar);
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
 
+{{note The DHTMLX Message, Popup, Window components can't be attached to the Layout cell because these components can't have the parent container due to their architecture principles.}}
+
 [comment]: # (@related: layout/work_with_layout.md#attaching-a-component-to-a-cell)

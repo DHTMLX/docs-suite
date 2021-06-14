@@ -26,7 +26,7 @@ layout.getCell("header");
 
 ## Attaching a component to a cell
 
-You can easily attach any DHTMLX component to a cell of Layout using the [](layout/api/cell/layout_cell_attach_method.md) method of a cell:
+You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Layout using the [](layout/api/cell/layout_cell_attach_method.md) method of a cell:
 
 ~~~js
 var layout = new dhx.Layout({width:"400px", height:"600px"});
@@ -44,6 +44,8 @@ layout.getCell("list").attach(list);
 ~~~
 
 **Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
+
+{{note The Message, Popup, Window components can't be attached to the Layout cell because these components can't have the parent container due to their architecture principles.}}
 
 ## Attaching an HTML content to a cell
 
