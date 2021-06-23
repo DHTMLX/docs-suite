@@ -42,7 +42,3 @@ chart.events.fire("name",args);
 ## The list of events
 
 The full list of events is available in the related [API section](chart/api/api_overview.md#events).
-
-## Events basic rules
-
-To learn more about how to work with events, check Events basic rules.
