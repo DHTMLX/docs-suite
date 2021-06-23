@@ -16,8 +16,6 @@ chart.events.on("Resize", function({width:500, height:500}){
 });
 ~~~
 
-{{note The names of events are case-insensitive.}}
-
 **Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
 
 ## Detaching event listeners
@@ -44,3 +42,7 @@ chart.events.fire("name",args);
 ## The list of events
 
 The full list of events is available in the related [API section](chart/api/api_overview.md#events).
+
+## Events basic rules
+
+To learn more about how to work with events, check Events basic rules.
