@@ -38,7 +38,7 @@ component.events.on("eventName", function() {
 });
 ```
 
-Where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
+where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
 
 The **component.events.on()** method takes two parameters:
 
@@ -55,11 +55,11 @@ To detach the event listener, use **component.events.detach()** method.
 component.events.detach("eventName");
 ```
 
-Where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
+where **component** is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
 
 The **component.events.detach()** method takes one parameter:
 
-*eventName* – the name of the event of the component.
+- *eventName* – the name of the event of the component.
 
 ### Calling events
 
@@ -69,7 +69,7 @@ To call events, use **component.events.fire()** method:
 component.events.fire("eventName", args);
 ```
 
-Where **component**  is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
+where **component**  is the name of the component of the DHTMLX Suite library (for example, calendar, grid, list, etc.).
 
 The **component.events.fire()** method takes two parameters:
 
@@ -78,7 +78,7 @@ The **component.events.fire()** method takes two parameters:
 
 ## The event usage sample
 
-Let's consider a sample of the event usage. Please, use the DHTMLX Snippet Tool to create this sample.
+Let's consider a sample of the event usage. Please, use [the DHTMLX Snippet Tool](https://snippet.dhtmlx.com/lscu83ji) to create this sample.
 
 First, create a form with a slider and a button.
 
@@ -105,7 +105,7 @@ const form = new dhx.Form("form", {
 }); 
 ```
 
-Now, we are to disable the form after the user clicks the button. For this, we will use the "click" event and add the disable() method of Form API to the event handler.
+Now, we are to disable the form after the user clicks the button. For this, we will use the **"click"** event and add the **disable()** method of Form API to the event handler.
 
 ```js
 //the "click" event and the event handler which disables the form
@@ -116,12 +116,12 @@ form.events.on ("click", function () {
 
 Pay attention,  usage of the disable() method of Form in the event handler is just an example. You may apply any other method or develop your logic if needed.
 
-For some reason, you may need to stop disabling the form. In this case, just use the form.events.detach() method.
+For some reason, you may need to stop disabling the form. In this case, just use the **form.events.detach()** method.
 
 ```js
 form.events.detach("click");
 ```
 
-**Look at the example we have made.**
+**You can look at the example we have just made.**
 
 <iframe src="https://snippet.dhtmlx.com/hz80f7vc?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
