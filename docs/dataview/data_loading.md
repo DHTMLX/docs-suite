@@ -33,7 +33,7 @@ You can specify your own template of rendering DataView items with the help of t
 
 ## External data loading
 
-To load data from an external file, make use of the **load** method of Data Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [DataCollection](data_collection/index.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container");
@@ -54,7 +54,7 @@ dataview.data.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local data source, use the **parse** method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the **parse()** method of [DataCollection](data_collection/index.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var dataview = new dhx.DataView("dataview_container");
@@ -65,7 +65,7 @@ dataview.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a dataview, use the **serialize** method of Data Collection. It converts the data of a dataview into an array of JSON objects. 
+To save the current state of a dataview, use the **serialize()** method of [DataCollection](data_collection/index.md). It converts the data of a dataview into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs that represent attributes of DataView items.
 
 ~~~js

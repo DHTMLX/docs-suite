@@ -197,11 +197,11 @@ combo.popup.events.on("AfterHide", function(e){
 
 ## Using Data Collection API
 
-You can manipulate ComboBox options with the help of the [Data collection API](data_collection/index.md). 
+You can manipulate ComboBox options with the help of the [Data Collection API](data_collection/index.md).
 
 ### Adding options into ComboBox
 
-It is possible to add more options into the initialized ComboBox on the fly. Use the **add()** method of [Data Collection](data_collection/index.md). It takes two parameters:
+It is possible to add more options into the initialized ComboBox on the fly. Use the **add()** method of Data Collection. It takes two parameters:
 
 <table>
 	<tbody>

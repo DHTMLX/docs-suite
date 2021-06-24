@@ -2954,8 +2954,8 @@ module.exports = {
     type: "category",
     label: "Common features",
     items: [
-      "guides/using_typescript",
-      "guides/touch_support",
+      "common_features/using_typescript",
+      "common_features/touch_support",
       // Localization todo,
       // ARIA todo,
       // Keyboard support todo
@@ -2965,7 +2965,8 @@ module.exports = {
     ],
   },
   // end Common features
-
+  
+  //start Creating app
   {
     type: "category",
     label: "Creating app and binding widgets",
@@ -2989,5 +2990,17 @@ module.exports = {
       },
     ],
   },
+  // end Creating app
+
+  //start Guides
+  {
+    type: "category",
+    label: "Guides",
+    items: [
+      "guides/events_guide",
+      "guides/datacollection_guide",
+    ],
+  },
+  //end Guides
   ],
 };

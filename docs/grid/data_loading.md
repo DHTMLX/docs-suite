@@ -70,7 +70,7 @@ var grid = new dhx.Grid("grid_container", {
 
 ## External data loading
 
-To load data from an external file, make use of the **load** method of Data Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [Data Collection](data_collection/index.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 var grid = new dhx.Grid("grid_container");
@@ -89,7 +89,7 @@ grid.data.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local data source, use the **parse** method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the **parse()** method of [Data Collection](data_collection/index.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var grid = new dhx.Grid("grid_container");
@@ -100,7 +100,7 @@ grid.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a grid, use the **serialize** method of Data Collection. It converts the data of a grid into an array of JSON objects. 
+To save the current state of a grid, use the **serialize()** method of [Data Collection](data_collection/index.md). It converts the data of a grid into an array of JSON objects.
 Each JSON object contains the configuration of a separate row.
 
 ~~~js
@@ -116,7 +116,7 @@ var grid2 = new dhx.Grid(document.body);
 grid2.data.parse(state);
 ~~~
 
-## Dynamic loading 
+## Dynamic loading
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 To enable dynamic data loading in Grid you need to:
@@ -132,7 +132,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 });
 ~~~
 
-- load data into Grid via the **load** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
+- load data into Grid via the **load()** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
 ~~~js
 var grid = new dhx.Grid("grid_container");
