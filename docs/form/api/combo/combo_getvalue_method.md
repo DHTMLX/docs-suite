@@ -11,12 +11,12 @@ description: You can explore the getValue Combo Box method of Form in the docume
 @signature: {'getValue(): string | string[];'}
 
 @returns:
-A string, or array with the current value of the control.
+A string, or array with the id(s) of the items from data collection that are currently selected in the control.
 
 @example:
 var value = form.getItem("combo").getValue();
-// -> "2"
+// -> "id_2"
 
 @descr:
 
-The method returns the current string value, if either *multiselection:false* is set or the multiselection config is not defined, otherwise - returns an array of string values of a Combo control.
+The method returns a string value with the id of the currently selected item, if either *multiselection:false* is set or the multiselection config is not defined, otherwise - returns an array of string values with the ids of the currently selected items.
