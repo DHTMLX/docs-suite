@@ -4,7 +4,7 @@ title: JavaScript Guides - Events basic rules
 description: You can learn about events basic rules in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Basic rules how to work with events
+# Basic rules on how to work with events
 
 ## What is an event
 
