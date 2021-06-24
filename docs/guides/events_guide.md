@@ -4,7 +4,7 @@ title: JavaScript Guides - Events basic rules
 description: You can learn about events basic rules in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Events basic rules
+# Basic rules on how to work with events
 
 ## What is an event
 
@@ -42,8 +42,8 @@ Where **component** is the name of the component of the DHTMLX Suite library (fo
 
 The **component.events.on()** method takes two parameters:
 
-- **eventName** – the name of the event of the component;
-- **event_handler**  – a function to run.
+- *eventName* – the name of the event of the component;
+- *eventHandler*  – a function to run.
 
 Any user-defined event handler can be attached to the event of the component. The logic of the handler is defined in the function. You can also place any API method of the related widget inside the handler function of the event.
 
@@ -59,7 +59,7 @@ Where **component** is the name of the component of the DHTMLX Suite library (fo
 
 The **component.events.detach()** method takes one parameter:
 
-**eventName** – the name of the event of the component.
+*eventName* – the name of the event of the component.
 
 ### Calling events
 
@@ -108,7 +108,7 @@ const form = new dhx.Form("form", {
 Now, we are to disable the form after the user clicks the button. For this, we will use the "click" event and add the disable() method of Form API to the event handler.
 
 ```js
-//attaching event "click" and event handler which makes form disable
+//the "click" event and the event handler which disables the form
 form.events.on ("click", function () {
     form.disable();
 });
@@ -124,4 +124,4 @@ form.events.detach("click");
 
 **Look at the example we have made.**
 
-<iframe src="https://snippet.dhtmlx.com/bnny0xod?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+<iframe src="https://snippet.dhtmlx.com/hz80f7vc?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
