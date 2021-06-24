@@ -131,8 +131,9 @@ module.exports = {
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
-    organizationName: 'DHTMLX', // Usually your GitHub org/user name.
-    projectName: 'docs-suite', // Usually your repo name.
+    organizationName: 'DHTMLX', // Usually your GitHub org/user name
+    projectName: 'docs-suite', // Usually your repo name
+    trailingSlash: true,
     themeConfig: {
         colorMode: {
             // "light" | "dark"
