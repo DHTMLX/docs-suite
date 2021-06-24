@@ -8,11 +8,11 @@ description: You can explore the removeSpan method of TreeGrid in the documentat
 
 @short: removes a cols/rows span
 
-@signature: {'removeSpan(row: string | number, col: string | number): void;'}
+@signature: {'removeSpan(rowId: Id, colId: Id): void;'}
 
 @params:
-- `row: string | number` - the id of a row
-- `col: string | number` - the id of a column
+- `rowId: string | number` - the id of a row
+- `colId: string | number` - the id of a column
 
 @example:
 grid.removeSpan("10","a");

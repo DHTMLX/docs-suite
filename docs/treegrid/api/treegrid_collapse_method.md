@@ -8,10 +8,10 @@ description: You can explore the collapse method of TreeGrid in the documentatio
 
 @short: collapses a tree node by id
 
-@signature: {'collapse(id: string): void;'}
+@signature: {'collapse(id: Id): void;'}
 
 @params:
-`id: string` - the id of a node to collapse
+`id: string | number` - the id of a node to collapse
 
 @example:
 treegrid.collapse("native");

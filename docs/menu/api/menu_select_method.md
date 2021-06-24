@@ -8,10 +8,10 @@ description: You can explore the select method of Menu in the documentation of t
 
 @short: selects a specified item of Menu
 
-@signature: {'select(id: string, unselect: boolean): void;'}
+@signature: {'select(id: Id, unselect: boolean): void;'}
 
 @params:
-- `id: string` - the id of a Menu item
+- `id: string | number` - the id of a Menu item
 - `unselect: boolean` - optional, *true* to unselect previously selected items; otherwise, *false*; *true* by default
 
 @example:

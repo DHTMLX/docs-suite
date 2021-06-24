@@ -8,10 +8,10 @@ description: You can explore the isDisabled method of Ribbon in the documentatio
 
 @short: checks whether an item of Ribbon is disabled
 
-@signature: {'isDisabled(id: string): boolean;'}
+@signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string` - an id of the Ribbon item
+`id: string | number` - an id of the Ribbon item
 
 @returns:
 `true`, if an item of Ribbon is disabled; otherwise, `false`.

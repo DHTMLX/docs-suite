@@ -31,7 +31,7 @@ You can specify your own template of rendering List items with the help of the [
 
 ## External data loading
 
-To load data from an external file, make use of the **load** method of Data Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [DataCollection](data_collection/index.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 var list = new dhx.List("list_container");
@@ -52,7 +52,7 @@ list.data.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local data source, use the **parse** method of Data Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the **parse()** method of [DataCollection](data_collection/index.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var list = new dhx.List("list_container");
@@ -63,8 +63,7 @@ list.data.parse(dataset);
 
 ## Saving and restoring state
 
-
-To save the current state of a list, use the **serialize** method of Data Collection. It converts the data of a list into an array of JSON objects. 
+To save the current state of a list, use the **serialize()** method of [DataCollection](data_collection/index.md). It converts the data of a list into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs that represent attributes of List items.
 
 ~~~js
@@ -110,4 +109,4 @@ list.data.load(lazyDataProxy);
 
 **Related sample**: [External data lazy load](https://snippet.dhtmlx.com/list_lazy_loading)
 
-{{note The following methods of Data Collection will not work until all data are loaded into Grid: add, remove, copy, move, update, changeId, sort, filter.}}
+{{note The following methods of [DataCollection](data_collection/index.md) will not work until all data are loaded into List: add, remove, copy, move, update, changeId, sort, filter.}}

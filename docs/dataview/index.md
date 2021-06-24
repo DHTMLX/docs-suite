@@ -19,7 +19,8 @@ Check [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/
 ## Related resources
 
 - You can get dhtmlxDataView as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/dataview/)  
+- There are also [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/dataview/)
+- To work with data of DataView check [DataCollection API](data_collection/index.md)
 
 ## Guides
 

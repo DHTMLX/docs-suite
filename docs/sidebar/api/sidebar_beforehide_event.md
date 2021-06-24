@@ -8,10 +8,10 @@ description: You can explore the beforeHide event of Sidebar in the documentatio
 
 @short: fires before hiding an item of Sidebar
 
-@signature: {'beforeHide: (id: string, events: Event) => void | boolean;'}
+@signature: {'beforeHide: (id: Id, events: Event) => void | boolean;'}
 
 @params:
-- `id: string` - the ID of a sidebar item
+- `id: string | number` - the ID of a sidebar item
 - `events: Event` - a native event object
 
 @returns:

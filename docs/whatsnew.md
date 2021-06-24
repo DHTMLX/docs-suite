@@ -274,7 +274,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - Layout. The configuration has become simpler, more concise and clearer.  New [type: "line", "space", "wide", "none"](layout/api/cell/layout_cell_type_config.md) allows creating Layout of the desired view.
 - Tabbar. The ability [to automatically distribute tabs evenly by the width of the container](tabbar/api/tabbar_tabautowidth_config.md). The ability [to align tabs inside the container](tabbar/api/tabbar_tabalign_config.md). Now, instead of the scrollbar <a href="https://snippet.dhtmlx.com/3gf9av9q" target="_blank">the neat arrows automatically appear to navigate to tabs when the container overflows</a>.
 - Grid and TreeGrid. The ability to hide and show rows.
-- [The ability to interact with the widgets of Suite on touch devices by gestures](guides/touch_support.md)
+- [The ability to interact with the widgets of Suite on touch devices by gestures](common_features/touch_support.md)
 - Significantly expanded list of drag-n-drop events in widgets. See details below.
 - Form. Lots of important and useful changes. See details below.
 
@@ -569,7 +569,7 @@ Version 6.5
 
 ### New functionality
 
-- [TypeScript support for all components](guides/using_typescript.md)
+- [TypeScript support for all components](common_features/using_typescript.md)
 - <a href="https://github.com/DHTMLX/angular-suite-demo" target="_blank">Suite with Angular demo</a> is added
 
 #### Grid 

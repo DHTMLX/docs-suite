@@ -8,10 +8,10 @@ description: You can explore the isDisabled method of Sidebar in the documentati
 
 @short: checks whether an item of Ribbon is disabled
 
-@signature: {'isDisabled(id: string): boolean;'}
+@signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string` - the id of a Sidebar item
+`id: string | number` - the id of a Sidebar item
 
 @returns:
 `true`, if an item of Sidebar is disabled; otherwise, `false`.

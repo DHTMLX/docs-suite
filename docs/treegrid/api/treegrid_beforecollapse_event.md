@@ -8,10 +8,10 @@ description: You can explore the beforeCollapse event of TreeGrid in the documen
 
 @short: fires before collapsing a treegrid
 
-@signature: {'beforeCollapse: (id: string) => boolean | void;'}
+@signature: {'beforeCollapse: (rowId: Id) => boolean | void;'}
 
 @params:
-`id: string` - the id of a collapsed row
+`rowId: string | number` - the id of a collapsed row
 
 @returns:
 Return `false` to block collapsing of a treegrid; otherwise, `true`.

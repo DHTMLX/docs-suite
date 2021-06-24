@@ -56,6 +56,9 @@ To run the project on the local server, use:
 npm start
 ~~~
 
+This video can help you to install Optimus and start the development of your web app.
+
+<iframe width="704" height="400" src="https://www.youtube.com/embed/zDg37M9K9O0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Step 1. Initialize an application
 --------------------------------
@@ -167,9 +170,13 @@ Here you are! Now, you can move forward and add the code from the further steps 
 Step 2. Add views using DHTMLX Suite
 --------------------
 
+<iframe width="704" height="400" src="https://www.youtube.com/embed/OSXrQYqEDig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+###
+
 {{note The full code for Step 2 is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-2" target="_blank">GitHub</a>.}}
 
-Let's move on and create several views using widgets of the DHTMLX Suite library. We'll also explore the global event bus that we'll apply to switch between the created views.
+Let's move on and create several views using widgets of the DHTMLX Suite library. We'll also explore the global event bus that we'll apply to switch between the created views. 
 
 ### Adding the Toolbar view
 
@@ -338,13 +345,17 @@ You can also learn more details about how to:
 Step 3. Define the global state of the app
 --------------------------------
 
+<iframe width="704" height="400" src="https://www.youtube.com/embed/6P-YevyewZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*The step teaches how to define the global state of the app and observe changes made in the app.*
+
 {{note The full code for Step 3 is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-3" target="_blank">GitHub</a>.}}
 
 For now, you've become familiar with how to pass data to child components and explored how to use the global event bus.
 
 It's time to find out more about the *dhx-optimus-store* state manager that allows you to save the state of the app and to get the state asynchronously after its changing from any point of the app.
- 
-If you haven't install *dhx-optimus-store* yet, then navigate to the root directory and run the following command:
+
+If you haven't installed *dhx-optimus-store* yet, then navigate to the root directory and run the following command:
 
 ~~~js
 npm i dhx-optimus-store
@@ -470,6 +481,10 @@ It means, that the id of the button that should be active by default is passed t
 
 Step 4. Add DHTMLX components: DataView, Chart, Grid
 ------------
+
+<iframe width="704" height="400" src="https://www.youtube.com/embed/S5qUkoOiBXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+*The step shows how to add DHTMLX widgets into your application.*
 
 {{note The full code for Step 4 is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-4" target="_blank">GitHub</a>.}}
 
@@ -695,6 +710,8 @@ and the Grid widget on the third page:
 
 Step 5. Provide editing data 
 --------------
+
+<iframe width="704px" height="400px" src="https://www.youtube.com/embed/B0q1bZm7vFc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *The step describes how to work with the widgets of the DHTMLX Suite library. You can skip the step if your goal is just to learn the possibilities of DHTMLX Optimus.*
 

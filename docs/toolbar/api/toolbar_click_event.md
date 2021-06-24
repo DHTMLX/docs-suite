@@ -8,10 +8,10 @@ description: You can explore the click event of Toolbar in the documentation of 
 
 @short: fires after a click on a control
 
-@signature: {'click: (id: string, events: Event) => void;'}
+@signature: {'click: (id: Id, events: Event) => void;'}
 
 @params:
-- `id: string` - the ID of a clicked control
+- `id: string | number` - the ID of a clicked control
 - `events: Event` - a native event object
 
 @example:

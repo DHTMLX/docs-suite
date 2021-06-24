@@ -8,10 +8,10 @@ description: You can explore the openMenu event of Menu in the documentation of 
 
 @short: fires on expanding a menu item
 
-@signature: {'openMenu: (id: string) => void;'}
+@signature: {'openMenu: (id: Id) => void;'}
 
 @params:
-`id: string` - the ID of an opened menu item
+`id: string | number` - the ID of an opened menu item
 
 @example:
 menu.events.on("OpenMenu", function(id){

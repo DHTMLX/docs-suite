@@ -241,7 +241,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 
 ## Filtering data
 
-You can filter grid data by the specified criteria with the help of the **filter()** method of [data collection](data_collection/index.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the **filter()** method of [DataCollection](data_collection/index.md). The method takes as a parameter an object with the properties described below:
 
 <table>
 	<tbody>
@@ -303,7 +303,7 @@ grid.data.filter({
 
 ## Sorting data
 
-It is possible to sort data in the grid via the **sort()** method of [data collection](data_collection/index.md). The method takes two parameters:
+It is possible to sort data in the grid via the **sort()** method of [DataCollection](data_collection/index.md). The method takes two parameters:
 
 <table>
 	<tbody>
@@ -394,11 +394,11 @@ You can easily edit the desired cell of a grid with the help of the [](grid/api/
 	<tbody>
         <tr>
 			<td><b>row</b></td>
-			<td>(<i>string</i>) the id of a row</td>
+			<td>(<i>string, number</i>) the id of a row</td>
 		</tr>
 		<tr>
 			<td><b>col</b></td>
-			<td>(<i>string</i>) the id of a column</td>
+			<td>(<i>string, number</i>) the id of a column</td>
 		</tr>
     </tbody>
 </table>

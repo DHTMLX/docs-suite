@@ -8,10 +8,10 @@ description: You can explore the unselect method of Menu in the documentation of
 
 @short: unselects a selected Menu item
 
-@signature: {'unselect(id?: string): void;'}
+@signature: {'unselect(id?: Id): void;'}
 
 @params:
-`id: string` - optional, the id of a Menu item
+`id: string | number` - optional, the id of a Menu item
 
 @example:
 // unselects all previously selected items

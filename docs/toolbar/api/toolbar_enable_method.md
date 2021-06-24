@@ -8,10 +8,10 @@ description: You can explore the enable method of Toolbar in the documentation o
 
 @short: enables a disabled item(s) of Toolbar
 
-@signature: {'enable(ids: string | string[]): void;'}
+@signature: {'enable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | array` - one ID or an array of IDs of items
+`ids: string | number | array` - one ID or an array of IDs of items
 
 @example:
 toolbar.enable("save_btn");

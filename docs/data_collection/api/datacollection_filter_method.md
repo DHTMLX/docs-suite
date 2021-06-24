@@ -51,7 +51,6 @@ Calling the **filter()** method without parameters reverts the component to the 
 grid.data.filter();
 ~~~
 
-
 The **rule** parameter:
 
 - if set as a function, the filtering will be applied by the rule specified in the function:
