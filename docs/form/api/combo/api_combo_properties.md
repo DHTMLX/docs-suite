@@ -22,10 +22,10 @@ description: You can explore the Combo Box Properties of Form in the documentati
 		</tr>
        	<tr>
 			<td><b>value</b></td>
-			<td>(<i>string, array</i>) specifies the values that will appear in the input:
+			<td>(<i>string, array</i>) specifies the id(s) of Combo items from data collection which values should appear in the input:
             	<ul>
-                	<li>if <i>multiselection:true</i> is set for a combo, the property takes an array of string values as: <i>value: ["1","2","3"]</i>, </li>
-                    <li>if <i>multiselection:false</i> is set or the <i>multiselection</i> config is not defined, the property gets either of the two values: <i>value:"1"</i> or <i>value: ["1"]</i></li>
+                	<li>if <i>multiselection:true</i> is set for a combo, the property takes an array of string values as: <i>value: ["id_1","id_2","id_3"]</i>, </li>
+                    <li>if <i>multiselection:false</i> is set or the <i>multiselection</i> config is not defined, the property gets either of the two values: <i>value:"id_1"</i> or <i>value: ["id_1"]</i></li>
                 </ul>
             </td>
 		</tr>

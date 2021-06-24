@@ -11,7 +11,7 @@ description: You can explore the change Combo Box event of Form in the documenta
 @signature: {'change: (value: string | string[]) => void;'}
 
 @params:
-`value: string | string[]` - the current value of the control
+`value: string | string[]` - the id(s) of newly selected item(s) from data collection
 
 @example:
 form.getItem("combo").events.on("Change", function(value) {
