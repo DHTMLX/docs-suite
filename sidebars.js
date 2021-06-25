@@ -2956,12 +2956,6 @@ module.exports = {
     items: [
       "common_features/using_typescript",
       "common_features/touch_support",
-      // Localization todo,
-      // ARIA todo,
-      // Keyboard support todo
-      // Стилизация todo
-      // Frameworks support (Angular, React, Vue)
-      // https://js.devexpress.com/DevExtreme/Guide/Common/TypeScript_Support/Reference_TypeScript_Definitions/
     ],
   },
   // end Common features
@@ -2971,8 +2965,6 @@ module.exports = {
     type: "category",
     label: "Creating app and binding widgets",
     items: [
-      // With HTML and Layout,
-      // With Frameworks
       {
         type: "category",
         label: "With Optimus",
