@@ -11,7 +11,7 @@ description: You can explore the afterValidate Combo Box event of Form in the do
 @signature: {'afterValidate: (value: string | string[], isValidate: boolean) => void;'}
 
 @params:
-- `value: string | string[]` - the validated value
+- `value: string | string[]` - the id(s) of the validated items(s) from data collection
 - `isValidate: boolean` - the result of validation
 
 @example:

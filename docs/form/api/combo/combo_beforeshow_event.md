@@ -11,7 +11,7 @@ description: You can explore the beforeShow Combo Box event of Form in the docum
 @signature: {'beforeShow: (value: string | string[]) => boolean | void;'}
 
 @params:
-`value: string | string[]` - the current value of the control
+`value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.
