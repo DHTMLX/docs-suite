@@ -10,7 +10,7 @@ description: You can explore the Spacer properties of Sidebar in the documentati
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "spacer". If not specified - the <a href="../../sidebar/navitem">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "spacer". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
 			<td><b>id</b></td>

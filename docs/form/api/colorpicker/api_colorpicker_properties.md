@@ -26,7 +26,7 @@ description: You can explore the Colorpicker Properties of Form in the documenta
 		</tr>
 		<tr>
 			<td><b>validation</b></td>
-			<td>(<i>function</i>) <a href="../../../form/work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
+			<td>(<i>function</i>) <a href="../../../work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>
@@ -46,7 +46,7 @@ description: You can explore the Colorpicker Properties of Form in the documenta
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>placeholder</b></td>
@@ -62,7 +62,7 @@ description: You can explore the Colorpicker Properties of Form in the documenta
 		</tr>
 		<tr>
 			<td><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
+			<td>(<i>boolean</i>) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>

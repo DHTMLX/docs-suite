@@ -30,15 +30,15 @@ description: You can explore the Input Properties of Form in the documentation o
 		</tr>
 		<tr>
 			<td><b>min</b></td>
-			<td>(<i>string|number</i>) <a href="../../../form/work_with_form#minimal-and-maximal-values">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+			<td>(<i>string|number</i>) <a href="../../../work_with_form#minimal-and-maximal-values">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
 		<tr>
 			<td><b>max</b></td>
-			<td>(<i>string|number</i>) <a href="../../../form/work_with_form#minimal-and-maximal-values">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+			<td>(<i>string|number</i>) <a href="../../../work_with_form#minimal-and-maximal-values">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
 		</tr>
         <tr>
 			<td><b>validation</b></td>
-			<td>(<i>string|function</i>) <a href="../../../form/work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
+			<td>(<i>string|function</i>) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
             	<ul>
                 	<li>as a predefined string value: 
                     <ol>- "email" - validEmail</ol>
@@ -66,11 +66,11 @@ description: You can explore the Input Properties of Form in the documentation o
 		</tr>
 		<tr>
 			<td><b>minlength</b></td>
-			<td>(<i>string|number</i>) the minimum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
+			<td>(<i>string|number</i>) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
 		</tr>
 		<tr>
 			<td><b>maxlength</b></td>
-			<td>(<i>string|number</i>) the maximum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
+			<td>(<i>string|number</i>) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
 		</tr>	
         <tr>
 			<td><b>css</b></td>
@@ -82,7 +82,7 @@ description: You can explore the Input Properties of Form in the documentation o
 		</tr>
         <tr>
 			<td><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
+			<td>(<i>boolean</i>) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
         <tr>
 			<td><b>readOnly</b></td>
@@ -94,7 +94,7 @@ description: You can explore the Input Properties of Form in the documentation o
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td><b>placeholder</b></td>

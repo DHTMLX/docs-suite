@@ -34,11 +34,11 @@ description: You can explore the NavItem properties of Ribbon in the documentati
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../ribbon/fa_icons">icon</a> of the navItem</td>
+			<td>(<i>string</i>) an <a href="../../fa_icons">icon</a> of the navItem</td>
 		</tr>
 		 <tr>
 			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
 		 <tr>
 			<td><b>twoState</b></td>

@@ -26,7 +26,7 @@ description: You can explore the Textarea Properties of Form in the documentatio
         </tr>
         <tr>
             <td><b>validation</b></td>
-            <td>(<i>string,function</i>) <a href="../../../form/work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
+            <td>(<i>string,function</i>) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
                 <ul>
                     <li>as a predefined string value:
                         <ol>- "email" - validEmail</ol>
@@ -65,11 +65,11 @@ description: You can explore the Textarea Properties of Form in the documentatio
         </tr>
         <tr>
             <td><b>minlength</b></td>
-            <td>(<i>string|number</i>) the minimum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
+            <td>(<i>string|number</i>) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
         </tr>
         <tr>
             <td><b>maxlength</b></td>
-            <td>(<i>string|number</i>) the maximum <a href="../../../form/work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
+            <td>(<i>string|number</i>) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
         </tr>
         <tr>
             <td><b>css</b></td>
@@ -101,7 +101,7 @@ description: You can explore the Textarea Properties of Form in the documentatio
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
+            <td>(<i>boolean</i>) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>
