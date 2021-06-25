@@ -122,6 +122,6 @@ For some reason, you may need to stop disabling the form. In this case, just use
 form.events.detach("click");
 ```
 
-**You can look at the example we have just made.**
+**You can look at the example we have just created.**
 
 <iframe src="https://snippet.dhtmlx.com/hz80f7vc?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>

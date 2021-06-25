@@ -15,13 +15,15 @@ API methods and events of DataCollection and TreeCollection lets you work with d
 
 DataCollection and TreeCollection allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List.
 
-Here is the guide on how to work with DataCollection.
+We will consider how to work with DataCollection in this article.
 
-Check all methods and events of [Data Collection API](data_collection/index.md/).
+Check all methods and events of [Data Collection API](data_collection/index.md).
 
 ## Common features of DataCollection
 
 Here you will find some common features to understand how DataCollection works.
+
+### DataCollection methods
 
 The syntax of the DataCollection method:
 
@@ -32,32 +34,34 @@ component.data.method();
 where:
 
 - **component** is the name of the applicable component (chart, combobox, dataview, grid, list)
-- **method** - a method of DataCollection
+- **method** is the method of DataCollection
 
-The methods of DataCollection are useful for (but not only):
+The methods of DataCollection are useful for:
 
 - Loading data
 - Sorting and filtering data
 - Sorting and filtering data
 - Saving and restoring
 
-### Loading data
+#### Loading data
 
 To load data into the component use the **load()** or **parse()** methods. The load() method is used to load data from an external file, the parse() method is used to load data from a local data source.
 
-### Sorting and filtering data
+#### Sorting and filtering data
 
 When working with data you may need to sort or filter it. Use the **sort()** method and the **filter()** one for this purpose.
 
-### Sorting and filtering data
+#### Sorting and filtering data
 
 You can add new items into the initialized component via the **add()** method, remove particular items by the **remove()** method or remove all items at once via the **removeAll()** method. The **update()** method allows you to update the necessary configuration options of the item by its id while the **changeId()** method lets you change the id of the element.
 
-### Saving and restoring
+#### Saving and restoring
 
 The **serialize()** method is used to serialize data into JSON, XML or CSV format. You can send the serialized data to a new component or server. The **copy()** method will help you to create a copy of an item at the defined position. Use the **save()** method to save changes made in the data to the server side.
 
-Check all methods of DataCollection.
+Check all [methods](data_collection/index.md/#methods) of DataCollection.
+
+### DataCollection events
 
 The syntax of the DataCollection event:
 
@@ -68,11 +72,13 @@ component.data.events.on("event", function(){});
 where:
 
 - **component** is the name of the applicable component (chart, combobox, dataview, grid, list)
-- **event** - an event of DataCollection
+- **event** is the event of DataCollection
 
 Events of DataCollection are helpful when you need to create a system reaction to the changes made in data.
 
-Check how to work with events in Events basic rules guide.
+Check all [events](data_collection/index.md/#events) of DataCollection.
+
+Check how to work with events in the [Events basic rules](guides/events_guide.md/) guide.
 
 ## The DataCollection usage sample
 
@@ -82,7 +88,7 @@ Please, use [the DHTMLX Snippet Tool](https://snippet.dhtmlx.com/lscu83ji) to cr
 
 Let's create a List widget and define a template to render items in our List.
 
-```htnl
+```html
 <!-- component container -->
 <div id="list" style="height: 700px; margin: 20px"></div>
 ```
@@ -106,9 +112,9 @@ const list = new dhx.List("list", {
 });
 ```
 
-For more information about List initialization check here.
+For more information about List initialization check [here](list/initialization.md/).
 
-As you can see, we've initialized the list but it is still empty. Let's prepare a data set and apply the **parse()** method of DataCollection to load the data into the list. 
+As you can see, we've initialized the list but it is still empty. Let's prepare a data set and apply the **parse()** method of DataCollection to load the data into the list.
 
 Add this part of a code to the sample.
 
@@ -241,7 +247,7 @@ First, we create dataset:
 </script>
 ```
 
-Then, we use the **parse()** method to load dataset into the list:
+Then, we use the **parse()** method to load data into the list:
 
 ```js
 //the parse() method - loading data from a local data source
@@ -273,9 +279,9 @@ list.data.add(
 
 We have made changes in the list but not in the data set.
 
-Let's serialize the component data, create a new list and send the serialized data to the new one. We will use  the **serialize()** and **parse()** methods for it.
+Let's serialize the component data to save the current state of the list, create a new list and send the serialized data to this list. We will use  the **serialize()** and **parse()** methods for it.
 
-Do not forget to add a separate container for the new component, put it under the first one.
+Do not forget to add a separate container for the new component.
 
 ```html
 <div id="list2" style="height: 700px; margin: 20px"></div>
@@ -295,7 +301,7 @@ var list2 = new dhx.List("list2", {
 list2.data.parse(state);
 ```
 
-Now we have two lists with the same data. Let's make some changes to the list. We will change the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
+Now we have two lists with the same data. Let's make some changes to **list**. Сhange the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
 
 ```js
 //the changed() method - changing the id of an element
@@ -305,10 +311,10 @@ list.data.changeId("HP6", "HP6-newedition");
 list.data.remove("HP6-newedition");
 ```
 
-Pay attention, we have different data in list and list2 now, because we have sent data to list2 before the changes.
+Pay attention, we have different data in list and list2 now because we have sent data to list2 before the changes.
 
-Now we can create one more list, send new data to it, save data to the server with the save() method, or add more items, make more changes, etc. Check all the possibilities to work with data with the help of DataCollection.
+Now we can create one more list, send new data to it, save data to the server with the save() method, or add more items, etc. Check all the possibilities to work with data with the help of DataCollection.
 
-Please, have a look at the sample we have made.
+**Please, look at the example we have just created.**
 
 <iframe src="https://snippet.dhtmlx.com/1i0zve6k?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
