@@ -15,7 +15,7 @@ API methods and events of DataCollection and TreeCollection lets you work with d
 
 DataCollection and TreeCollection allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List.
 
-Here is the guide on how to work with DataCollection.
+We will consider how to work with DataCollection in this article.
 
 Check all methods and events of [Data Collection API](data_collection/index.md).
 
@@ -36,7 +36,7 @@ where:
 - **component** is the name of the applicable component (chart, combobox, dataview, grid, list)
 - **method** is the method of DataCollection
 
-The methods of DataCollection are useful for (but not only):
+The methods of DataCollection are useful for:
 
 - Loading data
 - Sorting and filtering data
@@ -247,7 +247,7 @@ First, we create dataset:
 </script>
 ```
 
-Then, we use the **parse()** method to load dataset into the list:
+Then, we use the **parse()** method to load data into the list:
 
 ```js
 //the parse() method - loading data from a local data source
@@ -279,9 +279,9 @@ list.data.add(
 
 We have made changes in the list but not in the data set.
 
-Let's serialize the component data, create a new list and send the serialized data to the new one. We will use  the **serialize()** and **parse()** methods for it.
+Let's serialize the component data to save the current state of the list, create a new list and send the serialized data to this list. We will use  the **serialize()** and **parse()** methods for it.
 
-Do not forget to add a separate container for the new component, put it under the first one.
+Do not forget to add a separate container for the new component.
 
 ```html
 <div id="list2" style="height: 700px; margin: 20px"></div>
@@ -301,7 +301,7 @@ var list2 = new dhx.List("list2", {
 list2.data.parse(state);
 ```
 
-Now we have two lists with the same data. Let's make some changes to the list. We will change the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
+Now we have two lists with the same data. Let's make some changes to **list**. Сhange the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
 
 ```js
 //the changed() method - changing the id of an element
@@ -311,10 +311,10 @@ list.data.changeId("HP6", "HP6-newedition");
 list.data.remove("HP6-newedition");
 ```
 
-Pay attention, we have different data in list and list2 now, because we have sent data to list2 before the changes.
+Pay attention, we have different data in list and list2 now because we have sent data to list2 before the changes.
 
-Now we can create one more list, send new data to it, save data to the server with the save() method, or add more items, make more changes, etc. Check all the possibilities to work with data with the help of DataCollection.
+Now we can create one more list, send new data to it, save data to the server with the save() method, or add more items, etc. Check all the possibilities to work with data with the help of DataCollection.
 
-Please, have a look at the sample we have made.
+**Please, look at the example we have just created.**
 
 <iframe src="https://snippet.dhtmlx.com/1i0zve6k?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
