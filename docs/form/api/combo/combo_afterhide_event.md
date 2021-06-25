@@ -11,7 +11,7 @@ description: You can explore the afterHide Combo Box event of Form in the docume
 @signature: {'afterHide: (value: string | string[], init: boolean) => void;'}
 
 @params:
-- `value: string | string[]` - the current value of the control
+- `value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:

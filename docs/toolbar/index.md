@@ -18,7 +18,8 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 ## Related resources
 
 - You can get dhtmlxToolbar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxToolbar](https://docs.dhtmlx.com/suite/samples/toolbar/)  
+- There are also [online samples for dhtmlxToolbar](https://docs.dhtmlx.com/suite/samples/toolbar/)
+- To work with data of Toolbar check [TreeCollection API](tree_collection/index.md)
 
 ## Guides
 

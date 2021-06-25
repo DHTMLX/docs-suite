@@ -13,9 +13,9 @@
     "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.ce0764033",
-    "@docusaurus/preset-classic": "2.0.0-beta.ce0764033",
-    "@mdx-js/react": "^1.6.22",
+    "@docusaurus/core": "2.0.0-beta.7e55aa10a",
+    "@docusaurus/preset-classic": "2.0.0-beta.7e55aa10a",
+    "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
     "react": "^17.0.2",

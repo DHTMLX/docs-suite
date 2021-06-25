@@ -63,17 +63,17 @@ A [set of CSS templates](https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-cre
 
 ### Integration with Angular, React, and Vue.js
 [comment]: # (ссылки ниже должны уводить на страницы доки)
-DHTMLX Suite is compatible with any client-side framework. There are code examples of how to use DHTMLX widgets with [Angular](https://dhtmlx.github.io/angular-suite-demo/?path=/story/calendar--base), [React](https://dhtmlx.github.io/react-widgets/#/), and [Vue.js](https://dhtmlx.github.io/vue-suite-demo/?path=/story/calendar--base) available on our GitHub pages. 
+DHTMLX Suite is compatible with any client-side framework. There are code examples of how to use DHTMLX widgets with [Angular](https://dhtmlx.github.io/angular-suite-demo/?path=/story/calendar--base), [React](https://dhtmlx.github.io/react-widgets/#/), and [Vue.js](https://dhtmlx.github.io/vue-suite-demo/?path=/story/calendar--base) available on our GitHub pages.
 
 ### Integration with any backend technologies
 
 Being a fully client-side library, DHTMLX Suite can be used with any backend. There is an example of integrating [DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo) in our GitHub repository.
 
 ### Touch support
-You can easily create responsive web applications using DHTMLX Suite due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch Support](/guides/touch_support/) guide.
+You can easily create responsive web applications using DHTMLX Suite due to built-in touch support. Check out how UI widgets work on touch devices in the [Touch Support](/common_features/touch_support/) guide.
 
 ### TypeScript support
-The Suite library is equipped with built-in type definitions allowing you to write clean code faster. Browse the [TypeScript Support](/guides/using_typescript/) guide with code snippets to learn more.
+The Suite library is equipped with built-in type definitions allowing you to write clean code faster. Browse the [TypeScript Support](/common_features/using_typescript/) guide with code snippets to learn more.
 
 ### Accessibility
 

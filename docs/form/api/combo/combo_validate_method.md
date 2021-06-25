@@ -12,7 +12,7 @@ description: You can explore the validate Combo Box method of Form in the docume
 
 @params:
 - `silent: boolean` - optional, if true - the method will return the result of validation without calling validation events and without modifying the control visually
-- `validateValue: string | string[]` - optional, the value to be validated. If not specified, the method validates the current value of the control
+- `validateValue: string | string[]` - optional, the id(s) of the item(s) from data collection that should be validated. If not specified, the method validates the currently selected item(s).
 
 @returns:
 `true`, if a control is valid; otherwise, `false`.
@@ -21,7 +21,7 @@ description: You can explore the validate Combo Box method of Form in the docume
 // the method validates the specified value
 form.getItem("combo").validate(true, "id_2"); // -> true/false
 
-// the method validates the current value
+// the method validates the currently selected items
 form.getItem("combo").validate(true); // -> true/false
 
 @descr:
@@ -29,10 +29,10 @@ form.getItem("combo").validate(true); // -> true/false
 When calling without parameters or setting the **silent** parameter to *false*, the method invokes the [BeforeValidate](form/api/combo/combo_beforevalidate_event.md) and [AfterValidate](form/api/combo/combo_aftervalidate_event.md) events and visually modifies the control.
 
 ~~~js
-// the method validates the specified value
+// the method validates the specified item
 form.getItem("combo").validate(false, "id_2"); // -> true/false
 
-// the method validates the current value
+// the method validates the currently selected item(s)
 form.getItem("combo").validate(); // -> true/false
 ~~~
 
