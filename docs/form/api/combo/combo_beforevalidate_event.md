@@ -11,7 +11,7 @@ description: You can explore the beforeValidate Combo Box event of Form in the d
 @signature: {'beforeValidate: (value: string | string[]) => boolean | void;'}
 
 @params:
-`value: string | string[]` - the value to be validated
+`value: string | string[]` - the id(s) of the item(s) from data collection to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

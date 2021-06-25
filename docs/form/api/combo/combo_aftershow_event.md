@@ -11,7 +11,7 @@ description: You can explore the afterShow Combo Box event of Form in the docume
 @signature: {'afterShow: (value: string | string[]) => void;'}
 
 @params:
-`value: string | string[]` - the current value of the control
+`value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
 
 @example:
 form.getItem("combo").events.on("AfterShow", function(value) {
