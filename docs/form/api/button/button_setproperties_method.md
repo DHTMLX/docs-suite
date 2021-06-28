@@ -53,7 +53,7 @@ It is possible to change values of the following configuration attributes of the
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../../helpers/icon">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td><b>view</b></td>

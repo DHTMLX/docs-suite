@@ -145,7 +145,7 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
 			<td><b>radial</b> scale</td>
 			<td>(<i>object</i>) the radial scale contains the following properties:
             	<ul>
-                	<li><b>value</b> - (<i>string</i>) the name of a <a href="../../../chart/data_loading#preparing-data-set">data set</a> property to take data values from (map to)</li>
+                	<li><b>value</b> - (<i>string</i>) the name of a <a href="../../data_loading#preparing-data-set">data set</a> property to take data values from (map to)</li>
                     <li><b>zebra</b> - (<i>boolean</i>) sets a striped scale coloring for the Radar chart (alternation of two colors in a step)</li>
                     <li><b>showAxis</b> - (<i>boolean</i>) renders values of the scale</li>
                 </ul>
