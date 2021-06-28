@@ -12,7 +12,7 @@ description: You can explore how to work with Sales KPI Tracking Demo using Opti
 
 This demo application shows how to create a Sales KPI tracking system based on the DHTMLX Suite widgets: Layout, List, Toolbar, and Charts.
 
-## How to download 
+## How to download
 
 Open the [KPI Tracking System](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/) demo and click the Download Demo button in the bottom right corner of the page.
 
