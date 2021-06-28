@@ -140,6 +140,51 @@ treegrid.isRowHidden("1"); // -> true|false
 
 **Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
 
+## Adding/removing a row
+
+### Adding a row
+
+You may add a new row into the treegrid by using the [](../tree_collection/api/treecollection_add_method.md) method of **TreeCollection**:
+
+~~~js
+treegrid.data.add({
+    "name": "The Daughter of the Commandant",
+    "price": "6.99",
+    "cover": "Paperback",
+    "ships": "24 hours",
+    "inStock": "3 <input type='checkbox' checked />",
+	"parent": "c.3"
+});
+~~~
+
+
+### Removing a row
+
+To remove the necessary row from the treegrid, apply the [](../tree_collection/api/treecollection_remove_method.md) method of **TreeCollection**. Pass the id of the row that should be removed to the method:
+
+~~~js
+treegrid.data.remove("5");
+~~~
+
+Here is an example of removing a currently selected row: 
+
+~~~js
+const cell = treegrid.selection.getCell();
+treegrid.data.remove(cell.row.id);
+~~~
+
+**Related sample**: [TreeGrid. Delete row](https://snippet.dhtmlx.com/dymxt5pf)
+
+For more information about the selection functionality in TreeGrid, read the [Selection](treegrid/configuration.md/#selection) and [Work with selection object](treegrid/usage_selection.md) articles.
+
+### Removing all rows
+
+If you need to remove all rows at once, use the [](../tree_collection/api/treecollection_removeall_method.md) method of **TreeCollection**:
+
+~~~js
+treegrid.data.removeAll();
+~~~
+
 ## Adding/removing spans
 
 You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: [](treegrid/api/treegrid_addspan_method.md), [](treegrid/api/treegrid_removespan_method.md) and [](treegrid/api/treegrid_getspan_method.md).
