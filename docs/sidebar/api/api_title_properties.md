@@ -10,7 +10,7 @@ description: You can explore the Title properties of Sidebar in the documentatio
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "title". If not specified - the <a href="../../sidebar/navitem">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the item type, set it to "title". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
 			<td><b>id</b></td>

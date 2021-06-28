@@ -10,7 +10,7 @@ description: You can explore the Button properties of Toolbar in the documentati
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "button". If not specified - the <a href="../../toolbar/navitem">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "button". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>
@@ -34,11 +34,11 @@ description: You can explore the Button properties of Toolbar in the documentati
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../toolbar/button#adding-an-icon">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../button#adding-an-icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls.You can find the full list of all available controls <a href="../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+			<td>(<i>array</i>) an array of nested controls.You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
 		<tr>
 			<td><b>group</b></td>

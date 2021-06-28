@@ -68,7 +68,7 @@ The returned object of the **Select** control can contain the following configur
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>

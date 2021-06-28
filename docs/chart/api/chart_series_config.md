@@ -69,7 +69,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) the name of a <a href="../../chart/data_loading#preparing-data-set">data set</a> property to map data values to </td>
+			<td>(<i>string</i>) the name of a <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to </td>
 		</tr>
 		<tr>
 			<td><b>pointType</b></td>
@@ -168,15 +168,15 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>text</b></td>
-			<td>(<i>string</i>) the name of the <a href="../../chart/data_loading#preparing-data-set">data set</a> property to map labels of data values to </td>
+			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map labels of data values to </td>
 		</tr>
 		<tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) the name of the <a href="../../chart/data_loading#preparing-data-set">data set</a> property to map data values to</td>
+			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to</td>
 		</tr>
 		<tr>
 			<td><b>color</b></td>
-			<td>(<i>string</i>) points to the property in a <a href="../../chart/data_loading#preparing-data-set">data set</a> that defines the color of a pie/donut sector</td>
+			<td>(<i>string</i>) points to the property in a <a href="../../data_loading#preparing-data-set">data set</a> that defines the color of a pie/donut sector</td>
 		</tr>
 		<tr>
 			<td><b>useLines</b></td>

@@ -34,11 +34,11 @@ description: You can explore the NavItem properties of Toolbar in the documentat
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../toolbar/customization">icon</a> of the navItem</td>
+			<td>(<i>string</i>) an <a href="../../customization">icon</a> of the navItem</td>
 		</tr>
 		<tr>
 			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the *menuItem* type will be applied by default.</td>
+			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
         <tr>
 			<td><b>twoState</b></td>
