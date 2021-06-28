@@ -76,6 +76,7 @@ form.getProperties();
 		icon: "", loading: false, padding: 0, size: "medium", submit: true, …
 
 	}
+}
 ```
 
 - When passing the name of the control (or its id) as a parameter to the method, the method will return an object with the available attributes of the control and their values:
@@ -137,7 +138,7 @@ The returned object of the **Button** control can contain the following configur
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../helpers/icon">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td><b>view</b></td>
@@ -234,7 +235,7 @@ The returned object of the **DatePicker** control can contain the following conf
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td><b>placeholder</b></td>
@@ -453,7 +454,7 @@ The returned object of the **ColorPicker** control can contain the following con
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>placeholder</b></td>
@@ -598,7 +599,7 @@ The returned object of the **Combo** control can contain the following configura
 		</tr>
 		<tr>
 			<td><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>
@@ -671,7 +672,7 @@ The returned object of the **Input** control can contain the following configura
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td><b>placeholder</b></td>
@@ -812,7 +813,7 @@ The returned object of the **Select** control can contain the following configur
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>
@@ -1187,7 +1188,7 @@ The returned object of the **TimePicker** control can contain the following conf
 		</tr>
     <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td><b>placeholder</b></td>

@@ -64,7 +64,7 @@ description: You can explore the RadioGroup and RadioButton Properties of Form i
 		</tr>
 		<tr>
 			<td><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether a control is required</a></td>
+			<td>(<i>boolean</i>) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
 		<tr>
 			<td><b>label</b></td>

@@ -897,7 +897,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
 	<tbody>
          <tr>
 			<td><b>init()</b></td>
-			<td>mandatory, allows initializing available views and logic of the components. <br>For more details, see the <a href="../optimus_guides/index#app-class">App class</a>.
+			<td>mandatory, allows initializing available views and logic of the components. <br>For more details, see the <a href="#app-class">App class</a>.
             </td>
 		</tr>
     </tbody>
@@ -910,7 +910,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
 	<tbody>
          <tr>
 			<td><b>init()</b></td>
-			<td>mandatory, allows initializing the logic of the Component. This logic will be called on  initialization of the Component. For more details, see the <a href="../optimus_guides/index#component-class">Component class</a>.
+			<td>mandatory, allows initializing the logic of the Component. This logic will be called on  initialization of the Component. For more details, see the <a href="#component-class">Component class</a>.
             </td>
 		</tr>
 		<tr>
@@ -928,7 +928,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
 	<tbody>
 		<tr>
 			<td><b>init(): string|DHXWidget</b></td>
-			<td>obligatory, allows initializing and returning the view. For more details, see the <a href="../optimus_guides/index#view-class">View class</a>.
+			<td>obligatory, allows initializing and returning the view. For more details, see the <a href="#view-class">View class</a>.
             </td>
 		</tr>
         <tr>

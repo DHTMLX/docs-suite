@@ -55,7 +55,7 @@ Each object in the spans array contains the following properties:
 			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
 		</tr>
     <tr>
-			<td><a href="../../grid/configuration#tooltip"><b>tooltip</b></a></td>
+			<td><a href="../../configuration#tooltip"><b>tooltip</b></a></td>
 			<td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
 		</tr>
     </tbody>

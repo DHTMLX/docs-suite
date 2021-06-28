@@ -10,7 +10,7 @@ description: You can explore the ImageButton properties of Toolbar in the docume
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "imageButton". If not specified - the <a href="../../toolbar/navitem">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "imageButton". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
 			<td><b>id</b></td>

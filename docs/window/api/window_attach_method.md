@@ -22,4 +22,6 @@ dhxWindow.show();
 
 **Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
+{{note The DHTMLX Message, Popup, Window components can't be attached to Window because these components can't have the parent container due to their architecture principles.}}
+
 [comment]: # (@related: window/how_to_start.md window/usage.md#attaching-dhtmlx-components)

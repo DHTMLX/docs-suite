@@ -10,7 +10,7 @@ description: You can explore the Separator properties of Ribbon in the documenta
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>

@@ -108,7 +108,7 @@ It is possible to change the following configuration attributes of the **Button*
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../helpers/icon">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td><b>view</b></td>
@@ -209,7 +209,7 @@ It is possible to change the following configuration attributes of the **DatePic
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td><b>placeholder</b></td>
@@ -444,7 +444,7 @@ It is possible to change the following configuration attributes of the **ColorPi
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>placeholder</b></td>
@@ -593,7 +593,7 @@ It is possible to change the following configuration attributes of the **Combo**
 		</tr>
 		<tr>
 			<td><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>
@@ -675,7 +675,7 @@ It is possible to change the following configuration attributes of the **Input**
 		</tr>
     <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td><b>placeholder</b></td>
@@ -824,7 +824,7 @@ It is possible to change the following configuration attributes of the **Select*
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>
@@ -1223,7 +1223,7 @@ It is possible to change the following configuration attributes of the **TimePic
 		</tr>
     <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td><b>placeholder</b></td>
