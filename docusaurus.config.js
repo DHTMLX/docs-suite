@@ -123,11 +123,10 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
-    noIndex: true, // todo: delete on release
     title: 'DHTMLX Suite 7 Docs',
     tagline: 'DHTMLX Suite 7 Docs',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/suita/',
+    baseUrl: '/suite/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
@@ -295,6 +294,8 @@ module.exports = {
                 // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
+                },
+                sitemap: {
                 },
             },
         ],
