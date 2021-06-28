@@ -171,7 +171,7 @@ This item takes space on the toolbar and is used for aligning controls.
 A new Spacer can be created with the help of the **add()** method of Tree Collection:
 
 ~~~js
-toolbar.data.add({
+menu.data.add({
 	type:"spacer"
 });
 ~~~

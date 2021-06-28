@@ -133,7 +133,7 @@ tabbar.isDisabled(); // -> returns true/false
 
 ## Attaching a component to a cell
 
-You can easily attach any DHTMLX component to a cell of Tabbar using the attach method of a cell:
+You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Tabbar using the attach method of a cell:
 
 ~~~js
 var dataview = new dhx.DataView(null, {
@@ -148,3 +148,5 @@ tabbar.getCell("dataview").attach(dataview);
 ~~~
 
 **Related sample**: [Tabbar. Attach](https://snippet.dhtmlx.com/o1jwmw1l)
+
+{{note The Message, Popup, Window components can't be attached to the Tabbar cell because these components can't have the parent container due to their architecture principles.}}

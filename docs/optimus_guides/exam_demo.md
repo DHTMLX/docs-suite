@@ -47,4 +47,3 @@ After the trial period is over, you will receive messages about using an unlicen
 If you want to continue usage of the demo in your project after the evaluation, you should purchase the DHTMLX Suite PRO Edition license. Please have a look at the available [license types](https://dhtmlx.com/docs/products/licenses.shtml) for more information.
 
 You will need to replace the .js and .css files of the evaluation version with the licensed files of DHTMLX Suite to be able to work with the demo after the purchase.
-

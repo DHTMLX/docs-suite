@@ -10,7 +10,7 @@ description: You can explore the custom HTML properties of Menu in the documenta
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="../../menu/configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) required, the item type, set it to "customHTML". If not specified - the <a href="../../configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>

@@ -104,7 +104,7 @@ Each object in the data set contains configuration of a tree item. The structure
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>object</i>) allows adding <a href="../tree/api/tree_icon_config">custom icons</a> for a tree item</td>
+			<td>(<i>object</i>) allows adding <a href="../api/tree_icon_config">custom icons</a> for a tree item</td>
 		</tr>
     </tbody>
 </table>

@@ -10,7 +10,7 @@ description: You can explore the NavItem properties of Menu in the documentation
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "navItem". If not specified - the <a href="../../menu/configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "navItem". If not specified - the <a href="../../configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>
@@ -34,7 +34,7 @@ description: You can explore the NavItem properties of Menu in the documentation
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../menu/fa_icons">icon</a> of the navItem</td>
+			<td>(<i>string</i>) an <a href="../../fa_icons">icon</a> of the navItem</td>
 		</tr>
 		<tr>
 			<td><b>items</b></td>

@@ -122,7 +122,7 @@ The returned object of the **DatePicker** control can contain the following conf
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
     <tr>
 			<td><b>placeholder</b></td>

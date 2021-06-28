@@ -10,7 +10,7 @@ description: You can explore the Select Button properties of Ribbon in the docum
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "selectButton". If not specified - the <a href="../../ribbon/navitem">"navItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the type of a control, set it to "selectButton". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>
@@ -30,11 +30,11 @@ description: You can explore the Select Button properties of Ribbon in the docum
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../ribbon/fa_icons">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../fa_icons">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+			<td>(<i>array</i>) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
         <tr>
 			<td><b>size</b></td>

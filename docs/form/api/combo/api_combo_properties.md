@@ -40,7 +40,7 @@ description: You can explore the Combo Box Properties of Form in the documentati
 		</tr>
 		<tr>
 			<td><b>validation</b></td>
-			<td>(<i>function</i>) <a href="../../../form/work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
+			<td>(<i>function</i>) <a href="../../../work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>
@@ -68,7 +68,7 @@ description: You can explore the Combo Box Properties of Form in the documentati
 		</tr>
 		<tr>
 			<td><b>required</b></td>
-			<td>(<i>boolean</i>) <a href="../../../form/work_with_form#validating-form">defines whether the field with Combo is required</a> (for a form)</td>
+			<td>(<i>boolean</i>) <a href="../../../work_with_form#validating-form">defines whether the field with Combo is required</a> (for a form)</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
@@ -124,7 +124,7 @@ description: You can explore the Combo Box Properties of Form in the documentati
 		</tr>
 		<tr>
 			<td><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>

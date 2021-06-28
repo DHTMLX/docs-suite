@@ -18,7 +18,7 @@ The constructor of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) optional, an an <a href="../../helpers/icon">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) optional, an an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td><b>css</b></td>

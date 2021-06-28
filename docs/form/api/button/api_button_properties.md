@@ -56,7 +56,7 @@ description: You can explore the Button properties of Form in the documentation 
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../../helpers/icon">icon</a> of the button</td>
+			<td>(<i>string</i>) an <a href="../../../../helpers/icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td><b>view</b></td>

@@ -10,7 +10,7 @@ description: You can explore the Separator properties of Menu in the documentati
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="../../menu/configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
+			<td>(<i>string</i>) the item type, set it to "separator". If not specified - the <a href="../../configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>

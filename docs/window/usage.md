@@ -21,7 +21,7 @@ dhxWindow.show();
 
 ## Attaching DHTMLX components
 
-dhtmlxWindow allows attaching other DHTMLX components inside it.
+DHTMLX Window allows attaching other DHTMLX components inside it.
 
 ~~~js
 dhxWindow.attach("richtext",{mode: "document"});
@@ -30,6 +30,7 @@ dhxWindow.show();
 
 **Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
 
+{{note The Message, Popup, Window components can't be attached to Window because these components can't have the parent container due to their architecture principles.}}
 ## Repainting window
 
 In case you've changed some configuration settings of a window, you can repaint it on a page via the [](window/api/window_paint_method.md) method:
