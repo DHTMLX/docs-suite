@@ -140,6 +140,55 @@ grid.isRowHidden("1"); // -> true|false
 
 **Related sample**:[Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
+## Adding/removing a row
+
+### Adding a row
+
+You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
+
+~~~js
+grid.data.add({
+	"country": "Estonia",
+    "population": "1326535",
+    "yearlyChange": "0.0070",
+    "netChange": "3782",
+    "density": "31",
+    "area": "45339",
+    "migrants": "3911",
+    "fert": "1.59",
+    "age": "42.4",
+    "urban": "0.6790",
+    "id": "136"
+}, 0);
+~~~
+
+### Removing a row
+
+To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
+
+~~~js
+grid.data.remove("5");
+~~~
+
+Here is an example of removing a currently selected row: 
+
+~~~js
+const cell = grid.selection.getCell();
+grid.data.remove(cell.row.id);
+~~~
+
+**Related sample**: [Grid. Delete Row](https://snippet.dhtmlx.com/8ezuj7io)
+
+For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md/#selection) and [Work with selection object](grid/usage_selection.md) articles.
+
+### Removing all rows
+
+If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
+
+~~~js
+grid.data.removeAll();
+~~~
+
 ## Adding/removing spans
 
 You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: **addSpan()**, **removeSpan()** and **getSpan()**.
