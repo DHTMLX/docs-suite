@@ -127,7 +127,7 @@ module.exports = {
     title: 'DHTMLX Suite 7 Docs',
     tagline: 'DHTMLX Suite 7 Docs',
     url: 'https://docs.dhtmlx.com',
-    baseUrl: '/suita/',
+    baseUrl: '/suite/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/favicon.ico',
