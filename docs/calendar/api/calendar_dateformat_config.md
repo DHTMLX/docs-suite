@@ -6,7 +6,7 @@ description: You can explore the dateFormat config of Calendar in the documentat
 
 # dateFormat
 
-@short: defines the format of dates in Сalendar
+@short: defines the format of dates in Calendar
 
 @signature: {'dateFormat?: string;'}
 

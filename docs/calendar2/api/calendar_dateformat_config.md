@@ -3,7 +3,7 @@ sidebar_label: dateFormat
 title: dateFormat
 ---          
 
-@short: defines the format of dates in Сalendar
+@short: defines the format of dates in Calendar
 
 @signature: dateFormat?: string;
 

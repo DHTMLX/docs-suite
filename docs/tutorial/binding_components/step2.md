@@ -7,7 +7,7 @@ To apply changes made in a grid row through the form in the window we need to pr
 
 ##Checking the clicked button
 
-First we need to check which one of the footer buttons was clicked. We can use the <b>Сlick</b> event handler of the window footer to do this.
+First we need to check which one of the footer buttons was clicked. We can use the <b>Click</b> event handler of the window footer to do this.
 
 ~~~js
 dhxWindow.footer.events.on("Click", function(id, e){

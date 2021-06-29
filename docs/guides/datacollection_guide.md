@@ -301,7 +301,7 @@ var list2 = new dhx.List("list2", {
 list2.data.parse(state);
 ```
 
-Now we have two lists with the same data. Let's make some changes to **list**. Сhange the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
+Now we have two lists with the same data. Let's make some changes to **list**. Change the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
 
 ```js
 //the changed() method - changing the id of an element
