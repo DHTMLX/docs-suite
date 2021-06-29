@@ -8,6 +8,59 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+
+Version 7.1.9
+------------------
+
+<span class="rel_date">released on June 24, 2021</span>
+
+### Fixes
+
+- A helper error now will be thrown in the console for the id of the new item if such id already exists in the dataset
+- Calendar. Fix the incorrect display of the date after changing the time zone 
+- Chart. Fix the incorrect work of tooltips when the chart is attached to the window
+- Combobox. Fix the issue with the scroll position in the list of options when the "readOnly" mode is enabled
+- Grid, TreeGrid. Fix the issue with alignment of data in the header of the column
+- Grid. Fix the incorrect work of key navigation
+- Grid. Fix the issue that caused the column to drop at the end of the grid after the column is dragged and then dropped back to its own place
+- Grid. Fix the issue that caused the filtering of Grid to reset after applying key navigation
+- Grid. Fix the issue that caused the filtering of the column to reset after the data reloading
+- Grid. Fix the issue with drag-and-drop of rows that caused the editor for the columns that are absent in the target grid to stop opening
+- Grid. Fix the issue with dragging the column when the "rowspan" attribute is set for its header
+- Grid. Fix the issue with filtering of the columns when combo/select filters are specified for their content 
+- Grid. Fix the issue with the alignment of the content of the column header when the "colspan" attribute is set for the header
+- Grid. Fix the issue with the display of Grid if it is attached to Layout and the "setColumns()" method is called after initialization of the grid
+- Grid. Fix the issue with the display of the borders of the header colspan
+- Grid. Fix the issue with the height of the footer
+- Grid. Fix the issue with the type of the "source" attribute of the "data" parameter in the "afterColumnDrag" and "afterColumnDrop" events. Now the type of the attribute is an array.
+- Grid. Fix the script error thrown in the console after drag-and-drop of rows from one grid to another if the grids are placed in the Layout cells
+- Grid. Fix the script error thrown in the console after drag-and-drop of rows from one grid to another if the grids are placed in the window
+- Layout. The size of the space between cells is changed from 10 to 12 pixels (for type:"space"|"wide")
+- Tabbar. Fix the issue with scrolling a large number of tabs  
+- TreeGrid. Fix the issue with dragging the rows in the grouped treegrid
+- TreeGrid. Fix the incorrect work of selection after a tree node is collapsed
+
+Version 7.1.8
+------------------
+
+<span class="rel_date">released on June 10, 2021</span>
+
+### Fixes
+
+- Calendar. Fix the issue that caused the previously selected date to remain highlighted with the grey circle after selecting some other date
+- Calendar. Fix the script error that appeared when two calendars are linked and the "destructor()" method is called
+- Chart. Fix the issue with the "log" configuration option of the chart scales
+- Data Collection. Fix the issue with the "update()" method
+- Form. Fix the issue with the `height: "content"` configuration option of the Textarea control
+- Grid. Fix the display of the hidden rows on data loading
+- Grid. Fix the issue with drag-and-drop of rows that caused the editor for the columns that are absent in the target grid to stop opening
+- Grid. Fix the issue with the alignment of the header of the column when `sortable: false` is specified in the configuration of the column
+- Grid. Fix the script error thrown after editing of the column with `type: "date"`
+- Grid. Fix the script error thrown when a column with the filter is set via the "setColumns()" method and no data are loaded into the grid on initialization
+- Grid. Fix the script error thrown when the "getHeaderFilter()" method is called for the column that is created through the "setColumns()" method
+- Sidebar. Fix the issue with the display of nested items of the Sidebar controls
+- Tree. Fix the issue with opening of the selected folder using key navigation when using the "autoload" configuration property of Tree
+
 Version 7.1.7
 ------------------
 
