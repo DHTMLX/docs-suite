@@ -2959,7 +2959,20 @@ module.exports = {
     ],
   },
   // end Common features
-  
+
+  //start Server-side and frameworks integration
+  {
+    type: "category",
+    label: "Server-side and frameworks integration",
+    items: [
+      "integration/suite_and_backend",
+      "integration/suite_and_react",
+      "integration/suite_and_angular",
+      "integration/suite_and_vue",
+    ],
+  },
+  //end Server-side and frameworks integration
+
   //start Creating app
   {
     type: "category",

@@ -6,7 +6,7 @@ description: You can explore the customization of DataView in the documentation 
 
 # Customization
 
-## Сustom styling of widget
+## Custom styling of widget
 
 There is a possibility to make changes in the look and feel of a dataview. For this you need to take the following steps:
 
