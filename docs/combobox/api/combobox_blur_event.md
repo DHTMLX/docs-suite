@@ -1,34 +1,23 @@
 ---
 sidebar_label: blur
-title: blur
----          
+title: JavaScript Combo Box - blur Event
+description: You can explore the blur event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# blur
 
-@short: fires on focus removal from Combobox
+`to do - check @signature:`
 
-```
-to do choose
+@short: fires when Combobox has lost focus
 
-fires when focus is removed from a Combobox 
-
-fires when focus removed from a Combobox 
-
-fires when focus removes from a Combobox
-
-fires when focus is moved out of a Combobox
-
-response / occurs / actuate
-```
-
-@signature: 
+@signature:
 
 @example:
 combobox.events.on("blur", function() {
-    console.log("the focus is off the element"); - Сработает при потери фокуса компонентом
+    console.log("the focus is off the element");
 });
 @examplestop:
 
-**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l) `to do - add blur`
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 
 @changelog: added v7.2

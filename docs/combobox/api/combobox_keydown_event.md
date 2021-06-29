@@ -1,32 +1,27 @@
 ---
 sidebar_label: keydown 
-title: keydown 
----     
+title: JavaScript Combo Box - keydown Event
+description: You can explore the keydown event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# keydown
 
-@short: fires on keyboard event in a Combobox
+`to do check @signature:`
 
-``` 
-to do choose
+@short: fires when any key is pressed and the element of Combobox is in focus
 
-fires on a keyboard event when a focus is in a Combobox 
+@signature:
 
-occurs for Combo in focus when a keyboard key is pressed
-```
-
-@signature: 
-
-@params: 
-- event - keyboard event 
-- id - id of the element of the Combobox `check` 
+@params:
+- `event` - a native KeyboardEvent object
+- `id` - the id of the element of Combobox in focus
 
 @example:
 combobox.events.on("keydown", function(event, id) {
-    console.log(event, id); - Сработает при нажатии любой из клавиш при наличии фокуса на элементе
+    console.log(event, id);
 });
 @examplestop:
 
-**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l) `to do - add keydown`
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 
 @changelog: added in v7.2

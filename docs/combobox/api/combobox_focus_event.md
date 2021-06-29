@@ -1,30 +1,23 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Combo Box - focus Event
+description: You can explore the focus event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# focus
 
-@short: fires on focus in a Combobox
+`to do - check @signature:`
 
-```
-to do choose
+@short: fires when Combobox has received focus
 
-fires when a Combobox gets focus
-
-actuates when a Combobox gets focus 
-
-response / occurs
-```
-
-@signature: 
+@signature:
 
 @example:
 combobox.events.on("focus", function() {
-    console.log("focus on element"); - Сработает при приобретении фокуса компонентом
+    console.log("the focus is on the element");
 });
 @examplestop:
 
-**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l) `to do - add focus`
+**Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 
 @changelog: added v7.2
