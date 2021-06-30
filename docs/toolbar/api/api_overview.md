@@ -36,13 +36,13 @@ Use [TreeCollection methods](tree_collection/index.md) to work with data.
 | [](toolbar/api/toolbar_beforehide_event.md)   | @getshort(toolbar/api/toolbar_beforehide_event.md)   |
 | [](toolbar/api/toolbar_click_event.md)        | @getshort(toolbar/api/toolbar_click_event.md)        |
 | [](toolbar/api/toolbar_inputblur_event.md)    | @getshort(toolbar/api/toolbar_inputblur_event.md)    |
+| [](toolbar/api/toolbar_inputchange_event.md)  | @getshort(toolbar/api/toolbar_inputchange_event.md)  |
 | [](toolbar/api/toolbar_inputcreated_event.md) | @getshort(toolbar/api/toolbar_inputcreated_event.md) |
 | [](toolbar/api/toolbar_inputfocus_event.md)   | @getshort(toolbar/api/toolbar_inputfocus_event.md)   |
 | [](toolbar/api/toolbar_openmenu_event.md)     | @getshort(toolbar/api/toolbar_openmenu_event.md)     |
-| [](toolbar_inputchange_event.md)              | @getshort(toolbar_inputchange_event.md)              |
 
 :::info important
-Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
+Use [TreeCollection events](tree_collection/index.md#events) to work with data.
 :::
 
 ## Toolbar properties

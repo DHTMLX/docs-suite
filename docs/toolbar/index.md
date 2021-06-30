@@ -39,8 +39,8 @@ Discusses the creation of Toolbar controls and the possibilities of manipulating
 
 - [](toolbar/button.md)
 - [](toolbar/customhtmlbutton.md)
+- [](toolbar/datepicker.md)
 - [](toolbar/image_button.md)
-- [](toolbar/datepicker.md) 
 - [](toolbar/input.md)
 - [](toolbar/navitem.md)
 - [](toolbar/selectbutton.md)

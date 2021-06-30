@@ -7,7 +7,7 @@ title: Datepicker
 
 A control to select a date. Check the article below to see how easy and convenient to add and customize the Datepicker control. 
 
-<iframe src="https://snippet.dhtmlx.com/b1eeyya6?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+<iframe src="https://snippet.dhtmlx.com/3rotluou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 ## Adding Datepicker
 
