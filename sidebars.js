@@ -12,6 +12,30 @@ module.exports = {
     ],
   },
   //todo How to start нет (папка tutorial, они сильно устрели)
+  //start Creating app
+  {
+    type: "category",
+    label: "Creating app and binding widgets",
+    items: [
+      {
+        type: "category",
+        label: "With Optimus",
+        items: [
+          "optimus_guides/index",
+          "optimus_guides/how_to_start_optimus",
+          "optimus_guides/filemanager_demo",
+          "optimus_guides/dashboard_demo",
+          "optimus_guides/hotel_demo",
+          "optimus_guides/geotracking_demo",
+          "optimus_guides/kpi_demo",
+          "optimus_guides/hospital_demo",
+          "optimus_guides/exam_demo",
+        ],
+      },
+    ],
+  },
+  // end Creating app
+
   {
     type: "category",
     label: "Widgets",
@@ -2839,7 +2863,7 @@ module.exports = {
   },
   // end Helpers
 
-  // start Common features
+  //start Common features
   {
     type: "category",
     label: "Common features",
@@ -2861,31 +2885,7 @@ module.exports = {
       "integration/suite_and_vue",
     ],
   },
-  //end Server-side and frameworks integration
-
-  //start Creating app
-  {
-    type: "category",
-    label: "Creating app and binding widgets",
-    items: [
-      {
-        type: "category",
-        label: "With Optimus",
-        items: [
-          "optimus_guides/index",
-          "optimus_guides/how_to_start_optimus",
-          "optimus_guides/filemanager_demo",
-          "optimus_guides/dashboard_demo",
-          "optimus_guides/hotel_demo",
-          "optimus_guides/geotracking_demo",
-          "optimus_guides/kpi_demo",
-          "optimus_guides/hospital_demo",
-          "optimus_guides/exam_demo",
-        ],
-      },
-    ],
-  },
-  // end Creating app
+  // end Server-side and frameworks integration
 
   //start Guides
   {
@@ -2896,6 +2896,6 @@ module.exports = {
       "guides/datacollection_guide",
     ],
   },
-  //end Guides
+  // end Guides
   ],
 };
