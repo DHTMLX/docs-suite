@@ -10,11 +10,9 @@ description: You can explore how to connect DHTMLX Suite to a backend. Browse de
 
 DHTMLX Suite 7 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API).
 
-To transfer data from your backend to the Suite, all you need to do is create a valid JSON dataset. The DHTMLX component does it using its DataCollection helper – the [load()](/data_collection/api/datacollection_load_method/) method.
+The DHTMLX library includes the [DataCollection](/data_collection/index/) helper that completely supports REST API for dealing with the backend.
 
-The REST API is supported in both directions. To transfer data from DHTMLX Suite 7 to your backend, you can use any possibility that the REST API provides.
-
-Pay attention to the [serialize()](/data_collection/api/datacollection_serialize_method/) and [save()](/data_collection/api/datacollection_save_method/) methods of DataCollection. They can be helpful for you on the matter.
+Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](/data_collection/api/datacollection_load_method/) method of DataCollection.
 
 Take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).
 
@@ -24,9 +22,9 @@ Let's have an overview of the examples. Here you can find 10 interactive samples
 
 You can easily modify any widget for your purposes and find out how it works.
 
-Pay attention: the components of the demo work with one database. When editing data in one component, you affect data in all others components.
+Pay attention: the components of the demo work with one database. When editing data in one component, you affect data in other components.
 
-To reset the database, stop the server and delete the file with the `.sqlite` extension from the project's root directory.
+To reset the database, stop the server and delete the file with the `.sqlite` extension from the root directory of the project.
 
 ### Form. Sending data
 
@@ -72,7 +70,7 @@ The following request method is used in this example: `GET`.
 
 ![](../assets/integration/work_with_backend_grid.png)
 
-The options of sorting and searching for information are shown in the Grid example. You can also check how the selection of rows and cells works.
+Sorting and searching options are shown in the Grid example. You can also check how the selection of rows and cells works.
 
 The following request methods are used in this example: `GET`, `PUT`.
 
@@ -80,7 +78,7 @@ The following request methods are used in this example: `GET`, `PUT`.
 
 ![](../assets/integration/work_with_backend_tree.png)
 
-The sample of a Tree widget shows you the way to organize the information in a tree-like structure. It is interactive. You can drag-and-drop the items, rename them, and change the current example's structure.
+The sample of a Tree widget shows you the way to organize the information in a tree-like structure. You can drag-and-drop the items, rename them, and change the current example's structure.
 
 The following request methods are used in this example: `GET`, `PUT`.
 
