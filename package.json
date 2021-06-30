@@ -17,6 +17,7 @@
     "@docusaurus/preset-classic": "2.0.0-beta.7e55aa10a",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
+    "disqus-react": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
