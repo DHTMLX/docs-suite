@@ -92,7 +92,7 @@ var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: 
 var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
 ~~~
 
-**Related sample**: [Dataview. Drag'n'drop Сopy](https://snippet.dhtmlx.com/h89c3gl3)
+**Related sample**: [Dataview. Drag'n'drop Copy](https://snippet.dhtmlx.com/h89c3gl3)
 
 ## Editing items
 

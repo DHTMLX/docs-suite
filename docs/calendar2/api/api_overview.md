@@ -39,7 +39,7 @@ description: DHTMLX Calendar is a smart datepicker solution for websites or appl
 | [todo](calendar/api/calendar_block_config.md)         | allows disabling some date intervals, day labels are dimmed                     |
 | [todo](calendar/api/calendar_css_config.md)           | adds style classes to Calendar                                                  |
 | [todo](calendar/api/calendar_date_config.md)          | defines the date that will be opened when the calendar is created               |
-| [todo](calendar/api/calendar_dateformat_config.md)    | defines the format of dates in Сalendar                                         |
+| [todo](calendar/api/calendar_dateformat_config.md)    | defines the format of dates in Calendar                                         |
 | [todo](calendar/api/calendar_disableddates_config.md) | allows disabling some date intervals, day labels are dimmed                     |
 | [todo](calendar/api/calendar_mark_config.md)          | adds a CSS class to specific days                                               |
 | [todo](calendar/api/calendar_mode_config.md)          | the mode of Calendar initialization                                             |
