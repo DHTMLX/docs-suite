@@ -9,7 +9,7 @@ description: You can learn how to work with DataCollection in the documentation 
 The DHTMLX library includes two invisible components that serve to store data:
 
 - DataCollection - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
-- TreeCollection - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid.)
+- TreeCollection - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid)
 
 API methods and events of DataCollection and TreeCollection lets you work with data items, namely to load, process, and edit the items.
 
@@ -116,9 +116,7 @@ For more information about List initialization check [here](list/initialization.
 
 As you can see, we've initialized the list but it is still empty. Let's prepare a data set and apply the **parse()** method of DataCollection to load the data into the list.
 
-Add this part of a code to the sample.
-
-First, we create dataset:
+First, we prepare a data set that will be loaded into List:
 
 ```html
 <!-- dataset -->
@@ -126,7 +124,7 @@ First, we create dataset:
 	const data = [
     {
       "title": "Harry Potter and the Half-Blood Prince (Harry Potter  #6)",
-      "id": "HP6",
+      "id": "book001",
       "authors": "J.K. Rowling/Mary GrandPré",
       "average_rating": 4.57,
       "publication_date": "9/16/2006",
@@ -140,7 +138,7 @@ First, we create dataset:
     },
     {
       "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter  #3)",
-      "id":"HP3",
+      "id":"book002",
       "authors": "J.K. Rowling/Mary GrandPré",
       "average_rating": 4.56,
       "publication_date": "5/1/2004",
@@ -154,6 +152,7 @@ First, we create dataset:
     },
     {
       "title": "The Complete Maus",
+      "id": "book003",
       "authors": "Art Spiegelman",
       "average_rating": 4.55,
       "publication_date": "10/2/2003",
@@ -167,6 +166,7 @@ First, we create dataset:
     },
     {
       "title": "Fullmetal Alchemist  Vol. 1 (Fullmetal Alchemist  #1)",
+      "id": "book004",
       "authors": "Hiromu Arakawa/Akira Watanabe",
       "average_rating": 4.5,
       "publication_date": "5/3/2005",
@@ -180,6 +180,7 @@ First, we create dataset:
     },
     {
       "title": "Lover Awakened (Black Dagger Brotherhood  #3)",
+      "id": "book005",
       "authors": "J.R. Ward",
       "average_rating": 4.45,
       "publication_date": "9/5/2006",
@@ -193,6 +194,7 @@ First, we create dataset:
     },
     {
       "title": "The Two Towers (The Lord of the Rings  #2)",
+      "id": "book006",
       "authors": "J.R.R. Tolkien/Peter S. Beagle",
       "average_rating": 4.44,
       "publication_date": "9/5/2003",
@@ -206,6 +208,7 @@ First, we create dataset:
     },
     {
       "title": "The Green Mile",
+      "id": "book007",
       "authors": "Stephen King",
       "average_rating": 4.44,
       "publication_date": "9/1/1996",
@@ -219,6 +222,7 @@ First, we create dataset:
     },
     {
       "title": "The Monster at the End of this Book",
+      "id": "book008",
       "authors": "Jon Stone/Michael J. Smollin",
       "average_rating": 4.44,
       "publication_date": "5/11/2004",
@@ -232,6 +236,7 @@ First, we create dataset:
     },
     {
       "title": "A Breath of Snow and Ashes (Outlander  #6)",
+      "id": "book009",
       "authors": "Diana Gabaldon",
       "average_rating": 4.44,
       "publication_date": "8/29/2006",
@@ -254,7 +259,7 @@ Then, we use the **parse()** method to load data into the list:
 list.data.parse(data);
 ```
 
-As a result, we have the list of books. We took a small part of the list just for a convenience sample, in real-life practice, the list can be very huge.
+As a result, the list of books is rendered on the page according to the specified template. We took a small part of the list just for a convenience sample, in real-life practice, the list can be very huge.
 
 Let's add a new book to the list. To do that, we need to use the **add()** method of DataCollection.
 
@@ -262,22 +267,23 @@ Let's add a new book to the list. To do that, we need to use the **add()** metho
 //the add() method - adding new item
 list.data.add(
     {
-        "title": "J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings",
-        "authors": "J.R.R. Tolkien",
-        "average_rating": 4.59,
-        "publication_date": "9/25/2012",
-        "in_store": true,
-        "isbn13": 9780345538376,
-        "language_code": "eng",
-        "num_pages": 1728,
-        "ratings_count": 101233,
-        "text_reviews_count": 1550,
-        "publisher": "Ballantine Books"
+      "title": "J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings",
+      "id": "book010",
+      "authors": "J.R.R. Tolkien",
+      "average_rating": 4.59,
+      "publication_date": "9/25/2012",
+      "in_store": true,
+      "isbn13": 9780345538376,
+      "language_code": "eng",
+      "num_pages": 1728,
+      "ratings_count": 101233,
+      "text_reviews_count": 1550,
+      "publisher": "Ballantine Books"
     },
 1);
 ```
 
-We have made changes in the list but not in the data set.
+We have added the new item into the list but not into the data set.
 
 Let's serialize the component data to save the current state of the list, create a new list and send the serialized data to this list. We will use  the **serialize()** and **parse()** methods for it.
 
@@ -297,7 +303,7 @@ var list2 = new dhx.List("list2", {
     template: template
 });
 
-//parsing the state of list into list2
+//the parse() method - parsing the state of list into list2
 list2.data.parse(state);
 ```
 
@@ -305,16 +311,16 @@ Now we have two lists with the same data. Let's make some changes to **list**. C
 
 ```js
 //the changed() method - changing the id of an element
-list.data.changeId("HP6", "HP6-newedition");
+list.data.changeId("book001", "book001-newedition");
 
 //the remove() method - deleting the element
-list.data.remove("HP6-newedition");
+list.data.remove("book001-newedition");
 ```
 
-Pay attention, we have different data in list and list2 now because we have sent data to list2 before the changes.
+Pay attention, the data in list now are different from the data in list2 because we have sent data to list2 before removing the item of list.
 
 Now we can create one more list, send new data to it, save data to the server with the save() method, or add more items, etc. Check all the possibilities to work with data with the help of DataCollection.
 
 **Please, look at the example we have just created.**
 
-<iframe src="https://snippet.dhtmlx.com/1i0zve6k?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+<iframe src="https://snippet.dhtmlx.com/l24dxpxu?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
