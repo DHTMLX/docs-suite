@@ -138,7 +138,7 @@ First, we prepare a data set that will be loaded into List:
     },
     {
       "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter  #3)",
-      "id":"book002",
+      "id": "book002",
       "authors": "J.K. Rowling/Mary GrandPré",
       "average_rating": 4.56,
       "publication_date": "5/1/2004",
@@ -310,7 +310,7 @@ list2.data.parse(state);
 Now we have two lists with the same data. Let's make some changes to **list**. Change the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
 
 ```js
-//the changed() method - changing the id of an element
+//the changeId() method - changing the id of the element
 list.data.changeId("book001", "book001-newedition");
 
 //the remove() method - deleting the element
@@ -323,4 +323,4 @@ Now we can create one more list, send new data to it, save data to the server wi
 
 **Please, look at the example we have just created.**
 
-<iframe src="https://snippet.dhtmlx.com/l24dxpxu?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+<iframe src="https://snippet.dhtmlx.com/g91wovk5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
