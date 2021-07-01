@@ -69,7 +69,7 @@ const data = [
 		"country": "<div class='cell__html'><span>China</span> /*!*/
             <img src='../flags/cn.svg'></div>", /*!*/
 		"population": "1415045928", "yearlyChange": "0.0039",
-		"netChange": "5528531", "destiny": "151",
+		"netChange": "5528531", "density": "151",
 		"urban": "0.5800", "id": "1"
 	},
     // more options
