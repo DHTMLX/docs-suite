@@ -255,7 +255,6 @@ First, we prepare a data set that will be loaded into List:
 Then, we use the **parse()** method to load data into the list:
 
 ```js
-//the parse() method - loading data from a local data source
 list.data.parse(data);
 ```
 
@@ -264,7 +263,6 @@ As a result, the list of books is rendered on the page according to the specifie
 Let's add a new book to the list. To do that, we need to use the **add()** method of DataCollection.
 
 ```js
-//the add() method - adding new item
 list.data.add(
     {
       "title": "J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings",
@@ -294,7 +292,7 @@ Do not forget to add a separate container for the new component.
 ```
 
 ```js
-//the serialize() method - serializing data 
+//serializing data 
 var state = list.data.serialize();
 
 //creating list2
@@ -303,17 +301,15 @@ var list2 = new dhx.List("list2", {
     template: template
 });
 
-//the parse() method - parsing the state of list into list2
+//parsing the state of list into list2
 list2.data.parse(state);
 ```
 
 Now we have two lists with the same data. Let's make some changes to **list**. Change the id of the first item with the help of the **changeId()** method and delete the item from the list with the help of the **remove()** method.
 
 ```js
-//the changeId() method - changing the id of the element
 list.data.changeId("book001", "book001-newedition");
 
-//the remove() method - deleting the element
 list.data.remove("book001-newedition");
 ```
 
