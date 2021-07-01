@@ -10,7 +10,6 @@ import Params from './Params';
 import Returns from "./Returns";
 import Values from "./Values";
 import WidgetIcons from "./WidgetIcons";
-import DocPage from "./DocPage";
 
 export {
   Short,
@@ -25,5 +24,4 @@ export {
   Returns,
   Values,
   WidgetIcons,
-  DocPage
 };
