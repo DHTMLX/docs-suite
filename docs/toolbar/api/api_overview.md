@@ -63,7 +63,7 @@ A Custom HTML button control may possess the [following properties](toolbar/api/
 
 ## Toolbar Datepicker properties
 
-A Datepicker control can have [next properties](toolbar/api/api_datepicker_properties.md).
+A Datepicker control can have [following properties](toolbar/api/api_datepicker_properties.md).
 
 ## Toolbar ImageButton properties
 

@@ -1,7 +1,10 @@
 ---
 sidebar_label: Datepicker
-title: Datepicker
----          
+title: JavaScript Toolbar - Datepicker
+description: You can explore the Datepicker of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Datepicker
 
 `to do check`
 
@@ -15,8 +18,18 @@ The Datepicker control can be easily added to a toolbar with the help of the [**
 
 @example:
 toolbar.data.add({
-    type: "datePicker",
+    type: "datePicker"
 });
+@examplestop:
+
+
+
+@example:
+toolbar.data.parse([
+    {
+        type: "datePicker"
+    }
+]);
 @examplestop:
 
 ## Properties
