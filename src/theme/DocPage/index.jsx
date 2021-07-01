@@ -14,7 +14,7 @@ import MDXComponents from '@theme/MDXComponents';
 import NotFound from '@theme/NotFound';
 import {matchPath} from '@docusaurus/router';
 import Head from '@docusaurus/Head';
-import styles from './styles.module.css';
+import styles from './styles.module.scss';
 
 // This theme is not coupled to Algolia, but can we do something else?
 // Note the last version is also indexed with "last", to avoid breaking search on new releases
@@ -91,7 +91,9 @@ function DocPageContent({currentDocRoute, versionMetadata, children}) {
 						</div>
 					)}
 					<main className={styles.docMainContainer}>
-						<MDXProvider components={MDXComponents}>{children}</MDXProvider>
+						<div className="container padding-top--md padding-bottom--lg">
+							<MDXProvider components={MDXComponents}>{children}</MDXProvider>
+						</div>
 						<div id='disqus_thread' className={styles.disqusThread}></div>
 					</main>
 				</div>

@@ -13,6 +13,7 @@
     "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
+    "disqus-react": "^1.1.1",
     "@docusaurus/core": "2.0.0-beta.7e55aa10a",
     "@docusaurus/preset-classic": "2.0.0-beta.7e55aa10a",
     "@mdx-js/react": "^1.5.8",
