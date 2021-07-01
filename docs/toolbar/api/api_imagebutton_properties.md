@@ -1,5 +1,5 @@
 ---
-sidebar_label: ImageButton properties
+sidebar_label: Toolbar ImageButton properties
 title: JavaScript Toolbar - ImageButton Properties 
 description: You can explore the ImageButton properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
