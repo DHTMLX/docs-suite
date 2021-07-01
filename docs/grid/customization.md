@@ -59,13 +59,11 @@ You can easily set some styling to the text of header cells by applying some inl
 ~~~js
 var grid = new dhx.Grid("grid", {
 	columns: [
-	  { width: 200, id: "country", 
-      	header: [{ text: "<span style='font-size:2em'>Country</span>" }] },
-      { width: 150, id: "population", 
-      	header: [{ text: "<span class='title'>Population</span>" }] },
+	  { width: 200, id: "country", header: [{ text: "<span style='font-size:2em'>Country</span>" }] },
+      { width: 150, id: "population", header: [{ text: "<span class='title'>Population</span>" }] },
       { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
       { width: 150, id: "netChange", header: [{ text: "Net Change" }] },
-      { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+      { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
       { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
 	],
 	data: dataset
@@ -249,14 +247,14 @@ The function should return a string with a custom CSS class for your mark.
 var grid = new dhx.Grid("grid", {
 	columns: [
 		{
-			width: 150, id: "population", header: [{ text: "Population" }],
+			id: "population", header: [{ text: "Population" }],
 			// marks specified cells in a column
 			mark: function (cell, data, row, col) { /*!*/
 				return cell > 100000000 ? "my_custom_mark" : "" /*!*/
 			}
 		}, 
 		{
-			width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }],
+			id: "density", header: [{ text: "Density (P/Km²)" }],
 			// marks all cells in a column
 			mark: function (cell, data) { return "total_col"; } /*!*/
 		},
