@@ -677,7 +677,7 @@ var grid = new dhx.Grid("grid_container", {
 }
 ~~~
 
-Then you will be able to change the width of columns using the mouse. Grab the right border цith the cursor and drag to the desired width.
+Then you will be able to change the width of columns using the mouse. Grab the right border with the cursor and drag to the desired width.
 
 {{note If you also set the **autoWidth** configuration option, you will be able to change the width of columns only inside the container of Grid. }}
 
