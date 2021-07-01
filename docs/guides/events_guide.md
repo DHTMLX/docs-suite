@@ -108,7 +108,7 @@ const form = new dhx.Form("form", {
 Now, we are to disable the form after the user clicks the button. For this, we will use the **"click"** event and add the **disable()** method of Form API to the event handler.
 
 ```js
-//the "click" event and the event handler which disables the form
+//attaching an event handler, which will make the form disabled, to the click event
 form.events.on ("click", function () {
     form.disable();
 });
@@ -124,4 +124,4 @@ form.events.detach("click");
 
 **You can look at the example we have just created.**
 
-<iframe src="https://snippet.dhtmlx.com/hz80f7vc?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+<iframe src="https://snippet.dhtmlx.com/5jc4pdzs?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
