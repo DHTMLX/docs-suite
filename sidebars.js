@@ -55,7 +55,7 @@ module.exports = {
               "calendar/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Calendar methods",
                 items: [
                   "calendar/api/calendar_clear_method",
                   "calendar/api/calendar_destructor_method",
@@ -69,7 +69,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Calendar events",
                 items: [
                   "calendar/api/calendar_beforechange_event",
                   "calendar/api/calendar_cancelclick_event",
@@ -82,7 +82,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Calendar properties",
                 items: [
                   "calendar/api/calendar_css_config",
                   "calendar/api/calendar_date_config",
@@ -128,7 +128,7 @@ module.exports = {
               "chart/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Chart methods",
                 collapsed: true,
                 items: [
                   "chart/api/chart_destructor_method",
@@ -140,7 +140,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Chart events",
                 collapsed: true,
                 items: [
                   "chart/api/chart_resize_event",
@@ -150,7 +150,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Chart properties",
                 collapsed: true,
                 items: [
                   "chart/api/chart_css_config",
@@ -187,7 +187,7 @@ module.exports = {
               "colorpicker/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Colorpicker methods",
                 items: [
                   "colorpicker/api/colorpicker_clear_method",
                   "colorpicker/api/colorpicker_destructor_method",
@@ -203,7 +203,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Colorpicker events",
                 items: [
                   "colorpicker/api/colorpicker_apply_event",
                   "colorpicker/api/colorpicker_cancelclick_event",
@@ -213,7 +213,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Colorpicker properties",
                 items: [
                   "colorpicker/api/colorpicker_css_config",
                   "colorpicker/api/colorpicker_customcolors_config",
@@ -250,7 +250,7 @@ module.exports = {
               "combobox/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Combobox methods",
                 items: [
                   "combobox/api/combobox_clear_method",
                   "combobox/api/combobox_destructor_method",
@@ -265,7 +265,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Combobox events",
                 collapsed: true,
                 items: [
                   "combobox/api/combobox_afterclose_event",
@@ -277,7 +277,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Combobox properties",
                 items: [
                   "combobox/api/combobox_css_config",
                   "combobox/api/combobox_data_config",
@@ -326,7 +326,7 @@ module.exports = {
               "dataview/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "DataView methods",
                 items: [
                   "dataview/api/dataview_destructor_method",
                   "dataview/api/dataview_edititem_method",
@@ -338,7 +338,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "DataView events",
                 items: [
                   "dataview/api/dataview_afterdrag_event",
                   "dataview/api/dataview_afterdrop_event",
@@ -362,7 +362,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "DataView properties",
                 items: [
                   "dataview/api/dataview_css_config",
                   "dataview/api/dataview_data_config",
@@ -412,7 +412,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form methods",
                   collapsed: true,
                   items: [
                     "form/api/form_clear_method",
@@ -437,7 +437,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form events",
                   collapsed: true,
                   items: [
                     "form/api/form_afterchangeproperties_event",
@@ -456,7 +456,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "Form properties",
                   collapsed: true,
                   items: [
                     "form/api/form_align_config",
@@ -479,7 +479,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Button methods",
                   collapsed: true,
                   items: [
                     "form/api/button/button_disable_method",
@@ -494,7 +494,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Button events",
                   collapsed: true,
                   items: [
                     "form/api/button/button_afterchangeproperties_event",
@@ -518,7 +518,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Datepicker methods",
                   collapsed: true,
                   items: [
                     "form/api/calendar/calendar_clear_method",
@@ -540,7 +540,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Datepicker events",
                   collapsed: true,
                   items: [
                     "form/api/calendar/calendar_afterchangeproperties_event",
@@ -567,7 +567,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Checkbox methods",
                   collapsed: true,
                   items: [
                     "form/api/checkbox/checkbox_clear_method",
@@ -589,7 +589,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Checkbox events",
                   collapsed: true,
                   items: [
                     "form/api/checkbox/checkbox_afterchangeproperties_event",
@@ -615,7 +615,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form CheckboxGroup methods",
                   collapsed: true,
                   items: [
                     "form/api/checkbox_group/checkboxgroup_clear_method",
@@ -637,7 +637,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form CheckboxGroup events",
                   collapsed: true,
                   items: [
                     "form/api/checkbox_group/checkboxgroup_afterchangeproperties_event",
@@ -663,7 +663,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Colorpicker methods",
                   collapsed: true,
                   items: [
                     "form/api/colorpicker/colorpicker_clear_method",
@@ -685,7 +685,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Colorpicker events",
                   collapsed: true,
                   items: [
                     "form/api/colorpicker/colorpicker_afterchangeproperties_event",
@@ -712,7 +712,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Combo methods",
                   collapsed: true,
                   items: [
                     "form/api/combo/combo_clear_method",
@@ -734,7 +734,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Combo events",
                   collapsed: true,
                   items: [
                     "form/api/combo/combo_afterchangeproperties_event",
@@ -760,7 +760,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Input methods",
                   collapsed: true,
                   items: [
                     "form/api/input/input_clear_method",
@@ -781,7 +781,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Input events",
                   collapsed: true,
                   items: [
                     "form/api/input/input_afterchangeproperties_event",
@@ -808,7 +808,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Radiogroup methods",
                   collapsed: true,
                   items: [
                     "form/api/radiogroup/radiogroup_clear_method",
@@ -829,7 +829,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Radiogroup events",
                   collapsed: true,
                   items: [
                     "form/api/radiogroup/radiogroup_afterchangeproperties_event",
@@ -855,7 +855,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Select methods",
                   collapsed: true,
                   items: [
                     "form/api/select/select_clear_method",
@@ -878,7 +878,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Select events",
                   collapsed: true,
                   items: [
                     "form/api/select/select_afterchangeproperties_event",
@@ -905,7 +905,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Simple Vault methods",
                   collapsed: true,
                   items: [
                     "form/api/simplevault/simplevault_clear_method",
@@ -927,7 +927,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Simple Vault events",
                   collapsed: true,
                   items: [
                     "form/api/simplevault/simplevault_afterchangeproperties_event",
@@ -959,7 +959,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Slider methods",
                   collapsed: true,
                   items: [
                     "form/api/slider/slider_clear_method",
@@ -978,7 +978,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Slider events",
                   collapsed: true,
                   items: [
                     "form/api/slider/slider_afterchangeproperties_event",
@@ -1002,7 +1002,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Spacer methods",
                   collapsed: true,
                   items: [
                     "form/api/spacer/spacer_getproperties_method",
@@ -1014,7 +1014,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Spacer events",
                   collapsed: true,
                   items: [
                     "form/api/spacer/spacer_afterchangeproperties_event",
@@ -1037,7 +1037,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Text methods",
                   collapsed: true,
                   items: [
                     "form/api/text/text_clear_method",
@@ -1055,7 +1055,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Text events",
                   collapsed: true,
                   items: [
                     "form/api/text/text_afterchangeproperties_event",
@@ -1081,7 +1081,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Textarea methods",
                   collapsed: true,
                   items: [
                     "form/api/textarea/textarea_clear_method",
@@ -1102,7 +1102,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Textarea events",
                   collapsed: true,
                   items: [
                     "form/api/textarea/textarea_afterchangeproperties_event",
@@ -1129,7 +1129,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Form Timepicker methods",
                   collapsed: true,
                   items: [
                     "form/api/timepicker/timepicker_clear_method",
@@ -1151,7 +1151,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Form Timepicker events",
                   collapsed: true,
                   items: [
                     "form/api/timepicker/timepicker_afterchangeproperties_event",
@@ -1350,7 +1350,7 @@ module.exports = {
                 label: "Selection API",
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Grid Selection methods",
                   items: [
                     "grid/api/selection/selection_disable_method",
                     "grid/api/selection/selection_enable_method",
@@ -1363,7 +1363,7 @@ module.exports = {
 
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Grid Selection events",
                   items: [
                     "grid/api/selection/selection_afterselect_event",
                     "grid/api/selection/selection_afterunselect_event",
@@ -1405,7 +1405,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "Layout methods",
                   collapsed: true,
                   items: [
                     "layout/api/layout_destructor_method",
@@ -1416,7 +1416,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "Layout events",
                   collapsed: true,
                   items: [
                     "layout/api/layout_afteradd_event",
@@ -1438,7 +1438,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Properties",
+                  label: "Layout properties",
                   collapsed: true,
                   items: [
                     "layout/api/layout_cols_config",
@@ -1453,7 +1453,7 @@ module.exports = {
                 collapsed: true,
                 items: [{
                   type: "category",
-                  label: "Cell methods",
+                  label: "Layout cell methods",
                   collapsed: true,
                   items: [
                     "layout/api/cell/layout_cell_attach_method",
@@ -1471,7 +1471,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Cell properties",
+                  label: "Layout cell properties",
                   collapsed: true,
                   items: [
                     "layout/api/cell/layout_cell_align_config",
@@ -1532,7 +1532,7 @@ module.exports = {
               "list/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "List methods",
                 items: [
                   "list/api/list_destructor_method",
                   "list/api/list_edititem_method",
@@ -1544,7 +1544,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "List events",
                 items: [
                   "list/api/list_afterdrag_event",
                   "list/api/list_afterdrop_event",
@@ -1568,7 +1568,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "List properties",
                 items: [
                   "list/api/list_css_config",
                   "list/api/list_data_config",
@@ -1702,7 +1702,7 @@ module.exports = {
               "pagination/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Pagination methods",
                 items: [
                   "pagination/api/pagination_destructor_method",
                   "pagination/api/pagination_getpage_method",
@@ -1714,12 +1714,12 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Pagination events",
                 items: ["pagination/api/pagination_change_event"],
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Pagination properties",
                 items: [
                   "pagination/api/pagination_css_config",
                   "pagination/api/pagination_data_config",
@@ -1752,7 +1752,7 @@ module.exports = {
               "popup/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Popup methods",
                 items: [
                   "popup/api/popup_attach_method",
                   "popup/api/popup_attachhtml_method",
@@ -1767,7 +1767,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Popup events",
                 items: [
                   "popup/api/popup_afterhide_event",
                   "popup/api/popup_aftershow_event",
@@ -1778,7 +1778,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Popup properties",
                 items: ["popup/api/popup_css_config"],
               },
             ],
@@ -1982,7 +1982,7 @@ module.exports = {
               "slider/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Slider methods",
                 items: [
                   "slider/api/slider_destructor_method",
                   "slider/api/slider_disable_method",
@@ -1995,7 +1995,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Slider events",
                 items: [
                   "slider/api/slider_change_event",
                   "slider/api/slider_mousedown_event",
@@ -2004,7 +2004,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Slider properties",
                 items: [
                   "slider/api/slider_css_config",
                   "slider/api/slider_helpmessage_config",
@@ -2050,7 +2050,7 @@ module.exports = {
               "tabbar/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Tabbar methods",
                 items: [
                   "tabbar/api/tabbar_addtab_method",
                   "tabbar/api/tabbar_destructor_method",
@@ -2068,7 +2068,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Tabbar events",
                 items: [
                   "tabbar/api/tabbar_afterclose_event",
                   "tabbar/api/tabbar_beforeclose_event",
@@ -2077,7 +2077,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Tabbar properties",
                 items: [
                   "tabbar/api/tabbar_activetab_config",
                   "tabbar/api/tabbar_closable_config",
@@ -2118,7 +2118,7 @@ module.exports = {
               "timepicker/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Timepicker methods",
                 items: [
                   "timepicker/api/timepicker_clear_method",
                   "timepicker/api/timepicker_destructor_method",
@@ -2129,7 +2129,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Timepicker events",
                 items: [
                   "timepicker/api/timepicker_afterapply_event",
                   "timepicker/api/timepicker_afterclose_event",
@@ -2140,7 +2140,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Timepicker properties",
                 items: [
                   "timepicker/api/timepicker_controls_config",
                   "timepicker/api/timepicker_css_config",
@@ -2262,7 +2262,7 @@ module.exports = {
               "tree/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Tree methods",
                 items: [
                   "tree/api/tree_checkitem_method",
                   "tree/api/tree_collapse_method",
@@ -2282,7 +2282,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Tree events",
                 items: [
                   "tree/api/tree_aftercheck_event",
                   "tree/api/tree_aftercollapse_event",
@@ -2311,7 +2311,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Tree properties",
                 items: [
                   "tree/api/tree_autoload_config",
                   "tree/api/tree_checkbox_config",
@@ -2494,7 +2494,7 @@ module.exports = {
                 label: "Selection API",
                 items: [{
                   type: "category",
-                  label: "Methods",
+                  label: "TreeGrid Selection methods",
                   items: [
                     "treegrid/api/selection/selection_disable_method",
                     "treegrid/api/selection/selection_enable_method",
@@ -2505,7 +2505,7 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Events",
+                  label: "TreeGrid Selection events",
                   items: [
                     "treegrid/api/selection/selection_afterselect_event",
                     "treegrid/api/selection/selection_afterunselect_event",
@@ -2541,7 +2541,7 @@ module.exports = {
               "window/api/api_overview",
               {
                 type: "category",
-                label: "Methods",
+                label: "Window methods",
                 items: [
                   "window/api/window_attach_method",
                   "window/api/window_attachhtml_method",
@@ -2563,7 +2563,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Events",
+                label: "Window events",
                 items: [
                   "window/api/window_afterhide_event",
                   "window/api/window_aftershow_event",
@@ -2576,7 +2576,7 @@ module.exports = {
               },
               {
                 type: "category",
-                label: "Properties",
+                label: "Window properties",
                 items: [
                   "window/api/window_closable_config",
                   "window/api/window_css_config",
