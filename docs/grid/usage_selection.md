@@ -99,7 +99,7 @@ For that, manipulate the **ctrlUp** and **shiftUp** parameters accordingly:
 
 ~~~js
 grid.selection.setCell(grid.data.getId(1),"yearlyChange");
-grid.selection.setCell(grid.data.getId(3),"destiny", false, true);
+grid.selection.setCell(grid.data.getId(3),"density", false, true);
 ~~~
 
 **Related sample**: [Grid. Multiselection](https://snippet.dhtmlx.com/4nj0e9ye)
