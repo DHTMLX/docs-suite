@@ -2621,7 +2621,7 @@ module.exports = {
         "ajax/index",
         {
           type: "category",
-          label: "Methods",
+          label: "AJAX methods",
           items: [
             "ajax/api/ajax_delete_method",
             "ajax/api/ajax_get_method",
@@ -2646,7 +2646,7 @@ module.exports = {
         "css_manager/index",
         {
           type: "category",
-          label: "Methods",
+          label: "CSS manager methods",
           items: [
             "css_manager/api/cssmanager_add_method",
             "css_manager/api/cssmanager_get_method",
@@ -2663,7 +2663,7 @@ module.exports = {
         "data_collection/index",
         {
           type: "category",
-          label: "Methods",
+          label: "DataCollection methods",
           items: [
             "data_collection/api/datacollection_add_method",
             "data_collection/api/datacollection_changeid_method",
@@ -2696,7 +2696,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Events",
+          label: "DataCollection events",
           items: [
             "data_collection/api/datacollection_afteradd_event",
             "data_collection/api/datacollection_afterlazyload_event",
@@ -2723,7 +2723,7 @@ module.exports = {
         "data_proxy/index",
         {
           type: "category",
-          label: "Methods",
+          label: "DataProxy methods",
           items: [
             "data_proxy/api/dataproxy_load_method",
             "data_proxy/api/dataproxy_save_method",
@@ -2746,12 +2746,12 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Selection Object API",
+      label: "Selection object API",
       items: [
         "selection/index",
         {
           type: "category",
-          label: "Methods",
+          label: "Selection object methods",
           items: [
             "selection/api/selection_add_method",
             "selection/api/selection_disable_method",
@@ -2763,7 +2763,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Events",
+          label: "Selection object events",
           items: [
             "selection/api/selection_afterselect_event",
             "selection/api/selection_afterunselect_event",
@@ -2780,7 +2780,7 @@ module.exports = {
         "tree_collection/index",
         {
           type: "category",
-          label: "Methods",
+          label: "TreeCollection methods",
           items: [
             "tree_collection/api/treecollection_add_method",
             "tree_collection/api/treecollection_cancopy_method",
@@ -2815,7 +2815,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Events",
+          label: "TreeCollection events",
           items: [
             "tree_collection/api/treecollection_afteradd_event",
             "tree_collection/api/treecollection_afterremove_event",
@@ -2831,12 +2831,12 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Uploader Object API",
+      label: "Uploader object API",
       items: [
         "uploader/index",
         {
           type: "category",
-          label: "Methods",
+          label: "Uploader object methods",
           items: [
             "uploader/api/uploader_abort_method",
             "uploader/api/uploader_linkdroparea_method",
@@ -2847,7 +2847,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Properties",
+          label: "Uploader object properties",
           items: [
             "uploader/api/uploader_autosend_config",
             "uploader/api/uploader_fieldname_config",
