@@ -275,11 +275,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/colorpicker/colorpicker_beforehide_event.md)             | @getshort(form/api/colorpicker/colorpicker_beforehide_event.md)             |
 | [](form/api/colorpicker/colorpicker_beforeshow_event.md)             | @getshort(form/api/colorpicker/colorpicker_beforeshow_event.md)             |
 | [](form/api/colorpicker/colorpicker_beforevalidate_event.md)         | @getshort(form/api/colorpicker/colorpicker_beforevalidate_event.md)         |
+| [](form/api/colorpicker/colorpicker_blur_event.md)                   | @getshort(form/api/colorpicker/colorpicker_blur_event.md)                   |
 | [](form/api/colorpicker/colorpicker_change_event.md)                 | @getshort(form/api/colorpicker/colorpicker_change_event.md)                 |
+| [](form/api/colorpicker/colorpicker_focus_event.md)                  | @getshort(form/api/colorpicker/colorpicker_focus_event.md)                  |
 | [](form/api/colorpicker/colorpicker_input_event.md)                  | @getshort(form/api/colorpicker/colorpicker_input_event.md)                  |
 | [](form/api/colorpicker/colorpicker_keydown_event.md)                | @getshort(form/api/colorpicker/colorpicker_keydown_event.md)                |
-| [](colorpicker/colorpicker_blur_event.md)                            | @getshort(colorpicker/colorpicker_blur_event.md)                            |
-| [](colorpicker/colorpicker_focus_event.md)                           | @getshort(colorpicker/colorpicker_focus_event.md)                           |
 
 ### Color Picker properties
 
