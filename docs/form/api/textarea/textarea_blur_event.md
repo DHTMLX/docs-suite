@@ -1,22 +1,22 @@
 ---
 sidebar_label: blur
-title: blur
----          
+title: JavaScript Form - blur Textarea Event 
+description: You can explore the blur Textarea event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# blur
 
-@short: fires on focus removal from a Textarea control
+@short: fires when an Input control has lost focus
 
-@signature: 
+@signature: blur: (value: string) => void;
 
 @params:
-- value - the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("textarea").events.on("blur", (value) => {
     console.log("blur", value);
 });
-
-@relatedapi: 
+@examplestop:
 
 @changelog: added v7.2

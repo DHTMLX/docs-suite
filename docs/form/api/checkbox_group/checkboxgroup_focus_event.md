@@ -1,23 +1,23 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Form - focus Checkbox Group Event 
+description: You can explore the focus Checkbox Group event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# focus
 
-@short: fires on focus in a CheckboxGroup control
+@short: fires when a CheckboxGroup control has received focus
 
-@signature: 
+@signature: focus: (value: ICheckboxGroupValue, id: string) => void;
 
 @params:
-- value - the current value of the control
-- id - id of the element of the CheckboxGroup control 
+- `value` - the current value of the control
+- `id: string` - the id of the element of the CheckboxGroup control
 
 @example:
 form.getItem("checkboxGroup").events.on("focus", (value, id) => {
     console.log("focus", value, id);
 });
+@examplestop:
 
-@relatedapi: 
-
-@changelog: Added in v7.2
+@changelog: added in v7.2

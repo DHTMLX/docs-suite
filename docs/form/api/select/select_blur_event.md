@@ -1,22 +1,22 @@
 ---
 sidebar_label: blur
-title: blur
----          
+title: JavaScript Form - blur Select Event 
+description: You can explore the blur Select event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# blur
 
-@short: fires on focus removal from a Select control
+@short: fires when an Input control has lost focus
 
-@signature: 
+@signature: blur: (value: string | number) => void;
 
 @params:
-- value - the current value of the control
+`value: string | number` - the current value of the control
 
 @example:
 form.getItem("select").events.on("blur", (value) => {
     console.log("blur", value);
 });
-
-@relatedapi: 
+@examplestop:
 
 @changelog: added v7.2
