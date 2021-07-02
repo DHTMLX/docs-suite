@@ -260,7 +260,7 @@ list.data.parse(data);
 
 As a result, the list of books is rendered on the page according to the specified template. We took a small part of the list just for a convenience sample, in real-life practice, the list can be very huge.
 
-Now, let's add a new book to the list. To do that, we need to use the [add()](../data_collection/api/datacollection_add_method.md) method of DataCollection:
+Now, let's add a new book to the list. To do that, we need to use the [](../data_collection/api/datacollection_add_method.md) method of DataCollection:
 
 ```js
 list.data.add(
@@ -283,13 +283,13 @@ list.data.add(
 Note, that we have added the new item into the list but not into the data set.
 
 
-To save the current state of the list we will serialize the component data with the  help of the [serialize()](../data_collection/api/datacollection_serialize_method.md) method of DataCollection. 
+To save the current state of the list we will serialize the component data with the  help of the [](../data_collection/api/datacollection_serialize_method.md) method of DataCollection. 
 
 ```js
 var state = list.data.serialize();
 ```
 
-After that, we can parse the serialized data to the new list. We will use the [parse()](../data_collection/api/datacollection_parse_method.md) method for it.
+After that, we can parse the serialized data to the new list. We will use the [](../data_collection/api/datacollection_parse_method.md) method for it.
 
 Do not forget to add a separate container for the new component.
 
