@@ -6,11 +6,9 @@ description: You can explore the focus event of Combo Box in the documentation o
 
 # focus
 
-`to do - check @signature:`
-
 @short: fires when Combobox has received focus
 
-@signature:
+@signature: focus: () => void;
 
 @example:
 combobox.events.on("focus", function() {

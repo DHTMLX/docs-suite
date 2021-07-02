@@ -6,15 +6,13 @@ description: You can explore the keydown event of Combo Box in the documentation
 
 # keydown
 
-`to do check @signature:`
-
 @short: fires when any key is pressed and the element of Combobox is in focus
 
-@signature:
+@signature: keydown: (event: KeyboardEvent, id: Id | undefined) => void;
 
 @params:
-- `event` - a native KeyboardEvent object
-- `id` - the id of the element of Combobox in focus
+- `event: KeyboardEvent` - a native KeyboardEvent object
+- `id: string | number` - the id of the element of Combobox in focus
 
 @example:
 combobox.events.on("keydown", function(event, id) {

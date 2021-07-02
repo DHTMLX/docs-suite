@@ -6,11 +6,9 @@ description: You can explore the blur event of Combo Box in the documentation of
 
 # blur
 
-`to do - check @signature:`
-
 @short: fires when Combobox has lost focus
 
-@signature:
+@signature: blur: () => void;
 
 @example:
 combobox.events.on("blur", function() {

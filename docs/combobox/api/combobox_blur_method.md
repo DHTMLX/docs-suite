@@ -6,8 +6,6 @@ description: You can explore the blur method of Combo Box in the documentation o
 
 # blur()
 
-`to do - check @signature:`
-
 @short: removes focus from Combobox
 
 @signature: blur(): void;
