@@ -24,4 +24,4 @@ The helper takes two parameters:
 - **handler** - (*function*) a callback function that returns the container width and height after its sizes were changed
 
 
-[](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
+add [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
