@@ -1,5 +1,5 @@
 ---
-sidebar_label: NavItem properties
+sidebar_label: Toolbar NavItem properties
 title: JavaScript Toolbar - NavItem Properties 
 description: You can explore the NavItem properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
