@@ -6,14 +6,14 @@ description: You can learn how to work with DataCollection in the documentation 
 
 # How to work with DataCollection
 
-The DHTMLX library includes two invisible components that serve to store data:
+The DHTMLX library includes two invisible components (in other words, helpers) that serve to store data:
 
 - [DataCollection](data_collection/index.md/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
 - [TreeCollection](tree_collection/index.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid)
 
 API methods and events of DataCollection and TreeCollection lets you work with data items, namely to load, process, and edit the items.
 
-The components allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [](../data_collection/api/datacollection_load_method.md/) method of DataCollection.
+The helpers allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [](../data_collection/api/datacollection_load_method.md/) method of DataCollection.
 
 In this article we will consider how to work with DataCollection.
 
@@ -74,7 +74,7 @@ where:
 - **component** is the name of the applicable component (chart, combobox, dataview, grid, list)
 - **event** is the event of DataCollection
 
-Events of DataCollection are helpful when you need to create a system reaction to the changes made in data.
+Events of DataCollection are helpful when you need to configure a system response to the changes made in data.
 
 Check all [events](data_collection/index.md/#events) of DataCollection.
 
@@ -86,7 +86,7 @@ Let's create a sample of DataCollection usage step by step.
 
 Please, use [the DHTMLX Snippet Tool](https://snippet.dhtmlx.com/lscu83ji) to create this sample. We will use both JavaScript code and HTML.
 
-Let's create a List widget and define a template to render items in our List.
+Let's add a List widget on the page and define a template to render items in our List.
 
 ```html
 <!-- component container -->
@@ -252,7 +252,7 @@ As you can see, we've initialized the list but it is still empty. To fill in our
 </script>
 ```
 
-- Then, to load the data into the list we apply the [](../data_collection/api/datacollection_parse_method.md/) method of DataCollection:
+- Then, to load the prepared data into the list we apply the [](../data_collection/api/datacollection_parse_method.md/) method of DataCollection:
 
 ```js
 list.data.parse(data);
@@ -260,7 +260,7 @@ list.data.parse(data);
 
 As a result, the list of books is rendered on the page according to the specified template. We took a small part of the list just for a convenience sample, in real-life practice, the list can be very huge.
 
-Let's add a new book to the list. To do that, we need to use the [](../data_collection/api/datacollection_add_method.md/) method of DataCollection:
+Now, let's add a new book to the list. To do that, we need to use the [](../data_collection/api/datacollection_add_method.md/) method of DataCollection:
 
 ```js
 list.data.add(
@@ -280,9 +280,16 @@ list.data.add(
     }, 1);
 ```
 
-We have added the new item into the list but not into the data set.
+Note, that we have added the new item into the list but not into the data set.
 
-Let's serialize the component data to save the current state of the list, create a new list and send the serialized data to this list. We will use the **serialize()** and **parse()** methods for it.
+
+To save the current state of the list we will serialize the component data with the  help of the [](../data_collection/api/datacollection_serialize_method.md/) method of DataCollection. 
+
+```js
+var state = list.data.serialize();
+```
+
+After that, we can parse the serialized data to the new list. We will use the [](../data_collection/api/datacollection_parse_method.md/) methods for it.
 
 Do not forget to add a separate container for the new component.
 
@@ -291,9 +298,6 @@ Do not forget to add a separate container for the new component.
 ```
 
 ```js
-//serializing data 
-var state = list.data.serialize();
-
 //creating list2
 var list2 = new dhx.List("list2", {
     css: "dhx_widget--bordered",
