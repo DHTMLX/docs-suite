@@ -12,6 +12,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                      | Description                                      |
 | ----------------------------------------- | ------------------------------------------------ |
+| [](form/api/form_blur_method.md)          | @getshort(form/api/form_blur_method.md)          |
 | [](form/api/form_clear_method.md)         | @getshort(form/api/form_clear_method.md)         |
 | [](form/api/form_destructor_method.md)    | @getshort(form/api/form_destructor_method.md)    |
 | [](form/api/form_disable_method.md)       | @getshort(form/api/form_disable_method.md)       |
@@ -30,7 +31,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/form_setvalue_method.md)      | @getshort(form/api/form_setvalue_method.md)      |
 | [](form/api/form_show_method.md)          | @getshort(form/api/form_show_method.md)          |
 | [](form/api/form_validate_method.md)      | @getshort(form/api/form_validate_method.md)      |
-| [](form_blur_method.md)                   | @getshort(form_blur_method.md)                   |
 
 ### Events
 
@@ -46,16 +46,16 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/form_beforesend_event.md)             | @getshort(form/api/form_beforesend_event.md)             |
 | [](form/api/form_beforeshow_event.md)             | @getshort(form/api/form_beforeshow_event.md)             |
 | [](form/api/form_beforevalidate_event.md)         | @getshort(form/api/form_beforevalidate_event.md)         |
+| [](form/api/form_blur_event.md)                   | @getshort(form/api/form_blur_event.md)                   |
 | [](form/api/form_change_event.md)                 | @getshort(form/api/form_change_event.md)                 |
 | [](form/api/form_click_event.md)                  | @getshort(form/api/form_click_event.md)                  |
+| [](form/api/form_focus_event.md)                  | @getshort(form/api/form_focus_event.md)                  |
 | [](form/api/form_keydown_event.md)                | @getshort(form/api/form_keydown_event.md)                |
-| [](form_blur_event.md)                            | @getshort(form_blur_event.md)                            |
-| [](form_focus_event.md)                           | @getshort(form_focus_event.md)                           |
 
 ### Properties
 
-| Name                                   | Description                                   |
-| -------------------------------------- | --------------------------------------------- |
+| Name                                 | Description                                 |
+| ------------------------------------ | ------------------------------------------- |
 | [](form/api/form_align_config.md)    | @getshort(form/api/form_align_config.md)    |
 | [](form/api/form_cols_config.md)     | @getshort(form/api/form_cols_config.md)     |
 | [](form/api/form_css_config.md)      | @getshort(form/api/form_css_config.md)      |
@@ -73,16 +73,16 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | --------------------------------------------------------- |
+| [](form/api/button/button_blur_method.md)          | @getshort(form/api/button/button_blur_method.md)          |
 | [](form/api/button/button_disable_method.md)       | @getshort(form/api/button/button_disable_method.md)       |
 | [](form/api/button/button_enable_method.md)        | @getshort(form/api/button/button_enable_method.md)        |
+| [](form/api/button/button_focus_method.md)         | @getshort(form/api/button/button_focus_method.md)         |
 | [](form/api/button/button_getproperties_method.md) | @getshort(form/api/button/button_getproperties_method.md) |
 | [](form/api/button/button_hide_method.md)          | @getshort(form/api/button/button_hide_method.md)          |
 | [](form/api/button/button_isdisabled_method.md)    | @getshort(form/api/button/button_isdisabled_method.md)    |
 | [](form/api/button/button_isvisible_method.md)     | @getshort(form/api/button/button_isvisible_method.md)     |
 | [](form/api/button/button_setproperties_method.md) | @getshort(form/api/button/button_setproperties_method.md) |
 | [](form/api/button/button_show_method.md)          | @getshort(form/api/button/button_show_method.md)          |
-| [](button/button_focus_method.md)                  | @getshort(button/button_focus_method.md)                  |
-| [](button/button_blur_method.md)                   | @getshort(button/button_blur_method.md)                   |
 
 ### Button events
 
@@ -94,10 +94,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/button/button_beforechangeproperties_event.md) | @getshort(form/api/button/button_beforechangeproperties_event.md) |
 | [](form/api/button/button_beforehide_event.md)             | @getshort(form/api/button/button_beforehide_event.md)             |
 | [](form/api/button/button_beforeshow_event.md)             | @getshort(form/api/button/button_beforeshow_event.md)             |
+| [](form/api/button/button_blur_event.md)                   | @getshort(form/api/button/button_blur_event.md)                   |
 | [](form/api/button/button_click_event.md)                  | @getshort(form/api/button/button_click_event.md)                  |
+| [](form/api/button/button_focus_event.md)                  | @getshort(form/api/button/button_focus_event.md)                  |
 | [](form/api/button/button_keydown_event.md)                | @getshort(form/api/button/button_keydown_event.md)                |
-| [](button/button_focus_event.md)                           | @getshort(button/button_focus_event.md)                           |
-| [](button/button_blur_event.md)                            | @getshort(button/button_blur_event.md)                            |
 
 ### Button properties
 
@@ -109,6 +109,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
+| [](form/api/calendar/calendar_blur_method.md)          | @getshort(form/api/calendar/calendar_blur_method.md)          |
 | [](form/api/calendar/calendar_clear_method.md)         | @getshort(form/api/calendar/calendar_clear_method.md)         |
 | [](form/api/calendar/calendar_clearvalidate_method.md) | @getshort(form/api/calendar/calendar_clearvalidate_method.md) |
 | [](form/api/calendar/calendar_disable_method.md)       | @getshort(form/api/calendar/calendar_disable_method.md)       |
@@ -124,7 +125,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/calendar/calendar_setvalue_method.md)      | @getshort(form/api/calendar/calendar_setvalue_method.md)      |
 | [](form/api/calendar/calendar_show_method.md)          | @getshort(form/api/calendar/calendar_show_method.md)          |
 | [](form/api/calendar/calendar_validate_method.md)      | @getshort(form/api/calendar/calendar_validate_method.md)      |
-| [](form/api/calendar/calendar_blur_method.md)          | @getshort(form/api/calendar/calendar_blur_method.md)          |
 
 ### DatePicker events
 
@@ -138,11 +138,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/calendar/calendar_beforehide_event.md)             | @getshort(orm/api/calendar/calendar_beforehide_event.md)             |
 | [](form/api/calendar/calendar_beforeshow_event.md)             | @getshort(orm/api/calendar/calendar_beforeshow_event.md)             |
 | [](form/api/calendar/calendar_beforevalidate_event.md)         | @getshort(orm/api/calendar/calendar_beforevalidate_event.md)         |
+| [](form/api/calendar/calendar_blur_event.md)                   | @getshort(form/api/calendar/calendar_blur_event.md)                  |
 | [](form/api/calendar/calendar_change_event.md)                 | @getshort(orm/api/calendar/calendar_change_event.md)                 |
+| [](form/api/calendar/calendar_focus_event.md)                  | @getshort(form/api/calendar/calendar_focus_event.md)                 |
 | [](form/api/calendar/calendar_input_event.md)                  | @getshort(orm/api/calendar/calendar_input_event.md)                  |
 | [](form/api/calendar/calendar_keydown_event.md)                | @getshort(form/api/calendar/calendar_keydown_event.md)               |
-| [](calendar/calendar_blur_event.md)                            | @getshort(calendar/calendar_blur_event.md)                           |
-| [](calendar/calendar_focus_event.md)                           | @getshort(calendar/calendar_focus_event.md)                          |
 
 ### DatePicker properties
 
@@ -154,6 +154,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
+| [](form/api/checkbox/checkbox_blur_method.md)          | @getshort(form/api/checkbox/checkbox_blur_method.md)          |
 | [](form/api/checkbox/checkbox_clear_method.md)         | @getshort(form/api/checkbox/checkbox_clear_method.md)         |
 | [](form/api/checkbox/checkbox_clearvalidate_method.md) | @getshort(form/api/checkbox/checkbox_clearvalidate_method.md) |
 | [](form/api/checkbox/checkbox_disable_method.md)       | @getshort(form/api/checkbox/checkbox_disable_method.md)       |
@@ -169,7 +170,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox/checkbox_setvalue_method.md)      | @getshort(form/api/checkbox/checkbox_setvalue_method.md)      |
 | [](form/api/checkbox/checkbox_show_method.md)          | @getshort(form/api/checkbox/checkbox_show_method.md)          |
 | [](form/api/checkbox/checkbox_validate_method.md)      | @getshort(form/api/checkbox/checkbox_validate_method.md)      |
-| [](form/api/checkbox/checkbox_blur_method.md)          | @getshort(form/api/checkbox/checkbox_blur_method.md)          |
 
 ### Checkbox events
 
@@ -183,10 +183,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox/checkbox_beforehide_event.md)             | @getshort(form/api/checkbox/checkbox_beforehide_event.md)             |
 | [](form/api/checkbox/checkbox_beforeshow_event.md)             | @getshort(form/api/checkbox/checkbox_beforeshow_event.md)             |
 | [](form/api/checkbox/checkbox_beforevalidate_event.md)         | @getshort(form/api/checkbox/checkbox_beforevalidate_event.md)         |
+| [](form/api/checkbox/checkbox_blur_event.md)                   | @getshort(form/api/checkbox/checkbox_blur_event.md)                   |
 | [](form/api/checkbox/checkbox_change_event.md)                 | @getshort(form/api/checkbox/checkbox_change_event.md)                 |
+| [](form/api/checkbox/checkbox_focus_event.md)                  | @getshort(form/api/checkbox/checkbox_focus_event.md)                  |
 | [](form/api/checkbox/checkbox_keydown_event.md)                | @getshort(form/api/checkbox/checkbox_keydown_event.md)                |
-| [](checkbox/checkbox_focus_event.md)                           | @getshort(checkbox/checkbox_focus_event.md)                           |
-| [](checkbox/checkbox_blur_event.md)                            | @getshort(checkbox/checkbox_blur_event.md)                            |
 
 ### Checkbox properties
 
@@ -198,6 +198,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                              | Description                                                              |
 | :---------------------------------------------------------------- | :----------------------------------------------------------------------- |
+| [](form/api/checkbox_group/checkboxgroup_blur_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_blur_method.md)          |
 | [](form/api/checkbox_group/checkboxgroup_clear_method.md)         | @getshort(form/api/checkbox_group/checkboxgroup_clear_method.md)         |
 | [](form/api/checkbox_group/checkboxgroup_clearvalidate_method.md) | @getshort(form/api/checkbox_group/checkboxgroup_clearvalidate_method.md) |
 | [](form/api/checkbox_group/checkboxgroup_disable_method.md)       | @getshort(form/api/checkbox_group/checkboxgroup_disable_method.md)       |
@@ -213,7 +214,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox_group/checkboxgroup_setvalue_method.md)      | @getshort(form/api/checkbox_group/checkboxgroup_setvalue_method.md)      |
 | [](form/api/checkbox_group/checkboxgroup_show_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_show_method.md)          |
 | [](form/api/checkbox_group/checkboxgroup_validate_method.md)      | @getshort(form/api/checkbox_group/checkboxgroup_validate_method.md)      |
-| [](form/api/checkbox_group/checkboxgroup_blur_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_blur_method.md)          |
 
 ### CheckboxGroup events
 
@@ -227,10 +227,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox_group/checkboxgroup_beforehide_event.md)             | @getshort(form/api/checkbox_group/checkboxgroup_beforehide_event.md)             |
 | [](form/api/checkbox_group/checkboxgroup_beforeshow_event.md)             | @getshort(form/api/checkbox_group/checkboxgroup_beforeshow_event.md)             |
 | [](form/api/checkbox_group/checkboxgroup_beforevalidate_event.md)         | @getshort(form/api/checkbox_group/checkboxgroup_beforevalidate_event.md)         |
+| [](form/api/checkbox_group/checkboxgroup_blur_event.md)                   | @getshort(form/api/checkbox_group/checkboxgroup_blur_event.md)                   |
 | [](form/api/checkbox_group/checkboxgroup_change_event.md)                 | @getshort(form/api/checkbox_group/checkboxgroup_change_event.md)                 |
+| [](form/api/checkbox_group/checkboxgroup_focus_event.md)                  | @getshort(form/api/checkbox_group/checkboxgroup_focus_event.md)                  |
 | [](form/api/checkbox_group/checkboxgroup_keydown_event.md)                | @getshort(form/api/checkbox_group/checkboxgroup_keydown_event.md)                |
-| [](checkbox_group/checkboxgroup_blur_event.md)                            | @getshort(checkbox_group/checkboxgroup_blur_event.md)                            |
-| [](checkbox_group/checkboxgroup_focus_event.md)                           | @getshort(checkbox_group/checkboxgroup_focus_event.md)                           |
 
 ### CheckboxGroup properties
 
@@ -246,6 +246,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                         | Description                                                         |
 | :----------------------------------------------------------- | :------------------------------------------------------------------ |
+| [](form/api/colorpicker/colorpicker_blur_method.md)          | @getshort(form/api/colorpicker/colorpicker_blur_method.md)          |
 | [](form/api/colorpicker/colorpicker_clear_method.md)         | @getshort(form/api/colorpicker/colorpicker_clear_method.md)         |
 | [](form/api/colorpicker/colorpicker_clearvalidate_method.md) | @getshort(form/api/colorpicker/colorpicker_clearvalidate_method.md) |
 | [](form/api/colorpicker/colorpicker_disable_method.md)       | @getshort(form/api/colorpicker/colorpicker_disable_method.md)       |
@@ -261,8 +262,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/colorpicker/colorpicker_setvalue_method.md)      | @getshort(form/api/colorpicker/colorpicker_setvalue_method.md)      |
 | [](form/api/colorpicker/colorpicker_show_method.md)          | @getshort(form/api/colorpicker/colorpicker_show_method.md)          |
 | [](form/api/colorpicker/colorpicker_validate_method.md)      | @getshort(form/api/colorpicker/colorpicker_validate_method.md)      |
-| [](form/api/colorpicker/colorpicker_blur_method.md)          | @getshort(form/api/colorpicker/colorpicker_blur_method.md)          |
-       
 
 ### Color Picker events
 
@@ -292,6 +291,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                             | Description                                             |
 | :----------------------------------------------- | :------------------------------------------------------ |
+| [](form/api/combo/combo_blur_method.md)          | @getshort(form/api/combo/combo_blur_method.md)          |
 | [](form/api/combo/combo_clear_method.md)         | @getshort(form/api/combo/combo_clear_method.md)         |
 | [](form/api/combo/combo_clearvalidate_method.md) | @getshort(form/api/combo/combo_clearvalidate_method.md) |
 | [](form/api/combo/combo_disable_method.md)       | @getshort(form/api/combo/combo_disable_method.md)       |
@@ -307,7 +307,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/combo/combo_setvalue_method.md)      | @getshort(form/api/combo/combo_setvalue_method.md)      |
 | [](form/api/combo/combo_show_method.md)          | @getshort(form/api/combo/combo_show_method.md)          |
 | [](form/api/combo/combo_validate_method.md)      | @getshort(form/api/combo/combo_validate_method.md)      |
-| [](form/api/combo/combo_blur_method.md)          | @getshort(form/api/combo/combo_blur_method.md)          |
 
 ### Combo events
 
@@ -321,10 +320,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/combo/combo_beforehide_event.md)             | @getshort(form/api/combo/combo_beforehide_event.md)             |
 | [](form/api/combo/combo_beforeshow_event.md)             | @getshort(form/api/combo/combo_beforeshow_event.md)             |
 | [](form/api/combo/combo_beforevalidate_event.md)         | @getshort(form/api/combo/combo_beforevalidate_event.md)         |
+| [](form/api/combo/combo_blur_event.md)                   | @getshort(form/api/combo/combo_blur_event.md)                   |
 | [](form/api/combo/combo_change_event.md)                 | @getshort(form/api/combo/combo_change_event.md)                 |
+| [](form/api/combo/combo_focus_event.md)                  | @getshort(form/api/combo/combo_focus_event.md)                  |
 | [](form/api/combo/combo_keydown_event.md)                | @getshort(form/api/combo/combo_keydown_event.md)                |
-| [](combo/combo_blur_event.md)                            | @getshort(combo/combo_blur_event.md)                            |
-| [](combo/combo_focus_event.md)                           | @getshort(combo/combo_focus_event.md)                           |
 
 ### Combo properties
 
@@ -368,6 +367,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                             | Description                                             |
 | :----------------------------------------------- | :------------------------------------------------------ |
+| [](form/api/input/input_blur_method.md)          | @getshort(form/api/input/input_blur_method.md)          |
 | [](form/api/input/input_clear_method.md)         | @getshort(form/api/input/input_clear_method.md)         |
 | [](form/api/input/input_clearvalidate_method.md) | @getshort(form/api/input/input_clearvalidate_method.md) |
 | [](form/api/input/input_disable_method.md)       | @getshort(form/api/input/input_disable_method.md)       |
@@ -382,7 +382,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/input/input_setvalue_method.md)      | @getshort(form/api/input/input_setvalue_method.md)      |
 | [](form/api/input/input_show_method.md)          | @getshort(form/api/input/input_show_method.md)          |
 | [](form/api/input/input_validate_method.md)      | @getshort(form/api/input/input_validate_method.md)      |
-| [](form/api/input/input_blur_method.md)          | @getshort(form/api/input/input_blur_method.md)          |
 
 ### Input events
 
@@ -396,11 +395,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/input/input_beforehide_event.md)             | @getshort(form/api/input/input_beforehide_event.md)             |
 | [](form/api/input/input_beforeshow_event.md)             | @getshort(form/api/input/input_beforeshow_event.md)             |
 | [](form/api/input/input_beforevalidate_event.md)         | @getshort(form/api/input/input_beforevalidate_event.md)         |
+| [](form/api/input/input_blur_event.md)                   | @getshort(form/api/input/input_blur_event.md)                   |
 | [](form/api/input/input_change_event.md)                 | @getshort(form/api/input/input_change_event.md)                 |
+| [](form/api/input/input_focus_event.md)                  | @getshort(form/api/input/input_focus_event.md)                  |
 | [](form/api/input/input_input_event.md)                  | @getshort(form/api/input/input_input_event.md)                  |
 | [](form/api/input/input_keydown_event.md)                | @getshort(form/api/input/input_keydown_event.md)                |
-| [](input/input_blur_event.md)                            | @getshort(input/input_blur_event.md)                            |
-| [](input/input_focus_event.md)                           | @getshort(input/input_focus_event.md)                           |
 
 ### Input properties
 
@@ -412,6 +411,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| [](form/api/radiogroup/radiogroup_blur_method.md)          | @getshort(form/api/radiogroup/radiogroup_blur_method.md)          |
 | [](form/api/radiogroup/radiogroup_clear_method.md)         | @getshort(form/api/radiogroup/radiogroup_clear_method.md)         |
 | [](form/api/radiogroup/radiogroup_clearvalidate_method.md) | @getshort(form/api/radiogroup/radiogroup_clearvalidate_method.md) |
 | [](form/api/radiogroup/radiogroup_disable_method.md)       | @getshort(form/api/radiogroup/radiogroup_disable_method.md)       |
@@ -426,7 +426,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/radiogroup/radiogroup_setvalue_method.md)      | @getshort(form/api/radiogroup/radiogroup_setvalue_method.md)      |
 | [](form/api/radiogroup/radiogroup_show_method.md)          | @getshort(form/api/radiogroup/radiogroup_show_method.md)          |
 | [](form/api/radiogroup/radiogroup_validate_method.md)      | @getshort(form/api/radiogroup/radiogroup_validate_method.md)      |
-| [](form/api/radiogroup/radiogroup_blur_method.md)          | @getshort(form/api/radiogroup/radiogroup_blur_method.md)          |
 
 ### RadioGroup events
 
@@ -440,10 +439,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/radiogroup/radiogroup_beforehide_event.md)             | @getshort(form/api/radiogroup/radiogroup_beforehide_event.md)             |
 | [](form/api/radiogroup/radiogroup_beforeshow_event.md)             | @getshort(form/api/radiogroup/radiogroup_beforeshow_event.md)             |
 | [](form/api/radiogroup/radiogroup_beforevalidate_event.md)         | @getshort(form/api/radiogroup/radiogroup_beforevalidate_event.md)         |
+| [](form/api/radiogroup/radiogroup_blur_event.md)                   | @getshort(form/api/radiogroup/radiogroup_blur_event.md)                   |
 | [](form/api/radiogroup/radiogroup_change_event.md)                 | @getshort(form/api/radiogroup/radiogroup_change_event.md)                 |
+| [](form/api/radiogroup/radiogroup_focus_event.md)                  | @getshort(form/api/radiogroup/radiogroup_focus_event.md)                  |
 | [](form/api/radiogroup/radiogroup_keydown_event.md)                | @getshort(form/form/api/radiogroup/radiogroup_keydown_event.md)           |
-| [](radiogroup/radiogroup_blur_event.md)                            | @getshort(radiogroup/radiogroup_blur_event.md)                            |
-| [](radiogroup/radiogroup_focus_event.md)                           | @getshort(radiogroup/radiogroup_focus_event.md)                           |
 
 ### RadioGroup properties
 
@@ -459,13 +458,14 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
+| [](form/api/select/select_blur_method.md)          | @getshort(form/api/select/select_blur_method.md)          |
 | [](form/api/select/select_clear_method.md)         | @getshort(form/api/select/select_clear_method.md)         |
 | [](form/api/select/select_clearvalidate_method.md) | @getshort(form/api/select/select_clearvalidate_method.md) |
 | [](form/api/select/select_disable_method.md)       | @getshort(form/api/select/select_disable_method.md)       |
 | [](form/api/select/select_enable_method.md)        | @getshort(form/api/select/select_enable_method.md)        |
 | [](form/api/select/select_focus_method.md)         | @getshort(form/api/select/select_focus_method.md)         |
-| [](form/api/select/select_getproperties_method.md) | @getshort(form/api/select/select_getproperties_method.md) |
 | [](form/api/select/select_getoptions_method.md)    | @getshort(form/api/select/select_getoptions_method.md)    |
+| [](form/api/select/select_getproperties_method.md) | @getshort(form/api/select/select_getproperties_method.md) |
 | [](form/api/select/select_getvalue_method.md)      | @getshort(form/api/select/select_getvalue_method.md)      |
 | [](form/api/select/select_hide_method.md)          | @getshort(form/api/select/select_hide_method.md)          |
 | [](form/api/select/select_isdisabled_method.md)    | @getshort(form/api/select/select_isdisabled_method.md)    |
@@ -475,7 +475,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/select/select_setvalue_method.md)      | @getshort(form/api/select/select_setvalue_method.md)      |
 | [](form/api/select/select_show_method.md)          | @getshort(form/api/select/select_show_method.md)          |
 | [](form/api/select/select_validate_method.md)      | @getshort(form/api/select/select_validate_method.md)      |
-| [](form/api/select/select_blur_method.md)          | @getshort(form/api/select/select_blur_method.md)          |
 
 ### Select events
 
@@ -489,11 +488,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/select/select_beforehide_event.md)             | @getshort(form/api/select/select_beforehide_event.md)             |
 | [](form/api/select/select_beforeshow_event.md)             | @getshort(form/api/select/select_beforeshow_event.md)             |
 | [](form/api/select/select_beforevalidate_event.md)         | @getshort(form/api/select/select_beforevalidate_event.md)         |
+| [](form/api/select/select_blur_event.md)                   | @getshort(form/api/select/select_blur_event.md)                   |
 | [](form/api/select/select_change_event.md)                 | @getshort(form/api/select/select_change_event.md)                 |
 | [](form/api/select/select_changeoptions_event.md)          | @getshort(form/api/select/select_changeoptions_event.md)          |
+| [](form/api/select/select_focus_event.md)                  | @getshort(form/api/select/select_focus_event.md)                  |
 | [](form/api/select/select_keydown_event.md)                | @getshort(form/api/select/select_keydown_event.md)                |
-| [](select/select_blur_event.md)                            | @getshort(select/select_blur_event.md)                            |
-| [](select/select_focus_event.md)                           | @getshort(select/select_focus_event.md)                           |
 
 ### Select properties
 
@@ -551,9 +550,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
+| [](form/api/slider/slider_blur_method.md)          | @getshort(form/api/slider/slider_blur_method.md)          |
 | [](form/api/slider/slider_clear_method.md)         | @getshort(form/api/slider/slider_clear_method.md)         |
 | [](form/api/slider/slider_disable_method.md)       | @getshort(form/api/slider/slider_disable_method.md)       |
 | [](form/api/slider/slider_enable_method.md)        | @getshort(form/api/slider/slider_enable_method.md)        |
+| [](form/api/slider/slider_focus_method.md)         | @getshort(form/api/slider/slider_focus_method.md)         |
 | [](form/api/slider/slider_getproperties_method.md) | @getshort(form/api/slider/slider_getproperties_method.md) |
 | [](form/api/slider/slider_getvalue_method.md)      | @getshort(form/api/slider/slider_getvalue_method.md)      |
 | [](form/api/slider/slider_getwidget_method.md)     | @getshort(form/api/slider/slider_getwidget_method.md)     |
@@ -563,8 +564,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/slider/slider_setproperties_method.md) | @getshort(form/api/slider/slider_setproperties_method.md) |
 | [](form/api/slider/slider_setvalue_method.md)      | @getshort(form/api/slider/slider_setvalue_method.md)      |
 | [](form/api/slider/slider_show_method.md)          | @getshort(form/api/slider/slider_show_method.md)          |
-| [](slider/slider_focus_method.md)                  | @getshort(slider/slider_focus_method.md)                  |
-| [](slider/slider_blur_method.md)                   | @getshort(slider/slider_blur_method.md)                   |
 
 ### Slider events
 
@@ -576,10 +575,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/slider/slider_beforechangeproperties_event.md) | @getshort(form/api/slider/slider_beforechangeproperties_event.md) |
 | [](form/api/slider/slider_beforehide_event.md)             | @getshort(form/api/slider/slider_beforehide_event.md)             |
 | [](form/api/slider/slider_beforeshow_event.md)             | @getshort(form/api/slider/slider_beforeshow_event.md)             |
+| [](form/api/slider/slider_blur_event.md)                   | @getshort(form/api/slider/slider_blur_event.md)                   |
 | [](form/api/slider/slider_change_event.md)                 | @getshort(form/api/slider/slider_change_event.md)                 |
+| [](form/api/slider/slider_focus_event.md)                  | @getshort(form/api/slider/slider_focus_event.md)                  |
 | [](form/api/slider/slider_keydown_event.md)                | @getshort(form/api/slider/slider_keydown_event.md)                |
-| [](slider/slider_blur_event.md)                            | @getshort(slider/slider_blur_event.md)                            |
-| [](slider/slider_focus_event.md)                           | @getshort(slider/slider_focus_event.md)                           |
 
 ### Slider properties
 
@@ -654,6 +653,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                   | Description                                                   |
 | :----------------------------------------------------- | :------------------------------------------------------------ |
+| [](form/api/textarea/textarea_blur_method.md)          | @getshort(form/api/textarea/textarea_blur_method.md)          |
 | [](form/api/textarea/textarea_clear_method.md)         | @getshort(form/api/textarea/textarea_clear_method.md)         |
 | [](form/api/textarea/textarea_clearvalidate_method.md) | @getshort(form/api/textarea/textarea_clearvalidate_method.md) |
 | [](form/api/textarea/textarea_disable_method.md)       | @getshort(form/api/textarea/textarea_disable_method.md)       |
@@ -668,7 +668,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/textarea/textarea_setvalue_method.md)      | @getshort(form/api/textarea/textarea_setvalue_method.md)      |
 | [](form/api/textarea/textarea_show_method.md)          | @getshort(form/api/textarea/textarea_show_method.md)          |
 | [](form/api/textarea/textarea_validate_method.md)      | @getshort(form/api/textarea/textarea_validate_method.md)      |
-| [](form/api/textarea/textarea_blur_method.md)          | @getshort(form/api/textarea/textarea_blur_method.md)          |
 
 ### Textarea events
 
@@ -682,11 +681,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/textarea/textarea_beforehide_event.md)             | @getshort(form/api/textarea/textarea_beforehide_event.md)             |
 | [](form/api/textarea/textarea_beforeshow_event.md)             | @getshort(form/api/textarea/textarea_beforeshow_event.md)             |
 | [](form/api/textarea/textarea_beforevalidate_event.md)         | @getshort(form/api/textarea/textarea_beforevalidate_event.md)         |
+| [](form/api/textarea/textarea_blur_event.md)                   | @getshort(form/api/textarea/textarea_blur_event.md)                   |
 | [](form/api/textarea/textarea_change_event.md)                 | @getshort(form/api/textarea/textarea_change_event.md)                 |
+| [](form/api/textarea/textarea_focus_event.md)                  | @getshort(form/api/textarea/textarea_focus_event.md)                  |
 | [](form/api/textarea/textarea_input_event.md)                  | @getshort(form/api/textarea/textarea_input_event.md)                  |
 | [](form/api/textarea/textarea_keydown_event.md)                | @getshort(form/api/textarea/textarea_keydown_event.md)                |
-| [](textarea/textarea_blur_event.md)                            | @getshort(textarea/textarea_blur_event.md)                            |
-| [](textarea/textarea_focus_event.md)                           | @getshort(textarea/textarea_focus_event.md)                           |
 
 ### Textarea properties
 
@@ -698,6 +697,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| [](form/api/timepicker/timepicker_blur_method.md)          | @getshort(form/api/timepicker/timepicker_blur_method.md)          |
 | [](form/api/timepicker/timepicker_clear_method.md)         | @getshort(form/api/timepicker/timepicker_clear_method.md)         |
 | [](form/api/timepicker/timepicker_clearvalidate_method.md) | @getshort(form/api/timepicker/timepicker_clearvalidate_method.md) |
 | [](form/api/timepicker/timepicker_disable_method.md)       | @getshort(form/api/timepicker/timepicker_disable_method.md)       |
@@ -713,7 +713,6 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/timepicker/timepicker_setvalue_method.md)      | @getshort(form/api/timepicker/timepicker_setvalue_method.md)      |
 | [](form/api/timepicker/timepicker_show_method.md)          | @getshort(form/api/timepicker/timepicker_show_method.md)          |
 | [](form/api/timepicker/timepicker_validate_method.md)      | @getshort(form/api/timepicker/timepicker_validate_method.md)      |
-| [](form/api/timepicker/timepicker_blur_method.md)          | @getshort(form/api/timepicker/timepicker_blur_method.md)          |
 
 ### Timepicker events
 
@@ -727,11 +726,11 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/timepicker/timepicker_beforehide_event.md)             | @getshort(form/api/timepicker/timepicker_beforehide_event.md)             |
 | [](form/api/timepicker/timepicker_beforeshow_event.md)             | @getshort(form/api/timepicker/timepicker_beforeshow_event.md)             |
 | [](form/api/timepicker/timepicker_beforevalidate_event.md)         | @getshort(form/api/timepicker/timepicker_beforevalidate_event.md)         |
+| [](form/api/timepicker/timepicker_blur_event.md)                   | @getshort(form/api/timepicker/timepicker_blur_event.md)                   |
 | [](form/api/timepicker/timepicker_change_event.md)                 | @getshort(form/api/timepicker/timepicker_change_event.md)                 |
+| [](form/api/timepicker/timepicker_focus_event.md)                  | @getshort(form/api/timepicker/timepicker_focus_event.md)                  |
 | [](form/api/timepicker/timepicker_input_event.md)                  | @getshort(form/api/timepicker/timepicker_input_event.md)                  |
 | [](form/api/timepicker/timepicker_keydown_event.md)                | @getshort(form/api/timepicker/timepicker_keydown_event.md)                |
-| [](timepicker/timepicker_blur_event.md)                            | @getshort(timepicker/timepicker_blur_event.md)                            |
-| [](timepicker/timepicker_focus_event.md)                           | @getshort(timepicker/timepicker_focus_event.md)                           |
 
 ### Timepicker properties
 
