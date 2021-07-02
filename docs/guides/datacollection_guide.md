@@ -13,7 +13,7 @@ The DHTMLX library includes two invisible components (in other words, helpers) t
 
 API methods and events of DataCollection and TreeCollection lets you work with data items, namely to load, process, and edit the items.
 
-The helpers allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [load()](../data_collection/api/datacollection_load_method.md) method of DataCollection.
+The helpers allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [](../data_collection/api/datacollection_load_method.md) method of DataCollection.
 
 In this article we will consider how to work with DataCollection.
 
@@ -252,7 +252,7 @@ As you can see, we've initialized the list but it is still empty. To fill in our
 </script>
 ```
 
-- Then, to load the prepared data into the list we apply the [parse()](../data_collection/api/datacollection_parse_method.md) method of DataCollection:
+- Then, to load the prepared data into the list we apply the [](../data_collection/api/datacollection_parse_method.md) method of DataCollection:
 
 ```js
 list.data.parse(data);
