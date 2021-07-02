@@ -70,7 +70,7 @@ The following request method is used in this example: `GET`.
 
 ![](../assets/integration/work_with_backend_grid.png)
 
-Sorting and searching options are shown in the Grid example. You can also check how the selection of rows and cells works.
+Sorting and searching options are shown in the Grid example. You can also check how selection of rows and cells works.
 
 The following request methods are used in this example: `GET`, `PUT`.
 
