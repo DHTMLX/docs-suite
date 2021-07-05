@@ -2088,6 +2088,7 @@ module.exports = {
                   "slider/api/slider_destructor_method",
                   "slider/api/slider_disable_method",
                   "slider/api/slider_enable_method",
+                  "slider/api/slider_focus_method",
                   "slider/api/slider_getvalue_method",
                   "slider/api/slider_isdisabled_method",
                   "slider/api/slider_paint_method",
