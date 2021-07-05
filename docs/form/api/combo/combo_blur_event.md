@@ -1,22 +1,22 @@
 ---
 sidebar_label: blur
-title: blur
----          
+title: JavaScript Form - blur Combo Box Event 
+description: You can explore the blur Combo Box event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# blur
 
-@short: fires on focus removal from a Combo control
+@short: fires when a Combo control has lost focus
 
-@signature: 
+@signature: `to do check`
 
 @params:
-- value - the current value of the control
+`value` - the current value of the control
 
 @example:
 form.getItem("combo").events.on("blur", (value) => {
     console.log("blur", value);
 });
-
-@relatedapi: 
+@examplestop:
 
 @changelog: added v7.2

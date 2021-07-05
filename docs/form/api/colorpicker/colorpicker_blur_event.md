@@ -1,21 +1,22 @@
 ---
 sidebar_label: blur
-title: blur
----          
+title: JavaScript Form - blur Colorpicker Event 
+description: You can explore the blur Colorpicker event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# blur
 
-@short: fires on focus removal from a Colorpicker control
+@short: fires when a Colorpicker control has lost focus
 
-@signature: 
+@signature: blur: (value: string) => void;
 
 @params:
-- value - the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("colorpicker").events.on("blur", (value) => {
     console.log("blur", value);
 });
-@relatedapi: 
+@examplestop:
 
 @changelog: added v7.2

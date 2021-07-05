@@ -1,22 +1,21 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Form - focus Button Event 
+description: You can explore the focus Button event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# focus
+@short: fires when a Combo control has received focus
 
-@short: fires on focus in a Button control
-
-@signature: 
+@signature: focus: (text: string) => void;
 
 @params:
-- value - the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("button").events.on("focus", (value) => {
     console.log("focus", value);
 });
-
-@relatedapi: 
+@examplestop:
 
 @changelog: Added in v7.2

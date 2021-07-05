@@ -1,22 +1,22 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Form - focus Colorpicker Event 
+description: You can explore the focus Colorpicker event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# focus
 
-@short: fires on focus in a Colorpicker control
+@short: fires when a Colorpicker control has received focus
 
-@signature: 
+@signature: focus: (value: string) => void;
 
 @params:
-- value - the current value of the control
+`value: string` - the current value of the control
 
 @example:
 form.getItem("colorpicker").events.on("focus", (value) => {
     console.log("focus", value);
 });
+@examplestop:
 
-@relatedapi: 
-
-@changelog: Added in v7.2
+@changelog: added in v7.2

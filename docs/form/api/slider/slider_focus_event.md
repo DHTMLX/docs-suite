@@ -1,22 +1,22 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Form - focus Slider Event 
+description: You can explore the focus Slider event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# focus
 
-@short: fires on focus in a Slider control
+@short: fires when a Combo control has received focus
 
-@signature: 
+@signature: focus: (value: number[]) => void;
 
 @params:
-- value - the current value of the control
+`value: array` - the current value of the control
 
 @example:
 form.getItem("slider").events.on("focus", (value) => {
     console.log("focus", value);
 });
-
-@relatedapi: 
+@examplestop:
 
 @changelog: Added in v7.2

@@ -1,23 +1,22 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Form - focus Combo Box Event 
+description: You can explore the focus Combo Box event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# focus
 
-@short: fires on focus in a Combo control
+@short: fires when a Combo control has received focus
 
-@signature: 
+@signature: `to do check`
 
 @params:
-- value - the current value of the control
-- id - id of the element of the Combo control `to do check`
+`value: string` - the current value of the control
 
 @example:
 form.getItem("combo").events.on("focus", (value) => {
     console.log("focus", value);
 });
-
-@relatedapi: 
+@examplestop:
 
 @changelog: Added in v7.2
