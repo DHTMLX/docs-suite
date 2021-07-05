@@ -11,8 +11,8 @@ description: You can explore the keydown event of Combo Box in the documentation
 @signature: keydown: (event: KeyboardEvent, id: Id | undefined) => void;
 
 @params:
-- `event: KeyboardEvent` - a native KeyboardEvent object
-- `id: string | number` - the id of the element of Combobox in focus
+- `event` - a native KeyboardEvent object
+- `id` - the id of the element of Combobox in focus
 
 @example:
 combobox.events.on("keydown", function(event, id) {

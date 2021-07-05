@@ -6,23 +6,19 @@ description: You can explore the Datepicker of Toolbar in the documentation of t
 
 # Datepicker
 
-`to do check`
-
-A control to select a date. Check the article below to see how easy and convenient to add and customize the Datepicker control. 
+This is a control of Toolbar to select a date. Check the article below to see how easy and convenient to add and customize the Datepicker control.
 
 <iframe src="https://snippet.dhtmlx.com/3rotluou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 ## Adding Datepicker
 
-The Datepicker control can be easily added to a toolbar with the help of the [**add()**](tree_collection/api/treecollection_add_method.md) method of the Tree Collection.
+The Datepicker control can be easily added to a toolbar with the help of the [add()](tree_collection/api/treecollection_add_method.md) or [parse()](tree_collection/api/treecollection_parse_method.md) method of Tree Collection.
 
 @example:
 toolbar.data.add({
     type: "datePicker"
 });
 @examplestop:
-
-
 
 @example:
 toolbar.data.parse([
@@ -47,18 +43,18 @@ The Datepicker control can have an icon which is set through the corresponding o
 }
 @examplestop:
 
-## Showing/hiding a Datepicker 
+## Showing/hiding Datepicker
 
-To hide/show the Datepicker, you should pass the ID of the Datepicker to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) Toolbar methods:
+To hide/show Datepicker, you should pass the ID of Datepicker to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) methods of Toolbar:
 
 @example:
 toolbar.show(id);
 toolbar.hide(id);
 @examplestop:
 
-## Enabling/disabling a Datepicker 
+## Enabling/disabling Datepicker
 
-Any control in the toolbar can be [enabled](toolbar/api/toolbar_enable_method.md) / [disabled](toolbar/api/toolbar_disable_method.md):
+It is possible to enable or disable Datepicker by th [enable()](toolbar/api/toolbar_enable_method.md) / [disable()](toolbar/api/toolbar_disable_method.md) methods:
 
 @example:
 toolbar.enable(id);
