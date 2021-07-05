@@ -1,21 +1,21 @@
 ---
 sidebar_label: blur
-title: blur
----          
+title: JavaScript Slider - blur Event 
+description: You can explore the blur event of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# blur
 
-@short: fires on focus removal from a Slider
+@short: fires when a thumb of Slider has lost focus
 
-@signature: 
+@signature: blur: () => void;
 
 @example:
 slider.events.on("blur", function() {
-    console.log("the focus is off the element"); 
+    console.log("the focus is off the element");
 });
-//Сработает при потери ползунком фокуса
 @examplestop:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z) `to do - add blur`
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
 
 @changelog: added v7.2

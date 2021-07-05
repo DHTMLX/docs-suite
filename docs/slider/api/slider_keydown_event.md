@@ -1,26 +1,24 @@
 ---
 sidebar_label: keydown 
-title: keydown 
----     
+title: JavaScript Slider - keydown Event 
+description: You can explore the keydown event of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do check`
+# keydown
 
-@short: fires on keyboard event in a Slider
-fires on a keyboard event when a focus is in a Slider `check`
+@short: fires when any key is pressed and a thumb of Slider is in focus
 
-@signature: 
+@signature: keydown: (event: KeyboardEvent) => void;
 
-@params: 
-- event - keyboard event 
-- `check` 
+@params:
+`event` - a native KeyboardEvent object
 
 @example:
 slider.events.on("keydown", function(event) {
-    console.log("focus on element and keydown", event); 
+    console.log("the focus is on the element and any key is pressed", event);
 });
-// Сработает при нажатии любой из клавиш, при наличии фокуса на элементе
 @examplestop:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z) `to do - add keydown`
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
 
 @changelog: added in v7.2

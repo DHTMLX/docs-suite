@@ -1,21 +1,21 @@
 ---
 sidebar_label: focus
-title: focus
----          
+title: JavaScript Slider - focus Event 
+description: You can explore the focus event of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-`to do - check`
+# focus
 
-@short: fires on focus in a Slider
+@short: fires when a thumb of Slider has received focus
 
-@signature: 
+@signature: focus: () => void;
 
 @example:
 slider.events.on("focus", function() {
-    console.log("focus on element"); 
+    console.log("the focus is on the element");
 });
-//Сработает при приобритении ползунком фокуса
 @examplestop:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z) `to do - add focus`
+**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
 
 @changelog: added v7.2
