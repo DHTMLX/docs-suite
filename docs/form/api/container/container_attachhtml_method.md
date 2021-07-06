@@ -1,11 +1,17 @@
 ---
-sidebar_label: attachHTML
-title: attachHTML
+sidebar_label: attachHTML()
+title: JavaScript Form - attachHTML Container Method 
+description: You can explore the attachHTML Container method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
+
+# attachHTML()
 
 @short: attaches an HTML content into a Container control
 
-@signature:
+@signature: attachHTML(html: string): void;
+
+@params:
+`html: string` - the HTML code
 
 @example: const form = new dhx.Form("form", {
     rows: [

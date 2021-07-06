@@ -1,11 +1,17 @@
 ---
-sidebar_label: attach
-title: attach
+sidebar_label: attach()
+title: JavaScript Form - attach Container Method 
+description: You can explore the attach Container method of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-@short: attaches a DHTMLX component into a Container control
+# attach()
 
-@signature:
+@short: attaches a DHTMLX widget into a Container control
+
+@signature: attach(widget: any): void;
+
+@params:
+`widget` - the DHTMLX widget
 
 @example: const form = new dhx.Form("form", {
     css: "dhx_widget--bordered",

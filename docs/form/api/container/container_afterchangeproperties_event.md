@@ -1,17 +1,20 @@
 ---
 sidebar_label: afterChangeProperties
-title: afterChangeProperties
+title: JavaScript Form - afterChangeProperties Container Event 
+description: You can explore the afterChangeProperties Container event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-`to do Parameters (and Returns if need) after @signature: is ready`
+# afterChangeProperties
 
 @short: fires after properties of a Container control have been changed dynamically
 
-@signature:
+@signature: afterChangeProperties: (properties: IBaseLayoutItem) => void;
 
 @params:
+`properties: object` - an object with configuration properties of the control and their new values
 
-@example: form.getItem("container").events.on("AfterChangeProperties", function(properties) {
+@example:
+form.getItem("container").events.on("AfterChangeProperties", function(properties) {
     console.log("AfterChangeProperties", properties);
 });
 

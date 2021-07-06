@@ -1,17 +1,23 @@
 ---
 sidebar_label: beforeChangeProperties
-title: beforeChangeProperties
+title: JavaScript Form - beforeChangeProperties Container Event 
+description: You can explore the beforeChangeProperties Container event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-`to do Parameters (and Returns if need) after @signature: is ready`
+# beforeChangeProperties
 
 @short: fires before properties of a Container control are changed dynamically
 
-@signature:
+@signature: beforeChangeProperties: (properties: IBaseLayoutItem) => boolean | void;
 
 @params:
+`properties: object` - an object with configuration attributes of the control and their new values
 
-@example: form.getItem("container").events.on("BeforeChangeProperties", function(properties) {
+@returns:
+Return `false` to cancel the default action of the event; otherwise, `true`.
+
+@example:
+form.getItem("container").events.on("BeforeChangeProperties", function(properties) {
     console.log("BeforeChangeProperties", properties);
     return true;
 });
