@@ -1,15 +1,16 @@
 ---
 sidebar_label: itemHeight 
-title: itemHeight 
----          
+title: JavaScript Tree - itemHeight Config 
+description: You can explore the itemHeight config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
 
-@short: sets the height between Tree items
+# itemHeight
 
-@signature: 
+@short: sets the height of an item
 
-@params: number | string `check after @signature: ready`
+@signature: itemHeight?: number | string;
 
-@example: 
+@example:
 const tree = new dhx.Tree("tree", {
     itemHeight: 30,
 });
@@ -17,4 +18,4 @@ const tree = new dhx.Tree("tree", {
 
 **Related sample**: [Tree. ItemHeight ](https://snippet.dhtmlx.com/w1qk9u7m)
 
-@changelog: From v7.2 multiline editing
+@changelog: added in v7.2

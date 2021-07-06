@@ -27,13 +27,13 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 
 :::info important
 - Use [the methods of TreeCollection](tree_collection/index.md) to work with data. 
-- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of Tree items. 
+- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of Tree items.
 :::
 
 ## Events
 
 | Name                                       | Description                                       |
-|--------------------------------------------|---------------------------------------------------|
+| ------------------------------------------ | ------------------------------------------------- |
 | [](tree/api/tree_aftercheck_event.md)      | @getshort(tree/api/tree_aftercheck_event.md)      |
 | [](tree/api/tree_aftercollapse_event.md)   | @getshort(tree/api/tree_aftercollapse_event.md)   |
 | [](tree/api/tree_afterdrag_event.md)       | @getshort(tree/api/tree_afterdrag_event.md)       |
@@ -59,8 +59,8 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | [](tree/api/tree_itemrightclick_event.md)  | @getshort(tree/api/tree_itemrightclick_event.md)  |
 
 :::info important
-- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of Tree. 
-- Apply [the events of Selection](selection/index.md#events) to control the selection of Tree items. 
+- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of Tree.
+- Apply [the events of Selection](selection/index.md#events) to control the selection of Tree items.
 :::
 
 ## Properties
@@ -75,7 +75,10 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | [](tree/api/tree_dragmode_config.md)      | @getshort(tree/api/tree_dragmode_config.md)      |
 | [](tree/api/tree_dropbehaviour_config.md) | @getshort(tree/api/tree_dropbehaviour_config.md) |
 | [](tree/api/tree_editable_config.md)      | @getshort(tree/api/tree_editable_config.md)      |
+| [](tree/api/tree_eventhandlers_config.md) | @getshort(tree/api/tree_eventhandlers_config.md) |
 | [](tree/api/tree_icon_config.md)          | @getshort(tree/api/tree_icon_config.md)          |
+| [](tree/api/tree_itemheight_config.md)    | @getshort(tree/api/tree_itemheight_config.md)    |
 | [](tree/api/tree_keynavigation_config.md) | @getshort(tree/api/tree_keynavigation_config.md) |
 | [](tree/api/tree_rootid_config.md)        | @getshort(tree/api/tree_rootid_config.md)        |
 | [](tree/api/tree_selection_config.md)     | @getshort(tree/api/tree_selection_config.md)     |
+| [](tree/api/tree_template_config.md)      | @getshort(tree/api/tree_template_config.md)      |

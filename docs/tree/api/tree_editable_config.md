@@ -8,7 +8,7 @@ description: You can explore the editable config of Tree in the documentation of
 
 @short: enables editing of Tree items on a double-click  
 
-Starting from v 7.2 you can use multiline editing of Tree items. Use `Shift + Enter` to add a line.
+Multi-line editing is available. Use **Shift+Enter** to add a line.
 
 @signature: {'editable?: boolean;'}
 
@@ -23,7 +23,7 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 
 @changelog:
 - added in v6.4
-- From v7.2 multiline editing
+- From v7.2 multi-line editing
 
 [comment]: # (@related:tree/configuration.md#editing-of-items tree/initialization_of_dhtmlxtree.md#initialize-tree)
 
