@@ -22,7 +22,7 @@ You can add the Container control to the Form in an easy way.
 
 You need to specify the type of the control `type: "container"` during the initialization of Form and then use one of the methods:
 
-- [](form/api/container/container_attachHTML_method.md) - for HTML code
+- [](form/api/container/container_attachhtml_method.md) - for HTML code
 - [](form/api/container/container_attach_method.md) - for DHTMLX widget
 
 You can also attach the HTML code directly to the Container control. Look at the sample above.
