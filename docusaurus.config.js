@@ -186,7 +186,7 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://docs.dhtmlx.com/suite/samples',
+                    href: 'https://snippet.dhtmlx.com',
                     position: 'right',
                 },
                 {
