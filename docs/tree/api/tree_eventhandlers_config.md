@@ -6,11 +6,16 @@ description: You can explore the eventHandlers config of Tree in the documentati
 
 # eventHandlers
 
-@short:  
+@short: adds event handlers to the HTML elements of a custom template
 
-@signature: 
+@signature:
+eventHandlers?: {
+    [eventName: string]: {
+        [className: string]: (events: Event, item: ITree) => void;
+    };
+};
 
-@example: 
+@example:
 const tree = new dhx.Tree("tree", {
     template: ({ value }, isFolder) => {
         const template = `
@@ -36,5 +41,10 @@ const tree = new dhx.Tree("tree", {
 @examplestop:
 
 **Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/hg3f50td)
+
+The **eventHandlers** object includes a set of *key:value* pairs, where:
+
+- `key` - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
+- `value` - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters: `event` - an event object, `id` - an element object on which the event was called
 
 @changelog: added in v7.2

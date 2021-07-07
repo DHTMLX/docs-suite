@@ -6,9 +6,9 @@ description: You can explore the dragItem config of Grid in the documentation of
 
 # dragItem
 
-@short: enables the possibility to reorder grid columns by drag and drop
+@short: enables the possibility to reorder grid columns and rows by drag and drop
 
-@signature: {'dragItem?: "column";'}
+@signature: dragItem?: IDragType;
 
 @example:
 var grid = new dhx.Grid("grid_container", {
@@ -19,8 +19,14 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
- 
+**Related sample**: [Grid. Setup drag column and rows (Pro)](https://snippet.dhtmlx.com/zwc91d50)
+
+Drag-n-drop can work in three modes:
+
+- `column` - allows drag and drop columns
+- `row` - allows drag and drop rows
+- `both` - allows drag and drop columns and rows
+
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
 @changelog: added in v6.5

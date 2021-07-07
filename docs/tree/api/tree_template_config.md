@@ -6,13 +6,17 @@ description: You can explore the template config of Tree in the documentation of
 
 # template
 
-@short:  
+@short: specifies a template for Tree items
 
-@signature: 
+@signature: template?: (item: ITreeItem, isFolder: boolean) => string | null;
 
+template?: (item: ITreeItem, isFolder: boolean) => string;
 
+@params:
+- `item: ITreeItem` - an element object for a template
+- `isFolder: boolean` - defines whether an item is a folder
 
-@example: 
+@example:
 const tree = new dhx.Tree("tree", {
     template: ({ value }, isFolder) => {
         const template = `
@@ -30,6 +34,6 @@ const tree = new dhx.Tree("tree", {
 });
 @examplestop:
 
-**Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/f70t1c9y)
+**Related sample**: [Tree. Template](https://snippet.dhtmlx.com/f70t1c9y)
 
 @changelog: added in v7.2
