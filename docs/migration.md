@@ -22,13 +22,13 @@ combo.events.on("open", function(){
 
 ~~~js title="From v7.2"
 // the "beforeOpen" event
-combobox.events.on("beforeOpen", function( ) {
+combo.events.on("beforeOpen", function() {
     // your logic here
     return false;
 });
 
 // the "afterOpen" event
-combobox.events.on("afterOpen", function() {
+combo.events.on("afterOpen", function() {
     // your logic here
 });
 ~~~

@@ -14,7 +14,7 @@ description: You can explore the beforeOpen event of Combo Box in the documentat
 Return `false` to prevent opening a combobox; otherwise, `true`.
 
 @example:
-combo.events.on("beforeOpen", function( ) {
+combo.events.on("beforeOpen", function() {
     // your logic here
     return false;
 });

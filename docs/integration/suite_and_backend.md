@@ -18,7 +18,7 @@ Take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https:/
 
 ## Examples of using DHTMLX Suite widgets with Node.js
 
-Let's have an overview of the examples. Here you can find 10 interactive samples. Follow the instructions in the README.md file to run the examples.
+Let's have an overview of the examples. Here you can find 11 interactive samples. Follow the instructions in the README.md file to run the examples.
 
 You can easily modify any widget for your purposes and find out how it works.
 
@@ -111,3 +111,11 @@ The following request methods are used in this example: `GET`, `PUT`, `POST`, `D
 The interactive Grid example helps you understand how simple you can manipulate the widget. You can also easily use this example in your own project.
 
 The following request methods are used in this example: `GET`, `PUT`, `POST`, `DELETE`.
+
+### Save method. Getting, editing, deleting, and sending data
+
+![](../assets/integration/work_with_backend_save.png)
+
+The example is created to show you how to save the changes made in data to the backend via the **save()** method of DataCollection. 
+
+This example of Grid is visually the same as the previous one but the ways of adding and editing data in this example are developed in another way. For instance, after you click the "Add new card" button, an empty row will be added after the last row in the grid. Editing of any cell of the grid is implemented by double-clicking on the cell. 
