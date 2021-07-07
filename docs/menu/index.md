@@ -6,7 +6,7 @@ description: You can have an overview of Menu in the documentation of the DHTMLX
 
 # Menu overview
 
-dhtmlxMenu is a component that provides an easy way to add a drop down menu to user's projects. This component is highly customizable and supports a wide range of features. dhtmlxMenu component can be a good navigation aid to web sites, help systems, etc. Check [online samples for dhtmlxMenu](https://docs.dhtmlx.com/suite/samples/menu/).
+dhtmlxMenu is a component that provides an easy way to add a drop down menu to user's projects. This component is highly customizable and supports a wide range of features. dhtmlxMenu component can be a good navigation aid to web sites, help systems, etc. Check [online samples for dhtmlxMenu](https://snippet.dhtmlx.com/all?text=%23menu).
 
 ![](../assets/menu/menu_front.png)
 
@@ -17,7 +17,7 @@ dhtmlxMenu is a component that provides an easy way to add a drop down menu to u
 ## Related resources
 
 - You can get dhtmlxMenu as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxMenu](https://docs.dhtmlx.com/suite/samples/menu/)
+- There are also [online samples for dhtmlxMenu](https://snippet.dhtmlx.com/all?text=%23menu)
 - To work with data of Menu check [TreeCollection API](tree_collection/index.md)
 
 ## Guides

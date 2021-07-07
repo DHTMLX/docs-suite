@@ -7,7 +7,7 @@ description: You can have an overview of Layout in the documentation of the DHTM
 # Layout overview
 
 dhtmlxLayout component lets you specify the main scheme of your application or web page, as it defines the arrangement of blocks with content. Layout helps blend diverse types of data representation on one page.<br/>
-Check [online samples for dhtmlxLayout](https://docs.dhtmlx.com/suite/samples/layout/).
+Check [online samples for dhtmlxLayout](https://snippet.dhtmlx.com/all?text=%23layout).
 
 ![](../assets/layout/layout.png)
 
@@ -18,7 +18,7 @@ Check [online samples for dhtmlxLayout](https://docs.dhtmlx.com/suite/samples/la
 ## Related resources
 
 - You can get dhtmlxLayout as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxLayout](https://docs.dhtmlx.com/suite/samples/layout/)  
+- There are also [online samples for dhtmlxLayout](https://snippet.dhtmlx.com/all?text=%23layout)  
 
 ## Guides
 
