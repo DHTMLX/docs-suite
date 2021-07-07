@@ -15,14 +15,19 @@ description: You can explore the save method of DataCollection in the documentat
 `url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
 
 @example:
-diagram.data.save("http://userurl/");
+grid.data.save("http://userurl/");
 
 //or
-diagram.data.save(new DataProxy({url:"http://userurl/"}));
+grid.data.save(new DataProxy({url:"http://userurl/"}));
 
 @descr:
 
-The component will make an AJAX call and expect the remote URL to save data changes.
+Each time the user changes data of the component, the **save()** method will make an AJAX call and expect the remote URL to save data changes.
+The method will send one of the following requests to the backend:
+
+- `POST` - after editing data of the component;
+- `PUT` - after adding new data into the component;
+- `DELETE` - after deleting data.
 
 Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the **saveData** property that returns a "promise" object:
 
@@ -37,8 +42,11 @@ return data.saveData.then(function () {
 Use the [isSaved](data_collection/api/datacollection_issaved_method.md) method to know whether the changes are saved:
 
 ~~~js
-diagram.data.saveData.then(function () {
-	console.log(diagram.data.isSaved());
+grid.data.saveData.then(function () {
+	console.log(grid.data.isSaved());
 });
 ~~~
 
+@changelog:
+Before v7.2, the method sent the `POST` request to the backend on each change of data. <br>
+Starting from v7.2, depending on the user actions (editing, adding, or deleting of data), the method sends different requests (POST, PUT, or DELETE respectively) to the server.

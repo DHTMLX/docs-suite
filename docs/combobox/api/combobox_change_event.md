@@ -14,7 +14,7 @@ description: You can explore the change event of Combo Box in the documentation 
 `ids: string | number | array` - the id(s) of a newly selected option(s)
 
 @example:
-combo.events.on("Change", function(id){
+combo.events.on("change", function(id){
     // your logic here
 });
 
