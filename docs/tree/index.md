@@ -8,7 +8,7 @@ description: You can have an overview of Tree in the documentation of the DHTMLX
 
 dhtmlxTree is a nice JavaScript tree component intended for making intuitive hierarchical navigation interfaces for web applications. 
 The component provides smart drag-and-drop, dynamic rendering of items, handy key navigation, customizable appearance, and other useful features. 
-Check [online samples for dhtmlxTree](https://docs.dhtmlx.com/suite/samples/tree/).
+Check [online samples for dhtmlxTree](https://snippet.dhtmlx.com/all?text=%23tree).
 
 ![](../assets/tree/tree_front.png)
 
@@ -20,7 +20,7 @@ Check [online samples for dhtmlxTree](https://docs.dhtmlx.com/suite/samples/tree
 
 - To get just dhtmlxTree, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
 - To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxTree](https://docs.dhtmlx.com/suite/samples/tree/)
+- There are also [online samples for dhtmlxTree](https://snippet.dhtmlx.com/all?text=%23tree)
 - To work with data of Tree check [TreeCollection API](tree_collection/index.md)
   
 ## Guides

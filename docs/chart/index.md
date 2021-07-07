@@ -8,7 +8,7 @@ description: You can have an overview of Chart in the documentation of the DHTML
 
 dhtmlxChart is a great tool for creating powerful charts for web applications. It provides a wide variety of chart types, the possibility to render several data properties on the same chart and adding tooltips, 
 both 2D and 3D presentation, different variants of data loading, and a whole kit of configuration settings for all elements of a chart interface. 
-Check [online samples for dhtmlxChart](https://docs.dhtmlx.com/suite/samples/chart/). 
+Check [online samples for dhtmlxChart](https://snippet.dhtmlx.com/all?text=%23chart). 
 
 ![](../assets/chart/line_overview.png)
 
@@ -20,7 +20,7 @@ Check [online samples for dhtmlxChart](https://docs.dhtmlx.com/suite/samples/cha
 
 - To get just dhtmlxChart, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml)
 - To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxChart](https://docs.dhtmlx.com/suite/samples/chart/)
+- There are also [online samples for dhtmlxChart](https://snippet.dhtmlx.com/all?text=%23chart)
 - To work with data of Chart check [DataCollection API](data_collection/index.md)
 
 ## Guides

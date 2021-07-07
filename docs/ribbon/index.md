@@ -6,7 +6,7 @@ description: You can have an overview of Ribbon in the documentation of the DHTM
 
 # Ribbon overview
 
-dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and tools used in an application or in a website into logical blocks thus providing a handy navigation bar. Check [online samples for dhtmlxRibbon](https://docs.dhtmlx.com/suite/samples/ribbon/).
+dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and tools used in an application or in a website into logical blocks thus providing a handy navigation bar. Check [online samples for dhtmlxRibbon](https://snippet.dhtmlx.com/all?text=%23ribbon).
 
 ![](../assets/ribbon/ribbon_front.png)
 
@@ -17,7 +17,7 @@ dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and
 ## Related resources
 
 - You can get dhtmlxRibbon as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxRibbon](https://docs.dhtmlx.com/suite/samples/ribbon/)
+- There are also [online samples for dhtmlxRibbon](https://snippet.dhtmlx.com/all?text=%23ribbon)
 - To work with data of Ribbon check [TreeCollection API](tree_collection/index.md)
 
 ## Guides
