@@ -270,13 +270,14 @@ module.exports = {
                 collapsed: true,
                 items: [
                   "combobox/api/combobox_afterclose_event",
+                  "combobox/api/combobox_afteropen_event",
                   "combobox/api/combobox_beforeclose_event",
+                  "combobox/api/combobox_beforeopen_event",
                   "combobox/api/combobox_blur_event",
                   "combobox/api/combobox_change_event",
                   "combobox/api/combobox_focus_event",
                   "combobox/api/combobox_input_event",
                   "combobox/api/combobox_keydown_event",
-                  "combobox/api/combobox_open_event",
                 ],
               },
               {

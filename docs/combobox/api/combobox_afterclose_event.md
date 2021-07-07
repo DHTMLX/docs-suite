@@ -11,7 +11,7 @@ description: You can explore the afterClose event of Combo Box in the documentat
 @signature: {'afterClose: () => void;'}
 
 @example:
-combobox.events.on("AfterClose", function() {
+combo.events.on("afterClose", function() {
     // your logic here
 });
 
