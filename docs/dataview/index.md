@@ -8,7 +8,7 @@ description: You can have an overview of DataView in the documentation of the DH
 
 dhtmlxDataView allows rendering a collection of objects according to a specified template. It will help you to organize data by arranging various objects with similar properties within a common container.
 This component is especially useful, if you're creating an online store or an image gallery, or just want to display a number of similar objects on a page.
-Check [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/dataview/). 
+Check [online samples for dhtmlxDataView](https://snippet.dhtmlx.com/all?text=%23dataview). 
 
 ![](../assets/dataview/dataview_front.png)
 
@@ -19,7 +19,7 @@ Check [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/
 ## Related resources
 
 - You can get dhtmlxDataView as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxDataView](https://docs.dhtmlx.com/suite/samples/dataview/)
+- There are also [online samples for dhtmlxDataView](https://snippet.dhtmlx.com/all?text=%23dataview)
 - To work with data of DataView check [DataCollection API](data_collection/index.md)
 
 ## Guides
