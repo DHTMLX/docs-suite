@@ -156,7 +156,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Drag-n-drop of TreeGrid columns
 
-Starting from v6.5, you can add the ability to reorder columns of TreeGrid by drag and drop via using the [](treegrid/api/treegrid_dragitem_config.md) configuration property and setting its value to *"column"*.
+You can add the ability to reorder columns of TreeGrid by drag and drop via using the [](treegrid/api/treegrid_dragitem_config.md) configuration property and setting either *"column"* or *"both"* option as its value:
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -205,7 +205,20 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Setup Drag Mode](https://snippet.dhtmlx.com/43covmy2)
 
-{{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](treegrid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
+Starting from v7.2, there is the ability to activate the drag-n-drop functionality for rows inside the treegrid via the [dragItem](treegrid/api/treegrid_dragitem_config.md) configuration property. For this, you need to specify either *"row"* or *"both"* option as a value of the property:
+
+~~~js
+var treegrid = new dhx.TreeGrid("treegrid_container", { 
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    data: dataset,
+    dragItem: "row" /*!*/
+});
+~~~
+
+{{note When drag-n-drop of rows is enabled in TreeGrid, you can apply the [related](treegrid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
 ## Editing Grid and separate columns
 
