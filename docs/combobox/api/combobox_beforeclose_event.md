@@ -14,7 +14,7 @@ description: You can explore the beforeClose event of Combo Box in the documenta
 Return `false` to prevent closing a combobox; otherwise, `true`.
 
 @example:
-combobox.events.on("BeforeClose", function( ) {
+combo.events.on("beforeClose", function( ) {
     // your logic here
     return false;
 });

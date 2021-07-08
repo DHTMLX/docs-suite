@@ -6,6 +6,35 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to Newer Versions
 
+7.1 -> 7.2
+----------------
+
+### Combobox
+
+The **open** event has been deprecated in v7.2. The new **beforeOpen** and **afterOpen** events have been added.
+
+~~~js title="Before v7.2"
+// the "open" event
+combo.events.on("open", function(){
+    // your logic here
+});
+~~~
+
+~~~js title="From v7.2"
+// the "beforeOpen" event
+combo.events.on("beforeOpen", function() {
+    // your logic here
+    return false;
+});
+
+// the "afterOpen" event
+combo.events.on("afterOpen", function() {
+    // your logic here
+});
+~~~
+
+Though the **open** event remains backward compatible with previous versions, you'd better use the **afterOpen** event instead.
+
 7.0 -> 7.1
 ----------------
 
@@ -31,19 +60,19 @@ description: You can explore how to migrate to newer versions in the documentati
 2) The **sort** event has been deprecated in v7.1. Instead of it, you should use the **afterSort** and **beforeSort** events.
 
 ~~~js title="Before v7.1"
-// sort event
+// "sort" event
 grid.events.on("Sort", function(id){
     console.log("The grid is sorted by the "+id+" column");
 });
 ~~~
 
 ~~~js title="From v7.1"
-// afterSort event
+// "afterSort" event
 grid.events.on("afterSort", (col, dir) => {
     console.log(col, dir);
 });
 
-// beforeSort event
+// "beforeSort" event
 grid.events.on("beforeSort", (col, dir) => {
     console.log("beforeSort", col, dir);
     // return false;

@@ -8,7 +8,7 @@ description: descriYou can have an overview of Grid in the documentation of the 
 
 dhtmlxGrid is a flexible, smart, and easy-to-use JavaScript component which allows creating tables with fixed multi-line headers and footers, sortable columns, built-in filtering, and other useful features. dhtmlxGrid provides great possibilities for customizing its look and feel. Complete JavaScript API is provided to help users save time on configuring.
 
-Check [online samples for dhtmlxGrid](https://docs.dhtmlx.com/suite/samples/grid/).  
+Check [online samples for dhtmlxGrid](https://snippet.dhtmlx.com/all?text=%23grid).  
 
 ![](../assets/grid/grid_front.png)
 
@@ -20,7 +20,7 @@ Check [online samples for dhtmlxGrid](https://docs.dhtmlx.com/suite/samples/grid
 
 - To get just dhtmlxGrid, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml)
 - To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxGrid](https://docs.dhtmlx.com/suite/samples/grid/)
+- There are also [online samples for dhtmlxGrid](https://snippet.dhtmlx.com/all?text=%23grid)
 - To work with data of Grid check [DataCollection API](data_collection/index.md)
 
 ## Guides
