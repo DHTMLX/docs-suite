@@ -172,7 +172,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
-Starting from v6.5, you can add the ability to reorder columns of Grid by drag and drop via using the [](grid/api/grid_dragitem_config.md) configuration property and setting its value to *"column"*.
+Starting from v6.5, you can add the ability to reorder columns of Grid by drag and drop via using the [](grid/api/grid_dragitem_config.md) configuration property and setting its value to *"column"*:
 
 ~~~js
 var grid = new dhx.Grid("grid_container", {
@@ -220,6 +220,19 @@ var grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
+
+Starting from v7.2, there is also the ability to activate the drag-n-drop functionality for rows via the [dragItem](grid/api/grid_dragitem_config.md) configuration property of Grid. For this, you need to set the property either to *"row"* or *"both"* value:
+
+~~~js
+var grid = new dhx.Grid("grid_container", { 
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    data: dataset,
+    dragItem: "row" /*!*/
+});
+~~~
 
 {{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](grid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
