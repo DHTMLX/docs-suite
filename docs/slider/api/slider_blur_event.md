@@ -18,4 +18,4 @@ slider.events.on("blur", function() {
 
 **Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
 
-@changelog: added v7.2
+@changelog: added in v7.2

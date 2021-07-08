@@ -20,4 +20,4 @@ form.getItem("checkbox").events.on("blur", (value) => {
 });
 @examplestop:
 
-@changelog: added v7.2
+@changelog: added in v7.2

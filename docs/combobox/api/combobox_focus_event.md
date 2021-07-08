@@ -18,4 +18,4 @@ combobox.events.on("focus", function() {
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 
-@changelog: added v7.2
+@changelog: added in v7.2

@@ -23,4 +23,4 @@ form.event.on("blur", function(name, value, id) {
 
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
-@changelog: added v7.2
+@changelog: added in v7.2

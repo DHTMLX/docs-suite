@@ -20,4 +20,4 @@ form.getItem("checkboxGroup").events.on("blur", (value, id) => {
 });
 @examplestop:
 
-@changelog: added v7.2
+@changelog: added in v7.2

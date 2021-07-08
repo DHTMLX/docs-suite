@@ -10,12 +10,6 @@ description: You can explore the template config of Tree in the documentation of
 
 @signature: template?: (item: ITreeItem, isFolder: boolean) => string | null;
 
-template?: (item: ITreeItem, isFolder: boolean) => string;
-
-@params:
-- `item: ITreeItem` - an element object for a template
-- `isFolder: boolean` - defines whether an item is a folder
-
 @example:
 const tree = new dhx.Tree("tree", {
     template: ({ value }, isFolder) => {
@@ -35,5 +29,12 @@ const tree = new dhx.Tree("tree", {
 @examplestop:
 
 **Related sample**: [Tree. Template](https://snippet.dhtmlx.com/f70t1c9y)
+
+The template function takes two parameters and returns a string or null.
+
+- `item` - *object*, an object of a Tree item
+- `isFolder` - *boolean*, defines whether an item is a folder
+
+You can specify a template for child items only with a help of the callback function and parameter isFolder.
 
 @changelog: added in v7.2
