@@ -18,16 +18,16 @@ Check [online samples for dhtmlxWindow](https://snippet.dhtmlx.com/all?text=%23w
 
 ## Related resources
 
-- You can get dhtmlxWindow as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- You can get dhtmlxWindow as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxWindow](https://snippet.dhtmlx.com/all?text=%23window)
 
 ## Guides
 
-- [](how_to_start)
-- [](configuration)
-- [](usage)
-- [](customization)
-- [](handling_events)
+- [](how_to_start.md)
+- [](configuration.md)
+- [](usage.md)
+- [](customization.md)
+- [](handling_events.md)
 
 ## Other
 

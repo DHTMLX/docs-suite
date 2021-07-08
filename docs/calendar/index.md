@@ -18,20 +18,20 @@ This component is a great date picker solution for your website or application. 
 ## Related resources
 
 - To get just dhtmlxCalendar, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml)
-- To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)          
+- To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxCalendar](https://snippet.dhtmlx.com/all?text=%23calendar)  
   
 ## Guides
 
 You can read the following articles to find out how to add Calendar on the page and work with it.
 
-- [](how_to_start)
-- [](configuring)
-- [](localizing_calendar)  
-- [](operating_calendar)
-- [](datepicker)
-- [](customization)
-- [](handling_events)  
+- [](how_to_start.md)
+- [](configuring.md)
+- [](localizing_calendar.md)  
+- [](operating_calendar.md)
+- [](datepicker.md)
+- [](customization.md)
+- [](handling_events.md)  
 
 ## Other
 
