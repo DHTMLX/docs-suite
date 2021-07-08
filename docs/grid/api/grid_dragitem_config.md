@@ -23,13 +23,15 @@ var grid = new dhx.Grid("grid_container", {
 
 Drag-n-drop can work in three modes:
 
-- `column` - allows drag and drop columns
-- `row` - allows drag and drop rows
-- `both` - allows drag and drop columns and rows
+- `"column"` - allows drag and drop columns
+- `"row"` - allows drag and drop rows
+- `"both"` - allows drag and drop columns and rows
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
-@changelog: added in v6.5
+@changelog:
+- added in v6.5
+- Form v7.2 modes "row" and "both" added
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-of-grid-columns)
 

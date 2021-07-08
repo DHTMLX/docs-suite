@@ -19,11 +19,11 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 
 @descr:
 
-**Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
+**Related sample**: [Tree. With editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
 
 @changelog:
 - added in v6.4
-- From v7.2 multi-line editing
+- From v7.2 added multi-line editing
 
 [comment]: # (@related:tree/configuration.md#editing-of-items tree/initialization_of_dhtmlxtree.md#initialize-tree)
 
