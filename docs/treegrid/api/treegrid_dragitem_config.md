@@ -8,7 +8,7 @@ description: You can explore the dragItem config of TreeGrid in the documentatio
 
 @short: enables the possibility to reorder treegrid columns by drag and drop
 
-@signature: {'dragItem?: "column";'}
+@signature: {' dragItem?: "column", "row", "both";'}
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -21,7 +21,16 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [Setup drag column](https://snippet.dhtmlx.com/ax5vs4a8)
 
-@changelog: added in v6.5
+Drag-n-drop can work in three modes:
+
+- "column" - enables drag and drop of columns
+- "row" - enables drag and drop of rows
+- "both" - enables both modes mentioned above
+
+@changelog:
+
+- added in v6.5.
+- The "row" and "both" modes have beed added in v7.2.
 
 [comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/configuration.md#drag-n-drop-of-treegrid-columns)
 
