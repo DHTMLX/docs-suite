@@ -19,4 +19,4 @@ form.getItem("select").events.on("focus", (value) => {
 });
 @examplestop:
 
-@changelog: Added in v7.2
+@changelog: added in v7.2

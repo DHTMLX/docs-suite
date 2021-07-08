@@ -20,4 +20,4 @@ form.getItem("radiogroup").events.on("focus", (value, id) => {
 });
 @examplestop:
 
-@changelog: Added in v7.2
+@changelog: added in v7.2
