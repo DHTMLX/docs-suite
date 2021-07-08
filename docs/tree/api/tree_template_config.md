@@ -30,11 +30,13 @@ const tree = new dhx.Tree("tree", {
 
 **Related sample**: [Tree. Template](https://snippet.dhtmlx.com/f70t1c9y)
 
-The template function takes two parameters and returns a string or null.
+The template function takes two parameters:
 
 - `item` - *object*, an object of a Tree item
 - `isFolder` - *boolean*, defines whether an item is a folder
 
-You can specify a template for child items only with a help of the callback function and parameter isFolder.
+and returns a string or null.
+
+The callback function together with the isFolder parameter allow you to specify a template for child items only.
 
 @changelog: added in v7.2

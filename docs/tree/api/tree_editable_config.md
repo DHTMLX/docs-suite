@@ -23,7 +23,7 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 
 @changelog:
 - added in v6.4
-- From v7.2 added multi-line editing
+- The multi-line editing is added in v7.2
 
 [comment]: # (@related:tree/configuration.md#editing-of-items tree/initialization_of_dhtmlxtree.md#initialize-tree)
 
