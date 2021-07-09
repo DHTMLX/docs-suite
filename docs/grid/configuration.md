@@ -381,9 +381,8 @@ To use this editor you need to specify the **editorType: "combobox"** property f
     editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]  /*!*/
 }
 ```
-Or you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with a help of the **id:** and **value:** array of options. 
 
-In this case, you can see the **id:** array of options in a cell (after a choice in the combobox is done) and the **value:** array of options in a list of options of the combobox, e.g.:
+Or you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with a help of the **id:value** pairs of options, e.g.:
 
 ```js
 {
