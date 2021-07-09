@@ -382,7 +382,7 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 }
 ```
 
-Or you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with a help of the **id:value** pairs of options, e.g.:
+Or you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with the **id:value** pairs of options, e.g.:
 
 ```js
 {
@@ -419,6 +419,20 @@ var grid = new dhx.Grid("grid", {
 	autoHeight: true /*!*/
 });
 ~~~
+
+**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+
+- **multiselect** - an editor for cells that should contain several options to choose from. You can choose one option, several options, all options, or no options.
+
+```js
+columns: [
+    {
+        id: "renewals", type: "string",
+        header: [{ text: "Number of renewals" }],
+        editorType: "multiselect",
+        options: ["1 time", "1-2 times", "more than 5 times"],
+    },
+```
 
 **Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
 
@@ -556,6 +570,10 @@ var grid = new dhx.Grid("grid_container", {
         <tr>
 			<td><b>filter</b></td>
 			<td>(<i>function</i>) sets a custom function for filtering Combo Box options</td>
+		</tr>
+		<tr>
+			<td><b>multiselection</b></td>
+			<td>(<i>boolean</i>) enables the multiselection option</td>
 		</tr>
         <tr>
 			<td><b>readonly</b></td>

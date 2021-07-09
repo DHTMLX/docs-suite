@@ -37,6 +37,6 @@ The template function takes two parameters:
 
 and returns a string or null.
 
-The callback function together with the isFolder parameter allow you to specify a template for child items only.
+**Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
 
 @changelog: added in v7.2

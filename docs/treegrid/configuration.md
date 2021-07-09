@@ -385,6 +385,18 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
+- **multiselect** - an editor for cells that should contain several options to choose from. You can choose one option, several options, all options, or no options.
+
+```js
+columns: [
+    {
+        id: "renewals", type: "string",
+        header: [{ text: "Number of renewals" }],
+        editorType: "multiselect",
+        options: ["1 time", "1-2 times", "more than 5 times"],
+    },
+```
+
 ## Formatting columns
 
 Starting from v7.1, you can display the values of the cells of a TreeGrid column in the desired format:
@@ -514,6 +526,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
         <tr>
 			<td><b>filter</b></td>
 			<td>(<i>function</i>) sets a custom function for filtering Combo Box options</td>
+		</tr>
+        <tr>
+			<td><b>multiselection</b></td>
+			<td>(<i>boolean</i>) enables the multiselection option</td>
 		</tr>
         <tr>
 			<td><b>readonly</b></td>
