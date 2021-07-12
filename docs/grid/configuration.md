@@ -371,7 +371,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 {{note If you specify the editing option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
 
-- **combobox** - an editor for cells that should contain several options to choose from. Pay attention there are two ways to provide the options property. There is a possibility to find an option by entering text in the edit control.
+- **combobox** - an editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
 
 To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
 
@@ -382,7 +382,10 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 }
 ```
 
-Or you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with the **id:value** pairs of options, e.g.:
+Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
+
+- The **id** attribute is returned and goes to form data
+- The **value** attribute is displayed in the input field
 
 ```js
 {
@@ -573,7 +576,7 @@ var grid = new dhx.Grid("grid_container", {
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>
-			<td>(<i>boolean</i>) enables the multiselection option</td>
+			<td>(<i>boolean</i>) enables selection of multiple options</td>
 		</tr>
         <tr>
 			<td><b>readonly</b></td>

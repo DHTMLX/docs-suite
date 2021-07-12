@@ -32,7 +32,7 @@ description: You can explore the Grid column properties of Grid in the documenta
             </li>
             <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
             <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
-            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables the multiselection option</ol>
+            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
             <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
             <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
             <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
@@ -61,7 +61,7 @@ description: You can explore the Grid column properties of Grid in the documenta
             </li>
             <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
             <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
-            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables the multiselection option</ol>
+            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
             <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
             <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
             <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>

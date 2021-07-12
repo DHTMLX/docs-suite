@@ -529,7 +529,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 		</tr>
         <tr>
 			<td><b>multiselection</b></td>
-			<td>(<i>boolean</i>) enables the multiselection option</td>
+			<td>(<i>boolean</i>) enables selection of multiple options</td>
 		</tr>
         <tr>
 			<td><b>readonly</b></td>
