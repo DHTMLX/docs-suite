@@ -2874,10 +2874,10 @@ module.exports = {
   },
   // end Common features
 
-  //start Server-side and frameworks integration
+  //start Backend and frameworks integration
   {
     type: "category",
-    label: "Server-side and frameworks integration",
+    label: "Backend and frameworks integration",
     items: [
       "integration/suite_and_backend",
       "integration/suite_and_react",
@@ -2885,7 +2885,7 @@ module.exports = {
       "integration/suite_and_vue",
     ],
   },
-  // end Server-side and frameworks integration
+  // end Backend and frameworks integration
 
   //start Guides
   {
