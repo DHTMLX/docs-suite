@@ -8,6 +8,34 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2
+---------------
+
+### New functionality
+
+#### Form
+
+- New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added
+
+#### Grid
+
+- New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
+- The ability to enable [selection of multiple options](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
+
+#### Tree
+
+- The ability to [specify a template](tree/api/tree_template_config.md) for Tree items
+- The ability to [add event handlers](tree/api/tree_eventhandlers_config.md) to the HTML elements of a custom template
+- The ability to [set the height](tree/api/tree_itemheight_config.md) of an item
+
+#### Treegrid
+
+- New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
+- The ability to enable [selection of multiple options](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
+
+### Updates
+
+
 
 Version 7.1.9
 ------------------
@@ -220,8 +248,8 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 
 #### TreeGrid
 
-- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid 
-- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added 
+- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid
+- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added
 - The ability to set [the format the content of the cells to be displayed in](treegrid/configuration.md#formatting-columns)
 - Now [columns with dates support the Date() object](treegrid/api/treegrid_data_config.md)
 - The ability to [customize the tooltip of a column](treegrid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
