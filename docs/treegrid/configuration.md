@@ -351,7 +351,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 {{note If you specify the **editable** option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
 
-- **combobox** - an editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control
+- **combobox** - an editor for cells that should contain several options to choose from
 
 To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
 
@@ -361,6 +361,23 @@ To use this editor you need to specify the **editorType: "combobox"** property f
     editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]  /*!*/
 }
 ~~~
+
+Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
+
+- The **id** attribute is displayed in the treegrid
+- The **value** attribute is displayed in the input field
+
+```js
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox", 
+	options: [
+		{ id: "1 time", value: "1" }, 
+		{ id: "1-2 times", value: "1-2 " }, 
+		{ id: "more than 5 times", value: "5+" }
+		]  /*!*/
+}
+```
 
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
@@ -385,7 +402,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-- **multiselect** - an editor for cells that should contain several options to choose from. You can choose one option, several options, all options, or no options.
+- **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options.
 
 ```js
 columns: [
