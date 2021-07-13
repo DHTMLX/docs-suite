@@ -101,9 +101,9 @@ const onAfterDataTransformation = (data) => {
     let transformedData = data;
 
     if (allAvailableComponents.length !== 0) {
-      const imports = `import { ${allAvailableComponents.join(', ')} } from '${COMPONENTS_PATH}';\n\n`;
-      const isTitles = /---((?:\r?\n|\r)|.)+?---/.test(transformedData);
-      transformedData = isTitles ? transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) + "\n\n<Disqus />\n\n" : imports + transformedData;
+        const imports = `import { ${allAvailableComponents.join(', ')} } from '${COMPONENTS_PATH}';\n\n`
+        const isTitles = /---((?:\r?\n|\r)|.)+?---/.test(transformedData);
+        transformedData = isTitles ? transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) : imports + transformedData;
     }
 
     if (metaDescription) {
@@ -116,7 +116,7 @@ const onAfterDataTransformation = (data) => {
         });
     }
 
-    components = { Disqus: "Disqus" };
+    components = {};
     metaDescription = '';
 
     return transformedData;
