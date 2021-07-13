@@ -103,7 +103,9 @@ const onAfterDataTransformation = (data) => {
     if (allAvailableComponents.length !== 0) {
         const imports = `import { ${allAvailableComponents.join(', ')} } from '${COMPONENTS_PATH}';\n\n`;
         const isTitles = /---((?:\r?\n|\r)|.)+?---/.test(transformedData);
-        transformedData = isTitles ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) + "\n\n<Disqus />\n\n") : imports + transformedData;
+        transformedData = isTitles
+            ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) + "\n\n<Disqus />")
+            : imports + transformedData;
     }
 
     if (metaDescription) {
