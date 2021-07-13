@@ -162,32 +162,36 @@ var grid = new dhx.Grid("grid", {
 You can specify data for your grid before initialization via the [data](grid/api/grid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the [](grid/data_loading.md) article.
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     data: dataset /*!*/
 });
 ~~~
 
-## Drag-n-drop of Grid columns
+## Drag-n-drop inside the grid
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
-You can add the ability to reorder columns of Grid by drag and drop via using the [](grid/api/grid_dragitem_config.md) configuration property and setting either *"column"* or *"both"* option as its value:
+It is possible to reorder rows and columns of Grid by drag and drop. To enable the functionality, define the [dragItem: "both"](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
-~~~js
-var grid = new dhx.Grid("grid_container", {
+~~~js {3}
+const grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
-    dragItem: "column",    /*!*/
+    dragItem: "both",
     data: dataset
 });
 ~~~
 
-You can disable this functionality for a separate column via the **draggable** configuration option of the column:
+**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
-~~~js
-var grid = new dhx.Grid("grid_container", {
+To activate the functionality separate for columns or rows, just set the value of **dragItem** to *"column"* or *"row"* respectively.
+
+If needed, you can disable the drag-n-drop functionality for a separate column via the **draggable** configuration option of the column:
+
+~~~js {8}
+const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], draggable: false }, /*!*/
+        { width: 200, id: "country", header: [{ text: "Country" }]}, /*!*/
         { width: 150, id: "land", header: [{ text: "Land" }] },
         { width: 150, id: "density", header: [{ text: "Density" }], draggable: false } /*!*/
     ],
@@ -198,9 +202,9 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
-{{note To make the process of reordering columns by drag and drop more flexible, you can apply the [related](grid/api/api_overview.md#column-drag-and-drop) drag-n-drop events.}}
+{{note To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).}}
 
-## Drag-n-drop of Grid rows
+## Drag-n-drop between grids
 
 dhtmlxGrid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
 
@@ -208,33 +212,18 @@ dhtmlxGrid supports drag-n-drop of rows between grids in several modes. To begin
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
 - "both" - a grid both takes rows from other grids and allows dragging its rows out as well
 
-~~~js
-var grid = new dhx.Grid("grid_container", { 
+~~~js {7}
+const grid = new dhx.Grid("grid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }] },
         { id: "population", header: [{ text: "Population" }] }
     ],
     data: dataset,
-    dragMode: "source" /*!*/
+    dragMode: "source"
 });
 ~~~
 
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
-
-Starting from v7.2, there is the ability to activate the drag-n-drop functionality for rows inside the grid via the [dragItem](grid/api/grid_dragitem_config.md) configuration property. For this, you need to specify either *"row"* or *"both"* option as a value of the property:
-
-~~~js
-var grid = new dhx.Grid("grid_container", { 
-    columns: [
-        { id: "country", header: [{ text: "Country" }] },
-        { id: "population", header: [{ text: "Population" }] }
-    ],
-    data: dataset,
-    dragItem: "row" /*!*/
-});
-~~~
-
-{{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](grid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
 ## Editing Grid and separate columns
 
