@@ -29,7 +29,7 @@ export default function Disqus() {
 		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	});
 
-	resetDisqusPlugin(location.pathname);
+	resetDisqusPlugin(window.location.pathname);
 
 	return <div id='disqus_thread' className={styles.disqusThread}/>;
 }

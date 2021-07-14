@@ -104,7 +104,7 @@ const onAfterDataTransformation = (data) => {
         const imports = `import { ${allAvailableComponents.join(', ')} } from '${COMPONENTS_PATH}';\n\n`;
         const isTitles = /---((?:\r?\n|\r)|.)+?---/.test(transformedData);
         transformedData = isTitles
-            ? transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`)
+            ? (transformedData.replace(/^(---((?:\s*\n)|.)+?---)/, `$1\n\n${imports}`) + "\n\n<Disqus />")
             : imports + transformedData;
     }
 
