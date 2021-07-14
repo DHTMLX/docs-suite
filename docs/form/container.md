@@ -6,15 +6,13 @@ description: You can explore the Container of Form in the documentation of the D
 
 # Container
 
+{{pronote The Container control is available in the PRO version only.}}
+
 A control to attach HTML code or the DHTMLX widgets.
 
 <iframe src="https://snippet.dhtmlx.com/cnxi9eqq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="900"></iframe>
 
-The Container control is a very convenient way to develop Form-based solutions. You can improve your project with HTML code or combine several native widgets in one Form to make the project functional and easy to use.
-
-:::note
-You cannot attach Layout and Form widgets.
-:::
+The Container control is a very convenient way to develop Form-based solutions. You can improve your project with HTML code or combine several native widgets in one Form to make the project functional and easy to use. You cannot attach Layout and Form widgets.
 
 ## How to start
 

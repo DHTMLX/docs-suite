@@ -13,15 +13,29 @@ Version 7.2
 
 ### New functionality
 
+#### Combobox
+
+- New [blur()](combobox/api/combobox_blur_method.md) method is added
+- New events are added: [blur](combobox/api/combobox_blur_event.md) , [focus](combobox/api/combobox_focus_event.md) , [keydown](combobox/api/combobox_keydown_event.md)
+
 #### Form
 
-- New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added
+- New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added (Pro version)
 
 #### Grid
 
 - New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
-- The ability to enable [selection of multiple options](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
-- The ability to [provide the options property with an array of objects](grid/configuration.md/#setting-type-of-column-editor) for the combobox editor
+- The ability to enable [selection of multiple options](grid/configuration.md/#setting-type-of-column-editor) is added
+- The ability to provide [the options property with an array of objects](grid/configuration.md/#setting-type-of-column-editor) for the combobox editor
+
+#### Slider
+
+- New methods are added: [blur()](slider/api/slider_blur_method.md) , [focus()](slider/api/slider_focus_method.md)
+- New events are added: [blur](slider/api/slider_blur_event.md), [focus](slider/api/slider_focus_event.md), [keydown](slider/api/slider_keydown_event.md)
+
+#### Toolbar
+
+- New [Datepicker control](toolbar/datepicker.md) is added
 
 #### Tree
 
