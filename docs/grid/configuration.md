@@ -290,7 +290,7 @@ var grid = new dhx.Grid("grid", {
 
 ### Setting type of column editor
 
-You can specify the way of editing the cells of a Grid column depending on its content as simple input, select control, date picker, checkbox or combobox. The type of the used editor can be defined either by the **editorType** property of a [column](grid/api/grid_columns_config.md) or via the **type** one.
+You can specify the way of editing the cells of a Grid column depending on its content as simple input, date picker, select control,  checkbox, combobox, textarea or multiselect. The type of the used editor can be defined either by the **editorType** property of a [column](grid/api/grid_columns_config.md) or via the **type** one.
 There are several types of column editors:
 
 - **input** - an editor for cells with a simple text (the default one, unless a column has **type:"date"**)
