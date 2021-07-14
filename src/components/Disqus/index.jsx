@@ -27,9 +27,8 @@ export default function Disqus() {
 		dsq.async = true;
 		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		resetDisqusPlugin(location.pathname);
 	});
-
-	resetDisqusPlugin(window.location.pathname);
 
 	return <div id='disqus_thread' className={styles.disqusThread}/>;
 }
