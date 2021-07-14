@@ -11,7 +11,7 @@ description: You can explore the focus method of Slider in the documentation of 
 @signature: focus(extra?: boolean): void;
 
 @params:
-`extra: boolean` - optional, specifies a thumb for focus (works when a range mode is activated)
+`extra: boolean` - optional, specifies a thumb to focus (works when a range mode is activated)
 
 @example:
 
@@ -20,6 +20,6 @@ slider.focus();
 slider.focus(true);
 @examplestop:
 
-In a range mode of Slider, you can specify a thumb for focus.  Use `true` to specify the second one and `false` the first one.
+You can specify a thumb to focus in a range mode of Slider.  Use `true` to specify the second thumb and `false` for the first one.
 
 @changelog: added in v7.2

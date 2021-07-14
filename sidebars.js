@@ -795,7 +795,7 @@ module.exports = {
                 items: [
                   {
                     type: "category",
-                    label: "Methods",
+                    label: "Form Container Methods",
                     collapsed: true,
                     items: [
                       "form/api/container/container_attach_method",
@@ -812,7 +812,7 @@ module.exports = {
                   },
                   {
                     type: "category",
-                    label: "Events",
+                    label: "Form Container Events",
                     collapsed: true,
                     items: [
                       "form/api/container/container_afterchangeproperties_event",
