@@ -21,6 +21,7 @@ Version 7.2
 
 - New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
 - The ability to enable [selection of multiple options](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
+- The ability to [provide the options property with an array of objects](grid/configuration.md/#setting-type-of-column-editor) for the combobox editor
 
 #### Tree
 
@@ -32,9 +33,9 @@ Version 7.2
 
 - New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
 - The ability to enable [selection of multiple options](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
+- The ability to [provide the options property with an array of objects](treegrid/configuration.md/#setting-type-of-column-editor) for the combobox editor
 
 ### Updates
-
 
 
 Version 7.1.9
