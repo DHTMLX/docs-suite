@@ -154,7 +154,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
 
-## Drag-n-drop inside the treegrid
+## Drag-n-drop inside the grid
 
 There is the ability to reorder rows and columns by drag and drop in TreeGrid. To enable the functionality, define the [dragItem: "both"](treegrid/api/treegrid_dragitem_config.md) property in the configuration object of TreeGrid:
 
@@ -166,7 +166,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-To activate the functionality separate for columns or rows, just set the value of **dragItem** to *"column"* or *"row"* respectively.
+To activate the functionality for columns or rows separately, set the value of **dragItem** to *"column"* or *"row"* respectively.
 
 If needed, you can disable the drag-n-drop functionality for a separate column via the **draggable** configuration option of the column:
 

@@ -184,7 +184,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
-To activate the functionality separate for columns or rows, just set the value of **dragItem** to *"column"* or *"row"* respectively.
+To activate the functionality for columns or rows separately, set the value of **dragItem** to *"column"* or *"row"* respectively.
 
 If needed, you can disable the drag-n-drop functionality for a separate column via the **draggable** configuration option of the column:
 

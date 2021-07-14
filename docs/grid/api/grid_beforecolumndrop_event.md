@@ -65,4 +65,4 @@ The data object contains the following parameters:
 [comment]: # ([](grid/api/grid_dragcolumnout_event.md)
 [comment]: # ([](grid/api/grid_dragcolumnstart_event.md)
 
-[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-columns)
+[comment]: # (@related: grid/configuration.md#drag-n-drop-inside-the-grid)

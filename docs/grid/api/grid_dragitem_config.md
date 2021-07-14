@@ -34,7 +34,7 @@ Drag-n-drop can work in three modes:
 - added in v6.5.
 - The "row" and "both" modes have beed added in v7.2.
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-of-grid-columns)
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-inside-the-grid)
 
 [comment]: # (@relatedapi:)
 [comment]: # ([](grid/api/grid_aftercolumndrag_event.md)

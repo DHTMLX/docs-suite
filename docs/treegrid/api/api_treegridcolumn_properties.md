@@ -129,7 +129,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 			<td>(<i>boolean</i>) defines whether a column is <a href="../../configuration#hidden-columns">hidden</a></td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#drag-n-drop-of-treegrid-columns"><b>draggable</b></a></td>
+			<td><a href="../../configuration#drag-n-drop-inside-the-grid"><b>draggable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is draggable</td>
 		</tr>
         <tr>

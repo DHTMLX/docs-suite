@@ -141,7 +141,7 @@ description: You can explore the Grid column properties of Grid in the documenta
            </td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#drag-n-drop-of-grid-columns"><b>draggable</b></a></td>
+			<td><a href="../../configuration#drag-n-drop-inside-the-grid"><b>draggable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is draggable</td>
 		</tr>
         <tr>

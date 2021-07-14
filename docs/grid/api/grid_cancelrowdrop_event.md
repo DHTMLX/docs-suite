@@ -46,4 +46,4 @@ The data object contains the following parameters:
 
 [comment]: # (@relatedapi: grid/api/grid_afterrowdrag_event.md grid/api/grid_afterrowdrop_event.md grid/api/grid_beforerowdrag_event.md grid/api/grid_beforerowdrop_event.md grid/api/grid_canrowdrop_event.md grid/api/grid_dragrowin_event.md grid/api/grid_dragrowout_event.md grid/api/grid_dragrowstart_event.md)
 
-[comment]: # (@related: grid/configuration.md#drag-n-drop-of-grid-rows)
+[comment]: # (@related: grid/configuration.md#drag-n-drop-between-grids)

@@ -655,14 +655,14 @@ Version 6.5
 
 #### Grid 
 
-- The ability to [drag and drop columns in Grid](grid/configuration.md#drag-n-drop-of-grid-columns) using the [](grid/api/grid_dragitem_config.md) configuration property of Grid, or via the [draggable](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column (Pro)
+- The ability to [drag and drop columns in Grid](grid/configuration.md#drag-n-drop-inside-the-grid) using the [](grid/api/grid_dragitem_config.md) configuration property of Grid, or via the [draggable](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column (Pro)
 - New [](grid/api/grid_beforecolumndrag_event.md) and [](grid/api/grid_beforecolumndrop_event.md) events are added (Pro)
 - The ability [to align data in a column as well as in the header of a column](grid/configuration.md#alignment)
 - The ability [to show/hide tooltips](grid/configuration.md#tooltip) while hovering over the content of a column via the [](grid/api/grid_tooltip_config.md) configuration property
 
 #### TreeGrid 
 
-- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-of-treegrid-columns) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
+- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-inside-the-grid) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
 - New [](treegrid/api/treegrid_beforecolumndrag_event.md) and [](treegrid/api/treegrid_beforecolumndrop_event.md) events are added 
 - The ability to [group data in TreeGrid](treegrid/usage.md#grouping-data) using the [](treegrid/api/treegrid_groupby_method.md) method
 - The possibility to set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option of TreeGrid
@@ -1070,7 +1070,7 @@ Version 6.2
 - New [checkbox and combobox editors](grid/configuration.md#setting-type-of-column-editor) for the cells of a Grid column
 - The ability to set [min and max width](grid/api/api_gridcolumn_properties.md) for Grid columns
 - The possibility to [change the width of columns](grid/configuration.md#resizing) via the [resizable](grid/api/grid_resizable_config.md) property
-- [Drag-n-drop](grid/configuration.md#drag-n-drop-of-grid-rows) of rows between grids via the [dragMode](grid/api/grid_dragmode_config.md) property
+- [Drag-n-drop](grid/configuration.md#drag-n-drop-between-grids) of rows between grids via the [dragMode](grid/api/grid_dragmode_config.md) property
 - [Export to CSV format](grid/usage.md#exporting-data-to-csv)
 
 #### Layout

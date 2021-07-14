@@ -46,4 +46,4 @@ The data object contains the following parameters:
 
 [comment]: # (@relatedapi: treegrid/api/treegrid_dragmode_config.md treegrid/api/treegrid_afterrowdrop_event.md treegrid/api/treegrid_beforerowdrag_event.md treegrid/api/treegrid_beforerowdrop_event.md treegrid/api/treegrid_canrowdrop_event.md treegrid/api/treegrid_cancelrowdrop_event.md treegrid/api/treegrid_dragrowin_event.md treegrid/api/treegrid_dragrowout_event.md treegrid/api/treegrid_dragrowstart_event.md)
 
-[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows)
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-between-grids)
