@@ -16,11 +16,23 @@ Version 7.2
 #### Combobox
 
 - New [blur()](combobox/api/combobox_blur_method.md) method is added
-- New events are added: [blur](combobox/api/combobox_blur_event.md) , [focus](combobox/api/combobox_focus_event.md) , [keydown](combobox/api/combobox_keydown_event.md)
+- New events are added: [blur](combobox/api/combobox_blur_event.md), [focus](combobox/api/combobox_focus_event.md), [keydown](combobox/api/combobox_keydown_event.md)
 
 #### Form
 
 - New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added (Pro version)
+- New [blur()](form/api/form_blur_method.md) method is added
+- New [blur](form/api/form_blur_event.md) event is added
+- New [focus](form/api/form_focus_event.md) event is added
+- New [keydown](form/api/form_keydown_event.md) event is added
+
+#### Form controls
+
+- New blur() method of Form controls: [Button](form/api/button/button_blur_method.md), [DatePicker](form/api/calendar/calendar_blur_method.md), [Checkbox](form/api/checkbox/checkbox_blur_method.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_method.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_method.md), [Combo](form/api/combo/combo_blur_method.md), [Input](form/api/input/input_blur_method.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_method.md), [Select](form/api/select/select_blur_method.md), [Slider](form/api/slider/slider_blur_method.md), [Textarea](form/api/textarea/textarea_blur_method.md), [TimePicker](form/api/timepicker/timepicker_blur_method.md)
+- New focus() method of Form controls: [Button](form/api/button/button_focus_method.md), [Slider](form/api/slider/slider_focus_method.md)
+- New blur event of Form controls: [Button](form/api/button/button_blur_event.md), [DatePicker](form/api/calendar/calendar_blur_event.md), [Checkbox](form/api/checkbox/checkbox_blur_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_event.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_event.md), [Combo](form/api/combo/combo_blur_event.md), [Input](form/api/input/input_blur_event.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_event.md), [Select](form/api/select/select_blur_event.md), [Slider](form/api/slider/slider_blur_event.md), [Textarea](form/api/textarea/textarea_blur_event.md), [TimePicker](form/api/timepicker/timepicker_blur_event.md)
+- New focus event of Form controls: [Button](form/api/button/button_focus_event.md), [DatePicker](form/api/calendar/calendar_focus_event.md), [Checkbox](form/api/checkbox/checkbox_focus_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_focus_event.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_event.md), [Combo](form/api/combo/combo_focus_event.md), [Input](form/api/input/input_focus_event.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_event.md), [Select](form/api/select/select_focus_event.md), [Slider](form/api/slider/slider_focus_event.md), [Textarea](form/api/textarea/textarea_focus_event.md), [TimePicker](form/api/timepicker/timepicker_focus_event.md)
+- New keydown event of Form controls: [Button](form/api/button/button_keydown_event.md), [DatePicker](form/api/calendar/calendar_keydown_event.md), [Checkbox](form/api/checkbox/checkbox_keydown_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_keydown_event.md), [ColorPicker](form/api/colorpicker/colorpicker_keydown_event.md), [Combo](form/api/combo/combo_keydown_event.md), [Input](form/api/input/input_keydown_event.md), [RadioGroup](form/api/radiogroup/radiogroup_keydown_event.md), [Select](suite/form/api/select/select_keydown_event.md), [Slider](form/api/slider/slider_keydown_event.md), [Textarea](form/api/textarea/textarea_keydown_event.md), [TimePicker](form/api/timepicker/timepicker_keydown_event.md)
 
 #### Grid
 
@@ -47,7 +59,7 @@ Version 7.2
 
 - New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
 - The ability to enable [selection of multiple options](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
-- The ability to [provide the options property with an array of objects](treegrid/configuration.md/#setting-type-of-column-editor) for the combobox editor
+- The ability to provide [the options property with an array of objects](treegrid/configuration.md/#setting-type-of-column-editor) for the combobox editor
 
 ### Updates
 
