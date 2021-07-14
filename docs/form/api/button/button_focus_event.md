@@ -5,7 +5,7 @@ description: You can explore the focus Button event of Form in the documentation
 ---
 
 # focus
-@short: fires when a Combo control has received focus
+@short: fires when a Button control has received focus
 
 @signature: focus: (text: string) => void;
 

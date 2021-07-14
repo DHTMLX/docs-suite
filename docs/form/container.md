@@ -29,7 +29,7 @@ You can also attach the HTML code directly to the Container control. Look at the
 
 [List of the Container control methods](form/api/api_overview.md#container-methods)
 
-You can manipulate the Container control by using methods of the object returned by the [getItem()](form/api/form_getitem_method.md) method. Use methods to hide or show the Container, set and get properties, and so on.
+You can manipulate the Container control by using methods of the object returned by the [getItem()](form/api/form_getitem_method.md) method. Use methods to hide or show Container, set and get properties, etc.
 
 ## Events
 
@@ -41,4 +41,4 @@ You can manipulate the Container control by using events of the object returned 
 
 [List of the Container control properties](form/api/container/api_container_properties.md)
 
-The list of the properties is used to make settings of the Container control. For example, css, height, width, padding, etc.
+The list of the properties is used to configure the Container control. For example, to specify css, height, width, padding, etc.
