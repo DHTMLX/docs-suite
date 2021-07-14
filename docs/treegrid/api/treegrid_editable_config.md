@@ -25,4 +25,4 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @changelog: added in v6.4
 
-[comment]: # (@related: treegrid/configuration.md#editing-grid-and-separate-columns treegrid/initialization.md#initialize-treegrid)
+[comment]: # (@related: treegrid/configuration.md#editing-treegrid-and-separate-columns treegrid/initialization.md#initialize-treegrid)

@@ -207,13 +207,13 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Setup Drag Mode](https://snippet.dhtmlx.com/43covmy2)
 
-## Editing Grid and separate columns
+## Editing TreeGrid and separate columns
 
-dhtmlxGrid provides the editing feature that includes two options:
+dhtmlxTreeGrid provides the editing feature that includes two options:
 
-- editing of the whole Grid, i.e. of all its columns
+- editing of the whole TreeGrid, i.e. of all its columns
 
-To make all columns of the Grid editable, specify the [](treegrid/api/treegrid_editable_config.md) option in the configuration of Grid:
+To make all columns of the TreeGrid editable, specify the [](treegrid/api/treegrid_editable_config.md) option in the configuration of TreeGrid:
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -272,7 +272,8 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Setting type of column editor
 
-You can specify the way of editing the cells of a Grid column depending on its content as simple inputs, select controls or date pickers. The type of the used editor can be defined either by the **editorType** or via the **type** property of a column. 
+You can specify the way of editing the cells of a TreeGrid column depending on its content. The type of the used editor can be defined either by the **editorType** or via the **type** property of a column.
+
 There are several types of column editors:
 
 - **input** - an editor for cells with a simple text (the default one, unless a column has **type:"date"**)
@@ -336,7 +337,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
-{{note If you specify the **editable** option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
+{{note If you specify the **editable** option in the configuration of TreeGrid, then editing of a column with checkbox will always be enabled.}}
 
 - **combobox** - an editor for cells that should contain several options to choose from
 
@@ -458,7 +459,7 @@ When using just the **type: "percent"** configuration option of a column, the re
 
 You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. 
 There is the [](treegrid/api/treegrid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze 
-as a value of the property in the Grid configuration.
+as a value of the property in the TreeGrid configuration.
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -472,9 +473,9 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Header/footer content
 
-There are three types of filters that you can specify in the header/footer content of a Grid column:
+There are three types of filters that you can specify in the header/footer content of a TreeGrid column:
 
-- **inputFilter** - provides a way of filtering data of a Grid column by using a text field
+- **inputFilter** - provides a way of filtering data of a TreeGrid column by using a text field
 
 ~~~js
 { 
@@ -556,7 +557,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Header/footer height
 
-The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly.
+The height of the header/footer of TreeGrid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly.
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -700,7 +701,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 ## Resizing
 
-Columns of Grid have fixed width with no possibility to change them from UI. You can switch on the corresponding [](treegrid/api/treegrid_resizable_config.md) configuration option to make all columns of Grid resizable.
+Columns of TreeGrid have fixed width with no possibility to change them from UI. You can switch on the corresponding [](treegrid/api/treegrid_resizable_config.md) configuration option to make all columns of TreeGrid resizable.
 
 ~~~js
 var grid = new dhx.Grid("grid_container", {
@@ -712,7 +713,7 @@ var grid = new dhx.Grid("grid_container", {
 
 Then you will be able to change the width of columns using the mouse. Grab the right border with the cursor and drag to the desired width.
 
-{{note If you also set the **autoWidth** configuration option, you will be able to change the width of columns only inside the container of Grid. }}
+{{note If you also set the **autoWidth** configuration option, you will be able to change the width of columns only inside the container of TreeGrid. }}
 
 You can disable the resizing of any column by setting the **resizable:false** property in the config of a column.
 
@@ -805,11 +806,11 @@ dhtmlxTreeGrid includes the selection feature that allows highlighting TreeGrid 
 	<tbody>
         <tr>
 			<td><b>row</b></td>
-			<td>to move selection between Grid rows</td>
+			<td>to move selection between TreeGrid rows</td>
 		</tr>
         <tr>
 			<td><b>cell</b></td>
-			<td>to move selection between Grid cells</td>
+			<td>to move selection between TreeGrid cells</td>
 		</tr>
         <tr>
 			<td><b>complex</b></td>
@@ -831,7 +832,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Sorting columns
 
-By default, dhtmlxTreeGrid allows sorting content of any TreeGrid column by clicking on its header. 
+By default, dhtmlxTreeGrid allows sorting content of any TreeGrid column by clicking on its header.
 
 To disable this option, set the [](treegrid/api/treegrid_sortable_config.md) property in the TreeGrid configuration to *false*:
 
@@ -930,7 +931,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)
 
-**Note**, that if both the **spans** and [leftSplit](treegrid/api/treegrid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
+**Note**, that if both the **spans** and [leftSplit](treegrid/api/treegrid_leftsplit_config.md) properties are set in the TreeGrid config, the following rules will be applied:
 
 - All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
 - If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.

@@ -133,7 +133,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 			<td>(<i>boolean</i>) defines whether a column is draggable</td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#editing-grid-and-separate-columns"><b>editable</b></a></td>
+			<td><a href="../../configuration#editing-treegrid-and-separate-columns"><b>editable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is editable</td>
 		</tr>
         <tr>
