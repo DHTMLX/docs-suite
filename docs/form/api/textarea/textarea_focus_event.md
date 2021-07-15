@@ -6,7 +6,7 @@ description: You can explore the focus Textarea event of Form in the documentati
 
 # focus
 
-@short: fires when an Input control has received focus
+@short: fires when a Textarea control has received focus
 
 @signature: focus: (value: string) => void;
 

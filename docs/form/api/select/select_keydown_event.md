@@ -8,7 +8,7 @@ description: You can explore the keydown Select event of Form in the documentati
 
 @short: fires when any key is pressed and the Select control is in focus
 
-@signature: keydown]: (event: KeyboardEvent) => void;
+@signature: keydown: (event: KeyboardEvent) => void;
 
 @params:
 `event: KeyboardEvent` - a native KeyboardEvent object

@@ -21,6 +21,6 @@ form.event.on("focus", function(name, value, id) {
 });
 @examplestop:
 
-**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa) `to do - add focus event`
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog: added in v7.2

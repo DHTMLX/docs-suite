@@ -8,10 +8,7 @@ description: You can explore the blur Combo Box event of Form in the documentati
 
 @short: fires when a Combo control has lost focus
 
-@signature: `to do check`
-
-@params:
-`value` - the current value of the control
+@signature: blur: () => void;
 
 @example:
 form.getItem("combo").events.on("blur", (value) => {

@@ -6,7 +6,7 @@ description: You can explore the focus Select event of Form in the documentation
 
 # focus
 
-@short: fires when an Input control has received focus
+@short: fires when a Select control has received focus
 
 @signature: focus: (value: string | number) => void;
 

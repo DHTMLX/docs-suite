@@ -6,7 +6,7 @@ description: You can explore the blur Select event of Form in the documentation 
 
 # blur
 
-@short: fires when an Input control has lost focus
+@short: fires when a Select control has lost focus
 
 @signature: blur: (value: string | number) => void;
 

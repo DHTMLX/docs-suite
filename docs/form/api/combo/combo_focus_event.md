@@ -8,10 +8,7 @@ description: You can explore the focus Combo Box event of Form in the documentat
 
 @short: fires when a Combo control has received focus
 
-@signature: `to do check`
-
-@params:
-`value: string` - the current value of the control
+@signature: focus: () => void;
 
 @example:
 form.getItem("combo").events.on("focus", (value) => {

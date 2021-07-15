@@ -6,7 +6,7 @@ description: You can explore the focus Slider event of Form in the documentation
 
 # focus
 
-@short: fires when a Combo control has received focus
+@short: fires when a Slider control has received focus
 
 @signature: focus: (value: number[]) => void;
 

@@ -6,7 +6,7 @@ description: You can explore the blur Textarea event of Form in the documentatio
 
 # blur
 
-@short: fires when an Input control has lost focus
+@short: fires when a Textarea control has lost focus
 
 @signature: blur: (value: string) => void;
 
