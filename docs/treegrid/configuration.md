@@ -402,6 +402,19 @@ columns: [
     },
 ```
 
+**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
+
+If you use multiselect editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
+
+```js
+{
+    renewals: "1 time" //one option is shown in a cell
+},
+{
+    renewals: "more than 5 times, 1 time" //two options are shown in a cell
+}
+```
+
 ## Formatting columns
 
 Starting from v7.1, you can display the values of the cells of a TreeGrid column in the desired format:
