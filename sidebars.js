@@ -2769,6 +2769,10 @@ module.exports = {
       ],
     },
     {
+      type: "doc",
+      id: "custom_scroll/index",
+    },
+    {
       type: "category",
       label: "DataCollection API",
       items: [
@@ -2980,6 +2984,7 @@ module.exports = {
     type: "category",
     label: "Common features",
     items: [
+      "common_features/custom_scroll",
       "common_features/using_typescript",
       "common_features/touch_support",
     ],
