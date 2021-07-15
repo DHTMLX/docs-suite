@@ -11,14 +11,14 @@ description: You can explore the focus Slider method of Form in the documentatio
 @signature: focus(extra?: boolean): void;
 
 @params:
-`extra: boolean` - optional, specifies a thumb to focus (works when a range mode is activated)
+`extra: boolean` - optional, *true* to select the second thumb; *false* for the first one; *false* by default
 
 @example:
-form.getItem("slider").focus();
+form.getItem("slider").focus(); //sets focus to the first thumb
 
-form.getItem("slider").focus(true);
+form.getItem("slider").focus(true); //sets focus to the second thumb
 @examplestop:
 
-You can specify a thumb to focus in a range mode of the Slider control.  Use `true` to specify the second thumb and `false` for the first one.
+You can specify the thumb for focusing when a range mode of the Slider control is activated.
 
 @changelog: added in v7.2
