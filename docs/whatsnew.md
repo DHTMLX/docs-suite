@@ -22,9 +22,7 @@ Version 7.2
 
 - New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added (Pro version)
 - New [blur()](form/api/form_blur_method.md) method is added
-- New [blur](form/api/form_blur_event.md) event is added
-- New [focus](form/api/form_focus_event.md) event is added
-- New [keydown](form/api/form_keydown_event.md) event is added
+- New events are added: [blur](form/api/form_blur_event.md), [focus](form/api/form_focus_event.md), [keydown](form/api/form_keydown_event.md)
 
 #### Form controls
 
@@ -37,7 +35,7 @@ Version 7.2
 #### Grid
 
 - New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
-- The ability to enable [selection of multiple options](grid/configuration.md/#setting-type-of-column-editor) is added
+- The ability to enable [selection of multiple options](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
 - The ability to provide [the options property with an array of objects](grid/configuration.md/#setting-type-of-column-editor) for the combobox editor
 
 #### Slider
@@ -60,8 +58,6 @@ Version 7.2
 - New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
 - The ability to enable [selection of multiple options](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is added
 - The ability to provide [the options property with an array of objects](treegrid/configuration.md/#setting-type-of-column-editor) for the combobox editor
-
-### Updates
 
 
 Version 7.1.9
