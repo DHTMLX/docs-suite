@@ -26,6 +26,20 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
+or apply the **enable()** method of the **scrollView** object after initialization of the widget:
 
+~~~js
+// initialize the widget
+const list = new dhx.List("list", {
+    template: listTemplate,
+    itemHeight: 52,
+    height: "100%",
+    dragMode: "both",
+});
+list.data.load(data);
 
-Check more examples in our [Snippet Tool](https://snippet.dhtmlx.com/all?text=custom+scroll).
+// enable custom scroll
+list.scrollView.enable();
+~~~
+
+For more details on Custom Scroll configuration, read [this article](../../custom_scroll/index/). 
