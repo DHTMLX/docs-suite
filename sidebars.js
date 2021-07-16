@@ -2770,7 +2770,7 @@ module.exports = {
     },
     {
       type: "doc",
-      id: "custom_scroll/index",
+      id: "helpers/custom_scroll",
     },
     {
       type: "category",
