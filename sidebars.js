@@ -227,6 +227,7 @@ module.exports = {
               },
             ],
           },
+          "colorpicker/features",
           "colorpicker/how_to_start",
           "colorpicker/configuration",
           "colorpicker/localizing_colorpicker",
