@@ -1,0 +1,69 @@
+---
+sidebar_label: Features
+title: JavaScript Form - Features 
+description: You can explore the features of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Features
+
+
+- **Common functionality**
+    - [Initialization](https://snippet.dhtmlx.com/yut2mnsz)
+    - **Items**
+        - [All controls](https://snippet.dhtmlx.com/ikyyekxq)
+        - [Buttons](https://snippet.dhtmlx.com/qgxzwyfa)
+        - [Radio buttons](https://snippet.dhtmlx.com/ycp1cbct)
+        - [Checkboxes](https://snippet.dhtmlx.com/scs712zl)
+        - [Checkbox groups](https://snippet.dhtmlx.com/p89u4ovb)
+        - [ColorPicker](https://snippet.dhtmlx.com/n52dl19s)
+        - [Combobox](https://snippet.dhtmlx.com/wla7u1xq)
+        - [Date picker](https://snippet.dhtmlx.com/q3yk7e6s)
+        - [Helpers](https://snippet.dhtmlx.com/84k1mstw)
+        - [Inputs](https://snippet.dhtmlx.com/9q8fubjm)
+        - [Labels](https://snippet.dhtmlx.com/7m2wxs8c)
+        - [Select](https://snippet.dhtmlx.com/yo9w9o2t)
+        - [Simple vault](https://snippet.dhtmlx.com/ofy4k51o)
+        - [Textarea](https://snippet.dhtmlx.com/mt93jzrk)
+        - [TimePicker](https://snippet.dhtmlx.com/4k3o8p7b)
+        - [Blocks](https://snippet.dhtmlx.com/1pzybtja)
+    - **Validation**
+        - [Required](https://snippet.dhtmlx.com/0pr3var0)
+        - [Validation](https://snippet.dhtmlx.com/3cz9v7rm)
+        - [Validate](https://snippet.dhtmlx.com/pmz0zk16)
+        - [Validate control](https://snippet.dhtmlx.com/2wz5lfbp)
+        - [Messages](https://snippet.dhtmlx.com/yhiuq2mi)
+    - **Disabling**
+        - [Disabled](https://snippet.dhtmlx.com/7qjwg2sw)
+        - [Disable/enable](https://snippet.dhtmlx.com/few71nk2)
+        - [Disable of control](https://snippet.dhtmlx.com/n0ndn215)
+        - [Is disabled](https://snippet.dhtmlx.com/lthu8p6p)
+    - **Clearing**
+        - [Clear Form](https://snippet.dhtmlx.com/a64ih4ih)
+        - [Clear control](https://snippet.dhtmlx.com/82i6levj)
+        - [Clear control validate](https://snippet.dhtmlx.com/2yj3obz2)
+    - [Alignment](https://snippet.dhtmlx.com/jjhkypod)
+- **Styling and customization**
+    - [Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
+- **Other functionality**
+    - [ForEach](https://snippet.dhtmlx.com/hqzqpavs)
+    - [Set focus on control](https://snippet.dhtmlx.com/tye82oqs)
+    - [Set value](https://snippet.dhtmlx.com/7nxbtlzs)
+    - [Get value](https://snippet.dhtmlx.com/odod5v12)
+    - [Set control value](https://snippet.dhtmlx.com/ptwm9ttd)
+    - [Get control value](https://snippet.dhtmlx.com/q3u16v01)
+    - [Set properties](https://snippet.dhtmlx.com/67s17ve7)
+    - [Get properties](https://snippet.dhtmlx.com/7ubqapqq)
+    - [Get item](https://snippet.dhtmlx.com/ocfas6go)
+    - [Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
+- **Integration**
+    - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
+    - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)
+    - React integration ([documentation](integration/suite_and_react.md), [demo](https://github.com/DHTMLX/react-widgets))
+    - Angular integration ([documentation](integration/suite_and_angular.md), [demo](https://github.com/DHTMLX/angular-suite-demo))
+    - Vue integration ([documentation](integration/suite_and_vue.md), [demo](https://github.com/DHTMLX/vue-suite-demo))
+- **All Suite widget functionality**
+    - [Localization]
+    - [Touch support](https://snippet.dhtmlx.com/q3cu6x1a)
+    - [TypeScript support](common_features/using_typescript.md)
+- [**Check more samples >>>**](https://snippet.dhtmlx.com/all?text=colorpicker)
+- **Do you need more functionality? Feel free to share your suggestions in the comments below!**

@@ -1,0 +1,90 @@
+---
+sidebar_label: Features
+title: JavaScript TreeGrid - Features 
+description: You can explore the features of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Features
+
+
+
+- **Common functionality**
+    - **How to add data**
+        - [Initialization with config.data](https://snippet.dhtmlx.com/kob9385v)
+        - [Initialization with data.load()](https://snippet.dhtmlx.com/44rmxlmq)
+        - [Initialization with data.parse()](https://snippet.dhtmlx.com/jc8gn40c)
+        - [Initialization with external DataCollection](https://snippet.dhtmlx.com/eobdz66d)
+    - [Expand/collapse rows](https://snippet.dhtmlx.com/1grpsaa2)
+    - [Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
+    - [TreeGrid with footer](https://snippet.dhtmlx.com/0c7qh0th)
+    - [Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m)
+    - [Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
+    - [Frozen columns](https://snippet.dhtmlx.com/46me58ze)
+    - [Data formats (percent, currency, date and combination with templates)](https://snippet.dhtmlx.com/ampo9hsc)
+    - [Selection](https://snippet.dhtmlx.com/v0dyh06q)
+    - [Resizable columns](https://snippet.dhtmlx.com/vq3i9maq)
+    - [Controlling scroll behavior](https://snippet.dhtmlx.com/kxytdnvi)
+    - [Date column and support of the Date() object](https://snippet.dhtmlx.com/tb4o7ytt)
+    - [Delete row](https://snippet.dhtmlx.com/dymxt5pf)
+    - **Sorting**
+        - [Sorting data](https://snippet.dhtmlx.com/bvfnpvwv)
+        - [Sortable columns](https://snippet.dhtmlx.com/r4xfph82)
+        - [Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
+    - **Filtering**
+        - [External filter](https://snippet.dhtmlx.com/zdecovib)
+        - [Filter](https://snippet.dhtmlx.com/epsslwcd)
+        - [Header filter](https://snippet.dhtmlx.com/zm5pt3xk)
+        - [Get header filter](https://snippet.dhtmlx.com/vg5o912t)
+    - **Drag-n-drop**
+        - [Drag-n-drop](https://snippet.dhtmlx.com/43covmy2)
+        - [Drag-n-drop copy](https://snippet.dhtmlx.com/a7pg38rr)
+        - [Columns drag'n'drop](https://snippet.dhtmlx.com/ax5vs4a8)
+    - **Editing**
+        - [Editable data](https://snippet.dhtmlx.com/sdbfbv2n)
+        - [Edit first cell](https://snippet.dhtmlx.com/zm6wh1ss)
+    - **Show/hide**
+        - [Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
+        - [Show/hide row](https://snippet.dhtmlx.com/6geqbtvv)
+        - [Hidden columns](https://snippet.dhtmlx.com/w3yg99la)
+        - [Is column hidden](https://snippet.dhtmlx.com/fcjfp19d)
+    - **Tooltip**
+        - [Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
+        - [Tooltip template](https://snippet.dhtmlx.com/520i6vbt)
+    - **Content alignment and distribution**
+        - [Adjust columns by header, data, all](https://snippet.dhtmlx.com/lgvoz0ar)
+        - [Content aligns](https://snippet.dhtmlx.com/g38rr3so)
+        - [Columns auto width](https://snippet.dhtmlx.com/irybslog)
+        - [Rows auto height](https://snippet.dhtmlx.com/4158ftak)
+        - [Rows height](https://snippet.dhtmlx.com/xl0i3yof)
+        - [Row height](https://snippet.dhtmlx.com/kvl5y6nq)
+        - [Max width](https://snippet.dhtmlx.com/pyrloz7y)
+        - [Min width](https://snippet.dhtmlx.com/cpgjyoxn)
+    - **Grouped**
+        - [Header spans](https://snippet.dhtmlx.com/t8iust6j)
+        - [Spans cells](https://snippet.dhtmlx.com/o62liqew)
+- **Styling and customization**
+    - [Styling (custom CSS)](https://snippet.dhtmlx.com/cpvir0od)
+    - [HTML in data](https://snippet.dhtmlx.com/iubccmoi)
+    - [Add cell CSS](https://snippet.dhtmlx.com/lgvoz0ar)
+    - [Add row CSS](https://snippet.dhtmlx.com/kort67nu)
+    - [Custom row style](https://snippet.dhtmlx.com/3ojyoryn)
+    - [Custom mark cells](https://snippet.dhtmlx.com/14jkc5s3)
+    - [Custom sizes](https://snippet.dhtmlx.com/7w8jxgft)
+    - [Mark cells](https://snippet.dhtmlx.com/14jkc5s3)
+    - [Styling footer cells](https://snippet.dhtmlx.com/wi39d42e)
+    - [Styling header cells](https://snippet.dhtmlx.com/vf0ws454)
+    - [Styling selection](https://snippet.dhtmlx.com/tejgztxd)
+    - [Template with content for cells](https://snippet.dhtmlx.com/q76qcgn3)
+    - [Tooltip template](https://snippet.dhtmlx.com/520i6vbt)
+- **Integration**
+    - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
+    - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)
+    - React integration ([documentation](integration/suite_and_react.md), [demo](https://github.com/DHTMLX/react-widgets))
+    - Angular integration ([documentation](integration/suite_and_angular.md), [demo](https://github.com/DHTMLX/angular-suite-demo))
+    - Vue integration ([documentation](integration/suite_and_vue.md), [demo](https://github.com/DHTMLX/vue-suite-demo))
+- **All Suite widget functionality**
+    - [Localization]
+    - [Touch support](https://snippet.dhtmlx.com/q3cu6x1a)
+    - [TypeScript support](common_features/using_typescript.md)
+- [**Check more samples >>>**](https://snippet.dhtmlx.com/all?text=colorpicker)
+- **Do you need more functionality? Feel free to share your suggestions in the comments below!**
