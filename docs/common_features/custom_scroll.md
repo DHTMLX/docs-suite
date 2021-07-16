@@ -42,4 +42,22 @@ list.data.load(data);
 list.scrollView.enable();
 ~~~
 
-For more details on Custom Scroll configuration, read [this article](../../helpers/custom_scroll/). 
+For more details on the custom scroll configuration, read [this article](../../helpers/custom_scroll/). 
+
+## Custom scroll in Optimus demos
+
+You may notice, that all DHTMLX demos built with Optimus have the custom scroll enabled. 
+
+![](../assets/integration/custom_scroll_optimus.png)
+
+**View the live demos to check the feature:**
+
+| Demo                                                                                    | Related article                                                             |
+|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)      | learn more in [the related article](../../optimus_guides/filemanager_demo/) |
+| [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)       | learn more in [the related article](../../optimus_guides/dashboard_demo/)   |
+| [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/) | learn more in [the related article](../../optimus_guides/hotel_demo/)       |
+| [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)            | learn more in [the related article](../../optimus_guides/geotracking_demo/) |
+| [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)        | learn more in [the related article](../../optimus_guides/hospital_demo/)    |
+| [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)              | learn more in [the related article](../../optimus_guides/kpi_demo/)         |
+| [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/)             | learn more in [the related article](../../optimus_guides/exam_demo/)        |
