@@ -11,11 +11,11 @@ description: You can explore the blur Button event of Form in the documentation 
 @signature: blur: (text: string) => void;
 
 @params:
-`value: string` - the current value of the control
+`text: string` - the current text value of the control
 
 @example:
-form.getItem("button").events.on("blur", (value) => {
-    console.log("blur", value);
+form.getItem("button").events.on("blur", (text) => {
+    console.log("blur", text);
 });
 @examplestop:
 

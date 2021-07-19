@@ -352,8 +352,8 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 
 Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
 
-- The **id** attribute is displayed in the treegrid
-- The **value** attribute is displayed in the input field
+- The **id** attribute is displayed in the treegrid cell
+- The **value** attribute is displayed in the editor
 
 ```js
 {
@@ -404,15 +404,18 @@ columns: [
 
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
-If you use multiselect editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
+If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
 ```js
-{
-    renewals: "1 time" //one option is shown in a cell
-},
-{
-    renewals: "more than 5 times, 1 time" //two options are shown in a cell
-}
+const data = 
+    {
+        renewals: "1 time" //one option is shown in a cell
+        ...
+    },
+    {
+        renewals: "more than 5 times, 1 time" //two options are shown in a cell
+        ...
+    }
 ```
 
 ## Formatting columns
