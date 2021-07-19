@@ -970,11 +970,12 @@ Other Materials
 - [](optimus_guides/how_to_start_optimus.md) step-by-step guide
 - <a href="https://github.com/DHTMLX/optimus-starter-app/" target="_blank">DHTMLX Optimus</a> demo on GitHub
 - Other demos build with Optimus: 
-	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/" target="_blank">File Explorer</a>
-	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/" target="_blank">UI Dashboard</a>
-	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxHotelManagement" target="_blank">Hotel Management Template</a>
-	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking" target="_blank">Geo Tracking</a>
-	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/" target="_blank">Hospital Management</a>
-	- <a href="https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/" target="_blank">Sales KPI Tracking</a>
+	- [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)
+	- [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)
+	- [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/)
+	- [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)
+	- [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)
+	- [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)
+	- [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/) 
 
 
