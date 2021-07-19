@@ -102,6 +102,7 @@ module.exports = {
               },
             ],
           },
+          "calendar/features",
           "calendar/how_to_start",
           "calendar/configuring",
           "calendar/localizing_calendar",
