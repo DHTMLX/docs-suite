@@ -8,7 +8,10 @@ description: You can explore the focus Combo Box event of Form in the documentat
 
 @short: fires when a Combo control has received focus
 
-@signature: focus: () => void;
+@signature: focus: (value: string | string[]) => void;
+
+@params:
+- `value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
 
 @example:
 form.getItem("combo").events.on("focus", (value) => {

@@ -8,11 +8,10 @@ description: You can explore the focus Checkbox event of Form in the documentati
 
 @short: fires when a Checkbox control has received focus
 
-@signature: focus: (value: string | boolean, id?: string) => void;
+@signature: focus: (value: string | boolean) => void;
 
 @params:
 - `value: string | boolean` - the current value of the control
-- `id: string` - optional, the id of the element of the Checkbox control
 
 @example:
 form.getItem("checkbox").events.on("focus", (value) => {

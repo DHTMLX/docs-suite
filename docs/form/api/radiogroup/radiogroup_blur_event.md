@@ -12,7 +12,7 @@ description: You can explore the blur Radiogroup event of Form in the documentat
 
 @params:
 - `value: string` - the current value of the control
-- `id: string` - the id of the element of the Radiogroup control
+- `id: string` - the id of the radio button of the Radiogroup control
 
 @example:
 form.getItem("radiogroup").events.on("blur", (value, id) => {

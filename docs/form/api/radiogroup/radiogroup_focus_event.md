@@ -12,7 +12,7 @@ description: You can explore the focus Radiogroup event of Form in the documenta
 
 @params:
 - `value: string` - the current value of the control
-- `id: string` - the id of the element of the Radiogroup control
+- `id: string` - the id of the radio button of the Radiogroup control
 
 @example:
 form.getItem("radiogroup").events.on("focus", (value, id) => {

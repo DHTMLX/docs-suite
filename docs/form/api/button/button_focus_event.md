@@ -10,11 +10,11 @@ description: You can explore the focus Button event of Form in the documentation
 @signature: focus: (text: string) => void;
 
 @params:
-`value: string` - the current value of the control
+`text: string` - the current value of the control
 
 @example:
-form.getItem("button").events.on("focus", (value) => {
-    console.log("focus", value);
+form.getItem("button").events.on("focus", (text) => {
+    console.log("focus", text);
 });
 @examplestop:
 

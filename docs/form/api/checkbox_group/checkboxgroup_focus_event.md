@@ -11,8 +11,8 @@ description: You can explore the focus Checkbox Group event of Form in the docum
 @signature: focus: (value: ICheckboxGroupValue, id: string) => void;
 
 @params:
-- `value` - the current value of the control
-- `id: string` - the id of the element of the CheckboxGroup control
+- `value: object` - the current value of the control
+- `id: string` - the id of the checkbox of the CheckboxGroup control
 
 @example:
 form.getItem("checkboxGroup").events.on("focus", (value, id) => {

@@ -11,7 +11,7 @@ description: You can explore the blur event of Form in the documentation of the 
 @signature: blur: (name: string, value: any, id?: string) => void;
 
 @params:
-- `name: string` - the name or id of the control of Form
+- `name: string` - the name (or id, if the name is not specified) of the control of Form
 - `value: any` - the current value of the control
 - `id: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
