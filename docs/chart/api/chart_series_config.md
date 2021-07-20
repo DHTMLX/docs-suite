@@ -184,7 +184,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>subType</b></td>
-			<td>(<i>string|boolean</i>) specifies the subtype of a chart: "basic"|"percentOnly"|"valueOnly" (used for Donut chart only)</td>
+			<td>(<i>string|boolean</i>) specifies the subtype of a chart: "basic"|"percentOnly"|"valueOnly"</td>
 		</tr>
 		<tr>
 			<td><b>stroke</b></td>

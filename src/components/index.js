@@ -10,7 +10,7 @@ import Params from './Params';
 import Returns from "./Returns";
 import Values from "./Values";
 import WidgetIcons from "./WidgetIcons";
-
+import Disqus from "./Disqus";
 
 export {
   Short,
@@ -24,5 +24,6 @@ export {
   Params,
   Returns,
   Values,
-  WidgetIcons
+  WidgetIcons,
+  Disqus
 };
