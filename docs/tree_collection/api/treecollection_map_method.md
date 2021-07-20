@@ -1,7 +1,7 @@
 ---
 sidebar_label: map()
-title: map()
-description: description
+title: JavaScript TreeCollection - map Method
+description: You can explore the map method of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # map()
@@ -29,7 +29,7 @@ To work with all childs of a particular control, pass one more parameter to **ma
 ~~~js
 toolbar.data.map((item)=>{
     // disable items
-    item.$disabled = true;
+    item.disabled = true;
 },"menu_1");
 toolbar.paint();
 ~~~

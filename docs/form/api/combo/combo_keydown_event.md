@@ -6,17 +6,17 @@ description: You can explore the keydown Combo Box event of Form in the document
 
 # keydown
 
-@short: fires when any key is pressed and the element of the Combo control is in focus
+@short: fires when any key is pressed and an option of the Combo control is in focus
 
 @signature: keydown: (event: KeyboardEvent, id: string | undefined) => void;
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id: string` - the id of the element of the Combo control
+- `id: string | undefined` - the id of the option of the Combo control 
 
 @example:
-form.getItem("combo").events.on("keydown", function(event, name, id) {
-    console.log(event, name, id);
+form.getItem("combo").events.on("keydown", function(event, id) {
+    console.log(event, id);
 });
 
 @changelog: added in v7.2

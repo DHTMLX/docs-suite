@@ -6,17 +6,17 @@ description: You can explore the keydown Checkbox Group event of Form in the doc
 
 # keydown
 
-@short: fires when any key is pressed and the element of the CheckboxGroup control is in focus
+@short: fires when any key is pressed and a checkbox of the CheckboxGroup control is in focus
 
 @signature: keydown: (event: KeyboardEvent, id: string) => void;
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id: string` - the id of the element of the CheckboxGroup control
+- `id: string` - the id of the checkbox of the CheckboxGroup control
 
 @example:
-form.getItem("CheckboxGroup").events.on("keydown", function(event, name, id) {
-    console.log(event, name, id);
+form.getItem("CheckboxGroup").events.on("keydown", function(event, id) {
+    console.log(event, id);
 });
 
 @changelog: added in v7.2

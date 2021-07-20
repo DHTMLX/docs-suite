@@ -8,15 +8,14 @@ description: You can explore the keydown Checkbox event of Form in the documenta
 
 @short: fires when any key is pressed and the Checkbox control is in focus
 
-@signature: keydown: (event: KeyboardEvent, id?: string) => void;
+@signature: keydown: (event: KeyboardEvent) => void;
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id: string` - optional, the id of the element of the Checkbox control
 
 @example:
-form.getItem("checkbox").events.on("keydown", function(event, name) {
-    console.log(event, name, id);
+form.getItem("checkbox").events.on("keydown", function(event) {
+    console.log(event);
 });
 
 @changelog: added in v7.2
