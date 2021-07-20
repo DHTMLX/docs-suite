@@ -1,0 +1,63 @@
+---
+sidebar_label: Features
+title: JavaScript Chart - Features 
+description: You can explore the features of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+---
+
+# Features
+
+- **Common functionality**
+  - **Types of Сharts**
+    - [Spline area chart](https://snippet.dhtmlx.com/bo82km4n)
+    - [Spline chart](https://snippet.dhtmlx.com/2wvmdm0y)
+    - [Area chart](https://snippet.dhtmlx.com/nv6t6lvm)
+    - [Line chart](https://snippet.dhtmlx.com/t881qcim)
+    - [Bar chart](https://snippet.dhtmlx.com/id9nbujd)
+    - [X-Bar chart](https://snippet.dhtmlx.com/qz80yw84)
+    - [Scatter chart](https://snippet.dhtmlx.com/pkczfmpu)
+    - [Donut chart](https://snippet.dhtmlx.com/lobb80ig)
+    - [Pie chart](https://snippet.dhtmlx.com/jfbet749)
+    - [Pie 3D chart](https://snippet.dhtmlx.com/xfce9pys)
+    - [Radar chart](https://snippet.dhtmlx.com/6otf4h0t)
+  - **Legend**
+    - [Enable legend](https://snippet.dhtmlx.com/00ei3q23)
+    - [Legend position](https://snippet.dhtmlx.com/pgqf1yxj)
+    - [Legend form](https://snippet.dhtmlx.com/n8wsfv5n)
+  - **Scales**
+    - [Scale rotate](https://snippet.dhtmlx.com/iw00fgl5)
+    - [Scale title](https://snippet.dhtmlx.com/5ir00fer)
+    - [Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n)
+- **Styling and customization**
+  - [Styling (custom CSS)](https://snippet.dhtmlx.com/p82iew5s)
+  - [Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)
+  - [Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)
+  - [Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n)
+  - [Base line](https://snippet.dhtmlx.com/6tls4qhf)
+  - [Line, Spline and Area charts together](https://snippet.dhtmlx.com/eti3i33o)
+  - [Point types](https://snippet.dhtmlx.com/cbj54wwu)
+  - [Dashed grid](https://snippet.dhtmlx.com/gnj1xc3r)
+  - [Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)
+  - [Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)
+- **Other functionality**
+  - [Load data](https://snippet.dhtmlx.com/qah8exx2)
+  - [Serialize](https://snippet.dhtmlx.com/rqvvpopp)
+  - [Adding data on the fly](https://snippet.dhtmlx.com/dpz4w5nr)
+  - [Change configuration on the fly](https://snippet.dhtmlx.com/7umj531n)
+  - [Max points](https://snippet.dhtmlx.com/6917eudu)
+  - [Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)
+  - [Target value and target line](https://snippet.dhtmlx.com/28y4x1zd)
+  - [Show text](https://snippet.dhtmlx.com/o7ke2f1s)
+  - [Radar. Axis configuration](https://snippet.dhtmlx.com/yksfvhhl)
+  - [Each series](https://snippet.dhtmlx.com/4kbj4lmw)
+  - [Get series](https://snippet.dhtmlx.com/9jtscd9q)
+- **Integration**
+  - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
+  - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)
+  - React integration ([documentation](integration/suite_and_react.md), [demo](https://github.com/DHTMLX/react-widgets))
+  - Angular integration ([documentation](integration/suite_and_angular.md), [demo](https://github.com/DHTMLX/angular-suite-demo))
+  - Vue integration ([documentation](integration/suite_and_vue.md), [demo](https://github.com/DHTMLX/vue-suite-demo))
+- **All Suite widget functionality**
+  - [Touch support](https://snippet.dhtmlx.com/q3cu6x1a)
+  - [TypeScript support](common_features/using_typescript.md)
+- [**Check more samples >>>**](https://snippet.dhtmlx.com/all?text=chart)
+- **Do you need more functionality? Feel free to share your suggestions in the comments below!**
