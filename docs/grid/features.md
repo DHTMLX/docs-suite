@@ -33,7 +33,7 @@ description: You can explore the features of Grid in the documentation of the DH
     - [External filter](https://snippet.dhtmlx.com/12suognm)
     - [Get header filter](https://snippet.dhtmlx.com/n8srjle3)
   - **Drag-n-drop**
-    - [Grid. Drag-n-drop (Pro)](https://snippet.dhtmlx.com/zwc91d50)
+    - [Drag-n-drop inside the grid](https://snippet.dhtmlx.com/dfdlzpqb)
     - [Drag-n-drop between grids](https://snippet.dhtmlx.com/qx9a86ax)
     - [Drag-n-drop copy](https://snippet.dhtmlx.com/23slivyz)
   - **Show/hide**
@@ -65,7 +65,6 @@ description: You can explore the features of Grid in the documentation of the DH
   - **Grouped**
     - [Grouped headers (spans)](https://snippet.dhtmlx.com/eol76o68)
     - [Grouped cels (spans)](https://snippet.dhtmlx.com/1775dwbl)
-    - Grouping data (rows) (?)
 - **Styling and customization**
   - [Styling Grid](https://snippet.dhtmlx.com/c5tr3s5r)
   - [Add cell CSS](https://snippet.dhtmlx.com/hskmp8rh)
@@ -91,13 +90,7 @@ description: You can explore the features of Grid in the documentation of the DH
   - [Touch support](https://snippet.dhtmlx.com/q3cu6x1a)
   - [TypeScript support](common_features/using_typescript.md)
 - [**Check more samples >>>**](https://snippet.dhtmlx.com/all?text=grid)
+- [**Check a TreeGrid  widget >>>**](treegrid/index.md) - it allows showing the nested tabular data
+- [**Check SpreadSheet >>>**](https://docs.dhtmlx.com/spreadsheet/index.html) - if you need functionality like Google Spreadsheets or Excel
+- [**Check Pivot >>>**](https://docs.dhtmlx.com/pivot/index.html) - if you are interested in analyzing data from large datasets
 - **Do you need more functionality? Feel free to share your suggestions in the comments below!**
-
-
-
-
-Если вам нужны формулы и функциональность похожая на Google Spreadsheet и Excel, сходите в документацию Spreadsheet. Ссылка на страницу функциональности
-
-Если вы хотите анализировать и управлять большим количеством данных, вас может заинтересовать PIvot.
-
-Отсылка на TreeGrid.
