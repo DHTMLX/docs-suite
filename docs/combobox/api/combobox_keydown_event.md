@@ -12,7 +12,7 @@ description: You can explore the keydown event of Combo Box in the documentation
 
 @params:
 - `event` - a native KeyboardEvent object
-- `id` - the id of the element of Combobox in focus
+- `id` - the id of the option of Combobox in focus
 
 @example:
 combobox.events.on("keydown", function(event, id) {

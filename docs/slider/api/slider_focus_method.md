@@ -11,15 +11,17 @@ description: You can explore the focus method of Slider in the documentation of 
 @signature: focus(extra?: boolean): void;
 
 @params:
-`extra: boolean` - optional, *true* to select the second thumb; *false* for the first one; *false* by default
+`extra: boolean` - optional, if the range mode is activated, *true* will set focus to the second thumb
 
 @example:
+// sets focus to the thumb;  
+// if the range mode is activated, sets focus to the first thumb
+slider.focus();
 
-slider.focus(); //sets focus to the first thumb
-
-slider.focus(true); //sets focus to the second thumb
+// sets focus to the second thumb if the range mode is activated
+slider.focus(true);
 @examplestop:
 
-You can specify the thumb for focusing when a range mode of Slider is activated.
+The **extra** parameter can be used when a range mode of Slider is activated.
 
 @changelog: added in v7.2
