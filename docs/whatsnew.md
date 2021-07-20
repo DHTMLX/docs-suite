@@ -13,6 +13,8 @@ Version 7.1.10
 
 <span class="rel_date">released on July 20, 2021</span>
 
+### Fixes
+
 - Chart. Fix the default paddings between the chart and its container
 - Chart. Fix the incorrect display of "stroke" for Pie, Pie3D
 - Chart. Now the "valueOnly" subtype of a chart is available not only for Donut chart but also for Pie and Pie3D ones
