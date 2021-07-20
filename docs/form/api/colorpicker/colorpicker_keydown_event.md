@@ -14,8 +14,8 @@ description: You can explore the keydown Colorpicker event of Form in the docume
 `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
-form.getItem("colorpicker").events.on("keydown", function(event, name) {
-    console.log(event, name, id);
+form.getItem("colorpicker").events.on("keydown", function(event) {
+    console.log(event);
 });
 
 @changelog: added in v7.2

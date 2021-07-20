@@ -14,8 +14,8 @@ description: You can explore the keydown Textarea event of Form in the documenta
 `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
-form.getItem("textarea").events.on("keydown", function(event, name) {
-    console.log(event, name, id);
+form.getItem("textarea").events.on("keydown", function(event) {
+    console.log(event);
 });
 
 @changelog: added in v7.2

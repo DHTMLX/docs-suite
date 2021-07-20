@@ -14,8 +14,8 @@ description: You can explore the keydown Select event of Form in the documentati
 `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
-form.getItem("select").events.on("keydown", function(event, name) {
-    console.log(event, name, id);
+form.getItem("select").events.on("keydown", function(event) {
+    console.log(event, id);
 });
 
 @changelog: added in v7.2

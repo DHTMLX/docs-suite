@@ -14,8 +14,8 @@ description: You can explore the keydown Timepicker event of Form in the documen
 `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
-form.getItem("timepicker").events.on("keydown", function(event, name) {
-    console.log(event, name, id);
+form.getItem("timepicker").events.on("keydown", function(event) {
+    console.log(event);
 });
 
 @changelog: added in v7.2

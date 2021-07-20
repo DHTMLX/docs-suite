@@ -14,8 +14,8 @@ description: You can explore the keydown Button event of Form in the documentati
 `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
-form.getItem("button").events.on("keydown", function(event, name) {
-    console.log(event, name, id);
+form.getItem("button").events.on("keydown", function(event) {
+    console.log(event);
 });
 
 @changelog: added in v7.2
