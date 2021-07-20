@@ -8,6 +8,34 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.1.10
+-------------------
+
+<span class="rel_date">released on July 20, 2021</span>
+
+- Chart. Fix the default paddings between the chart and its container
+- Chart. Fix the incorrect display of "stroke" for Pie, Pie3D
+- Chart. Now the "valueOnly" subtype of a chart is available not only for Donut chart but also for Pie and Pie3D ones
+- Chart. The display of the "basic", "valueOnly", "percentOnly" subtypes of a chart is unified
+- Form. Combo control. Fix the issue which caused sending of - Form after an item of Combobox is selected by pressing the Enter key
+- Form. Fix the issue which caused the value in Form not to be cleared after clearing the value in the Datepicker control
+- Grid, TreeGrid. Fix the script error thrown when setting the "adjust: true" configuration option of Grid and using columns with the combo filter
+- Grid. Fix the incorrect work of the "beforeEditEnd" event when returning false
+- Grid. Fix the incorrect work of the "editable:false" configuration option of the column when the checkbox editor is set for the column
+- Grid. Fix the issue which caused the filter in the source grid not being reset after dragging the row into the target grid
+- Grid. Fix the issue which caused the parent container for Grid, which is attached to the layout, to reset when calling the "setColumns()" method after initialization of Grid
+- Grid. Fix the issue with editing of the checkboxes by using the Space key
+- Grid. Fix the issue with formatting of the fractional numbers
+- Grid. Fix the issue with ignoring the "filter" and "template" configuration properties of comboFilter
+- Grid. Fix the issue with incorrect calculation of the footer of the frozen columns
+- Layout. Fix the issue which caused the "сlick" event of DataView to be called after clicking the empty area in the dataview attached to the Layout cell
+- Pagination. Fix the script error thrown after clicking on the "next" button
+- Sidebar. Fix the issue with the display of the tooltip when the sidebar is attached to the modal window
+- Tabbar. Fix the issue which caused the "change" event to be called when clicking the currently active tab in the tabbar
+- Tree. Fix the issue which caused custom CSS classes not being applied to the nested items (non-folders)
+- TreeCollection. Fix the issue that caused the "beforeAdd" event not to be called after adding new items into TreeCollection
+- TreeGrid. Fix the incorrect display of data when entering the value, which doesn't exist in the data set, into the header cell with the input filter
+- TreeGrid. Fix the issues with the top and bottom borders of the footer cells of the frozen columns
 
 Version 7.1.9
 ------------------
