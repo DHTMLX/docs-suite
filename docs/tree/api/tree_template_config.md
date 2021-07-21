@@ -35,7 +35,7 @@ The template function takes two parameters:
 - `item` - *object*, an object of a Tree item
 - `isFolder` - *boolean*, defines whether an item is a folder
 
-and returns a string or null.
+and returns either a string or null.
 
 **Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
 
