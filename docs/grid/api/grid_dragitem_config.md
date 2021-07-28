@@ -27,7 +27,7 @@ Drag-n-drop can work in three modes:
 - "row" - enables drag and drop of rows
 - "both" - enables both modes mentioned above
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package. <br>In case you use GPL version, you will be able to reorder rows only.}}
 
 @changelog:
 
