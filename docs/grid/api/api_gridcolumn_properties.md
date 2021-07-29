@@ -38,6 +38,8 @@ description: You can explore the Grid column properties of Grid in the documenta
             <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
             <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
             </li>
+            <li><b>headerSort</b> - (<i>boolean</i>) enables/disables sorting by clicking the header</li>
+            <li><b>sortAs</b> - (<i>function</i>) a function that specifies the type to sort data as</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Header Spans</a>
             </td>

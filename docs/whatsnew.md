@@ -40,6 +40,8 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 - New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
 - The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-content) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
 - The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#setting-type-of-column-editor) of the combo editor
+- The ability to [specify the type to sort data](grid/api/api_gridcolumn_properties.md) in the header
+- The ability to [enable/disable sorting by clicking the header](grid/api/api_gridcolumn_properties.md)
 
 #### Slider
 
