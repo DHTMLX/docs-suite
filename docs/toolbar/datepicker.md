@@ -38,8 +38,8 @@ The Datepicker control can have an icon which is set through the corresponding o
 
 @example:
 {
-  type: "datePicker",
-  icon: "dxi dxi-calendar-today",
+    type: "datePicker",
+    icon: "dxi dxi-calendar-today",
 }
 @examplestop:
 
