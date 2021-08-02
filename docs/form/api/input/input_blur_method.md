@@ -6,7 +6,7 @@ description: You can explore the blur Input method of Form in the documentation 
 
 # blur()
 
-@short: removes focus from a Input control
+@short: removes focus from an Input control
 
 @signature: blur(): void;
 
