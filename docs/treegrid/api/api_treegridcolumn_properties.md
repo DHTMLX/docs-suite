@@ -39,7 +39,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
                     <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
                     </li>
 					<li><b>headerSort</b> - (<i>boolean</i>) enables/disables sorting by clicking the header</li>
-					<li><b>sortAs</b> - (<i>function</i>) a function that specifies the type to sort data as</li>
+					<li><b>sortAs</b> - (<i>function</i>) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
                 </ul>
 				<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/t8iust6j" target="_blank">TreeGrid. Header spans</a>
             </td>

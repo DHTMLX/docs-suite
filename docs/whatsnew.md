@@ -40,7 +40,7 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 - New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
 - The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-content) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
 - The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#setting-type-of-column-editor) of the combo editor
-- The ability to [specify the type to sort data](grid/api/api_gridcolumn_properties.md) in the header
+- The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) property of a Grid column
 - The ability to [enable/disable sorting by clicking the header](grid/api/api_gridcolumn_properties.md)
 
 #### Slider
@@ -63,7 +63,7 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 - New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
 - The ability to [choose several options in comboFilter at once](treegrid/configuration.md/#headerfooter-content) via setting [multiselection:true](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
 - The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](treegrid/configuration.md/#setting-type-of-column-editor) of the combobox editor
-- The ability to [specify the type to sort data](treegrid/api/api_treegridcolumn_properties.md) in the header
+- The ability to specify the type to sort data as via the [sortAs](treegrid/api/api_treegridcolumn_properties.md)  property of a TreeGrid column
 - The ability to [enable/disable sorting by clicking the header](treegrid/api/api_treegridcolumn_properties.md)
 
 #### Helpers
