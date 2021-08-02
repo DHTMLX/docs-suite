@@ -360,7 +360,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 {{note If you specify the editing option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
 
-- **combobox** - an editor for cells that should contain several options to choose from
+- **combobox** - an editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
 
 To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
 
