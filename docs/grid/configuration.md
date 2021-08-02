@@ -538,7 +538,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 **Related sample**: [Grid. Header Filter](https://snippet.dhtmlx.com/4qz8ng3c)
 
-- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control.
+- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control
 
 ~~~js
 {

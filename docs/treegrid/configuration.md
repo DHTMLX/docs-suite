@@ -511,7 +511,7 @@ There are three types of filters that you can specify in the header/footer conte
 }
 ~~~
 
-- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control.
+- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control
 
 ~~~js
 {
