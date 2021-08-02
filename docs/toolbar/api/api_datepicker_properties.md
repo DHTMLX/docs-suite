@@ -7,14 +7,14 @@ description: You can explore the Datepicker properties of Toolbar in the documen
 # Toolbar Datepicker properties
 
 - `type` - *string* - the type of a control, set it to `"datePicker"`, if not specified - the [navItem](../../../toolbar/navitem/) type is applied by default
-- `id` - *string* - the id of a control, auto-generated if not set
-- `parent` - *string* - the parent of the item
-- `value` - *string, Date* - optional, the value of a datepicker
-- `dateFormat` - *string* - the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
 - `css` - *string, string[]* - adds style classes to a Datepicker control
-- `icon` - *string* - optional, an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
-- `placeholder` - *string* - optional, a tip for the input
-- `width` - *string* - optional, the width of the field
-- `label` - *string* - specifies an AREA label for the control
-- `hidden` - *boolean* - defines whether a Datepicker is hidden
+- `dateFormat` - *string* - the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
 - `disabled` - *boolean* - defines whether a Datepicker control is disabled
+- `hidden` - *boolean* - defines whether a Datepicker is hidden
+- `icon` - *string* - optional, an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
+- `id` - *string* - the id of a control, auto-generated if not set
+- `label` - *string* - specifies an AREA label for the control
+- `parent` - *string* - the parent of the item
+- `placeholder` - *string* - optional, a tip for the input
+- `value` - *string, Date* - optional, the value of a datepicker
+- `width` - *string* - optional, the width of the field

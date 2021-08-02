@@ -54,7 +54,7 @@ toolbar.hide(id);
 
 ## Enabling/disabling Datepicker
 
-It is possible to enable or disable Datepicker by th [enable()](toolbar/api/toolbar_enable_method.md) / [disable()](toolbar/api/toolbar_disable_method.md) methods:
+It is possible to enable or disable Datepicker by the [enable()](toolbar/api/toolbar_enable_method.md) / [disable()](toolbar/api/toolbar_disable_method.md) methods:
 
 @example:
 toolbar.enable(id);
