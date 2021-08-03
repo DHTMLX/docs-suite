@@ -64,7 +64,7 @@ var list = new dhx.List("list_container", {
 
 Read more about multiselection in List [below](#multiple-selection-of-items).
 
-**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
+**Related sample**: [List. Drag-n-drop](https://snippet.dhtmlx.com/yfz6ai7j)
 
 ## Dynamic rendering of items
 
@@ -85,7 +85,7 @@ var list = new dhx.List("list_container", {
 
 ![](../assets/list/editable.png)
 
-**Related sample**: [List. Editable List](https://snippet.dhtmlx.com/f26lfcai)
+**Related sample**: [List. Inline editing](https://snippet.dhtmlx.com/f26lfcai)
 
 You can enable the possibility to edit List items with the help of the [](list/api/list_editable_config.md) configuration option:
 
@@ -145,7 +145,7 @@ var list = new dhx.List("list", {height: "700px"});
 
 ![](../assets/list/multiselection.png)
 
-**Related sample**: [List. List Multiselection](https://snippet.dhtmlx.com/0sorkczm)
+**Related sample**: [List. Multiselection](https://snippet.dhtmlx.com/0sorkczm)
 
 By default, you can select only one item in a list, since selection of another item resets selection of the previous one. To enable the possibility to select several List items, make use of the 
 [](list/api/list_multiselection_config.md) configuration option:
@@ -179,7 +179,7 @@ var list = new dhx.List("list_container", {selection: false});
 
 ![](../assets/list/list_template.png)
 
-**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
+**Related sample**: [List. HTML template for item](https://snippet.dhtmlx.com/gtzdwpj4)
 
 You can define a template for rendering items in a List with the help of the [](list/api/list_template_config.md) configuration property. Set as its value a function that takes one parameter:
 
