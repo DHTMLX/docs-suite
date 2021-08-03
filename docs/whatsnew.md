@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 7.2
 ---------------
 
-<span class="rel_date">released on August 3, 2021</span>
+<span class="rel_date">released on August 4, 2021</span>
 
 Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
 ### New functionality
