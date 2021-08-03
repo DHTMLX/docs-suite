@@ -82,7 +82,7 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 - Grid. Fix the issue with the update of options in the combo filter after adding a new item into the data collection
 - Grid. Fix the issue with loading data into Grid using `lazyDataProxy`
 - Grid. Fix the issue with entering text in the combobox editor of a Grid cell
-
+- Menu. Fix the issue which caused the context menu not to close after clicking outside the menu if `navigationType: "click"` property is specified
 
 
 Version 7.1.10
