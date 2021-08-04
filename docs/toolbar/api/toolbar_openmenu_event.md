@@ -17,7 +17,6 @@ description: You can explore the openMenu event of Toolbar in the documentation 
 toolbar.events.on("OpenMenu", function(id){
     // your code here
 });
-
-@descr:
+@examplestop:
 
 **Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)

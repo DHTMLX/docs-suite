@@ -42,7 +42,7 @@ description: You can explore the Input properties of Toolbar in the documentatio
 		</tr>
 		<tr>
 			<td><b>label</b></td>
-			<td>(<i>string</i>) optional, a text label for the Input control</td>
+			<td>(<i>string</i>) optional, specifies an AREA label for the Input control</td>
 		</tr>
 		<tr>
 			<td><b>tooltip</b></td>

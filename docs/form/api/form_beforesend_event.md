@@ -21,6 +21,8 @@ form.events.on("BeforeSend", function(){
 
 @descr:
 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+
 @changelog: added in v6.1
 
 [comment]: # (@relatedapi: form/api/form_aftersend_event.md form/api/form_send_method.md)

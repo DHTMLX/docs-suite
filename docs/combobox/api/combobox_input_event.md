@@ -14,7 +14,7 @@ description: You can explore the input event of Combo Box in the documentation o
 `value: string` - an entered value
 
 @example:
-combobox.events.on("Input", function(value) {
+combobox.events.on("input", function(value) {
     console.log("You've entered: " + value);
 });
 

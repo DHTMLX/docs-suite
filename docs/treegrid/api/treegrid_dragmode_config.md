@@ -25,6 +25,6 @@ Drag-n-drop can work in three modes:
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
 - "both" - a grid both takes rows from other grids and allows dragging its rows out as well
 
-[comment]: # (@related: treegrid/configuration.md#drag-n-drop-of-treegrid-rows treegrid/initialization.md#initialize-treegrid)
+[comment]: # (@related: treegrid/configuration.md#drag-n-drop-between-grids treegrid/initialization.md#initialize-treegrid)
 
 [comment]: # (@relatedapi: treegrid/api/treegrid_afterrowdrag_event.md treegrid/api/treegrid_afterrowdrop_event.md treegrid/api/treegrid_beforerowdrag_event.md treegrid/api/treegrid_beforerowdrop_event.md treegrid/api/treegrid_canrowdrop_event.md treegrid/api/treegrid_cancelrowdrop_event.md treegrid/api/treegrid_dragrowin_event.md treegrid/api/treegrid_dragrowout_event.md treegrid/api/treegrid_dragrowstart_event.md)

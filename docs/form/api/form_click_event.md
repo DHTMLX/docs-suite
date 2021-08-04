@@ -21,4 +21,6 @@ form.events.on("Click", function(name, events) {
 
 @descr:
 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+
 @changelog: added in v7.0

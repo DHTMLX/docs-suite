@@ -25,6 +25,8 @@ form.events.on("BeforeHide", function(name, value) {
 
 @descr:
 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+
 @changelog:
 - added in v6.5
 - Before v7.0, the event took one parameter - the control id.

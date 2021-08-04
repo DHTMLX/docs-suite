@@ -40,7 +40,7 @@ Drag-n-drop can work in three modes:
 
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-of-grid-rows)
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-between-grids)
 
 [comment]: # (@relatedapi: - grid/api/grid_afterrowdrag_event.md - grid/api/grid_afterrowdrop_event.md - grid/api/grid_beforerowdrag_event.md - grid/api/grid_beforerowdrop_event.md - grid/api/grid_canrowdrop_event.md - grid/api/grid_cancelrowdrop_event.md - grid/api/grid_dragrowin_event.md - grid/api/grid_dragrowout_event.md - grid/api/grid_dragrowstart_event.md)
  

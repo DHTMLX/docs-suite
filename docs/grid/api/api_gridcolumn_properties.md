@@ -32,11 +32,14 @@ description: You can explore the Grid column properties of Grid in the documenta
             </li>
             <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
             <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
+            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
             <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
             <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
             <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
             <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
             </li>
+            <li><b>headerSort</b> - (<i>boolean</i>) enables/disables sorting by clicking the header</li>
+            <li><b>sortAs</b> - (<i>function</i>) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Header Spans</a>
             </td>
@@ -60,6 +63,7 @@ description: You can explore the Grid column properties of Grid in the documenta
             </li>
             <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
             <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
+            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
             <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
             <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
             <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
@@ -115,11 +119,11 @@ description: You can explore the Grid column properties of Grid in the documenta
 		</tr>
         <tr>
 			<td><a href="../../configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea" </td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect" </td>
 		</tr>
         <tr>
 			<td><b>options</b></td>
-			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox")</td>
+			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox"|"multiselect")</td>
 		</tr>
         <tr>
 			<td><a href="../../customization#adding-template-to-cells"><b>template</b></a></td>
@@ -139,7 +143,7 @@ description: You can explore the Grid column properties of Grid in the documenta
            </td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#drag-n-drop-of-grid-columns"><b>draggable</b></a></td>
+			<td><a href="../../configuration#drag-n-drop-inside-the-grid"><b>draggable</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is draggable</td>
 		</tr>
         <tr>

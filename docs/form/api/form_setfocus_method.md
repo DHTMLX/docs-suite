@@ -18,7 +18,7 @@ form.setFocus("checkbox");
 
 @descr:
 
-{{note The method is applicable to DatePicker, Checkbox, ColorPicker, Combo, Input, RadioGroup, Select, Textarea, TimePicker controls of Form.}}
+{{note The method is applicable to Button, DatePicker, Checkbox, CheckboxGroup, ColorPicker, Combo, Input, RadioGroup, Select, Slider, Textarea, TimePicker controls of Form.}}
 
 **Related sample**: [Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
 

@@ -12,7 +12,7 @@ MenuItem is a drop-down list of options, can contain its own sub-menu.
 
 ## Adding MenuItem
 
-A menuItem can be easily added to a sidebar with the help of the **add()** method of Tree Collection:
+A menuItem can be easily added to a sidebar with the help of the **add()** method of [Tree Collection](tree_collection/api/treecollection_add_method.md):
 
 ~~~js
 toolbar.data.add({

@@ -54,7 +54,6 @@ The specified date will be highlighted with a round blue marker in the calendar.
 Please note that the format of date in the Calendar is defined by the dateFormat option. So, check that you've set the format of date you want to use in the calendar both in the [](calendar/api/calendar_value_config.md) and in the [](calendar/api/calendar_dateformat_config.md) property. Otherwise, the default format ("%d/%m/%y") will be used.
 :::
 
-
 ## How to set the selected date in the calendar
 
 To select a date in a calendar, call the [](calendar/api/calendar_setvalue_method.md) method. The method has one mandatory parameter - a date that should be selected, which can be passed in several formats:
@@ -88,10 +87,8 @@ In case a date has been successfully added into the calendar, the method will re
 
 **Related sample**: [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
 
-
 {{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the
 **setValue()** method and in the **dateFormat** property. Otherwise, the default format (**"%d/%m/%y"**) will be used.}}
-
 
 ## How to get the selected date in the calendar
 

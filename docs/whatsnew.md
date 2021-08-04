@@ -8,6 +8,83 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2
+---------------
+
+<span class="rel_date">released on August 4, 2021</span>
+
+Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
+### New functionality
+
+#### Combobox
+
+- New [blur()](combobox/api/combobox_blur_method.md) method is added
+- New events are added: [blur](combobox/api/combobox_blur_event.md), [focus](combobox/api/combobox_focus_event.md), [keydown](combobox/api/combobox_keydown_event.md), [beforeOpen](combobox/api/combobox_beforeopen_event.md), [afterOpen](combobox/api/combobox_afteropen_event.md)
+
+#### Form
+
+- New [Container control](form/container.md) to attach HTML code or the DHTMLX widgets is added (Pro version)
+- New [blur()](form/api/form_blur_method.md) method is added
+- New events are added: [blur](form/api/form_blur_event.md), [focus](form/api/form_focus_event.md), [keydown](form/api/form_keydown_event.md)
+
+#### Form controls
+
+- New "blur()" method of Form controls: [Button](form/api/button/button_blur_method.md), [DatePicker](form/api/calendar/calendar_blur_method.md), [Checkbox](form/api/checkbox/checkbox_blur_method.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_method.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_method.md), [Combo](form/api/combo/combo_blur_method.md), [Input](form/api/input/input_blur_method.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_method.md), [Select](form/api/select/select_blur_method.md), [Slider](form/api/slider/slider_blur_method.md), [Textarea](form/api/textarea/textarea_blur_method.md), [TimePicker](form/api/timepicker/timepicker_blur_method.md)
+- New "focus()" method of Form controls: [Button](form/api/button/button_focus_method.md), [Slider](form/api/slider/slider_focus_method.md)
+- New "blur" event of Form controls: [Button](form/api/button/button_blur_event.md), [DatePicker](form/api/calendar/calendar_blur_event.md), [Checkbox](form/api/checkbox/checkbox_blur_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_blur_event.md), [ColorPicker](form/api/colorpicker/colorpicker_blur_event.md), [Combo](form/api/combo/combo_blur_event.md), [Input](form/api/input/input_blur_event.md), [RadioGroup](form/api/radiogroup/radiogroup_blur_event.md), [Select](form/api/select/select_blur_event.md), [Slider](form/api/slider/slider_blur_event.md), [Textarea](form/api/textarea/textarea_blur_event.md), [TimePicker](form/api/timepicker/timepicker_blur_event.md)
+- New "focus" event of Form controls: [Button](form/api/button/button_focus_event.md), [DatePicker](form/api/calendar/calendar_focus_event.md), [Checkbox](form/api/checkbox/checkbox_focus_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_focus_event.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_event.md), [Combo](form/api/combo/combo_focus_event.md), [Input](form/api/input/input_focus_event.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_event.md), [Select](form/api/select/select_focus_event.md), [Slider](form/api/slider/slider_focus_event.md), [Textarea](form/api/textarea/textarea_focus_event.md), [TimePicker](form/api/timepicker/timepicker_focus_event.md)
+- New "keydown" event of Form controls: [Button](form/api/button/button_keydown_event.md), [DatePicker](form/api/calendar/calendar_keydown_event.md), [Checkbox](form/api/checkbox/checkbox_keydown_event.md), [CheckboxGroup](form/api/checkbox_group/checkboxgroup_keydown_event.md), [ColorPicker](form/api/colorpicker/colorpicker_keydown_event.md), [Combo](form/api/combo/combo_keydown_event.md), [Input](form/api/input/input_keydown_event.md), [RadioGroup](form/api/radiogroup/radiogroup_keydown_event.md), [Select](suite/form/api/select/select_keydown_event.md), [Slider](form/api/slider/slider_keydown_event.md), [Textarea](form/api/textarea/textarea_keydown_event.md), [TimePicker](form/api/timepicker/timepicker_keydown_event.md)
+
+#### Grid
+
+- New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
+- The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-content) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#setting-type-of-column-editor) of the combo editor
+- The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
+- The ability to enable/disable sorting by clicking the header via the [headerSort](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
+
+#### Slider
+
+- New methods are added: [blur()](slider/api/slider_blur_method.md) , [focus()](slider/api/slider_focus_method.md)
+- New events are added: [blur](slider/api/slider_blur_event.md), [focus](slider/api/slider_focus_event.md), [keydown](slider/api/slider_keydown_event.md)
+
+#### Toolbar
+
+- New [Datepicker control](toolbar/datepicker.md) is added
+- The [inputChange](toolbar/api/toolbar_inputchange_event.md) event is added
+
+#### Tree
+
+- The ability to [specify a template](tree/api/tree_template_config.md) for Tree items
+- The ability to [add event handlers](tree/api/tree_eventhandlers_config.md) to the HTML elements of a custom template
+- The ability to [set the height](tree/api/tree_itemheight_config.md) of an item
+
+#### Treegrid
+
+- New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
+- The ability to [choose several options in comboFilter at once](treegrid/configuration.md/#headerfooter-content) via setting [multiselection:true](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](treegrid/configuration.md/#setting-type-of-column-editor) of the combobox editor
+- The ability to specify the type to sort data as via the [sortAs](treegrid/api/api_treegridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
+- The ability to enable/disable sorting by clicking the header via the [headerSort](treegrid/api/api_treegridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
+
+#### Helpers
+
+- [Custom scroll](../helpers/custom_scroll/) to replace the standard browser scrollbar is added (Pro version)
+
+### Updates
+
+- DataCollection. The [save()](data_collection/api/datacollection_save_method.md/) method of DataCollection is updated. Now the method sends either `POST`, or `PUT`, or `DELETE` requests to the [backend](../integration/suite_and_backend/).
+- Grid, TreeGrid. The "row" and "both" values of the [dragItem](grid/api/grid_dragitem_config.md/) configuration property are added.
+- Tree. Now it is possible to edit multiline content of a Tree item after setting [editable:true](tree/api/tree_editable_config.md/) configuration option of Tree
+
+### Fixes
+
+- Grid. Fix the issue with the update of options in the combo filter after adding a new item into the data collection
+- Grid. Fix the issue with loading data into Grid using `lazyDataProxy`
+- Grid. Fix the issue with entering text in the combobox editor of a Grid cell
+- Menu. Fix the issue which caused the context menu not to close after clicking outside the menu if `navigationType: "click"` property is specified
+
+
 Version 7.1.10
 -------------------
 
@@ -250,8 +327,8 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 
 #### TreeGrid
 
-- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid 
-- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added 
+- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid
+- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added
 - The ability to set [the format the content of the cells to be displayed in](treegrid/configuration.md#formatting-columns)
 - Now [columns with dates support the Date() object](treegrid/api/treegrid_data_config.md)
 - The ability to [customize the tooltip of a column](treegrid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
@@ -657,14 +734,14 @@ Version 6.5
 
 #### Grid 
 
-- The ability to [drag and drop columns in Grid](grid/configuration.md#drag-n-drop-of-grid-columns) using the [](grid/api/grid_dragitem_config.md) configuration property of Grid, or via the [draggable](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column (Pro)
+- The ability to [drag and drop columns in Grid](grid/configuration.md#drag-n-drop-inside-the-grid) using the [](grid/api/grid_dragitem_config.md) configuration property of Grid, or via the [draggable](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column (Pro)
 - New [](grid/api/grid_beforecolumndrag_event.md) and [](grid/api/grid_beforecolumndrop_event.md) events are added (Pro)
 - The ability [to align data in a column as well as in the header of a column](grid/configuration.md#alignment)
 - The ability [to show/hide tooltips](grid/configuration.md#tooltip) while hovering over the content of a column via the [](grid/api/grid_tooltip_config.md) configuration property
 
 #### TreeGrid 
 
-- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-of-treegrid-columns) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
+- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-inside-the-grid) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
 - New [](treegrid/api/treegrid_beforecolumndrag_event.md) and [](treegrid/api/treegrid_beforecolumndrop_event.md) events are added 
 - The ability to [group data in TreeGrid](treegrid/usage.md#grouping-data) using the [](treegrid/api/treegrid_groupby_method.md) method
 - The possibility to set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option of TreeGrid
@@ -1072,7 +1149,7 @@ Version 6.2
 - New [checkbox and combobox editors](grid/configuration.md#setting-type-of-column-editor) for the cells of a Grid column
 - The ability to set [min and max width](grid/api/api_gridcolumn_properties.md) for Grid columns
 - The possibility to [change the width of columns](grid/configuration.md#resizing) via the [resizable](grid/api/grid_resizable_config.md) property
-- [Drag-n-drop](grid/configuration.md#drag-n-drop-of-grid-rows) of rows between grids via the [dragMode](grid/api/grid_dragmode_config.md) property
+- [Drag-n-drop](grid/configuration.md#drag-n-drop-between-grids) of rows between grids via the [dragMode](grid/api/grid_dragmode_config.md) property
 - [Export to CSV format](grid/usage.md#exporting-data-to-csv)
 
 #### Layout

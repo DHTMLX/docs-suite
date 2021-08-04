@@ -6,7 +6,7 @@ description: You can have an overview of DataProxy in the documentation of the D
 
 # DataProxy overview
 
-DataProxy is a helper that enables communication with external datasources. Using the helper allows creating a custom URL and assigning it to a variable that considerably simplifies work with server-side backend.
+DataProxy is a helper that enables communication with external data sources. Using the helper allows creating a custom URL and assigning it to a variable that considerably simplifies work with server-side backend.
 
 ```js
 var proxy = new dhx.DataProxy("someUrl", {

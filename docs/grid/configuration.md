@@ -6,7 +6,7 @@ description: You can explore the configuration of Grid in the documentation of t
 
 # Configuration
 
-dhtmlxGrid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
+DHTMLX Grid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
 
 ## Columns
 
@@ -162,32 +162,36 @@ var grid = new dhx.Grid("grid", {
 You can specify data for your grid before initialization via the [data](grid/api/grid_data_config.md) configuration property. There are also API methods for loading data into grid on the fly. Check the details in the [](grid/data_loading.md) article.
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     data: dataset /*!*/
 });
 ~~~
 
-## Drag-n-drop of Grid columns
+## Drag-n-drop inside the grid
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package. <br> In case you use GPL version, you will be able to reorder rows only.}}
 
-Starting from v6.5, you can add the ability to reorder columns of Grid by drag and drop via using the [](grid/api/grid_dragitem_config.md) configuration property and setting its value to *"column"*.
+It is possible to reorder rows and columns of Grid by drag and drop. To enable the functionality, define the [dragItem: "both"](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
-~~~js
-var grid = new dhx.Grid("grid_container", {
+~~~js {3}
+const grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
-    dragItem:"column",    /*!*/
+    dragItem: "both",
     data: dataset
 });
 ~~~
 
-You can disable this functionality for a separate column via the **draggable** configuration option of the column:
+**Related sample**: [Grid. Drag-n-drop (Pro)](https://snippet.dhtmlx.com/zwc91d50)
 
-~~~js
-var grid = new dhx.Grid("grid_container", {
+To activate the functionality for columns or rows separately, set the value of **dragItem** to *"column"* or *"row"* respectively.
+
+If needed, you can disable the drag-n-drop functionality for a separate column via the **draggable** configuration option of the column:
+
+~~~js {8}
+const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], draggable: false }, /*!*/
+        { width: 200, id: "country", header: [{ text: "Country" }]}, /*!*/
         { width: 150, id: "land", header: [{ text: "Land" }] },
         { width: 150, id: "density", header: [{ text: "Density" }], draggable: false } /*!*/
     ],
@@ -198,9 +202,9 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
 
-{{note To make the process of reordering columns by drag and drop more flexible, you can apply the [related](grid/api/api_overview.md#column-drag-and-drop) drag-n-drop events.}}
+{{note To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).}}
 
-## Drag-n-drop of Grid rows
+## Drag-n-drop between grids
 
 dhtmlxGrid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
 
@@ -208,20 +212,18 @@ dhtmlxGrid supports drag-n-drop of rows between grids in several modes. To begin
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
 - "both" - a grid both takes rows from other grids and allows dragging its rows out as well
 
-~~~js
-var grid = new dhx.Grid("grid_container", { 
+~~~js {7}
+const grid = new dhx.Grid("grid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }] },
         { id: "population", header: [{ text: "Population" }] }
     ],
     data: dataset,
-    dragMode: "source" /*!*/
+    dragMode: "source"
 });
 ~~~
 
 **Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
-
-{{note When drag-n-drop of rows is enabled in Grid, you can apply the [related](grid/api/api_overview.md#row-drag-and-drop) drag-n-drop events.}}
 
 ## Editing Grid and separate columns
 
@@ -288,7 +290,7 @@ var grid = new dhx.Grid("grid", {
 
 ### Setting type of column editor
 
-You can specify the way of editing the cells of a Grid column depending on its content as simple input, select control, date picker, checkbox or combobox. The type of the used editor can be defined either by the **editorType** property of a [column](grid/api/grid_columns_config.md) or via the **type** one.
+You can specify the way of editing the cells of a Grid column depending on its content as simple input, date picker, select control,  checkbox, combobox, textarea or multiselect. The type of the used editor can be defined either by the **editorType** property of a [column](grid/api/grid_columns_config.md) or via the **type** one.
 There are several types of column editors:
 
 - **input** - an editor for cells with a simple text (the default one, unless a column has **type:"date"**)
@@ -362,12 +364,29 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
 
-~~~js
+```js
 {
     width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
     editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]  /*!*/
 }
-~~~
+```
+
+Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
+
+- The **id** attribute is displayed in the grid cell
+- The **value** attribute is displayed in the editor
+
+```js
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox", 
+	options: [
+		{ id: "1 time", value: "1" }, 
+		{ id: "1-2 times", value: "1-2 " }, 
+		{ id: "more than 5 times", value: "5+" }
+		]  /*!*/
+}
+```
 
 **Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
 
@@ -394,6 +413,34 @@ var grid = new dhx.Grid("grid", {
 ~~~
 
 **Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+
+- **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options
+
+```js
+columns: [
+    {
+        id: "renewals", type: "string",
+        header: [{ text: "Number of renewals" }],
+        editorType: "multiselect",
+        options: ["1 time", "1-2 times", "more than 5 times"],
+    },
+```
+
+**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+
+If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
+
+```js
+const data = 
+	{
+    	renewals: "1 time", //one option is shown in a cell
+		...
+	},
+	{
+    	renewals: "more than 5 times, 1 time" //two options are shown in a cell
+		...
+	}
+```
 
 ## Formatting columns
 
@@ -491,7 +538,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 **Related sample**: [Grid. Header Filter](https://snippet.dhtmlx.com/4qz8ng3c)
 
-- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control.
+- **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control
 
 ~~~js
 {
@@ -529,6 +576,10 @@ var grid = new dhx.Grid("grid_container", {
         <tr>
 			<td><b>filter</b></td>
 			<td>(<i>function</i>) sets a custom function for filtering Combo Box options</td>
+		</tr>
+		<tr>
+			<td><b>multiselection</b></td>
+			<td>(<i>boolean</i>) enables selection of multiple options</td>
 		</tr>
         <tr>
 			<td><b>readonly</b></td>

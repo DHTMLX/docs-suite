@@ -22,6 +22,8 @@ form.events.on("AfterValidate", function(name, value, isValid) {
 
 @descr:
 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+
 @changelog: added in v7.0
 
 [comment]: # (@relatedapi: form/api/form_validate_method.md)

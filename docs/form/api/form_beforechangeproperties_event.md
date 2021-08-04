@@ -25,6 +25,8 @@ form.events.on("BeforeChangeProperties", function(name, properties) {
 
 @descr:
 
+**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+
 @changelog: added in v7.0
 
 [comment]: # (@relatedapi: form/api/form_setproperties_method.md)

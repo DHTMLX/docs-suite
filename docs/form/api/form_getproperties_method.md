@@ -620,6 +620,14 @@ The returned object of the **Combo** control can contain the following configura
     </tbody>
 </table>
 
+## Container
+
+The returned object of the Container control can contain the following properties:
+
+- `width` - *string, number, "content"* - the width of a control 
+- `height` - *string, number, "content"* - the height of a control 
+- `padding` - *string, number* - sets padding between a cell and a border of a control
+
 ## Input
 
 The returned object of the **Input** control can contain the following configuration attributes:
