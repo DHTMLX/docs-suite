@@ -384,7 +384,7 @@ Or provide the **options** property with an array of objects with a set of *key:
 		{ id: "1 time", value: "1" }, 
 		{ id: "1-2 times", value: "1-2 " }, 
 		{ id: "more than 5 times", value: "5+" }
-		]  /*!*/
+	]
 }
 ```
 
@@ -428,6 +428,7 @@ var grid = new dhx.Grid("grid", {
     	// more columns
 	],
 	data: data,
+	editable: true
 });
 ```
 
