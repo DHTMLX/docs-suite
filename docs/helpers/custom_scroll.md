@@ -10,7 +10,7 @@ description: You can have an overview of Custom Scroll in the documentation of t
 
 {{pronote The custom scroll is available only in PRO version of the DHTMLX Suite package.}}
 
-The feature can be activated on the page for all widgets at once via the **dhx.scrollViewConfig** global variable before initialization of the widgets:
+The feature can be activated on the page for all widgets at once via the **enable** property of the **dhx.scrollViewConfig** global variable before initialization of the widgets:
 
 ```js
 dhx.scrollViewConfig.enable = true; // false by default
