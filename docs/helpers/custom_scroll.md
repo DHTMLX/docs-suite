@@ -77,6 +77,8 @@ list.scrollView.enable();
 list.scrollView.disable();
 ~~~
 
+{{note Try out the functionality [in our Snippet Tool](https://snippet.dhtmlx.com/gjsbvzdk).}}
+
 To force recalculation and redrawing of the custom scroll, apply the **update()** method: 
 
 ~~~js
