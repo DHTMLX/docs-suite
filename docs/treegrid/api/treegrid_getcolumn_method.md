@@ -75,11 +75,11 @@ The returned object contains the following set of properties:
 		</tr>
         <tr>
 			<td><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"</td>
 		</tr>
         <tr>
 			<td><b>options</b></td>
-			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox")</td>
+			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox"|"multiselect")</td>
 		</tr>
         <tr>
 			<td><b>template</b></td>
