@@ -8,6 +8,25 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2.1
+---------------
+
+<span class="rel_date">released on August 26, 2021</span>
+
+### Fixes
+
+- Calendar. Fix the issue which caused sending of the form after clicking the buttons of the calendar if the calendar is placed into the HTML form
+- Combobox. Fix the issue with the `Change` event which caused the event to fire twice after selecting a new option
+- Form. Textarea control. Fix the issue which caused the text cursor not to move to a new line after pressing "Enter"
+- Grid. Fix the incorrect work of selection after filtering the grid
+- Grid. Fix the issue which caused the parent container for Grid, which is attached to the layout, to reset when calling the `setColumns()` method after initialization of Grid
+- Grid. Fix the issue with filtering the content of the grid when multiple options are chosen in the combo filter
+- Grid. Fix the issue with resizing of the columns if the in-header filters are specified for the columns
+- Grid. Fix the script error thrown after scrolling the grid horizontally several times
+- Layout. Fix the issue with the `collapse()` method of a layout cell
+- List. Fix the issue which caused the list not to be scrolled to the item selected via the `setFocus()` method
+- TreeGrid. Now it is possible to filter the content of the treegrid by multiple header filters 
+
 Version 7.2
 ---------------
 
