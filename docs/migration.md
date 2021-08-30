@@ -370,7 +370,7 @@ The `toggle` event is deprecated. Use new `beforeCollapse`, `afterCollapse`, `be
 | editing           | editable         |
 
 
-The `isFolder` property is deprecated. Instead of it, you can set the `icon` property in the configuration object of a tree item to render a tree item as a custom folder.
+The `isFolder` property is deprecated. Instead of it, you can set the `icon` property in the configuration object of a tree item to add custom icons for tree items.
 
 ~~~js
 var tree = new dhx.Tree("tree", {
