@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 7.2.1
 ---------------
 
-<span class="rel_date">released on August 26, 2021</span>
+Released on August 26, 2021
 
 ### Fixes
 
@@ -30,7 +30,7 @@ Version 7.2.1
 Version 7.2
 ---------------
 
-<span class="rel_date">released on August 4, 2021</span>
+Released on August 4, 2021
 
 Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
 ### New functionality
@@ -107,7 +107,7 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 Version 7.1.10
 -------------------
 
-<span class="rel_date">released on July 20, 2021</span>
+Released on July 20, 2021
 
 ### Fixes
 
@@ -138,7 +138,7 @@ Version 7.1.10
 Version 7.1.9
 ------------------
 
-<span class="rel_date">released on June 24, 2021</span>
+Released on June 24, 2021
 
 ### Fixes
 
@@ -169,7 +169,7 @@ Version 7.1.9
 Version 7.1.8
 ------------------
 
-<span class="rel_date">released on June 10, 2021</span>
+Released on June 10, 2021
 
 ### Fixes
 
@@ -190,7 +190,7 @@ Version 7.1.8
 Version 7.1.7
 ------------------
 
-<span class="rel_date">released on May 17, 2021</span>
+Released on May 17, 2021
 
 ### Fixes
 
@@ -205,7 +205,7 @@ Version 7.1.7
 Version 7.1.6
 ------------------
 
-<span class="rel_date">released on May 5, 2021</span>
+Released on May 5, 2021
 
 ### Fixes
 
@@ -220,7 +220,7 @@ Version 7.1.6
 Version 7.1.5
 ------------------
 
-<span class="rel_date">released on April 22, 2021</span>
+Released on April 22, 2021
 
 ### Fixes
 
@@ -231,7 +231,7 @@ Version 7.1.5
 Version 7.1.4
 ------------------
 
-<span class="rel_date">released on April 16, 2021</span>
+Released on April 16, 2021
 
 ### Fixes
 
@@ -248,7 +248,7 @@ Version 7.1.4
 Version 7.1.3
 ------------------
 
-<span class="rel_date">released on April 12, 2021</span>
+Released on April 12, 2021
 
 ### Fixes
 
@@ -279,7 +279,7 @@ Version 7.1.3
 Version 7.1.2
 ---------------
 
-<span class="rel_date">released on March 9, 2021</span>
+Released on March 9, 2021
 
 ### Fixes
 
@@ -308,7 +308,7 @@ Version 7.1.2
 Version 7.1.1
 ---------------
 
-<span class="rel_date">released on February 23, 2021</span>
+Released on February 23, 2021
 
 ### Fixes
 
@@ -323,7 +323,7 @@ Version 7.1.1
 Version 7.1
 ---------------
 
-<span class="rel_date">released on February 18, 2021</span>
+Released on February 18, 2021
 
 Check the [Migration article](migration.md#70---71) to keep in step with the latest version.
 
@@ -391,7 +391,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 Version 7.0.3
 ---------------
 
-<span class="rel_date">released on January 19, 2021</span>
+Released on January 19, 2021
 
 ### Fixes
 
@@ -408,7 +408,7 @@ Version 7.0.3
 Version 7.0.2
 ---------------
 
-<span class="rel_date">released on December 28, 2020</span>
+Released on December 28, 2020
 
 ### Fixes
 
@@ -418,7 +418,7 @@ Version 7.0.2
 Version 7.0.1
 ---------------
 
-<span class="rel_date">released on December 21, 2020</span>
+Released on December 21, 2020
 
 ### Fixes
 
@@ -439,7 +439,7 @@ Version 7.0.1
 Version 7.0
 ---------------
 
-<span class="rel_date">released on December 7, 2020</span>
+Released on December 7, 2020
 
 ### Breaking changes
 
@@ -639,7 +639,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 Version 6.5.8
 ------------------
 
-<span class="rel_date">released on October 15, 2020</span>
+Released on October 15, 2020
 
 ### Fixes
 
@@ -649,7 +649,7 @@ Version 6.5.8
 Version 6.5.7
 ---------------
 
-<span class="rel_date">released on October 15, 2020</span>
+Released on October 15, 2020
 
 ### Fixes
 
@@ -661,7 +661,7 @@ Version 6.5.7
 Version 6.5.6
 -------------
 
-<span class="rel_date">released on October 5, 2020</span>
+Released on October 5, 2020
 
 ### Fixes
 
@@ -676,7 +676,7 @@ Version 6.5.6
 Version 6.5.5
 -----------------
 
-<span class="rel_date">released on September 17, 2020</span>
+Released on September 17, 2020
 
 ### Fixes
 
@@ -686,7 +686,7 @@ Version 6.5.5
 Version 6.5.4
 -------------
 
-<span class="rel_date">released on September 15, 2020</span>
+Released on September 15, 2020
 
 ### Fixes
 
@@ -703,7 +703,7 @@ Version 6.5.4
 Version 6.5.3
 -------------
 
-<span class="rel_date">released on September 2, 2020</span>
+Released on September 2, 2020
 
 ### Fixes
 
@@ -720,7 +720,7 @@ Version 6.5.3
 Version 6.5.2
 -------------
 
-<span class="rel_date">released on July 14, 2020</span>
+Released on July 14, 2020
 
 ### Fixes
 
@@ -735,7 +735,7 @@ Version 6.5.2
 Version 6.5.1
 ----------------
 
-<span class="rel_date">released on June 16, 2020</span>
+Released on June 16, 2020
 
 ### Fixes
 
@@ -744,7 +744,7 @@ Version 6.5.1
 Version 6.5
 ----------------
 
-<span class="rel_date">released on June 16, 2020</span>
+Released on June 16, 2020
 
 ### New functionality
 
@@ -801,7 +801,7 @@ Version 6.5
 Version 6.4.4
 ----------------
 
-<span class="rel_date">released on May 19, 2020</span>
+Released on May 19, 2020
 
 #### Fixes
 
@@ -822,7 +822,7 @@ Version 6.4.4
 Version 6.4.3
 ----------------
 
-<span class="rel_date">released on April 29, 2020</span>
+Released on April 29, 2020
 
 #### Fixes
 
@@ -847,7 +847,7 @@ Version 6.4.3
 Version 6.4.2
 ----------------
 
-<span class="rel_date">released on March 3, 2020</span>
+Released on March 3, 2020
 
 #### Fixes
 
@@ -862,7 +862,7 @@ Version 6.4.2
 Version 6.4.1
 ----------------
 
-<span class="rel_date">released on January 30, 2020</span>
+Released on January 30, 2020
 
 
 #### Fixes
@@ -877,7 +877,7 @@ Version 6.4.1
 Version 6.4
 ----------------
 
-<span class="rel_date">released on January 28, 2020</span>
+Released on January 28, 2020
 
 ### New functionality
 
@@ -1035,7 +1035,7 @@ Version 6.4
 Version 6.3.1 
 ---------------
 
-<span class="rel_date">released on December 18, 2019</span>
+Released on December 18, 2019
 
 ### Fixes
 
@@ -1048,7 +1048,7 @@ Version 6.3.1
 Version 6.3 
 ---------------
 
-<span class="rel_date">released on December 12, 2019</span>
+Released on December 12, 2019
 
 ### New functionality
 
@@ -1111,7 +1111,7 @@ Version 6.3
 Version 6.2.3 
 ---------------
 
-<span class="rel_date">released on November 19, 2019</span>
+Released on November 19, 2019
 
 ### Fixes
 
@@ -1124,7 +1124,7 @@ Version 6.2.3
 Version 6.2.2 
 ---------------
 
-<span class="rel_date">released on November 5, 2019</span>
+Released on November 5, 2019
 
 ### Fixes
 
@@ -1134,7 +1134,7 @@ Version 6.2.2
 Version 6.2.1 
 ---------------
 
-<span class="rel_date">released on October 25, 2019</span>
+Released on October 25, 2019
 
 ### Fixes
 
@@ -1145,7 +1145,7 @@ Version 6.2.1
 Version 6.2
 ---------------
 
-<span class="rel_date">released on October 23, 2019</span>
+Released on October 23, 2019
 
 ### New functionality
 
@@ -1204,7 +1204,7 @@ Version 6.2
 Version 6.1.7 
 ---------------
 
-<span class="rel_date">released on October 10, 2019</span>
+Released on October 10, 2019
 
 ### Fixes
 
@@ -1216,7 +1216,7 @@ Version 6.1.7
 Version 6.1.6 
 ---------------
 
-<span class="rel_date">released on September 26, 2019</span>
+Released on September 26, 2019
 
 ### Fixes
 
@@ -1228,7 +1228,7 @@ Version 6.1.6
 Version 6.1.5 
 -----------------
 
-<span class="rel_date">released on September 12, 2019</span>
+Released on September 12, 2019
 
 ### Fixes
 
@@ -1240,7 +1240,7 @@ Version 6.1.5
 Version 6.1.4 
 ----------------------------
 
-<span class="rel_date">released on September 5, 2019</span>
+Released on September 5, 2019
 
 ### Fixes
 
@@ -1255,7 +1255,7 @@ Version 6.1.4
 Version 6.1.3
 -------------------
 
-<span class="rel_date">released on August 29, 2019</span>
+Released on August 29, 2019
 
 ### Fixes
 
@@ -1266,7 +1266,7 @@ Version 6.1.3
 Version 6.1.2 
 -------------------
 
-<span class="rel_date">released on August 22, 2019</span>
+Released on August 22, 2019
 
 ### Fixes
 
@@ -1277,7 +1277,7 @@ Version 6.1.2
 Version 6.1.1 
 -------------------
 
-<span class="rel_date">released on August 16, 2019</span>
+Released on August 16, 2019
 
 ### Fixes
 
@@ -1287,7 +1287,7 @@ Version 6.1.1
 Version 6.1
 ---------------
 
-<span class="rel_date">released on August 15, 2019</span>
+Released on August 15, 2019
 
 ### New functionality
 
@@ -1368,7 +1368,7 @@ Version 6.1
 Version 6.0.4
 ------------------
 
-<span class="rel_date">released on August 6, 2019</span>
+Released on August 6, 2019
 
 ### Fixes
 
@@ -1385,7 +1385,7 @@ Version 6.0.4
 Version 6.0.3
 ------------------
 
-<span class="rel_date">released on July 19, 2019</span>
+Released on July 19, 2019
 
 ### Fixes
 
@@ -1407,7 +1407,7 @@ Version 6.0.3
 Version 6.0.2 
 -----------------
 
-<span class="rel_date">released on July 11, 2019</span>
+Released on July 11, 2019
 
 ### Fixes
 
@@ -1423,7 +1423,7 @@ Version 6.0.2
 Version 6.0.1 
 --------------
 
-<span class="rel_date">released on July 5, 2019</span>
+Released on July 5, 2019
 
 ### Fixes
 
