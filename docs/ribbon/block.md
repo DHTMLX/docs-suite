@@ -10,8 +10,6 @@ The Block control is used for grouping related controls.
 
 ![DHX Ribbon Block groups controls](../assets/ribbon/ribbon_block.png)
 
-**Related sample**: [Ribbon. Blocks](https://snippet.dhtmlx.com/yr8oepq8)
-
 ## Creating a Block
 
 This is the basic syntax of a block with two buttons in a row:
