@@ -6,7 +6,7 @@ const WidgetIcons = ({ children }) => {
     return (
         <div className={cssstyles.suite_components_small}>
             <div className={cssstyles.suite_component_small}>
-                <a href="calendar/index" title="" className={cssstyles.suite_component__item}>
+                <a href="calendar/index/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>

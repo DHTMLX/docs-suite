@@ -47,6 +47,7 @@ description: You can explore the features of Grid in the documentation of the DH
     - [Editing data using the right panel](https://snippet.dhtmlx.com/1z3jqrlj)
     - [Editing data using a modal window](https://snippet.dhtmlx.com/5tbcflek)
     - [Edit first cell](https://snippet.dhtmlx.com/pqbax5vs)
+    - [Grid and Chart. Edit Grid to see the changes in Chart](https://snippet.dhtmlx.com/gdeqtev4)
   - **Sizing, content alignment and distribution**
     - [Adjust columns by header, data, all](https://snippet.dhtmlx.com/zfrpe22d)
     - [Content align](https://snippet.dhtmlx.com/eyreddku)
