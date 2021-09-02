@@ -13,7 +13,7 @@ This component is a great date picker solution for your website or application. 
 
 ## API reference
 
-- [Calendar API](api/api_overview)
+- [](api/api_overview.md)
 
 ## Related resources
 
