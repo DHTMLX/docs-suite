@@ -14,7 +14,7 @@ This demo shows how to create a geo tracking application for delivery management
 
 ## How to download
 
-Open the [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking) demo and click the Download Demo button in the bottom right corner of the page.
+Open the [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/) demo and click the Download Demo button in the bottom right corner of the page.
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
