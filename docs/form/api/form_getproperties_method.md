@@ -599,7 +599,7 @@ The returned object of the **Combo** control can contain the following configura
 		</tr>
 		<tr>
 			<td><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>

@@ -15,6 +15,6 @@ First, you should create a popup and then attach a calendar into it. Follow the 
 
 4\. Use the [](popup/api/popup_show_method.md) method of Popup inside a click handler to define that a popup with calendar will open on click in the "date-input" input.
 
-5\. Define the logic of closing the popup with calendar using the [](popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar.
+5\. Define the logic of closing the popup with calendar using the [](../popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar.
 
 <iframe src="https://snippet.dhtmlx.com/mj7jr6ro?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="550"></iframe>
