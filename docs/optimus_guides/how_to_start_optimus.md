@@ -972,8 +972,8 @@ For details about API methods of DHTMLX Optimus, see [the documentation](optimus
 Check more demos build with Optimus:
 
 - [File Explorer](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)
-- [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxFileExplorerDemo/)
-- [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/)
+- [UI Dashboard](https://dhtmlx.com/docs/products/demoApps/dhtmlxDashboard/)
+- [Hotel Management Template](https://dhtmlx.com/docs/products/demoApps/dhtmlxHotelManagement/)
 - [Geo Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxGeoTracking/)
 - [Hospital Management](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/)
 - [Sales KPI Tracking](https://dhtmlx.com/docs/products/demoApps/dhtmlxKPI/)
