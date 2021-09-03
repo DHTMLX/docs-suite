@@ -31,7 +31,6 @@ var form = new dhx.Form("form_container", {
             type: "checkbox",
             label: "I agree",
             name: "agree",
-            labelInline: true,
             id: "agree",
             checked: true 
         }
@@ -50,7 +49,6 @@ var form = new dhx.Form("form_container", {
             type: "checkbox",
             label: "I agree",
             name: "agree",
-            labelInline: true,
             id: "agree",
             checked: false, /*!*/
             value: "checkbox_value" /*!*/
