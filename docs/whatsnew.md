@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2.2
+------------------
+Released on September 13, 2021
+
+### Fixes
+
+- Grid. Fix the issue with the render of the grid, which is placed into the tabbar, after applying the `setColumns()` method of Grid and switching between the tabs of the tabbar
+- Layout. Fix the script error thrown when trying to resize a cell when the next cell is hidden
+- List. Fix the issue which caused new items not to be added into an empty data collection after applying the `filter()` method to the data collection
+- TreeGrid. Fix the issue with selection of the child rows and its cells
+
 Version 7.2.1
 ---------------
 
