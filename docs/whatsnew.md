@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2.3
+------------------
+Released on September 27, 2021
+
+### Fixes
+
+- Chart. Fix the issue which caused the labels to overlap each other in Donut, Pie, Pie3D charts when `subType:"basic"` option is set
+- Chart. Fix the issue which caused the long content of the legend to go beyond the chart container
+- Combobox. Fix the incorrect work of the combobox which caused the selected values to be cleared after deleting options in the input when the `multiselection` property is enabled
+- Grid, TreeGrid. Fix the issue with editing empty cells
+- Grid. Fix the incorrect calculation of the line height for the multiline content of cells if the `htmlEnable` property of the column is enabled
+- Grid. Fix the incorrect work of key navigation after editing cells with the "combobox" and "multiselect" editor types
+- Grid. Fix the issue which caused key navigation to stop working after initializing the second grid. Now it is possible to set focus to the grid using `grid.selection.setCell()`
+- Grid. Now the content of the grid is filtered strictly by the values selected in the combo filter
+- Toolbar. Fix the issue with render of data when recreating the toolbar after removing it via the `destructor()` method
+
 Version 7.2.2
 ------------------
 Released on September 13, 2021
