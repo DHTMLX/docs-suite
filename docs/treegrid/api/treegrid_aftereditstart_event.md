@@ -13,7 +13,7 @@ description: You can explore the afterEditStart event of TreeGrid in the documen
 @params:
 - `row: object` - an object with a row configuration
 - `col: object` - an object with a column configuration
-- `editorType: string` - the type of a cell editor: "input", "select", "datePicker", "checkbox", "combobox"
+- `editorType: string` - the type of a cell editor: "input", "select", "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @example:
 grid.events.on("AfterEditStart", function(row,col, editorType){

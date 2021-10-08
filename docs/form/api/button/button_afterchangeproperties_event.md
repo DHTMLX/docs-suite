@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterChangeProperties
-title: JavaScript Form - afterHide Button Event 
-description: You can explore the afterHide Button event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+title: JavaScript Form - afterChangeProperties Button Event 
+description: You can explore the afterChangeProperties event of the Button control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # afterChangeProperties

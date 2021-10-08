@@ -8,10 +8,56 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2.3
+------------------
+Released on September 27, 2021
+
+### Fixes
+
+- Chart. Fix the issue which caused the labels to overlap each other in Donut, Pie, Pie3D charts when `subType:"basic"` option is set
+- Chart. Fix the issue which caused the long content of the legend to go beyond the chart container
+- Combobox. Fix the incorrect work of the combobox which caused the selected values to be cleared after deleting options in the input when the `multiselection` property is enabled
+- Grid, TreeGrid. Fix the issue with editing empty cells
+- Grid. Fix the incorrect calculation of the line height for the multiline content of cells if the `htmlEnable` property of the column is enabled
+- Grid. Fix the incorrect work of key navigation after editing cells with the "combobox" and "multiselect" editor types
+- Grid. Fix the issue which caused key navigation to stop working after initializing the second grid. Now it is possible to set focus to the grid using `grid.selection.setCell()`
+- Grid. Now the content of the grid is filtered strictly by the values selected in the combo filter
+- Toolbar. Fix the issue with render of data when recreating the toolbar after removing it via the `destructor()` method
+
+Version 7.2.2
+------------------
+Released on September 13, 2021
+
+### Fixes
+
+- Grid. Fix the issue with the render of the grid, which is placed into the tabbar, after applying the `setColumns()` method of Grid and switching between the tabs of the tabbar
+- Layout. Fix the script error thrown when trying to resize a cell when the next cell is hidden
+- List. Fix the issue which caused new items not to be added into an empty data collection after applying the `filter()` method to the data collection
+- TreeGrid. Fix the issue with selection of the child rows and its cells
+
+Version 7.2.1
+---------------
+
+Released on August 26, 2021
+
+### Fixes
+
+- Calendar. Fix the issue which caused sending of the form after clicking the buttons of the calendar if the calendar is placed into the HTML form
+- Combobox. Fix the issue with the `Change` event which caused the event to fire twice after selecting a new option
+- Form. Textarea control. Fix the issue which caused the text cursor not to move to a new line after pressing "Enter"
+- Grid. Fix the incorrect work of selection after filtering the grid
+- Grid. Fix the issue which caused the parent container for Grid, which is attached to the layout, to reset when calling the `setColumns()` method after initialization of Grid
+- Grid. Fix the issue with filtering the content of the grid when multiple options are chosen in the combo filter
+- Grid. Fix the issue with resizing of the columns if the in-header filters are specified for the columns
+- Grid. Fix the script error thrown after scrolling the grid horizontally several times
+- Layout. Fix the issue with the `collapse()` method of a layout cell
+- List. Fix the issue which caused the list not to be scrolled to the item selected via the `setFocus()` method
+- TreeGrid. Now it is possible to filter the content of the treegrid by multiple header filters 
+
 Version 7.2
 ---------------
 
-<span class="rel_date">released on August 4, 2021</span>
+Released on August 4, 2021
 
 Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
 ### New functionality
@@ -88,7 +134,7 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 Version 7.1.10
 -------------------
 
-<span class="rel_date">released on July 20, 2021</span>
+Released on July 20, 2021
 
 ### Fixes
 
@@ -119,7 +165,7 @@ Version 7.1.10
 Version 7.1.9
 ------------------
 
-<span class="rel_date">released on June 24, 2021</span>
+Released on June 24, 2021
 
 ### Fixes
 
@@ -150,7 +196,7 @@ Version 7.1.9
 Version 7.1.8
 ------------------
 
-<span class="rel_date">released on June 10, 2021</span>
+Released on June 10, 2021
 
 ### Fixes
 
@@ -171,7 +217,7 @@ Version 7.1.8
 Version 7.1.7
 ------------------
 
-<span class="rel_date">released on May 17, 2021</span>
+Released on May 17, 2021
 
 ### Fixes
 
@@ -186,7 +232,7 @@ Version 7.1.7
 Version 7.1.6
 ------------------
 
-<span class="rel_date">released on May 5, 2021</span>
+Released on May 5, 2021
 
 ### Fixes
 
@@ -201,7 +247,7 @@ Version 7.1.6
 Version 7.1.5
 ------------------
 
-<span class="rel_date">released on April 22, 2021</span>
+Released on April 22, 2021
 
 ### Fixes
 
@@ -212,7 +258,7 @@ Version 7.1.5
 Version 7.1.4
 ------------------
 
-<span class="rel_date">released on April 16, 2021</span>
+Released on April 16, 2021
 
 ### Fixes
 
@@ -229,7 +275,7 @@ Version 7.1.4
 Version 7.1.3
 ------------------
 
-<span class="rel_date">released on April 12, 2021</span>
+Released on April 12, 2021
 
 ### Fixes
 
@@ -260,7 +306,7 @@ Version 7.1.3
 Version 7.1.2
 ---------------
 
-<span class="rel_date">released on March 9, 2021</span>
+Released on March 9, 2021
 
 ### Fixes
 
@@ -289,7 +335,7 @@ Version 7.1.2
 Version 7.1.1
 ---------------
 
-<span class="rel_date">released on February 23, 2021</span>
+Released on February 23, 2021
 
 ### Fixes
 
@@ -304,7 +350,7 @@ Version 7.1.1
 Version 7.1
 ---------------
 
-<span class="rel_date">released on February 18, 2021</span>
+Released on February 18, 2021
 
 Check the [Migration article](migration.md#70---71) to keep in step with the latest version.
 
@@ -372,7 +418,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 Version 7.0.3
 ---------------
 
-<span class="rel_date">released on January 19, 2021</span>
+Released on January 19, 2021
 
 ### Fixes
 
@@ -389,7 +435,7 @@ Version 7.0.3
 Version 7.0.2
 ---------------
 
-<span class="rel_date">released on December 28, 2020</span>
+Released on December 28, 2020
 
 ### Fixes
 
@@ -399,7 +445,7 @@ Version 7.0.2
 Version 7.0.1
 ---------------
 
-<span class="rel_date">released on December 21, 2020</span>
+Released on December 21, 2020
 
 ### Fixes
 
@@ -420,7 +466,7 @@ Version 7.0.1
 Version 7.0
 ---------------
 
-<span class="rel_date">released on December 7, 2020</span>
+Released on December 7, 2020
 
 ### Breaking changes
 
@@ -571,7 +617,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - Checkbox control of Form. The [getValue()](form/api/checkbox/checkbox_getvalue_method.md) method is updated
 - Input control of Form. The ability to define the type for the input field via the ["inputType"](form/api/input/api_input_properties.md) attribute
 - TimePicker control of Form. The ["value"](form/timepicker.md#adding-timepicker) attribute is updated - the ability to specify the value as a Date, a number, an array, an object is added.
-- SimpleVault control of Form. The [](form/api/simplevault/simplevault_beforeuploadfile_event), [](form/api/simplevault/simplevault_uploadbegin_event.md), [](form/api/simplevault/simplevault_uploadcomplete_event.md), [](form/api/simplevault/simplevault_uploadfail_event.md), [](form/api/simplevault/simplevault_uploadfile_event.md), [](form/api/simplevault/simplevault_uploadprogress_event.md) events are improved
+- SimpleVault control of Form. The [](form/api/simplevault/simplevault_beforeuploadfile_event.md), [](form/api/simplevault/simplevault_uploadbegin_event.md), [](form/api/simplevault/simplevault_uploadcomplete_event.md), [](form/api/simplevault/simplevault_uploadfail_event.md), [](form/api/simplevault/simplevault_uploadfile_event.md), [](form/api/simplevault/simplevault_uploadprogress_event.md) events are improved
 - TimePicker control of Form. The [getValue()](form/api/timepicker/timepicker_getvalue_method.md)/ [setValue()](form/api/timepicker/timepicker_setvalue_method.md) methods are updated
 - Form. The [getValue()](form/api/form_getvalue_method.md) method is updated
 - Grid/TreeGrid. The "splitAt" configuration property is replaced by the "leftSplit" one 
@@ -620,7 +666,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 Version 6.5.8
 ------------------
 
-<span class="rel_date">released on October 15, 2020</span>
+Released on October 15, 2020
 
 ### Fixes
 
@@ -630,7 +676,7 @@ Version 6.5.8
 Version 6.5.7
 ---------------
 
-<span class="rel_date">released on October 15, 2020</span>
+Released on October 15, 2020
 
 ### Fixes
 
@@ -642,7 +688,7 @@ Version 6.5.7
 Version 6.5.6
 -------------
 
-<span class="rel_date">released on October 5, 2020</span>
+Released on October 5, 2020
 
 ### Fixes
 
@@ -657,7 +703,7 @@ Version 6.5.6
 Version 6.5.5
 -----------------
 
-<span class="rel_date">released on September 17, 2020</span>
+Released on September 17, 2020
 
 ### Fixes
 
@@ -667,7 +713,7 @@ Version 6.5.5
 Version 6.5.4
 -------------
 
-<span class="rel_date">released on September 15, 2020</span>
+Released on September 15, 2020
 
 ### Fixes
 
@@ -684,7 +730,7 @@ Version 6.5.4
 Version 6.5.3
 -------------
 
-<span class="rel_date">released on September 2, 2020</span>
+Released on September 2, 2020
 
 ### Fixes
 
@@ -701,7 +747,7 @@ Version 6.5.3
 Version 6.5.2
 -------------
 
-<span class="rel_date">released on July 14, 2020</span>
+Released on July 14, 2020
 
 ### Fixes
 
@@ -716,7 +762,7 @@ Version 6.5.2
 Version 6.5.1
 ----------------
 
-<span class="rel_date">released on June 16, 2020</span>
+Released on June 16, 2020
 
 ### Fixes
 
@@ -725,7 +771,7 @@ Version 6.5.1
 Version 6.5
 ----------------
 
-<span class="rel_date">released on June 16, 2020</span>
+Released on June 16, 2020
 
 ### New functionality
 
@@ -782,7 +828,7 @@ Version 6.5
 Version 6.4.4
 ----------------
 
-<span class="rel_date">released on May 19, 2020</span>
+Released on May 19, 2020
 
 #### Fixes
 
@@ -803,7 +849,7 @@ Version 6.4.4
 Version 6.4.3
 ----------------
 
-<span class="rel_date">released on April 29, 2020</span>
+Released on April 29, 2020
 
 #### Fixes
 
@@ -828,7 +874,7 @@ Version 6.4.3
 Version 6.4.2
 ----------------
 
-<span class="rel_date">released on March 3, 2020</span>
+Released on March 3, 2020
 
 #### Fixes
 
@@ -843,7 +889,7 @@ Version 6.4.2
 Version 6.4.1
 ----------------
 
-<span class="rel_date">released on January 30, 2020</span>
+Released on January 30, 2020
 
 
 #### Fixes
@@ -858,7 +904,7 @@ Version 6.4.1
 Version 6.4
 ----------------
 
-<span class="rel_date">released on January 28, 2020</span>
+Released on January 28, 2020
 
 ### New functionality
 
@@ -1016,7 +1062,7 @@ Version 6.4
 Version 6.3.1 
 ---------------
 
-<span class="rel_date">released on December 18, 2019</span>
+Released on December 18, 2019
 
 ### Fixes
 
@@ -1029,7 +1075,7 @@ Version 6.3.1
 Version 6.3 
 ---------------
 
-<span class="rel_date">released on December 12, 2019</span>
+Released on December 12, 2019
 
 ### New functionality
 
@@ -1092,7 +1138,7 @@ Version 6.3
 Version 6.2.3 
 ---------------
 
-<span class="rel_date">released on November 19, 2019</span>
+Released on November 19, 2019
 
 ### Fixes
 
@@ -1105,7 +1151,7 @@ Version 6.2.3
 Version 6.2.2 
 ---------------
 
-<span class="rel_date">released on November 5, 2019</span>
+Released on November 5, 2019
 
 ### Fixes
 
@@ -1115,7 +1161,7 @@ Version 6.2.2
 Version 6.2.1 
 ---------------
 
-<span class="rel_date">released on October 25, 2019</span>
+Released on October 25, 2019
 
 ### Fixes
 
@@ -1126,7 +1172,7 @@ Version 6.2.1
 Version 6.2
 ---------------
 
-<span class="rel_date">released on October 23, 2019</span>
+Released on October 23, 2019
 
 ### New functionality
 
@@ -1185,7 +1231,7 @@ Version 6.2
 Version 6.1.7 
 ---------------
 
-<span class="rel_date">released on October 10, 2019</span>
+Released on October 10, 2019
 
 ### Fixes
 
@@ -1197,7 +1243,7 @@ Version 6.1.7
 Version 6.1.6 
 ---------------
 
-<span class="rel_date">released on September 26, 2019</span>
+Released on September 26, 2019
 
 ### Fixes
 
@@ -1209,7 +1255,7 @@ Version 6.1.6
 Version 6.1.5 
 -----------------
 
-<span class="rel_date">released on September 12, 2019</span>
+Released on September 12, 2019
 
 ### Fixes
 
@@ -1221,7 +1267,7 @@ Version 6.1.5
 Version 6.1.4 
 ----------------------------
 
-<span class="rel_date">released on September 5, 2019</span>
+Released on September 5, 2019
 
 ### Fixes
 
@@ -1236,7 +1282,7 @@ Version 6.1.4
 Version 6.1.3
 -------------------
 
-<span class="rel_date">released on August 29, 2019</span>
+Released on August 29, 2019
 
 ### Fixes
 
@@ -1247,7 +1293,7 @@ Version 6.1.3
 Version 6.1.2 
 -------------------
 
-<span class="rel_date">released on August 22, 2019</span>
+Released on August 22, 2019
 
 ### Fixes
 
@@ -1258,7 +1304,7 @@ Version 6.1.2
 Version 6.1.1 
 -------------------
 
-<span class="rel_date">released on August 16, 2019</span>
+Released on August 16, 2019
 
 ### Fixes
 
@@ -1268,7 +1314,7 @@ Version 6.1.1
 Version 6.1
 ---------------
 
-<span class="rel_date">released on August 15, 2019</span>
+Released on August 15, 2019
 
 ### New functionality
 
@@ -1349,7 +1395,7 @@ Version 6.1
 Version 6.0.4
 ------------------
 
-<span class="rel_date">released on August 6, 2019</span>
+Released on August 6, 2019
 
 ### Fixes
 
@@ -1366,7 +1412,7 @@ Version 6.0.4
 Version 6.0.3
 ------------------
 
-<span class="rel_date">released on July 19, 2019</span>
+Released on July 19, 2019
 
 ### Fixes
 
@@ -1388,7 +1434,7 @@ Version 6.0.3
 Version 6.0.2 
 -----------------
 
-<span class="rel_date">released on July 11, 2019</span>
+Released on July 11, 2019
 
 ### Fixes
 
@@ -1404,7 +1450,7 @@ Version 6.0.2
 Version 6.0.1 
 --------------
 
-<span class="rel_date">released on July 5, 2019</span>
+Released on July 5, 2019
 
 ### Fixes
 

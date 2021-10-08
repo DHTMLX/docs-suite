@@ -1,13 +1,13 @@
 ---
 sidebar_label: afterValidate
 title: JavaScript Form - afterValidate Input Event 
-description: You can explore the afterValidate Input event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the afterValidate event of the Input control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # afterValidate
 
 @short: fires after the control value is validated
- 
+
 @signature: {'afterValidate: (value: string | number, isValidate: boolean) => void;'}
 
 @params:

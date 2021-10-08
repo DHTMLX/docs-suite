@@ -13,7 +13,7 @@ description: You can explore the beforeEditStart event of TreeGrid in the docume
 @params:
 - `row: object` - an object with a row configuration
 - `col: object` - an object with a column configuration
-- `editorType: string` - the type of a cell editor:"input", "select",  "datePicker", "checkbox", "combobox"
+- `editorType: string` - the type of a cell editor:"input", "select",  "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @returns:
 Return `false` to block editing of a cell; otherwise, `true`.

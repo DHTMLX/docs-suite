@@ -94,3 +94,72 @@ tree.data.update("history", {
 ~~~
 
 {{note You can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css) in the same way.}}
+
+## Adding template to items
+
+<iframe src="https://snippet.dhtmlx.com/hg3f50td?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="900"></iframe>
+
+It is possible to customize Tree items via the [template property](tree/api/tree_template_config.md). The template option is a function that takes two parameters:
+
+- `item` - *object*, an object of a Tree item
+- `isFolder` - *boolean*, defines whether an item is a folder
+
+and returns either a string or null.
+
+**Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
+
+@example:
+const tree = new dhx.Tree("tree", {
+    template: ({ value }, isFolder) => {
+        const template = `
+            <div class="dhx_tree_template">
+                <span class="dhx_tree_template__value">${value}</span>
+                <div class="dhx_tree_template__rows">
+                    <button class="dhx_tree_template__button remove">
+                        <i class="far fa-trash-alt dhx_tree_template__icon dhx_tree_template__icon--danger"></i>
+                    </button>
+                </div>
+            </div>
+        `
+        return isFolder ? null : template;
+    }
+});
+@examplestop:
+
+### Event handlers for the template
+
+You can assign event handlers to HTML elements of a custom template via using the [eventHandlers](tree/api/tree_eventhandlers_config.md)  configuration property of Tree, for instance:
+
+@example:
+const tree = new dhx.Tree("tree", {
+    template: ({ value }, isFolder) => {
+        const template = `
+            <div class="dhx_tree_template">
+                <span class="dhx_tree_template__value">${value}</span>
+                <div class="dhx_tree_template__rows">
+                    <button class="dhx_tree_template__button remove">
+                        <i class="far fa-trash-alt dhx_tree_template__icon dhx_tree_template__icon--danger"></i>
+                    </button>
+                </div>
+            </div>
+        `
+        return isFolder ? null : template;
+    },
+    eventHandlers: {
+        onclick: {
+            remove: (event, { id }) => {
+                id && tree.data.remove(id);
+            }
+        }
+    }
+});
+@examplestop:
+
+The **eventHandlers** object includes a set of *key:value* pairs, where:
+
+- `key` - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
+- `value` - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
+  - `event` - an event object
+  - `item` - an object of a Tree item
+
+**Related sample**: [Tree. Handling Events In Template](https://snippet.dhtmlx.com/hg3f50td)

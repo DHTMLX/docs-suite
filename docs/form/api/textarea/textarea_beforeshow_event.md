@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeShow
 title: JavaScript Form - beforeShow Textarea Event 
-description: You can explore the beforeShow Textarea event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the beforeShow event of the Textarea control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # beforeShow
@@ -9,7 +9,7 @@ description: You can explore the beforeShow Textarea event of Form in the docume
 @short: fires before a control is shown
 
 @signature: {'beforeShow: (value: string) => boolean | void;'}
- 
+
 @params:
 `value: string` - the current value of the control
 

@@ -384,7 +384,7 @@ Or provide the **options** property with an array of objects with a set of *key:
 		{ id: "1 time", value: "1" }, 
 		{ id: "1-2 times", value: "1-2 " }, 
 		{ id: "more than 5 times", value: "5+" }
-		]  /*!*/
+	]
 }
 ```
 
@@ -417,13 +417,19 @@ var grid = new dhx.Grid("grid", {
 - **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options
 
 ```js
-columns: [
-    {
-        id: "renewals", type: "string",
-        header: [{ text: "Number of renewals" }],
-        editorType: "multiselect",
-        options: ["1 time", "1-2 times", "more than 5 times"],
-    },
+var grid = new dhx.Grid("grid", {
+	columns: [
+		{
+        	id: "renewals", type: "string",
+        	header: [{ text: "Number of renewals" }],
+        	editorType: "multiselect",
+        	options: ["1 time", "1-2 times", "more than 5 times"],
+    	},
+    	// more columns
+	],
+	data: data,
+	editable: true
+});
 ```
 
 **Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
@@ -431,7 +437,7 @@ columns: [
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
 ```js
-const data = 
+const data = [
 	{
     	renewals: "1 time", //one option is shown in a cell
 		...
@@ -440,6 +446,7 @@ const data =
     	renewals: "more than 5 times, 1 time" //two options are shown in a cell
 		...
 	}
+];
 ```
 
 ## Formatting columns

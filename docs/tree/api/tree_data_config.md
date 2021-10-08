@@ -76,7 +76,7 @@ var tree = new dhx.Tree("tree", {
 });
 ~~~
 
-You can disable displaying a checkbox for a tree item via the [update](tree_collection/api/update.md) method of tree collection.
+You can disable displaying a checkbox for a tree item via the [update](tree_collection/api/treecollection_update_method.md) method of tree collection.
 
 ~~~js
 tree.data.update("Books", {checkbox:false});
@@ -84,7 +84,7 @@ tree.data.update("Books", {checkbox:false});
 
 - **parent** - (*string*) the id of the parent of a tree item
 
-For example, you can get the parent of an item using the [getItem](tree_collection/api/getitem.md) method of tree collection.
+For example, you can get the parent of an item using the [getItem](tree_collection/api/treecollection_getitem_method.md) method of tree collection.
 
 ~~~js
 tree.data.getItem("Thrillers").parent

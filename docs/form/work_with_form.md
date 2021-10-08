@@ -115,7 +115,6 @@ You can easily specify that an input is obligatory to be treated by a user with 
 {	
 	type: "checkbox",
 	label: "I agree",
-	labelInline: true,
 	name: "agree",
 	required: true,
 	id: "agree",

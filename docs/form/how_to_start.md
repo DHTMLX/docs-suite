@@ -75,34 +75,39 @@ another:
 var form_data = {
 	rows:[
     	{
-        	id: "name",
-            name: "name",
-        	type: "input",
-        	label: "Name",
-        	icon: "dxi-magnify",
-        	placeholder: "John Doe"
+      		type: "input",
+      		label: "Name",
+      		icon: "dxi dxi-magnify",
+      		placeholder: "John Doe",
+      		name: "name"
     	},
     	{
-        	id:"email",
-            name:"email", 
-        	type: "input",
-        	label: "Email",
-        	placeholder: "jd@mail.name"
+      		type: "input",
+      		label: "Email",
+      		placeholder: "jd@mail.name",
+      		name: "email"
+    	},		
+    	{		
+      		type: "input",
+      		inputType: "password",
+      		label: "Password",
+      		placeholder: "********",
+      		name: "password"
     	},
     	{
-        	type: "checkbox",
-        	label: "I agree",
-        	name: "agree",
-        	labelInline: true,
-        	id: "agree",
-        	value: "checkboxvalue",
+      		type: "checkbox",
+      		text: "I agree",
+      		value: "checkboxvalue",
+      		id: "agree",
+      		name: "agree"
     	},
     	{
-        	type: "button",
-        	value: "Send",
-       	 	size: "medium",
-        	view: "flat",
-        	color: "primary"
+      		type: "button",
+      		text: "Send",
+      		size: "medium",
+      		view: "flat",
+      		submit: true,
+      		color: "primary"
     	}
 	]
 };

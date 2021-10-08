@@ -8,12 +8,12 @@ description: You can explore the editCell method of TreeGrid in the documentatio
 
 @short: enables editing of a TreeGrid cell
 
-@signature: {'editCell(rowId: Id, colId: Id, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea"): void;'}
+@signature: {'editCell(rowId: Id, colId: Id, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea" | "multiselect"): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row
 - `colId: string | number` - the id of a column
-- `editorType: string` - optional, the type of an editor used in a cell: "input", "select", "datePicker", "checkbox", "combobox", "textarea"
+- `editorType: string` - optional, the type of an editor used in a cell: "input", "select", "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @example:
 grid.editCell(grid.data.getId(0),"project");

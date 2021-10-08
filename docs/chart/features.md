@@ -50,6 +50,7 @@ description: You can explore the features of Chart in the documentation of the D
   - [Radar. Axis configuration](https://snippet.dhtmlx.com/yksfvhhl)
   - [Each series](https://snippet.dhtmlx.com/4kbj4lmw)
   - [Get series](https://snippet.dhtmlx.com/9jtscd9q)
+  - [Grid and Chart. Edit Grid to see the changes in Chart](https://snippet.dhtmlx.com/gdeqtev4)
 - **Integration**
   - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
   - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)

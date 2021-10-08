@@ -116,7 +116,7 @@ dateInput.addEventListener("click", function() {
 });
 ~~~
 
-- define the logic of closing the popup with calendar using the [](popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar:
+- define the logic of closing the popup with calendar using the [](../popup/api/popup_hide_method.md) method of Popup. For example, on selecting a new date in the calendar:
 
 ~~~js
 calendar.events.on("change", function() {
