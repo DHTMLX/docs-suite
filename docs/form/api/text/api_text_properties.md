@@ -1,7 +1,7 @@
 ---
 sidebar_label: Form Text properties
 title: JavaScript Form - Text Properties 
-description: You can explore the Text Properties of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Properties of the Text control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # Text properties
