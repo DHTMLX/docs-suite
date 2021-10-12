@@ -6,7 +6,7 @@ name: Deploy To Site
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master ]
+    branches: [ master, next ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,6 +19,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      - id: vars
+        run: echo ::set-output name=short_ref::${GITHUB_REF#refs/*/}
+
       - uses: actions/setup-node@v2
         with:
           node-version: '14'
@@ -36,7 +39,6 @@ jobs:
         with:
           context: .
           push: true
-          tags: registry.webix.io/suite-docs-alt:latest
+          tags: registry.webix.io/suite-docs-alt:${{ steps.vars.outputs.short_ref }}
 
-      - run: curl "http://dhtmlx.com:2280/h00ks/restart-docker?token=${{ secrets.RESTART_TOKEN }}&project=docs-suite-alt"
-          
+      - run: curl "https://docs.dhtmlx.com/hooks/restart-docker?token=${{ secrets.RESTART_TOKEN }}&project=docs-suite-alt-${{ steps.vars.outputs.short_ref }}"
