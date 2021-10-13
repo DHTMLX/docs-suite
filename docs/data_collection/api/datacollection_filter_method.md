@@ -94,7 +94,7 @@ grid.data.filter({
     match: "Orange",
     compare: function (value, match, item) {
         if (item.a !== "Some") {
-            return val === "New";
+            return value === "New";
         }
     return false;
 });
