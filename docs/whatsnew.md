@@ -73,10 +73,10 @@ Released on August 26, 2021
 
 Version 7.2
 ---------------
-
 Released on August 4, 2021
 
 Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
+
 ### New functionality
 
 #### Combobox
