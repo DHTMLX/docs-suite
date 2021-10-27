@@ -22,19 +22,23 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 	<tbody>
         <tr>
 			<td><b>ArrowUp</b></td>
-			<td>to move focus to the previous item</td>
+			<td>moves focus to the previous item</td>
 		</tr>
         <tr>
 			<td><b>ArrowDown</b></td>
-			<td>to move focus to the next item</td>
+			<td>moves focus to the next item</td>
 		</tr>
         <tr>
 			<td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
-			<td>to add selection to a List item in focus</td>
+			<td>adds selection to a List item in focus</td>
+		</tr>
+		<tr>
+			<td><b>Enter</b></td>
+			<td>adds selection to a List item in focus, activates editor for the selected item (when the "editable" property is enabled)</td>
 		</tr>
         <tr>
 			<td><b>Ctrl+A</b></td>
-			<td>to select all items at once (when the "multiselection" property is enabled)</td>
+			<td>selects all items at once (when the "multiselection" property is enabled)</td>
 		</tr>
     </tbody>
 </table>
