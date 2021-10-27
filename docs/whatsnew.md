@@ -8,6 +8,23 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2.4
+----------------
+Released on October 13, 2021
+
+### Fixes
+
+- DataCollection. Now the [](data_collection/api/datacollection_save_method.md) method of DataCollection sends `PUT` request to the backend after adding new data to the component, and `POST` one after editing the data
+- Form. Combo control. Fix the issue which caused errors to appear in the console after calling the [](form/api/combo/combo_setproperties_method.md) method of the control
+- Form. Fix the issue which caused the [](form/api/form_send_method.md) method to accept only one success HTTP status code which is 200. Now the method can accept other 2xx codes. 
+- Form. TimePicker control. Fix the issue which caused the value of the control not being updated after the value is selected in the timepicker when working in Firefox
+- Grid. Fix issues with touch events for the in-header filters of the Grid columns
+- Grid. Fix the incorrect work of key navigation in the components when they are attached into the grid which is attached into a layout cell
+- Grid. Fix the issue which caused key navigation to be broken after the [](grid/api/grid_setcolumns_method.md) method is called in the grid with empty columns
+- Grid. Fix the issue which caused the width of the columns not being updated when using the [](grid/api/grid_setcolumns_method.md) method
+- Grid. Fix the issue with filtering the grid via the combo filter when the [](grid/api/grid_autoemptyrow_config.md) configuration property of Grid is set to *true*
+- TreeGrid. Fix the incorrect display of an icon of a treegrid row after adding a child row and then deleting it. Now the *$items* property of the TreeGridCollection object is updated after deleting all child items.
+
 Version 7.2.3
 ------------------
 Released on September 27, 2021
@@ -56,10 +73,10 @@ Released on August 26, 2021
 
 Version 7.2
 ---------------
-
 Released on August 4, 2021
 
 Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
+
 ### New functionality
 
 #### Combobox
@@ -129,7 +146,6 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 - Grid. Fix the issue with loading data into Grid using `lazyDataProxy`
 - Grid. Fix the issue with entering text in the combobox editor of a Grid cell
 - Menu. Fix the issue which caused the context menu not to close after clicking outside the menu if `navigationType: "click"` property is specified
-
 
 Version 7.1.10
 -------------------
