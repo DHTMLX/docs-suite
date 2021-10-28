@@ -97,7 +97,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
 
-It is also possible to set the [](grid/api/grid_adjust_config.md) property to *true* in the configuration of a separate column to make its width to adjust automatically to the content:
+It is also possible to use the [](grid/api/grid_adjust_config.md) property in the configuration of a separate column:
 
 ~~~js
 var grid = new dhx.Grid("grid_container", { 

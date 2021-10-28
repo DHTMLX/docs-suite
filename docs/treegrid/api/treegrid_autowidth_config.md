@@ -23,6 +23,14 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Auto Width](https://snippet.dhtmlx.com/irybslog)
 
+{{note The property is ignored if the [adjust](../../../treegrid/configuration/#autosize-for-columns) property is used.}}
+
+The width of the columns is calculated on the base of the sizes of the container of the grid and the values of the [minWidth/maxWidth](../../../treegrid/api/api_treegridcolumn_properties/) properties if they are set for the columns.
+
+{{note If the **width** property is specified in the configuration object of a column, the **autoWidth** property won't work for this column.}}
+
+
+
 @changelog: added in v6.4
 
 [comment]: # (@related: treegrid/configuration.md#autowidth-for-columns)

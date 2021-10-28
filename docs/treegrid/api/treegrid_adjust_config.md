@@ -46,6 +46,18 @@ The property can be specified to one of the available adjustment modes:
     </tbody>
 </table>
 
+The **adjust** property has a priority over the [autoWidth](../../../grid/configuration/#autowidth-for-columns) property, which is specified either for a grid or for its column, and over the [width](../../../grid/api/api_gridcolumn_properties/) property which is specified for the column.
+
+The width the columns will be adjusted to also depends on the values of the [minWidth/maxWidth](../../../grid/api/api_gridcolumn_properties/) properties if they are set for a column.
+
+**Note**, that:
+
+- to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content;
+- you can also specify `htmlEnable:true` in the configuration object of TreeGrid;
+- `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content;
+- the **adjust** option enabled (including the "header", "footer", "data" modes) adjusts the width of columns with account of [template](treegrid/api/api_treegridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [header/footer](treegrid/api/api_treegridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
+
+
 @changelog: added in v6.4
 
 [comment]: # (@relatedapi: treegrid/api/treegrid_adjustcolumnwidth_method.md)

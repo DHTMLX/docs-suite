@@ -14,7 +14,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a column</td>
+			<td>(<i>number</i>) the width of a column<br>The property is ignored if the <a href="../../../treegrid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
 		</tr>
         <tr>
 			<td><b>header</b></td>
@@ -148,7 +148,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><a href="../../configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
-			<td>(<i>boolean</i>) enables/disables the ability of a column to adjust its size to the size of TreeGrid</td>
+			<td>(<i>boolean</i>) enables/disables the ability of a column to adjust its size to the size of TreeGrid<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the treegrid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#alignment"><b>align</b></a></td>
