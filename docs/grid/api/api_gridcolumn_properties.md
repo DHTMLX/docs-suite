@@ -156,7 +156,7 @@ description: You can explore the Grid column properties of Grid in the documenta
 		</tr>
         <tr>
 			<td><a href="../../configuration#autosize-for-columns"><b>adjust</b></a></td>
-			<td>(<i>boolean|string</i>) defines whether the width of a column is automatically adjusted to its content</td>
+			<td>(<i>boolean|string</i>) defines whether the width of a column is automatically adjusted to its content.<br><br><li>The property has a priority over the <a href="../../configuration/#autowidth-for-columns">autoWidth</a> property if it is specified either for the grid or for the column, and over the <b>width</b> property of the column.</li><li>The width the columns will be adjusted to also depends on the values of the <b>minWidth/maxWidth</b> properties if they are set for a column.</li></td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
