@@ -331,6 +331,23 @@ To set this editor type you need to provide the **options** property with an arr
 } 
 ~~~
 
+Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
+
+- The **id** attribute sets the id for the option;
+- The **value** attribute is displayed in the editor.
+
+~~~js
+{
+    width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
+    editorType: "select", 
+	options: [
+		{ id: "done", value: "Done" }, 
+		{ id: "in progress", value: "In Progress" }, 
+		{ id: "not started", value: "Not Started" },
+	],
+}
+~~~
+
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 - **checkbox** - an editor for cells with a two-state check box
@@ -364,8 +381,8 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 
 Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
 
-- The **id** attribute is displayed in the treegrid cell
-- The **value** attribute is displayed in the editor
+- The **id** attribute sets the id for the option;
+- The **value** attribute is displayed in the editor.
 
 ```js
 {
