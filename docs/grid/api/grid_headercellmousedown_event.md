@@ -15,7 +15,7 @@ description: You can explore the headerCellMouseDown event of Grid in the docume
 - `events: MouseEvent & TouchEvent` - a native HTML event object 
 
 @example:
-grid.events.on("HeaderCellMouseDown", function(col,e){
+grid.events.on("headerCellMouseDown", function(col,e){
     // your logic here
 });
 

@@ -15,7 +15,7 @@ description: You can explore the footerCellMouseOver event of TreeGrid in the do
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("FooterCellMouseOver ", function(column,e){
+grid.events.on("footerCellMouseOver ", function(column,e){
     // your logic here
 });
 

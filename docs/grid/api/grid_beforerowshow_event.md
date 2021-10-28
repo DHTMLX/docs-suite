@@ -17,7 +17,7 @@ description: You can explore the beforeRowShow event of Grid in the documentatio
 Return `false` to prevent a row from being shown; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeRowShow", function(row){
+grid.events.on("beforeRowShow", function(row){
     // your logic here
     return false;
 });

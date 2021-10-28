@@ -16,7 +16,7 @@ description: You can explore the resize event of Window in the documentation of 
 - `side: object` - an object that specifies the direction of resizing
 
 @example:
-dhxWindow.events.on("Resize", function(state, oldState, side) {
+dhxWindow.events.on("resize", function(state, oldState, side) {
     console.log("The window is resized" + state.left, state.top, 
                 state.width, state.height)
 });

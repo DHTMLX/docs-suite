@@ -14,8 +14,8 @@ description: You can explore the change event of the Timepicker control of Form 
 `value: string | object` - the current value of the control
 
 @example:
-form.getItem("timepicker").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("timepicker").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

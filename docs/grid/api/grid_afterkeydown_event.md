@@ -14,7 +14,7 @@ description: You can explore the afterKeyDown event of Grid in the documentation
 `e: Event` - a native KeyboardEvent object
 
 @example:
-grid.events.on("AfterKeyDown", function (e) {
+grid.events.on("afterKeyDown", function (e) {
     // your logic here
 });
 

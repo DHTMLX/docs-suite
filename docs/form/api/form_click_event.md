@@ -15,8 +15,8 @@ description: You can explore the click event of Form in the documentation of the
 - `e: Event` - a native event object
 
 @example:
-form.events.on("Click", function(name, events) {
-    console.log("Click", name, events); 
+form.events.on("click", function(name, events) {
+    console.log("click", name, events); 
 });
 
 @descr:

@@ -18,7 +18,7 @@ description: You can explore the beforeDrop event of Tree in the documentation o
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-tree.events.on("BeforeDrop", function(data, events) {
+tree.events.on("beforeDrop", function(data, events) {
     // your logic here
     return false;
 });

@@ -17,7 +17,7 @@ description: You can explore the beforeExpand event of Tree in the documentation
 Return `false` to block expanding  a tree item; otherwise, `true`.
 
 @example:
-tree.events.on("BeforeExpand", function(id) {
+tree.events.on("beforeExpand", function(id) {
     // your logic here
     return false;
 });

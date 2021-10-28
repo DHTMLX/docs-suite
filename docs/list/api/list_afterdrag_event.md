@@ -15,7 +15,7 @@ description: You can explore the afterDrag event of List in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("AfterDrag", function(data, events) {
+list.events.on("afterDrag", function(data, events) {
     // your logic here
 });
 

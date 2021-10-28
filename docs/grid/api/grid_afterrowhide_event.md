@@ -14,7 +14,7 @@ description: You can explore the afterRowHide event of Grid in the documentation
 `row: object` - an object with a row configuration
 
 @example:
-grid.events.on("AfterRowHide", function(row){
+grid.events.on("afterRowHide", function(row){
     // your logic here
 });
 

@@ -11,7 +11,7 @@ description: You can explore the afterCollapse event of Sidebar in the documenta
 @signature: {'afterCollapse: () => void;'}
 
 @example:
-sidebar.events.on("AfterCollapse", function() {
+sidebar.events.on("afterCollapse", function() {
     // your logic here
 });
 

@@ -15,7 +15,7 @@ description: You can explore the dragRowIn event of Grid in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("DragRowIn", function(data, events) {
+grid.events.on("dragRowIn", function(data, events) {
   // your logic here
 });
 

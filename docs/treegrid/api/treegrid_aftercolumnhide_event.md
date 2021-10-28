@@ -14,7 +14,7 @@ description: You can explore the afterColumnHide event of TreeGrid in the docume
 `col: object` - an object with a column configuration
 
 @example:
-treegrid.events.on("AfterColumnHide", function(column){
+treegrid.events.on("afterColumnHide", function(column){
     // your logic here
 });
 

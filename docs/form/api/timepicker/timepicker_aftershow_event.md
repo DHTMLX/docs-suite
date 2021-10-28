@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Timepicker control of Fo
 `value: string | object` - the current value of the control
 
 @example:
-form.getItem("timepicker").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("timepicker").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

@@ -15,7 +15,7 @@ description: You can explore the afterHide event of Window in the documentation 
 - `events: Event` - a native event object
 
 @example:
-dhxWindow.events.on("AfterHide", function(position, events){
+dhxWindow.events.on("afterHide", function(position, events){
     console.log("A window is hidden", events);
 });
 

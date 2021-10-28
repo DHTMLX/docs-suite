@@ -25,7 +25,7 @@ You can add any handler to the events of Menu. To do this, use the **menu.events
 <br/>
 
 ~~~js
-menu.events.on("Click", function(id,e){
+menu.events.on("click", function(id,e){
     console.log(id);
 });
 ~~~
@@ -41,11 +41,11 @@ Several handlers can be attached to one and the same event, and all of them will
 There is a simple way of removing an event handler with the **menu.events.detach()** method:
 
 ~~~js
-menu.events.on("Click", function(id, e){
+menu.events.on("click", function(id, e){
     console.log(id);
 });
 
-menu.events.detach("Click"); 
+menu.events.detach("click"); 
 ~~~
 
 ## Calling events

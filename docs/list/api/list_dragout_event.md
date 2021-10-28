@@ -15,7 +15,7 @@ description: You can explore the dragOut event of List in the documentation of t
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("DragOut", function(data, events) {
+list.events.on("dragOut", function(data, events) {
     // your logic here
 });
 

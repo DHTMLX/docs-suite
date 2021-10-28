@@ -15,7 +15,7 @@ description: You can explore the dragColumnStart event of TreeGrid in the docume
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("DragColumnStart", function(data, events) {
+treegrid.events.on("dragColumnStart", function(data, events) {
   // your logic here
 });
 

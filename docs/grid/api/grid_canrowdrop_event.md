@@ -15,7 +15,7 @@ description: You can explore the canRowDrop event of Grid in the documentation o
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("CanRowDrop", function(data, events) {
+grid.events.on("canRowDrop", function(data, events) {
   // your logic here
 });
 

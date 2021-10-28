@@ -16,8 +16,8 @@ description: You can explore the afterValidate event of Form in the documentatio
 - `isValid: boolean` - the result of validation
 
 @example:
-form.events.on("AfterValidate", function(name, value, isValid) {
-    console.log("AfterValidate", name, value, isValid); 
+form.events.on("afterValidate", function(name, value, isValid) {
+    console.log("afterValidate", name, value, isValid); 
 });
 
 @descr:

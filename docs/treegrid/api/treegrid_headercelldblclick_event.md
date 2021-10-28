@@ -15,7 +15,7 @@ description: You can explore the headerCellDblClick event of TreeGrid in the doc
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellDblClick", function(column,e){
+grid.events.on("headerCellDblClick", function(column,e){
     // your logic here
 });
 

@@ -15,7 +15,7 @@ description: You can explore the change event of Form in the documentation of th
 - `new_value: any` - a new value set for the control
 
 @example:
-form.events.on("Change",function(name, new_value){
+form.events.on("change",function(name, new_value){
 	// your code here
 });
 

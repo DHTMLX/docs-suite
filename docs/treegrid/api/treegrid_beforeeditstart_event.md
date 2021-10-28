@@ -19,7 +19,7 @@ description: You can explore the beforeEditStart event of TreeGrid in the docume
 Return `false` to block editing of a cell; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeEditStart", function(row,col,editorType){
+grid.events.on("beforeEditStart", function(row,col,editorType){
 	// your logic here
     return false;
 });

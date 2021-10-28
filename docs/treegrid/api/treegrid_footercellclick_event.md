@@ -15,7 +15,7 @@ description: You can explore the footerCellClick event of TreeGrid in the docume
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("FooterCellClick", function(column,e){
+grid.events.on("footerCellClick", function(column,e){
     // your logic here
 });
 

@@ -15,7 +15,7 @@ description: You can explore the focusChange event of List in the documentation 
 - `id: string | number` - the id of an item
 
 @example:
-list.events.on("FocusChange", function(index, id){
+list.events.on("focusChange", function(index, id){
     // your code here
 });
 

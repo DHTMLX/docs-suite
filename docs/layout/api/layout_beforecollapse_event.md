@@ -17,7 +17,7 @@ description: You can explore the beforeCollapse event of Layout in the documenta
 Return `false` to prevent a cell from being collapsed; otherwise, `true`.
 
 @example:
-layout.events.on("BeforeCollapse", function(id){
+layout.events.on("beforeCollapse", function(id){
 	// your logic here
     return false;
 });

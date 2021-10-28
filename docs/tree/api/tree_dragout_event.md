@@ -15,7 +15,7 @@ description: You can explore the dragOut event of Tree in the documentation of t
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("DragOut", function(data, events) {
+tree.events.on("dragOut", function(data, events) {
     // your logic here
 });
 

@@ -17,7 +17,7 @@ description: You can explore the beforeCollapse event of Tree in the documentati
 Return `false` to block collapsing  a tree item; otherwise, `true`.
 
 @example:
-tree.events.on("BeforeCollapse", function(id) {
+tree.events.on("beforeCollapse", function(id) {
     // your logic here
     return false;
 });

@@ -17,7 +17,7 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 Return `false` to prevent adding of an item; otherwise, `true`.
 
 @example:
-component.data.events.on("BeforeAdd", function(newItem){
+component.data.events.on("beforeAdd", function(newItem){
 	console.log("A new item will be added");
     return true;
 });

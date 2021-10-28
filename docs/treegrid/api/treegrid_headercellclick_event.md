@@ -15,7 +15,7 @@ description: You can explore the headerCellClick event of TreeGrid in the docume
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellClick", function(column,e){
+grid.events.on("headerCellClick", function(column,e){
     // your logic here
 });
 

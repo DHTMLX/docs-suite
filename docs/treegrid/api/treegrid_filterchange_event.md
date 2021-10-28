@@ -16,7 +16,7 @@ description: You can explore the filterChange event of TreeGrid in the documenta
 - `filterId: string` - the type of a filter: "inputFilter", "selectFilter", "comboFilter"
 
 @example:
-grid.events.on("FilterChange", function(value,colId,filter){
+grid.events.on("filterChange", function(value,colId,filter){
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 

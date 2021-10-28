@@ -17,7 +17,7 @@ description: You can explore the beforeColumnShow event of TreeGrid in the docum
 Return `false` to prevent a column from being shown; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeColumnShow", function(column){
+treegrid.events.on("beforeColumnShow", function(column){
     // your logic here
     return false;
 });

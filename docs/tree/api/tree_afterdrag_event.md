@@ -15,7 +15,7 @@ description: You can explore the afterDrag event of Tree in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("AfterDrag", function(data, events) {
+tree.events.on("afterDrag", function(data, events) {
     // your logic here
 });
 

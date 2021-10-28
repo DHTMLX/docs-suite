@@ -14,7 +14,7 @@ description: You can explore the afterColumnShow event of Grid in the documentat
 `col: object` - an object with a column configuration
 
 @example:
-grid.events.on("AfterColumnShow", function(column){
+grid.events.on("afterColumnShow", function(column){
     // your logic here
 });
 

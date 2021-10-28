@@ -15,7 +15,7 @@ description: You can explore the click event of Menu in the documentation of the
 - `events: Event` - a native event object
 
 @example:
-menu.events.on("Click", function(id,e){
+menu.events.on("click", function(id,e){
     console.log(id);
 });
 

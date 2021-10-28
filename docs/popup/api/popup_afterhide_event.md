@@ -14,7 +14,7 @@ description: You can explore the afterHide event of Popup in the documentation o
 `e: Event` - the native mouse event
 
 @example:
-popup.events.on("AfterHide", function(e){
+popup.events.on("afterHide", function(e){
     console.log("A popup is hidden");
 });
 

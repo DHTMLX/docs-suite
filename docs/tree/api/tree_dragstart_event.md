@@ -15,7 +15,7 @@ description: You can explore the dragStart event of Tree in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("DragStart", function(data, events) {
+tree.events.on("dragStart", function(data, events) {
     // your logic here
 });
 

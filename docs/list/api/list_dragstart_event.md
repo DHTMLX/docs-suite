@@ -15,7 +15,7 @@ description: You can explore the dragStart event of List in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("DragStart", function(data, events) {
+list.events.on("dragStart", function(data, events) {
     // your logic here
 });
 

@@ -15,7 +15,7 @@ description: You can explore the doubleClick event of List in the documentation 
 - `events: Event` - a native event object
 
 @example:
-list.events.on("DoubleClick", function(id, e){
+list.events.on("doubleClick", function(id, e){
    console.log("The item "+ list.selection.getId(id) +" was double clicked.");
 });
 

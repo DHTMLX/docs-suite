@@ -18,7 +18,7 @@ description: You can explore the beforeEditStart event of Tree in the documentat
 Return `false` to block editing of an item; otherwise, `true`.
 
 @example:
-tree.events.on("BeforeEditStart", function(value, id) {
+tree.events.on("beforeEditStart", function(value, id) {
     // your logic here
     return false;
 });

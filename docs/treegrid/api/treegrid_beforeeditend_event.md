@@ -19,7 +19,7 @@ description: You can explore the beforeEditEnd event of TreeGrid in the document
 Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeEditEnd", function(value,row,column){
+grid.events.on("beforeEditEnd", function(value,row,column){
 	// your logic here
     return false;
 });

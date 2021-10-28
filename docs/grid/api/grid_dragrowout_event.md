@@ -15,7 +15,7 @@ description: You can explore the dragRowOut event of Grid in the documentation o
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("DragRowOut", function(data, events) {
+grid.events.on("dragRowOut", function(data, events) {
   // your logic here
 });
 

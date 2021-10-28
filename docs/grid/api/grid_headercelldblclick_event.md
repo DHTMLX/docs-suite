@@ -15,7 +15,7 @@ description: You can explore the headerCellDblClick event of Grid in the documen
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellDblClick", function(col,e){
+grid.events.on("headerCellDblClick", function(col,e){
     // your logic here
 });
 

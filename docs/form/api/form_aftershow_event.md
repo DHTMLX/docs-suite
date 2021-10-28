@@ -15,8 +15,8 @@ description: You can explore the afterShow event of Form in the documentation of
 - `value: any` - the current value of the control
 
 @example:
-form.events.on("AfterShow", function(name, value) {
-    console.log("AfterShow", name, value); 
+form.events.on("afterShow", function(name, value) {
+    console.log("afterShow", name, value); 
 });
 
 @descr:

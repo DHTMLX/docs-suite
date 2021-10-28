@@ -15,7 +15,7 @@ description: You can explore the dragRowIn event of TreeGrid in the documentatio
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("DragRowIn", function(data, events) {
+treegrid.events.on("dragRowIn", function(data, events) {
     // your logic here
 });
 

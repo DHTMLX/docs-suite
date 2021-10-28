@@ -17,7 +17,7 @@ description: You can explore the beforeExpand event of TreeGrid in the documenta
 Return `false` to block expanding of a treegrid; otherwise, `true`.
 
 @example:
-treeGrid.events.on("BeforeExpand", function(rowId) {
+treeGrid.events.on("beforeExpand", function(rowId) {
     // your logic here
     return false;
 });

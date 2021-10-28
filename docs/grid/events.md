@@ -11,7 +11,7 @@ description: You can explore the event handling of Grid in the documentation of 
 You can attach event listeners with the **grid.events.on()** method:
 
 ~~~js
-grid.events.on("Scroll", function({top,left}){
+grid.events.on("scroll", function({top,left}){
     console.log("The grid is scrolled to "+top,left);
 });
 ~~~
@@ -25,11 +25,11 @@ grid.events.on("Scroll", function({top,left}){
 To detach events, use **grid.events.detach()**:
 
 ~~~js
-grid.events.on("Scroll", function({top,left}){
+grid.events.on("scroll", function({top,left}){
     console.log("The grid is scrolled to "+top,left);
 });
 
-grid.events.detach("Scroll");
+grid.events.detach("scroll");
 ~~~
 
 ## Calling events

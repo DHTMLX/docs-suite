@@ -19,7 +19,7 @@ description: You can explore the beforeDrag event of Tree in the documentation o
 Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
-tree.events.on("BeforeDrag", function(data, events) {
+tree.events.on("beforeDrag", function(data, events) {
     // your logic here
     return false;
 });

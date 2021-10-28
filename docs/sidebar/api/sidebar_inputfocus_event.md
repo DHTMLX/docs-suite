@@ -14,7 +14,7 @@ description: You can explore the inputFocus event of Sidebar in the documentatio
 `id: string | number` - the ID of a new control
 
 @example:
-sidebar.events.on("InputFocus", function(id){
+sidebar.events.on("inputFocus", function(id){
     console.log(id);
 });
 

@@ -11,7 +11,7 @@ description: You can explore the event handling of Timepicker in the documentati
 You can attach event listeners with the **timepicker.events.on()** method:
 
 ~~~js
-timepicker.events.on("Change", function(value){
+timepicker.events.on("change", function(value){
     console.log("The value of a timepicker has changed to "+ value);
 });
 ~~~
@@ -25,7 +25,7 @@ timepicker.events.on("Change", function(value){
 To detach events, use **timepicker.events.detach()**:
 
 ~~~js
-timepicker.events.on("Change", function(value){
+timepicker.events.on("change", function(value){
     console.log("The value of a timepicker has changed to "+ value);
 });
 timepicker.events.detach("Change");

@@ -17,7 +17,7 @@ description: You can explore the beforeClose event of Timepicker in the document
 Return `false` to prevent closing the timepicker; otherwise, `true`.
 
 @example:
-timepicker.events.on("BeforeClose", function(value){
+timepicker.events.on("beforeClose", function(value){
     console.log(value);
     return false;
 })

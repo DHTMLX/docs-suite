@@ -11,7 +11,7 @@ description: You can explore the afterSend event of Form in the documentation of
 @signature: {'afterSend: () => void;'}
 
 @example:
-form.events.on("AfterSend", function(){
+form.events.on("afterSend", function(){
    // your logic here
 });
 

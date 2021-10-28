@@ -16,7 +16,7 @@ description: You can explore the cellRightClick event of Grid in the documentati
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("CellRightClick", function(row,column,e){
+grid.events.on("cellRightClick", function(row,column,e){
      // your logic here
 });
 

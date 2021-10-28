@@ -14,7 +14,7 @@ description: You can explore the openMenu event of Sidebar in the documentation 
 `id: string | number` - the ID of an opened menu item
 
 @example:
-sidebar.events.on("OpenMenu", function(id){
+sidebar.events.on("openMenu", function(id){
     // your code here
 });
 

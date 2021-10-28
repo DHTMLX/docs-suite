@@ -16,7 +16,7 @@ description: You can explore the change event of Slider in the documentation of 
 - `isRange: boolean` - defines, whether the range mode is activated for the slider
 
 @example:
-slider.events.on("Change", function(value, oldValue, isRange){
+slider.events.on("change", function(value, oldValue, isRange){
     console.log("The value of a slider has changed to "+slider.getValue());
 });
 

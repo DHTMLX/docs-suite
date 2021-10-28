@@ -14,7 +14,7 @@ description: You can explore the mouseDown event of Slider in the documentation 
 `event: event` - the native event object
 
 @example:
-slider.events.on("MouseDown", function(e){
+slider.events.on("mouseDown", function(e){
     // your code here
 });
 

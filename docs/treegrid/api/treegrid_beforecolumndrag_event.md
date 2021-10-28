@@ -18,7 +18,7 @@ description: You can explore the beforeColumnDrag event of TreeGrid in the docum
 Return `false` to prevent dragging of a column; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeColumnDrag", function(data, events){
+treegrid.events.on("beforeColumnDrag", function(data, events){
 	// your logic here
     return false;
 });

@@ -17,7 +17,7 @@ description: You can explore the beforeClose event of Tabbar in the documentatio
 Return `false` to prevent closing of a tab; otherwise, `true`.
 
 @example:
-tabbar.events.on("BeforeClose", function(id){
+tabbar.events.on("beforeClose", function(id){
     // your logic here
     return true;
 });

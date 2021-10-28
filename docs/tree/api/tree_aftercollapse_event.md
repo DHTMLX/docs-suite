@@ -14,7 +14,7 @@ description: You can explore the afterCollapse event of Tree in the documentatio
 `id: string | number` - the id of a collapsed item
 
 @example:
-tree.events.on("AfterCollapse", function(id) {
+tree.events.on("afterCollapse", function(id) {
     // your logic here
 });
 

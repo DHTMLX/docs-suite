@@ -18,7 +18,7 @@ description: You can explore the beforeEditEnd event of List in the documentatio
 Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
-list.events.on("BeforeEditEnd", function(value,id){
+list.events.on("beforeEditEnd", function(value,id){
 	// your logic here
     return false;
 });

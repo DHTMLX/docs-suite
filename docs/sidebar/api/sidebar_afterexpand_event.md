@@ -11,7 +11,7 @@ description: You can explore the afterExpand event of Sidebar in the documentati
 @signature: {'afterExpand: () => void;'}
 
 @example:
-sidebar.events.on("AfterExpand", function() {
+sidebar.events.on("afterExpand", function() {
     // your logic here
 });
 

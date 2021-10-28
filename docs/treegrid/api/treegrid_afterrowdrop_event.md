@@ -15,7 +15,7 @@ description: You can explore the afterRowDrop event of TreeGrid in the documenta
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("AfterRowDrop", function(data, events) {
+treegrid.events.on("afterRowDrop", function(data, events) {
     // your logic here
 });
 

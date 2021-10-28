@@ -15,7 +15,7 @@ description: You can explore the dragColumnOut event of TreeGrid in the document
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("DragColumnOut", function(data, events) {
+treegrid.events.on("dragColumnOut", function(data, events) {
   // your logic here
 });
 

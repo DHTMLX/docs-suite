@@ -15,7 +15,7 @@ description: You can explore the dragIn event of Tree in the documentation of th
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("DragIn", function(data, events) {
+tree.events.on("dragIn", function(data, events) {
     // your logic here
 });
 

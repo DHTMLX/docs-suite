@@ -14,7 +14,7 @@ description: You can explore the beforeExpand event of Sidebar in the documentat
 Return `false` to prevent expanding a sidebar; otherwise, `true`.
 
 @example:
-sidebar.events.on("BeforeExpand", function() {
+sidebar.events.on("beforeExpand", function() {
     // your logic here
     return true;
 });

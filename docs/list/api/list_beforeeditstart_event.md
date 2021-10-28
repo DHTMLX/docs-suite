@@ -17,7 +17,7 @@ description: You can explore the beforeEditStart event of List in the documentat
 Return `false` to block item editing; otherwise, `true`.
 
 @example:
-list.events.on("BeforeEditStart", function(value,id){
+list.events.on("beforeEditStart", function(value,id){
 	// your logic here
     return false;
 });

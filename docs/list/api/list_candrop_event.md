@@ -15,7 +15,7 @@ description: You can explore the canDrop event of List in the documentation of t
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("CanDrop", function(data, events) {
+list.events.on("canDrop", function(data, events) {
     // your logic here
 });
 

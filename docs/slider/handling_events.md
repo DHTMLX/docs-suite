@@ -11,7 +11,7 @@ description: You can explore the event handling of Slider in the documentation o
 You can attach event listeners with the **slider.events.on()** method:
 
 ~~~js
-slider.events.on("Change", function(newValue, oldValue, isRange){
+slider.events.on("change", function(newValue, oldValue, isRange){
     console.log("The value of a slider has changed to "+slider.getValue());
 });
 ~~~
@@ -25,11 +25,11 @@ slider.events.on("Change", function(newValue, oldValue, isRange){
 To detach events, use **slider.events.detach()**:
 
 ~~~js
-slider.events.on("Change", function(newValue, oldValue, isRange) {
+slider.events.on("change", function(newValue, oldValue, isRange) {
     console.log("The value of a slider has changed to "+slider.getValue());
 });
 
-slider.events.detach("Change");
+slider.events.detach("change");
 ~~~
 
 ## Calling events

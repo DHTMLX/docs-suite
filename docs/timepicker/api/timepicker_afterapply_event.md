@@ -14,7 +14,7 @@ description: You can explore the afterApply event of Timepicker in the documenta
 `value: string | object` - the value of a timepicker
 
 @example:
-timepicker.events.on("AfterApply", function(value) {
+timepicker.events.on("afterApply", function(value) {
     console.log(value);
 });
 

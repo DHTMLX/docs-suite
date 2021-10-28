@@ -17,7 +17,7 @@ description: You can explore the beforeKeyDown event of Grid in the documentatio
 Return `false` to prevent pressing a shortcut key; otherwise, `false`.
 
 @example:
-grid.events.on("BeforeKeyDown", function (e) {
+grid.events.on("beforeKeyDown", function (e) {
     // your logic here
     // return true
 });

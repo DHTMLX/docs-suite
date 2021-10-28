@@ -14,7 +14,7 @@ description: You can explore the mouseUp event of Slider in the documentation of
 `event: Event` - the native event object
 
 @example:
-slider.events.on("MouseUp", function(e){
+slider.events.on("mouseUp", function(e){
     // your code here
 });
 

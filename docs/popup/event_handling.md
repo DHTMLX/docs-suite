@@ -11,7 +11,7 @@ description: You can explore the event handling of Popup in the documentation of
 You can attach event listeners with the **popup.events.on()** method:
 
 ~~~js
-popup.events.on("Click", function(e){
+popup.events.on("click", function(e){
     console.log("The popup was clicked");
 });
 ~~~
@@ -25,11 +25,11 @@ popup.events.on("Click", function(e){
 To detach events, use **popup.events.detach()**:
 
 ~~~js
-popup.events.on("Click", function(e){
+popup.events.on("click", function(e){
     console.log("The popup was clicked");
 });
 
-popup.events.detach("Click");
+popup.events.detach("click");
 ~~~
 
 ## Calling events
