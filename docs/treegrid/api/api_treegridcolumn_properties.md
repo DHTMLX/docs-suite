@@ -72,7 +72,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column <br/>
+			<td>(<i>number</i>) the minimal width to be set for a column. The minimal width of a column is 20px. <br/>
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cpgjyoxn" target="_blank">TreeGrid. Min Width</a>
 			</td>
 		</tr>

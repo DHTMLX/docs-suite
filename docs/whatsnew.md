@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.2.5
+-----------------
+Released on October 28, 2021
+
+### Fixes
+
+- Form. Timepicker control. Fix the issue with setting the time in the timepicker using the keyboard
+- Grid, TreeGrid. Now the value of the option will be displayed both in the editor and a cell if the options of the "combobox" and "select" editors are set as an array of objects with the `id-value` combinations
+- Grid, TreeGrid. Now the width of the column is calculated depending on the following properties: **minWidth**/ **maxWidth**, **adjust**, and **autoWidth**
+- Grid, TreeGrid. Now there is the ability to set the options of the "select" editor of a cell as an array of objects with the `id-value` combinations 
+- Grid. Fix the issue which caused the method of dragging a column to be called after clicking the in-header filter of a column (in Firefox only)
+- Grid. Fix the issue with key navigation when working with several grids
+- Grid. Fix the issue with the **autoWidth** property which caused the minimal width of the column not being taken into account when calculating the column's width
+- Grid. TreeGrid. Fix the issue which caused data of the treegrid to be changed after filtering and dragging a column/row
+
 Version 7.2.4
 ----------------
 Released on October 13, 2021

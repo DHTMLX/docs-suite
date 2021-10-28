@@ -81,7 +81,7 @@ description: You can explore the Grid column properties of Grid in the documenta
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column <br/> 
+			<td>(<i>number</i>) the minimal width to be set for a column. The minimal width of a column is 20px. <br/> 
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Min Width</a>
             </td>
 		</tr>
