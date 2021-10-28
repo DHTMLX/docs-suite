@@ -14,7 +14,7 @@ description: You can explore the afterEditStart event of DataView in the documen
 `id: string | number` - the id of an item
 
 @example:
-dataview.events.on("AfterEditStart", function(id){
+dataview.events.on("afterEditStart", function(id){
 	// your logic here
 });
 

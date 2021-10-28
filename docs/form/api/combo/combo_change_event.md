@@ -14,8 +14,8 @@ description: You can explore the change event of the Combo Box control of Form i
 `value: string | string[]` - the id(s) of newly selected item(s) from data collection
 
 @example:
-form.getItem("combo").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("combo").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

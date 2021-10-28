@@ -15,7 +15,7 @@ description: You can explore the cancelDrop event of DataView in the documentati
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-dataview.events.on("CancelDrop", function(data, events) {
+dataview.events.on("cancelDrop", function(data, events) {
     // your logic here
 });
 

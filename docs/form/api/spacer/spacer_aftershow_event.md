@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Spacer control of Form i
 `value: undefined` - the current value of the control, null
 
 @example:
-form.getItem("spacer").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("spacer").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

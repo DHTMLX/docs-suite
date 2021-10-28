@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Input control of Form in
 `value: string | number` - the current value of the control
 
 @example:
-form.getItem("input").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("input").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

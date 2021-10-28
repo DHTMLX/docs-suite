@@ -14,8 +14,8 @@ description: You can explore the change event of the Slider control of Form in t
 `value: number[]` - the current value of the control
 
 @example:
-form.getItem("slider").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("slider").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

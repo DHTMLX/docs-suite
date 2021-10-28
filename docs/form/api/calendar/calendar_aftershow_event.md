@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Datepicker control of Fo
 `value: string | Date` - the current value of the control
 
 @example:
-form.getItem("datepicker").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("datepicker").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Datepicker control of Fo
 - `init: boolean` - *true*, if the event is triggered on the datepicker control initialization
 
 @example:
-form.getItem("datepicker").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("datepicker").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @descr:

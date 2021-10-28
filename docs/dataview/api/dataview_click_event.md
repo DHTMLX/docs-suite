@@ -15,7 +15,7 @@ description: You can explore the click event of DataView in the documentation of
 - `events: Event` - a native event object
 
 @example:
-dataview.events.on("Click", function(id, e){
+dataview.events.on("click", function(id, e){
    console.log("The item with the id "+ dataview.selection.getId(id) +" was clicked.");
 });
 

@@ -17,8 +17,8 @@ description: You can explore the beforeValidate event of the Datepicker control 
 Return `false` to cancel the default action of the event; otherwise - `true`.
 
 @example:
-form.getItem("datepicker").events.on("BeforeValidate", function(value) {
-    console.log("BeforeValidate", value);
+form.getItem("datepicker").events.on("beforeValidate", function(value) {
+    console.log("beforeValidate", value);
     return true;
 });
 

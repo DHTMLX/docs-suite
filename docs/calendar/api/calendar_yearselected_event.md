@@ -14,7 +14,7 @@ description: You can explore the yearSelected event of Calendar in the documenta
 `year: number` - the number of the selected year
 
 @example:
-calendar.events.on("YearSelected", function(year) {
+calendar.events.on("yearSelected", function(year) {
     console.log("Selected year: " + year);
 });
 

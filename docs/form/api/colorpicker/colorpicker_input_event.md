@@ -14,8 +14,8 @@ description: You can explore the input event of the Colorpicker control of Form 
 `inputValue: string` - an entered value
 
 @example:
-form.getItem("colorpicker").events.on("Input", function(inputValue) {
-    console.log("Input", inputValue);
+form.getItem("colorpicker").events.on("input", function(inputValue) {
+    console.log("input", inputValue);
 });
 
 @descr:

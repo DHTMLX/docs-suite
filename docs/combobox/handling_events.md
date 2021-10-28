@@ -24,7 +24,7 @@ The user can add any user-defined handler to any of the available events. To do 
 </table>
 
 ~~~js
-combo.events.on("Open", function() {
+combo.events.on("open", function() {
 	// your logic here
 });
 ~~~
@@ -42,11 +42,11 @@ The names of the events are case-insensitive.
 There is a simple way of removing an event handler via the **combo.events.detach()** method:
 
 ~~~js
-combo.events.on("Open", function() {
+combo.events.on("open", function() {
     // your logic here
 });
 
-combo.events.detach("Open");
+combo.events.detach("open");
 ~~~
 
 ## Calling events

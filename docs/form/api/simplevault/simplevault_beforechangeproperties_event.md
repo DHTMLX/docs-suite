@@ -17,8 +17,8 @@ description: You can explore the beforeChangeProperties Sevent of the Simple Vau
 Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
-form.getItem("simplevault").events.on("BeforeChangeProperties", function(properties) {
-    console.log("BeforeChangeProperties", properties);
+form.getItem("simplevault").events.on("beforeChangeProperties", function(properties) {
+    console.log("beforeChangeProperties", properties);
     return true;
 });
 

@@ -11,7 +11,7 @@ description: You can explore the cancelClick event of Calendar in the documentat
 @signature: {'cancelClick: () => void;'}
 
 @example:
-calendar.events.on("CancelClick", function() {
+calendar.events.on("cancelClick", function() {
     // your logic here
 });
 

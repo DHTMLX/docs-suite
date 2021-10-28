@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Button control of Form i
 - `init: boolean` - *true*, if the event is triggered on the button control initialization
 
 @example:
-form.getItem("button").events.on("AfterHide", function(text, init) {
-    console.log("AfterHide", text, init);
+form.getItem("button").events.on("afterHide", function(text, init) {
+    console.log("afterHide", text, init);
 });
 
 @descr:

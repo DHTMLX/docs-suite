@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Simple Vault control of 
 `value: array` - the current value of the control
 
 @example:
-form.getItem("simplevault").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("simplevault").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

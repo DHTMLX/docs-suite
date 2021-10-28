@@ -15,7 +15,7 @@ description: You can explore the itemRightClick event of DataView in the documen
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-dataview.events.on("ItemRightClick", function(id, e){
+dataview.events.on("itemRightClick", function(id, e){
     // your code here
 });
 

@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Checkbox control of Form
 `value: string | boolean` - the current value of the control
 
 @example:
-form.getItem("checkbox").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("checkbox").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

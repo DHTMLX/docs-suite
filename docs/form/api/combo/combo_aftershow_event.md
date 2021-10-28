@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Combo Box control of For
 `value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
 
 @example:
-form.getItem("combo").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("combo").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

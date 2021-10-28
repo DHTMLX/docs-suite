@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Slider control of Form i
 `value: number[]` - the current value of the control
 
 @example:
-form.getItem("slider").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("slider").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

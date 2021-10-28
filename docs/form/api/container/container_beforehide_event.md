@@ -18,8 +18,8 @@ description: You can explore the beforeHide event of the Container control of Fo
 Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("container").events.on("BeforeHide", function(text, init) {
-    console.log("BeforeHide", text, init);
+form.getItem("container").events.on("beforeHide", function(text, init) {
+    console.log("beforeHide", text, init);
     return true;
 });
 

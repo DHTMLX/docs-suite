@@ -18,8 +18,8 @@ description: You can explore the beforeHide event of the Button control of Form 
 Return `false` to prevent a control from being hidden; otherwise - `true`.
 
 @example:
-form.getItem("button").events.on("BeforeHide", function(text, init) {
-    console.log("BeforeHide", text, init);
+form.getItem("button").events.on("beforeHide", function(text, init) {
+    console.log("beforeHide", text, init);
     return true;
 });
 

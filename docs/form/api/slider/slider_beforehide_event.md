@@ -18,8 +18,8 @@ description: You can explore the beforeHide event of the Slider control of Form 
 Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("slider").events.on("BeforeHide", function(value, init) {
-    console.log("BeforeHide", value, init);
+form.getItem("slider").events.on("beforeHide", function(value, init) {
+    console.log("beforeHide", value, init);
     return true;
 });
 

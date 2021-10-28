@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Spacer control of Form i
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
-form.getItem("spacer").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("spacer").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @descr:

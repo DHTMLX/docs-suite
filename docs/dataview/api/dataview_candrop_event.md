@@ -15,7 +15,7 @@ description: You can explore the canDrop event of DataView in the documentation 
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-dataview.events.on("CanDrop", function(data, events) {
+dataview.events.on("canDrop", function(data, events) {
     // your logic here
 });
 

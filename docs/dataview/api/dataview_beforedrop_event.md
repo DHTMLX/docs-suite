@@ -18,7 +18,7 @@ description: You can explore the beforeDrop event of DataView in the documentati
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-dataview.events.on("BeforeDrop", function(data, events) {
+dataview.events.on("beforeDrop", function(data, events) {
     // your logic here
     return false;
 });

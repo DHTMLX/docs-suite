@@ -14,8 +14,8 @@ description: You can explore the change event of the Simple Vault control of For
 `value: array` - the current value of the control
 
 @example:
-form.getItem("simplevault").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("simplevault").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

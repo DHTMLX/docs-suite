@@ -14,8 +14,8 @@ description: You can explore the change event of the Input control of Form in th
 `value: string | number` - the current value of the control
 
 @example:
-form.getItem("input").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("input").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

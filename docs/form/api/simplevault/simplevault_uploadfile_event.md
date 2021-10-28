@@ -16,8 +16,8 @@ description: You can explore the uploadFile event of the Simple Vault control of
 - `extra: any` - the server response
 
 @example:
-form.getItem("simpleVault").events.on("UploadFile", function(file, value, extra) {
-    console.log("UploadFile", file, value, extra);
+form.getItem("simpleVault").events.on("uploadFile", function(file, value, extra) {
+    console.log("uploadFile", file, value, extra);
 });
 
 @descr:

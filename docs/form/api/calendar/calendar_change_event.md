@@ -14,8 +14,8 @@ description: You can explore the change event of the Datepicker control of Form 
 `value: string | Date` - the current value of the control
 
 @example:
-form.getItem("datepicker").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("datepicker").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

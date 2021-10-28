@@ -18,8 +18,8 @@ description: You can explore the beforeHide event of the Combo Box control of Fo
 Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("combo").events.on("BeforeHide", function(value, init) {
-    console.log("BeforeHide", value, init);
+form.getItem("combo").events.on("beforeHide", function(value, init) {
+    console.log("beforeHide", value, init);
     return true;
 });
 

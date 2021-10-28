@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Combo Box control of For
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
-form.getItem("combo").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("combo").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @descr:

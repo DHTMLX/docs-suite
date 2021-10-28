@@ -14,8 +14,8 @@ description: You can explore the change event of the Textarea control of Form in
 `value: string` - the current value of the control
 
 @example:
-form.getItem("textarea").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("textarea").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

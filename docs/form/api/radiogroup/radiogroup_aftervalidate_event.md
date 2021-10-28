@@ -15,8 +15,8 @@ description: You can explore the afterValidate event of the Radiogroup control o
 - `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("radiogroup").events.on("AfterValidate", function(value, isValidate) {
-    console.log("AfterValidate", value, isValidate);
+form.getItem("radiogroup").events.on("afterValidate", function(value, isValidate) {
+    console.log("afterValidate", value, isValidate);
 });
 
 @descr:

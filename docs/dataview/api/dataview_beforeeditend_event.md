@@ -18,7 +18,7 @@ description: You can explore the beforeEditEnd event of DataView in the document
 Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
-dataview.events.on("BeforeEditEnd", function(value,id){
+dataview.events.on("beforeEditEnd", function(value,id){
 	// your logic here
     return false;
 });

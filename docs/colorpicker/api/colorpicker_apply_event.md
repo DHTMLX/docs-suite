@@ -11,7 +11,7 @@ description: You can explore the apply event of Colorpicker in the documentation
 @signature: {'apply: () => void;'}
 
 @example:
-colorpicker.events.on("Apply", function() {
+colorpicker.events.on("apply", function() {
     // your logic here
 });
 

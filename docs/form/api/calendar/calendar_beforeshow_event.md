@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Datepicker control of F
 Return `false` to prevent a control from being shown; otherwise - `true`.
 
 @example:
-form.getItem("datepicker").events.on("BeforeShow", function(value) {
-    console.log("BeforeShow", value);
+form.getItem("datepicker").events.on("beforeShow", function(value) {
+    console.log("beforeShow", value);
     return true;
 });
 

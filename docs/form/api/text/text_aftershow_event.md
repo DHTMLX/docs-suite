@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Text control of Form in 
 `value: string | number` - the current value of the control
 
 @example:
-form.getItem("text").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("text").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

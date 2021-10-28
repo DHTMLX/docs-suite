@@ -15,7 +15,7 @@ description: You can explore the afterDrop event of DataView in the documentatio
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-dataview.events.on("AfterDrop", function(data, events) {
+dataview.events.on("afterDrop", function(data, events) {
     // your logic here
 });
 

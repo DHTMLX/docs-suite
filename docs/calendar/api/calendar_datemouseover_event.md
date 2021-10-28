@@ -15,7 +15,7 @@ description: You can explore the dateMouseOver event of Calendar in the document
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-calendar.events.on("DateMouseOver", function(date, e) {
+calendar.events.on("dateMouseOver", function(date, e) {
     dhx.tooltip(date, {node: e.target, position: "bottom"});
 });
 

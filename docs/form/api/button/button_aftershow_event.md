@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Button control of Form i
 `text: string` - the current text label of the control
 
 @example:
-form.getItem("button").events.on("AfterShow", function(text) {
-    console.log("AfterShow", text);
+form.getItem("button").events.on("afterShow", function(text) {
+    console.log("afterShow", text);
 });
 
 @descr:

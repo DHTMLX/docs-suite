@@ -14,8 +14,8 @@ description: You can explore the change event of the Checkbox control of Form in
 `value: string | boolean` - the current value of the control
 
 @example:
-form.getItem("checkbox").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("checkbox").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

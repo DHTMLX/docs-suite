@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Radiogroup c
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.getItem("radiogroup").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("radiogroup").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @descr:
