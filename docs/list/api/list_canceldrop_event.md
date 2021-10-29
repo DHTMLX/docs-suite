@@ -15,7 +15,7 @@ description: You can explore the cancelDrop event of List in the documentation o
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("CancelDrop", function(data, events) {
+list.events.on("cancelDrop", function(data, events) {
     // your logic here
 });
 

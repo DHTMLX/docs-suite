@@ -17,7 +17,7 @@ description: You can explore the beforeUnSelect event of Selection in the docume
 Return `false` to prevent unselecting of an item; otherwise, `true`.
 
 @example:
-component.selection.events.on("BeforeUnSelect", function(id) {
+component.selection.events.on("beforeUnSelect", function(id) {
     console.log(id);
     return false;
 });
@@ -29,7 +29,7 @@ component.selection.events.on("BeforeUnSelect", function(id) {
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-component.events.on("BeforeUnSelect", function(id) {
+component.events.on("beforeUnSelect", function(id) {
     console.log(id);
     return false;
 });

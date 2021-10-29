@@ -15,7 +15,7 @@ description: You can explore the itemMouseOver event of DataView in the document
 - `e: Event` - a native event object
 
 @example:
-dataview.events.on("ItemMouseOver", function(id, event) {
+dataview.events.on("itemMouseOver", function(id, event) {
     console.log("Item id:" + id);
 );
 

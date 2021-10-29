@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Colorpicker control of F
 - `init: boolean` - *true*, if the event is triggered on the colorpicker control initialization
 
 @example:
-form.getItem("colorpicker").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("colorpicker").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @descr:

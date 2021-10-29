@@ -14,7 +14,7 @@ description: You can explore the scroll event of Grid in the documentation of th
 `scrollState: object` - an object with new top and left coordinates
 
 @example:
-grid.events.on("Scroll", function({top,left}){
+grid.events.on("scroll", function({top,left}){
     console.log("The grid is scrolled to "+top,left);
 });
 

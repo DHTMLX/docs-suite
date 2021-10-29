@@ -17,8 +17,8 @@ description: You can explore the beforeChangeProperties event of the Button cont
 Return `false` to cancel the default action of the event; otherwise, return `true`.
 
 @example:
-form.getItem("button").events.on("BeforeChangeProperties", function(properties) {
-    console.log("BeforeChangeProperties", properties);
+form.getItem("button").events.on("beforeChangeProperties", function(properties) {
+    console.log("beforeChangeProperties", properties);
     return true;
 });
 

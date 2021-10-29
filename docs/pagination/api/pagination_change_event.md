@@ -15,7 +15,7 @@ description: You can explore the change event of Pagination in the documentation
 - `previousIndex: number` - the index of a previously active page
 
 @example:
-pagination.events.on("Change", function(index, previousIndex) {
+pagination.events.on("change", function(index, previousIndex) {
   // your logic here
 });
 

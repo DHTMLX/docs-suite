@@ -14,8 +14,8 @@ description: You can explore the input Timepicker event of Form in the documenta
 `inputValue: string` - an entered value
 
 @example:
-form.getItem("timepicker").events.on("Input", function(inputValue) {
-    console.log("Input", inputValue);
+form.getItem("timepicker").events.on("input", function(inputValue) {
+    console.log("input", inputValue);
 });
 
 @descr:

@@ -18,7 +18,7 @@ description: You can explore the beforeColumnDrag event of Grid in the documenta
 Return `false` to prevent dragging a column; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeColumnDrag", function(data, events){
+grid.events.on("beforeColumnDrag", function(data, events){
 	// your logic here
     return false;
 });

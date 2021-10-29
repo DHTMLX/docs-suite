@@ -14,7 +14,7 @@ description: You can explore the beforeCollapse event of Sidebar in the document
 Return `false` to prevent collapsing a sidebar; otherwise,`true`.
 
 @example:
-sidebar.events.on("BeforeCollapse", function() {
+sidebar.events.on("beforeCollapse", function() {
     // your logic here
     return false;
 });

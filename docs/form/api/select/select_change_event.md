@@ -14,8 +14,8 @@ description: You can explore the change event of the Select control of Form in t
 `value: string | number` - the current value of the control
 
 @example:
-form.getItem("select").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("select").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

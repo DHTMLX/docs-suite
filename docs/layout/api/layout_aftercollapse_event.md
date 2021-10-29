@@ -14,7 +14,7 @@ description: You can explore the afterCollapse event of Layout in the documentat
 `id: string` - the id of a cell
 
 @example:
-layout.events.on("AfterCollapse", function(id){
+layout.events.on("afterCollapse", function(id){
 	// your logic here
 });
 

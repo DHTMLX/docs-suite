@@ -27,7 +27,7 @@ You can add any handler to the events of Ribbon and its TreeCollection. To do th
 <br/>
 
 ~~~js
-ribbon.events.on("Click", function(id,e){
+ribbon.events.on("click", function(id,e){
 	console.log(id,e);
 });
 ~~~
@@ -45,11 +45,11 @@ The names of the events are case-insensitive.
 There is a simple way of removing an event-handler. Call the **ribbon.events.detach()** method:
 
 ~~~js
-ribbon.events.on("Click", function(id,e){
+ribbon.events.on("click", function(id,e){
 	console.log(id,e);
 });
 
-ribbon.events.detach("Click"); 
+ribbon.events.detach("click"); 
 ~~~
 
 ## Calling events

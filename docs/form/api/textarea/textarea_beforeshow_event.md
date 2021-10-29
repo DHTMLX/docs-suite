@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Textarea control of For
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("textarea").events.on("BeforeShow", function(value) {
-    console.log("BeforeShow", value);
+form.getItem("textarea").events.on("beforeShow", function(value) {
+    console.log("beforeShow", value);
     return true;
 });
 

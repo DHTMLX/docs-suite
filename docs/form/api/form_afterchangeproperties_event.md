@@ -15,8 +15,8 @@ description: You can explore the afterChangeProperties event of Form in the docu
 - `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.events.on("AfterChangeProperties", function(name, properties) {
-    console.log("AfterChangeProperties", name,  properties);
+form.events.on("afterChangeProperties", function(name, properties) {
+    console.log("afterChangeProperties", name,  properties);
 });
 
 @descr:

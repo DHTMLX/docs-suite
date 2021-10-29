@@ -14,7 +14,7 @@ description: You can explore the expand event of TreeGrid in the documentation o
 `rowId:string | number` - the id of an expanded row
 
 @example:
-grid.events.on("Expand", function(rowId){
+grid.events.on("expand", function(rowId){
     // your logic here
 });
 

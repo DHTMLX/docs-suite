@@ -15,7 +15,7 @@ description: You can explore the toggleSeries event of Chart in the documentatio
 - `pieLike: object | undefined` - an object with the configuration of a series in a legend (only for Pie, Pie 3D and Donut charts)
 
 @example:
-chart.events.on("ToggleSeries", function(id){
+chart.events.on("toggleSeries", function(id){
     console.log("The "+id+" series is toggled");
 });
 

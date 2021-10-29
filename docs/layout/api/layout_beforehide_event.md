@@ -17,7 +17,7 @@ description: You can explore the beforeHide event of Layout in the documentation
 Return `false` to prevent a cell from being hidden; otherwise, `true`.
 
 @example:
-layout.events.on("BeforeHide", function(id){
+layout.events.on("beforeHide", function(id){
 	// your logic here
     return false;
 });

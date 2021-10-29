@@ -25,7 +25,7 @@ You can add any handler to the events of Toolbar. To do this, use the **toolbar.
 <br/>
 
 ~~~js
-toolbar.events.on("Click", function(id,e){
+toolbar.events.on("click", function(id,e){
     console.log(id);
 });
 ~~~
@@ -41,11 +41,11 @@ Several handlers can be attached to one and the same event, and all of them will
 There is a simple way of removing an event handler with the **toolbar.events.detach()** method:
 
 ~~~js
-toolbar.events.on("Click", function(id,e){
+toolbar.events.on("click", function(id,e){
     console.log(id);
 });
 
-toolbar.events.detach("Click"); 
+toolbar.events.detach("click"); 
 ~~~
 
 ## Calling events

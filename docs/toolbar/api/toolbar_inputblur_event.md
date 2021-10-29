@@ -14,7 +14,7 @@ description: You can explore the inputBlur event of Toolbar in the documentation
 `id: string | number` - the ID of a new control
 
 @example:
-toolbar.events.on("InputBlur", function(id){
+toolbar.events.on("inputBlur", function(id){
     console.log(id);
 });
 

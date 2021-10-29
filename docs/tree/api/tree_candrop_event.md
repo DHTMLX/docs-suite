@@ -15,7 +15,7 @@ description: You can explore the canDrop event of Tree in the documentation of t
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("CanDrop", function(data, events) {
+tree.events.on("canDrop", function(data, events) {
     // your logic here
 });
 

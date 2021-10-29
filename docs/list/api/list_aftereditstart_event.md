@@ -14,7 +14,7 @@ description: You can explore the afterEditStart event of List in the documentati
 `id: string | number` - the id of an item
 
 @example:
-list.events.on("AfterEditStart", function(id){
+list.events.on("afterEditStart", function(id){
 	// your logic here
 });
 

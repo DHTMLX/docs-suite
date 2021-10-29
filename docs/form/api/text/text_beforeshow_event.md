@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Text control of Form in
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("text").events.on("BeforeShow", function(value) {
-    console.log("BeforeShow", value);
+form.getItem("text").events.on("beforeShow", function(value) {
+    console.log("beforeShow", value);
     return true;
 });
 

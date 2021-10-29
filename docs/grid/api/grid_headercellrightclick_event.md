@@ -15,7 +15,7 @@ description: You can explore the headerCellRightClick event of Grid in the docum
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellRightClick", function(col,e){
+grid.events.on("headerCellRightClick", function(col,e){
     // your logic here
 });
 

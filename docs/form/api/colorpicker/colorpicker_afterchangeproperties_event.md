@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Colorpicker 
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.getItem("colorpicker").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("colorpicker").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @descr:

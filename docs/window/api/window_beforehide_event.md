@@ -18,7 +18,7 @@ description: You can explore the beforeHide event of Window in the documentation
 Return `true` to hide a window, `false` to block hiding a window.
 
 @example:
-dhxWindow.events.on("BeforeHide", function(position, events){
+dhxWindow.events.on("beforeHide", function(position, events){
     console.log("A window will be hidden", events);
     return true;
 });

@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Checkbox con
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.getItem("checkbox").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("checkbox").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @descr:

@@ -15,7 +15,7 @@ description: You can explore the footerCellMouseDown event of Grid in the docume
 - `e: MouseEvent & TouchEvent` - a native HTML event object
 
 @example:
-grid.events.on("FooterCellMouseDown", function(col,e){
+grid.events.on("footerCellMouseDown", function(col,e){
     // your logic here
 });
 

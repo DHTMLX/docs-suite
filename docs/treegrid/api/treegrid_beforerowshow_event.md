@@ -17,7 +17,7 @@ description: You can explore the beforeRowShow event of TreeGrid in the document
 Return `false` to prevent a row from being shown; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeRowShow", function(row){
+treegrid.events.on("beforeRowShow", function(row){
     // your logic here
     return false;
 });

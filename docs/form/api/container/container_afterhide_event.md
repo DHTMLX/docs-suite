@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Container control of For
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
-form.getItem("container").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("container").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @changelog: added in v7.2

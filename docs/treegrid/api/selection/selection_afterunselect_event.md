@@ -15,7 +15,7 @@ description: You can explore the afterUnSelect event of TreeGrid in the document
 - `col: object` - the config of a column
 
 @example:
-treegrid.selection.events.on("AfterUnSelect", function(row, col){
+treegrid.selection.events.on("afterUnSelect", function(row, col){
     console.log("afterUnSelect", row, col); 
 });
 
@@ -24,7 +24,7 @@ treegrid.selection.events.on("AfterUnSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-treegrid.events.on("AfterUnSelect", function(row, col){
+treegrid.events.on("afterUnSelect", function(row, col){
     console.log("afterUnSelect", row, col); 
 });
 ~~~

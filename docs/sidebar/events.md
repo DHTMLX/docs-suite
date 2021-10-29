@@ -25,7 +25,7 @@ You can add any handler to the events of Sidebar. To do this, use the **sidebar.
 <br/>
 
 ~~~js
-sidebar.events.on("Click", function(id,e){
+sidebar.events.on("click", function(id,e){
     console.log(id);
 });
 ~~~
@@ -41,11 +41,11 @@ Several handlers can be attached to one and the same event, and all of them will
 There is a simple way of removing an event handler with the **sidebar.events.detach()** method:
 
 ~~~js
-sidebar.events.on("Click", function(id,e){
+sidebar.events.on("click", function(id,e){
     console.log(id);
 });
 
-sidebar.events.detach("Click"); 
+sidebar.events.detach("click"); 
 ~~~
 
 ## Calling events

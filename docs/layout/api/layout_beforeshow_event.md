@@ -17,7 +17,7 @@ description: You can explore the beforeShow event of Layout in the documentation
 Return `false` to prevent a cell from being shown; otherwise, `true`.
 
 @example:
-layout.events.on("BeforeShow", function(id){
+layout.events.on("beforeShow", function(id){
 	// your logic here
     return false;
 });

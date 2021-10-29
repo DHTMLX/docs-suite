@@ -14,7 +14,7 @@ description: You can explore the monthSelected event of Calendar in the document
 `month: number` - the number of the selected month (from 0 to 11)
 
 @example:
-calendar.events.on("MonthSelected", function(month) {
+calendar.events.on("monthSelected", function(month) {
    console.log("Selected month: " + (month + 1));
 });
 

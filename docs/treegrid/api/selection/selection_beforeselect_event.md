@@ -19,7 +19,7 @@ description: You can explore the beforeSelect event of TreeGrid in the documenta
 Return `false` to prevent selecting of a cell; otherwise, `true`.
 
 @example:
-treegrid.selection.events.on("BeforeSelect", function(row, col){
+treegrid.selection.events.on("beforeSelect", function(row, col){
     console.log("beforeSelect", row, col); 
     return false;
 });
@@ -29,7 +29,7 @@ treegrid.selection.events.on("BeforeSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-treegrid.events.on("BeforeSelect", function(row, col){
+treegrid.events.on("beforeSelect", function(row, col){
     console.log("beforeSelect", row, col); 
     return false;
 });

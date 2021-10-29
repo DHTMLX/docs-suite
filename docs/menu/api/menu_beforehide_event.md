@@ -18,7 +18,7 @@ description: You can explore the beforeHide event of Menu in the documentation o
 Return `false` to prevent hiding of a menu item; otherwise, `true`.
 
 @example:
-menu.events.on("BeforeHide", function(id, event){
+menu.events.on("beforeHide", function(id, event){
     // your code here
     return false;
 });

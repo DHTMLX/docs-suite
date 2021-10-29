@@ -14,7 +14,7 @@ description: You can explore the inputBlur event of Ribbon in the documentation 
 `id: string | number` - the ID of a new control
 
 @example:
-ribbon.events.on("InputBlur", function(id){
+ribbon.events.on("inputBlur", function(id){
     console.log(id);
 });
 

@@ -11,7 +11,7 @@ description: You can explore the cancelClick event of Colorpicker in the documen
 @signature: {'cancelClick: () => void;'}
 
 @example:
-colorpicker.events.on("CancelClick",function(){
+colorpicker.events.on("cancelClick",function(){
 	// your logic here
 });
 

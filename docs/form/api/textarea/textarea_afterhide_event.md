@@ -16,7 +16,7 @@ description: You can explore the afterHide event of the Textarea control of Form
 
 @example:
 form.getItem("textarea").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+    console.log("afterHide", value, init);
 });
 
 @descr:

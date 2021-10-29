@@ -14,7 +14,7 @@ description: You can explore the loadError event of DataCollection in the docume
 `response: string | object` - info about the error
 
 @example:
-component.data.events.on("LoadError", function(error){
+component.data.events.on("loadError", function(error){
 	// your code here
 });
 

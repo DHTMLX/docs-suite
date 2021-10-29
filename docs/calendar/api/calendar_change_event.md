@@ -16,7 +16,7 @@ description: You can explore the change event of Calendar in the documentation o
 - `byClick: boolean` - defines whether the change happened because of a click on a date - *true*, or due to an API call - *false*
 
 @example:
-calendar.events.on("Change",function(date, oldDate, byClick){
+calendar.events.on("change",function(date, oldDate, byClick){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });

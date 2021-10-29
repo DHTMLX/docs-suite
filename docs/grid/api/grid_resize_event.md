@@ -15,7 +15,7 @@ description: You can explore the resize event of Grid in the documentation of th
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("Resize", function(col,e){
+grid.events.on("resize", function(col,e){
 	// your code here
 });
 

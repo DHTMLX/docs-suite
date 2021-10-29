@@ -14,7 +14,7 @@ description: You can explore the afterChangeProperties event of the Textarea con
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:s
-form.getItem("textarea").events.on("AfterChangeProperties", function(properties) {
+form.getItem("textarea").events.on("afterChangeProperties", function(properties) {
     console.log("AfterChangeProperties", properties);
 });
 

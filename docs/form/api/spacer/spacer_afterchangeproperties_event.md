@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Spacer contr
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.getItem("spacer").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("spacer").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @descr:

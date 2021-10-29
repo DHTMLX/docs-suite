@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Simple Vault control of 
 - `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @example:
-form.getItem("simplevault").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("simplevault").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @descr:

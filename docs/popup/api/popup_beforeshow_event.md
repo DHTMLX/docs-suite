@@ -17,7 +17,7 @@ description: You can explore the beforeShow event of Popup in the documentation 
 Return `true` to show a popup, `false` to block showing a popup.
 
 @example:
-popup.events.on("BeforeShow", function(element){
+popup.events.on("beforeShow", function(element){
     console.log("A popup will be shown");
     return true;
 });

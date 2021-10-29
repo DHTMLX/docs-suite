@@ -15,7 +15,7 @@ description: You can explore the click event of Sidebar in the documentation of 
 - `events: Event` - a native event object
 
 @example:
-sidebar.events.on("Click", function(id,e){
+sidebar.events.on("click", function(id,e){
     console.log(id);
 });
 

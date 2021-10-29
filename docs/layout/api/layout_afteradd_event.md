@@ -14,7 +14,7 @@ description: You can explore the afterAdd event of Layout in the documentation o
 `id: string` - the id of a cell
 
 @example:
-layout.events.on("AfterAdd", function(id){
+layout.events.on("afterAdd", function(id){
 	// your logic here
 });
 

@@ -17,7 +17,7 @@ description: You can explore the beforeApply event of Timepicker in the document
 Return `false` to prevent saving the timepicker value; otherwise, `true`.
 
 @example:
-timepicker.events.on("BeforeApply", function(value) {
+timepicker.events.on("beforeApply", function(value) {
     console.log(value);
     return false;
 });

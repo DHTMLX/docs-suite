@@ -15,7 +15,7 @@ description: You can explore the dragColumnIn event of Grid in the documentation
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("DragColumnIn", function(data, events) {
+grid.events.on("dragColumnIn", function(data, events) {
   // your logic here
 });
 

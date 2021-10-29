@@ -18,7 +18,7 @@ description: You can explore the beforeHide event of Sidebar in the documentatio
 Return `false` to prevent hiding of a sidebar item; otherwise, `true`.
 
 @example:
-sidebar.events.on("BeforeHide", function(id, event){
+sidebar.events.on("beforeHide", function(id, event){
     // your code here
     return false;
 });

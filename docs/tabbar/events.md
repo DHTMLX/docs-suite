@@ -25,7 +25,7 @@ You can add any handler to the events of Tabbar. To do this, use the **tabbar.ev
 <br/>
 
 ~~~js
-tabbar.events.on("AfterClose", function(id){
+tabbar.events.on("afterClose", function(id){
     console.log(id);
 });
 ~~~
@@ -41,11 +41,11 @@ Several handlers can be attached to one and the same event, and all of them will
 There is a simple way of removing an event handler with the **tabbar.events.detach()** method:
 
 ~~~js
-tabbar.events.on("AfterClose", function(id){
+tabbar.events.on("afterClose", function(id){
     console.log(id);
 });
 
-tabbar.events.detach("AfterClose"); 
+tabbar.events.detach("afterClose"); 
 ~~~
 
 ## Calling events

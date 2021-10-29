@@ -18,7 +18,7 @@ description: You can explore the beforeDrop event of List in the documentation o
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-list.events.on("BeforeDrop", function(data, events) {
+list.events.on("beforeDrop", function(data, events) {
     // your logic here
     return false;
 });

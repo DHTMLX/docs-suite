@@ -15,7 +15,7 @@ description: You can explore the dragColumnStart event of Grid in the documentat
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("DragColumnStart", function(data, events) {
+grid.events.on("dragColumnStart", function(data, events) {
   // your logic here
 });
 

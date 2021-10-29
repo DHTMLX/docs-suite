@@ -17,8 +17,8 @@ description: You can explore the beforeChangeProperties event of the Colorpicker
 Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
-form.getItem("colorpicker").events.on("BeforeChangeProperties", function(properties) {
-    console.log("BeforeChangeProperties", properties);
+form.getItem("colorpicker").events.on("beforeChangeProperties", function(properties) {
+    console.log("beforeChangeProperties", properties);
     return true;
 });
 

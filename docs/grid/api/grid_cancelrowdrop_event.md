@@ -15,7 +15,7 @@ description: You can explore the cancelRowDrop event of Grid in the documentatio
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("CancelRowDrop", function(data, events) {
+grid.events.on("cancelRowDrop", function(data, events) {
   // your logic here
 });
 

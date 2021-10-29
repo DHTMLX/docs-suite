@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Container co
 `properties: object` - an object with configuration properties of the control and their new values
 
 @example:
-form.getItem("container").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("container").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @changelog: added in v7.2

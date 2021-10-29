@@ -16,7 +16,7 @@ description: You can explore the cellMouseOver event of Grid in the documentatio
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("CellMouseOver", function(row,column,e){
+grid.events.on("cellMouseOver", function(row,column,e){
     // your logic here
 });
 

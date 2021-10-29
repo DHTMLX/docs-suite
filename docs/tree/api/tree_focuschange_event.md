@@ -15,7 +15,7 @@ description: You can explore the focusChange event of Tree in the documentation 
 - `id: string | number` - the id of an item
 
 @example:
-tree.events.on("FocusChange", function(index, id){
+tree.events.on("focusChange", function(index, id){
     // your code here
 });
 

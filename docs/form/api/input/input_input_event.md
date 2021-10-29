@@ -14,8 +14,8 @@ description: You can explore the input event of the Input control of Form in the
 `inputValue: string | number` - an entered value
 
 @example:
-form.getItem("input").events.on("Input", function(inputValue) {
-    console.log("Input", inputValue);
+form.getItem("input").events.on("input", function(inputValue) {
+    console.log("input", inputValue);
 });
 
 @descr:

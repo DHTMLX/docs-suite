@@ -17,7 +17,7 @@ description: You can explore the beforeRemove event of Layout in the documentati
 Return `false` to prevent removing of a cell; otherwise, `true`.
 
 @example:
-layout.events.on("BeforeRemove", function(id){
+layout.events.on("beforeRemove", function(id){
 	// your logic here
     return false;
 });

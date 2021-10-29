@@ -15,7 +15,7 @@ description: You can explore the doubleClick event of DataView in the documentat
 - `events: Event` - a native event object
 
 @example:
-dataview.events.on("DoubleClick", function(id, e){
+dataview.events.on("doubleClick", function(id, e){
    console.log("The item "+ dataview.selection.getId(id) +" was double clicked.");
 });
 

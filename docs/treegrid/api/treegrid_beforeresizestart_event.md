@@ -18,7 +18,7 @@ description: You can explore the beforeResizeStart event of TreeGrid in the docu
 Return `false` to block resizing of a column; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeResizeStart", function(col,e){
+grid.events.on("beforeResizeStart", function(col,e){
 	// your logic here
     return false;
 });

@@ -11,7 +11,7 @@ description: You can explore the event handling of Chart in the documentation of
 You can attach event listeners with the **chart.events.on()** method:
 
 ~~~js
-chart.events.on("Resize", function({width:500, height:500}){
+chart.events.on("resize", function({width:500, height:500}){
     console.log("The size of the chart has changed");
 });
 ~~~
@@ -23,11 +23,11 @@ chart.events.on("Resize", function({width:500, height:500}){
 To detach events, use the **chart.events.detach()** method:
 
 ~~~js
-chart.events.on("Resize", function({width:500, height:500}){
+chart.events.on("resize", function({width:500, height:500}){
     console.log("The size of the chart has changed");
 });
 
-chart.events.detach("Resize");
+chart.events.detach("resize");
 ~~~
 
 ## Calling events

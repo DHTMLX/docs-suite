@@ -18,7 +18,7 @@ description: You can explore the beforeRowDrag event of Grid in the documentatio
 Return `false` to prevent dragging a row; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeRowDrag", function(data, events){
+grid.events.on("beforeRowDrag", function(data, events){
 	// your logic here
     return false;
 });

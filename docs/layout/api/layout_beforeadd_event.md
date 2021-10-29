@@ -17,7 +17,7 @@ description: You can explore the beforeAdd event of Layout in the documentation 
 Return `false` to prevent adding of a cell; otherwise, `true`.
 
 @example:
-layout.events.on("BeforeAdd", function(id){
+layout.events.on("beforeAdd", function(id){
 	// your logic here
     return false;
 });

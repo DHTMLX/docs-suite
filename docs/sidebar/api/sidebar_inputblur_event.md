@@ -14,7 +14,7 @@ description: You can explore the inputBlur event of Sidebar in the documentation
 `id: string | number` - the ID of a new control
 
 @example:
-sidebar.events.on("InputBlur", function(id){
+sidebar.events.on("inputBlur", function(id){
     console.log(id);
 });
 

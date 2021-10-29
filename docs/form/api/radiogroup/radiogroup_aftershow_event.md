@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Radiogroup control of Fo
 `value: string` - the current value of the control
 
 @example:
-form.getItem("radiogroup").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("radiogroup").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

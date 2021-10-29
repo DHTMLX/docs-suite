@@ -14,7 +14,7 @@ description: You can explore the modeChange event of Calendar in the documentati
 `mode: string` - the calendar mode ("calendar", "year", "month", "timepicker")
 
 @example:
-calendar.events.on("ModeChange", function(mode) {
+calendar.events.on("modeChange", function(mode) {
    console.log("Selected mode: " + mode);
 });
 

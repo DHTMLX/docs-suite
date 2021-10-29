@@ -17,7 +17,7 @@ description: You can explore the beforeEditStart event of DataView in the docume
 Return `false` to block item editing; otherwise, `true`.
 
 @example:
-dataview.events.on("BeforeEditStart", function(id){
+dataview.events.on("beforeEditStart", function(id){
 	// your logic here
     return false;
 });

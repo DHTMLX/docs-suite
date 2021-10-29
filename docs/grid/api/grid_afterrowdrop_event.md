@@ -15,7 +15,7 @@ description: You can explore the afterRowDrop event of Grid in the documentation
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("AfterRowDrop", function(data, events) {
+grid.events.on("afterRowDrop", function(data, events) {
     // your logic here
 });
 

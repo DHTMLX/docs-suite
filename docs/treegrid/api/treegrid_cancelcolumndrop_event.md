@@ -15,7 +15,7 @@ description: You can explore the cancelColumnDrop event of TreeGrid in the docum
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("CancelColumnDrop", function(data, events) {
+treegrid.events.on("cancelColumnDrop", function(data, events) {
   // your logic here
 });
 

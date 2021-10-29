@@ -18,7 +18,7 @@ description: You can explore the beforeHide event of Popup in the documentation 
 Return `true` to hide a popup, `false` to block hiding a popup.
 
 @example:
-popup.events.on("BeforeHide", function(fromOuterClick,e){
+popup.events.on("beforeHide", function(fromOuterClick,e){
     console.log("A popup will be hidden");
     return true;
 });

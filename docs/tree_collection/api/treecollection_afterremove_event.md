@@ -14,7 +14,7 @@ description: You can explore the afterRemove event of TreeCollection in the docu
 `removedItem: object` - the object of a removed item
 
 @example:
-component.data.events.on("AfterRemove", function(removedItem){
+component.data.events.on("afterRemove", function(removedItem){
 	console.log("An item is removed");
 });
 

@@ -17,7 +17,7 @@ description: You can explore the beforeShow event of Window in the documentation
 Return `true` to show a window, `false` to block showing a window.
 
 @example:
-dhxWindow.events.on("BeforeShow", function(position){
+dhxWindow.events.on("beforeShow", function(position){
     console.log("A window will be shown");
     return true;
 });

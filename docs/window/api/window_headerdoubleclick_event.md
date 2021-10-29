@@ -14,7 +14,7 @@ description: You can explore the headerDoubleClick event of Window in the docume
 `e: Event` - a native event object
 
 @example:
-dhxWindow.events.on("HeaderDoubleclick", function(events) {
+dhxWindow.events.on("headerDoubleClick", function(events) {
    console.log(events)
 });
 

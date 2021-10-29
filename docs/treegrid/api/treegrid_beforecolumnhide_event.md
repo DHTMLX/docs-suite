@@ -17,7 +17,7 @@ description: You can explore the beforeColumnHide event of TreeGrid in the docum
 Return `false` to prevent a column from being hidden; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeColumnHide", function(column){
+treegrid.events.on("beforeColumnHide", function(column){
     // your logic here
     return false;
 });

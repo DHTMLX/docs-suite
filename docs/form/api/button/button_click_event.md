@@ -14,8 +14,8 @@ description: You can explore the click event of the Button control of Form in th
 `events: Event` - a native event object
 
 @example:
-form.getItem("button").events.on("Click", function(events) {
-    console.log("Click", events);
+form.getItem("button").events.on("click", function(events) {
+    console.log("click", events);
 });
 
 @descr:

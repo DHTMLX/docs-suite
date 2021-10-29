@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Text control
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.getItem("text").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("text").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @descr:

@@ -15,7 +15,7 @@ description: You can explore the dragIn event of List in the documentation of th
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("DragIn", function(data, events) {
+list.events.on("dragIn", function(data, events) {
     // your logic here
 });
 

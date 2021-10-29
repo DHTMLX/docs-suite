@@ -15,7 +15,7 @@ description: You can explore the canColumnDrop event of TreeGrid in the document
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("CanColumnDrop", function(data, events) {
+treegrid.events.on("canColumnDrop", function(data, events) {
   // your logic here
 });
 

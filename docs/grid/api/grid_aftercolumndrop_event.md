@@ -15,7 +15,7 @@ description: You can explore the afterColumnDrop event of Grid in the documentat
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("AfterColumnDrop", function(data, events) {
+grid.events.on("afterColumnDrop", function(data, events) {
     // your logic here
 });
 

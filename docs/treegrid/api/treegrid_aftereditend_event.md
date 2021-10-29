@@ -16,7 +16,7 @@ description: You can explore the afterEditEnd event of TreeGrid in the documenta
 - `col: object` - an object with a column configuration
 
 @example:
-grid.events.on("AfterEditEnd", function(value,row,column){
+grid.events.on("afterEditEnd", function(value,row,column){
 	// your logic here
 });
 

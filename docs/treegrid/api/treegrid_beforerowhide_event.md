@@ -17,7 +17,7 @@ description: You can explore the beforeRowHide event of TreeGrid in the document
 Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeRowHide", function(row){
+treegrid.events.on("beforeRowHide", function(row){
     // your logic here
     return false;
 });

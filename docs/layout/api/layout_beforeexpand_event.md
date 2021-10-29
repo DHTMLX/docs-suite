@@ -17,7 +17,7 @@ description: You can explore the beforeExpand event of Layout in the documentati
 Return `false` to block expanding a cell; otherwise, `true`.
 
 @example:
-layout.events.on("BeforeExpand", function(id){
+layout.events.on("beforeExpand", function(id){
 	// your logic here
     return false;
 });

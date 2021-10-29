@@ -11,7 +11,7 @@ description: You can explore the removeAll event of TreeCollection in the docume
 @signature: {'removeAll: () => void;'}
 
 @example:
-component.data.events.on("RemoveAll", function(){
+component.data.events.on("removeAll", function(){
 	console.log("Items are removed");
 });
 

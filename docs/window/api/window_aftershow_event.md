@@ -14,7 +14,7 @@ description: You can explore the afterShow event of Window in the documentation 
 `position: object` - an object with coordinates of the window's position
 
 @example:
-dhxWindow.events.on("AfterShow", function(position){
+dhxWindow.events.on("afterShow", function(position){
     console.log("A window is shown");
 });
 

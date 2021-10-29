@@ -14,7 +14,7 @@ description: You can explore the afterColumnShow event of TreeGrid in the docume
 `column: object` - an object with a column configuration
 
 @example:
-treegrid.events.on("AfterColumnShow", function(column){
+treegrid.events.on("afterColumnShow", function(column){
     // your logic here
 });
 

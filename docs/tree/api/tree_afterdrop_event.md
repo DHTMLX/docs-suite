@@ -15,7 +15,7 @@ description: You can explore the afterDrop event of Tree in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("AfterDrop", function(data, events) {
+tree.events.on("afterDrop", function(data, events) {
     // your logic here
 });
 

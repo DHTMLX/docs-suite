@@ -11,7 +11,7 @@ description: You can explore the event handling of Pagination in the documentati
 You can attach event listeners with the **pagination.events.on()** method:
 
 ~~~js
-pagination.events.on("Change", function(index, previousIndex){
+pagination.events.on("change", function(index, previousIndex){
     console.log("The currently active page", index);
 });
 ~~~
@@ -25,11 +25,11 @@ pagination.events.on("Change", function(index, previousIndex){
 To detach events, use **pagination.events.detach()**:
 
 ~~~js
-pagination.events.on("Change", function(index, previousIndex){
+pagination.events.on("change", function(index, previousIndex){
     console.log("The currently active page", index);
 });
 
-pagination.events.detach("Change");
+pagination.events.detach("change");
 ~~~
 
 ## Calling events

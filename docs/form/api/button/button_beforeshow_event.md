@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Button control of Form 
 Return `true` to prevent a control from being shown; otherwise - `true`.
 
 @example:
-form.getItem("button").events.on("BeforeShow", function(text) {
-    console.log("BeforeShow", text);
+form.getItem("button").events.on("beforeShow", function(text) {
+    console.log("beforeShow", text);
     return true;
 });
 

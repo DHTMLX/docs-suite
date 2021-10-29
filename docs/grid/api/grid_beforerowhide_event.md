@@ -17,7 +17,7 @@ description: You can explore the beforeRowHide event of Grid in the documentatio
 Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeRowHide", function(row){
+grid.events.on("beforeRowHide", function(row){
     // your logic here
     return false;
 });

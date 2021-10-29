@@ -15,7 +15,7 @@ description: You can explore the dragIn event of DataView in the documentation o
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-dataview.events.on("DragIn", function(data, events) {
+dataview.events.on("dragIn", function(data, events) {
     // your logic here
 });
 

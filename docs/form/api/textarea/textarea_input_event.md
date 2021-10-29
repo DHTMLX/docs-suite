@@ -14,8 +14,8 @@ description: You can explore the input event of the Textarea control of Form in 
 `value: string` - an entered value
 
 @example:
-form.getItem("textarea").events.on("Input", function(inputValue) {
-    console.log("Input", inputValue);
+form.getItem("textarea").events.on("input", function(inputValue) {
+    console.log("input", inputValue);
 });
 
 @descr:

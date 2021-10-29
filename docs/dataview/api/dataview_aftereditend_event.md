@@ -15,7 +15,7 @@ description: You can explore the afterEditEnd event of DataView in the documenta
 - `id: string | number` - the id of an item
 
 @example:
-dataview.events.on("AfterEditEnd", function(value,id){
+dataview.events.on("afterEditEnd", function(value,id){
 	// your logic here
 });
 
