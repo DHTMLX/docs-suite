@@ -20,4 +20,4 @@ var layout = new dhx.Layout("layout_container", {
 
 @descr:
 
-[comment]: # (@related: layout/init.md#initialize-layout)
+[comment]: # (@related: layout/initialization.md#initialize-layout)

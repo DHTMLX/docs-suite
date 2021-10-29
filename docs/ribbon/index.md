@@ -27,9 +27,9 @@ dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and
 Introduces the steps of creating Ribbon and discusses the ways of customizing and manipulating this component.
 
 - [](ribbon/how_to_start.md)
-- [](ribbon/loading_json.md)
+- [](ribbon/data_loading.md)
 - [](ribbon/operating_ribbon.md)
-- [](ribbon/fa_icons.md)
+- [](ribbon/customization.md)
 - [](ribbon/handling_events.md)
 
 ### Ribbon Controls
