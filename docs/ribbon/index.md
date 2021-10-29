@@ -29,7 +29,7 @@ Introduces the steps of creating Ribbon and discusses the ways of customizing an
 - [](ribbon/how_to_start.md)
 - [](ribbon/loading_json.md)
 - [](ribbon/operating_ribbon.md)
-- [](ribbon/fa_icons.md)
+- [](ribbon/customization.md)
 - [](ribbon/handling_events.md)
 
 ### Ribbon Controls
