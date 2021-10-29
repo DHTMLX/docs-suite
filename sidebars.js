@@ -2063,7 +2063,7 @@ module.exports = {
             ],
           },
           "sidebar/features",
-          "sidebar/init",
+          "sidebar/initialization",
           {
             type: "category",
             label: "List of Sidebar controls",
