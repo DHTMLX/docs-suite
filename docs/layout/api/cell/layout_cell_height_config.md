@@ -31,6 +31,6 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#cell-size)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#cell-size)
 
 [comment]: # (@relatedapi: layout/api/layout_minheight_config.md layout/api/layout_maxheight_config.md)

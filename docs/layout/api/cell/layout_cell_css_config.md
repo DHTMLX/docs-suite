@@ -44,4 +44,4 @@ var layout = new dhx.Layout("layout", {
 });
 ~~~
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/customization.md)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/customization.md)

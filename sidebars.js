@@ -1611,7 +1611,7 @@ module.exports = {
             ],
           },
           "layout/features",
-          "layout/init",
+          "layout/initialization",
           {
             type: "category",
             label: "Configuration",
@@ -1770,7 +1770,7 @@ module.exports = {
           "menu/features",
           "menu/how_to_start",
           "menu/configuring_menu_items",
-          "menu/from_script",
+          "menu/data_loading",
           "menu/work_with_menu",
           "menu/creating_context_menu",
           "menu/customization",
@@ -1985,7 +1985,7 @@ module.exports = {
               "ribbon/title",
             ]
           },
-          "ribbon/loading_json",
+          "ribbon/data_loading",
           "ribbon/operating_ribbon",
           "ribbon/customization",
           "ribbon/handling_events",

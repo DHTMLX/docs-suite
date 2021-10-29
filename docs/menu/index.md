@@ -26,7 +26,7 @@ You can read the following articles to find out how to add Menu on the page and 
 
 - [](menu/how_to_start.md)
 - [](menu/configuring_menu_items.md)
-- [](menu/from_script.md)
+- [](menu/data_loading.md)
 - [](menu/work_with_menu.md)
 - [](menu/creating_context_menu.md)
 - [](menu/customization.md)
