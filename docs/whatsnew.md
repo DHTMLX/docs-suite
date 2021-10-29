@@ -21,7 +21,7 @@ Released on October 28, 2021
 - Grid. Fix the issue which caused the method of dragging a column to be called after clicking the in-header filter of a column (in Firefox only)
 - Grid. Fix the issue with incorrect calculation of the height of the grid header when the [autoHeight](grid/api/grid_autoheight_config.md) property is enabled
 - Grid. Fix the issue with key navigation when working with several grids
-- Grid. Fix the issue with the [autoWidth](../grid/configuration.md/#autowidth-for-columns) property which caused the minimal width of the column not being taken into account when calculating the column's width
+- Grid. Fix the issue with the [autoWidth](grid/configuration.md/#autowidth-for-columns) property which caused the minimal width of the column not being taken into account when calculating the column's width
 - Grid. TreeGrid. Fix the issue which caused data of the treegrid to be changed after filtering and dragging a column/row
 
 Version 7.2.4
