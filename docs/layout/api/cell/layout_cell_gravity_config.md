@@ -53,4 +53,4 @@ The negative number set as a value to the **gravity** property is equated to zer
 @changelog:
 The property is updated in v7.0. For more information, see [Migration article](migration.md#65---70).
 
-[comment]: # (@related: layout/init.md#initialize-layout)
+[comment]: # (@related: layout/initialization.md#initialize-layout)

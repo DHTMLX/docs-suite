@@ -21,4 +21,4 @@ var layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#resizability)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#resizability)

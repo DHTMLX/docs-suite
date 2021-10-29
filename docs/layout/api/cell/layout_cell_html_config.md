@@ -21,4 +21,4 @@ var layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#html-content)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#html-content)

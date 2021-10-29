@@ -35,4 +35,4 @@ If the [](layout/api/cell/layout_cell_header_config.md) property is not set in t
 
 [comment]: # (@relatedapi: layout/api/layout_header_config.md layout/api/layout_headericon_config.md layout/api/layout_headerimage_config.md)
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#height-of-a-header-cell)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#height-of-a-header-cell)

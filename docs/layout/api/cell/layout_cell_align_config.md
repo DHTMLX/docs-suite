@@ -40,4 +40,4 @@ var layout = dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Align](https://snippet.dhtmlx.com/4w1033c9)
 
-[comment]: # (@related: layout/init.md#initialize-layout)
+[comment]: # (@related: layout/initialization.md#initialize-layout)

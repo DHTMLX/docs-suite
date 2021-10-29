@@ -48,4 +48,4 @@ const menu = new dhx.Menu("menu_container", {
 
 **Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-[comment]: # (@related: menu/from_script.md)
+[comment]: # (@related: menu/data_loading.md)

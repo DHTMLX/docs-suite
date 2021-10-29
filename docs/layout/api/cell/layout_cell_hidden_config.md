@@ -19,6 +19,6 @@ var layout = new dhx.Layout("layout_container", {
 
 @descr:
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#hidden-cell)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#hidden-cell)
 
 [comment]: # (@relatedapi: layout/api/layout_show_method.md layout/api/layout_hide_method.md layout/api/layout_isvisible_method.md)
