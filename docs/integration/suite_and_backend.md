@@ -14,17 +14,23 @@ The DHTMLX library includes the [DataCollection](/data_collection/index/) helper
 
 Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](/data_collection/api/datacollection_load_method/) method of DataCollection.
 
-Take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).
-
 ## Examples of using DHTMLX Suite widgets with Node.js
 
-Let's have an overview of the examples. Here you can find 11 interactive samples. Follow the instructions in the README.md file to run the examples.
+Let's have an overview of the examples.
+
+:::info
+Download and take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).
+:::
+
+Here you can find 11 interactive samples. Follow the instructions in the README.md file to run the examples.
 
 You can easily modify any widget for your purposes and find out how it works.
 
 Pay attention: the components of the demo work with one database. When editing data in one component, you affect data in other components.
 
 To reset the database, stop the server and delete the file with the `.sqlite` extension from the root directory of the project.
+
+In the examples pack, you will find:
 
 ### Form. Sending data
 
@@ -121,3 +127,7 @@ The example is created to show you how to save the changes made in data to the b
 This example of Grid is visually the same as the previous one but the ways of adding and editing data in this example are developed in another way. For instance, after you click the "Add new card" button, an empty row will be added after the last row in the grid. Editing of any cell of the grid is implemented by double-clicking on the cell. 
 
 The following request methods are used in this example: `GET`, `PUT`, `POST`, `DELETE`.
+
+:::info
+Download and take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).
+:::
