@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3
+-----------------
+Released on November 30, 2021
+
+### New functionality
+
+- Tabbar. New [beforeChange](tabbar/api/tabbar_beforechange_event.md) event
+
+
 Version 7.2.5
 -----------------
 Released on October 28, 2021
