@@ -453,6 +453,13 @@ const data = [
 ];
 ```
 
+### Opening editor with one click
+
+By default, you can open the editor by double-clicking on a cell. 
+But if you need the editor to open after a single click, apply the [](treegrid/api/treegrid_cellclick_event.md) event of the treegrid.
+
+{{note Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.}}
+
 ## Formatting columns
 
 Starting from v7.1, you can display the values of the cells of a TreeGrid column in the desired format:
