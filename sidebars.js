@@ -2193,6 +2193,7 @@ module.exports = {
                 label: "Tabbar events",
                 items: [
                   "tabbar/api/tabbar_afterclose_event",
+                  "tabbar/api/tabbar_beforechange_event",
                   "tabbar/api/tabbar_beforeclose_event",
                   "tabbar/api/tabbar_change_event",
                 ],

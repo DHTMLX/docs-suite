@@ -16,7 +16,7 @@ description: You can explore the change event of Tabbar in the documentation of 
 
 @example:
 tabbar.events.on("change", function(id, prev){
-    console.log(activeId);
+    console.log(id);
 });
 
 @descr:
