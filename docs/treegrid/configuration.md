@@ -615,6 +615,38 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     </tbody>
 </table>
 
+### Customizing header/footer filters
+
+To add a custom function with your you own logic for the filter of a TreeGrid column, you need to set the **customFilter** attribute when configuring the header/footer content of the [column](treegrid/api/api_treegridcolumn_properties.md). 
+
+{{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-content) is set.}}
+
+~~~js
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            width: 130,
+            id: "hours",
+            header: [
+                { text: "Number of hours" },
+                { 
+                    content: "inputFilter",
+                    //customFilter in TreeGrid
+                    customFilter: (value, match) => value < Number(match)
+                }
+            ],
+            footer: [{ content: "sum" }],
+            format: "#",
+        },   
+    ],
+    data: dataset
+});
+~~~
+
+**Related sample**: [TreeGrid. Custom Filter](https://snippet.dhtmlx.com/jk64c5gr)
+
+The **customFilter** attribute is a function which compares the value of each cell with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
+
 ## Header/footer height
 
 The height of the header/footer of TreeGrid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly.

@@ -634,6 +634,32 @@ var grid = new dhx.Grid("grid_container", {
 </table>
 <br/>
 
+### Customizing header/footer filters
+
+To add a custom function with your you own logic for the filter of a Grid column, you need to set the **customFilter** attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md). 
+
+{{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-content) is set.}}
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 150, id: "country", header: [
+            { text: "Country" },
+            { 
+                content: "comboFilter",
+                //filters values by the same length
+                customFilter: (value, match) => value.length === match.length
+            }
+        ]},   
+    ],
+    data: dataset
+});
+~~~
+
+**Related sample**: [Grid. Custom Filter](https://snippet.dhtmlx.com/gcidkxjg)
+
+The **customFilter** attribute is a function which compares the value of each cell with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
+
 ## Header/footer height
 
 The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [headerRowHeight](grid/api/grid_headerrowheight_config.md)/[footerRowHeight](grid/api/grid_footerrowheight_config.md)

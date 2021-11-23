@@ -26,17 +26,22 @@ description: You can explore the Grid column properties of Grid in the documenta
             <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan </li>
             <li><b>css</b> - (<i>any</i>) styling to be applied to a header</li>
             <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (<i>string</i>) additional content of a header, which can be:
-            <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-            <ol>- one of the methods that process values in a column and show result in the header: "avg" | "sum" | "max" | "min" | "count"</ol>
-            <ol>- some other string</ol>
+                <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
+                <ol>- one of the methods that process values in a column and show result in the header: "avg" | "sum" | "max" | "min" | "count"</ol>
+                <ol>- some other string</ol>
             </li>
             <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
-            <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
-            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
-            <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
-            <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
-            <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
-            <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
+                <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
+                <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
+                <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
+                <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
+                <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
+                <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
+            </li>
+            <li><a href="../../configuration#customizing-headerfooter-filters"><b>customFilter</b></a> - (<i>function</i>) optional, a custom function for extended filtering. It takes two parameters:
+                <ol> - <b>item</b> - (<i>any</i>) a data item the value of which should be compared</ol>
+                <ol> - <b>input</b> - (<i>string</i>) the value of the option selected in the filter</ol>
+                <br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
             </li>
             <li><b>headerSort</b> - (<i>boolean</i>) enables/disables sorting by clicking the header</li>
             <li><b>sortAs</b> - (<i>function</i>) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
@@ -57,17 +62,22 @@ description: You can explore the Grid column properties of Grid in the documenta
             <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (<i>string|number</i>) the text of a footer </li>
             <li><b>css</b> - (<i>any</i>) styling to be applied to a footer</li>
             <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (<i>string</i>) additional content of a footer, which can be:
-            <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-            <ol>- one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"</ol>
-            <ol>- some other string</ol>
+                <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
+                <ol>- one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"</ol>
+                <ol>- some other string</ol>
             </li>
             <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
-            <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
-            <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
-            <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
-            <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
-            <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
-            <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
+                <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
+                <ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
+                <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
+                <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
+                <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
+                <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
+            </li>
+            <li><a href="../../configuration#customizing-headerfooter-filters"><b>customFilter</b></a> - (<i>function</i>) optional, a custom function for extended filtering. It takes two parameters:
+                <ol> - <b>item</b> - (<i>any</i>) a data item the value of which should be compared</ol>
+                <ol> - <b>input</b> - (<i>string</i>) the value of the option selected in the filter</ol>
+                <br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
             </li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid With Footer</a>
