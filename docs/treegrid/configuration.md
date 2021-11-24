@@ -645,7 +645,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 **Related sample**: [TreeGrid. Custom Filter](https://snippet.dhtmlx.com/jk64c5gr)
 
-The **customFilter** attribute is a function which compares the value of each cell with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
+The **customFilter** attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
 
 ## Header/footer height
 

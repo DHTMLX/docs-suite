@@ -46,7 +46,7 @@ Use [DataCollection events](data_collection/index.md#events) to work with data.
 ## Properties
 
 | Name                                                | Description                                                |
-| --------------------------------------------------- | ---------------------------------------------------------- |
+| :-------------------------------------------------- | :--------------------------------------------------------- |
 | [](combobox/api/combobox_css_config.md)             | @getshort(combobox/api/combobox_css_config.md)             |
 | [](combobox/api/combobox_data_config.md)            | @getshort(combobox/api/combobox_data_config.md)            |
 | [](combobox/api/combobox_disabled_config.md)        | @getshort(combobox/api/combobox_disabled_config.md)        |
@@ -60,6 +60,7 @@ Use [DataCollection events](data_collection/index.md#events) to work with data.
 | [](combobox/api/combobox_labelwidth_config.md)      | @getshort(combobox/api/combobox_labelwidth_config.md)      |
 | [](combobox/api/combobox_listheight_config.md)      | @getshort(combobox/api/combobox_listheight_config.md)      |
 | [](combobox/api/combobox_multiselection_config.md)  | @getshort(combobox/api/combobox_multiselection_config.md)  |
+| [](combobox/api/combobox_newoptions_config.md)      | @getshort(combobox/api/combobox_newoptions_config.md)      |
 | [](combobox/api/combobox_placeholder_config.md)     | @getshort(combobox/api/combobox_placeholder_config.md)     |
 | [](combobox/api/combobox_readonly_config.md)        | @getshort(combobox/api/combobox_readonly_config.md)        |
 | [](combobox/api/combobox_selectallbutton_config.md) | @getshort(combobox/api/combobox_selectallbutton_config.md) |

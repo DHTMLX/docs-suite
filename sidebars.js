@@ -300,6 +300,7 @@ module.exports = {
                   "combobox/api/combobox_labelwidth_config",
                   "combobox/api/combobox_listheight_config",
                   "combobox/api/combobox_multiselection_config",
+                  "combobox/api/combobox_newoptions_config",
                   "combobox/api/combobox_placeholder_config",
                   "combobox/api/combobox_readonly_config",
                   "combobox/api/combobox_selectallbutton_config",
