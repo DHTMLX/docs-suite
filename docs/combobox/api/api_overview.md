@@ -9,7 +9,8 @@ description: You can explore the API of Combo Box in the documentation of the DH
 ## Methods
 
 | Name                                           | Description                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
+| :--------------------------------------------- | :---------------------------------------------------- |
+| [](combobox/api/combobox_addoption_method.md)  | @getshort(combobox/api/combobox_addoption_method.md)  |
 | [](combobox/api/combobox_blur_method.md)       | @getshort(combobox/api/combobox_blur_method.md)       |
 | [](combobox/api/combobox_clear_method.md)      | @getshort(combobox/api/combobox_clear_method.md)      |
 | [](combobox/api/combobox_destructor_method.md) | @getshort(combobox/api/combobox_destructor_method.md) |

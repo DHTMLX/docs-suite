@@ -255,6 +255,7 @@ module.exports = {
                 type: "category",
                 label: "Combobox methods",
                 items: [
+                  "combobox/api/combobox_addoption_method",
                   "combobox/api/combobox_blur_method",
                   "combobox/api/combobox_clear_method",
                   "combobox/api/combobox_destructor_method",

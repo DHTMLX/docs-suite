@@ -168,6 +168,30 @@ var combobox = new dhx.Combobox("combo_container",{
 });
 ~~~
 
+## Editable combobox
+
+You may allow end users to add new items into the data collection from UI. 
+You just need to enable the functionality via setting the [newOptions](combobox/api/combobox_newoptions_config.md) property to *true*:
+
+~~~js
+const combobox = new dhx.Combobox("combobox", {
+    multiselection: true,
+  	newOptions: true  
+});
+~~~
+
+To add a new item into the list of options, the user needs to type a new value into the input field and either press "Enter" or click on the appeared *Create "newValue"* option in the drop-down list.
+
+![](../assets/combo/new_value.png)
+
+The combobox invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of DataCollection each time when the user enters a new value into the input field. You can use the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) event to prevent adding incorrect values into the list of options:
+
+~~~js
+// blocks the ability to add an item with value: "new" into the collection of combobox items
+combobox.data.events.on("beforeAdd", item => item.value !== "new");
+~~~
+
+
 ## Readonly mode
 
 ![](../assets/combo/readonly.png)
