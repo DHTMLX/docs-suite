@@ -39,6 +39,10 @@ description: You can explore the Properties of the Combo Box control of Form in 
             </td>
 		</tr>
 		<tr>
+			<td><b>newOptions</b></td>
+			<td>(<i>boolean</i>) allows end users to add new values into the list of combobox options. To add a new value, the user needs to type it into the input field and either press "Enter" or click on the appeared <i>Create "newValue"</i> option in the drop-down list.</td>
+		</tr>
+		<tr>
 			<td><b>validation</b></td>
 			<td>(<i>function</i>) <a href="../../../work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
 		</tr>

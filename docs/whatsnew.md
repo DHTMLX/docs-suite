@@ -15,6 +15,12 @@ Released on November 30, 2021
 ### New functionality
 
 - Tabbar. New [beforeChange](tabbar/api/tabbar_beforechange_event.md) event
+- Grid. [The ability to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters)
+- TreeGrid. [The ability to add custom logic to the header/footer filters of the column](treegrid/configuration.md/#customizing-headerfooter-filters)
+- Combobox. [Editable combobox](combobox/configuration.md/#editable-combobox), [newOptions](combobox/api/combobox_newoptions_config.md), [addOption](combobox/api/combobox_addoption_method.md)
+- Grid. [Editable combobox](grid/configuration.md/#editable-combobox), [editorConfig](grid/api/api_gridcolumn_properties.md)
+- TreeGrid. [Editable combobox](treegrid/configuration.md/#editable-combobox), [editorConfig](treegrid/api/api_treegridcolumn_properties.md)
+- Form. Combo control. [newOptions](form/api/combo/api_combo_properties.md). The ability to use the [addOption](combobox/api/combobox_addoption_method.md) method of combobox via `form.getItem("combo").getWidget().addOption("new_value");`
 
 
 Version 7.2.5

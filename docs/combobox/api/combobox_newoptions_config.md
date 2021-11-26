@@ -23,7 +23,7 @@ const combobox = new dhx.Combobox("combobox", {
 The end user can add a new item into the data collection in two ways:
 
 1. by entering a new value into the input and pressing "Enter"
-2. by entering a new value into the input and selecting the appeared *Create "newValue"* option in the dropdown list
+2. by entering a new value into the input and selecting the appeared *Create "newValue"* option in the drop-down list
 
 {{note When a user enters a new value into the input, the combobox invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of the Data Collection object. If the **beforeAdd** event returns *false*, a new item won't be added into the data collection.}}
 

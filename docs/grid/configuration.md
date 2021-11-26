@@ -466,6 +466,31 @@ const data = [
 ];
 ```
 
+### Editable combobox
+
+When a column has [editorType: "combobox"](#setting-type-of-column-editor), you may allow end users to add new options into the combobox editor from UI. 
+To activate the functionality, specify the *newOptions: true* attribute of the **editorConfig** property in the configuration of the [column](grid/api/api_gridcolumn_properties.md):
+
+~~~js
+{
+    width: 150,
+    id: "status",
+    header: [{text: "Status"}, {content: "selectFilter"}],
+    editorType: "combobox",
+	// enables the ability to add new values into the combobox editor of the "Status" column
+    editorConfig: { newOptions: true },
+    options: ["Done", "In Progress", "Not Started"]
+},
+~~~
+
+When the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list, the new option will be added into the combobox.
+
+![](../assets/grid/combobox_editor.png)
+
+At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-content)) of the column:
+
+![](../assets/grid/new_combobox_option.png)
+
 ### Opening editor with one click
 
 By default, you can open the editor by double-clicking on a cell. 

@@ -132,6 +132,12 @@ description: You can explore the Grid column properties of Grid in the documenta
 			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect" </td>
 		</tr>
         <tr>
+			<td><b>editorConfig</b></td>
+			<td>(<i>object</i>) an object with configuration settings of the column's editor. It can include the following property:
+            <ul><li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (<i>boolean</i>) allows end users to add new values into the list of combobox options from UI (<i>editorType: "combobox"</i>). The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li></ul>
+            </td>
+		</tr>
+        <tr>
 			<td><b>options</b></td>
 			<td>(<i>array</i>) a set of options to be displayed in the editor of a cell (editorType: "select"|"combobox"|"multiselect")</td>
 		</tr>
