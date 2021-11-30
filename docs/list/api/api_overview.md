@@ -52,18 +52,19 @@ description: You can explore the API of List in the documentation of the DHTMLX 
 
 ## Properties
 
-| Name                                           | Description                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
-| [](list/api/list_css_config.md)                | @getshort(list/api/list_css_config.md)                |
-| [](list/api/list_data_config.md)               | @getshort(list/api/list_data_config.md)               |
-| [](list/api/list_dragcopy_config.md)           | @getshort(list/api/list_dragcopy_config.md)           |
-| [](list/api/list_dragmode_config.md)           | @getshort(list/api/list_dragmode_config.md)           |
-| [](list/api/list_editable_config.md)           | @getshort(list/api/list_editable_config.md)           |
-| [](list/api/list_eventhandlers_config.md)      | @getshort(list/api/list_eventhandlers_config.md)      |
-| [](list/api/list_height_config.md)             | @getshort(list/api/list_height_config.md)             |
-| [](list/api/list_itemheight_config.md)         | @getshort(list/api/list_itemheight_config.md)         |
-| [](list/api/list_keynavigation_config.md)      | @getshort(list/api/list_keynavigation_config.md)      |
-| [](list/api/list_multiselection_config.md)     | @getshort(list/api/list_multiselection_config.md)     |
-| [](list/api/list_selection_config.md)          | @getshort(list/api/list_selection_config.md)          |
-| [](list/api/list_template_config.md)           | @getshort(list/api/list_template_config.md)           |
-| [](list/api/list_virtual_config.md)            | @getshort(list/api/list_virtual_config.md)            |
+| Name                                       | Description                                       |
+| :----------------------------------------- | :------------------------------------------------ |
+| [](list/api/list_css_config.md)            | @getshort(list/api/list_css_config.md)            |
+| [](list/api/list_data_config.md)           | @getshort(list/api/list_data_config.md)           |
+| [](list/api/list_dragcopy_config.md)       | @getshort(list/api/list_dragcopy_config.md)       |
+| [](list/api/list_dragmode_config.md)       | @getshort(list/api/list_dragmode_config.md)       |
+| [](list/api/list_editable_config.md)       | @getshort(list/api/list_editable_config.md)       |
+| [](list/api/list_eventhandlers_config.md)  | @getshort(list/api/list_eventhandlers_config.md)  |
+| [](list/api/list_height_config.md)         | @getshort(list/api/list_height_config.md)         |
+| [](list/api/list_htmlenable_config.md)     | @getshort(list/api/list_htmlenable_config.md)     |
+| [](list/api/list_itemheight_config.md)     | @getshort(list/api/list_itemheight_config.md)     |
+| [](list/api/list_keynavigation_config.md)  | @getshort(list/api/list_keynavigation_config.md)  |
+| [](list/api/list_multiselection_config.md) | @getshort(list/api/list_multiselection_config.md) |
+| [](list/api/list_selection_config.md)      | @getshort(list/api/list_selection_config.md)      |
+| [](list/api/list_template_config.md)       | @getshort(list/api/list_template_config.md)       |
+| [](list/api/list_virtual_config.md)        | @getshort(list/api/list_virtual_config.md)        |

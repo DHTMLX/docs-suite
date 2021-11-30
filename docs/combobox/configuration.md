@@ -250,3 +250,24 @@ var combo = new dhx.Combobox("combo_container", {
 	}
 });			
 ~~~
+
+## HTML content of ComboBox options
+
+By default, the ComboBox displays the HTML content specified for its options and doesn't prevent XSS attacks. 
+
+If you need to keep your application safe, you can set the [htmlEnable](../../combobox/api/combobox_htmlenable_config/) property to *false*. In this case, the content will be displayed as plain text.
+
+~~~js
+const combo = new dhx.Combobox("combo_container", { 
+    htmlEnable: false, // disables render of HTML-content
+    template: function (item) {
+        return "<div style='user-select:none; display: flex; justify-content: space-between;'>" +
+            "<span>" + item.value + "</span>" +
+            "<img style='height: 20px; width: 30px; border: 1px solid gray' src=" + item.src + "></img>" +
+            "</div>";
+    }
+});
+~~~
+
+**Related sample**: [Combobox. Disable HTML in Data](https://snippet.dhtmlx.com/e4dolhfs)
+
