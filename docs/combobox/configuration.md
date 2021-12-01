@@ -238,8 +238,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
 
-You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string 
-with a template for rendering options in the list.
+You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container", {
@@ -253,13 +252,13 @@ var combo = new dhx.Combobox("combo_container", {
 
 ## HTML content of ComboBox options
 
-By default, the ComboBox displays the HTML content specified for its options and doesn't prevent XSS attacks. 
+By default, the Combobox can display HTML content if it is specified for its options.
 
-If you need to keep your application safe, you can set the [htmlEnable](../../combobox/api/combobox_htmlenable_config/) property to *false*. In this case, the content will be displayed as plain text.
+In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../combobox/api/combobox_htmlenable_config/) property to *false*. 
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", { 
-    htmlEnable: false, // disables render of HTML-content
+    htmlEnable: false, // disables render of HTML content
     template: function (item) {
         return "<div style='user-select:none; display: flex; justify-content: space-between;'>" +
             "<span>" + item.value + "</span>" +

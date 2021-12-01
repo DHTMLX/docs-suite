@@ -13,11 +13,12 @@ You can apply different languages to the interface of dhtmlxCombo. You just need
 The default locale for Combobox looks like this:
 
 ~~~js
-var en = {
-	notFound: "Not Found",
-	selectAll: "Select All",
-	unselectAll: "Unselect All",
-	selectedItems: "selected items"
+const en = {
+	notFound: "Not found",
+    selectAll: "Select all",
+    unselectAll: "Unselect all",
+    selectedItems: "selected items",
+	createItem: "Create"
 };
 ~~~
 
@@ -28,12 +29,13 @@ To use a different locale, your need to:
 - define necessary language settings - names of buttons and labels:
 
 ~~~js
-var de = {
-	notFound: "nicht gefunden",
-	selectAll: "alle auswählen",
-	unselectAll: "deaktivieren Sie Alle",
-	selectedItems: "ausgewählte Elemente"
-}
+const de = {
+	notFound: "Nicht gefunden",
+    selectAll: "Alle auswählen",
+    unselectAll: "Deaktivieren Sie Alle",
+    selectedItems: "Ausgewählte Elemente",
+	createItem: "Schaffen"
+};
 ~~~
 
 - apply the language settings by calling the **dhx.i18n.setLocale()** method before Combobox initialization:

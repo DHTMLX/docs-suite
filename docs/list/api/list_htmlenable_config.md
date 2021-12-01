@@ -22,14 +22,14 @@ function template(item) {
 };
 
 const list = new dhx.List("list", {
-    htmlEnable: false, // disables render of HTML-content
+    htmlEnable: false, // disables render of HTML content
     template: template,
     data: data
 });
 
 @descr:
 
-When the property is set to *true*, the list displays the HTML content in its options and doesn't prevent XSS attacks.
+When the property is set to *true*, the list displays the HTML content for its options but doesn't prevent XSS attacks.
 
 You can disable rendering of the HTML content and display it as plain text via setting the property to *false*.
 

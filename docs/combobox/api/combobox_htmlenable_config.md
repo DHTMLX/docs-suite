@@ -14,7 +14,7 @@ description: You can explore the htmlEnable config of Combo Box in the documenta
 
 @example:
 const combo = new dhx.Combobox("combo_container", { 
-    htmlEnable: false, // disables render of HTML-content
+    htmlEnable: false, // disables render of HTML content
     template: function (item) {
         return "<div style='user-select:none; display: flex; justify-content: space-between;'>" +
             "<span>" + item.value + "</span>" +
@@ -25,7 +25,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 @descr: 
 
-When the property is set to *true*, the combobox displays the HTML content in its options and doesn't prevent XSS attacks.
+When the property is set to *true*, the combobox displays the HTML content for its options but doesn't prevent XSS attacks.
 
 You can disable rendering of the HTML content and display it as plain text via setting the property to *false*.
 

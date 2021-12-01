@@ -272,13 +272,13 @@ The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pa
 
 ## HTML content of List options
 
-By default, the List displays the HTML content specified for its options and doesn't prevent XSS attacks. 
+By default, the Combobox can display HTML content if it is specified for its options.
 
-If you need to keep your application safe, you can set the [htmlEnable](../../list/api/list_htmlenable_config/) property to *false*. In this case, the content will be displayed as plain text.
+In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../list/api/list_htmlenable_config/) property to *false*. 
 
 ~~~js
 const list = new dhx.List("list", {
-    htmlEnable: false, // disables render of HTML-content
+    htmlEnable: false, // disables render of HTML content
     template: template,
     data: data
 });
