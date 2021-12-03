@@ -59,7 +59,7 @@ grid.events.on("beforeSort", (col, dir) => {
 
 Starting from v7.0, use **leftSplit** instead.
 
-~~~js title="Before v7.1"
+~~~js title="Before v7.0"
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     splitAt:2,  
@@ -67,7 +67,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-~~~js title="From v7.1"
+~~~js title="From v7.0"
 var grid = new dhx.Grid("grid_container", {
     columns: [// columns config],
     leftSplit:2,  
@@ -89,7 +89,7 @@ The type of the property has been changed from *boolean* to *number*, but *boole
 
 Instead of the methods, use new **enable()**, **disable()** methods of the selection object.
 
-~~~js title="Before v7.1"
+~~~js title="Before v7.0"
 // DataView
 dataview.enableSelection();
 dataview.disableSelection();
@@ -99,7 +99,7 @@ list.enableSelection();
 list.disableSelection();
 ~~~
 
-~~~js title="From v7.1"
+~~~js title="From v7.0"
 // DataView
 dataview.selection.enable();
 dataview.selection.disable();
@@ -117,14 +117,14 @@ list.selection.disable();
 
 Instead of the **buttonClick** event, use the new **click** event. 
 
-~~~js title="Before v7.1"
+~~~js title="Before v7.0"
 form.events.on("Click", function(name, events) {
     console.log("Click", name, events); 
 });
 ~~~
 
 
-~~~js title="From v7.1"
+~~~js title="From v7.0"
 form.events.on("Click", function(name, events) {
     console.log("Click", name, events); 
 });
@@ -132,13 +132,13 @@ form.events.on("Click", function(name, events) {
 
 Instead of the **validationFail** event, use the new **afterValidate**, **beforeValidate** events:
 
-~~~js title="Before v7.1"
+~~~js title="Before v7.0"
 form.events.on("ValidationFail", function(id,component){
     // your code here
 });
 ~~~
 
-~~~js title="From v7.1"
+~~~js title="From v7.0"
 // AfterValidate event
 form.events.on("AfterValidate", function(name, value, isValid) {
     console.log("AfterValidate", name, value, isValid); 
