@@ -32,7 +32,7 @@ description: You can explore how to migrate to newer versions in the documentati
 
 ~~~js title="Before v7.1"
 // sort event
-grid.events.on("Sort", function(id){
+grid.events.on("sort", function(id){
     console.log("The grid is sorted by the "+id+" column");
 });
 ~~~
@@ -118,14 +118,14 @@ list.selection.disable();
 Instead of the **buttonClick** event, use the new **click** event. 
 
 ~~~js title="Before v7.0"
-form.events.on("Click", function(name, events) {
-    console.log("Click", name, events); 
+form.events.on("buttonClick", function(id, events) {
+    console.log(id); 
 });
 ~~~
 
 
 ~~~js title="From v7.0"
-form.events.on("Click", function(name, events) {
+form.events.on("click", function(name, events) {
     console.log("Click", name, events); 
 });
 ~~~
@@ -133,19 +133,19 @@ form.events.on("Click", function(name, events) {
 Instead of the **validationFail** event, use the new **afterValidate**, **beforeValidate** events:
 
 ~~~js title="Before v7.0"
-form.events.on("ValidationFail", function(id,component){
+form.events.on("validationFail", function(id,component){
     // your code here
 });
 ~~~
 
 ~~~js title="From v7.0"
 // AfterValidate event
-form.events.on("AfterValidate", function(name, value, isValid) {
+form.events.on("afterValidate", function(name, value, isValid) {
     console.log("AfterValidate", name, value, isValid); 
 });
 
 // BeforeValidate event
-form.events.on("BeforeValidate", function(name, value) {
+form.events.on("beforeValidate", function(name, value) {
     console.log("BeforeValidate", name, value); 
     return true;
 });
@@ -185,18 +185,18 @@ Also note, that before v7.0, the confirm buttons were displayed in the following
 11) The **apply** event of TimePicker has been deprecated. Instead of it, use the new **beforeApply** and **afterApply** events.
 
 ~~~js title="Before v7.1"
-timepicker.events.on("Apply", function(){
+timepicker.events.on("apply", function(){
     console.log("The value of a timepicker "+ timepicker.getValue() + " has been saved");
 });
 ~~~
 
 ~~~js title="After v7.1"
-timepicker.events.on("BeforeApply", function(value){
+timepicker.events.on("beforeApply", function(value){
     console.log("The ", value, " of a timepicker will be saved");
     return false;
 });
  
-timepicker.events.on("AfterApply", function(value){
+timepicker.events.on("afterApply", function(value){
     console.log("The ", value, " of a timepicker is saved");
 });
 ~~~
@@ -222,7 +222,7 @@ var combo = new dhx.Combobox("combo_container", {
 | Up to version 6.3                             | From version 6.4                                  |
 | :-------------------------------------------- | :------------------------------------------------ |
 | **Events**                                    |                                                   |
-| calendar.events.on("DateHover", function(){}) | calendar.events.on("DateMouseOver", function(){}) |
+| calendar.events.on("dateHover", function(){}) | calendar.events.on("dateMouseOver", function(){}) |
 | **Properties**                                |                                                   |
 | block                                         | disabledDates                                     |
 | view                                          | mode                                              |
@@ -235,8 +235,8 @@ var combo = new dhx.Combobox("combo_container", {
 | **Methods**                                       |                                                   |
 | colorpicker.focusValue()                          | colorpicker.setFocus()                            |
 | **Events**                                        |                                                   |
-| colorpicker.events.on("ViewChange",function(){})  | colorpicker.events.on("ModeChange", function(){}) |
-| colorpicker.events.on("SelectClick",function(){}) | colorpicker.events.on("Apply", function(){})      |
+| colorpicker.events.on("viewChange",function(){})  | colorpicker.events.on("modeChange", function(){}) |
+| colorpicker.events.on("selectClick",function(){}) | colorpicker.events.on("apply", function(){})      |
 
 
 ### Combobox
@@ -244,7 +244,7 @@ var combo = new dhx.Combobox("combo_container", {
 | Up to version 6.3                      | From version 6.4                            |
 | :------------------------------------- | :------------------------------------------ |
 | **Events**                             |                                             |
-| combo.events.on("Close", function(){}) | combo.events.on("AfterClose", function(){}) |
+| combo.events.on("close", function(){}) | combo.events.on("afterClose", function(){}) |
 | **Properties**                         |                                             |
 | cellHeight                             | itemHeight                                  |
 | help                                   | helpMessage                                 |
@@ -258,7 +258,7 @@ var combo = new dhx.Combobox("combo_container", {
 | **Methods**                                     |                                                    |
 | dataview.edit()                                 | dataview.editItem()                                |
 | **Events**                                      |                                                    |
-| dataview.events.on("ContextMenu", function(){}) | dataview.events.on("itemRightClick", function(){}) |
+| dataview.events.on("contextMenu", function(){}) | dataview.events.on("itemRightClick", function(){}) |
 | **Properties**                                  |                                                    |
 | editing                                         | editable                                           |
 
@@ -287,7 +287,7 @@ Before 6.4 the `adjustColumnWidth()` method took only one parameter - the id of 
 | **Methods**                                 |                                                |
 | list.edit()                                 | list.editItem()                                |
 | **Events**                                  |                                                |
-| list.events.on("ContextMenu", function(){}) | list.events.on("itemRightClick", function(){}) |
+| list.events.on("contextMenu", function(){}) | list.events.on("itemRightClick", function(){}) |
 | **Properties**                              |                                                |
 | editing                                     | editable                                       |
 
@@ -316,7 +316,7 @@ The `toggle` event is deprecated. Use new `beforeCollapse`, `afterCollapse`, `be
 | tabbar.removeCell()                     | tabbar.removeTab()                           |
 | tabbar.addCell()                        | tabbar.addTab()                              |
 | **Events**                              |                                              |
-| tabbar.events.on("Close", function(){}) | tabbar.events.on("AfterClose", function(){}) |
+| tabbar.events.on("close", function(){}) | tabbar.events.on("afterClose", function(){}) |
 | **Properties**                          |                                              |
 | closeButtons                            | closable                                     |
 | activeView                              | activeTab                                    |
@@ -327,8 +327,8 @@ The `toggle` event is deprecated. Use new `beforeCollapse`, `afterCollapse`, `be
 | Up to version 6.3                           | From version 6.4                                 |
 | :------------------------------------------ | :----------------------------------------------- |
 | **Events**                                  |                                                  |
-| timepicker.events.on("Close", function(){}) | timepicker.events.on("AfterClose", function(){}) |
-| timepicker.events.on("Save", function(){})  | timepicker.events.on("Apply", function(){})      |
+| timepicker.events.on("close", function(){}) | timepicker.events.on("afterClose", function(){}) |
+| timepicker.events.on("save", function(){})  | timepicker.events.on("apply", function(){})      |
 | **Properties**                              |                                                  |
 | action                                      | controls                                         |
 
@@ -435,7 +435,7 @@ The `labelInline` property is replaced with the `labelPosition` property. The `l
 | Up to version 6.2                                 | From version 6.3                              |
 | :------------------------------------------------ | :-------------------------------------------- |
 | getView()                                         | getCurrentMode()                              |
-| colorpicker.events.on("ColorChange",function(){}) | colorpicker.events.on("Change", function(){}) |
+| colorpicker.events.on("colorChange",function(){}) | colorpicker.events.on("change", function(){}) |
 
 
 ### Grid
@@ -443,7 +443,7 @@ The `labelInline` property is replaced with the `labelPosition` property. The `l
 
 | Up to version 6.2                           | From version 6.3                             |
 | :------------------------------------------ | :------------------------------------------- |
-| grid.events.on("HeaderInput", function(){}) | grid.events.on("FilterChange", function(){}) |
+| grid.events.on("headerInput", function(){}) | grid.events.on("filterChange", function(){}) |
 
 ### Layout
 
@@ -467,7 +467,7 @@ The `labelInline` property is replaced with the `labelPosition` property. The `l
 
 | Up to version 6.2                           | From version 6.3                             |
 | :------------------------------------------ | :------------------------------------------- |
-| grid.events.on("HeaderInput", function(){}) | grid.events.on("FilterChange", function(){}) |
+| grid.events.on("headerInput", function(){}) | grid.events.on("filterChange", function(){}) |
 
 ### Window
 
