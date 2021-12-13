@@ -102,6 +102,8 @@ dataview.data.load("../common/dataset.json");
 
 **Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
 
+:::info
 To display data in DataView you should define a [template](dataview/configuration.md/#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.
 
 Another way to display data in DataView is to prepare a data set with the ["value"](dataview/data_loading.md/#preparing-data-set) attribute.
+:::
