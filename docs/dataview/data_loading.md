@@ -19,7 +19,7 @@ dhtmlxDataView expects loaded data in the JSON format. Here is an example of an 
 
 ~~~js
 var dataset = [
-  	{"value":"Learning DHTMLX Suite UI", "id":"1"},
+  	{"value": "Learning DHTMLX Suite UI", "id":"1"},
     {"value": "Unlocking Android", "id":"2"},
     {"value": "Android in Action, Second Edition", "id":"3"},
     {"value": "Zend Framework in Action", "id":"4"},

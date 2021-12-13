@@ -26,7 +26,7 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
         <div id="list_container"></div>
         <script>
             // creating dhtmlxList
-            var list = new dhx.List("list_container",{
+            var list = new dhx.List("list_container", {
     			itemHeight: 30
 			});
         </script>
@@ -85,7 +85,7 @@ Finally, you are to load the list with data. You can load inline or external dat
 - to load data from a local source, use the **parse()** method of the Data Collection object:
 
 ~~~js
-var list = new dhx.List("list_container",{
+var list = new dhx.List("list_container", {
 	 itemHeight:30
 });
 
@@ -97,7 +97,7 @@ list.data.parse(data);
 - to load data from an external file, use the **load()** method of the Data Collection object:
 
 ~~~js
-var list = new dhx.List("list_container",{
+var list = new dhx.List("list_container", {
 	itemHeight:30
 });
 
@@ -105,3 +105,7 @@ list.data.load("../common/dataset.json");
 ~~~
 
 **Related sample**: [List. Initialization with data.load()](https://snippet.dhtmlx.com/1it5kfhq)
+
+To display data in List you should define a [template](list/configuration.md/#template-for-list-items) via the [template](list/api/list_template_config.md/) configuration property.
+
+Another way to display data in List is to prepare a data set with the ["value"](list/load_data.md/#preparing-data-set) attribute.

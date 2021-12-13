@@ -1,12 +1,12 @@
 ---
 sidebar_label: css
 title: JavaScript Layout - css Config 
-description: You can explore the css config of a cell of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the css config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # css
 
-@short: the name of a CSS class(es) applied to a cell of Layout
+@short: the name of a CSS class(es) applied to Layout
 
 @signature: {'css?: string;'}
 
@@ -22,19 +22,7 @@ description: You can explore the css config of a cell of Layout in the documenta
 </style>
 
 var layout = new dhx.Layout("layout_container", {
-    rows: [
-        {
-            id: "toolbar",
-            html: "Header",
-            css: "my_second_class",
-            height: "60px"
-        },
-        {
-            id: "content",
-            html: "Content",
-            css: "my_first_class",
-        }
-    ]
+    css:"my_first_class my_second_class"
 });
 
 @descr:
