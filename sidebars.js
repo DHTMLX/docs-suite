@@ -1553,7 +1553,9 @@ module.exports = {
                   collapsed: true,
                   items: [
                     "layout/api/layout_cols_config",
+                    "layout/api/layout_css_config",
                     "layout/api/layout_rows_config",
+                    "layout/api/layout_type_config",
                   ],
                 },
                 ],
