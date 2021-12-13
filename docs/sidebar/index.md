@@ -27,7 +27,7 @@ Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23
 
 Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
 
-- [](init.md)
+- [](initialization.md)
 - [](data_loading.md)
 - [](sidebar_config.md)
 - [](work_with_sidebar.md)
