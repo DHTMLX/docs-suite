@@ -25,6 +25,20 @@ Released on November 30, 2021
 - Combobox. New [htmlEnable](combobox/api/combobox_htmlenable_config.md) property
 - List. New [htmlEnable](list/api/list_htmlenable_config.md) property
 
+### Fixes
+
+- Chart. Fix the issue with the incorrect work of value type in a data set
+- Chart. Fix the issue with displaying an empty tooltip in Line Chart
+- Form. Fix the issue with RadioGroup enabling
+- Grid. Fix the issue with incorrect work of adjust property with template
+- Grid. Fix the issue with no key navigation in Grid in Tabbar inside Window
+- Grid. Fix the issue with the incorrect work of drag-and-drop of the first row
+- Layout. Fix the issue with the incorrect work of collapsing and resizing
+- Layout. Fix the issue with the incorrect recovery of cells without pre-set height/width properties after resizing and collapsing
+- Menu. Fix the issue with the closing menu in case the first item is disabled
+- Menu. ContextMenu. Fix the issue with the self-generated prefix for the name of the custom CSS clas
+- Toolbar. Datepicker. Fix the issue with the same date in two and more Datepickers in one Toolbar
+- TreeGrid. Fix the issue with incorrect work of multiselection property of comboFilter
 
 Version 7.2.5
 -----------------
@@ -35,7 +49,7 @@ Released on October 28, 2021
 - Form. Timepicker control. Fix the issue with setting the time in the timepicker using the keyboard
 - Grid, TreeGrid. Now the value of the option will be displayed both in the editor and a cell if the options of the "combobox" and "select" editors are set as an array of objects with the *id-value* combinations
 - Grid, TreeGrid. Now the width of the column is calculated depending on the following properties: **minWidth**/ **maxWidth**, **adjust**, and **autoWidth**
-- Grid, TreeGrid. Now there is the ability to set the options of the "select" editor of a cell as an array of objects with the *id-value* combinations 
+- Grid, TreeGrid. Now there is the ability to set the options of the "select" editor of a cell as an array of objects with the *id-value* combinations
 - Grid. Fix the issue which caused the method of dragging a column to be called after clicking the in-header filter of a column (in Firefox only)
 - Grid. Fix the issue with incorrect calculation of the height of the grid header when the [autoHeight](grid/api/grid_autoheight_config.md) property is enabled
 - Grid. Fix the issue with key navigation when working with several grids

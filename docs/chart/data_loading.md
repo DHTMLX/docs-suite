@@ -40,7 +40,7 @@ A data set for Pie, Pie3D and Donut charts differs a little bit. You need to pro
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string,number</i>) the id of a series </td>
+			<td>(<i>string, number</i>) the id of a series </td>
 		</tr>
 		<tr>
 			<td><b>text</b></td>
@@ -48,7 +48,7 @@ A data set for Pie, Pie3D and Donut charts differs a little bit. You need to pro
 		</tr>
         <tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) the name of the data set property to map data values to </td>
+			<td>(<i>string, number</i>) the name of the data set property to map data values to </td>
 		</tr>
         <tr>
 			<td><b>color</b></td>
