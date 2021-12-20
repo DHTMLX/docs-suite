@@ -14,7 +14,7 @@ description: You can explore the Grid column properties of Grid in the documenta
 		</tr>
         <tr>
 			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a column<br>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
+			<td>(<i>number</i>) the width of a column. The minimum with of the column is 20 px.<br>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
 		</tr>
         <tr>
 			<td><b>header</b></td>
@@ -91,7 +91,7 @@ description: You can explore the Grid column properties of Grid in the documenta
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column. The minimal width of a column is 20px. <br/> 
+			<td>(<i>number</i>) the minimum width to be set for a column. The minimum width of a column is 20px. <br/> 
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Min Width</a>
             </td>
 		</tr>

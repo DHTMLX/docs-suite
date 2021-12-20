@@ -27,29 +27,30 @@ Released on November 30, 2021
 
 ### Fixes
 
-- Chart. Fix the issue with the incorrect work of value type in a data set
+- Chart. Fix the incorrect work of value type in a data set
 - Chart. Fix the issue with displaying an empty tooltip in Line Chart
-- Chart. Fix the issue with the incorrect display of Radar Chart if the values in the data set are the same
+- Chart. Fix the incorrect display of Radar Chart if the values in the data set are the same
 - Form. Fix the issue with RadioGroup enabling
 - Form. Fix the issue with the Textarea control. Now the required property doesn't take value: null as a valid
-- Grid. Fix the issue with the incorrect work of adjust property with template
+- Grid. Fix the incorrect work of adjust property with template
 - Grid. Fix the issue with no key navigation in Grid in Tabbar inside Window
-- Grid. Fix the issue with the incorrect work of drag-and-drop of the first row
-- Grid. Fix the issue with the incorrect work of Pagination if the first column is hidden
-- Grid. Fix the issue with the incorrect loading of string values from XML file
-- Grid. Fix the issue with the incorrect work of selectFilter with boolean values
+- Grid. Fix the incorrect work of drag-and-drop of the first row
+- Grid. Fix the incorrect work of Pagination if the first column is hidden
+- Grid. Fix the incorrect loading of string values from XML file
+- Grid. Fix the incorrect work of selectFilter with boolean values
 - Grid. Fix the issue while minus numbers from -1 to 0 are displayed like positive numbers
 - Grid. Fix the issue with predefined values not setting into the grid in the "select", "combobox" and "multiselect" column editor types
-- Layout. Fix the issue with the incorrect work of collapsing and resizing
-- Layout. Fix the issue with the incorrect recovery of cells without pre-set height/width properties after resizing and collapsing
+- Grid. Fix the issue with not necessary vertical scrollbar appearance while using autoWidth property in a column
+- Layout. Fix the incorrect work of collapsing and resizing
+- Layout. Fix the incorrect recovery of cells without pre-set height/width properties after resizing and collapsing
 - Menu. Fix the issue with the closing menu in case the first item is disabled
 - Menu. ContextMenu. Fix the issue with the self-generated prefix for the name of the custom CSS clas
 - Toolbar. Datepicker. Fix the issue with the same date in two and more Datepickers in one Toolbar
-- Toolbar. Fix the issue with the ignorance of the icon by setState() method
-- TreeGrid. Fix the issue with the incorrect work of multiselection property of comboFilter
-- TreeGrid. Fix the issue with the incorrect export of grouped treegrid to CSV
-- TreeGrid. Fix the issue with the incorrect display of items if the items in the data set are organized in reverse order
-- Custom Scroll. Fix the issue with the incorrect display while scrolling and changing tabs
+- Toolbar. Fix the ignorance of the icon by setState() method
+- TreeGrid. Fix the incorrect work of multiselection property of comboFilter
+- TreeGrid. Fix the incorrect export of grouped treegrid to CSV
+- TreeGrid. Fix the incorrect display of items if the items in the data set are organized in reverse order
+- Custom Scroll. Fix the incorrect display while scrolling and changing tabs
 
 Version 7.2.5
 -----------------

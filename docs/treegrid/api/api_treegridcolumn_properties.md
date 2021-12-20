@@ -14,7 +14,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a column<br>The property is ignored if the <a href="../../../treegrid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
+			<td>(<i>number</i>) the width of a column. The minimum with of the column is 20 px.<br>The property is ignored if the <a href="../../../treegrid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
 		</tr>
         <tr>
 			<td><b>header</b></td>
@@ -82,7 +82,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column. The minimal width of a column is 20px. <br/>
+			<td>(<i>number</i>) the minimum width to be set for a column. The minimum width of a column is 20px. <br/>
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cpgjyoxn" target="_blank">TreeGrid. Min Width</a>
 			</td>
 		</tr>
