@@ -46,7 +46,7 @@ Released on November 30, 2021
 - Menu. Fix the issue with the closing menu in case the first item is disabled
 - Menu. ContextMenu. Fix the issue with the self-generated prefix for the name of the custom CSS clas
 - Toolbar. Datepicker. Fix the issue with the same date in two and more Datepickers in one Toolbar
-- Toolbar. Fix the ignorance of the icon by setState() method
+- Toolbar. Fix the ignorance of the icon by the [setState()](toolbar/api/toolbar_setstate_method.md) method
 - TreeGrid. Fix the incorrect work of multiselection property of comboFilter
 - TreeGrid. Fix the incorrect export of grouped treegrid to CSV
 - TreeGrid. Fix the incorrect display of items if the items in the data set are organized in reverse order
