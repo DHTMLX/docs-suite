@@ -24,6 +24,7 @@ Released on November 30, 2021
 - Form. Combo control. [newOptions](form/api/combo/api_combo_properties.md). The ability to use the [addOption](combobox/api/combobox_addoption_method.md) method of combobox via `form.getItem("combo").getWidget().addOption("new_value");`
 - Combobox. New [htmlEnable](combobox/api/combobox_htmlenable_config.md) property
 - List. New [htmlEnable](list/api/list_htmlenable_config.md) property
+- Message. New [htmlEnable](message/api/api_message_properties.md) property for alert box, confirm box and tooltip
 
 ### Fixes
 
