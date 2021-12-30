@@ -10,8 +10,6 @@ description: You can explore the destructor method of Form in the documentation 
 
 @signature: {'destructor(): void;'}
 
-@params:
-
 @example:
 form.destructor();
 
