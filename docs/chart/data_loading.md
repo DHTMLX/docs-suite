@@ -18,7 +18,7 @@ First, you need to prepare a data set that will be loaded into Chart.
 dhtmlxChart expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
     { "month": "`02", "company A": 20, "company B": 52, "company C": 72},
     { "month": "`03", "company A": 5, "company B": 33, "company C": 90},
     { "month": "`04", "company A": 55, "company B": 30, "company C": 81},
@@ -33,6 +33,8 @@ var dataset = [
 ~~~
 
 Each object in the data set contains a number of *key:value* pairs for data titles and values.
+
+- **Pie, Pie3D and Donut charts**
 
 A data set for Pie, Pie3D and Donut charts differs a little bit. You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
 
@@ -59,13 +61,97 @@ A data set for Pie, Pie3D and Donut charts differs a little bit. You need to pro
 <br/>
 
 ~~~js
-var pie_dataset = [
+const pie_dataset = [
 	{ "id": "Jan", "value": 44.33, "color": "#394E79", "month": "Jan"},
 	{ "id": "Feb", "value": 22.12, "color": "#5E83BA", "month": "Feb"},
 	{ "id": "Mar", "value": 53.21, "color": "#C2D2E9", "month": "Mar"},
 	{ "id": "Apr", "value": 34.25, "color": "#9A8BA5", "month": "Apr"},
 	{ "id": "May", "value": 24.65, "color": "#E3C5D5", "month": "May"}
 ];
+~~~
+
+- **Treemap chart**
+
+A data set for Treemap chart has also another structure and may include the following properties:
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>id</b></td>
+			<td>(<i>string, number</i>) the id of a sector</td>
+		</tr>
+		<tr>
+			<td><b>text</b></td>
+			<td>(<i>string</i>) the name of the data set property to map labels of data values to</td>
+		</tr>
+        <tr>
+			<td><b>value</b></td>
+			<td>(<i>string, number</i>) the name of the data set property to map data values to </td>
+		</tr>
+        <tr>
+			<td><b>parent</b></td>
+			<td>(<i>string</i>) the parent sector</td>
+		</tr>
+    </tbody>
+</table>
+<br/>
+
+For example:
+
+~~~js
+const treeMapData = [
+    { id: "2020", month: "2020" },
+    { id: "Jan", value: 144.33, month: "Jan", parent: "2020" },
+    { id: "Feb", value: 22.12, month: "Feb", parent: "2020" },
+    { id: "Mar", value: 53.21, month: "Mar", parent: "2020" },
+    // more data
+];
+~~~
+
+## Adding data on Chart initialization
+
+You can specify data you want to add into Chart on the initialization stage. Make use of the **data** configuration property, as in:
+
+~~~js
+const chart = new dhx.Chart("chart_container", {
+    type: "area",
+	scales: {
+        "bottom": {
+            text: "month"
+        },
+        "left": {
+            maxTicks: 10,
+            max: 100,
+            min: 0
+        }
+    },
+    series: [
+        {
+            id: "A",
+            value: "company A",
+            color: "#81C4E8",
+            strokeWidth: 3
+        },
+        {
+            id: "B",
+            value: "company B",
+            color: "#74A2E7",
+            strokeWidth: 3
+        },
+        {
+            id: "C",
+            value: "company C",
+            color: "#5E83BA",
+            strokeWidth: 3
+        }
+    ],
+    legend: {
+        series: ["A", "B", "C"],
+        halign: "right",
+        valign: "top"
+    },
+    data: dataset
+});
 ~~~
 
 ## External data loading

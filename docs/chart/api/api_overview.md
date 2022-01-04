@@ -35,8 +35,9 @@ Use [DataCollection events](data_collection/index.md#events) to work with data.
 ## Properties
 
 | Name                                    | Description                                    |
-| --------------------------------------- | ---------------------------------------------- |
+| :-------------------------------------- | :--------------------------------------------- |
 | [](chart/api/chart_css_config.md)       | @getshort(chart/api/chart_css_config.md)       |
+| [](chart/api/chart_data_config.md)      | @getshort(chart/api/chart_data_config.md)      |
 | [](chart/api/chart_legend_config.md)    | @getshort(chart/api/chart_legend_config.md)    |
 | [](chart/api/chart_maxpoints_config.md) | @getshort(chart/api/chart_maxpoints_config.md) |
 | [](chart/api/chart_scales_config.md)    | @getshort(chart/api/chart_scales_config.md)    |

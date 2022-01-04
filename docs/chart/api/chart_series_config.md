@@ -214,4 +214,45 @@ var chart = new dhx.Chart("chart_container",{
 </table>
 <br/>
 
+## The list of config options for series (for charts without scales: Treemap)
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>text</b></td>
+			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map labels of data values to. The index of the option is 0 (item[0]). </td>
+		</tr>
+		<tr>
+			<td><b>value</b></td>
+			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to. The index of the option is 1 (item[1]).</td>
+		</tr>
+		<tr>
+			<td><b>direction</b></td>
+			<td>(<i>string</i>) defines the arrangement of tiles inside a chart ("right" (by default) - from larger to smaller value, "reverse" - from smaller to larger value)</td>
+		</tr>
+		<tr>
+			<td><b>stroke</b></td>
+			<td>(<i>string</i>) the color of lines between tiles</td>
+		</tr>
+		<tr>
+			<td><b>strokeWidth</b></td>
+			<td>(<i>number</i>) the width of lines between tiles inside a group in pixels, 2 by default. The width of lines between the groups is 4 (=2px*2) by default </td>
+		</tr>
+		<tr>
+			<td><b>paddings</b></td>
+			<td>(<i>number</i>) paddings between a chart and its initial position</td>
+		</tr>
+		<tr>
+			<td><b>tooltipTemplate</b></td>
+			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip
+			</td>
+		</tr>
+		<tr>
+			<td><b>showTextTemplate</b></td>
+			<td>(<i>function</i>) a function that specifies the template for showing values of data items on the chart</td>
+		</tr>
+    </tbody>
+</table>
+<br/>
+
 [comment]: # (@related: chart/configuration_properties.md#series)
