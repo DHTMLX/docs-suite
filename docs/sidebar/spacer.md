@@ -26,7 +26,7 @@ sidebar.data.add({
 
 You can provide the [following properties](sidebar/api/api_spacer_properties.md) in the configuration object of a Spacer control.
 
-## Showing/hiding spacer
+## Showing/hiding Spacer
 
 You can hide and show Spacer with the methods of sidebar:
 

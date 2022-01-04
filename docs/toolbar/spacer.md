@@ -26,7 +26,7 @@ toolbar.data.add({
 
 You can provide [the following properties](toolbar/api/api_spacer_properties.md) in the configuration object of a Spacer control.
 
-## Showing/hiding spacer
+## Showing/hiding Spacer
 
 You can hide and show Spacer with the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md) methods of Toolbar:
 

@@ -616,6 +616,6 @@ When it's necessary to release resources occupied by TreeGrid during its activit
 treegrid.destructor();
 ~~~
 
-## Using Selection API
+## Using selection API
 
 For information on using Selection API, read [Work with Selection Object](treegrid/usage_selection.md).

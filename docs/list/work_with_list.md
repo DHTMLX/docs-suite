@@ -136,6 +136,6 @@ list.data.sort({
 
 Sorting can be applied to any attribute of a data item.
 
-## Using Selection API
+## Using selection API
 
 For information on using Selection API, read [Work with Selection Object](list/usage_selection.md).

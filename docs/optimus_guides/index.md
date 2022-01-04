@@ -1,10 +1,10 @@
 ---
-sidebar_label: DHTMLX Optimus Framework
+sidebar_label: DHTMLX Optimus framework
 title: Optimus Framework Overview 
 description: You can have an overview of Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# DHTMLX Optimus Framework
+# DHTMLX Optimus framework
 
 DHTMLX Optimus is a component-oriented framework for building DHTMLX-based apps. The framework is intended to simplify the app building process, namely:
 
@@ -17,7 +17,7 @@ As a result, each part of an app can be developed and tested independently and u
 
 DHTMLX Optimus is a fully client-side solution. There aren't any special requirements to the server. You can use any data REST backend (PHP, Nodejs, .Net, Java, etc.)
 
-General Idea
+General idea
 ------------
 
 DHTMLX Optimus is based on the modern approaches of web development:
@@ -168,7 +168,7 @@ That's all!
 To get acquainted with the principles of developing with DHTMLX Optimus at a professional level, follow our [step-by-step guide](optimus_guides/how_to_start_optimus.md). The guide is suitable for both experienced users and beginners in the world of JavaScript and DHTMLX.
 
 
-Application Structure
+Application structure
 --------------
 
 To create a structure of your own app, extend the existing classes. DHTMLX Optimus contains three main classes:
@@ -964,7 +964,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
 </table>
 
 
-Other Materials
+Other materials
 ----------------------
 
 - [](optimus_guides/how_to_start_optimus.md) step-by-step guide

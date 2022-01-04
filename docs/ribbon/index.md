@@ -22,7 +22,7 @@ dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and
 
 ## Guides
 
-### Ribbon Settings
+### Ribbon settings
 
 Introduces the steps of creating Ribbon and discusses the ways of customizing and manipulating this component.
 
@@ -32,7 +32,7 @@ Introduces the steps of creating Ribbon and discusses the ways of customizing an
 - [](ribbon/customization.md)
 - [](ribbon/handling_events.md)
 
-### Ribbon Controls
+### Ribbon controls
 
 Includes the overview of main Ribbon controls and their attributes.
 

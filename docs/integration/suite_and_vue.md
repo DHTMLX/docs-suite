@@ -4,7 +4,7 @@ title: Code examples of DHTMLX Widgets with Vue.js
 description: You can explore how to use DHTMLX Widgets with Vue.js. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Code examples of how to useWidgets with Vue.js
+# Code examples of how to use widgets with Vue.js
 
 ![](../assets/integration/work_with_frameworks.png)
 

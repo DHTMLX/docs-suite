@@ -1,10 +1,10 @@
 ---
-sidebar_label: Data Loading
+sidebar_label: Data loading
 title: JavaScript List - Data Loading 
 description: You can explore the data loading of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Data Loading
+# Data loading
 
 There are several ways of loading List items:
 

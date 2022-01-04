@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with Selection Object
+sidebar_label: Work with Selection object
 title: JavaScript TreeGrid - Work with Selection Object 
 description: You can explore how to work with Selection Object of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Work with Selection Object
+# Work with Selection object
 
 You can manipulate with Grid cells via the API of the selection object. It is possible to get the object of a selected Grid cell or set the selection to a cell. The selection object also allows removing selection from previously selected cells.
 

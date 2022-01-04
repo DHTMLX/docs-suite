@@ -132,7 +132,7 @@ You can attach a tooltip to a control. For this you need to provide the **toolti
 }
 ~~~
 
-## Selecting/Unselecting an item
+## Selecting/unselecting an item
 
 ### Selecting a toolbar item
 
@@ -205,7 +205,7 @@ toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 **Related sample**: [Toolbar. Tooltips](https://snippet.dhtmlx.com/105levtd)
 
-## Using Tree collection API
+## Using Tree Collection API
 
 You can manipulate the controls of Toolbar with the help of the [Tree collection API](tree_collection/index.md). 
 

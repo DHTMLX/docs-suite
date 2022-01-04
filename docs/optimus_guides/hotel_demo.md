@@ -4,7 +4,7 @@ title: Hotel Management Demo with Optimus Framework
 description: description
 ---
 
-# Hotel Management System Demo
+# Hotel management system demo
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 
