@@ -19,7 +19,7 @@ Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23
 
 - You can get dhtmlxSidebar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23sidebar)
-- To work with data of Sidebar check [TreeCollection API](tree_collection/index.md)
+- To work with data of Sidebar check [TreeCollection API](tree_collection.md)
 
 ## Guides
 

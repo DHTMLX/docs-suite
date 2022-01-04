@@ -14,7 +14,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ## Adding Custom HTML
 
-Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+Any custom HTML content can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 toolbar.data.add({
@@ -30,4 +30,4 @@ You can provide the [following properties](toolbar/api/api_customhtmlbutton_prop
 
 ## Working with Custom HTML
 
-You can perform operations over the **Custom HTML** item with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+You can perform operations over the **Custom HTML** item with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).

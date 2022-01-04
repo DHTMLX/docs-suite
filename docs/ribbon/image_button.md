@@ -28,4 +28,4 @@ You can provide the [following properties](ribbon/api/api_imagebutton_properties
 
 ## Working with ImageButton
 
-You can perform operations over the **imageButton** control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+You can perform operations over the **imageButton** control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection.md).

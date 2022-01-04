@@ -8,7 +8,7 @@ description: You can explore the list of Menu controls of Menu in the documentat
 
 In this article you'll find the controls you can use in dhtmlxMenu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
-To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection/index.md). Check the [related article](menu/work_with_menu.md).
+To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection.md). Check the [related article](menu/work_with_menu.md).
 
 ## MenuItem
 
@@ -120,7 +120,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ### Adding Custom HTML
 
-Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+Any custom HTML content can be easily added to a menu with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 menu.data.add({

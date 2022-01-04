@@ -18,8 +18,8 @@ description: You can explore the API of DataView in the documentation of the DHT
 | [](dataview/api/dataview_setfocus_method.md)     | @getshort(dataview/api/dataview_setfocus_method.md)     |
 
 :::info important
-- Use [the methods of DataCollection](data_collection/index.md) to work with data. 
-- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of DataView items. 
+- Use [the methods of DataCollection](data_collection.md) to work with data. 
+- Apply [the methods of Selection](selection.md#methods) to manage the selection of DataView items. 
 :::
 
 ## Events
@@ -46,8 +46,8 @@ description: You can explore the API of DataView in the documentation of the DHT
 | [](dataview/api/dataview_itemrightclick_event.md)  | @getshort(dataview/api/dataview_itemrightclick_event.md)  |
 
 :::info important
-- Use [the events of DataCollection](data_collection/index.md#events) to work with data of DataView. 
-- Apply [the events of Selection](selection/index.md#events) to control the selection of DataView items.
+- Use [the events of DataCollection](data_collection.md#events) to work with data of DataView. 
+- Apply [the events of Selection](selection.md#events) to control the selection of DataView items.
 :::
 
 ## Properties

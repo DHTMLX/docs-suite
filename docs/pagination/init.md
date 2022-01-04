@@ -80,7 +80,7 @@ Add two containers:
 
 ## Add a related widget
 
-{{note dhtmlxPagination can be used in conjunction with data components like [List](list/index.md), [DataView](dataview/index.md), [Tree](tree/index.md), [Grid](grid/index.md), or [TreeGrid](treegrid/index.md).}}
+{{note dhtmlxPagination can be used in conjunction with data components like [List](list.md), [DataView](dataview.md), [Tree](tree.md), [Grid](grid.md), or [TreeGrid](treegrid.md).}}
 
 Choose the widget you want to link to the Pagination component, for example, dhtmlxList. 
 

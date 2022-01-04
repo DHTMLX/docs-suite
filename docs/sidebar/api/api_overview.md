@@ -27,7 +27,7 @@ description: You can explore the API of Sidebar in the documentation of the DHTM
 | [](sidebar/api/sidebar_unselect_method.md)    | @getshort(sidebar/api/sidebar_unselect_method.md)    |
 
 :::info important
-Use [TreeCollection methods](tree_collection/index.md) to work with data. 
+Use [TreeCollection methods](tree_collection.md) to work with data. 
 :::
 
 ## Sidebar events
@@ -47,7 +47,7 @@ Use [TreeCollection methods](tree_collection/index.md) to work with data.
 | [](sidebar/api/sidebar_openmenu_event.md)               | @getshort(sidebar/api/sidebar_openmenu_event.md)       |
 
 :::info important
-Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
+Use [TreeCollection events](tree_collection.md#events) to work with data. 
 :::
 
 ## Sidebar properties

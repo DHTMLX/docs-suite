@@ -44,7 +44,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_ungroup_method.md)           | @getshort(treegrid/api/treegrid_ungroup_method.md)           |
 
 :::info important
-- Use [the methods of TreeCollection](tree_collection/index.md) to work with data of TreeGrid. 
+- Use [the methods of TreeCollection](tree_collection.md) to work with data of TreeGrid. 
 - Apply [the methods of Selection](treegrid/api/api_overview.md#selection-methods) to manage the selection of TreeGrid cells.
 :::
 
@@ -165,7 +165,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_beforerowresize_event.md) | @getshort(treegrid/api/treegrid_beforerowresize_event.md) |
 
 :::info important
-- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of TreeGrid. 
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of TreeGrid. 
 - Apply [the events of Selection](treegrid/api/api_overview.md#selection-events) to control the selection of TreeGrid cells.
 :::
 

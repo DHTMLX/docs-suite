@@ -24,7 +24,7 @@ list.selection.disable();
 
 **Related sample**: [List. Disable/Enable Selection](https://snippet.dhtmlx.com/i4zj985o)
 
-{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection.md#events) events of the Selection object.}}
 
 ## Selecting an item
 

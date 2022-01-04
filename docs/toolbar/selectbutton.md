@@ -14,7 +14,7 @@ This is a button that contains a drop-down list of options.
 
 ## Adding SelectButton
 
-A new SelectButton can be created with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+A new SelectButton can be created with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 toolbar.data.add(
@@ -54,4 +54,4 @@ The configuration object of the SelectButton control can have [the following pro
 
 ## Operations with a button
 
-You can perform operations over the SelectButton control with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+You can perform operations over the SelectButton control with the help of the available [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).

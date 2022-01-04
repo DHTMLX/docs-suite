@@ -506,7 +506,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 ### Major updates
 
-- [The new Pagination widget](pagination/index.md) is added (Pro version) 
+- [The new Pagination widget](pagination.md) is added (Pro version) 
 - <a href="https://github.com/DHTMLX/nodejs-suite-demo" target="_blank">Suite with Node.js demo</a> is added
 - <a href="https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications" target="_blank">CSS templates for Suite widgets</a>
 - Layout. The configuration has become simpler, more concise and clearer.  New [type: "line", "space", "wide", "none"](layout/api/cell/layout_cell_type_config.md) allows creating Layout of the desired view.
@@ -1143,7 +1143,7 @@ Released on December 12, 2019
 
 #### Helpers
 
-- The ability to exchange data with a web server using [AJAX](ajax/index.md)
+- The ability to exchange data with a web server using [AJAX](ajax.md)
 
 ### Updates
 
