@@ -26,7 +26,7 @@ toolbar.data.add({
 
 The configuration object of the Separator control can have [the following properties](toolbar/api/api_separator_properties.md).
 
-## Showing/hiding separator
+## Showing/hiding Separator
 
 You can hide and show Separator with the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md) methods of Toolbar by passing the control's id to them:
 

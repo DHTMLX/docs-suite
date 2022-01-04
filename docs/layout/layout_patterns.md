@@ -1,10 +1,10 @@
 ---
-sidebar_label: Layout Patterns
+sidebar_label: Layout patterns
 title: JavaScript Layout - Layout Patterns 
 description: You can explore the patterns of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Layout Patterns
+# Layout patterns
 
 DHTMLX Layout patterns are predefined combinations of [rows and columns](layout/layout_structure.md) that provide you with various options of arranging cells inside of a layout in a neat structure. The patterns are named in accordance with their structure. Each scheme is similar to a Latin letter.
 

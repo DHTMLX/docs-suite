@@ -1,5 +1,5 @@
 ---
-sidebar_label: Basic Application
+sidebar_label: Basic application
 title: Basic Application
 ---          
 This tutorial describes how to create a basic application  and helps to understand the main principles of working with DHTMLX components. 

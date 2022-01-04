@@ -77,7 +77,7 @@ sidebar.disable();
 sidebar.enable();
 ~~~
 
-## Checking if a sidebar item is disabled
+## Checking if a Sidebar item is disabled
 
 To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/sidebar_isdisabled_method.md) method. The method takes one parameter:
 
@@ -98,7 +98,7 @@ sidebar.isDisabled("1"); // -> true/false
 
 ## Selecting/Unselecting an item
 
-### Selecting a sidebar item
+### Selecting a Sidebar item
 
 To select a particular Sidebar item, make use of the [select()](sidebar/api/sidebar_select_method.md) method of Sidebar. The method takes two parameters:
 
@@ -121,7 +121,7 @@ sidebar.select("categoryPost");
 
 **Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-### Unselecting a sidebar item
+### Unselecting a Sidebar item
 
 To remove selection from a selected item, apply the [unselect()](sidebar/api/sidebar_unselect_method.md) method of Sidebar. The method may take the id of an item as a parameter:
 
@@ -139,7 +139,7 @@ sidebar.unselect();
 
 **Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
 
-## Checking if a sidebar item is selected
+## Checking if a Sidebar item is selected
 
 To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/sidebar_isselected_method.md) method. The method takes one parameter:
 

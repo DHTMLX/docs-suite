@@ -28,7 +28,7 @@ toolbar.data.add({
 
 You can provide [the following properties](toolbar/api/api_input_properties.md) in the configuration object of an Input control.
 
-## Showing/hiding input
+## Showing/hiding Input
 
 You can show or hide Input with the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md) methods of Toolbar:
 
@@ -39,7 +39,7 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-## Enabling/disabling input
+## Enabling/disabling Input
 
 You can also enable and disable inputs with the [enable()](toolbar/api/toolbar_enable_method.md)/[disable()](toolbar/api/toolbar_disable_method.md) methods of Toolbar:
 

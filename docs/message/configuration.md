@@ -8,7 +8,7 @@ description: You can explore the configuration of Message in the documentation o
 
 In this article you will find the detailed list of properties that you can use inside the constructors of message boxes and tooltip to adjust their configuration.
 
-## Message Box
+## Message box
 
 ![](../assets/message/show_message.png)
 
@@ -29,7 +29,7 @@ dhx.message({
 
 {{note You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).}}
 
-## Alert Box
+## Alert box
 
 ![](../assets/message/show_alert.png)
 
@@ -49,7 +49,7 @@ dhx.alert({
 
 {{note See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).}}
 
-## Confirm Box
+## Confirm box
 
 ![](../assets/message/show_confirm.png)
 

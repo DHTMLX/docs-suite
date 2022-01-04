@@ -5,7 +5,7 @@ slug: /
 description: You can have an overview of Suite 7 and its widgets in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# DHTMLX Suite 7 UI Widgets Overview
+# DHTMLX Suite 7 UI widgets overview
 
 import WidgetIcons from '../src/components/WidgetIcons';
 
@@ -13,13 +13,13 @@ Welcome to the documentation of DHTMLX Suite ‐ JavaScript UI widget library!
 
 This documentation provides insight into how to create cross-browser responsive web applications using DHTMLX Suite. It contains API references, overviews, initialization, configuration, customization, and event handling guides for each Suite widget. There is also guidance on how to build various web systems following the example of DHTMLX live demos. Additionally, here you will find links to code examples of Suite widgets used with Angular, React, and Vue.js.
 
-## DHTMLX Suite Widgets
+## DHTMLX Suite widgets
 
 The DHTMLX Suite UI library comprises 20+ versatile widgets for processing and visualizing large amounts of data, conveniently navigating the interface, and interacting with users in a friendly way.
 
 <WidgetIcons />
 
-## Development Helpers
+## Development helpers
 
 There is a collection of helpers aimed to streamline web development by giving you all the necessary tools to work with data, content, and styles in the DHTMLX Suite library.
 
@@ -37,15 +37,15 @@ There is a collection of helpers aimed to streamline web development by giving y
 - [TreeCollection API](tree_collection/index)
 - [Uploader API](uploader/index)
 
-## How to Create DHTMLX-Based Web Applications
+## How to create DHTMLX-based web applications
 
 Here you can find best practices in working with DHTMLX Suite widgets and explore live demo applications to kickstart your project.
 
-### Optimus Micro-Framework
+### Optimus micro-framework
 
 [Optimus](/optimus_guides/index) acts as a facilitator of web development based on DHTMLX Suite. It helps to assemble and reuse widgets within a web app and ensures communication between widgets and the environment.
 
-### Live Demo Apps
+### Live demo apps
 
 A gallery of live demos provides real-life examples of using DHTMLX widgets in web apps. You can download any demo, view the source code, and try it out in your project. All demos are created with the help of Suite and Optimus.
 
@@ -57,7 +57,7 @@ A gallery of live demos provides real-life examples of using DHTMLX widgets in w
 - [Hospital management demo](optimus_guides/hospital_demo)
 - [Online exam demo](optimus_guides/exam_demo)
 
-### CSS Widget Templates
+### CSS widget templates
 
 A [set of CSS templates](https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-create-javascript-applications/) is specially designed for various use cases that can be implemented using DHTMLX widgets. You can borrow the CSS code and apply the styles you like in your web app.
 

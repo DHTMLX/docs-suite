@@ -33,7 +33,7 @@ Describes the steps of initializing Toolbar and working with it.
 - [](toolbar/customization.md)
 - [](toolbar/handling_events.md)
 
-### Toolbar Controls
+### Toolbar controls
 
 Discusses the creation of Toolbar controls and the possibilities of manipulating them.
 

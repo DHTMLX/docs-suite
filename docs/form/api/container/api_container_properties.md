@@ -1,10 +1,10 @@
 ---
-sidebar_label: Form Container Properties
+sidebar_label: Form Container properties
 title: JavaScript Form - Container Properties 
 description: You can explore the Properties of the Container control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Container Properties
+# Container properties
 
 - `type` - *string* - the type of a control, set it to"container"
 - `css` - *string* - adds style classes to a control string

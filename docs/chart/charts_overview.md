@@ -1,10 +1,10 @@
 ---
-sidebar_label: Overview of Chart Types 
+sidebar_label: Overview of Chart types 
 title: JavaScript Chart - Overview of Chart Types 
 description: You can have an overview of various Chart types in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Overview of Chart Types
+# Overview of Chart types
 
 dhtmlxChart provides a variety of charts types that will help you to represent you data in the most suitable way. Each type of chart is easily configurable and can be adjusted according to your preferences.
 All in all there are 11 types of chart, in the list below they are combined into groups for the sake of convenience:

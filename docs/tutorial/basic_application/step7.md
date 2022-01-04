@@ -5,7 +5,7 @@ title: Step 7. Display Data in the Chart
 
 Before displaying data in the chart we need to process grid data.
 
-##Process grid data
+## Process grid data
 
 To do that, we'll create a  <b>getCountUsers()</b> function given below:
 

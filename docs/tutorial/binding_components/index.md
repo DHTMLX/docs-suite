@@ -1,5 +1,5 @@
 ---
-sidebar_label: Binding Components
+sidebar_label: Binding components
 title: Binding Components
 ---          
 

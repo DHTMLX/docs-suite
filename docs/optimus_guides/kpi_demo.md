@@ -4,7 +4,7 @@ title: Sales KPI Tracking Demo with Optimus Framework
 description: You can explore how to work with Sales KPI Tracking Demo using Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Sales KPI Tracking System Demo
+# Sales KPI tracking system demo
 
 [comment]: # (todo добавить ссылку на демку на картинку и под картинкой)
 

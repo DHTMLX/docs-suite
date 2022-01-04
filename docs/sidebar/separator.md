@@ -26,7 +26,7 @@ sidebar.data.add({
 
 You can provide the [following properties](sidebar/api/api_separator_properties.md) in the configuration object of a Separator control.
 
-## Showing/hiding separator
+## Showing/hiding Separator
 
 You can hide and show Separator with the methods of Sidebar by passing the control's id to them:
 

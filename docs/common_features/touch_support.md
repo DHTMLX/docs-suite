@@ -4,7 +4,7 @@ title: JavaScript Guides - Touch Support
 description: You can learn about touch support in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Touch Support
+# Touch support
 
 Since version 7.0 and upper, the dhtmlxSuite library provides the built-in Touch support that should work out of the box. As a result, the interaction with the DHTMLX-based apps on touch devices becomes more comfy and predictable. 
 

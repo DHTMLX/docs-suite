@@ -1,5 +1,5 @@
 ---
-sidebar_label: How To Start 
+sidebar_label: How to start 
 title: How To Start 
 description: Check out DHTMLX step-by-step tutorials that explore the most essential concepts of the DHTMLX library on the basis of realistic examples and illustrative demos.
 ---          

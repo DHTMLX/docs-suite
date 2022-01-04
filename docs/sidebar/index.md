@@ -23,7 +23,7 @@ Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23
 
 ## Guides
 
-### Sidebar Settings
+### Sidebar settings
 
 Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
 
@@ -34,7 +34,7 @@ Tells about creation of Sidebar and shows all available ways of data loading, co
 - [](customization.md)
 - [](events.md)
 
-### Sidebar Controls
+### Sidebar controls
 
 Dwells on the creation of Sidebar controls and the possibilities of manipulating them.
 
