@@ -112,5 +112,5 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 ## Treemap Chart
 
-A treemap chart represents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
+A treemap chart presents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
 

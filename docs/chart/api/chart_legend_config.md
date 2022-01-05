@@ -106,7 +106,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>margin</b></td>
-			<td>(<i>number</i>) margin between the scale and the legend</td>
+			<td>(<i>number</i>) margin between the series and the legend</td>
 		</tr>
 		<tr>
 			<td><b>direction</b></td>
@@ -156,7 +156,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>margin</b></td>
-			<td>(<i>number</i>) margin between the scale and the legend</td>
+			<td>(<i>number</i>) margin between the series and the legend</td>
 		</tr>
 		<tr>
 			<td><b>direction</b></td>

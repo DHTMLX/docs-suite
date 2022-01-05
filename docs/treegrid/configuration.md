@@ -455,9 +455,9 @@ const data = [
 
 ### Editable combobox
 
-When a column has [editorType: "combobox"](#setting-type-of-column-editor), you may allow end users to add new options into the combobox editor from UI. To activate the functionality, specify the *newOptions: true* attribute of the **editorConfig** property in the configuration of the [column](treegrid/api/api_treegridcolumn_properties.md):
+From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#setting-type-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](treegrid/api/api_treegridcolumn_properties.md):
 
-~~~js
+~~~js {7}
 { 
     width: 150, 
     id: "ships",  
@@ -469,13 +469,28 @@ When a column has [editorType: "combobox"](#setting-type-of-column-editor), you 
 },
 ~~~
 
-When the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list, the new option will be added into the combobox. 
+The new option will be added into the combobox after the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list.
 
 ![](../assets/treegrid/combobox_editor.png)
 
 At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-content)) of the column.
 
 ![](../assets/treegrid/new_combobox_option.png)
+
+> To localize the *Create* option, translate the corresponding string and apply a ready locale to the Combobox component:
+
+~~~js
+const locale = {
+  	en: {
+    	createItem: "Create"
+  	},
+  	de: {
+    	createItem: "Schaffen"
+  	}
+};
+
+dhx.i18n.setLocale("combobox", locale["de"]);
+~~~
 
 ### Opening editor with one click
 
@@ -643,7 +658,7 @@ To add a custom function with your you own logic for the filter of a TreeGrid co
 
 {{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-content) is set.}}
 
-~~~js
+~~~js {11}
 const treeGrid = new dhx.TreeGrid("treegrid", {
     columns: [
         {
@@ -653,7 +668,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
                 { text: "Number of hours" },
                 { 
                     content: "inputFilter",
-                    //customFilter in TreeGrid
+                    // specifies custom filter in TreeGrid
                     customFilter: (value, match) => value < Number(match)
                 }
             ],

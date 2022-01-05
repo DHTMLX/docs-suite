@@ -14,47 +14,75 @@ Released on November 30, 2021
 
 ### New functionality
 
-- Tabbar. New [beforeChange](tabbar/api/tabbar_beforechange_event.md) event
-- Grid. [The ability to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters)
-- TreeGrid. [The ability to add custom logic to the header/footer filters of the column](treegrid/configuration.md/#customizing-headerfooter-filters)
-- Combobox. [Editable combobox](combobox/configuration.md/#editable-combobox), [newOptions](combobox/api/combobox_newoptions_config.md), [addOption](combobox/api/combobox_addoption_method.md)
-- Combobox. Add new ["createItem"](combobox/localization.md) locale option
-- Grid. [Editable combobox](grid/configuration.md/#editable-combobox), [editorConfig](grid/api/api_gridcolumn_properties.md)
-- TreeGrid. [Editable combobox](treegrid/configuration.md/#editable-combobox), [editorConfig](treegrid/api/api_treegridcolumn_properties.md)
-- Form. Combo control. [newOptions](form/api/combo/api_combo_properties.md). The ability to use the [addOption](combobox/api/combobox_addoption_method.md) method of combobox via `form.getItem("combo").getWidget().addOption("new_value");`
-- Combobox. New [htmlEnable](combobox/api/combobox_htmlenable_config.md) property
-- List. New [htmlEnable](list/api/list_htmlenable_config.md) property
-- Message. New [htmlEnable](message/api/api_message_properties.md) property for alert box, confirm box and tooltip
+#### Chart
+
+- New [Treemap chart](chart/charts_overview.md/#treemap-chart)
+- The ability to arrange legend items vertically or horizontally via the `direction` property of the [legend](chart/api/chart_legend_config.md)
+
+#### Combobox
+
+- The ability to disable rendering of HTML content in Combobox options via the [`htmlEnable:false`](combobox/api/combobox_htmlenable_config.md) property
+- The ability [to allow users to add new items into the list of options from UI](combobox/configuration.md/#editable-combobox) by setting the [`newOptions: true`](combobox/api/combobox_newoptions_config.md) property
+- The ability to add a new item into the data collection of Combobox via the [`addOption()`](combobox/api/combobox_addoption_method.md) method
+- New ["createItem"](combobox/localization.md) locale option added
+
+#### Form. Combo control
+
+- The ability [to allow users to add new items into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) by setting the [`newOptions: true`](form/api/combo/api_combo_properties.md) property
+- The ability to add a new item into the Combo control via the [`addOption()`](combobox/api/combobox_addoption_method.md) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
+
+#### Grid
+
+- [The ability to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md/#editable-combobox) by setting the `newOptions:true` attribute of the  [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
+
+#### List
+
+- The ability to disable rendering of HTML content in List options via the [`htmlEnable:false`](list/api/list_htmlenable_config.md) property
+
+#### Message
+
+- The ability to disable displaying HTML content in the [Alert box](message/api/api_message_properties.md/#alert-box), [Confirm box](message/api/api_message_properties.md/#confirm-box), and [Tooltip](message/api/api_message_properties.md/#tooltip) via the [`htmlEnable:false`](message/api/api_message_properties.md) property
+
+#### Tabbar
+
+- New [`beforeChange`](tabbar/api/tabbar_beforechange_event.md) event
+
+#### TreeGrid
+
+- [The ability to add custom logic to the header/footer filters of the column](treegrid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new items into the list of options from UI](treegrid/configuration.md/#editable-combobox) by setting the `newOptions:true` attribute of the  [`editorConfig`](treegrid/api/api_treegridcolumn_properties.md) property of a column
 
 ### Fixes
 
-- Chart. Fix the incorrect work of value type in a data set
-- Chart. Fix the issue with displaying an empty tooltip in Line Chart
-- Chart. Fix the incorrect display of Radar Chart if the values in the data set are the same
-- Form. Fix the issue with RadioGroup enabling
-- Form. Fix the issue with the Textarea control. Now the required property doesn't take value: null as a valid
-- Grid. Fix the incorrect work of adjust property with template
-- Grid. Fix the issue with no key navigation in Grid in Tabbar inside Window
-- Grid. Fix the incorrect work of drag-and-drop of the first row
-- Grid. Fix the incorrect work of Pagination if the first column is hidden
+- Chart. Fix the incorrect display of Radar chart if the values in the data set are the same
+- Chart. Fix the issue with the type of the [value](chart/data_loading.md/#preparing-data-set) property in a data set
+- Chart. Fix the issue with displaying an empty tooltip in Line chart
+- Form. Fix the issue that didn't allow enabling the disabled RadioGroup control
+- Form. Fix the issue with the Textarea control. Now the [required](form/api/textarea/api_textarea_properties.md) property doesn't take `value: null` as a valid
 - Grid. Fix the incorrect loading of string values from XML file
-- Grid. Fix the incorrect work of selectFilter with boolean values
-- Grid. Fix the issue while minus numbers from -1 to 0 are displayed like positive numbers
-- Grid. Fix the issue with predefined values not setting into the grid in the "select", "combobox" and "multiselect" column editor types
-- Grid. Fix the issue with not necessary vertical scrollbar appearance while using autoWidth property in a column
-- Layout. Fix the incorrect work of collapsing and resizing
-- Layout. Fix the incorrect recovery of cells without pre-set height/width properties after resizing and collapsing
-- Menu. Fix the issue with the closing menu in case the first item is disabled
-- Menu. ContextMenu. Fix the issue with the self-generated prefix for the name of the custom CSS clas
-- Toolbar. Datepicker. Fix the issue with the same date in two and more Datepickers in one Toolbar
-- Toolbar. Fix the ignorance of the icon by the [setState()](toolbar/api/toolbar_setstate_method.md) method
-- TreeGrid. Fix the incorrect work of multiselection property of comboFilter
-- TreeGrid. Fix the incorrect export of grouped treegrid to CSV
-- TreeGrid. Fix the incorrect display of items if the items in the data set are organized in reverse order
-- Custom Scroll. Fix the incorrect display while scrolling and changing tabs
+- Grid. Fix the issue that caused the [adjust](grid/api/api_gridcolumn_properties.md) property to ignore the [template](grid/api/api_gridcolumn_properties.md) specified for a column
+- Grid. Fix the issue with drag-and-drop of the first row
+- Grid, Pagination. Fix the incorrect work of Pagination if the first column of the grid is hidden
+- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md/#headerfooter-content) with boolean values
+- Grid. Fix the issue with [number formatting](grid/configuration.md/#formatting-columns) which caused minus numbers from -1 to 0 to be displayed like positive numbers
+- Grid. Fix the issue which caused key navigation to stop working in Grid attached into Tabbar which is attached into Window
+- Grid. Fix the issue which caused the [autoWidth:true](grid/api/grid_autowidth_config.md) property not to work if the [width](grid/configuration.md/#columns) wasn't specified for only one of the grid columns
+- Grid. Fix the incorrect display of actual values specified in the "select", "combobox", or "multiselect" editor when opening the editor
+- Layout. Fix the issue which caused the cells without the height/width specified initially cannot be reverted to the original state after they've been resized and collapsed several times
+- Layout. Fix the issue with collapsing and resizing a cell after it has been resized
+- Menu. ContextMenu. Fix the issue with the self-generated "–context-menu" postfix for the name of the custom CSS class
+- Menu. Fix the issue with closing menu after hovering over the first item which is disabled
+- Ribbon. Fix the issue with calculation of the height of the widget when some items are hidden
+- Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in the different Datepicker controls (two or more) added into the toolbar
+- Toolbar. SelectButton control. Fix the issue that caused an icon of the selected value not being displayed initially or after applying the [setState()](toolbar/api/toolbar_setstate_method.md) method
+- TreeGrid. Fix the issue with render of data items when they are parsed in reverse order
+- TreeGrid. Fix the issue with exporting a grouped treegrid to CSV
+- TreeGrid. Fix the incorrect work of filtering when [multiselection](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
+- Custom Scroll. Fix the incorrect position of scroll after scrolling the grid attached to the tabbar and changing the tabs
 
-Version 7.2.5
------------------
+## Version 7.2.5
+
 Released on October 28, 2021
 
 ### Fixes

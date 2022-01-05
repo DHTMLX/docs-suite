@@ -35,6 +35,9 @@ You can disable rendering of the HTML content and display it as plain text via s
 
 **Related sample**: [List. Disable HTML in Data](https://snippet.dhtmlx.com/tj0tn7fl)
 
+@changelog: added in v7.3
+
+@descr:
 #### Related article
 
 [HTML content of List options](list/configuration.md/#html-content-of-list-options)
