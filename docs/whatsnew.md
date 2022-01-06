@@ -21,28 +21,28 @@ Released on November 30, 2021
 
 #### Combobox
 
-- The ability to disable rendering of HTML content in Combobox options via the [`htmlEnable:false`](combobox/api/combobox_htmlenable_config.md) property
-- The ability [to allow users to add new items into the list of options from UI](combobox/configuration.md/#editable-combobox) by setting the [`newOptions: true`](combobox/api/combobox_newoptions_config.md) property
-- The ability to add a new item into the data collection of Combobox via the [`addOption()`](combobox/api/combobox_addoption_method.md) method
+- The ability to disable rendering of HTML content in Combobox options via the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
+- The ability [to allow users to add new items into the list of options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](combobox/api/combobox_newoptions_config.md) property
+- New [`addOption()`](combobox/api/combobox_addoption_method.md) method
 - New ["createItem"](combobox/localization.md) locale option added
 
 #### Form. Combo control
 
-- The ability [to allow users to add new items into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) by setting the [`newOptions: true`](form/api/combo/api_combo_properties.md) property
+- The ability [to allow users to add new items into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
 - The ability to add a new item into the Combo control via the [`addOption()`](combobox/api/combobox_addoption_method.md) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
 
 #### Grid
 
-- [The ability to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
-- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md/#editable-combobox) by setting the `newOptions:true` attribute of the  [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
+- The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md/#editable-combobox) via the `newOptions` attribute of the [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
 
 #### List
 
-- The ability to disable rendering of HTML content in List options via the [`htmlEnable:false`](list/api/list_htmlenable_config.md) property
+- The ability to disable rendering of HTML content in List options via the [`htmlEnable`](list/api/list_htmlenable_config.md) property
 
 #### Message
 
-- The ability to disable displaying HTML content in the [Alert box](message/api/api_message_properties.md/#alert-box), [Confirm box](message/api/api_message_properties.md/#confirm-box), and [Tooltip](message/api/api_message_properties.md/#tooltip) via the [`htmlEnable:false`](message/api/api_message_properties.md) property
+- The ability to disable displaying HTML content in the [Alert box](message/api/api_message_properties.md/#alert-box), [Confirm box](message/api/api_message_properties.md/#confirm-box), and [Tooltip](message/api/api_message_properties.md/#tooltip) via the [`htmlEnable`](message/api/api_message_properties.md) property
 
 #### Tabbar
 
@@ -50,36 +50,39 @@ Released on November 30, 2021
 
 #### TreeGrid
 
-- [The ability to add custom logic to the header/footer filters of the column](treegrid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
-- The ability [to allow users to add new items into the list of options from UI](treegrid/configuration.md/#editable-combobox) by setting the `newOptions:true` attribute of the  [`editorConfig`](treegrid/api/api_treegridcolumn_properties.md) property of a column
+- The ability [to add custom logic to the header/footer filters of the column](treegrid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new items into the list of options from UI](treegrid/configuration.md/#editable-combobox) via the `newOptions` attribute of the  [`editorConfig`](treegrid/api/api_treegridcolumn_properties.md) property of a column
 
 ### Fixes
 
 - Chart. Fix the incorrect display of Radar chart if the values in the data set are the same
-- Chart. Fix the issue with the type of the [value](chart/data_loading.md/#preparing-data-set) property in a data set
 - Chart. Fix the issue with displaying an empty tooltip in Line chart
-- Form. Fix the issue that didn't allow enabling the disabled RadioGroup control
-- Form. Fix the issue with the Textarea control. Now the [required](form/api/textarea/api_textarea_properties.md) property doesn't take `value: null` as a valid
-- Grid. Fix the incorrect loading of string values from XML file
-- Grid. Fix the issue that caused the [adjust](grid/api/api_gridcolumn_properties.md) property to ignore the [template](grid/api/api_gridcolumn_properties.md) specified for a column
-- Grid. Fix the issue with drag-and-drop of the first row
+- Chart. Fix the issue with the type of the [`value`](chart/data_loading.md/#preparing-data-set) property in a data set
+- Custom Scroll. Fix the incorrect position of scroll after scrolling the grid attached to the tabbar and changing the tabs
+- Form. Fix the issue with enabling the disabled RadioGroup control
+- Form. Fix the issue with the Textarea control. Now the [`required`](form/api/textarea/api_textarea_properties.md) property doesn't take `value: null` as a valid
+- Form. Input control. Fix the issue with display of excess whitespace in the output value of the [`Input`](form/api/input/input_input_event.md) event
 - Grid, Pagination. Fix the incorrect work of Pagination if the first column of the grid is hidden
-- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md/#headerfooter-content) with boolean values
-- Grid. Fix the issue with [number formatting](grid/configuration.md/#formatting-columns) which caused minus numbers from -1 to 0 to be displayed like positive numbers
-- Grid. Fix the issue which caused key navigation to stop working in Grid attached into Tabbar which is attached into Window
-- Grid. Fix the issue which caused the [autoWidth:true](grid/api/grid_autowidth_config.md) property not to work if the [width](grid/configuration.md/#columns) wasn't specified for only one of the grid columns
 - Grid. Fix the incorrect display of actual values specified in the "select", "combobox", or "multiselect" editor when opening the editor
+- Grid. Fix the incorrect loading of string values from XML file
+- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md/#headerfooter-content) with boolean values
+- Grid. Fix the issue that caused the [`adjust`](grid/api/api_gridcolumn_properties.md) property to ignore the [`template`](grid/api/api_gridcolumn_properties.md) specified for a column
+- Grid. Fix the issue which caused key navigation to stop working in Grid attached into Tabbar which is attached into Window
+- Grid. Fix the issue which caused [`autoWidth`](grid/api/grid_autowidth_config.md) not to work if the [`width`](grid/configuration.md/#columns) wasn't specified for only one of the grid columns
+- Grid. Fix the issue with [number formatting](grid/configuration.md/#formatting-columns) which caused minus numbers from -1 to 0 to be displayed like positive numbers
+- Grid. Fix the issue with drag-and-drop of the first row
+- Grid. Fix the issue with the [`canRowDrop`](grid/api/grid_canrowdrop_event.md) event
 - Layout. Fix the issue which caused the cells without the height/width specified initially cannot be reverted to the original state after they've been resized and collapsed several times
 - Layout. Fix the issue with collapsing and resizing a cell after it has been resized
+- LazyDataProxy in Grid. Fix the issue with the [`loadError`](data_collection/api/datacollection_loaderror_event.md) event
 - Menu. ContextMenu. Fix the issue with the self-generated "–context-menu" postfix for the name of the custom CSS class
-- Menu. Fix the issue with closing menu after hovering over the first item which is disabled
-- Ribbon. Fix the issue with calculation of the height of the widget when some items are hidden
-- Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in the different Datepicker controls (two or more) added into the toolbar
-- Toolbar. SelectButton control. Fix the issue that caused an icon of the selected value not being displayed initially or after applying the [setState()](toolbar/api/toolbar_setstate_method.md) method
-- TreeGrid. Fix the issue with render of data items when they are parsed in reverse order
+- Menu. Fix the issue which caused the menu to close after hovering over the first item which is disabled
+- Ribbon. Fix the issue with calculation of the widget's height when some items are hidden
+- Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in different Datepickers (two or more)
+- Toolbar. SelectButton control. Fix the issue that caused an icon of the selected value not being displayed initially or after applying the [`setState()`](toolbar/api/toolbar_setstate_method.md) method
+- TreeGrid. Fix the incorrect work of filtering when [`multiselection`](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
 - TreeGrid. Fix the issue with exporting a grouped treegrid to CSV
-- TreeGrid. Fix the incorrect work of filtering when [multiselection](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
-- Custom Scroll. Fix the incorrect position of scroll after scrolling the grid attached to the tabbar and changing the tabs
+- TreeGrid. Fix the issue with render of data items when they are parsed in reverse order
 
 ## Version 7.2.5
 
