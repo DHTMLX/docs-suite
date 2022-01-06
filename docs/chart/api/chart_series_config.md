@@ -14,7 +14,7 @@ description: You can explore the series config of Chart in the documentation of 
 var chart = new dhx.Chart("chart_container",{
     type:"bar",
     scales: {
-        "bottom" : {s
+        "bottom" : {
             text: "month"
         },
         "left" : {}
