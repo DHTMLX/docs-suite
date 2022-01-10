@@ -250,15 +250,15 @@ var combo = new dhx.Combobox("combo_container", {
 });			
 ~~~
 
-## HTML content of ComboBox options
+## HTML content of Combobox options
 
-By default, the Combobox can display HTML content if it is specified for its options.
+By default, Combobox displays HTML content if it is specified for its options.
 
 In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../combobox/api/combobox_htmlenable_config/) property to *false*. 
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", { 
-    htmlEnable: false, // disables render of HTML content
+    htmlEnable: false, // disables rendering of HTML content
     template: function (item) {
         return "<div style='user-select:none; display: flex; justify-content: space-between;'>" +
             "<span>" + item.value + "</span>" +
@@ -268,5 +268,5 @@ const combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-**Related sample**: [Combobox. Disable HTML in Data](https://snippet.dhtmlx.com/e4dolhfs)
+**Related sample**: [Combobox. Disable HTML rendering](https://snippet.dhtmlx.com/e4dolhfs)
 

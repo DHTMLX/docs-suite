@@ -18,7 +18,7 @@ const combobox = new dhx.Combobox("combobox", {
 
 @descr: 
 
-**Related sample**: [Combobox. Adding new options](https://snippet.dhtmlx.com/ggew79m3)
+**Related sample**: [Combobox. Multiselection, add new options (free text), select all button](https://snippet.dhtmlx.com/ui7pi7ty)
 
 The end user can add a new item into the data collection in two ways:
 

@@ -33,7 +33,7 @@ When the property is set to *true*, the list displays the HTML content for its o
 
 You can disable rendering of the HTML content and display it as plain text via setting the property to *false*.
 
-**Related sample**: [List. Disable HTML in Data](https://snippet.dhtmlx.com/tj0tn7fl)
+**Related sample**: [List. Disable HTML rendering](https://snippet.dhtmlx.com/tj0tn7fl)
 
 @changelog: added in v7.3
 

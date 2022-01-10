@@ -11,14 +11,15 @@ description: You can explore the addOption method of Combo Box in the documentat
 @signature: addOption(value: string): void;
 
 @example:
+const combobox = new dhx.Combobox("combobox");
+combobox.data.parse(dataset);
+
 combobox.addOption("Georgia");
 
 // check that the new item is added into the data collection
 console.log(combobox.data.serialize());
 
 @descr:
-
-**Related sample**: [Combobox. Adding new options](https://snippet.dhtmlx.com/ggew79m3)
 
 {{note The method invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of the Data Collection object. If the **beforeAdd** event returns *false*, a new item won't be added into the data collection.
 }}

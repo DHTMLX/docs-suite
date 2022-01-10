@@ -64,7 +64,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>direction</b></td>
-			<td>(<i>string</i>) optional, the arrangement of the legend items: "desc" (default) | "asc" </td>
+			<td>(<i>string</i>) optional, the arrangement of the legend items: "row" (default) | "column" </td>
 		</tr>
 		<tr>
 			<td><b>size</b></td>
@@ -110,7 +110,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>direction</b></td>
-			<td>(<i>string</i>) optional, the arrangement of the legend items: "desc" (default) | "asc" </td>
+			<td>(<i>string</i>) optional, the arrangement of the legend items: "row" (default) | "column" </td>
 		</tr>
 		<tr>
 			<td><b>size</b></td>
@@ -168,7 +168,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>direction</b></td>
-			<td>(<i>string</i>) optional, the arrangement of the legend items: "desc" (default) | "asc" </td>
+			<td>(<i>string</i>) optional, the arrangement of the legend items: "row" (default) | "column" </td>
 		</tr>
 		<tr>
 			<td><b>size</b></td>

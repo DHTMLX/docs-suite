@@ -228,7 +228,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>direction</b></td>
-			<td>(<i>string</i>) defines the arrangement of tiles inside a chart ("right" (by default) - from larger to smaller value, "reverse" - from smaller to larger value)</td>
+			<td>(<i>string</i>) defines the arrangement of tiles inside a chart ("desc" (by default) - from larger to smaller value, "asc" - from smaller to larger value)</td>
 		</tr>
 		<tr>
 			<td><b>stroke</b></td>

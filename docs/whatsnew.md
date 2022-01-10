@@ -28,13 +28,13 @@ Released on November 30, 2021
 
 #### Form. Combo control
 
-- The ability [to allow users to add new items into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
+- The ability [to allow users to add new values into the list of combobox options from UI](combobox/configuration.md/#editable-combobox) via the [`newOptions`](form/api/combo/api_combo_properties.md) property
 - The ability to add a new item into the Combo control via the [`addOption()`](combobox/api/combobox_addoption_method.md) method of Combobox: [form.getItem("combo").getWidget().addOption("new_value");](form/combo.md/#working-with-the-dhtmlxcombobox-widget)
 
 #### Grid
 
 - The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
-- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md/#editable-combobox) via the `newOptions` attribute of the [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
+- The ability [to allow users to add new values into the list of options from UI](grid/configuration.md/#editable-combobox) via the `newOptions` attribute of the [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
 
 #### List
 
