@@ -496,6 +496,8 @@ From v7.3, you may allow end users to add new options into the combobox editor (
 },
 ~~~
 
+**Related sample:** [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax)
+
 The new option will be added into the combobox after the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list. 
 
 ![](../assets/grid/combobox_editor.png)
@@ -710,7 +712,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom Filter](https://snippet.dhtmlx.com/gcidkxjg)
+**Related sample**: [Grid. Custom filters in the header](https://snippet.dhtmlx.com/gcidkxjg)
 
 The **customFilter** attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
 

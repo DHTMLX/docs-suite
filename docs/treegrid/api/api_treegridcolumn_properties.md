@@ -126,6 +126,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 			<td><b>editorConfig</b></td>
 			<td>(<i>object</i>) an object with configuration settings of the column's editor. It can include the following property:
             <ul><li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (<i>boolean</i>) allows end users to add new values into the list of combobox options from UI (<i>editorType: "combobox"</i>). The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li></ul>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0gd4dn8p" target="_blank">TreeGrid. Rich example with templates and different editors</a>
             </td>
 		</tr>
         <tr>

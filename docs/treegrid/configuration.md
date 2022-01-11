@@ -458,16 +458,18 @@ const data = [
 From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#setting-type-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](treegrid/api/api_treegridcolumn_properties.md):
 
 ~~~js {7}
-{ 
-    width: 150, 
-    id: "ships",  
-    header: [{ text: "Ships in" }, {content: "comboFilter"}], 
+{
+    width: 120,
+    id: "status",
+    header: [{ text: "Status" }, { content: "selectFilter" }],
     editorType: "combobox",
-    // enables the ability to add new values into the combobox editor of the "Ships in" column   
+    // enables the ability to add new values into the combobox editor of the "Status" column
     editorConfig: { newOptions: true }, 
-    options: ["", "1 hour", "12 hours", "24 hours", "1 week"] 
+    options: ["Done", "In Progress", "Not Started"]
 },
 ~~~
+
+**Related sample:** [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p)
 
 The new option will be added into the combobox after the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list.
 
