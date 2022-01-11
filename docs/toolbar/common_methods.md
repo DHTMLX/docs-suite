@@ -207,7 +207,7 @@ toolbar.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 ## Using Tree Collection API
 
-You can manipulate the controls of Toolbar with the help of the [Tree collection API](tree_collection/index.md). 
+You can manipulate the controls of Toolbar with the help of the [Tree collection API](tree_collection.md). 
 
 ### Adding new controls into Toolbar
 
@@ -292,4 +292,4 @@ You can move menu controls to different positions with the **move()** method of 
 toolbar.data.move("2",0);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection/index.md).}}
+{{note Check the full list of [Tree collection API](tree_collection.md).}}

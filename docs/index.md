@@ -23,19 +23,19 @@ The DHTMLX Suite UI library comprises 20+ versatile widgets for processing and v
 
 There is a collection of helpers aimed to streamline web development by giving you all the necessary tools to work with data, content, and styles in the DHTMLX Suite library.
 
-- [AJAX](ajax/index)
+- [AJAX](ajax/)
 - [AwaitRedraw](helpers/await_redraw)
 - [CSS classes of base elements](helpers/base_elements)
-- [CssManager](css_manager/index)
-- [DataCollection API](data_collection/index)
+- [CssManager](css_manager/)
+- [DataCollection API](data_collection/)
 - [DataDrivers](helpers/datadrivers)
-- [DataProxy](data_proxy/index)
+- [DataProxy](data_proxy/)
 - [Default Icons](helpers/icon)
 - [Dynamic Loading](helpers/lazydataproxy)
 - [Resizer](helpers/resize_handler)
-- [Selection Object API](selection/index)
-- [TreeCollection API](tree_collection/index)
-- [Uploader API](uploader/index)
+- [Selection Object API](selection/)
+- [TreeCollection API](tree_collection/)
+- [Uploader API](uploader/)
 
 ## How to create DHTMLX-based web applications
 
@@ -43,7 +43,7 @@ Here you can find best practices in working with DHTMLX Suite widgets and explor
 
 ### Optimus micro-framework
 
-[Optimus](/optimus_guides/index) acts as a facilitator of web development based on DHTMLX Suite. It helps to assemble and reuse widgets within a web app and ensures communication between widgets and the environment.
+[Optimus](/optimus_guides/) acts as a facilitator of web development based on DHTMLX Suite. It helps to assemble and reuse widgets within a web app and ensures communication between widgets and the environment.
 
 ### Live demo apps
 

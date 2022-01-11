@@ -35,4 +35,4 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+Check the full list of available operations in the [Sidebar API](sidebar/api/api_overview.md) and [Tree Collection API](tree_collection.md).

@@ -160,5 +160,5 @@ When you complete the steps described in this tutorial, you'll get an advanced d
 
 
 <div id="tutorial_step">
-    <a id="next_step" href="tutorial/index.md"></a>
+    <a id="next_step" href="tutorial.md"></a>
 </div>

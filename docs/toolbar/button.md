@@ -14,7 +14,7 @@ This is a simple button that can have an icon. Button can have two states and a 
 
 ## Adding Button
 
-A button can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+A button can be easily added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 toolbar.data.add({

@@ -131,7 +131,7 @@ export class MyApp extends App {
 }
 ~~~
 
-You can find more details on API methods [below](optimus_guides/index.md#api).
+You can find more details on API methods [below](optimus_guides.md#api).
 
 5\. Finally, we've initialized our application via updating the code of the *index.html* file with the following:
 
@@ -330,7 +330,7 @@ The above code shows that:
 The Component class also provides access to the events of the app via the **fire()**, **on()** methods. See more details below.
 
 
-The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [use()](optimus_guides/index.md#api) method.
+The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [use()](optimus_guides.md#api) method.
 
 ~~~js
 import { App } from "dhx-optimus";

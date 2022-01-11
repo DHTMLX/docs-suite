@@ -24,7 +24,7 @@ tree.selection.disable();
 
 **Related sample**: [Tree. Disable/Enable selection](https://snippet.dhtmlx.com/g6cmggqt)
 
-{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection.md#events) events of the Selection object.}}
 
 ## Selecting an item
 

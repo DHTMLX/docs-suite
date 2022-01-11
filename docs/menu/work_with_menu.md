@@ -150,7 +150,7 @@ menu.getSelected(); // -> ["selected_1", "selected_1.1"]
 
 ## Using Tree collection API
 
-You can manipulate the controls of Menu with the help of the [Tree collection API](tree_collection/index.md). 
+You can manipulate the controls of Menu with the help of the [Tree collection API](tree_collection.md). 
 
 ### Adding menu items
 
@@ -240,4 +240,4 @@ menu.data.removeAll();
 menu.data.parse(new_options);
 ~~~
 
-{{note Check the full list of [Tree collection API](tree_collection/index.md).}}
+{{note Check the full list of [Tree collection API](tree_collection.md).}}

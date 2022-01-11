@@ -24,7 +24,7 @@ dataview.selection.disable();
 
 **Related sample**: [Dataview. Disable/Enable selection](https://snippet.dhtmlx.com/kn42gb50)
 
-{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection.md#events) events of the Selection object.}}
 
 ## Selecting an item
 

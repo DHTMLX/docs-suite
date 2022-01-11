@@ -8,8 +8,8 @@ description: You can learn how to work with DataCollection in the documentation 
 
 The DHTMLX library includes two invisible components (in other words, helpers) that serve to store data:
 
-- [DataCollection](data_collection/index.md/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
-- [TreeCollection](tree_collection/index.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid)
+- [DataCollection](data_collection.md/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
+- [TreeCollection](tree_collection.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Tabbar, Tree, TreeGrid)
 
 API methods and events of DataCollection and TreeCollection lets you work with data items, namely to load, process, and edit the items.
 
@@ -17,7 +17,7 @@ The helpers allow using the same data set in different components. For instance,
 
 In this article we will consider how to work with DataCollection.
 
-Check all methods and events of [Data Collection API](data_collection/index.md/).
+Check all methods and events of [Data Collection API](data_collection.md/).
 
 ## Common features of DataCollection
 
@@ -59,7 +59,7 @@ You can add new items into the initialized component via the **add()** method, r
 
 The **serialize()** method is used to serialize data into JSON, XML or CSV format. You can send the serialized data to a new component or server. The **copy()** method will help you to create a copy of an item at the defined position. Use the **save()** method to save changes made in the data to the server side.
 
-Check all [methods](data_collection/index.md/#methods) of DataCollection.
+Check all [methods](data_collection.md/#methods) of DataCollection.
 
 ### DataCollection events
 
@@ -76,7 +76,7 @@ where:
 
 Events of DataCollection are helpful when you need to configure a system response to the changes made in data.
 
-Check all [events](data_collection/index.md/#events) of DataCollection.
+Check all [events](data_collection.md/#events) of DataCollection.
 
 Check how to work with events in the [Events basic rules](guides/events_guide.md/) guide.
 
