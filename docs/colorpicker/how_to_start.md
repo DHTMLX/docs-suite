@@ -91,7 +91,7 @@ var popup = new dhx.Popup();
 popup.attach(colorpicker);
 ~~~
 
-- use the [](../popup/api/popup_show_method.md) and [hide](../popup/api/popup_hide_method) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
+- use the [show()](../../popup/api/popup_show_method/) and [hide()](../../popup/api/popup_hide_method/) methods of Popup to control when a popup with color picker should be shown/hidden. For example:
 
 ~~~js
 popup.show("showButton");
