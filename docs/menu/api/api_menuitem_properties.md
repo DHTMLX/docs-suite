@@ -34,7 +34,7 @@ description: You can explore the MenuItem properties of Menu in the documentatio
 		</tr>
         <tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) the name of an <a href="../../fa_icons">icon</a> from the used icon font</td>
+			<td>(<i>string</i>) the name of an <a href="../../customization">icon</a> from the used icon font</td>
 		</tr>
         <tr>
 			<td><b>items</b></td>
