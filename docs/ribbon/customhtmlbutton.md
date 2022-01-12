@@ -14,7 +14,7 @@ This is an item that contains any custom HTML content (for example, an image, ic
 
 ## Adding Custom HTML
 
-Any custom HTML content can be easily added to a ribbon with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+Any custom HTML content can be easily added to a ribbon with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 ribbon.data.add({
@@ -31,4 +31,4 @@ You can provide the [following properties](ribbon/api/api_customhtml_properties.
 
 ## Working with Custom HTML
 
-You can perform operations over the **Custom HTML** item with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+You can perform operations over the **Custom HTML** item with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection.md).

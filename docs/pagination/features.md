@@ -24,7 +24,7 @@ description: You can explore the features of Pagination in the documentation of 
   - [Get/set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 - **Integration**
   - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
-  - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)
+  - [Optimus](optimus_guides.md) (recommended framework for creating apps with Suite components)
   - React integration ([documentation](integration/suite_and_react.md), [demo](https://github.com/DHTMLX/react-widgets))
   - Angular integration ([documentation](integration/suite_and_angular.md), [demo](https://github.com/DHTMLX/angular-suite-demo))
   - Vue integration ([documentation](integration/suite_and_vue.md), [demo](https://github.com/DHTMLX/vue-suite-demo))

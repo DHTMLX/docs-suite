@@ -44,13 +44,13 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_ungroup_method.md)           | @getshort(treegrid/api/treegrid_ungroup_method.md)           |
 
 :::info important
-- Use [the methods of TreeCollection](tree_collection/index.md) to work with data of TreeGrid. 
+- Use [the methods of TreeCollection](tree_collection.md) to work with data of TreeGrid. 
 - Apply [the methods of Selection](treegrid/api/api_overview.md#selection-methods) to manage the selection of TreeGrid cells.
 :::
 
 ## TreeGrid events
 
-### Collapse and Expand
+### Collapse and expand
 
 | Name                                              | Description                                              |
 |---------------------------------------------------|----------------------------------------------------------|
@@ -95,7 +95,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 |-------------------------------------------|--------------------------------------------------|
 | [](treegrid/api/treegrid_scroll_event.md) | @getshort(treegrid/api/treegrid_scroll_event.md) |
 
-### Sort and Filter
+### Sort and filter
 
 | Name                                            | Description                                            |
 |-------------------------------------------------|--------------------------------------------------------|
@@ -103,7 +103,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_beforesort_event.md)   | @getshort(treegrid/api/treegrid_beforesort_event.md)   |
 | [](treegrid/api/treegrid_filterchange_event.md) | @getshort(treegrid/api/treegrid_filterchange_event.md) |
 
-### Column Drag and Drop
+### Column drag and drop
 
 | Name                                                | Description                                                |
 |-----------------------------------------------------|------------------------------------------------------------|
@@ -117,7 +117,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_dragcolumnout_event.md)    | @getshort(treegrid/api/treegrid_dragcolumnout_event.md)    |
 | [](treegrid/api/treegrid_dragcolumnstart_event.md)  | @getshort(treegrid/api/treegrid_dragcolumnstart_event.md)  |
 
-### Column Hide and Show
+### Column hide and show
 
 | Name                                                | Description                                                |
 |-----------------------------------------------------|------------------------------------------------------------|
@@ -126,7 +126,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_beforecolumnhide_event.md) | @getshort(treegrid/api/treegrid_beforecolumnhide_event.md) |
 | [](treegrid/api/treegrid_beforecolumnshow_event.md) | @getshort(treegrid/api/treegrid_beforecolumnshow_event.md) |
 
-### Column Resize
+### Column resize
 
 | Name                                                 | Description                                                 |
 |------------------------------------------------------|-------------------------------------------------------------|
@@ -134,7 +134,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_beforeresizestart_event.md) | @getshort(treegrid/api/treegrid_beforeresizestart_event.md) |
 | [](treegrid/api/treegrid_resize_event.md)            | @getshort(treegrid/api/treegrid_resize_event.md)            |
 
-### Row Drag and Drop
+### Row drag and drop
 
 | Name                                             | Description                                             |
 |--------------------------------------------------|---------------------------------------------------------|
@@ -148,7 +148,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_dragrowout_event.md)    | @getshort(treegrid/api/treegrid_dragrowout_event.md)    |
 | [](treegrid/api/treegrid_dragrowstart_event.md)  | @getshort(treegrid/api/treegrid_dragrowstart_event.md)  |
 
-### Row Hide and Show
+### Row hide and show
 
 | Name                                             | Description                                             |
 |--------------------------------------------------|---------------------------------------------------------|
@@ -157,7 +157,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_beforerowhide_event.md) | @getshort(treegrid/api/treegrid_beforerowhide_event.md) |
 | [](treegrid/api/treegrid_beforerowshow_event.md) | @getshort(treegrid/api/treegrid_beforerowshow_event.md) |
 
-### Row Resize
+### Row resize
 
 | Name                                               | Description                                               |
 |----------------------------------------------------|-----------------------------------------------------------|
@@ -165,7 +165,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_beforerowresize_event.md) | @getshort(treegrid/api/treegrid_beforerowresize_event.md) |
 
 :::info important
-- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of TreeGrid. 
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of TreeGrid. 
 - Apply [the events of Selection](treegrid/api/api_overview.md#selection-events) to control the selection of TreeGrid cells.
 :::
 

@@ -19,11 +19,11 @@ Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23
 
 - You can get dhtmlxSidebar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23sidebar)
-- To work with data of Sidebar check [TreeCollection API](tree_collection/index.md)
+- To work with data of Sidebar check [TreeCollection API](tree_collection.md)
 
 ## Guides
 
-### Sidebar Settings
+### Sidebar settings
 
 Tells about creation of Sidebar and shows all available ways of data loading, configuring and styling the component, and working with controls.
 
@@ -34,7 +34,7 @@ Tells about creation of Sidebar and shows all available ways of data loading, co
 - [](customization.md)
 - [](events.md)
 
-### Sidebar Controls
+### Sidebar controls
 
 Dwells on the creation of Sidebar controls and the possibilities of manipulating them.
 

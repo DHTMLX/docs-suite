@@ -38,7 +38,7 @@ description: You can explore the features of Combo Box in the documentation of t
   - [Show / hide options list](https://snippet.dhtmlx.com/ztc4sko8)
 - **Integration**
   - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
-  - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)
+  - [Optimus](optimus_guides.md) (recommended framework for creating apps with Suite components)
   - React integration ([documentation](integration/suite_and_react.md), [demo](https://github.com/DHTMLX/react-widgets))
   - Angular integration ([documentation](integration/suite_and_angular.md), [demo](https://github.com/DHTMLX/angular-suite-demo))
   - Vue integration ([documentation](integration/suite_and_vue.md), [demo](https://github.com/DHTMLX/vue-suite-demo))

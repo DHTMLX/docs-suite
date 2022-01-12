@@ -1,10 +1,10 @@
 ---
-sidebar_label: Data Loading
+sidebar_label: Data loading
 title: JavaScript Chart - Data Loading 
 description: You can explore the data loading of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Data Loading
+# Data loading
 
 There are two ways of loading data into dhtmlxChart:
 
@@ -156,7 +156,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ## External data loading
 
-To load data from an external file, make use of the **load()** method of [DataCollection](data_collection/index.md). It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 var chart = new dhx.Chart("chart_container");
@@ -177,7 +177,7 @@ chart.data.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local data source, use the **parse()** method of [DataCollection](data_collection/index.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var chart = new dhx.Chart("chart_container");
@@ -188,7 +188,7 @@ chart.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a chart, use the **serialize()** method of [DataCollection](data_collection/index.md). It converts the data of a chart into an array of JSON objects. 
+To save the current state of a chart, use the **serialize()** method of [DataCollection](data_collection.md). It converts the data of a chart into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs for data titles and values.
 
 ~~~js

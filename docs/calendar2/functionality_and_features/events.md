@@ -1,5 +1,5 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: Event Handling
 ---          
 

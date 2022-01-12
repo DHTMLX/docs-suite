@@ -5,7 +5,7 @@ title: Step 7. Display Data in the Chart
 
 Before displaying data in the chart we need to process grid data.
 
-##Process grid data
+## Process grid data
 
 To do that, we'll create a  <b>getCountUsers()</b> function given below:
 
@@ -90,7 +90,7 @@ After finishing all the steps described in the tutorial, you get a mini app that
 <img style="margin: 16px" src="tutorial/basic_application/chart.png"/>
 
 <div id="tutorial_step">
-    <a id="next_step" href="tutorial/index.md"></a>
+    <a id="next_step" href="tutorial.md"></a>
 </div>
 
 

@@ -1,9 +1,9 @@
 ---
-sidebar_label: Binding Components
+sidebar_label: Binding components
 title: Binding Components
 ---          
 
-In the [previous tutorial](tutorial/basic_application/index.md) we've considered how to add a Layout, a Grid, a Toolbar and a Chart on the page. 
+In the [previous tutorial](tutorial/basic_application.md) we've considered how to add a Layout, a Grid, a Toolbar and a Chart on the page. 
 We've also shown you how to load the data into the Grid and the Chart and remove it.
 
 We suggest that you won't stop at the basic lesson and will learn more about the work of individual components, such as a Window, a Form, a Context menu. 

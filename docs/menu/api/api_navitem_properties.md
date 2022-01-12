@@ -34,7 +34,7 @@ description: You can explore the NavItem properties of Menu in the documentation
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../fa_icons">icon</a> of the navItem</td>
+			<td>(<i>string</i>) an <a href="../../customization">icon</a> of the navItem</td>
 		</tr>
 		<tr>
 			<td><b>items</b></td>

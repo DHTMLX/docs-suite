@@ -46,4 +46,4 @@ You can provide the [following properties](ribbon/api/api_selectbutton_propertie
 
 ## Operations with a button
 
-You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+You can perform operations over the SelectButton control with the help of the available [Ribbon API](ribbon/api/api_overview.md) and [Tree Collection API](tree_collection.md).

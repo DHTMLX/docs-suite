@@ -4,7 +4,7 @@ title: JavaScript Custom Scroll - Custom Scroll
 description: You can have an overview of Custom Scroll in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Custom Scroll
+# Custom scroll
 
 [Custom Scroll](../../common_features/custom_scroll/) of the DHTMLX library is developed to replace the default browser scrollbars and make your application more attractive for the end users.
 

@@ -32,7 +32,7 @@ Then you can use the name of the icon as the value of the **icon** property in t
 ## Controls and operations
 
 It is possible to add any Toolbar controls into the header/footer of a window.
-You can work with controls in the header/footer of a window in the same way as with [Toolbar](toolbar/index.md) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
+You can work with controls in the header/footer of a window in the same way as with [Toolbar](toolbar.md) controls, i.e. add new controls, delete unnecessary ones and update the settings of controls, e.g. labels and icons.
 
 ### Adding controls
 

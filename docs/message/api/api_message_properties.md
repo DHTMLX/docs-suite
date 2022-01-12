@@ -6,7 +6,7 @@ description: You can explore the Message properties in the documentation of the 
 
 # Message properties
 
-## Message Box
+## Message box
 
 The constructor of a message box may take the following parameters:
 
@@ -56,7 +56,7 @@ dhx.message({
 });
 ~~~
 
-## Alert Box
+## Alert box
 
 The constructor of an alert box may take the following parameters:
 
@@ -104,7 +104,7 @@ dhx.alert({
 });
 ~~~
 
-## Confirm Box
+## Confirm box
 
 The constructor of a confirm box may take the following parameters:
 

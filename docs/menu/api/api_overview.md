@@ -24,7 +24,7 @@ description: You can explore the API of Menu in the documentation of the DHTMLX 
 | [](menu/api/menu_unselect_method.md)    | @getshort(menu/api/menu_unselect_method.md)    |
 
 :::info important
-Use [TreeCollection methods](tree_collection/index.md) to work with data. 
+Use [TreeCollection methods](tree_collection.md) to work with data. 
 :::
 
 ## Menu events
@@ -40,7 +40,7 @@ Use [TreeCollection methods](tree_collection/index.md) to work with data.
 | [](menu/api/menu_openmenu_event.md)     | @getshort(menu/api/menu_openmenu_event.md)     |
 
 :::info important
-Use [TreeCollection events](tree_collection/index.md#events) to work with data. 
+Use [TreeCollection events](tree_collection.md#events) to work with data. 
 :::
 
 ## Menu properties

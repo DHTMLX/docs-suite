@@ -131,7 +131,7 @@ table {
 
 @media (max-width: 996px) {
     .navbar__toggle {
-        display: none;
+        display: block;
     }
     .menu--responsive .menu__button {
         border-radius: 100px;
