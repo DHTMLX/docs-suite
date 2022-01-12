@@ -128,13 +128,13 @@ var chart = new dhx.Chart("chart_container",{
 			<td><b>type</b></td>
 			<td>(<i>string</i>) defines the way of displaying values in the legend and the logic for coloring tiles: "range" | "groupName" (by default).
 			<ul>
-				<li><code>type: "groupName"</code> - All tiles within one group will have the same color. The ids of the legends will be shown in the legend.</li>
-				<li><code>type: "range"</code> - Each tile will have the color depending on the value of the tile. The values of the ranges will be shown in the legend.</li>
+				<li><code>type: "range"</code> - Each tile will have the color depending on the value of the tile. The legend shows value ranges. <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/p31wzm0b" target="_blank">Chart. Treemap chart initialization</a></li>
+				<li><code>type: "groupName"</code> - All tiles within one group will have the same color. The legend shows the group names. <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/fmgnlue4" target="_blank">Chart. Treemap chart with groups initialization</a></li>
 			</ul></td>
 		</tr>
        <tr>
 			<td><b>treeSeries</b></td>
-			<td>(<i>array</i>) optional, an array of objects that define configuration for legend items and color of rectangular tiles. Each object can contain the following properties:
+			<td>(<i>array</i>) an array of objects that define configuration for legend items and color of rectangular tiles. Each object can contain the following properties:
             	<ul>
 					<li><b>greater</b> - (<i>number</i>) optional, defines range for values of tiles; specifies the value to be shown in the "greater than or equal to" legend</li>
                     <li><b>from</b> - (<i>number</i>) optional, defines range for values of tiles;specifies the lowest value to be shown in the "from-to" legend</li>
@@ -142,7 +142,11 @@ var chart = new dhx.Chart("chart_container",{
 					<li><b>less</b> - (<i>number</i>) optional, defines range for values of tiles; specifies the value to be shown in the "less than or equal to" legend</li>
                     <li><b>color</b> - (<i>string</i>) optional, defines the color both of the legend item and related tiles</li>
 					<li><b>active</b> - (<i>boolean</i>) optional, defines whether tiles with corresponding values are active (true, by default) or inactive (false)</li>
-					<li><b>id</b> - (<i>string</i>) mandatory, the id of the legend. The value will be shown in the legend if <code>type: "groupName"</code> is specified.</li>
+					<li><b>id</b> - (<i>string</i>) the id of a legend item:
+						<ul>
+						<li> Optional, if <code>type: "range"</code>. <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/p31wzm0b" target="_blank">Chart. Treemap chart initialization</a></li>
+						<li> Mandatory, if <code>type: "groupName"</code>. You need to specify the id of the group as id of the legend item. <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/fmgnlue4" target="_blank">Chart. Treemap chart with groups initialization</a></li>
+						</ul></li>
                 </ul>
             </td>
 		</tr>

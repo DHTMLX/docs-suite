@@ -32,7 +32,6 @@ const chart = new dhx.Chart("chart_container", {
             stroke: "#eeeeee",
             strokeWidth: 6, 
             tooltipTemplate: item => `${item[1]} - ${item[0]}`,
-            // direction: "reverse",
         }
     ],
     legend: {

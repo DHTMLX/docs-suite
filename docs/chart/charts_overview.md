@@ -9,7 +9,7 @@ description: You can have an overview of various Chart types in the documentatio
 dhtmlxChart provides a variety of charts types that will help you to represent you data in the most suitable way. Each type of chart is easily configurable and can be adjusted according to your preferences.
 All in all there are 11 types of chart, in the list below they are combined into groups for the sake of convenience:
 
-- [Overview of Chart Types](#overview-of-chart-types)
+- [Overview of Chart types](#overview-of-chart-types)
   - [Line and Spline chart](#line-and-spline-chart)
     - [Line chart](#line-chart)
     - [Spline chart](#spline-chart)
@@ -114,3 +114,8 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 A treemap chart presents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
 
+![Treemap chart](../assets/chart/treemap.png)
+
+**Related sample**: [Chart. Treemap chart initialization](https://snippet.dhtmlx.com/p31wzm0b)
+
+**Related sample**: [Chart. Treemap chart with groups initialization](https://snippet.dhtmlx.com/fmgnlue4)
