@@ -45,12 +45,12 @@ A data set for Pie, Pie3D and Donut charts differs a little bit. You need to pro
 			<td>(<i>string, number</i>) the id of a series </td>
 		</tr>
 		<tr>
-			<td><b>text</b></td>
-			<td>(<i>string</i>) the name of the data set property to map labels of data values to</td>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a pie/donut sector</td>
 		</tr>
         <tr>
-			<td><b>value</b></td>
-			<td>(<i>string, number</i>) the name of the data set property to map data values to </td>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the value of a pie/donut sector</td>
 		</tr>
         <tr>
 			<td><b>color</b></td>
@@ -78,19 +78,19 @@ A data set for Treemap chart has also another structure and may include the foll
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a sector</td>
+			<td>(<i>string, number</i>) the id of a tile or group</td>
 		</tr>
 		<tr>
-			<td><b>text</b></td>
-			<td>(<i>string</i>) the name of the data set property to map labels of data values to</td>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a tile</td>
 		</tr>
         <tr>
-			<td><b>value</b></td>
-			<td>(<i>string, number</i>) the name of the data set property to map data values to </td>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the value of a tile</td>
 		</tr>
         <tr>
 			<td><b>parent</b></td>
-			<td>(<i>string</i>) the parent sector</td>
+			<td>(<i>string</i>) the id of the group</td>
 		</tr>
     </tbody>
 </table>
