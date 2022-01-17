@@ -357,7 +357,7 @@ To set this editor type you need to provide the **options** property with an arr
 Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
 
 - The **id** attribute sets the id for the option;
-- The **value** attribute sets the value to be displayed in the editor. If the id of the option is specified in the data set, the value will be displayed in the cell on Grid initialization.
+- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization.
 
 ~~~js
 {
@@ -405,7 +405,7 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
 
 - The **id** attribute sets the id for the option;
-- The **value** attribute sets the value to be displayed in the editor. If the id of the option is specified in the data set, the value will be displayed in the cell on Grid initialization.
+- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization.
 
 ```js
 {
