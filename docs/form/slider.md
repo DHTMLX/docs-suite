@@ -54,7 +54,7 @@ Check [the full list of events of the Slider control](form/api/api_overview.md#s
 
 ### Working with the dhtmlxSlider widget
 
-There is a possibility to use methods of dhtmlxSlider via the [getWidget()](form/api/slider/slider_getwidget_method.md) method of a Slider control.
+There is a possibility to use methods of DHTMLX Slider via the [getWidget()](form/api/slider/slider_getwidget_method.md) method of a Slider control.
 
 For example, you can disable a Slider control. To do this, you need to get the widget attached to the Slider control and then use the [disable()](slider/api/slider_disable_method.md) method of this widget.
 
@@ -62,3 +62,5 @@ For example, you can disable a Slider control. To do this, you need to get the w
 var slider = form.getItem("slider_id").getWidget();  // -> dhtmlxSlider
 slider.disable(); // disables slider
 ~~~
+
+Check [the full list of methods of the DHTMLX Slider component](../../slider/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/slider/slider_getwidget_method/) method.

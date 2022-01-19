@@ -58,7 +58,7 @@ Check [the full list of events of the Timepicker control](form/api/api_overview.
 
 ### Working with the dhtmlxTimePicker widget
 
-There is a possibility to use methods of dhtmlxTimePicker via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
+There is a possibility to use methods of DHTMLX TimePicker via the [getWidget()](form/api/timepicker/timepicker_getwidget_method.md) method of a TimePicker control.
 
 For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
 
@@ -68,3 +68,5 @@ timepicker.setValue("00:39"); //set the value as a string
 ~~~
 
 **Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
+
+Check [the full list of methods of the DHTMLX Timepicker component](../../timepicker/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/timepicker/timepicker_getwidget_method/) method.

@@ -24,5 +24,6 @@ var chart = new dhx.Chart("chart_container",{
 - "area", "splineArea"
 - "donut", "pie", "pie3D"
 - "radar"
+- "treeMap" (from v7.3)
 
 [comment]: # (@related: chart/configuration_properties.md#main-properties chart/charts_overview.md)

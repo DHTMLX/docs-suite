@@ -182,7 +182,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-**Related sample**: [Layout. Collapsable](https://snippet.dhtmlx.com/8u4ok0os)
+**Related sample**: [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
 
 **Related sample**: [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
 
@@ -198,7 +198,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-**Related sample**: [Layout. Resizable](https://snippet.dhtmlx.com/k2fj4nm0)
+**Related sample**: [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
 
 {{note Starting from v7.0, you can define the resizing limits by setting necessary values to the [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md), [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) properties in the config of a cell.}}
 
@@ -223,11 +223,11 @@ const layout = new dhx.Layout("layout", {
 });
 ~~~
 
-**Related sample**: [Layout.Type](https://snippet.dhtmlx.com/9ge1a4zx)
+**Related sample**: [Layout. Types: space, wide, line, none](https://snippet.dhtmlx.com/9ge1a4zx)
 
 **Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
-The available values of the option are "line", "wide", "space", "none". 
+The available values of the option are "line", "wide", "space", "none".
 
 | type:"line"                         | type:"wide"                         | type:"space"                         | type:"none"                               |
 | ----------------------------------- | ----------------------------------- | ------------------------------------ | ----------------------------------------- |

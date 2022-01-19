@@ -11,7 +11,7 @@ description: You can explore the expand event of TreeGrid in the documentation o
 @signature: {'expand: (rowId: Id) => void;'}
 
 @params:
-`rowId:string | number` - the id of an expanded row
+`rowId: string | number` - the id of an expanded row
 
 @example:
 grid.events.on("expand", function(rowId){

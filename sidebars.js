@@ -155,6 +155,7 @@ module.exports = {
                 collapsed: true,
                 items: [
                   "chart/api/chart_css_config",
+                  "chart/api/chart_data_config",
                   "chart/api/chart_legend_config",
                   "chart/api/chart_maxpoints_config",
                   "chart/api/chart_scales_config",
@@ -255,6 +256,7 @@ module.exports = {
                 type: "category",
                 label: "Combobox methods",
                 items: [
+                  "combobox/api/combobox_addoption_method",
                   "combobox/api/combobox_blur_method",
                   "combobox/api/combobox_clear_method",
                   "combobox/api/combobox_destructor_method",
@@ -293,6 +295,7 @@ module.exports = {
                   "combobox/api/combobox_filter_config",
                   "combobox/api/combobox_helpmessage_config",
                   "combobox/api/combobox_hiddenlabel_config",
+                  "combobox/api/combobox_htmlenable_config",
                   "combobox/api/combobox_itemheight_config",
                   "combobox/api/combobox_itemscount_config",
                   "combobox/api/combobox_label_config",
@@ -300,6 +303,7 @@ module.exports = {
                   "combobox/api/combobox_labelwidth_config",
                   "combobox/api/combobox_listheight_config",
                   "combobox/api/combobox_multiselection_config",
+                  "combobox/api/combobox_newoptions_config",
                   "combobox/api/combobox_placeholder_config",
                   "combobox/api/combobox_readonly_config",
                   "combobox/api/combobox_selectallbutton_config",
@@ -1688,6 +1692,7 @@ module.exports = {
                   "list/api/list_editable_config",
                   "list/api/list_eventhandlers_config",
                   "list/api/list_height_config",
+                  "list/api/list_htmlenable_config",
                   "list/api/list_itemheight_config",
                   "list/api/list_keynavigation_config",
                   "list/api/list_multiselection_config",
@@ -2195,6 +2200,7 @@ module.exports = {
                 label: "Tabbar events",
                 items: [
                   "tabbar/api/tabbar_afterclose_event",
+                  "tabbar/api/tabbar_beforechange_event",
                   "tabbar/api/tabbar_beforeclose_event",
                   "tabbar/api/tabbar_change_event",
                 ],

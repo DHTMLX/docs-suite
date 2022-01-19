@@ -18,3 +18,4 @@ To make AJAX request to a server you can use the following methods of the `dhx.a
 | [](api/ajax_get_method.md)    | @getshort(api/ajax_get_method.md)      |
 | [](api/ajax_post_method.md)   | @getshort(api/api/ajax_post_method.md) |
 | [](api/ajax_put_method.md)    | @getshort(api/ajax_put_method.md)      |
+

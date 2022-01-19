@@ -155,8 +155,8 @@ table {
 /* small code block */
 
 code {
-    border-radius: 2px;
-    padding: 6px 8px;
+    border-radius: 4px;
+    padding: 4px 5px;
     font-weight: 600;
 }
 

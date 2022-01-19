@@ -32,11 +32,11 @@ The constructor of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td><b>node</b></td>
-			<td>(<i>HTMLELement|string</i>) optional, the container for a message box or its id</td>
+			<td>(<i>HTMLELement | string</i>) optional, the container for a message box or its id</td>
 		</tr>
         <tr>
 			<td><b>position</b></td>
-			<td>(<i>string</i>) optional, the position of a message box:"top-left"|"top-right"|"bottom-left"|"bottom-right" <br/> 
+			<td>(<i>string</i>) optional, the position of a message box: "top-left" | "top-right" | "bottom-left" | "bottom-right" <br/> 
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message Container</a>
 			</td>
 		</tr>
@@ -80,11 +80,17 @@ The constructor of an alert box may take the following parameters:
 		</tr>
         <tr>
 			<td><b>buttonsAlignment</b></td>
-			<td>(<i>string</i>) optional, the position of buttons:"left"|"center"|"right"</td>
+			<td>(<i>string</i>) optional, the position of buttons: "left" | "center" | "right"</td>
 		</tr>
         <tr>
 			<td><b>blockerCss</b></td>
 			<td>(<i>string</i>) optional, the style of blocking the window when an alert box appears</td>
+		</tr>
+		<tr>
+			<td><b>htmlEnable</b></td>
+			<td>(<i>boolean</i>) optional, enables/disables the HTML content to be displayed in an alert box; <i>true</i> by default <br>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0id8455k">Message. Disable HTML content</a>
+			</td>
 		</tr>
     </tbody>
 </table>
@@ -93,7 +99,8 @@ The constructor of an alert box may take the following parameters:
 dhx.alert({
     header:"Alert Header",
     text:"Alert text",
-    buttonsAlignment:"center"
+    buttonsAlignment:"center",
+	htmlEnable: false
 });
 ~~~
 
@@ -127,6 +134,12 @@ The constructor of a confirm box may take the following parameters:
 			<td><b>blockerCss</b></td>
 			<td>(<i>string</i>) optional, the style of blocking the window when a confirm box appears</td>
 		</tr>
+		<tr>
+			<td><b>htmlEnable</b></td>
+			<td>(<i>boolean</i>) optional, enables/disables the HTML content to be displayed in a confirm box; <i>true</i> by default<br>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0id8455k">Message. Disable HTML content</a>
+			</td>
+		</tr>
     </tbody>
 </table>
 
@@ -135,7 +148,8 @@ dhx.confirm({
     header:"Confirm Header",
     text:"Confirm text",
     buttons:["cancel", "apply"],
-    buttonsAlignment:"center"
+    buttonsAlignment:"center",
+	htmlEnable: false
 });
 ~~~
 
@@ -147,11 +161,11 @@ The constructor of a tooltip may take the following parameters:
 	<tbody>
         <tr>
 			<td><b>node</b></td>
-			<td>(<i>HTMLELement|string</i>) required, the target of tooltip or its id</td>
+			<td>(<i>HTMLELement | string</i>) required, the target of tooltip or its id</td>
 		</tr>
         <tr>
 			<td><b>position</b></td>
-			<td>(<i>string</i>) optional, the position of a tooltip:"right", "bottom", "center"</td>
+			<td>(<i>string</i>) optional, the position of a tooltip: "right", "bottom", "center"</td>
 		</tr>
         <tr>
 			<td><b>css</b></td>
@@ -169,12 +183,17 @@ The constructor of a tooltip may take the following parameters:
 			<td><b>hideDelay</b></td>
 			<td>(<i>number</i>) optional, the time period that should pass before hiding a tooltip, in ms</td>
 		</tr>
+		<tr>
+			<td><b>htmlEnable</b></td>
+			<td>(<i>boolean</i>) optional, enables/disables the HTML content to be displayed in a tooltip; <i>true</i> by default</td>
+		</tr>
     </tbody>
 </table>
 
 ~~~js
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
-    position: "right"
+    position: "right",
+	htmlEnable: false
 });
 ~~~

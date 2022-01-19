@@ -9,7 +9,8 @@ description: You can explore the API of Combo Box in the documentation of the DH
 ## Methods
 
 | Name                                           | Description                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
+| :--------------------------------------------- | :---------------------------------------------------- |
+| [](combobox/api/combobox_addoption_method.md)  | @getshort(combobox/api/combobox_addoption_method.md)  |
 | [](combobox/api/combobox_blur_method.md)       | @getshort(combobox/api/combobox_blur_method.md)       |
 | [](combobox/api/combobox_clear_method.md)      | @getshort(combobox/api/combobox_clear_method.md)      |
 | [](combobox/api/combobox_destructor_method.md) | @getshort(combobox/api/combobox_destructor_method.md) |
@@ -46,13 +47,14 @@ Use [DataCollection events](data_collection.md#events) to work with data.
 ## Properties
 
 | Name                                                | Description                                                |
-| --------------------------------------------------- | ---------------------------------------------------------- |
+| :-------------------------------------------------- | :--------------------------------------------------------- |
 | [](combobox/api/combobox_css_config.md)             | @getshort(combobox/api/combobox_css_config.md)             |
 | [](combobox/api/combobox_data_config.md)            | @getshort(combobox/api/combobox_data_config.md)            |
 | [](combobox/api/combobox_disabled_config.md)        | @getshort(combobox/api/combobox_disabled_config.md)        |
 | [](combobox/api/combobox_filter_config.md)          | @getshort(combobox/api/combobox_filter_config.md)          |
 | [](combobox/api/combobox_helpmessage_config.md)     | @getshort(combobox/api/combobox_helpmessage_config.md)     |
 | [](combobox/api/combobox_hiddenlabel_config.md)     | @getshort(combobox/api/combobox_hiddenlabel_config.md)     |
+| [](combobox/api/combobox_htmlenable_config.md)      | @getshort(combobox/api/combobox_htmlenable_config.md)      |
 | [](combobox/api/combobox_itemheight_config.md)      | @getshort(combobox/api/combobox_itemheight_config.md)      |
 | [](combobox/api/combobox_itemscount_config.md)      | @getshort(combobox/api/combobox_itemscount_config.md)      |
 | [](combobox/api/combobox_label_config.md)           | @getshort(combobox/api/combobox_label_config.md)           |
@@ -60,6 +62,7 @@ Use [DataCollection events](data_collection.md#events) to work with data.
 | [](combobox/api/combobox_labelwidth_config.md)      | @getshort(combobox/api/combobox_labelwidth_config.md)      |
 | [](combobox/api/combobox_listheight_config.md)      | @getshort(combobox/api/combobox_listheight_config.md)      |
 | [](combobox/api/combobox_multiselection_config.md)  | @getshort(combobox/api/combobox_multiselection_config.md)  |
+| [](combobox/api/combobox_newoptions_config.md)      | @getshort(combobox/api/combobox_newoptions_config.md)      |
 | [](combobox/api/combobox_placeholder_config.md)     | @getshort(combobox/api/combobox_placeholder_config.md)     |
 | [](combobox/api/combobox_readonly_config.md)        | @getshort(combobox/api/combobox_readonly_config.md)        |
 | [](combobox/api/combobox_selectallbutton_config.md) | @getshort(combobox/api/combobox_selectallbutton_config.md) |

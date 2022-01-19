@@ -219,10 +219,14 @@ It is possible to add more options into the initialized ComboBox on the fly. Use
 For instance:
 
 ~~~js
-combo.data.add({value:"Russia"},1);
+combobox.data.add({value:"Russia"},1);
 ~~~
 
 **Related sample**: [Combobox. Add/Remove](https://snippet.dhtmlx.com/o7vd331z)
+
+:::note
+From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.
+:::
 
 ### Updating ComboBox options
 

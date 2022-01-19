@@ -53,7 +53,9 @@ For example:
         fill: orange;
     }
 </style>
+~~~
 
+~~~js
 const chart = new dhx.Chart("chart", {
     type: "bar",
     css: "custom-class dhx_widget--bg_white dhx_widget--bordered",

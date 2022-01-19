@@ -14,7 +14,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a column<br>The property is ignored if the <a href="../../../treegrid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
+			<td>(<i>number</i>) the width of a column. The minimum with of the column is 20 px.<br>The property is ignored if the <a href="../../../treegrid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
 		</tr>
         <tr>
 			<td><b>header</b></td>
@@ -26,18 +26,23 @@ description: You can explore the Column properties of TreeGrid in the documentat
                     <li><b>rowspan</b> - (<i>number</i>) the number of rows in a rowspan <br/></li>
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a header</li>
                     <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (<i>string</i>) additional content of a header, which can be:
-                    <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                    <ol>- one of the methods that process values in a column and show result in the header:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
-                    <ol> - some other string</ol>
+                    	<ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
+                    	<ol>- one of the methods that process values in a column and show result in the header:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
+                    	<ol> - some other string</ol>
                     </li>
                     <li><b>filterConfig</b> - (<i>object</i>) optional, a configuration object for "comboFilter". It can contain a set of properties:
-                    <ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
-					<ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
-                    <ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
-                    <ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
-                    <ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
-                    <ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
+                    	<ol>- <b>filter</b> - (<i>function</i>) sets a custom function for filtering Combo Box options</ol>
+						<ol>- <b>multiselection</b> - (<i>boolean</i>) enables selection of multiple options</ol>
+                    	<ol>- <b>readonly</b> - (<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
+                    	<ol>- <b>template</b> - (<i>function</i>) sets a template of displaying options in the popup list</ol>
+                    	<ol>- <b>placeholder</b> - (<i>string</i>) sets a placeholder in the input of ComboBox</ol>
+                    	<ol>- <b>virtual</b> - (<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</ol>
                     </li>
+					<li><a href="../../configuration#customizing-headerfooter-filters"><b>customFilter</b></a> - (<i>function</i>) optional, a custom function for extended filtering. It takes two parameters:
+                		<ol> - <b>item</b> - (<i>any</i>) a data item the value of which should be compared</ol>
+                		<ol> - <b>input</b> - (<i>string</i>) the value of the option selected in the filter</ol>
+                	<br>and returns <i>true/false</i> to specify whether the data item should be displayed in the treegrid after filtering
+            		</li>
 					<li><b>headerSort</b> - (<i>boolean</i>) enables/disables sorting by clicking the header</li>
 					<li><b>sortAs</b> - (<i>function</i>) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
                 </ul>
@@ -57,10 +62,15 @@ description: You can explore the Column properties of TreeGrid in the documentat
                     <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (<i>string|number</i>) the text of a footer</li>
                     <li><b>css</b> - (<i>any</i>) styling to be applied to a footer</li>
                     <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (<i>string</i>) additional content of a footer, which can be:
-                    <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                    <ol>- one of the methods that process values in a column and show result in the footer:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
-                    <ol> - some other string</ol>
+                    	<ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
+                    	<ol>- one of the methods that process values in a column and show result in the footer:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
+                    	<ol> - some other string</ol>
                     </li>
+					<li><a href="../../configuration#customizing-headerfooter-filters"><b>customFilter</b></a> - (<i>function</i>) optional, a custom function for extended filtering. It takes two parameters:
+                		<ol> - <b>item</b> - (<i>any</i>) a data item the value of which should be compared</ol>
+                		<ol> - <b>input</b> - (<i>string</i>) the value of the option selected in the filter</ol>
+                	<br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
+            	</li>
                 </ul>
             </td>
 		</tr>
@@ -72,7 +82,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
-			<td>(<i>number</i>) the minimal width to be set for a column. The minimal width of a column is 20px. <br/>
+			<td>(<i>number</i>) the minimum width to be set for a column. The minimum width of a column is 20px. <br/>
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cpgjyoxn" target="_blank">TreeGrid. Min Width</a>
 			</td>
 		</tr>
@@ -111,6 +121,13 @@ description: You can explore the Column properties of TreeGrid in the documentat
         <tr>
 			<td><a href="../../configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
 			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"</td>
+		</tr>
+		<tr>
+			<td><b>editorConfig</b></td>
+			<td>(<i>object</i>) an object with configuration settings of the column's editor. It can include the following property:
+            <ul><li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (<i>boolean</i>) allows end users to add new values into the list of combobox options from UI (<i>editorType: "combobox"</i>). The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li></ul>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0gd4dn8p" target="_blank">TreeGrid. Rich example with templates and different editors</a>
+            </td>
 		</tr>
         <tr>
 			<td><b>options</b></td>

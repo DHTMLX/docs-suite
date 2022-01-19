@@ -269,3 +269,19 @@ The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pa
 		</tr>
     </tbody>
 </table>
+
+## HTML content of List options
+
+By default, List displays HTML content if it is specified for its options.
+
+In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../list/api/list_htmlenable_config/) property to *false*. 
+
+~~~js
+const list = new dhx.List("list", {
+    htmlEnable: false, // disables render of HTML content
+    template: template,
+    data: data
+});
+~~~
+
+**Related sample**: [List. Disable HTML rendering](https://snippet.dhtmlx.com/tj0tn7fl)
