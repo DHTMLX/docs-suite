@@ -134,7 +134,7 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
        <tr>
 			<td><b>treeSeries</b></td>
-			<td>(<i>array</i>) an array of objects that define configuration for legend items and color of rectangular tiles. Each object can contain the following properties:
+			<td>(<i>array</i>) required, an array of objects that define configuration for legend items and color of rectangular tiles. Each object can contain the following properties:
             	<ul>
 					<li><b>greater</b> - (<i>number</i>) optional, defines range for values of tiles; specifies the value to be shown in the "greater than or equal to" legend</li>
                     <li><b>from</b> - (<i>number</i>) optional, defines range for values of tiles;specifies the lowest value to be shown in the "from-to" legend</li>
