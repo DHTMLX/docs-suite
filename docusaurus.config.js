@@ -300,7 +300,7 @@ module.exports = {
                 sitemap: {
                     changefreq: 'daily',
                     priority: 0.5,
-                    trailingSlash: true
+                    
                 },
             },
         ],
