@@ -18,8 +18,8 @@ description: You can explore the beforeChangeProperties event of Form in the doc
 Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
-form.events.on("BeforeChangeProperties", function(name, properties) {
-    console.log("BeforeChangeProperties", name, properties);
+form.events.on("beforeChangeProperties", function(name, properties) {
+    console.log("beforeChangeProperties", name, properties);
     return true;
 });
 

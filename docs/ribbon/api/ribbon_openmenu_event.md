@@ -14,7 +14,7 @@ description: You can explore the openMenu event of Ribbon in the documentation o
 `id: string | number` - the ID of an opened menu item
 
 @example:
-ribbon.events.on("OpenMenu", function(id){
+ribbon.events.on("openMenu", function(id){
     // your code here
 });
 

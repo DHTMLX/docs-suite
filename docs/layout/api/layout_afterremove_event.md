@@ -14,7 +14,7 @@ description: You can explore the afterRemove event of Layout in the documentatio
 `id: string` - the id of a cell
 
 @example:
-layout.events.on("AfterRemove", function(id){
+layout.events.on("afterRemove", function(id){
 	// your logic here
 });
 

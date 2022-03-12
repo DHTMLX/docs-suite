@@ -19,7 +19,7 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 
 - You can get dhtmlxToolbar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxToolbar](https://snippet.dhtmlx.com/all?text=%23toolbar)
-- To work with data of Toolbar check [TreeCollection API](tree_collection/index.md)
+- To work with data of Toolbar check [TreeCollection API](tree_collection.md)
 
 ## Guides
 
@@ -33,7 +33,7 @@ Describes the steps of initializing Toolbar and working with it.
 - [](toolbar/customization.md)
 - [](toolbar/handling_events.md)
 
-### Toolbar Controls
+### Toolbar controls
 
 Discusses the creation of Toolbar controls and the possibilities of manipulating them.
 

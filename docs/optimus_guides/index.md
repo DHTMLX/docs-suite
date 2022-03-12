@@ -1,10 +1,10 @@
 ---
-sidebar_label: DHTMLX Optimus Framework
+sidebar_label: DHTMLX Optimus framework
 title: Optimus Framework Overview 
 description: You can have an overview of Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# DHTMLX Optimus Framework
+# DHTMLX Optimus framework
 
 DHTMLX Optimus is a component-oriented framework for building DHTMLX-based apps. The framework is intended to simplify the app building process, namely:
 
@@ -17,7 +17,7 @@ As a result, each part of an app can be developed and tested independently and u
 
 DHTMLX Optimus is a fully client-side solution. There aren't any special requirements to the server. You can use any data REST backend (PHP, Nodejs, .Net, Java, etc.)
 
-General Idea
+General idea
 ------------
 
 DHTMLX Optimus is based on the modern approaches of web development:
@@ -131,7 +131,7 @@ export class MyApp extends App {
 }
 ~~~
 
-You can find more details on API methods [below](optimus_guides/index.md#api).
+You can find more details on API methods [below](optimus_guides.md#api).
 
 5\. Finally, we've initialized our application via updating the code of the *index.html* file with the following:
 
@@ -168,7 +168,7 @@ That's all!
 To get acquainted with the principles of developing with DHTMLX Optimus at a professional level, follow our [step-by-step guide](optimus_guides/how_to_start_optimus.md). The guide is suitable for both experienced users and beginners in the world of JavaScript and DHTMLX.
 
 
-Application Structure
+Application structure
 --------------
 
 To create a structure of your own app, extend the existing classes. DHTMLX Optimus contains three main classes:
@@ -330,7 +330,7 @@ The above code shows that:
 The Component class also provides access to the events of the app via the **fire()**, **on()** methods. See more details below.
 
 
-The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [use()](optimus_guides/index.md#api) method.
+The following example shows that it is possible to use the class inherited from the Component class by calling it in the class inherited from the App class via the [use()](optimus_guides.md#api) method.
 
 ~~~js
 import { App } from "dhx-optimus";
@@ -964,7 +964,7 @@ The DHTMLX Optimus provides the following API methods that are available from an
 </table>
 
 
-Other Materials
+Other materials
 ----------------------
 
 - [](optimus_guides/how_to_start_optimus.md) step-by-step guide

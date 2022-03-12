@@ -14,7 +14,7 @@ description: You can explore the click event of Popup in the documentation of th
 `e: Event` - the native mouse event
 
 @example:
-popup.events.on("Click",function(e){
+popup.events.on("click",function(e){
     // your logic here
 });
 

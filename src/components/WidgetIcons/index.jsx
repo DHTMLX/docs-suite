@@ -6,7 +6,7 @@ const WidgetIcons = ({ children }) => {
     return (
         <div className={cssstyles.suite_components_small}>
             <div className={cssstyles.suite_component_small}>
-                <a href="calendar/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="calendar/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -25,7 +25,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="chart/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="chart/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -43,7 +43,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="colorpicker/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="colorpicker/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -62,7 +62,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="combobox/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="combobox/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -81,7 +81,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="dataview/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="dataview/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -100,7 +100,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="form/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="form/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -118,7 +118,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="grid/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="grid/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -136,7 +136,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="layout/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="layout/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -154,7 +154,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="list/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="list/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -172,7 +172,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="menu/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="menu/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -190,7 +190,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="message/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="message/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -208,7 +208,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="pagination/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="pagination/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -226,7 +226,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="popup/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="popup/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -244,7 +244,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="ribbon/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="ribbon/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -262,7 +262,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="sidebar/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="sidebar/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -281,7 +281,7 @@ const WidgetIcons = ({ children }) => {
 
 
             <div className={cssstyles.suite_component_small}>
-                <a href="slider/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="slider/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -299,7 +299,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="tabbar/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="tabbar/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -317,7 +317,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="timepicker/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="timepicker/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -341,7 +341,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="toolbar/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="toolbar/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -359,7 +359,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="tree/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="tree/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -377,7 +377,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="treegrid/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="treegrid/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>
@@ -395,7 +395,7 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="window/index/" title="" className={cssstyles.suite_component__item}>
+                <a href="window/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>
                             <span className={cssstyles.suite_component__icon}>

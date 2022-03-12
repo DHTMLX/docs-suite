@@ -15,7 +15,7 @@ description: You can explore the inputCreated event of Ribbon in the documentati
 - `input: HTMLInputElement` - a newly created input
 
 @example:
-ribbon.events.on("InputCreated", function(id, el){
+ribbon.events.on("inputCreated", function(id, el){
     console.log(id);
 });
 

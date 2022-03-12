@@ -19,7 +19,7 @@ description: You can explore the beforeUnSelect event of TreeGrid in the documen
 Return `false` to prevent unselecting of a cell; otherwise, `true`.
 
 @example:
-treegrid.selection.events.on("BeforeUnSelect", function(row, col){
+treegrid.selection.events.on("beforeUnSelect", function(row, col){
     console.log("beforeUnSelect", row, col); 
     return false;
 });

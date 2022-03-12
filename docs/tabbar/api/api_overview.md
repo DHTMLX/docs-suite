@@ -25,11 +25,12 @@ description: You can explore the API of Tabbar in the documentation of the DHTML
 
 ## Events
 
-| Name                                       | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
-| [](tabbar/api/tabbar_afterclose_event.md)  | @getshort(tabbar/api/tabbar_afterclose_event.md)  |
-| [](tabbar/api/tabbar_beforeclose_event.md) | @getshort(tabbar/api/tabbar_beforeclose_event.md) |
-| [](tabbar/api/tabbar_change_event.md)      | @getshort(tabbar/api/tabbar_change_event.md)      |
+| Name                                        | Description                                        |
+| :------------------------------------------ | :------------------------------------------------- |
+| [](tabbar/api/tabbar_afterclose_event.md)   | @getshort(tabbar/api/tabbar_afterclose_event.md)   |
+| [](tabbar/api/tabbar_beforechange_event.md) | @getshort(tabbar/api/tabbar_beforechange_event.md) |
+| [](tabbar/api/tabbar_beforeclose_event.md)  | @getshort(tabbar/api/tabbar_beforeclose_event.md)  |
+| [](tabbar/api/tabbar_change_event.md)       | @getshort(tabbar/api/tabbar_change_event.md)       |
 
 ## Properties
 

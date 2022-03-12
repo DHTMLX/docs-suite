@@ -85,7 +85,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Adjust Columns](https://snippet.dhtmlx.com/lgvoz0ar)
 
-It is also possible to set the [](treegrid/api/treegrid_adjust_config.md) property to *true* in the configuration of a separate column to make its width adjust automatically to the content:
+It is also possible to set the [](treegrid/api/treegrid_adjust_config.md) property in the configuration of a separate column:
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", { 
@@ -247,14 +247,14 @@ In the example below all columns will be editable, except for the first one:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		{ 
-        	width:150,id:"project",
-            editable:false, 
+        	width: 150, id: "project",
+            editable: false, 
             header: [
-        	  {text:"Project"}, {content:"selectFilter"}
+        	  {text: "Project"}, {content: "selectFilter"}
             ]
         },
-		{ width:150, id:"owner", header: [{text:"Owner"},{content:"inputFilter"}]},
-		{ width:150, id:"hours", header: [{text:"Hours"}, {content:"inputFilter"}]},
+		{ width: 150, id: "owner", header: [{text: "Owner"},{content: "inputFilter"}]},
+		{ width: 150, id: "hours", header: [{text: "Hours"}, {content: "inputFilter"}]},
 		// more columns
 	],
 	data: data,
@@ -268,14 +268,14 @@ And the following example demonstrates an opposite situation when only the first
 var treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		{ 
-           width:150,id:"project",
-           editable:true,
+           width: 150, id: "project",
+           editable: true,
            header: [
-        	{text:"Project"}, {content:"selectFilter"}
+        	{text: "Project"}, {content: "selectFilter"}
            ]
         },
-		{ width:150, id:"owner", header: [{text:"Owner"},{content:"inputFilter"}]},
-		{ width:150, id: "hours", header: [{text:"Hours"}, {content:"inputFilter"}]},
+		{ width: 150, id: "owner", header: [{text: "Owner"},{content: "inputFilter"}]},
+		{ width: 150, id: "hours", header: [{text: "Hours"}, {content: "inputFilter"}]},
 		// more columns
 	],
 	data: data
@@ -331,6 +331,23 @@ To set this editor type you need to provide the **options** property with an arr
 } 
 ~~~
 
+Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
+
+- The **id** attribute sets the id for the option;
+- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on TreeGrid initialization.
+
+~~~js
+{
+    width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
+    editorType: "select", 
+	options: [
+		{ id: "done", value: "Done" }, 
+		{ id: "in progress", value: "In Progress" }, 
+		{ id: "not started", value: "Not Started" },
+	],
+}
+~~~
+
 **Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
 
 - **checkbox** - an editor for cells with a two-state check box
@@ -364,8 +381,8 @@ To use this editor you need to specify the **editorType: "combobox"** property f
 
 Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
 
-- The **id** attribute is displayed in the treegrid cell
-- The **value** attribute is displayed in the editor
+- The **id** attribute sets the id for the option;
+- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on TreeGrid initialization.
 
 ```js
 {
@@ -436,6 +453,53 @@ const data = [
 ];
 ```
 
+### Editable combobox
+
+From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#setting-type-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](treegrid/api/api_treegridcolumn_properties.md):
+
+~~~js {7}
+{
+    width: 120,
+    id: "status",
+    header: [{ text: "Status" }, { content: "selectFilter" }],
+    editorType: "combobox",
+    // enables the ability to add new values into the combobox editor of the "Status" column
+    editorConfig: { newOptions: true }, 
+    options: ["Done", "In Progress", "Not Started"]
+},
+~~~
+
+**Related sample:** [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p)
+
+The new option will be added into the combobox after the user types a new value into the input field and either presses "Enter" or clicks on the appeared *Create "newValue"* option in the drop-down list.
+
+![](../assets/treegrid/combobox_editor.png)
+
+At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-content)) of the column.
+
+![](../assets/treegrid/new_combobox_option.png)
+
+> To localize the *Create* option, translate the corresponding string and apply a ready locale to the Combobox component:
+
+~~~js
+const locale = {
+  	en: {
+    	createItem: "Create"
+  	},
+  	de: {
+    	createItem: "Schaffen"
+  	}
+};
+
+dhx.i18n.setLocale("combobox", locale["de"]);
+~~~
+
+### Opening editor with one click
+
+By default, you can open the editor by double-clicking on a cell. But if you need the editor to open after a single click, apply the [](treegrid/api/treegrid_cellclick_event.md) event of the treegrid.
+
+{{note Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.}}
+
 ## Formatting columns
 
 Starting from v7.1, you can display the values of the cells of a TreeGrid column in the desired format:
@@ -491,8 +555,7 @@ When using just the **type: "percent"** configuration option of a column, the re
 
 ## Frozen columns
 
-You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. 
-There is the [](treegrid/api/treegrid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze 
+You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. There is the [](treegrid/api/treegrid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze 
 as a value of the property in the TreeGrid configuration.
 
 ~~~js
@@ -591,6 +654,38 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     </tbody>
 </table>
 
+### Customizing header/footer filters
+
+To add a custom function with your you own logic for the filter of a TreeGrid column, you need to set the **customFilter** attribute when configuring the header/footer content of the [column](treegrid/api/api_treegridcolumn_properties.md). 
+
+{{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-content) is set.}}
+
+~~~js {11}
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            width: 130,
+            id: "hours",
+            header: [
+                { text: "Number of hours" },
+                { 
+                    content: "inputFilter",
+                    // specifies custom filter in TreeGrid
+                    customFilter: (value, match) => value < Number(match)
+                }
+            ],
+            footer: [{ content: "sum" }],
+            format: "#",
+        },   
+    ],
+    data: dataset
+});
+~~~
+
+**Related sample**: [TreeGrid. Custom Filter](https://snippet.dhtmlx.com/jk64c5gr)
+
+The **customFilter** attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
+
 ## Header/footer height
 
 The height of the header/footer of TreeGrid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly.
@@ -671,7 +766,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
             header: [{ text: "In stock" }], 
             htmlEnable: true 
         },
-		// more columns	
+		// more columns
 	],
 	data: dataset
 });
@@ -711,7 +806,7 @@ const grid = new dhx.Grid("grid", {
 			cell__html: function(event, data) { 
 				display(JSON.stringify(data.col, null, 2)); 
 			} 
-		} /
+		}
 	} 
 });
 ~~~
@@ -795,7 +890,7 @@ In this case, the height of each row is 30.
 
 ### Setting height for a separate row
 
-Starting with v7.1, it is possible to specify the height for the necessary row of data in TreeGrid via setting the number value to the **height** option when defining the [data set](treegrid/api/treegrid_data_config.md): 
+Starting with v7.1, it is possible to specify the height for the necessary row of data in TreeGrid via setting the number value to the **height** option when defining the [data set](treegrid/api/treegrid_data_config.md):
 
 ~~~js
 var dataset = [
@@ -871,7 +966,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
     ], 
-    selection:"complex",   
+    selection: "complex",   
     data: dataset
 });
 ~~~
@@ -889,7 +984,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
     ], 
-    sortable:false,   
+    sortable: false,   
     data: dataset
 });
 ~~~

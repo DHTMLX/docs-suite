@@ -1,10 +1,10 @@
 ---
-sidebar_label: Data Loading
+sidebar_label: Data loading
 title: JavaScript Grid - Data Loading 
 description: You can explore the data loading of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Data Loading
+# Data loading
 
 There are several simple ways of loading data into dhtmlxGrid:
 
@@ -70,7 +70,7 @@ var grid = new dhx.Grid("grid_container", {
 
 ## External data loading
 
-To load data from an external file, make use of the **load()** method of [Data Collection](data_collection/index.md). It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [Data Collection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 var grid = new dhx.Grid("grid_container");
@@ -89,7 +89,7 @@ grid.data.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local data source, use the **parse()** method of [Data Collection](data_collection/index.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the **parse()** method of [Data Collection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var grid = new dhx.Grid("grid_container");
@@ -100,7 +100,7 @@ grid.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a grid, use the **serialize()** method of [Data Collection](data_collection/index.md). It converts the data of a grid into an array of JSON objects.
+To save the current state of a grid, use the **serialize()** method of [Data Collection](data_collection.md). It converts the data of a grid into an array of JSON objects.
 Each JSON object contains the configuration of a separate row.
 
 ~~~js

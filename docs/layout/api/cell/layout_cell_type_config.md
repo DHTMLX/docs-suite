@@ -1,27 +1,39 @@
 ---
 sidebar_label: type
 title: JavaScript Layout - type Config 
-description: You can explore the type config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the type config of rows and columns of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # type
 
-@short: defines the type of borders between cells inside a layout
+@short: defines the type of borders between cells inside rows and columns of a layout
 
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 
 @example:
 const layout = new dhx.Layout("layout", {
-    type: "space", /*!*/
-    cols: [
+    rows: [
         {
-            html: "1"
+            type: "wide", // "line" | "wide" | "space" | "none"
+            cols: [
+                {
+                    html: "1",
+                },
+                {
+                    html: "2",
+                }
+            ]
         },
         {
-            html: "2"
-        },
-        {
-            html: "3"
+            type: "line",
+            cols: [
+                {
+                    html: "3",
+                },
+                {
+                    html: "4",
+                },
+            ]
         }
     ]
 });

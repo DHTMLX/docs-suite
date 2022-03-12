@@ -1,5 +1,5 @@
 ---
-sidebar_label: Step 1. Include DHTMLX Files 
+sidebar_label: Step 1. Include DHTMLX files 
 title: Step 1. Include DHTMLX Files 
 ---          
 

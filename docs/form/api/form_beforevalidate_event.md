@@ -18,8 +18,8 @@ description: You can explore the beforeValidate event of Form in the documentati
 Return `false` to prevent validation; otherwise, `true`.
 
 @example:
-form.events.on("BeforeValidate", function(name, value) {
-    console.log("BeforeValidate", name, value); 
+form.events.on("beforeValidate", function(name, value) {
+    console.log("beforeValidate", name, value); 
     return true;
 });
 

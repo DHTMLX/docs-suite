@@ -15,8 +15,8 @@ description: You can explore the uploadProgress event of the Simple Vault contro
 - `value: array` - the current value of the control
 
 @example:
-form.getItem("simpleVault").events.on("UploadProgress", function(progress, value) {
-    console.log("UploadProgress", progress, value);
+form.getItem("simpleVault").events.on("uploadProgress", function(progress, value) {
+    console.log("uploadProgress", progress, value);
 });
 
 @descr:

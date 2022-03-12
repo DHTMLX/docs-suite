@@ -16,7 +16,7 @@ description: You can explore the filterChange event of Grid in the documentation
 - `filterId: string` - the type of a filter: "inputFilter" or "selectFilter"
 
 @example:
-grid.events.on("FilterChange", function(value,colId,filterId){
+grid.events.on("filterChange", function(value,colId,filterId){
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 

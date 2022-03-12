@@ -69,7 +69,7 @@ The return object includes the following attributes:
 
 ## Getting header filter
 
-You may want to manipulate a filter specified in the header of a grid, for example, to set/unset the focus on the filter, to change the filter, or clear it. To do that, you should get an object of the header filter by column id via the [](grid/api/grid_getheaderfilter_method.md) method: 
+You may want to manipulate a filter specified in the header of a grid, for example, to set/unset the focus on the filter, to change the filter, or clear it. To do that, you should get an object of the header filter by column id via the [](grid/api/grid_getheaderfilter_method.md) method:
 
 ~~~js
 var countryFilter = grid.getHeaderFilter("country");
@@ -88,13 +88,13 @@ var countryFilter = grid.getHeaderFilter("density");
 countryFilter.blur();
 ~~~
 
-**Related sample**:[Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
+**Related sample**: [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
 
 The method returns either an HTML object or an object with Combobox configuration.
 
 ## Hiding/showing a column
 
-It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods. 
+It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods.
 
 ~~~js
 //showing a column
@@ -119,7 +119,7 @@ grid.isColumnHidden("country"); // -> true|false
 
 ## Hiding/showing a row
 
-Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods. 
+Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods.
 
 ~~~js
 //showing a row
@@ -138,7 +138,7 @@ You can check whether a row is hidden or shown on a page using the [](grid/api/g
 grid.isRowHidden("1"); // -> true|false
 ~~~
 
-**Related sample**:[Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
+**Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
 
 ## Adding/removing a row
 
@@ -170,7 +170,7 @@ To remove the necessary row from the grid, apply the [](../data_collection/api/d
 grid.data.remove("5");
 ~~~
 
-Here is an example of removing a currently selected row: 
+Here is an example of removing a currently selected row:
 
 ~~~js
 const cell = grid.selection.getCell();
@@ -250,7 +250,7 @@ As a result, you'll get an object with a span configuration, if any span include
 
 ### Removing spans
 
-To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters: 
+To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters:
 
 ~~~js
 grid.removeSpan("10","a");
@@ -290,7 +290,7 @@ It returns an object with x,y coordinates of a position the grid has been scroll
 
 ## Filtering data
 
-You can filter grid data by the specified criteria with the help of the **filter()** method of [DataCollection](data_collection/index.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the **filter()** method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
 
 <table>
 	<tbody>
@@ -352,7 +352,7 @@ grid.data.filter({
 
 ## Sorting data
 
-It is possible to sort data in the grid via the **sort()** method of [DataCollection](data_collection/index.md). The method takes two parameters:
+It is possible to sort data in the grid via the **sort()** method of [DataCollection](data_collection.md). The method takes two parameters:
 
 <table>
 	<tbody>

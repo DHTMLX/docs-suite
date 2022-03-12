@@ -21,4 +21,4 @@ var layout = new dhx.Layout("layout_container", {
 
 [comment]: # (@relatedapi: layout/api/layout_collapsable_config.md)
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/cell_configuration.md#collapsibility)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/cell_configuration.md#collapsibility)

@@ -16,7 +16,7 @@ description: You can explore the afterEditStart event of TreeGrid in the documen
 - `editorType: string` - the type of a cell editor: "input", "select", "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @example:
-grid.events.on("AfterEditStart", function(row,col, editorType){
+grid.events.on("afterEditStart", function(row,col, editorType){
 	// your logic here
 });
 

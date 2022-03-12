@@ -59,7 +59,7 @@ Check [the full list of events of the Datepicker control](form/api/api_overview.
 
 ## Working with the dhtmlxCalendar widget
 
-There is a possibility to use methods of dhtmlxCalendar via the [getWidget()](form/api/calendar/calendar_getwidget_method.md) method of a DatePicker control.
+There is a possibility to use methods of DHTMLX Calendar via the [getWidget()](form/api/calendar/calendar_getwidget_method.md) method of a DatePicker control.
 
 For example, you can show the current month in the control. To do this, you need to get the widget attached to the DatePicker control and then use the [showDate()](calendar/api/calendar_showdate_method.md) method of this widget.
 
@@ -69,3 +69,5 @@ datepicker.showDate(null,"month"); // shows the current month
 ~~~
 
 **Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
+
+Check [the full list of methods of the DHTMLX Calendar component](../../calendar/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/calendar/calendar_getwidget_method/) method.

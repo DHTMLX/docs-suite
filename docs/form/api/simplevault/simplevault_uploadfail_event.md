@@ -15,8 +15,8 @@ description: You can explore the uploadFail event of the Simple Vault control of
 - `value: array` - the current value of the control
 
 @example:
-form.getItem("simpleVault").events.on("UploadFail", function(file, value) {
-    console.log("UploadFail", file, value);
+form.getItem("simpleVault").events.on("uploadFail", function(file, value) {
+    console.log("uploadFail", file, value);
 });
 
 @descr:

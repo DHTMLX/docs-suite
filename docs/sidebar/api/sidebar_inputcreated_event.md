@@ -15,7 +15,7 @@ description: You can explore the inputCreated event of Sidebar in the documentat
 - `input: HTMLInputElement` - a newly created input
 
 @example:
-sidebar.events.on("InputCreated", function(id, el){
+sidebar.events.on("inputCreated", function(id, el){
     console.log(id);
 });
 

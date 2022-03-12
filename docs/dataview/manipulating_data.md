@@ -30,7 +30,7 @@ For information on disabling/enabling selection of an item, read [Enabling/Disab
 
 ## Using Data Collection API
 
-You can manipulate DataView items with the help of the [Data Collection API](data_collection/index.md).
+You can manipulate DataView items with the help of the [Data Collection API](data_collection.md).
 
 ### Adding items into DataView
 
@@ -101,7 +101,7 @@ dataview.data.remove("id");
 ### Filtering DataView data
 
 You can filter DataView data by the specified criteria with the help of the [](../data_collection/api/datacollection_filter_method.md) method of Data collection. Check all details on parameters of the method in the
-[Data Collection API](data_collection/index.md).
+[Data Collection API](data_collection.md).
 
 ~~~js
 dataview.data.filter({
@@ -117,7 +117,7 @@ dataview.data.filter({
 
 It is possible to sort data in DataView via the [](../data_collection/api/datacollection_sort_method.md) method of Data Collection.
 
-Check all details on the parameters of the method in the [Data Collection API](data_collection/index.md).
+Check all details on the parameters of the method in the [Data Collection API](data_collection.md).
 
 ~~~js
 dataview.data.sort({ 

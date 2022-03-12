@@ -83,7 +83,7 @@ description: You can explore the features of Grid in the documentation of the DH
   - [Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i)
 - **Integration**
   - Backend integration ([documentation](integration/suite_and_backend.md), [demo](https://github.com/DHTMLX/nodejs-suite-demo))
-  - [Optimus](optimus_guides/index.md) (recommended framework for creating apps with Suite components)
+  - [Optimus](optimus_guides.md) (recommended framework for creating apps with Suite components)
   - React integration ([documentation](integration/suite_and_react.md), [demo](https://github.com/DHTMLX/react-widgets))
   - Angular integration ([documentation](integration/suite_and_angular.md), [demo](https://github.com/DHTMLX/angular-suite-demo))
   - Vue integration ([documentation](integration/suite_and_vue.md), [demo](https://github.com/DHTMLX/vue-suite-demo))
@@ -91,7 +91,7 @@ description: You can explore the features of Grid in the documentation of the DH
   - [Touch support](https://snippet.dhtmlx.com/q3cu6x1a)
   - [TypeScript support](common_features/using_typescript.md)
 - [**Check more samples >>>**](https://snippet.dhtmlx.com/all?text=grid)
-- [**Check a TreeGrid  widget >>>**](treegrid/index.md) - it allows showing the nested tabular data
+- [**Check a TreeGrid  widget >>>**](treegrid.md) - it allows showing the nested tabular data
 - [**Check SpreadSheet >>>**](https://docs.dhtmlx.com/spreadsheet/index.html) - if you need functionality like Google Spreadsheets or Excel
 - [**Check Pivot >>>**](https://docs.dhtmlx.com/pivot/index.html) - if you are interested in analyzing data from large datasets
 - **Do you need more functionality? Feel free to share your suggestions in the comments below!**

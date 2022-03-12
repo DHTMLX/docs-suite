@@ -14,7 +14,7 @@ This is a horizontal (between menu options) or vertical (between toolbar control
 
 ## Adding Separator
 
-A new Separator can be created with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+A new Separator can be created with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 toolbar.data.add({
@@ -26,7 +26,7 @@ toolbar.data.add({
 
 The configuration object of the Separator control can have [the following properties](toolbar/api/api_separator_properties.md).
 
-## Showing/hiding separator
+## Showing/hiding Separator
 
 You can hide and show Separator with the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md) methods of Toolbar by passing the control's id to them:
 
@@ -37,4 +37,4 @@ toolbar.hide(id);
 
 **Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
 
-Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection/index.md).
+Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).

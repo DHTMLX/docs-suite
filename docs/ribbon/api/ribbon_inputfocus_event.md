@@ -14,7 +14,7 @@ description: You can explore the inputFocus event of Ribbon in the documentation
 `id: string | number` - the ID of a new control
 
 @example:
-ribbon.events.on("InputFocus", function(id){
+ribbon.events.on("inputFocus", function(id){
     console.log(id);
 });
 

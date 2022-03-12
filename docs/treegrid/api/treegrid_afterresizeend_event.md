@@ -15,7 +15,7 @@ description: You can explore the afterResizeEnd event of TreeGrid in the documen
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("AfterResizeEnd", function(col,e){
+grid.events.on("afterResizeEnd", function(col,e){
 	// your logic here
 });
 

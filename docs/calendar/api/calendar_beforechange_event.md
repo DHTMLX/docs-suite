@@ -19,7 +19,7 @@ description: You can explore the beforeChange event of Calendar in the documenta
 Return `true` to allow changing date selection, `false` to prevent changing date selection.
 
 @example:
-calendar.events.on("BeforeChange",function(date, oldDate, byClick){
+calendar.events.on("beforeChange",function(date, oldDate, byClick){
 	if (date > new Date())
     	return false;
 });

@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Container control of For
 `value: undefined` - the current value of the control, null
 
 @example:
-form.getItem("container").events.on("AfterShow", function(text) {
-    console.log("AfterShow", text);
+form.getItem("container").events.on("afterShow", function(text) {
+    console.log("afterShow", text);
 });
 
 @changelog: added in v7.2

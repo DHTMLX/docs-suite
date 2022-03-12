@@ -24,7 +24,7 @@ Check [online samples for dhtmlxLayout](https://snippet.dhtmlx.com/all?text=%23l
 
 You can read the following articles to find out how to add Layout on the page and work with it.
 
-- [](init.md)
+- [](initialization.md)
 - [](layout_structure.md)
 - [](layout_patterns.md)
 - [](cell_configuration.md)

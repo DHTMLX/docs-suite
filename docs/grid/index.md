@@ -21,7 +21,7 @@ Check [online samples for dhtmlxGrid](https://snippet.dhtmlx.com/all?text=%23gri
 - To get just dhtmlxGrid, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml)
 - To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxGrid](https://snippet.dhtmlx.com/all?text=%23grid)
-- To work with data of Grid check [DataCollection API](data_collection/index.md)
+- To work with data of Grid check [DataCollection API](data_collection.md)
 
 ## Guides
 

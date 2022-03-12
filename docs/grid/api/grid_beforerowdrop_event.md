@@ -18,7 +18,7 @@ description: You can explore the beforeRowDrop event of Grid in the documentatio
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeRowDrop", function(data, events){
+grid.events.on("beforeRowDrop", function(data, events){
 	// your logic here
     return false;
 });

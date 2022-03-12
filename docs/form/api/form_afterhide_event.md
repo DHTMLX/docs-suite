@@ -15,8 +15,8 @@ description: You can explore the afterHide event of Form in the documentation of
 - `value: any` - the current value of the control
 
 @example:
-form.events.on("AfterHide", function(name, value) {
-    console.log("AfterHide", name, value); 
+form.events.on("afterHide", function(name, value) {
+    console.log("afterHide", name, value); 
 });
 
 @descr:

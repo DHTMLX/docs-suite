@@ -14,8 +14,8 @@ description: You can explore the input event of the Datepicker control of Form i
 `inputValue: string` - an entered value
 
 @example:
-form.getItem("datepicker").events.on("Input", function(inputValue) {
-    console.log("Input", inputValue);
+form.getItem("datepicker").events.on("input", function(inputValue) {
+    console.log("input", inputValue);
 });
 
 @descr:

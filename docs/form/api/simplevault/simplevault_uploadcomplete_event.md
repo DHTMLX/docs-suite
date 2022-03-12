@@ -15,8 +15,8 @@ description: You can explore the uploadComplete event of the Simple Vault contro
 - `value: array` - the current value of the control
 
 @example:
-form.getItem("simpleVault").events.on("UploadComplete", function(files, value) {
-    console.log("UploadComplete", files, value);
+form.getItem("simpleVault").events.on("uploadComplete", function(files, value) {
+    console.log("uploadComplete", files, value);
 });
 
 @descr:

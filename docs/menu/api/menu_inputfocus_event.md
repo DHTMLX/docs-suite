@@ -14,7 +14,7 @@ description: You can explore the inputFocus event of Menu in the documentation o
 `id: string | number` - the ID of a new control
 
 @example:
-menu.events.on("InputFocus", function(id){
+menu.events.on("inputFocus", function(id){
     console.log(id);
 });
 

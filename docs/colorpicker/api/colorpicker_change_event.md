@@ -14,7 +14,7 @@ description: You can explore the change event of Colorpicker in the documentatio
 `color: string` - the newly selected color
 
 @example:
-colorpicker.events.on("Change",function(color){
+colorpicker.events.on("change",function(color){
 	// your logic here
 });
 

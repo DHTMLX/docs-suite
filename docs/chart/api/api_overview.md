@@ -17,7 +17,7 @@ description: You can explore the API of Chart in the documentation of the DHTMLX
 | [](chart/api/chart_setconfig_method.md)  | @getshort(chart/api/chart_setconfig_method.md)  |
 
 :::info important
-Use [DataCollection methods](data_collection/index.md) to work with data. 
+Use [DataCollection methods](data_collection.md) to work with data. 
 :::
 
 ## Events
@@ -29,14 +29,15 @@ Use [DataCollection methods](data_collection/index.md) to work with data.
 | [](chart/api/chart_toggleseries_event.md) | @getshort(chart/api/chart_toggleseries_event.md) |
 
 :::info important
-Use [DataCollection events](data_collection/index.md#events) to work with data. 
+Use [DataCollection events](data_collection.md#events) to work with data. 
 :::
 
 ## Properties
 
 | Name                                    | Description                                    |
-| --------------------------------------- | ---------------------------------------------- |
+| :-------------------------------------- | :--------------------------------------------- |
 | [](chart/api/chart_css_config.md)       | @getshort(chart/api/chart_css_config.md)       |
+| [](chart/api/chart_data_config.md)      | @getshort(chart/api/chart_data_config.md)      |
 | [](chart/api/chart_legend_config.md)    | @getshort(chart/api/chart_legend_config.md)    |
 | [](chart/api/chart_maxpoints_config.md) | @getshort(chart/api/chart_maxpoints_config.md) |
 | [](chart/api/chart_scales_config.md)    | @getshort(chart/api/chart_scales_config.md)    |

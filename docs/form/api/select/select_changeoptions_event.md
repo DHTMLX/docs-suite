@@ -14,8 +14,8 @@ description: You can explore the changeOptions event of the Select control of Fo
 `options: array` - a new array of Select options
 
 @example:
-form.getItem("select").events.on("ChangeOptions", function(options) {
-    console.log("ChangeOptions", options);
+form.getItem("select").events.on("changeOptions", function(options) {
+    console.log("changeOptions", options);
 });
 
 @descr:

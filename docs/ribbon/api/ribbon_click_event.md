@@ -15,7 +15,7 @@ description: You can explore the click event of Ribbon in the documentation of t
 - `events: Event` - a native event object
 
 @example:
-ribbon.events.on("Click", function(id,e){
+ribbon.events.on("click", function(id,e){
     console.log(id);
 });
 

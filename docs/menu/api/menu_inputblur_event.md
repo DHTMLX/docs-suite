@@ -14,7 +14,7 @@ description: You can explore the inputBlur event of Menu in the documentation of
 `id: string | number` - the ID of a new control
 
 @example:
-menu.events.on("InputBlur", function(id){
+menu.events.on("inputBlur", function(id){
     console.log(id);
 });
 

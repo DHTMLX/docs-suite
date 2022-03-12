@@ -57,7 +57,7 @@ Check [the full list of events of the ColorPicker control](form/api/api_overview
 
 ## Working with the dhtmlxColorPicker widget
 
-There is a possibility to use methods of dhtmlxColorPicker via the [getWidget()](form/api/colorpicker/colorpicker_getwidget_method.md) method of a ColorPicker control.
+There is a possibility to use methods of DHTMLX ColorPicker via the [getWidget()](form/api/colorpicker/colorpicker_getwidget_method.md) method of a ColorPicker control.
 
 For example, you can set focus on the specified value in the control. To do this, you need to get the widget attached to the ColorPicker control and then use the [setFocus()](colorpicker/api/colorpicker_setfocus_method.md) method of this widget.
 
@@ -67,3 +67,6 @@ colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 ~~~
 
 **Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
+
+
+Check [the full list of methods of the DHTMLX Colorpicker component](../../colorpicker/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/colorpicker/colorpicker_getwidget_method/) method.

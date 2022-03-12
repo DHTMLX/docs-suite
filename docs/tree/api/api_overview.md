@@ -26,8 +26,8 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | [](tree/api/tree_uncheckitemnew_method.md) | @getshort(tree/api/tree_uncheckitemnew_method.md) |
 
 :::info important
-- Use [the methods of TreeCollection](tree_collection/index.md) to work with data. 
-- Apply [the methods of Selection](selection/index.md#methods) to manage the selection of Tree items.
+- Use [the methods of TreeCollection](tree_collection.md) to work with data. 
+- Apply [the methods of Selection](selection.md#methods) to manage the selection of Tree items.
 :::
 
 ## Events
@@ -59,8 +59,8 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | [](tree/api/tree_itemrightclick_event.md)  | @getshort(tree/api/tree_itemrightclick_event.md)  |
 
 :::info important
-- Use [the events of TreeCollection](tree_collection/index.md#events) to work with data of Tree.
-- Apply [the events of Selection](selection/index.md#events) to control the selection of Tree items.
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Tree.
+- Apply [the events of Selection](selection.md#events) to control the selection of Tree items.
 :::
 
 ## Properties

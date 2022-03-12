@@ -15,8 +15,8 @@ description: You can explore the afterValidate event of the Checkbox control of 
 - `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("checkbox").events.on("AfterValidate", function(value, isValidate) {
-    console.log("AfterValidate", value, isValidate);
+form.getItem("checkbox").events.on("afterValidate", function(value, isValidate) {
+    console.log("afterValidate", value, isValidate);
 });
 
 @descr:

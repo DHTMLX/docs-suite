@@ -136,7 +136,7 @@ module.exports = {
     projectName: 'docs-suite', // Usually your repo name
     trailingSlash: true,
     themeConfig: {
-        colorMode: {
+        /*colorMode: {
             // "light" | "dark"
             defaultMode: 'light',
 
@@ -159,11 +159,12 @@ module.exports = {
                     marginLeft: '0px',
                 },
             },
-        },
+        },*/
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
-            apiKey: '0d282828e1a23fa03cf9fe7693f25a5f',
+            appId: '9PUN1CICKL',
+            apiKey: 'a76399f64929cff1e9e926f0dbe2d86c',
             indexName: 'dhtmlx',
 
             // Optional: see doc section bellow
@@ -285,7 +286,7 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
-                    editUrl: 'https://github.com/DHTMLX/docs-suite/edit/master/',
+                    //editUrl: 'https://github.com/DHTMLX/docs-suite/edit/master/',
                     routeBasePath: '/',
                 },
                 // blog: {
@@ -299,7 +300,7 @@ module.exports = {
                 sitemap: {
                     changefreq: 'daily',
                     priority: 0.5,
-                    trailingSlash: true
+                    
                 },
             },
         ],

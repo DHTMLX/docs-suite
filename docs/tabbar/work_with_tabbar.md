@@ -98,7 +98,7 @@ var active = tabbar.getActive(); // -> "2"
 
 **Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
 
-## Enabling/Disabling a tab
+## Enabling/disabling a tab
 
 To enable a tab, use the [enableTab()](tabbar/api/tabbar_enabletab_method.md) method:
 

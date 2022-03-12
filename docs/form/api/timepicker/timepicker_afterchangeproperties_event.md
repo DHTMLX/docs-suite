@@ -14,8 +14,8 @@ description: You can explore the afterChangeProperties event of the Timepicker c
 `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
-form.getItem("timepicker").events.on("AfterChangeProperties", function(properties) {
-    console.log("AfterChangeProperties", properties);
+form.getItem("timepicker").events.on("afterChangeProperties", function(properties) {
+    console.log("afterChangeProperties", properties);
 });
 
 @descr:

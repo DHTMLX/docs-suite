@@ -14,7 +14,7 @@ description: You can explore the afterHide event of Menu in the documentation of
 `events:  Event` - a native event object
 
 @example:
-menu.events.on("AfterHide", function(event){
+menu.events.on("afterHide", function(event){
     // your code here
 });
 

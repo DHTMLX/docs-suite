@@ -41,4 +41,4 @@ var layout = new dhx.Layout("layout_container", {
 
 [comment]: # (@relatedapi: layout/api/layout_rows_config.md)
 
-[comment]: # (@related: layout/init.md#initialize-layout layout/layout_structure.md)
+[comment]: # (@related: layout/initialization.md#initialize-layout layout/layout_structure.md)

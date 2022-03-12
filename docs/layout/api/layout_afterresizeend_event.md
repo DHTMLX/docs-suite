@@ -14,7 +14,7 @@ description: You can explore the afterResizeEnd event of Layout in the documenta
 `id: string` - the id of a cell
 
 @example:
-layout.events.on("AfterResizeEnd", function(id){
+layout.events.on("afterResizeEnd", function(id){
 	// your logic here
 });
 

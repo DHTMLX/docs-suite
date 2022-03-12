@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Container control of Fo
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("container").events.on("BeforeShow", function(text) {
-    console.log("BeforeShow", text);
+form.getItem("container").events.on("beforeShow", function(text) {
+    console.log("beforeShow", text);
     return true;
 });
 

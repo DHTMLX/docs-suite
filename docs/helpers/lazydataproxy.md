@@ -4,7 +4,7 @@ title: JavaScript Helpers - Dynamic Loading
 description: You can learn about dynamic loading in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Dynamic Loading
+# Dynamic loading
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 
@@ -41,7 +41,7 @@ There is a list of parameters that you can specify in the configuration object. 
 - **delay** - (*number*) time interval (in milliseconds) to wait before the next dynamic loading request to the server (allows decreasing the number of server request during quick scrolling); default value: 50
 - **prepare** - (*number*) the count of extra records that should be loaded from the server; default value: 0
 
-## Server-side Response
+## Server-side response
 
 Server side will send the following data to the client side:
 

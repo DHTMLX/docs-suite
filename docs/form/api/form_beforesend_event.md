@@ -14,7 +14,7 @@ description: You can explore the beforeSend event of Form in the documentation o
 Return `true/false` to allow/forbid a form sending to the server.
 
 @example:
-form.events.on("BeforeSend", function(){
+form.events.on("beforeSend", function(){
    // your logic here
    return true;
 });

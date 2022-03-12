@@ -18,8 +18,8 @@ description: You can explore the beforeUploadFile event of the Simple Vault cont
 Return `false` to cancel file uploading; otherwise, `true`.
 
 @example:
-form.getItem("simplevault").events.on("BeforeUploadFile", function(file, value) {
-    console.log("BeforeUploadFile", file, value);
+form.getItem("simplevault").events.on("beforeUploadFile", function(file, value) {
+    console.log("beforeUploadFile", file, value);
     return true;
 });
 

@@ -1,10 +1,10 @@
 ---
-sidebar_label: Work with Selection Object
+sidebar_label: Work with Selection object
 title: JavaScript List - Work with Selection Object 
 description: You can explore how to work with Selection Object of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Work with Selection Object
+# Work with Selection object
 
 You can manipulate with List items via the API of the **selection** object. It is possible to select an item, remove selection, and get the id or even the object of a selected List item.
 
@@ -24,7 +24,7 @@ list.selection.disable();
 
 **Related sample**: [List. Disable/Enable Selection](https://snippet.dhtmlx.com/i4zj985o)
 
-{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection/index.md#events) events of the Selection object.}}
+{{note To make the process of working with the selection of items more flexible, you can apply the [related](selection.md#events) events of the Selection object.}}
 
 ## Selecting an item
 

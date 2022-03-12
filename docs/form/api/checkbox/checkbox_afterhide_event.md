@@ -15,8 +15,8 @@ description: You can explore the afterHide event of the Checkbox control of Form
 - `init: boolean` - *true*, if the event is triggered on the checkbox control initialization; otherwise, *false*
 
 @example:
-form.getItem("checkbox").events.on("AfterHide", function(value, init) {
-    console.log("AfterHide", value, init);
+form.getItem("checkbox").events.on("afterHide", function(value, init) {
+    console.log("afterHide", value, init);
 });
 
 @descr:

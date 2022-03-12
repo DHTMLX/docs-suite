@@ -26,7 +26,7 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
         <div id="dataview_container"></div>
         <script>
             // creating dhtmlxDataView
-            var dataview = new dhx.DataView("dataview_container",{
+            var dataview = new dhx.DataView("dataview_container", {
     			itemsInRow: 5
 			});
         </script>
@@ -83,7 +83,7 @@ Finally, you are able to load DataView with data. You can load inline or externa
 - to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
 
 ~~~js
-var dataview = new dhx.DataView("dataview_container",{
+var dataview = new dhx.DataView("dataview_container", {
 	 itemsInRow: 5
 });
 
@@ -93,7 +93,7 @@ dataview.data.parse(data);
 - to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
 
 ~~~js
-var dataview = new dhx.DataView("dataview_container",{
+var dataview = new dhx.DataView("dataview_container", {
 	itemsInRow: 5
 });
 
@@ -101,3 +101,9 @@ dataview.data.load("../common/dataset.json");
 ~~~
 
 **Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
+
+:::info
+To display data in DataView you should define a [template](dataview/configuration.md/#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.
+
+Another way to display data in DataView is to prepare a data set with the ["value"](dataview/data_loading.md/#preparing-data-set) attribute.
+:::

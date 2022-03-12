@@ -14,7 +14,7 @@ description: You can explore the afterExpand event of Tree in the documentation 
 `id: string | number` - the id of an expanded item
 
 @example:
-tree.events.on("AfterExpand", function(id) {
+tree.events.on("afterExpand", function(id) {
     // your logic here
 });
 

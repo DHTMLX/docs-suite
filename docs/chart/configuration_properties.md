@@ -15,7 +15,7 @@ You need to set necessary properties from those listed below within the configur
 dhtmlxChart includes several configuration options that are mostly common for all chart types. They are: 
 
 - [](chart/api/chart_type_config.md) - (*string*) defines the [type of a chart](chart/charts_overview.md) to initialize; "bar", "x-bar" (for horizontal Bar chart), "line", "spline", "scatter", "area", 
-"splineArea", "donut", "pie", "pie3D" and "radar"
+"splineArea", "donut", "pie", "pie3D", "radar", and "treeMap"
 
 ~~~js
 var chart = new dhx.Chart("chart", {

@@ -12,7 +12,7 @@ The guide will teach you how to create your own views on the base of DHTMLX Opti
 
 {{note The complete source code is available on <a href="https://github.com/DHTMLX/optimus-starter-app/tree/guide/step-5" target="_blank">GitHub</a>. You can check the step-by-step changes by switching between the branches with the related names.}}
 
-For more information about working with the components of DHTMLX Suite, see **DHTMLX documentation**. The detailed information on DHTMLX Optimus is presented [here](optimus_guides/index.md).
+For more information about working with the components of DHTMLX Suite, see **DHTMLX documentation**. The detailed information on DHTMLX Optimus is presented [here](optimus_guides.md).
 
 So, let's get started! 
 
@@ -133,7 +133,7 @@ export class MyApp extends App {
 }
 ~~~
 
-You can find more details on API methods [here](optimus_guides/index.md#api).
+You can find more details on API methods [here](optimus_guides.md#api).
 
 5\. Finally, we've initialized our application via updating the code of the *index.html* file with the following:
 
@@ -274,7 +274,7 @@ export class TopLayout extends View {
 
 In the above code we've returned Layout as a view and placed the *EmptyView* and *ToolbarView* views into the cells of the layout. 
 
-To render the views, the **show()** method is called. For details about rendering of the components of the DHTMLX Suite library, see the [documentation](optimus_guides/index.md#initialization-of-the-dhtmlx-layout-component).
+To render the views, the **show()** method is called. For details about rendering of the components of the DHTMLX Suite library, see the [documentation](optimus_guides.md#initialization-of-the-dhtmlx-layout-component).
 
 But, if you've already run your app, you can notice that nothing happens when switching the buttons in the toolbar. To solve this problem, we need to add global events.
 
@@ -338,9 +338,9 @@ After clicking on the "Second" button you should see the view, as in:
 
 You can also learn more details about how to:
 
-- [pass parameters to child components](optimus_guides/index.md#passing-data-to-child-components);
-- [use global event bus](optimus_guides/index.md#subscribing-to-global-events); 
-- [work with the DHTMLX Suite library in views](optimus_guides/index.md#working-with-widgets-of-suite).
+- [pass parameters to child components](optimus_guides.md#passing-data-to-child-components);
+- [use global event bus](optimus_guides.md#subscribing-to-global-events); 
+- [work with the DHTMLX Suite library in views](optimus_guides.md#working-with-widgets-of-suite).
 
 Step 3. Define the global state of the app
 --------------------------------
@@ -557,7 +557,7 @@ export class MyApp extends App {
 
 4\. Now, create the *views/content* folder. We are going to create the DataView, Chart, and Grid views there:
 
-- create the *DataView.js* file and add the DataView view there by using the [DataView widget](dataview/index.md) of Suite:
+- create the *DataView.js* file and add the DataView view there by using the [DataView widget](dataview.md) of Suite:
 
 ~~~js title="src/views/content/DataView.js"
 import { View } from "dhx-optimus";
@@ -581,7 +581,7 @@ export class DataView extends View {
 }
 ~~~
 
-- create the *ChartView.js* file and add the Chart view there by using the [Chart widget](chart/index.md) of Suite:
+- create the *ChartView.js* file and add the Chart view there by using the [Chart widget](chart.md) of Suite:
 
 ~~~js title="src/views/content/ChartView.js"
 import { View } from "dhx-optimus";
@@ -616,7 +616,7 @@ export class ChartView extends View {
 
 The *getChartStatistic* function is used to prepare the data for Chart. For details on the function, see the <a href="https://github.com/DHTMLX/optimus-starter-app/blob/guide/step-4/src/utils/helpers.js" target="_blank">utils/helpers.js</a> file.
 
-- create the *GridView.js* file and add the Grid view there by using the [Grid widget](grid/index.md) of Suite:
+- create the *GridView.js* file and add the Grid view there by using the [Grid widget](grid.md) of Suite:
 
 ~~~js title="src/views/content/GridView.js"
 import { View } from "dhx-optimus";
@@ -967,7 +967,7 @@ We hope you have learned how to build the DHTMLX-based app with DHTMLX Optimus a
 
 You can find the initial code on <a href="https://github.com/DHTMLX/optimus-starter-app/" target="_blank">GitHub</a>, clone or download it and use it for your projects.
 
-For details about API methods of DHTMLX Optimus, see [the documentation](optimus_guides/index.md).
+For details about API methods of DHTMLX Optimus, see [the documentation](optimus_guides.md).
 
 Check more demos build with Optimus:
 

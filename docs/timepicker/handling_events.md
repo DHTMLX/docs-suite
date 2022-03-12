@@ -1,17 +1,17 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: JavaScript Timepicker - Event Handling 
 description: You can explore the event handling of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
 You can attach event listeners with the **timepicker.events.on()** method:
 
 ~~~js
-timepicker.events.on("Change", function(value){
+timepicker.events.on("change", function(value){
     console.log("The value of a timepicker has changed to "+ value);
 });
 ~~~
@@ -25,7 +25,7 @@ timepicker.events.on("Change", function(value){
 To detach events, use **timepicker.events.detach()**:
 
 ~~~js
-timepicker.events.on("Change", function(value){
+timepicker.events.on("change", function(value){
     console.log("The value of a timepicker has changed to "+ value);
 });
 timepicker.events.detach("Change");

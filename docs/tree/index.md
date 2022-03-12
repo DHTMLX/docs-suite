@@ -21,7 +21,7 @@ Check [online samples for dhtmlxTree](https://snippet.dhtmlx.com/all?text=%23tre
 - To get just dhtmlxTree, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
 - To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxTree](https://snippet.dhtmlx.com/all?text=%23tree)
-- To work with data of Tree check [TreeCollection API](tree_collection/index.md)
+- To work with data of Tree check [TreeCollection API](tree_collection.md)
   
 ## Guides
 

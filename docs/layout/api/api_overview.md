@@ -39,17 +39,19 @@ description: You can explore the API of Layout in the documentation of the DHTML
 
 ### Layout properties
 
-| Name                                         | Description                                         |
-| -------------------------------------------- | --------------------------------------------------- |
-| [](layout/api/layout_cols_config.md)         | @getshort(layout/api/layout_cols_config.md)         |
-| [](layout/api/layout_rows_config.md)         | @getshort(layout/api/layout_rows_config.md)         |
+| Name                                 | Description                                 |
+| ------------------------------------ | ------------------------------------------- |
+| [](layout/api/layout_cols_config.md) | @getshort(layout/api/layout_cols_config.md) |
+| [](layout/api/layout_css_config.md)  | @getshort(layout/api/layout_css_config.md)  |
+| [](layout/api/layout_rows_config.md) | @getshort(layout/api/layout_rows_config.md) |
+| [](layout/api/layout_type_config.md) | @getshort(layout/api/layout_type_config.md) |
 
 ## Cell API
 
 ### Cell methods
 
-| Name                                       | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
+| Name                                                 | Description                                                 |
+| ---------------------------------------------------- | ----------------------------------------------------------- |
 | [](layout/api/cell/layout_cell_attach_method.md)     | @getshort(layout/api/cell/layout_cell_attach_method.md)     |
 | [](layout/api/cell/layout_cell_attachhtml_method.md) | @getshort(layout/api/cell/layout_cell_attachhtml_method.md) |
 | [](layout/api/cell/layout_cell_collapse_method.md)   | @getshort(layout/api/cell/layout_cell_collapse_method.md)   |
@@ -64,8 +66,8 @@ description: You can explore the API of Layout in the documentation of the DHTML
 
 ### Cell properties
 
-| Name                                         | Description                                         |
-| -------------------------------------------- | --------------------------------------------------- |
+| Name                                                   | Description                                                   |
+| ------------------------------------------------------ | ------------------------------------------------------------- |
 | [](layout/api/cell/layout_cell_align_config.md)        | @getshort(layout/api/cell/layout_cell_align_config.md)        |
 | [](layout/api/cell/layout_cell_collapsable_config.md)  | @getshort(layout/api/cell/layout_cell_collapsable_config.md)  |
 | [](layout/api/cell/layout_cell_collapsed_config.md)    | @getshort(layout/api/cell/layout_cell_collapsed_config.md)    |

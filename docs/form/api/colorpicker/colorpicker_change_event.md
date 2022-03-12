@@ -14,8 +14,8 @@ description: You can explore the change event of the Colorpicker control of Form
 `value: string` - the current value of the control
 
 @example:
-form.getItem("colorpicker").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("colorpicker").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:

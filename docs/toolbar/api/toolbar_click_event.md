@@ -15,7 +15,7 @@ description: You can explore the click event of Toolbar in the documentation of 
 - `events: Event` - a native event object
 
 @example:
-toolbar.events.on("Click", function(id,e){
+toolbar.events.on("click", function(id,e){
     console.log(id);
 });
 

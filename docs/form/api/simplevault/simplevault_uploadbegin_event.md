@@ -15,8 +15,8 @@ description: You can explore the uploadBegin event of the Simple Vault control o
 - `value: array` - the current value of the control
 
 @example:
-form.getItem("simpleVault").events.on("UploadBegin", function(files, value) {
-    console.log("UploadBegin", files, value);
+form.getItem("simpleVault").events.on("uploadBegin", function(files, value) {
+    console.log("uploadBegin", files, value);
 });
 
 @descr:

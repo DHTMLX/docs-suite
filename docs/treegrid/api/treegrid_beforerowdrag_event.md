@@ -18,7 +18,7 @@ description: You can explore the beforeRowDrag event of TreeGrid in the document
 Return `false` to prevent dragging of a row; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeRowDrag", function(data, events){
+treegrid.events.on("beforeRowDrag", function(data, events){
 	// your logic here
     return false;
 });

@@ -18,8 +18,8 @@ description: You can explore the beforeHide event of the Text control of Form in
 Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("text").events.on("BeforeHide", function(value, init) {
-    console.log("BeforeHide", value, init);
+form.getItem("text").events.on("beforeHide", function(value, init) {
+    console.log("beforeHide", value, init);
     return true;
 });
 

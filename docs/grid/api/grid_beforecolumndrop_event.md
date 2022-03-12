@@ -18,7 +18,7 @@ description: You can explore the beforeColumnDrop event of Grid in the documenta
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeColumnDrop", function(data, events){
+grid.events.on("beforeColumnDrop", function(data, events){
 	// your logic here
     return false;
 });

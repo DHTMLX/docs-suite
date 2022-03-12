@@ -14,7 +14,7 @@ description: You can explore the afterExpand event of Layout in the documentatio
 `id: string` - the id of a cell
 
 @example:
-layout.events.on("AfterExpand", function(id){
+layout.events.on("afterExpand", function(id){
 	// your logic here
 });
 

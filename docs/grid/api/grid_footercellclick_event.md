@@ -15,7 +15,7 @@ description: You can explore the footerCellClick event of Grid in the documentat
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("FooterCellClick", function(col,e){
+grid.events.on("footerCellClick", function(col,e){
     // your logic here
 });
 

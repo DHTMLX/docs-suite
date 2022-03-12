@@ -14,7 +14,7 @@ description: You can explore the afterRowShow event of Grid in the documentation
 `row: object` - an object with a row configuration
 
 @example:
-grid.events.on("AfterRowShow", function(row){
+grid.events.on("afterRowShow", function(row){
     // your logic here
 });
 

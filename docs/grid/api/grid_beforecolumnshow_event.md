@@ -17,7 +17,7 @@ description: You can explore the beforeColumnShow event of Grid in the documenta
 Return `false` to prevent a column from being shown; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeColumnShow", function(column){
+grid.events.on("beforeColumnShow", function(column){
     // your logic here
     return false;
 });

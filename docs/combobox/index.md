@@ -20,7 +20,7 @@ Check [online samples for dhtmlxComboBox](https://snippet.dhtmlx.com/all?text=%2
 
 - You can get dhtmlxComboBox as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxComboBox](https://snippet.dhtmlx.com/all?text=%23combobox)
-- To work with data of ComboBox check [DataCollection API](data_collection/index.md)
+- To work with data of ComboBox check [DataCollection API](data_collection.md)
 
 ## Guides
 

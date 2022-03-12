@@ -197,7 +197,7 @@ combo.popup.events.on("AfterHide", function(e){
 
 ## Using Data Collection API
 
-You can manipulate ComboBox options with the help of the [Data Collection API](data_collection/index.md).
+You can manipulate ComboBox options with the help of the [Data Collection API](data_collection.md).
 
 ### Adding options into ComboBox
 
@@ -219,10 +219,14 @@ It is possible to add more options into the initialized ComboBox on the fly. Use
 For instance:
 
 ~~~js
-combo.data.add({value:"Russia"},1);
+combobox.data.add({value:"Russia"},1);
 ~~~
 
 **Related sample**: [Combobox. Add/Remove](https://snippet.dhtmlx.com/o7vd331z)
+
+:::note
+From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.
+:::
 
 ### Updating ComboBox options
 
@@ -259,4 +263,4 @@ To remove an option, make use of the **remove()** method of Data Collection. Pas
 combo.data.remove("option_id");
 ~~~
 
-{{note Check the full list of [Data collection API](data_collection/index.md)}}
+{{note Check the full list of [Data collection API](data_collection.md)}}

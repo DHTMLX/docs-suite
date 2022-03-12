@@ -10,7 +10,7 @@ description: You can have an overview of TreeGrid in the documentation of the DH
 The TreeGrid component is available in the **PRO** version only.
 }}
 
-dhtmlxTreeGrid is a special extension for [dhtmlxGrid](grid/index.md). This component allows showing the nested tabular data. Being a successor of Grid, TreeGrid inherits its API and common techniques of initialization and
+dhtmlxTreeGrid is a special extension for [dhtmlxGrid](grid.md). This component allows showing the nested tabular data. Being a successor of Grid, TreeGrid inherits its API and common techniques of initialization and
 usage.
 
 Check [online samples for dhtmlxTreeGrid](https://snippet.dhtmlx.com/all?text=%23treegrid).
@@ -26,7 +26,7 @@ Check [online samples for dhtmlxTreeGrid](https://snippet.dhtmlx.com/all?text=%2
 - To get just dhtmlxTreeGrid, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxTreeGrid/download.shtml)
 - To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for dhtmlxTreeGrid](https://snippet.dhtmlx.com/all?text=%23treegrid)
-- To work with data of TreeGrid check [TreeCollection API](tree_collection/index.md)
+- To work with data of TreeGrid check [TreeCollection API](tree_collection.md)
 
 ## Guides
 

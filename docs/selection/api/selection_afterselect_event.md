@@ -14,7 +14,7 @@ description: You can explore the afterSelect event of Selection in the documenta
 `id: string` - the id of an item
 
 @example:
-component.selection.events.on("AfterSelect", function(id){
+component.selection.events.on("afterSelect", function(id){
     console.log("An item is selected");
 });
 
@@ -25,7 +25,7 @@ component.selection.events.on("AfterSelect", function(id){
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-component.events.on("AfterSelect", function(id) {
+component.events.on("afterSelect", function(id) {
     console.log(id);
 });
 ~~~

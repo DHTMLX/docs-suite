@@ -32,4 +32,4 @@ var layout = new dhx.Layout("layout_container",{
 
 **Related sample**: [Layout. Padding](https://snippet.dhtmlx.com/tk6tpwwv)
 
-[comment]: # (@related: layout/init.md#initialize-layout)
+[comment]: # (@related: layout/initialization.md#initialize-layout)

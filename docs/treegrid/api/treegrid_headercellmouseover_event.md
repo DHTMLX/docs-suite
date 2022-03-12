@@ -15,7 +15,7 @@ description: You can explore the headerCellMouseOver event of TreeGrid in the do
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("HeaderCellMouseOver", function(column,e){
+grid.events.on("headerCellMouseOver", function(column,e){
     // your logic here
 });
 

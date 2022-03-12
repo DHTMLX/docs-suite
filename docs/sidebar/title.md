@@ -25,7 +25,7 @@ sidebar.data.add({
 
 You can provide the [following properties](sidebar/api/api_title_properties.md) in the configuration object of a Title control.
 
-## Showing/hiding title
+## Showing/hiding Title
 
 Title can be hidden and shown with the help of the related methods. Pass the id of a Title control as a parameter.
 

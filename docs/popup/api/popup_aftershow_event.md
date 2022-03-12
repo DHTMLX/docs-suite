@@ -14,7 +14,7 @@ description: You can explore the afterShow event of Popup in the documentation o
 `node: HTMLElement` - the container a popup is placed in
 
 @example:
-popup.events.on("AfterShow", function(element){
+popup.events.on("afterShow", function(element){
     console.log("A popup is shown");
 });
 

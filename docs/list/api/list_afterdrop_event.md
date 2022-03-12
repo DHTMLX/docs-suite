@@ -15,7 +15,7 @@ description: You can explore the afterDrop event of List in the documentation of
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-list.events.on("AfterDrop", function(data, events) {
+list.events.on("afterDrop", function(data, events) {
     // your logic here
 });
 

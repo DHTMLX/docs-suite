@@ -15,7 +15,7 @@ description: You can explore the focusChange event of DataView in the documentat
 - `id: string | number` - the id of the item
 
 @example:
-dataview.events.on("FocusChange", function(index, id){
+dataview.events.on("focusChange", function(index, id){
     // your code here
 });
 

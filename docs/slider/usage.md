@@ -22,7 +22,7 @@ slider.enable();
 
 **Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)
 
-## Checking if a slider is disabled
+## Checking if a Slider is disabled
 
 To check if a slider is disabled, call the [isDisabled()](slider/api/slider_isdisabled_method.md) method:
 

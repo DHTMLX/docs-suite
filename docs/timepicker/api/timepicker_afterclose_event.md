@@ -14,7 +14,7 @@ description: You can explore the afterClose event of Timepicker in the documenta
 `value: string | object` - the current value of a timepicker
 
 @example:
-timepicker.events.on("AfterClose", function(value){
+timepicker.events.on("afterClose", function(value){
     console.log(value);
 });
 

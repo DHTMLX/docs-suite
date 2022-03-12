@@ -14,7 +14,7 @@ description: You can explore the afterUnSelect event of Selection in the documen
 `id: string` - the id of an item
 
 @example:
-component.selection.events.on("AfterUnSelect", function(id){
+component.selection.events.on("afterUnSelect", function(id){
     console.log("An item is unselected");
 });
 
@@ -25,7 +25,7 @@ component.selection.events.on("AfterUnSelect", function(id){
 Starting from v7.0, you can also apply the simplified version of the event:
 
 ~~~js
-component.events.on("AfterUnSelect", function(id) {
+component.events.on("afterUnSelect", function(id) {
     console.log(id);
 });
 ~~~

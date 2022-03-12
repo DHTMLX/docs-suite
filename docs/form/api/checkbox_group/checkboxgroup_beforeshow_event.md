@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Checkbox Group control 
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("CheckboxGroup").events.on("BeforeShow", function(value) {
-    console.log("BeforeShow", value);
+form.getItem("CheckboxGroup").events.on("beforeShow", function(value) {
+    console.log("beforeShow", value);
     return true;
 });
 

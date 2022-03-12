@@ -16,10 +16,12 @@ description: You can explore the cellClick event of TreeGrid in the documentatio
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("CellClick", function(row,column,e){
+grid.events.on("cellClick", function(row,column,e){
      // your logic here
 });
 
 @descr:
 
 **Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
+
+You can use the event when you need to open the editor of a treegrid cell with a single click. Check the details in the [Opening editor with one click](../../../treegrid/configuration/#opening-editor-with-one-click) article.

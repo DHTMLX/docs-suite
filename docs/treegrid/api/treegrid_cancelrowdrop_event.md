@@ -15,7 +15,7 @@ description: You can explore the cancelRowDrop event of TreeGrid in the document
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("CancelRowDrop", function(data, events) {
+treegrid.events.on("cancelRowDrop", function(data, events) {
   // your logic here
 });
 

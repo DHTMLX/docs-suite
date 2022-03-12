@@ -14,7 +14,7 @@ description: You can explore the afterRowShow event of TreeGrid in the documenta
 `row: object` - an object with a row configuration
 
 @example:
-treegrid.events.on("AfterRowShow", function(row){
+treegrid.events.on("afterRowShow", function(row){
     // your logic here
 });
 

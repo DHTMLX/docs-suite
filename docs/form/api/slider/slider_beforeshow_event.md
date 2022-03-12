@@ -17,8 +17,8 @@ description: You can explore the beforeShow event of the Slider control of Form 
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("slider").events.on("BeforeShow", function(value) {
-    console.log("BeforeShow", value);
+form.getItem("slider").events.on("beforeShow", function(value) {
+    console.log("beforeShow", value);
     return true;
 });
 

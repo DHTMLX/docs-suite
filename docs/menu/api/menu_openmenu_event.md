@@ -14,7 +14,7 @@ description: You can explore the openMenu event of Menu in the documentation of 
 `id: string | number` - the ID of an opened menu item
 
 @example:
-menu.events.on("OpenMenu", function(id){
+menu.events.on("openMenu", function(id){
     // your code here
 });
 

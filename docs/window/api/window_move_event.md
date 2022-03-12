@@ -16,7 +16,7 @@ description: You can explore the move event of Window in the documentation of th
 - `side: object` - an object that specifies the direction of resizing
 
 @example:
-dhxWindow.events.on("Move", function(position, oldPosition, side) {
+dhxWindow.events.on("move", function(position, oldPosition, side) {
     console.log("The window is moved to " + position.left, position.top)
 });
 

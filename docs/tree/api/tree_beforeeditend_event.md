@@ -18,7 +18,7 @@ description: You can explore the beforeEditEnd event of Tree in the documentatio
 Return `false` to block closing of an editor; otherwise, `true`.
 
 @example:
-tree.events.on("BeforeEditEnd", function(value, id) {
+tree.events.on("beforeEditEnd", function(value, id) {
     // your logic here
     return false;
 });

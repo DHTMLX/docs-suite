@@ -14,7 +14,7 @@ This is an item that contains some text.
 
 ## Adding Title control
 
-A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection/index.md):
+A Title control can be added to a toolbar with the help of the **add()** method of [Tree Collection](tree_collection.md):
 
 ~~~js
 toolbar.data.add({
@@ -27,7 +27,7 @@ toolbar.data.add({
 
 You can provide [the following properties](toolbar/api/api_title_properties.md) in the configuration object of a Title control.
 
-## Showing/hiding title
+## Showing/hiding Title
 
 Title can be hidden and shown with the help of the [show()](toolbar/api/toolbar_show_method.md)/[hide()](toolbar/api/toolbar_hide_method.md)  methods. Pass the id of a Title control as a parameter.
 

@@ -22,19 +22,23 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 	<tbody>
         <tr>
 			<td><b>ArrowUp</b></td>
-			<td>to move focus to the previous item</td>
+			<td>moves focus to the previous item</td>
 		</tr>
         <tr>
 			<td><b>ArrowDown</b></td>
-			<td>to move focus to the next item</td>
+			<td>moves focus to the next item</td>
 		</tr>
         <tr>
 			<td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
-			<td>to add selection to a List item in focus</td>
+			<td>adds selection to a List item in focus</td>
+		</tr>
+		<tr>
+			<td><b>Enter</b></td>
+			<td>adds selection to a List item in focus, activates editor for the selected item (when the "editable" property is enabled)</td>
 		</tr>
         <tr>
 			<td><b>Ctrl+A</b></td>
-			<td>to select all items at once (when the "multiselection" property is enabled)</td>
+			<td>selects all items at once (when the "multiselection" property is enabled)</td>
 		</tr>
     </tbody>
 </table>
@@ -265,3 +269,19 @@ The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pa
 		</tr>
     </tbody>
 </table>
+
+## HTML content of List options
+
+By default, List displays HTML content if it is specified for its options.
+
+In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../list/api/list_htmlenable_config/) property to *false*. 
+
+~~~js
+const list = new dhx.List("list", {
+    htmlEnable: false, // disables render of HTML content
+    template: template,
+    data: data
+});
+~~~
+
+**Related sample**: [List. Disable HTML rendering](https://snippet.dhtmlx.com/tj0tn7fl)

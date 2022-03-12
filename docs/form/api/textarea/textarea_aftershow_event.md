@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Textarea control of Form
 `value: string` - the current value of the control
 
 @example:
-form.getItem("textarea").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("textarea").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

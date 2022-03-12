@@ -1,17 +1,17 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: JavaScript TreeGrid - Event Handling 
 description: You can explore the event handling of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
 You can attach event listeners with the **treegrid.events.on()** method:
 
 ~~~js
-treegrid.events.on("Scroll", function({top,left}){
+treegrid.events.on("scroll", function({top,left}){
     console.log("The treegrid is scrolled to "+top,left);
 });
 ~~~
@@ -25,7 +25,7 @@ treegrid.events.on("Scroll", function({top,left}){
 To detach events, use **treegrid.events.detach()**:
 
 ~~~js
-treegrid.events.on("Scroll", function({top,left}){
+treegrid.events.on("scroll", function({top,left}){
     console.log("The treegrid is scrolled to "+top,left);
 });
 

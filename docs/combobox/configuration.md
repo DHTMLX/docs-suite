@@ -168,6 +168,30 @@ var combobox = new dhx.Combobox("combo_container",{
 });
 ~~~
 
+## Editable combobox
+
+You may allow end users to add new items into the data collection from UI. 
+You just need to enable the functionality via setting the [newOptions](combobox/api/combobox_newoptions_config.md) property to *true*:
+
+~~~js
+const combobox = new dhx.Combobox("combobox", {
+    multiselection: true,
+  	newOptions: true  
+});
+~~~
+
+To add a new item into the list of options, the user needs to type a new value into the input field and either press "Enter" or click on the appeared *Create "newValue"* option in the drop-down list.
+
+![](../assets/combo/new_value.png)
+
+The combobox invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of DataCollection each time when the user enters a new value into the input field. You can use the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) event to prevent adding incorrect values into the list of options:
+
+~~~js
+// blocks the ability to add an item with value: "new" into the collection of combobox items
+combobox.data.events.on("beforeAdd", item => item.value !== "new");
+~~~
+
+
 ## Readonly mode
 
 ![](../assets/combo/readonly.png)
@@ -214,8 +238,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
 
-You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string 
-with a template for rendering options in the list.
+You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 
 ~~~js
 var combo = new dhx.Combobox("combo_container", {
@@ -226,3 +249,24 @@ var combo = new dhx.Combobox("combo_container", {
 	}
 });			
 ~~~
+
+## HTML content of Combobox options
+
+By default, Combobox displays HTML content if it is specified for its options.
+
+In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../combobox/api/combobox_htmlenable_config/) property to *false*. 
+
+~~~js
+const combo = new dhx.Combobox("combo_container", { 
+    htmlEnable: false, // disables rendering of HTML content
+    template: function (item) {
+        return "<div style='user-select:none; display: flex; justify-content: space-between;'>" +
+            "<span>" + item.value + "</span>" +
+            "<img style='height: 20px; width: 30px; border: 1px solid gray' src=" + item.src + "></img>" +
+            "</div>";
+    }
+});
+~~~
+
+**Related sample**: [Combobox. Disable HTML rendering](https://snippet.dhtmlx.com/e4dolhfs)
+

@@ -43,7 +43,7 @@ list.data.load('../common/library.json');
 layout.getCell("list").attach(list);
 ~~~
 
-**Related sample**: [Layout. Attach](https://snippet.dhtmlx.com/6wuxj6sh)
+**Related sample**: [Layout. Attach widget](https://snippet.dhtmlx.com/6wuxj6sh)
 
 {{note The Message, Popup, Window components can't be attached to the Layout cell because these components can't have the parent container due to their architecture principles.}}
 

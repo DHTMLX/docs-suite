@@ -16,7 +16,7 @@ description: You can explore the change event of TreeCollection in the documenta
 - `updatedItem: object` - the object of an updated item
 
 @example:
-component.data.events.on("Change", function(id,status,updatedItem){
+component.data.events.on("change", function(id,status,updatedItem){
 	console.log("An item is updated");
 });
 

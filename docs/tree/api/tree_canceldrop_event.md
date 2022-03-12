@@ -15,7 +15,7 @@ description: You can explore the cancelDrop event of Tree in the documentation o
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-tree.events.on("CancelDrop", function(data, events) {
+tree.events.on("cancelDrop", function(data, events) {
     // your logic here
 });
 

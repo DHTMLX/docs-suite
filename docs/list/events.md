@@ -1,10 +1,10 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: JavaScript List - Event Handling 
 description: You can explore the event handling of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
@@ -24,7 +24,7 @@ The user can add any user-defined handler to any of the available events. To do 
 </table>
 
 ~~~js
-list.events.on("Click", function(id, e){
+list.events.on("click", function(id, e){
     console.log("The item with the id "+ list.selection.getId(id) +" was clicked.");
 });
 ~~~
@@ -42,11 +42,11 @@ The names of the events are case-insensitive.
 There is a simple way of removing an event handler via the **list.events.detach()** method:
 
 ~~~js
-list.events.on("Click", function(id, e){
+list.events.on("click", function(id, e){
     console.log("The item with the id "+ list.selection.getId(id) +" was clicked.");
 });
 
-list.events.detach("Click");
+list.events.detach("click");
 ~~~
 
 ## Calling events

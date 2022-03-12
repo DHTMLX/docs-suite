@@ -17,8 +17,8 @@ description: You can explore the beforeValidate event of the Checkbox Group cont
 Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
-form.getItem("CheckboxGroup").events.on("BeforeValidate", function(value) {
-    console.log("BeforeValidate", value);
+form.getItem("CheckboxGroup").events.on("beforeValidate", function(value) {
+    console.log("beforeValidate", value);
     return true;
 });
 

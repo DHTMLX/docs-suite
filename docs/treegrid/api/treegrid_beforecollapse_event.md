@@ -17,7 +17,7 @@ description: You can explore the beforeCollapse event of TreeGrid in the documen
 Return `false` to block collapsing of a treegrid; otherwise, `true`.
 
 @example:
-treeGrid.events.on("BeforeCollapse", function(rowId) {
+treeGrid.events.on("beforeCollapse", function(rowId) {
     // your logic here
     return false;
 });

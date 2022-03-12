@@ -70,7 +70,7 @@ ribbon.disable(id);
 
 ## Adding an icon
 
-A button can have an [icon](ribbon/fa_icons.md#icons):
+A button can have an [icon](ribbon/customization.md#icons):
 
 ~~~js
 {

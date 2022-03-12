@@ -18,7 +18,7 @@ description: You can explore the beforeRowDrop event of TreeGrid in the document
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeRowDrop", function(data, events){
+treegrid.events.on("beforeRowDrop", function(data, events){
 	// your logic here
     return false;
 });

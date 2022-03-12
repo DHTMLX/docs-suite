@@ -16,10 +16,12 @@ description: You can explore the cellClick event of Grid in the documentation of
 - `e: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("CellClick", function(row,column,e){
+grid.events.on("cellClick", function(row,column,e){
      // your logic here
 });
 
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+
+You can use the event when you need to open the editor of a grid cell with a single click. Check the details in the [Opening editor with one click](../../../grid/configuration/#opening-editor-with-one-click) article.

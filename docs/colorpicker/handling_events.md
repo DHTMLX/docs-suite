@@ -1,17 +1,17 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: JavaScript Colorpicker - Event Handling 
 description: You can explore the event handling of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
 You can attach event listeners with the **colorpicker.events.on()** method:
 
 ~~~js
-colorpicker.events.on("ModeChange", function(view) {
+colorpicker.events.on("modeChange", function(view) {
    console.log("Selected mode: " + view); 
 });
 ~~~
@@ -25,11 +25,11 @@ colorpicker.events.on("ModeChange", function(view) {
 To detach events, use **colorpicker.events.detach()**:
 
 ~~~js
-colorpicker.events.on("ModeChange", function(view) {
+colorpicker.events.on("modeChange", function(view) {
    console.log("Selected mode: " + view); 
 });
 
-colorpicker.events.detach("ModeChange");
+colorpicker.events.detach("modeChange");
 ~~~
 
 ## Calling events

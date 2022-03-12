@@ -14,8 +14,8 @@ description: You can explore the afterShow event of the Colorpicker control of F
 `value: string` - the current value of the control
 
 @example:
-form.getItem("colorpicker").events.on("AfterShow", function(value) {
-    console.log("AfterShow", value);
+form.getItem("colorpicker").events.on("afterShow", function(value) {
+    console.log("afterShow", value);
 });
 
 @descr:

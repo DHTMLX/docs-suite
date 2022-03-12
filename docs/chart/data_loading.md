@@ -1,10 +1,10 @@
 ---
-sidebar_label: Data Loading
+sidebar_label: Data loading
 title: JavaScript Chart - Data Loading 
 description: You can explore the data loading of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Data Loading
+# Data loading
 
 There are two ways of loading data into dhtmlxChart:
 
@@ -18,7 +18,7 @@ First, you need to prepare a data set that will be loaded into Chart.
 dhtmlxChart expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
     { "month": "`02", "company A": 20, "company B": 52, "company C": 72},
     { "month": "`03", "company A": 5, "company B": 33, "company C": 90},
     { "month": "`04", "company A": 55, "company B": 30, "company C": 81},
@@ -34,21 +34,23 @@ var dataset = [
 
 Each object in the data set contains a number of *key:value* pairs for data titles and values.
 
+- **Pie, Pie3D and Donut charts**
+
 A data set for Pie, Pie3D and Donut charts differs a little bit. You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
 
 <table>
 	<tbody>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string,number</i>) the id of a series </td>
+			<td>(<i>string, number</i>) the id of a series </td>
 		</tr>
 		<tr>
-			<td><b>text</b></td>
-			<td>(<i>string</i>) the name of the data set property to map labels of data values to</td>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a pie/donut sector</td>
 		</tr>
         <tr>
-			<td><b>value</b></td>
-			<td>(<i>string</i>) the name of the data set property to map data values to </td>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the value of a pie/donut sector</td>
 		</tr>
         <tr>
 			<td><b>color</b></td>
@@ -59,7 +61,7 @@ A data set for Pie, Pie3D and Donut charts differs a little bit. You need to pro
 <br/>
 
 ~~~js
-var pie_dataset = [
+const pie_dataset = [
 	{ "id": "Jan", "value": 44.33, "color": "#394E79", "month": "Jan"},
 	{ "id": "Feb", "value": 22.12, "color": "#5E83BA", "month": "Feb"},
 	{ "id": "Mar", "value": 53.21, "color": "#C2D2E9", "month": "Mar"},
@@ -68,9 +70,93 @@ var pie_dataset = [
 ];
 ~~~
 
+- **Treemap chart**
+
+A data set for Treemap chart has also another structure and may include the following properties:
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>id</b></td>
+			<td>(<i>string, number</i>) the id of a tile or group</td>
+		</tr>
+		<tr>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a tile</td>
+		</tr>
+        <tr>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the value of a tile</td>
+		</tr>
+        <tr>
+			<td><b>parent</b></td>
+			<td>(<i>string</i>) the id of the group</td>
+		</tr>
+    </tbody>
+</table>
+<br/>
+
+For example:
+
+~~~js
+const treeMapData = [
+    { id: "2020", month: "2020" },
+    { id: "Jan", value: 144.33, month: "Jan", parent: "2020" },
+    { id: "Feb", value: 22.12, month: "Feb", parent: "2020" },
+    { id: "Mar", value: 53.21, month: "Mar", parent: "2020" },
+    // more data
+];
+~~~
+
+## Adding data on Chart initialization
+
+You can specify data you want to add into Chart on the initialization stage. Make use of the **data** configuration property, as in:
+
+~~~js
+const chart = new dhx.Chart("chart_container", {
+    type: "area",
+	scales: {
+        "bottom": {
+            text: "month"
+        },
+        "left": {
+            maxTicks: 10,
+            max: 100,
+            min: 0
+        }
+    },
+    series: [
+        {
+            id: "A",
+            value: "company A",
+            color: "#81C4E8",
+            strokeWidth: 3
+        },
+        {
+            id: "B",
+            value: "company B",
+            color: "#74A2E7",
+            strokeWidth: 3
+        },
+        {
+            id: "C",
+            value: "company C",
+            color: "#5E83BA",
+            strokeWidth: 3
+        }
+    ],
+    legend: {
+        series: ["A", "B", "C"],
+        halign: "right",
+        valign: "top"
+    },
+    data: dataset
+});
+~~~
+
 ## External data loading
 
-To load data from an external file, make use of the **load()** method of [DataCollection](data_collection/index.md). It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 var chart = new dhx.Chart("chart_container");
@@ -91,7 +177,7 @@ chart.data.load("/some/data").then(function(){
 
 ## Loading from local source
 
-To load data from a local data source, use the **parse()** method of [DataCollection](data_collection/index.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 var chart = new dhx.Chart("chart_container");
@@ -102,7 +188,7 @@ chart.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a chart, use the **serialize()** method of [DataCollection](data_collection/index.md). It converts the data of a chart into an array of JSON objects. 
+To save the current state of a chart, use the **serialize()** method of [DataCollection](data_collection.md). It converts the data of a chart into an array of JSON objects. 
 Each JSON object contains a set of *key:value* pairs for data titles and values.
 
 ~~~js

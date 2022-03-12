@@ -18,7 +18,7 @@ description: You can explore the beforeDrag event of List in the documentation o
 Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
-list.events.on("BeforeDrag", function(data, events) {
+list.events.on("beforeDrag", function(data, events) {
     // your logic here
     return false;
 });

@@ -15,7 +15,7 @@ description: You can explore the afterEditEnd event of Tree in the documentation
 - `id: string | number` - the id of an item
 
 @example:
-tree.events.on("AfterEditEnd", function(value, id) {
+tree.events.on("afterEditEnd", function(value, id) {
     // your logic here
 });
 

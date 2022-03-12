@@ -15,7 +15,7 @@ description: You can explore the click event of List in the documentation of the
 - `events: Event` - a native event object
 
 @example:
-list.events.on("Click", function(id, e){
+list.events.on("click", function(id, e){
     console.log("The item with the id "+ list.selection.getId(id) +" was clicked.");
 });
 

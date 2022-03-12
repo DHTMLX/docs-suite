@@ -18,7 +18,7 @@ description: You can explore the beforeColumnDrop event of TreeGrid in the docum
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-treegrid.events.on("BeforeColumnDrop", function(data, events){
+treegrid.events.on("beforeColumnDrop", function(data, events){
 	// your logic here
     return false;
 });

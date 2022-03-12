@@ -19,7 +19,7 @@ description: You can explore the beforeDrag event of DataView in the documentati
 Return `false` to block dragging of an item; otherwise, `true`.
 
 @example:
-dataview.events.on("BeforeDrag", function(data, events) {
+dataview.events.on("beforeDrag", function(data, events) {
     // your logic here
     return false;
 });

@@ -15,7 +15,7 @@ description: You can explore the dragRowStart event of Grid in the documentation
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("DragRowStart", function(data, events) {
+grid.events.on("dragRowStart", function(data, events) {
   // your logic here
 });
 

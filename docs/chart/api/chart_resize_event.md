@@ -14,7 +14,7 @@ description: You can explore the resize event of Chart in the documentation of t
 `size: object` - an object with new chart size
 
 @example:
-chart.events.on("Resize", function({width:500, height:500}){
+chart.events.on("resize", function({width:500, height:500}){
     console.log("The size of the chart has changed");
 });
 

@@ -14,7 +14,7 @@ description: You can explore the openMenu event of Toolbar in the documentation 
 `id: string | number` - the ID of an opened menu item
 
 @example:
-toolbar.events.on("OpenMenu", function(id){
+toolbar.events.on("openMenu", function(id){
     // your code here
 });
 @examplestop:

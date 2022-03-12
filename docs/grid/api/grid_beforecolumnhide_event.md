@@ -17,7 +17,7 @@ description: You can explore the beforeColumnHide event of Grid in the documenta
 Return `false` to prevent a column from being hidden; otherwise, `true`.
 
 @example:
-grid.events.on("BeforeColumnHide", function(column){
+grid.events.on("beforeColumnHide", function(column){
     // your logic here
     return false;
 });

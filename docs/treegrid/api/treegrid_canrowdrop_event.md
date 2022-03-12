@@ -15,7 +15,7 @@ description: You can explore the canRowDrop event of TreeGrid in the documentati
 - `events: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("CanRowDrop", function(data, events) {
+treegrid.events.on("canRowDrop", function(data, events) {
   // your logic here
 });
 

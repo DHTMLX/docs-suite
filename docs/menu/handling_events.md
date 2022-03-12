@@ -1,10 +1,10 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: JavaScript Menu - Event Handling 
 description: You can explore the event handling of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
@@ -25,7 +25,7 @@ You can add any handler to the events of Menu. To do this, use the **menu.events
 <br/>
 
 ~~~js
-menu.events.on("Click", function(id,e){
+menu.events.on("click", function(id,e){
     console.log(id);
 });
 ~~~
@@ -41,11 +41,11 @@ Several handlers can be attached to one and the same event, and all of them will
 There is a simple way of removing an event handler with the **menu.events.detach()** method:
 
 ~~~js
-menu.events.on("Click", function(id, e){
+menu.events.on("click", function(id, e){
     console.log(id);
 });
 
-menu.events.detach("Click"); 
+menu.events.detach("click"); 
 ~~~
 
 ## Calling events

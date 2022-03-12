@@ -1,17 +1,17 @@
 ---
-sidebar_label: Event Handling
+sidebar_label: Event handling
 title: JavaScript Calendar - Event Handling 
 description: You can explore the event handling of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Event Handling
+# Event handling
 
 ## Attaching event listeners
 
 You can attach event listeners with the **calendar.events.on()** method of the *events* module:
 
 ~~~js
-calendar.events.on("Change",function(date, oldDate, byClick){
+calendar.events.on("change",function(date, oldDate, byClick){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });
@@ -25,7 +25,7 @@ For example, Calendar can be attached to an input that will display the date sel
 
 ~~~js
 var calendar = new dhx.Calendar("calendar_container");
-calendar.events.on("Change",(date)=>{ 
+calendar.events.on("change",(date)=>{ 
     document.getElementById("date").value = date.getFullYear() +
         "-" + (date.getMonth() + 1) + "-" +date.getDate();
 });
@@ -42,11 +42,11 @@ Several handlers can be attached to one event, and all of them will be executed.
 To detach an event listener, use **calendar.events.detach()**:
 
 ~~~js
-calendar.events.on("Change",function(date, oldDate, byClick){
+calendar.events.on("change",function(date, oldDate, byClick){
     console.log("Change selection from "+oldDate+" to "+date);
     console.log(click);
 });
-calendar.events.detach("Change");
+calendar.events.detach("change");
 ~~~
 
 ## Calling events

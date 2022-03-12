@@ -18,7 +18,7 @@ description: You can explore the beforeHide event of Toolbar in the documentatio
 Return `false` to prevent hiding of a toolbar item; otherwise, `true`.
 
 @example:
-toolbar.events.on("BeforeHide", function(id, event){
+toolbar.events.on("beforeHide", function(id, event){
     // your code here
     return false;
 });

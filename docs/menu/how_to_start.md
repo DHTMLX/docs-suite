@@ -126,4 +126,4 @@ menu.data.parse(data);
 
 **Related sample**: [Menu. Basic Menu Initialization](https://snippet.dhtmlx.com/cg62qa9v)
 
-Detailed information on loading data into Menu is given in the article [](menu/from_script.md).
+Detailed information on loading data into Menu is given in the article [](menu/data_loading.md).

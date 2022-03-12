@@ -14,8 +14,8 @@ description: You can explore the change event of the Text control of Form in the
 `value: string | number` - the current value of the control
 
 @example:
-form.getItem("text").events.on("Change", function(value) {
-    console.log("Change", value);
+form.getItem("text").events.on("change", function(value) {
+    console.log("change", value);
 });
 
 @descr:
