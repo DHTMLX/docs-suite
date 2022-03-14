@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.1
+-----------------
+
+Released on ...
+
+### Fixes
+
+- Data. Fix the issue with serialization of data into CSV format which caused the incorrect structure of the output data if the initial data set contained a comma (",") in a value
+- Form. Fix the incorrect work of the `destruct()` method when calling it from the `change` event
+- Grid. Fix the issue with applying the `adjust` property of Grid after the data reloading
+- Grid. Fix the script error thrown after removing all selected options from the "multiselect" editor of a cell
+- Grid. Pagination. Fix the issue which caused pagination not to work when using lazy loading of Grid data
+- List. Pagination. Fix the issue which caused pagination not to work when using lazy loading of List data
+
 Version 7.3
 -----------------
 Released on January 19, 2022

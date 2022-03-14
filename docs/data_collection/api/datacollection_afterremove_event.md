@@ -6,7 +6,7 @@ description: You can explore the afterRemove event of DataCollection in the docu
 
 # afterRemove
 
-@short: fires after removing a new item from a data collection
+@short: Fires after removing an item from a data collection
 
 @signature: {'afterRemove: (removedItem: any) => void;'}
 
