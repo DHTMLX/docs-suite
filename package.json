@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "node --max_old_space_size=16000 node_modules/@docusaurus/core/bin/docusaurus start",
-    "build": "node --max_old_space_size=16000 node_modules/@docusaurus/core/bin/docusaurus build",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -13,8 +13,8 @@
     "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.0.0-beta.14",
-    "@docusaurus/preset-classic": "^2.0.0-beta.14",
+    "@docusaurus/core": "^2.0.0-beta.16",
+    "@docusaurus/preset-classic": "^2.0.0-beta.16",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
