@@ -12,9 +12,12 @@ description: You can explore the groupTitleTemplate config of TreeGrid in the do
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
-    groupTitleTemplate: function(groupName, groupItems){ /*!*/
-        return groupName + "count:" + groupItems.length /*!*/
+    columns: [
+        // columns config
+    ],
+    
+    groupTitleTemplate: function(groupName, groupItems){
+        return groupName + "count:" + groupItems.length
     }
 });
 

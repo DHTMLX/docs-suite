@@ -42,7 +42,7 @@ var state = form.getItem("checkbox").getValue(); // -> true/false
 
 - If the **value** property is defined, the method returns a string value. In addition, if the **checked** option is set to *true*, the method returns the value of a control, otherwise - returns an empty string (""):
 
-~~~js
+~~~js {8-9}
 var form = new dhx.Form("form_container", {
     rows: [
         {   
@@ -50,8 +50,8 @@ var form = new dhx.Form("form_container", {
             label: "I agree",
             name: "agree",
             id: "agree",
-            checked: false, /*!*/
-            value: "checkbox_value" /*!*/
+            checked: false,
+            value: "checkbox_value"
         }
     ]
 });

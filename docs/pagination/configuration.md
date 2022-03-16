@@ -15,7 +15,7 @@ By default, the input of a pagination takes the auto-width that fits its maximum
 ~~~js
 const pagination = new dhx.Pagination("pagination_container", {
     css: "dhx_widget--bordered",
-    inputWidth: 220 /*!*/
+    inputWidth: 220
 });
 ~~~
 
@@ -28,7 +28,7 @@ It is possible to specify any page of the pagination as initial page by setting 
 ~~~js
 const pagination = new dhx.Pagination("pagination_container", {
     css: "dhx_widget--bordered",
-    page: 4  // sets the fifth page as initial one /*!*/
+    page: 4  // sets the fifth page as initial one
 });
 ~~~
 
@@ -42,6 +42,6 @@ You can define the number of items that should be displayed per page of the rela
 
 ~~~js
 const pagination = new dhx.Pagination("pagination_container", {
-    pageSize: 9 /*!*/
+    pageSize: 9
 });
 ~~~

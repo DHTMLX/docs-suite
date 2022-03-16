@@ -21,19 +21,19 @@ var layout = dhx.Layout("layout_container", {
 					id: "1.1",
 					css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
 					html: "1.1",
-                    gravity: 2 /*!*/
+                    gravity: 2
 				},
 				{
 					id: "1.2",
 					css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
 					html: "1.2",
-                    gravity: 1 /*!*/
+                    gravity: 1 
 				},
 				{
 					id: "1.3",
 					css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
 					html: "1.3",
-                    gravity: 3 /*!*/
+                    gravity: 3
 				}
 			]
 		}

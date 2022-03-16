@@ -14,7 +14,8 @@ description: You can explore the rows Config of Form in the documentation of the
 var form = new dhx.Form("form", {
     css: "dhx_widget--bordered dhx_layout-cell--bordered",
     height: "300px",
-    rows: [ /*!*/
+    // rows
+    rows: [
         {
             type: "input",
             label: "Name",

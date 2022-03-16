@@ -157,12 +157,12 @@ As you can see from the code example above, the width of the cell occupies 50% o
 
 Starting with v7.0, you can configure a cell so that its width/ height would automatically adjust to the width/ height of the cell content. For this purpose, you need to set the [width](layout/api/cell/layout_cell_width_config.md)/ [height](layout/api/cell/layout_cell_height_config.md) options to *"content"*:
 
-~~~js
+~~~js {5}
 var layout = new dhx.Layout("layout_container", {
     cols: [
         { 
             header: "Cell header", 
-            width: "content" /*!*/
+            width: "content"
         },
         // more options
     ]
@@ -206,9 +206,9 @@ var layout = new dhx.Layout("layout_container", {
 
 By default, there is no space and borders between cells inside a layout and the cells look like they are merged. Starting from v7.0, it is possible to split the cells by adding borders or space between them via the [](layout/api/cell/layout_cell_type_config.md) configuration property of a Layout cell:
 
-~~~js
+~~~js {2}
 const layout = new dhx.Layout("layout", {
-    type: "space", /*!*/
+    type: "space",
     cols: [
         {
             html: "1"

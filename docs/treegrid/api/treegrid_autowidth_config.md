@@ -14,8 +14,10 @@ description: You can explore the autoWidth config of TreeGrid in the documentati
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
-    autoWidth:true, /*!*/
+    columns: [
+        // columns config
+    ],
+    autoWidth:true,
     data: dataset
 });
 

@@ -12,12 +12,17 @@ description: You can explore the dragCopy config of Grid in the documentation of
 
 @example:
 var source = new dhx.Grid("grid-source", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     dragMode: "source", 
     dragCopy: true
 });
+
 var target = new dhx.Grid("grid-target", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     dragMode: "target", 
     dragCopy: true
 });

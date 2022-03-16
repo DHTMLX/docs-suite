@@ -14,9 +14,11 @@ description: You can explore the tooltip config of TreeGrid in the documentation
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid", {
-	columns: [//columns config],
+	columns: [
+		// columns config
+	],
 	data: dataset,
-	tooltip: false /*!*/
+	tooltip: false
 });
 
 @descr:

@@ -15,9 +15,9 @@ These controls are helpful if you attach TimePicker to an input or a calendar, f
 
 There's the [](timepicker/api/timepicker_controls_config.md) property in the timepicker configuration that while set to *true* enables rendering of the Save button and the Close icon button in the top right corner of the component.
 
-~~~js
+~~~js {2}
 var timepicker = new dhx.Timepicker("timepicker_container",{
-	controls:true /*!*/
+	controls:true
 });
 ~~~
 
@@ -40,9 +40,9 @@ var timepicker = new dhx.Timepicker("timepicker_container1");
 
 ![12-hour clock](../assets/timepicker/amdm_true.png)
 
-~~~js
+~~~js {2}
 var timepicker2 = new dhx.Timepicker("timepicker_container2",{
-	timeFormat:12 /*!*/
+	timeFormat:12
 });
 ~~~
 

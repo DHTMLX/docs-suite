@@ -14,9 +14,11 @@ description: You can explore the tooltip config of Grid in the documentation of 
 
 @example:
 var grid = new dhx.Grid("grid", {
-	columns: [//columns config],
+	columns: [
+		// columns config
+	],
 	data: dataset,
-	tooltip: false /*!*/
+	tooltip: false
 });
 
 @descr:

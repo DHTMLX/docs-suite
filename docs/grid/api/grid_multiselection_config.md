@@ -12,8 +12,10 @@ description: You can explore the multiselection config of Grid in the documentat
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
-    multiselection:true, /*!*/
+    columns: [
+        // columns config
+    ],
+    multiselection:true,
     selection:"row",
     data: dataset
 });

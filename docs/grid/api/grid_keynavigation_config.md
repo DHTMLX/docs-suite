@@ -14,11 +14,13 @@ description: You can explore the keyNavigation config of Grid in the documentati
 
 @example:
 var grid = new dhx.Grid("grid", {
-	columns: [// columns config],
+	columns: [
+		// columns config
+	],
 	data: dataset,
 	selection: "complex", 
     editing: true, 
-	keyNavigation: true /*!*/
+	keyNavigation: true
 });
 
 @descr:

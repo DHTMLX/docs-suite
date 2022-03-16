@@ -156,7 +156,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
         { tab: "east", css:"panel flex", header:"East"},
         { tab: "right", css:"panel flex", header:"Right" }
     ],
-    tabAlign: "center" /*!*/
+    tabAlign: "center"
 });
 ~~~
 

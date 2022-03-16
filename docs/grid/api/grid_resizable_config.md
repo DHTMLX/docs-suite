@@ -12,9 +12,11 @@ description: You can explore the resizable config of Grid in the documentation o
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     data: dataset,
-    resizable: true /*!*/
+    resizable: true
 });
 
 @descr:

@@ -74,15 +74,15 @@ var combo = new dhx.Combobox("combo_container",{
 
 Starting from v7.0, it is possible to define the values that will appear in the input on initialization of the component via the [](combobox/api/combobox_value_config.md) property:
 
-~~~js
+~~~js {3,8}
 var combobox = new dhx.Combobox("combobox", {
     multiselection: true,
-    value: ["austria", "estonia"] /*!*/
+    value: ["austria", "estonia"]
 });
 
 // or
 var combobox = new dhx.Combobox("combobox", {
-    value: "austria" /*!*/
+    value: "austria"
 });
 ~~~
 

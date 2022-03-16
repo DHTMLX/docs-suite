@@ -120,16 +120,16 @@ As you can see, we've created the TopLayout class that is inherited from the Vie
 
 4\. Then, to render the just created view, we've included the view into the *index.js* file and rendered it via the **show()** method:
 
-~~~js title="src/index.js"
+~~~js title="src/index.js" {4,7-9}
 import "./assets/css/index.css";
 
 import { App } from "dhx-optimus";
-import { TopLayout } from "./views/TopLayout"; /*!*/
+import { TopLayout } from "./views/TopLayout"; 
 
 export class MyApp extends App {
-	init() { /*!*/
-		this.show(null, TopLayout); /*!*/
-	} /*!*/
+	init() { 
+		this.show(null, TopLayout); 
+	} 
 }
 ~~~
 

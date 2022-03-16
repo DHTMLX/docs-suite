@@ -85,10 +85,10 @@ toolbar.disable(id);
 
 You can add a tooltip to a menuItem:
 
-~~~js
+~~~js {4}
 {
     type:"menuItem", 
     value:"Click", 
-    tooltip:"Click me and find out why"  /*!*/
+    tooltip:"Click me and find out why"
 }
 ~~~

@@ -14,8 +14,10 @@ description: You can explore the selection config of TreeGrid in the documentati
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
-	selection:"complex",  /*!*/
+	columns: [
+		// columns config
+	],
+	selection:"complex",
 	data: dataset
 });
 

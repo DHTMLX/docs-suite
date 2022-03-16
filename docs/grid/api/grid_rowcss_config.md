@@ -18,8 +18,10 @@ description: You can explore the rowCss config of Grid in the documentation of t
 </style>
 
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
-	rowCss: function (row) { return row.custom ? "my_custom_row" : "" }, /*!*/
+	columns: [
+		// columns config
+	],
+	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
 	data: dataset
 });
 

@@ -105,19 +105,19 @@ var list = new dhx.List("list_container", {editable:true});
 
 You can specify the necessary height of an item and set it before initialization of List via the [itemHeight](list/api/list_itemheight_config.md) property either as a number:
 
-~~~js
+~~~js {3}
 // sets the height of an item as a number
 var list = new dhx.List("list_container", { 
-    itemHeight:30 /*!*/
+    itemHeight:30 
 });
 ~~~
 
 or as a string value
 
-~~~js
+~~~js {3}
 // sets the height of an item as a string value
 var list = new dhx.List("list_container", { 
-    itemHeight:"30px" /*!*/
+    itemHeight:"30px"
 });
 ~~~
 
@@ -216,7 +216,7 @@ var list = new dhx.List("list", {
 
 Starting from v7.0, it is possible to assign event handlers to HTML elements of a custom template of List items by using the [](list/api/list_eventhandlers_config.md) configuration option:
 
-~~~js
+~~~js {1-13,18-29}
 function template(item) {
 	let template = "<div class='list_item'>";
 	template += "<div class='item_name'>"+item.value;
@@ -234,18 +234,18 @@ function template(item) {
 const list = new dhx.List("list", {
 	css: "dhx_widget--bordered",
 	template: template,
-	eventHandlers: { /*!*/
-		onclick: { /*!*/
-			list_item: function(event) { /*!*/
-				display("You clicked on " + event.target.tagName); /*!*/
-			}, /*!*/
-		}, /*!*/
-		onmouseover: { /*!*/
-			list_item: function(event, id) { /*!*/
-				display(list.data.getItem(id).value); /*!*/
-			}, /*!*/
-		} /*!*/
-	} /*!*/
+	eventHandlers: { 
+		onclick: {
+			list_item: function(event) {
+				display("You clicked on " + event.target.tagName);
+			}, 
+		},
+		onmouseover: {
+			list_item: function(event, id) { 
+				display(list.data.getItem(id).value);
+			}, 
+		} 
+	} 
 });
 ~~~
 
