@@ -67,7 +67,7 @@ The **config** parameter may contain one property:
     </tbody>
 </table>	
 
-~~~js
+~~~js {8}
 grid.data.sort({
     by:"a",
     dir:"desc",
@@ -75,7 +75,7 @@ grid.data.sort({
         return item.toUpperCase(); 
     },
 	{
-		smartSorting: true /*!*/
+		smartSorting: true
 	}
 });
 ~~~

@@ -12,7 +12,6 @@ description: You can explore the eventHandlers config of TreeGrid in the documen
 
 @example:
 
-// adds event handler to the HTML element of the template of a cell
 const treeGrid = new dhx.TreeGrid("treegrid", {
 	columns: [
 		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
@@ -20,20 +19,22 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 			width: 160, id: "price", type: "string", 
           	header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
 			htmlEnable: true,
-			template: function (text, row, col) { /*!*/
-				return text ? "<div class='cell__template'>$ " + text + "</div>" : ""; /*!*/
-			} /*!*/
+			// define the template
+			template: function (text, row, col) {
+				return text ? "<div class='cell__template'>$ " + text + "</div>" : "";
+			}
 		},
 		// more options
 	],
 	data: data,
-	eventHandlers: { /*!*/
-		onmouseover: { /*!*/
-			cell__template: function(event, data) { /*!*/
-				display(JSON.stringify(data.row, null, 2)); /*!*/
-			} /*!*/
-		} /*!*/
-	} /*!*/
+	// adds event handler to the HTML element of the template of a cell
+	eventHandlers: {
+		onmouseover: {
+			cell__template: function(event, data) {
+				display(JSON.stringify(data.row, null, 2));
+			} 
+		} 
+	}
 });
 
 @descr:
@@ -63,14 +64,14 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 An example of adding event handlers to the HTML elements defined in the data set of TreeGrid is given below:
 
-~~~js
+~~~js {7,23-29}
 const data = [
 	{
 		"name": "A Time to Kill",
 		"price": "12.25",
 		"cover": "Hardcover",
 		"ships": "12 hours",
-		"inStock": "<div class='cell__html'><input type='checkbox' checked />80</div>", /*!*/
+		"inStock": "<div class='cell__html'><input type='checkbox' checked />80</div>", 
 		"parent": "c.1"
 	},
     // more options
@@ -86,13 +87,13 @@ const grid = new dhx.Grid("grid", {
         // more options
     ],
 	data: data,
-    eventHandlers: { /*!*/
-		onmouseover: { /*!*/
-			cell__html: function(event, data) { /*!*/
-				display(JSON.stringify(data.col, null, 2)); /*!*/
-			} /*!*/
-		} /*!*/
-	} /*!*/
+    eventHandlers: {
+		onmouseover: {
+			cell__html: function(event, data) {
+				display(JSON.stringify(data.col, null, 2)); 
+			} 
+		} 
+	} 
 });
 ~~~
 

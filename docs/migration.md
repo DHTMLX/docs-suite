@@ -372,7 +372,7 @@ The `toggle` event is deprecated. Use new `beforeCollapse`, `afterCollapse`, `be
 
 The `isFolder` property is deprecated. Instead of it, you can set the `icon` property in the configuration object of a tree item to add custom icons for tree items.
 
-~~~js
+~~~js {11-15}
 var tree = new dhx.Tree("tree", {
     data:[
         {
@@ -383,7 +383,7 @@ var tree = new dhx.Tree("tree", {
                 {
                     "value": "Lawrence Block",
                     "id": "Lawrence Block",
-                    "icon": { /*!*/
+                    "icon": {
                         "folder": "fas fa-book", 
                         "openFolder": "fas fa-book-open", 
                         "file": "fas fa-file" 

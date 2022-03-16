@@ -88,11 +88,11 @@ toolbar.disable(id);
 
 You can add a tooltip to a button:
 
-~~~js
+~~~js {4}
 {
     type:"button", 
     value:"Click", 
-    tooltip:"Click me and find out why"  /*!*/
+    tooltip:"Click me and find out why"
 }
 ~~~
 

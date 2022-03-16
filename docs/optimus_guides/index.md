@@ -118,16 +118,16 @@ As you can see, we've created the TopLayout class that is inherited from the Vie
 
 4\. Then, to render the just created view, we've included the view into the *index.js* file and rendered it via the **show()** method:
 
-~~~js title="src/index.js"
+~~~js title="src/index.js" {4,7-9}
 import "./assets/css/index.css";
 
 import { App } from "dhx-optimus";
-import { TopLayout } from "./views/TopLayout"; /*!*/
+import { TopLayout } from "./views/TopLayout";
 
 export class MyApp extends App {
-	init() { /*!*/
-		this.show(null, TopLayout); /*!*/
-	} /*!*/
+	init() {
+		this.show(null, TopLayout); 
+	}
 }
 ~~~
 
@@ -359,7 +359,7 @@ Let's consider an example. We want to display different content in the View, bas
 
 To subscribe to the global **viewChange** event, we'll apply the *this.on()* method:
 
-~~~js
+~~~js {24-26}
 import { View } from "dhx-optimus";
 
 import { ToolbarView } from "./ToolbarView";
@@ -383,9 +383,9 @@ export class TopLayout extends View {
 	}
 
 	ready() {
-		this.on("viewChange", id => { /*!*/
-			this.show(this.layout.getCell("content"), EmptyView, { content: id }); /*!*/
-		}); /*!*/
+		this.on("viewChange", id => {
+			this.show(this.layout.getCell("content"), EmptyView, { content: id });
+		});
 	}
 }
 ~~~
@@ -394,7 +394,7 @@ The event will change the views via the *this.show()* method.
 
 To call the **viewChange** event, we'll use the *this.fire()* API:
 
-~~~js
+~~~js {35}
 import { View } from "dhx-optimus";
 
 export class ToolbarView extends View {
@@ -429,7 +429,7 @@ export class ToolbarView extends View {
 
 	ready() {
 		this.toolbar.events.on("click", id => {
-			this.fire("viewChange", [id]); /*!*/
+			this.fire("viewChange", [id]);
 		});
 	}
 }
@@ -733,7 +733,7 @@ Let's consider 3 methods of rendering a View via the **show()** method, one of w
 
 1\. It is possible to render views with the help of the **show()** method:
 
-~~~js
+~~~js {20-21}
 import { View } from "dhx-optimus";
 
 import { ToolbarView } from "./ToolbarView";
@@ -753,8 +753,8 @@ export class TopLayout extends View {
 			]
 		});
 
-		this.show(this.layout.getCell("toolbar"), ToolbarView); /*!*/
-		this.show(this.layout.getCell("content"), EmptyView); /*!*/
+		this.show(this.layout.getCell("toolbar"), ToolbarView);
+		this.show(this.layout.getCell("content"), EmptyView);
 
 		return this.layout;
 	}

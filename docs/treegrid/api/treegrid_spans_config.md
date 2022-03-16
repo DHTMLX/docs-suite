@@ -12,7 +12,9 @@ description: You can explore the spans config of TreeGrid in the documentation o
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
+	columns: [
+		// columns config
+	],
 	spans: [
 		{row:"0", column:"a", rowspan:5 },
 		{row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},

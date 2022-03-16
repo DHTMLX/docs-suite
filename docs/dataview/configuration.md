@@ -118,19 +118,19 @@ var dataview = new dhx.DataView("dataview_container", {editable:true});
 
 You can specify the necessary height of a Dataview item and set it before initialization of Dataview via the [itemHeight](dataview/api/dataview_itemheight_config.md) property either as a number:
 
-~~~js
+~~~js {3}
 // sets the height of an item as a number
 var dataview = new dhx.DataView("dataview", { 
-    itemHeight:34 /*!*/
+    itemHeight:34
 });
 ~~~
 
 or as a string value
 
-~~~js
+~~~js {3}
 // sets the height of an item as a string value
 var dataview = new dhx.DataView("dataview", { 
-    itemHeight:"34px" /*!*/
+    itemHeight:"34px"
 });
 ~~~
 
@@ -244,7 +244,7 @@ var dataview = new dhx.DataView("dataview", {
 
 Starting from v7.0, it is possible to assign event handlers to the HTML elements of a custom template of DataView items by using the [](dataview/api/dataview_eventhandlers_config.md) configuration option:
 
-~~~js
+~~~js {12-23}
 function template(item) {
 	let template = "<div class='item_wrap'>";
 	template += "<img class='image' src=" + "../images/" + item.thumbnailName + " />";
@@ -256,18 +256,18 @@ function template(item) {
 
 var dataview = new dhx.DataView("dataview", {
 	template: template,
-	eventHandlers: { /*!*/
-		onclick: { /*!*/
-			item_wrap: function(event, id) { /*!*/
-				display("You clicked on " + event.target.tagName); /*!*/
-			}, /*!*/
-		}, /*!*/
-		onmouseover: { /*!*/
-			item_wrap: function(event, id) { /*!*/
-				display(dataview.data.getItem(id).short); /*!*/
-			}, /*!*/
-		} /*!*/
-	} /*!*/
+	eventHandlers: {
+		onclick: {
+			item_wrap: function(event, id) {
+				display("You clicked on " + event.target.tagName);
+			},
+		},
+		onmouseover: {
+			item_wrap: function(event, id) {
+				display(dataview.data.getItem(id).short);
+			},
+		}
+	}
 });
 ~~~
 

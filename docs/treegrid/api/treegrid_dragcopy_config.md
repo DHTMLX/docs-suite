@@ -11,8 +11,15 @@ description: You can explore the dragCopy config of TreeGrid in the documentatio
 @signature: {'dragCopy?: boolean;'}
 
 @example:
-var source = new dhx.TreeGrid("treegrid-source", {dragMode: "source", dragCopy: true});
-var target = new dhx.TreeGrid("treegrid-target", {dragMode: "target", dragCopy: true});
+var source = new dhx.TreeGrid("treegrid-source", {
+    dragMode: "source", 
+    dragCopy: true
+});
+
+var target = new dhx.TreeGrid("treegrid-target", {
+    dragMode: "target", 
+    dragCopy: true
+});
 
 @descr:
 

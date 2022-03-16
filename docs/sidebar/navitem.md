@@ -84,10 +84,10 @@ sidebar.disable(id);
 
 You can add a tooltip to a navItem:
 
-~~~js
+~~~js {4}
 {
     type:"navItem", 
     value:"Click", 
-    tooltip:"Click me and find out why"  /*!*/
+    tooltip:"Click me and find out why"
 }
 ~~~
