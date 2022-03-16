@@ -12,9 +12,11 @@ description: You can explore the htmlEnable config of TreeGrid in the documentat
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     data: dataset,
-    htmlEnable: true /*!*/
+    htmlEnable: true
 });
 
 @descr:

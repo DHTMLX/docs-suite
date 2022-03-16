@@ -14,8 +14,10 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
-	autoHeight: true,  /*!*/
+	columns: [
+		// columns config
+	],
+	autoHeight: true,
 	data: dataset
 });
 

@@ -12,9 +12,11 @@ description: You can explore the resizable config of TreeGrid in the documentati
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     data: dataset,
-    resizable: true /*!*/
+    resizable: true
 }
 
 @descr:

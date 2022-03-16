@@ -58,12 +58,12 @@ var form = new dhx.Form("form", {
 
 You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md) options in the configuration object of the component:
 
-~~~js
+~~~js {3,5}
 var form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
-    cols: [{ /*!*/
+    cols: [{
 		padding: "20px",
-		rows: [ /*!*/
+		rows: [
 			{
             	type: "input",
             	label: "title",

@@ -16,21 +16,21 @@ The icons can be placed on the page in the ways given below:
 
 Use the name of the icon as a value of the **icon** property in the object with parameters of a control.
 
-~~~js
+~~~js {4}
 {
  	type:"button",
     id: "add",
-    icon: "dxi dxi-plus", /*!*/
+    icon: "dxi dxi-plus",
     value: "Add"
 }
 ~~~
 
 - through the **template** configuration property of the component
 
-~~~js
+~~~js {3}
 var list = new dhx.List("list", {
 	css: "dhx_widget--bordered",  
-    template: (item) => "<i class=’dxi dxi-icon-’ + item.icon></i>"  /*!*/
+    template: (item) => "<i class=’dxi dxi-icon-’ + item.icon></i>"
 }); 
 ~~~
 
@@ -38,12 +38,12 @@ var list = new dhx.List("list", {
 
 Pass an HTML element with an icon class as a parameter.
 
-~~~js
+~~~js {5}
 var popup = new dhx.Popup({
 	css: "dhx_widget--border-shadow"
 });
  
-popup.attachHTML("<i class=’dxi dxi-icon-name’></i>"); /*!*/
+popup.attachHTML("<i class=’dxi dxi-icon-name’></i>");
 ~~~
 
 - by adding an HTML element with an icon class in any place of your app
@@ -58,10 +58,10 @@ You can use any inline HTML elements like &lt;i&gt; or &lt;span&gt;.
 
 - via the **HTML** configuration property of the component
 
-~~~js
+~~~js {3}
 {
   	id: "sidebar",
-  	html: "<i class=’dxi dxi-icon-name’></i>", /*!*/
+  	html: "<i class=’dxi dxi-icon-name’></i>",
   	gravity: false,
   	css: "dhx_layout-cell--border_right",
   	width: "200px"

@@ -14,8 +14,10 @@ description: You can explore the adjust config of Grid in the documentation of t
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
-    adjust: true, /*!*/ 
+    columns: [
+		// columns config
+	],
+    adjust: true,
     data: dataset
 });
 

@@ -51,14 +51,14 @@ var slider = new dhx.Slider("slider_container", {
 Besides the standard slider with one thumb, you can create a slider with two thumbs, that is a range slider. For this, you need to use the [range:true](slider/api/slider_range_config.md) option in the slider configuration object and
 define an array with the min and max values for the range:
 
-~~~js
+~~~js {6,7}
 var slider = new dhx.Slider("slider", {
     min: 0,
     max: 100,
     value: 0,
     step: 1,
-    range: true,     /*!*/
-    value: [25, 75]  /*!*/
+    range: true,
+    value: [25, 75]
 });
 ~~~
 

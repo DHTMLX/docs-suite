@@ -14,8 +14,10 @@ description: You can explore the adjust config of TreeGrid in the documentation 
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
-    adjust: true, /*!*/ 
+    columns: [
+		// columns config
+	],
+    adjust: true,
     data: dataset
 });
 

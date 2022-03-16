@@ -90,16 +90,16 @@ const chart = new dhx.Chart("chart", {
 
 While configuring chart scales you can add a template for the labels of the scales by using the **textTemplate** configuration option of [scales](chart/configuration_properties.md#scales):
 
-~~~js
+~~~js {7-9}
 const chart = new dhx.Chart("chart", {
     type:"line",
     css: "dhx_widget--bg_white dhx_widget--bordered",
     scales: {
         "bottom" : {
             text: "month",
-            textTemplate: function(month) { /*!*/
-                return "m:" + month; /*!*/
-            } /*!*/
+            textTemplate: function(month) {
+                return "m:" + month;
+            }
         },
         "left" : {
             maxTicks: 10, max: 100, min: 0
@@ -121,7 +121,7 @@ const chart = new dhx.Chart("chart", {
 
 It is possible to define a color gradient for bars with the help of the **gradient** option of [series](chart/configuration_properties.md#series). You need to set its value as a function that takes the color of the series filling in Hex format as a parameter:
 
-~~~js
+~~~js {16-31}
 const chart = new dhx.Chart("chart", {
     type:"bar",
     css: "dhx_widget--bg_white dhx_widget--bordered",
@@ -137,22 +137,22 @@ const chart = new dhx.Chart("chart", {
         {
             id: "A", value: "company A", color: "none", size: 35,
             fill: "#5E83BA",
-            gradient: function(color) { /*!*/
-                return { /*!*/
-                    stops: [ /*!*/
-                        { /*!*/
-                            offset: 0.5, /*!*/
-                            color: color, /*!*/
-                            opacity: 1 /*!*/
-                        }, /*!*/
-                        { /*!*/
-                            offset: 1, /*!*/
-                            color: "#394E79", /*!*/
-                            opacity: 1 /*!*/
-                        } /*!*/
-                    ] /*!*/
-                } /*!*/
-            } /*!*/
+            gradient: function(color) {
+                return {
+                    stops: [
+                        {
+                            offset: 0.5, 
+                            color: color, 
+                            opacity: 1 
+                        }, 
+                        { 
+                            offset: 1, 
+                            color: "#394E79", 
+                            opacity: 1 
+                        } 
+                    ] 
+                } 
+            } 
         }
     ]
 });
@@ -166,10 +166,10 @@ const chart = new dhx.Chart("chart", {
 
 You can easily define a template for showing values of data items in tooltip via the **tooltipTemplate** option of [series](chart/configuration_properties.md#series):
 
-~~~js
-function tooltipTemplate(p) { /*!*/
-  return "x: " + p[1] + ", y: " + p[0]; /*!*/
-}; /*!*/
+~~~js {1-3,18,23}
+function tooltipTemplate(p) {
+  return "x: " + p[1] + ", y: " + p[0];
+};
 
 const chart = new dhx.Chart("chart", {
     css: "dhx_widget--bg_white dhx_widget--bordered",
@@ -184,12 +184,12 @@ const chart = new dhx.Chart("chart", {
     series: [{
         id: "A", type: "scatter", value: "value A", valueY:"value B",
         pointType: "circle", color: "#EEB98E",
-        tooltipTemplate: tooltipTemplate /*!*/
+        tooltipTemplate: tooltipTemplate
     },
     {
         id: "B", type: "scatter", value: "value B", valueY: "value A",
         pointType: "rect", color: "#5E83BA",
-        tooltipTemplate: tooltipTemplate /*!*/
+        tooltipTemplate: tooltipTemplate
     }],
     legend: {
         series: ["A", "B"],
@@ -206,7 +206,7 @@ const chart = new dhx.Chart("chart", {
 
 The **showTextTemplate** option of [series](chart/configuration_properties.md#series) lets you an opportunity to add a template to values that are shown for data items in bars:
 
-~~~js
+~~~js {20-22,29-31}
 const chart = new dhx.Chart("chart", {
     type: "bar",
     css: "dhx_widget--bg_white dhx_widget--bordered",
@@ -226,18 +226,18 @@ const chart = new dhx.Chart("chart", {
             id: "A", value: "company A", color: "#81C4E8", fill: "#81C4E8",
             showText: true,
             showTextRotate: -90,
-            showTextTemplate: function (sum) { /*!*/
-                return "$ " + sum + ".00"; /*!*/
-            }, /*!*/
+            showTextTemplate: function (sum) {
+                return "$ " + sum + ".00";
+            },
             barWidth: 22, tooltip: false
         },
         {
             id: "B", value: "company B", color: "#74A2E7", fill: "#74A2E7",
             showText: true,
             showTextRotate: "-90",
-            showTextTemplate: function (sum) { /*!*/
-                return "$ " + sum + ".00"; /*!*/
-            }, /*!*/
+            showTextTemplate: function (sum) {
+                return "$ " + sum + ".00";
+            },
             barWidth: 22, tooltip: false
         }
     ],

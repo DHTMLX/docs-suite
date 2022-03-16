@@ -12,8 +12,10 @@ description: You can explore the height config of TreeGrid in the documentation 
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
-	height: 400,   /*!*/
+	columns: [
+		// columns config
+	],
+	height: 400,
 	data: dataset
 });
 

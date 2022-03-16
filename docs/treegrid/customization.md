@@ -119,10 +119,12 @@ There are two ways to do it:
 </style>
 ~~~
 
-~~~js
+~~~js {5}
 var treegrid = new dhx.TreeGrid("treegrid_container", { 
-	columns: [// columns config],
-	rowCss: function (row) { return row.custom ? "my_custom_row" : "" }, /*!*/
+	columns: [
+		// columns config
+	],
+	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
 	data: dataset
 });
 ~~~
@@ -137,9 +139,9 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 </style>
 ~~~
 
-~~~js
+~~~js {2}
 var rowId = treegrid.data.getId(1);
-treegrid.addRowCss(rowId, "myCustomClass"); /*!*/
+treegrid.addRowCss(rowId, "myCustomClass");
 ~~~
 
 **Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
@@ -240,7 +242,7 @@ The function should return a string with a cusotm CSS class for your mark.
 </style>
 ~~~
 
-~~~js
+~~~js {11-13,20}
 var treegrid = new dhx.TreeGrid("treegrid_container", { 
 	columns: [
 		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
@@ -251,8 +253,8 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 				{ text: "Price" }
 			],
 			// marks specified cells in a column
-			mark: function (cell, data, row, col) {  /*!*/
-				return cell > 10 ? "my_custom_mark" : ""  /*!*/
+			mark: function (cell, data, row, col) {
+				return cell > 10 ? "my_custom_mark" : "" 
 			}
 		},
 		{ width: 160, id: "cover", type: "string", 
@@ -260,7 +262,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 		{ width: 160, id: "ships", type: "string", 
 			header: [{ text: "Ships in" }],
 			// marks all cells in a column
-			mark: function (cell, data) { return "total_col"; } /*!*/
+			mark: function (cell, data) { return "total_col"; }
 		},
 		// more options			
 	],
@@ -298,8 +300,8 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 </style>
 ~~~
 
-~~~js
-var grid = new dhx.Grid("grid", {
+~~~js {10-13}
+var treegrid = new dhx.TreeGrid("treegrid", {
 	columns: [
 		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
 		{
@@ -308,9 +310,9 @@ var grid = new dhx.Grid("grid", {
 				{ text: "Terms and conditions", colspan: 2 },
 				{ text: "Price" }
 			],
-			mark: { /*!*/
-				min: "min_cell", /*!*/
-				max: "max_cell" /*!*/
+			mark: {
+				min: "min_cell",
+				max: "max_cell"
 			}
 		},
 		// more options
@@ -347,7 +349,7 @@ It is possible to customize the content of cells of TreeGrid via the **template*
 </table>
 <br/>
 
-~~~js
+~~~js {9-11}
 var treeGrid = new dhx.TreeGrid("treegrid", {
 	columns: [
 		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
@@ -356,8 +358,8 @@ var treeGrid = new dhx.TreeGrid("treegrid", {
 				 { text: "Terms and conditions", colspan: 2 },
 				  { text: "Price" }
 			],
-			template: function (text, row, col) { /*!*/
-				return text?"$ "+text :""; /*!*/
+			template: function (text, row, col) {
+				return text?"$ "+text :"";
 			}
 		},
 		// more options 
@@ -372,7 +374,7 @@ var treeGrid = new dhx.TreeGrid("treegrid", {
 
 Starting from v7.0, you can assign event handlers to HTML elements of a custom template of TreeGrid cells via using the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property of TreeGrid, for instance:
 
-~~~js
+~~~js {8-10,15-21}
 const treeGrid = new dhx.TreeGrid("treegrid", {
 	columns: [
 		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
@@ -380,22 +382,21 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 			width: 160, id: "price", type: "string", 
             header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
 			htmlEnable: true,
-			template: function (text, row, col) { /*!*/
-				return text ? "<div class='cell__template'>$ " + text + "</div>" : ""; /*!*/
-			} /*!*/
+			template: function (text, row, col) {
+				return text ? "<div class='cell__template'>$ " + text + "</div>" : "";
+			}
 		},
 		// more options
 	],
 	data: data,
-	eventHandlers: { /*!*/
-		onmouseover: { /*!*/
-			cell__template: function(event, data) { /*!*/
-				display(JSON.stringify(data.row, null, 2)); /*!*/
-			} /*!*/
-		} /*!*/
-	} /*!*/
+	eventHandlers: {
+		onmouseover: {
+			cell__template: function(event, data) {
+				display(JSON.stringify(data.row, null, 2));
+			}
+		}
+	}
 });
-
 ~~~
 
 **Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
@@ -445,26 +446,26 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 </table>
 <br>
 
-~~~js
-function rowDataTemplate(value, row, col) { /*!*/
-    if (!value) { /*!*/
-        return; /*!*/
-    } /*!*/
-    return `Country: ${row.country}</br> /*!*/
-            Population: ${row.population}</br> /*!*/
-            Yearly Change: ${row.yearlyChange}</br> /*!*/
-            Net Change: ${row.netChange}`; /*!*/
+~~~js {1-9,15,19}
+function rowDataTemplate(value, row, col) {
+    if (!value) {
+        return;
+    }
+    return `Country: ${row.country}</br>
+            Population: ${row.population}</br>
+            Yearly Change: ${row.yearlyChange}</br>
+            Net Change: ${row.netChange}`;
 }
 
 const treeGrid = new dhx.TreeGrid("treegrid", {
     columns: [
         { 
 			id: "country", header: [{ text: "Country" }], gravity: 1.2, 
-			tooltipTemplate: rowDataTemplate /*!*/
+			tooltipTemplate: rowDataTemplate
 		},
         { 
 			id: "population", header: [{ text: "Population" }], 
-			tooltipTemplate: rowDataTemplate /*!*/
+			tooltipTemplate: rowDataTemplate
 		},
         // more options
     ],

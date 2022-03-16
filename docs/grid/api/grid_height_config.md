@@ -12,8 +12,10 @@ description: You can explore the height config of Grid in the documentation of t
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
-	height: 400,   /*!*/
+	columns: [
+		// columns config
+	],
+	height: 400,
 	data: dataset
 });
 

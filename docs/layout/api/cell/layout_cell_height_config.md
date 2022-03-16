@@ -23,10 +23,13 @@ var layout = new dhx.Layout("layout_container", {
 
 Starting from v7.0, the height of a cell can be automatically adjusted to the height of its content. For that, set the **height** configuration option to *"content"*:
 
-~~~js
+~~~js {5}
 var layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", height: "content" } /*!*/
+        { 
+            header: "Cell header", 
+            height: "content" 
+        }
     ]
 });
 ~~~

@@ -11,14 +11,17 @@ description: You can explore the data config of Pagination in the documentation 
 @signature: {'data: DataCollection;'}
 
 @example:
-const list = new dhx.List("widget_container", {
+// initialize the List widget
+const list = new dhx.List("list_container", {
     css: "dhx_widget--bordered"
 });
 
-list.data.parse(widget_data); /*!*/
+// load data into the list
+list.data.parse(list_data);
 
 const pagination = new dhx.Pagination("pagination_container", {
-    data: list.data /*!*/
+    // load the list data into the pagination
+    data: list.data
 });
 
 @descr:

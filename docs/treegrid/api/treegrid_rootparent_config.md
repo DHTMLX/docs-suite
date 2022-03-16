@@ -12,7 +12,7 @@ description: You can explore the rootParent config of TreeGrid in the documentat
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid", {
-    rootParent: "root", /*!*/
+    rootParent: "root", 
 	columns: [
 		{ width: 340, id: "name", header: [{ text: "Name" }] },
 		{ width: 340, id: "native", type: "string", header: [{ text: "Native name" }] },

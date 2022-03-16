@@ -123,10 +123,10 @@ It is possible to change the appearance of grid rows by applying custom CSS styl
 </style>
 ~~~
 
-~~~js
+~~~js {3}
 var grid = new dhx.Grid("grid", {
 	columns: [// columns config],
-	rowCss: function (row) { return row.custom ? "my_custom_row" : "" }, /*!*/
+	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
 	data: dataset
 });
 ~~~
@@ -143,9 +143,9 @@ var grid = new dhx.Grid("grid", {
 </style>
 ~~~
 
-~~~js
+~~~js {2}
 var rowId = grid.data.getId(1);
-grid.addRowCss(rowId, "myCustomClass"); /*!*/
+grid.addRowCss(rowId, "myCustomClass");
 ~~~
 
 **Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)
@@ -243,20 +243,20 @@ The function should return a string with a custom CSS class for your mark.
 </style>
 ~~~
 
-~~~js
+~~~js {6-8,13}
 var grid = new dhx.Grid("grid", {
 	columns: [
 		{
 			id: "population", header: [{ text: "Population" }],
 			// marks specified cells in a column
-			mark: function (cell, data, row, col) { /*!*/
-				return cell > 100000000 ? "my_custom_mark" : "" /*!*/
+			mark: function (cell, data, row, col) {
+				return cell > 100000000 ? "my_custom_mark" : ""
 			}
 		}, 
 		{
 			id: "density", header: [{ text: "Density (P/Km²)" }],
 			// marks all cells in a column
-			mark: function (cell, data) { return "total_col"; } /*!*/
+			mark: function (cell, data) { return "total_col"; }
 		},
 	],
 	data: dataset
@@ -295,15 +295,15 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 </style>
 ~~~
 
-~~~js
+~~~js {6-9}
 var grid = new dhx.Grid("grid", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }] },
 		{
 			width: 150, id: "population", header: [{ text: "Population" }],
 			mark: {
-				min: "min_cell", /*!*/
-				max: "max_cell" /*!*/
+				min: "min_cell",
+				max: "max_cell"
 			}
 		},
 		// more options
@@ -340,15 +340,15 @@ It is possible to customize the content of cells of Grid via the **template** pr
 </table>
 <br/>
 
-~~~js
+~~~js {7-9}
 var grid = new dhx.Grid("grid", {
 	columns: [
 		{ width: 200, id: "country", header: [{text: "Country"}] },
 		{ width: 150, id: "population", header: [{text: "Population"}] },
 		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
 		  htmlEnable: true,
-		  template: function (text, row, col) { /*!*/
-			return "<input type=\"checkbox\" " + (text > 300000 ? "checked": "")  + ">"; /*!*/
+		  template: function (text, row, col) {
+			return "<input type=\"checkbox\" " + (text > 300000 ? "checked": "")  + ">";
 		  }
 		}
 	],
@@ -362,28 +362,28 @@ var grid = new dhx.Grid("grid", {
 
 Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells via using the [](grid/api/grid_eventhandlers_config.md) configuration property of Grid, for instance:
 
-~~~js
+~~~js {7-10,15-21}
 const grid = new dhx.Grid("grid", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
 		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
 			htmlEnable: true,
 			tooltip: false,
-			template: function (text, row, col) { /*!*/
-				return "<div class='cell__template'><input type='checkbox'  /*!*/
-                    disabled " + (text > 3000000 ? "checked" : "") + " ></div>"; /*!*/
-			} /*!*/
+			template: function (text, row, col) { 
+				return "<div class='cell__template'><input type='checkbox' 
+                    disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
+			}
 		},
         // more options
     ],
 	data: data,
-	eventHandlers: { /*!*/
-		onmouseover: { /*!*/
-			cell__template: function(event, data) { /*!*/
-				display(JSON.stringify(data.row, null, 2)); /*!*/
-			} /*!*/
-	    } /*!*/
-    } /*!*/
+	eventHandlers: { 
+		onmouseover: { 
+			cell__template: function(event, data) { 
+				display(JSON.stringify(data.row, null, 2)); 
+			} 
+	    } 
+    } 
 });
 ~~~
 
@@ -434,18 +434,18 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 </table>
 <br>
 
-~~~js
+~~~js {5-11}
 const grid = new dhx.Grid("grid", {
     columns: [
         {
 			width: 200, id: "country", header: [{ text: "Country" }], align: "left",
-			htmlEnable: true, /*!*/
-            tooltipTemplate: function (value, row, col) { /*!*/
-                return `<div class="custom-tooltip"> /*!*/
-                    <img src="../data/common/img/02/${row.avatar}.jpg" /> /*!*/
-                    <span>Last edit time:<br>${row.editing.toUTCString()}</span> /*!*/
-                </div>`; /*!*/
-            } /*!*/
+			htmlEnable: true, 
+            tooltipTemplate: function (value, row, col) { 
+                return `<div class="custom-tooltip"> 
+                    <img src="../data/common/img/02/${row.avatar}.jpg" /> 
+                    <span>Last edit time:<br>${row.editing.toUTCString()}</span> 
+                </div>`; 
+            } 
         },
         { width: 150, id: "population", header: [{ text: "Population" }] },
         { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
