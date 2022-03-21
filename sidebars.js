@@ -6,6 +6,12 @@ module.exports = {
   {
     type: "category",
     label: "What's new and migration",
+    link: {
+      type: 'generated-index',
+      title: "What's new and migration",
+      keywords: ['news'],
+      image: '/img/docusaurus.png'
+    },
     items: [
       "whatsnew",
       "migration",
@@ -40,22 +46,46 @@ module.exports = {
     type: "category",
     label: "Widgets",
     // collapsed: false,
+    link: {
+      type: 'generated-index',
+      title: "Widgets",
+      keywords: ['widgets'],
+      image: '/img/docusaurus.png'
+    },
     items: [
       //Calendar
       {
         type: "category",
         label: "Calendar",
         collapsed: true,
+        link: {
+          type: 'generated-index',
+          title: "Calendar",
+          keywords: ['calendar'],
+          image: '/img/docusaurus.png'
+        },
+        /*link: {
+          type: 'doc',
+          id: "calendar/index"
+        },*/
         items: [
           "calendar/index",
           {
             type: "category",
             label: "Calendar API",
+            link: {
+              type: 'doc',
+              id: "calendar/api/api_overview"
+            },
             items: [
-              "calendar/api/api_overview",
+              //"calendar/api/api_overview",
               {
                 type: "category",
                 label: "Calendar methods",
+                link: {
+                  type: 'doc',
+                  id: "calendar/api/overview/methods_overview"
+                },
                 items: [
                   "calendar/api/calendar_clear_method",
                   "calendar/api/calendar_destructor_method",
@@ -70,6 +100,10 @@ module.exports = {
               {
                 type: "category",
                 label: "Calendar events",
+                link: {
+                  type: 'doc',
+                  id: "calendar/api/overview/events_overview"
+                },
                 items: [
                   "calendar/api/calendar_beforechange_event",
                   "calendar/api/calendar_cancelclick_event",
@@ -83,6 +117,10 @@ module.exports = {
               {
                 type: "category",
                 label: "Calendar properties",
+                link: {
+                  type: 'doc',
+                  id: "calendar/api/overview/properties_overview"
+                },
                 items: [
                   "calendar/api/calendar_css_config",
                   "calendar/api/calendar_date_config",
@@ -119,18 +157,32 @@ module.exports = {
       {
         type: "category",
         label: "Chart",
+        link: {
+          type: 'generated-index',
+          title: "Chart",
+          keywords: ['chart'],
+          image: '/img/docusaurus.png'
+        },
         items: [
           "chart/index",
           {
             type: "category",
             label: "Chart API",
             collapsed: true,
+            link: {
+              type: 'doc',
+              id: "chart/api/api_overview"
+            },
             items: [
-              "chart/api/api_overview",
+              //"chart/api/api_overview",
               {
                 type: "category",
                 label: "Chart methods",
                 collapsed: true,
+                link: {
+                  type: 'doc',
+                  id: "chart/api/overview/methods_overview"
+                },
                 items: [
                   "chart/api/chart_destructor_method",
                   "chart/api/chart_eachseries_method",
@@ -143,6 +195,10 @@ module.exports = {
                 type: "category",
                 label: "Chart events",
                 collapsed: true,
+                link: {
+                  type: 'doc',
+                  id: "chart/api/overview/events_overview"
+                },
                 items: [
                   "chart/api/chart_resize_event",
                   "chart/api/chart_serieclick_event",
@@ -153,6 +209,10 @@ module.exports = {
                 type: "category",
                 label: "Chart properties",
                 collapsed: true,
+                link: {
+                  type: 'doc',
+                  id: "chart/api/overview/properties_overview"
+                },
                 items: [
                   "chart/api/chart_css_config",
                   "chart/api/chart_data_config",
@@ -181,16 +241,31 @@ module.exports = {
       {
         type: "category",
         label: "Colorpicker",
+        link: {
+          type: 'generated-index',
+          title: "Colorpicker",
+          keywords: ['colorpicker'],
+          image: '/img/docusaurus.png'
+        },
         items: [
           "colorpicker/index",
           {
             type: "category",
             label: "Colorpicker API",
+            link: {
+              type: 'doc',
+              id: "colorpicker/api/api_overview"
+            },
             items: [
-              "colorpicker/api/api_overview",
+              //"colorpicker/api/api_overview",
               {
                 type: "category",
                 label: "Colorpicker methods",
+                link: {
+                  type: 'doc',
+                  //id: "colorpicker/api/api_overview"
+                  id: "colorpicker/api/overview/methods_overview"
+                },
                 items: [
                   "colorpicker/api/colorpicker_clear_method",
                   "colorpicker/api/colorpicker_destructor_method",
@@ -207,6 +282,11 @@ module.exports = {
               {
                 type: "category",
                 label: "Colorpicker events",
+                link: {
+                  type: 'doc',
+                  //id: "colorpicker/api/api_overview"
+                  id: "colorpicker/api/overview/events_overview"
+                },
                 items: [
                   "colorpicker/api/colorpicker_apply_event",
                   "colorpicker/api/colorpicker_cancelclick_event",
@@ -217,6 +297,11 @@ module.exports = {
               {
                 type: "category",
                 label: "Colorpicker properties",
+                link: {
+                  type: 'doc',
+                  //id: "colorpicker/api/api_overview"
+                  id: "colorpicker/api/overview/properties_overview"
+                },
                 items: [
                   "colorpicker/api/colorpicker_css_config",
                   "colorpicker/api/colorpicker_customcolors_config",
@@ -245,16 +330,31 @@ module.exports = {
       {
         type: "category",
         label: "Combobox",
+        link: {
+          type: 'generated-index',
+          title: "Combobox",
+          keywords: ['combobox'],
+          image: '/img/docusaurus.png'
+        },
         items: [
           "combobox/index",
           {
             type: "category",
             label: "Combobox API",
+            link: {
+              type: 'doc',
+              id: "combobox/api/api_overview",
+            },
             items: [
-              "combobox/api/api_overview",
+              //"combobox/api/api_overview",
               {
                 type: "category",
                 label: "Combobox methods",
+                link: {
+                  type: 'doc',
+                  //id: "combobox/api/api_overview",
+                  id: "combobox/api/overview/methods_overview",
+                },
                 items: [
                   "combobox/api/combobox_addoption_method",
                   "combobox/api/combobox_blur_method",
@@ -273,6 +373,11 @@ module.exports = {
                 type: "category",
                 label: "Combobox events",
                 collapsed: true,
+                link: {
+                  type: 'doc',
+                  //id: "combobox/api/api_overview",
+                  id: "combobox/api/overview/events_overview",
+                },
                 items: [
                   "combobox/api/combobox_afterclose_event",
                   "combobox/api/combobox_afteropen_event",
@@ -288,6 +393,11 @@ module.exports = {
               {
                 type: "category",
                 label: "Combobox properties",
+                link: {
+                  type: 'doc',
+                  //id: "combobox/api/api_overview",
+                  id: "combobox/api/overview/properties_overview",
+                },
                 items: [
                   "combobox/api/combobox_css_config",
                   "combobox/api/combobox_data_config",
@@ -309,7 +419,7 @@ module.exports = {
                   "combobox/api/combobox_selectallbutton_config",
                   "combobox/api/combobox_template_config",
                   "combobox/api/combobox_value_config",
-                  "combobox/api/combobox_virtual_config",
+                  "combobox/api/combobox_virtual_config"
                 ],
               },
             ],
