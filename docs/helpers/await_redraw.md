@@ -6,9 +6,9 @@ description: You can explore the AwaitRedraw helper in the documentation of the 
 
 # AwaitRedraw
 
-You could notice that API methods of the Suite widgets are implemented after the widget is rendered on the page. But in some cases it may take some time and the methods throw an error. 
+You should understand that some API methods of the DHTMLX Suite widgets are implemented after the widget is rendered on the page. But in some cases this process may take some time, so you need to wait until the browser renders the needed component or its element.
 
-To escape this problem you should use the DHTMLX awaitRedraw helper to perform the code as soon as possible after the component's rendering. 
+To avoid this problem, you can use the **dhx.awaitRedraw** helper, which detects the rendering process and perform the desired code as soon as the component finally finishes its rendering.
 
 The **dhx.awaitRedraw** helper returns a promise:
 
