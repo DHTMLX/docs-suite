@@ -34,11 +34,11 @@ In this section you can find out the ways of Calendar initialization and localiz
 
 In this section you can find out corresponding references of Calendar API
 
-| Topic                                                     | Description                          |
-| :-------------------------------------------------------- | :----------------------------------- |
-| [Calendar methods](../../api/api_overview/#methods)       | Learn how to use Calendar methods    |
-| [Calendar events](../../api/api_overview/#events)         | Learn how to use Calendar events     |
-| [Calendar properties](../../api/api_overview/#properties) | Learn how to use Calendar properties |
+| Topic                                                          | Description                          |
+| :------------------------------------------------------------- | :----------------------------------- |
+| [Calendar methods](../api/overview/methods_overview/)       | Learn how to use Calendar methods    |
+| [Calendar events](../api/overview/events_overview/)         | Learn how to use Calendar events     |
+| [Calendar properties](../api/overview/properties_overview/) | Learn how to use Calendar properties |
 
 ## How to configure DHTMLX Calendar
 

@@ -28,9 +28,8 @@ Here are real-life examples of how you can use the awaitRedraw helper:
 
 ~~~js
 grid.events.on("AfterSelect", function (row, col) {
-    dhx.awaitRedraw().then(function() {
-        alert(grid.selection.getCells().length);
-        alert(grid.selection.getCell().row.country);
+    dhx.awaitRedraw().then(function () {
+        console.log(grid.selection.getCells().length);
     })
 });
 ~~~
@@ -38,11 +37,12 @@ grid.events.on("AfterSelect", function (row, col) {
 - in Window:
 
 ~~~js
-dhxWindowObj.attachHTML("<div id='"divTest"' >test</div>");
+dhxWindowObj.attachHTML("<input id='"myInput"'></input>");
 
 dhxWindowObj.events.on("afterShow", function(id){ 
     dhx.awaitRedraw().then(() => {
-        $('#divTest').load(url);     
-   })                      
+        var el = document.getElementById("myInput");
+        el.focus();
+    })                      
 });
 ~~~
