@@ -14,8 +14,10 @@ description: You can explore the sortable config of TreeGrid in the documentatio
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
-    sortable:false, /*!*/  
+    columns: [
+        // columns config
+    ],
+    sortable: false, 
     data: dataset
 });
 

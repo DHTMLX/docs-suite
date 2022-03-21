@@ -554,10 +554,10 @@ The following characters can be used:
 
 2\. You can display the percentage value in the necessary format by setting the **type: "percent"** configuration option of a column together with the **format** option:
 
-~~~
+~~~js {3}
 { 
 	width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
-	type: "percent", format: "#.00" /*!*/
+	type: "percent", format: "#.00"
 }
 // -> 0.0039 will be displayed as 0.39%
 ~~~
@@ -574,10 +574,10 @@ When using just the **type: "percent"** configuration option of a column, the re
 
 3\. To define the format for dates, set the **type: "date"** property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the **format** option:
 
-~~~js
+~~~js {3}
 { 
 	width: 150, id: "date", header: [{ text: "Date" }], 
-	type: "date", format: "%M %d %Y" /*!*/
+	type: "date", format: "%M %d %Y"
 }
 ~~~
 
@@ -739,12 +739,12 @@ The default value of the mentioned properties is 40.
 
 You can set the **hidden:true** property in the [config of a column](grid/configuration.md#columns) so that it doesn't appear on a page.
 
-~~~js
+~~~js {5}
 { 
 	width: 150, id: "population", header: [{ text: "Population" }] 
 },
 { 
-	hidden: true, width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] /*!*/
+	hidden: true, width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }]
 }
 ~~~
 
@@ -811,11 +811,10 @@ var grid = new dhx.Grid("grid", {
 
 Starting from v7.0, you can add event handlers to the HTML elements defined in a data set of Grid with the help of the [](grid/api/grid_eventhandlers_config.md) configuration property, for instance:
 
-~~~js {18-29}
+~~~js {3,18-29}
 const data = [
 	{
-		"country": "<div class='cell__html'><span>China</span> /*!*/
-            <img src='../flags/cn.svg'></div>", /*!*/
+		"country": "<div class='cell__html'><span>China</span><img src='../flags/cn.svg'></div>",
 		"population": "1415045928", "yearlyChange": "0.0039",
 		"netChange": "5528531", "density": "151",
 		"urban": "0.5800", "id": "1"

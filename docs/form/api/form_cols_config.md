@@ -17,7 +17,7 @@ var form = new dhx.Form("form", {
     rows: [
         {
             padding: "10px",
-            cols: [{ /*!*/
+            cols: [{
                 type: "checkbox",
                 width: "100px",
                 label: "I agree",

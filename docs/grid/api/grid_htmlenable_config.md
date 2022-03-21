@@ -12,9 +12,11 @@ description: You can explore the htmlEnable config of Grid in the documentation 
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     data: dataset,
-    htmlEnable: true /*!*/
+    htmlEnable: true
 });
 
 @descr:

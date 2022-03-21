@@ -14,7 +14,9 @@ description: You can explore the headerRowHeight config of TreeGrid in the docum
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-	columns: [// columns config],
+	columns: [
+		// columns config
+	],
 	headerRowHeight: 50
 });
 

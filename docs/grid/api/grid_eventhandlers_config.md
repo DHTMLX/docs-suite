@@ -11,29 +11,29 @@ description: You can explore the eventHandlers config of Grid in the documentati
 @signature: {'eventHandlers?: {[key: string]: any; };'}
 
 @example:
-
-// adds event handler to the HTML element of a custom template of a cell
 const grid = new dhx.Grid("grid", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
 		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
 			htmlEnable: true,
 			tooltip: false,
-			template: function (text, row, col) { /*!*/
-				return "<div class='cell__template'><input type='checkbox'  /*!*/
-                    disabled " + (text > 3000000 ? "checked" : "") + " ></div>"; /*!*/
-			} /*!*/
+			// define a custom template for the column's cells
+			template: function (text, row, col) {
+				return "<div class='cell__template'><input type='checkbox'
+                    disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
+			} 
 		},
         // more options
     ],
 	data: data,
-	eventHandlers: { /*!*/
-		onmouseover: { /*!*/
-			cell__template: function(event, data) { /*!*/
-				display(JSON.stringify(data.row, null, 2)); /*!*/
-			} /*!*/
-	    } /*!*/
-    } /*!*/
+	// add event handler to the HTML element of the custom template of cells
+	eventHandlers: { 
+		onmouseover: { 
+			cell__template: function(event, data) {
+				display(JSON.stringify(data.row, null, 2)); 
+			}
+	    } 
+    } 
 });
 
 @descr:
@@ -63,11 +63,10 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 An example of adding event handlers to the HTML elements defined in the data set of Grid is given below:
 
-~~~js
+~~~js {3,13,17-28}
 const data = [
 	{
-		"country": "<div class='cell__html'><span>China</span> /*!*/
-            <img src='../flags/cn.svg'></div>", /*!*/
+		"country": "<div class='cell__html'><span>China</span><img src='../flags/cn.svg'></div>",
 		"population": "1415045928", "yearlyChange": "0.0039",
 		"netChange": "5528531", "density": "151",
 		"urban": "0.5800", "id": "1"
@@ -77,22 +76,22 @@ const data = [
 
 const grid = new dhx.Grid("grid", {
 	columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true }, /*!*/
+        { width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
         // more options
     ],
 	data: data,
-    eventHandlers: { /*!*/
-		onclick: { /*!*/
-			cell__html: function(event, data) { /*!*/
-				display(JSON.stringify(data.col, null, 2)); /*!*/
-			}, /*!*/
-		}, /*!*/
-		onmouseover: { /*!*/
-			cell__html: function(event) { /*!*/
-				display("You are over " + event.target.tagName); /*!*/
-			}, /*!*/
-		} /*!*/
-	} /*!*/
+    eventHandlers: { 
+		onclick: { 
+			cell__html: function(event, data) {
+				display(JSON.stringify(data.col, null, 2));
+			},
+		},
+		onmouseover: {
+			cell__html: function(event) {
+				display("You are over " + event.target.tagName);
+			},
+		}
+	}
 });
 ~~~
 

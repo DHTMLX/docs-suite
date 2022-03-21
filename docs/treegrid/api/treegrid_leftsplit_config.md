@@ -12,8 +12,10 @@ description: You can explore the leftSplit config of TreeGrid in the documentati
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [// columns config],
-	leftSplit:2,  /*!*/
+	columns: [
+		// columns config
+	],
+	leftSplit:2,
 	data: dataset
 });
 

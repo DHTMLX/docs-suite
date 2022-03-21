@@ -14,8 +14,10 @@ description: You can explore the sortable config of Grid in the documentation of
 
 @example:
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
-    sortable:false, /*!*/  
+    columns: [
+        // columns config
+    ],
+    sortable:false,  
     data: dataset
 });
 

@@ -6,7 +6,8 @@ description: You can explore the Properties of the Container control of Form in 
 
 # Container properties
 
-- `type` - *string* - the type of a control, set it to"container"
+- `type` - *string* - the type of a control, set it to "container"
+- `html` - *HTMLElement, string* - the HTML content of a control
 - `css` - *string* - adds style classes to a control string
 - `disabled` - *boolean* - defines whether a control is enabled (false) or disabled (true)
 - `height` - *string, number, "content"* - the height of a control

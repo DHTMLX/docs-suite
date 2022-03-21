@@ -13,12 +13,12 @@ description: You can explore the value config of Combo Box in the documentation 
 @example:
 var combobox = new dhx.Combobox("combobox", {
     multiselection: true,
-    value: ["austria", "estonia"] /*!*/
+    value: ["austria", "estonia"]
 });
 
 // or
 var combobox = new dhx.Combobox("combobox", {
-    value: "austria" /*!*/
+    value: "austria"
 });
 
 @descr:

@@ -12,8 +12,10 @@ description: You can explore the dragItem config of TreeGrid in the documentatio
 
 @example:
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
-    dragItem: "column", /*!*/ 
+    columns: [
+        // columns config
+    ],
+    dragItem: "column",
     data: dataset
 });
 
@@ -29,8 +31,8 @@ Drag-n-drop can work in three modes:
 
 @changelog:
 
-- added in v6.5.
-- The "row" and "both" modes have beed added in v7.2.
+- The "row" and "both" modes have been added in v7.2.
+- Added in v6.5.
 
 [comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/configuration.md#drag-n-drop-inside-the-grid)
 

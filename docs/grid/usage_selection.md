@@ -53,11 +53,13 @@ You can set selection to one or more rows or cells using the [setCell()](grid/ap
 
 The example below shows how to highlight the first cell in the "Yearly Change" column:
 
-~~~js
+~~~js {6}
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+    columns: [
+		// columns config
+	],
 	selection:"cell",
-	multiselection: false, /*!*/
+	multiselection: false,
     data: dataset
 });
 
@@ -76,11 +78,13 @@ You can highlight the desired cells when the [multiselection:true](grid/api/grid
 
 ![](../assets/grid/desired_setcell.png)
 
-~~~js
+~~~js {5,6}
 var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
-	selection:"cell",  /*!*/
-	multiselection: true, /*!*/
+    columns: [
+		// columns config
+	],
+	selection:"cell",
+	multiselection: true,
     data: dataset
 });
 
