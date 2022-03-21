@@ -129,17 +129,18 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 table {
     display: inline-table;
+    width: 100%;
 }
 
 table tr:nth-child(2n) {
-    background-color: var(--ifm-table-background);
+    /*background-color: var(--ifm-table-background);*/
 }
 
 tr {
-    line-height: 1.2;
+    /*line-height: 1.2;*/
 }
 table {
-    text-align: left;
+    /*text-align: left;*/
 }
 
 /* end styles for tables */
