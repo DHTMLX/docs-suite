@@ -1,12 +1,13 @@
 ---
-sidebar_label: How-tos
-title: JavaScript Calendar - How-tos
+sidebar_label: Features
+title: JavaScript Calendar - Features
 description: You can explore the features of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# How-tos
+# Features
 
-This page contains structured information that will help you to start working DHTMLX Calendar and go into deep dive on its functionality.
+This page contains structured information that will help you to start working with DHTMLX Calendar and go into deep dive on its functionality.
+
 ## How to start with DHTMLX Calendar
 
 In this section you can find out the ways of Calendar initialization and localization
