@@ -6,8 +6,8 @@ description: You can explore the Methods of Combo Box in the documentation of th
 
 # Combobox methods overview
 
-| Name                                           | Description                                           |
-| :--------------------------------------------- | :---------------------------------------------------- |
+| Name                                 | Description                                 |
+| ------------------------------------ | ------------------------------------------- |
 | [](../combobox_addoption_method.md)  | @getshort(../combobox_addoption_method.md)  |
 | [](../combobox_blur_method.md)       | @getshort(../combobox_blur_method.md)       |
 | [](../combobox_clear_method.md)      | @getshort(../combobox_clear_method.md)      |

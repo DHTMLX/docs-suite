@@ -9,7 +9,7 @@ description: You can explore the API of Combo Box in the documentation of the DH
 ## Methods
 
 | Name                                           | Description                                           |
-| :--------------------------------------------- | :---------------------------------------------------- |
+| ---------------------------------------------- | ----------------------------------------------------- |
 | [](combobox/api/combobox_addoption_method.md)  | @getshort(combobox/api/combobox_addoption_method.md)  |
 | [](combobox/api/combobox_blur_method.md)       | @getshort(combobox/api/combobox_blur_method.md)       |
 | [](combobox/api/combobox_clear_method.md)      | @getshort(combobox/api/combobox_clear_method.md)      |
@@ -29,7 +29,7 @@ Use [DataCollection methods](data_collection.md) to work with data.
 ## Events
 
 | Name                                           | Description                                           |
-|------------------------------------------------|-------------------------------------------------------|
+| ---------------------------------------------- | ----------------------------------------------------- |
 | [](combobox/api/combobox_afterclose_event.md)  | @getshort(combobox/api/combobox_afterclose_event.md)  |
 | [](combobox/api/combobox_afteropen_event.md)   | @getshort(combobox/api/combobox_afteropen_event.md)   |
 | [](combobox/api/combobox_beforeclose_event.md) | @getshort(combobox/api/combobox_beforeclose_event.md) |
@@ -47,7 +47,7 @@ Use [DataCollection events](data_collection.md#events) to work with data.
 ## Properties
 
 | Name                                                | Description                                                |
-| :-------------------------------------------------- | :--------------------------------------------------------- |
+| --------------------------------------------------- | ---------------------------------------------------------- |
 | [](combobox/api/combobox_css_config.md)             | @getshort(combobox/api/combobox_css_config.md)             |
 | [](combobox/api/combobox_data_config.md)            | @getshort(combobox/api/combobox_data_config.md)            |
 | [](combobox/api/combobox_disabled_config.md)        | @getshort(combobox/api/combobox_disabled_config.md)        |
