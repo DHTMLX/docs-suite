@@ -6,7 +6,7 @@ description: You can explore the Common API of Form in the documentation of the 
 
 # Common Form API overview
 
-## Methods
+## Form methods
 
 | Name                                   | Description                                   |
 | -------------------------------------- | --------------------------------------------- |
@@ -30,7 +30,7 @@ description: You can explore the Common API of Form in the documentation of the 
 | [](../../form_show_method.md)          | @getshort(../../form_show_method.md)          |
 | [](../../form_validate_method.md)      | @getshort(../../form_validate_method.md)      |
 
-## Events
+## Form events
 
 | Name                                        | Description                                        |
 | ------------------------------------------- | -------------------------------------------------- |
@@ -50,7 +50,7 @@ description: You can explore the Common API of Form in the documentation of the 
 | [](../../form_focus_event.md)                  | @getshort(../../form_focus_event.md)                  |
 | [](../../form_keydown_event.md)                | @getshort(../../form_keydown_event.md)                |
 
-## Properties
+## Form properties
 
 | Name                           | Description                           |
 | ------------------------------ | ------------------------------------- |

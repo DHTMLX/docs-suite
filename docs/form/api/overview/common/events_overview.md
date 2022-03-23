@@ -4,7 +4,7 @@ title: JavaScript Form - Common Events Overview
 description: You can explore the Common events of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Common Form events overview
+# Form events overview
 
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
