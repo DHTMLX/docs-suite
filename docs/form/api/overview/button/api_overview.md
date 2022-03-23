@@ -6,7 +6,7 @@ description: You can explore the API of Button in the documentation of the DHTML
 
 # Button API overview
 
-## Methods
+## Button methods
 
 | Name                                               | Description                                               |
 | ------------------------------------------------- | --------------------------------------------------------- |
@@ -23,8 +23,8 @@ description: You can explore the API of Button in the documentation of the DHTML
 
 ## Button events
 
-| Name                                                       | Description                                                       |
-| --------------------------------------------------------- | ---------------------------------------------------------------- |
+| Name                                                    | Description                                                    |
+| ------------------------------------------------------- | -------------------------------------------------------------- |
 | [](../../button/button_afterchangeproperties_event.md)  | @getshort(../../button/button_afterchangeproperties_event.md)  |
 | [](../../button/button_afterhide_event.md)              | @getshort(../../button/button_afterhide_event.md)              |
 | [](../../button/button_aftershow_event.md)              | @getshort(../../button/button_aftershow_event.md)              |

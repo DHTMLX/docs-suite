@@ -7,7 +7,7 @@ description: You can explore the events of Button in the documentation of the DH
 # Button events overview
 
 | Name                                                       | Description                                                       |
-| :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| --------------------------------------------------------- | ---------------------------------------------------------------- |
 | [](../../button/button_afterchangeproperties_event.md)  | @getshort(../../button/button_afterchangeproperties_event.md)  |
 | [](../../button/button_afterhide_event.md)              | @getshort(../../button/button_afterhide_event.md)              |
 | [](../../button/button_aftershow_event.md)              | @getshort(../../button/button_aftershow_event.md)              |

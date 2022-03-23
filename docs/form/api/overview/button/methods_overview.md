@@ -7,7 +7,7 @@ description: You can explore the methods of Button in the documentation of the D
 # Button methods overview
 
 | Name                                               | Description                                               |
-| :------------------------------------------------- | --------------------------------------------------------- |
+| ------------------------------------------------- | --------------------------------------------------------- |
 | [](../../button/button_blur_method.md)          | @getshort(../../button/button_blur_method.md)          |
 | [](../../button/button_disable_method.md)       | @getshort(../../button/button_disable_method.md)       |
 | [](../../button/button_enable_method.md)        | @getshort(../../button/button_enable_method.md)        |
