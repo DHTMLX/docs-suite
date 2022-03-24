@@ -440,16 +440,30 @@ module.exports = {
       {
         type: "category",
         label: "DataView",
+        link: {
+          type: 'generated-index',
+          title: "DataView",
+          keywords: ['dataview'],
+          image: '/img/docusaurus.png'
+        },
         items: [
           "dataview/index",
           {
             type: "category",
             label: "DataView API",
+            link: {
+              type: 'doc',
+              id: "dataview/api/api_overview",
+            },
             items: [
-              "dataview/api/api_overview",
+              //"dataview/api/api_overview",
               {
                 type: "category",
                 label: "DataView methods",
+                link: {
+                  type: 'doc',
+                  id: "dataview/api/overview/methods_overview",
+                },
                 items: [
                   "dataview/api/dataview_destructor_method",
                   "dataview/api/dataview_edititem_method",
@@ -462,6 +476,10 @@ module.exports = {
               {
                 type: "category",
                 label: "DataView events",
+                link: {
+                  type: 'doc',
+                  id: "dataview/api/overview/events_overview",
+                },
                 items: [
                   "dataview/api/dataview_afterdrag_event",
                   "dataview/api/dataview_afterdrop_event",
@@ -486,6 +504,10 @@ module.exports = {
               {
                 type: "category",
                 label: "DataView properties",
+                link: {
+                  type: 'doc',
+                  id: "dataview/api/overview/properties_overview",
+                },
                 items: [
                   "dataview/api/dataview_css_config",
                   "dataview/api/dataview_data_config",
@@ -522,22 +544,40 @@ module.exports = {
         type: "category",
         label: "Form",
         collapsed: true,
+        link: {
+          type: 'generated-index',
+          title: "Form",
+          keywords: ['form'],
+          image: '/img/docusaurus.png'
+        },
         items: [
           "form/index",
           {
             type: "category",
             label: "Form API",
             collapsed: true,
+            link: { 
+              type: 'doc',
+              id: "form/api/api_overview",
+            },
             items: [
-              "form/api/api_overview",
+              //"form/api/api_overview",
               {
                 type: "category",
                 label: "Common Form API",
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/common/api_overview",
+                },
                 collapsed: true,
                 items: [{
                   type: "category",
                   label: "Form methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/common/methods_overview",
+                  },
                   items: [
                     "form/api/form_blur_method",
                     "form/api/form_clear_method",
@@ -564,6 +604,10 @@ module.exports = {
                   type: "category",
                   label: "Form events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/common/events_overview",
+                  },
                   items: [
                     "form/api/form_afterchangeproperties_event",
                     "form/api/form_afterhide_event",
@@ -586,6 +630,10 @@ module.exports = {
                   type: "category",
                   label: "Form properties",
                   collapsed: true,
+                  link: { // !!!!!!
+                    type: 'doc',
+                    id: "form/api/overview/common/properties_overview",
+                  },
                   items: [
                     "form/api/form_align_config",
                     "form/api/form_cols_config",
@@ -605,10 +653,18 @@ module.exports = {
                 type: "category",
                 label: "Button API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/button/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Button methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/button/methods_overview"
+                  },
                   items: [
                     "form/api/button/button_blur_method",
                     "form/api/button/button_disable_method",
@@ -626,6 +682,10 @@ module.exports = {
                   type: "category",
                   label: "Form Button events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/button/events_overview"
+                  },
                   items: [
                     "form/api/button/button_afterchangeproperties_event",
                     "form/api/button/button_afterhide_event",
@@ -649,10 +709,18 @@ module.exports = {
                 type: "category",
                 label: "Datepicker API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/calendar/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Datepicker methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/calendar/methods_overview"
+                  },
                   items: [
                     "form/api/calendar/calendar_blur_method",
                     "form/api/calendar/calendar_clear_method",
@@ -676,6 +744,10 @@ module.exports = {
                   type: "category",
                   label: "Form Datepicker events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/calendar/events_overview"
+                  },
                   items: [
                     "form/api/calendar/calendar_afterchangeproperties_event",
                     "form/api/calendar/calendar_afterhide_event",
@@ -702,10 +774,18 @@ module.exports = {
                 type: "category",
                 label: "Checkbox API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/checkbox/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Checkbox methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/checkbox/methods_overview"
+                  },
                   items: [
                     "form/api/checkbox/checkbox_blur_method",
                     "form/api/checkbox/checkbox_clear_method",
@@ -729,6 +809,10 @@ module.exports = {
                   type: "category",
                   label: "Form Checkbox events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/checkbox/events_overview"
+                  },
                   items: [
                     "form/api/checkbox/checkbox_afterchangeproperties_event",
                     "form/api/checkbox/checkbox_afterhide_event",
@@ -754,10 +838,18 @@ module.exports = {
                 type: "category",
                 label: "CheckboxGroup API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/checkbox_group/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form CheckboxGroup methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/checkbox_group/methods_overview"
+                  },
                   items: [
                     "form/api/checkbox_group/checkboxgroup_blur_method",
                     "form/api/checkbox_group/checkboxgroup_clear_method",
@@ -781,6 +873,10 @@ module.exports = {
                   type: "category",
                   label: "Form CheckboxGroup events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/checkbox_group/events_overview"
+                  },
                   items: [
                     "form/api/checkbox_group/checkboxgroup_afterchangeproperties_event",
                     "form/api/checkbox_group/checkboxgroup_afterhide_event",
@@ -806,10 +902,18 @@ module.exports = {
                 type: "category",
                 label: "Colorpicker API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/colorpicker/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Colorpicker methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/colorpicker/methods_overview"
+                  },
                   items: [
                     "form/api/colorpicker/colorpicker_blur_method",
                     "form/api/colorpicker/colorpicker_clear_method",
@@ -833,6 +937,10 @@ module.exports = {
                   type: "category",
                   label: "Form Colorpicker events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/colorpicker/events_overview"
+                  },
                   items: [
                     "form/api/colorpicker/colorpicker_afterchangeproperties_event",
                     "form/api/colorpicker/colorpicker_afterhide_event",
@@ -859,10 +967,18 @@ module.exports = {
                 type: "category",
                 label: "Combo API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/combo/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Combo methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/combo/methods_overview"
+                  },
                   items: [
                     "form/api/combo/combo_blur_method",
                     "form/api/combo/combo_clear_method",
@@ -886,6 +1002,10 @@ module.exports = {
                   type: "category",
                   label: "Form Combo events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/combo/events_overview"
+                  },
                   items: [
                     "form/api/combo/combo_afterchangeproperties_event",
                     "form/api/combo/combo_afterhide_event",
@@ -911,11 +1031,19 @@ module.exports = {
                 type: "category",
                 label: "Container API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/container/api_overview"
+                },
                 items: [
                   {
                     type: "category",
-                    label: "Form Container Methods",
+                    label: "Form Container methods",
                     collapsed: true,
+                    link: { 
+                      type: 'doc',
+                      id: "form/api/overview/container/methods_overview"
+                    },
                     items: [
                       "form/api/container/container_attach_method",
                       "form/api/container/container_attachhtml_method",
@@ -931,8 +1059,12 @@ module.exports = {
                   },
                   {
                     type: "category",
-                    label: "Form Container Events",
+                    label: "Form Container events",
                     collapsed: true,
+                    link: { 
+                      type: 'doc',
+                      id: "form/api/overview/container/events_overview"
+                    },
                     items: [
                       "form/api/container/container_afterchangeproperties_event",
                       "form/api/container/container_afterhide_event",
@@ -952,10 +1084,18 @@ module.exports = {
                 type: "category",
                 label: "Input API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/input/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Input methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/input/methods_overview"
+                  },
                   items: [
                     "form/api/input/input_blur_method",
                     "form/api/input/input_clear_method",
@@ -978,6 +1118,10 @@ module.exports = {
                   type: "category",
                   label: "Form Input events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/input/events_overview"
+                  },
                   items: [
                     "form/api/input/input_afterchangeproperties_event",
                     "form/api/input/input_afterhide_event",
@@ -1004,10 +1148,18 @@ module.exports = {
                 type: "category",
                 label: "Radiogroup API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/radiogroup/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Radiogroup methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/radiogroup/methods_overview"
+                  },
                   items: [
                     "form/api/radiogroup/radiogroup_blur_method",
                     "form/api/radiogroup/radiogroup_clear_method",
@@ -1023,13 +1175,17 @@ module.exports = {
                     "form/api/radiogroup/radiogroup_setproperties_method",
                     "form/api/radiogroup/radiogroup_setvalue_method",
                     "form/api/radiogroup/radiogroup_show_method",
-                    "form/api/radiogroup/radiogroup_validate_method",
+                    "form/api/radiogroup/radiogroup_validate_method"
                   ],
                 },
                 {
                   type: "category",
                   label: "Form Radiogroup events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/radiogroup/events_overview"
+                  },
                   items: [
                     "form/api/radiogroup/radiogroup_afterchangeproperties_event",
                     "form/api/radiogroup/radiogroup_afterhide_event",
@@ -1055,10 +1211,18 @@ module.exports = {
                 type: "category",
                 label: "Select API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/select/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Select methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/select/methods_overview"
+                  },
                   items: [
                     "form/api/select/select_blur_method",
                     "form/api/select/select_clear_method",
@@ -1083,6 +1247,10 @@ module.exports = {
                   type: "category",
                   label: "Form Select events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/select/events_overview"
+                  },
                   items: [
                     "form/api/select/select_afterchangeproperties_event",
                     "form/api/select/select_afterhide_event",
@@ -1109,10 +1277,18 @@ module.exports = {
                 type: "category",
                 label: "Simple Vault API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/simplevault/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Simple Vault methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/simplevault/methods_overview"
+                  },
                   items: [
                     "form/api/simplevault/simplevault_clear_method",
                     "form/api/simplevault/simplevault_clearvalidate_method",
@@ -1135,6 +1311,10 @@ module.exports = {
                   type: "category",
                   label: "Form Simple Vault events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/simplevault/events_overview"
+                  },
                   items: [
                     "form/api/simplevault/simplevault_afterchangeproperties_event",
                     "form/api/simplevault/simplevault_afterhide_event",
@@ -1163,10 +1343,18 @@ module.exports = {
                 type: "category",
                 label: "Slider API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/slider/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Slider methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/slider/methods_overview"
+                  },
                   items: [
                     "form/api/slider/slider_blur_method",
                     "form/api/slider/slider_clear_method",
@@ -1188,6 +1376,10 @@ module.exports = {
                   type: "category",
                   label: "Form Slider events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/slider/events_overview"
+                  },
                   items: [
                     "form/api/slider/slider_afterchangeproperties_event",
                     "form/api/slider/slider_afterhide_event",
@@ -1211,10 +1403,18 @@ module.exports = {
                 type: "category",
                 label: "Spacer API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/spacer/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Spacer methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/spacer/methods_overview"
+                  },
                   items: [
                     "form/api/spacer/spacer_getproperties_method",
                     "form/api/spacer/spacer_hide_method",
@@ -1227,6 +1427,10 @@ module.exports = {
                   type: "category",
                   label: "Form Spacer events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/spacer/events_overview"
+                  },
                   items: [
                     "form/api/spacer/spacer_afterchangeproperties_event",
                     "form/api/spacer/spacer_afterhide_event",
@@ -1246,10 +1450,18 @@ module.exports = {
                 type: "category",
                 label: "Text API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/text/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Text methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/text/methods_overview"
+                  },
                   items: [
                     "form/api/text/text_clear_method",
                     "form/api/text/text_disable_method",
@@ -1268,6 +1480,10 @@ module.exports = {
                   type: "category",
                   label: "Form Text events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/text/events_overview"
+                  },
                   items: [
                     "form/api/text/text_afterchangeproperties_event",
                     "form/api/text/text_afterhide_event",
@@ -1290,10 +1506,18 @@ module.exports = {
                 type: "category",
                 label: "Textarea API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/textarea/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Textarea methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/textarea/methods_overview"
+                  },
                   items: [
                     "form/api/textarea/textarea_blur_method",
                     "form/api/textarea/textarea_clear_method",
@@ -1316,6 +1540,10 @@ module.exports = {
                   type: "category",
                   label: "Form Textarea events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/textarea/events_overview"
+                  },
                   items: [
                     "form/api/textarea/textarea_afterchangeproperties_event",
                     "form/api/textarea/textarea_afterhide_event",
@@ -1342,10 +1570,18 @@ module.exports = {
                 type: "category",
                 label: "Timepicker API",
                 collapsed: true,
+                link: { 
+                  type: 'doc',
+                  id: "form/api/overview/timepicker/api_overview"
+                },
                 items: [{
                   type: "category",
                   label: "Form Timepicker methods",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/timepicker/methods_overview"
+                  },
                   items: [
                     "form/api/timepicker/timepicker_blur_method",
                     "form/api/timepicker/timepicker_clear_method",
@@ -1369,6 +1605,10 @@ module.exports = {
                   type: "category",
                   label: "Form Timepicker events",
                   collapsed: true,
+                  link: { 
+                    type: 'doc',
+                    id: "form/api/overview/timepicker/events_overview"
+                  },
                   items: [
                     "form/api/timepicker/timepicker_afterchangeproperties_event",
                     "form/api/timepicker/timepicker_afterhide_event",
@@ -1399,6 +1639,12 @@ module.exports = {
             type: "category",
             label: "List of Form controls",
             collapsed: true,
+            link: {
+              type: 'generated-index',
+              title: "List of Form controls",
+              keywords: ['lost_of_controls'],
+              image: '/img/docusaurus.png'
+            },
             items: [
               "form/button",
               "form/calendar",
@@ -1431,16 +1677,30 @@ module.exports = {
       {
         type: "category",
         label: "Grid",
+        link: {
+          type: 'generated-index',
+          title: "Grid",
+          keywords: ['grid'],
+          image: '/img/docusaurus.png'
+        },
         items: [
           "grid/index",
           {
             type: "category",
             label: "Grid API",
+            link: {
+              type: 'doc',
+              id: "grid/api/api_overview",
+            },
             items: [
-              "grid/api/api_overview",
+              //"grid/api/api_overview",
               {
                 type: "category",
                 label: "Grid methods",
+                link: {
+                  type: 'doc',
+                  id: "grid/api/overview/methods_overview",
+                },
                 items: [
                   "grid/api/grid_addcellcss_method",
                   "grid/api/grid_addrowcss_method",
@@ -1473,6 +1733,10 @@ module.exports = {
               {
                 type: "category",
                 label: "Grid events",
+                link: {
+                  type: 'doc',
+                  id: "grid/api/overview/events_overview",
+                },
                 items: [
                   "grid/api/grid_aftercolumndrag_event",
                   "grid/api/grid_aftercolumndrop_event",
@@ -1535,6 +1799,10 @@ module.exports = {
               {
                 type: "category",
                 label: "Grid properties",
+                link: {
+                  type: 'doc',
+                  id: "grid/api/overview/properties_overview",
+                },
                 items: [
                   "grid/api/grid_adjust_config",
                   "grid/api/grid_autoemptyrow_config",
@@ -1569,9 +1837,17 @@ module.exports = {
               {
                 type: "category",
                 label: "Selection API",
+                link: {
+                  type: 'doc',
+                  id: "grid/api/overview/selection_overview",
+                },
                 items: [{
                   type: "category",
                   label: "Grid Selection methods",
+                  link: {
+                    type: 'doc',
+                    id: "grid/api/overview/selection_methods_overview",
+                  },
                   items: [
                     "grid/api/selection/selection_disable_method",
                     "grid/api/selection/selection_enable_method",
@@ -1585,6 +1861,10 @@ module.exports = {
                 {
                   type: "category",
                   label: "Grid Selection events",
+                  link: {
+                    type: 'doc',
+                    id: "grid/api/overview/selection_events_overview",
+                  },
                   items: [
                     "grid/api/selection/selection_afterselect_event",
                     "grid/api/selection/selection_afterunselect_event",

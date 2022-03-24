@@ -6,8 +6,8 @@ description: You can explore the Events of Combo Box in the documentation of the
 
 # Combobox events overview
 
-| Name                                           | Description                                           |
-|------------------------------------------------|-------------------------------------------------------|
+| Name                                 | Description                                 |
+| ------------------------------------ | ------------------------------------------- |
 | [](../combobox_afterclose_event.md)  | @getshort(../combobox_afterclose_event.md)  |
 | [](../combobox_afteropen_event.md)   | @getshort(../combobox_afteropen_event.md)   |
 | [](../combobox_beforeclose_event.md) | @getshort(../combobox_beforeclose_event.md) |

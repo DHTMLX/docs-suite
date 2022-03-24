@@ -6,8 +6,8 @@ description: You can explore the API of Chart in the documentation of the DHTMLX
 
 # Chart properties overview
 
-| Name                                    | Description                                    |
-| :-------------------------------------- | :--------------------------------------------- |
+| Name                             | Description                             |
+| -------------------------------- | --------------------------------------- |
 | [](../chart_css_config.md)       | @getshort(../chart_css_config.md)       |
 | [](../chart_data_config.md)      | @getshort(../chart_data_config.md)      |
 | [](../chart_legend_config.md)    | @getshort(../chart_legend_config.md)    |

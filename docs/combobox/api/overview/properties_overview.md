@@ -6,8 +6,8 @@ description: You can explore the Properties of Combo Box in the documentation of
 
 # Combobox properties overview
 
-| Name                                                | Description                                                |
-| :-------------------------------------------------- | :--------------------------------------------------------- |
+| Name                                      | Description                                      |
+| ----------------------------------------- | ------------------------------------------------ |
 | [](../combobox_css_config.md)             | @getshort(../combobox_css_config.md)             |
 | [](../combobox_data_config.md)            | @getshort(../combobox_data_config.md)            |
 | [](../combobox_disabled_config.md)        | @getshort(../combobox_disabled_config.md)        |
