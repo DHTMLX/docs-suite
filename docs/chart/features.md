@@ -116,7 +116,7 @@ In this section you can learn how to customize Chart
 | [Scales. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n) | Learn how to customize the text of scale labels                                           |
 | [Scales. Dashed grid](https://snippet.dhtmlx.com/gnj1xc3r)                    | Learn how to make the grid lines dashed for Chart with scales                             |
 | [Scales. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)           | Learn how to show/hide the grid lines (for x,y, or both scales                            |
-| [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | learn how to set the padding between the scale and the chart container                    |
+| [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | Learn how to set the padding between the scale and the chart container                    |
 
 
 ## Common functionality

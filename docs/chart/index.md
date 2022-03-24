@@ -12,6 +12,10 @@ Check [online samples for dhtmlxChart](https://snippet.dhtmlx.com/all?text=%23ch
 
 ![](../assets/chart/line_overview.png)
 
+## Features
+
+<button class="support_btn"><a href="features/">Chart features >>></a></button>
+
 ## API reference
 
 - [](api/api_overview.md)
