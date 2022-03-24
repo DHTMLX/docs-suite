@@ -22,7 +22,7 @@ In this section you can find out how to initialize different types of Charts, an
 
 | Topic                                                                                        | Description                                                                                                                                |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Specifying the Chart type](../api/chart_type_config/)                                       | Check the list of available Chart types and learn how to specify it                                                                        |
+| [Specifying the Chart type](../api/chart_type_config/)                                       | Check the list of available Chart types and learn how to specify the necessary one                                                                       |
 | [Spline area chart](../charts_overview/#area-and-splinearea-chart)                           | Learn how to initialize Spline area chart ([Example](https://snippet.dhtmlx.com/bo82km4n))                                                 |
 | [Spline chart](../charts_overview/#line-and-spline-chart)                                    | Learn how to initialize Spline chart ([Example](https://snippet.dhtmlx.com/2wvmdm0y))                                                      |
 | [Area chart](../charts_overview/#area-and-splinearea-chart)                                  | Learn how to initialize Area chart ([Example](https://snippet.dhtmlx.com/nv6t6lvm))                                                        |
