@@ -13,6 +13,10 @@ Check [online samples for dhtmlxColorPicker](https://snippet.dhtmlx.com/all?text
 
 ![DHTMLX Colorpicker](../assets/colorpicker/colorpicker_front.png)
 
+## Features
+
+<button class="support_btn"><a href="features/">Colorpicker features >>></a></button>
+
 ## API reference
 
 - [](api/api_overview.md)

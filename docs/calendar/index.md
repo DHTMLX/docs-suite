@@ -12,7 +12,7 @@ dhtmlxCalendar is a component that allows users to view and select dates. You ca
 
 ## Features
 
-<button class="support_btn"><a href="https://dhtmlx.com/docs/products/dhtmlxCalendar/features.shtml">Calendar features >>></a></button>
+<button class="support_btn"><a href="features/">Calendar features >>></a></button>
 
 ## API reference
 
