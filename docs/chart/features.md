@@ -20,22 +20,30 @@ In this section you can find out how to initialize different types of Charts, an
 
 ### Types of Charts
 
-| Topic                                                                                        | Description                                                                                                                                |
-| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Specifying the Chart type](../api/chart_type_config/)                                       | Check the list of available Chart types and learn how to specify the necessary one                                                                       |
-| [Spline area chart](../charts_overview/#area-and-splinearea-chart)                           | Learn how to initialize Spline area chart ([Example](https://snippet.dhtmlx.com/bo82km4n))                                                 |
-| [Spline chart](../charts_overview/#line-and-spline-chart)                                    | Learn how to initialize Spline chart ([Example](https://snippet.dhtmlx.com/2wvmdm0y))                                                      |
-| [Area chart](../charts_overview/#area-and-splinearea-chart)                                  | Learn how to initialize Area chart ([Example](https://snippet.dhtmlx.com/nv6t6lvm))                                                        |
-| [Line chart](../charts_overview/#line-and-spline-chart)                                      | Learn how to initialize Line chart ([Example](https://snippet.dhtmlx.com/t881qcim))                                                        |
-| [Bar chart](../charts_overview/#bar-and-x-bar-chart)                                         | Learn how to initialize Bar chart ([Example](https://snippet.dhtmlx.com/id9nbujd))                                                         |
-| [X-Bar chart](../charts_overview/#bar-and-x-bar-chart)                                       | Learn how to initialize X-Bar chart ([Example](https://snippet.dhtmlx.com/qz80yw84))                                                       |
-| [Scatter chart](../charts_overview/#scatter-chart)                                           | Learn how to initialize Scatter chart ([Example](https://snippet.dhtmlx.com/pkczfmpu))                                                     |
-| [Donut chart](../charts_overview/#pie-pie-3d-and-donut-chart)                                | Learn how to initialize Donut chart ([Example](https://snippet.dhtmlx.com/lobb80ig))                                                       |
-| [Pie chart](../charts_overview/#pie-pie-3d-and-donut-chart)                                  | Learn how to initialize Pie chart ([Example](https://snippet.dhtmlx.com/jfbet749))                                                         |
-| [Pie 3D chart](../charts_overview/#pie-pie-3d-and-donut-chart)                               | Learn how to initialize Pie 3D chart ([Example](https://snippet.dhtmlx.com/xfce9pys))                                                      |
-| [Radar chart](../charts_overview/#radar-chart)                                               | Learn how to initialize Radar chart ([Example](https://snippet.dhtmlx.com/6otf4h0t))                                                       |
-| [Treemap chart](../charts_overview/#treemap-chart)                                           | Learn how to initialize Treemap chart ([Example 1](https://snippet.dhtmlx.com/p31wzm0b), [Example 2](https://snippet.dhtmlx.com/fmgnlue4)) |
-| [Grid and Chart](https://snippet.dhtmlx.com/gdeqtev4) | Learn how to bind Chart to Grid                                                                                                            |
+| Topic                                                              | Description                                                                                                                                |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Specifying the Chart type](../api/chart_type_config/)             | Check the list of available Chart types and learn how to specify the necessary one                                                         |
+| [Spline area chart](../charts_overview/#area-and-splinearea-chart) | Learn how to initialize Spline area chart ([Example](https://snippet.dhtmlx.com/bo82km4n))                                                 |
+| [Spline chart](../charts_overview/#line-and-spline-chart)          | Learn how to initialize Spline chart ([Example](https://snippet.dhtmlx.com/2wvmdm0y))                                                      |
+| [Area chart](../charts_overview/#area-and-splinearea-chart)        | Learn how to initialize Area chart ([Example](https://snippet.dhtmlx.com/nv6t6lvm))                                                        |
+| [Line chart](../charts_overview/#line-and-spline-chart)            | Learn how to initialize Line chart ([Example](https://snippet.dhtmlx.com/t881qcim))                                                        |
+| [Bar chart](../charts_overview/#bar-and-x-bar-chart)               | Learn how to initialize Bar chart ([Example](https://snippet.dhtmlx.com/id9nbujd))                                                         |
+| [X-Bar chart](../charts_overview/#bar-and-x-bar-chart)             | Learn how to initialize X-Bar chart ([Example](https://snippet.dhtmlx.com/qz80yw84))                                                       |
+| [Scatter chart](../charts_overview/#scatter-chart)                 | Learn how to initialize Scatter chart ([Example](https://snippet.dhtmlx.com/pkczfmpu))                                                     |
+| [Donut chart](../charts_overview/#pie-pie-3d-and-donut-chart)      | Learn how to initialize Donut chart ([Example](https://snippet.dhtmlx.com/lobb80ig))                                                       |
+| [Pie chart](../charts_overview/#pie-pie-3d-and-donut-chart)        | Learn how to initialize Pie chart ([Example](https://snippet.dhtmlx.com/jfbet749))                                                         |
+| [Pie 3D chart](../charts_overview/#pie-pie-3d-and-donut-chart)     | Learn how to initialize Pie 3D chart ([Example](https://snippet.dhtmlx.com/xfce9pys))                                                      |
+| [Radar chart](../charts_overview/#radar-chart)                     | Learn how to initialize Radar chart ([Example](https://snippet.dhtmlx.com/6otf4h0t))                                                       |
+| [Treemap chart](../charts_overview/#treemap-chart)                 | Learn how to initialize Treemap chart ([Example 1](https://snippet.dhtmlx.com/p31wzm0b), [Example 2](https://snippet.dhtmlx.com/fmgnlue4)) |
+| [Grid and Chart](https://snippet.dhtmlx.com/gdeqtev4)              | Learn how to bind Chart to Grid                                                                                                            |
+
+### Loading data into Chart
+
+In this section you can discover the ways of loading data into Chart
+
+| Topic                                                                              | Description                                                                                     |
+| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [Loading chart data](../data_loading/)                                             | Learn how to load the initial data into Chart  ([Example](https://snippet.dhtmlx.com/qah8exx2)) |
 
 ### Integration
 
@@ -71,18 +79,17 @@ In this section you can discover how to configure a Chart legend, scales, and se
 | [Configuring series](../api/chart_series_config/#the-list-of-config-options-for-series-for-charts-without-scales-pie-pie3d-donut)   | Learn how to configure series for Pie, Pie3D, Donut charts                                                                                                                                                                                                                                        |
 | [Configuring a legend](../api/chart_legend_config/#the-list-of-config-options-for-legend-for-charts-without-scales-treemap)         | Learn how to configure a legend for Treemap chart<br> <b>Examples</b>: [Legend by range](https://snippet.dhtmlx.com/p31wzm0b), [Legend by group name](https://snippet.dhtmlx.com/fmgnlue4)                                                                                                        |
 | [Configuring series](../api/chart_series_config/#the-list-of-config-options-for-series-for-charts-without-scales-treemap)           | Learn how to configure series for Treemap chart                                                                                                                                                                                                                                                   |
-| [Displaying max points](../api/chart_maxpoints_config/)                                                                             | Learn how to display a huge data set in the chart ([Example](https://snippet.dhtmlx.com/6917eudu))                                                                                                                                                                                                |
 | [Configuring a mixed chart](https://snippet.dhtmlx.com/eti3i33o)                                                                    | Learn how to configure Line, Spline and Area charts together                                                                                                                                                                                                                                      |
 | [Changing configuration on the fly](https://snippet.dhtmlx.com/7umj531n)                                                            | Learn how to set configuration of a chart dynamically                                                                                                                                                                                                                                             |
+| [Displaying average values](../api/chart_maxpoints_config/)                                                                         | Learn how to display a huge data set in the chart ([Example](https://snippet.dhtmlx.com/6917eudu))                                                                                                                                                                                                |
 
 
 ## How to work with Chart data
 
-In this section you can discover the ways of loading data into Chart, and learn how to apply the DataCollection API to work with data of Chart
+In this section you can discover how to apply the DataCollection API to work with data of Chart
 
 | Topic                                                                              | Description                                                                                     |
 | ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Loading chart data](../data_loading/)                                             | Learn how to load the initial data into Chart  ([Example](https://snippet.dhtmlx.com/qah8exx2)) |
 | [Serializing chart data](../data_loading/#saving-and-restoring-state)              | Learn how to serialize the chart data ([Example](https://snippet.dhtmlx.com/rqvvpopp))          |
 | [Adding new data into Chart](../../data_collection/api/datacollection_add_method/) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))               |
 | [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart                                             |
@@ -102,21 +109,21 @@ In this section you will find out how to work with Chart series
 
 In this section you can learn how to customize Chart
 
-| Topic                                                                         | Description                                                                               |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Topic                                                                         | Description                                                                                     |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | [Styling (custom CSS)](../customization/)                                     | Learn how to change the look and feel of Chart ([Example](https://snippet.dhtmlx.com/p82iew5s)) |
-| [List of CSS classes](../../helpers/base_elements/)                           | A set of CSS classes provided by the DHTMLX library                                       |
-| [Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)                    | Learn how to define a color gradient for bars                                             |
-| [Bar chart. Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)               | Learn how to show a stacked Bar chart                                                     |
-| [Bar chart. Base line](https://snippet.dhtmlx.com/6tls4qhf)                   | Learn how to set a base line for rendering items in Bar chart                             |
-| [Bar chart. Show text](https://snippet.dhtmlx.com/o7ke2f1s)                   | Learn how to show and customize text values of data items in Bar chart                    |
-| [Legend position](https://snippet.dhtmlx.com/pgqf1yxj)                        | Learn how to customize legend position                                                    |
-| [Series. Point types](https://snippet.dhtmlx.com/cbj54wwu)                    | Learn how to customize the type of the points of data items in a series                   |
-| [Series. Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)               | Learn how to customize tooltips for series                                                |
-| [Scales. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n) | Learn how to customize the text of scale labels                                           |
-| [Scales. Dashed grid](https://snippet.dhtmlx.com/gnj1xc3r)                    | Learn how to make the grid lines dashed for Chart with scales                             |
-| [Scales. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)           | Learn how to show/hide the grid lines (for x,y, or both scales                            |
-| [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | Learn how to set the padding between the scale and the chart container                    |
+| [List of CSS classes](../../helpers/base_elements/)                           | A set of CSS classes provided by the DHTMLX library                                             |
+| [Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)                    | Learn how to define a color gradient for bars                                                   |
+| [Bar chart. Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)               | Learn how to show a stacked Bar chart                                                           |
+| [Bar chart. Base line](https://snippet.dhtmlx.com/6tls4qhf)                   | Learn how to set a base line for rendering items in Bar chart                                   |
+| [Bar chart. Show text](https://snippet.dhtmlx.com/o7ke2f1s)                   | Learn how to show and customize text values of data items in Bar chart                          |
+| [Legend position](https://snippet.dhtmlx.com/pgqf1yxj)                        | Learn how to customize legend position                                                          |
+| [Series. Point types](https://snippet.dhtmlx.com/cbj54wwu)                    | Learn how to customize the type of the points of data items in a series                         |
+| [Series. Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)               | Learn how to customize tooltips for series                                                      |
+| [Scales. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n) | Learn how to customize the text of scale labels                                                 |
+| [Scales. Dashed grid](https://snippet.dhtmlx.com/gnj1xc3r)                    | Learn how to make the grid lines dashed for Chart with scales                                   |
+| [Scales. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)           | Learn how to show/hide the grid lines (for x,y, or both scales                                  |
+| [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | Learn how to set the padding between the scale and the chart container                          |
 
 
 ## Common functionality

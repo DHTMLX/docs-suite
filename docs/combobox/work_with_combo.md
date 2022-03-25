@@ -86,12 +86,18 @@ combo.clear();
 
 **Related sample**: [Combobox. Clear](https://snippet.dhtmlx.com/omlrtmj7)
 
-## Setting focus
+## Setting/removing focus
 
 When needed, you can set focus in the ComboBox input without opening the list of options. Use the [focus()](combobox/api/combobox_focus_method.md) method for this purpose:
 
 ~~~js
 combo.focus();
+~~~
+
+To remove focus from Combobox, apply the [blur()](combobox/api/combobox_blur_method.md) method:
+
+~~~js
+combo.blur();
 ~~~
 
 **Related sample**: [Combobox. Focus](https://snippet.dhtmlx.com/hp6b5sxe)
