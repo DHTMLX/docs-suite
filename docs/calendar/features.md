@@ -31,16 +31,6 @@ In this section you can find out the ways of Calendar initialization and localiz
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Calendar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                         |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Calendar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                              |
 
-## API reference
-
-In this section you can find out corresponding references of Calendar API
-
-| Topic                                                          | Description                          |
-| :------------------------------------------------------------- | :----------------------------------- |
-| [Calendar methods](../api/overview/methods_overview/)       | Learn how to use Calendar methods    |
-| [Calendar events](../api/overview/events_overview/)         | Learn how to use Calendar events     |
-| [Calendar properties](../api/overview/properties_overview/) | Learn how to use Calendar properties |
-
 ## How to configure DHTMLX Calendar
 
 In this section you can discover how to configure Calendar
@@ -52,7 +42,7 @@ In this section you can discover how to configure Calendar
 | [Start of the week](../configuring/#start-of-the-week)                         | Learn how to change the starting day of the week ([Example](https://snippet.dhtmlx.com/kaxmurh9))                                           |
 | [Timepicker in Calendar](../configuring/#timepicker)                           | Learn how to add a timepicker into Calendar ([Example](https://snippet.dhtmlx.com/jkbfb202))                                                |
 | [Showing the week numbers](../configuring/#numbers-of-weeks)                   | Learn how to show the numbers of weeks ([Example](https://snippet.dhtmlx.com/9692gk6n))                                                     |
-| [Displaying only current month](../configuring/#displaying-only-current-month) | Learn how to display the current month only ([Example](https://snippet.dhtmlx.com/4wi5hbtr))                                            |
+| [Displaying only current month](../configuring/#displaying-only-current-month) | Learn how to display the current month only ([Example](https://snippet.dhtmlx.com/4wi5hbtr))                                                |
 
 ## How to work with dates
 
@@ -70,7 +60,7 @@ In this section you can discover how to configure Calendar
 | :-------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
 | [Initially selected date](../configuring/#initially-selected-date)    | Learn how to create a calendar with an initially selected date ([Example](https://snippet.dhtmlx.com/epjjww3l)) |
 | [Selecting date](../operating_calendar/#selecting-date)               | Learn how to select a date in Calendar ([Example](https://snippet.dhtmlx.com/vmg11002))                         |
-| [Getting selected date](../operating_calendar/#getting-selected-date) | Learn how to get the selected date ([Example](https://snippet.dhtmlx.com/k2vrfqj0))                              |
+| [Getting selected date](../operating_calendar/#getting-selected-date) | Learn how to get the selected date ([Example](https://snippet.dhtmlx.com/k2vrfqj0))                             |
 
 ## How to work with date ranges
 
@@ -89,6 +79,16 @@ In this section you can learn how to change the Calendar width and style
 | [Styling (custom CSS)](../customization/#styling-calendar)         | Learn how to change the look and feel of Calendar ([Example](https://snippet.dhtmlx.com/2045cbe1))   |
 | [Styling selected dates](../customization/#styling-selected-dates) | Learn how to apply custom styling to selected dates ([Example](https://snippet.dhtmlx.com/9u0ix3na)) |
 | [List of CSS classes](../../helpers/base_elements/)                | A set of CSS classes provided by the DHTMLX library                                                  |
+
+## API reference
+
+In this section you can find out corresponding references of Calendar API
+
+| Topic                                                      | Description                          |
+| :--------------------------------------------------------- | :----------------------------------- |
+| [Calendar methods](../../category/calendar-methods/)       | Learn how to use Calendar methods    |
+| [Calendar events](../../category/calendar-events/)         | Learn how to use Calendar events     |
+| [Calendar properties](../../category/calendar-properties/) | Learn how to use Calendar properties |
 
 ## Common functionality
 

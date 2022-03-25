@@ -59,10 +59,10 @@ In this section you will find out how to set initial value into the input, to en
 
 In this section you can learn how to customize Combobox and configure the height of the options list and its items
 
-| Topic                                                                        | Description                                                                                                                  |
-| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Topic                                                                        | Description                                                                                                                    |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | [Styling combobox (custom CSS)](../customization/#styling)                   | Learn how to change the look and feel of Combobox ([Example](https://snippet.dhtmlx.com/lldd739i))                             |
-| [List of CSS classes](../../helpers/base_elements/)                          | A set of CSS classes provided by the DHTMLX library                                                                          |
+| [List of CSS classes](../../helpers/base_elements/)                          | A set of CSS classes provided by the DHTMLX library                                                                            |
 | [Styling Combobox items](../configuration/#template-for-combobox-options)    | Learn how to customize the appearance of displaying options in the popup list ([Example](https://snippet.dhtmlx.com/z7cpj76i)) |
 | [Filtering by your own logic](../customization/#custom-filter-for-options)   | Learn how to set a custom function for filtering Combobox options ([Example](https://snippet.dhtmlx.com/791incm9))             |
 | [Rendering HTML content](../configuration/#html-content-of-combobox-options) | Learn how to display HTML content as plain text to prevent XSS attacks ([Example](https://snippet.dhtmlx.com/e4dolhfs))        |
@@ -74,11 +74,11 @@ In this section you can learn how to customize Combobox and configure the height
 
 In this section you will find out how to enable and disable Combobox, to show and hide the list of options, to set and remove focus
 
-| Topic                                                                                    | Description                                                                                                               |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| [Enabling/disabling Combobox](../work_with_combo/#disablingenabling-combobox)            | Learn how to enable/disable Combobox ([Example](https://snippet.dhtmlx.com/7bujtsuu))                  |
+| Topic                                                                                    | Description                                                                                                |
+| ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| [Enabling/disabling Combobox](../work_with_combo/#disablingenabling-combobox)            | Learn how to enable/disable Combobox ([Example](https://snippet.dhtmlx.com/7bujtsuu))                      |
 | [Showing/hiding a list of Combobox options](../work_with_combo/#hidingshowing-the-popup) | Learn how to manipulate the visibility of the Combo popup ([Example](https://snippet.dhtmlx.com/ztc4sko8)) |
-| [Setting/removing focus](../work_with_combo/#settingremoving-focus)                      | Learn how to set focus to Combobox ([Example](https://snippet.dhtmlx.com/hp6b5sxe))                                           |
+| [Setting/removing focus](../work_with_combo/#settingremoving-focus)                      | Learn how to set focus to Combobox ([Example](https://snippet.dhtmlx.com/hp6b5sxe))                        |
 
 
 ## How to work with Combobox data
@@ -86,25 +86,34 @@ In this section you will find out how to enable and disable Combobox, to show an
 In this section you can discover how to apply the DataCollection API to work with data of Combobox (for example, how to add, update, serialize, or remove data)
 
 
-| Topic                                                                                                                                | Description                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| [DataCollection API](../../data_collection/)                                                                                         | Learn how to use the API to work with data of Combobox                                                                    |
+| Topic                                                                                                                                | Description                                                                                                                 |
+| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| [DataCollection API](../../data_collection/)                                                                                         | Learn how to use the API to work with data of Combobox                                                                      |
 | [Adding](../work_with_combo/#adding-options-into-combobox)/[removing](../work_with_combo/#removing-options-from-combobox) data items | Learn how to add or remove Combobox options ([Example](https://snippet.dhtmlx.com/o7vd331z))                                |
 | [Update](../work_with_combo/#updating-combobox-options)                                                                              | Learn how to update Combobox options (for example, to change their values) ([Example](https://snippet.dhtmlx.com/y7hpq0x8)) |
-| [Serializing combobox data](../adding_options/#saving-and-restoring-state)                                                           | Learn how to serialize the combobox data                                                                                  |
+| [Serializing combobox data](../adding_options/#saving-and-restoring-state)                                                           | Learn how to serialize the combobox data                                                                                    |
 
   
 ## How to work with selected options
 
 In this section you will learn how to set the necessary values in the input and get them, how to get the index of the value specified in the input, and how to clear the input
 
-| Topic                                                                                         | Description                                                                                                   |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Topic                                                                                         | Description                                                                                                     |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | [Selecting values](../work_with_combo/#settinggetting-values)                                 | Learn how to set the necessary values into the input ([Example](https://snippet.dhtmlx.com/xl1p7zcx))           |
 | [Getting selected values](../work_with_combo/#settinggetting-values)                          | Learn how to get the values which are set in the input ([Example](https://snippet.dhtmlx.com/ppvjknid))         |
 | [Getting index of selected values](../../data_collection/api/datacollection_getindex_method/) | Learn how to get the index of the value specified in the input ([Example](https://snippet.dhtmlx.com/ik6r8cs2)) |
 [Clearing input](../work_with_combo/#clearing-input)|Learn how to clear the Combobox input from the specified values ([Example](https://snippet.dhtmlx.com/omlrtmj7))|
 
+## API reference
+
+In this section you can find out corresponding references of Combobox API
+
+| Topic                                                      | Description                              |
+| ---------------------------------------------------------- | ---------------------------------------- |
+| [Combobox methods](../../category/combobox-methods/)       | Check the list of Colorpicker methods    |
+| [Combobox events](../../category/combobox-events/)         | Check the list of Colorpicker events     |
+| [Combobox properties](../../category/combobox-properties/) | Check the list of Colorpicker properties |
 
 ## Common functionality
 

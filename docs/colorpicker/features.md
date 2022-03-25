@@ -31,16 +31,6 @@ In this section you can find out the ways of Colorpicker initialization and loca
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Colorpicker with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                      |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Colorpicker with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                           |
 
-## API reference
-
-In this section you can find out corresponding references of Colorpicker API
-
-| Topic                                                          | Description                              |
-| -------------------------------------------------------------- | ---------------------------------------- |
-| [Colorpicker methods](../api/overview/methods_overview/)       | Check the list of Colorpicker methods    |
-| [Colorpicker events](../api/overview/events_overview/)         | Check the list of Colorpicker events     |
-| [Colorpicker properties](../api/overview/properties_overview/) | Check the list of Colorpicker properties |
-
 ## How to configure DHTMLX Colorpicker
 
 In this section you will find out how to configure the modes of displaying Colorpicker
@@ -84,6 +74,17 @@ In this section you will find out how to set/get selected color, how to set/get 
 | [Changing Colorpicker mode](../manipulating_colorpicker/#settinggetting-current-mode)      | Learn how to change the current mode of Colorpicker ([Example](https://snippet.dhtmlx.com/0mhp5cp6))                              |
 | [Getting Colorpicker mode](../manipulating_colorpicker/#settinggetting-current-mode)       | Learn how to get the current mode of displaying Colorpicker                                                                       |
 | [Setting focus](../manipulating_colorpicker/#setting-focus-on-a-color)                     | Learn how to set focus on the specified value ([Example](https://snippet.dhtmlx.com/fg13r3uh))                                    |
+
+
+## API reference
+
+In this section you can find out corresponding references of Colorpicker API
+
+| Topic                                                          | Description                              |
+| -------------------------------------------------------------- | ---------------------------------------- |
+| [Colorpicker methods](../../category/colorpicker-methods/)       | Check the list of Colorpicker methods    |
+| [Colorpicker events](../../category/colorpicker-events/)         | Check the list of Colorpicker events     |
+| [Colorpicker properties](../../category/colorpicker-properties/) | Check the list of Colorpicker properties |
 
 ## Common functionality
 

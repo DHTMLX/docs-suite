@@ -41,9 +41,9 @@ In this section you can find out how to initialize different types of Charts, an
 
 In this section you can discover the ways of loading data into Chart
 
-| Topic                                                                              | Description                                                                                     |
-| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Loading chart data](../data_loading/)                                             | Learn how to load the initial data into Chart  ([Example](https://snippet.dhtmlx.com/qah8exx2)) |
+| Topic                                  | Description                                                                                     |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [Loading chart data](../data_loading/) | Learn how to load the initial data into Chart  ([Example](https://snippet.dhtmlx.com/qah8exx2)) |
 
 ### Integration
 
@@ -54,16 +54,6 @@ In this section you can discover the ways of loading data into Chart
 | [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Chart with React ([Demo](https://github.com/DHTMLX/react-widgets))                                                   |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Chart with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                            |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Chart with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                 |
-
-## API reference
-
-In this section you can find out corresponding references of Calendar API
-
-| Topic                                                    | Description                       |
-| -------------------------------------------------------- | --------------------------------- |
-| [Chart methods](../api/overview/methods_overview/)       | Learn how to use Chart methods    |
-| [Chart events](../api/overview/events_overview/)         | Learn how to use Chart events     |
-| [Chart properties](../api/overview/properties_overview/) | Learn how to use Chart properties |
 
 ## How to configure DHTMLX Chart
 
@@ -88,11 +78,11 @@ In this section you can discover how to configure a Chart legend, scales, and se
 
 In this section you can discover how to apply the DataCollection API to work with data of Chart
 
-| Topic                                                                              | Description                                                                                     |
-| ---------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Serializing chart data](../data_loading/#saving-and-restoring-state)              | Learn how to serialize the chart data ([Example](https://snippet.dhtmlx.com/rqvvpopp))          |
-| [Adding new data into Chart](../../data_collection/api/datacollection_add_method/) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))               |
-| [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart                                             |
+| Topic                                                                              | Description                                                                            |
+| ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [Serializing chart data](../data_loading/#saving-and-restoring-state)              | Learn how to serialize the chart data ([Example](https://snippet.dhtmlx.com/rqvvpopp)) |
+| [Adding new data into Chart](../../data_collection/api/datacollection_add_method/) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))      |
+| [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart                                    |
 
 
 ## How to work with Chart series
@@ -125,6 +115,15 @@ In this section you can learn how to customize Chart
 | [Scales. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)           | Learn how to show/hide the grid lines (for x,y, or both scales                                  |
 | [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | Learn how to set the padding between the scale and the chart container                          |
 
+## API reference
+
+In this section you can find out corresponding references of Calendar API
+
+| Topic                                                | Description                       |
+| ---------------------------------------------------- | --------------------------------- |
+| [Chart methods](../../category/chart-methods/)       | Learn how to use Chart methods    |
+| [Chart events](../../category/chart-events/)         | Learn how to use Chart events     |
+| [Chart properties](../../category/chart-properties/) | Learn how to use Chart properties |
 
 ## Common functionality
 
