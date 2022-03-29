@@ -65,18 +65,18 @@ module.exports = {
           type: "category",
           label: "Calendar",
           collapsed: true,
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Calendar",
             keywords: ['calendar'],
             image: '/img/docusaurus.png'
-          },
-          /*link: {
+          },*/
+          link: {
             type: 'doc',
             id: "calendar/index"
-          },*/
+          },
           items: [
-            "calendar/index",
+            //"calendar/index",
             {
               type: "category",
               label: "Calendar API",
@@ -182,14 +182,18 @@ module.exports = {
         {
           type: "category",
           label: "Chart",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Chart",
             keywords: ['chart'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "chart/index"
           },
           items: [
-            "chart/index",
+            //"chart/index",
             {
               type: "category",
               label: "Chart API",
@@ -284,14 +288,18 @@ module.exports = {
         {
           type: "category",
           label: "Colorpicker",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Colorpicker",
             keywords: ['colorpicker'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "colorpicker/index"
           },
           items: [
-            "colorpicker/index",
+            //"colorpicker/index",
             {
               type: "category",
               label: "Colorpicker API",
@@ -391,14 +399,18 @@ module.exports = {
         {
           type: "category",
           label: "Combobox",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Combobox",
             keywords: ['combobox'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "combobox/index"
           },
           items: [
-            "combobox/index",
+            //"combobox/index",
             {
               type: "category",
               label: "Combobox API",
@@ -519,14 +531,18 @@ module.exports = {
         {
           type: "category",
           label: "DataView",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "DataView",
             keywords: ['dataview'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "dataview/index"
           },
           items: [
-            "dataview/index",
+           //"dataview/index",
             {
               type: "category",
               label: "DataView API",
@@ -636,19 +652,23 @@ module.exports = {
         },
         // end Dataview
 
-        // //Form
+        //Form
         {
           type: "category",
           label: "Form",
           collapsed: true,
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Form",
             keywords: ['form'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "form/index"
           },
           items: [
-            "form/index",
+            //"form/index",
             {
               type: "category",
               label: "Form API",
@@ -2086,14 +2106,18 @@ module.exports = {
         {
           type: "category",
           label: "Grid",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Grid",
             keywords: ['grid'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "grid/index"
           },
           items: [
-            "grid/index",
+            //"grid/index",
             {
               type: "category",
               label: "Grid API",
@@ -2338,14 +2362,18 @@ module.exports = {
           type: "category",
           label: "Layout",
           collapsed: true,
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Layout",
             keywords: ['layout'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "layout/index"
           },
           items: [
-            "layout/index",
+            //"layout/index",
             {
               type: "category",
               label: "Layout API",
@@ -2551,14 +2579,18 @@ module.exports = {
         {
           type: "category",
           label: "List",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "List",
             keywords: ['list'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "list/index"
           },
           items: [
-            "list/index",
+            //"list/index",
             {
               type: "category",
               label: "List API",
@@ -2672,14 +2704,18 @@ module.exports = {
         {
           type: "category",
           label: "Menu",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Menu",
             keywords: ['menu'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "menu/index"
           },
           items: [
-            "menu/index",
+            //"menu/index",
             {
               type: "category",
               label: "Menu API",
@@ -2783,14 +2819,18 @@ module.exports = {
         {
           type: "category",
           label: "Message",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Message",
             keywords: ['message'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "message/index"
           },
           items: [
-            "message/index",
+            //"message/index",
             {
               /*type: "category",
               label: "Message API",
@@ -2815,14 +2855,18 @@ module.exports = {
         {
           type: "category",
           label: "Pagination",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Pagination",
             keywords: ['pagination'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "pagination/index"
           },
           items: [
-            "pagination/index",
+            //"pagination/index",
             {
               type: "category",
               label: "Pagination API",
@@ -2894,14 +2938,18 @@ module.exports = {
         {
           type: "category",
           label: "Popup",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Popup",
             keywords: ['popup'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "popup/index"
           },
           items: [
-            "popup/index",
+            //"popup/index",
             {
               type: "category",
               label: "Popup API",
@@ -2975,14 +3023,18 @@ module.exports = {
         {
           type: "category",
           label: "Ribbon",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Ribbon",
             keywords: ['ribbon'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "ribbon/index"
           },
           items: [
-            "ribbon/index",
+            //"ribbon/index",
             {
               type: "category",
               label: "Ribbon API",
@@ -3097,14 +3149,18 @@ module.exports = {
         {
           type: "category",
           label: "Sidebar",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Sidebar",
             keywords: ['sidebar'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "sidebar/index"
           },
           items: [
-            "sidebar/index",
+            //"sidebar/index",
             {
               type: "category",
               label: "Sidebar API",
@@ -3223,14 +3279,18 @@ module.exports = {
         {
           type: "category",
           label: "Slider",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Slider",
             keywords: ['slider'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "slider/index"
           },
           items: [
-            "slider/index",
+            //"slider/index",
             {
               type: "category",
               label: "Slider API",
@@ -3325,14 +3385,18 @@ module.exports = {
         {
           type: "category",
           label: "Tabbar",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Tabbar",
             keywords: ['tabbar'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "tabbar/index"
           },
           items: [
-            "tabbar/index",
+            //"tabbar/index",
             {
               type: "category",
               label: "Tabbar API",
@@ -3422,15 +3486,19 @@ module.exports = {
         {
           type: "category",
           label: "Timepicker",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Timepicker",
             keywords: ['timepicker'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "timepicker/index"
           },
           // collapsed: false,
           items: [
-            "timepicker/index",
+            //"timepicker/index",
             {
               type: "category",
               label: "Timepicker API",
@@ -3507,14 +3575,18 @@ module.exports = {
         {
           type: "category",
           label: "Toolbar",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Toolbar",
             keywords: ['toolbar'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "toolbar/index"
           },
           items: [
-            "toolbar/index",
+            //"toolbar/index",
             {
               type: "category",
               label: "Toolbar API",
@@ -3634,14 +3706,18 @@ module.exports = {
         {
           type: "category",
           label: "Tree",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Tree",
             keywords: ['tree'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "tree/index"
           },
           items: [
-            "tree/index",
+            //"tree/index",
             {
               type: "category",
               label: "Tree API",
@@ -3758,14 +3834,18 @@ module.exports = {
         {
           type: "category",
           label: "TreeGrid",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "TreeGrid",
             keywords: ['treegrid'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "treegrid/index"
           },
           items: [
-            "treegrid/index",
+            //"treegrid/index",
             {
               type: "category",
               label: "TreeGrid API",
@@ -3992,14 +4072,18 @@ module.exports = {
         {
           type: "category",
           label: "Window",
-          link: {
+          /*link: {
             type: 'generated-index',
             title: "Window",
             keywords: ['window'],
             image: '/img/docusaurus.png'
+          },*/
+          link: {
+            type: 'doc',
+            id: "window/index"
           },
           items: [
-            "window/index",
+            //"window/index",
             {
               type: "category",
               label: "Window API",

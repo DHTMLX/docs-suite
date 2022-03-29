@@ -143,4 +143,3 @@ In this section you will learn about common functionality of the library which c
 
 :::info
 Do you need more functionality? Feel free to share your suggestions in the comments below!
-:::
