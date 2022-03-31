@@ -81,7 +81,7 @@ In this section you can discover how to apply the DataCollection API to work wit
 | Topic                                                                              | Description                                                                            |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | [Serializing chart data](../data_loading/#saving-and-restoring-state)              | Learn how to serialize the chart data ([Example](https://snippet.dhtmlx.com/rqvvpopp)) |
-| [Adding new data into Chart](../../data_collection/api/datacollection_add_method/) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))      |
+| [Adding new data into Chart](../usage/#adding-items-into-chart) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))      |
 | [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart                                    |
 
 

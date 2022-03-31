@@ -7,9 +7,11 @@ description: You can explore the features of Combo Box in the documentation of t
 # Features
 
 This page contains structured information that will help you to start working with DHTMLX Combobox and go into deep dive on its functionality.
+
 ## How to start with DHTMLX Combobox
 
 In this section you can find out how to initialize and localize Combobox, how to load data into the component and how to integrate Combobox into your applications
+
 ### Initialization and localization
 
 | Topic                                    | Description                                                                     |
@@ -62,8 +64,8 @@ In this section you can learn how to customize Combobox and configure the height
 | Topic                                                                        | Description                                                                                                                    |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | [Styling combobox (custom CSS)](../customization/#styling)                   | Learn how to change the look and feel of Combobox ([Example](https://snippet.dhtmlx.com/lldd739i))                             |
-| [List of CSS classes](../../helpers/base_elements/)                          | A set of CSS classes provided by the DHTMLX library                                                                            |
 | [Styling Combobox items](../configuration/#template-for-combobox-options)    | Learn how to customize the appearance of displaying options in the popup list ([Example](https://snippet.dhtmlx.com/z7cpj76i)) |
+| [List of CSS classes](../../helpers/base_elements/)                          | A set of CSS classes provided by the DHTMLX library                                                                            |
 | [Filtering by your own logic](../customization/#custom-filter-for-options)   | Learn how to set a custom function for filtering Combobox options ([Example](https://snippet.dhtmlx.com/791incm9))             |
 | [Rendering HTML content](../configuration/#html-content-of-combobox-options) | Learn how to display HTML content as plain text to prevent XSS attacks ([Example](https://snippet.dhtmlx.com/e4dolhfs))        |
 | [Setting height](../configuration/#height-of-list-of-options-and-its-items)  | Learn how to set the height for list of Combobox options and its items ([Example](https://snippet.dhtmlx.com/vilg4l7w))        |
@@ -89,9 +91,9 @@ In this section you can discover how to apply the DataCollection API to work wit
 | Topic                                                                                                                                | Description                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | [DataCollection API](../../data_collection/)                                                                                         | Learn how to use the API to work with data of Combobox                                                                      |
-| [Adding](../work_with_combo/#adding-options-into-combobox)/[removing](../work_with_combo/#removing-options-from-combobox) data items | Learn how to add or remove Combobox options ([Example](https://snippet.dhtmlx.com/o7vd331z))                                |
-| [Update](../work_with_combo/#updating-combobox-options)                                                                              | Learn how to update Combobox options (for example, to change their values) ([Example](https://snippet.dhtmlx.com/y7hpq0x8)) |
-| [Serializing combobox data](../adding_options/#saving-and-restoring-state)                                                           | Learn how to serialize the combobox data                                                                                    |
+| [Adding](../work_with_combo/#adding-options-into-combobox)/[removing](../work_with_combo/#removing-options-from-combobox) items | Learn how to add or remove Combobox options ([Example](https://snippet.dhtmlx.com/o7vd331z))                                |
+| [Updating items](../work_with_combo/#updating-combobox-options)                                                                              | Learn how to update Combobox options (for example, to change their values) ([Example](https://snippet.dhtmlx.com/y7hpq0x8)) |
+| [Serializing combobox data](../adding_options/#saving-and-restoring-state)                                                           | Learn how to serialize Combobox data                                                                                    |
 
   
 ## How to work with selected options
@@ -111,9 +113,9 @@ In this section you can find out corresponding references of Combobox API
 
 | Topic                                                      | Description                              |
 | ---------------------------------------------------------- | ---------------------------------------- |
-| [Combobox methods](../../category/combobox-methods/)       | Check the list of Colorpicker methods    |
-| [Combobox events](../../category/combobox-events/)         | Check the list of Colorpicker events     |
-| [Combobox properties](../../category/combobox-properties/) | Check the list of Colorpicker properties |
+| [Combobox methods](../../category/combobox-methods/)       | Check the list of Combobox methods    |
+| [Combobox events](../../category/combobox-events/)         | Check the list of Combobox events     |
+| [Combobox properties](../../category/combobox-properties/) | Check the list of Combobox properties |
 
 ## Common functionality
 
