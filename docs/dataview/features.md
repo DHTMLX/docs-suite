@@ -59,7 +59,7 @@ In this section you can learn how to configure the height and style of Dataview 
 | Topic                                                                                      | Description                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Setting height of Dataview](../configuration/#height-of-the-dataview)                     | Learn how to set the height for Dataview ([Example](https://snippet.dhtmlx.com/g1k2l4q0))                                                                                                                                                                                                                                        |
-| [Setting the height of an item](../configuration/#height-of-an-item)                       | Learn how to set the height for Dataview items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
+| [Setting height of an item](../configuration/#height-of-an-item)                       | Learn how to set the height for Dataview items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
 | [Setting template for rendering items](../configuration/#template-for-dataview-items)      | Learn how [to define a template](../configuration/#template-for-dataview-items) for rendering items in a dataview ([Example](https://snippet.dhtmlx.com/d6l6grr7)) and add [event handlers](../configuration/#event-handlers-for-the-template) to HTML elements of the template ([Example](https://snippet.dhtmlx.com/26873eql)) |
 | [Setting margins for items](../configuration/#margins-around-dataview-items)               | Learn how to set margins around Dataview items ([Example](https://snippet.dhtmlx.com/ozsuww1q))                                                                                                                                                                                                                                  |
 | [Styling Dataview items](../customization/#custom-styling-of-items)                        | Learn how to customize Dataview items ([Example](https://snippet.dhtmlx.com/kpnzizbf))                                                                                                                                                                                                                                           |
@@ -75,6 +75,7 @@ In this section you can learn how to configure the height and style of Dataview 
 ## How to work with DHTMLX Dataview
 
 In this section you may study how to add new data items into Dataview, how to edit, update, or remove the existing ones, how to set focus on an item, how to work with selection functionality, and more
+
 ### How to work with Dataview data
  
 | Topic                                                                  | Description                                                                                       |
@@ -119,7 +120,7 @@ In this section you can find out corresponding references of Dataview API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Chart
+In this section you will learn about common functionality of the library which can be useful while working with Dataview.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
