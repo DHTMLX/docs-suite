@@ -92,26 +92,38 @@ In this section you can learn how to configure the size and style of Form and it
 | [Styling Form](../customization/)                                 | Learn how to customize a Form and its controls ([Example](https://snippet.dhtmlx.com/wnscgb50)) |
 | [List of CSS classes](../../helpers/base_elements/)               | A set of CSS classes provided by the DHTMLX library                                             |
  
-## How to work with DHTMLX Form and its controls
+## How to work with DHTMLX Form
 
-In this section you will study how to send a Form to the server, how to disable and enable the Form and its controls, how to clear the form, its values and validation, how to operate with values of Form controls, and much more.
+In this section you will study how to send a Form to the server, how to disable and enable the Form, hide and show it, how to clear the Form values and validation.
 
 | Topic                                                                                  | Description                                                                                                                                                                |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Sending Form to server](../work_with_form/#sending-form-to-server)                    | Learn how to send a Form to the server                                                                                                                                     |
-| [Disabling/ enabling Form or its control](../work_with_form/#enablingdisabling-a-form) | Learn how to enable/disable a Form or a separate Form control [Example 1](https://snippet.dhtmlx.com/few71nk2), [Example 2](https://snippet.dhtmlx.com/n0ndn215)           |
-| [Is disabled](../work_with_form/#checking-if-a-form-is-disabled)                       | Learn how to check whether a Form or its control is disabled ([Example](https://snippet.dhtmlx.com/lthu8p6p))                                                              |
-| [Clearing Form](../work_with_form/#clearing-form)                                      | Learn how to clear the whole Form ([Example](https://snippet.dhtmlx.com/a64ih4ih))                                                                                         |
-| [Clearing control](https://snippet.dhtmlx.com/82i6levj)                                | The example shows how to clear a separate Form control                                                                                                                     |
-| [Clearing control validation](https://snippet.dhtmlx.com/2yj3obz2)                     | The example shows how to clear validation of a separate control                                                                                                            |
+| [Sending Form to server](../work_with_form/#sending-form-to-server)                    | Learn how to send a Form to the server                                           |
+| [Disabling / enabling Form](../work_with_form/#enablingdisabling-a-form) | Learn how to enable/disable a Form [Example](https://snippet.dhtmlx.com/few71nk2)           |
+| [Is disabled](../work_with_form/#checking-if-a-form-is-disabled)                       | Learn how to check whether a Form or its control is disabled ([Example](https://snippet.dhtmlx.com/lthu8p6p))    |
+|[Hiding / showing Form](../work_with_form/#hidingshowing-a-form)| Learn how to hide/show a Form|
+| [Is visible](../work_with_form/#checking-if-a-form-is-visible)                       | Learn how to check whether a Form or its control is visible                             |
+| [Clearing Form](../work_with_form/#clearing-form)                                      | Learn how to clear the values and (or) validation of Form ([Example](https://snippet.dhtmlx.com/a64ih4ih))            |
+
+
+## How to work with Form controls
+
+In this section you will study how to get access to the object of the control, how to disable and enable a separate control, how to clear the values and validation of a control, how to operate with properties of controls and their values.
+
+| Topic                                                                                  | Description                                                                                                                                                                |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Getting item](../api/form_getitem_method/)                                            | Learn how to get access to the own methods and events of a control ([Example](https://snippet.dhtmlx.com/ocfas6go))   |
+|* [Disabling/enabling a control](https://snippet.dhtmlx.com/n0ndn215) |The example shows how to enable/disable a separate control|
+|* [Clearing a control](https://snippet.dhtmlx.com/82i6levj)   | The example shows how to clear a separate control        |
+|* [Clearing validation of a control](https://snippet.dhtmlx.com/2yj3obz2)                     | The example shows how to clear validation of a separate control     |
+|* [Getting widget of control](https://snippet.dhtmlx.com/0aqkdsi7)                       | The example shows how to return the object of the related DHTMLX widget of the control and apply the methods of the widget to the control                                               |
+|* Check all available methods and events for each control| [Button](../button/#working-with-button), [DatePicker](../calendar/#working-with-datepicker), [Checkbox](../checkbox/#working-with-checkbox), [CheckboxGroup](../checkboxgroup/#working-with-checkboxgroup), [ColorPicker](../colorpicker/#working-with-colorpicker), [Combo](../combo/#working-with-combo), [Container](../container/#methods), [Input](../input/#working-with-input), [RadioGroup](../radiogroup/#working-with-radiogroup), [Select](../select/#working-with-select), [SimpleVault](../simplevault/#working-with-simplevault), [Slider](../slider/#working-with-slider), [Spacer](../spacer/#working-with-spacer), [Text](../text/#working-with-text), [Textarea](../textarea/#working-with-textarea), [TimePicker](../timepicker/#working-with-timepicker)|
 | [Iterating over controls](../api/form_foreach_method/)                                 | Learn how to iterate over Form controls ([Example](https://snippet.dhtmlx.com/hqzqpavs))                                                                                   |
-| [Setting focus on control](../work_with_form/#setting-focus-to-a-control)              | Learn how to set focus on a control ([Example](https://snippet.dhtmlx.com/tye82oqs))                                                                                       |
-| [Setting value](../work_with_form/#setting-new-values-for-controls)                    | Learn how to set new values or states for Form controls on the fly  ([Example 1](https://snippet.dhtmlx.com/7nxbtlzs)), ([Example 2](https://snippet.dhtmlx.com/ptwm9ttd)) |
-| [Getting value](../work_with_form/#getting-values-of-controls)                         | Learn how to get current values/states of Form controls  ([Example 1](https://snippet.dhtmlx.com/odod5v12)), ([Example 2](https://snippet.dhtmlx.com/q3u16v01))            |
-| [Setting properties](../api/form_setproperties_method/)                                | Learn how to change the values of the properties of Form controls dynamically ([Example](https://snippet.dhtmlx.com/67s17ve7))                                             |
+| [Setting focus on control](../work_with_form/#setting-focus-to-a-control)              | Learn how to set focus on a control via Form API ([Example](https://snippet.dhtmlx.com/tye82oqs))                                                                                       |
+| [Setting value](../work_with_form/#setting-new-values-for-controls)                    | Learn how to set new values or states for Form controls ([via Form API](https://snippet.dhtmlx.com/7nxbtlzs)), ([via Form control API](https://snippet.dhtmlx.com/ptwm9ttd)) |
+| [Getting value](../work_with_form/#getting-values-of-controls)                         | Learn how to get current values/states of Form controls  ([via Form API](https://snippet.dhtmlx.com/odod5v12)), ([via Form control API](https://snippet.dhtmlx.com/q3u16v01))            |
+| [Setting properties](../api/form_setproperties_method/)                                | Learn how to change the values of the properties of Form controls ([Example](https://snippet.dhtmlx.com/67s17ve7))                                             |
 | [Getting properties](../api/form_getproperties_method/)                                | Learn how to return an object with the properties which are set for Form controls ([Example](https://snippet.dhtmlx.com/7ubqapqq))                                         |
-| [Getting item](../api/form_getitem_method/)                                            | Learn how to get access to the object of a certain Form control ([Example](https://snippet.dhtmlx.com/ocfas6go))                                                           |
-| [Getting widget of control](https://snippet.dhtmlx.com/0aqkdsi7)                       | The example shows how to return the object of the related DHTMLX widget of the control and apply the methods of the widget                                                 |
 
 
 ## API reference
