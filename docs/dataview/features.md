@@ -24,8 +24,8 @@ In this section you can find out how to initialize Dataview, how to load data in
 | ---------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | [Loading data into Dataview](../data_loading/)                                     | Read how to load the initial data into Dataview                 |
 | [Initialization with config.data](https://snippet.dhtmlx.com/s547z4xr)             | The example shows how to load data into Dataview on the fly     |
-| [Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)             | The example shows to load data from external file               |
-| [Initialization with data.parse()](https://snippet.dhtmlx.com/shhsmgrq)            | The example to load data from a local data source               |
+| [Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)             | The example shows how to load data from external file               |
+| [Initialization with data.parse()](https://snippet.dhtmlx.com/shhsmgrq)            | The example shows how to load data from a local data source               |
 | [Initialization with external DataCollection](https://snippet.dhtmlx.com/t632x22i) | The example shows how to load data from external DataCollection |
 
 ### Integration
@@ -126,6 +126,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
+| [Custom scroll](../../common_features/custom_scroll/) | Learn how to use custom scroll in Dataview                           |
 | [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
 
 ## Any questions left?
