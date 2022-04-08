@@ -6,7 +6,7 @@ description: You can explore the headerHeight config of Layout in the documentat
 
 # headerHeight
 
-@short: sets the height of a Layout cell
+@short: sets the height of the header of a Layout cell
 
 @signature: {'headerHeight?: number;'}
 
