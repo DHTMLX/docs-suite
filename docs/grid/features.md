@@ -87,11 +87,11 @@ In this section you will know how to add tooltips of the desired appearance with
 
 In this section you will find out how to group cells in Grid and its header
 
-| Topic                                                                 | Description                                                                                                         |
-| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Topic                                                                        | Description                                                                                                         |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | [Grouping rows and columns in the header](../api/api_gridcolumn_properties/) | Learn how to specify spans for columns and rows in the Grid header ([Example](https://snippet.dhtmlx.com/eol76o68)) |
-| [Grouping cells](../configuration/#spans)                             | Learn how to specify columns and rows spans in Grid ([Example](https://snippet.dhtmlx.com/1775dwbl))                |
-| [Adding/removing spans](../usage/#addingremoving-spans)               | Learn how to add, remove and get spans of rows and columns via API methods                                          |
+| [Grouping cells](../configuration/#spans)                                    | Learn how to specify columns and rows spans in Grid ([Example](https://snippet.dhtmlx.com/1775dwbl))                |
+| [Adding/removing spans](../usage/#addingremoving-spans)                      | Learn how to add, remove and get spans of rows and columns via API methods                                          |
 
 ## How to work with columns and rows
 
@@ -99,10 +99,10 @@ In this section you will know how to add and remove columns and rows, how to hid
 
 ### Adding/removing columns and rows
 
-| Topic | Description |
-| ----- | ----------- |
-|[Setting columns configuration](../usage/#setting-columns-configuration)| Learn how to add/remove a column|
-| [Adding / removing a row](../usage/#addingremoving-a-row) | Learn how to add/remove a row ([Example](https://snippet.dhtmlx.com/8ezuj7io)) |
+| Topic                                                                    | Description                                                                    |
+| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------ |
+| [Setting columns configuration](../usage/#setting-columns-configuration) | Learn how to add/remove a column                                               |
+| [Adding / removing a row](../usage/#addingremoving-a-row)                | Learn how to add/remove a row ([Example](https://snippet.dhtmlx.com/8ezuj7io)) |
 
 
 ### Getting configuration of a cell/column
@@ -120,7 +120,7 @@ In this section you will know how to add and remove columns and rows, how to hid
 | [Is row hidden](../usage/#checking-visibility-of-a-row)       | Learn how to check whether a row is hidden                                                                |
 | [Hiding columns](../configuration/#hidden-columns)            | Learn how to make a column hidden on Grid initialization ([Example](https://snippet.dhtmlx.com/lh7ma639)) |
 | [Showing / hiding a column](../usage/#hidingshowing-a-column) | Learn how to show and hide a column in Grid ([Example](https://snippet.dhtmlx.com/n4zjwsqj))              |
-[Is column hidden](https://snippet.dhtmlx.com/rdqhwnjv)|Learn how to check whether a column is hidden|
+| [Is column hidden](https://snippet.dhtmlx.com/rdqhwnjv)       | Learn how to check whether a column is hidden                                                             |
 
 ### Adjusting width and height of columns and rows
 
@@ -250,7 +250,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
-| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to use custom scroll in Grid                        |
+| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Grid                        |
 | [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
 
 ## Any questions left?
