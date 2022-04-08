@@ -99,21 +99,48 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* end Header link */
 
+/* buttons */
+
+.support_btn{
+  
+    font-size: 16pt;
+    color: rgb(53, 148, 243);
+    background-color: transparent;
+    border: 1px solid rgba(53, 148, 243, 0.692);;
+    border-radius: 5px;
+    width: 280px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .support_btn:hover{
+    background-color: rgba(53, 148, 243, 0.692);
+    color: white;
+  }
+  
+  .support_btn > a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* buttons end */
+
 /* styles for tables */
 
 table {
     display: inline-table;
+    width: 100%;
 }
 
 table tr:nth-child(2n) {
-    background-color: var(--ifm-table-background);
+    /*background-color: var(--ifm-table-background);*/
 }
 
 tr {
-    line-height: 1.2;
+    /*line-height: 1.2;*/
 }
 table {
-    text-align: left;
+    /*text-align: left;*/
 }
 
 /* end styles for tables */

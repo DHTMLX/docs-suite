@@ -53,7 +53,7 @@ description: You can explore the API of List in the documentation of the DHTMLX 
 ## Properties
 
 | Name                                       | Description                                       |
-| :----------------------------------------- | :------------------------------------------------ |
+| ----------------------------------------- | ------------------------------------------------ |
 | [](list/api/list_css_config.md)            | @getshort(list/api/list_css_config.md)            |
 | [](list/api/list_data_config.md)           | @getshort(list/api/list_data_config.md)           |
 | [](list/api/list_dragcopy_config.md)       | @getshort(list/api/list_dragcopy_config.md)       |

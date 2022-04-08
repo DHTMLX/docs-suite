@@ -65,7 +65,7 @@ var layout = new dhx.Layout("layout_container", {
 
 ## Height of a header cell
 
-You can specify the necessary height of cell with a header using the [](layout/api/cell/layout_cell_headerheight_config.md) configuration option of a cell:
+You can specify the necessary height of the header of a cell using the [](layout/api/cell/layout_cell_headerheight_config.md) configuration option of the cell:
 
 ~~~js
 var layout = new dhx.Layout("layout", {

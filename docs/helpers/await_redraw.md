@@ -6,7 +6,9 @@ description: You can explore the AwaitRedraw helper in the documentation of the 
 
 # AwaitRedraw
 
-DHTMLX AwaitRedraw is a helper that allows implementing specified actions for a component as soon as possible after it is redrawn. 
+You should understand that some API methods of the DHTMLX Suite widgets are implemented after the widget is rendered on the page. But in some cases this process may take some time, so you need to wait until the browser renders the needed component or its element.
+
+To avoid this problem, you can use the **dhx.awaitRedraw** helper, which detects the rendering process and perform the desired code as soon as the component finally finishes its rendering.
 
 The **dhx.awaitRedraw** helper returns a promise:
 
@@ -19,3 +21,28 @@ dhx.awaitRedraw().then(function() {
 ~~~
 
 **Related sample**: [Helpers. Await Redraw. Initialization](https://snippet.dhtmlx.com/r4ck0smz)
+
+Here are real-life examples of how you can use the awaitRedraw helper:
+
+- in Grid:
+
+~~~js
+grid.events.on("AfterSelect", function (row, col) {
+    dhx.awaitRedraw().then(function () {
+        console.log(grid.selection.getCells().length);
+    })
+});
+~~~
+
+- in Window:
+
+~~~js
+dhxWindowObj.attachHTML("<input id='"myInput"'></input>");
+
+dhxWindowObj.events.on("afterShow", function(id){ 
+    dhx.awaitRedraw().then(() => {
+        var el = document.getElementById("myInput");
+        el.focus();
+    })                      
+});
+~~~
