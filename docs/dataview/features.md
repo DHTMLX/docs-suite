@@ -6,9 +6,11 @@ description: You can explore the features of DataView in the documentation of th
 
 # Features
 
+This page contains structured information that will help you to start working with DHTMLX Dataview and go into deep dive on its functionality.
+
 ## How to start with DHTMLX Dataview
 
-In this section you can find out how to initialize Dataview, how to load data into the component and how to integrate Dataview into your applications
+In this section you can find out how to initialize Dataview, how to load data into the component and how to integrate Dataview into your applications.
 
 ### Initialization
 
@@ -41,7 +43,7 @@ In this section you can find out how to initialize Dataview, how to load data in
 
 ## How to configure DHTMLX Dataview
 
-In this section you will know how to configure the drag-n-drop functionality, how to activate the ability to use key navigation and select multiple items, and more
+In this section you will know how to configure the drag-n-drop functionality, how to activate the ability to use key navigation and select multiple items, and more.
 
 | Topic                                                                              | Description                                                                                                                            |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -54,12 +56,12 @@ In this section you will know how to configure the drag-n-drop functionality, ho
 
 ## How to customize DHTMLX Dataview and change its size
 
-In this section you can learn how to configure the height and style of Dataview and its items
+In this section you can learn how to configure the height and style of Dataview and its items.
 
 | Topic                                                                                      | Description                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Setting height of Dataview](../configuration/#height-of-the-dataview)                     | Learn how to set the height for Dataview ([Example](https://snippet.dhtmlx.com/g1k2l4q0))                                                                                                                                                                                                                                        |
-| [Setting height of an item](../configuration/#height-of-an-item)                       | Learn how to set the height for Dataview items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
+| [Setting the height of an item](../configuration/#height-of-an-item)                       | Learn how to set the height for Dataview items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
 | [Setting template for rendering items](../configuration/#template-for-dataview-items)      | Learn how [to define a template](../configuration/#template-for-dataview-items) for rendering items in a dataview ([Example](https://snippet.dhtmlx.com/d6l6grr7)) and add [event handlers](../configuration/#event-handlers-for-the-template) to HTML elements of the template ([Example](https://snippet.dhtmlx.com/26873eql)) |
 | [Setting margins for items](../configuration/#margins-around-dataview-items)               | Learn how to set margins around Dataview items ([Example](https://snippet.dhtmlx.com/ozsuww1q))                                                                                                                                                                                                                                  |
 | [Styling Dataview items](../customization/#custom-styling-of-items)                        | Learn how to customize Dataview items ([Example](https://snippet.dhtmlx.com/kpnzizbf))                                                                                                                                                                                                                                           |
@@ -74,7 +76,7 @@ In this section you can learn how to configure the height and style of Dataview 
 
 ## How to work with DHTMLX Dataview
 
-In this section you may study how to add new data items into Dataview, how to edit, update, or remove the existing ones, how to set focus on an item, how to work with selection functionality, and more
+In this section you may study how to add new data items into Dataview, how to edit, update, or remove the existing ones, how to set focus on an item, how to work with selection functionality, and more.
 
 ### How to work with Dataview data
  
@@ -110,7 +112,7 @@ In this section you may study how to add new data items into Dataview, how to ed
 
 ## API reference
 
-In this section you can find out corresponding references of Dataview API
+In this section you can find out corresponding references of Dataview API.
 
 | Topic                                                      | Description                           |
 | ---------------------------------------------------------- | ------------------------------------- |
