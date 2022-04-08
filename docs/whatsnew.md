@@ -18,7 +18,7 @@ Released on April 4, 2022
 - Data. Now the `,`,  `;`, `"` symbols will be wrapped into the quotes when serializing a data set into the CSV format
 - Form. Text control. Fix the incorrect display of the long value of the Text control
 - Grid, TreeGrid. Now the Grid and TreeGrid packages includes the ability to localize the "datePicker" and "combobox" column editors 
-- Grid. Fix the issue which caused the empty row/col objects to be returned after calling [events for custom templates](grid/api/grid_eventhandlers_config/) of Grid columns
+- Grid. Fix the issue which caused the empty row/col objects to be returned after calling [events for custom templates](../grid/api/grid_eventhandlers_config/) of Grid columns
 - Grid. Fix the issue with processing of Date objects when exporting the Grid data into the CSV/Excel format 
 - Grid. Fix the issue with the `htmlEnable: true` property which didn't take into account the line breaks of the cells content when the `autoHeight:false` property of Grid was applied 
 
