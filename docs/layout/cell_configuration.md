@@ -153,7 +153,7 @@ var layout = new dhx.Layout("layout_container", {
 
 As you can see from the code example above, the width of the cell occupies 50% of the parent container width but is not larger than 200px.
 
-## Autosize for cells
+### Autosize for cells
 
 Starting with v7.0, you can configure a cell so that its width/ height would automatically adjust to the width/ height of the cell content. For this purpose, you need to set the [width](layout/api/cell/layout_cell_width_config.md)/ [height](layout/api/cell/layout_cell_height_config.md) options to *"content"*:
 

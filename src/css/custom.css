@@ -122,6 +122,29 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     text-decoration: none;
     color: inherit;
   }
+
+  .pattern_btn{
+  
+    font-size: 16pt;
+    color: rgb(53, 148, 243);
+    background-color: transparent;
+    border: 1px solid rgba(53, 148, 243, 0.692);;
+    border-radius: 5px;
+    width: 80px;
+    height: 50px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  
+  .pattern_btn:hover{
+    background-color: rgba(53, 148, 243, 0.692);
+    color: white;
+  }
+  
+  .pattern_btn > a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   /* buttons end */
 
