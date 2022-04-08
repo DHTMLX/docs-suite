@@ -593,7 +593,7 @@ It is possible to change the following configuration attributes of the **Combo**
 		</tr>
 		<tr>
 			<td><b>filter</b></td>
-			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+			<td>(<i>function</i>) sets a custom function for filtering Combo options. <a href="../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>
