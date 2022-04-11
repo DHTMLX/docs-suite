@@ -43,7 +43,7 @@ In this section you can find out how to initialize List, how to load data into t
 
 ## How to configure DHTMLX List
 
-In this section you will know how to configure the drag-n-drop functionality, how to activate the ability to use key navigation, and more.
+In this section you will know how to configure the drag-n-drop functionality, how to activate inline editing and key navigation.
 
 | Topic                                                             | Description                                                                                                |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -70,7 +70,7 @@ In this section you can learn how to configure the height and style of List and 
 
 ## How to work with List data
 
-In this section you may study how to add new data items into List, how to edit, update, or remove the existing ones, how to set focus on an item, and more.
+In this section you may study how to add new data items into List, how to edit, update, or remove the existing ones, how to work with selection functionality, how to set focus on an item, and more.
 
 ### Editing/adding/removing items
 
@@ -111,7 +111,7 @@ In this section you may study how to add new data items into List, how to edit, 
 
 ## API reference
 
-In this section you can find out corresponding references of Dataview API.
+In this section you can find out corresponding references of List API.
 
 | Topic                                              | Description                                            |
 | -------------------------------------------------- | ------------------------------------------------------ |

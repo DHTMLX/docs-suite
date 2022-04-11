@@ -75,7 +75,7 @@ In this section you can learn how to configure the height and style of Dataview 
 
 ## How to work with Dataview
 
-In this section you may study how to add new data items into Dataview, how to edit, update, or remove the existing ones, how to set focus on an item, and more.
+In this section you may study how to add new data items into Dataview, how to edit, update, or remove the items, how to work with selection functionality, how to set focus on an item, and more.
 
 ### Editing/adding/removing items
 
@@ -93,8 +93,6 @@ In this section you may study how to add new data items into Dataview, how to ed
 | [Filtering items](../manipulating_data/#filtering-dataview-data)         | Learn how to filter Dataview items ([Example](https://snippet.dhtmlx.com/8f970hby))               |
 
 ### How to work with selection
-
-In this section you will know how to work with selection functionality.
 
 | Topic                                                                                  | Description                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
