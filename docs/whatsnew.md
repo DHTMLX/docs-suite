@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.2
+----------------
+
+Released on April 4, 2022
+
+### Fixes
+
+- Data. Now the `,`,  `;`, `"` symbols will be wrapped into the quotes when serializing a data set into the CSV format
+- Form. Text control. Fix the incorrect display of the long value of the Text control
+- Grid, TreeGrid. Now the Grid and TreeGrid packages includes the ability to localize the "datePicker" and "combobox" column editors 
+- Grid. Fix the issue which caused the empty row/col objects to be returned after calling [events for custom templates](../grid/api/grid_eventhandlers_config/) of Grid columns
+- Grid. Fix the issue with processing of Date objects when exporting the Grid data into the CSV/Excel format 
+- Grid. Fix the issue with the `htmlEnable: true` property which didn't take into account the line breaks of the cells content when the `autoHeight:false` property of Grid was applied 
+
 Version 7.3.1
 -----------------
 
