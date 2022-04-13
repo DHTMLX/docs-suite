@@ -67,7 +67,7 @@ In this section you can learn how to configure the style of Menu and its control
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | [Configuring type of navigation](../api/menu_navigationtype_config/)             | Learn how to configure the action that opens menu options (click or pointer) ([Example](https://snippet.dhtmlx.com/uhv64cm7)) |
 | [Adding HTML content into items](../configuring_menu_items/#adding-html-content) | Learn how to add a custom image into the menu item ([Example](https://snippet.dhtmlx.com/2hr77egx))                           |
-| [Applying custom icons](../customization/#icons)                                 | Learn how to apply custom icons for Menu items ([Example](https://snippet.dhtmlx.com/nkmz6ilv))                               |
+| [Applying custom icons](../customization/#icons)                                 | Learn how to add custom icons to Menu items ([Example](https://snippet.dhtmlx.com/nkmz6ilv))                               |
 | [Styling Menu](../customization/#styling)                                        | Learn how to customize Menu ([Example](https://snippet.dhtmlx.com/kfy2th5n))                                                  |
 | [List of CSS classes](../../helpers/base_elements/)                              | A set of CSS classes provided by the DHTMLX library                                                                           |
 
