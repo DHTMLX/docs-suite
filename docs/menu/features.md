@@ -23,7 +23,7 @@ In this section you can find out how to initialize Menu, how to add controls ins
 
 | Topic                                                                              | Description                                                              |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| [Loading data into Dataview](../data_loading/)                                     | Read how to load the initial data into Menu                              |
+| [Loading data into Menu](../data_loading/)                                         | Read how to load the initial data into Menu                              |
 | [Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)             | The example shows how to load data into Menu on the initialization stage |
 | [Initialization with data.load()](https://snippet.dhtmlx.com/wjqno7xq)             | The example shows how to load data from external file                    |
 | [Initialization with data.parse()](https://snippet.dhtmlx.com/8y2b1zqm)            | The example shows how to load data from a local data source              |
@@ -39,13 +39,13 @@ In this section you can find out how to initialize Menu, how to add controls ins
 
 ### Menu controls
 
-| Topic                                                 | Description                                                                                                                    |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| [MenuItem](../configuring_menu_items/#menuitem)       | Learn how to add and configure a MenuItem control into the menu ([Example](https://snippet.dhtmlx.com/qkxeer2h))               |
-| [NavItem](../configuring_menu_items/#navitem)         | Learn how to add and configure a NavItem control into the menu                                                                 |
-| [Custom HTML](../configuring_menu_items/#custom-html) | Learn how to add and configure an item with custom HTML content into the menu ([Example](https://snippet.dhtmlx.com/nk65jfmx)) |
-| [Spacer](../configuring_menu_items/#spacer)           | Learn how to add and configure a Spacer control into the menu ([Example](https://snippet.dhtmlx.com/fjaolual))                 |
-| [Separator](../configuring_menu_items/#separator)     | Learn how to add and configure a Separator control into the menu ([Example](https://snippet.dhtmlx.com/71tybx5j))              |
+| Topic                                                 | Description                                                                                                      |
+| ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| [MenuItem](../configuring_menu_items/#menuitem)       | Learn how to add a MenuItem control into the menu ([Example](https://snippet.dhtmlx.com/qkxeer2h))               |
+| [NavItem](../configuring_menu_items/#navitem)         | Learn how to add a NavItem control into the menu                                                                 |
+| [Custom HTML](../configuring_menu_items/#custom-html) | Learn how to add an item with custom HTML content into the menu ([Example](https://snippet.dhtmlx.com/nk65jfmx)) |
+| [Spacer](../configuring_menu_items/#spacer)           | Learn how to add a Spacer control into the menu ([Example](https://snippet.dhtmlx.com/fjaolual))                 |
+| [Separator](../configuring_menu_items/#separator)     | Learn how to add a Separator control into the menu ([Example](https://snippet.dhtmlx.com/71tybx5j))              |
   
 
 ### Integration
@@ -113,7 +113,7 @@ In this section you can find out corresponding references of Menu and Menu contr
 | [Custom HTML properties](../api/api_customhtml_properties/) | Check the list of properties of the Custom HTML control |
 | [Separator properties](../api/api_separator_properties/)    | Check the list of properties of the Separator control   |
 | [Spacer properties](../api/api_spacer_properties/)          | Check the list of properties of the Spacer control      |
-| [TreeCollection API](../../tree_collection/)       | Check the API of TreeCollection to work with Menu data |
+| [TreeCollection API](../../tree_collection/)                | Check the API of TreeCollection to work with Menu data  |
 
 
 ## Common functionality

@@ -223,7 +223,7 @@ menu.data.getItem("id").hotkey = "Ctrl+N";
 menu.paint();
 ~~~
 
-## Removing menu items  
+### Removing menu items  
 
 You can remove any item from a menu with the **remove()** method. The item will be removed with all its sub-items.
 
