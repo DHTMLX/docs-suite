@@ -39,43 +39,43 @@ In this section you can find out how to initialize Pagination with different dat
 
 In this section you will learn how to specify the initial page of Pagination and define the size of pages.
 
-| Topic                                                   | Description                                                                                                                                      |
-| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Setting initial page](../configuration/#initial-page)    | Learn how to define the initial page of the pagination ([Example](https://snippet.dhtmlx.com/5vwz8tgb))                                          |
+| Topic                                                               | Description                                                                                                                                      |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Setting initial page](../configuration/#initial-page)              | Learn how to define the initial page of the pagination ([Example](https://snippet.dhtmlx.com/5vwz8tgb))                                          |
 | [Configuring page size](../configuration/#number-of-items-per-page) | Learn how to define the number of items that should be displayed per page of the related widget ([Example](https://snippet.dhtmlx.com/m57w0vlb)) |
 
 ## How to customize DHTMLX Pagination
 
 In this section you may study how to change the style of Pagination, how to align elements inside it, how to configure the width of Pagination input.
 
-| Topic                                                 | Description                                                                                                    |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Topic                                                    | Description                                                                                                    |
+| -------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
 | [Aligning elements](https://snippet.dhtmlx.com/4vin492u) | The example shows how to align elements in Pagination                                                          |
-| [Setting width of input](../configuration/#input-width)          | Learn how to configure the width of the input of a pagination ([Example](https://snippet.dhtmlx.com/1fttbjh9)) |
-| [Styling Pagination](../customization/)               | Learn how to customize Pagination ([Example](https://snippet.dhtmlx.com/e7bujtsu))                             |
-| [List of CSS classes](../../helpers/base_elements/)                                                                               | A set of CSS classes provided by the DHTMLX library                                                     |
+| [Setting width of input](../configuration/#input-width)  | Learn how to configure the width of the input of a pagination ([Example](https://snippet.dhtmlx.com/1fttbjh9)) |
+| [Styling Pagination](../customization/)                  | Learn how to customize Pagination ([Example](https://snippet.dhtmlx.com/e7bujtsu))                             |
+| [List of CSS classes](../../helpers/base_elements/)      | A set of CSS classes provided by the DHTMLX library                                                            |
 
 ## How to work with DHTMLX Pagination
 
 In this section you will know how to set an active page dynamically, how to specify the number of data items which should be displayed on each page, how to get the total number of pages, and more.
 
-| Topic                                                                                          | Description                                                                                                                      |
-| ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| [Getting / setting page index](../usage/#settinggetting-the-active-page)                         | Learn how to set any page as an active page or get the index of the currently active page  ([Example](https://snippet.dhtmlx.com/qepjgf7h)) |
-| [Setting number of items displayed per page](../usage/#settinggetting-count-of-items-per-page) | Learn how to specify the number of items that should be displayed on each page ([Example](https://snippet.dhtmlx.com/9u3gsyd4))               |
-| [Getting number of items displayed per page](../usage/#settinggetting-count-of-items-per-page) | Learn how to get the count of items displayed per page ([Example](https://snippet.dhtmlx.com/9u3gsyd4))                          |
-| [Getting total page count](../usage/#getting-total-number-of-pages)                                  | Learn how to get the total number of pages ([Example](https://snippet.dhtmlx.com/k5j6acc5))                                      |
+| Topic                                                                                          | Description                                                                                                                                 |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Getting / setting page index](../usage/#settinggetting-the-active-page)                       | Learn how to set any page as an active page or get the index of the currently active page  ([Example](https://snippet.dhtmlx.com/qepjgf7h)) |
+| [Setting number of items displayed per page](../usage/#settinggetting-count-of-items-per-page) | Learn how to specify the number of items that should be displayed on each page ([Example](https://snippet.dhtmlx.com/9u3gsyd4))             |
+| [Getting number of items displayed per page](../usage/#settinggetting-count-of-items-per-page) | Learn how to get the count of items displayed per page ([Example](https://snippet.dhtmlx.com/9u3gsyd4))                                     |
+| [Getting total page count](../usage/#getting-total-number-of-pages)                            | Learn how to get the total number of pages ([Example](https://snippet.dhtmlx.com/k5j6acc5))                                                 |
 
 
 ## API reference
 
 In this section you can find out corresponding references of Pagination API.
 
-| Topic                                              | Description                                            |
-| -------------------------------------------------- | ------------------------------------------------------ |
-| [Pagination methods](../../category/pagination-methods/)       | Check the list of Pagination methods                         |
-| [Pagination events](../../category/pagination-events/)         | Check the list of Pagination events                          |
-| [Pagination properties](../../category/pagination-properties/) | Check the list of Pagination properties                      |
+| Topic                                                          | Description                             |
+| -------------------------------------------------------------- | --------------------------------------- |
+| [Pagination methods](../../category/pagination-methods/)       | Check the list of Pagination methods    |
+| [Pagination events](../../category/pagination-events/)         | Check the list of Pagination events     |
+| [Pagination properties](../../category/pagination-properties/) | Check the list of Pagination properties |
 
 ## Common functionality
 

@@ -16,9 +16,9 @@ In this section you can find out the ways of Calendar initialization and localiz
 
 | Topic                                    | Description                                                                                    |
 | :--------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [Basic initialization](../how_to_start/) | Learn how to initialize Calendar ([Example]((https://snippet.dhtmlx.com/xcw19e52)))            |
-| [Date picker](../datepicker/)            | Learn how to create Calendar as a date picker ([Example](https://snippet.dhtmlx.com/mj7jr6ro)) |
-| [Localization](../localizing_calendar/)  | Learn how to localize Calendar ([Example](https://snippet.dhtmlx.com/tn40a0w8))                |
+| [Basic initialization](../how_to_start/) | Learn how to initialize a Calendar ([Example]((https://snippet.dhtmlx.com/xcw19e52)))            |
+| [Date picker](../datepicker/)            | Learn how to use a Calendar as a date picker ([Example](https://snippet.dhtmlx.com/mj7jr6ro)) |
+| [Localization](../localizing_calendar/)  | Learn how to localize a Calendar ([Example](https://snippet.dhtmlx.com/tn40a0w8))                |
 
 
 ### Integration
