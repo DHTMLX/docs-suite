@@ -253,10 +253,10 @@ ribbon.data.getLength("block1");
 
 ### Iterating through controls
 
-You can work with all (or some) Ribbon controls with the help of the **map()** method of TreeCollection:
+You can work with all (or some) Ribbon controls with the help of the **forEach()** method of TreeCollection:
 
 ~~~js
-ribbon.data.map(function(item){
+ribbon.data.forEach(function(item){
     // remove all icons
     item.icon = "";
 });
@@ -265,23 +265,23 @@ ribbon.paint();
 
 ### Iterating through children
 
-To iterate through all controls in a particular block, pass one more parameter to **map()** - the ID of the block:
+To iterate through all controls in a particular block, pass one more parameter to **forEach()** - the ID of the block:
 
 ~~~js
-ribbon.data.map(function(item){
+ribbon.data.forEach(function(item){
     // remove all icons
     item.icon = "";
 },"bl_1");
 ribbon.paint();
 ~~~
 
-If you want to iterate only through immediate children, pass a third parameter - *false*:
+If you want to iterate only through immediate children, pass a third parameter - *1*:
 
 ~~~js
-ribbon.data.map(function(item){
-    /// remove all icons
+ribbon.data.forEach(function(item){
+    // remove all icons
     item.icon = "";
-},"bl_1",false);
+}, "bl_1", 1);
 ribbon.paint();
 ~~~
 

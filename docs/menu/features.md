@@ -83,7 +83,7 @@ In this section you may study how to add and remove, hide and show, enable and d
 | [Adding](../work_with_menu/#adding-menu-items) / [removing items](../work_with_menu/#removing-menu-items) | Learn how to add and remove items in Menu ([Example](https://snippet.dhtmlx.com/nood4bfx))                                                                       |
 | [Updating an item](../../tree_collection/api/treecollection_update_method/)                               | Learn how to update items in Menu ([Example](https://snippet.dhtmlx.com/321il6oc))                                                                               |
 | Setting item's configuration                                                                              | Learn how to [set a text label for menu item](../work_with_menu/#setting-item-text) or [add a shortcut to a menu option](../work_with_menu/#setting-item-hotkey) |
-| [Rearranging items](../work_with_menu/#rearranging-menu-items)                                            | Learn how to move menu items to different positions                                                                                                              |
+| [Rearranging items](../work_with_menu/#rearranging-menu-items)                                            | Learn how to move menu items to another position                                                                                                             |
 | [Iterating items](../work_with_menu/#iterating-menu-items)                                                | Learn how to apply the necessary logic to all (or some) menu items                                                                                               |
 
 
