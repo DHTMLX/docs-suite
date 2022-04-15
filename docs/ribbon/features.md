@@ -74,7 +74,7 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 | Topic                                                                                      | Description                                                                                                    |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
 | [Disabling / enabling controls](../operating_ribbon/#disabling-and-enabling-controls)      | Learn how to disable or enable controls on a page dynamically ([Example](https://snippet.dhtmlx.com/l3f8pq2g)) |
-| [Is disabled](../operating_ribbon/#checking-if-a-ribbon-item-is-disabled)                  | Learn how to check whether a control is disabled                                                               |
+| [Is disabled](../operating_ribbon/#checking-if-a-ribbon-item-is-disabled)                  | Learn how to check whether a control is disabled on the page                                                            |
 | [Hiding / showing controls](../operating_ribbon/#hiding-and-showing-controls)              | Learn how to hide or show controls dynamically ([Example](https://snippet.dhtmlx.com/1jkf7954))                |
 | [Setting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to change the value or state of a control [Example](https://snippet.dhtmlx.com/i7kabram)             |
 | [Getting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to get the current value or state of a control [Example](https://snippet.dhtmlx.com/coei9fys)        |
@@ -103,7 +103,7 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 
 ## API reference
 
-In this section you can find out corresponding references of Ribbon and Ribbon controls API.
+In this section you can find out corresponding references of Ribbon and its controls API.
 
 | Topic                                                          | Description                                              |
 | -------------------------------------------------------------- | -------------------------------------------------------- |
@@ -125,7 +125,7 @@ In this section you can find out corresponding references of Ribbon and Ribbon c
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Menu.
+In this section you will learn about common functionality of the library which can be useful while working with Ribbon.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
