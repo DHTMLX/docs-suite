@@ -90,7 +90,7 @@ In this section you can find out corresponding references of Tabbar API.
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Layout.
+In this section you will learn about common functionality of the library which can be useful while working with Tabbar.
 
 | Topic                                                         | Description                                                                             |
 | ------------------------------------------------------------- | --------------------------------------------------------------------------------------- |

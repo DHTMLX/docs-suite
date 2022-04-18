@@ -78,7 +78,7 @@ In this section you can find out corresponding references of Slider API.
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Ribbon.
+In this section you will learn about common functionality of the library which can be useful while working with Slider.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |

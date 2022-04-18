@@ -17,7 +17,7 @@ In this section you can find out the ways of Colorpicker initialization and loca
 | Topic                                                                  | Description                                                                                     |
 | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | [Basic initialization](../how_to_start/)                               | Learn how to initialize Colorpicker ([Example](https://snippet.dhtmlx.com/ezk8rk4m))            |
-| [Colorpicker inside Popup](../how_to_start/#initialization-in-a-popup) | Learn how to initialize Colorpicker in a popup ([Example](https://snippet.dhtmlx.com/ezk8rk4m)) |
+| [Colorpicker inside Popup](../how_to_start/#initialization-in-a-popup) | Learn how to initialize Colorpicker in a popup ([Example](https://snippet.dhtmlx.com/kw3e0h4j)) |
 | [Localization](../localizing_colorpicker/)                             | Learn how to localize Colorpicker ([Example](https://snippet.dhtmlx.com/l870h1gh))              |
 
 
