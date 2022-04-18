@@ -46,18 +46,19 @@ In this section you can find out how to initialize Slider in different modes and
 
 ## How to customize DHTMLX Slider
 
-
 | Topic                                               | Description                                                                                      |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | [Custom scale](https://snippet.dhtmlx.com/jsfxnplp) | The example shows how to customize the Slider scale                                              |
 | [Styling Slider](../customization/)                 | Learn how to change the look and feel of Slider ([Example](https://snippet.dhtmlx.com/ewizud5e)) |
-| [List of CSS classes](../../helpers/base_elements/)                   | A set of CSS classes provided by the DHTMLX library                                            |
+| [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                                              |
 
 ## How to work with DHTMLX Slider
 
+
+
 | Topic                                                             | Description                                                                                         |
 | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| [Setting value for Slider](../usage/#setting-value)               | Learn how to set the value for Slider dynamically ([Example](https://snippet.dhtmlx.com/shw55sub))  |
+| [Setting the value of Slider](../usage/#setting-value)            | Learn how to set the value for Slider dynamically ([Example](https://snippet.dhtmlx.com/shw55sub))  |
 | [Getting the value of Slider](../usage/#getting-value)            | Learn how to get the current value of Slider ([Example](https://snippet.dhtmlx.com/xlb8nbdx))       |
 | [Disabling / enabling Slider](../usage/#disablingenabling-slider) | Learn how to disable and enable a Slider on the page [Example](https://snippet.dhtmlx.com/po9hsc2l) |
 | [Is disabled](../usage/#checking-if-a-slider-is-disabled)         | Learn how to check whether a Slider is disabled ([Example](https://snippet.dhtmlx.com/fbo18fue))    |
@@ -69,11 +70,11 @@ In this section you can find out how to initialize Slider in different modes and
 
 In this section you can find out corresponding references of Slider API.
 
-| Topic                                                       | Description                                               |
-| ----------------------------------------------------------- | --------------------------------------------------------- |
-| [Slider methods](../../category/slider-methods/)          | Check the list of Slider methods                         |
-| [Slider events](../../category/slider-events/)            | Check the list of Slider events                          |
-| [Slider properties](../../category/slider-properties/)    | Check the list of Slider properties                      |
+| Topic                                                  | Description                         |
+| ------------------------------------------------------ | ----------------------------------- |
+| [Slider methods](../../category/slider-methods/)       | Check the list of Slider methods    |
+| [Slider events](../../category/slider-events/)         | Check the list of Slider events     |
+| [Slider properties](../../category/slider-properties/) | Check the list of Slider properties |
 
 ## Common functionality
 

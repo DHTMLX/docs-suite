@@ -131,6 +131,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
+| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Layout cells                       |
 | [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
 
 ## Any questions left?
