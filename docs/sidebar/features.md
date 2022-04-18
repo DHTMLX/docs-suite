@@ -110,18 +110,23 @@ In this section you can learn how to customize a Sidebar.
 
 In this section you can find out corresponding references of Sidebar and its controls API.
 
+### Sidebar API
+
 | Topic                                                       | Description                                               |
 | ----------------------------------------------------------- | --------------------------------------------------------- |
 | [Sidebar methods](../../category/sidebar-methods/)          | Check the list of Sidebar methods                         |
 | [Sidebar events](../../category/sidebar-events/)            | Check the list of Sidebar events                          |
 | [Sidebar properties](../../category/sidebar-properties/)    | Check the list of Sidebar properties                      |
+| [TreeCollection API](../../tree_collection/)                | Check the API of TreeCollection to work with Sidebar data |
+
+### Sidebar controls API
+
 | [Custom HTML properties](../api/api_customhtml_properties/) | Check the list of properties of the Custom HTML control   |
 | [MenuItem properties](../api/api_menuitem_properties/)      | Check the list of properties of the MenuItem control      |
 | [NavItem properties](../api/api_navitem_properties/)        | Check the list of properties of the NavItem control       |
 | [Separator properties](../api/api_separator_properties/)    | Check the list of properties of the Separator control     |
 | [Spacer properties](../api/api_spacer_properties/)          | Check the list of properties of the Spacer control        |
 | [Title properties](../api/api_title_properties/)            | Check the list of properties of the Title control         |
-| [TreeCollection API](../../tree_collection/)                | Check the API of TreeCollection to work with Sidebar data |
  
   
 ## Common functionality
@@ -132,7 +137,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
-| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Layout cells                       |
+| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Sidebar                      |
 | [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
 
 ## Any questions left?

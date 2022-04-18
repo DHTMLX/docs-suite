@@ -76,8 +76,8 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 | [Disabling / enabling controls](../operating_ribbon/#disabling-and-enabling-controls)      | Learn how to disable or enable controls on a page dynamically ([Example](https://snippet.dhtmlx.com/l3f8pq2g)) |
 | [Is disabled](../operating_ribbon/#checking-if-a-ribbon-item-is-disabled)                  | Learn how to check whether a control is disabled on the page                                                            |
 | [Hiding / showing controls](../operating_ribbon/#hiding-and-showing-controls)              | Learn how to hide or show controls dynamically ([Example](https://snippet.dhtmlx.com/1jkf7954))                |
-| [Setting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to change the value or state of a control [Example](https://snippet.dhtmlx.com/i7kabram)             |
-| [Getting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to get the current value or state of a control [Example](https://snippet.dhtmlx.com/coei9fys)        |
+| [Setting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to change the value or state of a control ([Example](https://snippet.dhtmlx.com/i7kabram))             |
+| [Getting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to get the current value or state of a control ([Example](https://snippet.dhtmlx.com/coei9fys))        |
 
 ### How to work with Ribbon data
 
@@ -105,11 +105,20 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 
 In this section you can find out corresponding references of Ribbon and its controls API.
 
+### Ribbon API
+
 | Topic                                                          | Description                                              |
 | -------------------------------------------------------------- | -------------------------------------------------------- |
 | [Ribbon methods](../../category/ribbon-methods/)               | Check the list of Ribbon methods                         |
 | [Ribbon events](../../category/ribbon-events/)                 | Check the list of Ribbon events                          |
 | [Ribbon properties](../../category/ribbon-properties/)         | Check the list of Ribbon properties                      |
+| [TreeCollection API](../../tree_collection/)                   | Check the API of TreeCollection to work with Ribbon data |
+
+
+### Ribbon controls API
+
+| Topic                                                          | Description                                              |
+| -------------------------------------------------------------- | -------------------------------------------------------- |
 | [Block properties](../api/api_block_properties/)               | Check the list of properties of the Block control        |
 | [Button properties](../api/api_button_properties/)             | Check the list of properties of the Button control       |
 | [Custom HTML properties](../api/api_customhtml_properties/)    | Check the list of properties of the Custom HTML control  |
@@ -120,7 +129,6 @@ In this section you can find out corresponding references of Ribbon and its cont
 | [Separator properties](../api/api_separator_properties/)       | Check the list of properties of the Separator control    |
 | [Spacer properties](../api/api_spacer_properties/)             | Check the list of properties of the Spacer control       |
 | [Title properties](../api/api_title_properties/)               | Check the list of properties of the Title control        |
-| [TreeCollection API](../../tree_collection/)                   | Check the API of TreeCollection to work with Ribbon data |
 
 
 ## Common functionality
@@ -131,7 +139,7 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
-| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Layout cells                       |
+| [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Ribbon                     |
 | [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
 
 ## Any questions left?
