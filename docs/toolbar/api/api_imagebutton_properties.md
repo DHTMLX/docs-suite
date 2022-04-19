@@ -48,6 +48,11 @@ description: You can explore the ImageButton properties of Toolbar in the docume
 			<td><b>countColor</b></td>
 			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
 		</tr>
+		<tr>
+			<td><b>multiClick</b></td>
+			<td>(<i>boolean</i>) if <i>true</i> - the "click" event will fire multiple times when the button is clicked and held; if <i>false</i> - the "click" event will fire on each click of the button
+           </td>
+		</tr>
         <tr>
 			<td><b>hidden</b></td>
 			<td>(<i>boolean</i>) defines whether a button is hidden</td>
