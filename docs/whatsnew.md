@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.3
+----------------
+
+Released on April 25, 2022
+
+### Fixes
+
+- Form. Combo control. Fix the issue with re-setting of the same value of the readonly Combo control after the `clear()` method of Form was called
+- Form. Fix the issue which caused the `getValue()` method to return the `null` value as a string
+- Grid. Fix the issue with filtering of a big data set which caused the symbols to get lost when typing them into the header filter. Now you have more time for typing symbols into the input filter of Grid
+- Toolbar. Fix the issue which caused the `getState()` method not to return the value of a datePicker 
+- Vault and Suite. Fix the conflict appeared between CSS styles of the Vault and Suite scrollbars when including source files of the components to the one page
+
+
 Version 7.3.2
 ----------------
 
