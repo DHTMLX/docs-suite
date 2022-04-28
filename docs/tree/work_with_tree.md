@@ -92,16 +92,25 @@ The method can also take a second parameter to configure the editing process. It
         <tr>
 			<td><b>mode</b></td>
 			<td>(<i>string</i>) the type of an editor:
-				<ul><li>"text" for an input</li>
+				<ul><li>"text" (by default) for an input</li>
 				<li>"select" for a select</li></ul>
 			</td>
 		</tr>
 		<tr>
 			<td><b>options</b></td>
-			<td>(<i>array</i>) optional, an array of additional options</td>
+			<td>(<i>array</i>) optional, an array of additional options<br> This property works only with <i>mode: "select"</i></td>
 		</tr>
     </tbody>
 </table>
+<br>
+
+For instance:
+
+~~~js
+tree.events.on("itemdblclick", function (id) {
+    tree.editItem(id,{ mode: "select", options: [1, 2, 3, 4, 5] });
+});
+~~~
 
 ## Setting/getting Tree state
 

@@ -50,6 +50,7 @@ In this section you can learn how to customize a Timepicker.
 | Topic                                   | Description                                                                                          |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | [Styling Timepicker](../customization/) | Learn how to change the look and feel of Timepicker ([Example](https://snippet.dhtmlx.com/n4xfu4e9)) |
+| [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                                               |
 
 
 ## How to work with DHTMLX Timepicker

@@ -3809,6 +3809,7 @@ module.exports = {
                     "tree/api/tree_editable_config",
                     "tree/api/tree_eventhandlers_config",
                     "tree/api/tree_icon_config",
+                    "tree/api/tree_isfolder_config",
                     "tree/api/tree_itemheight_config",
                     "tree/api/tree_keynavigation_config",
                     "tree/api/tree_rootid_config",

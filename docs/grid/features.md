@@ -228,9 +228,7 @@ In this section you will know how to export Grid to different formats.
 
 ## API reference
 
-In this section you can find out corresponding references of Form and Form controls API.
-
-### Form API
+In this section you can find out corresponding references of Grid API.
 
 | Topic                                                       | Description                                                      |
 | ----------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -238,7 +236,7 @@ In this section you can find out corresponding references of Form and Form contr
 | [Grid events](../api/api_overview/#grid-events)             | Check the list of Grid events                                    |
 | [Grid properties](../api/api_overview/#grid-properties)     | Check the list of Grid properties                                |
 | [Grid column properties](../api/api_gridcolumn_properties/) | Check the list of properties of a Grid column                    |
-| [DataCollection API](../data_collection/)                   | Check the API of DataCollection to work with Grid data           |
+| [DataCollection API](../../data_collection/)                   | Check the API of DataCollection to work with Grid data           |
 | [Selection API](../../category/selection-api/)              | Check the API of Selection to manage the selection of Grid cells |
 
 
