@@ -99,6 +99,14 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 /* end Header link */
 
+/* icons styles */
+
+.iconExternalLink_I5OW { /* hides the link icon */
+    display: none;
+}
+
+/* end icons styles */
+
 /* buttons */
 
 .support_btn{
