@@ -190,6 +190,14 @@ code {
 
 /* end small code block */
 
+/* styles for block of code */
+
+.token-line.theme-code-block-highlighted-line{ /* added after updating to 2.0.0-beta.19 */
+    background-color: rgb(156 159 166 / 30%);
+}
+
+/* end styles for block of code */
+
 /* list */
 
 .markdown ul  {
