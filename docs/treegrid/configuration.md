@@ -36,7 +36,7 @@ Starting from v6.5, there is the ability to align data in a column as well as to
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
-        { id: "name", header:  [{ title: "Name", align: "center" }], align: "right"} 
+        { id: "name", header:  [{ text: "Name", align: "center" }], align: "right"} 
         // more options
     ],
     data: dataset
