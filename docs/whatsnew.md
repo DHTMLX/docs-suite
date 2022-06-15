@@ -8,6 +8,40 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.4
+----------------
+
+Released on June 07, 2022
+### Fixes
+
+- Calendar. Fix the issue with a miscalculation of number of the last week of year
+- Combobox. Fix the issue with setting values if the widget is disabled
+- Custom scroll. Fix the issue with custom scrolling on MacOS
+- Form. Fix the issue with validation of the combo component. The ID is validated instead of value
+- Form. Fix the issue with sending the html form (if *dhx.Form* is included into the *form* tag) when pressing the "enter" key, if any input field is in focus
+- Form. Fix the issue with activating/displaying the initially hidden control (`hidden: true`) of the "container" form using the `show()` method
+- Form. Fix the issue with including a toolbar into the "container" form (errors in console)
+- Grid. Fix the issue with selection when adding spans into the grid component
+- Grid. Fix the issue with reselection a cell after calling the `grid.selection.removeCell()` metod
+- Layout. Fix the issue with the initially collapsed cell which includes the `min-width` and `min-height` settings. Instead of being collapsed, the cell takes the specified min sizes
+- Layout. Fix the issue with dynamic resizing a cell when resizing a viewport (in some cases)
+- Layout. Fix the issue with resizing cells which contain the iframe element
+- Tree. Fix the issue with dynamic loading of the child elements, if the url for autoloading includes "?"
+
+Version 7.3.3
+----------------
+
+Released on April 25, 2022
+
+### Fixes
+
+- Form. Combo control. Fix the issue with re-setting of the same value of the readonly Combo control after the `clear()` method of Form was called
+- Form. Fix the issue which caused the `getValue()` method to return the `null` value as a string
+- Grid. Fix the issue with filtering of a big data set which caused the symbols to get lost when typing them into the header filter. Now you have more time for typing symbols into the input filter of Grid
+- Toolbar. Fix the issue which caused the `getState()` method not to return the value of a datePicker 
+- Vault and Suite. Fix the conflict appeared between CSS styles of the Vault and Suite scrollbars when including source files of the components to the one page
+
+
 Version 7.3.2
 ----------------
 
