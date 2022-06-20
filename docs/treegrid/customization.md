@@ -75,7 +75,9 @@ You can easily set some styling to the text of footer cells by applying some inl
 		text-decoration: underline;
 	}    
 </style>
+~~~
 
+~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", { 
 	columns: [
 	  	{

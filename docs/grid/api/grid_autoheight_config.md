@@ -40,4 +40,4 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 
 [comment]: # (@relatedapi: grid/api/grid_data_config.md)
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autoheight-for-columns)
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#autoheight-for-rows)
