@@ -45,8 +45,6 @@ In this section you can find out how to configure the size, alignment and visibi
 
 | Topic                                                                                     | Description                                                                                                                                                   |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring sizes of tabs](../configuring_tabbar/#size-of-tabs)                          | Learn how to configure the height and width for tabs ([Example](https://snippet.dhtmlx.com/yy841z3j))                                                         |
-| [Configuring autowidth and autoheight for tabs](../configuring_tabbar/#autosize-for-tabs) | Learn how to configure autoheight and autowidth for tabs ([Example 1](https://snippet.dhtmlx.com/mlzko8am), [Example 2](https://snippet.dhtmlx.com/pqvycp1c)) |
 | [Adding close buttons for tabs](../configuring_tabbar/#close-buttons-for-tabs)            | Learn how to equip tabs with close buttons  [Example](https://snippet.dhtmlx.com/xqthiy66)                                                                    |
 | [Making tabs disabled](../configuring_tabbar/#disabled-tabs)                              | Learn how to initialize Tabbar with several disabled tabs [Example](https://snippet.dhtmlx.com/xqthiy66)                                                      |
 | [Configuring alignment of tabs](../configuring_tabbar/#alignment)                         | Learn how to configure alignment of tabs in Tabbar ([Example](https://snippet.dhtmlx.com/bctscs71))                                                           |
@@ -54,12 +52,14 @@ In this section you can find out how to configure the size, alignment and visibi
 
 
 
-## How to customize DHTMLX Tabbar
+## How to customize DHTMLX Tabbar and change its size
 
-In this section you can learn how to customize a Tabbar.
+In this section you can learn how to customize a Tabbar and configure the size of its tabs
 
 | Topic                                               | Description                                                                                       |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Width and height of tabs](../configuring_tabbar/#size-of-tabs)                          | Learn how to configure the width and height for tabs ([Example](https://snippet.dhtmlx.com/yy841z3j))                                                         |
+| [Auto-width and auto-height for tabs](../configuring_tabbar/#autosize-for-tabs) | Learn how to configure autoheight and autowidth for tabs ([Example 1](https://snippet.dhtmlx.com/mlzko8am), [Example 2](https://snippet.dhtmlx.com/pqvycp1c)) |
 | [Styling Tabbar](../customization/#styling-tabbar)  | Learn how to change the look and feel of Tabbar  ([Example](https://snippet.dhtmlx.com/47en9f0a)) |
 | [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                                               |
 

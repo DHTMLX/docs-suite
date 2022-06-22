@@ -73,6 +73,26 @@ In this section you can discover how to configure a Chart legend, scales, and se
 | [Changing configuration on the fly](https://snippet.dhtmlx.com/7umj531n)                                                            | Learn how to set configuration of a chart dynamically                                                                                                                                                                                                                                             |
 | [Displaying average values](../api/chart_maxpoints_config/)                                                                         | Learn how to display a huge data set in the chart ([Example](https://snippet.dhtmlx.com/6917eudu))                                                                                                                                                                                                |
 
+## How to customize DHTMLX Chart
+
+In this section you can learn how to customize Chart
+
+| Topic                                                                         | Description                                                                                     |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| [Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)                    | Learn how to define a color gradient for bars                                                   |
+| [Bar chart. Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)               | Learn how to show a stacked Bar chart                                                           |
+| [Bar chart. Base line](https://snippet.dhtmlx.com/6tls4qhf)                   | Learn how to set a base line for rendering items in Bar chart                                   |
+| [Bar chart. Show text](https://snippet.dhtmlx.com/o7ke2f1s)                   | Learn how to show and customize text values of data items in Bar chart                          |
+| [Legend position](https://snippet.dhtmlx.com/pgqf1yxj)                        | Learn how to customize legend position                                                          |
+| [Series. Point types](https://snippet.dhtmlx.com/cbj54wwu)                    | Learn how to customize the type of the points of data items in a series                         |
+| [Series. Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)               | Learn how to customize tooltips for series                                                      |
+| [Scales. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n) | Learn how to customize the text of scale labels                                                 |
+| [Scales. Dashed grid](https://snippet.dhtmlx.com/gnj1xc3r)                    | Learn how to make the grid lines dashed for Chart with scales                                   |
+| [Scales. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)           | Learn how to show/hide the grid lines (for x,y, or both scales                                  |
+| [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | Learn how to set the padding between the scale and the chart container                          |
+| [Styling (custom CSS)](../customization/)                                     | Learn how to change the look and feel of Chart ([Example](https://snippet.dhtmlx.com/p82iew5s)) |
+| [List of CSS classes](../../helpers/base_elements/)                           | A set of CSS classes provided by the DHTMLX library                                             |
+
 
 ## How to work with Chart data
 
@@ -93,27 +113,6 @@ In this section you will find out how to work with Chart series
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [Iterating over series](../usage/#iterating-over-series)               | Learn how to perform iteration over chart series ([Example](https://snippet.dhtmlx.com/4kbj4lmw))                      |
 | [Getting series configuration](../usage/#getting-series-configuration) | Learn how to get an object with the configuration of a certain series ([Example](https://snippet.dhtmlx.com/9jtscd9q)) |
-
-
-## How to customize DHTMLX Chart
-
-In this section you can learn how to customize Chart
-
-| Topic                                                                         | Description                                                                                     |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Styling (custom CSS)](../customization/)                                     | Learn how to change the look and feel of Chart ([Example](https://snippet.dhtmlx.com/p82iew5s)) |
-| [List of CSS classes](../../helpers/base_elements/)                           | A set of CSS classes provided by the DHTMLX library                                             |
-| [Bar chart. Gradient](https://snippet.dhtmlx.com/j3duyn2q)                    | Learn how to define a color gradient for bars                                                   |
-| [Bar chart. Stacked chart](https://snippet.dhtmlx.com/ilew1ds4)               | Learn how to show a stacked Bar chart                                                           |
-| [Bar chart. Base line](https://snippet.dhtmlx.com/6tls4qhf)                   | Learn how to set a base line for rendering items in Bar chart                                   |
-| [Bar chart. Show text](https://snippet.dhtmlx.com/o7ke2f1s)                   | Learn how to show and customize text values of data items in Bar chart                          |
-| [Legend position](https://snippet.dhtmlx.com/pgqf1yxj)                        | Learn how to customize legend position                                                          |
-| [Series. Point types](https://snippet.dhtmlx.com/cbj54wwu)                    | Learn how to customize the type of the points of data items in a series                         |
-| [Series. Tooltip template](https://snippet.dhtmlx.com/mbz7dkku)               | Learn how to customize tooltips for series                                                      |
-| [Scales. Text template for scale labels](https://snippet.dhtmlx.com/nhm3438n) | Learn how to customize the text of scale labels                                                 |
-| [Scales. Dashed grid](https://snippet.dhtmlx.com/gnj1xc3r)                    | Learn how to make the grid lines dashed for Chart with scales                                   |
-| [Scales. Without grid (lines)](https://snippet.dhtmlx.com/leqdx9qr)           | Learn how to show/hide the grid lines (for x,y, or both scales                                  |
-| [Scales. Custom paddings (indents)](https://snippet.dhtmlx.com/74onr5q1)      | Learn how to set the padding between the scale and the chart container                          |
 
 ## API reference
 

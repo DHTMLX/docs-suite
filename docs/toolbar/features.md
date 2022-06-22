@@ -75,10 +75,10 @@ In this section you can learn how to customize a Toolbar.
 | Topic                                                              | Description                                                                                            |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | [Adding HTML content into items](../menuitem/#adding-html-content) | Learn how to add a custom image into the toolbar item ([Example](https://snippet.dhtmlx.com/5n2b8x84)) |
-| [Styling Toolbar](../customization/#styling)                       | Learn how to customize Toolbar ([Example](https://snippet.dhtmlx.com/uekgjwsi))                        |
-| [List of CSS classes](../../helpers/base_elements/)                | A set of CSS classes provided by the DHTMLX library          |                                            
 | [Applying custom icons](../customization/#icons)                   | Learn how to add custom icons to Toolbar items ([Example](https://snippet.dhtmlx.com/4aiwvow7))        |
+| [Styling Toolbar](../customization/#styling)                       | Learn how to customize Toolbar ([Example](https://snippet.dhtmlx.com/uekgjwsi))                        |
 | [CSS template A](https://snippet.dhtmlx.com/toolbar_template_a)    | The example of a CSS template for DHTMLX Toolbar                                                       |
+| [List of CSS classes](../../helpers/base_elements/)                | A set of CSS classes provided by the DHTMLX library          |                                            
 
 
 ## How to work with DHTMLX Toolbar

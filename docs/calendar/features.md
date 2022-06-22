@@ -69,7 +69,7 @@ In this section you can discover how to configure Calendar
 | [Date ranges in one calendar](../configuring/#range-mode)                    | Learn how to create a calendar in the range mode ([Example](https://snippet.dhtmlx.com/2mrj53h0))           |
 | [Date ranges in two calendars](../operating_calendar/#linking-two-calendars) | Learn how to link two calendars for selecting a date range ([Example](https://snippet.dhtmlx.com/dxo54017)) |
 
-## How to customize Calendar
+## How to customize Calendar and change its size
 
 In this section you can learn how to change the Calendar width and style
 

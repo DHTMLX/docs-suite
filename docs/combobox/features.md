@@ -63,12 +63,12 @@ In this section you can learn how to customize Combobox and configure the height
 
 | Topic                                                                        | Description                                                                                                                    |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| [Height of Combobox elements](../configuration/#height-of-list-of-options-and-its-items)  | Learn how to set the height for list of Combobox options and its items ([Example](https://snippet.dhtmlx.com/vilg4l7w))        |
+| [Applying custom filtering](../customization/#custom-filter-for-options)   | Learn how to set a custom function for filtering Combobox options ([Example](https://snippet.dhtmlx.com/791incm9))             |
+| [Rendering HTML content](../configuration/#html-content-of-combobox-options) | Learn how to display HTML content as plain text to prevent XSS attacks ([Example](https://snippet.dhtmlx.com/e4dolhfs))        |
 | [Styling combobox (custom CSS)](../customization/#styling)                   | Learn how to change the look and feel of Combobox ([Example](https://snippet.dhtmlx.com/lldd739i))                             |
 | [Styling Combobox items](../configuration/#template-for-combobox-options)    | Learn how to customize the appearance of displaying options in the popup list ([Example](https://snippet.dhtmlx.com/z7cpj76i)) |
 | [List of CSS classes](../../helpers/base_elements/)                          | A set of CSS classes provided by the DHTMLX library                                                                            |
-| [Filtering by your own logic](../customization/#custom-filter-for-options)   | Learn how to set a custom function for filtering Combobox options ([Example](https://snippet.dhtmlx.com/791incm9))             |
-| [Rendering HTML content](../configuration/#html-content-of-combobox-options) | Learn how to display HTML content as plain text to prevent XSS attacks ([Example](https://snippet.dhtmlx.com/e4dolhfs))        |
-| [Setting height](../configuration/#height-of-list-of-options-and-its-items)  | Learn how to set the height for list of Combobox options and its items ([Example](https://snippet.dhtmlx.com/vilg4l7w))        |
 
 
 

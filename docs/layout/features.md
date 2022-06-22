@@ -44,16 +44,22 @@ In this section you can find out how to configure the size and visibility of cel
 
 | Topic                                                                                  | Description                                                                                                                                                                         |
 | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring sizes of a cell](../cell_configuration/#cell-size)                        | Learn how to configure the width and height of a cell ([Example](https://snippet.dhtmlx.com/miej9gb9))                                                                              |
-| [Configuring the size of a cell within a row](../api/cell/layout_cell_gravity_config/) | Learn how to define the "weight" of a cell in relation to other cells placed in the same row and within one parent ([Example](https://snippet.dhtmlx.com/1u521djj))                 |
 | [Making a cell resizable](../cell_configuration/#resizability)                         | Learn how to configure the ability to change the size of a cell by dragging its borders ([Example](https://snippet.dhtmlx.com/f1f49n35))                                            |
-| [Hiding cells](../cell_configuration/#hidden-cell)                                     | Learn how to render a layout with some hidden cells                                                                                                                                 |
+| [Making cells hidden](../cell_configuration/#hidden-cell)                                     | Learn how to render a layout with some hidden cells                                                                                                                                 |
 | [Adding the header to a cell](../cell_configuration/#cell-header)                      | Learn how to add a header for a cell ([Example](https://snippet.dhtmlx.com/bxqnzesl))                                                                                               |
-| [Configuring the header height](../cell_configuration/#height-of-a-header-cell)        | Learn how to configure the height of the header of a cell                                                                                                                           |
 | [Configuring content alignment](../api/cell/layout_cell_align_config/)                 | Learn how to set the alignment of content inside a cell ([Example](https://snippet.dhtmlx.com/4w1033c9))                                                                            |
 | [Configuring paddings](../api/cell/layout_cell_padding_config/)                        | Learn how to configure the distance between a cell and the Layout border ([Example](https://snippet.dhtmlx.com/tk6tpwwv))                                                           |
 | [Initializing a collapsed cell](../cell_configuration/#collapsibility)                 | Learn how to initialize a collapsed cell and provide the ability to expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), ([Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
 
+## How to configure sizes of Layout cells
+
+In this section you will learn how to configure sizes of Layout cells and their headers
+
+| Topic                                                                | Description                                                                                                           |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [Width and height of a cell](../cell_configuration/#cell-size)                        | Learn how to configure the width and height of a cell ([Example](https://snippet.dhtmlx.com/miej9gb9))                                                                              |
+| [Size of a cell within a row](../api/cell/layout_cell_gravity_config/) | Learn how to define the "weight" of a cell in relation to other cells placed in the same row and within one parent ([Example](https://snippet.dhtmlx.com/1u521djj))                 |
+| [Height of the cell's header](../cell_configuration/#height-of-a-header-cell)        | Learn how to configure the height of the header of a cell                                                                                                                           |
 
 ## How to customize Layout and its cells
 
@@ -61,10 +67,10 @@ In this section you can learn how to configure the style of Layout and its cells
 
 | Topic                                                                | Description                                                                                                           |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| [Styling (custom CSS)](../customization/)                            | Learn how to apply custom styles to a Layout cell ([Example](https://snippet.dhtmlx.com/pwxmf0lx))                    |
-| [List of CSS classes](../../helpers/base_elements/)                  | A set of CSS classes provided by the DHTMLX library                                                                   |
 | [Rendering HTML content](../api/cell/layout_cell_html_config/)       | Learn how to render HTML content in a cell on Layout initialization  ([Example](https://snippet.dhtmlx.com/6x76kgyq)) |
 | [Attaching HTML content](../api/cell/layout_cell_attachhtml_method/) | Learn how to add HTML content into a cell dynamically                                                                 |
+| [Styling (custom CSS)](../customization/)                            | Learn how to apply custom styles to a Layout cell ([Example](https://snippet.dhtmlx.com/pwxmf0lx))                    |
+| [List of CSS classes](../../helpers/base_elements/)                  | A set of CSS classes provided by the DHTMLX library                                                                   |
 
 
 ## How to work with Layout cells
@@ -78,7 +84,7 @@ In this section you will learn how to get a cell object, how to add or remove, h
 | [Iterating over all cells](../api/layout_foreach_method/)                        | Learn how to iterate over Layout cells ([Example](https://snippet.dhtmlx.com/9hfntqpy))                                                 |
 | [Getting a cell object](../api/layout_getcell_method/)                           | Learn how to get a configuration object of a particular cell                                                                            |
 | [Showing/hiding a cell](../work_with_layout/#hidingshowing-a-cell)               | Learn how to hide/show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example](https://snippet.dhtmlx.com/u0jd8ah3))        |
-| [Is visible](../work_with_layout/#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
+| [Checking visibility of a cell](../work_with_layout/#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
 | [Expanding/collapsing a cell](../work_with_layout/#collapsingexpanding-a-cell) | Learn how to collapse/expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk),[Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
 
 

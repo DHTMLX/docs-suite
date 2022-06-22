@@ -51,15 +51,15 @@ In this section you will find out how to configure and customize palette
 | [Displaying custom colors](../configuration/#list-of-custom-colors)      | Learn how to display a list of custom colors in the bottom part of ColorPicker                           |
 | [Configuring custom palette](../configuration/#custom-colors-in-palette) | Learn how to display Colorpicker with a custom palette ([Example](https://snippet.dhtmlx.com/097jjhb8))  |
 
-## How to customize DHTMLX Colorpicker
+## How to customize DHTMLX Colorpicker and change its size
 
-In this section you can learn how to customize Colorpicker
+In this section you can learn how to customize Colorpicker and change its width
 
 | Topic                                                          | Description                                                                                           |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| [Width of Colorpicker](../configuration/#width-of-colorpicker) | Learn how to set the necessary width of Colorpicker                                                   |
 | [Styling (custom CSS)](../customization/)                      | Learn how to change the look and feel of Colorpicker ([Example](https://snippet.dhtmlx.com/mnwi3sp0)) |
 | [List of CSS classes](../../helpers/base_elements/)            | A set of CSS classes provided by the DHTMLX library                                                   |
-| [Width of Colorpicker](../configuration/#width-of-colorpicker) | Learn how to set the necessary width of Colorpicker                                                   |
 
 ## How to work with DHTMLX Colorpicker
 
@@ -69,7 +69,7 @@ In this section you will find out how to set/get selected color, how to set/get 
 | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
 | [Setting selection to a color](../manipulating_colorpicker/#settinggetting-selected-color) | Learn how to select a certain color in Colorpicker ([Example](https://snippet.dhtmlx.com/h6oc5qsq))                               |
 | [Getting selected color](../manipulating_colorpicker/#settinggetting-selected-color)       | Learn how to get the code of a selected color                                                                                     |
-| [Setting custom colors](../manipulating_colorpicker/#settinggetting-custom-colors)         | Learn how to set custom colors to be displayed in the bottom part of Colorpicker ([Example](https://snippet.dhtmlx.com/z9jfv3fg)) |
+| [Setting custom colors](../manipulating_colorpicker/#settinggetting-custom-colors)         | Learn how to display custom colors in the bottom part of Colorpicker ([Example](https://snippet.dhtmlx.com/z9jfv3fg)) |
 | [Getting custom colors](../manipulating_colorpicker/#settinggetting-custom-colors)         | Learn how to return the codes of selected custom colors                                                                           |
 | [Changing Colorpicker mode](../manipulating_colorpicker/#settinggetting-current-mode)      | Learn how to change the current mode of Colorpicker ([Example](https://snippet.dhtmlx.com/0mhp5cp6))                              |
 | [Getting Colorpicker mode](../manipulating_colorpicker/#settinggetting-current-mode)       | Learn how to get the current mode of displaying Colorpicker                                                                       |

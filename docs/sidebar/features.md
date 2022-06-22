@@ -50,6 +50,19 @@ In this section you can find out how to initialize Sidebar, how to load data int
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Sidebar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                          |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Sidebar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                               |
 
+## How to customize DHTMLX Sidebar and change its size
+
+In this section you can learn how to customize a Sidebar and configure its size
+
+| Topic                                                                 | Description                                                                       |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| [Width of Sidebar](../api/sidebar_width_config/)                      | Learn how to set the necessary width of Sidebar                                   |
+| [Minimal width of Sidebar](../api/sidebar_minwidth_config/)           | Learn how to set the minimal width of Sidebar in the collapsed state              |
+| [Adding HTML content into items](https://snippet.dhtmlx.com/xb6av4qj) | The example shows how to add custom element into the Sidebar items                |
+| [Applying custom icons](../customization/#icons)                      | Learn how to add custom icons to Sidebar items                                    |
+| [Styling Sidebar](../customization/#styling)                          | Learn how to customize a Sidebar ([Example](https://snippet.dhtmlx.com/3mhhvvcr)) |
+| [CSS template A](https://snippet.dhtmlx.com/sidebar_template_a)       | The example of a CSS template for DHTMLX Sidebar                                  |
+| [List of CSS classes](../../helpers/base_elements/)                   | A set of CSS classes provided by the DHTMLX library                               |
 
 ## How to work with Sidebar
 
@@ -91,20 +104,6 @@ In this section you may study how to expand or collapse a Sidebar, how to disabl
 | [Is selected](../work_with_sidebar/#checking-if-a-sidebar-item-is-selected) | Learn how to check whether a Sidebar item is selected ([Example](https://snippet.dhtmlx.com/3odod5v1)) |
 | [Getting selected items](../work_with_sidebar/#getting-selected-items)      | Learn how to get the selected items                                                                    |
 | [Removing selection](../work_with_sidebar/#selectingunselecting-an-item)    | Learn how to remove selection from a selected item  ([Example](https://snippet.dhtmlx.com/3odod5v1))   |
-
-## How to customize DHTMLX Sidebar
-
-In this section you can learn how to customize a Sidebar.
-
-| Topic                                                                 | Description                                                                       |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| [Adding HTML content into items](https://snippet.dhtmlx.com/xb6av4qj) | The example shows how to add custom element into the Sidebar items                |
-| [Applying custom icons](../customization/#icons)                      | Learn how to add custom icons to Sidebar items                                    |
-| [Width of Sidebar](../api/sidebar_width_config/)                      | Learn how to set the necessary width of Sidebar                                   |
-| [Minimal width of Sidebar](../api/sidebar_minwidth_config/)           | Learn how to set the minimal width of Sidebar in the collapsed state              |
-| [Styling Sidebar](../customization/#styling)                          | Learn how to customize a Sidebar ([Example](https://snippet.dhtmlx.com/3mhhvvcr)) |
-| [CSS template A](https://snippet.dhtmlx.com/sidebar_template_a)       | The example of a CSS template for DHTMLX Sidebar                                  |
-| [List of CSS classes](../../helpers/base_elements/)                   | A set of CSS classes provided by the DHTMLX library                               |
 
 ## API reference
 

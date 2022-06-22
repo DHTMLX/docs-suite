@@ -49,19 +49,19 @@ In this section you can find out how to set the initial HTML content for Window,
 | [Overflowing browser window](../configuration/#overflowing-browser-window) | Learn how to allow a window to cross the borders of a browser window ([Example](https://snippet.dhtmlx.com/qfhdlzri)) |
 
 
-## How to customize DHTMLX Window
+## How to customize DHTMLX Window and change its size
 
 
-In this section you can learn how to customize a Window.
+In this section you can learn how to customize a Window and configure its sizes
 
 | Topic                                                               | Description                                                                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| [Styling Window (custom CSS)](../customization/#styling)            | Learn how to change the appearance of a Window ([Example](https://snippet.dhtmlx.com/t5mvhwx8))                     |
-| [List of CSS classes](../../helpers/base_elements/)                 | A set of CSS classes provided by the DHTMLX library                                                                 |     
+| [Sizes of a window](../configuration/#sizing)           | Learn how to configure the sizes of a window (the width, height, and the minimal dimensions of the window)          |
 | [Attaching HTML content](../usage/#attaching-content)               | Learn how to add some HTML content to a window dynamically ([Example](https://snippet.dhtmlx.com/6uelt44m))         |
 | [Adding custom buttons](../customization/#adding-controls)          | Learn how to add custom buttons to the header and footer of Window ([Example](https://snippet.dhtmlx.com/o7xlvvv3)) |
 | [Applying custom icons](../customization/#default-and-custom-icons) | Learn how to apply custom icons to the window ([Example](https://snippet.dhtmlx.com/ucozvx01))                      |
-| [Setting the sizes of a window](../configuration/#sizing)           | Learn how to configure the sizes of a window (the width, height, and the minimal dimensions of the window)          |
+| [Styling Window (custom CSS)](../customization/#styling)            | Learn how to change the appearance of a Window ([Example](https://snippet.dhtmlx.com/t5mvhwx8))                     |
+| [List of CSS classes](../../helpers/base_elements/)                 | A set of CSS classes provided by the DHTMLX library                                                                 |     
 
 ## How to work with DHTMLX Window
 
@@ -70,7 +70,7 @@ In this section you can learn how to show and hide the window, how to switch it 
 | Topic                                                                 | Description                                                                                                        |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Showing / hiding Window](../usage/#showinghiding-window)             | Learn how to show or hide a window on the page ([Example](https://snippet.dhtmlx.com/ee2vf9xw))                    |
-| [Is visible](../usage/#checking-visibility-of-window)                 | Learn how to check whether a window is visible on the page or not ([Example](https://snippet.dhtmlx.com/woz5c09h)) |
+| [Checking visibility of a window](../usage/#checking-visibility-of-window)                 | Learn how to check whether a window is visible on the page or not ([Example](https://snippet.dhtmlx.com/woz5c09h)) |
 | [Switching Window to the full screen mode](../usage/#fullscreen-mode) | Learn how to display a window in the full screen mode ([Example](https://snippet.dhtmlx.com/aftti5fy))             |
 | [Setting / getting Window position](../usage/#positioning-window)     | Learn how to set/get the position of a window on the fly ([Example](https://snippet.dhtmlx.com/hc3ronrk))          |
 | [Setting / getting Window size](../usage/#sizing-window)              | Learn how to change and get the size of a window dynamically ([Example](https://snippet.dhtmlx.com/0zqxydvm))      |

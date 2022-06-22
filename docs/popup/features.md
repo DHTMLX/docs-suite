@@ -31,22 +31,25 @@ In this section you can find out how to initialize Popup with different data com
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Popup with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                            |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Popup with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                 |
 
+## How to customize DHTMLX Popup
+
+In this section you may study how to change the style of Popup.
+
+| Topic                              | Description                                                                     |
+| ---------------------------------- | ------------------------------------------------------------------------------- |
+| [Styling Popup](../customization/) | Learn how to customize a Popup ([Example](https://snippet.dhtmlx.com/rd8zfw5h)) |
+| [List of CSS classes](../../helpers/base_elements/)                  | A set of CSS classes provided by the DHTMLX library                                                                   |
 
 ## How to work with DHTMLX Popup
+
+In this section you may learn how to show or hide a popup, how to check its visibility, how to configure the position of the component, and more.
 
 | Topic                                                               | Description                                                                                                                                                                         |
 | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Showing / hiding a Popup](../work_with_popup/#hidingshowing-popup) | Learn how to show a Popup at the specified position or hide a Popup ([Example 1](https://snippet.dhtmlx.com/aqzy536h), [Example 2](https://snippet.dhtmlx.com/bu4uj2ik))            |
 | [Auto positioning](https://snippet.dhtmlx.com/bz1ekc71)             | The example shows how to configure the auto positioning for Popup                                                                                                                   |
 | Prevent showing or hiding of a Popup                                | The example helps to understand how to prevent a Popup from being shown ([Example](https://snippet.dhtmlx.com/z788l8r7)) or hidden ([Example](https://snippet.dhtmlx.com/aocef9cv)) |
-| [Is visible](../work_with_popup/#checking-visibility-of-popup)      | Learn how to check whether a Popup is visible ([Example](https://snippet.dhtmlx.com/f614sdm3))                                                                                      |
-
-## How to customize DHTMLX Popup
-
-
-| Topic                              | Description                                                                     |
-| ---------------------------------- | ------------------------------------------------------------------------------- |
-| [Styling Popup](../customization/) | Learn how to customize a Popup ([Example](https://snippet.dhtmlx.com/rd8zfw5h)) |
+| [Checking visibility of a Popup](../work_with_popup/#checking-visibility-of-popup)      | Learn how to check whether a Popup is visible ([Example](https://snippet.dhtmlx.com/f614sdm3))                                                                                      |
 
 ## Common functionality
 

@@ -88,7 +88,7 @@ In this section you can learn how to configure the size and style of Form and it
 
 | Topic                                                             | Description                                                                                     |
 | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [Setting width and height of Form](../configuration/#widthheight) | Learn how to set the width and height for Form                                                  |
+| [Width and height of Form](../configuration/#widthheight) | Learn how to set the width and height for Form                                                  |
 | [Styling Form](../customization/)                                 | Learn how to customize a Form and its controls ([Example](https://snippet.dhtmlx.com/wnscgb50)) |
 | [List of CSS classes](../../helpers/base_elements/)               | A set of CSS classes provided by the DHTMLX library                                             |
  
@@ -102,7 +102,7 @@ In this section you will study how to send a Form to the server, how to disable 
 | [Disabling / enabling Form](../work_with_form/#enablingdisabling-a-form) | Learn how to enable/disable a Form [Example](https://snippet.dhtmlx.com/few71nk2)           |
 | [Is disabled](../work_with_form/#checking-if-a-form-is-disabled)                       | Learn how to check whether a Form or its control is disabled ([Example](https://snippet.dhtmlx.com/lthu8p6p))    |
 |[Hiding / showing Form](../work_with_form/#hidingshowing-a-form)| Learn how to hide/show a Form|
-| [Is visible](../work_with_form/#checking-if-a-form-is-visible)                       | Learn how to check whether a Form or its control is visible                             |
+| [Checking visibility of a Form](../work_with_form/#checking-if-a-form-is-visible)                       | Learn how to check whether a Form or its control is visible                             |
 | [Clearing Form](../work_with_form/#clearing-form)                                      | Learn how to clear the values and (or) validation of Form ([Example](https://snippet.dhtmlx.com/a64ih4ih))            |
 
 

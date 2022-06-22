@@ -53,18 +53,18 @@ In this section you can find out how to configure drag-n-drop in Tree, how to en
 | [Enabling/disabling key navigation](../configuration/#key-navigation)               | Learn how to enable and disable key navigation ([Example](https://snippet.dhtmlx.com/icql8fwq))                                                                                      |
 | [Activating inline editing](../configuration/#editing-of-items)                     | Learn how to activate inline editing on Tree initialization ([Example](https://snippet.dhtmlx.com/hyfz6ai7))                                                                         |
 
-## How to customize DHTMLX Tree
+## How to customize DHTMLX Tree and change its size
 
 In this section you can learn how to customize a Tree, its icons, and configure the height of Tree items.
 
 | Topic                                                                                        | Description                                                                                                                                                          |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Setting the height of an item](../tree_itemheight_config/)                                  | Learn how to set the height for Tree items ([Example](https://snippet.dhtmlx.com/w1qk9u7m))                                                                          |
+| [Height of Tree items](../tree_itemheight_config/)                                  | Learn how to set the height for Tree items ([Example](https://snippet.dhtmlx.com/w1qk9u7m))                                                                          |
 | [Setting template for rendering items](../setting_tree_appearance/#adding-template-to-items) | Learn how to define a template for rendering items in Tree and add event handlers to HTML elements of the template ([Example]( https://snippet.dhtmlx.com/hg3f50td)) |
 | [Applying custom icons](../setting_tree_appearance/#changing-icons)                          | Learn how to add custom icons to Tree items ([Example](https://snippet.dhtmlx.com/lpsgn3j7))                                                                         |
 | [Applying custom icons via data set](https://snippet.dhtmlx.com/h7mlx21q)                    | The example shows how to add custom icons when you prepare a data set                                                                                                |
-| [Styling (custom CSS)](../setting_tree_appearance/#styling)                                  | Learn how to customize the appearance of Tree ([Example](https://snippet.dhtmlx.com/ocv4p7zg))                                                                       |
 | [Custom toggle icon](https://snippet.dhtmlx.com/zapehxd3)                                    | The example shows how to customize the toggle icon                                                                                                                   |
+| [Styling (custom CSS)](../setting_tree_appearance/#styling)                                  | Learn how to customize the appearance of Tree ([Example](https://snippet.dhtmlx.com/ocv4p7zg))                                                                       |
 | [List of CSS classes](../../helpers/base_elements/)                                          | A set of CSS classes provided by the DHTMLX library                                                                                                                  |
 
 

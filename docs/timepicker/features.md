@@ -17,7 +17,7 @@ In this section you can find out the ways of Timepicker initialization, and lear
 | Topic                                                                                                                  | Description                                                                                      |
 | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | [Basic initialization](../initialization/)                                                                             | Learn how to initialize a Timepicker ([Example](https://snippet.dhtmlx.com/3d5u4cxx))            |
-| Timepicker inside Popup                                                                                                | Learn how to initialize a Timepicker in a popup ([Example](https://snippet.dhtmlx.com/7x6hlbqx)) |
+| Timepicker inside a Popup                                                                                                | Learn how to initialize a Timepicker in a popup ([Example](https://snippet.dhtmlx.com/7x6hlbqx)) |
 | [Timepicker in Calendar](https://snippet.dhtmlx.com/jkbfb202)                                                          | Check the example of Timepicker as a part of Calendar                                            |
 | Timepicker in Form: [example 1](https://snippet.dhtmlx.com/4k3o8p7b), [example 2](https://snippet.dhtmlx.com/ikyyekxq) | Check the examples of Timepicker as Form controls                                                |
 
