@@ -57,7 +57,7 @@ In this section you can learn how to customize a Window.
 | Topic                                                               | Description                                                                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
 | [Styling Window (custom CSS)](../customization/#styling)            | Learn how to change the appearance of a Window ([Example](https://snippet.dhtmlx.com/t5mvhwx8))                     |
-| [List of CSS classes](../../helpers/base_elements/)                 | A set of CSS classes provided by the DHTMLX library                                                                 |                                                                                                                 
+| [List of CSS classes](../../helpers/base_elements/)                 | A set of CSS classes provided by the DHTMLX library                                                                 |     
 | [Attaching HTML content](../usage/#attaching-content)               | Learn how to add some HTML content to a window dynamically ([Example](https://snippet.dhtmlx.com/6uelt44m))         |
 | [Adding custom buttons](../customization/#adding-controls)          | Learn how to add custom buttons to the header and footer of Window ([Example](https://snippet.dhtmlx.com/o7xlvvv3)) |
 | [Applying custom icons](../customization/#default-and-custom-icons) | Learn how to apply custom icons to the window ([Example](https://snippet.dhtmlx.com/ucozvx01))                      |

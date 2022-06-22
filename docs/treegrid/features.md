@@ -10,7 +10,7 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX TreeGrid
 
-In this section you can find out how to initialize TreeGrid, how to load data into the component and how to integrate TreeGrid into your applications
+In this section you can find out how to initialize TreeGrid, how to load data into the component and how to integrate TreeGrid into your applications.
 
 ### Initialization
 
@@ -44,7 +44,7 @@ In this section you can find out how to initialize TreeGrid, how to load data in
 
 ### How to configure columns
 
-In this section you will know how to configure TreeGrid columns on TreeGrid initialization
+In this section you will know how to configure TreeGrid columns on TreeGrid initialization.
 
 | Topic                                                        | Description                                                                                                            |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
@@ -65,7 +65,7 @@ In this section you will learn how to specify the necessary data formats for a s
 
 ### How to configure TreeGrid header and footer 
 
-In this section you can learn how to configure the header and footer of TreeGrid, how to configure their heights and styles
+In this section you can learn how to configure the header and footer of TreeGrid, how to configure their heights and styles.
 
 | Topic                                                                             | Description                                                                                                                 |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -85,7 +85,7 @@ In this section you will know how to add tooltips of the desired appearance with
 
 ### How to group cells in TreeGrid
 
-In this section you will find out how to group cells in TreeGrid and its header
+In this section you will find out how to group cells in TreeGrid and its header.
 
 | Topic                                                                            | Description                                                                                                             |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -93,6 +93,15 @@ In this section you will find out how to group cells in TreeGrid and its header
 | [Adding/removing spans](../usage/#addingremoving-spans)                          | Learn how to add, remove, and get spans of rows and columns via API methods                                             |
 | [Grouping rows and columns in the header](../api/api_treegridcolumn_properties/) | Learn how to specify spans for columns and rows in the TreeGrid header ([Example](https://snippet.dhtmlx.com/t8iust6j)) |
 
+### How to configure drag-n-drop
+
+In this section you will know how to configure the drag-n-drop functionality for TreeGrid.
+
+| Topic                                                                               | Description                                                                                                                                                         |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|[Drag-n-drop inside a treegrid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the treegrid ([Example](https://snippet.dhtmlx.com/ax5vs4a8))|
+|[Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)|  Learn how to configure drag-n-drop between treegrids ([Example](https://snippet.dhtmlx.com/43covmy2))|
+|[Copying of rows during drag-n-drop](../api/treegrid_dragcopy_config/)|	Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/a7pg38rr))|
 
 ## How to work with columns and rows
 
@@ -153,7 +162,7 @@ In this section you can learn how to configure the style of Grid and its cells
 | [List of CSS classes](../../helpers/base_elements/)                                  | A set of CSS classes provided by the DHTMLX library                                                                                                                           |
 
 
-## How to configure sizes of Grid and its cells
+## How to configure sizes of TreeGrid and its cells
 
 | Topic                                                                                       | Description                                                                                                                                    |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -225,15 +234,6 @@ In this section you will know how to export TreeGrid to different formats.
 | Topic                                                              | Description                                                                                            |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | [Exporting TreeGrid to XLSX and CSV](../usage/#exporting-treegrid) | Learn how to export TreeGrid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/zyfois4q)) |
-
-
-
-- **Drag-n-drop**
-- [Drag-n-drop](https://snippet.dhtmlx.com/43covmy2)
-- [Drag-n-drop copy](https://snippet.dhtmlx.com/a7pg38rr)
-- [Columns drag'n'drop](https://snippet.dhtmlx.com/ax5vs4a8)
-
-
 
 ## API reference
 

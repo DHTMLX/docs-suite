@@ -99,6 +99,16 @@ In this section you will find out how to group cells in Grid and its header
 | [Adding/removing spans](../usage/#addingremoving-spans)                      | Learn how to add, remove and get spans of rows and columns via API methods                                          |
 | [Grouping rows and columns in the header](../api/api_gridcolumn_properties/) | Learn how to specify spans for columns and rows in the Grid header ([Example](https://snippet.dhtmlx.com/eol76o68)) |
 
+### How to configure drag-n-drop
+
+In this section you will know how to configure the drag-n-drop functionality for Grid.
+
+| Topic                                                                               | Description                                                                                                                                                         |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|[Drag-n-drop inside a grid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the grid ([Example](https://snippet.dhtmlx.com/dfdlzpqb))|
+|[Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)|  Learn how to configure drag-n-drop between grids ([Example](https://snippet.dhtmlx.com/qx9a86ax))|
+|[Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)|	Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz))|
+
 ## How to work with columns and rows
 
 In this section you will know how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns.
