@@ -173,18 +173,11 @@ In this section you will know how to add and remove columns and rows, how to hid
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [Grouping data](../usage/#grouping-data) | Learn how to divide data of TreeGrid into groups ([Example](https://snippet.dhtmlx.com/bue6zm6w)) |
 
+## How to work with data in TreeGrid
 
-## How to work with selection
+This section will tell you how to use **TreeGrid API** and **TreeCollection API** for working with data of TreeGrid, i.e. edit, add, remove, sort data, etc.
 
-In this section you will find the ways of work with selection functionality
-
-| Topic                                                | Description                                                                                                            |
-| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [Configuring selection](../configuration/#selection) | Learn how to configure the mode of selection of TreeGrid elements ([Example](https://snippet.dhtmlx.com/v0dyh06q))     |
-| [Working with selection](../usage_selection/)        | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell |
-| [Selection API](../../category/selection-api-1/)     | Learn how to use the API of Selection to manage the selection of TreeGrid cells                                        |
-
-## How to edit data in TreeGrid
+### How to edit data
 
 In this section you will find the ways of editing data in TreeGrid
 
@@ -195,7 +188,7 @@ In this section you will find the ways of editing data in TreeGrid
 | [Editing of a specific cell](../usage/#editing-data)                                  | Learn how to enable editing of a cell ([Example](https://snippet.dhtmlx.com/zm6wh1ss))                                                                                 |
 
 
-## How to sort data in TreeGrid
+### How to sort data
 
 In this section you will find the ways of sorting data in TreeGrid
 
@@ -206,7 +199,7 @@ In this section you will find the ways of sorting data in TreeGrid
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in TreeGrid ([Example](https://snippet.dhtmlx.com/bdwwhvls)) |
 
 
-## How to filter data in TreeGrid
+### How to filter data
 
 In this section you will find the ways of filtering data in TreeGrid
 
@@ -217,6 +210,15 @@ In this section you will find the ways of filtering data in TreeGrid
 | [Getting the header filter](../api/treegrid_getheaderfilter_method/)                           | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/vg5o912t))                                                     |
 | [Customizing filters in the header/footer](../configuration/#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a TreeGrid column ([Example](https://snippet.dhtmlx.com/jk64c5gr))              |
 
+## How to work with selection
+
+In this section you will find the ways of work with selection functionality
+
+| Topic                                                | Description                                                                                                            |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Configuring selection](../configuration/#selection) | Learn how to configure the mode of selection of TreeGrid elements ([Example](https://snippet.dhtmlx.com/v0dyh06q))     |
+| [Working with selection](../usage_selection/)        | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell |
+| [Selection API](../../category/selection-api-1/)     | Learn how to use the API of Selection to manage the selection of TreeGrid cells                                        |
 
 ## How to scroll TreeGrid
 

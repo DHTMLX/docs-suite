@@ -66,7 +66,7 @@ In this section you can learn how to customize a Sidebar and configure its size
 
 ## How to work with Sidebar
 
-In this section you may study how to expand or collapse a Sidebar, how to disable and enable, hide and show Sidebar controls, how to add new controls or remove them, how to work with selection functionality, and more.
+In this section you may study how to expand or collapse a Sidebar, how to disable and enable, hide and show Sidebar controls.
 
 ### How to collapse and expand Sidebar
 
@@ -86,7 +86,9 @@ In this section you may study how to expand or collapse a Sidebar, how to disabl
 | [Hiding / showing controls](../work_with_sidebar/#hiding-and-showing-controls)         | Learn how to hide or show controls dynamically ([Example](https://snippet.dhtmlx.com/5hsowdoy))                                                                    |
 
 
-### How to work with Sidebar data
+## How to work with data in Sidebar
+
+This section will tell you how to use **TreeCollection API** for working with data of Sidebar, i.e. add, update, remove, rearrange controls, etc.
 
 | Topic                                                                     | Description                                                                                                                                               |
 | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +98,9 @@ In this section you may study how to expand or collapse a Sidebar, how to disabl
 | [Removing controls](../work_with_sidebar/#removing-controls-from-sidebar) | Learn how to remove a control from Sidebar   ([Example](https://snippet.dhtmlx.com/ecp3etuf))                                                             |
 
 
-### How to work with selection
+## How to work with selection
+
+In this section you can learn how to work with selection functionality.
 
 | Topic                                                                       | Description                                                                                            |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
@@ -120,6 +124,8 @@ In this section you can find out corresponding references of Sidebar and its con
 
 ### Sidebar controls API
 
+| Topic                                                       | Description                                               |
+| ----------------------------------------------------------- | --------------------------------------------------------- |
 | [Custom HTML properties](../api/api_customhtml_properties/) | Check the list of properties of the Custom HTML control   |
 | [MenuItem properties](../api/api_menuitem_properties/)      | Check the list of properties of the MenuItem control      |
 | [NavItem properties](../api/api_navitem_properties/)        | Check the list of properties of the NavItem control       |

@@ -70,7 +70,7 @@ In this section you can learn how to customize a Tree, its icons, and configure 
 
 ## How to work with DHTMLX Tree
 
-In this section you may study how to expand or collapse Tree items, how to work with their state, how to add new items, update, or remove them, how to add and manipulate checkboxes, how to work with selection functionality, and more.
+In this section you may study how to expand or collapse Tree items, how to work with their state, and more.
 
 ### How to work with Tree items
 
@@ -89,7 +89,9 @@ In this section you may study how to expand or collapse Tree items, how to work 
 | [Checking/unchecking checkboxes](../work_with_tree/#checkuncheck-checkboxes) | Learn how to mark checkboxes of a Tree item as checked or unchecked ([Example](https://snippet.dhtmlx.com/uzz6uknx)) |
 | [Getting checked items](../work_with_tree/#get-checked-checkboxes)           | Learn how to get the list of all checked items in a tree ([Example](https://snippet.dhtmlx.com/cz7xypgz))            |
 
-### How to work with Tree data
+## How to work with data in Tree
+
+This section will tell you how to use **TreeCollection API** for working with data of Tree, i.e. add, update, remove, filter, sort items, etc.
 
 | Topic                                                         | Description                                                                                                                                      |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -100,7 +102,9 @@ In this section you may study how to expand or collapse Tree items, how to work 
 | [Sorting data](https://snippet.dhtmlx.com/3vttyh9o)           | The example shows how to sort data in Tree                                                                                                       |
 
 
-### How to work with selection 
+## How to work with selection 
+
+In this section you may study how to work with selection functionality.
 
 | Topic                                                       | Description                                                                                                                                                                       |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

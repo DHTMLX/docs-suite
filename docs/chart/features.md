@@ -94,15 +94,15 @@ In this section you can learn how to customize Chart
 | [List of CSS classes](../../helpers/base_elements/)                           | A set of CSS classes provided by the DHTMLX library                                             |
 
 
-## How to work with Chart data
+## How to work with data in Chart
 
-In this section you can discover how to apply the DataCollection API to work with data of Chart
+In this section you can discover how to apply the **DataCollection API** to work with data of Chart
 
 | Topic                                                                              | Description                                                                            |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart, i.e. add, remove, sort data, etc.                                    |
 | [Serializing chart data](../data_loading/#saving-and-restoring-state)              | Learn how to serialize the chart data ([Example](https://snippet.dhtmlx.com/rqvvpopp)) |
 | [Adding new data into Chart](../usage/#adding-items-into-chart) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))      |
-| [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart                                    |
 
 
 ## How to work with Chart series

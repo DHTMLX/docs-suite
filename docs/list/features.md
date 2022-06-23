@@ -69,20 +69,24 @@ In this section you can learn how to configure the height and style of List and 
 | [CSS template B](https://snippet.dhtmlx.com/list_template_b)                      | The example of a CSS template for DHTMLX List                                                                                                                                                                                                                                                                          |
 | [List of CSS classes](../../helpers/base_elements/)                  | A set of CSS classes provided by the DHTMLX library                                                                   |
 
-## How to work with List data
+## How to work with data in List
 
-In this section you may study how to add new data items into List, how to edit, update, or remove the existing ones, how to work with selection functionality, how to set focus on an item, and more.
+This section will tell you how to use **DataCollection API** for working with data of List, i.e. edit, add, remove, sort data, etc.
 
-### Editing/adding/removing items
+### How to edit, add, remove data
+
+In this section you may study how to add new data items into List, how to edit, update, or remove the items
 
 | Topic                                                          | Description                                                                                      |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [Editing item](../work_with_list/#updating-list-items)         | Learn how to update List items using Form  ([Example](https://snippet.dhtmlx.com/6jpn7a6h))      |
-| [Adding a new item](../work_with_list/#adding-items-into-list) | Learn how to add new items into List using Form ([Example](https://snippet.dhtmlx.com/f7cbdiqg)) |
+| [Editing items](../work_with_list/#updating-list-items)         | Learn how to update List items using Form  ([Example](https://snippet.dhtmlx.com/6jpn7a6h))      |
+| [Adding new items](../work_with_list/#adding-items-into-list) | Learn how to add new items into List using Form ([Example](https://snippet.dhtmlx.com/f7cbdiqg)) |
+| [Updating an item](../work_with_list/#updating-list-items)      | Learn how to update data of an item ([Example](https://snippet.dhtmlx.com/6jpn7a6h))          |
 | [Removing items](../work_with_list/#removing-items-from-list)  | Learn how to remove items from List  ([Example](https://snippet.dhtmlx.com/wmozu18g))            |
 
-### Sorting and filtering items
+### How to sort and filter data
 
+In this section you may study how to sort and filter data in List
 
 | Topic                                                     | Description                                                                       |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -90,8 +94,9 @@ In this section you may study how to add new data items into List, how to edit, 
 | [Sorting items](../work_with_list/#sorting-list-data)     | Learn how to sort data in List ([Example](https://snippet.dhtmlx.com/876meu9a))   |
 
 
-### How to work with selection
+## How to work with selection
 
+In this section you may study how to work with selection functionality
 
 | Topic                                                                                  | Description                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +108,9 @@ In this section you may study how to add new data items into List, how to edit, 
 | [Removing selection](../usage_selection/#unselecting-an-item)                          | Learn how to remove selection from a selected item(s)                                                                                                                                                                  |
 
 
-### How to work with item in focus
+## How to work with item in focus
+
+In this section you will learn how to set focus on an item and get the id/object of an item in focus
 
 | Topic                                                 | Description                                                                                                                  |
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |

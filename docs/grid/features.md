@@ -168,22 +168,9 @@ In this section you will know how to add and remove columns and rows, how to hid
 | [Showing / hiding a column](../usage/#hidingshowing-a-column) | Learn how to show and hide a column in Grid ([Example](https://snippet.dhtmlx.com/n4zjwsqj))              |
 | [Checking visibility of a column](../usage/#checking-visibility-of-a-column)       | Learn how to check whether a column is hidden   ([Example](https://snippet.dhtmlx.com/rdqhwnjv)                                                          |
 
-
-## How to work with selection
-
-In this section you will find the ways of work with selection functionality
-
-| Topic                                                                            | Description                                                                                                                                                             |
-| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Configuring selection](../configuration/#selection)                             | Learn how to configure the mode of selection of Grid elements ([Example](https://snippet.dhtmlx.com/ad6roqsx))                                                          |
-| [Enabling multiselection](../configuration/#multiple-selection-of-grid-cells)    | Learn how to enable multi-row/multi-cell selection in Grid ([Example](https://snippet.dhtmlx.com/4nj0e9ye))                                                             |
-| [Working with selection](../usage_selection/) | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell ([Example](https://snippet.dhtmlx.com/4nj0e9ye)) |
-| [Selection API](../../category/selection-api/)                                   | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
-| [Keyboard navigation](../configuration/#arrow-shortcut-keys)                     | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
-
 ## How to work with data in Grid
 
-This section will tell you how to use **Grid API** and **Data Collection API** for working with data of Grid, i.e. edit, add, remove, sort data, etc.
+This section will tell you how to use **Grid API** and **DataCollection API** for working with data of Grid, i.e. edit, add, remove, sort data, etc.
 
 ### How to edit data
 
@@ -219,7 +206,19 @@ In this section you will find the ways of filtering data in Grid
 | [Setting the type of a filter in the header/footer](../configuration/#headerfooter-content)    | Learn how to specify the type of the filter in the header/footer of a Grid column ([Example](https://snippet.dhtmlx.com/4qz8ng3c))                           |
 | [Filtering data](../usage/#filtering-data)                                                     | Learn how to filter grid data by the specified criteria ([Example 1](https://snippet.dhtmlx.com/g0zpjqi1), [Example 2](https://snippet.dhtmlx.com/12suognm)) |
 | [Customizing filters in the header/footer](../configuration/#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a Grid column ([Example](https://snippet.dhtmlx.com/gcidkxjg))              |
-| [Get header filter](../api/grid_getheaderfilter_method/)                                       | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/n8srjle3))                                                     |
+| [Getting the header filter](../api/grid_getheaderfilter_method/)                                       | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/n8srjle3))                                                     |
+
+## How to work with selection
+
+In this section you will find the ways of work with selection functionality
+
+| Topic                                                                            | Description                                                                                                                                                             |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Configuring selection](../configuration/#selection)                             | Learn how to configure the mode of selection of Grid elements ([Example](https://snippet.dhtmlx.com/ad6roqsx))                                                          |
+| [Enabling multiselection](../configuration/#multiple-selection-of-grid-cells)    | Learn how to enable multi-row/multi-cell selection in Grid ([Example](https://snippet.dhtmlx.com/4nj0e9ye))                                                             |
+| [Working with selection](../usage_selection/) | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell ([Example](https://snippet.dhtmlx.com/4nj0e9ye)) |
+| [Selection API](../../category/selection-api/)                                   | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
+| [Keyboard navigation](../configuration/#arrow-shortcut-keys)                     | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
 
 ## How to scroll Grid
 

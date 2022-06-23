@@ -83,9 +83,9 @@ In this section you will find out how to enable and disable Combobox, to show an
 | [Setting/removing focus](../work_with_combo/#settingremoving-focus)                      | Learn how to set focus to Combobox ([Example](https://snippet.dhtmlx.com/hp6b5sxe))                        |
 
 
-## How to work with Combobox data
+## How to work with data in Combobox
 
-In this section you can discover how to apply the DataCollection API to work with data of Combobox (for example, how to add, update, serialize, or remove data)
+In this section you can discover how to apply the **DataCollection API** to work with data of Combobox (for example, how to add, update, serialize, or remove data)
 
 
 | Topic                                                                                                                                | Description                                                                                                                 |

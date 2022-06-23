@@ -67,25 +67,31 @@ In this section you can learn how to configure the style of Menu and its control
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | [Configuring type of navigation](../api/menu_navigationtype_config/)             | Learn how to configure the action that opens menu options (click or pointer) ([Example](https://snippet.dhtmlx.com/uhv64cm7)) |
 | [Adding HTML content into items](../configuring_menu_items/#adding-html-content) | Learn how to add a custom image into the menu item ([Example](https://snippet.dhtmlx.com/2hr77egx))                           |
-| [Applying custom icons](../customization/#icons)                                 | Learn how to add custom icons to Menu items ([Example](https://snippet.dhtmlx.com/nkmz6ilv))                               |
+| [Applying custom icons](../customization/#icons)                                 | Learn how to add custom icons to Menu items ([Example](https://snippet.dhtmlx.com/nkmz6ilv))                                  |
 | [Styling Menu](../customization/#styling)                                        | Learn how to customize Menu ([Example](https://snippet.dhtmlx.com/kfy2th5n))                                                  |
 | [List of CSS classes](../../helpers/base_elements/)                              | A set of CSS classes provided by the DHTMLX library                                                                           |
 
-## How to work with Menu items
+## How to work with data in Menu
 
-In this section you may study how to add and remove, hide and show, enable and disable Menu items, and more.
+This section will tell you how to use **TreeCollection API** for working with data of Menu, i.e. edit, add, remove, rearrange items, etc.
 
 | Topic                                                                                                     | Description                                                                                                                                                      |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Enabling / disabling items](../work_with_menu/#disablingenabling-menu-options)                           | Learn how to disable and enable menu items ([Example](https://snippet.dhtmlx.com/zuoam7r7))                                                                      |
-| [Is disabled](../work_with_menu/#checking-if-a-menu-option-is-disabled)                                   | Learn how to check whether a menu item is disabled                                                                                                               |
-| [Showing / hiding items](../work_with_menu/#hidingshowing-menu-options)                                   | Learn how to hide and show menu items ([Example](https://snippet.dhtmlx.com/a9vbhxgd))                                                                           |
 | [Adding](../work_with_menu/#adding-menu-items) / [removing items](../work_with_menu/#removing-menu-items) | Learn how to add and remove items in Menu ([Example](https://snippet.dhtmlx.com/nood4bfx))                                                                       |
 | [Updating an item](../../tree_collection/api/treecollection_update_method/)                               | Learn how to update items in Menu ([Example](https://snippet.dhtmlx.com/321il6oc))                                                                               |
 | Setting item's configuration                                                                              | Learn how to [set a text label for menu item](../work_with_menu/#setting-item-text) or [add a shortcut to a menu option](../work_with_menu/#setting-item-hotkey) |
-| [Rearranging items](../work_with_menu/#rearranging-menu-items)                                            | Learn how to move menu items to another position                                                                                                             |
+| [Rearranging items](../work_with_menu/#rearranging-menu-items)                                            | Learn how to move menu items to another position                                                                                                                 |
 | [Iterating items](../work_with_menu/#iterating-menu-items)                                                | Learn how to apply the necessary logic to all (or some) menu items                                                                                               |
 
+## How to work with Menu items
+
+In this section you may study how to hide and show, enable and disable Menu items.
+
+| Topic                                                                           | Description                                                                                 |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [Enabling / disabling items](../work_with_menu/#disablingenabling-menu-options) | Learn how to disable and enable menu items ([Example](https://snippet.dhtmlx.com/zuoam7r7)) |
+| [Is disabled](../work_with_menu/#checking-if-a-menu-option-is-disabled)         | Learn how to check whether a menu item is disabled                                          |
+| [Showing / hiding items](../work_with_menu/#hidingshowing-menu-options)         | Learn how to hide and show menu items ([Example](https://snippet.dhtmlx.com/a9vbhxgd))      |
 
 ## How to work with selection
 

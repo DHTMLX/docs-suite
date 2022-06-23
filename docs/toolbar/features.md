@@ -81,11 +81,9 @@ In this section you can learn how to customize a Toolbar.
 | [List of CSS classes](../../helpers/base_elements/)                | A set of CSS classes provided by the DHTMLX library          |                                            
 
 
-## How to work with DHTMLX Toolbar
+## How to work with Toolbar controls
 
-In this section you may study how to disable and enable, hide and show Toolbar controls, how to iterate through controls, how to add new controls or remove them, how to work with selection functionality, and more.
-
-### How to work with Toolbar controls
+In this section you may study how to disable and enable, hide and show Toolbar controls, and more.
 
 | Topic                                                                                    | Description                                                                                                   |
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
@@ -96,7 +94,9 @@ In this section you may study how to disable and enable, hide and show Toolbar c
 | [Getting values/states of controls](../common_methods/#settinggetting-values-and-states) | Learn how to get the current value or state of a control ([Example](https://snippet.dhtmlx.com/kvttdgad))     |
 
 
-### How to work with Toolbar data
+## How to work with data in Toolbar
+
+This section will tell you how to use **TreeCollection API** for working with data of Toolbar, i.e. add, update, remove, rearrange controls, etc.
 
 | Topic                                                                  | Description                                                                                                                                               |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -106,7 +106,9 @@ In this section you may study how to disable and enable, hide and show Toolbar c
 | [Removing controls](../common_methods/#removing-controls-from-toolbar) | Learn how to remove a control from Toolbar   ([Example](https://snippet.dhtmlx.com/w8jcn1t2))                                                             |
 
 
-### How to work with selection
+## How to work with selection
+
+In this section you may study how to work with selection functionality.
 
 | Topic                                                                    | Description                                                                                               |
 | ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |

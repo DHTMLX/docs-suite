@@ -59,8 +59,8 @@ In this section you can learn how to configure the height and style of Dataview 
 
 | Topic                                                                                      | Description                                                                                                                                                                                                                                                                                                                      |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Height of Dataview](../configuration/#height-of-the-dataview)                     | Learn how to set the height for Dataview ([Example](https://snippet.dhtmlx.com/g1k2l4q0))                                                                                                                                                                                                                                        |
-| [Height of an item](../configuration/#height-of-an-item)                       | Learn how to set the height for Dataview items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
+| [Height of Dataview](../configuration/#height-of-the-dataview)                             | Learn how to set the height for Dataview ([Example](https://snippet.dhtmlx.com/g1k2l4q0))                                                                                                                                                                                                                                        |
+| [Height of an item](../configuration/#height-of-an-item)                                   | Learn how to set the height for Dataview items ([Example](https://snippet.dhtmlx.com/cth9mwrf))                                                                                                                                                                                                                                  |
 | [Setting template for rendering items](../configuration/#template-for-dataview-items)      | Learn how [to define a template](../configuration/#template-for-dataview-items) for rendering items in a dataview ([Example](https://snippet.dhtmlx.com/d6l6grr7)) and add [event handlers](../configuration/#event-handlers-for-the-template) to HTML elements of the template ([Example](https://snippet.dhtmlx.com/26873eql)) |
 | [Setting margins for items](../configuration/#margins-around-dataview-items)               | Learn how to set margins around Dataview items ([Example](https://snippet.dhtmlx.com/ozsuww1q))                                                                                                                                                                                                                                  |
 | [Styling Dataview items](../customization/#custom-styling-of-items)                        | Learn how to customize Dataview items ([Example](https://snippet.dhtmlx.com/kpnzizbf))                                                                                                                                                                                                                                           |
@@ -73,26 +73,33 @@ In this section you can learn how to configure the height and style of Dataview 
 | [CSS template E](https://snippet.dhtmlx.com/dataview_template_e)                           | The example of a CSS template for DHTMLX Dataview                                                                                                                                                                                                                                                                                |
 | [List of CSS classes](../../helpers/base_elements/)                                        | A set of CSS classes provided by the DHTMLX library                                                                                                                                                                                                                                                                              |
 
-## How to work with Dataview
+## How to work with data in Dataview
 
-In this section you may study how to add new data items into Dataview, how to edit, update, or remove the items, how to work with selection functionality, how to set focus on an item, and more.
+This section will tell you how to use **DataCollection API** for working with data of DataView, i.e. edit, add, remove, sort data, etc.
 
-### Editing/adding/removing items
+### How to edit, add, remove data
 
-| Topic | Description |
-| ----- | ----------- |
-| [Editing item's data](../manipulating_data/#editing-items)               | Learn how to edit an item by its id ([Example](https://snippet.dhtmlx.com/i09isp2d))              |
-| [Adding an item](../manipulating_data/#adding-items-into-dataview)       | Learn how to add a new item into data collection ([Example](https://snippet.dhtmlx.com/k4sbj47b)) |
-| [Removing an item](../manipulating_data/#removing-items-from-dataview)   | Learn how to remove an item from data collection ([Example](https://snippet.dhtmlx.com/i5cjuj2y)) |
+In this section you may study how to add new data items into Dataview, how to edit, update, or remove the items
 
-### Sorting and filtering items
- 
-| Topic | Description |
-| ----- | ----------- |
-| [Sorting items](../manipulating_data/#sorting-dataview-data)             | Learn how to sort Dataview items ([Example](https://snippet.dhtmlx.com/mix83emb))                 |
-| [Filtering items](../manipulating_data/#filtering-dataview-data)         | Learn how to filter Dataview items ([Example](https://snippet.dhtmlx.com/8f970hby))               |
+| Topic                                                                  | Description                                                                                       |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [Editing item's data](../manipulating_data/#editing-items)             | Learn how to edit an item by its id ([Example](https://snippet.dhtmlx.com/i09isp2d))              |
+| [Adding an item](../manipulating_data/#adding-items-into-dataview)     | Learn how to add a new item into data collection ([Example](https://snippet.dhtmlx.com/k4sbj47b)) |
+| [Updating an item](../manipulating_data/#updating-dataview-items)      | Learn how to update data of an item ([Example](https://snippet.dhtmlx.com/we9vm6iz))          |
+| [Removing an item](../manipulating_data/#removing-items-from-dataview) | Learn how to remove an item from data collection ([Example](https://snippet.dhtmlx.com/i5cjuj2y)) |
 
-### How to work with selection
+### How to sort and filter data
+
+In this section you may study how to sort and filter data
+
+| Topic                                                            | Description                                                                         |
+| ---------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| [Sorting items](../manipulating_data/#sorting-dataview-data)     | Learn how to sort Dataview items ([Example](https://snippet.dhtmlx.com/mix83emb))   |
+| [Filtering items](../manipulating_data/#filtering-dataview-data) | Learn how to filter Dataview items ([Example](https://snippet.dhtmlx.com/8f970hby)) |
+
+## How to work with selection
+
+In this section you may study how to work with selection functionality
 
 | Topic                                                                                  | Description                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +110,9 @@ In this section you may study how to add new data items into Dataview, how to ed
 | Getting selection                                                                      | Learn how to get the [id](../usage_selection/#getting-id-of-a-selected-item) or an [object](../usage_selection/#getting-object-of-a-selected-item) of a selected item ([Example](https://snippet.dhtmlx.com/uop0vy8u)) |
 | [Removing selection](../usage_selection/#unselecting-an-item)                          | Learn how to remove selection from a selected item(s)                                                                                                                                                                  |
 
-### How to work with item in focus
+## How to work with item in focus
+
+In this section you will learn how to set focus on an item and get the id/object of an item in focus
 
 | Topic                                                                | Description                                                                                                                          |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |

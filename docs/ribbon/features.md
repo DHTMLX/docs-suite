@@ -65,11 +65,9 @@ In this section you can learn how to customize a Ribbon.
 | [Styling Ribbon](../customization/#styling)                           | Learn how to customize a Ribbon ([Example](https://snippet.dhtmlx.com/9ckg47ro))               |
 | [List of CSS classes](../../helpers/base_elements/)                   | A set of CSS classes provided by the DHTMLX library                                            |
 
-## How to work with Ribbon
+## How to work with Ribbon controls
 
-In this section you may study how to disable and enable, hide and show Ribbon controls, how to iterate through controls, how to add new controls or remove them, how to work with selection functionality, and more.
-
-### How to work with Ribbon controls
+In this section you may study how to disable and enable, hide and show Ribbon controls, and more.
 
 | Topic                                                                                      | Description                                                                                                    |
 | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
@@ -79,7 +77,9 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 | [Setting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to change the value or state of a control ([Example](https://snippet.dhtmlx.com/i7kabram))             |
 | [Getting values/states of controls](../operating_ribbon/#settinggetting-values-and-states) | Learn how to get the current value or state of a control ([Example](https://snippet.dhtmlx.com/coei9fys))        |
 
-### How to work with Ribbon data
+## How to work with data in Ribbon
+
+This section will tell you how to use **TreeCollection API** for working with data of Ribbon, i.e. add, copy, remove, rearrange items, etc.
 
 | Topic                                                                         | Description                                                                                                                |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -91,7 +91,9 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 | [Removing controls](../operating_ribbon/#clearing-ribbon)                     | Learn how to remove all controls from Ribbon at once                                                                       |
   
 
-### How to work with selection
+## How to work with selection
+
+In this section you will learn how to work with selection functionality.
 
 | Topic                                                                     | Description                                                                                           |
 | ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |

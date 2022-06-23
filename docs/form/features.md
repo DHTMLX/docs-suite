@@ -112,7 +112,7 @@ In this section you will study how to get access to the object of the control, h
 
 | Topic                                                                                  | Description                                                                                                                                                                |
 | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Getting item](../api/form_getitem_method/)                                            | Learn how to get access to the own methods and events of a control ([Example](https://snippet.dhtmlx.com/ocfas6go))   |
+| [Getting an item](../api/form_getitem_method/)                                            | Learn how to get access to the own methods and events of a control ([Example](https://snippet.dhtmlx.com/ocfas6go))   |
 |* [Disabling/enabling a control](https://snippet.dhtmlx.com/n0ndn215) |The example shows how to enable/disable a separate control|
 |* [Clearing a control](https://snippet.dhtmlx.com/82i6levj)   | The example shows how to clear a separate control        |
 |* [Clearing validation of a control](https://snippet.dhtmlx.com/2yj3obz2)                     | The example shows how to clear validation of a separate control     |
