@@ -66,6 +66,14 @@ In this section you will know how to set an active page dynamically, how to spec
 | [Getting number of items displayed per page](../usage/#settinggetting-count-of-items-per-page) | Learn how to get the count of items displayed per page ([Example](https://snippet.dhtmlx.com/9u3gsyd4))                                     |
 | [Getting total page count](../usage/#getting-total-number-of-pages)                            | Learn how to get the total number of pages ([Example](https://snippet.dhtmlx.com/k5j6acc5))                                                 |
 
+## How to work with Pagination events
+
+This section explains how to work with Pagination events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Pagination events ([Example](https://snippet.dhtmlx.com/mlrtmj7p)) |
 
 ## API reference
 

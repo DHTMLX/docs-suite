@@ -75,11 +75,11 @@ In this section you can learn how to configure the height and style of Dataview 
 
 ## How to work with data in Dataview
 
-This section will tell you how to use **DataCollection API** for working with data of DataView, i.e. edit, add, remove, sort data, etc.
+This section will tell you how to use [DataCollection API](guides/datacollection_guide.md) for working with data of DataView, i.e. edit, add, remove, sort data, etc.
 
 ### How to edit, add, remove data
 
-In this section you may study how to add new data items into Dataview, how to edit, update, or remove the items
+In this section you may study how to add new data items into Dataview, how to edit, update, or remove the items.
 
 | Topic                                                                  | Description                                                                                       |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -87,19 +87,21 @@ In this section you may study how to add new data items into Dataview, how to ed
 | [Adding an item](../manipulating_data/#adding-items-into-dataview)     | Learn how to add a new item into data collection ([Example](https://snippet.dhtmlx.com/k4sbj47b)) |
 | [Updating an item](../manipulating_data/#updating-dataview-items)      | Learn how to update data of an item ([Example](https://snippet.dhtmlx.com/we9vm6iz))          |
 | [Removing an item](../manipulating_data/#removing-items-from-dataview) | Learn how to remove an item from data collection ([Example](https://snippet.dhtmlx.com/i5cjuj2y)) |
+| [DataCollection API](../../data_collection/)                                       | Check the list of all available DataCollection API|
 
 ### How to sort and filter data
 
-In this section you may study how to sort and filter data
+In this section you may study how to sort and filter data.
 
 | Topic                                                            | Description                                                                         |
 | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | [Sorting items](../manipulating_data/#sorting-dataview-data)     | Learn how to sort Dataview items ([Example](https://snippet.dhtmlx.com/mix83emb))   |
 | [Filtering items](../manipulating_data/#filtering-dataview-data) | Learn how to filter Dataview items ([Example](https://snippet.dhtmlx.com/8f970hby)) |
 
+
 ## How to work with selection
 
-In this section you may study how to work with selection functionality
+In this section you may study how to work with selection functionality.
 
 | Topic                                                                                  | Description                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,12 +114,21 @@ In this section you may study how to work with selection functionality
 
 ## How to work with item in focus
 
-In this section you will learn how to set focus on an item and get the id/object of an item in focus
+In this section you will learn how to set focus on an item and get the id/object of an item in focus.
 
 | Topic                                                                | Description                                                                                                                          |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | [Setting focus on item](../manipulating_data/#setting-focus-on-item) | Learn how to set focus on an item ([Example](https://snippet.dhtmlx.com/4l38pct7))                                                   |
 | Getting an item in focus                                             | Learn how to get the [id](../api/dataview_getfocus_method/) or an [object](../api/dataview_getfocusitem_method/) of an item in focus |
+
+## How to work with Dataview events
+
+This section explains how to work with Dataview events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../events/)       | Learn how to attach, detach, or call the Dataview events ([Example](https://snippet.dhtmlx.com/2d74uyoh)) |
 
 ## API reference
 

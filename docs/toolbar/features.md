@@ -96,7 +96,7 @@ In this section you may study how to disable and enable, hide and show Toolbar c
 
 ## How to work with data in Toolbar
 
-This section will tell you how to use **TreeCollection API** for working with data of Toolbar, i.e. add, update, remove, rearrange controls, etc.
+This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Toolbar, i.e. add, update, remove, rearrange controls, etc.
 
 | Topic                                                                  | Description                                                                                                                                               |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -104,6 +104,7 @@ This section will tell you how to use **TreeCollection API** for working with da
 | [Updating controls](../../common_methods/#updating-config-of-controls) | Learn how to update config options of a Toolbar control (for example, to change the icon of the control) ([Example](https://snippet.dhtmlx.com/xfs5gh5t)) |
 | [Rearranging controls](../common_methods/#rearranging-controls)        | Learn how to move Toolbar controls to another position                                                                                                    |
 | [Removing controls](../common_methods/#removing-controls-from-toolbar) | Learn how to remove a control from Toolbar   ([Example](https://snippet.dhtmlx.com/w8jcn1t2))                                                             |
+| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
 
 
 ## How to work with selection
@@ -117,6 +118,14 @@ In this section you may study how to work with selection functionality.
 | [Getting selected items](../common_methods/#getting-selected-items)      | Learn how to get the selected items                                                                       |
 | [Removing selection](../../common_methods/#selectingunselecting-an-item) | Learn how to remove selection from a Toolbar control  ([Example](https://snippet.dhtmlx.com/mi7qjwg2))    |
 
+## How to work with Toolbar events
+
+This section explains how to work with Toolbar events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../handling_events/)        | Learn how to attach, detach, or call the Toolbar events ([Example](https://snippet.dhtmlx.com/xvak1p5y)) |
 
 ## API reference
 

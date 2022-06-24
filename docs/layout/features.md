@@ -53,7 +53,7 @@ In this section you can find out how to configure the size and visibility of cel
 
 ## How to configure sizes of Layout cells
 
-In this section you will learn how to configure sizes of Layout cells and their headers
+In this section you will learn how to configure sizes of Layout cells and their headers.
 
 | Topic                                                                | Description                                                                                                           |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ In this section you will learn how to configure sizes of Layout cells and their 
 
 ## How to customize Layout and its cells
 
-In this section you can learn how to configure the style of Layout and its cells
+In this section you can learn how to configure the style of Layout and its cells.
 
 | Topic                                                                | Description                                                                                                           |
 | -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
@@ -91,41 +91,50 @@ In this section you will learn how to get a cell object, how to add or remove, h
 ## Layout patterns
 
 
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/mzlodj28">1C</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/1oqx20ve">2E</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/yr9mapji">2U</a> </button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/mzlodj28">1C</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/1oqx20ve">2E</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/yr9mapji">2U</a></button>
 <br>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/v0w2p60c">3E</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/p0fllgaa">3J</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/bozlxz69">3L</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/jnq5cnc7">3T</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/678w7hgb">3U</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/ag01de2d">3W</a> </button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/v0w2p60c">3E</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/p0fllgaa">3J</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/bozlxz69">3L</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/jnq5cnc7">3T</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/678w7hgb">3U</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/ag01de2d">3W</a></button>
 <br>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/gjr6j6ud">4A</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/ww1qk9u7">4C</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/m6nlb0bf">4E</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/l4q0cth9">4F</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/mwrfozsu">4G</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/5ekykk2n">4H</a> </button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/gjr6j6ud">4A</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/ww1qk9u7">4C</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/m6nlb0bf">4E</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/l4q0cth9">4F</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/mwrfozsu">4G</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/5ekykk2n">4H</a></button>
 <br>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/1c9yzjeu">4I</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/8km3g1k2">4J</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/1nqgjnqy">4L</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/4v52yj8w">4T</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/2s9pdfhv">4U</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/uwb6hql7">4W</a> </button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/1c9yzjeu">4I</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/8km3g1k2">4J</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/1nqgjnqy">4L</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/4v52yj8w">4T</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/2s9pdfhv">4U</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/uwb6hql7">4W</a></button>
 <br>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/rkpj3k4h">5C</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/wnn4xfu4">5E</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/v8zw7jzr">5G</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/xr6jv9kk">5H</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/873bxvak">5I</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/v81rvnep">5K</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/udo1jwmw">5S</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/khbg58k4">5U</a> </button>
-<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/jo5z28kr">5W</a> </button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/rkpj3k4h">5C</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/wnn4xfu4">5E</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/v8zw7jzr">5G</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/xr6jv9kk">5H</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/873bxvak">5I</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/v81rvnep">5K</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/udo1jwmw">5S</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/khbg58k4">5U</a></button>
+<button class="pattern_btn"><a href="https://snippet.dhtmlx.com/jo5z28kr">5W</a></button>
  
+
+## How to work with Layout events
+
+This section explains how to work with Layout events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../events/)       | Learn how to attach, detach, or call the Layout events ([Example](https://snippet.dhtmlx.com/fyxw0map)) |
 
 ## API reference
 

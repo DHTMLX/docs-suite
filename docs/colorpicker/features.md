@@ -10,7 +10,7 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX Colorpicker
 
-In this section you can find out the ways of Colorpicker initialization and localization, and learn how to integrate Colorpicker into your applications
+In this section you can find out the ways of Colorpicker initialization and localization, and learn how to integrate Colorpicker into your applications.
 
 ### Initialization and localization
 
@@ -33,7 +33,7 @@ In this section you can find out the ways of Colorpicker initialization and loca
 
 ## How to configure DHTMLX Colorpicker
 
-In this section you will find out how to configure the modes of displaying Colorpicker
+In this section you will find out how to configure the modes of displaying Colorpicker.
 
 | Topic                                                                             | Description                                                                                                |
 | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ In this section you will find out how to configure the modes of displaying Color
 
  ## How to configure palette
 
-In this section you will find out how to configure and customize palette
+In this section you will find out how to configure and customize palette.
 
 | Topic                                                                    | Description                                                                                              |
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
@@ -53,7 +53,7 @@ In this section you will find out how to configure and customize palette
 
 ## How to customize DHTMLX Colorpicker and change its size
 
-In this section you can learn how to customize Colorpicker and change its width
+In this section you can learn how to customize Colorpicker and change its width.
 
 | Topic                                                          | Description                                                                                           |
 | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -63,7 +63,7 @@ In this section you can learn how to customize Colorpicker and change its width
 
 ## How to work with DHTMLX Colorpicker
 
-In this section you will find out how to set/get selected color, how to set/get custom colors which are displayed at the bottom of Colorpicker, how to change the current mode of Colorpicker, and more
+In this section you will find out how to set/get selected color, how to set/get custom colors which are displayed at the bottom of Colorpicker, how to change the current mode of Colorpicker, and more.
 
 | Topic                                                                                      | Description                                                                                                                       |
 | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
@@ -75,10 +75,18 @@ In this section you will find out how to set/get selected color, how to set/get 
 | [Getting Colorpicker mode](../manipulating_colorpicker/#settinggetting-current-mode)       | Learn how to get the current mode of displaying Colorpicker                                                                       |
 | [Setting focus](../manipulating_colorpicker/#setting-focus-on-a-color)                     | Learn how to set focus on the specified value ([Example](https://snippet.dhtmlx.com/fg13r3uh))                                    |
 
+## How to work with Colorpicker events
+
+This section explains how to work with Colorpicker events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Colorpicker events ([Example](https://snippet.dhtmlx.com/fllgaabo)) |
 
 ## API reference
 
-In this section you can find out corresponding references of Colorpicker API
+In this section you can find out corresponding references of Colorpicker API.
 
 | Topic                                                          | Description                              |
 | -------------------------------------------------------------- | ---------------------------------------- |
@@ -88,7 +96,7 @@ In this section you can find out corresponding references of Colorpicker API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Chart
+In this section you will learn about common functionality of the library which can be useful while working with Colorpicker.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |

@@ -73,7 +73,7 @@ In this section you can learn how to configure the style of Menu and its control
 
 ## How to work with data in Menu
 
-This section will tell you how to use **TreeCollection API** for working with data of Menu, i.e. edit, add, remove, rearrange items, etc.
+This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Menu, i.e. edit, add, remove, rearrange items, etc.
 
 | Topic                                                                                                     | Description                                                                                                                                                      |
 | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -82,6 +82,7 @@ This section will tell you how to use **TreeCollection API** for working with da
 | Setting item's configuration                                                                              | Learn how to [set a text label for menu item](../work_with_menu/#setting-item-text) or [add a shortcut to a menu option](../work_with_menu/#setting-item-hotkey) |
 | [Rearranging items](../work_with_menu/#rearranging-menu-items)                                            | Learn how to move menu items to another position                                                                                                                 |
 | [Iterating items](../work_with_menu/#iterating-menu-items)                                                | Learn how to apply the necessary logic to all (or some) menu items                                                                                               |
+| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
 
 ## How to work with Menu items
 
@@ -104,6 +105,14 @@ In this section you will find the ways of work with selection functionality.
 | [Getting selected items](../work_with_menu/#getting-selected-items)   | Learn how to get the selected items                                                    |
 | [Removing selection](../work_with_menu/#selectingunselecting-an-item) | Learn how to remove selection from a selected item                                     |
 
+## How to work with Menu events
+
+This section explains how to work with Menu events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Menu events ([Example](https://snippet.dhtmlx.com/yjt39a4k)) |
 
 ## API reference
 

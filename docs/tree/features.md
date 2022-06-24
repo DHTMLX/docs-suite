@@ -91,7 +91,7 @@ In this section you may study how to expand or collapse Tree items, how to work 
 
 ## How to work with data in Tree
 
-This section will tell you how to use **TreeCollection API** for working with data of Tree, i.e. add, update, remove, filter, sort items, etc.
+This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Tree, i.e. add, update, remove, filter, sort items, etc.
 
 | Topic                                                         | Description                                                                                                                                      |
 | ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -100,6 +100,7 @@ This section will tell you how to use **TreeCollection API** for working with da
 | [Removing items](../work_with_tree/#removing-items-from-tree) | Learn how to remove items from Tree ([Example](https://snippet.dhtmlx.com/k0os4lk2))                                                                |
 | [Filtering data](https://snippet.dhtmlx.com/a2jkwdrt)         | The example shows how to filter data in Tree                                                                                                     |
 | [Sorting data](https://snippet.dhtmlx.com/3vttyh9o)           | The example shows how to sort data in Tree                                                                                                       |
+| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
 
 
 ## How to work with selection 
@@ -110,6 +111,15 @@ In this section you may study how to work with selection functionality.
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Using selection functionality](../usage_selection/)        | Learn how to enable/disable selection, set selection to items, remove selection, and get the object of a selected item ([Example](https://snippet.dhtmlx.com/g6cmggqt?text=tree)) |
 | [Disabling selection](../configuration/#selection-of-items) | Learn how to disable the ability to select items in Tree on its initialization ([Example](https://snippet.dhtmlx.com/2x9htpke))                                                   |
+
+## How to work with Tree events
+
+This section explains how to work with Tree events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../events_handling/)        | Learn how to attach, detach, or call the Tree events ([Example](https://snippet.dhtmlx.com/vux1ye9g)) |
 
 ## API reference
 

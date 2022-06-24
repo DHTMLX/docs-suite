@@ -125,6 +125,14 @@ In this section you will study how to get access to the object of the control, h
 | [Setting properties](../api/form_setproperties_method/)                                | Learn how to change the values of the properties of Form controls ([Example](https://snippet.dhtmlx.com/67s17ve7))                                             |
 | [Getting properties](../api/form_getproperties_method/)                                | Learn how to return an object with the properties which are set for Form controls ([Example](https://snippet.dhtmlx.com/7ubqapqq))                                         |
 
+## How to work with Form events
+
+This section explains how to work with Form events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Form events ([Example](https://snippet.dhtmlx.com/vyipsaoa)) |
 
 ## API reference
 

@@ -52,7 +52,7 @@ In this section you can find out how to set the initial HTML content for Window,
 ## How to customize DHTMLX Window and change its size
 
 
-In this section you can learn how to customize a Window and configure its sizes
+In this section you can learn how to customize a Window and configure its sizes.
 
 | Topic                                                               | Description                                                                                                         |
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -75,6 +75,16 @@ In this section you can learn how to show and hide the window, how to switch it 
 | [Setting / getting Window position](../usage/#positioning-window)     | Learn how to set/get the position of a window on the fly ([Example](https://snippet.dhtmlx.com/hc3ronrk))          |
 | [Setting / getting Window size](../usage/#sizing-window)              | Learn how to change and get the size of a window dynamically ([Example](https://snippet.dhtmlx.com/0zqxydvm))      |
 | [Getting the container of Window](../api/window_getcontainer_method/) | Learn how to get the HTML element of the window                                                                    |
+
+
+## How to work with Window events
+
+This section explains how to work with Window events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../handling_events/)        | Learn how to attach, detach, or call the Window events ([Example](https://snippet.dhtmlx.com/jfu4upwd)) |
 
 
 ## API reference

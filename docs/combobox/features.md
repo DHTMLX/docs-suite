@@ -10,7 +10,7 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX Combobox
 
-In this section you can find out how to initialize and localize Combobox, how to load data into the component and how to integrate Combobox into your applications
+In this section you can find out how to initialize and localize Combobox, how to load data into the component and how to integrate Combobox into your applications.
 
 ### Initialization and localization
 
@@ -42,7 +42,7 @@ In this section you can find out how to initialize and localize Combobox, how to
 
 ## How to configure DHTMLX Combobox
 
-In this section you will find out how to set initial value into the input, to enable multiselection, to configure a label and placeholder, and more
+In this section you will find out how to set initial value into the input, to enable multiselection, to configure a label and placeholder, and more.
 
 | Topic                                                                                     | Description                                                                                                                |
 | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -59,7 +59,7 @@ In this section you will find out how to set initial value into the input, to en
 
 ## How to customize DHTMLX Combobox and change its size
 
-In this section you can learn how to customize Combobox and configure the height of the options list and its items
+In this section you can learn how to customize Combobox and configure the height of the options list and its items.
 
 | Topic                                                                        | Description                                                                                                                    |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -74,7 +74,7 @@ In this section you can learn how to customize Combobox and configure the height
 
 ## How to work with Combobox
 
-In this section you will find out how to enable and disable Combobox, to show and hide the list of options, to set and remove focus
+In this section you will find out how to enable and disable Combobox, to show and hide the list of options, to set and remove focus.
 
 | Topic                                                                                    | Description                                                                                                |
 | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -85,20 +85,20 @@ In this section you will find out how to enable and disable Combobox, to show an
 
 ## How to work with data in Combobox
 
-In this section you can discover how to apply the **DataCollection API** to work with data of Combobox (for example, how to add, update, serialize, or remove data)
+In this section you can discover how to apply the [DataCollection API](guides/datacollection_guide.md) to work with data of Combobox (for example, how to add, update, serialize, or remove data).
 
 
 | Topic                                                                                                                                | Description                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| [DataCollection API](../../data_collection/)                                                                                         | Learn how to use the API to work with data of Combobox                                                                      |
 | [Adding](../work_with_combo/#adding-options-into-combobox)/[removing](../work_with_combo/#removing-options-from-combobox) items | Learn how to add or remove Combobox options ([Example](https://snippet.dhtmlx.com/o7vd331z))                                |
 | [Updating items](../work_with_combo/#updating-combobox-options)                                                                              | Learn how to update Combobox options (for example, to change their values) ([Example](https://snippet.dhtmlx.com/y7hpq0x8)) |
 | [Serializing combobox data](../adding_options/#saving-and-restoring-state)                                                           | Learn how to serialize Combobox data                                                                                    |
+| [DataCollection API](../../data_collection/)                                       | Check the list of all available DataCollection API|
 
   
 ## How to work with selected options
 
-In this section you will learn how to set the necessary values in the input and get them, how to get the index of the value specified in the input, and how to clear the input
+In this section you will learn how to set the necessary values in the input and get them, how to get the index of the value specified in the input, and how to clear the input.
 
 | Topic                                                                                         | Description                                                                                                     |
 | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -107,9 +107,18 @@ In this section you will learn how to set the necessary values in the input and 
 | [Getting index of selected values](../../data_collection/api/datacollection_getindex_method/) | Learn how to get the index of the value specified in the input ([Example](https://snippet.dhtmlx.com/ik6r8cs2)) |
 [Clearing input](../work_with_combo/#clearing-input)|Learn how to clear the Combobox input from the specified values ([Example](https://snippet.dhtmlx.com/omlrtmj7))|
 
+## How to work with Combobox events
+
+This section explains how to work with Combobox events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Combobox events ([Example](https://snippet.dhtmlx.com/n70eqx5l)) |
+
 ## API reference
 
-In this section you can find out corresponding references of Combobox API
+In this section you can find out corresponding references of Combobox API.
 
 | Topic                                                      | Description                              |
 | ---------------------------------------------------------- | ---------------------------------------- |
@@ -119,7 +128,7 @@ In this section you can find out corresponding references of Combobox API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Chart
+In this section you will learn about common functionality of the library which can be useful while working with Combobox.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |

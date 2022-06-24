@@ -63,6 +63,14 @@ In this section you can learn how to set, get or clear the value of Timepicker.
 | [Getting the value of Timepicker](../usage/#getting-value)          | Learn how to get the current value of Timepicker ([Example](https://snippet.dhtmlx.com/k4atpgnd))       |
 | [Clearing the value of Timepicker](../api/timepicker_clear_method/) | Learn how to clear the value set in the timepicker ([Example](https://snippet.dhtmlx.com/xiazmc27))     |
 
+## How to work with Timepicker events
+
+This section explains how to work with Timepicker events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../handling_events/)        | Learn how to attach, detach, or call the Timepicker events ([Example](https://snippet.dhtmlx.com/5ccptwy7)) |
 
 ## API reference
 

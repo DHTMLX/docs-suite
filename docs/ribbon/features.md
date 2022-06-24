@@ -79,7 +79,7 @@ In this section you may study how to disable and enable, hide and show Ribbon co
 
 ## How to work with data in Ribbon
 
-This section will tell you how to use **TreeCollection API** for working with data of Ribbon, i.e. add, copy, remove, rearrange items, etc.
+This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Ribbon, i.e. add, copy, remove, rearrange items, etc.
 
 | Topic                                                                         | Description                                                                                                                |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -89,6 +89,7 @@ This section will tell you how to use **TreeCollection API** for working with da
 | [Iterating through controls](../operating_ribbon/#iterating-through-controls) | Learn how to apply the necessary logic to all (or some) Ribbon controls, as well as to the parent or children of a control |
 | [Rearranging controls](../operating_ribbon/#rearranging-ribbon-controls)      | Learn how to move Ribbon items to another position                                                                         |
 | [Removing controls](../operating_ribbon/#clearing-ribbon)                     | Learn how to remove all controls from Ribbon at once                                                                       |
+| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
   
 
 ## How to work with selection
@@ -101,6 +102,15 @@ In this section you will learn how to work with selection functionality.
 | [Is selected](../operating_ribbon/#checking-if-a-ribbon-item-is-selected) | Learn how to check whether a Ribbon item is selected ([Example](https://snippet.dhtmlx.com/0vy8uk4s)) |
 | [Getting selected items](../operating_ribbon/#getting-selected-items)     | Learn how to get the selected items                                                                   |
 | [Removing selection](../operating_ribbon/#selectingunselecting-an-item)   | Learn how to remove selection from a selected item  ([Example](https://snippet.dhtmlx.com/0vy8uk4s))  |
+
+## How to work with Ribbon events
+
+This section explains how to work with Ribbon events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../handling_events/)        | Learn how to attach, detach, or call the Popup events ([Example](https://snippet.dhtmlx.com/i7cfddkl)) |
 
 
 ## API reference

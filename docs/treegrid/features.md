@@ -10,7 +10,7 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX TreeGrid
 
-In this section you can find out how to initialize TreeGrid, how to load data into the component and how to integrate TreeGrid into your applications
+In this section you can find out how to initialize TreeGrid, how to load data into the component and how to integrate TreeGrid into your applications.
 
 ### Initialization
 
@@ -44,7 +44,7 @@ In this section you can find out how to initialize TreeGrid, how to load data in
 
 ### How to configure columns
 
-In this section you will know how to configure TreeGrid columns on TreeGrid initialization
+In this section you will know how to configure TreeGrid columns on TreeGrid initialization.
 
 | Topic                                                        | Description                                                                                                            |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- |
@@ -55,7 +55,7 @@ In this section you will know how to configure TreeGrid columns on TreeGrid init
 
 ### How to specify formats for TreeGrid data
 
-In this section you will learn how to specify the necessary data formats for a separate column
+In this section you will learn how to specify the necessary data formats for a separate column.
 
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -65,7 +65,7 @@ In this section you will learn how to specify the necessary data formats for a s
 
 ### How to configure TreeGrid header and footer 
 
-In this section you can learn how to configure the header and footer of TreeGrid, how to configure their heights and styles
+In this section you can learn how to configure the header and footer of TreeGrid, how to configure their heights and styles.
 
 | Topic                                                                             | Description                                                                                                                 |
 | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -76,7 +76,7 @@ In this section you can learn how to configure the header and footer of TreeGrid
 
 ### How to configure tooltips
 
-In this section you will know how to add tooltips of the desired appearance with the necessary information, or hide them if needed
+In this section you will know how to add tooltips of the desired appearance with the necessary information, or hide them if needed.
 
 | Topic                                                                         | Description                                                                                                                |
 | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
@@ -85,7 +85,7 @@ In this section you will know how to add tooltips of the desired appearance with
 
 ### How to group cells in TreeGrid
 
-In this section you will find out how to group cells in TreeGrid and its header
+In this section you will find out how to group cells in TreeGrid and its header.
 
 | Topic                                                                            | Description                                                                                                             |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -95,7 +95,7 @@ In this section you will find out how to group cells in TreeGrid and its header
 
 ### How to configure drag-n-drop
 
-In this section you will know how to configure the drag-n-drop functionality for TreeGrid
+In this section you will know how to configure the drag-n-drop functionality for TreeGrid.
 
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -117,7 +117,7 @@ In this section you will know how to configure the drag-n-drop functionality for
 
 ## How to customize DHTMLX TreeGrid and its cells
 
-In this section you can learn how to configure the style of Grid and its cells
+In this section you can learn how to configure the style of Grid and its cells.
 
 | Topic                                                                                | Description                                                                                                                                                                   |
 | ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -133,7 +133,7 @@ In this section you can learn how to configure the style of Grid and its cells
 
 ## How to work with columns and rows
 
-In this section you will know how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns
+In this section you will know how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns.
 
 ### Adding/removing columns and rows
 
@@ -175,22 +175,23 @@ In this section you will know how to add and remove columns and rows, how to hid
 
 ## How to work with data in TreeGrid
 
-This section will tell you how to use **TreeGrid API** and **TreeCollection API** for working with data of TreeGrid, i.e. edit, add, remove, sort data, etc.
+This section will tell you how to use **TreeGrid API** and [TreeCollection API](guides/datacollection_guide.md) for working with data of TreeGrid, i.e. edit, add, remove, sort data, etc.
 
 ### How to edit data
 
-In this section you will find the ways of editing data in TreeGrid
+In this section you will find the ways of editing data in TreeGrid.
 
 | Topic                                                                                 | Description                                                                                                                                                            |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Enabling/disabling editing](../configuration/#editing-treegrid-and-separate-columns) | Read how to enable/disable editing of the whole Grid or its separate columns                                                                                           |
 | [Editing with different editors](../configuration/#setting-type-of-column-editor)     | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p)) |
 | [Editing of a specific cell](../usage/#editing-data)                                  | Learn how to enable editing of a cell ([Example](https://snippet.dhtmlx.com/zm6wh1ss))                                                                                 |
+| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
 
 
 ### How to sort data
 
-In this section you will find the ways of sorting data in TreeGrid
+In this section you will find the ways of sorting data in TreeGrid.
 
 | Topic                                                        | Description                                                                                                     |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
@@ -201,7 +202,7 @@ In this section you will find the ways of sorting data in TreeGrid
 
 ### How to filter data
 
-In this section you will find the ways of filtering data in TreeGrid
+In this section you will find the ways of filtering data in TreeGrid.
 
 | Topic                                                                                          | Description                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -212,7 +213,7 @@ In this section you will find the ways of filtering data in TreeGrid
 
 ## How to work with selection
 
-In this section you will find the ways of work with selection functionality
+In this section you will find the ways of work with selection functionality.
 
 | Topic                                                | Description                                                                                                            |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
@@ -222,7 +223,7 @@ In this section you will find the ways of work with selection functionality
 
 ## How to scroll TreeGrid
 
-In this section you will learn how to scroll TreeGrid to the necessary position
+In this section you will learn how to scroll TreeGrid to the necessary position.
 
 | Topic                                                                | Description                                                                                                 |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
@@ -231,15 +232,24 @@ In this section you will learn how to scroll TreeGrid to the necessary position
 
 ## How to export TreeGrid
 
-In this section you will know how to export TreeGrid to different formats
+In this section you will know how to export TreeGrid to different formats.
 
 | Topic                                                              | Description                                                                                            |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
 | [Exporting TreeGrid to XLSX and CSV](../usage/#exporting-treegrid) | Learn how to export TreeGrid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/zyfois4q)) |
 
+## How to work with TreeGrid events
+
+This section explains how to work with TreeGrid events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../events/)        | Learn how to attach, detach, or call the TreeGrid events ([Example](https://snippet.dhtmlx.com/sgwnxshe)) |
+
 ## API reference
 
-In this section you can find out corresponding references of TreeGrid API
+In this section you can find out corresponding references of TreeGrid API.
 
 | Topic                                                               | Description                                                          |
 | ------------------------------------------------------------------- | -------------------------------------------------------------------- |
@@ -253,7 +263,7 @@ In this section you can find out corresponding references of TreeGrid API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Grid
+In this section you will learn about common functionality of the library which can be useful while working with TreeGrid.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |

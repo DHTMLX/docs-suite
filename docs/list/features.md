@@ -71,11 +71,11 @@ In this section you can learn how to configure the height and style of List and 
 
 ## How to work with data in List
 
-This section will tell you how to use **DataCollection API** for working with data of List, i.e. edit, add, remove, sort data, etc.
+This section will tell you how to use [DataCollection API](guides/datacollection_guide.md) for working with data of List, i.e. edit, add, remove, sort data, etc.
 
 ### How to edit, add, remove data
 
-In this section you may study how to add new data items into List, how to edit, update, or remove the items
+In this section you may study how to add new data items into List, how to edit, update, or remove the items.
 
 | Topic                                                          | Description                                                                                      |
 | -------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -83,10 +83,11 @@ In this section you may study how to add new data items into List, how to edit, 
 | [Adding new items](../work_with_list/#adding-items-into-list) | Learn how to add new items into List using Form ([Example](https://snippet.dhtmlx.com/f7cbdiqg)) |
 | [Updating an item](../work_with_list/#updating-list-items)      | Learn how to update data of an item ([Example](https://snippet.dhtmlx.com/6jpn7a6h))          |
 | [Removing items](../work_with_list/#removing-items-from-list)  | Learn how to remove items from List  ([Example](https://snippet.dhtmlx.com/wmozu18g))            |
+| [DataCollection API](../../data_collection/)                                       | Check the list of all available DataCollection API|
 
 ### How to sort and filter data
 
-In this section you may study how to sort and filter data in List
+In this section you may study how to sort and filter data in List.
 
 | Topic                                                     | Description                                                                       |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -96,7 +97,7 @@ In this section you may study how to sort and filter data in List
 
 ## How to work with selection
 
-In this section you may study how to work with selection functionality
+In this section you may study how to work with selection functionality.
 
 | Topic                                                                                  | Description                                                                                                                                                                                                            |
 | -------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -110,12 +111,21 @@ In this section you may study how to work with selection functionality
 
 ## How to work with item in focus
 
-In this section you will learn how to set focus on an item and get the id/object of an item in focus
+In this section you will learn how to set focus on an item and get the id/object of an item in focus.
 
 | Topic                                                 | Description                                                                                                                  |
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | [Setting focus on item](../api/list_setfocus_method/) | Learn how to set focus on an item ([Example](https://snippet.dhtmlx.com/ermcjx3d))                                           |
 | Getting an item in focus                              | Learn how to get the [id](../api/list_getfocus_method/) or an [object](../api/list_getfocusitem_method/) of an item in focus |
+
+## How to work with List events
+
+This section explains how to work with List events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../events/)       | Learn how to attach, detach, or call the List events ([Example](https://snippet.dhtmlx.com/iwt1yd61)) |
 
 ## API reference
 

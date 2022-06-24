@@ -11,6 +11,7 @@ This page contains structured information that will help you to start working wi
 ## How to start with DHTMLX Slider
 
 In this section you can find out how to initialize Slider in different modes and how to integrate Slider into your applications.
+
 ### Initialization
 
 | Topic                                                                       | Description                                                                                            |
@@ -32,6 +33,7 @@ In this section you can find out how to initialize Slider in different modes and
 
 ## How to configure DHTMLX Slider
 
+In this section you can find out how to set the initial value of Slider, how to specify the minimal and maximal values, how to configure the step, scale, label, and tooltip of Slider.
 
 | Topic                                                                              | Description                                                                                      |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
@@ -46,6 +48,8 @@ In this section you can find out how to initialize Slider in different modes and
 
 ## How to customize DHTMLX Slider
 
+In this section you can learn how to customize a Slider.
+
 | Topic                                               | Description                                                                                      |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | [Custom scale](https://snippet.dhtmlx.com/jsfxnplp) | The example shows how to customize the Slider scale                                              |
@@ -54,7 +58,7 @@ In this section you can find out how to initialize Slider in different modes and
 
 ## How to work with DHTMLX Slider
 
-
+In this section you can learn how to set, get the value of the Slider, how to disable and enable the Slider, and more.
 
 | Topic                                                             | Description                                                                                         |
 | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
@@ -65,6 +69,14 @@ In this section you can find out how to initialize Slider in different modes and
 | [Setting focus on a Slider thumb](../api/slider_focus_method/)    | Learn how to set focus on a Slider thumb                                                            |
 | [Removing focus](../api/slider_blur_method/)                      | Learn how remove focus from a Slider thumb                                                          |
 
+## How to work with Slider events
+
+This section explains how to work with Slider events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../handling_events/)        | Learn how to attach, detach, or call the Slider events ([Example](https://snippet.dhtmlx.com/sc7ov54z)) |
 
 ## API reference
 

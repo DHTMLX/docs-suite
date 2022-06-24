@@ -10,7 +10,7 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX Chart
 
-In this section you can find out how to initialize different types of Charts, and how to integrate Chart into your applications
+In this section you can find out how to initialize different types of Charts, and how to integrate Chart into your applications.
 
 ### Initialization 
 
@@ -39,7 +39,7 @@ In this section you can find out how to initialize different types of Charts, an
 
 ### Loading data into Chart
 
-In this section you can discover the ways of loading data into Chart
+In this section you can discover the ways of loading data into Chart.
 
 | Topic                                  | Description                                                                                     |
 | -------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -57,7 +57,7 @@ In this section you can discover the ways of loading data into Chart
 
 ## How to configure DHTMLX Chart
 
-In this section you can discover how to configure a Chart legend, scales, and series
+In this section you can discover how to configure a Chart legend, scales, and series.
 
 | Topic                                                                                                                               | Description                                                                                                                                                                                                                                                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -75,7 +75,7 @@ In this section you can discover how to configure a Chart legend, scales, and se
 
 ## How to customize DHTMLX Chart
 
-In this section you can learn how to customize Chart
+In this section you can learn how to customize Chart.
 
 | Topic                                                                         | Description                                                                                     |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
@@ -96,27 +96,36 @@ In this section you can learn how to customize Chart
 
 ## How to work with data in Chart
 
-In this section you can discover how to apply the **DataCollection API** to work with data of Chart
+In this section you can discover how to apply the [DataCollection API](guides/datacollection_guide.md) to work with data of Chart.
 
 | Topic                                                                              | Description                                                                            |
 | ---------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [DataCollection API](../../data_collection/)                                       | Learn how to use the API to work with data of Chart, i.e. add, remove, sort data, etc.                                    |
 | [Serializing chart data](../data_loading/#saving-and-restoring-state)              | Learn how to serialize the chart data ([Example](https://snippet.dhtmlx.com/rqvvpopp)) |
 | [Adding new data into Chart](../usage/#adding-items-into-chart) | Learn how to add data on the fly ([Example](https://snippet.dhtmlx.com/dpz4w5nr))      |
+| [DataCollection API](../../data_collection/)                                       | Check the list of all available DataCollection API|
 
 
 ## How to work with Chart series
 
-In this section you will find out how to work with Chart series 
+In this section you will find out how to work with Chart series. 
 
 | Topic                                                                  | Description                                                                                                            |
 | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [Iterating over series](../usage/#iterating-over-series)               | Learn how to perform iteration over chart series ([Example](https://snippet.dhtmlx.com/4kbj4lmw))                      |
 | [Getting series configuration](../usage/#getting-series-configuration) | Learn how to get an object with the configuration of a certain series ([Example](https://snippet.dhtmlx.com/9jtscd9q)) |
 
+## How to work with Chart events
+
+This section explains how to work with Chart events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../events/)       | Learn how to attach, detach, or call the Chart events ([Example](https://snippet.dhtmlx.com/a1b9yfwo)) |
+
 ## API reference
 
-In this section you can find out corresponding references of Calendar API
+In this section you can find out corresponding references of Chart API.
 
 | Topic                                                | Description                       |
 | ---------------------------------------------------- | --------------------------------- |
@@ -126,7 +135,7 @@ In this section you can find out corresponding references of Calendar API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Chart
+In this section you will learn about common functionality of the library which can be useful while working with Chart.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |

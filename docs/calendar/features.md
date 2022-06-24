@@ -10,15 +10,15 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX Calendar
 
-In this section you can find out the ways of Calendar initialization and localization, and learn how to integrate Calendar into your applications
+In this section you can find out the ways of Calendar initialization and localization, and learn how to integrate Calendar into your applications.
 
 ### Initialization and localization
 
-| Topic                                    | Description                                                                                    |
-| :--------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| [Basic initialization](../how_to_start/) | Learn how to initialize a Calendar ([Example]((https://snippet.dhtmlx.com/xcw19e52)))            |
+| Topic                                    | Description                                                                                   |
+| :--------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| [Basic initialization](../how_to_start/) | Learn how to initialize a Calendar ([Example]((https://snippet.dhtmlx.com/xcw19e52)))         |
 | [Date picker](../datepicker/)            | Learn how to use a Calendar as a date picker ([Example](https://snippet.dhtmlx.com/mj7jr6ro)) |
-| [Localization](../localizing_calendar/)  | Learn how to localize a Calendar ([Example](https://snippet.dhtmlx.com/tn40a0w8))                |
+| [Localization](../localizing_calendar/)  | Learn how to localize a Calendar ([Example](https://snippet.dhtmlx.com/tn40a0w8))             |
 
 
 ### Integration
@@ -33,7 +33,7 @@ In this section you can find out the ways of Calendar initialization and localiz
 
 ## How to configure DHTMLX Calendar
 
-In this section you can discover how to configure Calendar
+In this section you can discover how to configure Calendar.
 
 | Topic                                                                          | Description                                                                                                                                 |
 | :----------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -71,7 +71,7 @@ In this section you can discover how to configure Calendar
 
 ## How to customize Calendar and change its size
 
-In this section you can learn how to change the Calendar width and style
+In this section you can learn how to change the Calendar width and style.
 
 | Topic                                                              | Description                                                                                          |
 | :----------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
@@ -80,9 +80,18 @@ In this section you can learn how to change the Calendar width and style
 | [Styling selected dates](../customization/#styling-selected-dates) | Learn how to apply custom styling to selected dates ([Example](https://snippet.dhtmlx.com/9u0ix3na)) |
 | [List of CSS classes](../../helpers/base_elements/)                | A set of CSS classes provided by the DHTMLX library                                                  |
 
+## How to work with Calendar events
+
+This section explains how to work with Calendar events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../handling_events/)       | Learn how to attach, detach, or call the Calendar events ([Example](https://snippet.dhtmlx.com/7kj7fiek)) |
+
 ## API reference
 
-In this section you can find out corresponding references of Calendar API
+In this section you can find out corresponding references of Calendar API.
 
 | Topic                                                      | Description                          |
 | :--------------------------------------------------------- | :----------------------------------- |
@@ -92,7 +101,7 @@ In this section you can find out corresponding references of Calendar API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Calendar
+In this section you will learn about common functionality of the library which can be useful while working with Calendar.
 
 | Topic                                                         | Description                                                   |
 | :------------------------------------------------------------ | :------------------------------------------------------------ |

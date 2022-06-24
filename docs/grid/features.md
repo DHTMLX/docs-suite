@@ -10,7 +10,7 @@ This page contains structured information that will help you to start working wi
 
 ## How to start with DHTMLX Grid
 
-In this section you can find out how to initialize Grid, how to load data into the component and how to integrate Grid into your applications
+In this section you can find out how to initialize Grid, how to load data into the component and how to integrate Grid into your applications.
 
 ### Initialization
 
@@ -47,7 +47,7 @@ In this section you can find out how to initialize Grid, how to load data into t
 
 ### How to configure columns
 
-In this section you will know how to configure Grid columns on Grid initialization
+In this section you will know how to configure Grid columns on Grid initialization.
 
 | Topic                                            | Description                                   |
 | ------------------------------------------------ | --------------------------------------------- |
@@ -58,7 +58,7 @@ In this section you will know how to configure Grid columns on Grid initializati
 
 ### How to specify formats for Grid data
 
-In this section you will learn how to specify the necessary data formats for a separate column
+In this section you will learn how to specify the necessary data formats for a separate column.
 
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -69,7 +69,7 @@ In this section you will learn how to specify the necessary data formats for a s
 
 ### How to configure Grid header and footer 
 
-In this section you can learn how to configure the header and footer of Grid, how to configure their heights and styles
+In this section you can learn how to configure the header and footer of Grid, how to configure their heights and styles.
 
 | Topic                                                                             | Description                                                                                                             |
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
@@ -81,7 +81,7 @@ In this section you can learn how to configure the header and footer of Grid, ho
 
 ### How to configure tooltips
 
-In this section you will know how to add tooltips of the desired appearance with the necessary information, or hide them if needed
+In this section you will know how to add tooltips of the desired appearance with the necessary information, or hide them if needed.
 
 | Topic                                                                         | Description                                                                                                                                                        |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -91,7 +91,7 @@ In this section you will know how to add tooltips of the desired appearance with
 
 ### How to group cells in Grid
 
-In this section you will find out how to group cells in Grid and its header
+In this section you will find out how to group cells in Grid and its header.
 
 | Topic                                                                        | Description                                                                                                         |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
@@ -101,7 +101,7 @@ In this section you will find out how to group cells in Grid and its header
 
 ### How to configure drag-n-drop
 
-In this section you will know how to configure the drag-n-drop functionality for Grid
+In this section you will know how to configure the drag-n-drop functionality for Grid.
 
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -111,7 +111,7 @@ In this section you will know how to configure the drag-n-drop functionality for
 
 ## How to configure sizes of Grid and its cells
 
-In this section you can learn how to configure the size of Grid and its cells
+In this section you can learn how to configure the size of Grid and its cells.
 
 | Topic                                                                                       | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
@@ -125,7 +125,7 @@ In this section you can learn how to configure the size of Grid and its cells
 
 ## How to customize Grid and its cells
 
-In this section you can learn how to configure the style of Grid and its cells
+In this section you can learn how to configure the style of Grid and its cells.
 
 | Topic                                                                            | Description                                                                                                                                                              |
 | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -141,7 +141,7 @@ In this section you can learn how to configure the style of Grid and its cells
 
 ## How to work with columns and rows
 
-In this section you will know how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns
+In this section you will know how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns.
 
 ### Adding/removing columns and rows
 
@@ -174,7 +174,7 @@ This section will tell you how to use **Grid API** and **DataCollection API** fo
 
 ### How to edit data
 
-In this section you will find the ways of editing data in Grid
+In this section you will find the ways of editing data in Grid.
 
 | Topic                                                                                        | Description                                                                                                        |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -189,7 +189,7 @@ In this section you will find the ways of editing data in Grid
 
 ### How to sort data
 
-In this section you will find the ways of sorting data in Grid
+In this section you will find the ways of sorting data in Grid.
 
 | Topic                                                        | Description                                                                                                 |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
@@ -199,7 +199,7 @@ In this section you will find the ways of sorting data in Grid
 
 ### How to filter data
 
-In this section you will find the ways of filtering data in Grid
+In this section you will find the ways of filtering data in Grid.
 
 | Topic                                                                                          | Description                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -210,7 +210,7 @@ In this section you will find the ways of filtering data in Grid
 
 ## How to work with selection
 
-In this section you will find the ways of work with selection functionality
+In this section you will find the ways of work with selection functionality.
 
 | Topic                                                                            | Description                                                                                                                                                             |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -222,7 +222,7 @@ In this section you will find the ways of work with selection functionality
 
 ## How to scroll Grid
 
-In this section you will learn how to scroll Grid to the necessary position
+In this section you will learn how to scroll Grid to the necessary position.
 
 | Topic                                                                | Description                                                                                             |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -232,15 +232,24 @@ In this section you will learn how to scroll Grid to the necessary position
 
 ## How to export Grid
 
-In this section you will know how to export Grid to different formats
+In this section you will know how to export Grid to different formats.
 
 | Topic                                                      | Description                                                                                        |
 | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | [Exporting Grid to XLSX and CSV](../usage/#exporting-grid) | Learn how to export Grid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/58oqij47)) |
 
+## How to work with Grid events
+
+This section explains how to work with Grid events.
+
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../events/)       | Learn how to attach, detach, or call the Grid events ([Example](https://snippet.dhtmlx.com/9zeyp4ds)) |
+
 ## API reference
 
-In this section you can find out corresponding references of Grid API
+In this section you can find out corresponding references of Grid API.
 
 | Topic                                                       | Description                                                      |
 | ----------------------------------------------------------- | ---------------------------------------------------------------- |
@@ -254,7 +263,7 @@ In this section you can find out corresponding references of Grid API
 
 ## Common functionality
 
-In this section you will learn about common functionality of the library which can be useful while working with Grid
+In this section you will learn about common functionality of the library which can be useful while working with Grid.
 
 | Topic                                                         | Description                                                   |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |

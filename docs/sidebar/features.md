@@ -52,7 +52,7 @@ In this section you can find out how to initialize Sidebar, how to load data int
 
 ## How to customize DHTMLX Sidebar and change its size
 
-In this section you can learn how to customize a Sidebar and configure its size
+In this section you can learn how to customize a Sidebar and configure its size.
 
 | Topic                                                                 | Description                                                                       |
 | --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -88,7 +88,7 @@ In this section you may study how to expand or collapse a Sidebar, how to disabl
 
 ## How to work with data in Sidebar
 
-This section will tell you how to use **TreeCollection API** for working with data of Sidebar, i.e. add, update, remove, rearrange controls, etc.
+This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Sidebar, i.e. add, update, remove, rearrange controls, etc.
 
 | Topic                                                                     | Description                                                                                                                                               |
 | ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -96,6 +96,7 @@ This section will tell you how to use **TreeCollection API** for working with da
 | [Updating controls](../work_with_sidebar/#updating-config-of-controls)    | Learn how to update config options of a Sidebar control (for example, to change the icon of the control) ([Example](https://snippet.dhtmlx.com/p1zu63le)) |
 | [Rearranging controls](../work_with_sidebar/#rearranging-controls)        | Learn how to move Sidebar controls to another position                                                                                                    |
 | [Removing controls](../work_with_sidebar/#removing-controls-from-sidebar) | Learn how to remove a control from Sidebar   ([Example](https://snippet.dhtmlx.com/ecp3etuf))                                                             |
+| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
 
 
 ## How to work with selection
@@ -108,6 +109,15 @@ In this section you can learn how to work with selection functionality.
 | [Is selected](../work_with_sidebar/#checking-if-a-sidebar-item-is-selected) | Learn how to check whether a Sidebar item is selected ([Example](https://snippet.dhtmlx.com/3odod5v1)) |
 | [Getting selected items](../work_with_sidebar/#getting-selected-items)      | Learn how to get the selected items                                                                    |
 | [Removing selection](../work_with_sidebar/#selectingunselecting-an-item)    | Learn how to remove selection from a selected item  ([Example](https://snippet.dhtmlx.com/3odod5v1))   |
+
+## How to work with Sidebar events
+
+This section explains how to work with Sidebar events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../events/)        | Learn how to attach, detach, or call the Sidebar events ([Example](https://snippet.dhtmlx.com/qfddiu3i)) |
 
 ## API reference
 

@@ -31,7 +31,7 @@ In this section you can find out how to initialize Tabbar, how to attach the nec
 
 ## How to configure DHTMLX Tabbar 
 
-In this section you will know how to create a Tabbar with the necessary number of tabs, how to specify the active tab, and how to define the position of the Tabbar on a page
+In this section you will know how to create a Tabbar with the necessary number of tabs, how to specify the active tab, and how to define the position of the Tabbar on a page.
 
 | Topic                                                                    | Description                                                                                                             |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
@@ -54,7 +54,7 @@ In this section you can find out how to configure the size, alignment and visibi
 
 ## How to customize DHTMLX Tabbar and change its size
 
-In this section you can learn how to customize a Tabbar and configure the size of its tabs
+In this section you can learn how to customize a Tabbar and configure the size of its tabs.
 
 | Topic                                               | Description                                                                                       |
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
@@ -76,6 +76,14 @@ In this section you will learn how to add or remove, enable or disable a tab, ho
 | [Setting the active tab](../work_with_tabbar/#settinggetting-the-active-tab) | Learn how to set the active tab ([Example](https://snippet.dhtmlx.com/u9ryz38f))                          |
 | [Getting the active tab](../work_with_tabbar/#settinggetting-the-active-tab) | Learn how get the currently active tab ([Example](https://snippet.dhtmlx.com/xpvkcwiu))                   |
 
+## How to work with Tabbar events
+
+This section explains how to work with Tabbar events.
+
+| Topic                                       | Description                                                                                            |
+| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
+| [Event handling](../events/)        | Learn how to attach, detach, or call the Tabbar events ([Example](https://snippet.dhtmlx.com/dld2qo1m)) |
 
 ## API reference
 
