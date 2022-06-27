@@ -40,7 +40,7 @@ In this section you can find out how to initialize and localize Combobox, how to
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Chart with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                            |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Chart with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                 |
 
-## How to configure DHTMLX Combobox
+## How to configure Combobox
 
 In this section you will find out how to set initial value into the input, to enable multiselection, to configure a label and placeholder, and more.
 
@@ -57,7 +57,7 @@ In this section you will find out how to set initial value into the input, to en
 | [Making Combobox readonly](../configuration/#readonly-mode)                               | Learn how to disable the ability to enter text in the input ([Example](https://snippet.dhtmlx.com/igjsuf7y))               |
 | [Making Combobox disabled](../configuration/#disabled-mode)                               | Learn how to block any operations with Combobox ([Example](https://snippet.dhtmlx.com/ductsm0f))                           |
 
-## How to customize DHTMLX Combobox and change its size
+## How to customize Combobox and change its size
 
 In this section you can learn how to customize Combobox and configure the height of the options list and its items.
 

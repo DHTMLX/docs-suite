@@ -32,7 +32,7 @@ In this section you can find out the ways of Timepicker initialization, and lear
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Timepicker with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                       |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Timepicker with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                            |
 
-## How to configure DHTMLX Timepicker
+## How to configure Timepicker
 
 In this section you can find out how to set the initial value of Timepicker, how to add buttons in the component, and how to configure the time format.
 
@@ -43,7 +43,7 @@ In this section you can find out how to set the initial value of Timepicker, how
 | [Configuring time format](../configuration/#time-format)     | Learn how to configure the format (12-hour or 24-hour) of displaying time in the timepicker ([Example](https://snippet.dhtmlx.com/u9ge1a4z)) |
 
 
-## How to customize DHTMLX Timepicker
+## How to customize Timepicker
 
 In this section you can learn how to customize a Timepicker.
 
@@ -53,7 +53,7 @@ In this section you can learn how to customize a Timepicker.
 | [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                                               |
 
 
-## How to work with DHTMLX Timepicker
+## How to work with Timepicker
 
 In this section you can learn how to set, get or clear the value of Timepicker.
 

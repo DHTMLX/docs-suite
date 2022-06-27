@@ -31,7 +31,7 @@ In this section you can find out the ways of Calendar initialization and localiz
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Calendar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                         |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Calendar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                              |
 
-## How to configure DHTMLX Calendar
+## How to configure Calendar
 
 In this section you can discover how to configure Calendar.
 

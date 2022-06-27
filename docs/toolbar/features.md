@@ -68,7 +68,7 @@ In this section you will find the examples of controls' configuration.
 | [Multiclick](https://snippet.dhtmlx.com/k3lc7eig)    | The example shows how to configure behavior of the Undo/Redo buttons                                           |
 
 
-## How to customize DHTMLX Toolbar
+## How to customize Toolbar
 
 In this section you can learn how to customize a Toolbar.
 

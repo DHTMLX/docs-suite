@@ -55,7 +55,7 @@ In this section you can discover the ways of loading data into Chart.
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Chart with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                            |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Chart with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                 |
 
-## How to configure DHTMLX Chart
+## How to configure Chart
 
 In this section you can discover how to configure a Chart legend, scales, and series.
 
@@ -73,7 +73,7 @@ In this section you can discover how to configure a Chart legend, scales, and se
 | [Changing configuration on the fly](https://snippet.dhtmlx.com/7umj531n)                                                            | Learn how to set configuration of a chart dynamically                                                                                                                                                                                                                                             |
 | [Displaying average values](../api/chart_maxpoints_config/)                                                                         | Learn how to display a huge data set in the chart ([Example](https://snippet.dhtmlx.com/6917eudu))                                                                                                                                                                                                |
 
-## How to customize DHTMLX Chart
+## How to customize Chart
 
 In this section you can learn how to customize Chart.
 

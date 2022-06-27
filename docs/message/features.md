@@ -38,7 +38,7 @@ In this section you can find out how to initialize and show different types of M
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Message with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                          |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Message with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                               |
 
-## How to configure DHTMLX Message
+## How to configure Message
 
 In this section you will find the examples of how to configure an alert and confirm box, how to configure the position of a message box and tooltip, and more.
 
@@ -50,7 +50,7 @@ In this section you will find the examples of how to configure an alert and conf
 | [Tooltip](../configuration/#tooltip)         | Learn how to configure a tooltip ([Example 1](https://snippet.dhtmlx.com/4wrrsr67), [Example 2](https://snippet.dhtmlx.com/zts0avym))      |
 
 
-## How to customize DHTMLX Message
+## How to customize Message
 
 In this section you can learn how to customize different types of DHTMLX Message.
 

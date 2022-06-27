@@ -32,7 +32,7 @@ In this section you can find out the ways of Window initialization, learn how to
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Window with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                          |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Window with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                               |
 
-## How to configure DHTMLX Window
+## How to configure Window
 
 In this section you can find out how to set the initial HTML content for Window, how to add a footer, header, title, close button into the component, and more.
 
@@ -49,8 +49,7 @@ In this section you can find out how to set the initial HTML content for Window,
 | [Overflowing browser window](../configuration/#overflowing-browser-window) | Learn how to allow a window to cross the borders of a browser window ([Example](https://snippet.dhtmlx.com/qfhdlzri)) |
 
 
-## How to customize DHTMLX Window and change its size
-
+## How to customize Window and change its size
 
 In this section you can learn how to customize a Window and configure its sizes.
 
@@ -63,7 +62,7 @@ In this section you can learn how to customize a Window and configure its sizes.
 | [Styling Window (custom CSS)](../customization/#styling)            | Learn how to change the appearance of a Window ([Example](https://snippet.dhtmlx.com/t5mvhwx8))                     |
 | [List of CSS classes](../../helpers/base_elements/)                 | A set of CSS classes provided by the DHTMLX library                                                                 |     
 
-## How to work with DHTMLX Window
+## How to work with Window
 
 In this section you can learn how to show and hide the window, how to switch it to the full screen mode, how to set and get position and size of the window, and more.
 

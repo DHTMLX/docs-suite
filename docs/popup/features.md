@@ -31,7 +31,7 @@ In this section you can find out how to initialize Popup with different data com
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Popup with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                            |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Popup with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                 |
 
-## How to customize DHTMLX Popup
+## How to customize Popup
 
 In this section you may study how to change the style of Popup.
 
@@ -40,7 +40,7 @@ In this section you may study how to change the style of Popup.
 | [Styling Popup](../customization/)                  | Learn how to customize a Popup ([Example](https://snippet.dhtmlx.com/rd8zfw5h)) |
 | [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                             |
 
-## How to work with DHTMLX Popup
+## How to work with Popup
 
 In this section you may learn how to show or hide a popup, how to check its visibility, how to configure the position of the component, and more.
 

@@ -11,6 +11,12 @@ Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23
 
 ![](../assets/sidebar/sidebar_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Sidebar:
+
+- [Features](sidebar/features.md)
+
 ## API reference
 
 - [](sidebar/api/api_overview.md)

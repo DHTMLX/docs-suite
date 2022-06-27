@@ -11,6 +11,12 @@ Check [online samples for dhtmlxForm](https://snippet.dhtmlx.com/all?text=%23for
 
 ![](../assets/form/form_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Form:
+
+- [Features](form/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

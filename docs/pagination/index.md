@@ -15,6 +15,12 @@ The component is easy-to-use and provides handy navigation that allows you to qu
 
 ![](../assets/pagination/init.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Pagination:
+
+- [Features](pagination/features.md)
+
 ## API Reference
 
 - [](pagination/api/api_overview.md)

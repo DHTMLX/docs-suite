@@ -31,7 +31,7 @@ In this section you can find out the ways of Colorpicker initialization and loca
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Colorpicker with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                      |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Colorpicker with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                           |
 
-## How to configure DHTMLX Colorpicker
+## How to configure Colorpicker
 
 In this section you will find out how to configure the modes of displaying Colorpicker.
 
@@ -51,7 +51,7 @@ In this section you will find out how to configure and customize palette.
 | [Displaying custom colors](../configuration/#list-of-custom-colors)      | Learn how to display a list of custom colors in the bottom part of ColorPicker                           |
 | [Configuring custom palette](../configuration/#custom-colors-in-palette) | Learn how to display Colorpicker with a custom palette ([Example](https://snippet.dhtmlx.com/097jjhb8))  |
 
-## How to customize DHTMLX Colorpicker and change its size
+## How to customize Colorpicker and change its size
 
 In this section you can learn how to customize Colorpicker and change its width.
 
@@ -61,7 +61,7 @@ In this section you can learn how to customize Colorpicker and change its width.
 | [Styling (custom CSS)](../customization/)                      | Learn how to change the look and feel of Colorpicker ([Example](https://snippet.dhtmlx.com/mnwi3sp0)) |
 | [List of CSS classes](../../helpers/base_elements/)            | A set of CSS classes provided by the DHTMLX library                                                   |
 
-## How to work with DHTMLX Colorpicker
+## How to work with Colorpicker
 
 In this section you will find out how to set/get selected color, how to set/get custom colors which are displayed at the bottom of Colorpicker, how to change the current mode of Colorpicker, and more.
 

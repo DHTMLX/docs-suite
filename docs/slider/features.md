@@ -31,7 +31,7 @@ In this section you can find out how to initialize Slider in different modes and
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Slider with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                           |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Slider with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                |
 
-## How to configure DHTMLX Slider
+## How to configure Slider
 
 In this section you can find out how to set the initial value of Slider, how to specify the minimal and maximal values, how to configure the step, scale, label, and tooltip of Slider.
 
@@ -46,7 +46,7 @@ In this section you can find out how to set the initial value of Slider, how to 
 | [Configuring a tooltip](../configuring_slider/#tooltip)                            | Learn how to configure the tooltip for a Slider ([Example](https://snippet.dhtmlx.com/sxh66mnu)) |
 
 
-## How to customize DHTMLX Slider
+## How to customize Slider
 
 In this section you can learn how to customize a Slider.
 
@@ -56,7 +56,7 @@ In this section you can learn how to customize a Slider.
 | [Styling Slider](../customization/)                 | Learn how to change the look and feel of Slider ([Example](https://snippet.dhtmlx.com/ewizud5e)) |
 | [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                                              |
 
-## How to work with DHTMLX Slider
+## How to work with Slider
 
 In this section you can learn how to set, get the value of the Slider, how to disable and enable the Slider, and more.
 

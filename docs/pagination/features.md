@@ -19,7 +19,7 @@ In this section you can find out how to initialize Pagination with different dat
 | Topic                                                           | Description                                                    |
 | --------------------------------------------------------------- | -------------------------------------------------------------- |
 | [Basic initialization](../init/)                                | Read how to initialize a pagination on a page                  |
-| [Pagination with Dataview](https://snippet.dhtmlx.com/xmf0lx8z) | The example shows how to initialize Dataview inside Pagination |
+| [Pagination with DataView](https://snippet.dhtmlx.com/xmf0lx8z) | The example shows how to initialize DataView inside Pagination |
 | [Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)     | The example shows how to initialize Grid inside Pagination     |
 | [Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)     | The example shows how to initialize List inside Pagination     |
 | [Pagination with Tree](https://snippet.dhtmlx.com/a0jhoipw)     | The example shows how to initialize Tree inside Pagination     |
@@ -35,7 +35,7 @@ In this section you can find out how to initialize Pagination with different dat
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Pagination with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                       |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Pagination with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                            |
 
-## How to configure DHTMLX Pagination
+## How to configure Pagination
 
 In this section you will learn how to specify the initial page of Pagination and define the size of pages.
 
@@ -44,7 +44,7 @@ In this section you will learn how to specify the initial page of Pagination and
 | [Setting initial page](../configuration/#initial-page)              | Learn how to define the initial page of the pagination ([Example](https://snippet.dhtmlx.com/5vwz8tgb))                                          |
 | [Configuring page size](../configuration/#number-of-items-per-page) | Learn how to define the number of items that should be displayed per page of the related widget ([Example](https://snippet.dhtmlx.com/m57w0vlb)) |
 
-## How to customize DHTMLX Pagination
+## How to customize Pagination
 
 In this section you may study how to change the style of Pagination, how to align elements inside it, how to configure the width of Pagination input.
 
@@ -55,7 +55,7 @@ In this section you may study how to change the style of Pagination, how to alig
 | [Styling Pagination](../customization/)                  | Learn how to customize Pagination ([Example](https://snippet.dhtmlx.com/e7bujtsu))                             |
 | [List of CSS classes](../../helpers/base_elements/)      | A set of CSS classes provided by the DHTMLX library                                                            |
 
-## How to work with DHTMLX Pagination
+## How to work with Pagination
 
 In this section you will know how to set an active page dynamically, how to specify the number of data items which should be displayed on each page, how to get the total number of pages, and more.
 

@@ -43,7 +43,7 @@ In this section you can find out how to initialize Grid, how to load data into t
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Grid with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
 
-## How to configure DHTMLX Grid
+## How to configure Grid
 
 ### How to configure columns
 

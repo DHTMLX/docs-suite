@@ -50,7 +50,7 @@ In this section you can find out how to initialize Sidebar, how to load data int
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Sidebar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                          |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Sidebar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                               |
 
-## How to customize DHTMLX Sidebar and change its size
+## How to customize Sidebar and change its size
 
 In this section you can learn how to customize a Sidebar and configure its size.
 

@@ -10,6 +10,12 @@ dhtmlxCalendar is a component that allows users to view and select dates. You ca
 
 ![DHTMLX Calendar](../assets/calendar/calendar_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Calendar:
+
+- [Features](calendar/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

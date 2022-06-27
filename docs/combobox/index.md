@@ -12,6 +12,12 @@ Check [online samples for dhtmlxComboBox](https://snippet.dhtmlx.com/all?text=%2
 
 ![](../assets/combo/combo_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Combobox:
+
+- [Features](combobox/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

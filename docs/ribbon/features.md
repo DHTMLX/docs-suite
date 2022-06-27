@@ -54,7 +54,7 @@ In this section you can find out how to initialize Ribbon, how to load data into
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Ribbon with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                           |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Ribbon with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                |
 
-## How to customize DHTMLX Ribbon
+## How to customize Ribbon
 
 In this section you can learn how to customize a Ribbon.
 

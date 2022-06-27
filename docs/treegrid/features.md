@@ -40,7 +40,7 @@ In this section you can find out how to initialize TreeGrid, how to load data in
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX TreeGrid with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                         |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX TreeGrid with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                              |
   
-## How to configure DHTMLX TreeGrid
+## How to configure TreeGrid
 
 ### How to configure columns
 
@@ -115,7 +115,7 @@ In this section you will know how to configure the drag-n-drop functionality for
 | [Auto-height for rows](../configuration/#autoheight-for-rows)                   | Learn how to configure auto-height for columns([Example](https://snippet.dhtmlx.com/4158ftak))                                                 |
 | [Row height](../configuration/#row-height)                                          | Learn how to configure the height of rows ([Example 1](https://snippet.dhtmlx.com/xl0i3yof), [Example 2](https://snippet.dhtmlx.com/kvl5y6nq)) |
 
-## How to customize DHTMLX TreeGrid and its cells
+## How to customize TreeGrid and its cells
 
 In this section you can learn how to configure the style of Grid and its cells.
 

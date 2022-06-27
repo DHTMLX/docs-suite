@@ -12,6 +12,12 @@ Check [online samples for dhtmlxWindow](https://snippet.dhtmlx.com/all?text=%23w
 
 ![](../assets/window/window_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Window:
+
+- [Features](window/features.md)
+
 ## API reference
 
 - [](window/api/api_overview.md)

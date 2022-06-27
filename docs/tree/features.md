@@ -40,7 +40,7 @@ In this section you can find out how to initialize Tree, how to load data into t
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Tree with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Tree with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
-## How to configure DHTMLX Tree
+## How to configure Tree
 
 In this section you can find out how to configure drag-n-drop in Tree, how to enable or disable key navigation, how to let users to edit items by double-click.
 
@@ -53,7 +53,7 @@ In this section you can find out how to configure drag-n-drop in Tree, how to en
 | [Enabling/disabling key navigation](../configuration/#key-navigation)               | Learn how to enable and disable key navigation ([Example](https://snippet.dhtmlx.com/icql8fwq))                                                                                      |
 | [Activating inline editing](../configuration/#editing-of-items)                     | Learn how to activate inline editing on Tree initialization ([Example](https://snippet.dhtmlx.com/hyfz6ai7))                                                                         |
 
-## How to customize DHTMLX Tree and change its size
+## How to customize Tree and change its size
 
 In this section you can learn how to customize a Tree, its icons, and configure the height of Tree items.
 
@@ -68,7 +68,7 @@ In this section you can learn how to customize a Tree, its icons, and configure 
 | [List of CSS classes](../../helpers/base_elements/)                                          | A set of CSS classes provided by the DHTMLX library                                                                                                                  |
 
 
-## How to work with DHTMLX Tree
+## How to work with Tree
 
 In this section you may study how to expand or collapse Tree items, how to work with their state, and more.
 

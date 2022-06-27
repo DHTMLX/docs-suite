@@ -11,6 +11,12 @@ Check [online samples for dhtmlxTimePicker](https://snippet.dhtmlx.com/all?text=
 
 ![](../assets/timepicker/dhx_timepicker.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Timepicker:
+
+- [Features](timepicker/features.md)
+
 ## API reference
 
 - [](timepicker/api/api_overview.md)

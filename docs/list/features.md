@@ -41,7 +41,7 @@ In this section you can find out how to initialize List, how to load data into t
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX List with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX List with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
-## How to configure DHTMLX List
+## How to configure List
 
 In this section you will know how to configure the drag-n-drop functionality, how to activate inline editing and key navigation.
 
@@ -52,7 +52,7 @@ In this section you will know how to configure the drag-n-drop functionality, ho
 | [Inline editing](../configuration/#editing-items)                 | Learn how to enable inline editing in List ([Example](https://snippet.dhtmlx.com/f26lfcai))                |
 | [Keyboard navigation](../configuration/#arrow-keys-navigation)    | Learn how to enable key navigation in List                                                                 |
 
-## How to customize DHTMLX List and change its size
+## How to customize List and change its size
 
 In this section you can learn how to configure the height and style of List and its items.
 

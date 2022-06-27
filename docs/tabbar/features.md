@@ -29,7 +29,7 @@ In this section you can find out how to initialize Tabbar, how to attach the nec
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Tabbar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                           |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Tabbar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                |
 
-## How to configure DHTMLX Tabbar 
+## How to configure Tabbar 
 
 In this section you will know how to create a Tabbar with the necessary number of tabs, how to specify the active tab, and how to define the position of the Tabbar on a page.
 
@@ -52,7 +52,7 @@ In this section you can find out how to configure the size, alignment and visibi
 
 
 
-## How to customize DHTMLX Tabbar and change its size
+## How to customize Tabbar and change its size
 
 In this section you can learn how to customize a Tabbar and configure the size of its tabs.
 

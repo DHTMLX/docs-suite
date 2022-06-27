@@ -54,7 +54,7 @@ In this section you can find out how to initialize and localize Form, how to add
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Form with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Form with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
-## How to configure DHTMLX Form
+## How to configure Form
 
 In this section you will know how to configure groups of controls, how to align controls and add paddings between them, how to initialize a disabled or hidden Form.
 
@@ -82,7 +82,7 @@ In this section you will learn how to configure required fields, to add validati
 | [Validating Form](../api/form_validate_method/)                                           | Learn how to validate the whole form ([Example](https://snippet.dhtmlx.com/pmz0zk16))                                                                      |
 | [Validating a separate control](../api/input/input_validate_method/)                      | Learn how to validate a separate control ([Example](https://snippet.dhtmlx.com/2wz5lfbp))                                                                  |
 
-## How to customize DHTMLX Form and change its size
+## How to customize Form and change its size
 
 In this section you can learn how to configure the size and style of Form and its controls.
 
@@ -92,7 +92,7 @@ In this section you can learn how to configure the size and style of Form and it
 | [Styling Form](../customization/)                                 | Learn how to customize a Form and its controls ([Example](https://snippet.dhtmlx.com/wnscgb50)) |
 | [List of CSS classes](../../helpers/base_elements/)               | A set of CSS classes provided by the DHTMLX library                                             |
  
-## How to work with DHTMLX Form
+## How to work with Form
 
 In this section you will study how to send a Form to the server, how to disable and enable the Form, hide and show it, how to clear the Form values and validation.
 

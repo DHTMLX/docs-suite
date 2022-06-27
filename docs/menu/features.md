@@ -59,7 +59,7 @@ In this section you can find out how to initialize Menu, how to add controls ins
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Menu with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
 
-## How to customize DHTMLX Menu
+## How to customize Menu
 
 In this section you can learn how to configure the style of Menu and its controls.
 
