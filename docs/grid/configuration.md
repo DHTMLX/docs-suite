@@ -116,7 +116,7 @@ var grid = new dhx.Grid("grid_container", {
 
 {{note  In case complex HTML content is added into a column, the column width may be calculated incorrectly.}}
 
-## Autoheight for columns
+## Autoheight for rows
 
 Starting from v7.1, you can set the [autoHeight: true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text to split into multiple lines automatically based on the width of the column
 

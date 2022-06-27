@@ -12,6 +12,12 @@ Check [online samples for dhtmlxDataView](https://snippet.dhtmlx.com/all?text=%2
 
 ![](../assets/dataview/dataview_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX DataView:
+
+- [Features](dataview/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

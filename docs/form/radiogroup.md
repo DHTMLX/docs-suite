@@ -14,7 +14,7 @@ A control intended for creating groups of Radio buttons.
 
 **Related sample**: [Form. Radio Buttons](https://snippet.dhtmlx.com/ycp1cbct)
 
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+**Related sample**: [Form. Change Form configuration](https://snippet.dhtmlx.com/1pzybtja)
 
 ## Adding RadioGroup
 

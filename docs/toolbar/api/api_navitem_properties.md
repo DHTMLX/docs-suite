@@ -68,6 +68,11 @@ description: You can explore the NavItem properties of Toolbar in the documentat
 			<td><b>countColor</b></td>
 			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
 		</tr>
+		<tr>
+			<td><b>multiClick</b></td>
+			<td>(<i>boolean</i>) if <i>true</i> - the "click" event will fire multiple times when the item is clicked and held; if <i>false</i> - the "click" event will fire on each click of the item
+           </td>
+		</tr>
         <tr>
 			<td><b>hidden</b></td>
 			<td>(<i>boolean</i>) defines whether a control is hidden</td>

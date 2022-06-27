@@ -56,6 +56,10 @@ description: You can explore the Sidebar NavItem properties of Sidebar in the do
 			<td><b>hotkey</b></td>
 			<td>(<i>string</i>) the name of a keyboard shortcut for a menu item</td>
 		</tr>
+		<tr>
+			<td><b>tooltip</b></td>
+			<td>(<i>string</i>) a tooltip for the navItem</td>
+		</tr>
         <tr>
 			<td><b>count</b></td>
 			<td>(<i>number</i>) a badge with a number</td>

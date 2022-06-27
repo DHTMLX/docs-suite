@@ -62,10 +62,8 @@ description: You can explore the Button properties of Toolbar in the documentati
 		</tr>
         <tr>
 			<td><b>multiClick</b></td>
-			<td>(<i>boolean</i>) defines the behavior of the Undo/Redo buttons:
-            <ul><li><i>true</i> - all the actions are reverted/re-applied one by one when the Undo/Redo button is clicked and held</li>
-            <li><i>false</i> - one action is reverted/re-applied on each click of the Undo/Redo button</li>
-            </ul></td>
+			<td>(<i>boolean</i>) if <i>true</i> - the "click" event will fire multiple times when the button is clicked and held; if <i>false</i> - the "click" event will fire on each click of the button
+           </td>
 		</tr>
         <tr>
 			<td><b>view</b></td>

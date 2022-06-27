@@ -12,6 +12,12 @@ Check [online samples for dhtmlxMessage](https://snippet.dhtmlx.com/all?text=%23
 
 ![](../assets/message/dhx_confirm.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Message:
+
+- [Features](message/features.md)
+
 ## Related resources
 
 - You can get dhtmlxMessage as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)

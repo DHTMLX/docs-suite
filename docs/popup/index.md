@@ -12,6 +12,12 @@ Mainly, the component is applied for showing a pop-up content on some action, su
 
 ![](../assets/popup/popup_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Popup:
+
+- [Features](popup/features.md)
+
 ## API reference
 
 - [](popup/api/api_overview.md)

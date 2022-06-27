@@ -11,6 +11,12 @@ Being a great tool for fast and handy navigation, it will make work with your ap
 
 ![](../assets/toolbar/toolbar_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Toolbar:
+
+- [Features](toolbar/features.md)
+
 ## API reference
 
 - [](toolbar/api/api_overview.md)

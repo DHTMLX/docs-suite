@@ -11,6 +11,12 @@ It allows you to arrange multiple objects with similar properties within a singl
 
 ![](../assets/list/list_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX List:
+
+- [Features](list/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

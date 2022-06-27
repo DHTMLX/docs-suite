@@ -2409,6 +2409,7 @@ module.exports = {
                       id: "layout/api/overview/methods_overview",
                     },*/
                     items: [
+                      "layout/api/layout_addcell_method",
                       "layout/api/layout_destructor_method",
                       "layout/api/layout_foreach_method",
                       "layout/api/layout_getcell_method",
@@ -3808,6 +3809,7 @@ module.exports = {
                     "tree/api/tree_editable_config",
                     "tree/api/tree_eventhandlers_config",
                     "tree/api/tree_icon_config",
+                    "tree/api/tree_isfolder_config",
                     "tree/api/tree_itemheight_config",
                     "tree/api/tree_keynavigation_config",
                     "tree/api/tree_rootid_config",

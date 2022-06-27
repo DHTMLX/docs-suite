@@ -12,6 +12,12 @@ Check [online samples for dhtmlxSlider](https://snippet.dhtmlx.com/all?text=%23s
 
 ![](../assets/slider/slider_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Slider:
+
+- [Features](slider/features.md)
+
 ## API reference
 
 - [](slider/api/api_overview.md)

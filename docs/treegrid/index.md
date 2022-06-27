@@ -17,6 +17,12 @@ Check [online samples for dhtmlxTreeGrid](https://snippet.dhtmlx.com/all?text=%2
 
 ![](../assets/treegrid/treegrid_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX TreeGrid:
+
+- [Features](treegrid/features.md)
+
 ## API Reference
 
 - [](treegrid/api/api_overview.md)
