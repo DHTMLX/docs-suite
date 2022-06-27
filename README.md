@@ -27,7 +27,7 @@ $ yarn start
 
 ## Related sources
 
-[Download DHTMLX Kanban](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+[Download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 
 [Live demos](https://snippet.dhtmlx.com/)
 
