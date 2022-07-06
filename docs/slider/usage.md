@@ -46,7 +46,7 @@ slider.setValue(20);
 
 You can get the current value of Slider with the help of the [getValue()](slider/api/slider_getvalue_method.md) method.
 
-~~~
+~~~js
 var value = slider.getValue(); // -> [20]
  
 // for a range slider as an array

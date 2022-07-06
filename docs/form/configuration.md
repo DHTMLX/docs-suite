@@ -13,34 +13,40 @@ The [](form/api/form_align_config.md) property allows you to set aligning direct
 You can apply various options of alignment for different [control groups](form/configuration.md#grouping-controls-in-form) by specifying the [](form/api/form_align_config.md) property for the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md):
 
 ~~~js
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form", {
     css: "dhx_widget--bordered",
-    height: "200px",
+    height: "150px",
     width: "400px",
-    align: "end", // sets the alignment for rows 
-    padding: "20px",  
+    // sets alignment for rows
+    align: "start", // "center", "end", "between", "around", "evenly"
+    padding: "20px",   
     rows: [
         {
-            type: "text",
-            name: "text",
-            value: "Do you agree with our terms and conditions?"
-        },
-        {
-            padding: "10px",  
-            align: "start", // sets the alignment for columns 
-            cols: [{
-                type: "checkbox",
-                width: "80px",
-                label: "I agree",
-                name: "agree",
-                id: "agree",
-                checked: true
-            },
-            {
-                type: "checkbox",
-                label: "I disagree",
-                name: "align",
-            }]
+            padding: "10px", 
+            // sets alignment for columns
+            align: "start",  // "center", "end", "between", "around", "evenly"
+            cols: [
+                {
+                    name: "radiogroup",
+                    type: "radioGroup",
+                    label: "Do you agree with our terms and conditions?",
+                    value: "agree",
+                    options: {
+                        cols: [
+                            {
+                                type: "radioButton",
+                                text: "Yes",
+                                value: "agree",
+                            },
+                            {
+                                type: "radioButton",
+                                text: "No",
+                                value: "disagree"
+                            },
+                        ]
+                    },
+                },
+            ]
         }
     ]
 });
@@ -48,45 +54,88 @@ var form = new dhx.Form("form", {
 
 **Related Sample**: [Form. Alignment](https://snippet.dhtmlx.com/jjhkypod)
 
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
+**Related sample**: [Form. Change Form configuration](https://snippet.dhtmlx.com/1pzybtja)
 
 ## Grouping Controls in Form
 
-![](../assets/form/blocks.png)
-
-**Related sample**: [Form. Blocks](https://snippet.dhtmlx.com/1pzybtja)
-
 You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md) options in the configuration object of the component:
 
-~~~js {3,5}
+~~~js {3,6,12,19,43,50}
 var form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
-    cols: [{
-		padding: "20px",
-		rows: [
-			{
-            	type: "input",
-            	label: "title",
-            	name: "title",
-            	value: blockConfig.title,
-            	labelWidth: "100px",
-            	labelPosition: "right"
-			},
-			{
-				type: "input",
-				label: "width",
-				name: "width",
-				value: blockConfig.width,
-				labelWidth: "100px",
-				labelPosition: "right"
-			},
-            {
-                // more controls
-          	}
-        ]
-    }]
+    cols: [
+		{
+            align: "center",
+            rows: [
+                {
+                    title: "Align:",
+                    padding: "10px",
+                    align: "around",
+                    css: "dhx_layout-cell--bordered",
+                    rows: [
+                        {
+                            type: "radioGroup",
+                            name: "align",
+                            options: {
+                                padding: "10px",
+                                align: "center",
+                                rows: [
+                                    {
+                                        type: "radioButton",
+                                        text: "start",
+                                        value: "start",
+                                        checked: true,
+                                        autoWidth: true,
+                                    },
+                                    {
+                                        type: "radioButton",
+                                        text: "center",
+                                        value: "center",
+                                        autoWidth: true,
+                                    },
+                                    // more options
+                                ],
+                            },
+                        },
+                    ],
+                },
+                {
+                    title: "Direction:",
+                    css: "dhx_layout-cell--bordered dhx_layout-cell--no-border_top",
+                    padding: "10px",
+                    rows: [
+                        {
+                            type: "radioGroup",
+                            name: "dir",
+                            options: {
+                                padding: "10px",
+                                align: "center",
+                                cols: [
+                                    {
+                                        type: "radioButton",
+                                        text: "as rows",
+                                        value: "rows",
+                                        checked: true,
+                                        autoWidth: true,
+                                    },
+                                    {
+                                        type: "radioButton",
+                                        text: "as cols",
+                                        value: "cols",
+                                        autoWidth: true,
+                                    },
+                                ],
+                            },
+                        },
+                    ],
+                },
+            ],
+        }
+    ]
 });
 ~~~
+
+**Related sample**: [Form. Change Form configuration](https://snippet.dhtmlx.com/1pzybtja)
 
 ## Making Form disabled
 

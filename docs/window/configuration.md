@@ -121,7 +121,7 @@ You can set some HTML content into a window via the [](window/api/window_html_co
 
 ~~~js
 var dhxWindow = new dhx.Window({
-	htmlContent:"<h1>Header</h1><p>paragraph</p>"
+	html:"<h1>Header</h1><p>paragraph</p>"
 });
 ~~~
 

@@ -29,6 +29,6 @@ Note, that the **autoHeight** option does not adjust the height of the cells in 
 
 @changelog: added in v7.1
 
-[comment]: # (@related: treegrid/configuration.md#autoheight-for-columns)
+[comment]: # (@related: treegrid/configuration.md#autoheight-for-rows)
 
 [comment]: # (@relatedapi: treegrid/api/treegrid_data_config.md)

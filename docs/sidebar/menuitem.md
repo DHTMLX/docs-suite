@@ -72,7 +72,7 @@ sidebar.show(id);
 sidebar.hide(id);
 ~~~
 
-## Enabling/disabling a navItem
+## Enabling/disabling a menuItem
 
 Any menuItem in the sidebar can be enabled/disabled:
 

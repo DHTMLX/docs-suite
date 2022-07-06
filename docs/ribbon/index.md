@@ -10,6 +10,12 @@ dhtmlxRibbon is an advanced version of dhtmlxToolbar. It aggregates commands and
 
 ![](../assets/ribbon/ribbon_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Ribbon:
+
+- [Features](ribbon/features.md)
+
 ## API reference
 
 - [](ribbon/api/api_overview.md)

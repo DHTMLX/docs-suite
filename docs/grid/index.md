@@ -12,6 +12,12 @@ Check [online samples for dhtmlxGrid](https://snippet.dhtmlx.com/all?text=%23gri
 
 ![](../assets/grid/grid_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Grid:
+
+- [Features](grid/features.md)
+
 ## API Reference
 
 - [](grid/api/api_overview.md)

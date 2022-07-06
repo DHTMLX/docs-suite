@@ -12,6 +12,12 @@ Check [online samples for dhtmlxTabbar](https://snippet.dhtmlx.com/all?text=%23t
 
 ![](../assets/tabbar/tabbar_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Tabbar:
+
+- [Features](tabbar/features.md)
+
 ## API reference
 
 - [](tabbar/api/api_overview.md)

@@ -12,6 +12,12 @@ Check [online samples for dhtmlxTree](https://snippet.dhtmlx.com/all?text=%23tre
 
 ![](../assets/tree/tree_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Tree:
+
+- [Features](tree/features.md)
+
 ## API Reference
 
 - [](tree/api/api_overview.md)

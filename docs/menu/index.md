@@ -10,6 +10,12 @@ dhtmlxMenu is a component that provides an easy way to add a drop down menu to u
 
 ![](../assets/menu/menu_front.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Menu:
+
+- [Features](menu/features.md)
+
 ## API reference
 
 - [](menu/api/api_overview.md)

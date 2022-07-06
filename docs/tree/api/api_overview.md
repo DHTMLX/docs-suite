@@ -77,6 +77,7 @@ description: You can explore the API of Tree in the documentation of the DHTMLX 
 | [](tree/api/tree_editable_config.md)      | @getshort(tree/api/tree_editable_config.md)      |
 | [](tree/api/tree_eventhandlers_config.md) | @getshort(tree/api/tree_eventhandlers_config.md) |
 | [](tree/api/tree_icon_config.md)          | @getshort(tree/api/tree_icon_config.md)          |
+| [](tree/api/tree_isfolder_config.md)      | @getshort(tree/api/tree_isfolder_config.md)      |
 | [](tree/api/tree_itemheight_config.md)    | @getshort(tree/api/tree_itemheight_config.md)    |
 | [](tree/api/tree_keynavigation_config.md) | @getshort(tree/api/tree_keynavigation_config.md) |
 | [](tree/api/tree_rootid_config.md)        | @getshort(tree/api/tree_rootid_config.md)        |

@@ -195,11 +195,11 @@ Indexes are counted from 0.
 
 ### Iterating menu items
 
-You can work with all (or some) menu items with the help of the **map()** method of TreeCollection:
+You can work with all (or some) menu items with the help of the **forEach()** method of TreeCollection:
 
 ~~~js
 // remove all icons from the menu
-menu.data.map(function(item){
+menu.data.forEach(function(item){
     item.icon = "";
 });
 menu.paint();
@@ -223,7 +223,7 @@ menu.data.getItem("id").hotkey = "Ctrl+N";
 menu.paint();
 ~~~
 
-## Removing menu items  
+### Removing menu items  
 
 You can remove any item from a menu with the **remove()** method. The item will be removed with all its sub-items.
 

@@ -11,6 +11,12 @@ Check [online samples for dhtmlxLayout](https://snippet.dhtmlx.com/all?text=%23l
 
 ![](../assets/layout/layout.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Layout:
+
+- [Features](layout/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

@@ -6,16 +6,33 @@ description: You can explore how to work with Sidebar in the documentation of th
 
 # Work with Sidebar
 
-## Adding a tooltip to a control
+## Expanding and collapsing Sidebar
 
-You can attach a tooltip to a control. For this you need to provide the **tooltip** property with the tooltip text in the control object before the sidebar initialization:
+It is possible to expand/collapse a sidebar using two corresponding methods - [expand()](sidebar/api/sidebar_expand_method.md) and [collapse()](sidebar/api/sidebar_collapse_method.md):
 
 ~~~js
-{
-    type: "menuItem",
-    value: "test1",
-    tooltip: "tooltip for test1"
-}
+sidebar.expand(); // expands a sidebar
+sidebar.collapse(); // collapses a sidebar
+~~~
+
+**Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
+
+## Toggling Sidebar
+
+You can collapse and expand a sidebar with the help of the [toggle()](sidebar/api/sidebar_toggle_method.md) method as easy as that:
+
+~~~js
+sidebar.toggle();
+~~~
+
+**Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
+
+## Checking if Sidebar is collapsed
+
+To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/api/sidebar_iscollapsed_method.md) method of the Sidebar API. The method returns *true*, if a sidebar is collapsed, and *false* if it's expanded.
+
+~~~js
+sidebar.isCollapsed(); // -> true/false
 ~~~
 
 ## Hiding and showing controls
@@ -36,25 +53,6 @@ Starting from v7.0, it is possible to hide/show all Sidebar controls on the page
 sidebar.hide();
 // shows all Sidebar controls
 sidebar.show();
-~~~
-
-## Expanding and collapsing Sidebar
-
-It is possible to expand/collapse a sidebar using two corresponding methods - [expand()](sidebar/api/sidebar_expand_method.md) and [collapse()](sidebar/api/sidebar_collapse_method.md):
-
-~~~js
-sidebar.expand(); // expands a sidebar
-sidebar.collapse(); // collapses a sidebar
-~~~
-
-**Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
-
-## Checking if Sidebar is collapsed
-
-To check whether Sidebar is collapsed, make use of the [isCollapsed()](sidebar/api/sidebar_iscollapsed_method.md) method of the Sidebar API. The method returns *true*, if a sidebar is collapsed, and *false* if it's expanded.
-
-~~~js
-sidebar.isCollapsed(); // -> true/false
 ~~~
 
 ## Disabling and enabling controls
@@ -166,16 +164,6 @@ To get the selected items, call the [getSelected()](sidebar/api/sidebar_getselec
 ~~~js
 sidebar.getSelected(); // -> ["selected_1", "selected_1.1"]
 ~~~
-
-## Toggling Sidebar
-
-You can collapse and expand a sidebar with the help of the [toggle()](sidebar/api/sidebar_toggle_method.md) method as easy as that:
-
-~~~js
-sidebar.toggle();
-~~~
-
-**Related sample**: [Sidebar. Toggle](https://snippet.dhtmlx.com/wll2h9nd)
 
 ## Using Tree collection API
 

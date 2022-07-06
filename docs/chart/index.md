@@ -12,6 +12,12 @@ Check [online samples for dhtmlxChart](https://snippet.dhtmlx.com/all?text=%23ch
 
 ![](../assets/chart/line_overview.png)
 
+## Features
+
+You can check the following page to learn how to build a full-featured DHTMLX Chart:
+
+- [Features](chart/features.md)
+
 ## API reference
 
 - [](api/api_overview.md)

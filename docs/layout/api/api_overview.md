@@ -12,6 +12,7 @@ description: You can explore the API of Layout in the documentation of the DHTML
 
 | Name                                       | Description                                       |
 | ------------------------------------------ | ------------------------------------------------- |
+| [](layout/api/layout_addcell_method.md)    | @getshort(layout/api/layout_addcell_method.md)    |
 | [](layout/api/layout_destructor_method.md) | @getshort(layout/api/layout_destructor_method.md) |
 | [](layout/api/layout_foreach_method.md)    | @getshort(layout/api/layout_foreach_method.md)    |
 | [](layout/api/layout_getcell_method.md)    | @getshort(layout/api/layout_getcell_method.md)    |
