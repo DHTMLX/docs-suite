@@ -8,6 +8,29 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.5
+-------------------
+
+Released on July 7, 2022
+
+### Fixes
+
+- Form. Fix the issue with internal paddings of Form elements when using the `setProperties()` method
+- Form. Now it is possible to set a new value for the disabled Combobox control via API
+- Grid. Fix the incorrect work of formatting of numbers in some cases
+- Grid. Fix the incorrect display of dates when the date format includes milliseconds
+- Grid. Fix the incorrect work of editing of spanned cells
+- Grid. Fix the issue which caused "fixed" columns to hide horizontal scrollbar
+- Grid. Fix the issue which caused sorting icons not to show the correct direction of the future sorting order
+- Grid. Fix the issue which caused the hidden rows to become visible after filtering of data was reset
+- Grid. Fix the issue which prevented spans from being stylized via the `addCellCss()` method
+- Grid. Now it is possible to reset filtering in the read-only mode of comboFilter by choosing an empty option in the dropdown list
+- List. Fix the issue which caused focus to set on an item when clicking on it even so selection functionality was disabled via `selection:false`
+- TreeGrid. Fix the incorrect work of the `getLength()` method which returned null instead of "0" for empty TreeGrid in some cases
+- TreeGrid. Fix the issue which caused the height of the treegrid not to be recalculated after changing the data set
+- Window. Fix the incorrect display of modal window (it was displayed behind the non-modal one)
+- Window. Fix the issue with positioning of the window if the values of the width and height were incorrect
+
 Version 7.3.4
 ----------------
 
