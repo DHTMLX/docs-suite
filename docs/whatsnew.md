@@ -99,6 +99,8 @@ Version 7.3
 -----------------
 Released on January 19, 2022
 
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-7-3-new-treemap-chart-free-text-combobox-input-custom-filters-grid-treegrid/" target="_blank">Review of release on the blog</a>
+
 ### New functionality
 
 #### Chart
@@ -253,6 +255,9 @@ Released on August 26, 2021
 Version 7.2
 ---------------
 Released on August 4, 2021
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-7-2-new-form-control-custom-scroll-tree-templates/" target="_blank">Review of release on the blog</a>
+<br/><br/>
 
 Check the [Migration article](migration.md##71---72) to keep in step with the latest version.
 
@@ -547,6 +552,9 @@ Version 7.1
 
 Released on February 18, 2021
 
+<a href="https://dhtmlx.com/blog/number-formatting-multiline-content-tooltip-templates-7-1/" target="_blank">Review of release on the blog</a>
+<br/><br/>
+
 Check the [Migration article](migration.md#70---71) to keep in step with the latest version.
 
 ### New functionality
@@ -662,6 +670,8 @@ Version 7.0
 ---------------
 
 Released on December 7, 2020
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-7-0-pagination-node-js-css-templates-touch-support/" target="_blank">Review of release on the blog</a>
 
 ### Breaking changes
 
