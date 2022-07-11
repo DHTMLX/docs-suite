@@ -26,7 +26,7 @@ To add dhtmlxForm into an application, you need to take the following simple ste
         <div id="form_container"></div>
         <script>
             // creating dhtmlxForm
-            var form = new dhx.Form("form");
+            var form = new dhx.Form("form_container");
         </script>
     </body>
 </html>
