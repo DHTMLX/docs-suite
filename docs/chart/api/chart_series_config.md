@@ -146,7 +146,9 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>showTextTemplate</b></td>
-			<td>(<i>function</i>) a function that specifies the template for showing values of data items in bars</td>
+			<td>(<i>function</i>) a function that specifies the template for showing values of data items in bars <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show Text</a>
+			</td>
 		</tr>
 		<tr>
 			<td><b>showTextRotate</b></td>
@@ -244,7 +246,8 @@ var chart = new dhx.Chart("chart_container",{
 		</tr>
 		<tr>
 			<td><b>tooltipTemplate</b></td>
-			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip
+			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip<br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/p31wzm0b?text=chart" target="_blank">Chart. Treemap chart initialization</a>
 			</td>
 		</tr>
 		<tr>

@@ -79,7 +79,6 @@ In this section you will learn how to get a cell object, how to add or remove, h
 
 | Topic                                                                            | Description                                                                                                                             |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [Adding a cell](../api/layout_addcell_method/)                                   | Learn how to add a new cell into Layout ([Example](https://snippet.dhtmlx.com/n7bfbmfe))                                                |
 | [Removing a cell](../work_with_layout/#removing-cells)                           | Learn how to remove a cell from Layout ([Example](https://snippet.dhtmlx.com/tnujp7jk))                                                 |
 | [Iterating over all cells](../api/layout_foreach_method/)                        | Learn how to iterate over Layout cells ([Example](https://snippet.dhtmlx.com/9hfntqpy))                                                 |
 | [Getting a cell object](../api/layout_getcell_method/)                           | Learn how to get a configuration object of a particular cell                                                                            |

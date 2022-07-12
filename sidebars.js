@@ -2409,7 +2409,6 @@ module.exports = {
                       id: "layout/api/overview/methods_overview",
                     },*/
                     items: [
-                      "layout/api/layout_addcell_method",
                       "layout/api/layout_destructor_method",
                       "layout/api/layout_foreach_method",
                       "layout/api/layout_getcell_method",
