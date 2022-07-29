@@ -44,7 +44,7 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
         <tr>
 			<td><b>title</b></td>
 			<td>(<i>string</i>) sets a title for a scale <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/5ir00fer" target="_blank">Chart. Scale Title</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/5ir00fer" target="_blank">Chart. Scale title</a>
 			</td>
 		</tr>
 		<tr>
@@ -54,7 +54,7 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
 		<tr>
 			<td><b>textTemplate</b></td>
 			<td>(<i>function</i>) sets a template for scale labels <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/nhm3438n" target="_blank">Chart. Text Template For Scale Labels</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/nhm3438n" target="_blank">Chart. Text template for scale labels</a>
 			</td>
 		</tr>
 		<tr>
@@ -68,7 +68,7 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
 		<tr>
 			<td><b>scaleRotate</b></td>
 			<td>(<i>number</i>) the degree of rotation of labels of data items on the scale <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iw00fgl5" target="_blank">Chart. Scale Rotate</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iw00fgl5" target="_blank">Chart. Scale rotate</a>
 			</td>
 		</tr>
 		<tr>
@@ -82,25 +82,25 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
 		<tr>
 			<td><b>grid</b></td>
 			<td>(<i>boolean</i>) shows/hides the grid lines (for x,y, or both scales). <i>true</i> by default for both scales (scales lines are shown). To hide both scales lines, you need to set <i>grid:false</i> in the configs of each scale <br/> 
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Grid</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/leqdx9qr" target="_blank">Chart. Without grid (lines)</a>
 			</td>
 		</tr>
 		<tr>
 			<td><b>dashed</b></td>
 			<td>(<i>boolean</i>) sets the dashed type for a scale. Use the <i>dashed:true</i> option in the configuration of the scale <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/gnj1xc3r" target="_blank">Chart. Dashed Grid</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/gnj1xc3r" target="_blank">Chart. Dashed grid</a>
 			</td>
 		</tr>
 		<tr>
 			<td><b>targetLine</b></td>
 			<td>(<i>number</i>) shows a threshold line (a target value); looks for the specified value in the data <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0h6n0yuy" target="_blank">Chart. Target Line</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/28y4x1zd" target="_blank">Chart. Target value and target line</a>
 			</td>
 		</tr>
 		<tr>
 			<td><b>targetValue</b></td>
 			<td>(<i>number</i>) allows setting a threshold line at any defined level (any number, not necessarily from the data) <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/8d9kgw28" target="_blank">Chart. Target Value</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/28y4x1zd" target="_blank">Chart. Target value and target line</a>
 			</td>
 		</tr>
 		<tr>
@@ -154,6 +154,6 @@ The **radial** scale is used for Radar chart and has its own properties, due to 
     </tbody>
 </table>
 
-**Related sample**: [Chart. Axis Configuration](https://snippet.dhtmlx.com/yksfvhhl)
+**Related sample**: [Chart. Radar chart. Axis configuration](https://snippet.dhtmlx.com/yksfvhhl)
 
 [comment]: # (@related: chart/configuration_properties.md#scales)

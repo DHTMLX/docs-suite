@@ -44,7 +44,7 @@ chart.setConfig(config);
 
 @descr:
 
-**Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
+**Related sample**: [Chart. Change configuration on the fly](https://snippet.dhtmlx.com/7umj531n)
 
 See the list of chart configuration properties in the [Configuration](chart/configuration_properties.md) article.
 

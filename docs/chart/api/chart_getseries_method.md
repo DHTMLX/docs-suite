@@ -33,6 +33,6 @@ var config = chart.getSeries("A");
 */
 @descr:
 
-**Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
+**Related sample**: [Chart. Get series](https://snippet.dhtmlx.com/9jtscd9q)
 
 [comment]: # (@related: chart/usage.md#getting-series-configuration)

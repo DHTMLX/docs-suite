@@ -29,8 +29,8 @@ var chart = new dhx.Chart("chart_container",{
 @descr:
 
 **Related samples**:
-- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
-- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
+- [Chart. Enable legend](https://snippet.dhtmlx.com/00ei3q23)
+- [Chart. Legend position](https://snippet.dhtmlx.com/pgqf1yxj)
   
 ## The list of config options for legend (for charts with scales)
 
@@ -39,7 +39,7 @@ var chart = new dhx.Chart("chart_container",{
         <tr>
 			<td><b>form</b></td>
 			<td>(<i>string</i>) the form of the legend markers ("rect" or "circle")<br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n8wsfv5n" target="_blank">Chart. Legend Form</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/n8wsfv5n" target="_blank">Chart. Legend form</a>
 			</td>
 		</tr>
 		<tr>

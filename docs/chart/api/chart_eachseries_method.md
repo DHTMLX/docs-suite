@@ -50,6 +50,6 @@ chart.eachSeries(function(seria){
 
 @descr:
 
-**Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
+**Related sample**: [Chart. Each series](https://snippet.dhtmlx.com/4kbj4lmw)
 
 [comment]: # (@related: chart/usage.md#iterating-over-series)
