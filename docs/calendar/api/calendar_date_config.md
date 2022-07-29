@@ -17,7 +17,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 @examplestop:
 
-**Related sample**: [Calendar. Date Initialization](https://snippet.dhtmlx.com/fyg6l65t)
+**Related sample**: [Calendar. Date initialization](https://snippet.dhtmlx.com/fyg6l65t)
 
 @descr:
 By default, it is either the same as [](calendar/api/calendar_value_config.md), or shows the current date, if **value** is not specified.

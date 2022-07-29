@@ -28,7 +28,7 @@ var calendar = new dhx.Calendar("calendar", {
 
 
 @descr:
-**Related sample**: [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
+**Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
 The function passed to the method receives one parameter:
 

@@ -38,7 +38,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 ![](../assets/calendar/year_mode.png)
 
-**Related sample**: [Calendar. Calendar Modes](https://snippet.dhtmlx.com/n9q0tc0q)
+**Related sample**: [Calendar. Calendar modes](https://snippet.dhtmlx.com/n9q0tc0q)
 
 You can also show the calendar in one of the modes using the [](calendar/api/calendar_showdate_method.md) method.
 
@@ -53,13 +53,13 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-**Related sample**: [Calendar. Date Format](https://snippet.dhtmlx.com/2co9z3bi)
+**Related sample**: [Calendar. Date format](https://snippet.dhtmlx.com/2co9z3bi)
 
 ## Disabled dates
 
 ![](../assets/calendar/blocked_dates.png)
 
-**Related sample**: [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
+**Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
 To disable certain dates, use the [](calendar/api/calendar_disableddates_config.md) setting. The value of the property must be a function that takes a *date* as a parameter and returns a *boolean* value.
 The dates, for which the function returns *true*, are dimmed in the calendar.
@@ -67,7 +67,7 @@ The dates, for which the function returns *true*, are dimmed in the calendar.
 ~~~js
 var calendar = new dhx.Calendar("calendar", {
 	disabledDates: function(date) {
-		var disabled = {
+		const disabled = {
 			0: true,
 			1: true,
 			2: false,
@@ -86,7 +86,7 @@ var calendar = new dhx.Calendar("calendar", {
 
 ![](../assets/calendar/this_month_only.png)
 
-**Related sample**: [Calendar. The Days Of This Month Only](https://snippet.dhtmlx.com/4wi5hbtr)
+**Related sample**: [Calendar. The days of this month only](https://snippet.dhtmlx.com/4wi5hbtr)
 
 A default calendar shows both the days of the current month and several days of the previous and next months. You can choose the mode of displaying just the current month by setting the value of the [](calendar/api/calendar_thismonthonly_config.md) configuration property to *true*:
 
@@ -100,7 +100,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 ![](../assets/calendar/marked_dates.png)
 
-**Related sample**: [Calendar. Marked Dates](https://snippet.dhtmlx.com/ic5oeiga)
+**Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
 You can highlight certain dates in the calendar. Set the [](calendar/api/calendar_mark_config.md) property for that. The value of the property must be a function that takes a *date* as a parameter and returns a *string* with the name of a CSS class for marked dates or an empty string for other dates.
 
@@ -135,7 +135,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-**Related sample**: [Calendar. Date Initialization](https://snippet.dhtmlx.com/fyg6l65t)
+**Related sample**: [Calendar. Date initialization](https://snippet.dhtmlx.com/fyg6l65t)
 
 ## Initially selected date
 
@@ -180,7 +180,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-**Related sample**: [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
+**Related sample**: [Calendar. Value initialization](https://snippet.dhtmlx.com/epjjww3l)
 
 The specified date will be highlighted with a round blue marker in the calendar. By default, no date is selected initially.
 
@@ -192,7 +192,7 @@ Please note that the format of date in the Calendar is defined by the dateFormat
 
 ![](../assets/calendar/week_numbers.png)
 
-**Related sample**: [Calendar. Numbers Of Weeks](https://snippet.dhtmlx.com/9692gk6n)
+**Related sample**: [Calendar. Numbers of weeks](https://snippet.dhtmlx.com/9692gk6n)
 
 If you want to display the numbers of weeks in the calendar, enable the [](calendar/api/calendar_weeknumbers_config.md) property. By default, the numbers are not shown as the property is set to *false*.
 
@@ -226,7 +226,7 @@ The **value** option should have the array type and contain a pair of values (ei
 
 ![](../assets/calendar/weekstart_monday.png)
 
-**Related sample**: [Calendar. Week Start](https://snippet.dhtmlx.com/kaxmurh9)
+**Related sample**: [Calendar. Week start](https://snippet.dhtmlx.com/kaxmurh9)
 
 By default, the first day of the week is Sunday, as the **weekStart:"sunday"** configuration option is used. It is also possible to set Monday as the start of the week, by applying "monday" as a value of the [](calendar/api/calendar_weekstart_config.md) setting:
 
@@ -252,13 +252,13 @@ var calendar = new dhx.Calendar("calendar", {
 
 **Related sample**: [Calendar. Timepicker In Calendar](https://snippet.dhtmlx.com/jkbfb202)
 
-**Related sample**: [Calendar. Time Format](https://snippet.dhtmlx.com/9xi24if2)
+**Related sample**: [Calendar. Time format](https://snippet.dhtmlx.com/9xi24if2)
 
 ## Width of calendar
 
 ![](../assets/calendar/calendar_width.png)
 
-**Related sample**: [Calendar. Calendar Width](https://snippet.dhtmlx.com/azm0u5ns)
+**Related sample**: [Calendar. Calendar width](https://snippet.dhtmlx.com/azm0u5ns)
 
 You can set the desired width of a calendar using the [](calendar/api/calendar_width_config.md) configuration property. The default width of Calendar is 250px.
 

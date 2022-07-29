@@ -46,7 +46,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 });
 ~~~
 
-**Related sample**: [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
+**Related sample**: [Calendar. Value initialization](https://snippet.dhtmlx.com/epjjww3l)
 
 The specified date will be highlighted with a round blue marker in the calendar. By default, no date is selected initially.
 
@@ -85,7 +85,7 @@ calendar.setValue(["03/06/19", "15/06/19"]);
 
 In case a date has been successfully added into the calendar, the method will return *true*.
 
-**Related sample**: [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
+**Related sample**: [Calendar. Preset selected date](https://snippet.dhtmlx.com/vmg11002)
 
 {{note Please note that the format of date in the Calendar is defined by the [](calendar/api/calendar_dateformat_config.md) option. So, check that you've set the format of date you want to use in the calendar both in the
 **setValue()** method and in the **dateFormat** property. Otherwise, the default format (**"%d/%m/%y"**) will be used.}}
@@ -101,7 +101,7 @@ var date1 = calendar.getValue(); // -> "20/08/19"
 var date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300 
 ~~~
 
-**Related sample**: [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
+**Related sample**: [Calendar. Getting selected date](https://snippet.dhtmlx.com/k2vrfqj0)
 
 If you work with a calendar in the [range mode](calendar/configuring.md#rangemode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
 

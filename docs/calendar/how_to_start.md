@@ -31,7 +31,7 @@ To use dhtmlxCalendar in your application, you need to take the following simple
 </html>
 ~~~
 
-**Related sample**: [Calendar. Basic Initialization](https://snippet.dhtmlx.com/xcw19e52)
+**Related sample**: [Calendar. Initialization](https://snippet.dhtmlx.com/xcw19e52)
 
 ## Include source files
 
@@ -80,7 +80,7 @@ var calendar = new dhx.Calendar("calendar_container",{
 });
 ~~~
 
-**Related sample**: [Calendar. Basic Initialization](https://snippet.dhtmlx.com/xcw19e52)
+**Related sample**: [Calendar. Initialization](https://snippet.dhtmlx.com/xcw19e52)
 
 ### Initialization in a popup
 
@@ -125,7 +125,7 @@ calendar.events.on("change", function() {
 });
 ~~~
 
-**Related sample**: [Calendar. Date Picker](https://snippet.dhtmlx.com/mj7jr6ro)
+**Related sample**: [Calendar. Date picker](https://snippet.dhtmlx.com/mj7jr6ro)
 
 ### Configuration properties
 
@@ -152,4 +152,4 @@ var calendar = new dhx.Calendar("calendar_container", {
 calendar.setValue(new Date(2019,1,10));
 ~~~
 
-**Related sample**: [Calendar. Preset Selected Date](https://snippet.dhtmlx.com/vmg11002)
+**Related sample**: [Calendar. Preset selected date](https://snippet.dhtmlx.com/vmg11002)

@@ -13,7 +13,7 @@ description: You can explore the disabledDates config of Calendar in the documen
 @example:
 var calendar = new dhx.Calendar("calendar", {
 	disabledDates: function(date) {
-		var disabled = {
+		const disabled = {
 			0: true,
 			1: true,
 			2: false,
@@ -28,7 +28,7 @@ var calendar = new dhx.Calendar("calendar", {
 
 
 @descr:
-**Related sample**: [Calendar. Disabled Dates](https://snippet.dhtmlx.com/27n67r91)
+**Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
 
 The function passed to the method receives one parameter:
 

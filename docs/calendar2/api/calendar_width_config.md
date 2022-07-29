@@ -20,7 +20,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 **Related sample**:
-- [Calendar. Calendar Width](https://snippet.dhtmlx.com/azm0u5ns)
+- [Calendar. Calendar width](https://snippet.dhtmlx.com/azm0u5ns)
 
 @related: 
 calendar/how_to_start.md#initialize-calendar

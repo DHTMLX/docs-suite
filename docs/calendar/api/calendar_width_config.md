@@ -19,6 +19,6 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 @descr:
 
-**Related sample**: [Calendar. Calendar Width](https://snippet.dhtmlx.com/azm0u5ns)
+**Related sample**: [Calendar. Calendar width](https://snippet.dhtmlx.com/azm0u5ns)
 
 [comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#widthofcalendar)

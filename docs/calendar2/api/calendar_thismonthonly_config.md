@@ -26,4 +26,4 @@ calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#displayingonlycurrentmonth
 
 **Related sample**:
-- [Calendar. The Days Of This Month Only](https://snippet.dhtmlx.com/4wi5hbtr)
+- [Calendar. The days of this month only](https://snippet.dhtmlx.com/4wi5hbtr)
