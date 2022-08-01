@@ -34,8 +34,6 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 </html>
 ~~~
 
-**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
-
 ## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
@@ -100,7 +98,7 @@ var dataview = new dhx.DataView("dataview_container", {
 dataview.data.load("../common/dataset.json");
 ~~~
 
-**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
+**Related sample**: [Dataview. Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)
 
 :::info
 To display data in DataView you should define a [template](dataview/configuration.md/#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.

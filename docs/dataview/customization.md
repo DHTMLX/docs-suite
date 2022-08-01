@@ -34,7 +34,7 @@ var dataview = new dhx.DataView({
 
 ![Custom dataview styles](../assets/dataview/custom_widget_styles.png)
 
-**Related sample**: [Dataview. Custom Widget Styles](https://snippet.dhtmlx.com/j1yv94o8)
+**Related sample**: [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
 
 ## Custom styling of items
 
@@ -61,7 +61,7 @@ The image below and the related sample demonstrate another example of customizat
 
 ![Custom items styles](../assets/dataview/custom_items_styles.png)
 
-**Related sample**: [Dataview. Custom Item Styles](https://snippet.dhtmlx.com/kpnzizbf)
+**Related sample**: [Dataview. Styling (custom CSS for item)](https://snippet.dhtmlx.com/kpnzizbf)
 
 ## Custom styling of selection and focus
 
@@ -82,4 +82,4 @@ var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
 
 ![Custom selection styles](../assets/dataview/custom_selection_styles.png)
 
-**Related sample**: [Dataview. Custom Selection Styles](https://snippet.dhtmlx.com/n98tzmzp)
+**Related sample**: [Dataview. Custom selection styles](https://snippet.dhtmlx.com/n98tzmzp)

@@ -26,7 +26,7 @@ var dataset = [
 ]
 ~~~
 
-**Related sample**: [Dataview. Config Data](https://snippet.dhtmlx.com/s547z4xr)
+**Related sample**: [Dataview. Initialization with config.data](https://snippet.dhtmlx.com/s547z4xr)
 
 Each object in the data set contains a number of *key:value* pairs that represent attributes of DataView items. 
 You can specify your own template of rendering DataView items with the help of the [](dataview/api/dataview_template_config.md) configuration option.
@@ -40,7 +40,7 @@ var dataview = new dhx.DataView("dataview_container");
 dataview.data.load("../common/dataset.json");
 ~~~
 
-**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
+**Related sample**: [Dataview. Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -61,7 +61,7 @@ var dataview = new dhx.DataView("dataview_container");
 dataview.data.parse(dataset);
 ~~~
 
-**Related sample**: [Dataview. Basic Initialization](https://snippet.dhtmlx.com/7rjmp5ol)
+**Related sample**: [Dataview. Initialization with data.parse()](https://snippet.dhtmlx.com/shhsmgrq)
 
 ## Saving and restoring state
 

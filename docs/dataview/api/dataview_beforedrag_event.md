@@ -26,7 +26,7 @@ dataview.events.on("beforeDrag", function(data, events) {
 
 @descr:
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 The `data` object contains the following parameters:
 

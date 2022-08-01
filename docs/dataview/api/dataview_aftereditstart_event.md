@@ -20,6 +20,6 @@ dataview.events.on("afterEditStart", function(id){
 
 @descr:
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.1

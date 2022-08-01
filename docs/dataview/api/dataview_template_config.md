@@ -25,7 +25,7 @@ var dataview = new dhx.DataView("dataview", {
 
 @descr:
 
-**Related sample**: [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
+**Related sample**: [Dataview. With template](https://snippet.dhtmlx.com/d6l6grr7)
 
 The template function takes one parameter:
 

@@ -34,7 +34,7 @@ var dataview = new dhx.DataView("dataview_container", {
 @descr: 
 
 **Related samples**:
-- [Dataview. Config Data](https://snippet.dhtmlx.com/s547z4xr)
-- [Dataview. Init With External Data](https://snippet.dhtmlx.com/t632x22i)
+- [Dataview. Initialization with config.data](https://snippet.dhtmlx.com/s547z4xr)
+- [Dataview. Initialization with external DataCollection](https://snippet.dhtmlx.com/t632x22i)
 
 [comment]: # (@related: dataview/data_loading.md)

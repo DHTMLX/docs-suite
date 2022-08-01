@@ -19,8 +19,6 @@ var dataview = new dhx.DataView("dataview", {
 
 @descr:
 
-**Related sample**: [Dataview. Disable selection](https://snippet.dhtmlx.com/xh66mnu3)
-
 @changelog: added in v6.5
 
 [comment]: # (@relatedapi: dataview/api/selection/selection_enable_method.md dataview/api/selection/selection_disable_method.md)

@@ -18,6 +18,6 @@ var dataview = new dhx.DataView("dataview", {
 
 @descr:
 
-**Related sample**: [Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
+**Related sample**: [Dataview. Arrow navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
 [comment]: # (@related: dataview/configuration.md#arrow-keys-navigation)
