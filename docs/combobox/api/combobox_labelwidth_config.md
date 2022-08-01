@@ -16,7 +16,4 @@ var combo = new dhx.Combobox("combo_container", {
 });
 
 @descr:
-
-**Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)
-
 [comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#label)

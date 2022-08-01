@@ -18,7 +18,7 @@ combobox.isDisabled(); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+**Related sample**: [Combobox. Enable, disable, is disabled](https://snippet.dhtmlx.com/7bujtsuu)
 
 @changelog: added in v6.4
 

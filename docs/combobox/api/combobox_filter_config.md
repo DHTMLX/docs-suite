@@ -20,7 +20,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 @descr: 
 
-**Related sample**: [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
+**Related sample**: [Combobox. Custom filter](https://snippet.dhtmlx.com/791incm9)
 
 A custom function takes two parameters:
 

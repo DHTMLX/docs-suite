@@ -31,13 +31,13 @@ var combo = new dhx.Combobox("combo_container",{
 });
 ~~~
 
-**Related sample**: [Combobox. Virtual List](https://snippet.dhtmlx.com/5srwualw)
+**Related sample**: [Combobox. Virtual list](https://snippet.dhtmlx.com/5srwualw)
 
 ## Height of list of options and its items
 
 ![](../assets/combo/height.png)
 
-**Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)
+**Related sample**: [Combobox. List height](https://snippet.dhtmlx.com/vilg4l7w)
 
 There are two useful options to adjust the height of the list of options and the height of a separate item of this list: [](combobox/api/combobox_listheight_config.md) and [](combobox/api/combobox_itemheight_config.md):
 
@@ -86,7 +86,7 @@ var combobox = new dhx.Combobox("combobox", {
 });
 ~~~
 
-**Related sample**: [Combobox. Initial Value](https://snippet.dhtmlx.com/spnausim)
+**Related sample**: [Combobox. Initial value](https://snippet.dhtmlx.com/spnausim)
 
 - If *multiselection:true* is set for a combo, the property takes an array of string values as: *value: ["1","2","3"]*,
 - If *multiselection:false* is set or the *multiselection* config is not defined, the property gets either of the two values: *value:"1"* or *value: ["1"]*.
@@ -117,13 +117,13 @@ var combo = new dhx.Combobox("combo_container",{
 
 ![](../assets/combo/label_top.png)
 
-**Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)
+**Related sample**: [Combobox. Label position](https://snippet.dhtmlx.com/2936fray)
 
 ## Number of selected options
 
 ![](../assets/combo/selected_item.png)
 
-**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
+**Related sample**: [Combobox. Items count](https://snippet.dhtmlx.com/fw2u2bww)
 
 Instead of showing all selected options separately in the ComboBox input, you can group them and display just the number of selected options. For this, you should use the [](combobox/api/combobox_itemscount_config.md) property. 
 
@@ -230,13 +230,13 @@ var combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-**Related sample**: [Combobox. Select All Button](https://snippet.dhtmlx.com/ui7pi7ty)
+**Related sample**: [Combobox. Multiselection, add new options (free text), select all button](https://snippet.dhtmlx.com/ui7pi7ty)
 
 ## Template for ComboBox options
 
 ![](../assets/combo/combo_template.png)
 
-**Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
+**Related sample**: [Combobox. HTML template](https://snippet.dhtmlx.com/z7cpj76i)
 
 You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 

@@ -19,7 +19,7 @@ var combo = new dhx.Combobox("combo_container",{
 
 @descr:
 
-**Related sample**: [Combobox. List Height](https://snippet.dhtmlx.com/vilg4l7w)
+**Related sample**: [Combobox. List height](https://snippet.dhtmlx.com/vilg4l7w)
 
 @changelog: added in v6.4
 

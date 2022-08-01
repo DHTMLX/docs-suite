@@ -25,13 +25,15 @@ This article gives you detailed instructions on how to create dhtmlxCombo on a p
    <body>
         <div id="combo_container"></div>
         <script>            
-            var combo = new dhx.Combobox("combo_container", {// configuration});
+            var combo = new dhx.Combobox("combo_container", {
+                // configuration
+            });
         </script>
     </body>
 </html>
 ~~~
 
-**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
+**Related sample**: [Combobox. Initialization with config.data](https://snippet.dhtmlx.com/8bsb9dji)
 
 ## Include source files
 
@@ -62,10 +64,10 @@ To initialize dhtmlxComboBox, you should use the `dhx.Combobox` constructor. The
 - an object with configuration properties. See the full list below.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container", {// config options});
+var combo = new dhx.Combobox("combo_container", {
+    // config options
+});
 ~~~
-
-**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
 
 ### Configuration properties
 
@@ -108,6 +110,6 @@ var combo = new dhx.Combobox("combo_container");
 combo.data.parse(countries);
 ~~~
 
-**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
+**Related sample**: [Combobox. Initialization with data.parse()](https://snippet.dhtmlx.com/d2y5yf46)
 
 Detailed information on loading data into ComboBox is given in the [](combobox/adding_options.md) article .

@@ -52,7 +52,7 @@ var combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-**Related sample**: [Combobox. Custom Filter](https://snippet.dhtmlx.com/791incm9)
+**Related sample**: [Combobox. Custom filter](https://snippet.dhtmlx.com/791incm9)
 
 In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows in the popup list all the words that contain entered letters independent of their 
 order in a word.
@@ -85,4 +85,4 @@ var combo = new dhx.Combobox({
 });
 ~~~
 
-**Related sample**: [Combobox. Custom CSS](https://snippet.dhtmlx.com/lldd739i)
+**Related sample**: [Combobox. Styling (custom CSS)](https://snippet.dhtmlx.com/lldd739i)

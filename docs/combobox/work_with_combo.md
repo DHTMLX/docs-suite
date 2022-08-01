@@ -20,7 +20,7 @@ combo.setValue(combo.data.getId(1));
 combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 ~~~
 
-**Related sample**: [Combobox. Set Value](https://snippet.dhtmlx.com/xl1p7zcx)
+**Related sample**: [Combobox. Set value](https://snippet.dhtmlx.com/xl1p7zcx)
 
 To get the list of selected options, apply the [getValue()](combobox/api/combobox_getvalue_method.md) method. It returns ids of selected options either as string(s) (by default) or as an array of strings. 
 In the latter case you need to pass the following parameter:
@@ -40,7 +40,7 @@ var array_ids = combo.getValue(true);
 // -> ["u1556097609214", "u1556097609228", "u1556097609244"]
 ~~~
 
-**Related sample**: [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
+**Related sample**: [Combobox. Get value](https://snippet.dhtmlx.com/ppvjknid)
 
 ## Disabling/enabling ComboBox
 
@@ -53,7 +53,7 @@ combo.disable();
 combo.enable();
 ~~~
 
-**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+**Related sample**: [Combobox. Enable, disable, is disabled](https://snippet.dhtmlx.com/7bujtsuu)
 
 ## Checking if a combobox is disabled
 
@@ -63,7 +63,7 @@ To check if a combobox is disabled, call the [isDisabled()](combobox/api/combobo
 combo.isDisabled(); // -> true/false
 ~~~
 
-**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+**Related sample**: [Combobox. Enable, disable, is disabled](https://snippet.dhtmlx.com/7bujtsuu)
 
 ## Repainting ComboBox
 
@@ -134,7 +134,7 @@ combo.popup.show(container);
 combo.popup.hide();
 ~~~
 
-**Related sample**: [Combobox. Popup](https://snippet.dhtmlx.com/ztc4sko8)
+**Related sample**: [Combobox. Show / hide options list](https://snippet.dhtmlx.com/ztc4sko8)
 
 To control the process of showing/hiding the popup, apply the related events:
 
@@ -228,7 +228,7 @@ For instance:
 combobox.data.add({value:"Russia"},1);
 ~~~
 
-**Related sample**: [Combobox. Add/Remove](https://snippet.dhtmlx.com/o7vd331z)
+**Related sample**: [Combobox. Add data and remove item](https://snippet.dhtmlx.com/o7vd331z)
 
 :::note
 From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.

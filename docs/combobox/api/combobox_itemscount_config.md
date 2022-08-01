@@ -20,7 +20,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 @descr:
 
-**Related sample**: [Combobox. Items Count](https://snippet.dhtmlx.com/fw2u2bww)
+**Related sample**: [Combobox. Items count](https://snippet.dhtmlx.com/fw2u2bww)
 
 As a function takes one parameter:
 
