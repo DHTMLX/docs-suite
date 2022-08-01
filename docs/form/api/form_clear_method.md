@@ -26,7 +26,7 @@ form.clear();
 
 @descr:
 
-**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
+**Related sample**: [Form. Clear form](https://snippet.dhtmlx.com/a64ih4ih)
 
 The method may clear a form in one of three ways:
 

@@ -22,12 +22,12 @@ form.getItem("colorpicker").setValue("#02F7C6");
 @descr:
 
 **Related samples**:
-- [Form. Get Control Value](https://snippet.dhtmlx.com/q3u16v01)
-- [Form. Set Control Value](https://snippet.dhtmlx.com/ptwm9ttd)
-- [Form. Clear Control Validate](https://snippet.dhtmlx.com/2yj3obz2)
-- [Form. Clear Control](https://snippet.dhtmlx.com/82i6levj)
-- [Form. Validate Control](https://snippet.dhtmlx.com/2wz5lfbp)
-- [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
-- [Form. Disable Of Control](https://snippet.dhtmlx.com/n0ndn215)
+- [Form. Get control value](https://snippet.dhtmlx.com/q3u16v01)
+- [Form. Set control value](https://snippet.dhtmlx.com/ptwm9ttd)
+- [Form. Clear control validate](https://snippet.dhtmlx.com/2yj3obz2)
+- [Form. Clear control](https://snippet.dhtmlx.com/82i6levj)
+- [Form. Validate control](https://snippet.dhtmlx.com/2wz5lfbp)
+- [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
+- [Form. Disable/enable a control](https://snippet.dhtmlx.com/n0ndn215)
 
 @changelog:added in v6.2 

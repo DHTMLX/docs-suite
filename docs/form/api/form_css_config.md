@@ -39,7 +39,7 @@ var form = new dhx.Form("form", {
 
 @descr:
 
-**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
+**Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Form:
 

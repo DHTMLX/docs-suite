@@ -15,7 +15,7 @@ form.disable();
 
 @descr:
 
-**Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
+**Related sample**: [Form. Disable/enable](https://snippet.dhtmlx.com/few71nk2)
 
 @changelog: added in v6.4
 

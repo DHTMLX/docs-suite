@@ -32,7 +32,7 @@ var form = new dhx.Form({
 });
 ~~~
 
-**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
+**Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 
 ## Styling Form controls
 
@@ -66,4 +66,4 @@ var form = new dhx.Form("form-sample", {
 });
 ~~~
 
-**Related sample**: [Form. Form Custom Styles](https://snippet.dhtmlx.com/wnscgb50)
+**Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)

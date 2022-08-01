@@ -31,7 +31,7 @@ description: You can explore the Properties of the Button control of Form in the
 		<tr>
 			<td><b>url</b></td>
 			<td>(<i>string</i>) the URL the post request with form data will be sent to (if the <b>submit</b> property is set to <i>true</i>)  <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ikyyekxq" target="_blank">Form. All DhxForm Inputs</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ikyyekxq" target="_blank">Form. All controls</a>
 			</td>
 		</tr>
 		<tr>

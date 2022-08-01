@@ -10,7 +10,7 @@ An input with a calendar attached to it for selecting a date.
 
 ![DatePicker](../assets/form/form_datepicker.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. DatePicker](https://snippet.dhtmlx.com/q3yk7e6s)
 
@@ -68,6 +68,6 @@ var datepicker = form.getItem("datepicker").getWidget();  // -> dhtmlxCalendar
 datepicker.showDate(null,"month"); // shows the current month
 ~~~
 
-**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
+**Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
 Check [the full list of methods of the DHTMLX Calendar component](../../calendar/api/api_overview/#methods) which you can apply via the [getWidget()](../../form/api/calendar/calendar_getwidget_method/) method.

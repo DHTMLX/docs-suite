@@ -10,7 +10,7 @@ A simple button that can have an icon. Button can be *twoState* and can have a b
 
 ![Button control](../assets/form/form_button.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 ## Adding Button
 

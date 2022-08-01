@@ -25,7 +25,7 @@ It is also possible to get this information in the form of FormData. For this, y
 var state = form.getValue(true);
 ~~~
 
-**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
+**Related sample**: [Form. Get value](https://snippet.dhtmlx.com/odod5v12)
 
 ## Setting new values for controls
 
@@ -40,7 +40,7 @@ form.setValue({
 });
 ~~~
 
-**Related sample**: [Form. Set Value](https://snippet.dhtmlx.com/7nxbtlzs)
+**Related sample**: [Form. Set value](https://snippet.dhtmlx.com/7nxbtlzs)
 
 ## Enabling/Disabling a form
 
@@ -57,7 +57,7 @@ form.disable();
 // -> true|false
 ~~~
 
-**Related sample**: [Form. Disable](https://snippet.dhtmlx.com/few71nk2)
+**Related sample**: [Form. Disable/enable](https://snippet.dhtmlx.com/few71nk2)
 
 ## Checking if a form is disabled
 
@@ -73,7 +73,7 @@ To check whether a form control is disabled, pass either the name of the control
 form.isDisabled("input"); // -> returns true/false
 ~~~
 
-**Related sample**: [Form. Is Disabled](https://snippet.dhtmlx.com/lthu8p6p)
+**Related sample**: [Form. Is disabled](https://snippet.dhtmlx.com/lthu8p6p)
 
 ## Hiding/Showing a form
 
@@ -322,7 +322,7 @@ form.clear("value");
 form.clear();
 ~~~
 
-**Related sample**: [Form. Clear](https://snippet.dhtmlx.com/a64ih4ih)
+**Related sample**: [Form. Clear form](https://snippet.dhtmlx.com/a64ih4ih)
 
 ## Setting focus to a control
 
@@ -334,6 +334,6 @@ Starting from v7.0, you can set focus to a Form control via the [setFocus()](for
 form.setFocus("input");
 ~~~
 
-**Related sample**: [Form. Set Focus On Control](https://snippet.dhtmlx.com/tye82oqs)
+**Related sample**: [Form. Set focus on control](https://snippet.dhtmlx.com/tye82oqs)
 
 It is possible to set focus to DatePicker, Checkbox, ColorPicker, Combo, Input, RadioGroup, Select, Textarea, TimePicker controls of Form.

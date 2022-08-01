@@ -10,9 +10,9 @@ A control intended for creating groups of Radio buttons.
 
 ![RadioGroup control](../assets/form/form_radio.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Radio Buttons](https://snippet.dhtmlx.com/ycp1cbct)
+**Related sample**: [Form. Radio group](https://snippet.dhtmlx.com/ycp1cbct)
 
 **Related sample**: [Form. Change Form configuration](https://snippet.dhtmlx.com/1pzybtja)
 

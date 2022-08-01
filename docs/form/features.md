@@ -99,7 +99,7 @@ In this section you will study how to send a Form to the server, how to disable 
 | Topic                                                                             | Description                                                                                                   |
 | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | [Sending Form to server](../work_with_form/#sending-form-to-server)               | Learn how to send a Form to the server                                                                        |
-| [Disabling / enabling Form](../work_with_form/#enablingdisabling-a-form)          | Learn how to enable/disable a Form [Example](https://snippet.dhtmlx.com/few71nk2)                             |
+| [Disabling / enabling Form](../work_with_form/#enablingdisabling-a-form)          | Learn how to enable/disable a Form ([Example](https://snippet.dhtmlx.com/few71nk2))                             |
 | [Is disabled](../work_with_form/#checking-if-a-form-is-disabled)                  | Learn how to check whether a Form or its control is disabled ([Example](https://snippet.dhtmlx.com/lthu8p6p)) |
 | [Hiding / showing Form](../work_with_form/#hidingshowing-a-form)                  | Learn how to hide/show a Form                                                                                 |
 | [Checking visibility of a Form](../work_with_form/#checking-if-a-form-is-visible) | Learn how to check whether a Form or its control is visible                                                   |

@@ -18,7 +18,7 @@ form.isDisabled(); // -> true/false
 
 @descr:
 
-**Related sample**: [Form. Is Disabled](https://snippet.dhtmlx.com/lthu8p6p)
+**Related sample**: [Form. Is disabled](https://snippet.dhtmlx.com/lthu8p6p)
 
 To check whether a form control is disabled, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the **isDisabled()** method:
 

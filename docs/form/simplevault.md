@@ -10,7 +10,7 @@ A handy control for quick and easy uploading of a file or a set of files.
 
 ![SimpleVault control](../assets/form/form_simplevault.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Simple Vault](https://snippet.dhtmlx.com/ofy4k51o)
 

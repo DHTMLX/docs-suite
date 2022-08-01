@@ -19,7 +19,7 @@ var datepicker = form.getItem("datepicker").getWidget();
 
 @descr:
 
-**Related sample**: [Form. Get Widget Of Control](https://snippet.dhtmlx.com/0aqkdsi7)
+**Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
 It is possible to use methods of dhtmlxCalendar via the **getWidget()** method of a DatePicker control.
 
