@@ -18,7 +18,7 @@ colorpicker.setFocus("#BDF0E9");
 
 @descr:
 
-**Related sample**: [Colorpicker. Set Focus](https://snippet.dhtmlx.com/fg13r3uh)
+**Related sample**: [Colorpicker. Set focus](https://snippet.dhtmlx.com/fg13r3uh)
 
 @changelog:
 added in v6.4

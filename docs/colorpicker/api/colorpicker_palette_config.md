@@ -26,7 +26,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 @descr: 
 
-**Related sample**: [Colorpicker. Custom Palette Colors](https://snippet.dhtmlx.com/j5gisdew)
+**Related sample**: [Colorpicker. Custom palette and custom colors](https://snippet.dhtmlx.com/097jjhb8)
 
 This is the **default** array of colors of the ColorPicker:
 

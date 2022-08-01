@@ -19,7 +19,7 @@ colorpicker.setCurrentMode("picker");
 
 @descr:
 
-**Related sample**: [Colorpicker. Set Current Mode](https://snippet.dhtmlx.com/0mhp5cp6)
+**Related sample**: [Colorpicker. Set current mode](https://snippet.dhtmlx.com/0mhp5cp6)
 
 @changelog:
 added in v6.3

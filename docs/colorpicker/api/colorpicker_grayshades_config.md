@@ -19,6 +19,6 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 
 @descr: 
 
-**Related sample**: [Colorpicker. Palette Without Gray Shades](https://snippet.dhtmlx.com/b44fp8q2)
+**Related sample**: [Colorpicker. Palette without gray shades](https://snippet.dhtmlx.com/b44fp8q2)
 
 [comment]: # (@related:colorpicker/how_to_start.md#initialize-colorpicker colorpicker/configuration.md#gray-shades)
