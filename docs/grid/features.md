@@ -166,7 +166,7 @@ In this section you will know how to add and remove columns and rows, how to hid
 | [Checking visibility of a row](../usage/#checking-visibility-of-a-row)       | Learn how to check whether a row is hidden                                                                |
 | [Hiding columns](../configuration/#hidden-columns)            | Learn how to make a column hidden on Grid initialization ([Example](https://snippet.dhtmlx.com/lh7ma639)) |
 | [Showing / hiding a column](../usage/#hidingshowing-a-column) | Learn how to show and hide a column in Grid ([Example](https://snippet.dhtmlx.com/n4zjwsqj))              |
-| [Checking visibility of a column](../usage/#checking-visibility-of-a-column)       | Learn how to check whether a column is hidden   ([Example](https://snippet.dhtmlx.com/rdqhwnjv)                                                          |
+| [Checking visibility of a column](../usage/#checking-visibility-of-a-column)       | Learn how to check whether a column is hidden   ([Example](https://snippet.dhtmlx.com/rdqhwnjv))                                                          |
 
 ## How to work with data in Grid
 

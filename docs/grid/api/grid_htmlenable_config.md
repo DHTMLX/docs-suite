@@ -23,7 +23,7 @@ var grid = new dhx.Grid("grid_container", {
 
 If you set the property to *false*, the content of Grid columns will be displayed as a *string* value.
 
-**Related sample**: [Grid. Html In Data](https://snippet.dhtmlx.com/chitkvkc)
+**Related sample**: [Grid. Html in data](https://snippet.dhtmlx.com/chitkvkc)
 
 @changelog: added in v6.3
 

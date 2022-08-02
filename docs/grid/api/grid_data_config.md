@@ -39,8 +39,8 @@ var grid = new dhx.Grid("grid_container", {
 @descr:
 
 **Related samples**:
-- [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
-- [Grid. External Datacollection](https://snippet.dhtmlx.com/qrw1x949)
+- [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
+- [Grid. Initialization with external DataCollection](https://snippet.dhtmlx.com/qrw1x949)
 
 1. Starting with v7.1, you can specify the height for the necessary row of data via setting the number value to the <b>height</b> option when defining the data set: 
 

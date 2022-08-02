@@ -18,7 +18,7 @@ grid.hideColumn(col);
 
 @descr:
 
-**Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)
+**Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
 
 @changelog: added in v6.2
 

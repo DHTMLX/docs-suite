@@ -40,7 +40,7 @@ Drag-n-drop can work in three modes:
 </table>
 
 
-**Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
+**Related sample**: [Grid. Drag-n-drop between grids](https://snippet.dhtmlx.com/qx9a86ax)
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-between-grids)
 

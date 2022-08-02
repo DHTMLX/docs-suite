@@ -23,6 +23,6 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
-**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
+**Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#rowheight)

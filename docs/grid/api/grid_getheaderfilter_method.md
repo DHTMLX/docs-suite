@@ -34,7 +34,7 @@ countryFilter.blur();
 
 @descr:
 
-**Related sample**: [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
+**Related sample**: [Grid. Get header filter](https://snippet.dhtmlx.com/n8srjle3)
 
 @changelog:
 added in 7.0

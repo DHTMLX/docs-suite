@@ -46,13 +46,13 @@ description: You can explore the Grid column properties of Grid in the documenta
             <li><b>headerSort</b> - (<i>boolean</i>) enables/disables sorting by clicking the header</li>
             <li><b>sortAs</b> - (<i>function</i>) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
             </ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Header Spans</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Grouped headers (spans)</a>
             </td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
 			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html In Data</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html in data</a>
            </td>
 		</tr>
         <tr>
@@ -80,19 +80,19 @@ description: You can explore the Grid column properties of Grid in the documenta
                 <br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
             </li>
             </ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid With Footer</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid with footer</a>
             </td>
 		</tr>
         <tr>
 			<td><b>maxWidth</b></td>
 			<td>(<i>number</i>) the maximal width to be set for a column <br/>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank">Grid. Max Width</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank">Grid. Columns max width</a>
             </td>
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
 			<td>(<i>number</i>) the minimum width to be set for a column. The minimum width of a column is 20px. <br/> 
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Min Width</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Columns min width</a>
             </td>
 		</tr>
         <tr>
@@ -105,7 +105,7 @@ description: You can explore the Grid column properties of Grid in the documenta
             <ol>- <b>row</b> - (<i>object</i>) an object with all cells in a row</ol>
             <ol>- <b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</ol>
             </li></ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark Cells</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark cells</a>
             </td>
 		</tr>
         <tr>
@@ -150,13 +150,13 @@ description: You can explore the Grid column properties of Grid in the documenta
                 <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
                 <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
             </ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank">Grid. Cell Templates</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank">Grid. Cell templates</a>
             </td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#hidden-columns"><b>hidden</b></a></td>
 			<td>(<i>boolean</i>) defines whether a column is hidden <br/>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden Columns</a>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden columns</a>
            </td>
 		</tr>
         <tr>

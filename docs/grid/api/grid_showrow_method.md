@@ -18,7 +18,7 @@ grid.showRow(rowId);
 
 @descr:
 
-**Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
+**Related sample**: [Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
 
 @changelog:
 added in v7.0

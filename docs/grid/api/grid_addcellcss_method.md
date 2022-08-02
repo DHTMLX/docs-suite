@@ -26,4 +26,4 @@ grid.addCellCss("1", "b", "myCustomClass");
 
 @descr:
 
-**Related sample**: [Grid. Add Cell Css](https://snippet.dhtmlx.com/hskmp8rh)
+**Related sample**: [Grid. Add cell CSS](https://snippet.dhtmlx.com/hskmp8rh)

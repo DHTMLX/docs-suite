@@ -43,7 +43,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Content Align](https://snippet.dhtmlx.com/eyreddku)
+**Related sample**: [Grid. Content align](https://snippet.dhtmlx.com/eyreddku)
 
 The available values of the option are "left", "center" and "right".
 
@@ -61,7 +61,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Auto Empty Row](https://snippet.dhtmlx.com/rkytig73)
+**Related sample**: [Grid. Auto empty row](https://snippet.dhtmlx.com/rkytig73)
 
 ## Autosize for columns
 
@@ -99,7 +99,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
+**Related sample**: [Grid. Adjust columns by header, data, all](https://snippet.dhtmlx.com/zfrpe22d)
 
 It is also possible to use the [](grid/api/grid_adjust_config.md) property in the configuration of a separate column:
 
@@ -130,7 +130,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Auto height](https://snippet.dhtmlx.com/zkcsyazg)
+**Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
 As a result, the height of the cells will automatically adjust to their content.
 
@@ -150,7 +150,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
+**Related sample**: [Grid. Columns auto width](https://snippet.dhtmlx.com/4as4y3l4)
 
 You can disable this functionality for a specified column via setting the [](grid/api/grid_autowidth_config.md) property to *false* in the configuration of the column:
 
@@ -212,7 +212,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Setup drag column (Pro)](https://snippet.dhtmlx.com/dfdlzpqb)
+**Related sample**: [Grid. Columns drag'n'drop](https://snippet.dhtmlx.com/dfdlzpqb)
 
 {{note To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).}}
 
@@ -235,7 +235,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Setup Drag Mode](https://snippet.dhtmlx.com/qx9a86ax)
+**Related sample**: [Grid. Drag-n-drop between grids](https://snippet.dhtmlx.com/qx9a86ax)
 
 ## Editing Grid and separate columns
 
@@ -255,7 +255,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 - editing of the specified columns only
 
@@ -325,7 +325,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 - **datePicker** - an editor for cells with dates (default for a column with **type:"date"**)
 
@@ -341,7 +341,7 @@ To use this editor, you should specify the **type:"date"** property for a column
 }
 ~~~
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 - **select** - an editor for cells that should contain several options to choose from
 
@@ -371,7 +371,7 @@ Or provide the **options** property with an array of objects with a set of *key:
 } 
 ~~~
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 - **checkbox** - an editor for cells with a two-state check box
 
@@ -387,7 +387,7 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 }
 ~~~
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 {{note If you specify the editing option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
 
@@ -419,7 +419,7 @@ Or provide the **options** property with an array of objects with a set of *key:
 }
 ```
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 - **textarea** - an editor for cells that contain text
 
@@ -443,7 +443,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 - **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options
 
@@ -463,7 +463,7 @@ var grid = new dhx.Grid("grid", {
 });
 ```
 
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
@@ -597,7 +597,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)
+**Related sample**: [Grid. Frozen columns](https://snippet.dhtmlx.com/hcgl9nth)
 
 ## Header/footer content
 
@@ -612,7 +612,7 @@ There are three types of filters that you can specify in the header/footer conte
 }
 ~~~
 
-**Related sample**: [Grid. Header Filter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **selectFilter** - allows end users to filter data of a column by choosing an option from a presented dropdown list
 
@@ -625,7 +625,7 @@ There are three types of filters that you can specify in the header/footer conte
 }
 ~~~
 
-**Related sample**: [Grid. Header Filter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 - **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control
 
@@ -638,7 +638,7 @@ There are three types of filters that you can specify in the header/footer conte
 }
 ~~~
 
-**Related sample**: [Grid. Header Filter](https://snippet.dhtmlx.com/4qz8ng3c)
+**Related sample**: [Grid. Header filters (comboFilter, inputFilter, selectFilter)](https://snippet.dhtmlx.com/4qz8ng3c)
 
 If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it.
 
@@ -731,7 +731,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
+**Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 
 The default value of the mentioned properties is 40.
 
@@ -748,7 +748,7 @@ You can set the **hidden:true** property in the [config of a column](grid/config
 }
 ~~~
 
-**Related sample**: [Grid. Hidden Columns](https://snippet.dhtmlx.com/lh7ma639)
+**Related sample**: [Grid. Hidden columns](https://snippet.dhtmlx.com/lh7ma639)
 
 ## HTML content of Grid columns
 
@@ -805,7 +805,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Html In Data](https://snippet.dhtmlx.com/chitkvkc)
+**Related sample**: [Grid. Html in data](https://snippet.dhtmlx.com/chitkvkc)
 
 ## Event handlers for HTML content
 
@@ -908,7 +908,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Key Navigation](https://snippet.dhtmlx.com/y9kdk0md)
+**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
 ### Arrow shortcut keys
 
@@ -925,7 +925,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Key Navigation](https://snippet.dhtmlx.com/y9kdk0md)
+**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
 The list of the arrow shortcut keys:
 
@@ -1029,7 +1029,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Key Navigation](https://snippet.dhtmlx.com/y9kdk0md)
+**Related sample**: [Grid. Key navigation](https://snippet.dhtmlx.com/y9kdk0md)
 
 The list of the shortcut keys for editing:
 
@@ -1097,7 +1097,7 @@ var grid = new dhx.Grid("grid_container", {
 }
 ~~~
 
-**Related sample**: [Grid. Resizable Columns](https://snippet.dhtmlx.com/aeqzuks0)
+**Related sample**: [Grid. Resizable columns](https://snippet.dhtmlx.com/aeqzuks0)
 
 {{note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
 }}
@@ -1116,7 +1116,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Rows Height](https://snippet.dhtmlx.com/wjcjl80i)
+**Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 
 In this case, the height of each row is 30.
 
@@ -1165,7 +1165,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
+**Related sample**: [Grid. Custom row style](https://snippet.dhtmlx.com/2dxtwf9n)
 
 ## Selection
 
@@ -1217,7 +1217,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Sortable Columns](https://snippet.dhtmlx.com/r3prvlmo)
+**Related sample**: [Grid. Sortable columns](https://snippet.dhtmlx.com/r3prvlmo)
 
 ### Sorting separate columns
 
@@ -1304,7 +1304,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Spans Cells](https://snippet.dhtmlx.com/1775dwbl)
+**Related sample**: [Grid. Grouped cells (spans)](https://snippet.dhtmlx.com/1775dwbl)
 
 **Note**, that if both the **spans** and [leftSplit](grid/api/grid_leftsplit_config.md) properties are set in the Grid config, the following rules will be applied:
 
@@ -1325,7 +1325,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Hiding Tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
+**Related sample**: [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 
 There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](grid/configuration.md#columns) or [spans](grid/configuration.md#spans) accordingly:
 
@@ -1358,6 +1358,6 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom Sizes](https://snippet.dhtmlx.com/ffxj6se0)
+**Related sample**: [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
 
 In case these options aren't set in the Grid configuration, the component will take the size of the container.

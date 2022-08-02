@@ -27,7 +27,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
+**Related sample**: [Grid. Custom row style](https://snippet.dhtmlx.com/2dxtwf9n)
 
 The function takes the id of a row as a parameter and returns a string with the name of a CSS class.
 

@@ -23,7 +23,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
  
-**Related sample**: [Grid. Editable Data](https://snippet.dhtmlx.com/w2cdossn)
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 @changelog: added in v6.4
 

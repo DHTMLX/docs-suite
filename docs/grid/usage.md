@@ -88,7 +88,7 @@ var countryFilter = grid.getHeaderFilter("density");
 countryFilter.blur();
 ~~~
 
-**Related sample**: [Grid. Get Header Filter](https://snippet.dhtmlx.com/n8srjle3)
+**Related sample**: [Grid. Get header filter](https://snippet.dhtmlx.com/n8srjle3)
 
 The method returns either an HTML object or an object with Combobox configuration.
 
@@ -103,7 +103,7 @@ grid.showColumn(col);
 grid.hideColumn(col);
 ~~~
 
-**Related sample**: [Grid. Show/Hide Column](https://snippet.dhtmlx.com/n4zjwsqj)
+**Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
 
 Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
 
@@ -115,7 +115,7 @@ You can check whether a column is hidden or shown on a page using the [](grid/ap
 grid.isColumnHidden("country"); // -> true|false
 ~~~
 
-**Related sample**: [Grid. Is Column Hidden](https://snippet.dhtmlx.com/rdqhwnjv)
+**Related sample**: [Grid. Is column hidden](https://snippet.dhtmlx.com/rdqhwnjv)
 
 ## Hiding/showing a row
 
@@ -128,7 +128,7 @@ grid.showRow(rowId);
 grid.hideRow(rowId);
 ~~~
 
-**Related sample**:[Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
+**Related sample**:[Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
 
 ## Checking visibility of a row
 
@@ -138,7 +138,7 @@ You can check whether a row is hidden or shown on a page using the [](grid/api/g
 grid.isRowHidden("1"); // -> true|false
 ~~~
 
-**Related sample**: [Grid. Show/Hide Row](https://snippet.dhtmlx.com/8y83d6jv)
+**Related sample**: [Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
 
 ## Adding/removing a row
 
@@ -177,7 +177,7 @@ const cell = grid.selection.getCell();
 grid.data.remove(cell.row.id);
 ~~~
 
-**Related sample**: [Grid. Delete Row](https://snippet.dhtmlx.com/8ezuj7io)
+**Related sample**: [Grid. Delete row](https://snippet.dhtmlx.com/8ezuj7io)
 
 For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md/#selection) and [Work with selection object](grid/usage_selection.md) articles.
 
@@ -276,7 +276,7 @@ It is also possible to scroll grid content to a particular cell. Pass the ids of
 grid.scrollTo("15","c");
 ~~~
 
-**Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
+**Related sample**: [Grid. Controlling scroll behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
 ### Getting the state of scroll
 
@@ -348,7 +348,7 @@ grid.data.filter({
 });
 ~~~
 
-**Related sample**: [Grid. Basic Filter](https://snippet.dhtmlx.com/g0zpjqi1)
+**Related sample**: [Grid. Basic filter](https://snippet.dhtmlx.com/g0zpjqi1)
 
 ## Sorting data
 
@@ -392,7 +392,7 @@ grid.data.sort({
 });
 ~~~
 
-**Related sample**: [Grid. Sorting Data](https://snippet.dhtmlx.com/81dmbdfd)
+**Related sample**: [Grid. Sorting](https://snippet.dhtmlx.com/81dmbdfd)
 
 To discard all applied sorting rules, call the method without parameters:
 
@@ -433,7 +433,7 @@ var state = grid.getSortingState();
 // -> {dir: "desc", by: "country"}
 ~~~
 
-**Related sample**: [Grid. Get Sorting State](https://snippet.dhtmlx.com/u2vk3ri3)
+**Related sample**: [Grid. Get sorting state](https://snippet.dhtmlx.com/u2vk3ri3)
 
 ## Editing data
 
@@ -458,7 +458,7 @@ For example, you can edit the first cell of the "project" column like this:
 grid.editCell(grid.data.getId(0),"project");
 ~~~
 
-**Related sample**: [Grid. Editing Data](https://snippet.dhtmlx.com/pqbax5vs)
+**Related sample**: [Grid. Edit the first cell](https://snippet.dhtmlx.com/pqbax5vs)
 
 To finish editing of a cell, use the [](grid/api/grid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
@@ -500,7 +500,7 @@ Export settings include:
     </tbody>
 </table>
 
-**Related sample**: [Grid. Export](https://snippet.dhtmlx.com/58oqij47)
+**Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
 ### Exporting data to CSV
 
@@ -536,7 +536,7 @@ grid.export.csv({
 });
 ~~~
 
-**Related sample**: [Grid. Export](https://snippet.dhtmlx.com/58oqij47)
+**Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
 The **csv()** method returns a CSV string with Grid data.
 
