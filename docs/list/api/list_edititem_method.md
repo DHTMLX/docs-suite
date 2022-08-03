@@ -18,7 +18,7 @@ list.editItem("1");
 
 @descr:
 
-**Related sample**: [List. Edit Items](https://snippet.dhtmlx.com/6wsxgswc)
+**Related sample**: [List. Edit items](https://snippet.dhtmlx.com/6wsxgswc)
 
 @changelog: added in v6.4
 

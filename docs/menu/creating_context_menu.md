@@ -10,7 +10,7 @@ dhtmlxContextMenu is a component that provides an easy way to add a contextual m
 
 ![DHX Context Menu](../assets/menu/context_menu.png)
 
-**Related sample**: [Menu. Basic Context Menu Initialization](https://snippet.dhtmlx.com/mgya9p1l)
+**Related sample**: [Menu. Context menu initialization with config.data](https://snippet.dhtmlx.com/mgya9p1l)
 
 ## Initialization
 

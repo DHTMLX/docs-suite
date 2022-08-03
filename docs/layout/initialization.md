@@ -44,7 +44,7 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 </html>
 ~~~
 
-**Related sample**: [Layout. Basic Initialization](https://snippet.dhtmlx.com/ls3cbcys)
+**Related sample**: [Layout. Initialization](https://snippet.dhtmlx.com/ls3cbcys)
 
 ## Include source files
 

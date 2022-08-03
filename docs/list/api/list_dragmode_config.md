@@ -17,7 +17,7 @@ var list = new dhx.List("list_container", {
 
 @descr:
 
-**Related sample**: [List. Setup Drag Mode](https://snippet.dhtmlx.com/yfz6ai7j)
+**Related sample**: [List. Drag-n-drop](https://snippet.dhtmlx.com/yfz6ai7j)
 
 Drag-n-drop can work in three modes: 
 

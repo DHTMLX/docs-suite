@@ -27,7 +27,7 @@ The constructor of a message box may take the following parameters:
         <tr>
 			<td><b>html</b></td>
 			<td>(<i>string</i>) optional, the HTML content to be displayed in a message box <br/> 
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1stqqejp" target="_blank">Message. Message With Html Content</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1stqqejp" target="_blank">Message. Message with HTML content</a>
 			</td>
 		</tr>
         <tr>
@@ -37,7 +37,7 @@ The constructor of a message box may take the following parameters:
         <tr>
 			<td><b>position</b></td>
 			<td>(<i>string</i>) optional, the position of a message box: "top-left" | "top-right" | "bottom-left" | "bottom-right" <br/> 
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message Container</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message positioning and container</a>
 			</td>
 		</tr>
         <tr>

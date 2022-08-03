@@ -48,7 +48,7 @@ list.data.load("/some/data").then(function(){
 });
 ~~~
 
-**Related sample**: [List. Load Data](https://snippet.dhtmlx.com/1it5kfhq)
+**Related sample**: [List. Initialization with data.load()](https://snippet.dhtmlx.com/1it5kfhq)
 
 ## Loading from local source
 
@@ -59,7 +59,7 @@ var list = new dhx.List("list_container");
 list.data.parse(dataset);
 ~~~
 
-**Related sample**: [List. Parse Data](https://snippet.dhtmlx.com/0xmyywi1)
+**Related sample**: [List. Initialization with data.parse()](https://snippet.dhtmlx.com/anj2keoc)
 
 ## Saving and restoring state
 
@@ -107,6 +107,6 @@ var list = new dhx.list("list_container", {
 list.data.load(lazyDataProxy);
 ~~~
 
-**Related sample**: [External data lazy load](https://snippet.dhtmlx.com/list_lazy_loading)
+**Related sample**: [List. External data lazy loading](https://snippet.dhtmlx.com/list_lazy_loading)
 
 {{note The following methods of [DataCollection](data_collection.md) will not work until all data are loaded into List: add, remove, copy, move, update, changeId, sort, filter.}}

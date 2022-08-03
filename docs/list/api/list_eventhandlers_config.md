@@ -33,7 +33,7 @@ const list = new dhx.List("list", {
 
 @descr:
 
-**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
+**Related sample**: [List. Handling events in template](https://snippet.dhtmlx.com/7fyilbb7)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 

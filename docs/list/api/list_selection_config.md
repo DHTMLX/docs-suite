@@ -17,7 +17,7 @@ var list = new dhx.List("list_container", {selection:false});
 
 @descr:
 
-**Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
+**Related sample**: [List. Disable selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 @changelog: added in v6.5
 

@@ -19,6 +19,6 @@ var list = new dhx.List("list_container", {
 
 @descr:
 
-**Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)
+**Related sample**: [List. Virtual list](https://snippet.dhtmlx.com/x4gxy38e)
 
 [comment]: # (@related: list/configuration.md#dynamic-rendering-of-items)

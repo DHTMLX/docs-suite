@@ -21,7 +21,7 @@ list.events.on("dragIn", function(data, events) {
 
 @descr:
 
-**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
+**Related sample**: [List. Events](https://snippet.dhtmlx.com/iwt1yd61)
 
 The data object can contain the following parameters:
 

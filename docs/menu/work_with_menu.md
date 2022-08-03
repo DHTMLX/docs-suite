@@ -15,7 +15,7 @@ menu.hide(id);
 menu.show(id);
 ~~~
 
-**Related sample**: [Menu. Show/Hide Menu Item](https://snippet.dhtmlx.com/a9vbhxgd)
+**Related sample**: [Menu. Show / hide menu item](https://snippet.dhtmlx.com/a9vbhxgd)
 
 Both methods can take one parameter - the ID of a menu item or an array with IDs of menu items.
 
@@ -44,7 +44,7 @@ menu.enable("1");
 menu.enable(["1","3"]);
 ~~~
 
-**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
+**Related sample**: [Menu. Enable / disable menu item](https://snippet.dhtmlx.com/zuoam7r7)
 
 Both methods can take one parameter: the ID of a menu item or an array of IDs.
 
@@ -74,7 +74,7 @@ To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_i
 menu.isDisabled("1"); // -> true/false
 ~~~
 
-**Related sample**: [Menu. Enable/Disable Menu Item](https://snippet.dhtmlx.com/zuoam7r7)
+**Related sample**: [Menu. Enable / disable menu item](https://snippet.dhtmlx.com/zuoam7r7)
 
 ## Selecting/Unselecting an item
 
@@ -100,7 +100,7 @@ To select a particular Menu item, make use of the [select()](menu/api/menu_selec
 menu.select("align-left");
 ~~~
 
-**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select / unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 ### Unselecting a menu item
 
@@ -118,7 +118,7 @@ It is also possible to remove selection from all previously selected items of Me
 menu.unselect();
 ~~~
 
-**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select / unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 ## Checking if a menu item is selected
 
@@ -138,7 +138,7 @@ To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_i
 menu.isSelected("align-left"); // -> returns true/false
 ~~~
 
-**Related sample**: [Menu. Select/Unselect](https://snippet.dhtmlx.com/9qqah8ex)
+**Related sample**: [Menu. Select / unselect](https://snippet.dhtmlx.com/9qqah8ex)
 
 ## Getting selected items
 
@@ -169,7 +169,7 @@ menu.data.add({
 });
 ~~~
 
-**Related sample**: [Menu. Add/Remove Item](https://snippet.dhtmlx.com/nood4bfx)
+**Related sample**: [Menu. Add / remove Item](https://snippet.dhtmlx.com/nood4bfx)
 
 ### Rearranging menu items
 
@@ -231,7 +231,7 @@ You can remove any item from a menu with the **remove()** method. The item will 
 menu.data.remove("id");
 ~~~
 
-**Related sample**: [Menu. Add/Remove Item](https://snippet.dhtmlx.com/nood4bfx)
+**Related sample**: [Menu. Add / remove Item](https://snippet.dhtmlx.com/nood4bfx)
 
 To remove all items from Menu, call the **removeAll()** method. Afterwards, you can load other options.
 

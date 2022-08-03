@@ -45,7 +45,7 @@ dhx.alert({
 });
 ~~~
 
-**Related sample**: [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
+**Related sample**: [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
 
 {{note See the list of configuration properties the constructor of the alert box may take [here](message/api/api_message_properties.md#alert-box).}}
 
@@ -66,7 +66,7 @@ dhx.confirm({
 });
 ~~~
 
-**Related sample**: [Message. Alert And Confirm Configuration](https://snippet.dhtmlx.com/dk4a7959)
+**Related sample**: [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
 
 {{note You can find the list of configuration properties the constructor of the confirm box may take [in the related article](message/api/api_message_properties.md#confirm-box).}}
 
@@ -106,8 +106,8 @@ dhx.tooltip("Tooltip From Right", {
 
 **Related Samples:**
 
-- [Message. Tooltip Position](https://snippet.dhtmlx.com/4wrrsr67)
-- [Message. Tooltip Delay Configuration](https://snippet.dhtmlx.com/zts0avym)
+- [Message. Tooltip position](https://snippet.dhtmlx.com/4wrrsr67)
+- [Message. Tooltip delay configuration](https://snippet.dhtmlx.com/zts0avym)
 
 {{note See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).}}
 

@@ -21,4 +21,4 @@ list.events.on("focusChange", function(index, id){
 
 @descr:
 
-**Related sample**: [List. List Events](https://snippet.dhtmlx.com/iwt1yd61)
+**Related sample**: [List. Events](https://snippet.dhtmlx.com/iwt1yd61)

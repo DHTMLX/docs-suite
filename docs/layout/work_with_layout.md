@@ -14,7 +14,7 @@ To remove a certain cell from a layout, apply the [](layout/api/layout_removecel
 layout.removeCell(id);
 ~~~
 
-**Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
+**Related sample**: [Layout. Remove cell](https://snippet.dhtmlx.com/tnujp7jk)
 
 ## Getting the object of a cell
 
@@ -95,7 +95,7 @@ layout.getCell("sidebar").collapse();
 layout.getCell("sidebar").expand();
 ~~~
 
-**Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
+**Related sample**: [Layout. Expand / collapse](https://snippet.dhtmlx.com/h0wtlpyk)
 
 ## Toggling a cell
 
