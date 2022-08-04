@@ -21,7 +21,7 @@ sidebar.isSelected("categoryPost"); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 @changelog: added in v6.5
 

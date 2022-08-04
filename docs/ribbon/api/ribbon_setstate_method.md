@@ -22,6 +22,6 @@ ribbon.setState({
 
 @descr:
 
-**Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)
+**Related sample**: [Ribbon. Set state](https://snippet.dhtmlx.com/i7kabram)
 
 [comment]: # (@related: ribbon/operating_ribbon.md#settinggetting-values-and-states)

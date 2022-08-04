@@ -51,7 +51,7 @@ You can easily check whether a popup is visible with the help of the [isVisible(
 popup.isVisible(); // -> true/false
 ~~~
 
-**Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
+**Related sample**: [Popup. Is visible](https://snippet.dhtmlx.com/f614sdm3)
 
 ## Attaching content
 
@@ -63,7 +63,7 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 ~~~
 
-**Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
+**Related sample**: [Popup. HTML content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 ## Attaching DHTMLX components
 

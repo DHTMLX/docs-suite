@@ -55,7 +55,7 @@ const ribbon = new dhx.Ribbon("ribbon", {
 @descr:
 
 **Related samples**:
-- [Ribbon. Config Data](https://snippet.dhtmlx.com/lek4v9m7)
-- [Ribbon. Init With External Data](https://snippet.dhtmlx.com/aue48f5f)
+- [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
+- [Ribbon. Initialization with external TreeCollection](https://snippet.dhtmlx.com/aue48f5f)
 
 [comment]: # (@related: ribbon/data_loading.md)

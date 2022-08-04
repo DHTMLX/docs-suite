@@ -18,6 +18,6 @@ pagination.setPageSize(24);
 
 @descr:
 
-**Related sample**: [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
+**Related sample**: [Pagination. Get / set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
 [comment]: # (@related: pagination/usage.md#settinggetting-count-of-items-per-page)

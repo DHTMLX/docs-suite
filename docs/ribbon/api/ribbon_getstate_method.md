@@ -18,6 +18,6 @@ var state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"righ
 
 @descr:
 
-**Related sample**: [Ribbon. Get State](https://snippet.dhtmlx.com/coei9fys)
+**Related sample**: [Ribbon. Get state](https://snippet.dhtmlx.com/coei9fys)
 
 [comment]: # (@related: ribbon/operating_ribbon.md#settinggetting-values-and-states)

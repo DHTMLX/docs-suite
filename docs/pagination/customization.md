@@ -60,4 +60,4 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-**Related sample**: [Pagination. Custom style](https://snippet.dhtmlx.com/e7bujtsu)
+**Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)

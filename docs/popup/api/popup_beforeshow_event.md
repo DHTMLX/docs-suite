@@ -26,7 +26,7 @@ popup.events.on("beforeShow", function(element){
 
 **Related samples**:
 - [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
-- [Popup. Prevent Show](https://snippet.dhtmlx.com/z788l8r7)
+- [Popup. Prevent show](https://snippet.dhtmlx.com/z788l8r7)
 
 [comment]: # (@related: popup/event_handling.md)
 

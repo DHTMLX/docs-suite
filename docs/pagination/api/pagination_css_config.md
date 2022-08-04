@@ -27,7 +27,7 @@ const pagination = new dhx.Pagination("pagination_container", {
 
 @descr:
 
-**Related sample**: [Pagination. Custom style](https://snippet.dhtmlx.com/e7bujtsu)
+**Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Pagination:
 

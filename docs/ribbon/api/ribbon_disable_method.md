@@ -20,7 +20,7 @@ ribbon.disable(["cancel_btn","del_btn"]);
 
 @descr:
 
-**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
+**Related sample**: [Ribbon. Enable / disable Ribbon item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 Starting from v7.0, it is possible to disable all items at once by using the method without the parameter:
 

@@ -19,7 +19,7 @@ ribbon.setState({"check":true});
 ribbon.setState({"check":false});
 ~~~
 
-**Related sample**: [Ribbon. Set State](https://snippet.dhtmlx.com/i7kabram)
+**Related sample**: [Ribbon. Set state](https://snippet.dhtmlx.com/i7kabram)
 
 And this is how you can change the value of an input:
 
@@ -42,7 +42,7 @@ ribbon.getState();
 // { check:false }
 ~~~
 
-**Related sample**: [Ribbon. Get State](https://snippet.dhtmlx.com/coei9fys)
+**Related sample**: [Ribbon. Get state](https://snippet.dhtmlx.com/coei9fys)
 
 And this is how you can get the current value of an input:
 
@@ -63,7 +63,7 @@ ribbon.hide("add_btn");
 ribbon.show(["save_btn","del_btn"]);
 ~~~
 
-**Related sample**: [Ribbon. Show/Hide Ribbon Item](https://snippet.dhtmlx.com/1jkf7954)
+**Related sample**: [Ribbon. Show/hide Ribbon item](https://snippet.dhtmlx.com/1jkf7954)
 
 Starting from v7.0, it is possible to hide/show all Ribbon controls on the page at once by using the methods without parameters:
 
@@ -83,7 +83,7 @@ ribbon.disable("add_btn");
 ribbon.enable(["save_btn","del_btn"]);
 ~~~
 
-**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
+**Related sample**: [Ribbon. Enable / disable Ribbon item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 Starting from v7.0, it is possible to disable/enable all Ribbon controls on the page at once by using the methods without parameters:
 
@@ -112,7 +112,7 @@ To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ri
 ribbon.isDisabled("1"); // -> true/false
 ~~~
 
-**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
+**Related sample**: [Ribbon. Enable / disable Ribbon item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 ## Selecting/Unselecting an item
 
@@ -138,7 +138,7 @@ To select a particular Ribbon item, make use of the [select()](ribbon/api/ribbon
 ribbon.select("print");
 ~~~
 
-**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 ### Unselecting a ribbon item
 
@@ -156,7 +156,7 @@ It is also possible to remove selection from all previously selected items of Ri
 ribbon.unselect();
 ~~~
 
-**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 ## Checking if a ribbon item is selected
 
@@ -176,7 +176,7 @@ To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ri
 ribbon.isSelected("print"); // -> returns true/false
 ~~~
 
-**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 ## Getting selected items
 
@@ -200,7 +200,7 @@ ribbon.data.add({
 },-1,"blockId");
 ~~~
 
-**Related sample**: [Ribbon. Add](https://snippet.dhtmlx.com/bphk7h9u)
+**Related sample**: [Ribbon. Add item](https://snippet.dhtmlx.com/bphk7h9u)
 
 This is how you can add a block of controls:
 

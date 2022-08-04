@@ -21,7 +21,7 @@ ribbon.isSelected("print"); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Ribbon. Select/Unselect](https://snippet.dhtmlx.com/0vy8uk4s)
+**Related sample**: [Ribbon. Select / unselect](https://snippet.dhtmlx.com/0vy8uk4s)
 
 @changelog:
 added in v7.0

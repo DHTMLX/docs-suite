@@ -15,7 +15,7 @@ sidebar.expand(); // expands a sidebar
 sidebar.collapse(); // collapses a sidebar
 ~~~
 
-**Related sample**: [Sidebar. Collapse/Expand](https://snippet.dhtmlx.com/ydlltdq6)
+**Related sample**: [Sidebar. Collapse/expand](https://snippet.dhtmlx.com/ydlltdq6)
 
 ## Toggling Sidebar
 
@@ -44,7 +44,7 @@ sidebar.hide(id); // hides a control
 sidebar.show(id); // shows a control
 ~~~
 
-**Related sample**: [Sidebar. Show/Hide](https://snippet.dhtmlx.com/5hsowdoy)
+**Related sample**: [Sidebar. Show/hide](https://snippet.dhtmlx.com/5hsowdoy)
 
 Starting from v7.0, it is possible to hide/show all Sidebar controls on the page at once by using the methods without parameters:
 
@@ -64,7 +64,7 @@ sidebar.disable(id); // disables a control
 sidebar.enable(id);  // enables a control
 ~~~
 
-**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
+**Related sample**: [Sidebar. Enable/disable](https://snippet.dhtmlx.com/ea9fywne)
 
 Starting from v7.0, it is possible to disable/enable all Sidebar controls on the page at once by using the methods without parameters:
 
@@ -92,7 +92,7 @@ To check if an item of Sidebar is disabled, call the [isDisabled()](sidebar/api/
 sidebar.isDisabled("1"); // -> true/false
 ~~~
 
-**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
+**Related sample**: [Sidebar. Enable/disable](https://snippet.dhtmlx.com/ea9fywne)
 
 ## Selecting/Unselecting an item
 
@@ -117,7 +117,7 @@ To select a particular Sidebar item, make use of the [select()](sidebar/api/side
 sidebar.select("categoryPost");
 ~~~
 
-**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 ### Unselecting a Sidebar item
 
@@ -135,7 +135,7 @@ It is also possible to remove selection from all previously selected items of Si
 sidebar.unselect();
 ~~~
 
-**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 ## Checking if a Sidebar item is selected
 
@@ -155,7 +155,7 @@ To check if an item of Sidebar is selected, call the [isSelected()](sidebar/api/
 sidebar.isSelected("categoryPost"); // -> returns true/false
 ~~~
 
-**Related sample**: [Sidebar. Select/Unselect](https://snippet.dhtmlx.com/3odod5v1)
+**Related sample**: [Sidebar. Select / unselect](https://snippet.dhtmlx.com/3odod5v1)
 
 ## Getting selected items
 
@@ -203,7 +203,7 @@ sidebar.data.add({
 });
 ~~~
 
-**Related sample**: [Sidebar. Data Add](https://snippet.dhtmlx.com/jcnw95ac)
+**Related sample**: [Sidebar. Data add](https://snippet.dhtmlx.com/jcnw95ac)
 
 Templates for Sidebar controls in the JSON format are given [here](sidebar/data_loading.md#json-format-templates).
 
@@ -232,7 +232,7 @@ sidebar.data.update("add", {
 });
 ~~~
 
-**Related sample**: [Sidebar. Data Update](https://snippet.dhtmlx.com/p1zu63le)
+**Related sample**: [Sidebar. Data update](https://snippet.dhtmlx.com/p1zu63le)
 
 ### Removing controls from Sidebar
 
@@ -242,7 +242,7 @@ To remove a control, make use of the **remove()** method of Tree Collection. Pas
 sidebar.data.remove("control-id");
 ~~~
 
-**Related sample**: [Sidebar. Data Remove](https://snippet.dhtmlx.com/ecp3etuf)
+**Related sample**: [Sidebar. Data remove](https://snippet.dhtmlx.com/ecp3etuf)
 
 ### Rearranging controls
 

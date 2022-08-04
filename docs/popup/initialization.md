@@ -71,7 +71,7 @@ popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 ~~~
 
-**Related sample**: [Popup. Html Content](https://snippet.dhtmlx.com/ajv5qqxq)
+**Related sample**: [Popup. HTML content](https://snippet.dhtmlx.com/ajv5qqxq)
 
 - by calling [attach()](popup/api/popup_attach_method.md) to add other DHTMLX components into a popup
 

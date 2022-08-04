@@ -93,7 +93,7 @@ You can add any custom HTML content to an item of the block with the help of the
 };
 ~~~
 
-**Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
+**Related sample**: [Ribbon. Item HTML content](https://snippet.dhtmlx.com/3djaib6o)
 
 ## Nesting blocks
 

@@ -21,7 +21,7 @@ const pageIndex = pagination.getPage();
 // -> 3
 ~~~
 
-**Related sample**: [Pagination. Get/Set page index](https://snippet.dhtmlx.com/qepjgf7h)
+**Related sample**: [Pagination. Get / set page index](https://snippet.dhtmlx.com/qepjgf7h)
 
 ## Setting/getting count of items per page
 
@@ -38,7 +38,7 @@ pagination.getPageSize();
 // -> 22
 ~~~
 
-**Related sample**: [Pagination. Get/Set page size](https://snippet.dhtmlx.com/9u3gsyd4)
+**Related sample**: [Pagination. Get / set page size](https://snippet.dhtmlx.com/9u3gsyd4)
 
 ## Getting total number of pages
 
