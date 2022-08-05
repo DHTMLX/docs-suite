@@ -8,7 +8,7 @@ description: You can explore the weekStart config of Calendar in the documentati
 
 @short: sets the starting day of the week
 
-@signature: {'weekStart?: "monday" | "sunday";'}
+@signature: {'weekStart?: "monday" | "sunday" | "saturday";'}
 
 @default: "sunday"
 
@@ -21,3 +21,6 @@ var calendar = new dhx.Calendar("calendar_container", {
 **Related sample**: [Calendar. Week start](https://snippet.dhtmlx.com/kaxmurh9)
 
 [comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#startoftheweek)
+
+@changelog:
+- The `weekStart: "saturday"` option is available from v7.3.6
