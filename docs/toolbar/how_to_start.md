@@ -32,7 +32,7 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 </html>
 ~~~
 
-**Related sample**: [Toolbar. Basic Initialization](https://snippet.dhtmlx.com/i5a9mx2i)
+**Related sample**: [Toolbar. Initialization with config.data](https://snippet.dhtmlx.com/nie9tuks)
 
 ## Include source files
 
@@ -82,7 +82,7 @@ var toolbar = new dhx.Toolbar("toolbar_container");
 toolbar.data.load("../common/dataset.json");
 ~~~
 
-**Related sample**: [Toolbar. Init With External Data](https://snippet.dhtmlx.com/b0fmkwg5)
+**Related sample**: [Toolbar. Initialization with data.load()](https://snippet.dhtmlx.com/i5a9mx2i)
 
 - from a local source using the **parse()** method of tree collection:
 

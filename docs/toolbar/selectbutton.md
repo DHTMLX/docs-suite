@@ -10,7 +10,7 @@ This is a button that contains a drop-down list of options.
 
 ![](../assets/toolbar/selectbutton.png)
 
-**Related sample**: [Toolbar. Select Button](https://snippet.dhtmlx.com/nqq5ej8w)
+**Related sample**: [Toolbar. SelectButton](https://snippet.dhtmlx.com/nqq5ej8w)
 
 ## Adding SelectButton
 

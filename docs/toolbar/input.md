@@ -37,7 +37,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
+**Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Enabling/disabling Input
 
@@ -48,7 +48,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
+**Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 

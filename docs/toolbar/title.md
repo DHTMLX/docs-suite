@@ -36,7 +36,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
+**Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Adding a tooltip
 

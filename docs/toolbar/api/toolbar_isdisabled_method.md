@@ -21,7 +21,7 @@ toolbar.isDisabled("id"); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
+**Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
 @changelog: added in v6.4
 

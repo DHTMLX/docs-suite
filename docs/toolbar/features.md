@@ -87,7 +87,7 @@ In this section you may study how to disable and enable, hide and show Toolbar c
 
 | Topic                                                                                    | Description                                                                                                   |
 | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [Disabling / enabling controls](../common_methods/#disabling-and-enabling-controls)      | Learn how to disable or enable controls on a page dynamically ([Example](https://snippet.dhtmlx.com/ovblenaf) |
+| [Disabling / enabling controls](../common_methods/#disabling-and-enabling-controls)      | Learn how to disable or enable controls on a page dynamically ([Example](https://snippet.dhtmlx.com/ovblenaf)) |
 | [Is disabled](../common_methods/#checking-if-a-toolbar-item-is-disabled)                 | Learn how to check whether a control is disabled on the page                                                  |
 | [Hiding / showing controls](../common_methods/#hiding-and-showing-controls)              | Learn how to hide or show controls dynamically ([Example](https://snippet.dhtmlx.com/cldp89u4))               |
 | [Setting values/states of controls](../common_methods/#settinggetting-values-and-states) | Learn how to change the value or state of a control ([Example](https://snippet.dhtmlx.com/h34uh1dr))          |
@@ -171,7 +171,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=toolbar">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/r6jv9kk2?text=toolbar">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

@@ -25,7 +25,7 @@ var state2 = toolbar.getState();
 
 @descr:
 
-**Related sample**: [Toolbar. Get State](https://snippet.dhtmlx.com/kvttdgad)
+**Related sample**: [Toolbar. Get state](https://snippet.dhtmlx.com/kvttdgad)
 
 Starting from v7.0, the method can return the value/state of the control by its id:
 

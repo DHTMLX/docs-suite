@@ -58,7 +58,7 @@ You can load data to a toolbar from an array with the **parse()** method of Tree
 toolbar.data.parse(data);
 ~~~
 
-**Related sample**: [Toolbar. Basic Initialization](https://snippet.dhtmlx.com/i5a9mx2i)
+**Related sample**: [Toolbar. Initialization with data.parse()](https://snippet.dhtmlx.com/wzb2yn3d)
 
 ## Loading from an external file
 
@@ -68,7 +68,7 @@ The **load** method loads the toolbar data from an external JSON file. All the d
 toolbar.data.load("[path to this file]/file.json");
 ~~~	
 
-**Related sample**: [Toolbar. Basic Initialization](https://snippet.dhtmlx.com/i5a9mx2i)
+**Related sample**: [Toolbar. Initialization with data.load()](https://snippet.dhtmlx.com/i5a9mx2i)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
