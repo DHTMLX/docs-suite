@@ -251,25 +251,6 @@ const list = new dhx.List("list", {
 
 **Related sample**: [List. Handling events in template](https://snippet.dhtmlx.com/7fyilbb7)
 
-The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pairs, where: 
-
-<table>
-	<tbody>
-        <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
-        <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>id</b> - the id of a List item</li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table>
-
 ## HTML content of List options
 
 By default, List displays HTML content if it is specified for its options.

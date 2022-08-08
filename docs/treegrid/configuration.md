@@ -813,27 +813,6 @@ const grid = new dhx.Grid("grid", {
 
 **Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
 
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-<table>
-	<tbody>
-        <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
-        <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>object</b> - an object with two attributes:
-                <ol>- <b>row</b> - an object with a row configuration</ol>
-                <ol>- <b>column</b> - an object with a column configuration</ol></li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table>
-
 ## Resizing
 
 Columns of TreeGrid have fixed width with no possibility to change them from UI. You can switch on the corresponding [](treegrid/api/treegrid_resizable_config.md) configuration option to make all columns of TreeGrid resizable.

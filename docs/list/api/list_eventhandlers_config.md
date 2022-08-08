@@ -8,7 +8,7 @@ description: You can explore the eventHandlers config of List in the documentati
 
 @short: adds event handlers to HTML elements of a custom template of List items
 
-@signature: {'eventHandlers?: {[key: string]: any;};'}
+@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: Id) => void | boolean; };};'}
 
 @example:
 function template() {
@@ -21,6 +21,7 @@ const list = new dhx.List("list", {
         onclick: {
             class_name: function(event) {
                 console.log("You clicked on " + event.target.tagName);
+                // return false;
             },
         },
         onmouseover: {
@@ -54,6 +55,23 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
     </tbody>
 </table>
+
+
+**Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [click](list/api/list_click_event.md) event when you click on the item with `className`.
+
+As an alternative way, you may use `stopPropagation()` for this purpose:
+
+~~~js
+eventHandlers: {
+    onclick: {
+        class_name: (event) => {                              
+            evt = event || window.event;
+            evt.stopPropagation();
+            console.log("button click");
+        }
+    }
+}
+~~~
 
 @changelog: added in v7.0
 

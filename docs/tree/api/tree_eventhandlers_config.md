@@ -8,8 +8,7 @@ description: You can explore the eventHandlers config of Tree in the documentati
 
 @short: adds event handlers to the HTML elements of a custom template
 
-@signature:
-eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ITree) => void; };};
+@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ITree) => void | boolean; };};'}
 
 @example:
 const tree = new dhx.Tree("tree", {
@@ -30,6 +29,7 @@ const tree = new dhx.Tree("tree", {
         onclick: {
             remove: (event, { id }) => {
                 id && tree.data.remove(id);
+                // return false;
             }
         }
     }
@@ -44,5 +44,21 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 - `value` - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
   - `event` - an event object
   - `item` - an object of a Tree item
+
+**Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [itemClick](tree/api/tree_itemclick_event.md) event when you click on the item with `className`.
+
+As an alternative way, you may use `stopPropagation()` for this purpose:
+
+~~~js
+eventHandlers: {
+    onclick: {
+        class_name: (event) => {                              
+            evt = event || window.event;
+            evt.stopPropagation();
+            console.log("button click");
+        }
+    }
+}
+~~~
 
 @changelog: added in v7.2
