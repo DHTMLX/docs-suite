@@ -19,7 +19,7 @@ var slider = new dhx.Slider("slider_container", {
 
 @descr:
 
-**Related sample**: [Slider. Tooltip For The Slider](https://snippet.dhtmlx.com/sxh66mnu)
+**Related sample**: [Slider. Tooltip for the Slider](https://snippet.dhtmlx.com/sxh66mnu)
 
 @changelog: added in v6.4
 

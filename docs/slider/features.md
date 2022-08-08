@@ -64,7 +64,7 @@ In this section you can learn how to set, get the value of the Slider, how to di
 | ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | [Setting the value of Slider](../usage/#setting-value)            | Learn how to set the value for Slider dynamically ([Example](https://snippet.dhtmlx.com/shw55sub))  |
 | [Getting the value of Slider](../usage/#getting-value)            | Learn how to get the current value of Slider ([Example](https://snippet.dhtmlx.com/xlb8nbdx))       |
-| [Disabling / enabling Slider](../usage/#disablingenabling-slider) | Learn how to disable and enable a Slider on the page [Example](https://snippet.dhtmlx.com/po9hsc2l) |
+| [Disabling / enabling Slider](../usage/#disablingenabling-slider) | Learn how to disable and enable a Slider on the page ([Example](https://snippet.dhtmlx.com/po9hsc2l)) |
 | [Is disabled](../usage/#checking-if-a-slider-is-disabled)         | Learn how to check whether a Slider is disabled ([Example](https://snippet.dhtmlx.com/fbo18fue))    |
 | [Setting focus on a Slider thumb](../api/slider_focus_method/)    | Learn how to set focus on a Slider thumb                                                            |
 | [Removing focus](../api/slider_blur_method/)                      | Learn how remove focus from a Slider thumb                                                          |
