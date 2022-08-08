@@ -10,7 +10,7 @@ An input field for typing some text inside.
 
 ![Input control](../assets/form/form_input.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Inputs](https://snippet.dhtmlx.com/9q8fubjm)
 

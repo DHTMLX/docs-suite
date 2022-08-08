@@ -23,7 +23,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Adjust Columns](https://snippet.dhtmlx.com/zfrpe22d)
+**Related sample**: [Grid. Adjust columns by header, data, all](https://snippet.dhtmlx.com/zfrpe22d)
 
 The property can be specified to one of the available adjustment modes:
 

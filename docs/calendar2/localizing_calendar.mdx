@@ -69,4 +69,4 @@ const calendar = new dhx.Calendar("calendar", {
 });
 ~~~
 
-`RELATED SAMPLE:` [Calendar. Localized Calendar](https://snippet.dhtmlx.com/3u7f1oug) 
+`RELATED SAMPLE:` [Calendar. Localization](https://snippet.dhtmlx.com/3u7f1oug) 

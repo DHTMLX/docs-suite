@@ -173,7 +173,7 @@ chart.data.load("/some/data").then(function(){
 });
 ~~~
 
-**Related sample**: [Chart. Load Data](https://snippet.dhtmlx.com/qah8exx2)
+**Related sample**: [Chart. Load data](https://snippet.dhtmlx.com/qah8exx2)
 
 ## Loading from local source
 
@@ -184,7 +184,7 @@ var chart = new dhx.Chart("chart_container");
 chart.data.parse(dataset);
 ~~~
 
-**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
+**Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
 
 ## Saving and restoring state
 

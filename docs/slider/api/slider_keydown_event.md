@@ -19,6 +19,6 @@ slider.events.on("keydown", function(event) {
 });
 @examplestop:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
+**Related sample**: [Slider. Events](https://snippet.dhtmlx.com/sc7ov54z)
 
 @changelog: added in v7.2

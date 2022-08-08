@@ -84,7 +84,7 @@ description: You can explore the Button properties of Ribbon in the documentatio
         <tr>
 			<td><b>size</b></td>
 			<td>(<i>string</i>) defines the size of a button: "small"|"medium"|"auto" <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1ayiafd1" target="_blank">Ribbon. Button Height</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1ayiafd1" target="_blank">Ribbon. Button height: auto, small, medium</a>
             </td>
 		</tr>
         <tr>

@@ -19,7 +19,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 @descr:
-**Related sample**: [Calendar. Date Format](https://snippet.dhtmlx.com/2co9z3bi)
+**Related sample**: [Calendar. Date format](https://snippet.dhtmlx.com/2co9z3bi)
 
 dhtmlxCalendar uses the following characters for setting a date format:
 

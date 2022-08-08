@@ -19,6 +19,6 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 @descr:
 
-**Related sample**: [Calendar. The Days Of This Month Only](https://snippet.dhtmlx.com/4wi5hbtr)
+**Related sample**: [Calendar. The days of this month only](https://snippet.dhtmlx.com/4wi5hbtr)
 
 [comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#displayingonlycurrentmonth)

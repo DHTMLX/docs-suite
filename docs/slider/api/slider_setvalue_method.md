@@ -22,6 +22,6 @@ slider.setValue([2,10]);
 
 @descr:
 
-**Related sample**: [Slider. Set Slider Value](https://snippet.dhtmlx.com/shw55sub)
+**Related sample**: [Slider. Set value](https://snippet.dhtmlx.com/shw55sub)
 
 [comment]: # (@relatedapi: slider/api/slider_getvalue_method.md)

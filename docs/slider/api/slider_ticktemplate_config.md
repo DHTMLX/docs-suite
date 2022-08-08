@@ -20,6 +20,6 @@ var slider = new dhx.Slider("slider_container", {
 
 @descr:
 
-**Related sample**: [Slider. Custom Scale](https://snippet.dhtmlx.com/jsfxnplp)
+**Related sample**: [Slider. Custom scale](https://snippet.dhtmlx.com/jsfxnplp)
 
 [comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#scale-settings)

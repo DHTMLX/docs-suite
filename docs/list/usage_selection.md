@@ -22,7 +22,7 @@ To disable selection of items in List, make use of the [](../selection/api/selec
 list.selection.disable();
 ~~~
 
-**Related sample**: [List. Disable/Enable Selection](https://snippet.dhtmlx.com/i4zj985o)
+**Related sample**: [List. Disable / enable selection](https://snippet.dhtmlx.com/i4zj985o)
 
 {{note To make the process of working with the selection of items more flexible, you can apply the [related](selection.md#events) events of the Selection object.}}
 
@@ -35,7 +35,7 @@ var id = list.selection.getId(); // -> "2"
 list.selection.add("2");
 ~~~
 
-**Related sample**: [List. Set Selection](https://snippet.dhtmlx.com/io8oxxg2)
+**Related sample**: [List. Set selection](https://snippet.dhtmlx.com/io8oxxg2)
 
 Starting from v7.0, the method selects all unselected items when calling without parameters:
 
@@ -65,7 +65,7 @@ You can get the id of the currently selected item with the **getId()** method of
 var selected = list.selection.getId(); // -> "2"
 ~~~
 
-**Related sample**: [List. Get Selection](https://snippet.dhtmlx.com/elonnovx)
+**Related sample**: [List. Get selection](https://snippet.dhtmlx.com/elonnovx)
 
 Starting from v7.0, the method can also return an array with ids of selected items if the [multiselection](list/api/list_multiselection_config.md) property of List is enabled.
 

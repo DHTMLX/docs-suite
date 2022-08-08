@@ -8,6 +8,27 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+
+Version 7.3.6
+-------------------
+
+Released on August 8, 2022
+
+### Fixes
+
+- Calendar. Now it is possible [to set "saturday" as the starting day of the week](calendar/api/calendar_weekstart_config.md)
+- Data. Fix the issue which caused extra requests to be sent to the server when making several changes to one item
+- Data. Now it is possible to sort data by the value without use of the `as` attribute of the **rule** object if some of the values are `null` | `undefined`
+- DataView, List, Tree. Now you can block bubbling of the events specified via the `eventHandlers` property by using `stopPropagation()` 
+- Form inside Popup. Fix the issue which caused the Popup to close after clicking on a popup of a Form control 
+- Grid. Fix the issue which caused the `eventHandlers` template to return an empty row object when the row ID was an integer
+- Grid. Fix the issue with calculation of the correct number of columns which should be rendered on the screen (in some cases)
+- Grid. Fix the issue with exporting Grid with the footer to Excel (the value for the footer in the exported file was different from the value in Grid)
+- Grid. Fixed location of zones for a resize handle. Now it is possible to resize each column under the spanned header
+- LazyDataProxy. Fix the issue with dynamic data loading which caused a part of the data to be loaded one more time. Now `LazyDataProxy` will load only the data which hasn't been loaded into the component before 
+- Popup. Fix the issue with display of tooltips for items of a component (for example, Toolbar) which is attached to a popup
+- Tree with scrollbar. Now the content of the Tree will be auto scrolled if you drag an item of a Tree above or below its body
+
 Version 7.3.5
 -------------------
 

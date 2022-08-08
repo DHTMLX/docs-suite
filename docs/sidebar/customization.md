@@ -84,4 +84,4 @@ var sidebar = new dhx.Sidebar({
 });
 ~~~
 
-**Related sample**: [Sidebar. Custom Css](https://snippet.dhtmlx.com/3mhhvvcr)
+**Related sample**: [Sidebar. Styling (custom CSS)](https://snippet.dhtmlx.com/3mhhvvcr)

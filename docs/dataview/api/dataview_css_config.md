@@ -22,8 +22,8 @@ var dataview = new dhx.DataView("dataview", {itemsInRow: 5, css: "bg-gray"});
 @descr: 
 
 **Related samples**:
-- [Dataview. Custom Widget Styles](https://snippet.dhtmlx.com/j1yv94o8)
-- [Dataview. Custom Item Styles](https://snippet.dhtmlx.com/kpnzizbf)
+- [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
+- [Dataview. Styling (custom CSS for item)](https://snippet.dhtmlx.com/kpnzizbf)
 
 If you want to apply your own styles for selection of items or focus, you can do it via the corresponding CSS classes: **.dhx_dataview-item--selected** and **.dhx_dataview-item--focus**.
 There is no need to use any additional custom classes.

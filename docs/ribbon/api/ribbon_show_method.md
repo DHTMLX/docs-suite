@@ -20,7 +20,7 @@ ribbon.show(["cancel_btn","del_btn"]);
 
 @descr:
 
-**Related sample**: [Ribbon. Show/Hide Ribbon Item](https://snippet.dhtmlx.com/1jkf7954)
+**Related sample**: [Ribbon. Show/hide Ribbon item](https://snippet.dhtmlx.com/1jkf7954)
 
 Starting from v7.0, it is possible to show all items on the page at once by using the method without the parameter:
 

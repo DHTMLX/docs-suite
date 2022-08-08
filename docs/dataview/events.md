@@ -35,7 +35,7 @@ Several handlers can be attached to one and the same event, and all of them will
 The names of the events are case-insensitive.
 }}
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 ## Detaching event listeners
 

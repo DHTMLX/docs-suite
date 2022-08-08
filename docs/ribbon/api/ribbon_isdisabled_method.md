@@ -21,7 +21,7 @@ ribbon.isDisable("id"); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Ribbon. Enable/Disable Ribbon Item](https://snippet.dhtmlx.com/l3f8pq2g)
+**Related sample**: [Ribbon. Enable / disable Ribbon item](https://snippet.dhtmlx.com/l3f8pq2g)
 
 @changelog: added in v6.4
 

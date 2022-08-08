@@ -29,4 +29,4 @@ calendar/api/calendar_timepicker_config.md
 @related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#timepicker
 
-**Related sample**: [Calendar. Time Format](https://snippet.dhtmlx.com/9xi24if2)
+**Related sample**: [Calendar. Time format](https://snippet.dhtmlx.com/9xi24if2)

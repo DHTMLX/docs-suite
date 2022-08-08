@@ -38,7 +38,7 @@ ribbon.data.add({
 });
 ~~~
 
-**Related sample**: [Ribbon. Select Button](https://snippet.dhtmlx.com/5acqc24m)
+**Related sample**: [Ribbon. SelectButton](https://snippet.dhtmlx.com/5acqc24m)
 
 ### Properties
 

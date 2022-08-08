@@ -43,4 +43,4 @@ calendar/operating_calendar.md#gettingselecteddate
 calendar/configuring.md#rangemode
 
 **Related sample**:
-- [Calendar. Getting Selected Date](https://snippet.dhtmlx.com/k2vrfqj0)
+- [Calendar. Getting selected date](https://snippet.dhtmlx.com/k2vrfqj0)

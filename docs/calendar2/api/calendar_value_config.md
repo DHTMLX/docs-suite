@@ -58,4 +58,4 @@ calendar/api/calendar_getvalue_method.md
 calendar/api/calendar_range_config.md
 
 **Related sample**:
-- [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
+- [Calendar. Value initialization](https://snippet.dhtmlx.com/epjjww3l)

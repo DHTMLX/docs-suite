@@ -15,7 +15,7 @@ combo.disable();
 
 @descr:
 
-**Related sample**: [Combobox. Enable And Disable](https://snippet.dhtmlx.com/7bujtsuu)
+**Related sample**: [Combobox. Enable, disable, is disabled](https://snippet.dhtmlx.com/7bujtsuu)
 
 [comment]: # (@related: combobox/work_with_combo.md#disablingenabling-combobox)
 

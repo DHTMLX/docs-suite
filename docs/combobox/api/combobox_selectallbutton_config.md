@@ -20,7 +20,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 @descr:
 
-**Related sample**: [Combobox. Select All Button](https://snippet.dhtmlx.com/ui7pi7ty)
+**Related sample**: [Combobox. Multiselection, add new options (free text), select all button](https://snippet.dhtmlx.com/ui7pi7ty)
 
 {{note To be able to select several options you need to enable the **multiselection** option.}}
 

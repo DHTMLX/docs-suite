@@ -15,7 +15,7 @@ popup.hide();
 
 @descr:
 
-**Related sample**: [Popup. Is Visible](https://snippet.dhtmlx.com/f614sdm3)
+**Related sample**: [Popup. Is visible](https://snippet.dhtmlx.com/f614sdm3)
 
 [comment]: # (@relatedapi: popup/api/popup_show_method.md)
 

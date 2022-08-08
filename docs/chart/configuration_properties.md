@@ -56,7 +56,7 @@ var chart = new dhx.Chart("chart", {
 });
 ~~~
 
-**Related sample**: [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
+**Related sample**: [Chart. Max points](https://snippet.dhtmlx.com/6917eudu)
 
 ## Scales
 
@@ -84,7 +84,7 @@ var chart = new dhx.Chart("chart_container",{
 });
 ~~~
 
-**Related sample**: [Chart. Scale Title](https://snippet.dhtmlx.com/5ir00fer)
+**Related sample**: [Chart. Scale title](https://snippet.dhtmlx.com/5ir00fer)
 
 Scales have both common and specific options. Check the full list of the available options for scales in the [API reference](chart/api/chart_scales_config.md).
 
@@ -120,7 +120,7 @@ var chart = new dhx.Chart("chart_container",{
 });
 ~~~
 
-**Related sample**: [Chart. Point Types](https://snippet.dhtmlx.com/cbj54wwu)
+**Related sample**: [Chart. Point types](https://snippet.dhtmlx.com/cbj54wwu)
 
 See the full list of configuration options for chart series in the [API reference](chart/api/chart_series_config.md).
 
@@ -146,7 +146,7 @@ var chart = new dhx.Chart("chart_container",{
 
 **Related Samples:**
 
-- [Chart. Enable Legend](https://snippet.dhtmlx.com/00ei3q23)
-- [Chart. Legend Position](https://snippet.dhtmlx.com/pgqf1yxj)
+- [Chart. Enable legend](https://snippet.dhtmlx.com/00ei3q23)
+- [Chart. Legend position](https://snippet.dhtmlx.com/pgqf1yxj)
 
 You can view the full list of the configuration options of chart legends in the [API reference](chart/api/chart_legend_config.md).

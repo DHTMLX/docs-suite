@@ -18,7 +18,7 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-**Related sample**: [Layout. Html Content](https://snippet.dhtmlx.com/6x76kgyq)
+**Related sample**: [Layout. HTML content](https://snippet.dhtmlx.com/6x76kgyq)
 
 ## Hidden cell
 

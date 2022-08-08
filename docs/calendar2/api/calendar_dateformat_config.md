@@ -48,4 +48,4 @@ calendar/api/calendar_setvalue_method.md
 @related: calendar/how_to_start.md#initialize-calendar
 calendar/configuring.md#dateformat
 
-**Related sample**: [Calendar. Date Format](https://snippet.dhtmlx.com/2co9z3bi)
+**Related sample**: [Calendar. Date format](https://snippet.dhtmlx.com/2co9z3bi)

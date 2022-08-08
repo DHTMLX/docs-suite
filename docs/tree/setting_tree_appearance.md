@@ -97,7 +97,7 @@ tree.data.update("history", {
 
 ## Adding template to items
 
-<iframe src="https://snippet.dhtmlx.com/hg3f50td?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="900"></iframe>
+<iframe src="https://snippet.dhtmlx.com/hg3f50td?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
 It is possible to customize Tree items via the [template property](tree/api/tree_template_config.md). The template option is a function that takes two parameters:
 
@@ -149,17 +149,12 @@ const tree = new dhx.Tree("tree", {
         onclick: {
             remove: (event, { id }) => {
                 id && tree.data.remove(id);
+                // return false;
             }
         }
     }
 });
 @examplestop:
 
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-- `key` - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
-- `value` - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
-  - `event` - an event object
-  - `item` - an object of a Tree item
-
 **Related sample**: [Tree. Handling Events In Template](https://snippet.dhtmlx.com/hg3f50td)
+

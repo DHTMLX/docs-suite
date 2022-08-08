@@ -51,7 +51,7 @@ menu.data.add({
 });
 ~~~
 
-**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
+**Related sample**: [Menu. Navigation type. Click or pointer (hover)](https://snippet.dhtmlx.com/uhv64cm7)
 
 #### Properties
 
@@ -92,7 +92,7 @@ You can add a custom image into the navItem with the help of the **html** proper
 }
 ~~~
 
-**Related sample**: [Menu. Item HTML Content](https://snippet.dhtmlx.com/2hr77egx)
+**Related sample**: [Menu. Item HTML content](https://snippet.dhtmlx.com/2hr77egx)
 
 ### Showing/hiding a navItem
 

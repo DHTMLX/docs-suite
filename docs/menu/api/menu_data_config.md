@@ -46,6 +46,6 @@ const menu = new dhx.Menu("menu_container", {
 
 @descr:
 
-**Related sample**: [Menu. Basic Initialization](https://snippet.dhtmlx.com/cg62qa9v)
+**Related sample**: [Menu. Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)
 
 [comment]: # (@related: menu/data_loading.md)

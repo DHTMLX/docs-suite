@@ -83,7 +83,7 @@ var list = new dhx.List("list_container", {
 });
 ~~~
 
-**Related sample**: [List. Virtual List](https://snippet.dhtmlx.com/x4gxy38e)
+**Related sample**: [List. Virtual list](https://snippet.dhtmlx.com/x4gxy38e)
 
 ## Editing items
 
@@ -101,7 +101,7 @@ var list = new dhx.List("list_container", {editable:true});
 
 ![](../assets/list/item_height.png)
 
-**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)
+**Related sample**: [List. Setup list item height](https://snippet.dhtmlx.com/89buovn2)
 
 You can specify the necessary height of an item and set it before initialization of List via the [itemHeight](list/api/list_itemheight_config.md) property either as a number:
 
@@ -129,7 +129,7 @@ When the [virtual](list/api/list_virtual_config.md) property is set to *true*, t
 
 ![](../assets/list/list_height.png)
 
-**Related sample**: [List. Setup List Height](https://snippet.dhtmlx.com/k2mj2sz7)
+**Related sample**: [List. Setup list height](https://snippet.dhtmlx.com/k2mj2sz7)
 
 You can define the desired height of a list via the [height](list/api/list_height_config.md) configuration option as easy as that:
 
@@ -171,7 +171,7 @@ var list = new dhx.List("list", {
 
 ![](../assets/list/disable_selection.png)
 
-**Related sample**: [List. Disable Selection](https://snippet.dhtmlx.com/dk4czs1z)
+**Related sample**: [List. Disable selection](https://snippet.dhtmlx.com/dk4czs1z)
 
 The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [](list/api/list_selection_config.md) configuration property to *false*:
 
@@ -249,26 +249,7 @@ const list = new dhx.List("list", {
 });
 ~~~
 
-**Related sample**: [List. Handling Events In Template](https://snippet.dhtmlx.com/7fyilbb7)
-
-The [](api/list_eventhandlers_config.md) object includes a set of *key:value* pairs, where: 
-
-<table>
-	<tbody>
-        <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
-        <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>id</b> - the id of a List item</li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table>
+**Related sample**: [List. Handling events in template](https://snippet.dhtmlx.com/7fyilbb7)
 
 ## HTML content of List options
 

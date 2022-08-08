@@ -21,7 +21,7 @@ sidebar.isDisable("id"); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Sidebar. Enable/Disable](https://snippet.dhtmlx.com/ea9fywne)
+**Related sample**: [Sidebar. Enable/disable](https://snippet.dhtmlx.com/ea9fywne)
 
 @changelog: added in v6.4
 

@@ -10,7 +10,7 @@ An input that represents an advanced select box with a set of options. It is abl
 
 ![Combo control](../assets/form/form_combo.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Combo](https://snippet.dhtmlx.com/wla7u1xq)
 

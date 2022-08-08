@@ -17,6 +17,6 @@ var slider = new dhx.Slider("slider_container", {
 
 @descr:
 
-**Related sample**: [Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
+**Related sample**: [Slider. Range mode of the Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
 [comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/configuring_slider.md#range-mode slider/range_slider.md)

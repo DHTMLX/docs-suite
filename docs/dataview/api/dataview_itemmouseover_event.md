@@ -21,6 +21,6 @@ dataview.events.on("itemMouseOver", function(id, event) {
 
 @descr:
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Events](https://snippet.dhtmlx.com/2d74uyoh)
 
 @changelog: added in v6.4

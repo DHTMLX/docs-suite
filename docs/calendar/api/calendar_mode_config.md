@@ -21,6 +21,6 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 @descr:
 
-**Related sample**: [Calendar. Calendar Modes](https://snippet.dhtmlx.com/n9q0tc0q)
+**Related sample**: [Calendar. Calendar modes](https://snippet.dhtmlx.com/n9q0tc0q)
 
 [comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#calendarmodes)

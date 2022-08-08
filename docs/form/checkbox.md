@@ -10,7 +10,7 @@ A control that allows a user to make a choice between one or several opposite op
 
 ![Checkbox control](../assets/form/form_checkbox.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Checkboxes](https://snippet.dhtmlx.com/scs712zl)
 

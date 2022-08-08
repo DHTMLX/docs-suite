@@ -35,13 +35,13 @@ how the number of staff has increased over several years. Choose this variant wh
 
 ![Line chart](../assets/chart/line_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Line Chart](https://snippet.dhtmlx.com/t881qcim)
+**Related sample**: [Chart. Line chart initialization](https://snippet.dhtmlx.com/t881qcim)
 
 ### Spline chart
 
 ![Spline chart](../assets/chart/spline_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Spline Chart](https://snippet.dhtmlx.com/2wvmdm0y)
+**Related sample**: [Chart. Spline chart initialization](https://snippet.dhtmlx.com/2wvmdm0y)
 
 ## Bar and X-Bar chart
 
@@ -51,13 +51,13 @@ The same as Line chart it displays data for certain periods. It greatly suits yo
 
 ![Bar chart](../assets/chart/bar_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Bar Chart](https://snippet.dhtmlx.com/id9nbujd)
+**Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
 
 ### X-Bar chart
 
 ![X-Bar chart](../assets/chart/xbar_overview.png)
 
-**Related sample**: [Chart. Basic Initialization X-Bar Chart](https://snippet.dhtmlx.com/qz80yw84)
+**Related sample**: [Chart. X-Bar chart initialization](https://snippet.dhtmlx.com/qz80yw84)
 
 ## Area and SplineArea chart
 
@@ -67,13 +67,13 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 ![Area chart](../assets/chart/area_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Area Chart](https://snippet.dhtmlx.com/nv6t6lvm)
+**Related sample**: [Chart. Area chart initialization](https://snippet.dhtmlx.com/nv6t6lvm)
 
 ### SplineArea chart
 
 ![SplineArea chart](../assets/chart/splinearea_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Spline Area Chart](https://snippet.dhtmlx.com/bo82km4n)
+**Related sample**: [Chart. Spline Area chart initialization](https://snippet.dhtmlx.com/bo82km4n)
 
 ## Pie, Pie 3D and Donut chart
 
@@ -83,15 +83,15 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 ![Pie and Pie 3D charts](../assets/chart/pie_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Pie Chart](https://snippet.dhtmlx.com/jfbet749)
+**Related sample**: [Chart. Pie chart initialization](https://snippet.dhtmlx.com/jfbet749)
 
-**Related sample**: [Chart. Basic Initialization Pie 3D Chart](https://snippet.dhtmlx.com/xfce9pys)
+**Related sample**: [Chart. Pie 3D chart initialization](https://snippet.dhtmlx.com/xfce9pys)
 
 ### Donut Chart
 
 ![Donut chart](../assets/chart/donut_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Donut Chart](https://snippet.dhtmlx.com/lobb80ig)
+**Related sample**: [Chart. Donut chart initialization](https://snippet.dhtmlx.com/lobb80ig)
 
 ## Radar Chart
 
@@ -100,7 +100,7 @@ relate to one item (the center point of a chart) and compare their values.
 
 ![Donut chart](../assets/chart/radar_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Radar Chart](https://snippet.dhtmlx.com/6otf4h0t)
+**Related sample**: [Chart. Radar chart initialization](https://snippet.dhtmlx.com/6otf4h0t)
 
 ## Scatter Chart
 
@@ -108,7 +108,7 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 ![Scatter chart](../assets/chart/scatter_overview.png)
 
-**Related sample**: [Chart. Basic Initialization Scatter Chart](https://snippet.dhtmlx.com/pkczfmpu)
+**Related sample**: [Chart. Scatter chart initialization](https://snippet.dhtmlx.com/pkczfmpu)
 
 ## Treemap Chart
 

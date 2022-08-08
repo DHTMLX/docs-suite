@@ -19,7 +19,7 @@ var dataview = new dhx.DataView("dataview", {height: "700px"});
 
 @descr:
 
-**Related sample**: [Dataview. Setup Dataview Height](https://snippet.dhtmlx.com/g1k2l4q0)
+**Related sample**: [Dataview. Setup Dataview height](https://snippet.dhtmlx.com/g1k2l4q0)
 
 The usage of the *CSS calc() function* within the **height** property is not possible.
 

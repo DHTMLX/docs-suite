@@ -59,7 +59,7 @@ You can load data to a ribbon from an array with the **parse()** method of TreeC
 ribbon.data.parse(data);
 ~~~
 
-**Related sample**: [Ribbon. Initialization](https://snippet.dhtmlx.com/1gd5tbcf)
+**Related sample**: [Ribbon. Initialization with data.parse()](https://snippet.dhtmlx.com/zz5ijqy9)
 
 ## Loading from an external file
 
@@ -69,7 +69,7 @@ The **load** method loads the ribbon data from an external JSON file. All the da
 ribbon.data.load("[path to this file]/file.json");
 ~~~	
 
-**Related sample**: [Ribbon. Initialization](https://snippet.dhtmlx.com/1gd5tbcf)
+**Related sample**: [Ribbon. Initialization with data.load()](https://snippet.dhtmlx.com/1gd5tbcf)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -114,7 +114,7 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ]
 ~~~
 
-**Related sample**: [Ribbon. Config Data](https://snippet.dhtmlx.com/lek4v9m7)
+**Related sample**: [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
 
 ### Block template
 

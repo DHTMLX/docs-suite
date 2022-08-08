@@ -14,11 +14,11 @@ In this section you can find out the ways of Calendar initialization and localiz
 
 ### Initialization and localization
 
-| Topic                                    | Description                                                                                   |
-| :--------------------------------------- | :-------------------------------------------------------------------------------------------- |
-| [Basic initialization](../how_to_start/) | Learn how to initialize a Calendar ([Example]((https://snippet.dhtmlx.com/xcw19e52)))         |
-| [Date picker](../datepicker/)            | Learn how to use a Calendar as a date picker ([Example](https://snippet.dhtmlx.com/mj7jr6ro)) |
-| [Localization](../localizing_calendar/)  | Learn how to localize a Calendar ([Example](https://snippet.dhtmlx.com/tn40a0w8))             |
+| Topic                                   | Description                                                                                   |
+| :-------------------------------------- | :-------------------------------------------------------------------------------------------- |
+| [Initialization](../how_to_start/)      | Learn how to initialize a Calendar ([Example](https://snippet.dhtmlx.com/xcw19e52))           |
+| [Date picker](../datepicker/)           | Learn how to use a Calendar as a date picker ([Example](https://snippet.dhtmlx.com/mj7jr6ro)) |
+| [Localization](../localizing_calendar/) | Learn how to localize a Calendar ([Example](https://snippet.dhtmlx.com/tn40a0w8))             |
 
 
 ### Integration
@@ -50,7 +50,7 @@ In this section you can discover how to configure Calendar.
 | :------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------- |
 | [Initial calendar date](../configuring/#initial-calendar-date) | Learn how to specify the initial date of Calendar ([Example](https://snippet.dhtmlx.com/fyg6l65t))  |
 | [Highlighted dates](../configuring/#highlighted-dates)         | Learn how to highlight certain dates in Calendar ([Example](https://snippet.dhtmlx.com/ic5oeiga))   |
-| [Disabled dates](../configuring/#disabled-dates)               | Learn how to disable certain dates ([Example](https://snippet.dhtmlx.com/27n67r91))                 |
+| [Disabled dates](../configuring/#disabled-dates)               | Learn how to disable certain dates ([Example](https://snippet.dhtmlx.com/ic5oeiga))                 |
 | [Date format](../configuring/#date-format)                     | Learn how to specify the necessary format of dates ([Example](https://snippet.dhtmlx.com/2co9z3bi)) |
 
 

@@ -33,7 +33,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-**Related sample**: [Slider. Inverse Mode Of The Slider](https://snippet.dhtmlx.com/xm8e84s2)
+**Related sample**: [Slider. Inverse mode of the Slider](https://snippet.dhtmlx.com/xm8e84s2)
 
 ## Minimal and maximal values
 
@@ -62,7 +62,7 @@ var slider = new dhx.Slider("slider", {
 });
 ~~~
 
-**Related sample**: [Slider. Range Mode Of The Slider](https://snippet.dhtmlx.com/nfdr84oy)
+**Related sample**: [Slider. Range mode of the Slider](https://snippet.dhtmlx.com/nfdr84oy)
 
 There are more details given in the [](slider/range_slider.md) article.
 
@@ -86,9 +86,9 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-**Related sample**: [Slider. Custom Scale](https://snippet.dhtmlx.com/jsfxnplp)
+**Related sample**: [Slider. Custom scale](https://snippet.dhtmlx.com/jsfxnplp)
 
-**Related sample**: [Slider. Slider With A Scale](https://snippet.dhtmlx.com/4a6l7cyy)
+**Related sample**: [Slider. Slider with a scale](https://snippet.dhtmlx.com/4a6l7cyy)
 
 ### Showing only the first and the last ticks
 
@@ -124,7 +124,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-**Related sample**: [Slider. Slider Label](https://snippet.dhtmlx.com/4o7yttam)
+**Related sample**: [Slider. Label](https://snippet.dhtmlx.com/4o7yttam)
 
 ## Step
 
@@ -150,7 +150,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-**Related sample**: [Slider. Tooltip For The Slider](https://snippet.dhtmlx.com/sxh66mnu)
+**Related sample**: [Slider. Tooltip for the Slider](https://snippet.dhtmlx.com/sxh66mnu)
 
 ## Vertical mode
 
@@ -162,4 +162,4 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-**Related sample**: [Slider. Vertical Mode Of The Slider](https://snippet.dhtmlx.com/rjborkca)
+**Related sample**: [Slider. Vertical mode](https://snippet.dhtmlx.com/rjborkca)

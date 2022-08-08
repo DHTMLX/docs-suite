@@ -52,7 +52,7 @@ var combo = new dhx.Combo("combo_container");
 combo.data.load("../common/dataset.json");
 ~~~
 
-**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
+**Related sample**: [Combobox. Initialization with data.load()](https://snippet.dhtmlx.com/69jnq5cn)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -73,7 +73,7 @@ var combo = new dhx.Combo("combo_container");
 combo.data.parse(dataset);
 ~~~
 
-**Related sample**: [Combobox. Basic Initialization](https://snippet.dhtmlx.com/69jnq5cn)
+**Related sample**: [Combobox. Initialization with data.parse()](https://snippet.dhtmlx.com/d2y5yf46)
 
 ## Saving and restoring state
 

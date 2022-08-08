@@ -18,6 +18,6 @@ var chart = new dhx.Chart("chart", {
 
 @descr:
 
-**Related sample**: [Chart. Max Points](https://snippet.dhtmlx.com/6917eudu)
+**Related sample**: [Chart. Max points](https://snippet.dhtmlx.com/6917eudu)
 
 [comment]: # (@related: chart/configuration_properties.md#main-properties)

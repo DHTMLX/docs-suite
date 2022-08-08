@@ -29,7 +29,7 @@ var sidebar = dhx.Sidebar("sidebar_container", {
 @descr:
 
 **Related samples**:
-- [Sidebar. Config Data](https://snippet.dhtmlx.com/y8y7iw42)
-- [Sidebar. Init With External Data](https://snippet.dhtmlx.com/f4wo06yo)
+- [Sidebar. Initialization with config.data](https://snippet.dhtmlx.com/y8y7iw42)
+- [Sidebar. Initialization with external TreeCollection](https://snippet.dhtmlx.com/f4wo06yo)
 
 [comment]: # (@related: sidebar/data_loading.md)

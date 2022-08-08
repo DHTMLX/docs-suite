@@ -38,7 +38,7 @@ var dataset = [
 ];
 ~~~
 
-**Related sample**: [Grid. Large Dataset](https://snippet.dhtmlx.com/w3p07d6s)
+**Related sample**: [Grid. Large dataset](https://snippet.dhtmlx.com/w3p07d6s)
 
 Each object in the data set contains configuration of a grid row. The structure of a row is rather flexible. It may include:
 
@@ -66,7 +66,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
+**Related sample**: [Grid. Initialization with config.data](https://snippet.dhtmlx.com/luh8d0vv)
 
 ## External data loading
 
@@ -96,7 +96,7 @@ var grid = new dhx.Grid("grid_container");
 grid.data.parse(dataset);
 ~~~
 
-**Related sample**: [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
+**Related sample**: [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
 
 ## Saving and restoring state
 

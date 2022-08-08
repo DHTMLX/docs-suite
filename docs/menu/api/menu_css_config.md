@@ -27,7 +27,7 @@ var menu = new dhx.Menu({
 
 @descr:
 
-**Related sample**: [Menu. Custom Css](https://snippet.dhtmlx.com/kfy2th5n)
+**Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Menu:
 

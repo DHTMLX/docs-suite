@@ -18,6 +18,6 @@ layout.removeCell("1");
 
 @descr:
 
-**Related sample**: [Layout. Remove Cell](https://snippet.dhtmlx.com/tnujp7jk)
+**Related sample**: [Layout. Remove cell](https://snippet.dhtmlx.com/tnujp7jk)
 
 [comment]: # (@related: layout/work_with_layout.md#removing-cells)

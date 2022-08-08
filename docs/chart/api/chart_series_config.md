@@ -74,7 +74,7 @@ var chart = new dhx.Chart("chart_container",{
 		<tr>
 			<td><b>pointType</b></td>
 			<td>(<i>string</i>) sets the type of the point of the data item. There are the following point types:"circle","rect","triangle","rhombus","simpleRect","simpleCircle","empty" <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cbj54wwu" target="_blank">Chart. Point Types</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cbj54wwu" target="_blank">Chart. Point types</a>
 			</td>
 		</tr>
 		<tr>
@@ -92,7 +92,7 @@ var chart = new dhx.Chart("chart_container",{
 		<tr>
 			<td><b>tooltipTemplate</b></td>
 			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/mbz7dkku" target="_blank">Chart. Tooltip Template</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/mbz7dkku" target="_blank">Chart. Tooltip template</a>
 			</td>
 		</tr>
     </tbody>
@@ -121,19 +121,19 @@ var chart = new dhx.Chart("chart_container",{
     	<tr>
 			<td><b>gradient</b></td>
 			<td>(<i>function</i>) a function that defines a color gradient for bars <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/j3duyn2q" target="_blank">Chart. Bar Gradient</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/j3duyn2q" target="_blank">Chart. Bar chart. Gradient</a>
 			</td>
 		</tr>
         <tr>
 			<td><b>baseLine</b></td>
 			<td>(<i>number</i>) sets a base line for rendering data items (bars) <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/6tls4qhf" target="_blank">Chart. Base Line</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/6tls4qhf" target="_blank">Chart. Base line</a>
 			</td>
 		</tr>
 		<tr>
 			<td><b>stacked</b></td>
 			<td>(<i>boolean</i>) defines whether a stacked chart will be rendered  <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked Chart</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ilew1ds4" target="_blank">Chart. Stacked chart</a>
 			</td>
 		</tr>
 		<tr>
@@ -147,13 +147,13 @@ var chart = new dhx.Chart("chart_container",{
 		<tr>
 			<td><b>showTextTemplate</b></td>
 			<td>(<i>function</i>) a function that specifies the template for showing values of data items in bars <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show Text</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show text</a>
 			</td>
 		</tr>
 		<tr>
 			<td><b>showTextRotate</b></td>
 			<td>(<i>number|string</i>) the degree of rotation of text values of data items in bars <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show Text</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/o7ke2f1s" target="_blank">Chart. Show text</a>
 			</td>
 		</tr>
     </tbody>

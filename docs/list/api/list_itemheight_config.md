@@ -25,7 +25,7 @@ var list = new dhx.List("list_container", {
 
 @descr:
 
-**Related sample**: [List. Setup List Item Height](https://snippet.dhtmlx.com/89buovn2)
+**Related sample**: [List. Setup list item height](https://snippet.dhtmlx.com/89buovn2)
 
 The usage of the *CSS calc() function* within the **itemHeight** property is not possible.
 

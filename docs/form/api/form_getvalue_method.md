@@ -22,7 +22,7 @@ var state = form.getValue();
 
 @descr:
 
-**Related sample**: [Form. Get Value](https://snippet.dhtmlx.com/odod5v12)
+**Related sample**: [Form. Get value](https://snippet.dhtmlx.com/odod5v12)
 
 1\. In case both the name and id of the control are specified in the config of Control, the returned object will contain the name of Control:
 

@@ -23,7 +23,7 @@ var grid = new dhx.Grid("grid", {
 
 @descr:
 
-**Related sample**: [Grid. Hiding Tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
+**Related sample**: [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 
 @changelog: added in v6.5
 

@@ -55,11 +55,11 @@ dhx.message({
 });
 ~~~
 
-**Related sample**: [Message. Message Custom Styles](https://snippet.dhtmlx.com/7s6p67ht)
+**Related sample**: [Message. Message styling (custom CSS)](https://snippet.dhtmlx.com/7s6p67ht)
 
-**Related sample**: [Message. Alert Custom Styles](https://snippet.dhtmlx.com/g9tba9xi)
+**Related sample**: [Message. Alert styling (custom CSS)](https://snippet.dhtmlx.com/g9tba9xi)
 
-**Related sample**: [Message. Confirm Custom Styles](https://snippet.dhtmlx.com/x0barf98)
+**Related sample**: [Message. Confirm styling (custom CSS)](https://snippet.dhtmlx.com/x0barf98)
 
 ## Using default CSS classes
 

@@ -19,7 +19,7 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container",{
 
 @descr: 
 
-**Related sample**: [Colorpicker. Disabled Custom Colors](https://snippet.dhtmlx.com/3d75mz19)
+**Related sample**: [Colorpicker. Disabled custom colors](https://snippet.dhtmlx.com/3d75mz19)
 
 {{note Note that in the **paletteOnly** mode the palette is displayed without the panel with custom (user-defined) colors.}}
 

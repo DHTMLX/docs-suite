@@ -30,7 +30,7 @@ var array_ids = combo.getValue(true);
 
 @descr:
 
-**Related sample**: [Combobox. Get Value](https://snippet.dhtmlx.com/ppvjknid)
+**Related sample**: [Combobox. Get value](https://snippet.dhtmlx.com/ppvjknid)
 
 [comment]: # (@related: combobox/work_with_combo.md#settinggetting-values)
 

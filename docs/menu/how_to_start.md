@@ -32,7 +32,7 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 </html>
 ~~~
 
-**Related sample**: [Menu. Basic Menu Initialization](https://snippet.dhtmlx.com/cg62qa9v)
+**Related sample**: [Menu. Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)
 
 ## Include source files
 
@@ -124,6 +124,6 @@ var menu = new dhx.Menu("menu_container");
 menu.data.parse(data);
 ~~~
 
-**Related sample**: [Menu. Basic Menu Initialization](https://snippet.dhtmlx.com/cg62qa9v)
+**Related sample**: [Menu. Initialization with data.parse()](https://snippet.dhtmlx.com/8y2b1zqm)
 
 Detailed information on loading data into Menu is given in the article [](menu/data_loading.md).

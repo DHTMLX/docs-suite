@@ -22,8 +22,8 @@ var list = new dhx.List("list", {css: "bg-gray"});
 @descr:
 
 **Related samples**:
-- [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
-- [List. Add Custom Selection With Custom Css](https://snippet.dhtmlx.com/6hss19d3)
+- [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
+- [List. Styling selection with CSS](https://snippet.dhtmlx.com/6hss19d3)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of List:
 

@@ -36,7 +36,7 @@ To initialize dhtmlxSlider on a page, you need to take the following simple step
 </html>
 ~~~
 
-**Related sample**: [Slider.Basic Initialization](https://snippet.dhtmlx.com/wipdmzbp)
+**Related sample**: [Slider. Initialization](https://snippet.dhtmlx.com/wipdmzbp)
 
 ## Include source files
 
@@ -74,7 +74,7 @@ var slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-**Related sample**: [Slider.Basic Initialization](https://snippet.dhtmlx.com/wipdmzbp)
+**Related sample**: [Slider. Initialization](https://snippet.dhtmlx.com/wipdmzbp)
 
 ### Configuration properties
 

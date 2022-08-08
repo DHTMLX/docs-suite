@@ -34,7 +34,7 @@ var list = new dhx.List({
 });
 ~~~
 
-**Related sample**: [List. Custom Styles](https://snippet.dhtmlx.com/s461f09w)
+**Related sample**: [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
 
 ## Styling items
 
@@ -61,7 +61,7 @@ list.data.map(function (item, i) {
 </style>
 ~~~
 
-**Related sample**: [List. Custom item Styles](https://snippet.dhtmlx.com/ipu9yshl)
+**Related sample**: [List. Styling (custom CSS for item)](https://snippet.dhtmlx.com/ipu9yshl)
 
 ## Adding custom selection
 
@@ -69,7 +69,7 @@ It is also possible to customize selection of an item.
 
 ![](../assets/list/custom_selection.png)
 
-**Related sample**: [List. Add Custom Selection With Custom Css](https://snippet.dhtmlx.com/6hss19d3)
+**Related sample**: [List. Styling selection with CSS](https://snippet.dhtmlx.com/6hss19d3)
 
 ~~~js
 <style>

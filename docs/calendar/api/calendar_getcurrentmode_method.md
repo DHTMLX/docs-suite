@@ -18,6 +18,6 @@ var mode = calendar.getCurrentMode(); // -> "calendar"
 
 @descr:
 
-**Related sample**: [Calendar. Get Current Mode](https://snippet.dhtmlx.com/fadykqoc)
+**Related sample**: [Calendar. Get current mode](https://snippet.dhtmlx.com/fadykqoc)
 
 [comment]: # (@related: calendar/operating_calendar.md#gettingcurrentmode)

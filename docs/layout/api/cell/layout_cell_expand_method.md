@@ -15,7 +15,7 @@ layout.getCell("id").expand();
 
 @descr:
 
-**Related sample**: [Layout. Expand/Collapse](https://snippet.dhtmlx.com/h0wtlpyk)
+**Related sample**: [Layout. Expand / collapse](https://snippet.dhtmlx.com/h0wtlpyk)
 
 @changelog: added in v6.4
 

@@ -10,7 +10,7 @@ An advanced select box that provides a set of options to choose from.
 
 ![Select control](../assets/form/form_select.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Select](https://snippet.dhtmlx.com/yo9w9o2t)
 

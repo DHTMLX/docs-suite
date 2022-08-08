@@ -8,7 +8,7 @@ description: You can explore the eventHandlers config of Grid in the documentati
 
 @short: adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
 
-@signature: {'eventHandlers?: {[key: string]: any; };'}
+@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
 
 @example:
 const grid = new dhx.Grid("grid", {

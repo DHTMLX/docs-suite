@@ -16,7 +16,7 @@ In this section you can find out how to initialize Menu, how to add controls ins
 
 | Topic                                    | Description                                                                     |
 | ---------------------------------------- | ------------------------------------------------------------------------------- |
-| [Basic initialization](../how_to_start/) | Learn how to initialize a Menu ([Example](https://snippet.dhtmlx.com/yut2mnsz)) |
+| [Basic initialization](../how_to_start/) | Learn how to initialize a Menu |
 
 
 ### Loading data into Menu

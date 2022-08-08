@@ -19,7 +19,7 @@ var list = new dhx.List("list", {
 
 @descr:
 
-**Related sample**: [List. Add Template To List Item](https://snippet.dhtmlx.com/gtzdwpj4)
+**Related sample**: [List. HTML template for item](https://snippet.dhtmlx.com/gtzdwpj4)
 
 The template function takes one parameter:
 

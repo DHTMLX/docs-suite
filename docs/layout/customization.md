@@ -66,4 +66,4 @@ var layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-**Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)
+**Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)

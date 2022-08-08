@@ -19,7 +19,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 @descr: 
 
 **Related sample**:
-- [Calendar. Numbers Of Weeks](https://snippet.dhtmlx.com/9692gk6n)
+- [Calendar. Numbers of weeks](https://snippet.dhtmlx.com/9692gk6n)
 
 @related:
 calendar/how_to_start.md#initialize-calendar

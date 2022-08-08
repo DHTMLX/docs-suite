@@ -20,4 +20,4 @@ slider.events.on("mouseUp", function(e){
 
 @descr:
 
-**Related sample**: [Slider. Slider Events](https://snippet.dhtmlx.com/sc7ov54z)
+**Related sample**: [Slider. Events](https://snippet.dhtmlx.com/sc7ov54z)

@@ -21,7 +21,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 @descr:
 
-**Related sample**: [Combobox. Template](https://snippet.dhtmlx.com/z7cpj76i)
+**Related sample**: [Combobox. HTML template](https://snippet.dhtmlx.com/z7cpj76i)
 
 The **template** function takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 

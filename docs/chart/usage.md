@@ -40,7 +40,7 @@ var config = {
 chart.setConfig(config);
 ~~~
 
-**Related sample**: [Chart. Change Configuration On The Fly](https://snippet.dhtmlx.com/7umj531n)
+**Related sample**: [Chart. Change configuration on the fly](https://snippet.dhtmlx.com/7umj531n)
 
 ## Getting series configuration
 
@@ -63,7 +63,7 @@ var config = chart.getSeries("A");
 */
 ~~~
 
-**Related sample**: [Chart. Get Series](https://snippet.dhtmlx.com/9jtscd9q)
+**Related sample**: [Chart. Get series](https://snippet.dhtmlx.com/9jtscd9q)
 
 ## Iterating over series
 
@@ -103,7 +103,7 @@ chart.eachSeries(function(seria){
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 ~~~
 
-**Related sample**: [Chart. Each Series](https://snippet.dhtmlx.com/4kbj4lmw)
+**Related sample**: [Chart. Each series](https://snippet.dhtmlx.com/4kbj4lmw)
 
 ## Adding items into Chart
 
@@ -173,4 +173,4 @@ The method takes as a parameter an object with two properties:
 
 A new data item is added relative to the X-axis. In case of adding many items, you need to increase the value of each new data item position to add it correctly.
 
-**Related sample**: [Chart. Adding Data On The Fly](https://snippet.dhtmlx.com/dpz4w5nr)
+**Related sample**: [Chart. Adding data on the fly](https://snippet.dhtmlx.com/dpz4w5nr)

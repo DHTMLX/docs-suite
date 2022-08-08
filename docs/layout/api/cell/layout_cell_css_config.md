@@ -39,7 +39,7 @@ var layout = new dhx.Layout("layout_container", {
 
 @descr:
 
-**Related sample**: [Layout. Custom Css](https://snippet.dhtmlx.com/pwxmf0lx)
+**Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-layout-cell) that you can also apply to change the appearance of a Layout cell.
 

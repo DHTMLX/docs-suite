@@ -19,6 +19,6 @@ grid.scrollTo("15","c");
 
 @descr:
 
-**Related sample**: [Grid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/usu1rnpu)
+**Related sample**: [Grid. Controlling scroll behavior](https://snippet.dhtmlx.com/usu1rnpu)
 
 [comment]: # (@related: grid/usage.md#controlling-scroll-behavior)

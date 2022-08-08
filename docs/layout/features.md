@@ -49,7 +49,7 @@ In this section you can find out how to configure the size and visibility of cel
 | [Adding the header to a cell](../cell_configuration/#cell-header)                      | Learn how to add a header for a cell ([Example](https://snippet.dhtmlx.com/bxqnzesl))                                                                                               |
 | [Configuring content alignment](../api/cell/layout_cell_align_config/)                 | Learn how to set the alignment of content inside a cell ([Example](https://snippet.dhtmlx.com/4w1033c9))                                                                            |
 | [Configuring paddings](../api/cell/layout_cell_padding_config/)                        | Learn how to configure the distance between a cell and the Layout border ([Example](https://snippet.dhtmlx.com/tk6tpwwv))                                                           |
-| [Initializing a collapsed cell](../cell_configuration/#collapsibility)                 | Learn how to initialize a collapsed cell and provide the ability to expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), ([Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
+| [Initializing a collapsed cell](../cell_configuration/#collapsibility)                 | Learn how to initialize a collapsed cell and provide the ability to expand it ([Example 1](https://snippet.dhtmlx.com/f1f49n35), [Example 2](https://snippet.dhtmlx.com/r2e0y6n7)) |
 
 ## How to configure sizes of Layout cells
 
@@ -84,7 +84,7 @@ In this section you will learn how to get a cell object, how to add or remove, h
 | [Getting a cell object](../api/layout_getcell_method/)                           | Learn how to get a configuration object of a particular cell                                                                            |
 | [Showing/hiding a cell](../work_with_layout/#hidingshowing-a-cell)               | Learn how to hide/show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example](https://snippet.dhtmlx.com/u0jd8ah3))        |
 | [Checking visibility of a cell](../work_with_layout/#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
-| [Expanding/collapsing a cell](../work_with_layout/#collapsingexpanding-a-cell) | Learn how to collapse/expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk),[Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
+| [Expanding/collapsing a cell](../work_with_layout/#collapsingexpanding-a-cell) | Learn how to collapse/expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk), [Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
 
 
 ## Layout patterns

@@ -23,7 +23,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
-**Related sample**: [Grid. Auto height](https://snippet.dhtmlx.com/zkcsyazg)
+**Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
 {{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
 

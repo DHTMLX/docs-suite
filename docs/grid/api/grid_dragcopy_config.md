@@ -29,7 +29,7 @@ var target = new dhx.Grid("grid-target", {
 
 @descr: 
 
-**Related sample**: [Grid. Setup Drag Copy](https://snippet.dhtmlx.com/23slivyz)
+**Related sample**: [Grid. Drag-n-drop copy](https://snippet.dhtmlx.com/23slivyz)
 
 [comment]: # (@related: grid/initialization.md#initialize-grid)
 

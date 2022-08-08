@@ -20,7 +20,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 @descr:
-**Related sample**: [Calendar. Time Format](https://snippet.dhtmlx.com/9xi24if2)
+**Related sample**: [Calendar. Time format](https://snippet.dhtmlx.com/9xi24if2)
 
 The time format can be presented either in the 12-hour or in the 24-hour format.
 

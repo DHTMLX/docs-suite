@@ -18,7 +18,7 @@ slider.isDisabled(); // -> true/false
 
 @descr:
 
-**Related sample**: [Slider. Is Disabled Slider](https://snippet.dhtmlx.com/fbo18fue)
+**Related sample**: [Slider. Is disabled](https://snippet.dhtmlx.com/fbo18fue)
 
 @changelog: added in v6.4
 

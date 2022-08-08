@@ -27,7 +27,7 @@ var calendar = new dhx.Calendar({
 
 
 @descr:
-**Related sample**: [Calendar. Adding Custom Styles](https://snippet.dhtmlx.com/2045cbe1)
+**Related sample**: [Calendar. Styling (custom CSS)](https://snippet.dhtmlx.com/2045cbe1)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Calendar:
 

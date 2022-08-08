@@ -18,7 +18,7 @@ menu.paint();
 
 @descr:
 
-**Related sample**: [Menu. Navigation Type](https://snippet.dhtmlx.com/uhv64cm7)
+**Related sample**: [Menu. Navigation type. Click or pointer (hover)](https://snippet.dhtmlx.com/uhv64cm7)
 
 There are two types of navigation:
 

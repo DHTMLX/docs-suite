@@ -12,7 +12,7 @@ There is a possibility to make changes in the look and feel of a grid.
 
 ![](../assets/grid/styling_grid.png)
 
-**Related sample**: [Grid. Styling Selection](https://snippet.dhtmlx.com/xs7bixmg)
+**Related sample**: [Grid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/xs7bixmg)
 
 For this you need to take the following steps:
 
@@ -38,7 +38,7 @@ var grid = new dhx.Grid({
 });
 ~~~
 
-**Related sample**: [Grid. Styling Grid](https://snippet.dhtmlx.com/c5tr3s5r)
+**Related sample**: [Grid. Styling (custom CSS)](https://snippet.dhtmlx.com/c5tr3s5r)
 
 ## Styling header cells
 
@@ -70,7 +70,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Styling Header Cells](https://snippet.dhtmlx.com/7o4elf48)
+**Related sample**: [Grid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/7o4elf48)
 
 ## Styling footer cells
 
@@ -105,7 +105,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Styling Footer Cells](https://snippet.dhtmlx.com/d254hcvp)
+**Related sample**: [Grid. Styling footer cells (custom CSS)](https://snippet.dhtmlx.com/d254hcvp)
 
 ## Styling rows
 
@@ -131,7 +131,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom Row Style](https://snippet.dhtmlx.com/2dxtwf9n)
+**Related sample**: [Grid. Custom row style](https://snippet.dhtmlx.com/2dxtwf9n)
 
 - with the help of the **addRowCss()** method:
 
@@ -148,7 +148,7 @@ var rowId = grid.data.getId(1);
 grid.addRowCss(rowId, "myCustomClass");
 ~~~
 
-**Related sample**: [Grid. Add Row Css](https://snippet.dhtmlx.com/idvmge2d)
+**Related sample**: [Grid. Add row CSS](https://snippet.dhtmlx.com/idvmge2d)
 
 where:
 
@@ -200,7 +200,7 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
 grid.addCellCss(rowId, "netChange", "myCustomClass");
 ~~~
 
-**Related sample**: [Grid. Add Cell Css](https://snippet.dhtmlx.com/hskmp8rh)
+**Related sample**: [Grid. Add cell CSS](https://snippet.dhtmlx.com/hskmp8rh)
 
 ## Adding custom marks to cells
 
@@ -263,7 +263,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Custom Mark Cells](https://snippet.dhtmlx.com/9whjve0v)
+**Related sample**: [Grid. Conditional formatting. Marking cells with colors](https://snippet.dhtmlx.com/9whjve0v)
 
 It is also possible to highlight cells with minimum and (or) maximum values in a grid using the **mark** property of a column configuration. The property is an object which takes two optional parameters:
 
@@ -314,7 +314,7 @@ var grid = new dhx.Grid("grid", {
 
 ![](../assets/grid/mark_cell.png)
 
-**Related sample**: [Grid. Mark Cells](https://snippet.dhtmlx.com/buirf16n)
+**Related sample**: [Grid. Mark cells](https://snippet.dhtmlx.com/buirf16n)
 
 ## Adding template to cells
 
@@ -356,7 +356,7 @@ var grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Cell Templates](https://snippet.dhtmlx.com/9txizaow)
+**Related sample**: [Grid. Cell templates](https://snippet.dhtmlx.com/9txizaow)
 
 ### Event handlers for the template
 
@@ -388,27 +388,6 @@ const grid = new dhx.Grid("grid", {
 ~~~
 
 **Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
-
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-<table>
-	<tbody>
-        <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
-        <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>object</b> - an object with two attributes:
-                <ol>- <b>row</b> - an object with a row configuration</ol>
-                <ol>- <b>column</b> - an object with a column configuration</ol></li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table>
 
 ## Adding template to tooltip
 

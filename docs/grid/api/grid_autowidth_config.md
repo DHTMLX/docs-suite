@@ -23,7 +23,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
-**Related sample**: [Grid. Auto Width](https://snippet.dhtmlx.com/4as4y3l4)
+**Related sample**: [Grid. Columns auto width](https://snippet.dhtmlx.com/4as4y3l4)
 
 {{note The property is ignored if the [adjust](../../../grid/configuration/#autosize-for-columns) property is used.}}
 

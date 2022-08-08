@@ -15,6 +15,6 @@ calendar.clear()
 
 @descr:
 
-**Related sample**: [Calendar. Clear Value](https://snippet.dhtmlx.com/zu2n05at)
+**Related sample**: [Calendar. Clear value](https://snippet.dhtmlx.com/zu2n05at)
 
 @changelog: added in v6.4

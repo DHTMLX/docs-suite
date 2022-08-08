@@ -45,7 +45,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 
 
 @descr:
-**Related sample**: [Calendar. Value Initialization](https://snippet.dhtmlx.com/epjjww3l)
+**Related sample**: [Calendar. Value initialization](https://snippet.dhtmlx.com/epjjww3l)
 
 If the property is not specified in the configuration object, nothing is selected in the calendar on initialization.
 

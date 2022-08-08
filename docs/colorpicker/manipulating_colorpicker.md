@@ -16,7 +16,7 @@ You can select a certain color in the ColorPicker via the [setValue()](colorpick
 colorpicker.setValue("#F9E6AD");
 ~~~
 
-**Related sample**: [Colorpicker. Set Value](https://snippet.dhtmlx.com/h6oc5qsq)
+**Related sample**: [Colorpicker. Set value](https://snippet.dhtmlx.com/h6oc5qsq)
 
 It is also possible to get the code of a color selected in the color picker using the [getValue()](colorpicker/api/colorpicker_getvalue_method.md) method.
 
@@ -32,7 +32,7 @@ To set custom colors that will be displayed at the bottom of the palette, make u
 colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 ~~~
 
-**Related sample**: [Colorpicker. Set Custom Colors](https://snippet.dhtmlx.com/z9jfv3fg)
+**Related sample**: [Colorpicker. Set custom colors](https://snippet.dhtmlx.com/z9jfv3fg)
 
 To get a collection of selected custom colors, use the [getCustomColors()](colorpicker/api/colorpicker_getcustomcolors_method.md) method. It returns selected colors as an array of strings in the Hex format.
 
@@ -52,7 +52,7 @@ You can choose what view should be shown with the help of the [setCurrentMode()]
 colorpicker.setCurrentMode("picker");
 ~~~
 
-**Related sample**: [Colorpicker. Set Current Mode](https://snippet.dhtmlx.com/0mhp5cp6)
+**Related sample**: [Colorpicker. Set current mode](https://snippet.dhtmlx.com/0mhp5cp6)
 
 To get the current view of ColorPicker, make use of the [getCurrentMode()](colorpicker/api/colorpicker_getcurrentmode_method.md) method. It returns a string with the name of the view: "palette" or "picker".
 
@@ -71,4 +71,4 @@ To set focus on a certain color in the palette, make use of the [setFocus()](col
 colorpicker.setFocus("#BDF0E9");
 ~~~
 
-**Related sample**: [Colorpicker. Set Focus](https://snippet.dhtmlx.com/fg13r3uh)
+**Related sample**: [Colorpicker. Set focus](https://snippet.dhtmlx.com/fg13r3uh)

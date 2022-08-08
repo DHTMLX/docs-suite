@@ -10,7 +10,7 @@ description: You can explore the configuration of DataView in the documentation 
 
 ![](../assets/dataview/arrow_navigation.png)
 
-**Related sample**: [Dataview. Arrow Navigation](https://snippet.dhtmlx.com/u7mgoly9)
+**Related sample**: [Dataview. Arrow navigation](https://snippet.dhtmlx.com/u7mgoly9)
 
 The DataView component provides the possibility to navigate its items with arrow keys. You can enable this functionality using the [](dataview/api/dataview_keynavigation_config.md) property:
 
@@ -96,13 +96,13 @@ var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: 
 var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
 ~~~
 
-**Related sample**: [Dataview. Drag'n'drop Copy](https://snippet.dhtmlx.com/h89c3gl3)
+**Related sample**: [Dataview. Drag-n-drop copy](https://snippet.dhtmlx.com/h89c3gl3)
 
 ## Editing items
 
 ![](../assets/dataview/editable.png)
 
-**Related sample**: [Dataview. Editable Dataview](https://snippet.dhtmlx.com/m8fbqcza)
+**Related sample**: [Dataview. Inline editing](https://snippet.dhtmlx.com/m8fbqcza)
 
 You can enable the possibility to edit DataView items with the help of the [](dataview/api/dataview_editable_config.md) configuration option:
 
@@ -114,7 +114,7 @@ var dataview = new dhx.DataView("dataview_container", {editable:true});
 
 ![](../assets/dataview/item_height.png)
 
-**Related sample**: [Dataview. Setup Dataview Item Height](https://snippet.dhtmlx.com/cth9mwrf)
+**Related sample**: [Dataview. Setup Dataview item height](https://snippet.dhtmlx.com/cth9mwrf)
 
 You can specify the necessary height of a Dataview item and set it before initialization of Dataview via the [itemHeight](dataview/api/dataview_itemheight_config.md) property either as a number:
 
@@ -140,7 +140,7 @@ var dataview = new dhx.DataView("dataview", {
 
 ![](../assets/dataview/dataview_height.png)
 
-**Related sample**: [Dataview. Setup Dataview Height](https://snippet.dhtmlx.com/g1k2l4q0)
+**Related sample**: [Dataview. Setup Dataview height](https://snippet.dhtmlx.com/g1k2l4q0)
 
 You can define the desired height of a dataview via the [height](dataview/api/dataview_height_config.md) configuration option as easy as that:
 
@@ -160,7 +160,7 @@ var dataview = new dhx.DataView("dataview", {height: "400px"});
 
 ![](../assets/dataview/gap.png)
 
-**Related sample**: [Dataview. Configure Gap Size](https://snippet.dhtmlx.com/ozsuww1q)
+**Related sample**: [Dataview. Configure gap size](https://snippet.dhtmlx.com/ozsuww1q)
 
 It is possible to add margins around DataView items to increase distance between two items as well as between an item and DataView borders. Use the [](dataview/api/dataview_gap_config.md) configuration property 
 to define the desired margin:
@@ -188,13 +188,13 @@ var dataview = new dhx.DataView("dataview", {
 });
 ~~~
 
-**Related sample**: [Dataview. Multiselection Dataview](https://snippet.dhtmlx.com/g0xwdx10)
+**Related sample**: [Dataview. Multiselection](https://snippet.dhtmlx.com/g0xwdx10)
 
 ## Number of items in a row
 
 ![](../assets/dataview/items_in_row.png)
 
-**Related sample**: [Dataview. Amount Items In A Row](https://snippet.dhtmlx.com/de4r8km3)
+**Related sample**: [Dataview. Amount items in a row](https://snippet.dhtmlx.com/de4r8km3)
 
 You can define the number of items that should be displayed in a row of DataView with the help of the [](dataview/api/dataview_itemsinrow_config.md) configuration property:
 
@@ -205,8 +205,6 @@ var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
 ## Selection of items
 
 ![](../assets/dataview/disable_selection.png)
-
-**Related sample**: [Dataview. Disable selection](https://snippet.dhtmlx.com/xh66mnu3)
 
 The default configuration of DataView provides you with the selection feature that allows highlighting a DataView item. To disable selection in a DataView you need to set the [](dataview/api/dataview_selection_config.md) configuration property to *false*:
 
@@ -220,7 +218,7 @@ var dataview = new dhx.DataView("dataview", {
 
 ![](../assets/dataview/template.png)
 
-**Related sample**: [Dataview. Render Template](https://snippet.dhtmlx.com/d6l6grr7)
+**Related sample**: [Dataview. With template](https://snippet.dhtmlx.com/d6l6grr7)
 
 You can define a template for rendering items in a dataview with the help of the [](dataview/api/dataview_template_config.md) configuration property. You need to set a function as its value and pass one parameter to it:
 
@@ -272,22 +270,3 @@ var dataview = new dhx.DataView("dataview", {
 ~~~
 
 **Related sample**: [Dataview. Handling events in template](https://snippet.dhtmlx.com/26873eql)
-
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-<table>
-	<tbody>
-        <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
-        <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>id</b> - the id of a DataView item</li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table>

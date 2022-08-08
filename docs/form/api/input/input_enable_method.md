@@ -15,4 +15,4 @@ form.getItem("input").enable();
 
 @descr:
 
-**Related sample**: [Form. Disable Of Control](https://snippet.dhtmlx.com/n0ndn215)
+**Related sample**: [Form. Disable/enable a control](https://snippet.dhtmlx.com/n0ndn215)

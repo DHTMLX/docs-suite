@@ -21,7 +21,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Frozen Columns](https://snippet.dhtmlx.com/hcgl9nth)
+**Related sample**: [Grid. Frozen columns](https://snippet.dhtmlx.com/hcgl9nth)
 
 @changelog: added in v7.0
 

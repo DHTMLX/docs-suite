@@ -23,7 +23,7 @@ document.querySelector('#menu').oncontextmenu = function(e) {
 
 @descr:
 
-**Related sample**: [Menu. Show At](https://snippet.dhtmlx.com/9xfpymlg)
+**Related sample**: [Menu. Show at (right, bottom, under the mouse cursor)](https://snippet.dhtmlx.com/9xfpymlg)
 
 {{note This is the method of [Context Menu](menu/creating_context_menu.md).}}
 

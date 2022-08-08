@@ -18,7 +18,7 @@ dataview.editItem("1");
 
 @descr:
 
-**Related sample**: [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
+**Related sample**: [Dataview. Edit item using a button](https://snippet.dhtmlx.com/i09isp2d)
 
 @changelog: added in v6.4
 

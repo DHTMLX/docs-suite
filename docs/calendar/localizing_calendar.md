@@ -59,4 +59,4 @@ dhx.i18n.setLocale("calendar", de);
 var calendar = new dhx.Calendar("calendar_container");
 ~~~
 
-**Related sample**: [Calendar. Localized Calendar](https://snippet.dhtmlx.com/tn40a0w8)
+**Related sample**: [Calendar. Localization](https://snippet.dhtmlx.com/tn40a0w8)

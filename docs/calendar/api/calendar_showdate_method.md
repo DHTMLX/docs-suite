@@ -18,7 +18,7 @@ description: You can explore the showDate method of Calendar in the documentatio
 calendar.showDate(new Date(2020,11,12));
 
 @descr:
-**Related sample**: [Calendar. Showing Particular Calendar Date And Mode](https://snippet.dhtmlx.com/nyfzc8cl)
+**Related sample**: [Calendar. Showing particular calendar date and mode](https://snippet.dhtmlx.com/nyfzc8cl)
 
 The **modes** are:
 

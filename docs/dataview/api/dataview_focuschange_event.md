@@ -21,4 +21,4 @@ dataview.events.on("focusChange", function(index, id){
 
 @descr:
 
-**Related sample**: [Dataview. Dataview Events](https://snippet.dhtmlx.com/2d74uyoh)
+**Related sample**: [Dataview. Events](https://snippet.dhtmlx.com/2d74uyoh)

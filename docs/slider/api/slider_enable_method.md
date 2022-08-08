@@ -15,4 +15,4 @@ slider.enable();
 
 @descr:
 
-**Related sample**: [Slider. Disable/Enable Slider](https://snippet.dhtmlx.com/po9hsc2l)
+**Related sample**: [Slider. Disable/enable slider](https://snippet.dhtmlx.com/po9hsc2l)

@@ -12,11 +12,11 @@ description: You can explore the label config of Combo Box in the documentation 
 
 @example:
 var combo = new dhx.Combobox("combo_container", {
-    label:"My Combo label"
+    label:"Countries:"
 });
 
 @descr:
 
-**Related sample**: [Combobox. Label Position](https://snippet.dhtmlx.com/2936fray)
+**Related sample**: [Combobox. Label position](https://snippet.dhtmlx.com/2936fray)
 
 [comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/configuration.md#label)

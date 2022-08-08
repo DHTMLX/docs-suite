@@ -18,7 +18,7 @@ list.setFocus("item_id");
 
 @descr:
 
-**Related sample**: [List. Set Active Index](https://snippet.dhtmlx.com/ermcjx3d)
+**Related sample**: [List. Set active index](https://snippet.dhtmlx.com/ermcjx3d)
 
 @changelog:
 added in v6.3

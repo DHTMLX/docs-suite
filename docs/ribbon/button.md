@@ -10,7 +10,7 @@ This is a simple button that can have an icon. Button can be *twoState* and can 
 
 ![](../assets/ribbon/ribbon_button.png)
 
-**Related sample**: [Ribbon. Group Buttons](https://snippet.dhtmlx.com/nlviu82g)
+**Related sample**: [Ribbon. Group buttons](https://snippet.dhtmlx.com/nlviu82g)
 
 ## Creating Buttons
 
@@ -48,7 +48,7 @@ You can add a custom element to a button with the help of the **html** property:
 }
 ~~~
 
-**Related sample**: [Ribbon. Item HTML Content](https://snippet.dhtmlx.com/3djaib6o)
+**Related sample**: [Ribbon. Item HTML content](https://snippet.dhtmlx.com/3djaib6o)
 
 ## Showing/hiding Button
 
@@ -91,7 +91,7 @@ You can add a number badge to the button to display information like the number 
 }
 ~~~
 
-**Related sample**: [Ribbon. Buttons](https://snippet.dhtmlx.com/trli6sq7)
+**Related sample**: [Ribbon. Buttons configuration](https://snippet.dhtmlx.com/trli6sq7)
 
 ## Styling buttons
 

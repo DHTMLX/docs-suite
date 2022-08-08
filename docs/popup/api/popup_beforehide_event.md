@@ -27,6 +27,6 @@ popup.events.on("beforeHide", function(fromOuterClick,e){
 
 **Related samples**:
 - [Popup. Events](https://snippet.dhtmlx.com/ro2lza9t)
-- [Popup. Prevent Hide](https://snippet.dhtmlx.com/aocef9cv)
+- [Popup. Prevent hide](https://snippet.dhtmlx.com/aocef9cv)
 
 [comment]: # (@related: popup/event_handling.md)

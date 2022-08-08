@@ -24,7 +24,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Header Spans](https://snippet.dhtmlx.com/eol76o68)
+**Related sample**: [Grid. Grouped headers (spans)](https://snippet.dhtmlx.com/eol76o68)
 
 Each object in the spans array contains the following properties:
 

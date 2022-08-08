@@ -10,7 +10,7 @@ A control that allows selecting a numeric value by moving a thumb along a line w
 
 ![Slider control](../assets/form/form_slider.png)
 
-**Related sample**: [Form. All DhxForm Inputs](https://snippet.dhtmlx.com/ikyyekxq)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 ##  Adding Slider
 You can easily add a Slider control during initialization of a form:

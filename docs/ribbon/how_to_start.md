@@ -32,7 +32,7 @@ To add dhtmlxRibbon into an application, you need to take the following simple s
 </html>
 ~~~
 
-**Related sample**: [Ribbon. Basic Initialization](https://snippet.dhtmlx.com/1gd5tbcf)
+**Related sample**: [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
 
 ## Include source files
 
@@ -67,7 +67,7 @@ var ribbon = new dhx.Ribbon("ribbon_container", {
 });
 ~~~
 
-**Related sample**: [Ribbon. Basic Initialization](https://snippet.dhtmlx.com/1gd5tbcf)
+**Related sample**: [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
 
 ### Configuration properties
 

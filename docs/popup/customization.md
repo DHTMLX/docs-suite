@@ -38,4 +38,4 @@ var dhxPopup = new dhx.Popup({
 popup.show();
 ~~~
 
-**Related sample**: [Popup. Custom Css](https://snippet.dhtmlx.com/rd8zfw5h)
+**Related sample**: [Popup. Styling (custom CSS)](https://snippet.dhtmlx.com/rd8zfw5h)

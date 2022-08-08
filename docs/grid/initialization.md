@@ -41,7 +41,7 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-**Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
+**Related sample**: [Grid. Initialization with config.data](https://snippet.dhtmlx.com/luh8d0vv)
 
 ## Include source files
 
@@ -96,7 +96,7 @@ var grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Basic Initialization](https://snippet.dhtmlx.com/luh8d0vv)
+**Related sample**: [Grid. Initialization with config.data](https://snippet.dhtmlx.com/luh8d0vv)
 
 ### Configuration properties
 
@@ -131,6 +131,6 @@ var grid = new dhx.Grid("grid_container");
 grid.data.parse(dataset);
 ~~~
 
-**Related sample**: [Grid. External Data Loading](https://snippet.dhtmlx.com/svkb27d5)
+**Related sample**: [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
 
 Detailed information on loading data into Grid is given in the article [](grid/data_loading.md).

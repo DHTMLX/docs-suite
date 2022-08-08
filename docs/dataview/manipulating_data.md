@@ -22,7 +22,7 @@ You can edit a particular DataView item with the help of the [editItem()](datavi
 dataview.editItem("1");
 ~~~
 
-**Related sample**: [Dataview. Edit Item](https://snippet.dhtmlx.com/i09isp2d)
+**Related sample**: [Dataview. Edit item using a button](https://snippet.dhtmlx.com/i09isp2d)
 
 ## Disabling and enabling selection of an item
 
@@ -58,7 +58,7 @@ dataview.data.add({
 },0);
 ~~~
 
-**Related sample**: [Dataview. Add](https://snippet.dhtmlx.com/k4sbj47b)
+**Related sample**: [Dataview. Add item using Form](https://snippet.dhtmlx.com/k4sbj47b)
 
 ### Updating DataView items
 
@@ -86,7 +86,7 @@ dataview.data.update("item_id",{
 });
 ~~~
 
-**Related sample**: [Dataview. Update](https://snippet.dhtmlx.com/we9vm6iz)
+**Related sample**: [Dataview. Edit item with Form](https://snippet.dhtmlx.com/we9vm6iz)
 
 ### Removing items from DataView
 
@@ -96,7 +96,7 @@ To remove an item, make use of the **remove()** method of Data Collection. Pass 
 dataview.data.remove("id");
 ~~~
 
-**Related sample**: [Dataview. Delete](https://snippet.dhtmlx.com/i5cjuj2y)
+**Related sample**: [Dataview. Delete item](https://snippet.dhtmlx.com/i5cjuj2y)
 
 ### Filtering DataView data
 
@@ -126,7 +126,7 @@ dataview.data.sort({
 });
 ~~~
 
-**Related sample**: [Dataview. Sort](https://snippet.dhtmlx.com/mix83emb)
+**Related sample**: [Dataview. Sorting](https://snippet.dhtmlx.com/mix83emb)
 
 ## Using Selection API
 

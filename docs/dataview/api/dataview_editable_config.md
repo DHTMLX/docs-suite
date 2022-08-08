@@ -17,7 +17,7 @@ var dataview = new dhx.DataView("dataview_container", {editable:true});
 
 @descr:
 
-**Related sample**: [Dataview. Editable Dataview](https://snippet.dhtmlx.com/m8fbqcza)
+**Related sample**: [Dataview. Inline editing](https://snippet.dhtmlx.com/m8fbqcza)
 
 @changelog: added in v6.4
 
