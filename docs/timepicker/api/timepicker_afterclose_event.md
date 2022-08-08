@@ -20,7 +20,7 @@ timepicker.events.on("afterClose", function(value){
 
 @descr:
 
-**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
+**Related sample**: [Timepicker. Events](https://snippet.dhtmlx.com/5ccptwy7)
 
 The type of the value parameter depends on the applied [valueFormat](timepicker/api/timepicker_valueformat_config.md) and [timeFormat](timepicker/api/timepicker_timeformat_config.md):
 

@@ -15,6 +15,6 @@ timepicker.clear();
 
 @descr:
 
-**Related sample**: [Timepicker. Clear Timepicker Value](https://snippet.dhtmlx.com/xiazmc27)
+**Related sample**: [Timepicker. Clear Timepicker value](https://snippet.dhtmlx.com/xiazmc27)
 
 @changelog: added in v6.4

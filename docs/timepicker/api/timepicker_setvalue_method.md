@@ -31,7 +31,7 @@ timepicker.setValue({hour: 10, minute: 50, AM: true});
 
 @descr:
 
-**Related sample**: [Timepicker. Set Timepicker Value](https://snippet.dhtmlx.com/6r8lkhbg)
+**Related sample**: [Timepicker. Set Timepicker value](https://snippet.dhtmlx.com/6r8lkhbg)
 
 The value of timepicker set as an array should have the following elements:
 

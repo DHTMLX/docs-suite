@@ -34,8 +34,6 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 </html>
 ~~~
 
-**Related sample**: [Timepicker. Basic Initialization](https://snippet.dhtmlx.com/scq85iip)
-
 ## Include source files
 
 Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:

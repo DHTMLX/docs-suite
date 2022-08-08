@@ -38,7 +38,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 
 @descr:
 
-**Related sample**: [Timepicker. Value initialization](https://snippet.dhtmlx.com/3d5u4cxx)
+**Related sample**: [Timepicker. Initialization with button](https://snippet.dhtmlx.com/3d5u4cxx)
 
 1\. The value of timepicker set as an **array** should have the following elements:
 
