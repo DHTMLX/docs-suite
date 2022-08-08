@@ -47,7 +47,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 **Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [itemClick](tree/api/tree_itemclick_event.md) event when you click on the item with `className`.
 
-As an alternative way, you may use `stopPropagation()` for this purpose:
+As an alternative way, you may use `stopPropagation()` for this purpose (from v7.3.6):
 
 ~~~js
 eventHandlers: {
