@@ -23,7 +23,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 @descr:
 
-**Related sample**: [Tabbar. Disabled Tab](https://snippet.dhtmlx.com/pxa6rkpj)
+**Related sample**: [Tabbar. Rich configuration (close, disable, overflow, active tab)](https://snippet.dhtmlx.com/xqthiy66)
 
 @changelog:added in v6.4
 

@@ -19,7 +19,7 @@ tabbar.removeTab(id);
 
 @descr:
 
-**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
+**Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
 @changelog: added in v6.4
 

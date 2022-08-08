@@ -28,7 +28,7 @@ var active = tabbar.getActive(); // -> "2"
 
 @descr:
 
-**Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
+**Related sample**: [Tabbar. Get active](https://snippet.dhtmlx.com/xpvkcwiu)
 
 [comment]: # (@relatedapi: tabbar/api/tabbar_setactive_method.md)
 

@@ -22,7 +22,7 @@ tabbar.disableTab("London");
 
 @descr:
 
-**Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
+**Related sample**: [Tabbar. Disable tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 @changelog: added in v6.4
 

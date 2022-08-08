@@ -39,7 +39,7 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 </html>
 ~~~
 
-**Related sample**: [Tabbar. Basic Initialization](https://snippet.dhtmlx.com/uysfjo5z)
+**Related sample**: [Tabbar. Initialization](https://snippet.dhtmlx.com/uysfjo5z)
 
 ## Include source files
 
