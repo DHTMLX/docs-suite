@@ -25,7 +25,7 @@ var treeState = tree.getState();
 
 @descr:
 
-**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
+**Related sample**: [Tree. Getting Tree state](https://snippet.dhtmlx.com/xo6y6xi6)
 
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 

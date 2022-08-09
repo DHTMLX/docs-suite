@@ -18,8 +18,8 @@ var tree = new dhx.Tree("tree", {data: data});
 @descr:
 
 **Related samples**:
-- [Tree. Config Data](https://snippet.dhtmlx.com/r49y51k3)
-- [Tree. Init With External Data](https://snippet.dhtmlx.com/osjo7t0h)
+- [Tree. Initialization with config.data](https://snippet.dhtmlx.com/r49y51k3)
+- [Tree. Initialization with external TreeCollection](https://snippet.dhtmlx.com/osjo7t0h)
 
 Each **data** object can have the following properties:
 
@@ -47,7 +47,7 @@ Each **data** object can have the following properties:
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>object</i>) allows adding <a href="../../api/tree_icon_config">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom Dataset Icons</a></td>
+			<td>(<i>object</i>) allows adding <a href="../../api/tree_icon_config">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom dataset icons</a></td>
 		</tr>
     </tbody>
 </table>

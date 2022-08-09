@@ -17,7 +17,7 @@ var tree = new dhx.Tree("tree_container", {
 
 @descr:
 
-**Related sample**: [Tree. Drag Modes](https://snippet.dhtmlx.com/7idtw7i4)
+**Related sample**: [Tree. Drag modes](https://snippet.dhtmlx.com/7idtw7i4)
 
 Drag-n-drop can work in three modes: 
 

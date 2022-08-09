@@ -16,7 +16,7 @@ const tree = new dhx.Tree("tree", {
 });
 @examplestop:
 
-**Related sample**: [Tree. ItemHeight ](https://snippet.dhtmlx.com/w1qk9u7m)
+**Related sample**: [Tree. Item height](https://snippet.dhtmlx.com/w1qk9u7m)
 
 The usage of the CSS calc() function within the itemHeight property is not possible.
 

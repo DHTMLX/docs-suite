@@ -22,8 +22,8 @@ var tree = new dhx.Tree("tree_container", {
 @descr:
 
 **Related samples**:
-- [Tree. Custom Icons](https://snippet.dhtmlx.com/lpsgn3j7)
-- [Tree. Custom Dataset Icons](https://snippet.dhtmlx.com/h7mlx21q)
+- [Tree. Custom icons](https://snippet.dhtmlx.com/lpsgn3j7)
+- [Tree. Custom dataset icons](https://snippet.dhtmlx.com/h7mlx21q)
 
 There are three types of [icons](tree/setting_tree_appearance.md#changing-icons) that can be customized:
 

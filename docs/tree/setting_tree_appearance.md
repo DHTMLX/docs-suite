@@ -12,7 +12,7 @@ There is a possibility to make changes in the look and feel of a tree.
 
 ![](../assets/tree/custom_style.png)
 
-**Related sample**: [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
+**Related sample**: [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
 
 For this you need to take the following steps:
 
@@ -63,7 +63,7 @@ var tree = new dhx.Tree("tree_container", {
 
 ![](../assets/tree/custom_icons.png)
 
-**Related sample**: [Tree. Custom Icons](https://snippet.dhtmlx.com/lpsgn3j7)
+**Related sample**: [Tree. Custom icons](https://snippet.dhtmlx.com/lpsgn3j7)
 
 You can change the default icons used for tree items. dhtmlxTree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
 For this, you need to include the desired icon font on a page and apply icons to necessary items.
@@ -156,5 +156,5 @@ const tree = new dhx.Tree("tree", {
 });
 @examplestop:
 
-**Related sample**: [Tree. Handling Events In Template](https://snippet.dhtmlx.com/hg3f50td)
+**Related sample**: [Tree. Handling events in template](https://snippet.dhtmlx.com/hg3f50td)
 

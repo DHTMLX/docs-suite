@@ -16,7 +16,7 @@ var treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true
 
 @descr:
 
-**Related sample**: [Tree. Copy Dragged Item](https://snippet.dhtmlx.com/xm0lxbpj)
+**Related sample**: [Tree. Copy dragged item](https://snippet.dhtmlx.com/xm0lxbpj)
 
 {{note Don't forget to enable drag-n-drop via the [](tree/api/tree_dragmode_config.md) property to use dragCopy.}}
 

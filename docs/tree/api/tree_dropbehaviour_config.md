@@ -16,7 +16,7 @@ var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"compl
 
 @descr:
 
-**Related sample**: [Tree. Drop Behaviour](https://snippet.dhtmlx.com/80mh3hly)
+**Related sample**: [Tree. Drop behaviour](https://snippet.dhtmlx.com/80mh3hly)
 
 {{note Don't forget to enable drag-n-drop via the [](tree/api/tree_dragmode_config.md) property to use dropBehaviour.}}
 

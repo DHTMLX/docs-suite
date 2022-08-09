@@ -24,7 +24,7 @@ The [](tree/api/tree_uncheckitemnew_method.md) method will uncheck a tree item b
 tree.uncheckItem("history");
 ~~~
 
-**Related sample**: [Tree. Check/Uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)
+**Related sample**: [Tree. Check / uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)
 
 ### Get checked checkboxes
 
@@ -34,7 +34,7 @@ There is a possibility to get the list of all checked items in a tree with the [
 tree.getChecked(); // -> ["jmf", "rle", "sk", "km", "af", "jw"]
 ~~~
 
-**Related sample**: [Tree. Get Checked Items](https://snippet.dhtmlx.com/cz7xypgz)
+**Related sample**: [Tree. Get checked items](https://snippet.dhtmlx.com/cz7xypgz)
 
 ## Expanding/collapsing items
 
@@ -52,7 +52,7 @@ To collapse a tree item, make use of the [](tree/api/tree_collapse_method.md) me
 tree.collapse("history");
 ~~~
 
-**Related sample**: [Tree. Expand Item](https://snippet.dhtmlx.com/esxb15hm)
+**Related sample**: [Tree. Expand item](https://snippet.dhtmlx.com/esxb15hm)
 
 You can also alternately expand/collapse a tree item (folder) via the [](tree/api/tree_toggle_method.md) method:
 
@@ -60,7 +60,7 @@ You can also alternately expand/collapse a tree item (folder) via the [](tree/ap
 tree.toggle("history");
 ~~~
 
-**Related sample**: [Tree. Toggle Item](https://snippet.dhtmlx.com/qjk56co2)
+**Related sample**: [Tree. Toggle item](https://snippet.dhtmlx.com/qjk56co2)
 
 ### Expand/collapse all items
 
@@ -73,7 +73,7 @@ tree.expandAll();
 tree.collapseAll();
 ~~~
 
-**Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
+**Related sample**: [Tree. Expand all items](https://snippet.dhtmlx.com/c0nqyz60)
 
 ## Editing an item
 
@@ -82,8 +82,6 @@ There is the [](tree/api/tree_edititem_method.md) method that allows editing a c
 ~~~js
 tree.editItem(id);
 ~~~
-
-**Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 
 The method can also take a second parameter to configure the editing process. It may include two properties:
 
@@ -107,7 +105,7 @@ The method can also take a second parameter to configure the editing process. It
 For instance:
 
 ~~~js
-tree.events.on("itemdblclick", function (id) {
+tree.events.on("itemDblClick", function (id) {
     tree.editItem(id,{ mode: "select", options: [1, 2, 3, 4, 5] });
 });
 ~~~
@@ -125,9 +123,9 @@ var treeState = tree.getState();
 tree.setState(treeState);
 ~~~
 
-**Related sample**: [Tree. Getting Tree State](https://snippet.dhtmlx.com/xo6y6xi6)
+**Related sample**: [Tree. Getting Tree state](https://snippet.dhtmlx.com/xo6y6xi6)
 
-**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
+**Related sample**: [Tree. Setting Tree state](https://snippet.dhtmlx.com/g0539az1)
 
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
@@ -220,7 +218,7 @@ It is possible to add more items into the initialized Tree on the fly. Use the *
 tree.data.add({"value": "Life"}, -1, "Magazines");
 ~~~
 
-**Related sample**: [Tree. Adding Data](https://snippet.dhtmlx.com/hugcdfo9)
+**Related sample**: [Tree. Adding and removing items](https://snippet.dhtmlx.com/k0os4lk2)
 
 ### Updating Tree items
 
@@ -245,7 +243,7 @@ For example, you can change the value of an item:
 tree.data.update("item_id", {value: "New value"});
 ~~~
 
-**Related sample**: [Tree. Data Update](https://snippet.dhtmlx.com/e0vgry6n)
+**Related sample**: [Tree. Data update](https://snippet.dhtmlx.com/e0vgry6n)
 
 ### Removing items from Tree
 
@@ -255,6 +253,6 @@ To remove an item, make use of the **remove()** method of Tree Collection. Pass 
 tree.data.remove("id");
 ~~~
 
-**Related sample**: [Tree. Delete Data](https://snippet.dhtmlx.com/efy72vz8)
+**Related sample**: [Tree. Adding and removing items](https://snippet.dhtmlx.com/k0os4lk2)
 
 {{note Check the full list of [Tree collection API](tree_collection.md).}}

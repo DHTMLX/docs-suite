@@ -22,7 +22,7 @@ tree.setState(treeState);
 
 @descr:
 
-**Related sample**: [Tree. Setting Tree State](https://snippet.dhtmlx.com/g0539az1)
+**Related sample**: [Tree. Setting Tree state](https://snippet.dhtmlx.com/g0539az1)
 
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 

@@ -19,7 +19,7 @@ In order to enable checkboxes for items, make use of the [](tree/api/tree_checkb
 var tree = new dhx.Tree("tree_container", {checkbox: true});
 ~~~
 
-**Related sample**: [Tree. Checkboxes For Items](https://snippet.dhtmlx.com/hgsivvpb)
+**Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
 
 ## Editing of items
 
@@ -31,7 +31,7 @@ It is possible to enable editing of the text of Tree items before initialization
 var tree = new dhx.Tree("tree_container", {editable: true});
 ~~~
 
-**Related sample**: [Tree. Editable](https://snippet.dhtmlx.com/re4h88w7)
+**Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
 
 ## Key navigation
 
@@ -64,13 +64,13 @@ After that you need to select any item and then apply Arrow keys:
     </tbody>
 </table>
 
-**Related sample**: [Tree. Key Navigation](https://snippet.dhtmlx.com/icql8fwq)
+**Related sample**: [Tree. Key navigation](https://snippet.dhtmlx.com/icql8fwq)
 
 ## Selection of items
 
 ![](../assets/tree/disable_selection.png)
 
-**Related sample**: [Tree. Disable Selection](https://snippet.dhtmlx.com/2x9htpke)
+**Related sample**: [Tree. Disable selection](https://snippet.dhtmlx.com/2x9htpke)
 
 The default configuration of Tree provides you with the selection feature that allows highlighting a Tree item. To disable selection in a Tree you need to set the [](tree/api/tree_selection_config.md) configuration property to *false*:
 
