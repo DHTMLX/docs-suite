@@ -19,6 +19,6 @@ dhxWindow.show();
 
 @descr:
 
-**Related sample**: [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
+**Related sample**: [Window. Custom buttons](https://snippet.dhtmlx.com/o7xlvvv3)
 
 By default a header is initialized with no controls. To add a control into the header, follow the instructions given in the [Customization](window/customization.md#controls-and-operations) article.

@@ -21,7 +21,7 @@ dhxWindow.show();
 
 @descr:
 
-**Related sample**: [Window. Viewport Overflow](https://snippet.dhtmlx.com/qfhdlzri)
+**Related sample**: [Window. Viewport overflow](https://snippet.dhtmlx.com/qfhdlzri)
 
 {{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
 

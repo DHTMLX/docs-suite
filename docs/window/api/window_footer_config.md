@@ -20,8 +20,8 @@ dhxWindow.show();
 @descr:
 
 **Related samples**:
-- [Window. Custom Buttons](https://snippet.dhtmlx.com/o7xlvvv3)
-- [Window. Window With Footer](https://snippet.dhtmlx.com/qu5j85ag)
+- [Window. Custom buttons](https://snippet.dhtmlx.com/o7xlvvv3)
+- [Window. Window with footer](https://snippet.dhtmlx.com/qu5j85ag)
 
 By default a footer is initialized with no controls. To add a control into the footer, follow the instructions given in the [Customization](window/customization.md#controls-and-operations) article.
 

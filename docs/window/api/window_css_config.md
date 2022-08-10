@@ -20,7 +20,7 @@ dhxWindow.show();
 
 @descr:
 
-**Related sample**: [Window. Custom Styles](https://snippet.dhtmlx.com/t5mvhwx8)
+**Related sample**: [Window. Styling (custom CSS)](https://snippet.dhtmlx.com/t5mvhwx8)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Window:
 

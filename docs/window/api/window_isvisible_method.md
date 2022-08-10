@@ -18,7 +18,7 @@ dhxWindow.isVisible(); // -> true/false
 
 @descr:
 
-**Related sample**: [Window. Get Window Visible Status](https://snippet.dhtmlx.com/woz5c09h)
+**Related sample**: [Window. Get Window visible status](https://snippet.dhtmlx.com/woz5c09h)
 
 @changelog: added in v6.1
 

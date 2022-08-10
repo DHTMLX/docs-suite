@@ -15,7 +15,7 @@ dhxWindow.hide();
 
 @descr:
 
-**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
+**Related sample**: [Window. Showing / hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
 [comment]: # (@relatedapi: window/api/window_show_method.md)
 
