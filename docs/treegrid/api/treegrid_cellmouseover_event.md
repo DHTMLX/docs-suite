@@ -22,4 +22,4 @@ grid.events.on("cellMouseOver", function(row,column,e){
 
 @descr:
 
-**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)

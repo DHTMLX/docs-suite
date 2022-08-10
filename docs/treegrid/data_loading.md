@@ -69,7 +69,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-**Related sample**: [TreeGrid. Basic initialization](https://snippet.dhtmlx.com/kob9385v)
+**Related sample**: [TreeGrid. Initialization with config.data](https://snippet.dhtmlx.com/kob9385v)
 
 ## External data loading
 
@@ -80,7 +80,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 treegrid.data.load("../common/dataset.json");
 ~~~
 
-**Related sample**: [TreeGrid.  External data loading](https://snippet.dhtmlx.com/44rmxlmq)
+**Related sample**: [TreeGrid. Initialization with data.load()](https://snippet.dhtmlx.com/44rmxlmq)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 

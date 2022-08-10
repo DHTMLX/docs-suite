@@ -39,7 +39,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
+**Related sample**: [TreeGrid. Handling events in template](https://snippet.dhtmlx.com/la7u1xqy)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 

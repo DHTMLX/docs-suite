@@ -26,7 +26,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Spans Cells](https://snippet.dhtmlx.com/o62liqew)
+**Related sample**: [TreeGrid. Span cells](https://snippet.dhtmlx.com/o62liqew)
 
 Each object in the spans array contains the following properties:
 

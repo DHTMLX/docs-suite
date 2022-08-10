@@ -20,4 +20,4 @@ grid.events.on("scroll", function({top,left}){
 
 @descr:
 
-**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)

@@ -18,7 +18,7 @@ grid.showColumn(col);
 
 @descr:
 
-**Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
+**Related sample**: [TreeGrid. Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
 
 @changelog: added in v6.3
 

@@ -22,7 +22,7 @@ var grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Rows Height](https://snippet.dhtmlx.com/xl0i3yof)
+**Related sample**: [TreeGrid. Rows height](https://snippet.dhtmlx.com/xl0i3yof)
 
 The height of the header is calculated as a sum of all row heights in it.
 

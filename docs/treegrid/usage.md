@@ -88,7 +88,7 @@ var countryFilter = treegrid.getHeaderFilter("name");
 countryFilter.blur();
 ~~~
 
-**Related sample**: [TreeGrid. Get Header Filter](https://snippet.dhtmlx.com/vg5o912t)
+**Related sample**: [TreeGrid. Get header filter](https://snippet.dhtmlx.com/vg5o912t)
 
 The method returns either an HTML object or an object with Combobox configuration.
 
@@ -103,7 +103,7 @@ treegrid.showColumn(col);
 treegrid.hideColumn(col);
 ~~~
 
-**Related sample**: [TreeGrid. Show/Hide column](https://snippet.dhtmlx.com/1gekn97m)
+**Related sample**: [TreeGrid. Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
 
 Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
 
@@ -128,7 +128,7 @@ treegrid.showRow(rowId);
 treegrid.hideRow(rowId);
 ~~~
 
-**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
 
 ## Checking visibility of a row
 
@@ -138,7 +138,7 @@ You can check whether a row is hidden or shown on a page using the [](treegrid/a
 treegrid.isRowHidden("1"); // -> true|false
 ~~~
 
-**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
 
 ## Adding/removing a row
 
@@ -271,7 +271,7 @@ It is also possible to scroll treegrid content to a particular cell. Pass the id
 treegrid.scrollTo("15","c");
 ~~~
 
-**Related sample**: [TreeGrid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/kxytdnvi)
+**Related sample**: [TreeGrid. Controlling scroll behavior](https://snippet.dhtmlx.com/kxytdnvi)
 
 ### Getting the state of scroll
 
@@ -380,7 +380,7 @@ treegrid.data.filter({
 });
 ~~~
 
-**Related sample**: [TreeGrid. Basic Filter](https://snippet.dhtmlx.com/epsslwcd)
+**Related sample**: [TreeGrid. Filter](https://snippet.dhtmlx.com/epsslwcd)
 
 **Related sample**: [TreeGrid. External filter](https://snippet.dhtmlx.com/zdecovib)
 
@@ -414,7 +414,7 @@ treeGrid.data.sort({
 });
 ~~~
 
-**Related sample**: [TreeGrid. Sorting data](https://snippet.dhtmlx.com/bvfnpvwv)
+**Related sample**: [TreeGrid. Sorting](https://snippet.dhtmlx.com/bvfnpvwv)
 
 To discard all applied sorting rules, call the method without parameters:
 
@@ -484,7 +484,7 @@ For example, you can edit the first cell of the "project" column like this:
 treegrid.editCell(grid.data.getId(0),"project");
 ~~~
 
-**Related sample**: [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
+**Related sample**: [TreeGrid. Edit first cell](https://snippet.dhtmlx.com/zm6wh1ss)
 
 To finish editing of a cell, use the [](treegrid/api/treegrid_editend_method.md) method. The method takes a *boolean* value as a parameter to define whether the edited data will be saved after the editing of a cell is complete (if *true*, the made changes won't be saved).
 
@@ -512,7 +512,7 @@ To collapse a treegrid node, make use of the [](treegrid/api/treegrid_collapse_m
 treegrid.collapse("native");
 ~~~
 
-**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
+**Related sample**: [TreeGrid. Expand / collapse rows](https://snippet.dhtmlx.com/1grpsaa2)
 
 ### Expand/collapse all nodes
 
@@ -525,7 +525,7 @@ treegrid.expandAll();
 treegrid.collapseAll();
 ~~~
 
-**Related sample**: [TreeGrid. Expand/Collapse nodes](https://snippet.dhtmlx.com/1grpsaa2)
+**Related sample**: [TreeGrid. Expand / collapse rows](https://snippet.dhtmlx.com/1grpsaa2)
 
 ## Exporting TreeGrid
 
@@ -541,7 +541,7 @@ treegrid.export.xls({
 });
 ~~~
 
-**Related sample**: [TreeGrid. Export](https://snippet.dhtmlx.com/zyfois4q)
+**Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
 
 Export settings include:
 
@@ -596,7 +596,7 @@ treegrid.export.csv({
 });
 ~~~
 
-**Related sample**: [TreeGrid. Export](https://snippet.dhtmlx.com/zyfois4q)
+**Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
 
 The **csv()** method returns a CSV string with TreeGrid data.
 

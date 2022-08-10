@@ -23,7 +23,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Editable Data](https://snippet.dhtmlx.com/sdbfbv2n)
+**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
 
 @changelog: added in v6.4
 

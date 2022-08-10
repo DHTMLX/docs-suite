@@ -12,7 +12,7 @@ There is a possibility to make changes in the look and feel of a treegrid.
 
 ![](../assets/treegrid/custom_style.png)
 
-**Related sample**: [TreeGrid. Styling Grid](https://snippet.dhtmlx.com/cpvir0od)
+**Related sample**: [TreeGrid. Styling (custom CSS)](https://snippet.dhtmlx.com/cpvir0od)
 
 For this you need to take the following steps:
 
@@ -42,7 +42,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ![](../assets/treegrid/styling_header.png)
 
-**Related sample**: [TreeGrid. Styling Header Cells](https://snippet.dhtmlx.com/vf0ws454)
+**Related sample**: [TreeGrid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/vf0ws454)
 
 You can easily set some styling to the text of header cells by applying some inline style or a CSS class to the [text](treegrid/api/api_treegridcolumn_properties.md) property of the header of a column:
 
@@ -64,7 +64,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ![](../assets/treegrid/styling_footer.png)
 
-**Related sample**: [TreeGrid. Styling Footer Cells](https://snippet.dhtmlx.com/wi39d42e)
+**Related sample**: [TreeGrid. Styling footer cells (custom CSS)](https://snippet.dhtmlx.com/wi39d42e)
 
 You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the [text](treegrid/api/api_treegridcolumn_properties.md) property of the footer of a column:
 
@@ -107,7 +107,7 @@ It is possible to change the appearance of treegrid rows by applying custom CSS 
 
 ![](../assets/treegrid/row_css.png)
 
-**Related sample**: [TreeGrid. Custom Row Style](https://snippet.dhtmlx.com/3ojyoryn)
+**Related sample**: [TreeGrid. Custom row style](https://snippet.dhtmlx.com/3ojyoryn)
 
 There are two ways to do it:
 
@@ -146,7 +146,7 @@ var rowId = treegrid.data.getId(1);
 treegrid.addRowCss(rowId, "myCustomClass");
 ~~~
 
-**Related sample**: [TreeGrid. Add row css](https://snippet.dhtmlx.com/kort67nu)
+**Related sample**: [TreeGrid. Add row CSS](https://snippet.dhtmlx.com/kort67nu)
 
 where:
 
@@ -167,7 +167,7 @@ where:
 
 ![](../assets/treegrid/cell_css.png)
 
-**Related sample**: [TreeGrid. Add cell css](https://snippet.dhtmlx.com/smjecfzp)
+**Related sample**: [TreeGrid. Add cell CSS](https://snippet.dhtmlx.com/smjecfzp)
 
 It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegrid_addcellcss_method.md) method. It takes three parameters:
 
@@ -205,7 +205,7 @@ treegrid.addCellCss(rowId, "name", "myCustomClass");
 
 ![](../assets/treegrid/mark_cell.png)
 
-**Related sample**: [TreeGrid. Custom Mark Cells](https://snippet.dhtmlx.com/14jkc5s3)
+**Related sample**: [TreeGrid. Custom mark cells](https://snippet.dhtmlx.com/14jkc5s3)
 
 You can mark particular cells in a treegrid using the **mark** property of a column configuration. You need to set its value as a function that takes the following parameters:
 
@@ -325,7 +325,7 @@ var treegrid = new dhx.TreeGrid("treegrid", {
 
 ![](../assets/treegrid/min_max_mark.png)
 
-**Related sample**: [TreeGrid. Mark Cells](https://snippet.dhtmlx.com/um9mjrs5)
+**Related sample**: [TreeGrid. Mark cells](https://snippet.dhtmlx.com/um9mjrs5)
 
 ## Adding template to cells
 
@@ -401,7 +401,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-**Related sample**: [TreeGrid. Handling Events in Template](https://snippet.dhtmlx.com/la7u1xqy)
+**Related sample**: [TreeGrid. Handling events in template](https://snippet.dhtmlx.com/la7u1xqy)
 
 ## Adding template to tooltip
 

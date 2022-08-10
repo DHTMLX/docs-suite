@@ -22,7 +22,7 @@ treeGrid.data.filter({
 
 @descr:
 
-**Related sample**: [TreeGrid. Basic Filter](https://snippet.dhtmlx.com/epsslwcd)
+**Related sample**: [TreeGrid. Filter](https://snippet.dhtmlx.com/epsslwcd)
 
 Calling the **filter()** method without parameters reverts the component to the initial state:
 

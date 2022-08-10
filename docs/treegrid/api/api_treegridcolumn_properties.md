@@ -52,7 +52,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
         <tr>
 			<td><a href="../../configuration#html-content-of-treegrid-columns"><b>htmlEnable</b></a></td>
 			<td>(<i>boolean</i>) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iubccmoi" target="_blank">TreeGrid. Html In Data</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/iubccmoi" target="_blank">TreeGrid. HTML in data</a>
 			</td>
 		</tr>
         <tr>
@@ -77,13 +77,13 @@ description: You can explore the Column properties of TreeGrid in the documentat
         <tr>
 			<td><b>maxWidth</b></td>
 			<td>(<i>number</i>) the maximal width to be set for a column <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/pyrloz7y" target="_blank">TreeGrid. Max Width</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/pyrloz7y" target="_blank">TreeGrid. Columns max width</a>
 			</td>
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
 			<td>(<i>number</i>) the minimum width to be set for a column. The minimum width of a column is 20px. <br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cpgjyoxn" target="_blank">TreeGrid. Min Width</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/cpgjyoxn" target="_blank">TreeGrid. Columns min width</a>
 			</td>
 		</tr>
         <tr>
