@@ -22,7 +22,7 @@ var item = component.data.getItem(123);
 
 @descr:
 
-**Related sample**: [Data. Get Item](https://snippet.dhtmlx.com/wz2sscrm)
+**Related sample**: [Data. Get item](https://snippet.dhtmlx.com/wz2sscrm)
 
 You can access the original properties of an item like this:
 
