@@ -13,7 +13,7 @@ description: You can explore the thisMonthOnly config of Calendar in the documen
 @default: false
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
    thisMonthOnly:true
 });
 

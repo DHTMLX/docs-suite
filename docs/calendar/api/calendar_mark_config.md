@@ -17,7 +17,7 @@ description: You can explore the mark config of Calendar in the documentation of
     }
 </style>
 
-var calendar = new dhx.Calendar("calendar", {
+const calendar = new dhx.Calendar("calendar", {
     mark: function(date) {
         if (date.getDay() === 6) {
             return "highlight-date";

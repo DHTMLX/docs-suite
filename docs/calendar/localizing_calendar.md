@@ -56,7 +56,7 @@ var de = {
 
 ~~~js
 dhx.i18n.setLocale("calendar", de);
-var calendar = new dhx.Calendar("calendar_container");
+const calendar = new dhx.Calendar("calendar_container");
 ~~~
 
 **Related sample**: [Calendar. Localization](https://snippet.dhtmlx.com/tn40a0w8)

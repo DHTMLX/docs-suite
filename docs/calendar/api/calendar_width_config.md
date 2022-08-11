@@ -13,7 +13,7 @@ description: You can explore the width config of Calendar in the documentation o
 @default: "250px"
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
    width: "300px"
 });
 

@@ -6,9 +6,9 @@ description: You can explore the initialization of Chart in the documentation of
 
 # Initialization
 
-To initialize dhtmlxChart in an application, you need to take the following steps:
+To initialize DHTMLX Chart in an application, you need to take the following steps:
 
-- [Download the dhtmlxChart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
+- [Download the DHTMLX Chart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Chart](#initialize-chart) with the object constructor
@@ -18,15 +18,15 @@ To initialize dhtmlxChart in an application, you need to take the following step
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxChart</title>         
+        <title>How to start with DHTMLX Chart</title>         
         <script type="text/javascript" src="../../codebase/chart.js"></script>
         <link rel="stylesheet" href="../../codebase/chart.css">
     </head>
     <body>
     	<div id="chart_container"></div>
         <script>
-            // creating dhtmlxChart 
-            var chart = new dhx.Chart("chart_container", {
+            // creating Chart 
+            const chart = new dhx.Chart("chart_container", {
     			type: "bar",
 				scales: {
 					"bottom" : {
@@ -52,28 +52,28 @@ To initialize dhtmlxChart in an application, you need to take the following step
 </html>
 ~~~
 
-**Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of dhtmlxChart into the header of the created file. The Chart component can be used standalone or as a part of the Suite library.
+[Download the DHTMLX Chart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project.
 
-**If you use dhtmlxChart standalone**, you need to include 2 files:
+Create an HTML file and place full paths to JS and CSS files of DHTMLX Chart into the header of the created file. The Chart component can be used standalone or as a part of the Suite library.
+
+**If you use DHTMLX Chart standalone**, you need to include 2 files:
 
 - chart.js
 - chart.css
 
-~~~html
+~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/chart.js"></script>
 <link rel="stylesheet" href="../../codebase/chart.css">
 ~~~
 
-**If you use dhtmlxChart as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
+**If you use DHTMLX Chart as a part of the Suite package**, you need to include JS/CSS files of the DHTMLX Suite library:
 
 - suite.js
 - suite.css
 
-~~~html
+~~~html title="index.html"
 <link type="text/css" href="../codebase/suite.css">
 <script src="../codebase/suite.js" type="text/javascript"></script>
 ~~~
@@ -82,19 +82,19 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxChart into
 
 Add a container for Chart and give it an id, "chart_container", for example: 
 
-``` html title="index.html"
+~~~html title="index.html"
 <div id="chart_container"></div>
-```
+~~~
 
 ## Initialize Chart
 
 Initialize Chart with the `dhx.Chart` object constructor. The constructor has two parameters:
 
 - a container to place a Chart into. You've defined it at the previous step.
-- an object with configuration properties
+- an object with configuration properties. [See the full list of properties here](chart/api/api_overview.md#properties)
 
-~~~js
-var config = {
+~~~js title="index.js"
+const config = {
 	type: "bar",
     scales: {
     	"bottom" : {
@@ -116,58 +116,17 @@ var config = {
     ]
 };
 
-var chart = new dhx.Chart("chart_container", config);
+const chart = new dhx.Chart("chart_container", config);
 ~~~
 
 ### Configuration properties
 
-See the full list of all available configuration properties of Chart in the [Chart API overview](chart/api/api_overview.md#properties) article.
+See the full list of Chart configuration properties in the [Chart API overview](chart/api/api_overview.md#properties) article.
 
 ## Load data into Chart
 
-Finally, you are to load the chart with data. You can load inline or external data into the chart.
+Detailed information on how to load data into DHTMLX Chart is given in the [Data loading](chart/data_loading.md) article.
 
-- to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
+## Example
 
-~~~js
-var data = [
-	 { month: '\'02', 'company A': 20, 'company B': 52, 'company C': 72},
-     { month: '\'03', 'company A': 55, 'company B': 33, 'company C': 90},
-     { month: '\'04', 'company A': 40, 'company B': 30, 'company C': 81},
-     { month: '\'05', 'company A': 80, 'company B': 11, 'company C': 62},
-     { month: '\'06', 'company A': 60, 'company B': 14, 'company C': 68},
-     // more data items
-];
-
-var chart = new dhx.Chart("chart_container",{
-	type: "bar",
-    scales: { // scales config }
-    series: [
-    	{
-    		//series config					
-    	}
-    ]
-});
-
-chart.data.parse(data);
-~~~
-
-**Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
-
-- to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
-
-~~~js
-var chart = new dhx.Chart( "chart_container",{
-	type: "bar",
-    scales: { // scales config }
-    series: [
-    	{
-    		//series config					
-    	}
-    ]
-});
-
-chart.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [Chart. Load data](https://snippet.dhtmlx.com/qah8exx2)
+<iframe src="https://snippet.dhtmlx.com/id9nbujd?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

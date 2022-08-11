@@ -71,7 +71,7 @@ It is possible to iterate over chart series using the [](chart/api/chart_eachser
 Pass an array with series objects as a parameter of the handler function:
 
 ~~~js
-var chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart", {
     type: "radar",
     scales: {
         radial:{
@@ -133,7 +133,7 @@ var config = {
 	]
 };
 
-var chart = new dhx.Chart("chart", config);
+const chart = new dhx.Chart("chart", config);
 chart.data.parse([
 	{
 		value: Math.random() * 100,

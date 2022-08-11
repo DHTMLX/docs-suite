@@ -13,7 +13,7 @@ description: You can explore the weekNumbers config of Calendar in the documenta
 @default: false
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", { 
+const calendar = new dhx.Calendar("calendar_container", { 
     weekNumbers: true
 });
 

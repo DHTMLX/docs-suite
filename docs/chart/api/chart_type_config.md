@@ -11,7 +11,7 @@ description: You can explore the type config of Chart in the documentation of th
 @signature: {'type?: ChartType;'}
 
 @example:
-var chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container",{
     type:"line" 
 });
 

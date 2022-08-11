@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](chart/api/chart_css_config.md) property in the Chart configuration:
 
 ~~~js
-var chart = new dhx.Chart({
+const chart = new dhx.Chart({
     css:"my_first_class my_second_class"
 });
 ~~~

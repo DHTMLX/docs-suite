@@ -15,7 +15,7 @@ description: You can explore the mode config of Calendar in the documentation of
 @default: "calendar"
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     mode: "month"
 });
 

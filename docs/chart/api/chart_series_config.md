@@ -11,7 +11,7 @@ description: You can explore the series config of Chart in the documentation of 
 @signature: {'series?: SeriaConfig[];'}
 
 @example:
-var chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container",{
     type:"bar",
     scales: {
         "bottom" : {

@@ -12,33 +12,33 @@ description: You can explore the value config of Calendar in the documentation o
 
 @example:
 // selects a date
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: new Date(2019,01,10)
 });
 
 // selects a date as an array of Date value
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: [new Date(2019,01,10)]
 });
 
 // selects a date as a string
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: ("10/02/19")
 });
 
 // selects a date as an array of string value
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: (["10/02/19"])
 });
 
 // selects dates as an array of Date values(for the range mode)
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: ([new Date(2019,05,03), new Date(2019,05,19)]),
     range: true  
 });
 
 // selects dates as an array of string values(for the range mode)
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: (["03/06/19", "15/06/19"]),
     range: true  
 });

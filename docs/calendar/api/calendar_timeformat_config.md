@@ -13,7 +13,7 @@ description: You can explore the timeFormat config of Calendar in the documentat
 @default: 24
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     timePicker: true,
     timeFormat: 12
 });

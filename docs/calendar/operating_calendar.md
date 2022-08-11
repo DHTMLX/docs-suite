@@ -48,7 +48,7 @@ For example, Calendar can be attached to an input, a click on which will show Ca
 ~~~
 
 ~~~js
-var calendar = new dhx.Calendar("calendar_container");
+const calendar = new dhx.Calendar("calendar_container");
 function showCalendar(){
 	calendar.showDate(new Date(11,11,11),"month");
 };
@@ -102,7 +102,7 @@ second calendar.
 Use the [](calendar/api/calendar_link_method.md) method and pass as a parameter the object of the second calendar to link the first calendar to. In the example below the [Change](calendar/api/calendar_change_event.md) event is intended to output the start and end dates of the selected range:
 
 ~~~js
-var calendar = new dhx.Calendar("calendar1", { css: "dhx_calendar--bordered" });
+const calendar = new dhx.Calendar("calendar1", { css: "dhx_calendar--bordered" });
 var calendar2 = new dhx.Calendar("calendar2", { css: "dhx_calendar--bordered" });
 
 calendar.link(calendar2);

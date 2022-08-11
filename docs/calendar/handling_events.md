@@ -24,7 +24,7 @@ For example, Calendar can be attached to an input that will display the date sel
 ~~~
 
 ~~~js
-var calendar = new dhx.Calendar("calendar_container");
+const calendar = new dhx.Calendar("calendar_container");
 calendar.events.on("change",(date)=>{ 
     document.getElementById("date").value = date.getFullYear() +
         "-" + (date.getMonth() + 1) + "-" +date.getDate();

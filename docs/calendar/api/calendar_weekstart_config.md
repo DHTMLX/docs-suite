@@ -13,7 +13,7 @@ description: You can explore the weekStart config of Calendar in the documentati
 @default: "sunday"
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     weekStart:"monday"
 });
 
