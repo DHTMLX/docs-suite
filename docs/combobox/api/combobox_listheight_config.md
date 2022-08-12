@@ -13,7 +13,7 @@ description: You can explore the listHeight config of Combo Box in the documenta
 @default: 224
 
 @example:
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
     listHeight:50
 });
 

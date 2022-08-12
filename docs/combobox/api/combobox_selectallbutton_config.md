@@ -11,7 +11,7 @@ description: You can explore the selectAllButton config of Combo Box in the docu
 @signature: {'selectAllButton?: boolean;'}
 
 @example:
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     // enables multiple selection of options
     multiselection:true,
     // shows the Select All button

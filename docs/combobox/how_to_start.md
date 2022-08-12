@@ -6,9 +6,9 @@ description: You can explore the initialization of Combo Box in the documentatio
 
 # Initialization
 
-This article gives you detailed instructions on how to create dhtmlxCombo on a page. Follow the steps below:
+This article gives you detailed instructions on how to create DHTMLX Combo on a page. Follow the steps below:
 
-- [Download the dhtmlxComboBox package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
+- [Download the DHTMLX Suite package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize ComboBox](#initialize-combobox) with the object constructor
@@ -18,26 +18,26 @@ This article gives you detailed instructions on how to create dhtmlxCombo on a p
 <!DOCTYPE html>
 <html>
 	<head>
-    	<title>How to Start with dhtmlxComboBox</title>
+    	<title>How to start with DHTMLX ComboBox</title>
 		<link rel="stylesheet" type="text/css" href="/codebase/suite.css">
         <script type="text/javascript" src="/codebase/suite.js"></script>
    </head>
    <body>
         <div id="combo_container"></div>
         <script>            
-            var combo = new dhx.Combobox("combo_container", {
-                // configuration
+            const combo = new dhx.Combobox("combo_container", {
+                // configuration properties
             });
         </script>
     </body>
 </html>
 ~~~
 
-**Related sample**: [Combobox. Initialization with config.data](https://snippet.dhtmlx.com/8bsb9dji)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+[Download the DHTMLX Suite package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project.
+
+Create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -51,21 +51,22 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 
 Add a container for ComboBox and give it an id, for example "combo_container":
 
-
 ~~~html title="index.html"
 <div id="combo_container"></div>
 ~~~
 
 ## Initialize ComboBox
 
-To initialize dhtmlxComboBox, you should use the `dhx.Combobox` constructor. The constructor function takes two parameters:
+To initialize DHTMLX ComboBox, you should use the `dhx.Combobox` constructor. The constructor function takes two parameters:
 
 - a container to place a Combo Box into. The one we have created at the previous step.
 - an object with configuration properties. See the full list below.
 
-~~~js
-var combo = new dhx.Combobox("combo_container", {
-    // config options
+~~~js title="index.js"
+const combo = new dhx.Combobox("combo_container", {
+    label: "Countries:", 
+    placeholder: "Сlick to select",
+    // more config options
 });
 ~~~
 
@@ -75,41 +76,8 @@ See the detailed description of Combo configuration options in the [Combobox API
 
 ## Load data into ComboBox
 
-There are two handy ways of loading data, i.e. a set of options into ComboBox:
+Detailed information on how to load data into ComboBox is given in the [](combobox/adding_options.md) article.
 
-- from an external file with the help of the [load()](data_collection/api/datacollection_load_method.md) method of Data collection:
+## Example
 
-~~~js
-var combo = new dhx.Combobox("combo_container");
-combo.data.load("../common/dataset.json");
-~~~
-
-- from a local source using the [parse()](data_collection/api/datacollection_parse_method.md) method of Data collection:
-
-~~~js
-var countries = [
-    {
-        value: "Austria",
-        src: "../common/flags/at.png"
-    },
-    {
-        value: "Belgium",
-        src: "../common/flags/be.png"
-    },
-    {
-        value: "Bulgaria",
-        src: "../common/flags/bg.png"
-    },
-    {
-        value: "Cyprus",
-        src: "../common/flags/cy.png"
-    }
-]
-
-var combo = new dhx.Combobox("combo_container");
-combo.data.parse(countries);
-~~~
-
-**Related sample**: [Combobox. Initialization with data.parse()](https://snippet.dhtmlx.com/d2y5yf46)
-
-Detailed information on loading data into ComboBox is given in the [](combobox/adding_options.md) article .
+<iframe src="https://snippet.dhtmlx.com/8bsb9dji?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

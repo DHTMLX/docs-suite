@@ -44,7 +44,7 @@ Create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite
 - *suite.js*
 - *suite.css*
 
-~~~html
+~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/suite.js"></script>
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
@@ -63,7 +63,7 @@ In this case you need to add a container for Colorpicker and give it an id, for 
 
 and initialize Colorpicker with the `dhx.Colorpicker` object constructor like this:
 
-~~~js
+~~~js title="index.js"
 // creating ColorPicker
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
     css: "dhx_widget--bordered",

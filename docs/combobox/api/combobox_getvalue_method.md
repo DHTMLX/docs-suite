@@ -17,15 +17,15 @@ description: You can explore the getValue method of Combo Box in the documentati
 A string, number, or array that contains id(s) of options selected in ComboBox.
 
 @example:
-var id = combo.getValue();
+const id = combo.getValue();
 // -> "u1556098582074"
  
 // returns ids of selected options as strings
-var ids = combo.getValue();
+const ids = combo.getValue();
 // -> "u1556097609214,u1556097609228,u1556097609244"
  
 // returns ids of selected options as an array of strings
-var array_ids = combo.getValue(true);
+const array_ids = combo.getValue(true);
 // -> ["u1556097609214", "u1556097609228", "u1556097609244"]
 
 @descr:

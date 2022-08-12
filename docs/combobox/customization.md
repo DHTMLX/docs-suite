@@ -29,15 +29,15 @@ and should return *true/false* to specify whether an item should be displayed in
 
 ~~~js
 function fuzzySearch(item, target) {
-	var source = item.value.toLowerCase();
+	const source = item.value.toLowerCase();
     target = target.toLowerCase();
-    var sourceLen = source.length;
-    var targetLen = target.length;
+    const sourceLen = source.length;
+    const targetLen = target.length;
     if (targetLen > sourceLen) {
     	return false;
     }
-    var sourceIndex = 0;
-    var targetIndex = 0;
+    let sourceIndex = 0;
+    let targetIndex = 0;
     while (sourceIndex < sourceLen && targetIndex < targetLen) {
     	if (source[sourceIndex] === target[targetIndex]) {
     		targetIndex++;
@@ -47,7 +47,7 @@ function fuzzySearch(item, target) {
     return targetIndex === targetLen;
 }
 
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
 	filter: fuzzySearch
 });
 ~~~
@@ -80,7 +80,7 @@ There is a possibility to make changes in the look and feel of a combo box. For 
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](combobox/api/combobox_css_config.md) property in the ComboBox configuration:
 
 ~~~js
-var combo = new dhx.Combobox({
+const combo = new dhx.Combobox("combo_container", {
     css:"my_first_class my_second_class"
 });
 ~~~

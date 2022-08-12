@@ -8,17 +8,17 @@ description: You can explore the data loading of Combo Box in the documentation 
 
 There are several ways of loading Combo options:
 
-- from an external file
-- from a local data source
+- on initialization of ComboBox
+- after initialization of ComboBox
 
 First, you need to prepare a data set that will be loaded into Combo.
 
 ## Preparing data set
 
-dhtmlxCombo expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Combo expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
     {
         value: "Austria",
         src: "../common/flags/at.png"
@@ -41,14 +41,33 @@ var dataset = [
 Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. 
 You can specify your own template of rendering Combo options with the help of the [template](combobox/api/combobox_template_config.md) configuration option.
 
-{{note Note that **value** is a mandatory property for a dataset item and **src** is a reserved one.}}
+{{note Note, that **value** is a mandatory property for a dataset item and **src** is a reserved one.}}
 
-## External data loading
+## Loading data on initialization
 
-To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
+You can load [a predefined data set](#preparing-data-set) into Combobox on the initialization stage. Use the [data](combobox/api/combobox_data_config.md) configuration property, as in:
 
 ~~~js
-var combo = new dhx.Combo("combo_container");
+const combo = new dhx.Combobox("combo_container",{
+    data: dataset
+});
+~~~
+
+**Related sample**: [Combobox. Initialization with config.data](https://snippet.dhtmlx.com/8bsb9dji)
+
+## Loading data after initialization
+
+There are two ways to load data into Combobox after its initialization:
+
+- [via the **load()** method of DataCollection](#external-data-loading)
+- [via the **parse()** method of DataCollection](#loading-from-local-source)
+
+### External data loading
+
+To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
+
+~~~js
+const combo = new dhx.Combo("combo_container");
 combo.data.load("../common/dataset.json");
 ~~~
 
@@ -64,12 +83,12 @@ combo.data.load("/some/data").then(function(){
 });
 ~~~
 
-## Loading from local source
+### Loading from local source
 
-To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var combo = new dhx.Combo("combo_container");
+const combo = new dhx.Combo("combo_container");
 combo.data.parse(dataset);
 ~~~
 
@@ -81,14 +100,14 @@ To save the current state of a combo box, use the **serialize()** method of [Dat
 Each JSON object contains a set of *key:value* pairs that represent attributes of ComboBox options.
 
 ~~~js
-var state = combo1.data.serialize();
+const state = combo1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different combo box. For example:
 
 ~~~js
 // creating a new combo
-var combo2 = new dhx.Combo(document.body);
+const combo2 = new dhx.Combo(document.body);
 // parsing the state of combo1 into combo2
 combo2.data.parse(state);
 ~~~

@@ -11,7 +11,7 @@ description: You can explore the itemsCount config of Combo Box in the documenta
 @signature: {'itemsCount?: boolean | ((count: number) => string);'}
 
 @example:
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     multiselection: true,
     itemsCount: function (num) {
         return num + (num === 1 ? " item" : " items") + " selected";

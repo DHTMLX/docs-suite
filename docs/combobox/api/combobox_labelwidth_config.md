@@ -11,7 +11,7 @@ description: You can explore the labelWidth config of Combo Box in the documenta
 @signature: {'labelWidth?: string | number;'}
 
 @example:
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     labelWidth:100
 });
 

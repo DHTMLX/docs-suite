@@ -11,7 +11,7 @@ description: You can explore the configuration of Combo Box in the documentation
 There is an option that allows making ComboBox disabled and blocks any operations with it. Use the [](combobox/api/combobox_disabled_config.md) configuration property to enter the described mode.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container", {
 	disabled: true
 });
 ~~~
@@ -22,11 +22,11 @@ var combo = new dhx.Combobox("combo_container",{
 
 ## Dynamic rendering of options
 
-When you load a list of options into ComboBox, all items are loaded at once. In case you have a large data collection, it is suitable to render data by portions. dhtmlxComboBox provides you with such an ability.
+When you load a list of options into ComboBox, all items are loaded at once. In case you have a large data collection, it is suitable to render data by portions. DHTMLX ComboBox provides you with such an ability.
 Use the [](combobox/api/combobox_virtual_config.md) property to render options in the ComboBox list dynamically on scrolling the list.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container", {
 	virtual:true
 });
 ~~~
@@ -42,7 +42,7 @@ var combo = new dhx.Combobox("combo_container",{
 There are two useful options to adjust the height of the list of options and the height of a separate item of this list: [](combobox/api/combobox_listheight_config.md) and [](combobox/api/combobox_itemheight_config.md):
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container", {
 	listHeight:300,
 	itemHeight:50
 });
@@ -54,7 +54,7 @@ While using Combo in a form, it is useful to add some info about options that ca
 Set the necessary tip for users as a value of the property.
 
 ~~~js
-var combobox = new dhx.Combobox("combobox",{
+const combobox = new dhx.Combobox("combo_container", {
     helpMessage:"Some text"
 });
 ~~~
@@ -64,7 +64,7 @@ var combobox = new dhx.Combobox("combobox",{
 While sending a form to the server you can add a label for a ComboBox input that won't be visible, but will be used to identify the input on the server side. Use the [](combobox/api/combobox_hiddenlabel_config.md) configuration property for this property.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
 	label:"My Combo",
 	hiddenLabel:true
 });
@@ -75,13 +75,13 @@ var combo = new dhx.Combobox("combo_container",{
 Starting from v7.0, it is possible to define the values that will appear in the input on initialization of the component via the [](combobox/api/combobox_value_config.md) property:
 
 ~~~js {3,8}
-var combobox = new dhx.Combobox("combobox", {
+const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,
     value: ["austria", "estonia"]
 });
 
 // or
-var combobox = new dhx.Combobox("combobox", {
+const combobox = new dhx.Combobox("combo_container", {
     value: "austria"
 });
 ~~~
@@ -96,7 +96,7 @@ var combobox = new dhx.Combobox("combobox", {
 You can set a label for ComboBox, adjust its width and position using the following properties: [](combobox/api/combobox_label_config.md), [](combobox/api/combobox_labelwidth_config.md) and [](combobox/api/combobox_labelposition_config.md). This is how it can be done:
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
 	label:"Label",
 	labelPosition: "left",
 	labelWidth: 100
@@ -108,7 +108,7 @@ var combo = new dhx.Combobox("combo_container",{
 or
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
 	label:"Label",
 	labelPosition: "top",
 	labelWidth: 100
@@ -135,7 +135,7 @@ or specify a custom template function to display grouped options in the desired 
 and should return a template for displaying a result.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
 	multiselection: true,
     // simply enables the option
 	itemsCount: true
@@ -143,7 +143,7 @@ var combo = new dhx.Combobox("combo_container", {
 
 // or
 
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
 	multiselection: true,
     // set a custom template function for showing total number of selected options
 	itemsCount: function (num) {
@@ -163,7 +163,7 @@ var combo = new dhx.Combobox("combo_container", {
 To add some placeholder into the ComboBox input, apply the [](combobox/api/combobox_placeholder_config.md) property:
 
 ~~~js
-var combobox = new dhx.Combobox("combo_container",{
+const combobox = new dhx.Combobox("combo_container",{
 	placeholder: "Some placeholder"
 });
 ~~~
@@ -174,7 +174,7 @@ You may allow end users to add new items into the data collection from UI.
 You just need to enable the functionality via setting the [newOptions](combobox/api/combobox_newoptions_config.md) property to *true*:
 
 ~~~js
-const combobox = new dhx.Combobox("combobox", {
+const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,
   	newOptions: true  
 });
@@ -201,7 +201,7 @@ combobox.data.events.on("beforeAdd", item => item.value !== "new");
 If needed, you can make ComboBox readonly via the [](combobox/api/combobox_readonly_config.md) property, so that it will be impossible to enter text in the input. In this case a user will only be able to select options from the popup list.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
 	readOnly:true
 });
 ~~~
@@ -211,7 +211,7 @@ var combo = new dhx.Combobox("combo_container",{
 In order to add the possibility to select several options in ComboBox at once, make use of the [](combobox/api/combobox_multiselection_config.md) configuration option.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
 	multiselection:true
 });
 ~~~
@@ -222,7 +222,7 @@ There is the Select All button that allows selecting all options in the ComboBox
 multiple options by setting the [](combobox/api/combobox_multiselection_config.md) configuration option to *true*:
 
 ~~~js
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
 	// enables multiple selection of options
 	multiselection:true,
     // shows the Select All button
@@ -241,7 +241,7 @@ var combo = new dhx.Combobox("combo_container", {
 You can specify the appearance of ComboBox options in the list with the help of the [](combobox/api/combobox_template_config.md) property. It is a function that takes as a parameter an item of data collection and should return a string with a template for rendering options in the list.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
 	template: function (item) {
 	  return "<div style='display:inline-block'>"
 	  +"<img style='width:20px;height:20px;margin-right:10px;' src="+item.src+"></div>" 

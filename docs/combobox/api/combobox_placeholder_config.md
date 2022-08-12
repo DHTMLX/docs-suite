@@ -11,7 +11,7 @@ description: You can explore the placeholder config of Combo Box in the document
 @signature: {'placeholder?: string;'}
 
 @example:
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
     placeholder: "Some placeholder"
 });
 

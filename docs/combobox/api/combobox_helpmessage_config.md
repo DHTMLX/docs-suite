@@ -11,7 +11,7 @@ description: You can explore the helpMessage config of Combo Box in the document
 @signature: {'helpMessage?: string;'}
 
 @example:
-var combobox = new dhx.Combobox("combo_container",{
+const combobox = new dhx.Combobox("combo_container",{
 	helpMessage:"Some text"
 });
 
