@@ -11,7 +11,7 @@ description: You can explore the addOption method of Combo Box in the documentat
 @signature: addOption(value: string): void;
 
 @example:
-const combobox = new dhx.Combobox("combobox");
+const combobox = new dhx.Combobox("combo_container");
 combobox.data.parse(dataset);
 
 combobox.addOption("Georgia");

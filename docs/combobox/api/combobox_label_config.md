@@ -11,7 +11,7 @@ description: You can explore the label config of Combo Box in the documentation 
 @signature: {'label?: string;'}
 
 @example:
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     label:"Countries:"
 });
 

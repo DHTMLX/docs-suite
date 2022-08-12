@@ -11,7 +11,7 @@ description: You can explore the data config of Combo Box in the documentation o
 @signature: {'data?: DataCollection<any> | any[];'}
 
 @example:
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
     data: [
 		{
 			"value": "Austria",

@@ -6,7 +6,7 @@ description: You can explore the setValue method of Colorpicker in the documenta
 
 # setValue()
 
-@short: selects a color in ColorPicker
+@short: selects a color in Colorpicker
 
 @signature: {'setValue(value: string): void;'}
 

@@ -11,7 +11,7 @@ description: You can explore the data config of Combo Box in the documentation o
 @signature: {'newOptions?: boolean;'}
 
 @example:
-const combobox = new dhx.Combobox("combobox", {
+const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,
   	newOptions: true  
 });

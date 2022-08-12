@@ -13,7 +13,7 @@ description: You can explore the palette config of Colorpicker in the documentat
 @default: false
 
 @example:
-var colorpicker = new dhx.Colorpicker("colorpicker_container", {
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	grayShades: false,
 	palette: [
     	["#ffffc0", "#ffff9c", "#ecd078", "#a59154", "#5e5330"],
@@ -28,10 +28,10 @@ var colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 **Related sample**: [Colorpicker. Custom palette and custom colors](https://snippet.dhtmlx.com/097jjhb8)
 
-This is the **default** array of colors of the ColorPicker:
+This is the **default** array of colors of the Colorpicker:
 
 ~~~js
-var palette = [
+const palette = [
 	["#D4DAE4","#B0B8CD","#949DB1","#727A8C","#5E6677","#3F4757","#1D2534"],
 	["#FFCDD2","#FE9998","#F35C4E","#E94633","#D73C2D","#CA3626","#BB2B1A"],
 	["#F9E6AD","#F4D679","#EDB90F","#EAA100","#EA8F00","#EA7E00","#EA5D00"],

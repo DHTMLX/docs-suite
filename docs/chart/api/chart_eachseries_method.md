@@ -17,7 +17,7 @@ description: You can explore the eachSeries method of Chart in the documentation
 An array with the result of iteration.
 
 @example:
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
 	type: "radar",
 	scales: {
 		radial:{

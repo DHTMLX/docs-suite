@@ -11,7 +11,7 @@ description: You can explore the labelPosition config of Combo Box in the docume
 @signature: {'labelPosition?: "left" | "top";'}
 
 @example:
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     labelPosition:"left"
 });
 

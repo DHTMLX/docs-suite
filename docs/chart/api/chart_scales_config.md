@@ -11,7 +11,7 @@ description: You can explore the scales config of Chart in the documentation of 
 @signature: {'scales?: IScalesConfig;'}
 
 @example:
-const chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container", {
     type:"area",
     scales: {
     	"bottom" : {

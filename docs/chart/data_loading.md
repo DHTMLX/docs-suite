@@ -8,8 +8,8 @@ description: You can explore the data loading of Chart in the documentation of t
 
 There are two ways of loading data into DHTMLX Chart:
 
-- load data from an external file
-- load data from a local data source
+- on initialization of Chart
+- after initialization of Chart
 
 First, you need to prepare a data set that will be loaded into Chart.
 
@@ -114,9 +114,9 @@ const treeMapData = [
 ];
 ~~~
 
-## Adding data on Chart initialization
+## Loading data on initialization
 
-You can specify data you want to add into Chart on the initialization stage. Make use of the **data** configuration property, as in:
+You can load [a predefined data set](#preparing-data-set) into Chart on the initialization stage. Use the [data](chart/api/chart_data_config.md) configuration property, as in:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -160,9 +160,16 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
-## External data loading
+## Loading data after initialization
 
-To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
+There are two ways to load data into Chart after its initialization:
+
+- [via the **load()** method of DataCollection](#external-data-loading)
+- [via the **parse()** method of DataCollection](#loading-from-local-source)
+
+### External data loading
+
+To load data from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
@@ -192,9 +199,9 @@ chart.data.load("/some/data").then(function(){
 
 **Related sample**: [Chart. Load data](https://snippet.dhtmlx.com/qah8exx2)
 
-## Loading from local source
+### Loading from local source
 
-To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {

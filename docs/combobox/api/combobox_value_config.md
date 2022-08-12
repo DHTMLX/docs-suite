@@ -11,13 +11,13 @@ description: You can explore the value config of Combo Box in the documentation 
 @signature: {'value?: string | string[];'}
 
 @example:
-var combobox = new dhx.Combobox("combobox", {
+const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,
     value: ["austria", "estonia"]
 });
 
 // or
-var combobox = new dhx.Combobox("combobox", {
+const combobox = new dhx.Combobox("combo_container", {
     value: "austria"
 });
 

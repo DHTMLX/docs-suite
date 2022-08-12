@@ -13,7 +13,7 @@ description: You can explore the grayShades config of Colorpicker in the documen
 @default: true
 
 @example:
-var colorpicker = new dhx.Colorpicker("colorpicker_container",{
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	grayShades: false
 });
 

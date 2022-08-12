@@ -6,14 +6,14 @@ description: You can explore the paletteOnly config of Colorpicker in the docume
 
 # paletteOnly
 
-@short: defines whether ColorPicker is shown only in the palette mode
+@short: defines whether Colorpicker is shown only in the palette mode
 
 @signature: {'paletteOnly?: boolean;'}
 
 @default: false
 
 @example:
-var colorpicker = new dhx.Colorpicker("colorpicker_container",{
+const colorpicker = new dhx.Colorpicker("colorpicker_container",{
 	paletteOnly: true
 });
 

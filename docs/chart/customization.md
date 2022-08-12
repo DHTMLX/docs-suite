@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](chart/api/chart_css_config.md) property in the Chart configuration:
 
 ~~~js
-const chart = new dhx.Chart({
+const chart = new dhx.Chart("chart_container", {
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -56,7 +56,7 @@ For example:
 ~~~
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     type: "bar",
     css: "custom-class dhx_widget--bg_white dhx_widget--bordered",
     scales: {
@@ -91,7 +91,7 @@ const chart = new dhx.Chart("chart", {
 While configuring chart scales you can add a template for the labels of the scales by using the **textTemplate** configuration option of [scales](chart/configuration_properties.md#scales):
 
 ~~~js {7-9}
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     type:"line",
     css: "dhx_widget--bg_white dhx_widget--bordered",
     scales: {
@@ -122,7 +122,7 @@ const chart = new dhx.Chart("chart", {
 It is possible to define a color gradient for bars with the help of the **gradient** option of [series](chart/configuration_properties.md#series). You need to set its value as a function that takes the color of the series filling in Hex format as a parameter:
 
 ~~~js {16-31}
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     type:"bar",
     css: "dhx_widget--bg_white dhx_widget--bordered",
     scales: {
@@ -171,7 +171,7 @@ function tooltipTemplate(p) {
   return "x: " + p[1] + ", y: " + p[0];
 };
 
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     css: "dhx_widget--bg_white dhx_widget--bordered",
     scales: {
         bottom:{
@@ -207,7 +207,7 @@ const chart = new dhx.Chart("chart", {
 The **showTextTemplate** option of [series](chart/configuration_properties.md#series) lets you an opportunity to add a template to values that are shown for data items in bars:
 
 ~~~js {20-22,29-31}
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     type: "bar",
     css: "dhx_widget--bg_white dhx_widget--bordered",
     scales: {

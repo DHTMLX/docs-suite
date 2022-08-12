@@ -11,7 +11,7 @@ description: You can explore the legend config of Chart in the documentation of 
 @signature: {'legend?: ILegendConfig;'}
 
 @example:
-const chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container", {
     scales: {
     	// scales config
     },

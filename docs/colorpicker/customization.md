@@ -30,10 +30,10 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](colorpicker/api/colorpicker_css_config.md) property in the ColorPicker configuration:
+- specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](colorpicker/api/colorpicker_css_config.md) property in the Colorpicker configuration:
 
 ~~~js
-var colorpicker = new dhx.Colorpicker({
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
     css:"my-first-class my-second-class"
 });
 ~~~
@@ -60,7 +60,7 @@ For instance:
 	}
 </style>
 
-var colorpicker = new dhx.Colorpicker("colorpicker", {
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	css: "myClass dhx_widget--bordered",
 });
 ~~~

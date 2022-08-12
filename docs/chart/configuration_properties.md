@@ -18,7 +18,7 @@ DHTMLX Chart includes several configuration options that are mostly common for a
 "splineArea", "donut", "pie", "pie3D", "radar", and "treeMap"
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
 	type:"bar"
 });
 ~~~
@@ -26,7 +26,7 @@ const chart = new dhx.Chart("chart", {
 - [](chart/api/chart_scales_config.md) - (*object*) defines configuration of chart scales. [Check details below](#scales).
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
 	scales:{}
 });
 ~~~
@@ -34,7 +34,7 @@ const chart = new dhx.Chart("chart", {
 - [](chart/api/chart_series_config.md) - (*array*) defines configuration of chart series. [Check details below](#series).
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
 	series:[]
 });
 ~~~
@@ -42,7 +42,7 @@ const chart = new dhx.Chart("chart", {
 - [](chart/api/chart_legend_config.md) - (*object*) defines the configuration of a chart legend. [Check details below](#legend).
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
 	legend:{}
 });
 ~~~
@@ -50,7 +50,7 @@ const chart = new dhx.Chart("chart", {
 - [](chart/api/chart_maxpoints_config.md) - (*number*) displays an average number of values in case a data set is too large to show all the values in the chart
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
 	type:"line",
 	maxPoints:100
 });
@@ -63,7 +63,7 @@ const chart = new dhx.Chart("chart", {
 There are "left","right","top","bottom" and "radial" (for Radar chart) types of [scales](chart/api/chart_scales_config.md). 
 
 ~~~js
-const chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container", {
     type:"area",
     scales: {
     	"bottom" : {
@@ -93,7 +93,7 @@ Scales have both common and specific options. Check the full list of the availab
 [Series](chart/api/chart_series_config.md) present an array of objects each of which contains a number of properties for rendering a separate [data set](chart/data_loading.md#preparing-data-set) on a chart.
 
 ~~~js
-const chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container", {
 	type:"bar",
     scales: {
     	"bottom" : {
@@ -129,7 +129,7 @@ See the full list of configuration options for chart series in the [API referenc
 The [](chart/api/chart_legend_config.md) object may contain a number of options that define its configuration.
 
 ~~~js
-const chart = new dhx.Chart("chart_container",{
+const chart = new dhx.Chart("chart_container", {
     scales: {
     	// scales config
     },

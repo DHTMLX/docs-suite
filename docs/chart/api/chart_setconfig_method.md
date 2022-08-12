@@ -14,7 +14,7 @@ description: You can explore the setconfig method of Chart in the documentation 
 `config: object` - an object with chart configurations
 
 @example:
-var config = {
+const config = {
     type: "radar",
     scales: {
         radial:{

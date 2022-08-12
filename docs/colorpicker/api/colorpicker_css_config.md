@@ -6,7 +6,7 @@ description: You can explore the css config of Colorpicker in the documentation 
 
 # css
 
-@short: adds custom CSS classes to ColorPicker
+@short: adds custom CSS classes to Colorpicker
 
 @signature: {'css?: string;'}
 
@@ -21,7 +21,7 @@ description: You can explore the css config of Colorpicker in the documentation 
     }
 </style>
  
-var colorpicker = new dhx.Colorpicker({
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
     css:"my_first_class my_second_class"
 });
 
@@ -29,10 +29,10 @@ var colorpicker = new dhx.Colorpicker({
 
 **Related sample**: [Colorpicker. Styling (custom CSS)](https://snippet.dhtmlx.com/mnwi3sp0)
 
-Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of ColorPicker:
+Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Colorpicker:
 
 ~~~js
-var colorpicker = new dhx.Colorpicker({
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

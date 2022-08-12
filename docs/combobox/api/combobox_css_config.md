@@ -21,7 +21,7 @@ description: You can explore the css config of Combo Box in the documentation of
     }
 </style>
  
-var combo = new dhx.Combobox("combo_container", { 
+const combo = new dhx.Combobox("combo_container", { 
     css:"my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var combo = new dhx.Combobox("combo_container", {
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Combobox:
 
 ~~~js
-var combo = new dhx.Combobox({
+const combo = new dhx.Combobox("combo_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

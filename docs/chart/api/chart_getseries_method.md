@@ -17,7 +17,7 @@ description: You can explore the getSeries method of Chart in the documentation 
 An object with configuration of a series.
 
 @example:
-var config = chart.getSeries("A");
+const config = chart.getSeries("A");
 /* => 
 {
     "strokeWidth": 2, "active": true,

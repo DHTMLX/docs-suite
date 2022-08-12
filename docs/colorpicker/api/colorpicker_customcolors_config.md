@@ -6,12 +6,12 @@ description: You can explore the customColors config of Colorpicker in the docum
 
 # customColors
 
-@short: shows a section with custom colors in the bottom part of ColorPicker
+@short: shows a section with custom colors in the bottom part of Colorpicker
 
 @signature: {'customColors?: string[];'}
 
 @example:
-var colorpicker = new dhx.Colorpicker("colorpicker_container", {
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]					
 });
 

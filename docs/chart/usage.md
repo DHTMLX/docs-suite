@@ -11,7 +11,7 @@ description: You can explore how to work with Chart in the documentation of the 
 You can change configuration of Chart on the fly with the help of the [](chart/api/chart_setconfig_method.md) method. It takes as a parameter an object with updated [chart configuration](chart/configuration_properties.md).
 
 ~~~js
-var config = {
+const config = {
     type: "radar",
     scales: {
         radial:{
@@ -47,7 +47,7 @@ chart.setConfig(config);
 The Chart API gives you the possibility to get an object with the configuration of a certain series. Use the [](chart/api/chart_getseries_method.md) method for this purpose. It takes the id of a series as a parameter:
 
 ~~~js
-var config = chart.getSeries("A");
+const config = chart.getSeries("A");
 /* => 
 {
     "strokeWidth": 2, "active": true,
@@ -71,7 +71,7 @@ It is possible to iterate over chart series using the [](chart/api/chart_eachser
 Pass an array with series objects as a parameter of the handler function:
 
 ~~~js
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     type: "radar",
     scales: {
         radial:{
@@ -111,7 +111,7 @@ The API of [Data Collection](data_collection.md) allows you to perform operation
 For example, you can add more items (points) into your Chart using the [](data_collection/api/datacollection_add_method.md) method, like this:
 
 ~~~js
-var config = {
+const config = {
 	type:"line",
 	scales: {
 		"bottom" : {
@@ -133,7 +133,7 @@ var config = {
 	]
 };
 
-const chart = new dhx.Chart("chart", config);
+const chart = new dhx.Chart("chart_container", config);
 chart.data.parse([
 	{
 		value: Math.random() * 100,

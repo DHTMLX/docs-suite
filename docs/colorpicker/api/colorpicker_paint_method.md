@@ -6,7 +6,7 @@ description: You can explore the paint method of Colorpicker in the documentatio
 
 # paint()
 
-@short: repaints ColorPicker on a page
+@short: repaints Colorpicker on a page
 
 @signature: {'paint(): void;'}
 

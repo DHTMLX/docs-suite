@@ -14,7 +14,7 @@ description: You can explore the filter config of Combo Box in the documentation
 function mySearch(item, target) {
     // your filtering logic here            
 }
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     filter: mySearch
 });
 

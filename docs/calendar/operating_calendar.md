@@ -64,7 +64,7 @@ There is a possibility to get the current mode of displaying Calendar via the [g
 - timepicker
 
 ~~~js
-var mode = calendar.getCurrentMode(); // -> "calendar"
+const mode = calendar.getCurrentMode(); // -> "calendar"
 ~~~
 
 **Related sample**: [Calendar. Get current mode](https://snippet.dhtmlx.com/fadykqoc)
@@ -74,9 +74,9 @@ var mode = calendar.getCurrentMode(); // -> "calendar"
 To get the selected date, call the [](calendar/api/calendar_getvalue_method.md) method. The method returns selected date either as a string (default) or as a Date object. To get a date as an object, pass the *true* parameter to the method.
 
 ~~~js
-var date1 = calendar.getValue(); // -> "20/08/19"
+const date1 = calendar.getValue(); // -> "20/08/19"
 
-var date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300 
+const date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300 
 ~~~
 
 **Related sample**: [Calendar. Getting selected date](https://snippet.dhtmlx.com/k2vrfqj0)
@@ -85,11 +85,11 @@ If you work with a calendar in the [range mode](calendar/configuring.md#range-mo
 
 ~~~js
 // for a range calendar as an array of Date values 
-var date = calendar.getValue(true); 
+const date = calendar.getValue(true); 
 // -> [Mon Jun 03 2019 00:00:00 GMT+0300, Wed Jun 19 2019 00:00:00 GMT+0300]
 
 // for a range calendar as an array of string values 
-var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
+const date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 ~~~
 
 ## Linking two calendars
@@ -103,7 +103,7 @@ Use the [](calendar/api/calendar_link_method.md) method and pass as a parameter 
 
 ~~~js
 const calendar = new dhx.Calendar("calendar1", { css: "dhx_calendar--bordered" });
-var calendar2 = new dhx.Calendar("calendar2", { css: "dhx_calendar--bordered" });
+const calendar2 = new dhx.Calendar("calendar2", { css: "dhx_calendar--bordered" });
 
 calendar.link(calendar2);
 
@@ -163,13 +163,13 @@ You can add tooltips for dates and show them on the [](calendar/api/calendar_dat
 ![](../assets/calendar/tooltips.png)
 
 ~~~js
-var special_days = {
+const special_days = {
 	"20__8": "Mum's birthday",
 	"28__8": "Trip to Canada"
 }
 
 calendar.events.on("DateMouseOver", function(date, e) {
-	var key = date.getDate() + "__" + (date.getMonth() + 1);
+	const key = date.getDate() + "__" + (date.getMonth() + 1);
 	if (key in special_days) {
 		dhx.tooltip(special_days[key], {node: e.target, position: "bottom"});
 	}

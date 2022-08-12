@@ -13,7 +13,7 @@ description: You can explore the itemHeight config of Combo Box in the documenta
 @default: 32
 
 @example:
-var combo = new dhx.Combobox("combo_container",{
+const combo = new dhx.Combobox("combo_container",{
     itemHeight:50
 });
 

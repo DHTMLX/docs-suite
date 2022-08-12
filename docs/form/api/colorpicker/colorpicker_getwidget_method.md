@@ -6,26 +6,26 @@ description: You can explore the getWidget method of the Colorpicker control of 
 
 # getWidget()
 
-@short: returns the dhtmlxColorPicker widget attached to a ColorPicker control
+@short: returns the DHTMLX ColorPicker widget attached to a ColorPicker control
 
 @signature: {'getWidget(): Colorpicker;'}
 
 @returns:
-An object of the dhtmlxColorPicker widget.
+An object of the DHTMLX ColorPicker widget.
 
 @example:
-var colorpicker = form.getItem("colorpicker").getWidget();  
+const colorpicker = form.getItem("colorpicker").getWidget();  
 // -> dhtmlxColorPicker
 
 @descr:
 
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
-It is possible to use methods of dhtmlxColorPicker via the **getWidget()** method of a ColorPicker control.
+It is possible to use methods of DHTMLX ColorPicker via the **getWidget()** method of a ColorPicker control.
 
 For example, you can set focus on the specified value in the control. To do this, you need to get the widget attached to the ColorPicker control and then use the [setFocus()](colorpicker/api/colorpicker_setfocus_method.md) method of this widget.
 
 ~~~js
-var colorpicker = form.getItem("colorpicker").getWidget();  // -> ColorPicker
+const colorpicker = form.getItem("colorpicker").getWidget();  // -> ColorPicker
 colorpicker.setFocus("#BDF0E9"); // sets focus on the "#BDF0E9" color
 ~~~

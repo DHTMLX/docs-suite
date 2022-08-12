@@ -11,7 +11,7 @@ description: You can explore the template config of Combo Box in the documentati
 @signature: {'template?: (item: any) => string;'}
 
 @example:
-var combo = new dhx.Combobox("combo_container", {
+const combo = new dhx.Combobox("combo_container", {
     template: function (item) {
       return "<div style='display:inline-block'>"
       +"<img style='width:20px;height:20px;margin-right:10px;' src="+item.src+"></div>" 

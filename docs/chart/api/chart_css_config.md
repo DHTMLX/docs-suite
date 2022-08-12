@@ -24,7 +24,7 @@ description: You can explore the css config of Chart in the documentation of the
 	}
 </style>
 
-const chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart_container", {
     css: "custom-class",
     scales: { // scales config }
     series: [
@@ -42,7 +42,7 @@ const chart = new dhx.Chart("chart", {
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Chart:
 
 ~~~js
-const chart = new dhx.Chart({
+const chart = new dhx.Chart("chart_container", {
     css: "dhx_widget--bg_white dhx_widget--bordered"
 });
 ~~~

@@ -13,7 +13,7 @@ description: You can explore the readOnly config of Combo Box in the documentati
 @default: false
 
 @example:
-var combo = new dhx.Combobox("combo_container", { 
+const combo = new dhx.Combobox("combo_container", { 
     readOnly:true
 });
 

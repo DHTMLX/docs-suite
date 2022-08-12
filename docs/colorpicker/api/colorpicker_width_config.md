@@ -6,14 +6,14 @@ description: You can explore the width config of Colorpicker in the documentatio
 
 # width
 
-@short:  sets the width of ColorPicker
+@short:  sets the width of Colorpicker
 
 @signature: {'width?: string | number;'}
 
 @default: "238px"
 
 @example:
-var colorpicker = new dhx.Colorpicker("colorpicker", {	
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {	
 	width: "300px"				
 });
 
