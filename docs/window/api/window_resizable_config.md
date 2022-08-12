@@ -21,6 +21,6 @@ dhxWindow.show();
 
 @descr:
 
-**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 [comment]: # (@related: window/how_to_start.md window/configuration.md#resizing)

@@ -11,7 +11,7 @@ description: You can explore the date config of Calendar in the documentation of
 @signature: {'date?: Date | string;'}
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     value: new Date(),
     date: new Date(2019, 0, 1)
 });

@@ -36,7 +36,7 @@ const tree = new dhx.Tree("tree", {
 });
 @examplestop:
 
-**Related sample**: [Tree. Handling Events In Template](https://snippet.dhtmlx.com/hg3f50td)
+**Related sample**: [Tree. Handling events in template](https://snippet.dhtmlx.com/hg3f50td)
 
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 

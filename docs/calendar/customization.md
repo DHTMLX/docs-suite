@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](calendar/api/calendar_css_config.md) property in the Calendar configuration:
 
 ~~~js
-var calendar = new dhx.Calendar({
+const calendar = new dhx.Calendar({
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -47,7 +47,7 @@ For example:
 	}
 </style>
 
-var calendar = new dhx.Calendar("calendar", { 
+const calendar = new dhx.Calendar("calendar", { 
 	css: "bg-grey dhx_calendar--bordered" 
 });
 ~~~

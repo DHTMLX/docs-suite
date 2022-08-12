@@ -22,7 +22,7 @@ dhxWindow.show("550", "230");
 
 @descr:
 
-**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
+**Related sample**: [Window. Showing / hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
 [comment]: # (@related: window/how_to_start.md window/usage.md#showinghiding-window)
 

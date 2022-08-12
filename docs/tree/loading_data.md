@@ -118,7 +118,7 @@ var tree = new dhx.Tree("tree_container");
 tree.data.load("../common/dataset.json");
 ~~~
 
-**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
+**Related sample**: [Tree. Initialization with data.load()](https://snippet.dhtmlx.com/oz4jd5hc)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -139,7 +139,7 @@ var tree = new dhx.Tree("tree_container");
 tree.data.parse(dataset);
 ~~~
 
-**Related sample**: [Tree. Basic Initialization](https://snippet.dhtmlx.com/oz4jd5hc)
+**Related sample**: [Tree. Initialization with data.parse()](https://snippet.dhtmlx.com/orm283hq)
 
 ## Saving and restoring state
 

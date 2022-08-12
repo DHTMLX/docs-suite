@@ -21,4 +21,4 @@ var index = component.data.getIndex("1"); // -> returns 0
 
 @descr:
 
-**Related sample**: [Data. Get Index](https://snippet.dhtmlx.com/1ottirdt)
+**Related sample**: [Data. Get index](https://snippet.dhtmlx.com/1ottirdt)

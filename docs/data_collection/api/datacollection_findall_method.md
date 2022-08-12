@@ -27,7 +27,7 @@ var items = component.data.findAll({by:"text",match:"Manager"});
 
 @descr:
 
-**Related sample**: [Data. Find All](https://snippet.dhtmlx.com/kvemrz93)
+**Related sample**: [Data. Find all](https://snippet.dhtmlx.com/kvemrz93)
 
 The **rule** parameter:
 

@@ -15,6 +15,6 @@ var tree = new dhx.Tree("tree_container", {keyNavigation: true});
 
 @descr:
 
-**Related sample**: [Tree. Key Navigation](https://snippet.dhtmlx.com/icql8fwq)
+**Related sample**: [Tree. Key navigation](https://snippet.dhtmlx.com/icql8fwq)
 
 [comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/configuration.md#key-navigation)

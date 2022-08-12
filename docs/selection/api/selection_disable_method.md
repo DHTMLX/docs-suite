@@ -18,7 +18,7 @@ component.selection.disable();
 **Related Samples:**
 - [Dataview. Disable / enable selection](https://snippet.dhtmlx.com/kn42gb50)
 - [List. Disable / enable selection](https://snippet.dhtmlx.com/i4zj985o)
-- [Tree. Disable/Enable selection](https://snippet.dhtmlx.com/g6cmggqt)
+- [Tree. Disable / enable selection](https://snippet.dhtmlx.com/g6cmggqt)
 
 {{note The method can be used in the [DataView](dataview/usage_selection.md), [List](list/usage_selection.md), [Tree](tree/usage_selection.md) components. }}
 

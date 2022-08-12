@@ -19,7 +19,7 @@ grid.scrollTo("15","c");
 
 @descr:
 
-**Related sample**: [TreeGrid. Controlling Scroll Behavior](https://snippet.dhtmlx.com/kxytdnvi)
+**Related sample**: [TreeGrid. Controlling scroll behavior](https://snippet.dhtmlx.com/kxytdnvi)
 
 [comment]: # (@related: treegrid/usage.md#controlling-scroll-behavior)
 

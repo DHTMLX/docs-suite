@@ -13,7 +13,7 @@ description: You can explore the timePicker config of Calendar in the documentat
 @default: false
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
     timePicker: true      
 });
 

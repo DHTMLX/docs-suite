@@ -31,7 +31,7 @@ var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
 @descr:
 
-**Related sample**: [Timepicker. Get Timepicker Value](https://snippet.dhtmlx.com/k4atpgnd)
+**Related sample**: [Timepicker. Get Timepicker value](https://snippet.dhtmlx.com/k4atpgnd)
 
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 

@@ -22,8 +22,8 @@ var tree = new dhx.Tree("tree_container", {css: "bg-gray"});
 @descr:
 
 **Related samples**:
-- [Tree. Custom Styles](https://snippet.dhtmlx.com/ocv4p7zg)
-- [Tree. Custom Toggle Icon](https://snippet.dhtmlx.com/zapehxd3)
+- [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
+- [Tree. Custom toggle icon](https://snippet.dhtmlx.com/zapehxd3)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Tree:
 

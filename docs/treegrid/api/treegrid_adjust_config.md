@@ -23,7 +23,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Adjust Columns](https://snippet.dhtmlx.com/lgvoz0ar)
+**Related sample**: [TreeGrid. Adjust columns by header, data, all](https://snippet.dhtmlx.com/lgvoz0ar)
 
 The property can be specified to one of the available adjustment modes:
 

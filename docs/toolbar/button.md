@@ -10,7 +10,7 @@ This is a simple button that can have an icon. Button can have two states and a 
 
 ![](../assets/toolbar/buttons.png)
 
-**Related sample**: [Toolbar. Buttons](https://snippet.dhtmlx.com/7aysw3gb)
+**Related sample**: [Toolbar. Button](https://snippet.dhtmlx.com/7aysw3gb)
 
 ## Adding Button
 
@@ -60,7 +60,7 @@ You can add any custom HTML content to a button with the help of the **html** pr
 }
 ~~~
 
-**Related sample**: [Toolbar. Item HTML Content](https://snippet.dhtmlx.com/5n2b8x84)
+**Related sample**: [Toolbar. Item HTML content](https://snippet.dhtmlx.com/5n2b8x84)
 
 ## Showing/hiding a button
 
@@ -71,7 +71,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-**Related sample**: [Toolbar. Hide/Show](https://snippet.dhtmlx.com/cldp89u4)
+**Related sample**: [Toolbar. Hide / show items](https://snippet.dhtmlx.com/cldp89u4)
 
 ## Enabling/disabling a button
 
@@ -82,7 +82,7 @@ toolbar.enable(id);
 toolbar.disable(id);
 ~~~
 
-**Related sample**: [Toolbar. Enable/Disable](https://snippet.dhtmlx.com/ovblenaf)
+**Related sample**: [Toolbar. Enable / disable items](https://snippet.dhtmlx.com/ovblenaf)
 
 ## Setting tooltip
 

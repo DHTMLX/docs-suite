@@ -23,7 +23,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Auto Width](https://snippet.dhtmlx.com/irybslog)
+**Related sample**: [TreeGrid. Columns auto width](https://snippet.dhtmlx.com/irybslog)
 
 {{note The property is ignored if the [adjust](../../../treegrid/configuration/#autosize-for-columns) property is used.}}
 

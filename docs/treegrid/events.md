@@ -18,7 +18,7 @@ treegrid.events.on("scroll", function({top,left}){
 
 {{note The names of events are case-insensitive.}}
 
-**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 ## Detaching event listeners
 

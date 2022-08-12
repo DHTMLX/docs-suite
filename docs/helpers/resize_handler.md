@@ -16,7 +16,7 @@ dhx.resizeHandler(container, function (width, height) {
 });
 ~~~
 
-**Related sample**: [Helpers. Resizer. Initialization](https://snippet.dhtmlx.com/qf2tb3em)
+**Related sample**: [Helper. resizeHandler](https://snippet.dhtmlx.com/qf2tb3em)
 
 The helper takes two parameters:
 

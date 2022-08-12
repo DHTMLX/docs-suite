@@ -10,7 +10,7 @@ This is a button with an image. Unlike a [button](toolbar/button.md), it does no
 
 ![](../assets/toolbar/image_button.png)
 
-**Related sample**: [Toolbar. Image Button](https://snippet.dhtmlx.com/vdiha09g)
+**Related sample**: [Toolbar. ImageButton](https://snippet.dhtmlx.com/vdiha09g)
 
 ## Adding ImageButton
 

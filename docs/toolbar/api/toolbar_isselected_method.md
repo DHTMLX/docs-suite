@@ -21,7 +21,7 @@ toolbar.isSelected("web"); // -> returns true/false
 
 @descr:
 
-**Related sample**: [Toolbar. Select/Unselect](https://snippet.dhtmlx.com/mi7qjwg2)
+**Related sample**: [Toolbar. Select / unselect items](https://snippet.dhtmlx.com/mi7qjwg2)
 
 @changelog:
 added in v7.0

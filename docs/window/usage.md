@@ -17,7 +17,7 @@ dhxWindow.attachHTML(html);
 dhxWindow.show();
 ~~~
 
-**Related sample**: [Window. Attach HTML To Window](https://snippet.dhtmlx.com/6uelt44m)
+**Related sample**: [Window. Attach HTML](https://snippet.dhtmlx.com/6uelt44m)
 
 ## Attaching DHTMLX components
 
@@ -28,7 +28,7 @@ dhxWindow.attach("richtext",{mode: "document"});
 dhxWindow.show();
 ~~~
 
-**Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
+**Related sample**: [Window. Attach widget](https://snippet.dhtmlx.com/t9ncuuou)
 
 {{note The Message, Popup, Window components can't be attached to Window because these components can't have the parent container due to their architecture principles.}}
 ## Repainting window
@@ -47,7 +47,7 @@ dhtmlxWindow can be displayed in the full screen mode. To activate the full scre
 dhxWindow.setFullScreen();
 ~~~
 
-**Related sample**: [Window. Fullscreen Mode](https://snippet.dhtmlx.com/aftti5fy)
+**Related sample**: [Window. Fullscreen mode](https://snippet.dhtmlx.com/aftti5fy)
 
 To disable the full screen mode, apply the [](window/api/window_unsetfullscreen_method.md) method:
 
@@ -79,7 +79,7 @@ dhxWindow.show(34,54);
 dhxWindow.hide();
 ~~~
 
-**Related sample**: [Window. Showing/Hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
+**Related sample**: [Window. Showing / hiding Window](https://snippet.dhtmlx.com/ee2vf9xw)
 
 ## Sizing window
 
@@ -98,7 +98,7 @@ To get the current size of a window, use the [](window/api/window_getsize_method
 var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 ~~~
 
-**Related sample**: [Window. Set/Get Window Size](https://snippet.dhtmlx.com/0zqxydvm)
+**Related sample**: [Window. Set/get Window size](https://snippet.dhtmlx.com/0zqxydvm)
 
 ## Positioning window
 
@@ -118,7 +118,7 @@ To get the current position of a window, use the [](window/api/window_getpositio
 var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 ~~~
 
-**Related sample**: [Window. Get/Set Window Position](https://snippet.dhtmlx.com/hc3ronrk)
+**Related sample**: [Window. Get/set Window position](https://snippet.dhtmlx.com/hc3ronrk)
 
 ## Checking visibility of window
 
@@ -128,4 +128,4 @@ You can check whether a window is hidden or shown on a page using the [](window/
 var visible = window.isVisible(); // -> true/false
 ~~~
 
-**Related sample**: [Window. Get Window Visible Status](https://snippet.dhtmlx.com/woz5c09h)
+**Related sample**: [Window. Get Window visible status](https://snippet.dhtmlx.com/woz5c09h)

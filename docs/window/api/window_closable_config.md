@@ -20,7 +20,7 @@ dhxWindow.show();
 
 @descr:
 
-**Related sample**: [Window. Closable Window](https://snippet.dhtmlx.com/d1nbhada)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 A closable window gets the Close icon in the right top corner.
 

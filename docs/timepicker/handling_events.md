@@ -16,7 +16,7 @@ timepicker.events.on("change", function(value){
 });
 ~~~
 
-**Related sample**: [Timepicker. Timepicker Events](https://snippet.dhtmlx.com/5ccptwy7)
+**Related sample**: [Timepicker. Events](https://snippet.dhtmlx.com/5ccptwy7)
 
 {{note The names of events are case-insensitive.}}
 

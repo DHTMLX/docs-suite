@@ -20,7 +20,7 @@ grid.editCell(grid.data.getId(0),"project");
 
 @descr:
 
-**Related sample**: [TreeGrid. Editing data](https://snippet.dhtmlx.com/zm6wh1ss)
+**Related sample**: [TreeGrid. Edit first cell](https://snippet.dhtmlx.com/zm6wh1ss)
 
 @changelog:
 - added in v6.4

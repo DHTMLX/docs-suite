@@ -21,7 +21,7 @@ treegrid.isRowHidden("1"); //-> true/false
 
 @descr:
 
-**Related sample**: [TreeGrid. Show/Hide Row](https://snippet.dhtmlx.com/6geqbtvv)
+**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
 
 @changelog:
 added in v7.0

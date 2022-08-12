@@ -18,4 +18,4 @@ var startingData = component.data.getInitialData();
 
 @descr:
 
-**Related sample**: [Data. Get Initial Data](https://snippet.dhtmlx.com/l6wun9j4)
+**Related sample**: [Data. Get initial data](https://snippet.dhtmlx.com/l6wun9j4)

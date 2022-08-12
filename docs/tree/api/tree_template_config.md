@@ -28,7 +28,7 @@ const tree = new dhx.Tree("tree", {
 });
 @examplestop:
 
-**Related sample**: [Tree. Handling Events In Template](https://snippet.dhtmlx.com/hg3f50td)
+**Related sample**: [Tree. Handling events in template](https://snippet.dhtmlx.com/hg3f50td)
 
 The template function takes two parameters:
 

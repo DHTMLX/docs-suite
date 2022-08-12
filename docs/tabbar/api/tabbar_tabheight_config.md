@@ -19,7 +19,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 
 @descr:
 
-**Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
+**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
 @changelog:
 The "string" type is added in v7.0.

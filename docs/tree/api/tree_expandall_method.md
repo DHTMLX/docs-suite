@@ -15,7 +15,7 @@ tree.expandAll();
 
 @descr:
 
-**Related sample**: [Tree. Expand All Items](https://snippet.dhtmlx.com/c0nqyz60)
+**Related sample**: [Tree. Expand all items](https://snippet.dhtmlx.com/c0nqyz60)
 
 [comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)
 

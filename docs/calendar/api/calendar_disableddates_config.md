@@ -11,7 +11,7 @@ description: You can explore the disabledDates config of Calendar in the documen
 @signature: {'disabledDates?: (a: Date) => boolean;'}
 
 @example:
-var calendar = new dhx.Calendar("calendar", {
+const calendar = new dhx.Calendar("calendar", {
 	disabledDates: function(date) {
 		const disabled = {
 			0: true,

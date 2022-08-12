@@ -18,7 +18,7 @@ dhx.scrollViewConfig.enable = true; // false by default
 // initializing widgets
 ```
 
-**Related sample:** [Custom Scroll in List, DataView](https://snippet.dhtmlx.com/gjsbvzdk)
+**Related sample:** [Custom scroll. Scroll view in List, Dataview](https://snippet.dhtmlx.com/gjsbvzdk)
 
 {{note As a result of the above logic, DHTMLX custom scrollbars will be applied to the following widgets: List, DataView, Grid, TreeGrid, Layout cell, Toolbar, Ribbon, Sidebar, Window.}}
 

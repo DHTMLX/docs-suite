@@ -11,7 +11,7 @@ description: You can explore the maxPoints config of Chart in the documentation 
 @signature: {'maxPoints?: number;'}
 
 @example:
-var chart = new dhx.Chart("chart", {
+const chart = new dhx.Chart("chart", {
 	type:"line",
 	maxPoints:100
 });

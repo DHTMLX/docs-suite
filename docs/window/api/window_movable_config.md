@@ -21,6 +21,6 @@ dhxWindow.show();
 
 @descr:
 
-**Related sample**: [Window.  Movable Window](https://snippet.dhtmlx.com/mkwuasj0)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 [comment]: # (@related: window/how_to_start.md window/configuration.md#movability)

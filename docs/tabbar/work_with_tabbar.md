@@ -40,7 +40,7 @@ The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 ~~~
 
-**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+**Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
 The [removeTab()](tabbar/api/tabbar_removetab_method.md) method expects the id of a tab you want to remove as its parameter. You can get the id of a tab via the [getId()](tabbar/api/tabbar_getid_method.md) method:
 
@@ -50,7 +50,7 @@ var id = tabbar.getId(0);
 tabbar.removeTab(id);
 ~~~
 
-**Related sample**: [Tabbar. Remove Tab](https://snippet.dhtmlx.com/z5vjj83y)
+**Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
 ## Getting the id of a tab
 
@@ -78,7 +78,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 tabbar.setActive("2");
 ~~~
 
-**Related sample**: [Tabbar. Set Active](https://snippet.dhtmlx.com/u9ryz38f)
+**Related sample**: [Tabbar. Set active](https://snippet.dhtmlx.com/u9ryz38f)
 
 To identify what tab is currently active, apply the [getActive()](tabbar/api/tabbar_getactive_method.md) method. It will return the id of the active tab.
 
@@ -96,7 +96,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 var active = tabbar.getActive(); // -> "2"
 ~~~
 
-**Related sample**: [Tabbar. Get Active](https://snippet.dhtmlx.com/xpvkcwiu)
+**Related sample**: [Tabbar. Get active](https://snippet.dhtmlx.com/xpvkcwiu)
 
 ## Enabling/disabling a tab
 
@@ -113,7 +113,7 @@ tabbar.disableTab("London");
 // -> true|false
 ~~~
 
-**Related sample**: [Tabbar. Disable Tab](https://snippet.dhtmlx.com/9l3egq3z)
+**Related sample**: [Tabbar. Disable tab](https://snippet.dhtmlx.com/9l3egq3z)
 
 ## Checking if a tab is disabled
 
@@ -129,7 +129,7 @@ To check if a currently active tab is disabled, call the [isDisabled()](tabbar/a
 tabbar.isDisabled(); // -> returns true/false
 ~~~
 
-**Related sample**: [Tabbar. Is Disabled Tab](https://snippet.dhtmlx.com/86er2y7m)
+**Related sample**: [Tabbar. Is disabled tab](https://snippet.dhtmlx.com/86er2y7m)
 
 ## Attaching a component to a cell
 
@@ -147,6 +147,6 @@ dataview.data.parse(dataset);
 tabbar.getCell("dataview").attach(dataview);
 ~~~
 
-**Related sample**: [Tabbar. Attach](https://snippet.dhtmlx.com/o1jwmw1l)
+**Related sample**: [Tabbar. Attach widget](https://snippet.dhtmlx.com/o1jwmw1l)
 
 {{note The Message, Popup, Window components can't be attached to the Tabbar cell because these components can't have the parent container due to their architecture principles.}}

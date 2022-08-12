@@ -18,4 +18,4 @@ component.data.getLength();
 
 @descr:
 
-**Related sample**: [Data. Get Length](https://snippet.dhtmlx.com/4weiba8i)
+**Related sample**: [Data. Get length](https://snippet.dhtmlx.com/4weiba8i)

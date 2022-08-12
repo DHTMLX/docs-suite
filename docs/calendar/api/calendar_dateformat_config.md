@@ -13,7 +13,7 @@ description: You can explore the dateFormat config of Calendar in the documentat
 @default: "%d/%m/%y"
 
 @example:
-var calendar = new dhx.Calendar("calendar_container", {
+const calendar = new dhx.Calendar("calendar_container", {
    dateFormat:"%d.%m.%Y"
 });
 
@@ -21,7 +21,7 @@ var calendar = new dhx.Calendar("calendar_container", {
 @descr:
 **Related sample**: [Calendar. Date format](https://snippet.dhtmlx.com/2co9z3bi)
 
-dhtmlxCalendar uses the following characters for setting a date format:
+DHTMLX Calendar uses the following characters for setting a date format:
 
 | Character | Definition                                        |
 |-----------|---------------------------------------------------|

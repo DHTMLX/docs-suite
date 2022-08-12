@@ -15,11 +15,11 @@ description: You can explore the editItem method of Tree in the documentation of
 - `config: object` - optional, the config object of an editor
 
 @example:
-tree.editItem(id);
+tree.events.on("itemDblClick", function (id) {
+    tree.editItem(id);
+});
 
 @descr:
-
-**Related sample**: [Tree. Edit Item](https://snippet.dhtmlx.com/jaqx0rb4)
 
 The **config** parameter includes the following properties:
 
@@ -43,7 +43,7 @@ The **config** parameter includes the following properties:
 For instance:
 
 ~~~js
-tree.events.on("itemdblclick", function (id) {
+tree.events.on("itemDblClick", function (id) {
     tree.editItem(id,{ mode: "select", options: [1, 2, 3, 4, 5] });
 });
 ~~~

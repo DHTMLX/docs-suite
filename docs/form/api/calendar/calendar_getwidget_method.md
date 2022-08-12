@@ -6,12 +6,12 @@ description: You can explore the getWidget method of the Datepicker control of F
 
 # getWidget()
 
-@short: returns the dhtmlxCalendar widget attached to a DatePicker control
+@short: returns the DHTMLX Calendar widget attached to a DatePicker control
 
 @signature: {'getWidget(): Calendar;'}
 
 @returns:
-An object of the dhtmlxCalendar widget.
+An object of the DHTMLX Calendar widget.
 
 @example:
 var datepicker = form.getItem("datepicker").getWidget();  
@@ -21,7 +21,7 @@ var datepicker = form.getItem("datepicker").getWidget();
 
 **Related sample**: [Form. Get widget of control](https://snippet.dhtmlx.com/0aqkdsi7)
 
-It is possible to use methods of dhtmlxCalendar via the **getWidget()** method of a DatePicker control.
+It is possible to use methods of DHTMLX Calendar via the **getWidget()** method of a DatePicker control.
 
 For example, you can show the current month in the control. To do this, you need to get the widget attached to the DatePicker control and then use the [showDate()](calendar/api/calendar_showdate_method.md) method of this widget.
 

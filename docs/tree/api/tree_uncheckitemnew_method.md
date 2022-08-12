@@ -22,7 +22,7 @@ tree.uncheckItem("history");
 
 @descr:
 
-**Related sample**: [Tree. Check/Uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)
+**Related sample**: [Tree. Check / uncheck Item](https://snippet.dhtmlx.com/uzz6uknx)
 
 [comment]: # (@relatedapi: tree/api/tree_checkitem_method.md tree/api/tree_getchecked_method.md)
 

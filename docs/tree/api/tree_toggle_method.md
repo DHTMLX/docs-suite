@@ -18,6 +18,6 @@ tree.toggle("history");
 
 @descr:
 
-**Related sample**: [Tree. Toggle Item](https://snippet.dhtmlx.com/qjk56co2)
+**Related sample**: [Tree. Toggle item](https://snippet.dhtmlx.com/qjk56co2)
 
 [comment]: # (@related: tree/work_with_tree.md#expandingcollapsing-items)

@@ -20,6 +20,6 @@ treeGrid.events.on("afterExpand", function(rowId) {
 
 @descr:
 
-**Related sample**: [TreeGrid. TreeGrid Events](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @changelog: added in v6.4

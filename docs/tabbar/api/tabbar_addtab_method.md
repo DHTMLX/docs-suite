@@ -19,7 +19,7 @@ tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 @descr:
 
-**Related sample**: [Tabbar. Add Tab](https://snippet.dhtmlx.com/ekke2q8t)
+**Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
 The **config** object may include the following properties:
 

@@ -37,7 +37,7 @@ timepicker.setValue([6,20,"AM"]);
 timepicker.setValue(1559288966422);
 ~~~
 
-**Related sample**: [Timepicker. Set Timepicker Value](https://snippet.dhtmlx.com/6r8lkhbg)
+**Related sample**: [Timepicker. Set Timepicker value](https://snippet.dhtmlx.com/6r8lkhbg)
 
 ## Getting value
 
@@ -59,7 +59,7 @@ var val3 = timepicker2.getValue(); // -> "06:00AM"
 var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 ~~~
 
-**Related sample**: [Timepicker. Get Timepicker Value](https://snippet.dhtmlx.com/k4atpgnd)
+**Related sample**: [Timepicker. Get Timepicker value](https://snippet.dhtmlx.com/k4atpgnd)
 
 The returned value can be of several types, depending on the passed parameter and the applied time format:
 

@@ -10,7 +10,7 @@ description: You can explore the configuration of Tabbar in the documentation of
 
 ![](../assets/tabbar/close_button.png)
 
-**Related sample**: [Tabbar. Close Button](https://snippet.dhtmlx.com/cysre4v8)
+**Related sample**: [Tabbar. Close button](https://snippet.dhtmlx.com/cysre4v8)
 
 You can equip each Tabbar tab with a close button to make it easily closable via interface. To enable close buttons in all tabs at once, make use of the 
 [](tabbar/api/tabbar_closable_config.md) configuration property:
@@ -47,13 +47,13 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-**Related sample**: [Tabbar. Disabled Tab](https://snippet.dhtmlx.com/pxa6rkpj)
+**Related sample**: [Tabbar. Rich configuration (close, disable, overflow, active tab)](https://snippet.dhtmlx.com/xqthiy66)
 
 ## Position of tabbar
 
 ![](../assets/tabbar/mode.png)
 
-**Related sample**: [Tabbar. Mode](https://snippet.dhtmlx.com/xq6k0tts)
+**Related sample**: [Tabbar. Mode: top, left, right, bottom](https://snippet.dhtmlx.com/xq6k0tts)
 
 When initialized with default settings, Tabbar is located at the top of a page. You can locate dhtmlxTabbar at any desired side of your application by using any other value of the [mode](tabbar/api/tabbar_mode_config.md) property. 
 Besides "top", it can also take "bottom","left" or "right" values. e.g.:
@@ -75,7 +75,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-**Related sample**: [Tabbar. Tab Size](https://snippet.dhtmlx.com/yy841z3j)
+**Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
 ## Structure of tabs
 
@@ -140,7 +140,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-**Related sample**: [Tabbar. Without Content](https://snippet.dhtmlx.com/7jzrifql)
+**Related sample**: [Tabbar. Without content](https://snippet.dhtmlx.com/7jzrifql)
 
 ## Alignment
 

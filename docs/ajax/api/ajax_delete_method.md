@@ -24,7 +24,7 @@ dhx.ajax.delete(url, {id: "2"}).then(function (data){
 });
 
 @descr:
-**Related sample**: [Data. Ajax Delete](https://snippet.dhtmlx.com/6nlb0bfu)
+**Related sample**: [Data. Ajax DELETE](https://snippet.dhtmlx.com/6nlb0bfu)
 
 The **config** object can contain the following options:
 

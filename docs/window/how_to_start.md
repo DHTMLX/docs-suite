@@ -35,7 +35,7 @@ To initialize dhtmlxWindow on a page, you need to take the following simple step
 </html>
 ~~~
 
-**Related sample**: [Window. Basic Initialization](https://snippet.dhtmlx.com/6qqezjxe)
+**Related sample**: [Window. Initialization](https://snippet.dhtmlx.com/6qqezjxe)
 
 ## Include source files
 
@@ -67,7 +67,7 @@ var dhxWindow = new dhx.Window({
 dhxWindow.show();
 ~~~
 
-**Related sample**: [Window. Basic Initialization](https://snippet.dhtmlx.com/6qqezjxe)
+**Related sample**: [Window. Initialization](https://snippet.dhtmlx.com/6qqezjxe)
 
 {{note To show a created window on a page, you should call the [show()](window/api/window_show_method.md) method after initialization of the component.}}
 
@@ -90,7 +90,7 @@ dhxWindow.attachHTML(html);
 dhxWindow.show();
 ~~~
 
-**Related sample**: [Window. Attach HTML To Window](https://snippet.dhtmlx.com/6uelt44m)
+**Related sample**: [Window. Attach HTML](https://snippet.dhtmlx.com/6uelt44m)
 
 - by calling [](window/api/window_attach_method.md) to attach other DHTMLX components
 
@@ -99,7 +99,7 @@ dhxWindow.attach("richtext",{mode: "document"});
 dhxWindow.show();
 ~~~
 
-**Related sample**: [Window. Attaching Other Components](https://snippet.dhtmlx.com/t9ncuuou)
+**Related sample**: [Window. Attach widget](https://snippet.dhtmlx.com/t9ncuuou)
 
 - via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization
 

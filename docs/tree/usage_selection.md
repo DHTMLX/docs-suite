@@ -22,7 +22,7 @@ To disable selection of items in Tree, make use of the [](../selection/api/selec
 tree.selection.disable();
 ~~~
 
-**Related sample**: [Tree. Disable/Enable selection](https://snippet.dhtmlx.com/g6cmggqt)
+**Related sample**: [Tree. Disable / enable selection](https://snippet.dhtmlx.com/g6cmggqt)
 
 {{note To make the process of working with the selection of items more flexible, you can apply the [related](selection.md#events) events of the Selection object.}}
 

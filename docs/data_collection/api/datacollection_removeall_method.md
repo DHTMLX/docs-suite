@@ -15,4 +15,4 @@ component.data.removeAll();
 
 @descr:
 
-**Related sample**: [Data. Remove All](https://snippet.dhtmlx.com/ykk2ne82)
+**Related sample**: [Data. Remove all](https://snippet.dhtmlx.com/ykk2ne82)

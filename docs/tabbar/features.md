@@ -45,8 +45,8 @@ In this section you can find out how to configure the size, alignment and visibi
 
 | Topic                                                                                     | Description                                                                                                                                                   |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Adding close buttons for tabs](../configuring_tabbar/#close-buttons-for-tabs)            | Learn how to equip tabs with close buttons  [Example](https://snippet.dhtmlx.com/xqthiy66)                                                                    |
-| [Making tabs disabled](../configuring_tabbar/#disabled-tabs)                              | Learn how to initialize Tabbar with several disabled tabs [Example](https://snippet.dhtmlx.com/xqthiy66)                                                      |
+| [Adding close buttons for tabs](../configuring_tabbar/#close-buttons-for-tabs)            | Learn how to equip tabs with close buttons  ([Example](https://snippet.dhtmlx.com/xqthiy66))                                                                    |
+| [Making tabs disabled](../configuring_tabbar/#disabled-tabs)                              | Learn how to initialize Tabbar with several disabled tabs ([Example](https://snippet.dhtmlx.com/xqthiy66))                                                      |
 | [Configuring alignment of tabs](../configuring_tabbar/#alignment)                         | Learn how to configure alignment of tabs in Tabbar ([Example](https://snippet.dhtmlx.com/bctscs71))                                                           |
 | [Rendering tabs without content](../configuring_tabbar/#tabs-without-content)             | Learn how to render a tab without any content ([Example](https://snippet.dhtmlx.com/7jzrifql))                                                                |
 

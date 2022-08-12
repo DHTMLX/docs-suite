@@ -6,7 +6,7 @@ description: You can explore the data loading of Chart in the documentation of t
 
 # Data loading
 
-There are two ways of loading data into dhtmlxChart:
+There are two ways of loading data into DHTMLX Chart:
 
 - load data from an external file
 - load data from a local data source
@@ -15,7 +15,11 @@ First, you need to prepare a data set that will be loaded into Chart.
 
 ## Preparing data set
 
-dhtmlxChart expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Chart expects loaded data in the JSON format. Here are examples of appropriate data sets for different chart types:
+
+- **Line, Spline, Bar, X-Bar, Area, Spline Area, Radar, Scatter charts**
+
+A data set for these chart types can look like this:
 
 ~~~js
 const dataset = [
@@ -36,7 +40,7 @@ Each object in the data set contains a number of *key:value* pairs for data titl
 
 - **Pie, Pie3D and Donut charts**
 
-A data set for Pie, Pie3D and Donut charts differs a little bit. You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
+A data set for Pie, Pie3D and Donut charts differs a little bit and includes the following properties:
 
 <table>
 	<tbody>
@@ -59,6 +63,8 @@ A data set for Pie, Pie3D and Donut charts differs a little bit. You need to pro
     </tbody>
 </table>
 <br/>
+
+You need to provide the "color":"value" properties to color the sections of these types of Chart. For example:
 
 ~~~js
 const pie_dataset = [
@@ -159,7 +165,18 @@ const chart = new dhx.Chart("chart_container", {
 To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
-var chart = new dhx.Chart("chart_container");
+const chart = new dhx.Chart("chart_container", {
+    type: "bar",
+    scales: { 
+        // scales config 
+    },
+    series: [
+        {
+            //series config                 
+        }
+    ]
+});
+
 chart.data.load("../common/dataset.json");
 ~~~
 
@@ -180,7 +197,18 @@ chart.data.load("/some/data").then(function(){
 To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var chart = new dhx.Chart("chart_container");
+const chart = new dhx.Chart("chart_container", {
+    type: "bar",
+    scales: { 
+        // scales config 
+    },
+    series: [
+        {
+            //series config                 
+        }
+    ]
+});
+
 chart.data.parse(dataset);
 ~~~
 
@@ -192,14 +220,14 @@ To save the current state of a chart, use the **serialize()** method of [DataCol
 Each JSON object contains a set of *key:value* pairs for data titles and values.
 
 ~~~js
-var state = chart1.data.serialize();
+const state = chart1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different chart. For example:
 
 ~~~js
 // creating a new chart
-var chart2 = new dhx.Chart(document.body);
+const chart2 = new dhx.Chart(document.body);
 // parsing the state of chart1 into chart2
 chart2.data.parse(state);
 ~~~

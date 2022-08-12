@@ -21,7 +21,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window. Closable Window](https://snippet.dhtmlx.com/d1nbhada)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 ## Custom node
 
@@ -33,7 +33,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window. Window Container](https://snippet.dhtmlx.com/2rrclo09)
+**Related sample**: [Window. Window container](https://snippet.dhtmlx.com/2rrclo09)
 
 {{note If no HTML container is specified, the window will be placed in the body.}}
 
@@ -49,7 +49,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window. Window With Footer](https://snippet.dhtmlx.com/qu5j85ag)
+**Related sample**: [Window. Window with footer](https://snippet.dhtmlx.com/qu5j85ag)
 
 By default a footer is initialized with no controls. To add a control into the footer, you need to manipulate the [](window/api/window_footer_config.md) object of the toolbar. Follow the instructions given in the [](window/customization.md) article.
 
@@ -81,7 +81,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window.  Movable Window](https://snippet.dhtmlx.com/mkwuasj0)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 ## Overflowing browser window
 
@@ -93,7 +93,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window. Viewport Overflow](https://snippet.dhtmlx.com/qfhdlzri)
+**Related sample**: [Window. Viewport overflow](https://snippet.dhtmlx.com/qfhdlzri)
 
 {{note The property makes sense when set together with the [](window/api/window_movable_config.md) property.}}
 
@@ -109,7 +109,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 Then you will be able to regulate the sizes of a window by dragging resizers that appear on hovering sides of a window. 
 
@@ -138,7 +138,7 @@ var dhxWindow = new dhx.Window({
 });
 ~~~
 
-**Related sample**: [Window. Resizable Window.](https://snippet.dhtmlx.com/1suzi8gj)
+**Related sample**: [Window. Closable, movable, resizable](https://snippet.dhtmlx.com/nthbfzfr)
 
 Default values of the size-related properties are:
 
