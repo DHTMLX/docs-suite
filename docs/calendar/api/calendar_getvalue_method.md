@@ -18,16 +18,16 @@ The selected date.
 
 @example:
 
-var date = calendar.getValue(); // -> "03/06/19"
+const date = calendar.getValue(); // -> "03/06/19"
 
-var date = calendar.getValue(true); // -> Fri Jan 11 2019 18:09:15 GMT+0300
+const date = calendar.getValue(true); // -> Fri Jan 11 2019 18:09:15 GMT+0300
 
 // for a range calendar as an array of Date values 
-var date = calendar.getValue(true); 
+const date = calendar.getValue(true); 
 // -> [Mon Jun 03 2019 00:00:00 GMT+0300, Wed Jun 19 2019 00:00:00 GMT+0300]
 
 // for a range calendar as an array of string values 
-var date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
+const date = calendar.getValue(); // ->  ["03/06/19", "19/06/19"]
 
 @descr:
 

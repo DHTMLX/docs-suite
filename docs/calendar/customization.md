@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](calendar/api/calendar_css_config.md) property in the Calendar configuration:
 
 ~~~js
-const calendar = new dhx.Calendar({
+const calendar = new dhx.Calendar("calendar_container", {
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -47,7 +47,7 @@ For example:
 	}
 </style>
 
-const calendar = new dhx.Calendar("calendar", { 
+const calendar = new dhx.Calendar("calendar_container", { 
 	css: "bg-grey dhx_calendar--bordered" 
 });
 ~~~
@@ -73,6 +73,6 @@ You can apply custom styling to dates selected in a calender as well as to [date
  }
 </style>
 
-var calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
-var calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
+const calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
+const calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
 ~~~

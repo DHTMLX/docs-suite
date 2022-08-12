@@ -21,7 +21,7 @@ description: You can explore the css config of Calendar in the documentation of 
     }
 </style>
 
-const calendar = new dhx.Calendar({
+const calendar = new dhx.Calendar("calendar_container", {
     css:"my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ const calendar = new dhx.Calendar({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Calendar:
 
 ~~~js
-const calendar = new dhx.Calendar({
+const calendar = new dhx.Calendar("calendar_container", {
     css: "dhx_widget--bg_white dhx_widget--bordered"
 });
 ~~~

@@ -65,7 +65,7 @@ To disable certain dates, use the [](calendar/api/calendar_disableddates_config.
 The dates, for which the function returns *true*, are dimmed in the calendar.
 
 ~~~js
-const calendar = new dhx.Calendar("calendar", {
+const calendar = new dhx.Calendar("calendar_container", {
 	disabledDates: function(date) {
 		const disabled = {
 			0: true,
@@ -105,7 +105,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 You can highlight certain dates in the calendar. Set the [](calendar/api/calendar_mark_config.md) property for that. The value of the property must be a function that takes a *date* as a parameter and returns a *string* with the name of a CSS class for marked dates or an empty string for other dates.
 
 ~~~js
-const calendar = new dhx.Calendar("calendar", {
+const calendar = new dhx.Calendar("calendar_container", {
 	mark: function(date) {
 		if (date.getDay() === 6) {
 			return "highlight-date";
@@ -211,7 +211,7 @@ const calendar = new dhx.Calendar("calendar_container", {
 You have a possibility to create a calendar in the range mode that allows you to select a range of dates in the calendar. To do this, you need to use the [range:true](/calendar/api/calendar_range_config) option in the calendar configuration object and define an array with the start and end dates of the range.
 
 ~~~js
-const calendar = new dhx.Calendar("calendar", {
+const calendar = new dhx.Calendar("calendar_container", {
 	css: "dhx_widget--bordered",
 	range: true,
     value: ["25/06/20", "07/07/20"]
@@ -242,7 +242,7 @@ You can add a timepicker into a calendar by enabling the [](calendar/api/calenda
 You can change it to the 12-hour format via the [](calendar/api/calendar_timeformat_config.md) property. It accepts either 12 or 24 value to select the desired time format.
 
 ~~~js
-const calendar = new dhx.Calendar("calendar", {
+const calendar = new dhx.Calendar("calendar_container", {
 	timePicker: true,
     timeFormat: 12 // the 12-hour format for the timepicker
 });

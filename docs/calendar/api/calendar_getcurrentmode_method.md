@@ -14,7 +14,7 @@ description: You can explore the getCurrentMode method of Calendar in the docume
 The current mode of the calendar ("calendar", "year", "month", "timepicker").
 
 @example:
-var mode = calendar.getCurrentMode(); // -> "calendar"
+const mode = calendar.getCurrentMode(); // -> "calendar"
 
 @descr:
 
