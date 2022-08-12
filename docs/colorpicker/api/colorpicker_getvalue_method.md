@@ -16,7 +16,7 @@ A string with the code of a selected color in the Hex format.
 @example:
 colorpicker.setValue("#BDF0E9");
 
-var color = colorpicker.getValue();
+const color = colorpicker.getValue();
 // -> "#BDF0E9"
 
 @descr:

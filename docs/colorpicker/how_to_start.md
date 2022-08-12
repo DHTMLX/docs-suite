@@ -6,40 +6,40 @@ description: You can explore the initialization of Colorpicker in the documentat
 
 # Initialization
 
-There are two ways of initializing dhtmlxColorPicker: inside a container or inside a popup. Both ways are described below in detail.
+There are two ways of initializing DHTMLX Colorpicker: inside a container or inside a popup. Both ways are described below in detail.
 
-In general, to create dhtmlxColorPicker on a page, you need to take the following simple steps:
+In general, to create DHTMLX Colorpicker on a page, you need to take the following simple steps:
 
-- [Download the dhtmlxColorPicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
+- [Download the DHTMLX Suite package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
-- [Initialize ColorPicker](#initialize-colorpicker) with the object constructor
+- [Initialize Colorpicker](#initialize-colorpicker) with the object constructor
 - [Set initially selected color (optional)](#select-initial-color-optional)
 
 ~~~html
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxColorPicker</title>         
+        <title>How to start with DHTMLX ColorPicker</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
     	<div id="colorpicker_container"></div>
         <script>
-            // creating dhtmlxColorPicker 
-            var colorpicker = new dhx.ColorPicker("colorpicker_container",{
+            // creating Colorpicker 
+            const colorpicker = new dhx.Colorpicker("colorpicker_container", {
                 // config options
 			});
         </script>
     </body>
 </html>
 ~~~
-
-**Related sample**: [Colorpicker. Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
   
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+[Download the DHTMLX Suite package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project.
+
+Create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -49,40 +49,45 @@ Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite 
 <link rel="stylesheet" href="../../codebase/suite.css">
 ~~~
 
-## Initialize ColorPicker
+## Initialize Colorpicker
 
-You can initialize ColorpIcker in a container or in a popup.
+You can initialize Colorpicker in a container or in a popup.
 
 ### Initialization in a container
 
-In this case you initialize ColorPicker with the `dhx.Colorpicker` object constructor. The constructor takes two parameters: 
+In this case you need to add a container for Colorpicker and give it an id, for example "colorpicker_container":
 
-- the HTML container for ColorPicker,
-
-~~~html
+~~~html title="index.html"
 <div id="colorpicker_container"></div>
 ~~~
 
-- an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
+and initialize Colorpicker with the `dhx.Colorpicker` object constructor like this:
 
 ~~~js
-// creating dhtmlxColorPicker
-var colorpicker = new dhx.ColorPicker("colorpicker_container",{
-   // config options
+// creating ColorPicker
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
+    css: "dhx_widget--bordered",
+   // more config options
 });
 ~~~
 
 **Related sample**: [Colorpicker. Initialization](https://snippet.dhtmlx.com/ezk8rk4m)
 
+The constructor takes two parameters:
+
+- the HTML container for ColorPicker
+- an object with configuration properties ([see the full list below](#configuration-properties)). If this argument is not passed to the constructor, the settings will be default.
+
+
 ### Initialization in a popup
 
 This variant presupposes that you create a popup first and then attach a colorpicker into it. 
 
-- use corresponding object constructors to create a colorpicker and a popup objects. Note that in this case *null* is used instead of container for ColorPicker:
+- use corresponding object constructors to create a colorpicker and a popup objects. Note that in this case *null* is used instead of container for Colorpicker:
 
 ~~~js
-var colorpicker = new dhx.Colorpicker(null, { customColors: ["#f2f2f2"] });
-var popup = new dhx.Popup();
+const colorpicker = new dhx.Colorpicker(null, { customColors: ["#f2f2f2"] });
+const popup = new dhx.Popup();
 ~~~
 
 - attach the colorpicker to the popup using the [](../popup/api/popup_attach_method.md) method of Popup:
@@ -96,7 +101,7 @@ popup.attach(colorpicker);
 ~~~js
 popup.show("showButton");
 
-var colorExample = document.querySelector(".dhx_color-sample");
+const colorExample = document.querySelector(".dhx_color-sample");
 colorpicker.events.on("colorChange", function (color) {
 	colorExample.style.backgroundColor = color;
 	popup.hide();
@@ -107,14 +112,14 @@ colorpicker.events.on("colorChange", function (color) {
 
 ### Configuration properties
 
-The detailed information on ColorPicker configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
+The detailed information on Colorpicker configuration options can be found in the [Colorpicker API overview](colorpicker/api/api_overview.md#properties) article.
 
 ## Select initial color (optional)
 
-You can specify the color that should be selected in the palette after ColorPicker initialization with the help of the [](colorpicker/api/colorpicker_setvalue_method.md) method:
+You can specify the color that should be selected in the palette after Colorpicker initialization with the help of the [](colorpicker/api/colorpicker_setvalue_method.md) method:
 
 ~~~js
-var colorpicker = new dhx.ColorPicker({
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
    // config options
 });
 colorpicker.setValue("#BDF0E9");

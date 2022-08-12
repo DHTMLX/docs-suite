@@ -1,16 +1,16 @@
 ---
 sidebar_label: Work with ColorPicker
-title: JavaScript Colorpicker - Work with ColorPicker 
-description: You can explore how to work with ColorPicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+title: JavaScript Colorpicker - Work with Colorpicker 
+description: You can explore how to work with Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
 # Work with ColorPicker
 
-The API of ColorPicker helps you control the functionality of the component through a set of handy methods.
+The API of Colorpicker helps you control the functionality of the component through a set of handy methods.
 
 ## Setting/getting selected color
 
-You can select a certain color in the ColorPicker via the [setValue()](colorpicker/api/colorpicker_setvalue_method.md) method. It takes as a parameter the code of a color from the palette in the Hex format.
+You can select a certain color in the Colorpicker via the [setValue()](colorpicker/api/colorpicker_setvalue_method.md) method. It takes as a parameter the code of a color from the palette in the Hex format.
 
 ~~~js
 colorpicker.setValue("#F9E6AD");
@@ -45,7 +45,7 @@ colorpicker.getCustomColors();
 
 ## Setting/getting current mode
 
-By default, ColorPicker is rendered in the "palette" mode. There is also the "picker" view in the component which is shown when a user selects a custom color. 
+By default, Colorpicker is rendered in the "palette" mode. There is also the "picker" view in the component which is shown when a user selects a custom color. 
 You can choose what view should be shown with the help of the [setCurrentMode()](colorpicker/api/colorpicker_setcurrentmode_method.md) method. It takes the name of the mode to show as a parameter.
 
 ~~~js

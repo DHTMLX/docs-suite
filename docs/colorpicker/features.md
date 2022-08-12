@@ -48,7 +48,7 @@ In this section you will find out how to configure and customize palette.
 | Topic                                                                    | Description                                                                                              |
 | ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
 | [Hiding gray shades](../configuration/#gray-shades)                      | Learn how to hide gray shades at the top of the palette ([Example](https://snippet.dhtmlx.com/b44fp8q2)) |
-| [Displaying custom colors](../configuration/#list-of-custom-colors)      | Learn how to display a list of custom colors in the bottom part of ColorPicker                           |
+| [Displaying custom colors](../configuration/#list-of-custom-colors)      | Learn how to display a list of custom colors in the bottom part of Colorpicker                           |
 | [Configuring custom palette](../configuration/#custom-colors-in-palette) | Learn how to display Colorpicker with a custom palette ([Example](https://snippet.dhtmlx.com/097jjhb8))  |
 
 ## How to customize Colorpicker and change its size

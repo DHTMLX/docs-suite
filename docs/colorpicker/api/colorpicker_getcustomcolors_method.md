@@ -16,7 +16,7 @@ An array of custom colors.
 @example:
 colorpicker.setCustomColors(["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]);
 
-var colors = colorpicker.getCustomColors();
+const colors = colorpicker.getCustomColors();
 // -> ["#f2f2f2","#8ac5d9","#ec9875","#7a8523"]
 
 @descr:

@@ -11,7 +11,7 @@ description: You can explore the mode config of Colorpicker in the documentation
 @signature: {'mode?: "palette" | "picker";'}
 
 @example:
-var colorpicker = new dhx.Colorpicker("colorpicker", {
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 	mode: "palette",
 	css: "dhx_widget--bordered"
 });

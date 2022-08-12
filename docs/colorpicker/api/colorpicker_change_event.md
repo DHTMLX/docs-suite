@@ -6,7 +6,7 @@ description: You can explore the change event of Colorpicker in the documentatio
 
 # change
 
-@short: fires on changing selected color in ColorPicker
+@short: fires on changing selected color in Colorpicker
 
 @signature: {'change: (color: string) => void;'}
 
