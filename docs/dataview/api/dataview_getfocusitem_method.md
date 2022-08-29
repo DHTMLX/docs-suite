@@ -14,6 +14,6 @@ description: You can explore the getFocusItem method of DataView in the document
 The object of an item in focus.
 
 @example:
-var focus = dataview.getFocusItem();
+const focus = dataview.getFocusItem();
 
 @descr:

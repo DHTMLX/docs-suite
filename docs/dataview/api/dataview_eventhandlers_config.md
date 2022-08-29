@@ -15,7 +15,7 @@ function template() {
     return "<div class='class_name'></div>";
 }
 
-const dataview = new dhx.DataView("dataview", {
+const dataview = new dhx.DataView("dataview_container", {
     template: template,
     eventHandlers: {
         onclick: {

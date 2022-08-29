@@ -11,7 +11,7 @@ description: You can explore the dragMode config of DataView in the documentatio
 @signature: {'dragMode?: boolean;'}
 
 @example:
-var dataview = new dhx.DataView("dataview_container", { 
+const dataview = new dhx.DataView("dataview_container", { 
     dragMode:"source"
 });
 

@@ -8,35 +8,70 @@ description: You can explore the data loading of DataView in the documentation o
 
 There are several ways of loading DataView items:
 
-- from an external file
-- from a local data source
+- on initialization of DataView
+- after initialization of DataView
 
 First, you need to prepare a data set that will be loaded into DataView.
 
 ## Preparing data set
 
-dhtmlxDataView expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX DataView expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
-  	{"value": "Learning DHTMLX Suite UI", "id":"1"},
-    {"value": "Unlocking Android", "id":"2"},
-    {"value": "Android in Action, Second Edition", "id":"3"},
-    {"value": "Zend Framework in Action", "id":"4"},
+const dataset = [
+  	{
+        "value": "Ben",
+        "short": "Ben is a very cautious 5-year-old Siberian Husky.",
+        "thumbnailName": "01.jpg"
+    },
+    {
+        "value": "Izzy",
+        "short": "This is our most beloved kingfisher bird Izzy.",
+        "thumbnailName": "02.jpg"
+    },
+    {
+        "value": "Momo",
+        "short": "Momo is a 25-year-old elephant with a big heart.",
+        "thumbnailName": "03.jpg"
+    }
 ]
+~~~
+
+Each object in the data set contains a number of *key:value* pairs that represent attributes of DataView items. 
+
+:::note
+You can specify your own template of rendering DataView items with the help of the [](dataview/api/dataview_template_config.md) configuration option.
+:::
+
+## Loading data on initialization
+
+You can load [a predefined data set](#preparing-data-set) into DataView on the initialization stage. Use the [data](dataview/api/dataview_data_config.md) configuration property, as in:
+
+~~~js
+const dataview = new dhx.DataView("dataview_container", {
+    itemsInRow: 2,
+    gap: 10,
+    css: "dhx_widget--bordered",
+    template: template,
+    data: dataset
+});
 ~~~
 
 **Related sample**: [Dataview. Initialization with config.data](https://snippet.dhtmlx.com/s547z4xr)
 
-Each object in the data set contains a number of *key:value* pairs that represent attributes of DataView items. 
-You can specify your own template of rendering DataView items with the help of the [](dataview/api/dataview_template_config.md) configuration option.
+## Loading data after initialization
 
-## External data loading
+There are two ways to load data into Combobox after its initialization:
+
+- [via the **load()** method of DataCollection](#external-data-loading)
+- [via the **parse()** method of DataCollection](#loading-from-local-source)
+
+### External data loading
 
 To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
-var dataview = new dhx.DataView("dataview_container");
+const dataview = new dhx.DataView("dataview_container");
 dataview.data.load("../common/dataset.json");
 ~~~
 
@@ -52,12 +87,12 @@ dataview.data.load("/some/data").then(function(){
 });
 ~~~
 
-## Loading from local source
+### Loading from local source
 
 To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var dataview = new dhx.DataView("dataview_container");
+const dataview = new dhx.DataView("dataview_container");
 dataview.data.parse(dataset);
 ~~~
 
@@ -69,14 +104,14 @@ To save the current state of a dataview, use the **serialize()** method of [Data
 Each JSON object contains a set of *key:value* pairs that represent attributes of DataView items.
 
 ~~~js
-var state = dataview1.data.serialize();
+const state = dataview1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different dataview. For example:
 
 ~~~js
 // creating a new dataview
-var dataview2 = new dhx.DataView(document.body);
+const dataview2 = new dhx.DataView(document.body);
 // parsing the state of dataview1 into dataview2
 dataview2.data.parse(state);
 ~~~

@@ -12,12 +12,12 @@ description: You can explore the itemHeight config of DataView in the documentat
 
 @example:
 // sets the height of an item as a number
-var dataview = new dhx.DataView("dataview", { 
+const dataview = new dhx.DataView("dataview_container", { 
     itemHeight:30
 });
 
 // sets the height of an item as a string value
-var dataview = new dhx.DataView("dataview", { 
+const dataview = new dhx.DataView("dataview_container", { 
     itemHeight:"30px"
 });
 

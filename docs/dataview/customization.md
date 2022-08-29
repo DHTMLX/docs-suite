@@ -27,7 +27,7 @@ There is a possibility to make changes in the look and feel of a dataview. For t
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](dataview/api/dataview_css_config.md) property in the DataView configuration:
 
 ~~~js
-var dataview = new dhx.DataView({ 
+const dataview = new dhx.DataView({ 
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -47,7 +47,7 @@ You can style particular cells in the dataview. For example, apply some color to
 	}
 </style>
 
-var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
+const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 
 dataview.data.parse(dataset);
 dataview.data.map(function (item, i) {
@@ -77,7 +77,7 @@ additional custom classes.
 	}
 </style>
 
-var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
+const dataview = new dhx.DataView("dataview_container", {itemsInRow: 3});
 ~~~
 
 ![Custom selection styles](../assets/dataview/custom_selection_styles.png)
