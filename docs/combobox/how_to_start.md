@@ -6,9 +6,13 @@ description: You can explore the initialization of Combo Box in the documentatio
 
 # Initialization
 
-This article gives you detailed instructions on how to create DHTMLX Combo on a page. Follow the steps below:
+:::info
+[Download the DHTMLX Combo package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
 
-- [Download the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) (it includes DHTMLX Combobox)
+
+To add DHTMLX Combo in your application, you need to follow the steps below:
+
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize ComboBox](#initialize-combobox) with the object constructor
@@ -37,7 +41,7 @@ This article gives you detailed instructions on how to create DHTMLX Combo on a 
 
 Unpack the downloaded package into a folder of your project.
 
-Create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*

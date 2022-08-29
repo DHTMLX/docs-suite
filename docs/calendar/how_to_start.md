@@ -6,9 +6,15 @@ description: You can explore the initialization of Calendar in the documentation
 
 # Initialization
 
+:::info
+Download the DHTMLX Calendar package:
+
+- [as a separate component](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml)
+- [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+:::
+
 To use DHTMLX Calendar in your application, you need to take the following simple steps:
 
-- [Download DHTMLX Calendar](#download-the-package)
 - [Include source files](#include-source-files)
 - [Initialize Calendar](#initialize-calendar) with the object constructor
 - [Select initial date (optional)](#select-initial-date-optional)
@@ -31,17 +37,11 @@ To use DHTMLX Calendar in your application, you need to take the following simpl
 </html>
 ~~~
 
-## Download the package
-
-[Download just DHTMLX Calendar](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml) to use it standalone
-
-[Download the whole DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to use Calendar as a part of the Suite library
-
 ## Include source files
 
-1\. Unpack the downloaded package into a folder of your project.
+Unpack the downloaded package into a folder of your project.
 
-2\. Create an HTML file and place full paths to JS and CSS files of the library into the header of the created file.
+After that, create an HTML file and place full paths to JS and CSS files of the library into the header of the created file.
 
 
 **If you use DHTMLX Calendar standalone**, you need to include JS/CSS files of DHTMLX Calendar:
