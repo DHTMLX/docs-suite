@@ -8,7 +8,7 @@ description: You can explore the initialization of Calendar in the documentation
 
 To use DHTMLX Calendar in your application, you need to take the following simple steps:
 
-- [Download the DHTMLX Calendar package](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml) and unpack it into a folder of your project
+- [Download DHTMLX Calendar](#download-the-package)
 - [Include source files](#include-source-files)
 - [Initialize Calendar](#initialize-calendar) with the object constructor
 - [Select initial date (optional)](#select-initial-date-optional)
@@ -31,13 +31,20 @@ To use DHTMLX Calendar in your application, you need to take the following simpl
 </html>
 ~~~
 
+## Download the package
+
+[Download just DHTMLX Calendar](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml) to use it standalone
+
+[Download the whole DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to use Calendar as a part of the Suite library
+
 ## Include source files
 
-[Download the DHTMLX Calendar package](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml) and unpack it into a folder of your project.
+1\. Unpack the downloaded package into a folder of your project.
 
-Create an HTML file and place full paths to JS and CSS files of DHTMLX Calendar into the header of the created file. The Calendar component can be used standalone or as a part of the Suite library.
+2\. Create an HTML file and place full paths to JS and CSS files of the library into the header of the created file.
 
-**If you use DHTMLX Calendar standalone**, you need to include 2 files:
+
+**If you use DHTMLX Calendar standalone**, you need to include JS/CSS files of DHTMLX Calendar:
 
 - *calendar.js*
 - *calendar.css*
@@ -49,8 +56,8 @@ Create an HTML file and place full paths to JS and CSS files of DHTMLX Calendar 
 
 **If you use DHTMLX Calendar as a part of the Suite package**, you need to include JS/CSS files of the DHTMLX Suite library:
 
-- suite.js
-- suite.css
+- *suite.js*
+- *suite.css*
 
 ~~~html title="index.html"
 <link type="text/css" href="../codebase/suite.css">

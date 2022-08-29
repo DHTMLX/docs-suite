@@ -8,7 +8,7 @@ description: You can explore the initialization of Chart in the documentation of
 
 To initialize DHTMLX Chart in an application, you need to take the following steps:
 
-- [Download the DHTMLX Chart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project
+- [Download DHTMLX Chart](#download-the-package)
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Chart](#initialize-chart) with the object constructor
@@ -52,16 +52,22 @@ To initialize DHTMLX Chart in an application, you need to take the following ste
 </html>
 ~~~
 
+## Download the package
+
+[Download DHTMLX Chart](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) to use it standalone
+
+[Download the whole DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) to use Chart as a part of the Suite library
+
 ## Include source files
 
-[Download the DHTMLX Chart package](https://dhtmlx.com/docs/products/dhtmlxChart/download.shtml) and unpack it into a folder of your project.
+1\. Unpack the downloaded package into a folder of your project.
 
-Create an HTML file and place full paths to JS and CSS files of DHTMLX Chart into the header of the created file. The Chart component can be used standalone or as a part of the Suite library.
+2\. Create an HTML file and place full paths to JS and CSS files of the library into the header of the created file.
 
-**If you use DHTMLX Chart standalone**, you need to include 2 files:
+**If you use DHTMLX Chart standalone**, you need to include JS/CSS files of DHTMLX Chart:
 
-- chart.js
-- chart.css
+- *chart.js*
+- *chart.css*
 
 ~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/chart.js"></script>
@@ -70,8 +76,8 @@ Create an HTML file and place full paths to JS and CSS files of DHTMLX Chart int
 
 **If you use DHTMLX Chart as a part of the Suite package**, you need to include JS/CSS files of the DHTMLX Suite library:
 
-- suite.js
-- suite.css
+- *suite.js*
+- *suite.css*
 
 ~~~html title="index.html"
 <link type="text/css" href="../codebase/suite.css">
