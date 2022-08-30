@@ -11,7 +11,7 @@ description: You can explore the columns config of Grid in the documentation of 
 @signature: {'columns?: ICol[];'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 100, id: "a", header: [{ text: "#" }] },
 		{ width: 100, id: "b", header: [{ text: "Title" }] },

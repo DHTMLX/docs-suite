@@ -22,7 +22,7 @@ grid.events.on("afterRowResize", function(row, events, currentHeight) {
 
 @descr:
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 To be able to change the height of the row, you should specify the [autoHeight:true](grid/api/grid_autoheight_config.md) and [editable:true](grid/api/grid_editable_config.md) options in the configuration of Grid.  
 

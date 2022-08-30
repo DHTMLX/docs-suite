@@ -11,7 +11,7 @@ description: You can explore the dragItem config of Grid in the documentation of
 @signature: {' dragItem?: "column", "row", "both";'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -29,7 +29,7 @@ Drag-n-drop can work in three modes:
 - "row" - enables drag and drop of rows
 - "both" - enables both modes mentioned above
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package. <br>In case you use GPL version, you will be able to reorder rows only.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br>In case you use GPL version, you will be able to reorder rows only.}}
 
 @changelog:
 

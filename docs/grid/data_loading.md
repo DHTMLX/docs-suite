@@ -6,20 +6,19 @@ description: You can explore the data loading of Grid in the documentation of th
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxGrid:
+There are several ways of loading data into DHTMLX Grid:
 
-- adding data via a configuration property
-- load data from an external file
-- load data from a local data source
+- on initialization of Grid
+- after initialization of Grid
 
 First, you need to prepare a data set that will be loaded into Grid.
 
 ## Preparing data set
 
-dhtmlxGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Grid expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
     {
         "id": 0,
         "a": 1,
@@ -55,27 +54,38 @@ Each object in the data set contains configuration of a grid row. The structure 
     </tbody>
 </table>
 
-## Adding data on Grid initialization
+## Loading data on initialization
 
-You can specify data you want to add into Grid on the initialization stage. Make use of the **data** configuration property, as in:
+You can load a [predefined data set](#preparing-data-set) into Grid on the initialization stage. Use the [data](grid/api/grid_data_config.md) configuration property, as in:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
     data: dataset
 });
 ~~~
 
 **Related sample**: [Grid. Initialization with config.data](https://snippet.dhtmlx.com/luh8d0vv)
 
-## External data loading
+## Loading data after initialization
+
+There are two ways to load data into Grid after its initialization:
+
+- [via the **load()** method of DataCollection](#external-data-loading)
+- [via the **parse()** method of DataCollection](#loading-from-local-source)
+
+### External data loading
 
 To load data from an external file, make use of the **load()** method of [Data Collection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
-var grid = new dhx.Grid("grid_container");
+const grid = new dhx.Grid("grid_container");
 grid.data.load("../common/dataset.json");
 ~~~
+
+**Related sample**: [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
 
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
@@ -87,16 +97,16 @@ grid.data.load("/some/data").then(function(){
 });
 ~~~
 
-## Loading from local source
+### Loading from local source
 
 To load data from a local data source, use the **parse()** method of [Data Collection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var grid = new dhx.Grid("grid_container");
+const grid = new dhx.Grid("grid_container");
 grid.data.parse(dataset);
 ~~~
 
-**Related sample**: [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
+**Related sample**: [Grid. Initialization with data.parse()](https://snippet.dhtmlx.com/pwzie5wz)
 
 ## Saving and restoring state
 
@@ -104,21 +114,21 @@ To save the current state of a grid, use the **serialize()** method of [Data Col
 Each JSON object contains the configuration of a separate row.
 
 ~~~js
-var state = grid1.data.serialize();
+const state = grid1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different grid. For example:
 
 ~~~js
 // creating a new grid
-var grid2 = new dhx.Grid(document.body);
+const grid2 = new dhx.Grid(document.body);
 // parsing the state of grid1 into grid2
 grid2.data.parse(state);
 ~~~
 
 ## Dynamic loading
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 To enable dynamic data loading in Grid you need to:
 
 - initialize **lazyDataProxy** as described in the [Dynamic Loading](helpers/lazydataproxy.md) article
@@ -135,7 +145,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 - load data into Grid via the **load()** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
 ~~~js
-var grid = new dhx.Grid("grid_container");
+const grid = new dhx.Grid("grid_container");
 grid.data.load(lazyDataProxy);
 ~~~
 

@@ -17,7 +17,7 @@ description: You can explore the getColumn method of Grid in the documentation o
 An object with attributes of a column.
 
 @example:
-var column = grid.getColumn("b"); // ->
+const column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 
 @descr:

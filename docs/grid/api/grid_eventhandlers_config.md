@@ -11,7 +11,7 @@ description: You can explore the eventHandlers config of Grid in the documentati
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
 
 @example:
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
 		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
@@ -74,7 +74,7 @@ const data = [
     // more options
 ];
 
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
         // more options

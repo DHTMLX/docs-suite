@@ -11,7 +11,7 @@ description: You can explore the spans config of Grid in the documentation of th
 @signature: {'spans?: ISpan[];'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [// columns config],
 	spans: [
 		{row:"0", column:"a", rowspan:5 },

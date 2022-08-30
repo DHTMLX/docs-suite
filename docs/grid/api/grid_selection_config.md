@@ -11,7 +11,7 @@ description: You can explore the selection config of Grid in the documentation o
 @signature: {'selection?: "cell" | "row" | "complex";'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

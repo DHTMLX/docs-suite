@@ -14,7 +14,7 @@ It is possible to adjust the configuration of grid columns via the corresponding
 The full list of properties you can set for a column is given in the API reference.
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 100, id: "a", header: [{ text: "#" }] },
         { width: 100, id: "b", header: [{ text: "Title" }] },
@@ -34,7 +34,7 @@ Each column object may contain a set of properties.
 Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the **align** option:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "name", header:  [{ text: "Name", align: "center" }], align: "right"}
         // more options
@@ -52,7 +52,7 @@ The available values of the option are "left", "center" and "right".
 There is a possibility to automatically add an empty row after the last filled row in the grid. Use the [](grid/api/grid_autoemptyrow_config.md) property in the Grid configuration object to enable this feature:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -90,7 +90,7 @@ You can configure columns' settings so that their width would automatically adju
 <br/>
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -104,7 +104,7 @@ var grid = new dhx.Grid("grid_container", {
 It is also possible to use the [](grid/api/grid_adjust_config.md) property in the configuration of a separate column:
 
 ~~~js {3,6}
-var grid = new dhx.Grid("grid_container", { 
+const grid = new dhx.Grid("grid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }], adjust: "header" },
         { id: "population", header: [{ text: "Population" }] }
@@ -121,7 +121,7 @@ var grid = new dhx.Grid("grid_container", {
 Starting from v7.1, you can set the [autoHeight: true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text to split into multiple lines automatically based on the width of the column
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -141,7 +141,7 @@ But, **note**, that the **autoHeight** option does not adjust the height of the 
 It is possible to automatically adjust the size of Grid columns to the size of Grid with the help of the [](grid/api/grid_autowidth_config.md) configuration option, like this:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -155,7 +155,7 @@ var grid = new dhx.Grid("grid_container", {
 You can disable this functionality for a specified column via setting the [](grid/api/grid_autowidth_config.md) property to *false* in the configuration of the column:
 
 ~~~js {3,6}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false },
 		{ width: 150, id: "population", header: [{ text: "Population" }] },
@@ -180,7 +180,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Drag-n-drop inside the grid
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package. <br> In case you use GPL version, you will be able to reorder rows only.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br> In case you use GPL version, you will be able to reorder rows only.}}
 
 It is possible to reorder rows and columns of Grid by drag and drop. To enable the functionality, define the [dragItem: "both"](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
@@ -218,7 +218,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Drag-n-drop between grids
 
-dhtmlxGrid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
+DHTMLX Grid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
 
 - "target" - a grid takes rows from other grids, while its row can't be dragged out of it
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
@@ -239,14 +239,14 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Editing Grid and separate columns
 
-dhtmlxGrid provides the editing feature that includes two options:
+DHTMLX Grid provides the editing feature that includes two options:
 
 - editing of the whole Grid, i.e. of all its columns
 
 To make all columns of the Grid editable, specify the [](grid/api/grid_editable_config.md) option in the configuration of Grid:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -264,7 +264,7 @@ This option implies that you can enable/disable editing of particular columns by
 In the example below all columns will be editable, except for the first one:
 
 ~~~js {5,15}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ 
         	width: 150, id:"project",
@@ -285,7 +285,7 @@ var grid = new dhx.Grid("grid", {
 And the following example demonstrates an opposite situation when only the first column is editable:
 
 ~~~js {5}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ 
            width: 150, id: "project",
@@ -311,7 +311,7 @@ There are several types of column editors:
 
 ~~~js
 // cells of the "project" column will be edited as inputs
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{
 			width: 150,
@@ -425,10 +425,10 @@ Or provide the **options** property with an array of objects with a set of *key:
 
 To use this editor, you should specify the **editorType:"textarea"** property for a column.
 
-{{note The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration option of Grid is enabled. The functionality is available only in PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{note The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](grid/api/grid_autoheight_config.md) configuration option of Grid is enabled. The functionality is available only in PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 ~~~js
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{
 			width: 150, id: "project", 
@@ -448,7 +448,7 @@ var grid = new dhx.Grid("grid", {
 - **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options
 
 ```js
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{
         	id: "renewals", type: "string",
@@ -588,7 +588,7 @@ When using just the **type: "percent"** configuration option of a column, the re
 You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. There is the [leftSplit](grid/api/grid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze as a value of the property in the Grid configuration.
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -643,7 +643,7 @@ There are three types of filters that you can specify in the header/footer conte
 If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it.
 
 ~~~js {8}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         {
             width: 150, 
@@ -697,7 +697,7 @@ To add a custom function with your you own logic for the filter of a Grid column
 {{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-content) is set.}}
 
 ~~~js {8}
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "country", header: [
             { text: "Country" },
@@ -722,7 +722,7 @@ The height of the header/footer of Grid is calculated as a sum of rows which are
 properties, correspondingly.
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -752,14 +752,14 @@ You can set the **hidden:true** property in the [config of a column](grid/config
 
 ## HTML content of Grid columns
 
-dhtmlxGrid allows adding an image or an icon into Grid cells in two ways:
+DHTMLX Grid allows adding an image or an icon into Grid cells in two ways:
 
 - by specifying the HTML content of all Grid columns
 
 This way presupposes making each cell of Grid capable of displaying the HTML content via using the [htmlEnable](grid/api/grid_htmlenable_config.md) property in the configuration object of Grid.
 
 ~~~js {14}
-var dataset = [
+const dataset = [
 	{
 		"country": "China",
         "flag": "<img src='../flags/cn.jpg' />",
@@ -767,7 +767,7 @@ var dataset = [
 	}
 ];
 
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -783,14 +783,14 @@ var grid = new dhx.Grid("grid", {
 If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the configuration of a column:
 
 ~~~js {12}
-var dataset = [
+const dataset = [
 	{
 		"country": "<span>China</span><img src='../flags/cn.jpg' />",
 	    "id": "1"
 	}
 ];
 
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{
             width: 200, id: "country", header: [{ text: "Country" }],
@@ -822,7 +822,7 @@ const data = [
     // more options
 ];
 
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
         // more options
@@ -847,7 +847,7 @@ const grid = new dhx.Grid("grid", {
 
 ## Keyboard Navigation
 
-dhtmlxGrid provides the keyboard navigation that will help you manipulate your grid faster. 
+DHTMLX Grid provides the keyboard navigation that will help you manipulate your grid faster. 
 
 ### Default shortcut keys
 
@@ -877,7 +877,7 @@ There are four navigation keys that Grid enables by default:
 If you need to disable this functionality, set the [keyNavigation](grid/api/grid_keynavigation_config.md) property to false. 
 
 ~~~js
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -893,7 +893,7 @@ var grid = new dhx.Grid("grid", {
 In case you want to enable the arrow keys that allow moving the selection between cells, you need to specify the [selection](grid/api/grid_selection_config.md) property for Grid.
 
 ~~~js {6}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -996,7 +996,7 @@ The arrow shortcut keys listed below do not work when the **selection** property
 It is also possible to use shortcut keys for editing a cell in Grid by setting [editable:true](grid/api/grid_editable_config.md) property in the configuration object of Grid.
 
 ~~~js {7}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -1029,7 +1029,7 @@ The list of the shortcut keys for editing:
 While setting the [selection](grid/configuration.md#selection) property either to *"row"* or to *"cell"* value, you can enable the [](grid/api/grid_multiselection_config.md) property to allow a user to select multiple Grid elements:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -1049,7 +1049,7 @@ A range of Grid cells/rows can be selected by clicking the first element to sele
 Columns of Grid have fixed width with no possibility to change them from UI. You can switch on the corresponding configuration option to make all columns of Grid resizable.
 
 ~~~js {6}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -1065,7 +1065,7 @@ Then you will be able to change the width of columns using the mouse. With the c
 You can disable the resizing of any column by setting the [resizable:false](grid/api/grid_resizable_config.md) property in the config of a column.
 
 ~~~js {4,7}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "test1", header: [{ text: "Test1" }] },
         { width: 150, id: "test2", header: [{ text: "Test2" }], resizable: false }
@@ -1085,7 +1085,7 @@ var grid = new dhx.Grid("grid_container", {
 The default height of a grid row is 40. You can change it and set any other height via the [rowHeight](grid/api/grid_rowheight_config.md) property, e.g.:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -1103,7 +1103,7 @@ In this case, the height of each row is 30.
 Starting with v7.1, it is possible to specify the height for the necessary row of data in Grid via setting the number value to the **height** option when defining the [data set](grid/api/grid_data_config.md):
 
 ~~~js {5}
-var dataset = [
+const dataset = [
 	{
 		"country": "China",
 		"population": "1415045928",
@@ -1134,7 +1134,7 @@ There is a possibility to apply some styling to a row via the [rowCss](grid/api/
 </style>
  
  
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -1147,7 +1147,7 @@ var grid = new dhx.Grid("grid_container", {
 
 ## Selection
 
-dhtmlxGrid includes the selection feature that allows highlighting Grid elements depending on the chosen mode. The [selection](grid/api/grid_selection_config.md) property enables selection in a grid. It can take three values:
+DHTMLX Grid includes the selection feature that allows highlighting Grid elements depending on the chosen mode. The [selection](grid/api/grid_selection_config.md) property enables selection in a grid. It can take three values:
 
 <table>
 	<tbody>
@@ -1168,7 +1168,7 @@ dhtmlxGrid includes the selection feature that allows highlighting Grid elements
 <br/>
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -1181,12 +1181,12 @@ var grid = new dhx.Grid("grid_container", {
 
 ## Sorting columns
 
-By default, dhtmlxGrid allows sorting content of any Grid column by clicking on its header. 
+By default, DHTMLX Grid allows sorting content of any Grid column by clicking on its header. 
 
 To disable this option, set the [](grid/api/grid_sortable_config.md) property in the Grid configuration to *false*:
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -1204,7 +1204,7 @@ You can make separate columns sortable by specifying the [sortable:true](grid/ap
 In the example below all columns will be sortable, except for the second one:
 
 ~~~js {3,5,8}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], sortable: true },
         { width: 150, id: "land", header: [{ text: "Land" }] },
@@ -1218,7 +1218,7 @@ var grid = new dhx.Grid("grid_container", {
 The following sample demonstrates the same situation:
 
 ~~~js {4}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }] },
         { width: 150, id: "land", header: [{ text: "Land" }], sortable: false },
@@ -1268,7 +1268,7 @@ Each span object contains the following properties:
 <br/>
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -1294,7 +1294,7 @@ var grid = new dhx.Grid("grid_container", {
 The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column. Starting from v6.5, you can hide the tooltips via setting the [](grid/api/grid_tooltip_config.md) configuration property of Grid to *false*:
 
 ~~~js
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		//columns config
 	],
@@ -1308,7 +1308,7 @@ var grid = new dhx.Grid("grid", {
 There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](grid/configuration.md#columns) or [spans](grid/configuration.md#spans) accordingly:
 
 ~~~js {3,7,10}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }], tooltip: true }, 
 		{ width: 150, id: "population", header: [{ text: "Population" }] },
@@ -1326,7 +1326,7 @@ var grid = new dhx.Grid("grid", {
 You can specify necessary size of your Grid via the configuration properties [width](grid/api/grid_width_config.md) and [height](grid/api/grid_height_config.md):
 
 ~~~js
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],

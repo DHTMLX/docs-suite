@@ -8,7 +8,7 @@ description: You can explore how to work with Grid in the documentation of the D
 
 ## Working with columns and cells
 
-The API of dhtmlxGrid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
+The API of DHTMLX Grid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
 
 ### Setting columns configuration
 
@@ -29,7 +29,7 @@ You can find the full list of the available configuration options of a Grid colu
 It is possible to return an object with attributes of a column via its id. Use the [](grid/api/grid_getcolumn_method.md) method for this purpose.
 
 ~~~js
-var column = grid.getColumn("b"); // ->
+const column = grid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 ~~~
 
@@ -40,7 +40,7 @@ The method returns an object with configuration of the specified column. You can
 There is the [](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
 ~~~js
-var rect = grid.getCellRect("1","c");
+const rect = grid.getCellRect("1","c");
 // -> {x: 200, y: -40, height: 40, width: 200}
 ~~~
 
@@ -72,7 +72,7 @@ The return object includes the following attributes:
 You may want to manipulate a filter specified in the header of a grid, for example, to set/unset the focus on the filter, to change the filter, or clear it. To do that, you should get an object of the header filter by column id via the [](grid/api/grid_getheaderfilter_method.md) method:
 
 ~~~js
-var countryFilter = grid.getHeaderFilter("country");
+const countryFilter = grid.getHeaderFilter("country");
 // -> returns HTMLElement
 // <label class="dhx_grid-filter__label dxi dxi-menu-down">...</label>
 
@@ -80,7 +80,7 @@ countryFilter.focus();
 
 // or
 
-var countryFilter = grid.getHeaderFilter("density");
+const countryFilter = grid.getHeaderFilter("density");
 // -> returns Combobox
 // Combobox {_uid: "u1597304021754", config: {…}, events: EventSystem, 
 // data: DataCollection, popup: Popup, …}
@@ -242,7 +242,7 @@ These are possible fields of a span object:
 You can return the col/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~js
-var span = grid.getSpan("10","a"); 
+const span = grid.getSpan("10","a"); 
 // -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
 ~~~
 
@@ -258,7 +258,7 @@ grid.removeSpan("10","a");
 
 ## Controlling scroll behavior
 
-The API of dhtmlxGrid provides the possibility to set scrolls to the necessary position and to get the current state of scrolls.
+The API of DHTMLX Grid provides the possibility to set scrolls to the necessary position and to get the current state of scrolls.
 
 ### Scrolling to specific coordinates
 
@@ -283,7 +283,7 @@ grid.scrollTo("15","c");
 To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
 
 ~~~js
-var state = grid.getScrollState(); // -> {x:0,y:0}
+const state = grid.getScrollState(); // -> {x:0,y:0}
 ~~~
 
 It returns an object with x,y coordinates of a position the grid has been scrolled to.
@@ -429,7 +429,7 @@ To get the current state of sorting data in Grid, use the [](grid/api/grid_getso
 <br/>
 
 ~~~js
-var state = grid.getSortingState(); 
+const state = grid.getSortingState(); 
 // -> {dir: "desc", by: "country"}
 ~~~
 
@@ -476,7 +476,7 @@ You can easily export data of Grid into the Excel or CSV format.
 
 ### Exporting data to Excel
 
-dhtmlxGrid provides the possibility to export data from Grid into an Excel file by calling the **xlsx()** method of the Export module. The method takes an object with export settings as a parameter.
+DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the **xlsx()** method of the Export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 grid.export.xlsx({

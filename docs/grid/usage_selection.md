@@ -54,7 +54,7 @@ You can set selection to one or more rows or cells using the [setCell()](grid/ap
 The example below shows how to highlight the first cell in the "Yearly Change" column:
 
 ~~~js {6}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -63,8 +63,8 @@ var grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 
-var row = grid.data.getItem(grid.data.getId(0));
-var column = grid.getColumn("yearlyChange");
+const row = grid.data.getItem(grid.data.getId(0));
+const column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 ~~~
 
@@ -79,7 +79,7 @@ You can highlight the desired cells when the [multiselection:true](grid/api/grid
 ![](../assets/grid/desired_setcell.png)
 
 ~~~js {5,6}
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
@@ -153,14 +153,14 @@ To make the process of unselecting cells more flexible, you can apply the relate
 To get the object of a selected Grid cell, use the [getCell()](grid/api/selection/selection_getcell_method.md) method of the selection object:
 
 ~~~js
-var selectedCell = grid.selection.getCell();
+const selectedCell = grid.selection.getCell();
 // -> {row: {…}, column: {…}}
 ~~~
 
 To get the object of multiple selected cells, use the [getCells()](grid/api/selection/selection_getcells_method.md) method of the selection object:
 
 ~~~js
-var selectedCells = grid.selection.getCells();
+const selectedCells = grid.selection.getCells();
 // -> [{…}, {…}, {…}]
 0: {row: {…}, column: {…}}
 1: {row: {…}, column: {…}}

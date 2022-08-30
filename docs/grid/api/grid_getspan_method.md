@@ -18,7 +18,7 @@ description: You can explore the getSpan method of Grid in the documentation of 
 An object with configuration of a span.
 
 @example:
-var span = grid.getSpan("10","a"); 
+const span = grid.getSpan("10","a"); 
 // -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
 
 @descr:

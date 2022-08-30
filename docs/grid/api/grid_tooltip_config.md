@@ -13,7 +13,7 @@ description: You can explore the tooltip config of Grid in the documentation of 
 @default: true
 
 @example:
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

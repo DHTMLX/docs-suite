@@ -11,7 +11,7 @@ description: You can explore the width config of Grid in the documentation of th
 @signature: {'width?: number;'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
