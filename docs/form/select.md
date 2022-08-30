@@ -19,7 +19,7 @@ An advanced select box that provides a set of options to choose from.
 You can easily add a Select control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
 	rows: [
     	{
         	type: "select",
@@ -62,7 +62,7 @@ You can manipulate a Select control by using methods or events of the object ret
 For example, you can get the value of the control:
 
 ~~~js
-var value = form.getItem("select").getValue();
+const value = form.getItem("select").getValue();
 ~~~
 
 ### Methods

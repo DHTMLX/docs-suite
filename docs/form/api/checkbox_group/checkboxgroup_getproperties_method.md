@@ -17,7 +17,7 @@ description: You can explore the getProperties method of the Checkbox Group cont
 An object either with the available attributes of the control and their values, or with the available attributes of the checkbox and their values
 
 @example:
-var form = new dhx.Form("form_container", { 
+const form = new dhx.Form("form_container", { 
     rows: [
         {
             id: "checkboxGroup",

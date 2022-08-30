@@ -13,7 +13,7 @@ description: You can explore the getProperties method of the Container control o
 @returns:
 An object with the available properties of the control and their values.
 
-@example: const form = new dhx.Form("form", {
+@example: const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "40px",
     rows: [

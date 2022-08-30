@@ -11,7 +11,7 @@ description: You can explore the title Config of Form in the documentation of th
 @signature: {'title?: string;'}
 
 @example:
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "20px",  
     title: "Form", // sets the title for rows

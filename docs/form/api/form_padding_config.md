@@ -11,7 +11,7 @@ description: You can explore the padding Config of Form in the documentation of 
 @signature: {'padding?: string | number;'}
 
 @example:
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "20px",  // sets padding for rows 
     rows: [

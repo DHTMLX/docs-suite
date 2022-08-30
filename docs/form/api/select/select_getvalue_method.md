@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Select control of Form i
 A string, or number with the current value of the control.
 
 @example:
-var value = form.getItem("select").getValue();
+const value = form.getItem("select").getValue();
 // -> "1"
 
 @descr:

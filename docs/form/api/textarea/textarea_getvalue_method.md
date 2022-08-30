@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Textarea control of Form
 A string with the current value of the control.
 
 @example:
-var value = form.getItem("textarea").getValue();
+const value = form.getItem("textarea").getValue();
 // -> "Some nice text"
 
 @descr:
