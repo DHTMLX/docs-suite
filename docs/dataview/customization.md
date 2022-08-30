@@ -27,7 +27,7 @@ There is a possibility to make changes in the look and feel of a dataview. For t
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](dataview/api/dataview_css_config.md) property in the DataView configuration:
 
 ~~~js
-const dataview = new dhx.DataView({ 
+const dataview = new dhx.DataView("dataview_container", { 
     css:"my_first_class my_second_class"
 });
 ~~~
