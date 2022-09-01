@@ -21,7 +21,7 @@ Released on
 - Grid. Fix the issue with the [`canRowDrop`](grid/api/grid_canrowdrop_event.md) event
 - Grid. Fix the issue with work of key navigation for Grid initialized in a collapsed Layout cell
 - Suite. Fix the issue with work of the "promiz" webpack together with ES6 modules
-- Tabbar. Fix the issue with working of Tabbar in IE11
+- Tabbar. Fix the issue with work of Tabbar in IE11
 - TreeCollection. Fix work of the **add** and **smartFilter** properties of the **config** parameter of the [`filter()`](tree_collection/api/treecollection_filter_method.md) method
 
 Version 7.3.6
