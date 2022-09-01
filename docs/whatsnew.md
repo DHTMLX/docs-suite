@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.7
+--------------
+
+Released on
+
+### Fixes
+
+- Grid. Fix the issue with disappearing of the comboFilter of a visible column after you hide any other column 
+- Grid. Fix the issue with display of the comboFilter for frozen columns when scrolling Grid horizontally
+- Grid. Fix the issue with display of tooltips for columns with checkboxes
+- Grid. Fix the issue with the [`canRowDrop`](grid/api/grid_canrowdrop_event.md) event
+- Grid. Fix the issue with work of key navigation for Grid initialized in a collapsed Layout cell
+- Suite. Fix the issue with work of the "promiz" webpack together with ES6 modules
+- Tabbar. Fix the issue with working of Tabbar in IE11
+- TreeCollection. Fix work of the **add** and **smartFilter** properties of the **config** parameter of the [`filter()`](tree_collection/api/treecollection_filter_method.md) method
 
 Version 7.3.6
 -------------------
