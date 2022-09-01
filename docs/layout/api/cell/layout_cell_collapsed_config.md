@@ -11,9 +11,9 @@ description: You can explore the collapsed config of Layout in the documentation
 @signature: {'collapsed?: boolean;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", collapsed:true}
+        { header: "Cell header", collapsed:true}
     ]
 });
 

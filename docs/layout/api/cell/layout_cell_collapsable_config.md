@@ -11,9 +11,9 @@ description: You can explore the collapsable config of Layout in the documentati
 @signature: {'collapsable?: boolean;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", collapsable:true}
+        { header: "Cell header", collapsable:true}
     ]
 });
 

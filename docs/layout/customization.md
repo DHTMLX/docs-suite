@@ -31,7 +31,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](layout/api/cell/layout_cell_css_config.md) property in the configuration of a Layout cell:
 
 ~~~js
-var layout = new dhx.Layout("layout_container",{
+const layout = new dhx.Layout("layout_container",{
     row: [
 		{
 			header: "Sub Block Header row",
@@ -53,7 +53,7 @@ For example:
 	}
 </style>
 
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
 	rows: [
     	{
         	id: "toolbar",

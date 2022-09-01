@@ -6,9 +6,12 @@ description: You can explore the initialization of Layout in the documentation o
 
 # Initialization
 
-To add dhtmlxLayout into an application, you need to take the following simple steps:
+:::info
+[Download the DHTMLX Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
 
-- [Download the Layout package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
+To add DHTMLX Layout into an application, you need to take the following simple steps:
+
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Layout structure](#define-layout-structure)
@@ -18,15 +21,15 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxLayout</title>         
+        <title>How to start with DHTMLX Layout</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="layout_container"></div>
         <script>
-            // creating dhtmlxLayout
-            var layout = new dhx.Layout("layout_container", {
+            // creating Layout
+            const layout = new dhx.Layout("layout_container", {
     			cols: [
         			{ header: "Column 1" },
         			{ header: "Column 2", cols: [
@@ -48,7 +51,9 @@ To add dhtmlxLayout into an application, you need to take the following simple s
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -73,7 +78,7 @@ Layout consists of a set of cells arranged either into rows or into columns. The
 For example, you can create a three-level layout structure:
 
 ~~~js
-var	cols = [
+const cols = [
 	{
 		header: "Sub Block Header row"
 	},
@@ -109,7 +114,7 @@ Initialize Layout with the `dhx.Layout` object constructor. The constructor take
 - a configuration object which contains the structure of Layout 
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {cols});
+const layout = new dhx.Layout("layout_container", {cols});
 ~~~
 
 ### Configuration properties

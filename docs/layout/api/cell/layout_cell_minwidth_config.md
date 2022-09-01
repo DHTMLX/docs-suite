@@ -11,9 +11,9 @@ description: You can explore the minWidth config of Layout in the documentation 
 @signature: {'minWidth?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", minWidth: "400px"}
+        { header: "Cell header", minWidth: "400px"}
     ]
 });
 

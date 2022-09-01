@@ -15,6 +15,6 @@ An object of a widget attached to a cell.
 
 @example:
 // id - the id of a cell a widget is attached to
-var widget = layout.getCell("id").getWidget();
+const widget = layout.getCell("id").getWidget();
 
 @descr:

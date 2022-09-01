@@ -11,9 +11,9 @@ description: You can explore the minHeight config of Layout in the documentation
 @signature: {'minHeight?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", minHeight: "40px"}
+        { header: "Cell header", minHeight: "40px"}
     ]
 });
 

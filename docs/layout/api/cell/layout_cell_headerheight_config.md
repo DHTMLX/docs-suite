@@ -13,7 +13,7 @@ description: You can explore the headerHeight config of Layout in the documentat
 @default: 37
 
 @example:
-var layout = new dhx.Layout("layout", {
+const layout = new dhx.Layout("layout_container", {
     rows: [
         {
             id: "row1"

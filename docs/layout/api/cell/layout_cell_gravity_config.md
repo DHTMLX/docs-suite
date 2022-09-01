@@ -11,7 +11,7 @@ description: You can explore the gravity config of Layout in the documentation o
 @signature: {'gravity?: number | boolean;'}
 
 @example:
-var layout = dhx.Layout("layout_container", {
+const layout = dhx.Layout("layout_container", {
 	css: "dhx_widget--bordered",
 	rows: [
 		{

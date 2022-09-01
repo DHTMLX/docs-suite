@@ -11,9 +11,9 @@ description: You can explore the configuration of a Cell of Layout in the docume
 A layout cell can have any HTML content inside it. You can set it with the [](layout/api/cell/layout_cell_html_config.md) attribute in the object of a cell.
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", html: "Hello world"}
+        { header: "Cell header", html: "Hello world"}
     ]
 });
 ~~~
@@ -25,9 +25,9 @@ var layout = new dhx.Layout("layout_container", {
 It is possible to add the [](layout/api/cell/layout_cell_hidden_config.md) attribute into the the object of a cell(s) to render a layout with some cells hidden:
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-	  { header: "Cell header", hidden:true}
+	    { header: "Cell header", hidden:true}
     ]
 });
 ~~~
@@ -37,9 +37,9 @@ var layout = new dhx.Layout("layout_container", {
 Each layout cell can have a header with some text that describes the content of this cell.
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-	  { header: "Perfect cell header"}
+	    { header: "Perfect cell header"}
     ]
 });
 ~~~
@@ -47,16 +47,16 @@ var layout = new dhx.Layout("layout_container", {
 You can also add an icon or an image into the header of a cell with the help of corresponding attributes - [](layout/api/cell/layout_cell_headericon_config.md) and [](layout/api/cell/layout_cell_headerimage_config.md).
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-	  { header: "Cell header", headerIcon:"/icon.png"}
+	    { header: "Cell header", headerIcon:"/icon.png"}
     ]
 });
 
 // or
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-	  { header: "Cell header", headerImage:"/img.png"}
+	    { header: "Cell header", headerImage:"/img.png"}
     ]
 });
 ~~~
@@ -68,7 +68,7 @@ var layout = new dhx.Layout("layout_container", {
 You can specify the necessary height of the header of a cell using the [](layout/api/cell/layout_cell_headerheight_config.md) configuration option of the cell:
 
 ~~~js
-var layout = new dhx.Layout("layout", {
+const layout = new dhx.Layout("layout_container", {
     rows: [
         {
             id: "row1"
@@ -91,7 +91,7 @@ If the [](layout/api/cell/layout_cell_header_config.md) property is not set in t
 You can easily control and change the size of a cell via the [](layout/api/cell/layout_cell_width_config.md) and [](layout/api/cell/layout_cell_height_config.md) attributes of the object of a cell.
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {   
+const layout = new dhx.Layout("layout_container", {   
 	rows: [
         {
             cols: [
@@ -124,7 +124,7 @@ var layout = new dhx.Layout("layout_container", {
 Starting from v7.0, you can define the maximal and minimal sizes for a cell by using its corresponding configuration properties: [](layout/api/cell/layout_cell_maxheight_config.md), [](layout/api/cell/layout_cell_maxwidth_config.md), [](layout/api/cell/layout_cell_minheight_config.md), [](layout/api/cell/layout_cell_minwidth_config.md).
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
             header: "Cell header", 
@@ -140,7 +140,7 @@ var layout = new dhx.Layout("layout_container", {
 {{note Note, that [minWidth](layout/api/cell/layout_cell_minwidth_config.md)/[maxWidth](layout/api/cell/layout_cell_maxwidth_config.md) properties prevent [the width of a cell](layout/api/cell/layout_cell_width_config.md) from being less/greater than minWidth/maxWidth values accordingly. The [minHeight](layout/api/cell/layout_cell_minheight_config.md)/[maxHeight](layout/api/cell/layout_cell_maxheight_config.md) options work in the same way. }}
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
             header: "Cell header", 
@@ -158,7 +158,7 @@ As you can see from the code example above, the width of the cell occupies 50% o
 Starting with v7.0, you can configure a cell so that its width/ height would automatically adjust to the width/ height of the cell content. For this purpose, you need to set the [width](layout/api/cell/layout_cell_width_config.md)/ [height](layout/api/cell/layout_cell_height_config.md) options to *"content"*:
 
 ~~~js {5}
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
             header: "Cell header", 
@@ -175,9 +175,9 @@ There are two attributes of the object of a cell: [](layout/api/cell/layout_cell
 the initialization of a layout.
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", collapsable:true, collapsed:false}
+        { header: "Cell header", collapsable:true, collapsed:false}
     ]
 });
 ~~~
@@ -191,9 +191,9 @@ var layout = new dhx.Layout("layout_container", {
 To allow resizing of a cell, make use of the [](layout/api/cell/layout_cell_resizable_config.md) option in the object of a cell. 
 
 ~~~js
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", resizable:true}
+        { header: "Cell header", resizable:true}
     ]
 });
 ~~~
@@ -207,7 +207,7 @@ var layout = new dhx.Layout("layout_container", {
 By default, there is no space and borders between cells inside a layout and the cells look like they are merged. Starting from v7.0, it is possible to split the cells by adding borders or space between them via the [](layout/api/cell/layout_cell_type_config.md) configuration property of a Layout cell:
 
 ~~~js {2}
-const layout = new dhx.Layout("layout", {
+const layout = new dhx.Layout("layout_container", {
     type: "space",
     cols: [
         {

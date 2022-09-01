@@ -6,7 +6,7 @@ description: You can explore the attachHTML method of Layout in the documentatio
 
 # attachHTML()
 
-@short: adds an HTML content into a dhtmlxLayout cell
+@short: adds an HTML content into a Layout cell
 
 @signature: {'attachHTML(html: string): void;'}
 
@@ -14,8 +14,10 @@ description: You can explore the attachHTML method of Layout in the documentatio
 `html: string` - an HTML content to be added into a cell
 
 @example:
-var layout = new dhx.Layout({width:"400px", height:"600px"});
-var html = "<p>Hello world</p>";
+const layout = new dhx.Layout("layout_container", {
+    width:"400px", height:"600px"
+});
+const html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);
 
 @descr:
