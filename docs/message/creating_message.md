@@ -56,7 +56,9 @@ After that, create an HTML file and place full paths to JS and CSS files of the 
 
 ## Create a container
 
-{{note This is an optional step. By default a message appears in the top right corner of the screen.}}
+:::info
+This is an optional step. By default a message appears in the top right corner of the screen.
+:::
 
 Add a container for Message and give it an id, for example "message_container":
 

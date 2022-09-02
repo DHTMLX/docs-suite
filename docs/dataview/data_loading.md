@@ -63,8 +63,8 @@ const dataview = new dhx.DataView("dataview_container", {
 
 There are two ways to load data into Combobox after its initialization:
 
-- [via the **load()** method of DataCollection](#external-data-loading)
-- [via the **parse()** method of DataCollection](#loading-from-local-source)
+- [from an external file](#external-data-loading)
+- [from a local data source](#loading-from-local-source)
 
 ### External data loading
 

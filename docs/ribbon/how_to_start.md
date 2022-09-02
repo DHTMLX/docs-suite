@@ -76,52 +76,6 @@ The detailed information on Ribbon configuration options can be found in the [Ri
 
 ## Load data into Ribbon
 
-There are two handy ways of loading data, i.e. a set of controls into Ribbon:
-
-- from an external file with the help of the **load()** method of tree collection:
-
-~~~js
-var ribbon = new dhx.Ribbon("ribbon_container");
-ribbon.data.load("../common/dataset.json");
-~~~
-
-- from a local source using the **parse()** method of tree collection:
-
-~~~js
-var data = [
-	{
-    	type: "block",
-    	items: [
-    		{
-    			value: "New",
-    			icon: "dxi dxi-file-outline",
-                size: "small"              
-            }
-    	]
-    },
-    {
-    	type: "block",
-    	direction: "col",
-    	items: [
-    		{
-    			value: "Add",
-    			icon: "dxi dxi-plus",
-    			size: "small"
-    		},
-    		{
-            	value: "Remove",
-            	icon: "dxi dxi-delete",
-            	size: "small"
-    		}
-    	]
-    }
-
-];
-
-var ribbon = new dhx.Ribbon("ribbon_container", {css: "dhx_widget--bordered"});
-ribbon.data.parse(data);
-~~~
-
 Detailed information on loading data into Ribbon is given in the article [](ribbon/data_loading.md).
 
 ## Example

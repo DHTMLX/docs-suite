@@ -35,8 +35,6 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 </html>
 ~~~
 
-**Related sample**: [Menu. Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)
-
 ## Include source files
 
 Unpack the downloaded package into a folder of your project.
@@ -75,61 +73,6 @@ var menu = new dhx.Menu("menu_container");
 You can find the full list of Menu configuration properties in the [Menu API overview](menu/api/api_overview.md#properties) article.
 
 ## Load data into Menu
-
-There are two handy ways of loading data, i.e. a set of controls into Menu:
-
-- from an external file with the help of the **load()** method of tree collection:
-
-~~~js
-var menu = new dhx.Menu("menu_container");
-menu.data.load("../common/dataset.json");
-~~~
-
-- from a local source using the **parse()** method of tree collection:
-
-~~~js
-var data = [
-	{
-    	value: "File", 
-		items: [
-        	{
-       			value: "New File",
-        	},
-        	{
-        		value: "New window",
-        	},
-        	{
-        		value: "Open File",
-        	},
-        	{
-        		value: "Save File",
-        	}
-        ]
-	},
-	{
-    	value: "Edit", 					
-        items: [
-			{
-				value: "Undo"
-			},
-			{
-				value:  "Redo"
-			},
-			{
-				value: "Cut"
-			},
-			{
-				value: "Copy"
-			}
-		 ]
-	}
-];
-
-var menu = new dhx.Menu("menu_container");
-menu.data.parse(data);
-~~~
-
-**Related sample**: [Menu. Initialization with data.parse()](https://snippet.dhtmlx.com/8y2b1zqm)
 
 Detailed information on loading data into Menu is given in the article [](menu/data_loading.md).
 
