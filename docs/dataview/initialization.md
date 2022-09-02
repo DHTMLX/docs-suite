@@ -66,7 +66,7 @@ Initialize DataView with the `dhx.DataView` object constructor. The constructor 
 - the HTML container for DataView,
 - optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating DHTMLX DataView
 const dataview = new dhx.DataView("dataview_container", {
     itemsInRow: 5

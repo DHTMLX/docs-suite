@@ -6,9 +6,12 @@ description: You can explore the initialization of Ribbon in the documentation o
 
 # Initialization
 
+:::info
+[Download the DHTMLX Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxRibbon into an application, you need to take the following simple steps:
 
-- [Download the Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Ribbon](#initialize-ribbon) with the object constructor
@@ -32,11 +35,11 @@ To add dhtmlxRibbon into an application, you need to take the following simple s
 </html>
 ~~~
 
-**Related sample**: [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -66,8 +69,6 @@ var ribbon = new dhx.Ribbon("ribbon_container", {
     // config options
 });
 ~~~
-
-**Related sample**: [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
 
 ### Configuration properties
 
@@ -122,3 +123,7 @@ ribbon.data.parse(data);
 ~~~
 
 Detailed information on loading data into Ribbon is given in the article [](ribbon/data_loading.md).
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/lek4v9m7?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>

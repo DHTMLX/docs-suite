@@ -6,9 +6,12 @@ description: You can explore the initialization of Sidebar in the documentation 
 
 # Initialization
 
+:::info
+[Download the DHTMLX Sidebar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxSidebar into an application, you need to take the following simple steps:
 
-- [Download the Sidebar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Sidebar](#initialize-sidebar) with the object constructor
@@ -36,7 +39,9 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -62,12 +67,10 @@ Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor ta
 - an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
-var sidebar = new dhx.Sidebar("sidebar_container",{
+var sidebar = new dhx.Sidebar("sidebar_container", {
 	// config options
 });
 ~~~
-
-**Related sample**: [Sidebar. Initialization with config.data](https://snippet.dhtmlx.com/y8y7iw42)
 
 ### Configuration properties
 
@@ -112,3 +115,7 @@ sidebar.data.parse(data);
 ~~~
 
 Detailed information on loading data into Sidebar is given in the article [](sidebar/data_loading.md).
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/y8y7iw42?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

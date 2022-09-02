@@ -46,8 +46,9 @@ You can modify styling of Form controls as well using the **css** option inside 
 		background: #fff;
 	}
 </style>
-
-const form = new dhx.Form("form-sample", {
+~~~
+~~~js
+const form = new dhx.Form("form_container", {
 	css:"bg-gray",
 	rows: [
 		{	

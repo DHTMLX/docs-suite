@@ -6,9 +6,12 @@ description: You can explore the initialization of Tabbar in the documentation o
 
 # Initialization
 
+:::info
+[Download the DHTMLX Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxTabbar into an application, you need to take the following simple steps:
 
-- [Download the Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Tabbar structure](#define-tabbar-structure)
@@ -28,10 +31,10 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
             // creating dhtmlxTabbar
             var tabbar = new dhx.Tabbar("tabbar_container",{
             	views:[ 
-                	{ tab: "left", css:"panel flex"},
-    				{ tab: "west", css:"panel flex"},
-    				{ tab: "east", css:"panel flex"},
-    				{ tab: "right", css:"panel flex"}
+                	{ tab: "north" },
+                    { tab: "south" },
+                    { tab: "east" },
+                    { tab: "west" },
             	]
             });
         </script>
@@ -39,11 +42,11 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 </html>
 ~~~
 
-**Related sample**: [Tabbar. Initialization](https://snippet.dhtmlx.com/uysfjo5z)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -68,10 +71,10 @@ For example, Tabbar can have 4 tabs. You need to define their configuration obje
 
 ~~~js
 var views = [
-    { tab: "left", css:"panel flex"},
-    { tab: "west", css:"panel flex"},
-    { tab: "east", css:"panel flex"},
-    { tab: "right", css:"panel flex"}
+    { tab: "north" },
+    { tab: "south" },
+    { tab: "east" },
+    { tab: "west" },
 ];
 ~~~
 
@@ -84,11 +87,16 @@ Initialize Tabbar with the `dhx.Tabbar` object constructor. The constructor take
 
 ~~~js
 var tabbar = new dhx.Tabbar("tabbar_container",{
-    mode:"bottom",
-    views:views
+    mode: "bottom",
+    views: views,
+    // more config options
 });
 ~~~
 
 ### Configuration properties
 
 You can find the full list of Tabbar configuration properties in the [Tabbar API overview](tabbar/api/api_overview.md#properties) article.
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/uysfjo5z?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

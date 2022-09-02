@@ -6,9 +6,15 @@ description: You can explore the initialization of TreeGrid in the documentation
 
 # Initialization
 
+:::info
+Download the DHTMLX TreeGrid package:
+
+- [as a separate component](https://dhtmlx.com/docs/products/dhtmlxTreeGrid/download.shtml)
+- [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+:::
+
 To initialize dhtmlxTreeGrid on a page, you need to take the following simple steps:
 
-- [Download the dhtmlxTreeGrid package](https://dhtmlx.com/docs/products/dhtmlxTreeGrid/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize TreeGrid](#initialize-grid) with the object constructor
@@ -41,11 +47,11 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 </html>
 ~~~
 
-**Related sample**: [TreeGrid. Initialization with config.data](https://snippet.dhtmlx.com/kob9385v)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of dhtmlxTreeGrid into the header of the created file. The TreeGrid component can be used standalone or as a part of the Suite library.
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of dhtmlxTreeGrid into the header of the created file. The TreeGrid component can be used standalone or as a part of the Suite library.
 
 **If you use dhtmlxTreeGrid standalone**, you need to include 2 files:
 
@@ -82,7 +88,7 @@ Initialize TreeGrid with the `dhx.TreeGrid` object constructor. The constructor 
 - the HTML container for TreeGrid,
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating dhtmlxTreeGrid
 var treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
@@ -121,6 +127,10 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ]
+});
 treegrid.data.load("../common/dataset.json");
 ~~~
 
@@ -134,3 +144,7 @@ treegrid.data.parse(dataset);
 ~~~
 
 Detailed information on loading data into TreeGrid is given in the [](treegrid/data_loading.md) article.
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/kob9385v?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>

@@ -6,9 +6,12 @@ description: You can explore the initialization of Timepicker in the documentati
 
 # Initialization
 
+:::info
+[Download the DHTMLX TimePicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To initialize dhtmlxTimePicker on a page, you need to take the following simple steps:
 
-- [Download the TimePicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
 - [Initialize TimePicker](#initialize-timepicker) with the object constructor
@@ -36,7 +39,9 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -61,7 +66,7 @@ Initialize TimePicker with the **`dhx.Timepicker`** object constructor. The cons
 - the HTML container for TimePicker,
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating dhtmlxTimePicker
 var timepicker = new dhx.Timepicker("timepicker_container", {
     // config options
@@ -86,3 +91,7 @@ timepicker.setValue(new Date('January 10, 2019 17:54:00'));
 // set the value as an array
 timepicker.setValue([6,20,"AM"]);
 ~~~
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/3d5u4cxx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

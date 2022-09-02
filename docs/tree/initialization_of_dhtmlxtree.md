@@ -6,9 +6,15 @@ description: You can explore the initialization of Tree in the documentation of 
 
 # Initialization
 
+:::info
+Download the DHTMLX Tree package:
+
+- [as a separate component](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml)
+- [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+:::
+
 To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
-- [Download the Tree package](https://dhtmlx.com/docs/products/dhtmlxTree/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Tree](#initialize-tree) with the object constructor
@@ -34,11 +40,11 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-**Related sample**: [Tree. Initialization with config.data](https://snippet.dhtmlx.com/r49y51k3)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of dhtmlxTree into the header of the created file. The Tree component can be used standalone or as a part of the Suite library.
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of dhtmlxTree into the header of the created file. The Tree component can be used standalone or as a part of the Suite library.
 
 **If you use dhtmlxTree standalone**, you need to include 2 files:
 
@@ -75,7 +81,7 @@ Initialize Tree with the `dhx.Tree` object constructor. The constructor has two 
 - the HTML container for Tree,
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating dhtmlxTree
 var tree = new dhx.Tree("tree_container", {
     checkbox: true
@@ -115,3 +121,7 @@ tree.data.load("../common/dataset.json");
 ~~~
 
 **Related sample**: [Tree. Initialization with data.load()](https://snippet.dhtmlx.com/oz4jd5hc)
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/r49y51k3?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>

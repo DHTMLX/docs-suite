@@ -6,9 +6,12 @@ description: You can explore the initialization of Popup in the documentation of
 
 # Initialization
 
+:::info
+[Download the DHTMLX Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxPopup into an application, you need to take the following simple steps:
 
-- [Download the Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Initialize Popup](#initialize-popup) with the object constructor
 - [Set content into Popup](#set-content)
@@ -32,7 +35,9 @@ To add dhtmlxPopup into an application, you need to take the following simple st
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -61,23 +66,12 @@ To show a created popup on a page, you should call the [](popup/api/popup_show_m
 
 ### Set content
 
-There are several ways of adding content into the dhtmlxPopup:
+There are several ways of adding content into DHTMLX Popup:
 
 - by using [attachHTML()](popup/api/popup_attachhtml_method.md) to attach some HTML content into a popup 
 
-~~~js
-var popup = new dhx.Popup();
-popup.attachHTML("<h1>Hello, I'm popup</h1>");
-popup.show("popup");
-~~~
-
-**Related sample**: [Popup. HTML content](https://snippet.dhtmlx.com/ajv5qqxq)
+<iframe src="https://snippet.dhtmlx.com/ajv5qqxq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="300"></iframe>
 
 - by calling [attach()](popup/api/popup_attach_method.md) to add other DHTMLX components into a popup
 
-~~~js
-popup.attach("Timepicker");
-popup.show();
-~~~
-
-**Related sample**: [Popup. Attach Timepicker](https://snippet.dhtmlx.com/7x6hlbqx)
+<iframe src="https://snippet.dhtmlx.com/7x6hlbqx?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>

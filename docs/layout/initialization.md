@@ -47,8 +47,6 @@ To add DHTMLX Layout into an application, you need to take the following simple 
 </html>
 ~~~
 
-**Related sample**: [Layout. Initialization](https://snippet.dhtmlx.com/ls3cbcys)
-
 ## Include source files
 
 Unpack the downloaded package into a folder of your project.
@@ -130,3 +128,7 @@ See the list of Layout properties [here](layout/api/api_overview.md#layout-prope
 There is also a set of properties you can specify for a Layout cell to configure it according to your needs. 
 
 You will find the detailed information on configuration options of the cell object in the [Layout API overview](layout/api/api_overview.md#cell-properties) article.
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/ls3cbcys?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

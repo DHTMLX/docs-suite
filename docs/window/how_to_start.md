@@ -6,9 +6,12 @@ description: You can explore the initialization of Window in the documentation o
 
 # Initialization
 
+:::info
+[Download the DHTMLX Window package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To initialize dhtmlxWindow on a page, you need to take the following simple steps:
 
-- [Download the dhtmlxWindow package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Initialize Window](#initialize-window) with the object constructor
 - [Set content](#set-content) into a created window
@@ -35,11 +38,11 @@ To initialize dhtmlxWindow on a page, you need to take the following simple step
 </html>
 ~~~
 
-**Related sample**: [Window. Initialization](https://snippet.dhtmlx.com/6qqezjxe)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -57,7 +60,7 @@ Initialize Window with the `dhx.Window` object constructor. The constructor take
 
 {{note Don't use **window** as a variable name for dhxWindow object, since it is reserved for the browser window.}}
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating dhtmlxWindow
 var dhxWindow = new dhx.Window({
     modal: false,
@@ -67,7 +70,6 @@ var dhxWindow = new dhx.Window({
 dhxWindow.show();
 ~~~
 
-**Related sample**: [Window. Initialization](https://snippet.dhtmlx.com/6qqezjxe)
 
 {{note To show a created window on a page, you should call the [show()](window/api/window_show_method.md) method after initialization of the component.}}
 
@@ -81,30 +83,15 @@ The detailed information on Window configuration options can be found in the [Wi
 
 There are several ways of adding content into the dhtmlxWindow:
 
+- via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization
+
+<iframe src="https://snippet.dhtmlx.com/6qqezjxe?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
 - by using [](window/api/window_attachhtml_method.md) to attach some HTML content into a window on the fly
 
-~~~js
-var dhxWindow = new dhx.Window({title: "Window"});
-var html = "<h1>Header</h1><p>paragraph</p>";
-dhxWindow.attachHTML(html);
-dhxWindow.show();
-~~~
-
-**Related sample**: [Window. Attach HTML](https://snippet.dhtmlx.com/6uelt44m)
+<iframe src="https://snippet.dhtmlx.com/6uelt44m?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 - by calling [](window/api/window_attach_method.md) to attach other DHTMLX components
 
-~~~js
-dhxWindow.attach("richtext",{mode: "document"});
-dhxWindow.show();
-~~~
+<iframe src="https://snippet.dhtmlx.com/t9ncuuou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
-**Related sample**: [Window. Attach widget](https://snippet.dhtmlx.com/t9ncuuou)
-
-- via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization
-
-~~~js
-var dhxWindow = new dhx.Window({
-	htmlContent:"<h1>Header</h1><p>paragraph</p>"
-});
-~~~

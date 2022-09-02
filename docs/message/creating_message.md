@@ -6,13 +6,15 @@ description: You can explore the initialization of Message in the documentation 
 
 # Initialization
 
+:::info
+[Download the DHTMLX Message package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add a message on a page, you should take the following simple steps:
 
-- [Initialization](#initialization)
-  - [Include source files](#include-source-files)
-  - [Create a container](#create-a-container)
-  - [Create necessary message box](#create-necessary-message-box)
-    - [Configuration properties](#configuration-properties)
+- [Include source files](#include-source-files)
+- [Create a container](#create-a-container)
+- [Create necessary message box](#create-necessary-message-box)
 
 ~~~html
 <!DOCTYPE html>
@@ -40,7 +42,9 @@ To add a message on a page, you should take the following simple steps:
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
