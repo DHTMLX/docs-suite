@@ -9,6 +9,24 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
 
+Version 8.0 
+---------------
+
+Released on ...
+
+#### Toolbar
+
+- DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
+
+#### Grid
+
+- DatePicker editor. The ability to clear the value of a cell
+- The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event
+
+#### Tree
+
+- New [`beforeAutoLoad`](tree/api/tree_beforeautoload_event.md) and [`afterAutoLoad`](tree/api/tree_afterautoload_event.md) events
+
 Version 7.3.6
 -------------------
 

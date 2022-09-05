@@ -2203,6 +2203,7 @@ module.exports = {
                     "grid/api/grid_beforecolumnshow_event",
                     "grid/api/grid_beforeeditend_event",
                     "grid/api/grid_beforeeditstart_event",
+                    "grid/api/grid_beforefilter_event",
                     "grid/api/grid_beforekeydown_event",
                     "grid/api/grid_beforeresizestart_event",
                     "grid/api/grid_beforerowdrag_event",
@@ -3763,6 +3764,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "tree/api/tree_afterautoload_event",
                     "tree/api/tree_aftercheck_event",
                     "tree/api/tree_aftercollapse_event",
                     "tree/api/tree_afterdrag_event",
@@ -3770,6 +3772,7 @@ module.exports = {
                     "tree/api/tree_aftereditend_event",
                     "tree/api/tree_aftereditstart_event",
                     "tree/api/tree_afterexpand_event",
+                    "tree/api/tree_beforeautoload_event",
                     "tree/api/tree_beforecheck_event",
                     "tree/api/tree_beforecollapse_event",
                     "tree/api/tree_beforedrag_event",

@@ -18,6 +18,12 @@ tree.data.load("/backend/autoload?id=tree");
 
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
+:::info
+To control the process of auto-load, use the related [beforeAutoLoad](tree/api/tree_beforeautoload_event.md) and [afterAutoLoad](tree/api/tree_afterautoload_event.md) events
+:::
+
+<br>
+
 Here is an example of sending an HTTP GET request to the server using the Express library:
 
 ~~~js

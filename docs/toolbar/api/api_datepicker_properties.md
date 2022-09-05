@@ -10,6 +10,7 @@ description: You can explore the Datepicker properties of Toolbar in the documen
 - `css` - *string, string[]* - adds style classes to a Datepicker control
 - `dateFormat` - *string* - the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
 - `disabled` - *boolean* - defines whether a Datepicker control is disabled
+- `editable` - *boolean* - optional, allows a user to enter the value of the control manually; *false* by default
 - `hidden` - *boolean* - defines whether a Datepicker is hidden
 - `icon` - *string* - optional, an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
 - `id` - *string* - the id of a control, auto-generated if not set
