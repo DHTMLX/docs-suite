@@ -1467,11 +1467,13 @@ module.exports = {
                       "form/api/radiogroup/radiogroup_getproperties_method",
                       "form/api/radiogroup/radiogroup_getvalue_method",
                       "form/api/radiogroup/radiogroup_hide_method",
+                      "form/api/radiogroup/radiogroup_hideitem_method",
                       "form/api/radiogroup/radiogroup_isdisabled_method",
                       "form/api/radiogroup/radiogroup_isvisible_method",
                       "form/api/radiogroup/radiogroup_setproperties_method",
                       "form/api/radiogroup/radiogroup_setvalue_method",
                       "form/api/radiogroup/radiogroup_show_method",
+                      "form/api/radiogroup/radiogroup_showitem_method",
                       "form/api/radiogroup/radiogroup_validate_method"
                     ],
                   },

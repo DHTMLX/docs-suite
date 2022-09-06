@@ -8,6 +8,30 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.0 
+---------------
+
+Released on ...
+
+#### Toolbar
+
+- DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
+
+#### Grid
+
+- DatePicker editor. The ability to clear the value of a cell
+- The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
+
+#### Form
+
+- RadioGroup control. New methods: [`hideItem()`](form/api/radiogroup/radiogroup_hideitem_method.md) and [`showItem()`](form/api/radiogroup/radiogroup_showitem_method.md)
+
+#### Tree
+
+- New [`beforeAutoLoad`](tree/api/tree_beforeautoload_event.md) and [`afterAutoLoad`](tree/api/tree_afterautoload_event.md) events
+
+
+
 Version 7.3.7
 --------------
 
@@ -26,24 +50,6 @@ Released on September 5, 2022
 - Toolbar. Fix the issue with the `label` property of the [Datepicker](toolbar/api/api_datepicker_properties.md) control
 - Toolbar. Fix the issue with the `label` property of the [Input](toolbar/api/api_input_properties.md) control
 - TreeCollection. Fix work of the `add` and `smartFilter` properties of the **config** parameter of the [`filter()`](tree_collection/api/treecollection_filter_method.md) method
-
-Version 8.0 
----------------
-
-Released on ...
-
-#### Toolbar
-
-- DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
-
-#### Grid
-
-- DatePicker editor. The ability to clear the value of a cell
-- The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event
-
-#### Tree
-
-- New [`beforeAutoLoad`](tree/api/tree_beforeautoload_event.md) and [`afterAutoLoad`](tree/api/tree_afterautoload_event.md) events
 
 Version 7.3.6
 -------------------

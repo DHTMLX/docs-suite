@@ -420,11 +420,13 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/radiogroup/radiogroup_getproperties_method.md) | @getshort(form/api/radiogroup/radiogroup_getproperties_method.md) |
 | [](form/api/radiogroup/radiogroup_getvalue_method.md)      | @getshort(form/api/radiogroup/radiogroup_getvalue_method.md)      |
 | [](form/api/radiogroup/radiogroup_hide_method.md)          | @getshort(form/api/radiogroup/radiogroup_hide_method.md)          |
+| [](form/api/radiogroup/radiogroup_hideitem_method.md)          | @getshort(form/api/radiogroup/radiogroup_hideitem_method.md)          |
 | [](form/api/radiogroup/radiogroup_isdisabled_method.md)    | @getshort(form/api/radiogroup/radiogroup_isdisabled_method.md)    |
 | [](form/api/radiogroup/radiogroup_isvisible_method.md)     | @getshort(form/api/radiogroup/radiogroup_isvisible_method.md)     |
 | [](form/api/radiogroup/radiogroup_setproperties_method.md) | @getshort(form/api/radiogroup/radiogroup_setproperties_method.md) |
 | [](form/api/radiogroup/radiogroup_setvalue_method.md)      | @getshort(form/api/radiogroup/radiogroup_setvalue_method.md)      |
 | [](form/api/radiogroup/radiogroup_show_method.md)          | @getshort(form/api/radiogroup/radiogroup_show_method.md)          |
+| [](form/api/radiogroup/radiogroup_showitem_method.md)          | @getshort(form/api/radiogroup/radiogroup_showitem_method.md)          |
 | [](form/api/radiogroup/radiogroup_validate_method.md)      | @getshort(form/api/radiogroup/radiogroup_validate_method.md)      |
 
 ### RadioGroup events
