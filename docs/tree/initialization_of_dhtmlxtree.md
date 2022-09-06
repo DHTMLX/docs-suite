@@ -96,31 +96,7 @@ See the detailed information on configuration properties of Tree in the [Tree AP
 
 ## Load data into Tree
 
-Finally, you are to load the tree with data. You can load inline or external data into the tree.
-
-- to load data from a local source, use the **parse()** method of the Tree Collection object:
-
-~~~js
-var tree = new dhx.Tree("tree_container",{
-	 // config options
-});
-
-tree.data.parse(data);
-~~~
-
-**Related sample**: [Tree. Initialization with data.parse()](https://snippet.dhtmlx.com/orm283hq)
-
-- to load data from an external file, use the **load()** method of the Tree Collection object:
-
-~~~js
-var tree = new dhx.Tree("tree_container",{
-	// config options
-});
-
-tree.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [Tree. Initialization with data.load()](https://snippet.dhtmlx.com/oz4jd5hc)
+Detailed information on loading data into Tree is given in the [](tree/loading_data.md) article.
 
 ## Example
 

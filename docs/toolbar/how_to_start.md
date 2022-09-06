@@ -76,47 +76,6 @@ See the detailed information on configuration properties of Toolbar in the [Tool
 
 ## Load data into Toolbar
 
-There are two handy ways of loading data, i.e. a set of controls into Toolbar:
-
-- from an external file with the help of the **load()** method of tree collection:
-
-~~~js
-var toolbar = new dhx.Toolbar("toolbar_container");
-toolbar.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [Toolbar. Initialization with data.load()](https://snippet.dhtmlx.com/i5a9mx2i)
-
-- from a local source using the **parse()** method of tree collection:
-
-~~~js
-var data = [
-	{
-    	type: "button",
-    	icon: "dxi-plus",
-    	value: "new"
-    },
-    {
-    	type: "button",
-    	icon: "dxi-folder-open",
-    	value: "open"
-    },
-    {
-    	type: "button",
-    	icon: "dxi-vault",
-    	value: "save"
-    },
-    {
-    	type: "button",
-    	icon: "dxi-delete",
-    	value: "delete"
-    }
-];
-
-var toolbar = new dhx.Toolbar("toolbar_container", {css:"dhx_toolbar--bordered" });
-toolbar.data.parse(data);
-~~~
-
 Detailed information on loading data into Toolbar is given in the [](toolbar/load_data.md) article.
 
 ## Example

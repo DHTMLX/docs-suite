@@ -8,8 +8,8 @@ description: You can explore the data loading of Tree in the documentation of th
 
 There are several simple ways of loading data into dhtmlxTree:
 
-- load data from an external file
-- load data from a local data source
+- on initialization of Tree
+- after initialization of Tree
 
 First, you need to prepare a data set that will be loaded into Tree.
 
@@ -18,7 +18,7 @@ First, you need to prepare a data set that will be loaded into Tree.
 dhtmlxTree expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
     {
 		"value": "Books",
 		"id": "books",
@@ -109,7 +109,37 @@ Each object in the data set contains configuration of a tree item. The structure
     </tbody>
 </table>
 
-## External data loading
+## Loading data on initialization
+
+You can load a [predefined data set](#preparing-data-set) into Tree on the initialization stage. Use the [data](tree/api/tree_data_config.md) configuration property, as in:
+
+~~~js
+const tree = new dhx.Tree("tree_container", {
+  	data: dataset
+});
+~~~
+
+**Related sample**: [Tree. Initialization with config.data](https://snippet.dhtmlx.com/r49y51k3)
+
+## Loading data after initialization
+
+There are two ways to load data into Sidebar after its initialization:
+
+- [from a local data source](#loading-from-local-source)
+- [from an external file](#external-data-loading)
+
+### Loading from local source
+
+To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+
+~~~js
+var tree = new dhx.Tree("tree_container");
+tree.data.parse(dataset);
+~~~
+
+**Related sample**: [Tree. Initialization with data.parse()](https://snippet.dhtmlx.com/orm283hq)
+
+### External data loading
 
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
@@ -130,16 +160,6 @@ tree.data.load("/some/data").then(function(){
 });
 ~~~
 
-## Loading from local source
-
-To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
-
-~~~js
-var tree = new dhx.Tree("tree_container");
-tree.data.parse(dataset);
-~~~
-
-**Related sample**: [Tree. Initialization with data.parse()](https://snippet.dhtmlx.com/orm283hq)
 
 ## Saving and restoring state
 

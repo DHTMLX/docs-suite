@@ -78,42 +78,6 @@ The detailed information on Sidebar configuration options can be found in the [S
 
 ## Load data into Sidebar
 
-There are two handy ways of loading data, i.e. a set of controls into Sidebar:
-
-- from an external file with the help of the **load()** method of tree collection:
-
-~~~js
-var sidebar = new dhx.Sidebar("sidebar_container");
-sidebar.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [Sidebar. Initialization with data.load()](https://snippet.dhtmlx.com/mq4ggjmm)
-
-- from a local source using the **parse()** method of tree collection:
-
-~~~js
-var data = [
-    {
-        "id": "dashboard",
-        "value": "Dashboard",
-        "icon": "mdi mdi-view-dashboard"
-    },
-    {
-        "id": "statistics",
-        "value": "Statistics",
-        "icon": "mdi mdi-chart-line"
-    },
-    {
-        "id": "reports",
-        "value": "Reports",
-        "icon": "mdi mdi-file-chart"
-    }
-];
-
-var sidebar = new dhx.Sidebar("sidebar_container", {css: "dhx_widget--border_right" });
-sidebar.data.parse(data);
-~~~
-
 Detailed information on loading data into Sidebar is given in the article [](sidebar/data_loading.md).
 
 ## Example

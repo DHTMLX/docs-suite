@@ -110,39 +110,6 @@ See the detailed information on configuration properties of TreeGrid in the [Tre
 
 ## Load data into TreeGrid
 
-There are several handy ways of loading data into TreeGrid. You can add data both before and after initialization of the component.
-
-- via the data option in the configuration object of Grid:
-
-~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [
-        // columns config
-    ],
-    data: dataset 
-});
-~~~
-
-- from an external file with the help of the **load()** method of data collection:
-
-~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [
-        // columns config
-    ]
-});
-treegrid.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [TreeGrid. Initialization with data.load()](https://snippet.dhtmlx.com/44rmxlmq)
-
-- from a local source using the **parse** method of data collection:
-
-~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
-treegrid.data.parse(dataset);
-~~~
-
 Detailed information on loading data into TreeGrid is given in the [](treegrid/data_loading.md) article.
 
 ## Example
