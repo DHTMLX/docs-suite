@@ -13,6 +13,8 @@ Download the DHTMLX Calendar package:
 - [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 :::
 
+There are two ways of initializing DHTMLX Calendar: inside a container or inside a popup. Both ways are described below in detail.
+
 To use DHTMLX Calendar in your application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
