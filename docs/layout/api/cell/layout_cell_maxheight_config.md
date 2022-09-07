@@ -11,9 +11,9 @@ description: You can explore the maxHeight config of Layout in the documentation
 @signature: {'maxHeight?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", maxHeight: "100px"}
+        { header: "Cell header", maxHeight: "100px"}
     ]
 });
 

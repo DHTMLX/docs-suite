@@ -11,7 +11,7 @@ description: You can explore the data config of DataView in the documentation of
 @signature: {'data?: DataCollection<any> | any[];'}
 
 @example:
-var dataview = new dhx.DataView("dataview_container", {
+const dataview = new dhx.DataView("dataview_container", {
     data: [
     	{
 			"value": "Ben",

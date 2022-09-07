@@ -13,7 +13,7 @@ description: You can explore the attach method of the Container control of Form 
 @params:
 `widget` - the DHTMLX widget
 
-@example: const form = new dhx.Form("form", {
+@example: const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "40px",
     rows: [

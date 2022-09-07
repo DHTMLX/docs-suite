@@ -11,9 +11,9 @@ description: You can explore the maxWidth config of Layout in the documentation 
 @signature: {'maxWidth?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", maxWidth: "700px"}
+        { header: "Cell header", maxWidth: "700px"}
     ]
 });
 

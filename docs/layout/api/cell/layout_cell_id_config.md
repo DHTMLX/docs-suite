@@ -11,12 +11,11 @@ description: You can explore the id config of Layout in the documentation of the
 @signature: {'id?: string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
-        cols: [
-            { header: "Cell header", id:"1"}
-        ]
-    }
-);
+const layout = new dhx.Layout("layout_container", {
+    cols: [
+        { header: "Cell header", id:"1"}
+    ]
+});
 
 @descr:
 

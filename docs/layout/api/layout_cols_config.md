@@ -11,7 +11,7 @@ description: You can explore the cols config of Layout in the documentation of t
 @signature: {'cols?: ICellConfig[] | ILayoutConfig[];'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     header: "Main Block Header",
     cols: [
         {

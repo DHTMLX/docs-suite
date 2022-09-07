@@ -14,7 +14,7 @@ description: You can explore the getSortingState method of Grid in the documenta
 An object with the current state of sorting data in the grid.
 
 @example:
-var state = grid.getSortingState(); 
+const state = grid.getSortingState(); 
 // -> {dir: "desc", by: "country"}
 
 @descr:

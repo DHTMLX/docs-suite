@@ -17,7 +17,7 @@ description: You can explore the css config of DataView in the documentation of 
     }
 </style>
  
-var dataview = new dhx.DataView("dataview", {itemsInRow: 5, css: "bg-gray"});
+const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5, css: "bg-gray"});
 
 @descr: 
 
@@ -37,13 +37,13 @@ There is no need to use any additional custom classes.
     }
 </style>
  
-var dataview = new dhx.DataView("dataview", {itemsInRow: 3});
+const dataview = new dhx.DataView("dataview_container", {itemsInRow: 3});
 ~~~
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of DataView:
 
 ~~~js
-var dataview = new dhx.DataView("dataview", {
+const dataview = new dhx.DataView("dataview_container", {
     css: "dhx_widget--bg_gray"
 });
 ~~~

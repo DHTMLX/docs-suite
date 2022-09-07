@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Text control of Form in 
 A string, or number with the current value of the control.
 
 @example:
-var value = form.getItem("text").getValue();
+const value = form.getItem("text").getValue();
 // -> "I am a nice text"
 
 @descr:

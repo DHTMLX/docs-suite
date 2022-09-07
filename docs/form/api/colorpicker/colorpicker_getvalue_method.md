@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Colorpicker control of F
 A string with the current value of the control.
 
 @example:
-var value = form.getItem("colorpicker").getValue();
+const value = form.getItem("colorpicker").getValue();
 // -> "#90D2AF"
 
 @descr:

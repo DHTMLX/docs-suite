@@ -13,7 +13,7 @@ description: You can explore the autoEmptyRow config of Grid in the documentatio
 @default: true
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

@@ -11,7 +11,7 @@ description: You can explore the data config of Grid in the documentation of the
 @signature: {'data?: any[];'}
 
 @example:
-var dataset = [
+const dataset = [
     {
         "country": "China",
         "population": "1415045928",
@@ -29,7 +29,7 @@ var dataset = [
     // more columns
 ];
 
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
         // columns config
     ],
@@ -45,7 +45,7 @@ var grid = new dhx.Grid("grid_container", {
 1. Starting with v7.1, you can specify the height for the necessary row of data via setting the number value to the <b>height</b> option when defining the data set: 
 
 ~~~js {5}
-var dataset = [
+const dataset = [
 	{
 		"country": "China",
 		"population": "1415045928",
@@ -67,7 +67,7 @@ var dataset = [
 2. Starting with v7.1, it is possible to use the Date() object when specifying data for the "Date" column:
 
 ~~~js {4,8}
-var dataset = [
+const dataset = [
     {
         "country": "China",
         "date": new Date()

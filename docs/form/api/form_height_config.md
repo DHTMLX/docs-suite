@@ -11,7 +11,7 @@ description: You can explore the height Config of Form in the documentation of t
 @signature: {'height?: string | number | "content";'}
 
 @example:
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     height: "300px", // sets the common height for rows 
     padding: "20px",   

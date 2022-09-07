@@ -11,7 +11,7 @@ description: You can explore the align config of Layout in the documentation of 
 @signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
 
 @example:
-var layout = dhx.Layout("layout_container", {
+const layout = dhx.Layout("layout_container", {
    rows: [
         {
             align: "center",

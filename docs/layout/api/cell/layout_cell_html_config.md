@@ -11,9 +11,9 @@ description: You can explore the html config of Layout in the documentation of t
 @signature: {'html?: string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", html: "Hello world"}
+        { header: "Cell header", html: "Hello world"}
     ]
 });
 

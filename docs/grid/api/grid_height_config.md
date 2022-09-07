@@ -11,7 +11,7 @@ description: You can explore the height config of Grid in the documentation of t
 @signature: {'height?: number;'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

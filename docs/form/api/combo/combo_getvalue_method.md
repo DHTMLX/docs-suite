@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Combo Box control of For
 A string, or array with the id(s) of the items from data collection that are currently selected in the control.
 
 @example:
-var value = form.getItem("combo").getValue();
+const value = form.getItem("combo").getValue();
 // -> "id_2"
 
 @descr:

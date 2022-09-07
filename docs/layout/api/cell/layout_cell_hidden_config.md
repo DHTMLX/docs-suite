@@ -11,9 +11,9 @@ description: You can explore the hidden config of Layout in the documentation of
 @signature: {'hidden?: boolean;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", hidden:true}
+        { header: "Cell header", hidden:true}
     ]
 });
 

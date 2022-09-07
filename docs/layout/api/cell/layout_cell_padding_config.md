@@ -11,7 +11,7 @@ description: You can explore the padding config of Layout in the documentation o
 @signature: {'padding?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container",{
+const layout = new dhx.Layout("layout_container",{
 	padding: 10,
 	css: "dhx_layout-cell--bordered",
 	cols: [

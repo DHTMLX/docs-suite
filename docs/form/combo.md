@@ -19,7 +19,7 @@ An input that represents an advanced select box with a set of options. It is abl
 You can easily add a Combo control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
 	rows: [
     	{
         	type: "combo",
@@ -55,7 +55,7 @@ You can manipulate a Combo control by using methods or events of the object retu
 For example, you can get the value of the control:
 
 ~~~js
-var value = form.getItem("Combo").getValue();
+const value = form.getItem("Combo").getValue();
 ~~~
 
 ### Methods
@@ -73,7 +73,7 @@ There is a possibility to use methods of DHTMLX Combobox via the [getWidget()](f
 For example, you can set focus in the Combo input without opening a popup with options. To do this, you need to get the widget attached to the Combo control and then use the [focus()](combobox/api/combobox_focus_method.md) method of this widget.
 
 ~~~js
-var combo = form.getItem("combo").getWidget();  // -> ComboBox
+const combo = form.getItem("combo").getWidget();  // -> ComboBox
 combo.focus(); // sets focus in the input
 ~~~
 

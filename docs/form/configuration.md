@@ -13,7 +13,7 @@ The [](form/api/form_align_config.md) property allows you to set aligning direct
 You can apply various options of alignment for different [control groups](form/configuration.md#grouping-controls-in-form) by specifying the [](form/api/form_align_config.md) property for the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md):
 
 ~~~js
-const form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     height: "150px",
     width: "400px",
@@ -61,7 +61,7 @@ const form = new dhx.Form("form", {
 You can combine controls into groups by placing controls into rows and columns with any level of complexity. To do this, use the [](form/api/form_rows_config.md) and [](form/api/form_cols_config.md) options in the configuration object of the component:
 
 ~~~js {3,6,12,19,43,50}
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     cols: [
 		{
@@ -146,7 +146,7 @@ var form = new dhx.Form("form_container", {
 By default, Form is enabled. To make Form disabled, set the [](form/api/form_disabled_config.md) configuration property to *true*:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     disabled: true
 });
@@ -157,7 +157,7 @@ var form = new dhx.Form("form_container", {
 By default, Form is visible. To make Form hidden, set the [](form/api/form_hidden_config.md) configuration property to *true*:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     hidden: true
 });
@@ -168,7 +168,7 @@ var form = new dhx.Form("form_container", {
 To generate space around a [control group](form/configuration.md#grouping-controls-in-form), make use of the [](form/api/form_padding_config.md) parameter:
 
 ~~~js
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "20px",  // sets padding for rows 
     rows: [
@@ -201,7 +201,7 @@ var form = new dhx.Form("form", {
 You can define a title for a [control group](form/configuration.md#grouping-controls-in-form) with the help of the [](form/api/form_title_config.md) property:
 
 ~~~js
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "20px",  
     title: "Form", // sets the title for rows
@@ -232,7 +232,7 @@ var form = new dhx.Form("form", {
 You can adjust sizes of a [control group](form/configuration.md#grouping-controls-in-form) with the corresponding properties [](form/api/form_height_config.md) and [](form/api/form_width_config.md):
 
 ~~~js
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     height: "200px", // sets the common height for rows 
     width: "400px", // sets the common width for rows

@@ -11,9 +11,9 @@ description: You can explore the header config of Layout in the documentation of
 @signature: {'header?: string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header"}
+        { header: "Cell header"}
     ]
 });
 

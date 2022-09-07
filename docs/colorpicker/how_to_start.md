@@ -6,11 +6,14 @@ description: You can explore the initialization of Colorpicker in the documentat
 
 # Initialization
 
+:::info
+[Download the DHTMLX Colorpicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 There are two ways of initializing DHTMLX Colorpicker: inside a container or inside a popup. Both ways are described below in detail.
 
 In general, to create DHTMLX Colorpicker on a page, you need to take the following simple steps:
 
-- [Download the DHTMLX Suite package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Initialize Colorpicker](#initialize-colorpicker) with the object constructor
 - [Set initially selected color (optional)](#select-initial-color-optional)
@@ -34,12 +37,12 @@ In general, to create DHTMLX Colorpicker on a page, you need to take the followi
     </body>
 </html>
 ~~~
-  
+
 ## Include source files
 
-[Download the DHTMLX Suite package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project.
+Unpack the downloaded package into a folder of your project.
 
-Create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*

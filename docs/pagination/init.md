@@ -6,12 +6,15 @@ description: You can explore the initialization of Pagination in the documentati
 
 # Initialization
 
+:::info
+[Download the DHTMLX Pagination package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxPagination into an application, you need to take the following simple steps:
 
-- [Download the dhtmlxPagination](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) package and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create two containers](#create-containers)
-- [Add a related component](#add-a-related-widget)
+- [Add a related widget](#initialize-a-related-widget) (for example, DataView, List, Grid, Tree)
 - [Initialize Pagination](#initialize-pagination) with the object constructor
 
 ~~~html
@@ -26,7 +29,7 @@ To add dhtmlxPagination into an application, you need to take the following simp
         <div id="widget_container"></div>
         <div id="pagination_container"></div>
         <script>
-            // creating a related component
+            // creating a related widget
             const widget = new dhx.List("widget_container", {
 				css: "dhx_widget--bordered",
 				keyNavigation: true
@@ -56,7 +59,9 @@ To add dhtmlxPagination into an application, you need to take the following simp
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -78,7 +83,7 @@ Add two containers:
 <div id="pagination_container"></div>
 ~~~
 
-## Add a related widget
+## Initialize a related widget
 
 {{note dhtmlxPagination can be used in conjunction with data components like [List](list.md), [DataView](dataview.md), [Tree](tree.md), [Grid](grid.md), or [TreeGrid](treegrid.md).}}
 
@@ -86,7 +91,7 @@ Choose the widget you want to link to the Pagination component, for example, dht
 
 1\. Initialize the widget with the object constructor, like this: 
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating a related dhtmlxList widget
 const widget = new dhx.List("widget_container", {
     css: "dhx_widget--bordered",
@@ -101,7 +106,7 @@ The constructor has two parameters:
 
 2\. Load data into the widget:
 
-~~~js title="script.js"
+~~~js title="index.js"
 // loading data into the created dhtmlxList 
 widget.data.parse(widget_data);
 ~~~
@@ -113,7 +118,7 @@ Initialize pagination with the *dhx.Pagination* object constructor. The construc
 - the HTML container for Pagination, 
 - optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
-~~~js title="script.js"
+~~~js title="index.js"
 // creating dhtmlxPagination
 const pagination = new dhx.Pagination("pagination_container", {
 	css: "dhx_widget--bordered",
@@ -126,3 +131,4 @@ const pagination = new dhx.Pagination("pagination_container", {
 There is a set of properties you can specify in the Pagination configuration object (the second parameter of the constructor function). 
 
 See the detailed information on configuration properties of Pagination in the [Pagination API overview](pagination/api/api_overview.md#properties) article.
+

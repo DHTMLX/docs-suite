@@ -11,8 +11,8 @@ description: You can explore the dragCopy config of DataView in the documentatio
 @signature: {'dragCopy?: boolean;'}
 
 @example:
-var source = new dhx.DataView("dataview-source", {dragMode: "source", dragCopy: true});
-var target = new dhx.DataView("dataview-target", {dragMode: "target", dragCopy: true});
+const source = new dhx.DataView("dataview_source", {dragMode: "source", dragCopy: true});
+const target = new dhx.DataView("dataview_target", {dragMode: "target", dragCopy: true});
 
 @descr:
 

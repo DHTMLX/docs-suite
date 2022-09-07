@@ -11,9 +11,9 @@ description: You can explore the resizable config of Layout in the documentation
 @signature: {'resizable?: boolean;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", resizable:true}
+        { header: "Cell header", resizable:true}
     ]
 });
 

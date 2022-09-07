@@ -13,7 +13,7 @@ description: You can explore the footerRowHeight config of Grid in the documenta
 @default: 40
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

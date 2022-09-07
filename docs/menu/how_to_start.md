@@ -6,9 +6,12 @@ description: You can explore the initialization of Menu in the documentation of 
 
 # Initialization
 
+:::info
+[Download the DHTMLX Menu package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxMenu into an application, you need to take the following simple steps:
 
-- [Download the Menu package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Menu](#initialize-menu) with the object constructor
@@ -32,11 +35,11 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 </html>
 ~~~
 
-**Related sample**: [Menu. Initialization with config.data](https://snippet.dhtmlx.com/cg62qa9v)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -71,59 +74,8 @@ You can find the full list of Menu configuration properties in the [Menu API ove
 
 ## Load data into Menu
 
-There are two handy ways of loading data, i.e. a set of controls into Menu:
-
-- from an external file with the help of the **load()** method of tree collection:
-
-~~~js
-var menu = new dhx.Menu("menu_container");
-menu.data.load("../common/dataset.json");
-~~~
-
-- from a local source using the **parse()** method of tree collection:
-
-~~~js
-var data = [
-	{
-    	value: "File", 
-		items: [
-        	{
-       			value: "New File",
-        	},
-        	{
-        		value: "New window",
-        	},
-        	{
-        		value: "Open File",
-        	},
-        	{
-        		value: "Save File",
-        	}
-        ]
-	},
-	{
-    	value: "Edit", 					
-        items: [
-			{
-				value: "Undo"
-			},
-			{
-				value:  "Redo"
-			},
-			{
-				value: "Cut"
-			},
-			{
-				value: "Copy"
-			}
-		 ]
-	}
-];
-
-var menu = new dhx.Menu("menu_container");
-menu.data.parse(data);
-~~~
-
-**Related sample**: [Menu. Initialization with data.parse()](https://snippet.dhtmlx.com/8y2b1zqm)
-
 Detailed information on loading data into Menu is given in the article [](menu/data_loading.md).
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/cg62qa9v?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

@@ -21,7 +21,7 @@ grid.events.on("dragColumnOut", function(data, events) {
 
 @descr:
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 

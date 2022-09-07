@@ -11,7 +11,7 @@ description: You can explore the disabled Config of Form in the documentation of
 @signature: {'disabled?: boolean;'}
 
 @example:
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	disabled: true
 });

@@ -13,7 +13,7 @@ description: You can explore the keyNavigation config of Grid in the documentati
 @default: true
 
 @example:
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

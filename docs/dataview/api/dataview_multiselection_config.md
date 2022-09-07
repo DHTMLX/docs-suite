@@ -13,7 +13,7 @@ description: You can explore the multiselection config of DataView in the docume
 @values: true, false, "click", "ctrlClick"
 
 @example:
-var dataview = new dhx.DataView("list", {multiselection:true});
+const dataview = new dhx.DataView("dataview_container", {multiselection:true});
 
 @descr:
 

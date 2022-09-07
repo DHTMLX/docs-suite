@@ -14,7 +14,7 @@ description: You can explore the getCells method of Grid in the documentation of
 An array with configuration objects of selected cells.
 
 @example:
-var selectedCells = grid.selection.getCells();
+const selectedCells = grid.selection.getCells();
 // -> [{…}, {…}, {…}]
 0: {row: {…}, column: {…}}
 1: {row: {…}, column: {…}}

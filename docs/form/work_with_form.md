@@ -12,7 +12,7 @@ You can get current values/states of Form controls with the help of the [](form/
 
 ~~~js
 // default functionality
-var state = form.getValue();
+const state = form.getValue();
 //->{"name":"John Doe","email":"jd@mail.com", "agree":true}
 ~~~
 
@@ -22,7 +22,7 @@ It is also possible to get this information in the form of FormData. For this, y
 
 ~~~js
 // returning form details as FormData
-var state = form.getValue(true);
+const state = form.getValue(true);
 ~~~
 
 **Related sample**: [Form. Get value](https://snippet.dhtmlx.com/odod5v12)
@@ -255,7 +255,7 @@ After a user has finished filling out the form according to the specified rules,
 To validate a form, make use of the [](form/api/form_validate_method.md) method:
 
 ~~~js
-var result = form.validate();
+const result = form.validate();
 ~~~
 
 The method should return *true*, if all the fields are filled as required, or *false* if there are fields that require attention.
@@ -286,7 +286,7 @@ To send a form to the server, make use of the [](form/api/form_send_method.md) m
 and returns a promise object.
 
 ~~~js
-var send = form.send("myserver.com", "POST");
+const send = form.send("myserver.com", "POST");
 ~~~
 
 To control the process of a from sending, you can make use of the related events: [](form/api/form_beforesend_event.md) and [](form/api/form_aftersend_event.md):
@@ -305,7 +305,7 @@ form.events.on("AfterSend", function(){
 
 ## Clearing form
 
-The API of dhtmlxForm provides you with flexible ways of clearing a form. There is the [](form/api/form_clear_method.md) method that clears a form either fully or partially, depending on the passed parameter.
+The API of DHTMLX Form provides you with flexible ways of clearing a form. There is the [](form/api/form_clear_method.md) method that clears a form either fully or partially, depending on the passed parameter.
 
 - "value" - clears only form values
 - "validation" - clears form validation

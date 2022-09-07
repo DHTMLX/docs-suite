@@ -13,7 +13,7 @@ description: You can explore the editable config of DataView in the documentatio
 @default: false
 
 @example:
-var dataview = new dhx.DataView("dataview_container", {editable:true});
+const dataview = new dhx.DataView("dataview_container", {editable:true});
 
 @descr:
 

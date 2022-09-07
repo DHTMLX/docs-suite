@@ -6,9 +6,12 @@ description: You can explore the initialization of DataView in the documentation
 
 # Initialization
 
-To initialize dhtmlxDataView on a page, you need to take the following simple steps:
+:::info
+[Download the DHTMLX DataView package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
 
-- [Download the DataView package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
+To initialize DHTMLX DataView on a page, you need to take the following simple steps:
+
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize DataView](#initialize-dataview) with the object constructor
@@ -18,15 +21,15 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxDataView</title>         
+        <title>How to start with DHTMLX DataView</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="dataview_container"></div>
         <script>
-            // creating dhtmlxDataView
-            var dataview = new dhx.DataView("dataview_container", {
+            // creating DHTMLX DataView
+            const dataview = new dhx.DataView("dataview_container", {
     			itemsInRow: 5
 			});
         </script>
@@ -36,10 +39,12 @@ To initialize dhtmlxDataView on a page, you need to take the following simple st
 
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
 
-- suite.js
-- suite.css
+After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
+
+- *suite.js*
+- *suite.css*
 
 ~~~html title="index.html"
 <script type="text/javascript" src="../../codebase/suite.js"></script>
@@ -61,12 +66,18 @@ Initialize DataView with the `dhx.DataView` object constructor. The constructor 
 - the HTML container for DataView,
 - optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
-~~~js title="script.js"
-// creating dhtmlxDataView
-var dataview = new dhx.DataView("dataview_container", {
+~~~js title="index.js"
+// creating DHTMLX DataView
+const dataview = new dhx.DataView("dataview_container", {
     itemsInRow: 5
 });
 ~~~
+
+:::info
+To display data in DataView you should define a [template](dataview/configuration.md/#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.
+
+Another way to display data in DataView is to prepare a data set with the ["value"](dataview/data_loading.md/#preparing-data-set) attribute.
+:::
 
 ### Configuration properties
 
@@ -76,32 +87,10 @@ The detailed information on DataView configuration options can be found in the [
 
 ## Load data into DataView
 
-Finally, you are able to load DataView with data. You can load inline or external data into DataView.
+Detailed information on how to load data into DHTMLX DataView is given in the [Data loading](dataview/data_loading.md) article.
 
-- to load data from a local source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of the Data Collection object:
+## Example
 
-~~~js
-var dataview = new dhx.DataView("dataview_container", {
-	 itemsInRow: 5
-});
+<iframe src="https://snippet.dhtmlx.com/s547z4xr?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="600"></iframe>
 
-dataview.data.parse(data);
-~~~
 
-- to load data from an external file, use the [load()](data_collection/api/datacollection_load_method.md) method of the Data Collection object:
-
-~~~js
-var dataview = new dhx.DataView("dataview_container", {
-	itemsInRow: 5
-});
-
-dataview.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [Dataview. Initialization with data.load()](https://snippet.dhtmlx.com/7rjmp5ol)
-
-:::info
-To display data in DataView you should define a [template](dataview/configuration.md/#template-for-dataview-items) via the [template](dataview/api/dataview_template_config.md) configuration property.
-
-Another way to display data in DataView is to prepare a data set with the ["value"](dataview/data_loading.md/#preparing-data-set) attribute.
-:::

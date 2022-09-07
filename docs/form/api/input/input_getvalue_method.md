@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Input control of Form in
 A string, or number with the current value of the control.
 
 @example:
-var value = form.getItem("input").getValue();
+const value = form.getItem("input").getValue();
 // -> "John"
 
 @descr:

@@ -13,7 +13,7 @@ description: You can explore the selection config of DataView in the documentati
 @default: true
 
 @example:
-var dataview = new dhx.DataView("dataview", {
+const dataview = new dhx.DataView("dataview_container", {
     selection: false
 });
 

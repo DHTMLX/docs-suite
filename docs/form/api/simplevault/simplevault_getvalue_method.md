@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Simple Vault control of 
 An array with the current value of the control.
 
 @example:
-var value = form.getItem("simplevault").getValue();
+const value = form.getItem("simplevault").getValue();
 // -> [{...}, {...}]
 
 @descr:

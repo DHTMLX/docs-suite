@@ -17,7 +17,7 @@ A control intended for creating groups of checkboxes.
 You can easily add a Checkbox control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", { 
+const form = new dhx.Form("form_container", { 
     rows: [
         {
 			id: "checkboxGroup",
@@ -68,7 +68,7 @@ You can manipulate a CheckboxGroup control by using methods or events of the obj
 For example, you can hide a control on a page:
 
 ~~~js
-var value = form.getItem("CheckboxGroup").hide();
+const value = form.getItem("CheckboxGroup").hide();
 ~~~
 
 ### Methods

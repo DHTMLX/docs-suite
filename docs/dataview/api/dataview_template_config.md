@@ -11,10 +11,10 @@ description: You can explore the template config of DataView in the documentatio
 @signature: {'template?: (item: any) => string;'}
 
 @example:
-var dataview = new dhx.DataView("dataview", {
+const dataview = new dhx.DataView("dataview_container", {
 	itemsInRow: 4, 
     template: function(item) {
-		var template = "<div class='item_wrap'>";
+		let template = "<div class='item_wrap'>";
 		template += "<img class='image' src=" + "..images/" + item.thumbnailName + " />";
 		template += "<h2 class='title'>" + item.value + "</h2>";
 		template += "<p class='description'>" + item.shortDescription + "</p>";

@@ -17,7 +17,7 @@ description: You can explore the getHeaderFilter method of Grid in the documenta
 Either an HTML object or an object with Combobox configuration.
 
 @example:
-var countryFilter = grid.getHeaderFilter("country");
+const countryFilter = grid.getHeaderFilter("country");
 // -> returns HTMLElement
 // <label class="dhx_grid-filter__label dxi dxi-menu-down">...</label>
 
@@ -25,7 +25,7 @@ countryFilter.focus();
 
 // or
 
-var countryFilter = grid.getHeaderFilter("density");
+const countryFilter = grid.getHeaderFilter("density");
 // -> returns Combobox
 // Combobox {_uid: "u1597304021754", config: {…}, events: EventSystem, 
 // data: DataCollection, popup: Popup, …}

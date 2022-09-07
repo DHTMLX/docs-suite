@@ -17,10 +17,10 @@ description: descriYou can explore the getValue method of the Datepicker control
 A string, or Date with the current value of the control.
 
 @example:
-var value = form.getItem("datepicker").getValue();
+const value = form.getItem("datepicker").getValue();
 // -> "03/06/19"
 
-var value = form.getItem("datepicker").getValue(true);
+const value = form.getItem("datepicker").getValue(true);
 // -> Mon Jun 03 2019 00:00:00 GMT+0300
 
 @descr:

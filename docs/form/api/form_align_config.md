@@ -13,7 +13,7 @@ description: You can explore the align Config of Form in the documentation of th
 @values: "start", "center", "end", "between", "around", "evenly"
 
 @example:
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     height: "200px",
     width: "400px",

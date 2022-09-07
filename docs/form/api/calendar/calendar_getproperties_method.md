@@ -14,7 +14,7 @@ description: You can explore the getProperties method of the Datepicker control 
 An object with the available attributes of the control and their values.
 
 @example:
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     rows: [
         {
             type: "datepicker",

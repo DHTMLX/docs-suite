@@ -11,7 +11,7 @@ description: You can explore the multiselection config of Grid in the documentat
 @signature: {'multiselection?: boolean;'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],

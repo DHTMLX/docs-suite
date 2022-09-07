@@ -17,7 +17,7 @@ description: You can explore the validate method of Form in the documentation of
 The result of validation: `true`, if a form is valid; otherwise, `false`.
 
 @example:
-var result = form.validate(true); // -> true/false
+const result = form.validate(true); // -> true/false
 
 @descr:
 
@@ -28,7 +28,7 @@ Starting with v7.0, the method validates only [the required fields or the fields
 Calling without the **silent** parameter, the method invokes the [BeforeValidate](form/api/form_beforevalidate_event.md) and [AfterValidate](form/api/form_aftervalidate_event.md) events and modifies the form visually.
 
 ~~~js
-var result = form.validate(); // -> true/false
+const result = form.validate(); // -> true/false
 ~~~
 
 @changelog: 

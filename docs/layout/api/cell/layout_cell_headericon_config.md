@@ -11,9 +11,9 @@ description: You can explore the headerIcon config of Layout in the documentatio
 @signature: {'headerIcon?: string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header:"Cell header", headerIcon:"dxi dxi-check"}
+        { header:"Cell header", headerIcon:"dxi dxi-check"}
     ]
 });
 

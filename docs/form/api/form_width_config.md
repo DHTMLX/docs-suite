@@ -11,7 +11,7 @@ description: You can explore the width Config of Form in the documentation of th
 @signature: {'width?: string | number | "content";'}
 
 @example:
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     width: "400px", // sets the common width for rows
     padding: "20px",   

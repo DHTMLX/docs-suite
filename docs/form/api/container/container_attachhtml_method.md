@@ -13,7 +13,7 @@ description: You can explore the attachHTML method of the Container control of F
 @params:
 `html: string` - the HTML code
 
-@example: const form = new dhx.Form("form", {
+@example: const form = new dhx.Form("form_container", {
     rows: [
         {
             type: "container",
