@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+
+Version 7.3.8
+--------------
+
+Released on September 15, 2022
+
+### Fixes
+
+- Calendar. Fix the issue which appeared when the [`width`](calendar/api/calendar_width_config.md) property specified as a number was used together with [`weekNumbers: true`](calendar/api/calendar_weeknumbers_config.md)
+- Grid. Fix the incorrect work of the [`dragItem`](grid/api/grid_dragitem_config.md) property when the item's ID was defined as a number
+- Grid. Fix the issue which caused the resized width of the columns to be reset to the initial values after dragging the columns
+- Grid. Fix the issue with the [`getCells()`](grid/api/selection/selection_getcells_method.md) method which returned incorrect results if multiple cells were selected with the `Shift` key
+- Layout. Fix the issue with the [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) method
+- TreeGrid. Fix the incorrect calculation of the columns and rows displayed on the screen when calling the [`hideColumn()`](treegrid/api/treegrid_hidecolumn_method.md) or [`hideRow()`](treegrid/api/treegrid_hiderow_method.md) methods correspondingly
+
 Version 7.3.7
 --------------
 
