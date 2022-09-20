@@ -151,8 +151,8 @@ In this section you can find out corresponding references of Layout and Layout c
 
 | Topic                                                | Description                                   |
 | ---------------------------------------------------- | --------------------------------------------- |
-| [Layout cell methods](../layout-cell-methods/)       | Check the list of methods of a Layout cell    |
-| [Layout cell properties](../layout-cell-properties/) | Check the list of properties of a Layout cell |
+| [Layout cell methods](category/layout-cell-methods.md)       | Check the list of methods of a Layout cell    |
+| [Layout cell properties](category/layout-cell-properties.md) | Check the list of properties of a Layout cell |
 
 ## Common functionality
 
