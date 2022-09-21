@@ -97,7 +97,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=pagination">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=pagination">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 
