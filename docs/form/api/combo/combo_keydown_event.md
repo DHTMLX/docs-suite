@@ -12,7 +12,7 @@ description: You can explore the keydown event of the Combo Box control of Form 
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id: string | undefined` - the id of the option of the Combo control 
+- `id: string | number | undefined` - the ID of the option of the Combo control 
 
 @example:
 form.getItem("combo").events.on("keydown", function(event, id) {

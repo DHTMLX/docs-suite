@@ -195,9 +195,9 @@ Set a string with the name of the necessary rule as a value of the **validation*
 }
 ~~~
 
-There is also a possibility to specify *a custom validation rule* by setting it as a value of the **validation** attribute:
+There is also a possibility to specify *a custom validation function* by setting it as a value of the **validation** attribute:
 
-~~~js
+~~~js title="Validation for Input control"
 {
 	type: "input",
 	inputType: "text",
@@ -211,7 +211,48 @@ There is also a possibility to specify *a custom validation rule* by setting it 
 
 **Related sample**: [Form. Validation](https://snippet.dhtmlx.com/3cz9v7rm)
 
-{{note If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function.}}
+:::info
+If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function
+:::
+
+~~~js title="Validation for Combo control. Multi select is enabled"
+// 
+{
+    name: "combo",
+    type: "combo",
+    multiselection: true,
+    value: ["id:1", 4],
+    data: [
+        { value: "value: 1", id: "id:1" },
+        { value: "value: 2", id: "id:2" },
+        { value: "value: 3", id: 3 },
+        { value: "value: 4", id: 4 },
+        { value: "value: 5", id: 5 },
+    ],
+    validation: (value, text) => {
+        return value.includes(4) || text.includes("value:5");
+    }
+}
+~~~
+
+~~~js title="Validation for Combo control. Multi select is disabled"
+{
+    name: "combo",
+    type: "combo",
+    multiselection: false,
+    value: 4,
+    data: [
+        { value: "value: 1", id: "id:1" },
+        { value: "value: 2", id: "id:2" },
+        { value: "value: 3", id: 3 },
+        { value: "value: 4", id: 4 },
+        { value: "value: 5", id: 5 },
+    ],
+    validation: (value, text) => {
+        return value === 4 || text === "value:5";
+    }
+},
+~~~
 
 ### Messages
 

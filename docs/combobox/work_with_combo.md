@@ -10,7 +10,7 @@ description: You can explore how to work with Combo Box in the documentation of 
 
 In order to select options in ComboBox, use the [setValue()](combobox/api/combobox_setvalue_method.md) method. It takes one parameter:
 
-- **ids** - (*string|number|array*) the ids of items from data collection that should be selected in ComboBox
+- **value** - (*string|number|array*) the **ID(s)** of Combo options from data collection that should be selected in ComboBox
 
 ~~~js
 // select one option
@@ -22,7 +22,7 @@ combo.setValue([combo.data.getId(1), combo.data.getId(3)]);
 
 **Related sample**: [Combobox. Set value](https://snippet.dhtmlx.com/xl1p7zcx)
 
-To get the list of selected options, apply the [getValue()](combobox/api/combobox_getvalue_method.md) method. It returns ids of selected options either as string(s) (by default) or as an array of strings. 
+To get the list of selected options, apply the [getValue()](combobox/api/combobox_getvalue_method.md) method. It returns IDs of selected options either as string(s) (by default) or as an array of strings. 
 In the latter case you need to pass the following parameter:
 
 - **asArray**  - (*boolean*) true, to return ids as an array of strings

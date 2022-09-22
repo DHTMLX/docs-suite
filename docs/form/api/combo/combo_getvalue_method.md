@@ -6,17 +6,27 @@ description: You can explore the getValue method of the Combo Box control of For
 
 # getValue()
 
-@short: returns the current value of a Combo control
+@short: returns IDs of options which are currently selected in the Combo control
 
-@signature: {'getValue(): string | string[];'}
+@signature: {'getValue(): Id | Id[];'}
 
 @returns:
-A string, or array with the id(s) of the items from data collection that are currently selected in the control.
-
-@example:
-const value = form.getItem("combo").getValue();
-// -> "id_2"
+A string/number or an array with the ID(s) of the options from data collection that are currently selected in the control.
 
 @descr:
 
-The method returns a string value with the id of the currently selected item, if either *multiselection:false* is set or the multiselection config is not defined, otherwise - returns an array of string values with the ids of the currently selected items.
+#### Example
+
+When the `multiselection` property of Combo control isn't specified or is set to *false*, the method returns a string/number value with the ID of the currently selected option:
+
+~~~js
+const value = form.getItem("combo").getValue();
+// -> "id_2"
+~~~
+
+If `multiselection` is enabled, the method returns an array of string/number values with the IDs of the currently selected options:
+
+~~~js
+const value = form.getItem("combo").getValue();
+// -> ['id_1', 'id_2']
+~~~
