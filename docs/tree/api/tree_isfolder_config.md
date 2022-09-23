@@ -19,7 +19,7 @@ const tree = new dhx.Tree("tree", {
 
 
 @descr:
-**Related sample:** [Tree. Custom folders](https://snippet.dhtmlx.com/cp43eyra?text=#tree)
+**Related sample:** [Tree. Custom folders](https://snippet.dhtmlx.com/cp43eyra?tag=tree)
 
 The config option can be used to create custom folders in a tree.
 

@@ -11,7 +11,7 @@ The Pagination component is available in the **PRO** version only.
 }}
 
 dhtmlxPagination helps to divide large amount of data into groups and display them on discrete pages. 
-The component is easy-to-use and provides handy navigation that allows you to quickly jump to a desired page. dhtmlxPagination is available in combination with data components like DataView, List, Grid, Tree, Treegrid. Check [online samples for dhtmlxPagination](https://snippet.dhtmlx.com/all?text=%23pagination).
+The component is easy-to-use and provides handy navigation that allows you to quickly jump to a desired page. dhtmlxPagination is available in combination with data components like DataView, List, Grid, Tree, Treegrid. Check [online samples for dhtmlxPagination](https://snippet.dhtmlx.com/all?tag=pagination).
 
 ![](../assets/pagination/init.png)
 
@@ -28,7 +28,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Pa
 ## Related resources
 
 - You can get dhtmlxPagination as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxPagination](https://snippet.dhtmlx.com/all?text=%23pagination)  
+- There are also [online samples for dhtmlxPagination](https://snippet.dhtmlx.com/all?tag=pagination)  
 
 ## Guides
 

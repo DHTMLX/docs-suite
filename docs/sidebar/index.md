@@ -7,7 +7,7 @@ description: You can have an overview of Sidebar in the documentation of the DHT
 # Sidebar overview
 
 dhtmlxSidebar is a component that provides means for comfy vertical navigation. Sidebar can contain any Toolbar controls that can be controlled via a handy API.
-Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23sidebar).  
+Check [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?tag=sidebar).  
 
 ![](../assets/sidebar/sidebar_front.png)
 
@@ -24,7 +24,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Si
 ## Related resources
 
 - You can get dhtmlxSidebar as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?text=%23sidebar)
+- There are also [online samples for dhtmlxSidebar](https://snippet.dhtmlx.com/all?tag=sidebar)
 - To work with data of Sidebar check [TreeCollection API](tree_collection.md)
 
 ## Guides

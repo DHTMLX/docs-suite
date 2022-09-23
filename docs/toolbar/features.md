@@ -171,7 +171,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/r6jv9kk2?text=toolbar">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/r6jv9kk2?tag=toolbar">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

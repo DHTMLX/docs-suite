@@ -247,7 +247,7 @@ const chart = new dhx.Chart("chart_container", {
 		<tr>
 			<td><b>tooltipTemplate</b></td>
 			<td>(<i>function</i>) a function that defines a template for showing values of data items in tooltip<br/>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/p31wzm0b?text=chart" target="_blank">Chart. Treemap chart initialization</a>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/p31wzm0b?tag=chart" target="_blank">Chart. Treemap chart initialization</a>
 			</td>
 		</tr>
 		<tr>
