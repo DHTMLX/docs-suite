@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.9
+--------------
+
+Released on
+
+### Fixes
+
+- Combobox&Combo control of Form. Fix the issue with the `setValue()` method which caused currently selected options to remain selected after setting new values
+- Form. Combo control. Fix the issue with validation of the control in the `multiselection:true` mode
+- List, DataView, Combobox&Combo control of Form. Fix work with IDs specified as numbers
 
 Version 7.3.8
 --------------
@@ -1368,8 +1378,6 @@ Released on December 12, 2019
 - The possibility [to create Ribbon controls (Block, Button, ImageButton, NavItem, SelectButton, Title) with custom HTML content](ribbon/block.md#adding-html-content) using the `html` attribute of Ribbon controls
 - The possibility [to create Sidebar controls (MenuItem, NavItem, Title) with custom HTML content](sidebar/menuitem.md#adding-html-content) using the `html` attribute of Sidebar controls
 - The possibility [to create Toolbar controls (Button, ImageButton, NavItem, SelectButton, Title) with custom HTML content](toolbar/button.md#adding-html-content) using the `html` attribute of Toolbar controls
-
-
 
 #### Helpers
 

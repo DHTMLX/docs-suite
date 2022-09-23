@@ -92,12 +92,14 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 /* end Search input styles */
 
 /* Link icons */
- 
+
 .iconExternalLink_lCJq,
-.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module {
- display: none; /* hides the link icon */
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-IconExternalLink-styles-module,
+.iconExternalLink_nPIU,
+.iconExternalLink_node_modules-\@docusaurus-theme-classic-lib-theme-Icon-ExternalLink-styles-module {
+  display: none; /* hides the link icon */
 }
- 
+
 /* end Link icons */
 
 
