@@ -15,6 +15,7 @@ Released on
 
 ### Fixes
 
+- Combobox. Fix work of the `addOption()` method
 - Combobox&Combo control of Form. Fix the issue with the `setValue()` method which caused currently selected options to remain selected after setting new values
 - Form. Combo control. Fix the issue with validation of the control in the `multiselection:true` mode
 - List, DataView, Combobox&Combo control of Form. Fix work with IDs specified as numbers
