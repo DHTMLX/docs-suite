@@ -8,10 +8,10 @@ description: You can explore the beforeValidate event of the Combo Box control o
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: string | string[]) => boolean | void;'}
+@signature: {'beforeValidate: (value: Id | Id[]) => boolean | void;'}
 
 @params:
-`value: string | string[]` - the id(s) of the item(s) from data collection to be validated
+`value: string | number | (string | number)[]` - the ID(s) of the option(s) from data collection to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.
