@@ -23,6 +23,7 @@ Released on ...
 - Now the user can clear date values in the cell
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
+- Now sorting icon will also appear after sorting data via the `data.sort()` method
 
 #### Form
 
@@ -35,6 +36,7 @@ Released on ...
 #### TreeGrid
 
 - The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
+- Now the sorting icon will also appear after sorting data via the `data.sort()` method
 
 
 Version 7.3.9
