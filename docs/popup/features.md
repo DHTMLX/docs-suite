@@ -17,7 +17,7 @@ In this section you can find out how to initialize Popup with different data com
 | Topic                                                                | Description                                                                                                                                                       |
 | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                           | Read how to initialize a Popup on a page                                                                                                                          |
-| [Attaching widgets](../work_with_popup/#attaching-dhtmlx-components) | Learn how to attach a DHTMLX component to a Popup ([Example 1](https://snippet.dhtmlx.com/7x6hlbqx), [Example 2](https://snippet.dhtmlx.com/kw3e0h4j?text=popup)) |
+| [Attaching widgets](../work_with_popup/#attaching-dhtmlx-components) | Learn how to attach a DHTMLX component to a Popup ([Example 1](https://snippet.dhtmlx.com/7x6hlbqx), [Example 2](https://snippet.dhtmlx.com/kw3e0h4j?tag=popup)) |
 | [Attaching HTML content](../work_with_popup/#attaching-content)      | Learn how to attach some HTML content to a Popup ([Example](https://snippet.dhtmlx.com/ajv5qqxq))                                                                 |
 
 
@@ -82,7 +82,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=popup">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=popup">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

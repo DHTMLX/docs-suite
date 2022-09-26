@@ -11,7 +11,7 @@ description: You can explore the cols Config of Form in the documentation of the
 @signature: {'cols?: IBlock;'}
 
 @example:
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     width: "250px",
     rows: [

@@ -19,7 +19,7 @@ A handy control for quick and easy uploading of a file or a set of files.
 You can easily add a SimpleVault control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
 	rows: [
     	{
 			type: "simpleVault",
@@ -45,7 +45,7 @@ You can manipulate a SimpleVault control by using methods or events of the objec
 For example, you can get the value of the control:
 
 ~~~js
-var value = form.getItem("simpleVault").getValue();
+const value = form.getItem("simpleVault").getValue();
 ~~~
 
 ### Methods

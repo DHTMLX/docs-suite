@@ -13,7 +13,7 @@ description: You can explore the rowHeight config of Grid in the documentation o
 @default: 40
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

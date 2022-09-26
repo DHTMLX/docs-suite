@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Slider control of Form i
 An array of numbers that represent the current value of the control.
 
 @example:
-var value = form.getItem("slider").getValue();
+const value = form.getItem("slider").getValue();
 // -> [1,20]
 
 @descr:

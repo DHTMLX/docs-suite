@@ -17,7 +17,7 @@ description: You can explore the rowCss config of Grid in the documentation of t
 	}
 </style>
 
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],

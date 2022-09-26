@@ -17,7 +17,7 @@ A simple button that can have an icon. Button can be *twoState* and can have a b
 You can easily add a Button control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
 	rows: [
     	{
 			type: "button",

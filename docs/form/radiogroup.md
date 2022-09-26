@@ -21,7 +21,7 @@ A control intended for creating groups of Radio buttons.
 You can easily add a RadioGroup control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {	
+const form = new dhx.Form("form_container", {	
 	rows: [
     	{
 			id: "radiogroup",
@@ -67,7 +67,7 @@ You can manipulate a RadioGroup control by using methods or events of the object
 For example, you can get the value of the control:
 
 ~~~js
-var value = form.getItem("radiogroup").getValue();
+const value = form.getItem("radiogroup").getValue();
 ~~~
 
 ### Methods

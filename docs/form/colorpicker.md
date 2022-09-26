@@ -19,7 +19,7 @@ An input with a color picker attached to it for selecting a color.
 You can easily add a ColorPicker control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     rows: [
 		{
 			type: "colorpicker",
@@ -42,7 +42,7 @@ You can manipulate a ColorPicker control by using methods or events of the objec
 For example, you can get the value of the control:
 
 ~~~js
-var value = form.getItem("colorpicker").getValue();
+const value = form.getItem("colorpicker").getValue();
 ~~~
 
 **Related sample**: [Form. Get Item](https://snippet.dhtmlx.com/ocfas6go)

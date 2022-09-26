@@ -35,7 +35,7 @@ In this section you will know how to create a Tabbar with the necessary number o
 
 | Topic                                                                    | Description                                                                                                             |
 | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| [Defining Tabbar structure](../configuring_tabbar/#structure-of-tabs)    | Learn how to create a Tabbar of the necessary structure ([Example](https://snippet.dhtmlx.com/uysfjo5z?text=#tabbar))   |
+| [Defining Tabbar structure](../configuring_tabbar/#structure-of-tabs)    | Learn how to create a Tabbar of the necessary structure ([Example](https://snippet.dhtmlx.com/uysfjo5z?tag=tabbar))   |
 | [Setting the active tab](../api/tabbar_activetab_config/)                | Learn how to specify an active tab on initialization of Tabbar                                                          |
 | [Configuring Tabbar position](../configuring_tabbar/#position-of-tabbar) | Learn how to specify where the Tabbar should be displayed on the page  ([Example](https://snippet.dhtmlx.com/xq6k0tts)) |
 
@@ -109,7 +109,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=tabbar">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=tabbar">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

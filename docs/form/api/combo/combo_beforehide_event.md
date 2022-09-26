@@ -8,10 +8,10 @@ description: You can explore the beforeHide event of the Combo Box control of Fo
 
 @short: fires before a control is hidden
 
-@signature: {'beforeHide: (value: string | string[], init: boolean) => boolean | void;'}
+@signature: {'beforeHide: (value: Id | Id[], init: boolean) => boolean | void;'}
 
 @params:
-- `value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
+- `value: string | number | (string | number)[]` - the ID(s) of the option(s) that are currently selected in the control
 - `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:

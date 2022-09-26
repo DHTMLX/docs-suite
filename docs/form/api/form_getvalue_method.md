@@ -17,7 +17,7 @@ description: You can explore the getValue method of Form in the documentation of
 An object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.
 
 @example:
-var state = form.getValue();
+const state = form.getValue();
 // -> {"name":"John Doe"}
 
 @descr:
@@ -27,14 +27,14 @@ var state = form.getValue();
 1\. In case both the name and id of the control are specified in the config of Control, the returned object will contain the name of Control:
 
 ~~~js
-var state = form.getValue();
+const state = form.getValue();
 // -> {"name":"John Doe"}
 ~~~
 
 If the name attribute is not specified in the controls config, an object with ID of Control will be returned:
 
 ~~~js
-var state = form.getValue();
+const state = form.getValue();
 // -> {"id":"John Doe"}
 ~~~
 

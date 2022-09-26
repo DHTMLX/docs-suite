@@ -11,7 +11,7 @@ description: You can explore the resizable config of Grid in the documentation o
 @signature: {'resizable?: boolean;'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],

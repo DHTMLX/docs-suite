@@ -11,9 +11,9 @@ description: You can explore the width config of Layout in the documentation of 
 @signature: {'width?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", width: "300px" }
+        { header: "Cell header", width: "300px" }
     ]
 });
 
@@ -24,7 +24,7 @@ var layout = new dhx.Layout("layout_container", {
 Starting from v7.0, the width of a cell can be automatically adjusted to the width of its content. For that, set the **width** configuration option to *"content"*:
 
 ~~~js {5}
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
             header: "Cell header", 

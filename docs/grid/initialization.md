@@ -6,9 +6,15 @@ description: You can explore the initialization of Grid in the documentation of 
 
 # Initialization
 
-To initialize dhtmlxGrid on a page, you need to take the following simple steps:
+:::info
+Download the DHTMLX Grid package:
 
-- [Download the dhtmlxGrid package](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml) and unpack it into a folder of your project
+- [as a separate component](https://dhtmlx.com/docs/products/dhtmlxGrid/download.shtml)
+- [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+:::
+
+To initialize DHTMLX Grid on a page, you need to take the following simple steps:
+
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Grid](#initialize-grid) with the object constructor
@@ -18,15 +24,15 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxGrid</title>         
+        <title>How to start with DHTMLX Grid</title>         
         <script type="text/javascript" src="../../codebase/grid.js"></script>
         <link rel="stylesheet" href="../../codebase/grid.css">
     </head>
     <body>
     	<div style="height:500px; width:600px" id="grid_container"></div>
         <script>
-            // creating dhtmlxGrid 
-            var grid = new dhx.Grid("grid_container", {
+            // creating DHTMLX Grid 
+            const grid = new dhx.Grid("grid_container", {
     			columns: [
         			{ width: 100, id: "a", header: [{ text: "#" }] },
         			{ width: 100, id: "b", header: [{ text: "Title" }] },
@@ -41,13 +47,13 @@ To initialize dhtmlxGrid on a page, you need to take the following simple steps:
 </html>
 ~~~
 
-**Related sample**: [Grid. Initialization with config.data](https://snippet.dhtmlx.com/luh8d0vv)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of dhtmlxGrid into the header of the created file. The Grid component can be used standalone or as a part of the Suite library.
+Unpack the downloaded package into a folder of your project.
 
-**If you use dhtmlxGrid standalone**, you need to include 2 files:
+After that, create an HTML file and place full paths to JS and CSS files of DHTMLX Grid into the header of the created file. The Grid component can be used standalone or as a part of the Suite library.
+
+**If you use DHTMLX Grid standalone**, you need to include 2 files:
 
 - *grid.js*
 - *grid.css*
@@ -57,10 +63,10 @@ Create an HTML file and place full paths to JS and CSS files of dhtmlxGrid into 
 <link rel="stylesheet" href="../../codebase/grid.css">
 ~~~
 
-**If you use dhtmlxGrid as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
+**If you use DHTMLX Grid as a part of the Suite package**, you need to include JS/CSS files of the DHTMLX Suite library:
 
-- suite.js
-- suite.css
+- *suite.js*
+- *suite.css*
 
 ~~~html
 <link type="text/css" href="../codebase/suite.css">
@@ -83,8 +89,8 @@ Initialize Grid with the `dhx.Grid` object constructor. The constructor has two 
 - optional, an object with configuration properties. If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js
-// creating dhtmlxGrid
-var grid = new dhx.Grid("grid_container", {
+// creating DHTMLX Grid
+const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 100, id: "a", header: [{ text: "#" }] },
         { width: 100, id: "b", header: [{ text: "Title" }] },
@@ -92,11 +98,8 @@ var grid = new dhx.Grid("grid_container", {
         { width: 200, id: "d", header: [{ text: "Address" }] }
     ],
     headerRowHeight: 50,
-    data: dataset
 });
 ~~~
-
-**Related sample**: [Grid. Initialization with config.data](https://snippet.dhtmlx.com/luh8d0vv)
 
 ### Configuration properties
 
@@ -106,31 +109,8 @@ See the full list of properties that you can specify in the Grid configuration o
 
 ## Load data into Grid
 
-There are several handy ways of loading data into Grid. You can add data both before and after initialization of the component.
-
-- via the data option in the configuration object of Grid:
-
-~~~js
-var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
-    data: dataset 
-});
-~~~
-
-- from an external file with the help of the **load()** method of data collection:
-
-~~~js
-var grid = new dhx.Grid("grid_container");
-grid.data.load("../common/dataset.json");
-~~~
-
-- from a local source using the **parse** method of data collection:
-
-~~~js
-var grid = new dhx.Grid("grid_container");
-grid.data.parse(dataset);
-~~~
-
-**Related sample**: [Grid. Initialization with data.load()](https://snippet.dhtmlx.com/svkb27d5)
-
 Detailed information on loading data into Grid is given in the article [](grid/data_loading.md).
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/luh8d0vv?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

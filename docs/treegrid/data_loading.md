@@ -8,9 +8,8 @@ description: You can explore the data loading of TreeGrid in the documentation o
 
 There are several simple ways of loading data into dhtmlxTreeGrid:
 
-- adding data via a configuration property
-- load data from an external file
-- load data from a local data source
+- on initialization of TreeGrid
+- after initialization of TreeGrid
 
 First, you need to prepare a data set that will be loaded into TreeGrid.
 
@@ -19,7 +18,7 @@ First, you need to prepare a data set that will be loaded into TreeGrid.
 dhtmlxTreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
     {
         "id": 0,
         "a": 1,
@@ -58,20 +57,40 @@ Each object in the data set contains configuration of a grid row. The structure 
     </tbody>
 </table>
 
-## Adding data on TreeGrid initialization
+## Loading data on TreeGrid initialization
 
-You can specify data you want to add into TreeGrid on the initialization stage. Make use of the **data** configuration property, as in:
+You can specify data you want to load into TreeGrid on the initialization stage. Make use of the [data](treegrid/api/treegrid_data_config.md) configuration property, as in:
 
 ~~~js
 var treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [// columns config],
+    columns: [
+        // columns config
+    ],
     data: dataset
 });
 ~~~
 
 **Related sample**: [TreeGrid. Initialization with config.data](https://snippet.dhtmlx.com/kob9385v)
 
-## External data loading
+## Loading data after initialization
+
+There are two ways to load data into TreeGrid after its initialization:
+
+- [from a local data source](#loading-from-local-source)
+- [from an external file](#external-data-loading)
+
+### Loading from local source
+
+To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+
+~~~js
+var treegrid = new dhx.TreeGrid("treegrid_container", {
+treegrid.data.parse(dataset);
+~~~
+
+**Related sample**: [TreeGrid. Initialization with data.parse()](https://snippet.dhtmlx.com/jc8gn40c)
+
+### External data loading
 
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
@@ -90,15 +109,6 @@ Data loading is asynchronous, so you need to wrap any after-loading code into a 
 treegrid.data.load("/some/data").then(function(){
    // some logic here
 });
-~~~
-
-## Loading from local source
-
-To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
-
-~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
-treegrid.data.parse(dataset);
 ~~~
 
 ## Saving and restoring state

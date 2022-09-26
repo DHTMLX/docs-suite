@@ -6,9 +6,12 @@ description: You can explore the initialization of Form in the documentation of 
 
 # Initialization
 
-To add dhtmlxForm into an application, you need to take the following simple steps:
+:::info
+[Download the DHTMLX Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
 
-- [Download the Form package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
+To add DHTMLX Form into an application, you need to take the following simple steps:
+
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Define Form structure](#define-form-structure)
@@ -18,25 +21,25 @@ To add dhtmlxForm into an application, you need to take the following simple ste
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxForm</title>         
+        <title>How to start with DHTMLX Form</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="form_container"></div>
         <script>
-            // creating dhtmlxForm
-            var form = new dhx.Form("form_container");
+            // creating DHTMLX Form
+            const form = new dhx.Form("form_container");
         </script>
     </body>
 </html>
 ~~~
 
-**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the DHTMLX Suite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -72,45 +75,43 @@ To add controls inside a form, you should put them into a layout, either a verti
 another:
 
 ~~~js
-var form_data = {
-	rows:[
-    	{
-      		type: "input",
-      		label: "Name",
-      		icon: "dxi dxi-magnify",
-      		placeholder: "John Doe",
-      		name: "name"
-    	},
-    	{
-      		type: "input",
-      		label: "Email",
-      		placeholder: "jd@mail.name",
-      		name: "email"
-    	},		
-    	{		
-      		type: "input",
-      		inputType: "password",
-      		label: "Password",
-      		placeholder: "********",
-      		name: "password"
-    	},
-    	{
-      		type: "checkbox",
-      		text: "I agree",
-      		value: "checkboxvalue",
-      		id: "agree",
-      		name: "agree"
-    	},
-    	{
-      		type: "button",
-      		text: "Send",
-      		size: "medium",
-      		view: "flat",
-      		submit: true,
-      		color: "primary"
-    	}
-	]
-};
+rows: [
+    {
+    	type: "input",
+    	label: "Name",
+    	icon: "dxi dxi-magnify",
+    	placeholder: "John Doe",
+    	name: "name"
+    },
+    {
+    	type: "input",
+    	label: "Email",
+    	placeholder: "jd@mail.name",
+    	name: "email"
+    },		
+    {		
+    	type: "input",
+    	inputType: "password",
+    	label: "Password",
+    	placeholder: "********",
+    	name: "password"
+    },
+    {
+    	type: "checkbox",
+    	text: "I agree",
+    	value: "checkboxvalue",
+    	id: "agree",
+    	name: "agree"
+    },
+    {
+    	type: "button",
+    	text: "Send",
+    	size: "medium",
+    	view: "flat",
+    	submit: true,
+    	color: "primary"
+    }
+]
 ~~~
 
 ## Initialize Form
@@ -121,7 +122,7 @@ Initialize Form with the `dhx.Form` object constructor. The constructor takes tw
 - a configuration object which (besides config options) contains an array of form controls defined as objects with a set of attributes 
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",
 	rows: [
 		{
@@ -136,8 +137,10 @@ var form = new dhx.Form("form_container", {
 });
 ~~~
 
-**Related sample**: [Form. Initialization](https://snippet.dhtmlx.com/yut2mnsz)
-
 ### Configuration properties
 
 You can find the full list of Form configuration properties in the [Form API overview](form/api/api_overview.md#properties) article.
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/yut2mnsz?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>

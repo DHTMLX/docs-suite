@@ -18,7 +18,7 @@ description: You can explore the css Config of Form in the documentation of the 
 </style>
  
  
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css:"bg-gray",
     rows: [
         {   
@@ -44,7 +44,7 @@ var form = new dhx.Form("form", {
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Form:
 
 ~~~js
-var form = new dhx.Form("form", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

@@ -101,7 +101,7 @@ This section will tell you how to use [TreeCollection API](guides/datacollection
 | Topic                                                                  | Description                                                                                                                                               |
 | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Adding controls](../common_methods/#adding-new-controls-into-toolbar) | Learn how to add new controls into Toolbar dynamically ([Example](https://snippet.dhtmlx.com/r6jv9kk2))                                                   |
-| [Updating controls](../../common_methods/#updating-config-of-controls) | Learn how to update config options of a Toolbar control (for example, to change the icon of the control) ([Example](https://snippet.dhtmlx.com/xfs5gh5t)) |
+| [Updating controls](../common_methods/#updating-config-of-controls) | Learn how to update config options of a Toolbar control (for example, to change the icon of the control) ([Example](https://snippet.dhtmlx.com/xfs5gh5t)) |
 | [Rearranging controls](../common_methods/#rearranging-controls)        | Learn how to move Toolbar controls to another position                                                                                                    |
 | [Removing controls](../common_methods/#removing-controls-from-toolbar) | Learn how to remove a control from Toolbar   ([Example](https://snippet.dhtmlx.com/w8jcn1t2))                                                             |
 | [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
@@ -116,7 +116,7 @@ In this section you may study how to work with selection functionality.
 | [Setting selection](../common_methods/#selectingunselecting-an-item)     | Learn how to select a Toolbar control ([Example](https://snippet.dhtmlx.com/mi7qjwg2))                    |
 | [Is selected](../common_methods/#checking-if-a-toolbar-item-is-selected) | Learn how to check whether a Toolbar control is selected ([Example](https://snippet.dhtmlx.com/mi7qjwg2)) |
 | [Getting selected items](../common_methods/#getting-selected-items)      | Learn how to get the selected items                                                                       |
-| [Removing selection](../../common_methods/#selectingunselecting-an-item) | Learn how to remove selection from a Toolbar control  ([Example](https://snippet.dhtmlx.com/mi7qjwg2))    |
+| [Removing selection](../common_methods/#selectingunselecting-an-item) | Learn how to remove selection from a Toolbar control  ([Example](https://snippet.dhtmlx.com/mi7qjwg2))    |
 
 ## How to work with Toolbar events
 
@@ -171,7 +171,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/r6jv9kk2?text=toolbar">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/r6jv9kk2?tag=toolbar">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

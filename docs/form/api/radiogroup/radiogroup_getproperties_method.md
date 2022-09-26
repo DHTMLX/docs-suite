@@ -17,7 +17,7 @@ description: You can explore the getProperties method of the Radiogroup control 
 An object either with the available attributes of the control and their values, or with the available attributes of the radio button and their values.
 
 @example:
-var form = new dhx.Form("form_container", { 
+const form = new dhx.Form("form_container", { 
     rows: [
         {
             id: "radiogroup",

@@ -11,7 +11,7 @@ description: You can explore the dragMode config of Grid in the documentation of
 @signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],

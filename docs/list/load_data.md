@@ -8,8 +8,8 @@ description: You can explore the data loading of List in the documentation of th
 
 There are several ways of loading List items:
 
-- from an external file
-- from a local data source
+- on initialization of List
+- after initialization of List
 
 First, you need to prepare a data set that will be loaded into List.
 
@@ -29,12 +29,37 @@ var dataset = [
 Each object in the data set contains a number of *key:value* pairs that represent attributes of List items. 
 You can specify your own template of rendering List items with the help of the [template](list/api/list_template_config.md) configuration option.
 
-## External data loading
+## Loading data on initialization
+
+You can load a [predefined data set](#preparing-data-set) into List on the initialization stage. Use the [data](list/api/list_data_config.md) configuration property, as in:
+
+~~~js
+const list = new dhx.List("list", {
+    css: "dhx_widget--bordered",
+    template: template,
+    itemHeight: 72,
+    data: dataset
+});
+~~~
+
+**Related sample:** [List. Initialization with config.data](https://snippet.dhtmlx.com/kzg2fza0)
+
+## Loading data after initialization
+
+There are two ways to load data into Grid after its initialization:
+
+- [from an external file](#external-data-loading)
+- [from a local data source](#loading-from-local-source)
+
+### External data loading
 
 To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
-var list = new dhx.List("list_container");
+var list = new dhx.List("list_container", {
+    template: template,
+    itemHeight: 72
+});
 list.data.load("../common/dataset.json");
 ~~~
 
@@ -50,12 +75,15 @@ list.data.load("/some/data").then(function(){
 
 **Related sample**: [List. Initialization with data.load()](https://snippet.dhtmlx.com/1it5kfhq)
 
-## Loading from local source
+### Loading from local source
 
 To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var list = new dhx.List("list_container");
+var list = new dhx.List("list_container", {
+    template: template,
+    itemHeight: 72
+});
 list.data.parse(dataset);
 ~~~
 

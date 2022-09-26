@@ -6,9 +6,12 @@ description: You can explore the initialization of Toolbar in the documentation 
 
 # Initialization
 
+:::info
+[Download the DHTMLX Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
+:::
+
 To add dhtmlxToolbar into an application, you need to take the following simple steps:
 
-- [Download the Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) and unpack it into a folder of your project
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
 - [Initialize Toolbar](#initialize-toolbar) with the object constructor
@@ -32,11 +35,11 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 </html>
 ~~~
 
-**Related sample**: [Toolbar. Initialization with config.data](https://snippet.dhtmlx.com/nie9tuks)
-
 ## Include source files
 
-Create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
+Unpack the downloaded package into a folder of your project.
+
+After that, create an HTML file and place full paths to JS and CSS files of the dhtmlxSuite library into the header of the file. The files are:
 
 - *suite.js*
 - *suite.css*
@@ -73,45 +76,8 @@ See the detailed information on configuration properties of Toolbar in the [Tool
 
 ## Load data into Toolbar
 
-There are two handy ways of loading data, i.e. a set of controls into Toolbar:
-
-- from an external file with the help of the **load()** method of tree collection:
-
-~~~js
-var toolbar = new dhx.Toolbar("toolbar_container");
-toolbar.data.load("../common/dataset.json");
-~~~
-
-**Related sample**: [Toolbar. Initialization with data.load()](https://snippet.dhtmlx.com/i5a9mx2i)
-
-- from a local source using the **parse()** method of tree collection:
-
-~~~js
-var data = [
-	{
-    	type: "button",
-    	icon: "dxi-plus",
-    	value: "new"
-    },
-    {
-    	type: "button",
-    	icon: "dxi-folder-open",
-    	value: "open"
-    },
-    {
-    	type: "button",
-    	icon: "dxi-vault",
-    	value: "save"
-    },
-    {
-    	type: "button",
-    	icon: "dxi-delete",
-    	value: "delete"
-    }
-];
-
-var toolbar = new dhx.Toolbar("toolbar_container", {css:"dhx_toolbar--bordered" });
-toolbar.data.parse(data);
-~~~
-
 Detailed information on loading data into Toolbar is given in the [](toolbar/load_data.md) article.
+
+## Example
+
+<iframe src="https://snippet.dhtmlx.com/nie9tuks?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>

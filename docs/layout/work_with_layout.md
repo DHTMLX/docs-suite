@@ -29,9 +29,11 @@ layout.getCell("header");
 You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Layout using the [](layout/api/cell/layout_cell_attach_method.md) method of a cell:
 
 ~~~js
-var layout = new dhx.Layout({width:"400px", height:"600px"});
+const layout = new dhx.Layout("layout_container", {
+	width:"400px", height:"600px"
+});
 
-var list = new dhx.List(null, {
+const list = new dhx.List(null, {
 	template: listTemplate,
 	itemHeight: 52,
 	height: "100%",
@@ -52,8 +54,10 @@ layout.getCell("list").attach(list);
 You can easily attach some HTML content to a cell of Layout via the [](layout/api/cell/layout_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
 
 ~~~js
-var layout = new dhx.Layout({width:"400px", height:"600px"});
-var html = "<p>Hello world</p>";
+const layout = new dhx.Layout("layout_container", {
+	width:"400px", height:"600px"
+});
+const html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);
 ~~~
 

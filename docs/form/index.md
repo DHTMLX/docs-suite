@@ -6,8 +6,8 @@ description: You can have an overview of Form in the documentation of the DHTMLX
 
 # Form overview
 
-dhtmlxForm is a typical form widget that can contain a number of adjustable and easy-to-use controls, supports data validation and localization of labels.
-Check [online samples for dhtmlxForm](https://snippet.dhtmlx.com/all?text=%23form). 
+DHTMLX Form is a typical form widget that can contain a number of adjustable and easy-to-use controls, supports data validation and localization of labels.
+Check [online samples for DHTMLX Form](https://snippet.dhtmlx.com/all?tag=form). 
 
 ![](../assets/form/form_front.png)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Fo
 
 ## Related resources
 
-- You can get dhtmlxForm as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxForm](https://snippet.dhtmlx.com/all?text=%23form)  
+- You can get DHTMLX Form as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- There are also [online samples for DHTMLX Form](https://snippet.dhtmlx.com/all?tag=form)  
 
 ## Guides
 

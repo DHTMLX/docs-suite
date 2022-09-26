@@ -11,7 +11,7 @@ description: You can explore the type config of Layout in the documentation of t
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 
 @example:
-const layout = new dhx.Layout("layout", {
+const layout = new dhx.Layout("layout_container", {
     type: "space", // "line" | "wide" | "space" | "none"
     cols: [
         {

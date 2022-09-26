@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Radiogroup control of Fo
 A string with the current value of the control.
 
 @example:
-var value = form.getItem("radiogroup").getValue();
+const value = form.getItem("radiogroup").getValue();
 // -> "1"
 
 @descr:

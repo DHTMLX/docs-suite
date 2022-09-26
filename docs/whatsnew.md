@@ -34,6 +34,36 @@ Released on ...
 
 - The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
 
+
+Version 7.3.9
+--------------
+
+Released on September 26, 2022
+
+### Fixes
+
+- Combobox. Fix work of the `addOption()` method
+- Combobox&Combo control of Form. Fix the issue with the `setValue()` method which caused currently selected options to remain selected after setting new values
+- Form. Combo control. Fix the issue with validation of the control in the `multiselection:true` mode
+- List, DataView, Combobox&Combo control of Form. Fix work with IDs specified as numbers
+
+Version 7.3.8
+--------------
+
+Released on September 19, 2022
+
+### Fixes
+
+- Calendar. Fix the issue which appeared when the [`width`](calendar/api/calendar_width_config.md) property specified as a number was used together with [`weekNumbers: true`](calendar/api/calendar_weeknumbers_config.md)
+- Grid. Fix the behavior of selection with frozen spans
+- Grid. Fix the incorrect work of the [`dragItem`](grid/api/grid_dragitem_config.md) property when the item's ID was defined as a number
+- Grid. Fix the issue which caused the resized width of the columns to be reset to the initial values after dragging the columns
+- Grid. Fix the issue with the [`getCells()`](grid/api/selection/selection_getcells_method.md) method which returned incorrect results if multiple cells were selected with the `Shift` key
+- Layout. Fix the issue with the [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) method
+- Ribbon. Input control. Fix the behavior of the label which caused focus not to be moved to the input field 
+- Toolbar. Input control. Fix the behavior of the label which caused focus not to be moved to the input field 
+- TreeGrid. Fix the incorrect calculation of the columns and rows displayed on the screen when calling the [`hideColumn()`](treegrid/api/treegrid_hidecolumn_method.md) or [`hideRow()`](treegrid/api/treegrid_hiderow_method.md) methods correspondingly
+
 Version 7.3.7
 --------------
 
@@ -1376,8 +1406,6 @@ Released on December 12, 2019
 - The possibility [to create Ribbon controls (Block, Button, ImageButton, NavItem, SelectButton, Title) with custom HTML content](ribbon/block.md#adding-html-content) using the `html` attribute of Ribbon controls
 - The possibility [to create Sidebar controls (MenuItem, NavItem, Title) with custom HTML content](sidebar/menuitem.md#adding-html-content) using the `html` attribute of Sidebar controls
 - The possibility [to create Toolbar controls (Button, ImageButton, NavItem, SelectButton, Title) with custom HTML content](toolbar/button.md#adding-html-content) using the `html` attribute of Toolbar controls
-
-
 
 #### Helpers
 

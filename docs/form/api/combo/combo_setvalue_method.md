@@ -8,14 +8,65 @@ description: You can explore the setValue method of the Combo Box control of For
 
 @short: sets the value for a Combo control
 
-@signature: {'setValue(value: string | string[]): void;'}
+@signature: {'setValue(value: Id | Id[]): void;'}
 
 @params:
-`value: string | string[]` - the id(s) of items from data collection that should be selected in the control  
-
-@example:
-form.getItem("combo").setValue("id_1");
+- `value: string | number | (string | number)[]` - the ID(s) of options from data collection that should be selected in the control
 
 @descr:
 
-You should set the value as a string (either as "id_1" or ["id_1"]), if *multiselection:false* is set or the multiselection config is not defined, otherwise - set the value as an array of string values.
+:::info
+Note, that you need to pass the **ID(s)** of Combo options as a value of the **value** parameter.
+:::
+
+#### Example
+
+When the `multiselection` property of Combo control isn't specified or is set to *false*, you can set the value of ID as a string, number or array:
+
+~~~js
+const form = new dhx.Form("form_container", {
+    rows: [
+        {
+            name: "combo",
+            type: "combo",
+            multiselection: false,
+            data: [
+                { value: "value: 1", id: "id:1" },
+                { value: "value: 2", id: "id:2" },
+                { value: "value: 3", id: 3 },
+                { value: "value: 4", id: 4 },
+                { value: "value: 5", id: 5 },
+            ]
+        },
+    ]
+});
+
+// selects one option
+form.getItem("combo").setValue(4);
+// form.getItem("combo").setValue("id_1");
+// form.getItem("combo").setValue(["id_1"]);
+~~~
+
+If `multiselection` is enabled, you need to pass to the `setValue` method an array with string/number values of IDs:
+
+~~~js
+const form = new dhx.Form("form_container", {
+    rows: [
+        {
+            name: "combo",
+            type: "combo",
+            multiselection: true,
+            data: [
+                { value: "value: 1", id: "id:1" },
+                { value: "value: 2", id: "id:2" },
+                { value: "value: 3", id: 3 },
+                { value: "value: 4", id: 4 },
+                { value: "value: 5", id: 5 },
+            ]
+        },
+    ]
+});
+
+// selects several options
+form.getItem("combo").setValue(["id:1", 4]);
+~~~

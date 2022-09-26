@@ -8,8 +8,8 @@ description: You can explore the data loading of Ribbon in the documentation of 
 
 There are several simple ways of loading data into dhtmlxRibbon:
 
-- load data from an external file
-- load data from a local data source
+- on initialization of Ribbon
+- after initialization of Ribbon
 
 First, you need to prepare a data set that will be loaded into Ribbon.
 
@@ -45,13 +45,32 @@ var data = [
     		}
     	]
     }
-
 ];
 ~~~
 
 A data set consists of objects with configurations of Ribbon controls. Templates for Ribbon controls in JSON format are given [below](#json-format-templates).
 
-## Loading from a local source
+## Loading data on initialization
+
+You can load a [predefined data set](#preparing-data-set) into Ribbon on the initialization stage. Use the [data](ribbon/api/ribbon_data_config.md) configuration property, as in:
+
+~~~js
+const ribbon = new dhx.Ribbon("ribbon_container", {
+    css: "dhx_widget--bordered dhx_widget--bg_white", 
+    data: data
+});
+~~~
+
+**Related sample**: [Ribbon. Initialization with config.data](https://snippet.dhtmlx.com/lek4v9m7)
+
+## Loading data after initialization
+
+There are two ways to load data into Ribbon after its initialization:
+
+- [from a local data source](#loading-from-a-local-source)
+- [from an external file](#loading-from-an-external-file)
+
+### Loading from a local source
 
 You can load data to a ribbon from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -61,7 +80,7 @@ ribbon.data.parse(data);
 
 **Related sample**: [Ribbon. Initialization with data.parse()](https://snippet.dhtmlx.com/zz5ijqy9)
 
-## Loading from an external file
+### Loading from an external file
 
 The **load** method loads the ribbon data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 

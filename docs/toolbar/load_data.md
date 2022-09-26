@@ -8,8 +8,8 @@ description: You can explore the data loading of Toolbar in the documentation of
 
 There are several simple ways of loading data into dhtmlxToolbar:
 
-- load data from an external file
-- load data from a local data source
+- on initialization of Toolbar
+- after initialization of Toolbar
 
 First, you need to prepare a data set that will be loaded into Toolbar.
 
@@ -18,7 +18,7 @@ First, you need to prepare a data set that will be loaded into Toolbar.
 dhtmlxToolbar expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var data = [
+const dataset = [
  	{
         "id": "other",
         "type": "button",
@@ -50,17 +50,37 @@ var data = [
 
 A data set consists of objects with configurations of toolbar controls. Templates for Toolbar controls in JSON format are given [below](#json-format-templates).
 
-## Loading from a local source
+## Loading data on initialization
+
+You can load a [predefined data set](#preparing-data-set) into Toolbar on the initialization stage. Use the [data](toolbar/api/toolbar_data_config.md) configuration property, as in:
+
+~~~js
+const toolbar = new dhx.Toolbar("toolbar_container", {
+  	css: "dhx_widget--bordered",
+  	data: dataset
+});
+~~~
+
+**Related sample**: [Toolbar. Initialization with config.data ](https://snippet.dhtmlx.com/nie9tuks)
+
+## Loading data after initialization
+
+There are two ways to load data into Sidebar after its initialization:
+
+- [from a local data source](#loading-from-a-local-source)
+- [from an external file](#loading-from-an-external-file)
+
+### Loading from a local source
 
 You can load data to a toolbar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-toolbar.data.parse(data);
+toolbar.data.parse(dataset);
 ~~~
 
 **Related sample**: [Toolbar. Initialization with data.parse()](https://snippet.dhtmlx.com/wzb2yn3d)
 
-## Loading from an external file
+### Loading from an external file
 
 The **load** method loads the toolbar data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 

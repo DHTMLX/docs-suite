@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](grid/api/grid_css_config.md) property in the Grid configuration:
 
 ~~~js
-var grid = new dhx.Grid({ 
+const grid = new dhx.Grid("grid_container", { 
     css:"my-first-class my-second-class"
 });
 ~~~
@@ -57,7 +57,7 @@ You can easily set some styling to the text of header cells by applying some inl
 ~~~
 
 ~~~js
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 	  { width: 200, id: "country", header: [{ text: "<span style='font-size:2em'>Country</span>" }] },
       { width: 150, id: "population", header: [{ text: "<span class='title'>Population</span>" }] },
@@ -86,7 +86,7 @@ You can easily set some styling to the text of footer cells by applying some inl
 ~~~
 
 ~~~js
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 	  {
 		width: 100, id: "a", header: [{ text: "#" }], footer: [
@@ -124,8 +124,10 @@ It is possible to change the appearance of grid rows by applying custom CSS styl
 ~~~
 
 ~~~js {3}
-var grid = new dhx.Grid("grid", {
-	columns: [// columns config],
+const grid = new dhx.Grid("grid_container", {
+	columns: [
+		// columns config
+	],
 	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
 	data: dataset
 });
@@ -144,7 +146,7 @@ var grid = new dhx.Grid("grid", {
 ~~~
 
 ~~~js {2}
-var rowId = grid.data.getId(1);
+const rowId = grid.data.getId(1);
 grid.addRowCss(rowId, "myCustomClass");
 ~~~
 
@@ -244,7 +246,7 @@ The function should return a string with a custom CSS class for your mark.
 ~~~
 
 ~~~js {6-8,13}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{
 			id: "population", header: [{ text: "Population" }],
@@ -296,7 +298,7 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 ~~~
 
 ~~~js {6-9}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }] },
 		{
@@ -341,7 +343,7 @@ It is possible to customize the content of cells of Grid via the **template** pr
 <br/>
 
 ~~~js {7-9}
-var grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 200, id: "country", header: [{text: "Country"}] },
 		{ width: 150, id: "population", header: [{text: "Population"}] },
@@ -363,7 +365,7 @@ var grid = new dhx.Grid("grid", {
 Starting from v7.0, you can assign event handlers to HTML elements of a custom template of Grid cells via using the [](grid/api/grid_eventhandlers_config.md) configuration property of Grid, for instance:
 
 ~~~js {7-10,15-21}
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{ width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
 		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
@@ -414,7 +416,7 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 <br>
 
 ~~~js {5-11}
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         {
 			width: 200, id: "country", header: [{ text: "Country" }], align: "left",

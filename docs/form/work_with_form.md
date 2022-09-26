@@ -12,7 +12,7 @@ You can get current values/states of Form controls with the help of the [](form/
 
 ~~~js
 // default functionality
-var state = form.getValue();
+const state = form.getValue();
 //->{"name":"John Doe","email":"jd@mail.com", "agree":true}
 ~~~
 
@@ -22,7 +22,7 @@ It is also possible to get this information in the form of FormData. For this, y
 
 ~~~js
 // returning form details as FormData
-var state = form.getValue(true);
+const state = form.getValue(true);
 ~~~
 
 **Related sample**: [Form. Get value](https://snippet.dhtmlx.com/odod5v12)
@@ -195,9 +195,9 @@ Set a string with the name of the necessary rule as a value of the **validation*
 }
 ~~~
 
-There is also a possibility to specify *a custom validation rule* by setting it as a value of the **validation** attribute:
+There is also a possibility to specify *a custom validation function* by setting it as a value of the **validation** attribute:
 
-~~~js
+~~~js title="Validation for Input control"
 {
 	type: "input",
 	inputType: "text",
@@ -211,7 +211,48 @@ There is also a possibility to specify *a custom validation rule* by setting it 
 
 **Related sample**: [Form. Validation](https://snippet.dhtmlx.com/3cz9v7rm)
 
-{{note If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function.}}
+:::info
+If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function
+:::
+
+~~~js title="Validation for Combo control. Multi select is enabled"
+// 
+{
+    name: "combo",
+    type: "combo",
+    multiselection: true,
+    value: ["id:1", 4],
+    data: [
+        { value: "value: 1", id: "id:1" },
+        { value: "value: 2", id: "id:2" },
+        { value: "value: 3", id: 3 },
+        { value: "value: 4", id: 4 },
+        { value: "value: 5", id: 5 },
+    ],
+    validation: (value, text) => {
+        return value.includes(4) || text.includes("value:5");
+    }
+}
+~~~
+
+~~~js title="Validation for Combo control. Multi select is disabled"
+{
+    name: "combo",
+    type: "combo",
+    multiselection: false,
+    value: 4,
+    data: [
+        { value: "value: 1", id: "id:1" },
+        { value: "value: 2", id: "id:2" },
+        { value: "value: 3", id: 3 },
+        { value: "value: 4", id: 4 },
+        { value: "value: 5", id: 5 },
+    ],
+    validation: (value, text) => {
+        return value === 4 || text === "value:5";
+    }
+},
+~~~
 
 ### Messages
 
@@ -255,7 +296,7 @@ After a user has finished filling out the form according to the specified rules,
 To validate a form, make use of the [](form/api/form_validate_method.md) method:
 
 ~~~js
-var result = form.validate();
+const result = form.validate();
 ~~~
 
 The method should return *true*, if all the fields are filled as required, or *false* if there are fields that require attention.
@@ -286,7 +327,7 @@ To send a form to the server, make use of the [](form/api/form_send_method.md) m
 and returns a promise object.
 
 ~~~js
-var send = form.send("myserver.com", "POST");
+const send = form.send("myserver.com", "POST");
 ~~~
 
 To control the process of a from sending, you can make use of the related events: [](form/api/form_beforesend_event.md) and [](form/api/form_aftersend_event.md):
@@ -305,7 +346,7 @@ form.events.on("AfterSend", function(){
 
 ## Clearing form
 
-The API of dhtmlxForm provides you with flexible ways of clearing a form. There is the [](form/api/form_clear_method.md) method that clears a form either fully or partially, depending on the passed parameter.
+The API of DHTMLX Form provides you with flexible ways of clearing a form. There is the [](form/api/form_clear_method.md) method that clears a form either fully or partially, depending on the passed parameter.
 
 - "value" - clears only form values
 - "validation" - clears form validation

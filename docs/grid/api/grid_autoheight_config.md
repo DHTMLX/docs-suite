@@ -13,7 +13,7 @@ description: You can explore the autoHeight config of Grid in the documentation 
 @default: false
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
@@ -25,7 +25,7 @@ var grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 Note, that the **autoHeight** option does not adjust the height of the cells in the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.  
 

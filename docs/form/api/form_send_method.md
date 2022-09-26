@@ -19,7 +19,7 @@ description: You can explore the send method of Form in the documentation of the
 An object of the promise.
 
 @example:
-var send = form.send("myserver.com", "POST");
+const send = form.send("myserver.com", "POST");
 
 @descr:
 

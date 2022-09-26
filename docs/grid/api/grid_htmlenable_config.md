@@ -11,7 +11,7 @@ description: You can explore the htmlEnable config of Grid in the documentation 
 @signature: {'htmlEnable?: boolean;'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],

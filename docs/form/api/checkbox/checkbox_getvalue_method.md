@@ -15,17 +15,17 @@ Either a string with the current value of the control or boolean value with the 
 
 @example:
 // returns value if the value is specified for the checkbox
-var value = form.getItem("checkbox").getValue(); // -> "checkbox_value"
+const value = form.getItem("checkbox").getValue(); // -> "checkbox_value"
 
 // returns state if the value is not specified for the checkbox
-var state = form.getItem("checkbox").getValue(); // -> true/false
+const state = form.getItem("checkbox").getValue(); // -> true/false
 
 @descr:
 
 - If the **value** property is not set for a control, the method returns the state of the control:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     rows: [
         {   
             type: "checkbox",
@@ -37,13 +37,13 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-var state = form.getItem("checkbox").getValue(); // -> true/false
+const state = form.getItem("checkbox").getValue(); // -> true/false
 ~~~
 
 - If the **value** property is defined, the method returns a string value. In addition, if the **checked** option is set to *true*, the method returns the value of a control, otherwise - returns an empty string (""):
 
 ~~~js {8-9}
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     rows: [
         {   
             type: "checkbox",
@@ -56,5 +56,5 @@ var form = new dhx.Form("form_container", {
     ]
 });
 
-var value = form.getItem("checkbox").getValue(); // -> ""
+const value = form.getItem("checkbox").getValue(); // -> ""
 ~~~

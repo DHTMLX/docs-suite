@@ -8,7 +8,7 @@ description: You can have an overview of Message in the documentation of the DHT
 
 dhtmlxMessage is a tiny but useful component that helps you to interact with a user of your application. Depending on the type of a message, you can inform a user about some processes taking place in the app, ask for confirmation of some action, warn against some steps that may result in unwanted effects, or simply give a hint about the purpose of a certain element of an app.
 
-Check [online samples for dhtmlxMessage](https://snippet.dhtmlx.com/all?text=%23message). 
+Check [online samples for dhtmlxMessage](https://snippet.dhtmlx.com/all?tag=message). 
 
 ![](../assets/message/dhx_confirm.png)
 
@@ -21,7 +21,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Me
 ## Related resources
 
 - You can get dhtmlxMessage as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxMessage](https://snippet.dhtmlx.com/all?text=%23message)  
+- There are also [online samples for dhtmlxMessage](https://snippet.dhtmlx.com/all?tag=message)  
 
 ## Guides
 

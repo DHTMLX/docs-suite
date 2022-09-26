@@ -12,10 +12,10 @@ description: You can explore the height config of DataView in the documentation 
 
 @example:
 // sets the height as a number
-var dataview = new dhx.DataView("dataview", {height: 700});
+const dataview = new dhx.DataView("dataview_container", {height: 700});
 
 // sets the height as a string value
-var dataview = new dhx.DataView("dataview", {height: "700px"});
+const dataview = new dhx.DataView("dataview_container", {height: "700px"});
 
 @descr:
 

@@ -8,8 +8,8 @@ description: You can explore the data loading of Sidebar in the documentation of
 
 There are several simple ways of loading data into dhtmlxSidebar:
 
-- load data from an external file
-- load data from a local data source
+- on initialization of Sidebar
+- after initialization of Sidebar
 
 First, you need to prepare a data set that will be loaded into Sidebar.
 
@@ -18,7 +18,7 @@ First, you need to prepare a data set that will be loaded into Sidebar.
 dhtmlxSidebar expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var data = [
+const data = [
     {
         "id": "dashboard",
         "value": "Dashboard",
@@ -39,7 +39,27 @@ var data = [
 
 A data set consists of objects with configurations of sidebar controls. Templates for Sidebar controls in JSON format are given [below](#json-format-templates).
 
-## Loading from a local source
+## Loading data on initialization
+
+You can load a [predefined data set](#preparing-data-set) into Sidebar on the initialization stage. Use the [data](sidebar/api/sidebar_data_config.md) configuration property, as in:
+
+~~~js
+const sidebar = new dhx.Sidebar("sidebar_container",{
+    css: "dhx_widget--border_right",
+    data: data
+});
+~~~
+
+**Related sample**: [Sidebar. Initialization with config.data](https://snippet.dhtmlx.com/y8y7iw42)
+
+## Loading data after initialization
+
+There are two ways to load data into Sidebar after its initialization:
+
+- [from a local data source](#loading-from-a-local-source)
+- [from an external file](#loading-from-an-external-file)
+
+### Loading from a local source
 
 You can load data to a sidebar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
@@ -49,7 +69,7 @@ sidebar.data.parse(data);
 
 **Related sample**: [Sidebar. Initialization with data.parse()](https://snippet.dhtmlx.com/x0qpt7pk)
 
-## Loading from an external file
+### Loading from an external file
 
 The **load** method loads the sidebar data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 

@@ -17,7 +17,7 @@ description: You can explore the getProperties method of Form in the documentati
 An object either with the available attributes of the control and their values or with a set of <i>key:value</i> pairs where <i>key</i> is the name of the control (or its id) and <i>value</i> is an object with the available attributes of the control and their values.
 
 @example:
-var form = new dhx.Form("form-sample", {
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     rows: [
         {

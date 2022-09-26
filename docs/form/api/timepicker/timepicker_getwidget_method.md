@@ -14,7 +14,7 @@ description: You can explore the getWidget method of the Timepicker control of F
 An object of the dhtmlxTimePicker widget.
 
 @example:
-var timepicker = form.getItem("timepicker").getWidget();  
+const timepicker = form.getItem("timepicker").getWidget();  
 // -> dhtmlxTimePicker
 
 @descr:
@@ -24,6 +24,6 @@ It is possible to use methods of dhtmlxTimePicker via the **getWidget()** method
 For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
 
 ~~~js
-var timepicker = form.getItem("timepicker").getWidget();  // -> TimePicker
+const timepicker = form.getItem("timepicker").getWidget();  // -> TimePicker
 timepicker.setValue("00:39"); //set the value as a string
 ~~~

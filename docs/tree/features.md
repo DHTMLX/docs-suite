@@ -59,7 +59,7 @@ In this section you can learn how to customize a Tree, its icons, and configure 
 
 | Topic                                                                                        | Description                                                                                                                                                          |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Height of Tree items](../tree_itemheight_config/)                                  | Learn how to set the height for Tree items ([Example](https://snippet.dhtmlx.com/w1qk9u7m))                                                                          |
+| [Height of Tree items](tree/api/tree_itemheight_config.md)                                  | Learn how to set the height for Tree items ([Example](https://snippet.dhtmlx.com/w1qk9u7m))                                                                          |
 | [Setting template for rendering items](../setting_tree_appearance/#adding-template-to-items) | Learn how to define a template for rendering items in Tree and add event handlers to HTML elements of the template ([Example]( https://snippet.dhtmlx.com/hg3f50td)) |
 | [Applying custom icons](../setting_tree_appearance/#changing-icons)                          | Learn how to add custom icons to Tree items ([Example](https://snippet.dhtmlx.com/lpsgn3j7))                                                                         |
 | [Applying custom icons via data set](https://snippet.dhtmlx.com/h7mlx21q)                    | The example shows how to add custom icons when you prepare a data set                                                                                                |
@@ -109,7 +109,7 @@ In this section you may study how to work with selection functionality.
 
 | Topic                                                       | Description                                                                                                                                                                       |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Using selection functionality](../usage_selection/)        | Learn how to enable/disable selection, set selection to items, remove selection, and get the object of a selected item ([Example](https://snippet.dhtmlx.com/g6cmggqt?text=tree)) |
+| [Using selection functionality](../usage_selection/)        | Learn how to enable/disable selection, set selection to items, remove selection, and get the object of a selected item ([Example](https://snippet.dhtmlx.com/g6cmggqt?tag=tree)) |
 | [Disabling selection](../configuration/#selection-of-items) | Learn how to disable the ability to select items in Tree on its initialization ([Example](https://snippet.dhtmlx.com/2x9htpke))                                                   |
 
 ## How to work with Tree events
@@ -144,7 +144,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=tree">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=tree">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

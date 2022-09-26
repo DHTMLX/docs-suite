@@ -17,15 +17,17 @@ description: You can explore the setCell method of Grid in the documentation of 
 - `shiftUp: boolean` - *true* - to select a range of rows or cells, otherwise - *false* (for multiselection mode)
 
 @example:
-var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
     selection:"cell",
     multiselection: false, 
     data: dataset
 });
 
-var row = grid.data.getItem(grid.data.getId(0));
-var column = grid.getColumn("yearlyChange");
+const row = grid.data.getItem(grid.data.getId(0));
+const column = grid.getColumn("yearlyChange");
 grid.selection.setCell(row, column);
 
 @descr:

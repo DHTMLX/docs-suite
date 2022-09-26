@@ -11,9 +11,9 @@ description: You can explore the headerImage config of Layout in the documentati
 @signature: {'headerImage?: string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", headerImage:"/img.png"}
+        { header: "Cell header", headerImage:"/img.png"}
     ]
 });
 

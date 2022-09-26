@@ -14,7 +14,7 @@ description: You can explore the getScrollState method of Grid in the documentat
 An object with x,y coordinates of a position the grid has been scrolled to.
 
 @example:
-var state = grid.getScrollState(); // -> {x:0,y:0}
+const state = grid.getScrollState(); // -> {x:0,y:0}
 
 @descr:
 

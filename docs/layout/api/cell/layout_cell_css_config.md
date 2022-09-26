@@ -21,7 +21,7 @@ description: You can explore the css config of a cell of Layout in the documenta
     }
 </style>
 
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     rows: [
         {
             id: "toolbar",
@@ -44,7 +44,7 @@ var layout = new dhx.Layout("layout_container", {
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-layout-cell) that you can also apply to change the appearance of a Layout cell.
 
 ~~~js
-var layout = new dhx.Layout("layout", {
+const layout = new dhx.Layout("layout_container", {
     css: "dhx_layout-cell--bordered",
 	rows: [
         {

@@ -15,7 +15,7 @@ An object of the DHTMLX ColorPicker widget.
 
 @example:
 const colorpicker = form.getItem("colorpicker").getWidget();  
-// -> dhtmlxColorPicker
+// -> DHTMLX ColorPicker
 
 @descr:
 

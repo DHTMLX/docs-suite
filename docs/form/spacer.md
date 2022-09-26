@@ -13,7 +13,7 @@ This item takes space on the form and is used for aligning controls.
 You can easily add a Spacer control during initialization of a form:
 
 ~~~js
-var form = new dhx.Form("form_container", {
+const form = new dhx.Form("form_container", {
     rows: [
         {
   			type: "input",
@@ -44,7 +44,7 @@ You can manipulate a Spacer control by using methods or events of the object ret
 For example, you can hide the control:
 
 ~~~js
-var value = form.getItem("spacer").hide();
+const value = form.getItem("spacer").hide();
 ~~~
 
 ### Methods

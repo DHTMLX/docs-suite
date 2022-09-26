@@ -13,7 +13,7 @@ description: You can explore the autoWidth config of Grid in the documentation o
 @default: false
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],

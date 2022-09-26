@@ -11,7 +11,7 @@ description: You can explore the itemsInRow config of DataView in the documentat
 @signature: {'itemsInRow?: number;'}
 
 @example:
-var dataview = new dhx.DataView("dataview", {itemsInRow: 5});
+const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 
 @descr:
 

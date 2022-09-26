@@ -11,9 +11,9 @@ description: You can explore the height config of Layout in the documentation of
 @signature: {'height?: number | string;'}
 
 @example:
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
-      { header: "Cell header", height: "300px" }
+        { header: "Cell header", height: "300px" }
     ]
 });
 
@@ -24,7 +24,7 @@ var layout = new dhx.Layout("layout_container", {
 Starting from v7.0, the height of a cell can be automatically adjusted to the height of its content. For that, set the **height** configuration option to *"content"*:
 
 ~~~js {5}
-var layout = new dhx.Layout("layout_container", {
+const layout = new dhx.Layout("layout_container", {
     cols: [
         { 
             header: "Cell header", 

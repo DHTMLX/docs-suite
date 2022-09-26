@@ -151,8 +151,8 @@ In this section you can find out corresponding references of Layout and Layout c
 
 | Topic                                                | Description                                   |
 | ---------------------------------------------------- | --------------------------------------------- |
-| [Layout cell methods](../layout-cell-methods/)       | Check the list of methods of a Layout cell    |
-| [Layout cell properties](../layout-cell-properties/) | Check the list of properties of a Layout cell |
+| [Layout cell methods](category/layout-cell-methods.md)       | Check the list of methods of a Layout cell    |
+| [Layout cell properties](category/layout-cell-properties.md) | Check the list of properties of a Layout cell |
 
 ## Common functionality
 
@@ -167,7 +167,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=layout">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=layout">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 

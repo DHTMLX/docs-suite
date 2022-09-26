@@ -134,7 +134,7 @@ In this section you can learn how to configure the style of Grid and its cells.
 | [Handling events in template](../configuration/#event-handlers-for-html-content) | Learn how to assign event handlers to HTML elements of a custom template of Grid cells ([Example](https://snippet.dhtmlx.com/zcv5drxc))                                  |
 | [Styling Grid](../customization/#styling-grid)                                   | Learn how to customize a grid ([Example](https://snippet.dhtmlx.com/c5tr3s5r))                                                                                           |
 | [Styling cells](../customization/#styling-cells)                                 | Learn how to style the necessary cells ([Example](https://snippet.dhtmlx.com/hskmp8rh))                                                                                  |
-| [Marking cells with colors](../customization/#adding-custom-marks-to-cells)      | Learn how to apply conditional formatting and mark cells in the grid ([Example 1](https://snippet.dhtmlx.com/9whjve0v), [Example 2](https:/snippet.dhtmlx.com/buirf16n)) |
+| [Marking cells with colors](../customization/#adding-custom-marks-to-cells)      | Learn how to apply conditional formatting and mark cells in the grid ([Example 1](https://snippet.dhtmlx.com/9whjve0v), [Example 2](https://snippet.dhtmlx.com/buirf16n)) |
 | [Styling rows](../customization/#styling-rows)                                   | Learn how to style the necessary rows ([Example 1](https://snippet.dhtmlx.com/idvmge2d), [Example 2](https://snippet.dhtmlx.com/2dxtwf9n))                               |
 | [Styling selection](https://snippet.dhtmlx.com/xs7bixmg)                         | The example shows how to style the selection in the grid                                                                                                                 |
 | [List of CSS classes](../../helpers/base_elements/)                              | A set of CSS classes provided by the DHTMLX library                                                                                                                      |
@@ -274,7 +274,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?text=grid">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=grid">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
 
