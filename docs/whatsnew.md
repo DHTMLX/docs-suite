@@ -19,7 +19,7 @@ Released on ...
 
 #### Grid
 
-- DatePicker editor. The ability to clear the value of a cell
+- Now the user can clear date values in the cell
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 
 #### Form
@@ -30,7 +30,9 @@ Released on ...
 
 - New [`beforeAutoLoad`](tree/api/tree_beforeautoload_event.md) and [`afterAutoLoad`](tree/api/tree_afterautoload_event.md) events
 
+#### TreeGrid
 
+- The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
 
 Version 7.3.7
 --------------

@@ -3938,6 +3938,7 @@ module.exports = {
                     "treegrid/api/treegrid_beforeeditend_event",
                     "treegrid/api/treegrid_beforeeditstart_event",
                     "treegrid/api/treegrid_beforeexpand_event",
+                    "treegrid/api/treegrid_beforefilter_event",
                     "treegrid/api/treegrid_beforeresizestart_event",
                     "treegrid/api/treegrid_beforerowdrag_event",
                     "treegrid/api/treegrid_beforerowdrop_event",
