@@ -2818,7 +2818,7 @@ module.exports = {
         },
         // end Menu
 
-        //Message (почему-то нет API)
+        //Message (without API)
         {
           type: "category",
           label: "Message",
@@ -3619,6 +3619,7 @@ module.exports = {
                     "toolbar/api/toolbar_isselected_method",
                     "toolbar/api/toolbar_paint_method",
                     "toolbar/api/toolbar_select_method",
+                    "toolbar/api/toolbar_setfocusinput_method",
                     "toolbar/api/toolbar_setstate_method",
                     "toolbar/api/toolbar_show_method",
                     "toolbar/api/toolbar_unselect_method",

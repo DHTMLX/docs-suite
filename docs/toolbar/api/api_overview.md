@@ -8,21 +8,22 @@ description: You can explore the API of Toolbar in the documentation of the DHTM
 
 ## Toolbar methods
 
-| Name                                          | Description                                          |
-| --------------------------------------------- | ---------------------------------------------------- |
-| [](toolbar/api/toolbar_destructor_method.md)  | @getshort(toolbar/api/toolbar_destructor_method.md)  |
-| [](toolbar/api/toolbar_disable_method.md)     | @getshort(toolbar/api/toolbar_disable_method.md)     |
-| [](toolbar/api/toolbar_enable_method.md)      | @getshort(toolbar/api/toolbar_enable_method.md)      |
-| [](toolbar/api/toolbar_getselected_method.md) | @getshort(toolbar/api/toolbar_getselected_method.md) |
-| [](toolbar/api/toolbar_getstate_method.md)    | @getshort(toolbar/api/toolbar_getstate_method.md)    |
-| [](toolbar/api/toolbar_hide_method.md)        | @getshort(toolbar/api/toolbar_hide_method.md)        |
-| [](toolbar/api/toolbar_isdisabled_method.md)  | @getshort(toolbar/api/toolbar_isdisabled_method.md)  |
-| [](toolbar/api/toolbar_isselected_method.md)  | @getshort(toolbar/api/toolbar_isselected_method.md)  |
-| [](toolbar/api/toolbar_paint_method.md)       | @getshort(toolbar/api/toolbar_paint_method.md)       |
-| [](toolbar/api/toolbar_select_method.md)      | @getshort(toolbar/api/toolbar_select_method.md)      |
-| [](toolbar/api/toolbar_setstate_method.md)    | @getshort(toolbar/api/toolbar_setstate_method.md)    |
-| [](toolbar/api/toolbar_show_method.md)        | @getshort(toolbar/api/toolbar_show_method.md)        |
-| [](toolbar/api/toolbar_unselect_method.md)    | @getshort(toolbar/api/toolbar_unselect_method.md)    |
+| Name                                            | Description                                            |
+| ----------------------------------------------- | ------------------------------------------------------ |
+| [](toolbar/api/toolbar_destructor_method.md)    | @getshort(toolbar/api/toolbar_destructor_method.md)    |
+| [](toolbar/api/toolbar_disable_method.md)       | @getshort(toolbar/api/toolbar_disable_method.md)       |
+| [](toolbar/api/toolbar_enable_method.md)        | @getshort(toolbar/api/toolbar_enable_method.md)        |
+| [](toolbar/api/toolbar_getselected_method.md)   | @getshort(toolbar/api/toolbar_getselected_method.md)   |
+| [](toolbar/api/toolbar_getstate_method.md)      | @getshort(toolbar/api/toolbar_getstate_method.md)      |
+| [](toolbar/api/toolbar_hide_method.md)          | @getshort(toolbar/api/toolbar_hide_method.md)          |
+| [](toolbar/api/toolbar_isdisabled_method.md)    | @getshort(toolbar/api/toolbar_isdisabled_method.md)    |
+| [](toolbar/api/toolbar_isselected_method.md)    | @getshort(toolbar/api/toolbar_isselected_method.md)    |
+| [](toolbar/api/toolbar_paint_method.md)         | @getshort(toolbar/api/toolbar_paint_method.md)         |
+| [](toolbar/api/toolbar_select_method.md)        | @getshort(toolbar/api/toolbar_select_method.md)        |
+| [](toolbar/api/toolbar_setfocusinput_method.md) | @getshort(toolbar/api/toolbar_setfocusinput_method.md) |
+| [](toolbar/api/toolbar_setstate_method.md)      | @getshort(toolbar/api/toolbar_setstate_method.md)      |
+| [](toolbar/api/toolbar_show_method.md)          | @getshort(toolbar/api/toolbar_show_method.md)          |
+| [](toolbar/api/toolbar_unselect_method.md)      | @getshort(toolbar/api/toolbar_unselect_method.md)      |
 
 :::info important
 Use [TreeCollection methods](tree_collection.md) to work with data. 

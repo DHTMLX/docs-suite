@@ -16,6 +16,7 @@ Released on ...
 #### Toolbar
 
 - DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
+- The ability to set focus on an Input (new [setFocusInput()](toolbar/api/toolbar_setfocusinput_method.md) method)
 
 #### Grid
 
