@@ -39,6 +39,9 @@ Drag-n-drop can work in three modes:
     </tbody>
 </table>
 
+:::info
+Enable [multiselection](grid/configuration.md#multiple-selection-of-grid-cells) of rows to allow a user to drag-n-drop multiple rows at once.
+:::
 
 **Related sample**: [Grid. Drag-n-drop between grids](https://snippet.dhtmlx.com/qx9a86ax)
 

@@ -196,7 +196,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Drag-n-drop (Pro)](https://snippet.dhtmlx.com/zwc91d50)
 
-To activate the functionality for columns or rows separately, set the value of **dragItem** to *"column"* or *"row"* respectively.
+:::note
+To activate the functionality for columns or rows separately, use `dragItem: "column"` or  `dragItem: "row"` respectively.
+:::
 
 If needed, you can disable the drag-n-drop functionality for a separate column via the **draggable** configuration option of the column:
 
@@ -214,7 +216,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Columns drag'n'drop](https://snippet.dhtmlx.com/dfdlzpqb)
 
-{{note To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).}}
+:::tip
+To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).
+:::
 
 ## Drag-n-drop between grids
 
@@ -236,6 +240,36 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Drag-n-drop between grids](https://snippet.dhtmlx.com/qx9a86ax)
+
+## Drag-n-drop of multiple rows
+
+To allow a user to drag-n-drop multiple rows at once, you need to enable [multiselection](#multiple-selection-of-grid-cells) of rows when configuring drag-n-drop. For example:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: data,
+    selection: "row",
+    multiselection: true,
+    dragItem: "both" // or dragItem: "row"
+});
+~~~
+
+or
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    selection: "row",
+    multiselection: true,
+    dragMode: "both" // or dragMode: "source"
+});
+~~~
 
 ## Editing Grid and separate columns
 

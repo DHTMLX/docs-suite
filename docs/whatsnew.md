@@ -21,6 +21,7 @@ Released on ...
 
 - Now the user can clear date values in the cell
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
+- The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
 
 #### Form
 
