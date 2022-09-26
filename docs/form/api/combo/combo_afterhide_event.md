@@ -8,10 +8,10 @@ description: You can explore the afterHide event of the Combo Box control of For
 
 @short: fires after a control is hidden
 
-@signature: {'afterHide: (value: string | string[], init: boolean) => void;'}
+@signature: {'afterHide: (value: Id | Id[], init: boolean) => void;'}
 
 @params:
-- `value: string | string[]` - the id(s) of the item(s) from data collection that are currently selected in the control
+- `value: string | number | (string | number)[]` - the ID(s) of the option(s) that are currently selected in the control
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:

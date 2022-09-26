@@ -8,10 +8,10 @@ description: You can explore the afterValidate event of the Combo Box control of
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: string | string[], isValidate: boolean) => void;'}
+@signature: {'afterValidate: (value: Id | Id[], isValidate: boolean) => void;'}
 
 @params:
-- `value: string | string[]` - the id(s) of the validated items(s) from data collection
+- `value: string | number | (string | number)[]` - the ID(s) of the validated option(s) from data collection 
 - `isValidate: boolean` - the result of validation
 
 @example:

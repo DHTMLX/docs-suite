@@ -22,10 +22,10 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
        	<tr>
 			<td><b>value</b></td>
-			<td>(<i>string, array</i>) specifies the id(s) of Combo items from data collection which values should appear in the input:
+			<td>(<i>string, number, array</i>) specifies the id(s) of Combo options from data collection which values should appear in the input:
             	<ul>
-                	<li>if <i>multiselection:true</i> is set for a combo, the property takes an array of string values as: <i>value: ["id_1","id_2","id_3"]</i>, </li>
-                    <li>if <i>multiselection:false</i> is set or the <i>multiselection</i> config is not defined, the property gets either of the two values: <i>value:"id_1"</i> or <i>value: ["id_1"]</i></li>
+                	<li>if <code>multiselection:true</code> is set for a combo, the property can be set as an array of string/number values <br>(for example, <i>value: ["id_1","id_2","id_3"]</i>, or <i>value: [1, 2, 3]</i>) </li>
+                    <li>if <code>multiselection:false</code> is set or the <code>multiselection</code> config is not defined, the property can be set as a string/number, or an array <br>(for example, <i>value:"id_1"</i>, <i>value: 1</i>, or <i>value: ["id_1"]</i>)</li>
                 </ul>
             </td>
 		</tr>
@@ -44,7 +44,9 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>validation</b></td>
-			<td>(<i>function</i>) <a href="../../../work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
+			<td>(<i>(value: Id | Id[], text: string | string[]) => boolean;</i>) <a href="../../../work_with_form#validation-rules">a callback function</a> which allows to validate Combo options.<br>The function takes two parameters:
+			<ul><li><b>value</b> - (required) the ID(s) of the option(s) to validate</li><li><b>text</b> - (required) the value(s) of the option(s)</li></ul>
+			and returns <i>true/false</i> to indicate the result of validation</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>

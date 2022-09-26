@@ -8,7 +8,7 @@ description: You can explore the attach method of Layout in the documentation of
 
 @short: attaches a DHTMLX component into a Layout cell
 
-@signature: {'attach(name: string | IViewFn | IView | IViewConstructor, config?: any): IViewLike;'}
+@signature: {'attach(component: string | IViewFn | IView | IViewConstructor, config?: any): IViewLike;'}
 
 @params:
 - `component: string | object` - the name or object of a component
