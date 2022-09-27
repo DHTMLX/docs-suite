@@ -230,7 +230,7 @@ combobox.data.add({value:"Russia"},1);
 
 **Related sample**: [Combobox. Add data and remove item](https://snippet.dhtmlx.com/o7vd331z)
 
-:::note
+:::info
 From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.
 :::
 

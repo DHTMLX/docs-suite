@@ -320,6 +320,25 @@ To use this editor, you should specify the **type:"date"** property for a column
 }
 ~~~
 
+:::info
+You can configure the date picker by passing [properties of Calendar](category/calendar-properties.md) to the <b>editorConfig</b> option, as in:
+
+~~~js
+{ 
+	id: "start_date", 
+	header: [{ text: "Start date" }], 
+	type: "date", 
+	editorConfig: { 
+		timePicker: true, 
+		weekStart: "sunday", 
+		dateFormat: "%d/%m/%Y %H:%i", 
+		thisMonthOnly: true, 
+		weekNumbers: true
+	} 
+}
+~~~
+:::
+
 - **select** - an editor for cells that should contain several options to choose from
 
 To set this editor type you need to provide the **options** property with an array of options to be displayed in the editor, e.g.:

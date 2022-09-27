@@ -11,7 +11,7 @@ description: You can explore the setValue method of Combo Box in the documentati
 @signature: {'setValue(value: Id | Id[]): void;'}
 
 @params:
-- `value: string | number | (string | number)[]` - the ID(s) of items from data collection that should be selected in Combo Box
+- `value: (string | number) | (string | number)[]` - the ID(s) of items from data collection that should be selected in Combo Box
 
 @descr:
 

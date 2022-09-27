@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Combo Box control of For
 @signature: {'setValue(value: Id | Id[]): void;'}
 
 @params:
-- `value: string | number | (string | number)[]` - the ID(s) of options from data collection that should be selected in the control
+- `value: (string | number) | (string | number)[]` - the ID(s) of options from data collection that should be selected in the control
 
 @descr:
 

@@ -129,13 +129,15 @@ description: You can explore the Grid column properties of Grid in the documenta
 		</tr>
         <tr>
 			<td><a href="../../configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect" </td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"datePicker" </td>
 		</tr>
         <tr>
 			<td><b>editorConfig</b></td>
-			<td>(<i>object</i>) an object with configuration settings of the column's editor. It can include the following property:
-            <ul><li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (<i>boolean</i>) allows end users to add new values into the list of combobox options from UI (<i>editorType: "combobox"</i>). The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li></ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a>
+			<td>(<i>object</i>) an object with configuration settings of the column's editor. <br>If <b>editorType: "combobox"</b> is specified, the <b>editorConfig</b> object can include the following property:
+            <ul>
+                <li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (<i>boolean</i>) allows end users to add new values into the list of combobox options from UI. The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li> 
+            </ul>If <b>type: "date"</b> is specified, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a>
+            <br><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a>
             </td>
 		</tr>
         <tr>
