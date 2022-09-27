@@ -526,12 +526,16 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                                 | Description                                                                 |
 | :------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [](form/api/simplevault/simplevault_afteradd_event.md)  | @getshort(form/api/simplevault/simplevault_afteradd_event.md)  |
 | [](form/api/simplevault/simplevault_afterchangeproperties_event.md)  | @getshort(form/api/simplevault/simplevault_afterchangeproperties_event.md)  |
 | [](form/api/simplevault/simplevault_afterhide_event.md)              | @getshort(form/api/simplevault/simplevault_afterhide_event.md)              |
+| [](form/api/simplevault/simplevault_afterremove_event.md)              | @getshort(form/api/simplevault/simplevault_afterremove_event.md)              |
 | [](form/api/simplevault/simplevault_aftershow_event.md)              | @getshort(form/api/simplevault/simplevault_aftershow_event.md)              |
 | [](form/api/simplevault/simplevault_aftervalidate_event.md)          | @getshort(form/api/simplevault/simplevault_aftervalidate_event.md)          |
+| [](form/api/simplevault/simplevault_beforeadd_event.md)          | @getshort(form/api/simplevault/simplevault_beforeadd_event.md)          |
 | [](form/api/simplevault/simplevault_beforechangeproperties_event.md) | @getshort(form/api/simplevault/simplevault_beforechangeproperties_event.md) |
 | [](form/api/simplevault/simplevault_beforehide_event.md)             | @getshort(form/api/simplevault/simplevault_beforehide_event.md)             |
+| [](form/api/simplevault/simplevault_beforeremove_event.md)             | @getshort(form/api/simplevault/simplevault_beforeremove_event.md)             |
 | [](form/api/simplevault/simplevault_beforeshow_event.md)             | @getshort(form/api/simplevault/simplevault_beforeshow_event.md)             |
 | [](form/api/simplevault/simplevault_beforeuploadfile_event.md)       | @getshort(form/api/simplevault/simplevault_beforeuploadfile_event.md)       |
 | [](form/api/simplevault/simplevault_beforevalidate_event.md)         | @getshort(form/api/simplevault/simplevault_beforevalidate_event.md)         |

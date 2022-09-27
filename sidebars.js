@@ -1657,12 +1657,16 @@ module.exports = {
                       id: "form/api/overview/simplevault/events_overview"
                     },*/
                     items: [
+                      "form/api/simplevault/simplevault_afteradd_event",
                       "form/api/simplevault/simplevault_afterchangeproperties_event",
                       "form/api/simplevault/simplevault_afterhide_event",
+                      "form/api/simplevault/simplevault_afterremove_event",
                       "form/api/simplevault/simplevault_aftershow_event",
                       "form/api/simplevault/simplevault_aftervalidate_event",
+                      "form/api/simplevault/simplevault_beforeadd_event",
                       "form/api/simplevault/simplevault_beforechangeproperties_event",
                       "form/api/simplevault/simplevault_beforehide_event",
+                      "form/api/simplevault/simplevault_beforeremove_event",
                       "form/api/simplevault/simplevault_beforeshow_event",
                       "form/api/simplevault/simplevault_beforeuploadfile_event",
                       "form/api/simplevault/simplevault_beforevalidate_event",
