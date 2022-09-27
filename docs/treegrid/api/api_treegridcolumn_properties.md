@@ -120,7 +120,7 @@ description: You can explore the Column properties of TreeGrid in the documentat
 		</tr>
         <tr>
 			<td><a href="../../configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"datePicker"</td>
 		</tr>
 		<tr>
 			<td><b>editorConfig</b></td>
