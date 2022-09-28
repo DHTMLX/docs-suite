@@ -13,23 +13,22 @@ Version 8.0
 
 Released on ...
 
-#### Toolbar
+#### Form
 
-- DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
-- The ability to set focus on an Input (new [setFocusInput()](toolbar/api/toolbar_setfocusinput_method.md) method)
-
+- RadioGroup control. New methods: [`hideItem()`](form/api/radiogroup/radiogroup_hideitem_method.md) and [`showItem()`](form/api/radiogroup/radiogroup_showitem_method.md)
 
 #### Grid
 
 - Now the user can clear date values in the cell
-- The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
+- The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - Now sorting icon will also appear after sorting data via the `data.sort()` method
 - The ability to configure the [datePicker editor](grid/configuration.md#setting-type-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
 
-#### Form
+#### Toolbar
 
-- RadioGroup control. New methods: [`hideItem()`](form/api/radiogroup/radiogroup_hideitem_method.md) and [`showItem()`](form/api/radiogroup/radiogroup_showitem_method.md)
+- DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
+- The ability to set focus on an Input (new [setFocusInput()](toolbar/api/toolbar_setfocusinput_method.md) method)
 
 #### Tree
 
