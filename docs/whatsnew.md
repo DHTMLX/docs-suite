@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.10
+----------------
+
+Released on ...
+
+### Fixes
+
+- Grid. Fix the issue which caused the [`change`](data_collection/api/datacollection_change_event.md) event of DataCollection to fire after filtering the grid
+- Grid. Fix the issue with incorrect defining of the data type when setting the type of a cell as a boolean value
+- Grid. Fix the issue with selection of cells when clicking on a cell from the frozen part
+- Message. Fix position of the overlay for the confirm message
+- Window. Fix the issue with incorrect positioning of the active window
+
 Version 7.3.9
 --------------
 
