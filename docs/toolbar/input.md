@@ -88,10 +88,10 @@ toolbar.getState(); //-> {search:"Summer"}
 
 ## Setting focus on a control
 
-To set focus on an Input control, use the [setFocusInput()](toolbar/api/toolbar_setfocusinput_method.md) method. It takes the ID of a control as a parameter:
+To set focus on an Input control, use the [setFocus()](toolbar/api/toolbar_setfocus_method.md) method. It takes the ID of a control as a parameter:
 
 ~~~js
-toolbar.setFocusInput("search");
+toolbar.setFocus("search");
 ~~~
 
 :::info

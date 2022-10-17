@@ -86,9 +86,9 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | Name                                    | Description                                    |
 |-----------------------------------------|------------------------------------------------|
 | [](grid/api/grid_aftersort_event.md)    | @getshort(grid/api/grid_aftersort_event.md)    |
+| [](grid/api/grid_beforefilter_event.md) | @getshort(grid/api/grid_beforefilter_event.md) |
 | [](grid/api/grid_beforesort_event.md)   | @getshort(grid/api/grid_beforesort_event.md)   |
 | [](grid/api/grid_filterchange_event.md) | @getshort(grid/api/grid_filterchange_event.md) |
-| [](grid/api/grid_beforefilter_event.md) | @getshort(grid/api/grid_beforefilter_event.md) |
 
 ### Column Drag and Drop
 

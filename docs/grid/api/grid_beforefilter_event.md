@@ -6,7 +6,7 @@ description: You can explore the beforeFilter event of Grid in the documentation
 
 # beforeFilter
 
-@short: fires after the <b>filterChange</b> event is called
+@short: fires before the <b>filterChange</b> event is called
 
 @signature: {'beforeFilter:({ value: string, colId?: string | number }) => void | boolean;'}
 
