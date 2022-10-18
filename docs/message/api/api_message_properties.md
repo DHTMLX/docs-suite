@@ -185,7 +185,7 @@ The constructor of a tooltip may take the following parameters:
 		</tr>
 		<tr>
 			<td><b>htmlEnable</b></td>
-			<td>(<i>boolean</i>) optional, enables/disables the HTML content to be displayed in a tooltip; <i>true</i> by default</td>
+			<td>(<i>boolean</i>) optional, enables/disables the HTML content to be displayed in a tooltip; <i>false</i> by default</td>
 		</tr>
     </tbody>
 </table>
@@ -194,6 +194,6 @@ The constructor of a tooltip may take the following parameters:
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
     position: "right",
-	htmlEnable: false
+	htmlEnable: true
 });
 ~~~
