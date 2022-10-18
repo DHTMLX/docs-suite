@@ -11,11 +11,10 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 7.3.10
 ----------------
 
-Released on October 17, 2022
+Released on October 18, 2022
 
 ### Fixes
 
-- Grid. Fix the issue which caused the [`change`](data_collection/api/datacollection_change_event.md) event of DataCollection to fire after filtering the grid
 - Grid. Fix the issue with incorrect defining of the data type when setting the type of a cell as a boolean value
 - Grid. Fix the issue with selection of cells when clicking on a cell from the frozen part
 - Layout. Additional container with the "dhx_layout-cell-inner_html" class is added for HTML content
