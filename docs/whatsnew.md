@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.10
+----------------
+
+Released on October 18, 2022
+
+### Fixes
+
+- Grid. Fix the issue with incorrect defining of the data type when setting the type of a cell as a boolean value
+- Grid. Fix the issue with selection of cells when clicking on a cell from the frozen part
+- Layout. Additional container with the "dhx_layout-cell-inner_html" class is added for HTML content
+- Message. Fix position of the overlay for the confirm message
+- Window. Fix the issue with incorrect positioning of the active window
+
 Version 7.3.9
 --------------
 
