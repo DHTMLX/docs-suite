@@ -276,7 +276,7 @@ In this section you will learn about common functionality of the library which c
 
 <button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=treegrid">Check more samples >>></a> </button>
 <br>
-<button class="support_btn"><a href="https://forum.dhtmlx.com/">Ask the community >>></a> </button>
+<button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
 
 :::info
