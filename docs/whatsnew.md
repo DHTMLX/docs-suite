@@ -8,6 +8,23 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.11
+----------------
+
+Released on 
+
+### Fixes
+
+- DataCollection. Fix work of the [`save()`](data_collection/api/datacollection_save_method.md) method which thrown an error in some cases
+- Form. Combo control. Fix the issue which caused data of the control to be reset after applying the [`setProperties()`](form/api/combo/combo_setproperties_method.md) method
+- Grid. Fix the incorrect display of values for options of the combobox
+- Grid. Fix the issue with the selectFilter of a column which appeared after resizing the column
+- Grid. Fix the type of data returned by the [`getSpan()`](grid/api/grid_getspan_method.md) method
+- Grid. Fix work of the [`mark`](grid/api/api_gridcolumn_properties.md) property of a column. Now the property doesn't ignore cell spans
+- Grid. Now it is possible to scroll Grid when a mouse cursor is over frozen columns (rows)
+- Layout. Fix the issue with resizing of a cell
+- Toolbar. Input control. Now autocomplete of an input field is disabled by default. To enable it, use the [`autocomplete`](toolbar/api/api_input_properties.md) property of the control
+
 Version 7.3.10
 ----------------
 
