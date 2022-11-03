@@ -33,7 +33,7 @@ $ yarn start
 
 [Blog](https://dhtmlx.com/blog/)
 
-[Forum](https://forum.dhtmlx.com/c/suite/)
+[Forum](https://forum.dhtmlx.com/c/suite/suite7/)
 
 ## Follow us
 
