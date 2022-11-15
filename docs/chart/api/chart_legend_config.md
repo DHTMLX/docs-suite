@@ -81,10 +81,8 @@ const chart = new dhx.Chart("chart_container", {
 			<td><b>values</b></td>
 			<td>(<i>object</i>) maps attributes of legend items to <a href="../../data_loading#preparing-data-set">data set</a> properties. Contains the following properties:
             	<ul>
-                	<li><b>id</b> - (<i>string/number</i>) the id of the series that will be bound to the legend </li>
                     <li><b>text</b> - (<i>string</i>) the pointer to the data value to take a text for the legend from</li>
                     <li><b>color</b> - (<i>string</i>) the pointer to the data value to take a color for the legend from</li>
-					<li><b>alpha</b> - (<i>number</i>) transparency of a legend item</li>
                 </ul>
             </td>
 		</tr>
