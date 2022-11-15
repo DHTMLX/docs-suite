@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.12
+----------------
+
+Released on November 17, 2022
+
+### Fixes
+
+- Calendar. Fix the issue with calling the [`clear()`](calendar/api/calendar_clear_method.md) method when [two calendars are linked](calendar/operating_calendar.md#linking-two-calendars)
+- Gird. Fix the issue with the [`type: "percent"`](grid/api/api_gridcolumn_properties.md) property of a column
+- Grid. Fix issues with [selectFilter](grid/configuration.md/#headerfooter-content) and [comboFilter](grid/configuration.md/#headerfooter-content). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
+- Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
+- Grid. Now [custom tooltip](grid/customization.md#adding-template-to-tooltip) will be also displayed for cells with empty values
+- Grid. Now it is possible to prevent a [custom tooltip](grid/customization.md#adding-template-to-tooltip) from being shown via returning `false` from the `tooltipTemplate` function
+- TreeGrid. Fix the error appeared on initialization of the component when [`data`](treegrid/api/treegrid_data_config.md) is defined as `TreeGridCollection` instance and [`spans`](treegrid/configuration.md#spans) are applied
+
+
 Version 7.3.11
 ----------------
 
