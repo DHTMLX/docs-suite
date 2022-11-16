@@ -21,7 +21,8 @@ Released on November 17, 2022
 - Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
 - Grid. Now [custom tooltip](grid/customization.md#adding-template-to-tooltip) will be also displayed for cells with empty values
 - Grid. Now it is possible to prevent a [custom tooltip](grid/customization.md#adding-template-to-tooltip) from being shown via returning `false` from the `tooltipTemplate` function
-- TreeGrid. Fix the error appeared on initialization of the component when [`data`](treegrid/api/treegrid_data_config.md) is defined as `TreeGridCollection` instance and [`spans`](treegrid/configuration.md#spans) are applied
+- TreeGrid. Fix the error appeared on initialization of the component when [`data`](treegrid/api/treegrid_data_config.md) was defined as `TreeGridCollection` instance and [`spans`](treegrid/configuration.md#spans) were applied
+- Window. Fix the issue with overlay positioning for a modal window (z-index is changed)
 
 
 Version 7.3.11
