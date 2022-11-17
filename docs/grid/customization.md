@@ -415,13 +415,16 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 </table>
 <br>
 
-~~~js {5-11}
+~~~js {6-14}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
 			width: 200, id: "country", header: [{ text: "Country" }], align: "left",
 			htmlEnable: true, 
             tooltipTemplate: function (value, row, col) { 
+				if (row.country === "Bangladesh") {
+                    return false; // prevent a tooltip from being shown
+                }
                 return `<div class="custom-tooltip"> 
                     <img src="../data/common/img/02/${row.avatar}.jpg" /> 
                     <span>Last edit time:<br>${row.editing.toUTCString()}</span> 
@@ -435,6 +438,10 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 ~~~
+
+:::info
+To prevent a tooltip from being shown, return `false` from the function (from v7.1.12).
+:::
 
 **Related sample**: [Grid. Rich tooltip template for the first column](https://snippet.dhtmlx.com/md8tr3pr)
 
