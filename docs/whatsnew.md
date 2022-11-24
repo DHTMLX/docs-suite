@@ -46,6 +46,53 @@ Released on ...
 
 - The [`addOption()`](combobox/api/combobox_addoption_method.md) method is updated (new `join` parameter)
 
+Version 7.3.12
+----------------
+
+Released on November 17, 2022
+
+### Fixes
+
+- Calendar. Fix the issue with calling the [`clear()`](calendar/api/calendar_clear_method.md) method when [two calendars are linked](calendar/operating_calendar.md#linking-two-calendars)
+- Gird. Fix the issue with the [`type: "percent"`](grid/api/api_gridcolumn_properties.md) property of a column
+- Grid. Fix issues with [selectFilter](grid/configuration.md/#headerfooter-content) and [comboFilter](grid/configuration.md/#headerfooter-content). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
+- Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
+- Grid. Now [custom tooltip](grid/customization.md#adding-template-to-tooltip) will be also displayed for cells with empty values
+- Grid. Now it is possible to prevent a [custom tooltip](grid/customization.md#adding-template-to-tooltip) from being shown via returning `false` from the `tooltipTemplate` function
+- TreeGrid. Fix the error appeared on initialization of the component when [`data`](treegrid/api/treegrid_data_config.md) was defined as `TreeGridCollection` instance and [`spans`](treegrid/configuration.md#spans) were applied
+- Window. Fix the issue with overlay positioning for a modal window (z-index is changed)
+
+
+Version 7.3.11
+----------------
+
+Released on November 3, 2022
+
+### Fixes
+
+- DataCollection. Fix work of the [`save()`](data_collection/api/datacollection_save_method.md) method which thrown an error in some cases
+- Form. Combo control. Fix the issue which caused data of the control to be reset after applying the [`setProperties()`](form/api/combo/combo_setproperties_method.md) method
+- Grid. Fix the incorrect display of values for options of the combobox
+- Grid. Fix the issue with the selectFilter of a column which appeared after resizing the column
+- Grid. Fix the type of data returned by the [`getSpan()`](grid/api/grid_getspan_method.md) method
+- Grid. Fix work of the [`mark`](grid/api/api_gridcolumn_properties.md) property of a column. Now the property doesn't ignore cell spans
+- Grid. Now it is possible to scroll Grid when a mouse cursor is over frozen columns (rows)
+- Layout. Fix the issue with resizing of a cell
+- Toolbar. Input control. Now autocomplete of an input field is disabled by default. To enable it, use the [`autocomplete`](toolbar/api/api_input_properties.md) property of the control
+
+Version 7.3.10
+----------------
+
+Released on October 18, 2022
+
+### Fixes
+
+- Grid. Fix the issue with incorrect defining of the data type when setting the type of a cell as a boolean value
+- Grid. Fix the issue with selection of cells when clicking on a cell from the frozen part
+- Layout. Additional container with the "dhx_layout-cell-inner_html" class is added for HTML content
+- Message. Fix position of the overlay for the confirm message
+- Window. Fix the issue with incorrect positioning of the active window
+
 Version 7.3.9
 --------------
 

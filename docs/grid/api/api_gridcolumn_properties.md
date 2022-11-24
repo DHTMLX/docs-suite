@@ -196,7 +196,9 @@ description: You can explore the Grid column properties of Grid in the documenta
                 <li><b>value</b> - (<i>any</i>) the value of a cell</li>
                 <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
                 <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
-            </ul></td>
+            </ul>
+            Returning <code>false</code> from the function will block showing of the tooltip
+            </td>
 		</tr>
     </tbody>
 </table>

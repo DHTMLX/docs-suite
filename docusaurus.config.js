@@ -194,7 +194,7 @@ module.exports = {
                 },
                 {
                     label: 'Forum',
-                    href: 'https://forum.dhtmlx.com/c/suite7',
+                    href: 'https://forum.dhtmlx.com/c/suite/suite7/',
                     position: 'right'
                 },
                 {
@@ -229,7 +229,7 @@ module.exports = {
                         },
                         {
                             label: 'Forum',
-                            href: 'https://forum.dhtmlx.com/c/suite7',
+                            href: 'https://forum.dhtmlx.com/c/suite/suite7/',
                             position: 'right'
                         },
                     ],

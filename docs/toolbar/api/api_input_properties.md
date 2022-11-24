@@ -41,6 +41,10 @@ description: You can explore the Input properties of Toolbar in the documentatio
 			<td>(<i>number</i>) optional, the width of the input field</td>
 		</tr>
 		<tr>
+			<td><b>autocomplete</b></td>
+			<td>(<i>boolean</i>) optional, enables/disables the autocomplete functionality of the input; <i>false</i> by default</td>
+		</tr>
+		<tr>
 			<td><b>label</b></td>
 			<td>(<i>string</i>) optional, specifies an AREA label for the Input control</td>
 		</tr>
