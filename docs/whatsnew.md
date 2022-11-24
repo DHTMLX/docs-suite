@@ -25,6 +25,10 @@ Released on ...
 - Now sorting icon will also appear after sorting data via the `data.sort()` method
 - The ability to configure the [datePicker editor](grid/configuration.md#setting-type-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
 
+#### Message
+
+- The ability to close a message box (new [`close()`](message/api/message_close_method.md) method)
+
 #### Toolbar
 
 - DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)

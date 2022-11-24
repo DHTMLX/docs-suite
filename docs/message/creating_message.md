@@ -68,17 +68,19 @@ Add a container for Message and give it an id, for example "message_container":
 
 ## Create necessary message box
 
-Create a desired message box with the corresponding method. The listed methods take an [**object with configuration options of message boxes**](message/configuration.md) as a parameter.
+Create a desired message box with the corresponding constructors. The listed constructors take an [**object with configuration options of message boxes**](message/configuration.md) as a parameter.
 
-- **dhx.message()** - to create a message
+- **dhx.message(): {close() => void};** - to create a message. The constructor returns an object with the **close()** method:
 
 ~~~js
-dhx.message({
-	text:"Message text", 
+const message = dhx.message({
+    text:"Message text", 
     icon:"dxi-clock", 
     css:"expire", 
     expire:1000
 });
+
+console.log(message); // -> {close: function}
 ~~~
 
 **Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
@@ -108,7 +110,7 @@ dhx.confirm({
 
 **Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
-- **dhx.tooltip()** - to create a tooltip. The method takes two parameters:
+- **dhx.tooltip()** - to create a tooltip. The constructor takes two parameters:
     - **text** - (*string*) a string with the text of tooltip
     - **config** - (*object*) an object with [tooltip configuration properties](message/configuration.md#tooltip)
         

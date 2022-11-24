@@ -8,7 +8,7 @@ description: You can explore the Message properties in the documentation of the 
 
 ## Message box
 
-The constructor of a message box may take the following parameters:
+The configuration object of a message box may take the following parameters:
 
 <table>
 	<tbody>
@@ -58,7 +58,7 @@ dhx.message({
 
 ## Alert box
 
-The constructor of an alert box may take the following parameters:
+The configuration object of an alert box may take the following parameters:
 
 <table>
 	<tbody>
@@ -106,7 +106,7 @@ dhx.alert({
 
 ## Confirm box
 
-The constructor of a confirm box may take the following parameters:
+The configuration object of a confirm box may take the following parameters:
 
 <table>
 	<tbody>
@@ -155,7 +155,7 @@ dhx.confirm({
 
 ## Tooltip
 
-The constructor of a tooltip may take the following parameters:
+The configuration object of a tooltip may take the following parameters:
 
 <table>
 	<tbody>

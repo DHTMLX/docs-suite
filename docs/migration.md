@@ -6,6 +6,37 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+7.3 -> 8.0
+------------
+
+### Message box
+
+Before v8.0, the **dhx.message()** constructor just added a new element to DOM.
+
+Starting from v8.0, the constructor looks like **dhx.message(): {close() => void};**. It will return an object with the method which allows calling a function to remove the element from DOM.  
+
+~~~js {8} title="Before v8.0"
+const message = dhx.message({
+    text:"Message text", 
+    icon:"dxi-clock", 
+    css:"expire", 
+    expire:1000
+});
+
+console.log(message); // -> undefined
+~~~
+
+~~~js {8} title="From v8.0"
+const message = dhx.message({
+    text:"Message text", 
+    icon:"dxi-clock", 
+    css:"expire", 
+    expire:1000
+});
+
+console.log(message); // -> {close: function}
+~~~
+
 7.1 -> 7.2
 ----------------
 

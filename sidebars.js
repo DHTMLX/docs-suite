@@ -2837,17 +2837,43 @@ module.exports = {
             id: "message/index"
           },
           items: [
-            //"message/index",
+            //"menu/index",
             {
-              /*type: "category",
+              type: "category",
               label: "Message API",
-              link: {*/
-                type: 'doc',
-                id: "message/api/api_message_properties",
-            // },
-              /*items: [
-                "message/api/api_message_properties",
-              ],*/
+              link: {
+                type: 'generated-index',
+                title: "Message API",
+                keywords: ['message API'],
+                image: '/img/docusaurus.png'
+              },
+              items: [
+                //"message/index",
+                {
+                  type: "category",
+                  label: "Message box methods",
+                  link: {
+                    type: 'generated-index',
+                    title: "Message box methods",
+                    keywords: ['message box methods'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "message/api/message_close_method",
+                  ],
+                },
+                {
+                  /*type: "category",
+                  label: "Message API",
+                  link: {*/
+                    type: 'doc',
+                    id: "message/api/api_message_properties",
+                  // },
+                  /*items: [
+                  "message/api/api_message_properties",
+                ],*/
+                }
+              ]
             },
             "message/features",
             "message/overview",
