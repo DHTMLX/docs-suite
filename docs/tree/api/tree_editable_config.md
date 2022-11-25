@@ -15,7 +15,7 @@ Multi-line editing is available. Use **Shift+Enter** to add a line.
 @default: false
 
 @example:
-var tree = new dhx.Tree("tree_container", {editable: true});
+const tree = new dhx.Tree("tree_container", {editable: true});
 
 @descr:
 

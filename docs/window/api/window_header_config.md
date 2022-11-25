@@ -11,7 +11,7 @@ description: You can explore the header config of Window in the documentation of
 @signature: {'header?: boolean;'}
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     header: true
 });
 

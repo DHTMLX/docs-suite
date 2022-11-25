@@ -32,7 +32,7 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
     	<div id="treegrid" style="height: 100%; width: 100%"></div>
         <script>
             // creating dhtmlxTreeGrid 
-            var treegrid = new dhx.TreeGrid("treegrid_container", {
+            const treegrid = new dhx.TreeGrid("treegrid_container", {
     			columns: [
         			{ width: 100, id: "a", header: [{ text: "#" }] },
         			{ width: 100, id: "b", header: [{ text: "Title" }] },
@@ -90,7 +90,7 @@ Initialize TreeGrid with the `dhx.TreeGrid` object constructor. The constructor 
 
 ~~~js title="index.js"
 // creating dhtmlxTreeGrid
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 100, id: "a", header: [{ text: "#" }] },
         { width: 100, id: "b", header: [{ text: "Title" }] },

@@ -120,7 +120,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](window/api/window_css_config.md) property in the Window configuration:
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
 	title: "Window", 
     css:"my-first-class my-second-class"
 });

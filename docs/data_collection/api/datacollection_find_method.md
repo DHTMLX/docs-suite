@@ -18,12 +18,12 @@ An object of the matching item.
 
 @example:
 //searching for an item by the function
-var item = component.data.find(function(item){
+const item = component.data.find(function(item){
 	if(item.text==="Manager"||item.text==="Marketer"){return true}
 });
 
 //searching for an item by the attribute key
-var item = component.data.find({by:"text",match:"Manager"});
+const item = component.data.find({by:"text",match:"Manager"});
 
 @descr:
 

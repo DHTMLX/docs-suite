@@ -14,7 +14,7 @@ description: You can explore the attachHTML method of Popup in the documentation
 `html: string` - an HTML content to be added into a popup
 
 @example:
-var popup = new dhx.Popup();
+const popup = new dhx.Popup();
 popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 

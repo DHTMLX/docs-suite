@@ -11,7 +11,7 @@ description: You can explore the spans config of TreeGrid in the documentation o
 @signature: {'spans?: ISpan[];'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

@@ -13,7 +13,7 @@ description: You can explore the minHeight config of Window in the documentation
 @default: 100
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     minHeight:170
 });
 

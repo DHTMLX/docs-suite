@@ -44,7 +44,7 @@ A data set consists of objects with configurations of sidebar controls. Template
 You can load a [predefined data set](#preparing-data-set) into Sidebar on the initialization stage. Use the [data](sidebar/api/sidebar_data_config.md) configuration property, as in:
 
 ~~~js
-const sidebar = new dhx.Sidebar("sidebar_container",{
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css: "dhx_widget--border_right",
     data: data
 });
@@ -95,14 +95,14 @@ To save the current state of a sidebar, use the **serialize()** method of Tree C
 Each JSON object contains the configuration of a separate Sidebar control.
 
 ~~~js
-var state = sidebar1.data.serialize();
+const state = sidebar1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different sidebar. For example:
 
 ~~~js
 // creating a new sidebar
-var sidebar2 = new dhx.Sidebar(document.body);
+const sidebar2 = new dhx.Sidebar("sidebar_container2");
 // parsing the state of sidebar1 into sidebar2
 sidebar2.data.parse(state);
 ~~~

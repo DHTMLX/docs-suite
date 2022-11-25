@@ -18,7 +18,7 @@ The object of an item.
 
 @example:
 
-var item = component.data.getItem(123);
+const item = component.data.getItem(123);
 
 @descr:
 
@@ -27,6 +27,6 @@ var item = component.data.getItem(123);
 You can access the original properties of an item like this:
 
 ~~~js
-var item = component.data.getItem(123);
-var text = item.text;
+const item = component.data.getItem(123);
+const text = item.text;
 ~~~

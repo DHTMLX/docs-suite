@@ -18,7 +18,7 @@ description: You can explore the getSpan method of TreeGrid in the documentation
 An object with configuration of a span.
 
 @example:
-var span = grid.getSpan("10","a"); 
+const span = treegrid.getSpan("10","a"); 
 // -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
 
 @descr:

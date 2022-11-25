@@ -27,7 +27,7 @@ Then you can use the name of the icon as the value of the **icon** property in t
 ![](../assets/ribbon/fa_icons.png)
 
 ~~~js
-var data = [
+const data = [
 	{
 		type: "block",
 		"items": [
@@ -93,7 +93,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](ribbon/api/ribbon_css_config.md) property in the Ribbon configuration:
 
 ~~~js
-var ribbon = new dhx.Ribbon({
+const ribbon = new dhx.Ribbon("ribbon_container", {
     css:"my_first_class my_second_class"
 });
 ~~~

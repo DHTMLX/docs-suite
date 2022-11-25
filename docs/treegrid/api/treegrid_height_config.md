@@ -11,7 +11,7 @@ description: You can explore the height config of TreeGrid in the documentation 
 @signature: {'height?: number;'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

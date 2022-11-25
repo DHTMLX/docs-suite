@@ -14,7 +14,7 @@ description: You can explore the getItem method of Selection in the documentatio
 Either an object of a selected item, or an array of selected items.
 
 @example:
-var item = component.selection.getItem();
+const item = component.selection.getItem();
 // -> {…}
 
 @descr:

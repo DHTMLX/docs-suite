@@ -14,7 +14,7 @@ description: You can explore the getCell method of TreeGrid in the documentation
 An object with parameters of a selected cell.
 
 @example:
-var selectedCell = treegrid.selection.getCell();
+const selectedCell = treegrid.selection.getCell();
 // -> {row: {…}, column: {…}}
 
 @descr:

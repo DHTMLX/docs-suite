@@ -11,7 +11,7 @@ description: You can explore the labelWidth config of Slider in the documentatio
 @signature: {'labelWidth?: string | number;'}
 
 @example:
-var slider = new dhx.Slider("slider_container", {
+const slider = new dhx.Slider("slider_container", {
     labelWidth:100
 });
 

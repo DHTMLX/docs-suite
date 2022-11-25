@@ -28,7 +28,7 @@ To initialize dhtmlxSlider on a page, you need to take the following simple step
         <div id="slider_container"></div>
         <script>
             // creating dhtmlxSlider 
-            var slider = new dhx.Slider("slider_container", {
+            const slider = new dhx.Slider("slider_container", {
 				min: 0,
 				max: 100,
 				step: 1,
@@ -70,7 +70,7 @@ Initialize Slider with the `dhx.Slider` object constructor. The constructor has 
 
 ~~~js title="index.js"
 // creating dhtmlxSlider
-var slider = new dhx.Slider("slider_container", {
+const slider = new dhx.Slider("slider_container", {
     min: 0,
 	max: 100,
 	step: 1

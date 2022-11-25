@@ -11,7 +11,7 @@ description: You can explore the icon config of Tree in the documentation of the
 @signature: {'icon?: ITreeCustomIcon;'}
 
 @example:
-var tree = new dhx.Tree("tree_container", {
+const tree = new dhx.Tree("tree_container", {
 	icon: {
 		folder: "fas fa-book",
 		openFolder: "fas fa-book-open",

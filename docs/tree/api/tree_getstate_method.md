@@ -14,7 +14,7 @@ description: You can explore the getState method of Tree in the documentation of
 An object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state.
 
 @example:
-var treeState = tree.getState();
+const treeState = tree.getState();
 /* -> 
 {
 	books: {open: true, selected: 2}, 

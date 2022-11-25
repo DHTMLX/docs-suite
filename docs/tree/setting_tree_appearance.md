@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](tree/api/tree_css_config.md) property in the Tree configuration:
 
 ~~~js
-var tree = new dhx.Tree("tree_container", { 
+const tree = new dhx.Tree("tree_container", { 
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -54,7 +54,7 @@ For example:
 	}
 </style>
 
-var tree = new dhx.Tree("tree_container", {
+const tree = new dhx.Tree("tree_container", {
 	css: "custom-class"
 });
 ~~~
@@ -109,7 +109,7 @@ and returns either a string or null.
 **Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
             <div class="dhx_tree_template">
@@ -131,7 +131,7 @@ const tree = new dhx.Tree("tree", {
 You can assign event handlers to HTML elements of a custom template via using the [eventHandlers](tree/api/tree_eventhandlers_config.md)  configuration property of Tree, for instance:
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
             <div class="dhx_tree_template">

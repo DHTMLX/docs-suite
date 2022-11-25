@@ -13,7 +13,7 @@ description: You can explore the editable config of List in the documentation of
 @default:false
 
 @example:
-var list = new dhx.List("list_container", {editable:true});
+const list = new dhx.List("list_container", {editable:true});
 
 @descr:
 

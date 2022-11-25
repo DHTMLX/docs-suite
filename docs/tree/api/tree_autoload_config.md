@@ -11,7 +11,7 @@ description: You can explore the autoload config of Tree in the documentation of
 @signature: {'autoload?: string;'}
 
 @example:
-var tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
+const tree = new dhx.Tree("tree_container", {autoload: "/backend/autoload"});
 tree.data.load("/backend/autoload?id=tree");
 
 @descr:

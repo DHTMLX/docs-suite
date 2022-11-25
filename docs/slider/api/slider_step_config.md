@@ -13,7 +13,7 @@ description: You can explore the step config of Slider in the documentation of t
 @default: 1
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     step:3
 });
 

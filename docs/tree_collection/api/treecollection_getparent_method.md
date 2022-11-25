@@ -17,6 +17,6 @@ description: You can explore the getParent method of TreeCollection in the docum
 A string with the ID of the parent of the control.
 
 @example:
-var parentId = toolbar.data.getParent("add_btn");
+const parentId = toolbar.data.getParent("add_btn");
 
 @descr:

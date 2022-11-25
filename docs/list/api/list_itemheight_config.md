@@ -14,12 +14,12 @@ description: You can explore the itemHeight config of List in the documentation 
 
 @example:
 // sets the height of an item as a number
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     itemHeight:30
 });
 
 // sets the height of an item as a string value
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     itemHeight:"30px"
 });
 

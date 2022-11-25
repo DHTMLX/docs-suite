@@ -11,7 +11,7 @@ description: You can explore the top config of Window in the documentation of th
 @signature: {'top?: number;'}
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     top:250
 });
 

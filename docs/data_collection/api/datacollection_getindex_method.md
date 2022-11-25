@@ -17,7 +17,7 @@ description: You can explore the getIndex method of DataCollection in the docume
 The index of the item.
 
 @example:
-var index = component.data.getIndex("1"); // -> returns 0
+const index = component.data.getIndex("1"); // -> returns 0
 
 @descr:
 

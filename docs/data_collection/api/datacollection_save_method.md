@@ -32,7 +32,7 @@ The method will send one of the following requests to the backend:
 Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the **saveData** property that returns a "promise" object:
 
 ~~~js
-var data = new DataCollection();
+const data = new DataCollection();
 data.save(loader);
 return data.saveData.then(function () {
     // now your data is saved

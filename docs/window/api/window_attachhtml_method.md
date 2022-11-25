@@ -14,8 +14,8 @@ description: You can explore the attachHTML method of Window in the documentatio
 `html: string` - an HTML content to be added into a window
 
 @example:
-var dhxWindow = new dhx.Window({title: "Window"});
-var html = "<h1>Header</h1><p>paragraph</p>";
+const dhxWindow = new dhx.Window({title: "Window"});
+const html = "<h1>Header</h1><p>paragraph</p>";
 dhxWindow.attachHTML(html);
 dhxWindow.show();
 

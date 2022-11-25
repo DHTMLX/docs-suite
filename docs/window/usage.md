@@ -11,8 +11,8 @@ description: You can explore how to work with Window in the documentation of the
 You can easily attach some HTML content to a window via the [](window/api/window_attachhtml_method.md) method. It takes as a parameter a string with HTML.
 
 ~~~js
-var dhxWindow = new dhx.Window({title: "Window"});
-var html = "<h1>Header</h1><p>paragraph</p>";
+const dhxWindow = new dhx.Window({title: "Window"});
+const html = "<h1>Header</h1><p>paragraph</p>";
 dhxWindow.attachHTML(html);
 dhxWindow.show();
 ~~~
@@ -95,7 +95,7 @@ dhxWindow.setSize(250,250);
 To get the current size of a window, use the [](window/api/window_getsize_method.md) method. It will return an object with width and height of a window:
 
 ~~~js
-var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
+const size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 ~~~
 
 **Related sample**: [Window. Set/get Window size](https://snippet.dhtmlx.com/0zqxydvm)
@@ -115,7 +115,7 @@ dhxWindow.show();
 To get the current position of a window, use the [](window/api/window_getposition_method.md) method. It will return an object with left and top coordinates of a window:
 
 ~~~js
-var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
+const position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 ~~~
 
 **Related sample**: [Window. Get/set Window position](https://snippet.dhtmlx.com/hc3ronrk)
@@ -125,7 +125,7 @@ var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 You can check whether a window is hidden or shown on a page using the [](window/api/window_isvisible_method.md) method of the Window API. The method returns *true*, if a window is visible, and *false* if it's hidden.
 
 ~~~js
-var visible = window.isVisible(); // -> true/false
+const visible = window.isVisible(); // -> true/false
 ~~~
 
 **Related sample**: [Window. Get Window visible status](https://snippet.dhtmlx.com/woz5c09h)

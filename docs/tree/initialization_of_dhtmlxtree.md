@@ -32,7 +32,7 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
         <div id="tree_container"></div>
         <script>
             // creating dhtmlxTree
-            var tree = new dhx.Tree("tree_container",{
+            const tree = new dhx.Tree("tree_container",{
     			// config options
 			});
         </script>
@@ -83,7 +83,7 @@ Initialize Tree with the `dhx.Tree` object constructor. The constructor has two 
 
 ~~~js title="index.js"
 // creating dhtmlxTree
-var tree = new dhx.Tree("tree_container", {
+const tree = new dhx.Tree("tree_container", {
     checkbox: true
 });
 ~~~

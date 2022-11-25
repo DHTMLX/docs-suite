@@ -28,7 +28,7 @@ const data = [
     // more options
 ]
 
-var list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
 	  css: "dhx_widget--bordered",
 	  template: template,
 	  itemHeight: 72,

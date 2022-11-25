@@ -27,7 +27,7 @@ To initialize dhtmlxWindow on a page, you need to take the following simple step
     <body>
         <script>
             // creating dhtmlxWindow 
-            var dhxWindow = new dhx.Window({
+            const dhxWindow = new dhx.Window({
                 title: "DHX Window",
 				modal: false,
 				resizable: true,
@@ -62,7 +62,7 @@ Initialize Window with the `dhx.Window` object constructor. The constructor take
 
 ~~~js title="index.js"
 // creating dhtmlxWindow
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     modal: false,
 	resizable: true,
 	movable: true

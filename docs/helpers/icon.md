@@ -28,7 +28,7 @@ Use the name of the icon as a value of the **icon** property in the object with 
 - through the **template** configuration property of the component
 
 ~~~js {3}
-var list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
 	css: "dhx_widget--bordered",  
     template: (item) => "<i class=’dxi dxi-icon-’ + item.icon></i>"
 }); 
@@ -39,7 +39,7 @@ var list = new dhx.List("list", {
 Pass an HTML element with an icon class as a parameter.
 
 ~~~js {5}
-var popup = new dhx.Popup({
+const popup = new dhx.Popup({
 	css: "dhx_widget--border-shadow"
 });
  

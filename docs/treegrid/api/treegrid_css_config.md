@@ -21,7 +21,7 @@ description: You can explore the css config of TreeGrid in the documentation of 
     }
 </style>
 
-var treegrid = new dhx.TreeGrid({
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     css: "my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var treegrid = new dhx.TreeGrid({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of TreeGrid:
 
 ~~~js
-var treegrid = new dhx.TreeGrid({
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

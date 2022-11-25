@@ -29,7 +29,7 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
         <div id="sidebar_container"></div>
         <script>
             // creating dhtmlxSidebar
-            var sidebar = new dhx.Sidebar("sidebar_container");
+            const sidebar = new dhx.Sidebar("sidebar_container");
         </script>
     </body>
 </html>
@@ -67,7 +67,7 @@ Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor ta
 - an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
-var sidebar = new dhx.Sidebar("sidebar_container", {
+const sidebar = new dhx.Sidebar("sidebar_container", {
 	// config options
 });
 ~~~

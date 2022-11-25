@@ -17,7 +17,7 @@ description: description
 A string with the id of the item.
 
 @example:
-var id = component.data.getId(0); // -> returns "1"
+const id = component.data.getId(0); // -> returns "1"
 
 @descr:
 

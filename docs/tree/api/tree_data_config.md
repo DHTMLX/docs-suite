@@ -11,9 +11,9 @@ description: You can explore the data config of Tree in the documentation of the
 @signature: {'data?: array;'}
 
 @example:
-var data = new dhx.TreeCollection();
+const data = new dhx.TreeCollection();
 data.load("../common/treedata.json");
-var tree = new dhx.Tree("tree", {data: data});
+const tree = new dhx.Tree("tree_container", {data: data});
 
 @descr:
 
@@ -53,7 +53,7 @@ Each **data** object can have the following properties:
 </table>
 
 ~~~js
-var tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     data:[
         {
             "value": "Books",

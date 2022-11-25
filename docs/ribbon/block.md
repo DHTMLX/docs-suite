@@ -16,12 +16,12 @@ This is the basic syntax of a block with two buttons in a row:
 
 ~~~js
 {
-   type: "block",
-   title: "Action",        
-   items: [
-     { id: "copy", icon: "mdi mdi-content-copy", value: "Copy" },
-     { id: "cut", icon: "mdi mdi-content-cut", value: "Cut" }
-   ]
+    type: "block",
+    title: "Action",        
+    items: [
+        { id: "copy", icon: "mdi mdi-content-copy", value: "Copy" },
+        { id: "cut", icon: "mdi mdi-content-cut", value: "Cut" }
+    ]
 }
 ~~~
 

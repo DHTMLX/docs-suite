@@ -11,7 +11,7 @@ description: You can explore the params config of Uploader in the documentation 
 @signature: {'params?: {[key: string]: any;};'}
 
 @example:
-var vault = new dhx.Vault("vault_container", { 
+const vault = new dhx.Vault("vault_container", { 
 	uploader:{
     	// obligatory, the path for upload
     	target:"/upload"

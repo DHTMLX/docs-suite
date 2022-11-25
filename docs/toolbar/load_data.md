@@ -106,14 +106,14 @@ To save the current state of a toolbar, use the **serialize()** method of Tree C
 Each JSON object contains the configuration of a separate Toolbar control.
 
 ~~~js
-var state = toolbar1.data.serialize();
+const state = toolbar1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different toolbar. For example:
 
 ~~~js
 // creating a new toolbar
-var toolbar2 = new dhx.Toolbar(document.body);
+const toolbar2 = new dhx.Toolbar("toolbar_container2");
 // parsing the state of toolbar1 into toolbar2
 toolbar2.data.parse(state);
 ~~~

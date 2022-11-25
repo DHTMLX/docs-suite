@@ -11,7 +11,7 @@ description: You can explore the target config of Uploader in the documentation 
 @signature: {'target?: string;'}
 
 @example:
-var vault = new dhx.Vault("vault_container", { 
+const vault = new dhx.Vault("vault_container", { 
     uploader:{	
     	target:"/upload"
     }

@@ -13,7 +13,7 @@ description: You can explore the tabWidth config of Tabbar in the documentation 
 @default: 200
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     tabWidth: 120
 });
 

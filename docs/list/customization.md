@@ -29,7 +29,7 @@ There is a possibility to make changes in the look and feel of a list. For this 
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](list/api/list_css_config.md) property in the List configuration:
 
 ~~~js
-var list = new dhx.List({ 
+const list = new dhx.List("list_container", { 
     css:"my-first-class my-second-class"
 });
 ~~~
@@ -45,7 +45,7 @@ You can style particular cells in the list.
 For example, apply some color to each even item, as in:
 
 ~~~js
-var list = new dhx.List("list");
+const list = new dhx.List("list_container");
 list.data.parse(dataset);
 
 list.data.map(function (item, i) {
@@ -85,7 +85,7 @@ It is also possible to customize selection of an item.
   }
 </style>
 
-var list = new dhx.List("list");
+const list = new dhx.List("list_container");
 list.data.parse(dataset);
  
 list.data.map(function (item, i) {

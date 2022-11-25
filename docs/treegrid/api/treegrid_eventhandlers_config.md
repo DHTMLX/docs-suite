@@ -11,8 +11,7 @@ description: You can explore the eventHandlers config of TreeGrid in the documen
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
 
 @example:
-
-const treeGrid = new dhx.TreeGrid("treegrid", {
+const treeGrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
 		{

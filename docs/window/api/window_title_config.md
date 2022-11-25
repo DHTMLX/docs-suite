@@ -11,7 +11,7 @@ description: You can explore the title config of Window in the documentation of 
 @signature: {'title?: string;'}
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     title: "DHX Window Sample"
 });
 

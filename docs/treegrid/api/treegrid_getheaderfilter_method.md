@@ -17,7 +17,7 @@ description: You can explore the getHeaderFilter method of TreeGrid in the docum
 An HTML object or an object with Combobox configuration.
 
 @example:
-var countryFilter = treegrid.getHeaderFilter("capital");
+const countryFilter = treegrid.getHeaderFilter("capital");
 // -> return HTMLElement
 // <label class="dhx_grid-filter__label dxi dxi-magnify">...</label>
 
@@ -25,7 +25,7 @@ countryFilter.focus();
 
 // or
 
-var countryFilter = treegrid.getHeaderFilter("name");
+const countryFilter = treegrid.getHeaderFilter("name");
 // -> return Combobox
 // Combobox {_uid: "u1597322507580", config: {…}, events: EventSystem, 
 // data: DataCollection, popup: Popup, …}

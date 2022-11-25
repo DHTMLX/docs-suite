@@ -29,7 +29,7 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
         <div id="toolbar_container"></div>
         <script>
             // creating dhtmlxToolbar
-            var toolbar = new dhx.Toolbar("toolbar_container");
+            const toolbar = new dhx.Toolbar("toolbar_container");
         </script>
     </body>
 </html>
@@ -65,7 +65,7 @@ Initialize Toolbar with the `dhx.Toolbar` object constructor. The constructor ta
 - an object with [configuration properties](#configuration-properties)
 
 ~~~js
-var toolbar = new dhx.Toolbar("toolbar_container", {
+const toolbar = new dhx.Toolbar("toolbar_container", {
     // config options
 });
 ~~~

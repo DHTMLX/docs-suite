@@ -29,7 +29,7 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
         <div id="list_container"></div>
         <script>
             // creating dhtmlxList
-            var list = new dhx.List("list_container", {
+            const list = new dhx.List("list_container", {
     			itemHeight: 30
 			});
         </script>
@@ -68,7 +68,7 @@ Initialize List with the `dhx.List` object constructor. The constructor has two 
 
 ~~~js title="index.js"
 // creating dhtmlxList
-var list = new dhx.List("list_container", {
+const list = new dhx.List("list_container", {
     itemHeight:30,
     // more config options
 });

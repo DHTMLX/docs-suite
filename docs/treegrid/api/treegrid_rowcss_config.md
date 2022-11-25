@@ -17,7 +17,7 @@ description: You can explore the rowCss config of TreeGrid in the documentation 
 	}
 </style>
 
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

@@ -106,7 +106,7 @@ function template(item) {
 };
 
 //creating list
-const list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
     css: "dhx_widget--bordered",
     template: template
 });
@@ -286,7 +286,7 @@ Note, that we have added the new item into the list but not into the data set.
 To save the current state of the list we will serialize the component data with the  help of the [](../data_collection/api/datacollection_serialize_method.md) method of DataCollection. 
 
 ```js
-var state = list.data.serialize();
+const state = list.data.serialize();
 ```
 
 After that, we can parse the serialized data to the new list. We will use the [](../data_collection/api/datacollection_parse_method.md) method for it.
@@ -299,7 +299,7 @@ Do not forget to add a separate container for the new component.
 
 ```js
 //creating list2
-var list2 = new dhx.List("list2", {
+ list2 = new dhx.List("list2", {
     css: "dhx_widget--bordered",
     template: template
 });

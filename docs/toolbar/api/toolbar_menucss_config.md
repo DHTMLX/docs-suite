@@ -21,7 +21,7 @@ description: You can explore the menuCss config of Toolbar in the documentation 
     }
 </style>
 
-var toolbar = new dhx.Toolbar({
+const toolbar = new dhx.Toolbar("toolbar_container", {
     menuCss:"my_first_class my_second_class"
 });
 

@@ -11,7 +11,7 @@ description: You can explore the isFolder config of Tree in the documentation of
 @signature: {'isFolder?: (obj: any) => boolean;'}
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     isFolder: function() {
 	    return true;
     }

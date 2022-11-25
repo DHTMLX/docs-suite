@@ -13,7 +13,7 @@ description: You can explore the tooltip config of TreeGrid in the documentation
 @default: true
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

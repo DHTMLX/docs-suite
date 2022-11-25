@@ -13,7 +13,7 @@ description: You can explore the adjust config of TreeGrid in the documentation 
 @default: false
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
 		// columns config
 	],

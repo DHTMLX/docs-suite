@@ -27,7 +27,7 @@ To add dhtmlxPopup into an application, you need to take the following simple st
     <body>       
         <script>
             // creating dhtmlxPopup
-            var popup = new dhx.Popup();
+            const popup = new dhx.Popup();
         </script>
     </body>
 </html>
@@ -57,7 +57,7 @@ Initialize Popup with the `dhx.Popup` object constructor.
 
 ~~~js
 // creating dhtmlxPopup
-var popup = new dhx.Popup();
+const popup = new dhx.Popup();
 
 popup.show("popup_container");
 ~~~

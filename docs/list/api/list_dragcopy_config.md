@@ -11,8 +11,8 @@ description: You can explore the dragCopy config of List in the documentation of
 @signature: {'dragCopy?: boolean'}
 
 @example:
-var source = new dhx.List("list-source", {dragMode: "source", dragCopy: true});
-var target = new dhx.List("list-target", {dragMode: "target", dragCopy: true});
+const source = new dhx.List("list-source", {dragMode: "source", dragCopy: true});
+const target = new dhx.List("list-target", {dragMode: "target", dragCopy: true});
 
 @descr:
 

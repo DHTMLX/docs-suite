@@ -13,7 +13,7 @@ description: You can explore the mode config of Slider in the documentation of t
 @default: "horizontal"
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     mode:"vertical"
 });
 

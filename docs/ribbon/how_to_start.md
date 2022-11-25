@@ -29,7 +29,7 @@ To add dhtmlxRibbon into an application, you need to take the following simple s
         <div id="ribbon_container"></div>
         <script>
             // creating dhtmlxRibbon
-            var ribbon = new dhx.Ribbon("ribbon_container");
+            const ribbon = new dhx.Ribbon("ribbon_container");
         </script>
     </body>
 </html>
@@ -65,7 +65,7 @@ Initialize Ribbon with the `dhx.Ribbon` object constructor. The constructor take
 - an object with configuration properties
 
 ~~~js
-var ribbon = new dhx.Ribbon("ribbon_container", {
+const ribbon = new dhx.Ribbon("ribbon_container", {
     // config options
 });
 ~~~

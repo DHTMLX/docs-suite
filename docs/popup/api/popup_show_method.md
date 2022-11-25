@@ -17,7 +17,7 @@ description: You can explore the show method of Popup in the documentation of th
 @example:
 <div id="popup_container"></div>
 
-var popup = new dhx.Popup();
+const popup = new dhx.Popup();
 
 popup.show("popup_container");
 

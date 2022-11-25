@@ -11,7 +11,7 @@ description: You can explore the rootParent config of TreeGrid in the documentat
 @signature: rootParent?: string;
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     rootParent: "root", 
 	columns: [
 		{ width: 340, id: "name", header: [{ text: "Name" }] },

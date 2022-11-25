@@ -46,7 +46,7 @@ The [removeTab()](tabbar/api/tabbar_removetab_method.md) method expects the id o
 
 ~~~js
 // removing a tab
-var id = tabbar.getId(0);
+const id = tabbar.getId(0);
 tabbar.removeTab(id);
 ~~~
 
@@ -57,7 +57,7 @@ tabbar.removeTab(id);
 In order to get the id of a tab, make use of the [getId()](tabbar/api/tabbar_getid_method.md) method. It takes the index of the tab in question as a parameter:
 
 ~~~js
-var id = tabbar.getId(0);
+const id = tabbar.getId(0);
 ~~~
 
 ## Setting/getting the active tab
@@ -65,7 +65,7 @@ var id = tabbar.getId(0);
 It is possible to set the active tab via Tabbar API, i.e. with the help of the [setActive()](tabbar/api/tabbar_setactive_method.md) method. It takes the id of a tab as a parameter:
 
 ~~~js
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
 	mode: "top",			
 	views:[
 		{ id: "1", tab: "tab-1", css:"panel flex"},
@@ -83,7 +83,7 @@ tabbar.setActive("2");
 To identify what tab is currently active, apply the [getActive()](tabbar/api/tabbar_getactive_method.md) method. It will return the id of the active tab.
 
 ~~~js
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
 	mode: "top",			
 	views:[
 		{ id: "1", tab: "tab-1", css:"panel flex"},
@@ -93,7 +93,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 	]
 });
 
-var active = tabbar.getActive(); // -> "2"
+const active = tabbar.getActive(); // -> "2"
 ~~~
 
 **Related sample**: [Tabbar. Get active](https://snippet.dhtmlx.com/xpvkcwiu)
@@ -136,7 +136,7 @@ tabbar.isDisabled(); // -> returns true/false
 You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Tabbar using the attach method of a cell:
 
 ~~~js
-var dataview = new dhx.DataView(null, {
+const dataview = new dhx.DataView(null, {
 	template: dataviewTemplate,
 	itemsInRow: 3,
 	gap: "10px"

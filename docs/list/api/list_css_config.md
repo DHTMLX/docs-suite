@@ -17,7 +17,7 @@ description: You can explore the css config of List in the documentation of the 
 	}
 </style>
 
-var list = new dhx.List("list", {css: "bg-gray"});
+const list = new dhx.List("list_container", {css: "bg-gray"});
 
 @descr:
 
@@ -28,7 +28,7 @@ var list = new dhx.List("list", {css: "bg-gray"});
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of List:
 
 ~~~js
-var list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
 	css: "dhx_widget--bg_white"
 });
 ~~~

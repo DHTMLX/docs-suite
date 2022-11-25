@@ -8,7 +8,7 @@ To present Toolbar on the page we should take 3 simple steps:
 1\. To add a toolbar on the page we need to use the constructor, like this:
 
 ~~~js
-var toolbar = new dhx.Toolbar(null, {css: "dhx_widget--bordered dhx_widget--bg_gray"});
+const toolbar = new dhx.Toolbar(null, {css: "dhx_widget--bordered dhx_widget--bg_gray"});
 ~~~
 
 The constructor function takes two parameters: 
@@ -20,7 +20,7 @@ The constructor function takes two parameters:
 2\. To configure buttons on Toolbar we need to define a related JSON structure and use the <b>.parse()</b> API of the widget:
 
 ~~~js
-var toolbar = new dhx.Toolbar();
+const toolbar = new dhx.Toolbar();
 toolbar.data.parse([
     {
       "id": "load",

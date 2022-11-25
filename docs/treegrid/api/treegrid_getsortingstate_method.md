@@ -14,7 +14,7 @@ description: You can explore the getSortingState method of TreeGrid in the docum
 An object with the current state of sorting data in the treegrid.
 
 @example:
-var state = treegrid.getSortingState(); 
+const state = treegrid.getSortingState(); 
 // -> {dir: "desc", by: "country"}
 
 @descr:

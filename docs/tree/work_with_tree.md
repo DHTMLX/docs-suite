@@ -117,7 +117,7 @@ object with tree state as a parameter:
 
 ~~~js
 // getting the state of a tree
-var treeState = tree.getState();
+const treeState = tree.getState();
  
 // restoring the state of a tree
 tree.setState(treeState);

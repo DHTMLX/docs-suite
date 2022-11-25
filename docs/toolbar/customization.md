@@ -26,7 +26,7 @@ after the source files of dhtmlxToolbar as follows:
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](toolbar/load_data.md#json-format-templates) for toolbar:
 
 ~~~js
-var toolbarData = [
+const toolbarData = [
 	{ type: "button", icon: "fas fa-bold", twoState: true },
     { type: "button", icon: "fas fa-underline", twoState: true },
     { type: "button", icon: "fas fa-italic", twoState: true },
@@ -81,7 +81,7 @@ For example:
 
 ~~~js
  
-var toolbar = new dhx.Toolbar({
+const toolbar = new dhx.Toolbar("toolbar_container", {
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -89,7 +89,7 @@ var toolbar = new dhx.Toolbar({
 For example:
 
 ~~~js
-var toolbar = new dhx.Toolbar("toolbar", {
+const toolbar = new dhx.Toolbar("toolbar_container", {
 	css: "custom-class"
 });
 ~~~

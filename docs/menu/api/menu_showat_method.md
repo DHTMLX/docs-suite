@@ -15,7 +15,7 @@ description: You can explore the showAt method of Menu in the documentation of t
 - `showAt: string` - a place where the context menu will be shown relative to the element
 
 @example:
-var cmenu = new dhx.ContextMenu();
+const cmenu = new dhx.ContextMenu();
 document.querySelector('#menu').oncontextmenu = function(e) {
     e.preventDefault();
     cmenu.showAt("menu", 'right');

@@ -30,7 +30,7 @@ or apply the **enable()** method of the **scrollView** object after initializati
 
 ~~~js
 // initialize the widget
-const list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
     template: listTemplate,
     itemHeight: 52,
     height: "100%",

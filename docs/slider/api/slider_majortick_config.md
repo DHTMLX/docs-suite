@@ -11,7 +11,7 @@ description: You can explore the majorTick config of Slider in the documentation
 @signature: {'majorTick?: number;'}
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     majorTick:3
 });
 

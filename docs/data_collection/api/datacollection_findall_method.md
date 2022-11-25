@@ -18,12 +18,12 @@ An array of matching item objects.
 
 @example:
 //searching for items by the function
-var items = component.data.findAll(function(items){
+const items = component.data.findAll(function(items){
 	if(items.text==="Manager"||items.text==="Marketer"){return true}
 });
 
 //searching for items by the attribute key
-var items = component.data.findAll({by:"text",match:"Manager"});
+const items = component.data.findAll({by:"text",match:"Manager"});
 
 @descr:
 

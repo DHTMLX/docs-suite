@@ -29,7 +29,7 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
         <div id="menu_container"></div>
         <script>
             // creating dhtmlxMenu
-            var menu = new dhx.Menu("menu_container");
+            const menu = new dhx.Menu("menu_container");
         </script>
     </body>
 </html>
@@ -65,7 +65,7 @@ Initialize Menu with the `dhx.Menu` object constructor. The constructor takes tw
 - an object with configuration properties. If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
-var menu = new dhx.Menu("menu_container");
+const menu = new dhx.Menu("menu_container");
 ~~~
 
 ### Configuration properties

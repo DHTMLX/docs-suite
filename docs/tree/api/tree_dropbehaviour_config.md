@@ -11,8 +11,8 @@ description: You can explore the dropBehaviour config of Tree in the documentati
 @signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 
 @example:
-var source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
-var target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
+const source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});
+const target = new dhx.Tree("tree-target",{dragMode:"target", dropBehaviour:"complex"});
 
 @descr:
 

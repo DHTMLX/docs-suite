@@ -13,7 +13,7 @@ description: You can explore the autoHeight config of TreeGrid in the documentat
 @default: false
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

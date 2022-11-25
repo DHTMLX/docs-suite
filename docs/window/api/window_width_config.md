@@ -13,7 +13,7 @@ description: You can explore the width config of Window in the documentation of 
 @default: 50% of the browser window's width
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     width:250
 });
 

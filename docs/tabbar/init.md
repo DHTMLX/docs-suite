@@ -29,7 +29,7 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
         <div id="tabbar_container"></div>
         <script>
             // creating dhtmlxTabbar
-            var tabbar = new dhx.Tabbar("tabbar_container",{
+            const tabbar = new dhx.Tabbar("tabbar_container",{
             	views:[ 
                 	{ tab: "north" },
                     { tab: "south" },
@@ -70,7 +70,7 @@ At this step you should specify the structure of your future Tabbar. Each tab re
 For example, Tabbar can have 4 tabs. You need to define their configuration objects and place them into the **views** array, like this:
 
 ~~~js
-var views = [
+const views = [
     { tab: "north" },
     { tab: "south" },
     { tab: "east" },
@@ -86,7 +86,7 @@ Initialize Tabbar with the `dhx.Tabbar` object constructor. The constructor take
 - an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default
 
 ~~~js
-var tabbar = new dhx.Tabbar("tabbar_container",{
+const tabbar = new dhx.Tabbar("tabbar_container",{
     mode: "bottom",
     views: views,
     // more config options

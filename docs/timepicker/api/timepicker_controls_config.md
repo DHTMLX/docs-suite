@@ -13,7 +13,7 @@ description: You can explore the controls config of Timepicker in the documentat
 @default: false
 
 @example:
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	controls: true
 });
 

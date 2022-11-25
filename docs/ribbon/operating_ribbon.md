@@ -230,19 +230,19 @@ ribbon.data.add({
 You can get a particular Ribbon control by its ID via the **getItem()** method:
 
 ~~~js
-var add_btn = ribbon.data.getItem("add_btn");
+const add_btn = ribbon.data.getItem("add_btn");
 ~~~
 
 To get the ID of the parent of the control, call the **getParent()** method:
 
 ~~~js
-var parentId = ribbon.data.getParent("add_btn");
+const parentId = ribbon.data.getParent("add_btn");
 ~~~
 
 You can also access the children of a control with the **getItems()** method:
 
 ~~~js
-var items = ribbon.data.getItems("block1");
+const items = ribbon.data.getItems("block1");
 ~~~
 
 You can use the **getLength()** method of TreeCollection to count children of a control:

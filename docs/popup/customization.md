@@ -31,7 +31,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](popup/api/popup_css_config.md) property in the Popup configuration:
 
 ~~~js
-var dhxPopup = new dhx.Popup({ 
+const popup = new dhx.Popup({ 
     css:"my-first-class my-second-class"
 });
 

@@ -29,7 +29,7 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
         <div id="timepicker_container"></div>
         <script>
             // creating dhtmlxTimePicker 
-            var timepicker = new dhx.Timepicker("timepicker_container", {
+            const timepicker = new dhx.Timepicker("timepicker_container", {
 				// config options
 			});
         </script>
@@ -68,7 +68,7 @@ Initialize TimePicker with the **`dhx.Timepicker`** object constructor. The cons
 
 ~~~js title="index.js"
 // creating dhtmlxTimePicker
-var timepicker = new dhx.Timepicker("timepicker_container", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
     // config options
 });
 ~~~

@@ -47,7 +47,7 @@ const data = [
     }
 ];
 
-const ribbon = new dhx.Ribbon("ribbon", {
+const ribbon = new dhx.Ribbon("ribbon_container", {
     css: "dhx_widget--bordered dhx_widget--bg_white", 
     data: data
 });

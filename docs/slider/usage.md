@@ -47,10 +47,10 @@ slider.setValue(20);
 You can get the current value of Slider with the help of the [getValue()](slider/api/slider_getvalue_method.md) method.
 
 ~~~js
-var value = slider.getValue(); // -> [20]
+const value = slider.getValue(); // -> [20]
  
 // for a range slider as an array
-var value = slider.getValue(); // -> [20,50]
+const value = slider.getValue(); // -> [20,50]
 ~~~
 
 **Related sample**: [Slider. Get value](https://snippet.dhtmlx.com/xlb8nbdx)
@@ -62,5 +62,5 @@ In case you've set the value of Slider as an array where the first number is gre
 slider.setValue([50,20]);
 
 // returns an array of numbers (the numbers are ascending)
-var value = slider.getValue(); // -> [20,50]
+const value = slider.getValue(); // -> [20,50]
 ~~~

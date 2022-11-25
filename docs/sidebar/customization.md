@@ -26,7 +26,7 @@ after the source files of dhtmlxSidebar as follows:
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](sidebar/data_loading.md#json-format-templates) for Sidebar:
 
 ~~~js
-var sidebarData = [
+const sidebarData = [
 	{
 		icon: "fas fa-bold",
 		twoState: true,
@@ -79,7 +79,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](sidebar/api/sidebar_css_config.md) property in the Sidebar configuration:
 
 ~~~js
-var sidebar = new dhx.Sidebar({
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css:"my_first_class my_second_class"
 });
 ~~~

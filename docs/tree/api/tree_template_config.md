@@ -11,7 +11,7 @@ description: You can explore the template config of Tree in the documentation of
 @signature: template?: (item: ITreeItem, isFolder: boolean) => string | null;
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
             <div class="dhx_tree_template">

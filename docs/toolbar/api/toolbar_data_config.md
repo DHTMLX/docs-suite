@@ -11,7 +11,7 @@ description: You can explore the data config of Toolbar in the documentation of 
 @signature: {'data?: any[];'}
 
 @example:
-const toolbar = new dhx.Toolbar("toolbar", {
+const toolbar = new dhx.Toolbar("toolbar_container", {
     css: "dhx_widget--bordered",
     data: [ 
         {

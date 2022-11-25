@@ -21,7 +21,7 @@ description: You can explore the css config of Menu in the documentation of the 
     }
 </style>
 
-var menu = new dhx.Menu({
+const menu = new dhx.Menu("menu_container", {
     css: "my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var menu = new dhx.Menu({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Menu:
 
 ~~~js
-var menu = new dhx.Menu({
+const menu = new dhx.Menu("menu_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

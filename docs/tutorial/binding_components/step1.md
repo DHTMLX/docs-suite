@@ -8,7 +8,7 @@ Let’s see how to add a window on the page in two steps:
 1\. At first, we need to initialize a Window with the dhx.Window object constructor:
 
 ~~~~js
-var dhxWindow = new dhx.Window(
+const dhxWindow = new dhx.Window(
 	{
     	title: "Window", 
         closable: true, 
