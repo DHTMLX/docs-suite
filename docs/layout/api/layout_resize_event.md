@@ -11,7 +11,7 @@ description: You can explore the resize event of Layout in the documentation of 
 @signature: {'resize: (id: string) => void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @example:
 layout.events.on("resize", function(id){

@@ -11,7 +11,7 @@ description: You can explore the find method of DataCollection in the documentat
 @signature: {'find(rule: IFilterMode | DataCallback<T>): T;'}
 
 @params:
-`rule: object | function` - the search criteria
+- `rule: object | function` - the search criteria
 
 @returns:
 An object of the matching item.

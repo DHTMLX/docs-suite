@@ -11,7 +11,7 @@ description: You can explore the getValue method of Combo Box in the documentati
 @signature: {'getValue(asArray?: boolean): Id | Id[];'}
 
 @params:
-`asArray: boolean` - *true*, to return ids as an array of strings
+- `asArray: boolean` - *true*, to return ids as an array of strings
 
 @returns:
 A string, number, or array that contains id(s) of options selected in ComboBox.

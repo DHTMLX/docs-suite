@@ -11,7 +11,7 @@ description: You can explore the link method of Calendar in the documentation of
 @signature: {'link(calendar: ICalendar): void;'}
 
 @params:
-`calendar: object` - an object of a calendar to link to
+- `calendar: object` - an object of a calendar to link to
 
 @example:
 calendar.link(calendar2);

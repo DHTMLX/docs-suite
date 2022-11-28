@@ -11,7 +11,7 @@ description: You can explore the getValue method of the Checkbox Group control o
 @signature: {'getValue(id?: string): ICheckboxGroupValue | string | boolean;'}
 
 @params:
-`id: string` - optional, the id of a checkbox
+- `id: string` - optional, the id of a checkbox
 
 @returns:
 Either a string with the current value of the checkbox, or boolean value with the state of the checkbox, or an object with current values/states of the checkboxes.

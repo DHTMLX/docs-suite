@@ -11,7 +11,7 @@ description: You can explore the getProperties method of the Checkbox Group cont
 @signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
 
 @params:
-`id: string` - optional, the id of a checkbox
+- `id: string` - optional, the id of a checkbox
 
 @returns:
 An object either with the available attributes of the control and their values, or with the available attributes of the checkbox and their values

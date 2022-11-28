@@ -11,7 +11,7 @@ description: You can explore the loadError event of TreeCollection in the docume
 @signature: {'loadError: (response: any) => void;'}
 
 @params:
-`response: string | object` - info about the error
+- `response: string | object` - info about the error
 
 @example:
 component.data.events.on("loadError", function(error){

@@ -11,7 +11,7 @@ description: You can explore the abort method of Uploader in the documentation o
 @signature: {'abort(id?: string): void;'}
 
 @params:
-`id: string` - optional, the ID of a file
+- `id: string` - optional, the ID of a file
 
 @example:
 vault.uploader.abort("file_id");

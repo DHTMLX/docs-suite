@@ -11,7 +11,7 @@ description: You can explore the blur method of Form in the documentation of the
 @signature: blur(name: string): void;
 
 @params:
-`name: string` -  optional, the name of a control. If the name is not specified, removes focus from the control that is currently in focus.
+- `name: string` -  optional, the name of a control. If the name is not specified, removes focus from the control that is currently in focus.
 
 @example:
 form.blur(); // removes focus from the control that is currently in focus

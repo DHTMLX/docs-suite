@@ -11,7 +11,7 @@ description: You can explore the beforeValidate event of the Datepicker control 
 @signature: {'beforeValidate: (value: string | Date) => boolean | void;'}
 
 @params:
-`value: string | Date` - the value to be validated
+- `value: string | Date` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise - `true`.

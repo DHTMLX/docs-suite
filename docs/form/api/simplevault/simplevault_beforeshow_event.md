@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Simple Vault control of
 @signature: {'beforeShow: (value: ISimpleVaultValue[]) => boolean | void;'}
 
 @params:
-`value: array` - the current value of the control
+- `value: array` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

@@ -11,7 +11,7 @@ description: You can explore the setPage method of Pagination in the documentati
 @signature: {'setPage(page: number): void;'}
 
 @params:
-`page: number` - the index of a page
+- `page: number` - the index of a page
 
 @example:
 pagination.setPage(0);

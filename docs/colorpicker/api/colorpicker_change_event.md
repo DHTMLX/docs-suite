@@ -11,7 +11,7 @@ description: You can explore the change event of Colorpicker in the documentatio
 @signature: {'change: (color: string) => void;'}
 
 @params:
-`color: string` - the newly selected color
+- `color: string` - the newly selected color
 
 @example:
 colorpicker.events.on("change",function(color){

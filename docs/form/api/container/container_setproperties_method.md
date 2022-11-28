@@ -11,7 +11,7 @@ description: You can explore the setProperties method of the Container control o
 @signature: setProperties(propertyConfig: IBaseLayoutItem): void;
 
 @params:
-`propertyConfig: object` - an object with the available properties of the control and their new values
+- `propertyConfig: object` - an object with the available properties of the control and their new values
 
 @example:
 form.getItem("container").setProperties({

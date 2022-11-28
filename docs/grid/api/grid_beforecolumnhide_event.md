@@ -11,7 +11,7 @@ description: You can explore the beforeColumnHide event of Grid in the documenta
 @signature: {'beforeColumnHide: (col: ICol) => boolean | void;'}
 
 @params:
-`col: object` - an object with a column configuration
+- `col: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent a column from being hidden; otherwise, `true`.

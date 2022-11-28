@@ -11,7 +11,7 @@ description: You can explore the afterClose event of Tabbar in the documentation
 @signature: {'afterClose: (id: string) => void;'}
 
 @params:
-`id: string` - the id of a closed tab
+- `id: string` - the id of a closed tab
 
 @example:
 tabbar.events.on("afterClose", function(id){

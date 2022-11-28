@@ -11,7 +11,7 @@ description: You can explore the enable method of Toolbar in the documentation o
 @signature: {'enable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - one ID or an array of IDs of items
+- `ids: string | number | array` - one ID or an array of IDs of items
 
 @example:
 toolbar.enable("save_btn");

@@ -11,7 +11,7 @@ description: You can explore the hide method of Ribbon in the documentation of t
 @signature: {'hide(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - optional, an ID or an array of IDs of items
+- `ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 ribbon.hide("save_btn");

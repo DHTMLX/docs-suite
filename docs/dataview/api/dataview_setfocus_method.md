@@ -11,7 +11,7 @@ description: You can explore the setFocus method of DataView in the documentatio
 @signature: {'setFocus(id: string | number): void;'}
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 dataview.setFocus("item_id");

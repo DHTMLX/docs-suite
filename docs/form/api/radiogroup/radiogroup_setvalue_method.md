@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Radiogroup control of Fo
 @signature: {'setValue(value: string): void;'}
 
 @params:
-`value: string` - the value to be set  
+- `value: string` - the value to be set  
 
 @example:
 form.getItem("radiogroup").setValue("2");

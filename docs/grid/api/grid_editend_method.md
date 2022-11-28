@@ -11,7 +11,7 @@ description: You can explore the editEnd method of Grid in the documentation of 
 @signature: {'editEnd(withoutSave?: boolean): void;'}
 
 @params:
-`withoutSave: boolean` - defines whether the edited data will be saved after the editing of a cell is complete. If set to <i>true</i>, the edited data won't be saved.
+- `withoutSave: boolean` - defines whether the edited data will be saved after the editing of a cell is complete. If set to <i>true</i>, the edited data won't be saved.
 
 @example:
 grid.editEnd(); // the edited data will be saved

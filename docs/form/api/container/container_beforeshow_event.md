@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Container control of Fo
 @signature: beforeShow: (value: undefined) => boolean | void;
 
 @params:
-`value: undefined` - the current value of the control, null
+- `value: undefined` - the current value of the control, null
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

@@ -11,7 +11,7 @@ description: You can explore the getHeaderFilter method of TreeGrid in the docum
 @signature: {'getHeaderFilter(colId: Id): HTMLElement | Combobox;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @returns:
 An HTML object or an object with Combobox configuration.

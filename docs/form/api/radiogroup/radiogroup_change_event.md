@@ -11,7 +11,7 @@ description: You can explore the change event of the Radiogroup control of Form 
 @signature: {'change: (value: string) => void;'} 
 
 @params:
-`value: string` - the current value of the control
+- `value: string` - the current value of the control
 
 @example:
 form.getItem("radiogroup").events.on("change", function(value) {

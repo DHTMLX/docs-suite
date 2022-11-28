@@ -11,7 +11,7 @@ description: You can explore the afterClose event of Timepicker in the documenta
 @signature: {'afterClose: (value: string | ITimeObject) => void;'}
 
 @params:
-`value: string | object` - the current value of a timepicker
+- `value: string | object` - the current value of a timepicker
 
 @example:
 timepicker.events.on("afterClose", function(value){

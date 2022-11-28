@@ -11,7 +11,7 @@ description: You can explore the afterRemove event of Layout in the documentatio
 @signature: {'afterRemove: (id: string) => void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @example:
 layout.events.on("afterRemove", function(id){

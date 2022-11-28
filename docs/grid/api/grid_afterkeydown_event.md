@@ -11,7 +11,7 @@ description: You can explore the afterKeyDown event of Grid in the documentation
 @signature: {'afterKeyDown: (e: Event) => void;'}
 
 @params:
-`e: Event` - a native KeyboardEvent object
+- `e: Event` - a native KeyboardEvent object
 
 @example:
 grid.events.on("afterKeyDown", function (e) {

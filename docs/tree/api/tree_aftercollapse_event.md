@@ -11,7 +11,7 @@ description: You can explore the afterCollapse event of Tree in the documentatio
 @signature: {'afterCollapse: (id: Id) => void;'}
 
 @params:
-`id: string | number` - the id of a collapsed item
+- `id: string | number` - the id of a collapsed item
 
 @example:
 tree.events.on("afterCollapse", function(id) {

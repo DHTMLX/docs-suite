@@ -11,7 +11,7 @@ description: You can explore the setValue method of Calendar in the documentatio
 @signature: {'setValue(value: Date | Date[] | string | string[]): boolean;'}
 
 @params:
-`value: Date | Date[] | string | string[]` - the date to select
+- `value: Date | Date[] | string | string[]` - the date to select
 
 @returns:
 Defines, whether a date has been successfully added into the calendar.

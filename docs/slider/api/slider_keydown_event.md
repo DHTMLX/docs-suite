@@ -11,7 +11,7 @@ description: You can explore the keydown event of Slider in the documentation of
 @signature: keydown: (event: KeyboardEvent) => void;
 
 @params:
-`event` - a native KeyboardEvent object
+- `event` - a native KeyboardEvent object
 
 @example:
 slider.events.on("keydown", function(event) {

@@ -11,7 +11,7 @@ description: You can explore the changeOptions event of the Select control of Fo
 @signature: {'changeOptions: (options: IOption[]) => void;'}
 
 @params:
-`options: array` - a new array of Select options
+- `options: array` - a new array of Select options
 
 @example:
 form.getItem("select").events.on("changeOptions", function(options) {

@@ -11,7 +11,7 @@ description: You can explore the setColumns method of Grid in the documentation 
 @signature: {'setColumns(columns: ICol[]): void;'}
 
 @params:
-`columns: array` - an array of objects with configuration of columns
+- `columns: array` - an array of objects with configuration of columns
 
 @example:
 grid.setColumns([

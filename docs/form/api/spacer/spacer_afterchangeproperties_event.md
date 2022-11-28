@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Spacer contr
 @signature: {'afterChangeProperties: (properties: IBaseLayoutItem) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("spacer").events.on("afterChangeProperties", function(properties) {

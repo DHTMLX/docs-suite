@@ -11,7 +11,7 @@ description: You can explore the editItem method of List in the documentation of
 @signature: {'editItem(id: string | number): void;'}
 
 @params:
-`id: string|number` - the id of an item
+- `id: string|number` - the id of an item
 
 @example:
 list.editItem("1");

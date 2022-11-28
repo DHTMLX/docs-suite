@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Checkbox control of Form
 @signature: {'afterShow: (value: string | boolean) => void;'}
 
 @params:
-`value: string | boolean` - the current value of the control
+- `value: string | boolean` - the current value of the control
 
 @example:
 form.getItem("checkbox").events.on("afterShow", function(value) {

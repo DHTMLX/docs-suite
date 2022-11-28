@@ -11,7 +11,7 @@ description: You can explore the change event of the Input control of Form in th
 @signature: {'change: (value: string | number) => void;'}
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @example:
 form.getItem("input").events.on("change", function(value) {

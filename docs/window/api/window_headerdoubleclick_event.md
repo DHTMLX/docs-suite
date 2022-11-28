@@ -11,7 +11,7 @@ description: You can explore the headerDoubleClick event of Window in the docume
 @signature: {'headerDoubleClick: (e: Event) => void;'}
 
 @params:
-`e: Event` - a native event object
+- `e: Event` - a native event object
 
 @example:
 dhxWindow.events.on("headerDoubleClick", function(events) {

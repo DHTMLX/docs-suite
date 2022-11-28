@@ -11,7 +11,7 @@ description: You can explore the getItems method of TreeCollection in the docume
 @signature: {'getItems(id: Id): T[];'}
 
 @params:
-`id: string` - the ID of a control
+- `id: string` - the ID of a control
 
 @returns:
 The child items of the control.

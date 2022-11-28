@@ -11,7 +11,7 @@ description: You can explore the send method of the Simple Vault control of Form
 @signature: {'send(params?: IParams): void;'}
 
 @params:
-`params: object` - optional, an object with additional parameters for a request
+- `params: object` - optional, an object with additional parameters for a request
 
 @example:
 form.getItem("simplevault").send();

@@ -11,7 +11,7 @@ description: You can explore the validate method of the Simple Vault control of 
 @signature: {'validate(silent?: boolean): boolean;'}
 
 @params:
-`silent: boolean` - optional, if *true* - the method will return the result of validation without calling validation events and without modifying the control visually
+- `silent: boolean` - optional, if *true* - the method will return the result of validation without calling validation events and without modifying the control visually
 
 @returns:
 `true`, if a control is valid; otherwise, `false`.

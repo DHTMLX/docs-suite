@@ -11,7 +11,7 @@ description: You can explore the setFocus method of List in the documentation of
 @signature: {'setFocus(id: string | number): void;'}
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 list.setFocus("item_id");

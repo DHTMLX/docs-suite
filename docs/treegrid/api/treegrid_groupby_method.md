@@ -11,7 +11,7 @@ description: You can explore the groupBy method of TreeGrid in the documentation
 @signature: {'groupBy(property: string | ((item: IDataItem) => string)): void;'}
 
 @params:
-`property: string | function` - the id of the column or the rule of grouping
+- `property: string | function` - the id of the column or the rule of grouping
 
 @example:
 //Grouping by values of the specified column

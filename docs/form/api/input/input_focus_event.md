@@ -11,7 +11,7 @@ description: You can explore the focus Input event of Form in the documentation 
 @signature: focus: (value: string | number) => void;
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @example:
 form.getItem("input").events.on("focus", (value) => {

@@ -11,7 +11,7 @@ description: You can explore the beforeValidate event of the Simple Vault contro
 @signature: {'beforeValidate: (value: ISimpleVaultValue[]) => boolean | void;'}
 
 @params:
-`value: array` - the value to be validated
+- `value: array` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

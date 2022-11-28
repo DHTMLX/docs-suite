@@ -11,7 +11,7 @@ description: You can explore the beforeRemove event of Layout in the documentati
 @signature: {'beforeRemove: (id: string) => boolean | void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @returns:
 Return `false` to prevent removing of a cell; otherwise, `true`.

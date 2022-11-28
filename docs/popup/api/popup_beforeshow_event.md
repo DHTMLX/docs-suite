@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of Popup in the documentation 
 @signature: beforeShow: (node: HTMLElement) => void | boolean;
 
 @params:
-`node: HTMLElement` - the container a popup is placed in
+- `node: HTMLElement` - the container a popup is placed in
 
 @returns:
 Return `true` to show a popup, `false` to block showing a popup.

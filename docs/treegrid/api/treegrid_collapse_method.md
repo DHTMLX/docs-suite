@@ -11,7 +11,7 @@ description: You can explore the collapse method of TreeGrid in the documentatio
 @signature: {'collapse(id: Id): void;'}
 
 @params:
-`id: string | number` - the id of a node to collapse
+- `id: string | number` - the id of a node to collapse
 
 @example:
 treegrid.collapse("native");

@@ -11,7 +11,7 @@ description: You can explore the afterColumnShow event of TreeGrid in the docume
 @signature: {'afterColumnShow: (column: ICol) => void;'}
 
 @params:
-`column: object` - an object with a column configuration
+- `column: object` - an object with a column configuration
 
 @example:
 treegrid.events.on("afterColumnShow", function(column){

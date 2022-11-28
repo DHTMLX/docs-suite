@@ -11,7 +11,7 @@ description: You can explore the afterAdd event of TreeCollection in the documen
 @signature: {'afterAdd: (newItem: any) => void;'}
 
 @params:
-`newItem: object` - the object of an added item
+- `newItem: object` - the object of an added item
 
 @example:
 component.data.events.on("afterAdd", function(newItem){

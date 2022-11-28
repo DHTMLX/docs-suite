@@ -11,7 +11,7 @@ description: You can explore the setProperties method of the Textarea control of
 @signature: {'setProperties(propertyConfig: ITextareaProps): void;'}
 
 @params:
-`propertyConfig: object` - an object with the available attributes of the control and their new values
+- `propertyConfig: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("textarea").setProperties({

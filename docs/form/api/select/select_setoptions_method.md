@@ -11,7 +11,7 @@ description: You can explore the setOptions method of the Select control of Form
 @signature: {'setOptions(options: IOption[]): void;'}
 
 @params:
-`options: array` - an array with new options
+- `options: array` - an array with new options
 
 @example:
 form.getItem("select").setOptions([

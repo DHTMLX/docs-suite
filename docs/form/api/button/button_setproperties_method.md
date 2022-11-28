@@ -11,7 +11,7 @@ description: You can explore the setProperties method of the Button control of F
 @signature: {'setProperties(propertyConfig: IButtonProps): void;'}
 
 @params:
-`properties: object` - an object with the available attributes of the control and their new values
+- `properties: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("button").setProperties({

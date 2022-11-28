@@ -11,7 +11,7 @@ description: You can explore the removeCell method of Layout in the documentatio
 @signature: {'removeCell(id: string): void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @example:
 layout.removeCell("1");

@@ -11,7 +11,7 @@ description: You can explore the addSpan method of TreeGrid in the documentation
 @signature: {'addSpan(spanObj: ISpan): void;'}
 
 @params:
-`spanObj: object` - an object with configuration of a span
+- `spanObj: object` - an object with configuration of a span
 
 @example:
 grid.addSpan({ 

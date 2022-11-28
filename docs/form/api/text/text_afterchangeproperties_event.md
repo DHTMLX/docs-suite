@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Text control
 @signature: {'afterChangeProperties: (properties: ITextProps) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("text").events.on("afterChangeProperties", function(properties) {

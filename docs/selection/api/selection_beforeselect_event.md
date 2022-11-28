@@ -11,7 +11,7 @@ description: You can explore the beforeSelect event of Selection in the document
 @signature: {'beforeSelect: (id: string) => void | boolean;'}
 
 @params:
-`id: string` - the id of an item
+- `id: string` - the id of an item
 
 @returns:
 Return `false` to prevent selecting of an item; otherwise, `true`.

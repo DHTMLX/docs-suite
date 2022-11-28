@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Slider control of Form i
 @signature: {'afterShow: (value: number[]) => void;'}
 
 @params:
-`value: number[]` - the current value of the control
+- `value: number[]` - the current value of the control
 
 @example:
 form.getItem("slider").events.on("afterShow", function(value) {

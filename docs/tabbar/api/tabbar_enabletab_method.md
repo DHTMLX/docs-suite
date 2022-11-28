@@ -11,7 +11,7 @@ description: You can explore the enableTab method of Tabbar in the documentation
 @signature: {'enableTab(id: string): void;'}
 
 @params:
-`id: string` - the id of a tab to enable
+- `id: string` - the id of a tab to enable
 
 @example:
 tabbar.enableTab("London");

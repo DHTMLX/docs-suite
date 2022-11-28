@@ -11,7 +11,7 @@ description: You can explore the input Timepicker event of Form in the documenta
 @signature: {'input: (inputValue: string) => void;'}
 
 @params:
-`inputValue: string` - an entered value
+- `inputValue: string` - an entered value
 
 @example:
 form.getItem("timepicker").events.on("input", function(inputValue) {

@@ -11,7 +11,7 @@ description: You can explore the removeTab method of Tabbar in the documentation
 @signature: {'removeTab(id: string): void;'}
 
 @params:
-`id: string` - the id of a tab to remove
+- `id: string` - the id of a tab to remove
 
 @example:
 const id = tabbar.getId(0);

@@ -11,7 +11,7 @@ description: You can explore the disable method of Menu in the documentation of 
 @signature: {'disable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - optional, an ID or an array of IDs of items
+- `ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 menu.disable("save_btn");

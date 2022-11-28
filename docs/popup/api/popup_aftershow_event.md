@@ -11,7 +11,7 @@ description: You can explore the afterShow event of Popup in the documentation o
 @signature: {'afterShow: (node: HTMLElement) => void;'}
 
 @params:
-`node: HTMLElement` - the container a popup is placed in
+- `node: HTMLElement` - the container a popup is placed in
 
 @example:
 popup.events.on("afterShow", function(element){

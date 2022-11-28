@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Slider contr
 @signature: {'afterChangeProperties: (properties: ISliderProps) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("slider").events.on("afterChangeProperties", function(properties) {

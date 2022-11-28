@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Spacer control of Form 
 @signature: {'beforeShow: (value: undefined) => boolean | void;'}
 
 @params:
-`value: undefined` - the current value of the control, null
+- `value: undefined` - the current value of the control, null
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

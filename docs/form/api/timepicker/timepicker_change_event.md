@@ -11,7 +11,7 @@ description: You can explore the change event of the Timepicker control of Form 
 @signature: {'change: (value: string | ITimeObject) => void;'}
 
 @params:
-`value: string | object` - the current value of the control
+- `value: string | object` - the current value of the control
 
 @example:
 form.getItem("timepicker").events.on("change", function(value) {

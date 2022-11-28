@@ -11,7 +11,7 @@ description: You can explore the isSelected method of Menu in the documentation 
 @signature: {'isSelected(id: Id): boolean;'}
 
 @params:
-`id: string | number` - the id of a Menu item
+- `id: string | number` - the id of a Menu item
 
 @returns:
 `true`, if an item of Menu is selected; otherwise, `false`.

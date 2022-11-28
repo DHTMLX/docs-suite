@@ -11,7 +11,7 @@ description: You can explore the keydown event of the Datepicker control of Form
 @signature: keydown: (event: KeyboardEvent) => void;
 
 @params:
-`event: KeyboardEvent` - a native KeyboardEvent object
+- `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
 form.getItem("datepicker").events.on("keydown", function(event) {

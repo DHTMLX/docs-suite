@@ -11,7 +11,7 @@ description: You can explore the validate method of Form in the documentation of
 @signature: {'validate(silent?: boolean): boolean;'}
 
 @params:
-`silent: boolean` - optional, if `true` - the method will return the result of validation without calling validation events and without modifying the form visually
+- `silent: boolean` - optional, if `true` - the method will return the result of validation without calling validation events and without modifying the form visually
 
 @returns:
 The result of validation: `true`, if a form is valid; otherwise, `false`.

@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Button control of Form i
 @signature: {'afterShow: (text: string) => void;'}
 
 @params:
-`text: string` - the current text label of the control
+- `text: string` - the current text label of the control
 
 @example:
 form.getItem("button").events.on("afterShow", function(text) {

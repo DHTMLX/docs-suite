@@ -11,7 +11,7 @@ description: You can explore the beforeClose event of Timepicker in the document
 @signature: {'beforeClose: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-`value: string | object` - the current value of a timepicker
+- `value: string | object` - the current value of a timepicker
 
 @returns:
 Return `false` to prevent closing the timepicker; otherwise, `true`.

@@ -11,7 +11,7 @@ description: You can explore the focus event of the Slider control of Form in th
 @signature: focus: (value: number[]) => void;
 
 @params:
-`value: array` - the current value of the control
+- `value: array` - the current value of the control
 
 @example:
 form.getItem("slider").events.on("focus", (value) => {

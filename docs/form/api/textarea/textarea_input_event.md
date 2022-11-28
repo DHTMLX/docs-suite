@@ -11,7 +11,7 @@ description: You can explore the input event of the Textarea control of Form in 
 @signature: {'input: (value: string) => void;'} 
 
 @params:
-`value: string` - an entered value
+- `value: string` - an entered value
 
 @example:
 form.getItem("textarea").events.on("input", function(inputValue) {

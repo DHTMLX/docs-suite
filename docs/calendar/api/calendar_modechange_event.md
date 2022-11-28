@@ -11,7 +11,7 @@ description: You can explore the modeChange event of Calendar in the documentati
 @signature: {'modeChange: (mode: string) => void;'}
 
 @params:
-`mode: string` - the calendar mode ("calendar", "year", "month", "timepicker")
+- `mode: string` - the calendar mode ("calendar", "year", "month", "timepicker")
 
 @example:
 calendar.events.on("modeChange", function(mode) {

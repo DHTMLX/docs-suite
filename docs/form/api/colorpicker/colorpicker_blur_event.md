@@ -11,7 +11,7 @@ description: You can explore the blur event of the Colorpicker control of Form i
 @signature: blur: (value: string) => void;
 
 @params:
-`value: string` - the current value of the control
+- `value: string` - the current value of the control
 
 @example:
 form.getItem("colorpicker").events.on("blur", (value) => {

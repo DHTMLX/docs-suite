@@ -11,7 +11,7 @@ description: You can explore the afterCollapse event of TreeGrid in the document
 @signature: {'afterCollapse: (rowId: Id) => void;'}
 
 @params:
-`rowId: string | number` - the id of a collapsed row
+- `rowId: string | number` - the id of a collapsed row
 
 @example:
 treeGrid.events.on("afterCollapse", function(rowId) {

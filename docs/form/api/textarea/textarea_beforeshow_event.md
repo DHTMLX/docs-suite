@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Textarea control of For
 @signature: {'beforeShow: (value: string) => boolean | void;'}
 
 @params:
-`value: string` - the current value of the control
+- `value: string` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.
