@@ -11,7 +11,7 @@ description: You can explore the isChecked method of the Checkbox Group control 
 @signature: {'isChecked(id?: string): boolean | { [key: string]: boolean };'}
 
 @params:
-`id: string` - optional, the id of a checkbox
+- `id: string` - optional, the id of a checkbox
 
 @returns:
 Either a boolean value or an object.

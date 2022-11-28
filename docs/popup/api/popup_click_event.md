@@ -11,7 +11,7 @@ description: You can explore the click event of Popup in the documentation of th
 @signature: click: (e: Event) => void;
 
 @params:
-`e: Event` - the native mouse event
+- `e: Event` - the native mouse event
 
 @example:
 popup.events.on("click",function(e){

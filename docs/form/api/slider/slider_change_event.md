@@ -11,7 +11,7 @@ description: You can explore the change event of the Slider control of Form in t
 @signature: {'change: (value: number[]) => void;'}
 
 @params:
-`value: number[]` - the current value of the control
+- `value: number[]` - the current value of the control
 
 @example:
 form.getItem("slider").events.on("change", function(value) {

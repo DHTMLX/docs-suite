@@ -11,7 +11,7 @@ description: You can explore the getValue method of Form in the documentation of
 @signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
 
 @params:
-`asFormData: boolean` - optional, defines whether values of Form controls should be returned as Form Data
+- `asFormData: boolean` - optional, defines whether values of Form controls should be returned as Form Data
 
 @returns:
 An object either with the names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.

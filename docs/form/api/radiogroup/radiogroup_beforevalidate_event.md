@@ -11,7 +11,7 @@ description: You can explore the beforeValidate event of the Radiogroup control 
 @signature: {'beforeValidate: (value: string) => boolean | void;'}
 
 @params:
-`value: string` - the value to be validated
+- `value: string` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

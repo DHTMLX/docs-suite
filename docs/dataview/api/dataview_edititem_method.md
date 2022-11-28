@@ -11,7 +11,7 @@ description: You can explore the editItem method of DataView in the documentatio
 @signature: {'editItem(id: string | number): void;'}
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 dataview.editItem("1");

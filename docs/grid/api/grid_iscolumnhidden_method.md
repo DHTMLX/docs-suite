@@ -11,7 +11,7 @@ description: You can explore the isColumnHidden method of Grid in the documentat
 @signature: {'isColumnHidden(colId: Id): boolean;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @returns:
 `true` if the column is hidden; `false` otherwise.

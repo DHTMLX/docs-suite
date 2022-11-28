@@ -11,7 +11,7 @@ description: You can explore the input event of Combo Box in the documentation o
 @signature: {'input: (value: string) => void;'}
 
 @params:
-`value: string` - an entered value
+- `value: string` - an entered value
 
 @example:
 combobox.events.on("input", function(value) {

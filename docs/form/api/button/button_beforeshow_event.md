@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Button control of Form 
 @signature: {'beforeShow: (text: string) => boolean | void;'}
 
 @params:
-`text: string` - the current text label of the control
+- `text: string` - the current text label of the control
 
 @returns:
 Return `true` to prevent a control from being shown; otherwise - `true`.

@@ -11,7 +11,7 @@ description: You can explore the getSeries method of Chart in the documentation 
 @signature: {'getSeries(id: string): ISeria;'}
 
 @params:
-`id: string` - the id of a series
+- `id: string` - the id of a series
 
 @returns:
 An object with configuration of a series.

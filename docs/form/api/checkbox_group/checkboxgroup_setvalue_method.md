@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Checkbox Group control o
 @signature: {'setValue(value: ICheckboxGroupValue): void;'}
 
 @params:
-`value: object` - the value to be set. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the state of the checkbox
+- `value: object` - the value to be set. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the state of the checkbox
 
 @example:
 form.getItem("CheckboxGroup").setValue({

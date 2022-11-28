@@ -11,7 +11,7 @@ description: You can explore the isDisabled method of Sidebar in the documentati
 @signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string | number` - the id of a Sidebar item
+- `id: string | number` - the id of a Sidebar item
 
 @returns:
 `true`, if an item of Sidebar is disabled; otherwise, `false`.

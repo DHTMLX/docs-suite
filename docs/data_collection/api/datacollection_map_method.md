@@ -11,7 +11,7 @@ description: You can explore the map method of DataCollection in the documentati
 @signature: {'map(callback: DataCallback<T>): T[];'}
 
 @params:
-`callback: function` - a function that will be called for each item of a component
+- `callback: function` - a function that will be called for each item of a component
 
 @returns:
 A new array of items where each item is the result of the callback function.

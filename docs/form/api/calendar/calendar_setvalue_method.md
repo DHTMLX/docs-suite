@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Datepicker control of Fo
 @signature: {'setValue(value: string | Date): void;'}
 
 @params:
-`value: string | Date` - the value to be set  
+- `value: string | Date` - the value to be set  
 
 @example:
 form.getItem("datepicker").setValue("30/05/19");

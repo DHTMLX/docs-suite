@@ -11,7 +11,7 @@ description: You can explore the beforeEditStart event of List in the documentat
 @signature: beforeEditStart: (id: string | number) => void | boolean;
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @returns:
 Return `false` to block item editing; otherwise, `true`.

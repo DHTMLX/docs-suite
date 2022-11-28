@@ -11,7 +11,7 @@ description: You can explore the isDisabled method of Toolbar in the documentati
 @signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string | number` - an id of the Toolbar item
+- `id: string | number` - an id of the Toolbar item
 
 @returns:
 `true`, if an item of Toolbar is disabled; otherwise, `false`.

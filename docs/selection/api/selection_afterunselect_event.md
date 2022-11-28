@@ -11,7 +11,7 @@ description: You can explore the afterUnSelect event of Selection in the documen
 @signature: {'afterUnSelect: (id: string) => void;'}
 
 @params:
-`id: string` - the id of an item
+- `id: string` - the id of an item
 
 @example:
 component.selection.events.on("afterUnSelect", function(id){

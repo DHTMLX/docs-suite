@@ -11,7 +11,7 @@ description: You can explore the show method of Sidebar in the documentation of 
 @signature: {'show(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - optional, an ID or an array of IDs of items
+- `ids: string | number | array` - optional, an ID or an array of IDs of items
 
 @example:
 sidebar.show("search");

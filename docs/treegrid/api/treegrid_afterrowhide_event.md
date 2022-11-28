@@ -11,7 +11,7 @@ description: You can explore the afterRowHide event of TreeGrid in the documenta
 @signature: {'afterRowHide: (row: IRow) => void;'}
 
 @params:
-`row: object` - an object with a row configuration
+- `row: object` - an object with a row configuration
 
 @example:
 treegrid.events.on("afterRowHide", function(row){

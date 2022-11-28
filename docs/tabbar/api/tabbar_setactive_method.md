@@ -11,7 +11,7 @@ description: You can explore the setActive method of Tabbar in the documentation
 @signature: {'setActive(id: string): void;'}
 
 @params:
-`id: string` - the id of a tab
+- `id: string` - the id of a tab
 
 @example:
 const tabbar = new dhx.Tabbar("tabbar_container", {

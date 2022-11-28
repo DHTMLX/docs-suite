@@ -11,7 +11,7 @@ description: You can explore the focus event of the Button control of Form in th
 @signature: focus: (text: string) => void;
 
 @params:
-`text: string` - the current value of the control
+- `text: string` - the current value of the control
 
 @example:
 form.getItem("button").events.on("focus", (text) => {

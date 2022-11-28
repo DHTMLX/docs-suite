@@ -11,7 +11,7 @@ description: You can explore the getColumn method of Grid in the documentation o
 @signature: {'getColumn(colId: Id): ICol;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @returns:
 An object with attributes of a column.

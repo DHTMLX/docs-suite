@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Input contro
 @signature: {'afterChangeProperties: (properties: IInputProps) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("input").events.on("afterChangeProperties", function(properties) {

@@ -11,7 +11,7 @@ description: You can explore the afterApply event of Timepicker in the documenta
 @signature: {'afterApply: (value: string | ITimeObject) => void;'}
 
 @params:
-`value: string | object` - the value of a timepicker
+- `value: string | object` - the value of a timepicker
 
 @example:
 timepicker.events.on("afterApply", function(value) {

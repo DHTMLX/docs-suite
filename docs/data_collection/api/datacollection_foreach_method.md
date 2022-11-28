@@ -11,7 +11,7 @@ description: You can explore the forEach method of DataCollection in the documen
 @signature: {'forEach(callback: DataCallback<T>): void;'}
 
 @params:
-`callback: function` - a function that will iterate over items of a data collection
+- `callback: function` - a function that will iterate over items of a data collection
 
 @example:
 component.data.forEach(function(element, index, array) {

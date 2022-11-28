@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Radiogroup control of Fo
 @signature: {'afterShow: (value: string) => void;'} 
 
 @params:
-`value: string` - the current value of the control
+- `value: string` - the current value of the control
 
 @example:
 form.getItem("radiogroup").events.on("afterShow", function(value) {

@@ -11,7 +11,7 @@ description: You can explore the forEach method of Form in the documentation of 
 @signature: {'forEach(callback: FormDataCallback): void;'}
 
 @params:
-`callback: function` - a function that will iterate over Form controls
+- `callback: function` - a function that will iterate over Form controls
 
 @example:
 form.forEach(function(item, index, array) {

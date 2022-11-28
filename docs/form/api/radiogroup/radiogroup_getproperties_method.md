@@ -11,7 +11,7 @@ description: You can explore the getProperties method of the Radiogroup control 
 @signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
 
 @params:
-`id: string` - optional, the id of a radio button
+- `id: string` - optional, the id of a radio button
 
 @returns:
 An object either with the available attributes of the control and their values, or with the available attributes of the radio button and their values.

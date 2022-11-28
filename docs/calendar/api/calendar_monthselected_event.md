@@ -11,7 +11,7 @@ description: You can explore the monthSelected event of Calendar in the document
 @signature: {'monthSelected: (month: number) => void;'}
 
 @params:
-`month: number` - the number of the selected month (from 0 to 11)
+- `month: number` - the number of the selected month (from 0 to 11)
 
 @example:
 calendar.events.on("monthSelected", function(month) {

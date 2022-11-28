@@ -11,7 +11,7 @@ description: You can explore the disableTab method of Tabbar in the documentatio
 @signature: {'disableTab(id: string): boolean;'}
 
 @params:
-`id: string` - the id of a tab
+- `id: string` - the id of a tab
 
 @returns:
 `true`, if the tab is disabled; otherwise, `false`.

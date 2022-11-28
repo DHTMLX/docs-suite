@@ -11,7 +11,7 @@ description: You can explore the remove method of TreeCollection in the document
 @signature: {'remove(id: Id | Id[]): void;'}
 
 @params:
-`id: string | string[]` - the ids of items to remove
+- `id: string | string[]` - the ids of items to remove
 
 @example:
 toolbar.data.remove("id");

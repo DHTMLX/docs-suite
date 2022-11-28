@@ -11,7 +11,7 @@ description: You can explore the focus event of the Textarea control of Form in 
 @signature: focus: (value: string) => void;
 
 @params:
-`value: string` - the current value of the control
+- `value: string` - the current value of the control
 
 @example:
 form.getItem("textarea").events.on("focus", (value) => {

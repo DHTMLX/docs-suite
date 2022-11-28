@@ -11,7 +11,7 @@ description: You can explore the setState method of Tree in the documentation of
 @signature: {'setState(state: ITreeState): void;'}
 
 @params:
-`state: object` - an object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state
+- `state: object` - an object of *key:value* pairs, where *key* is the id of a tree item and *value* is its state
 
 @example:
 // getting the state of a tree

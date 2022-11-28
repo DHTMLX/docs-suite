@@ -11,7 +11,7 @@ description: You can explore the setFocus method of Form in the documentation of
 @signature: {'setFocus(name: string): void;'}
 
 @params:
-`name|id: string` - the name of the control or its id (if the name attribute is not defined in the config of the control)
+- `name|id: string` - the name of the control or its id (if the name attribute is not defined in the config of the control)
 
 @example:
 form.setFocus("checkbox");

@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Text control of Form in 
 @signature: {'afterShow: (value: string | number) => void;'} 
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @example:
 form.getItem("text").events.on("afterShow", function(value) {

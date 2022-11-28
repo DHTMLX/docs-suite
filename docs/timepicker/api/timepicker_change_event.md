@@ -11,7 +11,7 @@ description: You can explore the change event of Timepicker in the documentation
 @signature: {'change: (value: string | ITimeObject) => void;'}
 
 @params:
-`value: string | object` - the value of a timepicker
+- `value: string | object` - the value of a timepicker
 
 @example:
 timepicker.events.on("change", function(value){

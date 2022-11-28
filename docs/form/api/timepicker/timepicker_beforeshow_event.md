@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Timepicker control of F
 @signature: {'beforeShow: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-`value: string | object` - the current value of the control
+- `value: string | object` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

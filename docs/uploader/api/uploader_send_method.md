@@ -11,7 +11,7 @@ description: You can explore the send method of Uploader in the documentation of
 @signature: {'send(params?: IParams): void;'}
 
 @params:
-`params: object` - optional, additional parameters for a request
+- `params: object` - optional, additional parameters for a request
 
 @example:
 vault.uploader.send();

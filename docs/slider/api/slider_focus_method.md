@@ -11,7 +11,7 @@ description: You can explore the focus method of Slider in the documentation of 
 @signature: focus(extra?: boolean): void;
 
 @params:
-`extra: boolean` - optional, if the range mode is activated, *true* will set focus to the second thumb
+- `extra: boolean` - optional, if the range mode is activated, *true* will set focus to the second thumb
 
 @example:
 // sets focus to the thumb;  

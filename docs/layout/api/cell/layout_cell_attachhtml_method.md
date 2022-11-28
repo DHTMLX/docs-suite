@@ -11,7 +11,7 @@ description: You can explore the attachHTML method of Layout in the documentatio
 @signature: {'attachHTML(html: string): void;'}
 
 @params:
-`html: string` - an HTML content to be added into a cell
+- `html: string` - an HTML content to be added into a cell
 
 @example:
 const layout = new dhx.Layout("layout_container", {

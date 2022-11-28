@@ -11,7 +11,7 @@ description: You can explore the change event of the Checkbox Group control of F
 @signature: {'change: (value: ICheckboxGroupValue) => void;'}
 
 @params:
-`value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
+- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
 
 @example:
 form.getItem("CheckboxGroup").events.on("change", function(value) {

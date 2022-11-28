@@ -11,7 +11,7 @@ description: You can explore the beforeExpand event of TreeGrid in the documenta
 @signature: {'beforeExpand: (rowId: Id) => boolean | void;'}
 
 @params:
-`rowId: string | number` - the id of an expanded row
+- `rowId: string | number` - the id of an expanded row
 
 @returns:
 Return `false` to block expanding of a treegrid; otherwise, `true`.

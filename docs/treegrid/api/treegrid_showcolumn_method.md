@@ -11,7 +11,7 @@ description: You can explore the showColumn method of TreeGrid in the documentat
 @signature: {'showColumn(colId: Id): void;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @example:
 grid.showColumn(col);

@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Textarea control of Form
 @signature: {'setValue(value: string): void;'}
 
 @params:
-`value: string` - the value to be set  
+- `value: string` - the value to be set  
 
 @example:
 form.getItem("textarea").setValue("Some text");

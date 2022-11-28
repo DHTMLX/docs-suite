@@ -11,7 +11,7 @@ description: You can explore the attach method of the Container control of Form 
 @signature: attach(widget: any): void;
 
 @params:
-`widget` - the DHTMLX widget
+- `widget` - the DHTMLX widget
 
 @example: const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",

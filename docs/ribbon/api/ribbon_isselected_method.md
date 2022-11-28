@@ -11,7 +11,7 @@ description: You can explore the isSelected method of Ribbon in the documentatio
 @signature: {'isSelected(id: Id): boolean;'}
 
 @params:
-`id: string | number` - the id of a Ribbon item
+- `id: string | number` - the id of a Ribbon item
 
 @returns:
 `true`, if an item of Ribbon is selected; otherwise, `false`.

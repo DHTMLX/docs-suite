@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Timepicker control of Fo
 @signature: {'afterShow: (value: string | ITimeObject) => void;'}
 
 @params:
-`value: string | object` - the current value of the control
+- `value: string | object` - the current value of the control
 
 @example:
 form.getItem("timepicker").events.on("afterShow", function(value) {

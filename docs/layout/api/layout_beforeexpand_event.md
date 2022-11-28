@@ -11,7 +11,7 @@ description: You can explore the beforeExpand event of Layout in the documentati
 @signature: {'beforeExpand: (id: string) => boolean | void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @returns:
 Return `false` to block expanding a cell; otherwise, `true`.

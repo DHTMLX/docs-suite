@@ -11,7 +11,7 @@ description: You can explore the openMenu event of Menu in the documentation of 
 @signature: {'openMenu: (id: Id) => void;'}
 
 @params:
-`id: string | number` - the ID of an opened menu item
+- `id: string | number` - the ID of an opened menu item
 
 @example:
 menu.events.on("openMenu", function(id){

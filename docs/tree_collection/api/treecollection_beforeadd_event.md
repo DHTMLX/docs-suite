@@ -11,7 +11,7 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 @signature: {'beforeAdd: (newItem: any) => boolean | void;'}
 
 @params:
-`newItem: object` - the object of an added item
+- `newItem: object` - the object of an added item
 
 @returns:
 Return `false` to prevent adding of an item; otherwise, `true`.

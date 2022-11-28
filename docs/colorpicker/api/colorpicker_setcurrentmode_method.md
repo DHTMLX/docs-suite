@@ -11,7 +11,7 @@ description: You can explore the setCurrentMode method of Colorpicker in the doc
 @signature: {'setCurrentMode(view: "palette" | "picker"): void;'}
 
 @params:
-`view: string` - the mode to show: "palette" or "picker"
+- `view: string` - the mode to show: "palette" or "picker"
 
 
 @example:

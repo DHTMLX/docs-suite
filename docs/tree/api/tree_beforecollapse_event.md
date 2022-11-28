@@ -11,7 +11,7 @@ description: You can explore the beforeCollapse event of Tree in the documentati
 @signature: {'beforeCollapse: (id: Id) => boolean | void;'}
 
 @params:
-`id: string | number` - the id of a collapsed item
+- `id: string | number` - the id of a collapsed item
 
 @returns:
 Return `false` to block collapsing  a tree item; otherwise, `true`.

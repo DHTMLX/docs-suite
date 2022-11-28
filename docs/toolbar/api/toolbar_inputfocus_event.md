@@ -11,7 +11,7 @@ description: You can explore the inputFocus event of Toolbar in the documentatio
 @signature: {'inputFocus: (id: Id) => void;'}
 
 @params:
-`id: string | number` - the ID of a new control
+- `id: string | number` - the ID of a new control
 
 @example:
 toolbar.events.on("inputFocus", function(id){

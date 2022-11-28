@@ -11,7 +11,7 @@ description: You can explore the setValue method of Form in the documentation of
 @signature: {'setValue(obj: FormData | IAnyObj): void;'}
 
 @params:
-`obj: object` - an object with new values/states of controls
+- `obj: object` - an object with new values/states of controls
 
 @example:
 form.setValue({"input_name":"Jack London", "slider_id":10});

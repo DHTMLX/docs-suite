@@ -11,7 +11,7 @@ description: You can explore the afterAdd event of Layout in the documentation o
 @signature: {'afterAdd: (id: string) => void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @example:
 layout.events.on("afterAdd", function(id){

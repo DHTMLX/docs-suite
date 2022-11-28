@@ -11,7 +11,7 @@ description: You can explore the getValue method of Timepicker in the documentat
 @signature: {'getValue(asOBject?: boolean): ITimeObject | string;'}
 
 @params:
-`asObject: boolean` - optional, specifies that the value will be returned as an object, false by default
+- `asObject: boolean` - optional, specifies that the value will be returned as an object, false by default
 
 @returns:
 Either an object or a string with the value of a timepicker.

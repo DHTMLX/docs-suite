@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Slider control of Form i
 @signature: {'setValue(value: number | number[]): void;'}
 
 @params:
-`value: number | number[]` - the value to be set  
+- `value: number | number[]` - the value to be set  
 
 @example:
 form.getItem("slider").setValue([2]);

@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Checkbox control of For
 @signature: {'beforeShow: (value: string | boolean) => boolean | void;'}
 
 @params:
-`value: string | boolean` - the current value of the control
+- `value: string | boolean` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

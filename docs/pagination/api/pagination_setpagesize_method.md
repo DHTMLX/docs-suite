@@ -11,7 +11,7 @@ description: You can explore the setPageSize method of Pagination in the documen
 @signature: {'setPageSize(size: number): void;'}
 
 @params:
-`size: number` - the number of items
+- `size: number` - the number of items
 
 @example:
 pagination.setPageSize(24);

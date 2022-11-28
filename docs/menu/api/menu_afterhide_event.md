@@ -11,7 +11,7 @@ description: You can explore the afterHide event of Menu in the documentation of
 @signature: {'afterHide: (events: Event) => void;'}
 
 @params:
-`events:  Event` - a native event object
+- `events:  Event` - a native event object
 
 @example:
 menu.events.on("afterHide", function(event){

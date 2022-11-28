@@ -11,7 +11,7 @@ description: You can explore the setState method of Toolbar in the documentation
 @signature: {'setState(state: IState): void;'}
 
 @params:
-`state: object` - a hash of <i>key:value</i> pairs, where the key is the ID of a control and the value is a new value/state of the control
+- `state: object` - a hash of <i>key:value</i> pairs, where the key is the ID of a control and the value is a new value/state of the control
 
 @example:
 toolbar.setState({

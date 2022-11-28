@@ -11,8 +11,7 @@ description: You can explore the save method of TreeCollection in the documentat
 @signature: {'save(url: IDataProxy | string): void;'}
 
 @params:
-
-`url: object | string` - the URL of a server side (or DataProxy object)
+- `url: object | string` - the URL of a server side (or DataProxy object)
 
 @example:
 diagram.data.save("http://userurl/");

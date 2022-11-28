@@ -11,7 +11,7 @@ description: You can explore the attachHTML method of Window in the documentatio
 @signature: {'attachHTML(html: string): void;'}
 
 @params:
-`html: string` - an HTML content to be added into a window
+- `html: string` - an HTML content to be added into a window
 
 @example:
 const dhxWindow = new dhx.Window({title: "Window"});

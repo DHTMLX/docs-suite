@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Combo Box control of Fo
 @signature: {'beforeShow: (value: Id | Id[]) => boolean | void;'}
 
 @params:
-`value: string | number | (string | number)[]` - the ID(s) of the options(s) that are currently selected in the control
+- `value: string | number | (string | number)[]` - the ID(s) of the options(s) that are currently selected in the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

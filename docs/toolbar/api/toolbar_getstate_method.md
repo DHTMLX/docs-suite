@@ -11,7 +11,7 @@ description: You can explore the getState method of Toolbar in the documentation
 @signature: {'getState(id?: Id): IState;'}
 
 @params:
-`id: string | number` - optional, the id of a Toolbar control
+- `id: string | number` - optional, the id of a Toolbar control
 
 @returns:
 Either a string with the value of the control, or a boolean value with the state of the control, or an object with IDs of controls and their values/states.

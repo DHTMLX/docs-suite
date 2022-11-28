@@ -11,7 +11,7 @@ description: You can explore the isDisabled method of Menu in the documentation 
 @signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string | number` - an id of the Menu item
+- `id: string | number` - an id of the Menu item
 
 @returns:
 `true`, if an item of Menu is disabled; otherwise, `false`.

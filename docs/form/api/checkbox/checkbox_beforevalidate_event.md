@@ -11,7 +11,7 @@ description: You can explore the beforeValidate event of the Checkbox control of
 @signature: {'beforeValidate: (value: string | boolean) => boolean | void;'}
 
 @params:
-`value: string | boolean` - the value to be validated
+- `value: string | boolean` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

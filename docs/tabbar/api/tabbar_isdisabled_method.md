@@ -11,7 +11,7 @@ description: You can explore the isDisabled method of Tabbar in the documentatio
 @signature: {'isDisabled(id?: string): boolean;'}
 
 @params:
-`id: string` - the id of a tab
+- `id: string` - the id of a tab
 
 @returns:
 `true`, if a tab is disabled; otherwise, `false`.

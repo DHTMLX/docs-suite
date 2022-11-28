@@ -11,7 +11,7 @@ description: You can explore the setFocus method of Colorpicker in the documenta
 @signature: {'setFocus(value: string): void;'}
 
 @params:
-`value: string` - the code of a color (in the Hex format) to set focus on
+- `value: string` - the code of a color (in the Hex format) to set focus on
 
 @example:
 colorpicker.setFocus("#BDF0E9");

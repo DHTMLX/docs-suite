@@ -11,7 +11,7 @@ description: You can explore the attachHTML method of Popup in the documentation
 @signature: {'attachHTML(html: string): void;'}
 
 @params:
-`html: string` - an HTML content to be added into a popup
+- `html: string` - an HTML content to be added into a popup
 
 @example:
 const popup = new dhx.Popup();

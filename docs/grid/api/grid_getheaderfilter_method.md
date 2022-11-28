@@ -11,7 +11,7 @@ description: You can explore the getHeaderFilter method of Grid in the documenta
 @signature: {'getHeaderFilter(colId: Id): HTMLElement | object;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @returns:
 Either an HTML object or an object with Combobox configuration.

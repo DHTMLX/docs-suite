@@ -11,7 +11,7 @@ description: You can explore the input event of the Colorpicker control of Form 
 @signature: {'input: (inputValue: string) => void;'} 
 
 @params:
-`inputValue: string` - an entered value
+- `inputValue: string` - an entered value
 
 @example:
 form.getItem("colorpicker").events.on("input", function(inputValue) {

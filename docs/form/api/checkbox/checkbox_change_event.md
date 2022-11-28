@@ -11,7 +11,7 @@ description: You can explore the change event of the Checkbox control of Form in
 @signature: {'change: (value: string | boolean) => void;'}
 
 @params:
-`value: string | boolean` - the current value of the control
+- `value: string | boolean` - the current value of the control
 
 @example:
 form.getItem("checkbox").events.on("change", function(value) {

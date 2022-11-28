@@ -11,7 +11,7 @@ description: You can explore the afterColumnHide event of Grid in the documentat
 @signature: {'afterColumnHide: (col: ICol) => void;'}
 
 @params:
-`col: object` - an object with a column configuration
+- `col: object` - an object with a column configuration
 
 @example:
 grid.events.on("afterColumnHide", function(column){

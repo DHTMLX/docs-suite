@@ -11,7 +11,7 @@ description: You can explore the beforeCollapse event of Layout in the documenta
 @signature: {'beforeCollapse: (id: string) => boolean | void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @returns:
 Return `false` to prevent a cell from being collapsed; otherwise, `true`.

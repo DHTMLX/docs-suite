@@ -11,7 +11,7 @@ description: You can explore the add method of Selection in the documentation of
 @signature: {'add(id: string | number): void;'}
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 const id = component.selection.getId(); // -> "2"

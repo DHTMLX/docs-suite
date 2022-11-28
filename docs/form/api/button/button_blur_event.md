@@ -11,7 +11,7 @@ description: You can explore the blur event of the Button control of Form in the
 @signature: blur: (text: string) => void;
 
 @params:
-`text: string` - the current text value of the control
+- `text: string` - the current text value of the control
 
 @example:
 form.getItem("button").events.on("blur", (text) => {

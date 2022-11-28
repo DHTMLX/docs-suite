@@ -11,7 +11,7 @@ description: You can explore the collapse method of Tree in the documentation of
 @signature: {'collapse(id: Id): void;'}
 
 @params:
-`id: string | number` - the id of an item to collapse
+- `id: string | number` - the id of an item to collapse
 
 @example:
 tree.collapse("history");

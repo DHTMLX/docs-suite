@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Spacer control of Form i
 @signature: {'afterShow: (value: undefined) => void;'}
 
 @params:
-`value: undefined` - the current value of the control, null
+- `value: undefined` - the current value of the control, null
 
 @example:
 form.getItem("spacer").events.on("afterShow", function(value) {

@@ -11,7 +11,7 @@ description: You can explore the unselect method of Menu in the documentation of
 @signature: {'unselect(id?: Id): void;'}
 
 @params:
-`id: string | number` - optional, the id of a Menu item
+- `id: string | number` - optional, the id of a Menu item
 
 @example:
 // unselects all previously selected items

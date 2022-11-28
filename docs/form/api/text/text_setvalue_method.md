@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Text control of Form in 
 @signature: {'setValue(value: string | number): void;'}
 
 @params:
-`value: string | number` - the value to be set  
+- `value: string | number` - the value to be set  
 
 @example:
 form.getItem("text").setValue("This is the Text control");

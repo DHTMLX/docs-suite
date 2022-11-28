@@ -11,7 +11,7 @@ description: You can explore the focus event of the Datepicker control of Form i
 @signature: focus: (value: string | Date) => void;
 
 @params:
-`value: string | Date` - the current value of the control
+- `value: string | Date` - the current value of the control
 
 @example:
 form.getItem("datepicker").events.on("focus", (value) => {
