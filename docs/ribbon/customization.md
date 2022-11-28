@@ -8,11 +8,11 @@ description: You can explore the customization of Ribbon in the documentation of
 
 ## Icons
 
-dhtmlxRibbon uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
+DHTMLX Ribbon uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Ribbon controls.
 
 For example, you can use the [Material Design](https://materialdesignicons.com/) icon pack by including [link to its CDN](https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/2.5.94/css/materialdesignicons.css)
-after the source files of dhtmlxRibbon as follows:
+after the source files of DHTMLX Ribbon as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/ribbon.js"></script>

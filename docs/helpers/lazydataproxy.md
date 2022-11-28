@@ -6,9 +6,9 @@ description: You can learn about dynamic loading in the documentation of the DHT
 
 # Dynamic loading
 
-{{pronote This functionality requires PRO version of the dhtmlxGrid (or DHTMLX suite) package.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
-To load data dynamically from the server you can make use of the **LazyDataProxy** helper while loading data into dhtmlxGrid or dhtmlxList. 
+To load data dynamically from the server you can make use of the **LazyDataProxy** helper while loading data into DHTMLX Grid or DHTMLX List. 
 This helper allows getting data partially, on demand, and rendering only those records that are in the visible area.
 
 Read the related articles for detailed information about how to display large lists and tabular data efficiently:

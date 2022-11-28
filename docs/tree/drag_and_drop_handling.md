@@ -6,7 +6,7 @@ description: You can explore the drag-n-drop of Tree in the documentation of the
 
 # Drag-n-Drop
 
-dhtmlxTree possesses an advanced drag-n-drop functionality. With this feature, it is possible to reorder items in a tree and drag items between trees. To enable drag-n-drop, you should define the drag mode.
+DHTMLX Tree possesses an advanced drag-n-drop functionality. With this feature, it is possible to reorder items in a tree and drag items between trees. To enable drag-n-drop, you should define the drag mode.
 
 ~~~js
 const source = new dhx.Tree("tree-source",{dragMode:"source", dropBehaviour:"complex"});

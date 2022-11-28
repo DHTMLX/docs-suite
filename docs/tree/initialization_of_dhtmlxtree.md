@@ -13,7 +13,7 @@ Download the DHTMLX Tree package:
 - [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 :::
 
-To initialize dhtmlxTree on a page, you need to take the following simple steps:
+To initialize DHTMLX Tree on a page, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -24,14 +24,14 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxTree</title>         
+        <title>How to Start with DHTMLX Tree</title>         
         <script type="text/javascript" src="../../codebase/tree.js"></script>
         <link rel="stylesheet" href="../../codebase/tree.css">
     </head>
     <body>
         <div id="tree_container"></div>
         <script>
-            // creating dhtmlxTree
+            // creating DHTMLX Tree
             const tree = new dhx.Tree("tree_container",{
     			// config options
 			});
@@ -44,9 +44,9 @@ To initialize dhtmlxTree on a page, you need to take the following simple steps:
 
 Unpack the downloaded package into a folder of your project.
 
-After that, create an HTML file and place full paths to JS and CSS files of dhtmlxTree into the header of the created file. The Tree component can be used standalone or as a part of the Suite library.
+After that, create an HTML file and place full paths to JS and CSS files of DHTMLX Tree into the header of the created file. The Tree component can be used standalone or as a part of the Suite library.
 
-**If you use dhtmlxTree standalone**, you need to include 2 files:
+**If you use DHTMLX Tree standalone**, you need to include 2 files:
 
 - *tree.js*
 - *tree.css*
@@ -56,7 +56,7 @@ After that, create an HTML file and place full paths to JS and CSS files of dhtm
 <link rel="stylesheet" href="../../codebase/tree.css">
 ~~~
 
-**If you use dhtmlxTree as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
+**If you use DHTMLX Tree as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
 
 - suite.js
 - suite.css
@@ -82,7 +82,7 @@ Initialize Tree with the `dhx.Tree` object constructor. The constructor has two 
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="index.js"
-// creating dhtmlxTree
+// creating DHTMLX Tree
 const tree = new dhx.Tree("tree_container", {
     checkbox: true
 });

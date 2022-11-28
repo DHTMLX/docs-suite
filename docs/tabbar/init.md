@@ -10,7 +10,7 @@ description: You can explore the initialization of Tabbar in the documentation o
 [Download the DHTMLX Tabbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To add dhtmlxTabbar into an application, you need to take the following simple steps:
+To add DHTMLX Tabbar into an application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -21,14 +21,14 @@ To add dhtmlxTabbar into an application, you need to take the following simple s
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxTabbar</title>         
+        <title>How to Start with DHTMLX Tabbar</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="tabbar_container"></div>
         <script>
-            // creating dhtmlxTabbar
+            // creating DHTMLX Tabbar
             const tabbar = new dhx.Tabbar("tabbar_container",{
             	views:[ 
                 	{ tab: "north" },

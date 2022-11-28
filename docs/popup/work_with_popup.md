@@ -67,7 +67,7 @@ popup.show("popup");
 
 ## Attaching DHTMLX components
 
-dhtmlxPopup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
+DHTMLX Popup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
 
 <table>
 	<tbody>

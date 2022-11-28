@@ -6,7 +6,7 @@ description: You can explore the list of Menu controls of Menu in the documentat
 
 # List of Menu controls
 
-In this article you'll find the controls you can use in dhtmlxMenu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
+In this article you'll find the controls you can use in DHTMLX Menu. Their descriptions contain lists of attributes and examples of adding the controls into Menu on the fly.
 
 To operate Menu controls, you can use Menu API and [Tree Collection API](tree_collection.md). Check the [related article](menu/work_with_menu.md).
 

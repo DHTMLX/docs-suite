@@ -10,7 +10,7 @@ description: You can explore the initialization of Toolbar in the documentation 
 [Download the DHTMLX Toolbar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To add dhtmlxToolbar into an application, you need to take the following simple steps:
+To add DHTMLX Toolbar into an application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -21,14 +21,14 @@ To add dhtmlxToolbar into an application, you need to take the following simple 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxToolbar</title>         
+        <title>How to Start with DHTMLX Toolbar</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="toolbar_container"></div>
         <script>
-            // creating dhtmlxToolbar
+            // creating DHTMLX Toolbar
             const toolbar = new dhx.Toolbar("toolbar_container");
         </script>
     </body>

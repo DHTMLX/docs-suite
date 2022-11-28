@@ -41,7 +41,7 @@ dhxWindow.paint();
 
 ## Fullscreen mode
 
-dhtmlxWindow can be displayed in the full screen mode. To activate the full screen mode, make use of the [](window/api/window_setfullscreen_method.md) method:
+DHTMLX Window can be displayed in the full screen mode. To activate the full screen mode, make use of the [](window/api/window_setfullscreen_method.md) method:
 
 ~~~js
 dhxWindow.setFullScreen();

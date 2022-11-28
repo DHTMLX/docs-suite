@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into List.
 
 ## Preparing data set
 
-dhtmlxList expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX List expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [

@@ -45,7 +45,7 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 
 ## Drag-n-drop of items
 
-dhtmlxList supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [](list/api/list_dragmode_config.md) property in the configuration object of List. Then define which mode you need:
+DHTMLX List supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [](list/api/list_dragmode_config.md) property in the configuration object of List. Then define which mode you need:
 
 - "target" - a list takes items from other lists, while its items can't be dragged out of it
 - "source" - a list allows dragging its items out and can't take items from other lists

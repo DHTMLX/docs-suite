@@ -6,7 +6,7 @@ description: You can explore how to work with Tabbar in the documentation of the
 
 # Work with Tabbar
 
-dhtmlxTabbar inherits its API from dhtmlxLayout. So, you can apply any methods of Layout to manipulate Tabbar.
+DHTMLX Tabbar inherits its API from dhtmlxLayout. So, you can apply any methods of Layout to manipulate Tabbar.
 
 ## Adding/removing tabs
 

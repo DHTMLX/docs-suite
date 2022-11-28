@@ -10,7 +10,7 @@ description: You can explore the initialization of Window in the documentation o
 [Download the DHTMLX Window package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To initialize dhtmlxWindow on a page, you need to take the following simple steps:
+To initialize DHTMLX Window on a page, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Initialize Window](#initialize-window) with the object constructor
@@ -20,13 +20,13 @@ To initialize dhtmlxWindow on a page, you need to take the following simple step
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxWindow</title>         
+        <title>How to Start with DHTMLX Window</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <script>
-            // creating dhtmlxWindow 
+            // creating DHTMLX Window 
             const dhxWindow = new dhx.Window({
                 title: "DHX Window",
 				modal: false,
@@ -61,7 +61,7 @@ Initialize Window with the `dhx.Window` object constructor. The constructor take
 {{note Don't use **window** as a variable name for dhxWindow object, since it is reserved for the browser window.}}
 
 ~~~js title="index.js"
-// creating dhtmlxWindow
+// creating DHTMLX Window
 const dhxWindow = new dhx.Window({
     modal: false,
 	resizable: true,
@@ -81,7 +81,7 @@ The detailed information on Window configuration options can be found in the [Wi
 
 ## Set content
 
-There are several ways of adding content into the dhtmlxWindow:
+There are several ways of adding content into the DHTMLX Window:
 
 - via the [](window/api/window_html_config.md) property to attach some HTML content into a window before initialization
 

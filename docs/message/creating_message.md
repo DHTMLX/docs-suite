@@ -20,7 +20,7 @@ To add a message on a page, you should take the following simple steps:
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxMessage</title>         
+        <title>How to Start with DHTMLX Message</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
@@ -28,7 +28,7 @@ To add a message on a page, you should take the following simple steps:
     	<!--optional-->
         <div id="message_container"></div>
         <script>
-            // creating dhtmlxMessage 
+            // creating DHTMLX Message 
             dhx.message({
 				node:"message_container",
                 text:"This is an error message",

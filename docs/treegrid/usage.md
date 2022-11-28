@@ -8,7 +8,7 @@ description: You can explore how to work with TreeGrid in the documentation of t
 
 ## Working with columns and cells
 
-The API of dhtmlxTreeGrid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
+The API of DHTMLX TreeGrid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
 
 ### Setting columns configuration
 
@@ -253,7 +253,7 @@ treegrid.removeSpan("10","a");
 
 ## Controlling scroll behavior
 
-The API of dhtmlxTreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
+The API of DHTMLX TreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
 
 ### Scrolling to specific coordinates
 
@@ -533,7 +533,7 @@ You can easily export data of TreeGrid into the Excel or CSV format.
 
 ### Exporting data to Excel 
 
-dhtmlxTreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the **export()** method of the export module. The method takes an object with export settings as a parameter.
+DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the **export()** method of the export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.xls({

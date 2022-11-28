@@ -6,7 +6,7 @@ description: You can explore the attachHTML method of Window in the documentatio
 
 # attachHTML()
 
-@short: adds an HTML content into a dhtmlxWindow
+@short: adds an HTML content into a DHTMLX Window
 
 @signature: {'attachHTML(html: string): void;'}
 

@@ -6,7 +6,7 @@ description: You can explore the attachHTML method of Popup in the documentation
 
 # attachHTML()
 
-@short: adds an HTML content into a dhtmlxPopup
+@short: adds an HTML content into a DHTMLX Popup
 
 @signature: {'attachHTML(html: string): void;'}
 

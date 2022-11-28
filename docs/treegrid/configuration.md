@@ -6,7 +6,7 @@ description: You can explore the configuration of TreeGrid in the documentation 
 
 # Configuration
 
-dhtmlxTreeGrid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
+DHTMLX TreeGrid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
 
 ## Columns
 
@@ -198,7 +198,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Drag-n-drop between grids
 
-dhtmlxTreeGrid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [](treegrid/api/treegrid_dragmode_config.md) property in the configuration object of TreeGrid. Then define which mode you need:
+DHTMLX TreeGrid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [](treegrid/api/treegrid_dragmode_config.md) property in the configuration object of TreeGrid. Then define which mode you need:
 
 - "target" - a grid takes rows from other grids, while its row can't be dragged out of it
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
@@ -219,7 +219,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Editing TreeGrid and separate columns
 
-dhtmlxTreeGrid provides the editing feature that includes two options:
+DHTMLX TreeGrid provides the editing feature that includes two options:
 
 - editing of the whole TreeGrid, i.e. of all its columns
 
@@ -721,7 +721,7 @@ You can set the **hidden:true** property in the [config of a column](treegrid/co
 
 ## HTML content of TreeGrid columns
 
-dhtmlxTreeGrid allows adding HTML content into TreeGrid cells in two ways:
+DHTMLX TreeGrid allows adding HTML content into TreeGrid cells in two ways:
 
 - by specifying the HTML content of all TreeGrid columns
 
@@ -920,7 +920,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Selection
 
-dhtmlxTreeGrid includes the selection feature that allows highlighting TreeGrid elements depending on the chosen mode. The [](treegrid/api/treegrid_selection_config.md) property enables selection in a grid. It can take three values:
+DHTMLX TreeGrid includes the selection feature that allows highlighting TreeGrid elements depending on the chosen mode. The [](treegrid/api/treegrid_selection_config.md) property enables selection in a grid. It can take three values:
 
 <table>
 	<tbody>
@@ -954,7 +954,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Sorting columns
 
-By default, dhtmlxTreeGrid allows sorting content of any TreeGrid column by clicking on its header.
+By default, DHTMLX TreeGrid allows sorting content of any TreeGrid column by clicking on its header.
 
 To disable this option, set the [](treegrid/api/treegrid_sortable_config.md) property in the TreeGrid configuration to *false*:
 

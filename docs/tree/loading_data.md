@@ -6,7 +6,7 @@ description: You can explore the data loading of Tree in the documentation of th
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxTree:
+There are several simple ways of loading data into DHTMLX Tree:
 
 - on initialization of Tree
 - after initialization of Tree
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into Tree.
 
 ## Preparing data set
 
-dhtmlxTree expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Tree expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [

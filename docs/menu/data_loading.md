@@ -6,7 +6,7 @@ description: You can explore the data loading of Menu in the documentation of th
 
 # Data loading
 
-There are several simple ways of loading options into dhtmlxMenu:
+There are several simple ways of loading options into DHTMLX Menu:
 
 - on initialization of Menu
 - after initialization of Menu
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into Menu.
 
 ## Preparing data set
 
-dhtmlxMenu expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Menu expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const data = [

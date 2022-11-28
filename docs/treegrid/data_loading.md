@@ -6,7 +6,7 @@ description: You can explore the data loading of TreeGrid in the documentation o
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxTreeGrid:
+There are several simple ways of loading data into DHTMLX TreeGrid:
 
 - on initialization of TreeGrid
 - after initialization of TreeGrid
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into TreeGrid.
 
 ## Preparing data set
 
-dhtmlxTreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX TreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [

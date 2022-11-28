@@ -10,7 +10,7 @@ description: You can explore the initialization of Sidebar in the documentation 
 [Download the DHTMLX Sidebar package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To add dhtmlxSidebar into an application, you need to take the following simple steps:
+To add DHTMLX Sidebar into an application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -21,14 +21,14 @@ To add dhtmlxSidebar into an application, you need to take the following simple 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxSidebar</title>         
+        <title>How to Start with DHTMLX Sidebar</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="sidebar_container"></div>
         <script>
-            // creating dhtmlxSidebar
+            // creating DHTMLX Sidebar
             const sidebar = new dhx.Sidebar("sidebar_container");
         </script>
     </body>

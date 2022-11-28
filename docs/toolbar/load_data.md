@@ -6,7 +6,7 @@ description: You can explore the data loading of Toolbar in the documentation of
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxToolbar:
+There are several simple ways of loading data into DHTMLX Toolbar:
 
 - on initialization of Toolbar
 - after initialization of Toolbar
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into Toolbar.
 
 ## Preparing data set
 
-dhtmlxToolbar expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Toolbar expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [

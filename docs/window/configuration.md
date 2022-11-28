@@ -6,7 +6,7 @@ description: You can explore the configuration of Window in the documentation of
 
 # Configuration
 
-dhtmlxWindow provides a set of configuration options you can define in the constructor of the component before its initialization. It's possible to set a title into the header of a window, add a footer with controls,
+DHTMLX Window provides a set of configuration options you can define in the constructor of the component before its initialization. It's possible to set a title into the header of a window, add a footer with controls,
 specify the sizes of a window and decide whether it should be resizable, movable or modal, set some HTML content and define other useful settings to adapt the component to your needs.
 
 ## Closability
@@ -149,7 +149,7 @@ Default values of the size-related properties are:
 
 ## Title
 
-dhtmlxWindow is initialized with an empty header. You can provide some text label for the header of the window via the [](window/api/window_title_config.md) property.
+DHTMLX Window is initialized with an empty header. You can provide some text label for the header of the window via the [](window/api/window_title_config.md) property.
 
 ~~~js
 const dhxWindow = new dhx.Window({

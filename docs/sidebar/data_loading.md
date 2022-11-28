@@ -6,7 +6,7 @@ description: You can explore the data loading of Sidebar in the documentation of
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxSidebar:
+There are several simple ways of loading data into DHTMLX Sidebar:
 
 - on initialization of Sidebar
 - after initialization of Sidebar
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into Sidebar.
 
 ## Preparing data set
 
-dhtmlxSidebar expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Sidebar expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const data = [

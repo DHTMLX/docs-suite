@@ -55,7 +55,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Mode: top, left, right, bottom](https://snippet.dhtmlx.com/xq6k0tts)
 
-When initialized with default settings, Tabbar is located at the top of a page. You can locate dhtmlxTabbar at any desired side of your application by using any other value of the [mode](tabbar/api/tabbar_mode_config.md) property. 
+When initialized with default settings, Tabbar is located at the top of a page. You can locate DHTMLX Tabbar at any desired side of your application by using any other value of the [mode](tabbar/api/tabbar_mode_config.md) property. 
 Besides "top", it can also take "bottom","left" or "right" values. e.g.:
 
 ~~~js
@@ -66,7 +66,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 ## Size of tabs
 
-dhtmlxTabbar allows you to control the height and width of tabs with the help of appropriate configuration options - [tabWidth](tabbar/api/tabbar_tabwidth_config.md) and [tabHeight](tabbar/api/tabbar_tabheight_config.md). By default, they are set to 200px and 45px, correspondingly. This is how you can change the default settings:
+DHTMLX Tabbar allows you to control the height and width of tabs with the help of appropriate configuration options - [tabWidth](tabbar/api/tabbar_tabwidth_config.md) and [tabHeight](tabbar/api/tabbar_tabheight_config.md). By default, they are set to 200px and 45px, correspondingly. This is how you can change the default settings:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {

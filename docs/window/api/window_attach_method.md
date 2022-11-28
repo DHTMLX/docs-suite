@@ -6,7 +6,7 @@ description: You can explore the attach method of Window in the documentation of
 
 # attach()
 
-@short: attaches a DHTMLX component to a dhtmlxWindow
+@short: attaches a DHTMLX component to a DHTMLX Window
 
 @signature: {'attach(name: string | IViewFn | IView | IViewConstructor | any, config?: any): void;'}
 

@@ -10,7 +10,7 @@ description: You can explore the configuration of Tree in the documentation of t
 
 ![](../assets/tree/checkbox.png)
 
-dhtmlxTree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
+DHTMLX Tree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
 when just some children of a parent item are checked.
 
 In order to enable checkboxes for items, make use of the [](tree/api/tree_checkbox_config.md) configuration option:

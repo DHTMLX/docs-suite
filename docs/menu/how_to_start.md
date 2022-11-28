@@ -10,7 +10,7 @@ description: You can explore the initialization of Menu in the documentation of 
 [Download the DHTMLX Menu package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To add dhtmlxMenu into an application, you need to take the following simple steps:
+To add DHTMLX Menu into an application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -21,14 +21,14 @@ To add dhtmlxMenu into an application, you need to take the following simple ste
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxMenu</title>         
+        <title>How to Start with DHTMLX Menu</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="menu_container"></div>
         <script>
-            // creating dhtmlxMenu
+            // creating DHTMLX Menu
             const menu = new dhx.Menu("menu_container");
         </script>
     </body>

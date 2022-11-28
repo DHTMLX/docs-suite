@@ -6,20 +6,20 @@ description: You can explore the getWidget method of the Timepicker control of F
 
 # getWidget()
 
-@short: returns the dhtmlxTimePicker widget attached to a TimePicker control
+@short: returns the DHTMLX TimePicker widget attached to a TimePicker control
 
 @signature: {'getWidget(): Timepicker;'}
 
 @returns:
-An object of the dhtmlxTimePicker widget.
+An object of the DHTMLX TimePicker widget.
 
 @example:
 const timepicker = form.getItem("timepicker").getWidget();  
-// -> dhtmlxTimePicker
+// -> DHTMLX TimePicker
 
 @descr:
 
-It is possible to use methods of dhtmlxTimePicker via the **getWidget()** method of a TimePicker control.
+It is possible to use methods of DHTMLX TimePicker via the **getWidget()** method of a TimePicker control.
 
 For example, you can set value for a TimePicker control. To do this, you need to get the widget attached to the TimePicker control and then use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method of this widget.
 

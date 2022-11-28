@@ -65,11 +65,11 @@ const tree = new dhx.Tree("tree_container", {
 
 **Related sample**: [Tree. Custom icons](https://snippet.dhtmlx.com/lpsgn3j7)
 
-You can change the default icons used for tree items. dhtmlxTree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
+You can change the default icons used for tree items. DHTMLX Tree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
 For this, you need to include the desired icon font on a page and apply icons to necessary items.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxTree as follows:
+after the source files of DHTMLX Tree as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/tree.js"></script>

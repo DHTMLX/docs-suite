@@ -10,7 +10,7 @@ description: You can explore the initialization of List in the documentation of 
 [Download the DHTMLX List package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To initialize dhtmlxList on a page, you need to take the following simple steps:
+To initialize DHTMLX List on a page, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -21,14 +21,14 @@ To initialize dhtmlxList on a page, you need to take the following simple steps:
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxList</title>         
+        <title>How to Start with DHTMLX List</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="list_container"></div>
         <script>
-            // creating dhtmlxList
+            // creating DHTMLX List
             const list = new dhx.List("list_container", {
     			itemHeight: 30
 			});
@@ -67,7 +67,7 @@ Initialize List with the `dhx.List` object constructor. The constructor has two 
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="index.js"
-// creating dhtmlxList
+// creating DHTMLX List
 const list = new dhx.List("list_container", {
     itemHeight:30,
     // more config options

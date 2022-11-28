@@ -10,7 +10,7 @@ description: You can explore the initialization of Timepicker in the documentati
 [Download the DHTMLX TimePicker package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To initialize dhtmlxTimePicker on a page, you need to take the following simple steps:
+To initialize DHTMLX TimePicker on a page, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-container)
@@ -21,14 +21,14 @@ To initialize dhtmlxTimePicker on a page, you need to take the following simple 
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxTimePicker</title>         
+        <title>How to Start with DHTMLX TimePicker</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="timepicker_container"></div>
         <script>
-            // creating dhtmlxTimePicker 
+            // creating DHTMLX TimePicker 
             const timepicker = new dhx.Timepicker("timepicker_container", {
 				// config options
 			});
@@ -67,7 +67,7 @@ Initialize TimePicker with the **`dhx.Timepicker`** object constructor. The cons
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="index.js"
-// creating dhtmlxTimePicker
+// creating DHTMLX TimePicker
 const timepicker = new dhx.Timepicker("timepicker_container", {
     // config options
 });

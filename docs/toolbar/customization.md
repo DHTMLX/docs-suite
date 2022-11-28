@@ -8,11 +8,11 @@ description: You can explore the customization of Toolbar in the documentation o
 
 ## Icons
 
-dhtmlxToolbar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
+DHTMLX Toolbar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Toolbar controls.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxToolbar as follows:
+after the source files of DHTMLX Toolbar as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/toolbar.js"></script>

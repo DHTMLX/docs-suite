@@ -27,7 +27,7 @@ It takes two parameters:
 
 ## Loading menu options
 
-Like with dhtmlxMenu, options can be either parsed from a JSON array:
+Like with DHTMLX Menu, options can be either parsed from a JSON array:
 
 ~~~js
 const data = [

@@ -10,7 +10,7 @@ description: You can explore the initialization of Slider in the documentation o
 [Download the DHTMLX Slider package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To initialize dhtmlxSlider on a page, you need to take the following simple steps:
+To initialize DHTMLX Slider on a page, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -20,14 +20,14 @@ To initialize dhtmlxSlider on a page, you need to take the following simple step
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxSlider</title>         
+        <title>How to Start with DHTMLX Slider</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="slider_container"></div>
         <script>
-            // creating dhtmlxSlider 
+            // creating DHTMLX Slider 
             const slider = new dhx.Slider("slider_container", {
 				min: 0,
 				max: 100,
@@ -69,7 +69,7 @@ Initialize Slider with the `dhx.Slider` object constructor. The constructor has 
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="index.js"
-// creating dhtmlxSlider
+// creating DHTMLX Slider
 const slider = new dhx.Slider("slider_container", {
     min: 0,
 	max: 100,

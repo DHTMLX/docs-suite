@@ -6,7 +6,7 @@ description: You can explore the data loading of Ribbon in the documentation of 
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxRibbon:
+There are several simple ways of loading data into DHTMLX Ribbon:
 
 - on initialization of Ribbon
 - after initialization of Ribbon
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into Ribbon.
 
 ## Preparing data set
 
-dhtmlxRibbon expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Ribbon expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const data = [
