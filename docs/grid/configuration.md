@@ -180,7 +180,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Drag-n-drop inside the grid
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br> In case you use GPL version, you will be able to reorder rows only.}}
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br> In case you use GPL version, you will be able to reorder only rows.}}
 
 It is possible to reorder rows and columns of Grid by drag and drop. To enable the functionality, define the [dragItem: "both"](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
