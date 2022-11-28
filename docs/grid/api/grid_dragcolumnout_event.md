@@ -6,6 +6,8 @@ description: You can explore the dragColumnOut event of Grid in the documentatio
 
 # dragColumnOut
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires when a column is dragged out of a potential target
 
 @signature: {'dragColumnOut: (data: IDragInfo, events: MouseEvent) => void;'}
@@ -20,8 +22,6 @@ grid.events.on("dragColumnOut", function(data, events) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 

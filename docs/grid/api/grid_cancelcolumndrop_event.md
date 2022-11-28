@@ -6,6 +6,8 @@ description: You can explore the cancelColumnDrop event of Grid in the documenta
 
 # cancelColumnDrop
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires on moving a mouse pointer out of borders of a column while dragging the column
 
 @signature: {'cancelColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
@@ -20,8 +22,6 @@ grid.events.on("cancelColumnDrop", function(data, events) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 

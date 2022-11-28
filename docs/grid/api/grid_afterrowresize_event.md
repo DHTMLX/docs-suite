@@ -6,6 +6,8 @@ description: You can explore the afterRowResize event of Grid in the documentati
 
 # afterRowResize
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires after the height of a row is changed
 
 @signature: afterRowResize: (row: IRow, events: Event, currentHeight: number) => void;
@@ -21,9 +23,8 @@ grid.events.on("afterRowResize", function(row, events, currentHeight) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
-
-To be able to change the height of the row, you should specify the [autoHeight:true](grid/api/grid_autoheight_config.md) and [editable:true](grid/api/grid_editable_config.md) options in the configuration of Grid.  
+:::info
+To be able to change the height of the row, you should specify the [autoHeight:true](grid/api/grid_autoheight_config.md) and [editable:true](grid/api/grid_editable_config.md) options in the configuration of Grid. 
+:::
 
 @changelog: added in v7.1

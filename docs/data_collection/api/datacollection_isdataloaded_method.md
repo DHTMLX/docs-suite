@@ -6,6 +6,8 @@ description: You can explore the isDataLoaded method of DataCollection in the do
 
 # isDataLoaded()
 
+{{pronote This functionality is available in the PRO edition only.}}
+
 @short: checks whether the specified data range is loaded from the server
 
 @signature: {'isDataLoaded(from?: number, to?: number): boolean;'}
@@ -21,8 +23,6 @@ description: You can explore the isDataLoaded method of DataCollection in the do
 component.data.isDataLoaded();
 
 @descr:
-
-{{pronote This functionality is available in the PRO edition only.}}
 
 @changelog: added in v6.4
 

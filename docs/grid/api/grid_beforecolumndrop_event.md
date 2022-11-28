@@ -6,6 +6,8 @@ description: You can explore the beforeColumnDrop event of Grid in the documenta
 
 # beforeColumnDrop
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
 @signature: {'beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
@@ -26,8 +28,6 @@ grid.events.on("beforeColumnDrop", function(data, events){
 @descr:
 
 **Related sample**: [Grid. Columns drag'n'drop](https://snippet.dhtmlx.com/dfdlzpqb)
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 
