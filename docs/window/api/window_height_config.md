@@ -13,7 +13,7 @@ description: You can explore the height config of Window in the documentation of
 @default: 50% of the browser window's height
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     height:250
 });
 

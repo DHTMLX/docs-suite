@@ -11,7 +11,7 @@ description: You can explore the left config of Window in the documentation of t
 @signature: {'left?: number;'}
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     left:250
 });
 

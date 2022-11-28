@@ -31,7 +31,7 @@ tree.selection.disable();
 To select a particular Tree item, make use of the **add()** method of the **selection** object. As a parameter the method takes the id of an item. 
 
 ~~~js
-var id = tree.selection.getId(); // -> "2"
+const id = tree.selection.getId(); // -> "2"
 tree.selection.add("2");
 ~~~
 
@@ -54,7 +54,7 @@ tree.selection.remove();
 You can get the id of the currently selected item with the **getId()** method of the **selection** object:
 
 ~~~js
-var selected = tree.selection.getId(); // -> "2"
+const selected = tree.selection.getId(); // -> "2"
 ~~~
 
 ## Getting object of a selected item
@@ -62,5 +62,5 @@ var selected = tree.selection.getId(); // -> "2"
 It is also possible to get the object of a selected item using the **getItem()** method of the **selection** object:
 
 ~~~js
-var item = tree.selection.getItem();
+const item = tree.selection.getItem();
 ~~~

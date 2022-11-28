@@ -17,6 +17,6 @@ description: You can explore the getItem method of TreeCollection in the documen
 An item object.
 
 @example:
-var add_btn = toolbar.data.getItem("add_btn");
+const add_btn = toolbar.data.getItem("add_btn");
 
 @descr:

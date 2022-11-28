@@ -15,8 +15,8 @@ description: You can explore the setCell method of TreeGrid in the documentation
 - `col: object` - the config of a column
 
 @example:
-var row = treegrid.data.getItem(treegrid.data.getId(0));
-var column = treegrid.getColumn("population");
+const row = treegrid.data.getItem(treegrid.data.getId(0));
+const column = treegrid.getColumn("population");
 treegrid.selection.setCell(row, column);
 
 @descr:

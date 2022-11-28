@@ -41,7 +41,7 @@ dhxWindowObj.attachHTML("<input id='"myInput"'></input>");
 
 dhxWindowObj.events.on("afterShow", function(id){ 
     dhx.awaitRedraw().then(() => {
-        var el = document.getElementById("myInput");
+        const el = document.getElementById("myInput");
         el.focus();
     })                      
 });

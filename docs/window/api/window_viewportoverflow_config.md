@@ -13,7 +13,7 @@ description: You can explore the viewportOverflow config of Window in the docume
 @default: false
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     viewportOverflow:true
 });
 

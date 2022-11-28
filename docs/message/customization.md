@@ -49,7 +49,7 @@ For example:
 </style>
 
 dhx.message({
-  text: "Here is dhtmlxMessage",
+  text: "Here is DHTMLX Message",
   icon: "dxi dxi-close",
   css: "custom-class"
 });

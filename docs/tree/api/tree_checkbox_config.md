@@ -11,7 +11,7 @@ description: You can explore the checkbox config of Tree in the documentation of
 @signature: {'checkbox?: boolean;'}
 
 @example:
-var tree = new dhx.Tree("tree_container", {checkbox: true});
+const tree = new dhx.Tree("tree_container", {checkbox: true});
 
 @descr:
 

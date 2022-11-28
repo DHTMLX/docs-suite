@@ -13,7 +13,7 @@ The range mode of slider presupposes the usage of two thumbs for selecting the s
 To enable the range mode, you need to set the [](slider/api/slider_range_config.md) property to *true* and specify an array of two values - min and max values of the range:
 
 ~~~js {5-6}
-var slider = new dhx.Slider("slider", {
+const slider = new dhx.Slider("slider_container", {
 	min: 0,
 	max: 100,
 	step: 1,

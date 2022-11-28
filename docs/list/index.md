@@ -6,8 +6,8 @@ description: You can have an overview of List in the documentation of the DHTMLX
 
 # List overview
 
-dhtmlxList is a client-side JavaScript component that displays a collection of objects in a list according to a user-defined template.
-It allows you to arrange multiple objects with similar properties within a single container and make your data organized. Check [online samples for dhtmlxList](https://snippet.dhtmlx.com/all?tag=list). 
+DHTMLX List is a client-side JavaScript component that displays a collection of objects in a list according to a user-defined template.
+It allows you to arrange multiple objects with similar properties within a single container and make your data organized. Check [online samples for DHTMLX List](https://snippet.dhtmlx.com/all?tag=list). 
 
 ![](../assets/list/list_front.png)
 
@@ -23,8 +23,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Li
 
 ## Related resources
 
-- You can get dhtmlxList as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxList](https://snippet.dhtmlx.com/all?tag=list)
+- You can get DHTMLX List as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- There are also [online samples for DHTMLX List](https://snippet.dhtmlx.com/all?tag=list)
 - To work with data of List check [DataCollection API](data_collection.md)
 
 ## Guides

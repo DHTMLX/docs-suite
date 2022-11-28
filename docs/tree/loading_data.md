@@ -6,7 +6,7 @@ description: You can explore the data loading of Tree in the documentation of th
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxTree:
+There are several simple ways of loading data into DHTMLX Tree:
 
 - on initialization of Tree
 - after initialization of Tree
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into Tree.
 
 ## Preparing data set
 
-dhtmlxTree expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Tree expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [
@@ -133,7 +133,7 @@ There are two ways to load data into Sidebar after its initialization:
 To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var tree = new dhx.Tree("tree_container");
+const tree = new dhx.Tree("tree_container");
 tree.data.parse(dataset);
 ~~~
 
@@ -144,7 +144,7 @@ tree.data.parse(dataset);
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
 ~~~js
-var tree = new dhx.Tree("tree_container");
+const tree = new dhx.Tree("tree_container");
 tree.data.load("../common/dataset.json");
 ~~~
 
@@ -167,14 +167,14 @@ To save the current state of a tree, use the **serialize** method of Tree Collec
 Each JSON object contains the configuration of a separate row.
 
 ~~~js
-var state = tree1.data.serialize();
+const state = tree1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different tree. For example:
 
 ~~~js
 // creating a new Tree
-var tree2 = new dhx.Tree(document.body);
+const tree2 = new dhx.Tree("tree_container2");
 // parsing the state of tree1 into tree2
 tree2.data.parse(state);
 ~~~

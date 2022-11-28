@@ -14,6 +14,6 @@ description: You can explore the getFocusItem method of List in the documentatio
 The object of an item in focus.
 
 @example:
-var focus = list.getFocusItem();
+const focus = list.getFocusItem();
 
 @descr:

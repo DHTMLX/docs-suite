@@ -17,7 +17,7 @@ dhtmlxContextMenu is a component that provides an easy way to add a contextual m
 You can initialize dhtmlxContextMenu with the constructor:
 
 ~~~js
-var cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
+const cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 ~~~
 
 It takes two parameters:
@@ -27,10 +27,10 @@ It takes two parameters:
 
 ## Loading menu options
 
-Like with dhtmlxMenu, options can be either parsed from a JSON array:
+Like with DHTMLX Menu, options can be either parsed from a JSON array:
 
 ~~~js
-var data = [
+const data = [
     { value: "File", 
         items: [
             { value: "New File", icon: "dxi dxi-file-outline"},                      
@@ -86,7 +86,7 @@ This is how you can attach dhtmlxContextMenu to an HTML element:
 ~~~
 
 ~~~js
-var cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
+const cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 
 document.querySelector('#menu').oncontextmenu = function(e) {    
     e.preventDefault();
@@ -101,7 +101,7 @@ document.querySelector('#menu').oncontextmenu = function(e) {
 This is how you can attach dhtmlxContextMenu to a mouse event:
 
 ~~~js
-var cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
+const cmenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 
 document.querySelector('#menu').oncontextmenu = function(e) {   
     e.preventDefault();

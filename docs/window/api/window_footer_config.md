@@ -11,7 +11,7 @@ description: You can explore the footer config of Window in the documentation of
 @signature: {'footer?: boolean;'}
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     footer: true
 });
 

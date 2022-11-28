@@ -11,7 +11,7 @@ description: You can explore the tickTemplate config of Slider in the documentat
 @signature: {'tickTemplate?: (position: number) => string;'}
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
 	// v is the value of majorTick
     tickTemplate: function(v){
         return v + "°";

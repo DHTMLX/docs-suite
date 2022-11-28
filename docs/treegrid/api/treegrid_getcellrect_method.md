@@ -18,7 +18,7 @@ description: You can explore the getCellRect method of TreeGrid in the documenta
 An object with parameters of a cell.
 
 @example:
-var rect = grid.getCellRect("1","c");
+const rect = treegrid.getCellRect("1","c");
 // -> {x: 200, y: -40, height: 40, width: 200}
 
 @descr:

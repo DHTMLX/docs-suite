@@ -13,7 +13,7 @@ description: You can explore the selection config of List in the documentation o
 @default: true
 
 @example:
-var list = new dhx.List("list_container", {selection:false});
+const list = new dhx.List("list_container", {selection:false});
 
 @descr:
 

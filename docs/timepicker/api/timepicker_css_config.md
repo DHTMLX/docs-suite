@@ -17,7 +17,7 @@ description: You can explore the css config of Timepicker in the documentation o
 	}
 </style>
 
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	css: "dhx_timepicker--bordered bg-grey"
 });
 
@@ -28,7 +28,7 @@ var timepicker = new dhx.Timepicker("timepicker", {
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of TimePicker:
 
 ~~~js
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	css: "dhx_widget--bg-gray"
 });
 ~~~

@@ -6,7 +6,7 @@ description: You can explore the data loading of Ribbon in the documentation of 
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxRibbon:
+There are several simple ways of loading data into DHTMLX Ribbon:
 
 - on initialization of Ribbon
 - after initialization of Ribbon
@@ -15,10 +15,10 @@ First, you need to prepare a data set that will be loaded into Ribbon.
 
 ## Preparing data set
 
-dhtmlxRibbon expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Ribbon expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var data = [
+const data = [
 	{
     	type: "block",
     	items: [
@@ -106,14 +106,14 @@ To save the current state of a ribbon, use the **serialize()** method of Tree Co
 Each JSON object contains the configuration of a separate Ribbon control.
 
 ~~~js
-var state = ribbon1.data.serialize();
+const state = ribbon1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different ribbon. For example:
 
 ~~~js
 // creating a new ribbon
-var ribbon2 = new dhx.Ribbon(document.body);
+const ribbon2 = new dhx.Ribbon("ribbon_container2");
 // parsing the state of ribbon1 into ribbon2
 ribbon2.data.parse(state);
 ~~~

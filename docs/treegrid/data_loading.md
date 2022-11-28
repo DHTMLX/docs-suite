@@ -6,7 +6,7 @@ description: You can explore the data loading of TreeGrid in the documentation o
 
 # Data loading
 
-There are several simple ways of loading data into dhtmlxTreeGrid:
+There are several simple ways of loading data into DHTMLX TreeGrid:
 
 - on initialization of TreeGrid
 - after initialization of TreeGrid
@@ -15,7 +15,7 @@ First, you need to prepare a data set that will be loaded into TreeGrid.
 
 ## Preparing data set
 
-dhtmlxTreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX TreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [
@@ -62,7 +62,7 @@ Each object in the data set contains configuration of a grid row. The structure 
 You can specify data you want to load into TreeGrid on the initialization stage. Make use of the [data](treegrid/api/treegrid_data_config.md) configuration property, as in:
 
 ~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
     ],
@@ -84,7 +84,11 @@ There are two ways to load data into TreeGrid after its initialization:
 To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ]
+});
 treegrid.data.parse(dataset);
 ~~~
 
@@ -95,7 +99,11 @@ treegrid.data.parse(dataset);
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
 ~~~js
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ]
+});
 treegrid.data.load("../common/dataset.json");
 ~~~
 
@@ -117,14 +125,14 @@ To save the current state of a treegrid, use the **serialize** method of Tree Co
 Each JSON object contains the configuration of a separate row.
 
 ~~~js
-var state = treegrid1.data.serialize();
+const state = treegrid1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different treegrid. For example:
 
 ~~~js
 // creating a new treegrid
-var treegrid2 = new dhx.TreeGrid(document.body);
+const treegrid2 = new dhx.TreeGrid("treegrid_container2");
 // parsing the state of treegrid1 into treegrid2
 treegrid2.data.parse(state);
 ~~~

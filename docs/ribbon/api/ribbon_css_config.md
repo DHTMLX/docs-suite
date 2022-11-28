@@ -21,7 +21,7 @@ description: You can explore the css config of Ribbon in the documentation of th
     }
 </style>
 
-var ribbon = new dhx.Ribbon({
+const ribbon = new dhx.Ribbon("ribbon_container", {
     css:"my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var ribbon = new dhx.Ribbon({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Ribbon.
 
 ~~~js
-var ribbon = new dhx.Ribbon({
+const ribbon = new dhx.Ribbon("ribbon_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

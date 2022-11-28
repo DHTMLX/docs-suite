@@ -11,7 +11,7 @@ description: You can explore the tabAutoWidth config of Tabbar in the documentat
 @signature: {'tabAutoWidth?: boolean;'}
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     views:[
         { tab: "left", css:"panel flex", header:"Left"},
         { tab: "west", css:"panel flex", header:"West"},

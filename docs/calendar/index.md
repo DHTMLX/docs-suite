@@ -23,7 +23,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ca
 ## Related resources
 
 - To get just DHTMLX Calendar, download it from [our website](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml)
-- To get the whole JavaScript library of UI components [download dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- To get the whole JavaScript library of UI components [download DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 - There are also [online samples for DHTMLX Calendar](https://snippet.dhtmlx.com/all?tag=calendar)  
   
 ## Guides

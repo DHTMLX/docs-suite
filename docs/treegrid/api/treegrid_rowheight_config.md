@@ -13,7 +13,7 @@ description: You can explore the rowHeight config of TreeGrid in the documentati
 @default: 40
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

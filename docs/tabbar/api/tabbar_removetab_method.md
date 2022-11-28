@@ -14,7 +14,7 @@ description: You can explore the removeTab method of Tabbar in the documentation
 `id: string` - the id of a tab to remove
 
 @example:
-var id = tabbar.getId(0);
+const id = tabbar.getId(0);
 tabbar.removeTab(id);
 
 @descr:

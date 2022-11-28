@@ -17,6 +17,6 @@ description: You can explore the getItems method of TreeCollection in the docume
 The child items of the control.
 
 @example:
-var items = toolbar.data.getItems("menu1");
+const items = toolbar.data.getItems("menu1");
 
 @descr:

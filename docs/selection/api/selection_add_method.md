@@ -14,7 +14,7 @@ description: You can explore the add method of Selection in the documentation of
 `id: string | number` - the id of an item
 
 @example:
-var id = component.selection.getId(); // -> "2"
+const id = component.selection.getId(); // -> "2"
 component.selection.add("2");
 
 @descr:

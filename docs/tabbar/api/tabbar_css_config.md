@@ -21,7 +21,7 @@ description: You can explore the css config of Tabbar in the documentation of th
     }
 </style>
 
-var tabbar = new dhx.Tabbar({
+const tabbar = new dhx.Tabbar("tabbar_container", {
     css: "my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var tabbar = new dhx.Tabbar({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Tabbar:
 
 ~~~js
-var tabbar = new dhx.Tabbar({
+const tabbar = new dhx.Tabbar("tabbar_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

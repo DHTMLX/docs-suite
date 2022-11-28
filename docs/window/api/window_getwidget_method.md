@@ -14,7 +14,7 @@ description: You can explore the getWidget method of Window in the documentation
 The widget attached to Window
 
 @example:
-var window = dhxWindow.getWidget(); 
+const window = dhxWindow.getWidget(); 
 
 @descr:
 

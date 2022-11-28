@@ -15,10 +15,10 @@ First, you need to prepare a data set that will be loaded into List.
 
 ## Preparing data set
 
-dhtmlxList expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX List expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var dataset = [
+const dataset = [
 	{"value": "1st item", "id": "1"},
     {"value": "2nd item", "id": "2"},
     {"value": "3rd item", "id": "3"},
@@ -34,7 +34,7 @@ You can specify your own template of rendering List items with the help of the [
 You can load a [predefined data set](#preparing-data-set) into List on the initialization stage. Use the [data](list/api/list_data_config.md) configuration property, as in:
 
 ~~~js
-const list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
     css: "dhx_widget--bordered",
     template: template,
     itemHeight: 72,
@@ -56,7 +56,7 @@ There are two ways to load data into Grid after its initialization:
 To load data from an external file, make use of the **load()** method of [DataCollection](data_collection.md). It takes the URL of the file with data as a parameter:
 
 ~~~js
-var list = new dhx.List("list_container", {
+const list = new dhx.List("list_container", {
     template: template,
     itemHeight: 72
 });
@@ -80,7 +80,7 @@ list.data.load("/some/data").then(function(){
 To load data from a local data source, use the **parse()** method of [DataCollection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~js
-var list = new dhx.List("list_container", {
+const list = new dhx.List("list_container", {
     template: template,
     itemHeight: 72
 });
@@ -95,14 +95,14 @@ To save the current state of a list, use the **serialize()** method of [DataColl
 Each JSON object contains a set of *key:value* pairs that represent attributes of List items.
 
 ~~~js
-var state = list1.data.serialize();
+const state = list1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different list. For example:
 
 ~~~js
 // creating a new list
-var list2 = new dhx.List(document.body);
+const list2 = new dhx.List("list_container2");
 // parsing the state of list1 into list2
 list2.data.parse(state);
 ~~~
@@ -129,7 +129,7 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 - load data into List via the **load** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
 ~~~js
-var list = new dhx.list("list_container", {
+const list = new dhx.list("list_container", {
     virtual: true
 });
 list.data.load(lazyDataProxy);

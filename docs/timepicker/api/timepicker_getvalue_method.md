@@ -18,16 +18,16 @@ Either an object or a string with the value of a timepicker.
 
 @example:
 // return value as a string in the 24-hour format
-var val1 = timepicker.getValue(); // -> "00:39" 
+const val1 = timepicker.getValue(); // -> "00:39" 
 
 // return value as an object in the 24-hour format
-var val2 = timepicker.getValue(true);// -> {hour: 0, minute: 39}
+const val2 = timepicker.getValue(true);// -> {hour: 0, minute: 39}
 
 // return value as a string in the 12-hour format
-var val3 = timepicker2.getValue(); // -> "06:00AM"
+const val3 = timepicker2.getValue(); // -> "06:00AM"
 
 // return value as an object in the 12-hour format
-var val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
+const val4 = timepicker2.getValue(true); // -> {hour: 6, minute: 0, AM: true}
 
 @descr:
 

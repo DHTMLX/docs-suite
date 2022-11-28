@@ -14,7 +14,7 @@ description: You can explore the getPosition method of Window in the documentati
 An object with left and top coordinates of a window.
 
 @example:
-var position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
+const position = dhxWindow.getPosition(); // -> {left: 480, top: 234}
 
 @descr:
 

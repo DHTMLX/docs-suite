@@ -17,7 +17,7 @@ description: You can explore the exists method of DataCollection in the document
 `true`, if the item exists; otherwise, `false`.
 
 @example:
-var item = component.data.exists("1"); 
+const item = component.data.exists("1"); 
 
 @descr:
 

@@ -14,7 +14,7 @@ description: You can explore the getState method of Ribbon in the documentation 
 An object with IDs of controls and their values/states.
 
 @example:
-var state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"right"}
+const state = ribbon.getState(); // -> {"search":"Hello","edit":true,"align":"right"}
 
 @descr:
 

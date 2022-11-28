@@ -12,27 +12,27 @@ description: You can explore the value config of Timepicker in the documentation
 
 @example:
 // the value as a Date object 
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: new Date()
 });
 
 // the value as a number
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: 1232151545
 });
 
 // the value as a string
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: "22:30"
 });
 
 // the value as an array
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: [6,20,"AM"]
 });
 
 // the value as an object
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: {hour: 10, minute: 50, AM: true}
 });
 

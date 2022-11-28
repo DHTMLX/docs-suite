@@ -11,7 +11,7 @@ description: You can explore the dragMode config of TreeGrid in the documentatio
 @signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", { 
+const treegrid = new dhx.TreeGrid("treegrid_container", { 
     dragMode:"source"
 });
 

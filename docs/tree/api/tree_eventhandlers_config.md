@@ -11,7 +11,7 @@ description: You can explore the eventHandlers config of Tree in the documentati
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ITree) => void | boolean; };};'}
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
             <div class="dhx_tree_template">

@@ -10,7 +10,7 @@ description: You can explore the initialization of Ribbon in the documentation o
 [Download the DHTMLX Ribbon package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To add dhtmlxRibbon into an application, you need to take the following simple steps:
+To add DHTMLX Ribbon into an application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -21,15 +21,15 @@ To add dhtmlxRibbon into an application, you need to take the following simple s
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxRibbon</title>         
+        <title>How to Start with DHTMLX Ribbon</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
         <div id="ribbon_container"></div>
         <script>
-            // creating dhtmlxRibbon
-            var ribbon = new dhx.Ribbon("ribbon_container");
+            // creating DHTMLX Ribbon
+            const ribbon = new dhx.Ribbon("ribbon_container");
         </script>
     </body>
 </html>
@@ -65,7 +65,7 @@ Initialize Ribbon with the `dhx.Ribbon` object constructor. The constructor take
 - an object with configuration properties
 
 ~~~js
-var ribbon = new dhx.Ribbon("ribbon_container", {
+const ribbon = new dhx.Ribbon("ribbon_container", {
     // config options
 });
 ~~~

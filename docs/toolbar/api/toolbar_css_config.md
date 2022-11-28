@@ -21,7 +21,7 @@ description: You can explore the css config of Toolbar in the documentation of t
     }
 </style>
 
-var toolbar = new dhx.Toolbar({
+const toolbar = new dhx.Toolbar("toolbar_container", {
     css: "my_first_class my_second_class"
 });
 
@@ -30,7 +30,7 @@ var toolbar = new dhx.Toolbar({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Toolbar:
 
 ~~~js
-var toolbar = new dhx.Toolbar("toolbar", {
+const toolbar = new dhx.Toolbar("toolbar_container", {
 	css: "dhx_widget--bg-gray"
 });
 ~~~

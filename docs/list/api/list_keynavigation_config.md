@@ -11,7 +11,7 @@ description: You can explore the keyNavigation config of List in the documentati
 @signature: {'keyNavigation?: boolean | (() => boolean);'}
 
 @example:
-var list = new dhx.List("list", {keyNavigation:true});
+const list = new dhx.List("list_container", {keyNavigation:true});
 
 @descr:
 

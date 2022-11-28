@@ -13,7 +13,7 @@ description: You can explore the width config of Sidebar in the documentation of
 @default: "200"
 
 @example:
-var sidebar = new dhx.Sidebar(document.body, {
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css: "dhx_widget--border_right",
     width:450
 });

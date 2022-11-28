@@ -17,7 +17,7 @@ description: You can explore the serialize method of DataCollection in the docum
 Returns serialized data for each item of the component either as an array of JSON objects or as a CSV/XML string. 
 
 @example:
-var data = component.data.serialize("csv");
+const data = component.data.serialize("csv");
 
 @descr:
 

@@ -14,7 +14,7 @@ description: You can explore the getId method of Selection in the documentation 
 The id of a selected item.
 
 @example:
-var id = component.selection.getId(); // -> "2"
+const id = component.selection.getId(); // -> "2"
 
 @descr:
 

@@ -21,7 +21,7 @@ description: You can explore the menuCss config of Menu in the documentation of 
     }
 </style>
 
-var menu = new dhx.Menu({
+const menu = new dhx.Menu("menu_container", {
     menuCss:"my_first_class my_second_class"
 });
 

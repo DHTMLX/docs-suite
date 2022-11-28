@@ -6,9 +6,9 @@ description: You can have an overview of Window in the documentation of the DHTM
 
 # Window overview
 
-dhtmlxWindow allows working with several windows and their content at the same time. The component provides means for performing standard operations with windows, 
+DHTMLX Window allows working with several windows and their content at the same time. The component provides means for performing standard operations with windows, 
 such as moving/resizing a window, sending a window to the foreground/background, making a window modal, changing position and size of a window, setting content inside a window, etc.
-Check [online samples for dhtmlxWindow](https://snippet.dhtmlx.com/all?tag=window).
+Check [online samples for DHTMLX Window](https://snippet.dhtmlx.com/all?tag=window).
 
 ![](../assets/window/window_front.png)
 
@@ -24,8 +24,8 @@ You can check the following page to learn how to build a full-featured DHTMLX Wi
 
 ## Related resources
 
-- You can get dhtmlxWindow as a part of the Suite library by [downloading dhtmlxSuite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for dhtmlxWindow](https://snippet.dhtmlx.com/all?tag=window)
+- You can get DHTMLX Window as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
+- There are also [online samples for DHTMLX Window](https://snippet.dhtmlx.com/all?tag=window)
 
 ## Guides
 

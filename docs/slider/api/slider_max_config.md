@@ -13,7 +13,7 @@ description: You can explore the max config of Slider in the documentation of th
 @default: 100
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     max:200
 });
 

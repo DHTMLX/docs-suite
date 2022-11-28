@@ -11,7 +11,7 @@ description: You can explore the value config of Slider in the documentation of 
 @signature: {'value?: number[] | number | string;'}
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     value:20
 });
 

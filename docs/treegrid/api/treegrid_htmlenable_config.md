@@ -11,7 +11,7 @@ description: You can explore the htmlEnable config of TreeGrid in the documentat
 @signature: {'htmlEnable?: boolean;'}
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
     ],

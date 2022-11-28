@@ -31,7 +31,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](pagination/api/pagination_css_config.md) property in the Pagination configuration:
 
 ~~~js
-var pagination = new dhx.Pagination("pagination_container",{
+const pagination = new dhx.Pagination("pagination_container",{
 	css:"my_first_class my_second_class"    
 });
 ~~~

@@ -11,7 +11,7 @@ description: You can explore the keyNavigation config of Tree in the documentati
 @signature: {'keyNavigation?: boolean;'}
 
 @example:
-var tree = new dhx.Tree("tree_container", {keyNavigation: true});
+const tree = new dhx.Tree("tree_container", {keyNavigation: true});
 
 @descr:
 

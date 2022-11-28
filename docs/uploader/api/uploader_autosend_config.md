@@ -13,7 +13,7 @@ description: You can explore the autosend config of Uploader in the documentatio
 @default: false
 
 @example:
-var vault = new dhx.Vault("vault_container", { 
+const vault = new dhx.Vault("vault_container", { 
     uploader:{
     	// obligatory, the path for upload
     	target:"/upload"

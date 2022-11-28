@@ -142,5 +142,5 @@ The current state of a two state item can be checked with the [getState()](toolb
 	id:"bold"
 }
 ...
-var state = toolbar.getState(); // -> { bold:true } or { bold:false }
+const state = toolbar.getState(); // -> { bold:true } or { bold:false }
 ~~~

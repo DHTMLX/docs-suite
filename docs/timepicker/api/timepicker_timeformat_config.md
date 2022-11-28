@@ -13,7 +13,7 @@ description: You can explore the timeFormat config of Timepicker in the document
 @default: 24
 
 @example:
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	timeFormat: 12
 });
 

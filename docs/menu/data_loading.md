@@ -6,7 +6,7 @@ description: You can explore the data loading of Menu in the documentation of th
 
 # Data loading
 
-There are several simple ways of loading options into dhtmlxMenu:
+There are several simple ways of loading options into DHTMLX Menu:
 
 - on initialization of Menu
 - after initialization of Menu
@@ -15,10 +15,10 @@ First, you need to prepare a data set that will be loaded into Menu.
 
 ## Preparing data set
 
-dhtmlxMenu expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Menu expects loaded data in the JSON format. Here is an example of an appropriate data set:
 
 ~~~js
-var data = [
+const data = [
 	{ 
 		value: "File", 
 		items: [
@@ -109,14 +109,14 @@ menu.data.parse(data);
 To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. Each JSON object contains the configuration of a separate Menu item.
 
 ~~~js
-var state = menu1.data.serialize();
+const state = menu1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different menu. For example:
 
 ~~~js
 // creating a new menu
-var menu2 = new dhx.Menu(document.body);
+const menu2 = new dhx.Menu(document.body);
 // parsing the state of menu1 into menu2
 menu2.data.parse(state);
 ~~~

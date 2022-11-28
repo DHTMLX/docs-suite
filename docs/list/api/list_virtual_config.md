@@ -13,7 +13,7 @@ description: You can explore the virtual config of List in the documentation of 
 @default: false
 
 @example:
-var list = new dhx.List("list_container", {
+const list = new dhx.List("list_container", {
 	virtual: true
 });
 

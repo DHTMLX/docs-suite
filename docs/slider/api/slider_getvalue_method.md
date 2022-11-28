@@ -14,10 +14,10 @@ description: You can explore the getValue method of Slider in the documentation 
 An array with the current value of the slider.
 
 @example:
-var value = slider.getValue(); // -> [20]
+const value = slider.getValue(); // -> [20]
 
 // for a range slider as an array
-var value = slider.getValue(); // -> [20,50]
+const value = slider.getValue(); // -> [20,50]
 
 @descr:
 

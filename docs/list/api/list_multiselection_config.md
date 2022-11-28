@@ -11,7 +11,7 @@ description: You can explore the multiselection config of List in the documentat
 @signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 
 @example:
-var list = new dhx.List("list", {multiselection:true});
+const list = new dhx.List("list_container", {multiselection:true});
 
 @descr:
 
