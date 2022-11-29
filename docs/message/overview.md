@@ -6,7 +6,7 @@ description: You can explore the Message Boxes of Message in the documentation o
 
 # Overview of Message boxes
 
-dhtmlxMessage component provides a set of helper message boxes: message, alert, confirm, and the tooltip component. Message boxes are easily configurable, so that you can achieve the best look and feel for 
+DHTMLX Message component provides a set of helper message boxes: message, alert, confirm, and the tooltip component. Message boxes are easily configurable, so that you can achieve the best look and feel for 
 interaction with the users of your app or web-site.
 
 ## Message

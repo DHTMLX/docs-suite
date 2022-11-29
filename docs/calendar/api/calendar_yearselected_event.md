@@ -11,7 +11,7 @@ description: You can explore the yearSelected event of Calendar in the documenta
 @signature: {'yearSelected: (year: number) => void;'}
 
 @params:
-`year: number` - the number of the selected year
+- `year: number` - the number of the selected year
 
 @example:
 calendar.events.on("yearSelected", function(year) {

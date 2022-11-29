@@ -11,7 +11,7 @@ description: You can explore the itemHeight config of Tree in the documentation 
 @signature: itemHeight?: number | string;
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     itemHeight: 30,
 });
 @examplestop:

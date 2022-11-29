@@ -11,7 +11,7 @@ description: You can explore the resize event of Chart in the documentation of t
 @signature: {'resize: (width: number, height: number) => void;'}
 
 @params:
-`size: object` - an object with new chart size
+- `size: object` - an object with new chart size
 
 @example:
 chart.events.on("resize", function({width:500, height:500}){

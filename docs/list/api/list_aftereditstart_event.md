@@ -11,7 +11,7 @@ description: You can explore the afterEditStart event of List in the documentati
 @signature: {'afterEditStart: (id: string | number) => void;'}
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 list.events.on("afterEditStart", function(id){

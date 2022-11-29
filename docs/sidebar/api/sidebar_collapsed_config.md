@@ -11,7 +11,7 @@ description: You can explore the collapsed config of Sidebar in the documentatio
 @signature: {'collapsed?: boolean;'}
 
 @example:
-var sidebar = new dhx.Sidebar(document.body, {
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css: "dhx_widget--border_right",
     collapsed: true
 });

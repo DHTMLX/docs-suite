@@ -31,7 +31,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](slider/api/slider_css_config.md) property in the Slider configuration:
 
 ~~~js
-var slider = new dhx.Slider({
+const slider = new dhx.Slider("slider_container", {
     css:"my_first_class my_second-class"
 });
 ~~~

@@ -13,7 +13,7 @@ description: You can explore the footerRowHeight config of TreeGrid in the docum
 @default: 40
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

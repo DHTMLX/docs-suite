@@ -11,13 +11,13 @@ description: You can explore the getColumn method of TreeGrid in the documentati
 @signature: {'getColumn(colId: Id): ICol;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @returns:
 An object with attributes of a column.
 
 @example:
-var column = grid.getColumn("b"); // ->
+const column = treegrid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
 
 @descr:

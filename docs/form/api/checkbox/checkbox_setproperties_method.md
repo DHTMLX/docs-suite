@@ -11,7 +11,7 @@ description: You can explore the setProperties method of the Checkbox control of
 @signature: {'setProperties(propertyConfig: ICheckboxProps): void;'}
 
 @params:
-`propertyConfig: object` - an object with the available attributes of the control and their new values
+- `propertyConfig: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("checkbox").setProperties({

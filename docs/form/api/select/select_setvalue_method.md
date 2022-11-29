@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Select control of Form i
 @signature: {'setValue(value: string | number): void;'}
 
 @params:
-`value: string | number` - the value to be set  
+- `value: string | number` - the value to be set  
 
 @example:
 form.getItem("select").setValue("2");

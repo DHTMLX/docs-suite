@@ -11,7 +11,7 @@ description: You can explore the dragItem config of TreeGrid in the documentatio
 @signature: {' dragItem?: "column", "row", "both";'}
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
     ],

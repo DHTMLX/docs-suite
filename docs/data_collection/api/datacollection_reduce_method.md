@@ -19,7 +19,7 @@ description: You can explore the reduce method of DataCollection in the document
 A single output value.
 
 @example:
-var total = component.data.reduce(function(new_item, item) {
+const total = component.data.reduce(function(new_item, item) {
     return new_item + item.value;
 }, 0);
 

@@ -11,7 +11,7 @@ description: You can explore the haveItems method of TreeCollection in the docum
 @signature: {'haveItems(id: Id): boolean;'}
 
 @params:
-`id: string` - the ID of a control
+- `id: string` - the ID of a control
 
 @returns:
 `true`, if the control has children; otherwise, `false`.

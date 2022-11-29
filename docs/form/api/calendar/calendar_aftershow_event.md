@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Datepicker control of Fo
 @signature: {'afterShow: (value: string | Date) => void;'} 
 
 @params:
-`value: string | Date` - the current value of the control
+- `value: string | Date` - the current value of the control
 
 @example:
 form.getItem("datepicker").events.on("afterShow", function(value) {

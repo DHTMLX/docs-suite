@@ -11,7 +11,7 @@ description: You can explore the hideRow method of Grid in the documentation of 
 @signature: {'hideRow(rowId: Id): void;'}
 
 @params:
-`rowId: string | number` - the id of a row
+- `rowId: string | number` - the id of a row
 
 @example:
 grid.hideRow(rowId);

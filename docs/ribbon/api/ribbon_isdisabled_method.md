@@ -11,7 +11,7 @@ description: You can explore the isDisabled method of Ribbon in the documentatio
 @signature: {'isDisabled(id: Id): boolean;'}
 
 @params:
-`id: string | number` - an id of the Ribbon item
+- `id: string | number` - an id of the Ribbon item
 
 @returns:
 `true`, if an item of Ribbon is disabled; otherwise, `false`.

@@ -11,7 +11,7 @@ description: You can explore the beforeRowHide event of TreeGrid in the document
 @signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
 
 @params:
-`row: object` - an object with a row configuration
+- `row: object` - an object with a row configuration
 
 @returns:
 Return `false` to prevent a row from being hidden; otherwise, `true`.

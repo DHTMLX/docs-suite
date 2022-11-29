@@ -11,7 +11,7 @@ description: You can explore the inverse config of Slider in the documentation o
 @signature: {'inverse?: boolean;'}
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     inverse:true
 });
 

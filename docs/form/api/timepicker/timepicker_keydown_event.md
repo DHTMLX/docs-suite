@@ -11,7 +11,7 @@ description: You can explore the keydown event of the Timepicker control of Form
 @signature: keydown: (event: KeyboardEvent) => void;
 
 @params:
-`event: KeyboardEvent` - a native KeyboardEvent object
+- `event: KeyboardEvent` - a native KeyboardEvent object
 
 @example:
 form.getItem("timepicker").events.on("keydown", function(event) {

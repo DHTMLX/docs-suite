@@ -11,7 +11,7 @@ description: You can explore the beforeApply event of Timepicker in the document
 @signature: {'beforeApply: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-`value: string | object` - the value of a timepicker
+- `value: string | object` - the value of a timepicker
 
 @returns:
 Return `false` to prevent saving the timepicker value; otherwise, `true`.

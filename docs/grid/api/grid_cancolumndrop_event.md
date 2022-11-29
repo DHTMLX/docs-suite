@@ -6,6 +6,8 @@ description: You can explore the canColumnDrop event of Grid in the documentatio
 
 # canColumnDrop
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires when a dragged column is placed over a target column
 
 @signature: {'canColumnDrop: (data: IDragInfo, events: MouseEvent) => void;'}
@@ -20,8 +22,6 @@ grid.events.on("canColumnDrop", function(data, events) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 

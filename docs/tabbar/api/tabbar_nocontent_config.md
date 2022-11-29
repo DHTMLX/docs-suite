@@ -13,7 +13,7 @@ description: You can explore the noContent config of Tabbar in the documentation
 @default: false
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     noContent:true
 });
 

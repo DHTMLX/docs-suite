@@ -12,10 +12,10 @@ description: You can explore the height config of List in the documentation of t
 
 @example:
 // sets the height as a number
-var list = new dhx.List("list", {height: 700});
+const list = new dhx.List("list_container", {height: 700});
 
 // sets the height as a string value
-var list = new dhx.List("list", {height: "700px"});
+const list = new dhx.List("list_container", {height: "700px"});
 
 @descr:
 

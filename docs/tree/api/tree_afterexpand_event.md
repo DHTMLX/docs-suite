@@ -11,7 +11,7 @@ description: You can explore the afterExpand event of Tree in the documentation 
 @signature: {'afterExpand: (id: Id) => void;'}
 
 @params:
-`id: string | number` - the id of an expanded item
+- `id: string | number` - the id of an expanded item
 
 @example:
 tree.events.on("afterExpand", function(id) {

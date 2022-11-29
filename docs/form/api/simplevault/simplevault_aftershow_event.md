@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Simple Vault control of 
 @signature: {'afterShow: (value: ISimpleVaultValue[]) => void;'}
 
 @params:
-`value: array` - the current value of the control
+- `value: array` - the current value of the control
 
 @example:
 form.getItem("simplevault").events.on("afterShow", function(value) {

@@ -11,7 +11,7 @@ description: You can explore the template config of List in the documentation of
 @signature: {'template?: (obj: IDataItem) => string;'}
 
 @example:
-var list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
 	template: function(item) {
 		return "<strong>!!!</strong>" + item.value;
 	}

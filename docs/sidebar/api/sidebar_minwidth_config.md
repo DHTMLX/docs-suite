@@ -13,7 +13,7 @@ description: You can explore the minWidth config of Sidebar in the documentation
 @default: "44"
 
 @example:
-var sidebar = new dhx.Sidebar(document.body, {
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css: "dhx_widget--border_right",
     minWidth: 80,
     collapsed: true

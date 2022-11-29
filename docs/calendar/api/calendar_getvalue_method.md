@@ -11,7 +11,7 @@ description: You can explore the getValue method of Calendar in the documentatio
 @signature: {'getValue(asDatObj?: boolean): Date | Date[] | string | string[];'}
 
 @params:
-`asDatObj: boolean` - defines whether a date will be returned as a Date object
+- `asDatObj: boolean` - defines whether a date will be returned as a Date object
 
 @returns:
 The selected date.

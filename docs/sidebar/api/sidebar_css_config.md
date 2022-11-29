@@ -21,7 +21,7 @@ description: You can explore the css config of Sidebar in the documentation of t
     }
 </style>
 
-var sidebar = new dhx.Sidebar({
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css:"my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var sidebar = new dhx.Sidebar({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Sidebar:
 
 ~~~js
-var sidebar = new dhx.Sidebar({
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

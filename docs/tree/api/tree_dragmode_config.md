@@ -11,7 +11,7 @@ description: You can explore the dragMode config of Tree in the documentation of
 @signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
-var tree = new dhx.Tree("tree_container", { 
+const tree = new dhx.Tree("tree_container", { 
     dragMode:"source"
 });
 

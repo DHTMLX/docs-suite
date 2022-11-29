@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Container control of For
 @signature: afterShow: (value: undefined) => void;
 
 @params:
-`value: undefined` - the current value of the control, null
+- `value: undefined` - the current value of the control, null
 
 @example:
 form.getItem("container").events.on("afterShow", function(text) {

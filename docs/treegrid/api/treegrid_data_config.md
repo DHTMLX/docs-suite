@@ -11,7 +11,7 @@ description: You can explore the data config of TreeGrid in the documentation of
 @signature: {'data?: any[];'}
 
 @example:
-var dataset = [
+const dataset = [
 	{
     	"name": "Argentina",
         "native": "Argentina",
@@ -29,7 +29,7 @@ var dataset = [
     // more columns
 ];
 
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
         // columns config
     ],
@@ -43,7 +43,7 @@ var treegrid = new dhx.TreeGrid("treegrid_container", {
 1\. Starting with v7.1, you can specify the height of the cell via setting the number value to the **height** option when defining the data set: 
 
 ~~~js {8}
-var dataset = [
+const dataset = [
 	{
     	"name": "Argentina",
         "native": "Argentina",
@@ -69,7 +69,7 @@ var dataset = [
 2\. Starting with v7.1, it is possible to use the Date() object when specifying data for the "Date" column:
 
 ~~~js {4,8}
-var dataset = [
+const dataset = [
     {
         "country": "China",
         "date": new Date()

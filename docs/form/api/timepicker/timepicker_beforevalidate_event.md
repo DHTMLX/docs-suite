@@ -11,7 +11,7 @@ description: You can explore the beforeValidate event of the Timepicker control 
 @signature: {'beforeValidate: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
-`value: string | object` - the value to be validated
+- `value: string | object` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

@@ -14,7 +14,7 @@ description: You can explore the getInitialData method of DataCollection in the 
 An array of item objects with initial values.
 
 @example:
-var startingData = component.data.getInitialData();
+const startingData = component.data.getInitialData();
 
 @descr:
 

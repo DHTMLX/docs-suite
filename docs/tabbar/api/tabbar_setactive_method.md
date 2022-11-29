@@ -11,10 +11,10 @@ description: You can explore the setActive method of Tabbar in the documentation
 @signature: {'setActive(id: string): void;'}
 
 @params:
-`id: string` - the id of a tab
+- `id: string` - the id of a tab
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     mode: "top",            
     views:[
         { id: "1", tab: "tab-1", css:"panel flex"},

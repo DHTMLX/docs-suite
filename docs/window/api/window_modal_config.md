@@ -13,7 +13,7 @@ description: You can explore the modal config of Window in the documentation of 
 @default: false
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     modal:true
 });
 

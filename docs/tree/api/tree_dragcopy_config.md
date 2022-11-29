@@ -11,8 +11,8 @@ description: You can explore the dragCopy config of Tree in the documentation of
 @signature: {'dragCopy?: boolean;'}
 
 @example:
-var treeSource = new dhx.Tree("tree-source", {dragMode: "source", dragCopy: true});
-var treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true});
+const treeSource = new dhx.Tree("tree-source", {dragMode: "source", dragCopy: true});
+const treeTarget = new dhx.Tree("tree-target", {dragMode: "target", dragCopy: true});
 
 @descr:
 

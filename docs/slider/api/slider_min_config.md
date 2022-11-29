@@ -13,7 +13,7 @@ description: You can explore the min config of Slider in the documentation of th
 @default: 0
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     min:2
 });
 

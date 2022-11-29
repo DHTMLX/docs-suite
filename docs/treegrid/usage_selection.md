@@ -41,8 +41,8 @@ To set selection to a particular cell, make use of the [setCell()](treegrid/api/
 <br/>
 
 ~~~js
-var row = treegrid.data.getItem(treegrid.data.getId(0));
-var column = treegrid.getColumn("population");
+const row = treegrid.data.getItem(treegrid.data.getId(0));
+const column = treegrid.getColumn("population");
 treegrid.selection.setCell(row, column);
 ~~~
 
@@ -90,6 +90,6 @@ To make the process of unselecting cells more flexible, you can apply the relate
 To get the object of a selected TreeGrid cell, use the [getCell()](treegrid/api/selection/selection_getcell_method.md) method of the selection object:
 
 ~~~js
-var selectedCell = treegrid.selection.getCell();
+const selectedCell = treegrid.selection.getCell();
 // -> {row: {…}, column: {…}}
 ~~~

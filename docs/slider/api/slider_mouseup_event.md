@@ -11,7 +11,7 @@ description: You can explore the mouseUp event of Slider in the documentation of
 @signature: {'mouseUp: (event: Event) => void;'}
 
 @params:
-`event: Event` - the native event object
+- `event: Event` - the native event object
 
 @example:
 slider.events.on("mouseUp", function(e){

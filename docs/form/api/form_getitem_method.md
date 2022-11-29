@@ -11,7 +11,7 @@ description: You can explore the getItem method of Form in the documentation of 
 @signature: {'getItem(name: string): any;'}
 
 @params:
-`name|id: string` - the name of a Form control or its id (if the name attribute is not defined in the config of the control)
+- `name|id: string` - the name of a Form control or its id (if the name attribute is not defined in the config of the control)
 
 @returns:
 The object of the control.

@@ -11,7 +11,7 @@ description: You can explore the focus method of the Slider control of Form in t
 @signature: focus(extra?: boolean): void;
 
 @params:
-`extra: boolean` - optional, if a Slider control is in the range mode, *true* will set focus to the second thumb 
+- `extra: boolean` - optional, if a Slider control is in the range mode, *true* will set focus to the second thumb 
 
 @example:
 // sets focus to the thumb;  

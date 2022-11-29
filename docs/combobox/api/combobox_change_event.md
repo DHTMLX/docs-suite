@@ -11,7 +11,7 @@ description: You can explore the change event of Combo Box in the documentation 
 @signature: {'change: (ids: Id | Id[]) => void;'}
 
 @params:
-`ids: string | number | array` - the id(s) of a newly selected option(s)
+- `ids: string | number | array` - the id(s) of a newly selected option(s)
 
 @example:
 combo.events.on("change", function(id){

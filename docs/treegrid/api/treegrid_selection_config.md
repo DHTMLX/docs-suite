@@ -13,7 +13,7 @@ description: You can explore the selection config of TreeGrid in the documentati
 @values: "row","cell","complex"
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

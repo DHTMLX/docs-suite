@@ -11,7 +11,7 @@ description: You can explore the beforeKeyDown event of Grid in the documentatio
 @signature: {'beforeKeyDown: (e: Event) => boolean | void;'}
 
 @params:
-`e: Event` - a native KeyboardEvent object
+- `e: Event` - a native KeyboardEvent object
 
 @returns:
 Return `false` to prevent pressing a shortcut key; otherwise, `false`.

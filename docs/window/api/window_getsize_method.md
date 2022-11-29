@@ -14,7 +14,7 @@ description: You can explore the getSize method of Window in the documentation o
 An object with width and height of a window
 
 @example:
-var size = dhxWindow.getSize(); // -> {width: 960, height: 469}
+const size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 
 @descr:
 

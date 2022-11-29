@@ -11,7 +11,7 @@ description: You can explore the afterHide event of Sidebar in the documentation
 @signature: {'afterHide: (events: Event) => void;'}
 
 @params:
-`events: Event` - a native event object
+- `events: Event` - a native event object
 
 @example:
 sidebar.events.on("afterHide", function(event){

@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Datepicker control of F
 @signature: {'beforeShow: (value: string | Date) => boolean | void;'} 
 
 @params:
-`value: string | Date` - the current value of the control
+- `value: string | Date` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise - `true`.

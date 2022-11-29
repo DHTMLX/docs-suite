@@ -11,7 +11,7 @@ description: You can explore the afterHide event of Popup in the documentation o
 @signature: {'afterHide: (e: Event) => void;'}
 
 @params:
-`e: Event` - the native mouse event
+- `e: Event` - the native mouse event
 
 @example:
 popup.events.on("afterHide", function(e){

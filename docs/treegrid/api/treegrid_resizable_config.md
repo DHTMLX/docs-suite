@@ -11,7 +11,7 @@ description: You can explore the resizable config of TreeGrid in the documentati
 @signature: {'resizable?: boolean;'}
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
     ],

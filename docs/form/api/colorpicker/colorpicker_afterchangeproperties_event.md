@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Colorpicker 
 @signature: {'afterChangeProperties: (properties: IColorpickerProps) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("colorpicker").events.on("afterChangeProperties", function(properties) {

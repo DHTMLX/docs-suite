@@ -15,7 +15,7 @@ function template() {
     return "<div class='class_name'></div>";
 }
 
-const list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
     template: template,
     eventHandlers: {
         onclick: {

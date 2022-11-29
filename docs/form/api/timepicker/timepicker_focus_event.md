@@ -11,7 +11,7 @@ description: You can explore the focus event of the Timepicker control of Form i
 @signature: focus: (value: string | ITimeObject) => void;
 
 @params:
-`value: string | object` - the current value of the control
+- `value: string | object` - the current value of the control
 
 @example:
 form.getItem("timepicker").events.on("focus", (value) => {

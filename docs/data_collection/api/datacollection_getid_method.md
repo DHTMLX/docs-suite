@@ -11,13 +11,13 @@ description: description
 @signature: {'getId(index: number): Id;'}
 
 @params:
-`index: number` - the index of the item
+- `index: number` - the index of the item
 
 @returns:
 A string with the id of the item.
 
 @example:
-var id = component.data.getId(0); // -> returns "1"
+const id = component.data.getId(0); // -> returns "1"
 
 @descr:
 

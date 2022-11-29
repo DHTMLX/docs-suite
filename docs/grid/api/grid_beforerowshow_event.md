@@ -11,7 +11,7 @@ description: You can explore the beforeRowShow event of Grid in the documentatio
 @signature: {'beforeRowShow: (row: IRow) => boolean | void;'}
 
 @params:
-`row: object` - an object with a row configuration
+- `row: object` - an object with a row configuration
 
 @returns:
 Return `false` to prevent a row from being shown; otherwise, `true`.

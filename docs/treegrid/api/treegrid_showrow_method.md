@@ -11,7 +11,7 @@ description: You can explore the showRow method of TreeGrid in the documentation
 @signature: {'showRow(rowId: Id): void;'}
 
 @params:
-`rowId: string | number` - the id of a row
+- `rowId: string | number` - the id of a row
 
 @example:
 treegrid.showRow(rowId);

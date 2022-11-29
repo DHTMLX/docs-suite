@@ -11,7 +11,7 @@ description: You can explore the remove method of Selection in the documentation
 @signature: {'remove(id?: string | number): boolean;'}
 
 @params:
-`id: string | number` - optional, the id of an item
+- `id: string | number` - optional, the id of an item
 
 @returns:
 `true` if an item is unselected; otherwise, `false`.

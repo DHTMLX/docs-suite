@@ -17,7 +17,7 @@ description: You can explore the css config of Tree in the documentation of the 
 	}
 </style>
 
-var tree = new dhx.Tree("tree_container", {css: "bg-gray"});
+const tree = new dhx.Tree("tree_container", {css: "bg-gray"});
 
 @descr:
 
@@ -28,7 +28,7 @@ var tree = new dhx.Tree("tree_container", {css: "bg-gray"});
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Tree:
 
 ~~~js
-var tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
 	css: "dhx_widget--bg-gray"
 });
 ~~~

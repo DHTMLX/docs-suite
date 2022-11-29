@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Combo Box co
 @signature: {'afterChangeProperties: (properties: IComboProps) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("combo").events.on("afterChangeProperties", function(properties) {

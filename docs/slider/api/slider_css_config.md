@@ -21,7 +21,7 @@ description: You can explore the css config of Slider in the documentation of th
     }
 </style>
 
-var slider = new dhx.Slider({
+const slider = new dhx.Slider("slider_container", {
     css:"my_first_class my_second_class"
 });
 
@@ -32,7 +32,7 @@ var slider = new dhx.Slider({
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Slider:
 
 ~~~js
-var slider = new dhx.Slider({
+const slider = new dhx.Slider("slider_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~

@@ -21,7 +21,7 @@ description: You can explore the menuCss config of Ribbon in the documentation o
     }
 </style>
 
-var ribbon = new dhx.Ribbon({
+const ribbon = new dhx.Ribbon("ribbon_container", {
     menuCss:"my_first_class my_second_class"
 });
 

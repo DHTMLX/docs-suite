@@ -11,7 +11,7 @@ description: You can explore the afterRowHide event of Grid in the documentation
 @signature: {'afterRowHide: (row: IRow) => void;'}
 
 @params:
-`row: object` - an object with a row configuration
+- `row: object` - an object with a row configuration
 
 @example:
 grid.events.on("afterRowHide", function(row){

@@ -11,8 +11,7 @@ description: You can explore the save method of TreeCollection in the documentat
 @signature: {'save(url: IDataProxy | string): void;'}
 
 @params:
-
-`url: object | string` - the URL of a server side (or DataProxy object)
+- `url: object | string` - the URL of a server side (or DataProxy object)
 
 @example:
 diagram.data.save("http://userurl/");
@@ -24,7 +23,7 @@ The component will make an AJAX call and expect the remote URL to save data chan
 Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the **saveData** property that returns a "promise" object:
 
 ~~~js
-var data = new TreeCollection();
+const data = new TreeCollection();
 data.save(loader);
 return data.saveData.then(function () {
     // now your data is saved

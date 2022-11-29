@@ -11,7 +11,7 @@ description: You can explore the hideColumn method of TreeGrid in the documentat
 @signature: {'hideColumn(colId: Id): void;'}
 
 @params:
-`colId: string | number` - the id of a column
+- `colId: string | number` - the id of a column
 
 @example:
 grid.hideColumn(col);

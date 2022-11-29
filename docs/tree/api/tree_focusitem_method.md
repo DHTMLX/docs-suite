@@ -11,7 +11,7 @@ description: You can explore the focusItem method of Tree in the documentation o
 @signature: {'focusItem(id: Id): void;'}
 
 @params:
-`id: string | number` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 tree.focusItem("1");

@@ -11,7 +11,7 @@ description: You can explore the focus method of the Radiogroup control of Form 
 @signature: {'focus(id?: string): void;'}
 
 @params:
-`id: string` - optional, the id of a radio button
+- `id: string` - optional, the id of a radio button
 
 @example:
 form.getItem("radiogroup").focus("radiobutton_1");

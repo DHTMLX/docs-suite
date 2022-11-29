@@ -11,7 +11,7 @@ description: You can explore the isRowHidden method of TreeGrid in the documenta
 @signature: {'isRowHidden(rowId: Id): boolean;'}
 
 @params:
-`rowId: string | number` - the id of a row
+- `rowId: string | number` - the id of a row
 
 @returns:
 `true` if the row is hidden, otherwise `false`.

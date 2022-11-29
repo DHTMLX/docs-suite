@@ -11,7 +11,7 @@ description: You can explore the input event of the Input control of Form in the
 @signature: {'input: (inputValue: string | number) => void;'} 
 
 @params:
-`inputValue: string | number` - an entered value
+- `inputValue: string | number` - an entered value
 
 @example:
 form.getItem("input").events.on("input", function(inputValue) {

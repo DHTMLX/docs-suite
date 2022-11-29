@@ -11,10 +11,10 @@ description: You can explore the getId method of Tabbar in the documentation of 
 @signature: {'getId(index: number): string;'}
 
 @params:
-`index: number` - the position of a tab in the tabbar
+- `index: number` - the position of a tab in the tabbar
 
 @example:
-var id = tabbar.getId(0);
+const id = tabbar.getId(0);
 
 @descr:
 

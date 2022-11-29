@@ -11,12 +11,12 @@ description: You can explore the getItems method of TreeCollection in the docume
 @signature: {'getItems(id: Id): T[];'}
 
 @params:
-`id: string` - the ID of a control
+- `id: string` - the ID of a control
 
 @returns:
 The child items of the control.
 
 @example:
-var items = toolbar.data.getItems("menu1");
+const items = toolbar.data.getItems("menu1");
 
 @descr:

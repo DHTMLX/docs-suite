@@ -13,7 +13,7 @@ description: You can explore the mode config of Tabbar in the documentation of t
 @default: "top"
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     mode: "bottom"
 });
 

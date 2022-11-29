@@ -11,7 +11,7 @@ description: You can explore the configuration of List in the documentation of t
 The List component provides the possibility to navigate its items with arrow keys. You can enable this functionality using the [](list/api/list_keynavigation_config.md) property:
 
 ~~~js
-var list = new dhx.List("list", {keyNavigation:true});
+const list = new dhx.List("list_container", {keyNavigation:true});
 ~~~
 
 As a value of this option you can use either *true/false* to switch it on/off, or specify a *function* that will define some custom navigation logic.
@@ -45,14 +45,14 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 
 ## Drag-n-drop of items
 
-dhtmlxList supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [](list/api/list_dragmode_config.md) property in the configuration object of List. Then define which mode you need:
+DHTMLX List supports drag-n-drop of items between lists in several modes. To begin with, you should specify the [](list/api/list_dragmode_config.md) property in the configuration object of List. Then define which mode you need:
 
 - "target" - a list takes items from other lists, while its items can't be dragged out of it
 - "source" - a list allows dragging its items out and can't take items from other lists
 - "both" - a list both takes items from other lists and allows dragging its items out as well
 
 ~~~js
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     dragMode:"source"
 });
 ~~~
@@ -60,7 +60,7 @@ var list = new dhx.List("list_container", {
 In order to provide the possiblity of dragging several items between lists, you should enable the [](list/api/list_multiselection_config.md) in addition to the [](list/api/list_dragmode_config.md):
 
 ~~~js
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     dragMode:"source",
     multiselection:true
 });
@@ -78,7 +78,7 @@ There is a possibility to increase the speed of your application containing a Li
 To make use of dynamic data rendering, switch the [](list/api/list_virtual_config.md) property on.
 
 ~~~js
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     virtual:true
 });
 ~~~
@@ -94,7 +94,7 @@ var list = new dhx.List("list_container", {
 You can enable the possibility to edit List items with the help of the [](list/api/list_editable_config.md) configuration option:
 
 ~~~js
-var list = new dhx.List("list_container", {editable:true});
+const list = new dhx.List("list_container", {editable:true});
 ~~~
 
 ## Height of an item
@@ -107,7 +107,7 @@ You can specify the necessary height of an item and set it before initialization
 
 ~~~js {3}
 // sets the height of an item as a number
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     itemHeight:30 
 });
 ~~~
@@ -116,7 +116,7 @@ or as a string value
 
 ~~~js {3}
 // sets the height of an item as a string value
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     itemHeight:"30px"
 });
 ~~~
@@ -134,13 +134,13 @@ When the [virtual](list/api/list_virtual_config.md) property is set to *true*, t
 You can define the desired height of a list via the [height](list/api/list_height_config.md) configuration option as easy as that:
 
 ~~~js
-var list = new dhx.List("list", {height: 700});
+const list = new dhx.List("list_container", {height: 700});
 ~~~
 
 You can also use a string value for setting the height of List:
 
 ~~~js
-var list = new dhx.List("list", {height: "700px"});
+const list = new dhx.List("list_container", {height: "700px"});
 ~~~
 
 {{note The usage of the *CSS calc() function* within the [](list/api/list_height_config.md) property is not possible.}}
@@ -155,14 +155,14 @@ By default, you can select only one item in a list, since selection of another i
 [](list/api/list_multiselection_config.md) configuration option:
 
 ~~~js
-var list = new dhx.List("list", {multiselection:true});
+const list = new dhx.List("list_container", {multiselection:true});
 ~~~
 
 Setting the **multiselection** property to *true* presupposes selection of multiple items by using Ctrl key.
 It is also possible to use the "Ctrl+click" combination to select several items. For this, you need to set the 
 [](list/api/list_multiselection_config.md) configuration option to *"ctrlClick"*:
 ~~~js
-var list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
     multiselection:"ctrlClick"   
 });
 ~~~
@@ -176,7 +176,7 @@ var list = new dhx.List("list", {
 The default configuration of List provides you with the selection feature that allows highlighting a List item. To disable selection in a List you need to set the [](list/api/list_selection_config.md) configuration property to *false*:
 
 ~~~js
-var list = new dhx.List("list_container", {selection: false});
+const list = new dhx.List("list_container", {selection: false});
 ~~~
 
 ## Template for List items
@@ -191,10 +191,10 @@ You can define a template for rendering items in a List with the help of the [](
 
 ~~~js
 
-var list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
 	css: "dhx_widget--bordered", 
     template: function(item) {
-		var template = "<div class='list_item'>";
+		const template = "<div class='list_item'>";
 		template += "<div class='item_name'>"+item.value;
 				
 		template+="<span class='item_author'> by "
@@ -231,7 +231,7 @@ function template(item) {
 	return template;
 }
 
-const list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
 	css: "dhx_widget--bordered",
 	template: template,
 	eventHandlers: { 
@@ -258,7 +258,7 @@ By default, List displays HTML content if it is specified for its options.
 In case you need to disable rendering of HTML content and show it as plain text to keep your application safe, set the [htmlEnable](../../list/api/list_htmlenable_config/) property to *false*. 
 
 ~~~js
-const list = new dhx.List("list", {
+const list = new dhx.List("list_container", {
     htmlEnable: false, // disables render of HTML content
     template: template,
     data: data

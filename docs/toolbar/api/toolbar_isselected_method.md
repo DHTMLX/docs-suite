@@ -11,7 +11,7 @@ description: You can explore the isSelected method of Toolbar in the documentati
 @signature: {'isSelected(id: Id): boolean;'}
 
 @params:
-`id: string | number` - the id of a Toolbar item
+- `id: string | number` - the id of a Toolbar item
 
 @returns:
 `true`, if an item of Toolbar is selected; otherwise, `false`.

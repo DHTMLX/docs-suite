@@ -13,7 +13,7 @@ description: You can explore the tabHeight config of Tabbar in the documentation
 @default: 45
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     tabHeight: 50
 });
 

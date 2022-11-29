@@ -33,7 +33,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](tree/api/tree_css_config.md) property in the Tree configuration:
 
 ~~~js
-var tree = new dhx.Tree("tree_container", { 
+const tree = new dhx.Tree("tree_container", { 
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -54,7 +54,7 @@ For example:
 	}
 </style>
 
-var tree = new dhx.Tree("tree_container", {
+const tree = new dhx.Tree("tree_container", {
 	css: "custom-class"
 });
 ~~~
@@ -65,11 +65,11 @@ var tree = new dhx.Tree("tree_container", {
 
 **Related sample**: [Tree. Custom icons](https://snippet.dhtmlx.com/lpsgn3j7)
 
-You can change the default icons used for tree items. dhtmlxTree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
+You can change the default icons used for tree items. DHTMLX Tree uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. 
 For this, you need to include the desired icon font on a page and apply icons to necessary items.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxTree as follows:
+after the source files of DHTMLX Tree as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/tree.js"></script>
@@ -109,7 +109,7 @@ and returns either a string or null.
 **Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
             <div class="dhx_tree_template">
@@ -131,7 +131,7 @@ const tree = new dhx.Tree("tree", {
 You can assign event handlers to HTML elements of a custom template via using the [eventHandlers](tree/api/tree_eventhandlers_config.md)  configuration property of Tree, for instance:
 
 @example:
-const tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
             <div class="dhx_tree_template">

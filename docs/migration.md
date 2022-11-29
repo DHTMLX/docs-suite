@@ -120,16 +120,20 @@ grid.events.on("beforeSort", (col, dir) => {
 Starting from v7.0, use **leftSplit** instead.
 
 ~~~js title="Before v7.0"
-var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
     splitAt:2,  
     data: dataset
 });
 ~~~
 
 ~~~js title="From v7.0"
-var grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
     leftSplit:2,  
     data: dataset
 });
@@ -266,7 +270,7 @@ timepicker.events.on("afterApply", function(value){
 12) The **readonly** configuration property have been deprecated. Starting from v7.0, use **readOnly** instead.
 
 ~~~js
-var combo = new dhx.Combobox("combo_container", { 
+const combo = new dhx.Combobox("combo_container", { 
     readOnly:true
 });
 ~~~
@@ -404,7 +408,7 @@ The `toggle` event is deprecated. Use new `beforeCollapse`, `afterCollapse`, `be
 The `isFolder` property is deprecated. Instead of it, you can set the `icon` property in the configuration object of a tree item to add custom icons for tree items.
 
 ~~~js {11-15}
-var tree = new dhx.Tree("tree", {
+const tree = new dhx.Tree("tree_container", {
     data:[
         {
             "value": "Books",
@@ -423,7 +427,7 @@ var tree = new dhx.Tree("tree", {
             ]
         }
     ]
-}
+});
 ~~~
 
 ### TreeGrid
@@ -557,8 +561,8 @@ In case you still need to get the index of an item in focus, make use of the cod
 
 ~~~js
 // get the id of an item using the getFocus() method
-var id = list.getFocus();
+const id = list.getFocus();
 // and pass this id as a parameter of the getIndex method of Data Collection
-var index = list.data.getIndex(id);
+const index = list.data.getIndex(id);
 ~~~
 

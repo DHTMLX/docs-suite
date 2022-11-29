@@ -289,7 +289,7 @@ The DHTMLX library also provides you with a set of CSS classes that you can appl
 Here is an example of Ribbon customization:
 
 ~~~js
-var ribbon = new dhx.Ribbon({
+const ribbon = new dhx.Ribbon("ribbon", {
     css:"dhx_widget--bg_white"
 });
 ~~~
@@ -314,7 +314,7 @@ var ribbon = new dhx.Ribbon({
 An example of customization of a Layout cell is given below:
 
 ~~~js
-var layout = new dhx.Layout("layout", {
+const layout = new dhx.Layout("layout", {
     css: "dhx_layout-cell--bordered",
     rows: [{
         id: "toolbar",

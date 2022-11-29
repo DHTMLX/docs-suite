@@ -11,7 +11,7 @@ description: You can explore the sort method of TreeCollection in the documentat
 @signature: {'sort(rule?: ISortMode): void;'}
 
 @params:
-`rule: object` - an object with parameters for sorting
+- `rule: object` - an object with parameters for sorting
 
 @example:
 treeGrid.data.sort({

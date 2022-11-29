@@ -6,6 +6,8 @@ description: You can explore the afterColumnDrag event of Grid in the documentat
 
 # afterColumnDrag
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires after dragging of a column is finished
 
 @signature: {'afterColumnDrag: (data: object, events: MouseEvent) => void;'}
@@ -20,8 +22,6 @@ grid.events.on("afterColumnDrag", function(data, events) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 

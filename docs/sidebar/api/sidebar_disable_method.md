@@ -11,7 +11,7 @@ description: You can explore the disable method of Sidebar in the documentation 
 @signature: {'disable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - optional, the ID or an array of IDs of items
+- `ids: string | number | array` - optional, the ID or an array of IDs of items
 
 @example:
 sidebar.disable("search");

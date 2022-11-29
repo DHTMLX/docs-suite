@@ -11,7 +11,7 @@ description: You can explore the openMenu event of Ribbon in the documentation o
 @signature: {'openMenu: (id: Id) => void;'}
 
 @params:
-`id: string | number` - the ID of an opened menu item
+- `id: string | number` - the ID of an opened menu item
 
 @example:
 ribbon.events.on("openMenu", function(id){

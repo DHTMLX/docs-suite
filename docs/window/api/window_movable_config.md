@@ -13,7 +13,7 @@ description: You can explore the movable config of Window in the documentation o
 @default: false
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     movable:true
 });
 

@@ -11,7 +11,7 @@ description: You can explore the beforeChangeProperties event of the Input contr
 @signature: {'beforeChangeProperties: (properties: IInputProps) => boolean | void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

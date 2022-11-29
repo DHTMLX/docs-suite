@@ -11,7 +11,7 @@ description: You can explore the labelPosition config of Slider in the documenta
 @signature: {'labelPosition?: "left" | "top";'}
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
    labelPosition:"left" 
 });
 

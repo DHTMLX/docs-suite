@@ -11,7 +11,7 @@ description: You can explore the eachSeries method of Chart in the documentation
 @signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
 
 @params:
-`handler: function` - a handler function that takes an array with series objects as a parameter
+- `handler: function` - a handler function that takes an array with series objects as a parameter
 
 @returns:
 An array with the result of iteration.

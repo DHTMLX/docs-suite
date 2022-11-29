@@ -12,12 +12,12 @@ description: You can explore the disabled config of Tabbar in the documentation 
 
 @example:
 // make a tab disabled
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     disabled: "London"
 });
 
 // make tabs disabled
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     disabled: ["London", "Rome"]
 });
 

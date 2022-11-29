@@ -19,7 +19,7 @@ description: You can explore the add method of TreeCollection in the documentati
 The item's id or an array with ids of items.
 
 @example:
-myToolbar.data.add({
+toolbar.data.add({
     type:"button",
     icon:"dxi-plus",
     value:"New"

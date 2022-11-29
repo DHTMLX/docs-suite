@@ -11,14 +11,14 @@ description: You can explore the valueFormat config of Timepicker in the documen
 @signature: {'valueFormat?: "string" | "timeObject";'}
 
 @example:
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: "06:00",
 	timeFormat: 24,
 	valueFormat: "string"
 });
 
 // or
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	value: {hour: 6, minute: 0, AM: true},
 	timeFormat: 12,
 	valueFormat: "timeObject"

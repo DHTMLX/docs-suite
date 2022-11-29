@@ -11,7 +11,7 @@ description: You can explore the focus method of the Checkbox Group control of F
 @signature: {'focus(id?: string): void;'}
 
 @params:
-`id: string` - optional, the id of a checkbox
+- `id: string` - optional, the id of a checkbox
 
 @example:
 form.getItem("CheckboxGroup").focus("checkbox_1");

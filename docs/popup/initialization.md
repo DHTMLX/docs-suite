@@ -10,7 +10,7 @@ description: You can explore the initialization of Popup in the documentation of
 [Download the DHTMLX Popup package](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml) as a part of the DHTMLX Suite library
 :::
 
-To add dhtmlxPopup into an application, you need to take the following simple steps:
+To add DHTMLX Popup into an application, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Initialize Popup](#initialize-popup) with the object constructor
@@ -20,14 +20,14 @@ To add dhtmlxPopup into an application, you need to take the following simple st
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxPopup</title>         
+        <title>How to Start with DHTMLX Popup</title>         
         <script type="text/javascript" src="../../codebase/suite.js"></script>
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>       
         <script>
-            // creating dhtmlxPopup
-            var popup = new dhx.Popup();
+            // creating DHTMLX Popup
+            const popup = new dhx.Popup();
         </script>
     </body>
 </html>
@@ -56,8 +56,8 @@ Initialize Popup with the `dhx.Popup` object constructor.
 ~~~
 
 ~~~js
-// creating dhtmlxPopup
-var popup = new dhx.Popup();
+// creating DHTMLX Popup
+const popup = new dhx.Popup();
 
 popup.show("popup_container");
 ~~~

@@ -13,7 +13,7 @@ description: You can explore the tooltip config of Slider in the documentation o
 @default: true
 
 @example:
-var slider = new dhx.Slider("slider_container", { 
+const slider = new dhx.Slider("slider_container", { 
     tooltip:false
 });
 

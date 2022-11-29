@@ -11,7 +11,7 @@ description: You can explore the disable method of Toolbar in the documentation 
 @signature: {'disable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - an ID or an array of IDs of items
+- `ids: string | number | array` - an ID or an array of IDs of items
 
 @example:
 toolbar.disable("save_btn");

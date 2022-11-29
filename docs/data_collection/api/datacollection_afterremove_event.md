@@ -11,7 +11,7 @@ description: You can explore the afterRemove event of DataCollection in the docu
 @signature: {'afterRemove: (removedItem: any) => void;'}
 
 @params:
-`removedItem: object` - the object of a removed item
+- `removedItem: object` - the object of a removed item
 
 @example:
 component.data.events.on("afterRemove", function(removedItem){

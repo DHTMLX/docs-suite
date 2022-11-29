@@ -11,7 +11,7 @@ description: You can explore the setValue method of Slider in the documentation 
 @signature: {'setValue(value: string | number | number[]): void;'}
 
 @params:
-`value: string | number | array` - the value to be set for Slider
+- `value: string | number | array` - the value to be set for Slider
 
 @example:
 // sets value as a number

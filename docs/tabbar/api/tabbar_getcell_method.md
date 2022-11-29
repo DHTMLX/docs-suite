@@ -11,7 +11,7 @@ description: You can explore the getCell method of Tabbar in the documentation o
 @signature: getCell(id: string): object;
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @returns:
 The config object of a cell.

@@ -11,7 +11,7 @@ description: You can explore the uncheckItem method of Tree in the documentation
 @signature: {'uncheckItem(id: Id): void;'}
 
 @params:
-`id: string | number` - the id of an item to uncheck
+- `id: string | number` - the id of an item to uncheck
 
 @example:
 // checking an item

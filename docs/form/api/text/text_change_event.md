@@ -11,7 +11,7 @@ description: You can explore the change event of the Text control of Form in the
 @signature: {'change: (value: string | number) => void;'}
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @example:
 form.getItem("text").events.on("change", function(value) {

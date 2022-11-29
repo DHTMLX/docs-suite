@@ -11,7 +11,7 @@ description: You can explore the dragMode config of List in the documentation of
 @signature: {'dragMode?: string'}
 
 @example:
-var list = new dhx.List("list_container", { 
+const list = new dhx.List("list_container", { 
     dragMode:"source"
 });
 

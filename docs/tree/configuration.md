@@ -10,13 +10,13 @@ description: You can explore the configuration of Tree in the documentation of t
 
 ![](../assets/tree/checkbox.png)
 
-dhtmlxTree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
+DHTMLX Tree provides enhanced system of checkbox manipulations. In addition to standard two-state checkboxes that allow check/uncheck tree items, it also uses three-state checkboxes that include an intermediate state, 
 when just some children of a parent item are checked.
 
 In order to enable checkboxes for items, make use of the [](tree/api/tree_checkbox_config.md) configuration option:
 
 ~~~js
-var tree = new dhx.Tree("tree_container", {checkbox: true});
+const tree = new dhx.Tree("tree_container", {checkbox: true});
 ~~~
 
 **Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
@@ -28,7 +28,7 @@ var tree = new dhx.Tree("tree_container", {checkbox: true});
 It is possible to enable editing of the text of Tree items before initialization of the component using the [](tree/api/tree_editable_config.md) configuration property:
 
 ~~~js
-var tree = new dhx.Tree("tree_container", {editable: true});
+const tree = new dhx.Tree("tree_container", {editable: true});
 ~~~
 
 **Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
@@ -38,7 +38,7 @@ var tree = new dhx.Tree("tree_container", {editable: true});
 You can switch on key navigation in a tree with the [](tree/api/tree_keynavigation_config.md) property before initialization of the component: 
 
 ~~~js
-var tree = new dhx.Tree("tree_container", {keyNavigation: true});
+const tree = new dhx.Tree("tree_container", {keyNavigation: true});
 ~~~
 
 After that you need to select any item and then apply Arrow keys:

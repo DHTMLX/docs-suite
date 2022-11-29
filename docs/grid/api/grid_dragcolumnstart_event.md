@@ -6,6 +6,8 @@ description: You can explore the dragColumnStart event of Grid in the documentat
 
 # dragColumnStart
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires when dragging of a column has started
 
 @signature: {'dragColumnStart: (data: IDragInfo, events: MouseEvent) => void;'}
@@ -20,8 +22,6 @@ grid.events.on("dragColumnStart", function(data, events) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 The data object contains the following parameters:
 

@@ -11,7 +11,7 @@ description: You can explore the remove method of CSS Manager in the documentati
 @signature: {'remove(className: string): void;'}
 
 @params:
-`className: string` - the name of the class to be deleted
+- `className: string` - the name of the class to be deleted
 
 @example:
 dhx.cssManager.remove("myCustomClass");

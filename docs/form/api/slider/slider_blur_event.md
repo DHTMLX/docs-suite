@@ -11,7 +11,7 @@ description: You can explore the blur event of the Slider control of Form in the
 @signature: blur: (value: number[]) => void;
 
 @params:
-`value: array` - the current value of the control
+- `value: array` - the current value of the control
 
 @example:
 form.getItem("slider").events.on("blur", (value) => {

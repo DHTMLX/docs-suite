@@ -11,7 +11,7 @@ description: You can explore the beforeClose event of Tabbar in the documentatio
 @signature: {'beforeClose: (id: string) => boolean | void;'}
 
 @params:
-`id: string` - the id of a closed tab
+- `id: string` - the id of a closed tab
 
 @returns:
 Return `false` to prevent closing of a tab; otherwise, `true`.

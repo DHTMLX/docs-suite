@@ -11,7 +11,7 @@ description: You can explore the attachHTML method of the Container control of F
 @signature: attachHTML(html: string): void;
 
 @params:
-`html: string` - the HTML code
+- `html: string` - the HTML code
 
 @example: const form = new dhx.Form("form_container", {
     rows: [

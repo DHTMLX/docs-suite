@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Select control of Form 
 @signature: {'beforeShow: (value: string | number) => boolean | void;'}
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

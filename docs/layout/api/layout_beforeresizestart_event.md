@@ -11,7 +11,7 @@ description: You can explore the beforeResizeStart event of Layout in the docume
 @signature: {'beforeResizeStart: (id: string) => boolean | void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @returns:
 Return `false` to prevent resizing of a cell; otherwise, `true`.

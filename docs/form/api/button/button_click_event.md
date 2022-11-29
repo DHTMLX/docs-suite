@@ -11,7 +11,7 @@ description: You can explore the click event of the Button control of Form in th
 @signature: {'click: (events: Event) => void;'}
 
 @params:
-`events: Event` - a native event object
+- `events: Event` - a native event object
 
 @example:
 form.getItem("button").events.on("click", function(events) {

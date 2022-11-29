@@ -11,7 +11,7 @@ description: You can explore the beforeShow event of the Slider control of Form 
 @signature: {'beforeShow: (value: number[]) => boolean | void;'}
 
 @params:
-`value: number[]` - the current value of the control
+- `value: number[]` - the current value of the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.

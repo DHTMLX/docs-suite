@@ -21,7 +21,7 @@ description: You can explore the menuCss config of Sidebar in the documentation 
     }
 </style>
 
-var sidebar = new dhx.Sidebar("sidebar", {
+const sidebar = new dhx.Sidebar("sidebar_container", {
     menuCss:"my_first_class my_second_class"
 });
 

@@ -11,7 +11,7 @@ description: You can explore the node config of Window in the documentation of t
 @signature: {'node?: HTMLElement | string;'}
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     node:"customDiv"
 });
 

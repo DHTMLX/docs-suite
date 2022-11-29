@@ -11,7 +11,7 @@ description: You can explore the afterResizeEnd event of Layout in the documenta
 @signature: {'afterResizeEnd: (id: string) => void;'}
 
 @params:
-`id: string` - the id of a cell
+- `id: string` - the id of a cell
 
 @example:
 layout.events.on("afterResizeEnd", function(id){

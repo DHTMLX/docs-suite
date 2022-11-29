@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Container co
 @signature: afterChangeProperties: (properties: IBaseLayoutItem) => void;
 
 @params:
-`properties: object` - an object with configuration properties of the control and their new values
+- `properties: object` - an object with configuration properties of the control and their new values
 
 @example:
 form.getItem("container").events.on("afterChangeProperties", function(properties) {

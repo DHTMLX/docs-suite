@@ -11,7 +11,7 @@ description: You can explore the beforeValidate event of the Text control of For
 @signature: {'beforeValidate: (value: string | number) => boolean | void;'}
 
 @params:
-`value: string | number` - the value to be validated
+- `value: string | number` - the value to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

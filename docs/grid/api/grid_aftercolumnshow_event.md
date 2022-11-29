@@ -11,7 +11,7 @@ description: You can explore the afterColumnShow event of Grid in the documentat
 @signature: {'afterColumnShow: (col: ICol) => void;'}
 
 @params:
-`col: object` - an object with a column configuration
+- `col: object` - an object with a column configuration
 
 @example:
 grid.events.on("afterColumnShow", function(column){

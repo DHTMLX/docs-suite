@@ -11,16 +11,16 @@ description: You can explore the getState method of Toolbar in the documentation
 @signature: {'getState(id?: Id): IState;'}
 
 @params:
-`id: string | number` - optional, the id of a Toolbar control
+- `id: string | number` - optional, the id of a Toolbar control
 
 @returns:
 Either a string with the value of the control, or a boolean value with the state of the control, or an object with IDs of controls and their values/states.
 
 @example:
-var state1 = toolbar.getState("search"); 
+const state1 = toolbar.getState("search"); 
 // -> "toolbar"
 
-var state2 = toolbar.getState(); 
+const state2 = toolbar.getState(); 
 // -> {"search":"toolbar","edit":true,"align":"right"}
 
 @descr:
@@ -30,15 +30,15 @@ var state2 = toolbar.getState();
 Starting from v7.0, the method can return the value/state of the control by its id:
 
 ~~~js
-var state1 = toolbar.getState("search"); // -> "toolbar"
+const state1 = toolbar.getState("search"); // -> "toolbar"
 
-var state2 = toolbar.getState("edit"); // -> true/false
+const state2 = toolbar.getState("edit"); // -> true/false
 ~~~
 
 If id of a control is not passed to the method, the method returns an object with IDs of controls and their values/states:
 
 ~~~js
-var state = toolbar.getState(); 
+const state = toolbar.getState(); 
 // -> {"search":"toolbar","edit":true,"align":"right"}
 ~~~
 

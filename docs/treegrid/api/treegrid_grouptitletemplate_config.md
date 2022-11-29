@@ -11,7 +11,7 @@ description: You can explore the groupTitleTemplate config of TreeGrid in the do
 @signature: {'groupTitleTemplate?: (groupName: string, groupItems: IDataItem[]) => string;'}
 
 @example:
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
     ],

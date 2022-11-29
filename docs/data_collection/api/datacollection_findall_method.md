@@ -11,19 +11,19 @@ description: You can explore the findAll method of DataCollection in the documen
 @signature: {'findAll(rule: IFilterMode | DataCallback<T>): T[];'}
 
 @params:
-`rule: object | function` - the search criteria
+- `rule: object | function` - the search criteria
 
 @returns:
 An array of matching item objects.
 
 @example:
 //searching for items by the function
-var items = component.data.findAll(function(items){
+const items = component.data.findAll(function(items){
 	if(items.text==="Manager"||items.text==="Marketer"){return true}
 });
 
 //searching for items by the attribute key
-var items = component.data.findAll({by:"text",match:"Manager"});
+const items = component.data.findAll({by:"text",match:"Manager"});
 
 @descr:
 

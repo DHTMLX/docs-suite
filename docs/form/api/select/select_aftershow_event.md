@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Select control of Form i
 @signature: {'afterShow: (value: string | number) => void;'}
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @example:
 form.getItem("select").events.on("afterShow", function(value) {

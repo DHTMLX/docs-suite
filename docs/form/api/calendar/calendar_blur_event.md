@@ -11,7 +11,7 @@ description: You can explore the blur event of the Datepicker control of Form in
 @signature: blur: (value: string | Date) => void;
 
 @params:
-`value: string | Date` - the current value of the control
+- `value: string | Date` - the current value of the control
 
 @example:
 form.getItem("datepicker").events.on("blur", (value) => {

@@ -11,7 +11,7 @@ description: You can explore the checkItem method of Tree in the documentation o
 @signature: {'checkItem(id: Id): void;'}
 
 @params:
-`id: string | number` - the id of an item to check
+- `id: string | number` - the id of an item to check
 
 @example:
 tree.checkItem("history");

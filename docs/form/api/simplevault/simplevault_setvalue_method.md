@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Simple Vault control of 
 @signature: {'setValue(value: ISimpleVaultValue[]): void;'}
 
 @params:
-`value: array` - the value to be set  
+- `value: array` - the value to be set  
 
 @example:
 form.getItem("simpleVault").setValue([

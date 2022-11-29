@@ -8,11 +8,11 @@ description: You can explore the customization of Toolbar in the documentation o
 
 ## Icons
 
-dhtmlxToolbar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
+DHTMLX Toolbar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Toolbar controls.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxToolbar as follows:
+after the source files of DHTMLX Toolbar as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/toolbar.js"></script>
@@ -26,7 +26,7 @@ after the source files of dhtmlxToolbar as follows:
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](toolbar/load_data.md#json-format-templates) for toolbar:
 
 ~~~js
-var toolbarData = [
+const toolbarData = [
 	{ type: "button", icon: "fas fa-bold", twoState: true },
     { type: "button", icon: "fas fa-underline", twoState: true },
     { type: "button", icon: "fas fa-italic", twoState: true },
@@ -81,7 +81,7 @@ For example:
 
 ~~~js
  
-var toolbar = new dhx.Toolbar({
+const toolbar = new dhx.Toolbar("toolbar_container", {
     css:"my_first_class my_second_class"
 });
 ~~~
@@ -89,7 +89,7 @@ var toolbar = new dhx.Toolbar({
 For example:
 
 ~~~js
-var toolbar = new dhx.Toolbar("toolbar", {
+const toolbar = new dhx.Toolbar("toolbar_container", {
 	css: "custom-class"
 });
 ~~~

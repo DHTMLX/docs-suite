@@ -11,7 +11,7 @@ description: You can explore the expand method of TreeGrid in the documentation 
 @signature: {'expand(id: Id): void;'}
 
 @params:
-`id: string | number` - the id of a node to expand
+- `id: string | number` - the id of a node to expand
 
 @example:
 treegrid.expand("native");

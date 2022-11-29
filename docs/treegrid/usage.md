@@ -8,7 +8,7 @@ description: You can explore how to work with TreeGrid in the documentation of t
 
 ## Working with columns and cells
 
-The API of dhtmlxTreeGrid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
+The API of DHTMLX TreeGrid allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell.
 
 ### Setting columns configuration
 
@@ -29,7 +29,7 @@ You can find the full list of the available configuration options of a TreeGrid 
 It is possible to return an object with attributes of a column via its id. Use the [](treegrid/api/treegrid_getcolumn_method.md) method for this purpose.
 
 ~~~js
-var column = treegrid.getColumn("b"); // ->
+const column = treegrid.getColumn("b"); // ->
 // {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"
 ~~~
 
@@ -40,7 +40,7 @@ The method returns an object with configuration of the specified column. You can
 There is the [](treegrid/api/treegrid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
 ~~~js
-var rect = treegrid.getCellRect("1","c");
+const rect = treegrid.getCellRect("1","c");
 // -> {x: 200, y: -40, height: 40, width: 200}
 ~~~
 
@@ -72,7 +72,7 @@ The return object includes the following attributes:
 You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset the focus on the filter, to change the filter, or clear it. For that, you should get an object of the header filter by column id via the [](treegrid/api/treegrid_getheaderfilter_method.md) method: 
 
 ~~~js
-var countryFilter = treegrid.getHeaderFilter("capital");
+const countryFilter = treegrid.getHeaderFilter("capital");
 // -> return HTMLElement
 // <label class="dhx_grid-filter__label dxi dxi-magnify">...</label>
 
@@ -80,7 +80,7 @@ countryFilter.focus();
 
 // or
 
-var countryFilter = treegrid.getHeaderFilter("name");
+const countryFilter = treegrid.getHeaderFilter("name");
 // -> return Combobox
 // Combobox {_uid: "u1597322507580", config: {…}, events: EventSystem, 
 // data: DataCollection, popup: Popup, …}
@@ -237,7 +237,7 @@ These are possible fields of a span object:
 You can return the col/row span a cell is a part of using the [](treegrid/api/treegrid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~js
-var span = treegrid.getSpan("10","a"); 
+const span = treegrid.getSpan("10","a"); 
 // -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
 ~~~
 
@@ -253,7 +253,7 @@ treegrid.removeSpan("10","a");
 
 ## Controlling scroll behavior
 
-The API of dhtmlxTreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
+The API of DHTMLX TreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
 
 ### Scrolling to specific coordinates
 
@@ -278,7 +278,7 @@ treegrid.scrollTo("15","c");
 To return the current state of scroll, use the [](treegrid/api/treegrid_getscrollstate_method.md) method. 
 
 ~~~js
-var state = treegrid.getScrollState(); // -> {x:0,y:0}
+const state = treegrid.getScrollState(); // -> {x:0,y:0}
 ~~~
 
 It returns an object with x,y coordinates of a position the grid has been scrolled to.
@@ -451,7 +451,7 @@ To get the current state of sorting data in TreeGrid, use the [](treegrid/api/tr
 <br/>
 
 ~~~js
-var state = treegrid.getSortingState(); 
+const state = treegrid.getSortingState(); 
 // -> {dir: "desc", by: "country"}
 ~~~
 
@@ -533,7 +533,7 @@ You can easily export data of TreeGrid into the Excel or CSV format.
 
 ### Exporting data to Excel 
 
-dhtmlxTreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the **export()** method of the export module. The method takes an object with export settings as a parameter.
+DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the **export()** method of the export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.xls({

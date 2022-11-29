@@ -11,12 +11,12 @@ description: You can explore the exists method of TreeCollection in the document
 @signature: {'exists(id: Id): boolean;'}
 
 @params:
-`id: string` - the id of the item in question
+- `id: string` - the id of the item in question
 
 @returns:
 `true` if the item exists; otherwise, `false`.
 
 @example:
-var item = component.data.exists("1"); 
+const item = component.data.exists("1"); 
 
 @descr:

@@ -58,7 +58,7 @@ popup.isVisible(); // -> true/false
 You can easily attach some HTML content to a popup via the [attachHTML()](popup/api/popup_attachhtml_method.md) method. It takes as a parameter a string with HTML.
 
 ~~~js
-var popup = new dhx.Popup();
+const popup = new dhx.Popup();
 popup.attachHTML("<h1>Hello, I'm popup</h1>");
 popup.show("popup");
 ~~~
@@ -67,7 +67,7 @@ popup.show("popup");
 
 ## Attaching DHTMLX components
 
-dhtmlxPopup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
+DHTMLX Popup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
 
 <table>
 	<tbody>

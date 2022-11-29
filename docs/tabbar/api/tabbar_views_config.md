@@ -11,7 +11,7 @@ description: You can explore the views config of Tabbar in the documentation of 
 @signature: {'views?: ICellConfig[];'}
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     views:[
         { tab: "left", css:"panel flex", header:"Left"},
         { tab: "west", css:"panel flex", header:"West"},
@@ -39,7 +39,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
 2\. In case you specify both the sizes for a separate tab and the sizes for all tabs, the sizes set for a separate tab are a priority. For example:
 
 ~~~js
-var tabbar = new dhx.Tabbar("tabbar_container",{
+const tabbar = new dhx.Tabbar("tabbar_container",{
     tabHeight: 50,
     tabWidth: 80,
     views:[

@@ -11,7 +11,7 @@ description: You can explore the showRow method of Grid in the documentation of 
 @signature: {'showRow(rowId: Id): void;'}
 
 @params:
-`rowId: string | number` - the id of a row
+- `rowId: string | number` - the id of a row
 
 @example:
 grid.showRow(rowId);

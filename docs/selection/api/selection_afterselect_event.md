@@ -11,7 +11,7 @@ description: You can explore the afterSelect event of Selection in the documenta
 @signature: {'afterSelect: (id: string) => void;'}
 
 @params:
-`id: string` - the id of an item
+- `id: string` - the id of an item
 
 @example:
 component.selection.events.on("afterSelect", function(id){

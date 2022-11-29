@@ -13,7 +13,7 @@ Download the DHTMLX TreeGrid package:
 - [as a part of the DHTMLX Suite library](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
 :::
 
-To initialize dhtmlxTreeGrid on a page, you need to take the following simple steps:
+To initialize DHTMLX TreeGrid on a page, you need to take the following simple steps:
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
@@ -24,15 +24,15 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 <!DOCTYPE html>
 <html>
     <head>
-        <title>How to Start with dhtmlxTreeGrid</title>         
+        <title>How to Start with DHTMLX TreeGrid</title>         
         <script type="text/javascript" src="../../codebase/treegrid.js"></script>
         <link rel="stylesheet" href="../../codebase/treegrid.css">
     </head>
     <body>
     	<div id="treegrid" style="height: 100%; width: 100%"></div>
         <script>
-            // creating dhtmlxTreeGrid 
-            var treegrid = new dhx.TreeGrid("treegrid_container", {
+            // creating DHTMLX TreeGrid 
+            const treegrid = new dhx.TreeGrid("treegrid_container", {
     			columns: [
         			{ width: 100, id: "a", header: [{ text: "#" }] },
         			{ width: 100, id: "b", header: [{ text: "Title" }] },
@@ -51,9 +51,9 @@ To initialize dhtmlxTreeGrid on a page, you need to take the following simple st
 
 Unpack the downloaded package into a folder of your project.
 
-After that, create an HTML file and place full paths to JS and CSS files of dhtmlxTreeGrid into the header of the created file. The TreeGrid component can be used standalone or as a part of the Suite library.
+After that, create an HTML file and place full paths to JS and CSS files of DHTMLX TreeGrid into the header of the created file. The TreeGrid component can be used standalone or as a part of the Suite library.
 
-**If you use dhtmlxTreeGrid standalone**, you need to include 2 files:
+**If you use DHTMLX TreeGrid standalone**, you need to include 2 files:
 
 - *treegrid.js*
 - *treegrid.css*
@@ -63,7 +63,7 @@ After that, create an HTML file and place full paths to JS and CSS files of dhtm
 <link rel="stylesheet" href="../../codebase/treegrid.css">
 ~~~
 
-**If you use dhtmlxTreeGrid as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
+**If you use DHTMLX TreeGrid as a part of the Suite package**, you need to include JS/CSS files of the dhtmlxSuite library:
 
 - suite.js
 - suite.css
@@ -89,8 +89,8 @@ Initialize TreeGrid with the `dhx.TreeGrid` object constructor. The constructor 
 - optional, an object with [configuration properties](#configuration-properties). If this argument is not passed to the constructor, the settings will be default.
 
 ~~~js title="index.js"
-// creating dhtmlxTreeGrid
-var treegrid = new dhx.TreeGrid("treegrid_container", {
+// creating DHTMLX TreeGrid
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 100, id: "a", header: [{ text: "#" }] },
         { width: 100, id: "b", header: [{ text: "Title" }] },

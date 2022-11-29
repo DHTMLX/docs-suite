@@ -11,7 +11,7 @@ description: You can explore the afterShow event of the Combo Box control of For
 @signature: {'afterShow: (value: Id | Id[]) => void;'}
 
 @params:
-`value: (string | number) | (string | number)[]` - the ID(s) of the option(s) that are currently selected in the control
+- `value: string | number | (string | number)[]` - the ID(s) of the option(s) that are currently selected in the control
 
 @example:
 form.getItem("combo").events.on("afterShow", function(value) {

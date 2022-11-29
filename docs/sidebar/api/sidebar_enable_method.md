@@ -11,7 +11,7 @@ description: You can explore the enable method of Sidebar in the documentation o
 @signature: {'enable(ids: Id | Id[]): void;'}
 
 @params:
-`ids: string | number | array` - optional, one ID or an array of IDs of items
+- `ids: string | number | array` - optional, one ID or an array of IDs of items
 
 @example:
 sidebar.enable("search");

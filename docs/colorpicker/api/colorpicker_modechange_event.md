@@ -11,7 +11,7 @@ description: You can explore the modeChange event of Colorpicker in the document
 @signature: {'modeChange: (view: ViewsMode) => void;'}
 
 @params:
-`view: string` - the colorpicker mode ("palette", "picker")
+- `view: string` - the colorpicker mode ("palette", "picker")
 
 @example:
 colorpicker.events.on("modeChange", function(view) {

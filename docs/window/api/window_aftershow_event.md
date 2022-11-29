@@ -11,7 +11,7 @@ description: You can explore the afterShow event of Window in the documentation 
 @signature: {'afterShow: (position: IPosition) => void;'}
 
 @params:
-`position: object` - an object with coordinates of the window's position
+- `position: object` - an object with coordinates of the window's position
 
 @example:
 dhxWindow.events.on("afterShow", function(position){

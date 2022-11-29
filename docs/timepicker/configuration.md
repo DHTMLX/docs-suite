@@ -16,7 +16,7 @@ These controls are helpful if you attach TimePicker to an input or a calendar, f
 There's the [](timepicker/api/timepicker_controls_config.md) property in the timepicker configuration that while set to *true* enables rendering of the Save button and the Close icon button in the top right corner of the component.
 
 ~~~js {2}
-var timepicker = new dhx.Timepicker("timepicker_container",{
+const timepicker = new dhx.Timepicker("timepicker_container", {
 	controls:true
 });
 ~~~
@@ -34,7 +34,7 @@ In this mode the clock inside the timepicker will be shown together with the AM/
 ![24-hour clock](../assets/timepicker/amdm_false.png)
 
 ~~~js
-var timepicker = new dhx.Timepicker("timepicker_container1");
+const timepicker = new dhx.Timepicker("timepicker_container");
 ~~~
 
 - 12-hour clock:
@@ -42,7 +42,7 @@ var timepicker = new dhx.Timepicker("timepicker_container1");
 ![12-hour clock](../assets/timepicker/amdm_true.png)
 
 ~~~js {2}
-var timepicker2 = new dhx.Timepicker("timepicker_container2",{
+const timepicker = new dhx.Timepicker("timepicker_container",{
 	timeFormat:12
 });
 ~~~
@@ -55,27 +55,27 @@ Starting with v7.0, you can set the time value that will appear on initializatio
 
 ~~~js
 // the value as a Date 
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
     value: new Date()
 });
  
 // the value as a number
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
     value: 1232151545
 });
  
 // the value as a string
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
     value: "22:30"
 });
  
 // the value as an array
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
     value: [6,20,"AM"]
 });
  
 // the value as an object
-var timepicker = new dhx.Timepicker("timepicker", {
+const timepicker = new dhx.Timepicker("timepicker_container", {
     value: {hour: 10, minute: 50, AM: true}
 });
 ~~~

@@ -11,7 +11,7 @@ description: You can explore the afterRowShow event of Grid in the documentation
 @signature: {'afterRowShow: (row: IRow) => void;'}
 
 @params:
-`row: object` - an object with a row configuration
+- `row: object` - an object with a row configuration
 
 @example:
 grid.events.on("afterRowShow", function(row){

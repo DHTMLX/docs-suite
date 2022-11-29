@@ -6,7 +6,7 @@ description: You can explore the configuration of Window in the documentation of
 
 # Configuration
 
-dhtmlxWindow provides a set of configuration options you can define in the constructor of the component before its initialization. It's possible to set a title into the header of a window, add a footer with controls,
+DHTMLX Window provides a set of configuration options you can define in the constructor of the component before its initialization. It's possible to set a title into the header of a window, add a footer with controls,
 specify the sizes of a window and decide whether it should be resizable, movable or modal, set some HTML content and define other useful settings to adapt the component to your needs.
 
 ## Closability
@@ -16,7 +16,7 @@ specify the sizes of a window and decide whether it should be resizable, movable
 There is the [](window/api/window_closable_config.md) property that adds a Close button into the right top part of a window to allow a user to close a window on clicking it. This option is set to *true* by default.
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     closable:false
 });
 ~~~
@@ -28,7 +28,7 @@ var dhxWindow = new dhx.Window({
 To place a window into a custom node you need to specify the container for a window via the [](window/api/window_node_config.md) property:
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     node:"customDiv"
 });
 ~~~
@@ -44,7 +44,7 @@ var dhxWindow = new dhx.Window({
 You can provide a window with a footer that will include some additional controls for manipulating the content.
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
 	footer:true
 });
 ~~~
@@ -60,7 +60,7 @@ By default a footer is initialized with no controls. To add a control into the f
 It is possible to make a window modal, if there's a necessity. Use the [](window/api/window_modal_config.md) property to turn this functionality on:
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     modal:true
 });
 ~~~
@@ -76,7 +76,7 @@ A modal window blocks the main window on its calling. It means that only the mod
 To equip a window with the ability to be moved around the screen, you should set the [](window/api/window_movable_config.md) property to *true*:
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     movable:true
 });
 ~~~
@@ -88,7 +88,7 @@ var dhxWindow = new dhx.Window({
 By default, a window can't cross the borders of a browser window. To enable such a possibility, make use of the [](window/api/window_viewportoverflow_config.md) configuration property.
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     viewportOverflow:true
 });
 ~~~
@@ -104,7 +104,7 @@ var dhxWindow = new dhx.Window({
 The default window has fixed sizes with no possibility to change them from UI. You can switch on the corresponding configuration option to make a window resizable. 
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     resizable:true
 });
 ~~~
@@ -120,7 +120,7 @@ Then you will be able to regulate the sizes of a window by dragging resizers tha
 You can set some HTML content into a window via the [](window/api/window_html_config.md) configuration option, as in:
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
 	html:"<h1>Header</h1><p>paragraph</p>"
 });
 ~~~
@@ -130,7 +130,7 @@ var dhxWindow = new dhx.Window({
 You can adjust the size of a window via a set of options that define both the initial width and height of a window and the minimal dimensions of the component.
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     width:250,
     height:250,
     minWidth:170,
@@ -149,10 +149,10 @@ Default values of the size-related properties are:
 
 ## Title
 
-dhtmlxWindow is initialized with an empty header. You can provide some text label for the header of the window via the [](window/api/window_title_config.md) property.
+DHTMLX Window is initialized with an empty header. You can provide some text label for the header of the window via the [](window/api/window_title_config.md) property.
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
 	title: "DHX Window"
 });
 ~~~

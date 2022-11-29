@@ -11,8 +11,7 @@ description: You can explore the save method of DataCollection in the documentat
 @signature: {'save?: (url: string | IDataProxy) => void;'}
 
 @params:
-
-`url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
+- `url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
 
 @example:
 grid.data.save("http://userurl/");
@@ -32,7 +31,7 @@ The method will send one of the following requests to the backend:
 Data saving is asynchronous, so you need to return a promise - the result of the saving operation. To do this, use the **saveData** property that returns a "promise" object:
 
 ~~~js
-var data = new DataCollection();
+const data = new DataCollection();
 data.save(loader);
 return data.saveData.then(function () {
     // now your data is saved

@@ -11,7 +11,7 @@ description: You can explore the scroll event of TreeGrid in the documentation o
 @signature: {'scroll: (scrollState: ICoords) => void;'}
 
 @params:
-`scrollState: object` - an object with new top and left coordinates
+- `scrollState: object` - an object with new top and left coordinates
 
 @example:
 grid.events.on("scroll", function({top,left}){

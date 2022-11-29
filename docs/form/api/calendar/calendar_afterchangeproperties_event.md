@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Datepicker c
 @signature: {'afterChangeProperties: (properties: IDatePickerProps) => void;'}
 
 @params:
-`properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with configuration attributes of the control and their new values
 
 @example:
 form.getItem("datepicker").events.on("afterChangeProperties", function(properties) {

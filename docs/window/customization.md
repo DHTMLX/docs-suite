@@ -10,11 +10,11 @@ You can customize the look and feel of the header and footer of Window together 
 
 ## Default and custom icons
 
-dhtmlxWindow uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
+DHTMLX Window uses the [Material Design](https://materialdesignicons.com/)-based icons by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons in any possible part of the window: in the header or the footer.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxWindow as follows:
+after the source files of DHTMLX Window as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/window.js"></script>
@@ -120,7 +120,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [](window/api/window_css_config.md) property in the Window configuration:
 
 ~~~js
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
 	title: "Window", 
     css:"my-first-class my-second-class"
 });

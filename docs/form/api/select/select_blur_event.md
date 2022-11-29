@@ -11,7 +11,7 @@ description: You can explore the blur event of the Select control of Form in the
 @signature: blur: (value: string | number) => void;
 
 @params:
-`value: string | number` - the current value of the control
+- `value: string | number` - the current value of the control
 
 @example:
 form.getItem("select").events.on("blur", (value) => {

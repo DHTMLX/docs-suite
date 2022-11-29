@@ -6,6 +6,8 @@ description: You can explore the beforeRowResize event of Grid in the documentat
 
 # beforeRowResize
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @short: fires before the height of a row is changed
 
 @signature: beforeRowResize: (row: IRow, events: Event, currentHeight: number) => boolean;
@@ -25,8 +27,6 @@ grid.events.on("beforeRowResize", function(row, events, currentHeight) {
 });
 
 @descr:
-
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
 To be able to change the height of the row, you should specify the [autoHeight:true](grid/api/grid_autoheight_config.md) and [editable:true](grid/api/grid_editable_config.md) options in the configuration of Grid. 
 

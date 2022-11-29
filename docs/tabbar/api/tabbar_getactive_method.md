@@ -14,7 +14,7 @@ description: You can explore the getActive method of Tabbar in the documentation
 A string with the id of the active tab.
 
 @example:
-var tabbar = new dhx.Tabbar("tabbar_container", {
+const tabbar = new dhx.Tabbar("tabbar_container", {
     mode: "top",            
     views:[
         { id: "1", tab: "tab-1", css:"panel flex"},
@@ -24,7 +24,7 @@ var tabbar = new dhx.Tabbar("tabbar_container", {
     ]
 });
 
-var active = tabbar.getActive(); // -> "2"
+const active = tabbar.getActive(); // -> "2"
 
 @descr:
 

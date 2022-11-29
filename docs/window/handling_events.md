@@ -25,7 +25,7 @@ dhxWindow.events.on("move", function(position, oldPosition, side) {
 To detach events, use **dhxWindow.events.detach()**:
 
 ~~~js
-var onmove = dhxWindow.events.on("move", function(position, oldPosition, side) {
+const onmove = dhxWindow.events.on("move", function(position, oldPosition, side) {
     console.log("The window is moved to " + position.left, position.top)
 });
 

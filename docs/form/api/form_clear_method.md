@@ -11,8 +11,7 @@ description: You can explore the clear method of Form in the documentation of th
 @signature: {'clear(method?: ClearMethod): void;'}
 
 @params:
-
-`method: string` - optional, the method of clearing a form
+- `method: string` - optional, the method of clearing a form
 
 @example:
 // clears only form validation

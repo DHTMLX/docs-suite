@@ -13,7 +13,7 @@ description: You can explore the resizable config of Window in the documentation
 @default: false
 
 @example:
-var dhxWindow = new dhx.Window({
+const dhxWindow = new dhx.Window({
     resizable:true
 });
 

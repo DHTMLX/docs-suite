@@ -11,7 +11,7 @@ description: You can explore the beforeRemove event of DataCollection in the doc
 @signature: {'beforeRemove: (removedItem: any) => boolean | void;'}
 
 @params:
-`removedItem: object` - the object of an item to remove
+- `removedItem: object` - the object of an item to remove
 
 @returns:
 Return `false` to block removing an item from a data collection; otherwise, `true`.

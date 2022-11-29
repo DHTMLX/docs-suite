@@ -11,7 +11,7 @@ description: You can explore the columns config of TreeGrid in the documentation
 @signature: {'columns?: ICol[];'}
 
 @example:
-var grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		{ width: 100, id: "a", header: [{ text: "#" }] },
 		{ width: 100, id: "b", header: [{ text: "Title" }] },

@@ -8,11 +8,11 @@ description: You can explore the customization of Sidebar in the documentation o
 
 ## Icons
 
-dhtmlxSidebar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
+DHTMLX Sidebar uses the [icons of the DHTMLX library](helpers/icon.md) by default. However, you can use any other icon font pack, if necessary. For this, you need to include the desired icon font on 
 a page and apply icons for Sidebar controls.
 
 For example, you can use the [Font Awesome](https://fontawesome.com/) icon pack by including [link to its CDN](https://fontawesome.com/how-to-use/on-the-web/setup/getting-started?using=web-fonts-with-css) 
-after the source files of dhtmlxSidebar as follows:
+after the source files of DHTMLX Sidebar as follows:
 
 ~~~html
 <script type="text/javascript" src="../../codebase/sidebar.js"></script>
@@ -26,7 +26,7 @@ after the source files of dhtmlxSidebar as follows:
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](sidebar/data_loading.md#json-format-templates) for Sidebar:
 
 ~~~js
-var sidebarData = [
+const sidebarData = [
 	{
 		icon: "fas fa-bold",
 		twoState: true,
@@ -79,7 +79,7 @@ For this you need to take the following steps:
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](sidebar/api/sidebar_css_config.md) property in the Sidebar configuration:
 
 ~~~js
-var sidebar = new dhx.Sidebar({
+const sidebar = new dhx.Sidebar("sidebar_container", {
     css:"my_first_class my_second_class"
 });
 ~~~

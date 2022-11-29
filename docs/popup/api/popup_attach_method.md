@@ -6,7 +6,7 @@ description: You can explore the attach method of Popup in the documentation of 
 
 # attach()
 
-@short: attaches a DHTMLX component to a dhtmlxPopup
+@short: attaches a DHTMLX component to a DHTMLX Popup
 
 @signature: {'attach(name: string | object, config?: any): VNode;'}
 
