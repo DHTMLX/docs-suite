@@ -4446,6 +4446,17 @@ module.exports = {
       },
       {
         type: "category",
+        label: "Themes",
+        link: {
+          type: 'doc',
+          id: "themes/themes",
+        },
+        items: [
+          "themes/api/themes_settheme_method",
+        ],
+      },
+      {
+        type: "category",
         label: "TreeCollection API",
         link: {
           type: 'doc',
