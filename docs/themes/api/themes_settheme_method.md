@@ -13,7 +13,7 @@ description: You can explore the setTheme method in the documentation of the DHT
 @params:
 - `theme: string` - required, the name of the theme. It can be:
     - the name of the Suite theme: *"light" | "contrast-light" | "dark" | "contrast-dark"*
-    - the name of a [custom theme](themes.md#custom-theme)
+    - the name of a [custom theme](themes/custom_theme.md)
     - *"light"* - by default
 - `container: string | HTMLElement` - optional, the container to which the theme must be applied. It can be:
     - an HTMLElement
@@ -52,7 +52,13 @@ dhx.setTheme("dark"); // apply "dark" theme to the default container
 dhx.setTheme("dark", "cell-2"); // apply "dark" theme to Layout cell with "cell-2" ID
 ~~~
 
-~~~js {7} title="Example 2"
+~~~html {13} title="Example 2"
+<section class="dhx_sample-container">
+    <div id="container-1" style="height: 100%; width: 45%; padding: 10px;"></div>
+    <div id="container-2" style="height: 100%; width: 45%; padding: 10px;"></div>
+</section>
+
+<script>
 const form_1 = new dhx.Form("container-1", config);
 const form_2 = new dhx.Form("container-2", config);
 
@@ -60,9 +66,16 @@ form_1.validate();
 form_2.validate();
 
 dhx.setTheme("dark", "container-2"); // apply "dark" theme to container with "container-2" ID
+</script>
 ~~~
 
-~~~js {8} title="Example 3"
+~~~html {14} title="Example 3"
+<section class="dhx_sample-container">
+    <div id="container-1" style="height: 100%; width: 45%; padding: 10px;"></div>
+    <div id="container-2" style="height: 100%; width: 45%; padding: 10px;"></div>
+</section>
+
+<script>
 const form_1 = new dhx.Form("container-1", config);
 const form_2 = new dhx.Form("container-2", config);
 
@@ -71,9 +84,12 @@ form_2.validate();
 
 const container = document.getElementById("container-2");
 dhx.setTheme("dark", container); // apply "dark" theme to container specified via HTMLElement
+</script>
 ~~~
 
 @descr:
+
+**Related article:** [Themes overview](themes.md)
 
 **Related samples:**
 

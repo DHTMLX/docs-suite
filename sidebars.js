@@ -4452,7 +4452,26 @@ module.exports = {
           id: "themes/themes",
         },
         items: [
-          "themes/api/themes_settheme_method",
+          "themes/default_theme",
+          "themes/contrast_light_theme",
+          "themes/dark_theme",
+          "themes/contrast_dark_theme",
+          "themes/change_base_themes",
+          "themes/custom_theme",
+          {
+            type: "category",
+            label: "Theme methods",
+            link: {
+              type: 'generated-index',
+              title: "Theme methods",
+              keywords: ['theme methods'],
+              image: '/img/docusaurus.png'
+            },
+            items: [
+              "themes/api/themes_settheme_method",
+            ],
+          },
+          "themes/theme_configurator",
         ],
       },
       {
