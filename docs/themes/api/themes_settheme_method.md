@@ -76,14 +76,14 @@ dhx.setTheme("dark", "container-2"); // apply "dark" theme to container with "co
 </section>
 
 <script>
-const form_1 = new dhx.Form("container-1", config);
-const form_2 = new dhx.Form("container-2", config);
-
-form_1.validate();
-form_2.validate();
-
-const container = document.getElementById("container-2");
-dhx.setTheme("dark", container); // apply "dark" theme to container specified via HTMLElement
+    const form_1 = new dhx.Form("container-1", config);
+    const form_2 = new dhx.Form("container-2", config);
+    
+    form_1.validate();
+    form_2.validate();
+    
+    const container = document.getElementById("container-2");
+    dhx.setTheme("dark", container); // apply "dark" theme to container specified via HTMLElement
 </script>
 ~~~
 
