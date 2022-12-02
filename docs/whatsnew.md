@@ -13,6 +13,12 @@ Version 8.0
 
 Released on ...
 
+#### Styling
+
+- New ["light", "contrast-light", "dark", "contrast-dark"](themes.md) color themes
+- The ability to [change base themes](themes/change_base_themes.md) or [configure your own color theme](themes/custom_theme.md)
+- [Theme configurator](themes/theme_configurator.md)
+
 #### Form
 
 - RadioGroup control. New methods: [`hideItem()`](form/api/radiogroup/radiogroup_hideitem_method.md) and [`showItem()`](form/api/radiogroup/radiogroup_showitem_method.md)
