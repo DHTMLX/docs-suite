@@ -40,27 +40,29 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 
 For instance:
 
-~~~js
+~~~html
 <style>
-	.myClass {
+	.custom-class {
 		background: #f2f2f2;
 		border: solid 1px lightblue;
 	}
 
-	.myClass .dhx_palette__cell {
+	.custom-class .dhx_palette__cell {
 		border-radius: 50%;
 	}
 
-	.myClass .dhx_palette__cell:after {
+	.custom-class .dhx_palette__cell:after {
 		border-radius: 50%;
 	}
 
-	.myClass .dhx_colorpicker-custom-colors__picker {
+	.custom-class .dhx_colorpicker-custom-colors__picker {
 		border-radius: 50%;
 	}
 </style>
 
-const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	css: "myClass dhx_widget--bordered",
-});
+<script>
+	const colorpicker = new dhx.Colorpicker("colorpicker_container", {
+		css: "custom-class dhx_widget--bordered",
+	});
+</script>
 ~~~

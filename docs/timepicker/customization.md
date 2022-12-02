@@ -37,3 +37,20 @@ const timepicker = new dhx.Timepicker("timepicker_container", {
     css:"my-first-class my-second-class"
 });
 ~~~
+
+For example:
+
+~~~html
+<style>
+  .custom {
+    --dhx-font-color-primary: #c00;
+    --dhx-color-primary: #ff5c5c;
+  }
+</style>
+
+<script>
+	const timepicker = new dhx.Timepicker("timepicker_container", {
+  		css: "custom dhx_widget--bordered"
+	});
+</script>
+~~~

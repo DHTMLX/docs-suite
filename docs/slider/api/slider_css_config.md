@@ -37,4 +37,6 @@ const slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/customization.md)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

@@ -49,4 +49,6 @@ const form = new dhx.Form("form_container", {
 });
 ~~~
 
-[comment]: # (@related: form/how_to_start.md#initialize-form form/customization.md)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

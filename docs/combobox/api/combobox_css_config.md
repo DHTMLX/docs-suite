@@ -37,4 +37,6 @@ const combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
-[comment]: # (@related: combobox/how_to_start.md#initialize-combobox combobox/customization.md#styling)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

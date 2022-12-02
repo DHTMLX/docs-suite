@@ -43,27 +43,38 @@ const layout = new dhx.Layout("layout_container",{
 
 For example:
 
-~~~js
+~~~html
 <style>
+	.layout {
+		color: #fff;
+		--dhx-background-secondary: #7a7a7a;
+		--dhx-border-color: #bababa;
+		--dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
+	}
+
 	.layout-header {
-		background: #0288d1;
-        color: #fff;
-        font-size: 24px;
-        font-weight: 800;
+		--dhx-background-primary: #3A434A;
+	}
+	.dhx_layout-cell-inner_html {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>
 
-const layout = new dhx.Layout("layout_container", {
-	rows: [
-    	{
-        	id: "toolbar",
-        	html: "Header",
-        	css: "dhx_layout-cell--border_bottom layout-header",
-        	gravity: false,
-        	height: "60px"
-		}
-	]
-});
+<script>
+	const layout = new dhx.Layout("layout_container", {
+		rows: [
+	    	{
+	            id: "toolbar",
+	            html: "Header",
+	            css: "layout-header",
+	            height: "60px"
+	        },
+		]
+	});
+</script>
 ~~~
 
 **Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)

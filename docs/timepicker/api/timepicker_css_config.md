@@ -33,4 +33,6 @@ const timepicker = new dhx.Timepicker("timepicker_container", {
 });
 ~~~
 
-[comment]: # (@related: timepicker/customization.md#styling timepicker/initialization.md#initialize-timepicker)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

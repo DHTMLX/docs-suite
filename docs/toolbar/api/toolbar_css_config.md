@@ -34,3 +34,7 @@ const toolbar = new dhx.Toolbar("toolbar_container", {
 	css: "dhx_widget--bg-gray"
 });
 ~~~
+
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

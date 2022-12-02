@@ -85,4 +85,24 @@ const combo = new dhx.Combobox("combo_container", {
 });
 ~~~
 
+For example:
+
+~~~html
+<style>
+  	body {
+        margin: 0;
+    }
+	.custom-class .dhx_combobox-input-box {
+		border-radius: 20px;
+		background: #FFF;
+	}
+</style>
+
+<script>
+	const combobox = new dhx.Combobox("combobox_container", {
+    	css: "custom-class"
+	});
+</script>
+~~~
+
 **Related sample**: [Combobox. Styling (custom CSS)](https://snippet.dhtmlx.com/lldd739i)

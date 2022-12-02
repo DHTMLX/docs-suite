@@ -34,6 +34,27 @@ const list = new dhx.List("list_container", {
 });
 ~~~
 
+For example:
+
+~~~html
+<style>
+    .custom {
+        --dhx-color-primary: #118d8d;
+        --dhx-background-primary: rgba(209, 250, 250, 0.3);
+        --dhx-background-secondary: rgba(17, 141, 141, 0.1);
+        --dhx-background-additional: rgba(17, 141, 141, 0.3);
+    }
+</style>
+
+<script>
+    const list = new dhx.List("list_container", {
+        css: "custom dhx_widget--bordered", //the names of the CSS classes separated by space
+        template,
+        data,
+    });
+</script>
+~~~
+
 **Related sample**: [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
 
 ## Styling items
@@ -44,21 +65,23 @@ You can style particular cells in the list.
 
 For example, apply some color to each even item, as in:
 
-~~~js
-const list = new dhx.List("list_container");
-list.data.parse(dataset);
-
-list.data.map(function (item, i) {
-	if (!(i % 2)) {
-		list.data.update(item.id, {css: "bg-gray"})
-	}
-})
-
+~~~html
 <style>
 	.bg-gray {
 		background: #faf9f9;
 	}
 </style>
+
+<script>
+    const list = new dhx.List("list_container");
+    list.data.parse(dataset);
+
+    list.data.map(function (item, i) {
+    	if (!(i % 2)) {
+    		list.data.update(item.id, {css: "bg-gray"})
+    	}
+    });
+</script>
 ~~~
 
 **Related sample**: [List. Styling (custom CSS for item)](https://snippet.dhtmlx.com/ipu9yshl)
@@ -71,24 +94,21 @@ It is also possible to customize selection of an item.
 
 **Related sample**: [List. Styling selection with CSS](https://snippet.dhtmlx.com/6hss19d3)
 
-~~~js
+~~~html
 <style>
-  .custom-class {
-    padding: 20px;
-  }
-  .custom-class.dhx_list-item--selected {
-    background-color: rgba(2, 136, 209, 0.3);
-    box-shadow: inset 2px 0 0 0 rgb(2, 136, 209),
-      inset -2px 0 0 0 #0288d1,
-      inset 0 -2px 0 0 #0288d1,
-      inset 0 2px 0 0 #0288d1;
-  }
+    .custom {
+        --dhx-color-primary: #118d8d;
+    }
+    .custom .dhx_list-item--selected {
+        background-color: rgba(17, 141, 141, 0.3);
+    }
 </style>
 
-const list = new dhx.List("list_container");
-list.data.parse(dataset);
- 
-list.data.map(function (item, i) {
-	list.data.update(item.id, {css: "custom-class"})
-});
+<script>
+    const list = new dhx.List("list_container", {
+        template, 
+        css: "custom dhx_widget--bordered"
+    });
+    list.data.parse(data);
+</script>
 ~~~

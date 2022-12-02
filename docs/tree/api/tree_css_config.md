@@ -33,4 +33,6 @@ const tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/setting_tree_appearance.md#styling)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

@@ -94,15 +94,15 @@ If you want to override some color values for a separate [Suite theme](themes.md
 </style>
 
 <script>
-const firstDate = new Date();
-const secondDate = new Date(Date.now() + 1000000000);
-
-const calendar = new dhx.Calendar("calendar", {
-    range: true,
-    value: [firstDate, secondDate],
-    css: "custom dhx_widget--bordered"
-});
-
-dhx.setTheme("light");
+    const firstDate = new Date();
+    const secondDate = new Date(Date.now() + 1000000000);
+    
+    const calendar = new dhx.Calendar("calendar", {
+        range: true,
+        value: [firstDate, secondDate],
+        css: "custom dhx_widget--bordered"
+    });
+    
+    dhx.setTheme("light");
 </script>
 ~~~

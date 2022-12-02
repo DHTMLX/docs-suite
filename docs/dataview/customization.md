@@ -32,6 +32,30 @@ const dataview = new dhx.DataView("dataview_container", {
 });
 ~~~
 
+For example:
+
+~~~html
+<style>
+    .custom {
+        --dhx-font-color-primary: #fff;
+        --dhx-background-primary: #3A434A;
+        --dhx-color-primary: #118d8d;
+
+        --dhx-border-color: #4A555E;
+        --dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
+    }
+</style>
+
+<script>
+	const dataview = new dhx.DataView("dataview_container", {
+    	itemsInRow: 2, 
+    	gap: 10,
+    	css: "custom dhx_widget--bordered",
+    	template
+	});
+</script>
+~~~
+
 ![Custom dataview styles](../assets/dataview/custom_widget_styles.png)
 
 **Related sample**: [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
@@ -40,21 +64,23 @@ const dataview = new dhx.DataView("dataview_container", {
 
 You can style particular cells in the dataview. For example, apply some color to each even item, as in:
 
-~~~js
+~~~html
 <style>
 	.bg-gray {
 		background: #efefef;
 	}
 </style>
 
-const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
+<script>
+	const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 
-dataview.data.parse(dataset);
-dataview.data.map(function (item, i) {
-	if (i % 2) {
-		dataview.data.update(item.id, {css: "bg-gray"})
-	}
-});
+	dataview.data.parse(dataset);
+	dataview.data.map(function (item, i) {
+		if (i % 2) {
+			dataview.data.update(item.id, {css: "bg-gray"})
+		}
+	});
+</script>
 ~~~
 
 The image below and the related sample demonstrate another example of customization of Dataview items:
@@ -68,7 +94,7 @@ The image below and the related sample demonstrate another example of customizat
 You can apply your own styles for selection of items and focus with the help of the corresponding CSS classes: **.dhx_dataview-item--selected** and **.dhx_dataview-item--focus**. There is no need to use any
 additional custom classes.
 
-~~~js
+~~~html
 <style>
 	.dhx_dataview-item--selected {
 		border-color: transparent;
@@ -77,7 +103,9 @@ additional custom classes.
 	}
 </style>
 
-const dataview = new dhx.DataView("dataview_container", {itemsInRow: 3});
+<script>
+	const dataview = new dhx.DataView("dataview_container", {itemsInRow: 3});
+</script>
 ~~~
 
 ![Custom selection styles](../assets/dataview/custom_selection_styles.png)

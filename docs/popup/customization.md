@@ -34,8 +34,28 @@ For this you need to take the following steps:
 const popup = new dhx.Popup({ 
     css:"my-first-class my-second-class"
 });
+~~~
 
-popup.show();
+For example:
+
+~~~html
+<style>
+	.custom {
+		--dhx-font-color-primary: var(--dhx-color-white);
+		--dhx-background-primary: var(--dhx-color-primary);
+
+		margin-top: 25px;
+		animation: opacity .4s ease-in-out forwards;
+	}
+</style>
+
+<script>
+	const popup = new dhx.Popup({
+	    css: "dhx_widget--border-shadow custom"
+	});
+
+	// show popup
+</script>
 ~~~
 
 **Related sample**: [Popup. Styling (custom CSS)](https://snippet.dhtmlx.com/rd8zfw5h)

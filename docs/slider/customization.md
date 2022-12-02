@@ -36,4 +36,20 @@ const slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
+For example:
+
+~~~html
+<style>
+    .custom {
+        --dhx-color-primary: #118d8d;
+    }
+</style>
+
+<script>
+	const slider = new dhx.Slider("slider_container", {
+    	css: "custom"
+	});
+</script>
+~~~
+
 **Related sample**: [Slider. Styling (custom CSS)](https://snippet.dhtmlx.com/ewizud5e)

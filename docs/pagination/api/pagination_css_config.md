@@ -37,4 +37,6 @@ const pagination = new dhx.Pagination("pagination_container", {
 });
 ~~~
 
-[comment]: # (@related: pagination/customization.md)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

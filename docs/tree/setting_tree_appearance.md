@@ -42,21 +42,22 @@ For example:
 
 ~~~js
 <style>
-	.custom-class {
-		padding: 20px;
-		border: 1px solid green;
-	}
-	.custom-class .dhx_tree-list-item__text {
-		color: #0ab169;
-	}
-	.custom-class .dhx_tree-folder .dhx_tree-list-item__text {
-		color: #0288d1;
+    .custom {
+        --dhx-font-weight-regular: 500;
+        --dhx-font-color-primary: #0ab169;
+    }
+	.custom .dhx_tree-folder  {
+        --dhx-font-color-primary: #0288d1;
 	}
 </style>
 
-const tree = new dhx.Tree("tree_container", {
-	css: "custom-class"
-});
+<script>
+    const tree = new dhx.Tree("tree_container", {
+        css: "custom"
+    });
+
+    tree.data.parse(dataset);
+</script>
 ~~~
 
 ## Changing icons

@@ -59,7 +59,7 @@ const data = [
 			}
 		]
 	}
-]
+];
 ~~~
 
 **Related sample**: [Ribbon. Custom icons](https://snippet.dhtmlx.com/sfkou9gp)
@@ -96,4 +96,24 @@ For this you need to take the following steps:
 const ribbon = new dhx.Ribbon("ribbon_container", {
     css:"my_first_class my_second_class"
 });
+~~~
+
+For example:
+
+~~~html
+<style>
+    .custom {
+        --dhx-background-secondary: var(--dhx-color-white);
+        --dhx-color-primary-light-hover: #aefafa;
+        --dhx-color-primary-light-active: #118d8d;
+    }
+</style>
+
+<script>
+	const ribbon = new dhx.Ribbon("ribbon_container", {
+    	css: "custom dhx_widget--bordered"
+	});
+
+	ribbon.data.parse(data);
+</script>
 ~~~

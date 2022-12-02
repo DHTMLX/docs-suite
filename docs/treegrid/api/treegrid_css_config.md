@@ -37,4 +37,6 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-[comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/customization.md#styling-treegrid)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

@@ -32,3 +32,7 @@ const list = new dhx.List("list_container", {
 	css: "dhx_widget--bg_white"
 });
 ~~~
+
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)
