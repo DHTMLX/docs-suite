@@ -40,7 +40,7 @@ const tree = new dhx.Tree("tree_container", {
 
 For example:
 
-~~~js
+~~~html
 <style>
     .custom {
         --dhx-font-weight-regular: 500;

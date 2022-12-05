@@ -15,15 +15,20 @@ description: You can explore the addCellCss method of Grid in the documentation 
 - `colId: string | number` - the id of a column
 - `css: string` - the name of the CSS class
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
     .myCustomClass{
         background:greenyellow;
     }
 </style>
 
-grid.addCellCss("1", "b", "myCustomClass");
-
-@descr:
+<script>
+    ...
+    grid.addCellCss("1", "b", "myCustomClass");
+</script>
+~~~
 
 **Related sample**: [Grid. Add cell CSS](https://snippet.dhtmlx.com/hskmp8rh)

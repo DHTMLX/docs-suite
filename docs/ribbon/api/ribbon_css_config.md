@@ -10,22 +10,24 @@ description: You can explore the css config of Ribbon in the documentation of th
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
+    .custom {
+        --dhx-background-secondary: var(--dhx-color-white);
+        --dhx-color-primary-light-hover: #aefafa;
+        --dhx-color-primary-light-active: #118d8d;
     }
 </style>
 
-const ribbon = new dhx.Ribbon("ribbon_container", {
-    css:"my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const ribbon = new dhx.Ribbon("ribbon_container", {
+    	css: "custom dhx_widget--bordered"
+	});
+</script>
+~~~
 
 **Related sample**: [Ribbon. Styling (custom CSS)](https://snippet.dhtmlx.com/9ckg47ro)
 

@@ -10,22 +10,22 @@ description: You can explore the css config of Slider in the documentation of th
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
+    .custom {
+        --dhx-color-primary: #118d8d;
     }
 </style>
 
-const slider = new dhx.Slider("slider_container", {
-    css:"my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const slider = new dhx.Slider("slider_container", {
+    	css: "custom"
+	});
+</script>
+~~~
 
 **Related sample**: [Slider. Styling (custom CSS)](https://snippet.dhtmlx.com/ewizud5e)
 

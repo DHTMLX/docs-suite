@@ -72,6 +72,7 @@ For example:
 	            css: "layout-header",
 	            height: "60px"
 	        },
+			// more objects
 		]
 	});
 </script>

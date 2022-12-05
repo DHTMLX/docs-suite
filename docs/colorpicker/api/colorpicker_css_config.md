@@ -10,22 +10,35 @@ description: You can explore the css config of Colorpicker in the documentation 
 
 @signature: {'css?: string;'}
 
-@example:
-<style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
-    }
-</style>
- 
-const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-    css:"my_first_class my_second_class"
-});
-
 @descr:
+#### Example
+
+~~~html
+<style>
+	.custom-class {
+		background: #f2f2f2;
+		border: solid 1px lightblue;
+	}
+
+	.custom-class .dhx_palette__cell {
+		border-radius: 50%;
+	}
+
+	.custom-class .dhx_palette__cell:after {
+		border-radius: 50%;
+	}
+
+	.custom-class .dhx_colorpicker-custom-colors__picker {
+		border-radius: 50%;
+	}
+</style>
+
+<script>
+	const colorpicker = new dhx.Colorpicker("colorpicker_container", {
+		css: "custom-class dhx_widget--bordered",
+	});
+</script>
+~~~
 
 **Related sample**: [Colorpicker. Styling (custom CSS)](https://snippet.dhtmlx.com/mnwi3sp0)
 

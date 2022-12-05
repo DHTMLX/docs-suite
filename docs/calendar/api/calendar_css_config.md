@@ -10,7 +10,10 @@ description: You can explore the css config of Calendar in the documentation of 
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
 	.custom {
         --dhx-color-primary: #118d8d;
@@ -22,9 +25,8 @@ description: You can explore the css config of Calendar in the documentation of 
 		css: "custom dhx_widget--bordered"
 	});
 </script>
+~~~
 
-
-@descr:
 **Related sample**: [Calendar. Styling (custom CSS)](https://snippet.dhtmlx.com/2045cbe1)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Calendar:

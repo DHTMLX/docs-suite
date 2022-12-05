@@ -10,22 +10,31 @@ description: You can explore the css config of Tabbar in the documentation of th
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
-    }
+	.custom .dhx_tabbar-tab-button--active {
+		background-color: rgb(2, 136, 209);
+		color: var(--dhx-color-white);
+	}
+	.custom .dhx_tabbar-header-active {
+		background-color: #ff5252;
+	}
 </style>
 
-const tabbar = new dhx.Tabbar("tabbar_container", {
-    css: "my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const tabbar = new dhx.Tabbar("tabbar_container", {
+    	mode: "top",
+    	css: "custom",
+    	tabAlign: "center",
+    	views: [
+    	    // view objects
+    	]
+	});
+</script>
+~~~
 
 **Related sample**: [Tabbar. Styling (custom CSS)](https://snippet.dhtmlx.com/47en9f0a)
 

@@ -10,22 +10,26 @@ description: You can explore the css config of Pagination in the documentation o
 
 @signature: {'css?: string;'}
 
-@example:
-<style>
-	.custom_class {
-		margin: 0px;
-	}
+@descr:
+#### Example
 
-	.custom_class button span.dxi {
-		color: #5858E3;
+~~~html
+<style>
+	.custom {
+		--dhx-background-primary: #3A434A;
+		--dhx-background-secondary: #5e6d78;
+		--dhx-color-primary: #118d8d;
+		--dhx-font-color-primary: #fff;
 	}
 </style>
 
-const pagination = new dhx.Pagination("pagination_container", {
-    css: "custom_class" 
-});
-
-@descr:
+<script>
+	const pagination = new dhx.Pagination("pagination_container", {
+	    css: "custom dhx_widget--bordered dhx_widget--no-border_top",
+	    data: list.data
+	});
+</script>
+~~~
 
 **Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)
 

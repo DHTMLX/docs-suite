@@ -10,16 +10,26 @@ description: You can explore the css config of Tree in the documentation of the 
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-	.bg-gray {
-		background: #efefef;
+    .custom {
+        --dhx-font-weight-regular: 500;
+        --dhx-font-color-primary: #0ab169;
+    }
+	.custom .dhx_tree-folder  {
+        --dhx-font-color-primary: #0288d1;
 	}
 </style>
 
-const tree = new dhx.Tree("tree_container", {css: "bg-gray"});
-
-@descr:
+<script>
+    const tree = new dhx.Tree("tree_container", {
+        css: "custom"
+    });
+</script>
+~~~
 
 **Related samples**:
 - [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)

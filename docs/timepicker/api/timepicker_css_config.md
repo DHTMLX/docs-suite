@@ -10,18 +10,23 @@ description: You can explore the css config of Timepicker in the documentation o
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-	.bg-grey {
-		background: #efefef;
-	}
+  .custom {
+    --dhx-font-color-primary: #c00;
+    --dhx-color-primary: #ff5c5c;
+  }
 </style>
 
-const timepicker = new dhx.Timepicker("timepicker_container", {
-	css: "dhx_timepicker--bordered bg-grey"
-});
-
-@descr:
+<script>
+	const timepicker = new dhx.Timepicker("timepicker_container", {
+  		css: "custom dhx_widget--bordered"
+	});
+</script>
+~~~
 
 **Related sample**: [Timepicker. Styling (custom CSS)](https://snippet.dhtmlx.com/n4xfu4e9)
 

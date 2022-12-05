@@ -10,22 +10,37 @@ description: You can explore the css config of Grid in the documentation of the 
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
+    .custom {
+        --dhx-font-color-primary: #fff;
+        --dhx-background-primary: #3A434A;
+        --dhx-s-grid-header-background: #2C3338;
+
+        --dhx-border-color: #4A555E;
+        --dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
     }
 </style>
- 
-const grid = new dhx.Grid("grid_container", {
-    css:"my_first_class my_second_class"
-});
 
-@descr:
+<script>
+	const grid = new dhx.Grid("grid_container", {
+    	columns: [
+        	{ minWidth: 150, id: "country", header: [{ text: "Country" }] },
+        	{ id: "population", header: [{ text: "Population" }] },
+        	{ id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+        	// more columns
+    	],
+    	adjust: true,
+    	data: dataset,
+    	css: "custom",
+	});
+</script>
+~~~
+
+**Related sample**: [Grid. Styling (custom CSS)](https://snippet.dhtmlx.com/c5tr3s5r)
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Grid:
 

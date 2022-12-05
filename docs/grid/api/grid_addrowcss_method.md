@@ -14,16 +14,21 @@ description: You can explore the addRowCss method of Grid in the documentation o
 - `rowId: string | number` - the id of a row
 - `css: string` - the name of the CSS class
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
     .myCustomClass{
         background:greenyellow;
     }
 </style>
 
-grid.addRowCss("2", "myCustomClass");
-
-@descr:
+<script>
+    ...
+    grid.addRowCss("2", "myCustomClass");
+</script>
+~~~
 
 **Related sample**: [Grid. Add row CSS](https://snippet.dhtmlx.com/idvmge2d)
 

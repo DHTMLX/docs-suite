@@ -10,15 +10,28 @@ description: You can explore the css config of Window in the documentation of th
 
 @signature: {'css?: string;'}
 
-@example:
-const dhxWindow = new dhx.Window({
-    title: "Window", 
-    css:"my_first_class my_second_class"
-}); 
-
-dhxWindow.show();
-
 @descr:
+#### Example
+
+~~~html
+<style>
+	.custom {
+		--dhx-background-primary: #efefef;
+	}
+</style>
+
+<script>
+	const dhxWindow = new dhx.Window({
+	    height: 400,
+	    width: 400,
+	    title: "window",
+	    css: "custom",
+	    html,
+	});
+	
+	dhxWindow.show();
+</script>
+~~~
 
 **Related sample**: [Window. Styling (custom CSS)](https://snippet.dhtmlx.com/t5mvhwx8)
 

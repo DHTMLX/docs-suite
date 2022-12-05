@@ -10,34 +10,40 @@ description: You can explore the css Config of Form in the documentation of the 
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .bg-white .dhx_input {
-        background: #fff;
+    .custom {
+        --dhx-background-primary: rgb(238, 238, 238);
+        --dhx-color-primary: #118d8d;
+        --dhx-color-primary-active: #118d8d;
+	    --dhx-color-primary-hover: #1ad1d1;
     }
 </style>
- 
- 
-const form = new dhx.Form("form_container", {
-    css:"bg-gray",
-    rows: [
-        {   
-            css:"bg-white",
-            type: "input",
-            label: "Name",
-            placeholder: "John Doe"
-        },
-        {
-            css:"bg-white",
-            type: "input",
-            label: "Email",
-            placeholder: "jd@mail.name"
-        },
-        // more options
-    ]
-});
 
-@descr:
+<script>
+	const form = new dhx.Form("form_container", {
+    	padding: 40,
+    	width: 400,
+    	css: "custom",
+    	rows: [
+        	{
+            	type: "input",
+            	label: "Name",
+            	placeholder: "John Doe",
+        	},
+        	{
+            	type: "input",
+            	label: "Email",
+            	placeholder: "jd@mail.name"
+        	},
+        	// more controls
+    	]
+	});
+</script>
+~~~
 
 **Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 

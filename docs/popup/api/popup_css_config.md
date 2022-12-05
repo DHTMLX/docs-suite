@@ -10,12 +10,26 @@ description: You can explore the css config of Popup in the documentation of the
 
 @signature: {'css?: string;'}
 
-@example:
-const popup = new dhx.Popup({
-    css:"my_first_class my_second_class"
-});
+@descr:
+#### Example
 
-popup.show();
+~~~html
+<style>
+	.custom {
+		--dhx-font-color-primary: var(--dhx-color-white);
+		--dhx-background-primary: var(--dhx-color-primary);
+
+		margin-top: 25px;
+		animation: opacity .4s ease-in-out forwards;
+	}
+</style>
+
+<script>
+	const popup = new dhx.Popup({
+	    css: "dhx_widget--border-shadow custom"
+	});
+</script>
+~~~
 
 @descr:
 

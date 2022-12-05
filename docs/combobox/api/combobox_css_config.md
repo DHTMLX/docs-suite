@@ -10,22 +10,26 @@ description: You can explore the css config of Combo Box in the documentation of
 
 @signature: {'css?: string;'}
 
-@example:
-<style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
-    }
-</style>
- 
-const combo = new dhx.Combobox("combo_container", { 
-    css:"my_first_class my_second_class"
-});
-
 @descr:
+#### Example
+
+~~~html
+<style>
+  	body {
+        margin: 0;
+    }
+	.custom-class .dhx_combobox-input-box {
+		border-radius: 20px;
+		background: #FFF;
+	}
+</style>
+
+<script>
+	const combobox = new dhx.Combobox("combobox_container", {
+    	css: "custom-class"
+	});
+</script>
+~~~
 
 **Related sample**: [Combobox. Styling (custom CSS)](https://snippet.dhtmlx.com/lldd739i)
 
