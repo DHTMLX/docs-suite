@@ -10,7 +10,9 @@ description: You can explore the customization of Slider in the documentation of
 
 There is a possibility to make changes in the look and feel of a slider. 
 
-![](../assets/slider/custom_style.png)
+![Styling Slider](../assets/slider/custom_style.png)
+
+**Related sample**: [Slider. Styling (custom CSS)](https://snippet.dhtmlx.com/ewizud5e)
 
 For this you need to take the following steps:
 
@@ -51,5 +53,3 @@ For example:
 	});
 </script>
 ~~~
-
-**Related sample**: [Slider. Styling (custom CSS)](https://snippet.dhtmlx.com/ewizud5e)

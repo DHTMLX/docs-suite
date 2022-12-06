@@ -53,6 +53,8 @@ There is a possibility to make changes in the look and feel of a menu.
 
 ![](../assets/menu/custom_menu.png)
 
+**Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
+
 For this you need to take the following steps:
 
 - add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
@@ -105,5 +107,3 @@ For example:
 	menu.data.parse(dataset);
 </script>
 ~~~
-
-**Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)

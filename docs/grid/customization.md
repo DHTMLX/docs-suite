@@ -10,9 +10,9 @@ description: You can explore the customization of Grid in the documentation of t
 
 There is a possibility to make changes in the look and feel of a grid. 
 
-![](../assets/grid/styling_grid.png)
+![Styling grid](../assets/grid/styling_grid.png)
 
-**Related sample**: [Grid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/xs7bixmg)
+**Related sample**: [Grid. Styling (custom CSS)](https://snippet.dhtmlx.com/c5tr3s5r)
 
 For this you need to take the following steps:
 
@@ -67,7 +67,37 @@ For example:
 </script>
 ~~~
 
-**Related sample**: [Grid. Styling (custom CSS)](https://snippet.dhtmlx.com/c5tr3s5r)
+## Styling selection
+
+![Styling selection](../assets/grid/styling_selection.png)
+
+**Related sample**: [Grid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/xs7bixmg)
+
+Here is an example of how you can style selection in Grid:
+
+~~~html
+<style>
+    .custom {
+        --dhx-color-primary: #ff5252;
+        --dhx-s-grid-selection-background: rgba(255, 198, 198, 1);
+    }
+</style>
+
+<script>
+	const grid = new dhx.Grid("grid_container", {
+    	columns: [
+        	{ minWidth: 150, id: "country", header: [{ text: "Country" }] },
+        	{ id: "population", header: [{ text: "Population" }] },
+        	{ id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+        	// more columns
+    	],
+    	adjust: true,
+    	data: dataset,
+		selection: true,
+    	css: "custom"
+	});
+</script>
+~~~
 
 ## Styling header cells
 

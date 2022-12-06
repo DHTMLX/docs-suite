@@ -10,7 +10,9 @@ description: You can explore the customization of Pagination in the documentatio
 
 There is a possibility to make changes in the look and feel of a pagination. 
 
-![](../assets/pagination/styling.png)
+![Styling Pagination](../assets/pagination/styling.png)
+
+**Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)
 
 For this you need to take the following steps:
 
@@ -55,5 +57,3 @@ For example:
 	});
 </script>
 ~~~
-
-**Related sample**: [Pagination. Styling (custom CSS)](https://snippet.dhtmlx.com/e7bujtsu)

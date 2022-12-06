@@ -44,7 +44,7 @@ const toolbarData = [
 
 There is a possibility to make changes in the look and feel of a toolbar. 
 
-![](../assets/toolbar/custom_style.png)
+![Styling Toolbar](../assets/toolbar/custom_style.png)
 
 **Related sample**: [Toolbar. Styling (custom CSS)](https://snippet.dhtmlx.com/uekgjwsi)
 

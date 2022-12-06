@@ -10,7 +10,9 @@ description: You can explore the customization of Layout in the documentation of
 
 There is a possibility to make changes in the look and feel of a layout by styling its cells. 
 
-![](../assets/layout/custom_css.png)
+![Styling cells](../assets/layout/custom_css.png)
+
+**Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 
 For this you need to take the following steps:
 
@@ -52,9 +54,19 @@ For example:
 		--dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
 	}
 
+	.layout-rightbar {
+		--dhx-background-primary: #e99949;
+	}
+	.layout-content {
+		--dhx-background-primary: #099f8e;
+	}
+	.layout-sidebar {
+		--dhx-background-primary: #e949ac;
+	}
 	.layout-header {
 		--dhx-background-primary: #3A434A;
 	}
+	
 	.dhx_layout-cell-inner_html {
 		height: 100%;
 		display: flex;
@@ -65,6 +77,8 @@ For example:
 
 <script>
 	const layout = new dhx.Layout("layout_container", {
+		type: "space",
+    	css: "layout",
 		rows: [
 	    	{
 	            id: "toolbar",
@@ -77,5 +91,3 @@ For example:
 	});
 </script>
 ~~~
-
-**Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)

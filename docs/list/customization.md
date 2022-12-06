@@ -8,7 +8,9 @@ description: You can explore the customization of List in the documentation of t
 
 ## Styling
 
-![](../assets/list/custom_style.png)
+![Styling List](../assets/list/custom_style.png)
+
+**Related sample**: [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
 
 There is a possibility to make changes in the look and feel of a list. For this you need to take the following steps:
 
@@ -55,13 +57,13 @@ For example:
 </script>
 ~~~
 
-**Related sample**: [List. Styling (custom CSS)](https://snippet.dhtmlx.com/s461f09w)
-
 ## Styling items
 
 You can style particular cells in the list.
 
-![](../assets/list/custom_css.png)
+![Styling items](../assets/list/custom_css.png)
+
+**Related sample**: [List. Styling (custom CSS for item)](https://snippet.dhtmlx.com/ipu9yshl)
 
 For example, apply some color to each even item, as in:
 
@@ -84,13 +86,11 @@ For example, apply some color to each even item, as in:
 </script>
 ~~~
 
-**Related sample**: [List. Styling (custom CSS for item)](https://snippet.dhtmlx.com/ipu9yshl)
-
 ## Adding custom selection
 
 It is also possible to customize selection of an item.
 
-![](../assets/list/custom_selection.png)
+![Custom selection](../assets/list/custom_selection.png)
 
 **Related sample**: [List. Styling selection with CSS](https://snippet.dhtmlx.com/6hss19d3)
 

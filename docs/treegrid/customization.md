@@ -10,9 +10,9 @@ description: You can explore the customization of TreeGrid in the documentation 
 
 There is a possibility to make changes in the look and feel of a treegrid. 
 
-![](../assets/treegrid/custom_style.png)
+![Styling TreeGrid](../assets/treegrid/custom_style.png)
 
-**Related sample**: [TreeGrid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/tejgztxd)
+**Related sample**: [TreeGrid. Styling (custom CSS)](https://snippet.dhtmlx.com/cpvir0od)
 
 For this you need to take the following steps:
 
@@ -66,7 +66,37 @@ For example:
 </script>
 ~~~
 
-**Related sample**: [TreeGrid. Styling (custom CSS)](https://snippet.dhtmlx.com/cpvir0od)
+## Styling selection
+
+![Styling selection](../assets/treegrid/styling_selection.png)
+
+**Related sample**: [TreeGrid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/tejgztxd)
+
+Here is an example of how you can style selection in TreeGrid:
+
+~~~html
+<style>
+    .custom {
+        --dhx-color-primary: #ff5252;
+        --dhx-s-grid-selection-background: rgba(255, 198, 198, 1);
+    }
+</style>
+
+<script>
+	const treeGrid = new dhx.TreeGrid("treegrid_container", {
+    	columns: [
+    	    { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
+    	    { id: "native", type: "string", header: [{ text: "Native name" }] },
+    	    { id: "capital", type: "string", header: [{ text: "Capital" }] },
+    	    { id: "currency", type: "string", header: [{ text: "Currency" }] }
+    	],
+    	data: dataset,
+    	selection: true,
+    	autoWidth: true,
+    	css: "custom",
+	});
+</script>
+~~~
 
 ## Styling header cells
 

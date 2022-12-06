@@ -70,7 +70,7 @@ const data = [
 
 There is a possibility to make changes in the look and feel of a ribbon. 
 
-![](../assets/ribbon/custom_style.png)
+![Styling Ribbon](../assets/ribbon/custom_style.png)
 
 **Related sample**: [Ribbon. Styling (custom CSS)](https://snippet.dhtmlx.com/9ckg47ro)
 

@@ -8,7 +8,13 @@ description: You can explore the customization of DataView in the documentation 
 
 ## Custom styling of widget
 
-There is a possibility to make changes in the look and feel of a dataview. For this you need to take the following steps:
+There is a possibility to make changes in the look and feel of a dataview. 
+
+![Custom dataview styles](../assets/dataview/custom_widget_styles.png)
+
+**Related sample**: [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
+
+For this you need to take the following steps:
 
 - add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case):
 
@@ -55,10 +61,6 @@ For example:
 	});
 </script>
 ~~~
-
-![Custom dataview styles](../assets/dataview/custom_widget_styles.png)
-
-**Related sample**: [Dataview. Styling (custom CSS)](https://snippet.dhtmlx.com/j1yv94o8)
 
 ## Custom styling of items
 

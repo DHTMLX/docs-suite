@@ -6,6 +6,8 @@ description: You can explore the contrast dark theme of DHTMLX Suite in the docu
 
 # Contrast dark theme
 
+<iframe src="https://snippet.dhtmlx.com/ff2kgvgq?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+
 The ["contrast-dark"](themes.md#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 
 ~~~css

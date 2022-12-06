@@ -10,7 +10,7 @@ description: You can explore the customization of Tree in the documentation of t
 
 There is a possibility to make changes in the look and feel of a tree. 
 
-![](../assets/tree/custom_style.png)
+![Styling Tree](../assets/tree/custom_style.png)
 
 **Related sample**: [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
 

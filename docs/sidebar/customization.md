@@ -58,7 +58,9 @@ const sidebarData = [
 
 There is a possibility to make changes in the look and feel of a sidebar. 
 
-![](../assets/sidebar/custom_style.png)
+![Styling Sidebar](../assets/sidebar/custom_style.png)
+
+**Related sample**: [Sidebar. Styling (custom CSS)](https://snippet.dhtmlx.com/3mhhvvcr)
 
 For this you need to take the following steps:
 
@@ -112,5 +114,3 @@ For example:
     sidebar.data.parse(data);
 </script>
 ~~~
-
-**Related sample**: [Sidebar. Styling (custom CSS)](https://snippet.dhtmlx.com/3mhhvvcr)
