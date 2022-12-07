@@ -31,6 +31,14 @@ Released on ...
 - Now sorting icon will also appear after sorting data via the `data.sort()` method
 - The ability to configure the [datePicker editor](grid/configuration.md#setting-type-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
 
+#### Layout
+
+- The ability to [show a progress bar for empty cells by default](layout/cell_configuration.md#progress-bar) (new [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) property of a Layout cell)
+- The ability to [hide/show a progress bar via API calls](layout/work_with_layout.md#showinghiding-a-progress-bar):
+    - new methods of Layout: [progressShow()](layout/api/layout_progressshow_method.md) and [progressHide()](layout/api/layout_progresshide_method.md)
+    - new method of a Layout cell: [progressShow()](layout/api/cell/layout_cell_progressshow_method.md) and [progressHide()](layout/api/cell/layout_cell_progresshide_method.md)
+- The ability to detach a component or HTML content from a cell (new [detach()](layout/api/cell/layout_cell_detach_method.md) method of a Layout cell)
+
 #### Message
 
 - The ability to close a message box (new [`close()`](message/api/message_close_method.md) method)

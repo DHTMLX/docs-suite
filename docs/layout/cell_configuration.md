@@ -186,6 +186,34 @@ const layout = new dhx.Layout("layout_container", {
 
 **Related sample**: [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
 
+## Progress bar
+
+You can configure a Layout cell so that it would render a progress bar (in other words, a loading spinner) if there is no any component or HTML content attached to the cell. To do that, enable the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute in the configuration object of the cell:
+
+~~~js {9,14}
+const layout = new dhx.Layout("layout_container", {
+    type: "line",
+    rows: [
+        {
+            id: "one",
+            header: "Header",
+            height: "250px",
+            resizable: true,
+            progressDefault: true
+        },
+        {
+            id: "two",
+            height: "250px",
+            progressDefault: true,
+        },
+    ]
+});
+~~~
+
+Note, as soon as you attach a component or HTML content to the cell, the progress bar will be hidden.
+
+By default, the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute is disabled.
+
 ## Resizability
 
 To allow resizing of a cell, make use of the [](layout/api/cell/layout_cell_resizable_config.md) option in the object of a cell. 
