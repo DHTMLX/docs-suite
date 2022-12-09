@@ -13,6 +13,8 @@ Version 8.0
 
 Released on ...
 
+### New functionality
+
 #### Styling
 
 - New ["light", "contrast-light", "dark", "contrast-dark"](themes.md) color themes
@@ -63,6 +65,10 @@ Released on ...
 #### Combobox
 
 - The [`addOption()`](combobox/api/combobox_addoption_method.md) method is updated (new `join` parameter)
+
+#### Grid/TreeGrid
+
+- The [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method is updated. Now the method returns an object with a set of methods: [`blur()`](grid/api/headerfilter/blur_method.md), [`clear()`](grid/api/headerfilter/clear_method.md), [`focus()`](grid/api/headerfilter/focus_method.md), [`getFilter()`](grid/api/headerfilter/getfilter_method.md), [`setValue()`](grid/api/headerfilter/setvalue_method.md). Check the [Migration](migration.md#73---80) article
 
 Version 7.3.12
 ----------------

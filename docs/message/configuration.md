@@ -33,14 +33,21 @@ dhx.message({
 
 From v8.0, you can close a message box via the [close()](message/api/message_close_method.md) method of the message box API:
 
-~~~js
-let m;
-function show() {
-    m = dhx.message({ text: "Here is dhtmlxMessage", icon: "dxi-close" });
-}
-document.querySelector("#close").addEventListener("click", () => {
-    m?.close()
-})
+~~~html
+<section class="dhx_sample-controls">
+	<button id="show" class="dhx_sample-btn dhx_sample-btn--flat" onclick="show()">show</button>
+	<button id="close" class="dhx_sample-btn dhx_sample-btn--flat" onclick="close()">close</button>
+</section>
+
+<script>
+    let m;
+    function show() {
+        m = dhx.message({ text: "Here is dhtmlxMessage", icon: "dxi-close" });
+    }
+    document.querySelector("#close").addEventListener("click", () => {
+        m?.close()
+    })
+</script>
 ~~~
 
 ## Alert box

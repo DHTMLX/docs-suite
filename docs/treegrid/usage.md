@@ -69,28 +69,29 @@ The return object includes the following attributes:
 
 ## Getting header filter
 
-You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset the focus on the filter, to change the filter, or clear it. For that, you should get an object of the header filter by column id via the [](treegrid/api/treegrid_getheaderfilter_method.md) method: 
+You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](treegrid/api/treegrid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
 
 ~~~js
-const countryFilter = treegrid.getHeaderFilter("capital");
-// -> return HTMLElement
-// <label class="dhx_grid-filter__label dxi dxi-magnify">...</label>
+// set a value by which a column will be filtered
+treegrid.getHeaderFilter("name").setValue("Brazil");
 
-countryFilter.focus();
+// set focus on the filter
+treegrid.getHeaderFilter("name").focus();
 
-// or
+// remove focus from the filter
+treegrid.getHeaderFilter("name").blur();
 
-const countryFilter = treegrid.getHeaderFilter("name");
-// -> return Combobox
-// Combobox {_uid: "u1597322507580", config: {…}, events: EventSystem, 
-// data: DataCollection, popup: Popup, …}
+// get an object of the filter
+const filter = treegrid.getHeaderFilter("name").getFilter();
+console.log(filter);
+// -> returns Combobox
+//  {config: {…}, _uid: 'u1670576316762', events: o, data: d, popup: f, …}
 
-countryFilter.blur();
+// clear the value set in the filter
+treegrid.getHeaderFilter("name").clear();
 ~~~
 
 **Related sample**: [TreeGrid. Get header filter](https://snippet.dhtmlx.com/vg5o912t)
-
-The method returns either an HTML object or an object with Combobox configuration.
 
 ## Hiding/showing a column
 

@@ -2156,7 +2156,21 @@ module.exports = {
                     "grid/api/grid_editend_method",
                     "grid/api/grid_getcellrect_method",
                     "grid/api/grid_getcolumn_method",
-                    "grid/api/grid_getheaderfilter_method",
+                    {
+                      type: "category",
+                      label: "getHeaderFilter()",
+                      link: {
+                        type: 'doc',
+                        id: "grid/api/grid_getheaderfilter_method",
+                      },
+                      items: [
+                        "grid/api/headerfilter/blur_method",
+                        "grid/api/headerfilter/clear_method",
+                        "grid/api/headerfilter/focus_method",
+                        "grid/api/headerfilter/getfilter_method",
+                        "grid/api/headerfilter/setvalue_method",
+                      ]
+                    },
                     "grid/api/grid_getscrollstate_method",
                     "grid/api/grid_getsortingstate_method",
                     "grid/api/grid_getspan_method",
@@ -3921,7 +3935,21 @@ module.exports = {
                     "treegrid/api/treegrid_expandall_method",
                     "treegrid/api/treegrid_getcellrect_method",
                     "treegrid/api/treegrid_getcolumn_method",
-                    "treegrid/api/treegrid_getheaderfilter_method",
+                    {
+                      type: "category",
+                      label: "getHeaderFilter()",
+                      link: {
+                        type: 'doc',
+                        id: "treegrid/api/treegrid_getheaderfilter_method",
+                      },
+                      items: [
+                        "treegrid/api/headerfilter/blur_method",
+                        "treegrid/api/headerfilter/clear_method",
+                        "treegrid/api/headerfilter/focus_method",
+                        "treegrid/api/headerfilter/getfilter_method",
+                        "treegrid/api/headerfilter/setvalue_method",
+                      ]
+                    },
                     "treegrid/api/treegrid_getscrollstate_method",
                     "treegrid/api/treegrid_getsortingstate_method",
                     "treegrid/api/treegrid_getspan_method",
