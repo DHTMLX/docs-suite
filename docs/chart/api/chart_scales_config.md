@@ -39,6 +39,11 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
 
 ## The list of config options for scales
 
+:::tip
+You can apply the options below to configure scales for charts with the following types: 
+"line", "spline", "bar", "x-bar", "area", "splineArea", "scatter".
+:::
+
 <table>
 	<tbody>
         <tr>
@@ -135,9 +140,9 @@ There are the following *types* of the scales: "left","right","top","bottom","ra
 </table>
 <br/>
 
-### The list of config options for radial scales
+## The list of config options for radial scales
 
-The **radial** scale is used for Radar chart and has its own properties, due to peculiarities of configuration:
+The **radial** scale is used for Radar chart (type: "radar") and has its own properties, due to peculiarities of configuration:
 
 <table>
 	<tbody>
