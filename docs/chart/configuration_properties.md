@@ -31,6 +31,10 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
+:::info
+It is necessary to configure [](chart/api/chart_scales_config.md) for the Line, Spline, Bar, X-Bar, Area, SplineArea, Radar, or Scatter chart.
+:::
+
 - [](chart/api/chart_series_config.md) - (*array*) defines configuration of chart series. [Check details below](#series).
 
 ~~~js
@@ -39,6 +43,10 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
+:::info
+The [](chart/api/chart_series_config.md) configuration option is required for all types of charts.
+:::
+
 - [](chart/api/chart_legend_config.md) - (*object*) defines the configuration of a chart legend. [Check details below](#legend).
 
 ~~~js
@@ -46,6 +54,10 @@ const chart = new dhx.Chart("chart_container", {
 	legend:{}
 });
 ~~~
+
+:::info
+The [](chart/api/chart_legend_config.md) configuration option is required for Treemap charts and is optional for other types of charts.
+:::
 
 - [](chart/api/chart_maxpoints_config.md) - (*number*) displays an average number of values in case a data set is too large to show all the values in the chart
 
