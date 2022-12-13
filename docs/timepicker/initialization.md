@@ -81,7 +81,17 @@ The detailed information on TimePicker configuration options can be found in the
 
 ## Set initial value (optional)
 
-You can set initial value for TimePicker using the **setValue()** method. It takes as a parameter the value to be set as a object Date, a string, or an array. Check details in the API reference.
+You can set initial value for TimePicker before initialization of the component via the [value](timepicker/api/timepicker_value_config.md) configuration option:
+
+~~~js {4}
+const timepicker = new dhx.Timepicker("timepicker_container", {
+    controls: true,
+    css: "dhx_widget--bordered",
+    value: new Date,
+});
+~~~
+
+If you need to set a specific value after initialization of TimePicker, use the [setValue()](timepicker/api/timepicker_setvalue_method.md) method:
 
 ~~~js
 // set the value as a string

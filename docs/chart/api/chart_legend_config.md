@@ -27,12 +27,13 @@ const chart = new dhx.Chart("chart_container", {
 
 
 @descr:
-
-**Related samples**:
-- [Chart. Enable legend](https://snippet.dhtmlx.com/00ei3q23)
-- [Chart. Legend position](https://snippet.dhtmlx.com/pgqf1yxj)
   
 ## The list of config options for legend (for charts with scales)
+
+:::tip
+You can apply the options below to configure the legend for charts with the following types: 
+"line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter".
+:::
 
 <table>
 	<tbody>
@@ -48,15 +49,15 @@ const chart = new dhx.Chart("chart_container", {
 		</tr>
 		<tr>
 			<td><b>halign</b></td>
-			<td>(<i>string</i>) the horizontal alignment of the legend block: "left" | "right" (by default) | "center"</td>
+			<td>(<i>string</i>) the horizontal alignment of the legend block: "left" | "right" (by default) | "center"<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/pgqf1yxj" target="_blank">Chart. Legend position</a></td>
 		</tr>
 		<tr>
 			<td><b>valign</b></td>
-			<td>(<i>string</i>) the vertical alignment of the block: "top" (by default) | "bottom" | "middle"</td>
+			<td>(<i>string</i>) the vertical alignment of the block: "top" (by default) | "bottom" | "middle"<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/pgqf1yxj" target="_blank">Chart. Legend position</a></td>
 		</tr>
 		<tr>
 			<td><b>series</b></td>
-			<td>(<i>array</i>) the list of series that should be shown in the legend</td>
+			<td>(<i>array</i>) the list of series that should be shown in the legend<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/00ei3q23" target="_blank">Chart. Enable legend</a></td>
 		</tr>
 		<tr>
 			<td><b>margin</b></td>
@@ -75,6 +76,11 @@ const chart = new dhx.Chart("chart_container", {
 
 ## The list of config options for legend (for charts without scales: Pie, Pie3D, Donut)
 
+:::tip
+You can apply the options below to configure the legend for charts with the following types: 
+"pie", "pie3D", "donut".
+:::
+
 <table>
 	<tbody>
        <tr>
@@ -84,6 +90,9 @@ const chart = new dhx.Chart("chart_container", {
                     <li><b>text</b> - (<i>string</i>) the pointer to the data value to take a text for the legend from</li>
                     <li><b>color</b> - (<i>string</i>) the pointer to the data value to take a color for the legend from</li>
                 </ul>
+				<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lobb80ig" target="_blank">Chart. Donut chart initialization</a><br>
+				<b>Related Sample: </b><a href="https://snippet.dhtmlx.com/jfbet749" target="_blank">Chart. Pie chart initialization</a><br>
+				<b>Related Sample: </b><a href="https://snippet.dhtmlx.com/xfce9pys" target="_blank">Chart. Pie 3D chart initialization</a>
             </td>
 		</tr>
 		<tr>
@@ -119,6 +128,10 @@ const chart = new dhx.Chart("chart_container", {
 
 
 ## The list of config options for legend (for charts without scales: Treemap)
+
+:::tip
+You can apply the options below to configure the legend for charts with the "treeMap" type.
+:::
 
 <table>
 	<tbody>

@@ -41,6 +41,11 @@ const chart = new dhx.Chart("chart_container", {
 
 ## The list of config options for series (for charts with scales)
 
+:::tip
+You can apply the options below to configure series for charts with the following types: 
+"line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter".
+:::
+
 <table>
 	<tbody>
     	<tr>
@@ -162,6 +167,11 @@ const chart = new dhx.Chart("chart_container", {
 
 ## The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
 
+:::tip
+You can apply the options below to configure series for charts with the following types: 
+"pie", "pie3D", "donut".
+:::
+
 <table>
 	<tbody>
         <tr>
@@ -217,6 +227,10 @@ const chart = new dhx.Chart("chart_container", {
 <br/>
 
 ## The list of config options for series (for charts without scales: Treemap)
+
+:::tip
+You can apply the options below to configure series for charts with the "treeMap" type.
+:::
 
 <table>
 	<tbody>
