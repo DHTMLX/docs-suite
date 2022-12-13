@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 7.3.13
+---------------
+
+Released on December...
+
+### Fixes
+
+- Grid. Fix the issue with checkbox editors of the column which appeared after double-click on one of the checkboxes
+- Grid. Fix work of the [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md) event
+- Grid. Now you can edit content in the spans of columns/rows via double-click on it
+- Layout. Fix the issue with resizing of cells for which sizes were not specified. The issue appeared after one of the Layout cells was hidden
+
 Version 7.3.12
 ----------------
 
