@@ -236,11 +236,11 @@ You can apply the options below to configure series for charts with the "treeMap
 	<tbody>
 		<tr>
 			<td><b>text</b></td>
-			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map labels of data values to. The index of the option is 0 (item[0]). </td>
+			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map labels of data values to. The index of the option is 1 (item[1]). </td>
 		</tr>
 		<tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to. The index of the option is 1 (item[1]).</td>
+			<td>(<i>string</i>) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to. The index of the option is 0 (item[0]).</td>
 		</tr>
 		<tr>
 			<td><b>direction</b></td>
@@ -267,6 +267,64 @@ You can apply the options below to configure series for charts with the "treeMap
 		<tr>
 			<td><b>showTextTemplate</b></td>
 			<td>(<i>function</i>) a function that specifies the template for showing values of data items on the chart</td>
+		</tr>
+    </tbody>
+</table>
+<br/>
+
+## The list of config options for series (for charts without scales: Heatmap)
+
+:::tip
+You can apply the options below to configure series for charts with the "heatMap" type.
+:::
+
+<table>
+	<tbody>
+		<tr>
+			<td><b>value</b></td>
+			<td>(<i>string</i>) required, points to the name of the <a href="../../data_loading#preparing-data-set">data set</a> property which sets the number content for the chart. The index of the option is 1 (point[1])</td>
+		</tr>
+		<tr>
+			<td><b>date</b></td>
+			<td>(<i>string</i>) required, points to the name of the <a href="../../data_loading#preparing-data-set">data set</a> property which sets the dates for the chart. The index of the option is 0 (point[0])</td>
+		</tr>
+		<tr>
+			<td><b>positiveColor</b></td>
+			<td>(<i>string</i>) optional, sets the color of positive values in the chart and legend. <br>By default, the color matches the value of the <b>--dhx-color-success</b> variable from the current <a href="../../../themes">color theme</a></td>
+		</tr>
+		<tr>
+			<td><b>negativeColor</b></td>
+			<td>(<i>string</i>) optional, sets the color of negative values in the chart and legend.<br>By default, the color matches the value of the <b>--dhx-color-danger</b> variable from the current <a href="../../../themes">color theme</a></td>
+		</tr>
+		<tr>
+			<td><b>color</b></td>
+			<td>(<i>string</i>) optional, sets the color of null values in the chart and legend. <br>By default, the color matches the value of the <b>--dhx-background-secondary</b> variable from the current <a href="../../../themes">color theme</a></td>
+		</tr>
+		<tr>
+			<td><b>weekStart</b></td>
+			<td>(<i>string</i>) optional, sets the starting day of the week: "monday" | "saturday" | "sunday" (by default)</td>
+		</tr>
+		<tr>
+			<td><b>dateFormat</b></td>
+			<td>(<i>string</i>) optional, defines the <a href="../../../calendar/api/calendar_dateformat_config">format of dates</a> in the tooltips ("%d/%m/%y" by default). In this format, you can specify dates in the data set </td>
+		</tr>
+		<tr>
+			<td><b>tooltip</b></td>
+			<td>(<i>boolean</i>) optional, defines whether tooltips should be shown when you hover over the chart cell; <i>true</i> by default
+			</td>
+		</tr>
+		<tr>
+			<td><b>tooltipTemplate</b></td>
+			<td>(<i>([string, number]) => string</i>) optional, a function that defines a template for the tooltip
+			</td>
+		</tr>
+		<tr>
+			<td><b>maxValue</b></td>
+			<td>(<i>number</i>) optional, the maximal value to be shown in the chart and legend. If there are values bigger than the maximal one, they will be painted with the color of the maximal value</td>
+		</tr>
+		<tr>
+			<td><b>minValue</b></td>
+			<td>(<i>number</i>) optional, the minimal value to be shown in the chart and legend. If there are values less than the minimal one, they will be painted with the color of the minimal value</td>
 		</tr>
     </tbody>
 </table>

@@ -192,4 +192,44 @@ You can apply the options below to configure the legend for charts with the "tre
     </tbody>
 </table>
 
+## The list of config options for legend (for charts without scales: Heatmap)
+
+:::tip
+You can apply the options below to configure the legend for charts with the "heatMap" type.
+:::
+
+<table>
+	<tbody>
+       <tr>
+			<td><b>values</b></td>
+			<td>(<i>object</i>) optional, an object with settings for the content of the legend. The object can contain the following properties:
+            	<ul>
+					<li><b>text</b> - (<i>string</i>) optional, the title of the legend</li>
+                    <li><b>tick</b> - (<i>number</i>) optional, sets the size of the main step (division) of the legend scale; 10 by default</li>
+					<li><b>majorTick</b> - (<i>number</i>) optional, sets the number of divisions between display of labels on the legend scale; 1 by default</li>
+					<li><b>step</b> - (<i>number</i>) optional, sets the step of display of divisions on the legend scale; 1 by default. <i>step: 1</i> means that each division will be displayed on the scale</li>
+					<li><b>tickTemplate</b> - (<i>string => string</i>) optional, sets a template for display of labels on the legend scale</li>
+                </ul>
+            </td>
+		</tr>
+		<tr>
+			<td><b>halign</b></td>
+			<td>(<i>string</i>) optional, the horizontal alignment of the legend: "left" | "right" (by default) | "center"</td>
+		</tr>
+		<tr>
+			<td><b>valign</b></td>
+			<td>(<i>string</i>) optional, the vertical alignment of the legend: "top" (by default) | "bottom" | "middle"</td>
+		</tr>
+		<tr>
+			<td><b>margin</b></td>
+			<td>(<i>number</i>) optional, margin between the series and the legend; 0 by default</td>
+		</tr>
+		<tr>
+			<td><b>size</b></td>
+			<td>(<i>number</i>) optional, defines the height of the legend container</td>
+		</tr>
+    </tbody>
+</table>
+
+
 [comment]: # (@related: chart/configuration_properties.md#legend)
