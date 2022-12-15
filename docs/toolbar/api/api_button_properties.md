@@ -6,96 +6,136 @@ description: You can explore the Button properties of Toolbar in the documentati
 
 # Toolbar Button properties
 
+### Usage
+
+~~~js
+const data = [
+	{
+		type: "button";
+		id?: string | number;
+		parent?: string | number;
+		value?: string;
+		html?: string;
+		css?: string | string[];
+		icon?: string;
+		items?: IMenuElement[]; // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
+		group?: string;
+		hotkey?: string;
+		tooltip?: string;
+		count?: number;
+		countColor?: "danger" | "secondary" | "primary" | "success";
+		multiClick?: boolean;
+		view?: "flat" | "link";
+		size?: "small" | "medium";
+		color?: "danger" | "secondary" | "primary" | "success";
+		full?: boolean;
+		circle?: boolean;
+		loading?: boolean;
+		hidden?: boolean;
+		disabled?: boolean;
+	},
+	// more Toolbar controls
+]
+~~~
+
+### Description
+
 <table>
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the type of a control, set it to "button". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+			<td>(required) the type of a control, set it to "button". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a control, auto-generated if not set</td>
+			<td>(optional) the id of a control, auto-generated if not set</td>
 		</tr>
         <tr>
 			<td><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the block</td>
+			<td>(optional) the parent of the block</td>
 		</tr>
 		<tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) a value of the button. You need to set either the <b>value</b> or <b>html</b> property to the button</td>
+			<td>(optional) a value of the button. You need to set either the <b>value</b> or <b>html</b> property to the button</td>
 		</tr>
 		<tr>
 			<td><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the button</td>
+			<td>(optional) a string with HTML that should be inserted into the button</td>
 		</tr>
         <tr>
 			<td><b>css</b></td>
-			<td>(<i>string</i>) adds style classes to a button</td>
+			<td>(optional) adds style classes to a button</td>
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) an <a href="../../button#adding-an-icon">icon</a> of the button</td>
+			<td>(optional) an <a href="../../button#adding-an-icon">icon</a> of the button</td>
 		</tr>
 		<tr>
 			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of nested controls.You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+			<td>(optional) an array of nested controls.You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
 		</tr>
 		<tr>
 			<td><b>group</b></td>
-			<td>(<i>string</i>) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive</td>
+			<td>(optional) defines the name of a group of controls a button belongs to. If one of the buttons in the group becomes active, all others automatically become inactive</td>
 		</tr>
         <tr>
 			<td><b>hotkey</b></td>
-			<td>(<i>string</i>) the name of the hot key for the button</td>
+			<td>(optional) the name of the hot key for the button</td>
 		</tr>
         <tr>
 			<td><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the button</td>
+			<td>(optional) a tooltip for the button</td>
 		</tr>
         <tr>
 			<td><b>count</b></td>
-			<td>(<i>number</i>) a badge with a number</td>
+			<td>(optional) a badge with a number</td>
 		</tr>
         <tr>
 			<td><b>countColor</b></td>
-			<td>(<i>string</i>) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
+			<td>(optional) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
 		</tr>
         <tr>
 			<td><b>multiClick</b></td>
-			<td>(<i>boolean</i>) if <i>true</i> - the "click" event will fire multiple times when the button is clicked and held; if <i>false</i> - the "click" event will fire on each click of the button
+			<td>(optional) if <i>true</i> - the "click" event will fire multiple times when the button is clicked and held; if <i>false</i> - the "click" event will fire on each click of the button
            </td>
 		</tr>
         <tr>
 			<td><b>view</b></td>
-			<td>(<i>string</i>) defines the look of a button: "flat"|"link"</td>
+			<td>(optional) defines the look of a button: "flat"|"link"</td>
 		</tr>
         <tr>
 			<td><b>size</b></td>
-			<td>(<i>string</i>) defines the size of a button: "small"|"medium"</td>
+			<td>(optional) defines the size of a button: "small"|"medium"</td>
 		</tr>
         <tr>
 			<td><b>color</b></td>
-			<td>(<i>string</i>) defines the color scheme of a button: "danger"|"secondary"|"primary"|"success"</td>
+			<td>(optional) defines the color scheme of a button: "danger"|"secondary"|"primary"|"success"</td>
 		</tr>
         <tr>
 			<td><b>full</b></td>
-			<td>(<i>boolean</i>) extends a button to the full width of a form</td>
+			<td>(optional) extends a button to the full width of a form</td>
 		</tr>
         <tr>
 			<td><b>circle</b></td>
-			<td>(<i>boolean</i>) makes the corners of a button round</td>
+			<td>(optional) makes the corners of a button round</td>
 		</tr>
         <tr>
 			<td><b>loading</b></td>
-			<td>(<i>boolean</i>) adds a spinner into a button</td>
+			<td>(optional) adds a spinner into a button</td>
 		</tr>
         <tr>
 			<td><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a button is hidden</td>
+			<td>(optional) defines whether a button is hidden</td>
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether a button is disabled</td>
+			<td>(optional) defines whether a button is disabled</td>
 		</tr>
     </tbody>
 </table>
+
+### Example
+
+<iframe src="https://snippet.dhtmlx.com/7aysw3gb?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="750"></iframe>
+
+**Related article:** [Button](toolbar/button.md)

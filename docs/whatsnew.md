@@ -74,6 +74,18 @@ Released on ...
 
 - The [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method is updated. Now the method returns an object with a set of methods: [`blur()`](grid/api/headerfilter/blur_method.md), [`clear()`](grid/api/headerfilter/clear_method.md), [`focus()`](grid/api/headerfilter/focus_method.md), [`getFilter()`](grid/api/headerfilter/getfilter_method.md), [`setValue()`](grid/api/headerfilter/setvalue_method.md). Check the [Migration](migration.md#73---80) article
 
+Version 7.3.13
+---------------
+
+Released on December 14, 2022
+
+### Fixes
+
+- Grid. Fix the issue with checkbox editors of the column which appeared after double-click on one of the checkboxes
+- Grid. Fix work of the [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md) event
+- Grid. Now you can edit content in the spans of columns/rows via double-click on it
+- Layout. Fix the issue with resizing of cells for which sizes were not specified. The issue appeared after one of the Layout cells was hidden
+
 Version 7.3.12
 ----------------
 
