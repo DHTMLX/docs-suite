@@ -272,7 +272,7 @@ You can apply the options below to configure series for charts with the "treeMap
 </table>
 <br/>
 
-## The list of config options for series (for charts without scales: Heatmap)
+## The list of config options for series (for charts without scales: Calendar heatmap)
 
 :::tip
 You can apply the options below to configure series for charts with the "heatMap" type.

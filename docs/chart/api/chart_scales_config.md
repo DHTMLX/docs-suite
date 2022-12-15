@@ -33,9 +33,11 @@ const chart = new dhx.Chart("chart_container", {
 
 @descr:
 
+:::info
 The `scales` object can contain a set of *key:value* pairs where *key* is the type of a scale and *value* is an object with configuration options of the scale.
 
 There are the following *types* of the scales: "left","right","top","bottom","radial".
+:::
 
 ## The list of config options for scales
 

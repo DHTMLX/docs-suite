@@ -192,7 +192,7 @@ You can apply the options below to configure the legend for charts with the "tre
     </tbody>
 </table>
 
-## The list of config options for legend (for charts without scales: Heatmap)
+## The list of config options for legend (for charts without scales: Calendar heatmap)
 
 :::tip
 You can apply the options below to configure the legend for charts with the "heatMap" type.

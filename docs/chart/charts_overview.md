@@ -20,11 +20,12 @@ All in all there are 11 types of chart, in the list below they are combined into
     - [Area chart](#area-chart)
     - [SplineArea chart](#splinearea-chart)
   - [Pie, Pie 3D and Donut chart](#pie-pie-3d-and-donut-chart)
-    - [Pie and Pie 3D Chart](#pie-and-pie-3d-chart)
-    - [Donut Chart](#donut-chart)
-  - [Radar Chart](#radar-chart)
-  - [Scatter Chart](#scatter-chart)
-  - [Treemap Chart](#treemap-chart)
+    - [Pie and Pie 3D chart](#pie-and-pie-3d-chart)
+    - [Donut chart](#donut-chart)
+  - [Radar chart](#radar-chart)
+  - [Scatter chart](#scatter-chart)
+  - [Treemap chart](#treemap-chart)
+  - [Calendar heatmap chart](#heatmap-chart)
 
 ## Line and Spline chart
 
@@ -79,7 +80,7 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 Pie chart and its variations are the best choice when you deal with proportions and percentages. It is a circular chart divided into proportional parts that illustrate relations between items in a data set.
 
-### Pie and Pie 3D Chart
+### Pie and Pie 3D chart
 
 ![Pie and Pie 3D charts](../assets/chart/pie_overview.png)
 
@@ -87,13 +88,13 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 **Related sample**: [Chart. Pie 3D chart initialization](https://snippet.dhtmlx.com/xfce9pys)
 
-### Donut Chart
+### Donut chart
 
 ![Donut chart](../assets/chart/donut_overview.png)
 
 **Related sample**: [Chart. Donut chart initialization](https://snippet.dhtmlx.com/lobb80ig)
 
-## Radar Chart
+## Radar chart
 
 This one is a two-dimensional chart that allows placing one or several series of values over multiple numerical variables. For example, Radar chart will help you to study how a number of parameters 
 relate to one item (the center point of a chart) and compare their values.
@@ -102,7 +103,7 @@ relate to one item (the center point of a chart) and compare their values.
 
 **Related sample**: [Chart. Radar chart initialization](https://snippet.dhtmlx.com/6otf4h0t)
 
-## Scatter Chart
+## Scatter chart
 
 The peculiarity of Scatter Chart is that it allows exploring relations between two sets of data in order to find out possible dependencies or patterns.
 
@@ -110,7 +111,7 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 **Related sample**: [Chart. Scatter chart initialization](https://snippet.dhtmlx.com/pkczfmpu)
 
-## Treemap Chart
+## Treemap chart
 
 A treemap chart presents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
 
@@ -119,3 +120,14 @@ A treemap chart presents a hierarchical visualization of data as a set of rectan
 **Related sample**: [Chart. Treemap chart initialization](https://snippet.dhtmlx.com/p31wzm0b)
 
 **Related sample**: [Chart. Treemap chart with groups initialization](https://snippet.dhtmlx.com/fmgnlue4)
+
+## Calendar heatmap chart 
+
+The calendar heatmap chart is a two dimensional calendar view that uses graduated colors to visualize certain number of events for specific days during a year. The whole time period in the chart is divided into years and years into months. Each cell in a column corresponds to a day of the week.
+
+The chart helps to display and identify daily patterns or anomalies over a long period.
+
+~~~todo
+add image
+~~~
+
