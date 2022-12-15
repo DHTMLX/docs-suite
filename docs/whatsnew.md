@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 7.3.13
 ---------------
 
-Released on December...
+Released on December 14, 2022
 
 ### Fixes
 
