@@ -6,15 +6,45 @@ description: You can explore the Datepicker properties of Toolbar in the documen
 
 # Toolbar Datepicker properties
 
-- `type` - *string* - the type of a control, set it to `"datePicker"`, if not specified - the [navItem](../../../toolbar/navitem/) type is applied by default
-- `css` - *string, string[]* - adds style classes to a Datepicker control
-- `dateFormat` - *string* - the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
-- `disabled` - *boolean* - defines whether a Datepicker control is disabled
-- `hidden` - *boolean* - defines whether a Datepicker is hidden
-- `icon` - *string* - optional, an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
-- `id` - *string* - the id of a control, auto-generated if not set
-- `label` - *string* - specifies an AREA label for the control
-- `parent` - *string* - the parent of the item
-- `placeholder` - *string* - optional, a tip for the input
-- `value` - *string, Date* - optional, the value of a datepicker
-- `width` - *string* - optional, the width of the field
+### Usage
+
+~~~js
+const data = [
+	{
+		type: "datePicker";
+	    css?: string | string[];
+        id?: string | number;
+	    dateFormat?: string;
+	    disabled?: boolean;
+	    hidden?: boolean;
+	    icon?: string;
+	    label?: string;
+	    parent?: string | number;
+	    placeholder?: string;
+	    value?: string | Date;
+	    width?: string;
+    },
+	// more Toolbar controls
+]
+~~~
+
+### Description
+
+- `type` - (required) the type of a control, set it to `"datePicker"`, if not specified - the [navItem](../../../toolbar/navitem/) type is applied by default
+- `css` - (optional) adds style classes to a Datepicker control
+- `id` - (optional) the id of a control, auto-generated if not set
+- `dateFormat` - (optional) the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
+- `disabled` - (optional) defines whether a Datepicker control is disabled
+- `hidden` - (optional) defines whether a Datepicker is hidden
+- `icon` - (optional) an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
+- `label` - (optional) specifies an AREA label for the control
+- `parent` - (optional) the parent of the item
+- `placeholder` - (optional) a tip for the input
+- `value` - (optional) the value of a datepicker
+- `width` - (optional) the width of the field
+
+### Example
+
+<iframe src="https://snippet.dhtmlx.com/3rotluou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+**Related article:** [Datepicker](toolbar/datepicker.md)

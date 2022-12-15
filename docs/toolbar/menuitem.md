@@ -72,7 +72,7 @@ toolbar.show(id);
 toolbar.hide(id);
 ~~~
 
-## Enabling/disabling a navItem
+## Enabling/disabling a menuItem
 
 Any menuItem in the toolbar can be enabled/disabled:
 

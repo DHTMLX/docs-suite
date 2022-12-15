@@ -6,59 +6,90 @@ description: You can explore the Input properties of Toolbar in the documentatio
 
 # Toolbar Input properties
 
+### Usage
+
+~~~js
+const data = [
+	{
+		type: "input";
+		id?: string | number;
+		parent?: string | number;
+		value?: string;
+		css?: string | string[];
+		icon?: string;
+		placeholder?: string;
+		width?: string;
+		autocomplete?: boolean;
+		label?: string;
+		tooltip?: string;
+		hidden?: boolean;
+		disabled?: boolean;
+    },
+	// more Toolbar controls
+]
+~~~
+
+### Description
+
 <table>
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) required, the type of a control, set it to "input". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+			<td>(required) the type of a control, set it to "input". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
 		<tr>
 			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a control, auto-generated if not set</td>
+			<td>(optional) the id of a control, auto-generated if not set</td>
 		</tr>
         <tr>
 			<td><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
+			<td>(optional) the parent of the item</td>
 		</tr>
         <tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) optional, the initial value of the field</td>
+			<td>(optional) the initial value of the field</td>
 		</tr>
         <tr>
 			<td><b>css</b></td>
-			<td>(<i>string|string[]</i>) adds style classes to an input </td>
+			<td>(optional) adds style classes to an input </td>
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
-			<td>(<i>string</i>) optional, the name of an <a href="../../customization">icon</a> from the used icon font</td>
+			<td>(optional) the name of an <a href="../../customization">icon</a> from the used icon font</td>
 		</tr>
 		<tr>
 			<td><b>placeholder</b></td>
-			<td>(<i>string</i>) optional, a tip for the input</td>
+			<td>(optional) a tip for the input</td>
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(<i>number</i>) optional, the width of the input field</td>
+			<td>(optional) the width of the input field</td>
 		</tr>
 		<tr>
 			<td><b>autocomplete</b></td>
-			<td>(<i>boolean</i>) optional, enables/disables the autocomplete functionality of the input; <i>false</i> by default</td>
+			<td>(optional) enables/disables the autocomplete functionality of the input; <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>label</b></td>
-			<td>(<i>string</i>) optional, specifies an AREA label for the Input control</td>
+			<td>(optional) specifies an AREA label for the Input control</td>
 		</tr>
 		<tr>
 			<td><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for an input</td>
+			<td>(optional) a tooltip for an input</td>
 		</tr>
         <tr>
 			<td><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether an input is hidden</td>
+			<td>(optional) defines whether an input is hidden</td>
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether an input is disabled</td>
+			<td>(optional) defines whether an input is disabled</td>
 		</tr>
     </tbody>
 </table>
+
+### Example
+
+<iframe src="https://snippet.dhtmlx.com/ykd0uii1?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
+
+**Related article:** [Input](toolbar/input.md)
