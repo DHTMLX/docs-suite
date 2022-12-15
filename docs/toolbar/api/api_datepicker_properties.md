@@ -49,4 +49,6 @@ const data = [
 
 <iframe src="https://snippet.dhtmlx.com/3rotluou?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
+**Change log:** The **editable** property was added in v8.0
+
 **Related article:** [Datepicker](toolbar/datepicker.md)
