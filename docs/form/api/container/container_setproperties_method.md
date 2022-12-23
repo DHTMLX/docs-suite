@@ -25,8 +25,8 @@ The method invokes the [afterChangeProperties](form/api/container/container_afte
 
 It is possible to change values of the following properties of the Container control:
 
-- `width` - *string, number, "content"* - the width of a control
 - `height` - *string, number, "content"* - the height of a control
 - `padding` - *string, number* - sets padding between a cell and a border of a control
+- `width` - *string, number, "content"* - the width of a control
   
 @changelog: added in v7.2

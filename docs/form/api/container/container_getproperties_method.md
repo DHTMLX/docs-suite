@@ -27,19 +27,19 @@ An object with the available properties of the control and their values.
 });
 
 form.getItem("container").getProperties();
-//-> the returned object
 
+//-> the returned object
 {
-    "width": "content",
-    "height": "400px",
-    "padding": 0
+    height: "400px",
+    padding: "12px 0px",
+    width: "content"
 },
 
 @descr:
 The returned object of the Container control can contain the following properties:
 
-- `width` - *string, number, "content"* - the width of a control
 - `height` - *string, number, "content"* - the height of a control
 - `padding` - *string, number* - sets padding between a cell and a border of a control
+- `width` - *string, number, "content"* - the width of a control
 
 @changelog: added in v7.2
