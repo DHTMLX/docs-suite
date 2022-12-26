@@ -15,24 +15,26 @@ description: You can explore the Properties of the Timepicker control of Form in
 	id?: string,
 	value?: Date | number | string | array | object,
 
-	controls?: boolean, // false by default
 	css?: string,
 	disabled?: boolean,
 	editable?: boolean, // false by default
 	height?: string | number | "content", // "content" by default
 	hidden?: boolean,
-	hiddenLabel?: boolean, // false by default 
+	padding?: string | number,
+	required?: boolean, // false by default
+	validation?: (input: string) => boolean,
+    width?: string | number | "content", // "content" by default
+	
+	controls?: boolean, // false by default
 	icon?: string,
+	placeholder?: string,
+	timeFormat?: 12 | 24, // 24 by default
+	valueFormat?: "string" | "timeObject", // "string" by default
+
+	hiddenLabel?: boolean, // false by default 
 	label?: string,
 	labelPosition?: "left" | "top", // "top" by default
 	labelWidth?: string | number,
-	padding?: string | number,
-	placeholder?: string,
-	required?: boolean, // false by default
-	timeFormat?: 12 | 24, // 24 by default
-	validation?: (input: string) => boolean,
-	valueFormat?: "string" | "timeObject", // "string" by default
-    width?: string | number | "content", // "content" by default
 
     helpMessage?: string,
 	preMessage?: string,
@@ -55,24 +57,24 @@ description: You can explore the Properties of the Timepicker control of Form in
     - The value set as an object:
         - for the `24-hour` format contains key:value pairs for hours, minutes and their values:<br> `{hour: 0, minute: 39}`
         - for the `12-hour` format contains key:value pairs for hours, minutes, am/pm identifiers and their values: <br> `{hour: 6, minute: 0, AM: true}`
-- `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons
 - `css` - (optional) adds style classes to a control
 - `disabled` - (optional) defines whether a control is enabled (false) or disabled (true)
 - `editable` - (optional) allows a user to enter the value of the control manually
 - `height` - (optional) the height of a control
 - `hidden` - (optional) defines whether a control is hidden
-- `hiddenLabel` - (optional) invisible label that will be used to identify the input on the server side
+- `padding` - (optional) sets padding between a cell and a border of the TimePicker control
+- `required` - (optional) defines whether a control is required
+- `validation` - (optional) [the validation function](form/work_with_form.md#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
+- `width` - (optional) the width of a control
+- `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons
 - `icon` - (optional) the name of an icon from the used icon font
+- `placeholder` - (optional) a tip for the input
+- `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly
+- `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string", "timeObject"
+- `hiddenLabel` - (optional) invisible label that will be used to identify the input on the server side
 - `label` - (optional) specifies a label for a control
 - `labelPosition` - (optional) defines the position of a label: "left"|"top"
 - `labelWidth` - (optional) sets the width of the label of a control
-- `padding` - (optional) sets padding between a cell and a border of the TimePicker control
-- `placeholder` - (optional) a tip for the input
-- `required` - (optional) defines whether a control is required
-- `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly
-- `validation` - (optional) [the validation function](form/work_with_form.md#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
-- `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string", "timeObject"
-- `width` - (optional) the width of a control
 - `helpMessage` - (optional) adds a help message to a control
 - `preMessage` - (optional) a message that contains instructions for interacting with the control
 - `successMessage` - (optional) a message that appears in case of successful validation of the control value

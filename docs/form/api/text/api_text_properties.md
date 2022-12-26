@@ -19,13 +19,15 @@ description: You can explore the Properties of the Text control of Form in the d
 	disabled?: boolean,
 	height?: string | number | "content", // "content" by default
 	hidden?: boolean,
-	hiddenLabel?: boolean, // false by default
-	inputType?: "text" | "password" | "number", // "text" by default
+	padding?: string | number,
+    width?: string | number | "content", // "content" by default
+
+    inputType?: "text" | "password" | "number", // "text" by default
+	
+    hiddenLabel?: boolean, // false by default
 	label?: string,
 	labelPosition?: "left" | "top", // "top" by default
 	labelWidth?: string | number,
-	padding?: string | number,
-    width?: string | number | "content", // "content" by default
 
     helpMessage?: string,
 	preMessage?: string,
@@ -71,12 +73,20 @@ description: You can explore the Properties of the Text control of Form in the d
             <td>(optional) defines whether a control is hidden</td>
         </tr>
         <tr>
-            <td><b>hiddenLabel</b></td>
-            <td>(optional) invisible label that will be used to identify the input on the server side</td>
+            <td><b>padding</b></td>
+            <td>(optional) sets padding between a cell and a border of the Text control</td>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>(optional) the width of a control</td>
         </tr>
         <tr>
             <td><b>inputType</b></td>
             <td>(optional) sets the type of an input: "text", "password", "number". <br />Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br />Use the "password" value to specify a field for entering a password.</td>
+        </tr>
+        <tr>
+            <td><b>hiddenLabel</b></td>
+            <td>(optional) invisible label that will be used to identify the input on the server side</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -89,14 +99,6 @@ description: You can explore the Properties of the Text control of Form in the d
         <tr>
             <td><b>labelWidth</b></td>
             <td>(optional) sets the width of the label of a control</td>
-        </tr>
-        <tr>
-            <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Text control</td>
-        </tr>
-        <tr>
-            <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>

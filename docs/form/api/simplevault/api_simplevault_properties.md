@@ -30,21 +30,23 @@ description: You can explore the Properties of the Simple Vault control  of Form
 
     css?: string,
     disabled?: boolean,
-    fieldName?: string,
     height?: string | number | "content", // "content" by default
     hidden?: boolean,
+    padding?: string | number,
+    required?: boolean,
+    width?: string | number | "content", // "content" by default
+        
+    fieldName?: string,
+    params?: {
+        [key: string]: any,
+    },
+    singleRequest?: boolean, // false by default
+
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
     labelWidth?: string | number,
-    padding?: string | number,
-    params?: {
-        [key: string]: any,
-    },
-    required?: boolean,
-    singleRequest?: boolean, // false by default
-    width?: string | number | "content", // "content" by default
-    
+
     helpMessage?: string,
     preMessage?: string,
     successMessage?: string,
@@ -96,16 +98,36 @@ description: You can explore the Properties of the Simple Vault control  of Form
             <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
         </tr>
         <tr>
-            <td><b>fieldName</b></td>
-            <td>(optional) sets the name of the file field in the form data that is sent to the server. By default takes its value from the value of the <b>name</b> property, or, if not specified, from the <b>id</b> attribute. </td>
-        </tr>
-        <tr>
             <td><b>height</b></td>
             <td>(optional) the height of a control</td>
         </tr>
         <tr>
             <td><b>hidden</b></td>
             <td>(optional) defines whether a control is hidden</td>
+        </tr>
+        <tr>
+            <td><b>padding</b></td>
+            <td>(optional) sets padding between a cell and a border of the SimpleVault control</td>
+        </tr>
+        <tr>
+            <td><b>required</b></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>(optional) the width of a control</td>
+        </tr>
+        <tr>
+            <td><b>fieldName</b></td>
+            <td>(optional) sets the name of the file field in the form data that is sent to the server. By default takes its value from the value of the <b>name</b> property, or, if not specified, from the <b>id</b> attribute. </td>
+        </tr>
+        <tr>
+            <td><b>params</b></td>
+            <td>(optional) adds extra parameters for sending an XMLHttpRequest</td>
+        </tr>
+        <tr>
+            <td><b>singleRequest</b></td>
+            <td>(optional) defines whether files are sent in one request, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
@@ -122,26 +144,6 @@ description: You can explore the Properties of the Simple Vault control  of Form
         <tr>
             <td><b>labelWidth</b></td>
             <td>(optional) sets the width of the label of a control</td>
-        </tr>
-        <tr>
-            <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the SimpleVault control</td>
-        </tr>
-        <tr>
-            <td><b>params</b></td>
-            <td>(optional) adds extra parameters for sending an XMLHttpRequest</td>
-        </tr>
-        <tr>
-            <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
-        </tr>
-        <tr>
-            <td><b>singleRequest</b></td>
-            <td>(optional) defines whether files are sent in one request, <i>false</i> by default</td>
-        </tr>
-        <tr>
-            <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>

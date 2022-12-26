@@ -14,20 +14,21 @@ description: You can explore the Properties of the Checkbox control of Form in t
     name?: string,
     id?: string,
     value?: string,
-
     checked?: boolean,
+    text?: string,
+
     css?: string,
     disabled?: boolean,
     height?: string | number | "content", // "content" by default
     hidden?: boolean,
+    padding?: string | number,
+    required?: boolean, // false by default
+    width?: string | number | "content", // "content" by default
+
     hiddenLabel?: boolean, // false by default
     label?: string,
     labelPosition?: "left" | "top", // "top" by default
     labelWidth?: string | number,
-    padding?: string | number,
-    required?: boolean, // false by default
-    text?: string,
-    width?: string | number | "content", // "content" by default
 
     helpMessage?: string,
     preMessage?: string,
@@ -61,6 +62,10 @@ description: You can explore the Properties of the Checkbox control of Form in t
             <td>(optional) defines the initial state of a checkbox</td>
         </tr>
         <tr>
+            <td><b>text</b></td>
+            <td>(optional) optional, the text value of a control. It's placed to the right of the control.</td>
+        </tr>
+        <tr>
             <td><b>css</b></td>
             <td>(optional) adds style classes to a control</td>
         </tr>
@@ -77,6 +82,18 @@ description: You can explore the Properties of the Checkbox control of Form in t
             <td>(optional) defines whether a checkbox is hidden</td>
         </tr>
         <tr>
+            <td><b>padding</b></td>
+            <td>(optional) sets padding between a cell and a border of a Checkbox control</td>
+        </tr>
+        <tr>
+            <td><b>required</b></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>(optional) the width of a control</td>
+        </tr>
+        <tr>
             <td><b>hiddenLabel</b></td>
             <td>(optional) invisible label that will be used to identify the input on the server side</td>
         </tr>
@@ -91,22 +108,6 @@ description: You can explore the Properties of the Checkbox control of Form in t
         <tr>
             <td><b>labelWidth</b></td>
             <td>(optional) sets the width of the label of a control</td>
-        </tr>
-        <tr>
-            <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of a Checkbox control</td>
-        </tr>
-        <tr>
-            <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
-        </tr>
-        <tr>
-            <td><b>text</b></td>
-            <td>(optional) optional, the text value of a control. It's placed to the right of the control.</td>
-        </tr>
-        <tr>
-            <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>

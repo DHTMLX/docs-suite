@@ -19,19 +19,21 @@ description: You can explore the Properties of the Textarea control of Form in t
 	disabled?: boolean,
 	height?: string | number | "content", // "content" by default
 	hidden?: boolean,
-	hiddenLabel?: boolean, // false by default
+	padding?: string | number,
+    required?: boolean, // false by default
+	validation?: string | (input: string | number) => boolean,
+    width?: string | number | "content", // "content" by default
+
+	maxlength?: number | string,
+	minlength?: number | string,
+    placeholder?: string,
+	readOnly?: boolean, // false by default
+	resizable?: boolean,
+
+    hiddenLabel?: boolean, // false by default
 	label?: string,
 	labelPosition?: "left" | "top", // "top" by default
 	labelWidth?: string | number,
-	maxlength?: number | string,
-	minlength?: number | string,
-	padding?: string | number,
-    placeholder?: string,
-	readOnly?: boolean, // false by default
-    required?: boolean, // false by default
-	resizable?: boolean,
-	validation?: string | (input: string | number) => boolean,
-    width?: string | number | "content", // "content" by default
 
 	helpMessage?: string,
 	preMessage?: string,
@@ -77,48 +79,12 @@ description: You can explore the Properties of the Textarea control of Form in t
             <td>(optional) defines whether a control is hidden</td>
         </tr>
         <tr>
-            <td><b>hiddenLabel</b></td>
-            <td>(optional) invisible label that will be used to identify the input on the server side</td>
-        </tr>
-        <tr>
-            <td><b>label</b></td>
-            <td>(optional) specifies a label for a control</td>
-        </tr>
-        <tr>
-            <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
-        </tr>
-        <tr>
-            <td><b>labelWidth</b></td>
-            <td>(optional) sets the width of the label of a control</td>
-        </tr>
-        <tr>
-            <td><b>maxlength</b></td>
-            <td>(optional) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
-        </tr>
-        <tr>
-            <td><b>minlength</b></td>
-            <td>(optional) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
-        </tr>
-        <tr>
             <td><b>padding</b></td>
             <td>(optional) sets padding between a cell and a border of the Textarea control</td>
         </tr>
         <tr>
-            <td><b>placeholder</b></td>
-            <td>(optional) a tip for the textarea</td>
-        </tr>
-        <tr>
-            <td><b>readOnly</b></td>
-            <td>(optional) defines whether a textarea is readonly</td>
-        </tr>
-        <tr>
             <td><b>required</b></td>
             <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
-        </tr>
-        <tr>
-            <td><b>resizable</b></td>
-            <td>(optional) adds a resizer icon into a textarea, if set to <i>true</i></td>
         </tr>
         <tr>
             <td><b>validation</b></td>
@@ -138,6 +104,42 @@ description: You can explore the Properties of the Textarea control of Form in t
         <tr>
             <td><b>width</b></td>
             <td>(optional) the width of a control</td>
+        </tr>
+        <tr>
+            <td><b>maxlength</b></td>
+            <td>(optional) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
+        </tr>
+        <tr>
+            <td><b>minlength</b></td>
+            <td>(optional) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
+        </tr>
+        <tr>
+            <td><b>placeholder</b></td>
+            <td>(optional) a tip for the textarea</td>
+        </tr>
+        <tr>
+            <td><b>readOnly</b></td>
+            <td>(optional) defines whether a textarea is readonly</td>
+        </tr>
+        <tr>
+            <td><b>resizable</b></td>
+            <td>(optional) adds a resizer icon into a textarea, if set to <i>true</i></td>
+        </tr>
+        <tr>
+            <td><b>hiddenLabel</b></td>
+            <td>(optional) invisible label that will be used to identify the input on the server side</td>
+        </tr>
+        <tr>
+            <td><b>label</b></td>
+            <td>(optional) specifies a label for a control</td>
+        </tr>
+        <tr>
+            <td><b>labelPosition</b></td>
+            <td>(optional) defines the position of a label: "left"|"top"</td>
+        </tr>
+        <tr>
+            <td><b>labelWidth</b></td>
+            <td>(optional) sets the width of the label of a control</td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>

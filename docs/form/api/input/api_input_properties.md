@@ -14,28 +14,30 @@ description: You can explore the Properties of the Input control of Form in the 
 	name?: string,
 	id?: string,
 	value?: string | number,
-
-	autocomplete?: boolean,
+	
 	css?: string,
 	disabled?: boolean,
 	height?: string | number | "content", // "content"
 	hidden?: boolean,
-	hiddenLabel?: boolean, // false by default
+	padding?: string | number,
+	required?: boolean, // false by default
+	validation?: string | (input: string | number) => boolean,
+	width?: string | number | "content", // "content" by default
+
+	autocomplete?: boolean,
 	icon?: string,
 	inputType?: "text" | "password" | "number", // "text" by default
-	label?: string,
-	labelPosition?: "left" | "top", // "top" by default
-	labelWidth?: string | number,
 	max?: number | string,
 	maxlength?: number | string,
 	min?: number | string,
 	minlength?: number | string,
-	padding?: string | number,
 	placeholder?: string,
 	readOnly?: boolean, // false by default
-	required?: boolean, // false by default
-	validation?: string | (input: string | number) => boolean,
-	width?: string | number | "content", // "content" by default
+
+	hiddenLabel?: boolean, // false by default
+	label?: string,
+	labelPosition?: "left" | "top", // "top" by default
+	labelWidth?: string | number,
 
 	helpMessage?: string,
 	preMessage?: string,
@@ -65,10 +67,6 @@ description: You can explore the Properties of the Input control of Form in the 
 			<td>(optional) the initial value of the input</td>
 		</tr>
 		<tr>
-			<td><b>autocomplete</b></td>
-			<td>(optional) enables/disables the autocomplete functionality of the input</td>
-		</tr>
-		<tr>
 			<td><b>css</b></td>
 			<td>(optional) adds style classes to a control</td>
 		</tr>
@@ -85,58 +83,10 @@ description: You can explore the Properties of the Input control of Form in the 
 			<td>(optional) makes an input hidden</td>
 		</tr>
 		<tr>
-			<td><b>hiddenLabel</b></td>
-			<td>(optional) invisible label that will be used to identify the input on the server side</td>
-		</tr>
-		<tr>
-			<td><b>icon</b></td>
-			<td>(optional) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
-		</tr>
-        <tr>
-			<td><b>inputType</b></td>
-			<td>(optional) sets the type of an input: "text", "password", "number". <br/>Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br/>Use the "password" value to specify a field for entering a password.</td>
-		</tr>
-		<tr>
-			<td><b>label</b></td>
-			<td>(optional) specifies a label for a control</td>
-		</tr>
-        <tr>
-			<td><b>labelPosition</b></td>
-			<td>(optional) defines the position of a label: "left"|"top"</td>
-		</tr>
-        <tr>
-			<td><b>labelWidth</b></td>
-			<td>(optional) sets the width of the label of a control</td>
-		</tr>
-		<tr>
-			<td><b>max</b></td>
-			<td>(optional) <a href="../../../work_with_form#minimal-and-maximal-values">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
-		</tr>
-		<tr>
-			<td><b>maxlength</b></td>
-			<td>(optional) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
-		</tr>
-		<tr>
-			<td><b>min</b></td>
-			<td>(optional) <a href="../../../work_with_form#minimal-and-maximal-values">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
-		</tr>
-		<tr>
-			<td><b>minlength</b></td>
-			<td>(optional) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
-		</tr>
-		<tr>
 			<td><b>padding</b></td>
 			<td>(optional) sets padding between a cell and a border of the Input control</td>
 		</tr>
 		<tr>
-			<td><b>placeholder</b></td>
-			<td>(optional) a tip for the input</td>
-		</tr>
-		<tr>
-			<td><b>readOnly</b></td>
-			<td>(optional) defines whether an input is readonly</td>
-		</tr>
-        <tr>
 			<td><b>required</b></td>
 			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
 		</tr>
@@ -159,6 +109,58 @@ description: You can explore the Properties of the Input control of Form in the 
         <tr>
 			<td><b>width</b></td>
 			<td>(optional) the width of a control</td>
+		</tr>
+		<tr>
+			<td><b>autocomplete</b></td>
+			<td>(optional) enables/disables the autocomplete functionality of the input</td>
+		</tr>
+		<tr>
+			<td><b>icon</b></td>
+			<td>(optional) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
+		</tr>
+        <tr>
+			<td><b>inputType</b></td>
+			<td>(optional) sets the type of an input: "text", "password", "number". <br/>Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br/>Use the "password" value to specify a field for entering a password.</td>
+		</tr>
+		<tr>
+			<td><b>max</b></td>
+			<td>(optional) <a href="../../../work_with_form#minimal-and-maximal-values">the maximal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+		</tr>
+		<tr>
+			<td><b>maxlength</b></td>
+			<td>(optional) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/>The attribute works with the following input types: "text", "password".</td>
+		</tr>
+		<tr>
+			<td><b>min</b></td>
+			<td>(optional) <a href="../../../work_with_form#minimal-and-maximal-values">the minimal value allowed in the input</a>. <br/>The attribute works only with the input type: "number". </td>
+		</tr>
+		<tr>
+			<td><b>minlength</b></td>
+			<td>(optional) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the input</a>. <br/> The attribute works with the following input types: "text", "password". </td>
+		</tr>
+		<tr>
+			<td><b>placeholder</b></td>
+			<td>(optional) a tip for the input</td>
+		</tr>
+		<tr>
+			<td><b>readOnly</b></td>
+			<td>(optional) defines whether an input is readonly</td>
+		</tr>
+		<tr>
+			<td><b>hiddenLabel</b></td>
+			<td>(optional) invisible label that will be used to identify the input on the server side</td>
+		</tr>
+		<tr>
+			<td><b>label</b></td>
+			<td>(optional) specifies a label for a control</td>
+		</tr>
+        <tr>
+			<td><b>labelPosition</b></td>
+			<td>(optional) defines the position of a label: "left"|"top"</td>
+		</tr>
+        <tr>
+			<td><b>labelWidth</b></td>
+			<td>(optional) sets the width of the label of a control</td>
 		</tr>
         <tr>
 			<td><b>helpMessage</b></td>

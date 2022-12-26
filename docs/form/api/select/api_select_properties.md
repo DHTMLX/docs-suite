@@ -27,16 +27,18 @@ description: You can explore the Properties of the Select control of Form in the
 	disabled?: boolean,
 	height?: string | number | "content", // "content" by default
 	hidden?: boolean,
-	hiddenLabel?: boolean, // false by default
-	icon?: string,
-	label?: string,
-	labelPosition?: "left" | "top", // "top" by default
-	labelWidth?: string | number,
 	padding?: string | number,
 	required?: boolean, // false by default
 	validation?: (input: string | number | boolean) => boolean,
 	width?: string | number | "content", // "content" by default
 	
+	icon?: string,
+
+	hiddenLabel?: boolean, // false by default
+	label?: string,
+	labelPosition?: "left" | "top", // "top" by default
+	labelWidth?: string | number,
+
 	helpMessage?: string,
 	preMessage?: string,
 	successMessage?: string,
@@ -90,26 +92,6 @@ description: You can explore the Properties of the Select control of Form in the
 			<td><b>hidden</b></td>
 			<td>(optional) defines whether a control is hidden</td>
 		</tr>
-		<tr>
-			<td><b>hiddenLabel</b></td>
-			<td>(optional) invisible label that will be used to identify the input on the server side</td>
-		</tr>
-		<tr>
-			<td><b>icon</b></td>
-			<td>(optional) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
-		</tr>
-		<tr>
-			<td><b>label</b></td>
-			<td>(optional) specifies a label for a control</td>
-		</tr>
-		<tr>
-			<td><b>labelPosition</b></td>
-			<td>(optional) defines the position of a label: "left"|"top"</td>
-		</tr>
-		<tr>
-			<td><b>labelWidth</b></td>
-			<td>(optional) sets the width of the label of a control</td>
-		</tr>
          <tr>
 			<td><b>padding</b></td>
 			<td>(optional) sets padding between a cell and a border of the Select control</td>
@@ -125,6 +107,26 @@ description: You can explore the Properties of the Select control of Form in the
 		<tr>
 			<td><b>width</b></td>
 			<td>(optional) the width of a control</td>
+		</tr>
+		<tr>
+			<td><b>icon</b></td>
+			<td>(optional) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
+		</tr>
+		<tr>
+			<td><b>hiddenLabel</b></td>
+			<td>(optional) invisible label that will be used to identify the input on the server side</td>
+		</tr>
+		<tr>
+			<td><b>label</b></td>
+			<td>(optional) specifies a label for a control</td>
+		</tr>
+		<tr>
+			<td><b>labelPosition</b></td>
+			<td>(optional) defines the position of a label: "left"|"top"</td>
+		</tr>
+		<tr>
+			<td><b>labelWidth</b></td>
+			<td>(optional) sets the width of the label of a control</td>
 		</tr>
 		<tr>
 			<td><b>helpMessage</b></td>
