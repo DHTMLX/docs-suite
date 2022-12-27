@@ -15,11 +15,13 @@ const data = [
 		id?: string | number;
 		parent?: string | number;
 		value?: string;
+
 		html?: string;
-		css?: string | string[];
 		tooltip?: string;
-		hidden?: boolean;
+
+		css?: string | string[];
 		disabled?: boolean;
+		hidden?: boolean;
     },
 	// more Toolbar controls
 ]
@@ -49,21 +51,21 @@ const data = [
 			<td><b>html</b></td>
 			<td>(optional) a string with HTML that should be inserted into the title</td>
 		</tr>
-        <tr>
-			<td><b>css</b></td>
-			<td>(optional) adds a custom CSS class</td>
-		</tr>
 		<tr>
 			<td><b>tooltip</b></td>
 			<td>(optional) a tooltip for the control</td>
 		</tr>
         <tr>
-			<td><b>hidden</b></td>
-			<td>(optional) defines whether a control is hidden</td>
+			<td><b>css</b></td>
+			<td>(optional) adds a custom CSS class</td>
 		</tr>
-        <tr>
+		<tr>
 			<td><b>disabled</b></td>
 			<td>(optional) defines whether a control is disabled</td>
+		</tr>
+        <tr>
+			<td><b>hidden</b></td>
+			<td>(optional) defines whether a control is hidden</td>
 		</tr>
     </tbody>
 </table>

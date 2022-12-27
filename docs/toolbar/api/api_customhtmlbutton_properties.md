@@ -14,9 +14,9 @@ const data = [
 		type: "customHTML";
 		id?: string | number;
 		parent?: string | number;
-		html?: string;
 		css?: string | string[];
 		hidden?: boolean;
+		html?: string;
 	},
 	// more Toolbar controls
 ]
@@ -39,16 +39,16 @@ const data = [
 			<td>(optional) the parent of the item</td>
 		</tr>
 		<tr>
-			<td><b>html</b></td>
-			<td>(optional) a string with HTML that should be inserted into the item</td>
-		</tr>
-		<tr>
 			<td><b>css</b></td>
 			<td>(optional) adds style classes</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
 			<td>(optional) defines whether an item is hidden</td>
+		</tr>
+		<tr>
+			<td><b>html</b></td>
+			<td>(optional) a string with HTML that should be inserted into the item</td>
 		</tr>
     </tbody>
 </table>
