@@ -17,7 +17,7 @@ const data = [
 		value?: string,
 		items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
 
-		count?: number | string,
+		count?: number,
 		countColor?: "danger" | "secondary" | "primary" | "success",
 		icon?: string,
 		tooltip?: string,
