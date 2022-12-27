@@ -11,21 +11,21 @@ description: You can explore the Datepicker properties of Toolbar in the documen
 ~~~js
 const data = [
 	{
-		type: "datePicker";
-        id?: string | number;
-	    parent?: string | number;
-	    value?: string | Date;
+		type: "datePicker",
+        id?: string | number,
+	    parent?: string | number,
+	    value?: string | Date,
 
-		dateFormat?: string;
-		icon?: string;
-	    label?: string;
-	    placeholder?: string;
+		dateFormat?: string,
+		icon?: string,
+	    label?: string,
+	    placeholder?: string,
 
-		css?: string | string[];
-	    disabled?: boolean;
-		editable?: boolean;
-	    hidden?: boolean;
-	    width?: string;
+		css?: string | string[],
+	    disabled?: boolean,
+		editable?: boolean,
+	    hidden?: boolean,
+	    width?: string,
     },
 	// more Toolbar controls
 ]

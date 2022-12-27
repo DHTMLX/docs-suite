@@ -11,30 +11,30 @@ description: You can explore the Button properties of Toolbar in the documentati
 ~~~js
 const data = [
 	{
-		type: "button";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
-		items?: IMenuElement[]; // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
+		type: "button",
+		id?: string | number,
+		parent?: string | number,
+		value?: string,
+		items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
 
-		circle?: boolean;
-		color?: "danger" | "secondary" | "primary" | "success";
-		count?: number;
-		countColor?: "danger" | "secondary" | "primary" | "success";
-		full?: boolean;
-		group?: string;
-		hotkey?: string;
-		html?: string;
-		icon?: string;
-		loading?: boolean;
-		multiClick?: boolean;
-		size?: "small" | "medium";
-		tooltip?: string;
-		view?: "flat" | "link";
+		circle?: boolean,
+		color?: "danger" | "secondary" | "primary" | "success",
+		count?: number,
+		countColor?: "danger" | "secondary" | "primary" | "success",
+		full?: boolean,
+		group?: string,
+		hotkey?: string,
+		html?: string,
+		icon?: string,
+		loading?: boolean,
+		multiClick?: boolean,
+		size?: "small" | "medium",
+		tooltip?: string,
+		view?: "flat" | "link",
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
 	},
 	// more Toolbar controls
 ]

@@ -11,12 +11,12 @@ description: You can explore the Custom HTML properties of Toolbar in the docume
 ~~~js
 const data = [
 	{
-		type: "customHTML";
-		id?: string | number;
-		parent?: string | number;
-		css?: string | string[];
-		hidden?: boolean;
-		html?: string;
+		type: "customHTML",
+		id?: string | number,
+		parent?: string | number,
+		css?: string | string[],
+		hidden?: boolean,
+		html?: string,
 	},
 	// more Toolbar controls
 ]

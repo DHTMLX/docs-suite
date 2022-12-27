@@ -11,23 +11,23 @@ description: You can explore the MenuItem properties of Toolbar in the documenta
 ~~~js
 const data = [
 	{
-		type: "menuItem";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
-		items?: IMenuElement[]; // ISpacer | ISeparator | IMenuItem
+		type: "menuItem",
+		id?: string | number,
+		parent?: string | number,
+		value?: string,
+		items?: IMenuElement[], // ISpacer | ISeparator | IMenuItem
 
-		count?: number | string;
-		countColor?: "danger" | "secondary" | "primary" | "success";
-		hotkey?: string;
-		html?: string;
-		icon?: string;
-		multiClick?: boolean;
-		tooltip?: string;
+		count?: number | string,
+		countColor?: "danger" | "secondary" | "primary" | "success",
+		hotkey?: string,
+		html?: string,
+		icon?: string,
+		multiClick?: boolean,
+		tooltip?: string,
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
     },
 	// more Toolbar controls
 ]

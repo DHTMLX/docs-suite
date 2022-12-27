@@ -11,26 +11,26 @@ description: You can explore the NavItem properties of Toolbar in the documentat
 ~~~js
 const data = [
 	{
-		type?: "navItem";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
-		items?: IMenuElement[]; // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
+		type?: "navItem",
+		id?: string | number,
+		parent?: string | number,
+		value?: string,
+		items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
 
-		active?: boolean;
-		count?: number | string;
-		countColor?: "danger" | "secondary" | "primary" | "success";
-		group?: string;
-		hotkey?: string;
-		html?: string;
-		icon?: string;
-		multiClick?: boolean;
-		tooltip?: string;
-		twoState?: boolean;
+		active?: boolean,
+		count?: number | string,
+		countColor?: "danger" | "secondary" | "primary" | "success",
+		group?: string,
+		hotkey?: string,
+		html?: string,
+		icon?: string,
+		multiClick?: boolean,
+		tooltip?: string,
+		twoState?: boolean,
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
     },
 	// more Toolbar controls
 ]

@@ -11,20 +11,20 @@ description: You can explore the SelectButton properties of Toolbar in the docum
 ~~~js
 const data = [
 	{
-		type: "selectButton";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
-		items?: IMenuElement[]; // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
+		type: "selectButton",
+		id?: string | number,
+		parent?: string | number,
+		value?: string,
+		items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
 
-		count?: number | string;
-		countColor?: "danger" | "secondary" | "primary" | "success";
-		icon?: string;
-		tooltip?: string;
+		count?: number | string,
+		countColor?: "danger" | "secondary" | "primary" | "success",
+		icon?: string,
+		tooltip?: string,
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
     },
 	// more Toolbar controls
 ]

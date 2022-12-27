@@ -11,8 +11,8 @@ description: You can explore the Spacer properties of Toolbar in the documentati
 ~~~js
 const data = [
 	{
-		type: "spacer";
-		id?: string | number;
+		type: "spacer",
+		id?: string | number,
     },
 	// more Toolbar controls
 ]

@@ -11,21 +11,21 @@ description: You can explore the ImageButton properties of Toolbar in the docume
 ~~~js
 const data = [
 	{
-		type: "imageButton";
-		id?: string | number;
-		parent?: string | number;
-		src: string;
+		type: "imageButton",
+		id?: string | number,
+		parent?: string | number,
+		src: string,
 		
-		count?: number | string;
-		countColor?: "danger" | "secondary" | "primary" | "success";
-		group?: string;
-		hotkey?: string;
-		multiClick?: boolean;
-		tooltip?: string;
+		count?: number | string,
+		countColor?: "danger" | "secondary" | "primary" | "success",
+		group?: string,
+		hotkey?: string,
+		multiClick?: boolean,
+		tooltip?: string,
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
     },
 	// more Toolbar controls
 ]

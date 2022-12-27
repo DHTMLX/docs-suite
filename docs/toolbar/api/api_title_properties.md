@@ -11,17 +11,17 @@ description: You can explore the Title properties of Toolbar in the documentatio
 ~~~js
 const data = [
 	{
-		type: "title";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
+		type: "title",
+		id?: string | number,
+		parent?: string | number,
+		value?: string,
 
-		html?: string;
-		tooltip?: string;
+		html?: string,
+		tooltip?: string,
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
     },
 	// more Toolbar controls
 ]

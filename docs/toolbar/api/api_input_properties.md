@@ -11,21 +11,21 @@ description: You can explore the Input properties of Toolbar in the documentatio
 ~~~js
 const data = [
 	{
-		type: "input";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
+		type: "input",
+		id?: string | number,
+		parent?: string | number,
+		value?: string,
 
-		autocomplete?: boolean;
-		icon?: string;
-		label?: string;
-		placeholder?: string;
-		tooltip?: string;
+		autocomplete?: boolean,
+		icon?: string,
+		label?: string,
+		placeholder?: string,
+		tooltip?: string,
 
-		css?: string | string[];
-		disabled?: boolean;
-		hidden?: boolean;
-		width?: string;
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
+		width?: string,
     },
 	// more Toolbar controls
 ]
