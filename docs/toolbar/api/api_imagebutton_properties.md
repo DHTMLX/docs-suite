@@ -13,7 +13,7 @@ const data = [
 	{
 		type: "imageButton",
 		id?: string | number,
-		parent?: string | number,
+		parent?: string,
 		src: string,
 		
 		count?: number,

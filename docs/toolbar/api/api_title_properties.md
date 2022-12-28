@@ -13,7 +13,7 @@ const data = [
 	{
 		type: "title",
 		id?: string | number,
-		parent?: string | number,
+		parent?: string,
 		value?: string,
 
 		html?: string,

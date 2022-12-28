@@ -13,7 +13,7 @@ const data = [
 	{
 		type: "menuItem",
 		id?: string | number,
-		parent?: string | number,
+		parent?: string,
 		value?: string,
 		items?: IMenuElement[], // ISpacer | ISeparator | IMenuItem
 

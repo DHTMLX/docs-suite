@@ -13,7 +13,7 @@ const data = [
 	{
 		type: "input",
 		id?: string | number,
-		parent?: string | number,
+		parent?: string,
 		value?: string,
 
 		autocomplete?: boolean,

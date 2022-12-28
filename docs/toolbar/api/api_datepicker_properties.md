@@ -13,7 +13,7 @@ const data = [
 	{
 		type: "datePicker",
         id?: string | number,
-	    parent?: string | number,
+	    parent?: string,
 	    value?: string | Date,
 
 		dateFormat?: string,

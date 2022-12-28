@@ -13,7 +13,7 @@ const data = [
 	{
 		type: "customHTML",
 		id?: string | number,
-		parent?: string | number,
+		parent?: string,
 		css?: string | string[],
 		hidden?: boolean,
 		html?: string,
