@@ -13,6 +13,9 @@ columns:[
     {
         id: string | number,
 	    width?: number,
+        minWidth?: number,
+	    maxWidth?: number,
+        autoWidth?: boolean,
 	    header: [
             {
                 text?: string | number,
@@ -52,26 +55,22 @@ columns:[
 	            customFilter?: (item: any, input: string) => boolean,
             }
         ],
-	    htmlEnable?: boolean,
-	    minWidth?: number,
-	    maxWidth?: number,
-	    mark?: { min?: string, max?: string } |
-               (cell: any, columnCells: any[], row: IRow, column: ICol) => string,
-	    type?: "string" | "number" | "boolean" | "date" | "percent",
-	    editorType?: "input" | "select" | "datePicker" | "checkbox" | 
-                     "combobox" | "multiselect" | "textarea",
+        type?: "string" | "number" | "boolean" | "date" | "percent",
+	    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea",
         format?: string,
 	    options?: any[],
 	    editorConfig?: { newOptions?: boolean } | ICalendarConfig,
+	    adjust?: "data" | "header" | "footer" | boolean,
+	    align?: "left" | "center" | "right",
+        htmlEnable?: boolean,
+	    hidden?: boolean,
+        draggable?: boolean,
 	    editable?: boolean,
 	    resizable?: boolean,
 	    sortable?: boolean,
-	    draggable?: boolean,
+	    mark?: { min?: string, max?: string } |
+               (cell: any, columnCells: any[], row?: IRow, column?: ICol) => string,
 	    template?: (cellValue: any, row: IRow, col: ICol) => string,
-	    hidden?: boolean,
-	    adjust?: "data" | "header" | "footer" | boolean,
-	    autoWidth?: boolean,
-	    align?: "left" | "center" | "right",
 	    tooltip?: boolean,
 	    tooltipTemplate?: (cellValue: any, row: IRow, col: ICol) => string,
     },
@@ -92,6 +91,22 @@ columns:[
 			<td>(optional) the width of a column. The minimum with of the column is 20 px.<br>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
 		</tr>
         <tr>
+			<td><b>minWidth</b></td>
+			<td>(optional) the minimum width to be set for a column. The minimum width of a column is 20px. <br/> 
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Columns min width</a>
+            </td>
+		</tr>
+        <tr>
+			<td><b>maxWidth</b></td>
+			<td>(optional) the maximal width to be set for a column <br/>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank">Grid. Columns max width</a>
+            </td>
+		</tr>
+        <tr>
+			<td><a href="../../configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
+			<td>(optional) enables/disables the ability of a column to adjust its size to the size of Grid<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
+		</tr>
+        <tr>
 			<td><b>header</b></td>
 			<td>(required) an array of objects with header rows configuration. Each header object may include:
             <ul>
@@ -100,7 +115,7 @@ columns:[
             <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
             <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>
             <li><b>css</b> - (optional) styling to be applied to a header</li>
-            <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (optional additional content of a header, which can be:
+            <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (optional) additional content of a header, which can be:
                 <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
                 <ol>- one of the methods that process values in a column and show result in the header: "avg" | "sum" | "max" | "min" | "count"</ol>
                 <ol>- some other string</ol>
@@ -153,37 +168,6 @@ columns:[
             </td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
-			<td>(optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html in data</a>
-           </td>
-		</tr>
-        <tr>
-			<td><b>minWidth</b></td>
-			<td>(optional) the minimum width to be set for a column. The minimum width of a column is 20px. <br/> 
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Columns min width</a>
-            </td>
-		</tr>
-        <tr>
-			<td><b>maxWidth</b></td>
-			<td>(optional) the maximal width to be set for a column <br/>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/ku3cfaux" target="_blank">Grid. Columns max width</a>
-            </td>
-		</tr>
-        <tr>
-			<td><a href="../../customization#adding-custom-marks-to-cells"><b>mark</b></a></td>
-			<td>(optional) returns a template for marking a cell(s)
-            <ul><li>as an <i>object</i> contains <b>min</b> and <b>max</b> properties, to apply desired CSS classes to cells with minimal|maximal values in a column </li>
-            <li>as a <i>function</i> takes several parameters:
-            <ol>- <b>cell</b> - (<i>string</i>) the value of a cell</ol>
-            <ol>- <b>columnCells</b> - (<i>array</i>) an array of all cell values in the specified column</ol>
-            <ol>- <b>row</b> - (<i>object</i>) an object with all cells in a row</ol>
-            <ol>- <b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</ol>
-            </li></ul>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark cells</a>
-            </td>
-		</tr>
-        <tr>
 			<td><b>type</b></td>
 			<td>(optional) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:
 			<ul><li><i>"string" (by default)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li>
@@ -216,6 +200,30 @@ columns:[
             </td>
 		</tr>
         <tr>
+			<td><a href="../../configuration#autosize-for-columns"><b>adjust</b></a></td>
+			<td>(optional) defines whether the width of a column is automatically adjusted to its content.<br><br><li>The property has a priority over the <a href="../../configuration/#autowidth-for-columns">autoWidth</a> property if it is specified either for the grid or for the column, and over the <b>width</b> property of the column.</li><li>The width the columns will be adjusted to also depends on the values of the <b>minWidth/maxWidth</b> properties if they are set for a column.</li></td>
+		</tr>
+        <tr>
+			<td><a href="../../configuration#alignment"><b>align</b></a></td>
+			<td>(optional) aligns data in a column: "left" | "center" | "right"</td>
+		</tr>
+        <tr>
+			<td><a href="../../configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
+			<td>(optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html in data</a>
+           </td>
+		</tr>
+        <tr>
+			<td><a href="../../configuration#hidden-columns"><b>hidden</b></a></td>
+			<td>(optional) defines whether a column is hidden <br/>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden columns</a>
+           </td>
+		</tr>
+        <tr>
+			<td><a href="../../configuration#drag-n-drop-inside-the-grid"><b>draggable</b></a></td>
+			<td>(optional) defines whether a column is draggable</td>
+		</tr>
+        <tr>
 			<td><a href="../../configuration#editing-grid-and-separate-columns"><b>editable</b></a></td>
 			<td>(optional) defines whether a column is editable</td>
 		</tr>
@@ -228,37 +236,28 @@ columns:[
 			<td>(optional) defines whether a column is sortable</td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#drag-n-drop-inside-the-grid"><b>draggable</b></a></td>
-			<td>(optional) defines whether a column is draggable</td>
+			<td><a href="../../customization#adding-custom-marks-to-cells"><b>mark</b></a></td>
+			<td>(optional) can be either an object or a function:
+            <ul><li>as an <i>object</i> contains <b>min</b> and <b>max</b> properties, to apply desired CSS classes to cells with minimal|maximal values in a column </li>
+            <li>as a <i>function</i> returns a template for marking a cell(s) and takes several parameters:
+            <ol>- <b>cell</b> - (required) the value of a cell</ol>
+            <ol>- <b>columnCells</b> - (required) an array of all cell values in the specified column</ol>
+            <ol>- <b>row</b> - (optional) an object with all cells in a row</ol>
+            <ol>- <b>col</b> - (optional) an object with the configuration of a column (see the <b>columns</b> config)</ol>
+            </li></ul>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark cells</a>
+            </td>
 		</tr>
         <tr>
 			<td><a href="../../customization#adding-template-to-cells"><b>template</b></a></td>
 			<td>(optional) a function which returns a template with content for a cell(s). Takes 3 parameters:
             <ul>
-                <li><b>cellValue</b> - (<i>any</i>) the value of a cell</li>
-                <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
-                <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
+                <li><b>cellValue</b> - (required) the value of a cell</li>
+                <li><b>row</b> - (required) an object with all cells in a row</li>
+                <li><b>col</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank">Grid. Cell templates</a>
             </td>
-		</tr>
-        <tr>
-			<td><a href="../../configuration#hidden-columns"><b>hidden</b></a></td>
-			<td>(optional) defines whether a column is hidden <br/>
-            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden columns</a>
-           </td>
-		</tr>
-        <tr>
-			<td><a href="../../configuration#autosize-for-columns"><b>adjust</b></a></td>
-			<td>(optional) defines whether the width of a column is automatically adjusted to its content.<br><br><li>The property has a priority over the <a href="../../configuration/#autowidth-for-columns">autoWidth</a> property if it is specified either for the grid or for the column, and over the <b>width</b> property of the column.</li><li>The width the columns will be adjusted to also depends on the values of the <b>minWidth/maxWidth</b> properties if they are set for a column.</li></td>
-		</tr>
-        <tr>
-			<td><a href="../../configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
-			<td>(optional) enables/disables the ability of a column to adjust its size to the size of Grid<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
-		</tr>
-        <tr>
-			<td><a href="../../configuration#alignment"><b>align</b></a></td>
-			<td>(optional) aligns data in a column: "left" | "center" | "right"</td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#tooltip"><b>tooltip</b></a></td>
@@ -268,9 +267,9 @@ columns:[
 			<td><a href="../../customization#adding-template-to-tooltip"><b>tooltipTemplate</b></a></td>
 			<td>(optional) a function which returns a template for the content of the tooltip. Takes 3 parameters:
             <ul>
-                <li><b>value</b> - (<i>any</i>) the value of a cell</li>
-                <li><b>row</b> - (<i>object</i>) an object with all cells in a row</li>
-                <li><b>col</b> - (<i>object</i>) the config of a column (see the <b>columns</b> config)</li>
+                <li><b>value</b> - (required) the value of a cell</li>
+                <li><b>row</b> - (required) an object with all cells in a row</li>
+                <li><b>col</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li>
             </ul>
             Returning <code>false</code> from the function will block showing of the tooltip
             </td>
