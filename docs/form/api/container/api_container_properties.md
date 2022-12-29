@@ -6,13 +6,39 @@ description: You can explore the Properties of the Container control of Form in 
 
 # Container properties
 
-- `type` - *string* - the type of a control, set it to "container"
-- `html` - *HTMLElement, string* - the HTML content of a control
-- `css` - *string* - adds style classes to a control string
-- `disabled` - *boolean* - defines whether a control is enabled (false) or disabled (true)
-- `height` - *string, number, "content"* - the height of a control
-- `hidden` - *boolean* - defines whether a control is hidden
-- `id` - *string* - the id of a control, auto-generated if not set
-- `name` - *string* - the name of a control
-- `padding` - *string, number* - sets padding between a cell and a border of a control
-- `width` - *string, number, "content"* - the width of a control
+### Usage
+
+~~~js
+{
+	type: "container",
+    name?: string,
+    id?: string,
+    html?: HTMLElement | string,
+    
+    css?: string,
+    disabled?: boolean,
+    height?: string | number | "content", // "content" by default
+    hidden?: boolean,
+    padding?: string | number,
+    width?: string | number | "content", // "content" by default
+}
+~~~
+
+### Description
+
+- `type` - (required) the type of a control, set it to "container"
+- `name` - (optional) the name of a control
+- `id` - (optional) the id of a control, auto-generated if not set
+- `html` - (optional) the HTML content of a control
+- `css` - (optional) adds style classes to a control string
+- `disabled` - (optional) defines whether a control is enabled (false) or disabled (true)
+- `height` - (optional) the height of a control
+- `hidden` - (optional) defines whether a control is hidden
+- `padding` - (optional) sets padding between a cell and a border of a control
+- `width` - (optional) the width of a control
+
+### Example
+
+<iframe src="https://snippet.dhtmlx.com/cnxi9eqq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+
+**Related article:** [Container](form/container.md)

@@ -11,19 +11,21 @@ description: You can explore the Datepicker properties of Toolbar in the documen
 ~~~js
 const data = [
 	{
-		type: "datePicker";
-	    css?: string | string[];
-        id?: string | number;
-	    dateFormat?: string;
-	    disabled?: boolean;
-	    editable?: boolean;
-	    hidden?: boolean;
-	    icon?: string;
-	    label?: string;
-	    parent?: string | number;
-	    placeholder?: string;
-	    value?: string | Date;
-	    width?: string;
+		type: "datePicker",
+        id?: string | number,
+	    parent?: string,
+	    value?: string | Date,
+
+		dateFormat?: string,
+		icon?: string,
+	    label?: string,
+	    placeholder?: string,
+
+		css?: string | string[],
+	    disabled?: boolean,
+		editable?: boolean,
+	    hidden?: boolean,
+	    width?: string,
     },
 	// more Toolbar controls
 ]
@@ -32,17 +34,17 @@ const data = [
 ### Description
 
 - `type` - (required) the type of a control, set it to `"datePicker"`, if not specified - the [navItem](../../../toolbar/navitem/) type is applied by default
-- `css` - (optional) adds style classes to a Datepicker control
 - `id` - (optional) the id of a control, auto-generated if not set
+- `parent` - (optional) the parent of the item
+- `value` - (optional) the value of a datepicker
 - `dateFormat` - (optional) the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
+- `icon` - (optional) an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
+- `label` - (optional) specifies an AREA label for the control
+- `placeholder` - (optional) a tip for the input
+- `css` - (optional) adds style classes to a Datepicker control
 - `disabled` - (optional) defines whether a Datepicker control is disabled
 - `editable` - (optional) allows a user to enter the value of the control manually; *false* by default
 - `hidden` - (optional) defines whether a Datepicker is hidden
-- `icon` - (optional) an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
-- `label` - (optional) specifies an AREA label for the control
-- `parent` - (optional) the parent of the item
-- `placeholder` - (optional) a tip for the input
-- `value` - (optional) the value of a datepicker
 - `width` - (optional) the width of the field
 
 ### Example

@@ -39,17 +39,17 @@ The returned object of the **Spacer** control can contain the following configur
 <table>
 	<tbody>
 		<tr>
-			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
-		</tr>
-         <tr>
-			<td><b>padding</b></td>
-			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
-		</tr>	
-		<tr>
 			<td><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
+        <tr>
+			<td><b>padding</b></td>
+			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
+		</tr>
+		<tr>
+			<td><b>width</b></td>
+			<td>(<i>string|number|"content"</i>) the width of a control</td>
+		</tr>	
     </tbody>
 </table>
 
