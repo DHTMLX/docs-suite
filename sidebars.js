@@ -3458,72 +3458,113 @@ module.exports = {
                 id: "tabbar/api/api_overview",
               },
               items: [
-                //"tabbar/api/api_overview",
                 {
                   type: "category",
-                  label: "Tabbar methods",
+                  label: "Common Tabbar API",
+                  collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "Tabbar methods",
-                    keywords: ['tabbar methods'],
+                    title: "Common Tabbar API",
+                    keywords: ['common tabbar api'],
                     image: '/img/docusaurus.png'
                   },
                   items: [
-                    "tabbar/api/tabbar_addtab_method",
-                    "tabbar/api/tabbar_destructor_method",
-                    "tabbar/api/tabbar_disabletab_method",
-                    "tabbar/api/tabbar_enabletab_method",
-                    "tabbar/api/tabbar_getactive_method",
-                    "tabbar/api/tabbar_getcell_method",
-                    "tabbar/api/tabbar_getid_method",
-                    "tabbar/api/tabbar_getwidget_method",
-                    "tabbar/api/tabbar_isdisabled_method",
-                    "tabbar/api/tabbar_paint_method",
-                    "tabbar/api/tabbar_removetab_method",
-                    "tabbar/api/tabbar_setactive_method",
+                    //"tabbar/api/api_overview",
+                    {
+                      type: "category",
+                      label: "Tabbar methods",
+                      link: {
+                        type: 'generated-index',
+                        title: "Tabbar methods",
+                        keywords: ['tabbar methods'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "tabbar/api/tabbar_addtab_method",
+                        "tabbar/api/tabbar_destructor_method",
+                        "tabbar/api/tabbar_disabletab_method",
+                        "tabbar/api/tabbar_enabletab_method",
+                        "tabbar/api/tabbar_getactive_method",
+                        "tabbar/api/tabbar_getcell_method",
+                        "tabbar/api/tabbar_getid_method",
+                        "tabbar/api/tabbar_getwidget_method",
+                        "tabbar/api/tabbar_isdisabled_method",
+                        "tabbar/api/tabbar_paint_method",
+                        "tabbar/api/tabbar_removetab_method",
+                        "tabbar/api/tabbar_setactive_method",
+                      ],
+                    },
+                    {
+                      type: "category",
+                      label: "Tabbar events",
+                      link: {
+                        type: 'generated-index',
+                        title: "Tabbar events",
+                        keywords: ['tabbar events'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "tabbar/api/tabbar_afterclose_event",
+                        "tabbar/api/tabbar_beforechange_event",
+                        "tabbar/api/tabbar_beforeclose_event",
+                        "tabbar/api/tabbar_change_event",
+                      ],
+                    },
+                    {
+                      type: "category",
+                      label: "Tabbar properties",
+                      link: {
+                        type: 'generated-index',
+                        title: "Tabbar properties",
+                        keywords: ['tabbar properties'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "tabbar/api/tabbar_activetab_config",
+                        "tabbar/api/tabbar_closable_config",
+                        "tabbar/api/tabbar_css_config",
+                        "tabbar/api/tabbar_disabled_config",
+                        "tabbar/api/tabbar_mode_config",
+                        "tabbar/api/tabbar_nocontent_config",
+                        "tabbar/api/tabbar_tabalign_config",
+                        "tabbar/api/tabbar_tabautoheight_config",
+                        "tabbar/api/tabbar_tabautowidth_config",
+                        "tabbar/api/tabbar_tabheight_config",
+                        "tabbar/api/tabbar_tabwidth_config",
+                        "tabbar/api/tabbar_views_config",
+                      ],
+                    },
                   ],
                 },
                 {
                   type: "category",
-                  label: "Tabbar events",
+                  label: "Cell API",
+                  collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "Tabbar events",
-                    keywords: ['tabbar events'],
+                    title: "Cell API",
+                    keywords: ['cell api'],
                     image: '/img/docusaurus.png'
                   },
-                  items: [
-                    "tabbar/api/tabbar_afterclose_event",
-                    "tabbar/api/tabbar_beforechange_event",
-                    "tabbar/api/tabbar_beforeclose_event",
-                    "tabbar/api/tabbar_change_event",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Tabbar properties",
-                  link: {
-                    type: 'generated-index',
-                    title: "Tabbar properties",
-                    keywords: ['tabbar properties'],
-                    image: '/img/docusaurus.png'
-                  },
-                  items: [
-                    "tabbar/api/tabbar_activetab_config",
-                    "tabbar/api/tabbar_closable_config",
-                    "tabbar/api/tabbar_css_config",
-                    "tabbar/api/tabbar_disabled_config",
-                    "tabbar/api/tabbar_mode_config",
-                    "tabbar/api/tabbar_nocontent_config",
-                    "tabbar/api/tabbar_tabalign_config",
-                    "tabbar/api/tabbar_tabautoheight_config",
-                    "tabbar/api/tabbar_tabautowidth_config",
-                    "tabbar/api/tabbar_tabheight_config",
-                    "tabbar/api/tabbar_tabwidth_config",
-                    "tabbar/api/tabbar_views_config",
-                  ],
-                },
-              ],
+                  items: [{
+                    type: "category",
+                    label: "Tabbar cell methods",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Tabbar cell methods",
+                      keywords: ['tabbar cell methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "tabbar/api/cell/tabbar_cell_attach_method",
+                      "tabbar/api/cell/tabbar_cell_attachhtml_method",
+                      "tabbar/api/cell/tabbar_cell_getparent_method",
+                      "tabbar/api/cell/tabbar_cell_getwidget_method",
+                    ],
+                  }]
+                }
+              ]
             },
             "tabbar/features",
             "tabbar/init",
