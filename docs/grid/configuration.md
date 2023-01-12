@@ -708,7 +708,7 @@ const grid = new dhx.Grid("grid_container", {
         }   
     ],
     data: dataset
-}
+});
 ~~~
 
 ### The list of configuration properties for comboFilter
@@ -726,10 +726,6 @@ const grid = new dhx.Grid("grid_container", {
         <tr>
 			<td><b>readonly</b></td>
 			<td>(<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</td>
-		</tr>
-        <tr>
-			<td><b>template</b></td>
-			<td>(<i>function</i>) sets a template of displaying options in the popup list</td>
 		</tr>
         <tr>
 			<td><b>placeholder</b></td>

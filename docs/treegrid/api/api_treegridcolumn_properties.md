@@ -29,7 +29,6 @@ columns:[
 	                filter?: (item: any, input: string) => boolean,
 	                multiselection?: boolean,
 	                readonly?: boolean,
-	                template?: (item: any) => string,
 	                placeholder?: string,
 	                virtual?: boolean,
                 },
@@ -116,7 +115,6 @@ columns:[
                     	<ol>- <b>filter</b> - (optional) sets a custom function for filtering Combo Box options</ol>
 						<ol>- <b>multiselection</b> - (optional) enables selection of multiple options</ol>
                     	<ol>- <b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
-                    	<ol>- <b>template</b> - (optional) sets a template of displaying options in the popup list</ol>
                     	<ol>- <b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</ol>
                     	<ol>- <b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options</ol>
                     </li>
