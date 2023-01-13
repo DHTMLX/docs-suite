@@ -96,12 +96,22 @@ combo.data.parse(dataset);
 
 ## Saving and restoring state
 
-To save the current state of a combo box, use the **serialize()** method of [DataCollection](data_collection.md). It converts the data of a combo box into an array of JSON objects.
+To save the current state of a combo box (in other words, the current list of Combobox options), use the **serialize()** method of [DataCollection](data_collection.md). It converts the data of a combo box into an array of JSON objects.
 Each JSON object contains a set of *key:value* pairs that represent attributes of ComboBox options.
 
 ~~~js
 const state = combo1.data.serialize();
+
+// -> [{…}, {…}, {…}, {…}, {…}, {…}, {…}, …]
 ~~~
+
+:::note
+If you just call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return the list of all Combobox options.
+
+If you select an option in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return only this option.
+
+If you enable the [multi-selection mode](combobox/configuration.md#selection-of-multiple-options) of Combobox, then select one or several options in the Combobox and call the [serialize()](data_collection/api/datacollection_serialize_method.md) method, it will return the list of all Combobox options.
+:::
 
 Then you can parse the data stored in the saved state array to a different combo box. For example:
 
