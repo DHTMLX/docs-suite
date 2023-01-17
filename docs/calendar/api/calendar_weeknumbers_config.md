@@ -6,7 +6,7 @@ description: You can explore the weekNumbers config of Calendar in the documenta
 
 # weekNumbers
 
-@short: defines whether to show the numbers of weeks
+@short: Optional. Defines whether to show the numbers of weeks
 
 @signature: {'weekNumbers?: boolean;'}
 

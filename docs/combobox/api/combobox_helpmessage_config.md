@@ -6,7 +6,7 @@ description: You can explore the helpMessage config of Combo Box in the document
 
 # helpMessage
 
-@short: adds an icon with a question mark next to the Combo input
+@short: Optional. Adds an icon with a question mark next to the Combo input
 
 @signature: {'helpMessage?: string;'}
 

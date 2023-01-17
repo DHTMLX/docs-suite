@@ -6,7 +6,7 @@ description: You can explore the css config of Calendar in the documentation of 
 
 # css
 
-@short: adds style classes to Calendar
+@short: Optional. Adds style classes to Calendar
 
 @signature: {'css?: string;'}
 

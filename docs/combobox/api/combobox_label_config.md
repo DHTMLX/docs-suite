@@ -6,7 +6,7 @@ description: You can explore the label config of Combo Box in the documentation 
 
 # label
 
-@short: adds a label for ComboBox
+@short: Optional. Adds a label for ComboBox
 
 @signature: {'label?: string;'}
 

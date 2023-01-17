@@ -6,7 +6,7 @@ description: You can explore the thisMonthOnly config of Calendar in the documen
 
 # thisMonthOnly
 
-@short: hides dates of the previous/next months relative to the currently displayed one
+@short: Optional. Hides dates of the previous/next months relative to the currently displayed one
 
 @signature: {'thisMonthOnly?: boolean;'}
 

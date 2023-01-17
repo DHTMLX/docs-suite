@@ -6,7 +6,7 @@ description: You can explore the data config of Combo Box in the documentation o
 
 # newOptions
 
-@short: allows end users to add new options into the data collection of Combobox
+@short: Optional. Allows end users to add new options into the data collection of Combobox
 
 @signature: {'newOptions?: boolean;'}
 

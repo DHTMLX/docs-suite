@@ -6,7 +6,7 @@ description: You can explore the css config of Chart in the documentation of the
 
 # css
 
-@short: adds style classes to Chart
+@short: Optional. Adds style classes to Chart
 
 @signature: {'css?: string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the weekStart config of Calendar in the documentati
 
 # weekStart
 
-@short: sets the starting day of the week
+@short: Optional. Sets the starting day of the week
 
 @signature: {'weekStart?: "monday" | "sunday" | "saturday";'}
 

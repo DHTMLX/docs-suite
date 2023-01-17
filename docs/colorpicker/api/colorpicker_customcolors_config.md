@@ -6,7 +6,7 @@ description: You can explore the customColors config of Colorpicker in the docum
 
 # customColors
 
-@short: shows a section with custom colors in the bottom part of Colorpicker
+@short: Optional. Shows a section with custom colors in the bottom part of Colorpicker
 
 @signature: {'customColors?: string[];'}
 

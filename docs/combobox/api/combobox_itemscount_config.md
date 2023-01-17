@@ -6,7 +6,7 @@ description: You can explore the itemsCount config of Combo Box in the documenta
 
 # itemsCount
 
-@short: shows the total number of selected options
+@short: Optional. Shows the total number of selected options
 
 @signature: {'itemsCount?: boolean | ((count: number) => string);'}
 

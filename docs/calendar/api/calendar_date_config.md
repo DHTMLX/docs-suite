@@ -6,7 +6,7 @@ description: You can explore the date config of Calendar in the documentation of
 
 # date
 
-@short: defines the date that will be opened when the calendar is created
+@short: Optional. Defines the date that will be opened when the calendar is created
 
 @signature: {'date?: Date | string;'}
 

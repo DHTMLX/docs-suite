@@ -6,9 +6,9 @@ description: You can explore the type config of Chart in the documentation of th
 
 # type
 
-@short: specifies the type of a chart
+@short: Required. Specifies the type of a chart
 
-@signature: {'type?: ChartType;'}
+@signature: {'type: ChartType;'}
 
 @example:
 const chart = new dhx.Chart("chart_container", {

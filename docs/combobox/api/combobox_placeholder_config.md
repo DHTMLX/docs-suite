@@ -6,7 +6,7 @@ description: You can explore the placeholder config of Combo Box in the document
 
 # placeholder
 
-@short: sets a placeholder in the input of Combo
+@short: Optional. Sets a placeholder in the input of Combo
 
 @signature: {'placeholder?: string;'}
 

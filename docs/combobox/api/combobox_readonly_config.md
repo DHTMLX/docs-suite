@@ -6,7 +6,7 @@ description: You can explore the readOnly config of Combo Box in the documentati
 
 # readOnly
 
-@short: makes Combo Box readonly
+@short: Optional. Makes Combo Box readonly
 
 @signature: {'readOnly?: boolean;'}
 

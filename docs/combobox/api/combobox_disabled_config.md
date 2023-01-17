@@ -6,7 +6,7 @@ description: You can explore the disabled config of Combo Box in the documentati
 
 # disabled
 
-@short: makes Combo Box disabled
+@short: Optional. Makes Combo Box disabled
 
 @signature: {'disabled?: boolean;'}
 

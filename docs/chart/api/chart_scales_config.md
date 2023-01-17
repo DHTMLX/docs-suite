@@ -6,7 +6,7 @@ description: You can explore the scales config of Chart in the documentation of 
 
 # scales
 
-@short: defines configuration of chart scales
+@short: Optional. Defines configuration of chart scales
 
 @signature: {'scales?: IScalesConfig;'}
 
@@ -163,4 +163,4 @@ The **radial** scale is used for Radar chart (type: "radar") and has its own pro
 
 **Related sample**: [Chart. Radar chart. Axis configuration](https://snippet.dhtmlx.com/yksfvhhl)
 
-[comment]: # (@related: chart/configuration_properties.md#scales)
+**Related article:** [Configuration](chart/configuration_properties.md)

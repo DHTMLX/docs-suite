@@ -6,7 +6,7 @@ description: You can explore the css config of Colorpicker in the documentation 
 
 # css
 
-@short: adds custom CSS classes to Colorpicker
+@short: Optional. Adds custom CSS classes to Colorpicker
 
 @signature: {'css?: string;'}
 

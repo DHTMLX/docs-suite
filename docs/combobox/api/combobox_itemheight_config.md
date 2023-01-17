@@ -6,7 +6,7 @@ description: You can explore the itemHeight config of Combo Box in the documenta
 
 # itemHeight
 
-@short: sets the height of an item in the list of options
+@short: Optional. Sets the height of an item in the list of options
 
 @signature: {'itemHeight?: number | string;'}
 

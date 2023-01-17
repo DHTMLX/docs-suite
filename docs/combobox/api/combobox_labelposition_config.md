@@ -6,9 +6,11 @@ description: You can explore the labelPosition config of Combo Box in the docume
 
 # labelPosition
 
-@short: defines the position of a label of a combobox
+@short: Optional. Defines the position of a label of a combobox
 
 @signature: {'labelPosition?: "left" | "top";'}
+
+@default: "top"
 
 @example:
 const combo = new dhx.Combobox("combo_container", {

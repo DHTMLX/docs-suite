@@ -6,7 +6,7 @@ description: You can explore the maxPoints config of Chart in the documentation 
 
 # maxPoints
 
-@short: displays an average number of values in case a data set is too large to show all the values in the chart
+@short: Optional. Displays an average number of values in case a data set is too large to show all the values in the chart
 
 @signature: {'maxPoints?: number;'}
 

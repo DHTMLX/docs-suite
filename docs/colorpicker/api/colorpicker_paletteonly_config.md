@@ -6,7 +6,7 @@ description: You can explore the paletteOnly config of Colorpicker in the docume
 
 # paletteOnly
 
-@short: defines whether Colorpicker is shown only in the palette mode
+@short: Optional. Defines whether Colorpicker is shown only in the palette mode
 
 @signature: {'paletteOnly?: boolean;'}
 

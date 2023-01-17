@@ -6,7 +6,7 @@ description: You can explore the listHeight config of Combo Box in the documenta
 
 # listHeight
 
-@short: sets the height of the list of options
+@short: Optional. Sets the height of the list of options
 
 @signature: {'listHeight?: number | string;'}
 

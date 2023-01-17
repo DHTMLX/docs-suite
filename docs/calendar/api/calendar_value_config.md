@@ -6,7 +6,7 @@ description: You can explore the value config of Calendar in the documentation o
 
 # value
 
-@short: selects the day (adds a round blue marker)
+@short: Optional. Selects the day (adds a round blue marker)
 
 @signature: {'value?: Date | Date[] | string | string[];'}
 

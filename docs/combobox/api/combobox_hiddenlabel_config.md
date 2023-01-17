@@ -6,7 +6,7 @@ description: You can explore the hiddenLabel config of Combo Box in the document
 
 # hiddenLabel
 
-@short: adds a hidden label for a Combo box input that will be used while sending a form to the server
+@short: Optional. Adds a hidden label for a Combo box input that will be used while sending a form to the server
 
 @signature: {'hiddenLabel?: boolean;'}
 

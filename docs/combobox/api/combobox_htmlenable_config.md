@@ -6,7 +6,7 @@ description: You can explore the htmlEnable config of Combo Box in the documenta
 
 # htmlEnable
 
-@short: enables/disables rendering of HTML content (inner HTML) in Combobox options
+@short: Optional. Enables/disables rendering of HTML content (inner HTML) in Combobox options
 
 @signature: {'htmlEnable?: boolean;'}
 

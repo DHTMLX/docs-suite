@@ -6,7 +6,7 @@ description: You can explore the series config of Chart in the documentation of 
 
 # series
 
-@short: defines configuration of chart series
+@short: Required. Defines configuration of chart series
 
 @signature: {'series?: SeriaConfig[];'}
 
@@ -330,4 +330,4 @@ You can apply the options below to configure series for charts with the "heatMap
 </table>
 <br/>
 
-[comment]: # (@related: chart/configuration_properties.md#series)
+**Related article:** [Configuration](chart/configuration_properties.md)

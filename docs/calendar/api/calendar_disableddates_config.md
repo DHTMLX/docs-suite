@@ -6,7 +6,7 @@ description: You can explore the disabledDates config of Calendar in the documen
 
 # disabledDates
 
-@short: allows disabling some date intervals, day labels are dimmed
+@short: Optional. Allows disabling some date intervals, day labels are dimmed
 
 @signature: {'disabledDates?: (a: Date) => boolean;'}
 

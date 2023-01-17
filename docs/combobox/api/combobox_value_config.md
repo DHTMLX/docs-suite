@@ -6,7 +6,7 @@ description: You can explore the value config of Combo Box in the documentation 
 
 # value
 
-@short: specifies the values that will appear in the input on initialization of the combobox
+@short: Optional. Specifies the values that will appear in the input on initialization of the combobox
 
 @signature: {'value?: string | string[];'}
 

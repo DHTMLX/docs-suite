@@ -6,7 +6,7 @@ description: You can explore the css config of Combo Box in the documentation of
 
 # css
 
-@short: adds style classes to Combobox
+@short: Optional. Adds style classes to Combobox
 
 @signature: {'css?: string;'}
 

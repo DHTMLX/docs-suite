@@ -6,7 +6,7 @@ description: You can explore the legend config of Chart in the documentation of 
 
 # legend
 
-@short: defines the configuration of a chart legend
+@short: Optional. Defines the configuration of a chart legend
 
 @signature: {'legend?: ILegendConfig;'}
 
@@ -232,4 +232,4 @@ You can apply the options below to configure the legend for charts with the "hea
 </table>
 
 
-[comment]: # (@related: chart/configuration_properties.md#legend)
+**Related article:** [Configuration](chart/configuration_properties.md)
