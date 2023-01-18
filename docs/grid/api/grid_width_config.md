@@ -6,7 +6,7 @@ description: You can explore the width config of Grid in the documentation of th
 
 # width
 
-@short: sets the width of a grid
+@short: Optional. Sets the width of a grid
 
 @signature: {'width?: number;'}
 

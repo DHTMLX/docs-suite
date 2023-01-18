@@ -6,7 +6,7 @@ description: You can explore the autoEmptyRow config of TreeGrid in the document
 
 # autoEmptyRow
 
-@short: adds an empty row after the last filled row in the TreeGrid
+@short: Optional. Adds an empty row after the last filled row in the TreeGrid
 
 @signature: {'autoEmptyRow?: boolean;'}
 

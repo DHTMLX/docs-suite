@@ -6,7 +6,7 @@ description: You can explore the resizable config of Layout in the documentation
 
 # resizable
 
-@short: defines whether a cell can be resized
+@short: Optional. Defines whether a cell can be resized
 
 @signature: {'resizable?: boolean;'}
 

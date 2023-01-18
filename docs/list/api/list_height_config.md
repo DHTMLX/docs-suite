@@ -6,7 +6,7 @@ description: You can explore the height config of List in the documentation of t
 
 # height
 
-@short: sets the height of List
+@short: Optional. Sets the height of List
 
 @signature: {'height?: number | string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the data config of Grid in the documentation of the
 
 # data
 
-@short: specifies an array of data objects to set into the grid
+@short: Optional. Specifies an array of data objects to set into the grid
 
 @signature: {'data?: any[];'}
 

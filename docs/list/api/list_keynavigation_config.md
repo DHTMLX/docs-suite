@@ -6,7 +6,7 @@ description: You can explore the keyNavigation config of List in the documentati
 
 # keyNavigation
 
-@short: enables/disables navigation in List by arrow keys
+@short: Optional. Enables/disables navigation in List by arrow keys
 
 @signature: {'keyNavigation?: boolean | (() => boolean);'}
 

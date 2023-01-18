@@ -6,7 +6,7 @@ description: You can explore the tooltip config of TreeGrid in the documentation
 
 # tooltip
 
-@short: enables a tooltip on hovering over the content of a column
+@short: Optional. Enables a tooltip on hovering over the content of a column
 
 @signature: {'tooltip?: boolean;'}
 

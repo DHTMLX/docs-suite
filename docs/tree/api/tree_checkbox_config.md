@@ -6,7 +6,7 @@ description: You can explore the checkbox config of Tree in the documentation of
 
 # checkbox
 
-@short: adds checkboxes to tree items
+@short: Optional. Adds checkboxes to tree items
 
 @signature: {'checkbox?: boolean;'}
 

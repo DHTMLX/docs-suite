@@ -6,7 +6,7 @@ description: You can explore the height config of Grid in the documentation of t
 
 # height
 
-@short: sets the height of a grid
+@short: Optional. Sets the height of a grid
 
 @signature: {'height?: number;'}
 

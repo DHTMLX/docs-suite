@@ -6,7 +6,7 @@ description: You can explore the headerImage config of Layout in the documentati
 
 # headerImage
 
-@short: an image used in the header of a cell
+@short: Optional. An image used in the header of a cell
 
 @signature: {'headerImage?: string;'}
 

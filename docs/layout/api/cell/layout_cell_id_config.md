@@ -6,7 +6,7 @@ description: You can explore the id config of Layout in the documentation of the
 
 # id
 
-@short: the id of a cell
+@short: Optional. The id of a cell
 
 @signature: {'id?: string;'}
 

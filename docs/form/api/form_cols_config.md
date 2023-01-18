@@ -6,7 +6,7 @@ description: You can explore the cols Config of Form in the documentation of the
 
 # cols
 
-@short: arranges controls inside the control group horizontally
+@short: Optional. Arranges controls inside the control group horizontally
 
 @signature: {'cols?: IBlock;'}
 

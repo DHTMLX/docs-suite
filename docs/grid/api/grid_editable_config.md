@@ -6,7 +6,7 @@ description: You can explore the editable config of Grid in the documentation of
 
 # editable
 
-@short: enables editing in Grid columns
+@short: Optional. Enables editing in Grid columns
 
 @signature: {'editable?: boolean;'}
 

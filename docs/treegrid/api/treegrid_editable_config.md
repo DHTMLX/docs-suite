@@ -6,7 +6,7 @@ description: You can explore the editable config of TreeGrid in the documentatio
 
 # editable
 
-@short: enables editing in TreeGrid columns
+@short: Optional. Enables editing in TreeGrid columns
 
 @signature: {'editable?: boolean;'}
 

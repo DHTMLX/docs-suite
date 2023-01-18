@@ -6,7 +6,7 @@ description: You can explore the template config of Tree in the documentation of
 
 # template
 
-@short: specifies a template for Tree items
+@short: Optional. Specifies a template for Tree items
 
 @signature: template?: (item: ITreeItem, isFolder: boolean) => string | null;
 

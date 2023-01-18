@@ -6,7 +6,7 @@ description: You can explore the autoWidth config of TreeGrid in the documentati
 
 # autoWidth
 
-@short: makes treegrid's columns to fit the size of a treegrid
+@short: Optional. Makes treegrid's columns to fit the size of a treegrid
 
 @signature: {'autoWidth?: boolean;'}
 

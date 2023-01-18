@@ -6,7 +6,7 @@ description: You can explore the data config of Ribbon in the documentation of t
 
 # data
 
-@short: specifies an array of data objects to set into Ribbon
+@short: Optional. Specifies an array of data objects to set into Ribbon
 
 @signature: {'data?: array;'}
 

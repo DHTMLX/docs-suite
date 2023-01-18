@@ -6,7 +6,7 @@ description: You can explore the height config of Window in the documentation of
 
 # height
 
-@short: sets the height of a window
+@short: Optional. Sets the height of a window
 
 @signature: {'height?: number;'}
 

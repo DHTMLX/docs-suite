@@ -6,7 +6,7 @@ description: You can explore the tabAutoWidth config of Tabbar in the documentat
 
 # tabAutoWidth
 
-@short: defines whether the width of tabs is automatically adjusted to the width of the tabbar container
+@short: Optional. Defines whether the width of tabs is automatically adjusted to the width of the tabbar container
 
 @signature: {'tabAutoWidth?: boolean;'}
 

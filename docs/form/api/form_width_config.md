@@ -6,7 +6,7 @@ description: You can explore the width Config of Form in the documentation of th
 
 # width
 
-@short: sets the width of the control group
+@short: Optional. Sets the width of the control group
 
 @signature: {'width?: string | number | "content";'}
 

@@ -6,7 +6,7 @@ description: You can explore the rows config of Layout in the documentation of t
 
 # rows
 
-@short: an array of rows objects
+@short: Optional. An array of rows objects
 
 @signature: {'rows?: ICellConfig[] | ILayoutConfig[];'}
 

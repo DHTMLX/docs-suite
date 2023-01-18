@@ -6,7 +6,7 @@ description: You can explore the closable config of Window in the documentation 
 
 # closable
 
-@short: defines whether a window can be closed
+@short: Optional. Defines whether a window can be closed
 
 @signature: {'closable?: boolean;'}
 

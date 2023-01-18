@@ -6,7 +6,7 @@ description: You can explore the title Config of Form in the documentation of th
 
 # title
 
-@short: specifies the title of the control group
+@short: Optional. Specifies the title of the control group
 
 @signature: {'title?: string;'}
 

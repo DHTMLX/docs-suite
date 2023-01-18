@@ -6,7 +6,7 @@ description: You can explore the maxHeight config of Layout in the documentation
 
 # maxHeight
 
-@short: the maximal height to be set for a cell
+@short: Optional. The maximal height to be set for a cell
 
 @signature: {'maxHeight?: number | string;'}
 

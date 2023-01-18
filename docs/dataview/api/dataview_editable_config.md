@@ -6,7 +6,7 @@ description: You can explore the editable config of DataView in the documentatio
 
 # editable
 
-@short: enables editing in DataView
+@short: Optional. Enables editing in DataView
 
 @signature: {'editable?: boolean;'}
 

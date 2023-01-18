@@ -6,7 +6,7 @@ description: You can explore the selection config of TreeGrid in the documentati
 
 # selection
 
-@short: enables selection in a grid
+@short: Optional. Enables selection in a grid
 
 @signature: {'selection?: ISelectionType;'}
 

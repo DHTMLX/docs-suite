@@ -6,7 +6,7 @@ description: You can explore the activeTab config of Tabbar in the documentation
 
 # activeTab
 
-@short: sets the currently active tab
+@short: Optional. Sets the currently active tab
 
 @signature: {'activeTab?: string;'}
 

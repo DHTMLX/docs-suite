@@ -6,7 +6,7 @@ description: You can explore the selection config of DataView in the documentati
 
 # selection
 
-@short: enables selection of DataView items
+@short: Optional. Enables selection of DataView items
 
 @signature: {'selection?: boolean;'}
 

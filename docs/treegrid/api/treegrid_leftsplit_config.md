@@ -6,7 +6,7 @@ description: You can explore the leftSplit config of TreeGrid in the documentati
 
 # leftSplit
 
-@short: sets the number of frozen columns
+@short: Optional. Sets the number of frozen columns
 
 @signature: {'leftSplit?: number;'}
 

@@ -6,7 +6,7 @@ description: You can explore the scales config of Chart in the documentation of 
 
 # scales
 
-@short: Optional. Defines configuration of chart scales
+@short: Required for Line, Spline, Bar, X-Bar, Area, SplineArea, Radar, and Scatter charts. Defines configuration of chart scales
 
 @signature: {'scales?: IScalesConfig;'}
 

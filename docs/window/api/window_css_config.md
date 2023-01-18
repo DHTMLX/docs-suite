@@ -6,7 +6,7 @@ description: You can explore the css config of Window in the documentation of th
 
 # css
 
-@short: adds style classes for the component
+@short: Optional. Adds style classes for the component
 
 @signature: {'css?: string;'}
 

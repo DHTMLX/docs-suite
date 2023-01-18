@@ -8,7 +8,7 @@ description: You can explore the series config of Chart in the documentation of 
 
 @short: Required. Defines configuration of chart series
 
-@signature: {'series?: SeriaConfig[];'}
+@signature: {'series: SeriaConfig[];'}
 
 @example:
 const chart = new dhx.Chart("chart_container", {

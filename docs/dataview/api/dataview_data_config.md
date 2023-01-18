@@ -6,7 +6,7 @@ description: You can explore the data config of DataView in the documentation of
 
 # data
 
-@short: specifies an array of data objects to set into the dataview
+@short: Optional. Specifies an array of data objects to set into the dataview
 
 @signature: {'data?: DataCollection<any> | any[];'}
 

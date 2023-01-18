@@ -6,7 +6,7 @@ description: You can explore the css config of Pagination in the documentation o
 
 # css
 
-@short: adds style classes to the pagination
+@short: Optional. Adds style classes to the pagination
 
 @signature: {'css?: string;'}
 

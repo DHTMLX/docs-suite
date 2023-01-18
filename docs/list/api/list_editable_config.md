@@ -6,7 +6,7 @@ description: You can explore the editable config of List in the documentation of
 
 # editable
 
-@short: enables editing in List
+@short: Optional. Enables editing in List
 
 @signature: {'editable?: boolean;'}
 

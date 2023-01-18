@@ -6,7 +6,7 @@ description: You can explore the tabAutoHeight config of Tabbar in the documenta
 
 # tabAutoHeight
 
-@short: defines whether the height of tabs is automatically adjusted to the height of the tabbar container
+@short: Optional. Defines whether the height of tabs is automatically adjusted to the height of the tabbar container
 
 @signature: {'tabAutoHeight?: boolean;'}
 
@@ -28,6 +28,6 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 {{note The property can be applicable when [mode](tabbar/api/tabbar_mode_config.md) is set to "right" or "left". }}
 
-[comment]: # (@changelog: added in v7.0)
+@changelog: added in v7.0
 
 [comment]: # (@related: tabbar/configuring_tabbar.md#autosize-for-tabs)

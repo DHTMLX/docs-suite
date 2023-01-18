@@ -6,7 +6,7 @@ description: You can explore the hidden config of Layout in the documentation of
 
 # hidden
 
-@short: defines whether a cell is hidden
+@short: Optional. Defines whether a cell is hidden
 
 @signature: {'hidden?: boolean;'}
 

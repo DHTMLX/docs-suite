@@ -6,7 +6,7 @@ description: You can explore the eventHandlers config of DataView in the documen
 
 # eventHandlers
 
-@short: adds event handlers to the HTML elements of a custom template of DataView items
+@short: Optional. Adds event handlers to the HTML elements of a custom template of DataView items
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: Id) => void | boolean; };};'}
 

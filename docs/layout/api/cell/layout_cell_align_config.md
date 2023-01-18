@@ -6,7 +6,7 @@ description: You can explore the align config of Layout in the documentation of 
 
 # align
 
-@short: sets the alignment of content inside a cell
+@short: Optional. Sets the alignment of content inside a cell
 
 @signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
 

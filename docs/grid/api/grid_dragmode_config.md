@@ -6,7 +6,7 @@ description: You can explore the dragMode config of Grid in the documentation of
 
 # dragMode
 
-@short: enables drag-n-drop in Grid
+@short: Optional. Enables drag-n-drop in Grid
 
 @signature: {'dragMode?: "target" | "source" | "both";'}
 

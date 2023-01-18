@@ -6,7 +6,7 @@ description: You can explore the data config of Sidebar in the documentation of 
 
 # data
 
-@short: specifies an array of data objects to set into Sidebar
+@short: Optional. Specifies an array of data objects to set into Sidebar
 
 @signature: {'data?: any[] | TreeCollection<ISidebarElement>;'}
 

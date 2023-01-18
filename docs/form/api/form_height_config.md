@@ -6,7 +6,7 @@ description: You can explore the height Config of Form in the documentation of t
 
 # height
 
-@short: sets the height of the control group
+@short: Optional. Sets the height of the control group
 
 @signature: {'height?: string | number | "content";'}
 

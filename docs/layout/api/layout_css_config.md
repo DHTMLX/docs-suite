@@ -6,7 +6,7 @@ description: You can explore the css config of Layout in the documentation of th
 
 # css
 
-@short: the name of a CSS class(es) applied to Layout
+@short: Optional. The name of a CSS class(es) applied to Layout
 
 @signature: {'css?: string;'}
 

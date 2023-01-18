@@ -6,7 +6,7 @@ description: You can explore the virtual config of List in the documentation of 
 
 # virtual
 
-@short: enables dynamic rendering of List items
+@short: Optional. Enables dynamic rendering of List items
 
 @signature: {'virtual?: boolean;'}
 

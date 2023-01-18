@@ -6,7 +6,7 @@ description: You can explore the css config of Ribbon in the documentation of th
 
 # css
 
-@short: adds style classes to Ribbon
+@short: Optional. Adds style classes to Ribbon
 
 @signature: {'css?: string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the type config of Layout in the documentation of t
 
 # type
 
-@short: defines the type of borders between cells inside a layout
+@short: Optional. Defines the type of borders between cells inside a layout
 
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 

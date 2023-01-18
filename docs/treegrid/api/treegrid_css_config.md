@@ -6,7 +6,7 @@ description: You can explore the css config of TreeGrid in the documentation of 
 
 # css
 
-@short: adds style classes to TreeGrid
+@short: Optional. Adds style classes to TreeGrid
 
 @signature: {'css?: string;'}
 

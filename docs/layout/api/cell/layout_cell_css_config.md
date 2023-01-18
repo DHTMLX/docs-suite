@@ -6,7 +6,7 @@ description: You can explore the css config of a cell of Layout in the documenta
 
 # css
 
-@short: the name of a CSS class(es) applied to a cell of Layout
+@short: Optional. The name of a CSS class(es) applied to a cell of Layout
 
 @signature: {'css?: string;'}
 

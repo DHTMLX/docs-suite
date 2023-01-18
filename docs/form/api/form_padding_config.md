@@ -6,7 +6,7 @@ description: You can explore the padding Config of Form in the documentation of 
 
 # padding
 
-@short: sets padding for content inside the control group
+@short: Optional. Sets padding for content inside the control group
 
 @signature: {'padding?: string | number;'}
 

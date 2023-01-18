@@ -6,7 +6,7 @@ description: You can explore the step config of Slider in the documentation of t
 
 # step
 
-@short: the step the slider thumb will be moved with
+@short: Optional. The step the slider thumb will be moved with
 
 @signature: {'step: number;'}
 

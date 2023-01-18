@@ -6,7 +6,7 @@ description: You can explore the keyNavigation config of Grid in the documentati
 
 # keyNavigation
 
-@short: enables keyboard navigation in Grid
+@short: Optional. Enables keyboard navigation in Grid
 
 @signature: {'keyNavigation?: boolean;'}
 

@@ -6,7 +6,7 @@ description: You can explore the sortable config of TreeGrid in the documentatio
 
 # sortable
 
-@short: defines whether sorting on clicking headers of columns is enabled
+@short: Optional. Defines whether sorting on clicking headers of columns is enabled
 
 @signature: {'sortable?: boolean;'}
 

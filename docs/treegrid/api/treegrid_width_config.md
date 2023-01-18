@@ -6,7 +6,7 @@ description: You can explore the width config of TreeGrid in the documentation o
 
 # width
 
-@short: sets the width of a grid
+@short: Optional. Sets the width of a grid
 
 @signature: {'width?: number;'}
 

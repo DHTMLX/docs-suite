@@ -6,7 +6,7 @@ description: You can explore the page config of Pagination in the documentation 
 
 # page
 
-@short: optional, the index of the initial page set in the pagination
+@short: Optional. The index of the initial page set in the pagination
 
 @signature: {'page?: number;'}
 

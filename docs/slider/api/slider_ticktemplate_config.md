@@ -6,7 +6,7 @@ description: You can explore the tickTemplate config of Slider in the documentat
 
 # tickTemplate
 
-@short: sets a template for rendering values on the scale
+@short: Optional. Sets a template for rendering values on the scale
 
 @signature: {'tickTemplate?: (position: number) => string;'}
 

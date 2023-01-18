@@ -6,7 +6,7 @@ description: You can explore the css config of Timepicker in the documentation o
 
 # css
 
-@short: adds style classes to TimePicker
+@short: Optional. Adds style classes to TimePicker
 
 @signature: {'css?: string;'}
 

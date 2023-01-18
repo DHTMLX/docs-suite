@@ -6,7 +6,7 @@ description: You can explore the valueFormat config of Timepicker in the documen
 
 # valueFormat
 
-@short: defines the format of the value to be applied when working with TimePicker events
+@short: Optional. Defines the format of the value to be applied when working with TimePicker events
 
 @signature: {'valueFormat?: "string" | "timeObject";'}
 

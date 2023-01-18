@@ -6,7 +6,7 @@ description: You can explore the helpMessage config of Slider in the documentati
 
 # helpMessage
 
-@short: adds an icon with a question mark next to Slider
+@short: Optional. Adds an icon with a question mark next to Slider
 
 @signature: {'helpMessage?: string;'}
 

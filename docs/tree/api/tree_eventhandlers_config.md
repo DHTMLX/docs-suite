@@ -6,7 +6,7 @@ description: You can explore the eventHandlers config of Tree in the documentati
 
 # eventHandlers
 
-@short: adds event handlers to the HTML elements of a custom template
+@short: Optional. Adds event handlers to the HTML elements of a custom template
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ITree) => void | boolean; };};'}
 

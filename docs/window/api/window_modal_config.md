@@ -6,7 +6,7 @@ description: You can explore the modal config of Window in the documentation of 
 
 # modal
 
-@short: defines whether a window is modal
+@short: Optional. Defines whether a window is modal
 
 @signature: {'modal?: boolean;'}
 

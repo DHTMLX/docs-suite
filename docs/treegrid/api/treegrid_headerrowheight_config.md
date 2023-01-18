@@ -6,7 +6,7 @@ description: You can explore the headerRowHeight config of TreeGrid in the docum
 
 # headerRowHeight
 
-@short: sets the height of rows in the header
+@short: Optional. Sets the height of rows in the header
 
 @signature: {'headerRowHeight?: number;'}
 

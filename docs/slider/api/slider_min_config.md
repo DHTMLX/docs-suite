@@ -6,7 +6,7 @@ description: You can explore the min config of Slider in the documentation of th
 
 # min
 
-@short: the minimal value of slider
+@short: Optional. The minimal value of slider
 
 @signature: {'min: number;'}
 

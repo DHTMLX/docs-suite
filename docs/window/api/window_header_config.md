@@ -6,7 +6,7 @@ description: You can explore the header config of Window in the documentation of
 
 # header
 
-@short: adds a header to a window
+@short: Optional. Adds a header to a window
 
 @signature: {'header?: boolean;'}
 

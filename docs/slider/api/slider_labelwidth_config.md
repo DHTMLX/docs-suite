@@ -6,7 +6,7 @@ description: You can explore the labelWidth config of Slider in the documentatio
 
 # labelWidth
 
-@short: sets the width of a label
+@short: Optional. Sets the width of a label
 
 @signature: {'labelWidth?: string | number;'}
 

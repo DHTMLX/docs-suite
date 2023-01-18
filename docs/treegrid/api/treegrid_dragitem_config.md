@@ -6,7 +6,7 @@ description: You can explore the dragItem config of TreeGrid in the documentatio
 
 # dragItem
 
-@short: enables the possibility to reorder treegrid columns by drag and drop
+@short: Optional. Enables the possibility to reorder treegrid columns by drag and drop
 
 @signature: {' dragItem?: "column", "row", "both";'}
 

@@ -6,7 +6,7 @@ description: You can explore the title config of Window in the documentation of 
 
 # title
 
-@short: adds some text into the header of a window
+@short: Optional. Adds some text into the header of a window
 
 @signature: {'title?: string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the rowHeight config of TreeGrid in the documentati
 
 # rowHeight
 
-@short: defines the height of a row in a grid
+@short: Optional. Defines the height of a row in a grid
 
 @signature: {'rowHeight?: number;'}
 

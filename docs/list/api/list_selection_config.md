@@ -6,7 +6,7 @@ description: You can explore the selection config of List in the documentation o
 
 # selection
 
-@short: enables selection of List items
+@short: Optional. Enables selection of List items
 
 @signature: {'selection?: boolean;'}
 

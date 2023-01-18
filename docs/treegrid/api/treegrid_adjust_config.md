@@ -6,7 +6,7 @@ description: You can explore the adjust config of TreeGrid in the documentation 
 
 # adjust
 
-@short: defines whether the width of columns is automatically adjusted to the width of their content
+@short: Optional. Defines whether the width of columns is automatically adjusted to the width of their content
 
 @signature: {'adjust?: "header" | "footer" | "data" | boolean;'}
 

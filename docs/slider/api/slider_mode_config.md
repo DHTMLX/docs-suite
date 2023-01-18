@@ -6,7 +6,7 @@ description: You can explore the mode config of Slider in the documentation of t
 
 # mode
 
-@short: the direction of the Slider scale
+@short: Optional. The direction of the Slider scale
 
 @signature: {'mode?: "vertical" | "horizontal";'}
 

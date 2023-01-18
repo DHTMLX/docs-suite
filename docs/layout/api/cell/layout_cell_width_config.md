@@ -6,7 +6,7 @@ description: You can explore the width config of Layout in the documentation of 
 
 # width
 
-@short: sets the width of a cell
+@short: Optional. Sets the width of a cell
 
 @signature: {'width?: number | string;'}
 

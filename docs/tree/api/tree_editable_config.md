@@ -6,7 +6,7 @@ description: You can explore the editable config of Tree in the documentation of
 
 # editable
 
-@short: enables editing of Tree items on a double-click  
+@short: Optional. Enables editing of Tree items on a double-click  
 
 Multi-line editing is available. Use **Shift+Enter** to add a line.
 

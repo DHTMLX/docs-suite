@@ -6,7 +6,7 @@ description: You can explore the progressDefault config of Layout in the documen
 
 # progressDefault
 
-@short: defines whether the progress bar must be shown in a cell in the absence of the component/HTML content in the cell
+@short: Optional. Defines whether the progress bar must be shown in a cell in the absence of the component/HTML content in the cell
 @descr:
 
 A progress bar is a visual component which informs users that the content is loading or updating<br>

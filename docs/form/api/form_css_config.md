@@ -6,7 +6,7 @@ description: You can explore the css Config of Form in the documentation of the 
 
 # css
 
-@short: the name of a CSS class(es) applied to the control group
+@short: Optional. The name of a CSS class(es) applied to the control group
 
 @signature: {'css?: string;'}
 

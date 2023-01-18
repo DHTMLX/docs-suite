@@ -6,7 +6,7 @@ description: You can explore the minHeight config of Layout in the documentation
 
 # minHeight
 
-@short: the minimal height to be set for a cell
+@short: Optional. The minimal height to be set for a cell
 
 @signature: {'minHeight?: number | string;'}
 

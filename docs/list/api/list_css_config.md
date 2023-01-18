@@ -6,7 +6,7 @@ description: You can explore the css config of List in the documentation of the 
 
 # css
 
-@short: adds a CSS class(es) to the component
+@short: Optional. Adds a CSS class(es) to the component
 
 @signature: {'css?: string;'}
 

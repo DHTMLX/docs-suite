@@ -6,7 +6,7 @@ description: You can explore the dragCopy config of Grid in the documentation of
 
 # dragCopy
 
-@short: defines that a row is copied to a target during drag-n-drop
+@short: Optional. Defines that a row is copied to a target during drag-n-drop
 
 @signature: {'dragCopy?: boolean;'}
 

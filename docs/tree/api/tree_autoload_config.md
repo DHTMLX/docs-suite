@@ -6,7 +6,7 @@ description: You can explore the autoload config of Tree in the documentation of
 
 # autoload
 
-@short: defines that the structure of a tree is being built while opening items
+@short: Optional. Defines that the structure of a tree is being built while opening items
 
 @signature: {'autoload?: string;'}
 

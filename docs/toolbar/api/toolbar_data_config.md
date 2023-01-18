@@ -6,7 +6,7 @@ description: You can explore the data config of Toolbar in the documentation of 
 
 # data
 
-@short: specifies an array of data objects to set into Toolbar
+@short: Optional. Specifies an array of data objects to set into Toolbar
 
 @signature: {'data?: any[];'}
 

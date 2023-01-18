@@ -6,7 +6,7 @@ description: You can explore the resizable config of TreeGrid in the documentati
 
 # resizable
 
-@short: defines whether columns can be resized
+@short: Optional. Defines whether columns can be resized
 
 @signature: {'resizable?: boolean;'}
 

@@ -6,7 +6,7 @@ description: You can explore the viewportOverflow config of Window in the docume
 
 # viewportOverflow
 
-@short: defines whether a window can go beyond borders of a browser
+@short: Optional. Defines whether a window can go beyond borders of a browser
 
 @signature: {'viewportOverflow?: boolean;'}
 

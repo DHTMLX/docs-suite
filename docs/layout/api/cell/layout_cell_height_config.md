@@ -6,7 +6,7 @@ description: You can explore the height config of Layout in the documentation of
 
 # height
 
-@short: sets the height of a cell
+@short: Optional. Sets the height of a cell
 
 @signature: {'height?: number | string;'}
 

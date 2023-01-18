@@ -6,7 +6,7 @@ description: You can explore the collapsed config of Layout in the documentation
 
 # collapsed
 
-@short: defines whether a cell is collapsed
+@short: Optional. Defines whether a cell is collapsed
 
 @signature: {'collapsed?: boolean;'}
 

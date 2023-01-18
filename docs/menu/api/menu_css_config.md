@@ -6,7 +6,7 @@ description: You can explore the css config of Menu in the documentation of the 
 
 # css
 
-@short: adds style classes to Menu
+@short: Optional. Adds style classes to Menu
 
 @signature: {'css?: string;'}
 

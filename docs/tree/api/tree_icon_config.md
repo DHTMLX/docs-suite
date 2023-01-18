@@ -6,7 +6,7 @@ description: You can explore the icon config of Tree in the documentation of the
 
 # icon
 
-@short: allows adding custom icons for tree items
+@short: Optional. Allows adding custom icons for tree items
 
 @signature: {'icon?: ITreeCustomIcon;'}
 

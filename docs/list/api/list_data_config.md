@@ -6,7 +6,7 @@ description: You can explore the data config of List in the documentation of the
 
 # data
 
-@short: specifies an array of data objects to set into the list
+@short: Optional. Specifies an array of data objects to set into the list
 
 @signature: {'data: array;'}
 

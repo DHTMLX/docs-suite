@@ -6,7 +6,7 @@ description: You can explore the cols config of Layout in the documentation of t
 
 # cols
 
-@short: an array of columns objects
+@short: Optional. An array of columns objects
 
 @signature: {'cols?: ICellConfig[] | ILayoutConfig[];'}
 

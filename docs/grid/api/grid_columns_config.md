@@ -6,9 +6,9 @@ description: You can explore the columns config of Grid in the documentation of 
 
 # columns
 
-@short: specifies the configuration of grid columns
+@short: Required. Specifies the configuration of grid columns
 
-@signature: {'columns?: ICol[];'}
+@signature: {'columns: ICol[];'}
 
 @example:
 const grid = new dhx.Grid("grid_container", {

@@ -6,7 +6,7 @@ description: You can explore the dragMode config of List in the documentation of
 
 # dragMode
 
-@short: enables drag-n-drop in List
+@short: Optional. Enables drag-n-drop in List
 
 @signature: {'dragMode?: string'}
 

@@ -6,7 +6,7 @@ description: You can explore the rootParent config of TreeGrid in the documentat
 
 # rootParent
 
-@short: defines the id of the root parent
+@short: Optional. Defines the id of the root parent
 
 @signature: rootParent?: string;
 

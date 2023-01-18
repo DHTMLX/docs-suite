@@ -6,7 +6,7 @@ description: You can explore the rowCss config of TreeGrid in the documentation 
 
 # rowCss
 
-@short: sets style for a row
+@short: Optional. Sets style for a row
 
 @signature: {'rowCss?: (row: IRow) => string;'}
 

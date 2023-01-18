@@ -6,7 +6,7 @@ description: You can explore the pageSize config of Pagination in the documentat
 
 # pageSize
 
-@short: optional, the number of items displayed per page of the related widget
+@short: Optional. The number of items displayed per page of the related widget
 
 @signature: {'pageSize?: number;'}
 

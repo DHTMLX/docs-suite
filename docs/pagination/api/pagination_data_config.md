@@ -6,7 +6,7 @@ description: You can explore the data config of Pagination in the documentation 
 
 # data
 
-@short: the data collection of a widget to set into the pagination
+@short: Required. The data collection of a widget to set into the pagination
 
 @signature: {'data: DataCollection;'}
 

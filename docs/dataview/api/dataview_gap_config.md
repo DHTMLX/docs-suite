@@ -6,7 +6,7 @@ description: You can explore the gap config of DataView in the documentation of 
 
 # gap
 
-@short: sets margins for DataView items
+@short: Optional. Sets margins for DataView items
 
 @signature: {'gap?: number;'}
 

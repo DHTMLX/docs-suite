@@ -6,7 +6,7 @@ description: You can explore the multiselection config of Grid in the documentat
 
 # multiselection
 
-@short: enables multi-row/multi-cell selection in Grid
+@short: Optional. Enables multi-row/multi-cell selection in Grid
 
 @signature: {'multiselection?: boolean;'}
 

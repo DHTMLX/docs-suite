@@ -6,7 +6,7 @@ description: You can explore the itemHeight config of DataView in the documentat
 
 # itemHeight
 
-@short: sets the height of an item
+@short: Optional. Sets the height of an item
 
 @signature: {'itemHeight?: number | string;'}
 

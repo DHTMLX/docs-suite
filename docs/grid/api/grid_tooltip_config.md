@@ -6,7 +6,7 @@ description: You can explore the tooltip config of Grid in the documentation of 
 
 # tooltip
 
-@short: enables a tooltip on hovering over the content of a column
+@short: Optional. Enables a tooltip on hovering over the content of a column
 
 @signature: {'tooltip?: boolean;'}
 

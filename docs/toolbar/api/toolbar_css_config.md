@@ -6,7 +6,7 @@ description: You can explore the css config of Toolbar in the documentation of t
 
 # css
 
-@short: adds style classes to Toolbar
+@short: Optional. Adds style classes to Toolbar
 
 @signature: {'css?: string;'}
 

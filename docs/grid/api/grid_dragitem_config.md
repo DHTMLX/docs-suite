@@ -8,7 +8,7 @@ description: You can explore the dragItem config of Grid in the documentation of
 
 {{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br>In case you use GPL version, you will be able to reorder rows only.}}
 
-@short: enables the possibility to reorder grid columns or (and) rows by drag and drop
+@short: Optional. Enables the possibility to reorder grid columns or (and) rows by drag and drop
 
 @signature: {' dragItem?: "column", "row", "both";'}
 
@@ -38,7 +38,7 @@ Enable [multiselection](grid/configuration.md#multiple-selection-of-grid-cells) 
 @changelog:
 
 - added in v6.5.
-- The "row" and "both" modes have beed added in v7.2.
+- The "row" and "both" modes have been added in v7.2.
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-inside-the-grid)
 

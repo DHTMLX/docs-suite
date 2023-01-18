@@ -6,7 +6,7 @@ description: You can explore the legend config of Chart in the documentation of 
 
 # legend
 
-@short: Optional. Defines the configuration of a chart legend
+@short: Required for Treemap charts, optional for other types of charts. Defines the configuration of a chart legend
 
 @signature: {'legend?: ILegendConfig;'}
 

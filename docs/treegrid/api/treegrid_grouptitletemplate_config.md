@@ -6,7 +6,7 @@ description: You can explore the groupTitleTemplate config of TreeGrid in the do
 
 # groupTitleTemplate
 
-@short: sets a template to the title of a group
+@short: Optional. Sets a template to the title of a group
 
 @signature: {'groupTitleTemplate?: (groupName: string, groupItems: IDataItem[]) => string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the dropBehaviour config of Tree in the documentati
 
 # dropBehaviour
 
-@short: defines the behaviour of a dragged item
+@short: Optional. Defines the behaviour of a dragged item
 
 @signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 

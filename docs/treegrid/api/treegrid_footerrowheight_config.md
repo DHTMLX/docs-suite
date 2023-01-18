@@ -6,7 +6,7 @@ description: You can explore the footerRowHeight config of TreeGrid in the docum
 
 # footerRowHeight
 
-@short: sets the height of rows in the footer
+@short: Optional. Sets the height of rows in the footer
 
 @signature: {'footerRowHeight?: number;'}
 

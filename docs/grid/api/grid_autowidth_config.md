@@ -6,7 +6,7 @@ description: You can explore the autoWidth config of Grid in the documentation o
 
 # autoWidth
 
-@short: makes grid's columns to fit the size of a grid
+@short: Optional. Makes grid's columns to fit the size of a grid
 
 @signature: {'autoWidth?: boolean;'}
 

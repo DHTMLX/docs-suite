@@ -6,7 +6,7 @@ description: You can explore the css config of Sidebar in the documentation of t
 
 # css
 
-@short: adds style classes to Sidebar
+@short: Optional. Adds style classes to Sidebar
 
 @signature: {'css?: string;'}
 

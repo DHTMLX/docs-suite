@@ -6,7 +6,7 @@ description: You can explore the data config of Tree in the documentation of the
 
 # data
 
-@short: sets a dataset for a tree
+@short: Optional. Sets a dataset for a tree
 
 @signature: {'data?: array;'}
 

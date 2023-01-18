@@ -6,7 +6,7 @@ description: You can explore the width config of Window in the documentation of 
 
 # width
 
-@short: sets the width of a window
+@short: Optional. Sets the width of a window
 
 @signature: {'width?: number;'}
 

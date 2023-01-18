@@ -6,7 +6,7 @@ description: You can explore the selection config of Tree in the documentation o
 
 # selection
 
-@short: enables selection of Tree items
+@short: Optional. Enables selection of Tree items
 
 @signature: {'selection?: boolean;'}
 

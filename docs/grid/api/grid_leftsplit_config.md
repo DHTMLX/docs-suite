@@ -6,7 +6,7 @@ description: You can explore the leftSplit config of Grid in the documentation o
 
 # leftSplit
 
-@short: sets the number of frozen columns
+@short: Optional. Sets the number of frozen columns
 
 @signature: {'leftSplit?: number;'}
 

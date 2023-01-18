@@ -6,7 +6,7 @@ description: You can explore the css config of Grid in the documentation of the 
 
 # css
 
-@short: adds style classes to Grid
+@short: Optional. Adds style classes to Grid
 
 @signature: {'css?: string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the maxWidth config of Layout in the documentation 
 
 # maxWidth
 
-@short: the maximal width to be set for a cell
+@short: Optional. The maximal width to be set for a cell
 
 @signature: {'maxWidth?: number | string;'}
 
