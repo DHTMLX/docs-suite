@@ -48,6 +48,7 @@ Released on ...
 #### Message
 
 - The ability to close a message box (new [`close()`](message/api/message_close_method.md) method)
+- The ability to set margin between the node and tooltip (new `margin` property of the [tooltip](message/api/api_message_properties.md#tooltip))
 
 #### Toolbar
 
@@ -73,6 +74,10 @@ Released on ...
 #### Grid/TreeGrid
 
 - The [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method is updated. Now the method returns an object with a set of methods: [`blur()`](grid/api/headerfilter/blur_method.md), [`clear()`](grid/api/headerfilter/clear_method.md), [`focus()`](grid/api/headerfilter/focus_method.md), [`getFilter()`](grid/api/headerfilter/getfilter_method.md), [`setValue()`](grid/api/headerfilter/setvalue_method.md). Check the [Migration](migration.md#73---80) article
+
+#### Message
+
+- The `position` property of the [tooltip](message/api/api_message_properties.md#tooltip) is extended by the "left" and "top" values
 
 Version 7.3.13
 ---------------

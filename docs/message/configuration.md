@@ -121,7 +121,8 @@ You can configure a tooltip on its initialization:
 ~~~js
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
-    position: "right"
+    position: "right",
+    margin: 8
 });
 ~~~
 

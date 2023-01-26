@@ -214,7 +214,8 @@ dhx.confirm({
 ~~~js
 dhx.tooltip({
 	node: HTMLElement | string,
-	position?: "right" | "bottom" |"center",
+	margin?: number,
+	position?: "right" | "bottom" |"center" | "left" | "top",
 	css?: string,
 	force?: boolean,
 	showDelay?: number,
@@ -233,9 +234,13 @@ The configuration object of a tooltip may take the following parameters:
 			<td><b>node</b></td>
 			<td>(required) the target of tooltip or its id</td>
 		</tr>
+		<tr>
+			<td><b>margin</b></td>
+			<td>(optional) margin between the node and tooltip</td>
+		</tr>
         <tr>
 			<td><b>position</b></td>
-			<td>(optional) the position of a tooltip: "right", "bottom", "center"</td>
+			<td>(optional) the position of a tooltip: "right", "bottom", "center", "left", "top"</td>
 		</tr>
         <tr>
 			<td><b>css</b></td>
@@ -266,6 +271,12 @@ The configuration object of a tooltip may take the following parameters:
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
     position: "right",
+    margin: 2,
 	htmlEnable: true
 });
 ~~~
+
+**Change log:**
+
+- The `margin` property of [Tooltip](#tooltip) was added in v8.0
+- The `position` property of [Tooltip](#tooltip) was extended by the "left" and "top" values in v8.0
