@@ -352,6 +352,7 @@ module.exports = {
                   },*/
                   items: [
                     "colorpicker/api/colorpicker_apply_event",
+                    "colorpicker/api/colorpicker_beforechange_event",
                     "colorpicker/api/colorpicker_cancelclick_event",
                     "colorpicker/api/colorpicker_change_event",
                     "colorpicker/api/colorpicker_modechange_event",

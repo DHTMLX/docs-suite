@@ -25,6 +25,10 @@ Released on ...
 
 - [Calendar heatmap chart](chart/charts_overview.md#calendar-heatmap-chart)
 
+#### Colorpicker
+
+- New [`beforeChange`](colorpicker/api/colorpicker_beforechange_event.md) event
+
 #### Form
 
 - RadioGroup control. New methods: [`hideItem()`](form/api/radiogroup/radiogroup_hideitem_method.md) and [`showItem()`](form/api/radiogroup/radiogroup_showitem_method.md)

@@ -26,6 +26,7 @@ description: You can explore the API of Colorpicker in the documentation of the 
 | Name                                                 | Description                                                 |
 | ---------------------------------------------------- | ----------------------------------------------------------- |
 | [](colorpicker/api/colorpicker_apply_event.md)       | @getshort(colorpicker/api/colorpicker_apply_event.md)       |
+| [](colorpicker/api/colorpicker_beforechange_event.md)       | @getshort(colorpicker/api/colorpicker_beforechange_event.md)       |
 | [](colorpicker/api/colorpicker_cancelclick_event.md) | @getshort(colorpicker/api/colorpicker_cancelclick_event.md) |
 | [](colorpicker/api/colorpicker_change_event.md)      | @getshort(colorpicker/api/colorpicker_change_event.md)      |
 | [](colorpicker/api/colorpicker_modechange_event.md)  | @getshort(colorpicker/api/colorpicker_modechange_event.md)  |
