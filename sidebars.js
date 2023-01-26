@@ -3859,7 +3859,6 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
-                    "tree/api/tree_afterautoload_event",
                     "tree/api/tree_aftercheck_event",
                     "tree/api/tree_aftercollapse_event",
                     "tree/api/tree_afterdrag_event",
@@ -3867,7 +3866,6 @@ module.exports = {
                     "tree/api/tree_aftereditend_event",
                     "tree/api/tree_aftereditstart_event",
                     "tree/api/tree_afterexpand_event",
-                    "tree/api/tree_beforeautoload_event",
                     "tree/api/tree_beforecheck_event",
                     "tree/api/tree_beforecollapse_event",
                     "tree/api/tree_beforedrag_event",
@@ -4611,8 +4609,10 @@ module.exports = {
             },
             items: [
               "tree_collection/api/treecollection_afteradd_event",
+              "tree_collection/api/treecollection_afteritemload_event",
               "tree_collection/api/treecollection_afterremove_event",
               "tree_collection/api/treecollection_beforeadd_event",
+              "tree_collection/api/treecollection_beforeitemload_event",
               "tree_collection/api/treecollection_beforeremove_event",
               "tree_collection/api/treecollection_change_event",
               "tree_collection/api/treecollection_load_event",

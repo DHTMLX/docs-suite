@@ -59,9 +59,9 @@ Released on ...
 - DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
 - The ability to set focus on an Input (new [setFocus()](toolbar/api/toolbar_setfocus_method.md) method)
 
-#### Tree
+#### TreeCollection
 
-- New [`beforeAutoLoad`](tree/api/tree_beforeautoload_event.md) and [`afterAutoLoad`](tree/api/tree_afterautoload_event.md) events
+- New [`beforeItemLoad`](tree_collection/api/treecollection_beforeitemload_event.md) and [`afterItemLoad`](tree_collection/api/treecollection_afteritemload_event.md) events
 
 #### TreeGrid
 

@@ -19,7 +19,7 @@ tree.data.load("/backend/autoload?id=tree");
 **Related sample**: [Tree. Autoload](https://snippet.dhtmlx.com/ahrblf1m)
 
 :::info
-To control the process of auto-load, use the related [beforeAutoLoad](tree/api/tree_beforeautoload_event.md) and [afterAutoLoad](tree/api/tree_afterautoload_event.md) events
+To control the process of auto-load, use the related [beforeItemLoad](tree_collection/api/treecollection_beforeitemload_event.md) and [afterItemLoad](tree_collection/api/treecollection_afteritemload_event.md) events
 :::
 
 <br>
