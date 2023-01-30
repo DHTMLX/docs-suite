@@ -27,4 +27,4 @@ const grid = new dhx.Grid("grid_container", {
 
 @changelog: added in v6.4
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#sorting-columns)
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#sortable-columns)

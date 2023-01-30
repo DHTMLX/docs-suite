@@ -20,7 +20,7 @@ grid.editEnd(true); // the edited data won't be saved
 
 @descr:
 
-The method works with [any type of cell editors](grid/configuration.md#setting-type-of-column-editor), except for **checkbox**. 
+The method works with [any type of cell editors](grid/configuration.md#types-of-column-editor), except for **checkbox**. 
 
 @changelog: added in v6.3
 

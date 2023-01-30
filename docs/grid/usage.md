@@ -469,7 +469,7 @@ grid.editEnd(); // the edited data will be saved
 grid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
+{{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
 
 ## Exporting Grid
 

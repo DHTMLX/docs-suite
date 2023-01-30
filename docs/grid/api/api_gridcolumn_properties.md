@@ -175,7 +175,7 @@ columns:[
             </td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
+			<td><a href="../../configuration#types-of-column-editor"><b>editorType</b></a></td>
 			<td>(optional) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"datePicker" </td>
 		</tr>
         <tr>
@@ -224,11 +224,11 @@ columns:[
 			<td>(optional) defines whether a column is editable</td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#resizing"><b>resizable</b></a></td>
+			<td><a href="../../configuration#resizable-columns"><b>resizable</b></a></td>
 			<td>(optional) defines whether a column can be resized</td>
 		</tr>
         <tr>
-			<td><a href="../../configuration#sorting-columns"><b>sortable</b></a></td>
+			<td><a href="../../configuration#sortable-columns"><b>sortable</b></a></td>
 			<td>(optional) defines whether a column is sortable</td>
 		</tr>
         <tr>

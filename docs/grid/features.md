@@ -54,7 +54,7 @@ In this section you will know how to configure Grid columns on Grid initializati
 | [Configuring columns](../configuration/#columns) | Learn how to define initial structure of Grid |
 | [Configuring content alignment](../configuration/#alignment) | Learn how to align data in a column ([Example](https://snippet.dhtmlx.com/eyreddku)) |
 | [Frozen columns](../configuration/#frozen-columns)                                          | Learn how to split grid columns into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/hcgl9nth))              |
-| [Resizable columns](../configuration/#resizing)                                             | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/aeqzuks0))                                            |
+| [Resizable columns](../configuration/#resizable-columns)                                             | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/aeqzuks0))                                            |
 
 ### How to specify formats for Grid data
 
@@ -180,7 +180,7 @@ In this section you will find the ways of editing data in Grid.
 | Topic                                                                                        | Description                                                                                                        |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Enabling/disabling editing](../configuration/#editing-grid-and-separate-columns)            | Read how to enable/disable editing of the whole Grid or its separate columns                                       |
-| [Editing with different editors](../configuration/#setting-type-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example](https://snippet.dhtmlx.com/w2cdossn)) |
+| [Editing with different editors](../configuration/#types-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example](https://snippet.dhtmlx.com/w2cdossn)) |
 | [Inline editing](https://snippet.dhtmlx.com/7mbs47en)                                        | The example allows you to try out inline editing in Grid                                                           |
 | [Editing data using the right panel](https://snippet.dhtmlx.com/1z3jqrlj)                    | The example shows how to implement editing in Grid via the right panel                                             |
 | [Editing data using a modal window](https://snippet.dhtmlx.com/5tbcflek)                     | The example shows how to implement editing in Grid via the modal window                                            |
@@ -195,7 +195,7 @@ In this section you will find the ways of sorting data in Grid.
 | Topic                                                        | Description                                                                                                 |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | [Sorting data](../usage/#sorting-data)                       | Learn how to sort data in the grid ([Example](https://snippet.dhtmlx.com/81dmbdfd))                         |
-| [Sortable columns](../configuration/#sorting-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
+| [Sortable columns](../configuration/#sortable-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in Grid ([Example](https://snippet.dhtmlx.com/u2vk3ri3)) |
 
 ### How to filter data

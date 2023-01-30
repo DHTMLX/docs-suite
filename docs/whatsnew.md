@@ -39,7 +39,7 @@ Released on ...
 - The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - Now the sorting icon will also appear after sorting data via the `data.sort()` method
-- The ability to configure the [datePicker editor](grid/configuration.md#setting-type-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
 
 #### Layout
 
@@ -506,9 +506,9 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 
 #### Grid
 
-- New [multiselect editor](grid/configuration.md/#setting-type-of-column-editor) is added
+- New [multiselect editor](grid/configuration.md/#types-of-column-editor) is added
 - The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-content) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
-- The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#setting-type-of-column-editor) of the combo editor
+- The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#types-of-column-editor) of the combo editor
 - The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
 - The ability to enable/disable sorting by clicking the header via the [headerSort](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
 
@@ -1097,7 +1097,7 @@ Released on October 15, 2020
 
 ### Fixes
 
-- Fix the incorrect behavior of the sorting icon in the header of a Grid column when setting the [sortable](grid/configuration.md#sorting-columns) property to false
+- Fix the incorrect behavior of the sorting icon in the header of a Grid column when setting the [sortable](grid/configuration.md#sortable-columns) property to false
 - Fix the issue which caused [key navigation](tree/configuration.md#key-navigation) in Tree not to work in IE
 
 Version 6.5.7
@@ -1386,7 +1386,7 @@ Released on January 28, 2020
 - The ability [to select multiple rows or cells of Grid](grid/configuration.md#multiple-selection-of-grid-cells) using the [](grid/api/grid_multiselection_config.md) property
 - The possibility [to set selection to multiple cells/rows of Grid](grid/usage.md#using-selection-api) via the `setCell()` method of the selection object
 - New additional arrow keyboard shortcuts are added to [Keyboard navigation](grid/configuration.md#keyboard-navigation)
-- The ability [to sort content of any Grid column by clicking on its header](grid/configuration.md#sorting-columns) via the [](grid/api/grid_sortable_config.md) property
+- The ability [to sort content of any Grid column by clicking on its header](grid/configuration.md#sortable-columns) via the [](grid/api/grid_sortable_config.md) property
 - The [](grid/api/grid_getsortingstate_method.md) method that [allows getting the current state of sorting data in Grid](grid/usage.md#getting-the-sorting-state) is added
 - The possibility [to check visibility of a column](grid/usage.md#checking-visibility-of-a-column) via the [](grid/api/grid_iscolumnhidden_method.md) method
 - The ability to enable [dynamic loading of data in Grid](grid/data_loading.md#dynamic-loading)
@@ -1617,9 +1617,9 @@ Released on October 23, 2019
 
 - The possibility to [show and hide](grid/usage.md#hidingshowing-a-column) a column in the grid via the [showColumn()](grid/api/grid_showcolumn_method.md) and [hideColumn()](grid/api/grid_hidecolumn_method.md) methods
 - A new [combo filter](grid/api/api_gridcolumn_properties.md) for the [header/footer content](grid/configuration.md#headerfooter-content) of a Grid column
-- New [checkbox and combobox editors](grid/configuration.md#setting-type-of-column-editor) for the cells of a Grid column
+- New [checkbox and combobox editors](grid/configuration.md#types-of-column-editor) for the cells of a Grid column
 - The ability to set [min and max width](grid/api/api_gridcolumn_properties.md) for Grid columns
-- The possibility to [change the width of columns](grid/configuration.md#resizing) via the [resizable](grid/api/grid_resizable_config.md) property
+- The possibility to [change the width of columns](grid/configuration.md#resizable-columns) via the [resizable](grid/api/grid_resizable_config.md) property
 - [Drag-n-drop](grid/configuration.md#drag-n-drop-between-grids) of rows between grids via the [dragMode](grid/api/grid_dragmode_config.md) property
 - [Export to CSV format](grid/usage.md#exporting-data-to-csv)
 
@@ -1773,7 +1773,7 @@ Released on August 15, 2019
 - Editing the whole Grid or separate columns [via the configuration object](grid/configuration.md#editing-grid-and-separate-columns)
 - Editing certain cells [via the API method](grid/usage.md#editing-data)
 - New editing-related events: `BeforeEditStart`, `BeforeEditEnd`, `AfterEditStart`, `AfterEditEnd`
-- The possibility to define the [type of an editor for a column](grid/configuration.md#setting-type-of-column-editor)
+- The possibility to define the [type of an editor for a column](grid/configuration.md#types-of-column-editor)
 - A new [type:"date" for a column](grid/api/api_gridcolumn_properties.md)
 - The ability to [add vertical span into the columns headers](grid/api/api_gridcolumn_properties.md)
 - The possibility to [enable automatic adding of an empty row to the end of the Grid](grid/configuration.md#automatic-adding-of-empty-row-into-grid)
