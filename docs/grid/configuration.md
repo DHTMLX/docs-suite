@@ -858,7 +858,7 @@ The default value of the mentioned properties is 40.
 
 ## Rows
 
-### Rows height
+### Row height
 
 The default height of a grid row is 40. You can change it and set any other height via the [rowHeight](grid/api/grid_rowheight_config.md) property, e.g.:
 
