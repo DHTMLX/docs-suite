@@ -83,6 +83,26 @@ Released on ...
 
 - The `position` property of the [tooltip](message/api/api_message_properties.md#tooltip) is extended by the "left" and "top" values
 
+Version 7.3.14
+---------------
+
+Released on January 17, 2023
+
+### Fixes
+
+- Grid. Fix the issue which caused [inputFilter/selectFilter](grid/configuration.md#headerfooter-content) to stop working in some browsers
+- Grid. Fix the issue with automatic adjustment of the column's width for header or footer consisting of several rows  
+- Grid. Fix the issue with calculation of the height for frozen columns in Grid with horizontal and vertical scrollbars
+- Grid. Fix work of drag-n-drop for columns
+- Grid. Fix work of the [headerSort:false](grid/api/api_gridcolumn_properties.md) property specified for the header consisting of the spanned rows
+- Grid. Now it is possible to select several cells/rows when using [multiselection](grid/api/grid_multiselection_config.md) together with [selection:"complex"](grid/api/grid_selection_config.md)
+- Grid. Now the [eventHandlers](grid/api/grid_eventhandlers_config.md) property works for frozen columns
+- TreeGrid. Fix the display of selection for spanned cells
+- TreeGrid. Fix the issue with display of total values in the footer of the [exported .csv / .xlsx file](treegrid/usage.md#exporting-treegrid)
+- TreeGrid. Fix the issue with editing of spanned cells
+- TreeGrid. Now it is possible to collapse/expand the content of the first cell of the first column even if it is included into the colspan
+- Fix issues with [AJAX helper](ajax.md)
+
 Version 7.3.13
 ---------------
 

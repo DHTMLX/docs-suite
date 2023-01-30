@@ -1075,7 +1075,7 @@ The list of the shortcut keys for editing:
 
 ## Multiple selection of Grid cells
 
-While setting the [selection](grid/configuration.md#selection) property either to *"row"* or to *"cell"* value, you can enable the [](grid/api/grid_multiselection_config.md) property to allow a user to select multiple Grid elements:
+While setting the [selection](grid/configuration.md#selection) property to *"row"*, *"cell"*, or *"complex"* value, you can enable the [](grid/api/grid_multiselection_config.md) property to allow a user to select multiple Grid elements:
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
