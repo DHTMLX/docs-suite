@@ -18,7 +18,7 @@ The API set for controlling the work of the Uploader object.
 | [](uploader/api/uploader_selectfile_method.md)     | @getshort(uploader/api/uploader_selectfile_method.md)     |
 | [](uploader/api/uploader_send_method.md)           | @getshort(uploader/api/uploader_send_method.md)           |
 
-### Events
+### Properties
 
 | Name                                                   | Description                                                   |
 | ------------------------------------------------------ | ------------------------------------------------------------- |
