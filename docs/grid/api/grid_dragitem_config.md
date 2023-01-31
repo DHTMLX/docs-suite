@@ -37,8 +37,8 @@ Enable [multiselection](grid/configuration.md#multiple-selection-of-grid-cells) 
 
 @changelog:
 
-- added in v6.5.
-- The "row" and "both" modes have been added in v7.2.
+- The "row" and "both" modes were added in v7.2.
+- The property was added in v6.5.
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#drag-n-drop-inside-the-grid)
 

@@ -24,8 +24,8 @@ form.events.on("afterHide", function(name, value) {
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog:
-- added in v6.5
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+- The event was added in v6.5
 
 [comment]: # (@relatedapi: form/api/form_beforehide_event.md)

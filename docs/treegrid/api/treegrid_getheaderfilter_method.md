@@ -30,7 +30,7 @@ countryFilter.setValue("Brazil");
 
 @changelog:
 - The returned value was changed in v8.0. Check the [Migration](migration.md#73---80) article
-- Added in v7.0
+- The method was added in v7.0
 
 
 @descr:
