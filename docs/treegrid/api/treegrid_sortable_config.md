@@ -27,4 +27,4 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @changelog: added in v6.4
 
-[comment]: # (@related: treegrid/configuration.md#sorting-columns)
+[comment]: # (@related: treegrid/configuration.md#sortable-columns)

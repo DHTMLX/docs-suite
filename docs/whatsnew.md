@@ -67,7 +67,7 @@ Released on ...
 
 - The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
 - Now the sorting icon will also appear after sorting data via the `data.sort()` method
-- The ability to configure the [datePicker editor](treegrid/configuration.md#setting-type-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to configure the [datePicker editor](treegrid/configuration.md#types-of-column-editor) of a cell by passing [Calendar configuration](category/calendar-properties.md) to the `columns.editorConfig` property
 
 ### Updates
 
@@ -90,7 +90,7 @@ Released on January 17, 2023
 
 ### Fixes
 
-- Grid. Fix the issue which caused [inputFilter/selectFilter](grid/configuration.md#headerfooter-content) to stop working in some browsers
+- Grid. Fix the issue which caused [inputFilter/selectFilter](grid/configuration.md#headerfooter-filters) to stop working in some browsers
 - Grid. Fix the issue with automatic adjustment of the column's width for header or footer consisting of several rows  
 - Grid. Fix the issue with calculation of the height for frozen columns in Grid with horizontal and vertical scrollbars
 - Grid. Fix work of drag-n-drop for columns
@@ -124,7 +124,7 @@ Released on November 17, 2022
 
 - Calendar. Fix the issue with calling the [`clear()`](calendar/api/calendar_clear_method.md) method when [two calendars are linked](calendar/operating_calendar.md#linking-two-calendars)
 - Gird. Fix the issue with the [`type: "percent"`](grid/api/api_gridcolumn_properties.md) property of a column
-- Grid. Fix issues with [selectFilter](grid/configuration.md/#headerfooter-content) and [comboFilter](grid/configuration.md/#headerfooter-content). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
+- Grid. Fix issues with [selectFilter](grid/configuration.md/#headerfooter-filters) and [comboFilter](grid/configuration.md/#headerfooter-filters). Now they don't ignore the [`type`](grid/api/api_gridcolumn_properties.md) and [`format`](grid/api/api_gridcolumn_properties.md) properties of a column
 - Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
 - Grid. Now [custom tooltip](grid/customization.md#adding-template-to-tooltip) will be also displayed for cells with empty values
 - Grid. Now it is possible to prevent a [custom tooltip](grid/customization.md#adding-template-to-tooltip) from being shown via returning `false` from the `tooltipTemplate` function
@@ -376,7 +376,7 @@ Released on January 19, 2022
 - Grid, Pagination. Fix the incorrect work of Pagination if the first column of the grid is hidden
 - Grid. Fix the incorrect display of actual values specified in the "select", "combobox", or "multiselect" editor when opening the editor
 - Grid. Fix the incorrect loading of string values from XML file
-- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md/#headerfooter-content) with boolean values
+- Grid. Fix the incorrect work of [selectFilter](grid/configuration.md/#headerfooter-filters) with boolean values
 - Grid. Fix the issue that caused the [`adjust`](grid/api/api_gridcolumn_properties.md) property to ignore the [`template`](grid/api/api_gridcolumn_properties.md) specified for a column
 - Grid. Fix the issue which caused key navigation to stop working in Grid attached into Tabbar which is attached into Window
 - Grid. Fix the issue which caused [`autoWidth`](grid/api/grid_autowidth_config.md) not to work if the [`width`](grid/configuration.md/#columns) wasn't specified for only one of the grid columns
@@ -507,7 +507,7 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 #### Grid
 
 - New [multiselect editor](grid/configuration.md/#types-of-column-editor) is added
-- The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-content) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-filters) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
 - The ability to show different values in the grid cell and in the combo editor by setting ["id-value" combinations for each option](grid/configuration.md/#types-of-column-editor) of the combo editor
 - The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
 - The ability to enable/disable sorting by clicking the header via the [headerSort](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a Grid column
@@ -530,9 +530,9 @@ Check the [Migration article](migration.md##71---72) to keep in step with the la
 
 #### Treegrid
 
-- New [multiselect editor](treegrid/configuration.md#setting-type-of-column-editor) is added
-- The ability to [choose several options in comboFilter at once](treegrid/configuration.md/#headerfooter-content) via setting [multiselection:true](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
-- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](treegrid/configuration.md/#setting-type-of-column-editor) of the combobox editor
+- New [multiselect editor](treegrid/configuration.md#types-of-column-editor) is added
+- The ability to [choose several options in comboFilter at once](treegrid/configuration.md/#headerfooter-filters) via setting [multiselection:true](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](treegrid/configuration.md/#types-of-column-editor) of the combobox editor
 - The ability to specify the type to sort data as via the [sortAs](treegrid/api/api_treegridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
 - The ability to enable/disable sorting by clicking the header via the [headerSort](treegrid/api/api_treegridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
 
@@ -784,7 +784,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 #### Grid
 
 - The ability to display and edit multiline content in the cells of Grid via setting the [autoHeight: true](grid/api/grid_autoheight_config.md) configuration option of Grid (Pro version)
-- New [textarea editor](grid/configuration.md#setting-type-of-column-editor) is added 
+- New [textarea editor](grid/configuration.md#types-of-column-editor) is added 
 - The ability to set [the format the content of the cells to be displayed in](grid/configuration.md#formatting-columns)
 - Now [columns with dates support the Date() object](grid/api/grid_data_config.md) 
 - The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column
@@ -799,7 +799,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 #### TreeGrid
 
 - The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid
-- New [textarea editor](treegrid/configuration.md#setting-type-of-column-editor) is added
+- New [textarea editor](treegrid/configuration.md#types-of-column-editor) is added
 - The ability to set [the format the content of the cells to be displayed in](treegrid/configuration.md#formatting-columns)
 - Now [columns with dates support the Date() object](treegrid/api/treegrid_data_config.md)
 - The ability to [customize the tooltip of a column](treegrid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
@@ -1110,7 +1110,7 @@ Released on October 15, 2020
 - Fix the incorrect work of the [](grid/api/grid_aftereditend_event.md), [](grid/api/grid_aftereditstart_event.md), [](grid/api/grid_beforeeditend_event.md), [](grid/api/grid_beforeeditstart_event.md) events for cells with the checkbox editor type in Grid
 - Fix the issue with rendering [a tooltip on hovering over the slider thumb](slider/api/slider_tooltip_config.md) when the slider is attached both to a Layout and a Window at the same time
 - Fix the issue with [a tooltip added to a Title control of Toolbar](toolbar/title.md#adding-a-tooltip) which caused a tooltip not to be shown
-- Fix the issue with drag and drop of Grid columns with [selectFilter](grid/configuration.md#headerfooter-content) filled
+- Fix the issue with drag and drop of Grid columns with [selectFilter](grid/configuration.md#headerfooter-filters) filled
 
 Version 6.5.6
 -------------
@@ -1446,7 +1446,7 @@ Released on January 28, 2020
 - The [](treegrid/api/treegrid_aftercollapse_event.md), [](treegrid/api/treegrid_beforecollapse_event.md), [](treegrid/api/treegrid_afterexpand_event.md), [](treegrid/api/treegrid_beforeexpand_event.md) events are added
 - The possibility [to adjust the size of TreeGrid columns to the size of TreeGrid](treegrid/configuration.md#autowidth-for-columns) via the [](treegrid/api/treegrid_autowidth_config.md) configuration property
 - The ability [to adjust the width of columns to the width of their content automatically](treegrid/configuration.md#autosize-for-columns) with the help of the [](treegrid/api/treegrid_adjust_config.md) property
-- The ability [to sort content of any TreeGrid column by clicking on its header](treegrid/configuration.md#sorting-columns) using the [](treegrid/api/treegrid_sortable_config.md) property
+- The ability [to sort content of any TreeGrid column by clicking on its header](treegrid/configuration.md#sortable-columns) using the [](treegrid/api/treegrid_sortable_config.md) property
 - The [](treegrid/api/treegrid_getsortingstate_method.md) method that [allows getting the current state of sorting data in TreeGrid](treegrid/usage.md#getting-the-sorting-state) is added
 
 #### Window
@@ -1616,7 +1616,7 @@ Released on October 23, 2019
 #### Grid/TreeGrid
 
 - The possibility to [show and hide](grid/usage.md#hidingshowing-a-column) a column in the grid via the [showColumn()](grid/api/grid_showcolumn_method.md) and [hideColumn()](grid/api/grid_hidecolumn_method.md) methods
-- A new [combo filter](grid/api/api_gridcolumn_properties.md) for the [header/footer content](grid/configuration.md#headerfooter-content) of a Grid column
+- A new [combo filter](grid/api/api_gridcolumn_properties.md) for the [header/footer content](grid/configuration.md#headerfooter-filters) of a Grid column
 - New [checkbox and combobox editors](grid/configuration.md#types-of-column-editor) for the cells of a Grid column
 - The ability to set [min and max width](grid/api/api_gridcolumn_properties.md) for Grid columns
 - The possibility to [change the width of columns](grid/configuration.md#resizable-columns) via the [resizable](grid/api/grid_resizable_config.md) property

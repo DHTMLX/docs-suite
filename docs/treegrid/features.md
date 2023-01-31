@@ -51,7 +51,7 @@ In this section you will know how to configure TreeGrid columns on TreeGrid init
 | [Configuring columns](../configuration/#columns)             | Learn how to define initial structure of TreeGrid                                                                      |
 | [Configuring content alignment](../configuration/#alignment) | Learn how to align data in a column ([Example](https://snippet.dhtmlx.com/g38rr3so))                                   |
 | [Frozen columns](../configuration/#frozen-columns)           | Learn how to split treegrid columns into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/46me58ze)) |
-| [Resizable columns](../configuration/#resizing)              | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/vq3i9maq))                                   |
+| [Resizable columns](../configuration/#resizable-columns)              | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/vq3i9maq))                                   |
 
 ### How to specify formats for TreeGrid data
 
@@ -184,7 +184,7 @@ In this section you will find the ways of editing data in TreeGrid.
 | Topic                                                                                 | Description                                                                                                                                                            |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Enabling/disabling editing](../configuration/#editing-treegrid-and-separate-columns) | Read how to enable/disable editing of the whole Grid or its separate columns                                                                                           |
-| [Editing with different editors](../configuration/#setting-type-of-column-editor)     | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p)) |
+| [Editing with different editors](../configuration/#types-of-column-editor)     | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p)) |
 | [Editing of a specific cell](../usage/#editing-data)                                  | Learn how to enable editing of a cell ([Example](https://snippet.dhtmlx.com/zm6wh1ss))                                                                                 |
 | [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
 
@@ -196,7 +196,7 @@ In this section you will find the ways of sorting data in TreeGrid.
 | Topic                                                        | Description                                                                                                     |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
 | [Sorting data](../usage/#sorting-data)                       | Learn how to sort data in the treegrid ([Example](https://snippet.dhtmlx.com/bvfnpvwv))                         |
-| [Sortable columns](../configuration/#sorting-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))        |
+| [Sortable columns](../configuration/#sortable-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))        |
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in TreeGrid ([Example](https://snippet.dhtmlx.com/bdwwhvls)) |
 
 
@@ -206,7 +206,7 @@ In this section you will find the ways of filtering data in TreeGrid.
 
 | Topic                                                                                          | Description                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Setting the type of a filter in the header/footer](../configuration/#headerfooter-content)    | Learn how to specify the type of the filter in the header/footer of a TreeGrid column ([Example](https://snippet.dhtmlx.com/zm5pt3xk))                       |
+| [Setting the type of a filter in the header/footer](../configuration/#headerfooter-filters)    | Learn how to specify the type of the filter in the header/footer of a TreeGrid column ([Example](https://snippet.dhtmlx.com/zm5pt3xk))                       |
 | [Filtering data](../usage/#filtering-data)                                                     | Learn how to filter grid data by the specified criteria ([Example 1](https://snippet.dhtmlx.com/epsslwcd), [Example 2](https://snippet.dhtmlx.com/zdecovib)) |
 | [Getting the header filter](../api/treegrid_getheaderfilter_method/)                           | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/vg5o912t))                                                     |
 | [Customizing filters in the header/footer](../configuration/#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a TreeGrid column ([Example](https://snippet.dhtmlx.com/jk64c5gr))              |

@@ -16,7 +16,7 @@ description: You can explore the setValue method of the header filter of Grid in
 @descr:
 
 :::info
-An array of string values can be specified only for **comboFilter** in the [`multiselection:true`](grid/configuration.md#headerfooter-content) mode.
+An array of string values can be specified only for **comboFilter** in the [`multiselection:true`](grid/configuration.md#headerfooter-filters) mode.
 :::
 
 @example:

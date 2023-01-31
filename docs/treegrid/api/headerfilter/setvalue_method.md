@@ -16,7 +16,7 @@ description: You can explore the setValue method of the header filter of TreeGri
 @descr:
 
 :::info
-An array of string values can be specified only for **comboFilter** in the [`multiselection:true`](treegrid/configuration.md#headerfooter-content) mode.
+An array of string values can be specified only for **comboFilter** in the [`multiselection:true`](treegrid/configuration.md#headerfooter-filters) mode.
 :::
 
 @example:

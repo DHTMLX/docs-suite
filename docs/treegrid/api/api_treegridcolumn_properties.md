@@ -106,7 +106,7 @@ columns:[
                     <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
                     <li><b>rowspan</b> - (optional) the number of rows in a rowspan <br/></li>
                     <li><b>css</b> - (optional) styling to be applied to a header</li>
-                    <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (optional) additional content of a header, which can be:
+                    <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a header, which can be:
                     	<ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
                     	<ol>- one of the methods that process values in a column and show result in the header:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
                     	<ol> - some other string</ol>
@@ -135,7 +135,7 @@ columns:[
                 <ul>
                     <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (optional) the text of a footer</li>
                     <li><b>css</b> - (optional) styling to be applied to a footer</li>
-                    <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (optional) additional content of a footer, which can be:
+                    <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be:
                     	<ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
                     	<ol>- one of the methods that process values in a column and show result in the footer:<br/> "avg" | "sum" | "max" | "min" | "count"</ol>
                     	<ol> - some other string</ol>
@@ -159,7 +159,7 @@ columns:[
 			</ul></td>
 		</tr>
 		 <tr>
-			<td><a href="../../configuration#setting-type-of-column-editor"><b>editorType</b></a></td>
+			<td><a href="../../configuration#types-of-column-editor"><b>editorType</b></a></td>
 			<td>(optional) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"datePicker"</td>
 		</tr>
 		<tr>
@@ -206,11 +206,11 @@ columns:[
 			<td>(optional) defines whether a column is editable</td>
 		</tr>
 		<tr>
-			<td><a href="../../configuration#resizing"><b>resizable</b></a></td>
+			<td><a href="../../configuration#resizable-columns"><b>resizable</b></a></td>
 			<td>(optional) defines whether a column can be resized</td>
 		</tr>
 		<tr>
-			<td><a href="../../configuration#sorting-columns"><b>sortable</b></a></td>
+			<td><a href="../../configuration#sortable-columns"><b>sortable</b></a></td>
 			<td>(optional) defines whether a column is sortable</td>
 		</tr>
 		<tr>

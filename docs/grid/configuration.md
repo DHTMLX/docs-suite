@@ -675,7 +675,7 @@ const data = [
 
 ### Editable combobox
 
-From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#setting-type-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](grid/api/api_gridcolumn_properties.md):
+From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#types-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](grid/api/api_gridcolumn_properties.md):
 
 ~~~js {7}
 {
@@ -695,7 +695,7 @@ The new option will be added into the combobox after the user types a new value 
 
 ![](../assets/grid/combobox_editor.png)
 
-At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-content)) of the column:
+At the same time, the created option will also appear in the drop-down list of the header/footer filters ([content: "selectFilter" | "comboFilter"](#headerfooter-filters)) of the column:
 
 ![](../assets/grid/new_combobox_option.png)
 
@@ -815,7 +815,7 @@ const grid = new dhx.Grid("grid_container", {
 
 To add a custom function with your you own logic for the filter of a Grid column, you need to set the **customFilter** attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
 
-{{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-content) is set.}}
+{{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-filters) is set.}}
 
 ~~~js {8}
 const grid = new dhx.Grid("grid_container", {

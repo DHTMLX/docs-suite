@@ -113,12 +113,12 @@ columns:[
             <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
             <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>
             <li><b>css</b> - (optional) styling to be applied to a header</li>
-            <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (optional) additional content of a header, which can be:
+            <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a header, which can be:
                 <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
                 <ol>- one of the methods that process values in a column and show result in the header: "avg" | "sum" | "max" | "min" | "count"</ol>
                 <ol>- some other string</ol>
             </li>
-            <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (optional) a configuration object for "comboFilter". It can contain a set of properties:
+            <li><a href="../../configuration#headerfooter-filters"><b>filterConfig</b></a> - (optional) a configuration object for "comboFilter". It can contain a set of properties:
                 <ol>- <b>filter</b> - (optional) sets a custom function for filtering Combo Box options</ol>
                 <ol>- <b>multiselection</b> - (optional) enables selection of multiple options</ol>
                 <ol>- <b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
@@ -142,12 +142,12 @@ columns:[
             <ul>
             <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (optional) the text of a footer </li>
             <li><b>css</b> - (optional) styling to be applied to a footer</li>
-            <li><a href="../../configuration#headerfooter-content"><b>content</b></a> - (optional) additional content of a footer, which can be:
+            <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be:
                 <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
                 <ol>- one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"</ol>
                 <ol>- some other string</ol>
             </li>
-            <li><a href="../../configuration#headerfooter-content"><b>filterConfig</b></a> - (optional) a configuration object for "comboFilter". It can contain a set of properties:
+            <li><a href="../../configuration#headerfooter-filters"><b>filterConfig</b></a> - (optional) a configuration object for "comboFilter". It can contain a set of properties:
                 <ol>- <b>filter</b> - (optional) a custom function for filtering Combo Box options</ol>
                 <ol>- <b>multiselection</b> - (optional) enables selection of multiple options</ol>
                 <ol>- <b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>

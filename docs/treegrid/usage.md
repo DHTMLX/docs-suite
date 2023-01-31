@@ -495,7 +495,7 @@ treegrid.editEnd(); // the edited data will be saved
 treegrid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
+{{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
 
 ## Expanding/collapsing nodes
 
