@@ -30,7 +30,7 @@ const chart = new dhx.Chart("chart_container", {
   
 ## The list of config options for legend (for charts with scales)
 
-:::tip
+:::info
 You can apply the options below to configure the legend for charts with the following types: 
 ["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
 :::
@@ -94,7 +94,7 @@ legend?: {
 
 ## The list of config options for legend (for charts without scales: Pie, Pie3D, Donut)
 
-:::tip
+:::info
 You can apply the options below to configure the legend for charts with the following types: 
 ["pie", "pie3D", "donut"](chart/charts_overview.md#pie-pie-3d-and-donut-chart).
 :::
@@ -167,7 +167,7 @@ legend?: {
 
 ## The list of config options for legend (for charts without scales: Treemap)
 
-:::tip
+:::info
 You can apply the options below to configure the legend for charts with the ["treeMap"](chart/charts_overview.md#treemap-chart) type.
 :::
 
@@ -262,8 +262,12 @@ legend: {
 
 ## The list of config options for legend (for charts without scales: Calendar heatmap)
 
-:::tip
-You can apply the options below to configure the legend for charts with the ["heatMap"](chart/charts_overview.md#calendar-heatmap-chart) type.
+:::tip PRO VERSION ONLY
+The calendar heatmap chart is available only in the PRO version of the DHTMLX Chart (or DHTMLX Suite).
+:::
+
+:::info
+You can apply the options below to configure the legend for charts with the ["calendarHeatMap"](chart/charts_overview.md#calendar-heatmap-chart) type.
 :::
 
 ### Usage
@@ -278,7 +282,7 @@ legend?: {
 		tickTemplate?: string => string,
 	},
 	halign?: "left" | "right" | "center", // "right" by default
-	margin?: number,
+	margin?: number, // 0 by default
 	size?: number,
 	valign?: "top" | "middle" | "bottom", // "top" by default
 }

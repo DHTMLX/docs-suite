@@ -25,6 +25,6 @@ const chart = new dhx.Chart("chart_container", {
 - "donut", "pie", "pie3D"
 - "radar"
 - "treeMap" (from v7.3)
-- "heatMap" (from v8.0)
+- "calendarHeatMap" (from v8.0)
 
 [comment]: # (@related: chart/configuration_properties.md#main-properties chart/charts_overview.md)

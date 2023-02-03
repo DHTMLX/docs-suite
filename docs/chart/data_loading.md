@@ -114,7 +114,7 @@ const treeMapData = [
 ];
 ~~~
 
-- **Heatmap chart**
+- **Calendar heatmap chart**
 
 A data set for Heatmap chart should include the following properties:
 

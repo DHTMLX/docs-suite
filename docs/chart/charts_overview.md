@@ -25,7 +25,7 @@ All in all there are 11 types of chart, in the list below they are combined into
   - [Radar chart](#radar-chart)
   - [Scatter chart](#scatter-chart)
   - [Treemap chart](#treemap-chart)
-  - [Calendar heatmap chart](#heatmap-chart)
+  - [Calendar heatmap chart](#calendar-heatmap-chart)
 
 ## Line and Spline chart
 
@@ -123,7 +123,11 @@ A treemap chart presents a hierarchical visualization of data as a set of rectan
 
 ## Calendar heatmap chart 
 
-The calendar heatmap chart is a two dimensional calendar view that uses graduated colors to visualize certain number of events for specific days during a year. The whole time period in the chart is divided into years and years into months. Each cell in a column corresponds to a day of the week.
+:::tip PRO VERSION ONLY
+The calendar heatmap chart is available only in the PRO version of the DHTMLX Chart (or DHTMLX Suite).
+:::
+
+The calendar heatmap chart is a two dimensional calendar view that uses graduated colors to visualize certain number of events for specific days during a year or other specified period of time. The whole time period in the chart is divided into years and years into months. Each cell in a column corresponds to a day of the week.
 
 The chart helps to display and identify daily patterns or anomalies over a long period.
 

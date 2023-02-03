@@ -35,7 +35,7 @@ In this section you can find out how to initialize different types of Charts, an
 | [Pie 3D chart](../charts_overview/#pie-pie-3d-and-donut-chart)     | Learn how to initialize Pie 3D chart ([Example](https://snippet.dhtmlx.com/xfce9pys))                                                      |
 | [Radar chart](../charts_overview/#radar-chart)                     | Learn how to initialize Radar chart ([Example](https://snippet.dhtmlx.com/6otf4h0t))                                                       |
 | [Treemap chart](../charts_overview/#treemap-chart)                 | Learn how to initialize Treemap chart ([Example 1](https://snippet.dhtmlx.com/p31wzm0b), [Example 2](https://snippet.dhtmlx.com/fmgnlue4)) |
-| [Heatmap chart](../charts_overview/#heatmap-chart)                 | Learn how to initialize Heatmap chart|
+| [Calendar heatmap chart](../charts_overview/##calendar-heatmap-chart)                 | Learn how to initialize Calendar heatmap chart|
 | [Grid and Chart](https://snippet.dhtmlx.com/gdeqtev4)              | Learn how to bind Chart to Grid                                                                                                            |
 
 ### Loading data into Chart

@@ -41,7 +41,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ## The list of config options for series (for charts with scales)
 
-:::tip
+:::info
 You can apply the options below to configure series for charts with the following types: 
 ["line", "spline"](chart/charts_overview.md#line-and-spline-chart), ["bar", "x-bar"](chart/charts_overview.md#bar-and-x-bar-chart), ["area", "splineArea"](chart/charts_overview.md#area-and-splinearea-chart), ["radar"](chart/charts_overview.md#radar-chart), ["scatter"](chart/charts_overview.md#scatter-chart).
 :::
@@ -225,7 +225,7 @@ series: [
 
 ## The list of config options for series (for charts without scales: Pie, Pie3D, Donut)
 
-:::tip
+:::info
 You can apply the options below to configure series for charts with the following types: 
 ["pie", "pie3D", "donut"](chart/charts_overview.md#pie-pie-3d-and-donut-chart).
 :::
@@ -310,7 +310,7 @@ series: [
 
 ## The list of config options for series (for charts without scales: Treemap)
 
-:::tip
+:::info
 You can apply the options below to configure series for charts with the ["treeMap"](chart/charts_overview.md#treemap-chart) type.
 :::
 
@@ -376,9 +376,14 @@ series: [
 
 ## The list of config options for series (for charts without scales: Calendar heatmap)
 
-:::tip
-You can apply the options below to configure series for charts with the ["heatMap"](chart/charts_overview.md#calendar-heatmap-chart) type.
+:::tip PRO VERSION ONLY
+The calendar heatmap chart is available only in the PRO version of the DHTMLX Chart (or DHTMLX Suite).
 :::
+
+:::info
+You can apply the options below to configure series for charts with the ["calendarHeatMap"](chart/charts_overview.md#calendar-heatmap-chart) type.
+:::
+
 
 ### Usage
 
@@ -388,16 +393,20 @@ series: [
 		date: string,
 		value: string,
 
-		color?: string,
-		negativeColor?: string,
-		positiveColor?: string,
+		color?: string, // by default, matches the value of the --dhx-background-secondary variable from the current color theme
+		negativeColor?: string, // by default, matches the value of the --dhx-color-danger variable from the current color theme
+		positiveColor?: string, // by default, matches the value of the --dhx-color-success variable from the current color theme
 
-		dateFormat?: string,
+		dateFormat?: string, // "%d/%m/%y" by default
+        days?: string[], // ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"] by default
+        endDate?: string | Date, // the 31st of December of the maximal year specified in the dataset
 		maxValue?: number,
 		minValue?: number,
-		tooltip?: boolean,
+        months?: string[], // ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"] by default
+		startDate?: string | Date, // by default, the 1st of January of the minimal year specified in the dataset
+		tooltip?: boolean, // true by default
 		tooltipTemplate?: ([string, number]) => string,
-		weekStart?: string,
+		weekStart?: string, // "sunday" by default
 	}
 ]
 ~~~
@@ -431,12 +440,28 @@ series: [
 			<td>(optional) defines the <a href="../../../calendar/api/calendar_dateformat_config">format of dates</a> in the tooltips ("%d/%m/%y" by default). In this format, you can specify dates in the data set </td>
 		</tr>
 		<tr>
+			<td><b>days</b></td>
+			<td>(optional) an array with the list of the days of the week starting from sunday</td>
+		</tr>
+		<tr>
+			<td><b>endDate</b></td>
+			<td>(optional) the end date of the calendar heatmap; by default, the 31st of December of the maximal year specified in the dataset</td>
+		</tr>
+		<tr>
 			<td><b>maxValue</b></td>
 			<td>(optional) the maximal value to be shown in the chart and legend. If there are values bigger than the maximal one, they will be painted with the color of the maximal value</td>
 		</tr>
 		<tr>
 			<td><b>minValue</b></td>
 			<td>(optional) the minimal value to be shown in the chart and legend. If there are values less than the minimal one, they will be painted with the color of the minimal value</td>
+		</tr>
+		<tr>
+			<td><b>months</b></td>
+			<td>(optional) an array with the list of the months of the year starting from January</td>
+		</tr>
+		<tr>
+			<td><b>startDate</b></td>
+			<td>(optional) the date starting from which the calendar heatmap will be displayed; by default, the 1st of January of the minimal year specified in the dataset</td>
 		</tr>
 		<tr>
 			<td><b>tooltip</b></td>

@@ -23,7 +23,7 @@ Released on ...
 
 #### Chart
 
-- [Calendar heatmap chart](chart/charts_overview.md#calendar-heatmap-chart)
+- [Calendar heatmap chart](chart/charts_overview.md#calendar-heatmap-chart) (Pro version)
 
 #### Colorpicker
 
