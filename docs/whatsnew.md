@@ -43,11 +43,11 @@ Released on ...
 
 #### Layout
 
-- The ability to [show a progress bar for empty cells by default](layout/cell_configuration.md#progress-bar) (new [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) property of a Layout cell)
+- The ability to [show a progress bar for empty cells by default](layout/cell_configuration.md#progress-bar) (new [`progressDefault`](layout/api/cell/layout_cell_progressdefault_config.md) property of a Layout cell)
 - The ability to [hide/show a progress bar via API calls](layout/work_with_layout.md#showinghiding-a-progress-bar):
-    - new methods of Layout: [progressShow()](layout/api/layout_progressshow_method.md) and [progressHide()](layout/api/layout_progresshide_method.md)
-    - new method of a Layout cell: [progressShow()](layout/api/cell/layout_cell_progressshow_method.md) and [progressHide()](layout/api/cell/layout_cell_progresshide_method.md)
-- The ability to detach a component or HTML content from a cell (new [detach()](layout/api/cell/layout_cell_detach_method.md) method of a Layout cell)
+    - new methods of Layout: [`progressShow()`](layout/api/layout_progressshow_method.md) and [`progressHide()`](layout/api/layout_progresshide_method.md)
+    - new method of a Layout cell: [`progressShow()`](layout/api/cell/layout_cell_progressshow_method.md) and [`progressHide()`](layout/api/cell/layout_cell_progresshide_method.md)
+- The ability to detach a component or HTML content from a cell (new [`detach()`](layout/api/cell/layout_cell_detach_method.md) method of a Layout cell)
 
 #### Message
 
@@ -57,7 +57,7 @@ Released on ...
 #### Toolbar
 
 - DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
-- The ability to set focus on an Input (new [setFocus()](toolbar/api/toolbar_setfocus_method.md) method)
+- The ability to set focus on an Input (new [`setFocus()`](toolbar/api/toolbar_setfocus_method.md) method)
 
 #### TreeCollection
 

@@ -394,7 +394,7 @@ series: [
 		value: string,
 
 		color?: string, // by default, matches the value of the --dhx-background-secondary variable from the current color theme
-		negativeColor?: string, // by default, matches the value of the --dhx-color-danger variable from the current color theme
+		negativeColor?: string, // by default, matches the value of the --dhx-color-primary variable from the current color theme
 		positiveColor?: string, // by default, matches the value of the --dhx-color-success variable from the current color theme
 
 		dateFormat?: string, // "%d/%m/%y" by default
@@ -429,7 +429,7 @@ series: [
 		</tr>
 		<tr>
 			<td><b>negativeColor</b></td>
-			<td>(optional) sets the color of negative values in the chart and legend.<br>By default, the color matches the value of the <b>--dhx-color-danger</b> variable from the current <a href="../../../themes">color theme</a></td>
+			<td>(optional) sets the color of negative values in the chart and legend.<br>By default, the color matches the value of the <b>--dhx-color-primary</b> variable from the current <a href="../../../themes">color theme</a></td>
 		</tr>
 		<tr>
 			<td><b>positiveColor</b></td>
@@ -445,7 +445,7 @@ series: [
 		</tr>
 		<tr>
 			<td><b>endDate</b></td>
-			<td>(optional) the end date of the calendar heatmap; by default, the 31st of December of the maximal year specified in the dataset</td>
+			<td>(optional) the end date of the calendar heatmap; by default, the 31st of December of the maximal year specified in the dataset. <a href="../../../chart/configuration_properties/#default-range-of-dates">Read the details</a></td>
 		</tr>
 		<tr>
 			<td><b>maxValue</b></td>
@@ -461,7 +461,7 @@ series: [
 		</tr>
 		<tr>
 			<td><b>startDate</b></td>
-			<td>(optional) the date starting from which the calendar heatmap will be displayed; by default, the 1st of January of the minimal year specified in the dataset</td>
+			<td>(optional) the date starting from which the calendar heatmap will be displayed; by default, the 1st of January of the minimal year specified in the dataset. <a href="../../../chart/configuration_properties/#default-range-of-dates">Read the details</a></td>
 		</tr>
 		<tr>
 			<td><b>tooltip</b></td>
