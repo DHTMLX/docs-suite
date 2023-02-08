@@ -512,17 +512,17 @@ To use this editor, you should specify the **type:"date"** property for a column
 ~~~
 
 :::info
-You can configure the date picker by passing [properties of Calendar](category/calendar-properties.md) to the <b>editorConfig</b> option, as in:
+You can configure the date picker by passing [properties of Calendar](category/calendar-properties.md) (except for the **value**, **range**, and **dateFormat** ones) to the <b>editorConfig</b> object, as in:
 
 ~~~js
 { 
 	id: "start_date", 
 	header: [{ text: "Start date" }], 
 	type: "date", 
+    format: "%d/%m/%Y",
 	editorConfig: { 
 		timePicker: true, 
 		weekStart: "sunday", 
-		dateFormat: "%d/%m/%Y %H:%i", 
 		thisMonthOnly: true, 
 		weekNumbers: true
 	} 
