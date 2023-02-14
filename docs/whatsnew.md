@@ -75,6 +75,22 @@ Released on ...
 
 - The [`addOption()`](combobox/api/combobox_addoption_method.md) method is updated (new `join` parameter)
 
+#### Form
+
+- New `id` parameter is added for Form events: [`afterHide`](form/api/form_afterhide_event.md), [`afterShow`](form/api/form_aftershow_event.md), [`beforeHide`](form/api/form_beforehide_event.md), [`beforeShow`](form/api/form_beforeshow_event.md)
+
+#### Form. CheckboxGroup control
+
+- Now it is possible to hide/show not only the whole control but also its separate checkboxes:
+    - new `id` parameter is added for CheckboxGroup methods: [`hide()`](form/api/checkbox_group/checkboxgroup_hide_method.md) and [`show()`](form/api/checkbox_group/checkboxgroup_show_method.md)
+    - new `id` parameter is added for CheckboxGroup events: [`afterHide`](form/api/checkbox_group/checkboxgroup_afterhide_event.md), [`afterShow`](form/api/checkbox_group/checkboxgroup_aftershow_event.md), [`beforeHide`](form/api/checkbox_group/checkboxgroup_beforehide_event.md), [`beforeShow`](form/api/checkbox_group/checkboxgroup_beforeshow_event.md)
+
+#### Form. RadioGroup control
+
+- Now it is possible to hide/show not only the whole control but also its separate radio buttons:
+    - new `id` parameter is added for RadioGroup methods: [`hide()`](form/api/radiogroup/radiogroup_hide_method.md) and [`show()`](form/api/radiogroup/radiogroup_show_method.md)
+    - new `id` parameter is added for RadioGroup events: [`afterHide`](form/api/radiogroup/radiogroup_afterhide_event.md), [`afterShow`](form/api/radiogroup/radiogroup_aftershow_event.md), [`beforeHide`](form/api/radiogroup/radiogroup_beforehide_event.md), [`beforeShow`](form/api/radiogroup/radiogroup_beforeshow_event.md)
+
 #### Grid/TreeGrid
 
 - The [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method is updated. Now the method returns an object with a set of methods: [`blur()`](grid/api/headerfilter/blur_method.md), [`clear()`](grid/api/headerfilter/clear_method.md), [`focus()`](grid/api/headerfilter/focus_method.md), [`getFilter()`](grid/api/headerfilter/getfilter_method.md), [`setValue()`](grid/api/headerfilter/setvalue_method.md). Check the [Migration](migration.md#73---80) article

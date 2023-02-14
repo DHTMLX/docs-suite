@@ -6,13 +6,14 @@ description: You can explore the beforeShow event of Form in the documentation o
 
 # beforeShow
 
-@short: fires before a Form control is shown
+@short: fires before a Form control or its element is shown
 
-@signature: {'beforeShow: (name: string, value?: any) => boolean | void;'}
+@signature: {'beforeShow: (name: string, value?: any, id?: string) => boolean | void;'}
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
 - `value: any` - the current value of the control
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.
@@ -28,6 +29,7 @@ form.events.on("beforeShow", function(name, value) {
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog:
+- The **id** parameter was added in v8.0
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
 - The event was added in v6.5

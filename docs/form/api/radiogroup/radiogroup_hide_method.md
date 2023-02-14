@@ -6,11 +6,18 @@ description: You can explore the hide method of the Radiogroup control of Form i
 
 # hide()
 
-@short: hides a RadioGroup control
+@short: hides either a radio button of RadioGroup or the whole RadioGroup
 
-@signature: {'hide(): void;'}
+@signature: {'hide(id?: string): void;'}
+
+@params:
+- `id?: string` - optional, the ID of a radio button to hide
 
 @example:
-form.getItem("radiogroup").hide(); 
+form.getItem("radiogroup").hide("radiobutton_1"); 
 
 @descr:
+
+If ID of the radio button is not specified, the method hides RadioGroup with all its radio buttons.
+
+@changelog: The **id** parameter was added in v8.0

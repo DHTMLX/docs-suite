@@ -6,16 +6,17 @@ description: You can explore the beforeHide event of Form in the documentation o
 
 # beforeHide
 
-@short: fires before a Form control is hidden
+@short: fires before a Form control or its element is hidden
 
-@signature: {'beforeHide: (name: string | number, value?: any) => boolean | void;'}
+@signature: {'beforeHide: (name: string | number, value?: any, id?: string) => boolean | void;'}
 
 @params:
 - `name|id: string | number` - the name (or id, if the name is not specified) of the Form control
 - `value: any` - the current value of the control
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @returns:
-Return `false` to prevent a control from being hidden; otherwise, `true`.
+Return `false` to prevent a control or its element from being hidden; otherwise, `true`.
 
 @example:
 form.events.on("beforeHide", function(name, value) {
@@ -28,6 +29,7 @@ form.events.on("beforeHide", function(name, value) {
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog:
+- The **id** parameter was added in v8.0
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
 - The event was added in v6.5

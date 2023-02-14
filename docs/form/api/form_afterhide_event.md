@@ -6,13 +6,14 @@ description: You can explore the afterHide event of Form in the documentation of
 
 # afterHide
 
-@short: fires after hiding a control of Form
+@short: fires after a Form control or its element is hidden
 
-@signature: {'afterHide: (name: string, value?: any) => void;'}
+@signature: {'afterHide: (name: string, value?: any, id?: string) => void;'}
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
 - `value: any` - the current value of the control
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:
 form.events.on("afterHide", function(name, value) {
@@ -24,6 +25,8 @@ form.events.on("afterHide", function(name, value) {
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog:
+
+- The **id** parameter was added in v8.0
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
 - The event was added in v6.5

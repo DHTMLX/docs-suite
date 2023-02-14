@@ -6,22 +6,26 @@ description: You can explore the beforeShow event of the Radiogroup control of F
 
 # beforeShow
 
-@short: fires before a control is shown
+@short: fires before a control or its radio button is shown
 
-@signature: {'beforeShow: (value: string) => boolean | void;'} 
+@signature: {'beforeShow: (value: string, id?: string) => boolean | void;'} 
 
 @params:
 - `value: string` - the current value of the control
+- `id?: string` - optional, the ID of the radio button of the control
 
 @returns:
-Return `false` to prevent a control from being shown; otherwise, `true`.
+Return `false` to prevent a control or its radio button from being shown; otherwise, `true`.
 
 @example:
-form.getItem("radiogroup").events.on("beforeShow", function(value) {
-    console.log("beforeShow", value);
+form.getItem("radiogroup").events.on("beforeShow", function(value, id) {
+    console.log("beforeShow", value, id);
     return true;
 });
 
 @descr:
 
-@changelog: added in v7.0
+@changelog:
+
+- The **id** parameter was added in v8.0
+- The event was added in v7.0
