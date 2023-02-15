@@ -56,7 +56,8 @@ Released on ...
 
 #### Toolbar
 
-- DatePicker control. The ability to let the user enter the date via the input (new [`editable`](toolbar/api/api_datepicker_properties.md) property)
+- [DatePicker control](toolbar/api/api_datepicker_properties.md). The ability to let the user enter the date via the input (new `editable` property)
+- [DatePicker control](toolbar/api/api_datepicker_properties.md). New properties: `valueFormat`, `disabledDates`, `mark`, `mode`, `thisMonthOnly`, `timeFormat`, `timePicker`, `weekNumbers`, `weekStart`
 - The ability to set focus on an Input (new [`setFocus()`](toolbar/api/toolbar_setfocus_method.md) method)
 
 #### TreeCollection
@@ -66,7 +67,6 @@ Released on ...
 #### TreeGrid
 
 - The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
-- Now the sorting icon will also appear after sorting data via the `data.sort()` method
 - The ability to configure the [datePicker editor](treegrid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
 
 ### Updates
@@ -98,6 +98,10 @@ Released on ...
 #### Message
 
 - The `position` property of the [tooltip](message/api/api_message_properties.md#tooltip) is extended by the "left" and "top" values
+
+#### TreeGrid
+
+- Now the sorting icon will also appear after sorting data via the `data.sort()` method
 
 Version 7.3.14
 ---------------
