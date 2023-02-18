@@ -6,11 +6,16 @@ description: You can explore the disable method of the Checkbox Group control of
 
 # disable()
 
-@short: disables a CheckboxGroup control on a page
+@short: disables a CheckboxGroup control or a specific element inside the control
 
-@signature: {'disable(): void;'}
+@signature: {'disable(id?: string): void;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the CheckboxGroup control
 
 @example:
-form.getItem("CheckboxGroup").disable();
+form.getItem("CheckboxGroup").disable("id_1");
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0
