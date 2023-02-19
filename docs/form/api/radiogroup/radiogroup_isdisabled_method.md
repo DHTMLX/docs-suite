@@ -6,15 +6,20 @@ description: You can explore the isDisabled method of the Radiogroup control of 
 
 # isDisabled()
 
-@short: checks whether a RadioGroup control is disabled
+@short: checks whether a RadioGroup control or a specific element inside the control is disabled
 
-@signature: {'isDisabled(): boolean;'}
+@signature: {'isDisabled(id?: string): boolean;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the RadioGroup control
 
 @returns:
-`true`, if a control is disabled; otherwise, `false`.
+`true`, if a control or a specific element is disabled; otherwise, `false`.
 
 @example:
-form.getItem("radiogroup").isDisabled(); 
+form.getItem("radiogroup").isDisabled("id_1");
 // -> true/false
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0

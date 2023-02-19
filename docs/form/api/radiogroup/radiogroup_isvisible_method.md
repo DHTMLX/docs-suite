@@ -6,15 +6,20 @@ description: You can explore the isVisible method of the Radiogroup control of F
 
 # isVisible()
 
-@short: checks whether a RadioGroup control is visible on the page
+@short: checks whether a RadioGroup control or a specific element inside the control is visible
 
-@signature: {'isVisible(): boolean;'}
+@signature: {'isVisible(id?: string): boolean;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the RadioGroup control
 
 @returns:
-`true`, if a control is visible; otherwise, `false`.
+`true`, if a control or a specific element is visible; otherwise, `false`.
 
 @example:
-form.getItem("radiogroup").isVisible(); 
+form.getItem("radiogroup").isVisible("id_1"); 
 // -> true/false
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0
