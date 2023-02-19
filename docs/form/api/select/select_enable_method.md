@@ -6,11 +6,16 @@ description: You can explore the enable method of the Select control of Form in 
 
 # enable()
 
-@short: enables a disabled Select control
+@short: enables a Select control or a specific option inside the control
 
-@signature: {'enable(): void;'}
+@signature: {'enable(value?: string | number): void;'}
+
+@params:
+- `value: string | number` - optional, the **value** of a specific option inside the control
 
 @example:
-form.getItem("select").enable();
+form.getItem("select").enable(1);
 
 @descr:
+
+**Change log:** The **value** parameter was added in v8.0
