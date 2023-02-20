@@ -8,18 +8,18 @@ description: You can explore the beforeShow event of the Spacer control of Form 
 
 @short: fires before a control is shown
 
-@signature: {'beforeShow: (value: undefined) => boolean | void;'}
-
-@params:
-- `value: undefined` - the current value of the control, null
+@signature: {'beforeShow: () => boolean | void;'}
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("spacer").events.on("beforeShow", function(value) {
-    console.log("beforeShow", value);
+form.getItem("spacer").events.on("beforeShow", function() {
+    console.log("beforeShow");
     return true;
 });
 
 @descr:
+
+**Change log:**
+- The **value** parameter was removed in v8.0

@@ -8,15 +8,17 @@ description: You can explore the afterHide event of the Spacer control of Form i
 
 @short: fires after a control is hidden
 
-@signature: {'afterHide: (value: undefined, init: boolean) => void;'}
+@signature: {'afterHide: (init: boolean) => void;'}
 
 @params:
-- `value: undefined` - the current value of the control, null
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
-form.getItem("spacer").events.on("afterHide", function(value, init) {
-    console.log("afterHide", value, init);
+form.getItem("spacer").events.on("afterHide", function(init) {
+    console.log("afterHide",init);
 });
 
 @descr:
+
+**Change log:**
+- The **value** parameter was removed in v8.0

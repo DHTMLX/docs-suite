@@ -8,10 +8,9 @@ description: You can explore the beforeHide event of the Spacer control of Form 
 
 @short: fires before a control is hidden
 
-@signature: {'beforeHide: (value: undefined, init: boolean) => boolean | void;'}
+@signature: {'beforeHide: (init: boolean) => boolean | void;'}
 
 @params:
-- `value: undefined` - the current value of the control, null
 - `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
@@ -19,8 +18,11 @@ Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
 form.getItem("spacer").events.on("beforeHide", function(value, init) {
-    console.log("beforeHide", value, init);
+    console.log("beforeHide", init);
     return true;
 });
 
 @descr:
+
+**Change log:**
+- The **value** parameter was removed in v8.0
