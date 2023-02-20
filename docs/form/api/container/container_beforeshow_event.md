@@ -8,18 +8,17 @@ description: You can explore the beforeShow event of the Container control of Fo
 
 @short: fires before a Container control is shown
 
-@signature: beforeShow: (value: undefined) => boolean | void;
-
-@params:
-- `value: undefined` - the current value of the control, null
+@signature: beforeShow: () => boolean | void;
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("container").events.on("beforeShow", function(text) {
-    console.log("beforeShow", text);
+form.getItem("container").events.on("beforeShow", function() {
+    console.log("beforeShow");
     return true;
 });
 
-@changelog: added in v7.2
+**Change log:**
+- The event was added in v7.2
+- The **value** parameter was removed in v8.0

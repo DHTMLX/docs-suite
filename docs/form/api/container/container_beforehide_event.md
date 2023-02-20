@@ -8,19 +8,20 @@ description: You can explore the beforeHide event of the Container control of Fo
 
 @short: fires before a Container control is hidden
 
-@signature: beforeHide: (value: undefined, init: boolean) => boolean | void;
+@signature: beforeHide: (init: boolean) => boolean | void;
 
 @params:
-- `value: undefined` - the current value of the control, null
 - `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
 Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("container").events.on("beforeHide", function(text, init) {
-    console.log("beforeHide", text, init);
+form.getItem("container").events.on("beforeHide", function(init) {
+    console.log("beforeHide", init);
     return true;
 });
 
-@changelog: added in v7.2
+**Change log:**
+- The event was added in v7.2
+- The **value** parameter was removed in v8.0

@@ -8,15 +8,16 @@ description: You can explore the afterHide event of the Container control of For
 
 @short: fires after a Container control is hidden
 
-@signature: afterHide: (value: undefined, init: boolean) => void;
+@signature: afterHide: (init: boolean) => void;
 
 @params:
-- `value: undefined` - the current value of the control
 - `init: boolean` - *true*, if the event is triggered on the control initialization
 
 @example:
-form.getItem("container").events.on("afterHide", function(value, init) {
-    console.log("afterHide", value, init);
+form.getItem("container").events.on("afterHide", function(init) {
+    console.log("afterHide", init);
 });
 
-@changelog: added in v7.2
+**Change log:**
+- The event was added in v7.2
+- The **value** parameter was removed in v8.0
