@@ -164,6 +164,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
+| [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
 | [](grid/api/grid_css_config.md)             | @getshort(grid/api/grid_css_config.md)             |
 | [](grid/api/grid_data_config.md)            | @getshort(grid/api/grid_data_config.md)            |
@@ -180,12 +181,14 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_leftsplit_config.md)       | @getshort(grid/api/grid_leftsplit_config.md)       |
 | [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
 | [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
+| [](grid/api/grid_rightsplit_config.md)      | @getshort(grid/api/grid_rightsplit_config.md)      |
 | [](grid/api/grid_rowcss_config.md)          | @getshort(grid/api/grid_rowcss_config.md)          |
 | [](grid/api/grid_rowheight_config.md)       | @getshort(grid/api/grid_rowheight_config.md)       |
 | [](grid/api/grid_selection_config.md)       | @getshort(grid/api/grid_selection_config.md)       |
 | [](grid/api/grid_sortable_config.md)        | @getshort(grid/api/grid_sortable_config.md)        |
 | [](grid/api/grid_spans_config.md)           | @getshort(grid/api/grid_spans_config.md)           |
 | [](grid/api/grid_tooltip_config.md)         | @getshort(grid/api/grid_tooltip_config.md)         |
+| [](grid/api/grid_topsplit_config.md)        | @getshort(grid/api/grid_topsplit_config.md)        |
 | [](grid/api/grid_width_config.md)           | @getshort(grid/api/grid_width_config.md)           |
 
 ## Column properties

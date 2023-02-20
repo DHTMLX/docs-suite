@@ -178,6 +178,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_autoemptyrow_config.md)       | @getshort(treegrid/api/treegrid_autoemptyrow_config.md)       |
 | [](treegrid/api/treegrid_autoheight_config.md)         | @getshort(treegrid/api/treegrid_autoheight_config.md)         |
 | [](treegrid/api/treegrid_autowidth_config.md)          | @getshort(treegrid/api/treegrid_autowidth_config.md)          |
+| [](treegrid/api/treegrid_bottomsplit_config.md)        | @getshort(treegrid/api/treegrid_bottomsplit_config.md)        |
 | [](treegrid/api/treegrid_columns_config.md)            | @getshort(treegrid/api/treegrid_columns_config.md)            |
 | [](treegrid/api/treegrid_css_config.md)                | @getshort(treegrid/api/treegrid_css_config.md)                |
 | [](treegrid/api/treegrid_data_config.md)               | @getshort(treegrid/api/treegrid_data_config.md)               |
@@ -193,6 +194,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_htmlenable_config.md)         | @getshort(treegrid/api/treegrid_htmlenable_config.md)         |
 | [](treegrid/api/treegrid_leftsplit_config.md)          | @getshort(treegrid/api/treegrid_leftsplit_config.md)          |
 | [](treegrid/api/treegrid_resizable_config.md)          | @getshort(treegrid/api/treegrid_resizable_config.md)          |
+| [](treegrid/api/treegrid_rightsplit_config.md)         | @getshort(treegrid/api/treegrid_rightsplit_config.md)         |
 | [](treegrid/api/treegrid_rootparent_config.md)         | @getshort(treegrid/api/treegrid_rootparent_config.md)         |
 | [](treegrid/api/treegrid_rowcss_config.md)             | @getshort(treegrid/api/treegrid_rowcss_config.md)             |
 | [](treegrid/api/treegrid_rowheight_config.md)          | @getshort(treegrid/api/treegrid_rowheight_config.md)          |
@@ -200,6 +202,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_sortable_config.md)           | @getshort(treegrid/api/treegrid_sortable_config.md)           |
 | [](treegrid/api/treegrid_spans_config.md)              | @getshort(treegrid/api/treegrid_spans_config.md)              |
 | [](treegrid/api/treegrid_tooltip_config.md)            | @getshort(treegrid/api/treegrid_tooltip_config.md)            |
+| [](treegrid/api/treegrid_topsplit_config.md)           | @getshort(treegrid/api/treegrid_topsplit_config.md)           |
 | [](treegrid/api/treegrid_width_config.md)              | @getshort(treegrid/api/treegrid_width_config.md)              |
 
 ## Column properties

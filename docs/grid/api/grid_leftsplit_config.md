@@ -6,7 +6,7 @@ description: You can explore the leftSplit config of Grid in the documentation o
 
 # leftSplit
 
-@short: Optional. Sets the number of frozen columns
+@short: Optional. Sets the number of frozen columns from the left
 
 @signature: {'leftSplit?: number;'}
 
@@ -21,7 +21,7 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Frozen columns](https://snippet.dhtmlx.com/hcgl9nth)
+**Related sample**: [Grid. Frozen columns and rows](https://snippet.dhtmlx.com/hcgl9nth)
 
 @changelog: added in v7.0
 
