@@ -6,7 +6,7 @@ description: You can explore the API of Chart in the documentation of the DHTMLX
 
 # Chart API overview
 
-## Methods
+## Methods 
 
 | Name                                     | Description                                     |
 | ---------------------------------------- | ----------------------------------------------- |
@@ -17,7 +17,7 @@ description: You can explore the API of Chart in the documentation of the DHTMLX
 | [](chart/api/chart_setconfig_method.md)  | @getshort(chart/api/chart_setconfig_method.md)  |
 
 :::info important
-Use [DataCollection methods](data_collection.md) to work with data. 
+Use [DataCollection methods](data_collection.md) to work with data.
 :::
 
 ## Events
@@ -43,3 +43,10 @@ Use [DataCollection events](data_collection.md#events) to work with data.
 | [](chart/api/chart_scales_config.md)    | @getshort(chart/api/chart_scales_config.md)    |
 | [](chart/api/chart_series_config.md)    | @getshort(chart/api/chart_series_config.md)    |
 | [](chart/api/chart_type_config.md)      | @getshort(chart/api/chart_type_config.md)      |
+
+## Export Methods
+
+| Name                                     | Description                                     |
+| ---------------------------------------- | ----------------------------------------------- |
+| [](chart/api/export/chart_png_method.md) | @getshort(chart/api/export/chart_png_method.md) |
+| [](chart/api/export/chart_pdf_method.md) | @getshort(chart/api/export/chart_pdf_method.md) |

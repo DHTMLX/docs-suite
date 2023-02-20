@@ -270,6 +270,21 @@ module.exports = {
                     "chart/api/chart_type_config",
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Export methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Export methods",
+                    keywords: ['Export methods'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "chart/api/export/chart_png_method",
+                    "chart/api/export/chart_pdf_method"
+                  ],
+                },
               ],
             },
             "chart/charts_overview",
