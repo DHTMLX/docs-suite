@@ -8,10 +8,10 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
-Version 8.0 
+Version 8.0
 ---------------
 
-Released on ...
+Released on February Day, 2023
 
 ### New functionality
 
@@ -24,14 +24,38 @@ Released on ...
 #### Chart
 
 - [Calendar heatmap chart](chart/charts_overview.md#calendar-heatmap-chart) (Pro version)
+- The ability to export the Chart data to [PDF](chart/api/export/chart_pdf_method.md) and [PNG](chart/api/export/chart_png_method.md) ([Example](https://snippet.dhtmlx.com/4rybsjjq))
 
 #### Colorpicker
 
 - New [`beforeChange`](colorpicker/api/colorpicker_beforechange_event.md) event
 
+#### Combobox
+
+- New `beforeChange` event
+
+#### Slider
+
+- New `beforeChange` event
+
+#### Timepicker
+
+- New [`beforeChange`](timepicker/api/timepicker_beforechange_event.md) event
+
 #### Form
 
-- RadioGroup control. New methods: [`hideItem()`](form/api/radiogroup/radiogroup_hideitem_method.md) and [`showItem()`](form/api/radiogroup/radiogroup_showitem_method.md)
+- New [`beforeChange`](form/api/form_beforechange_event.md) event for the Form and for the following controls:
+  - Datepicker [`beforeChange`](form/api/calendar/calendar_beforechange_event.md) event
+  - Checkbox [`beforeChange`](form/api/checkbox/checkbox_beforechange_event.md) event
+  - CheckboxGroup [`beforeChange`](form/api/checkbox_group/checkboxgroup_beforechange_event.md) event
+  - Colorpicker [`beforeChange`](form/api/colorpicker/colorpicker_beforechange_event.md) event
+  - Combo [`beforeChange`](form/api/combo/combo_beforechange_event.md) event
+  - Input [`beforeChange`](form/api/input/input_beforechange_event.md) event
+  - Radiogroup [`beforeChange`](form/api/radiogroup/radiogroup_beforechange_event.md) event
+  - Slider [`beforeChange`](form/api/slider/slider_beforechange_event.md) event
+  - Textarea [`beforeChange`](form/api/textarea/textarea_beforechange_event.md) event
+  - Timepicker [`beforeChange`](form/api/timepicker/timepicker_beforechange_event.md) event
+  - Select [`beforeChange`](form/api/select/select_beforechange_event.md) and [`beforeChangeOptions`](form/api/select/select_beforechangeoptions_event.md) events
 
 #### Grid
 
@@ -40,6 +64,7 @@ Released on ...
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - Now the sorting icon will also appear after sorting data via the `data.sort()` method
 - The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to fix bottom rows and right columns using the corresponding [`bottomSplit`](grid/api/grid_bottomsplit_config.md) and [`rightSplit`](grid/api/grid_rightsplit_config.md) properties ([Example](https://snippet.dhtmlx.com/hcgl9nth))
 
 #### Layout
 
@@ -68,6 +93,7 @@ Released on ...
 
 - The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
 - The ability to configure the [datePicker editor](treegrid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to fix bottom rows and right columns using the corresponding [`bottomSplit`](treegrid/api/treegrid_bottomsplit_config.md) and [`rightSplit`](treegrid/api/treegrid_rightsplit_config.md) properties ([Example](https://snippet.dhtmlx.com/46me58ze))
 
 ### Updates
 
@@ -85,11 +111,30 @@ Released on ...
     - new `id` parameter is added for CheckboxGroup methods: [`hide()`](form/api/checkbox_group/checkboxgroup_hide_method.md) and [`show()`](form/api/checkbox_group/checkboxgroup_show_method.md)
     - new `id` parameter is added for CheckboxGroup events: [`afterHide`](form/api/checkbox_group/checkboxgroup_afterhide_event.md), [`afterShow`](form/api/checkbox_group/checkboxgroup_aftershow_event.md), [`beforeHide`](form/api/checkbox_group/checkboxgroup_beforehide_event.md), [`beforeShow`](form/api/checkbox_group/checkboxgroup_beforeshow_event.md)
 
+- Now it is possible to enable/disable and check visibility not only the whole control but also its separate checkboxes:
+    - new `id` parameter is added for CheckboxGroup methods: [`enable()`](form/api/checkbox_group/checkboxgroup_enable_method.md), [`disable()`](form/api/checkbox_group/checkboxgroup_disable_method.md), [`isVisible()`](form/api/checkbox_group/checkboxgroup_isvisible_method.md), [`isDisabled()`](form/api/checkbox_group/checkboxgroup_isdisabled_method.md)
+
 #### Form. RadioGroup control
 
 - Now it is possible to hide/show not only the whole control but also its separate radio buttons:
     - new `id` parameter is added for RadioGroup methods: [`hide()`](form/api/radiogroup/radiogroup_hide_method.md) and [`show()`](form/api/radiogroup/radiogroup_show_method.md)
     - new `id` parameter is added for RadioGroup events: [`afterHide`](form/api/radiogroup/radiogroup_afterhide_event.md), [`afterShow`](form/api/radiogroup/radiogroup_aftershow_event.md), [`beforeHide`](form/api/radiogroup/radiogroup_beforehide_event.md), [`beforeShow`](form/api/radiogroup/radiogroup_beforeshow_event.md)
+
+- Now it is possible to enable/disable and check visibility not only the whole control but also its separate radio buttons:
+    - new `id` parameter is added for RadioGroup methods: [`enable()`](form/api/checkbox_group/checkboxgroup_enable_method.md), [`disable()`](form/api/checkbox_group/checkboxgroup_disable_method.md), [`isVisible()`](form/api/checkbox_group/checkboxgroup_isvisible_method.md), [`isDisabled()`](form/api/checkbox_group/checkboxgroup_isdisabled_method.md)
+
+#### Form. Select control
+
+- Now it is possible to enable/disable and check visibility not only the whole control but also its separate radio buttons:
+    - new `value` parameter is added for Select methods: [`enable()`](form/api/select/select_enable_method.md), [`disable()`](form/api/select/select_disable_method.md), [`isDisabled()`](form/api/select/select_isdisabled_method.md)
+
+#### Form. Container control
+
+-  The `value` parameter is removed from Container events: [`afterhide`](form/api/container/container_afterhide_event.md), [`aftershow`](form/api/container/container_afterhide_event.md), [`beforehide`](form/api/container/container_beforehide_event.md), [`beforeshow`](form/api/container/container_beforeshow_event.md)
+
+#### Form. Spacer control
+
+-  The `value` parameter is removed from Spacer events: [`afterhide`](form/api/spacer/spacer_afterhide_event.md), [`aftershow`](form/api/spacer/spacer_afterhide_event.md), [`beforehide`](form/api/spacer/spacer_beforehide_event.md), [`beforeshow`](form/api/spacer/spacer_beforeshow_event.md)
 
 #### Grid/TreeGrid
 
@@ -101,7 +146,7 @@ Released on ...
 
 #### TreeGrid
 
-- Now the sorting icon will also appear after sorting data via the `data.sort()` method
+- Now the sorting icon will also appear after sorting data via the [`data.sort()`](tree_collection/api/treecollection_sort_method.md) method
 
 Version 7.3.14
 ---------------
