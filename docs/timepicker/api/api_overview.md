@@ -23,6 +23,7 @@ description: You can explore the API of Timepicker in the documentation of the D
 | [](timepicker/api/timepicker_afterapply_event.md)     | @getshort(timepicker/api/timepicker_afterapply_event.md)  |
 | [](timepicker/api/timepicker_afterclose_event.md)     | @getshort(timepicker/api/timepicker_afterclose_event.md)  |
 | [](timepicker/api/timepicker_beforeapply_event.md)    | @getshort(timepicker/api/timepicker_beforeapply_event.md) |
+| [](timepicker/api/timepicker_beforechange_event.md)   | @getshort(timepicker/api/timepicker_beforechange_event.md)|
 | [](timepicker/api/timepicker_beforeclose_event.md)    | @getshort(timepicker/api/timepicker_beforeclose_event.md) |
 | [](timepicker/api/timepicker_change_event.md)         | @getshort(timepicker/api/timepicker_change_event.md)      |
 

@@ -3662,6 +3662,7 @@ module.exports = {
                     "timepicker/api/timepicker_afterapply_event",
                     "timepicker/api/timepicker_afterclose_event",
                     "timepicker/api/timepicker_beforeapply_event",
+                    "timepicker/api/timepicker_beforechange_event",
                     "timepicker/api/timepicker_beforeclose_event",
                     "timepicker/api/timepicker_change_event",
                   ],
