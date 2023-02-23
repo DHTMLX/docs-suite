@@ -41,6 +41,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/form_aftersend_event.md)              | @getshort(form/api/form_aftersend_event.md)              |
 | [](form/api/form_aftershow_event.md)              | @getshort(form/api/form_aftershow_event.md)              |
 | [](form/api/form_aftervalidate_event.md)          | @getshort(form/api/form_aftervalidate_event.md)          |
+| [](form/api/form_beforechange_event.md)           | @getshort(form/api/form_beforechange_event.md)           |
 | [](form/api/form_beforechangeproperties_event.md) | @getshort(form/api/form_beforechangeproperties_event.md) |
 | [](form/api/form_beforehide_event.md)             | @getshort(form/api/form_beforehide_event.md)             |
 | [](form/api/form_beforesend_event.md)             | @getshort(form/api/form_beforesend_event.md)             |
@@ -134,6 +135,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/calendar/calendar_afterhide_event.md)              | @getshort(orm/api/calendar/calendar_afterhide_event.md)              |
 | [](form/api/calendar/calendar_aftershow_event.md)              | @getshort(orm/api/calendar/calendar_aftershow_event.md)              |
 | [](form/api/calendar/calendar_aftervalidate_event.md)          | @getshort(orm/api/calendar/calendar_aftervalidate_event.md)          |
+| [](form/api/calendar/calendar_beforechange_event.md)           | @getshort(orm/api/calendar/calendar_beforechange_event.md)           |
 | [](form/api/calendar/calendar_beforechangeproperties_event.md) | @getshort(orm/api/calendar/calendar_beforechangeproperties_event.md) |
 | [](form/api/calendar/calendar_beforehide_event.md)             | @getshort(orm/api/calendar/calendar_beforehide_event.md)             |
 | [](form/api/calendar/calendar_beforeshow_event.md)             | @getshort(orm/api/calendar/calendar_beforeshow_event.md)             |
@@ -179,6 +181,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox/checkbox_afterhide_event.md)              | @getshort(form/api/checkbox/checkbox_afterhide_event.md)              |
 | [](form/api/checkbox/checkbox_aftershow_event.md)              | @getshort(form/api/checkbox/checkbox_aftershow_event.md)              |
 | [](form/api/checkbox/checkbox_aftervalidate_event.md)          | @getshort(form/api/checkbox/checkbox_aftervalidate_event.md)          |
+| [](form/api/checkbox/checkbox_beforechange_event.md)           | @getshort(form/api/checkbox/checkbox_beforechange_event.md)           |
 | [](form/api/checkbox/checkbox_beforechangeproperties_event.md) | @getshort(form/api/checkbox/checkbox_beforechangeproperties_event.md) |
 | [](form/api/checkbox/checkbox_beforehide_event.md)             | @getshort(form/api/checkbox/checkbox_beforehide_event.md)             |
 | [](form/api/checkbox/checkbox_beforeshow_event.md)             | @getshort(form/api/checkbox/checkbox_beforeshow_event.md)             |
@@ -223,6 +226,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox_group/checkboxgroup_afterhide_event.md)              | @getshort(form/api/checkbox_group/checkboxgroup_afterhide_event.md)              |
 | [](form/api/checkbox_group/checkboxgroup_aftershow_event.md)              | @getshort(form/api/checkbox_group/checkboxgroup_aftershow_event.md)              |
 | [](form/api/checkbox_group/checkboxgroup_aftervalidate_event.md)          | @getshort(form/api/checkbox_group/checkboxgroup_aftervalidate_event.md)          |
+| [](form/api/checkbox_group/checkboxgroup_beforechange_event.md)           | @getshort(form/api/checkbox_group/checkboxgroup_beforechange_event.md)           |
 | [](form/api/checkbox_group/checkboxgroup_beforechangeproperties_event.md) | @getshort(form/api/checkbox_group/checkboxgroup_beforechangeproperties_event.md) |
 | [](form/api/checkbox_group/checkboxgroup_beforehide_event.md)             | @getshort(form/api/checkbox_group/checkboxgroup_beforehide_event.md)             |
 | [](form/api/checkbox_group/checkboxgroup_beforeshow_event.md)             | @getshort(form/api/checkbox_group/checkboxgroup_beforeshow_event.md)             |
@@ -271,6 +275,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/colorpicker/colorpicker_afterhide_event.md)              | @getshort(form/api/colorpicker/colorpicker_afterhide_event.md)              |
 | [](form/api/colorpicker/colorpicker_aftershow_event.md)              | @getshort(form/api/colorpicker/colorpicker_aftershow_event.md)              |
 | [](form/api/colorpicker/colorpicker_aftervalidate_event.md)          | @getshort(form/api/colorpicker/colorpicker_aftervalidate_event.md)          |
+| [](form/api/colorpicker/colorpicker_beforechange_event.md)           | @getshort(form/api/colorpicker/colorpicker_beforechange_event.md)           |
 | [](form/api/colorpicker/colorpicker_beforechangeproperties_event.md) | @getshort(form/api/colorpicker/colorpicker_beforechangeproperties_event.md) |
 | [](form/api/colorpicker/colorpicker_beforehide_event.md)             | @getshort(form/api/colorpicker/colorpicker_beforehide_event.md)             |
 | [](form/api/colorpicker/colorpicker_beforeshow_event.md)             | @getshort(form/api/colorpicker/colorpicker_beforeshow_event.md)             |
@@ -316,6 +321,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/combo/combo_afterhide_event.md)              | @getshort(form/api/combo/combo_afterhide_event.md)              |
 | [](form/api/combo/combo_aftershow_event.md)              | @getshort(form/api/combo/combo_aftershow_event.md)              |
 | [](form/api/combo/combo_aftervalidate_event.md)          | @getshort(form/api/combo/combo_aftervalidate_event.md)          |
+| [](form/api/combo/combo_beforechange_event.md)           | @getshort(form/api/combo/combo_beforechange_event.md)           |
 | [](form/api/combo/combo_beforechangeproperties_event.md) | @getshort(form/api/combo/combo_beforechangeproperties_event.md) |
 | [](form/api/combo/combo_beforehide_event.md)             | @getshort(form/api/combo/combo_beforehide_event.md)             |
 | [](form/api/combo/combo_beforeshow_event.md)             | @getshort(form/api/combo/combo_beforeshow_event.md)             |
@@ -391,6 +397,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/input/input_afterhide_event.md)              | @getshort(form/api/input/input_afterhide_event.md)              |
 | [](form/api/input/input_aftershow_event.md)              | @getshort(form/api/input/input_aftershow_event.md)              |
 | [](form/api/input/input_aftervalidate_event.md)          | @getshort(form/api/input/input_aftervalidate_event.md)          |
+| [](form/api/input/input_beforechange_event.md)           | @getshort(form/api/input/input_beforechange_event.md)           |
 | [](form/api/input/input_beforechangeproperties_event.md) | @getshort(form/api/input/input_beforechangeproperties_event.md) |
 | [](form/api/input/input_beforehide_event.md)             | @getshort(form/api/input/input_beforehide_event.md)             |
 | [](form/api/input/input_beforeshow_event.md)             | @getshort(form/api/input/input_beforeshow_event.md)             |
@@ -435,6 +442,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/radiogroup/radiogroup_afterhide_event.md)              | @getshort(form/api/radiogroup/radiogroup_afterhide_event.md)              |
 | [](form/api/radiogroup/radiogroup_aftershow_event.md)              | @getshort(form/api/radiogroup/radiogroup_aftershow_event.md)              |
 | [](form/api/radiogroup/radiogroup_aftervalidate_event.md)          | @getshort(form/api/radiogroup/radiogroup_aftervalidate_event.md)          |
+| [](form/api/radiogroup/radiogroup_beforechange_event.md)           | @getshort(form/api/radiogroup/radiogroup_beforechange_event.md)           |
 | [](form/api/radiogroup/radiogroup_beforechangeproperties_event.md) | @getshort(form/api/radiogroup/radiogroup_beforechangeproperties_event.md) |
 | [](form/api/radiogroup/radiogroup_beforehide_event.md)             | @getshort(form/api/radiogroup/radiogroup_beforehide_event.md)             |
 | [](form/api/radiogroup/radiogroup_beforeshow_event.md)             | @getshort(form/api/radiogroup/radiogroup_beforeshow_event.md)             |
@@ -484,6 +492,8 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/select/select_afterhide_event.md)              | @getshort(form/api/select/select_afterhide_event.md)              |
 | [](form/api/select/select_aftershow_event.md)              | @getshort(form/api/select/select_aftershow_event.md)              |
 | [](form/api/select/select_aftervalidate_event.md)          | @getshort(form/api/select/select_aftervalidate_event.md)          |
+| [](form/api/select/select_beforechange_event.md)           | @getshort(form/api/select/select_beforechange_event.md)           |
+| [](form/api/select/select_beforechangeoptions_event.md)    | @getshort(form/api/select/select_beforechangeoptions_event.md)    |
 | [](form/api/select/select_beforechangeproperties_event.md) | @getshort(form/api/select/select_beforechangeproperties_event.md) |
 | [](form/api/select/select_beforehide_event.md)             | @getshort(form/api/select/select_beforehide_event.md)             |
 | [](form/api/select/select_beforeshow_event.md)             | @getshort(form/api/select/select_beforeshow_event.md)             |
@@ -576,6 +586,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/slider/slider_afterchangeproperties_event.md)  | @getshort(form/api/slider/slider_afterchangeproperties_event.md)  |
 | [](form/api/slider/slider_afterhide_event.md)              | @getshort(form/api/slider/slider_afterhide_event.md)              |
 | [](form/api/slider/slider_aftershow_event.md)              | @getshort(form/api/slider/slider_aftershow_event.md)              |
+| [](form/api/slider/slider_beforechange_event.md)           | @getshort(form/api/slider/slider_beforechange_event.md)           |
 | [](form/api/slider/slider_beforechangeproperties_event.md) | @getshort(form/api/slider/slider_beforechangeproperties_event.md) |
 | [](form/api/slider/slider_beforehide_event.md)             | @getshort(form/api/slider/slider_beforehide_event.md)             |
 | [](form/api/slider/slider_beforeshow_event.md)             | @getshort(form/api/slider/slider_beforeshow_event.md)             |
@@ -681,6 +692,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/textarea/textarea_afterhide_event.md)              | @getshort(form/api/textarea/textarea_afterhide_event.md)              |
 | [](form/api/textarea/textarea_aftershow_event.md)              | @getshort(form/api/textarea/textarea_aftershow_event.md)              |
 | [](form/api/textarea/textarea_aftervalidate_event.md)          | @getshort(form/api/textarea/textarea_aftervalidate_event.md)          |
+| [](form/api/textarea/textarea_beforechange_event.md)           | @getshort(form/api/textarea/textarea_beforechange_event.md)           |
 | [](form/api/textarea/textarea_beforechangeproperties_event.md) | @getshort(form/api/textarea/textarea_beforechangeproperties_event.md) |
 | [](form/api/textarea/textarea_beforehide_event.md)             | @getshort(form/api/textarea/textarea_beforehide_event.md)             |
 | [](form/api/textarea/textarea_beforeshow_event.md)             | @getshort(form/api/textarea/textarea_beforeshow_event.md)             |
@@ -726,6 +738,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/timepicker/timepicker_afterhide_event.md)              | @getshort(form/api/timepicker/timepicker_afterhide_event.md)              |
 | [](form/api/timepicker/timepicker_aftershow_event.md)              | @getshort(form/api/timepicker/timepicker_aftershow_event.md)              |
 | [](form/api/timepicker/timepicker_aftervalidate_event.md)          | @getshort(form/api/timepicker/timepicker_aftervalidate_event.md)          |
+| [](form/api/timepicker/timepicker_beforechange_event.md)           | @getshort(form/api/timepicker/timepicker_beforechange_event.md)           |
 | [](form/api/timepicker/timepicker_beforechangeproperties_event.md) | @getshort(form/api/timepicker/timepicker_beforechangeproperties_event.md) |
 | [](form/api/timepicker/timepicker_beforehide_event.md)             | @getshort(form/api/timepicker/timepicker_beforehide_event.md)             |
 | [](form/api/timepicker/timepicker_beforeshow_event.md)             | @getshort(form/api/timepicker/timepicker_beforeshow_event.md)             |
