@@ -15,7 +15,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],
-	rightSplit:2,
+	rightSplit: 2,
 	data: dataset
 });
 

@@ -15,6 +15,8 @@ form.getItem("container").events.on("afterShow", function() {
     console.log("afterShow");
 });
 
+@descr: 
+
 **Change log:**
 - The event was added in v7.2
 - The **value** parameter was removed in v8.0

@@ -15,7 +15,7 @@ const grid = new dhx.Grid("grid_container", {
 	columns: [
 		// columns config
 	],
-	topSplit:2,
+	topSplit: 2,
 	data: dataset
 });
 

@@ -18,6 +18,8 @@ form.getItem("container").events.on("afterHide", function(init) {
     console.log("afterHide", init);
 });
 
+@descr: 
+
 **Change log:**
 - The event was added in v7.2
 - The **value** parameter was removed in v8.0

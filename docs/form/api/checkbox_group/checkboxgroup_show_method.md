@@ -11,13 +11,13 @@ description: You can explore the show method of the Checkbox Group control of Fo
 @signature: {'show(id?: string): void;'}
 
 @params:
-- `id?: string` - optional, the ID of a checkbox to show
+- `id: string` - optional, the **id** of a specific element inside the CheckboxGroup control
 
 @example:
-form.getItem("CheckboxGroup").show("checkbox_1"); 
+form.getItem("CheckboxGroup").show("checkbox_1");
 
 @descr:
 
-If ID of the checkbox is not specified, the method shows CheckboxGroup with all its checkboxes.
+If **id** of the checkbox is not specified, the method shows CheckboxGroup with all its checkboxes.
 
-@changelog: The **id** parameter was added in v8.0
+**Change log:** The **id** parameter was added in v8.0

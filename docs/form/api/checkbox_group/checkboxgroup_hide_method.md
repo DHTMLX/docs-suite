@@ -11,13 +11,13 @@ description: You can explore the hide method of the Checkbox Group control of Fo
 @signature: {'hide(id?: string)): void;'}
 
 @params:
-- `id?: string` - optional, the ID of a checkbox to hide
+- `id: string` - optional, the **id** of a specific element inside the CheckboxGroup control
 
 @example:
 form.getItem("CheckboxGroup").hide("checkbox_1"); 
 
 @descr:
 
-If ID of the checkbox is not specified, the method hides CheckboxGroup with all its checkboxes.
+If **id** of the checkbox is not specified, the method hides CheckboxGroup with all its checkboxes.
 
-@changelog: The **id** parameter was added in v8.0
+**Change log:** The **id** parameter was added in v8.0
