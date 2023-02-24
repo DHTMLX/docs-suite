@@ -13,6 +13,9 @@ description: You can explore the beforeChange event of the Select control of For
 @params:
 - `value: string | number` - the current value of the control
 
+@returns:
+Return `false` to prevent changing the value of the control; otherwise, `true`.
+
 @example:
 form.getItem("select").events.on("beforeChange", function(value) {
     console.log("beforeChange", value);

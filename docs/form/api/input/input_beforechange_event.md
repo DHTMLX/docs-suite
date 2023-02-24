@@ -13,6 +13,9 @@ description: You can explore the beforeChange event of the Input control of Form
 @params:
 - `value: string | number` - the current value of the control
 
+@returns:
+Return `false` to prevent changing the value of the control; otherwise, `true`.
+
 @example:
 form.getItem("input").events.on("beforeChange", function(value) {
     console.log("beforeChange", value);

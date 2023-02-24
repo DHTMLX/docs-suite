@@ -482,6 +482,7 @@ module.exports = {
                   items: [
                     "combobox/api/combobox_afterclose_event",
                     "combobox/api/combobox_afteropen_event",
+                    "combobox/api/combobox_beforechange_event",
                     "combobox/api/combobox_beforeclose_event",
                     "combobox/api/combobox_beforeopen_event",
                     "combobox/api/combobox_blur_event",
@@ -3414,6 +3415,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "slider/api/slider_beforechange_event",
                     "slider/api/slider_blur_event",
                     "slider/api/slider_change_event",
                     "slider/api/slider_focus_event",

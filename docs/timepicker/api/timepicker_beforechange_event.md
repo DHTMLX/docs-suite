@@ -13,6 +13,9 @@ description: You can explore the beforeChange event of Timepicker in the documen
 @params:
 - `value: string | object` - the value of a timepicker
 
+@returns:
+Return `false` to prevent changing the value of the timepicker; otherwise, `true`.
+
 @example:
 timepicker.events.on("beforeChange", function(value){
 	console.log("The value of a timepicker has beforeChanged to "+ value);

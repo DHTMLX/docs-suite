@@ -13,6 +13,9 @@ description: You can explore the beforeChange event of the Radiogroup control of
 @params:
 - `value: string` - the current value of the control
 
+@returns:
+Return `false` to prevent changing the value of the control; otherwise, `true`.
+
 @example:
 form.getItem("radiogroup").events.on("beforeChange", function(value) {
     console.log("beforeChange", value);

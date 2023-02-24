@@ -32,19 +32,15 @@ Released on February Day, 2023
 
 #### Combobox
 
-- New `beforeChange` event
-
-#### Slider
-
-- New `beforeChange` event
-
-#### Timepicker
-
-- New [`beforeChange`](timepicker/api/timepicker_beforechange_event.md) event
+- New [`beforeChange`](combobox/api/combobox_beforechange_event.md) event
 
 #### Form
 
-- New [`beforeChange`](form/api/form_beforechange_event.md) event for the Form and for the following controls:
+- New [`beforeChange`](form/api/form_beforechange_event.md) event
+
+#### Form controls
+
+- New events:
   - Datepicker [`beforeChange`](form/api/calendar/calendar_beforechange_event.md) event
   - Checkbox [`beforeChange`](form/api/checkbox/checkbox_beforechange_event.md) event
   - CheckboxGroup [`beforeChange`](form/api/checkbox_group/checkboxgroup_beforechange_event.md) event
@@ -52,10 +48,10 @@ Released on February Day, 2023
   - Combo [`beforeChange`](form/api/combo/combo_beforechange_event.md) event
   - Input [`beforeChange`](form/api/input/input_beforechange_event.md) event
   - Radiogroup [`beforeChange`](form/api/radiogroup/radiogroup_beforechange_event.md) event
+  - Select [`beforeChange`](form/api/select/select_beforechange_event.md) and [`beforeChangeOptions`](form/api/select/select_beforechangeoptions_event.md) events
   - Slider [`beforeChange`](form/api/slider/slider_beforechange_event.md) event
   - Textarea [`beforeChange`](form/api/textarea/textarea_beforechange_event.md) event
   - Timepicker [`beforeChange`](form/api/timepicker/timepicker_beforechange_event.md) event
-  - Select [`beforeChange`](form/api/select/select_beforechange_event.md) and [`beforeChangeOptions`](form/api/select/select_beforechangeoptions_event.md) events
 
 #### Grid
 
@@ -78,6 +74,14 @@ Released on February Day, 2023
 
 - The ability to close a message box (new [`close()`](message/api/message_close_method.md) method)
 - The ability to set margin between the node and tooltip (new `margin` property of the [tooltip](message/api/api_message_properties.md#tooltip))
+
+#### Slider
+
+- New [`beforeChange`](slider/api/slider_beforechange_event.md) event
+
+#### Timepicker
+
+- New [`beforeChange`](timepicker/api/timepicker_beforechange_event.md) event
 
 #### Toolbar
 
@@ -111,8 +115,12 @@ Released on February Day, 2023
     - new `id` parameter is added for CheckboxGroup methods: [`hide()`](form/api/checkbox_group/checkboxgroup_hide_method.md) and [`show()`](form/api/checkbox_group/checkboxgroup_show_method.md)
     - new `id` parameter is added for CheckboxGroup events: [`afterHide`](form/api/checkbox_group/checkboxgroup_afterhide_event.md), [`afterShow`](form/api/checkbox_group/checkboxgroup_aftershow_event.md), [`beforeHide`](form/api/checkbox_group/checkboxgroup_beforehide_event.md), [`beforeShow`](form/api/checkbox_group/checkboxgroup_beforeshow_event.md)
 
-- Now it is possible to enable/disable and check visibility not only the whole control but also its separate checkboxes:
+- Now it is possible to enable/disable and check visibility not only of the whole control but also of its separate checkboxes:
     - new `id` parameter is added for CheckboxGroup methods: [`enable()`](form/api/checkbox_group/checkboxgroup_enable_method.md), [`disable()`](form/api/checkbox_group/checkboxgroup_disable_method.md), [`isVisible()`](form/api/checkbox_group/checkboxgroup_isvisible_method.md), [`isDisabled()`](form/api/checkbox_group/checkboxgroup_isdisabled_method.md)
+
+#### Form. Container control
+
+-  The `value` parameter is removed from Container events: [`afterhide`](form/api/container/container_afterhide_event.md), [`aftershow`](form/api/container/container_afterhide_event.md), [`beforehide`](form/api/container/container_beforehide_event.md), [`beforeshow`](form/api/container/container_beforeshow_event.md)
 
 #### Form. RadioGroup control
 
@@ -120,17 +128,13 @@ Released on February Day, 2023
     - new `id` parameter is added for RadioGroup methods: [`hide()`](form/api/radiogroup/radiogroup_hide_method.md) and [`show()`](form/api/radiogroup/radiogroup_show_method.md)
     - new `id` parameter is added for RadioGroup events: [`afterHide`](form/api/radiogroup/radiogroup_afterhide_event.md), [`afterShow`](form/api/radiogroup/radiogroup_aftershow_event.md), [`beforeHide`](form/api/radiogroup/radiogroup_beforehide_event.md), [`beforeShow`](form/api/radiogroup/radiogroup_beforeshow_event.md)
 
-- Now it is possible to enable/disable and check visibility not only the whole control but also its separate radio buttons:
+- Now it is possible to enable/disable and check visibility not only of the whole control but also of its separate radio buttons:
     - new `id` parameter is added for RadioGroup methods: [`enable()`](form/api/checkbox_group/checkboxgroup_enable_method.md), [`disable()`](form/api/checkbox_group/checkboxgroup_disable_method.md), [`isVisible()`](form/api/checkbox_group/checkboxgroup_isvisible_method.md), [`isDisabled()`](form/api/checkbox_group/checkboxgroup_isdisabled_method.md)
 
 #### Form. Select control
 
-- Now it is possible to enable/disable and check visibility not only the whole control but also its separate radio buttons:
+- Now it is possible to enable/disable and check visibility not only of the whole control but also of its separate radio buttons:
     - new `value` parameter is added for Select methods: [`enable()`](form/api/select/select_enable_method.md), [`disable()`](form/api/select/select_disable_method.md), [`isDisabled()`](form/api/select/select_isdisabled_method.md)
-
-#### Form. Container control
-
--  The `value` parameter is removed from Container events: [`afterhide`](form/api/container/container_afterhide_event.md), [`aftershow`](form/api/container/container_afterhide_event.md), [`beforehide`](form/api/container/container_beforehide_event.md), [`beforeshow`](form/api/container/container_beforeshow_event.md)
 
 #### Form. Spacer control
 

@@ -14,6 +14,9 @@ description: You can explore the beforeChange event of Form in the documentation
 - `name | id: string` - the name (or id, if the name is not specified) of the Form control
 - `value: any` - the value set for the control
 
+@returns:
+Return `false` to prevent changing the value of the control; otherwise, `true`.
+
 @example:
 form.events.on("beforeChange",function(name, value){
 	// your logic here

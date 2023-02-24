@@ -13,6 +13,9 @@ description: You can explore the beforeChange event of the Combo Box control of 
 @params:
 - `value: string | number | (string | number)[]` - the ID(s) of newly selected option(s) from data collection
 
+@returns:
+Return `false` to prevent changing the value of the control; otherwise, `true`.
+
 @example:
 form.getItem("combo").events.on("beforeChange", function(value) {
     console.log("beforeChange", value);
