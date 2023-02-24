@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Combo Box control of 
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: Id | Id[]) => boolean;'}
+@signature: {'beforeChange: (value: Id | Id[]) => boolean | void;'}
 
 @params:
 - `value: string | number | (string | number)[]` - the ID(s) of newly selected option(s) from data collection

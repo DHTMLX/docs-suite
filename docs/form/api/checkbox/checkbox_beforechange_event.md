@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Checkbox control of F
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: string | boolean) => boolean;'}
+@signature: {'beforeChange: (value: string | boolean) => boolean | void;'}
 
 @params:
 - `value: string | boolean` - the current value of the control

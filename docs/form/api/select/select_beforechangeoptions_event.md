@@ -6,9 +6,9 @@ description: You can explore the beforeChangeOptions event of the Select control
 
 # beforeChangeOptions
 
-@short: fires on before changing a list of Select options
+@short: fires before changing a list of Select options
 
-@signature: {'beforeChangeOptions: (options: IOption[]) => boolean;'}
+@signature: {'beforeChangeOptions: (options: IOption[]) => boolean | void;'}
 
 @params:
 - `options: array` - a new array of Select options

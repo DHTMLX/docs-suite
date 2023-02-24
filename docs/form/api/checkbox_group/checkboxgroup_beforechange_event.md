@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Checkbox Group contro
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: ICheckboxGroupValue) => boolean;'}
+@signature: {'beforeChange: (value: ICheckboxGroupValue) => boolean | void;'}
 
 @params:
 - `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.

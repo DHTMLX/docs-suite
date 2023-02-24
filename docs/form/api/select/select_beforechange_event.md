@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Select control of For
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: string | number) => boolean;'}
+@signature: {'beforeChange: (value: string | number) => boolean | void;'}
 
 @params:
 - `value: string | number` - the current value of the control

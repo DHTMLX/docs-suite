@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of Form in the documentation
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (name: string, value: any) => boolean;'}
+@signature: {'beforeChange: (name: string, value: any) => boolean | void;'}
 
 @params:
 - `name | id: string` - the name (or id, if the name is not specified) of the Form control

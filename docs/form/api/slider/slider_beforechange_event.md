@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Slider control of For
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: number[]) => boolean;'}
+@signature: {'beforeChange: (value: number[]) => boolean | void;'}
 
 @params:
 - `value: number[]` - the current value of the control

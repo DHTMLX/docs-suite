@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Radiogroup control of
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: string) => boolean;'}
+@signature: {'beforeChange: (value: string) => boolean | void;'}
 
 @params:
 - `value: string` - the current value of the control

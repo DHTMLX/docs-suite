@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of Timepicker in the documen
 
 # beforeChange
 
-@short: fires on before change of the timepicker value
+@short: fires before change of the timepicker value
 
-@signature: {'beforeChange: (value: string | ITimeObject) => boolean;'}
+@signature: {'beforeChange: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
 - `value: string | object` - the value of a timepicker

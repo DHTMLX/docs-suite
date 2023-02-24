@@ -8,7 +8,7 @@ description: You can explore the beforeSend event of Form in the documentation o
 
 @short: fires before a form is sent to the server
 
-@signature: {'beforeSend: () => boolean;'}
+@signature: {'beforeSend: () => boolean | void;'}
 
 @returns:
 Return `true/false` to allow/forbid a form sending to the server.

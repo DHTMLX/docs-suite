@@ -6,9 +6,9 @@ description: You can explore the beforeChange event of the Timepicker control of
 
 # beforeChange
 
-@short: fires on before changing the value of a control
+@short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: string | ITimeObject) => boolean;'}
+@signature: {'beforeChange: (value: string | ITimeObject) => boolean | void;'}
 
 @params:
 - `value: string | object` - the current value of the control
