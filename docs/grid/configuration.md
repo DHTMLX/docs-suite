@@ -525,7 +525,7 @@ You can configure the date picker by passing [properties of Calendar](category/c
 	id: "start_date", 
 	header: [{ text: "Start date" }], 
 	type: "date", 
-	format: "%d/%m/%Y",
+	format: "%d/%m/%Y %H:%i",
 	editorConfig: { 
 		timePicker: true, 
 		weekStart: "sunday",  

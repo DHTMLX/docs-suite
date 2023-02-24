@@ -474,7 +474,7 @@ You can easily edit the desired cell of a treegrid with the help of the [](treeg
 		</tr>
 		<tr>
 			<td><b>editorType</b></td>
-			<td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datepicker"|"checkbox"|"combobox"|"textarea"|"multiselect"</td>
+			<td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"|"multiselect"</td>
 		</tr>
     </tbody>
 </table>
