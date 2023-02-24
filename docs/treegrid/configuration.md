@@ -199,20 +199,25 @@ When using just the **type: "percent"** configuration option of a column, the re
 
 ### Frozen columns
 
-You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. There is the [](treegrid/api/treegrid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze 
-as a value of the property in the TreeGrid configuration.
+You can fix (or "freeze") a column or several columns, so that they will become static when you scroll the treegrid, while the rest of columns remain movable. 
+
+- To fix columns to the left side of the treegrid, use the [leftSplit](treegrid/api/treegrid_leftsplit_config.md) property. 
+- To fix columns to the right side of the treegrid, use the [rightSplit](treegrid/api/treegrid_rightsplit_config.md) property. 
+
+Just set the number of columns you want to freeze as a value of the related property in the TreeGrid configuration.
 
 ~~~js
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
     ], 
-    leftSplit:1, 
+    leftSplit:1,
+    rightSplit: 2, 
     data: dataset
 });
 ~~~
 
-**Related sample**: [TreeGrid. Frozen columns](https://snippet.dhtmlx.com/46me58ze)
+**Related sample**: [TreeGrid. Frozen columns and rows](https://snippet.dhtmlx.com/46me58ze)
 
 ### Hidden columns
 
@@ -921,6 +926,26 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     data: dataset
 });
 ~~~
+
+### Frozen rows
+
+You can fix (or "freeze") a row or several rows, so that they will become static when you scroll the treegrid, while the rest of rows remain movable. 
+
+- To fix rows on the top of the treegrid, use the [topSplit](treegrid/api/treegrid_topsplit_config.md) property. 
+- To fix rows on the bottom of the treegrid, use the [bottomSplit](treegrid/api/treegrid_bottomsplit_config.md) property. 
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+		// columns config
+	],
+    topSplit: 3,
+	bottomSplit: 2,
+    data: dataset
+});
+~~~
+
+**Related sample**: [TreeGrid. Frozen columns and rows](https://snippet.dhtmlx.com/46me58ze)
 
 ## Drag-n-drop
 

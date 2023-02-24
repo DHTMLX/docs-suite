@@ -202,7 +202,12 @@ When using just the **type: "percent"** configuration option of a column, the re
 
 ### Frozen columns
 
-You can fix (or "freeze") a column or several columns, so that they will become static, while the rest of columns remain scrollable. There is the [leftSplit](grid/api/grid_leftsplit_config.md) property that splits grid columns into the frozen and movable parts. Just set the number of columns (from the left side of the grid) you want to freeze as a value of the property in the Grid configuration.
+You can fix (or "freeze") a column or several columns, so that they will become static when you scroll the grid, while the rest of columns remain movable. 
+
+- To fix columns to the left side of the grid, use the [leftSplit](grid/api/grid_leftsplit_config.md) property. 
+- To fix columns to the right side of the grid, use the [rightSplit](grid/api/grid_rightsplit_config.md) property. 
+
+Just set the number of columns you want to freeze as a value of the related property in the Grid configuration.
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -210,11 +215,12 @@ const grid = new dhx.Grid("grid_container", {
 		// columns config
 	],
     leftSplit: 1,
+	rightSplit: 2,
     data: dataset
 });
 ~~~
 
-**Related sample**: [Grid. Frozen columns](https://snippet.dhtmlx.com/hcgl9nth)
+**Related sample**: [Grid. Frozen columns and rows](https://snippet.dhtmlx.com/hcgl9nth)
 
 ### Hidden columns
 
@@ -935,6 +941,26 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Auto empty row](https://snippet.dhtmlx.com/rkytig73)
+
+### Frozen rows
+
+You can fix (or "freeze") a row or several rows, so that they will become static when you scroll the grid, while the rest of rows remain movable. 
+
+- To fix rows on the top of the grid, use the [topSplit](grid/api/grid_topsplit_config.md) property. 
+- To fix rows on the bottom of the grid, use the [bottomSplit](grid/api/grid_bottomsplit_config.md) property. 
+
+~~~js
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+		// columns config
+	],
+    topSplit: 3,
+	bottomSplit: 2,
+    data: dataset
+});
+~~~
+
+**Related sample**: [Grid. Frozen columns and rows](https://snippet.dhtmlx.com/hcgl9nth)
 
 ## Drag-n-drop
 
