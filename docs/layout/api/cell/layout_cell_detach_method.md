@@ -23,9 +23,7 @@ layout.getCell("two").detach();
 
 @descr:
 
-```todo add link to sample
-**Related sample**: 
-```
+**Related sample**: [Layout. Spinner (busy indicator, progress bar) for cells](https://snippet.dhtmlx.com/vzrvf4rm)
 
 **Related articles:**
 

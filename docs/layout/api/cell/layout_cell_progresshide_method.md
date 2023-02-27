@@ -21,8 +21,6 @@ layout.getCell("two").progressHide();
 
 @descr:
 
-```todo add link to sample
-**Related sample**: 
-```
+**Related sample**: [Layout. Spinner (busy indicator, progress bar) for cells](https://snippet.dhtmlx.com/vzrvf4rm)
 
 **Related article:** [Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)
