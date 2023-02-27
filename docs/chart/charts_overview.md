@@ -155,5 +155,13 @@ The chart helps to display and identify daily patterns or anomalies over the nec
 
 ![Calendar heatmap chart](../assets/chart/heatmap_overview.png)
 
+**Related samples:**
+
+- [Chart. Calendar heatmap chart initialization](https://snippet.dhtmlx.com/ptncsadz)
+- [Gantt. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/jodcbkr5)
+- [Event Calendar. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/0n3ta0je)
+- [Scheduler. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/tlfazogt)
+
+
 **Related article:** [Calendar heatmap chart configuration](chart/configuration_properties.md#calendar-heatmap-chart)
 

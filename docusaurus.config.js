@@ -125,8 +125,8 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
-    title: 'DHTMLX Suite 7 Docs',
-    tagline: 'DHTMLX Suite 7 Docs',
+    title: 'DHTMLX Suite 8 Docs',
+    tagline: 'DHTMLX Suite 8 Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/suite/',
     onBrokenLinks: 'warn',

@@ -8,7 +8,7 @@ description: You can explore how to connect DHTMLX Suite to a backend. Browse de
 
 ![](../assets/integration/work_with_backend.png)
 
-DHTMLX Suite 7 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API).
+DHTMLX Suite 8 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API).
 
 The DHTMLX library includes the [DataCollection](/data_collection/) helper that completely supports REST API for dealing with the backend.
 

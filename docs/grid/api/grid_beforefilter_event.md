@@ -24,4 +24,7 @@ grid.events.on("beforeFilter", (value, id) => {
 });
 
 @descr:
+
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
+
 @changelog: added in v8.0

@@ -24,4 +24,6 @@ message.close();
 
 **Change log:** Added in v8.0
 
+**Related sample:** [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
+
 **Related article:** [Message box configuration](message/configuration.md#message-box)

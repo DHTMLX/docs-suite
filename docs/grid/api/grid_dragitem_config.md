@@ -23,7 +23,7 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Drag-n-drop (Pro)](https://snippet.dhtmlx.com/zwc91d50)
+**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
 
 Drag-n-drop can work in three modes:
 

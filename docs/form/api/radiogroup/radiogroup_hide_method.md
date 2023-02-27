@@ -20,4 +20,6 @@ form.getItem("radiogroup").hide("radiobutton_1");
 
 If ID of the radio button is not specified, the method hides RadioGroup with all its radio buttons.
 
+**Related sample:** [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
+
 @changelog: The **id** parameter was added in v8.0

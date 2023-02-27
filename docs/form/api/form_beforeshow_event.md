@@ -26,7 +26,9 @@ form.events.on("beforeShow", function(name, value) {
 
 @descr:
 
-**Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+**Related samples**: 
+- [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
+- [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
 
 @changelog:
 - The **id** parameter was added in v8.0

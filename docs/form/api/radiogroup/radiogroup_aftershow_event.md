@@ -21,6 +21,8 @@ form.getItem("radiogroup").events.on("afterShow", function(value, id) {
 
 @descr:
 
+**Related sample:** [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
+
 @changelog:
 
 - The **id** parameter was added in v8.0

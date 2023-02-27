@@ -20,4 +20,6 @@ form.getItem("CheckboxGroup").hide("checkbox_1");
 
 If **id** of the checkbox is not specified, the method hides CheckboxGroup with all its checkboxes.
 
+**Related sample:** [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
+
 **Change log:** The **id** parameter was added in v8.0

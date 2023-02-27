@@ -117,7 +117,7 @@ In this section you will know how to configure the drag-n-drop functionality for
 
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|[Drag-n-drop inside a grid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the grid ([Example](https://snippet.dhtmlx.com/dfdlzpqb))|
+|[Drag-n-drop inside a grid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the grid|
 |[Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)|  Learn how to configure drag-n-drop between grids ([Example](https://snippet.dhtmlx.com/qx9a86ax))|
 |[Drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)|  Learn how to allow end users to drag-n-drop several rows at once|
 |[Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)|	Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz))|

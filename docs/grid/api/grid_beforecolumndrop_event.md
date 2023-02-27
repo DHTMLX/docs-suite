@@ -20,14 +20,20 @@ description: You can explore the beforeColumnDrop event of Grid in the documenta
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-grid.events.on("beforeColumnDrop", function(data, events){
-	// your logic here
-    return false;
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "age", header: [{ text: "Med. Age" }], draggable: false },
+		{ width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
+    ],
+    data: dataset,
+    dragItem: "column",
 });
 
-@descr:
+grid.events.on("beforeColumnDrop", ({ target }) => target !== "population");
 
-**Related sample**: [Grid. Columns drag'n'drop](https://snippet.dhtmlx.com/dfdlzpqb)
+@descr:
 
 The data object contains the following parameters:
 

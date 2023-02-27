@@ -40,15 +40,17 @@ From v8.0, you can close a message box via the [close()](message/api/message_clo
 </section>
 
 <script>
-    let m;
+    let message;
     function show() {
-        m = dhx.message({ text: "Here is dhtmlxMessage", icon: "dxi-close" });
+        message = dhx.message({ text: "Here is dhtmlxMessage", icon: "dxi-close" });
     }
     document.querySelector("#close").addEventListener("click", () => {
-        m?.close()
-    })
+        message?.close()
+    });
 </script>
 ~~~
+
+**Related sample:** [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
 ## Alert box
 

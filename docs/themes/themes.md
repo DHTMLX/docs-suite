@@ -15,7 +15,7 @@ DHTMLX Suite library provides 4 predefined themes:
 - [light high contrast theme](themes/contrast_light_theme.md) ("contrast-light")
 - [dark high contrast theme](themes/contrast_dark_theme.md) ("contrast-dark")
 
-The Suite themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. 
+The Suite themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. For more detail, read the [Accessibility support](common_features/accessibility_support.md) article.
 
 You can try all themes in the example below:
 

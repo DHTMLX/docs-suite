@@ -524,7 +524,7 @@ To use this editor, you should specify the **type:"date"** property for a column
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
 :::info
-You can configure the date picker by passing [properties of Calendar](category/calendar-properties.md) (except for the **value**, **range**, and **dateFormat** ones) to the <b>editorConfig</b> object, as in:
+You can configure the date picker by passing [properties of Calendar](category/calendar-properties.md) (**except for** the *mark*, *disabledDates*, *value*, *range*, and *dateFormat* ones) to the <b>editorConfig</b> object, as in:
 
 ~~~js
 { 
@@ -964,11 +964,17 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Drag-n-drop
 
+The drag-n-drop functionality allows you to reorder one or several rows or columns inside the grid or between several grids. 
+
+{{pronote
+If you use GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to reorder only rows and only one by one.
+
+**Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+}}
+
 ### Drag-n-drop inside the grid
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br> In case you use GPL version, you will be able to reorder only rows.}}
-
-It is possible to reorder rows and columns of Grid by drag and drop. To enable the functionality, define the [dragItem: "both"](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
+It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [dragItem: "both"](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
 ~~~js {5}
 const grid = new dhx.Grid("grid_container", {
@@ -980,7 +986,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Drag-n-drop (Pro)](https://snippet.dhtmlx.com/zwc91d50)
+**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
 
 :::note
 To activate the functionality for columns or rows separately, use `dragItem: "column"` or  `dragItem: "row"` respectively.
@@ -1000,19 +1006,17 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample**: [Grid. Columns drag'n'drop](https://snippet.dhtmlx.com/dfdlzpqb)
-
 :::tip
 To make the process of work with drag and drop more flexible, you can apply the related drag-n-drop events of Grid for [columns](grid/api/api_overview.md#column-drag-and-drop) and [rows](grid/api/api_overview.md/#row-drag-and-drop).
 :::
 
 ### Drag-n-drop between grids
 
-DHTMLX Grid supports drag-n-drop of rows between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
+DHTMLX Grid supports drag-n-drop of rows/columns between grids in several modes. To begin with, you should specify the [dragMode](grid/api/grid_dragmode_config.md) property in the configuration object of Grid. Then define which mode you need:
 
-- "target" - a grid takes rows from other grids, while its row can't be dragged out of it
-- "source" - a grid allows dragging its rows out and can't take rows from other grids
-- "both" - a grid both takes rows from other grids and allows dragging its rows out as well
+- "target" - a grid takes a row/column from other grids, while its row/colmn can't be dragged out of it
+- "source" - a grid allows dragging its row/column out and can't take a row/column from other grids
+- "both" - a grid both takes a row/column from other grids and allows dragging its row/column out as well
 
 ~~~js {7}
 const grid = new dhx.Grid("grid_container", { 
@@ -1021,7 +1025,8 @@ const grid = new dhx.Grid("grid_container", {
         { id: "population", header: [{ text: "Population" }] }
     ],
     data: dataset,
-    dragMode: "source"
+    dragMode: "source",
+	// dragItem: "column" - allows reordering columns one by one
 });
 ~~~
 
@@ -1040,6 +1045,7 @@ const grid = new dhx.Grid("grid", {
     ],
     data: data,
     selection: "row",
+	//drag-n-drop rows inside the grid
     multiselection: true,
     dragItem: "both" // or dragItem: "row"
 });
@@ -1054,10 +1060,13 @@ const grid = new dhx.Grid("grid", {
     ],
     data: dataset,
     selection: "row",
+	//drag-n-drop rows between grids
     multiselection: true,
     dragMode: "both" // or dragMode: "source"
 });
 ~~~
+
+**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
 
 ## Keyboard Navigation
 
