@@ -6,7 +6,7 @@ description: You can explore the htmlEnable config of TreeGrid in the documentat
 
 # htmlEnable
 
-@short: specifies the HTML content (inner HTML) of TreeGrid columns
+@short: Optional. Specifies the HTML content (inner HTML) of TreeGrid columns
 
 @signature: {'htmlEnable?: boolean;'}
 

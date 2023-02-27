@@ -44,7 +44,7 @@ const toolbarData = [
 
 There is a possibility to make changes in the look and feel of a toolbar. 
 
-![](../assets/toolbar/custom_style.png)
+![Styling Toolbar](../assets/toolbar/custom_style.png)
 
 **Related sample**: [Toolbar. Styling (custom CSS)](https://snippet.dhtmlx.com/uekgjwsi)
 
@@ -64,19 +64,6 @@ For this you need to take the following steps:
 </style>
 ~~~
 
-For example:
-
-~~~html
-<style>
-	.custom-class {
-		border: 2px solid #0ab169;
-		border-radius: 5px;
-		padding: 10px;
-		background-color: rgba(10, 177, 105, 0.3);
-	}
-</style>
-~~~
-
 - specify the name of the created CSS class (or names of classes separated by spaces) as the value of the [css](toolbar/api/toolbar_css_config.md) property in the Toolbar configuration:
 
 ~~~js
@@ -88,8 +75,28 @@ const toolbar = new dhx.Toolbar("toolbar_container", {
 
 For example:
 
-~~~js
-const toolbar = new dhx.Toolbar("toolbar_container", {
-	css: "custom-class"
-});
+~~~html
+<style>
+	.custom,.custom--popup-menu {
+		--dhx-background-primary: #3A434A;
+		--dhx-background-secondary: #5a6872;
+		--dhx-background-additional: #5a6872;
+		--dhx-s-toolbar-background: var(--dhx-background-primary);
+
+		--dhx-color-primary: #118d8d;
+		--dhx-color-primary-hover: #49e9e9;
+		--dhx-color-primary-active: #49e9e9;
+
+		--dhx-font-color-primary: #fff;
+		--dhx-font-color-secondary: #fff;
+		--dhx-font-color-additional: #fff;
+	}
+</style>
+
+<script>
+	const toolbar = new dhx.Toolbar("toolbar", {
+    	css: "custom"
+	});
+	toolbar.data.parse(data);
+</script>
 ~~~

@@ -6,11 +6,18 @@ description: You can explore the show method of the Radiogroup control of Form i
 
 # show()
 
-@short: shows a RadioGroup control on the page
+@short: shows either a radio button of RadioGroup or the whole RadioGroup
 
-@signature: {'show(): void;'}
+@signature: {'show(id?: string): void;'}
+
+@params:
+- `id?: string` - optional, the ID of a radio button to show
 
 @example:
-form.getItem("radiogroup").show();
+form.getItem("radiogroup").show("radiobutton_1");
 
 @descr:
+
+If ID of the radio button is not specified, the method shows RadioGroup with all its radio buttons.
+
+@changelog: The **id** parameter was added in v8.0

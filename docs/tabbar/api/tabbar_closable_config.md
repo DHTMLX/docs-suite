@@ -6,7 +6,7 @@ description: You can explore the closable config of Tabbar in the documentation 
 
 # closable
 
-@short: adds close buttons for tabs
+@short: Optional. Adds close buttons for tabs
 
 @signature: {'closable?: boolean | string[];'}
 

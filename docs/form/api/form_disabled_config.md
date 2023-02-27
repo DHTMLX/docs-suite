@@ -6,7 +6,7 @@ description: You can explore the disabled Config of Form in the documentation of
 
 # disabled
 
-@short: makes a form disabled
+@short: Optional. Makes a form disabled
 
 @signature: {'disabled?: boolean;'}
 

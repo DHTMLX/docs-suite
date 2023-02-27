@@ -6,7 +6,7 @@ description: You can explore the header config of Layout in the documentation of
 
 # header
 
-@short: adds a header with text for a cell
+@short: Optional. Adds a header with text for a cell
 
 @signature: {'header?: string;'}
 

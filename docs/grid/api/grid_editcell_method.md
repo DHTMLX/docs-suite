@@ -24,8 +24,8 @@ grid.editCell(grid.data.getId(0),"project");
 
 @changelog:
 
-- Added in v6.4
-- The "textarea" type of the editor is added in v7.1.
+- The "textarea" type of the editor was added in v7.1.
+- The method was added in v6.4
 
 [comment]: # (@related: grid/usage.md#editing-data)
 

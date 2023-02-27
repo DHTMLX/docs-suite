@@ -6,7 +6,7 @@ description: You can explore the menuCss config of Ribbon in the documentation o
 
 # menuCss
 
-@short: adds style classes to all containers of Ribbon controls with nested items
+@short: Optional. Adds style classes to all containers of Ribbon controls with nested items
 
 @signature: {'menuCss?: string;'}
 

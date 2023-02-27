@@ -6,7 +6,7 @@ description: You can explore the data config of Chart in the documentation of th
 
 # data
 
-@short: specifies an array of data objects to set into the chart
+@short: Optional. Specifies an array of data objects to set into the chart
 
 @signature: {'data?: any[];'}
 

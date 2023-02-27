@@ -6,7 +6,7 @@ description: You can explore the htmlEnable config of List in the documentation 
 
 # htmlEnable
 
-@short: enables/disables rendering of HTML content (inner HTML) in List options
+@short: Optional. Enables/disables rendering of HTML content (inner HTML) in List options
 
 @signature: {'htmlEnable?: boolean'}
 

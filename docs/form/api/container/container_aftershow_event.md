@@ -8,14 +8,15 @@ description: You can explore the afterShow event of the Container control of For
 
 @short: fires after a Container control is shown
 
-@signature: afterShow: (value: undefined) => void;
-
-@params:
-- `value: undefined` - the current value of the control, null
+@signature: afterShow: () => void;
 
 @example:
-form.getItem("container").events.on("afterShow", function(text) {
-    console.log("afterShow", text);
+form.getItem("container").events.on("afterShow", function() {
+    console.log("afterShow");
 });
 
-@changelog: added in v7.2
+@descr: 
+
+**Change log:**
+- The event was added in v7.2
+- The **value** parameter was removed in v8.0

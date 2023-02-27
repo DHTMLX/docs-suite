@@ -6,7 +6,7 @@ description: You can explore the data config of TreeGrid in the documentation of
 
 # data
 
-@short: specifies an array of data objects to set into the grid
+@short: Optional. Specifies an array of data objects to set into the grid
 
 @signature: {'data?: any[];'}
 

@@ -6,7 +6,7 @@ description: You can explore the movable config of Window in the documentation o
 
 # movable
 
-@short: defines whether a window is movable
+@short: Optional. Defines whether a window is movable
 
 @signature: {'movable?: boolean;'}
 

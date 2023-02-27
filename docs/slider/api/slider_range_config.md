@@ -6,7 +6,7 @@ description: You can explore the range config of Slider in the documentation of 
 
 # range
 
-@short: enables/disables the possibility to select a range of values on the slider
+@short: Optional. Enables/disables the possibility to select a range of values on the slider
 
 @signature: {'range?: boolean;'}
 

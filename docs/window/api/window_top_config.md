@@ -6,7 +6,7 @@ description: You can explore the top config of Window in the documentation of th
 
 # top
 
-@short: the top coordinate of a window position
+@short: Optional. The top coordinate of a window position
 
 @signature: {'top?: number;'}
 

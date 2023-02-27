@@ -69,28 +69,29 @@ The return object includes the following attributes:
 
 ## Getting header filter
 
-You may want to manipulate a filter specified in the header of a grid, for example, to set/unset the focus on the filter, to change the filter, or clear it. To do that, you should get an object of the header filter by column id via the [](grid/api/grid_getheaderfilter_method.md) method:
+You may want to manipulate a filter specified in the header of a grid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](grid/api/grid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
 
 ~~~js
-const countryFilter = grid.getHeaderFilter("country");
-// -> returns HTMLElement
-// <label class="dhx_grid-filter__label dxi dxi-menu-down">...</label>
+// set a value by which a column will be filtered
+grid.getHeaderFilter("country").setValue("Brazil");
 
-countryFilter.focus();
+// set focus on the filter
+grid.getHeaderFilter("country").focus();
 
-// or
+// remove focus from the filter
+grid.getHeaderFilter("country").blur();
 
-const countryFilter = grid.getHeaderFilter("density");
+// get an object of the filter
+const filter = grid.getHeaderFilter("country").getFilter();
+console.log(filter);
 // -> returns Combobox
-// Combobox {_uid: "u1597304021754", config: {…}, events: EventSystem, 
-// data: DataCollection, popup: Popup, …}
+//  {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
 
-countryFilter.blur();
+// clear the value set in the filter
+grid.getHeaderFilter("country").clear();
 ~~~
 
 **Related sample**: [Grid. Get header filter](https://snippet.dhtmlx.com/n8srjle3)
-
-The method returns either an HTML object or an object with Combobox configuration.
 
 ## Hiding/showing a column
 
@@ -468,7 +469,7 @@ grid.editEnd(); // the edited data will be saved
 grid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
+{{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
 
 ## Exporting Grid
 

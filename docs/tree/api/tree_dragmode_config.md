@@ -6,7 +6,7 @@ description: You can explore the dragMode config of Tree in the documentation of
 
 # dragMode
 
-@short: enables drag-n-drop in Tree
+@short: Optional. Enables drag-n-drop in Tree
 
 @signature: {'dragMode?: "target" | "source" | "both";'}
 

@@ -6,7 +6,7 @@ description: You can explore the timeFormat config of Calendar in the documentat
 
 # timeFormat
 
-@short: defines the time format for a timepicker in the calendar
+@short: Optional. Defines the time format for a timepicker in the calendar
 
 @signature: {'timeFormat?: 24 | 12;'}
 

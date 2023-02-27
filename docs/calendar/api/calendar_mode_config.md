@@ -6,7 +6,7 @@ description: You can explore the mode config of Calendar in the documentation of
 
 # mode
 
-@short: the mode of Calendar initialization
+@short: Optional. The mode of Calendar initialization
 
 @signature: {'mode?: ViewMode;'}
 

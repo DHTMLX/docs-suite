@@ -92,6 +92,7 @@ In this section you may study how to disable and enable, hide and show Toolbar c
 | [Hiding / showing controls](../common_methods/#hiding-and-showing-controls)              | Learn how to hide or show controls dynamically ([Example](https://snippet.dhtmlx.com/cldp89u4))               |
 | [Setting values/states of controls](../common_methods/#settinggetting-values-and-states) | Learn how to change the value or state of a control ([Example](https://snippet.dhtmlx.com/h34uh1dr))          |
 | [Getting values/states of controls](../common_methods/#settinggetting-values-and-states) | Learn how to get the current value or state of a control ([Example](https://snippet.dhtmlx.com/kvttdgad))     |
+| [Setting focus on an Input control](toolbar/input.md#setting-focus-to-a-control) | Learn how to set focus on an input of Toolbar    |
 
 
 ## How to work with data in Toolbar

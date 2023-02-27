@@ -126,3 +126,25 @@ const dhxWindow = new dhx.Window({
 });
 dhxWindow.show();
 ~~~
+
+For example:
+
+~~~html
+<style>
+	.custom {
+		--dhx-background-primary: #efefef;
+	}
+</style>
+
+<script>
+	const dhxWindow = new dhx.Window({
+	    height: 400,
+	    width: 400,
+	    title: "window",
+	    css: "custom",
+	    html,
+	});
+	
+	dhxWindow.show();
+</script>
+~~~

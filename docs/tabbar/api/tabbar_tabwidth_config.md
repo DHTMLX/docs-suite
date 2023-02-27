@@ -6,7 +6,7 @@ description: You can explore the tabWidth config of Tabbar in the documentation 
 
 # tabWidth
 
-@short: sets the width of a tab
+@short: Optional. Sets the width of a tab
 
 @signature: {'tabWidth?: number | string;'}
 

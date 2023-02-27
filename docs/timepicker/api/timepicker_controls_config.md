@@ -6,7 +6,7 @@ description: You can explore the controls config of Timepicker in the documentat
 
 # controls
 
-@short: defines whether a timepicker is equipped with the Close and Save buttons
+@short: Optional. Defines whether a timepicker is equipped with the Close and Save buttons
 
 @signature: {'controls?: boolean;'}
 

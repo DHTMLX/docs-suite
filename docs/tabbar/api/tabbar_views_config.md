@@ -6,9 +6,9 @@ description: You can explore the views config of Tabbar in the documentation of 
 
 # views
 
-@short: defines the configuration of tabs
+@short: Required. Defines the configuration of tabs
 
-@signature: {'views?: ICellConfig[];'}
+@signature: {'views: ICellConfig[];'}
 
 @example:
 const tabbar = new dhx.Tabbar("tabbar_container", {

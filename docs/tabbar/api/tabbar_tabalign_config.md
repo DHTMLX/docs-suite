@@ -6,7 +6,7 @@ description: You can explore the tabAlign config of Tabbar in the documentation 
 
 # tabAlign
 
-@short: sets alignment for tabs
+@short: Optional. Sets alignment for tabs
 
 @signature: {'tabAlign?: "left" | "start" | "center" | "middle" | "right" | "end";'}
 

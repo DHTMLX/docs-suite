@@ -6,26 +6,49 @@ description: You can explore the css config of Layout in the documentation of th
 
 # css
 
-@short: the name of a CSS class(es) applied to Layout
+@short: Optional. The name of a CSS class(es) applied to Layout
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
-    }
+    .layout {
+		color: #fff;
+		--dhx-background-secondary: #7a7a7a;
+		--dhx-border-color: #bababa;
+		--dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
+	}
+
+	.layout-header {
+		--dhx-background-primary: #3A434A;
+	}
+	.dhx_layout-cell-inner_html {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 </style>
 
-const layout = new dhx.Layout("layout_container", {
-    css:"my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const layout = new dhx.Layout("layout_container", {
+        type: "space",
+        css: "layout",
+		rows: [
+	    	{
+	            id: "toolbar",
+	            html: "Header",
+	            css: "layout-header",
+	            height: "60px"
+	        },
+            // more objects
+		]
+	});
+</script>
+~~~
 
 **Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 
@@ -46,4 +69,6 @@ const layout = new dhx.Layout("layout_container", {
 });
 ~~~
 
-[comment]: # (@related: layout/initialization.md#initialize-layout layout/customization.md)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

@@ -6,43 +6,67 @@ description: You can explore the Title properties of Ribbon in the documentation
 
 # Ribbon Title properties
 
+### Usage
+
+~~~js
+const data = [
+	{
+		type: "title",
+		id?: string | number,
+		parent?: string,
+		value?: string,
+
+		html?: string,
+		tooltip?: string,
+
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
+	}
+]
+~~~
+
+### Description
+
 <table>
 	<tbody>
         <tr>
 			<td><b>type</b></td>
-			<td>(<i>string</i>) the item type, set it to "title". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+			<td>(required) the item type, set it to "title". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
 		</tr>
         <tr>
 			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a control, auto-generated if not set</td>
+			<td>(optional) the id of a control, auto-generated if not set</td>
 		</tr>
          <tr>
 			<td><b>parent</b></td>
-			<td>(<i>string</i>) the parent of the item</td>
+			<td>(optional) the parent of the item</td>
 		</tr>
 		<tr>
 			<td><b>value</b></td>
-			<td>(<i>string</i>) the value of the Title control. You need to set either the <b>value</b> or <b>html</b> property to the title</td>
+			<td>(optional) the value of the Title control. You need to set either the <b>value</b> or <b>html</b> property to the title</td>
 		</tr>
         <tr>
 			<td><b>html</b></td>
-			<td>(<i>string</i>) optional, a string with HTML that should be inserted into the title</td>
-		</tr>
-        <tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) adds a custom CSS class</td>
+			<td>(optional) a string with HTML that should be inserted into the title</td>
 		</tr>
 		<tr>
 			<td><b>tooltip</b></td>
-			<td>(<i>string</i>) a tooltip for the control</td>
+			<td>(optional) a tooltip for the control</td>
 		</tr>
         <tr>
-			<td><b>hidden</b></td>
-			<td>(<i>boolean</i>) defines whether a control is hidden</td>
+			<td><b>css</b></td>
+			<td>(optional) adds a custom CSS class</td>
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
-			<td>(<i>boolean</i>) defines whether a control is disabled</td>
+			<td>(optional) defines whether a control is disabled</td>
+		</tr>
+        <tr>
+			<td><b>hidden</b></td>
+			<td>(optional) defines whether a control is hidden</td>
 		</tr>
     </tbody>
 </table>
+
+**Related article:** [Title](ribbon/title.md)

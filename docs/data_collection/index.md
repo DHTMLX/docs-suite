@@ -53,3 +53,24 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_load_event.md)           | @getshort(api/datacollection_load_event.md)           |
 | [](api/datacollection_loaderror_event.md)      | @getshort(api/datacollection_loaderror_event.md)      |
 | [](api/datacollection_removeall_event.md)      | @getshort(api/datacollection_removeall_event.md)      |
+
+:::info Ways of applying events
+
+To call the event of DataCollection, you may use either of the two syntaxes:
+
+- common syntax (via the **data** object of the component)
+
+~~~js
+chart.data.events.on("afterAdd", function(newItem){
+    console.log("A new item is added");
+});
+~~~
+
+- or short syntax (right through the component)
+
+~~~js
+chart.events.on("afterAdd", function(newItem){
+    console.log("A new item is added");
+});
+~~~
+:::

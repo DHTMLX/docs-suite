@@ -6,7 +6,7 @@ description: You can explore the majorTick config of Slider in the documentation
 
 # majorTick
 
-@short: sets interval of rendering numeric values on the slider scale
+@short: Optional. Sets interval of rendering numeric values on the slider scale
 
 @signature: {'majorTick?: number;'}
 

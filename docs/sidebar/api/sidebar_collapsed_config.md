@@ -6,7 +6,7 @@ description: You can explore the collapsed config of Sidebar in the documentatio
 
 # collapsed
 
-@short: defines that a sidebar is initialized in the collapsed state
+@short: Optional. Defines that a sidebar is initialized in the collapsed state
 
 @signature: {'collapsed?: boolean;'}
 

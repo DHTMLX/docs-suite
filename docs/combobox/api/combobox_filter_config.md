@@ -6,7 +6,7 @@ description: You can explore the filter config of Combo Box in the documentation
 
 # filter
 
-@short: sets a custom function for filtering Combo Box options
+@short: Optional. Sets a custom function for filtering Combo Box options
 
 @signature: {'filter?: (item: any, target: string) => boolean;'}
 

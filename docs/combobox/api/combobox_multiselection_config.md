@@ -6,7 +6,7 @@ description: You can explore the multiselection config of Combo Box in the docum
 
 # multiselection
 
-@short: enables selection of multiple options in ComboBox
+@short: Optional. Enables selection of multiple options in ComboBox
 
 @signature: {'multiselection?: boolean;'}
 

@@ -6,7 +6,7 @@ description: You can explore the minHeight config of Window in the documentation
 
 # minHeight
 
-@short: sets the minimal height of a window
+@short: Optional. Sets the minimal height of a window
 
 @signature: {'minHeight?: number;'}
 

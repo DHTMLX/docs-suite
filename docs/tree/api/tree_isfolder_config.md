@@ -6,7 +6,7 @@ description: You can explore the isFolder config of Tree in the documentation of
 
 # isFolder
 
-@short: defines whether an item should be rendered as a folder
+@short: Optional. Defines whether an item should be rendered as a folder
 
 @signature: {'isFolder?: (obj: any) => boolean;'}
 

@@ -10,7 +10,9 @@ description: You can explore the customization of Tabbar in the documentation of
 
 There is a possibility to make changes in the look and feel of a tabbar.
 
-![](../assets/tabbar/custom_style.png)
+![Styling Tabbar](../assets/tabbar/custom_style.png)
+
+**Related sample**: [Tabbar. Styling (custom CSS)](https://snippet.dhtmlx.com/47en9f0a)
 
 For this you need to take the following steps:
 
@@ -36,4 +38,27 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 });
 ~~~
 
-**Related sample**: [Tabbar. Styling (custom CSS)](https://snippet.dhtmlx.com/47en9f0a)
+For example:
+
+~~~html
+<style>
+	.custom .dhx_tabbar-tab-button--active {
+		background-color: rgb(2, 136, 209);
+		color: var(--dhx-color-white);
+	}
+	.custom .dhx_tabbar-header-active {
+		background-color: #ff5252;
+	}
+</style>
+
+<script>
+	const tabbar = new dhx.Tabbar("tabbar_container", {
+    	mode: "top",
+    	css: "custom",
+    	tabAlign: "center",
+    	views: [
+    	    // view objects
+    	]
+	});
+</script>
+~~~

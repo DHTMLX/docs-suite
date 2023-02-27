@@ -8,7 +8,7 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 {{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
-@short: makes long text to split into multiple lines based on the width of the column
+@short: Optional. Makes long text to split into multiple lines based on the width of the column
 
 @signature: autoHeight?: boolean;
 

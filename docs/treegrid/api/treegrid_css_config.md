@@ -6,26 +6,38 @@ description: You can explore the css config of TreeGrid in the documentation of 
 
 # css
 
-@short: adds style classes to TreeGrid
+@short: Optional. Adds style classes to TreeGrid
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
+    .custom {
+        --dhx-color-primary: #00c2b8;
+        --dhx-background-primary: #f2f2f2;
+        --dhx-border-color: #fff;
+        --dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
     }
 </style>
 
-const treegrid = new dhx.TreeGrid("treegrid_container", {
-    css: "my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const treeGrid = new dhx.TreeGrid("treegrid_container", {
+    	columns: [
+    	    { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
+    	    { id: "native", type: "string", header: [{ text: "Native name" }] },
+    	    { id: "capital", type: "string", header: [{ text: "Capital" }] },
+    	    { id: "currency", type: "string", header: [{ text: "Currency" }] }
+    	],
+    	data: dataset,
+    	autoWidth: true,
+    	selection: true,
+    	css: "custom"
+	});
+</script>
+~~~
 
 **Related sample**: [TreeGrid. Styling (custom CSS)](https://snippet.dhtmlx.com/cpvir0od)
 
@@ -37,4 +49,6 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-[comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/customization.md#styling-treegrid)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

@@ -6,7 +6,7 @@ description: You can explore the resizable config of Window in the documentation
 
 # resizable
 
-@short: defines whether a window can be resized
+@short: Optional. Defines whether a window can be resized
 
 @signature: {'resizable?: boolean;'}
 

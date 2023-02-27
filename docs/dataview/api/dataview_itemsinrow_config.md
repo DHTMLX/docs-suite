@@ -6,7 +6,7 @@ description: You can explore the itemsInRow config of DataView in the documentat
 
 # itemsInRow
 
-@short: specifies the number of data items in a row
+@short: Optional. Specifies the number of data items in a row
 
 @signature: {'itemsInRow?: number;'}
 

@@ -29,17 +29,16 @@ html[data-theme=dark] {
 }
 
 .docusaurus-highlight-code-line {
-    background-color: rgb(0 0 0 / 10%);
+    background-color: rgb(210, 213, 214);
     display: block;
     margin: 0 calc(-1 * var(--ifm-pre-padding));
     padding: 0 var(--ifm-pre-padding);
 }
 
-
 /* If you have a different syntax highlighting theme for dark mode. */
 
 html[data-theme='dark'] .docusaurus-highlight-code-line {
-    background-color: rgb(66 66 66 / 50%);
+    background-color: rgb(122, 124, 126);
     /* Color which works with dark mode syntax highlighting theme */
 }
 
@@ -220,7 +219,7 @@ code {
 /* styles for block of code */
 
 .token-line.theme-code-block-highlighted-line{ /* added after updating to 2.0.0-beta.19 */
-    background-color: rgb(156 159 166 / 30%);
+    background-color: rgb(156 159 166 / 15%);
 }
 
 /* end styles for block of code */

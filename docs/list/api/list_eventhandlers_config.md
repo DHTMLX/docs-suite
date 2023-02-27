@@ -6,7 +6,7 @@ description: You can explore the eventHandlers config of List in the documentati
 
 # eventHandlers
 
-@short: adds event handlers to HTML elements of a custom template of List items
+@short: Optional. Adds event handlers to HTML elements of a custom template of List items
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: Id) => void | boolean; };};'}
 

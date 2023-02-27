@@ -6,7 +6,7 @@ description: You can explore the type config of rows and columns of Layout in th
 
 # type
 
-@short: defines the type of borders between cells inside rows and columns of a layout
+@short: Optional. Defines the type of borders between cells inside rows and columns of a layout
 
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 

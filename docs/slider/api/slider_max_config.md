@@ -6,7 +6,7 @@ description: You can explore the max config of Slider in the documentation of th
 
 # max
 
-@short: the maximal value of slider
+@short: Optional. The maximal value of slider
 
 @signature: {'max: number;'}
 

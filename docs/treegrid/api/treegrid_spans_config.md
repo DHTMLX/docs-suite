@@ -6,7 +6,7 @@ description: You can explore the spans config of TreeGrid in the documentation o
 
 # spans
 
-@short: describes the configuration of cols/rows spans
+@short: Optional. Describes the configuration of cols/rows spans
 
 @signature: {'spans?: ISpan[];'}
 

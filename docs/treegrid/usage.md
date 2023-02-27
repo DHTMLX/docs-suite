@@ -69,28 +69,29 @@ The return object includes the following attributes:
 
 ## Getting header filter
 
-You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset the focus on the filter, to change the filter, or clear it. For that, you should get an object of the header filter by column id via the [](treegrid/api/treegrid_getheaderfilter_method.md) method: 
+You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](treegrid/api/treegrid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
 
 ~~~js
-const countryFilter = treegrid.getHeaderFilter("capital");
-// -> return HTMLElement
-// <label class="dhx_grid-filter__label dxi dxi-magnify">...</label>
+// set a value by which a column will be filtered
+treegrid.getHeaderFilter("name").setValue("Brazil");
 
-countryFilter.focus();
+// set focus on the filter
+treegrid.getHeaderFilter("name").focus();
 
-// or
+// remove focus from the filter
+treegrid.getHeaderFilter("name").blur();
 
-const countryFilter = treegrid.getHeaderFilter("name");
-// -> return Combobox
-// Combobox {_uid: "u1597322507580", config: {…}, events: EventSystem, 
-// data: DataCollection, popup: Popup, …}
+// get an object of the filter
+const filter = treegrid.getHeaderFilter("name").getFilter();
+console.log(filter);
+// -> returns Combobox
+//  {config: {…}, _uid: 'u1670576316762', events: o, data: d, popup: f, …}
 
-countryFilter.blur();
+// clear the value set in the filter
+treegrid.getHeaderFilter("name").clear();
 ~~~
 
 **Related sample**: [TreeGrid. Get header filter](https://snippet.dhtmlx.com/vg5o912t)
-
-The method returns either an HTML object or an object with Combobox configuration.
 
 ## Hiding/showing a column
 
@@ -473,7 +474,7 @@ You can easily edit the desired cell of a treegrid with the help of the [](treeg
 		</tr>
 		<tr>
 			<td><b>editorType</b></td>
-			<td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datepicker"|"checkbox"|"combobox"|"textarea"|"multiselect"</td>
+			<td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"|"multiselect"</td>
 		</tr>
     </tbody>
 </table>
@@ -494,7 +495,7 @@ treegrid.editEnd(); // the edited data will be saved
 treegrid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#setting-type-of-column-editor) is defined as **checkbox**.}}
+{{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
 
 ## Expanding/collapsing nodes
 

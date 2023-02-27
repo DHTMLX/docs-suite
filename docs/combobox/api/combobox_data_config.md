@@ -6,7 +6,7 @@ description: You can explore the data config of Combo Box in the documentation o
 
 # data
 
-@short: specifies an array of data objects to set into the combobox
+@short: Optional. Specifies an array of data objects to set into the combobox
 
 @signature: {'data?: DataCollection<any> | any[];'}
 

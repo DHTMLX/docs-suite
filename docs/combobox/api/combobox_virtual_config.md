@@ -6,7 +6,7 @@ description: You can explore the virtual config of Combo Box in the documentatio
 
 # virtual
 
-@short: enables dynamic loading of data on scrolling the list of options
+@short: Optional. Enables dynamic loading of data on scrolling the list of options
 
 @signature: {'virtual?: boolean;'}
 

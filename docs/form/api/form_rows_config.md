@@ -6,7 +6,7 @@ description: You can explore the rows Config of Form in the documentation of the
 
 # rows
 
-@short: arranges controls inside the control group vertically
+@short: Optional. Arranges controls inside the control group vertically
 
 @signature: {'rows?: IBlock;'}
 

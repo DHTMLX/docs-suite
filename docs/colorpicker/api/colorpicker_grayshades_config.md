@@ -6,7 +6,7 @@ description: You can explore the grayShades config of Colorpicker in the documen
 
 # grayShades
 
-@short: defines whether the section with gray shades is displayed in the palette
+@short: Optional. Defines whether the section with gray shades is displayed in the palette
 
 @signature: {'grayShades?: boolean;'}
 

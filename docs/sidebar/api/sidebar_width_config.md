@@ -6,7 +6,7 @@ description: You can explore the width config of Sidebar in the documentation of
 
 # width
 
-@short: sets the width of a sidebar
+@short: Optional. Sets the width of a sidebar
 
 @signature: {'width?: number | string;'}
 

@@ -22,14 +22,15 @@ description: You can explore the API of Slider in the documentation of the DHTML
 
 ## Events
 
-| Name                                     | Description                                     |
-| ---------------------------------------- | ----------------------------------------------- |
-| [](slider/api/slider_blur_event.md)      | @getshort(slider/api/slider_blur_event.md)      |
-| [](slider/api/slider_change_event.md)    | @getshort(slider/api/slider_change_event.md)    |
-| [](slider/api/slider_focus_event.md)     | @getshort(slider/api/slider_focus_event.md)     |
-| [](slider/api/slider_keydown_event.md)   | @getshort(slider/api/slider_keydown_event.md)   |
-| [](slider/api/slider_mousedown_event.md) | @getshort(slider/api/slider_mousedown_event.md) |
-| [](slider/api/slider_mouseup_event.md)   | @getshort(slider/api/slider_mouseup_event.md)   |
+| Name                                        | Description                                        |
+| ------------------------------------------- | -------------------------------------------------- |
+| [](slider/api/slider_beforechange_event.md) | @getshort(slider/api/slider_beforechange_event.md) |
+| [](slider/api/slider_blur_event.md)         | @getshort(slider/api/slider_blur_event.md)         |
+| [](slider/api/slider_change_event.md)       | @getshort(slider/api/slider_change_event.md)       |
+| [](slider/api/slider_focus_event.md)        | @getshort(slider/api/slider_focus_event.md)        |
+| [](slider/api/slider_keydown_event.md)      | @getshort(slider/api/slider_keydown_event.md)      |
+| [](slider/api/slider_mousedown_event.md)    | @getshort(slider/api/slider_mousedown_event.md)    |
+| [](slider/api/slider_mouseup_event.md)      | @getshort(slider/api/slider_mouseup_event.md)      |
 
 ## Properties
 

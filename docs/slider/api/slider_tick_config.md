@@ -6,7 +6,7 @@ description: You can explore the tick config of Slider in the documentation of t
 
 # tick
 
-@short: sets the interval of steps for rendering the slider scale
+@short: Optional. Sets the interval of steps for rendering the slider scale
 
 @signature: {'tick?: number;'}
 

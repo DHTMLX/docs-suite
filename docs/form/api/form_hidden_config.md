@@ -6,7 +6,7 @@ description: You can explore the hidden Config of Form in the documentation of t
 
 # hidden
 
-@short: defines whether a form is hidden
+@short: Optional. Defines whether a form is hidden
 
 @signature: {'hidden?: boolean;'}
 

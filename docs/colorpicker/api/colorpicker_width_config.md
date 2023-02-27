@@ -6,7 +6,7 @@ description: You can explore the width config of Colorpicker in the documentatio
 
 # width
 
-@short:  sets the width of Colorpicker
+@short: Optional. Sets the width of Colorpicker
 
 @signature: {'width?: string | number;'}
 

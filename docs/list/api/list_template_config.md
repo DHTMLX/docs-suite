@@ -6,7 +6,7 @@ description: You can explore the template config of List in the documentation of
 
 # template
 
-@short: specifies a template for List items
+@short: Optional. Specifies a template for List items
 
 @signature: {'template?: (obj: IDataItem) => string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the collapsable config of Layout in the documentati
 
 # collapsable
 
-@short: defines whether a cell can be collapsed
+@short: Optional. Defines whether a cell can be collapsed
 
 @signature: {'collapsable?: boolean;'}
 

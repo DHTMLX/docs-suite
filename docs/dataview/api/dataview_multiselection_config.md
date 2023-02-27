@@ -6,7 +6,7 @@ description: You can explore the multiselection config of DataView in the docume
 
 # multiselection
 
-@short: enables selection of multiple DataView items, sets the mode of multiselection
+@short: Optional. Enables selection of multiple DataView items, sets the mode of multiselection
 
 @signature: {'multiselection?: boolean | MultiselectionMode;'}
 

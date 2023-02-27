@@ -6,7 +6,7 @@ description: You can explore the menuCss config of Toolbar in the documentation 
 
 # menuCss
 
-@short: adds style classes to all containers of Toolbar controls with nested items 
+@short: Optional. Adds style classes to all containers of Toolbar controls with nested items 
 
 @signature: {'menuCss?: string;'}
 

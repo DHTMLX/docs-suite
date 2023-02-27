@@ -27,20 +27,20 @@ It is possible to change values of the following configuration attributes of the
 <table>
 	<tbody>
 		<tr>
-			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
+			<td><b>css</b></td>
+			<td>(<i>string</i>) adds style classes to a control</td>
 		</tr>
-         <tr>
-			<td><b>padding</b></td>
-			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
-		</tr>	
 		<tr>
 			<td><b>height</b></td>
 			<td>(<i>string|number|"content"</i>) the height of a control</td>
 		</tr>
+        <tr>
+			<td><b>padding</b></td>
+			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
+		</tr>	
 		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) adds style classes to a control</td>
+			<td><b>width</b></td>
+			<td>(<i>string|number|"content"</i>) the width of a control</td>
 		</tr>
     </tbody>
 </table>

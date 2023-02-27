@@ -6,7 +6,7 @@ description: You can explore the resizable config of Grid in the documentation o
 
 # resizable
 
-@short: defines whether columns can be resized
+@short: Optional. Defines whether columns can be resized
 
 @signature: {'resizable?: boolean;'}
 
@@ -23,4 +23,4 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Resizable columns](https://snippet.dhtmlx.com/aeqzuks0)
 
-[comment]: # (@related:grid/initialization.md#initialize-grid grid/configuration.md#resizing)
+[comment]: # (@related:grid/initialization.md#initialize-grid grid/configuration.md#resizable-columns)

@@ -6,11 +6,16 @@ description: You can explore the enable method of the Radiogroup control of Form
 
 # enable()
 
-@short: enables a disabled RadioGroup control
+@short: enables a disabled RadioGroup control or a specific element inside the control
 
-@signature: enable(): void;
+@signature: {'enable(id?: string): void;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the RadioGroup control
 
 @example:
-form.getItem("radiogroup").enable();
+form.getItem("radiogroup").enable("id_1");
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0

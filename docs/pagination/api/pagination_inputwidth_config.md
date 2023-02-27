@@ -6,7 +6,7 @@ description: You can explore the inputWidth config of Pagination in the document
 
 # inputWidth
 
-@short: optional, sets the width for the input of the pagination
+@short: Optional. Sets the width for the input of the pagination
 
 @signature: {'inputWidth?: number;'}
 

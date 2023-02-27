@@ -10,7 +10,7 @@ description: You can explore the customization of Timepicker in the documentatio
 
 There is a possibility to make changes in the look and feel of a timepicker. 
 
-![](../assets/timepicker/custom_style.png)
+![Styling Timepicker](../assets/timepicker/custom_style.png)
 
 **Related sample**: [Timepicker. Styling (custom CSS)](https://snippet.dhtmlx.com/n4xfu4e9)
 
@@ -36,4 +36,21 @@ For this you need to take the following steps:
 const timepicker = new dhx.Timepicker("timepicker_container", { 
     css:"my-first-class my-second-class"
 });
+~~~
+
+For example:
+
+~~~html
+<style>
+  .custom {
+    --dhx-font-color-primary: #c00;
+    --dhx-color-primary: #ff5c5c;
+  }
+</style>
+
+<script>
+	const timepicker = new dhx.Timepicker("timepicker_container", {
+  		css: "custom dhx_widget--bordered"
+	});
+</script>
 ~~~

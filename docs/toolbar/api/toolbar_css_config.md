@@ -6,26 +6,37 @@ description: You can explore the css config of Toolbar in the documentation of t
 
 # css
 
-@short: adds style classes to Toolbar
+@short: Optional. Adds style classes to Toolbar
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
-    }
+	.custom,.custom--popup-menu {
+		--dhx-background-primary: #3A434A;
+		--dhx-background-secondary: #5a6872;
+		--dhx-background-additional: #5a6872;
+		--dhx-s-toolbar-background: var(--dhx-background-primary);
+
+		--dhx-color-primary: #118d8d;
+		--dhx-color-primary-hover: #49e9e9;
+		--dhx-color-primary-active: #49e9e9;
+
+		--dhx-font-color-primary: #fff;
+		--dhx-font-color-secondary: #fff;
+		--dhx-font-color-additional: #fff;
+	}
 </style>
 
-const toolbar = new dhx.Toolbar("toolbar_container", {
-    css: "my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const toolbar = new dhx.Toolbar("toolbar", {
+    	css: "custom"
+	});
+</script>
+~~~
 
 Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget) that you can also apply to change the appearance of Toolbar:
 
@@ -34,3 +45,7 @@ const toolbar = new dhx.Toolbar("toolbar_container", {
 	css: "dhx_widget--bg-gray"
 });
 ~~~
+
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

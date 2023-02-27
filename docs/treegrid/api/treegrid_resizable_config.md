@@ -6,7 +6,7 @@ description: You can explore the resizable config of TreeGrid in the documentati
 
 # resizable
 
-@short: defines whether columns can be resized
+@short: Optional. Defines whether columns can be resized
 
 @signature: {'resizable?: boolean;'}
 
@@ -23,4 +23,4 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Resizable columns](https://snippet.dhtmlx.com/vq3i9maq)
 
-[comment]: # (@related: treegrid/configuration.md#resizing treegrid/initialization.md#initialize-treegrid)
+[comment]: # (@related: treegrid/configuration.md#resizable-columns treegrid/initialization.md#initialize-treegrid)

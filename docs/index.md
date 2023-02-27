@@ -34,6 +34,7 @@ There is a collection of helpers aimed to streamline web development by giving y
 - [Dynamic Loading](helpers/lazydataproxy)
 - [Resizer](helpers/resize_handler)
 - [Selection Object API](selection/)
+- [Themes](themes/)
 - [TreeCollection API](tree_collection/)
 - [Uploader API](uploader/)
 
@@ -63,7 +64,7 @@ A [set of CSS templates](https://dhtmlx.com/docs/products/dhtmlxSuite/how-to-cre
 
 ### Integration with Angular, React, and Vue.js
 [comment]: # (ссылки ниже должны уводить на страницы доки)
-DHTMLX Suite is compatible with any client-side framework. There are code examples of how to use DHTMLX widgets with [Angular](https://dhtmlx.github.io/angular-suite-demo/?path=/story/calendar--base), [React](https://dhtmlx.github.io/react-widgets/#/), and [Vue.js](https://dhtmlx.github.io/vue-suite-demo/?path=/story/calendar--base) available on our GitHub pages.
+DHTMLX Suite is compatible with any client-side framework. There are code examples of how to use DHTMLX widgets with [Angular](integration/suite_and_angular.md), [React](integration/suite_and_react.md), and [Vue.js](integration/suite_and_vue.md) available on our GitHub pages.
 
 ### Integration with any backend technologies
 

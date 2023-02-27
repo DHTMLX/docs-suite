@@ -6,7 +6,7 @@ description: You can explore the spans config of Grid in the documentation of th
 
 # spans
 
-@short: describes the configuration of cols/rows spans
+@short: Optional. Describes the configuration of cols/rows spans
 
 @signature: {'spans?: ISpan[];'}
 

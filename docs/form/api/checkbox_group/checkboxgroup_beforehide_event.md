@@ -6,21 +6,24 @@ description: You can explore the beforeHide event of the Checkbox Group control 
 
 # beforeHide
 
-@short: fires before a control is hidden
+@short: fires before a control or its checkbox is hidden
 
-@signature: {'beforeHide: (value: ICheckboxGroupValue, init: boolean) => boolean | void;'}
+@signature: {'beforeHide: (value: ICheckboxGroupValue, id?: string, init: boolean) => boolean | void;'}
 
 @params:
 - `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
+- `id?: string` - optional, the ID of the checkbox of the control
 - `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
-Return `false` to prevent a control from being hidden; otherwise, `true`.
+Return `false` to prevent a control or its checkbox from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("CheckboxGroup").events.on("beforeHide", function(value, init) {
-    console.log("beforeHide", value, init);
+form.getItem("CheckboxGroup").events.on("beforeHide", function(value, id, init) {
+    console.log("beforeHide", value, id, init);
     return true;
 });
 
 @descr:
+
+@changelog: The **id** parameter was added in v8.0

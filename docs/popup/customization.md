@@ -10,7 +10,9 @@ description: You can explore the customization of Popup in the documentation of 
 
 There is a possibility to make changes in the look and feel of a popup. 
 
-![](../assets/popup/custom_css.png)
+![Styling Popup](../assets/popup/custom_css.png)
+
+**Related sample**: [Popup. Styling (custom CSS)](https://snippet.dhtmlx.com/rd8zfw5h)
 
 For this you need to take the following steps:
 
@@ -34,8 +36,26 @@ For this you need to take the following steps:
 const popup = new dhx.Popup({ 
     css:"my-first-class my-second-class"
 });
-
-popup.show();
 ~~~
 
-**Related sample**: [Popup. Styling (custom CSS)](https://snippet.dhtmlx.com/rd8zfw5h)
+For example:
+
+~~~html
+<style>
+	.custom {
+		--dhx-font-color-primary: var(--dhx-color-white);
+		--dhx-background-primary: var(--dhx-color-primary);
+
+		margin-top: 25px;
+		animation: opacity .4s ease-in-out forwards;
+	}
+</style>
+
+<script>
+	const popup = new dhx.Popup({
+	    css: "dhx_widget--border-shadow custom"
+	});
+
+	// show popup
+</script>
+~~~

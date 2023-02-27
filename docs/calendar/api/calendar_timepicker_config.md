@@ -6,7 +6,7 @@ description: You can explore the timePicker config of Calendar in the documentat
 
 # timePicker
 
-@short: adds a timepicker into the calendar
+@short: Optional. Adds a timepicker into the calendar
 
 @signature: {'timePicker?: boolean;'}
 

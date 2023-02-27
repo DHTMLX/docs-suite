@@ -6,7 +6,7 @@ description: You can explore the disabled config of Tabbar in the documentation 
 
 # disabled
 
-@short: makes a tab/tabs disabled
+@short: Optional. Makes a tab/tabs disabled
 
 @signature: {'disabled?: string | string[];'}
 

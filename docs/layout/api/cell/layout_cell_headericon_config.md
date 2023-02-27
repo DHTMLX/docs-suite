@@ -6,7 +6,7 @@ description: You can explore the headerIcon config of Layout in the documentatio
 
 # headerIcon
 
-@short: an icon used in the header of a cell
+@short: Optional. An icon used in the header of a cell
 
 @signature: {'headerIcon?: string;'}
 

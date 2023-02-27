@@ -6,7 +6,7 @@ description: You can explore the dragMode config of TreeGrid in the documentatio
 
 # dragMode
 
-@short: enables drag-n-drop in Treegrid
+@short: Optional. Enables drag-n-drop in Treegrid
 
 @signature: {'dragMode?: "target" | "source" | "both";'}
 

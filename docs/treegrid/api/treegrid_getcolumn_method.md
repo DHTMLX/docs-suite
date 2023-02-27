@@ -75,7 +75,7 @@ The returned object contains the following set of properties:
 		</tr>
         <tr>
 			<td><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"checkbox"|"datePicker"</td>
 		</tr>
         <tr>
 			<td><b>options</b></td>

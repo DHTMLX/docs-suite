@@ -6,26 +6,28 @@ description: You can explore the css config of Ribbon in the documentation of th
 
 # css
 
-@short: adds style classes to Ribbon
+@short: Optional. Adds style classes to Ribbon
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
+    .custom {
+        --dhx-background-secondary: var(--dhx-color-white);
+        --dhx-color-primary-light-hover: #aefafa;
+        --dhx-color-primary-light-active: #118d8d;
     }
 </style>
 
-const ribbon = new dhx.Ribbon("ribbon_container", {
-    css:"my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const ribbon = new dhx.Ribbon("ribbon_container", {
+    	css: "custom dhx_widget--bordered"
+	});
+</script>
+~~~
 
 **Related sample**: [Ribbon. Styling (custom CSS)](https://snippet.dhtmlx.com/9ckg47ro)
 
@@ -36,3 +38,7 @@ const ribbon = new dhx.Ribbon("ribbon_container", {
     css: "dhx_widget--bg_white"
 });
 ~~~
+
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

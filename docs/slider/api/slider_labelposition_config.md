@@ -6,7 +6,7 @@ description: You can explore the labelPosition config of Slider in the documenta
 
 # labelPosition
 
-@short: defines the position of a label of a slider
+@short: Optional. Defines the position of a label of a slider
 
 @signature: {'labelPosition?: "left" | "top";'}
 

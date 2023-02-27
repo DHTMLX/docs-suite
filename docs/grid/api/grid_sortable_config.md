@@ -6,7 +6,7 @@ description: You can explore the sortable config of Grid in the documentation of
 
 # sortable
 
-@short: defines whether sorting on clicking headers of columns is enabled
+@short: Optional. Defines whether sorting on clicking headers of columns is enabled
 
 @signature: {'sortable?: boolean;'}
 
@@ -27,4 +27,4 @@ const grid = new dhx.Grid("grid_container", {
 
 @changelog: added in v6.4
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#sorting-columns)
+[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#sortable-columns)

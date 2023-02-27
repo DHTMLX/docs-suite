@@ -6,7 +6,7 @@ description: You can explore the value config of Slider in the documentation of 
 
 # value
 
-@short: the value the thumb will be set at on initialization of the slider
+@short: Optional. The value the thumb will be set at on initialization of the slider
 
 @signature: {'value?: number[] | number | string;'}
 

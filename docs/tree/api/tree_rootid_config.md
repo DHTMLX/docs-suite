@@ -6,7 +6,7 @@ description: You can explore the rootId config of Tree in the documentation of t
 
 # rootId
 
-@short: sets the id for the root element
+@short: Optional. Sets the id for the root element
 
 @signature: {'rootId?: Id;'}
 

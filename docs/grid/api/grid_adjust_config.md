@@ -6,7 +6,7 @@ description: You can explore the adjust config of Grid in the documentation of t
 
 # adjust
 
-@short: defines whether the width of columns is automatically adjusted to the width of their content
+@short: Optional. Defines whether the width of columns is automatically adjusted to the width of their content
 
 @signature: {'adjust?: "header" | "footer" | "data" | boolean;'}
 

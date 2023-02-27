@@ -6,7 +6,7 @@ description: You can explore the tabHeight config of Tabbar in the documentation
 
 # tabHeight
 
-@short: sets the height of a tab
+@short: Optional. Sets the height of a tab
 
 @signature: {'tabHeight?: number | string;'}
 

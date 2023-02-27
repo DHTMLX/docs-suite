@@ -6,13 +6,14 @@ description: You can explore the afterShow event of Form in the documentation of
 
 # afterShow
 
-@short: fires after a control of Form is shown
+@short: fires after a Form control or its element is shown
 
-@signature: {'afterShow: (name: string, value?: any) => void;'}
+@signature: {'afterShow: (name: string, value?: any, id?: string) => void;'}
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
 - `value: any` - the current value of the control
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:
 form.events.on("afterShow", function(name, value) {
@@ -24,8 +25,9 @@ form.events.on("afterShow", function(name, value) {
 **Related sample**: [Form. Events](https://snippet.dhtmlx.com/vyipsaoa)
 
 @changelog:
-- added in v6.5
+- The **id** parameter was added in v8.0
 - Before v7.0, the event took one parameter - the control id.
 - Starting from v7.0, the event takes two parameters: **name|id** and **value**.
+- The event was added in v6.5
 
 [comment]: # (@relatedapi: form/api/form_beforeshow_event.md)

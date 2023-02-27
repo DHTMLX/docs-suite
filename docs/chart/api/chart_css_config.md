@@ -6,36 +6,51 @@ description: You can explore the css config of Chart in the documentation of the
 
 # css
 
-@short: adds style classes to Chart
+@short: Optional. Adds style classes to Chart
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-	.custom-class .dhx_chart-graph_area {
-		fill:#444;
-	}
-	.custom-class .grid-line {
-		stroke: white;
-		stroke-width: 0.5;
-	}
-	.custom-class .chart.bar {
-		fill: orange;
-	}
+    .custom {
+        --dhx-background-primary: #444;
+        --dhx-font-color-secondary: #fff;
+    }
+    .custom .chart.bar {
+        fill: orange;
+    }
 </style>
 
-const chart = new dhx.Chart("chart_container", {
-    css: "custom-class",
-    scales: { // scales config }
-    series: [
-        {
-            //series config                 
-        }
-    ]
-});
-
-
-@descr:
+<script>
+    const chart = new dhx.Chart("chart_container", {
+        type: "bar",
+        css: "custom dhx_widget--bordered",
+        scales: {
+            "top": {
+                size: 100
+            },
+            "bottom" : {
+                text: "month", size: 100
+            },
+            "left" : {
+                size: 100, maxTicks: 10, max: 100, min: 0
+            },
+            "right": {
+                size: 100
+            }
+        },
+        series: [
+            {
+                id: "A", value: "company C", color: "#5E83BA",
+                pointType: "circle", fill: "#5E83BA", size: 35
+            }
+        ]
+    });
+</script>
+~~~
 
 **Related sample**: [Chart. Styling (custom CSS)](https://snippet.dhtmlx.com/p82iew5s)
 
@@ -47,4 +62,6 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
-[comment]: # (@related: chart/customization.md#styling-chart)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

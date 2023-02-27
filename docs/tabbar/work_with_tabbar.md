@@ -150,3 +150,19 @@ tabbar.getCell("dataview").attach(dataview);
 **Related sample**: [Tabbar. Attach widget](https://snippet.dhtmlx.com/o1jwmw1l)
 
 {{note The Message, Popup, Window components can't be attached to the Tabbar cell because these components can't have the parent container due to their architecture principles.}}
+
+## Attaching an HTML content to a cell
+
+You can easily attach some HTML content to a cell of Tabbar via the [](tabbar/api/cell/tabbar_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
+
+~~~js
+const tabbar = new dhx.Tabbar("tabbar_container", {
+    mode: "top",
+    css: "dhx_widget--bordered",
+    views: [
+        { id: "vilnius", tab: "Vilnius" },
+    ]
+});
+
+tabbar.getCell("vilnius").attachHTML("<p>Information about Vilnius</p>");
+~~~

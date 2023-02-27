@@ -6,11 +6,16 @@ description: You can explore the disable method of the Select control of Form in
 
 # disable()
 
-@short: disables a Select control on a page
+@short: disables a Select control or a specific option inside the control
 
-@signature: {'disable(): void;'}
+@signature: {'disable(value?: string | number): void;'}
+
+@params:
+- `value: string | number` - optional, the **value** of a specific option inside the control
 
 @example:
-form.getItem("select").disable();
+form.getItem("select").disable(1);
 
 @descr:
+
+**Change log:** The **value** parameter was added in v8.0

@@ -6,7 +6,7 @@ description: You can explore the value config of Timepicker in the documentation
 
 # value
 
-@short: the time value to be set on initialization of the timepicker
+@short: Optional. The time value to be set on initialization of the timepicker
 
 @signature: {'value?: Date | number | string | any[] | ITimeObject;'}
 

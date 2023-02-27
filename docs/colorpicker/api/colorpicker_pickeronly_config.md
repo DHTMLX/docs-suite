@@ -6,7 +6,7 @@ description: You can explore the pickerOnly config of Colorpicker in the documen
 
 # pickerOnly
 
-@short: defines whether Colorpicker is shown only in the picker mode
+@short: Optional. Defines whether Colorpicker is shown only in the picker mode
 
 @signature: {'pickerOnly?: boolean;'}
 

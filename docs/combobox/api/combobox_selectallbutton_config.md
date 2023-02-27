@@ -6,7 +6,7 @@ description: You can explore the selectAllButton config of Combo Box in the docu
 
 # selectAllButton
 
-@short: defines whether the Select All button should be shown
+@short: Optional. Defines whether the Select All button should be shown
 
 @signature: {'selectAllButton?: boolean;'}
 

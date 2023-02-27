@@ -6,7 +6,7 @@ description: You can explore the navigationType config of Menu in the documentat
 
 # navigationType
 
-@short: defines the action that opens menu options
+@short: Optional. Defines the action that opens menu options
 
 @signature: {'navigationType?: "pointer" | "click";'}
 

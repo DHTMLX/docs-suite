@@ -6,16 +6,19 @@ description: You can explore the afterShow event of the Checkbox Group control o
 
 # afterShow
 
-@short: fires after a control is shown
+@short: fires after a control or its checkbox is shown
 
-@signature: {'afterShow: (value: ICheckboxGroupValue) => void;'}
+@signature: {'afterShow: (value: ICheckboxGroupValue, id?: string) => void;'}
 
 @params:
 - `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
+- `id?: string` - optional, the ID of the checkbox of the control
 
 @example:
-form.getItem("CheckboxGroup").events.on("afterShow", function(value) {
-    console.log("afterShow", value);
+form.getItem("CheckboxGroup").events.on("afterShow", function(value, id) {
+    console.log("afterShow", value, id);
 });
 
 @descr:
+
+@changelog: The **id** parameter was added in v8.0

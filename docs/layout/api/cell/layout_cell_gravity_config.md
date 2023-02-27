@@ -6,7 +6,7 @@ description: You can explore the gravity config of Layout in the documentation o
 
 # gravity
 
-@short: sets the "weight" of a cell in relation to other cells placed in the same row and within one parent
+@short: Optional. Sets the "weight" of a cell in relation to other cells placed in the same row and within one parent
 
 @signature: {'gravity?: number | boolean;'}
 

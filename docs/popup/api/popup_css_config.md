@@ -6,16 +6,30 @@ description: You can explore the css config of Popup in the documentation of the
 
 # css
 
-@short: adds style classes for the component
+@short: Optional. Adds style classes for the component
 
 @signature: {'css?: string;'}
 
-@example:
-const popup = new dhx.Popup({
-    css:"my_first_class my_second_class"
-});
+@descr:
+#### Example
 
-popup.show();
+~~~html
+<style>
+	.custom {
+		--dhx-font-color-primary: var(--dhx-color-white);
+		--dhx-background-primary: var(--dhx-color-primary);
+
+		margin-top: 25px;
+		animation: opacity .4s ease-in-out forwards;
+	}
+</style>
+
+<script>
+	const popup = new dhx.Popup({
+	    css: "dhx_widget--border-shadow custom"
+	});
+</script>
+~~~
 
 @descr:
 
@@ -28,3 +42,7 @@ const popup = new dhx.Popup({
     css: "dhx_widget--bg_white"
 }); 
 ~~~
+
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

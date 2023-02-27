@@ -6,7 +6,7 @@ description: You can explore the footer config of Window in the documentation of
 
 # footer
 
-@short: adds a footer to a window
+@short: Optional. Adds a footer to a window
 
 @signature: {'footer?: boolean;'}
 

@@ -6,7 +6,7 @@ description: You can explore the html config of Layout in the documentation of t
 
 # html
 
-@short: sets HTML content for a cell
+@short: Optional. Sets HTML content for a cell
 
 @signature: {'html?: string;'}
 

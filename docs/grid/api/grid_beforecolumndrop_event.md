@@ -50,9 +50,9 @@ The data object contains the following parameters:
 
 @changelog:
 
-- added in v6.5
 - Before v7.0, the event took two parameters - **sourceId** and **targetId**. 
 - In v7.0, the parameters were replaced with new ones: **data** and **e**.
+- The event was added in v6.5
 
 [comment]: # (@relatedapi:)
 [comment]: # ([](grid/api/grid_dragitem_config.md)

@@ -6,7 +6,7 @@ description: You can explore the label config of Slider in the documentation of 
 
 # label
 
-@short: specifies the label of a slider
+@short: Optional. Specifies the label of a slider
 
 @signature: {'label?: string;'}
 

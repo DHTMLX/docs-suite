@@ -6,7 +6,7 @@ description: You can explore the minWidth config of Layout in the documentation 
 
 # minWidth
 
-@short: the minimal width to be set for a cell
+@short: Optional. The minimal width to be set for a cell
 
 @signature: {'minWidth?: number | string;'}
 

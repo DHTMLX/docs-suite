@@ -23,7 +23,7 @@ grid.editCell(grid.data.getId(0),"project");
 **Related sample**: [TreeGrid. Edit first cell](https://snippet.dhtmlx.com/zm6wh1ss)
 
 @changelog:
-- added in v6.4
 - The "textarea" type of the editor is added in v7.1
+- The method was added in v6.4
 
 [comment]: # (@related: treegrid/usage.md#editing-data)

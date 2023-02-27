@@ -6,11 +6,16 @@ description: You can explore the enable method of the Checkbox Group control of 
 
 # enable()
 
-@short: enables a disabled CheckboxGroup control
+@short: enables a CheckboxGroup control or a specific element inside the control
 
-@signature: {'enable(): void;'}
+@signature: {'enable(id?: string): void;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the CheckboxGroup control
 
 @example:
-form.getItem("CheckboxGroup").enable();
+form.getItem("CheckboxGroup").enable("id_1");
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0

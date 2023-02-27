@@ -6,7 +6,7 @@ description: You can explore the left config of Window in the documentation of t
 
 # left
 
-@short: the left coordinate of a window position
+@short: Optional. The left coordinate of a window position
 
 @signature: {'left?: number;'}
 

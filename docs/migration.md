@@ -6,6 +6,77 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+7.3 -> 8.0
+------------
+
+### Grid/TreeGrid
+
+Before v8.0, the [getHeaderFilter()](grid/api/grid_getheaderfilter_method.md) method returned either an HTML element or an object with Combobox configuration. That allowed you to set focus on the filter or remove it:
+
+~~~js
+const countryFilter = grid.getHeaderFilter("country");
+// -> HTMLElement
+// <label className="dhx_grid-filter__label dxi dxi-menu-down">...</label>
+
+countryFilter.focus();
+countryFilter.blur();
+
+// or
+
+const countryFilter = grid.getHeaderFilter("density");
+// -> object of Combobox
+// Combobox {_uid: "u1597304021754", config: {…}, events: EventSystem, 
+// data: DataCollection, popup: Popup, …}
+
+countryFilter.focus();
+~~~
+
+In v8.0, we've improved the way of work with the filter. Now the [getHeaderFilter()](grid/api/grid_getheaderfilter_method.md) method returns an object with a set of methods which allow you to get an object of the filter, to set/remove focus from the filter, to set a value by which a column will be filtered or to clear this value.
+
+If you need to get an HTML object or an object with configuration of Combobox, apply the [getFilter()](grid/api/headerfilter/getfilter_method.md) method of the [header filter](grid/api/grid_getheaderfilter_method.md) object:
+
+~~~js
+const filter1 = grid.getHeaderFilter("country").getFilter();
+console.log(filter1);
+// -> returns Combobox
+//  {config: {…}, _uid: 'u1670500020936', events: o, data: d, popup: f, …}
+
+
+const filter2 = grid.getHeaderFilter("netChange").getFilter();
+console.log(filter2);
+// -> returns HTML object
+// {type: 1, attrs: {…}, tag: 'div', _class: 'dhx_grid-filter__label dxi dxi-magnify', 
+// ref: 'netChange_filter', …}
+~~~
+
+### Message box
+
+Before v8.0, the **dhx.message()** constructor just added a new element to DOM.
+
+Starting from v8.0, the constructor looks like **dhx.message(): {close() => void};**. It will return an object with the method which allows calling a function to remove the element from DOM.  
+
+~~~js {8} title="Before v8.0"
+const message = dhx.message({
+    text:"Message text", 
+    icon:"dxi-clock", 
+    css:"expire", 
+    expire:1000
+});
+
+console.log(message); // -> undefined
+~~~
+
+~~~js {8} title="From v8.0"
+const message = dhx.message({
+    text:"Message text", 
+    icon:"dxi-clock", 
+    css:"expire", 
+    expire:1000
+});
+
+console.log(message); // -> {close: function}
+~~~
+
 7.1 -> 7.2
 ----------------
 

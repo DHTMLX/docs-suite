@@ -38,21 +38,22 @@ dhx.message({
 
 For example:
 
-~~~js
+~~~html
 <style>
-  .custom-class .dhx_message__text {
-    font-size: 16px;
-  }
-  .custom-class .dhx_message__icon {
-    color: red;
-  }
+	.custom {
+		--dhx-font-color-primary: var(--dhx-color-white);
+		--dhx-background-primary: var(--dhx-color-primary);
+		--dhx-font-size-normal: 16px;
+	}
 </style>
 
-dhx.message({
-  text: "Here is DHTMLX Message",
-  icon: "dxi dxi-close",
-  css: "custom-class"
-});
+<script>
+    dhx.message({
+        text: "Here is dhtmlxMessage",
+        icon: "dxi dxi-close",
+        css: "custom"
+    });
+</script>
 ~~~
 
 **Related sample**: [Message. Message styling (custom CSS)](https://snippet.dhtmlx.com/7s6p67ht)

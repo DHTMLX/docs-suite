@@ -6,38 +6,44 @@ description: You can explore the css Config of Form in the documentation of the 
 
 # css
 
-@short: the name of a CSS class(es) applied to the control group
+@short: Optional. The name of a CSS class(es) applied to the control group
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .bg-white .dhx_input {
-        background: #fff;
+    .custom {
+        --dhx-background-primary: rgb(238, 238, 238);
+        --dhx-color-primary: #118d8d;
+        --dhx-color-primary-active: #118d8d;
+	    --dhx-color-primary-hover: #1ad1d1;
     }
 </style>
- 
- 
-const form = new dhx.Form("form_container", {
-    css:"bg-gray",
-    rows: [
-        {   
-            css:"bg-white",
-            type: "input",
-            label: "Name",
-            placeholder: "John Doe"
-        },
-        {
-            css:"bg-white",
-            type: "input",
-            label: "Email",
-            placeholder: "jd@mail.name"
-        },
-        // more options
-    ]
-});
 
-@descr:
+<script>
+	const form = new dhx.Form("form_container", {
+    	padding: 40,
+    	width: 400,
+    	css: "custom",
+    	rows: [
+        	{
+            	type: "input",
+            	label: "Name",
+            	placeholder: "John Doe",
+        	},
+        	{
+            	type: "input",
+            	label: "Email",
+            	placeholder: "jd@mail.name"
+        	},
+        	// more controls
+    	]
+	});
+</script>
+~~~
 
 **Related sample**: [Form. Styling (custom CSS)](https://snippet.dhtmlx.com/wnscgb50)
 
@@ -49,4 +55,6 @@ const form = new dhx.Form("form_container", {
 });
 ~~~
 
-[comment]: # (@related: form/how_to_start.md#initialize-form form/customization.md)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

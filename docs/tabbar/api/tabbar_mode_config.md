@@ -6,7 +6,7 @@ description: You can explore the mode config of Tabbar in the documentation of t
 
 # mode
 
-@short: specifies the mode of displaying a tabbar
+@short: Optional. Specifies the mode of displaying a tabbar
 
 @signature: {'mode?: "left" | "right" | "bottom" | "top";'}
 

@@ -6,7 +6,7 @@ description: You can explore the dragMode config of DataView in the documentatio
 
 # dragMode
 
-@short: enables drag-n-drop in DataView
+@short: Optional. Enables drag-n-drop in DataView
 
 @signature: {'dragMode?: boolean;'}
 

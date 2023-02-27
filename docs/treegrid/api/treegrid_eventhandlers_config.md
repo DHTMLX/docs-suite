@@ -6,7 +6,7 @@ description: You can explore the eventHandlers config of TreeGrid in the documen
 
 # eventHandlers
 
-@short: adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
+@short: Optional. Adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
 

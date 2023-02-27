@@ -6,7 +6,7 @@ description: You can explore the autoHeight config of TreeGrid in the documentat
 
 # autoHeight
 
-@short: makes long text to split into multiple lines based on the width of the column
+@short: Optional. Makes long text to split into multiple lines based on the width of the column
 
 @signature: autoHeight?: boolean;
 

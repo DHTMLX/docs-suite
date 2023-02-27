@@ -6,14 +6,19 @@ description: You can explore the isDisabled method of the Checkbox Group control
 
 # isDisabled()
 
-@short: checks whether a CheckboxGroup control is disabled
+@short: checks whether a CheckboxGroup control or a specific element inside the control is disabled
 
-@signature: {'isDisabled(): boolean;'}
+@signature: {'isDisabled(id?: string): boolean;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the CheckboxGroup control
 
 @returns:
-`true`, if a control is disabled; otherwise, `false`.
+`true`, if a control or a specific element is disabled; otherwise, `false`.
 
 @example:
-form.getItem("CheckboxGroup").isDisabled(); // -> true/false
+form.getItem("CheckboxGroup").isDisabled("id_1"); // -> true/false
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0

@@ -6,7 +6,7 @@ description: You can explore the tooltip config of Slider in the documentation o
 
 # tooltip
 
-@short: enables a tooltip on hovering over the slider thumb
+@short: Optional. Enables a tooltip on hovering over the slider thumb
 
 @signature: {'tooltip?: boolean;'}
 

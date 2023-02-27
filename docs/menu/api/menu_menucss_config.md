@@ -6,7 +6,7 @@ description: You can explore the menuCss config of Menu in the documentation of 
 
 # menuCss
 
-@short: adds style classes to all containers of Menu controls with nested items 
+@short: Optional. Adds style classes to all containers of Menu controls with nested items 
 
 @signature: {'menuCss?: string;'}
 

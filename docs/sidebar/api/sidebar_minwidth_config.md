@@ -6,7 +6,7 @@ description: You can explore the minWidth config of Sidebar in the documentation
 
 # minWidth
 
-@short: sets the minimal width of a sidebar in the collapsed state
+@short: Optional. Sets the minimal width of a sidebar in the collapsed state
 
 @signature: {'minWidth?: number | string;'}
 

@@ -6,11 +6,16 @@ description: You can explore the disable method of the Radiogroup control of For
 
 # disable()
 
-@short: disables a RadioGroup control on a page
+@short: disables a RadioGroup control or a specific element inside the control
 
-@signature: {'disable(): void;'}
+@signature: {'disable(id?: string): void;'}
+
+@params:
+- `id: string` - optional, the **id** of a specific element inside the RadioGroup control
 
 @example:
-form.getItem("radiogroup").disable();
+form.getItem("radiogroup").disable("id_1");
 
 @descr:
+
+**Change log:** The **id** parameter was added in v8.0

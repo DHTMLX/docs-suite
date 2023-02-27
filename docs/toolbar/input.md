@@ -86,4 +86,14 @@ To get the text that is currently inside the Input control, call **getState()**:
 toolbar.getState(); //-> {search:"Summer"}
 ~~~
 
+## Setting focus on a control
+
+To set focus on an Input control, use the [setFocus()](toolbar/api/toolbar_setfocus_method.md) method. It takes the ID of a control as a parameter:
+
+~~~js
+toolbar.setFocus("search");
+~~~
+
+:::info
 Check the full list of available operations in the [Toolbar API](toolbar/api/api_overview.md) and [Tree Collection API](tree_collection.md).
+:::

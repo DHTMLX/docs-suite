@@ -6,7 +6,7 @@ description: You can explore the height config of TreeGrid in the documentation 
 
 # height
 
-@short: sets the height of a grid
+@short: Optional. Sets the height of a grid
 
 @signature: {'height?: number;'}
 

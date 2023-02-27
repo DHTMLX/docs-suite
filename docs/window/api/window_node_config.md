@@ -6,7 +6,7 @@ description: You can explore the node config of Window in the documentation of t
 
 # node
 
-@short: optional, the container for a window or its id
+@short: Optional. The container for a window or its id
 
 @signature: {'node?: HTMLElement | string;'}
 

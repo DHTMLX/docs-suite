@@ -6,7 +6,7 @@ description: You can explore the sortable config of TreeGrid in the documentatio
 
 # sortable
 
-@short: defines whether sorting on clicking headers of columns is enabled
+@short: Optional. Defines whether sorting on clicking headers of columns is enabled
 
 @signature: {'sortable?: boolean;'}
 
@@ -27,4 +27,4 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @changelog: added in v6.4
 
-[comment]: # (@related: treegrid/configuration.md#sorting-columns)
+[comment]: # (@related: treegrid/configuration.md#sortable-columns)

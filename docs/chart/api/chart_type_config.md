@@ -6,9 +6,9 @@ description: You can explore the type config of Chart in the documentation of th
 
 # type
 
-@short: specifies the type of a chart
+@short: Required. Specifies the type of a chart
 
-@signature: {'type?: ChartType;'}
+@signature: {'type: ChartType;'}
 
 @example:
 const chart = new dhx.Chart("chart_container", {
@@ -25,5 +25,6 @@ const chart = new dhx.Chart("chart_container", {
 - "donut", "pie", "pie3D"
 - "radar"
 - "treeMap" (from v7.3)
+- "calendarHeatMap" (from v8.0)
 
 [comment]: # (@related: chart/configuration_properties.md#main-properties chart/charts_overview.md)

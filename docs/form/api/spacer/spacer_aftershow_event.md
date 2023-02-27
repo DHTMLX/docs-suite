@@ -8,14 +8,14 @@ description: You can explore the afterShow event of the Spacer control of Form i
 
 @short: fires after a control is shown
 
-@signature: {'afterShow: (value: undefined) => void;'}
-
-@params:
-- `value: undefined` - the current value of the control, null
+@signature: {'afterShow: () => void;'}
 
 @example:
-form.getItem("spacer").events.on("afterShow", function(value) {
-    console.log("afterShow", value);
+form.getItem("spacer").events.on("afterShow", function() {
+    console.log("afterShow");
 });
 
 @descr:
+
+**Change log:**
+- The **value** parameter was removed in v8.0

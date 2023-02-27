@@ -29,6 +29,27 @@ dhx.message({
 
 {{note You will find the list of configuration properties the constructor of the message box may take [in the related article](message/api/api_message_properties.md).}}
 
+### Working with message box
+
+From v8.0, you can close a message box via the [close()](message/api/message_close_method.md) method of the message box API:
+
+~~~html
+<section class="dhx_sample-controls">
+	<button id="show" class="dhx_sample-btn dhx_sample-btn--flat" onclick="show()">show</button>
+	<button id="close" class="dhx_sample-btn dhx_sample-btn--flat" onclick="close()">close</button>
+</section>
+
+<script>
+    let m;
+    function show() {
+        m = dhx.message({ text: "Here is dhtmlxMessage", icon: "dxi-close" });
+    }
+    document.querySelector("#close").addEventListener("click", () => {
+        m?.close()
+    })
+</script>
+~~~
+
 ## Alert box
 
 ![](../assets/message/show_alert.png)
@@ -100,14 +121,15 @@ You can configure a tooltip on its initialization:
 ~~~js
 dhx.tooltip("Tooltip From Right", {
 	node: "fourth", 
-    position: "right"
+    position: "right",
+    margin: 8
 });
 ~~~
 
 **Related Samples:**
 
 - [Message. Tooltip position](https://snippet.dhtmlx.com/4wrrsr67)
-- [Message. Tooltip delay configuration](https://snippet.dhtmlx.com/zts0avym)
+- [Message. Tooltip configuration](https://snippet.dhtmlx.com/zts0avym)
 
 {{note See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).}}
 

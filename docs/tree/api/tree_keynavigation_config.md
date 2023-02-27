@@ -6,7 +6,7 @@ description: You can explore the keyNavigation config of Tree in the documentati
 
 # keyNavigation
 
-@short: enables key navigation in a tree
+@short: Optional. Enables key navigation in a tree
 
 @signature: {'keyNavigation?: boolean;'}
 

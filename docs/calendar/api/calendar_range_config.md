@@ -6,7 +6,7 @@ description: You can explore the range config of Calendar in the documentation o
 
 # range
 
-@short: enables/disables the possibility to select a range of dates on the calendar
+@short: Optional. Enables/disables the possibility to select a range of dates on the calendar
 
 @signature: {'range?: boolean;'}
 

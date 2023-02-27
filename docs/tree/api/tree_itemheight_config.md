@@ -6,7 +6,7 @@ description: You can explore the itemHeight config of Tree in the documentation 
 
 # itemHeight
 
-@short: sets the height of an item
+@short: Optional. Sets the height of an item
 
 @signature: itemHeight?: number | string;
 

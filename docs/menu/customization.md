@@ -25,7 +25,7 @@ after the source files of DHTMLX Menu as follows:
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](menu/data_loading.md#json-format-templates) for menu:
 
 ~~~js
-[
+const dataset = [
 	{ value: "File", 
     	items: [
     		{ value: "New File", icon: "fas fa-file"},
@@ -38,7 +38,7 @@ Then you can use the name of the icon as the value of the **icon** property in t
 			{ value:  "Redo", icon: "fas fa-redo"}						
 		]
 	}
-]
+];
 ~~~
 
 ![](../assets/menu/custom_icons.png)
@@ -52,6 +52,8 @@ Then you can use the name of the icon as the value of the **icon** property in t
 There is a possibility to make changes in the look and feel of a menu. 
 
 ![](../assets/menu/custom_menu.png)
+
+**Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
 
 For this you need to take the following steps:
 
@@ -77,4 +79,31 @@ const menu = new dhx.Menu("menu_container", {
 });
 ~~~
 
-**Related sample**: [Menu. Styling (custom CSS)](https://snippet.dhtmlx.com/kfy2th5n)
+For example:
+
+~~~html
+<style>
+	.custom,.custom--popup-menu {
+		--dhx-background-primary: #3A434A;
+		--dhx-background-secondary: #5a6872;
+		--dhx-background-additional: #5a6872;
+		--dhx-s-toolbar-background: var(--dhx-background-primary);
+
+		--dhx-color-primary: #118d8d;
+		--dhx-color-primary-hover: #49e9e9;
+		--dhx-color-primary-active: #49e9e9;
+
+		--dhx-font-color-primary: #fff;
+		--dhx-font-color-secondary: #fff;
+		--dhx-font-color-additional: #fff;
+	}
+</style>
+
+<script>
+	const menu = new dhx.Menu("menu_container", {
+	    css: "custom",
+	});
+
+	menu.data.parse(dataset);
+</script>
+~~~

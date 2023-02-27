@@ -6,7 +6,7 @@ description: You can explore the padding config of Layout in the documentation o
 
 # padding
 
-@short: defines the distance between a cell and the border of layout
+@short: Optional. Defines the distance between a cell and the border of layout
 
 @signature: {'padding?: number | string;'}
 

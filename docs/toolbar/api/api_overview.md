@@ -20,6 +20,7 @@ description: You can explore the API of Toolbar in the documentation of the DHTM
 | [](toolbar/api/toolbar_isselected_method.md)  | @getshort(toolbar/api/toolbar_isselected_method.md)  |
 | [](toolbar/api/toolbar_paint_method.md)       | @getshort(toolbar/api/toolbar_paint_method.md)       |
 | [](toolbar/api/toolbar_select_method.md)      | @getshort(toolbar/api/toolbar_select_method.md)      |
+| [](toolbar/api/toolbar_setfocus_method.md)    | @getshort(toolbar/api/toolbar_setfocus_method.md)    |
 | [](toolbar/api/toolbar_setstate_method.md)    | @getshort(toolbar/api/toolbar_setstate_method.md)    |
 | [](toolbar/api/toolbar_show_method.md)        | @getshort(toolbar/api/toolbar_show_method.md)        |
 | [](toolbar/api/toolbar_unselect_method.md)    | @getshort(toolbar/api/toolbar_unselect_method.md)    |

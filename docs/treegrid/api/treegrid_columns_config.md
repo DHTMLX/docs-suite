@@ -6,9 +6,9 @@ description: You can explore the columns config of TreeGrid in the documentation
 
 # columns
 
-@short: specifies the configuration of grid columns
+@short: Required. Specifies the configuration of grid columns
 
-@signature: {'columns?: ICol[];'}
+@signature: {'columns: ICol[];'}
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {

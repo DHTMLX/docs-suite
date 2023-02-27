@@ -6,7 +6,7 @@ description: You can explore the inverse config of Slider in the documentation o
 
 # inverse
 
-@short: enables/disables the inverse slider mode
+@short: Optional. Enables/disables the inverse slider mode
 
 @signature: {'inverse?: boolean;'}
 

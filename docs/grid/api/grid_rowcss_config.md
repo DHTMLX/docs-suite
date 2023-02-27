@@ -6,7 +6,7 @@ description: You can explore the rowCss config of Grid in the documentation of t
 
 # rowCss
 
-@short: sets style for a row
+@short: Optional. Sets style for a row
 
 @signature: {'rowCss?: (row: IRow) => string;'}
 

@@ -6,7 +6,7 @@ description: You can explore the noContent config of Tabbar in the documentation
 
 # noContent
 
-@short: defines whether tabs contain any content
+@short: Optional. Defines whether tabs contain any content
 
 @signature: {'noContent?: boolean;'}
 

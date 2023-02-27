@@ -6,7 +6,7 @@ description: You can explore the minWidth config of Window in the documentation 
 
 # minWidth
 
-@short: sets the minimal width of a window
+@short: Optional. Sets the minimal width of a window
 
 @signature: {'minWidth?: number;'}
 

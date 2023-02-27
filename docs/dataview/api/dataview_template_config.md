@@ -6,7 +6,7 @@ description: You can explore the template config of DataView in the documentatio
 
 # template
 
-@short: specifies a template for DataView items
+@short: Optional. Specifies a template for DataView items
 
 @signature: {'template?: (item: any) => string;'}
 

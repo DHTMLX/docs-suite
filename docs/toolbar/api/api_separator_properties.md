@@ -11,8 +11,8 @@ description: You can explore the Separator properties of Toolbar in the document
 ~~~js
 const data = [
 	{
-		type: "separator";
-		id?: string | number;
+		type: "separator",
+		id?: string | number,
     },
 	// more Toolbar controls
 ]

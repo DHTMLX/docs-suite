@@ -13,7 +13,7 @@ description: You can explore the filterChange event of Grid in the documentation
 @params:
 - `value: string` - an entered value
 - `colId: string | number` - the id of a column
-- `filterId: string` - the type of a filter: "inputFilter" or "selectFilter"
+- `filterId: string` - the type of a filter: "inputFilter" | "selectFilter" | "comboFilter"
 
 @example:
 grid.events.on("filterChange", function(value,colId,filterId){
@@ -21,5 +21,9 @@ grid.events.on("filterChange", function(value,colId,filterId){
 });
 
 @descr:
+
+:::info
+The **filterChange** event invokes the [beforeFilter](grid/api/grid_beforefilter_event.md) event
+:::
 
 @changelog: added in v6.3

@@ -6,7 +6,7 @@ description: You can explore the data config of Menu in the documentation of the
 
 # data
 
-@short: specifies an array of data objects to set into Menu
+@short: Optional. Specifies an array of data objects to set into Menu
 
 @signature: {'data?: array;'}
 

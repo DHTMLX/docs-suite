@@ -6,7 +6,7 @@ description: You can explore the multiselection config of List in the documentat
 
 # multiselection
 
-@short: enables selection of multiple List items, sets the mode of multiselection
+@short: Optional. Enables selection of multiple List items, sets the mode of multiselection
 
 @signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 

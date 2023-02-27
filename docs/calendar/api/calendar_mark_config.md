@@ -6,7 +6,7 @@ description: You can explore the mark config of Calendar in the documentation of
 
 # mark
 
-@short: adds a CSS class to specific days
+@short: Optional. Adds a CSS class to specific days
 
 @signature: {'mark?: (a: Date) => string;'}
 

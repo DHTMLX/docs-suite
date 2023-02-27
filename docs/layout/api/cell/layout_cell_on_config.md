@@ -6,7 +6,7 @@ description: You can explore the on config of Layout in the documentation of the
 
 # on
 
-@short: adds handlers to DOM events of a cell
+@short: Optional. Adds handlers to DOM events of a cell
 
 @signature: {'on?: {[key: string]: any; };'}
 

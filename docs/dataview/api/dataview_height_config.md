@@ -6,7 +6,7 @@ description: You can explore the height config of DataView in the documentation 
 
 # height
 
-@short: sets the height of DataView
+@short: Optional. Sets the height of DataView
 
 @signature: {'height?: number | string;'}
 

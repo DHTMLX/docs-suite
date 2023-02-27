@@ -6,7 +6,7 @@ description: You can explore the keyNavigation config of DataView in the documen
 
 # keyNavigation
 
-@short: enables/disables navigation in DataView by arrow keys
+@short: Optional. Enables/disables navigation in DataView by arrow keys
 
 @signature: {'keyNavigation?: boolean | (() => boolean);'}
 

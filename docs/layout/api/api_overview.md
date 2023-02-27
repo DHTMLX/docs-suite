@@ -10,12 +10,14 @@ description: You can explore the API of Layout in the documentation of the DHTML
 
 ### Layout methods
 
-| Name                                       | Description                                       |
-| ------------------------------------------ | ------------------------------------------------- |
-| [](layout/api/layout_destructor_method.md) | @getshort(layout/api/layout_destructor_method.md) |
-| [](layout/api/layout_foreach_method.md)    | @getshort(layout/api/layout_foreach_method.md)    |
-| [](layout/api/layout_getcell_method.md)    | @getshort(layout/api/layout_getcell_method.md)    |
-| [](layout/api/layout_removecell_method.md) | @getshort(layout/api/layout_removecell_method.md) |
+| Name                                         | Description                                         |
+| -------------------------------------------- | --------------------------------------------------- |
+| [](layout/api/layout_destructor_method.md)   | @getshort(layout/api/layout_destructor_method.md)   |
+| [](layout/api/layout_foreach_method.md)      | @getshort(layout/api/layout_foreach_method.md)      |
+| [](layout/api/layout_getcell_method.md)      | @getshort(layout/api/layout_getcell_method.md)      |
+| [](layout/api/layout_progresshide_method.md) | @getshort(layout/api/layout_progresshide_method.md) |
+| [](layout/api/layout_progressshow_method.md) | @getshort(layout/api/layout_progressshow_method.md) |
+| [](layout/api/layout_removecell_method.md)   | @getshort(layout/api/layout_removecell_method.md)   |
 
 ### Layout events
 
@@ -55,12 +57,15 @@ description: You can explore the API of Layout in the documentation of the DHTML
 | [](layout/api/cell/layout_cell_attach_method.md)     | @getshort(layout/api/cell/layout_cell_attach_method.md)     |
 | [](layout/api/cell/layout_cell_attachhtml_method.md) | @getshort(layout/api/cell/layout_cell_attachhtml_method.md) |
 | [](layout/api/cell/layout_cell_collapse_method.md)   | @getshort(layout/api/cell/layout_cell_collapse_method.md)   |
+| [](layout/api/cell/layout_cell_detach_method.md)    | @getshort(layout/api/cell/layout_cell_detach_method.md)     |
 | [](layout/api/cell/layout_cell_expand_method.md)     | @getshort(layout/api/cell/layout_cell_expand_method.md)     |
 | [](layout/api/cell/layout_cell_getparent_method.md)  | @getshort(layout/api/cell/layout_cell_getparent_method.md)  |
 | [](layout/api/cell/layout_cell_getwidget_method.md)  | @getshort(layout/api/cell/layout_cell_getwidget_method.md)  |
 | [](layout/api/cell/layout_cell_hide_method.md)       | @getshort(layout/api/cell/layout_cell_hide_method.md)       |
 | [](layout/api/cell/layout_cell_isvisible_method.md)  | @getshort(layout/api/cell/layout_cell_isvisible_method.md)  |
 | [](layout/api/cell/layout_cell_paint_method.md)      | @getshort(layout/api/cell/layout_cell_paint_method.md)      |
+| [](layout/api/cell/layout_cell_progresshide_method.md)      | @getshort(layout/api/cell/layout_cell_progresshide_method.md)      |
+| [](layout/api/cell/layout_cell_progressshow_method.md)      | @getshort(layout/api/cell/layout_cell_progressshow_method.md)      |
 | [](layout/api/cell/layout_cell_show_method.md)       | @getshort(layout/api/cell/layout_cell_show_method.md)       |
 | [](layout/api/cell/layout_cell_toggle_method.md)     | @getshort(layout/api/cell/layout_cell_toggle_method.md)     |
 
@@ -87,6 +92,7 @@ description: You can explore the API of Layout in the documentation of the DHTML
 | [](layout/api/cell/layout_cell_minwidth_config.md)     | @getshort(layout/api/cell/layout_cell_minwidth_config.md)     |
 | [](layout/api/cell/layout_cell_on_config.md)           | @getshort(layout/api/cell/layout_cell_on_config.md)           |
 | [](layout/api/cell/layout_cell_padding_config.md)      | @getshort(layout/api/cell/layout_cell_padding_config.md)      |
+|[](layout/api/cell/layout_cell_progressdefault_config.md)|@getshort(layout/api/cell/layout_cell_progressdefault_config.md)|
 | [](layout/api/cell/layout_cell_resizable_config.md)    | @getshort(layout/api/cell/layout_cell_resizable_config.md)    |
 | [](layout/api/cell/layout_cell_type_config.md)         | @getshort(layout/api/cell/layout_cell_type_config.md)         |
 | [](layout/api/cell/layout_cell_width_config.md)        | @getshort(layout/api/cell/layout_cell_width_config.md)        |

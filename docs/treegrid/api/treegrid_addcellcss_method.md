@@ -15,16 +15,21 @@ description: You can explore the addCellCss method of TreeGrid in the documentat
 - `colId: string | number` - the id of a column
 - `css: string` - the name of the CSS class
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
     .myCustomClass{
         background:greenyellow;
     }
 </style>
 
-grid.addCellCss("1", "b", "myCustomClass");
-
-@descr:
+<script>
+    ...
+    grid.addCellCss("1", "b", "myCustomClass");
+</script>
+~~~
 
 **Related sample**: [TreeGrid. Add cell CSS](https://snippet.dhtmlx.com/smjecfzp)
 

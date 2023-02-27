@@ -6,7 +6,7 @@ description: You can explore the dragCopy config of DataView in the documentatio
 
 # dragCopy
 
-@short: defines that an item is copied to a target during drag-n-drop
+@short: Optional. Defines that an item is copied to a target during drag-n-drop
 
 @signature: {'dragCopy?: boolean;'}
 

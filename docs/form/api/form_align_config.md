@@ -6,7 +6,7 @@ description: You can explore the align Config of Form in the documentation of th
 
 # align
 
-@short: sets the alignment of controls inside the control group 
+@short: Optional. Sets the alignment of controls inside the control group 
 
 @signature: {'align?: FlexDirection;'}
 
