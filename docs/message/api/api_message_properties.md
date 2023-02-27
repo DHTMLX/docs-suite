@@ -74,6 +74,11 @@ dhx.message({
 });
 ~~~
 
+**Related samples**: 
+
+- [Message. Message Configuration](https://snippet.dhtmlx.com/qfmd877x)
+- [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
+
 ## Alert box
 
 ### Usage
@@ -139,6 +144,11 @@ dhx.alert({
 	htmlEnable: false
 });
 ~~~
+
+**Related samples**: 
+
+- [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
+- [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
 ## Confirm box
 
@@ -207,6 +217,11 @@ dhx.confirm({
 });
 ~~~
 
+**Related samples**: 
+
+- [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
+- [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
+
 ## Tooltip
 
 ### Usage
@@ -248,7 +263,7 @@ The configuration object of a tooltip may take the following parameters:
 		</tr>
         <tr>
 			<td><b>force</b></td>
-			<td>(optional) forces opening of a tooltip</td>
+			<td>(optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored</td>
 		</tr>
         <tr>
 			<td><b>showDelay</b></td>
@@ -275,6 +290,11 @@ dhx.tooltip("Tooltip From Right", {
 	htmlEnable: true
 });
 ~~~
+
+**Related Samples:**
+
+- [Message. Tooltip position](https://snippet.dhtmlx.com/4wrrsr67)
+- [Message. Tooltip configuration](https://snippet.dhtmlx.com/zts0avym)
 
 **Change log:**
 

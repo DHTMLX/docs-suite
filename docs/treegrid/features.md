@@ -51,7 +51,18 @@ In this section you will know how to configure TreeGrid columns on TreeGrid init
 | [Configuring columns](../configuration/#columns)             | Learn how to define initial structure of TreeGrid                                                                      |
 | [Configuring content alignment](../configuration/#alignment) | Learn how to align data in a column ([Example](https://snippet.dhtmlx.com/g38rr3so))                                   |
 | [Frozen columns](../configuration/#frozen-columns)           | Learn how to split treegrid columns into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/46me58ze)) |
+| [Hidden columns](../configuration/#hidden-columns)                                          | Learn how to initialize Grid with hidden columns ([Example](https://snippet.dhtmlx.com/w3yg99la))              |
+| [Sortable columns](../configuration/#sortable-columns)                                          | Learn how to make columns sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))              |
 | [Resizable columns](../configuration/#resizable-columns)              | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/vq3i9maq))                                   |
+
+### How to configure rows
+
+In this section you will know how to configure rows on TreeGrid initialization.
+
+| Topic                                            | Description                                   |
+| ------------------------------------------------ | --------------------------------------------- |
+| [Automatic adding of empty row into Grid](../configuration/#automatic-adding-of-empty-row-into-treegrid) | Learn how to to automatically add an empty row after the last filled row in the treegrid ([Example](https://snippet.dhtmlx.com/rkytig73))|
+| [Frozen rows](../configuration/#frozen-rows)                                          | Learn how to split treegrid rows into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/46me58ze))
 
 ### How to specify formats for TreeGrid data
 

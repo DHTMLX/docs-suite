@@ -1029,6 +1029,8 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Drag-n-drop of multiple rows
 
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 To allow a user to drag-n-drop multiple rows at once, you need to enable [multiselection](#multiple-selection-of-grid-cells) of rows when configuring drag-n-drop. For example:
 
 ~~~js

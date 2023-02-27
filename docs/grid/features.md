@@ -54,7 +54,19 @@ In this section you will know how to configure Grid columns on Grid initializati
 | [Configuring columns](../configuration/#columns) | Learn how to define initial structure of Grid |
 | [Configuring content alignment](../configuration/#alignment) | Learn how to align data in a column ([Example](https://snippet.dhtmlx.com/eyreddku)) |
 | [Frozen columns](../configuration/#frozen-columns)                                          | Learn how to split grid columns into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/hcgl9nth))              |
+| [Hidden columns](../configuration/#hidden-columns)                                          | Learn how to initialize Grid with hidden columns ([Example](https://snippet.dhtmlx.com/lh7ma639))              |
+| [Sortable columns](../configuration/#sortable-columns)                                          | Learn how to make columns sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))              |
 | [Resizable columns](../configuration/#resizable-columns)                                             | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/aeqzuks0))                                            |
+
+### How to configure rows
+
+In this section you will know how to configure Grid rows on Grid initialization.
+
+| Topic                                            | Description                                   |
+| ------------------------------------------------ | --------------------------------------------- |
+| [Automatic adding of empty row into Grid](../configuration/#automatic-adding-of-empty-row-into-grid) | Learn how to to automatically add an empty row after the last filled row in the grid ([Example](https://snippet.dhtmlx.com/rkytig73))|
+| [Frozen rows](../configuration/#frozen-rows)                                          | Learn how to split grid rows into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/hcgl9nth))              |
+
 
 ### How to specify formats for Grid data
 

@@ -56,7 +56,7 @@ Released on February Day, 2023
 #### Grid
 
 - Now the user can clear date values in the cell
-- The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
+- The ability to configure [drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows) (Pro version)
 - The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
 - Now the sorting icon will also appear after sorting data via the `data.sort()` method
 - The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property

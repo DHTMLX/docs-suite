@@ -129,7 +129,7 @@ dhx.tooltip("Tooltip From Right", {
 **Related Samples:**
 
 - [Message. Tooltip position](https://snippet.dhtmlx.com/4wrrsr67)
-- [Message. Tooltip delay configuration](https://snippet.dhtmlx.com/zts0avym)
+- [Message. Tooltip configuration](https://snippet.dhtmlx.com/zts0avym)
 
 {{note See the list of configuration properties the constructor of the tooltip may take [here](message/api/api_message_properties.md#tooltip).}}
 
