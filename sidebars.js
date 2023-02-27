@@ -4718,6 +4718,7 @@ module.exports = {
         image: '/img/docusaurus.png'
       },
       items: [
+        "common_features/accessibility_support",
         "common_features/custom_scroll",
         "common_features/using_typescript",
         "common_features/touch_support",
