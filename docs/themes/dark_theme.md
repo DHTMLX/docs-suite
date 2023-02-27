@@ -6,7 +6,7 @@ description: You can explore the dark theme of DHTMLX Suite in the documentation
 
 # Dark theme
 
-<iframe src="https://snippet.dhtmlx.com/uz7zrdhy?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+![dark theme](../assets/themes/dark_theme.png)
 
 The ["dark"](themes.md#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 

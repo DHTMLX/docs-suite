@@ -10,12 +10,14 @@ description: You can explore themes of DHTMLX Suite in the documentation of the 
 
 DHTMLX Suite library provides 4 predefined themes:
 
-- [default theme ("light")](themes/default_theme.md) 
-- ["contrast-light"](themes/contrast_light_theme.md)
-- ["dark"](themes/dark_theme.md)
-- ["contrast-dark"](themes/contrast_dark_theme.md)
+- [default theme](themes/default_theme.md) ("light")
+- [dark theme](themes/dark_theme.md) ("dark")
+- [light high contrast theme](themes/contrast_light_theme.md) ("contrast-light")
+- [dark high contrast theme](themes/contrast_dark_theme.md) ("contrast-dark")
 
-You can try them in the example below:
+The Suite themes are developed in accordance with international standards. The high contrast themes will be helpful for users who have vision impairment. 
+
+You can try all themes in the example below:
 
 <iframe src="https://snippet.dhtmlx.com/85fbitnu?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
 
