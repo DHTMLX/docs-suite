@@ -1,7 +1,7 @@
 ---
 sidebar_label: Grid сolumn properties
 title: JavaScript Grid - Grid Column Properties 
-description: You can explore the Grid column properties of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Grid column properties of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Grid column properties

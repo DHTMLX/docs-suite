@@ -1,7 +1,7 @@
 ---
 sidebar_label: List of Menu controls
 title: JavaScript Menu - List of Menu Controls 
-description: You can explore the list of Menu controls of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the list of Menu controls of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # List of Menu controls

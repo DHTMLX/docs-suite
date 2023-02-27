@@ -1,7 +1,7 @@
 ---
 sidebar_label: Light high contrast theme
 title: JavaScript Helpers - Light high contrast theme
-description: You can explore the light high contrast theme of DHTMLX Suite in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the light high contrast theme of DHTMLX Suite in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Light high contrast theme

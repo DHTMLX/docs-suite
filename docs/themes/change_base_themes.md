@@ -1,7 +1,7 @@
 ---
 sidebar_label: Changing Suite themes
 title: JavaScript Helpers - Changing Suite themes
-description: You can explore how to change DHTMLX Suite themes in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to change DHTMLX Suite themes in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Changing Suite themes

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Migration to newer versions
 title: Migration to Newer Versions 
-description: You can explore how to migrate to newer versions in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to migrate to newer versions in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 #  Migration to newer versions

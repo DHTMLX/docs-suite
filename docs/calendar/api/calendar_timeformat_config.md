@@ -1,7 +1,7 @@
 ---
 sidebar_label: timeFormat
 title: JavaScript Calendar - timeFormat Config 
-description: You can explore the timeFormat config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the timeFormat config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # timeFormat

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Code examples with React
 title: Code examples of DHTMLX Widgets with React 
-description: You can explore how to use DHTMLX Widgets with React. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to use DHTMLX Widgets with React. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Code examples of how to use widgets with React

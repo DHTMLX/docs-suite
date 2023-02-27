@@ -1,7 +1,7 @@
 ---
 sidebar_label: How to connect Suite to a backend
 title: How to connect DHTMLX Suite to a backend 
-description: You can explore how to connect DHTMLX Suite to a backend. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to connect DHTMLX Suite to a backend. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # How to connect DHTMLX Suite to a backend

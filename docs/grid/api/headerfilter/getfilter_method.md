@@ -1,7 +1,7 @@
 ---
 sidebar_label: getFilter()
 title: JavaScript Grid - getFilter Method 
-description: You can explore the getFilter method of the header filter of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the getFilter method of the header filter of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # getFilter()

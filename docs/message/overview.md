@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview of Message boxes
 title: JavaScript Message - Overview of Message Boxes 
-description: You can explore the Message Boxes of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Message Boxes of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Overview of Message boxes

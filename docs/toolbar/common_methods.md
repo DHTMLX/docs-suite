@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with Toolbar
 title: JavaScript Toolbar - Work with Toolbar 
-description: You can explore how to work with Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to work with Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Work with Toolbar
