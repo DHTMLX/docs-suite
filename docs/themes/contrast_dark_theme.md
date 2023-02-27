@@ -1,12 +1,12 @@
 ---
-sidebar_label: Contrast dark theme
-title: JavaScript Helpers - Contrast dark theme
-description: You can explore the contrast dark theme of DHTMLX Suite in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+sidebar_label: Dark high contrast theme
+title: JavaScript Helpers - Dark high contrast theme
+description: You can explore the dark high contrast theme of DHTMLX Suite in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
 ---
 
-# Contrast dark theme
+# Dark high contrast theme
 
-<iframe src="https://snippet.dhtmlx.com/ff2kgvgq?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="500"></iframe>
+![dark high contrast theme](../assets/themes/contrastdark_theme.png)
 
 The ["contrast-dark"](themes.md#suite-themes) theme is configured both on the base of the [root CSS variables](themes/default_theme.md) and variables which are listed below:
 
