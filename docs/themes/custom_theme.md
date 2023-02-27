@@ -57,4 +57,4 @@ You can easily configure your own theme via overriding values of the internal CS
 </style>
 ~~~
 
-**Related sample:** [Custom themes](https://snippet.dhtmlx.com/1eh4ks4f?mode=wide)
+**Related sample:** [Suite. Custom themes (skins)](https://snippet.dhtmlx.com/1eh4ks4f?mode=wide)
