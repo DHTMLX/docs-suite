@@ -1,12 +1,12 @@
 ---
 sidebar_label: multiselection
 title: JavaScript Grid - multiselection Config 
-description: You can explore the multiselection config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the multiselection config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # multiselection
 
-@short: enables multi-row/multi-cell selection in Grid
+@short: Optional. Enables multi-row/multi-cell selection in Grid
 
 @signature: {'multiselection?: boolean;'}
 

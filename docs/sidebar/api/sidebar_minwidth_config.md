@@ -1,12 +1,12 @@
 ---
 sidebar_label: minWidth
 title: JavaScript Sidebar - minWidth Config 
-description: You can explore the minWidth config of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the minWidth config of Sidebar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # minWidth
 
-@short: sets the minimal width of a sidebar in the collapsed state
+@short: Optional. Sets the minimal width of a sidebar in the collapsed state
 
 @signature: {'minWidth?: number | string;'}
 

@@ -1,12 +1,12 @@
 ---
 sidebar_label: collapsable
 title: JavaScript Layout - collapsable Config 
-description: You can explore the collapsable config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the collapsable config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # collapsable
 
-@short: defines whether a cell can be collapsed
+@short: Optional. Defines whether a cell can be collapsed
 
 @signature: {'collapsable?: boolean;'}
 

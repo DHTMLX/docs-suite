@@ -1,12 +1,12 @@
 ---
 sidebar_label: dropBehaviour
 title: JavaScript Tree - dropBehaviour Config 
-description: You can explore the dropBehaviour config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the dropBehaviour config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # dropBehaviour
 
-@short: defines the behaviour of a dragged item
+@short: Optional. Defines the behaviour of a dragged item
 
 @signature: {'dropBehaviour?: "child" | "sibling" | "complex";'}
 

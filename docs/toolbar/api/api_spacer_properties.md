@@ -1,7 +1,7 @@
 ---
 sidebar_label: Toolbar Spacer properties
 title: JavaScript Toolbar - Spacer Properties 
-description: You can explore the Spacer properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Spacer properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Toolbar Spacer properties
@@ -11,8 +11,8 @@ description: You can explore the Spacer properties of Toolbar in the documentati
 ~~~js
 const data = [
 	{
-		type: "spacer";
-		id?: string | number;
+		type: "spacer",
+		id?: string | number,
     },
 	// more Toolbar controls
 ]

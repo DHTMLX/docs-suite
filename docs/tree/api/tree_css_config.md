@@ -1,25 +1,35 @@
 ---
 sidebar_label: css
 title: JavaScript Tree - css Config 
-description: You can explore the css config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the css config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # css
 
-@short: adds a CSS class(es) to the component
+@short: Optional. Adds a CSS class(es) to the component
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-	.bg-gray {
-		background: #efefef;
+    .custom {
+        --dhx-font-weight-regular: 500;
+        --dhx-font-color-primary: #0ab169;
+    }
+	.custom .dhx_tree-folder  {
+        --dhx-font-color-primary: #0288d1;
 	}
 </style>
 
-const tree = new dhx.Tree("tree_container", {css: "bg-gray"});
-
-@descr:
+<script>
+    const tree = new dhx.Tree("tree_container", {
+        css: "custom"
+    });
+</script>
+~~~
 
 **Related samples**:
 - [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
@@ -33,4 +43,6 @@ const tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
-[comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/setting_tree_appearance.md#styling)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

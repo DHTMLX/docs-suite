@@ -1,12 +1,12 @@
 ---
 sidebar_label: headerHeight
 title: JavaScript Layout - headerHeight Config 
-description: You can explore the headerHeight config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the headerHeight config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # headerHeight
 
-@short: sets the height of the header of a Layout cell
+@short: Optional. Sets the height of the header of a Layout cell
 
 @signature: {'headerHeight?: number;'}
 

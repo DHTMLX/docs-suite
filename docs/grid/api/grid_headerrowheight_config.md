@@ -1,12 +1,12 @@
 ---
 sidebar_label: headerRowHeight
 title: JavaScript Grid - headerRowHeight Config 
-description: You can explore the headerRowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the headerRowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # headerRowHeight
 
-@short: sets the height of rows in the header
+@short: Optional. Sets the height of rows in the header
 
 @signature: {'headerRowHeight?: number;'}
 

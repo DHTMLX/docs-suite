@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeShow
 title: JavaScript Form - beforeShow Button Event 
-description: You can explore the beforeShow event of the Button control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the beforeShow event of the Button control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # beforeShow
@@ -14,7 +14,7 @@ description: You can explore the beforeShow event of the Button control of Form 
 - `text: string` - the current text label of the control
 
 @returns:
-Return `true` to prevent a control from being shown; otherwise - `true`.
+Return `false` to prevent a control from being shown; otherwise - `true`.
 
 @example:
 form.getItem("button").events.on("beforeShow", function(text) {

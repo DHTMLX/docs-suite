@@ -1,12 +1,12 @@
 ---
 sidebar_label: hidden
 title: JavaScript Form - hidden Config 
-description: You can explore the hidden Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the hidden Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # hidden
 
-@short: defines whether a form is hidden
+@short: Optional. Defines whether a form is hidden
 
 @signature: {'hidden?: boolean;'}
 

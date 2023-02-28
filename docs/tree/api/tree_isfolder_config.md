@@ -1,12 +1,12 @@
 ---
 sidebar_label: isFolder
 title: JavaScript Tree - isFolder Config 
-description: You can explore the isFolder config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the isFolder config of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # isFolder
 
-@short: defines whether an item should be rendered as a folder
+@short: Optional. Defines whether an item should be rendered as a folder
 
 @signature: {'isFolder?: (obj: any) => boolean;'}
 

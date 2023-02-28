@@ -1,12 +1,12 @@
 ---
 sidebar_label: sortable
 title: JavaScript TreeGrid - sortable Config 
-description: You can explore the sortable config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the sortable config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # sortable
 
-@short: defines whether sorting on clicking headers of columns is enabled
+@short: Optional. Defines whether sorting on clicking headers of columns is enabled
 
 @signature: {'sortable?: boolean;'}
 
@@ -27,4 +27,4 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @changelog: added in v6.4
 
-[comment]: # (@related: treegrid/configuration.md#sorting-columns)
+[comment]: # (@related: treegrid/configuration.md#sortable-columns)

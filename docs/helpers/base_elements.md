@@ -1,7 +1,7 @@
 ---
 sidebar_label: CSS classes of base elements
 title: JavaScript Helpers - CSS Classes of Base Elements 
-description: You can explore the CSS classes of base elements in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the CSS classes of base elements in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # CSS classes of base elements

@@ -1,7 +1,7 @@
 ---
 sidebar_label: editEnd()
 title: JavaScript TreeGrid - editEnd Method 
-description: You can explore the editEnd method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the editEnd method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # editEnd()
@@ -20,7 +20,7 @@ treegrid.editEnd(true); // the edited data won't be saved
 
 @descr:
 
-The method works with [any type of cell editors](treegrid/configuration.md#setting-type-of-column-editor), except for **checkbox**. 
+The method works with [any type of cell editors](treegrid/configuration.md#types-of-column-editor), except for **checkbox**. 
 
 @changelog: added in v6.3
 

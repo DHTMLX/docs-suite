@@ -1,12 +1,12 @@
 ---
 sidebar_label: listHeight
 title: JavaScript Combo Box - listHeight Config 
-description: You can explore the listHeight config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the listHeight config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # listHeight
 
-@short: sets the height of the list of options
+@short: Optional. Sets the height of the list of options
 
 @signature: {'listHeight?: number | string;'}
 

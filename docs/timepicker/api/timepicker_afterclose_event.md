@@ -1,7 +1,7 @@
 ---
 sidebar_label: afterClose
 title: JavaScript Timepicker - afterClose Event 
-description: You can explore the afterClose event of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the afterClose event of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # afterClose
@@ -31,7 +31,7 @@ The type of the value parameter depends on the applied [valueFormat](timepicker/
 
 @changelog:
 
-- added in v6.4
-- The **value** parameter is added in v7.0
+- The **value** parameter was added in v7.0
+- The event was added in v6.4
 
 [comment]: # (@relatedapi: timepicker/api/timepicker_valueformat_config.md timepicker/api/timepicker_timeformat_config.md)

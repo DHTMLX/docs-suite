@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Layout - Customization 
-description: You can explore the customization of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -10,7 +10,9 @@ description: You can explore the customization of Layout in the documentation of
 
 There is a possibility to make changes in the look and feel of a layout by styling its cells. 
 
-![](../assets/layout/custom_css.png)
+![Styling cells](../assets/layout/custom_css.png)
+
+**Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 
 For this you need to take the following steps:
 
@@ -43,27 +45,49 @@ const layout = new dhx.Layout("layout_container",{
 
 For example:
 
-~~~js
+~~~html
 <style>
+	.layout {
+		color: #fff;
+		--dhx-background-secondary: #7a7a7a;
+		--dhx-border-color: #bababa;
+		--dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
+	}
+
+	.layout-rightbar {
+		--dhx-background-primary: #e99949;
+	}
+	.layout-content {
+		--dhx-background-primary: #099f8e;
+	}
+	.layout-sidebar {
+		--dhx-background-primary: #e949ac;
+	}
 	.layout-header {
-		background: #0288d1;
-        color: #fff;
-        font-size: 24px;
-        font-weight: 800;
+		--dhx-background-primary: #3A434A;
+	}
+	
+	.dhx_layout-cell-inner_html {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 </style>
 
-const layout = new dhx.Layout("layout_container", {
-	rows: [
-    	{
-        	id: "toolbar",
-        	html: "Header",
-        	css: "dhx_layout-cell--border_bottom layout-header",
-        	gravity: false,
-        	height: "60px"
-		}
-	]
-});
+<script>
+	const layout = new dhx.Layout("layout_container", {
+		type: "space",
+    	css: "layout",
+		rows: [
+	    	{
+	            id: "toolbar",
+	            html: "Header",
+	            css: "layout-header",
+	            height: "60px"
+	        },
+			// more objects
+		]
+	});
+</script>
 ~~~
-
-**Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)

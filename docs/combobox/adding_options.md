@@ -1,7 +1,7 @@
 ---
 sidebar_label: Data loading 
 title: JavaScript Combo Box - Data Loading 
-description: You can explore the data loading of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the data loading of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Data loading

@@ -1,12 +1,12 @@
 ---
 sidebar_label: template
 title: JavaScript DataView - template Config 
-description: You can explore the template config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the template config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # template
 
-@short: specifies a template for DataView items
+@short: Optional. Specifies a template for DataView items
 
 @signature: {'template?: (item: any) => string;'}
 

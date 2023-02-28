@@ -1,12 +1,12 @@
 ---
 sidebar_label: tooltip
 title: JavaScript TreeGrid - tooltip Config 
-description: You can explore the tooltip config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the tooltip config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # tooltip
 
-@short: enables a tooltip on hovering over the content of a column
+@short: Optional. Enables a tooltip on hovering over the content of a column
 
 @signature: {'tooltip?: boolean;'}
 

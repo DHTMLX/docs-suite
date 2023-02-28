@@ -1,12 +1,12 @@
 ---
 sidebar_label: palette
 title: JavaScript Colorpicker - palette Config 
-description: You can explore the palette config of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the palette config of Colorpicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # palette
 
-@short: contains arrays of colors you want to show in a colorpicker
+@short: Optional. Contains arrays of colors you want to show in a colorpicker
 
 @signature: {'palette?: string[][];'}
 

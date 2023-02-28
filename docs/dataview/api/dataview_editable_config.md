@@ -1,12 +1,12 @@
 ---
 sidebar_label: editable
 title: JavaScript DataView - editable Config 
-description: You can explore the editable config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the editable config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # editable
 
-@short: enables editing in DataView
+@short: Optional. Enables editing in DataView
 
 @signature: {'editable?: boolean;'}
 

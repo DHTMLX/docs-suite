@@ -1,12 +1,12 @@
 ---
 sidebar_label: data
 title: JavaScript List - data Config 
-description: You can explore the data config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the data config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # data
 
-@short: specifies an array of data objects to set into the list
+@short: Optional. Specifies an array of data objects to set into the list
 
 @signature: {'data: array;'}
 

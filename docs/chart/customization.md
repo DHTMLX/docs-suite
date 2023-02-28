@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Chart - Customization 
-description: You can explore the customization of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -42,44 +42,41 @@ For example:
 
 ~~~html
 <style>
-    .custom-class .dhx_chart-graph_area {
-        fill:#444;
+    .custom {
+        --dhx-background-primary: #444;
+        --dhx-font-color-secondary: #fff;
     }
-    .custom-class .grid-line {
-        stroke: white;
-        stroke-width: 0.5;
-    }
-    .custom-class .chart.bar {
-        fill: orange;
-    }
+	.custom .chart.bar {
+		fill: orange;
+	}
 </style>
-~~~
 
-~~~js
-const chart = new dhx.Chart("chart_container", {
-    type: "bar",
-    css: "custom-class dhx_widget--bg_white dhx_widget--bordered",
-    scales: {
-        "top": {
-            size: 100
+<script>
+    const chart = new dhx.Chart("chart_container", {
+        type: "bar",
+        css: "custom dhx_widget--bordered",
+        scales: {
+            "top": {
+                size: 100
+            },
+            "bottom" : {
+                text: "month", size: 100
+            },
+            "left" : {
+                size: 100, maxTicks: 10, max: 100, min: 0
+            },
+            "right": {
+                size: 100
+            }
         },
-        "bottom" : {
-            text: "month", size: 100
-        },
-        "left" : {
-            size: 100, maxTicks: 10, max: 100, min: 0
-        },
-        "right": {
-            size: 100
-        }
-    },
-    series: [
-        {
-            id: "A", value: "company C", color: "#5E83BA",
-            pointType: "circle", fill: "#5E83BA", size: 35
-        }
-    ]
-});
+        series: [
+            {
+                id: "A", value: "company C", color: "#5E83BA",
+                pointType: "circle", fill: "#5E83BA", size: 35
+            }
+        ]
+    });
+</script>
 ~~~
 
 ## Adding template to scale labels

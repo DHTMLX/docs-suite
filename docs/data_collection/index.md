@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview
 title: JavaScript DataCollection - DataCollection Overview 
-description: You can have an overview of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can have an overview of DataCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # DataCollection overview
@@ -53,3 +53,24 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_load_event.md)           | @getshort(api/datacollection_load_event.md)           |
 | [](api/datacollection_loaderror_event.md)      | @getshort(api/datacollection_loaderror_event.md)      |
 | [](api/datacollection_removeall_event.md)      | @getshort(api/datacollection_removeall_event.md)      |
+
+:::info Ways of applying events
+
+To call the event of DataCollection, you may use either of the two syntaxes:
+
+- common syntax (via the **data** object of the component)
+
+~~~js
+chart.data.events.on("afterAdd", function(newItem){
+    console.log("A new item is added");
+});
+~~~
+
+- or short syntax (right through the component)
+
+~~~js
+chart.events.on("afterAdd", function(newItem){
+    console.log("A new item is added");
+});
+~~~
+:::

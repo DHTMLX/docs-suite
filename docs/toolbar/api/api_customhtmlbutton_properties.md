@@ -1,7 +1,7 @@
 ---
 sidebar_label: Toolbar custom HTML properties
 title: JavaScript Toolbar - Custom HTML Properties 
-description: You can explore the Custom HTML properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Custom HTML properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Toolbar Custom HTML properties
@@ -11,12 +11,12 @@ description: You can explore the Custom HTML properties of Toolbar in the docume
 ~~~js
 const data = [
 	{
-		type: "customHTML";
-		id?: string | number;
-		parent?: string | number;
-		html?: string;
-		css?: string | string[];
-		hidden?: boolean;
+		type: "customHTML",
+		id?: string | number,
+		parent?: string,
+		css?: string | string[],
+		hidden?: boolean,
+		html?: string,
 	},
 	// more Toolbar controls
 ]
@@ -39,16 +39,16 @@ const data = [
 			<td>(optional) the parent of the item</td>
 		</tr>
 		<tr>
-			<td><b>html</b></td>
-			<td>(optional) a string with HTML that should be inserted into the item</td>
-		</tr>
-		<tr>
 			<td><b>css</b></td>
 			<td>(optional) adds style classes</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
 			<td>(optional) defines whether an item is hidden</td>
+		</tr>
+		<tr>
+			<td><b>html</b></td>
+			<td>(optional) a string with HTML that should be inserted into the item</td>
 		</tr>
     </tbody>
 </table>

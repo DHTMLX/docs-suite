@@ -1,12 +1,12 @@
 ---
 sidebar_label: width
 title: JavaScript Layout - width Config 
-description: You can explore the width config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the width config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # width
 
-@short: sets the width of a cell
+@short: Optional. Sets the width of a cell
 
 @signature: {'width?: number | string;'}
 

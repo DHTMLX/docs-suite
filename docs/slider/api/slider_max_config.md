@@ -1,12 +1,12 @@
 ---
 sidebar_label: max
 title: JavaScript Slider - max Config 
-description: You can explore the max config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the max config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # max
 
-@short: the maximal value of slider
+@short: Optional. The maximal value of slider
 
 @signature: {'max: number;'}
 

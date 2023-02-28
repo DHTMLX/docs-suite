@@ -1,12 +1,12 @@
 ---
 sidebar_label: value
 title: JavaScript Calendar - value Config 
-description: You can explore the value config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the value config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # value
 
-@short: selects the day (adds a round blue marker)
+@short: Optional. Selects the day (adds a round blue marker)
 
 @signature: {'value?: Date | Date[] | string | string[];'}
 

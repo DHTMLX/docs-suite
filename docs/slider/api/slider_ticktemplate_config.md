@@ -1,12 +1,12 @@
 ---
 sidebar_label: tickTemplate
 title: JavaScript Slider - tickTemplate Config 
-description: You can explore the tickTemplate config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the tickTemplate config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # tickTemplate
 
-@short: sets a template for rendering values on the scale
+@short: Optional. Sets a template for rendering values on the scale
 
 @signature: {'tickTemplate?: (position: number) => string;'}
 

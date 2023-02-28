@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview of Chart types 
 title: JavaScript Chart - Overview of Chart Types 
-description: You can have an overview of various Chart types in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can have an overview of various Chart types in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Overview of Chart types
@@ -20,11 +20,12 @@ All in all there are 11 types of chart, in the list below they are combined into
     - [Area chart](#area-chart)
     - [SplineArea chart](#splinearea-chart)
   - [Pie, Pie 3D and Donut chart](#pie-pie-3d-and-donut-chart)
-    - [Pie and Pie 3D Chart](#pie-and-pie-3d-chart)
-    - [Donut Chart](#donut-chart)
-  - [Radar Chart](#radar-chart)
-  - [Scatter Chart](#scatter-chart)
-  - [Treemap Chart](#treemap-chart)
+    - [Pie and Pie 3D chart](#pie-and-pie-3d-chart)
+    - [Donut chart](#donut-chart)
+  - [Radar chart](#radar-chart)
+  - [Scatter chart](#scatter-chart)
+  - [Treemap chart](#treemap-chart)
+  - [Calendar heatmap chart](#calendar-heatmap-chart)
 
 ## Line and Spline chart
 
@@ -37,11 +38,15 @@ how the number of staff has increased over several years. Choose this variant wh
 
 **Related sample**: [Chart. Line chart initialization](https://snippet.dhtmlx.com/t881qcim)
 
+**Related article:** [Line and Spline chart configuration](chart/configuration_properties.md#line-and-spline-chart)
+
 ### Spline chart
 
 ![Spline chart](../assets/chart/spline_overview.png)
 
 **Related sample**: [Chart. Spline chart initialization](https://snippet.dhtmlx.com/2wvmdm0y)
+
+**Related article:** [Line and Spline chart configuration](chart/configuration_properties.md#line-and-spline-chart)
 
 ## Bar and X-Bar chart
 
@@ -53,11 +58,15 @@ The same as Line chart it displays data for certain periods. It greatly suits yo
 
 **Related sample**: [Chart. Bar chart initialization](https://snippet.dhtmlx.com/id9nbujd)
 
+**Related article:** [Bar and X-Bar chart configuration](chart/configuration_properties.md#bar-and-x-bar-chart)
+
 ### X-Bar chart
 
 ![X-Bar chart](../assets/chart/xbar_overview.png)
 
 **Related sample**: [Chart. X-Bar chart initialization](https://snippet.dhtmlx.com/qz80yw84)
+
+**Related article:** [Bar and X-Bar chart configuration](chart/configuration_properties.md#bar-and-x-bar-chart)
 
 ## Area and SplineArea chart
 
@@ -69,17 +78,21 @@ Area chart is based on the Line chart. The difference is that areas below lines 
 
 **Related sample**: [Chart. Area chart initialization](https://snippet.dhtmlx.com/nv6t6lvm)
 
+**Related article:** [Area and SplineArea chart configuration](chart/configuration_properties.md#area-and-splinearea-chart)
+
 ### SplineArea chart
 
 ![SplineArea chart](../assets/chart/splinearea_overview.png)
 
 **Related sample**: [Chart. Spline Area chart initialization](https://snippet.dhtmlx.com/bo82km4n)
 
+**Related article:** [Area and SplineArea chart configuration](chart/configuration_properties.md#area-and-splinearea-chart)
+
 ## Pie, Pie 3D and Donut chart
 
 Pie chart and its variations are the best choice when you deal with proportions and percentages. It is a circular chart divided into proportional parts that illustrate relations between items in a data set.
 
-### Pie and Pie 3D Chart
+### Pie and Pie 3D chart
 
 ![Pie and Pie 3D charts](../assets/chart/pie_overview.png)
 
@@ -87,22 +100,28 @@ Pie chart and its variations are the best choice when you deal with proportions 
 
 **Related sample**: [Chart. Pie 3D chart initialization](https://snippet.dhtmlx.com/xfce9pys)
 
-### Donut Chart
+**Related article:** [Pie, Pie 3D and Donut chart configuration](chart/configuration_properties.md#pie-pie-3d-and-donut-chart)
+
+### Donut chart
 
 ![Donut chart](../assets/chart/donut_overview.png)
 
 **Related sample**: [Chart. Donut chart initialization](https://snippet.dhtmlx.com/lobb80ig)
 
-## Radar Chart
+**Related article:** [Pie, Pie 3D and Donut chart configuration](chart/configuration_properties.md#pie-pie-3d-and-donut-chart)
+
+## Radar chart
 
 This one is a two-dimensional chart that allows placing one or several series of values over multiple numerical variables. For example, Radar chart will help you to study how a number of parameters 
 relate to one item (the center point of a chart) and compare their values.
 
-![Donut chart](../assets/chart/radar_overview.png)
+![Radar chart](../assets/chart/radar_overview.png)
 
 **Related sample**: [Chart. Radar chart initialization](https://snippet.dhtmlx.com/6otf4h0t)
 
-## Scatter Chart
+**Related article:** [Radar chart configuration](chart/configuration_properties.md#radar-chart)
+
+## Scatter chart
 
 The peculiarity of Scatter Chart is that it allows exploring relations between two sets of data in order to find out possible dependencies or patterns.
 
@@ -110,7 +129,9 @@ The peculiarity of Scatter Chart is that it allows exploring relations between t
 
 **Related sample**: [Chart. Scatter chart initialization](https://snippet.dhtmlx.com/pkczfmpu)
 
-## Treemap Chart
+**Related article:** [Scatter chart configuration](chart/configuration_properties.md#scatter-chart)
+
+## Treemap chart
 
 A treemap chart presents a hierarchical visualization of data as a set of rectangular tiles and makes it easy to spot patterns. Several tiles can be collected into a group. The sizes of tiles are proportional to the values of the data items they represent.
 
@@ -119,3 +140,28 @@ A treemap chart presents a hierarchical visualization of data as a set of rectan
 **Related sample**: [Chart. Treemap chart initialization](https://snippet.dhtmlx.com/p31wzm0b)
 
 **Related sample**: [Chart. Treemap chart with groups initialization](https://snippet.dhtmlx.com/fmgnlue4)
+
+**Related article:** [Treemap chart configuration](chart/configuration_properties.md#treemap-chart)
+
+## Calendar heatmap chart 
+
+:::tip PRO VERSION ONLY
+The calendar heatmap chart is available only in the PRO version of the DHTMLX Chart (or DHTMLX Suite).
+:::
+
+The calendar heatmap chart is a two dimensional calendar view that uses graduated colors to visualize certain number of events for specific days during a year or other specified period of time. The whole time period in the chart is divided into years and years into months. Each cell in a column corresponds to a day of the week.
+
+The chart helps to display and identify daily patterns or anomalies over the necessary period.
+
+![Calendar heatmap chart](../assets/chart/heatmap_overview.png)
+
+**Related samples:**
+
+- [Chart. Calendar heatmap chart initialization](https://snippet.dhtmlx.com/ptncsadz)
+- [Gantt. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/jodcbkr5)
+- [Event Calendar. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/0n3ta0je)
+- [Scheduler. Integration with Suite Calendar heatmap chart](https://snippet.dhtmlx.com/tlfazogt)
+
+
+**Related article:** [Calendar heatmap chart configuration](chart/configuration_properties.md#calendar-heatmap-chart)
+

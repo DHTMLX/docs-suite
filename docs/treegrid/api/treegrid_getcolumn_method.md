@@ -1,7 +1,7 @@
 ---
 sidebar_label: getColumn()
 title: JavaScript TreeGrid - getColumn Method 
-description: You can explore the getColumn method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the getColumn method of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # getColumn()
@@ -75,7 +75,7 @@ The returned object contains the following set of properties:
 		</tr>
         <tr>
 			<td><b>editorType</b></td>
-			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"</td>
+			<td>(<i>string</i>) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"checkbox"|"datePicker"</td>
 		</tr>
         <tr>
 			<td><b>options</b></td>

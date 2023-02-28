@@ -1,12 +1,12 @@
 ---
 sidebar_label: helpMessage
 title: JavaScript Combo Box - helpMessage Config 
-description: You can explore the helpMessage config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the helpMessage config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # helpMessage
 
-@short: adds an icon with a question mark next to the Combo input
+@short: Optional. Adds an icon with a question mark next to the Combo input
 
 @signature: {'helpMessage?: string;'}
 

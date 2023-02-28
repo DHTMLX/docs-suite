@@ -1,12 +1,12 @@
 ---
 sidebar_label: disabled
 title: JavaScript Tabbar - disabled Config 
-description: You can explore the disabled config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the disabled config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # disabled
 
-@short: makes a tab/tabs disabled
+@short: Optional. Makes a tab/tabs disabled
 
 @signature: {'disabled?: string | string[];'}
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Toolbar Title properties
 title: JavaScript Toolbar - Title Properties 
-description: You can explore the Title properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Title properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Toolbar Title properties
@@ -11,15 +11,17 @@ description: You can explore the Title properties of Toolbar in the documentatio
 ~~~js
 const data = [
 	{
-		type: "title";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
-		html?: string;
-		css?: string | string[];
-		tooltip?: string;
-		hidden?: boolean;
-		disabled?: boolean;
+		type: "title",
+		id?: string | number,
+		parent?: string,
+		value?: string,
+
+		html?: string,
+		tooltip?: string,
+
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
     },
 	// more Toolbar controls
 ]
@@ -49,21 +51,21 @@ const data = [
 			<td><b>html</b></td>
 			<td>(optional) a string with HTML that should be inserted into the title</td>
 		</tr>
-        <tr>
-			<td><b>css</b></td>
-			<td>(optional) adds a custom CSS class</td>
-		</tr>
 		<tr>
 			<td><b>tooltip</b></td>
 			<td>(optional) a tooltip for the control</td>
 		</tr>
         <tr>
-			<td><b>hidden</b></td>
-			<td>(optional) defines whether a control is hidden</td>
+			<td><b>css</b></td>
+			<td>(optional) adds a custom CSS class</td>
 		</tr>
-        <tr>
+		<tr>
 			<td><b>disabled</b></td>
 			<td>(optional) defines whether a control is disabled</td>
+		</tr>
+        <tr>
+			<td><b>hidden</b></td>
+			<td>(optional) defines whether a control is hidden</td>
 		</tr>
     </tbody>
 </table>

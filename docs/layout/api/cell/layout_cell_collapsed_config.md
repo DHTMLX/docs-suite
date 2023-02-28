@@ -1,12 +1,12 @@
 ---
 sidebar_label: collapsed
 title: JavaScript Layout - collapsed Config 
-description: You can explore the collapsed config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the collapsed config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # collapsed
 
-@short: defines whether a cell is collapsed
+@short: Optional. Defines whether a cell is collapsed
 
 @signature: {'collapsed?: boolean;'}
 

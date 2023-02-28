@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeColumnDrag
 title: JavaScript Grid - beforeColumnDrag Event 
-description: You can explore the beforeColumnDrag event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the beforeColumnDrag event of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # beforeColumnDrag
@@ -20,14 +20,20 @@ description: You can explore the beforeColumnDrag event of Grid in the documenta
 Return `false` to prevent dragging a column; otherwise, `true`.
 
 @example:
-grid.events.on("beforeColumnDrag", function(data, events){
-	// your logic here
-    return false;
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "age", header: [{ text: "Med. Age" }], draggable: false },
+		{ width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
+    ],
+    data: dataset,
+    dragItem: "column",
 });
 
-@descr:
+grid.events.on("beforeColumnDrag", ({ start }) => start !== "density");
 
-**Related sample**: [Grid. Columns drag'n'drop](https://snippet.dhtmlx.com/dfdlzpqb)
+@descr:
 
 The data object contains the following parameters:
 
@@ -50,9 +56,9 @@ The data object contains the following parameters:
 
 @changelog:
 
-- added in v6.5
 - Before v7.0, the event took one parameter - the column id. 
 - Starting from v7.0, the event takes two parameters: **data** and **e**.
+- The event was added in v6.5
 
 [comment]: # (@relatedapi:)
 [comment]: # ([](grid/api/grid_dragitem_config.md)

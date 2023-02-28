@@ -1,7 +1,7 @@
 ---
 sidebar_label: Data loading
 title: JavaScript Chart - Data Loading 
-description: You can explore the data loading of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the data loading of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Data loading
@@ -111,6 +111,41 @@ const treeMapData = [
     { id: "Feb", value: 22.12, month: "Feb", parent: "2020" },
     { id: "Mar", value: 53.21, month: "Mar", parent: "2020" },
     // more data
+];
+~~~
+
+- **Calendar heatmap chart**
+
+A data set for Heatmap chart should include the following properties:
+
+<table>
+	<tbody>
+        <tr>
+			<td><b>id</b></td>
+			<td>(<i>string, number</i>) the id of a cell</td>
+		</tr>
+		<tr>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the number value of a cell</td>
+		</tr>
+        <tr>
+			<td><b>key:value</b></td>
+			<td><i>key</i> is the name of the attribute and <i>value</i> is the date of a cell</td>
+		</tr>
+    </tbody>
+</table>
+<br/>
+
+~~~js
+const heatMapData = [
+	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
+	{ id: "101", value: 100, date: new Date(2022, 4, 1) },
+	{ id: "102", value: 10, date: new Date(2022, 4, 4) },
+	{ id: "200", value: 32, date: new Date(2022, 6, 1) },
+	{ id: "201", value: 4, date: new Date(2022, 6, 15) },
+	{ id: "202", value: 35, date: new Date(2022, 7, 21) },
+	{ id: "300", value: 22, date: new Date(2022, 9, 6) },
+	{ id: "501", value: 100, date: new Date(2023, 1, 1) },
 ];
 ~~~
 

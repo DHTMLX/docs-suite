@@ -1,12 +1,12 @@
 ---
 sidebar_label: dragMode
 title: JavaScript Grid - dragMode Config 
-description: You can explore the dragMode config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the dragMode config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # dragMode
 
-@short: enables drag-n-drop in Grid
+@short: Optional. Enables drag-n-drop in Grid
 
 @signature: {'dragMode?: "target" | "source" | "both";'}
 
@@ -39,6 +39,9 @@ Drag-n-drop can work in three modes:
     </tbody>
 </table>
 
+:::info
+Enable [multiselection](grid/configuration.md#multiple-selection-of-grid-cells) of rows to allow a user to drag-n-drop multiple rows at once.
+:::
 
 **Related sample**: [Grid. Drag-n-drop between grids](https://snippet.dhtmlx.com/qx9a86ax)
 

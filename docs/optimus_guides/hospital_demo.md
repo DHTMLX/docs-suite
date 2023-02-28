@@ -1,7 +1,7 @@
 ---
 sidebar_label: Hospital management system demo
 title: Hospital Management Demo with Optimus Framework 
-description: You can explore how to work with Hospital Management Demo using Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to work with Hospital Management Demo using Optimus Framework in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Hospital management system demo

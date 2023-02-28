@@ -1,12 +1,12 @@
 ---
 sidebar_label: newOptions
 title: JavaScript Combo Box - newOptions Config 
-description: You can explore the data config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the data config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # newOptions
 
-@short: allows end users to add new options into the data collection of Combobox
+@short: Optional. Allows end users to add new options into the data collection of Combobox
 
 @signature: {'newOptions?: boolean;'}
 

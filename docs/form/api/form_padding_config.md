@@ -1,12 +1,12 @@
 ---
 sidebar_label: padding
 title: JavaScript Form - padding Config 
-description: You can explore the padding Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the padding Config of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # padding
 
-@short: sets padding for content inside the control group
+@short: Optional. Sets padding for content inside the control group
 
 @signature: {'padding?: string | number;'}
 

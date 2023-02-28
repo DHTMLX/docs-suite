@@ -1,7 +1,7 @@
 ---
 sidebar_label: Features
 title: JavaScript Grid - Features 
-description: You can explore the features of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the features of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Features
@@ -54,7 +54,19 @@ In this section you will know how to configure Grid columns on Grid initializati
 | [Configuring columns](../configuration/#columns) | Learn how to define initial structure of Grid |
 | [Configuring content alignment](../configuration/#alignment) | Learn how to align data in a column ([Example](https://snippet.dhtmlx.com/eyreddku)) |
 | [Frozen columns](../configuration/#frozen-columns)                                          | Learn how to split grid columns into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/hcgl9nth))              |
-| [Resizable columns](../configuration/#resizing)                                             | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/aeqzuks0))                                            |
+| [Hidden columns](../configuration/#hidden-columns)                                          | Learn how to initialize Grid with hidden columns ([Example](https://snippet.dhtmlx.com/lh7ma639))              |
+| [Sortable columns](../configuration/#sortable-columns)                                          | Learn how to make columns sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))              |
+| [Resizable columns](../configuration/#resizable-columns)                                             | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/aeqzuks0))                                            |
+
+### How to configure rows
+
+In this section you will know how to configure Grid rows on Grid initialization.
+
+| Topic                                            | Description                                   |
+| ------------------------------------------------ | --------------------------------------------- |
+| [Automatic adding of empty row into Grid](../configuration/#automatic-adding-of-empty-row-into-grid) | Learn how to to automatically add an empty row after the last filled row in the grid ([Example](https://snippet.dhtmlx.com/rkytig73))|
+| [Frozen rows](../configuration/#frozen-rows)                                          | Learn how to split grid rows into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/hcgl9nth))              |
+
 
 ### How to specify formats for Grid data
 
@@ -105,8 +117,9 @@ In this section you will know how to configure the drag-n-drop functionality for
 
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|[Drag-n-drop inside a grid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the grid ([Example](https://snippet.dhtmlx.com/dfdlzpqb))|
+|[Drag-n-drop inside a grid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the grid|
 |[Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)|  Learn how to configure drag-n-drop between grids ([Example](https://snippet.dhtmlx.com/qx9a86ax))|
+|[Drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)|  Learn how to allow end users to drag-n-drop several rows at once|
 |[Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)|	Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz))|
 
 ## How to configure sizes of Grid and its cells
@@ -179,7 +192,7 @@ In this section you will find the ways of editing data in Grid.
 | Topic                                                                                        | Description                                                                                                        |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Enabling/disabling editing](../configuration/#editing-grid-and-separate-columns)            | Read how to enable/disable editing of the whole Grid or its separate columns                                       |
-| [Editing with different editors](../configuration/#setting-type-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example](https://snippet.dhtmlx.com/w2cdossn)) |
+| [Editing with different editors](../configuration/#types-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example](https://snippet.dhtmlx.com/w2cdossn)) |
 | [Inline editing](https://snippet.dhtmlx.com/7mbs47en)                                        | The example allows you to try out inline editing in Grid                                                           |
 | [Editing data using the right panel](https://snippet.dhtmlx.com/1z3jqrlj)                    | The example shows how to implement editing in Grid via the right panel                                             |
 | [Editing data using a modal window](https://snippet.dhtmlx.com/5tbcflek)                     | The example shows how to implement editing in Grid via the modal window                                            |
@@ -194,7 +207,7 @@ In this section you will find the ways of sorting data in Grid.
 | Topic                                                        | Description                                                                                                 |
 | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | [Sorting data](../usage/#sorting-data)                       | Learn how to sort data in the grid ([Example](https://snippet.dhtmlx.com/81dmbdfd))                         |
-| [Sortable columns](../configuration/#sorting-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
+| [Sortable columns](../configuration/#sortable-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in Grid ([Example](https://snippet.dhtmlx.com/u2vk3ri3)) |
 
 ### How to filter data
@@ -203,7 +216,7 @@ In this section you will find the ways of filtering data in Grid.
 
 | Topic                                                                                          | Description                                                                                                                                                  |
 | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Setting the type of a filter in the header/footer](../configuration/#headerfooter-content)    | Learn how to specify the type of the filter in the header/footer of a Grid column ([Example](https://snippet.dhtmlx.com/4qz8ng3c))                           |
+| [Setting the type of a filter in the header/footer](../configuration/#headerfooter-filters)    | Learn how to specify the type of the filter in the header/footer of a Grid column ([Example](https://snippet.dhtmlx.com/4qz8ng3c))                           |
 | [Filtering data](../usage/#filtering-data)                                                     | Learn how to filter grid data by the specified criteria ([Example 1](https://snippet.dhtmlx.com/g0zpjqi1), [Example 2](https://snippet.dhtmlx.com/12suognm)) |
 | [Customizing filters in the header/footer](../configuration/#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a Grid column ([Example](https://snippet.dhtmlx.com/gcidkxjg))              |
 | [Getting the header filter](../api/grid_getheaderfilter_method/)                                       | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/n8srjle3))                                                     |

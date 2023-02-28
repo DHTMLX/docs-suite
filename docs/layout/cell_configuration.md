@@ -1,7 +1,7 @@
 ---
 sidebar_label: Configuration of a Cell
 title: JavaScript Layout - Configuration of a Cell 
-description: You can explore the configuration of a Cell of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the configuration of a Cell of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Configuration of a Cell
@@ -185,6 +185,34 @@ const layout = new dhx.Layout("layout_container", {
 **Related sample**: [Layout. Collapsable and resizable](https://snippet.dhtmlx.com/f1f49n35)
 
 **Related sample**: [Layout. Accordion](https://snippet.dhtmlx.com/r2e0y6n7)
+
+## Progress bar
+
+You can configure a Layout cell so that it would render a progress bar (in other words, a loading spinner) if there is no any component or HTML content attached to the cell. To do that, enable the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute in the configuration object of the cell:
+
+~~~js {9,14}
+const layout = new dhx.Layout("layout_container", {
+    type: "line",
+    rows: [
+        {
+            id: "one",
+            header: "Header",
+            height: "250px",
+            resizable: true,
+            progressDefault: true
+        },
+        {
+            id: "two",
+            height: "250px",
+            progressDefault: true,
+        },
+    ]
+});
+~~~
+
+Note, as soon as you attach a component or HTML content to the cell, the progress bar will be hidden.
+
+By default, the [progressDefault](layout/api/cell/layout_cell_progressdefault_config.md) attribute is disabled.
 
 ## Resizability
 

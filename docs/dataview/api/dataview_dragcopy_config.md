@@ -1,12 +1,12 @@
 ---
 sidebar_label: dragCopy
 title: JavaScript DataView - dragCopy Config 
-description: You can explore the dragCopy config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the dragCopy config of DataView in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # dragCopy
 
-@short: defines that an item is copied to a target during drag-n-drop
+@short: Optional. Defines that an item is copied to a target during drag-n-drop
 
 @signature: {'dragCopy?: boolean;'}
 

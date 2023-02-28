@@ -1,12 +1,12 @@
 ---
 sidebar_label: weekStart
 title: JavaScript Calendar - weekStart Config 
-description: You can explore the weekStart config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the weekStart config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # weekStart
 
-@short: sets the starting day of the week
+@short: Optional. Sets the starting day of the week
 
 @signature: {'weekStart?: "monday" | "sunday" | "saturday";'}
 

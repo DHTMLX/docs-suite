@@ -1,12 +1,12 @@
 ---
 sidebar_label: selection
 title: JavaScript List - selection Config 
-description: You can explore the selection config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the selection config of List in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # selection
 
-@short: enables selection of List items
+@short: Optional. Enables selection of List items
 
 @signature: {'selection?: boolean;'}
 

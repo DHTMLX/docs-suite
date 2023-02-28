@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: JavaScript Toolbar - API Overview 
-description: You can explore the API of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the API of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Toolbar API overview
@@ -20,6 +20,7 @@ description: You can explore the API of Toolbar in the documentation of the DHTM
 | [](toolbar/api/toolbar_isselected_method.md)  | @getshort(toolbar/api/toolbar_isselected_method.md)  |
 | [](toolbar/api/toolbar_paint_method.md)       | @getshort(toolbar/api/toolbar_paint_method.md)       |
 | [](toolbar/api/toolbar_select_method.md)      | @getshort(toolbar/api/toolbar_select_method.md)      |
+| [](toolbar/api/toolbar_setfocus_method.md)    | @getshort(toolbar/api/toolbar_setfocus_method.md)    |
 | [](toolbar/api/toolbar_setstate_method.md)    | @getshort(toolbar/api/toolbar_setstate_method.md)    |
 | [](toolbar/api/toolbar_show_method.md)        | @getshort(toolbar/api/toolbar_show_method.md)        |
 | [](toolbar/api/toolbar_unselect_method.md)    | @getshort(toolbar/api/toolbar_unselect_method.md)    |

@@ -1,12 +1,12 @@
 ---
 sidebar_label: closable
 title: JavaScript Tabbar - closable Config 
-description: You can explore the closable config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the closable config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # closable
 
-@short: adds close buttons for tabs
+@short: Optional. Adds close buttons for tabs
 
 @signature: {'closable?: boolean | string[];'}
 

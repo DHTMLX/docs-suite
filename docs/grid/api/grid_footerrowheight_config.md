@@ -1,12 +1,12 @@
 ---
 sidebar_label: footerRowHeight
 title: JavaScript Grid - footerRowHeight Config 
-description: You can explore the footerRowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the footerRowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # footerRowHeight
 
-@short: sets the height of rows in the footer
+@short: Optional. Sets the height of rows in the footer
 
 @signature: {'footerRowHeight?: number;'}
 

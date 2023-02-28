@@ -1,7 +1,7 @@
 ---
 sidebar_label: Features
 title: JavaScript Chart - Features 
-description: You can explore the features of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the features of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Features
@@ -35,6 +35,7 @@ In this section you can find out how to initialize different types of Charts, an
 | [Pie 3D chart](../charts_overview/#pie-pie-3d-and-donut-chart)     | Learn how to initialize Pie 3D chart ([Example](https://snippet.dhtmlx.com/xfce9pys))                                                      |
 | [Radar chart](../charts_overview/#radar-chart)                     | Learn how to initialize Radar chart ([Example](https://snippet.dhtmlx.com/6otf4h0t))                                                       |
 | [Treemap chart](../charts_overview/#treemap-chart)                 | Learn how to initialize Treemap chart ([Example 1](https://snippet.dhtmlx.com/p31wzm0b), [Example 2](https://snippet.dhtmlx.com/fmgnlue4)) |
+| [Calendar heatmap chart](../charts_overview/##calendar-heatmap-chart)                 | Learn how to initialize Calendar heatmap chart|
 | [Grid and Chart](https://snippet.dhtmlx.com/gdeqtev4)              | Learn how to bind Chart to Grid                                                                                                            |
 
 ### Loading data into Chart

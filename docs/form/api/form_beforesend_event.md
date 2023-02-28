@@ -1,14 +1,14 @@
 ---
 sidebar_label: beforeSend
 title: JavaScript Form - beforeSend Event 
-description: You can explore the beforeSend event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the beforeSend event of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # beforeSend
 
 @short: fires before a form is sent to the server
 
-@signature: {'beforeSend: () => boolean;'}
+@signature: {'beforeSend: () => boolean | void;'}
 
 @returns:
 Return `true/false` to allow/forbid a form sending to the server.

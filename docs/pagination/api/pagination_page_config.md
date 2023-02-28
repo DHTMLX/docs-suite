@@ -1,12 +1,12 @@
 ---
 sidebar_label: page
 title: JavaScript Pagination - page Config 
-description: You can explore the page config of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the page config of Pagination in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # page
 
-@short: optional, the index of the initial page set in the pagination
+@short: Optional. The index of the initial page set in the pagination
 
 @signature: {'page?: number;'}
 

@@ -270,6 +270,21 @@ module.exports = {
                     "chart/api/chart_type_config",
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Export methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Export methods",
+                    keywords: ['Export methods'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "chart/api/export/chart_png_method",
+                    "chart/api/export/chart_pdf_method"
+                  ],
+                },
               ],
             },
             "chart/charts_overview",
@@ -352,6 +367,7 @@ module.exports = {
                   },*/
                   items: [
                     "colorpicker/api/colorpicker_apply_event",
+                    "colorpicker/api/colorpicker_beforechange_event",
                     "colorpicker/api/colorpicker_cancelclick_event",
                     "colorpicker/api/colorpicker_change_event",
                     "colorpicker/api/colorpicker_modechange_event",
@@ -466,6 +482,7 @@ module.exports = {
                   items: [
                     "combobox/api/combobox_afterclose_event",
                     "combobox/api/combobox_afteropen_event",
+                    "combobox/api/combobox_beforechange_event",
                     "combobox/api/combobox_beforeclose_event",
                     "combobox/api/combobox_beforeopen_event",
                     "combobox/api/combobox_blur_event",
@@ -749,6 +766,7 @@ module.exports = {
                       "form/api/form_aftersend_event",
                       "form/api/form_aftershow_event",
                       "form/api/form_aftervalidate_event",
+                      "form/api/form_beforechange_event",
                       "form/api/form_beforechangeproperties_event",
                       "form/api/form_beforehide_event",
                       "form/api/form_beforesend_event",
@@ -930,6 +948,7 @@ module.exports = {
                       "form/api/calendar/calendar_afterhide_event",
                       "form/api/calendar/calendar_aftershow_event",
                       "form/api/calendar/calendar_aftervalidate_event",
+                      "form/api/calendar/calendar_beforechange_event",
                       "form/api/calendar/calendar_beforechangeproperties_event",
                       "form/api/calendar/calendar_beforehide_event",
                       "form/api/calendar/calendar_beforeshow_event",
@@ -1013,6 +1032,7 @@ module.exports = {
                       "form/api/checkbox/checkbox_afterhide_event",
                       "form/api/checkbox/checkbox_aftershow_event",
                       "form/api/checkbox/checkbox_aftervalidate_event",
+                      "form/api/checkbox/checkbox_beforechange_event",
                       "form/api/checkbox/checkbox_beforechangeproperties_event",
                       "form/api/checkbox/checkbox_beforehide_event",
                       "form/api/checkbox/checkbox_beforeshow_event",
@@ -1095,6 +1115,7 @@ module.exports = {
                       "form/api/checkbox_group/checkboxgroup_afterhide_event",
                       "form/api/checkbox_group/checkboxgroup_aftershow_event",
                       "form/api/checkbox_group/checkboxgroup_aftervalidate_event",
+                      "form/api/checkbox_group/checkboxgroup_beforechange_event",
                       "form/api/checkbox_group/checkboxgroup_beforechangeproperties_event",
                       "form/api/checkbox_group/checkboxgroup_beforehide_event",
                       "form/api/checkbox_group/checkboxgroup_beforeshow_event",
@@ -1177,6 +1198,7 @@ module.exports = {
                       "form/api/colorpicker/colorpicker_afterhide_event",
                       "form/api/colorpicker/colorpicker_aftershow_event",
                       "form/api/colorpicker/colorpicker_aftervalidate_event",
+                      "form/api/colorpicker/colorpicker_beforechange_event",
                       "form/api/colorpicker/colorpicker_beforechangeproperties_event",
                       "form/api/colorpicker/colorpicker_beforehide_event",
                       "form/api/colorpicker/colorpicker_beforeshow_event",
@@ -1260,6 +1282,7 @@ module.exports = {
                       "form/api/combo/combo_afterhide_event",
                       "form/api/combo/combo_aftershow_event",
                       "form/api/combo/combo_aftervalidate_event",
+                      "form/api/combo/combo_beforechange_event",
                       "form/api/combo/combo_beforechangeproperties_event",
                       "form/api/combo/combo_beforehide_event",
                       "form/api/combo/combo_beforeshow_event",
@@ -1412,6 +1435,7 @@ module.exports = {
                       "form/api/input/input_afterhide_event",
                       "form/api/input/input_aftershow_event",
                       "form/api/input/input_aftervalidate_event",
+                      "form/api/input/input_beforechange_event",
                       "form/api/input/input_beforechangeproperties_event",
                       "form/api/input/input_beforehide_event",
                       "form/api/input/input_beforeshow_event",
@@ -1494,6 +1518,7 @@ module.exports = {
                       "form/api/radiogroup/radiogroup_afterhide_event",
                       "form/api/radiogroup/radiogroup_aftershow_event",
                       "form/api/radiogroup/radiogroup_aftervalidate_event",
+                      "form/api/radiogroup/radiogroup_beforechange_event",
                       "form/api/radiogroup/radiogroup_beforechangeproperties_event",
                       "form/api/radiogroup/radiogroup_beforehide_event",
                       "form/api/radiogroup/radiogroup_beforeshow_event",
@@ -1577,6 +1602,8 @@ module.exports = {
                       "form/api/select/select_afterhide_event",
                       "form/api/select/select_aftershow_event",
                       "form/api/select/select_aftervalidate_event",
+                      "form/api/select/select_beforechange_event",
+                      "form/api/select/select_beforechangeoptions_event",
                       "form/api/select/select_beforechangeproperties_event",
                       "form/api/select/select_beforehide_event",
                       "form/api/select/select_beforeshow_event",
@@ -1655,12 +1682,16 @@ module.exports = {
                       id: "form/api/overview/simplevault/events_overview"
                     },*/
                     items: [
+                      "form/api/simplevault/simplevault_afteradd_event",
                       "form/api/simplevault/simplevault_afterchangeproperties_event",
                       "form/api/simplevault/simplevault_afterhide_event",
+                      "form/api/simplevault/simplevault_afterremove_event",
                       "form/api/simplevault/simplevault_aftershow_event",
                       "form/api/simplevault/simplevault_aftervalidate_event",
+                      "form/api/simplevault/simplevault_beforeadd_event",
                       "form/api/simplevault/simplevault_beforechangeproperties_event",
                       "form/api/simplevault/simplevault_beforehide_event",
+                      "form/api/simplevault/simplevault_beforeremove_event",
                       "form/api/simplevault/simplevault_beforeshow_event",
                       "form/api/simplevault/simplevault_beforeuploadfile_event",
                       "form/api/simplevault/simplevault_beforevalidate_event",
@@ -1741,6 +1772,7 @@ module.exports = {
                       "form/api/slider/slider_afterchangeproperties_event",
                       "form/api/slider/slider_afterhide_event",
                       "form/api/slider/slider_aftershow_event",
+                      "form/api/slider/slider_beforechange_event",
                       "form/api/slider/slider_beforechangeproperties_event",
                       "form/api/slider/slider_beforehide_event",
                       "form/api/slider/slider_beforeshow_event",
@@ -1960,6 +1992,7 @@ module.exports = {
                       "form/api/textarea/textarea_afterhide_event",
                       "form/api/textarea/textarea_aftershow_event",
                       "form/api/textarea/textarea_aftervalidate_event",
+                      "form/api/textarea/textarea_beforechange_event",
                       "form/api/textarea/textarea_beforechangeproperties_event",
                       "form/api/textarea/textarea_beforehide_event",
                       "form/api/textarea/textarea_beforeshow_event",
@@ -2043,6 +2076,7 @@ module.exports = {
                       "form/api/timepicker/timepicker_afterhide_event",
                       "form/api/timepicker/timepicker_aftershow_event",
                       "form/api/timepicker/timepicker_aftervalidate_event",
+                      "form/api/timepicker/timepicker_beforechange_event",
                       "form/api/timepicker/timepicker_beforechangeproperties_event",
                       "form/api/timepicker/timepicker_beforehide_event",
                       "form/api/timepicker/timepicker_beforeshow_event",
@@ -2150,7 +2184,21 @@ module.exports = {
                     "grid/api/grid_editend_method",
                     "grid/api/grid_getcellrect_method",
                     "grid/api/grid_getcolumn_method",
-                    "grid/api/grid_getheaderfilter_method",
+                    {
+                      type: "category",
+                      label: "getHeaderFilter()",
+                      link: {
+                        type: 'doc',
+                        id: "grid/api/grid_getheaderfilter_method",
+                      },
+                      items: [
+                        "grid/api/headerfilter/blur_method",
+                        "grid/api/headerfilter/clear_method",
+                        "grid/api/headerfilter/focus_method",
+                        "grid/api/headerfilter/getfilter_method",
+                        "grid/api/headerfilter/setvalue_method",
+                      ]
+                    },
                     "grid/api/grid_getscrollstate_method",
                     "grid/api/grid_getsortingstate_method",
                     "grid/api/grid_getspan_method",
@@ -2203,6 +2251,7 @@ module.exports = {
                     "grid/api/grid_beforecolumnshow_event",
                     "grid/api/grid_beforeeditend_event",
                     "grid/api/grid_beforeeditstart_event",
+                    "grid/api/grid_beforefilter_event",
                     "grid/api/grid_beforekeydown_event",
                     "grid/api/grid_beforeresizestart_event",
                     "grid/api/grid_beforerowdrag_event",
@@ -2259,6 +2308,7 @@ module.exports = {
                     "grid/api/grid_autoemptyrow_config",
                     "grid/api/grid_autoheight_config",
                     "grid/api/grid_autowidth_config",
+                    "grid/api/grid_bottomsplit_config",
                     "grid/api/grid_columns_config",
                     "grid/api/grid_css_config",
                     "grid/api/grid_data_config",
@@ -2275,12 +2325,14 @@ module.exports = {
                     "grid/api/grid_leftsplit_config",
                     "grid/api/grid_multiselection_config",
                     "grid/api/grid_resizable_config",
+                    "grid/api/grid_rightsplit_config",
                     "grid/api/grid_rowcss_config",
                     "grid/api/grid_rowheight_config",
                     "grid/api/grid_selection_config",
                     "grid/api/grid_sortable_config",
                     "grid/api/grid_spans_config",
                     "grid/api/grid_tooltip_config",
+                    "grid/api/grid_topsplit_config",
                     "grid/api/grid_width_config",
                   ],
                 },
@@ -2412,6 +2464,8 @@ module.exports = {
                       "layout/api/layout_destructor_method",
                       "layout/api/layout_foreach_method",
                       "layout/api/layout_getcell_method",
+                      "layout/api/layout_progresshide_method",
+                      "layout/api/layout_progressshow_method",
                       "layout/api/layout_removecell_method",
                     ],
                   },
@@ -2498,12 +2552,15 @@ module.exports = {
                       "layout/api/cell/layout_cell_attach_method",
                       "layout/api/cell/layout_cell_attachhtml_method",
                       "layout/api/cell/layout_cell_collapse_method",
+                      "layout/api/cell/layout_cell_detach_method",
                       "layout/api/cell/layout_cell_expand_method",
                       "layout/api/cell/layout_cell_getparent_method",
                       "layout/api/cell/layout_cell_getwidget_method",
                       "layout/api/cell/layout_cell_hide_method",
                       "layout/api/cell/layout_cell_isvisible_method",
                       "layout/api/cell/layout_cell_paint_method",
+                      "layout/api/cell/layout_cell_progresshide_method",
+                      "layout/api/cell/layout_cell_progressshow_method",
                       "layout/api/cell/layout_cell_show_method",
                       "layout/api/cell/layout_cell_toggle_method",
                     ],
@@ -2542,6 +2599,7 @@ module.exports = {
                       "layout/api/cell/layout_cell_minwidth_config",
                       "layout/api/cell/layout_cell_on_config",
                       "layout/api/cell/layout_cell_padding_config",
+                      "layout/api/cell/layout_cell_progressdefault_config",
                       "layout/api/cell/layout_cell_resizable_config",
                       "layout/api/cell/layout_cell_type_config",
                       "layout/api/cell/layout_cell_width_config",
@@ -2815,7 +2873,7 @@ module.exports = {
         },
         // end Menu
 
-        //Message (почему-то нет API)
+        //Message (without API)
         {
           type: "category",
           label: "Message",
@@ -2830,17 +2888,43 @@ module.exports = {
             id: "message/index"
           },
           items: [
-            //"message/index",
+            //"menu/index",
             {
-              /*type: "category",
+              type: "category",
               label: "Message API",
-              link: {*/
-                type: 'doc',
-                id: "message/api/api_message_properties",
-            // },
-              /*items: [
-                "message/api/api_message_properties",
-              ],*/
+              link: {
+                type: 'generated-index',
+                title: "Message API",
+                keywords: ['message API'],
+                image: '/img/docusaurus.png'
+              },
+              items: [
+                //"message/index",
+                {
+                  type: "category",
+                  label: "Message box methods",
+                  link: {
+                    type: 'generated-index',
+                    title: "Message box methods",
+                    keywords: ['message box methods'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "message/api/message_close_method",
+                  ],
+                },
+                {
+                  /*type: "category",
+                  label: "Message API",
+                  link: {*/
+                    type: 'doc',
+                    id: "message/api/api_message_properties",
+                  // },
+                  /*items: [
+                  "message/api/api_message_properties",
+                ],*/
+                }
+              ]
             },
             "message/features",
             "message/overview",
@@ -3331,6 +3415,7 @@ module.exports = {
                     image: '/img/docusaurus.png'
                   },
                   items: [
+                    "slider/api/slider_beforechange_event",
                     "slider/api/slider_blur_event",
                     "slider/api/slider_change_event",
                     "slider/api/slider_focus_event",
@@ -3405,72 +3490,113 @@ module.exports = {
                 id: "tabbar/api/api_overview",
               },
               items: [
-                //"tabbar/api/api_overview",
                 {
                   type: "category",
-                  label: "Tabbar methods",
+                  label: "Common Tabbar API",
+                  collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "Tabbar methods",
-                    keywords: ['tabbar methods'],
+                    title: "Common Tabbar API",
+                    keywords: ['common tabbar api'],
                     image: '/img/docusaurus.png'
                   },
                   items: [
-                    "tabbar/api/tabbar_addtab_method",
-                    "tabbar/api/tabbar_destructor_method",
-                    "tabbar/api/tabbar_disabletab_method",
-                    "tabbar/api/tabbar_enabletab_method",
-                    "tabbar/api/tabbar_getactive_method",
-                    "tabbar/api/tabbar_getcell_method",
-                    "tabbar/api/tabbar_getid_method",
-                    "tabbar/api/tabbar_getwidget_method",
-                    "tabbar/api/tabbar_isdisabled_method",
-                    "tabbar/api/tabbar_paint_method",
-                    "tabbar/api/tabbar_removetab_method",
-                    "tabbar/api/tabbar_setactive_method",
+                    //"tabbar/api/api_overview",
+                    {
+                      type: "category",
+                      label: "Tabbar methods",
+                      link: {
+                        type: 'generated-index',
+                        title: "Tabbar methods",
+                        keywords: ['tabbar methods'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "tabbar/api/tabbar_addtab_method",
+                        "tabbar/api/tabbar_destructor_method",
+                        "tabbar/api/tabbar_disabletab_method",
+                        "tabbar/api/tabbar_enabletab_method",
+                        "tabbar/api/tabbar_getactive_method",
+                        "tabbar/api/tabbar_getcell_method",
+                        "tabbar/api/tabbar_getid_method",
+                        "tabbar/api/tabbar_getwidget_method",
+                        "tabbar/api/tabbar_isdisabled_method",
+                        "tabbar/api/tabbar_paint_method",
+                        "tabbar/api/tabbar_removetab_method",
+                        "tabbar/api/tabbar_setactive_method",
+                      ],
+                    },
+                    {
+                      type: "category",
+                      label: "Tabbar events",
+                      link: {
+                        type: 'generated-index',
+                        title: "Tabbar events",
+                        keywords: ['tabbar events'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "tabbar/api/tabbar_afterclose_event",
+                        "tabbar/api/tabbar_beforechange_event",
+                        "tabbar/api/tabbar_beforeclose_event",
+                        "tabbar/api/tabbar_change_event",
+                      ],
+                    },
+                    {
+                      type: "category",
+                      label: "Tabbar properties",
+                      link: {
+                        type: 'generated-index',
+                        title: "Tabbar properties",
+                        keywords: ['tabbar properties'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "tabbar/api/tabbar_activetab_config",
+                        "tabbar/api/tabbar_closable_config",
+                        "tabbar/api/tabbar_css_config",
+                        "tabbar/api/tabbar_disabled_config",
+                        "tabbar/api/tabbar_mode_config",
+                        "tabbar/api/tabbar_nocontent_config",
+                        "tabbar/api/tabbar_tabalign_config",
+                        "tabbar/api/tabbar_tabautoheight_config",
+                        "tabbar/api/tabbar_tabautowidth_config",
+                        "tabbar/api/tabbar_tabheight_config",
+                        "tabbar/api/tabbar_tabwidth_config",
+                        "tabbar/api/tabbar_views_config",
+                      ],
+                    },
                   ],
                 },
                 {
                   type: "category",
-                  label: "Tabbar events",
+                  label: "Cell API",
+                  collapsed: true,
                   link: {
                     type: 'generated-index',
-                    title: "Tabbar events",
-                    keywords: ['tabbar events'],
+                    title: "Cell API",
+                    keywords: ['cell api'],
                     image: '/img/docusaurus.png'
                   },
-                  items: [
-                    "tabbar/api/tabbar_afterclose_event",
-                    "tabbar/api/tabbar_beforechange_event",
-                    "tabbar/api/tabbar_beforeclose_event",
-                    "tabbar/api/tabbar_change_event",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Tabbar properties",
-                  link: {
-                    type: 'generated-index',
-                    title: "Tabbar properties",
-                    keywords: ['tabbar properties'],
-                    image: '/img/docusaurus.png'
-                  },
-                  items: [
-                    "tabbar/api/tabbar_activetab_config",
-                    "tabbar/api/tabbar_closable_config",
-                    "tabbar/api/tabbar_css_config",
-                    "tabbar/api/tabbar_disabled_config",
-                    "tabbar/api/tabbar_mode_config",
-                    "tabbar/api/tabbar_nocontent_config",
-                    "tabbar/api/tabbar_tabalign_config",
-                    "tabbar/api/tabbar_tabautoheight_config",
-                    "tabbar/api/tabbar_tabautowidth_config",
-                    "tabbar/api/tabbar_tabheight_config",
-                    "tabbar/api/tabbar_tabwidth_config",
-                    "tabbar/api/tabbar_views_config",
-                  ],
-                },
-              ],
+                  items: [{
+                    type: "category",
+                    label: "Tabbar cell methods",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Tabbar cell methods",
+                      keywords: ['tabbar cell methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "tabbar/api/cell/tabbar_cell_attach_method",
+                      "tabbar/api/cell/tabbar_cell_attachhtml_method",
+                      "tabbar/api/cell/tabbar_cell_getparent_method",
+                      "tabbar/api/cell/tabbar_cell_getwidget_method",
+                    ],
+                  }]
+                }
+              ]
             },
             "tabbar/features",
             "tabbar/init",
@@ -3538,6 +3664,7 @@ module.exports = {
                     "timepicker/api/timepicker_afterapply_event",
                     "timepicker/api/timepicker_afterclose_event",
                     "timepicker/api/timepicker_beforeapply_event",
+                    "timepicker/api/timepicker_beforechange_event",
                     "timepicker/api/timepicker_beforeclose_event",
                     "timepicker/api/timepicker_change_event",
                   ],
@@ -3616,6 +3743,7 @@ module.exports = {
                     "toolbar/api/toolbar_isselected_method",
                     "toolbar/api/toolbar_paint_method",
                     "toolbar/api/toolbar_select_method",
+                    "toolbar/api/toolbar_setfocus_method",
                     "toolbar/api/toolbar_setstate_method",
                     "toolbar/api/toolbar_show_method",
                     "toolbar/api/toolbar_unselect_method",
@@ -3879,7 +4007,21 @@ module.exports = {
                     "treegrid/api/treegrid_expandall_method",
                     "treegrid/api/treegrid_getcellrect_method",
                     "treegrid/api/treegrid_getcolumn_method",
-                    "treegrid/api/treegrid_getheaderfilter_method",
+                    {
+                      type: "category",
+                      label: "getHeaderFilter()",
+                      link: {
+                        type: 'doc',
+                        id: "treegrid/api/treegrid_getheaderfilter_method",
+                      },
+                      items: [
+                        "treegrid/api/headerfilter/blur_method",
+                        "treegrid/api/headerfilter/clear_method",
+                        "treegrid/api/headerfilter/focus_method",
+                        "treegrid/api/headerfilter/getfilter_method",
+                        "treegrid/api/headerfilter/setvalue_method",
+                      ]
+                    },
                     "treegrid/api/treegrid_getscrollstate_method",
                     "treegrid/api/treegrid_getsortingstate_method",
                     "treegrid/api/treegrid_getspan_method",
@@ -3933,6 +4075,7 @@ module.exports = {
                     "treegrid/api/treegrid_beforeeditend_event",
                     "treegrid/api/treegrid_beforeeditstart_event",
                     "treegrid/api/treegrid_beforeexpand_event",
+                    "treegrid/api/treegrid_beforefilter_event",
                     "treegrid/api/treegrid_beforeresizestart_event",
                     "treegrid/api/treegrid_beforerowdrag_event",
                     "treegrid/api/treegrid_beforerowdrop_event",
@@ -3985,6 +4128,7 @@ module.exports = {
                     "treegrid/api/treegrid_autoemptyrow_config",
                     "treegrid/api/treegrid_autoheight_config",
                     "treegrid/api/treegrid_autowidth_config",
+                    "treegrid/api/treegrid_bottomsplit_config",
                     "treegrid/api/treegrid_columns_config",
                     "treegrid/api/treegrid_css_config",
                     "treegrid/api/treegrid_data_config",
@@ -4000,6 +4144,7 @@ module.exports = {
                     "treegrid/api/treegrid_htmlenable_config",
                     "treegrid/api/treegrid_leftsplit_config",
                     "treegrid/api/treegrid_resizable_config",
+                    "treegrid/api/treegrid_rightsplit_config",
                     "treegrid/api/treegrid_rootparent_config",
                     "treegrid/api/treegrid_rowcss_config",
                     "treegrid/api/treegrid_rowheight_config",
@@ -4007,6 +4152,7 @@ module.exports = {
                     "treegrid/api/treegrid_sortable_config",
                     "treegrid/api/treegrid_spans_config",
                     "treegrid/api/treegrid_tooltip_config",
+                    "treegrid/api/treegrid_topsplit_config",
                     "treegrid/api/treegrid_width_config",
                   ],
                 },
@@ -4409,6 +4555,36 @@ module.exports = {
       },
       {
         type: "category",
+        label: "Themes",
+        link: {
+          type: 'doc',
+          id: "themes/themes",
+        },
+        items: [
+          "themes/default_theme",
+          "themes/contrast_light_theme",
+          "themes/dark_theme",
+          "themes/contrast_dark_theme",
+          "themes/change_base_themes",
+          "themes/custom_theme",
+          {
+            type: "category",
+            label: "Theme methods",
+            link: {
+              type: 'generated-index',
+              title: "Theme methods",
+              keywords: ['theme methods'],
+              image: '/img/docusaurus.png'
+            },
+            items: [
+              "themes/api/themes_settheme_method",
+            ],
+          },
+          "themes/theme_configurator",
+        ],
+      },
+      {
+        type: "category",
         label: "TreeCollection API",
         link: {
           type: 'doc',
@@ -4468,8 +4644,10 @@ module.exports = {
             },
             items: [
               "tree_collection/api/treecollection_afteradd_event",
+              "tree_collection/api/treecollection_afteritemload_event",
               "tree_collection/api/treecollection_afterremove_event",
               "tree_collection/api/treecollection_beforeadd_event",
+              "tree_collection/api/treecollection_beforeitemload_event",
               "tree_collection/api/treecollection_beforeremove_event",
               "tree_collection/api/treecollection_change_event",
               "tree_collection/api/treecollection_load_event",
@@ -4540,6 +4718,7 @@ module.exports = {
         image: '/img/docusaurus.png'
       },
       items: [
+        "common_features/accessibility_support",
         "common_features/custom_scroll",
         "common_features/using_typescript",
         "common_features/touch_support",

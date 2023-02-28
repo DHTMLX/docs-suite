@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Calendar - Customization 
-description: You can explore the customization of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -18,7 +18,7 @@ For this you need to take the following steps:
 
 - add a new CSS class(es) with desired settings in the &lt;style&gt; section of your HTML page or in your file with styles (don't forget to include your file on the page in this case)
 
-~~~js
+~~~html
 <style>
 	.my_first_class {
 		/*some styles*/
@@ -40,16 +40,18 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 For example:
 
-~~~js
+~~~html
 <style>
-	.bg-grey {
-		background: #efefef;
-	}
+	.custom {
+        --dhx-color-primary: #118d8d;
+    }
 </style>
 
-const calendar = new dhx.Calendar("calendar_container", { 
-	css: "bg-grey dhx_calendar--bordered" 
-});
+<script>
+	const calendar = new dhx.Calendar("calendar_container", { 
+		css: "custom dhx_widget--bordered"
+	});
+</script>
 ~~~
 
 ## Styling selected dates
@@ -60,19 +62,21 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linking-two-calendars). There are system styles you need to change for this purpose:
 
-~~~js
+~~~html
 <style>
-/* system style for selected dates */
-.dhx_calendar-day--selected::before {
-	background-color: #ff5252;
-}
+	/* system style for selected dates */
+	.dhx_calendar-day--selected::before {
+		background-color: #ff5252;
+	}
 
-/* system style for a date range */
-.dhx_calendar-day--in-range:after {
-	background-color: #ffe7e7;
- }
+	/* system style for a date range */
+	.dhx_calendar-day--in-range:after {
+		background-color: #ffe7e7;
+ 	}
 </style>
 
-const calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
-const calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
+<script>
+	const calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
+	const calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
+</script>
 ~~~

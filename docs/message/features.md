@@ -1,7 +1,7 @@
 ---
 sidebar_label: Features
 title: JavaScript Message - Features 
-description: You can explore the features of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the features of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Features
@@ -54,16 +54,24 @@ In this section you will find the examples of how to configure an alert and conf
 
 In this section you can learn how to customize different types of DHTMLX Message.
 
-| Topic                                                                                                                             | Description                                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| [DHTMLX Message customization](../customization/)                                                                                 | Read how to customize DHTMLX Message                                                                    |
-| [Message with HTML content](../api/api_message_properties/)                                                                       | Learn how to display the HTML content in a message box ([Example](https://snippet.dhtmlx.com/1stqqejp)) |                                                     
-| [Message system colors](https://snippet.dhtmlx.com/tfiqt79l) |The example shows how to change the color of a message box           |                                                                                                         |
-| [Styling a message (custom CSS)](https://snippet.dhtmlx.com/7s6p67ht) |The example shows how to apply custom styles to a message box |                                                                                                         |
-| [Styling an alert (custom CSS)](https://snippet.dhtmlx.com/g9tba9xi)| The example shows how to apply custom styles to an alert box    |                                                                                                         |
-| [Styling a confirm (custom CSS)](https://snippet.dhtmlx.com/x0barf98) |The example shows how to apply custom styles to a confirm box |                                                                                                         |
-| [Tooltip in light (white) color](https://snippet.dhtmlx.com/ivec9yxi)                                                             | The example shows how to customize a tooltip                                                            |
-| [List of CSS classes](../../helpers/base_elements/)                                                                               | A set of CSS classes provided by the DHTMLX library                                                     |
+| Topic                                                                 | Description                                                                                             |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| [DHTMLX Message customization](../customization/)                     | Read how to customize DHTMLX Message                                                                    |
+| [Message with HTML content](../api/api_message_properties/)           | Learn how to display the HTML content in a message box ([Example](https://snippet.dhtmlx.com/1stqqejp)) |
+| [Message system colors](https://snippet.dhtmlx.com/tfiqt79l)          | The example shows how to change the color of a message box                                              |                                                                                                         
+| [Styling a message (custom CSS)](https://snippet.dhtmlx.com/7s6p67ht) | The example shows how to apply custom styles to a message box                                           |                                                                                                         
+| [Styling an alert (custom CSS)](https://snippet.dhtmlx.com/g9tba9xi)  | The example shows how to apply custom styles to an alert box                                            |                                                                                                         
+| [Styling a confirm (custom CSS)](https://snippet.dhtmlx.com/x0barf98) | The example shows how to apply custom styles to a confirm box                                           |                                                                                                         
+| [Tooltip in light (white) color](https://snippet.dhtmlx.com/ivec9yxi) | The example shows how to customize a tooltip                                                            |
+| [List of CSS classes](../../helpers/base_elements/)                   | A set of CSS classes provided by the DHTMLX library                                                     |
+
+## How to work with message box
+
+In this section you can learn how to work with a message box via API.
+
+| Topic                                                                        | Description                     |
+| ---------------------------------------------------------------------------- | ------------------------------- |
+| [Closing the message box](message/configuration.md#working-with-message-box) | Read how to close a message box |
 
 ## API reference
 
@@ -71,6 +79,7 @@ In this section you can find out corresponding references of Message API.
 
 | Topic                                                                | Description                                   |
 | -------------------------------------------------------------------- | --------------------------------------------- |
+| [Message box methods](category/message-box-methods.md) | Check the list of methods of a message box |
 | [Message box properties](../api/api_message_properties/#message-box) | Check the list of properties of a message box |
 | [Alert box properties](../api/api_message_properties/#alert-box)     | Check the list of properties of an alert box  |
 | [Confirm box properties](../api/api_message_properties/#confirm-box) | Check the list of properties of a confirm box |

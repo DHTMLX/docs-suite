@@ -1,31 +1,31 @@
 ---
 sidebar_label: css
 title: JavaScript Slider - css Config 
-description: You can explore the css config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the css config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # css
 
-@short: adds style classes for the component
+@short: Optional. Adds style classes for the component
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
+    .custom {
+        --dhx-color-primary: #118d8d;
     }
 </style>
 
-const slider = new dhx.Slider("slider_container", {
-    css:"my_first_class my_second_class"
-});
-
-@descr:
+<script>
+	const slider = new dhx.Slider("slider_container", {
+    	css: "custom"
+	});
+</script>
+~~~
 
 **Related sample**: [Slider. Styling (custom CSS)](https://snippet.dhtmlx.com/ewizud5e)
 
@@ -37,4 +37,6 @@ const slider = new dhx.Slider("slider_container", {
 });
 ~~~
 
-[comment]: # (@related: slider/initializing_slider.md#configuration-properties slider/customization.md)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

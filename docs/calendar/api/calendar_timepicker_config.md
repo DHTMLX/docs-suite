@@ -1,12 +1,12 @@
 ---
 sidebar_label: timePicker
 title: JavaScript Calendar - timePicker Config 
-description: You can explore the timePicker config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the timePicker config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # timePicker
 
-@short: adds a timepicker into the calendar
+@short: Optional. Adds a timepicker into the calendar
 
 @signature: {'timePicker?: boolean;'}
 

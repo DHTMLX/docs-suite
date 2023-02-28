@@ -1,12 +1,12 @@
 ---
 sidebar_label: padding
 title: JavaScript Layout - padding Config 
-description: You can explore the padding config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the padding config of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # padding
 
-@short: defines the distance between a cell and the border of layout
+@short: Optional. Defines the distance between a cell and the border of layout
 
 @signature: {'padding?: number | string;'}
 

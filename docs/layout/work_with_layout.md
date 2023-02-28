@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with Layout
 title: JavaScript Layout - Work with Layout 
-description: You can explore how to work with Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to work with Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Work with Layout
@@ -26,6 +26,8 @@ layout.getCell("header");
 
 ## Attaching a component to a cell
 
+### Attach a component
+
 You can easily attach any DHTMLX component (except for Message, Popup, Window) to a cell of Layout using the [](layout/api/cell/layout_cell_attach_method.md) method of a cell:
 
 ~~~js
@@ -49,7 +51,17 @@ layout.getCell("list").attach(list);
 
 {{note The Message, Popup, Window components can't be attached to the Layout cell because these components can't have the parent container due to their architecture principles.}}
 
+### Detach a component
+
+To detach a component from a Layout cell, use the [detach()](layout/api/cell/layout_cell_detach_method.md) method of a cell:
+
+~~~js
+layout.getCell("list").detach();
+~~~
+
 ## Attaching an HTML content to a cell
+
+### Attach HTML content
 
 You can easily attach some HTML content to a cell of Layout via the [](layout/api/cell/layout_cell_attachhtml_method.md) method of a cell. It takes as a parameter a string with HTML.
 
@@ -59,6 +71,14 @@ const layout = new dhx.Layout("layout_container", {
 });
 const html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);
+~~~
+
+### Detach HTML content
+
+To detach any HTML content from a Layout cell, use the [detach()](layout/api/cell/layout_cell_detach_method.md) method of a cell:
+
+~~~js
+layout.getCell("content").detach();
 ~~~
 
 ## Hiding/showing a cell
@@ -110,3 +130,38 @@ layout.getCell("toolbar").toggle();
 ~~~
 
 **Related sample**: [Layout. Toggle](https://snippet.dhtmlx.com/t38tqk0k)
+
+## Showing/hiding a progress bar
+
+A progress bar is a visual component which informs users that the content is loading or updating. 
+You may show or hide the component via API calls either in the [Layout container](#progress-bar-in-the-layout-container) or in a [separate cell](#progress-bar-in-a-layout-cell).
+
+The progress bar can be also shown by default for cells without any attached component or HTML content. [Check the details](layout/cell_configuration.md#progress-bar).  
+
+### Progress bar in the Layout container
+
+To show the progress bar in the container of a Layout, use the [progressShow()](layout/api/layout_progressshow_method.md) method of Layout:
+
+~~~js
+layout.progressShow();
+~~~
+
+To hide it, use the [progressHide()](layout/api/layout_progresshide_method.md) method:
+
+~~~js
+layout.progressHide();
+~~~
+
+### Progress bar in a Layout cell
+
+To show the progress bar in a separate Layout cell, apply the [progressShow()](layout/api/cell/layout_cell_progressshow_method.md) method of a Layout cell:
+
+~~~js
+layout.getCell("two").progressShow();
+~~~
+
+To hide the component, apply the [progressHide()](layout/api/cell/layout_cell_progresshide_method.md) method of the cell:
+
+~~~js
+layout.getCell("two").progressHide();
+~~~

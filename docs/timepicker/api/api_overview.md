@@ -1,7 +1,7 @@
 ---
 sidebar_label: API overview
 title: JavaScript Timepicker - API Overview 
-description: You can explore the API of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the API of Timepicker in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Timepicker API overview
@@ -23,6 +23,7 @@ description: You can explore the API of Timepicker in the documentation of the D
 | [](timepicker/api/timepicker_afterapply_event.md)     | @getshort(timepicker/api/timepicker_afterapply_event.md)  |
 | [](timepicker/api/timepicker_afterclose_event.md)     | @getshort(timepicker/api/timepicker_afterclose_event.md)  |
 | [](timepicker/api/timepicker_beforeapply_event.md)    | @getshort(timepicker/api/timepicker_beforeapply_event.md) |
+| [](timepicker/api/timepicker_beforechange_event.md)   | @getshort(timepicker/api/timepicker_beforechange_event.md)|
 | [](timepicker/api/timepicker_beforeclose_event.md)    | @getshort(timepicker/api/timepicker_beforeclose_event.md) |
 | [](timepicker/api/timepicker_change_event.md)         | @getshort(timepicker/api/timepicker_change_event.md)      |
 

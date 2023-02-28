@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript TreeGrid - Customization 
-description: You can explore the customization of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -10,7 +10,7 @@ description: You can explore the customization of TreeGrid in the documentation 
 
 There is a possibility to make changes in the look and feel of a treegrid. 
 
-![](../assets/treegrid/custom_style.png)
+![Styling TreeGrid](../assets/treegrid/custom_style.png)
 
 **Related sample**: [TreeGrid. Styling (custom CSS)](https://snippet.dhtmlx.com/cpvir0od)
 
@@ -36,6 +36,66 @@ For this you need to take the following steps:
 const treegrid = new dhx.TreeGrid("treegrid_container", { 
     css:"my-first-class my-second-class"
 });
+~~~
+
+For example:
+
+~~~html
+<style>
+    .custom {
+        --dhx-color-primary: #00c2b8;
+        --dhx-background-primary: #f2f2f2;
+        --dhx-border-color: #fff;
+        --dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
+    }
+</style>
+
+<script>
+	const treeGrid = new dhx.TreeGrid("treegrid_container", {
+    	columns: [
+    	    { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
+    	    { id: "native", type: "string", header: [{ text: "Native name" }] },
+    	    { id: "capital", type: "string", header: [{ text: "Capital" }] },
+    	    { id: "currency", type: "string", header: [{ text: "Currency" }] }
+    	],
+    	data: dataset,
+    	autoWidth: true,
+    	selection: true,
+    	css: "custom"
+	});
+</script>
+~~~
+
+## Styling selection
+
+![Styling selection](../assets/treegrid/styling_selection.png)
+
+**Related sample**: [TreeGrid. Styling selection (custom CSS)](https://snippet.dhtmlx.com/tejgztxd)
+
+Here is an example of how you can style selection in TreeGrid:
+
+~~~html
+<style>
+    .custom {
+        --dhx-color-primary: #ff5252;
+        --dhx-s-grid-selection-background: rgba(255, 198, 198, 1);
+    }
+</style>
+
+<script>
+	const treeGrid = new dhx.TreeGrid("treegrid_container", {
+    	columns: [
+    	    { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
+    	    { id: "native", type: "string", header: [{ text: "Native name" }] },
+    	    { id: "capital", type: "string", header: [{ text: "Capital" }] },
+    	    { id: "currency", type: "string", header: [{ text: "Currency" }] }
+    	],
+    	data: dataset,
+    	selection: true,
+    	autoWidth: true,
+    	css: "custom",
+	});
+</script>
 ~~~
 
 ## Styling header cells
@@ -75,30 +135,30 @@ You can easily set some styling to the text of footer cells by applying some inl
 		text-decoration: underline;
 	}    
 </style>
-~~~
 
-~~~js
-const treegrid = new dhx.TreeGrid("treegrid_container", { 
-	columns: [
-	  	{
-			width: 280, id: "name", header: [{ text: "Book Name" }],
-			footer: [
-				{ text: '<div class="custom_footer">Total</div>' },
-				{ text: '<div class="custom_footer">Minimal value</div>' }
-			]
-		},
-		{
-			width: 160, id: "price", type: "string", 
-			header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
-			footer: [{ content: "sum" }, { content: "min" }]
-		},
-		{ 
-			width: 160, id: "cover", type: "string", 
-			header: [{}, { text: "Cover" }] 
-		}
-	],
-	data: dataset
-});
+<script>
+	const treegrid = new dhx.TreeGrid("treegrid_container", { 
+		columns: [
+		  	{
+				width: 280, id: "name", header: [{ text: "Book Name" }],
+				footer: [
+					{ text: '<div class="custom_footer">Total</div>' },
+					{ text: '<div class="custom_footer">Minimal value</div>' }
+				]
+			},
+			{
+				width: 160, id: "price", type: "string", 
+				header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
+				footer: [{ content: "sum" }, { content: "min" }]
+			},
+			{ 
+				width: 160, id: "cover", type: "string", 
+				header: [{}, { text: "Cover" }] 
+			}
+		],
+		data: dataset
+	});
+</script>
 ~~~
 
 ## Styling rows
@@ -113,37 +173,38 @@ There are two ways to do it:
 
 - via the **rowCss** property in the configuration of TreeGrid. As a value of property set a function that takes the id of a row as a parameter and returns a string with the name of a CSS class.
 
-~~~html
+~~~html {12}
 <style>
 	.my_custom_row {
 		background: coral;
 	}
 </style>
-~~~
 
-~~~js {5}
-const treegrid = new dhx.TreeGrid("treegrid_container", { 
-	columns: [
-		// columns config
-	],
-	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
-	data: dataset
-});
+<script>
+	const treegrid = new dhx.TreeGrid("treegrid_container", { 
+		columns: [
+			// columns config
+		],
+		rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
+		data: dataset
+	});
+</script>
 ~~~
 
 - with the help of the [addRowCss()](treegrid/api/treegrid_addrowcss_method.md) method:
 
-~~~html
+~~~html {10}
 <style>
 	.myCustomClass{
 		background:greenyellow;
 	}
 </style>
-~~~
 
-~~~js {2}
-const rowId = treegrid.data.getId(1);
-treegrid.addRowCss(rowId, "myCustomClass");
+<script>
+	...
+	const rowId = treegrid.data.getId(1);
+	treegrid.addRowCss(rowId, "myCustomClass");
+</script>
 ~~~
 
 **Related sample**: [TreeGrid. Add row CSS](https://snippet.dhtmlx.com/kort67nu)
@@ -195,10 +256,11 @@ It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegr
 		background:greenyellow;
 	}
 </style>
-~~~
 
-~~~js
-treegrid.addCellCss(rowId, "name", "myCustomClass");
+<script>
+	...
+	treegrid.addCellCss(rowId, "name", "myCustomClass");
+</script>
 ~~~
 
 ## Adding custom marks to cells
@@ -232,7 +294,7 @@ You can mark particular cells in a treegrid using the **mark** property of a col
 
 The function should return a string with a cusotm CSS class for your mark.
 
-~~~html
+~~~html {22-24,31}
 <style>
 	.my_custom_mark {
 		background: lightcoral;
@@ -242,34 +304,34 @@ The function should return a string with a cusotm CSS class for your mark.
 		background: #f2f2f2;
 	}
 </style>
-~~~
 
-~~~js {11-13,20}
-const treegrid = new dhx.TreeGrid("treegrid_container", { 
-	columns: [
-		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
-		{
-			width: 160, id: "price", type: "string", 
-			header: [
-				{ text: "Terms and conditions", colspan: 2 }, 
-				{ text: "Price" }
-			],
-			// marks specified cells in a column
-			mark: function (cell, data, row, col) {
-				return cell > 10 ? "my_custom_mark" : "" 
-			}
-		},
-		{ width: 160, id: "cover", type: "string", 
-			header: [{}, { text: "Cover" }] },
-		{ width: 160, id: "ships", type: "string", 
-			header: [{ text: "Ships in" }],
-			// marks all cells in a column
-			mark: function (cell, data) { return "total_col"; }
-		},
-		// more options			
-	],
-	data: dataset
-});
+<script>
+	const treegrid = new dhx.TreeGrid("treegrid_container", { 
+		columns: [
+			{ width: 280, id: "name", header: [{ text: "Book Name" }] },
+			{
+				width: 160, id: "price", type: "string", 
+				header: [
+					{ text: "Terms and conditions", colspan: 2 }, 
+					{ text: "Price" }
+				],
+				// marks specified cells in a column
+				mark: function (cell, data, row, col) {
+					return cell > 10 ? "my_custom_mark" : "" 
+				}
+			},
+			{ width: 160, id: "cover", type: "string", 
+				header: [{}, { text: "Cover" }] },
+			{ width: 160, id: "ships", type: "string", 
+				header: [{ text: "Ships in" }],
+				// marks all cells in a column
+				mark: function (cell, data) { return "total_col"; }
+			},
+			// more options			
+		],
+		data: dataset
+	});
+</script>
 ~~~
 
 It is also possible to highlight cells with minimum and (or) maximum values in a grid using the **mark** property of a column configuration. The property is an object which takes two optional parameters:
@@ -288,7 +350,7 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 </table>
 <br/>
 
-~~~html
+~~~html {23-26}
 <style>
 	.max_cell {
     	background: #f44336;
@@ -300,27 +362,27 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
     	color: #FFF
 	}
 </style>
-~~~
 
-~~~js {10-13}
-const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		{ width: 280, id: "name", header: [{ text: "Book Name" }] },
-		{
-			width: 160, id: "price", type: "string", 
-			header: [
-				{ text: "Terms and conditions", colspan: 2 },
-				{ text: "Price" }
-			],
-			mark: {
-				min: "min_cell",
-				max: "max_cell"
-			}
-		},
-		// more options
-	],
-	data: dataset
-});
+<script>
+	const treegrid = new dhx.TreeGrid("treegrid_container", {
+		columns: [
+			{ width: 280, id: "name", header: [{ text: "Book Name" }] },
+			{
+				width: 160, id: "price", type: "string", 
+				header: [
+					{ text: "Terms and conditions", colspan: 2 },
+					{ text: "Price" }
+				],
+				mark: {
+					min: "min_cell",
+					max: "max_cell"
+				}
+			},
+			// more options
+		],
+		data: dataset
+	});
+</script>
 ~~~
 
 ![](../assets/treegrid/min_max_mark.png)

@@ -1,43 +1,45 @@
 ---
 sidebar_label: css
 title: JavaScript Layout - css Config 
-description: You can explore the css config of a cell of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the css config of a cell of Layout in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # css
 
-@short: the name of a CSS class(es) applied to a cell of Layout
+@short: Optional. The name of a CSS class(es) applied to a cell of Layout
 
 @signature: {'css?: string;'}
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
-    .my_first_class {
-        /*some styles*/
-    }
- 
-    .my_second_class {
-        /*some styles*/
-    }
+	.layout-header {
+		--dhx-background-primary: #3A434A;
+	}
+	.dhx_layout-cell-inner_html {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 </style>
 
-const layout = new dhx.Layout("layout_container", {
-    rows: [
-        {
-            id: "toolbar",
-            html: "Header",
-            css: "my_second_class",
-            height: "60px"
-        },
-        {
-            id: "content",
-            html: "Content",
-            css: "my_first_class",
-        }
-    ]
-});
-
-@descr:
+<script>
+	const layout = new dhx.Layout("layout_container", {
+		rows: [
+	    	{
+	            id: "toolbar",
+	            html: "Header",
+	            css: "layout-header",
+	            height: "60px"
+	        },
+            // more objects
+		]
+	});
+</script>
+~~~
 
 **Related sample**: [Layout. Styling (custom CSS)](https://snippet.dhtmlx.com/pwxmf0lx)
 

@@ -1,12 +1,12 @@
 ---
 sidebar_label: tabAlign
 title: JavaScript Tabbar - tabAlign Config 
-description: You can explore the tabAlign config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the tabAlign config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # tabAlign
 
-@short: sets alignment for tabs
+@short: Optional. Sets alignment for tabs
 
 @signature: {'tabAlign?: "left" | "start" | "center" | "middle" | "right" | "end";'}
 

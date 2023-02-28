@@ -1,12 +1,12 @@
 ---
 sidebar_label: dragItem
 title: JavaScript TreeGrid - dragItem Config 
-description: You can explore the dragItem config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the dragItem config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # dragItem
 
-@short: enables the possibility to reorder treegrid columns by drag and drop
+@short: Optional. Enables the possibility to reorder treegrid columns by drag and drop
 
 @signature: {' dragItem?: "column", "row", "both";'}
 
@@ -32,7 +32,7 @@ Drag-n-drop can work in three modes:
 @changelog:
 
 - The "row" and "both" modes have been added in v7.2.
-- Added in v6.5.
+- The property was added in v6.5.
 
 [comment]: # (@related: treegrid/initialization.md#initialize-treegrid treegrid/configuration.md#drag-n-drop-inside-the-grid)
 

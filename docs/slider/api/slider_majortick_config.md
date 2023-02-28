@@ -1,12 +1,12 @@
 ---
 sidebar_label: majorTick
 title: JavaScript Slider - majorTick Config 
-description: You can explore the majorTick config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the majorTick config of Slider in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # majorTick
 
-@short: sets interval of rendering numeric values on the slider scale
+@short: Optional. Sets interval of rendering numeric values on the slider scale
 
 @signature: {'majorTick?: number;'}
 

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Ribbon - Customization 
-description: You can explore the customization of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Ribbon in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -59,7 +59,7 @@ const data = [
 			}
 		]
 	}
-]
+];
 ~~~
 
 **Related sample**: [Ribbon. Custom icons](https://snippet.dhtmlx.com/sfkou9gp)
@@ -70,7 +70,7 @@ const data = [
 
 There is a possibility to make changes in the look and feel of a ribbon. 
 
-![](../assets/ribbon/custom_style.png)
+![Styling Ribbon](../assets/ribbon/custom_style.png)
 
 **Related sample**: [Ribbon. Styling (custom CSS)](https://snippet.dhtmlx.com/9ckg47ro)
 
@@ -96,4 +96,24 @@ For this you need to take the following steps:
 const ribbon = new dhx.Ribbon("ribbon_container", {
     css:"my_first_class my_second_class"
 });
+~~~
+
+For example:
+
+~~~html
+<style>
+    .custom {
+        --dhx-background-secondary: var(--dhx-color-white);
+        --dhx-color-primary-light-hover: #aefafa;
+        --dhx-color-primary-light-active: #118d8d;
+    }
+</style>
+
+<script>
+	const ribbon = new dhx.Ribbon("ribbon_container", {
+    	css: "custom dhx_widget--bordered"
+	});
+
+	ribbon.data.parse(data);
+</script>
 ~~~

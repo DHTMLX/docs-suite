@@ -1,12 +1,12 @@
 ---
 sidebar_label: selectAllButton
 title: JavaScript Combo Box - selectAllButton Config 
-description: You can explore the selectAllButton config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the selectAllButton config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # selectAllButton
 
-@short: defines whether the Select All button should be shown
+@short: Optional. Defines whether the Select All button should be shown
 
 @signature: {'selectAllButton?: boolean;'}
 

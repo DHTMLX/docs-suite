@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Tree - Customization 
-description: You can explore the customization of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Tree in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -10,7 +10,7 @@ description: You can explore the customization of Tree in the documentation of t
 
 There is a possibility to make changes in the look and feel of a tree. 
 
-![](../assets/tree/custom_style.png)
+![Styling Tree](../assets/tree/custom_style.png)
 
 **Related sample**: [Tree. Styling (custom CSS)](https://snippet.dhtmlx.com/ocv4p7zg)
 
@@ -40,23 +40,24 @@ const tree = new dhx.Tree("tree_container", {
 
 For example:
 
-~~~js
+~~~html
 <style>
-	.custom-class {
-		padding: 20px;
-		border: 1px solid green;
-	}
-	.custom-class .dhx_tree-list-item__text {
-		color: #0ab169;
-	}
-	.custom-class .dhx_tree-folder .dhx_tree-list-item__text {
-		color: #0288d1;
+    .custom {
+        --dhx-font-weight-regular: 500;
+        --dhx-font-color-primary: #0ab169;
+    }
+	.custom .dhx_tree-folder  {
+        --dhx-font-color-primary: #0288d1;
 	}
 </style>
 
-const tree = new dhx.Tree("tree_container", {
-	css: "custom-class"
-});
+<script>
+    const tree = new dhx.Tree("tree_container", {
+        css: "custom"
+    });
+
+    tree.data.parse(dataset);
+</script>
 ~~~
 
 ## Changing icons

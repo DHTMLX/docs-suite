@@ -1,12 +1,12 @@
 ---
 sidebar_label: data
 title: JavaScript Combo Box - data Config 
-description: You can explore the data config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the data config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # data
 
-@short: specifies an array of data objects to set into the combobox
+@short: Optional. Specifies an array of data objects to set into the combobox
 
 @signature: {'data?: DataCollection<any> | any[];'}
 

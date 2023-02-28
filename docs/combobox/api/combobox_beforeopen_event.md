@@ -1,7 +1,7 @@
 ---
 sidebar_label: beforeOpen
 title: JavaScript Combo Box - beforeOpen Event 
-description: You can explore the beforeOpen event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the beforeOpen event of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # beforeOpen

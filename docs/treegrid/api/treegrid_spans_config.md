@@ -1,12 +1,12 @@
 ---
 sidebar_label: spans
 title: JavaScript TreeGrid - spans Config 
-description: You can explore the spans config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the spans config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # spans
 
-@short: describes the configuration of cols/rows spans
+@short: Optional. Describes the configuration of cols/rows spans
 
 @signature: {'spans?: ISpan[];'}
 

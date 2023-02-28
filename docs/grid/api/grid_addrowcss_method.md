@@ -1,7 +1,7 @@
 ---
 sidebar_label: addRowCss()
 title: JavaScript Grid - addRowCss Method 
-description: You can explore the addRowCss method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the addRowCss method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # addRowCss()
@@ -14,16 +14,21 @@ description: You can explore the addRowCss method of Grid in the documentation o
 - `rowId: string | number` - the id of a row
 - `css: string` - the name of the CSS class
 
-@example:
+@descr:
+#### Example
+
+~~~html
 <style>
     .myCustomClass{
         background:greenyellow;
     }
 </style>
 
-grid.addRowCss("2", "myCustomClass");
-
-@descr:
+<script>
+    ...
+    grid.addRowCss("2", "myCustomClass");
+</script>
+~~~
 
 **Related sample**: [Grid. Add row CSS](https://snippet.dhtmlx.com/idvmge2d)
 

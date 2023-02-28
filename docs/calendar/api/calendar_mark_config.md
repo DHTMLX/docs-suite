@@ -1,12 +1,12 @@
 ---
 sidebar_label: mark
 title: JavaScript Calendar - mark Config 
-description: You can explore the mark config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the mark config of Calendar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # mark
 
-@short: adds a CSS class to specific days
+@short: Optional. Adds a CSS class to specific days
 
 @signature: {'mark?: (a: Date) => string;'}
 

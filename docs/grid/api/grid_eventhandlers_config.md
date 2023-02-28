@@ -1,12 +1,12 @@
 ---
 sidebar_label: eventHandlers
 title: JavaScript Grid - eventHandlers Config 
-description: You can explore the eventHandlers config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the eventHandlers config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # eventHandlers
 
-@short: adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
+@short: Optional. Adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
 

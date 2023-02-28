@@ -1,12 +1,12 @@
 ---
 sidebar_label: leftSplit
 title: JavaScript Grid - leftSplit Config 
-description: You can explore the leftSplit config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the leftSplit config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # leftSplit
 
-@short: sets the number of frozen columns
+@short: Optional. Sets the number of frozen columns from the left
 
 @signature: {'leftSplit?: number;'}
 
@@ -21,7 +21,7 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**: [Grid. Frozen columns](https://snippet.dhtmlx.com/hcgl9nth)
+**Related sample**: [Grid. Frozen columns and rows](https://snippet.dhtmlx.com/hcgl9nth)
 
 @changelog: added in v7.0
 

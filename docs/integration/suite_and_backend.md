@@ -1,14 +1,14 @@
 ---
 sidebar_label: How to connect Suite to a backend
 title: How to connect DHTMLX Suite to a backend 
-description: You can explore how to connect DHTMLX Suite to a backend. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to connect DHTMLX Suite to a backend. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # How to connect DHTMLX Suite to a backend
 
 ![](../assets/integration/work_with_backend.png)
 
-DHTMLX Suite 7 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API).
+DHTMLX Suite 8 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API).
 
 The DHTMLX library includes the [DataCollection](/data_collection/) helper that completely supports REST API for dealing with the backend.
 

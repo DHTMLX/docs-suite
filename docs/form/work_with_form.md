@@ -89,6 +89,8 @@ To show a form, use the [show()](form/api/form_show_method.md) method:
 form.show();
 ~~~
 
+**Related sample**: [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
+
 ## Checking if a form is visible
 
 To check if a form is visible, call the [isVisible()](form/api/form_isvisible_method.md) method:

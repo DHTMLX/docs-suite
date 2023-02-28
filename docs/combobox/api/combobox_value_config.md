@@ -1,12 +1,12 @@
 ---
 sidebar_label: value
 title: JavaScript Combo Box - value Config 
-description: You can explore the value config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the value config of Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # value
 
-@short: specifies the values that will appear in the input on initialization of the combobox
+@short: Optional. Specifies the values that will appear in the input on initialization of the combobox
 
 @signature: {'value?: string | string[];'}
 

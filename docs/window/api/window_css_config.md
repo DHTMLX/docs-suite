@@ -1,24 +1,37 @@
 ---
 sidebar_label: css
 title: JavaScript Window - css Config 
-description: You can explore the css config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the css config of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # css
 
-@short: adds style classes for the component
+@short: Optional. Adds style classes for the component
 
 @signature: {'css?: string;'}
 
-@example:
-const dhxWindow = new dhx.Window({
-    title: "Window", 
-    css:"my_first_class my_second_class"
-}); 
-
-dhxWindow.show();
-
 @descr:
+#### Example
+
+~~~html
+<style>
+	.custom {
+		--dhx-background-primary: #efefef;
+	}
+</style>
+
+<script>
+	const dhxWindow = new dhx.Window({
+	    height: 400,
+	    width: 400,
+	    title: "window",
+	    css: "custom",
+	    html,
+	});
+	
+	dhxWindow.show();
+</script>
+~~~
 
 **Related sample**: [Window. Styling (custom CSS)](https://snippet.dhtmlx.com/t5mvhwx8)
 
@@ -33,4 +46,6 @@ const dhxWindow = new dhx.Window({
 dhxWindow.show();
 ~~~
 
-[comment]: # (@related: window/how_to_start.md window/customization.md#styling)
+**Related articles**: 
+- [List of CSS classes for styling a widget](helpers/base_elements.md#list-of-css-classes-for-styling-a-widget)
+- [Themes](themes.md)

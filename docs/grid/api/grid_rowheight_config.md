@@ -1,12 +1,12 @@
 ---
 sidebar_label: rowHeight
 title: JavaScript Grid - rowHeight Config 
-description: You can explore the rowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the rowHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # rowHeight
 
-@short: defines the height of a row in a grid
+@short: Optional. Defines the height of a row in a grid
 
 @signature: {'rowHeight?: number;'}
 

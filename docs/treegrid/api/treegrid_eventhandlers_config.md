@@ -1,12 +1,12 @@
 ---
 sidebar_label: eventHandlers
 title: JavaScript TreeGrid - eventHandlers Config 
-description: You can explore the eventHandlers config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the eventHandlers config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # eventHandlers
 
-@short: adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
+@short: Optional. Adds event handlers to HTML elements of a custom template of a TreeGrid cell or to the HTML elements defined in the data set of TreeGrid
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
 

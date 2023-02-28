@@ -1,7 +1,7 @@
 ---
 sidebar_label: Features
 title: JavaScript Toolbar - Features 
-description: You can explore the features of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the features of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Features
@@ -92,6 +92,7 @@ In this section you may study how to disable and enable, hide and show Toolbar c
 | [Hiding / showing controls](../common_methods/#hiding-and-showing-controls)              | Learn how to hide or show controls dynamically ([Example](https://snippet.dhtmlx.com/cldp89u4))               |
 | [Setting values/states of controls](../common_methods/#settinggetting-values-and-states) | Learn how to change the value or state of a control ([Example](https://snippet.dhtmlx.com/h34uh1dr))          |
 | [Getting values/states of controls](../common_methods/#settinggetting-values-and-states) | Learn how to get the current value or state of a control ([Example](https://snippet.dhtmlx.com/kvttdgad))     |
+| [Setting focus on an Input control](toolbar/input.md#setting-focus-to-a-control) | Learn how to set focus on an input of Toolbar    |
 
 
 ## How to work with data in Toolbar

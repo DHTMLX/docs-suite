@@ -1,12 +1,12 @@
 ---
 sidebar_label: navigationType
 title: JavaScript Menu - navigationType Config 
-description: You can explore the navigationType config of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the navigationType config of Menu in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # navigationType
 
-@short: defines the action that opens menu options
+@short: Optional. Defines the action that opens menu options
 
 @signature: {'navigationType?: "pointer" | "click";'}
 

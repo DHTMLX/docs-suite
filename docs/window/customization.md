@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Window - Customization 
-description: You can explore the customization of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Window in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -125,4 +125,26 @@ const dhxWindow = new dhx.Window({
     css:"my-first-class my-second-class"
 });
 dhxWindow.show();
+~~~
+
+For example:
+
+~~~html
+<style>
+	.custom {
+		--dhx-background-primary: #efefef;
+	}
+</style>
+
+<script>
+	const dhxWindow = new dhx.Window({
+	    height: 400,
+	    width: 400,
+	    title: "window",
+	    css: "custom",
+	    html,
+	});
+	
+	dhxWindow.show();
+</script>
 ~~~

@@ -1,7 +1,7 @@
 ---
 sidebar_label: Work with ComboBox
 title: JavaScript Combo Box - Work with Combo Box 
-description: You can explore how to work with Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore how to work with Combo Box in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Work with ComboBox
@@ -230,7 +230,7 @@ combobox.data.add({value:"Russia"},1);
 
 **Related sample**: [Combobox. Add data and remove item](https://snippet.dhtmlx.com/o7vd331z)
 
-:::note
+:::info
 From v7.3, Combobox includes the [](combobox/api/combobox_addoption_method.md) method which you can also use for adding new options into the data collection.
 :::
 

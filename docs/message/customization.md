@@ -1,7 +1,7 @@
 ---
 sidebar_label: Customization
 title: JavaScript Message - Customization 
-description: You can explore the customization of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the customization of Message in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Customization
@@ -38,21 +38,22 @@ dhx.message({
 
 For example:
 
-~~~js
+~~~html
 <style>
-  .custom-class .dhx_message__text {
-    font-size: 16px;
-  }
-  .custom-class .dhx_message__icon {
-    color: red;
-  }
+	.custom {
+		--dhx-font-color-primary: var(--dhx-color-white);
+		--dhx-background-primary: var(--dhx-color-primary);
+		--dhx-font-size-normal: 16px;
+	}
 </style>
 
-dhx.message({
-  text: "Here is DHTMLX Message",
-  icon: "dxi dxi-close",
-  css: "custom-class"
-});
+<script>
+    dhx.message({
+        text: "Here is dhtmlxMessage",
+        icon: "dxi dxi-close",
+        css: "custom"
+    });
+</script>
 ~~~
 
 **Related sample**: [Message. Message styling (custom CSS)](https://snippet.dhtmlx.com/7s6p67ht)

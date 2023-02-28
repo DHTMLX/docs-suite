@@ -1,14 +1,14 @@
 ---
 sidebar_label: views
 title: JavaScript Tabbar - views Config 
-description: You can explore the views config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the views config of Tabbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # views
 
-@short: defines the configuration of tabs
+@short: Required. Defines the configuration of tabs
 
-@signature: {'views?: ICellConfig[];'}
+@signature: {'views: ICellConfig[];'}
 
 @example:
 const tabbar = new dhx.Tabbar("tabbar_container", {

@@ -1,12 +1,12 @@
 ---
 sidebar_label: adjust
 title: JavaScript TreeGrid - adjust Config 
-description: You can explore the adjust config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the adjust config of TreeGrid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # adjust
 
-@short: defines whether the width of columns is automatically adjusted to the width of their content
+@short: Optional. Defines whether the width of columns is automatically adjusted to the width of their content
 
 @signature: {'adjust?: "header" | "footer" | "data" | boolean;'}
 

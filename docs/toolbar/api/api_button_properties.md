@@ -1,7 +1,7 @@
 ---
 sidebar_label: Toolbar Button properties
 title: JavaScript Toolbar - Button Properties 
-description: You can explore the Button properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the Button properties of Toolbar in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Toolbar Button properties
@@ -11,28 +11,30 @@ description: You can explore the Button properties of Toolbar in the documentati
 ~~~js
 const data = [
 	{
-		type: "button";
-		id?: string | number;
-		parent?: string | number;
-		value?: string;
-		html?: string;
-		css?: string | string[];
-		icon?: string;
-		items?: IMenuElement[]; // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
-		group?: string;
-		hotkey?: string;
-		tooltip?: string;
-		count?: number;
-		countColor?: "danger" | "secondary" | "primary" | "success";
-		multiClick?: boolean;
-		view?: "flat" | "link";
-		size?: "small" | "medium";
-		color?: "danger" | "secondary" | "primary" | "success";
-		full?: boolean;
-		circle?: boolean;
-		loading?: boolean;
-		hidden?: boolean;
-		disabled?: boolean;
+		type: "button",
+		id?: string | number,
+		parent?: string,
+		value?: string,
+		items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
+
+		circle?: boolean,
+		color?: "danger" | "secondary" | "primary" | "success",
+		count?: number,
+		countColor?: "danger" | "secondary" | "primary" | "success",
+		full?: boolean,
+		group?: string,
+		hotkey?: string,
+		html?: string,
+		icon?: string,
+		loading?: boolean,
+		multiClick?: boolean,
+		size?: "small" | "medium",
+		tooltip?: string,
+		view?: "flat" | "link",
+
+		css?: string | string[],
+		disabled?: boolean,
+		hidden?: boolean,
 	},
 	// more Toolbar controls
 ]
@@ -59,20 +61,28 @@ const data = [
 			<td>(optional) a value of the button. You need to set either the <b>value</b> or <b>html</b> property to the button</td>
 		</tr>
 		<tr>
-			<td><b>html</b></td>
-			<td>(optional) a string with HTML that should be inserted into the button</td>
-		</tr>
-        <tr>
-			<td><b>css</b></td>
-			<td>(optional) adds style classes to a button</td>
-		</tr>
-		<tr>
-			<td><b>icon</b></td>
-			<td>(optional) an <a href="../../button#adding-an-icon">icon</a> of the button</td>
-		</tr>
-		<tr>
 			<td><b>items</b></td>
 			<td>(optional) an array of nested controls.You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+		</tr>
+        <tr>
+			<td><b>circle</b></td>
+			<td>(optional) makes the corners of a button round</td>
+		</tr>
+        <tr>
+			<td><b>color</b></td>
+			<td>(optional) defines the color scheme of a button: "danger"|"secondary"|"primary"|"success"</td>
+		</tr>
+		<tr>
+			<td><b>count</b></td>
+			<td>(optional) a badge with a number</td>
+		</tr>
+        <tr>
+			<td><b>countColor</b></td>
+			<td>(optional) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
+		</tr>
+        <tr>
+			<td><b>full</b></td>
+			<td>(optional) extends a button to the full width of a form</td>
 		</tr>
 		<tr>
 			<td><b>group</b></td>
@@ -82,54 +92,46 @@ const data = [
 			<td><b>hotkey</b></td>
 			<td>(optional) the name of the hot key for the button</td>
 		</tr>
-        <tr>
-			<td><b>tooltip</b></td>
-			<td>(optional) a tooltip for the button</td>
+		<tr>
+			<td><b>html</b></td>
+			<td>(optional) a string with HTML that should be inserted into the button</td>
 		</tr>
-        <tr>
-			<td><b>count</b></td>
-			<td>(optional) a badge with a number</td>
-		</tr>
-        <tr>
-			<td><b>countColor</b></td>
-			<td>(optional) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
-		</tr>
-        <tr>
-			<td><b>multiClick</b></td>
-			<td>(optional) if <i>true</i> - the "click" event will fire multiple times when the button is clicked and held; if <i>false</i> - the "click" event will fire on each click of the button
-           </td>
-		</tr>
-        <tr>
-			<td><b>view</b></td>
-			<td>(optional) defines the look of a button: "flat"|"link"</td>
-		</tr>
-        <tr>
-			<td><b>size</b></td>
-			<td>(optional) defines the size of a button: "small"|"medium"</td>
-		</tr>
-        <tr>
-			<td><b>color</b></td>
-			<td>(optional) defines the color scheme of a button: "danger"|"secondary"|"primary"|"success"</td>
-		</tr>
-        <tr>
-			<td><b>full</b></td>
-			<td>(optional) extends a button to the full width of a form</td>
-		</tr>
-        <tr>
-			<td><b>circle</b></td>
-			<td>(optional) makes the corners of a button round</td>
+		<tr>
+			<td><b>icon</b></td>
+			<td>(optional) an <a href="../../button#adding-an-icon">icon</a> of the button</td>
 		</tr>
         <tr>
 			<td><b>loading</b></td>
 			<td>(optional) adds a spinner into a button</td>
 		</tr>
+		<tr>
+			<td><b>multiClick</b></td>
+			<td>(optional) if <i>true</i> - the "click" event will fire multiple times when the button is clicked and held; if <i>false</i> - the "click" event will fire on each click of the button
+           </td>
+		</tr>
         <tr>
-			<td><b>hidden</b></td>
-			<td>(optional) defines whether a button is hidden</td>
+			<td><b>size</b></td>
+			<td>(optional) defines the size of a button: "small"|"medium"</td>
+		</tr>
+		<tr>
+			<td><b>tooltip</b></td>
+			<td>(optional) a tooltip for the button</td>
+		</tr>
+        <tr>
+			<td><b>view</b></td>
+			<td>(optional) defines the look of a button: "flat"|"link"</td>
+		</tr>
+		<tr>
+			<td><b>css</b></td>
+			<td>(optional) adds style classes to a button</td>
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
 			<td>(optional) defines whether a button is disabled</td>
+		</tr>
+        <tr>
+			<td><b>hidden</b></td>
+			<td>(optional) defines whether a button is hidden</td>
 		</tr>
     </tbody>
 </table>

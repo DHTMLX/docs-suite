@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview
 title: JavaScript TreeCollection - TreeCollection Overview 
-description: You can have an overview of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can have an overview of TreeCollection in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # TreeCollection overview
@@ -54,3 +54,24 @@ A set of API methods and events that allow you to work with data of a component 
 | [](api/treecollection_load_event.md)         | @getshort(api/treecollection_load_event.md)         |
 | [](api/treecollection_loaderror_event.md)    | @getshort(api/treecollection_loaderror_event.md)    |
 | [](api/treecollection_removeall_event.md)    | @getshort(api/treecollection_removeall_event.md)    |
+
+:::info Ways of applying events
+
+To call the event of TreeCollection, you may use either of the two syntaxes:
+
+- common syntax (via the **data** object of the component)
+
+~~~js
+menu.data.events.on("afterAdd", function(newItem){
+    console.log("A new item is added");
+});
+~~~
+
+- or short syntax (right through the component)
+
+~~~js
+menu.events.on("afterAdd", function(newItem){
+    console.log("A new item is added");
+});
+~~~
+:::

@@ -1,14 +1,14 @@
 ---
 sidebar_label: autoHeight
 title: JavaScript Grid - autoHeight Config 
-description: You can explore the autoHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 7.
+description: You can explore the autoHeight config of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # autoHeight
 
 {{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
-@short: makes long text to split into multiple lines based on the width of the column
+@short: Optional. Makes long text to split into multiple lines based on the width of the column
 
 @signature: autoHeight?: boolean;
 
