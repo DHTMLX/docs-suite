@@ -11,9 +11,13 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.0
 ---------------
 
-Released on February Day, 2023
+Released on February 24, 2023
 
 ### New functionality
+
+#### Common features
+
+- [Accessibility support](common_features/accessibility_support.md)
 
 #### Styling
 
@@ -143,14 +147,11 @@ Released on February Day, 2023
 #### Grid/TreeGrid
 
 - The [`getHeaderFilter()`](grid/api/grid_getheaderfilter_method.md) method is updated. Now the method returns an object with a set of methods: [`blur()`](grid/api/headerfilter/blur_method.md), [`clear()`](grid/api/headerfilter/clear_method.md), [`focus()`](grid/api/headerfilter/focus_method.md), [`getFilter()`](grid/api/headerfilter/getfilter_method.md), [`setValue()`](grid/api/headerfilter/setvalue_method.md). Check the [Migration](migration.md#73---80) article
+- Now the sorting icon will also appear after sorting data via the `data.sort()` method
 
 #### Message
 
 - The `position` property of the [tooltip](message/api/api_message_properties.md#tooltip) is extended by the "left" and "top" values
-
-#### TreeGrid
-
-- Now the sorting icon will also appear after sorting data via the [`data.sort()`](tree_collection/api/treecollection_sort_method.md) method
 
 Version 7.3.14
 ---------------
