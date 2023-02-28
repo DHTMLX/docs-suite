@@ -13,6 +13,8 @@ Version 8.0
 
 Released on February 24, 2023
 
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-0/" target="_blank">Review of release on the blog</a>
+
 ### New functionality
 
 #### Common features

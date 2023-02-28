@@ -97,3 +97,4 @@ dhx.setTheme("dark", "container-2"); // apply "dark" theme to container with "co
 - [Suite. Custom themes (skins)](https://snippet.dhtmlx.com/1eh4ks4f)
 - [Suite. Set themes for the container](https://snippet.dhtmlx.com/d2she1z9)
 - [Suite. Themes configurator](https://snippet.dhtmlx.com/kw89q481)
+- [Suite. Dynamic color change in themes](https://snippet.dhtmlx.com/14vfe69t)
