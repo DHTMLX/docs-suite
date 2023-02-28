@@ -27,7 +27,24 @@ If the base Suite themes don't fit your project, you can configure your own colo
 
 ## Setting themes
 
-To set the necessary theme, be it a Suite theme or a custom one, you need to apply the [dhx.setTheme()](themes/api/themes_settheme_method.md) method. 
+To set the necessary theme, be it a Suite theme or a custom one, use on of the ways described below:
+
+- change the 'data' attribute for the chosen container:
+
+~~~html title="index.html"
+<!-- component container -->
+<div data-dhx-theme="dark" style="height: 100%" id="chart"></div>
+~~~
+
+- change the 'data' attribute for the root element:
+
+~~~js title="index.js"
+// your code here
+
+document.documentElement.setAttribute("data-dhx-theme", "dark");
+~~~
+
+- or apply the [dhx.setTheme()](themes/api/themes_settheme_method.md) method 
 
 <iframe src="https://snippet.dhtmlx.com/d2she1z9?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="800"></iframe>
 
