@@ -20,7 +20,7 @@ Currently the most commonly encountered conformance guidelines and standards are
 - [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) - a standard that defines ways to make web content and web applications more accessible to people with disabilities
 - [WAI](https://www.w3.org/WAI/) - web accessibility standard
 
-The DHTMLX Suite library meets the main requirements of the WAI standards and provides support for the following accessibility components:
+The DHTMLX Suite library meets the main requirements of the WCAG 2.0 standards and provides support for the following accessibility components:
 
 - [WAI-ARIA Attributes](#wai-aria-attributes)
 - [Keyboard Navigation](#keyboard-navigation)
@@ -89,6 +89,14 @@ For the full list of built-in hotkeys, refer to the **Keyboard Navigation** arti
 
 For users that are visually impaired due to color deficiencies, care should be taken when using colors to provide information.
 
-Among various DHTMLX Suite themes there's a high-contrast one. Being rather attractive, it is also helpful for those users who have weak eye-sight.
+Among various DHTMLX Suite themes there are the high-contrast ones:
+- **Light High Contrast**
+- **Dark High Contrast**
 
-<iframe src="https://snippet.dhtmlx.com/1eh4ks4f?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
+:::info
+The contrast themes correspond to the AAA level.
+:::
+
+Being rather attractive, it is also helpful for those users who have weak eye-sight.
+
+<iframe src="https://snippet.dhtmlx.com/85fbitnu?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
