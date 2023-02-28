@@ -78,7 +78,7 @@ The Suite library is equipped with built-in type definitions allowing you to wri
 
 ### Accessibility
 
-All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to WAI-ARIA principles. Widgets support keyboard navigation and can be easily adjusted to match high-contrast UI.
+All DHTMLX widgets are created with accessible design in mind. DHTMLX sticks to WAI-ARIA principles. Widgets support keyboard navigation and can be easily adjusted to match high-contrast UI (read the [Accessibility support](common_features/accessibility_support.md) guide).
 
 ## Release History
 
