@@ -30,7 +30,7 @@ Use the name of the icon as a value of the **icon** property in the object with 
 ~~~js {3}
 const list = new dhx.List("list_container", {
 	css: "dhx_widget--bordered",  
-    template: (item) => "<i class=’dxi dxi-icon-’ + item.icon></i>"
+    template: (item) => "<i class = ’dxi dxi-icon-’ + item.icon></i>"
 }); 
 ~~~
 
@@ -43,7 +43,7 @@ const popup = new dhx.Popup({
 	css: "dhx_widget--border-shadow"
 });
  
-popup.attachHTML("<i class=’dxi dxi-icon-name’></i>");
+popup.attachHTML("<i class = ’dxi dxi-icon-name’></i>");
 ~~~
 
 - by adding an HTML element with an icon class in any place of your app
@@ -53,7 +53,7 @@ You can use any inline HTML elements like &lt;i&gt; or &lt;span&gt;.
 ~~~html
 <i class="dxi dxi-icon-name"></i>
 
-<span class="dxi dxi-icon-name"></i>
+<span class="dxi dxi-icon-name"></span>
 ~~~
 
 - via the **HTML** configuration property of the component
@@ -61,7 +61,7 @@ You can use any inline HTML elements like &lt;i&gt; or &lt;span&gt;.
 ~~~js {3}
 {
   	id: "sidebar",
-  	html: "<i class=’dxi dxi-icon-name’></i>",
+  	html: "<i class = ’dxi dxi-icon-name’></i>",
   	gravity: false,
   	css: "dhx_layout-cell--border_right",
   	width: "200px"

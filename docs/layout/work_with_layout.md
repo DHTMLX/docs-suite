@@ -165,3 +165,5 @@ To hide the component, apply the [progressHide()](layout/api/cell/layout_cell_pr
 ~~~js
 layout.getCell("two").progressHide();
 ~~~
+
+**Related sample:** [Layout. Spinner (busy indicator/ progress bar) for Layout and its cells](https://snippet.dhtmlx.com/vzrvf4rm)
