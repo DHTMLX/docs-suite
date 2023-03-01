@@ -86,7 +86,7 @@ In this section you will learn how to get a cell object, how to add or remove, h
 | [Showing/hiding a cell](../work_with_layout/#hidingshowing-a-cell)               | Learn how to hide/show a cell ([Example 1](https://snippet.dhtmlx.com/v0q7gq26), [Example](https://snippet.dhtmlx.com/u0jd8ah3))        |
 | [Checking visibility of a cell](../work_with_layout/#checking-visibility-of-a-cell)                 | Learn how to check whether a Layout cell is visible                                                                                     |
 | [Expanding/collapsing a cell](../work_with_layout/#collapsingexpanding-a-cell) | Learn how to collapse/expand a cell ([Example 1](https://snippet.dhtmlx.com/h0wtlpyk), [Example 2](https://snippet.dhtmlx.com/t38tqk0k)) |
-|[Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)|Learn how to show/hide the progress bar in a Layout container or in a cell|
+|[Showing/hiding a progress bar](layout/work_with_layout.md#showinghiding-a-progress-bar)|Learn how to show/hide the progress bar in a Layout container or in a cell ([Example](https://snippet.dhtmlx.com/vzrvf4rm))|
 
 
 ## Layout patterns
