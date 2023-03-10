@@ -8,6 +8,25 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.0.1
+---------------
+
+Released on March 13, 2023
+
+### Fixes
+
+- Combobox. Fix work of the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
+- Context menu. Fix the issue with applying of [themes](themes.md) to the context menu
+- Grid. Fix an error thrown when editing cells with null or undefined values in the column with [editorType: "select"](grid/configuration.md#types-of-column-editor)
+- Grid. Fix the issue with custom scroll when using together with frozen columns/rows
+- Grid. Fix the issue with the value returned from the [`filterChange`](grid/api/grid_filterchange_event.md) event after resetting the value of the [inputFilter/selectFilter](grid/configuration.md#headerfooter-filters). Now the event returns `value` as an empty string
+- Grid. Fix work of events of the [Selection](category/grid-selection-events.md) object
+- List. Now focusing of items isn't available when [key navigation](list/api/list_keynavigation_config.md) is disabled
+- Suite. Now the date format must include delimiters (space or symbol), otherwise an error will be thrown
+- TreeGrid. Fix the issue which caused headers of groups to be duplicated when using the [`leftSplit`](treegrid/api/treegrid_leftsplit_config.md) property of TreeGrid
+- Window. Fix the issue with excess scroll in the window content
+- Window. Fix work of Window with the [`resizable: true`](window/api/window_resizable_config.md) property
+
 Version 8.0
 ---------------
 

@@ -88,8 +88,8 @@ const combobox = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Initial value](https://snippet.dhtmlx.com/spnausim)
 
-- If *multiselection:true* is set for a combo, the property takes an array of string values as: *value: ["1","2","3"]*,
-- If *multiselection:false* is set or the *multiselection* config is not defined, the property gets either of the two values: *value:"1"* or *value: ["1"]*.
+- If *multiselection:true* is set for a combo, the property takes an array with options' ids: for example, *value: ["id_1","id_2","id_3"]* or *value: [1, 2, 3]*,
+- If *multiselection:false* is set or the *multiselection* config is not defined, the property gets either of the two values: *value:"id_1"*, *value: 1*, or *value: ["id_1"]*.
 
 ## Label
 

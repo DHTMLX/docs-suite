@@ -198,6 +198,10 @@ When using just the **type: "percent"** configuration option of a column, the re
 }
 ~~~
 
+:::info
+The date format must include delimiters (space or symbol), otherwise an error will be thrown
+:::
+
 **Related sample**: [Grid. Data formats](https://snippet.dhtmlx.com/ox37nvdm)
 
 ### Frozen columns

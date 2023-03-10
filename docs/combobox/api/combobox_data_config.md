@@ -29,11 +29,23 @@ const combo = new dhx.Combobox("combo_container",{
 			"value": "Cyprus",
 			"src": "../common/flags/cy.png"
 		}
+	]
 });
 
 @descr: 
 
 **Related sample**: [Combobox. Initialization with config.data](https://snippet.dhtmlx.com/8bsb9dji)
+
+Each object in the data set contains a number of key:value pairs that represent attributes of Combo options. The available attributes are:
+
+- `id?: string | number` - optional, the id of the data option
+- `value?: string`- optional, the text value of the option
+- `src?: string`- optional, the path to the image
+- `icon?: string` - optional, the CSS class of the displayed icon (for example, "dxi dxi-check")
+
+:::info
+It is not possible to use the `src` and `icon` attributes together.
+:::
 
 @changelog: added in v6.4
 

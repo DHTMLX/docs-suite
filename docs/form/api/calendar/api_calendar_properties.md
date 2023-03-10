@@ -113,7 +113,7 @@ description: You can explore the Properties of the Datepicker control of Form in
         </tr>
         <tr>
             <td><b>dateFormat</b></td>
-            <td>(optional) defines the format of dates in the calendar, "%d/%m/%y" by default</td>
+            <td>(optional) defines the format of dates in the calendar, "%d/%m/%y" by default. The date format must include delimiters (space or symbol), otherwise an error will be thrown</td>
         </tr>
         <tr>
             <td><b>disabledDates</b></td>

@@ -21,6 +21,10 @@ const calendar = new dhx.Calendar("calendar_container", {
 @descr:
 **Related sample**: [Calendar. Date format](https://snippet.dhtmlx.com/2co9z3bi)
 
+:::info
+The date format must include delimiters (space or symbol), otherwise an error will be thrown.
+:::
+
 DHTMLX Calendar uses the following characters for setting a date format:
 
 | Character | Definition                                        |
