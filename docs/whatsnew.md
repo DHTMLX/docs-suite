@@ -15,6 +15,7 @@ Released on March 13, 2023
 
 ### Fixes
 
+- Combobox. Fix default templates for the `img` and `icon` attributes of a [data item](combobox/api/combobox_data_config.md)
 - Combobox. Fix work of the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
 - Context menu. Fix the issue with applying of [themes](themes.md) to the context menu
 - Grid. Fix an error thrown when editing cells with null or undefined values in the column with [editorType: "select"](grid/configuration.md#types-of-column-editor)
