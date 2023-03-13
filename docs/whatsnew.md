@@ -18,10 +18,10 @@ Released on March 13, 2023
 - Combobox. Fix default templates for the `img` and `icon` attributes of a [data item](combobox/api/combobox_data_config.md)
 - Combobox. Fix work of the [`htmlEnable`](combobox/api/combobox_htmlenable_config.md) property
 - Context menu. Fix the issue with applying of [themes](themes.md) to the context menu
-- Grid. Fix an error thrown when editing cells with null or undefined values in the column with [editorType: "select"](grid/configuration.md#types-of-column-editor)
-- Grid. Fix the issue with custom scroll when using together with frozen columns/rows
-- Grid. Fix the issue with the value returned from the [`filterChange`](grid/api/grid_filterchange_event.md) event after resetting the value of the [inputFilter/selectFilter](grid/configuration.md#headerfooter-filters). Now the event returns `value` as an empty string
-- Grid. Fix work of events of the [Selection](category/grid-selection-events.md) object
+- Grid/TreeGrid. Fix an error thrown when editing cells with null or undefined values in the column with [`editorType: "select"`](grid/configuration.md#types-of-column-editor)
+- Grid/TreeGrid. Fix the issue with custom scroll when using together with frozen columns/rows
+- Grid/TreeGrid. Fix the issue with the value returned from the [`filterChange`](grid/api/grid_filterchange_event.md) event after resetting the value of the [inputFilter/selectFilter](grid/configuration.md#headerfooter-filters). Now the event returns `value` as an empty string
+- Grid/TreeGrid. Fix work of events of the [Selection](category/grid-selection-events.md) object
 - List. Now focusing of items isn't available when [key navigation](list/api/list_keynavigation_config.md) is disabled
 - Suite. Now the date format must include delimiters (space or symbol), otherwise an error will be thrown
 - TreeGrid. Fix the issue which caused headers of groups to be duplicated when using the [`leftSplit`](treegrid/api/treegrid_leftsplit_config.md) property of TreeGrid
