@@ -38,10 +38,11 @@ const dataset = [
 ]
 ~~~
 
-Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. 
+Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. [Check the details](combobox/api/combobox_data_config.md).
+
 You can specify your own template of rendering Combo options with the help of the [template](combobox/api/combobox_template_config.md) configuration option.
 
-{{note Note, that **value** is a mandatory property for a dataset item and **src** is a reserved one.}}
+{{note Note, until you use the [template](combobox/api/combobox_template_config.md) option, the **value** is a mandatory property for a dataset item and **src** is a reserved one.}}
 
 ## Loading data on initialization
 

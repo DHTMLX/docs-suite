@@ -14,5 +14,8 @@ description: You can explore the keyNavigation config of List in the documentati
 const list = new dhx.List("list_container", {keyNavigation:true});
 
 @descr:
+:::info
+From v8.0, focusing of items isn't available when key navigation is disabled. Use methods of the [Selection](selection.md#methods) object.
+:::
 
 [comment]: # (@related: list/configuration.md#arrow-keys-navigation)

@@ -27,7 +27,7 @@ A custom function takes two parameters:
 <table>
 	<tbody>
         <tr>
-			<td><b>item</b></td>
+			<td><b><a href="https://docs.dhtmlx.com/suite/combobox/api/combobox_data_config/">item</a></b></td>
 			<td>(<i>object</i>) an item of data collection</td>
 		</tr>
 		<tr>

@@ -180,7 +180,7 @@ columns:[
 		</tr>
         <tr>
 			<td><a href="../../configuration#formatting-columns"><b>format</b></a></td>
-			<td>(optional) defines the format for the content of the column's cells</td>
+			<td>(optional) defines the format for the content of the column's cells. The date format must include delimiters (space or symbol), otherwise an error will be thrown</td>
 		</tr>
         <tr>
 			<td><b>options</b></td>

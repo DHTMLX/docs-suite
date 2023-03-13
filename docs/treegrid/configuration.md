@@ -195,6 +195,10 @@ When using just the **type: "percent"** configuration option of a column, the re
 }
 ~~~
 
+:::info
+The date format must include delimiters (space or symbol), otherwise an error will be thrown
+:::
+
 **Related sample**: [TreeGrid. Data formats (percent, currency, date and combination with templates)](https://snippet.dhtmlx.com/ampo9hsc)
 
 ### Frozen columns

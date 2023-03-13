@@ -47,7 +47,7 @@ const data = [
 - `parent` - (optional) the parent of the item
 - `value` - (optional) the value of a datepicker
 - `valueFormat` - (optional) defines the format of the output date (either a string or a Date object)
-- `dateFormat` - (optional) the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details
+- `dateFormat` - (optional) the format of dates, by default "%d/%m/%y", check the [Calendar properties](calendar/api/calendar_dateformat_config.md) for more details. The date format must include delimiters (space or symbol), otherwise an error will be thrown
 - `disabledDates` - (optional) allows disabling some date intervals, day labels are dimmed. [Read the details](calendar/api/calendar_disableddates_config.md)
 - `icon` - (optional) an icon for a Datepicker, the name of the icon from the used [icon font](helpers/icon.md)
 - `label` - (optional) specifies an AREA label for the control
