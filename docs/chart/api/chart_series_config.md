@@ -445,7 +445,7 @@ series: [
 		</tr>
 		<tr>
 			<td><b>endDate</b></td>
-			<td>(optional) the end date of the calendar heatmap; by default, the 31st of December of the maximal year specified in the dataset. <a href="../../../chart/configuration_properties/#default-range-of-dates">Read the details</a></td>
+			<td>(optional) the end date of the calendar heatmap; by default, the 31st of December of the maximal year specified in the dataset. <a href="../../../chart/configuration_properties/#default-range-of-dates">Read the details.</a><br>If you use a string value to specify the end date, it should match the format specified via the <b>dateFormat</b> option.</td>
 		</tr>
 		<tr>
 			<td><b>maxValue</b></td>
@@ -461,7 +461,7 @@ series: [
 		</tr>
 		<tr>
 			<td><b>startDate</b></td>
-			<td>(optional) the date starting from which the calendar heatmap will be displayed; by default, the 1st of January of the minimal year specified in the dataset. <a href="../../../chart/configuration_properties/#default-range-of-dates">Read the details</a></td>
+			<td>(optional) the date starting from which the calendar heatmap will be displayed; by default, the 1st of January of the minimal year specified in the dataset. <a href="../../../chart/configuration_properties/#default-range-of-dates">Read the details.</a><br>If you use a string value to specify the start date, it should match the format specified via the <b>dateFormat</b> option.</td>
 		</tr>
 		<tr>
 			<td><b>tooltip</b></td>

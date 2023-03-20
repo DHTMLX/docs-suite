@@ -31,7 +31,7 @@ export.pdf(config?: object): void;
 			- `right?: string | number` - (optional) defines a right margin, accepts values labeled with units
 			- `top?: string | number` - (optional) defines a top margin, accepts values labeled with units
 			- `bottom?: string | number` - (optional) defines a bottom margin, accepts values labeled with units
-		- `format?: string` - (optional) defines a paper format. If defined, takes priority over **width** or **height** options. The ***'Letter'*** is set by default. Read more about formatting [here](https://github.com/puppeteer/puppeteer/blob/v16.0.0/docs/api/puppeteer.paperformat.md)
+		- `format?: string` - (optional) defines a paper format. If defined, takes priority over **width** or **height** options. The ***'Letter'*** is set by default. Read more about formatting <a href="https://github.com/puppeteer/puppeteer/blob/v16.0.0/docs/api/puppeteer.paperformat.md">here</a>
 
 ### Example
 

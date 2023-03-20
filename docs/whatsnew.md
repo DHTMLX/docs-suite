@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.0.2
+---------------
+
+Released on March 20, 2023
+
+### Fixes
+
+- Grid. Fix the issue with editing of a span belonging to fixed columns or rows
+- Grid. Fix the issue with editing of cells when selection is enabled
+- Grid. Fix the issue with export to Excel after applying a custom font to Grid cells
+- Grid. Fix the issue with the [`adjustColumnWidth()`](grid/api/grid_adjustcolumnwidth_method.md) method after resizing of a column
+- Grid. Fix work of key navigation between a span and cell (in some cases)
+
 Version 8.0.1
 ---------------
 
