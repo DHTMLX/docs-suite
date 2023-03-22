@@ -44,7 +44,7 @@ Use [DataCollection events](data_collection.md#events) to work with data.
 | [](chart/api/chart_series_config.md)    | @getshort(chart/api/chart_series_config.md)    |
 | [](chart/api/chart_type_config.md)      | @getshort(chart/api/chart_type_config.md)      |
 
-## Export Methods
+## Export methods
 
 | Name                                     | Description                                     |
 | ---------------------------------------- | ----------------------------------------------- |

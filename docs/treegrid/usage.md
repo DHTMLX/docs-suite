@@ -534,60 +534,19 @@ You can easily export data of TreeGrid into the Excel or CSV format.
 
 ### Exporting data to Excel 
 
-DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the **export()** method of the export module. The method takes an object with export settings as a parameter.
+DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the [xlsx()](treegrid/api/export/treegrid_xlsx_method.md) method of the export module. The method takes an object with export settings as a parameter.
 
 ~~~js
-treegrid.export.xls({
+treegrid.export.xlsx({
 	url: "//export.dhtmlx.com/excel"
 });
 ~~~
 
 **Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
 
-Export settings include:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>url</b></td>
-			<td>(<i>string</i>) the link to the server side where export will be processed. <br/>By default, it is <b>"//export.dhtmlx.com/excel"</b></td>
-		</tr>
-		<tr>
-			<td><b>name</b></td>
-			<td>(<i>string</i>) the name of a ready Excel file</td>
-		</tr>
-    </tbody>
-</table>
-
 ### Exporting data to CSV
 
-You can export data from TreeGrid to the CSV format with the **csv()** method of the Export module. The method takes an object with export settings as a parameter:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>asFile</b></td>
-			<td>(<i>boolean</i>) defines whether TreeGrid should be exported to a file, <i>true</i> by default. To export TreeGrid only as a CSV string, you need to set <i>asFile:false</i>.</td>
-		</tr>
-		<tr>
-			<td><b>name</b></td>
-			<td>(<i>string</i>) the name of the exported CSV file (if asFile is not set to <i>false</i>).</td>
-		</tr>
-		<tr>
-			<td><b>flat</b></td>
-			<td>(<i>boolean</i>) defines whether TreeGrid data should be exported as a flat structure; <i>false</i> by default. </td>
-		</tr>
-		<tr>
-			<td><b>rowDelimiter</b></td>
-			<td>(<i>string</i>) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value. </td>
-		</tr>
-		<tr>
-			<td><b>columnDelimiter</b></td>
-			<td>(<i>string</i>) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value.</td>
-		</tr>
-    </tbody>
-</table>
-<br/>
+You can export data from TreeGrid to the CSV format with the [csv()](treegrid/api/export/treegrid_csv_method.md) method of the Export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.csv({
