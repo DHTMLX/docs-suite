@@ -477,7 +477,7 @@ You can easily export data of Grid into the Excel or CSV format.
 
 ### Exporting data to Excel
 
-DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the **xlsx()** method of the Export module. The method takes an object with export settings as a parameter.
+DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [xlsx()](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 grid.export.xlsx({
@@ -486,48 +486,11 @@ grid.export.xlsx({
 });
 ~~~
 
-Export settings include:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>url</b></td>
-			<td>(<i>string</i>) the link to the server side where export will be processed. <br/>By default, it is <b>"//export.dhtmlx.com/excel"</b></td>
-		</tr>
-		<tr>
-			<td><b>name</b></td>
-			<td>(<i>string</i>) the name of a ready Excel file</td>
-		</tr>
-    </tbody>
-</table>
-
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
 ### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the **csv()** method of the Export module. The method takes an object with export settings as a parameter:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>asFile</b></td>
-			<td>(<i>boolean</i>) defines whether Grid should be exported to a file, <i>true</i> by default. To export Grid only as a CSV string, you need to set <i>asFile:false</i>.</td>
-		</tr>
-		<tr>
-			<td><b>name</b></td>
-			<td>(<i>string</i>) the name of the exported CSV file (if asFile is not set to <i>false</i>).</td>
-		</tr>
-		<tr>
-			<td><b>rowDelimiter</b></td>
-			<td>(<i>string</i>) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value.</td>
-		</tr>
-		<tr>
-			<td><b>columnDelimiter</b></td>
-			<td>(<i>string</i>) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value.</td>
-		</tr>
-    </tbody>
-</table>
-<br/>
+You can export data from Grid to the CSV format with the [csv()](grid/api/export/grid_csv_method.md) method of the Export module. 
 
 ~~~js
 grid.export.csv({

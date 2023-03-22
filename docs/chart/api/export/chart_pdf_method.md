@@ -1,23 +1,18 @@
 ---
-sidebar_label: export.pdf()
+sidebar_label: pdf()
 title: JavaScript Chart - pdf Method
 description: You can explore the pdf method of Chart in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
-# export.pdf()
+# pdf()
 
 ### Description
 
 @short: Exports a chart to a PDF file
 
-### Usage
+@signature: {'pdf(config?: object): void;'}
 
-~~~js
-export.pdf(config?: object): void;
-~~~
-
-### Parameters
-
+@params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
     - `url?: string` -  (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/chart/pdf/8.0.0`
     - `name?: string` - (optional) the name of the exported file
@@ -33,9 +28,8 @@ export.pdf(config?: object): void;
 			- `bottom?: string | number` - (optional) defines a bottom margin, accepts values labeled with units
 		- `format?: string` - (optional) defines a paper format. If defined, takes priority over **width** or **height** options. The ***'Letter'*** is set by default. Read more about formatting <a href="https://github.com/puppeteer/puppeteer/blob/v16.0.0/docs/api/puppeteer.paperformat.md">here</a>
 
-### Example
 
-~~~js {2,5-8}
+@example:
 // default export
 chart.export.pdf();
 
@@ -44,7 +38,8 @@ chart.export.pdf({
 	url: "https://export.dhtmlx.com/chart/pdf/8.0.0",
 	name:"result.pdf"
 });
-~~~
+
+@descr:
 
 **Related samples**: [Chart. Export. Export to PDF/PNG](https://snippet.dhtmlx.com/4rybsjjq)
 

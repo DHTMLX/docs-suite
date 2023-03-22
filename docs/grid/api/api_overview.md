@@ -46,17 +46,17 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 
 ### Editing
 
-| Name                                            | Description                                         |
-| ----------------------------------------------- | --------------------------------------------------- |
-| [](grid/api/grid_aftereditend_event.md)         | @getshort(grid/api/grid_aftereditend_event.md)         |
-| [](grid/api/grid_aftereditstart_event.md)       | @getshort(grid/api/grid_aftereditstart_event.md)       |
-| [](grid/api/grid_beforeeditend_event.md)        | @getshort(grid/api/grid_beforeeditend_event.md)        |
-| [](grid/api/grid_beforeeditstart_event.md)      | @getshort(grid/api/grid_beforeeditstart_event.md)      |
+| Name                                       | Description                                       |
+| ------------------------------------------ | ------------------------------------------------- |
+| [](grid/api/grid_aftereditend_event.md)    | @getshort(grid/api/grid_aftereditend_event.md)    |
+| [](grid/api/grid_aftereditstart_event.md)  | @getshort(grid/api/grid_aftereditstart_event.md)  |
+| [](grid/api/grid_beforeeditend_event.md)   | @getshort(grid/api/grid_beforeeditend_event.md)   |
+| [](grid/api/grid_beforeeditstart_event.md) | @getshort(grid/api/grid_beforeeditstart_event.md) |
 
 ### Mouse
 
 | Name                                            | Description                                            |
-|-------------------------------------------------|--------------------------------------------------------|
+| ----------------------------------------------- | ------------------------------------------------------ |
 | [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event.md)            |
 | [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event.md)         |
 | [](grid/api/grid_cellmousedown_event.md)        | @getshort(grid/api/grid_cellmousedown_event.md)        |
@@ -76,7 +76,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 ### Key Navigation and Scroll
 
 | Name                                     | Description                                     |
-|------------------------------------------|-------------------------------------------------|
+| ---------------------------------------- | ----------------------------------------------- |
 | [](grid/api/grid_afterkeydown_event.md)  | @getshort(grid/api/grid_afterkeydown_event.md)  |
 | [](grid/api/grid_beforekeydown_event.md) | @getshort(grid/api/grid_beforekeydown_event.md) |
 | [](grid/api/grid_scroll_event.md)        | @getshort(grid/api/grid_scroll_event.md)        |
@@ -84,7 +84,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 ### Sort and Filter
 
 | Name                                    | Description                                    |
-|-----------------------------------------|------------------------------------------------|
+| --------------------------------------- | ---------------------------------------------- |
 | [](grid/api/grid_aftersort_event.md)    | @getshort(grid/api/grid_aftersort_event.md)    |
 | [](grid/api/grid_beforefilter_event.md) | @getshort(grid/api/grid_beforefilter_event.md) |
 | [](grid/api/grid_beforesort_event.md)   | @getshort(grid/api/grid_beforesort_event.md)   |
@@ -93,7 +93,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 ### Column Drag and Drop
 
 | Name                                        | Description                                        |
-|---------------------------------------------|----------------------------------------------------|
+| ------------------------------------------- | -------------------------------------------------- |
 | [](grid/api/grid_aftercolumndrag_event.md)  | @getshort(grid/api/grid_aftercolumndrag_event.md)  |
 | [](grid/api/grid_aftercolumndrop_event.md)  | @getshort(grid/api/grid_aftercolumndrop_event.md)  |
 | [](grid/api/grid_beforecolumndrag_event.md) | @getshort(grid/api/grid_beforecolumndrag_event.md) |
@@ -102,12 +102,12 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_cancolumndrop_event.md)    | @getshort(grid/api/grid_cancolumndrop_event.md)    |
 | [](grid/api/grid_dragcolumnin_event.md)     | @getshort(grid/api/grid_dragcolumnin_event.md)     |
 | [](grid/api/grid_dragcolumnout_event.md)    | @getshort(grid/api/grid_dragcolumnout_event.md)    |
-| [](grid/api/grid_dragcolumnstart_event.md)  | @getshort(grid/api/grid_dragcolumnstart_event.md)   |
+| [](grid/api/grid_dragcolumnstart_event.md)  | @getshort(grid/api/grid_dragcolumnstart_event.md)  |
 
 ### Column Hide and Show
 
 | Name                                        | Description                                        |
-|---------------------------------------------|----------------------------------------------------|
+| ------------------------------------------- | -------------------------------------------------- |
 | [](grid/api/grid_aftercolumnhide_event.md)  | @getshort(grid/api/grid_aftercolumnhide_event.md)  |
 | [](grid/api/grid_aftercolumnshow_event.md)  | @getshort(grid/api/grid_aftercolumnshow_event.md)  |
 | [](grid/api/grid_beforecolumnhide_event.md) | @getshort(grid/api/grid_beforecolumnhide_event.md) |
@@ -116,29 +116,29 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 ### Column Resize
 
 | Name                                         | Description                                         |
-|----------------------------------------------|-----------------------------------------------------|
+| -------------------------------------------- | --------------------------------------------------- |
 | [](grid/api/grid_afterresizeend_event.md)    | @getshort(grid/api/grid_afterresizeend_event.md)    |
 | [](grid/api/grid_beforeresizestart_event.md) | @getshort(grid/api/grid_beforeresizestart_event.md) |
 | [](grid/api/grid_resize_event.md)            | @getshort(grid/api/grid_resize_event.md)            |
 
 ### Row Drag and Drop
 
-| Name                                     | Description                                       |
-|------------------------------------------|---------------------------------------------------|
-| [](grid/api/grid_afterrowdrag_event.md)  | @getshort(grid/api/grid_afterrowdrag_event)       |
-| [](grid/api/grid_afterrowdrop_event.md)  | @getshort(grid/api/grid_afterrowdrop_event)       |
-| [](grid/api/grid_beforerowdrag_event.md) | @getshort(grid/api/grid_beforerowdrag_event.md)   |
-| [](grid/api/grid_beforerowdrop_event.md) | @getshort(grid/api/grid_beforerowdrop_event.md)   |
-| [](grid/api/grid_cancelrowdrop_event.md) | @getshort(grid/api/grid_cancelrowdrop_event.md)   |
-| [](grid/api/grid_canrowdrop_event.md)    | @getshort(grid/api/grid_canrowdrop_event.md)      |
-| [](grid/api/grid_dragrowin_event.md)     | @getshort(grid/api/grid_dragrowin_event.md)       |
-| [](grid/api/grid_dragrowout_event.md)    | @getshort(grid/api/grid_dragrowout_event.md)      |
-| [](grid/api/grid_dragrowstart_event.md)  | @getshort(grid/api/grid_dragrowstart_event.md) |
+| Name                                     | Description                                     |
+| ---------------------------------------- | ----------------------------------------------- |
+| [](grid/api/grid_afterrowdrag_event.md)  | @getshort(grid/api/grid_afterrowdrag_event)     |
+| [](grid/api/grid_afterrowdrop_event.md)  | @getshort(grid/api/grid_afterrowdrop_event)     |
+| [](grid/api/grid_beforerowdrag_event.md) | @getshort(grid/api/grid_beforerowdrag_event.md) |
+| [](grid/api/grid_beforerowdrop_event.md) | @getshort(grid/api/grid_beforerowdrop_event.md) |
+| [](grid/api/grid_cancelrowdrop_event.md) | @getshort(grid/api/grid_cancelrowdrop_event.md) |
+| [](grid/api/grid_canrowdrop_event.md)    | @getshort(grid/api/grid_canrowdrop_event.md)    |
+| [](grid/api/grid_dragrowin_event.md)     | @getshort(grid/api/grid_dragrowin_event.md)     |
+| [](grid/api/grid_dragrowout_event.md)    | @getshort(grid/api/grid_dragrowout_event.md)    |
+| [](grid/api/grid_dragrowstart_event.md)  | @getshort(grid/api/grid_dragrowstart_event.md)  |
 
 ### Row Hide and Show
 
 | Name                                     | Description                                     |
-|------------------------------------------|-------------------------------------------------|
+| ---------------------------------------- | ----------------------------------------------- |
 | [](grid/api/grid_afterrowhide_event.md)  | @getshort(grid/api/grid_afterrowhide_event.md)  |
 | [](grid/api/grid_afterrowshow_event.md)  | @getshort(grid/api/grid_afterrowshow_event.md)  |
 | [](grid/api/grid_beforerowhide_event.md) | @getshort(grid/api/grid_beforerowhide_event.md) |
@@ -147,7 +147,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 ### Row Resize
 
 | Name                                       | Description                                       |
-|--------------------------------------------|---------------------------------------------------|
+| ------------------------------------------ | ------------------------------------------------- |
 | [](grid/api/grid_afterrowresize_event.md)  | @getshort(grid/api/grid_afterrowresize_event.md)  |
 | [](grid/api/grid_beforerowresize_event.md) | @getshort(grid/api/grid_beforerowresize_event.md) |
 
@@ -159,7 +159,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 ## Grid properties
 
 | Name                                        | Description                                        |
-|---------------------------------------------|----------------------------------------------------|
+| ------------------------------------------- | -------------------------------------------------- |
 | [](grid/api/grid_adjust_config.md)          | @getshort(grid/api/grid_adjust_config.md)          |
 | [](grid/api/grid_autoemptyrow_config.md)    | @getshort(grid/api/grid_autoemptyrow_config.md)    |
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
@@ -200,7 +200,7 @@ You will find the list of all the available configuration properties of a Grid c
 ### Selection methods
 
 | Name                                                  | Description                                                  |
-|-------------------------------------------------------|--------------------------------------------------------------|
+| ----------------------------------------------------- | ------------------------------------------------------------ |
 | [](grid/api/selection/selection_disable_method.md)    | @getshort(grid/api/selection/selection_disable_method.md)    |
 | [](grid/api/selection/selection_enable_method.md)     | @getshort(grid/api/selection/selection_enable_method.md)     |
 | [](grid/api/selection/selection_getcell_method.md)    | @getshort(grid/api/selection/selection_getcell_method.md)    |
@@ -211,8 +211,15 @@ You will find the list of all the available configuration properties of a Grid c
 ### Selection events
 
 | Name                                                     | Description                                                     |
-|----------------------------------------------------------|-----------------------------------------------------------------|
+| -------------------------------------------------------- | --------------------------------------------------------------- |
 | [](grid/api/selection/selection_afterselect_event.md)    | @getshort(grid/api/selection/selection_afterselect_event.md)    |
 | [](grid/api/selection/selection_afterunselect_event.md)  | @getshort(grid/api/selection/selection_afterunselect_event.md)  |
 | [](grid/api/selection/selection_beforeselect_event.md)   | @getshort(grid/api/selection/selection_beforeselect_event.md)   |
 | [](grid/api/selection/selection_beforeunselect_event.md) | @getshort(grid/api/selection/selection_beforeunselect_event.md) |
+
+## Export methods
+
+| Name                                    | Description                                    |
+| --------------------------------------- | ---------------------------------------------- |
+| [](grid/api/export/grid_csv_method.md)  | @getshort(grid/api/export/grid_csv_method.md)  |
+| [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |

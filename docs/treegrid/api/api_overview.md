@@ -229,3 +229,10 @@ You will find the list of all the available configuration properties of a TreeGr
 | [](treegrid/api/selection/selection_afterunselect_event.md)  | @getshort(treegrid/api/selection/selection_afterunselect_event.md)  |
 | [](treegrid/api/selection/selection_beforeselect_event.md)   | @getshort(treegrid/api/selection/selection_beforeselect_event.md)   |
 | [](treegrid/api/selection/selection_beforeunselect_event.md) | @getshort(treegrid/api/selection/selection_beforeunselect_event.md) |
+
+## Export methods
+
+| Name                                            | Description                                            |
+| ----------------------------------------------- | ------------------------------------------------------ |
+| [](treegrid/api/export/treegrid_csv_method.md)  | @getshort(treegrid/api/export/treegrid_csv_method.md)  |
+| [](treegrid/api/export/treegrid_xlsx_method.md) | @getshort(treegrid/api/export/treegrid_xlsx_method.md) |

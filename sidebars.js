@@ -2395,6 +2395,21 @@ module.exports = {
                   },
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Export methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Export methods",
+                    keywords: ['Export methods'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "grid/api/export/grid_csv_method",
+                    "grid/api/export/grid_xlsx_method"
+                  ],
+                },
               ],
             },
             "grid/features",
@@ -4199,6 +4214,21 @@ module.exports = {
                       "treegrid/api/selection/selection_beforeunselect_event",
                     ],
                   },
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Export methods",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Export methods",
+                    keywords: ['Export methods'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    "treegrid/api/export/treegrid_csv_method",
+                    "treegrid/api/export/treegrid_xlsx_method"
                   ],
                 },
               ],
