@@ -14,7 +14,7 @@ This demo application shows how to create an online examination system for an ed
 
 ## How to download
 
-Open the [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxHospital/#patients) demo and click the Download Demo button in the bottom right corner of the page.
+Open the [Online Exam System](https://dhtmlx.com/docs/products/demoApps/dhtmlxExam/#exams) demo and click the Download Demo button in the bottom right corner of the page.
 
 Complete the form to start the download. The email with the download link will be sent to you.
 
