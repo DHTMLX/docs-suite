@@ -38,3 +38,5 @@ treegrid.export.csv({
 @descr:
 
 **Related samples**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
+
+**Related article:** [Exporting TreeGrid](treegrid/usage.md#exporting-treegrid)

@@ -173,6 +173,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
+| [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
 | [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
 | [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
 | [](grid/api/grid_height_config.md)          | @getshort(grid/api/grid_height_config.md)          |
@@ -222,4 +223,6 @@ You will find the list of all the available configuration properties of a Grid c
 | Name                                    | Description                                    |
 | --------------------------------------- | ---------------------------------------------- |
 | [](grid/api/export/grid_csv_method.md)  | @getshort(grid/api/export/grid_csv_method.md)  |
+| [](grid/api/export/grid_pdf_method.md)  | @getshort(grid/api/export/grid_pdf_method.md)  |
+| [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |

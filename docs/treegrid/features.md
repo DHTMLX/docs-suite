@@ -247,7 +247,7 @@ In this section you will know how to export TreeGrid to different formats.
 
 | Topic                                                              | Description                                                                                            |
 | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| [Exporting TreeGrid to XLSX and CSV](../usage/#exporting-treegrid) | Learn how to export TreeGrid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/zyfois4q)) |
+| [Exporting TreeGrid to EXCEL, CSV, PDF, or PNG format](../usage/#exporting-treegrid) | Learn how to export TreeGrid to the necessary format  ([Example 1](https://snippet.dhtmlx.com/zyfois4q), [Example 2](https://snippet.dhtmlx.com/iyqmmcoh)) |
 
 ## How to work with TreeGrid events
 

@@ -473,7 +473,7 @@ grid.editEnd(true); // the edited data won't be saved
 
 ## Exporting Grid
 
-You can easily export data of Grid into the Excel or CSV format.
+You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
 
 ### Exporting data to Excel
 
@@ -503,6 +503,33 @@ grid.export.csv({
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
 The **csv()** method returns a CSV string with Grid data.
+
+### Exporting data to PDF
+
+The [pdf()](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
+
+~~~js
+grid.export.pdf({
+    format: "A4",
+    scale: 0.75,
+    displayHeaderFooter: true,
+    theme: "dark",
+});
+~~~
+
+**Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
+
+### Exporting data to PNG
+
+The [png()](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
+
+~~~js
+grid.export.png({
+    theme: "dark",
+});
+~~~
+
+**Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
 
 ## Repainting Grid
 

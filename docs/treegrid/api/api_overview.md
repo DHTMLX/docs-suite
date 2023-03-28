@@ -187,6 +187,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_dragmode_config.md)           | @getshort(treegrid/api/treegrid_dragmode_config.md)           |
 | [](treegrid/api/treegrid_editable_config.md)           | @getshort(treegrid/api/treegrid_editable_config.md)           |
 | [](treegrid/api/treegrid_eventhandlers_config.md)      | @getshort(treegrid/api/treegrid_eventhandlers_config.md)      |
+| [](treegrid/api/treegrid_exportstyles_config.md)      | @getshort(treegrid/api/treegrid_exportstyles_config.md)      |
 | [](treegrid/api/treegrid_footerrowheight_config.md)    | @getshort(treegrid/api/treegrid_footerrowheight_config.md)    |
 | [](treegrid/api/treegrid_grouptitletemplate_config.md) | @getshort(treegrid/api/treegrid_grouptitletemplate_config.md) |
 | [](treegrid/api/treegrid_headerrowheight_config.md)    | @getshort(treegrid/api/treegrid_headerrowheight_config.md)    |
@@ -235,4 +236,6 @@ You will find the list of all the available configuration properties of a TreeGr
 | Name                                            | Description                                            |
 | ----------------------------------------------- | ------------------------------------------------------ |
 | [](treegrid/api/export/treegrid_csv_method.md)  | @getshort(treegrid/api/export/treegrid_csv_method.md)  |
+| [](treegrid/api/export/treegrid_pdf_method.md)  | @getshort(treegrid/api/export/treegrid_pdf_method.md)  |
+| [](treegrid/api/export/treegrid_png_method.md)  | @getshort(treegrid/api/export/treegrid_png_method.md)  |
 | [](treegrid/api/export/treegrid_xlsx_method.md) | @getshort(treegrid/api/export/treegrid_xlsx_method.md) |

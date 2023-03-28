@@ -6,8 +6,6 @@ description: You can explore the png method of Chart in the documentation of the
 
 # png()
 
-### Description
-
 @short: Exports a chart to a PNG file
 
 @signature: {'png(config?: object): void;'}

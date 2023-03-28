@@ -6,8 +6,6 @@ description: You can explore the pdf method of Chart in the documentation of the
 
 # pdf()
 
-### Description
-
 @short: Exports a chart to a PDF file
 
 @signature: {'pdf(config?: object): void;'}

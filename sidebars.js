@@ -2317,6 +2317,7 @@ module.exports = {
                     "grid/api/grid_dragmode_config",
                     "grid/api/grid_editable_config",
                     "grid/api/grid_eventhandlers_config",
+                    "grid/api/grid_exportstyles_config",
                     "grid/api/grid_footerrowheight_config",
                     "grid/api/grid_headerrowheight_config",
                     "grid/api/grid_height_config",
@@ -2407,6 +2408,8 @@ module.exports = {
                   },
                   items: [
                     "grid/api/export/grid_csv_method",
+                    "grid/api/export/grid_pdf_method",
+                    "grid/api/export/grid_png_method",
                     "grid/api/export/grid_xlsx_method"
                   ],
                 },
@@ -4152,6 +4155,7 @@ module.exports = {
                     "treegrid/api/treegrid_dragmode_config",
                     "treegrid/api/treegrid_editable_config",
                     "treegrid/api/treegrid_eventhandlers_config",
+                    "treegrid/api/treegrid_exportstyles_config",
                     "treegrid/api/treegrid_footerrowheight_config",
                     "treegrid/api/treegrid_grouptitletemplate_config",
                     "treegrid/api/treegrid_headerrowheight_config",
@@ -4228,6 +4232,8 @@ module.exports = {
                   },
                   items: [
                     "treegrid/api/export/treegrid_csv_method",
+                    "treegrid/api/export/treegrid_pdf_method",
+                    "treegrid/api/export/treegrid_png_method",
                     "treegrid/api/export/treegrid_xlsx_method"
                   ],
                 },

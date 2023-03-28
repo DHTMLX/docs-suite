@@ -8,6 +8,25 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1
+------------
+
+Released on ...
+
+### New functionality
+
+#### Grid
+
+- The ability to export Grid to a PDF or PNG file:
+    - new export methods: [pdf()](grid/api/export/grid_pdf_method.md), [png()](grid/api/export/grid_png_method.md)
+    - new property: [exportStyles](grid/api/grid_exportstyles_config.md)
+
+#### TreeGrid
+
+- The ability to export TreeGrid to a PDF or PNG file:
+    - new export methods: [pdf()](treegrid/api/export/treegrid_pdf_method.md), [png()](treegrid/api/export/treegrid_png_method.md)
+    - new property: [exportStyles](treegrid/api/treegrid_exportstyles_config.md)
+
 Version 8.0.2
 ---------------
 
