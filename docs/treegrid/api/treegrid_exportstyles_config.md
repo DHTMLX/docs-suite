@@ -13,7 +13,7 @@ description: You can explore the exportStyles config of TreeGrid in the document
 @default: false
 
 @example:
-const treegrid = new dhx.Grid("treegrid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],
@@ -27,7 +27,7 @@ By default, the **exportStyles** property is disabled. Thus, when you export Tre
 If you want some styles to be exported, set string values with the absolute paths to the desired styles to the **exportStyles** array:
 
 ~~~js
-const grid = new dhx.Grid("grid_container", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
 	columns: [
 		// columns config
 	],

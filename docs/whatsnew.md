@@ -15,6 +15,10 @@ Released on ...
 
 ### New functionality
 
+#### Chart
+
+- New [exportStyles](chart/api/chart_exportstyles_config.md) property
+
 #### Grid
 
 - The ability to export Grid to a PDF or PNG file:
@@ -26,6 +30,16 @@ Released on ...
 - The ability to export TreeGrid to a PDF or PNG file:
     - new export methods: [pdf()](treegrid/api/export/treegrid_pdf_method.md), [png()](treegrid/api/export/treegrid_png_method.md)
     - new property: [exportStyles](treegrid/api/treegrid_exportstyles_config.md)
+
+### Updates
+
+#### Chart
+
+- The [pdf()](chart/api/export/chart_pdf_method.md) method was updated:
+    - new options of the `export` object are added: `theme`, `exportStyles`
+    - new options of the `pdf` object are added: `pageRanges`, `displayHeaderFooter`, `footerTemplate`, `headerTemplate` 
+- The [png()](chart/api/export/chart_png_method.md) method was updated:
+    - new options of the `export` object are added: `theme`, `exportStyles`
 
 Version 8.0.2
 ---------------

@@ -263,6 +263,7 @@ module.exports = {
                   items: [
                     "chart/api/chart_css_config",
                     "chart/api/chart_data_config",
+                    "chart/api/chart_exportstyles_config",
                     "chart/api/chart_legend_config",
                     "chart/api/chart_maxpoints_config",
                     "chart/api/chart_scales_config",

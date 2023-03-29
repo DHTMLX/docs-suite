@@ -12,7 +12,7 @@ description: You can explore the pdf export method of TreeGrid in the documentat
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
-	- `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/grid/pdf/8.1.0`
+    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/grid/pdf/8.1.0`
     - `name?: string` - (optional) the name of the exported file
     - `theme?: string` - (optional) the exported theme, "light" by default. For custom or overridden themes, enable the `exportStyles` option
     - `exportStyles?: boolean | string[]` - (optional) defines the styles that will be sent to the export service when exporting TreeGrid. Use *false* to prevent all styles from being sent to the export service

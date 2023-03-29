@@ -12,7 +12,7 @@ description: You can explore the pdf export method of Grid in the documentation 
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to PDF:
-	- `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/grid/pdf/8.1.0`
+    - `url?: string` - (optional) the url of the service that executes export and returns an exported file. This setting is optional, you should use it only if you need to specify the path to your local export service. The default value is `https://export.dhtmlx.com/grid/pdf/8.1.0`
     - `name?: string` - (optional) the name of the exported file
     - `theme?: string` - (optional) the exported theme, "light" by default. For custom or overridden themes, enable the `exportStyles` option
     - `exportStyles?: boolean | string[]` - (optional) defines the styles that will be sent to the export service when exporting Grid. Use *false* to prevent all styles from being sent to the export service
@@ -27,7 +27,7 @@ description: You can explore the pdf export method of Grid in the documentation 
             - `top?: string | number` - (optional) top margin, accepts values labeled with units (px,in,cm,mm), 10px by default
             - `bottom?: string | number` - (optional) bottom margin, accepts values labeled with units (px,in,cm,mm), *50px* by default
         - `format?: string` - (optional) the format of the output file. If set, it takes priority over the width or height options. *"A4"* by default. Check the list of all available [formats and their sizes](#list-of-formats).
-        - `pageRanges?: string` - (optional) paper ranges to print, e.g. 1-5, 8, 11-13;
+        - `pageRanges?: string` - (optional) paper ranges to print, e.g. 1-5, 8, 11-13
         - `displayHeaderFooter?: boolean` - (optional) defines whether to display the header and footer, *true* by default
         - `footerTemplate?: string` - (optional) an HTML template for the print footer. It should be valid HTML markup with following classes used to inject printing values into them:
             - `date` - (optional) formatted print date
