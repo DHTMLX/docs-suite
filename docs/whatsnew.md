@@ -22,14 +22,19 @@ Released on ...
 #### Grid
 
 - The ability to export Grid to a PDF or PNG file:
-    - new export methods: [pdf()](grid/api/export/grid_pdf_method.md), [png()](grid/api/export/grid_png_method.md)
-    - new property: [exportStyles](grid/api/grid_exportstyles_config.md)
+    - new export methods: [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md)
+    - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
 
 #### TreeGrid
 
 - The ability to export TreeGrid to a PDF or PNG file:
-    - new export methods: [pdf()](treegrid/api/export/treegrid_pdf_method.md), [png()](treegrid/api/export/treegrid_png_method.md)
-    - new property: [exportStyles](treegrid/api/treegrid_exportstyles_config.md)
+    - new export methods: [`pdf()`](treegrid/api/export/treegrid_pdf_method.md), [`png()`](treegrid/api/export/treegrid_png_method.md)
+    - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
+- New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
+    - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
+    - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
+- The ability to define whether collapsed rows should expand while hovering them over during drag-n-drop:
+    - new property: [`dragExpand`](treegrid/api/treegrid_dragexpand_config.md)
 
 ### Updates
 

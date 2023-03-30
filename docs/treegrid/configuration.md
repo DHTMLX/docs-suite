@@ -1008,6 +1008,40 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Drag-n-drop between grids](https://snippet.dhtmlx.com/43covmy2)
 
+### Drag-n-drop of multiple rows
+
+To allow a user to drag-n-drop multiple rows at once, you need to enable [multiselection](#multiple-selection-of-treegrid-cells) of rows when configuring drag-n-drop. For example:
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: data,
+    selection: "row",
+	//drag-n-drop rows inside the treegrid
+    multiselection: true,
+    dragItem: "both" // or dragItem: "row"
+});
+~~~
+
+**Related sample**: [TreeGrid. Drag-n-drop](https://snippet.dhtmlx.com/ax5vs4a8)
+
+or
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    selection: "row",
+	//drag-n-drop rows between treegrids
+    multiselection: true,
+    dragMode: "both" // or dragMode: "source"
+});
+~~~
+
 ## Selection
 
 DHTMLX TreeGrid includes the selection feature that allows highlighting TreeGrid elements depending on the chosen mode. The [](treegrid/api/treegrid_selection_config.md) property enables selection in a grid. It can take three values:
@@ -1041,6 +1075,23 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 **Related sample**: [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
+
+### Multiple selection of TreeGrid cells
+
+While setting the [selection](treegrid/configuration.md#selection) property to *"row"*, *"cell"*, or *"complex"* value, you can enable the [](treegrid/api/treegrid_multiselection_config.md) property to allow a user to select multiple TreeGrid elements:
+
+~~~js
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+		// columns config
+	],
+    multiselection: true,
+    selection: "row",
+    data: dataset
+});
+~~~
+
+Since the **multiselection** configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 
 ## Spans
 

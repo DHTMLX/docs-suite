@@ -112,7 +112,9 @@ In this section you will know how to configure the drag-n-drop functionality for
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |[Drag-n-drop inside a treegrid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the treegrid ([Example](https://snippet.dhtmlx.com/ax5vs4a8))|
 |[Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)|  Learn how to configure drag-n-drop between treegrids ([Example](https://snippet.dhtmlx.com/43covmy2))|
+|[Drag-n-drop of multiple rows](../configuration/#drag-n-drop-of-multiple-rows)	|Learn how to allow end users to drag-n-drop several rows at once|
 |[Copying of rows during drag-n-drop](../api/treegrid_dragcopy_config/)|	Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/a7pg38rr))|
+|[Expanding collapsed rows during drag-n-drop](../api/treegrid_dragexpand_config/)|Learn how to disable/enable the ability of collapsed rows to expand when you hover them over during drag-n-drop|
 
 ## How to configure sizes of TreeGrid and its cells
 
@@ -229,6 +231,7 @@ In this section you will find the ways of work with selection functionality.
 | Topic                                                | Description                                                                                                            |
 | ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [Configuring selection](../configuration/#selection) | Learn how to configure the mode of selection of TreeGrid elements ([Example](https://snippet.dhtmlx.com/v0dyh06q))     |
+|[Enabling multiselection](../configuration/#multiple-selection-of-treegrid-cells)	|Learn how to enable multi-row/multi-cell selection in TreeGrid|
 | [Working with selection](../usage_selection/)        | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell |
 | [Selection API](../../category/selection-api-1/)     | Learn how to use the API of Selection to manage the selection of TreeGrid cells                                        |
 

@@ -17,13 +17,19 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Drag-n-drop between grids](https://snippet.dhtmlx.com/43covmy2)
-
 Drag-n-drop can work in three modes:
 
 - "target" - a grid takes rows from other grids, while its rows can't be dragged out of it
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
 - "both" - a grid both takes rows from other grids and allows dragging its rows out as well
+
+**Related sample**: [TreeGrid. Drag-n-drop between grids](https://snippet.dhtmlx.com/43covmy2)
+
+**Related API:**
+
+- [dragCopy](treegrid/api/treegrid_dragcopy_config.md)
+- [dragExpand](treegrid/api/treegrid_dragexpand_config.md)
+- [dragItem](treegrid/api/treegrid_dragitem_config.md)
 
 [comment]: # (@related: treegrid/configuration.md#drag-n-drop-between-grids treegrid/initialization.md#initialize-treegrid)
 

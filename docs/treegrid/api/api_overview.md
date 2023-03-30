@@ -183,6 +183,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_css_config.md)                | @getshort(treegrid/api/treegrid_css_config.md)                |
 | [](treegrid/api/treegrid_data_config.md)               | @getshort(treegrid/api/treegrid_data_config.md)               |
 | [](treegrid/api/treegrid_dragcopy_config.md)           | @getshort(treegrid/api/treegrid_dragcopy_config.md)           |
+| [](treegrid/api/treegrid_dragexpand_config.md)           | @getshort(treegrid/api/treegrid_dragexpand_config.md)           |
 | [](treegrid/api/treegrid_dragitem_config.md)           | @getshort(treegrid/api/treegrid_dragitem_config.md)           |
 | [](treegrid/api/treegrid_dragmode_config.md)           | @getshort(treegrid/api/treegrid_dragmode_config.md)           |
 | [](treegrid/api/treegrid_editable_config.md)           | @getshort(treegrid/api/treegrid_editable_config.md)           |
@@ -194,6 +195,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_height_config.md)             | @getshort(treegrid/api/treegrid_height_config.md)             |
 | [](treegrid/api/treegrid_htmlenable_config.md)         | @getshort(treegrid/api/treegrid_htmlenable_config.md)         |
 | [](treegrid/api/treegrid_leftsplit_config.md)          | @getshort(treegrid/api/treegrid_leftsplit_config.md)          |
+| [](treegrid/api/treegrid_multiselection_config.md)          | @getshort(treegrid/api/treegrid_multiselection_config.md)          |
 | [](treegrid/api/treegrid_resizable_config.md)          | @getshort(treegrid/api/treegrid_resizable_config.md)          |
 | [](treegrid/api/treegrid_rightsplit_config.md)         | @getshort(treegrid/api/treegrid_rightsplit_config.md)         |
 | [](treegrid/api/treegrid_rootparent_config.md)         | @getshort(treegrid/api/treegrid_rootparent_config.md)         |

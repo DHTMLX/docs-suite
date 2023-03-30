@@ -1055,6 +1055,8 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
+**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
+
 or
 
 ~~~js
@@ -1069,8 +1071,6 @@ const grid = new dhx.Grid("grid", {
     dragMode: "both" // or dragMode: "source"
 });
 ~~~
-
-**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
 
 ## Keyboard Navigation
 
