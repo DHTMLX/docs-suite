@@ -109,7 +109,7 @@ and returns either a string or null.
 
 **Tip.** The callback function together with the isFolder parameter allows you to specify a template for child items only.
 
-@example:
+~~~js
 const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
@@ -125,13 +125,13 @@ const tree = new dhx.Tree("tree_container", {
         return isFolder ? null : template;
     }
 });
-@examplestop:
+~~~
 
 ### Event handlers for the template
 
 You can assign event handlers to HTML elements of a custom template via using the [eventHandlers](tree/api/tree_eventhandlers_config.md)  configuration property of Tree, for instance:
 
-@example:
+~~~js
 const tree = new dhx.Tree("tree_container", {
     template: ({ value }, isFolder) => {
         const template = `
@@ -155,7 +155,7 @@ const tree = new dhx.Tree("tree_container", {
         }
     }
 });
-@examplestop:
+~~~
 
 **Related sample**: [Tree. Handling events in template](https://snippet.dhtmlx.com/hg3f50td)
 

@@ -8,7 +8,7 @@ description: You can explore the disabledDates config of Calendar in the documen
 
 @short: Optional. Allows disabling some date intervals, day labels are dimmed
 
-@signature: {'disabledDates?: (a: Date) => boolean;'}
+@signature: {'disabledDates?: (date: Date) => boolean;'}
 
 @example:
 const calendar = new dhx.Calendar("calendar_container", {
