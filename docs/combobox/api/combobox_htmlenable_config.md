@@ -31,10 +31,6 @@ You can disable rendering of the HTML content and display it as plain text via s
 
 **Related sample**: [Combobox. Disable HTML rendering](https://snippet.dhtmlx.com/e4dolhfs)
 
+**Related article:** [HTML content of ComboBox options](combobox/configuration.md/#html-content-of-combobox-options)
+
 @changelog: added in v7.3
-
-@descr:
-#### Related article
-
-[HTML content of ComboBox options](combobox/configuration.md/#html-content-of-combobox-options)
-

@@ -8,7 +8,7 @@ description: You can explore the filter method of DataCollection in the document
 
 @short: filters data items in a component
 
-@signature: {'filter(rule?: IFilterCallback | IFilterMode, config?: IFilterConfig): void;'}
+@signature: {'filter(rule?: function | object, config?: object): void;'}
 
 @params:
 - `rule: function | object` - the filtering criteria
@@ -97,6 +97,7 @@ grid.data.filter({
             return value === "New";
         }
     return false;
+    }
 });
 ~~~
 

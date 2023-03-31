@@ -8,7 +8,7 @@ description: You can explore the map method of DataCollection in the documentati
 
 @short: iterates through all items of the component
 
-@signature: {'map(callback: DataCallback<T>): T[];'}
+@signature: {'map(callback: function): object[];'}
 
 @params:
 - `callback: function` - a function that will be called for each item of a component

@@ -8,7 +8,7 @@ description: You can explore the copy method of DataCollection in the documentat
 
 @short: creates a copy of an item at the defined position
 
-@signature: {'copy(id: Id | Id[], index: number, target?: IDataCollection): Id | Id[];'}
+@signature: {'copy(id: string | string[], index: number, target?: object): string | string[];'}
 
 @params:
 - `id: string | string[]` - the id of an item to copy

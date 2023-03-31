@@ -8,7 +8,7 @@ description: You can explore the updateUrl method of DataProxy in the documentat
 
 @short: updates the initial URL and parameters that were specified when initializing proxy
 
-@signature: {'updateUrl?: (url?: string, params?: any) => void;'}
+@signature: {'updateUrl?: (url?: string, params?: object) => void;'}
 
 @params:
 - `url: string` - optional, a new URL. If not specified, the currently existing URL will be used.

@@ -8,12 +8,10 @@ description: You can explore the setValue method of Combo Box in the documentati
 
 @short: selects option(s) in ComboBox
 
-@signature: {'setValue(ids: Id | Id[]): void;'}
+@signature: {'setValue(ids: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: (string | number) | (string | number)[]` - the ID(s) of items from data collection that should be selected in Combo Box
-
-@descr:
 
 @example:
 // selects one option

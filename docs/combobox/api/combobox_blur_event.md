@@ -14,7 +14,7 @@ description: You can explore the blur event of Combo Box in the documentation of
 combobox.events.on("blur", function() {
     console.log("the focus is off the element");
 });
-@examplestop:
+@descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 

@@ -24,7 +24,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 As a function takes one parameter:
 
-- **count** - (*number*) the number of options
+- `count: number` - the number of options
 
 and should return a template for displaying a result.
 

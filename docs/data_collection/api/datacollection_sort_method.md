@@ -8,66 +8,18 @@ description: You can explore the sort method of DataCollection in the documentat
 
 @short: sorts data items in a component
 
-@signature: {'sort(rule?: ISortMode, config?: ISortConfig): void;'}
+@signature: {'sort(rule?: object, config?: object): void;'}
 
 @params:
-- `rule: object` - an object with parameters for sorting
-- `config: object` - defines the parameter of sorting
+- `rule: object` - an object with parameters for sorting. The parameters are:
+	- `by: string` - the id of a data field (a column of Grid)
+	- `dir: function` - the direction of sorting "asc" or "desc"
+	- `as: function` -  a function that specifies the type to sort data as
+	- `rule: function` -  optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
+- `config: object` - defines the parameter of sorting. It may contain one property:
+	- `smartSorting: boolean` - specifies whether a sorting rule should be applied each time after changing the data set
 
 @example:
-grid.data.sort({
-    by:"a",
-    dir:"desc",
-    as: function(item){
-        return item.toUpperCase(); 
-    }
-});
-
-// cancels applied sorting rules
-grid.data.sort();
-
-@descr:
-
-**Related sample**: [Data. Sorting](https://snippet.dhtmlx.com/lz351u47)
-
-The **rule** object has the following attributes:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>by</b></td>
-			<td>(<i>string</i>) the id of a data field (a column of Grid)</td>
-		</tr>
-        <tr>
-			<td><b>dir</b></td>
-			<td>(<i>function</i>) the direction of sorting "asc" or "desc"</td>
-		</tr>
-        <tr>
-			<td><b>as</b></td>
-			<td>(<i>function</i>) a function that specifies the type to sort data as</td>
-		</tr>
-        <tr>
-			<td><b>rule</b></td>
-			<td>(<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</td>
-		</tr>
-    </tbody>
-</table>
-
-{{note Calling the method without parameters will discard all applied sorting rules.}}
-
-The **config** parameter may contain one property:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>smartSorting</b></td>
-			<td>(<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set
-            </td>
-		</tr>
-    </tbody>
-</table>	
-
-~~~js {8}
 grid.data.sort({
     by:"a",
     dir:"desc",
@@ -78,7 +30,15 @@ grid.data.sort({
 		smartSorting: true
 	}
 });
-~~~
+
+// cancels applied sorting rules
+grid.data.sort();
+
+@descr:
+
+**Related sample**: [Data. Sorting](https://snippet.dhtmlx.com/lz351u47)
+
+{{note Calling the method without parameters will discard all applied sorting rules.}}
 
 ### Custom sorting
 

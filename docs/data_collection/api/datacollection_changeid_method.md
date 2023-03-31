@@ -8,7 +8,7 @@ description: You can explore the changeId method of DataCollection in the docume
 
 @short: changes the id of an element of a data collection
 
-@signature: {'changeId(id: Id, newId?: Id, silent?: boolean): void;'}
+@signature: {'changeId(id: string, newId?: string, silent?: boolean): void;'}
 
 @params:
 - `id: string` - the old id of an item

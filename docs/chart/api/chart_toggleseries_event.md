@@ -12,7 +12,10 @@ description: You can explore the toggleSeries event of Chart in the documentatio
 
 @params:
 - `id: string` - the id of a toggled series
-- `pieLike: object | undefined` - an object with the configuration of a series in a legend (only for Pie, Pie 3D and Donut charts)
+- `pieLike: object | undefined` - an object with the configuration of a series in a legend (only for Pie, Pie 3D and Donut charts). The object can contain the following parameters:
+    - `color: string` - the color of the legend item
+    - `id: string` - the id of the legend item
+    - `text: string` - the text label of the legend item
 
 @example:
 chart.events.on("toggleSeries", function(id){
@@ -22,9 +25,3 @@ chart.events.on("toggleSeries", function(id){
 @descr:
 
 **Related sample**: [Chart. Events](https://snippet.dhtmlx.com/a1b9yfwo)
-
-The **pieLike** object can contain the following parameters:
-
-- **color** - (*string*) the color of the legend item
-- **id** - (*string*) the id of the legend item
-- **text** - (*string*) the text label of the legend item
