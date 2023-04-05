@@ -10,6 +10,13 @@ description: You can explore the disabledDates config of Calendar in the documen
 
 @signature: {'disabledDates?: (date: Date) => boolean;'}
 
+@params:
+The function receives one parameter:
+
+- `date: Date` - a date object
+
+and must return a boolean value to define whether a passed date should be blocked (if *true*, the date is inactive).
+
 @example:
 const calendar = new dhx.Calendar("calendar_container", {
 	disabledDates: function(date) {
@@ -29,12 +36,6 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 @descr:
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
-
-The function passed to the method receives one parameter:
-
-- **date** (*Date*) - a date object
-
-and must return a boolean value to define whether a passed date should be blocked (if *true*, the date is inactive).
 
 @changelog: added in v6.4
 

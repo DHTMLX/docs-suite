@@ -8,7 +8,7 @@ description: You can explore the beforeValidate event of the Checkbox Group cont
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: ICheckboxGroupValue) => boolean | void;'}
+@signature: {'beforeValidate: (value: {[id: string]: boolean | string}) => boolean | void;'}
 
 @params:
 - `value: object` - the value to be validated. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.

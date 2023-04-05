@@ -8,9 +8,7 @@ description: You can explore the align Config of Form in the documentation of th
 
 @short: Optional. Sets the alignment of controls inside the control group 
 
-@signature: {'align?: FlexDirection;'}
-
-@values: "start", "center", "end", "between", "around", "evenly"
+@signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
 
 @example:
 const form = new dhx.Form("form_container", {

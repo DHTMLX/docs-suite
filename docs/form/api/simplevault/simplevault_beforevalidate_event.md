@@ -8,7 +8,7 @@ description: You can explore the beforeValidate event of the Simple Vault contro
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: ISimpleVaultValue[]) => boolean | void;'}
+@signature: {'beforeValidate: (value: object[]) => boolean | void;'}
 
 @params:
 - `value: array` - the value to be validated

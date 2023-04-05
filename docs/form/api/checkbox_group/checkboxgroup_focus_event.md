@@ -8,16 +8,17 @@ description: You can explore the focus event of the Checkbox Group control of Fo
 
 @short: fires when a CheckboxGroup control has received focus
 
-@signature: focus: (value: ICheckboxGroupValue, id: string) => void;
+@signature: {'focus: (value: {[id: string]: boolean | string}, id: string) => void;'}
 
 @params:
-- `value: object` - the current value of the control
+- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
 - `id: string` - the id of the checkbox of the CheckboxGroup control
 
 @example:
 form.getItem("checkboxGroup").events.on("focus", (value, id) => {
     console.log("focus", value, id);
 });
-@examplestop:
+
+@descr:
 
 @changelog: added in v7.2

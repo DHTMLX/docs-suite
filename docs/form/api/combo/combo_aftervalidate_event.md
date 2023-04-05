@@ -8,15 +8,15 @@ description: You can explore the afterValidate event of the Combo Box control of
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: Id | Id[], isValidate: boolean) => void;'}
+@signature: {'afterValidate: (ids: (string | number) | (string | number)[], isValidate: boolean) => void;'}
 
 @params:
-- `value: (string | number) | (string | number)[]` - the ID(s) of the validated option(s) from data collection 
+- `ids: (string | number) | (string | number)[]` - the ID(s) of the validated option(s) from data collection 
 - `isValidate: boolean` - the result of validation
 
 @example:
-form.getItem("combo").events.on("afterValidate", function(value, isValidate) {
-    console.log("afterValidate", value, isValidate);
+form.getItem("combo").events.on("afterValidate", function(ids, isValidate) {
+    console.log("afterValidate", ids, isValidate);
 });
 
 @descr:

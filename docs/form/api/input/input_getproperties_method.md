@@ -8,7 +8,7 @@ description: You can explore the getProperties method of the Input control of Fo
 
 @short: returns an object with the available configuration attributes of the control
 
-@signature: {'getProperties(): IInputProps;'}
+@signature: {'getProperties(): object;'}
 
 @returns:
 An object with the available attributes of the control and their values.

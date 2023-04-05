@@ -8,7 +8,7 @@ description: You can explore the afterShow event of the Timepicker control of Fo
 
 @short: fires after a control is shown
 
-@signature: {'afterShow: (value: string | ITimeObject) => void;'}
+@signature: {'afterShow: (value: string | object) => void;'}
 
 @params:
 - `value: string | object` - the current value of the control

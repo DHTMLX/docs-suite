@@ -8,11 +8,11 @@ description: You can explore the beforeChangeProperties event of Form in the doc
 
 @short: fires before configuration attributes of a Form control are changed dynamically
 
-@signature: {'beforeChangeProperties: (name: string, props: any) => boolean | void;'}
+@signature: {'beforeChangeProperties: (name: string, properties: any) => boolean | void;'}
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
-- `props: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with [configuration attributes](form/api/form_setproperties_method.md) of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

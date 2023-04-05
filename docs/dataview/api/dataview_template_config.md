@@ -8,7 +8,11 @@ description: You can explore the template config of DataView in the documentatio
 
 @short: Optional. Specifies a template for DataView items
 
-@signature: {'template?: (item: any) => string;'}
+@signature: {'template?: (item: object) => string;'}
+
+@params:
+The template function takes one parameter:
+- `item: object` - an object of a data item
 
 @example:
 const dataview = new dhx.DataView("dataview_container", {
@@ -26,17 +30,6 @@ const dataview = new dhx.DataView("dataview_container", {
 @descr:
 
 **Related sample**: [Dataview. With template](https://snippet.dhtmlx.com/d6l6grr7)
-
-The template function takes one parameter:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>item</b></td>
-			<td>(<i>object</i>) an object of a data item</td>
-		</tr>
-    </tbody>
-</table>
 
 [comment]: # (@related: dataview/configuration.md#template-for-dataview-items)
 

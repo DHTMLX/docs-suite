@@ -8,7 +8,7 @@ description: You can explore the beforeShow event of the Timepicker control of F
 
 @short: fires before a control is shown
 
-@signature: {'beforeShow: (value: string | ITimeObject) => boolean | void;'}
+@signature: {'beforeShow: (value: string | object) => boolean | void;'}
 
 @params:
 - `value: string | object` - the current value of the control

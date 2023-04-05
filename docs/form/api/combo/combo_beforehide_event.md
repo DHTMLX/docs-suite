@@ -8,18 +8,18 @@ description: You can explore the beforeHide event of the Combo Box control of Fo
 
 @short: fires before a control is hidden
 
-@signature: {'beforeHide: (value: Id | Id[], init: boolean) => boolean | void;'}
+@signature: {'beforeHide: (ids: (string | number) | (string | number)[], init: boolean) => boolean | void;'}
 
 @params:
-- `value: (string | number) | (string | number)[]` - the ID(s) of the option(s) that are currently selected in the control
+- `ids: (string | number) | (string | number)[]` - the ID(s) of the option(s) that are currently selected in the control
 - `init: boolean` - *true*, if the event is triggered on the control initialization; otherwise, *false*
 
 @returns:
 Return `false` to prevent a control from being hidden; otherwise, `true`.
 
 @example:
-form.getItem("combo").events.on("beforeHide", function(value, init) {
-    console.log("beforeHide", value, init);
+form.getItem("combo").events.on("beforeHide", function(ids, init) {
+    console.log("beforeHide", ids, init);
     return true;
 });
 

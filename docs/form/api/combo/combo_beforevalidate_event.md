@@ -8,17 +8,17 @@ description: You can explore the beforeValidate event of the Combo Box control o
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: Id | Id[]) => boolean | void;'}
+@signature: {'beforeValidate: (ids: (string | number) | (string | number)[]) => boolean | void;'}
 
 @params:
-- `value: string | number | (string | number)[]` - the ID(s) of the option(s) from data collection to be validated
+- `ids: string | number | (string | number)[]` - the ID(s) of the option(s) from data collection to be validated
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.
 
 @example:
-form.getItem("combo").events.on("beforeValidate", function(value) {
-    console.log("beforeValidate", value);
+form.getItem("combo").events.on("beforeValidate", function(ids) {
+    console.log("beforeValidate", ids);
     return true;
 });
 

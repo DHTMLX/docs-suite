@@ -8,10 +8,10 @@ description: You can explore the setValue method of the Combo Box control of For
 
 @short: sets the value for a Combo control
 
-@signature: {'setValue(ids: Id | Id[]): void;'}
+@signature: {'setValue(ids: (string | number) | (string | number)[]): void;'}
 
 @params:
-- `value: (string | number) | (string | number)[]` - the ID(s) of options from data collection that should be selected in the control
+- `ids: (string | number) | (string | number)[]` - the ID(s) of options from data collection that should be selected in the control
 
 @descr:
 

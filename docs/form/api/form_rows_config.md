@@ -8,7 +8,7 @@ description: You can explore the rows Config of Form in the documentation of the
 
 @short: Optional. Arranges controls inside the control group vertically
 
-@signature: {'rows?: IBlock;'}
+@signature: {'rows?: object[];'}
 
 @example:
 const form = new dhx.Form("form_container", {

@@ -8,7 +8,7 @@ description: You can explore the afterHide event of the Checkbox Group control o
 
 @short: fires after a control or its checkbox is hidden
 
-@signature: {'afterHide: (value: ICheckboxGroupValue, id?: string, init: boolean) => void;'} 
+@signature: {'afterHide: (value: {[id: string]: boolean | string}, id?: string, init: boolean) => void;'} 
 
 @params:
 - `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.

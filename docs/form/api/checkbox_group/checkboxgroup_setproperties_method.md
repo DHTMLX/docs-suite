@@ -8,11 +8,11 @@ description: You can explore the setProperties method of the Checkbox Group cont
 
 @short:  allows changing available configuration attributes of the control dynamically
 
-@signature: {'setProperties(arg?: string | ICheckboxGroupProps, props?: ICheckboxGroupItemProps): void;'}
+@signature: {'setProperties(arg?: string | object, properties?: object): void;'}
 
 @params:
 - `arg: string | object` - optional, either the id of a checkbox, or an object with the available attributes of the CheckboxGroup control and their new values
-- `props: object` - optional, an object with the available attributes of the checkbox and their new values
+- `properties: object` - optional, an object with the available attributes of the checkbox and their new values
 
 @example:
 // 1. Changes values in the configuration of the CheckboxGroup control
@@ -48,7 +48,18 @@ form.getItem("checkboxGroup").setProperties("first", {
 
 @descr:
 
+We recommend that you apply the second way of using the method if you want to change the configuration of a separate checkbox in the CheckboxGroup control:
+
+~~~js
+form.getItem("checkboxGroup").setProperties("first", {
+    text: "New Text",
+    padding: 20
+});
+~~~
+
+:::info
 The method invokes the [](form/api/checkbox_group/checkboxgroup_afterchangeproperties_event.md) and [](form/api/checkbox_group/checkboxgroup_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following configuration attributes of the **CheckboxGroup** control:
 
@@ -140,14 +151,5 @@ It is possible to change values of the following configuration attributes of a *
 		</tr>
 	</tbody>
 </table>
-
-We recommend that you apply the second way of using the method if you want to change the configuration of a separate checkbox in the CheckboxGroup control:
-
-~~~js
-form.getItem("checkboxGroup").setProperties("first", {
-    text: "New Text",
-    padding: 20
-});
-~~~
 
 @changelog: added in v7.0

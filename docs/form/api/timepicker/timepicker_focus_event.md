@@ -8,7 +8,7 @@ description: You can explore the focus event of the Timepicker control of Form i
 
 @short: fires when a Timepicker control has received focus
 
-@signature: focus: (value: string | ITimeObject) => void;
+@signature: focus: (value: string | object) => void;
 
 @params:
 - `value: string | object` - the current value of the control

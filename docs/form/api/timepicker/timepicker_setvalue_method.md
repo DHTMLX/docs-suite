@@ -8,7 +8,7 @@ description: You can explore the setValue method of the Timepicker control of Fo
 
 @short: sets the value for a TimePicker control
 
-@signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
+@signature: {'setValue(value: Date | number | string | any[] | object): void;'}
 
 @params:
 - `value: Date | number | string | array | object` - the value to be set for the control

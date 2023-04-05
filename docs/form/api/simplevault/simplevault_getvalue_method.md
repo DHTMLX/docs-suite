@@ -8,7 +8,7 @@ description: You can explore the getValue method of the Simple Vault control of 
 
 @short: returns the current value of a SimpleVault control
 
-@signature: {'getValue(): ISimpleVaultValue[];'}
+@signature: {'getValue(): object[];'}
 
 @returns:
 An array with the current value of the control.

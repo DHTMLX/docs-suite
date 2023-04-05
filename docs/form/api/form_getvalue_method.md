@@ -8,7 +8,7 @@ description: You can explore the getValue method of Form in the documentation of
 
 @short: gets current values/states of controls
 
-@signature: {'getValue(asFormData?: boolean): FormData | IAnyObj;'}
+@signature: {'getValue(asFormData?: boolean): object;'}
 
 @params:
 - `asFormData: boolean` - optional, defines whether values of Form controls should be returned as Form Data

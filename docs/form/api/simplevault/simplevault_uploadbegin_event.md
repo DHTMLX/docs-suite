@@ -8,7 +8,7 @@ description: You can explore the uploadBegin event of the Simple Vault control o
 
 @short: fires when file upload begins
 
-@signature: {'uploadBegin: (files: ISimpleVaultValue[], value: ISimpleVaultValue[]) => void;'} 
+@signature: {'uploadBegin: (files: object[], value: object[]) => void;'} 
 
 @params:
 - `files: array` - the array of files to be uploaded

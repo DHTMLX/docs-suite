@@ -10,7 +10,23 @@ description: You can explore the palette config of Colorpicker in the documentat
 
 @signature: {'palette?: string[][];'}
 
-@default: false
+@default: 
+
+~~~js
+// Default array of colors of the Colorpicker
+const palette = [
+	["#D4DAE4","#B0B8CD","#949DB1","#727A8C","#5E6677","#3F4757","#1D2534"],
+	["#FFCDD2","#FE9998","#F35C4E","#E94633","#D73C2D","#CA3626","#BB2B1A"],
+	["#F9E6AD","#F4D679","#EDB90F","#EAA100","#EA8F00","#EA7E00","#EA5D00"],
+	["#BCE4CE","#90D2AF","#33B579","#36955F","#247346","#1D5B38","#17492D"],
+	["#BDF0E9","#92E7DC","#02D7C5","#11B3A5","#018B80","#026B60","#024F43"],
+	["#B3E5FC","#81D4FA","#29B6F6","#039BE5","#0288D1","#0277BD","#01579B"],
+	["#AEC1FF","#88A3F9","#5874CD","#2349AE","#163FA2","#083596","#002381"],
+	["#C5C0DA","#9F97C1","#7E6BAD","#584A8F","#4F4083","#473776","#3A265F"],
+	["#D6BDCC","#C492AC","#A9537C","#963A64","#81355A","#6E3051","#4C2640"],
+	["#D2C5C1","#B4A09A","#826358","#624339","#5D4037","#4E342E","#3E2723"]
+];
+~~~
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
@@ -27,22 +43,5 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
 @descr: 
 
 **Related sample**: [Colorpicker. Custom palette and custom colors](https://snippet.dhtmlx.com/097jjhb8)
-
-This is the **default** array of colors of the Colorpicker:
-
-~~~js
-const palette = [
-	["#D4DAE4","#B0B8CD","#949DB1","#727A8C","#5E6677","#3F4757","#1D2534"],
-	["#FFCDD2","#FE9998","#F35C4E","#E94633","#D73C2D","#CA3626","#BB2B1A"],
-	["#F9E6AD","#F4D679","#EDB90F","#EAA100","#EA8F00","#EA7E00","#EA5D00"],
-	["#BCE4CE","#90D2AF","#33B579","#36955F","#247346","#1D5B38","#17492D"],
-	["#BDF0E9","#92E7DC","#02D7C5","#11B3A5","#018B80","#026B60","#024F43"],
-	["#B3E5FC","#81D4FA","#29B6F6","#039BE5","#0288D1","#0277BD","#01579B"],
-	["#AEC1FF","#88A3F9","#5874CD","#2349AE","#163FA2","#083596","#002381"],
-	["#C5C0DA","#9F97C1","#7E6BAD","#584A8F","#4F4083","#473776","#3A265F"],
-	["#D6BDCC","#C492AC","#A9537C","#963A64","#81355A","#6E3051","#4C2640"],
-	["#D2C5C1","#B4A09A","#826358","#624339","#5D4037","#4E342E","#3E2723"]
-];
-~~~
 
 [comment]: # (@related: colorpicker/how_to_start.md#initialize-colorpicker colorpicker/configuration.md)

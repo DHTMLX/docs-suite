@@ -8,7 +8,7 @@ description: You can explore the getProperties method of the Container control o
 
 @short: returns an object with the available configuration properties of the control and their values
 
-@signature: getProperties(): IBaseLayoutItem;
+@signature: getProperties(): object;
 
 @returns:
 An object with the available properties of the control and their values.
@@ -36,6 +36,7 @@ form.getItem("container").getProperties();
 },
 
 @descr:
+
 The returned object of the Container control can contain the following properties:
 
 - `height` - *string, number, "content"* - the height of a control

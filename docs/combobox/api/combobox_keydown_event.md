@@ -18,7 +18,8 @@ description: You can explore the keydown event of Combo Box in the documentation
 combobox.events.on("keydown", function(event, id) {
     console.log(event, id);
 });
-@examplestop:
+
+@descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 

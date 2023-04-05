@@ -8,7 +8,7 @@ description: You can explore the afterValidate event of the Checkbox Group contr
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: ICheckboxGroupValue, isValidate: boolean) => void;'} 
+@signature: {'afterValidate: (value: {[id: string]: boolean | string}, isValidate: boolean) => void;'} 
 
 @params:
 - `value: object` - the validated value. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.

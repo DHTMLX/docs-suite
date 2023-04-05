@@ -8,7 +8,7 @@ description: You can explore the dragMode config of DataView in the documentatio
 
 @short: Optional. Enables drag-n-drop in DataView
 
-@signature: {'dragMode?: boolean;'}
+@signature: {'dragMode?: "target" | "source" | "both";'}
 
 @example:
 const dataview = new dhx.DataView("dataview_container", { 

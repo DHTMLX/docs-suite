@@ -8,7 +8,7 @@ description: You can explore the setProperties method of the Combo Box control o
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: {'setProperties(propertyConfig: IComboProps): void;'}
+@signature: {'setProperties(properties: object): void;'}
 
 @params:
 - `properties: object` - an object with the available attributes of the control and their new values
@@ -21,7 +21,9 @@ form.getItem("combo").setProperties({
 
 @descr:
 
+:::info
 The method invokes the [](form/api/combo/combo_afterchangeproperties_event.md) and [](form/api/combo/combo_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following configuration attributes of the **Combo** control:
 

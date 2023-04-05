@@ -8,9 +8,7 @@ description: You can explore the multiselection config of DataView in the docume
 
 @short: Optional. Enables selection of multiple DataView items, sets the mode of multiselection
 
-@signature: {'multiselection?: boolean | MultiselectionMode;'}
-
-@values: true, false, "click", "ctrlClick"
+@signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 
 @example:
 const dataview = new dhx.DataView("dataview_container", {multiselection:true});

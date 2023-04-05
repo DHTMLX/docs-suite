@@ -8,7 +8,7 @@ description: You can explore the setProperties method of the Button control of F
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: {'setProperties(propertyConfig: IButtonProps): void;'}
+@signature: {'setProperties(properties: object): void;'}
 
 @params:
 - `properties: object` - an object with the available attributes of the control and their new values
@@ -20,8 +20,9 @@ form.getItem("button").setProperties({
 });
  
 @descr:
-
+:::info
 The method invokes the [](form/api/button/button_afterchangeproperties_event.md) and [](form/api/button/button_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following configuration attributes of the **Button** control:
 

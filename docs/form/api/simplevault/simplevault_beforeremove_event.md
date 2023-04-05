@@ -8,7 +8,7 @@ description: You can explore the beforeRemove event of the Simple Vault control 
 
 @short: fires before a file is removed from the data collection
 
-@signature: {'beforeRemove: (file: ISimpleVaultValue) => boolean | void;'}
+@signature: {'beforeRemove: (file: object) => boolean | void;'}
 
 @params:
 - `file: object` - the file object

@@ -8,7 +8,7 @@ description: You can explore the getFocusItem method of DataView in the document
 
 @short: returns the object of an item in focus
 
-@signature: {'getFocusItem(): T;'}
+@signature: {'getFocusItem(): object;'}
 
 @returns:
 The object of an item in focus.

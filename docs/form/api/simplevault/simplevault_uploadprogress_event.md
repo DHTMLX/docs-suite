@@ -8,7 +8,7 @@ description: You can explore the uploadProgress event of the Simple Vault contro
 
 @short: fires on each percent of files uploading
 
-@signature: {'uploadProgress: (progress: number, value: ISimpleVaultValue[]) => void;'}
+@signature: {'uploadProgress: (progress: number, value: object[]) => void;'}
 
 @params:
 - `progress: number` - the current percent of files uploading, a number from 0 to 100

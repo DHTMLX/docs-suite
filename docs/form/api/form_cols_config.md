@@ -8,7 +8,7 @@ description: You can explore the cols Config of Form in the documentation of the
 
 @short: Optional. Arranges controls inside the control group horizontally
 
-@signature: {'cols?: IBlock;'}
+@signature: {'cols?: object[];'}
 
 @example:
 const form = new dhx.Form("form_container", {

@@ -8,7 +8,7 @@ description: You can explore the afterValidate event of the Timepicker control o
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: string | ITimeObject, isValidate: boolean) => void;'}
+@signature: {'afterValidate: (value: string | object, isValidate: boolean) => void;'}
 
 @params:
 - `value: string | object` - the validated value

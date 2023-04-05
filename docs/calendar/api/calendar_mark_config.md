@@ -10,6 +10,13 @@ description: You can explore the mark config of Calendar in the documentation of
 
 @signature: {'mark?: (date: Date) => string;'}
 
+@params:
+The function receives one parameter:
+
+- `date: Date` - a date object 
+
+and must return a string with the name of the CSS class or an empty string.
+
 @example:
 <style>
     .highlight-date {
@@ -29,11 +36,5 @@ const calendar = new dhx.Calendar("calendar_container", {
 
 @descr:
 **Related sample**: [Calendar. Marked and disabled dates](https://snippet.dhtmlx.com/ic5oeiga)
-
-The function passed to the method receives one parameter:
-
-- **date** (*Date*) - a date object 
-
-and must return a string with the name of the CSS class or an empty string.
 
 [comment]: # (@related: calendar/how_to_start.md#initialize-calendar calendar/configuring.md#highlighteddates)
