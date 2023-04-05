@@ -8,7 +8,7 @@ description: You can explore the editCell method of Grid in the documentation of
 
 @short: enables editing of a Grid cell
 
-@signature: {'editCell(rowId: Id, colId: Id, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea" | "multiselect"): void;'}
+@signature: {'editCell(rowId: string | number, colId: string | number, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea" | "multiselect"): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

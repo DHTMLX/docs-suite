@@ -8,7 +8,7 @@ description: You can explore the showRow method of Grid in the documentation of 
 
 @short: makes a specified row visible on a page
 
-@signature: {'showRow(rowId: Id): void;'}
+@signature: {'showRow(rowId: string | number): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

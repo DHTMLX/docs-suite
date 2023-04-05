@@ -8,7 +8,7 @@ description: You can explore the headerCellDblClick event of Grid in the documen
 
 @short: fires on double-click on a grid footer cell
 
-@signature: {'headerCellDblClick: (col: ICol, events: MouseEvent) => void;'}
+@signature: {'headerCellDblClick: (col: object, events: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

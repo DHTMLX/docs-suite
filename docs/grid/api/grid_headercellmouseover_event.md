@@ -8,7 +8,7 @@ description: You can explore the headerCellMouseOver event of Grid in the docume
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: {'headerCellMouseOver: (col: ICol, events: MouseEvent) => void;'}
+@signature: {'headerCellMouseOver: (col: object, events: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

@@ -8,7 +8,7 @@ description: You can explore the resize event of Grid in the documentation of th
 
 @short: fires on resizing a column
 
-@signature: {'resize: (col: ICol, events: MouseEvent) => void;'}
+@signature: {'resize: (col: object, events: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

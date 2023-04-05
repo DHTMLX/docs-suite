@@ -10,7 +10,7 @@ description: You can explore the afterRowResize event of Grid in the documentati
 
 @short: fires after the height of a row is changed
 
-@signature: afterRowResize: (row: IRow, events: Event, currentHeight: number) => void;
+@signature: afterRowResize: (row: object, events: Event, currentHeight: number) => void;
 
 @params:
 - `row: object` - an object with a row configuration

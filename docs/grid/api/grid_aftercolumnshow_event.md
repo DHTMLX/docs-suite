@@ -8,7 +8,7 @@ description: You can explore the afterColumnShow event of Grid in the documentat
 
 @short: fires after a column is shown
 
-@signature: {'afterColumnShow: (col: ICol) => void;'}
+@signature: {'afterColumnShow: (col: object) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

@@ -8,7 +8,7 @@ description: You can explore the afterResizeEnd event of Grid in the documentati
 
 @short: fires after resizing of a column is ended
 
-@signature: {'afterResizeEnd: (col: ICol, e: MouseEvent) => void;'}
+@signature: {'afterResizeEnd: (col: object, e: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

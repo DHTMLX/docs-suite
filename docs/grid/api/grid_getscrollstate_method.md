@@ -8,7 +8,7 @@ description: You can explore the getScrollState method of Grid in the documentat
 
 @short: returns the coordinates of a position a grid has been scrolled to
 
-@signature: {'getScrollState(): ICoords;'}
+@signature: {'getScrollState(): object;'}
 
 @returns:
 An object with x,y coordinates of a position the grid has been scrolled to.

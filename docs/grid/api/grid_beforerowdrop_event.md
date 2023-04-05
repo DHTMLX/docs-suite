@@ -8,10 +8,13 @@ description: You can explore the beforeRowDrop event of Grid in the documentatio
 
 @short: fires before the user has finished dragging and released the mouse button over a target row
 
-@signature: {'beforeRowDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
+@signature: {'beforeRowDrop: (data: object, events: MouseEvent) => void | boolean;'}
 
 @params:
-- `data: object` - data object
+- `data: object` - data object. It contains the following parameters:
+	- `start: string | number` - the id of a row, from which the dragging process has started
+	- `source: array` - an array with ids of dragged rows
+	- `target: string | number` - the id of a potential target row
 - `events: MouseEvent` - a native HTML event object 
 
 @returns:
@@ -26,25 +29,6 @@ grid.events.on("beforeRowDrop", function(data, events){
 @descr:
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
-
-The data object contains the following parameters:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>start</b></td>
-			<td>(<i>string, number</i>) the id of a row, from which the dragging process has started</td>
-		</tr>
-        <tr>
-			<td><b>source</b></td>
-			<td>(<i>array</i>) an array with ids of dragged rows</td>
-		</tr>
-        <tr>
-			<td><b>target</b></td>
-			<td>(<i>string, number</i>) the id of a potential target row</td>
-		</tr>
-    </tbody>
-</table>
 
 @changelog: added in v7.0
 

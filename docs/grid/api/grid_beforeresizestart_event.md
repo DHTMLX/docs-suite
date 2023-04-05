@@ -8,7 +8,7 @@ description: You can explore the beforeResizeStart event of Grid in the document
 
 @short: fires before resizing of a column has started
 
-@signature: {'beforeResizeStart: (col: ICol, e: MouseEvent) => boolean | void;'}
+@signature: {'beforeResizeStart: (col: object, e: MouseEvent) => boolean | void;'}
 
 @params:
 - `col: object` - an object with a column configuration

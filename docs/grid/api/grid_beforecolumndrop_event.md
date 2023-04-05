@@ -10,10 +10,13 @@ description: You can explore the beforeColumnDrop event of Grid in the documenta
 
 @short: fires before the user has finished dragging and released the mouse button over a target column
 
-@signature: {'beforeColumnDrop: (data: IDragInfo, events: MouseEvent) => void | boolean;'}
+@signature: {'beforeColumnDrop: (data: object, events: MouseEvent) => void | boolean;'}
 
 @params:
-- `data: object` - data object
+- `data: object` - data object. It contains the following parameters:
+	- `start: string | number` - the id of a column, from which the dragging process has started
+	- `source: array` - an array with ids of dragged columns
+	- `target: string | number` - the id of a potential target column
 - `events: MouseEvent` - a native HTML event object
 
 @returns:
@@ -34,25 +37,6 @@ const grid = new dhx.Grid("grid", {
 grid.events.on("beforeColumnDrop", ({ target }) => target !== "population");
 
 @descr:
-
-The data object contains the following parameters:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>start</b></td>
-			<td>(<i>string, number</i>) the id of a column, from which the dragging process has started</td>
-		</tr>
-        <tr>
-			<td><b>source</b></td>
-			<td>(<i>array</i>) an array with ids of dragged columns</td>
-		</tr>
-        <tr>
-			<td><b>target</b></td>
-			<td>(<i>string, number</i>) the id of a potential target column</td>
-		</tr>
-    </tbody>
-</table>
 
 @changelog:
 

@@ -8,7 +8,7 @@ description: You can explore the getSpan method of Grid in the documentation of 
 
 @short: returns an object with spans
 
-@signature: {'getSpan(rowId: Id, colId: Id): ISpan;'}
+@signature: {'getSpan(rowId: string | number, colId: string | number): object;'}
 
 @params:
 - `rowId: string | number` - the id of a row
@@ -23,7 +23,7 @@ const span = grid.getSpan("10","a");
 
 @descr:
 
-A returned **ISpan** object contains the following properties:
+A returned object contains the following properties:
 
 <table>
 	<tbody>

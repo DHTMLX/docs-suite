@@ -8,7 +8,7 @@ description: You can explore the hideColumn method of Grid in the documentation 
 
 @short: hides a column of Grid
 
-@signature: {'hideColumn(colId: Id): void;'}
+@signature: {'hideColumn(colId: string | number): void;'}
 
 @params:
 - `colId: string | number` - the id of a column

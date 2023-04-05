@@ -8,7 +8,7 @@ description: You can explore the showColumn method of Grid in the documentation 
 
 @short: makes a specified column visible on a page
 
-@signature: {'showColumn(colId: Id): void;'}
+@signature: {'showColumn(colId: string | number): void;'}
 
 @params:
 - `colId: string | number` - the id of a column

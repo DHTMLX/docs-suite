@@ -8,7 +8,7 @@ description: You can explore the beforeSelect event of Grid in the documentation
 
 @short: fires before selecting a cell
 
-@signature: {'beforeSelect: (row: IRow, col: ICol) => boolean | void;'}
+@signature: {'beforeSelect: (row: object, col: object) => boolean | void;'}
 
 @params:
 
