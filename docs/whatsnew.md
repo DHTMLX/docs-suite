@@ -24,12 +24,16 @@ Released on ...
 - The ability to export Grid to a PDF or PNG file:
     - new export methods: [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md)
     - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
+- The ability to set individual sets of editor options for each cell of the column:
+    - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
 
 #### TreeGrid
 
 - The ability to export TreeGrid to a PDF or PNG file:
     - new export methods: [`pdf()`](treegrid/api/export/treegrid_pdf_method.md), [`png()`](treegrid/api/export/treegrid_png_method.md)
     - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
+- The ability to set individual sets of editor options for each cell of the column:
+    - now it is possible to define the [`options`](treegrid/api/api_treegridcolumn_properties.md) property of a column as a callback function
 - New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
     - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
     - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
