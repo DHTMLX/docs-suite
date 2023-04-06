@@ -22,13 +22,14 @@ description: You can explore the pdf export method of TreeGrid in the documentat
         - `width?: string | number` - (optional) the width of the output page. As a value of the property, you can specify a number or a string with a unit
         - `height?: string | number` - (optional) the height of the output page. As a value of the property, you can specify a number or a string with a unit
         - `margin?: object` - (optional) margins of the output page:
-            - `left?: string | number` - (optional) left margin, accepts values labeled with units (px,in,cm,mm), 10px by default
-            - `right?: string | number` - (optional) right margin, accepts values labeled with units (px,in,cm,mm), 10px by default
-            - `top?: string | number` - (optional) top margin, accepts values labeled with units (px,in,cm,mm), 10px by default
-            - `bottom?: string | number` - (optional) bottom margin, accepts values labeled with units (px,in,cm,mm), *50px* by default
-        - `format?: string` - (optional) the format of the output file. If set, it takes priority over the width or height options. *"A4"* by default. Check the list of all available [formats and their sizes](#list-of-formats).
+            - `left?: string | number` - (optional) left margin, accepts values labeled with units (px,in,cm,mm)
+            - `right?: string | number` - (optional) right margin, accepts values labeled with units (px,in,cm,mm)
+            - `top?: string | number` - (optional) top margin, accepts values labeled with units (px,in,cm,mm)
+            - `bottom?: string | number` - (optional) bottom margin, accepts values labeled with units (px,in,cm,mm)
+        - `format?: string | boolean` - (optional) the format of the output file. If set, it takes priority over the width or height options. *"A4"* by default. Setting the format to `false` resets the default format and outputs data on one page.
+        Check the list of all available [formats and their sizes](#list-of-formats).
         - `pageRanges?: string` - (optional) paper ranges to print, e.g. 1-5, 8, 11-13;
-        - `displayHeaderFooter?: boolean` - (optional) defines whether to display the header and footer, *true* by default
+        - `displayHeaderFooter?: boolean` - (optional) defines whether to display the header and footer, *false* by default
         - `footerTemplate?: string` - (optional) an HTML template for the print footer. It should be valid HTML markup with following classes used to inject printing values into them:
             - `date` - (optional) formatted print date
             - `title` - (optional) document name
@@ -57,10 +58,6 @@ treegrid.export.pdf({
 @descr:
 
 :::info
-By default, TreeGrid is exported with the footer displaying the current page number and number of total pages.
-:::
-
-:::info
 It is necessary to set sufficient margin for correct display of `headerTemplate`/`footerTemplate`.
 :::
 
@@ -70,19 +67,20 @@ If you use TreeGrid in conjunction with [Pagination](pagination.md), only the di
 
 ## List of formats
 
-| Format    | Size               |
-| --------- | ------------------ |
-| "Letter"  | (8.5in x 11in)     |
-| "Legal"   | (8.5in x 14in)     |
-| "Tabloid" | (11in x 17in)      |
-| "Ledger"  | (17in x 11in)      |
-| "A0"      | (33.1in x 46.8in)  |
-| "A1"      | (23.4in x 33.1in)  |
-| "A2"      | (16.54in x 23.4in) |
-| "A3"      | (11.7in x 16.54in) |
-| "A4"      | (8.27in x 11.7in)  |
-| "A5"      | (5.83in x 8.27in)  |
-| "A6"      | (4.13in x 5.83in)  |
+| Format           | Size               |
+| ---------------- | ------------------ |
+| "Letter"         | (8.5in x 11in)     |
+| "Legal"          | (8.5in x 14in)     |
+| "Tabloid"        | (11in x 17in)      |
+| "Ledger"         | (17in x 11in)      |
+| "A0"             | (33.1in x 46.8in)  |
+| "A1"             | (23.4in x 33.1in)  |
+| "A2"             | (16.54in x 23.4in) |
+| "A3"             | (11.7in x 16.54in) |
+| "A4"(by default) | (8.27in x 11.7in)  |
+| "A5"             | (5.83in x 8.27in)  |
+| "A6"             | (4.13in x 5.83in)  |
+| false            | Paper format       |
 
 **Related samples**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
 
