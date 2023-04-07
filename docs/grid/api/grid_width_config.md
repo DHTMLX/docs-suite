@@ -10,6 +10,9 @@ description: You can explore the width config of Grid in the documentation of th
 
 @signature: {'width?: number | "auto";'}
 
+@descr:
+{{pronote The **width: "auto"** option requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 @example:
 const grid = new dhx.Grid("grid_container", {
 	columns: [
