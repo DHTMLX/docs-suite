@@ -23,7 +23,26 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-In case these options aren't set in the TreeGrid configuration, the component will take the size of the container.
+:::info
+If the **width** and **height** options aren't set in the TreeGrid configuration, the TreeGrid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and TreeGrid won't be visible on the page.
+:::
+
+### Autowidth/autoheight for Grid
+
+You may enable the auto width and auto height modes of TreeGrid. For this, set the values of the [width](treegrid/api/treegrid_width_config.md) and [height](treegrid/api/treegrid_height_config.md) properties to "auto". In these modes, TreeGrid will expand on adding new columns/rows, and will shrink on removing columns/rows not to occupy external place.
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [  
+        // columns config
+    ], 
+    width: "auto",   
+    height: "auto",  
+    data: dataset
+});
+~~~
+
+This functionality is available from v8.1.
 
 ## Columns
 

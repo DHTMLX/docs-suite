@@ -128,7 +128,7 @@ In this section you can learn how to configure the size of Grid and its cells.
 
 | Topic                                                                                       | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to specify the necessary size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                |
+| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to set specific or automatic size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/zfrpe22d)) |
 | [Max width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/ku3cfaux))            |
 | [Min width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the minimum width which can be set for a column  ([Example](https://snippet.dhtmlx.com/x5hmpi9d))           |

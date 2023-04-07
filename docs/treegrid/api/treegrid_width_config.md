@@ -6,9 +6,9 @@ description: You can explore the width config of TreeGrid in the documentation o
 
 # width
 
-@short: Optional. Sets the width of a grid
+@short: Optional. Sets the width of a grid or adjusts it automatically to the content
 
-@signature: {'width?: number;'}
+@signature: {'width?: number | "auto";'}
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -21,6 +21,10 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-[comment]: # (@related: treegrid/configuration.md#widthheight treegrid/initialization.md#initialize-treegrid)
+**Related sample:** [TreeGrid. Custom sizes](https://snippet.dhtmlx.com/7w8jxgft)
 
-[comment]: # (@relatedapi: treegrid/api/treegrid_height_config.md)
+**Related article:** [Width/height](treegrid/configuration.md#widthheight)
+
+@changelog: 
+
+- The **"auto"** option was added in v8.1

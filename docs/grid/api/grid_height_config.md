@@ -6,9 +6,9 @@ description: You can explore the height config of Grid in the documentation of t
 
 # height
 
-@short: Optional. Sets the height of a grid
+@short: Optional. Sets the height of a grid or adjusts it automatically to the content
 
-@signature: {'height?: number;'}
+@signature: {'height?: number | "auto";'}
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -23,4 +23,8 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
 
-[comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#widthheight)
+**Related article:** [Width/height](grid/configuration.md#widthheight)
+
+@changelog: 
+
+- The **"auto"** option was added in v8.1
