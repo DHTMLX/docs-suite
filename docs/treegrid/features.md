@@ -17,6 +17,7 @@ In this section you can find out how to initialize TreeGrid, how to load data in
 | Topic                                                           | Description                                                    |
 | --------------------------------------------------------------- | -------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                      | Learn how to initialize TreeGrid                               |
+| [Initialization of a collapsed TreeGrid](../configuration/#collapsed-mode) | Learn how to initialize a TreeGrid in the collapsed state |
 | [Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m) | The example shows how to initialize TreeGrid inside Pagination |
 
 

@@ -57,6 +57,20 @@ If needed, you may set the minimal and maximal height for the container via the 
 </style>
 ~~~
 
+## Collapsed mode
+
+To initialize a treegrid in the collapsed state, use the [collapsed](treegrid/api/treegrid_collapsed_config.md) property:
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [  
+        // columns config
+    ],  
+    data: dataset,
+    collapsed: true
+});
+~~~
+
 ## Columns
 
 It is possible to adjust the configuration of grid columns via the corresponding [](treegrid/api/treegrid_columns_config.md) option. As a value it takes an array with objects each of which contains config of a column.

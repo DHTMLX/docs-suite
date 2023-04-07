@@ -179,6 +179,7 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_autoheight_config.md)         | @getshort(treegrid/api/treegrid_autoheight_config.md)         |
 | [](treegrid/api/treegrid_autowidth_config.md)          | @getshort(treegrid/api/treegrid_autowidth_config.md)          |
 | [](treegrid/api/treegrid_bottomsplit_config.md)        | @getshort(treegrid/api/treegrid_bottomsplit_config.md)        |
+| [](treegrid/api/treegrid_collapsed_config.md)        | @getshort(treegrid/api/treegrid_collapsed_config.md)        |
 | [](treegrid/api/treegrid_columns_config.md)            | @getshort(treegrid/api/treegrid_columns_config.md)            |
 | [](treegrid/api/treegrid_css_config.md)                | @getshort(treegrid/api/treegrid_css_config.md)                |
 | [](treegrid/api/treegrid_data_config.md)               | @getshort(treegrid/api/treegrid_data_config.md)               |

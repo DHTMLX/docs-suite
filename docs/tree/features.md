@@ -17,6 +17,7 @@ In this section you can find out how to initialize Tree, how to load data into t
 | Topic                                                    | Description                    |
 | -------------------------------------------------------- | ------------------------------ |
 | [Basic initialization](../initialization_of_dhtmlxtree/) | Learn how to initialize a Tree |
+| [Initialization of a collapsed Tree](../configuration/#collapsed-mode) | Learn how to initialize a Tree in the collapsed state |
 
 
 ### Loading data into Tree

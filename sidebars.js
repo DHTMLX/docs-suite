@@ -3947,6 +3947,7 @@ module.exports = {
                   items: [
                     "tree/api/tree_autoload_config",
                     "tree/api/tree_checkbox_config",
+                    "tree/api/tree_collapsed_config",
                     "tree/api/tree_css_config",
                     "tree/api/tree_data_config",
                     "tree/api/tree_dragcopy_config",
@@ -4148,6 +4149,7 @@ module.exports = {
                     "treegrid/api/treegrid_autoheight_config",
                     "treegrid/api/treegrid_autowidth_config",
                     "treegrid/api/treegrid_bottomsplit_config",
+                    "treegrid/api/treegrid_collapsed_config",
                     "treegrid/api/treegrid_columns_config",
                     "treegrid/api/treegrid_css_config",
                     "treegrid/api/treegrid_data_config",
