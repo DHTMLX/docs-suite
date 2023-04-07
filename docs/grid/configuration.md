@@ -29,9 +29,9 @@ const grid = new dhx.Grid("grid_container", {
 If the **width** and **height** options aren't set in the Grid configuration, the Grid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and Grid won't be visible on the page.
 :::
 
-### Autowidth/autoheight for Grid
+### Autoheight for Grid
 
-**If you use PRO version of DHTMLX Grid**, you may enable the auto width and auto height modes of Grid. For this, set the values of the [width](grid/api/grid_width_config.md) and [height](grid/api/grid_height_config.md) properties to "auto". In these modes, Grid will expand on adding new columns/rows, and will shrink on removing columns/rows not to occupy external place.
+**If you use PRO version of DHTMLX Grid**, you may enable the auto height mode of Grid. For this, set the value of the [height](grid/api/grid_height_config.md) property to "auto". In this mode, Grid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -45,6 +45,19 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 This functionality is available from v8.1.
+
+If needed, you may set the minimal and maximal height for the container via the **min-height** and **max-height** CSS properties:
+
+~~~html
+<div class="grid" id="grid_container"></div>
+
+<style>
+    .grid {
+        min-height: 400px;
+        max-height: 600px;
+    }
+</style>
+~~~
 
 ## Columns
 

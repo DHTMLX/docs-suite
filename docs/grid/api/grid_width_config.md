@@ -6,12 +6,9 @@ description: You can explore the width config of Grid in the documentation of th
 
 # width
 
-@short: Optional. Sets the width of a grid or adjusts it automatically to the content
+@short: Optional. Sets the width of a grid
 
-@signature: {'width?: number | "auto";'}
-
-@descr:
-{{pronote The **width: "auto"** option requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+@signature: {'width?: number;'}
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -27,7 +24,3 @@ const grid = new dhx.Grid("grid_container", {
 **Related sample**: [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
 
 **Related article:** [Width/height](grid/configuration.md#widthheight)
-
-@changelog: 
-
-- The **"auto"** option was added in v8.1

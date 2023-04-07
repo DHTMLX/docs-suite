@@ -27,22 +27,35 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 If the **width** and **height** options aren't set in the TreeGrid configuration, the TreeGrid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and TreeGrid won't be visible on the page.
 :::
 
-### Autowidth/autoheight for Grid
+### Autoheight for TreeGrid
 
-You may enable the auto width and auto height modes of TreeGrid. For this, set the values of the [width](treegrid/api/treegrid_width_config.md) and [height](treegrid/api/treegrid_height_config.md) properties to "auto". In these modes, TreeGrid will expand on adding new columns/rows, and will shrink on removing columns/rows not to occupy external place.
+You may enable the auto height mode of TreeGrid. For this, set the value of the [height](treegrid/api/treegrid_height_config.md) property to "auto". In this mode, TreeGrid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
 
 ~~~js
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
     ], 
-    width: "auto",   
+    width: 700,   
     height: "auto",  
     data: dataset
 });
 ~~~
 
 This functionality is available from v8.1.
+
+If needed, you may set the minimal and maximal height for the container via the **min-height** and **max-height** CSS properties:
+
+~~~html
+<div class="treegrid" id="treegrid_container"></div>
+
+<style>
+    .treegrid {
+        min-height: 400px;
+        max-height: 600px;
+    }
+</style>
+~~~
 
 ## Columns
 

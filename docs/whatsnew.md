@@ -26,7 +26,7 @@ Released on ...
     - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
 - The ability to set individual sets of editor options for each cell of the column:
     - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
-- The ability [to set automatic width/height for Grid](grid/configuration.md#autowidthautoheight-for-grid)
+- The ability [to set automatic height for Grid](grid/configuration.md#autoheight-for-grid)
 
 #### TreeGrid
 
@@ -35,7 +35,7 @@ Released on ...
     - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
 - The ability to set individual sets of editor options for each cell of the column:
     - now it is possible to define the [`options`](treegrid/api/api_treegridcolumn_properties.md) property of a column as a callback function
-- The ability [to set automatic width/height for TreeGrid](treegrid/configuration.md#autowidthautoheight-for-grid)
+- The ability [to set automatic height for TreeGrid](treegrid/configuration.md#autoheight-for-treegrid)
 - New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
     - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
     - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
