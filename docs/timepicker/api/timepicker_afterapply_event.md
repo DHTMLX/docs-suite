@@ -8,7 +8,7 @@ description: You can explore the afterApply event of Timepicker in the documenta
 
 @short: fires after saving the timepicker value
 
-@signature: {'afterApply: (value: string | ITimeObject) => void;'}
+@signature: {'afterApply: (value: string | object) => void;'}
 
 @params:
 - `value: string | object` - the value of a timepicker

@@ -8,7 +8,7 @@ description: You can explore the getSelected method of Menu in the documentation
 
 @short: returns an array of IDs of selected items
 
-@signature: {'getSelected(): Id[];'}
+@signature: {'getSelected(): (string | number)[];'}
 
 @returns:
 An array of string/number values with IDs of selected items.

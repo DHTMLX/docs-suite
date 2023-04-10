@@ -8,11 +8,15 @@ description: You can explore the show method of Popup in the documentation of th
 
 @short: shows a Popup
 
-@signature: {'show(node: HTMLElement, config?: IShowConfig): void;'}
+@signature: {'show(node: HTMLElement, config?: object): void;'}
 
 @params:
 - `node: HTMLElement` - mandatory, the container to place a popup in
-- `config: object` - optional, the configuration object of a popup
+- `config: object` - optional, the configuration object of a popup. It can contain the properties below:
+	- `centering: boolean` - defines whether a popup should be centered relative to the element, <i>true</i> by default
+	- `auto: boolean` - enables autopositioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup
+	- `mode: string` - the position relative to the element to show a popup at: "left", "right", "bottom" (default), "top"
+	- `indent: number` - the offset of a popup relative to the element
 
 @example:
 <div id="popup_container"></div>
@@ -26,29 +30,6 @@ popup.show("popup_container");
 **Related samples**:
 - [Popup. Auto positioning](https://snippet.dhtmlx.com/bz1ekc71)
 - [Popup. Show position](https://snippet.dhtmlx.com/bu4uj2ik)
-
-The **config** object can contain the properties below:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>centering</b></td>
-			<td>(<i>boolean</i>) defines whether a popup should be centered relative to the element, <i>true</i> by default</td>
-		</tr>
-        <tr>
-			<td><b>auto</b></td>
-			<td>(<i>boolean</i>) enables autopositioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</td>
-		</tr>
-        <tr>
-			<td><b>mode</b></td>
-			<td>(<i>string</i>) the position relative to the element to show a popup at: "left", "right", "bottom" (default), "top"</td>
-		</tr>
-        <tr>
-			<td><b>indent</b></td>
-			<td>(<i>number</i>) the offset of a popup relative to the element</td>
-		</tr>
-    </tbody>
-</table>
 
 @changelog:
 The **indent** property of the **config** parameter is added in v6.1.

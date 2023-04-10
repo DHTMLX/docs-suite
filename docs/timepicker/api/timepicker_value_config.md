@@ -8,7 +8,7 @@ description: You can explore the value config of Timepicker in the documentation
 
 @short: Optional. The time value to be set on initialization of the timepicker
 
-@signature: {'value?: Date | number | string | any[] | ITimeObject;'}
+@signature: {'value?: Date | number | string | any[] | object;'}
 
 @example:
 // the value as a Date object 

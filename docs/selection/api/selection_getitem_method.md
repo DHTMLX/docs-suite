@@ -8,7 +8,7 @@ description: You can explore the getItem method of Selection in the documentatio
 
 @short: returns the object of a selected item
 
-@signature: {'getItem(): any;'}
+@signature: {'getItem(): object | array;'}
 
 @returns:
 Either an object of a selected item, or an array of selected items.

@@ -8,7 +8,7 @@ description: You can explore the inputBlur event of Ribbon in the documentation 
 
 @short: fires when a control is blurred
 
-@signature: {'inputBlur: (id: Id) => void;'}
+@signature: {'inputBlur: (id: (string | number)) => void;'}
 
 @params:
 - `id: string | number` - the ID of a new control

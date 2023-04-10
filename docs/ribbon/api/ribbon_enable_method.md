@@ -8,7 +8,7 @@ description: You can explore the enable method of Ribbon in the documentation of
 
 @short: enables a disabled item(s) of Ribbon
 
-@signature: {'enable(ids: Id | Id[]): void;'}
+@signature: {'enable(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, one ID or an array of IDs of items

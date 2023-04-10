@@ -8,7 +8,7 @@ description: You can explore the getState method of Ribbon in the documentation 
 
 @short: gets current values/states of controls
 
-@signature: {'getState(): IState;'}
+@signature: {'getState(): object;'}
 
 @returns:
 An object with IDs of controls and their values/states.

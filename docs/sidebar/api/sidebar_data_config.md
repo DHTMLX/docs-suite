@@ -8,7 +8,7 @@ description: You can explore the data config of Sidebar in the documentation of 
 
 @short: Optional. Specifies an array of data objects to set into Sidebar
 
-@signature: {'data?: any[] | TreeCollection<ISidebarElement>;'}
+@signature: {'data?: object[];'}
 
 @example:
 const sidebar = dhx.Sidebar("sidebar_container", {

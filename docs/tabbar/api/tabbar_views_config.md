@@ -8,7 +8,20 @@ description: You can explore the views config of Tabbar in the documentation of 
 
 @short: Required. Defines the configuration of tabs
 
-@signature: {'views: ICellConfig[];'}
+@signature: {'views: object[];'}
+
+@params:
+The **views** array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
+
+- `id: string` - the id of a tab
+- `tab: string` - the name of a tab
+- `tabCss: string` - the name of the CSS class used for a tab
+- `css: string` - the name of the CSS class used for a cell
+- `header: string` - the header of a cell
+- `html: string` - HTML content for a tab
+- `padding: number | string` - the distance between the content of a cell and the border of tabbar
+- `tabWidth: number | string` - the width of a tab
+- `tabHeight: number | string` - the height of a tab
 
 @example:
 const tabbar = new dhx.Tabbar("tabbar_container", {
@@ -24,19 +37,7 @@ const tabbar = new dhx.Tabbar("tabbar_container", {
 
 **Related sample**: [Tabbar. Tab size](https://snippet.dhtmlx.com/yy841z3j)
 
-1\. The **views** array contains a set of objects that describe configuration of tabs. Each tab object may include the following properties:
-
-- <b>id</b> - the id of a tab
-- <b>tab</b> - the name of a tab
-- <b>tabCss</b> - the name of the CSS class used for a tab
-- <b>css</b> - the name of the CSS class used for a cell
-- <b>header</b> - the header of a cell
-- <b>html</b> - HTML content for a tab
-- <b>padding</b> - the distance between the content of a cell and the border of tabbar
-- <b>tabWidth</b> - the width of a tab
-- <b>tabHeight</b> - the height of a tab
-
-2\. In case you specify both the sizes for a separate tab and the sizes for all tabs, the sizes set for a separate tab are a priority. For example:
+1\. In case you specify both the sizes for a separate tab and the sizes for all tabs, the sizes set for a separate tab are a priority. For example:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container",{
@@ -51,7 +52,7 @@ const tabbar = new dhx.Tabbar("tabbar_container",{
 
 As a result, the height of a tab is 45 and the width is 100.
 
-3\. Here are some notes on defining the sizes of a tab when the [mode](tabbar/api/tabbar_mode_config.md) option is set in the configuration object of a Tabbar:
+2\. Here are some notes on defining the sizes of a tab when the [mode](tabbar/api/tabbar_mode_config.md) option is set in the configuration object of a Tabbar:
 
 - If the mode of displaying a tabbar is set to "top"|"bottom", there is no the ability to define the height for a separate tab. <br/>By default, the width of the tabs is adjusted to their content. The default height of the tabs is 45px. 
 
