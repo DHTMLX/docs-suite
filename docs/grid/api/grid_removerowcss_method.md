@@ -8,7 +8,7 @@ description: You can explore the removeRowCss method of Grid in the documentatio
 
 @short: removes a style from a row
 
-@signature: {'removeRowCss(rowId: Id, css: string): void;'}
+@signature: {'removeRowCss(rowId: string | number, css: string): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

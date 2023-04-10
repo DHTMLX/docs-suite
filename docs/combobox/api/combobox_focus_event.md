@@ -14,7 +14,8 @@ description: You can explore the focus event of Combo Box in the documentation o
 combobox.events.on("focus", function() {
     console.log("the focus is on the element");
 });
-@examplestop:
+
+@descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 

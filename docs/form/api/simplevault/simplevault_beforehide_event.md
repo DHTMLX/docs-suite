@@ -8,7 +8,7 @@ description: You can explore the beforeHide event of the Simple Vault control of
 
 @short: fires before a control is hidden
 
-@signature: {'beforeHide: (value: ISimpleVaultValue[], init: boolean) => boolean | void;'}
+@signature: {'beforeHide: (value: object[], init: boolean) => boolean | void;'}
 
 @params:
 - `value: array` - the current value of the control

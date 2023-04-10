@@ -8,7 +8,7 @@ description: You can explore the send method of the Simple Vault control of Form
 
 @short: sends a POST request for file upload to a server-side URL
 
-@signature: {'send(params?: IParams): void;'}
+@signature: {'send(params?: object): void;'}
 
 @params:
 - `params: object` - optional, an object with additional parameters for a request

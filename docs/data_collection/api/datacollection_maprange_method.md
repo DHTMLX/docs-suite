@@ -8,7 +8,7 @@ description: You can explore the mapRange method of DataCollection in the docume
 
 @short: returns a new array of the items correspond to the specified parameters
 
-@signature: {'mapRange(from: number, to: number, callback: DataCallback<T>): T[];'}
+@signature: {'mapRange(from: number, to: number, callback: function): object[];'}
 
 @params:
 - `from: number` - the initial position of an item in the range

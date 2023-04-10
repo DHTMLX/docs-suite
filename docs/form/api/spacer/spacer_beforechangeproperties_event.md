@@ -8,10 +8,10 @@ description: You can explore the beforeChangeProperties event of the Spacer cont
 
 @short: fires before configuration attributes of the control are changed dynamically
 
-@signature: {'beforeChangeProperties: (properties: IBaseLayoutItem) => boolean | void;'}
+@signature: {'beforeChangeProperties: (properties: object) => boolean | void;'}
 
 @params:
-- `properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with [configuration attributes](form/api/spacer/spacer_setproperties_method.md) of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

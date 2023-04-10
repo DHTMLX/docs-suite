@@ -8,7 +8,7 @@ description: You can explore the beforeHide event of the Timepicker control of F
 
 @short: fires before a control is hidden
 
-@signature: {'beforeHide: (value: string | ITimeObject, init: boolean) => boolean | void;'}
+@signature: {'beforeHide: (value: string | object, init: boolean) => boolean | void;'}
 
 @params:
 - `value: string | object` - the current value of the control

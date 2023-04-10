@@ -8,7 +8,7 @@ description: You can explore the getProperties method of the Radiogroup control 
 
 @short: returns an object with the available configuration attributes of the control
 
-@signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
+@signature: {'getProperties(id?: string): object;'}
 
 @params:
 - `id: string` - optional, the id of a radio button
@@ -138,13 +138,13 @@ The returned object of the **RadioGroup** control can contain the following conf
     </tbody>
 </table>
 
-### RadioButton properties
+The returned object of a **radio button** of the RadioGroup control can contain the following configuration attributes:
 
 <table>
 	<tbody>
 		<tr>
 			<td><b>height</b></td>
-			<td>(<i>string|number|"content"</i>) the height of a control</td>
+			<td>(<i>string|number|"content"</i>) the height of a radio button</td>
 		</tr>
 		<tr>
 			<td><b>padding</b></td>
@@ -156,7 +156,7 @@ The returned object of the **RadioGroup** control can contain the following conf
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
+			<td>(<i>string|number|"content"</i>) the width of a radio button</td>
 		</tr>
     </tbody>
 </table>

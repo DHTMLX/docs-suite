@@ -8,10 +8,13 @@ description: You can explore the clear method of Form in the documentation of th
 
 @short: clears a form
 
-@signature: {'clear(method?: ClearMethod): void;'}
+@signature: {'clear(method?: "value" | "validation"): void;'}
 
 @params:
-- `method: string` - optional, the method of clearing a form
+- `method: string` - optional, the method of clearing a form:
+    - "value" - clears only form values
+    - "validation" - clears only form validation
+    - without parameters - clears both form values and validation
 
 @example:
 // clears only form validation
@@ -26,12 +29,6 @@ form.clear();
 @descr:
 
 **Related sample**: [Form. Clear form](https://snippet.dhtmlx.com/a64ih4ih)
-
-The method may clear a form in one of three ways:
-
-- "value" - clears only form values
-- "validation" - clears only form validation
-- without parameters - clears both form values and validation
 
 @changelog: added in v6.1
 

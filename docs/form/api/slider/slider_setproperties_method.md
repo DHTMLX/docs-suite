@@ -8,10 +8,10 @@ description: You can explore the setProperties method of the Slider control of F
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: {'setProperties(propertyConfig: ISliderProps): void;'}
+@signature: {'setProperties(properties: object): void;'}
 
 @params:
-- `propertyConfig: object` - an object with the available attributes of the control and their new values
+- `properties: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("slider").setProperties({ 
@@ -22,7 +22,9 @@ form.getItem("slider").setProperties({
 
 @descr:
 
+:::info
 The method invokes the [](form/api/slider/slider_afterchangeproperties_event.md) and [](form/api/slider/slider_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following configuration attributes of the **Slider** control:
 

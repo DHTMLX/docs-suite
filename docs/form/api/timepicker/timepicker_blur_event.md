@@ -8,7 +8,7 @@ description: You can explore the blur event of the Timepicker control of Form in
 
 @short: fires when a Timepicker control has lost focus
 
-@signature: blur: (value: string | ITimeObject) => void;
+@signature: blur: (value: string | object) => void;
 
 @params:
 - `value: string | object` - the current value of the control

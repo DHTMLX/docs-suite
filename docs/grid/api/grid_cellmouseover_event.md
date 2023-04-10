@@ -8,7 +8,7 @@ description: You can explore the cellMouseOver event of Grid in the documentatio
 
 @short: fires on moving the mouse pointer over a grid cell
 
-@signature: {'cellMouseOver: (row: IRow, col: ICol, e: MouseEvent) => void;'}
+@signature: {'cellMouseOver: (row: object, col: object, e: MouseEvent) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

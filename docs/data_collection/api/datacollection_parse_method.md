@@ -8,7 +8,7 @@ description: You can explore the parse method of DataCollection in the documenta
 
 @short: loads data from a local data source
 
-@signature: {'parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;'}
+@signature: {'parse(data: object[] | string, driver?: object | string): void;'}
 
 @params:
 - `data: array | string` - the data to load

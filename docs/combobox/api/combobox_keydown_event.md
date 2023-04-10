@@ -8,7 +8,7 @@ description: You can explore the keydown event of Combo Box in the documentation
 
 @short: fires when any key is pressed and the element of Combobox is in focus
 
-@signature: keydown: (event: KeyboardEvent, id: Id | undefined) => void;
+@signature: keydown: (event: KeyboardEvent, id: string | number | undefined) => void;
 
 @params:
 - `event` - a native KeyboardEvent object
@@ -18,7 +18,8 @@ description: You can explore the keydown event of Combo Box in the documentation
 combobox.events.on("keydown", function(event, id) {
     console.log(event, id);
 });
-@examplestop:
+
+@descr:
 
 **Related sample**: [Combobox. Events](https://snippet.dhtmlx.com/n70eqx5l)
 

@@ -8,7 +8,7 @@ description: You can explore the eachSeries method of Chart in the documentation
 
 @short: iterates over Chart series
 
-@signature: {'eachSeries(handler: (seria: ISeria) => any): any[];'}
+@signature: {'eachSeries(handler: (seria: object[]) => any): any[];'}
 
 @params:
 - `handler: function` - a handler function that takes an array with series objects as a parameter

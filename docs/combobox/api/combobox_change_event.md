@@ -8,7 +8,7 @@ description: You can explore the change event of Combo Box in the documentation 
 
 @short: fires when a new option is selected
 
-@signature: {'change: (ids: Id | Id[]) => void;'}
+@signature: {'change: (ids: string | number | (string | number)[]) => void;'}
 
 @params:
 - `ids: string | number | array` - the id(s) of a newly selected option(s)

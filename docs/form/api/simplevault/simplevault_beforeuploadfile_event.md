@@ -8,7 +8,7 @@ description: You can explore the beforeUploadFile event of the Simple Vault cont
 
 @short: fires before file upload begins
 
-@signature: {'beforeUploadFile: (file: ISimpleVaultValue, value: ISimpleVaultValue[]) => boolean | void;'}
+@signature: {'beforeUploadFile: (file: object, value: object[]) => boolean | void;'}
 
 @params:
 - `file: object` - the file object

@@ -8,7 +8,7 @@ description: You can explore the afterRemove event of the Simple Vault control o
 
 @short: fires after a file is removed from the data collection
 
-@signature: {'afterRemove: (file: ISimpleVaultValue) => void;'}
+@signature: {'afterRemove: (file: object) => void;'}
 
 @params:
 - `file: object` - the file object

@@ -8,7 +8,7 @@ description: You can explore the afterSelect event of Grid in the documentation 
 
 @short: fires after selecting a cell
 
-@signature: {'afterSelect: (row: IRow, col: ICol) => void;'}
+@signature: {'afterSelect: (row: object, col: object) => void;'}
 
 @params:
 

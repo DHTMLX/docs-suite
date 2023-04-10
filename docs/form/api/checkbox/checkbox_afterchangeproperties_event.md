@@ -8,10 +8,10 @@ description: You can explore the afterChangeProperties event of the Checkbox con
 
 @short: fires after configuration attributes of the control have been changed dynamically
 
-@signature: {'afterChangeProperties: (properties: ICheckboxProps) => void;'}
+@signature: {'afterChangeProperties: (properties: object) => void;'}
 
 @params:
-- `properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with [configuration attributes](form/api/checkbox/checkbox_setproperties_method.md) of the control and their new values
 
 @example:
 form.getItem("checkbox").events.on("afterChangeProperties", function(properties) {

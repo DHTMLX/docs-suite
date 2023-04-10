@@ -8,7 +8,7 @@ description: You can explore the headerCellClick event of Grid in the documentat
 
 @short: fires on click on a grid header cell
 
-@signature: {'headerCellClick: (col: ICol, events: MouseEvent) => void;'}
+@signature: {'headerCellClick: (col: object, events: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

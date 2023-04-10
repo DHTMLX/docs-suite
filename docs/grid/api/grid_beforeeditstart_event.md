@@ -8,7 +8,7 @@ description: You can explore the beforeEditStart event of Grid in the documentat
 
 @short: fires before editing of a cell has started
 
-@signature: {'beforeEditStart: (row: IRow, col: ICol, editorType: EditorType) => boolean | void;'}
+@signature: {'beforeEditStart: (row: object, col: object, editorType: string) => boolean | void;'}
 
 @params:
 - `row: object` - an object with a row configuration

@@ -8,10 +8,10 @@ description: You can explore the afterChangeProperties event of the Container co
 
 @short: fires after properties of a Container control have been changed dynamically
 
-@signature: afterChangeProperties: (properties: IBaseLayoutItem) => void;
+@signature: afterChangeProperties: (properties: object) => void;
 
 @params:
-- `properties: object` - an object with configuration properties of the control and their new values
+- `properties: object` - an object with [configuration properties](form/api/container/container_setproperties_method.md) of the control and their new values
 
 @example:
 form.getItem("container").events.on("afterChangeProperties", function(properties) {

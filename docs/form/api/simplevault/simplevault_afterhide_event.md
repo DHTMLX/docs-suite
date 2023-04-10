@@ -8,7 +8,7 @@ description: You can explore the afterHide event of the Simple Vault control of 
 
 @short: fires after a control is hidden
 
-@signature: {'afterHide: (value: ISimpleVaultValue[], init: boolean) => void;'}
+@signature: {'afterHide: (value: object[], init: boolean) => void;'}
 
 @params:
 - `value: array` - the current value of the control

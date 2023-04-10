@@ -8,7 +8,7 @@ description: You can explore the getCell method of Grid in the documentation of 
 
 @short: returns the object of a selected cell
 
-@signature: {'getCell(): ICell;'}
+@signature: {'getCell(): object;'}
 
 @returns:
 An object with parameters of a selected cell.

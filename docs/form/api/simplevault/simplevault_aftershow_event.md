@@ -8,7 +8,7 @@ description: You can explore the afterShow event of the Simple Vault control of 
 
 @short: fires after a control is shown
 
-@signature: {'afterShow: (value: ISimpleVaultValue[]) => void;'}
+@signature: {'afterShow: (value: object[]) => void;'}
 
 @params:
 - `value: array` - the current value of the control

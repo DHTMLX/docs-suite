@@ -8,7 +8,7 @@ description: You can explore the columns config of Grid in the documentation of 
 
 @short: Required. Specifies the configuration of grid columns
 
-@signature: {'columns: ICol[];'}
+@signature: {'columns: object[];'}
 
 @example:
 const grid = new dhx.Grid("grid_container", {

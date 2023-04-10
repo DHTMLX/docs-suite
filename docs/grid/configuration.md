@@ -25,7 +25,39 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
 
-In case these options aren't set in the Grid configuration, the component will take the size of the container.
+:::info
+If the **width** and **height** options aren't set in the Grid configuration, the Grid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and Grid won't be visible on the page.
+:::
+
+### Autoheight for Grid
+
+**If you use PRO version of DHTMLX Grid**, you may enable the auto height mode of Grid. For this, set the value of the [height](grid/api/grid_height_config.md) property to "auto". In this mode, Grid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
+
+~~~js
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+		// columns config
+	],
+    width: "auto",
+    height: "auto",
+    data: dataset
+});
+~~~
+
+This functionality is available from v8.1.
+
+If needed, you may set the minimal and maximal height for the container via the **min-height** and **max-height** CSS properties:
+
+~~~html
+<div class="grid" id="grid_container"></div>
+
+<style>
+    .grid {
+        min-height: 400px;
+        max-height: 600px;
+    }
+</style>
+~~~
 
 ## Columns
 
@@ -488,10 +520,13 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Types of column editor
 
-You can specify the way of editing the cells of a Grid column depending on its content as simple input, date picker, select control,  checkbox, combobox, textarea or multiselect. The type of the used editor can be defined either by the **editorType** property of a [column](grid/api/grid_columns_config.md) or via the **type** one.
+You can specify the way of editing the cells of a Grid column depending on its content as simple input, date picker, textarea control, checkbox, select, multiselect or combobox. The type of the used editor can be defined either by the **editorType** property of a [column](grid/api/grid_columns_config.md) or via the **type** one.
+
 There are several types of column editors:
 
-- **input** - an editor for cells with a simple text (the default one, unless a column has **type:"date"**)
+- #### input
+
+An editor for cells with a simple text (the default one, unless a column has **type:"date"**).
 
 ~~~js
 // cells of the "project" column will be edited as inputs
@@ -511,7 +546,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
-- **datePicker** - an editor for cells with dates (default for a column with **type:"date"**)
+- #### datePicker
+
+An editor for cells with dates (default for a column with **type:"date"**).
 
 To use this editor, you should specify the **type:"date"** property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the **format** option.
 
@@ -546,85 +583,9 @@ You can configure the date picker by passing [properties of Calendar](category/c
 ~~~
 :::
 
-- **select** - an editor for cells that should contain several options to choose from
+- #### textarea
 
-To set this editor type you need to provide the **options** property with an array of options to be displayed in the editor, e.g.:
-
-~~~js
-{
-	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
-	editorType: "select", options: ["Done", "In Progress", "Not Started"]
-} 
-~~~
-
-Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
-
-- The **id** attribute sets the id for the option;
-- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization.
-
-~~~js
-{
-	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
-	editorType: "select", 
-	options: [
-		{ id: "done", value: "Done" }, 
-		{ id: "in progress", value: "In Progress" }, 
-		{ id: "not started", value: "Not Started" },
-	],
-} 
-~~~
-
-**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
-
-- **checkbox** - an editor for cells with a two-state check box
-
-To use this editor, you need to specify the **type: "boolean"** property for a column.
-
-~~~js
-{ 
-	// if the type:"boolean" config is set in the column config, 
-    // there's no need to specify the type of the editor
-	width: 160, id: "test", 
-    header: [{ text: "Test" }], 
-    type: "boolean"
-}
-~~~
-
-**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
-
-{{note If you specify the editing option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
-
-- **combobox** - an editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control
-
-To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
-
-```js
-{
-    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
-    editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]
-}
-```
-
-Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
-
-- The **id** attribute sets the id for the option;
-- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization.
-
-```js
-{
-    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
-    editorType: "combobox", 
-	options: [
-		{ id: "1 time", value: "1" }, 
-		{ id: "1-2 times", value: "1-2 " }, 
-		{ id: "more than 5 times", value: "5+" }
-	]
-}
-```
-
-**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
-
-- **textarea** - an editor for cells that contain text
+An editor for cells that contain text.
 
 To use this editor, you should specify the **editorType:"textarea"** property for a column.
 
@@ -648,9 +609,54 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
-- **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options
+- #### checkbox
 
-```js
+An editor for cells with a two-state check box.
+
+To use this editor, you need to specify the **type: "boolean"** property for a column.
+
+~~~js
+{ 
+	// if the type:"boolean" config is set in the column config, 
+    // there's no need to specify the type of the editor
+	width: 160, id: "test", 
+    header: [{ text: "Test" }], 
+    type: "boolean"
+}
+~~~
+
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
+
+{{note If you specify the editing option in the configuration of Grid, then editing of a column with checkbox will always be enabled.}}
+
+- #### select
+
+An editor for cells that should contain several options to choose from.
+
+To set this editor type you need to specify the **editorType:"select"** property for a column and define a list of options via the **options** property:
+
+~~~js
+{
+	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
+	editorType: "select", options: ["Done", "In Progress", "Not Started"]
+} 
+~~~
+
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
+
+You can choose the way of specifying the [options](grid/api/api_gridcolumn_properties.md) property:
+
+- To set the same list of options for each cell of the column, use either an array of string values or an array of options' objects as a value of the property.
+- To set a unique list of options for a column cell, use a function as a value of the property.
+
+
+- #### multiselect
+
+An editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options.
+
+To set this editor type you need to specify the **editorType:"multiselect"** property for a column and define a list of options via the **options** property:
+
+~~~js
 const grid = new dhx.Grid("grid_container", {
 	columns: [
 		{
@@ -664,13 +670,18 @@ const grid = new dhx.Grid("grid_container", {
 	data: data,
 	editable: true
 });
-```
+~~~
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
+You can choose the way of specifying the [options](grid/api/api_gridcolumn_properties.md) property:
+
+- To set the same list of options for each cell of the column, use either an array of string values or an array of options' objects as a value of the property.
+- To set a unique list of options for a column cell, use a function as a value of the property.
+
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
-```js
+~~~js
 const data = [
 	{
     	renewals: "1 time", //one option is shown in a cell
@@ -681,7 +692,27 @@ const data = [
 		...
 	}
 ];
-```
+~~~
+
+- #### combobox
+
+An editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
+
+To use this editor you need to specify the **editorType: "combobox"** property for a column and define a list of options via the **options** property:
+
+~~~js
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]
+}
+~~~
+
+**Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
+
+You can choose the way of specifying the [options](grid/api/api_gridcolumn_properties.md) property:
+
+- To set the same list of options for each cell of the column, use either an array of string values or an array of options' objects as a value of the property.
+- To set a unique list of options for a column cell, use a function as a value of the property.
 
 ### Editable combobox
 
@@ -1055,6 +1086,8 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
+**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
+
 or
 
 ~~~js
@@ -1069,8 +1102,6 @@ const grid = new dhx.Grid("grid", {
     dragMode: "both" // or dragMode: "source"
 });
 ~~~
-
-**Related sample**: [Grid. Drag-n-drop](https://snippet.dhtmlx.com/zwc91d50)
 
 ## Keyboard Navigation
 

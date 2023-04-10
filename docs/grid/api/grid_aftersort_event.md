@@ -8,11 +8,11 @@ description: You can explore the afterSort event of Grid in the documentation of
 
 @short: fires after a column is sorted by clicking on its header
 
-@signature: afterSort: (col: ICol, dir: Dirs) => void;
+@signature: afterSort: (col: object, dir: string) => void;
 
 @params:
 - `col: object` - an object with the configuration of a column
-- `dir: string` - the sorting direction (desc, asc)
+- `dir: string` - the sorting direction ("desc", "asc")
 
 @example:
 grid.events.on("afterSort", (col, dir) => {

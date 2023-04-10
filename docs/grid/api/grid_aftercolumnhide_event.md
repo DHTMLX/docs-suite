@@ -8,7 +8,7 @@ description: You can explore the afterColumnHide event of Grid in the documentat
 
 @short: fires after a column is hidden
 
-@signature: {'afterColumnHide: (col: ICol) => void;'}
+@signature: {'afterColumnHide: (col: object) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

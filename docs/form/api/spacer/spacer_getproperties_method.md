@@ -8,7 +8,7 @@ description: You can explore the getProperties method of the Spacer control of F
 
 @short: returns an object with the available configuration attributes of the control
 
-@signature: {'getProperties(): IBaseLayoutItem;'}
+@signature: {'getProperties(): object;'}
 
 @returns:
 An object with the available attributes of the control and their values.

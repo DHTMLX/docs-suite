@@ -8,7 +8,7 @@ description: You can explore the getValue method of the Combo Box control of For
 
 @short: returns IDs of options which are currently selected in the Combo control
 
-@signature: {'getValue(): Id | Id[];'}
+@signature: {'getValue(): string | number | (string | number)[];'}
 
 @returns:
 A string/number or an array with the ID(s) of the options from data collection that are currently selected in the control.

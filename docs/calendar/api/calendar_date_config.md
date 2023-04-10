@@ -15,11 +15,10 @@ const calendar = new dhx.Calendar("calendar_container", {
     value: new Date(),
     date: new Date(2019, 0, 1)
 });
-@examplestop:
-
-**Related sample**: [Calendar. Date initialization](https://snippet.dhtmlx.com/fyg6l65t)
 
 @descr:
+**Related sample**: [Calendar. Date initialization](https://snippet.dhtmlx.com/fyg6l65t)
+
 By default, it is either the same as [](calendar/api/calendar_value_config.md), or shows the current date, if **value** is not specified.
 
 [comment]: # (@relatedapi: calendar/api/calendar_value_config.md)

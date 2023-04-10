@@ -8,10 +8,10 @@ description: You can explore the setProperties method of the Datepicker control 
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: {'setProperties(propertyConfig: IDatePickerProps): void;'}
+@signature: {'setProperties(properties: object): void;'}
 
 @params:
-- `propertyConfig: object` - an object with the available attributes of the control and their new values
+- `properties: object` - an object with the available attributes of the control and their new values
 
 @example:
 form.getItem("datepicker").setProperties({
@@ -22,7 +22,9 @@ form.getItem("datepicker").setProperties({
 
 @descr:
 
+:::info
 The method invokes the [](form/api/calendar/calendar_afterchangeproperties_event.md) and [](form/api/calendar/calendar_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following configuration attributes of the **DatePicker** control:
 

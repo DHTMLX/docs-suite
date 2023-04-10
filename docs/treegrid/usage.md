@@ -530,7 +530,7 @@ treegrid.collapseAll();
 
 ## Exporting TreeGrid
 
-You can easily export data of TreeGrid into the Excel or CSV format.
+You can easily export data of TreeGrid into the Excel, CSV, PDF or PNG format.
 
 ### Exporting data to Excel 
 
@@ -559,6 +559,33 @@ treegrid.export.csv({
 **Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
 
 The **csv()** method returns a CSV string with TreeGrid data.
+
+### Exporting data to PDF
+
+The [pdf()](treegrid/api/export/treegrid_pdf_method.md) method of the Export module allows you to export data from TreeGrid into a PDF file. The method takes an object with export settings as a parameter.
+
+~~~js
+treegrid.export.pdf({
+    format: "A4",
+    scale: 0.85,
+    displayHeaderFooter: true,
+    theme: "dark",
+});
+~~~
+
+**Related sample**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
+
+### Exporting data to PNG
+
+The [png()](treegrid/api/export/treegrid_png_method.md) method of the Export module allows you to export data from TreeGrid into a PNG file. The method takes an object with export settings as a parameter.
+
+~~~js
+treegrid.export.pdf({
+    theme: "dark",
+});
+~~~
+
+**Related sample**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
 
 ## Repainting TreeGrid
 

@@ -8,7 +8,7 @@ description: You can explore the link method of Calendar in the documentation of
 
 @short: links a calendar to another calendar for selecting a date range
 
-@signature: {'link(calendar: ICalendar): void;'}
+@signature: {'link(calendar: object): void;'}
 
 @params:
 - `calendar: object` - an object of a calendar to link to

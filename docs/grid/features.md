@@ -128,7 +128,8 @@ In this section you can learn how to configure the size of Grid and its cells.
 
 | Topic                                                                                       | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to specify the necessary size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                |
+| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to set specific size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                         |
+| [Auto-height for Grid](../configuration/#autoheight-for-grid)                               | Learn how to configure auto-height for Grid                                                                                     |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/zfrpe22d)) |
 | [Max width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/ku3cfaux))            |
 | [Min width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the minimum width which can be set for a column  ([Example](https://snippet.dhtmlx.com/x5hmpi9d))           |
@@ -248,9 +249,9 @@ In this section you will learn how to scroll Grid to the necessary position.
 
 In this section you will know how to export Grid to different formats.
 
-| Topic                                                      | Description                                                                                        |
-| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [Exporting Grid to XLSX and CSV](../usage/#exporting-grid) | Learn how to export Grid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/58oqij47)) |
+| Topic                                                                       | Description                                                                                                                                           |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Exporting Grid to XLSX, CSV, PNG. or PDF format](../usage/#exporting-grid) | Learn how to export Grid to the necessary format ([Example 1](https://snippet.dhtmlx.com/58oqij47), [Example 2](https://snippet.dhtmlx.com/ti9l91mn)) |
 
 ## How to work with Grid events
 

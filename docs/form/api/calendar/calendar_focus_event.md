@@ -17,6 +17,7 @@ description: You can explore the focus event of the Datepicker control of Form i
 form.getItem("datepicker").events.on("focus", (value) => {
     console.log("focus", value);
 });
-@examplestop:
+
+@descr:
 
 @changelog: Added in v7.2

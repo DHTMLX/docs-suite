@@ -8,7 +8,7 @@ description: You can explore the uploadFile event of the Simple Vault control of
 
 @short: fires when a file has been uploaded
 
-@signature: {'uploadFile: (file: ISimpleVaultValue, value: ISimpleVaultValue[], extra?: { [key: string]: string }) => void;'}
+@signature: {'uploadFile: (file: object, value: object[], extra?: { [key: string]: string }) => void;'}
 
 @params:
 - `file: object` - the file object

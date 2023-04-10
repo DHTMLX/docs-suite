@@ -8,7 +8,7 @@ description: You can explore the showDate method of Calendar in the documentatio
 
 @short: shows a specified date and/or opens the calendar in one of the available modes
 
-@signature: {'showDate(date?: Date, mode?: ViewMode): void;'}
+@signature: {'showDate(date?: Date, mode?: "calendar" | "month" | "year"): void;'}
 
 @params:
 - `date: Date` - the date that should be shown in the calendar

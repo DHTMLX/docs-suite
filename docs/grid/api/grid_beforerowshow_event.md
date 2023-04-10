@@ -8,7 +8,7 @@ description: You can explore the beforeRowShow event of Grid in the documentatio
 
 @short: fires before a row is shown on a page
 
-@signature: {'beforeRowShow: (row: IRow) => boolean | void;'}
+@signature: {'beforeRowShow: (row: object) => boolean | void;'}
 
 @params:
 - `row: object` - an object with a row configuration

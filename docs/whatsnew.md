@@ -8,6 +8,57 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1
+------------
+
+Released on ...
+
+### New functionality
+
+#### Chart
+
+- New [`exportStyles`](chart/api/chart_exportstyles_config.md) property
+
+#### Grid
+
+- The ability to export Grid to a PDF or PNG file:
+    - new export methods: [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md)
+    - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
+- The ability to set individual sets of editor options for each cell of the column:
+    - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
+- The ability [to set automatic height for Grid](grid/configuration.md#autoheight-for-grid)
+
+#### Tree
+
+- The ability to initialize Tree in the collapsed state:
+    - new property: [`collapsed`](tree/api/tree_collapsed_config.md)
+
+#### TreeGrid
+
+- The ability to export TreeGrid to a PDF or PNG file:
+    - new export methods: [`pdf()`](treegrid/api/export/treegrid_pdf_method.md), [`png()`](treegrid/api/export/treegrid_png_method.md)
+    - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
+- The ability to set individual sets of editor options for different cells of the column:
+    - now it is possible to define the [`options`](treegrid/api/api_treegridcolumn_properties.md) property of a column as a callback function
+- The ability [to set automatic height for TreeGrid](treegrid/configuration.md#autoheight-for-treegrid)
+- New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
+    - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
+    - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
+- The ability to define whether collapsed rows should expand while hovering them over during drag-n-drop:
+    - new property: [`dragExpand`](treegrid/api/treegrid_dragexpand_config.md)
+- The ability to initialize TreeGrid in the collapsed state:
+    - new property: [`collapsed`](treegrid/api/treegrid_collapsed_config.md)
+
+### Updates
+
+#### Chart
+
+- The [pdf()](chart/api/export/chart_pdf_method.md) method was updated:
+    - new options of the `export` object are added: `theme`, `exportStyles`
+    - new options of the `pdf` object are added: `pageRanges`, `displayHeaderFooter`, `footerTemplate`, `headerTemplate` 
+- The [png()](chart/api/export/chart_png_method.md) method was updated:
+    - new options of the `export` object are added: `theme`, `exportStyles`
+
 Version 8.0.2
 ---------------
 

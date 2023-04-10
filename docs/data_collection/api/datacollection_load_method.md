@@ -8,12 +8,12 @@ description: You can explore the load method of DataCollection in the documentat
 
 @short: loads data from an external file
 
-@signature: {'load?(url: IDataProxy | string, driver?: DataDriver): Promise<any>;'}
+@signature: {'load?(url: string | DataProxy, driver?: object | string): Promise<any>;'}
 
 @params:
 
-- `url: IDataProxy | string` - the URL of an external file or DataProxy with the URL configured
-- `driver: string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
+- `url: string | IDataProxy` - the URL of an external file or DataProxy with the URL configured
+- `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @returns:
 A promise of data loading.

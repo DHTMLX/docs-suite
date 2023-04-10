@@ -8,7 +8,7 @@ description: You can explore the setValue method of the Simple Vault control of 
 
 @short: sets the value for a SimpleVault control
 
-@signature: {'setValue(value: ISimpleVaultValue[]): void;'}
+@signature: {'setValue(value: object[]): void;'}
 
 @params:
 - `value: array` - the value to be set  

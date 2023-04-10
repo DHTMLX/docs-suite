@@ -21,6 +21,6 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-[comment]: # (@related: treegrid/configuration.md#widthheight treegrid/initialization.md#initialize-treegrid)
+**Related sample:** [TreeGrid. Custom sizes](https://snippet.dhtmlx.com/7w8jxgft)
 
-[comment]: # (@relatedapi: treegrid/api/treegrid_height_config.md)
+**Related article:** [Width/height](treegrid/configuration.md#widthheight)

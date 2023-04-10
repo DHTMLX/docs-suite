@@ -8,7 +8,7 @@ description: You can explore the afterUnSelect event of Grid in the documentatio
 
 @short: fires after unselecting a cell
 
-@signature: {'afterUnSelect: (row: IRow, col: ICol) => void;'}
+@signature: {'afterUnSelect: (row: object, col: object) => void;'}
 
 @params:
 

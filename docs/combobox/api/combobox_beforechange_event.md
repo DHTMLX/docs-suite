@@ -8,7 +8,7 @@ description: You can explore the beforeChange event of Combo Box in the document
 
 @short: fires before selection of a new option
 
-@signature: {'beforeChange: (ids: Id | Id[]) => boolean | void;'}
+@signature: {'beforeChange: (ids: string | number | (string|number)[]) => boolean | void;'}
 
 @params:
 - `ids: string | number | array` - required, the id(s) of a newly selected option(s)

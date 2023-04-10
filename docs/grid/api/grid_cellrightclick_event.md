@@ -8,7 +8,7 @@ description: You can explore the cellRightClick event of Grid in the documentati
 
 @short: fires on right click on a grid cell
 
-@signature: {'cellRightClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
+@signature: {'cellRightClick: (row: object, col: object, e: MouseEvent) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

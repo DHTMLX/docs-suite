@@ -8,7 +8,7 @@ description: You can explore the beforeAdd event of the Simple Vault control of 
 
 @short: fires before a file is added to the data collection
 
-@signature: {'beforeAdd: (file: ISimpleVaultValue) => boolean | void;'}
+@signature: {'beforeAdd: (file: object) => boolean | void;'}
 
 @params:
 - `file: object` - the file object

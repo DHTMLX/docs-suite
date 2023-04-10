@@ -8,7 +8,7 @@ description: You can explore the beforeRemove event of DataCollection in the doc
 
 @short: fires before removing an item from a data collection
 
-@signature: {'beforeRemove: (removedItem: any) => boolean | void;'}
+@signature: {'beforeRemove: (removedItem: object) => boolean | void;'}
 
 @params:
 - `removedItem: object` - the object of an item to remove

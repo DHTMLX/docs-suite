@@ -34,15 +34,16 @@ Use [DataCollection events](data_collection.md#events) to work with data.
 
 ## Properties
 
-| Name                                    | Description                                    |
-| --------------------------------------- | ---------------------------------------------- |
-| [](chart/api/chart_css_config.md)       | @getshort(chart/api/chart_css_config.md)       |
-| [](chart/api/chart_data_config.md)      | @getshort(chart/api/chart_data_config.md)      |
-| [](chart/api/chart_legend_config.md)    | @getshort(chart/api/chart_legend_config.md)    |
-| [](chart/api/chart_maxpoints_config.md) | @getshort(chart/api/chart_maxpoints_config.md) |
-| [](chart/api/chart_scales_config.md)    | @getshort(chart/api/chart_scales_config.md)    |
-| [](chart/api/chart_series_config.md)    | @getshort(chart/api/chart_series_config.md)    |
-| [](chart/api/chart_type_config.md)      | @getshort(chart/api/chart_type_config.md)      |
+| Name                                       | Description                                       |
+| ------------------------------------------ | ------------------------------------------------- |
+| [](chart/api/chart_css_config.md)          | @getshort(chart/api/chart_css_config.md)          |
+| [](chart/api/chart_data_config.md)         | @getshort(chart/api/chart_data_config.md)         |
+| [](chart/api/chart_exportstyles_config.md) | @getshort(chart/api/chart_exportstyles_config.md) |
+| [](chart/api/chart_legend_config.md)       | @getshort(chart/api/chart_legend_config.md)       |
+| [](chart/api/chart_maxpoints_config.md)    | @getshort(chart/api/chart_maxpoints_config.md)    |
+| [](chart/api/chart_scales_config.md)       | @getshort(chart/api/chart_scales_config.md)       |
+| [](chart/api/chart_series_config.md)       | @getshort(chart/api/chart_series_config.md)       |
+| [](chart/api/chart_type_config.md)         | @getshort(chart/api/chart_type_config.md)         |
 
 ## Export methods
 

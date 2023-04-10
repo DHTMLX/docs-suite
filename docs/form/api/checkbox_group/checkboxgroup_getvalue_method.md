@@ -8,27 +8,25 @@ description: You can explore the getValue method of the Checkbox Group control o
 
 @short: returns the current value/state of a checkbox(s)
 
-@signature: {'getValue(id?: string): ICheckboxGroupValue | string | boolean;'}
+@signature: {'getValue(id?: string): string | boolean | {[id: string]: boolean | string};'}
 
 @params:
 - `id: string` - optional, the id of a checkbox
 
 @returns:
-Either a string with the current value of the checkbox, or boolean value with the state of the checkbox, or an object with current values/states of the checkboxes.
+If the id of a checkbox is specified, the method returns either a string with the current value of the checkbox, or boolean value with the state of the checkbox.
+
+If the id of a checkbox is not specified, the method returns an object with current values/states of the checkboxes. The object contains a set of *key:value* pairs where *key* is the id of a checkbox and *value* is either the value of the checkbox or its state (if the value attribute is not specified for the checkbox).
 
 @example:
 // returns string value if the value is specified in the checkbox configuration
 form.getItem("CheckboxGroup").getValue("checkbox_id_1"); //-> "some_value"
  
 // returns boolean state if the value is not specified for the checkbox
-form.getItem("CheckboxGroup").getValue("checkbox_id_2"); //-> true/false 
+form.getItem("CheckboxGroup").getValue("checkbox_id_2"); //-> true/false
 
-@descr:
-
-If the id of a checkbox is not specified, the method returns an object. The object contains a set of *key:value* pairs where *key* is the id of a checkbox and *value* is either the value of the checkbox or its state (if the value attribute is not specified for the checkbox).
-
-~~~js
 // returns an object with current values/states of the checkboxes
 form.getItem("CheckboxGroup").getValue() 
 // -> { "checkbox_id_1": "some_value_1",  "checkbox_id_2": true }
-~~~
+
+@descr:

@@ -8,7 +8,7 @@ description: You can explore the getProperties method of the Checkbox Group cont
 
 @short: returns an object with the available configuration attributes of the control
 
-@signature: {'getProperties(id?: string): ICheckboxGroupProps | ICheckboxGroupItemProps;'}
+@signature: {'getProperties(id?: string): object;'}
 
 @params:
 - `id: string` - optional, the id of a checkbox
@@ -141,7 +141,7 @@ The returned object of the **CheckboxGroup** control can contain the following c
     </tbody>
 </table>
 
-### Checkbox properties
+The returned object of a **checkbox** of the CheckboxGroup control can contain the following configuration attributes:
 
 <table>
 	<tbody>

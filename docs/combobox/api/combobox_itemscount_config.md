@@ -10,6 +10,13 @@ description: You can explore the itemsCount config of Combo Box in the documenta
 
 @signature: {'itemsCount?: boolean | ((count: number) => string);'}
 
+@params:
+The **itemsCount** property can be specified either as a boolean value or as a function. As a function it takes one parameter:
+
+- `count: number` - the number of options
+
+and should return a template for displaying a result.
+
 @example:
 const combo = new dhx.Combobox("combo_container", {
     multiselection: true,
@@ -21,12 +28,6 @@ const combo = new dhx.Combobox("combo_container", {
 @descr:
 
 **Related sample**: [Combobox. Items count](https://snippet.dhtmlx.com/fw2u2bww)
-
-As a function takes one parameter:
-
-- **count** - (*number*) the number of options
-
-and should return a template for displaying a result.
 
 {{note To be able to select several options you need to enable the **multiselection** option.}}
 

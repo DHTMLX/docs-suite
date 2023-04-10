@@ -8,10 +8,10 @@ description: You can explore the setProperties method of the Container control o
 
 @short: allows changing available configuration properties of the Container control dynamically
 
-@signature: setProperties(propertyConfig: IBaseLayoutItem): void;
+@signature: setProperties(properties: object): void;
 
 @params:
-- `propertyConfig: object` - an object with the available properties of the control and their new values
+- `properties: object` - an object with the available properties of the control and their new values
 
 @example:
 form.getItem("container").setProperties({
@@ -21,7 +21,9 @@ form.getItem("container").setProperties({
 });
 
 @descr:
+:::info
 The method invokes the [afterChangeProperties](form/api/container/container_afterchangeproperties_event.md) and [beforeChangeProperties](form/api/container/container_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following properties of the Container control:
 

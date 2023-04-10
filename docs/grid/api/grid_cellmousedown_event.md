@@ -8,7 +8,7 @@ description: You can explore the cellMouseDown event of Grid in the documentatio
 
 @short: fires before releasing the left mouse button when clicking on a grid cell
 
-@signature: {'cellMouseDown: (row: IRow, col: ICol, e: MouseEvent & TouchEvent) => void;'}
+@signature: {'cellMouseDown: (row: object, col: object, e: MouseEvent & TouchEvent) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

@@ -8,10 +8,10 @@ description: descriYou can explore the getValue method of the Datepicker control
 
 @short: returns the current value of a DatePicker control
 
-@signature: {'getValue<T extends boolean = false>(asDate?: T): string | Date;'}
+@signature: {'getValue(asDate?: boolean): string | Date;'}
 
 @params:
-- `asDate: boolean` - defines whether a date will be returned as a Date object
+- `asDate: boolean` - defines whether a date will be returned as a Date object; *false* by default
 
 @returns:
 A string, or Date with the current value of the control.

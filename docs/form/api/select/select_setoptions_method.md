@@ -8,10 +8,17 @@ description: You can explore the setOptions method of the Select control of Form
 
 @short: allows changing a list of Select options dynamically
 
-@signature: {'setOptions(options: IOption[]): void;'}
+@signature: {'setOptions(options: object[]): void;'}
 
 @params:
 - `options: array` - an array with new options
+
+Each option is an object with a set of *key:value* pairs - attributes of options and
+their values:
+
+- `value: string|number` - mandatory, sets the value for the select option
+- `content: string` - mandatory, the content displayed in the select option
+- `disabled: boolean` - optional, defines whether the option is enabled (*false*) or disabled (*true*)
 
 @example:
 form.getItem("select").setOptions([
@@ -20,10 +27,3 @@ form.getItem("select").setOptions([
 ]);
 
 @descr:
-
-Each option is an object with a set of *key:value* pairs - attributes of options and
-their values:
-
-- **value** - (*string|number*) mandatory, sets the value for the select option
-- **content** - (*string*) mandatory, the content displayed in the select option
-- **disabled** - (*boolean*) optional, defines whether the option is enabled (*false*) or disabled (*true*)

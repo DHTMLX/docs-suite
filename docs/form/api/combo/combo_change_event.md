@@ -8,14 +8,14 @@ description: You can explore the change event of the Combo Box control of Form i
 
 @short: fires on changing the value of a control
 
-@signature: {'change: (value: Id | Id[]) => void;'}
+@signature: {'change: (ids: (string | number) | (string | number)[]) => void;'}
 
 @params:
-- `value: string | number | (string | number)[]` - the ID(s) of newly selected option(s) from data collection
+- `ids: string | number | (string | number)[]` - the ID(s) of newly selected option(s) from data collection
 
 @example:
-form.getItem("combo").events.on("change", function(value) {
-    console.log("change", value);
+form.getItem("combo").events.on("change", function(ids) {
+    console.log("change", ids);
 });
 
 @descr:

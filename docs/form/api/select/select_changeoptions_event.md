@@ -8,7 +8,7 @@ description: You can explore the changeOptions event of the Select control of Fo
 
 @short: fires on changing a list of Select options
 
-@signature: {'changeOptions: (options: IOption[]) => void;'}
+@signature: {'changeOptions: (options: object[]) => void;'}
 
 @params:
 - `options: array` - a new array of Select options

@@ -6,9 +6,9 @@ description: You can explore the value config of Combo Box in the documentation 
 
 # value
 
-@short: Optional. Specifies the values that will appear in the input on initialization of the combobox
+@short: Optional. Specifies the values that will appear in the input on initialization of the combobox by their id(s)
 
-@signature: {'value?: Id | Id[];'}
+@signature: {'value?: string | number | (string | number)[];'}
 
 @example:
 const combobox = new dhx.Combobox("combo_container", {

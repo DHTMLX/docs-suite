@@ -25,4 +25,10 @@ const target = new dhx.TreeGrid("treegrid-target", {
 
 **Related sample**: [TreeGrid. Drag-n-drop copy](https://snippet.dhtmlx.com/a7pg38rr)
 
+**Related API:**
+
+- [dragExpand](treegrid/api/treegrid_dragexpand_config.md)
+- [dragItem](treegrid/api/treegrid_dragitem_config.md)
+- [dragMode](treegrid/api/treegrid_dragmode_config.md)
+
 [comment]: # (@related: treegrid/initialization.md#initialize-treegrid)

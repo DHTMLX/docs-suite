@@ -8,7 +8,7 @@ description: You can explore the getCellRect method of Grid in the documentation
 
 @short: returns the parameters of a cell
 
-@signature: {'getCellRect(rowId: Id, colId: Id): object;'}
+@signature: {'getCellRect(rowId: string | number, colId: string | number): object;'}
 
 @params:
 - `rowId: string | number` - the id of a row
