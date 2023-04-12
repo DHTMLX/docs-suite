@@ -8,7 +8,7 @@ description: You can explore the isSelected method of Toolbar in the documentati
 
 @short: checks whether a specified Toolbar item is selected
 
-@signature: {'isSelected(id: Id): boolean;'}
+@signature: {'isSelected(id: string | number): boolean;'}
 
 @params:
 - `id: string | number` - the id of a Toolbar item

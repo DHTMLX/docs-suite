@@ -8,10 +8,13 @@ description: You can explore the afterDrag event of Tree in the documentation of
 
 @short: fires after dragging of an item is finished
 
-@signature: {'afterDrag: (data: IDragInfo, events: MouseEvent) => any;'}
+@signature: {'afterDrag: (data: object, events: MouseEvent) => any;'}
 
 @params:
-- `data: object` - data object
+- `data: object` - data object. It can contain the following parameters:
+	- `start: string | number` - the id of an item, from which the dragging process has started
+	- `source: array` - an array with ids of dragged items
+	- `target: string | number` - the id of a potential target item
 - `events: MouseEvent` - a native HTML event object
 
 @example:
@@ -22,25 +25,6 @@ tree.events.on("afterDrag", function(data, events) {
 @descr:
 
 **Related sample**: [Tree. Events](https://snippet.dhtmlx.com/vux1ye9g)
-
-The data object can contain the following parameters:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>start</b></td>
-			<td>(<i>string, number</i>) the id of an item, from which the dragging process has started</td>
-		</tr>
-        <tr>
-			<td><b>source</b></td>
-			<td>(<i>array</i>) an array with ids of dragged items</td>
-		</tr>
-        <tr>
-			<td><b>target</b></td>
-			<td>(<i>string, number</i>) the id of a potential target item</td>
-		</tr>
-    </tbody>
-</table>
 
 @changelog: added in v7.0
 

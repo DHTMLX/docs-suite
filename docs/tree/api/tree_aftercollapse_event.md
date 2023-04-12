@@ -8,7 +8,7 @@ description: You can explore the afterCollapse event of Tree in the documentatio
 
 @short: fires after collapsing a tree item
 
-@signature: {'afterCollapse: (id: Id) => void;'}
+@signature: {'afterCollapse: (id: string | number) => void;'}
 
 @params:
 - `id: string | number` - the id of a collapsed item

@@ -8,7 +8,7 @@ description: You can explore the beforeEditEnd event of Tree in the documentatio
 
 @short: fires before editing of a tree item is finished
 
-@signature: {'beforeEditEnd: (value: string, id: Id) => boolean | void;'}
+@signature: {'beforeEditEnd: (value: string, id: string | number) => boolean | void;'}
 
 @params:
 - `value: string` - the value of an item

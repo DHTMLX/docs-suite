@@ -8,7 +8,7 @@ description: You can explore the beforeEditStart event of Tree in the documentat
 
 @short: fires before editing of an item has started
 
-@signature: {'beforeEditStart: (value: string, id: Id) => boolean | void;'}
+@signature: {'beforeEditStart: (value: string, id: string | number) => boolean | void;'}
 
 @params:
 - `value: string` - the value of an item

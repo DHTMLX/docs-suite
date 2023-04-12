@@ -8,45 +8,28 @@ description: You can explore the editItem method of Tree in the documentation of
 
 @short: edits a Tree item
 
-@signature: {'editItem(id: Id, config: IEditorConfig): void;'}
+@signature: {'editItem(id: string | number, config: object): void;'}
 
 @params:
 - `id: string | number` - the id of an item
-- `config: object` - optional, the config object of an editor
+- `config: object` - optional, the config object of an editor. The parameter includes the following properties:
+	- `mode: string` - the type of an editor:
+		- "text" (by default) for an input
+		- "select" for a select
+	- `options: array` - optional, an array of additional options. It works only with `mode: "select"`.
 
 @example:
 tree.events.on("itemDblClick", function (id) {
     tree.editItem(id);
 });
 
-@descr:
+// or
 
-The **config** parameter includes the following properties:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>mode</b></td>
-			<td>(<i>string</i>) the type of an editor:
-				<ul><li>"text" (by default) for an input</li>
-				<li>"select" for a select</li></ul>
-			</td>
-		</tr>
-		<tr>
-			<td><b>options</b></td>
-			<td>(<i>array</i>) optional, an array of additional options<br> This property works only with <i>mode: "select"</i></td>
-		</tr>
-    </tbody>
-</table>
-<br>
-
-For instance:
-
-~~~js
 tree.events.on("itemDblClick", function (id) {
     tree.editItem(id,{ mode: "select", options: [1, 2, 3, 4, 5] });
 });
-~~~
+
+@descr:
 
 [comment]: # (@related: tree/work_with_tree.md#editing-an-item)
 

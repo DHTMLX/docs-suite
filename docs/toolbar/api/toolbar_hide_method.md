@@ -8,7 +8,7 @@ description: You can explore the hide method of Toolbar in the documentation of 
 
 @short: hides an item of Toolbar
 
-@signature: {'hide(ids: Id | Id[]): void;'}
+@signature: {'hide(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - one ID or an array of IDs of items

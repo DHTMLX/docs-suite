@@ -8,7 +8,7 @@ description: You can explore the getState method of Toolbar in the documentation
 
 @short: gets current values/states of controls
 
-@signature: {'getState(id?: Id): IState;'}
+@signature: {'getState(id?: string | number): string | boolean | object;'}
 
 @params:
 - `id: string | number` - optional, the id of a Toolbar control

@@ -8,7 +8,7 @@ description: You can explore the data config of Toolbar in the documentation of 
 
 @short: Optional. Specifies an array of data objects to set into Toolbar
 
-@signature: {'data?: any[];'}
+@signature: {'data?: object[];'}
 
 @example:
 const toolbar = new dhx.Toolbar("toolbar_container", {
@@ -38,7 +38,7 @@ const toolbar = new dhx.Toolbar("toolbar_container", {
             "count": 7
         }
     ]
-)};
+});
 
 @descr:
 

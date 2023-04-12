@@ -8,7 +8,7 @@ description: You can explore the beforeCollapse event of Tree in the documentati
 
 @short: fires before collapsing a tree item
 
-@signature: {'beforeCollapse: (id: Id) => boolean | void;'}
+@signature: {'beforeCollapse: (id: string | number) => boolean | void;'}
 
 @params:
 - `id: string | number` - the id of a collapsed item
