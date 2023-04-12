@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.0.3
+--------------
+
+Released on April 12, 2023
+
+### Fixes
+
+- Calendar. Fix work of the calendar when it is initialized in the container with limited size
+- Form. Fix the issue with auto filling of the form in Firefox
+- Grid. Fix work of Grid with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
+- Grid. Fix work of the [`afterEditEnd`](grid/api/grid_aftereditend_event.md), [`afterEditStart`](grid/api/grid_aftereditstart_event.md), [`beforeEditEnd`](grid/api/grid_beforeeditend_event.md), [`beforeEditStart`](grid/api/grid_beforeeditstart_event.md) events when keyboard navigation is enabled
+- Grid/TreeGrid. Fix display of data in spanned cells
+- Grid/TreeGrid. Fix display of data in the tooltip for [new options created via the combobox editor](grid/configuration.md#editable-combobox)
+- Grid/TreeGrid. Fix work of the [`cellClick`](grid/api/grid_cellclick_event.md), [`cellDblClick`](grid/api/grid_celldblclick_event.md), [`cellRightClick`](grid/api/grid_cellrightclick_event.md) events for spanned cells
+- Slider. Fix work of the slider on touch devices
+
 Version 8.0.2
 ---------------
 
