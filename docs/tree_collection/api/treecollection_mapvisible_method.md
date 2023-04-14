@@ -8,10 +8,13 @@ description: You can explore the mapVisible method of TreeCollection in the docu
 
 @short: iterates through all visible items
 
-@signature: {'mapVisible(callback: DataCallback<T>, id?: string | number, direct?: boolean): any;'}
+@signature: {'mapVisible(callback: function, id?: string | number, direct?: boolean): any;'}
 
 @params:
-- `callback: function` - the function that will be applied to every visible item
+- `callback: function` - the function that will be applied to every visible item. The function can take three parameters:
+    - `item: object` - required, the object of an item
+    - `index: number` - optional, the index of an item
+    - `array: object[]` - optional, an array with items 
 - `id: string | number` - the ID of a control the child items of which will be included
 - `direct: boolean` - defines whether only direct children of the control will be included in the iteration
 

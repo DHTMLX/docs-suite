@@ -8,7 +8,7 @@ description: You can explore the beforeColumnHide event of TreeGrid in the docum
 
 @short: fires before a column is hidden
 
-@signature: {'beforeColumnHide: (col: ICol) => boolean | void;'}
+@signature: {'beforeColumnHide: (col: object) => boolean | void;'}
 
 @params:
 - `col: object` - an object with a column configuration

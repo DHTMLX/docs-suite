@@ -8,10 +8,10 @@ description: You can explore the getId method of Selection in the documentation 
 
 @short: returns the id of a selected item
 
-@signature: {'getId(): string | string[];'}
+@signature: {'getId(): (string | number) | (string | number)[];'}
 
 @returns:
-The id of a selected item.
+The id of a selected item or an array with items' ids.
 
 @example:
 const id = component.selection.getId(); // -> "2"

@@ -8,7 +8,7 @@ description: You can explore the move method of DataCollection in the documentat
 
 @short: moves an item to the defined position
 
-@signature: {'move(id: string | string[], index: number, target?: object): string | string[];'}
+@signature: {'move(id: (string | number) | (string | number)[], index: number, target?: object): (string | number) | (string | number)[];'}
 
 @params:
 - `id: string | string[]` - the ids of items to move
@@ -16,7 +16,7 @@ description: You can explore the move method of DataCollection in the documentat
 - `target: object` - optional, the target data collection object
 
 @returns:
-Either a string with the item's id or an array of string values with ids of items.
+Either the item's id or an array with ids of items.
 
 @example:
 component.data.move("4",5); // moves the item with id:4 to the position with index 5

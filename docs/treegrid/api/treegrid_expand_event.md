@@ -8,7 +8,7 @@ description: You can explore the expand event of TreeGrid in the documentation o
 
 @short: fires on expanding a treegrid
 
-@signature: {'expand: (rowId: Id) => void;'}
+@signature: {'expand: (rowId: string | number) => void;'}
 
 @params:
 - `rowId: string | number` - the id of an expanded row

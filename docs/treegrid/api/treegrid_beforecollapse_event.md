@@ -8,7 +8,7 @@ description: You can explore the beforeCollapse event of TreeGrid in the documen
 
 @short: fires before collapsing a treegrid
 
-@signature: {'beforeCollapse: (rowId: Id) => boolean | void;'}
+@signature: {'beforeCollapse: (rowId: string | number) => boolean | void;'}
 
 @params:
 - `rowId: string | number` - the id of a collapsed row
@@ -24,6 +24,6 @@ treeGrid.events.on("beforeCollapse", function(rowId) {
 
 @descr:
 
-**Related sample**: [TreeGrid. Events	](https://snippet.dhtmlx.com/sgwnxshe)
+**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @changelog: added in v6.4

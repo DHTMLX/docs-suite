@@ -8,7 +8,7 @@ description: You can explore the afterSelect event of TreeGrid in the documentat
 
 @short: fires after selecting a cell
 
-@signature: {'afterSelect: (row: IRow, col: ICol) => void;'}
+@signature: {'afterSelect: (row: object, col: object) => void;'}
 
 @params:
 - `row: object` - the config of a row

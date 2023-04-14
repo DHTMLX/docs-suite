@@ -8,10 +8,10 @@ description: You can explore the afterUnSelect event of Selection in the documen
 
 @short: fires after unselecting an item
 
-@signature: {'afterUnSelect: (id: string) => void;'}
+@signature: {'afterUnSelect: (id: string | number) => void;'}
 
 @params:
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 component.selection.events.on("afterUnSelect", function(id){

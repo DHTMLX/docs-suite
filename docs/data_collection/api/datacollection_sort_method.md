@@ -12,8 +12,8 @@ description: You can explore the sort method of DataCollection in the documentat
 
 @params:
 - `rule: object` - an object with parameters for sorting. The parameters are:
-	- `by: string` - the id of a data field (a column of Grid)
-	- `dir: function` - the direction of sorting "asc" or "desc"
+	- `by: string | number` - the id of a data field (a column of Grid)
+	- `dir: string` - the direction of sorting "asc" or "desc"
 	- `as: function` -  a function that specifies the type to sort data as
 	- `rule: function` -  optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
 - `config: object` - defines the parameter of sorting. It may contain one property:

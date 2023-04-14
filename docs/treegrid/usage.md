@@ -332,12 +332,12 @@ You can filter grid data by the specified criteria with the help of the **filter
 	<tbody>
         <tr>
 			<td><b>rule</b></td>
-			<td>(<i>object|function</i>) the filtering criteria. It can be:
+			<td>(<i>function | object</i>) the filtering criteria. It can be:
 			<ul>
 			<li>a filtering function. It takes as a parameter a data item and returns an object with a filtering rule.</li>
 				or:
 				<li>an object with the following attributes:<br/>
-					- <b>by</b> - (<i>string</i>) mandatory, the id of a column<br/>
+					- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>
 					- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>
 					- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:
 					<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol>
@@ -393,7 +393,7 @@ It is possible to sort data in the grid via the **sort()** method of data collec
 	<tbody>
         <tr>
 			<td><b>by</b></td>
-			<td>(<i>string</i>) the id of a column</td>
+			<td>(<i>string | number</i>) the id of a column</td>
 		</tr>
 		<tr>
 			<td><b>dir</b></td>
@@ -445,7 +445,7 @@ To get the current state of sorting data in TreeGrid, use the [](treegrid/api/tr
 		</tr>
 		<tr>
 			<td><b>by</b></td>
-			<td>(<i>string</i>)the id of a column that the treegrid is sorted by</td>
+			<td>(<i>string | number</i>)the id of a column that the treegrid is sorted by</td>
 		</tr>
     </tbody>
 </table>

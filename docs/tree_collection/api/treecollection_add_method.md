@@ -8,12 +8,12 @@ description: You can explore the add method of TreeCollection in the documentati
 
 @short: adds an item to a component
 
-@signature: {'add(obj: IDataItem | IDataItem[], index?: number, parent?: Id): Id | Id[];'}
+@signature: {'add(obj: object | object[], index?: number, parent?: string | number): (string | number) | (string | number)[];'}
 
 @params:
 - `obj: object | array` - the configuration of the added item
 - `index: number` - defines the position of the item in the component
-- `parent: string` - the ID of the future parent item
+- `parent: string | number` - the ID of the future parent item
 
 @returns:
 The item's id or an array with ids of items.

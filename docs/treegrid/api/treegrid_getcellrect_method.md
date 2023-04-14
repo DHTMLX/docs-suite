@@ -8,7 +8,7 @@ description: You can explore the getCellRect method of TreeGrid in the documenta
 
 @short: returns the parameters of a cell
 
-@signature: {'getCellRect(rowId: Id, colId: Id): ICellRect;'}
+@signature: {'getCellRect(rowId: string | number, colId: string | number): object;'}
 
 @params:
 - `rowId: string | number` - the id of a row

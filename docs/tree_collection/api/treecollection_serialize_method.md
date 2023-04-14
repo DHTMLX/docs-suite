@@ -8,7 +8,7 @@ description: You can explore the serialize method of TreeCollection in the docum
 
 @short: serializes the component data into JSON, XML or CSV format
 
-@signature: {'serialize(driver?: DataDriver): T[];'}
+@signature: {'serialize(driver?: string): object[] | string;'}
 
 @params:
 - `driver: string` - optional, the format that the data will be serialized into ("json", "csv", "xml"), "json" by default

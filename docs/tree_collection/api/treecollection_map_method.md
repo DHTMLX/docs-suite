@@ -8,10 +8,13 @@ description: You can explore the map method of TreeCollection in the documentati
 
 @short: iterates through items
 
-@signature: {'map(callback: DataCallback<T>, id?: string | number, direct?: boolean): any;'}
+@signature: {'map(callback: function, id?: string | number, direct?: boolean): any;'}
 
 @params:
-- `callback: function` - the function that will be applied to every item
+- `callback: function` - the function that will be applied to every item. The function can take three parameters:
+    - `item: object` - required, the object of an item
+    - `index: number` - optional, the index of an item
+    - `array: object[]` - optional, an array with items  
 - `id: string | number` - the ID of a control the child items of which will be included
 - `direct: boolean` - defines whether only direct children of the control will be included in the iteration
 
@@ -24,7 +27,7 @@ toolbar.paint();
 
 @descr:
 
-To work with all childs of a particular control, pass one more parameter to **map()** - the ID of the control:
+To work with all children of a particular control, pass one more parameter to **map()** - the ID of the control:
 
 ~~~js
 toolbar.data.map((item)=>{

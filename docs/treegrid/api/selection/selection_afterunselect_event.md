@@ -8,7 +8,7 @@ description: You can explore the afterUnSelect event of TreeGrid in the document
 
 @short: fires after unselecting a cell
 
-@signature: {'afterUnSelect: (row: IRow, col: ICol) => void;'}
+@signature: {'afterUnSelect: (row: object, col: object) => void;'}
 
 @params:
 - `row: object` - the config of a row

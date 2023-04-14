@@ -8,7 +8,7 @@ description: You can explore the resize event of TreeGrid in the documentation o
 
 @short: fires on resizing a column
 
-@signature: {'resize: (col: ICol, e: MouseEvent) => void;'}
+@signature: {'resize: (col: object, e: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

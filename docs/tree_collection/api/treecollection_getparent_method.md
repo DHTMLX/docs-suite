@@ -8,10 +8,10 @@ description: You can explore the getParent method of TreeCollection in the docum
 
 @short: gets the ID of the parent of the control
 
-@signature: {'getParent(id: Id): Id;'}
+@signature: {'getParent(id: string | number): string | number;'}
 
 @params:
-- `id: string` - the ID of a control
+- `id: string | number` - the ID of a control
 
 @returns:
 A string with the ID of the parent of the control.

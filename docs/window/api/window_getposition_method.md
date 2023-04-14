@@ -8,7 +8,7 @@ description: You can explore the getPosition method of Window in the documentati
 
 @short: gets the position of a window
 
-@signature: {'getPosition(): IPosition;'}
+@signature: {'getPosition(): object;'}
 
 @returns:
 An object with left and top coordinates of a window.

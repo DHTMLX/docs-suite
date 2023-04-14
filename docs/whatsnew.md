@@ -24,7 +24,7 @@ Released on ...
 - The ability to export Grid to a PDF or PNG file:
     - new export methods: [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md)
     - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
-- The ability to set individual sets of editor options for each cell of the column:
+- The ability to set individual lists of editor options for different cells of the column:
     - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
 - The ability [to set automatic height for Grid](grid/configuration.md#autoheight-for-grid)
 
@@ -38,7 +38,7 @@ Released on ...
 - The ability to export TreeGrid to a PDF or PNG file:
     - new export methods: [`pdf()`](treegrid/api/export/treegrid_pdf_method.md), [`png()`](treegrid/api/export/treegrid_png_method.md)
     - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
-- The ability to set individual sets of editor options for different cells of the column:
+- The ability to set individual lists of editor options for different cells of the column:
     - now it is possible to define the [`options`](treegrid/api/api_treegridcolumn_properties.md) property of a column as a callback function
 - The ability [to set automatic height for TreeGrid](treegrid/configuration.md#autoheight-for-treegrid)
 - New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
@@ -59,6 +59,10 @@ Released on ...
 - The [png()](chart/api/export/chart_png_method.md) method was updated:
     - new options of the `export` object are added: `theme`, `exportStyles`
 
+### Fixes
+
+- Grid. Fix work of the [`afterEditEnd`](grid/api/grid_aftereditend_event.md), [`afterEditStart`](grid/api/grid_aftereditstart_event.md), [`beforeEditEnd`](grid/api/grid_beforeeditend_event.md), [`beforeEditStart`](grid/api/grid_beforeeditstart_event.md) events when keyboard navigation is enabled
+
 Version 8.0.3
 --------------
 
@@ -69,7 +73,6 @@ Released on April 12, 2023
 - Calendar. Fix work of the calendar when it is initialized in the container with limited size
 - Form. Fix the issue with auto filling of the form in Firefox
 - Grid. Fix work of Grid with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
-- Grid. Fix work of the [`afterEditEnd`](grid/api/grid_aftereditend_event.md), [`afterEditStart`](grid/api/grid_aftereditstart_event.md), [`beforeEditEnd`](grid/api/grid_beforeeditend_event.md), [`beforeEditStart`](grid/api/grid_beforeeditstart_event.md) events when keyboard navigation is enabled
 - Grid/TreeGrid. Fix display of data in spanned cells
 - Grid/TreeGrid. Fix display of data in the tooltip for [new options created via the combobox editor](grid/configuration.md#editable-combobox)
 - Grid/TreeGrid. Fix work of the [`cellClick`](grid/api/grid_cellclick_event.md), [`cellDblClick`](grid/api/grid_celldblclick_event.md), [`cellRightClick`](grid/api/grid_cellrightclick_event.md) events for spanned cells

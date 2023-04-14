@@ -8,7 +8,7 @@ description: You can explore the afterColumnShow event of TreeGrid in the docume
 
 @short: fires after a column is shown
 
-@signature: {'afterColumnShow: (column: ICol) => void;'}
+@signature: {'afterColumnShow: (column: object) => void;'}
 
 @params:
 - `column: object` - an object with a column configuration

@@ -8,10 +8,10 @@ description: You can explore the groupBy method of TreeGrid in the documentation
 
 @short: groups grid content either by values of the specified column or by the result of calculation
 
-@signature: {'groupBy(property: string | ((item: IDataItem) => string)): void;'}
+@signature: {'groupBy(property: string | ((item: object) => string)): void;'}
 
 @params:
-- `property: string | function` - the id of the column or the rule of grouping
+- `property: string | function` - either the id of the column or a function with the rule of grouping data. The function returns the name of a group and takes a data item as a parameter.
 
 @example:
 //Grouping by values of the specified column
@@ -33,12 +33,6 @@ treegrid.groupBy(function (item) {
 @descr:
 
 **Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
-
-The method takes one parameter, which can be:
-
-- **id** - (*string, number*) the id of the column 
-- a function with a rule of grouping data.The function returns the name of a group and takes one parameter:
-    - **item** - a data item
 
 You can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 

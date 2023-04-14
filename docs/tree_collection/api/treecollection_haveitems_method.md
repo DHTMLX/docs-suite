@@ -8,10 +8,10 @@ description: You can explore the haveItems method of TreeCollection in the docum
 
 @short: checks whether an item has children
 
-@signature: {'haveItems(id: Id): boolean;'}
+@signature: {'haveItems(id: string | number): boolean;'}
 
 @params:
-- `id: string` - the ID of a control
+- `id: string | number` - the ID of a control
 
 @returns:
 `true`, if the control has children; otherwise, `false`.

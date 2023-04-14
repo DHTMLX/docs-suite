@@ -8,7 +8,7 @@ description: You can explore the addRowCss method of TreeGrid in the documentati
 
 @short: adds a style to a row
 
-@signature: {'addRowCss(rowId: Id, css: string): void;'}
+@signature: {'addRowCss(rowId: string | number, css: string): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

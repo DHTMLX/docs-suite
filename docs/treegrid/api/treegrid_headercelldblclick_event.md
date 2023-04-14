@@ -8,7 +8,7 @@ description: You can explore the headerCellDblClick event of TreeGrid in the doc
 
 @short: fires on double-click on a grid footer cell
 
-@signature: {'headerCellDblClick: (col: ICol, e: MouseEvent) => void;'}
+@signature: {'headerCellDblClick: (col: object, e: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

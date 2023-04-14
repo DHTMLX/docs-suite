@@ -8,7 +8,7 @@ description: You can explore the beforeResizeStart event of TreeGrid in the docu
 
 @short: fires before resizing of a column has started
 
-@signature: {'beforeResizeStart: (col: ICol, events: MouseEvent) => boolean | void;'}
+@signature: {'beforeResizeStart: (col: object, events: MouseEvent) => boolean | void;'}
 
 @params:
 - `col: object` - an object with a column configuration

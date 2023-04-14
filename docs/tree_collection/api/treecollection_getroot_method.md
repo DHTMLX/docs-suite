@@ -8,10 +8,10 @@ description: You can explore the getRoot method of TreeCollection in the documen
 
 @short: returns the ID of the master component
 
-@signature: {'getRoot(): Id;'}
+@signature: {'getRoot(): string | number;'}
 
 @returns:
-A string with the id of the root element.
+The id of the root element.
 
 @example:
 toolbar.data.getRoot();

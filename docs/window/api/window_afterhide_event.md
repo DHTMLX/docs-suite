@@ -8,10 +8,12 @@ description: You can explore the afterHide event of Window in the documentation 
 
 @short: fires after a window is hidden
 
-@signature: {'afterHide: (position: IPosition, events?: Event) => void;'}
+@signature: {'afterHide: (position: object, events?: Event) => void;'}
 
 @params:
-- `position: object` - an object with coordinates of the window's position
+- `position: object` - an object with coordinates of the window's position. The parameter contains two attributes:
+    - `left: number` - the left coordinate of the window's position (in pixels)
+    - `top: number` - the top coordinate of the window's position (in pixels)
 - `events: Event` - a native event object
 
 @example:
@@ -23,19 +25,10 @@ dhxWindow.events.on("afterHide", function(position, events){
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
 
-The **position** parameter contains two attributes:
-
-- **left** - (*number*)	the left coordinate of the window's position (in pixels)
-- **top** - (*number*)	the top coordinate of the window's position (in pixels)
-
-When the user closes the window by clicking on the Close icon (when the [](window/api/window_closable_config.md) option is enabled), the native event object will be passed into the second argument.
-
-<br/>
-
 Note, the event fires in 2 cases:
 
 1. While calling the [](window/api/window_hide_method.md) method.
-2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon.
+2. While the [closable](window/api/window_closable_config.md) option is enabled and a user clicks on the Close icon. When the user closes the window by clicking on the Close icon, the native event object will be passed into the second argument.
 
 @changelog:
 
