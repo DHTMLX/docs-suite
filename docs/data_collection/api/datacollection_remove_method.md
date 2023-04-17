@@ -8,7 +8,7 @@ description: You can explore the remove method of DataCollection in the document
 
 @short: deletes the specified item from the component
 
-@signature: {'remove(id: string | string[]): void;'}
+@signature: {'remove(id: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `id: string | string[]` - the ids of the items that should be deleted 

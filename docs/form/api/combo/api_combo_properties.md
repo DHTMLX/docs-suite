@@ -13,7 +13,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 	type: "combo",
 	name?: string,
 	id?: string,
-	data?: any[],
+	data?: object[],
 	value?: string | number | array,
 	
 	css?: string,

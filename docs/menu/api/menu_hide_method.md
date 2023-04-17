@@ -8,7 +8,7 @@ description: You can explore the hide method of Menu in the documentation of the
 
 @short: hides an item of Menu
 
-@signature: {'hide(ids: Id | Id[]): void;'}
+@signature: {'hide(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, one ID or an array of IDs of items

@@ -8,7 +8,7 @@ description: You can explore the beforeClose event of Timepicker in the document
 
 @short: fires before closing the timepicker
 
-@signature: {'beforeClose: (value: string | ITimeObject) => boolean | void;'}
+@signature: {'beforeClose: (value: string | object) => boolean | void;'}
 
 @params:
 - `value: string | object` - the current value of a timepicker

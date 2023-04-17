@@ -8,11 +8,14 @@ description: You can explore the eachParent method of TreeCollection in the docu
 
 @short: iterates through all the parent items (the immediate parent and its parent, etc until the parent is the component itself)
 
-@signature: {'eachParent(id: Id, callback: DataCallback<T>, self?: boolean): void;'}
+@signature: {'eachParent(id: string | number, callback: function, self?: boolean): void;'}
 
 @params:
-- `id: string` - the ID of the item
-- `callback: function` - the function that will be applied to each parent of the item
+- `id: string | number` - the ID of the item
+- `callback: function` - the function that will be applied to each parent of the item. The function takes three parameters:
+    - `item: object` - required, the object of an item
+    - `index: number` - optional, the index of an item
+    - `array: object[]` - optional, an array with items  
 - `self: boolean` - optional, defines whether the function should iterate over the specified item itself; *false* by default
 
 @example:

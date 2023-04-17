@@ -8,7 +8,7 @@ description: You can explore the show method of Ribbon in the documentation of t
 
 @short: shows an item of Ribbon
 
-@signature: {'show(ids: Id | Id[]): void;'}
+@signature: {'show(ids: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, an ID or an array of IDs of items

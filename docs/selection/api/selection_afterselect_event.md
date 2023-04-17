@@ -8,10 +8,10 @@ description: You can explore the afterSelect event of Selection in the documenta
 
 @short: fires after selecting an item
 
-@signature: {'afterSelect: (id: string) => void;'}
+@signature: {'afterSelect: (id: string | number) => void;'}
 
 @params:
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 
 @example:
 component.selection.events.on("afterSelect", function(id){

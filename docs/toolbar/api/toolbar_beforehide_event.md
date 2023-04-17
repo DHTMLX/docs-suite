@@ -8,7 +8,7 @@ description: You can explore the beforeHide event of Toolbar in the documentatio
 
 @short: fires before hiding an item of Toolbar
 
-@signature: {'beforeHide: (id: Id, events: Event) => void | boolean;'}
+@signature: {'beforeHide: (id: string | number, events: Event) => void | boolean;'}
 
 @params:
 - `id: string | number` - the ID of a toolbar item

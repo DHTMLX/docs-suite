@@ -8,7 +8,7 @@ description: You can explore the getWidget method of Layout in the documentation
 
 @short: returns the widget attached to a layout cell
 
-@signature: {'getWidget(): any;'}
+@signature: {'getWidget(): object;'}
 
 @returns:
 An object of a widget attached to a cell.

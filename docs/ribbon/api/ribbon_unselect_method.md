@@ -8,7 +8,7 @@ description: You can explore the unselect method of Ribbon in the documentation 
 
 @short: unselects a selected Ribbon item
 
-@signature: {'unselect(id?: Id): void;'}
+@signature: {'unselect(id?: string | number): void;'}
 
 @params:
 - `id: string | number` - optional, the id of a Ribbon item

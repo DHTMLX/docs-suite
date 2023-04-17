@@ -8,7 +8,15 @@ description: You can explore the eventHandlers config of Tree in the documentati
 
 @short: Optional. Adds event handlers to the HTML elements of a custom template
 
-@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ITree) => void | boolean; };};'}
+@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: object) => void | boolean; };};'}
+
+@params:
+The **eventHandlers** object includes a set of *key:value* pairs, where:
+
+- `key` - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
+- `value` - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
+  - `event` - an event object
+  - `item` - an object of a Tree item
 
 @example:
 const tree = new dhx.Tree("tree_container", {
@@ -37,13 +45,6 @@ const tree = new dhx.Tree("tree_container", {
 @examplestop:
 
 **Related sample**: [Tree. Handling events in template](https://snippet.dhtmlx.com/hg3f50td)
-
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-- `key` - the name of the event. Note, that at the beginning of the event name the **'on'** prefix is used (onclick, onmouseover).
-- `value` - an object that contains a *key:value* pair, where *key* is the css class name that the handler will be applied to and *value* is a function that takes two parameters:
-  - `event` - an event object
-  - `item` - an object of a Tree item
 
 **Note**. Returning `false` from a handler function will stop the template event bubbling and block triggering of the [itemClick](tree/api/tree_itemclick_event.md) event when you click on the item with `className`.
 

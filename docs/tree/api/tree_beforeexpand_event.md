@@ -8,7 +8,7 @@ description: You can explore the beforeExpand event of Tree in the documentation
 
 @short: fires before expanding a tree item
 
-@signature: {'beforeExpand: (id: Id) => boolean | void;'}
+@signature: {'beforeExpand: (id: string | number) => boolean | void;'}
 
 @params:
 - `id: string | number` - the id of an expanded item

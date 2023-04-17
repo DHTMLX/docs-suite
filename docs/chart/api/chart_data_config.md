@@ -8,7 +8,7 @@ description: You can explore the data config of Chart in the documentation of th
 
 @short: Optional. Specifies an array of data objects to set into the chart
 
-@signature: {'data?: any[];'}
+@signature: {'data?: object[];'}
 
 @example:
 const treeMapData = [

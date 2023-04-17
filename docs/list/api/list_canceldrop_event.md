@@ -11,7 +11,10 @@ description: You can explore the cancelDrop event of List in the documentation o
 @signature: {'cancelDrop: (data: object, events: MouseEvent) => void;'}
 
 @params:
-- `data: object` - data object
+- `data: object` - data object. It can contain the following parameters:
+	- `start: string | number` - the id of an item, from which the dragging process has started
+	- `source: array` - an array with ids of dragged items
+	- `target: string | number` - the id of a potential target item
 - `events: MouseEvent` - a native HTML event object
 
 @example:
@@ -22,25 +25,6 @@ list.events.on("cancelDrop", function(data, events) {
 @descr:
 
 **Related sample**: [List. Events](https://snippet.dhtmlx.com/iwt1yd61)
-
-The data object can contain the following parameters:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>start</b></td>
-			<td>(<i>string, number</i>) the id of an item, from which the dragging process has started</td>
-		</tr>
-        <tr>
-			<td><b>source</b></td>
-			<td>(<i>array</i>) an array with ids of dragged items</td>
-		</tr>
-        <tr>
-			<td><b>target</b></td>
-			<td>(<i>string, number</i>) the id of a potential target item</td>
-		</tr>
-    </tbody>
-</table>
 
 @changelog: added in v7.0
 

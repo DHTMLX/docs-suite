@@ -8,10 +8,10 @@ description: You can explore the getItems method of TreeCollection in the docume
 
 @short: gets the child items of a control
 
-@signature: {'getItems(id: Id): T[];'}
+@signature: {'getItems(id: string | number): object[];'}
 
 @params:
-- `id: string` - the ID of a control
+- `id: string | number` - the ID of a control
 
 @returns:
 The child items of the control.

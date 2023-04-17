@@ -8,7 +8,7 @@ description: You can explore the disable method of Sidebar in the documentation 
 
 @short: disables and dims items of Sidebar
 
-@signature: {'disable(ids: Id | Id[]): void;'}
+@signature: {'disable(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, the ID or an array of IDs of items

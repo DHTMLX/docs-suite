@@ -8,7 +8,7 @@ description: You can explore the headerCellRightClick event of TreeGrid in the d
 
 @short: fires on right click on a grid header cell
 
-@signature: {'headerCellRightClick: (col: ICol, e: MouseEvent) => void;'}
+@signature: {'headerCellRightClick: (col: object, e: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

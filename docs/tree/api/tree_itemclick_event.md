@@ -8,7 +8,7 @@ description: You can explore the itemClick event of Tree in the documentation of
 
 @short: fires on clicking a tree item
 
-@signature: {'itemClick: (id: Id, e: Event) => void;'}
+@signature: {'itemClick: (id: string | number, e: Event) => void;'}
 
 @params:
 - `id: string | number` - the id of an item

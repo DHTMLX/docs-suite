@@ -8,7 +8,7 @@ description: You can explore the data config of Combo Box in the documentation o
 
 @short: Optional. Specifies an array of data objects to set into the combobox
 
-@signature: {'data?: DataCollection<any> | any[];'}
+@signature: {'data?: object[];'}
 
 @params:
 Each object in the data set contains a number of *key:value* pairs that represent attributes of Combo options. The available attributes are:

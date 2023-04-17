@@ -17,7 +17,7 @@ description: You can explore the itemMouseOver event of List in the documentatio
 @example:
 list.events.on("itemMouseOver", function(id, event) {
     console.log("Item id:" + id);
-);
+});
 
 @descr:
 

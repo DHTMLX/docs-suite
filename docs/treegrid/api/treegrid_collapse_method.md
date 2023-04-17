@@ -8,7 +8,7 @@ description: You can explore the collapse method of TreeGrid in the documentatio
 
 @short: collapses a tree node by id
 
-@signature: {'collapse(id: Id): void;'}
+@signature: {'collapse(id: string | number): void;'}
 
 @params:
 - `id: string | number` - the id of a node to collapse

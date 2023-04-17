@@ -8,7 +8,7 @@ description: You can explore the click event of Menu in the documentation of the
 
 @short: fires after a click on a button or a menu option
 
-@signature: {'click: (id: Id, events: Event) => void;'}
+@signature: {'click: (id: string | number, events: Event) => void;'}
 
 @params:
 - `id: string | number` - the ID of a clicked control

@@ -8,7 +8,10 @@ description: You can explore the rowCss config of TreeGrid in the documentation 
 
 @short: Optional. Sets style for a row
 
-@signature: {'rowCss?: (row: IRow) => string;'}
+@signature: {'rowCss?: (row: object) => string;'}
+
+@params:
+The function takes the object of a row as a parameter and returns a string with the name of a CSS class.
 
 @example:
 <style>
@@ -28,7 +31,5 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 @descr:
 
 **Related sample**: [TreeGrid. Custom row style](https://snippet.dhtmlx.com/3ojyoryn)
-
-The function takes the id of a row as a parameter and returns a string with the name of a CSS class.
 
 [comment]: # (@related: treegrid/configuration.md#row-style treegrid/initialization.md#initialize-treegrid)

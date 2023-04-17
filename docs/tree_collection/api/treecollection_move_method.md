@@ -8,13 +8,13 @@ description: You can explore the move method of TreeCollection in the documentat
 
 @short: moves items to different positions
 
-@signature: {'move(id: Id | Id[], index: number, target?: TreeCollection, targetId?: Id): Id | Id[];'}
+@signature: {'move(id: (string | number) | (string | number)[], index: number, target?: object, targetId?: (string | number) | (string | number)[]): (string | number) | (string | number)[];'}
 
 @params:
-- `id: string | string[]` - the ids of items to move
+- `id: (string | number) | (string | number)[]` - the ids of items to move
 - `index: number` - the index to move items to
 - `target: object` - optional, the target tree collection object
-- `targetId: string` - optional, the id of the parent item where the moved items will be placed
+- `targetId: (string | number) | (string | number)[]` - optional, the id of the parent item where the moved items will be placed
 
 @returns:
 The item's id or an array with ids of items.

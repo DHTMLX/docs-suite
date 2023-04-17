@@ -8,7 +8,7 @@ description: You can explore the beforeRowResize event of TreeGrid in the docume
 
 @short: fires before the height of a row is changed
 
-@signature: beforeRowResize: (row: IRow, events: Event, currentHeight: number) => boolean | void;
+@signature: beforeRowResize: (row: object, events: Event, currentHeight: number) => boolean | void;
 
 @params:
 - `row: object` - an object with a row configuration

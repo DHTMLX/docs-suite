@@ -243,6 +243,28 @@ For example, you can change the value of an item:
 tree.data.update("item_id", {value: "New value"});
 ~~~
 
+Or you can disable displaying of a checkbox for a tree item:
+
+~~~js
+tree.data.update("Books", {checkbox:false});
+~~~
+
+### Getting parent of item
+
+You can get the parent of an item using the [getItem](tree_collection/api/treecollection_getitem_method.md) method of tree collection.
+
+~~~js
+tree.data.getItem("Thrillers").parent
+// "Books"
+
+tree.data.getItem("Books").parent
+// "_ROOT_u1574768464563"
+~~~
+
+where
+
+- **parent** - (*string*) the id of the parent of a tree item
+
 **Related sample**: [Tree. Data update](https://snippet.dhtmlx.com/e0vgry6n)
 
 ### Removing items from Tree

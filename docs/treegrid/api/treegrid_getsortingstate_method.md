@@ -8,7 +8,7 @@ description: You can explore the getSortingState method of TreeGrid in the docum
 
 @short: returns the current state of sorting data in TreeGrid
 
-@signature: {'getSortingState(): any;'}
+@signature: {'getSortingState(): object;'}
 
 @returns:
 An object with the current state of sorting data in the treegrid.

@@ -8,7 +8,7 @@ description: You can explore the beforeEditEnd event of List in the documentatio
 
 @short: fires before editing of an item is ended
 
-@signature: {'beforeEditEnd: (value: any, id: string | number) => void | boolean;'}
+@signature: {'beforeEditEnd: (value: string, id: string | number) => void | boolean;'}
 
 @params:
 - `value: string` - the value of an item

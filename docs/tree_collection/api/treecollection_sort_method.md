@@ -8,10 +8,14 @@ description: You can explore the sort method of TreeCollection in the documentat
 
 @short: sorts controls according to some criteria
 
-@signature: {'sort(rule?: ISortMode): void;'}
+@signature: {'sort(rule?: object): void;'}
 
 @params:
-- `rule: object` - an object with parameters for sorting
+- `rule: object` - an object with parameters for sorting. The object has the following attributes:
+	- `by: string | number` - the id of a data field (a column of TreeGrid)
+	- `dir: string` - the direction of sorting "asc" or "desc"
+	- `as: function` - a function that specifies the type to sort data as
+	- `rule: function` - optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
 
 @example:
 treeGrid.data.sort({
@@ -21,29 +25,6 @@ treeGrid.data.sort({
 });
 
 @descr:
-
-The **rule** object has the following attributes:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>by</b></td>
-			<td>(<i>string</i>) the id of a data field (a column of TreeGrid)</td>
-		</tr>
-        <tr>
-			<td><b>dir</b></td>
-			<td>(<i>function</i>) the direction of sorting "asc" or "desc"</td>
-		</tr>
-        <tr>
-			<td><b>as</b></td>
-			<td>(<i>function</i>) a function that specifies the type to sort data as</td>
-		</tr>
-        <tr>
-			<td><b>rule</b></td>
-			<td>(<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</td>
-		</tr>
-    </tbody>
-</table>
 
 {{note Calling the method without parameters will discard all applied sorting rules.}}
 

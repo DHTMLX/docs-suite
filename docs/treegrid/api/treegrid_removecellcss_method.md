@@ -8,7 +8,7 @@ description: You can explore the removeCellCss method of TreeGrid in the documen
 
 @short: removes a style from a cell
 
-@signature: {'removeCellCss(rowId: Id, colId: Id, css: string): void;'}
+@signature: {'removeCellCss(rowId: string | number, colId: string | number, css: string): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

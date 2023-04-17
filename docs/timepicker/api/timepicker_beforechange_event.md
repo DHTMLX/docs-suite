@@ -8,7 +8,7 @@ description: You can explore the beforeChange event of Timepicker in the documen
 
 @short: fires before change of the timepicker value
 
-@signature: {'beforeChange: (value: string | ITimeObject) => boolean | void;'}
+@signature: {'beforeChange: (value: string | object) => boolean | void;'}
 
 @params:
 - `value: string | object` - the value of a timepicker

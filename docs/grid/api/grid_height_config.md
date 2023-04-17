@@ -24,7 +24,9 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr: 
 
-**Related sample**: [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
+**Related sample**: 
+- [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
+- [Grid. Set automatic height (PRO)](https://snippet.dhtmlx.com/srbu56ob)
 
 **Related article:** [Width/height](grid/configuration.md#widthheight)
 

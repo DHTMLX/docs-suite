@@ -8,7 +8,7 @@ description: You can explore the unselect method of Toolbar in the documentation
 
 @short: unselects a selected Toolbar item
 
-@signature: {'unselect(id?: Id): void;'}
+@signature: {'unselect(id?: string | number): void;'}
 
 @params:
 - `id: string | number` - optional, the id of a Toolbar item

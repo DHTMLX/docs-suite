@@ -8,7 +8,7 @@ description: You can explore the hide method of Ribbon in the documentation of t
 
 @short: hides an item of Ribbon
 
-@signature: {'hide(ids: Id | Id[]): void;'}
+@signature: {'hide(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, an ID or an array of IDs of items

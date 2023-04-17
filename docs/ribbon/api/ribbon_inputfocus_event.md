@@ -8,7 +8,7 @@ description: You can explore the inputFocus event of Ribbon in the documentation
 
 @short: fires when a control is focused
 
-@signature: {'inputFocus: (id: Id) => void;'}
+@signature: {'inputFocus: (id: string | number) => void;'}
 
 @params:
 - `id: string | number` - the ID of a new control

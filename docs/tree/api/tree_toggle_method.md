@@ -8,7 +8,7 @@ description: You can explore the toggle method of Tree in the documentation of t
 
 @short: opens/closes a tree item by id
 
-@signature: {'toggle(id: Id): void;'}
+@signature: {'toggle(id: string | number): void;'}
 
 @params:
 - `id: string | number` - the id of a tree item to toggle

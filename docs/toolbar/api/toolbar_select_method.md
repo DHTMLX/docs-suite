@@ -8,7 +8,7 @@ description: You can explore the select method of Toolbar in the documentation o
 
 @short: selects a specified item of Toolbar
 
-@signature: {'select(id: Id, unselect: boolean): void;'}
+@signature: {'select(id: string | number, unselect: boolean): void;'}
 
 @params:
 - `id: string | number` - the id of a Toolbar item

@@ -8,10 +8,12 @@ description: You can explore the afterShow event of Window in the documentation 
 
 @short: fires after a window is shown
 
-@signature: {'afterShow: (position: IPosition) => void;'}
+@signature: {'afterShow: (position: object) => void;'}
 
 @params:
-- `position: object` - an object with coordinates of the window's position
+- `position: object` - an object with coordinates of the window's position. The parameter contains two attributes:
+    - `left: number` - the left coordinate of the window's position (in pixels)
+    - `top: number` - the top coordinate of the window's position (in pixels)
 
 @example:
 dhxWindow.events.on("afterShow", function(position){
@@ -21,11 +23,6 @@ dhxWindow.events.on("afterShow", function(position){
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
-
-The **position** parameter contains two attributes:
-
-- **left** - (*number*) the left coordinate of the window's position (in pixels)
-- **top** - (*number*) the top coordinate of the window's position (in pixels)
 
 @changelog:
 

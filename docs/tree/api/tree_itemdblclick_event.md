@@ -8,7 +8,7 @@ description: You can explore the itemDblClick event of Tree in the documentation
 
 @short: fires on double-clicking a tree item
 
-@signature: {'itemDblClick: (id: Id, e: Event) => void;'}
+@signature: {'itemDblClick: (id: string | number, e: Event) => void;'}
 
 @params:
 - `id: string | number` - the id of an item

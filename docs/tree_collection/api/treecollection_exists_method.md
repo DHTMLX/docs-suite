@@ -8,10 +8,10 @@ description: You can explore the exists method of TreeCollection in the document
 
 @short: checks whether the specified item exists in the component
 
-@signature: {'exists(id: Id): boolean;'}
+@signature: {'exists(id: string | number): boolean;'}
 
 @params:
-- `id: string` - the id of the item in question
+- `id: string | number` - the id of the item in question
 
 @returns:
 `true` if the item exists; otherwise, `false`.

@@ -8,7 +8,7 @@ description: You can explore the itemRightClick event of Tree in the documentati
 
 @short: fires on right-clicking a tree item
 
-@signature: {'itemRightClick: (id: Id, e: Event) => void;'}
+@signature: {'itemRightClick: (id: string | number, e: Event) => void;'}
 
 @params:
 - `id: string | number` - the id of an item

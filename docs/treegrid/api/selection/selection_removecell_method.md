@@ -8,7 +8,7 @@ description: You can explore the removeCell method of TreeGrid in the documentat
 
 @short: unselects previously selected cells
 
-@signature: {'removeCell(rowId?: Id, colId?: Id): void;'}
+@signature: {'removeCell(rowId?: string | number, colId?: string | number): void;'}
 
 @params:
 - `rowId: string | number` - optional, the id of a row

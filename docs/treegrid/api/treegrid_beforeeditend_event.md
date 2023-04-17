@@ -8,7 +8,7 @@ description: You can explore the beforeEditEnd event of TreeGrid in the document
 
 @short: fires before editing of a cell is ended
 
-@signature: {'beforeEditEnd: (value: string | number | boolean, row: IRow, col: ICol) => boolean | void;'}
+@signature: {'beforeEditEnd: (value: string | number | boolean, row: object, col: object) => boolean | void;'}
 
 @params:
 - `value: string | number | boolean` - the new value of a cell

@@ -302,7 +302,7 @@ You can filter grid data by the specified criteria with the help of the **filter
 				<li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns an object with a filtering rule.</li>
 				or:
 				<li>an object with the following attributes:<br/>
-					- <b>by</b> - (<i>string</i>) mandatory, the id of a column<br/>
+					- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>
 					- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>
 					- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:
 					<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol>
@@ -361,7 +361,7 @@ It is possible to sort data in the grid via the **sort()** method of [DataCollec
 			<td><b>rule</b></td>
 			<td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:
 			<ul>
-				<li><b>by</b> (<i>string</i>) the id of a column</li>
+				<li><b>by</b> (<i>string | number</i>) the id of a column</li>
 				<li><b>dir</b> (<i>string</i>) the direction of sorting "asc" or "desc"</li>
 				<li><b>as</b> (<i>function</i>) a function that specifies the type to sort data as</li>
 				<li><b>rule</b> (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li>
@@ -423,7 +423,7 @@ To get the current state of sorting data in Grid, use the [](grid/api/grid_getso
 		</tr>
 		<tr>
 			<td><b>by</b></td>
-			<td>(<i>string</i>) the id of a column that the grid is sorted by</td>
+			<td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
 		</tr>
     </tbody>
 </table>

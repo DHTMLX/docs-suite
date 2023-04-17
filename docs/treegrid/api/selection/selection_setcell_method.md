@@ -8,7 +8,7 @@ description: You can explore the setCell method of TreeGrid in the documentation
 
 @short: sets selection to a specified cell
 
-@signature: {'setCell(row?: any, col?: any): void;'}
+@signature: {'setCell(row?: object, col?: object): void;'}
 
 @params:
 - `row: object` - an object with a cell to be selected

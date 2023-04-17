@@ -8,7 +8,7 @@ description: You can explore the cols config of Layout in the documentation of t
 
 @short: Optional. An array of columns objects
 
-@signature: {'cols?: ICellConfig[] | ILayoutConfig[];'}
+@signature: {'cols?: object[];'}
 
 @example:
 const layout = new dhx.Layout("layout_container", {

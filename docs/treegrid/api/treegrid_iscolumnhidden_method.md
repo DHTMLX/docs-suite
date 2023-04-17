@@ -8,7 +8,7 @@ description: You can explore the isColumnHidden method of TreeGrid in the docume
 
 @short: checks whether a column is hidden
 
-@signature: {'isColumnHidden(colId: Id): boolean;'}
+@signature: {'isColumnHidden(colId: string | number): boolean;'}
 
 @params:
 - `colId: string | number` - the id of a column

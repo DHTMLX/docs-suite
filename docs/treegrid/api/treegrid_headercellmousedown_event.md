@@ -8,7 +8,7 @@ description: You can explore the headerCellMouseDown event of TreeGrid in the do
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: {'headerCellMouseDown: (col: ICol, e: MouseEvent & TouchEvent) => void;'}
+@signature: {'headerCellMouseDown: (col: object, e: MouseEvent & TouchEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

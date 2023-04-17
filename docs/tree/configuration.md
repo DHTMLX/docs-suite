@@ -31,6 +31,8 @@ const tree = new dhx.Tree("tree_container", {
 });
 ~~~
 
+**Related sample**: [Tree. Collapsed mode](https://snippet.dhtmlx.com/cqbg0wsf)
+
 ## Editing of items
 
 ![](../assets/tree/editable.png)

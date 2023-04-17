@@ -68,10 +68,10 @@ columns:[
 	    resizable?: boolean,
 	    sortable?: boolean,
 	    mark?: { min?: string, max?: string } |
-               (cell: any, columnCells: any[], row?: IRow, column?: ICol) => string,
-	    template?: (cellValue: any, row: IRow, col: ICol) => string,
+               (cell: any, columnCells: any[], row?: object, column?: object) => string,
+	    template?: (cellValue: any, row: object, col: object) => string,
 	    tooltip?: boolean,
-	    tooltipTemplate?: (cellValue: any, row: IRow, col: ICol) => string,
+	    tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
     },
     // more column objects
 ]
@@ -198,8 +198,9 @@ columns:[
                     and must return either an array of string values or an array of objects   
                     </li>
                 </ul>
-                <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/w2cdossn" target="_blank">Grid. Editing with different editors (combobox, select, multiselect, boolean, date)</a>
-                <br><br>If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.
+                <b>Related Samples:</b><ul><li><a href="https://snippet.dhtmlx.com/w2cdossn" target="_blank">Grid. Editing with different editors (combobox, select, multiselect, boolean, date)</a></li>
+				<li><a href="https://snippet.dhtmlx.com/i22fg83z" target="_blank">Grid. Individual option lists for select, multiselect and combobox editors</a></li></ul>
+                If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.
             </td>
 		</tr>
         <tr>

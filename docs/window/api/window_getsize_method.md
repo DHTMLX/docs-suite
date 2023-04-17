@@ -8,7 +8,7 @@ description: You can explore the getSize method of Window in the documentation o
 
 @short: gets the size of window
 
-@signature: {'getSize(): ISize;'}
+@signature: {'getSize(): object;'}
 
 @returns:
 An object with width and height of a window

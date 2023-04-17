@@ -8,7 +8,7 @@ description: You can explore the beforeCheck event of Tree in the documentation 
 
 @short: fires before the state of an item is changed
 
-@signature: beforeCheck: (index: number, id: Id) => boolean | void;
+@signature: beforeCheck: (index: number, id: string | number) => boolean | void;
 
 @params:
 - `index: number` - the position of an item

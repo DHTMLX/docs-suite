@@ -8,7 +8,7 @@ description: You can explore the afterCheck event of Tree in the documentation o
 
 @short: fires after the state of an item is changed
 
-@signature: afterCheck: (index: number, id: Id, value: boolean) => void;
+@signature: afterCheck: (index: number, id: string | number, value: boolean) => void;
 
 @params:
 - `index: number` - the position of an item

@@ -8,12 +8,28 @@ description: You can explore the resize event of Window in the documentation of 
 
 @short: fires on resizing a window
 
-@signature: {'resize: (state: (ISize & IPosition) | ISize | IPosition, oldState: (ISize & IPosition) | ISize | IPosition, side: IDirectionConfig) => void;'}
+@signature: {'resize: (state: object, oldState: object, side: object) => void;'}
 
 @params:
-- `state: object` - an object with the new size and (or) position of a window
+- `state: object` - an object with the new size and (or) position of a window. 
+    - The size parameters are:
+        - `width: number` - the width of the window
+        - `height: number` - the height of the window
+    - The position parameters are:
+        - `left: number` - the left coordinate of the window's position (in pixels)
+        - `top: number` - the top coordinate of the window's position (in pixels)
 - `oldState: object` - an object with the previous size and (or) position of a window
-- `side: object` - an object that specifies the direction of resizing
+    - The size parameters are:
+        - `width: number` - the width of the window
+        - `height: number` - the height of the window
+    - The position parameters are:
+        - `left: number` - the left coordinate of the window's position (in pixels)
+        - `top: number` - the top coordinate of the window's position (in pixels)
+- `side: object` - an object that specifies the direction of resizing. It contains four directions:
+    - `left: boolean` - optional, the left direction
+    - `right: boolean` - optional, the right direction
+    - `top: boolean` - optional, the top direction
+    - `bottom: boolean` - optional, the bottom direction
 
 @example:
 dhxWindow.events.on("resize", function(state, oldState, side) {
@@ -24,21 +40,5 @@ dhxWindow.events.on("resize", function(state, oldState, side) {
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
-
-The **state/oldState** object contains two attributes:
-
-- **size** - (*object*) optional, an object with the size of a window. It contains two options:
-    - **width** - (*number*) the width of the window
-    - **height** - (*number*) the height of the window
-- **position** - (*object*)  optional, an object with the position of the window  
-    - **left** - (*number*)	the left coordinate of the window's position (in pixels)
-    - **top** - (*number*)	the top coordinate of the window's position (in pixels)
-
-The **side** object can contain the following directions:
-
-- **left** - (*boolean*) optional, the left direction
-- **right** - (*boolean*) optional, the right direction
-- **top** - (*boolean*) optional, the top direction
-- **bottom** - (*boolean*) optional, the bottom direction
 
 [comment]: # (@related: window/handling_events.md)

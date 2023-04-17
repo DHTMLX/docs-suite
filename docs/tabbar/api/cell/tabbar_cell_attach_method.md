@@ -8,7 +8,7 @@ description: You can explore the attach method of Tabbar in the documentation of
 
 @short: attaches a DHTMLX component into a Tabbar cell
 
-@signature: {'attach(component: string | object, config?: any): object;'}
+@signature: {'attach(component: string | object, config?: object): object;'}
 
 @params:
 - `component: string | object` - the name or object of a component

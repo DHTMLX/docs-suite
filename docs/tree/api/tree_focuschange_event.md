@@ -8,7 +8,7 @@ description: You can explore the focusChange event of Tree in the documentation 
 
 @short: fires on moving focus to a new item
 
-@signature: {'focusChange: (index: number, id: Id) => void;'}
+@signature: {'focusChange: (index: number, id: string | number) => void;'}
 
 @params:
 - `index: number` - the position of an item

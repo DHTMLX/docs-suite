@@ -8,10 +8,12 @@ description: You can explore the beforeShow event of Window in the documentation
 
 @short: fires before a window is shown
 
-@signature: {'beforeShow: (position: IPosition) => boolean | void;'}
+@signature: {'beforeShow: (position: object) => boolean | void;'}
 
 @params:
-- `position: object` - an object with coordinates of the window's position
+- `position: object` - an object with coordinates of the window's position. The parameter contains two attributes:
+    - `left: number` - the left coordinate of the window's position (in pixels)
+    - `top: number` - the top coordinate of the window's position (in pixels)
 
 @returns:
 Return `true` to show a window, `false` to block showing a window.
@@ -25,11 +27,6 @@ dhxWindow.events.on("beforeShow", function(position){
 @descr:
 
 **Related sample**: [Window. Events](https://snippet.dhtmlx.com/jfu4upwd)
-
-The **position** parameter contains two attributes:
-
-- **left** - (*number*) the left coordinate of the window's position (in pixels)
-- **top** - (*number*) the top coordinate of the window's position (in pixels)
 
 @changelog:
 

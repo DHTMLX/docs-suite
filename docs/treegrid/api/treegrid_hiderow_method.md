@@ -8,7 +8,7 @@ description: You can explore the hideRow method of TreeGrid in the documentation
 
 @short: hides a row of TreeGrid
 
-@signature: {'hideRow(rowId: Id): void;'}
+@signature: {'hideRow(rowId: string | number): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

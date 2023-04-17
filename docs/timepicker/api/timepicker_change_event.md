@@ -8,7 +8,7 @@ description: You can explore the change event of Timepicker in the documentation
 
 @short: fires on change of the timepicker value
 
-@signature: {'change: (value: string | ITimeObject) => void;'}
+@signature: {'change: (value: string | object) => void;'}
 
 @params:
 - `value: string | object` - the value of a timepicker

@@ -8,13 +8,13 @@ description: description
 
 @short: returns the id of the item by its index
 
-@signature: {'getId(index: number): string;'}
+@signature: {'getId(index: number): string | number;'}
 
 @params:
 - `index: number` - the index of the item
 
 @returns:
-A string with the id of the item.
+The id of the item.
 
 @example:
 const id = component.data.getId(0); // -> returns "1"

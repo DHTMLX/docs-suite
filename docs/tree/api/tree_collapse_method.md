@@ -8,7 +8,7 @@ description: You can explore the collapse method of Tree in the documentation of
 
 @short: collapses a tree item by id
 
-@signature: {'collapse(id: Id): void;'}
+@signature: {'collapse(id: string | number): void;'}
 
 @params:
 - `id: string | number` - the id of an item to collapse

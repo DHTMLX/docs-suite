@@ -15,33 +15,28 @@ description: You can explore the parse method of DataCollection in the documenta
 - `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:
-const data = [
-	{
-		id: "1",
-		text: "Chairman & CEO",
-		title: "Henry Bennett",
-		img: "../common/img/avatar-1.png"
-	},
-	{
-		id: "2",
-		text: "Manager",
-		title: "Mildred Kim",
-		img: "../common/img/avatar-2.png"
-	},
-	{
-		id: "3",
-		text: "Technical Director",
-		title: "Jerry Wagner",
-		img: "../common/img/avatar-3.png"
-	},
-	{ id: "1-2", from: "1", to: "2", type: "line" },
-	{ id: "1-3", from: "1", to: "3", type: "line" }
-];
+const dataset = [
+    {
+        "value": "Ben",
+        "short": "Ben is a very cautious 5-year-old Siberian Husky.",
+        "thumbnailName": "01.jpg"
+    },
+    {
+        "value": "Izzy",
+        "short": "This is our most beloved kingfisher bird Izzy.",
+        "thumbnailName": "02.jpg"
+    },
+    {
+        "value": "Momo",
+        "short": "Momo is a 25-year-old elephant with a big heart.",
+        "thumbnailName": "03.jpg"
+    }
+]
 
-const diagram = new dhx.Diagram("diagram_container", { type: "org" });
+const dataview = new dhx.DataView("dataview_container");
 
-// loads data into the diagram from the JSON array
-diagram.data.parse(data);
+// loads data into the dataview from the JSON array
+dataview.data.parse(dataset);
 
 @descr:
 

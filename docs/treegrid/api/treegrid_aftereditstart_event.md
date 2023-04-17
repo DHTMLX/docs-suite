@@ -8,7 +8,7 @@ description: You can explore the afterEditStart event of TreeGrid in the documen
 
 @short: fires after editing of a cell has started
 
-@signature: {'afterEditStart: (row: IRow, col: ICol, editorType: EditorType) => void;'}
+@signature: {'afterEditStart: (row: object, col: object, editorType: string) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

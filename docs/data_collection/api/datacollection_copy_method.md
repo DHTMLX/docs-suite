@@ -8,10 +8,10 @@ description: You can explore the copy method of DataCollection in the documentat
 
 @short: creates a copy of an item at the defined position
 
-@signature: {'copy(id: string | string[], index: number, target?: object): string | string[];'}
+@signature: {'copy(id: (string | number) | (string | number)[], index: number, target?: object): (string | number) | (string | number)[];'}
 
 @params:
-- `id: string | string[]` - the id of an item to copy
+- `id: (string | number) | (string | number)[]` - the id of an item or an array with ids of items to copy
 - `index: number` - the index to create a copy at
 - `target: object` - optional, the target data collection object
 

@@ -8,7 +8,7 @@ description: You can explore the afterResizeEnd event of TreeGrid in the documen
 
 @short: fires after resizing of a column is ended
 
-@signature: {'afterResizeEnd: (column: ICol, events: MouseEvent) => void;'}
+@signature: {'afterResizeEnd: (column: object, events: MouseEvent) => void;'}
 
 @params:
 - `column: object` - an object with a column configuration

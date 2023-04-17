@@ -8,19 +8,9 @@ description: You can explore the data config of Tree in the documentation of the
 
 @short: Optional. Sets a dataset for a tree
 
-@signature: {'data?: array;'}
+@signature: {'data?: object[];'}
 
-@example:
-const data = new dhx.TreeCollection();
-data.load("../common/treedata.json");
-const tree = new dhx.Tree("tree_container", {data: data});
-
-@descr:
-
-**Related samples**:
-- [Tree. Initialization with config.data](https://snippet.dhtmlx.com/r49y51k3)
-- [Tree. Initialization with external TreeCollection](https://snippet.dhtmlx.com/osjo7t0h)
-
+@params:
 Each **data** object can have the following properties:
 
 <table>
@@ -52,46 +42,41 @@ Each **data** object can have the following properties:
     </tbody>
 </table>
 
-~~~js
-const tree = new dhx.Tree("tree_container", {
-    data:[
-        {
-            "value": "Books",
-            "id": "Books",
-            "opened": true,
-            "checkbox": true,
-            "items": [
-                {
-                    "value": "Thrillers",
-                    "id": "Thrillers",
-                    "icon": { 
-						"folder": "fas fa-book", 
-						"openFolder": "fas fa-book-open", 
-						"file": "fas fa-file"
-					}
-                }
-            ]
-        }
-    ]
-});
-~~~
+@example:
+const data = [
+    {
+        "value": "Books",
+        "id": "Books",
+        "opened": true,
+        "checkbox": true,
+        "items": [
+            {
+                "value": "Thrillers",
+                "id": "Thrillers",
+                "icon": { 
+					"folder": "fas fa-book", 
+					"openFolder": "fas fa-book-open", 
+					"file": "fas fa-file"
+				}
+            }
+        ]
+    }
+];
 
-You can disable displaying a checkbox for a tree item via the [update](tree_collection/api/treecollection_update_method.md) method of tree collection.
+const tree = new dhx.Tree("tree", {
+    data: dataset
+});
+
+@descr:
+
+**Related samples**:
+- [Tree. Initialization with config.data](https://snippet.dhtmlx.com/r49y51k3)
+- [Tree. Initialization with external TreeCollection](https://snippet.dhtmlx.com/osjo7t0h)
+
+You can disable displaying of a checkbox for a tree item via the [update](tree_collection/api/treecollection_update_method.md) method of tree collection.
 
 ~~~js
 tree.data.update("Books", {checkbox:false});
-~~~
-
-- **parent** - (*string*) the id of the parent of a tree item
-
-For example, you can get the parent of an item using the [getItem](tree_collection/api/treecollection_getitem_method.md) method of tree collection.
-
-~~~js
-tree.data.getItem("Thrillers").parent
-// "Books"
-
-tree.data.getItem("Books").parent
-// "_ROOT_u1574768464563"
 ~~~
 
 [comment]: # (@related: tree/initialization_of_dhtmlxtree.md#initialize-tree tree/loading_data.md#preparing-data-set)

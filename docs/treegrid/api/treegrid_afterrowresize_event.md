@@ -8,7 +8,7 @@ description: You can explore the afterRowResize event of TreeGrid in the documen
 
 @short: fires after the height of a row is changed
 
-@signature: afterRowResize: (row: IRow, events: Event, currentHeight: number) => void;
+@signature: afterRowResize: (row: object, events: Event, currentHeight: number) => void;
 
 @params:
 - `row: object` - an object with a row configuration

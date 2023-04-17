@@ -17,7 +17,7 @@ In this section you can find out how to initialize TreeGrid, how to load data in
 | Topic                                                           | Description                                                    |
 | --------------------------------------------------------------- | -------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                      | Learn how to initialize TreeGrid                               |
-| [Initialization of a collapsed TreeGrid](../configuration/#collapsed-mode) | Learn how to initialize a TreeGrid in the collapsed state |
+| [Initialization of a collapsed TreeGrid](../configuration/#collapsed-mode) | Learn how to initialize a TreeGrid in the collapsed state ([Example](https://snippet.dhtmlx.com/t4iswa2y))|
 | [Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m) | The example shows how to initialize TreeGrid inside Pagination |
 
 
@@ -115,14 +115,14 @@ In this section you will know how to configure the drag-n-drop functionality for
 | [Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)          | Learn how to configure drag-n-drop between treegrids ([Example](https://snippet.dhtmlx.com/43covmy2))                            |
 | [Drag-n-drop of multiple rows](../configuration/#drag-n-drop-of-multiple-rows)    | Learn how to allow end users to drag-n-drop several rows at once                                                                 |
 | [Copying of rows during drag-n-drop](../api/treegrid_dragcopy_config/)            | Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/a7pg38rr))                          |
-| [Expanding collapsed rows during drag-n-drop](../api/treegrid_dragexpand_config/) | Learn how to disable/enable the ability of collapsed rows to expand when you hover them over during drag-n-drop                  |
+| [Expanding collapsed rows during drag-n-drop](../api/treegrid_dragexpand_config/) | Learn how to disable/enable the ability of collapsed rows to expand when you hover them over during drag-n-drop ([Example](https://snippet.dhtmlx.com/hwddi1ki))                 |
 
 ## How to configure sizes of TreeGrid and its cells
 
 | Topic                                                                                       | Description                                                                                                                                    |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Width and height of TreeGrid](../configuration/#widthheight)                               | Learn how to set specific size of TreeGrid ([Example](https://snippet.dhtmlx.com/7w8jxgft))                                                    |
-| [Auto-height for TreeGrid](../configuration/#autoheight-for-treegrid)                       | Learn how to configure auto-height for TreeGrid                                                                                                |
+| [Auto-height for TreeGrid](../configuration/#autoheight-for-treegrid)                       | Learn how to configure auto-height for TreeGrid ([Example](https://snippet.dhtmlx.com/wg7xosq8))                                                                                               |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/lgvoz0ar))                |
 | [Max width of a column](../api/api_treegridcolumn_properties/)                              | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/pyrloz7y))                           |
 | [Min width of a column](../api/api_treegridcolumn_properties/)                              | Learn how to define the minimum width which can be set for a column   ([Example](https://snippet.dhtmlx.com/cpgjyoxn))                         |
@@ -199,7 +199,7 @@ In this section you will find the ways of editing data in TreeGrid.
 | Topic                                                                                 | Description                                                                                                                                                            |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Enabling/disabling editing](../configuration/#editing-treegrid-and-separate-columns) | Read how to enable/disable editing of the whole Grid or its separate columns                                                                                           |
-| [Editing with different editors](../configuration/#types-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p)) |
+| [Editing with different editors](../configuration/#types-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p), [Example 3](https://snippet.dhtmlx.com/1t8vvm07)) |
 | [Editing of a specific cell](../usage/#editing-data)                                  | Learn how to enable editing of a cell ([Example](https://snippet.dhtmlx.com/zm6wh1ss))                                                                                 |
 | [TreeCollection API](../../tree_collection/)                                          | Check the list of all available TreeCollection API                                                                                                                     |
 
@@ -233,7 +233,7 @@ In this section you will find the ways of work with selection functionality.
 | Topic                                                                             | Description                                                                                                            |
 | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | [Configuring selection](../configuration/#selection)                              | Learn how to configure the mode of selection of TreeGrid elements ([Example](https://snippet.dhtmlx.com/v0dyh06q))     |
-| [Enabling multiselection](../configuration/#multiple-selection-of-treegrid-cells) | Learn how to enable multi-row/multi-cell selection in TreeGrid                                                         |
+| [Enabling multiselection](../configuration/#multiple-selection-of-treegrid-cells) | Learn how to enable multi-row/multi-cell selection in TreeGrid ([Example](https://snippet.dhtmlx.com/hwddi1ki))                                                        |
 | [Working with selection](../usage_selection/)                                     | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell |
 | [Selection API](../../category/selection-api-1/)                                  | Learn how to use the API of Selection to manage the selection of TreeGrid cells                                        |
 

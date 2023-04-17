@@ -8,7 +8,7 @@ description: You can explore the setValue method of Timepicker in the documentat
 
 @short: sets value for a TimePicker
 
-@signature: {'setValue(value: Date | number | string | any[] | ITimeObject): void;'}
+@signature: {'setValue(value: Date | number | string | any[] | object): void;'}
 
 @params:
 - `value: Date | number | string | array | object` - the value to be set for a timepicker

@@ -8,7 +8,7 @@ description: You can explore the update method of TreeCollection in the document
 
 @short: changes an item
 
-@signature: {'update(id: string | number, item: IUpdateObject): void;'}
+@signature: {'update(id: string | number, item: object): void;'}
 
 @params:
 - `id: string | number` - the ID of an item

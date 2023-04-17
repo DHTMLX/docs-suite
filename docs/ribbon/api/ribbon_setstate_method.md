@@ -8,7 +8,7 @@ description: You can explore the setState method of Ribbon in the documentation 
 
 @short: sets values/states of controls
 
-@signature: {'setState(state: IState): void;'}
+@signature: {'setState(state: object): void;'}
 
 @params:
 - `state: object` - a hash of *key:value* pairs, where the key is the ID of a control and the value is a new value/state of the control

@@ -8,7 +8,7 @@ description: You can explore the openMenu event of Toolbar in the documentation 
 
 @short: fires on expanding a menu control
 
-@signature: {'openMenu: (id: Id) => void;'}
+@signature: {'openMenu: (id: string | number) => void;'}
 
 @params:
 - `id: string | number` - the ID of an opened menu item
