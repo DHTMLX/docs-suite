@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.1
 ------------
 
-Released on ...
+Released on April 18, 2023
 
 ### New functionality
 
@@ -62,6 +62,9 @@ Released on ...
 ### Fixes
 
 - Grid. Fix work of the [`afterEditEnd`](grid/api/grid_aftereditend_event.md), [`afterEditStart`](grid/api/grid_aftereditstart_event.md), [`beforeEditEnd`](grid/api/grid_beforeeditend_event.md), [`beforeEditStart`](grid/api/grid_beforeeditstart_event.md) events when keyboard navigation is enabled
+- Grid/TreeGrid. Fix work of selection on removing or loading data
+- Layout. Fix work of the progress bar
+- TreeGrid. Fix incorrect work of filtering when collapsing or expanding the parent node
 
 Version 8.0.3
 --------------
