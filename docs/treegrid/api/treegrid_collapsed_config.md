@@ -23,6 +23,6 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-**Related sample**: 
+**Related sample**: [TreeGrid. Collapsed mode](https://snippet.dhtmlx.com/t4iswa2y)
 
 @changelog: added in v8.1

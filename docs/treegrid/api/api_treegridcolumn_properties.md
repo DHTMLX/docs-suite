@@ -179,11 +179,12 @@ columns:[
                     <li>a function which takes two parameters:
                         <ol><b>col</b> - (required) an object with the configuration of a column</ol>   
                         <ol><b>row</b> - (optional) an object with all cells in a row</ol>
-                    and must return either an array of string values or an array of objects   
+                    and must return either an array of string values or an array of objects
                     </li>
                 </ul>
-                <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/5jsdwyp2" target="_blank">TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)</a>
-                <br><br>If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.
+                <b>Related Samples:</b><ul><li><a href="https://snippet.dhtmlx.com/5jsdwyp2" target="_blank">TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)</a></li>
+				<li><a href="https://snippet.dhtmlx.com/1t8vvm07" target="_blank">TreeGrid. Individual option lists for select, multiselect and combobox editors</a></li></ul>
+                If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.
             </td>
 		</tr>
 		<tr>

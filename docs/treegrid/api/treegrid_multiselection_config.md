@@ -24,6 +24,8 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 To use the **multiselection** property, enable the [](treegrid/api/treegrid_selection_config.md) configuration option when initializing a treegrid.
 
+**Related sample:** [TreeGrid. Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
+
 **Related articles:**
 
 - [Multiple selection of TreeGrid cells](treegrid/configuration.md#multiple-selection-of-treegrid-cells)

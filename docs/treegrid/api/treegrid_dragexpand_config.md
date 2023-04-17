@@ -24,6 +24,8 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
+**Related sample:** [TreeGrid. Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
+
 **Related article:** [Drag-n-drop](treegrid/configuration.md#drag-n-drop)
 
 **Related API:**

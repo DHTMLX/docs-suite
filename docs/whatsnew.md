@@ -26,7 +26,7 @@ Released on ...
     - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
 - The ability to set individual lists of editor options for different cells of the column:
     - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
-- The ability [to set automatic height for Grid](grid/configuration.md#autoheight-for-grid)
+- The ability [to set automatic height for Grid](grid/configuration.md#autoheight-for-grid) (Pro)
 
 #### Tree
 
@@ -44,7 +44,7 @@ Released on ...
 - New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
     - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
     - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
-- The ability to define whether collapsed rows should expand while hovering them over during drag-n-drop:
+- The ability to define [whether collapsed rows should expand while hovering them over during drag-n-drop](treegrid/configuration.md#expanding-collapsed-rows-on-drag-n-drop):
     - new property: [`dragExpand`](treegrid/api/treegrid_dragexpand_config.md)
 - The ability to initialize TreeGrid in the collapsed state:
     - new property: [`collapsed`](treegrid/api/treegrid_collapsed_config.md)

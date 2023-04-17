@@ -46,6 +46,8 @@ const grid = new dhx.Grid("grid_container", {
 
 This functionality is available from v8.1.
 
+**Related sample**: [Grid. Set automatic height (PRO)](https://snippet.dhtmlx.com/srbu56ob)
+
 If needed, you may set the minimal and maximal height for the container via the **min-height** and **max-height** CSS properties:
 
 ~~~html
@@ -633,51 +635,88 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 An editor for cells that should contain several options to choose from.
 
-To set this editor type you need to specify the **editorType:"select"** property for a column and define a list of options via the **options** property:
+To set this editor type you need to specify the **editorType:"select"** property for a column and define a list of options via the **options** property.
+
+You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
 
 ~~~js
 {
 	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
 	editorType: "select", options: ["Done", "In Progress", "Not Started"]
 } 
+
+// or
+{
+	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
+	editorType: "select", 
+	options: [
+		{ id: "done", value: "Done" }, 
+		{ id: "in progress", value: "In Progress" }, 
+		{ id: "not started", value: "Not Started" },
+	],
+} 
 ~~~
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
-You can choose the way of specifying the [options](grid/api/api_gridcolumn_properties.md) property:
+Or define unique lists of options for different column cells. For that, use a function as a value of the property:
 
-- To set the same list of options for each cell of the column, use either an array of string values or an array of options' objects as a value of the property.
-- To set a unique list of options for a column cell, use a function as a value of the property.
+~~~js
+{
+    id: "select_example",
+    header: [{ text: "Select example" }],
+    editorType: "select",
+    options: (col, row) => getCurrentOptions(row),
+},
+~~~
 
+**Related sample**: [Grid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/i22fg83z)
 
 - #### multiselect
 
 An editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options.
 
-To set this editor type you need to specify the **editorType:"multiselect"** property for a column and define a list of options via the **options** property:
+To set this editor type you need to specify the **editorType:"multiselect"** property for a column and define a list of options via the **options** property.
+
+You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
 
 ~~~js
-const grid = new dhx.Grid("grid_container", {
-	columns: [
-		{
-        	id: "renewals", type: "string",
-        	header: [{ text: "Number of renewals" }],
-        	editorType: "multiselect",
-        	options: ["1 time", "1-2 times", "more than 5 times"],
-    	},
-    	// more columns
+{
+    id: "renewals", type: "string",
+    header: [{ text: "Number of renewals" }],
+    editorType: "multiselect",
+    options: ["1 time", "1-2 times", "more than 5 times"],
+}, 
+
+// or
+{
+    id: "renewals", type: "string",
+    header: [{ text: "Number of renewals" }],
+    editorType: "multiselect",
+	options: [
+		{ id: "1", value: "1 time" }, 
+		{ id: "1-2", value: "1-2 times" }, 
+		{ id: "5+", value: "more than 5 times" },
 	],
-	data: data,
-	editable: true
-});
+}
 ~~~
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
-You can choose the way of specifying the [options](grid/api/api_gridcolumn_properties.md) property:
+Or define unique lists of options for different column cells. For that, use a function as a value of the property:
 
-- To set the same list of options for each cell of the column, use either an array of string values or an array of options' objects as a value of the property.
-- To set a unique list of options for a column cell, use a function as a value of the property.
+~~~js
+{
+    id: "multiselect_example",
+    header: [{ text: "Multiselect example" }],
+    type: "string",
+    editorType: "multiselect",
+    options: (col, row) => getCurrentOptions(row), 
+    minWidth: 360
+},
+~~~
+
+**Related sample**: [Grid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/i22fg83z)
 
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
@@ -698,21 +737,43 @@ const data = [
 
 An editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
 
-To use this editor you need to specify the **editorType: "combobox"** property for a column and define a list of options via the **options** property:
+To use this editor you need to specify the **editorType: "combobox"** property for a column and define a list of options via the **options** property.
+
+You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
 
 ~~~js
 {
     width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
     editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]
 }
+
+//or
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox",
+	options: [
+		{ id: "1", value: "1 time" }, 
+		{ id: "1-2", value: "1-2 times" }, 
+		{ id: "5+", value: "more than 5 times" },
+	],
+}
 ~~~
 
 **Related sample**: [Grid. Editing with different editors (combobox, select, multiselect, boolean, date)](https://snippet.dhtmlx.com/w2cdossn)
 
-You can choose the way of specifying the [options](grid/api/api_gridcolumn_properties.md) property:
+Or define unique lists of options for different column cells. For that, use a function as a value of the property:
 
-- To set the same list of options for each cell of the column, use either an array of string values or an array of options' objects as a value of the property.
-- To set a unique list of options for a column cell, use a function as a value of the property.
+~~~js
+{
+    id: "combobox_example",
+    header: [{ text: "Combobox example" }],
+    editorType: "combobox",
+    options: (col, row) => getCurrentOptions(row),
+    minWidth: 160
+},
+~~~
+
+**Related sample**: [Grid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/i22fg83z)
 
 ### Editable combobox
 

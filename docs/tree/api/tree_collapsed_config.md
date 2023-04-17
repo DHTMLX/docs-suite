@@ -19,6 +19,6 @@ const tree = new dhx.Tree("tree_container", {
 
 @descr:
 
-**Related sample**: 
+**Related sample**: [Tree. Collapsed mode](https://snippet.dhtmlx.com/cqbg0wsf)
 
 @changelog: added in v8.1
