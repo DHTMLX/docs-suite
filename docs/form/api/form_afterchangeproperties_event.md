@@ -8,11 +8,11 @@ description: You can explore the afterChangeProperties event of Form in the docu
 
 @short: fires after configuration attributes of a Form control have been changed dynamically
 
-@signature: {'afterChangeProperties: (name: string, props: any) => void;'}
+@signature: {'afterChangeProperties: (name: string, properties: object) => void;'}
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
-- `properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with [configuration attributes](form/api/form_setproperties_method.md) of the control and their new values
 
 @example:
 form.events.on("afterChangeProperties", function(name, properties) {

@@ -8,7 +8,7 @@ description: You can explore the beforeShow event of the Simple Vault control of
 
 @short: fires before a control is shown
 
-@signature: {'beforeShow: (value: ISimpleVaultValue[]) => boolean | void;'}
+@signature: {'beforeShow: (value: object[]) => boolean | void;'}
 
 @params:
 - `value: array` - the current value of the control

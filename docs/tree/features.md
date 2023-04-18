@@ -14,9 +14,10 @@ In this section you can find out how to initialize Tree, how to load data into t
 
 ### Initialization
 
-| Topic                                                    | Description                    |
-| -------------------------------------------------------- | ------------------------------ |
-| [Basic initialization](../initialization_of_dhtmlxtree/) | Learn how to initialize a Tree |
+| Topic                                                                  | Description                                           |
+| ---------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Basic initialization](../initialization_of_dhtmlxtree/)               | Learn how to initialize a Tree                        |
+| [Initialization of a collapsed Tree](../configuration/#collapsed-mode) | Learn how to initialize a Tree in the collapsed state ([Example](https://snippet.dhtmlx.com/cqbg0wsf))|
 
 
 ### Loading data into Tree
@@ -59,7 +60,7 @@ In this section you can learn how to customize a Tree, its icons, and configure 
 
 | Topic                                                                                        | Description                                                                                                                                                          |
 | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Height of Tree items](tree/api/tree_itemheight_config.md)                                  | Learn how to set the height for Tree items ([Example](https://snippet.dhtmlx.com/w1qk9u7m))                                                                          |
+| [Height of Tree items](tree/api/tree_itemheight_config.md)                                   | Learn how to set the height for Tree items ([Example](https://snippet.dhtmlx.com/w1qk9u7m))                                                                          |
 | [Setting template for rendering items](../setting_tree_appearance/#adding-template-to-items) | Learn how to define a template for rendering items in Tree and add event handlers to HTML elements of the template ([Example]( https://snippet.dhtmlx.com/hg3f50td)) |
 | [Applying custom icons](../setting_tree_appearance/#changing-icons)                          | Learn how to add custom icons to Tree items ([Example](https://snippet.dhtmlx.com/lpsgn3j7))                                                                         |
 | [Applying custom icons via data set](https://snippet.dhtmlx.com/h7mlx21q)                    | The example shows how to add custom icons when you prepare a data set                                                                                                |
@@ -93,33 +94,34 @@ In this section you may study how to expand or collapse Tree items, how to work 
 
 This section will tell you how to use [TreeCollection API](guides/datacollection_guide.md) for working with data of Tree, i.e. add, update, remove, filter, sort items, etc.
 
-| Topic                                                         | Description                                                                                                                                      |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Adding items](../work_with_tree/#adding-items-into-tree)     | Learn how to add new items into Tree ([Example](https://snippet.dhtmlx.com/k0os4lk2))                                                            |
-| [Updating items](../work_with_tree/#updating-tree-items)      | Learn how to update config options of a Tree item (for example, to change the value of an item) ([Example](https://snippet.dhtmlx.com/e0vgry6n)) |
-| [Removing items](../work_with_tree/#removing-items-from-tree) | Learn how to remove items from Tree ([Example](https://snippet.dhtmlx.com/k0os4lk2))                                                                |
-| [Filtering data](https://snippet.dhtmlx.com/a2jkwdrt)         | The example shows how to filter data in Tree                                                                                                     |
-| [Sorting data](https://snippet.dhtmlx.com/3vttyh9o)           | The example shows how to sort data in Tree                                                                                                       |
-| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
+| Topic                                                              | Description                                                                                                                                      |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Adding items](../work_with_tree/#adding-items-into-tree)          | Learn how to add new items into Tree ([Example](https://snippet.dhtmlx.com/k0os4lk2))                                                            |
+| [Updating items](../work_with_tree/#updating-tree-items)           | Learn how to update config options of a Tree item (for example, to change the value of an item) ([Example](https://snippet.dhtmlx.com/e0vgry6n)) |
+| [Getting item's parent](../work_with_tree/#getting-parent-of-item) | Learn how to get the parent of an item                                                                                                           |
+| [Removing items](../work_with_tree/#removing-items-from-tree)      | Learn how to remove items from Tree ([Example](https://snippet.dhtmlx.com/k0os4lk2))                                                             |
+| [Filtering data](https://snippet.dhtmlx.com/a2jkwdrt)              | The example shows how to filter data in Tree                                                                                                     |
+| [Sorting data](https://snippet.dhtmlx.com/3vttyh9o)                | The example shows how to sort data in Tree                                                                                                       |
+| [TreeCollection API](../../tree_collection/)                       | Check the list of all available TreeCollection API                                                                                               |
 
 
 ## How to work with selection 
 
 In this section you may study how to work with selection functionality.
 
-| Topic                                                       | Description                                                                                                                                                                       |
-| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Topic                                                       | Description                                                                                                                                                                      |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Using selection functionality](../usage_selection/)        | Learn how to enable/disable selection, set selection to items, remove selection, and get the object of a selected item ([Example](https://snippet.dhtmlx.com/g6cmggqt?tag=tree)) |
-| [Disabling selection](../configuration/#selection-of-items) | Learn how to disable the ability to select items in Tree on its initialization ([Example](https://snippet.dhtmlx.com/2x9htpke))                                                   |
+| [Disabling selection](../configuration/#selection-of-items) | Learn how to disable the ability to select items in Tree on its initialization ([Example](https://snippet.dhtmlx.com/2x9htpke))                                                  |
 
 ## How to work with Tree events
 
 This section explains how to work with Tree events.
 
-| Topic                                       | Description                                                                                            |
-| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
-| [Event handling](../events_handling/)        | Learn how to attach, detach, or call the Tree events ([Example](https://snippet.dhtmlx.com/vux1ye9g)) |
+| Topic                                       | Description                                                                                           |
+| :------------------------------------------ | :---------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                          |
+| [Event handling](../events_handling/)       | Learn how to attach, detach, or call the Tree events ([Example](https://snippet.dhtmlx.com/vux1ye9g)) |
 
 ## API reference
 

@@ -8,7 +8,7 @@ description: You can explore the beforeExpand event of TreeGrid in the documenta
 
 @short: fires before expanding a treegrid
 
-@signature: {'beforeExpand: (rowId: Id) => boolean | void;'}
+@signature: {'beforeExpand: (rowId: string | number) => boolean | void;'}
 
 @params:
 - `rowId: string | number` - the id of an expanded row

@@ -8,10 +8,10 @@ description: You can explore the beforeUnSelect event of Selection in the docume
 
 @short: fires on unselecting an item, but before the item is really unselected
 
-@signature: {'beforeUnSelect: (id: string) => void | boolean;'}
+@signature: {'beforeUnSelect: (id: string | number) => void | boolean;'}
 
 @params:
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 
 @returns:
 Return `false` to prevent unselecting of an item; otherwise, `true`.

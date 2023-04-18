@@ -8,7 +8,7 @@ description: You can explore the isRowHidden method of Grid in the documentation
 
 @short: checks whether a row is hidden
 
-@signature: {'isRowHidden(rowId: Id): boolean;'}
+@signature: {'isRowHidden(rowId: string | number): boolean;'}
 
 @params:
 - `rowId: string | number` - the id of a row

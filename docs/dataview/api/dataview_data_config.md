@@ -8,7 +8,7 @@ description: You can explore the data config of DataView in the documentation of
 
 @short: Optional. Specifies an array of data objects to set into the dataview
 
-@signature: {'data?: DataCollection<any> | any[];'}
+@signature: {'data?: object[];'}
 
 @example:
 const dataview = new dhx.DataView("dataview_container", {

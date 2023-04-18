@@ -8,7 +8,7 @@ description: You can explore the beforeApply event of Timepicker in the document
 
 @short: fires before saving the timepicker value
 
-@signature: {'beforeApply: (value: string | ITimeObject) => boolean | void;'}
+@signature: {'beforeApply: (value: string | object) => boolean | void;'}
 
 @params:
 - `value: string | object` - the value of a timepicker

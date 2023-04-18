@@ -8,7 +8,7 @@ description: You can explore the getValue method of Combo Box in the documentati
 
 @short: gets id(s) of items from data collection selected in ComboBox
 
-@signature: {'getValue(asArray?: boolean): Id | Id[];'}
+@signature: {'getValue(asArray?: boolean): string | number | (string | number)[];'}
 
 @params:
 - `asArray: boolean` - *true*, to return ids as an array of strings

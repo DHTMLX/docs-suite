@@ -8,7 +8,7 @@ description: You can explore the scroll event of TreeGrid in the documentation o
 
 @short: fires on scrolling a grid
 
-@signature: {'scroll: (scrollState: ICoords) => void;'}
+@signature: {'scroll: (scrollState: object) => void;'}
 
 @params:
 - `scrollState: object` - an object with new top and left coordinates

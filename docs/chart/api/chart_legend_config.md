@@ -8,7 +8,7 @@ description: You can explore the legend config of Chart in the documentation of 
 
 @short: Required for Treemap charts, optional for other types of charts. Defines the configuration of a chart legend
 
-@signature: {'legend?: ILegendConfig;'}
+@signature: {'legend?: object;'}
 
 @example:
 const chart = new dhx.Chart("chart_container", {

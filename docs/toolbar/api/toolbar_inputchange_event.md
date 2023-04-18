@@ -5,10 +5,10 @@ title: inputChange
 
 @short: fires on changing the value in the Input control of Toolbar
 
-@signature: inputChange: (id: string, newValue: string) => any;
+@signature: inputChange: (id: string | number, newValue: string) => any;
 
 @params:
-- `id: string` - the id of the Input control
+- `id: string | number` - the id of the Input control
 - `newValue: string` - the new value of the control
 
 @example:

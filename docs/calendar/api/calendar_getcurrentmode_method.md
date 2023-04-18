@@ -8,10 +8,10 @@ description: You can explore the getCurrentMode method of Calendar in the docume
 
 @short: returns the current mode of displaying Calendar
 
-@signature: {'getCurrentMode(): ViewMode;'}
+@signature: {'getCurrentMode(): "calendar" | "year" | "month" | "timepicker";'}
 
 @returns:
-The current mode of the calendar ("calendar", "year", "month", "timepicker").
+The current mode of the calendar.
 
 @example:
 const mode = calendar.getCurrentMode(); // -> "calendar"

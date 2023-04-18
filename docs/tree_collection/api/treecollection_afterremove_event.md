@@ -8,7 +8,7 @@ description: You can explore the afterRemove event of TreeCollection in the docu
 
 @short: fires after removing a new item from a tree collection
 
-@signature: {'afterRemove: (removedItem: any) => void;'}
+@signature: {'afterRemove: (removedItem: object) => void;'}
 
 @params:
 - `removedItem: object` - the object of a removed item

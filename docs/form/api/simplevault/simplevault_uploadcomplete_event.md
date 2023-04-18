@@ -8,7 +8,7 @@ description: You can explore the uploadComplete event of the Simple Vault contro
 
 @short: fires when upload is completed
 
-@signature: {'uploadComplete: (files: ISimpleVaultValue[], value: ISimpleVaultValue[]) => void;'}
+@signature: {'uploadComplete: (files: object[], value: object[]) => void;'}
 
 @params:
 - `files: array` - file objects that were uploaded

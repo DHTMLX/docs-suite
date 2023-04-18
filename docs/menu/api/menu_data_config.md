@@ -8,7 +8,7 @@ description: You can explore the data config of Menu in the documentation of the
 
 @short: Optional. Specifies an array of data objects to set into Menu
 
-@signature: {'data?: array;'}
+@signature: {'data?: object[];'}
 
 @example:
 const menu = new dhx.Menu("menu_container", {

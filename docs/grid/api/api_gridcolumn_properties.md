@@ -56,7 +56,8 @@ columns:[
         type?: "string" | "number" | "boolean" | "date" | "percent",
 	    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea",
         format?: string,
-	    options?: any[],
+	    options?: (string | { id: string | number, value: string })[] |
+                  (col: object, row?: object) => (string | { id: string | number, value: string })[],
 	    editorConfig?: { newOptions?: boolean } | ICalendarConfig,
 	    adjust?: "data" | "header" | "footer" | boolean,
 	    align?: "left" | "center" | "right",
@@ -67,10 +68,10 @@ columns:[
 	    resizable?: boolean,
 	    sortable?: boolean,
 	    mark?: { min?: string, max?: string } |
-               (cell: any, columnCells: any[], row?: IRow, column?: ICol) => string,
-	    template?: (cellValue: any, row: IRow, col: ICol) => string,
+               (cell: any, columnCells: any[], row?: object, column?: object) => string,
+	    template?: (cellValue: any, row: object, col: object) => string,
 	    tooltip?: boolean,
-	    tooltipTemplate?: (cellValue: any, row: IRow, col: ICol) => string,
+	    tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
     },
     // more column objects
 ]
@@ -184,7 +185,23 @@ columns:[
 		</tr>
         <tr>
 			<td><b>options</b></td>
-			<td>(optional) an array with a set of options to be displayed in the editor of a cell. It is required if you specify <i>editorType: "select"|"combobox"|"multiselect"</i>.</td>
+			<td>(optional) specifies a set of options to be displayed in the editor of a cell. It is required if you specify <a href="../../configuration/#types-of-column-editor">editorType: "select"|"combobox"|"multiselect"</a>. The property can be:
+                <ul>
+                    <li>an array of string values</li>
+                    <li>an array of objects with a set of <i>key:value</i> pairs - attributes of options and their values:
+                        <ol>The <b>id</b> attribute sets the id for the option</ol>
+                        <ol>The <b>value</b> attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization</ol>
+                    </li>
+                    <li>a function which takes two parameters:
+                        <ol><b>col</b> - (required) an object with the configuration of a column</ol>   
+                        <ol><b>row</b> - (optional) an object with all cells in a row</ol>
+                    and must return either an array of string values or an array of objects   
+                    </li>
+                </ul>
+                <b>Related Samples:</b><ul><li><a href="https://snippet.dhtmlx.com/w2cdossn" target="_blank">Grid. Editing with different editors (combobox, select, multiselect, boolean, date)</a></li>
+				<li><a href="https://snippet.dhtmlx.com/i22fg83z" target="_blank">Grid. Individual option lists for select, multiselect and combobox editors</a></li></ul>
+                If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.
+            </td>
 		</tr>
         <tr>
 			<td><b>editorConfig</b></td>

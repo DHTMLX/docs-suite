@@ -8,7 +8,7 @@ description: You can explore the parse method of TreeCollection in the documenta
 
 @short: loads a collection of items from a local source
 
-@signature: {'parse(data: T[] | string, driver?: IDataDriver | DataDriver): void;'}
+@signature: {'parse(data: object[] | string, driver?: object | string): void;'}
 
 @params:
 - `data: array | string` - the data to load

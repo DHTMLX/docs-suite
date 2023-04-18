@@ -8,7 +8,29 @@ description: You can explore the eventHandlers config of Grid in the documentati
 
 @short: Optional. Adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
 
-@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: ICellObj) => void; };};'}
+@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: object) => void; };};'}
+
+@params:
+The **eventHandlers** object includes a set of *key:value* pairs, where:
+
+<table>
+	<tbody>
+        <tr>
+			<td><i>key</i></td>
+			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
+		</tr>
+        <tr>
+			<td><i>value</i></td>
+			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
+            <ul>
+                <li><b>event</b> - an event object</li>
+                <li><b>item</b> - an object with two attributes:
+                <ol>- <b>row</b> - an object with a row configuration</ol>
+                <ol>- <b>column</b> - an object with a column configuration</ol></li>
+            </ul></td>
+		</tr>
+    </tbody>
+</table>
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -39,27 +61,6 @@ const grid = new dhx.Grid("grid_container", {
 @descr:
 	
 **Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
-
-The **eventHandlers** object includes a set of *key:value* pairs, where:
-
-<table>
-	<tbody>
-        <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
-        <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>object</b> - an object with two attributes:
-                <ol>- <b>row</b> - an object with a row configuration</ol>
-                <ol>- <b>column</b> - an object with a column configuration</ol></li>
-            </ul></td>
-		</tr>
-    </tbody>
-</table>
 
 An example of adding event handlers to the HTML elements defined in the data set of Grid is given below:
 

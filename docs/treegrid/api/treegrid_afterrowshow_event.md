@@ -8,7 +8,7 @@ description: You can explore the afterRowShow event of TreeGrid in the documenta
 
 @short: fires after a row is shown on a page
 
-@signature: {'afterRowShow: (row: IRow) => void;'}
+@signature: {'afterRowShow: (row: object) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

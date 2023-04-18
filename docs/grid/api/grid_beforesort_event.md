@@ -8,11 +8,11 @@ description: You can explore the beforeSort event of Grid in the documentation o
 
 @short: fires before a column is sorted by clicking on its header
 
-@signature: beforeSort: (col: ICol, dir: Dirs) => void | boolean;
+@signature: beforeSort: (col: object, dir: string) => void | boolean;
 
 @params:
 - `col: object` - an object with the configuration of a column
-- `dir: string` - the sorting direction (desc, asc)
+- `dir: string` - the sorting direction ("desc", "asc")
 
 @returns:
 Return `false` to prevent a column from being sorted; otherwise, `true`.

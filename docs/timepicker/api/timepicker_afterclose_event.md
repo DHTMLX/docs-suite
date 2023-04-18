@@ -8,7 +8,7 @@ description: You can explore the afterClose event of Timepicker in the documenta
 
 @short: fires after closing the timepicker
 
-@signature: {'afterClose: (value: string | ITimeObject) => void;'}
+@signature: {'afterClose: (value: string | object) => void;'}
 
 @params:
 - `value: string | object` - the current value of a timepicker

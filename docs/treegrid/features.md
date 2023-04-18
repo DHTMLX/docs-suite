@@ -17,6 +17,7 @@ In this section you can find out how to initialize TreeGrid, how to load data in
 | Topic                                                           | Description                                                    |
 | --------------------------------------------------------------- | -------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                      | Learn how to initialize TreeGrid                               |
+| [Initialization of a collapsed TreeGrid](../configuration/#collapsed-mode) | Learn how to initialize a TreeGrid in the collapsed state ([Example](https://snippet.dhtmlx.com/t4iswa2y))|
 | [Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m) | The example shows how to initialize TreeGrid inside Pagination |
 
 
@@ -51,18 +52,18 @@ In this section you will know how to configure TreeGrid columns on TreeGrid init
 | [Configuring columns](../configuration/#columns)             | Learn how to define initial structure of TreeGrid                                                                      |
 | [Configuring content alignment](../configuration/#alignment) | Learn how to align data in a column ([Example](https://snippet.dhtmlx.com/g38rr3so))                                   |
 | [Frozen columns](../configuration/#frozen-columns)           | Learn how to split treegrid columns into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/46me58ze)) |
-| [Hidden columns](../configuration/#hidden-columns)                                          | Learn how to initialize Grid with hidden columns ([Example](https://snippet.dhtmlx.com/w3yg99la))              |
-| [Sortable columns](../configuration/#sortable-columns)                                          | Learn how to make columns sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))              |
-| [Resizable columns](../configuration/#resizable-columns)              | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/vq3i9maq))                                   |
+| [Hidden columns](../configuration/#hidden-columns)           | Learn how to initialize Grid with hidden columns ([Example](https://snippet.dhtmlx.com/w3yg99la))                      |
+| [Sortable columns](../configuration/#sortable-columns)       | Learn how to make columns sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))                                    |
+| [Resizable columns](../configuration/#resizable-columns)     | Learn how to make columns resizable ([Example](https://snippet.dhtmlx.com/vq3i9maq))                                   |
 
 ### How to configure rows
 
 In this section you will know how to configure rows on TreeGrid initialization.
 
-| Topic                                            | Description                                   |
-| ------------------------------------------------ | --------------------------------------------- |
-| [Automatic adding of empty row into Grid](../configuration/#automatic-adding-of-empty-row-into-treegrid) | Learn how to to automatically add an empty row after the last filled row in the treegrid ([Example](https://snippet.dhtmlx.com/rkytig73))|
-| [Frozen rows](../configuration/#frozen-rows)                                          | Learn how to split treegrid rows into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/46me58ze))
+| Topic                                                                                                    | Description                                                                                                                               |
+| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| [Automatic adding of empty row into Grid](../configuration/#automatic-adding-of-empty-row-into-treegrid) | Learn how to to automatically add an empty row after the last filled row in the treegrid ([Example](https://snippet.dhtmlx.com/rkytig73)) |
+| [Frozen rows](../configuration/#frozen-rows)                                                             | Learn how to split treegrid rows into the frozen and movable parts ([Example](https://snippet.dhtmlx.com/46me58ze))                       |
 
 ### How to specify formats for TreeGrid data
 
@@ -108,23 +109,26 @@ In this section you will find out how to group cells in TreeGrid and its header.
 
 In this section you will know how to configure the drag-n-drop functionality for TreeGrid.
 
-| Topic                                                                               | Description                                                                                                                                                         |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|[Drag-n-drop inside a treegrid](../configuration/#drag-n-drop-inside-the-grid)|  Learn how to configure drag-n-drop of columns and (or) rows inside the treegrid ([Example](https://snippet.dhtmlx.com/ax5vs4a8))|
-|[Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)|  Learn how to configure drag-n-drop between treegrids ([Example](https://snippet.dhtmlx.com/43covmy2))|
-|[Copying of rows during drag-n-drop](../api/treegrid_dragcopy_config/)|	Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/a7pg38rr))|
+| Topic                                                                             | Description                                                                                                                      |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [Drag-n-drop inside a treegrid](../configuration/#drag-n-drop-inside-the-grid)    | Learn how to configure drag-n-drop of columns and (or) rows inside the treegrid ([Example](https://snippet.dhtmlx.com/ax5vs4a8)) |
+| [Drag-n-drop between grids](../configuration/#drag-n-drop-between-grids)          | Learn how to configure drag-n-drop between treegrids ([Example](https://snippet.dhtmlx.com/43covmy2))                            |
+| [Drag-n-drop of multiple rows](../configuration/#drag-n-drop-of-multiple-rows)    | Learn how to allow end users to drag-n-drop several rows at once                                                                 |
+| [Copying of rows during drag-n-drop](../api/treegrid_dragcopy_config/)            | Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/a7pg38rr))                          |
+| [Expanding collapsed rows during drag-n-drop](../api/treegrid_dragexpand_config/) | Learn how to disable/enable the ability of collapsed rows to expand when you hover them over during drag-n-drop ([Example](https://snippet.dhtmlx.com/hwddi1ki))                 |
 
 ## How to configure sizes of TreeGrid and its cells
 
 | Topic                                                                                       | Description                                                                                                                                    |
 | ------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Width and height of TreeGrid](../configuration/#widthheight)                   | Learn how to specify the necessary size of TreeGrid ([Example](https://snippet.dhtmlx.com/7w8jxgft))                                           |
+| [Width and height of TreeGrid](../configuration/#widthheight)                               | Learn how to set specific size of TreeGrid ([Example](https://snippet.dhtmlx.com/7w8jxgft))                                                    |
+| [Auto-height for TreeGrid](../configuration/#autoheight-for-treegrid)                       | Learn how to configure auto-height for TreeGrid ([Example](https://snippet.dhtmlx.com/wg7xosq8))                                                                                               |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/lgvoz0ar))                |
-| [Max width of a column](../api/api_treegridcolumn_properties/)                      | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/pyrloz7y))                           |
-| [Min width of a column](../api/api_treegridcolumn_properties/)                      | Learn how to define the minimum width which can be set for a column   ([Example](https://snippet.dhtmlx.com/cpgjyoxn))                         |
-| [Auto-width for columns](../configuration/#autowidth-for-columns)               | Learn how to configure auto-width for columns ([Example](https://snippet.dhtmlx.com/irybslog))                                                 |
-| [Auto-height for rows](../configuration/#autoheight-for-rows)                   | Learn how to configure auto-height for columns([Example](https://snippet.dhtmlx.com/4158ftak))                                                 |
-| [Row height](../configuration/#row-height)                                          | Learn how to configure the height of rows ([Example 1](https://snippet.dhtmlx.com/xl0i3yof), [Example 2](https://snippet.dhtmlx.com/kvl5y6nq)) |
+| [Max width of a column](../api/api_treegridcolumn_properties/)                              | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/pyrloz7y))                           |
+| [Min width of a column](../api/api_treegridcolumn_properties/)                              | Learn how to define the minimum width which can be set for a column   ([Example](https://snippet.dhtmlx.com/cpgjyoxn))                         |
+| [Auto-width for columns](../configuration/#autowidth-for-columns)                           | Learn how to configure auto-width for columns ([Example](https://snippet.dhtmlx.com/irybslog))                                                 |
+| [Auto-height for rows](../configuration/#autoheight-for-rows)                               | Learn how to configure auto-height for columns([Example](https://snippet.dhtmlx.com/4158ftak))                                                 |
+| [Row height](../configuration/#row-height)                                                  | Learn how to configure the height of rows ([Example 1](https://snippet.dhtmlx.com/xl0i3yof), [Example 2](https://snippet.dhtmlx.com/kvl5y6nq)) |
 
 ## How to customize TreeGrid and its cells
 
@@ -162,13 +166,13 @@ In this section you will know how to add and remove columns and rows, how to hid
 
 ### Showing/hiding columns and rows
 
-| Topic                                                         | Description                                                                                                   |
-| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [Showing / hiding a row](../usage/#hidingshowing-a-row)       | Learn how to show and hide a row in TreeGrid ([Example](https://snippet.dhtmlx.com/6geqbtvv))                 |
+| Topic                                                                        | Description                                                                                                   |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [Showing / hiding a row](../usage/#hidingshowing-a-row)                      | Learn how to show and hide a row in TreeGrid ([Example](https://snippet.dhtmlx.com/6geqbtvv))                 |
 | [Checking visibility of a row](../usage/#checking-visibility-of-a-row)       | Learn how to check whether a row is hidden ([Example](https://snippet.dhtmlx.com/6geqbtvv))                   |
-| [Hiding columns](../configuration/#hidden-columns)            | Learn how to make a column hidden on TreeGrid initialization ([Example](https://snippet.dhtmlx.com/w3yg99la)) |
-| [Showing / hiding a column](../usage/#hidingshowing-a-column) | Learn how to show and hide a column in TreeGrid ([Example](https://snippet.dhtmlx.com/1gekn97m))              |
-| [Checking visibility of a column](../usage/#checking-visibility-of-a-column) | Learn how to check whether a column is hidden  ([Example](https://snippet.dhtmlx.com/fcjfp19d))                |
+| [Hiding columns](../configuration/#hidden-columns)                           | Learn how to make a column hidden on TreeGrid initialization ([Example](https://snippet.dhtmlx.com/w3yg99la)) |
+| [Showing / hiding a column](../usage/#hidingshowing-a-column)                | Learn how to show and hide a column in TreeGrid ([Example](https://snippet.dhtmlx.com/1gekn97m))              |
+| [Checking visibility of a column](../usage/#checking-visibility-of-a-column) | Learn how to check whether a column is hidden  ([Example](https://snippet.dhtmlx.com/fcjfp19d))               |
 
 
 ### Expanding/collapsing rows
@@ -195,9 +199,9 @@ In this section you will find the ways of editing data in TreeGrid.
 | Topic                                                                                 | Description                                                                                                                                                            |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Enabling/disabling editing](../configuration/#editing-treegrid-and-separate-columns) | Read how to enable/disable editing of the whole Grid or its separate columns                                                                                           |
-| [Editing with different editors](../configuration/#types-of-column-editor)     | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p)) |
+| [Editing with different editors](../configuration/#types-of-column-editor)            | Learn how to specify the type of the editor for editing the cells ([Example 1](https://snippet.dhtmlx.com/sdbfbv2n), [Example 2](https://snippet.dhtmlx.com/0gd4dn8p), [Example 3](https://snippet.dhtmlx.com/1t8vvm07)) |
 | [Editing of a specific cell](../usage/#editing-data)                                  | Learn how to enable editing of a cell ([Example](https://snippet.dhtmlx.com/zm6wh1ss))                                                                                 |
-| [TreeCollection API](../../tree_collection/)                                       | Check the list of all available TreeCollection API|
+| [TreeCollection API](../../tree_collection/)                                          | Check the list of all available TreeCollection API                                                                                                                     |
 
 
 ### How to sort data
@@ -207,7 +211,7 @@ In this section you will find the ways of sorting data in TreeGrid.
 | Topic                                                        | Description                                                                                                     |
 | ------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- |
 | [Sorting data](../usage/#sorting-data)                       | Learn how to sort data in the treegrid ([Example](https://snippet.dhtmlx.com/bvfnpvwv))                         |
-| [Sortable columns](../configuration/#sortable-columns)        | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))        |
+| [Sortable columns](../configuration/#sortable-columns)       | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r4xfph82))        |
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in TreeGrid ([Example](https://snippet.dhtmlx.com/bdwwhvls)) |
 
 
@@ -226,11 +230,12 @@ In this section you will find the ways of filtering data in TreeGrid.
 
 In this section you will find the ways of work with selection functionality.
 
-| Topic                                                | Description                                                                                                            |
-| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| [Configuring selection](../configuration/#selection) | Learn how to configure the mode of selection of TreeGrid elements ([Example](https://snippet.dhtmlx.com/v0dyh06q))     |
-| [Working with selection](../usage_selection/)        | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell |
-| [Selection API](../../category/selection-api-1/)     | Learn how to use the API of Selection to manage the selection of TreeGrid cells                                        |
+| Topic                                                                             | Description                                                                                                            |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| [Configuring selection](../configuration/#selection)                              | Learn how to configure the mode of selection of TreeGrid elements ([Example](https://snippet.dhtmlx.com/v0dyh06q))     |
+| [Enabling multiselection](../configuration/#multiple-selection-of-treegrid-cells) | Learn how to enable multi-row/multi-cell selection in TreeGrid ([Example](https://snippet.dhtmlx.com/hwddi1ki))                                                        |
+| [Working with selection](../usage_selection/)                                     | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell |
+| [Selection API](../../category/selection-api-1/)                                  | Learn how to use the API of Selection to manage the selection of TreeGrid cells                                        |
 
 ## How to scroll TreeGrid
 
@@ -245,18 +250,18 @@ In this section you will learn how to scroll TreeGrid to the necessary position.
 
 In this section you will know how to export TreeGrid to different formats.
 
-| Topic                                                              | Description                                                                                            |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
-| [Exporting TreeGrid to XLSX and CSV](../usage/#exporting-treegrid) | Learn how to export TreeGrid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/zyfois4q)) |
+| Topic                                                                                | Description                                                                                                                                                |
+| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Exporting TreeGrid to EXCEL, CSV, PDF, or PNG format](../usage/#exporting-treegrid) | Learn how to export TreeGrid to the necessary format  ([Example 1](https://snippet.dhtmlx.com/zyfois4q), [Example 2](https://snippet.dhtmlx.com/iyqmmcoh)) |
 
 ## How to work with TreeGrid events
 
 This section explains how to work with TreeGrid events.
 
-| Topic                                       | Description                                                                                            |
-| :------------------------------------------ | :----------------------------------------------------------------------------------------------------- |
-| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                           |
-| [Event handling](../events/)        | Learn how to attach, detach, or call the TreeGrid events ([Example](https://snippet.dhtmlx.com/sgwnxshe)) |
+| Topic                                       | Description                                                                                               |
+| :------------------------------------------ | :-------------------------------------------------------------------------------------------------------- |
+| [Event basic rules](guides/events_guide.md) | Learn basic rules on how to work with events                                                              |
+| [Event handling](../events/)                | Learn how to attach, detach, or call the TreeGrid events ([Example](https://snippet.dhtmlx.com/sgwnxshe)) |
 
 ## API reference
 

@@ -8,7 +8,7 @@ description: You can explore the getItem method of DataCollection in the documen
 
 @short: returns the object of an item by its id
 
-@signature: {'getItem(id: Id): T;'}
+@signature: {'getItem(id: string | number): object;'}
 
 @params:
 - `id: string | number` - the id of a selected item

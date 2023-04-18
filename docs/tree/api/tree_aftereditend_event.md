@@ -8,7 +8,7 @@ description: You can explore the afterEditEnd event of Tree in the documentation
 
 @short: fires after editing of a tree item is finished
 
-@signature: {'afterEditEnd: (value: string, id: Id) => void;'}
+@signature: {'afterEditEnd: (value: string, id: string | number) => void;'}
 
 @params:
 - `value: string` - the value of an item

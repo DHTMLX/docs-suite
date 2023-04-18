@@ -8,7 +8,7 @@ description: You can explore the headerCellMouseDown event of Grid in the docume
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: {'headerCellMouseDown: (col: ICol, events: MouseEvent & TouchEvent) => void;'}
+@signature: {'headerCellMouseDown: (col: object, events: MouseEvent & TouchEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

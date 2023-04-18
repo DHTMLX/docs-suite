@@ -8,7 +8,7 @@ description: You can explore the getSeries method of Chart in the documentation 
 
 @short: returns an object with configuration of a specified series
 
-@signature: {'getSeries(id: string): ISeria;'}
+@signature: {'getSeries(id: string): object;'}
 
 @params:
 - `id: string` - the id of a series

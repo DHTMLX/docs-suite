@@ -8,12 +8,17 @@ description: You can explore the post method of Ajax in the documentation of the
 
 @short: sends a POST request to the server
 
-@signature: {'post<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
+@signature: {'post<T>(url: string, data?: { [key: string]: any; } | string, config?: object): Promise<T>;'}
 
 @params:
 - `url: string` - the URL the request is sent to
-- `data: object` - optional, the data sent to the server by the POST-request
-- `config: object` - the configuration object of the request
+- `data: object | string` - optional, the data sent to the server by the POST-request
+- `config: object` - optional, the configuration object of the request. It can contain the following options:
+    - `responseType: string` - the type of data that you are expecting back from the server. The available types are:
+        - "text" - returns the plain text as a string
+        - "xml" - returns the result parsed as XML
+        - "json" - returns the result as JSON
+    - `headers: object` - optional, the headers of the request
 
 @returns:
 A "promise" of the data object.
@@ -28,11 +33,3 @@ dhx.ajax.post(url, {name: "foo", title: "bar"}).then(function (data) {
 @descr:
 
 **Related sample**: [Data. Ajax POST](https://snippet.dhtmlx.com/eyr9mapj)
-
-The **config** object can contain the following options:
-
-- **responseType** - the type of data that you are expecting back from the server. The available types are:
-    - text - returns the plain text as a string
-    - xml - returns the result parsed as XML
-    - json - returns the result as JSON
-- **headers** - (*object*) optional, the headers of the request

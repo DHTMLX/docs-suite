@@ -8,7 +8,7 @@ description: You can explore the getCell method of Layout in the documentation o
 
 @short: returns the config object of a cell
 
-@signature: {'getCell(id: string): ICell;'}
+@signature: {'getCell(id: string): object;'}
 
 @params:
 - `id: string` - the id of a cell

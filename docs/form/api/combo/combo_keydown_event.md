@@ -8,7 +8,7 @@ description: You can explore the keydown event of the Combo Box control of Form 
 
 @short: fires when any key is pressed and an option of the Combo control is in focus
 
-@signature: keydown: (event: KeyboardEvent, id: string | undefined) => void;
+@signature: keydown: (event: KeyboardEvent, id: string | number | undefined) => void;
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object

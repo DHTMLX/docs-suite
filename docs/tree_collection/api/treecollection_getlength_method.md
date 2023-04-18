@@ -8,10 +8,10 @@ description: You can explore the getLength method of TreeCollection in the docum
 
 @short: counts child items of a control
 
-@signature: {'getLength(id?: Id): number;'}
+@signature: {'getLength(id?: string | number): number;'}
 
 @params:
-- `id: string` - the ID of a control
+- `id: string | number` - the ID of a control
 
 @returns:
 A number of the child items of the control.

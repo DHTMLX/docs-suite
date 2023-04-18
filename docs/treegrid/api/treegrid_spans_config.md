@@ -8,26 +8,9 @@ description: You can explore the spans config of TreeGrid in the documentation o
 
 @short: Optional. Describes the configuration of cols/rows spans
 
-@signature: {'spans?: ISpan[];'}
+@signature: {'spans?: object[];'}
 
-@example:
-const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	spans: [
-		{row:"0", column:"a", rowspan:5 },
-		{row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
-		{row:"0", column:"c", colspan:2, text:"Some content"},
-		{row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
-	],
-	data: dataset
-});
-
-@descr:
-
-**Related sample**: [TreeGrid. Span cells](https://snippet.dhtmlx.com/o62liqew)
-
+@params:
 Each object in the spans array contains the following properties:
 
 <table>
@@ -58,5 +41,23 @@ Each object in the spans array contains the following properties:
 		</tr>
     </tbody>
 </table>
+
+@example:
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+	columns: [
+		// columns config
+	],
+	spans: [
+		{row:"0", column:"a", rowspan:5 },
+		{row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
+		{row:"0", column:"c", colspan:2, text:"Some content"},
+		{row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+	],
+	data: dataset
+});
+
+@descr:
+
+**Related sample**: [TreeGrid. Span cells](https://snippet.dhtmlx.com/o62liqew)
 
 [comment]: # (@related: treegrid/configuration.md#spans treegrid/initialization.md#initialize-treegrid)

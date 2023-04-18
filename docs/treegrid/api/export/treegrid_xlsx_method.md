@@ -10,7 +10,7 @@ description: You can explore the xlsx method of TreeGrid in the documentation of
 
 @short: Exports data from a treegrid to an Excel file
 
-@signature: {'xlsx(config?: object): string;'}
+@signature: {'xlsx(config?: object): void;'}
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to EXCEL:
@@ -31,3 +31,5 @@ treegrid.export.xlsx({
 @descr:
 
 **Related samples**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
+
+**Related article:** [Exporting TreeGrid](treegrid/usage.md#exporting-treegrid)

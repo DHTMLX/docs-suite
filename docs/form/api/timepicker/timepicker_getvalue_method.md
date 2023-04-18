@@ -8,7 +8,7 @@ description: You can explore the getValue method of the Timepicker control of Fo
 
 @short: returns the current value of a TimePicker control
 
-@signature: {'getValue<T extends boolean = false>(asObject?: T): T extends true ? ITimeObject : string;'}
+@signature: {'getValue(asObject?: boolean): string | object;'}
 
 @params:
 - `asObject: boolean` - optional, specifies that the value will be returned as an object, `false` by default

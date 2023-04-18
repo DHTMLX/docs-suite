@@ -8,7 +8,7 @@ description: You can explore the getProperties method of Form in the documentati
 
 @short: returns objects with available configuration attributes of Form controls
 
-@signature: {'getProperties(name?: string): { [name: string]: IFormProps } | IFormProps;'}
+@signature: {'getProperties(name?: string): object | { [name: string]: object };'}
 
 @params:
 - `name|id: string` -  optional, the name of the control or its id (if the name attribute is not defined in the config of the control)

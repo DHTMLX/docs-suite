@@ -8,6 +8,64 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1
+------------
+
+Released on April 18, 2023
+
+### New functionality
+
+#### Chart
+
+- New [`exportStyles`](chart/api/chart_exportstyles_config.md) property
+
+#### Grid
+
+- The ability to export Grid to a PDF or PNG file:
+    - new export methods: [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md)
+    - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
+- The ability to set individual lists of editor options for different cells of the column:
+    - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
+- The ability [to set automatic height for Grid](grid/configuration.md#autoheight-for-grid) (Pro)
+
+#### Tree
+
+- The ability to initialize Tree in the collapsed state:
+    - new property: [`collapsed`](tree/api/tree_collapsed_config.md)
+
+#### TreeGrid
+
+- The ability to export TreeGrid to a PDF or PNG file:
+    - new export methods: [`pdf()`](treegrid/api/export/treegrid_pdf_method.md), [`png()`](treegrid/api/export/treegrid_png_method.md)
+    - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
+- The ability to set individual lists of editor options for different cells of the column:
+    - now it is possible to define the [`options`](treegrid/api/api_treegridcolumn_properties.md) property of a column as a callback function
+- The ability [to set automatic height for TreeGrid](treegrid/configuration.md#autoheight-for-treegrid)
+- New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
+    - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
+    - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
+- The ability to define [whether collapsed rows should expand while hovering them over during drag-n-drop](treegrid/configuration.md#expanding-collapsed-rows-on-drag-n-drop):
+    - new property: [`dragExpand`](treegrid/api/treegrid_dragexpand_config.md)
+- The ability to initialize TreeGrid in the collapsed state:
+    - new property: [`collapsed`](treegrid/api/treegrid_collapsed_config.md)
+
+### Updates
+
+#### Chart
+
+- The [pdf()](chart/api/export/chart_pdf_method.md) method was updated:
+    - new options of the `export` object are added: `theme`, `exportStyles`
+    - new options of the `pdf` object are added: `pageRanges`, `displayHeaderFooter`, `footerTemplate`, `headerTemplate` 
+- The [png()](chart/api/export/chart_png_method.md) method was updated:
+    - new options of the `export` object are added: `theme`, `exportStyles`
+
+### Fixes
+
+- Grid. Fix work of the [`afterEditEnd`](grid/api/grid_aftereditend_event.md), [`afterEditStart`](grid/api/grid_aftereditstart_event.md), [`beforeEditEnd`](grid/api/grid_beforeeditend_event.md), [`beforeEditStart`](grid/api/grid_beforeeditstart_event.md) events when keyboard navigation is enabled
+- Grid/TreeGrid. Fix work of selection on removing or loading data
+- Layout. Fix work of the progress bar
+- TreeGrid. Fix incorrect work of filtering when collapsing or expanding the parent node
+
 Version 8.0.3
 --------------
 
@@ -18,7 +76,6 @@ Released on April 12, 2023
 - Calendar. Fix work of the calendar when it is initialized in the container with limited size
 - Form. Fix the issue with auto filling of the form in Firefox
 - Grid. Fix work of Grid with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
-- Grid. Fix work of the [`afterEditEnd`](grid/api/grid_aftereditend_event.md), [`afterEditStart`](grid/api/grid_aftereditstart_event.md), [`beforeEditEnd`](grid/api/grid_beforeeditend_event.md), [`beforeEditStart`](grid/api/grid_beforeeditstart_event.md) events when keyboard navigation is enabled
 - Grid/TreeGrid. Fix display of data in spanned cells
 - Grid/TreeGrid. Fix display of data in the tooltip for [new options created via the combobox editor](grid/configuration.md#editable-combobox)
 - Grid/TreeGrid. Fix work of the [`cellClick`](grid/api/grid_cellclick_event.md), [`cellDblClick`](grid/api/grid_celldblclick_event.md), [`cellRightClick`](grid/api/grid_cellrightclick_event.md) events for spanned cells

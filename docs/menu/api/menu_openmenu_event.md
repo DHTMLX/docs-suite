@@ -8,7 +8,7 @@ description: You can explore the openMenu event of Menu in the documentation of 
 
 @short: fires on expanding a menu item
 
-@signature: {'openMenu: (id: Id) => void;'}
+@signature: {'openMenu: (id: string | number) => void;'}
 
 @params:
 - `id: string | number` - the ID of an opened menu item

@@ -8,14 +8,14 @@ description: You can explore the add method of DataCollection in the documentati
 
 @short: adds a new item to the component
 
-@signature: {'add(new_item: IDataItem | IDataItem[], index?: number): Id | Id[];'}
+@signature: {'add(new_item: object | object[], index?: number): (string | number) | (string | number)[];'}
 
 @params:
 - `new_item: object | array` - the object of a new item or an array of item objects
 - `index: number` - optional, the index of the position starting from which new items will be added
 
 @returns:
-Either a string with the item's id or an array of string values with ids of items.
+Either item's id or an array with ids of items.
 
 @example:
 // adding a new item into the beginning of a data collection 

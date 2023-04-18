@@ -8,7 +8,7 @@ description: You can explore the afterValidate event of the Simple Vault control
 
 @short: fires after the control value is validated
 
-@signature: {'afterValidate: (value: ISimpleVaultValue[], isValidate: boolean) => void;'}
+@signature: {'afterValidate: (value: object[], isValidate: boolean) => void;'}
 
 @params:
 - `value: array` - the validated value

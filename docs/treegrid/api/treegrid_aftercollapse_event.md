@@ -8,7 +8,7 @@ description: You can explore the afterCollapse event of TreeGrid in the document
 
 @short: fires after collapsing a treegrid
 
-@signature: {'afterCollapse: (rowId: Id) => void;'}
+@signature: {'afterCollapse: (rowId: string | number) => void;'}
 
 @params:
 - `rowId: string | number` - the id of a collapsed row

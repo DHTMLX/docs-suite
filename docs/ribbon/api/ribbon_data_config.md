@@ -8,7 +8,7 @@ description: You can explore the data config of Ribbon in the documentation of t
 
 @short: Optional. Specifies an array of data objects to set into Ribbon
 
-@signature: {'data?: array;'}
+@signature: {'data?: object[];'}
 
 @example:
 const data = [

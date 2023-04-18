@@ -8,7 +8,7 @@ description: You can explore the beforeEditEnd event of Grid in the documentatio
 
 @short: fires before editing of a cell is completed
 
-@signature: {'beforeEditEnd: (value: string | number | boolean, row: IRow, col: ICol) => boolean | void;'}
+@signature: {'beforeEditEnd: (value: string | number | boolean, row: object, col: object) => boolean | void;'}
 
 @params:
 - `value: string | number | boolean` - the new value of a cell
@@ -27,6 +27,6 @@ grid.events.on("beforeEditEnd", function(value,row,column){
 @descr:
 
 
-**Related sample**: [Grid. Events	](https://snippet.dhtmlx.com/9zeyp4ds)
+**Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: added in v6.1

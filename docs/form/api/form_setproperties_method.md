@@ -8,7 +8,7 @@ description: You can explore the setProperties method of Form in the documentati
 
 @short: allows changing available configuration attributes of Form controls dynamically
 
-@signature: {'setProperties(arg: string | { [name: string]: IFormProps }, props?: IFormProps): void;'}
+@signature: {'setProperties(arg: string | { [name: string]: object }, properties?: object): void;'}
 
 @params:
 

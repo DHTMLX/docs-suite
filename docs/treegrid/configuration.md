@@ -23,7 +23,57 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-In case these options aren't set in the TreeGrid configuration, the component will take the size of the container.
+:::info
+If the **width** and **height** options aren't set in the TreeGrid configuration, the TreeGrid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and TreeGrid won't be visible on the page.
+:::
+
+### Autoheight for TreeGrid
+
+You may enable the auto height mode of TreeGrid. For this, set the value of the [height](treegrid/api/treegrid_height_config.md) property to "auto". In this mode, TreeGrid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [  
+        // columns config
+    ], 
+    width: 700,   
+    height: "auto",  
+    data: dataset
+});
+~~~
+
+This functionality is available from v8.1.
+
+**Related sample**: [TreeGrid. Set automatic height](https://snippet.dhtmlx.com/wg7xosq8)
+
+If needed, you may set the minimal and maximal height for the container via the **min-height** and **max-height** CSS properties:
+
+~~~html
+<div class="treegrid" id="treegrid_container"></div>
+
+<style>
+    .treegrid {
+        min-height: 400px;
+        max-height: 600px;
+    }
+</style>
+~~~
+
+## Collapsed mode
+
+To initialize a treegrid in the collapsed state, use the [collapsed](treegrid/api/treegrid_collapsed_config.md) property:
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [  
+        // columns config
+    ],  
+    data: dataset,
+    collapsed: true
+});
+~~~
+
+**Related sample**: [TreeGrid. Collapsed mode](https://snippet.dhtmlx.com/t4iswa2y)
 
 ## Columns
 
@@ -488,7 +538,9 @@ You can specify the way of editing the cells of a TreeGrid column depending on i
 
 There are several types of column editors:
 
-- **input** - an editor for cells with a simple text (the default one, unless a column has **type:"date"**)
+- #### input
+
+An editor for cells with a simple text (the default one, unless a column has **type:"date"**).
 
 ~~~js
 // cells of the "project" column will be edited as inputs
@@ -506,7 +558,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-- **datePicker** - an editor for cells with dates (default for a column with **type:"date"**)
+- #### datePicker
+
+An editor for cells with dates (default for a column with **type:"date"**).
 
 To use this editor, you should specify the **type:"date"** property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the **format** option.
 
@@ -539,85 +593,9 @@ You can configure the date picker by passing [properties of Calendar](category/c
 ~~~
 :::
 
-- **select** - an editor for cells that should contain several options to choose from
+- #### textarea
 
-To set this editor type you need to provide the **options** property with an array of options to be displayed in the editor, e.g.:
-
-~~~js
-{
-	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
-	editorType: "select", options: ["Done", "In Progress", "Not Started"]
-} 
-~~~
-
-Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
-
-- The **id** attribute sets the id for the option;
-- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on TreeGrid initialization.
-
-~~~js
-{
-    width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
-    editorType: "select", 
-	options: [
-		{ id: "done", value: "Done" }, 
-		{ id: "in progress", value: "In Progress" }, 
-		{ id: "not started", value: "Not Started" },
-	],
-}
-~~~
-
-**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
-
-- **checkbox** - an editor for cells with a two-state check box
-
-To use this editor, you need to specify the **type: "boolean"** property for a column.
-
-~~~js
-{ 
-	// if the type:"boolean" config is set in the column config, 
-    // there's no need to specify the type of the editor
-	width: 160, id: "test", 
-    header: [{ text: "Test" }], 
-    type: "boolean" 
-}
-~~~
-
-**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
-
-{{note If you specify the **editable** option in the configuration of TreeGrid, then editing of a column with checkbox will always be enabled.}}
-
-- **combobox** - an editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control
-
-To use this editor you need to specify the **editorType: "combobox"** property for a column and provide the **options** property with an array of options to be displayed in the editor, e.g.:
-
-~~~js
-{
-    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
-    editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]
-}
-~~~
-
-Or provide the **options** property with an array of objects with a set of *key:value* pairs - attributes of options and their values.
-
-- The **id** attribute sets the id for the option;
-- The **value** attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on TreeGrid initialization.
-
-```js
-{
-    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
-    editorType: "combobox", 
-	options: [
-		{ id: "1 time", value: "1" }, 
-		{ id: "1-2 times", value: "1-2 " }, 
-		{ id: "more than 5 times", value: "5+" }
-	]  
-}
-```
-
-**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
-
-- **textarea** - an editor for cells that contain text
+An editor for cells that contain text.
 
 To use this editor, you should specify the **editorType:"textarea"** property for a column.
 
@@ -638,24 +616,112 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-- **multiselect** - an editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options
+- #### checkbox
 
-```js
-const treegrid = new dhx.TreeGrid("treegrid_container", {
-    columns: [
-        {
-            id: "renewals", type: "string",
-            header: [{ text: "Number of renewals" }],
-            editorType: "multiselect",
-            options: ["1 time", "1-2 times", "more than 5 times"],
-        },
-        // more columns
-    ],
-    data: data,
-});
-```
+An editor for cells with a two-state check box.
+
+To use this editor, you need to specify the **type: "boolean"** property for a column.
+
+~~~js
+{ 
+	// if the type:"boolean" config is set in the column config, 
+    // there's no need to specify the type of the editor
+	width: 160, id: "test", 
+    header: [{ text: "Test" }], 
+    type: "boolean" 
+}
+~~~
 
 **Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
+
+{{note If you specify the **editable** option in the configuration of TreeGrid, then editing of a column with checkbox will always be enabled.}}
+
+- #### select
+
+An editor for cells that should contain several options to choose from.
+
+To set this editor type you need to specify the **editorType:"select"** property for a column and define a list of options via the **options** property. 
+
+You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
+
+~~~js
+{
+	width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
+	editorType: "select", options: ["Done", "In Progress", "Not Started"]
+} 
+
+// or
+{
+    width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
+    editorType: "select", 
+	options: [
+		{ id: "done", value: "Done" }, 
+		{ id: "in progress", value: "In Progress" }, 
+		{ id: "not started", value: "Not Started" },
+	],
+}
+~~~
+
+**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
+
+Or define unique lists of options for different column cells. For that, use a function as a value of the property:
+
+~~~js
+{
+    id: "select_example",
+    header: [{ text: "Select example" }],
+    editorType: "select",
+    options: (col, row) => getCurrentOptions(row),
+},
+~~~
+
+**Related sample**: [TreeGrid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/1t8vvm07)
+
+- #### multiselect
+
+An editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options.
+
+To set this editor type you need to specify the **editorType:"multiselect"** property for a column and define a list of options via the **options** property.
+
+You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
+
+~~~js
+{
+    id: "renewals", type: "string",
+    header: [{ text: "Number of renewals" }],
+    editorType: "multiselect",
+    options: ["1 time", "1-2 times", "more than 5 times"],
+},
+
+// or
+{
+    id: "renewals", type: "string",
+    header: [{ text: "Number of renewals" }],
+    editorType: "multiselect",
+	options: [
+		{ id: "1", value: "1 time" }, 
+		{ id: "1-2", value: "1-2 times" }, 
+		{ id: "5 and more", value: "more than 5 times" },
+	],
+}
+~~~
+
+**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
+
+Or define unique lists of options for different column cells. For that, use a function as a value of the property:
+
+~~~js
+{
+    id: "multiselect_example",
+    header: [{ text: "Multiselect example" }],
+    type: "string",
+    editorType: "multiselect",
+    options: (col, row) => getCurrentOptions(row),
+    minWidth: 360
+},
+~~~
+
+**Related sample**: [TreeGrid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/1t8vvm07)
 
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
@@ -671,6 +737,48 @@ const data = [
     }
 ];
 ```
+
+- #### combobox
+
+An editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
+
+To use this editor you need to specify the **editorType: "combobox"** property for a column and define a list of options via the **options** property.
+
+You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
+
+~~~js
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]
+}
+
+// or
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox",
+	options: [
+		{ id: "1", value: "1 time" }, 
+		{ id: "1-2", value: "1-2 times" }, 
+		{ id: "5+", value: "more than 5 times" },
+	],
+}
+~~~
+
+**Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
+
+Or define unique lists of options for different column cells. For that, use a function as a value of the property:
+
+~~~js
+{
+    id: "combobox_example",
+    header: [{ text: "Combobox example" }],
+    editorType: "combobox",
+    options: (col, row) => getCurrentOptions(row),
+    minWidth: 160
+},
+~~~
+
+**Related sample**: [TreeGrid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/1t8vvm07)
 
 ### Editable combobox
 
@@ -1008,6 +1116,57 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Drag-n-drop between grids](https://snippet.dhtmlx.com/43covmy2)
 
+### Drag-n-drop of multiple rows
+
+To allow a user to drag-n-drop multiple rows at once, you need to enable [multiselection](#multiple-selection-of-treegrid-cells) of rows when configuring drag-n-drop. For example:
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: data,
+    selection: "row",
+	//drag-n-drop rows inside the treegrid
+    multiselection: true,
+    dragItem: "both" // or dragItem: "row"
+});
+~~~
+
+**Related sample:** [TreeGrid. Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
+
+or
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    selection: "row",
+	//drag-n-drop rows between treegrids
+    multiselection: true,
+    dragMode: "both" // or dragMode: "source"
+});
+~~~
+
+### Expanding collapsed rows on drag-n-drop
+
+If you have collapsed rows in your treegrid, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](treegrid/api/treegrid_dragexpand_config.md) property to *false*:
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    dragItem: "row",
+    dragExpand: false,
+    data: dataset
+});
+~~~
+
+**Related sample:** [TreeGrid. Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
+
 ## Selection
 
 DHTMLX TreeGrid includes the selection feature that allows highlighting TreeGrid elements depending on the chosen mode. The [](treegrid/api/treegrid_selection_config.md) property enables selection in a grid. It can take three values:
@@ -1041,6 +1200,23 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 **Related sample**: [TreeGrid. Selection](https://snippet.dhtmlx.com/v0dyh06q)
+
+### Multiple selection of TreeGrid cells
+
+While setting the [selection](treegrid/configuration.md#selection) property to *"row"*, *"cell"*, or *"complex"* value, you can enable the [](treegrid/api/treegrid_multiselection_config.md) property to allow a user to select multiple TreeGrid elements:
+
+~~~js
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+		// columns config
+	],
+    multiselection: true,
+    selection: "row",
+    data: dataset
+});
+~~~
+
+Since the **multiselection** configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 
 ## Spans
 

@@ -8,7 +8,7 @@ description: You can explore the beforeUnSelect event of Grid in the documentati
 
 @short: fires before unselecting a cell
 
-@signature: {'beforeUnSelect: (row: IRow, col: ICol) => boolean | void;'}
+@signature: {'beforeUnSelect: (row: object, col: object) => boolean | void;'}
 
 @params:
 

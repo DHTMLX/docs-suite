@@ -8,7 +8,7 @@ description: You can explore the getColumn method of TreeGrid in the documentati
 
 @short: returns an object with attributes of a column
 
-@signature: {'getColumn(colId: Id): ICol;'}
+@signature: {'getColumn(colId: string | number): object;'}
 
 @params:
 - `colId: string | number` - the id of a column

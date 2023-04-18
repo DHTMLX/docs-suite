@@ -21,6 +21,18 @@ const tree = new dhx.Tree("tree_container", {checkbox: true});
 
 **Related sample**: [Tree. Inline editing, drag-and-drop and checkboxes](https://snippet.dhtmlx.com/hyfz6ai7)
 
+## Collapsed mode
+
+To initialize a tree in the collapsed state, use the [collapsed](tree/api/tree_collapsed_config.md) property:
+
+~~~js
+const tree = new dhx.Tree("tree_container", {
+    collapsed: true,
+});
+~~~
+
+**Related sample**: [Tree. Collapsed mode](https://snippet.dhtmlx.com/cqbg0wsf)
+
 ## Editing of items
 
 ![](../assets/tree/editable.png)

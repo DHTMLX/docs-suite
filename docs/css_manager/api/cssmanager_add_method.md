@@ -8,7 +8,7 @@ description: You can explore the add method of CSS Manager in the documentation 
 
 @short: creates a new class with a list of styles
 
-@signature: {'add(cssList: ICssList, customId?: string, silent?: boolean): string;'}
+@signature: {'add(cssList: object, customId?: string, silent?: boolean): string;'}
 
 @params:
 - `cssList: object` - mandatory, an object with a list of styles

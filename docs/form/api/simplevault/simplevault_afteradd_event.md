@@ -8,7 +8,7 @@ description: You can explore the afterAdd event of the Simple Vault control of F
 
 @short: fires after a file is added to the data collection
 
-@signature: {'afterAdd: (file: ISimpleVaultValue) => void;'}
+@signature: {'afterAdd: (file: object) => void;'}
 
 @params:
 - `file: object` - the file object

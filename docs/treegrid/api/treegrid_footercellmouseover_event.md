@@ -8,7 +8,7 @@ description: You can explore the footerCellMouseOver event of TreeGrid in the do
 
 @short: fires on moving the mouse pointer over a grid footer cell
 
-@signature: {'footerCellMouseOver: (col: ICol, e: MouseEvent) => void;'}
+@signature: {'footerCellMouseOver: (col: object, e: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

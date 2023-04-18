@@ -8,7 +8,7 @@ description: You can explore the groupTitleTemplate config of TreeGrid in the do
 
 @short: Optional. Sets a template to the title of a group
 
-@signature: {'groupTitleTemplate?: (groupName: string, groupItems: IDataItem[]) => string;'}
+@signature: {'groupTitleTemplate?: (groupName: string, groupItems: object[]) => string;'}
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {

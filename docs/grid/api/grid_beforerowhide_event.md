@@ -8,7 +8,7 @@ description: You can explore the beforeRowHide event of Grid in the documentatio
 
 @short: fires before a row is hidden
 
-@signature: {'beforeRowHide: (row: IRow) => boolean | void;'}
+@signature: {'beforeRowHide: (row: object) => boolean | void;'}
 
 @params:
 - `row: object` - an object with a row configuration

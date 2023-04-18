@@ -8,7 +8,7 @@ description: You can explore the data config of TreeGrid in the documentation of
 
 @short: Optional. Specifies an array of data objects to set into the grid
 
-@signature: {'data?: any[];'}
+@signature: {'data?: object[];'}
 
 @example:
 const dataset = [

@@ -8,7 +8,7 @@ description: You can explore the beforeShow event of the Checkbox Group control 
 
 @short: fires before a control or its checkbox is shown
 
-@signature: {'beforeShow: (value: ICheckboxGroupValue, id?: string) => boolean | void;'}
+@signature: {'beforeShow: (value: {[id: string]: boolean | string}, id?: string) => boolean | void;'}
 
 @params:
 - `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
@@ -27,4 +27,6 @@ form.getItem("CheckboxGroup").events.on("beforeShow", function(value, id) {
 
 **Related sample:** [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
 
-@changelog: The **id** parameter was added in v8.0
+@changelog: 
+
+The **id** parameter was added in v8.0

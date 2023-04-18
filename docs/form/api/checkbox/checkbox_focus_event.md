@@ -17,6 +17,7 @@ description: You can explore the focus Checkbox event of Form in the documentati
 form.getItem("checkbox").events.on("focus", (value) => {
     console.log("focus", value);
 });
-@examplestop:
+
+@descr:
 
 @changelog: Added in v7.2

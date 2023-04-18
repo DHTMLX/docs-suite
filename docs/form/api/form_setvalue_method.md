@@ -8,7 +8,7 @@ description: You can explore the setValue method of Form in the documentation of
 
 @short: sets values/states for controls
 
-@signature: {'setValue(obj: FormData | IAnyObj): void;'}
+@signature: {'setValue(obj: object): void;'}
 
 @params:
 - `obj: object` - an object with new values/states of controls

@@ -8,7 +8,7 @@ description: You can explore the setProperties method of the Radiogroup control 
 
 @short: allows changing available configuration attributes of the control dynamically
 
-@signature: {'setProperties(arg?: string | ICheckboxGroupProps, props?: ICheckboxGroupItemProps): void;'}
+@signature: {'setProperties(arg?: string | object, props?: object): void;'}
 
 @params:
 - `arg: string | object` - either the id of a radio button, or an object with the available attributes of the RadioGroup control and their new values
@@ -52,7 +52,18 @@ form.getItem("radiogroup").setProperties("first", {
 
 @descr:
 
+We recommend that you apply the second way of using the method if you want to change the configuration of a separate radio button in the RadioGroup control:
+
+~~~js
+form.getItem("radiogroup").setProperties("first", {
+    text: "New Text",
+	padding: 20
+});
+~~~
+
+:::info
 The method invokes the [](form/api/radiogroup/radiogroup_afterchangeproperties_event.md) and [](form/api/radiogroup/radiogroup_beforechangeproperties_event.md) events.
+:::
 
 It is possible to change values of the following configuration attributes of the **RadioGroup** control:
 
@@ -143,14 +154,5 @@ It is possible to change values of the following configuration attributes of a *
 		</tr>
     </tbody>
 </table>
-
-We recommend that you apply the second way of using the method if you want to change the configuration of a separate radio button in the RadioGroup control:
-
-~~~js
-form.getItem("radiogroup").setProperties("first", {
-    text: "New Text",
-	padding: 20
-});
-~~~
 
 @changelog: added in v7.0

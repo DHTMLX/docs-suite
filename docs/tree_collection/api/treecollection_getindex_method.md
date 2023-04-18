@@ -8,10 +8,10 @@ description: You can explore the getIndex method of TreeCollection in the docume
 
 @short: gets the current position of an item
 
-@signature: {'getIndex(id: Id): number;'}
+@signature: {'getIndex(id: string | number): number;'}
 
 @params:
-- `id: string` - the ID of an item
+- `id: string | number` - the ID of an item
 
 @returns:
 The current position of the item.

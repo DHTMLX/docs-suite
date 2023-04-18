@@ -8,7 +8,7 @@ description: You can explore the rows config of Layout in the documentation of t
 
 @short: Optional. An array of rows objects
 
-@signature: {'rows?: ICellConfig[] | ILayoutConfig[];'}
+@signature: {'rows?: object[];'}
 
 @example:
 const layout = new dhx.Layout("layout_container", {

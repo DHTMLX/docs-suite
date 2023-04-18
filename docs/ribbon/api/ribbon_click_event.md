@@ -8,7 +8,7 @@ description: You can explore the click event of Ribbon in the documentation of t
 
 @short: fires after a click on a control
 
-@signature: {'click: (id: Id, events: Event) => void;'}
+@signature: {'click: (id: string | number, events: Event) => void;'}
 
 @params:
 - `id: string | number` - the ID of a clicked control

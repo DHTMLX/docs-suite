@@ -8,7 +8,7 @@ description: You can explore the expand method of Tree in the documentation of t
 
 @short: expands a tree item by id
 
-@signature: {'expand(id: Id): void;'}
+@signature: {'expand(id: string | number): void;'}
 
 @params:
 - `id: string | number` - the id of an item to expand

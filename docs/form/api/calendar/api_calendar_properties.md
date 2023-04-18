@@ -27,9 +27,9 @@ description: You can explore the Properties of the Datepicker control of Form in
 
     date?: Date | string,
     dateFormat?: string, // "%d/%m/%y" by default
-    disabledDates?: (a: Date) => boolean,
+    disabledDates?: (date: Date) => boolean,
     icon?: string,
-    mark?: (a: Date) => string,
+    mark?: (date: Date) => string,
     mode?: "calendar" | "month" | "year", // "calendar" by default
     placeholder?: string,
     thisMonthOnly?: boolean, // false by  default

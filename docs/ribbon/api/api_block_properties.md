@@ -14,7 +14,7 @@ const data = [
 		type: "block",
 		id?: string | number,
 		parent?: string,
-		items?: IBlockElement[],
+		items?: object[],
 
 		direction?: "row" | "col",
 		title?: string,

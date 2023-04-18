@@ -8,7 +8,7 @@ description: You can explore the save method of DataProxy in the documentation o
 
 @short: sends an AJAX request to the server
 
-@signature: {'save?: (data: any, mode: string) => Promise<any>;'}
+@signature: {'save?: (data: object, mode: string) => Promise<any>;'}
 
 @params:
 - `data: object` - mandatory, data to be sent to the server

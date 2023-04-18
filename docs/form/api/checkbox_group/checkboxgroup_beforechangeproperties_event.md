@@ -11,7 +11,7 @@ description: You can explore the beforeChangeProperties event of the Checkbox Gr
 @signature: {'beforeChangeProperties: (properties: ICheckboxGroupProps) => boolean | void;'}
 
 @params:
-- `properties: object` - an object with configuration attributes of the control and their new values
+- `properties: object` - an object with [configuration attributes](form/api/checkbox_group/checkboxgroup_setproperties_method.md) of the control and their new values
 
 @returns:
 Return `false` to cancel the default action of the event; otherwise, `true`.

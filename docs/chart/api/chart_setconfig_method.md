@@ -8,7 +8,7 @@ description: You can explore the setconfig method of Chart in the documentation 
 
 @short: sets configuration of a chart
 
-@signature: {'setConfig(config: IChartConfig): void;'}
+@signature: {'setConfig(config: object): void;'}
 
 @params:
 - `config: object` - an object with chart configurations

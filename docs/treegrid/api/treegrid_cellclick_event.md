@@ -8,7 +8,7 @@ description: You can explore the cellClick event of TreeGrid in the documentatio
 
 @short: fires on click on a grid cell
 
-@signature: {'cellClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
+@signature: {'cellClick: (row: object, col: object, e: MouseEvent) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

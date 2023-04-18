@@ -8,7 +8,7 @@ description: You can explore the getParent method of Layout in the documentation
 
 @short: returns the parent of a cell
 
-@signature: {'getParent(): ILayout;'}
+@signature: {'getParent(): object;'}
 
 @returns:
 The config object of the parent of a cell.

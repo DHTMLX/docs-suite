@@ -8,7 +8,7 @@ description: You can explore the select method of Sidebar in the documentation o
 
 @short: selects a specified Sidebar item
 
-@signature: {'select(id: Id, unselect: boolean): void;'}
+@signature: {'select(id: string | number, unselect: boolean): void;'}
 
 @params:
 - `id: string | number` - the id of a Sidebar item

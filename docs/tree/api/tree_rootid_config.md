@@ -8,7 +8,7 @@ description: You can explore the rootId config of Tree in the documentation of t
 
 @short: Optional. Sets the id for the root element
 
-@signature: {'rootId?: Id;'}
+@signature: {'rootId?: string | number;'}
 
 @example:
 const tree = new dhx.Tree("tree_container", {

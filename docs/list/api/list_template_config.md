@@ -8,7 +8,12 @@ description: You can explore the template config of List in the documentation of
 
 @short: Optional. Specifies a template for List items
 
-@signature: {'template?: (obj: IDataItem) => string;'}
+@signature: {'template?: (item: object) => string;'}
+
+@params:
+The template function takes one parameter:
+
+- `item` - an object of a data item
 
 @example:
 const list = new dhx.List("list_container", {
@@ -20,17 +25,6 @@ const list = new dhx.List("list_container", {
 @descr:
 
 **Related sample**: [List. HTML template for item](https://snippet.dhtmlx.com/gtzdwpj4)
-
-The template function takes one parameter:
-
-<table>
-	<tbody>
-        <tr>
-			<td><b>item</b></td>
-			<td>(<i>object</i>) an object of a data item</td>
-		</tr>
-    </tbody>
-</table>
 
 [comment]: # (@related: list/configuration.md#template-for-list-items)
 

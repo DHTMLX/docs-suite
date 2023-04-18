@@ -8,7 +8,7 @@ description: You can explore the setColumns method of Grid in the documentation 
 
 @short: sets configuration for Grid columns
 
-@signature: {'setColumns(columns: ICol[]): void;'}
+@signature: {'setColumns(columns: object[]): void;'}
 
 @params:
 - `columns: array` - an array of objects with configuration of columns

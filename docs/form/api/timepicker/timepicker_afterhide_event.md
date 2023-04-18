@@ -8,7 +8,7 @@ description: You can explore the afterHide event of the Timepicker control of Fo
 
 @short: fires after a control is hidden
 
-@signature: {'afterHide: (value: string | ITimeObject, init: boolean) => void;'}
+@signature: {'afterHide: (value: string | object, init: boolean) => void;'}
 
 @params:
 - `value: string | object` - the current value of the control

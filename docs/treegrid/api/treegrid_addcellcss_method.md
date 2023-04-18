@@ -8,7 +8,7 @@ description: You can explore the addCellCss method of TreeGrid in the documentat
 
 @short: adds a style to a cell
 
-@signature: {'addCellCss(rowId: Id, colId: Id, css: string): void;'}
+@signature: {'addCellCss(rowId: string | number, colId: string | number, css: string): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

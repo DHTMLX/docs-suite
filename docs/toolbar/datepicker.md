@@ -12,21 +12,13 @@ This is a control of Toolbar to select a date. Check the article below to see ho
 
 ## Adding Datepicker
 
-The Datepicker control can be easily added to a toolbar with the help of the [add()](tree_collection/api/treecollection_add_method.md) or [parse()](tree_collection/api/treecollection_parse_method.md) method of Tree Collection.
+The Datepicker control can be easily added to a toolbar with the help of the [add()](tree_collection/api/treecollection_add_method.md) method of Tree Collection.
 
-@example:
+~~~js
 toolbar.data.add({
     type: "datePicker"
 });
-@examplestop:
-
-@example:
-toolbar.data.parse([
-    {
-        type: "datePicker"
-    }
-]);
-@examplestop:
+~~~
 
 ## Properties
 
@@ -36,27 +28,27 @@ You can provide the [following properties](toolbar/api/api_datepicker_properties
 
 The Datepicker control can have an icon which is set through the corresponding option [icon](toolbar/customization.md).
 
-@example:
+~~~js
 {
     type: "datePicker",
     icon: "dxi dxi-calendar-today",
 }
-@examplestop:
+~~~
 
 ## Showing/hiding Datepicker
 
 To hide/show Datepicker, you should pass the ID of Datepicker to the [hide()](toolbar/api/toolbar_hide_method.md) / [show()](toolbar/api/toolbar_show_method.md) methods of Toolbar:
 
-@example:
+~~~js
 toolbar.show(id);
 toolbar.hide(id);
-@examplestop:
+~~~
 
 ## Enabling/disabling Datepicker
 
 It is possible to enable or disable Datepicker by the [enable()](toolbar/api/toolbar_enable_method.md) / [disable()](toolbar/api/toolbar_disable_method.md) methods:
 
-@example:
+~~~js
 toolbar.enable(id);
 toolbar.disable(id);
-@examplestop:
+~~~

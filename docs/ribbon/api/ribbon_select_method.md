@@ -8,7 +8,7 @@ description: You can explore the select method of Ribbon in the documentation of
 
 @short: selects a specified item of Ribbon
 
-@signature: {'select(id: Id, unselect: boolean): void;'}
+@signature: {'select(id: string | number, unselect: boolean): void;'}
 
 @params:
 - `id: string | number` - the id of a Ribbon item

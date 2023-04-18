@@ -8,7 +8,7 @@ description: You can explore the scrollTo method of TreeGrid in the documentatio
 
 @short: scrolls a grid to a specified cell
 
-@signature: {'scrollTo(rowId: Id, colId: Id): void;'}
+@signature: {'scrollTo(rowId: string | number, colId: string | number): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

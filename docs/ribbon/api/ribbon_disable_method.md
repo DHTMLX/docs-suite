@@ -8,7 +8,7 @@ description: You can explore the disable method of Ribbon in the documentation o
 
 @short: disables and dims an item(s) of Ribbon
 
-@signature: {'disable(ids: Id | Id[]): void;'}
+@signature: {'disable(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, an ID or an array of IDs of items

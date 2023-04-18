@@ -8,7 +8,7 @@ description: You can explore the editCell method of TreeGrid in the documentatio
 
 @short: enables editing of a TreeGrid cell
 
-@signature: {'editCell(rowId: Id, colId: Id, editorType?: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea" | "multiselect"): void;'}
+@signature: {'editCell(rowId: string | number, colId: string | number, editorType?: string): void;'}
 
 @params:
 - `rowId: string | number` - the id of a row

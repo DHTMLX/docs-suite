@@ -8,7 +8,7 @@ description: You can explore the update method of DataCollection in the document
 
 @short: updates properties of the item
 
-@signature: {'update?: (id: string | number, newItem: IUpdateObject) => void;'}
+@signature: {'update?: (id: string | number, newItem: object) => void;'}
 
 @params:
 - `id: string | number` - the id of the item which needs to be updated

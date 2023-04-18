@@ -1,12 +1,10 @@
 ---
 sidebar_label: csv()
 title: JavaScript Grid - csv Method
-description: You can explore the csv method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+description: You can explore the csv export method of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # csv()
-
-### Description
 
 @short: Exports data from a grid into a CSV file
 
@@ -37,3 +35,5 @@ grid.export.csv({
 @descr:
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
+
+**Related article:** [Exporting Grid](grid/usage.md#exporting-grid)

@@ -8,10 +8,10 @@ description: You can explore the loadItems method of TreeCollection in the docum
 
 @short: loads child items of a control from a file
 
-@signature: {'loadItems(id: Id, driver?: IDataDriver | DataDriver): void;'}
+@signature: {'loadItems(id: string | number, driver?: object | string): void;'}
 
 @params:
-- `id: string` - the ID of a control
+- `id: string | number` - the ID of a control
 - `driver: object | string` - optional, DataDriver or type of data ("json", "csv", "xml"), "json" by default
 
 @example:

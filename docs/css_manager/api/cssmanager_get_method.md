@@ -8,7 +8,7 @@ description: You can explore the get method of CSS Manager in the documentation 
 
 @short: returns a list of styles by the class name
 
-@signature: {'get(className: string): ICssList;'}
+@signature: {'get(className: string): object;'}
 
 @params:
 - `className: string` - the name of the class

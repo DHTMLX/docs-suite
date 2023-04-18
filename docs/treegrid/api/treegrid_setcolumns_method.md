@@ -8,7 +8,7 @@ description: You can explore the setColumns method of TreeGrid in the documentat
 
 @short: sets configuration for TreeGrid columns
 
-@signature: {'setColumns(col: ICol[]): void;'}
+@signature: {'setColumns(col: object[]): void;'}
 
 @params:
 - `col: array` - an array of objects with configuration of columns

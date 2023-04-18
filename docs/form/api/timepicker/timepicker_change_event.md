@@ -8,7 +8,7 @@ description: You can explore the change event of the Timepicker control of Form 
 
 @short: fires on changing the value of a control
 
-@signature: {'change: (value: string | ITimeObject) => void;'}
+@signature: {'change: (value: string | object) => void;'}
 
 @params:
 - `value: string | object` - the current value of the control

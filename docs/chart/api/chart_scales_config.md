@@ -8,7 +8,7 @@ description: You can explore the scales config of Chart in the documentation of 
 
 @short: Required. Defines configuration of scales for Line, Spline, Bar, X-Bar, Area, SplineArea, Radar, and Scatter charts
 
-@signature: {'scales: IScalesConfig;'}
+@signature: {'scales: {[key: string]: object};'}
 
 @example:
 const chart = new dhx.Chart("chart_container", {

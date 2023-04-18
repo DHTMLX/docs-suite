@@ -8,7 +8,7 @@ description: You can explore the getHeaderFilter method of TreeGrid in the docum
 
 @short: returns an object with a set of methods for the header filter of the specified column
 
-@signature: {'getHeaderFilter(colId: Id): object;'}
+@signature: {'getHeaderFilter(colId: string | number): object;'}
 
 @params:
 - `colId: string | number` - the id of a column

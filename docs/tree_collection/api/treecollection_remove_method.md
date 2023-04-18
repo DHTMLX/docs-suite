@@ -8,7 +8,7 @@ description: You can explore the remove method of TreeCollection in the document
 
 @short: removes an item
 
-@signature: {'remove(id: Id | Id[]): void;'}
+@signature: {'remove(id: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `id: string | string[]` - the ids of items to remove

@@ -8,7 +8,7 @@ description: You can explore the uploadFail event of the Simple Vault control of
 
 @short: fires if the file upload failed
 
-@signature: {'uploadFail: (file: ISimpleVaultValue, value: ISimpleVaultValue[]) => void;'}
+@signature: {'uploadFail: (file: object, value: object[]) => void;'}
 
 @params:
 - `file: object` - the file object

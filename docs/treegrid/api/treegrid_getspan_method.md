@@ -8,7 +8,7 @@ description: You can explore the getSpan method of TreeGrid in the documentation
 
 @short: returns an object with spans
 
-@signature: {'getSpan(rowId: Id, colId: Id): ISpan;'}
+@signature: {'getSpan(rowId: string | number, colId: string | number): object;'}
 
 @params:
 - `rowId: string | number` - the id of a row

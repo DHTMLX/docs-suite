@@ -8,7 +8,7 @@ description: You can explore the modeChange event of Colorpicker in the document
 
 @short: fires on changing the mode of the colorpicker
 
-@signature: {'modeChange: (view: ViewsMode) => void;'}
+@signature: {'modeChange: (view: string) => void;'}
 
 @params:
 - `view: string` - the colorpicker mode ("palette", "picker")

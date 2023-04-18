@@ -8,7 +8,7 @@ description: You can explore the footerCellClick event of Grid in the documentat
 
 @short: fires on click on a grid footer cell
 
-@signature: {'footerCellClick: (col: ICol, e: MouseEvent) => void;'}
+@signature: {'footerCellClick: (col: object, e: MouseEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

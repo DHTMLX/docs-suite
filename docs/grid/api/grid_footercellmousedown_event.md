@@ -8,7 +8,7 @@ description: You can explore the footerCellMouseDown event of Grid in the docume
 
 @short: fires on moving the mouse pointer over a grid footer cell
 
-@signature: {'footerCellMouseDown: (col: ICol, e: MouseEvent & TouchEvent) => void;'}
+@signature: {'footerCellMouseDown: (col: object, e: MouseEvent & TouchEvent) => void;'}
 
 @params:
 - `col: object` - an object with a column configuration

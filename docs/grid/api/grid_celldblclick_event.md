@@ -8,7 +8,7 @@ description: You can explore the cellDblClick event of Grid in the documentation
 
 @short: fires on double-click on a grid cell
 
-@signature: {'cellDblClick: (row: IRow, col: ICol, e: MouseEvent) => void;'}
+@signature: {'cellDblClick: (row: object, col: object, e: MouseEvent) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration

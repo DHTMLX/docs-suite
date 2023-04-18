@@ -8,9 +8,7 @@ description: You can explore the selection config of TreeGrid in the documentati
 
 @short: Optional. Enables selection in a grid
 
-@signature: {'selection?: ISelectionType;'}
-
-@values: "row","cell","complex"
+@signature: {'selection?: "row" | "cell" | "complex";'}
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {

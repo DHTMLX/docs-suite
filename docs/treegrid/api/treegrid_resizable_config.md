@@ -17,7 +17,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     ],
     data: dataset,
     resizable: true
-}
+});
 
 @descr:
 

@@ -8,7 +8,7 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 
 @short: fires before adding a new item into a tree collection
 
-@signature: {'beforeAdd: (newItem: any) => boolean | void;'}
+@signature: {'beforeAdd: (newItem: object) => boolean | void;'}
 
 @params:
 - `newItem: object` - the object of an added item

@@ -8,7 +8,7 @@ description: You can explore the disable method of Menu in the documentation of 
 
 @short: disables and dims an item(s) of Menu
 
-@signature: {'disable(ids: Id | Id[]): void;'}
+@signature: {'disable(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, an ID or an array of IDs of items

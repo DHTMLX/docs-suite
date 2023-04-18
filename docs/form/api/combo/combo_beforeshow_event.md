@@ -8,17 +8,17 @@ description: You can explore the beforeShow event of the Combo Box control of Fo
 
 @short: fires before a control is shown
 
-@signature: {'beforeShow: (value: Id | Id[]) => boolean | void;'}
+@signature: {'beforeShow: (ids: (string | number) | (string | number)[]) => boolean | void;'}
 
 @params:
-- `value: string | number | (string | number)[]` - the ID(s) of the options(s) that are currently selected in the control
+- `ids: string | number | (string | number)[]` - the ID(s) of the options(s) that are currently selected in the control
 
 @returns:
 Return `false` to prevent a control from being shown; otherwise, `true`.
 
 @example:
-form.getItem("combo").events.on("beforeShow", function(value) {
-    console.log("beforeShow", value);
+form.getItem("combo").events.on("beforeShow", function(ids) {
+    console.log("beforeShow", ids);
     return true;
 });
 

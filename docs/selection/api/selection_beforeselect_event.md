@@ -8,10 +8,10 @@ description: You can explore the beforeSelect event of Selection in the document
 
 @short: fires on selecting an item, but before the item is really selected
 
-@signature: {'beforeSelect: (id: string) => void | boolean;'}
+@signature: {'beforeSelect: (id: string | number) => void | boolean;'}
 
 @params:
-- `id: string` - the id of an item
+- `id: string | number` - the id of an item
 
 @returns:
 Return `false` to prevent selecting of an item; otherwise, `true`.

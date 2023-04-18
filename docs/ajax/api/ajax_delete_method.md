@@ -8,12 +8,17 @@ description: You can explore the delete method of Ajax in the documentation of t
 
 @short: sends a DELETE request to the server
 
-@signature: {'delete<T>(url: string, data?: { [key: string]: any; } | string, config?: Partial<IAjaxHelperConfig>): Promise<T>;'}
+@signature: {'delete<T>(url: string, data?: { [key: string]: any; } | string, config?: object): Promise<T>;'}
 
 @params:
 - `url: string` - the URL the request is sent to
-- `data: object` - optional, the data sent to the server by the DELETE-request
-- `config: object` - the configuration object of the request
+- `data: object | string` - optional, the data sent to the server by the DELETE-request
+- `config: object` - optional, the configuration object of the request. It can contain the following options:
+    - `responseType: string` - the type of data that you are expecting back from the server. The available types are:
+        - "text" - returns the plain text as a string
+        - "xml" - returns the result parsed as XML
+        - "json" - returns the result as JSON
+    - `headers: object` - optional, the headers of the request
 
 @returns:
 A "promise" of the data object.
@@ -25,11 +30,3 @@ dhx.ajax.delete(url, {id: "2"}).then(function (data){
 
 @descr:
 **Related sample**: [Data. Ajax DELETE](https://snippet.dhtmlx.com/6nlb0bfu)
-
-The **config** object can contain the following options:
-
-- **responseType** - the type of data that you are expecting back from the server. The available types are:
-    - text - returns the plain text as a string
-    - xml - returns the result parsed as XML
-    - json - returns the result as JSON
-- **headers** - (*object*) optional, the headers of the request

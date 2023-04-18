@@ -8,7 +8,7 @@ description: You can explore the icon config of Tree in the documentation of the
 
 @short: Optional. Allows adding custom icons for tree items
 
-@signature: {'icon?: ITreeCustomIcon;'}
+@signature: {'icon?: object;'}
 
 @example:
 const tree = new dhx.Tree("tree_container", {

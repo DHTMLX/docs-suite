@@ -10,7 +10,7 @@ description: You can explore the dragItem config of Grid in the documentation of
 
 @short: Optional. Enables the possibility to reorder grid columns or (and) rows by drag and drop
 
-@signature: {' dragItem?: "column", "row", "both";'}
+@signature: {' dragItem?: "column" | "row" | "both";'}
 
 @example:
 const grid = new dhx.Grid("grid_container", {

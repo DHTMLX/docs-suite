@@ -8,7 +8,7 @@ description: You can explore the show method of Sidebar in the documentation of 
 
 @short: shows items of Sidebar
 
-@signature: {'show(ids: Id | Id[]): void;'}
+@signature: {'show(ids?: (string | number) | (string | number)[]): void;'}
 
 @params:
 - `ids: string | number | array` - optional, an ID or an array of IDs of items

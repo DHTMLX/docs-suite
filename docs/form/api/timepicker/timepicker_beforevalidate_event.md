@@ -8,7 +8,7 @@ description: You can explore the beforeValidate event of the Timepicker control 
 
 @short: fires before the control value is validated
 
-@signature: {'beforeValidate: (value: string | ITimeObject) => boolean | void;'}
+@signature: {'beforeValidate: (value: string | object) => boolean | void;'}
 
 @params:
 - `value: string | object` - the value to be validated

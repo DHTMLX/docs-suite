@@ -8,7 +8,7 @@ description: You can explore the hide method of the Checkbox Group control of Fo
 
 @short: hides either a checkbox of CheckboxGroup or the whole CheckboxGroup
 
-@signature: {'hide(id?: string)): void;'}
+@signature: {'hide(id?: string): void;'}
 
 @params:
 - `id: string` - optional, the **id** of a specific element inside the CheckboxGroup control

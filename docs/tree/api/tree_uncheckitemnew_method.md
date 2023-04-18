@@ -8,7 +8,7 @@ description: You can explore the uncheckItem method of Tree in the documentation
 
 @short: unchecks the checkbox of a tree item and all its sub-items
 
-@signature: {'uncheckItem(id: Id): void;'}
+@signature: {'uncheckItem(id: string | number): void;'}
 
 @params:
 - `id: string | number` - the id of an item to uncheck

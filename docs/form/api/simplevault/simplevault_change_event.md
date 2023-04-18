@@ -8,7 +8,7 @@ description: You can explore the change event of the Simple Vault control of For
 
 @short: fires on changing the value of a control
 
-@signature: {'change: (value: ISimpleVaultValue[]) => void;'} 
+@signature: {'change: (value: object[]) => void;'} 
 
 @params:
 - `value: array` - the current value of the control

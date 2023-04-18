@@ -8,7 +8,7 @@ description: You can explore the getChecked method of Tree in the documentation 
 
 @short: gets all checked tree items
 
-@signature: {'getChecked(): Id[];'}
+@signature: {'getChecked(): (string | number)[];'}
 
 @returns:
 An array of ids of checked items.

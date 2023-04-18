@@ -21,13 +21,19 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Drag-n-drop](https://snippet.dhtmlx.com/ax5vs4a8)
-
 Drag-n-drop can work in three modes:
 
 - "column" - enables drag and drop of columns
 - "row" - enables drag and drop of rows
 - "both" - enables both modes mentioned above
+
+**Related sample**: [TreeGrid. Drag-n-drop](https://snippet.dhtmlx.com/ax5vs4a8)
+
+**Related API:**
+
+- [dragCopy](treegrid/api/treegrid_dragcopy_config.md)
+- [dragExpand](treegrid/api/treegrid_dragexpand_config.md)
+- [dragMode](treegrid/api/treegrid_dragmode_config.md)
 
 @changelog:
 

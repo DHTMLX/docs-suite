@@ -8,13 +8,13 @@ description: You can explore the save method of TreeCollection in the documentat
 
 @short: saves changes made in a tree collection to the server side
 
-@signature: {'save(url: IDataProxy | string): void;'}
+@signature: {'save(url: string | object): void;'}
 
 @params:
-- `url: object | string` - the URL of a server side (or DataProxy object)
+- `url: string | object` - the URL of a server side (or DataProxy object)
 
 @example:
-diagram.data.save("http://userurl/");
+toolbar.data.save("http://userurl/");
 
 @descr:
 
@@ -33,7 +33,7 @@ return data.saveData.then(function () {
 Use the [](tree_collection/api/treecollection_issaved_method.md) method to know whether the changes are saved:
 
 ~~~js
-diagram.data.saveData.then(function () {
-	console.log(diagram.data.isSaved());
+toolbar.data.saveData.then(function () {
+	console.log(toolbar.data.isSaved());
 });
 ~~~

@@ -8,7 +8,7 @@ description: You can explore the inputCreated event of Toolbar in the documentat
 
 @short: fires when a new input is added
 
-@signature: {'inputCreated: (id: Id, input: HTMLInputElement) => void;'}
+@signature: {'inputCreated: (id: string | number, input: HTMLInputElement) => void;'}
 
 @params:
 - `id: string | number` - the ID of a new input

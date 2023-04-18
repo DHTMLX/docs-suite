@@ -8,9 +8,7 @@ description: You can explore the mode config of Calendar in the documentation of
 
 @short: Optional. The mode of Calendar initialization
 
-@signature: {'mode?: ViewMode;'}
-
-@values: "calendar", "month", "year", "timepicker"
+@signature: {'mode?: "calendar" | "month" | "year" | "timepicker";'}
 
 @default: "calendar"
 

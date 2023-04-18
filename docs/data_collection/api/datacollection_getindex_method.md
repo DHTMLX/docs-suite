@@ -8,10 +8,10 @@ description: You can explore the getIndex method of DataCollection in the docume
 
 @short: returns the index of the item by its id
 
-@signature: {'getIndex(id: Id): number;'}
+@signature: {'getIndex(id: string | number): number;'}
 
 @params:
-- `id: string` - the id of the item
+- `id: string | number` - the id of the item
 
 @returns:
 The index of the item.

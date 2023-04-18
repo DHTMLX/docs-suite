@@ -8,7 +8,7 @@ description: You can explore the getValue method of Timepicker in the documentat
 
 @short: returns the current value of a TimePicker
 
-@signature: {'getValue(asOBject?: boolean): ITimeObject | string;'}
+@signature: {'getValue(asOBject?: boolean): object | string;'}
 
 @params:
 - `asObject: boolean` - optional, specifies that the value will be returned as an object, false by default

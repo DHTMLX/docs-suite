@@ -128,7 +128,8 @@ In this section you can learn how to configure the size of Grid and its cells.
 
 | Topic                                                                                       | Description                                                                                                                     |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to specify the necessary size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                |
+| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to set specific size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                         |
+| [Auto-height for Grid](../configuration/#autoheight-for-grid)                               | Learn how to configure auto-height for Grid ([Example](https://snippet.dhtmlx.com/srbu56ob))                                                                                 |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/zfrpe22d)) |
 | [Max width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/ku3cfaux))            |
 | [Min width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the minimum width which can be set for a column  ([Example](https://snippet.dhtmlx.com/x5hmpi9d))           |
@@ -193,7 +194,7 @@ In this section you will find the ways of editing data in Grid.
 | Topic                                                                                        | Description                                                                                                        |
 | -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | [Enabling/disabling editing](../configuration/#editing-grid-and-separate-columns)            | Read how to enable/disable editing of the whole Grid or its separate columns                                       |
-| [Editing with different editors](../configuration/#types-of-column-editor)                   | Learn how to specify the type of the editor for editing the cells ([Example](https://snippet.dhtmlx.com/w2cdossn)) |
+| [Editing with different editors](../configuration/#types-of-column-editor)                   | Learn how to specify the type of the editor for editing the cells ([Example](https://snippet.dhtmlx.com/w2cdossn)), ([Example 2](https://snippet.dhtmlx.com/1mxmshax)), ([Example 3](https://snippet.dhtmlx.com/i22fg83z)) |
 | [Inline editing](https://snippet.dhtmlx.com/7mbs47en)                                        | The example allows you to try out inline editing in Grid                                                           |
 | [Editing data using the right panel](https://snippet.dhtmlx.com/1z3jqrlj)                    | The example shows how to implement editing in Grid via the right panel                                             |
 | [Editing data using a modal window](https://snippet.dhtmlx.com/5tbcflek)                     | The example shows how to implement editing in Grid via the modal window                                            |
@@ -248,9 +249,9 @@ In this section you will learn how to scroll Grid to the necessary position.
 
 In this section you will know how to export Grid to different formats.
 
-| Topic                                                      | Description                                                                                        |
-| ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| [Exporting Grid to XLSX and CSV](../usage/#exporting-grid) | Learn how to export Grid to Excel or CSV formats  ([Example](https://snippet.dhtmlx.com/58oqij47)) |
+| Topic                                                                       | Description                                                                                                                                           |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Exporting Grid to XLSX, CSV, PNG. or PDF format](../usage/#exporting-grid) | Learn how to export Grid to the necessary format ([Example 1](https://snippet.dhtmlx.com/58oqij47), [Example 2](https://snippet.dhtmlx.com/ti9l91mn)) |
 
 ## How to work with Grid events
 

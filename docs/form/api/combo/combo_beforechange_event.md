@@ -8,17 +8,17 @@ description: You can explore the beforeChange event of the Combo Box control of 
 
 @short: fires before changing the value of a control
 
-@signature: {'beforeChange: (value: Id | Id[]) => boolean | void;'}
+@signature: {'beforeChange: (ids: (string | number) | (string | number)[]) => boolean | void;'}
 
 @params:
-- `value: string | number | (string | number)[]` - the ID(s) of newly selected option(s) from data collection
+- `ids: string | number | (string | number)[]` - the ID(s) of newly selected option(s) from data collection
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.
 
 @example:
-form.getItem("combo").events.on("beforeChange", function(value) {
-    console.log("beforeChange", value);
+form.getItem("combo").events.on("beforeChange", function(ids) {
+    console.log("beforeChange", ids);
     return true;
 });
 
