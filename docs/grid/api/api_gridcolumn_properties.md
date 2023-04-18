@@ -208,7 +208,7 @@ columns:[
 			<td>(optional) an object with configuration settings of the column's editor. <br>If <b>editorType: "combobox"</b> is specified, the <b>editorConfig</b> object can include the following property:
             <ul>
                 <li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (optional) allows end users to add new values into the list of combobox options from UI. The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li> 
-            </ul>If <b>type: "date"</b> is specified, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>mark</b>, <b>disabledDates</b>, <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones)
+            </ul>If <b>type: "date"</b> is specified, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones)
             <br><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a>
             </td>
 		</tr>
