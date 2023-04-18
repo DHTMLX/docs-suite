@@ -18,10 +18,10 @@ const data = [
 		valueFormat?: string | "date",
 
 		dateFormat?: string,
-		disabledDates?: (a: Date) => boolean,
+		disabledDates?: (date: Date) => boolean,
 		icon?: string,
 	    label?: string,
-		mark?: (a: Date) => string,
+		mark?: (date: Date) => string,
 		mode?: "calendar" | "year" | "month" | "timepicker", // "calendar" by default
 	    placeholder?: string,
 		thisMonthOnly?: boolean, // false by default

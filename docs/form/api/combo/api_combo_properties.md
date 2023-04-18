@@ -22,7 +22,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 	hidden?: boolean,
 	padding?: string | number,
 	required?: boolean, // false by default
-	validation?: (value: Id | Id[], text: string | string[]) => boolean,
+	validation?: (id: (string | number) | (string | number)[], text: string | string[]) => boolean,
 	width?: string | number | "content", // "content" by default
 	
 	filter?: (item: any, input: string) => boolean,
@@ -110,7 +110,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		<tr>
 			<td><b>validation</b></td>
 			<td>(optional) <a href="../../../work_with_form#validation-rules">a callback function</a> which allows to validate Combo options.<br>The function takes two parameters:
-			<ul><li><b>value</b> - (required) the ID(s) of the option(s) to validate</li><li><b>text</b> - (required) the value(s) of the option(s)</li></ul>
+			<ul><li><b>id</b> - (required) the ID(s) of the option(s) to validate</li><li><b>text</b> - (required) the value(s) of the option(s)</li></ul>
 			and returns <i>true/false</i> to indicate the result of validation</td>
 		</tr>
 		<tr>
