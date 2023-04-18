@@ -8,7 +8,7 @@ description: You can explore the rowCss config of Grid in the documentation of t
 
 @short: Optional. Sets style for a row
 
-@signature: {'rowCss?: (row: IRow) => string;'}
+@signature: {'rowCss?: (row: object) => string;'}
 
 @example:
 <style>
@@ -29,6 +29,6 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Custom row style](https://snippet.dhtmlx.com/2dxtwf9n)
 
-The function takes the id of a row as a parameter and returns a string with the name of a CSS class.
+The function takes the object of a row as a parameter and returns a string with the name of a CSS class.
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#row-style)

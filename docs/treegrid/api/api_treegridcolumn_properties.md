@@ -61,10 +61,10 @@ columns:[
 	    resizable?: boolean,
 	    sortable?: boolean,
 		mark?: { min?: string, max?: string } |
-               (cell: any, columnCells: any[], row?: IRow, column?: ICol) => string,
-	    template?: (cellValue: any, row: IRow, col: ICol) => string,
+               (cell: any, columnCells: any[], row?: object, column?: object) => string,
+	    template?: (cellValue: any, row: object, col: object) => string,
 	    tooltip?: boolean,
-	    tooltipTemplate?: (cellValue: any, row: IRow, col: ICol) => string,
+	    tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
     },
     // more column objects
 ]
