@@ -25,32 +25,18 @@ const form = new dhx.Form("form_container", {
 
 form.getItem("spacer").getProperties();
 
-// -> the returned object
+@descr:
+
+The returned object of the **Spacer** control looks like:
+
+~~~js
 {
 	height: "content",
 	padding: 0,
 	width: "content"
 }
+~~~
 
-@descr:
-
-The returned object of the **Spacer** control can contain the following configuration attributes:
-
-<table>
-	<tbody>
-		<tr>
-			<td><b>height</b></td>
-			<td>(<i>string|number|"content"</i>) the height of a control</td>
-		</tr>
-        <tr>
-			<td><b>padding</b></td>
-			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
-		</tr>
-		<tr>
-			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
-		</tr>	
-    </tbody>
-</table>
+You will find the description of these properties [here](form/api/spacer/api_spacer_properties.md).
 
 @changelog: added in v7.0

@@ -557,6 +557,7 @@ The returned object of the **TimePicker** control can contain the following prop
 
 You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
 
+**Related API**: [setProperties()](form/api/form_setproperties_method.md)
+
 @changelog: added in v7.0
 
-[comment]: # (@relatedapi: form/api/form_setproperties_method.md)

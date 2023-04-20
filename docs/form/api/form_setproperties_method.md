@@ -543,6 +543,7 @@ It is possible to change the following configuration attributes of the **TimePic
 
 You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
 
+**Related API**: [getProperties()](form/api/form_getproperties_method.md)
+
 @changelog: added in v7.0
 
-[comment]: # (@relatedapi: form/api/form_getproperties_method.md)

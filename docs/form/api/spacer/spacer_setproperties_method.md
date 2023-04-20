@@ -26,25 +26,15 @@ The method invokes the [](form/api/spacer/spacer_afterchangeproperties_event.md)
 
 It is possible to change values of the following configuration attributes of the **Spacer** control:
 
-<table>
-	<tbody>
-		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) adds style classes to a control</td>
-		</tr>
-		<tr>
-			<td><b>height</b></td>
-			<td>(<i>string|number|"content"</i>) the height of a control</td>
-		</tr>
-        <tr>
-			<td><b>padding</b></td>
-			<td>(<i>string|number</i>) sets padding between a cell and a border of the Spacer control</td>
-		</tr>	
-		<tr>
-			<td><b>width</b></td>
-			<td>(<i>string|number|"content"</i>) the width of a control</td>
-		</tr>
-    </tbody>
-</table>
+~~~js
+{
+	css: string,
+	height: string|number|"content"
+	padding: string|number
+	width: string|number|"content"
+}
+~~~
+
+You will find the description of these properties [here](form/api/spacer/api_spacer_properties.md).
 
 @changelog: added in v7.0
