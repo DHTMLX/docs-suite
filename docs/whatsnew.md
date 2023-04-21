@@ -13,6 +13,8 @@ Version 8.1
 
 Released on April 18, 2023
 
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-1/" target="_blank">Review of release on the blog</a>
+
 ### New functionality
 
 #### Chart

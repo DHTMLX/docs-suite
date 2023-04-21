@@ -38,7 +38,6 @@ const grid = new dhx.Grid("grid_container", {
     columns: [
 		// columns config
 	],
-    width: "auto",
     height: "auto",
     data: dataset
 });
