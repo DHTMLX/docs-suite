@@ -25,10 +25,16 @@ form.getItem("container").setProperties({
 The method invokes the [afterChangeProperties](form/api/container/container_afterchangeproperties_event.md) and [beforeChangeProperties](form/api/container/container_beforechangeproperties_event.md) events.
 :::
 
-It is possible to change values of the following properties of the Container control:
+It is possible to change values of the following properties of the **Container** control:
 
-- `height` - *string, number, "content"* - the height of a control
-- `padding` - *string, number* - sets padding between a cell and a border of a control
-- `width` - *string, number, "content"* - the width of a control
+~~~js
+{
+	height: string | number | "content", 
+	padding: string | number,
+	width: string, number, "content"
+}
+~~~
+
+You will find the description of these properties [here](form/api/container/api_container_properties.md).
   
 @changelog: added in v7.2
