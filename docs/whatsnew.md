@@ -447,7 +447,7 @@ Released on June 07, 2022
 - Form. Fix the issue with activating/displaying the initially hidden control (`hidden: true`) of the "container" form using the `show()` method
 - Form. Fix the issue with including a toolbar into the "container" form (errors in console)
 - Grid. Fix the issue with selection when adding spans into the grid component
-- Grid. Fix the issue with reselection a cell after calling the `grid.selection.removeCell()` metod
+- Grid. Fix the issue with reselection of a cell after calling the `grid.selection.removeCell()` method
 - Layout. Fix the issue with the initially collapsed cell which includes the `min-width` and `min-height` settings. Instead of being collapsed, the cell takes the specified min sizes
 - Layout. Fix the issue with dynamic resizing a cell when resizing a viewport (in some cases)
 - Layout. Fix the issue with resizing cells which contain the iframe element
