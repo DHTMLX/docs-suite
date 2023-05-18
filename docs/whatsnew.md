@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.1 
+---------------
+
+Released on May 18, 2023
+
+### Fixes
+
+- DataProxy. Fix the issue with items' ids during lazy loading
+- Dataview. Fix incorrect work of the [`setFocus()`](dataview/api/dataview_setfocus_method.md) method
+- Form. Fix incorrect application of a validation class added to a custom CSS class
+- Grid/TreeGrid. Fix the issue with ignoring hidden columns being a part of a colspan
+- Grid/TreeGrid. Fix displaying of data in the header/footer during the initialization of a large number of columns
+- Grid/TreeGrid. Fix incorrect drag-n-drop behavior in the disabled multi select mode
+- Grid/TreeGrid. Fix the issue with the multi select filter when it adds an empty value from a data set into selected options by default
+- TreeGrid. Fix incorrect work of the [`adjustColumnWidth()`](treegrid/api/treegrid_adjustcolumnwidth_method.md) method
+
 Version 8.1
 ------------
 
