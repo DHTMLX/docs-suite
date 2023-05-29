@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.2
+--------------
+
+Released on May 29, 2023
+
+### Fixes
+
+- DataView. Fix incorrect rendering of multiple selected items while dragging them to the target
+- Form. Fix incorrect key navigation in the TimePicker control
+- Grid/TreeGrid. Fix the horizontal scrolling during the column drag
+- Grid/TreeGrid. Fix the vertical scrolling during the row drag
+- Grid/TreeGrid. Fix the impossibility to select an empty option in the `multiselection:false` mode of the comboFilter
+- Layout. Fix incorrect arrangement of cells on a page after resizing/collapsing
+- Window. Fix the issue when a modal window with an attached component refuses to close with the ESC button
+
 Version 8.1.1 
 ---------------
 
