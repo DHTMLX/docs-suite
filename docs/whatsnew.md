@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.3 
+--------------
+
+Released on June 12, 2023
+
+### Fixes
+
+- Combobox. Fix the issue with displaying HTML content in the input
+- Grid/TreeGrid. Fix incorrect processing of dates containing time in the AM format by the datePicker editor 
+- Grid/TreeGrid. Fix the problem with the footer colspan not working in the frozen part of a grid
+- Grid/TreeGrid. Fix the issue with displaying HTML content in the comboFilter
+- TreeGrid. Fix incorrect behavior when removing a child item of a selected row resets the selection
+
+
 Version 8.1.2
 --------------
 
