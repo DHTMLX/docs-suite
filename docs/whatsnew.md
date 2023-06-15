@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.4 
+---------------
+
+Released on June 15, 2023
+
+### Fixes
+
+- Form. Fix the issue with the `undefined` CSS class that appeared on creation of a form
+
 Version 8.1.3 
 --------------
 
