@@ -40,6 +40,9 @@ columns:[
 	    footer?: [
             {
                 text?: string | number,
+	 	    align?: "left" | "center" | "right",
+	            colspan?: number,
+	            rowspan?: number,
 	            css?: any,
 	            content?: "inputFilter" | "selectFilter" | "comboFilter" |
                           "avg" | "sum" | "max" | "min" | "count" | string,

@@ -6,7 +6,7 @@ description: You can explore the setFocus method of DataView in the documentatio
 
 # setFocus()
 
-@short: sets focus to an item by its id
+@short: sets focus to an item by its id and moves the scroll to it
 
 @signature: {'setFocus(id: string | number): void;'}
 

@@ -8,6 +8,60 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.4 
+---------------
+
+Released on June 15, 2023
+
+### Fixes
+
+- Form. Fix the issue with the `undefined` CSS class that appeared on creation of a form
+
+Version 8.1.3 
+--------------
+
+Released on June 12, 2023
+
+### Fixes
+
+- Combobox. Fix the issue with displaying HTML content in the input
+- Grid/TreeGrid. Fix incorrect processing of dates containing time in the AM format by the datePicker editor 
+- Grid/TreeGrid. Fix the problem with the footer colspan not working in the frozen part of a grid
+- Grid/TreeGrid. Fix the issue with displaying HTML content in the comboFilter
+- TreeGrid. Fix incorrect behavior when removing a child item of a selected row resets the selection
+
+
+Version 8.1.2
+--------------
+
+Released on May 29, 2023
+
+### Fixes
+
+- DataView. Fix incorrect rendering of multiple selected items while dragging them to the target
+- Form. Fix incorrect key navigation in the TimePicker control
+- Grid/TreeGrid. Fix the horizontal scrolling during the column drag
+- Grid/TreeGrid. Fix the vertical scrolling during the row drag
+- Grid/TreeGrid. Fix the impossibility to select an empty option in the `multiselection:false` mode of the comboFilter
+- Layout. Fix incorrect arrangement of cells on a page after resizing/collapsing
+- Window. Fix the issue when a modal window with an attached component refuses to close with the ESC button
+
+Version 8.1.1 
+---------------
+
+Released on May 18, 2023
+
+### Fixes
+
+- DataProxy. Fix the issue with items' ids during lazy loading
+- Dataview. Fix incorrect work of the [`setFocus()`](dataview/api/dataview_setfocus_method.md) method
+- Form. Fix incorrect application of a validation class added to a custom CSS class
+- Grid/TreeGrid. Fix the issue with ignoring hidden columns being a part of a colspan
+- Grid/TreeGrid. Fix displaying of data in the header/footer during the initialization of a large number of columns
+- Grid/TreeGrid. Fix incorrect drag-n-drop behavior in the disabled multi select mode
+- Grid/TreeGrid. Fix the issue with the multi select filter when it adds an empty value from a data set into selected options by default
+- TreeGrid. Fix incorrect work of the [`adjustColumnWidth()`](treegrid/api/treegrid_adjustcolumnwidth_method.md) method
+
 Version 8.1
 ------------
 
@@ -447,7 +501,7 @@ Released on June 07, 2022
 - Form. Fix the issue with activating/displaying the initially hidden control (`hidden: true`) of the "container" form using the `show()` method
 - Form. Fix the issue with including a toolbar into the "container" form (errors in console)
 - Grid. Fix the issue with selection when adding spans into the grid component
-- Grid. Fix the issue with reselection a cell after calling the `grid.selection.removeCell()` metod
+- Grid. Fix the issue with reselection of a cell after calling the `grid.selection.removeCell()` method
 - Layout. Fix the issue with the initially collapsed cell which includes the `min-width` and `min-height` settings. Instead of being collapsed, the cell takes the specified min sizes
 - Layout. Fix the issue with dynamic resizing a cell when resizing a viewport (in some cases)
 - Layout. Fix the issue with resizing cells which contain the iframe element
