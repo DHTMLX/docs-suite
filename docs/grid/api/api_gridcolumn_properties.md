@@ -19,42 +19,33 @@ columns:[
 	    header: [
             {
                 text?: string | number,
-	            align?: "left" | "center" | "right",
-	            colspan?: number,
-	            rowspan?: number,
-	            css?: any,
-	            content?: "inputFilter" | "selectFilter" | "comboFilter" |
-                          "avg" | "sum" | "max" | "min" | "count" | string,
-	            filterConfig?: {
-	                filter?: (item: any, input: string) => boolean,
-	                multiselection?: boolean,
-	                readonly?: boolean,
-	                placeholder?: string,
-	                virtual?: boolean,
+                align?: "left" | "center" | "right",
+                colspan?: number,
+                rowspan?: number,
+                css?: string,
+                content?: "inputFilter" | "selectFilter" | "comboFilter" |
+                          "avg" | "sum" | "max" | "min" | "count",
+                filterConfig?: {
+                    filter?: (item: any, input: string) => boolean,
+                    multiselection?: boolean,
+                    readonly?: boolean,
+                    placeholder?: string,
+                    virtual?: boolean,
                 },
-	            customFilter?: (item: any, input: string) => boolean,
-	            headerSort?: boolean,
-	            sortAs?: (cellValue: any) => string | number,
+                customFilter?: (item: any, input: string) => boolean,
+                headerSort?: boolean,
+                sortAs?: (cellValue: any) => string | number,
             }
         ],
-	    footer?: [
+        footer?: [
             {
                 text?: string | number,
-	 	    align?: "left" | "center" | "right",
-	            colspan?: number,
-	            rowspan?: number,
-	            css?: any,
-	            content?: "inputFilter" | "selectFilter" | "comboFilter" |
-                          "avg" | "sum" | "max" | "min" | "count" | string,
-                filterConfig?: {
-	                filter?: (item: any, input: string) => boolean,
-	                multiselection?: boolean,
-	                readonly?: boolean,
-	                placeholder?: string,
-	                virtual?: boolean,
-                },
-	            customFilter?: (item: any, input: string) => boolean,
-            }
+            	align?: "left" | "center" | "right",
+                colspan?: number,
+                rowspan?: number,
+                css?: string,
+                content?: "avg" | "sum" | "max" | "min" | "count",
+            },
         ],
         type?: "string" | "number" | "boolean" | "date" | "percent",
 	    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea",
@@ -120,7 +111,6 @@ columns:[
             <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a header, which can be:
                 <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
                 <ol>- one of the methods that process values in a column and show result in the header: "avg" | "sum" | "max" | "min" | "count"</ol>
-                <ol>- some other string</ol>
             </li>
             <li><a href="../../configuration#headerfooter-filters"><b>filterConfig</b></a> - (optional) a configuration object for "comboFilter". It can contain a set of properties:
                 <ol>- <b>filter</b> - (optional) sets a custom function for filtering Combo Box options</ol>
@@ -145,23 +135,11 @@ columns:[
 			<td>(optional) an array of objects with footer rows configuration. Each footer object may include:
             <ul>
             <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (optional) the text of a footer </li>
+            <li><b>align</b> - (optional) aligns data in the footer: "left"|"center"|"right"</li>
+            <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
+            <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>
             <li><b>css</b> - (optional) styling to be applied to a footer</li>
-            <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be:
-                <ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
-                <ol>- one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"</ol>
-                <ol>- some other string</ol>
-            </li>
-            <li><a href="../../configuration#headerfooter-filters"><b>filterConfig</b></a> - (optional) a configuration object for "comboFilter". It can contain a set of properties:
-                <ol>- <b>filter</b> - (optional) a custom function for filtering Combo Box options</ol>
-                <ol>- <b>multiselection</b> - (optional) enables selection of multiple options</ol>
-                <ol>- <b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
-                <ol>- <b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</ol>
-                <ol>- <b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options</ol>
-            </li>
-            <li><a href="../../configuration#customizing-headerfooter-filters"><b>customFilter</b></a> - (optional) a custom function for extended filtering. It takes two parameters:
-                <ol> - <b>item</b> - (required) a data item the value of which should be compared</ol>
-                <ol> - <b>input</b> - (required) the value of the option selected in the filter</ol>
-                <br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
+            <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"
             </li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid with footer</a>
