@@ -82,7 +82,7 @@ The [default ("light")](themes.md#suite-themes) theme is configured on the base 
 	--dhx-z-index-up: 1;
 	--dhx-z-index-force-up: 10;
 	--dhx-z-index-overlay: 999;
-	--dhx-z-index-overlay-total: 2147483647;
+	--dhx-z-index-overlay-total: 10000000;
 	/* end z-index */
 
 	/* only service color schema */
