@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.5 
+---------------
+
+Released on June 19, 2023
+
+### Fixes
+
+- Form. Fix the issue with the beforeChange event not triggering for the TimePicker control during the UI interaction in the `controls:false` mode
+- Grid. Fix the issue with ignoring colspans defined in the configuration object while loading data via the parse() or load() methods
+- Grid/TreeGrid. Fix the problem with the "combobox" editor saving an option's text instead of its id in the data set after editing
+- Grid/TreeGrid. Fix the TypeScript error which occurred due to the absence of the `align` property of the footer in the types
+- Grid/TreeGrid. Fix the TypeScript error that occurred due to the wrong declaration of the iCol option type  
+- Window. Fix the problem with window focusing in FireFox
+    - note that the `--dhx-z-index-overlay-total` CSS variable for the [default theme](themes/default_theme.md) has been changed to 10000000
+
 Version 8.1.4 
 ---------------
 
