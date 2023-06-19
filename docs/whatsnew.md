@@ -15,6 +15,7 @@ Released on June 19, 2023
 
 ### Fixes
 
+- Combobox. Fix the functionality of the [addOption()](combobox/api/combobox_addoption_method.md) method. Now it takes both a string and an object as a parameter
 - Form. Fix the issue with the beforeChange event not triggering for the TimePicker control during the UI interaction in the `controls:false` mode
 - Grid. Fix the issue with ignoring colspans defined in the configuration object while loading data via the parse() or load() methods
 - Grid/TreeGrid. Fix the problem with the "combobox" editor saving an option's text instead of its id in the data set after editing
