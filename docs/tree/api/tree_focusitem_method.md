@@ -6,7 +6,7 @@ description: You can explore the focusItem method of Tree in the documentation o
 
 # focusItem()
 
-@short: sets focus to a specified tree item
+@short: sets focus to an item by its id and moves the scroll to it
 
 @signature: {'focusItem(id: string | number): void;'}
 

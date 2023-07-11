@@ -8,6 +8,23 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.6 
+---------------
+
+Released on July 11, 2023
+
+### Fixes
+
+- ContextMenu. Fix displaying of ContextMenu behind Grid due to incorrect z-index
+- Grid/TreeGrid. Fix the issue with the comboFilter not rendering options in case of the external data loading/parsing
+- Grid/TreeGrid. Fix the incorrect data rendering in the autoHeight mode used together with the autoWidth mode when Grid/TreeGrid is placed in a Layout cell
+- Grid/TreeGrid. Fix the console error appearing in case of numeric values in the data set combined with the enabled "multiselection" mode of the comboFilter
+- Grid/TreeGrid. Fix incorrect positioning of the **select** editor when the Grid height is limited
+- Grid/TreeGrid. Fix the issue when spans ignored the specified column format
+- Layout. Fix the incorrect calculation of cells' sizes in the **wide** layout type
+- Tree. Fix the issue when focusing an item didn't initiate scrolling a view to it 
+- TreeGridCollection. Fix the issue with the [getId()](tree_collection/api/treecollection_getid_method.md)/[getIndex()](tree_collection/api/treecollection_getindex_method.md) methods not working correctly in relation to each other
+
 Version 8.1.5 
 ---------------
 
