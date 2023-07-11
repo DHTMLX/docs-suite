@@ -811,6 +811,82 @@ module.exports = {
                 },
                 {
                   type: "category",
+                  label: "Avatar API",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Avatar API",
+                    keywords: ['avatar API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Form Avatar methods",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Avatar methods",
+                      keywords: ['form avatar methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "form/api/avatar/avatar_send_method",
+                      /*"form/api/simplevault/simplevault_clear_method",
+                      "form/api/simplevault/simplevault_clearvalidate_method",
+                      "form/api/simplevault/simplevault_disable_method",
+                      "form/api/simplevault/simplevault_enable_method",
+                      "form/api/simplevault/simplevault_getproperties_method",
+                      "form/api/simplevault/simplevault_getvalue_method",
+                      "form/api/simplevault/simplevault_hide_method",
+                      "form/api/simplevault/simplevault_isdisabled_method",
+                      "form/api/simplevault/simplevault_isvisible_method",
+                      "form/api/simplevault/simplevault_selectfile_method",
+                      "form/api/simplevault/simplevault_setproperties_method",
+                      "form/api/simplevault/simplevault_setvalue_method",
+                      "form/api/simplevault/simplevault_show_method",
+                      "form/api/simplevault/simplevault_validate_method", */
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Form Avatar events",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Avatar events",
+                      keywords: ['form avatar events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [ /*
+                      "form/api/simplevault/simplevault_afteradd_event",
+                      "form/api/simplevault/simplevault_afterchangeproperties_event",
+                      "form/api/simplevault/simplevault_afterhide_event",
+                      "form/api/simplevault/simplevault_afterremove_event",
+                      "form/api/simplevault/simplevault_aftershow_event",
+                      "form/api/simplevault/simplevault_aftervalidate_event",
+                      "form/api/simplevault/simplevault_beforeadd_event",
+                      "form/api/simplevault/simplevault_beforechangeproperties_event",
+                      "form/api/simplevault/simplevault_beforehide_event",
+                      "form/api/simplevault/simplevault_beforeremove_event",
+                      "form/api/simplevault/simplevault_beforeshow_event",
+                      "form/api/simplevault/simplevault_beforeuploadfile_event",
+                      "form/api/simplevault/simplevault_beforevalidate_event",
+                      "form/api/simplevault/simplevault_change_event",
+                      "form/api/simplevault/simplevault_uploadbegin_event",
+                      "form/api/simplevault/simplevault_uploadcomplete_event",
+                      "form/api/simplevault/simplevault_uploadfail_event",
+                      "form/api/simplevault/simplevault_uploadfile_event",
+                      "form/api/simplevault/simplevault_uploadprogress_event", */
+                    ],
+                  },
+                  {
+                    type: "doc",
+                    id: "form/api/avatar/api_avatar_properties",
+                  },
+                  ],
+                },
+                {
+                  type: "category",
                   label: "Button API",
                   collapsed: true,
                   link: {
@@ -2110,6 +2186,7 @@ module.exports = {
                 image: '/img/docusaurus.png'
               },
               items: [
+                "form/avatar",
                 "form/button",
                 "form/calendar",
                 "form/checkbox",
