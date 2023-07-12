@@ -8,10 +8,11 @@ description: You can explore the validate method of the Simple Vault control of 
 
 @short: validates a SimpleVault control
 
-@signature: {'validate(silent?: boolean): boolean;'}
+@signature: {'validate(silent?: boolean, validateValue?: object[]): boolean;'}
 
 @params:
 - `silent: boolean` - optional, if *true* - the method will return the result of validation without calling validation events and without modifying the control visually
+- `validateValue: object[]` - optional, the value to be validated. If not specified, the method validates the current value of the control.
 
 @returns:
 `true`, if a control is valid; otherwise, `false`.
@@ -22,7 +23,7 @@ form.getItem("simplevault").validate(true);
 
 @descr:
 
-When calling without the  **silent** parameter or setting it to *false*, the method invokes the [BeforeValidate](form/api/simplevault/simplevault_beforevalidate_event.md) and [AfterValidate](form/api/simplevault/simplevault_aftervalidate_event.md) events and visually modifies the control.
+When calling without the **silent** parameter or setting it to *false*, the method invokes the [BeforeValidate](form/api/simplevault/simplevault_beforevalidate_event.md) and [AfterValidate](form/api/simplevault/simplevault_aftervalidate_event.md) events and modifies the control visually.
 
 ~~~js
 form.getItem("simplevault").validate(); // -> true/false

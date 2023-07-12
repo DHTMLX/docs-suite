@@ -16,9 +16,8 @@ description: You can explore the setValue method of the Simple Vault control of 
 @example:
 form.getItem("simpleVault").setValue([
     {
-        "id": "image",
-        "name": "image.png",
-        "link": "/backend/upload/files/image.png",
+        "id": "file_id",
+        "name": "file_name.png",
         "status": "uploaded",
     }
 ]);
@@ -27,11 +26,11 @@ form.getItem("simpleVault").setValue([
 
 The **value** array can contain a set of files to load. Each file object can contain the following properties:
 
-- **id** - (*string*) mandatory, the id of the file
-- **status** - (*string*) the status of the file ("queue", "inprogress", "uploaded", or "failed")
+- **id** - (*string|number*) optional, the id of the file
+- **file** - (*object*) optional, the [File](https://developer.mozilla.org/en-US/docs/Web/API/File) object, in case of loading to the server the property is *obligatory*
+- **status** - (*string*) optional, the status of the file ("queue", "inprogress", "uploaded", or "failed")
 - **progress** - (*number*) the progress of the file upload
-- **link** - (*string*) optional, the path to the uploaded file on a server. In order to download files from SimpleVault to the computer, file objects must have the link attribute specified with the path to their location on the server.
-- **request** - (*object*) optional, an XMLHttpRequest object sent to server when an upload begins
+- **request** - (*object*) optional, an XMLHttpRequest object sent to the server when an upload begins
+- **name** - (*string*) optional, the name of the file including the extension (for adding files from the server)
 - **path** - (*string*) optional, the path to the file on the computer starting from the name of the folder (in case a folder with files is added)
-- **name** - (*string*) optional, the name of the file including the extension (for adding files from a server)
-- **size** - (*number*) optional, the size of the file in bytes (for adding files from a server) 
+- **[key:string]** - optional, any *key:value* pair received as a server response (if the [updateFromResponse](form/api/simplevault/api_simplevault_properties.md) property is enabled)

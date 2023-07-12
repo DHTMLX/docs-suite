@@ -29,23 +29,28 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	fieldName: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
-	params: object,
-	preMessage: string,
-	required: boolean,
-	singleRequest: boolean,
-	successMessage: string,
-	target: string,
-	width: string|number|"content"
+	css?: string;
+	width?: string | number | "content";
+	height?: string | number | "content";
+	padding?: string | number;
+	label?: string;
+	labelWidth?: string | number;
+	labelPosition?: "left" | "top";
+	hiddenLabel?: boolean;
+	helpMessage?: string;
+	required?: boolean;
+	preMessage?: string;
+	successMessage?: string;
+	errorMessage?: string;
+	params?: { [key: string]: any };
+	headerParams?: { [key: string]: any };
+	target?: string;
+	fieldName?: string;
+	singleRequest?: boolean;
+	updateFromResponse?: boolean;
+	autosend?: boolean;
+	accept?: string;
+	validation?: (value: ISimpleVaultValue) => boolean;
 }
 ~~~
 

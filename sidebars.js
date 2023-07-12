@@ -830,21 +830,9 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
+                      "form/api/avatar/avatar_selectfile_method",
                       "form/api/avatar/avatar_send_method",
-                      /*"form/api/simplevault/simplevault_clear_method",
-                      "form/api/simplevault/simplevault_clearvalidate_method",
-                      "form/api/simplevault/simplevault_disable_method",
-                      "form/api/simplevault/simplevault_enable_method",
-                      "form/api/simplevault/simplevault_getproperties_method",
-                      "form/api/simplevault/simplevault_getvalue_method",
-                      "form/api/simplevault/simplevault_hide_method",
-                      "form/api/simplevault/simplevault_isdisabled_method",
-                      "form/api/simplevault/simplevault_isvisible_method",
-                      "form/api/simplevault/simplevault_selectfile_method",
-                      "form/api/simplevault/simplevault_setproperties_method",
-                      "form/api/simplevault/simplevault_setvalue_method",
-                      "form/api/simplevault/simplevault_show_method",
-                      "form/api/simplevault/simplevault_validate_method", */
+                      "form/api/avatar/avatar_setvalue_method",
                     ],
                   },
                   {
@@ -857,26 +845,9 @@ module.exports = {
                       keywords: ['form avatar events'],
                       image: '/img/docusaurus.png'
                     },
-                    items: [ /*
-                      "form/api/simplevault/simplevault_afteradd_event",
-                      "form/api/simplevault/simplevault_afterchangeproperties_event",
-                      "form/api/simplevault/simplevault_afterhide_event",
-                      "form/api/simplevault/simplevault_afterremove_event",
-                      "form/api/simplevault/simplevault_aftershow_event",
-                      "form/api/simplevault/simplevault_aftervalidate_event",
-                      "form/api/simplevault/simplevault_beforeadd_event",
-                      "form/api/simplevault/simplevault_beforechangeproperties_event",
-                      "form/api/simplevault/simplevault_beforehide_event",
-                      "form/api/simplevault/simplevault_beforeremove_event",
-                      "form/api/simplevault/simplevault_beforeshow_event",
-                      "form/api/simplevault/simplevault_beforeuploadfile_event",
-                      "form/api/simplevault/simplevault_beforevalidate_event",
-                      "form/api/simplevault/simplevault_change_event",
-                      "form/api/simplevault/simplevault_uploadbegin_event",
-                      "form/api/simplevault/simplevault_uploadcomplete_event",
-                      "form/api/simplevault/simplevault_uploadfail_event",
-                      "form/api/simplevault/simplevault_uploadfile_event",
-                      "form/api/simplevault/simplevault_uploadprogress_event", */
+                    items: [ 
+                     // "form/api/simplevault/simplevault_afteradd_event",
+                      
                     ],
                   },
                   {
@@ -1727,10 +1698,12 @@ module.exports = {
                       id: "form/api/overview/simplevault/methods_overview"
                     },*/
                     items: [
+                      "form/api/simplevault/simplevault_blur_method",
                       "form/api/simplevault/simplevault_clear_method",
                       "form/api/simplevault/simplevault_clearvalidate_method",
                       "form/api/simplevault/simplevault_disable_method",
                       "form/api/simplevault/simplevault_enable_method",
+                      "form/api/simplevault/simplevault_focus_method",
                       "form/api/simplevault/simplevault_getproperties_method",
                       "form/api/simplevault/simplevault_getvalue_method",
                       "form/api/simplevault/simplevault_hide_method",
@@ -1766,6 +1739,7 @@ module.exports = {
                       "form/api/simplevault/simplevault_aftershow_event",
                       "form/api/simplevault/simplevault_aftervalidate_event",
                       "form/api/simplevault/simplevault_beforeadd_event",
+                      "form/api/simplevault/simplevault_beforechange_event",
                       "form/api/simplevault/simplevault_beforechangeproperties_event",
                       "form/api/simplevault/simplevault_beforehide_event",
                       "form/api/simplevault/simplevault_beforeremove_event",

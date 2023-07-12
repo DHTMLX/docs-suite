@@ -43,6 +43,7 @@ Guides you through common information you may need while working with Form.
 
 Discusses the creation of Form controls and the possibilities of manipulating them.
 
+- [](form/avatar.md)
 - [](form/button.md)
 - [](form/calendar.md)
 - [](form/checkbox.md)

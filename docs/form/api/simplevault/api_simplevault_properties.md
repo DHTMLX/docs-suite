@@ -13,34 +13,42 @@ description: You can explore the Properties of the Simple Vault control  of Form
 	type: "simplevault",
     name?: string,
     id?: string,
-    target: string,
+    target?: string,
     value?: [
         {
-            id: string | number,
-            status: "queue" | "inprogress" | "uploaded" | "failed",
-            progress: number,
-            link?: string,
-            name?: string,
-            path?: string,
+            id?: string | number,
+            file?: File,
+            status?: "queue" | "inprogress" | "uploaded" | "failed",
+            progress?: number,
             request?: XMLHttpRequest,
-            size?: number,
+            path?: string,
+            name?: string,
+            [key: string]?: any
         },
         // more file objects
     ],
 
     css?: string,
-    disabled?: boolean,
     height?: string | number | "content", // "content" by default
-    hidden?: boolean,
-    padding?: string | number,
-    required?: boolean,
     width?: string | number | "content", // "content" by default
+    padding?: string | number,
+    hidden?: boolean,
+    disabled?: boolean,
         
     fieldName?: string,
     params?: {
         [key: string]: any,
     },
+    headerParams?: {
+        [key: string]: any,
+    },
     singleRequest?: boolean, // false by default
+    updateFromResponse?: boolean, // true by default
+    autosend?: boolean, // false by default
+    accept?: string, // all file types by default
+
+    validation?: (value: object[]) => boolean;
+    required?: boolean,
 
     hiddenLabel?: boolean, // false by default
     label?: string,
@@ -72,20 +80,20 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td><b>target</b></td>
-            <td>(required) sets an URL to the server-side script that will process file upload</td>
+            <td>(optional) sets an URL to the server-side script that will process file upload</td>
         </tr>
         <tr>
-            <td><b>value</b></td>
+            <td id="value"><b>value</b></td>
             <td>(optional) sets the default list of loaded files. Each file object can contain the following properties:
                 <ul>
-                    <li><b>id</b> - (required) the id of the file</li>
-                    <li><b>status</b> - (required) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
-                    <li><b>progress</b> - (required) the progress of the file upload</li>
-                    <li><b>link</b> - (optional) the path to the uploaded file on a server. In order to download files from SimpleVault to the computer, file objects must have the link attribute specified with the path to their location on the server.</li>
-                    <li><b>name</b> - (optional) the name of the file including the extension (for adding files from a server)</li>
+                    <li><b>id</b> - (optional) the id of the file</li>
+                    <li><b>file</b> - (optional) the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File">File</a> object, in case of loading to the server the property is obligatory</li>
+                    <li><b>status</b> - (optional) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
+                    <li><b>progress</b> - (optional) the progress of the file upload</li>
+                    <li><b>request</b> - (optional) an XMLHttpRequest object sent to the server when an upload begins</li>
+                    <li><b>name</b> - (optional) the name of the file including the extension (for adding files from the server)</li>
                     <li><b>path</b> - (optional) the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li>
-                    <li><b>request</b> - (optional) an XMLHttpRequest object sent to server when an upload begins</li>
-                    <li><b>size</b> - (optional) the size of the file in bytes (for adding files from a server)</li>
+                    <li><b>[key:string]</b> - (optional) any <i>key:value</i> pair received as a server response (if the <i>updateFromResponse</i> property is enabled)</li>
                 </ul>
             </td>
         </tr>
@@ -94,40 +102,60 @@ description: You can explore the Properties of the Simple Vault control  of Form
             <td>(optional) adds style classes to a control</td>
         </tr>
         <tr>
-            <td><b>disabled</b></td>
-            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
-        </tr>
-        <tr>
             <td><b>height</b></td>
             <td>(optional) the height of a control</td>
-        </tr>
-        <tr>
-            <td><b>hidden</b></td>
-            <td>(optional) defines whether a control is hidden</td>
-        </tr>
-        <tr>
-            <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the SimpleVault control</td>
-        </tr>
-        <tr>
-            <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
         </tr>
         <tr>
             <td><b>width</b></td>
             <td>(optional) the width of a control</td>
         </tr>
         <tr>
+            <td><b>padding</b></td>
+            <td>(optional) sets padding between a cell and a border of the SimpleVault control</td>
+        </tr>
+        <tr>
+            <td><b>hidden</b></td>
+            <td>(optional) defines whether a control is hidden</td>
+        </tr>
+        <tr>
+            <td><b>disabled</b></td>
+            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+        </tr>
+        <tr>
             <td><b>fieldName</b></td>
-            <td>(optional) sets the name of the file field in the form data that is sent to the server. By default takes its value from the value of the <b>name</b> property, or, if not specified, from the <b>id</b> attribute. </td>
+            <td>(optional) sets the name of the file field in the form data that is sent to the server, <i>file</i> by default</td>
         </tr>
         <tr>
             <td><b>params</b></td>
             <td>(optional) adds extra parameters for sending an XMLHttpRequest</td>
         </tr>
         <tr>
+            <td><b>headerParams</b></td>
+            <td>(optional) provides additional parameters for Request Headers</td>
+        </tr>
+        <tr>
             <td><b>singleRequest</b></td>
             <td>(optional) defines whether files are sent in one request, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>updateFromResponse</b></td>
+            <td>(optional) updates file attributes with the data from the server response</td>
+        </tr>
+        <tr>
+            <td><b>autosend</b></td>
+            <td>(optional) enables/disables automatic sending of an added file (files won't be sent if they fail validation)</td>
+        </tr>
+        <tr>
+            <td><b>accept</b></td>
+            <td>(optional) allows specifying the type/extension that will be displayed in the dialog window during file selection<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
+        </tr>
+        <tr>
+            <td><b>validation</b></td>
+            <td>(optional) the validation function, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
+        </tr> 
+        <tr>
+            <td><b>required</b></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

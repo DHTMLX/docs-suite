@@ -19,11 +19,11 @@ const form = new dhx.Form("form_container", {
         {
             type: "simpleVault",
             name:"simplevault",
-            label: "i am simpleVault",
-            labelWidth: "120px",
-            labelPosition: "left",
-            disabled: false,
-            required: false
+            helpMessage: "Help information",
+	    	required: true,
+	    	label: "Simple Vault",
+	    	labelWidth: 140,
+	    	target: "https://docs.dhtmlx.com/suite/backend/upload",
         }
     ]
 });
@@ -36,22 +36,28 @@ The returned object of the **SimpleVault** control looks like:
 
 ~~~js
 {
-	errorMessage: "",
-	fieldName: "simplevault",
-	height: "content",
-	helpMessage: "Help information",
-	hiddenLabel: false,
-	label: "Simple Vault",
-	labelPosition: "left",
-	labelWidth: 140,
-	padding: 0,
-	params: undefined,
-	preMessage: "",
-	required: true,
-	singleRequest: false,
-	successMessage: "",
-	target: "https://docs.dhtmlx.com/suite/backend/upload",
-	width: "content",
+	"width": "content",
+    "height": "content",
+    "css": "",
+    "required": true,
+    "label": "Simple Vault",
+    "labelWidth": 140,
+    "labelPosition": "top",
+    "hiddenLabel": false,
+    "helpMessage": "Help information",
+    "preMessage": "",
+    "successMessage": "",
+    "errorMessage": "",
+    "target": "https://docs.dhtmlx.com/suite/backend/upload",
+    "fieldName": "file",
+    "singleRequest": false,
+    "updateFromResponse": true,
+    "autosend": false,
+    "accept": "",
+    "params": undefined,
+    "headerParams": undefined,
+    "padding": undefined,
+    "validation": undefined
 }
 ~~~
 
