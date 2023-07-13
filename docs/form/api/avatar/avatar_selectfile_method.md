@@ -15,4 +15,4 @@ form.getItem("avatar").selectFile();
 // -> true/false
 
 @descr:
-The type and extension of the selected image depends on the **accept** property in the [control's configuration](form/api/avatar/api_avatar_properties.md).
+The type and extension of the selected image depends on the [accept](form/api/avatar/api_avatar_properties.md/#accept) property in the [control's configuration](form/api/avatar/api_avatar_properties.md).

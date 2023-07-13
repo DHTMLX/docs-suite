@@ -11,7 +11,7 @@ description: You can explore the isDisabled method of the Simple Vault control o
 @signature: {'isDisabled(): boolean;'}
 
 @returns:
-`true`, if a control is disabled; otherwise, `false`.
+`true`, if the control is disabled; otherwise, `false`.
 
 @example:
 form.getItem("simplevault").isDisabled(); 

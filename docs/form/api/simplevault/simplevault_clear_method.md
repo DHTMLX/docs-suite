@@ -6,7 +6,7 @@ description: You can explore the clear method of the Simple Vault control of For
 
 # clear()
 
-@short: clears a value of a SimpleVault control
+@short: clears the value of a SimpleVault control
 
 @signature: {'clear(): void;'}
 

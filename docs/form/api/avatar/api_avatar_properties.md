@@ -72,7 +72,7 @@ description: You can explore the Properties of the Avatar control of Form in the
             <td><b>id</b></td>
             <td>(optional) the id of a control, auto-generated if not set</td>
         </tr>
-        <tr>
+        <tr id="target">
             <td><b>target</b></td>
             <td>(optional) sets an URL to the server-side script that will process file upload, the property is required when an image is sent to the server via the control</td>
         </tr>
@@ -187,7 +187,7 @@ description: You can explore the Properties of the Avatar control of Form in the
             <td>(optional) the validation function, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
         </tr> 
         <tr>
-            <td><b>accept</b></td>
+            <td id="accept"><b>accept</b></td>
             <td>(optional) allows specifying the type/extension of the selected file, <i>image/*</i> by default. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
         </tr>      
         <tr>

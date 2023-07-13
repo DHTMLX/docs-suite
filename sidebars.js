@@ -830,9 +830,20 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
+                      "form/api/avatar/avatar_clear_method",
+                      "form/api/avatar/avatar_clearvalidate_method",
+                      "form/api/avatar/avatar_destructor_method",
+                      "form/api/avatar/avatar_disable_method",
+                      "form/api/avatar/avatar_enable_method",
+                      "form/api/avatar/avatar_getvalue_method",
+                      "form/api/avatar/avatar_hide_method",
+                      "form/api/avatar/avatar_isdisabled_method",
+                      "form/api/avatar/avatar_isvisible_method",
                       "form/api/avatar/avatar_selectfile_method",
                       "form/api/avatar/avatar_send_method",
                       "form/api/avatar/avatar_setvalue_method",
+                      "form/api/avatar/avatar_show_method",
+                      "form/api/avatar/avatar_validate_method"
                     ],
                   },
                   {
@@ -846,7 +857,8 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [ 
-                     // "form/api/simplevault/simplevault_afteradd_event",
+                     "form/api/avatar/avatar_aftervalidate_event",
+                     "form/api/avatar/avatar_beforevalidate_event",
                       
                     ],
                   },

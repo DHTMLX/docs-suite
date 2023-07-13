@@ -514,10 +514,12 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                                         | Description                                                         |
 | :----------------------------------------------------------- | :------------------------------------------------------------------ |
+| [](form/api/simplevault/simplevault_blur_method.md)          | @getshort(form/api/simplevault/simplevault_blur_method.md)          |
 | [](form/api/simplevault/simplevault_clear_method.md)         | @getshort(form/api/simplevault/simplevault_clear_method.md)         |
 | [](form/api/simplevault/simplevault_clearvalidate_method.md) | @getshort(form/api/simplevault/simplevault_clearvalidate_method.md) |
 | [](form/api/simplevault/simplevault_disable_method.md)       | @getshort(form/api/simplevault/simplevault_disable_method.md)       |
 | [](form/api/simplevault/simplevault_enable_method.md)        | @getshort(form/api/simplevault/simplevault_enable_method.md)        |
+| [](form/api/simplevault/simplevault_focus_method.md)         | @getshort(form/api/simplevault/simplevault_focus_method.md)         |
 | [](form/api/simplevault/simplevault_getproperties_method.md) | @getshort(form/api/simplevault/simplevault_getproperties_method.md) |
 | [](form/api/simplevault/simplevault_getvalue_method.md)      | @getshort(form/api/simplevault/simplevault_getvalue_method.md)      |
 | [](form/api/simplevault/simplevault_hide_method.md)          | @getshort(form/api/simplevault/simplevault_hide_method.md)          |

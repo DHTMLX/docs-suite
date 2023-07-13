@@ -32,4 +32,4 @@ const value = form.getItem("simplevault").getValue();
 
 @descr:
 
-The returned array contains objects that may have properties listed in the [value](form/api/simplevault/api_simplevault_properties.md/#value) configuration property.
+The returned array contains objects that may have the properties listed in the [value](form/api/simplevault/api_simplevault_properties.md/#value) configuration property.
