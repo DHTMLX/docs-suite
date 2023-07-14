@@ -830,17 +830,21 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
+                      "form/api/avatar/avatar_blur_method",
                       "form/api/avatar/avatar_clear_method",
                       "form/api/avatar/avatar_clearvalidate_method",
                       "form/api/avatar/avatar_destructor_method",
                       "form/api/avatar/avatar_disable_method",
                       "form/api/avatar/avatar_enable_method",
+                      "form/api/avatar/avatar_focus_method",
+                      "form/api/avatar/avatar_getproperties_method",
                       "form/api/avatar/avatar_getvalue_method",
                       "form/api/avatar/avatar_hide_method",
                       "form/api/avatar/avatar_isdisabled_method",
                       "form/api/avatar/avatar_isvisible_method",
                       "form/api/avatar/avatar_selectfile_method",
                       "form/api/avatar/avatar_send_method",
+                      "form/api/avatar/avatar_setproperties_method",
                       "form/api/avatar/avatar_setvalue_method",
                       "form/api/avatar/avatar_show_method",
                       "form/api/avatar/avatar_validate_method"
@@ -856,10 +860,23 @@ module.exports = {
                       keywords: ['form avatar events'],
                       image: '/img/docusaurus.png'
                     },
-                    items: [ 
+                    items: [
+                     "form/api/avatar/avatar_afterchangeproperties_event", 
+                     "form/api/avatar/avatar_afterhide_event",
+                     "form/api/avatar/avatar_aftershow_event",
                      "form/api/avatar/avatar_aftervalidate_event",
-                     "form/api/avatar/avatar_beforevalidate_event",
-                      
+                     "form/api/avatar/avatar_beforechange_event", 
+                     "form/api/avatar/avatar_beforechangeproperties_event",
+                     "form/api/avatar/avatar_beforehide_event", 
+                     "form/api/avatar/avatar_beforeshow_event",
+                     "form/api/avatar/avatar_beforeuploadfile_event",
+                     "form/api/avatar/avatar_beforevalidate_event",  
+                     "form/api/avatar/avatar_change_event", 
+                     "form/api/avatar/avatar_uploadbegin_event",
+                     "form/api/avatar/avatar_uploadcomplete_event",
+                     "form/api/avatar/avatar_uploadfail_event",
+                     "form/api/avatar/avatar_uploadfile_event",
+                     "form/api/avatar/avatar_uploadprogress_event",
                     ],
                   },
                   {
