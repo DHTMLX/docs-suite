@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.7 
+---------------
+
+Released on July 26, 2023
+
+### Fixes
+
+- Combobox. Fix an incorrect behavior whereby the filter selects option in any case
+- Core. Fix an incorrect behavior whereby the form datePicker with the defined time format does not work
+- Grid/TreeGrid. Disallow the html markup in the text property of span, if the **htmlEnable** property is set to *false*
+- Grid/TreeGrid. Fix incorrect displaying of multilines in cells in the exported PDF
+- Grid/TreeGrid. Fix incorrect displaying of spans in the fixed columns
+- Toolbar. Fix the incorrect behavior of the toolbar buttons, if the toolbar is attached to a window
+- Tree. Fix the issue that occurs if the data contains ID set to the 0 number (`id:0`)
+
 Version 8.1.6 
 ---------------
 
