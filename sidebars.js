@@ -1449,6 +1449,61 @@ module.exports = {
                 },
                 {
                   type: "category",
+                  label: "Fieldset API",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Fieldset API",
+                    keywords: ['fieldset API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                    {
+                      type: "category",
+                      label: "Form Fieldset methods",
+                      collapsed: true,
+                      link: {
+                        type: 'generated-index',
+                        title: "Form Fieldset methods",
+                        keywords: ['form fieldset methods'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "form/api/fieldset/fieldset_destructor_method",
+                        "form/api/fieldset/fieldset_disable_method",
+                        "form/api/fieldset/fieldset_enable_method",
+                        "form/api/fieldset/fieldset_foreach_method",
+                        "form/api/fieldset/fieldset_getproperties_method",
+                        "form/api/fieldset/fieldset_hide_method",
+                        "form/api/fieldset/fieldset_isdisabled_method",
+                        "form/api/fieldset/fieldset_isvisible_method",
+                        "form/api/fieldset/fieldset_setproperties_method",
+                        "form/api/fieldset/fieldset_show_method",
+                      ],
+                    },
+                    {
+                      type: "category",
+                      label: "Form Fieldset events",
+                      collapsed: true,
+                      link: {
+                        type: 'generated-index',
+                        title: "Form Fieldset events",
+                        keywords: ['form fieldset events'],
+                        image: '/img/docusaurus.png'
+                      },
+                      items: [
+                        "form/api/fieldset/fieldset_afterchangeproperties_event",
+                        "form/api/fieldset/fieldset_beforechangeproperties_event",
+                      ],
+                    },
+                    {
+                      type: "doc",
+                      id: "form/api/fieldset/api_fieldset_properties",
+                    },
+                  ],
+                },
+                {
+                  type: "category",
                   label: "Input API",
                   collapsed: true,
                   link: {
@@ -2197,6 +2252,7 @@ module.exports = {
                 "form/colorpicker",
                 "form/combo",
                 "form/container",
+                "form/fieldset",
                 "form/input",
                 "form/radiogroup",
                 "form/select",

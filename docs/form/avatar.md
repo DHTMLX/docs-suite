@@ -54,3 +54,7 @@ const value = form.getItem("avatar").getValue();
 ### Methods
 
 Check [the full list of methods of the Avatar control](form/api/api_overview.md#avatar-methods).
+
+### Events
+
+Check [the full list of events of the Avatar control](form/api/api_overview.md#avatar-events).

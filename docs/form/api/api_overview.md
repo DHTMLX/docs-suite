@@ -68,6 +68,58 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/form_title_config.md)    | @getshort(form/api/form_title_config.md)    |
 | [](form/api/form_width_config.md)    | @getshort(form/api/form_width_config.md)    |
 
+
+## Avatar API
+
+### Avatar methods
+
+| Name                                               | Description                                               |
+| :------------------------------------------------- | --------------------------------------------------------- |
+| [](form/api/avatar/avatar_blur_method.md)          | @getshort(form/api/avatar/avatar_blur_method.md)          |
+| [](form/api/avatar/avatar_clear_method.md)         | @getshort(form/api/avatar/avatar_clear_method.md)         |
+| [](form/api/avatar/avatar_clearvalidate_method.md) | @getshort(form/api/avatar/avatar_clearvalidate_method.md) |
+| [](form/api/avatar/avatar_destructor_method.md)    | @getshort(form/api/avatar/avatar_destructor_method.md)    |
+| [](form/api/avatar/avatar_disable_method.md)    	 | @getshort(form/api/avatar/avatar_disable_method.md)    	 |
+| [](form/api/avatar/avatar_enable_method.md)    	 | @getshort(form/api/avatar/avatar_enable_method.md)    	 |
+| [](form/api/avatar/avatar_focus_method.md)    	 | @getshort(form/api/avatar/avatar_focus_method.md)    	 |
+| [](form/api/avatar/avatar_getproperties_method.md) | @getshort(form/api/avatar/avatar_getproperties_method.md) |
+| [](form/api/avatar/avatar_getvalue_method.md)    	 | @getshort(form/api/avatar/avatar_getvalue_method.md)    	 |
+| [](form/api/avatar/avatar_hide_method.md)    	 	 | @getshort(form/api/avatar/avatar_hide_method.md)    	 	 |
+| [](form/api/avatar/avatar_isdisabled_method.md)    | @getshort(form/api/avatar/avatar_isdisabled_method.md)  	 |
+| [](form/api/avatar/avatar_isvisible_method.md)     | @getshort(form/api/avatar/avatar_isvisible_method.md)  	 |
+| [](form/api/avatar/avatar_selectfile_method.md)    | @getshort(form/api/avatar/avatar_selectfile_method.md)    |
+| [](form/api/avatar/avatar_send_method.md)    		 | @getshort(form/api/avatar/avatar_send_method.md)          |
+| [](form/api/avatar/avatar_setproperties_method.md) | @getshort(form/api/avatar/avatar_setproperties_method.md) |
+| [](form/api/avatar/avatar_setvalue_method.md)    	 | @getshort(form/api/avatar/avatar_setvalue_method.md)    	 |
+| [](form/api/avatar/avatar_show_method.md)    	 	 | @getshort(form/api/avatar/avatar_show_method.md)    	     |
+| [](form/api/avatar/avatar_validate_method.md)    	 | @getshort(form/api/avatar/avatar_validate_method.md)    	 |
+
+### Avatar events
+
+| Name                                                       | Description                                                       |
+| :--------------------------------------------------------- | :---------------------------------------------------------------- |
+| [](form/api/avatar/avatar_afterchangeproperties_event.md)  | @getshort(form/api/avatar/avatar_afterchangeproperties_event.md)  |
+| [](form/api/avatar/avatar_afterhide_event.md)  			 | @getshort(form/api/avatar/avatar_afterhide_event.md)  			 |
+| [](form/api/avatar/avatar_aftershow_event.md)  			 | @getshort(form/api/avatar/avatar_aftershow_event.md)  			 |
+| [](form/api/avatar/avatar_aftervalidate_event.md)  		 | @getshort(form/api/avatar/avatar_aftervalidate_event.md)  		 |
+| [](form/api/avatar/avatar_beforechange_event.md)  		 | @getshort(form/api/avatar/avatar_beforechange_event.md)  		 |
+| [](form/api/avatar/avatar_beforechangeproperties_event.md) | @getshort(form/api/avatar/avatar_beforechangeproperties_event.md) |
+| [](form/api/avatar/avatar_beforehide_event.md)  		 	 | @getshort(form/api/avatar/avatar_beforehide_event.md)  			 |
+| [](form/api/avatar/avatar_beforeshow_event.md)  		 	 | @getshort(form/api/avatar/avatar_beforeshow_event.md)  			 |
+| [](form/api/avatar/avatar_beforeuploadfile_event.md)  	 | @getshort(form/api/avatar/avatar_beforeuploadfile_event.md)  	 |
+| [](form/api/avatar/avatar_beforevalidate_event.md)  		 | @getshort(form/api/avatar/avatar_beforevalidate_event.md)  		 |
+| [](form/api/avatar/avatar_change_event.md)  		 		 | @getshort(form/api/avatar/avatar_change_event.md)  		 		 |
+| [](form/api/avatar/avatar_uploadbegin_event.md)  		 	 | @getshort(form/api/avatar/avatar_uploadbegin_event.md)  		 	 |
+| [](form/api/avatar/avatar_uploadcomplete_event.md)  		 | @getshort(form/api/avatar/avatar_uploadcomplete_event.md)  		 |
+| [](form/api/avatar/avatar_uploadfail_event.md)  		  	 | @getshort(form/api/avatar/avatar_uploadfail_event.md)  		 	 |
+| [](form/api/avatar/avatar_uploadfile_event.md)  		 	 | @getshort(form/api/avatar/avatar_uploadfile_event.md)  		 	 |
+| [](form/api/avatar/avatar_uploadprogress_event.md)  		 | @getshort(form/api/avatar/avatar_uploadprogress_event.md)  		 |
+
+
+### Avatar properties
+
+[List of the Avatar properties](form/api/avatar/api_avatar_properties.md)
+
 ## Button API
 
 ### Button methods

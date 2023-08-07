@@ -8,7 +8,7 @@ description: You can explore the hide method of the Container control of Form in
 
 @short: hides a Container control
 
-@signature: hide(init?: boolean): void;
+@signature: hide(): void;
 
 @example: form.getItem("container").hide();
 

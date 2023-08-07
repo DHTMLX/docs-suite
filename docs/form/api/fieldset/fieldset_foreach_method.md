@@ -1,0 +1,26 @@
+---
+sidebar_label: forEach()
+title: JavaScript Form - forEach Fieldset Method 
+description: You can explore the forEach method of the Fieldset control of Form in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+---
+
+# forEach()
+
+@short: allows iterating through all the nested elements
+
+@signature: {'forEach(callback: (item: obj, index: number, array: obj[]) => void, tree?: boolean): void;'}
+
+@params:
+
+- `callback: function` - a function that will iterate over the elements of the fieldset. It takes three parameters:
+	- `item: object` - the object of an element (control) 
+	- `index: number` - the index of an item
+	- `array: object[]` - an array of iterated elements
+- `tree: boolean` - defines, whether all the nested elements should be iterated, *false* by default
+
+@example:
+form.getItem("fieldset").forEach((item, index, arr) => {
+	console.log(index, item, arr);
+}, true);
+
+@descr:

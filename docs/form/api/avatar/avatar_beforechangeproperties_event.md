@@ -19,7 +19,7 @@ Return `false` to cancel the default action of the event; otherwise, `true`.
 @example:
 form.getItem("avatar").events.on("beforeChangeProperties", properties => {
     console.log("beforeChangeProperties", properties);
-    return false;
+    return true;
 });
 
 @descr:

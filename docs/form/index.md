@@ -51,6 +51,7 @@ Discusses the creation of Form controls and the possibilities of manipulating th
 - [](form/colorpicker.md)
 - [](form/combo.md)
 - [](form/container.md)
+- [](form/fieldset.md)
 - [](form/input.md)
 - [](form/radiogroup.md)
 - [](form/select.md)
