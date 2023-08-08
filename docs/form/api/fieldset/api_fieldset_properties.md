@@ -45,7 +45,7 @@ description: You can explore the Properties of the Fieldset control of Form in t
 - `labelAlignment` - (optional) defines the position of the label: "left"|"right"|"center"
 - `rows` - (optional) arranges controls inside the control group vertically
 - `cols` - (optional) arranges controls inside the control group horizontally
-- `aligh` - (optional) sets the alignment of controls inside the control group
+- `align` - (optional) sets the alignment of controls inside the control group
 
 ### Example
 

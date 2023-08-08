@@ -8,7 +8,7 @@ description: You can explore the Fieldset of Form in the documentation of the DH
 
 A control that allows arranging the elements of the form controls into groups.
 
-![Fieldset control]
+![Fieldset control](../assets/form/form_fieldset.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/r5owko34)
 
@@ -54,7 +54,7 @@ const form = new dhx.Form("form_container", {
 
 ### Properties
 
-View [the full list of configuration properties of the Fieldset control].
+View [the full list of configuration properties of the Fieldset control](form/api/fieldset/api_fieldset_properties.md).
 
 ## Working with Fieldset
 
@@ -68,11 +68,11 @@ form.getItem("fieldset").disable();
 
 ### Methods
 
-Check [the full list of methods of the Fieldset control]
+Check [the full list of methods of the Fieldset control](form/api/api_overview.md#fieldset-methods).
 
 ### Events
 
-Check [the full list of events of the Fieldset control]
+Check [the full list of events of the Fieldset control](form/api/api_overview.md#fieldset-events).
 
 
 

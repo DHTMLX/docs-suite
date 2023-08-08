@@ -39,4 +39,4 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties/).
+You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties.md).

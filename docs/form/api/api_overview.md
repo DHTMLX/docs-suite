@@ -419,6 +419,34 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 [List of the Container control properties](form/api/container/api_container_properties.md) 
 
+## Fieldset API
+
+### Fieldset methods
+
+| Name                                                     | Description                                                     |
+| :------------------------------------------------------- | :-------------------------------------------------------------- |
+| [](form/api/fieldset/fieldset_destructor_method.md)      | @getshort(form/api/fieldset/fieldset_destructor_method.md)      |
+| [](form/api/fieldset/fieldset_disable_method.md)         | @getshort(form/api/fieldset/fieldset_disable_method.md)      	 |
+| [](form/api/fieldset/fieldset_enable_method.md)      	   | @getshort(form/api/fieldset/fieldset_enable_method.md)          |
+| [](form/api/fieldset/fieldset_foreach_method.md)         | @getshort(form/api/fieldset/fieldset_foreach_method.md)      	 |
+| [](form/api/fieldset/fieldset_getproperties_method.md)   | @getshort(form/api/fieldset/fieldset_getproperties_method.md)   |
+| [](form/api/fieldset/fieldset_hide_method.md)            | @getshort(form/api/fieldset/fieldset_hide_method.md)      	     |
+| [](form/api/fieldset/fieldset_isdisabled_method.md)      | @getshort(form/api/fieldset/fieldset_isdisabled_method.md)      |
+| [](form/api/fieldset/fieldset_isvisible_method.md)       | @getshort(form/api/fieldset/fieldset_isvisible_method.md)       |
+| [](form/api/fieldset/fieldset_setproperties_method.md)   | @getshort(form/api/fieldset/fieldset_setproperties_method.md)   |
+| [](form/api/fieldset/fieldset_show_method.md)            | @getshort(form/api/fieldset/fieldset_show_method.md)      		 |
+
+### Fieldset events
+
+| Name                                                    		 | Description                                                    		|
+| :------------------------------------------------------------- | :------------------------------------------------------------------- |
+| [](form/api/fieldset/fieldset_afterchangeproperties_event.md)  | @getshort(form/api/fieldset/fieldset_afterchangeproperties_event.md) |
+| [](form/api/fieldset/fieldset_beforechangeproperties_event.md) | @getshort(form/api/fieldset/fieldset_beforechangeproperties_event.md)|
+
+### Fieldset properties
+
+[List of the Fieldset control properties](form/api/fieldset/api_fieldset_properties.md) 
+
 ## Input API
 
 ### Input methods
