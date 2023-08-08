@@ -19,6 +19,8 @@ columns:[
 	    header: [
             {
                 text?: string | number,
+                tooltip?: boolean,
+                tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
 	            align?: "left" | "center" | "right",
 	            colspan?: number,
 	            rowspan?: number,
@@ -40,6 +42,8 @@ columns:[
 	    footer?: [
             {
                 text?: string | number,
+                tooltip?: boolean,
+                tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
 	            css?: any,
 	            content?: "inputFilter" | "selectFilter" | "comboFilter" |
                           "avg" | "sum" | "max" | "min" | "count" | string,
@@ -103,6 +107,8 @@ columns:[
 			<td>(required) an array of objects with header rows configuration. Each header object may include:
                 <ul>
                     <li><a href="../../customization#styling-header-cells"><b>text</b></a> - (optional) the text of a header</li>
+                    <li><b>tooltip</b> - (optional) enables/disables the header tooltip</li>
+            		<li><b>tooltipTemplate</b> - (optional) sets a template for the header tooltip. Takes into account the <a href="../../configuration#html-content-of-treegrid-columns">htmlEnable</a> property. If set to <i>false</i>, disables the tooltip</li>
                     <li><a href="../../configuration#alignment"><b>align</b></a> - (optional) aligns data in the header: "left"|"center"|"right"</li>
                     <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
                     <li><b>rowspan</b> - (optional) the number of rows in a rowspan <br/></li>
@@ -135,6 +141,8 @@ columns:[
 			<td>(optional) an array of objects with footer rows configuration. Each footer object may include:
                 <ul>
                     <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (optional) the text of a footer</li>
+                    <li><b>tooltip</b> - (optional) enables/disables the footer tooltip</li>
+            		<li><b>tooltipTemplate</b> - (optional) sets a template for the footer tooltip. Takes into account the <a href="../../configuration#html-content-of-treegrid-columns">htmlEnable</a> property. If set to <i>false</i>, disables the tooltip</li>
                     <li><b>css</b> - (optional) styling to be applied to a footer</li>
                     <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be:
                     	<ol>- a filter: "inputFilter" | "selectFilter" | "comboFilter"</ol>
