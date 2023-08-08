@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.8 
+---------------
+
+Released on August 8, 2023
+
+### Fixes
+
+- Form. Fix incorrect data rendering in the Input control on blocking changes by the beforeChange event 
+- Grid/TreeGrid. Fix incorrect behavior when typing "null" in the inputFilter displayed empty rows
+- Grid/TreeGrid. Fix the issue with the destructor call after operating with the in-header filters that caused a console error throwing
+
 Version 8.1.7 
 ---------------
 
