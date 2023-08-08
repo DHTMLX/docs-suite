@@ -2470,6 +2470,8 @@ module.exports = {
                     "grid/api/grid_sortable_config",
                     "grid/api/grid_spans_config",
                     "grid/api/grid_tooltip_config",
+                    "grid/api/grid_footertooltip_config",
+                    "grid/api/grid_headertooltip_config",
                     "grid/api/grid_topsplit_config",
                     "grid/api/grid_width_config",
                   ],

@@ -1459,7 +1459,9 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Tooltip
 
-The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column's cell. Starting from v6.5, you can hide the tooltips via setting the [](grid/api/grid_tooltip_config.md) configuration property of Grid to *false*:
+### Grid tooltips
+
+The default configuration of Grid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [](grid/api/grid_tooltip_config.md) configuration property of Grid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -1472,6 +1474,22 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
+
+It is also possible to control the header and footer tooltips, independently. There are the [headerTooltip](grid/api/grid_headertooltip_config.md) and [footerTooltip](grid/api/grid_footertooltip_config.md) Grid configuration properties, that you can use for this purpose:
+
+~~~js
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    tooltip: false, // Disable all tooltips
+    headerTooltip: true, // Enable all header tooltips
+    footerTooltip: true, // Enable all footer tooltips
+});
+~~~
+
+### Column tooltips
 
 There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](grid/configuration.md#columns) or [spans](grid/configuration.md#spans) accordingly:
 
@@ -1489,8 +1507,50 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the **tooltip** property in the corresponding header/footer object inside the column:
 
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+    	// Enables a tooltip for the country title
+        { id: "country", header: [{ text: "Country", tooltip: true }] }, 
+        { id: "population", header: [{ text: "Population" }] },
+   		// more columns
+    ],
+    data: dataset,
+    tooltip: false,
+});
+~~~
 
+What is more, you can specify a necessary template for the header/footer tooltip via the **tooltipTemplate** configuration property, as in:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        {
+            id: "country",
+            header: [
+                {
+                    text: "Country",
+                    tooltipTemplate: (value, header, column) => {
+                        return `This is column template: ${value}`
+                    }
+                },
+            ],
+            footer: [
+                {
+                    text: "Total",
+                    tooltipTemplate: (value, footer, column) => false, // Disabled footer tooltip
+                }
+            ],
+        },
+        // more columns
+    ],
+    data: dataset,
+});
+~~~
+
+**Related sample**: [Grid. Header/footer tooltip](https://snippet.dhtmlx.com/fgstf2mq)
 
 
 
