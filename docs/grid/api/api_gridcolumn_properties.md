@@ -104,7 +104,7 @@ columns:[
 			<td>(optional) enables/disables the ability of a column to adjust its size to the size of Grid<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
 		</tr>
         <tr>
-			<td><b>header</b></td>
+			<td><b id="header">header</b></td>
 			<td>(required) an array of objects with header rows configuration. Each header object may include:
             <ul>
             <li><b>text</b> - (optional) the text of a header</li>

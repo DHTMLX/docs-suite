@@ -1374,3 +1374,49 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 **Related sample**: [TreeGrid. Header/footer tooltip](https://snippet.dhtmlx.com/51nbo9re)
+
+#### Tooltips for complex data
+
+You can specify a tooltip as a value for a complex header/footer content, such as
+the methods processing column values: "avg" | "sum" | "max" | "min" | "count". What is more, you can provide a tooltip template for the header/footer content of any type, which allows showing tooltips for filters.
+
+Check the example below:
+
+~~~js
+const balanceTemplate = value => {
+    return value > 0
+        ? `<div style='color:green'>⬆ $${value}</div>`
+        : `<div style='color:red'>⬇ $${value}</div>`;
+};
+
+const treegrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            minWidth: 150,
+            id: "project",
+            header: [
+                {text: "Project"},
+                {content: "comboFilter", tooltipTemplate: () => "Select project"}
+            ],
+            footer: [{text: "Total"}],
+            resizable: true,
+            draggable: false
+        },
+        {
+            width: 130,
+            id: "balance",
+            header: [{text: "Balance"}, {content: "inputFilter"}],
+            footer: [
+                {
+                    content: "sum",
+                    tooltipTemplate: balanceTemplate
+                },
+            ],
+            template: balanceTemplate,
+            htmlEnable: true,
+            format: "#.0",
+        },
+    ],
+});
+~~~
+

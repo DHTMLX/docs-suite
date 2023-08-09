@@ -175,7 +175,9 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
 | [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
 | [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
+| [](grid/api/grid_footertooltip_config.md)   | @getshort(grid/api/grid_footertooltip_config.md)   |
 | [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
+| [](grid/api/grid_headertooltip_config.md)   | @getshort(grid/api/grid_headertooltip_config.md)   |
 | [](grid/api/grid_height_config.md)          | @getshort(grid/api/grid_height_config.md)          |
 | [](grid/api/grid_htmlenable_config.md)      | @getshort(grid/api/grid_htmlenable_config.md)      |
 | [](grid/api/grid_keynavigation_config.md)   | @getshort(grid/api/grid_keynavigation_config.md)   |
@@ -189,8 +191,6 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_sortable_config.md)        | @getshort(grid/api/grid_sortable_config.md)        |
 | [](grid/api/grid_spans_config.md)           | @getshort(grid/api/grid_spans_config.md)           |
 | [](grid/api/grid_tooltip_config.md)         | @getshort(grid/api/grid_tooltip_config.md)         |
-| [](grid/api/grid_footertooltip_config.md)   | @getshort(grid/api/grid_footertooltip_config.md)   |
-| [](grid/api/grid_headertooltip_config.md)   | @getshort(grid/api/grid_headertooltip_config.md)   |
 | [](grid/api/grid_topsplit_config.md)        | @getshort(grid/api/grid_topsplit_config.md)        |
 | [](grid/api/grid_width_config.md)           | @getshort(grid/api/grid_width_config.md)           |
 

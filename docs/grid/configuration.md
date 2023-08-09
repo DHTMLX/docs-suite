@@ -1491,7 +1491,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Column tooltips
 
-There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](grid/configuration.md#columns) or [spans](grid/configuration.md#spans) accordingly:
+There is a possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](grid/configuration.md#columns) or [spans](grid/configuration.md#spans) accordingly:
 
 ~~~js {3,7,10}
 const grid = new dhx.Grid("grid_container", {
@@ -1552,6 +1552,49 @@ const grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Header/footer tooltip](https://snippet.dhtmlx.com/fgstf2mq)
 
+#### Tooltips for complex data
 
+You can specify a tooltip as a value for a complex header/footer content, such as
+the methods processing column values: "avg" | "sum" | "max" | "min" | "count". What is more, you can provide a tooltip template for the header/footer content of any type, which allows showing tooltips for filters.
 
+Check the example below:
 
+~~~js
+const balanceTemplate = value => {
+    return value > 0
+        ? `<div style='color:green'>⬆ $${value}</div>`
+        : `<div style='color:red'>⬇ $${value}</div>`;
+};
+
+const grid = new dhx.Grid("grid", {
+    columns: [
+        {
+            minWidth: 150,
+            id: "project",
+            header: [
+                {text: "Project"},
+                {content: "comboFilter", tooltipTemplate: () => "Select project"}
+            ],
+            footer: [{text: "Total"}],
+            resizable: true,
+            draggable: false
+        },
+        {
+            width: 130,
+            id: "balance",
+            header: [{text: "Balance"}, {content: "inputFilter"}],
+            footer: [
+                {
+                    content: "sum",
+                    tooltipTemplate: balanceTemplate
+                },
+            ],
+            template: balanceTemplate,
+            htmlEnable: true,
+            format: "#.0",
+        },
+    ],
+});
+~~~
+
+**Related sample**: [Grid. Tooltips for a complex column content](https://snippet.dhtmlx.com/c0gu3z29)
