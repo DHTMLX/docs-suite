@@ -28,14 +28,14 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-    css?: string;
-    width?: string | number | "content";
-    height?: string | number | "content";
-    padding?: string | number;
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
 
-    label?: string;
-    labelAlignment?: "left" | "right" | "center";
-    align?: "start" | "center" | "end" | "between" | "around" | "evenly";
+    label: string,
+    labelAlignment: "left" | "right" | "center",
+    align: "start" | "center" | "end" | "between" | "around" | "evenly"
 }
 ~~~
 

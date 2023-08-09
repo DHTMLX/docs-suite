@@ -87,6 +87,7 @@ form.getProperties("name");
 // -> the returned object:
 {
 	autocomplete: false,
+	css: "",
 	errorMessage: "",
 	height: "content",
 	helpMessage: "",
@@ -110,6 +111,47 @@ form.getProperties("name");
 	width: "content"
 }
 ```
+
+## Avatar
+
+The returned object of the **Avatar** control can contain the following properties:
+
+~~~js
+{
+	css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    label: string,
+    labelWidth: string | number,
+    labelPosition: "left" | "top",
+    hiddenLabel: boolean,
+    helpMessage: string
+    required: boolean,
+    preMessage: string,
+    successMessage: string,
+    errorMessage: string,
+    validation: (value: object) => boolean,
+    readOnly: boolean,
+    removeIcon: boolean,
+    size: "small" | "medium" | "large" | number,
+    circle: boolean,
+    alt: string,
+    icon: string,
+    placeholder: string,
+    preview: string,
+    accept: string,
+    target: string
+    fieldName: string,
+    autosend: boolean,
+    params: { [key: string]: any },
+    headerParams: { [key: string]: any },
+    updateFromResponse: boolean
+}
+~~~
+
+You will find the description of these properties [here](form/api/avatar/api_avatar_properties.md).
+
 ## Button
 
 The returned object of the **Button** control can contain the following properties:
@@ -118,6 +160,7 @@ The returned object of the **Button** control can contain the following properti
 {
 	circle: boolean,
 	color: string, 
+	css: string,
 	full: boolean,
 	height: string|number|"content",
 	icon: string,
@@ -140,6 +183,7 @@ The returned object of the **DatePicker** control can contain the following prop
 
 ~~~js
 {
+	css: string,
 	dateFormat: string,
 	disabledDates: function,
 	editable: boolean,
@@ -177,6 +221,7 @@ The returned object of the **Checkbox** control can contain the following proper
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	height: string|number|"content",
 	helpMessage: string,
@@ -201,6 +246,7 @@ The returned object of the **CheckboxGroup** control can contain the following p
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	height: string | number|"content",
 	helpMessage: string,
@@ -225,6 +271,7 @@ The returned object of a **checkbox** of the **CheckboxGroup** control can conta
 
 ~~~js
 {
+	css: string,
 	height: string | number | "content",
 	padding: string | number,
 	text: string,
@@ -240,6 +287,7 @@ The returned object of the **ColorPicker** control can contain the following pro
 
 ~~~js
 {
+	css: string,
 	customColors: array,
 	editable: boolean,
 	errorMessage: string,
@@ -271,6 +319,7 @@ The returned object of the **Combo** control can contain the following propertie
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	filter: function, 
 	height: string|number|"content",
@@ -305,6 +354,7 @@ The returned object of the **Container** control can contain the following prope
 
 ~~~js
 {
+	css: string,
 	height: string | number | "content", 
 	padding: string | number,
 	width: string, number, "content"
@@ -313,6 +363,25 @@ The returned object of the **Container** control can contain the following prope
 
 You will find the description of these properties [here](form/api/container/api_container_properties.md).
 
+## Fieldset
+
+The returned object of the **Fieldset** control can contain the following properties:
+
+~~~js
+{
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+
+    label: string,
+    labelAlignment: "left" | "right" | "center",
+    align: "start" | "center" | "end" | "between" | "around" | "evenly"
+}
+~~~
+
+You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties.md).
+
 ## Input
 
 The returned object of the **Input** control can contain the following properties:
@@ -320,6 +389,7 @@ The returned object of the **Input** control can contain the following propertie
 ~~~js
 {
 	autocomplete: boolean,
+	css: string,
 	errorMessage: string,
 	height: string|number|"content",
 	helpMessage: string,
@@ -352,6 +422,7 @@ The returned object of the **RadioGroup** control can contain the following prop
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	height: string|number|"content",
 	helpMessage: string,
@@ -376,6 +447,7 @@ The returned object of a **radio button** of the **RadioGroup** control can cont
 
 ~~~js
 {
+	css: string,
 	height: string|number|"content",
 	padding: string|number,
 	text: string,
@@ -391,6 +463,7 @@ The returned object of the **Select** control can contain the following properti
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	height: string|number|"content",
 	helpMessage: string,
@@ -415,6 +488,7 @@ The returned object of the **SimpleVault** control can contain the following pro
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	fieldName: string,
 	height: string|number|"content",
@@ -442,6 +516,7 @@ The returned object of the **Slider** control can contain the following properti
 
 ~~~js
 {
+	css: string,
 	height: string|number|"content",
 	helpMessage: string,
 	hiddenLabel: boolean,
@@ -471,6 +546,7 @@ The returned object of the **Spacer** control can contain the following properti
 
 ~~~js
 {
+	css: string,
 	height: string|number|"content"
 	padding: string|number
 	width: string|number|"content"
@@ -485,6 +561,7 @@ The returned object of the **Text** control can contain the following properties
 
 ~~~js
 {
+	css: string,
 	height: string|number|"content",
 	helpMessage: string,
 	hiddenLabel: boolean,
@@ -505,6 +582,7 @@ The returned object of the **Textarea** control can contain the following proper
 
 ~~~js
 {
+	css: string,
 	errorMessage: string,
 	height: string|number|"content",
 	helpMessage: string,
@@ -534,6 +612,7 @@ The returned object of the **TimePicker** control can contain the following prop
 ~~~js
 {
 	controls: boolean,
+	css: string,
 	editable: boolean,
 	errorMessage: string,
 	height: string|number|"content",

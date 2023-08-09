@@ -54,6 +54,7 @@ series: [
 		id: string,
 		value: string,
 		type?: "line" | "spline" | "bar" | "x-bar" | "area" | "splineArea" | "radar"| "scatter",
+		label?: ((seria: ISeriaConfig) => string) | string,
 
 		active?: boolean,
 		color?: string,
@@ -83,6 +84,10 @@ series: [
 		<tr>
 			<td><b>type</b></td>
 			<td>(optional) the type of a chart </td>
+		</tr>
+		<tr>
+			<td><b>label</b></td>
+			<td>(optional) allows setting the text of the series legend. If not set, the value of the <b>value</b> property is used as a legend's text. The config can be defined as a string of as a function that takes the current series configuration as an argument and returns a string</td>
 		</tr>
 		<tr>
 			<td><b>active</b></td>

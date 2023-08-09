@@ -17,6 +17,9 @@ description: You can explore the setFocus method of DataView in the documentatio
 dataview.setFocus("item_id");
 
 @descr:
+:::note
+Note that the method doesn't work if the keyboard navigation is disabled.
+:::
 
 @changelog: added in v6.3
 

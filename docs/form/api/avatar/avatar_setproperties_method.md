@@ -29,35 +29,35 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css?: string;
-    width?: string | number | "content";
-    height?: string | number | "content";
-    padding?: string | number;
-    label?: string;
-    labelWidth?: string | number;
-    labelPosition?: "left" | "top";
-    hiddenLabel?: boolean;
-    helpMessage?: string;
-    required?: boolean;
-    preMessage?: string;
-    successMessage?: string;
-    errorMessage?: string;
-    validation?: (value: object) => boolean;
-    readOnly?: boolean;
-    removeIcon?: boolean;
-    size?: "small" | "medium" | "large" | number;
-    circle?: boolean;
-    alt?: string;
-    icon?: string;
-    placeholder?: string;
-    preview?: string;
-    accept?: string;
-    target?: string;
-    fieldName?: string;
-    autosend?: boolean;
-    params?: { [key: string]: any };
-    headerParams?: { [key: string]: any };
-    updateFromResponse?: boolean;
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    label: string,
+    labelWidth: string | number,
+    labelPosition: "left" | "top",
+    hiddenLabel: boolean,
+    helpMessage: string
+    required: boolean,
+    preMessage: string,
+    successMessage: string,
+    errorMessage: string,
+    validation: (value: object) => boolean,
+    readOnly: boolean,
+    removeIcon: boolean,
+    size: "small" | "medium" | "large" | number,
+    circle: boolean,
+    alt: string,
+    icon: string,
+    placeholder: string,
+    preview: string,
+    accept: string,
+    target: string
+    fieldName: string,
+    autosend: boolean,
+    params: { [key: string]: any },
+    headerParams: { [key: string]: any },
+    updateFromResponse: boolean
 }
 ~~~
 

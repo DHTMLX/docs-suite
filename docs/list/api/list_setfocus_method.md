@@ -17,6 +17,9 @@ description: You can explore the setFocus method of List in the documentation of
 list.setFocus("item_id");
 
 @descr:
+:::note
+Note that the method doesn't work if the keyboard navigation is disabled.
+:::
 
 **Related sample**: [List. Set active index](https://snippet.dhtmlx.com/ermcjx3d)
 
