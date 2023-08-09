@@ -12,7 +12,7 @@ description: You can explore the filter method of DataCollection in the document
 
 @params:
 - `rule: function | object` - the filtering criteria
-    - If set as a *function*, the filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns an object with a filtering rule
+    - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
         - `by: string | number` - mandatory, the id of a data field (the column of Grid)
         - `match: string` - mandatory, a pattern to match

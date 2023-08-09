@@ -44,18 +44,19 @@ A set of API methods and events that allow you to work with data of a component 
 
 ## Events
 
-| Name                                         | Description                                         |
-| -------------------------------------------- | --------------------------------------------------- |
-| [](api/treecollection_afteradd_event.md)     | @getshort(api/treecollection_afteradd_event.md)     |
-| [](api/treecollection_afteritemload_event.md)     | @getshort(api/treecollection_afteritemload_event.md)     |
-| [](api/treecollection_afterremove_event.md)  | @getshort(api/treecollection_afterremove_event.md)  |
-| [](api/treecollection_beforeadd_event.md)    | @getshort(api/treecollection_beforeadd_event.md)    |
-| [](api/treecollection_beforeitemload_event.md)    | @getshort(api/treecollection_beforeitemload_event.md)    |
-| [](api/treecollection_beforeremove_event.md) | @getshort(api/treecollection_beforeremove_event.md) |
-| [](api/treecollection_change_event.md)       | @getshort(api/treecollection_change_event.md)       |
-| [](api/treecollection_load_event.md)         | @getshort(api/treecollection_load_event.md)         |
-| [](api/treecollection_loaderror_event.md)    | @getshort(api/treecollection_loaderror_event.md)    |
-| [](api/treecollection_removeall_event.md)    | @getshort(api/treecollection_removeall_event.md)    |
+| Name                                           | Description                                           |
+| ---------------------------------------------- | ----------------------------------------------------- |
+| [](api/treecollection_afteradd_event.md)       | @getshort(api/treecollection_afteradd_event.md)       |
+| [](api/treecollection_afteritemload_event.md)  | @getshort(api/treecollection_afteritemload_event.md)  |
+| [](api/treecollection_afterremove_event.md)    | @getshort(api/treecollection_afterremove_event.md)    |
+| [](api/treecollection_beforeadd_event.md)      | @getshort(api/treecollection_beforeadd_event.md)      |
+| [](api/treecollection_beforeitemload_event.md) | @getshort(api/treecollection_beforeitemload_event.md) |
+| [](api/treecollection_beforeremove_event.md)   | @getshort(api/treecollection_beforeremove_event.md)   |
+| [](api/treecollection_change_event.md)         | @getshort(api/treecollection_change_event.md)         |
+| [](api/treecollection_filter_event.md)         | @getshort(api/treecollection_filter_event.md)         |
+| [](api/treecollection_load_event.md)           | @getshort(api/treecollection_load_event.md)           |
+| [](api/treecollection_loaderror_event.md)      | @getshort(api/treecollection_loaderror_event.md)      |
+| [](api/treecollection_removeall_event.md)      | @getshort(api/treecollection_removeall_event.md)      |
 
 :::info Ways of applying events
 

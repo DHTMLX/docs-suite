@@ -50,6 +50,7 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_beforelazyload_event.md) | @getshort(api/datacollection_beforelazyload_event.md) |
 | [](api/datacollection_beforeremove_event.md)   | @getshort(api/datacollection_beforeremove_event.md)   |
 | [](api/datacollection_change_event.md)         | @getshort(api/datacollection_change_event.md)         |
+| [](api/datacollection_filter_event.md)         | @getshort(api/datacollection_filter_event.md)         |
 | [](api/datacollection_load_event.md)           | @getshort(api/datacollection_load_event.md)           |
 | [](api/datacollection_loaderror_event.md)      | @getshort(api/datacollection_loaderror_event.md)      |
 | [](api/datacollection_removeall_event.md)      | @getshort(api/datacollection_removeall_event.md)      |
