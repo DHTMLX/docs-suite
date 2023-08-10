@@ -34,6 +34,7 @@ The returned object of the **Checkbox** control looks like:
 
 ~~~js
 {
+	css:"",
 	errorMessage: "",
 	height: "content",
 	helpMessage: "",

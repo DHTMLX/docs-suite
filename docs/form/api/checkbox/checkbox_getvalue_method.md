@@ -11,13 +11,13 @@ description: You can explore the getValue method of the Checkbox control of Form
 @signature: {'getValue(): string | boolean;'}
 
 @returns:
-Either a string with the current value of the control or boolean value with the state of the control.
+Either a string with the current value of the control or a boolean value with the state of the control.
 
 @example:
-// returns value if the value is specified for the checkbox
+// returns a value if the value is specified for the checkbox
 const value = form.getItem("checkbox").getValue(); // -> "checkbox_value"
 
-// returns state if the value is not specified for the checkbox
+// returns a state if the value is not specified for the checkbox
 const state = form.getItem("checkbox").getValue(); // -> true/false
 
 @descr:

@@ -2229,6 +2229,51 @@ module.exports = {
                   },
                   ],
                 },
+                {
+                  type: "category",
+                  label: "Toggle API",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Toggle API",
+                    keywords: ['toggle API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Form Toggle methods",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Toggle methods",
+                      keywords: ['form toggle methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      /**/
+                    
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Form Toggle events",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Toggle events",
+                      keywords: ['form toggle events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      /**/
+                    ],
+                  },
+                  {
+                    type: "doc",
+                    id: "form/api/toggle/api_toggle_properties",
+                  },
+                  ],
+                },
               ],
             },
             "form/features",
@@ -2262,6 +2307,7 @@ module.exports = {
                 "form/text",
                 "form/textarea",
                 "form/timepicker",
+                "form/toggle"
               ]
             },
             "form/localization",
