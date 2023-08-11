@@ -37,7 +37,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 - `type` - (required) the type of a control, set it to "toggle"
 - `name` - (optional) the name of a control
 - `id` - (optional) the id of a control, auto-generated if not set
-- `hidden`- (optional) defines whether a checkbox is hidden
+- `hidden`- (optional) defines whether a toggle is hidden
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*)
 - `selected` - (optional) defines the initial state of the toggle as selected (pressed), *false* by default
 - `full` - (optional) defines whether the toggle will be extended to the width specified by the **width** property, *false* by default

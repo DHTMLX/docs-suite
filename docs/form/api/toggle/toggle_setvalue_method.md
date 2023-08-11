@@ -11,7 +11,7 @@ description: You can explore the setValue method of the Toggle control of Form i
 @signature: {'setValue(selected: boolean): void;'}
 
 @params:
-- `selected: boolean` - the state to be set for the checkbox
+- `selected: boolean` - the state to be set for the toggle
 
 @example:
 form.getItem("toggle").setValue(true); 

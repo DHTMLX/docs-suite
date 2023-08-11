@@ -2277,7 +2277,17 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
-                      /**/
+                      "form/api/toggle/toggle_afterchangeproperties_event",
+                      "form/api/toggle/toggle_afterhide_event",
+                      "form/api/toggle/toggle_aftershow_event",
+                      "form/api/toggle/toggle_beforechange_event",
+                      "form/api/toggle/toggle_beforechangeproperties_event",
+                      "form/api/toggle/toggle_beforehide_event",
+                      "form/api/toggle/toggle_beforeshow_event",
+                      "form/api/toggle/toggle_blur_event",
+                      "form/api/toggle/toggle_change_event",
+                      "form/api/toggle/toggle_focus_event",
+                      "form/api/toggle/toggle_keydown_event"
                     ],
                   },
                   {

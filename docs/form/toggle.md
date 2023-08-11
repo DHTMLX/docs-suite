@@ -8,7 +8,7 @@ description: You can explore the Toggle of Form in the documentation of the DHTM
 
 A special button control that changes its state from pressed to the unpressed one when clicked.
 
-![Toggle button control]
+![Toggle button control](../assets/form/form_toggle.png)
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/6lsarcjc)
 
@@ -49,8 +49,8 @@ const value = form.getItem("toggle").getValue();
 
 ### Methods
 
-Check [the full list of methods of the Toggle control].
+Check [the full list of methods of the Toggle control](form/api/api_overview.md#toggle-methods).
 
 ### Events
 
-Check [the full list of events of the Toggle control].
+Check [the full list of events of the Toggle control](form/api/api_overview.md#toggle-events).

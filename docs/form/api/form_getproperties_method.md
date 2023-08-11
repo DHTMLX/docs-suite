@@ -636,6 +636,25 @@ The returned object of the **TimePicker** control can contain the following prop
 
 You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
 
+## Toggle
+
+The returned object of the **Toggle** control can contain the following properties:
+
+~~~js
+css: string,
+width: string | number | "content",
+height: string | number | "content",
+padding: string | number,
+full: boolean,
+text: string,
+icon: string,
+offText: string,
+offIcon: string,
+value: string | number
+~~~
+
+You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
+
 **Related API**: [setProperties()](form/api/form_setproperties_method.md)
 
 @changelog: added in v7.0

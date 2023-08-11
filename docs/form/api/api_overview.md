@@ -859,3 +859,20 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 ### Toggle events
 
+| Name                                             	 	     | Description                                               		  |
+| :--------------------------------------------------------- | :----------------------------------------------------------------- |
+| [](form/api/toggle/toggle_afterchangeproperties_event.md)  | @getshort(form/api/toggle/toggle_afterchangeproperties_event.md)   |
+| [](form/api/toggle/toggle_afterhide_event.md)        	     | @getshort(form/api/toggle/toggle_afterhide_event.md)        	      |
+| [](form/api/toggle/toggle_aftershow_event.md)        	     | @getshort(form/api/toggle/toggle_aftershow_event.md)        	      |
+| [](form/api/toggle/toggle_beforechange_event.md)           | @getshort(form/api/toggle/toggle_beforechange_event.md)      	  |
+| [](form/api/toggle/toggle_beforechangeproperties_event.md) | @getshort(form/api/toggle/toggle_beforechangeproperties_event.md)  |
+| [](form/api/toggle/toggle_beforehide_event.md)        	 | @getshort(form/api/toggle/toggle_beforehide_event.md)        	  |
+| [](form/api/toggle/toggle_beforeshow_event.md)        	 | @getshort(form/api/toggle/toggle_beforeshow_event.md)      	      |
+| [](form/api/toggle/toggle_blur_event.md)        	 	   	 | @getshort(form/api/toggle/toggle_blur_event.md)        	          |
+| [](form/api/toggle/toggle_change_event.md)        	 	 | @getshort(form/api/toggle/toggle_change_event.md)        	      |
+| [](form/api/toggle/toggle_focus_event.md)        	 	   	 | @getshort(form/api/toggle/toggle_focus_event.md)        	      	  |
+| [](form/api/toggle/toggle_keydown_event.md)        	 	 | @getshort(form/api/toggle/toggle_keydown_event.md)        	      |
+
+### Toggle properties
+
+[List of the Toggle properties](form/api/toggle/api_toggle_properties.md)

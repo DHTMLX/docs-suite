@@ -23,7 +23,7 @@ form.getItem("toggle").setProperties({
 @descr:
 
 :::info
-The method invokes the [afterChangeProperties] and [beforeChangeProperties] events.
+The method invokes the [afterChangeProperties](form/api/toggle/toggle_afterchangeproperties_event.md) and [beforeChangeProperties](form/api/toggle/toggle_beforechangeproperties_event.md) events.
 :::
 
 It is possible to change values of the following configuration attributes of the **Toggle** control:
