@@ -17,6 +17,6 @@ description: You can explore the blur event of the Checkbox control of Form in t
 form.getItem("checkbox").events.on("blur", (value) => {
     console.log("blur", value);
 });
-@examplestop:
+
 
 @changelog: added in v7.2

@@ -834,3 +834,28 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 ### Timepicker properties
 
 [List of the Timepicker properties](form/api/timepicker/api_timepicker_properties.md)
+
+## Toggle API
+
+### Toggle methods
+
+| Name                                             	 | Description                                             	 |
+| :------------------------------------------------- | :-------------------------------------------------------- |
+| [](form/api/toggle/toggle_blur_method.md)        	 | @getshort(form/api/toggle/toggle_blur_method.md)        	 |
+| [](form/api/toggle/toggle_destructor_method.md)  	 | @getshort(form/api/toggle/toggle_destructor_method.md)  	 |
+| [](form/api/toggle/toggle_disable_method.md)     	 | @getshort(form/api/toggle/toggle_disable_method.md)     	 |
+| [](form/api/toggle/toggle_enable_method.md)      	 | @getshort(form/api/toggle/toggle_enable_method.md)      	 |
+| [](form/api/toggle/toggle_focus_method.md)         | @getshort(form/api/toggle/toggle_focus_method.md)       	 |
+| [](form/api/toggle/toggle_getproperties_method.md) | @getshort(form/api/toggle/toggle_getproperties_method.md) |
+| [](form/api/toggle/toggle_getvalue_method.md)      | @getshort(form/api/toggle/toggle_getvalue_method.md)      |
+| [](form/api/toggle/toggle_hide_method.md)          | @getshort(form/api/toggle/toggle_hide_method.md)        	 |
+| [](form/api/toggle/toggle_isdisabled_method.md)    | @getshort(form/api/toggle/toggle_isdisabled_method.md)    |
+| [](form/api/toggle/toggle_isselected_method.md)    | @getshort(form/api/toggle/toggle_isselected_method.md)    |
+| [](form/api/toggle/toggle_isvisible_method.md)     | @getshort(form/api/toggle/toggle_isvisible_method.md)     |
+| [](form/api/toggle/toggle_setproperties_method.md) | @getshort(form/api/toggle/toggle_setproperties_method.md) |
+| [](form/api/toggle/toggle_setvalue_method.md)    	 | @getshort(form/api/toggle/toggle_setvalue_method.md)    	 |
+| [](form/api/toggle/toggle_show_method.md)    		 | @getshort(form/api/toggle/toggle_show_method.md)    		 |
+
+
+### Toggle events
+

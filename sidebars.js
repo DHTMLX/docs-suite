@@ -2250,8 +2250,20 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
-                      /**/
-                    
+                      "form/api/toggle/toggle_blur_method",
+                      "form/api/toggle/toggle_destructor_method",
+                      "form/api/toggle/toggle_disable_method",
+                      "form/api/toggle/toggle_enable_method",
+                      "form/api/toggle/toggle_focus_method",
+                      "form/api/toggle/toggle_getproperties_method",
+                      "form/api/toggle/toggle_getvalue_method",
+                      "form/api/toggle/toggle_hide_method",
+                      "form/api/toggle/toggle_isdisabled_method",
+                      "form/api/toggle/toggle_isselected_method",
+                      "form/api/toggle/toggle_isvisible_method",
+                      "form/api/toggle/toggle_setproperties_method",
+                      "form/api/toggle/toggle_setvalue_method",
+                      "form/api/toggle/toggle_show_method"
                     ],
                   },
                   {
