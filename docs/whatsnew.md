@@ -8,6 +8,50 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.2
+-------------
+
+Released on August  , 2023
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-2/" target="_blank">Review of release on the blog</a>
+
+### New functionality
+
+#### Grid/TreeGrid
+
+- The ability to [control the header/footer tooltip](grid/configuration.md#tooltip)
+
+#### Form
+
+- New [Avatar](form/avatar.md) control
+- New [Fieldset](form/fieldset.md) control
+- New [Toggle](form/toggle.md) and [ToggleGroup] controls
+
+#### DataCollection/TreeCollection
+
+- New [filter](data_collection/api/datacollection_filter_event.md) event 
+
+### Updates
+
+#### Chart
+
+- The [series](chart/api/chart_series_config.md) configuration property is extended with the **label** option for setting the text of the legend for a series (for  "line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter" chart types)
+
+#### Form 
+
+- Types of Form controls are restructured. The type declaration file (d.ts) is updated  
+
+#### Form. SimpleVault
+ 
+- The [API of the control](form/api/api_overview.md#simple-vault-api) is renewed and improved 
+
+### Fixes
+
+- Grid/TreeGrid. Fix the functionality of comboFilter and selectFilter that presupposes displaying options in these filters according to the current filtered state of DataCollection
+- Grid/TreeGrid. Fix the issue with triggering the **change** event after filtering data (after selecting the filter)
+- Grid/TreeGrid. Fix the issue with incorrect header tooltip rendering due to the use of a colspan
+
+
 Version 8.1.8 
 ---------------
 
