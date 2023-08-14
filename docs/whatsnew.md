@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.9 
+---------------
+
+Released on August 14, 2023
+
+### Fixes
+
+- Grid/TreeGrid. Fix the issue with a colspan breaking in case of hiding several of its columns
+- Grid/TreeGrid. Fix the issue with the Input filter operating with the formatted numeric value instead of the original one
+- Grid/TreeGrid. Fix incorrect export of boolean values to PDF/PNG 
+- Grid/TreeGrid. Fix incorrect work of the autoHeight property that resulted in not displaying multi-line data in cells
+
 Version 8.1.8 
 ---------------
 
