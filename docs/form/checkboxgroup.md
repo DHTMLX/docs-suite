@@ -14,7 +14,7 @@ A control intended for creating groups of checkboxes.
 
 ## Adding CheckboxGroup
 
-You can easily add a Checkbox control during initialization of a form:
+You can easily add a CheckboxGroup control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", { 

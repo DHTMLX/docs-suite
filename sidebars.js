@@ -2296,6 +2296,50 @@ module.exports = {
                   },
                   ],
                 },
+                 {
+                  type: "category",
+                  label: "ToggleGroup API",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "ToggleGroup API",
+                    keywords: ['toggle group API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [{
+                    type: "category",
+                    label: "Form ToggleGroup methods",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form ToggleGroup methods",
+                      keywords: ['form toggle group methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      /**/
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Form Toggle events",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Toggle events",
+                      keywords: ['form toggle events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      /**/
+                    ],
+                  },
+                  {
+                    type: "doc",
+                    id: "form/api/togglegroup/api_togglegroup_properties",
+                  },
+                  ],
+                },
               ],
             },
             "form/features",
@@ -2329,7 +2373,8 @@ module.exports = {
                 "form/text",
                 "form/textarea",
                 "form/timepicker",
-                "form/toggle"
+                "form/toggle",
+                "form/togglegroup"
               ]
             },
             "form/localization",

@@ -45,7 +45,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 - `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the toggle, "" (empty string) by default
 - `icon` - (optional) sets the class of an icon displayed inside the toggle. When initialized together with the **offIcon** property, the specified classes of icons will be rendered in the selected (pressed) state of the toggle,"" (empty string) by default
 - `offIcon` - (optional) sets the class of an icon that will be rendered in the unselected (unpressed) state of the toggle, "" (empty string) by default
-- `value` - (optional) specifies value in the selected (pressed) state. If not defined, the **selected** property with the boolean value is used instead, *undefined* by default
+- `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the **selected** property with the boolean value is used instead, *undefined* by default
 - `css` - (optional) adds style classes to a control
 - `height` - (optional) the height of a control
 - `width` - (optional) the width of a control

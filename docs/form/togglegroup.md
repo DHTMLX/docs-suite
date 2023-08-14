@@ -5,3 +5,61 @@ description: You can explore the ToggleGroup of Form in the documentation of the
 ---
 
 # ToggleGroup
+
+A control intended for creating groups of toggle buttons.
+
+![ToggleGroup control](../assets/form/form_togglegroup.png)
+
+**Related sample**: [Form. Toggle and ToggleGroup](https://snippet.dhtmlx.com/ap3ilv0i)
+
+## Adding ToggleGroup
+
+You can easily add a ToggleGroup control during initialization of a form:
+
+~~~js
+const form = new dhx.Form("form_container", { 
+    rows: [
+       	{
+	        type: "toggleGroup",
+	        full: true,
+	        gap: 4,
+	        options: [
+	            {
+	                name: "left",
+	                icon: "dxi dxi-format-align-left",
+	            },
+	            {
+	                name: "center",
+	                icon: "dxi dxi-format-align-center",
+	            },
+	            {
+	                name: "right",
+	                icon: "dxi dxi-format-align-right",
+	            },
+	        ]
+	    }
+	]
+});
+~~~
+
+### Properties
+
+View [the full list of configuration properties of the ToggleGroup control](form/api/togglegroup/api_togglegroup_properties.md).
+
+## Working with ToggleGroup
+
+You can manipulate a ToggleGroup control by using methods or events of the object returned by the [getItem()](form/api/form_getitem_method.md) method.
+
+For example, you can hide a control on a page:
+
+~~~js
+const value = form.getItem("ToggleGroup").hide();
+~~~
+
+### Methods
+
+Check [the full list of methods of the ToggleGroup control].
+
+### Events
+
+Check [the full list of events of the ToggleGroup control].
