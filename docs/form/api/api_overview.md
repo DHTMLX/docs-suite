@@ -881,10 +881,23 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 ### ToggleGroup methods
 
-| Name                                             	 	   | Description                                             	 		   |
-| :------------------------------------------------------- | :-------------------------------------------------------------------- |
-| [](form/api/togglegroup/togglegroup_getvalue_method.md)  | @getshort(form/api/togglegroup/togglegroup_getvalue_method.md)        |
-| [](form/api/togglegroup/togglegroup_setvalue_method.md)  | @getshort(form/api/togglegroup/togglegroup_setvalue_method.md)        |
+| Name                                             	 	   		| Description                                             	 		   	|
+| :------------------------------------------------------------ | :-------------------------------------------------------------------- |
+| [](form/api/togglegroup/togglegroup_blur_method.md)  	   		| @getshort(form/api/togglegroup/togglegroup_blur_method.md)        	|
+| [](form/api/togglegroup/togglegroup_destructor_method.md) 	| @getshort(form/api/togglegroup/togglegroup_destructor_method.md)     	|
+| [](form/api/togglegroup/togglegroup_disable_method.md)  		| @getshort(form/api/togglegroup/togglegroup_disable_method.md)        	|
+| [](form/api/togglegroup/togglegroup_enable_method.md)  		| @getshort(form/api/togglegroup/togglegroup_enable_method.md)        	|
+| [](form/api/togglegroup/togglegroup_focus_method.md)  		| @getshort(form/api/togglegroup/togglegroup_focus_method.md)        	|
+| [](form/api/togglegroup/togglegroup_getproperties_method.md)  | @getshort(form/api/togglegroup/togglegroup_getproperties_method.md)   |
+| [](form/api/togglegroup/togglegroup_getvalue_method.md)  		| @getshort(form/api/togglegroup/togglegroup_getvalue_method.md)       	|
+| [](form/api/togglegroup/togglegroup_hide_method.md)  	   		| @getshort(form/api/togglegroup/togglegroup_hide_method.md)        	|
+| [](form/api/togglegroup/togglegroup_isdisabled_method.md)  	| @getshort(form/api/togglegroup/togglegroup_isdisabled_method.md)   	|
+| [](form/api/togglegroup/togglegroup_isselected_method.md)  	| @getshort(form/api/togglegroup/togglegroup_isselected_method.md)   	|
+| [](form/api/togglegroup/togglegroup_isvisible_method.md)  	| @getshort(form/api/togglegroup/togglegroup_isvisible_method.md)   	|
+| [](form/api/togglegroup/togglegroup_setproperties_method.md)  | @getshort(form/api/togglegroup/togglegroup_setproperties_method.md)   |
+| [](form/api/togglegroup/togglegroup_setvalue_method.md)  		| @getshort(form/api/togglegroup/togglegroup_setvalue_method.md)        |
+| [](form/api/togglegroup/togglegroup_show_method.md)  			| @getshort(form/api/togglegroup/togglegroup_show_method.md)   			|
+
 
 
 ### ToggleGroup events

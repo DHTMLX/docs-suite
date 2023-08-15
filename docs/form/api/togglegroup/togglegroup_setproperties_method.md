@@ -46,31 +46,35 @@ form.getItem("ToggleGroup").setProperties({
 @descr:
 
 :::info
-The method invokes the [](form/api/togglegroup/togglegroup_afterchangeproperties_event.md) and [](form/api/togglegroup/togglegroup_beforechangeproperties_event.md) events.
+The method invokes events.
 :::
 
 It is possible to change the values of the following configuration attributes of the **ToggleGroup** control:
 
 ~~~js
-css: string,
-full: boolean,
-gap: number,
-height: string | number|"content",
-multiselection: boolean,
-options: object[],
-padding: string | number,
-width: string|number|"content"
+{
+    css: string,
+    full: boolean,
+    gap: number,
+    height: string | number|"content",
+    multiselection: boolean,
+    options: object[],
+    padding: string | number,
+    width: string|number|"content"
+}
 ~~~
 
 It is possible to change the values of the following configuration attributes of a **toggle** of the ToggleGroup control:
 
 ~~~js
-full: boolean,
-icon: string,
-offIcon: string,
-offText: string,
-text: string,
-value: string | number
+{
+    full: boolean,
+    icon: string,
+    offIcon: string,
+    offText: string,
+    text: string,
+    value: string | number
+}
 ~~~
 
 You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).

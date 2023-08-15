@@ -57,6 +57,7 @@ form.getItem("ToggleGroup").getProperties("second");
 The returned object of the **ToggleGroup** control looks like:
 
 ~~~js
+{
 	css: "",
 	full: false,
 	gap: 0,
@@ -65,6 +66,7 @@ The returned object of the **ToggleGroup** control looks like:
 	options: {...},
 	padding: 0,
 	width: "content"
+}
 ~~~
 
 The returned object of a **toggle** of the **ToggleGroup** control looks like:

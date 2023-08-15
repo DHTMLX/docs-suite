@@ -58,7 +58,7 @@ const value = form.getItem("ToggleGroup").hide();
 
 ### Methods
 
-Check [the full list of methods of the ToggleGroup control].
+Check [the full list of methods of the ToggleGroup control](form/api/api_overview.md#togglegroup-methods).
 
 ### Events
 
