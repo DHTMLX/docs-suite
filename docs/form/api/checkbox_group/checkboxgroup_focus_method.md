@@ -6,7 +6,7 @@ description: You can explore the focus method of the Checkbox Group control of F
 
 # focus()
 
-@short: sets focus to the checkbox of the CheckboxGroup control by its id
+@short: sets focus to a checkbox of the CheckboxGroup control by its id
 
 @signature: {'focus(id?: string): void;'}
 

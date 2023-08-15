@@ -53,6 +53,6 @@ description: You can explore the Properties of the Toggle control of Form in the
 
 ### Example
 
-<iframe src="https://snippet.dhtmlx.com/ap3ilv0i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+<iframe src="https://snippet.dhtmlx.com/yqi21ykr?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 **Related article:** [Toggle](form/toggle.md)

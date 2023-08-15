@@ -2317,7 +2317,8 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
-                      /**/
+                      "form/api/togglegroup/togglegroup_getvalue_method",
+                      "form/api/togglegroup/togglegroup_setvalue_method",
                     ],
                   },
                   {

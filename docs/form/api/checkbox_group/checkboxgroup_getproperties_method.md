@@ -52,10 +52,10 @@ const form = new dhx.Form("form_container", {
      ]
 });
 
-// return object of the CheckboxGroup control 
+// return the object of the CheckboxGroup control 
 form.getItem("checkboxGroup").getProperties();
 
-// return object of checkbox of the CheckboxGroup control 
+// return the object of a checkbox of the CheckboxGroup control 
 form.getItem("checkboxGroup").getProperties("second");
 
 @descr:
@@ -64,6 +64,7 @@ The returned object of the **CheckboxGroup** control looks like:
 
 ~~~js
 {
+    css: "",
 	errorMessage: "",
 	height: "content",
 	helpMessage: "Help information",

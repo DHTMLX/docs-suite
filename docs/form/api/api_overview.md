@@ -876,3 +876,21 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 ### Toggle properties
 
 [List of the Toggle properties](form/api/toggle/api_toggle_properties.md)
+
+## ToggleGroup API
+
+### ToggleGroup methods
+
+| Name                                             	 	   | Description                                             	 		   |
+| :------------------------------------------------------- | :-------------------------------------------------------------------- |
+| [](form/api/togglegroup/togglegroup_getvalue_method.md)  | @getshort(form/api/togglegroup/togglegroup_getvalue_method.md)        |
+| [](form/api/togglegroup/togglegroup_setvalue_method.md)  | @getshort(form/api/togglegroup/togglegroup_setvalue_method.md)        |
+
+
+### ToggleGroup events
+
+
+
+### ToggleGroup properties
+
+[List of the ToggleGroup properties](form/api/togglegroup/api_togglegroup_properties.md)

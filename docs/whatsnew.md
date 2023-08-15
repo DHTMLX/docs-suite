@@ -25,7 +25,7 @@ Released on August  , 2023
 
 - New [Avatar](form/avatar.md) control
 - New [Fieldset](form/fieldset.md) control
-- New [Toggle](form/toggle.md) and [ToggleGroup] controls
+- New [Toggle](form/toggle.md) and [ToggleGroup](form/togglegroup.md) controls
 
 #### DataCollection/TreeCollection
 

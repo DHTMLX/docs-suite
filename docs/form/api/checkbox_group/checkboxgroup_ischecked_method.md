@@ -8,7 +8,7 @@ description: You can explore the isChecked method of the Checkbox Group control 
 
 @short: checks whether a checkbox of the CheckboxGroup control is checked
 
-@signature: {'isChecked(id?: string): boolean | { [key: string]: boolean };'}
+@signature: {'isChecked(id?: string): boolean | { [id: string]: boolean };'}
 
 @params:
 - `id: string` - optional, the id of a checkbox
@@ -16,15 +16,15 @@ description: You can explore the isChecked method of the Checkbox Group control 
 @returns:
 Either a boolean value or an object.
 
-If the id of a checkbox is specified, the method returns boolean value . `true`, if the checkbox is checked; otherwise, `false`.
+If the id of a checkbox is specified, the method returns a boolean value . `true`, if the checkbox is checked; otherwise, `false`.
 
-If the id of a checkbox is not specified, the method returns an object with a set of *key:value* pairs where *key* is the id of a checkbox and *value* is the state of the checkbox.
+If the id of a checkbox is not specified, the method returns an object with a set of *key:value* pairs where the *key* is the id of a checkbox and the *value* is the state of the checkbox.
 
 @example:
-form.getItem("CheckboxGroup").isChecked("checkbox_id_3") 
+form.getItem("CheckboxGroup").isChecked("checkbox_id_3");
 // -> true/false
 
-form.getItem("CheckboxGroup").isChecked() 
-// -> {  "checkbox_id_1": true,  "checkbox_id_2": false }
+form.getItem("CheckboxGroup").isChecked(); 
+// -> { "checkbox_id_1": true, "checkbox_id_2": false }
 
 @descr:

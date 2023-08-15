@@ -69,4 +69,16 @@ description: You can explore the Properties of the Toggle Group control of Form 
 	- `icon` - (optional) sets the class of an icon displayed inside the toggle. When initialized together with the **offIcon** property, the specified classes of icons will be rendered in the selected (pressed) state of the toggle,"" (empty string) by default
 	- `offIcon` - (optional) sets the class of an icon that will be rendered in the unselected (unpressed) state of the toggle, "" (empty string) by default
 	- `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the **selected** property with the boolean value is used instead, *undefined* by default
+- `value` - (optional) defines the state of elements on initialization. As a value it takes an object presented as a *key:value* pair, where the key is the id of an element and the value is the initial state of the element. It takes priority over the state of an element set in its configuration object
+	- `[id: string]: boolean` - sets the state of an element
+- `css` - (optional) adds style classes to a control
+- `height` - (optional) the height of a control
+- `width` - (optional) the width of a control
+- `padding` - (optional) sets padding between a cell and a border of a ToggleGroup control
+
+### Example
+
+<iframe src="https://snippet.dhtmlx.com/yqi21ykr?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
+
+**Related article:** [ToggleGroup](form/togglegroup.md)
 

@@ -10,6 +10,6 @@ description: You can explore the blur method of the Checkbox Group control of Fo
 
 @signature: blur(): void;
 
-@example: form.getItem("checkboxGroup").blur();
+@example: form.getItem("CheckboxGroup").blur();
 
 @changelog: added in v.7.2

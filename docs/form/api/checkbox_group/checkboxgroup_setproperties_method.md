@@ -6,7 +6,7 @@ description: You can explore the setProperties method of the Checkbox Group cont
 
 # setProperties()
 
-@short:  allows changing available configuration attributes of the control dynamically
+@short:  allows changing the available configuration attributes of the control dynamically
 
 @signature: {'setProperties(arg?: string | object, properties?: object): void;'}
 
@@ -40,7 +40,7 @@ form.getItem("checkboxGroup").setProperties({
     }
 });
 
-// 2. Changes values in the configuration of the specified checkbox of CheckboxGroup
+// 2. Changes values in the configuration of the specified checkbox of a CheckboxGroup
 form.getItem("checkboxGroup").setProperties("first", {
     text: "New Text",
 	padding: 20
@@ -48,20 +48,11 @@ form.getItem("checkboxGroup").setProperties("first", {
 
 @descr:
 
-We recommend that you apply the second way of using the method if you want to change the configuration of a separate checkbox in the CheckboxGroup control:
-
-~~~js
-form.getItem("checkboxGroup").setProperties("first", {
-    text: "New Text",
-    padding: 20
-});
-~~~
-
 :::info
 The method invokes the [](form/api/checkbox_group/checkboxgroup_afterchangeproperties_event.md) and [](form/api/checkbox_group/checkboxgroup_beforechangeproperties_event.md) events.
 :::
 
-It is possible to change values of the following configuration attributes of the **CheckboxGroup** control:
+It is possible to change the values of the following configuration attributes of the **CheckboxGroup** control:
 
 ~~~js
 {
@@ -82,7 +73,7 @@ It is possible to change values of the following configuration attributes of the
 }
 ~~~
 
-It is possible to change values of the following configuration attributes of a **checkbox** of the CheckboxGroup control:
+It is possible to change the values of the following configuration attributes of a **checkbox** of the CheckboxGroup control:
 
 ~~~js
 {

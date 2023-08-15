@@ -10,9 +10,9 @@ A special button control that changes its state from pressed to the unpressed on
 
 ![Toggle button control](../assets/form/form_toggle.png)
 
-**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/6lsarcjc)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/hfmoolvw)
 
-**Related sample**: [Form. Toggle](https://snippet.dhtmlx.com/ap3ilv0i)
+**Related sample**: [Form. Toggle](https://snippet.dhtmlx.com/yqi21ykr)
 
 ## Adding Toggle
 

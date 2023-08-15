@@ -18,7 +18,7 @@ form.getItem("CheckboxGroup").show("checkbox_1");
 
 @descr:
 
-If **id** of the checkbox is not specified, the method shows CheckboxGroup with all its checkboxes.
+If the **id** of a checkbox is not specified, the method shows CheckboxGroup with all its checkboxes.
 
 **Related sample:** [Form. Hide/Show control](https://snippet.dhtmlx.com/w6rr8chf)
 
