@@ -902,6 +902,19 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 ### ToggleGroup events
 
+| Name                                             	 	   			   | Description                                             	 		   	     |
+| :------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
+| [](form/api/togglegroup/togglegroup_afterchangeproperties_event.md)  | @getshort(form/api/togglegroup/togglegroup_afterchangeproperties_event.md)  |
+| [](form/api/togglegroup/togglegroup_afterhide_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_afterhide_event.md)        	     |  
+| [](form/api/togglegroup/togglegroup_aftershow_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_aftershow_event.md)        	     |
+| [](form/api/togglegroup/togglegroup_beforechange_event.md)  	   	   | @getshort(form/api/togglegroup/togglegroup_beforechange_event.md)      	 |
+| [](form/api/togglegroup/togglegroup_beforechangeproperties_event.md) | @getshort(form/api/togglegroup/togglegroup_beforechangeproperties_event.md) |
+| [](form/api/togglegroup/togglegroup_beforehide_event.md)  	   	   | @getshort(form/api/togglegroup/togglegroup_beforehide_event.md)      		 |
+| [](form/api/togglegroup/togglegroup_beforeshow_event.md)  	   	   | @getshort(form/api/togglegroup/togglegroup_beforeshow_event.md)        	 |
+| [](form/api/togglegroup/togglegroup_blur_event.md)  	   			   | @getshort(form/api/togglegroup/togglegroup_blur_event.md)        		   	 |
+| [](form/api/togglegroup/togglegroup_change_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_change_event.md)        		 |
+| [](form/api/togglegroup/togglegroup_focus_event.md)  	   			   | @getshort(form/api/togglegroup/togglegroup_focus_event.md)        		     |
+| [](form/api/togglegroup/togglegroup_keydown_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_keydown_event.md)        		 |
 
 
 ### ToggleGroup properties

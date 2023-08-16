@@ -11,8 +11,8 @@ description: You can explore the beforeShow event of the Checkbox Group control 
 @signature: {'beforeShow: (value: {[id: string]: boolean | string}, id?: string) => boolean | void;'}
 
 @params:
-- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
-- `id?: string` - optional, the ID of the checkbox of the control
+- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where the <i>key</i> is the id of a checkbox and the <i>value</i> is the value/state of the checkbox.
+- `id?: string` - optional, the ID of a checkbox of the control
 
 @returns:
 Return `false` to prevent a control or its checkbox from being shown; otherwise, `true`.

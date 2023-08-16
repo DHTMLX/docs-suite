@@ -62,4 +62,4 @@ Check [the full list of methods of the ToggleGroup control](form/api/api_overvie
 
 ### Events
 
-Check [the full list of events of the ToggleGroup control].
+Check [the full list of events of the ToggleGroup control](form/api/api_overview.md#togglegroup-events).

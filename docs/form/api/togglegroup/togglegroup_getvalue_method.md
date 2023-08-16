@@ -14,7 +14,7 @@ description: You can explore the getValue method of the Toggle Group control of 
 - `id: string` - optional, the id of a toggle
 
 @returns:
-If the id of a toggle is specified, the method returns either a string|number with the current value of the checkbox, or a boolean value with the state of the toggle.
+If the id of a toggle is specified, the method returns either a string|number with the current value of the toggle, or a boolean value with the state of the toggle.
 
 If the id of a toggle is not specified, the method returns an object with the current values/states of toggles. The object contains a set of *key:value* pairs where the *key* is the id of a toggle and the *value* is either the value of a toggle or its state (if the value attribute is not specified for the toggle).
 

@@ -12,11 +12,13 @@ description: You can explore the keydown event of the Checkbox Group control of 
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id: string` - the id of the checkbox of the CheckboxGroup control
+- `id: string` - the id of a checkbox of the CheckboxGroup control
 
 @example:
 form.getItem("CheckboxGroup").events.on("keydown", function(event, id) {
     console.log(event, id);
 });
+
+@descr:
 
 @changelog: added in v7.2

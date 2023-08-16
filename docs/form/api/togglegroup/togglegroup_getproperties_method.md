@@ -49,7 +49,7 @@ const form = new dhx.Form("form_container", {
 // return the object of the ToggleGroup control 
 form.getItem("ToggleGroup").getProperties();
 
-// return the object of a checkbox of the ToggleGroup control 
+// return the object of a toggle of the ToggleGroup control 
 form.getItem("ToggleGroup").getProperties("second");
 
 @descr:

@@ -12,7 +12,7 @@ description: You can explore the setValue method of the Toggle Group control of 
 
 @params: 
 
-- `value: object` - the value to be set. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the state of the checkbox
+- `value: object` - the value to be set. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a toggle and <i>value</i> is the state of the toggle
 
 
 @example:

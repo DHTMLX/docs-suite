@@ -11,8 +11,8 @@ description: You can explore the focus event of the Checkbox Group control of Fo
 @signature: {'focus: (value: {[id: string]: boolean | string}, id: string) => void;'}
 
 @params:
-- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
-- `id: string` - the id of the checkbox of the CheckboxGroup control
+- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where the <i>key</i> is the id of a checkbox and the <i>value</i> is the value/state of the checkbox.
+- `id: string` - the id of a checkbox of the CheckboxGroup control
 
 @example:
 form.getItem("checkboxGroup").events.on("focus", (value, id) => {

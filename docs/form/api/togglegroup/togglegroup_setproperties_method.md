@@ -46,7 +46,7 @@ form.getItem("ToggleGroup").setProperties({
 @descr:
 
 :::info
-The method invokes events.
+The method invokes the [](form/api/togglegroup/togglegroup_afterchangeproperties_event.md) and [](form/api/togglegroup/togglegroup_beforechangeproperties_event.md) events.
 :::
 
 It is possible to change the values of the following configuration attributes of the **ToggleGroup** control:

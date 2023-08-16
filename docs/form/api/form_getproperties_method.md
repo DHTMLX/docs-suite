@@ -655,6 +655,25 @@ value: string | number
 
 You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
 
+## ToggleGroup
+
+The returned object of the **ToggleGroup** control can contain the following properties:
+
+~~~js
+{
+    css: string,
+    full: boolean,
+    gap: number,
+    height: string | number|"content",
+    multiselection: boolean,
+    options: object[],
+    padding: string | number,
+    width: string|number|"content"
+}
+~~~
+
+You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+
 **Related API**: [setProperties()](form/api/form_setproperties_method.md)
 
 @changelog: added in v7.0
