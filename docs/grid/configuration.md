@@ -908,6 +908,10 @@ const grid = new dhx.Grid("grid_container", {
 			<td><b>virtual</b></td>
 			<td>(<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</td>
 		</tr>
+		<tr>
+			<td><b>template</b></td>
+			<td>(<i>function</i>) a function which returns a template with content for the filter options. Takes an option item as a parameter</td>
+		</tr>
     </tbody>
 </table>
 <br/>

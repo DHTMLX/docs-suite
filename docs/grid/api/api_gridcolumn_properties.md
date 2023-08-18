@@ -33,6 +33,7 @@ columns:[
                     readonly?: boolean,
                     placeholder?: string,
                     virtual?: boolean,
+                    template?: function
                 },
                 customFilter?: (item: any, input: string) => boolean,
                 headerSort?: boolean,
@@ -124,6 +125,8 @@ columns:[
                 <ol>- <b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</ol>
                 <ol>- <b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</ol>
                 <ol>- <b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options</ol>
+                <ol>- <b>template</b> - (optional) a function which returns a template with content for the filter options. Takes an option item as a parameter: 
+                    <ul>- <b>item</b> - (object) option item</ul></ol>
             </li>
             <li><a href="../../configuration#customizing-headerfooter-filters"><b>customFilter</b></a> - (optional) a custom function for extended filtering. It takes two parameters:
                 <ol> - <b>item</b> - (required) a data item the value of which should be compared</ol>
