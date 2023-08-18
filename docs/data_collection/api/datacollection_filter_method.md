@@ -8,7 +8,7 @@ description: You can explore the filter method of DataCollection in the document
 
 @short: filters data items in a component
 
-@signature: {'filter(rule?: function | object, config?: object): void;'}
+@signature: {'filter(rule?: function | object, config?: object): string;'}
 
 @params:
 - `rule: function | object` - the filtering criteria
@@ -20,9 +20,14 @@ description: You can explore the filter method of DataCollection in the document
             - `value` - the value to compare (e.g. a column in a row for Grid)
             - `match` - a pattern to match
             - `item` - a data item the values of which should be compared (e.g. a row)
-- `config: object` - optional, defines the parameters of filtering. It may contain two properties: 
-    - `add: boolean` - defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-	- `smartFilter: boolean` defines whether a filtering rule will be applied after adding and editing items of the collection
+- `config: object` - optional, defines the parameters of filtering. It may contain the following properties: 
+    - `id: string` - optional, the id of the filter
+    - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
+    - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the resetFilter() method
+	- `smartFilter: boolean` - defines whether a filtering rule will be applied after adding and editing items of the collection. **Deprecated** since v8.2, check [Migration to newer versions](migration.md/#81--82) and replaced with the **permanent** property 
+    
+@returns:
+- `id: string` - the id of the filter
 
 @example:
 // filtering data by a function
@@ -35,7 +40,6 @@ grid.data.filter(function (item) {
     return item.a > 0 && item.b !== "Apple";
 }, {
     add: true,
-    smartFilter: true
 });
 
 // filtering data by the column
@@ -50,15 +54,10 @@ grid.data.filter({
     }
 }, {
     add: true,
-    smartFilter: true
 });
 
 @descr:
 
 **Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
 
-Calling the **filter()** method without parameters reverts the component to the initial state:
 
-~~~js
-grid.data.filter();
-~~~

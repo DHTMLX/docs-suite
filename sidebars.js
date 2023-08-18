@@ -4753,10 +4753,11 @@ module.exports = {
               "data_collection/api/datacollection_reduce_method",
               "data_collection/api/datacollection_remove_method",
               "data_collection/api/datacollection_removeall_method",
+              "data_collection/api/datacollection_resetfilter_method",
               "data_collection/api/datacollection_save_method",
               "data_collection/api/datacollection_serialize_method",
               "data_collection/api/datacollection_sort_method",
-              "data_collection/api/datacollection_update_method",
+              "data_collection/api/datacollection_update_method"
             ],
           },
           {
@@ -4944,6 +4945,7 @@ module.exports = {
               "tree_collection/api/treecollection_refreshitems_method",
               "tree_collection/api/treecollection_remove_method",
               "tree_collection/api/treecollection_removeall_method",
+              "tree_collection/api/treecollection_resetfilter_method",
               "tree_collection/api/treecollection_restoreorder_method",
               "tree_collection/api/treecollection_save_method",
               "tree_collection/api/treecollection_serialize_method",

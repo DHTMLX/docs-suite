@@ -8,7 +8,7 @@ description: You can explore the filter method of TreeCollection in the document
 
 @short: filters controls by some criteria
 
-@signature: {'filter(rule?: function | object, config?: object): void;'}
+@signature: {'filter(rule?: function | object, config?: object): string;'}
 
 @params:
 - `rule: function | object` - the filtering criteria
@@ -23,8 +23,13 @@ description: You can explore the filter method of TreeCollection in the document
 - `config: object` - optional, defines the parameters of filtering. The parameter may contain the following properties:
 	- `type: string` - optional, defines the area the filtering will be applied: "all", "level", "leafs"
 	- `level: number` - optional, the level the filtering will be applied to
-	- `add: boolean` - defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-	- `smartFilter: boolean` - defines whether a filtering rule will be applied after adding and editing items of the collection
+	- `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
+	- `id: string` - optional, the id of the filter
+	- `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the resetFilter() method
+	- `smartFilter: boolean` - (**deprecated** since v8.2, check [Migration to newer versions](migration.md/#81--82)) optional, defines whether a filtering rule will be applied after adding and editing items of the collection
+
+@returns:
+- `id: string` - the id of the filter
 
 @example:
 // filtering data by a function
@@ -41,9 +46,3 @@ treeGrid.data.filter({
 @descr:
 
 **Related sample**: [TreeGrid. Filter](https://snippet.dhtmlx.com/epsslwcd)
-
-Calling the **filter()** method without parameters reverts the component to the initial state:
-
-~~~js
-tree.data.filter();    // show all
-~~~

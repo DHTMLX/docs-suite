@@ -6,6 +6,17 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+8.1 ->8.2
+-----------
+
+### DataCollection/TreeCollection
+
+Before v8.2, the **smartFilter** property of the [filter()](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
+
+Since v8.2 this property is **deprecated** and replaced with the [**permanent**](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the add/update/parse methods.
+
+Besides, the **id** property has been added into the configuration object of the [filter()](data_collection/api/datacollection_filter_method.md) method.
+
 7.3 -> 8.0
 ------------
 

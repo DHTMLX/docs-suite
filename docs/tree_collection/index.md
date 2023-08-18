@@ -36,6 +36,7 @@ A set of API methods and events that allow you to work with data of a component 
 | [](api/treecollection_refreshitems_method.md) | @getshort(api/treecollection_refreshitems_method.md) |
 | [](api/treecollection_remove_method.md)       | @getshort(api/treecollection_remove_method.md)       |
 | [](api/treecollection_removeall_method.md)    | @getshort(api/treecollection_removeall_method.md)    |
+| [](api/treecollection_resetfilter_method.md)  | @getshort(api/treecollection_resetfilter_method.md)  |
 | [](api/treecollection_restoreorder_method.md) | @getshort(api/treecollection_restoreorder_method.md) |
 | [](api/treecollection_save_method.md)         | @getshort(api/treecollection_save_method.md)         |
 | [](api/treecollection_serialize_method.md)    | @getshort(api/treecollection_serialize_method.md)    |

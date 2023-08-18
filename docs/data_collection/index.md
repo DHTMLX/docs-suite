@@ -34,6 +34,7 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_reduce_method.md)         | @getshort(api/datacollection_reduce_method.md)         |
 | [](api/datacollection_remove_method.md)         | @getshort(api/datacollection_remove_method.md)         |
 | [](api/datacollection_removeall_method.md)      | @getshort(api/datacollection_removeall_method.md)      |
+| [](api/datacollection_resetfilter_method.md)    | @getshort(api/datacollection_resetfilter_method.md)    |
 | [](api/datacollection_save_method.md)           | @getshort(api/datacollection_save_method.md)           |
 | [](api/datacollection_serialize_method.md)      | @getshort(api/datacollection_serialize_method.md)      |
 | [](api/datacollection_sort_method.md)           | @getshort(api/datacollection_sort_method.md)           |

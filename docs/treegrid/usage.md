@@ -334,7 +334,7 @@ You can filter grid data by the specified criteria with the help of the **filter
 			<td><b>rule</b></td>
 			<td>(<i>function | object</i>) the filtering criteria. It can be:
 			<ul>
-			<li>a filtering function. It takes as a parameter a data item and returns an object with a filtering rule.</li>
+			<li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li>
 				or:
 				<li>an object with the following attributes:<br/>
 					- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>
@@ -348,11 +348,12 @@ You can filter grid data by the specified criteria with the help of the **filter
 		</tr>
         <tr>
 			<td><b>config</b></td>
-			<td>(<i>object</i>) optional, an object with two properties:
+			<td>(<i>object</i>) optional, an object with the following properties:
 				<ul><li><b>type</b> (<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</li>
 				<li><b>level</b> (<i>number</i>) optional, the level the filtering will be applied to</li>
-				<li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li>
-				<li><b>multiple</b> (<i>boolean</i>) defines whether a filtering rule will be added to the already applied filters (<i>true</i>, default), or previous filters should be removed in advance (<i>false</i>)</li>
+				<li><b>add</b> (<i>boolean</i>) optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li>
+				<li><b>id</b> (<i>string</i>) optional, the id of the filter</li>
+				<li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li>
 				</ul>
 				</td>
 		</tr>
