@@ -23,8 +23,8 @@ description: You can explore the filter method of DataCollection in the document
 - `config: object` - optional, defines the parameters of filtering. It may contain the following properties: 
     - `id: string` - optional, the id of the filter
     - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
-    - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the resetFilter() method
-	- `smartFilter: boolean` - defines whether a filtering rule will be applied after adding and editing items of the collection. **Deprecated** since v8.2, check [Migration to newer versions](migration.md/#81--82) and replaced with the **permanent** property 
+    - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](data_collection/api/datacollection_resetfilter_method.md) method
+	- `smartFilter: boolean` - defines whether a filtering rule will be applied after adding and editing items of the collection. **Deprecated since v8.2** and replaced with the **permanent** property, check the [Migration](migration.md/#81--82) article
     
 @returns:
 - `id: string` - the id of the filter

@@ -13,9 +13,13 @@ Version 8.2
 
 Released on August  , 2023
 
-<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-2/" target="_blank">Review of release on the blog</a>
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-2/" target="_blank">Review of the release on the blog</a>
 
 ### New functionality
+
+#### DataCollection/TreeCollection
+
+- New [filter](data_collection/api/datacollection_filter_event.md) event and [resetFilter](data_collection/api/datacollection_resetfilter_method.md) method
 
 #### Grid/TreeGrid
 
@@ -27,15 +31,15 @@ Released on August  , 2023
 - New [Fieldset](form/fieldset.md) control
 - New [Toggle](form/toggle.md) and [ToggleGroup](form/togglegroup.md) controls
 
-#### DataCollection/TreeCollection
-
-- New [filter](data_collection/api/datacollection_filter_event.md) event 
-
 ### Updates
 
 #### Chart
 
 - The [series](chart/api/chart_series_config.md) configuration property is extended with the **label** option for setting the text of the legend for a series (for  "line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter" chart types)
+
+#### DataCollection/TreeCollection
+
+- Functionality of the [filter](data_collection/api/datacollection_filter_method.md) method is updated. Its second parameter - the **config** object gets the *permanent* property instead of the *smartFilter* one, and the new **id** property. Check the [Migration](migration.md#81--82) article for details
 
 #### Form 
 
