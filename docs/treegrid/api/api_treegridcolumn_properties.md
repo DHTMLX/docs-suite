@@ -10,67 +10,67 @@ description: You can explore the Column properties of TreeGrid in the documentat
 
 ~~~js
 columns:[
-    {
-        id: string | number,
-	    width?: number,
-		minWidth?: number,
-	    maxWidth?: number,
-		autoWidth?: boolean,
-	    header: [
-            {
-                text?: string | number,
-                tooltip?: boolean,
-                tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
-	            align?: "left" | "center" | "right",
-	            colspan?: number,
-	            rowspan?: number,
-	            css?: any,
-	            content?: "inputFilter" | "selectFilter" | "comboFilter" |
-                          "avg" | "sum" | "max" | "min" | "count" | string,
-	            filterConfig?: {
-	                filter?: (item: any, input: string) => boolean,
-	                multiselection?: boolean,
-	                readonly?: boolean,
-	                placeholder?: string,
-	                virtual?: boolean,
-                },
-	            customFilter?: (item: any, input: string) => boolean,
-	            headerSort?: boolean,
-	            sortAs?: (cellValue: any) => string | number,
-            }
-        ],
-	    footer?: [
-            {
-                text?: string | number,
-                tooltip?: boolean,
-                tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
-	            css?: any,
-	            content?: "inputFilter" | "selectFilter" | "comboFilter" |
-                          "avg" | "sum" | "max" | "min" | "count" | string,
-	            customFilter?: (item: any, input: string) => boolean,
-            }
-        ],
-	    type?: "string" | "number" | "boolean" | "date" | "percent",
-	    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea",
-        format?: string,
-	    options?: (string | { id: string | number, value: string })[] |
-                  (col: object, row?: object) => (string | { id: string | number, value: string })[],
-	    editorConfig?: { newOptions?: boolean } | ICalendarConfig,
-		adjust?: "data" | "header" | "footer" | boolean,
-	    align?: "left" | "center" | "right",
-		htmlEnable?: boolean,
-		hidden?: boolean,
-	    draggable?: boolean,
-	    editable?: boolean,
-	    resizable?: boolean,
-	    sortable?: boolean,
-		mark?: { min?: string, max?: string } |
-               (cell: any, columnCells: any[], row?: object, column?: object) => string,
-	    template?: (cellValue: any, row: object, col: object) => string,
-	    tooltip?: boolean,
-	    tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
-    },
-    // more column objects
+  {
+    id: string | number,
+    width?: number,
+	minWidth?: number,
+    maxWidth?: number,
+	autoWidth?: boolean,
+    header: [
+        {
+            text?: string | number,
+            tooltip?: boolean,
+            tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
+            align?: "left" | "center" | "right",
+            colspan?: number,
+            rowspan?: number,
+            css?: any,
+            content?: "inputFilter" | "selectFilter" | "comboFilter" |
+                      "avg" | "sum" | "max" | "min" | "count" | string,
+            filterConfig?: {
+                filter?: (item: any, input: string) => boolean,
+                multiselection?: boolean,
+                readonly?: boolean,
+                placeholder?: string,
+                virtual?: boolean,
+            },
+            customFilter?: (item: any, input: string) => boolean,
+            headerSort?: boolean,
+            sortAs?: (cellValue: any) => string | number,
+        }
+    ],
+    footer?: [
+        {
+            text?: string | number,
+            tooltip?: boolean,
+            tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
+            css?: any,
+            content?: "inputFilter" | "selectFilter" | "comboFilter" |
+                      "avg" | "sum" | "max" | "min" | "count" | string,
+            customFilter?: (item: any, input: string) => boolean,
+        }
+    ],
+    type?: "string" | "number" | "boolean" | "date" | "percent",
+    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea",
+    format?: string,
+    options?: (string | { id: string | number, value: string })[] |
+              (col: object, row?: object) => (string | { id: string | number, value: string })[],
+    editorConfig?: { newOptions?: boolean } | ICalendarConfig,
+	adjust?: "data" | "header" | "footer" | boolean,
+    align?: "left" | "center" | "right",
+	htmlEnable?: boolean,
+	hidden?: boolean,
+    draggable?: boolean,
+    editable?: boolean,
+    resizable?: boolean,
+    sortable?: boolean,
+	mark?: { min?: string, max?: string } |
+           (cell: any, columnCells: any[], row?: object, column?: object) => string,
+    template?: (cellValue: any, row: object, col: object) => string,
+    tooltip?: boolean,
+    tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
+  },
+  // more column objects
 ]
 ~~~
 

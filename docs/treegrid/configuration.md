@@ -1281,7 +1281,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ## Tooltip
 
-### Grid tooltips
+### TreeGrid tooltips
 
 The default configuration of TreeGrid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [](treegrid/api/treegrid_tooltip_config.md) configuration property of TreeGrid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
 
