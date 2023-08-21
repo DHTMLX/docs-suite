@@ -8,6 +8,14 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.1.10 
+---------------
+
+Released on August 21, 2023
+
+- Combobox. Fix the issue with the default icon of an option (set via the "src" or "icon" properties) not displayed in the input field
+- Toolbar. Fix the problem with the setState() method not applying a value for DatePicker
+
 Version 8.1.9 
 ---------------
 
