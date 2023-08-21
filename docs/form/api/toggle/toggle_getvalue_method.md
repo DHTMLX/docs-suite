@@ -44,7 +44,7 @@ const state = form.getItem("toggle").getValue(); // -> true/false
 
 - If the **value** property is defined, the method returns a string/number value. In addition, if the **selected** option is set to *true*, the method returns the value of a control, otherwise - returns an empty string (""):
 
-~~~js {8-9}
+~~~js {10-11}
 const form = new dhx.Form("form_container", {
     rows: [
         {

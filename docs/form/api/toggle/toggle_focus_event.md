@@ -8,7 +8,7 @@ description: You can explore the focus Toggle event of Form in the documentation
 
 @short: fires when a Toggle control has received focus
 
-@signature: focus: (value: string | number | boolean) => void;
+@signature: {'focus: (value: string | number | boolean) => void;'}
 
 @params:
 - `value: string | number | boolean` - the current value of the control

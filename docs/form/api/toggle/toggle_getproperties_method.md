@@ -33,16 +33,18 @@ form.getItem("toggle").getProperties();
 The returned object of the **Toggle** control looks like:
 
 ~~~js
-css: "",
-width: "content",
-height: "content",
-padding: 0,
-full: false,
-text: "",
-icon: "dxi dxi-eye",
-offText: "",
-offIcon: "dxi dxi-eye-off",
-value: undefined
+{
+	css: "",
+	width: "content",
+	height: "content",
+	padding: 0,
+	full: false,
+	text: "",
+	icon: "dxi dxi-eye",
+	offText: "",
+	offIcon: "dxi dxi-eye-off",
+	value: undefined
+}
 ~~~
 
 You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).

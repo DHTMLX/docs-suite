@@ -25,4 +25,4 @@ const value = form.getItem("avatar").getValue();
 
 @descr:
 
-The returned object may contains the properties listed in the [value](form/api/avatar/api_avatar_properties.md/#value) configuration property.
+The returned object may contains the properties listed in the description of the [value](form/api/avatar/api_avatar_properties.md/#value) configuration object.

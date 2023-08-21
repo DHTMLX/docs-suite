@@ -870,13 +870,16 @@ module.exports = {
                      "form/api/avatar/avatar_beforehide_event", 
                      "form/api/avatar/avatar_beforeshow_event",
                      "form/api/avatar/avatar_beforeuploadfile_event",
-                     "form/api/avatar/avatar_beforevalidate_event",  
+                     "form/api/avatar/avatar_beforevalidate_event",
+                     "form/api/avatar/avatar_blur_event",
                      "form/api/avatar/avatar_change_event", 
+                     "form/api/avatar/avatar_focus_event",
+                     "form/api/avatar/avatar_keydown_event",
                      "form/api/avatar/avatar_uploadbegin_event",
                      "form/api/avatar/avatar_uploadcomplete_event",
                      "form/api/avatar/avatar_uploadfail_event",
                      "form/api/avatar/avatar_uploadfile_event",
-                     "form/api/avatar/avatar_uploadprogress_event",
+                     "form/api/avatar/avatar_uploadprogress_event"
                     ],
                   },
                   {

@@ -16,7 +16,7 @@ description: You can explore the isChecked method of the Toggle Group control of
 @returns:
 Either a boolean value or an object.
 
-If the id of a toggle is specified, the method returns a boolean value . `true`, if the toggle is selected; otherwise, `false`.
+If the id of a toggle is specified, the method returns a boolean value `true`, if the toggle is selected; otherwise, `false`.
 
 If the id of a toggle is not specified, the method returns an object with a set of *key:value* pairs where the *key* is the id of a toggle and the *value* is the state of the toggle.
 

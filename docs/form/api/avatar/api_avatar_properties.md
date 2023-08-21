@@ -10,49 +10,49 @@ description: You can explore the Properties of the Avatar control of Form in the
 
 ~~~js
 {
-    type: "avatar";
-    name?: string;
-    id?: string;
+    type: "avatar",
+    name?: string,
+    id?: string,
 
-    target?: string;
-    value?: object;
+    target?: string,
+    value?: object,
 
-    hidden?: boolean;
-    disabled?: boolean;
-    readOnly?: boolean;
+    hidden?: boolean,
+    disabled?: boolean,
+    readOnly?: boolean,
 
-    removeIcon?: boolean;
-    circle?: boolean;
-    icon?: string;
-    placeholder?: string;
-    preview?: string;
-    alt?: string;
-    size?: "small" | "medium" | "large" | number;
+    removeIcon?: boolean,
+    circle?: boolean,
+    icon?: string,
+    placeholder?: string,
+    preview?: string,
+    alt?: string,
+    size?: "small" | "medium" | "large" | number,
     
-    css?: string;
-    width?: string | number | "content";
-    height?: string | number | "content";
-    padding?: string | number;
+    css?: string,
+    width?: string | number | "content",
+    height?: string | number | "content",
+    padding?: string | number,
 
-    label?: string;
-    labelWidth?: string | number;
-    labelPosition?: "left" | "top";
-    hiddenLabel?: boolean;
-    helpMessage?: string;
-    required?: boolean;
+    label?: string,
+    labelWidth?: string | number,
+    labelPosition?: "left" | "top",
+    hiddenLabel?: boolean,
+    helpMessage?: string,
+    required?: boolean,
 
-    preMessage?: string;
-    successMessage?: string;
-    errorMessage?: string;
+    preMessage?: string,
+    successMessage?: string,
+    errorMessage?: string,
 
-    validation?: (value: object) => boolean;
+    validation?: (value: object) => boolean,
 
-    accept?: string;
-    fieldName?: string;
-    autosend?: boolean;
-    params?: { [key: string]: any };
-    headerParams?: { [key: string]: any };
-    updateFromResponse?: boolean;
+    accept?: string,
+    fieldName?: string,
+    autosend?: boolean,
+    params?: { [key: string]: any },
+    headerParams?: { [key: string]: any },
+    updateFromResponse?: boolean
 }
 ~~~
 
@@ -86,7 +86,7 @@ description: You can explore the Properties of the Avatar control of Form in the
                     <li><b>path</b> - (optional) the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li>
                     <li><b>status</b> - (optional) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
                     <li><b>progress</b> - (optional) the progress of the file upload</li>
-                    <li><b>request</b> - (optional) an XMLHttpRequest object sent to server when an upload begins</li>
+                    <li><b>request</b> - (optional) an XMLHttpRequest object sent to the server when an upload begins</li>
                 </ul>
             </td>
         </tr>

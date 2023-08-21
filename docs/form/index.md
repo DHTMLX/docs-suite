@@ -60,6 +60,8 @@ Discusses the creation of Form controls and the possibilities of manipulating th
 - [](form/text.md)
 - [](form/textarea.md)
 - [](form/timepicker.md)
+- [](form/toggle.md)
+- [](form/togglegroup.md)
 
 ## Other
 

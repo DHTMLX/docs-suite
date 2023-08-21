@@ -108,7 +108,10 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/avatar/avatar_beforeshow_event.md)  		 	 | @getshort(form/api/avatar/avatar_beforeshow_event.md)  			 |
 | [](form/api/avatar/avatar_beforeuploadfile_event.md)  	 | @getshort(form/api/avatar/avatar_beforeuploadfile_event.md)  	 |
 | [](form/api/avatar/avatar_beforevalidate_event.md)  		 | @getshort(form/api/avatar/avatar_beforevalidate_event.md)  		 |
+| [](form/api/avatar/avatar_blur_event.md)  		 		 | @getshort(form/api/avatar/avatar_blur_event.md)  		 	     |
 | [](form/api/avatar/avatar_change_event.md)  		 		 | @getshort(form/api/avatar/avatar_change_event.md)  		 		 |
+| [](form/api/avatar/avatar_focus_event.md)  		 		 | @getshort(form/api/avatar/avatar_focus_event.md)  		 	     |
+| [](form/api/avatar/avatar_keydown_event.md)  		 		 | @getshort(form/api/avatar/avatar_keydown_event.md)  		 	     |
 | [](form/api/avatar/avatar_uploadbegin_event.md)  		 	 | @getshort(form/api/avatar/avatar_uploadbegin_event.md)  		 	 |
 | [](form/api/avatar/avatar_uploadcomplete_event.md)  		 | @getshort(form/api/avatar/avatar_uploadcomplete_event.md)  		 |
 | [](form/api/avatar/avatar_uploadfail_event.md)  		  	 | @getshort(form/api/avatar/avatar_uploadfail_event.md)  		 	 |

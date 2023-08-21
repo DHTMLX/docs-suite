@@ -29,3 +29,5 @@ When called without the **silent** parameter or with this parameter set to *fals
 form.getItem("avatar").validate(); // -> true/false
 form.getItem("avatar").validate(false); // -> true/false
 ~~~
+
+**Related sample**: [Avatar. Validation](https://snippet.dhtmlx.com/vfjjndbp)

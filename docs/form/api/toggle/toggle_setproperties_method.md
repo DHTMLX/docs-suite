@@ -29,16 +29,18 @@ The method invokes the [afterChangeProperties](form/api/toggle/toggle_afterchang
 It is possible to change values of the following configuration attributes of the **Toggle** control:
 
 ~~~js
-css: string,
-width: string | number | "content",
-height: string | number | "content",
-padding: string | number,
-full: boolean,
-text: string,
-icon: string,
-offText: string,
-offIcon: string,
-value: string | number
+{
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    full: boolean,
+    text: string,
+    icon: string,
+    offText: string,
+    offIcon: string,
+    value: string | number
+}
 ~~~
 
 You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).

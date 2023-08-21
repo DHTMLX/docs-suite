@@ -54,6 +54,8 @@ Released on August  , 2023
 - Grid/TreeGrid. Fix the functionality of comboFilter and selectFilter that presupposes displaying options in these filters according to the current filtered state of DataCollection
 - Grid/TreeGrid. Fix the issue with triggering the **change** event after filtering data (after selecting the filter)
 - Grid/TreeGrid. Fix the issue with incorrect header tooltip rendering due to the use of a colspan
+- Grid/TreeGrid. Fix the issue with incorrect displaying of header spans in the fixed columns
+- Toolbar. Fix the problem with not displaying the expand triangle icon on adding sub-items into an element placed lower than the second level
 
 
 Version 8.1.8 

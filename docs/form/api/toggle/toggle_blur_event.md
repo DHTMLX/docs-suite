@@ -8,7 +8,7 @@ description: You can explore the blur event of the Toggle control of Form in the
 
 @short: fires when a Toggle control has lost focus
 
-@signature: blur: (value: string | number | boolean) => void;
+@signature: {'blur: (value: string | number | boolean) => void;'}
 
 @params:
 - `value: string | number | boolean` - the current value of the control
