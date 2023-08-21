@@ -12,7 +12,7 @@ description: You can explore the forEach method of the Fieldset control of Form 
 
 @params:
 
-- `callback: function` - a function that will iterate over the elements of the fieldset. It takes three parameters:
+- `callback: function` - a function that will iterate over the elements of the fieldset. It is called with the following arguments:
 	- `item: object` - the object of an element (control) 
 	- `index: number` - the index of an item
 	- `array: object[]` - an array of iterated elements

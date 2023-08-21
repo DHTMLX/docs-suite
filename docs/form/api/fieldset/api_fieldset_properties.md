@@ -10,23 +10,23 @@ description: You can explore the Properties of the Fieldset control of Form in t
 
 ~~~js
 {
-    type: "fieldset";
-    name?: string;
-    id?: string;
+    type: "fieldset",
+    name?: string,
+    id?: string,
 
-    hidden?: boolean;
-    disabled?: boolean;
+    hidden?: boolean,
+    disabled?: boolean,
 
-    css?: string;
-    width?: string | number | "content";
-    height?: string | number | "content";
-    padding?: string | number;
+    css?: string,
+    width?: string | number | "content",
+    height?: string | number | "content",
+    padding?: string | number,
 
-    label?: string;
-    labelAlignment?: "left" | "right" | "center";
-    rows?: IBlock;
-    cols?: IBlock;
-    align?: "start" | "center" | "end" | "between" | "around" | "evenly";
+    label?: string,
+    labelAlignment?: "left" | "right" | "center",
+    rows?: IBlock,
+    cols?: IBlock,
+    align?: "start" | "center" | "end" | "between" | "around" | "evenly"
 }
 ~~~
 
@@ -36,7 +36,7 @@ description: You can explore the Properties of the Fieldset control of Form in t
 - `name` - (optional) the name of a control
 - `id` - (optional) the id of a control, auto-generated if not set
 - `hidden` - (optional) defines whether a control is hidden
-- `disabled` - (optional) defines whether a control is enabled (false) or disabled (true)
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*)
 - `css` - (optional) the name of a CSS class(es) applied to the control group
 - `width` - (optional) sets the width of the control group
 - `height` - (optional) sets the height of the control group 

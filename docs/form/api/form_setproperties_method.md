@@ -76,6 +76,46 @@ form.setProperties({
 });
 ```
 
+## Avatar
+
+It is possible to change the following configuration attributes of the **Avatar** control:
+
+~~~js
+{
+	css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    label: string,
+    labelWidth: string | number,
+    labelPosition: "left" | "top",
+    hiddenLabel: boolean,
+    helpMessage: string
+    required: boolean,
+    preMessage: string,
+    successMessage: string,
+    errorMessage: string,
+    validation: (value: object) => boolean,
+    readOnly: boolean,
+    removeIcon: boolean,
+    size: "small" | "medium" | "large" | number,
+    circle: boolean,
+    alt: string,
+    icon: string,
+    placeholder: string,
+    preview: string,
+    accept: string,
+    target: string
+    fieldName: string,
+    autosend: boolean,
+    params: { [key: string]: any },
+    headerParams: { [key: string]: any },
+    updateFromResponse: boolean
+}
+~~~
+
+You will find the description of these properties [here](form/api/avatar/api_avatar_properties.md).
+
 ## Button
 
 It is possible to change the following configuration attributes of the **Button** control:
@@ -285,6 +325,25 @@ It is possible to change the following configuration attributes of the **Contain
 ~~~
 
 You will find the description of these properties [here](form/api/container/api_container_properties.md).
+
+## Fieldset
+
+It is possible to change the following configuration attributes of the **Fieldset** control:
+
+~~~js
+{
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+
+    label: string,
+    labelAlignment: "left" | "right" | "center",
+    align: "start" | "center" | "end" | "between" | "around" | "evenly"
+}
+~~~
+
+You will find the description of these properties [here](form/api/fieldset/api_fieldset_properties.md).
 
 ## Input
 
@@ -542,6 +601,44 @@ It is possible to change the following configuration attributes of the **TimePic
 ~~~
 
 You will find the description of these properties [here](form/api/timepicker/api_timepicker_properties.md).
+
+## Toggle
+
+It is possible to change the following configuration attributes of the **Toggle** control:
+
+~~~js
+css: string,
+width: string | number | "content",
+height: string | number | "content",
+padding: string | number,
+full: boolean,
+text: string,
+icon: string,
+offText: string,
+offIcon: string,
+value: string | number
+~~~
+
+You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
+
+## ToggleGroup
+
+It is possible to change the following configuration attributes of the **ToggleGroup** control:
+
+~~~js
+{
+    css: string,
+    full: boolean,
+    gap: number,
+    height: string | number|"content",
+    multiselection: boolean,
+    options: object[],
+    padding: string | number,
+    width: string|number|"content"
+}
+~~~
+
+You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
 
 **Related API**: [getProperties()](form/api/form_getproperties_method.md)
 
