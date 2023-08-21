@@ -1297,7 +1297,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
 
-It is also possible to control the header and footer tooltips, independently. There are the [headerTooltip] and [footerTooltip] TreeGrid configuration properties, that you can use for this purpose:
+It is also possible to control the header and footer tooltips, independently. There are the [headerTooltip](treegrid/api/treegrid_headertooltip_config.md) and [footerTooltip](treegrid/api/treegrid_footertooltip_config.md) TreeGrid configuration properties, that you can use for this purpose:
 
 ~~~js
 const treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -1315,7 +1315,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](treegrid/configuration.md#columns) or [spans](treegrid/configuration.md#spans) accordingly:
 
-~~~js
+~~~js {3,9}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 280, id: "name", header: [{ text: "Book Name" }], tooltip: true },
@@ -1332,7 +1332,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the **tooltip** property in the corresponding header/footer object inside the column:
 
-~~~js
+~~~js {4}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // Enables a tooltip for the country title
@@ -1347,7 +1347,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 What is more, you can specify a necessary template for the header/footer tooltip via the **tooltipTemplate** configuration property, as in:
 
-~~~js
+~~~js {8-10,16}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
@@ -1382,7 +1382,7 @@ the methods processing column values: "avg" | "sum" | "max" | "min" | "count". W
 
 Check the example below:
 
-~~~js
+~~~js {14,27}
 const balanceTemplate = value => {
     return value > 0
         ? `<div style='color:green'>⬆ $${value}</div>`

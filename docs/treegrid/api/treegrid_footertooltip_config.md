@@ -23,6 +23,6 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 
 @descr:
-The `footerTooltip` config redefines the value of the `tooltip` config for the footer tooltips.
+The `footerTooltip` config redefines the value of the [`tooltip`](treegrid/api/treegrid_tooltip_config.md) config for the footer tooltips.
 
 @changelog: added in v8.2 

@@ -23,6 +23,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 @descr:
-The `headerTooltip` config redefines the value of the `tooltip` config for the header tooltips.
+The `headerTooltip` config redefines the value of the [`tooltip`](grid/api/grid_tooltip_config.md) config for the header tooltips.
 
 @changelog: added in v8.2

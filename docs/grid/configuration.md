@@ -1513,7 +1513,7 @@ const grid = new dhx.Grid("grid_container", {
 
 The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the **tooltip** property in the corresponding header/footer object inside the column:
 
-~~~js
+~~~js {4}
 const grid = new dhx.Grid("grid", {
     columns: [
     	// Enables a tooltip for the country title
@@ -1528,7 +1528,7 @@ const grid = new dhx.Grid("grid", {
 
 What is more, you can specify a necessary template for the header/footer tooltip via the **tooltipTemplate** configuration property, as in:
 
-~~~js
+~~~js {8-10,16}
 const grid = new dhx.Grid("grid", {
     columns: [
         {
@@ -1563,7 +1563,7 @@ the methods processing column values: "avg" | "sum" | "max" | "min" | "count". W
 
 Check the example below:
 
-~~~js
+~~~js {14,27}
 const balanceTemplate = value => {
     return value > 0
         ? `<div style='color:green'>⬆ $${value}</div>`
