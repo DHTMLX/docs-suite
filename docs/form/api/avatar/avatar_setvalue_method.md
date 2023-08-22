@@ -17,7 +17,7 @@ description: You can explore the setValue method of the Avatar control of Form i
 form.getItem("avatar").setValue([
     {
         "id": "image",
-        "src": "http://domen/upload/files/image.png",
+        "src": "https://server.domain/upload/image.jpg",
         "status": "uploaded"
     }
 ]);

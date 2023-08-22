@@ -6,17 +6,17 @@ description: You can explore the forEach method of the Fieldset control of Form 
 
 # forEach()
 
-@short: allows iterating through all the nested elements
+@short: allows iterating through all the nested items
 
 @signature: {'forEach(callback: (item: obj, index: number, array: obj[]) => void, tree?: boolean): void;'}
 
 @params:
 
-- `callback: function` - a function that will iterate over the elements of the fieldset. It is called with the following arguments:
-	- `item: object` - the object of an element (control) 
+- `callback: function` - a function that will iterate over the items of the fieldset. It is called with the following arguments:
+	- `item: object` - the object of an item 
 	- `index: number` - the index of an item
-	- `array: object[]` - an array of iterated elements
-- `tree: boolean` - defines, whether all the nested elements should be iterated, *false* by default
+	- `array: object[]` - an array of iterated items
+- `tree: boolean` - defines, whether all the nested items should be iterated, *false* by default
 
 @example:
 form.getItem("fieldset").forEach((item, index, arr) => {

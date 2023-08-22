@@ -76,6 +76,19 @@ description: You can explore the Properties of the Toggle Group control of Form 
 - `width` - (optional) the width of a control
 - `padding` - (optional) sets padding between a cell and a border of a ToggleGroup control
 
+### Properties of a Toggle of ToggleGroup
+
+- `id` - (optional) the id of a control, auto-generated if not set
+- `hidden`- (optional) defines whether a toggle button is hidden, *false* by default
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
+- `selected` - (optional) defines the initial state of the toggle as selected (pressed), *false* by default
+- `full` - (optional) defines whether the toggle will be extended to the width specified by the **width** property, *false* by default
+- `text` - (optional) sets a text inside the toggle. When initialized together with the **offText** property, the specified text will be rendered in the selected (pressed) state, "" (empty string) by default
+- `offText` - (optional) sets the text that will be rendered in the unselected (unpressed) state of the toggle, "" (empty string) by default
+- `icon` - (optional) sets the class of an icon displayed inside the toggle. When initialized together with the **offIcon** property, the specified classes of icons will be rendered in the selected (pressed) state of the toggle,"" (empty string) by default
+- `offIcon` - (optional) sets the class of an icon that will be rendered in the unselected (unpressed) state of the toggle, "" (empty string) by default
+- `value` - (optional) specifies the value in the selected (pressed) state. If not defined, the **selected** property with the boolean value is used instead, *undefined* by default
+
 ### Example
 
 <iframe src="https://snippet.dhtmlx.com/yqi21ykr?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>

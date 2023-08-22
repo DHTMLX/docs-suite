@@ -126,16 +126,16 @@ It is possible to change the following configuration attributes of the **Button*
 	color: string,
 	css: string,
 	full: boolean,
-	height: string|number|"content",
+	height: string | number | "content",
 	icon: string,
 	loading: boolean,
-	padding: string|number,
+	padding: string | number,
 	size: string,
 	submit: boolean,
 	text: string,
 	url: string,
 	view: string,
-	width: string|number|"content",
+	width: string | number | "content",
 }
 ~~~
 
@@ -152,16 +152,16 @@ It is possible to change the following configuration attributes of the **DatePic
 	disabledDates: function,
 	editable: boolean,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean, 
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	mark: function,
 	mode: string,
-	padding: string|number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	required: boolean,
@@ -173,7 +173,7 @@ It is possible to change the following configuration attributes of the **DatePic
 	valueFormat: string,
 	weekNumbers: boolean,
 	weekStart: string,
-	width: string|number|"content",
+	width: string | number | "content"
 }
 ~~~
 
@@ -187,18 +187,18 @@ It is possible to change the following configuration attributes of the **Checkbo
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
 	text: string,
-	width: string|number|"content",
+	width: string | number | "content",
 }
 ~~~
 
@@ -223,7 +223,7 @@ It is possible to change the following configuration attributes of the **Checkbo
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -256,22 +256,22 @@ It is possible to change the following configuration attributes of the **ColorPi
 	editable: boolean,
 	errorMessage: string,
 	grayShades: boolean,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	mode: string,
-	padding: string|number,
+	padding: string | number,
 	palette: array,
 	placeholder: string,
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
 	validation: function,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -286,17 +286,17 @@ It is possible to change the following configuration attributes of the **Combo**
 	css: string,
 	errorMessage: string,
 	filter: function, 
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	itemHeight: number,
 	itemsCount: boolean | function,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	listHeight: number,
 	multiselection: boolean,
-	padding: string|number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	readOnly: boolean,
@@ -306,7 +306,7 @@ It is possible to change the following configuration attributes of the **Combo**
 	template: function,
 	validation: function,
 	virtual: boolean,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -354,26 +354,26 @@ It is possible to change the following configuration attributes of the **Input**
 	autocomplete: boolean,
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	inputType: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	max: string|number,
-	maxlength: string|number,
-	min: string|number,
-	minlength: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	max: string | number,
+	maxlength: string | number,
+	min: string | number,
+	minlength: string | number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	readOnly: boolean,
 	required: boolean,
 	successMessage: string,
-	validation: object|function,
-	width: string|number|"content"
+	validation: object | function,
+	width: string | number | "content"
 }
 ~~~
 
@@ -387,18 +387,18 @@ It is possible to change the following configuration attributes of the **RadioGr
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	options: object,
-	padding: string|number,
+	padding: string | number,
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -411,10 +411,10 @@ It is possible to change the following configuration attributes of a **radio but
 ~~~js
 {
 	css: string,
-	height: string|number|"content",
-	padding: string|number,
+	height: string | number | "content",
+	padding: string | number,
 	text: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -428,18 +428,18 @@ It is possible to change the following configuration attributes of the **Select*
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	preMessage: string,
 	successMessage: string,
 	validation: function,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -451,23 +451,28 @@ It is possible to change the following configuration attributes of the **SimpleV
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	fieldName: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
-	params: object,
-	preMessage: string,
-	required: boolean,
-	singleRequest: boolean,
-	successMessage: string,
-	target: string,
-	width: string|number|"content"
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    label: string,
+    labelWidth: string | number,
+    labelPosition: "left" | "top",
+    hiddenLabel: boolean,
+    helpMessage: string,
+    required: boolean,
+    preMessage: string,
+    successMessage: string,
+    errorMessage: string,
+    params: { [key: string]: any },
+    headerParams: { [key: string]: any },
+    target: string,
+    fieldName: string,
+    singleRequest: boolean,
+    updateFromResponse: boolean,
+    autosend: boolean,
+    accept: string,
+    validation: (value: ISimpleVaultValue) => boolean
 }
 ~~~
 
@@ -480,24 +485,24 @@ It is possible to change the following configuration attributes of the **Slider*
 ~~~js
 {
 	css: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	inverse: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	majorTick: number,
 	max: number,
 	min: number,
 	mode: string,
-	padding: string|number,
+	padding: string | number,
 	range: boolean,
 	step: number,
 	tick: number,
 	tickTemplate: function,
 	tooltip: boolean, 
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -510,9 +515,9 @@ It is possible to change the following configuration attributes of the **Spacer*
 ~~~js
 {
 	css: string,
-	height: string|number|"content"
-	padding: string|number
-	width: string|number|"content"
+	height: string | number | "content"
+	padding: string | number
+	width: string | number | "content"
 }
 ~~~
 
@@ -526,17 +531,17 @@ It is possible to change the following configuration attributes of the **Text** 
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	inputType: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	preMessage: string,
 	successMessage: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -550,22 +555,22 @@ It is possible to change the following configuration attributes of the **Textare
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	maxlength: string|number,
-	minlength: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	maxlength: string | number,
+	minlength: string | number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	readOnly: boolean,
 	required: boolean,
 	successMessage: string,
-	validation: object|function,
-	width: string|number|"content"
+	validation: object | function,
+	width: string | number | "content"
 }
 ~~~
 
@@ -581,14 +586,14 @@ It is possible to change the following configuration attributes of the **TimePic
 	css: string,
 	editable: boolean,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number| "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	required: boolean,
@@ -596,7 +601,7 @@ It is possible to change the following configuration attributes of the **TimePic
 	timeFormat: number,
 	validation: function,
 	valueFormat: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -607,16 +612,18 @@ You will find the description of these properties [here](form/api/timepicker/api
 It is possible to change the following configuration attributes of the **Toggle** control:
 
 ~~~js
-css: string,
-width: string | number | "content",
-height: string | number | "content",
-padding: string | number,
-full: boolean,
-text: string,
-icon: string,
-offText: string,
-offIcon: string,
-value: string | number
+{
+	css: string,
+	width: string | number | "content",
+	height: string | number | "content",
+	padding: string | number,
+	full: boolean,
+	text: string,
+	icon: string,
+	offText: string,
+	offIcon: string,
+	value: string | number
+}
 ~~~
 
 You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
@@ -630,11 +637,11 @@ It is possible to change the following configuration attributes of the **ToggleG
     css: string,
     full: boolean,
     gap: number,
-    height: string | number|"content",
+    height: string | number |"content",
     multiselection: boolean,
     options: object[],
     padding: string | number,
-    width: string|number|"content"
+    width: string | number | "content"
 }
 ~~~
 

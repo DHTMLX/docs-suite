@@ -159,19 +159,19 @@ The returned object of the **Button** control can contain the following properti
 ~~~js
 {
 	circle: boolean,
-	color: string, 
+	color: string,
 	css: string,
 	full: boolean,
-	height: string|number|"content",
+	height: string | number | "content",
 	icon: string,
 	loading: boolean,
-	padding: string|number,
+	padding: string | number,
 	size: string,
 	submit: boolean,
 	text: string,
 	url: string,
 	view: string,
-	width: string|number|"content",
+	width: string | number | "content",
 }
 ~~~
 
@@ -188,16 +188,16 @@ The returned object of the **DatePicker** control can contain the following prop
 	disabledDates: function,
 	editable: boolean,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean, 
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	mark: function,
 	mode: string,
-	padding: string|number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	required: boolean,
@@ -209,7 +209,7 @@ The returned object of the **DatePicker** control can contain the following prop
 	valueFormat: string,
 	weekNumbers: boolean,
 	weekStart: string,
-	width: string|number|"content",
+	width: string | number | "content"
 }
 ~~~
 
@@ -223,18 +223,18 @@ The returned object of the **Checkbox** control can contain the following proper
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
 	text: string,
-	width: string|number|"content",
+	width: string | number | "content",
 }
 ~~~
 
@@ -259,7 +259,7 @@ The returned object of the **CheckboxGroup** control can contain the following p
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -292,22 +292,22 @@ The returned object of the **ColorPicker** control can contain the following pro
 	editable: boolean,
 	errorMessage: string,
 	grayShades: boolean,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	mode: string,
-	padding: string|number,
+	padding: string | number,
 	palette: array,
 	placeholder: string,
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
 	validation: function,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -322,17 +322,17 @@ The returned object of the **Combo** control can contain the following propertie
 	css: string,
 	errorMessage: string,
 	filter: function, 
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	itemHeight: number,
 	itemsCount: boolean | function,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	listHeight: number,
 	multiselection: boolean,
-	padding: string|number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	readOnly: boolean,
@@ -342,7 +342,7 @@ The returned object of the **Combo** control can contain the following propertie
 	template: function,
 	validation: function,
 	virtual: boolean,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -391,26 +391,26 @@ The returned object of the **Input** control can contain the following propertie
 	autocomplete: boolean,
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	inputType: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	max: string|number,
-	maxlength: string|number,
-	min: string|number,
-	minlength: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	max: string | number,
+	maxlength: string | number,
+	min: string | number,
+	minlength: string | number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	readOnly: boolean,
 	required: boolean,
 	successMessage: string,
-	validation: object|function,
-	width: string|number|"content"
+	validation: object | function,
+	width: string | number | "content"
 }
 ~~~
 
@@ -424,18 +424,18 @@ The returned object of the **RadioGroup** control can contain the following prop
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	options: object,
-	padding: string|number,
+	padding: string | number,
 	preMessage: string,
 	required: boolean,
 	successMessage: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -448,10 +448,10 @@ The returned object of a **radio button** of the **RadioGroup** control can cont
 ~~~js
 {
 	css: string,
-	height: string|number|"content",
-	padding: string|number,
+	height: string | number | "content",
+	padding: string | number,
 	text: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -465,18 +465,18 @@ The returned object of the **Select** control can contain the following properti
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	preMessage: string,
 	successMessage: string,
 	validation: function,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -488,23 +488,28 @@ The returned object of the **SimpleVault** control can contain the following pro
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	fieldName: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
-	params: object,
-	preMessage: string,
-	required: boolean,
-	singleRequest: boolean,
-	successMessage: string,
-	target: string,
-	width: string|number|"content"
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    label: string,
+    labelWidth: string | number,
+    labelPosition: "left" | "top",
+    hiddenLabel: boolean,
+    helpMessage: string,
+    required: boolean,
+    preMessage: string,
+    successMessage: string,
+    errorMessage: string,
+    params: { [key: string]: any },
+    headerParams: { [key: string]: any },
+    target: string,
+    fieldName: string,
+    singleRequest: boolean,
+    updateFromResponse: boolean,
+    autosend: boolean,
+    accept: string,
+    validation: (value: ISimpleVaultValue) => boolean
 }
 ~~~
 
@@ -517,24 +522,24 @@ The returned object of the **Slider** control can contain the following properti
 ~~~js
 {
 	css: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	inverse: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
+	labelWidth: string | number,
 	majorTick: number,
 	max: number,
 	min: number,
 	mode: string,
-	padding: string|number,
+	padding: string | number,
 	range: boolean,
 	step: number,
 	tick: number,
 	tickTemplate: function,
 	tooltip: boolean, 
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -547,9 +552,9 @@ The returned object of the **Spacer** control can contain the following properti
 ~~~js
 {
 	css: string,
-	height: string|number|"content"
-	padding: string|number
-	width: string|number|"content"
+	height: string | number | "content"
+	padding: string | number
+	width: string | number | "content"
 }
 ~~~
 
@@ -562,15 +567,15 @@ The returned object of the **Text** control can contain the following properties
 ~~~js
 {
 	css: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	inputType: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
-	width: string|number|"content"
+	labelWidth: string | number,
+	padding: string | number,
+	width: string | number | "content"
 }
 ~~~
 
@@ -584,22 +589,22 @@ The returned object of the **Textarea** control can contain the following proper
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	maxlength: string|number,
-	minlength: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	maxlength: string | number,
+	minlength: string | number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	readOnly: boolean,
 	required: boolean,
 	successMessage: string,
-	validation: object|function,
-	width: string|number|"content"
+	validation: object | function,
+	width: string | number | "content"
 }
 ~~~
 
@@ -615,14 +620,14 @@ The returned object of the **TimePicker** control can contain the following prop
 	css: string,
 	editable: boolean,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number| "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	placeholder: string,
 	preMessage: string,
 	required: boolean,
@@ -630,7 +635,7 @@ The returned object of the **TimePicker** control can contain the following prop
 	timeFormat: number,
 	validation: function,
 	valueFormat: string,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
@@ -641,16 +646,18 @@ You will find the description of these properties [here](form/api/timepicker/api
 The returned object of the **Toggle** control can contain the following properties:
 
 ~~~js
-css: string,
-width: string | number | "content",
-height: string | number | "content",
-padding: string | number,
-full: boolean,
-text: string,
-icon: string,
-offText: string,
-offIcon: string,
-value: string | number
+{
+	css: string,
+	width: string | number | "content",
+	height: string | number | "content",
+	padding: string | number,
+	full: boolean,
+	text: string,
+	icon: string,
+	offText: string,
+	offIcon: string,
+	value: string | number
+}
 ~~~
 
 You will find the description of these properties [here](form/api/toggle/api_toggle_properties.md).
@@ -664,11 +671,28 @@ The returned object of the **ToggleGroup** control can contain the following pro
     css: string,
     full: boolean,
     gap: number,
-    height: string | number|"content",
+    height: string | number |"content",
     multiselection: boolean,
     options: object[],
     padding: string | number,
-    width: string|number|"content"
+    width: string | number | "content"
+}
+~~~
+
+You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+
+### Toggle properties
+
+The returned object of a **toggle** of the **ToggleGroup** control can contain the following properties:
+
+~~~js
+{
+	full: boolean,
+	text: string,
+	icon: string,
+	offText: string,
+	offIcon: string,
+	value: string | number
 }
 ~~~
 

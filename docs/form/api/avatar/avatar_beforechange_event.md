@@ -19,9 +19,9 @@ Return `false` to prevent changing the value of the control; otherwise, `true`.
 
 @example:
 form.getItem("avatar").events.on("beforeChange", value => {
-    return (value.file && value.file?.name?.length > 10) ?? true; 
-    // prevent changes if the name of the uploaded file is 
-    // less than 10 characters including the extension 
+    return value.file && value.file.size <= 2097152;
+    // prevent changes if the size of the uploaded file is
+    // more than 2Mb or the file is empty
 });
 
 @descr:

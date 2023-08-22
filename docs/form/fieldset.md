@@ -26,7 +26,7 @@ const form = new dhx.Form("form_container", {
 	    {
 	        type: "fieldset",
 	        label: "Section name",
-	        id: "f1",
+	        name: "f1",
 	        disabled: false, 
 	        hidden: false, 
 	        css: "mycss",

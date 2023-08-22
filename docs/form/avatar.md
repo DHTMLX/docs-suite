@@ -30,7 +30,7 @@ const form = new dhx.Form("form_container", {
             labelPosition: "top",
             placeholder: "Add a photo",
             value: {
-                src: "https://imgs/avatar.jpg",
+                src: "https://server.domain/upload/image.jpg"
             }
 		}
     ]

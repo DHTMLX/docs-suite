@@ -32,18 +32,18 @@ It is possible to change values of the following configuration attributes of the
 {
 	css: string,
 	errorMessage: string,
-	height: string|number|"content",
+	height: string | number | "content",
 	helpMessage: string,
 	hiddenLabel: boolean,
 	icon: string,
 	label: string,
 	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
+	labelWidth: string | number,
+	padding: string | number,
 	preMessage: string,
 	successMessage: string,
 	validation: function,
-	width: string|number|"content"
+	width: string | number | "content"
 }
 ~~~
 
