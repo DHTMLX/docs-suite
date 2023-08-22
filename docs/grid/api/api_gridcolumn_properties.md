@@ -110,7 +110,7 @@ columns:[
             <ul>
             <li><b>text</b> - (optional) the text of a header</li>
             <li><b>tooltip</b> - (optional) enables/disables the header tooltip</li>
-            <li><b>tooltipTemplate</b> - (optional) sets a template for the header tooltip. Takes into account the <a href="../../configuration#html-content-of-grid-columns">htmlEnable</a> property. If set to <i>false</i>, disables the tooltip</li>
+            <li><b>tooltipTemplate</b> - (optional) sets a template for the header tooltip. Takes into account the <a href="../../configuration#html-content-of-grid-columns">htmlEnable</a> property. Return <i>false</i> to disable the tooltip</li>
             <li><a href="../../configuration#alignment"><b>align</b></a> - (optional) aligns data in the header: "left"|"center"|"right"</li>
             <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
             <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>
@@ -145,7 +145,7 @@ columns:[
             <ul>
             <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (optional) the text of a footer </li>
             <li><b>tooltip</b> - (optional) enables/disables the footer tooltip</li>
-            <li><b>tooltipTemplate</b> - (optional) sets a template for the footer tooltip. Takes into account the <a href="../../configuration#html-content-of-grid-columns">htmlEnable</a> property. If set to <i>false</i>, disables the tooltip</li>
+            <li><b>tooltipTemplate</b> - (optional) sets a template for the footer tooltip. Takes into account the <a href="../../configuration#html-content-of-grid-columns">htmlEnable</a> property. Return <i>false</i> to disable the tooltip</li>
             <li><b>align</b> - (optional) aligns data in the footer: "left"|"center"|"right"</li>
             <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
             <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>

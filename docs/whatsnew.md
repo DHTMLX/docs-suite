@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.2
 -------------
 
-Released on August  , 2023
+Released on August 24, 2023
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-8-2/" target="_blank">Review of the release on the blog</a>
 
@@ -47,10 +47,11 @@ Released on August  , 2023
 
 #### Form. SimpleVault
  
-- The [API of the control](form/api/api_overview.md#simple-vault-api) is renewed and improved 
+- The [API of the control](/category/simple-vault-api/) is renewed and improved 
 
 ### Fixes
 
+- Form. Fix the functionality of the **change** event of the simpleVault control
 - Grid/TreeGrid. Fix the functionality of comboFilter and selectFilter that presupposes displaying options in these filters according to the current filtered state of DataCollection
 - Grid/TreeGrid. Fix the issue with triggering the **change** event after filtering data (after selecting the filter)
 - Grid/TreeGrid. Fix the issue with incorrect header tooltip rendering due to the use of a colspan

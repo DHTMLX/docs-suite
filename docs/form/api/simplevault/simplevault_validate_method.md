@@ -31,4 +31,5 @@ form.getItem("simplevault").validate(false); // -> true/false
 ~~~
 
 @changelog:
-The **silent** parameter is added in v7.0
+- The **silent** parameter is added in v7.0.
+- The **validateValue** parameter is added in v8.2.

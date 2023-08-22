@@ -147,7 +147,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td><b>accept</b></td>
-            <td>(optional) allows specifying the type/extension that will be displayed in the dialog window during file selection<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
+            <td>(optional) allows specifying the type/extension that will be displayed in the dialog window during the file selection. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
         </tr>
         <tr>
             <td><b>validation</b></td>

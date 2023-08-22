@@ -16,7 +16,7 @@ description: You can explore the resetFilter method of TreeCollection in the doc
 	- `permanent: boolean` - optional, *true* to reset all the active filters, including those that have the **permanent:true** property in their config
 
 @returns:
-- `result: boolean` - *true*, if all the filters with the **permanent:true** property in the config have been reset, otherwise *false*
+- `result: boolean` - *true*, if all the filters, including the permanent ones, have been reset; otherwise *false*
 
 @example:
 
