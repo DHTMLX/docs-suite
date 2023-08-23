@@ -19,6 +19,7 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_find_method.md)           | @getshort(api/datacollection_find_method.md)           |
 | [](api/datacollection_findall_method.md)        | @getshort(api/datacollection_findall_method.md)        |
 | [](api/datacollection_foreach_method.md)        | @getshort(api/datacollection_foreach_method.md)        |
+| [](api/datacollection_getfilters_method.md)     | @getshort(api/datacollection_getfilters_method.md)     |
 | [](api/datacollection_getid_method.md)          | @getshort(api/datacollection_getid_method.md)          |
 | [](api/datacollection_getindex_method.md)       | @getshort(api/datacollection_getindex_method.md)       |
 | [](api/datacollection_getinitialdata_method.md) | @getshort(api/datacollection_getinitialdata_method.md) |

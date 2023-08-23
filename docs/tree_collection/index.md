@@ -20,6 +20,7 @@ A set of API methods and events that allow you to work with data of a component 
 | [](api/treecollection_exists_method.md)       | @getshort(api/treecollection_exists_method.md)       |
 | [](api/treecollection_filter_method.md)       | @getshort(api/treecollection_filter_method.md)       |
 | [](api/treecollection_foreach_method.md)      | @getshort(api/treecollection_foreach_method.md)      |
+| [](api/treecollection_getfilters_method.md)   | @getshort(api/treecollection_getfilters_method.md)   |
 | [](api/treecollection_getid_method.md)        | @getshort(api/treecollection_getid_method.md)        |
 | [](api/treecollection_getindex_method.md)     | @getshort(api/treecollection_getindex_method.md)     |
 | [](api/treecollection_getitem_method.md)      | @getshort(api/treecollection_getitem_method.md)      |

@@ -19,7 +19,7 @@ Released on August 28, 2023
 
 #### DataCollection/TreeCollection
 
-- New [filter](data_collection/api/datacollection_filter_event.md) event and [resetFilter](data_collection/api/datacollection_resetfilter_method.md) method
+- New [filter](data_collection/api/datacollection_filter_event.md) event and [resetFilter()](data_collection/api/datacollection_resetfilter_method.md), [getFilter()](data_collection/api/datacollection_getfilters_method.md) methods
 
 #### Grid/TreeGrid
 
@@ -39,7 +39,7 @@ Released on August 28, 2023
 
 #### DataCollection/TreeCollection
 
-- Functionality of the [filter](data_collection/api/datacollection_filter_method.md) method is updated. Its second parameter - the **config** object gets the *permanent* property instead of the *smartFilter* one, and the new **id** property. Check the [Migration](migration.md#81--82) article for details
+- Functionality of the [filter()](data_collection/api/datacollection_filter_method.md) method is updated. Its second parameter - the **config** object gets the *permanent* property instead of the *smartFilter* one, and the new **id** property. Check the [Migration](migration.md#81--82) article for details
 
 #### Form 
 
