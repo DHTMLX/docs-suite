@@ -12,30 +12,40 @@ description: You can explore the series config of Chart in the documentation of 
 
 @example:
 const chart = new dhx.Chart("chart_container", {
-    type:"bar",
+    type: "bar",
     scales: {
-        "bottom" : {
+        "bottom": {
             text: "month"
         },
-        "left" : {}
+        "left": {
+            maxTicks: 10,
+            max: 100,
+            min: 0
+        }
     },
     series: [
         {
             id: "A",
-            value: "company A",
-            fill: "#394E79",
-            stacked: stacked,
-            color: "none"
+            value: "A",
+            color: "#81C4E8",
+            fill: "#81C4E8",
+            label: "Company A",
         },
         {
             id: "B",
-            value:"company B",
-            fill: "#5E83BA",
-            stacked: stacked,
-            color: "none"
+            value: "B",
+            color: "#74A2E7",
+            fill: "#74A2E7",
+            label: ({ id }) => `Company ${id}`,
+        },
+        {
+            id: "C",
+            value: "company C",
+            color: "#5E83BA",
+            fill: "#5E83BA"
         }
     ]
-});
+};
 
 @descr:
 
@@ -87,7 +97,7 @@ series: [
 		</tr>
 		<tr>
 			<td><b>label</b></td>
-			<td>(optional) allows setting the text of the series legend. If not set, the value of the <b>value</b> property is used as a legend's text. The config can be defined as a string or as a function that takes the current series configuration as an argument and returns a string</td>
+			<td>(optional) allows setting the text of the series legend. If the label isn't set, the value of the <b>value</b> property is used as a legend's text. The config can be defined as a string or as a function that takes the current series configuration as an argument and returns a string</td>
 		</tr>
 		<tr>
 			<td><b>active</b></td>

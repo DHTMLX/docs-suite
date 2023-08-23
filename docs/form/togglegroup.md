@@ -25,15 +25,15 @@ const form = new dhx.Form("form_container", {
 	        gap: 4,
 	        options: [
 	            {
-	                name: "left",
+	                id: "left",
 	                icon: "dxi dxi-format-align-left",
 	            },
 	            {
-	                name: "center",
+	                id: "center",
 	                icon: "dxi dxi-format-align-center",
 	            },
 	            {
-	                name: "right",
+	                id: "right",
 	                icon: "dxi dxi-format-align-right",
 	            },
 	        ]

@@ -8,7 +8,7 @@ description: You can explore the setValue method of the Toggle Group control of 
 
 @short: defines the state of the option's elements
 
-@signature: {'setValue(value: {[id: string]: boolean }): void | boolean;'}
+@signature: {'setValue(value: {[id: string]: boolean }): void;'}
 
 @params: 
 

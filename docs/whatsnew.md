@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.2
 -------------
 
-Released on August 24, 2023
+Released on August 28, 2023
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-8-2/" target="_blank">Review of the release on the blog</a>
 
@@ -57,7 +57,27 @@ Released on August 24, 2023
 - Grid/TreeGrid. Fix the issue with incorrect header tooltip rendering due to the use of a colspan
 - Grid/TreeGrid. Fix the issue with incorrect displaying of header spans in the fixed columns
 - Toolbar. Fix the problem with not displaying the expand triangle icon on adding sub-items into an element placed lower than the second level
+- Grid/TreeGrid. Fix the incorrect calculation of the row autoHeight
 
+Version 8.1.10 
+---------------
+
+Released on August 21, 2023
+
+- Combobox. Fix the issue with the default icon of an option (set via the "src" or "icon" properties) not displayed in the input field
+- Toolbar. Fix the problem with the setState() method not applying a value for DatePicker
+
+Version 8.1.9 
+---------------
+
+Released on August 14, 2023
+
+### Fixes
+
+- Grid/TreeGrid. Fix the issue with a colspan breaking in case of hiding several of its columns
+- Grid/TreeGrid. Fix the issue with the Input filter operating with the formatted numeric value instead of the original one
+- Grid/TreeGrid. Fix incorrect export of boolean values to PDF/PNG 
+- Grid/TreeGrid. Fix incorrect work of the autoHeight property that resulted in not displaying multi-line data in cells
 
 Version 8.1.8 
 ---------------

@@ -24,14 +24,14 @@ The **properties** object of the **ToggleGroup** control looks like:
 
 ~~~js
 {
-	css: "",
-	full: false,
-	gap: 0,
-	height: "content",
-	multiselection: false,
-	options: {...},
-	padding: 0,
-	width: "content"
+    css: string,
+    full: boolean,
+    gap: number,
+    height: string | number|"content",
+    multiselection: boolean,
+    options: object[],
+    padding: string | number,
+    width: string|number|"content"
 }
 ~~~
 
@@ -39,12 +39,12 @@ The **properties** object object of a **toggle** of the **ToggleGroup** control 
 
 ~~~js
 {
-	full: false,
-	icon: "",
-	offIcon: "",
-	offText: "",
-	text: "Toggle 1",
-	value: 1
+    full: boolean,
+    icon: string,
+    offIcon: string,
+    offText: string,
+    text: string,
+    value: string | number
 }
 ~~~
 
