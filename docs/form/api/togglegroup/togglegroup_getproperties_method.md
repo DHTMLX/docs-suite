@@ -62,12 +62,19 @@ The returned object of the **ToggleGroup** control looks like:
 	full: false,
 	gap: 0,
 	height: "content",
-	multiselection: false,
-	options: {...},
-	padding: 0,
+	multiselect: false,
+	options: [
+         {id: 'left', icon: 'dxi dxi-format-align-left', value: 1},
+         {id: 'center', icon: 'dxi dxi-format-align-center', value: 'center'},
+         {id: 'right', icon: 'dxi dxi-format-align-right'},
+         {id: 'space', icon: 'dxi dxi-format-line-spacing', disabled: true}
+    ],
+	padding: "",
 	width: "content"
 }
 ~~~
+
+You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
 
 The returned object of a **toggle** of the **ToggleGroup** control looks like:
 
@@ -78,8 +85,10 @@ The returned object of a **toggle** of the **ToggleGroup** control looks like:
 	offIcon: "",
 	offText: "",
 	text: "Toggle 1",
-	value: 1
+	value: undefined
 }
 ~~~
 
-You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+You will find the description of all these properties [here](form/api/togglegroup/api_togglegroup_properties.md#properties-of-a-toggle-of-togglegroup).
+
+

@@ -10,7 +10,7 @@ A compact but useful control for swift uploading of an avatar into a form.
 
 ![Avatar control](../assets/form/form_avatar.png)
 
-**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/qo1mo0wv)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Avatar](https://snippet.dhtmlx.com/87u37hqc)
 

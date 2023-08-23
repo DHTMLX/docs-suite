@@ -10,7 +10,7 @@ A control that allows arranging the elements of the form controls into groups.
 
 ![Fieldset control](../assets/form/form_fieldset.png)
 
-**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/r5owko34)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
 **Related sample**: [Form. Fieldset](https://snippet.dhtmlx.com/axlwcdrz)
 

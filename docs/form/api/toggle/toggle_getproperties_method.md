@@ -37,11 +37,11 @@ The returned object of the **Toggle** control looks like:
 	css: "",
 	width: "content",
 	height: "content",
-	padding: 0,
+	padding: "",
 	full: false,
-	text: "",
+	text: "Visible",
 	icon: "dxi dxi-eye",
-	offText: "",
+	offText: "Invisible",
 	offIcon: "dxi dxi-eye-off",
 	value: undefined
 }

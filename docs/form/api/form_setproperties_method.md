@@ -647,6 +647,24 @@ It is possible to change the following configuration attributes of the **ToggleG
 
 You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
 
+### Toggle properties
+
+It is possible to change the following configuration attributes of a **toggle** of the **ToggleGroup** control:
+
+~~~js
+{
+	full: boolean,
+	text: string,
+	icon: string,
+	offText: string,
+	offIcon: string,
+	value: string | number
+}
+~~~
+
+You will find the description of these properties [here](form/api/togglegroup/api_togglegroup_properties.md).
+
+
 **Related API**: [getProperties()](form/api/form_getproperties_method.md)
 
 @changelog: added in v7.0

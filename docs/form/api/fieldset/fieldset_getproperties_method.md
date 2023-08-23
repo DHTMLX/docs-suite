@@ -48,10 +48,13 @@ The returned object of the **Fieldset** control looks like:
 
 ~~~js
 {
-    width: 250,
-    height: 125,
-    label: "form fieldset",
-    labelAlignment: "left"
+    "align": undefined 
+    "css": "",
+    "height": "content",
+    "label": "Personal info",
+    "labelAlignment": "left",
+    "padding": undefined,
+    "width": "content"
 }
 ~~~
 
