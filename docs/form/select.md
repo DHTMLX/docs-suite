@@ -12,7 +12,7 @@ An advanced select box that provides a set of options to choose from.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Select](https://snippet.dhtmlx.com/yo9w9o2t)
+**Related sample**: [Form. Select](https://snippet.dhtmlx.com/yo9w9o2t?tag=select)
 
 ## Adding Select
 

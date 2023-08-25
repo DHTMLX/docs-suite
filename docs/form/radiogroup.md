@@ -12,7 +12,7 @@ A control intended for creating groups of Radio buttons.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Radio group](https://snippet.dhtmlx.com/ycp1cbct)
+**Related sample**: [Form. Radio group](https://snippet.dhtmlx.com/ycp1cbct?tag=radio_group)
 
 **Related sample**: [Form. Change Form configuration](https://snippet.dhtmlx.com/1pzybtja)
 

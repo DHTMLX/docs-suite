@@ -12,7 +12,7 @@ A special button control that changes its state from pressed to the unpressed on
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Toggle](https://snippet.dhtmlx.com/yqi21ykr)
+**Related sample**: [Form. Toggle](https://snippet.dhtmlx.com/yqi21ykr?tag=toggle)
 
 ## Adding Toggle
 

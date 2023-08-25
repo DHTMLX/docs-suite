@@ -12,7 +12,7 @@ A control that allows a user to enter a simple multi-line text.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Textarea](https://snippet.dhtmlx.com/mt93jzrk)
+**Related sample**: [Form. Textarea](https://snippet.dhtmlx.com/mt93jzrk?tag=textarea)
 
 ## Adding Textarea
 

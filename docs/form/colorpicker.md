@@ -12,7 +12,7 @@ An input with a color picker attached to it for selecting a color.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. ColorPicker](https://snippet.dhtmlx.com/n52dl19s)
+**Related sample**: [Form. ColorPicker](https://snippet.dhtmlx.com/n52dl19s?tag=colorpicker_control)
 
 ## Adding ColorPicker
 

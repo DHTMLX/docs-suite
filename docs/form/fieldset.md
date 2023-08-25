@@ -12,9 +12,9 @@ A control that allows arranging the elements of the form controls into groups.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Fieldset](https://snippet.dhtmlx.com/axlwcdrz)
+**Related sample**: [Form. Fieldset](https://snippet.dhtmlx.com/axlwcdrz?tag=fieldset)
 
-**Related sample**: [Form. Fieldset with rows/cols](https://snippet.dhtmlx.com/lo6g167p)
+**Related sample**: [Form. Fieldset with rows/cols](https://snippet.dhtmlx.com/lo6g167p?tag=fieldset)
 
 ## Adding Fieldset
 

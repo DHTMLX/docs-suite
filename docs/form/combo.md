@@ -12,7 +12,7 @@ An input that represents an advanced select box with a set of options. It is abl
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Combo](https://snippet.dhtmlx.com/wla7u1xq)
+**Related sample**: [Form. Combo](https://snippet.dhtmlx.com/wla7u1xq?tag=combo)
 
 ## Adding Combo
 

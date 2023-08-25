@@ -12,7 +12,7 @@ A compact but useful control for swift uploading of an avatar into a form.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Avatar](https://snippet.dhtmlx.com/87u37hqc)
+**Related sample**: [Form. Avatar](https://snippet.dhtmlx.com/87u37hqc?tag=avatar)
 
 ## Adding Avatar
 

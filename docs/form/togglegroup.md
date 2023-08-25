@@ -10,7 +10,9 @@ A control intended for creating groups of toggle buttons.
 
 ![ToggleGroup control](../assets/form/form_togglegroup.png)
 
-**Related sample**: [Form. ToggleGroup](https://snippet.dhtmlx.com/yqi21ykr)
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
+
+**Related sample**: [Form. ToggleGroup](https://snippet.dhtmlx.com/yqi21ykr?tag=togglegroup)
 
 ## Adding ToggleGroup
 

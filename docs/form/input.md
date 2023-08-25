@@ -12,7 +12,7 @@ An input field for typing some text inside.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Inputs](https://snippet.dhtmlx.com/9q8fubjm)
+**Related sample**: [Form. Inputs](https://snippet.dhtmlx.com/9q8fubjm?tag=input)
 
 ## Adding Input
 

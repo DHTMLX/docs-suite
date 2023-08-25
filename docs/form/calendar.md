@@ -12,7 +12,7 @@ An input with a calendar attached to it for selecting a date.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. DatePicker](https://snippet.dhtmlx.com/q3yk7e6s)
+**Related sample**: [Form. DatePicker](https://snippet.dhtmlx.com/q3yk7e6s?tag=date_picker)
 
 ## Adding DatePicker
 

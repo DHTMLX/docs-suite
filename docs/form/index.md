@@ -57,6 +57,7 @@ Discusses the creation of Form controls and the possibilities of manipulating th
 - [](form/select.md)
 - [](form/simplevault.md)
 - [](form/slider.md)
+- [](form/spacer.md)
 - [](form/text.md)
 - [](form/textarea.md)
 - [](form/timepicker.md)

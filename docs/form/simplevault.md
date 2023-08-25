@@ -12,7 +12,7 @@ A handy control for quick and easy uploading of a file or a set of files.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Simple Vault](https://snippet.dhtmlx.com/ofy4k51o)
+**Related sample**: [Form. Simple Vault](https://snippet.dhtmlx.com/ofy4k51o?tag=simple_vault)
 
 ## Adding SimpleVault
 

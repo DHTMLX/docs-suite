@@ -8,6 +8,8 @@ description: You can explore the Spacer of Form in the documentation of the DHTM
 
 This item takes space on the form and is used for aligning controls.
 
+**Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
+
 ## Adding Spacer
 
 You can easily add a Spacer control during initialization of a form:

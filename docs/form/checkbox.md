@@ -12,7 +12,7 @@ A control that allows a user to make a choice between one or several opposite op
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. Checkboxes](https://snippet.dhtmlx.com/scs712zl)
+**Related sample**: [Form. Checkboxes](https://snippet.dhtmlx.com/scs712zl?tag=checkbox)
 
 ## Adding Checkbox
 

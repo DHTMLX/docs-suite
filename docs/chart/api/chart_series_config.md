@@ -97,7 +97,8 @@ series: [
 		</tr>
 		<tr>
 			<td><b>label</b></td>
-			<td>(optional) allows setting the text of the series legend. If the label isn't set, the value of the <b>value</b> property is used as a legend's text. The config can be defined as a string or as a function that takes the current series configuration as an argument and returns a string</td>
+			<td>(optional) allows setting the text of the series legend. If the label isn't set, the value of the <b>value</b> property is used as a legend's text. The config can be defined as a string or as a function that takes the current series configuration as an argument and returns a string <br/>
+			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/dycgke1o?tag=chart" target="_blank">Chart. Label for the series legend</a> </td>
 		</tr>
 		<tr>
 			<td><b>active</b></td>

@@ -12,7 +12,7 @@ A control that allows a user to select time value either by moving handles along
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. TimePicker](https://snippet.dhtmlx.com/4k3o8p7b)
+**Related sample**: [Form. TimePicker](https://snippet.dhtmlx.com/4k3o8p7b?tag=timepicker)
 
 ## Adding TimePicker
 
