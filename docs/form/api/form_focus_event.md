@@ -16,7 +16,7 @@ description: You can explore the focus event of Form in the documentation of the
 - `id: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:
-form.event.on("focus", function(name, value, id) {
+form.events.on("focus", function(name, value, id) {
     console.log(name, value);
 });
 @examplestop:

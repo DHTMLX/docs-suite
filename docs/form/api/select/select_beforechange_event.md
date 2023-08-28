@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Select control of For
 @signature: {'beforeChange: (value: string | number) => boolean | void;'}
 
 @params:
-- `value: string | number` - the current value of the control
+- `value: string | number` - the value to be set for the control
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.

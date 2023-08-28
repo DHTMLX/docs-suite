@@ -16,7 +16,7 @@ description: You can explore the blur event of Form in the documentation of the 
 - `id: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:
-form.event.on("blur", function(name, value, id) {
+form.events.on("blur", function(name, value, id) {
     console.log(name, value, id);
 });
 @examplestop:

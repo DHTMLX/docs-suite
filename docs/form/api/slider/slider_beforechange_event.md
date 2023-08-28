@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Slider control of For
 @signature: {'beforeChange: (value: number[]) => boolean | void;'}
 
 @params:
-- `value: number[]` - the current value of the control
+- `value: number[]` - the value to be set for the control
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.

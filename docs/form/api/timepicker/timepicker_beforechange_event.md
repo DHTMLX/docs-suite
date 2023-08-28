@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Timepicker control of
 @signature: {'beforeChange: (value: string | object) => boolean | void;'}
 
 @params:
-- `value: string | object` - the current value of the control
+- `value: string | object` - the value to be set for the control
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.

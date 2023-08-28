@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Checkbox control of F
 @signature: {'beforeChange: (value: string | boolean) => boolean | void;'}
 
 @params:
-- `value: string | boolean` - the current value of the control
+- `value: string | boolean` - the value to be set for the control
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.

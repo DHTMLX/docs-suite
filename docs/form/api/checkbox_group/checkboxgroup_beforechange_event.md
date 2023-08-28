@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Checkbox Group contro
 @signature: {'beforeChange: (value: {[id: string]: boolean | string}) => boolean | void;'}
 
 @params:
-- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a checkbox and <i>value</i> is the value/state of the checkbox.
+- `value: object` - the value to be set for the control. The object contains a set of <i> the key:value</i> pairs where the <i>key</i> is the id of a checkbox and the <i>value</i> is the value/state of the checkbox
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.

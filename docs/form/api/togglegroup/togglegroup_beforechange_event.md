@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Toggle Group control 
 @signature: {'beforeChange: (value: {[id: string]: string | number |boolean}) => boolean | void;'}
 
 @params:
-- `value: object` - the current value of the control. The object contains a set of <i>key:value</i> pairs where <i>key</i> is the id of a toggle and <i>value</i> is the value/state of the toggle
+- `value: object` - the value to be set for the control. The object contains a set of the <i>key:value</i> pairs where the <i>key</i> is the id of a toggle and the <i>value</i> is the value/state of the toggle
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`

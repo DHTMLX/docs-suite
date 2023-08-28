@@ -19,7 +19,7 @@ Released on August 28, 2023
 
 #### DataCollection/TreeCollection
 
-- New [filter](data_collection/api/datacollection_filter_event.md) event and [resetFilter()](data_collection/api/datacollection_resetfilter_method.md), [getFilter()](data_collection/api/datacollection_getfilters_method.md) methods
+- New [filter](data_collection/api/datacollection_filter_event.md) event and [resetFilter()](data_collection/api/datacollection_resetfilter_method.md), [getFilters()](data_collection/api/datacollection_getfilters_method.md) methods
 
 #### Grid/TreeGrid
 
@@ -35,7 +35,7 @@ Released on August 28, 2023
 
 #### Chart
 
-- The [series](chart/api/chart_series_config.md) configuration property is extended with the **label** option for setting the text of the legend for a series (for  "line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter" chart types)
+- The [series](chart/api/chart_series_config.md) configuration property is extended with the **label** option for setting the text of the legend for a series (for the "line", "spline", "bar", "x-bar", "area", "splineArea", "radar", "scatter" chart types)
 
 #### DataCollection/TreeCollection
 

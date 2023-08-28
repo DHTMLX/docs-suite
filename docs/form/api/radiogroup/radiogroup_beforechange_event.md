@@ -11,7 +11,7 @@ description: You can explore the beforeChange event of the Radiogroup control of
 @signature: {'beforeChange: (value: string) => boolean | void;'}
 
 @params:
-- `value: string` - the current value of the control
+- `value: string` - the value to be set for the control
 
 @returns:
 Return `false` to prevent changing the value of the control; otherwise, `true`.
