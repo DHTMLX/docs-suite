@@ -13,7 +13,7 @@ description: You can explore the keydown event of Form in the documentation of t
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
 - `name: string` - the name or id of the control of Form
-- `id: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup, Combo)
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup, Combo)
 
 @example:
 form.events.on("keydown", function(event, name, id) {

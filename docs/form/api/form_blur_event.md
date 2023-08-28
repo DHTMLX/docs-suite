@@ -13,7 +13,7 @@ description: You can explore the blur event of Form in the documentation of the 
 @params:
 - `name: string` - the name (or id, if the name is not specified) of the control of Form
 - `value: any` - the current value of the control
-- `id: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:
 form.events.on("blur", function(name, value, id) {

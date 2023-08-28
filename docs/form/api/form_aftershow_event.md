@@ -12,7 +12,7 @@ description: You can explore the afterShow event of Form in the documentation of
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
-- `value: any` - the current value of the control
+- `value?: any` - optional, the current value of the control
 - `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:

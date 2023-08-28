@@ -12,7 +12,7 @@ description: You can explore the beforeShow event of Form in the documentation o
 
 @params:
 - `name|id: string` - the name (or id, if the name is not specified) of the Form control
-- `value: any` - the current value of the control
+- `value?: any` - optional, the current value of the control
 - `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @returns:

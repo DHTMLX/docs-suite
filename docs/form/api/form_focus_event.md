@@ -13,7 +13,7 @@ description: You can explore the focus event of Form in the documentation of the
 @params:
 - `name: string` - the name or id of the control of Form
 - `value: any` - the current value of the control
-- `id: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
+- `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @example:
 form.events.on("focus", function(name, value, id) {

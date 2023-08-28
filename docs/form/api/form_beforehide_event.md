@@ -11,8 +11,8 @@ description: You can explore the beforeHide event of Form in the documentation o
 @signature: {'beforeHide: (name: string | number, value?: any, id?: string) => boolean | void;'}
 
 @params:
-- `name|id: string | number` - the name (or id, if the name is not specified) of the Form control
-- `value: any` - the current value of the control
+- `name | id: string | number` - the name (or id, if the name is not specified) of the Form control
+- `value?: any` - the current value of the control
 - `id?: string` - optional, the id of the element of the control of Form (for RadioGroup, CheckboxGroup)
 
 @returns:
