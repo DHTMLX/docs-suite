@@ -127,7 +127,7 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) invisible label that will be used to identify the input on the server side</td>
+            <td>(optional) makes the label invisible</td>
         </tr>
         <tr>
             <td><b>label</b></td>

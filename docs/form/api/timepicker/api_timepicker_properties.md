@@ -71,7 +71,7 @@ description: You can explore the Properties of the Timepicker control of Form in
 - `placeholder` - (optional) a tip for the input
 - `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly
 - `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string", "timeObject"
-- `hiddenLabel` - (optional) invisible label that will be used to identify the input on the server side
+- `hiddenLabel` - (optional)  makes the label invisible
 - `label` - (optional) specifies a label for a control
 - `labelPosition` - (optional) defines the position of a label: "left"|"top"
 - `labelWidth` - (optional) sets the width of the label of a control

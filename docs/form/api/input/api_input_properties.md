@@ -148,7 +148,7 @@ description: You can explore the Properties of the Input control of Form in the 
 		</tr>
 		<tr>
 			<td><b>hiddenLabel</b></td>
-			<td>(optional) invisible label that will be used to identify the input on the server side</td>
+			<td>(optional) makes the label invisible</td>
 		</tr>
 		<tr>
 			<td><b>label</b></td>
