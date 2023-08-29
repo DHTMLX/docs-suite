@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.2
 -------------
 
-Released on August 28, 2023
+Released on August 29, 2023
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-8-2/" target="_blank">Review of the release on the blog</a>
 

@@ -130,6 +130,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | --------------------------------------------------------- |
 | [](form/api/button/button_blur_method.md)          | @getshort(form/api/button/button_blur_method.md)          |
+| [](form/api/button/button_destructor_method.md)    | @getshort(form/api/button/button_destructor_method.md)    |
 | [](form/api/button/button_disable_method.md)       | @getshort(form/api/button/button_disable_method.md)       |
 | [](form/api/button/button_enable_method.md)        | @getshort(form/api/button/button_enable_method.md)        |
 | [](form/api/button/button_focus_method.md)         | @getshort(form/api/button/button_focus_method.md)         |
@@ -168,6 +169,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/calendar/calendar_blur_method.md)          | @getshort(form/api/calendar/calendar_blur_method.md)          |
 | [](form/api/calendar/calendar_clear_method.md)         | @getshort(form/api/calendar/calendar_clear_method.md)         |
 | [](form/api/calendar/calendar_clearvalidate_method.md) | @getshort(form/api/calendar/calendar_clearvalidate_method.md) |
+| [](form/api/calendar/calendar_destructor_method.md)  	 | @getshort(form/api/calendar/calendar_destructor_method.md)    |
 | [](form/api/calendar/calendar_disable_method.md)       | @getshort(form/api/calendar/calendar_disable_method.md)       |
 | [](form/api/calendar/calendar_enable_method.md)        | @getshort(form/api/calendar/calendar_enable_method.md)        |
 | [](form/api/calendar/calendar_focus_method.md)         | @getshort(form/api/calendar/calendar_focus_method.md)         |
@@ -214,6 +216,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox/checkbox_blur_method.md)          | @getshort(form/api/checkbox/checkbox_blur_method.md)          |
 | [](form/api/checkbox/checkbox_clear_method.md)         | @getshort(form/api/checkbox/checkbox_clear_method.md)         |
 | [](form/api/checkbox/checkbox_clearvalidate_method.md) | @getshort(form/api/checkbox/checkbox_clearvalidate_method.md) |
+| [](form/api/checkbox/checkbox_destructor_method.md)  	 | @getshort(form/api/checkbox/checkbox_destructor_method.md)    |
 | [](form/api/checkbox/checkbox_disable_method.md)       | @getshort(form/api/checkbox/checkbox_disable_method.md)       |
 | [](form/api/checkbox/checkbox_enable_method.md)        | @getshort(form/api/checkbox/checkbox_enable_method.md)        |
 | [](form/api/checkbox/checkbox_focus_method.md)         | @getshort(form/api/checkbox/checkbox_focus_method.md)         |
@@ -259,6 +262,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox_group/checkboxgroup_blur_method.md)          | @getshort(form/api/checkbox_group/checkboxgroup_blur_method.md)          |
 | [](form/api/checkbox_group/checkboxgroup_clear_method.md)         | @getshort(form/api/checkbox_group/checkboxgroup_clear_method.md)         |
 | [](form/api/checkbox_group/checkboxgroup_clearvalidate_method.md) | @getshort(form/api/checkbox_group/checkboxgroup_clearvalidate_method.md) |
+| [](form/api/checkbox_group/checkboxgroup_destructor_method.md)    | @getshort(form/api/checkbox_group/checkboxgroup_destructor_method.md)    |
 | [](form/api/checkbox_group/checkboxgroup_disable_method.md)       | @getshort(form/api/checkbox_group/checkboxgroup_disable_method.md)       |
 | [](form/api/checkbox_group/checkboxgroup_enable_method.md)        | @getshort(form/api/checkbox_group/checkboxgroup_enable_method.md)        |
 | [](form/api/checkbox_group/checkboxgroup_focus_method.md)         | @getshort(form/api/checkbox_group/checkboxgroup_focus_method.md)         |
@@ -308,6 +312,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/colorpicker/colorpicker_blur_method.md)          | @getshort(form/api/colorpicker/colorpicker_blur_method.md)          |
 | [](form/api/colorpicker/colorpicker_clear_method.md)         | @getshort(form/api/colorpicker/colorpicker_clear_method.md)         |
 | [](form/api/colorpicker/colorpicker_clearvalidate_method.md) | @getshort(form/api/colorpicker/colorpicker_clearvalidate_method.md) |
+| [](form/api/colorpicker/colorpicker_destructor_method.md)    | @getshort(form/api/colorpicker/colorpicker_destructor_method.md)    |
 | [](form/api/colorpicker/colorpicker_disable_method.md)       | @getshort(form/api/colorpicker/colorpicker_disable_method.md)       |
 | [](form/api/colorpicker/colorpicker_enable_method.md)        | @getshort(form/api/colorpicker/colorpicker_enable_method.md)        |
 | [](form/api/colorpicker/colorpicker_focus_method.md)         | @getshort(form/api/colorpicker/colorpicker_focus_method.md)         |
@@ -354,6 +359,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/combo/combo_blur_method.md)          | @getshort(form/api/combo/combo_blur_method.md)          |
 | [](form/api/combo/combo_clear_method.md)         | @getshort(form/api/combo/combo_clear_method.md)         |
 | [](form/api/combo/combo_clearvalidate_method.md) | @getshort(form/api/combo/combo_clearvalidate_method.md) |
+| [](form/api/combo/combo_destructor_method.md)    | @getshort(form/api/combo/combo_destructor_method.md)    |
 | [](form/api/combo/combo_disable_method.md)       | @getshort(form/api/combo/combo_disable_method.md)       |
 | [](form/api/combo/combo_enable_method.md)        | @getshort(form/api/combo/combo_enable_method.md)        |
 | [](form/api/combo/combo_focus_method.md)         | @getshort(form/api/combo/combo_focus_method.md)         |
@@ -459,6 +465,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/input/input_blur_method.md)          | @getshort(form/api/input/input_blur_method.md)          |
 | [](form/api/input/input_clear_method.md)         | @getshort(form/api/input/input_clear_method.md)         |
 | [](form/api/input/input_clearvalidate_method.md) | @getshort(form/api/input/input_clearvalidate_method.md) |
+| [](form/api/input/input_destructor_method.md)    | @getshort(form/api/input/input_destructor_method.md)    |
 | [](form/api/input/input_disable_method.md)       | @getshort(form/api/input/input_disable_method.md)       |
 | [](form/api/input/input_enable_method.md)        | @getshort(form/api/input/input_enable_method.md)        |
 | [](form/api/input/input_focus_method.md)         | @getshort(form/api/input/input_focus_method.md)         |
@@ -504,6 +511,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/radiogroup/radiogroup_blur_method.md)          | @getshort(form/api/radiogroup/radiogroup_blur_method.md)          |
 | [](form/api/radiogroup/radiogroup_clear_method.md)         | @getshort(form/api/radiogroup/radiogroup_clear_method.md)         |
 | [](form/api/radiogroup/radiogroup_clearvalidate_method.md) | @getshort(form/api/radiogroup/radiogroup_clearvalidate_method.md) |
+| [](form/api/radiogroup/radiogroup_destructor_method.md)    | @getshort(form/api/radiogroup/radiogroup_destructor_method.md)    |
 | [](form/api/radiogroup/radiogroup_disable_method.md)       | @getshort(form/api/radiogroup/radiogroup_disable_method.md)       |
 | [](form/api/radiogroup/radiogroup_enable_method.md)        | @getshort(form/api/radiogroup/radiogroup_enable_method.md)        |
 | [](form/api/radiogroup/radiogroup_focus_method.md)         | @getshort(form/api/radiogroup/radiogroup_focus_method.md)         |
@@ -552,6 +560,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/select/select_blur_method.md)          | @getshort(form/api/select/select_blur_method.md)          |
 | [](form/api/select/select_clear_method.md)         | @getshort(form/api/select/select_clear_method.md)         |
 | [](form/api/select/select_clearvalidate_method.md) | @getshort(form/api/select/select_clearvalidate_method.md) |
+| [](form/api/select/select_destructor_method.md)    | @getshort(form/api/select/select_destructor_method.md)    |
 | [](form/api/select/select_disable_method.md)       | @getshort(form/api/select/select_disable_method.md)       |
 | [](form/api/select/select_enable_method.md)        | @getshort(form/api/select/select_enable_method.md)        |
 | [](form/api/select/select_focus_method.md)         | @getshort(form/api/select/select_focus_method.md)         |
@@ -600,6 +609,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/simplevault/simplevault_blur_method.md)          | @getshort(form/api/simplevault/simplevault_blur_method.md)          |
 | [](form/api/simplevault/simplevault_clear_method.md)         | @getshort(form/api/simplevault/simplevault_clear_method.md)         |
 | [](form/api/simplevault/simplevault_clearvalidate_method.md) | @getshort(form/api/simplevault/simplevault_clearvalidate_method.md) |
+| [](form/api/simplevault/simplevault_destructor_method.md)    | @getshort(form/api/simplevault/simplevault_destructor_method.md)    |
 | [](form/api/simplevault/simplevault_disable_method.md)       | @getshort(form/api/simplevault/simplevault_disable_method.md)       |
 | [](form/api/simplevault/simplevault_enable_method.md)        | @getshort(form/api/simplevault/simplevault_enable_method.md)        |
 | [](form/api/simplevault/simplevault_focus_method.md)         | @getshort(form/api/simplevault/simplevault_focus_method.md)         |
@@ -651,6 +661,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | :------------------------------------------------- | :-------------------------------------------------------- |
 | [](form/api/slider/slider_blur_method.md)          | @getshort(form/api/slider/slider_blur_method.md)          |
 | [](form/api/slider/slider_clear_method.md)         | @getshort(form/api/slider/slider_clear_method.md)         |
+| [](form/api/slider/slider_destructor_method.md)    | @getshort(form/api/slider/slider_destructor_method.md)    |
 | [](form/api/slider/slider_disable_method.md)       | @getshort(form/api/slider/slider_disable_method.md)       |
 | [](form/api/slider/slider_enable_method.md)        | @getshort(form/api/slider/slider_enable_method.md)        |
 | [](form/api/slider/slider_focus_method.md)         | @getshort(form/api/slider/slider_focus_method.md)         |
@@ -690,6 +701,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 | Name                                               | Description                                               |
 | :------------------------------------------------- | :-------------------------------------------------------- |
+| [](form/api/spacer/spacer_destructor_method.md)    | @getshort(form/api/spacer/spacer_destructor_method.md)    |
 | [](form/api/spacer/spacer_getproperties_method.md) | @getshort(form/api/spacer/spacer_getproperties_method.md) |
 | [](form/api/spacer/spacer_hide_method.md)          | @getshort(form/api/spacer/spacer_hide_method.md)          |
 | [](form/api/spacer/spacer_isvisible_method.md)     | @getshort(form/api/spacer/spacer_isvisible_method.md)     |
@@ -718,6 +730,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | Name                                           | Description                                           |
 | :--------------------------------------------- | :---------------------------------------------------- |
 | [](form/api/text/text_clear_method.md)         | @getshort(form/api/text/text_clear_method.md)         |
+| [](form/api/text/text_destructor_method.md)    | @getshort(form/api/text/text_destructor_method.md)    |
 | [](form/api/text/text_disable_method.md)       | @getshort(form/api/text/text_disable_method.md)       |
 | [](form/api/text/text_enable_method.md)        | @getshort(form/api/text/text_enable_method.md)        |
 | [](form/api/text/text_getproperties_method.md) | @getshort(form/api/text/text_getproperties_method.md) |
@@ -756,6 +769,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/textarea/textarea_blur_method.md)          | @getshort(form/api/textarea/textarea_blur_method.md)          |
 | [](form/api/textarea/textarea_clear_method.md)         | @getshort(form/api/textarea/textarea_clear_method.md)         |
 | [](form/api/textarea/textarea_clearvalidate_method.md) | @getshort(form/api/textarea/textarea_clearvalidate_method.md) |
+| [](form/api/textarea/textarea_destructor_method.md)    | @getshort(form/api/textarea/textarea_destructor_method.md)    |
 | [](form/api/textarea/textarea_disable_method.md)       | @getshort(form/api/textarea/textarea_disable_method.md)       |
 | [](form/api/textarea/textarea_enable_method.md)        | @getshort(form/api/textarea/textarea_enable_method.md)        |
 | [](form/api/textarea/textarea_focus_method.md)         | @getshort(form/api/textarea/textarea_focus_method.md)         |
@@ -801,6 +815,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/timepicker/timepicker_blur_method.md)          | @getshort(form/api/timepicker/timepicker_blur_method.md)          |
 | [](form/api/timepicker/timepicker_clear_method.md)         | @getshort(form/api/timepicker/timepicker_clear_method.md)         |
 | [](form/api/timepicker/timepicker_clearvalidate_method.md) | @getshort(form/api/timepicker/timepicker_clearvalidate_method.md) |
+| [](form/api/timepicker/timepicker_destructor_method.md)    | @getshort(form/api/timepicker/timepicker_destructor_method.md)    |
 | [](form/api/timepicker/timepicker_disable_method.md)       | @getshort(form/api/timepicker/timepicker_disable_method.md)       |
 | [](form/api/timepicker/timepicker_enable_method.md)        | @getshort(form/api/timepicker/timepicker_enable_method.md)        |
 | [](form/api/timepicker/timepicker_focus_method.md)         | @getshort(form/api/timepicker/timepicker_focus_method.md)         |

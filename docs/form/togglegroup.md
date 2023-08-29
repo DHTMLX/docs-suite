@@ -12,7 +12,7 @@ A control intended for creating groups of toggle buttons.
 
 **Related sample**: [Form. All controls](https://snippet.dhtmlx.com/ikyyekxq)
 
-**Related sample**: [Form. ToggleGroup](https://snippet.dhtmlx.com/yqi21ykr?tag=togglegroup)
+**Related sample**: [Form. ToggleGroup](https://snippet.dhtmlx.com/yqi21ykr?tag=toggle_group)
 
 ## Adding ToggleGroup
 
