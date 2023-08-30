@@ -30,4 +30,3 @@ form.getItem("avatar").validate(); // -> true/false
 form.getItem("avatar").validate(false); // -> true/false
 ~~~
 
-**Related sample**: [Avatar. Validation](https://snippet.dhtmlx.com/vfjjndbp?tag=avatar)

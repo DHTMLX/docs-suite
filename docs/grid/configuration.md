@@ -1601,4 +1601,4 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Tooltips for a complex column content](https://snippet.dhtmlx.com/c0gu3z29)
+
