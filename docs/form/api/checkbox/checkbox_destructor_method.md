@@ -6,7 +6,7 @@ description: You can explore the destructor method of the Checkbox control of Fo
 
 # destructor()
 
-@short: removes a checkbox instance and releases the occupied resources
+@short: removes a Checkbox instance and releases the occupied resources
 
 @signature: {'destructor(): void;'}
 
