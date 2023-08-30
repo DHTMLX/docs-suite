@@ -6,7 +6,7 @@ description: You can explore the destructor method of the Colorpicker control of
 
 # destructor()
 
-@short: removes a color picker instance and releases the occupied resources
+@short: removes a СolorPicker instance and releases the occupied resources
 
 @signature: {'destructor(): void;'}
 
