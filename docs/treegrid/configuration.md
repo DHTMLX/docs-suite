@@ -725,7 +725,7 @@ Or define unique lists of options for different column cells. For that, use a fu
 
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
-```js
+~~~js
 const data = [
     {
         renewals: "1 time" // one option is shown in a cell
@@ -736,7 +736,21 @@ const data = [
         ...
     }
 ];
-```
+~~~
+
+#### Configuring the multiselect editor
+
+There is a list of [configuration settings](treegrid/api/api_treegridcolumn_properties.md#editorconfig) you may provide for the **multiselect** editor type. Use the **editorConfig** property to specify the desired settings:
+
+~~~js
+{
+    id: "renewals", type: "string",
+    header: [{ text: "Number of renewals" }],
+    editorType: "multiselect",
+    options: ["1 time", "1-2 times", "more than 5 times"],
+    editorConfig: {selectAllButton:true}
+}
+~~~
 
 - #### combobox
 
@@ -779,6 +793,18 @@ Or define unique lists of options for different column cells. For that, use a fu
 ~~~
 
 **Related sample**: [TreeGrid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/1t8vvm07)
+
+#### Configuring the combobox editor
+
+There is a list of [configuration settings](treegrid/api/api_treegridcolumn_properties.md#editorconfig) you may provide for the **combobox** editor type. Use the **editorConfig** property to specify the desired settings:
+
+~~~js
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"],
+    editorConfig: {readonly:true}
+}
+~~~
 
 ### Editable combobox
 

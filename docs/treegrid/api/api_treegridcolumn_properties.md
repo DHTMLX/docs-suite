@@ -55,7 +55,7 @@ columns:[
     format?: string,
     options?: (string | { id: string | number, value: string })[] |
               (col: object, row?: object) => (string | { id: string | number, value: string })[],
-    editorConfig?: { newOptions?: boolean } | ICalendarConfig,
+    editorConfig?: obj,
 	adjust?: "data" | "header" | "footer" | boolean,
     align?: "left" | "center" | "right",
 	htmlEnable?: boolean,
@@ -196,11 +196,26 @@ columns:[
             </td>
 		</tr>
 		<tr>
-			<td><b>editorConfig</b></td>
-			<td>(optional) an object with configuration settings of the column's editor. <br>If <b>editorType: "combobox"</b> is specified, the <b>editorConfig</b> object can include the following property:
+			<td id="editorconfig"><b>editorConfig</b></td>
+			<td>(optional) an object with configuration settings of the column's editor. 
+            <br><br>If <b>editorType: "combobox/multiselect"</b> is specified, the <b>editorConfig</b> object can include the following properties:
             <ul>
-				<li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (optional) allows end users to add new values into the list of combobox options from UI. The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li>
-			</ul>If <b>type: "date"</b> is specified, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones)
+                <li><b>css</b> - (optional) styling to be applied to an option</li>
+                <li><b>itemHeight</b> - (optional) the height of an option</li>
+                <li><b>listHeight</b> - (optional) the height of the list of options</li>
+                <li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (optional) allows end users to add new values into the list of combobox options from UI. The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>).</li> 
+                <li><b>placeholder</b> - (optional) sets a placeholder in the editor's input</li>
+                <li><b>readonly</b> - (optional) makes the editor readonly (it is only possible to select options from the list, without entering words in the input)</li>
+                <li><b>template</b> - (optional) a callback function which returns a string. It is called with an object argument which contains two properties: 
+                    <ul>- <b>id</b> - the id of the selected option</ul>
+                    <ul>- <b>value</b> - the value of the selected option</ul>
+                </li>
+            </ul>
+            <br>In case of <b>editorType: "multiselect"</b>, the <b>editorConfig</b> object can include one more property:
+            <ul>
+                <li><b>selectAllButton</b> - (optional) adds a button that allows selecting all the options in the editor</li>
+            </ul><br>
+			If <b>type: "date"</b> is specified, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones)
             <br><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0gd4dn8p" target="_blank">TreeGrid. Rich example with templates and different editors</a>
             </td>
 		</tr>

@@ -732,6 +732,20 @@ const data = [
 ];
 ~~~
 
+#### Configuring the multiselect editor
+
+There is a list of [configuration settings](grid/api/api_gridcolumn_properties.md#editorconfig) you may provide for the **multiselect** editor type. Use the **editorConfig** property to specify the desired settings:
+
+~~~js
+{
+   	id: "renewals", type: "string",
+    header: [{ text: "Number of renewals" }],
+    editorType: "multiselect",
+    options: ["1 time", "1-2 times", "more than 5 times"],
+    editorConfig: {selectAllButton:true}
+}
+~~~
+
 - #### combobox
 
 An editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
@@ -773,6 +787,18 @@ Or define unique lists of options for different column cells. For that, use a fu
 ~~~
 
 **Related sample**: [Grid. Individual option lists for select, multiselect and combobox editors](https://snippet.dhtmlx.com/i22fg83z)
+
+#### Configuring the combobox editor
+
+There is a list of [configuration settings](grid/api/api_gridcolumn_properties.md#editorconfig) you may provide for the **combobox** editor type. Use the **editorConfig** property to specify the desired settings:
+
+~~~js
+{
+    width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
+    editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"],
+    editorConfig: {readonly:true}
+}
+~~~
 
 ### Editable combobox
 
