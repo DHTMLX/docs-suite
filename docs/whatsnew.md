@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.2.1 
+---------------
+
+Released on August 31, 2023
+
+### Fixes
+
+- Combobox. Fix the displaying of templates  
+- Context Menu. Fix the problem with closing of the context menu when clicking on the scrollbar
+- Grid/TreeGrid. Fix the issue when calling of the destructor() method caused a crash of an app based on the Optimus framework
+- Grid/TreeGrid. Fix the rendering of hidden columns
+
 Version 8.2
 -------------
 
@@ -63,6 +75,8 @@ Version 8.1.10
 ---------------
 
 Released on August 21, 2023
+
+### Fixes
 
 - Combobox. Fix the issue with the default icon of an option (set via the "src" or "icon" properties) not displayed in the input field
 - Toolbar. Fix the problem with the setState() method not applying a value for DatePicker
