@@ -6,16 +6,16 @@ description: You can explore the beforeHide event of Toolbar in the documentatio
 
 # beforeHide
 
-@short: fires before hiding an item of Toolbar
+@short: fires before hiding a sub-item of Toolbar
 
 @signature: {'beforeHide: (id: string | number, events: Event) => void | boolean;'}
 
 @params:
-- `id: string | number` - the ID of a toolbar item
+- `id: string | number` - the ID of a toolbar sub-item
 - `events: Event` - a native event object
 
 @returns:
-Return `false` to prevent hiding of a toolbar item; otherwise, `true`.
+Return `false` to prevent hiding of a toolbar sub-item; otherwise, `true`.
 
 @example:
 toolbar.events.on("beforeHide", function(id, event){

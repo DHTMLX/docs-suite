@@ -6,7 +6,7 @@ description: You can explore the afterHide event of Sidebar in the documentation
 
 # afterHide
 
-@short: fires after hiding an item of Sidebar
+@short: fires after hiding a sub-item of Sidebar
 
 @signature: {'afterHide: (events: Event) => void;'}
 

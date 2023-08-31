@@ -6,16 +6,16 @@ description: You can explore the beforeHide event of Sidebar in the documentatio
 
 # beforeHide
 
-@short: fires before hiding an item of Sidebar
+@short: fires before hiding a sub-item of Sidebar
 
 @signature: {'beforeHide: (id: string | number, events: Event) => void | boolean;'}
 
 @params:
-- `id: string | number` - the ID of a sidebar item
+- `id: string | number` - the ID of a sidebar sub-item
 - `events: Event` - a native event object
 
 @returns:
-Return `false` to prevent hiding of a sidebar item; otherwise, `true`.
+Return `false` to prevent hiding of a sidebar sub-item; otherwise, `true`.
 
 @example:
 sidebar.events.on("beforeHide", function(id, event){

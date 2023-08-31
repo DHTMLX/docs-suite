@@ -6,7 +6,7 @@ description: You can explore the afterHide event of Menu in the documentation of
 
 # afterHide
 
-@short: fires after hiding an item of Menu
+@short: fires after hiding a sub-item of Menu
 
 @signature: {'afterHide: (events: Event) => void;'}
 

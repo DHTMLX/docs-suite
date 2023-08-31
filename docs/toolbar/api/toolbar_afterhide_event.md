@@ -6,7 +6,7 @@ description: You can explore the afterHide event of Toolbar in the documentation
 
 # afterHide
 
-@short: fires after hiding an item of Toolbar
+@short: fires after hiding a sub-item of Toolbar 
 
 @signature: {'afterHide: (events: Event) => void;'}
 

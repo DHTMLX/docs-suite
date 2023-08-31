@@ -6,16 +6,16 @@ description: You can explore the beforeHide event of Menu in the documentation o
 
 # beforeHide
 
-@short: fires before hiding an item of Menu
+@short: fires before hiding a sub-item of Menu
 
 @signature: {'beforeHide: (id: string | number, events: Event) => void | boolean;'}
 
 @params:
-- `id: string | number` - the ID of a menu item
+- `id: string | number` - the ID of a menu sub-item
 - `events: Event` - a native event object
 
 @returns:
-Return `false` to prevent hiding of a menu item; otherwise, `true`.
+Return `false` to prevent hiding of a menu sub-item; otherwise, `true`.
 
 @example:
 menu.events.on("beforeHide", function(id, event){
