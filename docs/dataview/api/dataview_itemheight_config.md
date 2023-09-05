@@ -10,6 +10,8 @@ description: You can explore the itemHeight config of DataView in the documentat
 
 @signature: {'itemHeight?: number | string;'}
 
+@default: "auto" - adjusts to the height of the content
+
 @example:
 // sets the height of an item as a number
 const dataview = new dhx.DataView("dataview_container", { 
@@ -25,6 +27,8 @@ const dataview = new dhx.DataView("dataview_container", {
 
 **Related sample**: [Dataview. Setup Dataview item height](https://snippet.dhtmlx.com/cth9mwrf)
 
-The usage of the *CSS calc() function* within the **itemHeight** property is not possible.
+Note that the value of the **itemHeight** property is ignored when you use a [template](dataview/api/dataview_template_config.md) for DataView items.
+
+The usage of the CSS **_calc()_** function within the **itemHeight** property is not possible.
 
 [comment]: # (@related: dataview/configuration.md#height-of-an-item)

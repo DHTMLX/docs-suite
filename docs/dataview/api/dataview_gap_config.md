@@ -10,6 +10,8 @@ description: You can explore the gap config of DataView in the documentation of 
 
 @signature: {'gap?: number;'}
 
+@default: 0
+
 @example:
 const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5, gap: 20});
 

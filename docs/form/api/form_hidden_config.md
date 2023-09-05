@@ -10,6 +10,8 @@ description: You can explore the hidden Config of Form in the documentation of t
 
 @signature: {'hidden?: boolean;'}
 
+@default: false
+
 @example:
 const form = new dhx.Form("form_container", {
 	css: "dhx_widget--bordered",

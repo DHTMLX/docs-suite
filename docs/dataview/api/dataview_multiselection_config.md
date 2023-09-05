@@ -10,6 +10,8 @@ description: You can explore the multiselection config of DataView in the docume
 
 @signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 
+@default: false
+
 @example:
 const dataview = new dhx.DataView("dataview_container", {multiselection:true});
 

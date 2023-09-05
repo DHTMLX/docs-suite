@@ -10,6 +10,8 @@ description: You can explore the height config of DataView in the documentation 
 
 @signature: {'height?: number | string;'}
 
+@default: "auto" - adjusts to the container height
+
 @example:
 // sets the height as a number
 const dataview = new dhx.DataView("dataview_container", {height: 700});

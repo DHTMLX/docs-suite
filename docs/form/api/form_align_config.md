@@ -10,6 +10,8 @@ description: You can explore the align Config of Form in the documentation of th
 
 @signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
 
+@default: "start"
+
 @example:
 const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",

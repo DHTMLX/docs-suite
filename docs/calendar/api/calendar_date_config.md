@@ -10,6 +10,8 @@ description: You can explore the date config of Calendar in the documentation of
 
 @signature: {'date?: Date | string;'}
 
+@default: equals either to the value or to the current date, see below
+
 @example:
 const calendar = new dhx.Calendar("calendar_container", {
     value: new Date(),

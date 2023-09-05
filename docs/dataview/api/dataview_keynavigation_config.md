@@ -10,6 +10,8 @@ description: You can explore the keyNavigation config of DataView in the documen
 
 @signature: {'keyNavigation?: boolean | (() => boolean);'}
 
+@default: true
+
 @example:
 const dataview = new dhx.DataView("dataview_container", {
     itemsInRow: 5, 

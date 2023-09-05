@@ -10,10 +10,12 @@ description: You can explore the height Config of Form in the documentation of t
 
 @signature: {'height?: string | number | "content";'}
 
+@default: "content"
+
 @example:
 const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
-    height: "300px", // sets the common height for rows 
+    height: "300px", // sets a common height for rows 
     padding: "20px",   
     rows: [
         {
@@ -23,7 +25,7 @@ const form = new dhx.Form("form_container", {
         },
         {
             padding: "10px",
-            height: "200px", // sets the common height for cols
+            height: "200px", // sets a common height for cols
             cols: [{
                 type: "checkbox",
                 width: "80px", 

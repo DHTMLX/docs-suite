@@ -10,6 +10,8 @@ description: You can explore the itemsInRow config of DataView in the documentat
 
 @signature: {'itemsInRow?: number;'}
 
+@default: 1
+
 @example:
 const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 

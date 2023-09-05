@@ -10,6 +10,8 @@ description: You can explore the hiddenLabel config of Combo Box in the document
 
 @signature: {'hiddenLabel?: boolean;'}
 
+@default: false
+
 @example:
 const combo = new dhx.Combobox("combo_container",{
     hiddenLabel:true

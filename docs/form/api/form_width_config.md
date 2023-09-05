@@ -10,6 +10,8 @@ description: You can explore the width Config of Form in the documentation of th
 
 @signature: {'width?: string | number | "content";'}
 
+@default: "content"
+
 @example:
 const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",

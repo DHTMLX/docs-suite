@@ -10,6 +10,8 @@ description: You can explore the labelWidth config of Combo Box in the documenta
 
 @signature: {'labelWidth?: string | number;'}
 
+@default: "auto"
+
 @example:
 const combo = new dhx.Combobox("combo_container", {
     labelWidth:100

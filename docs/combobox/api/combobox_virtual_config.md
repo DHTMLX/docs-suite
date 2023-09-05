@@ -10,6 +10,8 @@ description: You can explore the virtual config of Combo Box in the documentatio
 
 @signature: {'virtual?: boolean;'}
 
+@default: false
+
 @example:
 const combo = new dhx.Combobox("combo_container",{
     virtual:true

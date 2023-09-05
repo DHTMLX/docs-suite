@@ -16,11 +16,11 @@ description: You can explore the Properties of the Datepicker control of Form in
     value?: Date | string,
 
     css?: string,
-    disabled?: boolean,
+    disabled?: boolean, // false by default
     editable?: boolean, // false by default
     height?: string | number | "content", // "content" by default
-    hidden?: boolean,
-    padding?: string | number,
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     required?: boolean, // false by default
     validation?: (input: string | Date) => boolean,
     width?: string | number | "content", // "content" by default
@@ -35,7 +35,7 @@ description: You can explore the Properties of the Datepicker control of Form in
     thisMonthOnly?: boolean, // false by  default
     timeFormat?: 24 | 12, // 24 by default
     timePicker?: boolean, // false by default
-    valueFormat?: string | Date,
+    valueFormat?: string | Date, // "string" by default
     weekNumbers?: boolean, // false by default
     weekStart?: "saturday" | "sunday" | "monday", // "sunday" by default
 
@@ -81,7 +81,7 @@ description: You can explore the Properties of the Datepicker control of Form in
         </tr>
         <tr>
             <td><b>editable</b></td>
-            <td>(optional) allows a user to enter the value of the control manually, false by default </td>
+            <td>(optional) allows a user to enter the value of the control manually, <i>false</i> by default </td>
         </tr>
         <tr>
             <td><b>height</b></td>

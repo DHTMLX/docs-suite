@@ -10,6 +10,8 @@ description: You can explore the multiselection config of Combo Box in the docum
 
 @signature: {'multiselection?: boolean;'}
 
+@default: false
+
 @example:
 const combo = new dhx.Combobox("combo_container", {
     multiselection:true

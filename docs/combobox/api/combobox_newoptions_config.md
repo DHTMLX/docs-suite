@@ -10,6 +10,8 @@ description: You can explore the data config of Combo Box in the documentation o
 
 @signature: {'newOptions?: boolean;'}
 
+@default: false
+
 @example:
 const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,

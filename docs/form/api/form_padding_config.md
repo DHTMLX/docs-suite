@@ -10,6 +10,8 @@ description: You can explore the padding Config of Form in the documentation of 
 
 @signature: {'padding?: string | number;'}
 
+@default: "8px"
+
 @example:
 const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",

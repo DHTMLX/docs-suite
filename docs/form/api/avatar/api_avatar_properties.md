@@ -17,29 +17,29 @@ description: You can explore the Properties of the Avatar control of Form in the
     target?: string,
     value?: object,
 
-    hidden?: boolean,
-    disabled?: boolean,
-    readOnly?: boolean,
+    hidden?: boolean, // false by default
+    disabled?: boolean, // false by default
+    readOnly?: boolean, // false by default
 
-    removeIcon?: boolean,
-    circle?: boolean,
+    removeIcon?: boolean, // true by default 
+    circle?: boolean, // false by default
     icon?: string,
     placeholder?: string,
     preview?: string,
     alt?: string,
-    size?: "small" | "medium" | "large" | number,
+    size?: "small" | "medium" | "large" | number, // "medium" by default
     
     css?: string,
-    width?: string | number | "content",
-    height?: string | number | "content",
-    padding?: string | number,
+    width?: string | number | "content", // "content" by default
+    height?: string | number | "content", // "content" by default
+    padding?: string | number, // "8px" by default
 
     label?: string,
     labelWidth?: string | number,
-    labelPosition?: "left" | "top",
-    hiddenLabel?: boolean,
+    labelPosition?: "left" | "top", // "top" by default
+    hiddenLabel?: boolean, // false by default
     helpMessage?: string,
-    required?: boolean,
+    required?: boolean, // false by default
 
     preMessage?: string,
     successMessage?: string,
@@ -47,12 +47,12 @@ description: You can explore the Properties of the Avatar control of Form in the
 
     validation?: (value: object) => boolean,
 
-    accept?: string,
-    fieldName?: string,
-    autosend?: boolean,
+    accept?: string, // "image/*" by default
+    fieldName?: string, // "file" by default
+    autosend?: boolean, // false by default
     params?: { [key: string]: any },
     headerParams?: { [key: string]: any },
-    updateFromResponse?: boolean
+    updateFromResponse?: boolean  // true by default 
 }
 ~~~
 
@@ -92,23 +92,23 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
          <tr>
             <td><b>hidden</b></td>
-            <td>(optional) defines whether a control is hidden</td>
+            <td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>disabled</b></td>
-            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>readOnly</b></td>
-            <td>(optional) sets the readonly mode for the control, (<i>false</i>) by default</td>
+            <td>(optional) sets the readonly mode for the control, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>removeIcon</b></td>
-            <td>(optional) enables the possibility to clear the control by means of the UI, (<i>true</i>) by default</td>
+            <td>(optional) enables the possibility to clear the control by means of the UI, <i>true</i> by default</td>
         </tr>
         <tr>
             <td><b>circle</b></td>
-            <td>(optional) sets the mode of displaying the control with rounded corners</td>
+            <td>(optional) sets the mode of displaying the control with rounded corners, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>icon</b></td>
@@ -128,7 +128,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>size</b></td>
-            <td>(optional) allows setting one of the three basic control's sizes, or applying a custom size, <i>medium</i> by default</td>
+            <td>(optional) allows setting one of the three basic control's sizes, or applying a custom size, <i>"medium"</i> by default</td>
         </tr>
         <tr>
             <td><b>css</b></td>
@@ -136,15 +136,15 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
+            <td>(optional) the width of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(optional) the height of a control</td>
+            <td>(optional) the height of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Avatar control</td>
+            <td>(optional) sets padding between a cell and a border of the Avatar control, "8px" by default</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -156,11 +156,11 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
+            <td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) makes the label invisible</td>
+            <td>(optional) makes the label invisible, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>helpMessage</b></td>
@@ -168,7 +168,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>preMessage</b></td>
@@ -188,15 +188,15 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr> 
         <tr>
             <td id="accept"><b>accept</b></td>
-            <td>(optional) allows specifying the type/extension of the selected file, <i>image/*</i> by default. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
+            <td>(optional) allows specifying the type/extension of the selected file, <i>"image/*"</i> by default. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
         </tr>      
         <tr>
             <td><b>fieldName</b></td>
-            <td>(optional) sets the file field name in the form data sent to the server, <i>file</i> by default</td>
+            <td>(optional) sets the file field name in the form data sent to the server, <i>"file"</i> by default</td>
         </tr>
         <tr>
             <td><b>autosend</b></td>
-            <td>(optional) enables/disables automatic sending of an added file</td>
+            <td>(optional) enables/disables automatic sending of an added file, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>params</b></td>
@@ -208,7 +208,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>updateFromResponse</b></td>
-            <td>(optional) updates file attributes with the data from the server response</td>
+            <td>(optional) updates file attributes with the data from the server response, <i>true</i> by default</td>
         </tr>
     </tbody>
 </table>
