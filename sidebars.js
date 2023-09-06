@@ -965,91 +965,6 @@ module.exports = {
                 },
                 {
                   type: "category",
-                  label: "Datepicker API",
-                  collapsed: true,
-                  link: {
-                    type: 'generated-index',
-                    title: "Datepicker API",
-                    keywords: ['datepicker API'],
-                    image: '/img/docusaurus.png'
-                  },
-                  /*link: { 
-                    type: 'doc',
-                    id: "form/api/overview/calendar/api_overview"
-                  },*/
-                  items: [{
-                    type: "category",
-                    label: "Form Datepicker methods",
-                    collapsed: true,
-                    link: {
-                      type: 'generated-index',
-                      title: "Form Datepicker methods",
-                      keywords: ['form datepicker methods'],
-                      image: '/img/docusaurus.png'
-                    },
-                    /*link: { 
-                      type: 'doc',
-                      id: "form/api/overview/calendar/methods_overview"
-                    },*/
-                    items: [
-                      "form/api/calendar/calendar_blur_method",
-                      "form/api/calendar/calendar_clear_method",
-                      "form/api/calendar/calendar_clearvalidate_method",
-                      "form/api/calendar/calendar_destructor_method",
-                      "form/api/calendar/calendar_disable_method",
-                      "form/api/calendar/calendar_enable_method",
-                      "form/api/calendar/calendar_focus_method",
-                      "form/api/calendar/calendar_getproperties_method",
-                      "form/api/calendar/calendar_getvalue_method",
-                      "form/api/calendar/calendar_getwidget_method",
-                      "form/api/calendar/calendar_hide_method",
-                      "form/api/calendar/calendar_isdisabled_method",
-                      "form/api/calendar/calendar_isvisible_method",
-                      "form/api/calendar/calendar_setproperties_method",
-                      "form/api/calendar/calendar_setvalue_method",
-                      "form/api/calendar/calendar_show_method",
-                      "form/api/calendar/calendar_validate_method",
-                    ],
-                  },
-                  {
-                    type: "category",
-                    label: "Form Datepicker events",
-                    collapsed: true,
-                    link: {
-                      type: 'generated-index',
-                      title: "Form Datepicker events",
-                      keywords: ['form datepicker events'],
-                      image: '/img/docusaurus.png'
-                    },
-                    /*link: { 
-                      type: 'doc',
-                      id: "form/api/overview/calendar/events_overview"
-                    },*/
-                    items: [
-                      "form/api/calendar/calendar_afterchangeproperties_event",
-                      "form/api/calendar/calendar_afterhide_event",
-                      "form/api/calendar/calendar_aftershow_event",
-                      "form/api/calendar/calendar_aftervalidate_event",
-                      "form/api/calendar/calendar_beforechange_event",
-                      "form/api/calendar/calendar_beforechangeproperties_event",
-                      "form/api/calendar/calendar_beforehide_event",
-                      "form/api/calendar/calendar_beforeshow_event",
-                      "form/api/calendar/calendar_beforevalidate_event",
-                      "form/api/calendar/calendar_blur_event",
-                      "form/api/calendar/calendar_change_event",
-                      "form/api/calendar/calendar_focus_event",
-                      "form/api/calendar/calendar_input_event",
-                      "form/api/calendar/calendar_keydown_event",
-                    ],
-                  },
-                  {
-                    type: "doc",
-                    id: "form/api/calendar/api_calendar_properties",
-                  },
-                  ],
-                },
-                {
-                  type: "category",
                   label: "Checkbox API",
                   collapsed: true,
                   link: {
@@ -1454,6 +1369,91 @@ module.exports = {
                       type: "doc",
                       id: "form/api/container/api_container_properties",
                     },
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Datepicker API",
+                  collapsed: true,
+                  link: {
+                    type: 'generated-index',
+                    title: "Datepicker API",
+                    keywords: ['datepicker API'],
+                    image: '/img/docusaurus.png'
+                  },
+                  /*link: { 
+                    type: 'doc',
+                    id: "form/api/overview/calendar/api_overview"
+                  },*/
+                  items: [{
+                    type: "category",
+                    label: "Form Datepicker methods",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Datepicker methods",
+                      keywords: ['form datepicker methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    /*link: { 
+                      type: 'doc',
+                      id: "form/api/overview/calendar/methods_overview"
+                    },*/
+                    items: [
+                      "form/api/calendar/calendar_blur_method",
+                      "form/api/calendar/calendar_clear_method",
+                      "form/api/calendar/calendar_clearvalidate_method",
+                      "form/api/calendar/calendar_destructor_method",
+                      "form/api/calendar/calendar_disable_method",
+                      "form/api/calendar/calendar_enable_method",
+                      "form/api/calendar/calendar_focus_method",
+                      "form/api/calendar/calendar_getproperties_method",
+                      "form/api/calendar/calendar_getvalue_method",
+                      "form/api/calendar/calendar_getwidget_method",
+                      "form/api/calendar/calendar_hide_method",
+                      "form/api/calendar/calendar_isdisabled_method",
+                      "form/api/calendar/calendar_isvisible_method",
+                      "form/api/calendar/calendar_setproperties_method",
+                      "form/api/calendar/calendar_setvalue_method",
+                      "form/api/calendar/calendar_show_method",
+                      "form/api/calendar/calendar_validate_method",
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Form Datepicker events",
+                    collapsed: true,
+                    link: {
+                      type: 'generated-index',
+                      title: "Form Datepicker events",
+                      keywords: ['form datepicker events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    /*link: { 
+                      type: 'doc',
+                      id: "form/api/overview/calendar/events_overview"
+                    },*/
+                    items: [
+                      "form/api/calendar/calendar_afterchangeproperties_event",
+                      "form/api/calendar/calendar_afterhide_event",
+                      "form/api/calendar/calendar_aftershow_event",
+                      "form/api/calendar/calendar_aftervalidate_event",
+                      "form/api/calendar/calendar_beforechange_event",
+                      "form/api/calendar/calendar_beforechangeproperties_event",
+                      "form/api/calendar/calendar_beforehide_event",
+                      "form/api/calendar/calendar_beforeshow_event",
+                      "form/api/calendar/calendar_beforevalidate_event",
+                      "form/api/calendar/calendar_blur_event",
+                      "form/api/calendar/calendar_change_event",
+                      "form/api/calendar/calendar_focus_event",
+                      "form/api/calendar/calendar_input_event",
+                      "form/api/calendar/calendar_keydown_event",
+                    ],
+                  },
+                  {
+                    type: "doc",
+                    id: "form/api/calendar/api_calendar_properties",
+                  },
                   ],
                 },
                 {
@@ -2398,12 +2398,12 @@ module.exports = {
               items: [
                 "form/avatar",
                 "form/button",
-                "form/calendar",
                 "form/checkbox",
                 "form/checkboxgroup",
                 "form/colorpicker",
                 "form/combo",
                 "form/container",
+                "form/calendar",
                 "form/fieldset",
                 "form/input",
                 "form/radiogroup",
