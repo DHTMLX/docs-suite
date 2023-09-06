@@ -16,11 +16,11 @@ description: You can explore the Properties of the Colorpicker control of Form i
 	value?: string,
 	
 	css?: string,
-	disabled?: boolean,
+	disabled?: boolean, // false by default
 	editable?: boolean, // false by default
 	height?: string | number | "content", // "content" by default
-	hidden?: boolean,
-	padding?: string | number,
+	hidden?: boolean, // false by default
+	padding?: string | number, // "8px" by default
 	required?: boolean, // false by default
 	validation?: (value: string) => boolean,
 	width?: string | number | "content", // "content" by default
@@ -30,8 +30,8 @@ description: You can explore the Properties of the Colorpicker control of Form i
 	icon?: string,
 	mode?: "palette" | "picker", // "palette" by default
 	palette?: string[][],
-	paletteOnly?: boolean,
-	pickerOnly?: boolean,
+	paletteOnly?: boolean, // false by default
+	pickerOnly?: boolean, // false by default
 	placeholder?: string,
 
 	hiddenLabel?: boolean, // false by default
@@ -72,27 +72,27 @@ description: You can explore the Properties of the Colorpicker control of Form i
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
-			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>editable</b></td>
-			<td>(optional) allows a user to enter the value of the control manually</td>
+			<td>(optional) allows a user to enter the value of the control manually, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>height</b></td>
-			<td>(optional) the height of a control</td>
+			<td>(optional) the height of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
-			<td>(optional) defines whether a control is hidden</td>
+			<td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>padding</b></td>
-			<td>(optional) sets padding between a cell and a border of the ColorPicker control</td>
+			<td>(optional) sets padding between a cell and a border of the ColorPicker control, <i>"8px"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>required</b></td>
-			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>validation</b></td>
@@ -100,7 +100,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(optional) the width of a control</td>
+			<td>(optional) the width of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>customColors</b></td>
@@ -108,7 +108,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
 		</tr>
 		<tr>
 			<td><b>grayShades</b></td>
-			<td>(optional) defines whether the section with gray shades is displayed in the palette</td>
+			<td>(optional) defines whether the section with gray shades is displayed in the palette, <i>true</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
@@ -124,11 +124,11 @@ description: You can explore the Properties of the Colorpicker control of Form i
 		</tr>
 		<tr>
 			<td><b>paletteOnly</b></td>
-			<td>(optional) defines whether ColorPicker is shown only the palette mode</td>
+			<td>(optional) defines whether ColorPicker is shown only the palette mode, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>pickerOnly</b></td>
-			<td>(optional) defines whether ColorPicker is shown only the picker mode</td>
+			<td>(optional) defines whether ColorPicker is shown only the picker mode, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>placeholder</b></td>
@@ -136,7 +136,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
 		</tr>
 		<tr>
 			<td><b>hiddenLabel</b></td>
-			<td>(optional) makes the label invisible</td>
+			<td>(optional) makes the label invisible, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>label</b></td>
@@ -144,7 +144,7 @@ description: You can explore the Properties of the Colorpicker control of Form i
 		</tr>
 		<tr>
 			<td><b>labelPosition</b></td>
-			<td>(optional) defines the position of a label: "left"|"top"</td>
+			<td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>labelWidth</b></td>

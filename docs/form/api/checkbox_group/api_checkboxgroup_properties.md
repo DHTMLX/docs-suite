@@ -19,7 +19,7 @@ description: You can explore the Properties of the Checkbox Group control of For
                 type: "checkbox",
                 id?: string,
                 value?: string,
-                checked?: boolean,
+                checked?: boolean, 
                 css?: string,
                 height?: string | number | "content",
                 hidden?: boolean,
@@ -46,7 +46,7 @@ description: You can explore the Properties of the Checkbox Group control of For
         ],
         css?: string,
         height?: string | number | "content", // "content" by default
-        padding?: string | number,
+        padding?: string | number, // "8px" by default
         width?: string | number | "content", // "content" by default
     },
     value?: {
@@ -55,10 +55,10 @@ description: You can explore the Properties of the Checkbox Group control of For
     },
     
     css?: string,
-    disabled?: boolean,
+    disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
-    hidden?: boolean,
-    padding?: string | number,
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     required?: boolean, // false by default
     width?: string | number | "content", // "content" by default
     
@@ -122,27 +122,27 @@ description: You can explore the Properties of the Checkbox Group control of For
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(optional) the height of a control</td>
+            <td>(optional) the height of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>hidden</b></td>
-            <td>(<i>boolean</i>) defines whether a CheckboxGroup is hidden</td>
+            <td>(<i>boolean</i>) defines whether a CheckboxGroup is hidden, <i>false</i> by default </td>
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of a CheckboxGroup control</td>
+            <td>(optional) sets padding between a cell and a border of a CheckboxGroup control, <i>"8px"</i> by default</td>
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
+            <td>(optional) the width of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) makes the label invisible</td>
+            <td>(optional) makes the label invisible, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -150,7 +150,7 @@ description: You can explore the Properties of the Checkbox Group control of For
         </tr>
         <tr>
             <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
+            <td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
         </tr>
         <tr>
             <td><b>labelWidth</b></td>

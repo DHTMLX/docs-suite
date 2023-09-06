@@ -14,14 +14,14 @@ description: You can explore the Properties of the Checkbox control of Form in t
     name?: string,
     id?: string,
     value?: string,
-    checked?: boolean,
+    checked?: boolean, // false by default
     text?: string,
 
     css?: string,
-    disabled?: boolean,
+    disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
-    hidden?: boolean,
-    padding?: string | number,
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     required?: boolean, // false by default
     width?: string | number | "content", // "content" by default
 
@@ -59,7 +59,7 @@ description: You can explore the Properties of the Checkbox control of Form in t
         </tr>
         <tr>
             <td><b>checked</b></td>
-            <td>(optional) defines the initial state of a checkbox</td>
+            <td>(optional) defines the initial state of a checkbox, <i>false</i> (unchecked) by default</td>
         </tr>
         <tr>
             <td><b>text</b></td>
@@ -71,31 +71,31 @@ description: You can explore the Properties of the Checkbox control of Form in t
         </tr>
         <tr>
             <td><b>disabled</b></td>
-            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(optional) the height of a control</td>
+            <td>(optional) the height of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>hidden</b></td>
-            <td>(optional) defines whether a checkbox is hidden</td>
+            <td>(optional) defines whether a checkbox is hidden, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of a Checkbox control</td>
+            <td>(optional) sets padding between a cell and a border of a Checkbox control, <i>"8px"</i> by default</td>
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required, <i>false</i> by default</a></td>
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
+            <td>(optional) the width of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) makes the label invisible</td>
+            <td>(optional) makes the label invisible, <i>false</i> by default</td>
         </tr>
          <tr>
             <td><b>label</b></td>
@@ -103,7 +103,7 @@ description: You can explore the Properties of the Checkbox control of Form in t
         </tr>
         <tr>
             <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
+            <td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
         </tr>
         <tr>
             <td><b>labelWidth</b></td>
