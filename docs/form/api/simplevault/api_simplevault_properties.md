@@ -31,11 +31,11 @@ description: You can explore the Properties of the Simple Vault control  of Form
     css?: string,
     height?: string | number | "content", // "content" by default
     width?: string | number | "content", // "content" by default
-    padding?: string | number,
-    hidden?: boolean,
-    disabled?: boolean,
+    padding?: string | number, // "8px" by default
+    hidden?: boolean, // false by default
+    disabled?: boolean, // false by default
         
-    fieldName?: string,
+    fieldName?: string, // "file" by default
     params?: {
         [key: string]: any,
     },
@@ -48,7 +48,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
     accept?: string, // all file types by default
 
     validation?: (value: object[]) => boolean;
-    required?: boolean,
+    required?: boolean, // false by default
 
     hiddenLabel?: boolean, // false by default
     label?: string,
@@ -103,27 +103,27 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(optional) the height of a control</td>
+            <td>(optional) the height of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
+            <td>(optional) the width of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the SimpleVault control</td>
+            <td>(optional) sets padding between a cell and a border of the SimpleVault control, <i>"8px"</i> by default</td>
         </tr>
         <tr>
             <td><b>hidden</b></td>
-            <td>(optional) defines whether a control is hidden</td>
+            <td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>disabled</b></td>
-            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>fieldName</b></td>
-            <td>(optional) sets the name of the file field in the form data that is sent to the server, <i>file</i> by default</td>
+            <td>(optional) sets the name of the file field in the form data that is sent to the server, <i>"file"</i> by default</td>
         </tr>
         <tr>
             <td><b>params</b></td>
@@ -139,15 +139,15 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td><b>updateFromResponse</b></td>
-            <td>(optional) updates file attributes with the data from the server response</td>
+            <td>(optional) updates file attributes with the data from the server response, <i>true</i> by default</td>
         </tr>
         <tr>
             <td><b>autosend</b></td>
-            <td>(optional) enables/disables automatic sending of an added file (files won't be sent if they fail validation)</td>
+            <td>(optional) enables/disables automatic sending of an added file (files won't be sent if they fail validation), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>accept</b></td>
-            <td>(optional) allows specifying the type/extension that will be displayed in the dialog window during the file selection. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a></td>
+            <td>(optional) allows specifying the type/extension that will be displayed in the dialog window during the file selection. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/accept#unique_file_type_specifiers">Check details</a>, all file types by default</td>
         </tr>
         <tr>
             <td><b>validation</b></td>
@@ -155,11 +155,11 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr> 
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) makes the label invisible</td>
+            <td>(optional) makes the label invisible, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -167,7 +167,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
+            <td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
         </tr>
         <tr>
             <td><b>labelWidth</b></td>

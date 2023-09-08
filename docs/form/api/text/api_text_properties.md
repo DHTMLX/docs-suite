@@ -16,10 +16,10 @@ description: You can explore the Properties of the Text control of Form in the d
 	value?: number | string,
 
 	css?: string,
-	disabled?: boolean,
+	disabled?: boolean, // false by default
 	height?: string | number | "content", // "content" by default
-	hidden?: boolean,
-	padding?: string | number,
+	hidden?: boolean, // false by default
+	padding?: string | number, // "8px" by default
     width?: string | number | "content", // "content" by default
 
     inputType?: "text" | "password" | "number", // "text" by default
@@ -62,31 +62,31 @@ description: You can explore the Properties of the Text control of Form in the d
         </tr>
         <tr>
             <td><b>disabled</b></td>
-            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(optional) the height of a control</td>
+            <td>(optional) the height of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>hidden</b></td>
-            <td>(optional) defines whether a control is hidden</td>
+            <td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Text control</td>
+            <td>(optional) sets padding between a cell and a border of the Text control, <i>"8px"</i> by default</td>
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
+            <td>(optional) the width of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>inputType</b></td>
-            <td>(optional) sets the type of an input: "text", "password", "number". <br />Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br />Use the "password" value to specify a field for entering a password.</td>
+            <td>(optional) sets the type of an input: "text", "password", "number". <br />Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br />Use the "password" value to specify a field for entering a password. <i>"text"</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) makes the label invisible</td>
+            <td>(optional) makes the label invisible, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -94,7 +94,7 @@ description: You can explore the Properties of the Text control of Form in the d
         </tr>
         <tr>
             <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
+            <td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
         </tr>
         <tr>
             <td><b>labelWidth</b></td>

@@ -16,10 +16,10 @@ description: You can explore the Properties of the Container control of Form in 
     html?: HTMLElement | string,
     
     css?: string,
-    disabled?: boolean,
+    disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
-    hidden?: boolean,
-    padding?: string | number,
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     width?: string | number | "content", // "content" by default
 }
 ~~~
@@ -31,11 +31,11 @@ description: You can explore the Properties of the Container control of Form in 
 - `id` - (optional) the id of a control, auto-generated if not set
 - `html` - (optional) the HTML content of a control
 - `css` - (optional) adds style classes to a control string
-- `disabled` - (optional) defines whether a control is enabled (false) or disabled (true)
-- `height` - (optional) the height of a control
-- `hidden` - (optional) defines whether a control is hidden
-- `padding` - (optional) sets padding between a cell and a border of a control
-- `width` - (optional) the width of a control
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
+- `height` - (optional) the height of a control, *"content"* by default
+- `hidden` - (optional) defines whether a control is hidden, *false* by default
+- `padding` - (optional) sets padding between a cell and a border of a control, *"8px"* by default
+- `width` - (optional) the width of a control, *"content"* by default
 
 ### Example
 

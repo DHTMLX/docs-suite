@@ -16,10 +16,10 @@ description: You can explore the Properties of the Slider control of Form in the
     value?: number | number[],
     
     css?: string,
-    disabled?: boolean,
+    disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
-    hidden?: boolean,
-    padding?: string | number,
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     width?: string | number | "content", // "content" by default
 
     inverse?: boolean, // false by default
@@ -68,27 +68,27 @@ description: You can explore the Properties of the Slider control of Form in the
         </tr>
         <tr>
             <td><b>disabled</b></td>
-            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+            <td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>height</b></td>
-            <td>(optional) the height of a control</td>
+            <td>(optional) the height of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>hidden</b></td>
-            <td>(optional) defines whether a control is hidden</td>
+            <td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Slider control</td>
+            <td>(optional) sets padding between a cell and a border of the Slider control, <i>"8px"</i> by default</td>
         </tr>
         <tr>
             <td><b>width</b></td>
-            <td>(optional) the width of a control</td>
+            <td>(optional) the width of a control, <i>"content"</i> by default</td>
         </tr>
         <tr>
             <td><b>inverse</b></td>
-            <td>(optional) enables/disables the inverse slider mode</td>
+            <td>(optional) enables/disables the inverse slider mode, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>majorTick</b></td>
@@ -96,23 +96,23 @@ description: You can explore the Properties of the Slider control of Form in the
         </tr>
         <tr>
             <td><b>max</b></td>
-            <td>(optional) the maximal value of slider, 100 by default</td>
+            <td>(optional) the maximal value of slider, <i>100</i> by default</td>
         </tr>
         <tr>
             <td><b>min</b></td>
-            <td>(optional) the minimal value of slider, 0 by default</td>
+            <td>(optional) the minimal value of slider, <i>0</i> by default</td>
         </tr>
         <tr>
             <td><b>mode</b></td>
-            <td>(optional) the direction of the Slider scale, "horizontal" by default</td>
+            <td>(optional) the direction of the Slider scale, <i>"horizontal"</i> by default</td>
         </tr>
         <tr>
             <td><b>range</b></td>
-            <td>(optional) enables/disables the possibility to select a range of values on the slider</td>
+            <td>(optional) enables/disables the possibility to select a range of values on the slider, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>step</b></td>
-            <td>(optional) the step the slider thumb will be moved with, 1 by default</td>
+            <td>(optional) the step the slider thumb will be moved with, <i>1</i> by default</td>
         </tr>
         <tr>
             <td><b>tick</b></td>
@@ -124,11 +124,11 @@ description: You can explore the Properties of the Slider control of Form in the
         </tr>
         <tr>
             <td><b>tooltip</b></td>
-            <td>(optional) enables prompt messages with ticks values on hovering over the slider thumb, true by default</td>
+            <td>(optional) enables prompt messages with ticks values on hovering over the slider thumb, <i>true</i> by default</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>
-            <td>(optional) makes the label invisible</td>
+            <td>(optional) makes the label invisible, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>label</b></td>
@@ -136,7 +136,7 @@ description: You can explore the Properties of the Slider control of Form in the
         </tr>
         <tr>
             <td><b>labelPosition</b></td>
-            <td>(optional) defines the position of a label: "left"|"top"</td>
+            <td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
         </tr>
         <tr>
             <td><b>labelWidth</b></td>

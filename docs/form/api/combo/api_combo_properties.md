@@ -17,10 +17,10 @@ description: You can explore the Properties of the Combo Box control of Form in 
 	value?: string | number | array,
 	
 	css?: string,
-	disabled?: boolean,
+	disabled?: boolean, // false by default
 	height?: string | number | "content", // "content" by default
-	hidden?: boolean,
-	padding?: string | number,
+	hidden?: boolean, // false by default
+	padding?: string | number, // "8px" by default
 	required?: boolean, // false by default
 	validation?: (id: (string | number) | (string | number)[], text: string | string[]) => boolean,
 	width?: string | number | "content", // "content" by default
@@ -30,7 +30,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 	itemsCount?: boolean | ((count: number) => string),
 	listHeight?: number | string, // 224 by default
 	multiselection?: boolean, // false by default
-	newOptions?: boolean,
+	newOptions?: boolean, // false by default
 	placeholder?: string,
 	readOnly?: boolean, // false by default
 	selectAllButton?: boolean, // false by default
@@ -89,23 +89,23 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
-			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>height</b></td>
-			<td>(optional) the height of a control</td>
+			<td>(optional) the height of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
-			<td>(optional) defines whether a control is hidden</td>
+			<td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>padding</b></td>
-			<td>(optional) sets padding between a cell and a border of the Combo control</td>
+			<td>(optional) sets padding between a cell and a border of the Combo control, <i>"8px"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>required</b></td>
-			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether the field with Combo is required</a> (for a form)</td>
+			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether the field with Combo is required</a> (for a form), <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>validation</b></td>
@@ -115,7 +115,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(optional) the width of a control</td>
+			<td>(optional) the width of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>filter</b></td>
@@ -123,7 +123,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>itemHeight</b></td>
-			<td>(optional) sets the height of a cell in the list of options</td>
+			<td>(optional) sets the height of a cell in the list of options, <i>32</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>itemsCount</b></td>
@@ -131,15 +131,15 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>listHeight</b></td>
-			<td>(optional) sets the height of the list of options</td>
+			<td>(optional) sets the height of the list of options, <i>224</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>multiselection</b></td>
-			<td>(optional) enables selection of multiple options in Combo</td>
+			<td>(optional) enables selection of multiple options in Combo, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>newOptions</b></td>
-			<td>(optional) allows end users to add new values into the list of combobox options. To add a new value, the user needs to type it into the input field and either press "Enter" or click on the appeared <i>Create "newValue"</i> option in the drop-down list.</td>
+			<td>(optional) allows end users to add new values into the list of combobox options. To add a new value, the user needs to type it into the input field and either press "Enter" or click on the appeared <i>Create "newValue"</i> option in the drop-down list, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>placeholder</b></td>
@@ -147,11 +147,11 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>readOnly</b></td>
-			<td>(optional) makes Combo readonly (it is only possible to select options from the list, without entering words in the input)</td>
+			<td>(optional) makes Combo readonly (it is only possible to select options from the list, without entering words in the input), <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>selectAllButton</b></td>
-			<td>(optional) defines whether the Select All button should be shown</td>
+			<td>(optional) defines whether the Select All button should be shown, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>template</b></td>
@@ -159,11 +159,11 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>virtual</b></td>
-			<td>(optional) enables dynamic loading of data on scrolling the list of options</td>
+			<td>(optional) enables dynamic loading of data on scrolling the list of options, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hiddenLabel</b></td>
-			<td>(optional) makes the label invisible</td>
+			<td>(optional) makes the label invisible, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>label</b></td>
@@ -171,7 +171,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
 		</tr>
 		<tr>
 			<td><b>labelPosition</b></td>
-			<td>(optional) defines the position of a label: "left"|"top"</td>
+			<td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>labelWidth</b></td>

@@ -16,11 +16,11 @@ description: You can explore the Properties of the Timepicker control of Form in
 	value?: Date | number | string | array | object,
 
 	css?: string,
-	disabled?: boolean,
+	disabled?: boolean, // false by default
 	editable?: boolean, // false by default
 	height?: string | number | "content", // "content" by default
-	hidden?: boolean,
-	padding?: string | number,
+	hidden?: boolean, // false by default
+	padding?: string | number, // "8px" by default
 	required?: boolean, // false by default
 	validation?: (input: string) => boolean,
     width?: string | number | "content", // "content" by default
@@ -58,22 +58,22 @@ description: You can explore the Properties of the Timepicker control of Form in
         - for the `24-hour` format contains key:value pairs for hours, minutes and their values:<br> `{hour: 0, minute: 39}`
         - for the `12-hour` format contains key:value pairs for hours, minutes, am/pm identifiers and their values: <br> `{hour: 6, minute: 0, AM: true}`
 - `css` - (optional) adds style classes to a control
-- `disabled` - (optional) defines whether a control is enabled (false) or disabled (true)
-- `editable` - (optional) allows a user to enter the value of the control manually
-- `height` - (optional) the height of a control
-- `hidden` - (optional) defines whether a control is hidden
-- `padding` - (optional) sets padding between a cell and a border of the TimePicker control
-- `required` - (optional) defines whether a control is required
+- `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
+- `editable` - (optional) allows a user to enter the value of the control manually, *false* by default
+- `height` - (optional) the height of a control, *"content"* by default
+- `hidden` - (optional) defines whether a control is hidden, *false* by default
+- `padding` - (optional) sets padding between a cell and a border of the TimePicker control, *"8px"* by default
+- `required` - (optional) defines whether a control is required, *false* by default
 - `validation` - (optional) [the validation function](form/work_with_form.md#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
-- `width` - (optional) the width of a control
-- `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons
+- `width` - (optional) the width of a control, *"content"* by default
+- `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons, *false* by default
 - `icon` - (optional) the name of an icon from the used icon font
 - `placeholder` - (optional) a tip for the input
-- `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly
-- `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string", "timeObject"
-- `hiddenLabel` - (optional)  makes the label invisible
+- `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly, *24* by default
+- `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string" (default), "timeObject"
+- `hiddenLabel` - (optional)  makes the label invisible, *false* by default
 - `label` - (optional) specifies a label for a control
-- `labelPosition` - (optional) defines the position of a label: "left"|"top"
+- `labelPosition` - (optional) defines the position of a label: "left" | "top" (default)
 - `labelWidth` - (optional) sets the width of the label of a control
 - `helpMessage` - (optional) adds a help message to a control
 - `preMessage` - (optional) a message that contains instructions for interacting with the control

@@ -16,15 +16,15 @@ description: You can explore the Properties of the Input control of Form in the 
 	value?: string | number,
 	
 	css?: string,
-	disabled?: boolean,
-	height?: string | number | "content", // "content"
-	hidden?: boolean,
-	padding?: string | number,
+	disabled?: boolean, // false by default
+	height?: string | number | "content", // "content" by default
+	hidden?: boolean, // false by default
+	padding?: string | number, // "8px" by default
 	required?: boolean, // false by default
 	validation?: string | (input: string | number) => boolean,
 	width?: string | number | "content", // "content" by default
 
-	autocomplete?: boolean,
+	autocomplete?: boolean, // false by default
 	icon?: string,
 	inputType?: "text" | "password" | "number", // "text" by default
 	max?: number | string,
@@ -72,23 +72,23 @@ description: You can explore the Properties of the Input control of Form in the 
 		</tr>
         <tr>
 			<td><b>disabled</b></td>
-			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>)</td>
+			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>height</b></td>
-			<td>(optional) the height of a control</td>
+			<td>(optional) the height of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
-			<td>(optional) makes an input hidden</td>
+			<td>(optional) makes an input hidden, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>padding</b></td>
-			<td>(optional) sets padding between a cell and a border of the Input control</td>
+			<td>(optional) sets padding between a cell and a border of the Input control, <i>"8px"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>required</b></td>
-			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a></td>
+			<td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
 		</tr>
         <tr>
 			<td><b>validation</b></td>
@@ -108,11 +108,11 @@ description: You can explore the Properties of the Input control of Form in the 
 		</tr>
         <tr>
 			<td><b>width</b></td>
-			<td>(optional) the width of a control</td>
+			<td>(optional) the width of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>autocomplete</b></td>
-			<td>(optional) enables/disables the autocomplete functionality of the input</td>
+			<td>(optional) enables/disables the autocomplete functionality of the input, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>icon</b></td>
@@ -120,7 +120,7 @@ description: You can explore the Properties of the Input control of Form in the 
 		</tr>
         <tr>
 			<td><b>inputType</b></td>
-			<td>(optional) sets the type of an input: "text", "password", "number". <br/>Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br/>Use the "password" value to specify a field for entering a password.</td>
+			<td>(optional) sets the type of an input: "text", "password", "number". <br/>Using the "number" type for the input sets the type of the <b>value</b> attribute to "number". <br/>Use the "password" value to specify a field for entering a password. <i>"text"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>max</b></td>
@@ -144,11 +144,11 @@ description: You can explore the Properties of the Input control of Form in the 
 		</tr>
 		<tr>
 			<td><b>readOnly</b></td>
-			<td>(optional) defines whether an input is readonly</td>
+			<td>(optional) defines whether an input is readonly, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hiddenLabel</b></td>
-			<td>(optional) makes the label invisible</td>
+			<td>(optional) makes the label invisible, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>label</b></td>
@@ -156,7 +156,7 @@ description: You can explore the Properties of the Input control of Form in the 
 		</tr>
         <tr>
 			<td><b>labelPosition</b></td>
-			<td>(optional) defines the position of a label: "left"|"top"</td>
+			<td>(optional) defines the position of a label: "left" | "top", <i>"top"</i> by default</td>
 		</tr>
         <tr>
 			<td><b>labelWidth</b></td>
