@@ -22,7 +22,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 				checked?: boolean, // false by default 
 				css?: string,
 				height?: string | number | "content", // "content" by default
-				disabled: boolean,  // false by default
+				disabled?: boolean,  // false by default
 				hidden?: boolean,  // false by default
 				padding?: string | number, // "8px" by default
 				text?: string,
@@ -38,6 +38,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 				checked?: boolean,
 				css?: string,
 				height?: string | number | "content",
+				disabled?: boolean,
 				hidden?: boolean,
 				padding?: string | number,
 				text?: string,
