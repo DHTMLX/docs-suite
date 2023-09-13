@@ -3166,7 +3166,6 @@ module.exports = {
                   ],
                 },
                 "menu/api/api_menuitem_properties",
-                "menu/api/api_navitem_properties",
                 "menu/api/api_customhtml_properties",
                 "menu/api/api_separator_properties",
                 "menu/api/api_spacer_properties",

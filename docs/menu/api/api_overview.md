@@ -56,10 +56,6 @@ Use [TreeCollection events](tree_collection.md#events) to work with data.
 
 A MenuItem control can possess the [following properties](menu/api/api_menuitem_properties.md).
 
-## Menu NavItem properties
-
-A NavItem control may have the [following properties](menu/api/api_navitem_properties.md).
-
 ## Menu Custom HTML properties
 
 A Custom HTML control may possess the [following properties](menu/api/api_customhtml_properties.md).

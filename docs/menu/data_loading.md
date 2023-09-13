@@ -153,22 +153,6 @@ This section will give you the idea of JSON format templates for separate Menu c
 You can find the full list of properties of the **menuItem** object [here](menu/api/api_menuitem_properties.md).
 :::
 
-### NavItem template
-
-~~~js
-// navItem
-{
-    type:  "navItem", 
-    value: "Some",
-    icon:  "dxi-check",
-    count: 10
-}
-~~~
-
-:::tip
-You will find the full list of properties of the **navItem** object [here](menu/api/api_navitem_properties.md).
-:::
-
 ### Custom HTML template
 
 ~~~js

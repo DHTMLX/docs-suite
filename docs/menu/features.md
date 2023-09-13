@@ -42,7 +42,6 @@ In this section you can find out how to initialize Menu, how to add controls ins
 | Topic                                                 | Description                                                                                                      |
 | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | [MenuItem](../configuring_menu_items/#menuitem)       | Learn how to add a MenuItem control into the menu ([Example](https://snippet.dhtmlx.com/qkxeer2h))               |
-| [NavItem](../configuring_menu_items/#navitem)         | Learn how to add a NavItem control into the menu                                                                 |
 | [Custom HTML](../configuring_menu_items/#custom-html) | Learn how to add an item with custom HTML content into the menu ([Example](https://snippet.dhtmlx.com/nk65jfmx)) |
 | [Spacer](../configuring_menu_items/#spacer)           | Learn how to add a Spacer control into the menu ([Example](https://snippet.dhtmlx.com/fjaolual))                 |
 | [Separator](../configuring_menu_items/#separator)     | Learn how to add a Separator control into the menu ([Example](https://snippet.dhtmlx.com/71tybx5j))              |
@@ -124,7 +123,6 @@ In this section you can find out corresponding references of Menu and Menu contr
 | [Menu events](../../category/menu-events/)                  | Check the list of Menu events                           |
 | [Menu properties](../../category/menu-properties/)          | Check the list of Menu properties                       |
 | [MenuItem properties](../api/api_menuitem_properties/)      | Check the list of properties of the MenuItem control    |
-| [NavItem properties](../api/api_navitem_properties/)        | Check the list of properties of the NavItem control     |
 | [Custom HTML properties](../api/api_customhtml_properties/) | Check the list of properties of the Custom HTML control |
 | [Separator properties](../api/api_separator_properties/)    | Check the list of properties of the Separator control   |
 | [Spacer properties](../api/api_spacer_properties/)          | Check the list of properties of the Spacer control      |
