@@ -19,13 +19,14 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 				type: "radiobutton",
 				id?: string,
 				value: string,
-				checked?: boolean,
+				checked?: boolean, // false by default 
 				css?: string,
-				height?: string | number | "content",
-				hidden?: boolean,
-				padding?: string | number,
+				height?: string | number | "content", // "content" by default
+				disabled?: boolean,  // false by default
+				hidden?: boolean,  // false by default
+				padding?: string | number, // "8px" by default
 				text?: string,
-				width?: string | number | "content",
+				width?: string | number | "content", // "content" by default
 			},
 			// more radio buttons
 		],
@@ -37,6 +38,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 				checked?: boolean,
 				css?: string,
 				height?: string | number | "content",
+				disabled?: boolean,
 				hidden?: boolean,
 				padding?: string | number,
 				text?: string,
@@ -186,7 +188,11 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 		</tr>
 		<tr>
 			<td><b>checked</b></td>
-			<td>(optional) defines the initial state of a radio button, only one radio button can be checked at a time</td>
+			<td>(optional) defines the initial state of a radio button, only one radio button can be checked at a time, <i>false</i> by default</td>
+		</tr>
+		<tr>
+			<td><b>disabled</b></td>
+			<td>(optional) defines whether a control is enabled (<i>false</i>) or disabled (<i>true</i>), <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>css</b></td>
@@ -194,15 +200,15 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 		</tr>
 		<tr>
 			<td><b>height</b></td>
-			<td>(optional) the height of a control</td>
+			<td>(optional) the height of a control, <i>"content"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
-			<td>(optional) defines whether a radio button is hidden</td>
+			<td>(optional) defines whether a radio button is hidden, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>padding</b></td>
-			<td>(optional) sets padding between a cell and a border of a radio button</td>
+			<td>(optional) sets padding between a cell and a border of a radio button, <i>"8px"</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>text</b></td>
@@ -210,7 +216,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 		</tr>
 		<tr>
 			<td><b>width</b></td>
-			<td>(optional) the width of a control</td>
+			<td>(optional) the width of a control, <i>"content"</i> by default</td>
 		</tr>
     </tbody>
 </table>
