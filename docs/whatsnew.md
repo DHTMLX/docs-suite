@@ -8,6 +8,24 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.2.2 
+---------------
+
+Released on September 13, 2023
+
+### Fixes
+
+- DataView. Fix the issue with the FocusChange event not triggering on selecting an item with the mouse click
+- Grid/TreeGrid. Fix export to Excel with the non-numeric footer content
+- Grid/TreeGrid. Fix the problem with setting columns' width during export to Excel if the `adjust` config is enabled
+- Grid/TreeGrid. Fix export to Excel of the applied cell alignment
+- Grid/TreeGrid. Fix export to Excel of the font weight applied to cells
+- Grid/TreeGrid. The logic of selecting an option is fixed for comboFilter. The functionality of selectFilter and inputFilter is improved
+- Menu. Fix the problem with rendering of the count badge at the root level
+- Tree. Fix the impossibility to override the checkbox configuration via the dataset
+- TreeGrid. Fix the issue with resetting changes in the edited cells after data ungrouping
+
+
 Version 8.2.1 
 ---------------
 
