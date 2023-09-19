@@ -294,7 +294,7 @@ In this section you will learn about common functionality of the library which c
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
 - [**Check a TreeGrid  widget >>>**](treegrid.md) - it allows showing the nested tabular data
-- [**Check SpreadSheet >>>**](https://docs.dhtmlx.com/spreadsheet/index.html) - if you need functionality like Google Spreadsheets or Excel
+- [**Check SpreadSheet >>>**](https://docs.dhtmlx.com/spreadsheet/) - if you need functionality like Google Spreadsheets or Excel
 - [**Check Pivot >>>**](https://docs.dhtmlx.com/pivot/index.html) - if you are interested in analyzing data from large datasets
 
 :::info
