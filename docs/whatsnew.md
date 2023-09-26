@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.2.3 
+---------------
+
+Released on September 26, 2023
+
+### Fixes
+
+- Chart. Fix the issue with `minValue` rounding a fractional value
+- Chart. Fix the functionality of the `dashed` property in the Spline charts
+- Grid/TreeGrid. Fix the memory leak related to the header filters
+- TreeGrid. Fix the problem when a double click on a grouped row threw an error
+
 Version 8.2.2 
 ---------------
 
