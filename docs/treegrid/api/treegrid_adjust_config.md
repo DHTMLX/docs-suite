@@ -8,7 +8,7 @@ description: You can explore the adjust config of TreeGrid in the documentation 
 
 @short: Optional. Defines whether the width of columns is automatically adjusted to the width of their content
 
-@signature: {'adjust?: "header" | "footer" | "data" | boolean;'}
+@signature: {'adjust?: "header" | "data" | boolean;'}
 
 @default: false
 
@@ -34,10 +34,6 @@ The property can be specified to one of the available adjustment modes:
 			<td>adjusts the columns to the width of their header</td>
 		</tr>
         <tr>
-			<td><b>"footer"</b></td>
-			<td>adjusts the columns to the width of their footer</td>
-		</tr>
-        <tr>
 			<td><b>"data"</b></td>
 			<td>adjusts the columns to the width of their content</td>
 		</tr>
@@ -57,7 +53,7 @@ The width the columns will be adjusted to also depends on the values of the [min
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content;
 - you can also specify `htmlEnable:true` in the configuration object of TreeGrid;
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content;
-- the **adjust** option enabled (including the "header", "footer", "data" modes) adjusts the width of columns with account of [template](treegrid/api/api_treegridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [header/footer](treegrid/api/api_treegridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
+- the **adjust** option enabled (including the "header", "data" modes) adjusts the width of columns with account of [template](treegrid/api/api_treegridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [header/footer](treegrid/api/api_treegridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated.
 
 
 @changelog: added in v6.4
