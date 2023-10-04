@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.2.4 
+---------------
+
+Released on October 4, 2023
+
+- Grid/TreeGrid. Fix the issue with comboFilter not working in case the column's editor contains options with the id and value that don't match
+- Grid/TreeGrid. Fix the problem with the [`setColumns()`](/suite/grid/api/grid_setcolumns_method/) method not refreshing the comboFilter options
+- TreeGrid. Fix the issue with a console error throwing on hovering over the footer tooltips used together with the "content" property
+- Toolbar/Menu. Fix the problem with displaying the count badge with the `0` value
+
 Version 8.2.3 
 ---------------
 
