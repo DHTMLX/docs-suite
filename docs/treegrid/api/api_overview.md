@@ -190,9 +190,11 @@ description: You can explore the API of TreeGrid in the documentation of the DHT
 | [](treegrid/api/treegrid_editable_config.md)           | @getshort(treegrid/api/treegrid_editable_config.md)           |
 | [](treegrid/api/treegrid_eventhandlers_config.md)      | @getshort(treegrid/api/treegrid_eventhandlers_config.md)      |
 | [](treegrid/api/treegrid_exportstyles_config.md)       | @getshort(treegrid/api/treegrid_exportstyles_config.md)       |
+| [](treegrid/api/treegrid_footerautoheight_config.md)   | @getshort(treegrid/api/treegrid_footerautoheight_config.md)   |
 | [](treegrid/api/treegrid_footerrowheight_config.md)    | @getshort(treegrid/api/treegrid_footerrowheight_config.md)    |
 | [](treegrid/api/treegrid_footertooltip_config.md)      | @getshort(treegrid/api/treegrid_footertooltip_config.md)      |
 | [](treegrid/api/treegrid_grouptitletemplate_config.md) | @getshort(treegrid/api/treegrid_grouptitletemplate_config.md) |
+| [](treegrid/api/treegrid_headerautoheight_config.md)   | @getshort(treegrid/api/treegrid_headerautoheight_config.md)   |
 | [](treegrid/api/treegrid_headerrowheight_config.md)    | @getshort(treegrid/api/treegrid_headerrowheight_config.md)    |
 | [](treegrid/api/treegrid_headertooltip_config.md)      | @getshort(treegrid/api/treegrid_headertooltip_config.md)      |
 | [](treegrid/api/treegrid_height_config.md)             | @getshort(treegrid/api/treegrid_height_config.md)             |

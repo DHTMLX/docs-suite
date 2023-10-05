@@ -1033,7 +1033,9 @@ const dataset = [
 
 ### Autoheight for rows
 
-Starting from v7.1, you can set the [autoHeight: true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text to split into multiple lines automatically based on the width of the column
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
+Starting from v7.1, you can set the [autoHeight: true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text split into multiple lines automatically based on the width of the column:
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -1049,7 +1051,31 @@ const grid = new dhx.Grid("grid_container", {
 
 As a result, the height of the cells will automatically adjust to their content.
 
-But, **note**, that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.
+Please **note** that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text split into multiple lines, but the height of the cells will remain the same. However, you can change the height of the header/footer in two ways:
+
+- specify the necessary height of the rows in the header/footer via the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid
+- provide the automatic adjustment of the header/footer height for the content to fit in with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: true, // enable autoHeight in data (content)
+    headerAutoHeight: false, // disable autoHeight in header
+    footerAutoHeight: false, // disable autoHeigh in footer
+});
+
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: false, // disable autoHeight in data, header, footer
+    headerAutoHeight: true, // enable autoHeight in header
+});
+~~~
 
 ### Automatic adding of empty row into Grid
 
