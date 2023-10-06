@@ -8,6 +8,33 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3
+---------------
+
+Released on October 23, 2023
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-3/" target="_blank">Review of the release on the blog</a>
+
+### New functionality
+
+#### ColorPicker
+
+- The ability to adjust transparency
+
+#### Grid/TreeGrid
+
+- The ability to [set the autoheight mode for the header and the footer](grid/configuration.md#autoheight-for-rows) of the two components
+
+### Updates
+
+#### Form. Container
+
+- The control's [configuration object](form/api/container/api_container_properties.md) is extended with the properties that allow adding and controlling the **label**
+
+### Fixes
+
+- Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
+
 Version 8.2.4 
 ---------------
 
