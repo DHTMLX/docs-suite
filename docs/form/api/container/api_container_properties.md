@@ -21,6 +21,12 @@ description: You can explore the Properties of the Container control of Form in 
     hidden?: boolean, // false by default
     padding?: string | number, // "8px" by default
     width?: string | number | "content", // "content" by default
+
+    label?: string,
+    labelWidth?: string | number,
+    labelPosition?: "left" | "top", // "top" by default
+    hiddenLabel?: boolean, // false by default
+    helpMessage?: string
 }
 ~~~
 
@@ -36,9 +42,15 @@ description: You can explore the Properties of the Container control of Form in 
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
 - `padding` - (optional) sets padding between a cell and a border of a control, *"8px"* by default
 - `width` - (optional) the width of a control, *"content"* by default
+- `label` - (optional) specifies a label for a control
+- `labelWidth` - (optional) sets the width of the label of a control
+- `labelPosition`- (optional) defines the position of a label: "left" | "top", *"top"* by default
+- `hiddenLabel` - (optional) makes the label invisible, <i>false</i> by default
+- `helpMessage`- (optional) adds a help message to a control
+
 
 ### Example
 
-<iframe src="https://snippet.dhtmlx.com/cnxi9eqq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+<iframe src="https://snippet.dhtmlx.com/bm1l4od5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 **Related article:** [Container](form/container.md)

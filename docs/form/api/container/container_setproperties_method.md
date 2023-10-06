@@ -29,9 +29,15 @@ It is possible to change values of the following properties of the **Container**
 
 ~~~js
 {
-	height: string | number | "content", 
-	padding: string | number,
-	width: string, number, "content"
+	css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    label: string,
+    labelWidth: string | number,
+    labelPosition: "left" | "top",
+    hiddenLabel: boolean,
+    helpMessage: string
 }
 ~~~
 

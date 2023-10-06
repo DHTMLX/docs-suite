@@ -13,7 +13,8 @@ description: You can explore the getProperties method of the Container control o
 @returns:
 An object with the available properties of the control and their values.
 
-@example: const form = new dhx.Form("form_container", {
+@example: 
+const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     padding: "40px",
     rows: [
@@ -34,8 +35,14 @@ The returned object of the Container control looks like:
 
 ~~~js
 {
-    height: "400px",
-    padding: "12px 0px",
+    css: undefined,
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    label: "",
+    labelPosition: "top",
+    labelWidth: "",
+    padding: "20px",
     width: "content"
 }
 ~~~
