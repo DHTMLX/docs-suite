@@ -396,6 +396,7 @@ module.exports = {
                     "colorpicker/api/colorpicker_palette_config",
                     "colorpicker/api/colorpicker_paletteonly_config",
                     "colorpicker/api/colorpicker_pickeronly_config",
+                    "colorpicker/api/colorpicker_transparency_config",
                     "colorpicker/api/colorpicker_width_config",
                   ],
                 },

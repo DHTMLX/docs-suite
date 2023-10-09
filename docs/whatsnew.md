@@ -19,7 +19,7 @@ Released on October 23, 2023
 
 #### ColorPicker
 
-- The ability to adjust transparency
+- The ability to adjust the [color transparency](colorpicker/configuration.md#color-transparency)
 
 #### Grid/TreeGrid
 
@@ -33,7 +33,9 @@ Released on October 23, 2023
 
 ### Fixes
 
+- Form. Fix the absence of the bottom margin at the Container control
 - Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
+
 
 Version 8.2.4 
 ---------------
