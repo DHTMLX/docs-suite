@@ -56,7 +56,7 @@ columns:[
     options?: (string | { id: string | number, value: string })[] |
               (col: object, row?: object) => (string | { id: string | number, value: string })[],
     editorConfig?: obj,
-	adjust?: "data" | "header" | boolean,
+	adjust?: "data" | "header" | "footer" | boolean,
     align?: "left" | "center" | "right",
 	htmlEnable?: boolean,
 	hidden?: boolean,
