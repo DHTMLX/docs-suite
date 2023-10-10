@@ -257,12 +257,12 @@ const dataview = new dhx.DataView("dataview_container", {
 	eventHandlers: {
 		onclick: {
 			item_wrap: function(event, id) {
-				display("You clicked on " + event.target.tagName);
+				console.log("You clicked on " + event.target.tagName);
 			},
 		},
 		onmouseover: {
 			item_wrap: function(event, id) {
-				display(dataview.data.getItem(id).short);
+				console.log(dataview.data.getItem(id).short);
 			},
 		}
 	}

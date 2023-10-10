@@ -26,7 +26,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
                 <li><b>event</b> - an event object</li>
                 <li><b>object</b> - an object with two attributes:
                 <ol>- <b>row</b> - an object with a row configuration</ol>
-                <ol>- <b>column</b> - an object with a column configuration</ol></li>
+                <ol>- <b>col</b> - an object with a column configuration</ol></li>
             </ul></td>
 		</tr>
     </tbody>
@@ -53,7 +53,7 @@ const treeGrid = new dhx.TreeGrid("treegrid_container", {
 	eventHandlers: {
 		onmouseover: {
 			cell__template: function(event, data) {
-				display(JSON.stringify(data.row, null, 2));
+				console.log(JSON.stringify(data.row, null, 2));
 			} 
 		} 
 	}
@@ -91,7 +91,7 @@ const grid = new dhx.Grid("grid", {
     eventHandlers: {
 		onmouseover: {
 			cell__html: function(event, data) {
-				display(JSON.stringify(data.col, null, 2)); 
+				console.log(JSON.stringify(data.col, null, 2)); 
 			} 
 		} 
 	} 

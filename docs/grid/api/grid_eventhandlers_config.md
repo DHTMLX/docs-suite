@@ -26,7 +26,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
                 <li><b>event</b> - an event object</li>
                 <li><b>item</b> - an object with two attributes:
                 <ol>- <b>row</b> - an object with a row configuration</ol>
-                <ol>- <b>column</b> - an object with a column configuration</ol></li>
+                <ol>- <b>col</b> - an object with a column configuration</ol></li>
             </ul></td>
 		</tr>
     </tbody>

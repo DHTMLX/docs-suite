@@ -451,7 +451,7 @@ const grid = new dhx.Grid("grid_container", {
 	eventHandlers: { 
 		onmouseover: { 
 			cell__template: function(event, data) { 
-				display(JSON.stringify(data.row, null, 2)); 
+				console.log(JSON.stringify(data.row, null, 2)); 
 			} 
 	    } 
     } 

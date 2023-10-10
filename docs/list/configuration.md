@@ -237,12 +237,12 @@ const list = new dhx.List("list_container", {
 	eventHandlers: { 
 		onclick: {
 			list_item: function(event) {
-				display("You clicked on " + event.target.tagName);
+				console.log("You clicked on " + event.target.tagName);
 			}, 
 		},
 		onmouseover: {
 			list_item: function(event, id) { 
-				display(list.data.getItem(id).value);
+				console.log(list.data.getItem(id).value);
 			}, 
 		} 
 	} 

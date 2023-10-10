@@ -494,7 +494,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     eventHandlers: { 
 		onmouseover: { 
 			cell__html: function(event, data) { 
-				display(JSON.stringify(data.col, null, 2)); 
+				console.log(JSON.stringify(data.col, null, 2)); 
 			} 
 		}
 	} 
