@@ -52,7 +52,7 @@ const grid = new dhx.Grid("grid_container", {
 	eventHandlers: { 
 		onmouseover: { 
 			cell__template: function(event, data) {
-				display(JSON.stringify(data.row, null, 2)); 
+				console.log(JSON.stringify(data.row, null, 2)); 
 			}
 	    } 
     } 
@@ -84,12 +84,12 @@ const grid = new dhx.Grid("grid_container", {
     eventHandlers: { 
 		onclick: { 
 			cell__html: function(event, data) {
-				display(JSON.stringify(data.col, null, 2));
+				console.log(JSON.stringify(data.col, null, 2));
 			},
 		},
 		onmouseover: {
 			cell__html: function(event) {
-				display("You are over " + event.target.tagName);
+				console.log("You are over " + event.target.tagName);
 			},
 		}
 	}
