@@ -38,6 +38,7 @@ columns:[
             customFilter?: (item: any, input: string) => boolean,
             headerSort?: boolean,
             sortAs?: (cellValue: any) => string | number,
+            htmlEnable?: boolean,
         }
     ],
     footer?: [
@@ -50,6 +51,7 @@ columns:[
             rowspan?: number,
             css?: string,
             content?: "avg" | "sum" | "max" | "min" | "count",
+            htmlEnable?: boolean,
         },
     ],
     type?: "string" | "number" | "boolean" | "date" | "percent",
@@ -135,6 +137,7 @@ columns:[
             </li>
             <li><b>headerSort</b> - (optional) enables/disables sorting by clicking the header</li>
             <li><b>sortAs</b> - (optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
+            <li><b>htmlEnable</b> - (optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Grouped headers (spans)</a>
             </td>
@@ -152,6 +155,7 @@ columns:[
             <li><b>css</b> - (optional) styling to be applied to a footer</li>
             <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"
             </li>
+             <li><b>htmlEnable</b> - (optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a footer. If set to <i>false</i>, the content of the footer cells will be displayed as a <i>string</i> value</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid with footer</a>
             </td>

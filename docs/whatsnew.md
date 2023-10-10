@@ -21,20 +21,22 @@ Released on October 23, 2023
 
 - The ability to adjust the [color transparency](colorpicker/configuration.md#color-transparency)
 
-#### Grid/TreeGrid
-
-- The ability to [set the autoheight mode for the header and the footer](grid/configuration.md#autoheight-for-rows) of the two components
-
-### Updates
-
 #### Form. Container
 
-- The control's [configuration object](form/api/container/api_container_properties.md) is extended with the properties that allow adding and controlling the **label**
+- The control's [configuration object](form/api/container/api_container_properties.md) is extended with a set of properties that allow adding and controlling the **label**
+
+#### Grid/TreeGrid
+
+- The ability to [set the autoheight mode for the column's header/footer](grid/configuration.md#autoheight-for-rows) (PRO version)
+- The ability to [enable HTML content in the column's header/footer](grid/configuration.md#html-content-of-grid-columns) independent of the settings applied for the column or the whole component
+
+### Updates
 
 ### Fixes
 
 - Form. Fix the absence of the bottom margin at the Container control
 - Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
+- TreeGrid. Fix the work of the [adjust](treegrid/api/treegrid_adjust_config.md) property with "footer" value
 
 
 Version 8.2.4 

@@ -37,6 +37,7 @@ columns:[
             customFilter?: (item: any, input: string) => boolean,
             headerSort?: boolean,
             sortAs?: (cellValue: any) => string | number,
+            htmlEnable?: boolean,
         }
     ],
     footer?: [
@@ -48,6 +49,7 @@ columns:[
             content?: "inputFilter" | "selectFilter" | "comboFilter" |
                       "avg" | "sum" | "max" | "min" | "count" | string,
             customFilter?: (item: any, input: string) => boolean,
+            htmlEnable?: boolean,
         }
     ],
     type?: "string" | "number" | "boolean" | "date" | "percent",
@@ -132,6 +134,7 @@ columns:[
             		</li>
 					<li><b>headerSort</b> - (optional) enables/disables sorting by clicking the header</li>
 					<li><b>sortAs</b> - (optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
+					<li><b>htmlEnable</b> - (optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</li>
                 </ul>
 				<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/t8iust6j" target="_blank">TreeGrid. Header spans</a>
             </td>
@@ -154,6 +157,7 @@ columns:[
                 		<ol> - <b>input</b> - (required) the value of the option selected in the filter</ol>
                 	<br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
             	</li>
+            	<li><b>htmlEnable</b> - (optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a footer. If set to <i>false</i>, the content of the footer cells will be displayed as a <i>string</i> value</li>
                 </ul>
             </td>
 		</tr>

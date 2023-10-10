@@ -375,9 +375,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### HTML content of TreeGrid columns
 
-DHTMLX TreeGrid allows adding HTML content into TreeGrid cells in two ways:
+DHTMLX TreeGrid allows adding HTML content into TreeGrid cells (such as images, icons, text styles, etc.). You can enable the possibility to add HTML content both for the whole TreeGrid and for a particular column, or even for a certain column header/footer. Below you'll find all the available options:
 
-- by specifying the HTML content of all TreeGrid columns
+- setting HTML content for all TreeGrid columns
 
 This way presupposes making each cells of TreeGrid capable of displaying the HTML content via using the [htmlEnable](treegrid/api/treegrid_htmlenable_config.md) property in the configuration object of TreeGrid.
 
@@ -398,11 +398,11 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-- by specifying the HTML content of a separate column
+- setting HTML content for a particular column
 
 ![](../assets/treegrid/html_content.png)
 
-If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the configuration of a column:
+If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the [configuration of a column](treegrid/api/api_treegridcolumn_properties.md):
 
 ~~~js
 const dataset = [
@@ -427,6 +427,42 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 **Related sample**: [TreeGrid. HTML in data](https://snippet.dhtmlx.com/iubccmoi)
+
+- setting HTML content for the header/footer of a column
+
+You can set HTML content in the header or the footer of a column independently. The **htmlEnable** property enabled for the header/footer redefines the value of the same config specified for the parent column and for the whole TreeGrid:
+
+~~~js {8}
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            id: "name",
+            header: [
+                {
+                    text: "<span style='font-size: 16px; padding: 0; color: blue;'>Book Name</span>",
+                    htmlEnable: true,
+                }
+            ],
+            gravity: 1.5,
+        },
+        {
+            id: "price",
+            type: "string",
+            htmlEnable: true,
+            header: [
+                { text: "<span class='header-title'>Terms and conditions</span>", colspan: 2 },
+                { text: "Price" }
+            ]
+        },
+        // other columns' config
+    ],
+    data: dataset,
+    autoWidth: true,
+});
+~~~
+
+**Related sample**: [TreeGrid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/vf0ws454)
+
 
 ### Event handlers for HTML content
 
