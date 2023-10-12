@@ -28,9 +28,13 @@ Released on October 23, 2023
 #### Grid/TreeGrid
 
 - The ability to [set the autoheight mode for the column's header/footer](grid/configuration.md#autoheight-for-rows) (PRO version)
-- The ability to [enable HTML content in the column's header/footer](grid/configuration.md#html-content-of-grid-columns) independent of the settings applied for the column or the whole component
+- The ability to [enable HTML content in the columns' header/footer](grid/configuration.md#html-content-of-grid-columns) independent of the settings applied for the column or the whole component
 
 ### Updates
+
+#### Grid/TreeGrid
+
+- The functionality of the [eventHandlers](grid/api/grid_eventhandlers_config.md) configuration property is extended for the columns' header/footer
 
 ### Fixes
 

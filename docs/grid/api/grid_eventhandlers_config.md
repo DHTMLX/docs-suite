@@ -6,7 +6,7 @@ description: You can explore the eventHandlers config of Grid in the documentati
 
 # eventHandlers
 
-@short: Optional. Adds event handlers to the HTML elements of a custom template of a Grid cell or to the HTML elements defined in the data set of Grid
+@short: Optional. Adds event handlers to the HTML elements of a custom template in a cell, or to the HTML elements defined in the data set, or to the header/footer cell
 
 @signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (events: Event, item: object) => void; };};'}
 
@@ -21,46 +21,58 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 		</tr>
         <tr>
 			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where <i>key</i> is the css class name that the handler will be applied to and <i>value</i> is a function that takes two parameters:
-            <ul>
-                <li><b>event</b> - an event object</li>
-                <li><b>item</b> - an object with two attributes:
-                <ol>- <b>row</b> - an object with a row configuration</ol>
-                <ol>- <b>col</b> - an object with a column configuration</ol></li>
-            </ul></td>
+			<td>an object that contains a <i>key:value</i> pair, where:
+				<ol>
+					<li><i>key</i> is the CSS class name that the handler will be applied to</li>
+					<li><i>value</i> is a function that takes two parameters:
+				     	<ul>
+				            <li><b>event</b> - an event object</li>
+				            <li><b>item</b> - an object with two attributes:
+				            	<ol>- <b>row</b> - an object with a row configuration</ol>
+				            	<ol>- <b>col</b> - an object with a column configuration</ol>
+				            </li>
+				        </ul>
+				    </li>
+			    </ol>
+        	</td>
 		</tr>
     </tbody>
 </table>
 
 @example:
-const grid = new dhx.Grid("grid_container", {
-	columns: [
-		{ width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
-		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
-			htmlEnable: true,
-			tooltip: false,
-			// define a custom template for the column's cells
-			template: function (text, row, col) {
-				return "<div class='cell__template'><input type='checkbox'
-                    disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
-			} 
-		},
-        // more options
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country", css: "header_country" }] },
+        { width: 150, id: "netChange", htmlEnable: true, header: [{text: "Net Change"}],
+            // define a custom template for the column's cells
+            template: function (text, row, col) {
+                return "<div className='cell__template'><input type='checkbox' disabled " + (text +"/>"+ 3000000 ? "checked" : "") + " ></div>";
+            },         
+        }
+        // more columns
     ],
-	data: data,
-	// add event handler to the HTML element of the custom template of cells
-	eventHandlers: { 
-		onmouseover: { 
-			cell__template: function(event, data) {
-				console.log(JSON.stringify(data.row, null, 2)); 
-			}
-	    } 
+    data: dataset,
+    eventHandlers: {
+    	// add an event handler for the header cell
+        onclick: {
+           header_country: function(event, data) {
+                console.log(JSON.stringify(data.col, null, 2)); 
+            }
+        },
+        // add event handler to the HTML element of the custom template of cells
+        onmouseover: {
+            cell__template: function(event, data) {
+                console.log(JSON.stringify(data.row, null, 2)); 
+            }
+        } ,
     } 
 });
 
 @descr:
 	
 **Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
+
+**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax)
 
 An example of adding event handlers to the HTML elements defined in the data set of Grid is given below:
 
@@ -96,7 +108,10 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-@changelog: added in v7.0
+@changelog: 
+
+- Added in v7.0
+- The ability to add event handlers for the header/footer added in v8.3
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#event-handlers-for-html-content grid/customization.md#adding-template-to-cells)
  

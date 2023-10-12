@@ -443,6 +443,8 @@ const grid = new dhx.Grid("grid", {
 
 ### Event handlers for HTML content
 
+#### HTML elements defined in the data set
+
 Starting from v7.0, you can add event handlers to the HTML elements defined in a data set of Grid with the help of the [](grid/api/grid_eventhandlers_config.md) configuration property, for instance:
 
 ~~~js {3,18-29}
@@ -478,6 +480,50 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
+
+#### HTML elements in the header/footer cell
+
+The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [](grid/api/grid_eventhandlers_config.md) configuration property for this purpose:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        {
+            width: 60,
+            id: "paid",
+            header: [
+                {
+                   text: `
+                       <label class="dhx_checkbox dhx_cell-editor__checkbox ">
+                          <input type="checkbox" class="dhx_checkbox__input dhx_checkbox--check-all">
+                          <span class="dhx_checkbox__visual-input "></span>
+                       </label>
+                   `,
+                   rowspan: 2,
+                   htmlEnable: true,
+                }
+            ],
+            type: "boolean",
+            sortable: false,
+        },
+     	// more columns
+    ],
+    data,
+    eventHandlers: { 
+        onclick: { 
+            "dhx_checkbox--check-all": function(event, data) {
+                grid.data.forEach(row => {
+                    grid.data.update(row.id, {
+                        [data.col.id]: event.target.checked,
+                    });
+                });
+            }
+        },
+    },
+});
+~~~
+
+**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/4fdki698)
 
 ## Editing Grid and separate columns
 

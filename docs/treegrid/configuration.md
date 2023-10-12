@@ -466,6 +466,8 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 ### Event handlers for HTML content
 
+#### HTML elements defined in the data set
+
 Starting from v7.0, you can add event handlers to the [HTML elements defined in the data set of TreeGrid](treegrid/configuration.md#html-content-of-treegrid-columns) with the help of the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property, for instance:
 
 ~~~js
@@ -502,6 +504,50 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 **Related sample**: [TreeGrid. Handling events in template](https://snippet.dhtmlx.com/la7u1xqy)
+
+#### HTML elements in the header/footer cell
+
+The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property for this purpose:
+
+~~~js
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            width: 60,
+            id: "paid",
+            header: [
+                {
+                  text: `
+                    <label class="dhx_checkbox dhx_cell-editor__checkbox ">
+                        <input type="checkbox" class="dhx_checkbox__input dhx_checkbox--check-all">
+                        <span class="dhx_checkbox__visual-input "></span>
+                    </label>
+                  `,
+                   rowspan: 2,
+                   htmlEnable: true,
+                }
+            ],
+            type: "boolean",
+            sortable: false,
+        },
+        // more columns
+    ],
+    data: projects,
+    eventHandlers: { 
+        onclick: { 
+            "dhx_checkbox--check-all": function(event, data) {
+                treeGrid.data.forEach(row => {
+                    treeGrid.data.update(row.id, {
+                        [data.col.id]: event.target.checked,
+                    });
+                });
+            }
+        },
+    },
+});
+~~~
+
+**Related sample**: [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p)
 
 ## Editing TreeGrid and separate columns
 
