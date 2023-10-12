@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.2.6 
+---------------
+
+Released on October 12, 2023
+
+### Fixes
+
+- ColorPicker. Fix incorrect adding of a custom color
+- Form. Fix incorrect work of the [`validate()`](suite/form/api/form_validate_method.md) method in the "silent" mode
+- Form. Fix incorrect work of the [`clear()`](suite/form/api/form_clear_method.md) method that triggered validation
+- Form. Fix blocking of typing on call of the [`validate()`](suite/form/api/input/input_validate_method.md) method for the Input control  
+- Grid/TreeGrid. Fix the difference in the number format used for the cell data and for the footer
+- Grid/TreeGrid. Fix the problem with displaying `O`(zero) in the footer as a total sum of a column
+
 Version 8.2.4 
 ---------------
 
