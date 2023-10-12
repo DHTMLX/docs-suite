@@ -33,6 +33,7 @@ Use [TreeCollection methods](tree_collection.md) to work with data.
 | Name                                        | Description                                        |
 | ------------------------------------------- | -------------------------------------------------- |
 | [](ribbon/api/ribbon_click_event.md)        | @getshort(ribbon/api/ribbon_click_event.md)        |
+| [](ribbon/api/ribbon_input_event.md)    	  | @getshort(ribbon/api/ribbon_input_event.md)    	   |
 | [](ribbon/api/ribbon_inputblur_event.md)    | @getshort(ribbon/api/ribbon_inputblur_event.md)    |
 | [](ribbon/api/ribbon_inputcreated_event.md) | @getshort(ribbon/api/ribbon_inputcreated_event.md) |
 | [](ribbon/api/ribbon_inputfocus_event.md)   | @getshort(ribbon/api/ribbon_inputfocus_event.md)   |

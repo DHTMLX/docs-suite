@@ -3477,6 +3477,7 @@ module.exports = {
                   },
                   items: [
                     "ribbon/api/ribbon_click_event",
+                    "ribbon/api/ribbon_input_event",
                     "ribbon/api/ribbon_inputblur_event",
                     "ribbon/api/ribbon_inputcreated_event",
                     "ribbon/api/ribbon_inputfocus_event",
@@ -4075,6 +4076,7 @@ module.exports = {
                     "toolbar/api/toolbar_afterhide_event",
                     "toolbar/api/toolbar_beforehide_event",
                     "toolbar/api/toolbar_click_event",
+                    "toolbar/api/toolbar_input_event",
                     "toolbar/api/toolbar_inputblur_event",
                     "toolbar/api/toolbar_inputchange_event",
                     "toolbar/api/toolbar_inputcreated_event",
