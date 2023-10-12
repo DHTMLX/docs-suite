@@ -44,6 +44,7 @@ Use [TreeCollection methods](tree_collection.md) to work with data.
 | [](sidebar/api/sidebar_inputblur_event.md)              | @getshort(sidebar/api/sidebar_inputblur_event.md)      |
 | [](sidebar/api/sidebar_inputcreated_event.md)           | @getshort(sidebar/api/sidebar_inputcreated_event.md)   |
 | [](sidebar/api/sidebar_inputfocus_event.md)             | @getshort(sidebar/api/sidebar_inputfocus_event.md)     |
+| [](sidebar/api/sidebar_keydown_event.md)      		  | @getshort(sidebar/api/sidebar_keydown_event.md)        |
 | [](sidebar/api/sidebar_openmenu_event.md)               | @getshort(sidebar/api/sidebar_openmenu_event.md)       |
 
 :::info important

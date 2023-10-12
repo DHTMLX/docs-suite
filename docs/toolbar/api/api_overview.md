@@ -41,6 +41,7 @@ Use [TreeCollection methods](tree_collection.md) to work with data.
 | [](toolbar/api/toolbar_inputchange_event.md)  | @getshort(toolbar/api/toolbar_inputchange_event.md)  |
 | [](toolbar/api/toolbar_inputcreated_event.md) | @getshort(toolbar/api/toolbar_inputcreated_event.md) |
 | [](toolbar/api/toolbar_inputfocus_event.md)   | @getshort(toolbar/api/toolbar_inputfocus_event.md)   |
+| [](toolbar/api/toolbar_keydown_event.md)      | @getshort(toolbar/api/toolbar_keydown_event.md)      |
 | [](toolbar/api/toolbar_openmenu_event.md)     | @getshort(toolbar/api/toolbar_openmenu_event.md)     |
 
 :::info important
