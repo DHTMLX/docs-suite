@@ -30,6 +30,22 @@ Released on October 23, 2023
 - The ability to [set the autoheight mode for the column's header/footer](grid/configuration.md#autoheight-for-rows) (PRO version)
 - The ability to [enable HTML content in the columns' header/footer](grid/configuration.md#html-content-of-grid-columns) independent of the settings applied for the column or the whole component
 
+#### Menu
+
+- New [keydown](menu/api/menu_keydown_event.md) event
+
+#### Ribbon
+
+- New events [input](ribbon/api/ribbon_input_event.md), [inputChange](ribbon/api/ribbon_inputchange_event.md),[keydown](ribbon/api/ribbon_keydown_event.md), and the [Datepicker](ribbon/datepicker.md) control
+
+#### Sidebar
+
+- New [keydown](sidebar/api/sidebar_keydown_event.md) event
+
+#### Toolbar
+
+- New events [input](toolbar/api/toolbar_input_event.md) and [keydown](toolbar/api/toolbar_keydown_event.md)
+
 ### Updates
 
 #### Grid/TreeGrid

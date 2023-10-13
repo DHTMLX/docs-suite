@@ -35,6 +35,7 @@ Use [TreeCollection methods](tree_collection.md) to work with data.
 | [](ribbon/api/ribbon_click_event.md)        | @getshort(ribbon/api/ribbon_click_event.md)        |
 | [](ribbon/api/ribbon_input_event.md)    	  | @getshort(ribbon/api/ribbon_input_event.md)    	   |
 | [](ribbon/api/ribbon_inputblur_event.md)    | @getshort(ribbon/api/ribbon_inputblur_event.md)    |
+| [](ribbon/api/ribbon_inputchange_event.md)  | @getshort(ribbon/api/ribbon_inputchange_event.md)  |
 | [](ribbon/api/ribbon_inputcreated_event.md) | @getshort(ribbon/api/ribbon_inputcreated_event.md) |
 | [](ribbon/api/ribbon_inputfocus_event.md)   | @getshort(ribbon/api/ribbon_inputfocus_event.md)   |
 | [](ribbon/api/ribbon_keydown_event.md)      | @getshort(ribbon/api/ribbon_keydown_event.md)      |
@@ -63,6 +64,10 @@ A Button control can have the [following properties](ribbon/api/api_button_prope
 ## Ribbon Custom HTML properties
 
 A Custom HTML control may have the [following properties](ribbon/api/api_customhtml_properties.md).
+
+## Ribbon Datepicker properties
+
+A Datepicker control can have [following properties](ribbon/api/api_datepicker_properties.md).
 
 ## Ribbon ImageButton properties
 
