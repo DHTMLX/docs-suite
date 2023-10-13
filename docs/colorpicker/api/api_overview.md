@@ -42,4 +42,5 @@ description: You can explore the API of Colorpicker in the documentation of the 
 | [](colorpicker/api/colorpicker_palette_config.md)      | @getshort(colorpicker/api/colorpicker_palette_config.md)      |
 | [](colorpicker/api/colorpicker_paletteonly_config.md)  | @getshort(colorpicker/api/colorpicker_paletteonly_config.md)  |
 | [](colorpicker/api/colorpicker_pickeronly_config.md)   | @getshort(colorpicker/api/colorpicker_pickeronly_config.md)   |
+| [](colorpicker/api/colorpicker_transparency_config.md) | @getshort(colorpicker/api/colorpicker_transparency_config.md) |
 | [](colorpicker/api/colorpicker_width_config.md)        | @getshort(colorpicker/api/colorpicker_width_config.md)        |

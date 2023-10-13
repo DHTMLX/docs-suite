@@ -119,3 +119,18 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container", {
     width: "300px"              
 });
 ~~~
+
+## Color transparency
+
+The Colorpicker component provides the possibility to set the necessary color transparency in the "picker" mode by pulling the handle on the transparency scale. This feature is enabled by default. To switch it off, set the [transparency](colorpicker/api/colorpicker_transparency_config.md) configuration option to *false*:
+
+~~~js
+const colorpicker = new dhx.Colorpicker("colorpicker", {
+    mode: "picker",
+    transparency: false
+});
+~~~
+
+![](../assets/colorpicker/colorpicker_transparency.png)
+
+**Related sample**: [Colorpicker. Disable color transparency](https://snippet.dhtmlx.com/ewgu0aps)

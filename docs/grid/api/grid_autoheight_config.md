@@ -8,7 +8,7 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 {{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
-@short: Optional. Makes long text to split into multiple lines based on the width of the column
+@short: Optional. Makes long text split into multiple lines based on the width of the column, controls the automatic height adjustment for the header/footer
 
 @signature: autoHeight?: boolean;
 
@@ -27,7 +27,32 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
-Note, that the **autoHeight** option does not adjust the height of the cells in the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.  
+Note that the **autoHeight** option does not adjust the height of the cells in the header/footer of Grid. The option just makes their text split into multiple lines, but the height of the cells will remain the same.
+
+To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid. 
+
+To enable autoheight in the header/footer, use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: true, // enable autoHeight in data (content)
+    headerAutoHeight: false, // disable autoHeight in header
+    footerAutoHeight: false, // disable autoHeigh in footer
+});
+
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: false, // disable autoHeight in data, header, footer
+    headerAutoHeight: true, // enable autoHeight in header
+});
+~~~
 
 **Note** that:  
 

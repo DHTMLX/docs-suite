@@ -375,9 +375,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### HTML content of TreeGrid columns
 
-DHTMLX TreeGrid allows adding HTML content into TreeGrid cells in two ways:
+DHTMLX TreeGrid allows adding HTML content into TreeGrid cells (such as images, icons, text styles, etc.). You can enable the possibility to add HTML content both for the whole TreeGrid and for a particular column, or even for a certain column header/footer. Below you'll find all the available options:
 
-- by specifying the HTML content of all TreeGrid columns
+- setting HTML content for all TreeGrid columns
 
 This way presupposes making each cells of TreeGrid capable of displaying the HTML content via using the [htmlEnable](treegrid/api/treegrid_htmlenable_config.md) property in the configuration object of TreeGrid.
 
@@ -398,11 +398,11 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-- by specifying the HTML content of a separate column
+- setting HTML content for a particular column
 
 ![](../assets/treegrid/html_content.png)
 
-If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the configuration of a column:
+If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the [configuration of a column](treegrid/api/api_treegridcolumn_properties.md):
 
 ~~~js
 const dataset = [
@@ -428,7 +428,45 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. HTML in data](https://snippet.dhtmlx.com/iubccmoi)
 
+- setting HTML content for the header/footer of a column
+
+You can set HTML content in the header or the footer of a column independently. The **htmlEnable** property enabled for the header/footer redefines the value of the same config specified for the parent column and for the whole TreeGrid:
+
+~~~js {8}
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            id: "name",
+            header: [
+                {
+                    text: "<span style='font-size: 16px; padding: 0; color: blue;'>Book Name</span>",
+                    htmlEnable: true,
+                }
+            ],
+            gravity: 1.5,
+        },
+        {
+            id: "price",
+            type: "string",
+            htmlEnable: true,
+            header: [
+                { text: "<span class='header-title'>Terms and conditions</span>", colspan: 2 },
+                { text: "Price" }
+            ]
+        },
+        // other columns' config
+    ],
+    data: dataset,
+    autoWidth: true,
+});
+~~~
+
+**Related sample**: [TreeGrid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/vf0ws454)
+
+
 ### Event handlers for HTML content
+
+#### HTML elements defined in the data set
 
 Starting from v7.0, you can add event handlers to the [HTML elements defined in the data set of TreeGrid](treegrid/configuration.md#html-content-of-treegrid-columns) with the help of the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property, for instance:
 
@@ -458,7 +496,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     eventHandlers: { 
 		onmouseover: { 
 			cell__html: function(event, data) { 
-				display(JSON.stringify(data.col, null, 2)); 
+				console.log(JSON.stringify(data.col, null, 2)); 
 			} 
 		}
 	} 
@@ -466,6 +504,50 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 **Related sample**: [TreeGrid. Handling events in template](https://snippet.dhtmlx.com/la7u1xqy)
+
+#### HTML elements in the header/footer cell
+
+The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property for this purpose:
+
+~~~js
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        {
+            width: 60,
+            id: "paid",
+            header: [
+                {
+                  text: `
+                    <label class="dhx_checkbox dhx_cell-editor__checkbox ">
+                        <input type="checkbox" class="dhx_checkbox__input dhx_checkbox--check-all">
+                        <span class="dhx_checkbox__visual-input "></span>
+                    </label>
+                  `,
+                   rowspan: 2,
+                   htmlEnable: true,
+                }
+            ],
+            type: "boolean",
+            sortable: false,
+        },
+        // more columns
+    ],
+    data: projects,
+    eventHandlers: { 
+        onclick: { 
+            "dhx_checkbox--check-all": function(event, data) {
+                treeGrid.data.forEach(row => {
+                    treeGrid.data.update(row.id, {
+                        [data.col.id]: event.target.checked,
+                    });
+                });
+            }
+        },
+    },
+});
+~~~
+
+**Related sample**: [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p)
 
 ## Editing TreeGrid and separate columns
 
@@ -1033,7 +1115,7 @@ const dataset = [
 
 ### Autoheight for rows
 
-Starting from v7.1, you can set the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) option in the configuration of TreeGrid to make long text to split into multiple lines automatically based on the width of the column:
+Starting from v7.1, you can set the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) option in the configuration of TreeGrid to make long text to split into multiple lines automatically based on the width of the column:
 
 ~~~js
 const treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -1049,7 +1131,31 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 As a result, the height of the cells will automatically adjust to their content.
 
-Note, that the **autoHeight** option does not adjust the height in the cells of the header/footer of TreeGrid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](treegrid/api/treegrid_headerrowheight_config.md) and [](treegrid/api/treegrid_footerrowheight_config.md) configuration options of TreeGrid.
+Please note that the **autoHeight** option does not adjust the height in the cells of the header/footer of TreeGrid. The option just makes their text split into multiple lines, but the height of the cells will remain the same. However, you can change the height of the header/footer in two ways:
+
+- specify the necessary height of the rows in the header/footer via the [](treegrid/api/treegrid_headerrowheight_config.md) and [](treegrid/api/treegrid_footerrowheight_config.md) configuration options of TreeGrid.
+- provide the automatic adjustment of the header/footer height for the content to fit in with the help of the [](treegrid/api/treegrid_headerautoheight_config.md) and [](treegrid/api/treegrid_footerautoheight_config.md) configuration options of TreeGrid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+
+~~~js
+const treegrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: true, // enable autoHeight in data (content)
+    headerAutoHeight: false, // disable autoHeight in header
+    footerAutoHeight: false, // disable autoHeigh in footer
+});
+
+const treegrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: false, // disable autoHeight in data, header, footer
+    headerAutoHeight: true, // enable autoHeight in header
+});
+~~~
 
 ### Automatic adding of empty row into TreeGrid
 

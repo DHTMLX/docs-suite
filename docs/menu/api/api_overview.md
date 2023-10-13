@@ -37,6 +37,7 @@ Use [TreeCollection methods](tree_collection.md) to work with data.
 | [](menu/api/menu_inputblur_event.md)    | @getshort(menu/api/menu_inputblur_event.md)    |
 | [](menu/api/menu_inputcreated_event.md) | @getshort(menu/api/menu_inputcreated_event.md) |
 | [](menu/api/menu_inputfocus_event.md)   | @getshort(menu/api/menu_inputfocus_event.md)   |
+| [](menu/api/menu_keydown_event.md)      | @getshort(menu/api/menu_keydown_event.md)      |
 | [](menu/api/menu_openmenu_event.md)     | @getshort(menu/api/menu_openmenu_event.md)     |
 
 :::info important

@@ -174,8 +174,10 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
 | [](grid/api/grid_eventhandlers_config.md)   | @getshort(grid/api/grid_eventhandlers_config.md)   |
 | [](grid/api/grid_exportstyles_config.md)    | @getshort(grid/api/grid_exportstyles_config.md)    |
+| [](grid/api/grid_footerautoheight_config.md)| @getshort(grid/api/grid_footerautoheight_config.md)|
 | [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
 | [](grid/api/grid_footertooltip_config.md)   | @getshort(grid/api/grid_footertooltip_config.md)   |
+| [](grid/api/grid_headerautoheight_config.md)| @getshort(grid/api/grid_headerautoheight_config.md)|
 | [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
 | [](grid/api/grid_headertooltip_config.md)   | @getshort(grid/api/grid_headertooltip_config.md)   |
 | [](grid/api/grid_height_config.md)          | @getshort(grid/api/grid_height_config.md)          |

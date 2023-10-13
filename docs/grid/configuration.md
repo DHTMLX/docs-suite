@@ -361,9 +361,9 @@ const grid = new dhx.Grid("grid_container", {
 
 ### HTML content of Grid columns
 
-DHTMLX Grid allows adding an image or an icon into Grid cells in two ways:
+DHTMLX Grid allows adding HTML content into Grid cells (such as images, icons, text styles, etc.). You can enable the possibility to add HTML content both for the whole Grid and for a particular column, or even for a certain column header/footer. Below you'll find all the available options: 
 
-- by specifying the HTML content of all Grid columns
+- setting HTML content for all Grid columns
 
 This way presupposes making each cell of Grid capable of displaying the HTML content via using the [htmlEnable](grid/api/grid_htmlenable_config.md) property in the configuration object of Grid.
 
@@ -385,11 +385,11 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- by specifying the HTML content of a separate column
+- setting HTML content for a particular column
 
 ![](../assets/grid/html_content.png)
 
-If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the configuration of a column:
+If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the [configuration of a column](grid/api/api_gridcolumn_properties.md):
 
 ~~~js {12}
 const dataset = [
@@ -416,7 +416,34 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Html in data](https://snippet.dhtmlx.com/chitkvkc)
 
+- setting HTML content for the header/footer of a column
+
+You can set HTML content in the header or the footer of a column independently. The **htmlEnable** property enabled for the header/footer redefines the value of the same config specified for the parent column and for the whole Grid:
+
+~~~js {6}
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 200, id: "country", header: [
+            {
+                text: "<span style='font-size:16px; color: blue'>Country</span>",
+                htmlEnable: true
+            }
+        ]},
+        { width: 150, id: "population", htmlEnable: true, header: [
+            { text: "<span class='header-title'>Population</span>" }
+        ]},
+        // other columns' configs
+    ],
+    data: dataset,
+    htmlEnable: false
+});
+~~~
+
+**Related sample**: [Grid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/7o4elf48)
+
 ### Event handlers for HTML content
+
+#### HTML elements defined in the data set
 
 Starting from v7.0, you can add event handlers to the HTML elements defined in a data set of Grid with the help of the [](grid/api/grid_eventhandlers_config.md) configuration property, for instance:
 
@@ -440,12 +467,12 @@ const grid = new dhx.Grid("grid_container", {
     eventHandlers: {
 		onclick: {
 			cell__html: function(event, data) {
-				display(JSON.stringify(data.col, null, 2));
+				console.log(JSON.stringify(data.col, null, 2));
 			},
 		},
 		onmouseover: {
 			cell__html: function(event) {
-				display("You are over " + event.target.tagName);
+				console.log("You are over " + event.target.tagName);
 			},
 		}
 	}
@@ -453,6 +480,50 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 **Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
+
+#### HTML elements in the header/footer cell
+
+The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [](grid/api/grid_eventhandlers_config.md) configuration property for this purpose:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        {
+            width: 60,
+            id: "paid",
+            header: [
+                {
+                   text: `
+                       <label class="dhx_checkbox dhx_cell-editor__checkbox ">
+                          <input type="checkbox" class="dhx_checkbox__input dhx_checkbox--check-all">
+                          <span class="dhx_checkbox__visual-input "></span>
+                       </label>
+                   `,
+                   rowspan: 2,
+                   htmlEnable: true,
+                }
+            ],
+            type: "boolean",
+            sortable: false,
+        },
+     	// more columns
+    ],
+    data,
+    eventHandlers: { 
+        onclick: { 
+            "dhx_checkbox--check-all": function(event, data) {
+                grid.data.forEach(row => {
+                    grid.data.update(row.id, {
+                        [data.col.id]: event.target.checked,
+                    });
+                });
+            }
+        },
+    },
+});
+~~~
+
+**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/4fdki698)
 
 ## Editing Grid and separate columns
 
@@ -1033,7 +1104,9 @@ const dataset = [
 
 ### Autoheight for rows
 
-Starting from v7.1, you can set the [autoHeight: true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text to split into multiple lines automatically based on the width of the column
+{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
+Starting from v7.1, you can set the [autoHeight: true](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text split into multiple lines automatically based on the width of the column:
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -1049,7 +1122,31 @@ const grid = new dhx.Grid("grid_container", {
 
 As a result, the height of the cells will automatically adjust to their content.
 
-But, **note**, that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text to split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you should apply the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid.
+Please **note** that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. The option just makes their text split into multiple lines, but the height of the cells will remain the same. However, you can change the height of the header/footer in two ways:
+
+- specify the necessary height of the rows in the header/footer via the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid
+- provide the automatic adjustment of the header/footer height for the content to fit in with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+
+~~~js
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: true, // enable autoHeight in data (content)
+    headerAutoHeight: false, // disable autoHeight in header
+    footerAutoHeight: false, // disable autoHeigh in footer
+});
+
+const grid = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: false, // disable autoHeight in data, header, footer
+    headerAutoHeight: true, // enable autoHeight in header
+});
+~~~
 
 ### Automatic adding of empty row into Grid
 

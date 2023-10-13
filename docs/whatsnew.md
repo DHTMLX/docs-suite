@@ -8,6 +8,40 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3
+---------------
+
+Released on October 23, 2023
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-3/" target="_blank">Review of the release on the blog</a>
+
+### New functionality
+
+#### ColorPicker
+
+- The ability to adjust the [color transparency](colorpicker/configuration.md#color-transparency)
+
+#### Form. Container
+
+- The control's [configuration object](form/api/container/api_container_properties.md) is extended with a set of properties that allow adding and controlling the **label**
+
+#### Grid/TreeGrid
+
+- The ability to [set the autoheight mode for the column's header/footer](grid/configuration.md#autoheight-for-rows) (PRO version)
+- The ability to [enable HTML content in the columns' header/footer](grid/configuration.md#html-content-of-grid-columns) independent of the settings applied for the column or the whole component
+
+### Updates
+
+#### Grid/TreeGrid
+
+- The functionality of the [eventHandlers](grid/api/grid_eventhandlers_config.md) configuration property is extended for the columns' header/footer
+
+### Fixes
+
+- Form. Fix the absence of the bottom margin at the Container control
+- Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
+- TreeGrid. Fix the work of the [adjust](treegrid/api/treegrid_adjust_config.md) property with the "footer" value
+
 Version 8.2.6 
 ---------------
 
