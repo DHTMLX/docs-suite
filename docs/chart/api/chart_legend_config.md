@@ -284,7 +284,7 @@ legend?: {
 	halign?: "left" | "right" | "center", // "right" by default
 	margin?: number, // 0 by default
 	size?: number,
-	valign?: "top" | "middle" | "bottom", // "top" by default
+	valign?: "top" | "bottom", // "top" by default
 }
 ~~~
 
@@ -318,7 +318,7 @@ legend?: {
 		</tr>
 		<tr>
 			<td><b>valign</b></td>
-			<td>(optional) the vertical alignment of the legend: "top" (by default) | "bottom" | "middle"</td>
+			<td>(optional) the vertical alignment of the legend: "top" (by default) | "bottom" </td>
 		</tr>
     </tbody>
 </table>
