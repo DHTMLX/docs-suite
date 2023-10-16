@@ -71,6 +71,6 @@ const data = [
 
 ### Example
 
-
+<iframe src="https://snippet.dhtmlx.com/50chb61i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="400"></iframe>
 
 **Related article:** [Datepicker](ribbon/datepicker.md)

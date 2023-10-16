@@ -6,13 +6,9 @@ description: You can explore the Datepicker of Ribbon in the documentation of th
 
 # Datepicker
 
-:::note
-add datepicker snippet
-:::
-
 This is a control of Ribbon intended for date selection. Check the article below to see how to add and customize the Datepicker control in an easy and convenient way.
 
-
+<iframe src="https://snippet.dhtmlx.com/50chb61i?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 ## Adding Datepicker
 
