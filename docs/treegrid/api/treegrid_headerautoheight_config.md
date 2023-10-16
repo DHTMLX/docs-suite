@@ -22,9 +22,10 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     footerAutoHeight: true // enable autoHeight in the footer
 });
 
-@descr: Redefines the <b>autoHeight</b> config for the header.
+@descr:
 
-**Related sample**: 
+**Related sample**: [TreeGrid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e)
 
+ Redefines the <b>autoHeight</b> config for the header.
 
 @changelog: added in v8.3

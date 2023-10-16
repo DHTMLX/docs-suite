@@ -23,11 +23,11 @@ const grid = new dhx.Grid("grid", {
     footerAutoHeight: true // enable autoHeight in the footer
 });
 
-@descr: Redefines the <b>autoHeight</b> config for the footer.
+@descr: 
 
+**Related sample**: [Grid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d)
 
-**Related sample**: 
-
+Redefines the <b>autoHeight</b> config for the footer.
 
 @changelog: added in v8.3
 

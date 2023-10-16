@@ -51,6 +51,6 @@ description: You can explore the Properties of the Container control of Form in 
 
 ### Example
 
-<iframe src="https://snippet.dhtmlx.com/bm1l4od5?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
+<iframe src="https://snippet.dhtmlx.com/cnxi9eqq?mode=js" frameborder="0" class="snippet_iframe" width="100%" height="650"></iframe>
 
 **Related article:** [Container](form/container.md)

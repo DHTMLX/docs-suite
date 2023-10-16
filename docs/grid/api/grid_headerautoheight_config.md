@@ -24,9 +24,10 @@ const grid = new dhx.Grid("grid", {
     headerAutoHeight: true // enable autoHeight in the header
 });
 
-@descr: Redefines the <b>autoHeight</b> config for the header.
+@descr: 
 
-**Related sample**: 
+**Related sample**: [Grid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d)
 
+Redefines the <b>autoHeight</b> config for the header.
 
 @changelog: added in v8.3

@@ -425,12 +425,9 @@ const grid = new dhx.Grid("grid", {
     columns: [
         { width: 200, id: "country", header: [
             {
-                text: "<span style='font-size:16px; color: blue'>Country</span>",
-                htmlEnable: true
+                text: "<span style='font-size:16px; color: steelblue'>Country</span>",
+                htmlEnable: true,
             }
-        ]},
-        { width: 150, id: "population", htmlEnable: true, header: [
-            { text: "<span class='header-title'>Population</span>" }
         ]},
         // other columns' configs
     ],

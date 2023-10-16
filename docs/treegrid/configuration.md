@@ -445,15 +445,6 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
             ],
             gravity: 1.5,
         },
-        {
-            id: "price",
-            type: "string",
-            htmlEnable: true,
-            header: [
-                { text: "<span class='header-title'>Terms and conditions</span>", colspan: 2 },
-                { text: "Price" }
-            ]
-        },
         // other columns' config
     ],
     data: dataset,
@@ -462,7 +453,6 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 ~~~
 
 **Related sample**: [TreeGrid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/vf0ws454)
-
 
 ### Event handlers for HTML content
 
