@@ -17,7 +17,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 	<tbody>
         <tr>
 			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
+			<td> the name of the event. Note that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
 			<td><i>value</i></td>
@@ -48,6 +48,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
             width: 160, id: "price", type: "string", 
             header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
             htmlEnable: true,
+            // define a custom template for the column's cells
             template: function (text, row, col) {
                 return text ? "<div class='cell__template'>$ " + text + "</div>" : "";
             }
@@ -56,11 +57,13 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
     ],
     data: data,
     eventHandlers: {
+    	// add an event handler to the header cell
         onclick: {
            header_book: function(event, data) {
                 console.log(JSON.stringify(data.col, null, 2)); 
             }
         },
+        // add an event handler to the HTML element of the custom template of cells
         onmouseover: {
             cell__template: function (event, data) {
                 console.log(JSON.stringify(data.row, null, 2));

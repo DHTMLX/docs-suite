@@ -17,7 +17,7 @@ The **eventHandlers** object includes a set of *key:value* pairs, where:
 	<tbody>
         <tr>
 			<td><i>key</i></td>
-			<td> the name of the event. Note, that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
+			<td> the name of the event. Note that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
 		</tr>
         <tr>
 			<td><i>value</i></td>
@@ -46,21 +46,22 @@ const grid = new dhx.Grid("grid_container", {
         { width: 150, id: "netChange", header: [{text: "Net Change"}],
             // define a custom template for the column's cells
             template: function (text, row, col) {
-                return "<div className='cell__template'><input type='checkbox'
-                    disabled " + (text /> 3000000 ? "checked" : "") + " ></div>";
+                return "<div className='cell__template'><input type='checkbox' 
+                	disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
             } 
         },
         htmlEnable: true,
         // more options
     ],
     data: data,
-    // add event handler to the HTML element of the custom template of cells
     eventHandlers: {
+    	// add an event handler to the header cell
         onclick: {
            header_country: function(event, data) {
                 console.log(JSON.stringify(data.col, null, 2)); 
             }
         },
+        // add an event handler to the HTML element of the custom template of cells
         onmouseover: {
             cell__template: function(event, data) {
                 console.log(JSON.stringify(data.row, null, 2)); 

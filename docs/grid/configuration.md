@@ -520,7 +520,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/4fdki698)
+**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax)
 
 ## Editing Grid and separate columns
 
