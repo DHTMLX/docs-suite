@@ -1038,8 +1038,12 @@ The **customFilter** attribute is a function which compares the value of each ce
 
 ## Header/footer height
 
+You can change the height of the header/footer in one of the following ways:
+
+1. Specify the necessary height of the rows in the header/footer via the related API options
+
 The height of the header/footer of Grid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [headerRowHeight](grid/api/grid_headerrowheight_config.md)/[footerRowHeight](grid/api/grid_footerrowheight_config.md)
-properties, correspondingly.
+properties, correspondingly. The default value of the mentioned properties is 40.
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -1053,7 +1057,34 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Header, footer and rows height](https://snippet.dhtmlx.com/wjcjl80i)
 
-The default value of the mentioned properties is 40.
+2. Provide the automatic adjustment of the header/footer height for the content to fit in
+
+Use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to redefine the **autoHeight** config for the header and the footer, correspondingly:
+
+~~~js
+// enabling autoheight only in the content
+const grid1 = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: true, // enable autoHeight in the data (content)
+    headerAutoHeight: false, // disable autoHeight in the header
+    footerAutoHeight: false, // disable autoHeight in the footer
+});
+
+// enabling autoheight only in the header
+const grid2 = new dhx.Grid("grid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: false, // disable autoHeight in the data, the header and the footer
+    headerAutoHeight: true, // enable autoHeight in the header
+});
+~~~
+
+**Related sample**: [Grid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d)
 
 ## Rows
 
@@ -1123,39 +1154,10 @@ As a result, the height of the cells will automatically adjust to their content.
 Please note that the **autoHeight** option does not adjust the height of the cells of the header/footer of Grid. 
 :::
 
-The option just makes their text split into multiple lines, but the height of the cells will remain the same. 
+The option just makes their text split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you can:
 
-### Height of the header/footer
-
-You can change the height of the header/footer in one of the following ways:
-
-- specify the necessary height of the rows in the header/footer via the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid
-- provide the automatic adjustment of the header/footer height for the content to fit in with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**). These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
-
-~~~js
-// enabling autoheight only in the content
-const grid1 = new dhx.Grid("grid", {
-    columns: [
-        // columns config
-    ],
-    data: dataset,
-    autoHeight: true, // enable autoHeight in the data (content)
-    headerAutoHeight: false, // disable autoHeight in the header
-    footerAutoHeight: false, // disable autoHeight in the footer
-});
-
-// enabling autoheight only in the header
-const grid2 = new dhx.Grid("grid", {
-    columns: [
-        // columns config
-    ],
-    data: dataset,
-    autoHeight: false, // disable autoHeight in the data, the header and the footer
-    headerAutoHeight: true, // enable autoHeight in the header
-});
-~~~
-
-**Related sample**: [Grid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d)
+- use the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid to set specific values for the header/footer rows height
+- use the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid (**PRO version only**) to enable autoheight for the header/footer rows
 
 ### Automatic adding of empty row into Grid
 

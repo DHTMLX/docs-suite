@@ -1039,7 +1039,11 @@ The **customFilter** attribute is a function which compares the value of each ce
 
 ## Header/footer height
 
-The height of the header/footer of TreeGrid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly.
+You can change the height of the header/footer in one of the following ways:
+
+1. Specify the necessary height of the rows in the header/footer via the related API options
+
+The height of the header/footer of TreeGrid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly. The default value of the mentioned properties is 40.
 
 ~~~js
 const treegrid = new dhx.TreeGrid("treegrid_container", {
@@ -1053,7 +1057,34 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Rows height](https://snippet.dhtmlx.com/xl0i3yof)
 
-The default value of the mentioned properties is 40.
+2. Provide the automatic adjustment of the header/footer height for the content to fit in
+
+Use the [](treegrid/api/treegrid_headerautoheight_config.md) and [](treegrid/api/treegrid_footerautoheight_config.md) configuration options of TreeGrid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+
+~~~js
+// enabling autoheight only in the content
+const treegrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: true, // enable autoHeight in the data (content)
+    headerAutoHeight: false, // disable autoHeight in the header
+    footerAutoHeight: false, // disable autoHeight in the footer
+});
+
+// enabling autoheight only in the header
+const treegrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoHeight: false, // disable autoHeight in the data, the header and the footer
+    headerAutoHeight: true, // enable autoHeight in the header
+});
+~~~
+
+**Related sample**: [TreeGrid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e)
 
 ## Rows
 
@@ -1125,39 +1156,10 @@ As a result, the height of the cells will automatically adjust to their content.
 Please note that the **autoHeight** option does not adjust the height in the cells of the header/footer of TreeGrid. 
 :::
 
-The option just makes their text split into multiple lines, but the height of the cells will remain the same. 
+The option just makes their text split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you can:
 
-### Height of the header/footer
-
-You can change the height of the header/footer in one of the following ways:
-
-- specify the necessary height of the rows in the header/footer via the [](treegrid/api/treegrid_headerrowheight_config.md) and [](treegrid/api/treegrid_footerrowheight_config.md) configuration options of TreeGrid
-- provide the automatic adjustment of the header/footer height for the content to fit in with the help of the [](treegrid/api/treegrid_headerautoheight_config.md) and [](treegrid/api/treegrid_footerautoheight_config.md) configuration options of TreeGrid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
-
-~~~js
-// enabling autoheight only in the content
-const treegrid = new dhx.TreeGrid("treegrid", {
-    columns: [
-        // columns config
-    ],
-    data: dataset,
-    autoHeight: true, // enable autoHeight in the data (content)
-    headerAutoHeight: false, // disable autoHeight in the header
-    footerAutoHeight: false, // disable autoHeight in the footer
-});
-
-// enabling autoheight only in the header
-const treegrid = new dhx.TreeGrid("treegrid", {
-    columns: [
-        // columns config
-    ],
-    data: dataset,
-    autoHeight: false, // disable autoHeight in the data, the header and the footer
-    headerAutoHeight: true, // enable autoHeight in the header
-});
-~~~
-
-**Related sample**: [TreeGrid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e)
+- use the [](treegrid/api/treegrid_headerrowheight_config.md) and [](treegrid/api/treegrid_footerrowheight_config.md) configuration options of TreeGrid to set specific values for the header/footer rows height
+- use the [](treegrid/api/treegrid_headerautoheight_config.md) and [](treegrid/api/treegrid_footerautoheight_config.md) configuration options of TreeGrid to enable autoheight for the header/footer rows
 
 ### Automatic adding of empty row into TreeGrid
 
