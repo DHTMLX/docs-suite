@@ -18,14 +18,14 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
         // columns config
     ],
     data: dataset,
-    autoHeight: false, // disable autoHeight in data, header, footer
-    footerAutoHeight: true // enable autoHeight in the footer
+    autoHeight: false, // disable autoHeight in the data, the header and the footer
+    headerAutoHeight: true // enable autoHeight in the header
 });
 
 @descr:
 
 **Related sample**: [TreeGrid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e)
 
- Redefines the <b>autoHeight</b> config for the header.
+Redefines the [autoHeight](treegrid/api/treegrid_autoheight_config.md) config for the header.
 
 @changelog: added in v8.3

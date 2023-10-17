@@ -20,7 +20,7 @@ const grid = new dhx.Grid("grid", {
     	// columns config
     ],
     data: dataset,
-    autoHeight: false, // disable autoHeight in data, header, footer
+    autoHeight: false, // disable autoHeight in the data, the header and the footer
     headerAutoHeight: true // enable autoHeight in the header
 });
 
@@ -28,6 +28,6 @@ const grid = new dhx.Grid("grid", {
 
 **Related sample**: [Grid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d)
 
-Redefines the <b>autoHeight</b> config for the header.
+Redefines the [autoHeight](grid/api/grid_autoheight_config.md) config for the header.
 
 @changelog: added in v8.3
