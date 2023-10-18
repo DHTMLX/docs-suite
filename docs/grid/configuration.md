@@ -868,6 +868,37 @@ There is a list of [configuration settings](grid/api/api_gridcolumn_properties.m
 }
 ~~~
 
+### Editing columns with the "number" type
+
+For columns with the **type:"number"** setting the **editorConfig** object may contain additional properties, besides the [common ones](grid/api/api_gridcolumn_properties.md#editorconfig). They are:
+
+- **min** - (optional) the minimum allowed value
+- **max** - (optional) the maximum allowed value
+
+~~~js
+const grid = new dhx.Grid("grid", {
+  columns: [
+    {
+      id: "col1",
+      width: 180,
+      type: "number",
+      editorConfig: { min: 5, max: 100 },
+    },
+    // more columns
+  ]
+});
+~~~
+
+In case a user enters a value that goes beyond the limits specified by the above settings, the entered value is highlighted in red:
+
+![Validation of columns with the number type](../assets/grid/col_number_validation.png)
+
+If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the **editorConfig** object by the **min/max** values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
+
+:::note
+In the <b>autoHeight:true</b> mode columns with the <b>type:"number"</b> must have the editor with the <b>"input"</b> type, unless a different editor type is specified.
+:::
+
 ### Editable combobox
 
 From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#types-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](grid/api/api_gridcolumn_properties.md):

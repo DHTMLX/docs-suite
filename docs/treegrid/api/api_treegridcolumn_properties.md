@@ -219,7 +219,7 @@ columns:[
             <ul>
                 <li><b>selectAllButton</b> - (optional) adds a button that allows selecting all the options in the editor</li>
             </ul><br>
-			If the <b>type: "date"</b> is specified for a column, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones).<br>
+			If the <b>type: "date"</b> is specified for a column, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones).<br><br>
             If the <b>type:"number"</b> is specified, the <b>editorConfig</b> object can include two more properties:
             <ul>
                 <li><b>min</b> - (optional) the minimum allowed value</li>
