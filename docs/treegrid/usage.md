@@ -67,6 +67,31 @@ The return object includes the following attributes:
     </tbody>
 </table>
 
+### Hiding/showing a column
+
+It is possible to show and hide a column in the grid via the [](treegrid/api/treegrid_showcolumn_method.md) and [](treegrid/api/treegrid_hidecolumn_method.md) methods. 
+
+~~~js
+//showing a column
+treegrid.showColumn(col);
+//hiding a column
+treegrid.hideColumn(col);
+~~~
+
+**Related sample**: [TreeGrid. Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
+
+Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
+
+### Checking visibility of a column
+
+You can check whether a column is hidden or shown on a page using the [](treegrid/api/treegrid_iscolumnhidden_method.md) method. The method returns *true*, if a column is visible, and *false* if it's hidden.
+
+~~~js
+treegrid.isColumnHidden("country"); // -> true|false
+~~~
+
+**Related sample**: [TreeGrid. Is column hidden](https://snippet.dhtmlx.com/fcjfp19d)
+
 ## Getting header filter
 
 You may want to manipulate a filter specified in the header of a treegrid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](treegrid/api/treegrid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
@@ -93,57 +118,11 @@ treegrid.getHeaderFilter("name").clear();
 
 **Related sample**: [TreeGrid. Get header filter](https://snippet.dhtmlx.com/vg5o912t)
 
-## Hiding/showing a column
+## Working with rows
 
-It is possible to show and hide a column in the grid via the [](treegrid/api/treegrid_showcolumn_method.md) and [](treegrid/api/treegrid_hidecolumn_method.md) methods. 
+### Adding/removing a row
 
-~~~js
-//showing a column
-treegrid.showColumn(col);
-//hiding a column
-treegrid.hideColumn(col);
-~~~
-
-**Related sample**: [TreeGrid. Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
-
-Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
-
-## Checking visibility of a column
-
-You can check whether a column is hidden or shown on a page using the [](treegrid/api/treegrid_iscolumnhidden_method.md) method. The method returns *true*, if a column is visible, and *false* if it's hidden.
-
-~~~js
-treegrid.isColumnHidden("country"); // -> true|false
-~~~
-
-**Related sample**: [TreeGrid. Is column hidden](https://snippet.dhtmlx.com/fcjfp19d)
-
-## Hiding/showing a row
-
-Starting from v7.0, it is possible to show and hide a row in the treegrid via the [](treegrid/api/treegrid_showrow_method.md) and [](treegrid/api/treegrid_hiderow_method.md) methods. 
-
-~~~js
-//showing a row
-treegrid.showRow(rowId);
-//hiding a row
-treegrid.hideRow(rowId);
-~~~
-
-**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
-
-## Checking visibility of a row
-
-You can check whether a row is hidden or shown on a page using the [](treegrid/api/treegrid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
-
-~~~js
-treegrid.isRowHidden("1"); // -> true|false
-~~~
-
-**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
-
-## Adding/removing a row
-
-### Adding a row
+#### Adding a row
 
 You may add a new row into the treegrid by using the [](../tree_collection/api/treecollection_add_method.md) method of **TreeCollection**:
 
@@ -158,8 +137,7 @@ treegrid.data.add({
 });
 ~~~
 
-
-### Removing a row
+#### Removing a row
 
 To remove the necessary row from the treegrid, apply the [](../tree_collection/api/treecollection_remove_method.md) method of **TreeCollection**. Pass the id of the row that should be removed to the method:
 
@@ -178,13 +156,36 @@ treegrid.data.remove(cell.row.id);
 
 For more information about the selection functionality in TreeGrid, read the [Selection](treegrid/configuration.md/#selection) and [Work with selection object](treegrid/usage_selection.md) articles.
 
-### Removing all rows
+#### Removing all rows
 
 If you need to remove all rows at once, use the [](../tree_collection/api/treecollection_removeall_method.md) method of **TreeCollection**:
 
 ~~~js
 treegrid.data.removeAll();
 ~~~
+
+### Hiding/showing a row
+
+Starting from v7.0, it is possible to show and hide a row in the treegrid via the [](treegrid/api/treegrid_showrow_method.md) and [](treegrid/api/treegrid_hiderow_method.md) methods. 
+
+~~~js
+//showing a row
+treegrid.showRow(rowId);
+//hiding a row
+treegrid.hideRow(rowId);
+~~~
+
+**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
+
+### Checking visibility of a row
+
+You can check whether a row is hidden or shown on a page using the [](treegrid/api/treegrid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
+
+~~~js
+treegrid.isRowHidden("1"); // -> true|false
+~~~
+
+**Related sample**: [TreeGrid. Show / hide row](https://snippet.dhtmlx.com/6geqbtvv)
 
 ## Adding/removing spans
 
@@ -252,43 +253,13 @@ To remove an existing span, make use of the [](treegrid/api/treegrid_removespan_
 treegrid.removeSpan("10","a");
 ~~~
 
-## Controlling scroll behavior
+## Working with data
 
-The API of DHTMLX TreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
-
-### Scrolling to specific coordinates
-
-You can scroll grid content to exact position defined by x and y coordinates via the [](treegrid/api/treegrid_scroll_method.md) method. Pass the coordinates as parameters of the method.
-
-~~~js
-treegrid.scroll(75,230);
-~~~
-
-### Scrolling to specific treegrid cell
-
-It is also possible to scroll treegrid content to a particular cell. Pass the ids of the row and the column as parameters:
-
-~~~js
-treegrid.scrollTo("15","c");
-~~~
-
-**Related sample**: [TreeGrid. Controlling scroll behavior](https://snippet.dhtmlx.com/kxytdnvi)
-
-### Getting the state of scroll
-
-To return the current state of scroll, use the [](treegrid/api/treegrid_getscrollstate_method.md) method. 
-
-~~~js
-const state = treegrid.getScrollState(); // -> {x:0,y:0}
-~~~
-
-It returns an object with x,y coordinates of a position the grid has been scrolled to.
-
-## Grouping data
+### Grouping data
 
 To make data in TreeGrid well-structured and easily understood you can group data with the help of the [](treegrid/api/treegrid_groupby_method.md) method. There are two options of grouping data.
 
-### Grouping by a column
+#### Grouping by a column
 
 To group the content of a treegrid by values of the specified column, pass the id of the column as a parameter to the **groupBy()** method:
 
@@ -300,7 +271,7 @@ treegrid.groupBy("age");
 
 **Related sample**: [TreeGrid. Group data items by a property](https://snippet.dhtmlx.com/bue6zm6w)
 
-### Grouping by the result of calculation
+#### Grouping by the result of calculation
 
 You can pass a function with a rule of grouping data in the treegrid as a parameter to the **groupBy()** method. The function returns the name of a group and takes one parameter: 
 
@@ -324,7 +295,7 @@ treegrid.groupBy(function (item) {
 
 If necessary, you can set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option.
 
-## Filtering data
+### Filtering data
 
 You can filter grid data by the specified criteria with the help of the **filter()** method of data collection. The method takes as a parameter an object with the properties described below:
 
@@ -386,7 +357,7 @@ treegrid.data.filter({
 
 **Related sample**: [TreeGrid. External filter](https://snippet.dhtmlx.com/zdecovib)
 
-## Sorting data
+### Sorting data
 
 It is possible to sort data in the grid via the **sort()** method of data collection. The method takes an object with the following attributes:
 
@@ -424,7 +395,7 @@ To discard all applied sorting rules, call the method without parameters:
 treegrid.data.sort();
 ~~~
 
-### Custom sorting
+#### Custom sorting
 
 You can also specify the **rule** attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
 
@@ -434,7 +405,7 @@ treegrid.data.sort({
 });
 ~~~
 
-## Getting the sorting state
+#### Getting the sorting state
 
 To get the current state of sorting data in TreeGrid, use the [](treegrid/api/treegrid_getsortingstate_method.md) method. The method returns an object with two attributes:
 
@@ -459,7 +430,7 @@ const state = treegrid.getSortingState();
 
 **Related sample**: [TreeGrid. Get sorting state](https://snippet.dhtmlx.com/bdwwhvls)
 
-## Editing data
+### Editing data
 
 You can easily edit the desired cell of a treegrid with the help of the [](treegrid/api/treegrid_editcell_method.md) method. It takes two parameters:
 
@@ -498,6 +469,66 @@ treegrid.editEnd(true); // the edited data won't be saved
 
 {{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
 
+
+### Exporting data
+
+You can easily export data of TreeGrid into the Excel, CSV, PDF or PNG format.
+
+#### Exporting data to Excel 
+
+DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the [xlsx()](treegrid/api/export/treegrid_xlsx_method.md) method of the export module. The method takes an object with export settings as a parameter.
+
+~~~js
+treegrid.export.xlsx({
+	url: "//export.dhtmlx.com/excel"
+});
+~~~
+
+**Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
+
+#### Exporting data to CSV
+
+You can export data from TreeGrid to the CSV format with the [csv()](treegrid/api/export/treegrid_csv_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+
+~~~js
+treegrid.export.csv({
+	name:"treegrid_data", // data will be exported to a CSV file named "treegrid_data"
+    rowDelimiter: "\t", // the tab delimiter will be used to separate rows
+    columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
+});
+~~~
+
+**Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
+
+The **csv()** method returns a CSV string with TreeGrid data.
+
+#### Exporting data to PDF
+
+The [pdf()](treegrid/api/export/treegrid_pdf_method.md) method of the Export module allows you to export data from TreeGrid into a PDF file. The method takes an object with export settings as a parameter.
+
+~~~js
+treegrid.export.pdf({
+    format: "A4",
+    scale: 0.85,
+    displayHeaderFooter: true,
+    theme: "dark",
+});
+~~~
+
+**Related sample**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
+
+#### Exporting data to PNG
+
+The [png()](treegrid/api/export/treegrid_png_method.md) method of the Export module allows you to export data from TreeGrid into a PNG file. The method takes an object with export settings as a parameter.
+
+~~~js
+treegrid.export.pdf({
+    theme: "dark",
+});
+~~~
+
+**Related sample**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
+
 ## Expanding/collapsing nodes
 
 ### Expand/collapse a certain node
@@ -529,64 +560,37 @@ treegrid.collapseAll();
 
 **Related sample**: [TreeGrid. Expand / collapse rows](https://snippet.dhtmlx.com/1grpsaa2)
 
-## Exporting TreeGrid
+## Controlling scroll behavior
 
-You can easily export data of TreeGrid into the Excel, CSV, PDF or PNG format.
+The API of DHTMLX TreeGrid provides the possibility to set scrolls to the nevessary position and to get the current state of scrolls.
 
-### Exporting data to Excel 
+### Scrolling to specific coordinates
 
-DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the [xlsx()](treegrid/api/export/treegrid_xlsx_method.md) method of the export module. The method takes an object with export settings as a parameter.
-
-~~~js
-treegrid.export.xlsx({
-	url: "//export.dhtmlx.com/excel"
-});
-~~~
-
-**Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
-
-### Exporting data to CSV
-
-You can export data from TreeGrid to the CSV format with the [csv()](treegrid/api/export/treegrid_csv_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+You can scroll grid content to exact position defined by x and y coordinates via the [](treegrid/api/treegrid_scroll_method.md) method. Pass the coordinates as parameters of the method.
 
 ~~~js
-treegrid.export.csv({
-	name:"treegrid_data", // data will be exported to a CSV file named "treegrid_data"
-    rowDelimiter: "\t", // the tab delimiter will be used to separate rows
-    columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
-});
+treegrid.scroll(75,230);
 ~~~
 
-**Related sample**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
+### Scrolling to specific treegrid cell
 
-The **csv()** method returns a CSV string with TreeGrid data.
-
-### Exporting data to PDF
-
-The [pdf()](treegrid/api/export/treegrid_pdf_method.md) method of the Export module allows you to export data from TreeGrid into a PDF file. The method takes an object with export settings as a parameter.
+It is also possible to scroll treegrid content to a particular cell. Pass the ids of the row and the column as parameters:
 
 ~~~js
-treegrid.export.pdf({
-    format: "A4",
-    scale: 0.85,
-    displayHeaderFooter: true,
-    theme: "dark",
-});
+treegrid.scrollTo("15","c");
 ~~~
 
-**Related sample**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
+**Related sample**: [TreeGrid. Controlling scroll behavior](https://snippet.dhtmlx.com/kxytdnvi)
 
-### Exporting data to PNG
+### Getting the state of scroll
 
-The [png()](treegrid/api/export/treegrid_png_method.md) method of the Export module allows you to export data from TreeGrid into a PNG file. The method takes an object with export settings as a parameter.
+To return the current state of scroll, use the [](treegrid/api/treegrid_getscrollstate_method.md) method. 
 
 ~~~js
-treegrid.export.pdf({
-    theme: "dark",
-});
+const state = treegrid.getScrollState(); // -> {x:0,y:0}
 ~~~
 
-**Related sample**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
+It returns an object with x,y coordinates of a position the grid has been scrolled to.
 
 ## Repainting TreeGrid
 

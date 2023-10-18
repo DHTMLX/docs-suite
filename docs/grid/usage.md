@@ -67,6 +67,31 @@ The return object includes the following attributes:
     </tbody>
 </table>
 
+### Hiding/showing a column
+
+It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods.
+
+~~~js
+//showing a column
+grid.showColumn(col);
+//hiding a column
+grid.hideColumn(col);
+~~~
+
+**Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
+
+Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
+
+### Checking visibility of a column
+
+You can check whether a column is hidden or shown on a page using the [](grid/api/grid_iscolumnhidden_method.md) method. The method returns *true*, if a column is hidden, and *false* if it's visible.
+
+~~~js
+grid.isColumnHidden("country"); // -> true|false
+~~~
+
+**Related sample**: [Grid. Is column hidden](https://snippet.dhtmlx.com/rdqhwnjv)
+
 ## Getting header filter
 
 You may want to manipulate a filter specified in the header of a grid, for example, to set/unset focus on the filter, to change the filter, or clear it. To do that, you should apply the [](grid/api/grid_getheaderfilter_method.md) method to get an object with methods of the header filter and apply the necessary method. For example:
@@ -93,57 +118,11 @@ grid.getHeaderFilter("country").clear();
 
 **Related sample**: [Grid. Get header filter](https://snippet.dhtmlx.com/n8srjle3)
 
-## Hiding/showing a column
+## Working with rows
 
-It is possible to show and hide a column in the grid via the [](grid/api/grid_showcolumn_method.md) and [](grid/api/grid_hidecolumn_method.md) methods.
+### Adding/removing a row
 
-~~~js
-//showing a column
-grid.showColumn(col);
-//hiding a column
-grid.hideColumn(col);
-~~~
-
-**Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
-
-Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
-
-## Checking visibility of a column
-
-You can check whether a column is hidden or shown on a page using the [](grid/api/grid_iscolumnhidden_method.md) method. The method returns *true*, if a column is hidden, and *false* if it's visible.
-
-~~~js
-grid.isColumnHidden("country"); // -> true|false
-~~~
-
-**Related sample**: [Grid. Is column hidden](https://snippet.dhtmlx.com/rdqhwnjv)
-
-## Hiding/showing a row
-
-Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods.
-
-~~~js
-//showing a row
-grid.showRow(rowId);
-//hiding a row
-grid.hideRow(rowId);
-~~~
-
-**Related sample**:[Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
-
-## Checking visibility of a row
-
-You can check whether a row is hidden or shown on a page using the [](grid/api/grid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
-
-~~~js
-grid.isRowHidden("1"); // -> true|false
-~~~
-
-**Related sample**: [Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
-
-## Adding/removing a row
-
-### Adding a row
+#### Adding a row
 
 You may add a new row into the grid by using the [](../data_collection/api/datacollection_add_method.md) method of **DataCollection**:
 
@@ -163,7 +142,7 @@ grid.data.add({
 }, 0);
 ~~~
 
-### Removing a row
+#### Removing a row
 
 To remove the necessary row from the grid, apply the [](../data_collection/api/datacollection_remove_method.md) method of **DataCollection**. Pass the id of the row that should be removed to the method:
 
@@ -182,7 +161,7 @@ grid.data.remove(cell.row.id);
 
 For more information about the selection functionality in Grid, read the [Selection](grid/configuration.md/#selection) and [Work with selection object](grid/usage_selection.md) articles.
 
-### Removing all rows
+#### Removing all rows
 
 If you need to remove all rows at once, use the [](../data_collection/api/datacollection_removeall_method.md) method of **DataCollection**:
 
@@ -190,9 +169,32 @@ If you need to remove all rows at once, use the [](../data_collection/api/dataco
 grid.data.removeAll();
 ~~~
 
+### Hiding/showing a row
+
+Starting from v7.0, it is possible to show and hide a row in the grid via the [](grid/api/grid_showrow_method.md) and [](grid/api/grid_hiderow_method.md) methods.
+
+~~~js
+//showing a row
+grid.showRow(rowId);
+//hiding a row
+grid.hideRow(rowId);
+~~~
+
+**Related sample**:[Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
+
+### Checking visibility of a row
+
+You can check whether a row is hidden or shown on a page using the [](grid/api/grid_isrowhidden_method.md) method. The method returns *true*, if a row is hidden, and *false* if it's visible.
+
+~~~js
+grid.isRowHidden("1"); // -> true|false
+~~~
+
+**Related sample**: [Grid. Show / hide row](https://snippet.dhtmlx.com/8y83d6jv)
+
 ## Adding/removing spans
 
-You can manipulate columns and rows spans inside the grid with the help of corresponding API methods: **addSpan()**, **removeSpan()** and **getSpan()**.
+You can manipulate columns and rows spans inside the grid with the help of the corresponding API methods: **addSpan()**, **removeSpan()** and **getSpan()**.
 
 ### Adding spans
 
@@ -257,39 +259,9 @@ To remove an existing span, make use of the [](grid/api/grid_removespan_method.m
 grid.removeSpan("10","a");
 ~~~
 
-## Controlling scroll behavior
+## Working with data
 
-The API of DHTMLX Grid provides the possibility to set scrolls to the necessary position and to get the current state of scrolls.
-
-### Scrolling to specific coordinates
-
-You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
-
-~~~js
-grid.scroll(75,230);
-~~~
-
-### Scrolling to specific grid cell
-
-It is also possible to scroll grid content to a particular cell. Pass the ids of the row and the column as parameters:
-
-~~~js
-grid.scrollTo("15","c");
-~~~
-
-**Related sample**: [Grid. Controlling scroll behavior](https://snippet.dhtmlx.com/usu1rnpu)
-
-### Getting the state of scroll
-
-To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
-
-~~~js
-const state = grid.getScrollState(); // -> {x:0,y:0}
-~~~
-
-It returns an object with x,y coordinates of a position the grid has been scrolled to.
-
-## Filtering data
+### Filtering data
 
 You can filter grid data by the specified criteria with the help of the **filter()** method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
 
@@ -356,7 +328,7 @@ grid.data.filter({
 
 **Related sample**: [Grid. Basic filter](https://snippet.dhtmlx.com/g0zpjqi1)
 
-## Sorting data
+### Sorting data
 
 It is possible to sort data in the grid via the **sort()** method of [DataCollection](data_collection.md). The method takes two parameters:
 
@@ -406,7 +378,7 @@ To discard all applied sorting rules, call the method without parameters:
 grid.data.sort();
 ~~~
 
-### Custom sorting
+#### Custom sorting
 
 You can also specify the **rule** attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
 
@@ -416,7 +388,7 @@ grid.data.sort({
 });
 ~~~
 
-## Getting the sorting state
+#### Getting the sorting state
 
 To get the current state of sorting data in Grid, use the [](grid/api/grid_getsortingstate_method.md) method. The method returns an object with two attributes:
 
@@ -441,7 +413,7 @@ const state = grid.getSortingState();
 
 **Related sample**: [Grid. Get sorting state](https://snippet.dhtmlx.com/u2vk3ri3)
 
-## Editing data
+### Editing data
 
 You can easily edit the desired cell of a grid with the help of the [](grid/api/grid_editcell_method.md) method. It takes two parameters:
 
@@ -476,11 +448,11 @@ grid.editEnd(true); // the edited data won't be saved
 
 {{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
 
-## Exporting Grid
+### Exporting data
 
 You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
 
-### Exporting data to Excel
+#### Exporting data to Excel
 
 DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [xlsx()](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
 
@@ -493,7 +465,7 @@ grid.export.xlsx({
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-### Exporting data to CSV
+#### Exporting data to CSV
 
 You can export data from Grid to the CSV format with the [csv()](grid/api/export/grid_csv_method.md) method of the Export module. 
 
@@ -509,7 +481,7 @@ grid.export.csv({
 
 The **csv()** method returns a CSV string with Grid data.
 
-### Exporting data to PDF
+#### Exporting data to PDF
 
 The [pdf()](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
 
@@ -524,7 +496,7 @@ grid.export.pdf({
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
 
-### Exporting data to PNG
+#### Exporting data to PNG
 
 The [png()](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
 
@@ -535,6 +507,39 @@ grid.export.png({
 ~~~
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
+
+## Controlling scroll behavior
+
+The API of DHTMLX Grid provides the possibility to set scrolls to the necessary position and to get the current state of scrolls.
+
+### Scrolling to specific coordinates
+
+You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
+
+~~~js
+grid.scroll(75,230);
+~~~
+
+### Scrolling to specific grid cell
+
+It is also possible to scroll grid content to a particular cell. Pass the ids of the row and the column as parameters:
+
+~~~js
+grid.scrollTo("15","c");
+~~~
+
+**Related sample**: [Grid. Controlling scroll behavior](https://snippet.dhtmlx.com/usu1rnpu)
+
+### Getting the state of scroll
+
+To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
+
+~~~js
+const state = grid.getScrollState(); // -> {x:0,y:0}
+~~~
+
+It returns an object with x,y coordinates of a position the grid has been scrolled to.
+
 
 ## Repainting Grid
 
