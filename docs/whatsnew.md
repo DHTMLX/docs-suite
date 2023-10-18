@@ -51,6 +51,7 @@ Released on October 23, 2023
 #### Grid/TreeGrid
 
 - The functionality of the [eventHandlers](grid/api/grid_eventhandlers_config.md) configuration property is extended for the columns' header/footer
+- The columns with the "number" type [allow only numeric values in the cells](grid/api/api_gridcolumn_properties.md#editorconfig)
 
 ### Fixes
 
