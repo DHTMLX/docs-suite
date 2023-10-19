@@ -36,7 +36,7 @@ Released on October 23, 2023
 
 #### Ribbon
 
-- New events [input](ribbon/api/ribbon_input_event.md), [inputChange](ribbon/api/ribbon_inputchange_event.md),[keydown](ribbon/api/ribbon_keydown_event.md), and the [Datepicker](ribbon/datepicker.md) control
+- New events: [input](ribbon/api/ribbon_input_event.md), [inputChange](ribbon/api/ribbon_inputchange_event.md), [keydown](ribbon/api/ribbon_keydown_event.md), and the [Datepicker](ribbon/datepicker.md) control
 
 #### Sidebar
 
@@ -44,7 +44,7 @@ Released on October 23, 2023
 
 #### Toolbar
 
-- New events [input](toolbar/api/toolbar_input_event.md) and [keydown](toolbar/api/toolbar_keydown_event.md)
+- New events: [input](toolbar/api/toolbar_input_event.md) and [keydown](toolbar/api/toolbar_keydown_event.md)
 
 ### Updates
 
