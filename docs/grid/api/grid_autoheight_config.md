@@ -8,7 +8,7 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 {{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
 
-@short: Optional. Makes long text split into multiple lines based on the width of the column, controls the automatic height adjustment for the header/footer
+@short: Optional. Makes long text split into multiple lines based on the width of the column, controls the automatic height adjustment of the header/footer and cells with data
 
 @signature: autoHeight?: boolean;
 
@@ -27,15 +27,7 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Rows auto height](https://snippet.dhtmlx.com/zkcsyazg)
 
-:::note
-Note that the **autoHeight** option does not adjust the height of the cells in the header/footer of Grid. 
-:::
-
-The option just makes their text split into multiple lines, but the height of the cells will remain the same. You can configure the height of the header/footer in one of the following ways:
-
-- set the desired height of the rows in the header/footer via the [](grid/api/grid_headerrowheight_config.md) and [](grid/api/grid_footerrowheight_config.md) configuration options of Grid
-
-- enable autoheight in the header/footer via the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+You can control the autoheight of the header/footer separately with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. For example, you can disable autoheight of the header and the footer, while it is enabled for the whole Grid:
 
 ~~~js
 const grid = new dhx.Grid("grid", {
@@ -48,7 +40,6 @@ const grid = new dhx.Grid("grid", {
     footerAutoHeight: false, // disable autoHeight in the footer
 });
 ~~~
-
 
 #### Take into account the information below:  
 

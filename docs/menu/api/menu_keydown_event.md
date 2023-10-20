@@ -6,13 +6,13 @@ description: You can explore the keydown event of Menu in the documentation of t
 
 # keydown
 
-@short: fires when any key is pressed
+@short: fires when any key is pressed and an option of Menu is in focus
 
 @signature: {'keydown: (event: KeyboardEvent, id?: string) => void;'}
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id?: string` - the ID of the Menu control
+- `id?: string` - the ID of the Menu option in focus
 
 @example:
 menu.events.on("keydown", function(event, id) {

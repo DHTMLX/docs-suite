@@ -6,13 +6,13 @@ description: You can explore the keydown event of Toolbar in the documentation o
 
 # keydown
 
-@short: fires when any key is pressed
+@short: fires when any key is pressed and a control of Toolbar is in focus
 
 @signature: {'keydown: (event: KeyboardEvent, id?: string) => void;'}
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id?: string` - the ID of the Toolbar control
+- `id?: string` - the ID of the Toolbar control in focus
 
 @example:
 toolbar.events.on("keydown", function(event, id) {

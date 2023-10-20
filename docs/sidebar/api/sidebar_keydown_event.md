@@ -6,13 +6,13 @@ description: You can explore the keydown event of Sidebar in the documentation o
 
 # keydown
 
-@short: fires when any key is pressed
+@short: fires when any key is pressed and a Sidebar option is in focus
 
 @signature: {'keydown: (event: KeyboardEvent, id?: string) => void;'}
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id?: string` - the ID of the Sidebar control
+- `id?: string` - the ID of the Sidebar option in focus
 
 @example:
 sidebar.events.on("keydown", function(event, id) {

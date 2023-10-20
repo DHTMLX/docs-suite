@@ -6,13 +6,13 @@ description: You can explore the keydown event of Ribbon in the documentation of
 
 # keydown
 
-@short: fires when any key is pressed
+@short: fires when any key is pressed and a control of Ribbon is in focus
 
 @signature: {'keydown: (event: KeyboardEvent, id?: string) => void;'}
 
 @params:
 - `event: KeyboardEvent` - a native KeyboardEvent object
-- `id?: string` - the ID of the Ribbon control
+- `id?: string` - the ID of the Ribbon control in focus
 
 @example:
 ribbon.events.on("keydown", function(event, id) {

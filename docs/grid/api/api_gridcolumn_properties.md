@@ -201,8 +201,9 @@ columns:[
 		</tr>
         <tr>
 			<td id="editorconfig"><b>editorConfig</b></td>
-            <td>(optional) an object with configuration settings of the column's editor. 
-            <br><br>If the <b>editorType: "combobox/multiselect"</b> is specified, the <b>editorConfig</b> object can include the following properties:
+            <td>(optional) an object with configuration settings of the column's editor. The structure of this object depends on the specified type of the editor or the column. Check the list below:<br><br>
+            <ul><li><b>editorType: "combobox/multiselect"</b>
+            <br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:
             <ul>
                 <li><b>css</b> - (optional) styling to be applied to an option</li>
                 <li><b>itemHeight</b> - (optional) the height of an option</li>
@@ -214,19 +215,21 @@ columns:[
                     <ul>- <b>id</b> - the id of the selected option</ul>
                     <ul>- <b>value</b> - the value of the selected option</ul>
                 </li>
-            </ul><br>
-            If the <b>editorType: "multiselect"</b> is specified for a column, the <b>editorConfig</b> object can include one more property:
+            </ul><br></li>
+            <li><b>editorType: "multiselect"</b> 
+            <br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:
             <ul>
                 <li><b>selectAllButton</b> - (optional) adds a button that allows selecting all the options in the editor</li>
-            </ul><br>
-            If the <b>type: "date"</b> is specified for a column, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones).<br><br>
-            If the <b>type:"number"</b> is specified, the <b>editorConfig</b> object can include two more properties:
+            </ul><br></li>
+            <li>column <b>type: "date"</b> 
+            <br><br>For this type of column, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones).<br><br></li>
+            <li>column <b>type:"number"</b> 
+            <br><br>For this type of column, the <b>editorConfig</b> object can include the following properties:
             <ul>
                 <li><b>min</b> - (optional) the minimum allowed value</li>
                 <li><b>max</b> - (optional) the maximum allowed value</li>
-            </ul>
-            In the <b>autoHeight:true</b> mode columns with the <b>type:"number"</b> must have the editor with the <b>"input"</b> type, unless a different editor type is specified.
-            <br><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a>
+            </ul></li></ul>
+            <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a>
             </td>
 		</tr>
         <tr>
