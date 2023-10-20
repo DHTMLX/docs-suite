@@ -47,7 +47,6 @@ const grid = new dhx.Grid("grid", {
 - you can also specify `htmlEnable:true` in the configuration object of Grid
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
 - in case of complex HTML data, usage of the **autoHeight** config may lead to incorrect size calculations
-- the enabled **autoHeight** config adjusts the height of the cells taking into account the [template](grid/api/api_gridcolumn_properties.md) added to cells
 
 @changelog: added in v7.1
 
