@@ -880,7 +880,7 @@ There is a list of [configuration settings](treegrid/api/api_treegridcolumn_prop
 
 ### Editing columns with the "number" type
 
-For columns with the **type:"number"** setting the **editorConfig** object may contain additional properties, besides the [common ones](treegrid/api/api_treegridcolumn_properties.md#editorconfig). They are:
+For columns with the **type:"number"** setting the **editorConfig** object may contain the following properties. They are:
 
 - **min** - (optional) the minimum allowed value
 - **max** - (optional) the maximum allowed value
@@ -905,9 +905,16 @@ In case a user enters a value that goes beyond the limits specified by the above
 
 If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the **editorConfig** object by the **min/max** values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
 
-:::note
-In the <b>autoHeight:true</b> mode columns with the <b>type:"number"</b> must have the editor with the <b>"input"</b> type, unless a different editor type is specified.
-:::
+#### Styling the warning
+
+There is a possibility to redefine the style of the warning on entering an invalid number value. You need to change the `dhx_cell-editor__input--not-valid` class for this purpose. Here is what it looks like:
+
+~~~css
+.dhx_cell-editor__input--not-valid {
+    color: var(--dhx-color-primary);
+    font-weight: var(--dhx-font-weight-medium);
+}
+~~~
 
 ### Editable combobox
 
