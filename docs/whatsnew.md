@@ -59,6 +59,19 @@ Released on October 23, 2023
 - Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
 - TreeGrid. Fix the work of the [adjust](treegrid/api/treegrid_adjust_config.md) property with the "footer" value
 
+Version 8.2.7 
+---------------
+
+Released on October 19, 2023
+
+### Fixes
+
+- Combobox. Fix the absence of the placeholder if Combobox has a template
+- Form. Combo control. Fix the incorrect position of preMessage after the call of setProperties()
+- Form. Input/Textarea controls. Fix disappearance of the entered value on entering the full screen mode 
+- Form. Toggle control. Fix the break of the Toggle button styles in case of simultaneous usage of the Suite and Vault sources on a page
+- Grid/TreeGrid. Fix incorrect autoWidth calculation in case of a big number of columns
+
 Version 8.2.6 
 ---------------
 
@@ -77,6 +90,8 @@ Version 8.2.4
 ---------------
 
 Released on October 4, 2023
+
+### Fixes
 
 - Grid/TreeGrid. Fix the issue with comboFilter not working in case the column's editor contains options with the id and value that don't match
 - Grid/TreeGrid. Fix the problem with the [`setColumns()`](/suite/grid/api/grid_setcolumns_method/) method not refreshing the comboFilter options
