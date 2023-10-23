@@ -27,7 +27,7 @@ Released on October 23, 2023
 
 #### Grid/TreeGrid
 
-- The ability to [set the autoheight mode for the column's header/footer](grid/configuration.md#headerfooter-height) (PRO version)
+- The ability to [set the autoHeight mode for the column's header/footer](grid/configuration.md#headerfooter-height) (PRO version)
 - The ability to [enable HTML content in the columns' header/footer](grid/configuration.md#html-content-of-grid-columns) independent of the settings applied for the column or the whole component
 
 #### Menu
