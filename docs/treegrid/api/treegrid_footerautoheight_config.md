@@ -24,7 +24,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 @descr: 
 
-**Related sample**: [TreeGrid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e)
+**Related sample**: [TreeGrid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e?tag=treegrid)
 
 Redefines the [autoHeight](treegrid/api/treegrid_autoheight_config.md) config for the footer.
 

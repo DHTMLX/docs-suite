@@ -436,7 +436,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/7o4elf48)
+**Related sample**: [Grid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/7o4elf48?tag=grid)
 
 ### Event handlers for HTML content
 
@@ -520,7 +520,7 @@ const grid = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax)
+**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax?tag=grid)
 
 ## Editing Grid and separate columns
 
@@ -1122,7 +1122,7 @@ const grid2 = new dhx.Grid("grid", {
 });
 ~~~
 
-**Related sample**: [Grid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d)
+**Related sample**: [Grid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/jwz9k66d?tag=grid)
 
 ## Rows
 

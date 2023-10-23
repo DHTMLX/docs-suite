@@ -72,9 +72,9 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 	
-**Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc)
+**Related sample**: [Grid. Handling events in template](https://snippet.dhtmlx.com/zcv5drxc?tag=grid)
 
-**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax)
+**Related sample**: [Grid. Rich example with templates and different editors](https://snippet.dhtmlx.com/1mxmshax?tag=grid)
 
 An example of adding event handlers to the HTML elements defined in the data set of Grid is given below:
 

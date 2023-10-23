@@ -74,9 +74,9 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 @descr:
 
-**Related sample**: [TreeGrid. Handling events in template](https://snippet.dhtmlx.com/la7u1xqy)
+**Related sample**: [TreeGrid. Handling events in template](https://snippet.dhtmlx.com/la7u1xqy?tag=treegrid)
 
-**Related sample**: [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p)
+**Related sample**: [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p?tag=treegrid)
 
 An example of adding event handlers to the HTML elements defined in the data set of TreeGrid is given below:
 

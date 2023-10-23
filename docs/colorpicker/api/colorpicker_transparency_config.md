@@ -19,6 +19,6 @@ const colorpicker = new dhx.Colorpicker("colorpicker_container",{
 
 @descr: 
 
-**Related sample**: [Colorpicker. Disable color transparency](https://snippet.dhtmlx.com/ewgu0aps)
+**Related sample**: [Colorpicker. Disable color transparency](https://snippet.dhtmlx.com/ewgu0aps?tag=colorpicker)
 
 

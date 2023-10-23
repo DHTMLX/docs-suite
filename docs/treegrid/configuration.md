@@ -452,7 +452,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-**Related sample**: [TreeGrid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/vf0ws454)
+**Related sample**: [TreeGrid. Styling header cells (custom CSS)](https://snippet.dhtmlx.com/vf0ws454?tag=treegrid)
 
 ### Event handlers for HTML content
 
@@ -537,7 +537,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-**Related sample**: [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p)
+**Related sample**: [TreeGrid. Rich example with templates and different editors](https://snippet.dhtmlx.com/0gd4dn8p?tag=treegrid)
 
 ## Editing TreeGrid and separate columns
 
@@ -1122,7 +1122,7 @@ const treegrid = new dhx.TreeGrid("treegrid", {
 });
 ~~~
 
-**Related sample**: [TreeGrid. Header/Footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e)
+**Related sample**: [TreeGrid. Header/footer autoHeight mode](https://snippet.dhtmlx.com/7kgj0b4e?tag=treegrid)
 
 ## Rows
 
