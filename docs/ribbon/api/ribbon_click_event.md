@@ -21,6 +21,6 @@ ribbon.events.on("click", function(id,e){
 
 @descr:
 
-**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl?tag=ribbon)
 
 [comment]: # (@related: ribbon/handling_events.md)

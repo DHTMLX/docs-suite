@@ -21,5 +21,7 @@ ribbon.events.on("keydown", function(event, id) {
 
 @descr:
 
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl?tag=ribbon)
+
 @changelog:
 added in v8.3

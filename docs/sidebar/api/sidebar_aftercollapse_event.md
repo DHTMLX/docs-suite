@@ -17,7 +17,7 @@ sidebar.events.on("afterCollapse", function() {
 
 @descr:
 
-**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i?tag=sidebar)
 
 @changelog: added in v6.4
 

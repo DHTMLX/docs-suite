@@ -21,4 +21,4 @@ menu.events.on("click", function(id,e){
 
 @descr:
 
-**Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k)
+**Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k?tag=menu)

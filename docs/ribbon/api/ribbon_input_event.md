@@ -21,7 +21,7 @@ ribbon.events.on("input", function(id, value){
 
 @descr:
 
-**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl?tag=ribbon)
 
 @changelog:
 added in v8.3

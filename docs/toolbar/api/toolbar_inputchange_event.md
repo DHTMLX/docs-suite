@@ -17,6 +17,6 @@ toolbar.events.on("inputChange", function(id, newValue){
 });
 @examplestop:
 
-**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
+**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y?tag=toolbar)
 
 @changelog: added in v7.2

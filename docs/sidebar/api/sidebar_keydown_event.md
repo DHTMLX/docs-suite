@@ -21,5 +21,7 @@ sidebar.events.on("keydown", function(event, id) {
 
 @descr:
 
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i?tag=sidebar)
+
 @changelog:
 added in v8.3

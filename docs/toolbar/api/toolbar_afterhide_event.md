@@ -20,4 +20,4 @@ toolbar.events.on("afterHide", function(event){
 
 @descr:
 
-**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
+**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y?tag=toolbar)

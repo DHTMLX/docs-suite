@@ -905,6 +905,8 @@ In case a user enters a value that goes beyond the limits specified by the above
 
 If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the **editorConfig** object by the **min/max** values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
 
+**Related sample**: [TreeGrid. Editing with different editors](https://snippet.dhtmlx.com/sdbfbv2n?tag=treegrid)
+
 #### Styling the warning
 
 There is a possibility to redefine the style of the warning on entering an invalid number value. You need to change the `dhx_cell-editor__input--not-valid` class for this purpose. Here is what it looks like:

@@ -19,4 +19,4 @@ toolbar.events.on("openMenu", function(id){
 });
 @examplestop:
 
-**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
+**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y?tag=toolbar)

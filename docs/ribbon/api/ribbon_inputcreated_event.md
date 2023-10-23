@@ -21,6 +21,6 @@ ribbon.events.on("inputCreated", function(id, el){
 
 @descr:
 
-**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl)
+**Related sample**: [Ribbon. Events](https://snippet.dhtmlx.com/i7cfddkl?tag=ribbon)
 
 [comment]: # (@related: ribbon/handling_events.md)

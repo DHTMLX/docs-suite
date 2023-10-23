@@ -21,5 +21,7 @@ menu.events.on("keydown", function(event, id) {
 
 @descr:
 
+**Related sample**: [Menu. Events](https://snippet.dhtmlx.com/yjt39a4k?tag=menu)
+
 @changelog:
 added in v8.3

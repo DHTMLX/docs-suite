@@ -25,6 +25,6 @@ sidebar.events.on("beforeHide", function(id, event){
 
 @descr:
 
-**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i)
+**Related sample**: [Sidebar. Events](https://snippet.dhtmlx.com/qfddiu3i?tag=sidebar)
 
 [comment]: # (@related: sidebar/events.md)

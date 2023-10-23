@@ -21,7 +21,7 @@ toolbar.events.on("input", function(id, value){
 
 @descr:
 
-**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y)
+**Related sample**: [Toolbar. Events](https://snippet.dhtmlx.com/xvak1p5y?tag=toolbar)
 
 @changelog:
 added in v8.3
