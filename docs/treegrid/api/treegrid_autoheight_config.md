@@ -45,6 +45,7 @@ const treegrid = new dhx.TreeGrid("treegrid", {
 - you can also specify `htmlEnable:true` in the configuration object of TreeGrid
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
 - in case of complex HTML data, usage of the **autoHeight** config may lead to incorrect size calculations
+- note that if you decide to change the font type, its size and offsets, correct calculation of the cell's autoHeight can't be ensured
 
 @changelog: added in v7.1
 
