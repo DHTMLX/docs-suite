@@ -112,8 +112,8 @@ const grid = new dhx.Grid("grid_container", {
 
 @changelog: 
 
-- Added in v7.0
 - The ability to add event handlers for the header/footer added in v8.3
+- Added in v7.0
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#event-handlers-for-html-content grid/customization.md#adding-template-to-cells)
  

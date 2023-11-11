@@ -20,7 +20,7 @@ const grid = new dhx.Grid("grid_container", {
 	data: dataset,
 	selection: "complex", 
     editing: true, 
-	keyNavigation: true
+	keyNavigation: false
 });
 
 @descr:

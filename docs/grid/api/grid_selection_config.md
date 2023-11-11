@@ -8,7 +8,9 @@ description: You can explore the selection config of Grid in the documentation o
 
 @short: Optional. Enables selection in a grid
 
-@signature: {'selection?: "cell" | "row" | "complex";'}
+@signature: {'selection?: boolean | "cell" | "row" | "complex";'}
+
+@default: false
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -20,6 +22,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 @descr:
+
+When you set `selection:true`, the "complex" mode is applied.
 
 **Related sample**: [Grid. Selection](https://snippet.dhtmlx.com/ad6roqsx)
 

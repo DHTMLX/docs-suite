@@ -10,6 +10,8 @@ description: You can explore the htmlEnable config of Grid in the documentation 
 
 @signature: {'htmlEnable?: boolean;'}
 
+@default: false
+
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
@@ -21,7 +23,7 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-If you set the property to *false*, the content of Grid columns will be displayed as a *string* value.
+When the property is set to *false*, the content of Grid columns is displayed as string values.
 
 **Related sample**: [Grid. Html in data](https://snippet.dhtmlx.com/chitkvkc)
 

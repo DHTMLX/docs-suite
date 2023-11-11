@@ -10,6 +10,8 @@ description: You can explore the multiselection config of Grid in the documentat
 
 @signature: {'multiselection?: boolean;'}
 
+@default: false
+
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
