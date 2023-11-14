@@ -12,10 +12,10 @@ description: You can explore the Grid column properties of Grid in the documenta
 columns:[
  {
     id: string | number,
-    width?: number,
-    minWidth?: number,
-    maxWidth?: number,
-    autoWidth?: boolean,
+    width?: number, // 100 by default
+    minWidth?: number, // 20 by default
+    maxWidth?: number, 
+    autoWidth?: boolean, // false by default
     header: [
         {
             text?: string | number,
@@ -88,11 +88,11 @@ columns:[
 		</tr>
         <tr>
 			<td><b>width</b></td>
-			<td>(optional) the width of a column. The minimum with of the column is 20 px.<br>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</td>
+			<td>(optional) the width of a column, <i>100</i> by default. Note that width can't be less than 20px.<br>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used</td>
 		</tr>
         <tr>
 			<td><b>minWidth</b></td>
-			<td>(optional) the minimum width to be set for a column. The minimum width of a column is 20px. <br/> 
+			<td>(optional) the minimum width to be set for a column, <i>20</i> by default <br/> 
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/x5hmpi9d" target="_blank">Grid. Columns min width</a>
             </td>
 		</tr>
@@ -104,7 +104,7 @@ columns:[
 		</tr>
         <tr>
 			<td><a href="../../configuration#autowidth-for-columns"><b>autoWidth</b></a></td>
-			<td>(optional) enables/disables the ability of a column to adjust its size to the size of Grid<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
+			<td>(optional) enables/disables the ability of a column to adjust its size to the size of Grid, <i>false</i> by default<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
 		</tr>
         <tr>
 			<td><b id="header">header</b></td>
