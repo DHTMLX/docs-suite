@@ -19,9 +19,9 @@ columns:[
     header: [
         {
             text?: string | number,
-            tooltip?: boolean,
+            tooltip?: boolean, // true by default
             tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
-            align?: "left" | "center" | "right",
+            align?: "left" | "center" | "right", // "left" by default
             colspan?: number,
             rowspan?: number,
             css?: string,
@@ -36,42 +36,43 @@ columns:[
                 template?: function
             },
             customFilter?: (item: any, input: string) => boolean,
-            headerSort?: boolean,
+            headerSort?: boolean, // true by default
             sortAs?: (cellValue: any) => string | number,
-            htmlEnable?: boolean,
+            htmlEnable?: boolean, // false by default
         }
     ],
     footer?: [
         {
             text?: string | number,
-            tooltip?: boolean,
+            tooltip?: boolean, // true by default
             tooltipTemplate?: (value: string | undefined, footer: IFooter, col: ICol) => string | boolean,
-        	align?: "left" | "center" | "right",
+        	align?: "left" | "center" | "right", // "left" by default
             colspan?: number,
             rowspan?: number,
             css?: string,
             content?: "avg" | "sum" | "max" | "min" | "count",
-            htmlEnable?: boolean,
+            htmlEnable?: boolean, // false by default
         },
     ],
-    type?: "string" | "number" | "boolean" | "date" | "percent",
-    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea",
+    type?: "string" | "number" | "boolean" | "date" | "percent", // "string" by default
+    // "input" by default
+    editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea", 
     format?: string,
     options?: (string | { id: string | number, value: string })[] |
               (col: object, row?: object) => (string | { id: string | number, value: string })[],
     editorConfig?: obj,
-    adjust?: "data" | "header" | "footer" | boolean,
-    align?: "left" | "center" | "right",
-    htmlEnable?: boolean,
-    hidden?: boolean,
-    draggable?: boolean,
-    editable?: boolean,
-    resizable?: boolean,
-    sortable?: boolean,
+    adjust?: "data" | "header" | "footer" | boolean, // false by default
+    align?: "left" | "center" | "right", // "left" by default
+    htmlEnable?: boolean, // false by default
+    hidden?: boolean, // false by default
+    draggable?: boolean, // false by default
+    editable?: boolean, // false by default
+    resizable?: boolean, // false by default
+    sortable?: boolean, // true by default
     mark?: { min?: string, max?: string } |
            (cell: any, columnCells: any[], row?: object, column?: object) => string,
     template?: (cellValue: any, row: object, col: object) => string,
-    tooltip?: boolean,
+    tooltip?: boolean, // true by default
     tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
   },
   // more column objects
@@ -111,9 +112,9 @@ columns:[
 			<td>(required) an array of objects with header rows configuration. Each header object may include:
             <ul>
             <li><b>text</b> - (optional) the text of a header</li>
-            <li><b>tooltip</b> - (optional) enables/disables the header tooltip</li>
+            <li><b>tooltip</b> - (optional) enables/disables the header tooltip, <i>true</i> by default</li>
             <li><b>tooltipTemplate</b> - (optional) sets a template for the header tooltip. Takes into account the <a href="../../configuration#html-content-of-grid-columns">htmlEnable</a> property. Return <i>false</i> to disable the tooltip</li>
-            <li><a href="../../configuration#alignment"><b>align</b></a> - (optional) aligns data in the header: "left"|"center"|"right"</li>
+            <li><a href="../../configuration#alignment"><b>align</b></a> - (optional) aligns data in the header: "left" | "center" | "right", <i>"left"</i> by default</li>
             <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
             <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>
             <li><b>css</b> - (optional) styling to be applied to a header</li>
@@ -135,9 +136,9 @@ columns:[
                 <ol> - <b>input</b> - (required) the value of the option selected in the filter</ol>
                 <br>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering
             </li>
-            <li><b>headerSort</b> - (optional) enables/disables sorting by clicking the header</li>
+            <li><b>headerSort</b> - (optional) enables/disables sorting by clicking the header, <i>true</i> by default</li>
             <li><b>sortAs</b> - (optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li>
-            <li><b>htmlEnable</b> - (optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</li>
+            <li><b>htmlEnable</b> - (optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Grouped headers (spans)</a>
             </td>
@@ -147,15 +148,15 @@ columns:[
 			<td>(optional) an array of objects with footer rows configuration. Each footer object may include:
             <ul>
             <li><a href="../../customization#styling-footer-cells"><b>text</b></a> - (optional) the text of a footer </li>
-            <li><b>tooltip</b> - (optional) enables/disables the footer tooltip</li>
+            <li><b>tooltip</b> - (optional) enables/disables the footer tooltip, <i>true</i> by default</li>
             <li><b>tooltipTemplate</b> - (optional) sets a template for the footer tooltip. Takes into account the <a href="../../configuration#html-content-of-grid-columns">htmlEnable</a> property. Return <i>false</i> to disable the tooltip</li>
-            <li><b>align</b> - (optional) aligns data in the footer: "left"|"center"|"right"</li>
+            <li><b>align</b> - (optional) aligns data in the footer: "left" | "center" | "right", <i>"left"</i> by default</li>
             <li><b>colspan</b> - (optional) the number of columns in a colspan</li>
             <li><b>rowspan</b> - (optional) the number of rows in a rowspan </li>
             <li><b>css</b> - (optional) styling to be applied to a footer</li>
             <li><a href="../../configuration#headerfooter-filters"><b>content</b></a> - (optional) additional content of a footer, which can be one of the methods that process values in a column and show result in the footer: "avg" | "sum" | "max" | "min" | "count"
             </li>
-             <li><b>htmlEnable</b> - (optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a footer. If set to <i>false</i>, the content of the footer cells will be displayed as a <i>string</i> value</li>
+             <li><b>htmlEnable</b> - (optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a footer. If set to <i>false</i>, the content of the footer cells will be displayed as a <i>string</i> value</li>
             </ul>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9jl55ep7" target="_blank">Grid. Grid with footer</a>
             </td>
@@ -163,7 +164,7 @@ columns:[
         <tr>
 			<td><b>type</b></td>
 			<td>(optional) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:
-			<ul><li><i>"string" (by default)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li>
+			<ul><li><i>"string" (the default one)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li>
 			<li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li>
 			<li><i>"boolean"</i> - aligns data to the left side and applies the <i>"checkbox"</i> editor</li>
 			<li><i>"percent"</i> - aligns data to the left side and applies the <i>"input"</i> editor</li>
@@ -173,7 +174,7 @@ columns:[
 		</tr>
         <tr>
 			<td><a href="../../configuration#types-of-column-editor"><b>editorType</b></a></td>
-			<td>(optional) the type of an editor used in a column: "input"|"select"|"combobox"|"textarea"|"multiselect"|"datePicker" </td>
+			<td>(optional) the type of an editor used in a column: "input" | "select" | "combobox" | "textarea" | "multiselect" | "datePicker", <i>"input"</i> by default </td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#formatting-columns"><b>format</b></a></td>
@@ -181,7 +182,7 @@ columns:[
 		</tr>
         <tr>
 			<td><b>options</b></td>
-			<td>(optional) specifies a set of options to be displayed in the editor of a cell. It is required if you specify <a href="../../configuration/#types-of-column-editor">editorType: "select"|"combobox"|"multiselect"</a>. The property can be:
+			<td>(optional) specifies a set of options to be displayed in the editor of a cell. It is required if you specify <a href="../../configuration/#types-of-column-editor">editorType: "select" | "combobox" | "multiselect"</a>. The property can be:
                 <ul>
                     <li>an array of string values</li>
                     <li>an array of objects with a set of <i>key:value</i> pairs - attributes of options and their values:
@@ -234,39 +235,39 @@ columns:[
 		</tr>
         <tr>
 			<td><a href="../../configuration#autosize-for-columns"><b>adjust</b></a></td>
-			<td>(optional) defines whether the width of a column is automatically adjusted to its content.<br><br><li>The property has a priority over the <a href="../../configuration/#autowidth-for-columns">autoWidth</a> property if it is specified either for the grid or for the column, and over the <b>width</b> property of the column.</li><li>The width the columns will be adjusted to also depends on the values of the <b>minWidth/maxWidth</b> properties if they are set for a column.</li></td>
+			<td>(optional) <i>false</i> by default, defines whether the width of a column is automatically adjusted to its content.<br><br><li>The property has a priority over the <a href="../../configuration/#autowidth-for-columns">autoWidth</a> property if it is specified either for the grid or for the column, and over the <b>width</b> property of the column.</li><li>The width the columns will be adjusted to also depends on the values of the <b>minWidth/maxWidth</b> properties if they are set for a column.</li></td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#alignment"><b>align</b></a></td>
-			<td>(optional) aligns data in a column: "left" | "center" | "right"</td>
+			<td>(optional) aligns data in a column: "left" | "center" | "right", <i>"left"</i> by default</td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#html-content-of-grid-columns"><b>htmlEnable</b></a></td>
-			<td>(optional) if set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
+			<td>(optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a column. If set to <i>false</i>, the content of the column cells will be displayed as a <i>string</i> value <br/> 
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/chitkvkc" target="_blank">Grid. Html in data</a>
            </td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#hidden-columns"><b>hidden</b></a></td>
-			<td>(optional) defines whether a column is hidden <br/>
+			<td>(optional) defines whether a column is hidden, <i>false</i> by default <br/>
             <br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lh7ma639" target="_blank">Grid. Hidden columns</a>
            </td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#drag-n-drop-inside-the-grid"><b>draggable</b></a></td>
-			<td>(optional) defines whether a column is draggable</td>
+			<td>(optional) defines whether a column is draggable, <i>false</i> by default</td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#editing-grid-and-separate-columns"><b>editable</b></a></td>
-			<td>(optional) defines whether a column is editable</td>
+			<td>(optional) defines whether a column is editable, <i>false</i> by default</td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#resizable-columns"><b>resizable</b></a></td>
-			<td>(optional) defines whether a column can be resized</td>
+			<td>(optional) defines whether a column can be resized, <i>false</i> by default</td>
 		</tr>
         <tr>
 			<td><a href="../../configuration#sortable-columns"><b>sortable</b></a></td>
-			<td>(optional) defines whether a column is sortable</td>
+			<td>(optional) defines whether a column is sortable, <i>true</i> by default</td>
 		</tr>
         <tr>
 			<td><a href="../../customization#adding-custom-marks-to-cells"><b>mark</b></a></td>
