@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+
+Version 8.3.1
+---------------
+
+Released on November 14, 2023
+
+### Fixes
+
+- DataCollection. Fix an error in the DragManager 
+- DataCollection. Fix data serialization to the CSV format
+- Form. Fix the issue with the Slider ticks breaking the default margin between controls
+- Grid/TreeGrid. Fix the width of an exported PNG file
+- Menu. Fix resetting the position of a child on clicking its parent item
+- Tabbar. Fix incorrect work of the tabAlign property 
+- TreeGrid. Fix the issue with selection working during pagination only for the first page 
+
 Version 8.3
 ---------------
 
