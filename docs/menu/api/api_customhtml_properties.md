@@ -16,7 +16,7 @@ const data = [
 		parent?: string,
 		html?: string,
 		css?: string | string[],
-		hidden?: boolean,
+		hidden?: boolean, // false by default
 	}
 ]
 ~~~
@@ -47,7 +47,7 @@ const data = [
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
-			<td>(optional) defines whether a control is hidden</td>
+			<td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
 		</tr>
     </tbody>
 </table>

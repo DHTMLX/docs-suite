@@ -8,6 +8,8 @@ description: You can explore the dragCopy config of List in the documentation of
 
 @short: Optional. Defines that an item is copied to a target during drag-n-drop
 
+@default: false
+
 @signature: {'dragCopy?: boolean'}
 
 @example:

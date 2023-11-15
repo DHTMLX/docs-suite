@@ -15,7 +15,7 @@ description: You can explore the keyNavigation config of DataView in the documen
 @example:
 const dataview = new dhx.DataView("dataview_container", {
     itemsInRow: 5, 
-    keyNavigation: true
+    keyNavigation: false
 });
 
 @descr:

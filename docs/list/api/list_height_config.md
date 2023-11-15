@@ -10,6 +10,8 @@ description: You can explore the height config of List in the documentation of t
 
 @signature: {'height?: number | string;'}
 
+@default: "auto" - adjusts to the container height
+
 @example:
 // sets the height as a number
 const list = new dhx.List("list_container", {height: 700});

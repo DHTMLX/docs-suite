@@ -10,6 +10,8 @@ description: You can explore the htmlEnable config of List in the documentation 
 
 @signature: {'htmlEnable?: boolean'}
 
+@default: true
+
 @example:
 //specifies a template for List items
 function template(item) {

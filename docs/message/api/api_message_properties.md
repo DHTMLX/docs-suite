@@ -17,7 +17,7 @@ dhx.message({
 	css?: string,
 	html?: string,
 	node?: HTMLElement | string,
-	position?: "top-left" | "top-right" | "bottom-left" | "bottom-right",
+	position?: "top-left" | "top-right" | "bottom-left" | "bottom-right", // "top-right" by default
 	expire?: number,
 });
 ~~~
@@ -52,7 +52,7 @@ The configuration object of a message box may take the following parameters:
 		</tr>
         <tr>
 			<td><b>position</b></td>
-			<td>(optional) the position of a message box: "top-left" | "top-right" | "bottom-left" | "bottom-right" <br/> 
+			<td>(optional) the position of a message box: <i>"top-left"</i> | <i>"top-right"</i>| <i>"bottom-left"</i> | <i>"bottom-right"</i>; <i>"top-right"</i> by default <br/> 
 			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message positioning and container</a>
 			</td>
 		</tr>
@@ -89,9 +89,9 @@ dhx.alert({
 	header?: string,
 	css?: string,
 	buttons?: string[],
-	buttonsAlignment?: "left" | "center" | "right",
+	buttonsAlignment?: "left" | "center" | "right", // "left" by default
 	blockerCss?: string,
-	htmlEnable?: boolean,
+	htmlEnable?: boolean, // true by default 
 });
 ~~~
 
@@ -119,7 +119,7 @@ The configuration object of an alert box may take the following parameters:
 		</tr>
         <tr>
 			<td><b>buttonsAlignment</b></td>
-			<td>(optional) the position of buttons: "left" | "center" | "right"</td>
+			<td>(optional) the position of buttons: <i>"left"</i> | <i>"center"</i> | <i>"right"</i>; <i>"left"</i> by default</td>
 		</tr>
         <tr>
 			<td><b>blockerCss</b></td>
@@ -160,9 +160,9 @@ dhx.confirm({
 	header?: string,
 	css?: string,
 	buttons?: string[],
-	buttonsAlignment?: "left" | "center" | "right",
+	buttonsAlignment?: "left" | "center" | "right", // "right" by default
 	blockerCss?: string,
-	htmlEnable?: boolean,
+	htmlEnable?: boolean, // true by default 
 });
 ~~~
 
@@ -190,7 +190,7 @@ The configuration object of a confirm box may take the following parameters:
 		</tr>
         <tr>
 			<td><b>buttonsAlignment</b></td>
-			<td>(optional) the position of the button: "left", "center", or "right" (by default)</td>
+			<td>(optional) the position of the button: <i>"left"</i> | <i>"center"</i> | <i>"right"</i>; <i>"right"</i> by default</td>
 		</tr>
         <tr>
 			<td><b>blockerCss</b></td>
@@ -227,19 +227,24 @@ dhx.confirm({
 ### Usage
 
 ~~~js
-dhx.tooltip({
+dhx.tooltip( text: string, {
 	node: HTMLElement | string,
-	margin?: number,
-	position?: "right" | "bottom" |"center" | "left" | "top",
+	margin?: number, // 8 by default
+	position?: "right" | "bottom" |"center" | "left" | "top", // "bottom" by default
 	css?: string,
-	force?: boolean,
+	force?: boolean, // false by default
 	showDelay?: number,
 	hideDelay?: number,
-	htmlEnable?: boolean,
+	htmlEnable?: boolean, // false by default
 });
 ~~~
 
 ### Description
+
+The **dhx.tooltip()** function takes two parameters:
+
+- *text* -  the text of a tooltip
+- *config* - the configuration object of a tooltip
 
 The configuration object of a tooltip may take the following parameters:
 
@@ -251,11 +256,11 @@ The configuration object of a tooltip may take the following parameters:
 		</tr>
 		<tr>
 			<td><b>margin</b></td>
-			<td>(optional) margin between the node and tooltip</td>
+			<td>(optional) margin between the node and tooltip, <i>8</i> by default</td>
 		</tr>
         <tr>
 			<td><b>position</b></td>
-			<td>(optional) the position of a tooltip: "right", "bottom", "center", "left", "top"</td>
+			<td>(optional) the position of a tooltip: <i>"right"</i>, <i>"bottom"</i>, <i>"center"</i>, <i>"left"</i>, <i>"top"</i>; <i>"bottom"</i> by default</td>
 		</tr>
         <tr>
 			<td><b>css</b></td>
@@ -263,7 +268,7 @@ The configuration object of a tooltip may take the following parameters:
 		</tr>
         <tr>
 			<td><b>force</b></td>
-			<td>(optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored</td>
+			<td>(optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, <i>false</i> by default</td>
 		</tr>
         <tr>
 			<td><b>showDelay</b></td>
@@ -283,7 +288,7 @@ The configuration object of a tooltip may take the following parameters:
 ### Example
 
 ~~~js
-dhx.tooltip("Tooltip From Right", {
+dhx.tooltip("Tooltip from the right", {
 	node: "fourth", 
     position: "right",
     margin: 2,

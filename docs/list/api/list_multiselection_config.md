@@ -10,6 +10,8 @@ description: You can explore the multiselection config of List in the documentat
 
 @signature: {'multiselection?: boolean | "click" | "ctrlClick";'}
 
+@default: false
+
 @example:
 const list = new dhx.List("list_container", {multiselection:true});
 

@@ -18,14 +18,14 @@ const data = [
 		items?: IMenuElement[],
 	
 		count?: number,
-		countColor?: "danger" | "secondary" | "primary" | "success",
+		countColor?: "danger" | "secondary" | "primary" | "success", // "danger" by default
 		hotkey?: string,
 		html?: string,
 		icon?: string,
 		
 		css?: string | string[],
-		disabled?: boolean,
-		hidden?: boolean,
+		disabled?: boolean, // false by default
+		hidden?: boolean, // false by default
 	}
 ]
 ~~~
@@ -60,7 +60,7 @@ const data = [
 		</tr>
         <tr>
 			<td><b>countColor</b></td>
-			<td>(optional) the color of a badge with number: "danger" | "secondary" | "primary" | "success" </td>
+			<td>(optional) the color of a badge with number: <i>"danger"</i> | <i>"secondary"</i> | <i>"primary"</i> | <i>"success"</i>; <i>"danger"</i> by default </td>
 		</tr>
         <tr>
 			<td><b>hotkey</b></td>
@@ -80,11 +80,11 @@ const data = [
 		</tr>
 		<tr>
 			<td><b>disabled</b></td>
-			<td>(optional) defines whether an item is disabled</td>
+			<td>(optional) defines whether an item is disabled, <i>false</i> by default</td>
 		</tr>
 		<tr>
 			<td><b>hidden</b></td>
-			<td>(optional) defines whether a control is hidden</td>
+			<td>(optional) defines whether a control is hidden, <i>false</i> by default</td>
 		</tr>
     </tbody>
 </table>
