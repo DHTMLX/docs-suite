@@ -10,11 +10,13 @@ description: You can explore the type config of rows and columns of Layout in th
 
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 
+@default: "none"
+
 @example:
 const layout = new dhx.Layout("layout_container", {
     rows: [
         {
-            type: "wide", // "line" | "wide" | "space" | "none"
+            type: "wide", // "line" | "space" | "none"
             cols: [
                 {
                     html: "1",
@@ -58,7 +60,7 @@ const layout = new dhx.Layout("layout_container", {
 		</tr>
         <tr>
 			<td><b>"none"</b></td>
-			<td>removes visible borders and space between cells</td>
+			<td>removes visible borders and space between cells (the default one)</td>
 		</tr>
     </tbody>
 </table>

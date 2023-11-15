@@ -10,6 +10,8 @@ description: You can explore the collapsable config of Layout in the documentati
 
 @signature: {'collapsable?: boolean;'}
 
+@default: false
+
 @example:
 const layout = new dhx.Layout("layout_container", {
     cols: [

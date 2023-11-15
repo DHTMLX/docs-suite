@@ -10,6 +10,8 @@ description: You can explore the gravity config of Layout in the documentation o
 
 @signature: {'gravity?: number | boolean;'}
 
+@default: 1
+
 @example:
 const layout = dhx.Layout("layout_container", {
 	css: "dhx_widget--bordered",
@@ -48,7 +50,7 @@ const layout = dhx.Layout("layout_container", {
 
 If you specify the property for a cell, its size will be adjusted regarding the sizes of the cells that are in the same row, within the same parent and have **gravity** in their configuration.  
 
-The negative number set as a value to the **gravity** property is equated to zero.  
+The negative number set as a value to the **gravity** property is equal to zero.  
 
 @changelog:
 The property is updated in v7.0. For more information, see [Migration article](migration.md#65---70).

@@ -10,6 +10,8 @@ description: You can explore the resizable config of Layout in the documentation
 
 @signature: {'resizable?: boolean;'}
 
+@default: false
+
 @example:
 const layout = new dhx.Layout("layout_container", {
     cols: [

@@ -10,6 +10,8 @@ description: You can explore the align config of Layout in the documentation of 
 
 @signature: {'align?: "start" | "center" | "end" | "between" | "around" | "evenly";'}
 
+@default: "start"
+
 @example:
 const layout = dhx.Layout("layout_container", {
    rows: [

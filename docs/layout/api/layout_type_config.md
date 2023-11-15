@@ -10,9 +10,11 @@ description: You can explore the type config of Layout in the documentation of t
 
 @signature: {'type?: "line" | "wide" | "space" | "none";'}
 
+@default: "none"
+
 @example:
 const layout = new dhx.Layout("layout_container", {
-    type: "space", // "line" | "wide" | "space" | "none"
+    type: "space", // "line" | "wide" | "none"
     cols: [
         {
             html: "1"
@@ -46,7 +48,7 @@ const layout = new dhx.Layout("layout_container", {
 		</tr>
         <tr>
 			<td><b>"none"</b></td>
-			<td>removes visible borders and space between cells</td>
+			<td>removes visible borders and space between cells, used by default</td>
 		</tr>
     </tbody>
 </table>

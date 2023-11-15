@@ -10,6 +10,8 @@ description: You can explore the hidden config of Layout in the documentation of
 
 @signature: {'hidden?: boolean;'}
 
+@default: false
+
 @example:
 const layout = new dhx.Layout("layout_container", {
     cols: [
