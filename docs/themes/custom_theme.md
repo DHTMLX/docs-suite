@@ -18,9 +18,11 @@ You can easily configure your own theme via overriding values of the internal CS
         --dhx-font-color-disabled: var(--dhx-color-gray-800);
         --dhx-font-color-contrast: var(--dhx-color-black);
         /* end font */
+
         /* border */
         --dhx-border-color: #007a99;
         /* end border */
+
         /* color scheme */
         --dhx-h-primary: 45;
         --dhx-s-primary: 100%;
@@ -45,12 +47,12 @@ You can easily configure your own theme via overriding values of the internal CS
         --dhx-background-additional: hsl(var(--dhx-h-background), var(--dhx-s-background), calc(var(--dhx-l-background) + 12%));
         /* end theme colors */
 
-        /* DHTMLX Grid service variables*/
+        /* DHTMLX Grid service variables */
         --dhx-s-grid-header-background: #002229;
         --dhx-s-grid-selection-background: var(--dhx-color-gray-100);
-        /* end DHTMLX Grid service variables*/
+        /* end DHTMLX Grid service variables */
 
-        /* DHTMLX Toolbar service variables*/
+        /* DHTMLX Toolbar service variables */
         --dhx-s-toolbar-background: #002229;
         /* end DHTMLX Toolbar service variables */
     }

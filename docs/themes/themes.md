@@ -27,7 +27,7 @@ If the base Suite themes don't fit your project, you can configure your own colo
 
 ## Setting themes
 
-To set the necessary theme, be it a Suite theme or a custom one, use on of the ways described below:
+To set the necessary theme, be it a Suite theme or a custom one, use one of the ways described below:
 
 - change the 'data' attribute for the chosen container:
 

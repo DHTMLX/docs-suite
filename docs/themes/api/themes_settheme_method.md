@@ -46,10 +46,10 @@ layout.getCell("cell-2").attach(form_2);
 form_1.validate();
 form_2.validate();
 
-dhx.setTheme("dark"); // apply "dark" theme to the default container
+dhx.setTheme("dark"); // apply the "dark" theme to the default container
 
 // or
-dhx.setTheme("dark", "cell-2"); // apply "dark" theme to Layout cell with "cell-2" ID
+dhx.setTheme("dark", "cell-2"); // apply the "dark" theme to the Layout cell with the "cell-2" ID
 ~~~
 
 ~~~html {13} title="Example 2"
@@ -65,7 +65,7 @@ const form_2 = new dhx.Form("container-2", config);
 form_1.validate();
 form_2.validate();
 
-dhx.setTheme("dark", "container-2"); // apply "dark" theme to container with "container-2" ID
+dhx.setTheme("dark", "container-2"); // apply the "dark" theme to the container with the "container-2" ID
 </script>
 ~~~
 
@@ -83,7 +83,7 @@ dhx.setTheme("dark", "container-2"); // apply "dark" theme to container with "co
     form_2.validate();
     
     const container = document.getElementById("container-2");
-    dhx.setTheme("dark", container); // apply "dark" theme to container specified via HTMLElement
+    dhx.setTheme("dark", container); //apply the "dark" theme to the container specified via an HTMLElement
 </script>
 ~~~
 
