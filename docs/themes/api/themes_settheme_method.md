@@ -24,16 +24,12 @@ description: You can explore the setTheme method in the documentation of the DHT
 
 #### Examples
 
-~~~js {22,25} title="Example 1"
+~~~js {15,18} title="Example 1"
 const layout = new dhx.Layout("layout", {
     type: "space",
     cols: [
-        {
-            id: "cell-1",
-        },
-        {
-            id: "cell-2",
-        },
+        { id: "cell-1" },
+        { id: "cell-2" },
     ]
 });
 
@@ -43,44 +39,31 @@ layout.getCell("cell-1").attach(form_1);
 const form_2 = new dhx.Form(null, config);
 layout.getCell("cell-2").attach(form_2);
 
-form_1.validate();
-form_2.validate();
-
-dhx.setTheme("dark"); // apply the "dark" theme to the default container
-
-// or
 dhx.setTheme("dark", "cell-2"); // apply the "dark" theme to the Layout cell with the "cell-2" ID
+
+//or
+dhx.setTheme("dark"); // apply the "dark" theme to the body
 ~~~
 
-~~~html {13} title="Example 2"
-<section class="dhx_sample-container">
-    <div id="container-1" style="height: 100%; width: 45%; padding: 10px;"></div>
-    <div id="container-2" style="height: 100%; width: 45%; padding: 10px;"></div>
-</section>
-
-<script>
-const form_1 = new dhx.Form("container-1", config);
-const form_2 = new dhx.Form("container-2", config);
-
-form_1.validate();
-form_2.validate();
-
-dhx.setTheme("dark", "container-2"); // apply the "dark" theme to the container with the "container-2" ID
-</script>
-~~~
-
-~~~html {14} title="Example 3"
-<section class="dhx_sample-container">
-    <div id="container-1" style="height: 100%; width: 45%; padding: 10px;"></div>
-    <div id="container-2" style="height: 100%; width: 45%; padding: 10px;"></div>
-</section>
+~~~html {8} title="Example 2"
+<div id="container-1"></div>
+<div id="container-2"></div>
 
 <script>
     const form_1 = new dhx.Form("container-1", config);
     const form_2 = new dhx.Form("container-2", config);
-    
-    form_1.validate();
-    form_2.validate();
+
+    dhx.setTheme("dark", "container-2");//apply the "dark" theme to the container with the "container-2" ID
+</script>
+~~~
+
+~~~html {9} title="Example 3"
+<div id="container-1"></div>
+<div id="container-2"></div>
+
+<script>
+    const form_1 = new dhx.Form("container-1", config);
+    const form_2 = new dhx.Form("container-2", config);
     
     const container = document.getElementById("container-2");
     dhx.setTheme("dark", container); //apply the "dark" theme to the container specified via an HTMLElement

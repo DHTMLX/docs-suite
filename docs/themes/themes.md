@@ -29,14 +29,14 @@ If the base Suite themes don't fit your project, you can configure your own colo
 
 To set the necessary theme, be it a Suite theme or a custom one, use one of the ways described below:
 
-- change the 'data' attribute for the chosen container:
+- change the 'data-dhx-theme' attribute for the chosen container:
 
 ~~~html title="index.html"
 <!-- component container -->
 <div data-dhx-theme="dark" style="height: 100%" id="chart"></div>
 ~~~
 
-- change the 'data' attribute for the root element:
+- change the 'data-dhx-theme' attribute for the root element:
 
 ~~~js title="index.js"
 // your code here
