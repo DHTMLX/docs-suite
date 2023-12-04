@@ -8,6 +8,18 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.2
+---------------
+
+Released on December 4, 2023
+
+### Fixes
+
+- Layout. Fix incorrect adding of content into a cell
+- Layout. Fix script errors that occurred when Layout was used in a React app
+- Grid/TreeGrid. Fix incorrect header height in case a grid is placed into a Layout cell
+- TreeGrid. Fix the problem with rendering an expanded TreeGrid during export to PDF and PNG
+- TreeGrid. Fix the issue with selection while using TreeGrid with Pagination
 
 Version 8.3.1
 ---------------
