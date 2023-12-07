@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.3
+---------------
+
+Released on December 7, 2023
+
+### Fixes
+
+- Grid/TreeGrid. Fix the issue with impossibility to unselect the row that was selected first
+- Grid/TreeGrid. Fix the issue with the beforeEditEnd/afterEditEnd events firing twice when the Esc or Enter key is pressed
+
+
 Version 8.3.2
 ---------------
 
