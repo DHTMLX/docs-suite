@@ -8,7 +8,13 @@ description: You can explore the eventHandlers config of DataView in the documen
 
 @short: Optional. Adds event handlers to the HTML elements of a custom template of DataView items
 
-@signature: {'eventHandlers?: {[eventName: string]: {[className: string]: (event: Event, id: string | number) => void | boolean; };};'}
+~~~js
+eventHandlers?: {
+    [eventName: string]: {
+        [className: string]: (events: Event, item: object) => void; 
+    };
+};
+~~~
 
 @params:
 The **eventHandlers** object includes a set of *key:value* pairs, where:
