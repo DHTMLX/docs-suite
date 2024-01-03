@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.3.4
 ---------------
 
-Released on January 3, 2024
+Released on January 4, 2024
 
 ### Fixes
 
@@ -19,11 +19,13 @@ Released on January 3, 2024
 - Colorpicker. Changing the value in the **pallete** mode does not change the value in **picker** mode
 - Form. Fix the issue related to the `destructor()` method in DatePicker control (popup is not hidden)
 - Form. Incorrect type for the `hide()` method
+- Form. The **number** input type cannot display the 0 number
 - Form. The `destructor()` method invokes an error, if the popup is open
 - Form. The colorpicker `value` property works incorrectly
 - Form. The timepicker value displayes incorrectly, if you specify the `value` property without a value
 - Grid/TreeGrid. Fix the issue related to the `autoHeight` property. The Grid takes hidden columns into account
 - Grid/TreeGrid. Fix the issue related to the `beforeSort` event. The sort direction stickes
+- Grid/TreeGrid. The footer summary calculates incorrectly in case of the empty value
 - Pagination. Fix the issue related to the `add()` method. Populating data with the `add()` method breaks the pagination
 - Pagination. The applied filter(s) does not refresh paginagion
 
