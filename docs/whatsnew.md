@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.5
+---------------
+
+Released on January 11, 2024
+
+- DataCollection/DataProxy. Fix the problem with the header Accept type while sending a request with the `load()` method
+- Form. Fix triggering of the `change` event during the call of `setValue()` for controls
+- Form. The `beforeChange` event doesn't block selection of a radio button, if there hasn't been a selected button in RadioGroup
+- Form. Fix the issue with a numeric filter validating an empty value in an input
+- Grid/TreeGrid. Closing editor in a numeric column cell by pressing the ESC key clears the cell's value
+
 Version 8.3.4
 ---------------
 
