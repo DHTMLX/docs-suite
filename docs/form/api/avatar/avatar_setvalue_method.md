@@ -14,13 +14,13 @@ description: You can explore the setValue method of the Avatar control of Form i
 - `value: object` - the value to be set 
 
 @example:
-form.getItem("avatar").setValue([
+form.getItem("avatar").setValue(
     {
         "id": "image",
         "src": "https://server.domain/upload/image.jpg",
         "status": "uploaded"
     }
-]);
+);
 
 @descr:
 
