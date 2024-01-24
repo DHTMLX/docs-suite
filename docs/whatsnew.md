@@ -8,10 +8,30 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.6
+---------------
+
+Released on January 24, 2024
+
+### Fixes
+
+- Form. Fix Button and ToggleGroup positioning in Layout as well as the functionality of their `width` and `full` properties
+- Form. Fix the size of the Toggle and ToggleGroup controls
+- Form. Fix the error that occurred after destructing an Avatar control
+- Form. Fix incorrect styling of nested controls in the Fieldset control when the `cols` arrangement is applied first 
+- Grid/TreeGrid. Optimizing the work of Grid/TreeGrid while loading a great number of spans 
+- Grid/TreeGrid. The `mark` property doesn't work when a hidden row is displayed by the `showRow()` call
+- Grid/TreeGrid. Fix a potential regular expression vulnerability in the input editor
+- Tree. Fix a typo in types.ts
+- TreeGrid. Applying grouping to the filtered data leads to losing the initial data
+
+
 Version 8.3.5
 ---------------
 
 Released on January 11, 2024
+
+### Fixes
 
 - DataCollection/DataProxy. Fix the problem with the header Accept type while sending a request with the `load()` method
 - Form. Fix triggering of the `change` event during the call of `setValue()` for controls
