@@ -12,16 +12,16 @@ description: You can explore the valueFormat config of Timepicker in the documen
 
 @example:
 const timepicker = new dhx.Timepicker("timepicker_container", {
-	value: "06:00",
-	timeFormat: 24,
-	valueFormat: "string"
+    value: "06:00",
+    timeFormat: 24,
+    valueFormat: "string"
 });
 
 // or
 const timepicker = new dhx.Timepicker("timepicker_container", {
-	value: {hour: 6, minute: 0, AM: true},
-	timeFormat: 12,
-	valueFormat: "timeObject"
+    value: {hour: 6, minute: 0, AM: true},
+    timeFormat: 12,
+    valueFormat: "timeObject"
 });
 
 @descr:

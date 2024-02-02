@@ -18,7 +18,7 @@ Return `false` to block expanding a cell; otherwise, `true`.
 
 @example:
 layout.events.on("beforeExpand", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

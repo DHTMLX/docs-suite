@@ -20,14 +20,14 @@ You can easily add an Input control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-			type: "input",
+    rows: [
+        {
+            type: "input",
             name: "input",
             label: "Name",
             icon: "dxi dxi-magnify",
             placeholder: "John Doe"           
-	 	} 
+         } 
     ]
 });
 ~~~

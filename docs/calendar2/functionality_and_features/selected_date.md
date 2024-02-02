@@ -103,7 +103,7 @@ var date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300
 
 **Related sample**: [Calendar. Getting selected date](https://snippet.dhtmlx.com/k2vrfqj0)
 
-If you work with a calendar in the [range mode](calendar/configuring.md#rangemode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
+If you work with a calendar in the [range mode](calendar/configuring.md#range-mode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
 
 ~~~js
 // for a range calendar as an array of Date values 

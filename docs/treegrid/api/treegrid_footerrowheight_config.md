@@ -14,10 +14,10 @@ description: You can explore the footerRowHeight config of TreeGrid in the docum
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	footerRowHeight: 50
+    columns: [
+        // columns config
+    ],
+    footerRowHeight: 50
 });
 
 @descr:

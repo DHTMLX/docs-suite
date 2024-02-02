@@ -7,9 +7,9 @@ title: Calendar Initialization
 To use DHTMLX Calendar in your application, you need to take the following simple steps:
 
 - [Download the DHTMLX Calendar package](https://dhtmlx.com/docs/products/dhtmlxCalendar/download.shtml) and unpack it into a folder of your project
-- [Include source files](#Include-source-files)
+- [Include source files](#include-source-files)
 - [Initialize Calendar](#initialize-calendar) with the object constructor
-- [Select initial date (optional)](#selectinitialdateoptional)
+- Select initial date (optional)
 
 ### Include source files
 
@@ -37,22 +37,22 @@ Basic Calendar initialization means creating a container. In this case you initi
 <html>
 
 <head>
-	<title>How to Start with dhtmlxCalendar</title>
-	<!-- includes JS/CSS files from Calendar package -->
-	<script type="text/javascript" src="../../codebase/calendar.js"></script>
-	<link rel="stylesheet" href="../../codebase/calendar.css">
+    <title>How to Start with dhtmlxCalendar</title>
+    <!-- includes JS/CSS files from Calendar package -->
+    <script type="text/javascript" src="../../codebase/calendar.js"></script>
+    <link rel="stylesheet" href="../../codebase/calendar.css">
 </head>
 
 <body>
-	<!-- component container -->
-	<div id="calendar_container"></div>
+    <!-- component container -->
+    <div id="calendar_container"></div>
 
-	<script>
-		const calendar = new dhx.Calendar("calendar_container", { //creating dhtmlxCalendar
-		        css: "dhx_widget--bordered", //configuration options
-	            mode: "calendar", //configuration options
-		});
-	</script>
+    <script>
+        const calendar = new dhx.Calendar("calendar_container", { //creating dhtmlxCalendar
+                css: "dhx_widget--bordered", //configuration options
+                mode: "calendar", //configuration options
+        });
+    </script>
 </body>
 
 </html>
@@ -64,8 +64,8 @@ Basic Calendar initialization means creating a container. In this case you initi
 
 You can specify what date should be selected in the calendar both before and after initialization of the component.  Please follow the links to read related articles. There are several options to do it:
 
-- via the [value configuration](configuring#initially-selected-date) option 
-- with the help of the [setValue](operating_calendar) method
+- via the **value configuration** option 
+- with the help of the **setValue** method
 
 ## Configuration properties
 

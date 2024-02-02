@@ -20,35 +20,35 @@ You can easily add a CheckboxGroup control during initialization of a form:
 const form = new dhx.Form("form_container", { 
     rows: [
         {
-			id: "checkboxGroup",
-			type: "checkboxGroup",
-			name: "checkboxGroup",
-			required: true,
-			label: "Checkbox Group",
-			labelWidth: 140,
-			labelPosition: "left",
-			helpMessage: "Help information",
-			padding: "50px",
-			value: {
-				first: true,
-			},
-			options: {
-				padding: "50px",
-				rows: [
-					{
-						id: "first",
-						type: "checkbox",
-						text: "Select 1",
-					},
-					{
-						id: "second",
-						type: "checkbox",
-						text: "Select 2",
-						checked: true
-					}
-				]
-			}
-		}
+            id: "checkboxGroup",
+            type: "checkboxGroup",
+            name: "checkboxGroup",
+            required: true,
+            label: "Checkbox Group",
+            labelWidth: 140,
+            labelPosition: "left",
+            helpMessage: "Help information",
+            padding: "50px",
+            value: {
+                first: true,
+            },
+            options: {
+                padding: "50px",
+                rows: [
+                    {
+                        id: "first",
+                        type: "checkbox",
+                        text: "Select 1",
+                    },
+                    {
+                        id: "second",
+                        type: "checkbox",
+                        text: "Select 2",
+                        checked: true
+                    }
+                ]
+            }
+        }
      ]
 });
 ~~~

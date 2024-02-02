@@ -10,35 +10,35 @@ description: You can explore the Properties of the Textarea control of Form in t
 
 ~~~js
 {
-	type: "textarea",
+    type: "textarea",
     name?: string,
-	id?: string,
-	value?: string,
-	
-	css?: string,
-	disabled?: boolean, // false by default
-	height?: string | number | "content", // "content" by default
-	hidden?: boolean, // false by default
-	padding?: string | number, // "8px" by default
+    id?: string,
+    value?: string,
+    
+    css?: string,
+    disabled?: boolean, // false by default
+    height?: string | number | "content", // "content" by default
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     required?: boolean, // false by default
-	validation?: string | (input: string | number) => boolean,
+    validation?: string | (input: string | number) => boolean,
     width?: string | number | "content", // "content" by default
 
-	maxlength?: number | string,
-	minlength?: number | string,
+    maxlength?: number | string,
+    minlength?: number | string,
     placeholder?: string, 
-	readOnly?: boolean, // false by default
-	resizable?: boolean, // false by default
+    readOnly?: boolean, // false by default
+    resizable?: boolean, // false by default
 
     hiddenLabel?: boolean, // false by default
-	label?: string,
-	labelPosition?: "left" | "top", // "top" by default
-	labelWidth?: string | number,
+    label?: string,
+    labelPosition?: "left" | "top", // "top" by default
+    labelWidth?: string | number,
 
-	helpMessage?: string,
-	preMessage?: string,
-	successMessage?: string,
-	errorMessage?: string,
+    helpMessage?: string,
+    preMessage?: string,
+    successMessage?: string,
+    errorMessage?: string,
 }
 ~~~
 
@@ -88,18 +88,7 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>validation</b></td>
-            <td>(optional) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:
-                <ul>
-                    <li>as a predefined string value:
-                        <ol>- "email" - validEmail</ol>
-                        <ol>- "integer" - validInteger</ol>
-                        <ol>- "numeric" - validNumeric</ol>
-                        <ol>- "alphanumeric" - validAplhaNumeric</ol>
-                        <ol>- "IPv4" - validIPv4</ol>
-                    </li>
-                    <li>as a <i>function</i> that defines a custom validation rule. It takes as a parameter the value typed in the input and returns <i>true</i>, if the entered value is valid.</li>
-                </ul>
-            </td>
+            <td>(optional) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:<ul><li>as a predefined string value:<ol>- "email" - validEmail</ol><ol>- "integer" - validInteger</ol><ol>- "numeric" - validNumeric</ol><ol>- "alphanumeric" - validAplhaNumeric</ol><ol>- "IPv4" - validIPv4</ol></li><li>as a <i>function</i> that defines a custom validation rule. It takes as a parameter the value typed in the input and returns <i>true</i>, if the entered value is valid.</li></ul></td>
         </tr>
         <tr>
             <td><b>width</b></td>

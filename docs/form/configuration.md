@@ -64,7 +64,7 @@ You can combine controls into groups by placing controls into rows and columns w
 const form = new dhx.Form("form_container", {
     css: "dhx_widget--bordered",
     cols: [
-		{
+        {
             align: "center",
             rows: [
                 {

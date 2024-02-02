@@ -26,12 +26,12 @@ description: You can explore the css config of DataView in the documentation of 
 </style>
 
 <script>
-	const dataview = new dhx.DataView("dataview_container", {
-    	itemsInRow: 2, 
-    	gap: 10,
-    	css: "custom dhx_widget--bordered",
-    	template
-	});
+    const dataview = new dhx.DataView("dataview_container", {
+        itemsInRow: 2, 
+        gap: 10,
+        css: "custom dhx_widget--bordered",
+        template
+    });
 </script>
 ~~~
 

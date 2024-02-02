@@ -34,7 +34,7 @@ object should contain a set of *key:value* pairs where *key* is either the name 
 
 ~~~js
 form.setValue({
-	"input_name":"Jack London", 
+    "input_name":"Jack London", 
     "slider_id":10
     // more name:value pairs
 });
@@ -114,13 +114,13 @@ In order to validate a form, you should deal with several aspects: required fiel
 You can easily specify that an input is obligatory to be treated by a user with the help of the **required** attribute. 
 
 ~~~js
-{	
-	type: "checkbox",
-	label: "I agree",
-	name: "agree",
-	required: true,
-	id: "agree",
-	value: "checkboxvalue"
+{    
+    type: "checkbox",
+    label: "I agree",
+    name: "agree",
+    required: true,
+    id: "agree",
+    value: "checkboxvalue"
 }
 ~~~
 
@@ -142,13 +142,13 @@ You just need to specify the minimum and/or maximum values allowed in the input 
 
 ~~~js
 {
-	type: "input",
-	inputType: "number",
-	label: "Age",
-	value: 18,
-	placeholder: "Enter your age",
-	min: 12,
-	max: 18
+    type: "input",
+    inputType: "number",
+    label: "Age",
+    value: 18,
+    placeholder: "Enter your age",
+    min: 12,
+    max: 18
 }
 ~~~
 
@@ -164,12 +164,12 @@ For that, you need to use the **minlength** and (or) **maxlength** attributes th
 
 ~~~js
 {
-	type: "input",
-	inputType: "text",
-	label: "Name",
-	placeholder: "John Doe",
-	minlength: 3,
-	maxlength: 10
+    type: "input",
+    inputType: "text",
+    label: "Name",
+    placeholder: "John Doe",
+    minlength: 3,
+    maxlength: 10
 }
 ~~~
 
@@ -189,11 +189,11 @@ Set a string with the name of the necessary rule as a value of the **validation*
 
 ~~~js
 {
-	type: "input",
-	inputType: "text",
-	label: "Email",
-	placeholder: "jd@mail.name",
-	validation: "email"
+    type: "input",
+    inputType: "text",
+    label: "Email",
+    placeholder: "jd@mail.name",
+    validation: "email"
 }
 ~~~
 
@@ -201,13 +201,13 @@ There is also a possibility to specify *a custom validation function* by setting
 
 ~~~js title="Validation for Input control"
 {
-	type: "input",
-	inputType: "text",
-	label: "Name",
-	placeholder: "John Doe",
-	validation: function(value) {
-		return value && value.length > 4;
-	}	
+    type: "input",
+    inputType: "text",
+    label: "Name",
+    placeholder: "John Doe",
+    validation: function(value) {
+        return value && value.length > 4;
+    }    
 }
 ~~~
 
@@ -261,19 +261,19 @@ If the <b>inputType</b> attribute is set to "number", the **validation** attribu
 While specifying validation rules for form fields, you can also provide a set of messages that will notify the end user, whether he/she is filling the form in correctly. There are three types of messages available:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>preMessage</b></td>
-			<td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
-		</tr>
-		<tr>
-			<td><b>successMessage</b></td>
-			<td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
-		</tr>
-		<tr>
-			<td><b>errorMessage</b></td>
-			<td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
-		</tr>
+            <td><b>preMessage</b></td>
+            <td>(<i>string</i>) a message that contains instructions for interacting with the control</td>
+        </tr>
+        <tr>
+            <td><b>successMessage</b></td>
+            <td>(<i>string</i>) a message that appears in case of successful validation of the control value</td>
+        </tr>
+        <tr>
+            <td><b>errorMessage</b></td>
+            <td>(<i>string</i>) a message that appears in case of error during validation of the control value</td>
+        </tr>
     </tbody>
 </table>
 
@@ -281,12 +281,12 @@ For example, a configuration object for an input with email may look as in:
 
 ~~~js
 {
-	type: "input",
-	label: "Email",
-	placeholder: "jd@mail.name",
-	errorMessage: "Invalid email",
-	successMessage: "Valid email",
-	validation: "email"
+    type: "input",
+    label: "Email",
+    placeholder: "jd@mail.name",
+    errorMessage: "Invalid email",
+    successMessage: "Valid email",
+    validation: "email"
 }
 ~~~
 
@@ -310,19 +310,19 @@ The method should return *true*, if all the fields are filled as required, or *f
 To send a form to the server, make use of the [](form/api/form_send_method.md) method. It takes three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>url</b></td>
-			<td>(<i>string</i>) the URL of the server</td>
-		</tr>
-		<tr>
-			<td><b>method</b></td>
-			<td>(<i>string</i>) the request type, "POST" by default</td>
-		</tr>
-		<tr>
-			<td><b>asFormData</b></td>
-			<td>(<i>boolean</i>) optional, defines whether values of Form controls should be sent as Form Data</td>
-		</tr>
+            <td><b>url</b></td>
+            <td>(<i>string</i>) the URL of the server</td>
+        </tr>
+        <tr>
+            <td><b>method</b></td>
+            <td>(<i>string</i>) the request type, "POST" by default</td>
+        </tr>
+        <tr>
+            <td><b>asFormData</b></td>
+            <td>(<i>boolean</i>) optional, defines whether values of Form controls should be sent as Form Data</td>
+        </tr>
     </tbody>
 </table>
 

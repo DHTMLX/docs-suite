@@ -13,30 +13,30 @@ The process of initializing a chart is similar to creating a grid or a toolbar.
 
 ~~~js
 var chart = new dhx.Chart(null, { 
-	type: "pie", //the type of the chart is pie
-	series: [ 
-		//an array of series objects
-	    {
-    		paddings: 170, // paddings between the chart and layout borders
-    		useLines: true, // shows lines between chart sectors and labels
-    		subType: "percentOnly", // puts % on the chart
+    type: "pie", //the type of the chart is pie
+    series: [ 
+        //an array of series objects
+        {
+            paddings: 170, // paddings between the chart and layout borders
+            useLines: true, // shows lines between chart sectors and labels
+            subType: "percentOnly", // puts % on the chart
             // for data communication: 
             // a chart value takes the value from a dataset (see step 7)
-			value: "value", 			
-   			color: "color",
+            value: "value",             
+               color: "color",
             // sets templates "Premium"/"Default Users" 
             // for labels of data items rendered on a scale 
-    		text: "text", 
-			stroke: "#FFFFFF",
-    		strokeWidth: 2,
-    		tooltip: true, //shows values of data items in tooltips
+            text: "text", 
+            stroke: "#FFFFFF",
+            strokeWidth: 2,
+            tooltip: true, //shows values of data items in tooltips
             // the template function takes the "point" array as an argument 
-    		tooltipTemplate: function(point) { 			
-				//The array elements are value and text
-       			return point[0] + (point[0] > 1 ? " Users" : " User");
+            tooltipTemplate: function(point) {             
+                //The array elements are value and text
+                   return point[0] + (point[0] > 1 ? " Users" : " User");
             }
-		}
-	]
+        }
+    ]
 });
 ~~~
 

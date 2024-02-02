@@ -14,11 +14,11 @@ description: You can explore the autoHeight config of TreeGrid in the documentat
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	autoHeight: true,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    autoHeight: true,
+    data: dataset
 });
 
 @descr:

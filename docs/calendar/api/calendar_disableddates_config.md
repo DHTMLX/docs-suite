@@ -19,18 +19,18 @@ and must return a boolean value to define whether a passed date should be blocke
 
 @example:
 const calendar = new dhx.Calendar("calendar_container", {
-	disabledDates: function(date) {
-		const disabled = {
-			0: true,
-			1: true,
-			2: false,
-			3: false,
-			4: false,
-			5: false,
-			6: true
-		}
-		return disabled[date.getDay()];
-	}
+    disabledDates: function(date) {
+        const disabled = {
+            0: true,
+            1: true,
+            2: false,
+            3: false,
+            4: false,
+            5: false,
+            6: true
+        }
+        return disabled[date.getDay()];
+    }
 });
 
 

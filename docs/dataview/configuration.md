@@ -25,35 +25,35 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 ### Default shortcut keys
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>ArrowUp</b></td>
-			<td>moves focus to the previous vertical item</td>
-		</tr>
+            <td><b>ArrowUp</b></td>
+            <td>moves focus to the previous vertical item</td>
+        </tr>
         <tr>
-			<td><b>ArrowDown</b></td>
-			<td>moves focus to the next vertical item</td>
-		</tr>
-		<tr>
-			<td><b>ArrowLeft</b></td>
-			<td>moves focus to the previous horizontal item</td>
-		</tr>
+            <td><b>ArrowDown</b></td>
+            <td>moves focus to the next vertical item</td>
+        </tr>
         <tr>
-			<td><b>ArrowRight</b></td>
-			<td>moves focus to the next horizontal item</td>
-		</tr>
+            <td><b>ArrowLeft</b></td>
+            <td>moves focus to the previous horizontal item</td>
+        </tr>
         <tr>
-			<td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
-			<td>adds selection to an item in focus</td>
-		</tr>
-		<tr>
-			<td><b>Enter</b></td>
-			<td>adds selection to an item in focus, activates editor for the selected item (when the "editable" property is enabled)</td>
-		</tr>
+            <td><b>ArrowRight</b></td>
+            <td>moves focus to the next horizontal item</td>
+        </tr>
         <tr>
-			<td><b>Ctrl+A</b></td>
-			<td>selects all items at once (when the "multiselection" property is enabled)</td>
-		</tr>
+            <td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
+            <td>adds selection to an item in focus</td>
+        </tr>
+        <tr>
+            <td><b>Enter</b></td>
+            <td>adds selection to an item in focus, activates editor for the selected item (when the "editable" property is enabled)</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+A</b></td>
+            <td>selects all items at once (when the "multiselection" property is enabled)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -244,28 +244,28 @@ Starting from v7.0, it is possible to assign event handlers to the HTML elements
 
 ~~~js {12-23}
 function template(item) {
-	let template = "<div class='item_wrap'>";
-	template += "<img class='image' src=" + "../images/" + item.thumbnailName + " />";
-	template += "<h2 class='title'>" + item.value + "</h2>";
-	template += "<p class='description'>" + item.shortDescription + "</p>";
-	template += "</div>";
-	return template;
+    let template = "<div class='item_wrap'>";
+    template += "<img class='image' src=" + "../images/" + item.thumbnailName + " />";
+    template += "<h2 class='title'>" + item.value + "</h2>";
+    template += "<p class='description'>" + item.shortDescription + "</p>";
+    template += "</div>";
+    return template;
 }
 
 const dataview = new dhx.DataView("dataview_container", {
-	template: template,
-	eventHandlers: {
-		onclick: {
-			item_wrap: function(event, id) {
-				console.log("You clicked on " + event.target.tagName);
-			},
-		},
-		onmouseover: {
-			item_wrap: function(event, id) {
-				console.log(dataview.data.getItem(id).short);
-			},
-		}
-	}
+    template: template,
+    eventHandlers: {
+        onclick: {
+            item_wrap: function(event, id) {
+                console.log("You clicked on " + event.target.tagName);
+            },
+        },
+        onmouseover: {
+            item_wrap: function(event, id) {
+                console.log(dataview.data.getItem(id).short);
+            },
+        }
+    }
 });
 ~~~
 

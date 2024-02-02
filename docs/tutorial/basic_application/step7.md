@@ -12,20 +12,20 @@ To do that, we'll create a  <b>getCountUsers()</b> function given below:
 ~~~js
 function getCountUsers(){     
     vipUser = grid.data.reduce(function(acc, item) {    
-    	return item.vip ? acc + 1 : acc;           
+        return item.vip ? acc + 1 : acc;           
     }, 0);
     defUser = grid.data.getLength() - vipUser; 
 
     var pieData = []; 
 
     if (vipUser > 0) { 
-    	pieData.push( { value: vipUser, color: "#394E79", 
-        	text: "Premium Users" })
-    	}
+        pieData.push( { value: vipUser, color: "#394E79", 
+            text: "Premium Users" })
+        }
     if  (defUser > 0) {
-    	pieData.push( { value: defUser, color: "#5E83BA", 
+        pieData.push( { value: defUser, color: "#5E83BA", 
             text: "Default Users" })
-    	}            
+        }            
     return pieData; //return the processed data for the chart
 };
 ~~~
@@ -36,7 +36,7 @@ First, we count the number of VIP users through the <b>reduce()</b> method of Da
 
 ~~~js
 vipUser = grid.data.reduce(function(acc, item) {    
-	return item.vip ? acc + 1 : acc;           
+    return item.vip ? acc + 1 : acc;           
 }, 0);
 ~~~
 
@@ -52,11 +52,11 @@ Finally, we create an array to add data about the number of default and vip user
 var pieData = []; // create an array
 
 if (vipUser > 0) { 
-	pieData.push( { value: vipUser, color: "#394E79", 
-    	text: "Premium Users" })
-	}
+    pieData.push( { value: vipUser, color: "#394E79", 
+        text: "Premium Users" })
+    }
 if  (defUser > 0) {
-	pieData.push( { value: defUser, color: "#5E83BA", 
+    pieData.push( { value: defUser, color: "#5E83BA", 
         text: "Default Users" })
 };           
 ~~~
@@ -71,7 +71,7 @@ To display the data loaded in the chart, we will use the <b>Load</b> event of da
 
 ~~~js
 grid.data.events.on("Load", function(){
-	chart.data.parse(getCountUsers());
+    chart.data.parse(getCountUsers());
 });
 ~~~
 
@@ -79,7 +79,7 @@ When data is changed in the grid, we should update the chart data as well. For t
 
 ~~~js
 grid.data.events.on("Change", function(id,status,updatedItem){
-	chart.data.parse(getCountUsers());
+    chart.data.parse(getCountUsers());
 });
 ~~~
 

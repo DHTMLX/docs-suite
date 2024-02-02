@@ -66,19 +66,19 @@ The dates, for which the function returns *true*, are dimmed in the calendar.
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
-	disabledDates: function(date) {
-		const disabled = {
-			0: true,
-			1: true,
-			2: false,
-			3: false,
-			4: false,
-			5: false,
-			6: true
-		}
-		return disabled[date.getDay()];
-	},
-	css: "dhx_widget--bordered"
+    disabledDates: function(date) {
+        const disabled = {
+            0: true,
+            1: true,
+            2: false,
+            3: false,
+            4: false,
+            5: false,
+            6: true
+        }
+        return disabled[date.getDay()];
+    },
+    css: "dhx_widget--bordered"
 });
 ~~~
 
@@ -106,12 +106,12 @@ You can highlight certain dates in the calendar. Set the [](calendar/api/calenda
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
-	mark: function(date) {
-		if (date.getDay() === 6) {
-			return "highlight-date";
-		}
-	},
-	css: "dhx_widget--bordered"
+    mark: function(date) {
+        if (date.getDay() === 6) {
+            return "highlight-date";
+        }
+    },
+    css: "dhx_widget--bordered"
 });
 ~~~
 
@@ -119,9 +119,9 @@ Where "highlight-date" is a CSS class like this:
 
 ~~~html
 <style>
-	.highlight-date {
-		color: #fff;
-	}
+    .highlight-date {
+        color: #fff;
+    }
 </style>
 ~~~
 
@@ -212,8 +212,8 @@ You have a possibility to create a calendar in the range mode that allows you to
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
-	css: "dhx_widget--bordered",
-	range: true,
+    css: "dhx_widget--bordered",
+    range: true,
     value: ["25/06/20", "07/07/20"]
 });
 ~~~
@@ -243,7 +243,7 @@ You can change it to the 12-hour format via the [](calendar/api/calendar_timefor
 
 ~~~js
 const calendar = new dhx.Calendar("calendar_container", {
-	timePicker: true,
+    timePicker: true,
     timeFormat: 12 // the 12-hour format for the timepicker
 });
 ~~~

@@ -12,7 +12,7 @@ The API of DHTMLX TreeGrid allows setting configuration of columns, getting an o
 
 ### Setting columns configuration
 
-You can specify the configuration of TreeGrid columns on the fly via the [](treegrid/api/treegrid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
+You can specify the configuration of TreeGrid columns on the fly via the [`setColumns`](treegrid/api/treegrid_setcolumns_method.md) method. It takes an array with columns objects as a parameter.
 
 ~~~js
 treegrid.setColumns([
@@ -47,14 +47,14 @@ const rect = treegrid.getCellRect("1","c");
 The return object includes the following attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>x</b></td>
-			<td>(<i>number</i>) the X coordinate of a cell</td>
-		</tr>
-		<tr>
-			<td><b>y</b></td>
-			<td>(<i>number</i>) the Y coordinate of a cell</td>
+            <td><b>x</b></td>
+            <td>(<i>number</i>) the X coordinate of a cell</td>
+        </tr>
+        <tr>
+            <td><b>y</b></td>
+        	<td>(<i>number</i>) the Y coordinate of a cell</td>
 		</tr>
 		<tr>
 			<td><b>height</b></td>
@@ -80,7 +80,7 @@ treegrid.hideColumn(col);
 
 **Related sample**: [TreeGrid. Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
 
-Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
+Since the object of a column has the [hidden](treegrid/configuration.md#hidden-columns) property, the `showColumn()` method changes the value of the `hidden` property to *false* while the `hideColumn()` method changes the value of the property to *true*.
 
 ### Checking visibility of a column
 
@@ -261,7 +261,7 @@ To make data in TreeGrid well-structured and easily understood you can group dat
 
 #### Grouping by a column
 
-To group the content of a treegrid by values of the specified column, pass the id of the column as a parameter to the **groupBy()** method:
+To group the content of a treegrid by values of the specified column, pass the id of the column as a parameter to the `groupBy()` method:
 
 - **id** - (*string, number*) the id of a column
 
@@ -273,7 +273,7 @@ treegrid.groupBy("age");
 
 #### Grouping by the result of calculation
 
-You can pass a function with a rule of grouping data in the treegrid as a parameter to the **groupBy()** method. The function returns the name of a group and takes one parameter: 
+You can pass a function with a rule of grouping data in the treegrid as a parameter to the `groupBy()` method. The function returns the name of a group and takes one parameter: 
 
 - **item** - a data item
 
@@ -297,36 +297,17 @@ If necessary, you can set a template to the title of the group via the [](treegr
 
 ### Filtering data
 
-You can filter grid data by the specified criteria with the help of the **filter()** method of data collection. The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the `filter()` method of data collection. The method takes as a parameter an object with the properties described below:
 
 <table>
 	<tbody>
         <tr>
 			<td><b>rule</b></td>
-			<td>(<i>function | object</i>) the filtering criteria. It can be:
-			<ul>
-			<li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li>
-				or:
-				<li>an object with the following attributes:<br/>
-					- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>
-					- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>
-					- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:
-					<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol>
-					<ol>- <b>match</b> - a pattern to match </ol>
-					<ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol>
-				</li>
-			</ul></td>
+			<td>(<i>function | object</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol></li></ul></td>
 		</tr>
         <tr>
 			<td><b>config</b></td>
-			<td>(<i>object</i>) optional, an object with the following properties:
-				<ul><li><b>type</b> (<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</li>
-				<li><b>level</b> (<i>number</i>) optional, the level the filtering will be applied to</li>
-				<li><b>add</b> (<i>boolean</i>) optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li>
-				<li><b>id</b> (<i>string</i>) optional, the id of the filter</li>
-				<li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li>
-				</ul>
-				</td>
+			<td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>type</b> (<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</li><li><b>level</b> (<i>number</i>) optional, the level the filtering will be applied to</li><li><b>add</b> (<i>boolean</i>) optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>id</b> (<i>string</i>) optional, the id of the filter</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
 		</tr>
     </tbody>
 </table>
@@ -359,7 +340,7 @@ treegrid.data.filter({
 
 ### Sorting data
 
-It is possible to sort data in the grid via the **sort()** method of data collection. The method takes an object with the following attributes:
+It is possible to sort data in the grid via the `sort()` method of data collection. The method takes an object with the following attributes:
 
 <table>
 	<tbody>
@@ -467,16 +448,17 @@ treegrid.editEnd(); // the edited data will be saved
 treegrid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
-
+:::note
+The [](treegrid/api/treegrid_editend_method.md) method does not work if [the type of the column editor](treegrid/configuration.md#types-of-column-editor) is defined as **checkbox**.
+:::
 
 ### Exporting data
 
 You can easily export data of TreeGrid into the Excel, CSV, PDF or PNG format.
 
-#### Exporting data to Excel 
+#### Exporting data to Excel
 
-DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the [xlsx()](treegrid/api/export/treegrid_xlsx_method.md) method of the export module. The method takes an object with export settings as a parameter.
+DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Excel file by calling the [`xlsx()`](treegrid/api/export/treegrid_xlsx_method.md) method of the export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.xlsx({
@@ -488,7 +470,7 @@ treegrid.export.xlsx({
 
 #### Exporting data to CSV
 
-You can export data from TreeGrid to the CSV format with the [csv()](treegrid/api/export/treegrid_csv_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+You can export data from TreeGrid to the CSV format with the [`csv()`](treegrid/api/export/treegrid_csv_method.md) method of the Export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.csv({
@@ -504,7 +486,7 @@ The **csv()** method returns a CSV string with TreeGrid data.
 
 #### Exporting data to PDF
 
-The [pdf()](treegrid/api/export/treegrid_pdf_method.md) method of the Export module allows you to export data from TreeGrid into a PDF file. The method takes an object with export settings as a parameter.
+The [`pdf()`](treegrid/api/export/treegrid_pdf_method.md) method of the Export module allows you to export data from TreeGrid into a PDF file. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.pdf({
@@ -519,7 +501,7 @@ treegrid.export.pdf({
 
 #### Exporting data to PNG
 
-The [png()](treegrid/api/export/treegrid_png_method.md) method of the Export module allows you to export data from TreeGrid into a PNG file. The method takes an object with export settings as a parameter.
+The [`png()`](treegrid/api/export/treegrid_png_method.md) method of the Export module allows you to export data from TreeGrid into a PNG file. The method takes an object with export settings as a parameter.
 
 ~~~js
 treegrid.export.pdf({

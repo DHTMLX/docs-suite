@@ -31,9 +31,9 @@ The returned object of the **Spacer** control looks like:
 
 ~~~js
 {
-	height: "content",
-	padding: 0,
-	width: "content"
+    height: "content",
+    padding: 0,
+    width: "content"
 }
 ~~~
 

@@ -14,7 +14,7 @@ description: You can explore the timeFormat config of Timepicker in the document
 
 @example:
 const timepicker = new dhx.Timepicker("timepicker_container", {
-	timeFormat: 12
+    timeFormat: 12
 });
 
 @descr:

@@ -47,23 +47,23 @@ const rect = grid.getCellRect("1","c");
 The return object includes the following attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>x</b></td>
-			<td>(<i>number</i>) the X coordinate of a cell</td>
-		</tr>
-		<tr>
-			<td><b>y</b></td>
-			<td>(<i>number</i>) the Y coordinate of a cell</td>
-		</tr>
-		<tr>
-			<td><b>height</b></td>
-			<td>(<i>number</i>) the height of a cell</td>
-		</tr>
-		<tr>
-			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a cell</td>
-		</tr>
+            <td><b>x</b></td>
+            <td>(<i>number</i>) the X coordinate of a cell</td>
+        </tr>
+        <tr>
+            <td><b>y</b></td>
+            <td>(<i>number</i>) the Y coordinate of a cell</td>
+        </tr>
+        <tr>
+            <td><b>height</b></td>
+            <td>(<i>number</i>) the height of a cell</td>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>(<i>number</i>) the width of a cell</td>
+        </tr>
     </tbody>
 </table>
 
@@ -80,7 +80,7 @@ grid.hideColumn(col);
 
 **Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
 
-Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the **showColumn()** method changes the value of the **hidden** property to *false* while the **hideColumn()** method changes the value of the property to *true*.
+Since the object of a column has the [hidden](grid/configuration.md#hidden-columns) property, the `showColumn()` method changes the value of the `hidden` property to *false* while the `hideColumn()` method changes the value of the property to *true*.
 
 ### Checking visibility of a column
 
@@ -128,7 +128,7 @@ You may add a new row into the grid by using the [](../data_collection/api/datac
 
 ~~~js
 grid.data.add({
-	"country": "Estonia",
+    "country": "Estonia",
     "population": "1326535",
     "yearlyChange": "0.0070",
     "netChange": "3782",
@@ -194,7 +194,7 @@ grid.isRowHidden("1"); // -> true|false
 
 ## Adding/removing spans
 
-You can manipulate columns and rows spans inside the grid with the help of the corresponding API methods: **addSpan()**, **removeSpan()** and **getSpan()**.
+You can manipulate columns and rows spans inside the grid with the help of the corresponding API methods: `addSpan()`, `removeSpan()` and `getSpan()`.
 
 ### Adding spans
 
@@ -212,31 +212,31 @@ grid.addSpan({
 These are possible fields of a span object:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string|number</i>) mandatory, the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>column</b></td>
-			<td>(<i>string|number</i>) mandatory, the id of a column</td>
-		</tr>
-		<tr>
-			<td><b>rowspan</b></td>
-			<td>(<i>number</i>) optional, the number of rows in a span</td>
-		</tr>
-		<tr>
-			<td><b>colspan</b></td>
-			<td>(<i>number</i>) optional, the number of columns in a span</td>
-		</tr>
-		<tr>
-			<td><b>text</b></td>
-			<td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
-		</tr>
-		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string|number</i>) mandatory, the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>column</b></td>
+            <td>(<i>string|number</i>) mandatory, the id of a column</td>
+        </tr>
+        <tr>
+            <td><b>rowspan</b></td>
+            <td>(<i>number</i>) optional, the number of rows in a span</td>
+        </tr>
+        <tr>
+            <td><b>colspan</b></td>
+            <td>(<i>number</i>) optional, the number of columns in a span</td>
+        </tr>
+        <tr>
+            <td><b>text</b></td>
+            <td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
+        </tr>
     </tbody>
 </table>
 
@@ -263,40 +263,18 @@ grid.removeSpan("10","a");
 
 ### Filtering data
 
-You can filter grid data by the specified criteria with the help of the **filter()** method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>rule</b></td>
-			<td>(<i>object|function</i>) the filtering criteria. It can be:
-			<ul>
-				<li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>
-				or:
-				<li>an object with the following attributes:<br/>
-					- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>
-					- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>
-					- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:
-					<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol>
-					<ol>- <b>match</b> - a pattern to match </ol>
-					<ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol>
-				</li>
-			</ul></td>
-		</tr>
+            <td><b>rule</b></td>
+            <td>(<i>object|function</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item (e.g. a row) and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol></li></ul></td>
+        </tr>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) optional, an object with the following properties:
-				<ul>
-					<li>
-						<b>id</b> (<i>string</i>) - optional, the id of the filter
-					</li>
-					<li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li>
-					<li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li>
-					<li><b>smartFilter</b> (<i>boolean</i>) defines whether a filtering rule will be applied after adding and editing items of the collection. <b>Deprecated since v8.2</b> (check <a href="migration.md/#81--82">Migration to newer versions</a>) and replaced with the <b>permanent</b> property (see below)
-					</li>
-				</ul>
-				</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> (<i>string</i>) - optional, the id of the filter</li><li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li><li><b>smartFilter</b> (<i>boolean</i>) defines whether a filtering rule will be applied after adding and editing items of the collection. <b>Deprecated since v8.2</b> (check <a href="migration.md/#81--82">Migration to newer versions</a>) and replaced with the <b>permanent</b> property (see below)</li></ul></td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -330,43 +308,32 @@ grid.data.filter({
 
 ### Sorting data
 
-It is possible to sort data in the grid via the **sort()** method of [DataCollection](data_collection.md). The method takes two parameters:
+It is possible to sort data in the grid via the `sort()` method of [DataCollection](data_collection.md). The method takes two parameters:
 
 <table>
-	<tbody>
-		<tr>
-			<td><b>rule</b></td>
-			<td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:
-			<ul>
-				<li><b>by</b> (<i>string | number</i>) the id of a column</li>
-				<li><b>dir</b> (<i>string</i>) the direction of sorting "asc" or "desc"</li>
-				<li><b>as</b> (<i>function</i>) a function that specifies the type to sort data as</li>
-				<li><b>rule</b> (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li>
-			</ul>
-			</td>
-		</tr>
-		<tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) defines the parameter of sorting. It takes one attribute:
-			<ul>
-				<li><b>smartSorting</b> (<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set</li>
-			</ul>
-			</td>
-		</tr>
+    <tbody>
+        <tr>
+            <td><b>rule</b></td>
+            <td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:<ul><li><b>by</b> (<i>string | number</i>) the id of a column</li><li><b>dir</b> (<i>string</i>) the direction of sorting "asc" or "desc"</li><li><b>as</b> (<i>function</i>) a function that specifies the type to sort data as</li><li><b>rule</b> (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) defines the parameter of sorting. It takes one attribute:<ul><li><b>smartSorting</b> (<i>boolean</i>) specifies whether a sorting rule should be applied each time after changing the data set</li></ul></td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~js
 grid.data.sort({
-	by:"a",
-	dir:"desc",
+    by:"a",
+    dir:"desc",
     as: function(item){
-    	return item.toUpperCase(); 
+        return item.toUpperCase(); 
     },
-	{
-		smartSorting: true
-	}
+    {
+        smartSorting: true
+    }
 });
 ~~~
 
@@ -384,7 +351,7 @@ You can also specify the **rule** attribute in a passed object instead of the de
 
 ~~~js
 grid.data.sort({
-	rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
+    rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
 });
 ~~~
 
@@ -393,15 +360,15 @@ grid.data.sort({
 To get the current state of sorting data in Grid, use the [](grid/api/grid_getsortingstate_method.md) method. The method returns an object with two attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>dir</b></td>
-			<td>(<i>string</i>) the sorting direction (desc, asc)</td>
-		</tr>
-		<tr>
-			<td><b>by</b></td>
-			<td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
-		</tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the sorting direction (desc, asc)</td>
+        </tr>
+        <tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -418,15 +385,15 @@ const state = grid.getSortingState();
 You can easily edit the desired cell of a grid with the help of the [](grid/api/grid_editcell_method.md) method. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string, number</i>) the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>col</b></td>
-			<td>(<i>string, number</i>) the id of a column</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string, number</i>) the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>string, number</i>) the id of a column</td>
+        </tr>
     </tbody>
 </table>
 
@@ -446,7 +413,9 @@ grid.editEnd(); // the edited data will be saved
 grid.editEnd(true); // the edited data won't be saved
 ~~~
 
-{{note The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#types-of-column-editor) is defined as **checkbox**.}}
+:::note
+The [](grid/api/grid_editend_method.md) method does not work if [the type of the column editor](grid/configuration.md#types-of-column-editor) is defined as **checkbox**.
+:::
 
 ### Exporting data
 
@@ -454,12 +423,12 @@ You can easily export data of Grid into the Excel, CSV, PDF, or PNG format.
 
 #### Exporting data to Excel
 
-DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [xlsx()](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
+DHTMLX Grid provides the possibility to export data from Grid into an Excel file by calling the [`xlsx()`](grid/api/export/grid_xlsx_method.md) method of the Export module. The method takes an object with export settings as a parameter.
 
 ~~~js
 grid.export.xlsx({
-	name:"grid_data",
-	url: "//export.dhtmlx.com/excel"
+    name:"grid_data",
+    url: "//export.dhtmlx.com/excel"
 });
 ~~~
 
@@ -467,11 +436,11 @@ grid.export.xlsx({
 
 #### Exporting data to CSV
 
-You can export data from Grid to the CSV format with the [csv()](grid/api/export/grid_csv_method.md) method of the Export module. 
+You can export data from Grid to the CSV format with the [`csv()`](grid/api/export/grid_csv_method.md) method of the Export module. 
 
 ~~~js
 grid.export.csv({
-	name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
+    name:"grid_data", // grid data will be exported to a CSV file named "grid_data"
     rowDelimiter: "\t", // the tab delimiter will be used to separate rows
     columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
 });
@@ -479,11 +448,11 @@ grid.export.csv({
 
 **Related sample**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-The **csv()** method returns a CSV string with Grid data.
+The `csv()` method returns a CSV string with Grid data.
 
 #### Exporting data to PDF
 
-The [pdf()](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
+The [`pdf()`](grid/api/export/grid_pdf_method.md) method of the Export module allows you to export data from Grid into a PDF file. The method takes an object with export settings as a parameter.
 
 ~~~js
 grid.export.pdf({
@@ -498,7 +467,7 @@ grid.export.pdf({
 
 #### Exporting data to PNG
 
-The [png()](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
+The [`png()`](grid/api/export/grid_png_method.md) method of the Export module allows you to export data from Grid into a PNG file. The method takes an object with export settings as a parameter.
 
 ~~~js
 grid.export.png({
@@ -539,7 +508,6 @@ const state = grid.getScrollState(); // -> {x:0,y:0}
 ~~~
 
 It returns an object with x,y coordinates of a position the grid has been scrolled to.
-
 
 ## Repainting Grid
 

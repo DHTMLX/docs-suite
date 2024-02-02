@@ -16,14 +16,14 @@ A new SelectButton can be created with the help of the **add()** method of Tree 
 
 ~~~js
 ribbon.data.add({
-	id:"select",
-	type: "selectButton",
+    id:"select",
+    type: "selectButton",
     value: "jpeg",
     size: "small",
     count: 20,
     items: [
-    	{
-        	value: "jpeg",
+        {
+            value: "jpeg",
             hotkey: "alt+1"
         },
         {
@@ -34,7 +34,7 @@ ribbon.data.add({
             value: "png",
             hotkey: "alt+3"
         }
-	]
+    ]
 });
 ~~~
 

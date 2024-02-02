@@ -15,7 +15,7 @@ A Title control can be added to a ribbon with the help of the **add()** method o
 ~~~js
 ribbon.data.add({
     type: "title",
-	value: "APP NAME"
+    value: "APP NAME"
 });
 ~~~
 

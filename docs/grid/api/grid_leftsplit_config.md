@@ -12,11 +12,11 @@ description: You can explore the leftSplit config of Grid in the documentation o
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	leftSplit:2,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    leftSplit:2,
+    data: dataset
 });
 
 @descr:

@@ -12,7 +12,7 @@ description: You can explore the html config of Window in the documentation of t
 
 @example:
 const dhxWindow = new dhx.Window({
-	html:"<h1>Header</h1><p>paragraph</p>"
+    html:"<h1>Header</h1><p>paragraph</p>"
 });
 dhxWindow.show();
 

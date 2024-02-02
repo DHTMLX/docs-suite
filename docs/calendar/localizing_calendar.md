@@ -16,17 +16,17 @@ The default locale for Calendar looks like this:
 
 ~~~js
 const en = {
-	// short names of months
-	monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
+    // short names of months
+    monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", 
                  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     // full names of months
-	months: ["January", "February", "March", "April", "May", "June", 
+    months: ["January", "February", "March", "April", "May", "June", 
             "July", "August", "September", "October", "November", "December"],
     // short names of days
-	daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
     // full names of days
-	days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", 
-    			"Friday", "Saturday"]
+    days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", 
+                "Friday", "Saturday"]
 };
 ~~~
 
@@ -38,17 +38,17 @@ To use a different locale, your need to:
 
 ~~~js
 const de = {
-	// short names of months
-	monthsShort: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", 
-    			 "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+    // short names of months
+    monthsShort: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", 
+                 "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
     // full names of months             
-	months: ["Januar", "Februar", "März", "April", "Mai", "Juni", 
-    		"Juli", "August", "September", "Oktober", "November", "Dezember"],
+    months: ["Januar", "Februar", "März", "April", "Mai", "Juni", 
+            "Juli", "August", "September", "Oktober", "November", "Dezember"],
     // short names of days
-	daysShort: ["Son", "Mon", "Die", "Mit", "Don", "Fre", "Sam"],
+    daysShort: ["Son", "Mon", "Die", "Mit", "Don", "Fre", "Sam"],
     // full names of days
-	days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", 
-    			"Freitag", "Samstag"]
+    days: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", 
+                "Freitag", "Samstag"]
 };
 ~~~
 

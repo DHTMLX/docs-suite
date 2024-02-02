@@ -11,7 +11,7 @@ description: You can explore the afterChangeProperties event of the Toggle Group
 @signature: {'afterChangeProperties: (properties: object, id?: string) => void;'}
 
 @params:
-- `properties: object` - an object with [configuration attributes](form/api/togglegroup/toggle_getproperties_method.md) of the ToggleGroup or its separate options and their new values
+- `properties: object` - an object with configuration attributes of the ToggleGroup or its separate options and their new values
 - `id: string` - optional, the id of an option of the ToggleGroup
 
 @example:

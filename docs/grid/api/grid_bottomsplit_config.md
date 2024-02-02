@@ -12,11 +12,11 @@ description: You can explore the bottomSplit config of Grid in the documentation
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	bottomSplit: 2,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    bottomSplit: 2,
+    data: dataset
 });
 
 @descr:

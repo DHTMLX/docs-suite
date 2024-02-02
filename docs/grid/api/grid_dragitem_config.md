@@ -15,8 +15,8 @@ description: You can explore the dragItem config of Grid in the documentation of
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
-		// columns config
-	],
+        // columns config
+    ],
     dragItem: "both",
     data: dataset
 });

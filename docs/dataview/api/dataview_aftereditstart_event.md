@@ -15,7 +15,7 @@ description: You can explore the afterEditStart event of DataView in the documen
 
 @example:
 dataview.events.on("afterEditStart", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

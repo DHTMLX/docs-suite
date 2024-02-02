@@ -8,7 +8,7 @@ title: link
 @signature: link(calendar: object): void; 
 
 @params:
-- calendar2 		object		an object of a calendar to link to
+- calendar2         object        an object of a calendar to link to
 
 @example:
 calendar.link(calendar2);

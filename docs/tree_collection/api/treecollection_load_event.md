@@ -12,7 +12,7 @@ description: You can explore the load event of TreeCollection in the documentati
 
 @example:
 component.data.events.on("load", function(){
-	console.log("Items are loaded.");
+    console.log("Items are loaded.");
 });
 
 @descr:

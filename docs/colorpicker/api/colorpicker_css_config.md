@@ -15,28 +15,28 @@ description: You can explore the css config of Colorpicker in the documentation 
 
 ~~~html
 <style>
-	.custom-class {
-		background: #f2f2f2;
-		border: solid 1px lightblue;
-	}
+    .custom-class {
+        background: #f2f2f2;
+        border: solid 1px lightblue;
+    }
 
-	.custom-class .dhx_palette__cell {
-		border-radius: 50%;
-	}
+    .custom-class .dhx_palette__cell {
+        border-radius: 50%;
+    }
 
-	.custom-class .dhx_palette__cell:after {
-		border-radius: 50%;
-	}
+    .custom-class .dhx_palette__cell:after {
+        border-radius: 50%;
+    }
 
-	.custom-class .dhx_colorpicker-custom-colors__picker {
-		border-radius: 50%;
-	}
+    .custom-class .dhx_colorpicker-custom-colors__picker {
+        border-radius: 50%;
+    }
 </style>
 
 <script>
-	const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-		css: "custom-class dhx_widget--bordered",
-	});
+    const colorpicker = new dhx.Colorpicker("colorpicker_container", {
+        css: "custom-class dhx_widget--bordered",
+    });
 </script>
 ~~~
 

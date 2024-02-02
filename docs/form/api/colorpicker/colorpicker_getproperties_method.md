@@ -33,26 +33,26 @@ The returned object of the **ColorPicker** control looks like:
 
 ~~~js
 {
-	customColors: [],
-	editable: false,
-	errorMessage: "",
-	grayShades: true,
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	icon: "",
-	label: "Choose your color",
-	labelPosition: "top",
-	labelWidth: "200px",
-	mode: "palette",
-	padding: 0,
-	palette: [Array(7), Array(7), ...],
-	placeholder: "",
-	preMessage: "",
-	required: false,
-	successMessage: "",
-	validation: undefined,
-	width: "content"
+    customColors: [],
+    editable: false,
+    errorMessage: "",
+    grayShades: true,
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    icon: "",
+    label: "Choose your color",
+    labelPosition: "top",
+    labelWidth: "200px",
+    mode: "palette",
+    padding: 0,
+    palette: [Array(7), Array(7), ...],
+    placeholder: "",
+    preMessage: "",
+    required: false,
+    successMessage: "",
+    validation: undefined,
+    width: "content"
 }
 ~~~
 

@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -53,17 +53,17 @@ For example:
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-    	columns: [
-        	{ minWidth: 150, id: "country", header: [{ text: "Country" }] },
-        	{ id: "population", header: [{ text: "Population" }] },
-        	{ id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-        	// more columns
-    	],
-    	adjust: true,
-    	data: dataset,
-    	css: "custom",
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            { minWidth: 150, id: "country", header: [{ text: "Country" }] },
+            { id: "population", header: [{ text: "Population" }] },
+            { id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+            // more columns
+        ],
+        adjust: true,
+        data: dataset,
+        css: "custom",
+    });
 </script>
 ~~~
 
@@ -84,18 +84,18 @@ Here is an example of how you can style selection in Grid:
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-    	columns: [
-        	{ minWidth: 150, id: "country", header: [{ text: "Country" }] },
-        	{ id: "population", header: [{ text: "Population" }] },
-        	{ id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-        	// more columns
-    	],
-    	adjust: true,
-    	data: dataset,
-		selection: true,
-    	css: "custom"
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            { minWidth: 150, id: "country", header: [{ text: "Country" }] },
+            { id: "population", header: [{ text: "Population" }] },
+            { id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+            // more columns
+        ],
+        adjust: true,
+        data: dataset,
+        selection: true,
+        css: "custom"
+    });
 </script>
 ~~~
 
@@ -107,25 +107,25 @@ You can easily set some styling to the text of header cells by applying some inl
 
 ~~~html
 <style>
-	.title {
-		font-size: 1.2em;
-		color: tomato;
-	}
+    .title {
+        font-size: 1.2em;
+        color: tomato;
+    }
     
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-		columns: [
-	  		{ width: 200, id: "country", header: [{ text: "<span style='font-size:2em'>Country</span>" }] },
-      		{ width: 150, id: "population", header: [{ text: "<span class='title'>Population</span>" }] },
-      		{ width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-      		{ width: 150, id: "netChange", header: [{ text: "Net Change" }] },
-      		{ width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
-      		{ width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
-		],
-		data: dataset
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+              { width: 200, id: "country", header: [{ text: "<span style='font-size:2em'>Country</span>" }] },
+              { width: 150, id: "population", header: [{ text: "<span class='title'>Population</span>" }] },
+              { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+              { width: 150, id: "netChange", header: [{ text: "Net Change" }] },
+              { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
+              { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
+        ],
+        data: dataset
+    });
 </script>
 ~~~
 
@@ -136,31 +136,31 @@ You can easily set some styling to the text of header cells by applying some inl
 You can easily set some styling to the text of footer cells by applying some inline style or a CSS class to the **text** property of the footer of a column:
 
 ~~~html
-<style>	    
+<style>        
     .custom_footer{
-		font-size: 18px;
-		text-decoration: underline;
-	}    
+        font-size: 18px;
+        text-decoration: underline;
+    }    
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-		columns: [
-		  	{
-				width: 100, id: "a", header: [{ text: "#" }], footer: [
-					{ text: '<div class="custom_footer">Total</div>', colspan: 3 },
-					{ text: '<div class="custom_footer">Minimal value</div>', colspan: 3 }
-				]
-	      	},
-		  	{ width: 100, id: "b", header: [{ text: "Title" }] },
-		  	{ width: 200, id: "c", header: [{ text: "Order" }] },
-		  	{ width: 200, id: "d", header: [{ text: "Price" }], footer: [
-	      			{ content: "sum" }, { content: "min" }        
-	      		] 
-	      	}
-		],
-		data: dataset
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+              {
+                width: 100, id: "a", header: [{ text: "#" }], footer: [
+                    { text: '<div class="custom_footer">Total</div>', colspan: 3 },
+                    { text: '<div class="custom_footer">Minimal value</div>', colspan: 3 }
+                ]
+              },
+              { width: 100, id: "b", header: [{ text: "Title" }] },
+              { width: 200, id: "c", header: [{ text: "Order" }] },
+              { width: 200, id: "d", header: [{ text: "Price" }], footer: [
+                      { content: "sum" }, { content: "min" }        
+                  ] 
+              }
+        ],
+        data: dataset
+    });
 </script>
 ~~~
 
@@ -176,19 +176,19 @@ It is possible to change the appearance of grid rows by applying custom CSS styl
 
 ~~~html {12}
 <style>
-	.my_custom_row {
-		background: coral;
-	}
+    .my_custom_row {
+        background: coral;
+    }
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-		columns: [
-			// columns config
-		],
-		rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
-		data: dataset
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            // columns config
+        ],
+        rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
+        data: dataset
+    });
 </script>
 ~~~
 
@@ -198,14 +198,14 @@ It is possible to change the appearance of grid rows by applying custom CSS styl
 
 ~~~html {9}
 <style>
-	.myCustomClass{
-		background:greenyellow;
-	}
+    .myCustomClass{
+        background:greenyellow;
+    }
 </style>
 
 <script>
-	const rowId = grid.data.getId(1);
-	grid.addRowCss(rowId, "myCustomClass");
+    const rowId = grid.data.getId(1);
+    grid.addRowCss(rowId, "myCustomClass");
 </script>
 ~~~
 
@@ -214,15 +214,15 @@ It is possible to change the appearance of grid rows by applying custom CSS styl
 where:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>rowId</b></td>
-			<td>(<i>string,number</i>) the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) the name of a CSS class</td>
-		</tr>
+            <td><b>rowId</b></td>
+            <td>(<i>string,number</i>) the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) the name of a CSS class</td>
+        </tr>
     </tbody>
 </table>
 
@@ -233,41 +233,41 @@ where:
 It is easy to style necessary cells using the **addCellCss()** method. It takes three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string,number</i>) the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>col</b></td>
-			<td>(<i>string,number</i>) the id of a column</td>
-		</tr>
-		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) the name of the CSS class</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string,number</i>) the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>string,number</i>) the id of a column</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) the name of the CSS class</td>
+        </tr>
     </tbody>
 </table>
 
 ~~~html {18}
 <style>
 .myCustomClass{
-	background:greenyellow;
+    background:greenyellow;
 }
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-    	columns: [
-    	    // columns config
-    	],
-    	data: dataset,
-    	adjust: true
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            // columns config
+        ],
+        data: dataset,
+        adjust: true
+    });
 
-	const rowId = grid.data.getId(1);
+    const rowId = grid.data.getId(1);
 
-	grid.addCellCss(rowId, "country", "my_сustom_сlass");
+    grid.addCellCss(rowId, "country", "my_сustom_сlass");
 </script>
 ~~~
 
@@ -280,23 +280,23 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
 You can mark particular cells in a grid using the **mark** property of a column configuration. You need to set its value as a function that takes the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>cell</b></td>
-			<td>(<i>string</i>) the value of a cell</td>
-		</tr>
-		<tr>
-			<td><b>columnCells</b></td>
-			<td>(<i>array</i>) an array of all cell values in the specified column</td>
-		</tr>
-		<tr>
-			<td><b>row</b></td>
-			<td>(<i>object</i>) an object with all cells in a row</td>
-		</tr>
-		<tr>
-			<td><b>col</b></td>
-			<td>(<i>object</i>) the config of a column (see the columns config)</td>
-		</tr>
+            <td><b>cell</b></td>
+            <td>(<i>string</i>) the value of a cell</td>
+        </tr>
+        <tr>
+            <td><b>columnCells</b></td>
+            <td>(<i>array</i>) an array of all cell values in the specified column</td>
+        </tr>
+        <tr>
+            <td><b>row</b></td>
+            <td>(<i>object</i>) an object with all cells in a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>object</i>) the config of a column (see the columns config)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -304,33 +304,33 @@ The function should return a string with a custom CSS class for your mark.
 
 ~~~html {17-19,24}
 <style>
-	.my_custom_mark {
-		background: lightcoral;
-	}
-	
-	.total_col {
-		background: #f2f2f2;
-	}
+    .my_custom_mark {
+        background: lightcoral;
+    }
+    
+    .total_col {
+        background: #f2f2f2;
+    }
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-		columns: [
-			{
-				id: "population", header: [{ text: "Population" }],
-				// marks specified cells in a column
-				mark: function (cell, data, row, col) {
-					return cell > 100000000 ? "my_custom_mark" : ""
-				}
-			}, 
-			{
-				id: "density", header: [{ text: "Density (P/Km²)" }],
-				// marks all cells in a column
-				mark: function (cell, data) { return "total_col"; }
-			},
-		],
-		data: dataset
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            {
+                id: "population", header: [{ text: "Population" }],
+                // marks specified cells in a column
+                mark: function (cell, data, row, col) {
+                    return cell > 100000000 ? "my_custom_mark" : ""
+                }
+            }, 
+            {
+                id: "density", header: [{ text: "Density (P/Km²)" }],
+                // marks all cells in a column
+                mark: function (cell, data) { return "total_col"; }
+            },
+        ],
+        data: dataset
+    });
 </script>
 ~~~
 
@@ -339,47 +339,47 @@ The function should return a string with a custom CSS class for your mark.
 It is also possible to highlight cells with minimum and (or) maximum values in a grid using the **mark** property of a column configuration. The property is an object which takes two optional parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>min</b></td>
-			<td>(<i>string</i>) a custom CSS class to mark a cell that contains the minimum value</td>
-		</tr>
-		<tr>
-			<td><b>max</b></td>
-			<td>(<i>string</i>) a custom CSS class to mark a cell that contains the maximum value</td>
-		</tr>
+            <td><b>min</b></td>
+            <td>(<i>string</i>) a custom CSS class to mark a cell that contains the minimum value</td>
+        </tr>
+        <tr>
+            <td><b>max</b></td>
+            <td>(<i>string</i>) a custom CSS class to mark a cell that contains the maximum value</td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~html {19-22}
 <style>
-	.max_cell {
-    	background: #f44336;
-    	color: #FFF;
-	}
+    .max_cell {
+        background: #f44336;
+        color: #FFF;
+    }
 
-	.min_cell {
-    	background: #4CAF50;
-    	color: #FFF
-	}
+    .min_cell {
+        background: #4CAF50;
+        color: #FFF
+    }
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-		columns: [
-			{ width: 200, id: "country", header: [{ text: "Country" }] },
-			{
-				width: 150, id: "population", header: [{ text: "Population" }],
-				mark: {
-					min: "min_cell",
-					max: "max_cell"
-				}
-			},
-			// more options
-		],
-		data: dataset
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            { width: 200, id: "country", header: [{ text: "Country" }] },
+            {
+                width: 150, id: "population", header: [{ text: "Population" }],
+                mark: {
+                    min: "min_cell",
+                    max: "max_cell"
+                }
+            },
+            // more options
+        ],
+        data: dataset
+    });
 </script>
 ~~~
 
@@ -394,36 +394,36 @@ It is also possible to highlight cells with minimum and (or) maximum values in a
 It is possible to customize the content of cells of Grid via the **template** property of a [column configuration](grid/api/api_gridcolumn_properties.md). The template option is a function that takes three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>cellValue</b></td>
-			<td>(<i>any</i>) the value of a cell</td>
-		</tr>
-		<tr>
-			<td><b>row</b></td>
-			<td>(<i>object</i>) an object with all cells in a row</td>
-		</tr>
-		<tr>
-			<td><b>col</b></td>
-			<td>(<i>object</i>) the config of a column</td>
-		</tr>
+            <td><b>cellValue</b></td>
+            <td>(<i>any</i>) the value of a cell</td>
+        </tr>
+        <tr>
+            <td><b>row</b></td>
+            <td>(<i>object</i>) an object with all cells in a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>object</i>) the config of a column</td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~js {7-9}
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		{ width: 200, id: "country", header: [{text: "Country"}] },
-		{ width: 150, id: "population", header: [{text: "Population"}] },
-		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
-		  htmlEnable: true,
-		  template: function (text, row, col) {
-			return "<input type=\"checkbox\" " + (text > 300000 ? "checked": "")  + ">";
-		  }
-		}
-	],
-	data: dataset
+    columns: [
+        { width: 200, id: "country", header: [{text: "Country"}] },
+        { width: 150, id: "population", header: [{text: "Population"}] },
+        { width: 150, id: "netChange", header: [{text: "Net Change"}],
+          htmlEnable: true,
+          template: function (text, row, col) {
+            return "<input type=\"checkbox\" " + (text > 300000 ? "checked": "")  + ">";
+          }
+        }
+    ],
+    data: dataset
 });
 ~~~
 
@@ -435,25 +435,25 @@ Starting from v7.0, you can assign event handlers to HTML elements of a custom t
 
 ~~~js {7-10,15-21}
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		{ width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
-		{ width: 150, id: "netChange", header: [{text: "Net Change"}],
-			htmlEnable: true,
-			tooltip: false,
-			template: function (text, row, col) { 
-				return "<div class='cell__template'><input type='checkbox' 
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }], htmlEnable: true },
+        { width: 150, id: "netChange", header: [{text: "Net Change"}],
+            htmlEnable: true,
+            tooltip: false,
+            template: function (text, row, col) { 
+                return "<div class='cell__template'><input type='checkbox' 
                     disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
-			}
-		},
+            }
+        },
         // more options
     ],
-	data: data,
-	eventHandlers: { 
-		onmouseover: { 
-			cell__template: function(event, data) { 
-				console.log(JSON.stringify(data.row, null, 2)); 
-			} 
-	    } 
+    data: data,
+    eventHandlers: { 
+        onmouseover: { 
+            cell__template: function(event, data) { 
+                console.log(JSON.stringify(data.row, null, 2)); 
+            } 
+        } 
     } 
 });
 ~~~
@@ -467,19 +467,19 @@ const grid = new dhx.Grid("grid_container", {
 Starting with v7.1, you can customize the content of the tooltip of a column via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of the [column](grid/configuration.md#columns). The **tooltipTemplate** function takes three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>value</b></td>
-			<td>(<i>any</i>) the value of a cell</td>
-		</tr>
-		<tr>
-			<td><b>row</b></td>
-			<td>(<i>object</i>) an object with all cells in a row</td>
-		</tr>
-		<tr>
-			<td><b>col</b></td>
-			<td>(<i>object</i>) the config of a column</td>
-		</tr>
+            <td><b>value</b></td>
+            <td>(<i>any</i>) the value of a cell</td>
+        </tr>
+        <tr>
+            <td><b>row</b></td>
+            <td>(<i>object</i>) an object with all cells in a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>object</i>) the config of a column</td>
+        </tr>
     </tbody>
 </table>
 <br>
@@ -488,10 +488,10 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-			width: 200, id: "country", header: [{ text: "Country" }], align: "left",
-			htmlEnable: true, 
+            width: 200, id: "country", header: [{ text: "Country" }], align: "left",
+            htmlEnable: true, 
             tooltipTemplate: function (value, row, col) { 
-				if (row.country === "Bangladesh") {
+                if (row.country === "Bangladesh") {
                     return false; // prevent a tooltip from being shown
                 }
                 return `<div class="custom-tooltip"> 
@@ -502,7 +502,7 @@ const grid = new dhx.Grid("grid_container", {
         },
         { width: 150, id: "population", header: [{ text: "Population" }] },
         { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-		// more options
+        // more options
     ],
     data: dataset
 });

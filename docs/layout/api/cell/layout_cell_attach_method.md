@@ -19,11 +19,11 @@ The object of the attached component.
 
 @example:
 const layout = new dhx.Layout("layout_container", {
-	width:"400px", height:"600px"
+    width:"400px", height:"600px"
 });
 
 const sidebar = new dhx.Sidebar(null, {
-	css: "dhx_widget--border_right dhx_widget--bg"
+    css: "dhx_widget--border_right dhx_widget--bg"
 });
 
 layout.getCell("sidebar").attach(sidebar);

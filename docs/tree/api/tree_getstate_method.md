@@ -13,16 +13,16 @@ description: You can explore the getState method of Tree in the documentation of
 @returns:
 An object of *key:value* pairs, where *key* is the id of a tree item and *value* is an object which includes two properties:
 - `selected: number` - the status of a checkbox of an item: 
-	- 0 - unselected
-	- 1 - selected
-	- 2 - indeterminate (for the parent item, in case its children are partially checked)
+    - 0 - unselected
+    - 1 - selected
+    - 2 - indeterminate (for the parent item, in case its children are partially checked)
 - `open: boolean` - checks whether a tree item is open (for folders with items)
 
 @example:
 const treeState = tree.getState();
 /* -> 
 {
-	books: {open: true, selected: 2}, 
+    books: {open: true, selected: 2}, 
     mystery: {open: true, selected: 0}, 
     fantasy: {open: undefined, selected: 0}
 }

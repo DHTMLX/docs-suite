@@ -102,7 +102,7 @@ In this section you will find out how to group cells in TreeGrid and its header.
 | Topic                                                                            | Description                                                                                                             |
 | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | [Grouping cells](../configuration/#spans)                                        | Learn how to specify columns and rows spans in TreeGrid ([Example](https://snippet.dhtmlx.com/o62liqew))                |
-| [Adding/removing spans](../usage/#addingremoving-spans)                          | Learn how to add, remove, and get spans of rows and columns via API methods                                             |
+| [Adding/removing spans](../usage/)                          | Learn how to add, remove, and get spans of rows and columns via API methods                                             |
 | [Grouping rows and columns in the header](../api/api_treegridcolumn_properties/) | Learn how to specify spans for columns and rows in the TreeGrid header ([Example](https://snippet.dhtmlx.com/t8iust6j)) |
 
 ### How to configure drag-n-drop
@@ -252,7 +252,7 @@ In this section you will know how to export TreeGrid to different formats.
 
 | Topic                                                                                | Description                                                                                                                                                |
 | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Exporting TreeGrid to EXCEL, CSV, PDF, or PNG format](../usage/#exporting-treegrid) | Learn how to export TreeGrid to the necessary format  ([Example 1](https://snippet.dhtmlx.com/zyfois4q), [Example 2](https://snippet.dhtmlx.com/iyqmmcoh)) |
+| [Exporting TreeGrid to EXCEL, CSV, PDF, or PNG format](../usage/) | Learn how to export TreeGrid to the necessary format  ([Example 1](https://snippet.dhtmlx.com/zyfois4q), [Example 2](https://snippet.dhtmlx.com/iyqmmcoh)) |
 
 ## How to work with TreeGrid events
 

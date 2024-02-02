@@ -16,13 +16,13 @@ description: You can explore the exportStyles config of Chart in the documentati
 const chart = new dhx.Chart("chart_container", {
     type:"area",
     scales: {
-    	"bottom" : {
-    		text: 'month'
-    	},
-    	"left" : {
-    		padding: 10,
-    		max: 90
-    	}
+        "bottom" : {
+            text: 'month'
+        },
+        "left" : {
+            padding: 10,
+            max: 90
+        }
     },
     series: [
         {
@@ -31,7 +31,7 @@ const chart = new dhx.Chart("chart_container", {
            // more options   
         }
     ],
-	exportStyles: false
+    exportStyles: false
 });
 
 @descr:
@@ -43,13 +43,13 @@ If you want some styles to be exported, set string values with the absolute path
 const chart = new dhx.Chart("chart_container", {
     type:"area",
     scales: {
-    	"bottom" : {
-    		text: 'month'
-    	},
-    	"left" : {
-    		padding: 10,
-    		max: 90
-    	}
+        "bottom" : {
+            text: 'month'
+        },
+        "left" : {
+            padding: 10,
+            max: 90
+        }
     },
     series: [
         {
@@ -58,7 +58,7 @@ const chart = new dhx.Chart("chart_container", {
            // more options   
         }
     ],
-	exportStyles: [
+    exportStyles: [
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"
     ]

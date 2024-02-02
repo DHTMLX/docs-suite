@@ -15,7 +15,7 @@ description: You can explore the change event of Colorpicker in the documentatio
 
 @example:
 colorpicker.events.on("change",function(color){
-	// your logic here
+    // your logic here
 });
 
 @descr:

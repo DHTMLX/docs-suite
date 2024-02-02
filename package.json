@@ -13,13 +13,15 @@
     "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^2.4.3",
-    "@docusaurus/preset-classic": "^2.4.3",
-    "@mdx-js/react": "^1.5.8",
+    "@docusaurus/core": "^3.1.0",
+    "@docusaurus/preset-classic": "^3.1.0",
+    "@mdx-js/react": "^3.0.0",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "prism-react-renderer": "^2.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.70.0"
   },
   "browserslist": {
     "production": [
@@ -34,8 +36,10 @@
     ]
   },
   "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.0.0",
+    "@docusaurus/types": "3.0.0",
     "dhx-md-data-parser": "file:local_modules/dhx-md-data-parser",
-    "docusaurus-plugin-sass": "^0.1.11",
+    "docusaurus-plugin-sass": "^0.2.5",
     "webpack-cli": "^4.4.0"
   }
 }

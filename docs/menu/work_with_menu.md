@@ -62,11 +62,11 @@ menu.enable();
 To check if an item of Menu is disabled, call the [isDisabled()](menu/api/menu_isdisabled_method.md) method. The method takes one parameter:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of a menu item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of a menu item</td>
+        </tr>
     </tbody>
 </table>
 
@@ -83,15 +83,15 @@ menu.isDisabled("1"); // -> true/false
 To select a particular Menu item, make use of the [select()](menu/api/menu_select_method.md) method of Menu. The method takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of an item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of an item</td>
+        </tr>
         <tr>
-			<td><b>unselect</b></td>
-			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
-		</tr>
+            <td><b>unselect</b></td>
+            <td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -125,11 +125,11 @@ menu.unselect();
 To check if an item of Menu is selected, call the [isSelected()](menu/api/menu_isselected_method.md) method. The method takes one parameter:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of a menu item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of a menu item</td>
+        </tr>
     </tbody>
 </table>
 <br/>

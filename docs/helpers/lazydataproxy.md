@@ -51,10 +51,10 @@ Server side will send the following data to the client side:
 
 ~~~js
 data: [
-	{country: "DR Congo", population: "84004989", yearlyChange: "0.0328"}
-	{country: "Germany", population: "82293457", yearlyChange: "0.0022"}
-	{country: "Iran", population: "82011735", yearlyChange: "0.0105"}
-	{country: "Turkey", population: "81916871", yearlyChange: "0.0145"}
+    {country: "DR Congo", population: "84004989", yearlyChange: "0.0328"}
+    {country: "Germany", population: "82293457", yearlyChange: "0.0022"}
+    {country: "Iran", population: "82011735", yearlyChange: "0.0105"}
+    {country: "Turkey", population: "81916871", yearlyChange: "0.0145"}
 ], 
 total_count: 233,
 from: 15

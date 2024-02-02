@@ -30,10 +30,10 @@ const dataset = [
 ];
 
 const grid = new dhx.Grid("grid_container", {
-	columns: [
+    columns: [
         // columns config
     ],
-	data: dataset
+    data: dataset
 });
 
 @descr:
@@ -46,17 +46,17 @@ const grid = new dhx.Grid("grid_container", {
 
 ~~~js {5}
 const dataset = [
-	{
-		"country": "China",
-		"population": "1415045928",
-		"height": 80,
-		"id": "1"
-	},
-	{
-		"country": "India",
-		"population": "1354051854",
-		"id": "2",
-	}
+    {
+        "country": "China",
+        "population": "1415045928",
+        "height": 80,
+        "id": "1"
+    },
+    {
+        "country": "India",
+        "population": "1354051854",
+        "id": "2",
+    }
 ];
 ~~~
 
@@ -72,10 +72,10 @@ const dataset = [
         "country": "China",
         "date": new Date()
     },
-	{
+    {
         "country": "India",
         "date": new Date(2010, 02, 10)
-	}
+    }
 ];
 ~~~
 

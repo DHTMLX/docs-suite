@@ -10,7 +10,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
 
 ~~~js
 {
-	type: "simplevault",
+    type: "simplevault",
     name?: string,
     id?: string,
     target?: string,
@@ -84,18 +84,7 @@ description: You can explore the Properties of the Simple Vault control  of Form
         </tr>
         <tr>
             <td id="value"><b>value</b></td>
-            <td>(optional) sets the default list of loaded files. Each file object can contain the following properties:
-                <ul>
-                    <li><b>id</b> - (optional) the id of the file</li>
-                    <li><b>file</b> - (optional) the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File">File</a> object, in case of loading to the server the property is obligatory</li>
-                    <li><b>status</b> - (optional) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
-                    <li><b>progress</b> - (optional) the progress of the file upload</li>
-                    <li><b>request</b> - (optional) an XMLHttpRequest object sent to the server when an upload begins</li>
-                    <li><b>name</b> - (optional) the name of the file including the extension (for adding files from the server)</li>
-                    <li><b>path</b> - (optional) the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li>
-                    <li><b>[key:string]</b> - (optional) any <i>key:value</i> pair received as a server response (if the <i>updateFromResponse</i> property is enabled)</li>
-                </ul>
-            </td>
+            <td>(optional) sets the default list of loaded files. Each file object can contain the following properties:<ul><li><b>id</b> - (optional) the id of the file</li><li><b>file</b> - (optional) the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File">File</a> object, in case of loading to the server the property is obligatory</li><li><b>status</b> - (optional) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li><li><b>progress</b> - (optional) the progress of the file upload</li><li><b>request</b> - (optional) an XMLHttpRequest object sent to the server when an upload begins</li><li><b>name</b> - (optional) the name of the file including the extension (for adding files from the server)</li><li><b>path</b> - (optional) the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li><li><b>[key:string]</b> - (optional) any <i>key:value</i> pair received as a server response (if the <i>updateFromResponse</i> property is enabled)</li></ul></td>
         </tr>
         <tr>
             <td><b>css</b></td>

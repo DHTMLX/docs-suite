@@ -14,11 +14,11 @@ description: You can explore the rowHeight config of Grid in the documentation o
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	rowHeight: 30,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    rowHeight: 30,
+    data: dataset
 });
 
 @descr: 

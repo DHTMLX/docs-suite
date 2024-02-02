@@ -13,22 +13,22 @@ To handle events of Ribbon and its TreeCollection, use the methods of the **even
 You can add any handler to the events of Ribbon and its TreeCollection. To do this, use the **ribbon.events.on()**  method with the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>evName</b></td>
-			<td>name of the event</td>
-		</tr>
+            <td><b>evName</b></td>
+            <td>name of the event</td>
+        </tr>
         <tr>
-			<td><b>evHandler</b></td>
-			<td>user-defined event handler</td>
-		</tr>
+            <td><b>evHandler</b></td>
+            <td>user-defined event handler</td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~js
 ribbon.events.on("click", function(id,e){
-	console.log(id,e);
+    console.log(id,e);
 });
 ~~~
 
@@ -46,7 +46,7 @@ There is a simple way of removing an event-handler. Call the **ribbon.events.det
 
 ~~~js
 ribbon.events.on("click", function(id,e){
-	console.log(id,e);
+    console.log(id,e);
 });
 
 ribbon.events.detach("click"); 

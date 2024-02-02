@@ -12,8 +12,8 @@ description: You can explore the resetFilter method of DataCollection in the doc
 
 @params:
 - `config: object` - optional, specifies the parameters of resetting the active filters. If the config isn't specified or it is empty, all the filters except for those that have the **permanent** property in the configuration object will be reset. Can contain the following properties:
-	- `id: string` - optional, the id of the filter to reset
-	- `permanent: boolean` - optional, *true* to reset all the active filters, including those that have the **permanent:true** property in their config
+    - `id: string` - optional, the id of the filter to reset
+    - `permanent: boolean` - optional, *true* to reset all the active filters, including those that have the **permanent:true** property in their config
 
 @returns:
 - `result: boolean` - *true*, if all the filters, including the permanent ones, have been reset; otherwise *false*
@@ -29,7 +29,7 @@ component.data.resetFilter({ permanent: true });
 // resets the filter with the specified id
 component.data.resetFilter({ id: "filter_id" });
 
-@descr:	
+@descr:    
 
 **Related sample**: 
 - [Data. ResetFilter](https://snippet.dhtmlx.com/jg8wxfvc)

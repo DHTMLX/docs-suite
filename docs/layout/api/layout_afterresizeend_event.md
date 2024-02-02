@@ -15,7 +15,7 @@ description: You can explore the afterResizeEnd event of Layout in the documenta
 
 @example:
 layout.events.on("afterResizeEnd", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

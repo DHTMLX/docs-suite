@@ -34,20 +34,20 @@ The returned object of the **Checkbox** control looks like:
 
 ~~~js
 {
-	css:"",
-	errorMessage: "",
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	label: "",
-	labelPosition: "top",
-	labelWidth: "",
-	padding: 0,
-	preMessage: "",
-	required: false,
-	successMessage: "",
-	text: "I agree",
-	width: "content"
+    css:"",
+    errorMessage: "",
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    label: "",
+    labelPosition: "top",
+    labelWidth: "",
+    padding: 0,
+    preMessage: "",
+    required: false,
+    successMessage: "",
+    text: "I agree",
+    width: "content"
 }
 ~~~
 

@@ -104,8 +104,8 @@ const size = dhxWindow.getSize(); // -> {width: 960, height: 469}
 
 To set the position of a window on the fly, make use of the [](window/api/window_setposition_method.md) method. You should pass two parameters to the method:
 
-- [left](window/api/window_setposition_method.md) - (*number*)	the left coordinate of a window
-- [top](window/api/window_setposition_method.md) - (*number*)	the top coordinate of a window
+- [left](window/api/window_setposition_method.md) - (*number*)    the left coordinate of a window
+- [top](window/api/window_setposition_method.md) - (*number*)    the top coordinate of a window
 
 ~~~js
 dhxWindow.setPosition(20,20);

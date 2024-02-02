@@ -12,7 +12,7 @@ description: You can explore the activeTab config of Tabbar in the documentation
 
 @example:
 const tabbar = new dhx.Tabbar("tabbar_container", {
-	activeTab:"3",
+    activeTab:"3",
     mode: "top",
     views:[
         { id:"1", tab: "leftside", css:"panel flex", header:"Left"},

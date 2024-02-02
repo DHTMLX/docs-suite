@@ -12,9 +12,9 @@ description: You can explore the beforeColumnDrag event of TreeGrid in the docum
 
 @params:
 - `data: object` - data object. It contains the following parameters:
-	- `start: string | number` - the id of a column, from which the dragging process has started
-	- `source: array` - an array with ids of dragged columns
-	- `target: string | number` - the id of a potential target column
+    - `start: string | number` - the id of a column, from which the dragging process has started
+    - `source: array` - an array with ids of dragged columns
+    - `target: string | number` - the id of a potential target column
 - `events: MouseEvent` - a native HTML event object
 
 @returns:
@@ -22,7 +22,7 @@ Return `false` to prevent dragging of a column; otherwise, `true`.
 
 @example:
 treegrid.events.on("beforeColumnDrag", function(data, events){
-	// your logic here
+    // your logic here
     return false;
 });
 

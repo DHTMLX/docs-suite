@@ -21,7 +21,7 @@ You can easily add a Toggle control during initialization of a form:
 ~~~js
 const form = new dhx.Form("form_container", {
     rows: [
-		{            
+        {            
             type: "toggle",
             name: "toggle",
             icon: "dxi dxi-eye",

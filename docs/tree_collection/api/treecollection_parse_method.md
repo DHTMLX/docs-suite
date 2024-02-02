@@ -25,7 +25,7 @@ toolbar.data.parse([
     },
     {
         type: "separator"
-    },			
+    },            
     {
         type: "navItem",
         icon: "",

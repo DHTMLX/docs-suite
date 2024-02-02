@@ -12,7 +12,7 @@ description: You can explore the customColors config of Colorpicker in the docum
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]					
+    customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]                    
 });
 
 @descr:

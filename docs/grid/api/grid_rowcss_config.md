@@ -12,17 +12,17 @@ description: You can explore the rowCss config of Grid in the documentation of t
 
 @example:
 <style>
-	.my_custom_row {
-		background: coral;
-	}
+    .my_custom_row {
+        background: coral;
+    }
 </style>
 
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
+    data: dataset
 });
 
 @descr:

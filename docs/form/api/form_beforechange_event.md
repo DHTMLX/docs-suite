@@ -19,7 +19,7 @@ Return `false` to prevent changing the value of the control; otherwise, `true`.
 
 @example:
 form.events.on("beforeChange",function(name, value){
-	// your logic here
+    // your logic here
     return true;
 });
 

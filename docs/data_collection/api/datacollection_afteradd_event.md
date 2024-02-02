@@ -15,7 +15,7 @@ description: You can explore the afterAdd event of DataCollection in the documen
 
 @example:
 component.data.events.on("afterAdd", function(newItem){
-	console.log("A new item is added");
+    console.log("A new item is added");
 });
 
 @descr:

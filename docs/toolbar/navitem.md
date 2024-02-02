@@ -121,7 +121,7 @@ The state of a two state item can be changed programmatically with the [setState
 {
     type: "navItem", icon: "dxi dxi-format-bold",
     tooltip: "bold text", twoState: true, 
-	id:"bold"
+    id:"bold"
 }
 ...
 toolbar.setState({"bold":true});    // active:true
@@ -139,7 +139,7 @@ The current state of a two state item can be checked with the [getState()](toolb
 {
     type: "navItem", icon: "dxi dxi-format-bold",
     tooltip: "bold text", twoState: true, 
-	id:"bold"
+    id:"bold"
 }
 ...
 const state = toolbar.getState(); // -> { bold:true } or { bold:false }

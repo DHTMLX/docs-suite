@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second_class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -46,29 +46,29 @@ For example:
         --dhx-background-primary: rgb(238, 238, 238);
         --dhx-color-primary: #118d8d;
         --dhx-color-primary-active: #118d8d;
-	    --dhx-color-primary-hover: #1ad1d1;
+        --dhx-color-primary-hover: #1ad1d1;
     }
 </style>
 
 <script>
-	const form = new dhx.Form("form_container", {
-    	padding: 40,
-    	width: 400,
-    	css: "custom",
-    	rows: [
-        	{
-            	type: "input",
-            	label: "Name",
-            	placeholder: "John Doe",
-        	},
-        	{
-            	type: "input",
-            	label: "Email",
-            	placeholder: "jd@mail.name"
-        	},
-        	// more controls
-    	]
-	});
+    const form = new dhx.Form("form_container", {
+        padding: 40,
+        width: 400,
+        css: "custom",
+        rows: [
+            {
+                type: "input",
+                label: "Name",
+                placeholder: "John Doe",
+            },
+            {
+                type: "input",
+                label: "Email",
+                placeholder: "jd@mail.name"
+            },
+            // more controls
+        ]
+    });
 </script>
 ~~~
 
@@ -82,36 +82,36 @@ You can modify styling of Form controls as well using the **css** option inside 
 
 ~~~html
 <style>
-	.custom {
+    .custom {
         --dhx-background-primary: rgb(238, 238, 238);
         --dhx-color-primary: #118d8d;
         --dhx-color-primary-active: #118d8d;
-	    --dhx-color-primary-hover: #1ad1d1;
+        --dhx-color-primary-hover: #1ad1d1;
     }
-	.name {
+    .name {
         --dhx-color-primary-active: #d1b81a;
     }
 </style>
 
 <script>
-	const form = new dhx.Form("form_container", {
-		padding: 40,
-    	width: 400,
-		css: "custom",
-		rows: [
-			{	
-				css: "name",
-				type: "input",
-				label: "Name",
-				placeholder: "John Doe"
-			},
-			{
-				type: "input",
-				label: "Email",
-				placeholder: "jd@mail.name"
-			},
-			// more controls
-		]
-	});
+    const form = new dhx.Form("form_container", {
+        padding: 40,
+        width: 400,
+        css: "custom",
+        rows: [
+            {    
+                css: "name",
+                type: "input",
+                label: "Name",
+                placeholder: "John Doe"
+            },
+            {
+                type: "input",
+                label: "Email",
+                placeholder: "jd@mail.name"
+            },
+            // more controls
+        ]
+    });
 </script>
 ~~~

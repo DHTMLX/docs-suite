@@ -40,7 +40,7 @@ form.getItem("ToggleGroup").setProperties({
 // 2. Changes values in the configuration of the specified toggle of a ToggleGroup
 form.getItem("ToggleGroup").setProperties({
     text: "On Text",
-	offText: "Off Text"
+    offText: "Off Text"
 }, "first");
 
 @descr:

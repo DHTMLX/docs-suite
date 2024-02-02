@@ -18,7 +18,7 @@ Return `false` to prevent a cell from being shown; otherwise, `true`.
 
 @example:
 layout.events.on("beforeShow", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

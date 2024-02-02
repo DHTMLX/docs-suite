@@ -29,10 +29,10 @@ To initialize DHTMLX Window on a page, you need to take the following simple ste
             // creating DHTMLX Window 
             const dhxWindow = new dhx.Window({
                 title: "DHX Window",
-				modal: false,
-				resizable: true,
-				movable: true
-			});
+                modal: false,
+                resizable: true,
+                movable: true
+            });
         </script>
     </body>
 </html>
@@ -64,8 +64,8 @@ Initialize Window with the `dhx.Window` object constructor. The constructor take
 // creating DHTMLX Window
 const dhxWindow = new dhx.Window({
     modal: false,
-	resizable: true,
-	movable: true
+    resizable: true,
+    movable: true
 });
 dhxWindow.show();
 ~~~

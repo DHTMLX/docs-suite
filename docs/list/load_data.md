@@ -19,7 +19,7 @@ DHTMLX List expects loaded data in the JSON format. Here is an example of an app
 
 ~~~js
 const dataset = [
-	{"value": "1st item", "id": "1"},
+    {"value": "1st item", "id": "1"},
     {"value": "2nd item", "id": "2"},
     {"value": "3rd item", "id": "3"},
     {"value": "4th item", "id": "4"}

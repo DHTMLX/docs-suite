@@ -46,9 +46,9 @@ For example:
         --dhx-background-primary: #444;
         --dhx-font-color-secondary: #fff;
     }
-	.custom .chart.bar {
-		fill: orange;
-	}
+    .custom .chart.bar {
+        fill: orange;
+    }
 </style>
 
 <script>

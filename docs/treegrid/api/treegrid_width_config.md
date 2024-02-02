@@ -12,11 +12,11 @@ description: You can explore the width config of TreeGrid in the documentation o
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	width: 400,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    width: 400,
+    data: dataset
 });
 
 @descr:

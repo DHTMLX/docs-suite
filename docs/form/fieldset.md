@@ -22,15 +22,15 @@ You can easily add a Fieldset control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-	    {
-	        type: "fieldset",
-	        label: "Section name",
-	        name: "f1",
-	        disabled: false, 
-	        hidden: false, 
-	        css: "mycss",
-	        rows: [
+    rows: [
+        {
+            type: "fieldset",
+            label: "Section name",
+            name: "f1",
+            disabled: false, 
+            hidden: false, 
+            css: "mycss",
+            rows: [
                 {
                     type: "input",
                     name: "name",
@@ -47,8 +47,8 @@ const form = new dhx.Form("form_container", {
                 },
                 // more controls
             ]
-	    }
-	]
+        }
+    ]
 });
 ~~~
 

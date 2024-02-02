@@ -19,15 +19,15 @@ treegrid.groupBy("age");
 
 //Grouping by the result of calculation
 treegrid.groupBy(function (item) {
-	if (!item.area || item.area < 0) {
-		return "N.A.";
-	}
-	if (item.area < 25000) {
-		return "Small";
-	} else if (item.area < 60000) {
-		return "Medium";
-	}
-	return "Big";
+    if (!item.area || item.area < 0) {
+        return "N.A.";
+    }
+    if (item.area < 25000) {
+        return "Small";
+    } else if (item.area < 60000) {
+        return "Medium";
+    }
+    return "Big";
 });
 
 @descr:

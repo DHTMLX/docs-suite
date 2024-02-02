@@ -14,11 +14,11 @@ To enable the range mode, you need to set the [](slider/api/slider_range_config.
 
 ~~~js {5-6}
 const slider = new dhx.Slider("slider_container", {
-	min: 0,
-	max: 100,
-	step: 1,
-	range: true,
-	value: [25, 75]
+    min: 0,
+    max: 100,
+    step: 1,
+    range: true,
+    value: [25, 75]
 });
 ~~~
 

@@ -14,7 +14,7 @@ description: You can explore the keyNavigation config of List in the documentati
 
 @example:
 const list = new dhx.List("list_container", {
-	keyNavigation:true
+    keyNavigation:true
 });
 
 @descr:

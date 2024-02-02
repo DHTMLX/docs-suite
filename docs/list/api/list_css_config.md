@@ -40,7 +40,7 @@ Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_e
 
 ~~~js
 const list = new dhx.List("list_container", {
-	css: "dhx_widget--bg_white"
+    css: "dhx_widget--bg_white"
 });
 ~~~
 

@@ -10,33 +10,33 @@ description: You can explore the Datepicker properties of Toolbar in the documen
 
 ~~~js
 const data = [
-	{
-		type: "datePicker",
+    {
+        type: "datePicker",
         id?: string | number,
-	    parent?: string,
-	    value?: string | Date,
-		valueFormat?: string | "date",
+        parent?: string,
+        value?: string | Date,
+        valueFormat?: string | "date",
 
-		dateFormat?: string,
-		disabledDates?: (date: Date) => boolean,
-		icon?: string,
-	    label?: string,
-		mark?: (date: Date) => string,
-		mode?: "calendar" | "year" | "month" | "timepicker", // "calendar" by default
-	    placeholder?: string,
-		thisMonthOnly?: boolean, // false by default
-		timeFormat?: 24 | 12, // 24 by default
-		timePicker?: boolean, // false by default
-		weekNumbers?: boolean, // false by default
-		weekStart?: "saturday" | "sunday" | "monday", // "sunday" by default
+        dateFormat?: string,
+        disabledDates?: (date: Date) => boolean,
+        icon?: string,
+        label?: string,
+        mark?: (date: Date) => string,
+        mode?: "calendar" | "year" | "month" | "timepicker", // "calendar" by default
+        placeholder?: string,
+        thisMonthOnly?: boolean, // false by default
+        timeFormat?: 24 | 12, // 24 by default
+        timePicker?: boolean, // false by default
+        weekNumbers?: boolean, // false by default
+        weekStart?: "saturday" | "sunday" | "monday", // "sunday" by default
 
-		css?: string | string[],
-	    disabled?: boolean,
-		editable?: boolean,
-	    hidden?: boolean,
-	    width?: string,
+        css?: string | string[],
+        disabled?: boolean,
+        editable?: boolean,
+        hidden?: boolean,
+        width?: string,
     },
-	// more Toolbar controls
+    // more Toolbar controls
 ]
 ~~~
 
@@ -72,15 +72,15 @@ const data = [
 **Change log:** 
 
 - The following properties were added in v8.0: 
-	- `valueFormat`
-	- `disabledDates`
-	- `mark`
-	- `mode`
-	- `thisMonthOnly`
-	- `timeFormat`
-	- `timePicker`
-	- `weekNumbers`
-	- `weekStart`
-	- `editable`
+    - `valueFormat`
+    - `disabledDates`
+    - `mark`
+    - `mode`
+    - `thisMonthOnly`
+    - `timeFormat`
+    - `timePicker`
+    - `weekNumbers`
+    - `weekStart`
+    - `editable`
 
 **Related article:** [Datepicker](toolbar/datepicker.md)

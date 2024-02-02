@@ -62,7 +62,7 @@ Use the [](colorpicker/api/colorpicker_grayshades_config.md) configuration optio
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	grayShades: false
+    grayShades: false
 });
 ~~~
 
@@ -75,7 +75,7 @@ the component via the [](colorpicker/api/colorpicker_customcolors_config.md) con
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]
+    customColors: ["#1d2de7", "#ab31ff", "#a3fa76"]
 });
 ~~~
 
@@ -86,7 +86,7 @@ configuration to *true*.
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	pickerOnly: true
+    pickerOnly: true
 });
 ~~~
 
@@ -100,7 +100,7 @@ It is also possible to create the component in the palette mode only using the [
 
 ~~~js
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	paletteOnly: true
+    paletteOnly: true
 });
 ~~~
 

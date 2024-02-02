@@ -20,7 +20,7 @@ Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
 grid.events.on("beforeEditEnd", function(value,row,column){
-	// your logic here
+    // your logic here
     return false;
 });
 

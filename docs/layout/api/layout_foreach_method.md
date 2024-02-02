@@ -12,9 +12,9 @@ description: You can explore the forEach method of Layout in the documentation o
 
 @params:
 - `callback: function` - a function that will iterate over specified Layout cells. The callback function takes three parameters:
-	- `cell` - the object of a layout cell
-	- `index` - the index of a layout cell
-	- `array` - an array with layout cells
+    - `cell` - the object of a layout cell
+    - `index` - the index of a layout cell
+    - `array` - an array with layout cells
 - `parentID: string` - optional, the parent id. If not specified, the function will start iterating over from the root item.
 - `level: number` - optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
 

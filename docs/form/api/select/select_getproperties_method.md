@@ -45,19 +45,19 @@ The returned object of the **Select** control looks like:
 
 ~~~js
 {
-	errorMessage: "",
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	icon: "",
-	label: "select",
-	labelPosition: "top",
-	labelWidth: "50px",
-	padding: 0,
-	preMessage: "",
-	successMessage: "",
-	validation: undefined,
-	width: "200px"
+    errorMessage: "",
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    icon: "",
+    label: "select",
+    labelPosition: "top",
+    labelWidth: "50px",
+    padding: 0,
+    preMessage: "",
+    successMessage: "",
+    validation: undefined,
+    width: "200px"
 }
 ~~~
 

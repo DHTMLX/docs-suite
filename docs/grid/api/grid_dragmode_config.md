@@ -13,8 +13,8 @@ description: You can explore the dragMode config of Grid in the documentation of
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
-		// columns config
-	],
+        // columns config
+    ],
     dragMode:"source"
 });
 
@@ -23,19 +23,19 @@ const grid = new dhx.Grid("grid_container", {
 Drag-n-drop can work in three modes: 
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td>"target"</td>
-			<td>a grid takes rows from other grids, while its rows can't be dragged out of it</td>
-		</tr>
+            <td>"target"</td>
+            <td>a grid takes rows from other grids, while its rows can't be dragged out of it</td>
+        </tr>
         <tr>
-			<td>"source"</td>
-			<td>a grid allows dragging its rows out and can't take rows from other grids</td>
-		</tr>
+            <td>"source"</td>
+            <td>a grid allows dragging its rows out and can't take rows from other grids</td>
+        </tr>
         <tr>
-			<td>"both"</td>
-			<td>a grid both takes rows from other grids and allows dragging its rows out as well</td>
-		</tr>
+            <td>"both"</td>
+            <td>a grid both takes rows from other grids and allows dragging its rows out as well</td>
+        </tr>
     </tbody>
 </table>
 

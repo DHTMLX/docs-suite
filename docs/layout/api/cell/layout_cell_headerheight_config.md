@@ -20,7 +20,7 @@ const layout = new dhx.Layout("layout_container", {
         },
         {
             id: "row2",
-	        headerHeight: 80
+            headerHeight: 80
         }
     ]
 });

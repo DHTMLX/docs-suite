@@ -11,21 +11,21 @@ description: You can explore the event handling of Combo Box in the documentatio
 The user can add any user-defined handler to any of the available events. To do this, the user can use the **combo.events.on()** method with the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>evName</b></td>
-			<td>name of the event</td>
-		</tr>
-		<tr>
-			<td><b>evHandler</b></td>
-			<td>user-defined event handler</td>
-		</tr>
+            <td><b>evName</b></td>
+            <td>name of the event</td>
+        </tr>
+        <tr>
+            <td><b>evHandler</b></td>
+            <td>user-defined event handler</td>
+        </tr>
     </tbody>
 </table>
 
 ~~~js
 combo.events.on("open", function() {
-	// your logic here
+    // your logic here
 });
 ~~~
 

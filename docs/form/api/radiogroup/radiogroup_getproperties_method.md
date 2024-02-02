@@ -31,13 +31,13 @@ const form = new dhx.Form("form_container", {
             options: {
                 rows: [
                     {
-						id: "1,"
+                        id: "1,"
                         type: "radioButton",
                         text: "Select 1",
                         value: "1",
                     },
                     {
-						id: "2",
+                        id: "2",
                         type: "radioButton",
                         text: "Select 2",
                         value: "2"
@@ -60,19 +60,19 @@ The returned object of the **RadioGroup** control looks like:
 
 ~~~js
 {
-	errorMessage: "",
-	height: "content",
-	helpMessage: " Help information",
-	hiddenLabel: false,
-	label: "Radio Group",
-	labelPosition: "left",
-	labelWidth: 140,
-	options: {rows: Array(2), full: false},
-	padding: 0,
-	preMessage: "",
-	required: true,
-	successMessage: "",
-	width: "content"
+    errorMessage: "",
+    height: "content",
+    helpMessage: " Help information",
+    hiddenLabel: false,
+    label: "Radio Group",
+    labelPosition: "left",
+    labelWidth: 140,
+    options: {rows: Array(2), full: false},
+    padding: 0,
+    preMessage: "",
+    required: true,
+    successMessage: "",
+    width: "content"
 }
 ~~~
 
@@ -80,10 +80,10 @@ The returned object of a **radio button** of the RadioGroup control looks like:
 
 ~~~js
 {
-	height: "content"
-	padding: 0
-	text: "Select 1"
-	width: "content"
+    height: "content"
+    padding: 0
+    text: "Select 1"
+    width: "content"
 }
 ~~~
 

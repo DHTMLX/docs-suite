@@ -15,7 +15,7 @@ description: You can explore the afterExpand event of Layout in the documentatio
 
 @example:
 layout.events.on("afterExpand", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

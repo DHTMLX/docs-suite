@@ -11,7 +11,7 @@ description: You can explore the afterLazyLoad event of DataCollection in the do
 @signature: {'afterLazyLoad: (from: number, count: number) => void;'}
 
 @params:
-- `from: number` - the index of the first loaded item 	
+- `from: number` - the index of the first loaded item     
 - `count: number` - the count of records loaded from the server 
 
 @example:

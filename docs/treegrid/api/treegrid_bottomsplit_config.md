@@ -12,11 +12,11 @@ description: You can explore the bottomSplit config of TreeGrid in the documenta
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	bottomSplit: 2,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    bottomSplit: 2,
+    data: dataset
 });
 
 @descr:

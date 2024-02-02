@@ -18,9 +18,9 @@ Any custom HTML content can be easily added to a toolbar with the help of the **
 
 ~~~js
 toolbar.data.add({
-	type: "customHTML",
-	html: "<img src='../logo.svg' alt=''/>",
-	css: "logo-container"
+    type: "customHTML",
+    html: "<img src='../logo.svg' alt=''/>",
+    css: "logo-container"
 });
 ~~~
 

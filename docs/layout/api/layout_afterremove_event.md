@@ -15,7 +15,7 @@ description: You can explore the afterRemove event of Layout in the documentatio
 
 @example:
 layout.events.on("afterRemove", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

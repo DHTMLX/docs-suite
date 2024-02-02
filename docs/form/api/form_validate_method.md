@@ -23,7 +23,7 @@ const result = form.validate(true); // -> true/false
 
 **Related sample**: [Form. Validate](https://snippet.dhtmlx.com/pmz0zk16)
 
-Starting with v7.0, the method validates only [the required fields or the fields that contain validation rules](form/work_with_form.md#validatingform).
+Starting with v7.0, the method validates only [the required fields or the fields that contain validation rules](form/work_with_form.md#validating-form).
 
 When called without the **silent** parameter, the method invokes the [BeforeValidate](form/api/form_beforevalidate_event.md) and [AfterValidate](form/api/form_aftervalidate_event.md) events and modifies the form visually.
 

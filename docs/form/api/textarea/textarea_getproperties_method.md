@@ -35,23 +35,23 @@ The returned object of the **Textarea** control looks like:
 
 ~~~js
 {
-	errorMessage: "",
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	label: "textarea",
-	labelPosition: "top",
-	labelWidth: "70px",
-	maxlength: undefined,
-	minlength: undefined,
-	padding: 0,
-	placeholder: "",
-	preMessage: "",
-	readOnly: false,
-	required: false,
-	successMessage: "",
-	validation: undefined,
-	width: 400
+    errorMessage: "",
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    label: "textarea",
+    labelPosition: "top",
+    labelWidth: "70px",
+    maxlength: undefined,
+    minlength: undefined,
+    padding: 0,
+    placeholder: "",
+    preMessage: "",
+    readOnly: false,
+    required: false,
+    successMessage: "",
+    validation: undefined,
+    width: 400
 }
 ~~~
 

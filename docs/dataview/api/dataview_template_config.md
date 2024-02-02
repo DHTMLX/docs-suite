@@ -16,15 +16,15 @@ The template function takes one parameter:
 
 @example:
 const dataview = new dhx.DataView("dataview_container", {
-	itemsInRow: 4, 
+    itemsInRow: 4, 
     template: function(item) {
-		let template = "<div class='item_wrap'>";
-		template += "<img class='image' src=" + "..images/" + item.thumbnailName + " />";
-		template += "<h2 class='title'>" + item.value + "</h2>";
-		template += "<p class='description'>" + item.shortDescription + "</p>";
-		template += "</div>";
-		return template;
-	}
+        let template = "<div class='item_wrap'>";
+        template += "<img class='image' src=" + "..images/" + item.thumbnailName + " />";
+        template += "<h2 class='title'>" + item.value + "</h2>";
+        template += "<p class='description'>" + item.shortDescription + "</p>";
+        template += "</div>";
+        return template;
+    }
 });
 
 @descr:

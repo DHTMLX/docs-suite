@@ -45,7 +45,7 @@ You can provide a window with a footer that will include some additional control
 
 ~~~js
 const dhxWindow = new dhx.Window({
-	footer:true
+    footer:true
 });
 ~~~
 
@@ -121,7 +121,7 @@ You can set some HTML content into a window via the [](window/api/window_html_co
 
 ~~~js
 const dhxWindow = new dhx.Window({
-	html:"<h1>Header</h1><p>paragraph</p>"
+    html:"<h1>Header</h1><p>paragraph</p>"
 });
 ~~~
 
@@ -153,7 +153,7 @@ DHTMLX Window is initialized with an empty header. You can provide some text lab
 
 ~~~js
 const dhxWindow = new dhx.Window({
-	title: "DHX Window"
+    title: "DHX Window"
 });
 ~~~
 

@@ -35,8 +35,8 @@ From v8.0, you can close a message box via the [close()](message/api/message_clo
 
 ~~~html
 <section class="dhx_sample-controls">
-	<button id="show" class="dhx_sample-btn dhx_sample-btn--flat" onclick="show()">show</button>
-	<button id="close" class="dhx_sample-btn dhx_sample-btn--flat" onclick="close()">close</button>
+    <button id="show" class="dhx_sample-btn dhx_sample-btn--flat" onclick="show()">show</button>
+    <button id="close" class="dhx_sample-btn dhx_sample-btn--flat" onclick="close()">close</button>
 </section>
 
 <script>
@@ -99,16 +99,16 @@ To find out which button was pressed, use the callback function that returns a P
 
 ~~~js
 dhx.confirm({
-	header: "confirm the action",
-	text: "can you apply?",
-	buttons: ["cancel", "apply"]
+    header: "confirm the action",
+    text: "can you apply?",
+    buttons: ["cancel", "apply"]
 }).then(function(answer){
-	if (answer){
-		console.log("confirmed")
-	}
-	else {
-		console.log("cancelled")
-	}
+    if (answer){
+        console.log("confirmed")
+    }
+    else {
+        console.log("cancelled")
+    }
 });
 ~~~
 
@@ -122,7 +122,7 @@ You can configure a tooltip on its initialization:
 
 ~~~js
 dhx.tooltip("Tooltip From Right", {
-	node: "fourth", 
+    node: "fourth", 
     position: "right",
     margin: 8
 });

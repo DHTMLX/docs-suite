@@ -12,11 +12,11 @@ description: You can explore the icon config of Tree in the documentation of the
 
 @example:
 const tree = new dhx.Tree("tree_container", {
-	icon: {
-		folder: "fas fa-book",
-		openFolder: "fas fa-book-open",
-		file: "fas fa-file"
-	}
+    icon: {
+        folder: "fas fa-book",
+        openFolder: "fas fa-book-open",
+        file: "fas fa-file"
+    }
 });
 
 @descr:

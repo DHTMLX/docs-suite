@@ -21,12 +21,12 @@ You can easily add a ColorPicker control during initialization of a form:
 ~~~js
 const form = new dhx.Form("form_container", {
     rows: [
-		{
-			type: "colorpicker",
+        {
+            type: "colorpicker",
             name: "colorpicker",
             labelWidth: "200px",
-			label: "Choose your color"
-		}
+            label: "Choose your color"
+        }
     ]
 });
 ~~~

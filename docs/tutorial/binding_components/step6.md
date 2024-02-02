@@ -23,9 +23,9 @@ The first function we will describe is used for adding a new item. The function 
 
 ~~~js
 function openAddWindow(){
-	dhxWindow.header.data.update("title", {value: "Adding item"});
-	form.clear();
-	dhxWindow.show();
+    dhxWindow.header.data.update("title", {value: "Adding item"});
+    form.clear();
+    dhxWindow.show();
 };
 ~~~
 
@@ -47,18 +47,18 @@ All fields of the form inside the window will be filled with data from a selecte
 
 ~~~js
 function openEditWindow(row){
-	// assigns the "Editing item" title to the window
-	dhxWindow.header.data.update("title", {value: "Editing item"});   
+    // assigns the "Editing item" title to the window
+    dhxWindow.header.data.update("title", {value: "Editing item"});   
     form.clear(); //clears both form values and validation
     if (!row){ // checks whether any row is selected
-    	var itemId = grid.data.getId(0); // returns the id of the item by its index
-    	grid.selection.setCell(itemId); // sets a selection on a grid row by its Id
-    	row = grid.data.getItem(itemId); // returns the object of the item (row) by id
-	}
+        var itemId = grid.data.getId(0); // returns the id of the item by its index
+        grid.selection.setCell(itemId); // sets a selection on a grid row by its Id
+        row = grid.data.getItem(itemId); // returns the object of the item (row) by id
+    }
            
-	form.setValue(row); // sets values of the selected row in the form fields
+    form.setValue(row); // sets values of the selected row in the form fields
             
-	dhxWindow.show(); // shows a window on a page
+    dhxWindow.show(); // shows a window on a page
 };
 ~~~
 
@@ -68,16 +68,16 @@ Now, let's add a function to remove rows from the grid. The logic of the functio
 
 ~~~js
 function deleteItem() {
-	// returns a cell of the selected row
-	var item = grid.selection.getCell();
-  	// returns the index of the selected item by its Id
-	var index = grid.data.getIndex(item.row.id);
-	// deletes an item from the grid by its Id
-	grid.data.remove(item.row.id);
-	// defines the index of the position to which the new item will be put 
-	index = index > grid.data.getLength() - 1 ? grid.data.getLength() - 1 : index; 
-	// gets the id of an item by its index and sets selection on this item
-	grid.selection.setCell(grid.data.getId(index)); 	
+    // returns a cell of the selected row
+    var item = grid.selection.getCell();
+      // returns the index of the selected item by its Id
+    var index = grid.data.getIndex(item.row.id);
+    // deletes an item from the grid by its Id
+    grid.data.remove(item.row.id);
+    // defines the index of the position to which the new item will be put 
+    index = index > grid.data.getLength() - 1 ? grid.data.getLength() - 1 : index; 
+    // gets the id of an item by its index and sets selection on this item
+    grid.selection.setCell(grid.data.getId(index));     
 };
 ~~~
 
@@ -99,22 +99,22 @@ So we suggest to bind the buttons added in the [previous step](tutorial/binding_
 // id - the Id of the toolbar button, 
 // e - the default mouse event of a browser 
 toolbar.events.on("Click", function(id,e){
-	switch(id) {
-    	case 'add': {
-        	openAddWindow();            
+    switch(id) {
+        case 'add': {
+            openAddWindow();            
             break;
-		}
-		case 'edit': {
-        	row = grid.selection.getCell().row; 
-			//to define a row, a cell of which is selected
-           	openEditWindow(row); 			
+        }
+        case 'edit': {
+            row = grid.selection.getCell().row; 
+            //to define a row, a cell of which is selected
+               openEditWindow(row);             
             break;
-		}
-		case 'delete': {
-        	deleteItem();        		
-        	break;
-		}  
-	}
+        }
+        case 'delete': {
+            deleteItem();                
+            break;
+        }  
+    }
 });
 ~~~
 
@@ -126,7 +126,7 @@ After double-click on a cell in the grid the editing window will appear. To call
 
 ~~~js
 grid.events.on("CellDblClick", function(row,column,e){
-	openEditWindow(row);
+    openEditWindow(row);
 });
 ~~~
 
@@ -136,18 +136,18 @@ When you press the "Edit" item in the ContextMenu the editing window will appear
 
 ~~~js
 contextMenu.events.on("Click", function(id,e){
-	switch(id) {
-    	case 'edit': {
-        	openEditWindow(grid.selection.getCell().row); 
-  	// in the argument of the function we specify the row the editing
-  	// window should be opened for
+    switch(id) {
+        case 'edit': {
+            openEditWindow(grid.selection.getCell().row); 
+      // in the argument of the function we specify the row the editing
+      // window should be opened for
             break;
         }
-       	case 'delete': {
-        	deleteItem();
+           case 'delete': {
+            deleteItem();
             break;
         }
-	}
+    }
 });
 ~~~
 

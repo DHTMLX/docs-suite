@@ -15,8 +15,8 @@ description: You can explore the collapsed config of TreeGrid in the documentati
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
-		// columns config
-	],
+        // columns config
+    ],
     data: dataset,
     collapsed: true
 });

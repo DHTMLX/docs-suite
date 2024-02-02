@@ -16,7 +16,7 @@ description: You can explore the afterResizeEnd event of TreeGrid in the documen
 
 @example:
 grid.events.on("afterResizeEnd", function(col,e){
-	// your logic here
+    // your logic here
 });
 
 @descr:

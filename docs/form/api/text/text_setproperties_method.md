@@ -15,7 +15,7 @@ description: You can explore the setProperties method of the Text control of For
 
 @example:
 form.getItem("text").setProperties({
-	label: " Some text"
+    label: " Some text"
 });
 
 @descr:
@@ -28,19 +28,19 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	inputType: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
-	preMessage: string,
-	successMessage: string,
-	width: string|number|"content"
+    css: string,
+    errorMessage: string,
+    height: string|number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    inputType: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string|number,
+    padding: string|number,
+    preMessage: string,
+    successMessage: string,
+    width: string|number|"content"
 }
 ~~~
 

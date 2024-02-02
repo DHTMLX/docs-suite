@@ -17,7 +17,7 @@ description: You can explore the afterEditEnd event of TreeGrid in the documenta
 
 @example:
 grid.events.on("afterEditEnd", function(value,row,column){
-	// your logic here
+    // your logic here
 });
 
 @descr:

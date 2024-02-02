@@ -13,10 +13,10 @@ description: You can explore the show method of Popup in the documentation of th
 @params:
 - `node: HTMLElement` - mandatory, the container to place a popup in
 - `config: object` - optional, the configuration object of a popup. It can contain the properties below:
-	- `centering: boolean` - defines whether a popup should be centered relative to the element, <i>true</i> by default
-	- `auto: boolean` - enables autopositioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup
-	- `mode: string` - the position relative to the element to show a popup at: "left", "right", "bottom" (default), "top"
-	- `indent: number` - the offset of a popup relative to the element
+    - `centering: boolean` - defines whether a popup should be centered relative to the element, <i>true</i> by default
+    - `auto: boolean` - enables autopositioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup
+    - `mode: string` - the position relative to the element to show a popup at: "left", "right", "bottom" (default), "top"
+    - `indent: number` - the offset of a popup relative to the element
 
 @example:
 <div id="popup_container"></div>

@@ -12,9 +12,9 @@ description: You can explore the forEach method of Form in the documentation of 
 
 @params:
 - `callback: function` - a function that will iterate over Form controls. The callback function takes three parameters:
- 	- `item: object` - the object of a form control
- 	- `index: number` - the index of a form control
- 	- `array: array` - an array with form controls
+     - `item: object` - the object of a form control
+     - `index: number` - the index of a form control
+     - `array: array` - an array with form controls
 
 @example:
 form.forEach(function(item, index, array) {

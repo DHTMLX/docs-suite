@@ -20,7 +20,7 @@ An object either with the available attributes of the control and their values, 
 const form = new dhx.Form("form_container", { 
     rows: [
         {
-        	id: "toggleGroup",
+            id: "toggleGroup",
             name: "align",
             type: "toggleGroup",
             value: {
@@ -58,19 +58,19 @@ The returned object of the **ToggleGroup** control looks like:
 
 ~~~js
 {
-	css: "",
-	full: false,
-	gap: 0,
-	height: "content",
-	multiselect: false,
-	options: [
+    css: "",
+    full: false,
+    gap: 0,
+    height: "content",
+    multiselect: false,
+    options: [
          {id: 'left', icon: 'dxi dxi-format-align-left', value: 1},
          {id: 'center', icon: 'dxi dxi-format-align-center', value: 'center'},
          {id: 'right', icon: 'dxi dxi-format-align-right'},
          {id: 'space', icon: 'dxi dxi-format-line-spacing', disabled: true}
     ],
-	padding: "",
-	width: "content"
+    padding: "",
+    width: "content"
 }
 ~~~
 
@@ -80,12 +80,12 @@ The returned object of a **toggle** of the **ToggleGroup** control looks like:
 
 ~~~js
 {
-	full: false,
-	icon: "",
-	offIcon: "",
-	offText: "",
-	text: "Toggle 1",
-	value: undefined
+    full: false,
+    icon: "",
+    offIcon: "",
+    offText: "",
+    text: "Toggle 1",
+    value: undefined
 }
 ~~~
 

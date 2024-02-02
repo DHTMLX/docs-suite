@@ -18,33 +18,33 @@ An array with the result of iteration.
 
 @example:
 const chart = new dhx.Chart("chart_container", {
-	type: "radar",
-	scales: {
-		radial:{
-			value: "month",
-			maxTicks: 7
-		}
-	},
-	series: [
-		{
-			id: "A",
-			value: "company A",
-			fill: "#000000",
-			alpha: 0.3,
-			color: "#000000"
-	 	},
-		{
-			id: "B",
-			value: "company B",
-			fill: "#FFFF33",
-			alpha: 0.3,
-			color: "#FFFF33"
-		}
-	]
+    type: "radar",
+    scales: {
+        radial:{
+            value: "month",
+            maxTicks: 7
+        }
+    },
+    series: [
+        {
+            id: "A",
+            value: "company A",
+            fill: "#000000",
+            alpha: 0.3,
+            color: "#000000"
+         },
+        {
+            id: "B",
+            value: "company B",
+            fill: "#FFFF33",
+            alpha: 0.3,
+            color: "#FFFF33"
+        }
+    ]
 });
 
 chart.eachSeries(function(seria){
-	seria.config.fill
+    seria.config.fill
 });
 // -> ["#394E79", "#5E83BA", "#C2D2E9"]
 

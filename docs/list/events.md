@@ -11,15 +11,15 @@ description: You can explore the event handling of List in the documentation of 
 The user can add any user-defined handler to any of the available events. To do this, the user can use the **list.events.on()** method with the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>evName</b></td>
-			<td>name of the event</td>
-		</tr>
+            <td><b>evName</b></td>
+            <td>name of the event</td>
+        </tr>
         <tr>
-			<td><b>evHandler</b></td>
-			<td>user-defined event handler</td>
-		</tr>
+            <td><b>evHandler</b></td>
+            <td>user-defined event handler</td>
+        </tr>
     </tbody>
 </table>
 

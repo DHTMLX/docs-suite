@@ -18,7 +18,7 @@ Return `false` to prevent resizing of a cell; otherwise, `true`.
 
 @example:
 layout.events.on("beforeResizeStart", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

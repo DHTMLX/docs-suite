@@ -21,26 +21,26 @@ You can easily add a ToggleGroup control during initialization of a form:
 ~~~js
 const form = new dhx.Form("form_container", { 
     rows: [
-       	{
-	        type: "toggleGroup",
-	        full: true,
-	        gap: 4,
-	        options: [
-	            {
-	                id: "left",
-	                icon: "dxi dxi-format-align-left",
-	            },
-	            {
-	                id: "center",
-	                icon: "dxi dxi-format-align-center",
-	            },
-	            {
-	                id: "right",
-	                icon: "dxi dxi-format-align-right",
-	            },
-	        ]
-	    }
-	]
+           {
+            type: "toggleGroup",
+            full: true,
+            gap: 4,
+            options: [
+                {
+                    id: "left",
+                    icon: "dxi dxi-format-align-left",
+                },
+                {
+                    id: "center",
+                    icon: "dxi dxi-format-align-center",
+                },
+                {
+                    id: "right",
+                    icon: "dxi dxi-format-align-right",
+                },
+            ]
+        }
+    ]
 });
 ~~~
 

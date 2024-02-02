@@ -60,19 +60,19 @@ ribbon.data.add({
 **add()** in this case receives three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>item</b></td>
-			<td>the configuration of the added item</td>
-		</tr>
+            <td><b>item</b></td>
+            <td>the configuration of the added item</td>
+        </tr>
         <tr>
-			<td><b>index</b></td>
-			<td>defines the position of the item in the block (-1 will place it after the last control)</td>
-		</tr>
+            <td><b>index</b></td>
+            <td>defines the position of the item in the block (-1 will place it after the last control)</td>
+        </tr>
         <tr>
-			<td><b>blockId</b></td>
-			<td>the ID of the block</td>
-		</tr>
+            <td><b>blockId</b></td>
+            <td>the ID of the block</td>
+        </tr>
     </tbody>
 </table>
 
@@ -82,14 +82,14 @@ You can add any custom HTML content to an item of the block with the help of the
 
 ~~~js
 {
-	type: "block",
-	title: "Progress",
-	items: [
-		{
-		    html: "<div id='preloader'><div id='loader'></div></div >",
-			size: "auto"
-		}
-	]
+    type: "block",
+    title: "Progress",
+    items: [
+        {
+            html: "<div id='preloader'><div id='loader'></div></div >",
+            size: "auto"
+        }
+    ]
 };
 ~~~
 

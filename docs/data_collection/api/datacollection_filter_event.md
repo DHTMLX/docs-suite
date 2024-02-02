@@ -12,8 +12,8 @@ description: You can explore the filter event of DataCollection in the documenta
 
 @params:
 - `object: { [key: string]: object }` - an object with all the active filters, where
-	- `key: string` - the id of an active filter
-	- `object` - an object with the [rule](data_collection/api/datacollection_filter_method.md) and [config](data_collection/api/datacollection_filter_method.md) properties
+    - `key: string` - the id of an active filter
+    - `object` - an object with the [rule](data_collection/api/datacollection_filter_method.md) and [config](data_collection/api/datacollection_filter_method.md) properties
 
 @example:
 component.data.events.on("filter", function(filter) {

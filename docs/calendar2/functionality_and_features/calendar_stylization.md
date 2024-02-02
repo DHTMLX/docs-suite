@@ -28,13 +28,13 @@ For this you need to take the following steps:
 
 ~~~js
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second_class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -50,13 +50,13 @@ For example:
 
 ~~~js
 <style>
-	.bg-grey {
-		background: #efefef;
-	}
+    .bg-grey {
+        background: #efefef;
+    }
 </style>
 
 var calendar = new dhx.Calendar("calendar", { 
-	css: "bg-grey dhx_calendar--bordered" 
+    css: "bg-grey dhx_calendar--bordered" 
 });
 ~~~
 ```
@@ -67,18 +67,18 @@ var calendar = new dhx.Calendar("calendar", {
 
 **Related sample**: [Calendar. Custom styles for selected date](https://snippet.dhtmlx.com/9u0ix3na)
 
-You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linkingtwocalendars). There are system styles you need to change for this purpose:
+You can apply custom styling to dates selected in a calender as well as to [date ranges](calendar/operating_calendar.md#linking-two-calendars). There are system styles you need to change for this purpose:
 
 ~~~js
 <style>
 /* system style for selected dates */
 .dhx_calendar-day--selected::before {
-	background-color: #ff5252;
+    background-color: #ff5252;
 }
 
 /* system style for a date range */
 .dhx_calendar-day--in-range:after {
-	background-color: #ffe7e7;
+    background-color: #ffe7e7;
  }
 </style>
 

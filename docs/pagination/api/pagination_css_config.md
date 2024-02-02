@@ -15,19 +15,19 @@ description: You can explore the css config of Pagination in the documentation o
 
 ~~~html
 <style>
-	.custom {
-		--dhx-background-primary: #3A434A;
-		--dhx-background-secondary: #5e6d78;
-		--dhx-color-primary: #118d8d;
-		--dhx-font-color-primary: #fff;
-	}
+    .custom {
+        --dhx-background-primary: #3A434A;
+        --dhx-background-secondary: #5e6d78;
+        --dhx-color-primary: #118d8d;
+        --dhx-font-color-primary: #fff;
+    }
 </style>
 
 <script>
-	const pagination = new dhx.Pagination("pagination_container", {
-	    css: "custom dhx_widget--bordered dhx_widget--no-border_top",
-	    data: list.data
-	});
+    const pagination = new dhx.Pagination("pagination_container", {
+        css: "custom dhx_widget--bordered dhx_widget--no-border_top",
+        data: list.data
+    });
 </script>
 ~~~
 

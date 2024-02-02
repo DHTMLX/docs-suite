@@ -65,19 +65,19 @@ The returned object of the **CheckboxGroup** control looks like:
 ~~~js
 {
     css: "",
-	errorMessage: "",
-	height: "content",
-	helpMessage: "Help information",
-	hiddenLabel: false,
-	label: "Checkbox Group",
-	labelPosition: "left",
-	labelWidth: 140,
-	options: {...},
-	padding: 0,
-	preMessage: "",
-	required: true,
-	successMessage: "",
-	width: "content"
+    errorMessage: "",
+    height: "content",
+    helpMessage: "Help information",
+    hiddenLabel: false,
+    label: "Checkbox Group",
+    labelPosition: "left",
+    labelWidth: 140,
+    options: {...},
+    padding: 0,
+    preMessage: "",
+    required: true,
+    successMessage: "",
+    width: "content"
 }
 ~~~
 
@@ -85,10 +85,10 @@ The returned object of a **checkbox** of the **CheckboxGroup** control looks lik
 
 ~~~js
 {
-	height: "content",
-	padding: 0,
-	text: "Select 2",
-	width: "content"
+    height: "content",
+    padding: 0,
+    text: "Select 2",
+    width: "content"
 }
 ~~~
 

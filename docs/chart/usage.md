@@ -112,62 +112,62 @@ For example, you can add more items (points) into your Chart using the [](data_c
 
 ~~~js
 const config = {
-	type:"line",
-	scales: {
-		"bottom" : {
-			text: "text",
-			showText: false
-		},
-		"left" : {
-			maxTicks: 10,
-			max: 100,
-			min: 0
-		}
-	},
-	series: [
-		{
-			value: "value",
-			color: "#5E83BA",
-			strokeWidth: 2
-		}
-	]
+    type:"line",
+    scales: {
+        "bottom" : {
+            text: "text",
+            showText: false
+        },
+        "left" : {
+            maxTicks: 10,
+            max: 100,
+            min: 0
+        }
+    },
+    series: [
+        {
+            value: "value",
+            color: "#5E83BA",
+            strokeWidth: 2
+        }
+    ]
 };
 
 const chart = new dhx.Chart("chart_container", config);
 chart.data.parse([
-	{
-		value: Math.random() * 100,
-		text: "u" + Date.now() + 1
-	},
     {
-    	value: Math.random() * 100,
-    	text: "u" + Date.now() + 2
+        value: Math.random() * 100,
+        text: "u" + Date.now() + 1
     },
     {
-    	value: Math.random() * 100,
-    	text: "u" + Date.now() + 3
+        value: Math.random() * 100,
+        text: "u" + Date.now() + 2
+    },
+    {
+        value: Math.random() * 100,
+        text: "u" + Date.now() + 3
     }
 ]);
 function add() {
-	chart.data.add({
-		value: Math.random() * 100,
-		text: "u" + Date.now()
-	});
+    chart.data.add({
+        value: Math.random() * 100,
+        text: "u" + Date.now()
+    });
 };
 ~~~
 
 The method takes as a parameter an object with two properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>value</b></td>
-			<td>the value of an item</td>
-		</tr>
+            <td><b>value</b></td>
+            <td>the value of an item</td>
+        </tr>
         <tr>
-			<td><b>text</b></td>
-			<td>the text of an item on the X-axis</td>
-		</tr>
+            <td><b>text</b></td>
+            <td>the text of an item on the X-axis</td>
+        </tr>
     </tbody>
 </table>
 

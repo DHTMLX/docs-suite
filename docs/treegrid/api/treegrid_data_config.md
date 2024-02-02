@@ -12,8 +12,8 @@ description: You can explore the data config of TreeGrid in the documentation of
 
 @example:
 const dataset = [
-	{
-    	"name": "Argentina",
+    {
+        "name": "Argentina",
         "native": "Argentina",
         "phone": "54",
         "continent": "SA",
@@ -30,10 +30,10 @@ const dataset = [
 ];
 
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
+    columns: [
         // columns config
     ],
-	data: dataset
+    data: dataset
 });
 
 @descr:
@@ -44,13 +44,13 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ~~~js {8}
 const dataset = [
-	{
-    	"name": "Argentina",
+    {
+        "name": "Argentina",
         "native": "Argentina",
         "phone": "54",
         "continent": "SA",
-		"capital": "Buenos Aires",
-		"height": 70
+        "capital": "Buenos Aires",
+        "height": 70
     },
     {
         "name": "American Samoa",
@@ -74,10 +74,10 @@ const dataset = [
         "country": "China",
         "date": new Date()
     },
-	{
+    {
         "country": "India",
         "date": new Date(2010, 02, 10)
-	}
+    }
 ];
 ~~~
 

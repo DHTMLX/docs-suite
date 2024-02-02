@@ -32,14 +32,14 @@ You can easily attach any DHTMLX component (except for Message, Popup, Window) t
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
-	width:"400px", height:"600px"
+    width:"400px", height:"600px"
 });
 
 const list = new dhx.List(null, {
-	template: listTemplate,
-	itemHeight: 52,
-	height: "100%",
-	dragMode: "both"
+    template: listTemplate,
+    itemHeight: 52,
+    height: "100%",
+    dragMode: "both"
 });
         
 list.data.load('../common/library.json');
@@ -67,7 +67,7 @@ You can easily attach some HTML content to a cell of Layout via the [](layout/ap
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
-	width:"400px", height:"600px"
+    width:"400px", height:"600px"
 });
 const html = "<p>Hello world</p>";
 layout.getCell("content").attachHTML(html);

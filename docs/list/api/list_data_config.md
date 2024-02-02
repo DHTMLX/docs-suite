@@ -29,10 +29,10 @@ const data = [
 ]
 
 const list = new dhx.List("list_container", {
-	  css: "dhx_widget--bordered",
-	  template: template,
-	  itemHeight: 72,
-	  data: data
+      css: "dhx_widget--bordered",
+      template: template,
+      itemHeight: 72,
+      data: data
 });
 
 @descr: 

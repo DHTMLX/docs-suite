@@ -19,7 +19,7 @@ Return `false` to block resizing of a column; otherwise, `true`.
 
 @example:
 grid.events.on("beforeResizeStart", function(col,e){
-	// your logic here
+    // your logic here
     return false;
 });
 

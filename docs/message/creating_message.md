@@ -25,16 +25,16 @@ To add a message on a page, you should take the following simple steps:
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
-    	<!--optional-->
+        <!--optional-->
         <div id="message_container"></div>
         <script>
             // creating DHTMLX Message 
             dhx.message({
-				node:"message_container",
+                node:"message_container",
                 text:"This is an error message",
                 css:"dhx_message--error",
                 icon:"dxi-close"
-			});
+            });
         </script>
     </body>
 </html>
@@ -70,7 +70,7 @@ Add a container for Message and give it an id, for example "message_container":
 
 Create a desired message box with the corresponding constructors. The listed constructors take an [**object with configuration options of message boxes**](message/configuration.md) as a parameter.
 
-- **dhx.message(): {close() => void};** - to create a message. The constructor returns an object with the **close()** method:
+- `dhx.message(): {close() => void};` - to create a message. The constructor returns an object with the `close()` method:
 
 ~~~js
 const message = dhx.message({
@@ -85,11 +85,11 @@ console.log(message); // -> {close: function}
 
 **Related sample**: [Message. Show Message](https://snippet.dhtmlx.com/rsxdlicg)
 
-- **dhx.alert()** - to create an alert message box
+- `dhx.alert()` - to create an alert message box
 
 ~~~js
 dhx.alert({
-	header:"Alert Header",
+    header:"Alert Header",
     text:"Alert text",
     buttonsAlignment:"center"
 });
@@ -97,11 +97,11 @@ dhx.alert({
 
 **Related sample**: [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
 
-- **dhx.confirm()** - to create a confirm message box 
+- `dhx.confirm()` - to create a confirm message box
 
 ~~~js
 dhx.confirm({
-	header:"Confirm Header",
+    header:"Confirm Header",
     text:"Confirm text",
     buttons:["decline", "accept"],
     buttonsAlignment:"center"
@@ -110,7 +110,7 @@ dhx.confirm({
 
 **Related sample**: [Message. Show Confirm](https://snippet.dhtmlx.com/iss7twe6)
 
-- **dhx.tooltip()** - to create a tooltip. The constructor takes two parameters:
+- `dhx.tooltip()` - to create a tooltip. The constructor takes two parameters:
     - **text** - (*string*) a string with the text of tooltip
     - **config** - (*object*) an object with [tooltip configuration properties](message/configuration.md#tooltip)
         

@@ -28,20 +28,20 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	circle: boolean,
-	color: string,
-	css: string,
-	full: boolean,
-	height: string|number|"content",
-	icon: string,
-	loading: boolean,
-	padding: string|number,
-	size: string,
-	submit: boolean,
-	text: string,
-	url: string,
-	view: string,
-	width: string|number|"content",
+    circle: boolean,
+    color: string,
+    css: string,
+    full: boolean,
+    height: string|number|"content",
+    icon: string,
+    loading: boolean,
+    padding: string|number,
+    size: string,
+    submit: boolean,
+    text: string,
+    url: string,
+    view: string,
+    width: string|number|"content",
 }
 ~~~
 

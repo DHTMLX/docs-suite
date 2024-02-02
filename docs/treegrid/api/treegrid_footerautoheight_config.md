@@ -14,10 +14,10 @@ description: You can explore the footerAutoHeight config of TreeGrid in the docu
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	data: dataset,
+    columns: [
+        // columns config
+    ],
+    data: dataset,
     autoHeight: false, // disable autoHeight in the data, the header and the footer
     footerAutoHeight: true // enable autoHeight in the footer
 });

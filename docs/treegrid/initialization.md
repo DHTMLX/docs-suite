@@ -17,7 +17,7 @@ To initialize DHTMLX TreeGrid on a page, you need to take the following simple s
 
 - [Include source files](#include-source-files)
 - [Create a container](#create-a-container)
-- [Initialize TreeGrid](#initialize-grid) with the object constructor
+- [Initialize TreeGrid](#initialize-treegrid) with the object constructor
 - [Load data into TreeGrid](#load-data-into-treegrid)
 
 ~~~html title="index.html"

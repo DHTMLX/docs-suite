@@ -8,8 +8,8 @@ title: showDate
 @signature: showDate(date?: Date, mode?: ViewMode): void;
 
 @params:
-- date	 Date    	the date that should be shown in the calendar
-- mode   string  	optional, the mode in which the calendar will be opened
+- date     Date        the date that should be shown in the calendar
+- mode   string      optional, the mode in which the calendar will be opened
 
 
 
@@ -22,19 +22,19 @@ calendar.showDate(new Date(2020,11,12));
 The **modes** are:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>"calendar"</b></td>
-			<td>shows the days of a month, the default mode</td>
-		</tr>
+            <td><b>"calendar"</b></td>
+            <td>shows the days of a month, the default mode</td>
+        </tr>
         <tr>
-			<td><b>"month"</b></td>
-			<td>allows selecting a month of a year</td>
-		</tr>
+            <td><b>"month"</b></td>
+            <td>allows selecting a month of a year</td>
+        </tr>
         <tr>
-			<td><b>"year"</b></td>
-			<td>allows selecting a year</td>
-		</tr>
+            <td><b>"year"</b></td>
+            <td>allows selecting a year</td>
+        </tr>
     </tbody>
 </table>
 

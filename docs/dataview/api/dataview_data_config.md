@@ -13,22 +13,22 @@ description: You can explore the data config of DataView in the documentation of
 @example:
 const dataview = new dhx.DataView("dataview_container", {
     data: [
-    	{
-			"value": "Ben",
-			"short": "Ben is a very cautious 5-year-old Siberian Husky.",
-			"thumbnailName": "01.jpg"
-		},
-		{
-			"value": "Izzy",
-			"short": "This is our most beloved kingfisher bird Izzy.",
-			"thumbnailName": "02.jpg"
-		},
-		{
-			"value": "Momo",
-			"short": "Momo is a 25-year-old elephant with a big heart.",
-			"thumbnailName": "03.jpg"
-		}
-	]
+        {
+            "value": "Ben",
+            "short": "Ben is a very cautious 5-year-old Siberian Husky.",
+            "thumbnailName": "01.jpg"
+        },
+        {
+            "value": "Izzy",
+            "short": "This is our most beloved kingfisher bird Izzy.",
+            "thumbnailName": "02.jpg"
+        },
+        {
+            "value": "Momo",
+            "short": "Momo is a 25-year-old elephant with a big heart.",
+            "thumbnailName": "03.jpg"
+        }
+    ]
 });
 
 @descr: 

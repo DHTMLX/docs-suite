@@ -77,39 +77,39 @@ another:
 ~~~js
 rows: [
     {
-    	type: "input",
-    	label: "Name",
-    	icon: "dxi dxi-magnify",
-    	placeholder: "John Doe",
-    	name: "name"
+        type: "input",
+        label: "Name",
+        icon: "dxi dxi-magnify",
+        placeholder: "John Doe",
+        name: "name"
     },
     {
-    	type: "input",
-    	label: "Email",
-    	placeholder: "jd@mail.name",
-    	name: "email"
-    },		
-    {		
-    	type: "input",
-    	inputType: "password",
-    	label: "Password",
-    	placeholder: "********",
-    	name: "password"
+        type: "input",
+        label: "Email",
+        placeholder: "jd@mail.name",
+        name: "email"
+    },        
+    {        
+        type: "input",
+        inputType: "password",
+        label: "Password",
+        placeholder: "********",
+        name: "password"
     },
     {
-    	type: "checkbox",
-    	text: "I agree",
-    	value: "checkboxvalue",
-    	id: "agree",
-    	name: "agree"
+        type: "checkbox",
+        text: "I agree",
+        value: "checkboxvalue",
+        id: "agree",
+        name: "agree"
     },
     {
-    	type: "button",
-    	text: "Send",
-    	size: "medium",
-    	view: "flat",
-    	submit: true,
-    	color: "primary"
+        type: "button",
+        text: "Send",
+        size: "medium",
+        view: "flat",
+        submit: true,
+        color: "primary"
     }
 ]
 ~~~
@@ -123,17 +123,17 @@ Initialize Form with the `dhx.Form` object constructor. The constructor takes tw
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	css: "dhx_widget--bordered",
-	rows: [
-		{
-			type: "input",
-			label: "Name",
-			icon: "dxi dxi-magnify",
-			placeholder: "John Doe",
-			name: "name"
-		},
-		// more form controls
-	]
+    css: "dhx_widget--bordered",
+    rows: [
+        {
+            type: "input",
+            label: "Name",
+            icon: "dxi dxi-magnify",
+            placeholder: "John Doe",
+            name: "name"
+        },
+        // more form controls
+    ]
 });
 ~~~
 

@@ -14,11 +14,11 @@ description: You can explore the autoEmptyRow config of TreeGrid in the document
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	autoEmptyRow:true,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    autoEmptyRow:true,
+    data: dataset
 });
 
 @descr:

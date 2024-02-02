@@ -14,11 +14,11 @@ The default locale for Combobox looks like this:
 
 ~~~js
 const en = {
-	notFound: "Not found",
+    notFound: "Not found",
     selectAll: "Select all",
     unselectAll: "Unselect all",
     selectedItems: "selected items",
-	createItem: "Create"
+    createItem: "Create"
 };
 ~~~
 
@@ -30,11 +30,11 @@ To use a different locale, your need to:
 
 ~~~js
 const de = {
-	notFound: "Nicht gefunden",
+    notFound: "Nicht gefunden",
     selectAll: "Alle auswählen",
     unselectAll: "Deaktivieren Sie Alle",
     selectedItems: "Ausgewählte Elemente",
-	createItem: "Schaffen"
+    createItem: "Schaffen"
 };
 ~~~
 

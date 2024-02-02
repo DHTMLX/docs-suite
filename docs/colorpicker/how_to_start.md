@@ -27,12 +27,12 @@ In general, to create DHTMLX Colorpicker on a page, you need to take the followi
         <link rel="stylesheet" href="../../codebase/suite.css">
     </head>
     <body>
-    	<div id="colorpicker_container"></div>
+        <div id="colorpicker_container"></div>
         <script>
             // creating Colorpicker 
             const colorpicker = new dhx.Colorpicker("colorpicker_container", {
                 // config options
-			});
+            });
         </script>
     </body>
 </html>
@@ -106,8 +106,8 @@ popup.show("showButton");
 
 const colorExample = document.querySelector(".dhx_color-sample");
 colorpicker.events.on("colorChange", function (color) {
-	colorExample.style.backgroundColor = color;
-	popup.hide();
+    colorExample.style.backgroundColor = color;
+    popup.hide();
 });
 ~~~
 

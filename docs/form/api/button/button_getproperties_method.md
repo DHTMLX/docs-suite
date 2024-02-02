@@ -17,14 +17,14 @@ An object with the available attributes of the control and their values.
 const form = new dhx.Form("form_container", {
     rows: [
         {
-			type: "button",
-			name: "button",
-			text: "Send",
-			size: "medium",
-			view: "flat",
-			submit: true,
-			color: "primary"
-		}
+            type: "button",
+            name: "button",
+            text: "Send",
+            size: "medium",
+            view: "flat",
+            submit: true,
+            color: "primary"
+        }
     ]
 });
 
@@ -36,19 +36,19 @@ The returned object of the **Button** control looks like:
 
 ~~~js
 {
-	circle: false, 
-	color: "primary",
-	full: false,
-	height: "content",
-	icon: "",
-	loading: false,
-	padding: 0,
-	size: "medium",
-	submit: true,
-	text: "Send",
-	url: "",
-	view: "flat",
-	width: "content"
+    circle: false, 
+    color: "primary",
+    full: false,
+    height: "content",
+    icon: "",
+    loading: false,
+    padding: 0,
+    size: "medium",
+    submit: true,
+    text: "Send",
+    url: "",
+    view: "flat",
+    width: "content"
 }
 ~~~
 

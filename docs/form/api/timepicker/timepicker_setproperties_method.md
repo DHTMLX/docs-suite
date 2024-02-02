@@ -30,26 +30,26 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	controls: boolean,
-	css: string,
-	editable: boolean,
-	errorMessage: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	padding: string|number,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	timeFormat: number,
-	validation: function,
-	valueFormat: string,
-	width: string|number|"content"
+    controls: boolean,
+    css: string,
+    editable: boolean,
+    errorMessage: string,
+    height: string|number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string|number,
+    padding: string|number,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    timeFormat: number,
+    validation: function,
+    valueFormat: string,
+    width: string|number|"content"
 }
 ~~~
 

@@ -14,7 +14,7 @@ description: You can explore the pickerOnly config of Colorpicker in the documen
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container",{
-	pickerOnly: true
+    pickerOnly: true
 });
 
 @descr: 

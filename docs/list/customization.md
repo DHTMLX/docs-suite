@@ -18,13 +18,13 @@ There is a possibility to make changes in the look and feel of a list. For this 
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -69,9 +69,9 @@ For example, apply some color to each even item, as in:
 
 ~~~html
 <style>
-	.bg-gray {
-		background: #faf9f9;
-	}
+    .bg-gray {
+        background: #faf9f9;
+    }
 </style>
 
 <script>
@@ -79,9 +79,9 @@ For example, apply some color to each even item, as in:
     list.data.parse(dataset);
 
     list.data.map(function (item, i) {
-    	if (!(i % 2)) {
-    		list.data.update(item.id, {css: "bg-gray"})
-    	}
+        if (!(i % 2)) {
+            list.data.update(item.id, {css: "bg-gray"})
+        }
     });
 </script>
 ~~~

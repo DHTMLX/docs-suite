@@ -20,25 +20,25 @@ You can easily add a Combo control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-        	type: "combo",
+    rows: [
+        {
+            type: "combo",
             name: "combo",
-        	label: "count",
-        	labelPosition: "left",
-        	multiselection: true,
-        	selectAllButton: true,
-        	value: [
-        		"id_1",
-        		"id_2"
-        	],
-        	data: [
-        		{ value: "1", id: "id_1" },
-        		{ value: "2", id: "id_2" },
-        		{ value: "3", id: "id_3" },
-        		{ value: "4", id: "id_4" },
-        		{ value: "5", id: "id_5" }
-        	]
+            label: "count",
+            labelPosition: "left",
+            multiselection: true,
+            selectAllButton: true,
+            value: [
+                "id_1",
+                "id_2"
+            ],
+            data: [
+                { value: "1", id: "id_1" },
+                { value: "2", id: "id_2" },
+                { value: "3", id: "id_3" },
+                { value: "4", id: "id_4" },
+                { value: "5", id: "id_5" }
+            ]
         }
     ]
 });

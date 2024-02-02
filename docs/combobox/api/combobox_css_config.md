@@ -15,19 +15,19 @@ description: You can explore the css config of Combo Box in the documentation of
 
 ~~~html
 <style>
-  	body {
+      body {
         margin: 0;
     }
-	.custom-class .dhx_combobox-input-box {
-		border-radius: 20px;
-		background: #FFF;
-	}
+    .custom-class .dhx_combobox-input-box {
+        border-radius: 20px;
+        background: #FFF;
+    }
 </style>
 
 <script>
-	const combobox = new dhx.Combobox("combobox_container", {
-    	css: "custom-class"
-	});
+    const combobox = new dhx.Combobox("combobox_container", {
+        css: "custom-class"
+    });
 </script>
 ~~~
 

@@ -12,7 +12,7 @@ There is an option that allows making ComboBox disabled and blocks any operation
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	disabled: true
+    disabled: true
 });
 ~~~
 
@@ -27,7 +27,7 @@ Use the [](combobox/api/combobox_virtual_config.md) property to render options i
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	virtual:true
+    virtual:true
 });
 ~~~
 
@@ -43,8 +43,8 @@ There are two useful options to adjust the height of the list of options and the
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	listHeight:300,
-	itemHeight:50
+    listHeight:300,
+    itemHeight:50
 });
 ~~~
 
@@ -65,8 +65,8 @@ While sending a form to the server you can add a label for a ComboBox input that
 
 ~~~js
 const combo = new dhx.Combobox("combo_container",{
-	label:"My Combo",
-	hiddenLabel:true
+    label:"My Combo",
+    hiddenLabel:true
 });
 ~~~
 
@@ -97,9 +97,9 @@ You can set a label for ComboBox, adjust its width and position using the follow
 
 ~~~js
 const combo = new dhx.Combobox("combo_container",{
-	label:"Label",
-	labelPosition: "left",
-	labelWidth: 100
+    label:"Label",
+    labelPosition: "left",
+    labelWidth: 100
 });
 ~~~
 
@@ -109,9 +109,9 @@ or
 
 ~~~js
 const combo = new dhx.Combobox("combo_container",{
-	label:"Label",
-	labelPosition: "top",
-	labelWidth: 100
+    label:"Label",
+    labelPosition: "top",
+    labelWidth: 100
 });
 ~~~
 
@@ -136,19 +136,19 @@ and should return a template for displaying a result.
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	multiselection: true,
+    multiselection: true,
     // simply enables the option
-	itemsCount: true
+    itemsCount: true
 });
 
 // or
 
 const combo = new dhx.Combobox("combo_container", {
-	multiselection: true,
+    multiselection: true,
     // set a custom template function for showing total number of selected options
-	itemsCount: function (num) {
-		return num + (num === 1 ? " item" : " items") + " selected";
-	}
+    itemsCount: function (num) {
+        return num + (num === 1 ? " item" : " items") + " selected";
+    }
 });
 ~~~
 
@@ -164,7 +164,7 @@ To add some placeholder into the ComboBox input, apply the [](combobox/api/combo
 
 ~~~js
 const combobox = new dhx.Combobox("combo_container",{
-	placeholder: "Some placeholder"
+    placeholder: "Some placeholder"
 });
 ~~~
 
@@ -176,7 +176,7 @@ You just need to enable the functionality via setting the [newOptions](combobox/
 ~~~js
 const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,
-  	newOptions: true  
+      newOptions: true  
 });
 ~~~
 
@@ -202,7 +202,7 @@ If needed, you can make ComboBox readonly via the [](combobox/api/combobox_reado
 
 ~~~js
 const combo = new dhx.Combobox("combo_container",{
-	readOnly:true
+    readOnly:true
 });
 ~~~
 
@@ -212,7 +212,7 @@ In order to add the possibility to select several options in ComboBox at once, m
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	multiselection:true
+    multiselection:true
 });
 ~~~
 
@@ -223,10 +223,10 @@ multiple options by setting the [](combobox/api/combobox_multiselection_config.m
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	// enables multiple selection of options
-	multiselection:true,
+    // enables multiple selection of options
+    multiselection:true,
     // shows the Select All button
-	selectAllButton: true
+    selectAllButton: true
 });
 ~~~
 
@@ -242,12 +242,12 @@ You can specify the appearance of ComboBox options in the list with the help of 
 
 ~~~js
 const combo = new dhx.Combobox("combo_container", {
-	template: function (item) {
-	  return "<div style='display:inline-block'>"
-	  +"<img style='width:20px;height:20px;margin-right:10px;' src="+item.src+"></div>" 
-	  + item.value + "</div>";
-	}
-});			
+    template: function (item) {
+      return "<div style='display:inline-block'>"
+      +"<img style='width:20px;height:20px;margin-right:10px;' src="+item.src+"></div>" 
+      + item.value + "</div>";
+    }
+});            
 ~~~
 
 ## HTML content of Combobox options

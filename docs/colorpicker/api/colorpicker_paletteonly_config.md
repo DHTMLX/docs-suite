@@ -14,7 +14,7 @@ description: You can explore the paletteOnly config of Colorpicker in the docume
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container",{
-	paletteOnly: true
+    paletteOnly: true
 });
 
 @descr: 

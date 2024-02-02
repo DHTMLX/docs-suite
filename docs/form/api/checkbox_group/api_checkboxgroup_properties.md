@@ -10,7 +10,7 @@ description: You can explore the Properties of the Checkbox Group control of For
 
 ~~~js
 {
-	type: "checkboxGroup",
+    type: "checkboxGroup",
     name?: string,
     id?: string,
     options: {
@@ -94,19 +94,7 @@ description: You can explore the Properties of the Checkbox Group control of For
         </tr>
         <tr>
             <td><b>options</b></td>
-            <td>(required) an object with options of a CheckboxGroup. The object can contain the following
-                attributes:
-                <ul>
-                    <li><b>rows</b> - (optional) arranges <a href="../../../../form/api/checkbox_group/api_checkboxgroup_properties#properties-of-a-checkbox-of-checkboxgroup">checkboxes</a> inside the CheckboxGroup control vertically
-                    </li>
-                    <li><b>cols</b> - (optional) arranges <a href="../../../../form/api/checkbox_group/api_checkboxgroup_properties#properties-of-a-checkbox-of-checkboxgroup">checkboxes</a> inside the CheckboxGroup control horizontally
-                    </li>
-                    <li><b>css</b> - (optional) adds style classes to a CheckboxGroup</li>
-                    <li><b>height</b> - (optional) the height of a CheckboxGroup</li>
-                    <li><b>padding</b> - (optional) sets padding between a cell and a border of a CheckboxGroup</li>
-                    <li><b>width</b> - (optional) the width of a CheckboxGroup</li>
-                </ul>
-            </td>
+            <td>(required) an object with options of a CheckboxGroup. The object can contain the followingattributes:<ul><li><b>rows</b> - (optional) arranges <a href="../../../../form/api/checkbox_group/api_checkboxgroup_properties#properties-of-a-checkbox-of-checkboxgroup">checkboxes</a> inside the CheckboxGroup control vertically</li><li><b>cols</b> - (optional) arranges <a href="../../../../form/api/checkbox_group/api_checkboxgroup_properties#properties-of-a-checkbox-of-checkboxgroup">checkboxes</a> inside the CheckboxGroup control horizontally</li><li><b>css</b> - (optional) adds style classes to a CheckboxGroup</li><li><b>height</b> - (optional) the height of a CheckboxGroup</li><li><b>padding</b> - (optional) sets padding between a cell and a border of a CheckboxGroup</li><li><b>width</b> - (optional) the width of a CheckboxGroup</li></ul></td>
         </tr>
         <tr>
             <td><b>value</b></td>

@@ -14,7 +14,7 @@ This type of layout contains several [](layout/api/layout_rows_config.md) of cel
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {                                  
-	rows: [
+    rows: [
        { header: "The header of the row 1" },
        { header: "The header of the row 2" },
        { header: "The header of the row 3" },
@@ -29,12 +29,12 @@ This type of layout includes a set of [columns](layout/api/layout_cols_config.md
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   
-	cols: [
-		{ header: "The header of the column 1" },
-		{ header: "The header of the column 2" },
-		{ header: "The header of the column 3" },
+    cols: [
+        { header: "The header of the column 1" },
+        { header: "The header of the column 2" },
+        { header: "The header of the column 3" },
         { header: "The header of the column 4" }
-	]
+    ]
 });
 ~~~
 
@@ -44,7 +44,7 @@ In this layout type **both rows and columns** are used, i.e. a row may include s
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   
-	rows: [
+    rows: [
         {
             cols: [
                 {

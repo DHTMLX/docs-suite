@@ -15,7 +15,7 @@ description: You can explore the resize event of Layout in the documentation of 
 
 @example:
 layout.events.on("resize", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

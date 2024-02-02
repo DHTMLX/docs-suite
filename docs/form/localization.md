@@ -14,8 +14,8 @@ The default (English) locale for Form SimpleVault control looks like this:
 
 ~~~js
 const en = {
-	simpleVaultText: "Drag & drop files or folders here or",
-	simpleVaultLabel: "browse files"
+    simpleVaultText: "Drag & drop files or folders here or",
+    simpleVaultLabel: "browse files"
 };
 ~~~
 
@@ -28,7 +28,7 @@ To use a different locale, your need to:
 ~~~js
 const de = {
     simpleVaultText: "Drag & Drop Dateien oder Ordner hier oder",
-	simpleVaultLabel: "Suchen Sie Dateien durch"
+    simpleVaultLabel: "Suchen Sie Dateien durch"
 };
 ~~~
 

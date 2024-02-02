@@ -37,7 +37,7 @@ toolbar.data.parse([
 ]); 
 ~~~
 
-You can add other buttons in a similar manner. See the full list of toolbar controls and their possible configuration properties [here](toolbar/controls_list.md).
+You can add other buttons in a similar manner. 
 
 3\. Now, we can easily attach a toolbar to the "toolbar-cell" of Layout using the <b>attach()</b> method of a cell, as in:
 

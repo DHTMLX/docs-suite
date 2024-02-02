@@ -14,8 +14,8 @@ description: You can explore the xlsx method of TreeGrid in the documentation of
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to EXCEL:
-	- `url?: string` - (optional) the link to the server side where export will be processed. By default, it is **"//export.dhtmlx.com/excel"**
-	- `name?: string` - (optional) the name of a ready Excel file
+    - `url?: string` - (optional) the link to the server side where export will be processed. By default, it is **"//export.dhtmlx.com/excel"**
+    - `name?: string` - (optional) the name of a ready Excel file
 
 
 @example:
@@ -32,4 +32,4 @@ treegrid.export.xlsx({
 
 **Related samples**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
 
-**Related article:** [Exporting TreeGrid](treegrid/usage.md#exporting-treegrid)
+**Related article:** [Exporting TreeGrid](treegrid/usage.md)

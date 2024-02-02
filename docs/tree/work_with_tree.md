@@ -86,18 +86,15 @@ tree.editItem(id);
 The method can also take a second parameter to configure the editing process. It may include two properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>mode</b></td>
-			<td>(<i>string</i>) the type of an editor:
-				<ul><li>"text" (by default) for an input</li>
-				<li>"select" for a select</li></ul>
-			</td>
-		</tr>
-		<tr>
-			<td><b>options</b></td>
-			<td>(<i>array</i>) optional, an array of additional options<br> This property works only with <i>mode: "select"</i></td>
-		</tr>
+            <td><b>mode</b></td>
+            <td>(<i>string</i>) the type of an editor:<ul><li>"text" (by default) for an input</li><li>"select" for a select</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>options</b></td>
+            <td>(<i>array</i>) optional, an array of additional options<br> This property works only with <i>mode: "select"</i></td>
+        </tr>
     </tbody>
 </table>
 <br>
@@ -130,21 +127,15 @@ tree.setState(treeState);
 The **treeState** object contains *key:value* pairs, where *key* is the id of a tree item and *value* is its state. The state object of a tree item includes two properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>selected</b></td>
-			<td>(<i>number</i>) the status of a checkbox of an item: 
-				<ul>
-					<li>0 - unselected </li>
-					<li>1 - selected  </li>
-					<li>2 - indeterminate (for the parent item, in case its children are partially checked) </li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td><b>open</b></td>
-			<td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
-		</tr>
+            <td><b>selected</b></td>
+            <td>(<i>number</i>) the status of a checkbox of an item:<ul><li>0 - unselected </li><li>1 - selected  </li><li>2 - indeterminate (for the parent item, in case its children are partially checked) </li></ul></td>
+        </tr>
+        <tr>
+            <td><b>open</b></td>
+            <td>(<i>boolean</i>) checks whether a tree item is open (for folders with items)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -152,39 +143,39 @@ Here is an example of a treeState object:
 
 ~~~js
 {
-	"books": {
-		"open": true,
-		"selected": 2
-	},
+    "books": {
+        "open": true,
+        "selected": 2
+    },
 
-	"mystery": {
-		"open": true,
-		"selected": 2
-	},
+    "mystery": {
+        "open": true,
+        "selected": 2
+    },
 
-	"bsthrillers": {
-		"selected": 1
-	},
+    "bsthrillers": {
+        "selected": 1
+    },
 
-	"rc": {
-		"selected": 0
-	},
+    "rc": {
+        "selected": 0
+    },
 
-	"ir": {
-		"selected": 1
-	},
+    "ir": {
+        "selected": 1
+    },
 
-	"history": {
-		"selected": 0
-	},
+    "history": {
+        "selected": 0
+    },
 
-	"jmf": {
-		"selected": 0
-	},
+    "jmf": {
+        "selected": 0
+    },
 
-	"jd": {
-		"selected": 0
-	}
+    "jd": {
+        "selected": 0
+    }
 }
 ~~~
 
@@ -197,19 +188,19 @@ You can manipulate Tree items with the help of the [Tree collection API](tree_co
 It is possible to add more items into the initialized Tree on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) the configuration object of the added item</td>
-		</tr>
-		<tr>
-			<td><b>index</b></td>
-			<td>(<i>number</i>) optional, the position to add an item at</td>
-		</tr>
-		<tr>
-			<td><b>parent</b></td>
-			<td>(<i>string</i>) the ID of the future parent item</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) the configuration object of the added item</td>
+        </tr>
+        <tr>
+            <td><b>index</b></td>
+            <td>(<i>number</i>) optional, the position to add an item at</td>
+        </tr>
+        <tr>
+            <td><b>parent</b></td>
+            <td>(<i>string</i>) the ID of the future parent item</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -225,15 +216,15 @@ tree.data.add({"value": "Life"}, -1, "Magazines");
 You can change config options of the item via the **update()** method of Tree Collection. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>the id of the item</td>
-		</tr>
-		<tr>
-			<td><b>config</b></td>
-			<td>an object with new configuration of the item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>the id of the item</td>
+        </tr>
+        <tr>
+            <td><b>config</b></td>
+            <td>an object with new configuration of the item</td>
+        </tr>
     </tbody>
 </table>
 

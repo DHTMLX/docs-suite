@@ -12,11 +12,11 @@ description: You can explore the topSplit config of Grid in the documentation of
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	topSplit: 2,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    topSplit: 2,
+    data: dataset
 });
 
 @descr:

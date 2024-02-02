@@ -21,9 +21,9 @@ description: You can explore the css config of Slider in the documentation of th
 </style>
 
 <script>
-	const slider = new dhx.Slider("slider_container", {
-    	css: "custom"
-	});
+    const slider = new dhx.Slider("slider_container", {
+        css: "custom"
+    });
 </script>
 ~~~
 

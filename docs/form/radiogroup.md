@@ -21,33 +21,33 @@ A control intended for creating groups of Radio buttons.
 You can easily add a RadioGroup control during initialization of a form:
 
 ~~~js
-const form = new dhx.Form("form_container", {	
-	rows: [
-    	{
-			id: "radiogroup",
+const form = new dhx.Form("form_container", {    
+    rows: [
+        {
+            id: "radiogroup",
             name: "radiogroup",
-			type: "radioGroup",
-			required: true,
-			label: "Radio Group",
-			labelWidth: 140,
-			labelPosition: "left",
-			helpMessage: " Help information",
-			value: "1",
-			options: {
-				rows: [
-					{
-						type: "radioButton",
-						text: "Select 1",
-						value: "1",
-					},
-					{
-						type: "radioButton",
-						text: "Select 2",
-						value: "2"
-					},
-				]
-			}
-		}
+            type: "radioGroup",
+            required: true,
+            label: "Radio Group",
+            labelWidth: 140,
+            labelPosition: "left",
+            helpMessage: " Help information",
+            value: "1",
+            options: {
+                rows: [
+                    {
+                        type: "radioButton",
+                        text: "Select 1",
+                        value: "1",
+                    },
+                    {
+                        type: "radioButton",
+                        text: "Select 2",
+                        value: "2"
+                    },
+                ]
+            }
+        }
      ]
 });
 ~~~

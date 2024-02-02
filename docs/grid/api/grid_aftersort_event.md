@@ -16,7 +16,7 @@ description: You can explore the afterSort event of Grid in the documentation of
 
 @example:
 grid.events.on("afterSort", (col, dir) => {
-	console.log(col, dir);
+    console.log(col, dir);
 });
 
 @descr:

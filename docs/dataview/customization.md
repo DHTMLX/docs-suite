@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second_class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -53,12 +53,12 @@ For example:
 </style>
 
 <script>
-	const dataview = new dhx.DataView("dataview_container", {
-    	itemsInRow: 2, 
-    	gap: 10,
-    	css: "custom dhx_widget--bordered",
-    	template
-	});
+    const dataview = new dhx.DataView("dataview_container", {
+        itemsInRow: 2, 
+        gap: 10,
+        css: "custom dhx_widget--bordered",
+        template
+    });
 </script>
 ~~~
 
@@ -68,20 +68,20 @@ You can style particular cells in the dataview. For example, apply some color to
 
 ~~~html
 <style>
-	.bg-gray {
-		background: #efefef;
-	}
+    .bg-gray {
+        background: #efefef;
+    }
 </style>
 
 <script>
-	const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
+    const dataview = new dhx.DataView("dataview_container", {itemsInRow: 5});
 
-	dataview.data.parse(dataset);
-	dataview.data.map(function (item, i) {
-		if (i % 2) {
-			dataview.data.update(item.id, {css: "bg-gray"})
-		}
-	});
+    dataview.data.parse(dataset);
+    dataview.data.map(function (item, i) {
+        if (i % 2) {
+            dataview.data.update(item.id, {css: "bg-gray"})
+        }
+    });
 </script>
 ~~~
 
@@ -98,15 +98,15 @@ additional custom classes.
 
 ~~~html
 <style>
-	.dhx_dataview-item--selected {
-		border-color: transparent;
-		box-shadow: 0px 1px 5px 0px rgb(2, 136, 209, 0.5), 
-    		inset 0px 0px 0px 1px rgb(2, 136, 209, 1);
-	}
+    .dhx_dataview-item--selected {
+        border-color: transparent;
+        box-shadow: 0px 1px 5px 0px rgb(2, 136, 209, 0.5), 
+            inset 0px 0px 0px 1px rgb(2, 136, 209, 1);
+    }
 </style>
 
 <script>
-	const dataview = new dhx.DataView("dataview_container", {itemsInRow: 3});
+    const dataview = new dhx.DataView("dataview_container", {itemsInRow: 3});
 </script>
 ~~~
 

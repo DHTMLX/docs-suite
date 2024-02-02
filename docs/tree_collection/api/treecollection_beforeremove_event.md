@@ -18,7 +18,7 @@ Return `false` to prevent removing of an item from a data collection; otherwise 
 
 @example:
 component.data.events.on("beforeRemove", function(removedItem){
-	console.log("An item will be removed");
+    console.log("An item will be removed");
     return true;
 });
 

@@ -14,31 +14,31 @@ description: You can explore the data config of Tree in the documentation of the
 Each **data** object can have the following properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>value</b></td>
-			<td>(<i>string</i>) the value of an item</td>
-		</tr>
-		<tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of an item</td>
-		</tr>
-		<tr>
-			<td><b>opened</b></td>
-			<td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
-		</tr>
-		<tr>
-			<td><b>checkbox</b></td>
-			<td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
-		</tr>
-		<tr>
-			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of children items</td>
-		</tr>
-		<tr>
-			<td><b>icon</b></td>
-			<td>(<i>object</i>) allows adding <a href="../../api/tree_icon_config">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom dataset icons</a></td>
-		</tr>
+            <td><b>value</b></td>
+            <td>(<i>string</i>) the value of an item</td>
+        </tr>
+        <tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) the id of an item</td>
+        </tr>
+        <tr>
+            <td><b>opened</b></td>
+            <td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
+        </tr>
+        <tr>
+            <td><b>checkbox</b></td>
+            <td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
+        </tr>
+        <tr>
+            <td><b>items</b></td>
+            <td>(<i>array</i>) an array of children items</td>
+        </tr>
+        <tr>
+            <td><b>icon</b></td>
+            <td>(<i>object</i>) allows adding <a href="../../api/tree_icon_config">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom dataset icons</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -54,10 +54,10 @@ const data = [
                 "value": "Thrillers",
                 "id": "Thrillers",
                 "icon": { 
-					"folder": "fas fa-book", 
-					"openFolder": "fas fa-book-open", 
-					"file": "fas fa-file"
-				}
+                    "folder": "fas fa-book", 
+                    "openFolder": "fas fa-book-open", 
+                    "file": "fas fa-file"
+                }
             }
         ]
     }

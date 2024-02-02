@@ -19,8 +19,8 @@ Return `false` to prevent a column from being sorted; otherwise, `true`.
 
 @example:
 grid.events.on("beforeSort", (col, dir) => {
-	console.log("beforeSort", col, dir);
-	// return false;
+    console.log("beforeSort", col, dir);
+    // return false;
 });
 
 @descr:

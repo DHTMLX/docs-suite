@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -42,20 +42,20 @@ For example:
 
 ~~~html
 <style>
-	.custom {
-		--dhx-font-color-primary: var(--dhx-color-white);
-		--dhx-background-primary: var(--dhx-color-primary);
+    .custom {
+        --dhx-font-color-primary: var(--dhx-color-white);
+        --dhx-background-primary: var(--dhx-color-primary);
 
-		margin-top: 25px;
-		animation: opacity .4s ease-in-out forwards;
-	}
+        margin-top: 25px;
+        animation: opacity .4s ease-in-out forwards;
+    }
 </style>
 
 <script>
-	const popup = new dhx.Popup({
-	    css: "dhx_widget--border-shadow custom"
-	});
+    const popup = new dhx.Popup({
+        css: "dhx_widget--border-shadow custom"
+    });
 
-	// show popup
+    // show popup
 </script>
 ~~~

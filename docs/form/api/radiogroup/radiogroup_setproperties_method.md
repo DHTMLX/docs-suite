@@ -47,7 +47,7 @@ form.getItem("radiogroup").setProperties({
 // 2. Changes values in the configuration of the specified radio button of the control
 form.getItem("radiogroup").setProperties("first", {
     text: "New Text",
-	padding: 20
+    padding: 20
 });
 
 @descr:
@@ -57,7 +57,7 @@ We recommend that you apply the second way of using the method if you want to ch
 ~~~js
 form.getItem("radiogroup").setProperties("first", {
     text: "New Text",
-	padding: 20
+    padding: 20
 });
 ~~~
 
@@ -69,20 +69,20 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	options: object,
-	padding: string|number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	width: string|number|"content"
+    css: string,
+    errorMessage: string,
+    height: string|number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string|number,
+    options: object,
+    padding: string|number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    width: string|number|"content"
 }
 ~~~
 
@@ -90,11 +90,11 @@ It is possible to change values of the following configuration attributes of a *
 
 ~~~js
 {
-	css: string,
-	height: string|number|"content",
-	padding: string|number,
-	text: string,
-	width: string|number|"content"
+    css: string,
+    height: string|number|"content",
+    padding: string|number,
+    text: string,
+    width: string|number|"content"
 }
 ~~~
 

@@ -13,12 +13,12 @@ Now let’s consider  how start to work with such DHTMLX component as Grid.
 
 ~~~js
 var grid = new dhx.Grid(null, {
-	// the grid columns
+    // the grid columns
     columns: 
-    	[
+        [
            { id: "id", header: [{ text: "#", rowspan: 2 }] },
            { id: "first_name", header: [{ text: "First name" },
-            	{ content: "inputFilter" }] },
+                { content: "inputFilter" }] },
            { id: "last_name", header: [{ text: "Last name" },
                 { content: "inputFilter" }] }, 
            { id: "vip", header: [{ text: "Premium", rowspan: 2 }], 
@@ -29,7 +29,7 @@ var grid = new dhx.Grid(null, {
            }
            // other columns
         ],
-   	fitToContainer: true, //makes a grid to fit the size of a container
+       fitToContainer: true, //makes a grid to fit the size of a container
     selection: "row", //enables row selection  in a grid
 });
 ~~~
@@ -53,18 +53,18 @@ layout.cell("grid-cell").attach(grid);
 
 ~~~js
 var grid_dataset = [
-	{
-		"id": 1, "first_name": "Gary", "last_name": "Ortiz",
-  		"email": "gortiz0@mapy.cz", "country": "Indonesia", "vip": false 
- 	},
- 	{
- 		"id": 2, "first_name": "Albert", "last_name": "Williamson", 
-  		"email": "awilliamson1@narod.ru", "country": "China","vip": true 
- 	},
- 	{ 
-  		"id": 3, "first_name": "Mildred", "last_name": "Fuller", 
-  		"email": "mfuller2@npr.org", "country": "Peru", "vip": true 
- 	}
+    {
+        "id": 1, "first_name": "Gary", "last_name": "Ortiz",
+          "email": "gortiz0@mapy.cz", "country": "Indonesia", "vip": false 
+     },
+     {
+         "id": 2, "first_name": "Albert", "last_name": "Williamson", 
+          "email": "awilliamson1@narod.ru", "country": "China","vip": true 
+     },
+     { 
+          "id": 3, "first_name": "Mildred", "last_name": "Fuller", 
+          "email": "mfuller2@npr.org", "country": "Peru", "vip": true 
+     }
     //more options 
 ]; 
 ~~~

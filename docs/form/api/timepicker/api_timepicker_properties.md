@@ -10,36 +10,36 @@ description: You can explore the Properties of the Timepicker control of Form in
 
 ~~~js
 {
-	type: "timepicker",
+    type: "timepicker",
     name?: string,
-	id?: string,
-	value?: Date | number | string | array | object,
+    id?: string,
+    value?: Date | number | string | array | object,
 
-	css?: string,
-	disabled?: boolean, // false by default
-	editable?: boolean, // false by default
-	height?: string | number | "content", // "content" by default
-	hidden?: boolean, // false by default
-	padding?: string | number, // "8px" by default
-	required?: boolean, // false by default
-	validation?: (input: string) => boolean,
+    css?: string,
+    disabled?: boolean, // false by default
+    editable?: boolean, // false by default
+    height?: string | number | "content", // "content" by default
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
+    required?: boolean, // false by default
+    validation?: (input: string) => boolean,
     width?: string | number | "content", // "content" by default
-	
-	controls?: boolean, // false by default
-	icon?: string,
-	placeholder?: string,
-	timeFormat?: 12 | 24, // 24 by default
-	valueFormat?: "string" | "timeObject", // "string" by default
+    
+    controls?: boolean, // false by default
+    icon?: string,
+    placeholder?: string,
+    timeFormat?: 12 | 24, // 24 by default
+    valueFormat?: "string" | "timeObject", // "string" by default
 
-	hiddenLabel?: boolean, // false by default 
-	label?: string,
-	labelPosition?: "left" | "top", // "top" by default
-	labelWidth?: string | number,
+    hiddenLabel?: boolean, // false by default 
+    label?: string,
+    labelPosition?: "left" | "top", // "top" by default
+    labelWidth?: string | number,
 
     helpMessage?: string,
-	preMessage?: string,
-	successMessage?: string,
-	errorMessage?: string,
+    preMessage?: string,
+    successMessage?: string,
+    errorMessage?: string,
 }
 ~~~
 

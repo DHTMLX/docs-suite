@@ -25,9 +25,9 @@ A "promise" of the data object.
 
 @example:
 dhx.ajax.post(url, {name: "foo", title: "bar"}).then(function (data) {
-	console.log(data);
+    console.log(data);
 }).catch(function (err) {
-	console.log(err);
+    console.log(err);
 });
 
 @descr:

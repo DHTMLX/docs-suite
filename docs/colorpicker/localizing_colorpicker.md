@@ -14,11 +14,11 @@ The default locale for Colorpicker looks like this:
 
 ~~~js
 const en = {
-	cancel: "Cancel",
-	select: "Select",
-	rightClickToDelete: "Right click to delete",
-	customColors: "Custom colors",
-	addNewColor: "Add new color"
+    cancel: "Cancel",
+    select: "Select",
+    rightClickToDelete: "Right click to delete",
+    customColors: "Custom colors",
+    addNewColor: "Add new color"
 };
 ~~~
 
@@ -30,11 +30,11 @@ To use a different locale, your need to:
 
 ~~~js
 const de = {
-	cancel: "Abbrechen",
-	select: "Wählen",
-	rightClickToDelete: "Rechtsklick zu entfernen",
-	customColors: "Seine Farben",
-	addNewColor: "Neue Farbe hinzufügen"
+    cancel: "Abbrechen",
+    select: "Wählen",
+    rightClickToDelete: "Rechtsklick zu entfernen",
+    customColors: "Seine Farben",
+    addNewColor: "Neue Farbe hinzufügen"
 }
 ~~~
 

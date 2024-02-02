@@ -14,11 +14,11 @@ description: You can explore the editable config of Grid in the documentation of
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	editable:true,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    editable:true,
+    data: dataset
 });
 
 @descr:

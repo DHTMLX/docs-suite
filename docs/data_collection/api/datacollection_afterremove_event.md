@@ -15,7 +15,7 @@ description: You can explore the afterRemove event of DataCollection in the docu
 
 @example:
 component.data.events.on("afterRemove", function(removedItem){
-	console.log("An item is removed");
+    console.log("An item is removed");
 });
 
 @descr:

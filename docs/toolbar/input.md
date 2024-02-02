@@ -18,9 +18,9 @@ The following example shows how an Input control can be easily added to a toolba
 
 ~~~js
 toolbar.data.add({
-	type:"input",
-	value:"",
-	placeholder:"Type to search"
+    type:"input",
+    value:"",
+    placeholder:"Type to search"
 });
 ~~~
 
@@ -56,9 +56,9 @@ You can create a tooltip for an input:
 
 ~~~js
 {
-	type: "input",
-	value: "",
-	tooltip:"Type to search"
+    type: "input",
+    value: "",
+    tooltip:"Type to search"
 }
 ~~~
 
@@ -72,9 +72,9 @@ To fill in Input with some text, call **setState()** with a key-value pair as a 
 
 ~~~js
 {
-	type: "input",
-	id:"search",
-	value: ""
+    type: "input",
+    id:"search",
+    value: ""
 }
 ...
 toolbar.setState({search:"Summer"});

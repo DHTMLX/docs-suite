@@ -42,7 +42,7 @@ Use the [isSaved](data_collection/api/datacollection_issaved_method.md) method t
 
 ~~~js
 grid.data.saveData.then(function () {
-	console.log(grid.data.isSaved());
+    console.log(grid.data.isSaved());
 });
 ~~~
 

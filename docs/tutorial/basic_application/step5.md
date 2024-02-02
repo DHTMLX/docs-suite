@@ -8,7 +8,7 @@ At this step we will discuss how to fill and clear the Grid with the help of Too
 ~~~js
 toolbar.events.on("Click", function(id,e){ 
 //id - toolbar button id, e - default mouse event of browser
-	switch(id) {
+    switch(id) {
         case 'load': {
             grid.data.parse(grid_dataset); 
             break;

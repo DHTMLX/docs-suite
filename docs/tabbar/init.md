@@ -30,12 +30,12 @@ To add DHTMLX Tabbar into an application, you need to take the following simple 
         <script>
             // creating DHTMLX Tabbar
             const tabbar = new dhx.Tabbar("tabbar_container",{
-            	views:[ 
-                	{ tab: "north" },
+                views:[ 
+                    { tab: "north" },
                     { tab: "south" },
                     { tab: "east" },
                     { tab: "west" },
-            	]
+                ]
             });
         </script>
     </body>

@@ -16,9 +16,9 @@ The following syntax shows how an Input control can be easily added to a ribbon:
 
 ~~~js
 ribbon.data.add({
-	type:"input",
-	value:"",
-	placeholder:"Type to search"
+    type:"input",
+    value:"",
+    placeholder:"Type to search"
 });
 ~~~
 
@@ -54,9 +54,9 @@ To fill in Input with text, call **setState()** with a key-value pair as a param
 
 ~~~js
 {
-	type: "input",
-	id:"search",
-	value: ""
+    type: "input",
+    id:"search",
+    value: ""
 }
 ...
 ribbon.setState({search:"Summer"});

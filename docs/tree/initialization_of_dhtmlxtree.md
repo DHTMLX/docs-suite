@@ -33,8 +33,8 @@ To initialize DHTMLX Tree on a page, you need to take the following simple steps
         <script>
             // creating DHTMLX Tree
             const tree = new dhx.Tree("tree_container",{
-    			// config options
-			});
+                // config options
+            });
         </script>
     </body>
 </html>

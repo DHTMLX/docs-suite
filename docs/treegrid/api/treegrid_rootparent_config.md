@@ -13,13 +13,13 @@ description: You can explore the rootParent config of TreeGrid in the documentat
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     rootParent: "root", 
-	columns: [
-		{ width: 340, id: "name", header: [{ text: "Name" }] },
-		{ width: 340, id: "native", type: "string", header: [{ text: "Native name" }] },
-		{ width: 260, id: "capital", type: "string", header: [{ text: "Capital" }] },
-		{ width: 260, id: "currency", type: "string", header: [{ text: "Currency" }] }
-	],
-	data: dataset
+    columns: [
+        { width: 340, id: "name", header: [{ text: "Name" }] },
+        { width: 340, id: "native", type: "string", header: [{ text: "Native name" }] },
+        { width: 260, id: "capital", type: "string", header: [{ text: "Capital" }] },
+        { width: 260, id: "currency", type: "string", header: [{ text: "Currency" }] }
+    ],
+    data: dataset
 });
 
 @descr:

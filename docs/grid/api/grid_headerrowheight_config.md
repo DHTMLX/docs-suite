@@ -14,10 +14,10 @@ description: You can explore the headerRowHeight config of Grid in the documenta
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	headerRowHeight: 50
+    columns: [
+        // columns config
+    ],
+    headerRowHeight: 50
 });
 
 @descr:

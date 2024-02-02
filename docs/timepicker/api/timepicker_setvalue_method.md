@@ -39,7 +39,7 @@ The value of timepicker set as an array should have the following elements:
 - the minutes value
 - the "AM/PM" identifier for 12-hour format as a string
 
-The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) method of the **Date** object.
+The date set as a number is the number of milliseconds since January 1, 1970, 00:00:00 UTC returned by the [`getTime()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) method of the **Date** object.
 
 [comment]: # (@relatedapi: timepicker/api/timepicker_getvalue_method.md)
 

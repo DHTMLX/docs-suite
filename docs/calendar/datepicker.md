@@ -36,7 +36,7 @@ popup.attach(calendar);
 ~~~js
 const dateInput = document.getElementById("date-input");
 dateInput.addEventListener("click", function() {
-	popup.show(dateInput);
+    popup.show(dateInput);
 });
 ~~~
 
@@ -44,8 +44,8 @@ dateInput.addEventListener("click", function() {
 
 ~~~js
 calendar.events.on("change", function() {
-	dateInput.value = calendar.getValue();
-	popup.hide();
+    dateInput.value = calendar.getValue();
+    popup.hide();
 });
 ~~~
 

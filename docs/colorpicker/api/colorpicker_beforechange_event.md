@@ -18,7 +18,7 @@ Return `false` to prevent changing the color; otherwise, `true`.
 
 @example:
 colorpicker.events.on("beforeChange", function(color){
-	// your logic here
+    // your logic here
     return false;
 });
 

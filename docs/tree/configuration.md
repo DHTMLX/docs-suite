@@ -56,23 +56,23 @@ const tree = new dhx.Tree("tree_container", {keyNavigation: true});
 After that you need to select any item and then apply Arrow keys:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>Up arrow key</b></td>
-			<td>to move selection to the item above the currently selected one</td>
-		</tr>
+            <td><b>Up arrow key</b></td>
+            <td>to move selection to the item above the currently selected one</td>
+        </tr>
         <tr>
-			<td><b>Down arrow key</b></td>
-			<td>to move selection to the item below the currently selected one</td>
-		</tr>
+            <td><b>Down arrow key</b></td>
+            <td>to move selection to the item below the currently selected one</td>
+        </tr>
         <tr>
-			<td><b>Right arrow key</b></td>
-			<td>to open a selected folder</td>
-		</tr>
+            <td><b>Right arrow key</b></td>
+            <td>to open a selected folder</td>
+        </tr>
         <tr>
-			<td><b>Left arrow key</b></td>
-			<td>to close a selected opened folder</td>
-		</tr>
+            <td><b>Left arrow key</b></td>
+            <td>to close a selected opened folder</td>
+        </tr>
     </tbody>
 </table>
 

@@ -18,7 +18,7 @@ Return `false` to prevent a cell from being hidden; otherwise, `true`.
 
 @example:
 layout.events.on("beforeHide", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

@@ -19,7 +19,7 @@ DHTMLX DataView expects loaded data in the JSON format. Here is an example of an
 
 ~~~js
 const dataset = [
-  	{
+      {
         "value": "Ben",
         "short": "Ben is a very cautious 5-year-old Siberian Husky.",
         "thumbnailName": "01.jpg"
