@@ -24,18 +24,18 @@ description: You can explore the css config of TreeGrid in the documentation of 
 </style>
 
 <script>
-	const treeGrid = new dhx.TreeGrid("treegrid_container", {
-    	columns: [
-    	    { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
-    	    { id: "native", type: "string", header: [{ text: "Native name" }] },
-    	    { id: "capital", type: "string", header: [{ text: "Capital" }] },
-    	    { id: "currency", type: "string", header: [{ text: "Currency" }] }
-    	],
-    	data: dataset,
-    	autoWidth: true,
-    	selection: true,
-    	css: "custom"
-	});
+    const treeGrid = new dhx.TreeGrid("treegrid_container", {
+        columns: [
+            { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
+            { id: "native", type: "string", header: [{ text: "Native name" }] },
+            { id: "capital", type: "string", header: [{ text: "Capital" }] },
+            { id: "currency", type: "string", header: [{ text: "Currency" }] }
+        ],
+        data: dataset,
+        autoWidth: true,
+        selection: true,
+        css: "custom"
+    });
 </script>
 ~~~
 

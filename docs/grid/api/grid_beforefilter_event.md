@@ -19,8 +19,8 @@ Return `false` to block the filtering process; otherwise, `true`.
 
 @example:
 grid.events.on("beforeFilter", (value, id) => {
-	console.log("The", id, "column is filtered by", value, "value");
-	// return false;
+    console.log("The", id, "column is filtered by", value, "value");
+    // return false;
 });
 
 @descr:

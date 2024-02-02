@@ -20,8 +20,8 @@ Return `true` to allow changing date selection, `false` to prevent changing date
 
 @example:
 calendar.events.on("beforeChange",function(date, oldDate, byClick){
-	if (date > new Date())
-    	return false;
+    if (date > new Date())
+        return false;
 });
 
 @descr:

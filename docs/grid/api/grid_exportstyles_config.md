@@ -14,11 +14,11 @@ description: You can explore the exportStyles config of Grid in the documentatio
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	exportStyles: false,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    exportStyles: false,
+    data: dataset
 });
 
 @descr:
@@ -28,14 +28,14 @@ If you want some styles to be exported, set string values with the absolute path
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	exportStyles: [
+    columns: [
+        // columns config
+    ],
+    exportStyles: [
         "https://mySite.com/exportStyle.css",
         "https://mySite.com/secondExportStyle.css"
     ],
-	data: dataset
+    data: dataset
 });
 ~~~
 

@@ -17,9 +17,9 @@ The template function takes one parameter:
 
 @example:
 const list = new dhx.List("list_container", {
-	template: function(item) {
-		return "<strong>!!!</strong>" + item.value;
-	}
+    template: function(item) {
+        return "<strong>!!!</strong>" + item.value;
+    }
 });
 
 @descr:

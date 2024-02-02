@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second_class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -48,8 +48,8 @@ For example:
 </style>
 
 <script>
-	const slider = new dhx.Slider("slider_container", {
-    	css: "custom"
-	});
+    const slider = new dhx.Slider("slider_container", {
+        css: "custom"
+    });
 </script>
 ~~~

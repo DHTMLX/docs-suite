@@ -18,33 +18,33 @@ A new SelectButton can be created with the help of the **add()** method of [Tree
 
 ~~~js
 toolbar.data.add(
-	{
-		id: "title",
-    	value: "Select count or use alt+num"
-	},
-	{
-   		id: "currentButton",
-    	type: "selectButton",
-    	value: "1",
-    	items: [
-      		{
-        		value: "1",
-        		hotkey: "alt+1"
-      		},
-      		{
-        		value: "2",
-        		hotkey: "alt+2"
-      		},
-      		{
-        		value: "3",
-        		hotkey: "alt+3"
-      		},
-      		{
-        		value: "4",
-        		hotkey: "alt+4"
-      		}
-    	]
-	}
+    {
+        id: "title",
+        value: "Select count or use alt+num"
+    },
+    {
+           id: "currentButton",
+        type: "selectButton",
+        value: "1",
+        items: [
+              {
+                value: "1",
+                hotkey: "alt+1"
+              },
+              {
+                value: "2",
+                hotkey: "alt+2"
+              },
+              {
+                value: "3",
+                hotkey: "alt+3"
+              },
+              {
+                value: "4",
+                hotkey: "alt+4"
+              }
+        ]
+    }
 );
 ~~~
 

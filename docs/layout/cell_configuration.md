@@ -27,7 +27,7 @@ It is possible to add the [](layout/api/cell/layout_cell_hidden_config.md) attri
 ~~~js
 const layout = new dhx.Layout("layout_container", {
     cols: [
-	    { header: "Cell header", hidden:true}
+        { header: "Cell header", hidden:true}
     ]
 });
 ~~~
@@ -39,7 +39,7 @@ Each layout cell can have a header with some text that describes the content of 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
     cols: [
-	    { header: "Perfect cell header"}
+        { header: "Perfect cell header"}
     ]
 });
 ~~~
@@ -49,14 +49,14 @@ You can also add an icon or an image into the header of a cell with the help of 
 ~~~js
 const layout = new dhx.Layout("layout_container", {
     cols: [
-	    { header: "Cell header", headerIcon:"/icon.png"}
+        { header: "Cell header", headerIcon:"/icon.png"}
     ]
 });
 
 // or
 const layout = new dhx.Layout("layout_container", {
     cols: [
-	    { header: "Cell header", headerImage:"/img.png"}
+        { header: "Cell header", headerImage:"/img.png"}
     ]
 });
 ~~~
@@ -92,7 +92,7 @@ You can easily control and change the size of a cell via the [](layout/api/cell/
 
 ~~~js
 const layout = new dhx.Layout("layout_container", {   
-	rows: [
+    rows: [
         {
             cols: [
                 {

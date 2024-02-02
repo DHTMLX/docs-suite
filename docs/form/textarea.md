@@ -21,14 +21,14 @@ You can easily add a Textarea control during initialization of a form:
 ~~~js
 const form = new dhx.Form("form_container", {
     rows: [
-		{
-			type: "textarea",
+        {
+            type: "textarea",
             name:"textarea",
             label: "textarea",
             labelWidth: "70px",
             value: "Some nice text",
             width:400
-		}
+        }
     ]
 });
 ~~~

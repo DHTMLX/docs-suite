@@ -17,7 +17,7 @@ description: You can explore the setColumns method of Grid in the documentation 
 grid.setColumns([
     { id: "a", header: [{ text: "New header for column a" }] },
     { id: "b", header: [{ text: "New header for column b" }] },
-	// more columns objects
+    // more columns objects
 ]);
 
 @descr:

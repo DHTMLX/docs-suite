@@ -19,27 +19,27 @@ As a value of this option you can use either *true/false* to switch it on/off, o
 ### Default shortcut keys
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>ArrowUp</b></td>
-			<td>moves focus to the previous item</td>
-		</tr>
+            <td><b>ArrowUp</b></td>
+            <td>moves focus to the previous item</td>
+        </tr>
         <tr>
-			<td><b>ArrowDown</b></td>
-			<td>moves focus to the next item</td>
-		</tr>
+            <td><b>ArrowDown</b></td>
+            <td>moves focus to the next item</td>
+        </tr>
         <tr>
-			<td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
-			<td>adds selection to a List item in focus</td>
-		</tr>
-		<tr>
-			<td><b>Enter</b></td>
-			<td>adds selection to a List item in focus, activates editor for the selected item (when the "editable" property is enabled)</td>
-		</tr>
+            <td><b>Enter/Shift+Enter/Ctrl+Enter</b></td>
+            <td>adds selection to a List item in focus</td>
+        </tr>
         <tr>
-			<td><b>Ctrl+A</b></td>
-			<td>selects all items at once (when the "multiselection" property is enabled)</td>
-		</tr>
+            <td><b>Enter</b></td>
+            <td>adds selection to a List item in focus, activates editor for the selected item (when the "editable" property is enabled)</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+A</b></td>
+            <td>selects all items at once (when the "multiselection" property is enabled)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -192,22 +192,22 @@ You can define a template for rendering items in a List with the help of the [](
 ~~~js
 
 const list = new dhx.List("list_container", {
-	css: "dhx_widget--bordered", 
+    css: "dhx_widget--bordered", 
     template: function(item) {
-		const template = "<div class='list_item'>";
-		template += "<div class='item_name'>"+item.value;
-				
-		template+="<span class='item_author'> by "
-		template += item.authors.filter(function(item){return item}).join(", ");
-		template += item.publishedDate ? ", " 
+        const template = "<div class='list_item'>";
+        template += "<div class='item_name'>"+item.value;
+                
+        template+="<span class='item_author'> by "
+        template += item.authors.filter(function(item){return item}).join(", ");
+        template += item.publishedDate ? ", " 
         template += new Date(item.publishedDate.$date).getFullYear() : "";
-		template += "</span>";
-		template += "</div>";
-				
-		template += "<div class='item_categories'>"+item.categories.join(", ")+"</div>";
-		template += "</div>";
-		return template;
-	},
+        template += "</span>";
+        template += "</div>";
+                
+        template += "<div class='item_categories'>"+item.categories.join(", ")+"</div>";
+        template += "</div>";
+        return template;
+    },
     itemHeight: 72
 });
 ~~~
@@ -218,34 +218,34 @@ Starting from v7.0, it is possible to assign event handlers to HTML elements of 
 
 ~~~js {1-13,18-29}
 function template(item) {
-	let template = "<div class='list_item'>";
-	template += "<div class='item_name'>"+item.value;
-	template +="<span class='item_author'> by "
-	template += item.authors.filter(function(item){return item}).join(", ");
-	template += item.publishedDate ? ", " 
-	template += new Date(item.publishedDate.$date).getFullYear() : "";
-	template += "</span>";
-	template += "</div>";
-	template += "<span class='item_categories'>"+item.categories.join(", ")+"</span>";
-	template += "</div>";
-	return template;
+    let template = "<div class='list_item'>";
+    template += "<div class='item_name'>"+item.value;
+    template +="<span class='item_author'> by "
+    template += item.authors.filter(function(item){return item}).join(", ");
+    template += item.publishedDate ? ", " 
+    template += new Date(item.publishedDate.$date).getFullYear() : "";
+    template += "</span>";
+    template += "</div>";
+    template += "<span class='item_categories'>"+item.categories.join(", ")+"</span>";
+    template += "</div>";
+    return template;
 }
 
 const list = new dhx.List("list_container", {
-	css: "dhx_widget--bordered",
-	template: template,
-	eventHandlers: { 
-		onclick: {
-			list_item: function(event) {
-				console.log("You clicked on " + event.target.tagName);
-			}, 
-		},
-		onmouseover: {
-			list_item: function(event, id) { 
-				console.log(list.data.getItem(id).value);
-			}, 
-		} 
-	} 
+    css: "dhx_widget--bordered",
+    template: template,
+    eventHandlers: { 
+        onclick: {
+            list_item: function(event) {
+                console.log("You clicked on " + event.target.tagName);
+            }, 
+        },
+        onmouseover: {
+            list_item: function(event, id) { 
+                console.log(list.data.getItem(id).value);
+            }, 
+        } 
+    } 
 });
 ~~~
 

@@ -16,9 +16,9 @@ description: You can explore the findAll method of DataCollection in the documen
         - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
         - `match: string` - the value of the item attribute
     - if set as a function, the search will be applied by the rule specified in the function. The function takes three parameters:
-	    - `item` - (required) the object of an item
-	    - `index` - (optional) the index of an item
-	    - `array` - (optional) an array with items
+        - `item` - (required) the object of an item
+        - `index` - (optional) the index of an item
+        - `array` - (optional) an array with items
 
 @returns:
 An array of matching item objects.
@@ -26,7 +26,7 @@ An array of matching item objects.
 @example:
 //searching for items by the function
 const items = component.data.findAll(function(items){
-	if(items.text==="Manager"||items.text==="Marketer"){return true}
+    if(items.text==="Manager"||items.text==="Marketer"){return true}
 });
 
 //searching for items by the attribute key

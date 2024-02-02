@@ -17,12 +17,12 @@ An array with the current value of the control.
 const value = form.getItem("simplevault").getValue();
 /* => 
 [
-	{
+    {
         "id": "file1",
         "name": "file_name1.png",
         "status": "uploaded",
     }, 
-	{
+    {
         "id": "file2",
         "name": "file_name2.png",
         "status": "uploaded",
@@ -32,4 +32,4 @@ const value = form.getItem("simplevault").getValue();
 
 @descr:
 
-The returned array contains objects that may have the properties listed in the [value](form/api/simplevault/api_simplevault_properties.md/#value) configuration property.
+The returned array contains objects that may have the properties listed in the [value](form/api/simplevault/api_simplevault_properties.md) configuration property.

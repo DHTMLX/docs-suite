@@ -15,7 +15,7 @@ description: You can explore the afterEditStart event of List in the documentati
 
 @example:
 list.events.on("afterEditStart", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

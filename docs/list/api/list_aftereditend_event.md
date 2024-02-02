@@ -16,7 +16,7 @@ description: You can explore the afterEditEnd event of List in the documentation
 
 @example:
 list.events.on("afterEditEnd", function(value,id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

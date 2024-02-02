@@ -22,12 +22,12 @@ You can add a MenuItem control into the menu with the help of the **add()** meth
 
 ~~~js
 menu.data.add({
-	type:"menuItem", value:"Menu", items:[
-		{ type:"menuItem", value:"Option 1" },
-		{ type:"menuItem", value:"Option 2" },
-		{ type:"separator"},
-		{ type:"menuItem", value:"Option Infinite" }
-	]
+    type:"menuItem", value:"Menu", items:[
+        { type:"menuItem", value:"Option 1" },
+        { type:"menuItem", value:"Option 2" },
+        { type:"separator"},
+        { type:"menuItem", value:"Option Infinite" }
+    ]
 });
 ~~~
 
@@ -50,10 +50,10 @@ Any custom HTML content can be easily added to a menu with the help of the **add
 ~~~js
 menu.data.add({
     id: "input",
-	parent: "edit",
+    parent: "edit",
     type: "customHTML",
-	html: "<img src='../logo.svg' alt=''/>",
-	css: "custom-image"
+    html: "<img src='../logo.svg' alt=''/>",
+    css: "custom-image"
 });
 ~~~
 
@@ -75,7 +75,7 @@ A new Separator can be created with the help of the **add()** method of Tree Col
 
 ~~~js
 menu.data.add({
-	type:"separator"
+    type:"separator"
 });
 ~~~
 
@@ -97,7 +97,7 @@ A new Spacer can be created with the help of the **add()** method of Tree Collec
 
 ~~~js
 menu.data.add({
-	type:"spacer"
+    type:"spacer"
 });
 ~~~
 

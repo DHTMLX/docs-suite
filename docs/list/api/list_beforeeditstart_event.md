@@ -18,7 +18,7 @@ Return `false` to block item editing; otherwise, `true`.
 
 @example:
 list.events.on("beforeEditStart", function(value,id){
-	// your logic here
+    // your logic here
     return false;
 });
 

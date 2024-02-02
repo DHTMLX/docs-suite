@@ -18,13 +18,13 @@ To use a new CSS class you need to take the following steps:
 
 ~~~js
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second_class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -40,11 +40,11 @@ For example:
 
 ~~~html
 <style>
-	.custom {
-		--dhx-font-color-primary: var(--dhx-color-white);
-		--dhx-background-primary: var(--dhx-color-primary);
-		--dhx-font-size-normal: 16px;
-	}
+    .custom {
+        --dhx-font-color-primary: var(--dhx-color-white);
+        --dhx-background-primary: var(--dhx-color-primary);
+        --dhx-font-size-normal: 16px;
+    }
 </style>
 
 <script>

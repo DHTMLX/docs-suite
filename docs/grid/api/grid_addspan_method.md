@@ -12,13 +12,13 @@ description: You can explore the addSpan method of Grid in the documentation of 
 
 @params:
 - `spanObj: object` - an object with configuration of a span. The object contains the following properties:
-	- `row: string | number` - mandatory, the id of a row
-	- `column: string | number` - mandatory, the id of a column
-	- `rowspan: number` - optional, the number of rows in a span
-	- `colspan: number` - optional, the number of columns in a span
-	- `text: string | number` - optional, the text in a spanned row/column
-	- `css: string | number` - optional, the name of the CSS class that will be applied to a span
-	
+    - `row: string | number` - mandatory, the id of a row
+    - `column: string | number` - mandatory, the id of a column
+    - `rowspan: number` - optional, the number of rows in a span
+    - `colspan: number` - optional, the number of columns in a span
+    - `text: string | number` - optional, the text in a spanned row/column
+    - `css: string | number` - optional, the name of the CSS class that will be applied to a span
+    
 @example:
 grid.addSpan({ 
     row: "0", 

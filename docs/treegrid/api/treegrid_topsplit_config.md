@@ -12,11 +12,11 @@ description: You can explore the topSplit config of TreeGrid in the documentatio
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	topSplit: 2,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    topSplit: 2,
+    data: dataset
 });
 
 @descr:

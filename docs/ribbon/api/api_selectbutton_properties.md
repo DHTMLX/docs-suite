@@ -10,82 +10,82 @@ description: You can explore the Select Button properties of Ribbon in the docum
 
 ~~~js
 const data = [
-	{
-		type: "selectButton",
-		id?: string | number,
-		parent?: string,
-		value?: string,
-		items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
-	
-		count?: number,
-		countColor?: "danger" | "secondary" | "primary" | "success",
-		icon?: string,
-		size?: "small" | "medium" | "auto",
-		tooltip?: string,
+    {
+        type: "selectButton",
+        id?: string | number,
+        parent?: string,
+        value?: string,
+        items?: IMenuElement[], // ISpacer | ISeparator | INavItem | IMenuItem | ICustomHTML
+    
+        count?: number,
+        countColor?: "danger" | "secondary" | "primary" | "success",
+        icon?: string,
+        size?: "small" | "medium" | "auto",
+        tooltip?: string,
 
-		css?: string | string[],
-		disabled?: boolean,
-		hidden?: boolean,
-	}
+        css?: string | string[],
+        disabled?: boolean,
+        hidden?: boolean,
+    }
 ]
 ~~~
 
 ### Description
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>type</b></td>
-			<td>(required) the type of a control, set it to "selectButton". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
-		</tr>
+            <td><b>type</b></td>
+            <td>(required) the type of a control, set it to "selectButton". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+        </tr>
         <tr>
-			<td><b>id</b></td>
-			<td>(optional) the id of a control, auto-generated if not set</td>
-		</tr>
-		<tr>
-			<td><b>parent</b></td>
-			<td>(optional) the parent of the item</td>
-		</tr>
-		<tr>
-			<td><b>value</b></td>
-			<td>(optional) the value of the button</td>
-		</tr>
-		<tr>
-			<td><b>items</b></td>
-			<td>(optional) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(optional) the id of a control, auto-generated if not set</td>
+        </tr>
         <tr>
-			<td><b>count</b></td>
-			<td>(optional) a badge with a number</td>
-		</tr>
+            <td><b>parent</b></td>
+            <td>(optional) the parent of the item</td>
+        </tr>
         <tr>
-			<td><b>countColor</b></td>
-			<td>(optional) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
-		</tr>
+            <td><b>value</b></td>
+            <td>(optional) the value of the button</td>
+        </tr>
         <tr>
-			<td><b>icon</b></td>
-			<td>(optional) the name of an <a href="../../customization">icon</a> from the used icon font</td>
-		</tr>
+            <td><b>items</b></td>
+            <td>(optional) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+        </tr>
         <tr>
-			<td><b>size</b></td>
-			<td>(optional) defines the size of a button: "small"|"medium"|"auto"</td>
-		</tr>
+            <td><b>count</b></td>
+            <td>(optional) a badge with a number</td>
+        </tr>
         <tr>
-			<td><b>tooltip</b></td>
-			<td>(optional) a tooltip for the control</td>
-		</tr>
-		<tr>
-			<td><b>css</b></td>
-			<td>(optional) adds style classes to a button</td>
-		</tr>
-		<tr>
-			<td><b>disabled</b></td>
-			<td>(optional) defines whether a button is disabled</td>
-		</tr>
+            <td><b>countColor</b></td>
+            <td>(optional) the color of a badge with number: "danger" | "secondary" | "primary" | "success"</td>
+        </tr>
         <tr>
-			<td><b>hidden</b></td>
-			<td>(optional) defines whether a button is hidden</td>
-		</tr>
+            <td><b>icon</b></td>
+            <td>(optional) the name of an <a href="../../customization">icon</a> from the used icon font</td>
+        </tr>
+        <tr>
+            <td><b>size</b></td>
+            <td>(optional) defines the size of a button: "small"|"medium"|"auto"</td>
+        </tr>
+        <tr>
+            <td><b>tooltip</b></td>
+            <td>(optional) a tooltip for the control</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td>
+            <td>(optional) adds style classes to a button</td>
+        </tr>
+        <tr>
+            <td><b>disabled</b></td>
+            <td>(optional) defines whether a button is disabled</td>
+        </tr>
+        <tr>
+            <td><b>hidden</b></td>
+            <td>(optional) defines whether a button is hidden</td>
+        </tr>
     </tbody>
 </table>
 

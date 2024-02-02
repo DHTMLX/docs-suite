@@ -15,7 +15,7 @@ description: You can explore the afterHide event of Layout in the documentation 
 
 @example:
 layout.events.on("afterHide", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

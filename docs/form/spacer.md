@@ -18,19 +18,19 @@ You can easily add a Spacer control during initialization of a form:
 const form = new dhx.Form("form_container", {
     rows: [
         {
-  			type: "input",
-  			label: "Name",
-  			name: "name"
-		},
-		{
-  			type: "spacer",
+              type: "input",
+              label: "Name",
+              name: "name"
+        },
+        {
+              type: "spacer",
             name: "spacer"
-		},
-		{
-  			type: "input",
-  			label: "Email",
-  			name: "email"
-		}
+        },
+        {
+              type: "input",
+              label: "Email",
+              name: "email"
+        }
     ]
 });
 ~~~

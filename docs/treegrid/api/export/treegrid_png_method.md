@@ -35,7 +35,7 @@ If you use TreeGrid in conjunction with [Pagination](pagination.md), only the di
 
 **Related samples**: [TreeGrid. Export to PDF/PNG](https://snippet.dhtmlx.com/iyqmmcoh)
 
-**Related article:** [Exporting TreeGrid](treegrid/usage.md#exporting-treegrid)
+**Related article:** [Exporting TreeGrid](treegrid/usage.md)
 
 **Related API:** [exportStyles](treegrid/api/treegrid_exportstyles_config.md)
 

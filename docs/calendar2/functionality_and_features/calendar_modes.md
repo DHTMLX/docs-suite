@@ -22,7 +22,7 @@ You can also show the calendar in one of the modes using the [](../api/calendar_
 You can show a particular date in the calendar and/or open Calendar in a certain mode via the [](../api/calendar_showdate_method.md) method. It takes two parameters:
 
 - **date** - (*Date*) the date that should be shown in the calendar. Use null if you need to show current month or year
-- **mode** - (*string*)	optional, the mode in which the calendar will be opened
+- **mode** - (*string*)    optional, the mode in which the calendar will be opened
 
 There are the following calendar modes available:
 

@@ -12,7 +12,7 @@ description: You can explore the helpMessage config of Slider in the documentati
 
 @example:
 const slider = new dhx.Slider("slider_container",{
-	helpMessage:"Some text"
+    helpMessage:"Some text"
 });
 
 @descr:

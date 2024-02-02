@@ -12,13 +12,13 @@ description: You can explore the columns config of TreeGrid in the documentation
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		{ width: 100, id: "a", header: [{ text: "#" }] },
-		{ width: 100, id: "b", header: [{ text: "Title" }] },
-		{ width: 200, id: "c", header: [{ text: "Name" }] },
-		{ width: 200, id: "d", header: [{ text: "Address" }] }
-	],
-	data: dataset
+    columns: [
+        { width: 100, id: "a", header: [{ text: "#" }] },
+        { width: 100, id: "b", header: [{ text: "Title" }] },
+        { width: 200, id: "c", header: [{ text: "Name" }] },
+        { width: 200, id: "d", header: [{ text: "Address" }] }
+    ],
+    data: dataset
 });
 
 @descr:

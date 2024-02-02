@@ -16,7 +16,7 @@ description: You can explore the afterSort event of TreeGrid in the documentatio
 
 @example:
 treegrid.events.on("afterSort", (col, dir) => {
-	console.log(col, dir);
+    console.log(col, dir);
 });
 
 @descr:

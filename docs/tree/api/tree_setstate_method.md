@@ -12,11 +12,11 @@ description: You can explore the setState method of Tree in the documentation of
 
 @params:
 - `state: object` - an object of *key:value* pairs, where *key* is the id of a tree item and *value* is an object which includes two properties:
-	- `selected: number` - the status of a checkbox of an item: 
-		- 0 - unselected
-		- 1 - selected
-		- 2 - indeterminate (for the parent item, in case its children are partially checked)
-	- `open: boolean` - checks whether a tree item is open (for folders with items)
+    - `selected: number` - the status of a checkbox of an item: 
+        - 0 - unselected
+        - 1 - selected
+        - 2 - indeterminate (for the parent item, in case its children are partially checked)
+    - `open: boolean` - checks whether a tree item is open (for folders with items)
 
 @example:
 // getting the state of a tree
@@ -33,39 +33,39 @@ Here is an example of a treeState object:
 
 ~~~js
 {
-	"books": {
-		"open": true,
-		"selected": 2
-	},
+    "books": {
+        "open": true,
+        "selected": 2
+    },
 
-	"mystery": {
-		"open": true,
-		"selected": 2
-	},
+    "mystery": {
+        "open": true,
+        "selected": 2
+    },
 
-	"thrillers": {
-		"selected": 1
-	},
+    "thrillers": {
+        "selected": 1
+    },
 
-	"rc": {
-		"selected": 0
-	},
+    "rc": {
+        "selected": 0
+    },
 
-	"ir": {
-		"selected": 1
-	},
+    "ir": {
+        "selected": 1
+    },
 
-	"history": {
-		"selected": 0
-	},
+    "history": {
+        "selected": 0
+    },
 
-	"jmf": {
-		"selected": 0
-	},
+    "jmf": {
+        "selected": 0
+    },
 
-	"jd": {
-		"selected": 0
-	}
+    "jd": {
+        "selected": 0
+    }
 }
 ~~~
 

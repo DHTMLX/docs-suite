@@ -14,7 +14,7 @@ description: You can explore the grayShades config of Colorpicker in the documen
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	grayShades: false
+    grayShades: false
 });
 
 @descr: 

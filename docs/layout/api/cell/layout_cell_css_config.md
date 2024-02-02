@@ -15,29 +15,29 @@ description: You can explore the css config of a cell of Layout in the documenta
 
 ~~~html
 <style>
-	.layout-header {
-		--dhx-background-primary: #3A434A;
-	}
-	.dhx_layout-cell-inner_html {
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+    .layout-header {
+        --dhx-background-primary: #3A434A;
+    }
+    .dhx_layout-cell-inner_html {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 
 <script>
-	const layout = new dhx.Layout("layout_container", {
-		rows: [
-	    	{
-	            id: "toolbar",
-	            html: "Header",
-	            css: "layout-header",
-	            height: "60px"
-	        },
+    const layout = new dhx.Layout("layout_container", {
+        rows: [
+            {
+                id: "toolbar",
+                html: "Header",
+                css: "layout-header",
+                height: "60px"
+            },
             // more objects
-		]
-	});
+        ]
+    });
 </script>
 ~~~
 
@@ -48,14 +48,14 @@ Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_e
 ~~~js
 const layout = new dhx.Layout("layout_container", {
     css: "dhx_layout-cell--bordered",
-	rows: [
+    rows: [
         {
             id: "toolbar",
             html: "Header",
             css: "dhx_layout-cell--border_bottom layout-header",
             gravity: false,
             height: "60px"
-	    }
+        }
     ]
 });
 ~~~

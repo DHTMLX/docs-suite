@@ -19,12 +19,12 @@ You can easily add a Text control during initialization of a form:
 ~~~js
 const form = new dhx.Form("form_container", {
     rows: [
-		{
-			type: "text",
+        {
+            type: "text",
             name: "text",
-            label: "text",						
-			value: "I am a nice text"
-		}
+            label: "text",                        
+            value: "I am a nice text"
+        }
     ]
 });
 ~~~

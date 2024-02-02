@@ -9,7 +9,7 @@ description: You can have an overview of various Chart types in the documentatio
 DHTMLX Chart provides a variety of charts types that will help you to represent you data in the most suitable way. Each type of chart is easily configurable and can be adjusted according to your preferences.
 All in all there are 11 types of chart, in the list below they are combined into groups for the sake of convenience:
 
-- [Overview of Chart types](#overview-of-chart-types)
+- Overview of Chart types
   - [Line and Spline chart](#line-and-spline-chart)
     - [Line chart](#line-chart)
     - [Spline chart](#spline-chart)

@@ -20,7 +20,7 @@ The event fires when you load items via the <a href="../treecollection_loaditems
 
 @example:
 component.data.events.on("afterItemLoad", function(id){
-	console.log("An ", id, " item is loaded");
+    console.log("An ", id, " item is loaded");
 });
 
 @descr: 

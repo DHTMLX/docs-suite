@@ -38,12 +38,12 @@ const state = form.getValue();
 // -> {"id":"John Doe"}
 ~~~
 
-2\. Starting with v7.0, the type of the returned value for the **TimePicker** control depends on the applied [valueFormat](form/timepicker.md#addingtimepicker) and [timeFormat](form/timepicker.md#addingtimepicker):
+2\. Starting with v7.0, the type of the returned value for the **TimePicker** control depends on the applied [valueFormat](form/timepicker.md#adding-timepicker) and [timeFormat](form/timepicker.md#adding-timepicker):
 
-- If *valueFormat: "string"*  and *timeFormat:24* are specified, a return string value will include just the hour and minutes: "00:39"
-- If *valueFormat: "string"*  and *timeFormat:12* are specified, a return string value will include hour, minutes, and am/pm identifiers: "06:00AM"
-- If *valueFormat: "timeObject"*  and *timeFormat:24* are specified, a return object value will contain key:value pairs for hours, minutes and their values: {hour: 0, minute: 39}
-- If *valueFormat: "timeObject"*  and *timeFormat:12* are specified, a return object value will contain key:value pairs for hours, minutes, am/pm identifiers and their values: {hour: 6, minute: 0, AM: true}
+- If `valueFormat: "string"`  and `timeFormat:24` are specified, a return string value will include just the hour and minutes: "00:39"
+- If `valueFormat: "string"`  and `timeFormat:12` are specified, a return string value will include hour, minutes, and am/pm identifiers: "06:00AM"
+- If `valueFormat: "timeObject"`  and `timeFormat:24` are specified, a return object value will contain `key:value` pairs for hours, minutes and their values: `{hour: 0, minute: 39}`
+- If `valueFormat: "timeObject"`  and `timeFormat:12` are specified, a return object value will contain `key:value` pairs for hours, minutes, am/pm identifiers and their values: `{hour: 6, minute: 0, AM: true}`
 
 [comment]: # (@relatedapi: form/api/form_setvalue_method.md)
 

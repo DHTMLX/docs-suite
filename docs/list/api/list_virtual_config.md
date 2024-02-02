@@ -14,7 +14,7 @@ description: You can explore the virtual config of List in the documentation of 
 
 @example:
 const list = new dhx.List("list_container", {
-	virtual: true
+    virtual: true
 });
 
 @descr:

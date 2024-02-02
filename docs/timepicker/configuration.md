@@ -17,7 +17,7 @@ There's the [](timepicker/api/timepicker_controls_config.md) property in the tim
 
 ~~~js {2}
 const timepicker = new dhx.Timepicker("timepicker_container", {
-	controls:true
+    controls:true
 });
 ~~~
 
@@ -43,7 +43,7 @@ const timepicker = new dhx.Timepicker("timepicker_container");
 
 ~~~js {2}
 const timepicker = new dhx.Timepicker("timepicker_container",{
-	timeFormat:12
+    timeFormat:12
 });
 ~~~
 

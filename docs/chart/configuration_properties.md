@@ -28,7 +28,7 @@ DHTMLX Chart includes several configuration options that are mostly common for a
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
-	type:"bar"
+    type:"bar"
 });
 ~~~
 
@@ -38,7 +38,7 @@ const chart = new dhx.Chart("chart_container", {
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
-	scales:{}
+    scales:{}
 });
 ~~~
 
@@ -52,13 +52,13 @@ There are "left","right","top","bottom" and "radial" (for Radar chart) types of 
 const chart = new dhx.Chart("chart_container", {
     type:"area",
     scales: {
-    	"bottom" : {
-    		text: 'month'
-    	},
-    	"left" : {
-    		padding: 10,
-    		max: 90
-    	}
+        "bottom" : {
+            text: 'month'
+        },
+        "left" : {
+            padding: 10,
+            max: 90
+        }
     },
     series: [
         {
@@ -80,7 +80,7 @@ Scales have both common and specific options. Check the full list of the availab
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
-	series:[]
+    series:[]
 });
 ~~~
 
@@ -92,28 +92,28 @@ The [](chart/api/chart_series_config.md) configuration option is required for al
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
-	type:"bar",
+    type:"bar",
     scales: {
-    	"bottom" : {
-    		text: "month"
-    	},
-    	"left" : {}
+        "bottom" : {
+            text: "month"
+        },
+        "left" : {}
     },
     series: [
-    	{
-    		id: "A",
-    		value: "company A",
-    		fill: "#394E79",
-    		stacked: stacked,
-    		color: "none"
-    	},
-    	{
-    		id: "B",
-    		value:"company B",
-    		fill: "#5E83BA",
-    		stacked: stacked,
-    		color: "none"
-    	}
+        {
+            id: "A",
+            value: "company A",
+            fill: "#394E79",
+            stacked: stacked,
+            color: "none"
+        },
+        {
+            id: "B",
+            value:"company B",
+            fill: "#5E83BA",
+            stacked: stacked,
+            color: "none"
+        }
     ]
 });
 ~~~
@@ -128,7 +128,7 @@ See the full list of configuration options for chart series in the [API referenc
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
-	legend:{}
+    legend:{}
 });
 ~~~
 
@@ -141,15 +141,15 @@ The [](chart/api/chart_legend_config.md) object may contain a number of options 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
     scales: {
-    	// scales config
+        // scales config
     },
     series: [
-    	// list of series 
+        // list of series 
     ],
     legend: {
-    	series: ["A", "B", "C"],
-    	valign: "top",
-    	halign: "right"
+        series: ["A", "B", "C"],
+        valign: "top",
+        halign: "right"
     }    
 });
 ~~~
@@ -168,8 +168,8 @@ You can view the full list of the configuration options of chart legends in the 
 
 ~~~js
 const chart = new dhx.Chart("chart_container", {
-	type:"line",
-	maxPoints:100
+    type:"line",
+    maxPoints:100
 });
 ~~~
 
@@ -450,7 +450,7 @@ For example:
 
 ~~~js
 const config = {
-	type: "scatter",
+    type: "scatter",
     scales: {
         bottom: {
             title: "value B",
@@ -550,15 +550,15 @@ const chart = new dhx.Chart("chart_container", config);
 
 ~~~js
 const treeMapData = [
-   	{
-   	   "planet": "Mercury",
-   	   "radius": "2440"
-   	},
-   	{
-   	   "planet": "Venus",
-   	   "radius": "6052"
-   	},
-	...
+       {
+          "planet": "Mercury",
+          "radius": "2440"
+       },
+       {
+          "planet": "Venus",
+          "radius": "6052"
+       },
+    ...
 ]
 
 const config = {
@@ -606,11 +606,11 @@ For example
 
 ~~~js
 const heatMapData = [
-	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
-	{ id: "201", value: 4, date: new Date(2022, 6, 15) },
-	{ id: "400", value: -14, date: new Date(2022, 9, 15) },
-	{ id: "500", value: 9, date: new Date(2022, 9, 20) },
-	{ id: "501", value: 100, date: new Date(2023, 1, 1) },
+    { id: "100", value: 50, date: new Date(2022, 2, 2) },
+    { id: "201", value: 4, date: new Date(2022, 6, 15) },
+    { id: "400", value: -14, date: new Date(2022, 9, 15) },
+    { id: "500", value: 9, date: new Date(2022, 9, 20) },
+    { id: "501", value: 100, date: new Date(2023, 1, 1) },
 ];
 
 const config = {
@@ -627,16 +627,16 @@ const config = {
             dateFormat: "%d %M %Y",
             tooltipTemplate: point => `${point[1]} contributions on ${point[0]}`,
             maxValue: 90,
-			minValue: 0,
+            minValue: 0,
         }
     ],
     legend: {
         values: {
             text: "Calendar heatmap chart",
             tick: 5,
-			majorTick: 2,
-			step: 1,
-			tickTemplate: value => `${value}c`,
+            majorTick: 2,
+            step: 1,
+            tickTemplate: value => `${value}c`,
         },
         halign: "right",
         valign: "top",
@@ -665,13 +665,13 @@ Let's take the following data set:
 
 ~~~js
 const heatMapData = [
-	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
-	{ id: "101", value: 100, date: new Date(2022, 4, 1) },
-	{ id: "200", value: 32, date: new Date(2022, 6, 1) },
-	{ id: "202", value: 35, date: new Date(2022, 7, 21) },
-	{ id: "400", value: -14, date: new Date(2022, 9, 15) },
-	{ id: "500", value: 9, date: new Date(2022, 9, 20) },
-	{ id: "501", value: 100, date: new Date(2023, 3, 1) },
+    { id: "100", value: 50, date: new Date(2022, 2, 2) },
+    { id: "101", value: 100, date: new Date(2022, 4, 1) },
+    { id: "200", value: 32, date: new Date(2022, 6, 1) },
+    { id: "202", value: 35, date: new Date(2022, 7, 21) },
+    { id: "400", value: -14, date: new Date(2022, 9, 15) },
+    { id: "500", value: 9, date: new Date(2022, 9, 20) },
+    { id: "501", value: 100, date: new Date(2023, 3, 1) },
     { id: "502", value: 40, date: new Date(2023, 4, 11) },
     { id: "503", value: 23, date: new Date(2023, 5, 6) },
 ];
@@ -748,12 +748,12 @@ If you specify the start date but don't specify the end date, the period for whi
 
 ~~~js title="Example 1. Data in the range less than a year" {16}
 const heatMapData = [
-	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
-	{ id: "101", value: 100, date: new Date(2022, 4, 1) },
-	{ id: "200", value: 32, date: new Date(2022, 6, 1) },
-	{ id: "202", value: 35, date: new Date(2022, 7, 21) },
-	{ id: "500", value: 9, date: new Date(2022, 9, 20) },
-	{ id: "501", value: 100, date: new Date(2023, 1, 1) },
+    { id: "100", value: 50, date: new Date(2022, 2, 2) },
+    { id: "101", value: 100, date: new Date(2022, 4, 1) },
+    { id: "200", value: 32, date: new Date(2022, 6, 1) },
+    { id: "202", value: 35, date: new Date(2022, 7, 21) },
+    { id: "500", value: 9, date: new Date(2022, 9, 20) },
+    { id: "501", value: 100, date: new Date(2023, 1, 1) },
 ];
 
 const config = {
@@ -775,12 +775,12 @@ As a result, the chart will be displayed for the period from "15/03/22" to "14/0
 
 ~~~js title="Example 2. Data in the range more than a year" {18}
 const heatMapData = [
-	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
-	{ id: "101", value: 100, date: new Date(2022, 4, 1) },
-	{ id: "200", value: 32, date: new Date(2022, 6, 1) },
-	{ id: "202", value: 35, date: new Date(2022, 7, 21) },
-	{ id: "500", value: 9, date: new Date(2022, 9, 20) },
-	{ id: "501", value: 100, date: new Date(2023, 3, 1) },
+    { id: "100", value: 50, date: new Date(2022, 2, 2) },
+    { id: "101", value: 100, date: new Date(2022, 4, 1) },
+    { id: "200", value: 32, date: new Date(2022, 6, 1) },
+    { id: "202", value: 35, date: new Date(2022, 7, 21) },
+    { id: "500", value: 9, date: new Date(2022, 9, 20) },
+    { id: "501", value: 100, date: new Date(2023, 3, 1) },
     { id: "502", value: 40, date: new Date(2023, 4, 11) },
     { id: "503", value: 23, date: new Date(2023, 5, 6) },
 ];
@@ -808,12 +808,12 @@ If you specify the end date but don't specify the start date, the period for whi
 
 ~~~js {18}
 const heatMapData = [
-	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
-	{ id: "101", value: 100, date: new Date(2022, 4, 1) },
-	{ id: "200", value: 32, date: new Date(2022, 6, 1) },
-	{ id: "202", value: 35, date: new Date(2022, 7, 21) },
-	{ id: "300", value: 22, date: new Date(2022, 9, 6) },
-	{ id: "501", value: 100, date: new Date(2023, 3, 1) },
+    { id: "100", value: 50, date: new Date(2022, 2, 2) },
+    { id: "101", value: 100, date: new Date(2022, 4, 1) },
+    { id: "200", value: 32, date: new Date(2022, 6, 1) },
+    { id: "202", value: 35, date: new Date(2022, 7, 21) },
+    { id: "300", value: 22, date: new Date(2022, 9, 6) },
+    { id: "501", value: 100, date: new Date(2023, 3, 1) },
     { id: "502", value: 40, date: new Date(2023, 4, 11) },
     { id: "503", value: 23, date: new Date(2023, 5, 6) },
 ];

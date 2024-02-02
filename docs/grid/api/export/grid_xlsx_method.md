@@ -12,8 +12,8 @@ description: You can explore the xlsx export method of Grid in the documentation
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to EXCEL:
-	- `url?: string` - (optional) the link to the server side where export will be processed. By default, it is **"//export.dhtmlx.com/excel"**
-	- `name?: string` - (optional) the name of a ready Excel file
+    - `url?: string` - (optional) the link to the server side where export will be processed. By default, it is **"//export.dhtmlx.com/excel"**
+    - `name?: string` - (optional) the name of a ready Excel file
 
 
 @example:
@@ -31,4 +31,4 @@ grid.export.xlsx({
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-**Related article:** [Exporting Grid](grid/usage.md#exporting-grid)
+**Related article:** [Exporting Grid](grid/usage.md)

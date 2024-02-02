@@ -15,8 +15,8 @@ description: You can explore the adjust config of Grid in the documentation of t
 @example:
 const grid = new dhx.Grid("grid_container", {
     columns: [
-		// columns config
-	],
+        // columns config
+    ],
     adjust: true,
     data: dataset
 });
@@ -28,23 +28,23 @@ const grid = new dhx.Grid("grid_container", {
 The property can be specified to one of the available adjustment modes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>"header"</b></td>
-			<td>adjusts the columns to the width of their header</td>
-		</tr>
+            <td><b>"header"</b></td>
+            <td>adjusts the columns to the width of their header</td>
+        </tr>
         <tr>
-			<td><b>"footer"</b></td>
-			<td>adjusts the columns to the width of their footer</td>
-		</tr>
+            <td><b>"footer"</b></td>
+            <td>adjusts the columns to the width of their footer</td>
+        </tr>
         <tr>
-			<td><b>"data"</b></td>
-			<td>adjusts the columns to the width of their content</td>
-		</tr>
+            <td><b>"data"</b></td>
+            <td>adjusts the columns to the width of their content</td>
+        </tr>
         <tr>
-			<td><b>true</b></td>
-			<td>combines the above mentioned modes and adjusts the column to the bigger value</td>
-		</tr>
+            <td><b>true</b></td>
+            <td>combines the above mentioned modes and adjusts the column to the bigger value</td>
+        </tr>
     </tbody>
 </table>
 

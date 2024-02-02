@@ -17,12 +17,12 @@ An object with the current value of the control.
 const value = form.getItem("avatar").getValue();
 /* =>
 {
-	"id": "image",
-	"src": "http://domen/upload/files/image.png",
-	"status": "uploaded"
+    "id": "image",
+    "src": "http://domen/upload/files/image.png",
+    "status": "uploaded"
 }
 */
 
 @descr:
 
-The returned object may contains the properties listed in the description of the [value](form/api/avatar/api_avatar_properties.md/#value) configuration object.
+The returned object may contains the properties listed in the description of the [value](form/api/avatar/api_avatar_properties.md) configuration object.

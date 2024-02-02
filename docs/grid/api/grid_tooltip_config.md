@@ -14,11 +14,11 @@ description: You can explore the tooltip config of Grid in the documentation of 
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	data: dataset,
-	tooltip: false
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    tooltip: false
 });
 
 @descr:

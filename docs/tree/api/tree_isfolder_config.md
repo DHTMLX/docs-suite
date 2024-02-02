@@ -13,7 +13,7 @@ description: You can explore the isFolder config of Tree in the documentation of
 @example:
 const tree = new dhx.Tree("tree_container", {
     isFolder: function() {
-	    return true;
+        return true;
     }
 });
 

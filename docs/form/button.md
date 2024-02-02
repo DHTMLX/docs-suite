@@ -18,16 +18,16 @@ You can easily add a Button control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-			type: "button",
+    rows: [
+        {
+            type: "button",
             name: "button",
             text: "Send",
             size: "medium",
             view: "flat",
             color: "primary"
-		}   
-  	]
+        }   
+      ]
 });
 ~~~
 

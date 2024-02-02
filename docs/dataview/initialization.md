@@ -30,8 +30,8 @@ To initialize DHTMLX DataView on a page, you need to take the following simple s
         <script>
             // creating DHTMLX DataView
             const dataview = new dhx.DataView("dataview_container", {
-    			itemsInRow: 5
-			});
+                itemsInRow: 5
+            });
         </script>
     </body>
 </html>

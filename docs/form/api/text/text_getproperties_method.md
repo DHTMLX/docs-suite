@@ -33,15 +33,15 @@ The returned object of the **Text** control looks like:
 
 ~~~js
 {
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	inputType: "text",
-	label: "text",
-	labelPosition: "top",
-	labelWidth: "",
-	padding: 0,
-	width: "content"
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    inputType: "text",
+    label: "text",
+    labelPosition: "top",
+    labelWidth: "",
+    padding: 0,
+    width: "content"
 }
 ~~~
 

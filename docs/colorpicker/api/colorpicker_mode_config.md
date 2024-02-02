@@ -14,8 +14,8 @@ description: You can explore the mode config of Colorpicker in the documentation
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container", {
-	mode: "palette",
-	css: "dhx_widget--bordered"
+    mode: "palette",
+    css: "dhx_widget--bordered"
 });
 
 

@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second_class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -42,15 +42,15 @@ For example:
 
 ~~~html
 <style>
-	.custom {
+    .custom {
         --dhx-color-primary: #118d8d;
     }
 </style>
 
 <script>
-	const calendar = new dhx.Calendar("calendar_container", { 
-		css: "custom dhx_widget--bordered"
-	});
+    const calendar = new dhx.Calendar("calendar_container", { 
+        css: "custom dhx_widget--bordered"
+    });
 </script>
 ~~~
 
@@ -64,19 +64,19 @@ You can apply custom styling to dates selected in a calender as well as to [date
 
 ~~~html
 <style>
-	/* system style for selected dates */
-	.dhx_calendar-day--selected::before {
-		background-color: #ff5252;
-	}
+    /* system style for selected dates */
+    .dhx_calendar-day--selected::before {
+        background-color: #ff5252;
+    }
 
-	/* system style for a date range */
-	.dhx_calendar-day--in-range:after {
-		background-color: #ffe7e7;
- 	}
+    /* system style for a date range */
+    .dhx_calendar-day--in-range:after {
+        background-color: #ffe7e7;
+     }
 </style>
 
 <script>
-	const calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
-	const calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
+    const calendar1 = new dhx.Calendar("calendar1", {css: "dhx_widget--bordered"});
+    const calendar2 = new dhx.Calendar("calendar2", {css: "dhx_widget--bordered"});
 </script>
 ~~~

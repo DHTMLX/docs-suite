@@ -16,7 +16,7 @@ description: You can explore the afterEditEnd event of DataView in the documenta
 
 @example:
 dataview.events.on("afterEditEnd", function(value,id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

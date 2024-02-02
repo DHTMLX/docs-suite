@@ -14,8 +14,8 @@ description: You can explore the range config of Calendar in the documentation o
 
 @example:
 const calendar = new dhx.Calendar("calendar_container", {
-	css: "dhx_widget--bordered",
-	range: true
+    css: "dhx_widget--bordered",
+    range: true
 });
 
 @descr:

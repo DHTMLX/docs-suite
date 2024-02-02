@@ -20,10 +20,10 @@ const form = new dhx.Form("form_container", {
             type: "avatar",
             name:"avatar",
             helpMessage: "Help information",
-	    	required: true,
-	    	label: "Avatar",
-	    	labelWidth: 140,
-	    	target: "https://docs.dhtmlx.com/suite/backend/upload",
+            required: true,
+            label: "Avatar",
+            labelWidth: 140,
+            target: "https://docs.dhtmlx.com/suite/backend/upload",
         }
     ]
 });

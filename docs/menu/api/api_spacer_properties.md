@@ -10,25 +10,25 @@ description: You can explore the Spacer properties of Menu in the documentation 
 
 ~~~js
 const data = [
-	{
-		type: "spacer",
-		id?: string | number,
-	}
+    {
+        type: "spacer",
+        id?: string | number,
+    }
 ]
 ~~~
 
 ### Description
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>type</b></td>
-			<td>(required) the item type, set it to "spacer". If not specified - the <a href="../../configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
-		</tr>
+            <td><b>type</b></td>
+            <td>(required) the item type, set it to "spacer". If not specified - the <a href="../../configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
+        </tr>
         <tr>
-			<td><b>id</b></td>
-			<td>(optional) the ID of a control, auto-generated if not set</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(optional) the ID of a control, auto-generated if not set</td>
+        </tr>
     </tbody>
 </table>
 

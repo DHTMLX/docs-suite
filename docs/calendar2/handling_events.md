@@ -58,5 +58,5 @@ calendar.events.fire("name",args);
 
 ## The list of events
 
-You can find the full list of events in the [Calendar API](calendar/api/refs/calendar_events.md).
+You can find the full list of events in the **Calendar API**
 

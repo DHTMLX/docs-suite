@@ -14,11 +14,11 @@ description: You can explore the selection config of Grid in the documentation o
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	selection:"complex",
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    selection:"complex",
+    data: dataset
 });
 
 @descr:

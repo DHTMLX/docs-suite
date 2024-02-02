@@ -20,10 +20,10 @@ const form = new dhx.Form("form_container", {
             type: "simpleVault",
             name:"simplevault",
             helpMessage: "Help information",
-	    	required: true,
-	    	label: "Simple Vault",
-	    	labelWidth: 140,
-	    	target: "https://docs.dhtmlx.com/suite/backend/upload",
+            required: true,
+            label: "Simple Vault",
+            labelWidth: 140,
+            target: "https://docs.dhtmlx.com/suite/backend/upload",
         }
     ]
 });
@@ -36,7 +36,7 @@ The returned object of the **SimpleVault** control looks like:
 
 ~~~js
 {
-	"width": "content",
+    "width": "content",
     "height": "content",
     "css": "",
     "required": true,

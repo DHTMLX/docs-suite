@@ -22,9 +22,9 @@ description: You can explore the css config of Timepicker in the documentation o
 </style>
 
 <script>
-	const timepicker = new dhx.Timepicker("timepicker_container", {
-  		css: "custom dhx_widget--bordered"
-	});
+    const timepicker = new dhx.Timepicker("timepicker_container", {
+          css: "custom dhx_widget--bordered"
+    });
 </script>
 ~~~
 
@@ -34,7 +34,7 @@ Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_e
 
 ~~~js
 const timepicker = new dhx.Timepicker("timepicker_container", {
-	css: "dhx_widget--bg-gray"
+    css: "dhx_widget--bg-gray"
 });
 ~~~
 

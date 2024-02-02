@@ -10,29 +10,29 @@ description: You can explore the Properties of the Text control of Form in the d
 
 ~~~js
 {
-	type: "text",
+    type: "text",
     name?: string,
-	id?: string,
-	value?: number | string,
+    id?: string,
+    value?: number | string,
 
-	css?: string,
-	disabled?: boolean, // false by default
-	height?: string | number | "content", // "content" by default
-	hidden?: boolean, // false by default
-	padding?: string | number, // "8px" by default
+    css?: string,
+    disabled?: boolean, // false by default
+    height?: string | number | "content", // "content" by default
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     width?: string | number | "content", // "content" by default
 
     inputType?: "text" | "password" | "number", // "text" by default
-	
+    
     hiddenLabel?: boolean, // false by default
-	label?: string,
-	labelPosition?: "left" | "top", // "top" by default
-	labelWidth?: string | number,
+    label?: string,
+    labelPosition?: "left" | "top", // "top" by default
+    labelWidth?: string | number,
 
     helpMessage?: string,
-	preMessage?: string,
-	successMessage?: string,
-	errorMessage?: string,
+    preMessage?: string,
+    successMessage?: string,
+    errorMessage?: string,
 }
 ~~~
 

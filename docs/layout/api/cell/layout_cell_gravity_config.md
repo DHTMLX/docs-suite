@@ -14,31 +14,31 @@ description: You can explore the gravity config of Layout in the documentation o
 
 @example:
 const layout = dhx.Layout("layout_container", {
-	css: "dhx_widget--bordered",
-	rows: [
-		{
-			id: "1",
-			cols: [
-				{
-					id: "1.1",
-					css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
-					html: "1.1",
+    css: "dhx_widget--bordered",
+    rows: [
+        {
+            id: "1",
+            cols: [
+                {
+                    id: "1.1",
+                    css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
+                    html: "1.1",
                     gravity: 2
-				},
-				{
-					id: "1.2",
-					css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
-					html: "1.2",
+                },
+                {
+                    id: "1.2",
+                    css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
+                    html: "1.2",
                     gravity: 1 
-				},
-				{
-					id: "1.3",
-					css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
-					html: "1.3",
+                },
+                {
+                    id: "1.3",
+                    css: "dhx_layout-cell--border_left dhx_layout-cell--border_right",
+                    html: "1.3",
                     gravity: 3
-				}
-			]
-		}
+                }
+            ]
+        }
     ]
 });
 

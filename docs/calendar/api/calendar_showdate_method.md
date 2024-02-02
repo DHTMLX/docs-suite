@@ -23,19 +23,19 @@ calendar.showDate(new Date(2020,11,12));
 The **modes** are:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>"calendar"</b></td>
-			<td>shows the days of a month, the default mode</td>
-		</tr>
+            <td><b>"calendar"</b></td>
+            <td>shows the days of a month, the default mode</td>
+        </tr>
         <tr>
-			<td><b>"month"</b></td>
-			<td>allows selecting a month of a year</td>
-		</tr>
+            <td><b>"month"</b></td>
+            <td>allows selecting a month of a year</td>
+        </tr>
         <tr>
-			<td><b>"year"</b></td>
-			<td>allows selecting a year</td>
-		</tr>
+            <td><b>"year"</b></td>
+            <td>allows selecting a year</td>
+        </tr>
     </tbody>
 </table>
 

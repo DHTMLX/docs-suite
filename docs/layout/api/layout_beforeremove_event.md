@@ -18,7 +18,7 @@ Return `false` to prevent removing of a cell; otherwise, `true`.
 
 @example:
 layout.events.on("beforeRemove", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

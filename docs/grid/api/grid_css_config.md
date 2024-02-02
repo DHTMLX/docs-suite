@@ -26,17 +26,17 @@ description: You can explore the css config of Grid in the documentation of the 
 </style>
 
 <script>
-	const grid = new dhx.Grid("grid_container", {
-    	columns: [
-        	{ minWidth: 150, id: "country", header: [{ text: "Country" }] },
-        	{ id: "population", header: [{ text: "Population" }] },
-        	{ id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-        	// more columns
-    	],
-    	adjust: true,
-    	data: dataset,
-    	css: "custom",
-	});
+    const grid = new dhx.Grid("grid_container", {
+        columns: [
+            { minWidth: 150, id: "country", header: [{ text: "Country" }] },
+            { id: "population", header: [{ text: "Population" }] },
+            { id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+            // more columns
+        ],
+        adjust: true,
+        data: dataset,
+        css: "custom",
+    });
 </script>
 ~~~
 

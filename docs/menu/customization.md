@@ -18,7 +18,7 @@ after the source files of DHTMLX Menu as follows:
 <link rel="stylesheet" href="../../codebase/menu.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
-	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
     crossorigin="anonymous">
 ~~~
 
@@ -26,18 +26,18 @@ Then you can use the name of the icon as the value of the **icon** property in t
 
 ~~~js
 const dataset = [
-	{ value: "File", 
-    	items: [
-    		{ value: "New File", icon: "fas fa-file"},
-    		{ value: "Open File", icon: "fas fa-file"}   
-    	]
+    { value: "File", 
+        items: [
+            { value: "New File", icon: "fas fa-file"},
+            { value: "Open File", icon: "fas fa-file"}   
+        ]
     },
     { value: "Edit",
-	    items: [
-			{ value: "Undo", icon: "fas fa-undo"},
-			{ value:  "Redo", icon: "fas fa-redo"}						
-		]
-	}
+        items: [
+            { value: "Undo", icon: "fas fa-undo"},
+            { value:  "Redo", icon: "fas fa-redo"}                        
+        ]
+    }
 ];
 ~~~
 
@@ -61,13 +61,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -83,27 +83,27 @@ For example:
 
 ~~~html
 <style>
-	.custom,.custom--popup-menu {
-		--dhx-background-primary: #3A434A;
-		--dhx-background-secondary: #5a6872;
-		--dhx-background-additional: #5a6872;
-		--dhx-s-toolbar-background: var(--dhx-background-primary);
+    .custom,.custom--popup-menu {
+        --dhx-background-primary: #3A434A;
+        --dhx-background-secondary: #5a6872;
+        --dhx-background-additional: #5a6872;
+        --dhx-s-toolbar-background: var(--dhx-background-primary);
 
-		--dhx-color-primary: #118d8d;
-		--dhx-color-primary-hover: #49e9e9;
-		--dhx-color-primary-active: #49e9e9;
+        --dhx-color-primary: #118d8d;
+        --dhx-color-primary-hover: #49e9e9;
+        --dhx-color-primary-active: #49e9e9;
 
-		--dhx-font-color-primary: #fff;
-		--dhx-font-color-secondary: #fff;
-		--dhx-font-color-additional: #fff;
-	}
+        --dhx-font-color-primary: #fff;
+        --dhx-font-color-secondary: #fff;
+        --dhx-font-color-additional: #fff;
+    }
 </style>
 
 <script>
-	const menu = new dhx.Menu("menu_container", {
-	    css: "custom",
-	});
+    const menu = new dhx.Menu("menu_container", {
+        css: "custom",
+    });
 
-	menu.data.parse(dataset);
+    menu.data.parse(dataset);
 </script>
 ~~~

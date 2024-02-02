@@ -13,8 +13,8 @@ description: You can explore the width config of Colorpicker in the documentatio
 @default: "238px"
 
 @example:
-const colorpicker = new dhx.Colorpicker("colorpicker_container", {	
-	width: "300px"				
+const colorpicker = new dhx.Colorpicker("colorpicker_container", {    
+    width: "300px"                
 });
 
 @descr: 

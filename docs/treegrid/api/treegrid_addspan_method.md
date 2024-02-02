@@ -12,12 +12,12 @@ description: You can explore the addSpan method of TreeGrid in the documentation
 
 @params:
 - `spanObj: object` - an object with configuration of a span. It contains the following properties:
-	- `row: string | number` - required, the id of a row
-	- `column: string | number` - required, the id of a column
-	- `rowspan: number` - optional, the number of rows in a span
-	- `colspan: number` - optional, the number of columns in a span
-	- `text: string | number` - optional, the text in a spanned row/column
-	- `css: string` - optional, the name of the CSS class that will be applied to a span
+    - `row: string | number` - required, the id of a row
+    - `column: string | number` - required, the id of a column
+    - `rowspan: number` - optional, the number of rows in a span
+    - `colspan: number` - optional, the number of columns in a span
+    - `text: string | number` - optional, the text in a spanned row/column
+    - `css: string` - optional, the name of the CSS class that will be applied to a span
 
 @example:
 grid.addSpan({ 

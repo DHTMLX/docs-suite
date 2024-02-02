@@ -12,11 +12,11 @@ description: You can explore the width config of Grid in the documentation of th
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	width: 400, 
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    width: 400, 
+    data: dataset
 });
 
 @descr:

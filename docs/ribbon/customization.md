@@ -19,7 +19,7 @@ after the source files of DHTMLX Ribbon as follows:
 <link rel="stylesheet" href="../../codebase/ribbon.css">
 
 <link href="https://cdn.materialdesignicons.com/3.6.95/css/materialdesignicons.min.css?v=6.4.4" 
-	media="all" rel="stylesheet" type="text/css">
+    media="all" rel="stylesheet" type="text/css">
 ~~~
 
 Then you can use the name of the icon as the value of the **icon** property in the [object with the control parameters](ribbon/data_loading.md#json-format-templates) for ribbon:
@@ -28,37 +28,37 @@ Then you can use the name of the icon as the value of the **icon** property in t
 
 ~~~js
 const data = [
-	{
-		type: "block",
-		"items": [
-			{
-				type: "block",
-				"items": [
-					{
-						value: "New",
-						icon: "mdi mdi-file-outline",
-						size: "auto",
-					}
-				]
-			},
-			{
-				type: "block",
-				direction: "col",
-				"items": [
-					{
-						value: "Add",
-						icon: "mdi mdi-plus",
-						size: "small",
-					},
-					{
-						value: "Remove",
-						icon: "mdi mdi-minus",
-						size: "small",
-					}
-				]
-			}
-		]
-	}
+    {
+        type: "block",
+        "items": [
+            {
+                type: "block",
+                "items": [
+                    {
+                        value: "New",
+                        icon: "mdi mdi-file-outline",
+                        size: "auto",
+                    }
+                ]
+            },
+            {
+                type: "block",
+                direction: "col",
+                "items": [
+                    {
+                        value: "Add",
+                        icon: "mdi mdi-plus",
+                        size: "small",
+                    },
+                    {
+                        value: "Remove",
+                        icon: "mdi mdi-minus",
+                        size: "small",
+                    }
+                ]
+            }
+        ]
+    }
 ];
 ~~~
 
@@ -80,13 +80,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -110,10 +110,10 @@ For example:
 </style>
 
 <script>
-	const ribbon = new dhx.Ribbon("ribbon_container", {
-    	css: "custom dhx_widget--bordered"
-	});
+    const ribbon = new dhx.Ribbon("ribbon_container", {
+        css: "custom dhx_widget--bordered"
+    });
 
-	ribbon.data.parse(data);
+    ribbon.data.parse(data);
 </script>
 ~~~

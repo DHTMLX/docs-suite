@@ -105,11 +105,11 @@ toolbar.enable();
 To check if an item of Toolbar is disabled, call the [isDisabled()](toolbar/api/toolbar_isdisabled_method.md) method. The method takes one parameter:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of a toolbar item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of a toolbar item</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -139,15 +139,15 @@ You can attach a tooltip to a control. For this you need to provide the **toolti
 To select a particular Toolbar item, make use of the [select()](toolbar/api/toolbar_select_method.md) method of Toolbar. The method takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of an item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) the id of an item</td>
+        </tr>
         <tr>
-			<td><b>unselect</b></td>
-			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
-		</tr>
+            <td><b>unselect</b></td>
+            <td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
+        </tr>
     </tbody>
 </table>
 
@@ -180,11 +180,11 @@ toolbar.unselect();
 To check if an item of Toolbar is selected, call the [isSelected()](toolbar/api/toolbar_isselected_method.md) method. The method takes one parameter:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of a toolbar item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of a toolbar item</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -214,32 +214,32 @@ You can manipulate the controls of Toolbar with the help of the [Tree collection
 It is possible to add more controls into the initialized Toolbar on the fly. Use the **add()** method of Tree Collection. It takes three parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) the configuration object of the added control</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) the configuration object of the added control</td>
+        </tr>
         <tr>
-			<td><b>index</b></td>
-			<td>(<i>number</i>) optional, the position to add a control at</td>
-		</tr>
+            <td><b>index</b></td>
+            <td>(<i>number</i>) optional, the position to add a control at</td>
+        </tr>
         <tr>
-			<td><b>parent</b></td>
-			<td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
-		</tr>
+            <td><b>parent</b></td>
+            <td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~js
 toolbar.data.add({
-	type:"button", value:"Add"
+    type:"button", value:"Add"
 });
 toolbar.data.add({
-	type:"separator"
+    type:"separator"
 });
 toolbar.data.add({
-	type:"button", value:"Remove"
+    type:"button", value:"Remove"
 });
 ~~~
 
@@ -252,15 +252,15 @@ Templates for Toolbar controls in the JSON format are given [here](toolbar/load_
 You can change config options of the control via the **update()** method of Tree Collection. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>the id of the control</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>the id of the control</td>
+        </tr>
         <tr>
-			<td><b>config</b></td>
-			<td>an object with new configuration of the control</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>an object with new configuration of the control</td>
+        </tr>
     </tbody>
 </table>
 

@@ -19,7 +19,7 @@ DHTMLX Toolbar expects loaded data in the JSON format. Here is an example of an 
 
 ~~~js
 const dataset = [
- 	{
+     {
         "id": "other",
         "type": "button",
         "view": "link",
@@ -56,8 +56,8 @@ You can load a [predefined data set](#preparing-data-set) into Toolbar on the in
 
 ~~~js
 const toolbar = new dhx.Toolbar("toolbar_container", {
-  	css: "dhx_widget--bordered",
-  	data: dataset
+      css: "dhx_widget--bordered",
+      data: dataset
 });
 ~~~
 
@@ -86,7 +86,7 @@ The **load** method loads the toolbar data from an external JSON file. All the d
 
 ~~~js
 toolbar.data.load("[path to this file]/file.json");
-~~~	
+~~~    
 
 **Related sample**: [Toolbar. Initialization with data.load()](https://snippet.dhtmlx.com/i5a9mx2i)
 
@@ -127,9 +127,9 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // common
 [
-	{id: "item_a", type: "button", ...},
-	{id: "item_b", type: "input", ...},
-	{id: "item_c", type: "text", ...}
+    {id: "item_a", type: "button", ...},
+    {id: "item_b", type: "input", ...},
+    {id: "item_c", type: "text", ...}
 ]
 ~~~
 
@@ -138,12 +138,12 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js 
 // button
 {
-	id:	"add",		  		
-	type: "button",	   		
-	icon: "dxi-plus",	 		
-	value: "Add",		  		
-	count: 11,			 				   		
-	tooltip: "Add a new user"	
+    id:    "add",                  
+    type: "button",               
+    icon: "dxi-plus",             
+    value: "Add",                  
+    count: 11,                                        
+    tooltip: "Add a new user"    
 }
 ~~~
 
@@ -154,9 +154,9 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // custom HTML button
 {
-	type: "customHTML",
-	html: "<img src='../logo.svg' alt=''/>",
-	css: "logo-container"
+    type: "customHTML",
+    html: "<img src='../logo.svg' alt=''/>",
+    css: "logo-container"
 }
 ~~~
 
@@ -167,9 +167,9 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // imageButton
 {
-	id:		  "user",				
-	type:	  "imageButton",		
-	src:	  "../img/avatar.png"				
+    id:          "user",                
+    type:      "imageButton",        
+    src:      "../img/avatar.png"                
 }
 ~~~
 
@@ -180,12 +180,12 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js 
 // input
 {
-	id:			 "lookup",					  
-	type:		 "input", 					  
-	value:		 "",						 
-	placeholder: "Type in to search...",	  
-	width:		 100,						  
-	label:		 "Search"
+    id:             "lookup",                      
+    type:         "input",                       
+    value:         "",                         
+    placeholder: "Type in to search...",      
+    width:         100,                          
+    label:         "Search"
 }
 ~~~
 
@@ -195,10 +195,10 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // menuItem
 {
-	type:"menuItem", 
-	value:"Some",
+    type:"menuItem", 
+    value:"Some",
     icon:"dxi dxi-check",
-	count:10
+    count:10
 }
 ~~~
 
@@ -220,7 +220,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // selectButton
 {
-	id:"select",
+    id:"select",
     type:"selectButton",
     icon:"dxi-some",
     items:[]
@@ -234,8 +234,8 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // separator
 {
-	id:	"sepId",		
-	type: "separator"	 	
+    id:    "sepId",        
+    type: "separator"         
 }
 ~~~
 
@@ -246,8 +246,8 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // spacer
 {
-	id:	"spacerId",	  	
-	type: "spacer"		
+    id:    "spacerId",          
+    type: "spacer"        
 }
 ~~~
 
@@ -258,10 +258,10 @@ This section will give you the idea of JSON format templates for separate Toolba
 ~~~js
 // title
 {
-	id: "collection",		
-	type: "title", 				
-	value: "Music",				
-	tooltip: "Current collection"	
+    id: "collection",        
+    type: "title",                 
+    value: "Music",                
+    tooltip: "Current collection"    
 }
 ~~~
 

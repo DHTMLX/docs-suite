@@ -18,14 +18,14 @@ You can easily add a Slider control during initialization of a form:
 ~~~js
 const form = new dhx.Form("form_container", {
     rows: [
-		{
-			type: "slider",
+        {
+            type: "slider",
             name:"slider",
             label: "slider",
             labelWidth: "50px",
             min: 0,
             max: 100
-		}
+        }
     ]
 });
 ~~~

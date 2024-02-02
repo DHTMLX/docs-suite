@@ -26,23 +26,23 @@ const rect = grid.getCellRect("1","c");
 The return object includes the following attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>x</b></td>
-			<td>(<i>number</i>) the X coordinate of a cell</td>
-		</tr>
+            <td><b>x</b></td>
+            <td>(<i>number</i>) the X coordinate of a cell</td>
+        </tr>
         <tr>
-			<td><b>y</b></td>
-			<td>(<i>number</i>) the Y coordinate of a cell</td>
-		</tr>
+            <td><b>y</b></td>
+            <td>(<i>number</i>) the Y coordinate of a cell</td>
+        </tr>
         <tr>
-			<td><b>height</b></td>
-			<td>(<i>number</i>) the height of a cell</td>
-		</tr>
+            <td><b>height</b></td>
+            <td>(<i>number</i>) the height of a cell</td>
+        </tr>
         <tr>
-			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a cell</td>
-		</tr>
+            <td><b>width</b></td>
+            <td>(<i>number</i>) the width of a cell</td>
+        </tr>
     </tbody>
 </table>
 

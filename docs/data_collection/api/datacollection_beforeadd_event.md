@@ -18,7 +18,7 @@ Return `false` to prevent an item adding into a data collection; otherwise, `tru
 
 @example:
 component.data.events.on("beforeAdd", function(newItem){
-	console.log("A new item will be added");
+    console.log("A new item will be added");
     return true;
 });
 

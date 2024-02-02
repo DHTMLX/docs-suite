@@ -12,9 +12,9 @@ description: You can explore the canRowDrop event of TreeGrid in the documentati
 
 @params:
 - `data: object` - data object. It contains the following parameters:
-	- `start: string | number` - the id of a row, from which the dragging process has started
-	- `source: array` - an array with ids of dragged rows
-	- `target: string | number` - the id of a potential target row
+    - `start: string | number` - the id of a row, from which the dragging process has started
+    - `source: array` - an array with ids of dragged rows
+    - `target: string | number` - the id of a potential target row
 - `events: MouseEvent` - a native HTML event object
 - `events: MouseEvent` - a native HTML event object
 

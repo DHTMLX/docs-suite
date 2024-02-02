@@ -12,11 +12,11 @@ description: You can explore the selection config of TreeGrid in the documentati
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	selection:"complex",
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    selection:"complex",
+    data: dataset
 });
 
 @descr:

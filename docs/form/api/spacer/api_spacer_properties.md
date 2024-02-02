@@ -10,14 +10,14 @@ description: You can explore the Properties of the Spacer control of Form in the
 
 ~~~js
 {
-	type: "spacer",
-	name?: string,
-	id?: string,
+    type: "spacer",
+    name?: string,
+    id?: string,
 
-	css?: string,
-	height?: string | number | "content", // "content" by default
-	hidden?: boolean, // false by default
-	padding?: string | number, // "8px" by default
+    css?: string,
+    height?: string | number | "content", // "content" by default
+    hidden?: boolean, // false by default
+    padding?: string | number, // "8px" by default
     width?: string | number | "content", // "content" by default
 }
 ~~~

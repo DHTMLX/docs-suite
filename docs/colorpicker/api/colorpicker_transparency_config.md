@@ -14,7 +14,7 @@ description: You can explore the transparency config of Colorpicker in the docum
 
 @example:
 const colorpicker = new dhx.Colorpicker("colorpicker_container",{
-	transparency: false
+    transparency: false
 });
 
 @descr: 

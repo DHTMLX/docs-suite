@@ -21,18 +21,15 @@ To set the main scheme of our app we should start by initializing the Layout. La
 <div id="layout"></div>
 ~~~
 
-2\. Create a Layout object and place it into the HTML container that we’ve just created. 
+2\. Create a Layout object and place it into the HTML container that we’ve just created.
 
-{{snippet
-'index.html' file 
-}}
 ~~~js title="script.js"
 var layout = new dhx.Layout("layout", {  
     height: "700px", // it’s important to set the height of the layout
     width: "1600px",
     rows: [
-		{    
-        	id: "toolbar-cell", //here the toolbar will be placed
+        {    
+            id: "toolbar-cell", //here the toolbar will be placed
             gravity: false, //remove automatic cell stretching
         }, 
         {
@@ -47,17 +44,15 @@ var layout = new dhx.Layout("layout", {
                     id: "chart-cell", //here the chart will be placed
                     width: "35%", // width in% for this cell
                     padding: "20px" // padding inside the cell
-				}
-			]
-		}
-	]
+                }
+            ]
+        }
+    ]
 });
 ~~~
-<i> We divide the layout into two rows. The first row will contain a toolbar. The second row will be divided into two columns: one for Grid and another for Chart. </i>
 
-You can read more information about [Configuration of a cell](layout/configuration.md#configurationofcell) and  about [Styling of Layout cells](layout/customization.md#stylinglayoutcells).
+*We divide the layout into two rows. The first row will contain a toolbar. The second row will be divided into two columns: one for Grid and another for Chart.*
 
+You can read more information about [Configuration of a cell](layout/cell_configuration.md) and  about [Styling of Layout cells](layout/customization.md).
 
-<div id="tutorial_step">
-    <a id="next_step" href="tutorial/basic_application/step3.md"></a>
-</div>
+<div id="tutorial_step"><a id="next_step" href="tutorial/basic_application/step3.md"></a></div>

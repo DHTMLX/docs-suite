@@ -25,7 +25,7 @@ after the source files of DHTMLX Window as follows:
   crossorigin="anonymous">
 ~~~
 
-Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for the header or the footer. [See details below](window/customization.md#updatecontrols).
+Then you can use the name of the icon as the value of the **icon** property in the object with the control parameters for the header or the footer. [See details below](window/customization.md).
 
 **Related sample**: [Window. Custom icons](https://snippet.dhtmlx.com/ucozvx01)
 
@@ -43,19 +43,19 @@ Besides initial controls, you can add other controls into the header/footer on t
 For this, you should apply the [](../data_collection/api/datacollection_add_method.md) method of Data Collection. It takes the parameters below:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) the configuration object of the added control</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) the configuration object of the added control</td>
+        </tr>
         <tr>
-			<td><b>index</b></td>
-			<td>(<i>number</i>) optional, the position to add a control at</td>
-		</tr>
+            <td><b>index</b></td>
+            <td>(<i>number</i>) optional, the position to add a control at</td>
+        </tr>
         <tr>
-			<td><b>parent</b></td>
-			<td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
-		</tr>
+            <td><b>parent</b></td>
+            <td>(<i>string</i>) optional, the id of a parent control (for the <i>menuItem</i> control type)</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -78,8 +78,8 @@ You can change the icon of the Window control and its other config options with 
 
 ~~~js
 dhxWindow.header.data.update("close", {
-	// using FA icon for the Close button
-	icon: "fas fa-times" 
+    // using FA icon for the Close button
+    icon: "fas fa-times" 
 });
 ~~~
 
@@ -107,13 +107,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -121,7 +121,7 @@ For this you need to take the following steps:
 
 ~~~js
 const dhxWindow = new dhx.Window({
-	title: "Window", 
+    title: "Window", 
     css:"my-first-class my-second-class"
 });
 dhxWindow.show();
@@ -131,20 +131,20 @@ For example:
 
 ~~~html
 <style>
-	.custom {
-		--dhx-background-primary: #efefef;
-	}
+    .custom {
+        --dhx-background-primary: #efefef;
+    }
 </style>
 
 <script>
-	const dhxWindow = new dhx.Window({
-	    height: 400,
-	    width: 400,
-	    title: "window",
-	    css: "custom",
-	    html,
-	});
-	
-	dhxWindow.show();
+    const dhxWindow = new dhx.Window({
+        height: 400,
+        width: 400,
+        title: "window",
+        css: "custom",
+        html,
+    });
+    
+    dhxWindow.show();
 </script>
 ~~~

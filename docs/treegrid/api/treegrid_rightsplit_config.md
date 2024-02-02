@@ -12,11 +12,11 @@ description: You can explore the rightSplit config of TreeGrid in the documentat
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	rightSplit: 2,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    rightSplit: 2,
+    data: dataset
 });
 
 @descr:

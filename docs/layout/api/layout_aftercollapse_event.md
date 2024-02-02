@@ -15,7 +15,7 @@ description: You can explore the afterCollapse event of Layout in the documentat
 
 @example:
 layout.events.on("afterCollapse", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

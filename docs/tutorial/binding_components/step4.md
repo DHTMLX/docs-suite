@@ -18,16 +18,16 @@ var contextMenu = new dhx.ContextMenu(null, {css: "dhx_widget--bg_gray"});
 
 ~~~js
 var contextmenu_data = [
-	{
-    	"id": "edit",
-    	"icon": "mdi mdi-pencil",
-    	"value": "Edit"
-	},
-	{
-    	"id": "delete",
-    	"icon": "mdi mdi-delete",
-    	"value": "Delete"
-	}
+    {
+        "id": "edit",
+        "icon": "mdi mdi-pencil",
+        "value": "Edit"
+    },
+    {
+        "id": "delete",
+        "icon": "mdi mdi-delete",
+        "value": "Delete"
+    }
 ];
 ~~~
 
@@ -56,7 +56,7 @@ grid.selection.setCell(row.id);
 
 - prevent the browser context menu from appearing on the page through the **event.preventDefault()** method:
 
-~~~js	
+~~~js    
 e.preventDefault();
 ~~~
 
@@ -70,9 +70,9 @@ Now we should put together the above described steps and place them inside the h
 
 ~~~js
 grid.events.on("CellRightClick", function(row,column,e){
-	grid.selection.setCell(row.id);
-	e.preventDefault();
-	contextMenu.showAt(e);
+    grid.selection.setCell(row.id);
+    e.preventDefault();
+    contextMenu.showAt(e);
 });
 ~~~
 

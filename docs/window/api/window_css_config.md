@@ -15,21 +15,21 @@ description: You can explore the css config of Window in the documentation of th
 
 ~~~html
 <style>
-	.custom {
-		--dhx-background-primary: #efefef;
-	}
+    .custom {
+        --dhx-background-primary: #efefef;
+    }
 </style>
 
 <script>
-	const dhxWindow = new dhx.Window({
-	    height: 400,
-	    width: 400,
-	    title: "window",
-	    css: "custom",
-	    html,
-	});
-	
-	dhxWindow.show();
+    const dhxWindow = new dhx.Window({
+        height: 400,
+        width: 400,
+        title: "window",
+        css: "custom",
+        html,
+    });
+    
+    dhxWindow.show();
 </script>
 ~~~
 

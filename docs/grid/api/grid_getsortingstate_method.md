@@ -24,15 +24,15 @@ const state = grid.getSortingState();
 The return object includes the following attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>dir</b></td>
-			<td>(<i>string</i>) the sorting direction (desc, asc)</td>
-		</tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the sorting direction (desc, asc)</td>
+        </tr>
         <tr>
-			<td><b>by</b></td>
-			<td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
-		</tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
+        </tr>
     </tbody>
 </table>
 

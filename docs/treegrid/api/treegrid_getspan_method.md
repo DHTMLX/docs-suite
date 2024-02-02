@@ -26,31 +26,31 @@ const span = treegrid.getSpan("10","a");
 A returned **span** object contains the following properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string|number</i>) mandatory, the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>col</b></td>
-			<td>(<i>string|number</i>) mandatory, the id of a column</td>
-		</tr>
-		<tr>
-			<td><b>rowspan</b></td>
-			<td>(<i>number</i>) optional, the number of rows in a span</td>
-		</tr>
-		<tr>
-			<td><b>colspan</b></td>
-			<td>(<i>number</i>) optional, the number of columns in a span</td>
-		</tr>
-		<tr>
-			<td><b>text</b></td>
-			<td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
-		</tr>
-		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string|number</i>) mandatory, the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>string|number</i>) mandatory, the id of a column</td>
+        </tr>
+        <tr>
+            <td><b>rowspan</b></td>
+            <td>(<i>number</i>) optional, the number of rows in a span</td>
+        </tr>
+        <tr>
+            <td><b>colspan</b></td>
+            <td>(<i>number</i>) optional, the number of columns in a span</td>
+        </tr>
+        <tr>
+            <td><b>text</b></td>
+            <td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
+        </tr>
     </tbody>
 </table>
 

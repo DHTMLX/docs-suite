@@ -31,17 +31,17 @@ To add DHTMLX Pagination into an application, you need to take the following sim
         <script>
             // creating a related widget
             const widget = new dhx.List("widget_container", {
-				css: "dhx_widget--bordered",
-				keyNavigation: true
-			});
+                css: "dhx_widget--bordered",
+                keyNavigation: true
+            });
 
-			widget.data.parse(widget_data);
+            widget.data.parse(widget_data);
 
             // creating DHTMLX Pagination
-			const pagination = new dhx.Pagination("pagination_container", {
-				css: "dhx_widget--bordered",
-				data: widget.data
-			});
+            const pagination = new dhx.Pagination("pagination_container", {
+                css: "dhx_widget--bordered",
+                data: widget.data
+            });
         </script>
     </body>
 </html>
@@ -121,8 +121,8 @@ Initialize pagination with the *dhx.Pagination* object constructor. The construc
 ~~~js title="index.js"
 // creating DHTMLX Pagination
 const pagination = new dhx.Pagination("pagination_container", {
-	css: "dhx_widget--bordered",
-	data: widget.data
+    css: "dhx_widget--bordered",
+    data: widget.data
 });
 ~~~
 

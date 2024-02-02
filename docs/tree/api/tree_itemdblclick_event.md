@@ -17,7 +17,7 @@ description: You can explore the itemDblClick event of Tree in the documentation
 @example:
 // allows opening folders on double click
 tree.events.on("itemDblClick", function(id, e){
-	tree.data.update(id, {opened: !tree.data.getItem(id).opened})
+    tree.data.update(id, {opened: !tree.data.getItem(id).opened})
 });
 
 @descr:

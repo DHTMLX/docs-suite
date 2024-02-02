@@ -20,32 +20,32 @@ You can easily add a Select control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-        	type: "select",
+    rows: [
+        {
+            type: "select",
             name: "select",
-        	label: "select",
-        	labelWidth: "50px",
-        	width:"200px",
-        	options: [
-        		{
-        			value: "1",
-        			content: "1",
-					disabled: true
-        		},
-        		{
-        			value: "2",
-        			content: "2"
-        		},
-        		{
-        			value: "3",
-        			content: "3"
-        		},
-        		{
-        			value: "4",
-        			content: "4"
-        		}
-        	]        
+            label: "select",
+            labelWidth: "50px",
+            width:"200px",
+            options: [
+                {
+                    value: "1",
+                    content: "1",
+                    disabled: true
+                },
+                {
+                    value: "2",
+                    content: "2"
+                },
+                {
+                    value: "3",
+                    content: "3"
+                },
+                {
+                    value: "4",
+                    content: "4"
+                }
+            ]        
         }  
     ]
 });

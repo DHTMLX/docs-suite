@@ -43,23 +43,23 @@ Each object in the data set contains a number of *key:value* pairs for data titl
 A data set for Pie, Pie3D and Donut charts differs a little bit and includes the following properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a series </td>
-		</tr>
-		<tr>
-			<td><b>key:value</b></td>
-			<td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a pie/donut sector</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) the id of a series </td>
+        </tr>
         <tr>
-			<td><b>key:value</b></td>
-			<td><i>key</i> is the name of the attribute and <i>value</i> is the value of a pie/donut sector</td>
-		</tr>
+            <td><b>key:value</b></td>
+            <td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a pie/donut sector</td>
+        </tr>
         <tr>
-			<td><b>color</b></td>
-			<td>(<i>string</i>) points to the property in a data set that defines the color of a pie/donut sector</td>
-		</tr>
+            <td><b>key:value</b></td>
+            <td><i>key</i> is the name of the attribute and <i>value</i> is the value of a pie/donut sector</td>
+        </tr>
+        <tr>
+            <td><b>color</b></td>
+            <td>(<i>string</i>) points to the property in a data set that defines the color of a pie/donut sector</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -68,11 +68,11 @@ You need to provide the "color":"value" properties to color the sections of thes
 
 ~~~js
 const pie_dataset = [
-	{ "id": "Jan", "value": 44.33, "color": "#394E79", "month": "Jan"},
-	{ "id": "Feb", "value": 22.12, "color": "#5E83BA", "month": "Feb"},
-	{ "id": "Mar", "value": 53.21, "color": "#C2D2E9", "month": "Mar"},
-	{ "id": "Apr", "value": 34.25, "color": "#9A8BA5", "month": "Apr"},
-	{ "id": "May", "value": 24.65, "color": "#E3C5D5", "month": "May"}
+    { "id": "Jan", "value": 44.33, "color": "#394E79", "month": "Jan"},
+    { "id": "Feb", "value": 22.12, "color": "#5E83BA", "month": "Feb"},
+    { "id": "Mar", "value": 53.21, "color": "#C2D2E9", "month": "Mar"},
+    { "id": "Apr", "value": 34.25, "color": "#9A8BA5", "month": "Apr"},
+    { "id": "May", "value": 24.65, "color": "#E3C5D5", "month": "May"}
 ];
 ~~~
 
@@ -81,23 +81,23 @@ const pie_dataset = [
 A data set for Treemap chart has also another structure and may include the following properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a tile or group</td>
-		</tr>
-		<tr>
-			<td><b>key:value</b></td>
-			<td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a tile</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) the id of a tile or group</td>
+        </tr>
         <tr>
-			<td><b>key:value</b></td>
-			<td><i>key</i> is the name of the attribute and <i>value</i> is the value of a tile</td>
-		</tr>
+            <td><b>key:value</b></td>
+            <td><i>key</i> is the name of the attribute and <i>value</i> is the text label of a tile</td>
+        </tr>
         <tr>
-			<td><b>parent</b></td>
-			<td>(<i>string</i>) the id of the group</td>
-		</tr>
+            <td><b>key:value</b></td>
+            <td><i>key</i> is the name of the attribute and <i>value</i> is the value of a tile</td>
+        </tr>
+        <tr>
+            <td><b>parent</b></td>
+            <td>(<i>string</i>) the id of the group</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -119,33 +119,33 @@ const treeMapData = [
 A data set for Heatmap chart should include the following properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) the id of a cell</td>
-		</tr>
-		<tr>
-			<td><b>key:value</b></td>
-			<td><i>key</i> is the name of the attribute and <i>value</i> is the number value of a cell</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) the id of a cell</td>
+        </tr>
         <tr>
-			<td><b>key:value</b></td>
-			<td><i>key</i> is the name of the attribute and <i>value</i> is the date of a cell</td>
-		</tr>
+            <td><b>key:value</b></td>
+            <td><i>key</i> is the name of the attribute and <i>value</i> is the number value of a cell</td>
+        </tr>
+        <tr>
+            <td><b>key:value</b></td>
+            <td><i>key</i> is the name of the attribute and <i>value</i> is the date of a cell</td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~js
 const heatMapData = [
-	{ id: "100", value: 50, date: new Date(2022, 2, 2) },
-	{ id: "101", value: 100, date: new Date(2022, 4, 1) },
-	{ id: "102", value: 10, date: new Date(2022, 4, 4) },
-	{ id: "200", value: 32, date: new Date(2022, 6, 1) },
-	{ id: "201", value: 4, date: new Date(2022, 6, 15) },
-	{ id: "202", value: 35, date: new Date(2022, 7, 21) },
-	{ id: "300", value: 22, date: new Date(2022, 9, 6) },
-	{ id: "501", value: 100, date: new Date(2023, 1, 1) },
+    { id: "100", value: 50, date: new Date(2022, 2, 2) },
+    { id: "101", value: 100, date: new Date(2022, 4, 1) },
+    { id: "102", value: 10, date: new Date(2022, 4, 4) },
+    { id: "200", value: 32, date: new Date(2022, 6, 1) },
+    { id: "201", value: 4, date: new Date(2022, 6, 15) },
+    { id: "202", value: 35, date: new Date(2022, 7, 21) },
+    { id: "300", value: 22, date: new Date(2022, 9, 6) },
+    { id: "501", value: 100, date: new Date(2023, 1, 1) },
 ];
 ~~~
 
@@ -156,7 +156,7 @@ You can load [a predefined data set](#preparing-data-set) into Chart on the init
 ~~~js
 const chart = new dhx.Chart("chart_container", {
     type: "area",
-	scales: {
+    scales: {
         "bottom": {
             text: "month"
         },

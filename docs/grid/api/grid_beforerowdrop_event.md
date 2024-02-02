@@ -12,9 +12,9 @@ description: You can explore the beforeRowDrop event of Grid in the documentatio
 
 @params:
 - `data: object` - data object. It contains the following parameters:
-	- `start: string | number` - the id of a row, from which the dragging process has started
-	- `source: array` - an array with ids of dragged rows
-	- `target: string | number` - the id of a potential target row
+    - `start: string | number` - the id of a row, from which the dragging process has started
+    - `source: array` - an array with ids of dragged rows
+    - `target: string | number` - the id of a potential target row
 - `events: MouseEvent` - a native HTML event object 
 
 @returns:
@@ -22,7 +22,7 @@ Return `false` to block the default action; otherwise, `true`.
 
 @example:
 grid.events.on("beforeRowDrop", function(data, events){
-	// your logic here
+    // your logic here
     return false;
 });
 

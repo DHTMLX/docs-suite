@@ -12,9 +12,9 @@ description: You can explore the dragStart event of List in the documentation of
 
 @params:
 - `data: object` - data object. It can contain the following parameters:
-	- `start: string | number` - the id of an item, from which the dragging process has started
-	- `source: array` - an array with ids of dragged items
-	- `target: string | number` - the id of a potential target item
+    - `start: string | number` - the id of an item, from which the dragging process has started
+    - `source: array` - an array with ids of dragged items
+    - `target: string | number` - the id of a potential target item
 - `events: MouseEvent` - a native HTML event object
 
 @example:

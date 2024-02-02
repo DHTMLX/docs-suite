@@ -29,7 +29,7 @@ It is possible to change values of the following properties of the **Container**
 
 ~~~js
 {
-	css: string,
+    css: string,
     width: string | number | "content",
     height: string | number | "content",
     padding: string | number,

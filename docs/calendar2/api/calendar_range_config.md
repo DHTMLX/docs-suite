@@ -9,8 +9,8 @@ title: range
 
 @example:
 var calendar = new dhx.Calendar("calendar", {
-	css: "dhx_widget--bordered",
-	range: true
+    css: "dhx_widget--bordered",
+    range: true
 });
 
 @related: 

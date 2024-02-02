@@ -79,44 +79,44 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/avatar/avatar_clear_method.md)         | @getshort(form/api/avatar/avatar_clear_method.md)         |
 | [](form/api/avatar/avatar_clearvalidate_method.md) | @getshort(form/api/avatar/avatar_clearvalidate_method.md) |
 | [](form/api/avatar/avatar_destructor_method.md)    | @getshort(form/api/avatar/avatar_destructor_method.md)    |
-| [](form/api/avatar/avatar_disable_method.md)    	 | @getshort(form/api/avatar/avatar_disable_method.md)    	 |
-| [](form/api/avatar/avatar_enable_method.md)    	 | @getshort(form/api/avatar/avatar_enable_method.md)    	 |
-| [](form/api/avatar/avatar_focus_method.md)    	 | @getshort(form/api/avatar/avatar_focus_method.md)    	 |
+| [](form/api/avatar/avatar_disable_method.md)         | @getshort(form/api/avatar/avatar_disable_method.md)         |
+| [](form/api/avatar/avatar_enable_method.md)         | @getshort(form/api/avatar/avatar_enable_method.md)         |
+| [](form/api/avatar/avatar_focus_method.md)         | @getshort(form/api/avatar/avatar_focus_method.md)         |
 | [](form/api/avatar/avatar_getproperties_method.md) | @getshort(form/api/avatar/avatar_getproperties_method.md) |
-| [](form/api/avatar/avatar_getvalue_method.md)    	 | @getshort(form/api/avatar/avatar_getvalue_method.md)    	 |
-| [](form/api/avatar/avatar_hide_method.md)    	 	 | @getshort(form/api/avatar/avatar_hide_method.md)    	 	 |
-| [](form/api/avatar/avatar_isdisabled_method.md)    | @getshort(form/api/avatar/avatar_isdisabled_method.md)  	 |
-| [](form/api/avatar/avatar_isvisible_method.md)     | @getshort(form/api/avatar/avatar_isvisible_method.md)  	 |
+| [](form/api/avatar/avatar_getvalue_method.md)         | @getshort(form/api/avatar/avatar_getvalue_method.md)         |
+| [](form/api/avatar/avatar_hide_method.md)              | @getshort(form/api/avatar/avatar_hide_method.md)              |
+| [](form/api/avatar/avatar_isdisabled_method.md)    | @getshort(form/api/avatar/avatar_isdisabled_method.md)       |
+| [](form/api/avatar/avatar_isvisible_method.md)     | @getshort(form/api/avatar/avatar_isvisible_method.md)       |
 | [](form/api/avatar/avatar_selectfile_method.md)    | @getshort(form/api/avatar/avatar_selectfile_method.md)    |
-| [](form/api/avatar/avatar_send_method.md)    		 | @getshort(form/api/avatar/avatar_send_method.md)          |
+| [](form/api/avatar/avatar_send_method.md)             | @getshort(form/api/avatar/avatar_send_method.md)          |
 | [](form/api/avatar/avatar_setproperties_method.md) | @getshort(form/api/avatar/avatar_setproperties_method.md) |
-| [](form/api/avatar/avatar_setvalue_method.md)    	 | @getshort(form/api/avatar/avatar_setvalue_method.md)    	 |
-| [](form/api/avatar/avatar_show_method.md)    	 	 | @getshort(form/api/avatar/avatar_show_method.md)    	     |
-| [](form/api/avatar/avatar_validate_method.md)    	 | @getshort(form/api/avatar/avatar_validate_method.md)    	 |
+| [](form/api/avatar/avatar_setvalue_method.md)         | @getshort(form/api/avatar/avatar_setvalue_method.md)         |
+| [](form/api/avatar/avatar_show_method.md)              | @getshort(form/api/avatar/avatar_show_method.md)             |
+| [](form/api/avatar/avatar_validate_method.md)         | @getshort(form/api/avatar/avatar_validate_method.md)         |
 
 ### Avatar events
 
 | Name                                                       | Description                                                       |
 | :--------------------------------------------------------- | :---------------------------------------------------------------- |
 | [](form/api/avatar/avatar_afterchangeproperties_event.md)  | @getshort(form/api/avatar/avatar_afterchangeproperties_event.md)  |
-| [](form/api/avatar/avatar_afterhide_event.md)  			 | @getshort(form/api/avatar/avatar_afterhide_event.md)  			 |
-| [](form/api/avatar/avatar_aftershow_event.md)  			 | @getshort(form/api/avatar/avatar_aftershow_event.md)  			 |
-| [](form/api/avatar/avatar_aftervalidate_event.md)  		 | @getshort(form/api/avatar/avatar_aftervalidate_event.md)  		 |
-| [](form/api/avatar/avatar_beforechange_event.md)  		 | @getshort(form/api/avatar/avatar_beforechange_event.md)  		 |
+| [](form/api/avatar/avatar_afterhide_event.md)               | @getshort(form/api/avatar/avatar_afterhide_event.md)               |
+| [](form/api/avatar/avatar_aftershow_event.md)               | @getshort(form/api/avatar/avatar_aftershow_event.md)               |
+| [](form/api/avatar/avatar_aftervalidate_event.md)           | @getshort(form/api/avatar/avatar_aftervalidate_event.md)           |
+| [](form/api/avatar/avatar_beforechange_event.md)           | @getshort(form/api/avatar/avatar_beforechange_event.md)           |
 | [](form/api/avatar/avatar_beforechangeproperties_event.md) | @getshort(form/api/avatar/avatar_beforechangeproperties_event.md) |
-| [](form/api/avatar/avatar_beforehide_event.md)  		 	 | @getshort(form/api/avatar/avatar_beforehide_event.md)  			 |
-| [](form/api/avatar/avatar_beforeshow_event.md)  		 	 | @getshort(form/api/avatar/avatar_beforeshow_event.md)  			 |
-| [](form/api/avatar/avatar_beforeuploadfile_event.md)  	 | @getshort(form/api/avatar/avatar_beforeuploadfile_event.md)  	 |
-| [](form/api/avatar/avatar_beforevalidate_event.md)  		 | @getshort(form/api/avatar/avatar_beforevalidate_event.md)  		 |
-| [](form/api/avatar/avatar_blur_event.md)  		 		 | @getshort(form/api/avatar/avatar_blur_event.md)  		 	     |
-| [](form/api/avatar/avatar_change_event.md)  		 		 | @getshort(form/api/avatar/avatar_change_event.md)  		 		 |
-| [](form/api/avatar/avatar_focus_event.md)  		 		 | @getshort(form/api/avatar/avatar_focus_event.md)  		 	     |
-| [](form/api/avatar/avatar_keydown_event.md)  		 		 | @getshort(form/api/avatar/avatar_keydown_event.md)  		 	     |
-| [](form/api/avatar/avatar_uploadbegin_event.md)  		 	 | @getshort(form/api/avatar/avatar_uploadbegin_event.md)  		 	 |
-| [](form/api/avatar/avatar_uploadcomplete_event.md)  		 | @getshort(form/api/avatar/avatar_uploadcomplete_event.md)  		 |
-| [](form/api/avatar/avatar_uploadfail_event.md)  		  	 | @getshort(form/api/avatar/avatar_uploadfail_event.md)  		 	 |
-| [](form/api/avatar/avatar_uploadfile_event.md)  		 	 | @getshort(form/api/avatar/avatar_uploadfile_event.md)  		 	 |
-| [](form/api/avatar/avatar_uploadprogress_event.md)  		 | @getshort(form/api/avatar/avatar_uploadprogress_event.md)  		 |
+| [](form/api/avatar/avatar_beforehide_event.md)                | @getshort(form/api/avatar/avatar_beforehide_event.md)               |
+| [](form/api/avatar/avatar_beforeshow_event.md)                | @getshort(form/api/avatar/avatar_beforeshow_event.md)               |
+| [](form/api/avatar/avatar_beforeuploadfile_event.md)       | @getshort(form/api/avatar/avatar_beforeuploadfile_event.md)       |
+| [](form/api/avatar/avatar_beforevalidate_event.md)           | @getshort(form/api/avatar/avatar_beforevalidate_event.md)           |
+| [](form/api/avatar/avatar_blur_event.md)                    | @getshort(form/api/avatar/avatar_blur_event.md)                    |
+| [](form/api/avatar/avatar_change_event.md)                    | @getshort(form/api/avatar/avatar_change_event.md)                    |
+| [](form/api/avatar/avatar_focus_event.md)                    | @getshort(form/api/avatar/avatar_focus_event.md)                    |
+| [](form/api/avatar/avatar_keydown_event.md)                    | @getshort(form/api/avatar/avatar_keydown_event.md)                    |
+| [](form/api/avatar/avatar_uploadbegin_event.md)                | @getshort(form/api/avatar/avatar_uploadbegin_event.md)                |
+| [](form/api/avatar/avatar_uploadcomplete_event.md)           | @getshort(form/api/avatar/avatar_uploadcomplete_event.md)           |
+| [](form/api/avatar/avatar_uploadfail_event.md)                 | @getshort(form/api/avatar/avatar_uploadfail_event.md)                |
+| [](form/api/avatar/avatar_uploadfile_event.md)                | @getshort(form/api/avatar/avatar_uploadfile_event.md)                |
+| [](form/api/avatar/avatar_uploadprogress_event.md)           | @getshort(form/api/avatar/avatar_uploadprogress_event.md)           |
 
 
 ### Avatar properties
@@ -169,7 +169,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/calendar/calendar_blur_method.md)          | @getshort(form/api/calendar/calendar_blur_method.md)          |
 | [](form/api/calendar/calendar_clear_method.md)         | @getshort(form/api/calendar/calendar_clear_method.md)         |
 | [](form/api/calendar/calendar_clearvalidate_method.md) | @getshort(form/api/calendar/calendar_clearvalidate_method.md) |
-| [](form/api/calendar/calendar_destructor_method.md)  	 | @getshort(form/api/calendar/calendar_destructor_method.md)    |
+| [](form/api/calendar/calendar_destructor_method.md)       | @getshort(form/api/calendar/calendar_destructor_method.md)    |
 | [](form/api/calendar/calendar_disable_method.md)       | @getshort(form/api/calendar/calendar_disable_method.md)       |
 | [](form/api/calendar/calendar_enable_method.md)        | @getshort(form/api/calendar/calendar_enable_method.md)        |
 | [](form/api/calendar/calendar_focus_method.md)         | @getshort(form/api/calendar/calendar_focus_method.md)         |
@@ -216,7 +216,7 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | [](form/api/checkbox/checkbox_blur_method.md)          | @getshort(form/api/checkbox/checkbox_blur_method.md)          |
 | [](form/api/checkbox/checkbox_clear_method.md)         | @getshort(form/api/checkbox/checkbox_clear_method.md)         |
 | [](form/api/checkbox/checkbox_clearvalidate_method.md) | @getshort(form/api/checkbox/checkbox_clearvalidate_method.md) |
-| [](form/api/checkbox/checkbox_destructor_method.md)  	 | @getshort(form/api/checkbox/checkbox_destructor_method.md)    |
+| [](form/api/checkbox/checkbox_destructor_method.md)       | @getshort(form/api/checkbox/checkbox_destructor_method.md)    |
 | [](form/api/checkbox/checkbox_disable_method.md)       | @getshort(form/api/checkbox/checkbox_disable_method.md)       |
 | [](form/api/checkbox/checkbox_enable_method.md)        | @getshort(form/api/checkbox/checkbox_enable_method.md)        |
 | [](form/api/checkbox/checkbox_focus_method.md)         | @getshort(form/api/checkbox/checkbox_focus_method.md)         |
@@ -435,19 +435,19 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 | Name                                                     | Description                                                     |
 | :------------------------------------------------------- | :-------------------------------------------------------------- |
 | [](form/api/fieldset/fieldset_destructor_method.md)      | @getshort(form/api/fieldset/fieldset_destructor_method.md)      |
-| [](form/api/fieldset/fieldset_disable_method.md)         | @getshort(form/api/fieldset/fieldset_disable_method.md)      	 |
-| [](form/api/fieldset/fieldset_enable_method.md)      	   | @getshort(form/api/fieldset/fieldset_enable_method.md)          |
-| [](form/api/fieldset/fieldset_foreach_method.md)         | @getshort(form/api/fieldset/fieldset_foreach_method.md)      	 |
+| [](form/api/fieldset/fieldset_disable_method.md)         | @getshort(form/api/fieldset/fieldset_disable_method.md)           |
+| [](form/api/fieldset/fieldset_enable_method.md)             | @getshort(form/api/fieldset/fieldset_enable_method.md)          |
+| [](form/api/fieldset/fieldset_foreach_method.md)         | @getshort(form/api/fieldset/fieldset_foreach_method.md)           |
 | [](form/api/fieldset/fieldset_getproperties_method.md)   | @getshort(form/api/fieldset/fieldset_getproperties_method.md)   |
-| [](form/api/fieldset/fieldset_hide_method.md)            | @getshort(form/api/fieldset/fieldset_hide_method.md)      	     |
+| [](form/api/fieldset/fieldset_hide_method.md)            | @getshort(form/api/fieldset/fieldset_hide_method.md)               |
 | [](form/api/fieldset/fieldset_isdisabled_method.md)      | @getshort(form/api/fieldset/fieldset_isdisabled_method.md)      |
 | [](form/api/fieldset/fieldset_isvisible_method.md)       | @getshort(form/api/fieldset/fieldset_isvisible_method.md)       |
 | [](form/api/fieldset/fieldset_setproperties_method.md)   | @getshort(form/api/fieldset/fieldset_setproperties_method.md)   |
-| [](form/api/fieldset/fieldset_show_method.md)            | @getshort(form/api/fieldset/fieldset_show_method.md)      		 |
+| [](form/api/fieldset/fieldset_show_method.md)            | @getshort(form/api/fieldset/fieldset_show_method.md)               |
 
 ### Fieldset events
 
-| Name                                                    		 | Description                                                    		|
+| Name                                                             | Description                                                            |
 | :------------------------------------------------------------- | :------------------------------------------------------------------- |
 | [](form/api/fieldset/fieldset_afterchangeproperties_event.md)  | @getshort(form/api/fieldset/fieldset_afterchangeproperties_event.md) |
 | [](form/api/fieldset/fieldset_beforechangeproperties_event.md) | @getshort(form/api/fieldset/fieldset_beforechangeproperties_event.md)|
@@ -857,39 +857,39 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 ### Toggle methods
 
-| Name                                             	 | Description                                             	 |
+| Name                                                  | Description                                                  |
 | :------------------------------------------------- | :-------------------------------------------------------- |
-| [](form/api/toggle/toggle_blur_method.md)        	 | @getshort(form/api/toggle/toggle_blur_method.md)        	 |
-| [](form/api/toggle/toggle_destructor_method.md)  	 | @getshort(form/api/toggle/toggle_destructor_method.md)  	 |
-| [](form/api/toggle/toggle_disable_method.md)     	 | @getshort(form/api/toggle/toggle_disable_method.md)     	 |
-| [](form/api/toggle/toggle_enable_method.md)      	 | @getshort(form/api/toggle/toggle_enable_method.md)      	 |
-| [](form/api/toggle/toggle_focus_method.md)         | @getshort(form/api/toggle/toggle_focus_method.md)       	 |
+| [](form/api/toggle/toggle_blur_method.md)             | @getshort(form/api/toggle/toggle_blur_method.md)             |
+| [](form/api/toggle/toggle_destructor_method.md)       | @getshort(form/api/toggle/toggle_destructor_method.md)       |
+| [](form/api/toggle/toggle_disable_method.md)          | @getshort(form/api/toggle/toggle_disable_method.md)          |
+| [](form/api/toggle/toggle_enable_method.md)           | @getshort(form/api/toggle/toggle_enable_method.md)           |
+| [](form/api/toggle/toggle_focus_method.md)         | @getshort(form/api/toggle/toggle_focus_method.md)            |
 | [](form/api/toggle/toggle_getproperties_method.md) | @getshort(form/api/toggle/toggle_getproperties_method.md) |
 | [](form/api/toggle/toggle_getvalue_method.md)      | @getshort(form/api/toggle/toggle_getvalue_method.md)      |
-| [](form/api/toggle/toggle_hide_method.md)          | @getshort(form/api/toggle/toggle_hide_method.md)        	 |
+| [](form/api/toggle/toggle_hide_method.md)          | @getshort(form/api/toggle/toggle_hide_method.md)             |
 | [](form/api/toggle/toggle_isdisabled_method.md)    | @getshort(form/api/toggle/toggle_isdisabled_method.md)    |
 | [](form/api/toggle/toggle_isselected_method.md)    | @getshort(form/api/toggle/toggle_isselected_method.md)    |
 | [](form/api/toggle/toggle_isvisible_method.md)     | @getshort(form/api/toggle/toggle_isvisible_method.md)     |
 | [](form/api/toggle/toggle_setproperties_method.md) | @getshort(form/api/toggle/toggle_setproperties_method.md) |
-| [](form/api/toggle/toggle_setvalue_method.md)    	 | @getshort(form/api/toggle/toggle_setvalue_method.md)    	 |
-| [](form/api/toggle/toggle_show_method.md)    		 | @getshort(form/api/toggle/toggle_show_method.md)    		 |
+| [](form/api/toggle/toggle_setvalue_method.md)         | @getshort(form/api/toggle/toggle_setvalue_method.md)         |
+| [](form/api/toggle/toggle_show_method.md)             | @getshort(form/api/toggle/toggle_show_method.md)             |
 
 
 ### Toggle events
 
-| Name                                             	 	     | Description                                               		  |
+| Name                                                           | Description                                                         |
 | :--------------------------------------------------------- | :----------------------------------------------------------------- |
 | [](form/api/toggle/toggle_afterchangeproperties_event.md)  | @getshort(form/api/toggle/toggle_afterchangeproperties_event.md)   |
-| [](form/api/toggle/toggle_afterhide_event.md)        	     | @getshort(form/api/toggle/toggle_afterhide_event.md)        	      |
-| [](form/api/toggle/toggle_aftershow_event.md)        	     | @getshort(form/api/toggle/toggle_aftershow_event.md)        	      |
-| [](form/api/toggle/toggle_beforechange_event.md)           | @getshort(form/api/toggle/toggle_beforechange_event.md)      	  |
+| [](form/api/toggle/toggle_afterhide_event.md)                 | @getshort(form/api/toggle/toggle_afterhide_event.md)                  |
+| [](form/api/toggle/toggle_aftershow_event.md)                 | @getshort(form/api/toggle/toggle_aftershow_event.md)                  |
+| [](form/api/toggle/toggle_beforechange_event.md)           | @getshort(form/api/toggle/toggle_beforechange_event.md)            |
 | [](form/api/toggle/toggle_beforechangeproperties_event.md) | @getshort(form/api/toggle/toggle_beforechangeproperties_event.md)  |
-| [](form/api/toggle/toggle_beforehide_event.md)        	 | @getshort(form/api/toggle/toggle_beforehide_event.md)        	  |
-| [](form/api/toggle/toggle_beforeshow_event.md)        	 | @getshort(form/api/toggle/toggle_beforeshow_event.md)      	      |
-| [](form/api/toggle/toggle_blur_event.md)        	 	   	 | @getshort(form/api/toggle/toggle_blur_event.md)        	          |
-| [](form/api/toggle/toggle_change_event.md)        	 	 | @getshort(form/api/toggle/toggle_change_event.md)        	      |
-| [](form/api/toggle/toggle_focus_event.md)        	 	   	 | @getshort(form/api/toggle/toggle_focus_event.md)        	      	  |
-| [](form/api/toggle/toggle_keydown_event.md)        	 	 | @getshort(form/api/toggle/toggle_keydown_event.md)        	      |
+| [](form/api/toggle/toggle_beforehide_event.md)             | @getshort(form/api/toggle/toggle_beforehide_event.md)              |
+| [](form/api/toggle/toggle_beforeshow_event.md)             | @getshort(form/api/toggle/toggle_beforeshow_event.md)                |
+| [](form/api/toggle/toggle_blur_event.md)                         | @getshort(form/api/toggle/toggle_blur_event.md)                      |
+| [](form/api/toggle/toggle_change_event.md)                  | @getshort(form/api/toggle/toggle_change_event.md)                  |
+| [](form/api/toggle/toggle_focus_event.md)                         | @getshort(form/api/toggle/toggle_focus_event.md)                        |
+| [](form/api/toggle/toggle_keydown_event.md)                  | @getshort(form/api/toggle/toggle_keydown_event.md)                  |
 
 ### Toggle properties
 
@@ -899,40 +899,40 @@ description: You can explore the API of Form in the documentation of the DHTMLX 
 
 ### ToggleGroup methods
 
-| Name                                             	 	   		| Description                                             	 		   	|
+| Name                                                                 | Description                                                                 |
 | :------------------------------------------------------------ | :-------------------------------------------------------------------- |
-| [](form/api/togglegroup/togglegroup_blur_method.md)  	   		| @getshort(form/api/togglegroup/togglegroup_blur_method.md)        	|
-| [](form/api/togglegroup/togglegroup_destructor_method.md) 	| @getshort(form/api/togglegroup/togglegroup_destructor_method.md)     	|
-| [](form/api/togglegroup/togglegroup_disable_method.md)  		| @getshort(form/api/togglegroup/togglegroup_disable_method.md)        	|
-| [](form/api/togglegroup/togglegroup_enable_method.md)  		| @getshort(form/api/togglegroup/togglegroup_enable_method.md)        	|
-| [](form/api/togglegroup/togglegroup_focus_method.md)  		| @getshort(form/api/togglegroup/togglegroup_focus_method.md)        	|
+| [](form/api/togglegroup/togglegroup_blur_method.md)                 | @getshort(form/api/togglegroup/togglegroup_blur_method.md)            |
+| [](form/api/togglegroup/togglegroup_destructor_method.md)     | @getshort(form/api/togglegroup/togglegroup_destructor_method.md)         |
+| [](form/api/togglegroup/togglegroup_disable_method.md)          | @getshort(form/api/togglegroup/togglegroup_disable_method.md)            |
+| [](form/api/togglegroup/togglegroup_enable_method.md)          | @getshort(form/api/togglegroup/togglegroup_enable_method.md)            |
+| [](form/api/togglegroup/togglegroup_focus_method.md)          | @getshort(form/api/togglegroup/togglegroup_focus_method.md)            |
 | [](form/api/togglegroup/togglegroup_getproperties_method.md)  | @getshort(form/api/togglegroup/togglegroup_getproperties_method.md)   |
-| [](form/api/togglegroup/togglegroup_getvalue_method.md)  		| @getshort(form/api/togglegroup/togglegroup_getvalue_method.md)       	|
-| [](form/api/togglegroup/togglegroup_hide_method.md)  	   		| @getshort(form/api/togglegroup/togglegroup_hide_method.md)        	|
-| [](form/api/togglegroup/togglegroup_isdisabled_method.md)  	| @getshort(form/api/togglegroup/togglegroup_isdisabled_method.md)   	|
-| [](form/api/togglegroup/togglegroup_isselected_method.md)  	| @getshort(form/api/togglegroup/togglegroup_isselected_method.md)   	|
-| [](form/api/togglegroup/togglegroup_isvisible_method.md)  	| @getshort(form/api/togglegroup/togglegroup_isvisible_method.md)   	|
+| [](form/api/togglegroup/togglegroup_getvalue_method.md)          | @getshort(form/api/togglegroup/togglegroup_getvalue_method.md)           |
+| [](form/api/togglegroup/togglegroup_hide_method.md)                 | @getshort(form/api/togglegroup/togglegroup_hide_method.md)            |
+| [](form/api/togglegroup/togglegroup_isdisabled_method.md)      | @getshort(form/api/togglegroup/togglegroup_isdisabled_method.md)       |
+| [](form/api/togglegroup/togglegroup_isselected_method.md)      | @getshort(form/api/togglegroup/togglegroup_isselected_method.md)       |
+| [](form/api/togglegroup/togglegroup_isvisible_method.md)      | @getshort(form/api/togglegroup/togglegroup_isvisible_method.md)       |
 | [](form/api/togglegroup/togglegroup_setproperties_method.md)  | @getshort(form/api/togglegroup/togglegroup_setproperties_method.md)   |
-| [](form/api/togglegroup/togglegroup_setvalue_method.md)  		| @getshort(form/api/togglegroup/togglegroup_setvalue_method.md)        |
-| [](form/api/togglegroup/togglegroup_show_method.md)  			| @getshort(form/api/togglegroup/togglegroup_show_method.md)   			|
+| [](form/api/togglegroup/togglegroup_setvalue_method.md)          | @getshort(form/api/togglegroup/togglegroup_setvalue_method.md)        |
+| [](form/api/togglegroup/togglegroup_show_method.md)              | @getshort(form/api/togglegroup/togglegroup_show_method.md)               |
 
 
 
 ### ToggleGroup events
 
-| Name                                             	 	   			   | Description                                             	 		   	     |
+| Name                                                                        | Description                                                                      |
 | :------------------------------------------------------------------- | :-------------------------------------------------------------------------- |
 | [](form/api/togglegroup/togglegroup_afterchangeproperties_event.md)  | @getshort(form/api/togglegroup/togglegroup_afterchangeproperties_event.md)  |
-| [](form/api/togglegroup/togglegroup_afterhide_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_afterhide_event.md)        	     |  
-| [](form/api/togglegroup/togglegroup_aftershow_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_aftershow_event.md)        	     |
-| [](form/api/togglegroup/togglegroup_beforechange_event.md)  	   	   | @getshort(form/api/togglegroup/togglegroup_beforechange_event.md)      	 |
+| [](form/api/togglegroup/togglegroup_afterhide_event.md)                    | @getshort(form/api/togglegroup/togglegroup_afterhide_event.md)                 |  
+| [](form/api/togglegroup/togglegroup_aftershow_event.md)                    | @getshort(form/api/togglegroup/togglegroup_aftershow_event.md)                 |
+| [](form/api/togglegroup/togglegroup_beforechange_event.md)                | @getshort(form/api/togglegroup/togglegroup_beforechange_event.md)           |
 | [](form/api/togglegroup/togglegroup_beforechangeproperties_event.md) | @getshort(form/api/togglegroup/togglegroup_beforechangeproperties_event.md) |
-| [](form/api/togglegroup/togglegroup_beforehide_event.md)  	   	   | @getshort(form/api/togglegroup/togglegroup_beforehide_event.md)      		 |
-| [](form/api/togglegroup/togglegroup_beforeshow_event.md)  	   	   | @getshort(form/api/togglegroup/togglegroup_beforeshow_event.md)        	 |
-| [](form/api/togglegroup/togglegroup_blur_event.md)  	   			   | @getshort(form/api/togglegroup/togglegroup_blur_event.md)        		   	 |
-| [](form/api/togglegroup/togglegroup_change_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_change_event.md)        		 |
-| [](form/api/togglegroup/togglegroup_focus_event.md)  	   			   | @getshort(form/api/togglegroup/togglegroup_focus_event.md)        		     |
-| [](form/api/togglegroup/togglegroup_keydown_event.md)  	   		   | @getshort(form/api/togglegroup/togglegroup_keydown_event.md)        		 |
+| [](form/api/togglegroup/togglegroup_beforehide_event.md)                | @getshort(form/api/togglegroup/togglegroup_beforehide_event.md)               |
+| [](form/api/togglegroup/togglegroup_beforeshow_event.md)                | @getshort(form/api/togglegroup/togglegroup_beforeshow_event.md)             |
+| [](form/api/togglegroup/togglegroup_blur_event.md)                        | @getshort(form/api/togglegroup/togglegroup_blur_event.md)                        |
+| [](form/api/togglegroup/togglegroup_change_event.md)                    | @getshort(form/api/togglegroup/togglegroup_change_event.md)                 |
+| [](form/api/togglegroup/togglegroup_focus_event.md)                        | @getshort(form/api/togglegroup/togglegroup_focus_event.md)                     |
+| [](form/api/togglegroup/togglegroup_keydown_event.md)                    | @getshort(form/api/togglegroup/togglegroup_keydown_event.md)                 |
 
 
 ### ToggleGroup properties

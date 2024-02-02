@@ -11,7 +11,7 @@ description: You can explore the attach method of Window in the documentation of
 @signature: {'attach(name: string | object, config?: object): void;'}
 
 @params:
-- `name: string, object` -	the name or object of a component
+- `name: string, object` -    the name or object of a component
 - `config: object` - optional, the configuration settings of a component
 
 @example:

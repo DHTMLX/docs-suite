@@ -19,37 +19,37 @@ DHTMLX Menu expects loaded data in the JSON format. Here is an example of an app
 
 ~~~js
 const data = [
-	{ 
-		value: "File", 
-		items: [
-        	{
-        		value: "New File",
-        		icon: "dxi dxi-file-outline",
-        	},						
-        	{
-        		value: "Remove File",
-        		icon: "dxi dxi-delete",
-        	}        
-        ]
-	},
-    {
-    	type: "separator"
-    },
-	{ 
-		value: "Edit",
-		items: [
-			{
-				value: "Undo",
-				icon: "dxi dxi-undo",
-			},
-			{
-				value:  "Redo",
-				icon: "dxi dxi-redo",
-			}
+    { 
+        value: "File", 
+        items: [
+            {
+                value: "New File",
+                icon: "dxi dxi-file-outline",
+            },                        
+            {
+                value: "Remove File",
+                icon: "dxi dxi-delete",
+            }        
         ]
     },
     {
-    	type: "spacer"
+        type: "separator"
+    },
+    { 
+        value: "Edit",
+        items: [
+            {
+                value: "Undo",
+                icon: "dxi dxi-undo",
+            },
+            {
+                value:  "Redo",
+                icon: "dxi dxi-redo",
+            }
+        ]
+    },
+    {
+        type: "spacer"
     }
 ];
 ~~~
@@ -81,7 +81,7 @@ The **load** method of Tree Collection loads menu data from an external JSON fil
 
 ~~~js
 menu.data.load("[path to this file]/file.json");
-~~~	
+~~~    
 
 **Related sample**: [Menu. Initialization with data.load()](https://snippet.dhtmlx.com/wjqno7xq)
 
@@ -130,22 +130,22 @@ This section will give you the idea of JSON format templates for separate Menu c
 ~~~js
 // menuItem
 {
-	id:		 	"print",			 
-	type:	   	"menuItem",			 
-	value:	  	"Print",			 
-	icon:	   	"dxi-printer",		
-	hotkey:	 	"Alt+P",			 	
-	items:[						
-		{
-			type:   "menuItem",
-			value:  "Print"
-		},
-		{
-			type:   "menuItem",
-			value:  "Preview and print",
-			icon:	"dxi-magnify"
-		}
-	]
+    id:             "print",             
+    type:           "menuItem",             
+    value:          "Print",             
+    icon:           "dxi-printer",        
+    hotkey:         "Alt+P",                 
+    items:[                        
+        {
+            type:   "menuItem",
+            value:  "Print"
+        },
+        {
+            type:   "menuItem",
+            value:  "Preview and print",
+            icon:    "dxi-magnify"
+        }
+    ]
 }
 ~~~
 
@@ -159,10 +159,10 @@ You can find the full list of properties of the **menuItem** object [here](menu/
 // customHTML
 {
     id: "custom",
-	parent: "edit",
+    parent: "edit",
     type: "customHTML",
-	html: "<img src='../logo.svg' alt=''/>",
-	css: "custom-image"
+    html: "<img src='../logo.svg' alt=''/>",
+    css: "custom-image"
 }
 ~~~
 
@@ -191,8 +191,8 @@ You will find the full list of properties of the **separator** object [here](men
 ~~~js
 // spacer
 {
-	id:	 	"spacerId",	  	
-	type:   "spacer"		
+    id:         "spacerId",          
+    type:   "spacer"        
 }
 ~~~
 

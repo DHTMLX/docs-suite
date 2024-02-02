@@ -78,17 +78,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>value</b></td>
-            <td>(optional) the value of an Avatar set as an object. The avatar object can contain the following properties:
-                <ul>
-                    <li><b>id</b> - (optional) the id of the file, auto-generated if not set</li>
-                    <li><b>src</b> - (required) the path to the image. If the image is uploaded into the component without being sent to the server, a temporary path is formed. In case data is sent to the server, the server response must contain a path with the "src" key. The value of the key should be the absolute path to the image</li>
-                    <li><b>file</b> - (optional) the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File">File</a> object is formed when an image is loaded with the help of UI</li>
-                    <li><b>path</b> - (optional) the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li>
-                    <li><b>status</b> - (optional) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li>
-                    <li><b>progress</b> - (optional) the progress of the file upload</li>
-                    <li><b>request</b> - (optional) an XMLHttpRequest object sent to the server when an upload begins</li>
-                </ul>
-            </td>
+            <td>(optional) the value of an Avatar set as an object. The avatar object can contain the following properties:<ul><li><b>id</b> - (optional) the id of the file, auto-generated if not set</li><li><b>src</b> - (required) the path to the image. If the image is uploaded into the component without being sent to the server, a temporary path is formed. In case data is sent to the server, the server response must contain a path with the "src" key. The value of the key should be the absolute path to the image</li><li><b>file</b> - (optional) the <a href="https://developer.mozilla.org/en-US/docs/Web/API/File">File</a> object is formed when an image is loaded with the help of UI</li><li><b>path</b> - (optional) the path to the file on the computer starting from the name of the folder (in case a folder with files is added)</li><li><b>status</b> - (optional) the status of the file ("queue", "inprogress", "uploaded", or "failed") </li><li><b>progress</b> - (optional) the progress of the file upload</li><li><b>request</b> - (optional) an XMLHttpRequest object sent to the server when an upload begins</li></ul></td>
         </tr>
          <tr>
             <td><b>hidden</b></td>

@@ -24,10 +24,11 @@
     --ifm-list-item-margin: 0.7rem;
 }
 
+/* deprecated from v3.1
 html[data-theme=dark] {
     --ifm-color-primary: #26adf7;
 }
-
+*/
 .docusaurus-highlight-code-line {
     background-color: rgb(210, 213, 214);
     display: block;
@@ -37,10 +38,12 @@ html[data-theme=dark] {
 
 /* If you have a different syntax highlighting theme for dark mode. */
 
+/* deprecated from v3.1
 html[data-theme='dark'] .docusaurus-highlight-code-line {
     background-color: rgb(122, 124, 126);
-    /* Color which works with dark mode syntax highlighting theme */
+     Color which works with dark mode syntax highlighting theme 
 }
+*/
 
 /* typography */
 
@@ -105,7 +108,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 /* buttons */
 
 .support_btn{
-  
     font-size: 16pt;
     color: rgb(53, 148, 243);
     background-color: transparent;
@@ -114,20 +116,19 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     width: 280px;
     height: 50px;
     margin-bottom: 30px;
-  }
+}
   
-  .support_btn:hover{
+.support_btn:hover{
     background-color: rgba(53, 148, 243, 0.692);
     color: white;
-  }
+}
   
-  .support_btn > a {
+.support_btn > a {
     text-decoration: none;
     color: inherit;
-  }
+}
 
-  .pattern_btn{
-  
+.pattern_btn{
     font-size: 16pt;
     color: rgb(53, 148, 243);
     background-color: transparent;
@@ -137,17 +138,17 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
     height: 50px;
     margin-bottom: 30px;
     margin-right: 10px;
-  }
+}
   
-  .pattern_btn:hover{
+.pattern_btn:hover{
     background-color: rgba(53, 148, 243, 0.692);
     color: white;
-  }
-  
-  .pattern_btn > a {
+}
+
+.pattern_btn > a {
     text-decoration: none;
     color: inherit;
-  }
+}
   
   /* buttons end */
 
@@ -200,8 +201,8 @@ table {
 /* for Code Snippet iframe */
 
 .snippet_iframe {
- border: 1px solid var(--ifm-hr-border-color);
- margin-bottom: var(--ifm-leading);
+    border: 1px solid var(--ifm-hr-border-color);
+    margin-bottom: var(--ifm-leading);
 }
 
 /* end for Code Snippet iframe */
@@ -218,8 +219,23 @@ code {
 
 /* styles for block of code */
 
-.token-line.theme-code-block-highlighted-line{ /* added after updating to 2.0.0-beta.19 */
+/*
+.token-line.theme-code-block-highlighted-line{  added after updating to 2.0.0-beta.19 
     background-color: rgb(156 159 166 / 15%);
+}
+*/
+
+/* specify code box background */
+.codeBlockLines_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Content-styles-module {
+    /*background-color: rgb(90, 86, 86);*/
+}
+    /* specify the comment text color */
+span.token.comment {
+    color: rgb(12, 121, 8) !important;
+} 
+    /* specify the comment background color */
+span.token-line.theme-code-block-highlighted-line {
+    background-color: rgba(225, 212, 212, 0.075);
 }
 
 /* end styles for block of code */

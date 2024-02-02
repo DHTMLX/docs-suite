@@ -45,23 +45,23 @@ const layout = new dhx.Layout("layout_container", {
 **Related sample**: [Layout. Types in a complex layout](https://snippet.dhtmlx.com/w00fgl57)
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>"line"</b></td>
-			<td>adds a border to a cell</td>
-		</tr>
+            <td><b>"line"</b></td>
+            <td>adds a border to a cell</td>
+        </tr>
         <tr>
-			<td><b>"space"</b></td>
-			<td>adds a border and space around a cell</td>
-		</tr>
+            <td><b>"space"</b></td>
+            <td>adds a border and space around a cell</td>
+        </tr>
         <tr>
-			<td><b>"wide"</b></td>
-			<td>adds a border to a cell and space between the neighboring cells</td>
-		</tr>
+            <td><b>"wide"</b></td>
+            <td>adds a border to a cell and space between the neighboring cells</td>
+        </tr>
         <tr>
-			<td><b>"none"</b></td>
-			<td>removes visible borders and space between cells (the default one)</td>
-		</tr>
+            <td><b>"none"</b></td>
+            <td>removes visible borders and space between cells (the default one)</td>
+        </tr>
     </tbody>
 </table>
 

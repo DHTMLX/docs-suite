@@ -18,7 +18,7 @@ Return `false` to prevent adding of a cell; otherwise, `true`.
 
 @example:
 layout.events.on("beforeAdd", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

@@ -29,30 +29,30 @@ To initialize DHTMLX Chart in an application, you need to take the following ste
         <link rel="stylesheet" href="../../codebase/chart.css">
     </head>
     <body>
-    	<div id="chart_container"></div>
+        <div id="chart_container"></div>
         <script>
             // creating Chart 
             const chart = new dhx.Chart("chart_container", {
-    			type: "bar",
-				scales: {
-					"bottom" : {
-						text: "month"
-					},
-					"left" : {
-						maxTicks: 10,
-						max: 100,
-						min: 0
-					}
-				},
-				series: [
-					{
-						id: "A",
-						value: "company C",
-						color: "#5E83BA",						
-						fill: "#5E83BA"						
-					}
-				]
-			});
+                type: "bar",
+                scales: {
+                    "bottom" : {
+                        text: "month"
+                    },
+                    "left" : {
+                        maxTicks: 10,
+                        max: 100,
+                        min: 0
+                    }
+                },
+                series: [
+                    {
+                        id: "A",
+                        value: "company C",
+                        color: "#5E83BA",                        
+                        fill: "#5E83BA"                        
+                    }
+                ]
+            });
         </script>
     </body>
 </html>
@@ -101,24 +101,24 @@ Initialize Chart with the `dhx.Chart` object constructor. The constructor has tw
 
 ~~~js title="index.js"
 const config = {
-	type: "bar",
+    type: "bar",
     scales: {
-    	"bottom" : {
-    		text: "month"
-    	},
-    	"left" : {
-    		maxTicks: 10,
-    		max: 100,
-    		min: 0
-    	}
+        "bottom" : {
+            text: "month"
+        },
+        "left" : {
+            maxTicks: 10,
+            max: 100,
+            min: 0
+        }
     },
     series: [
-    	{
-    		id: "A",
-    		value: "company C",
-    		color: "#5E83BA",						
-    		fill: "#5E83BA"						
-    	}
+        {
+            id: "A",
+            value: "company C",
+            color: "#5E83BA",                        
+            fill: "#5E83BA"                        
+        }
     ]
 };
 

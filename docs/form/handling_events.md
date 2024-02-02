@@ -11,15 +11,15 @@ description: You can explore the event handling of Form in the documentation of 
 You can add any handler to the events of Form. To do this, use the **form.events.on()** method with the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>evName</b></td>
-			<td>name of the event</td>
-		</tr>
+            <td><b>evName</b></td>
+            <td>name of the event</td>
+        </tr>
         <tr>
-			<td><b>evHandler</b></td>
-			<td>user-defined event handler</td>
-		</tr>
+            <td><b>evHandler</b></td>
+            <td>user-defined event handler</td>
+        </tr>
     </tbody>
 </table>
 

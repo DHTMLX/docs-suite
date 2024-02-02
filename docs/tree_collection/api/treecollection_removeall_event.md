@@ -12,7 +12,7 @@ description: You can explore the removeAll event of TreeCollection in the docume
 
 @example:
 component.data.events.on("removeAll", function(){
-	console.log("Items are removed");
+    console.log("Items are removed");
 });
 
 @descr:

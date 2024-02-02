@@ -64,18 +64,18 @@ form.getProperties();
 // -> the returned object:
 {
     name: {
-		autocomplete: false, errorMessage: "", height: "content", helpMessage: "",
-		hiddenLabel: false, icon: "dxi dxi-magnify", inputType: "text", …
-	},
-	password: {
-		autocomplete: false, errorMessage: "", height: "content",
-		helpMessage: "", hiddenLabel: false, icon: "", inputType: "password", …
-	},
+        autocomplete: false, errorMessage: "", height: "content", helpMessage: "",
+        hiddenLabel: false, icon: "dxi dxi-magnify", inputType: "text", …
+    },
+    password: {
+        autocomplete: false, errorMessage: "", height: "content",
+        helpMessage: "", hiddenLabel: false, icon: "", inputType: "password", …
+    },
     u1604577858827: {
-		circle: false, color: "primary", full: false, height: "content",
-		icon: "", loading: false, padding: 0, size: "medium", submit: true, …
+        circle: false, color: "primary", full: false, height: "content",
+        icon: "", loading: false, padding: 0, size: "medium", submit: true, …
 
-	}
+    }
 }
 ```
 
@@ -86,29 +86,29 @@ form.getProperties("name");
 
 // -> the returned object:
 {
-	autocomplete: false,
-	css: "",
-	errorMessage: "",
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	icon: "dxi dxi-magnify",
-	inputType: "text",
-	label: "Name",
-	labelPosition: "top",
-	labelWidth: "",
-	max: undefined,
-	maxlength: undefined,
-	min: undefined,
-	minlength: undefined,
-	padding: 0,
-	placeholder: "John Doe",
-	preMessage: "",
-	readOnly: false,
-	required: false,
-	successMessage: "",
-	validation: undefined,
-	width: "content"
+    autocomplete: false,
+    css: "",
+    errorMessage: "",
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    icon: "dxi dxi-magnify",
+    inputType: "text",
+    label: "Name",
+    labelPosition: "top",
+    labelWidth: "",
+    max: undefined,
+    maxlength: undefined,
+    min: undefined,
+    minlength: undefined,
+    padding: 0,
+    placeholder: "John Doe",
+    preMessage: "",
+    readOnly: false,
+    required: false,
+    successMessage: "",
+    validation: undefined,
+    width: "content"
 }
 ```
 
@@ -118,7 +118,7 @@ The returned object of the **Avatar** control can contain the following properti
 
 ~~~js
 {
-	css: string,
+    css: string,
     width: string | number | "content",
     height: string | number | "content",
     padding: string | number,
@@ -158,20 +158,20 @@ The returned object of the **Button** control can contain the following properti
 
 ~~~js
 {
-	circle: boolean,
-	color: string,
-	css: string,
-	full: boolean,
-	height: string | number | "content",
-	icon: string,
-	loading: boolean,
-	padding: string | number,
-	size: string,
-	submit: boolean,
-	text: string,
-	url: string,
-	view: string,
-	width: string | number | "content",
+    circle: boolean,
+    color: string,
+    css: string,
+    full: boolean,
+    height: string | number | "content",
+    icon: string,
+    loading: boolean,
+    padding: string | number,
+    size: string,
+    submit: boolean,
+    text: string,
+    url: string,
+    view: string,
+    width: string | number | "content",
 }
 ~~~
 
@@ -183,33 +183,33 @@ The returned object of the **DatePicker** control can contain the following prop
 
 ~~~js
 {
-	css: string,
-	dateFormat: string,
-	disabledDates: function,
-	editable: boolean,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean, 
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	mark: function,
-	mode: string,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	thisMonthOnly: boolean,
-	timeFormat: number,
-	timePicker: boolean,
-	validation: function,
-	valueFormat: string,
-	weekNumbers: boolean,
-	weekStart: string,
-	width: string | number | "content"
+    css: string,
+    dateFormat: string,
+    disabledDates: function,
+    editable: boolean,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean, 
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    mark: function,
+    mode: string,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    thisMonthOnly: boolean,
+    timeFormat: number,
+    timePicker: boolean,
+    validation: function,
+    valueFormat: string,
+    weekNumbers: boolean,
+    weekStart: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -221,20 +221,20 @@ The returned object of the **Checkbox** control can contain the following proper
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	text: string,
-	width: string | number | "content",
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    text: string,
+    width: string | number | "content",
 }
 ~~~
 
@@ -246,20 +246,20 @@ The returned object of the **CheckboxGroup** control can contain the following p
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	options: object,
-	padding: string | number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    options: object,
+    padding: string | number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -271,11 +271,11 @@ The returned object of a **checkbox** of the **CheckboxGroup** control can conta
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	padding: string | number,
-	text: string,
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    padding: string | number,
+    text: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -287,27 +287,27 @@ The returned object of the **ColorPicker** control can contain the following pro
 
 ~~~js
 {
-	css: string,
-	customColors: array,
-	editable: boolean,
-	errorMessage: string,
-	grayShades: boolean,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	mode: string,
-	padding: string | number,
-	palette: array,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	validation: function,
-	width: string | number | "content"
+    css: string,
+    customColors: array,
+    editable: boolean,
+    errorMessage: string,
+    grayShades: boolean,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    mode: string,
+    padding: string | number,
+    palette: array,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    validation: function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -319,30 +319,30 @@ The returned object of the **Combo** control can contain the following propertie
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	filter: function, 
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	itemHeight: number,
-	itemsCount: boolean | function,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	listHeight: number,
-	multiselection: boolean,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	selectAllButton: boolean,
-	successMessage: string,
-	template: function,
-	validation: function,
-	virtual: boolean,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    filter: function, 
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    itemHeight: number,
+    itemsCount: boolean | function,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    listHeight: number,
+    multiselection: boolean,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    selectAllButton: boolean,
+    successMessage: string,
+    template: function,
+    validation: function,
+    virtual: boolean,
+    width: string | number | "content"
 }
 ~~~
 
@@ -354,10 +354,10 @@ The returned object of the **Container** control can contain the following prope
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content", 
-	padding: string | number,
-	width: string, number, "content"
+    css: string,
+    height: string | number | "content", 
+    padding: string | number,
+    width: string, number, "content"
 }
 ~~~
 
@@ -388,29 +388,29 @@ The returned object of the **Input** control can contain the following propertie
 
 ~~~js
 {
-	autocomplete: boolean,
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	inputType: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	max: string | number,
-	maxlength: string | number,
-	min: string | number,
-	minlength: string | number,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	successMessage: string,
-	validation: object | function,
-	width: string | number | "content"
+    autocomplete: boolean,
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    inputType: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    max: string | number,
+    maxlength: string | number,
+    min: string | number,
+    minlength: string | number,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    successMessage: string,
+    validation: object | function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -422,20 +422,20 @@ The returned object of the **RadioGroup** control can contain the following prop
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	options: object,
-	padding: string | number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    options: object,
+    padding: string | number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -447,11 +447,11 @@ The returned object of a **radio button** of the **RadioGroup** control can cont
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	padding: string | number,
-	text: string,
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    padding: string | number,
+    text: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -463,20 +463,20 @@ The returned object of the **Select** control can contain the following properti
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	preMessage: string,
-	successMessage: string,
-	validation: function,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    preMessage: string,
+    successMessage: string,
+    validation: function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -521,25 +521,25 @@ The returned object of the **Slider** control can contain the following properti
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	inverse: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	majorTick: number,
-	max: number,
-	min: number,
-	mode: string,
-	padding: string | number,
-	range: boolean,
-	step: number,
-	tick: number,
-	tickTemplate: function,
-	tooltip: boolean, 
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    inverse: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    majorTick: number,
+    max: number,
+    min: number,
+    mode: string,
+    padding: string | number,
+    range: boolean,
+    step: number,
+    tick: number,
+    tickTemplate: function,
+    tooltip: boolean, 
+    width: string | number | "content"
 }
 ~~~
 
@@ -551,10 +551,10 @@ The returned object of the **Spacer** control can contain the following properti
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content"
-	padding: string | number
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content"
+    padding: string | number
+    width: string | number | "content"
 }
 ~~~
 
@@ -566,16 +566,16 @@ The returned object of the **Text** control can contain the following properties
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	inputType: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    inputType: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    width: string | number | "content"
 }
 ~~~
 
@@ -587,24 +587,24 @@ The returned object of the **Textarea** control can contain the following proper
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	maxlength: string | number,
-	minlength: string | number,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	successMessage: string,
-	validation: object | function,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    maxlength: string | number,
+    minlength: string | number,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    successMessage: string,
+    validation: object | function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -616,26 +616,26 @@ The returned object of the **TimePicker** control can contain the following prop
 
 ~~~js
 {
-	controls: boolean,
-	css: string,
-	editable: boolean,
-	errorMessage: string,
-	height: string | number| "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	timeFormat: number,
-	validation: function,
-	valueFormat: string,
-	width: string | number | "content"
+    controls: boolean,
+    css: string,
+    editable: boolean,
+    errorMessage: string,
+    height: string | number| "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    timeFormat: number,
+    validation: function,
+    valueFormat: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -647,16 +647,16 @@ The returned object of the **Toggle** control can contain the following properti
 
 ~~~js
 {
-	css: string,
-	width: string | number | "content",
-	height: string | number | "content",
-	padding: string | number,
-	full: boolean,
-	text: string,
-	icon: string,
-	offText: string,
-	offIcon: string,
-	value: string | number
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    full: boolean,
+    text: string,
+    icon: string,
+    offText: string,
+    offIcon: string,
+    value: string | number
 }
 ~~~
 
@@ -687,12 +687,12 @@ The returned object of a **toggle** of the **ToggleGroup** control can contain t
 
 ~~~js
 {
-	full: boolean,
-	text: string,
-	icon: string,
-	offText: string,
-	offIcon: string,
-	value: string | number
+    full: boolean,
+    text: string,
+    icon: string,
+    offText: string,
+    offIcon: string,
+    value: string | number
 }
 ~~~
 

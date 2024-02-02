@@ -9,7 +9,7 @@ description: description
 You can show a particular date in the calendar and/or open Calendar in a certain mode via the [](calendar/api/calendar_showdate_method.md) method. It takes two parameters:
 
 - **date** - (*Date*) the date that should be shown in the calendar
-- **mode** - (*string*)	optional, the mode in which the calendar will be opened
+- **mode** - (*string*)    optional, the mode in which the calendar will be opened
 
 There are the following calendar modes available:
 
@@ -48,7 +48,7 @@ For example, Calendar can be attached to an input, a click on which will show Ca
 ~~~js
 var calendar = new dhx.Calendar("calendar_container");
 function showCalendar(){
-	calendar.showDate(new Date(11,11,11),"month");
+    calendar.showDate(new Date(11,11,11),"month");
 };
 ~~~
 
@@ -80,7 +80,7 @@ var date2 = calendar.getValue(true); // -> Tue Aug 20 2019 00:00:00 GMT+0300
 
 **Related sample**: [Calendar. Getting selected date](https://snippet.dhtmlx.com/k2vrfqj0)
 
-If you work with a calendar in the [range mode](calendar/configuring.md#rangemode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
+If you work with a calendar in the [range mode](calendar/configuring.md#range-mode) the **getValue()** method returns either an array of Date values or an array of string values with the start and end dates of the range.
 
 ~~~js
 // for a range calendar as an array of Date values 
@@ -108,13 +108,13 @@ var calendar2 = new dhx.Calendar("calendar2", { css: "dhx_calendar--bordered" })
 calendar.link(calendar2);
 
 calendar.events.on("change", function (date) {
-	document.querySelector("#resultFrom").innerHTML = 
-    	"Date from: " + calendar.getValue() + "</br>";
+    document.querySelector("#resultFrom").innerHTML = 
+        "Date from: " + calendar.getValue() + "</br>";
 });
 
 calendar2.events.on("change", function (date) {
-	document.querySelector("#resultTo").innerHTML = 
-    	"Date to: " + calendar2.getValue() + "</br>";
+    document.querySelector("#resultTo").innerHTML = 
+        "Date to: " + calendar2.getValue() + "</br>";
 });
 ~~~
 
@@ -165,15 +165,15 @@ You can add tooltips for dates and show them on the [](calendar/api/calendar_dat
 
 ~~~js
 var special_days = {
-	"20__8": "Mum's birthday",
-	"28__8": "Trip to Canada"
+    "20__8": "Mum's birthday",
+    "28__8": "Trip to Canada"
 }
 
 calendar.events.on("DateMouseOver", function(date, e) {
-	var key = date.getDate() + "__" + (date.getMonth() + 1);
-	if (key in special_days) {
-		dhx.tooltip(special_days[key], {node: e.target, position: "bottom"});
-	}
+    var key = date.getDate() + "__" + (date.getMonth() + 1);
+    if (key in special_days) {
+        dhx.tooltip(special_days[key], {node: e.target, position: "bottom"});
+    }
 });
 ~~~
 

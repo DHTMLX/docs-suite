@@ -15,22 +15,15 @@ You can quickly add/remove tabs of Tabbar on the fly with the help of the corres
 The [](tabbar/api/tabbar_addtab_method.md) method takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>view</b></td>
-			<td>(<i>object</i>) an object of a tab. It may include the following properties:
-				<ul>
-					<li>tab - the name of a tab</li>
-					<li>tabCss - the name of the CSS class used for a tab</li>
-					<li>css - the name of the CSS class used for a cell</li>
-					<li>header - the header of a cell</li>
-				</ul>
-			</td>
-		</tr>
-		<tr>
-			<td><b>index</b></td>
-			<td>(<i>number</i>) the position to add a tab into</td>
-		</tr>
+            <td><b>view</b></td>
+            <td>(<i>object</i>) an object of a tab. It may include the following properties:<ul><li>tab - the name of a tab</li><li>tabCss - the name of the CSS class used for a tab</li><li>css - the name of the CSS class used for a cell</li><li>header - the header of a cell</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>index</b></td>
+            <td>(<i>number</i>) the position to add a tab into</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -42,7 +35,7 @@ tabbar.addTab({tab: "tab-" + nextTab++, css:"panel flex"}, 0);
 
 **Related sample**: [Tabbar. Add / remove tab](https://snippet.dhtmlx.com/z5vjj83y)
 
-The [removeTab()](tabbar/api/tabbar_removetab_method.md) method expects the id of a tab you want to remove as its parameter. You can get the id of a tab via the [getId()](tabbar/api/tabbar_getid_method.md) method:
+The [`removeTab()`](tabbar/api/tabbar_removetab_method.md) method expects the id of a tab you want to remove as its parameter. You can get the id of a tab via the [`getId()`](tabbar/api/tabbar_getid_method.md) method:
 
 ~~~js
 // removing a tab
@@ -54,7 +47,7 @@ tabbar.removeTab(id);
 
 ## Getting the id of a tab
 
-In order to get the id of a tab, make use of the [getId()](tabbar/api/tabbar_getid_method.md) method. It takes the index of the tab in question as a parameter:
+In order to get the id of a tab, make use of the [`getId()`](tabbar/api/tabbar_getid_method.md) method. It takes the index of the tab in question as a parameter:
 
 ~~~js
 const id = tabbar.getId(0);
@@ -62,17 +55,17 @@ const id = tabbar.getId(0);
 
 ## Setting/getting the active tab
 
-It is possible to set the active tab via Tabbar API, i.e. with the help of the [setActive()](tabbar/api/tabbar_setactive_method.md) method. It takes the id of a tab as a parameter:
+It is possible to set the active tab via Tabbar API, i.e. with the help of the [`setActive()`](tabbar/api/tabbar_setactive_method.md) method. It takes the id of a tab as a parameter:
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
-	mode: "top",			
-	views:[
-		{ id: "1", tab: "tab-1", css:"panel flex"},
-		{ id: "2", tab: "tab-2", css:"panel flex"},
-		{ id: "3", tab: "tab-3", css:"panel flex"},
-		{ id: "4", tab: "tab-4", css:"panel flex"}
-	]
+    mode: "top",            
+    views:[
+        { id: "1", tab: "tab-1", css:"panel flex"},
+        { id: "2", tab: "tab-2", css:"panel flex"},
+        { id: "3", tab: "tab-3", css:"panel flex"},
+        { id: "4", tab: "tab-4", css:"panel flex"}
+    ]
 });
 
 tabbar.setActive("2");
@@ -80,17 +73,17 @@ tabbar.setActive("2");
 
 **Related sample**: [Tabbar. Set active](https://snippet.dhtmlx.com/u9ryz38f)
 
-To identify what tab is currently active, apply the [getActive()](tabbar/api/tabbar_getactive_method.md) method. It will return the id of the active tab.
+To identify what tab is currently active, apply the [`getActive()`](tabbar/api/tabbar_getactive_method.md) method. It will return the id of the active tab.
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
-	mode: "top",			
-	views:[
-		{ id: "1", tab: "tab-1", css:"panel flex"},
-		{ id: "2", tab: "tab-2", css:"panel flex"},
-		{ id: "3", tab: "tab-3", css:"panel flex"},
-		{ id: "4", tab: "tab-4", css:"panel flex"}
-	]
+    mode: "top",            
+    views:[
+        { id: "1", tab: "tab-1", css:"panel flex"},
+        { id: "2", tab: "tab-2", css:"panel flex"},
+        { id: "3", tab: "tab-3", css:"panel flex"},
+        { id: "4", tab: "tab-4", css:"panel flex"}
+    ]
 });
 
 const active = tabbar.getActive(); // -> "2"
@@ -100,13 +93,13 @@ const active = tabbar.getActive(); // -> "2"
 
 ## Enabling/disabling a tab
 
-To enable a tab, use the [enableTab()](tabbar/api/tabbar_enabletab_method.md) method:
+To enable a tab, use the [`enableTab()`](tabbar/api/tabbar_enabletab_method.md) method:
 
 ~~~js
 tabbar.enableTab("London");
 ~~~
 
-To disable a tab, use the [disableTab()](tabbar/api/tabbar_disabletab_method.md) method:
+To disable a tab, use the [`disableTab()`](tabbar/api/tabbar_disabletab_method.md) method:
 
 ~~~js
 tabbar.disableTab("London");
@@ -117,13 +110,13 @@ tabbar.disableTab("London");
 
 ## Checking if a tab is disabled
 
-To check if a tab is disabled, pass the id of the tab as an argument to the [isDisabled()](tabbar/api/tabbar_isdisabled_method.md) method:
+To check if a tab is disabled, pass the id of the tab as an argument to the [`isDisabled()`](tabbar/api/tabbar_isdisabled_method.md) method:
 
 ~~~js
 tabbar.isDisabled("London"); // -> returns true/false
 ~~~
 
-To check if a currently active tab is disabled, call the [isDisabled()](tabbar/api/tabbar_isdisabled_method.md) method without parameters:
+To check if a currently active tab is disabled, call the [`isDisabled()`](tabbar/api/tabbar_isdisabled_method.md) method without parameters:
 
 ~~~js
 tabbar.isDisabled(); // -> returns true/false
@@ -137,9 +130,9 @@ You can easily attach any DHTMLX component (except for Message, Popup, Window) t
 
 ~~~js
 const dataview = new dhx.DataView(null, {
-	template: dataviewTemplate,
-	itemsInRow: 3,
-	gap: "10px"
+    template: dataviewTemplate,
+    itemsInRow: 3,
+    gap: "10px"
 });
 
 dataview.data.parse(dataset);
@@ -149,7 +142,9 @@ tabbar.getCell("dataview").attach(dataview);
 
 **Related sample**: [Tabbar. Attach widget](https://snippet.dhtmlx.com/o1jwmw1l)
 
-{{note The Message, Popup, Window components can't be attached to the Tabbar cell because these components can't have the parent container due to their architecture principles.}}
+:::note
+The Message, Popup, Window components can't be attached to the Tabbar cell because these components can't have the parent container due to their architecture principles.
+:::
 
 ## Attaching an HTML content to a cell
 

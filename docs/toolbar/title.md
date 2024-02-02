@@ -19,7 +19,7 @@ A Title control can be added to a toolbar with the help of the **add()** method 
 ~~~js
 toolbar.data.add({
     type: "title",
-	value: "APP NAME"
+    value: "APP NAME"
 });
 ~~~
 

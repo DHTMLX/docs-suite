@@ -10,7 +10,7 @@ description: You can explore the Properties of the Datepicker control of Form in
 
 ~~~js
 {
-	type: "datepicker",
+    type: "datepicker",
     name?: string,
     id?: string,
     value?: Date | string,

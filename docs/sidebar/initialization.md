@@ -74,7 +74,7 @@ const sidebar = new dhx.Sidebar("sidebar_container", {
 
 ### Configuration properties
 
-The detailed information on Sidebar configuration options can be found in the [Sidebar API overview](sidebar/api/api_overview.md#properties) article.
+The detailed information on Sidebar configuration options can be found in the [Sidebar API overview](sidebar/api/api_overview.md) article.
 
 ## Load data into Sidebar
 

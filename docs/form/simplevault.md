@@ -20,16 +20,16 @@ You can easily add a SimpleVault control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-			type: "simpleVault",
-			name:"simplevault",
-			label: "i am simpleVault",
-			labelWidth: "120px",
-			labelPosition: "left",
-			disabled: false,
-			required: false
-		}
+    rows: [
+        {
+            type: "simpleVault",
+            name:"simplevault",
+            label: "i am simpleVault",
+            labelWidth: "120px",
+            labelPosition: "left",
+            disabled: false,
+            required: false
+        }
     ]
 });
 ~~~

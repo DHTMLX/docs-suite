@@ -26,23 +26,23 @@ const menu = new dhx.Menu("menu_container", {
             "count": 25,
             "countColor": "danger",
             "items": [
-				{
-                	"id": "redo1",
-                	"value": "Redo",
-                	"icon": "dxi dxi-redo",
-                	"disabled": "true"
-            	},
-            	{
-                	"type": "separator"
-            	},
-            	{
-                	"id": "lock1",
-                	"value": "Lock cell",
-                	"icon": "dxi dxi-key"
-            	}
-			]
-    	}]
-	}]
+                {
+                    "id": "redo1",
+                    "value": "Redo",
+                    "icon": "dxi dxi-redo",
+                    "disabled": "true"
+                },
+                {
+                    "type": "separator"
+                },
+                {
+                    "id": "lock1",
+                    "value": "Lock cell",
+                    "icon": "dxi dxi-key"
+                }
+            ]
+        }]
+    }]
 });
 
 @descr:

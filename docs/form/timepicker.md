@@ -20,16 +20,16 @@ You can easily add a TimePicker control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-			type: "timepicker",
+    rows: [
+        {
+            type: "timepicker",
             name: "timepicker",
             label: "time",
             labelWidth: "50px",
-			timeFormat: 12,
-    		valueFormat: "timeObject",
+            timeFormat: 12,
+            valueFormat: "timeObject",
             value: [6,20,"AM"]
-		}
+        }
     ]
 });
 ~~~

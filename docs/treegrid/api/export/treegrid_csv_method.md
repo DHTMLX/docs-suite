@@ -14,11 +14,11 @@ description: You can explore the csv method of TreeGrid in the documentation of 
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to CSV:
-	- `asFile?: boolean` - (optional) defines whether TreeGrid should be exported to a file, *true* by default. To export TreeGrid only as a CSV string, you need to set *asFile:false*
-	- `name?: string` - (optional) the name of the exported CSV file (if asFile is not set to *false*)
-	- `flat?: boolean` - (boolean) defines whether TreeGrid data should be exported as a flat structure; *false* by default
-	- `rowDelimiter?: string` - (optional) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
-	- `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
+    - `asFile?: boolean` - (optional) defines whether TreeGrid should be exported to a file, *true* by default. To export TreeGrid only as a CSV string, you need to set *asFile:false*
+    - `name?: string` - (optional) the name of the exported CSV file (if asFile is not set to *false*)
+    - `flat?: boolean` - (boolean) defines whether TreeGrid data should be exported as a flat structure; *false* by default
+    - `rowDelimiter?: string` - (optional) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
+    - `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
 
 @returns:
 A CSV string with TreeGrid data
@@ -39,4 +39,4 @@ treegrid.export.csv({
 
 **Related samples**: [TreeGrid. Export to .xlsx and .csv](https://snippet.dhtmlx.com/zyfois4q)
 
-**Related article:** [Exporting TreeGrid](treegrid/usage.md#exporting-treegrid)
+**Related article:** [Exporting TreeGrid](treegrid/usage.md)

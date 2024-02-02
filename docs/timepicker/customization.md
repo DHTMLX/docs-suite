@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my-first-class {
-		/*some styles*/
-	}
+    .my-first-class {
+        /*some styles*/
+    }
     
     .my-second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -49,8 +49,8 @@ For example:
 </style>
 
 <script>
-	const timepicker = new dhx.Timepicker("timepicker_container", {
-  		css: "custom dhx_widget--bordered"
-	});
+    const timepicker = new dhx.Timepicker("timepicker_container", {
+          css: "custom dhx_widget--bordered"
+    });
 </script>
 ~~~

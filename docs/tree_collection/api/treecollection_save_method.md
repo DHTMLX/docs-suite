@@ -34,6 +34,6 @@ Use the [](tree_collection/api/treecollection_issaved_method.md) method to know 
 
 ~~~js
 toolbar.data.saveData.then(function () {
-	console.log(toolbar.data.isSaved());
+    console.log(toolbar.data.isSaved());
 });
 ~~~

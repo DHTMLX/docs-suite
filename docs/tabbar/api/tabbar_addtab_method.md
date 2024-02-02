@@ -12,10 +12,10 @@ description: You can explore the addTab method of Tabbar in the documentation of
 
 @params:
 - `config: object` - an object of a tab. It may include the following properties:
-	- `tab: string` - the name of a tab
-	- `tabCss: string` - the name of the CSS class used for a tab
-	- `css: string` - the name of the CSS class used for a cell
-	- `header: string` - the header of a cell 
+    - `tab: string` - the name of a tab
+    - `tabCss: string` - the name of the CSS class used for a tab
+    - `css: string` - the name of the CSS class used for a cell
+    - `header: string` - the header of a cell 
 - `index: number` - the position to add a tab into
 
 @example:

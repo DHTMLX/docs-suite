@@ -14,7 +14,7 @@ description: You can explore the selection config of List in the documentation o
 
 @example:
 const list = new dhx.List("list_container", {
-	selection: false
+    selection: false
 });
 
 @descr:

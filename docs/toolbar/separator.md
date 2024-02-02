@@ -18,7 +18,7 @@ A new Separator can be created with the help of the **add()** method of [Tree Co
 
 ~~~js
 toolbar.data.add({
-	type:"separator"
+    type:"separator"
 });
 ~~~
 

@@ -15,15 +15,15 @@ description: You can explore the css config of Calendar in the documentation of 
 
 ~~~html
 <style>
-	.custom {
+    .custom {
         --dhx-color-primary: #118d8d;
     }
 </style>
 
 <script>
-	const calendar = new dhx.Calendar("calendar_container", { 
-		css: "custom dhx_widget--bordered"
-	});
+    const calendar = new dhx.Calendar("calendar_container", { 
+        css: "custom dhx_widget--bordered"
+    });
 </script>
 ~~~
 

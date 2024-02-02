@@ -72,7 +72,7 @@ const ribbon = new dhx.Ribbon("ribbon_container", {
 
 ### Configuration properties
 
-The detailed information on Ribbon configuration options can be found in the [Ribbon API overview](ribbon/api/api_overview.md#properties) article.
+The detailed information on Ribbon configuration options can be found in the [Ribbon API overview](ribbon/api/api_overview.md) article.
 
 ## Load data into Ribbon
 

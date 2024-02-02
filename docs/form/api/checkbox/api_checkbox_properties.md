@@ -10,7 +10,7 @@ description: You can explore the Properties of the Checkbox control of Form in t
 
 ~~~js
 {
-	type: "checkbox",
+    type: "checkbox",
     name?: string,
     id?: string,
     value?: string,

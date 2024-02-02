@@ -12,7 +12,7 @@ description: You can explore the helpMessage config of Combo Box in the document
 
 @example:
 const combobox = new dhx.Combobox("combo_container",{
-	helpMessage:"Some text"
+    helpMessage:"Some text"
 });
 
 @descr:

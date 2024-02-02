@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -35,10 +35,10 @@ For this you need to take the following steps:
 ~~~js
 const layout = new dhx.Layout("layout_container",{
     row: [
-		{
-			header: "Sub Block Header row",
-			css:"my_first_class my_second_class"
-		}
+        {
+            header: "Sub Block Header row",
+            css:"my_first_class my_second_class"
+        }
     ]    
 });
 ~~~
@@ -47,47 +47,47 @@ For example:
 
 ~~~html
 <style>
-	.layout {
-		color: #fff;
-		--dhx-background-secondary: #7a7a7a;
-		--dhx-border-color: #bababa;
-		--dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
-	}
+    .layout {
+        color: #fff;
+        --dhx-background-secondary: #7a7a7a;
+        --dhx-border-color: #bababa;
+        --dhx-border: var(--dhx-border-width) solid var(--dhx-border-color);
+    }
 
-	.layout-rightbar {
-		--dhx-background-primary: #e99949;
-	}
-	.layout-content {
-		--dhx-background-primary: #099f8e;
-	}
-	.layout-sidebar {
-		--dhx-background-primary: #e949ac;
-	}
-	.layout-header {
-		--dhx-background-primary: #3A434A;
-	}
-	
-	.dhx_layout-cell-inner_html {
-		height: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+    .layout-rightbar {
+        --dhx-background-primary: #e99949;
+    }
+    .layout-content {
+        --dhx-background-primary: #099f8e;
+    }
+    .layout-sidebar {
+        --dhx-background-primary: #e949ac;
+    }
+    .layout-header {
+        --dhx-background-primary: #3A434A;
+    }
+    
+    .dhx_layout-cell-inner_html {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
 
 <script>
-	const layout = new dhx.Layout("layout_container", {
-		type: "space",
-    	css: "layout",
-		rows: [
-	    	{
-	            id: "toolbar",
-	            html: "Header",
-	            css: "layout-header",
-	            height: "60px"
-	        },
-			// more objects
-		]
-	});
+    const layout = new dhx.Layout("layout_container", {
+        type: "space",
+        css: "layout",
+        rows: [
+            {
+                id: "toolbar",
+                html: "Header",
+                css: "layout-header",
+                height: "60px"
+            },
+            // more objects
+        ]
+    });
 </script>
 ~~~

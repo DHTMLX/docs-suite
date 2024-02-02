@@ -15,17 +15,17 @@ The function takes the object of a row as a parameter and returns a string with 
 
 @example:
 <style>
-	.my_custom_row {
-		background: coral;
-	}
+    .my_custom_row {
+        background: coral;
+    }
 </style>
 
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
+    data: dataset
 });
 
 @descr:

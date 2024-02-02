@@ -16,7 +16,7 @@ description: You can explore the change event of Form in the documentation of th
 
 @example:
 form.events.on("change",function(name, new_value){
-	// your code here
+    // your code here
 });
 
 @descr:

@@ -2,7 +2,8 @@
 sidebar_label: Basic application
 title: Basic Application
 ---          
-This tutorial describes how to create a basic application  and helps to understand the main principles of working with DHTMLX components. 
+This tutorial describes how to create a basic application and helps to understand the main principles of working with DHTMLX components.
+
 It covers a number of issues related to adding components on a page, displaying data on a page, interaction of components with each other.
 
 After you finish this tutorial, you'll have a simple app consisting of:
@@ -15,20 +16,15 @@ After you finish this tutorial, you'll have a simple app consisting of:
 
 - a toolbar for loading users data in the grid and the chart or removing it
 
-{{note
+:::note
 Download the demo app [here](https://dhtmlx.com/x/download/docs/basic_application.zip).
-}}
+:::
 
 <img style="margin: 12px" src="tutorial/basic_application/basic_initialization.png"/>
-
 
 <div id="tutorial_step">
     <a id="get_started" href="tutorial/basic_application/step1.md"></a>
 </div>
-
-
-
-
 
 @index:
 - tutorial/basic_application/step1.md
@@ -38,5 +34,3 @@ Download the demo app [here](https://dhtmlx.com/x/download/docs/basic_applicatio
 - tutorial/basic_application/step5.md
 - tutorial/basic_application/step6.md
 - tutorial/basic_application/step7.md
-
-

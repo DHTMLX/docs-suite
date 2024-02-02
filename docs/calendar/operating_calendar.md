@@ -11,7 +11,7 @@ description: You can explore how to work with Calendar in the documentation of t
 You can show a particular date in the calendar and/or open Calendar in a certain mode via the [](calendar/api/calendar_showdate_method.md) method. It takes two parameters:
 
 - **date** - (*Date*) the date that should be shown in the calendar
-- **mode** - (*string*)	optional, the mode in which the calendar will be opened
+- **mode** - (*string*)    optional, the mode in which the calendar will be opened
 
 There are the following calendar modes available:
 
@@ -50,7 +50,7 @@ For example, Calendar can be attached to an input, a click on which will show Ca
 ~~~js
 const calendar = new dhx.Calendar("calendar_container");
 function showCalendar(){
-	calendar.showDate(new Date(11,11,11),"month");
+    calendar.showDate(new Date(11,11,11),"month");
 };
 ~~~
 
@@ -108,13 +108,13 @@ const calendar2 = new dhx.Calendar("calendar2", { css: "dhx_calendar--bordered" 
 calendar.link(calendar2);
 
 calendar.events.on("change", function (date) {
-	document.querySelector("#resultFrom").innerHTML = 
-    	"Date from: " + calendar.getValue() + "</br>";
+    document.querySelector("#resultFrom").innerHTML = 
+        "Date from: " + calendar.getValue() + "</br>";
 });
 
 calendar2.events.on("change", function (date) {
-	document.querySelector("#resultTo").innerHTML = 
-    	"Date to: " + calendar2.getValue() + "</br>";
+    document.querySelector("#resultTo").innerHTML = 
+        "Date to: " + calendar2.getValue() + "</br>";
 });
 ~~~
 
@@ -164,14 +164,14 @@ You can add tooltips for dates and show them on the [](calendar/api/calendar_dat
 
 ~~~js
 const special_days = {
-	"20__8": "Mum's birthday",
-	"28__8": "Trip to Canada"
+    "20__8": "Mum's birthday",
+    "28__8": "Trip to Canada"
 }
 
 calendar.events.on("DateMouseOver", function(date, e) {
-	const key = date.getDate() + "__" + (date.getMonth() + 1);
-	if (key in special_days) {
-		dhx.tooltip(special_days[key], {node: e.target, position: "bottom"});
-	}
+    const key = date.getDate() + "__" + (date.getMonth() + 1);
+    if (key in special_days) {
+        dhx.tooltip(special_days[key], {node: e.target, position: "bottom"});
+    }
 });
 ~~~

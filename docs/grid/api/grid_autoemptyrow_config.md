@@ -14,11 +14,11 @@ description: You can explore the autoEmptyRow config of Grid in the documentatio
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	autoEmptyRow:true,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    autoEmptyRow:true,
+    data: dataset
 });
 
 @descr: 

@@ -12,8 +12,8 @@ description: You can explore the maxPoints config of Chart in the documentation 
 
 @example:
 const chart = new dhx.Chart("chart_container", {
-	type:"line",
-	maxPoints:100
+    type:"line",
+    maxPoints:100
 });
 
 @descr:

@@ -16,7 +16,7 @@ description: You can explore the resize event of Grid in the documentation of th
 
 @example:
 grid.events.on("resize", function(col,e){
-	// your code here
+    // your code here
 });
 
 @descr:

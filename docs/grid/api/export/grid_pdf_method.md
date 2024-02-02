@@ -84,7 +84,7 @@ If you use Grid in conjunction with [Pagination](pagination.md), only the displa
 
 **Related sample**: [Grid. Export to PDF/PNG](https://snippet.dhtmlx.com/ti9l91mn)
 
-**Related article:** [Exporting Grid](grid/usage.md#exporting-grid)
+**Related article:** [Exporting Grid](grid/usage.md)
 
 **Related API:** [exportStyles](grid/api/grid_exportstyles_config.md)
 

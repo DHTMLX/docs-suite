@@ -8,10 +8,10 @@ title: setValue
 @signature: setValue(value: Date | Date[] | string | string[]): boolean;
 
 @params:
-- date 		Date,Date[],string,string[] 		the date to select
+- date         Date,Date[],string,string[]         the date to select
 
 @returns:
-- result 	boolean 	defines, whether a date has been successfully added into the calendar
+- result     boolean     defines, whether a date has been successfully added into the calendar
 
 
 @example:

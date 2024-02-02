@@ -30,18 +30,18 @@ To add DHTMLX Layout into an application, you need to take the following simple 
         <script>
             // creating Layout
             const layout = new dhx.Layout("layout_container", {
-    			cols: [
-        			{ header: "Column 1" },
-        			{ header: "Column 2", cols: [
-                		{ header:"Left cols"},
-                		{ header:"Center cols",cols: [
-                        	{ header: "Sub Block Header cols 1" },
-                        	{ header: "Sub Block Header cols 2" },
-                        	{ header: "Sub Block Header cols 3" }]
-						}]
-					}
-    			]
-			});
+                cols: [
+                    { header: "Column 1" },
+                    { header: "Column 2", cols: [
+                        { header:"Left cols"},
+                        { header:"Center cols",cols: [
+                            { header: "Sub Block Header cols 1" },
+                            { header: "Sub Block Header cols 2" },
+                            { header: "Sub Block Header cols 3" }]
+                        }]
+                    }
+                ]
+            });
         </script>
     </body>
 </html>
@@ -77,30 +77,30 @@ For example, you can create a three-level layout structure:
 
 ~~~js
 const cols = [
-	{
-		header: "Sub Block Header row"
-	},
-	{
-		header: "Sub Block Header row",
-		cols: [
-			{
-				header:"Left cols"
-			},
-			{
-				header:"Center cols",
-				cols: [
-					{ header: "Sub Block Header cols 1" },
-					{ header: "Sub Block Header cols 2" },
-					{ header: "Sub Block Header cols 3" }
-				]
-			},
-			{
-				header:"Right"
-			}
-		]
-	},
-	{ header: "Sub Block Header" },
-	{ header: "Sub Block Header" }
+    {
+        header: "Sub Block Header row"
+    },
+    {
+        header: "Sub Block Header row",
+        cols: [
+            {
+                header:"Left cols"
+            },
+            {
+                header:"Center cols",
+                cols: [
+                    { header: "Sub Block Header cols 1" },
+                    { header: "Sub Block Header cols 2" },
+                    { header: "Sub Block Header cols 3" }
+                ]
+            },
+            {
+                header:"Right"
+            }
+        ]
+    },
+    { header: "Sub Block Header" },
+    { header: "Sub Block Header" }
 ]
 ~~~
 

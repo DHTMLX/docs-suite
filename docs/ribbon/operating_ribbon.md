@@ -99,11 +99,11 @@ ribbon.enable();
 To check if an item of Ribbon is disabled, call the [isDisabled()](ribbon/api/ribbon_isdisabled_method.md) method. The method takes one parameter:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of an item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of an item</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -121,15 +121,15 @@ ribbon.isDisabled("1"); // -> true/false
 To select a particular Ribbon item, make use of the [select()](ribbon/api/ribbon_select_method.md) method of Ribbon. The method takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of an item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of an item</td>
+        </tr>
         <tr>
-			<td><b>unselect</b></td>
-			<td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
-		</tr>
+            <td><b>unselect</b></td>
+            <td>(<i>boolean</i>) optional, <i>true</i> - to unselect previously selected items, otherwise - <i>false</i>; <i>true</i> by default</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -163,11 +163,11 @@ ribbon.unselect();
 To check if an item of Ribbon is selected, call the [isSelected()](ribbon/api/ribbon_isselected_method.md) method. The method takes one parameter:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>(<i>string, number</i>) an id of a ribbon item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>(<i>string, number</i>) an id of a ribbon item</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -210,18 +210,18 @@ ribbon.data.add({
     type:"block",
     id:"files",
     direction:"row",
-	items: [
-		{
-			icon: "dxi dxi-undo",
-			size: "small",
-			ribbonHeight: "double"
-		},
-		{
-			icon: "dxi dxi-redo",
-			size: "small",
-			ribbonHeight: "double"
-		}
-	]
+    items: [
+        {
+            icon: "dxi dxi-undo",
+            size: "small",
+            ribbonHeight: "double"
+        },
+        {
+            icon: "dxi dxi-redo",
+            size: "small",
+            ribbonHeight: "double"
+        }
+    ]
 });
 ~~~
 
@@ -318,7 +318,7 @@ To iterate through all the parent items (the immediate parent and its parent, et
 
 ~~~js
 ribbon.data.eachParent("new_btn",function(item){
-	console.log(item)
+    console.log(item)
 });
 ~~~
 

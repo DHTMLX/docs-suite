@@ -12,7 +12,7 @@ description: You can explore the tickTemplate config of Slider in the documentat
 
 @example:
 const slider = new dhx.Slider("slider_container", { 
-	// v is the value of majorTick
+    // v is the value of majorTick
     tickTemplate: function(v){
         return v + "°";
     } 

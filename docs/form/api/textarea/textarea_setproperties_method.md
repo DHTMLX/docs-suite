@@ -30,24 +30,24 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	maxlength: string|number,
-	minlength: string|number,
-	padding: string|number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	successMessage: string,
-	validation: object|function,
-	width: string|number|"content"
+    css: string,
+    errorMessage: string,
+    height: string|number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string|number,
+    maxlength: string|number,
+    minlength: string|number,
+    padding: string|number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    successMessage: string,
+    validation: object|function,
+    width: string|number|"content"
 }
 ~~~
 

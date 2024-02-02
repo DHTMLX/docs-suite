@@ -20,9 +20,9 @@ You can easily add an Avatar control during initialization of a form:
 
 ~~~js
 const form = new dhx.Form("form_container", {
-	rows: [
-    	{
-			type: "avatar",
+    rows: [
+        {
+            type: "avatar",
             name: "avatar",
             required: true,
             labelWidth: 140,
@@ -32,7 +32,7 @@ const form = new dhx.Form("form_container", {
             value: {
                 src: "https://server.domain/upload/image.jpg"
             }
-		}
+        }
     ]
 });
 ~~~

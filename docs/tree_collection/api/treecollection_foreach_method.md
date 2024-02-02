@@ -12,9 +12,9 @@ description: You can explore the forEach method of TreeCollection in the documen
 
 @params:
 - `callback: function` - a function that will iterate over items of a tree collection. It takes three parameters:
-	- `element: object` - the object of an item of a tree collection
-	- `index: number` - the index of an item
-	- `array: object[]` - an array with items
+    - `element: object` - the object of an item of a tree collection
+    - `index: number` - the index of an item
+    - `array: object[]` - an array with items
 - `parentID: string | number` - optional, the parent id. If not specified, the function will start iterating over from the root item.
 - `level: number` - optional, the number of levels to be iterated over. If not specified, each nested level will be visited.
 

@@ -34,8 +34,8 @@ const layout = dhx.Layout("layout_container", {
                     html: "Horizontal Align"
                 }
             ]
-      	}
-	]
+          }
+    ]
 });
 
 @descr:

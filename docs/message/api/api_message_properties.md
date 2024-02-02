@@ -12,13 +12,13 @@ description: You can explore the Message properties in the documentation of the 
 
 ~~~js
 dhx.message({
-	text?: string,
-	icon?: string,
-	css?: string,
-	html?: string,
-	node?: HTMLElement | string,
-	position?: "top-left" | "top-right" | "bottom-left" | "bottom-right", // "top-right" by default
-	expire?: number,
+    text?: string,
+    icon?: string,
+    css?: string,
+    html?: string,
+    node?: HTMLElement | string,
+    position?: "top-left" | "top-right" | "bottom-left" | "bottom-right", // "top-right" by default
+    expire?: number,
 });
 ~~~
 
@@ -27,39 +27,35 @@ dhx.message({
 The configuration object of a message box may take the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>text</b></td>
-			<td>(optional) the text of a message box</td>
-		</tr>
+            <td><b>text</b></td>
+            <td>(optional) the text of a message box</td>
+        </tr>
         <tr>
-			<td><b>icon</b></td>
-			<td>(optional) an an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
-		</tr>
+            <td><b>icon</b></td>
+            <td>(optional) an an <a href="../../../helpers/icon">icon</a> from the used icon font</td>
+        </tr>
         <tr>
-			<td><b>css</b></td>
-			<td>(optional) the style of a message box</td>
-		</tr>
+            <td><b>css</b></td>
+            <td>(optional) the style of a message box</td>
+        </tr>
         <tr>
-			<td><b>html</b></td>
-			<td>(optional) the HTML content to be displayed in a message box <br/> 
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1stqqejp" target="_blank">Message. Message with HTML content</a>
-			</td>
-		</tr>
+            <td><b>html</b></td>
+            <td>(optional) the HTML content to be displayed in a message box <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1stqqejp" target="_blank">Message. Message with HTML content</a></td>
+        </tr>
         <tr>
-			<td><b>node</b></td>
-			<td>(optional) the container for a message box or its id</td>
-		</tr>
+            <td><b>node</b></td>
+            <td>(optional) the container for a message box or its id</td>
+        </tr>
         <tr>
-			<td><b>position</b></td>
-			<td>(optional) the position of a message box: <i>"top-left"</i> | <i>"top-right"</i>| <i>"bottom-left"</i> | <i>"bottom-right"</i>; <i>"top-right"</i> by default <br/> 
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message positioning and container</a>
-			</td>
-		</tr>
+            <td><b>position</b></td>
+            <td>(optional) the position of a message box: <i>"top-left"</i> | <i>"top-right"</i>| <i>"bottom-left"</i> | <i>"bottom-right"</i>; <i>"top-right"</i> by default <br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/3wxrafmo" target="_blank">Message. Message positioning and container</a></td>
+        </tr>
         <tr>
-			<td><b>expire</b></td>
-			<td>(optional) the time period of displaying a message box before it disappears, in ms</td>
-		</tr>
+            <td><b>expire</b></td>
+            <td>(optional) the time period of displaying a message box before it disappears, in ms</td>
+        </tr>
     </tbody>
 </table>
 
@@ -85,13 +81,13 @@ dhx.message({
 
 ~~~js
 dhx.alert({
-	text: string,
-	header?: string,
-	css?: string,
-	buttons?: string[],
-	buttonsAlignment?: "left" | "center" | "right", // "left" by default
-	blockerCss?: string,
-	htmlEnable?: boolean, // true by default 
+    text: string,
+    header?: string,
+    css?: string,
+    buttons?: string[],
+    buttonsAlignment?: "left" | "center" | "right", // "left" by default
+    blockerCss?: string,
+    htmlEnable?: boolean, // true by default 
 });
 ~~~
 
@@ -100,37 +96,35 @@ dhx.alert({
 The configuration object of an alert box may take the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>text</b></td>
-			<td>(required) the text of an alert box</td>
-		</tr>
+            <td><b>text</b></td>
+            <td>(required) the text of an alert box</td>
+        </tr>
         <tr>
-			<td><b>header</b></td>
-			<td>(optional) the text of an alert box header</td>
-		</tr>
+            <td><b>header</b></td>
+            <td>(optional) the text of an alert box header</td>
+        </tr>
         <tr>
-			<td><b>css</b></td>
-			<td>(optional) the style of an alert box</td>
-		</tr>
+            <td><b>css</b></td>
+            <td>(optional) the style of an alert box</td>
+        </tr>
         <tr>
-			<td><b>buttons</b></td>
-			<td>(optional) an array with the name of the alert button. By default, the button's name is "Apply"</td>
-		</tr>
+            <td><b>buttons</b></td>
+            <td>(optional) an array with the name of the alert button. By default, the button's name is "Apply"</td>
+        </tr>
         <tr>
-			<td><b>buttonsAlignment</b></td>
-			<td>(optional) the position of buttons: <i>"left"</i> | <i>"center"</i> | <i>"right"</i>; <i>"left"</i> by default</td>
-		</tr>
+            <td><b>buttonsAlignment</b></td>
+            <td>(optional) the position of buttons: <i>"left"</i> | <i>"center"</i> | <i>"right"</i>; <i>"left"</i> by default</td>
+        </tr>
         <tr>
-			<td><b>blockerCss</b></td>
-			<td>(optional) the style of blocking the window when an alert box appears</td>
-		</tr>
-		<tr>
-			<td><b>htmlEnable</b></td>
-			<td>(optional) enables/disables the HTML content to be displayed in an alert box; <i>true</i> by default <br>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0id8455k">Message. Disable HTML content</a>
-			</td>
-		</tr>
+            <td><b>blockerCss</b></td>
+            <td>(optional) the style of blocking the window when an alert box appears</td>
+        </tr>
+        <tr>
+            <td><b>htmlEnable</b></td>
+            <td>(optional) enables/disables the HTML content to be displayed in an alert box; <i>true</i> by default <br><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0id8455k">Message. Disable HTML content</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -141,11 +135,11 @@ dhx.alert({
     header:"Alert Header",
     text:"Alert text",
     buttonsAlignment:"center",
-	htmlEnable: false
+    htmlEnable: false
 });
 ~~~
 
-**Related samples**: 
+**Related samples**:
 
 - [Message. Alert and confirm configuration](https://snippet.dhtmlx.com/dk4a7959)
 - [Message. Show Alert](https://snippet.dhtmlx.com/m4xka888)
@@ -156,13 +150,13 @@ dhx.alert({
 
 ~~~js
 dhx.confirm({
-	text: string,
-	header?: string,
-	css?: string,
-	buttons?: string[],
-	buttonsAlignment?: "left" | "center" | "right", // "right" by default
-	blockerCss?: string,
-	htmlEnable?: boolean, // true by default 
+    text: string,
+    header?: string,
+    css?: string,
+    buttons?: string[],
+    buttonsAlignment?: "left" | "center" | "right", // "right" by default
+    blockerCss?: string,
+    htmlEnable?: boolean, // true by default 
 });
 ~~~
 
@@ -171,37 +165,35 @@ dhx.confirm({
 The configuration object of a confirm box may take the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>text</b></td>
-			<td>(required) the text of a confirm box</td>
-		</tr>
+            <td><b>text</b></td>
+            <td>(required) the text of a confirm box</td>
+        </tr>
         <tr>
-			<td><b>header</b></td>
-			<td>(optional) the text of a confirm box header</td>
-		</tr>
+            <td><b>header</b></td>
+            <td>(optional) the text of a confirm box header</td>
+        </tr>
         <tr>
-			<td><b>css</b></td>
-			<td>(optional) the style of a confirm box</td>
-		</tr>
+            <td><b>css</b></td>
+            <td>(optional) the style of a confirm box</td>
+        </tr>
         <tr>
-			<td><b>buttons</b></td>
-			<td>(optional) an array with the names of the confirm buttons. By default, the buttons' names are "Reject" and "Apply"</td>
-		</tr>
+            <td><b>buttons</b></td>
+            <td>(optional) an array with the names of the confirm buttons. By default, the buttons' names are "Reject" and "Apply"</td>
+        </tr>
         <tr>
-			<td><b>buttonsAlignment</b></td>
-			<td>(optional) the position of the button: <i>"left"</i> | <i>"center"</i> | <i>"right"</i>; <i>"right"</i> by default</td>
-		</tr>
+            <td><b>buttonsAlignment</b></td>
+            <td>(optional) the position of the button: <i>"left"</i> | <i>"center"</i> | <i>"right"</i>; <i>"right"</i> by default</td>
+        </tr>
         <tr>
-			<td><b>blockerCss</b></td>
-			<td>(optional) the style of blocking the window when a confirm box appears</td>
-		</tr>
-		<tr>
-			<td><b>htmlEnable</b></td>
-			<td>(optional) enables/disables the HTML content to be displayed in a confirm box; <i>true</i> by default<br>
-			<br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0id8455k">Message. Disable HTML content</a>
-			</td>
-		</tr>
+            <td><b>blockerCss</b></td>
+            <td>(optional) the style of blocking the window when a confirm box appears</td>
+        </tr>
+        <tr>
+            <td><b>htmlEnable</b></td>
+            <td>(optional) enables/disables the HTML content to be displayed in a confirm box; <i>true</i> by default<br><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/0id8455k">Message. Disable HTML content</a></td>
+        </tr>
     </tbody>
 </table>
 
@@ -213,7 +205,7 @@ dhx.confirm({
     text:"Confirm text",
     buttons:["cancel", "apply"],
     buttonsAlignment:"center",
-	htmlEnable: false
+    htmlEnable: false
 });
 ~~~
 
@@ -228,20 +220,20 @@ dhx.confirm({
 
 ~~~js
 dhx.tooltip( text: string, {
-	node: HTMLElement | string,
-	margin?: number, // 8 by default
-	position?: "right" | "bottom" |"center" | "left" | "top", // "bottom" by default
-	css?: string,
-	force?: boolean, // false by default
-	showDelay?: number,
-	hideDelay?: number,
-	htmlEnable?: boolean, // false by default
+    node: HTMLElement | string,
+    margin?: number, // 8 by default
+    position?: "right" | "bottom" |"center" | "left" | "top", // "bottom" by default
+    css?: string,
+    force?: boolean, // false by default
+    showDelay?: number,
+    hideDelay?: number,
+    htmlEnable?: boolean, // false by default
 });
 ~~~
 
 ### Description
 
-The **dhx.tooltip()** function takes two parameters:
+The `dhx.tooltip()` function takes two parameters:
 
 - *text* -  the text of a tooltip
 - *config* - the configuration object of a tooltip
@@ -249,39 +241,39 @@ The **dhx.tooltip()** function takes two parameters:
 The configuration object of a tooltip may take the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>node</b></td>
-			<td>(required) the target of tooltip or its id</td>
-		</tr>
-		<tr>
-			<td><b>margin</b></td>
-			<td>(optional) margin between the node and tooltip, <i>8</i> by default</td>
-		</tr>
+            <td><b>node</b></td>
+            <td>(required) the target of tooltip or its id</td>
+        </tr>
         <tr>
-			<td><b>position</b></td>
-			<td>(optional) the position of a tooltip: <i>"right"</i>, <i>"bottom"</i>, <i>"center"</i>, <i>"left"</i>, <i>"top"</i>; <i>"bottom"</i> by default</td>
-		</tr>
+            <td><b>margin</b></td>
+            <td>(optional) margin between the node and tooltip, <i>8</i> by default</td>
+        </tr>
         <tr>
-			<td><b>css</b></td>
-			<td>(optional) the style of a tooltip box</td>
-		</tr>
+            <td><b>position</b></td>
+            <td>(optional) the position of a tooltip: <i>"right"</i>, <i>"bottom"</i>, <i>"center"</i>, <i>"left"</i>, <i>"top"</i>; <i>"bottom"</i> by default</td>
+        </tr>
         <tr>
-			<td><b>force</b></td>
-			<td>(optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, <i>false</i> by default</td>
-		</tr>
+            <td><b>css</b></td>
+            <td>(optional) the style of a tooltip box</td>
+        </tr>
         <tr>
-			<td><b>showDelay</b></td>
-			<td>(optional) the time period that should pass before showing a tooltip, in ms</td>
-		</tr>
+            <td><b>force</b></td>
+            <td>(optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, <i>false</i> by default</td>
+        </tr>
         <tr>
-			<td><b>hideDelay</b></td>
-			<td>(optional) the time period that should pass before hiding a tooltip, in ms</td>
-		</tr>
-		<tr>
-			<td><b>htmlEnable</b></td>
-			<td>(optional) enables/disables the HTML content to be displayed in a tooltip; <i>false</i> by default</td>
-		</tr>
+            <td><b>showDelay</b></td>
+            <td>(optional) the time period that should pass before showing a tooltip, in ms</td>
+        </tr>
+        <tr>
+            <td><b>hideDelay</b></td>
+            <td>(optional) the time period that should pass before hiding a tooltip, in ms</td>
+        </tr>
+        <tr>
+            <td><b>htmlEnable</b></td>
+            <td>(optional) enables/disables the HTML content to be displayed in a tooltip; <i>false</i> by default</td>
+        </tr>
     </tbody>
 </table>
 
@@ -289,10 +281,10 @@ The configuration object of a tooltip may take the following parameters:
 
 ~~~js
 dhx.tooltip("Tooltip from the right", {
-	node: "fourth", 
+    node: "fourth", 
     position: "right",
     margin: 2,
-	htmlEnable: true
+    htmlEnable: true
 });
 ~~~
 

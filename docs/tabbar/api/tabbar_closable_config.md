@@ -13,12 +13,12 @@ description: You can explore the closable config of Tabbar in the documentation 
 @example:
 // adds close buttons for all tabs
 const tabbar = new dhx.Tabbar("tabbar_container", {
-	closable: true
+    closable: true
 });
 
 // adds close buttons for separate tabs
 const tabbar = new dhx.Tabbar("tabbar_container", {
-	closable: ["paris", "london"]
+    closable: ["paris", "london"]
 });
 
 @descr:

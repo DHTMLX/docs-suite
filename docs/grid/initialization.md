@@ -29,19 +29,19 @@ To initialize DHTMLX Grid on a page, you need to take the following simple steps
         <link rel="stylesheet" href="../../codebase/grid.css">
     </head>
     <body>
-    	<div style="height:500px; width:600px" id="grid_container"></div>
+        <div style="height:500px; width:600px" id="grid_container"></div>
         <script>
             // creating DHTMLX Grid 
             const grid = new dhx.Grid("grid_container", {
-    			columns: [
-        			{ width: 100, id: "a", header: [{ text: "#" }] },
-        			{ width: 100, id: "b", header: [{ text: "Title" }] },
-        			{ width: 200, id: "c", header: [{ text: "Name" }] },
-        			{ width: 200, id: "d", header: [{ text: "Address" }] }
-    			],
-    			headerRowHeight: 50,
-    			data: dataset
-			});
+                columns: [
+                    { width: 100, id: "a", header: [{ text: "#" }] },
+                    { width: 100, id: "b", header: [{ text: "Title" }] },
+                    { width: 200, id: "c", header: [{ text: "Name" }] },
+                    { width: 200, id: "d", header: [{ text: "Address" }] }
+                ],
+                headerRowHeight: 50,
+                data: dataset
+            });
         </script>
     </body>
 </html>

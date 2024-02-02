@@ -94,12 +94,12 @@ The structure of Tabbar should be defined during initialization of the component
 
 ~~~js
 const tabbar = new dhx.Tabbar("tabbar_container", {
-	views:[
-		{ tab: "left", css:"panel flex", header:"Left"},
-		{ tab: "west", css:"panel flex", header:"West"},
-		{ tab: "east", css:"panel flex", header:"East"},
-		{ tab: "right", css:"panel flex", header:"Right" }
-	]
+    views:[
+        { tab: "left", css:"panel flex", header:"Left"},
+        { tab: "west", css:"panel flex", header:"West"},
+        { tab: "east", css:"panel flex", header:"East"},
+        { tab: "right", css:"panel flex", header:"Right" }
+    ]
 });
 ~~~
 

@@ -20,13 +20,13 @@ For this you need to take the following steps:
 
 ~~~html
 <style>
-	.my_first_class {
-		/*some styles*/
-	}
+    .my_first_class {
+        /*some styles*/
+    }
     
     .my_second-class {
-		/*some styles*/
-	}
+        /*some styles*/
+    }
 </style>
 ~~~
 
@@ -46,9 +46,9 @@ For example:
         --dhx-font-weight-regular: 500;
         --dhx-font-color-primary: #0ab169;
     }
-	.custom .dhx_tree-folder  {
+    .custom .dhx_tree-folder  {
         --dhx-font-color-primary: #0288d1;
-	}
+    }
 </style>
 
 <script>
@@ -86,11 +86,11 @@ id of an item and its config object:
 
 ~~~js
 tree.data.update("history", {
-	icon:{
-		file:"fa fa-[iconname]",
-		openFolder:"fa fa-[iconname]",
-		folder:"fa fa-[iconname]"
-	}
+    icon:{
+        file:"fa fa-[iconname]",
+        openFolder:"fa fa-[iconname]",
+        folder:"fa fa-[iconname]"
+    }
 });
 ~~~
 

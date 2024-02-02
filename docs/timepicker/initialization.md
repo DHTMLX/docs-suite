@@ -30,8 +30,8 @@ To initialize DHTMLX TimePicker on a page, you need to take the following simple
         <script>
             // creating DHTMLX TimePicker 
             const timepicker = new dhx.Timepicker("timepicker_container", {
-				// config options
-			});
+                // config options
+            });
         </script>
     </body>
 </html>

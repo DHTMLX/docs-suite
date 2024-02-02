@@ -20,7 +20,7 @@ Return `false` to block editing of a cell; otherwise, `true`.
 
 @example:
 grid.events.on("beforeEditStart", function(row,col,editorType){
-	// your logic here
+    // your logic here
     return false;
 });
 

@@ -20,7 +20,7 @@ You can use CDN links to do this.
 <head>
     <!-- meta block -->
     <title>Contact manager</title>
-	<script src="https://cdn.dhtmlx.com/suite/edge/suite.js"></script> /*!*/
+    <script src="https://cdn.dhtmlx.com/suite/edge/suite.js"></script> /*!*/
     <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css"> /*!*/   
 </head>
 <body>

@@ -28,7 +28,7 @@ Data loading is asynchronous, so you need to wrap any after-loading code into a 
 
 ~~~js
 toolbar.data.load(url).then(function(){
-	//do something after load;
+    //do something after load;
 });
 ~~~
 
@@ -37,7 +37,7 @@ or
 ~~~js
 toolbar.data.load(url);
 toolbar.data.loadData.then(function(){
-	//do something after load;
+    //do something after load;
 });
 // loadData executes a callback function after an asynchronous
 // data loading has completed

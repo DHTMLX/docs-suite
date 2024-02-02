@@ -12,10 +12,10 @@ description: You can explore the csv export method of Grid in the documentation 
 
 @params:
 - `config` - (optional) an object with export settings. You can specify the following settings for export to CSV:
-	- `asFile?: boolean` - (optional) defines whether Grid should be exported to a file, *true* by default. To export Grid only as a CSV string, you need to set *asFile:false*
-	- `name?: string` - (optional) the name of the exported CSV file (if asFile is not set to *false*)
-	- `rowDelimiter?: string` - (optional) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
-	- `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
+    - `asFile?: boolean` - (optional) defines whether Grid should be exported to a file, *true* by default. To export Grid only as a CSV string, you need to set *asFile:false*
+    - `name?: string` - (optional) the name of the exported CSV file (if asFile is not set to *false*)
+    - `rowDelimiter?: string` - (optional) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
+    - `columnDelimiter?: string` - (optional) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
 
 @returns:
 A CSV string with Grid data
@@ -36,4 +36,4 @@ grid.export.csv({
 
 **Related samples**: [Grid. Export to xlsx and csv](https://snippet.dhtmlx.com/58oqij47)
 
-**Related article:** [Exporting Grid](grid/usage.md#exporting-grid)
+**Related article:** [Exporting Grid](grid/usage.md)

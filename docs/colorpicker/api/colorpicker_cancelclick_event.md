@@ -12,7 +12,7 @@ description: You can explore the cancelClick event of Colorpicker in the documen
 
 @example:
 colorpicker.events.on("cancelClick",function(){
-	// your logic here
+    // your logic here
 });
 
 @descr:

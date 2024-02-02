@@ -26,31 +26,31 @@ The returned object contains the following set of properties:
 
 ~~~js
 {
-	id: string|number,
-	width: number,
-	header: object[],
-	htmlEnable: boolean,
-	footer: array,
-	maxWidth: number,
-	minWidth: number,
-	mark: object|function,
-	resizable: boolean,
-	type: string,
-	format: string,
-	editorType: string,
-	options: array,
-	template: function,
-	hidden: boolean,
-	draggable: boolean,
-	editable: boolean,
-	sortable: boolean,
-	adjust: boolean|string,
-	autoWidth: boolean,
-	align: string,
-	tooltip: boolean,
-	tooltipTemplate: function,
-	$cellCss: array, // readonly, an array of objects with CSS classes (as key:value pairs) for each cell of a column
-	$uniqueData: array, // readonly, an array that contains some unique data, can't be redefined
+    id: string|number,
+    width: number,
+    header: object[],
+    htmlEnable: boolean,
+    footer: array,
+    maxWidth: number,
+    minWidth: number,
+    mark: object|function,
+    resizable: boolean,
+    type: string,
+    format: string,
+    editorType: string,
+    options: array,
+    template: function,
+    hidden: boolean,
+    draggable: boolean,
+    editable: boolean,
+    sortable: boolean,
+    adjust: boolean|string,
+    autoWidth: boolean,
+    align: string,
+    tooltip: boolean,
+    tooltipTemplate: function,
+    $cellCss: array, // readonly, an array of objects with CSS classes (as key:value pairs) for each cell of a column
+    $uniqueData: array, // readonly, an array that contains some unique data, can't be redefined
 }
 ~~~
 

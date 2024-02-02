@@ -13,10 +13,10 @@ description: You can explore the editItem method of Tree in the documentation of
 @params:
 - `id: string | number` - the id of an item
 - `config: object` - optional, the config object of an editor. The parameter includes the following properties:
-	- `mode: string` - the type of an editor:
-		- "text" (by default) for an input
-		- "select" for a select
-	- `options: array` - optional, an array of additional options. It works only with `mode: "select"`.
+    - `mode: string` - the type of an editor:
+        - "text" (by default) for an input
+        - "select" for a select
+    - `options: array` - optional, an array of additional options. It works only with `mode: "select"`.
 
 @example:
 tree.events.on("itemDblClick", function (id) {

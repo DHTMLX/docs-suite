@@ -12,18 +12,18 @@ disabledDates?: (a: Date) => boolean;
 
 @example:
 var calendar = new dhx.Calendar("calendar", {
-	disabledDates: function(date) {
-		var disabled = {
-			0: true,
-			1: true,
-			2: false,
-			3: false,
-			4: false,
-			5: false,
-			6: true
-		}
-		return disabled[date.getDay()];
-	}
+    disabledDates: function(date) {
+        var disabled = {
+            0: true,
+            1: true,
+            2: false,
+            3: false,
+            4: false,
+            5: false,
+            6: true
+        }
+        return disabled[date.getDay()];
+    }
 });
 
 

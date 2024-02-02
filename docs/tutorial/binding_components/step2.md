@@ -11,30 +11,30 @@ First we need to check which one of the footer buttons was clicked. We can use t
 
 ~~~js
 dhxWindow.footer.events.on("Click", function(id, e){
-	// we call the getValue() method of the Form 
+    // we call the getValue() method of the Form 
     // to get the current value of the item
-	item = form.getValue(); 
- 	
-	switch(id) {
-    	// if the clicked button is "Cancel", 
+    item = form.getValue(); 
+     
+    switch(id) {
+        // if the clicked button is "Cancel", 
         // the window is hiding
-    	case 'cancel': {
-        	dhxWindow.hide();
-            break;   		
-		}
+        case 'cancel': {
+            dhxWindow.hide();
+            break;           
+        }
         case 'apply': {
-			if (form.validate()){
-            	if (item.id == ""){
-                	item.id = grid.data.getLength() + 1;
+            if (form.validate()){
+                if (item.id == ""){
+                    item.id = grid.data.getLength() + 1;
                     grid.data.add(item, 0);
-           		} else {                       
+                   } else {                       
                     grid.data.update(item.id, item);    
                 }
-			}
+            }
             dhxWindow.hide();        
             break;
-		}
-	}
+        }
+    }
 });
 ~~~
 
@@ -46,8 +46,8 @@ Now let's describe the steps we need to take to provide the possibility to edit 
 
 ~~~js
 case 'apply': {
-	if (form.validate()){
-   	}                
+    if (form.validate()){
+       }                
     break;
 }
 ~~~

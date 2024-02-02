@@ -20,92 +20,92 @@ DHTMLX Tree expects loaded data in the JSON format. Here is an example of an app
 ~~~js
 const dataset = [
     {
-		"value": "Books",
-		"id": "books",
-		"opened": true,
-		"items": [			
-			{
-				"value": "History",
-				"id": "history",
-				"items": [{
-					"value": "John Mack Faragher",
-					"id": "jmf",
-                	"icon": {
+        "value": "Books",
+        "id": "books",
+        "opened": true,
+        "items": [            
+            {
+                "value": "History",
+                "id": "history",
+                "items": [{
+                    "value": "John Mack Faragher",
+                    "id": "jmf",
+                    "icon": {
                         "folder": "fas fa-book",
                         "openFolder": "fas fa-book-open",
                         "file": "fas fa-file"
                     }
-				},
-				{
-					"value": "Jim Dwyer",
-					"id": "jd"
-				},
-				{
-					"value": "Larry Schweikart",
-					"id": "ls"
-				}]
-			},
-			{
-				"value": "Fiction & Fantasy",
-				"id": "fantasy",
-				"items": [{
-					"value": "Audrey Niffenegger",
-					"id": "af"
-				},
-				{
-					"value": "Philip Roth",
-					"id": "pr"
-				}]
-			},
-			{
-				"value": "Teens",
-				"id": "teens",
-				"items": [{
-					"value": "Joss Whedon",
-					"id": "jw"
-				},
-				{
-					"value": "Meg Cabot",
-					"id": "mc"
-				},
-				{
-					"value": "Garth Nix",
-					"id": "gn"
-				}]
-			}
-		]
-	}
+                },
+                {
+                    "value": "Jim Dwyer",
+                    "id": "jd"
+                },
+                {
+                    "value": "Larry Schweikart",
+                    "id": "ls"
+                }]
+            },
+            {
+                "value": "Fiction & Fantasy",
+                "id": "fantasy",
+                "items": [{
+                    "value": "Audrey Niffenegger",
+                    "id": "af"
+                },
+                {
+                    "value": "Philip Roth",
+                    "id": "pr"
+                }]
+            },
+            {
+                "value": "Teens",
+                "id": "teens",
+                "items": [{
+                    "value": "Joss Whedon",
+                    "id": "jw"
+                },
+                {
+                    "value": "Meg Cabot",
+                    "id": "mc"
+                },
+                {
+                    "value": "Garth Nix",
+                    "id": "gn"
+                }]
+            }
+        ]
+    }
 ];
 ~~~
 
 Each object in the data set contains configuration of a tree item. The structure of an item is rather flexible. It may include:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>value</b></td>
-			<td>(<i>string</i>) the name of an item</td>
-		</tr>
-		<tr>
-			<td><b>id</b></td>
-			<td>(<i>string</i>) the id of an item</td>
-		</tr>
-		<tr>
-			<td><b>opened</b></td>
-			<td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
-		</tr>
-		<tr>
-			<td><b>checkbox</b></td>
-			<td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
-		</tr>
-		<tr>
-			<td><b>items</b></td>
-			<td>(<i>array</i>) an array of nested items</td>
-		</tr>
-		<tr>
-			<td><b>icon</b></td>
-			<td>(<i>object</i>) allows adding <a href="../api/tree_icon_config">custom icons</a> for a tree item</td>
-		</tr>
+            <td><b>value</b></td>
+            <td>(<i>string</i>) the name of an item</td>
+        </tr>
+        <tr>
+            <td><b>id</b></td>
+            <td>(<i>string</i>) the id of an item</td>
+        </tr>
+        <tr>
+            <td><b>opened</b></td>
+            <td>(<i>boolean</i>) optional, defines whether an item is opened by default</td>
+        </tr>
+        <tr>
+            <td><b>checkbox</b></td>
+            <td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
+        </tr>
+        <tr>
+            <td><b>items</b></td>
+            <td>(<i>array</i>) an array of nested items</td>
+        </tr>
+        <tr>
+            <td><b>icon</b></td>
+            <td>(<i>object</i>) allows adding <a href="../api/tree_icon_config">custom icons</a> for a tree item</td>
+        </tr>
     </tbody>
 </table>
 
@@ -115,7 +115,7 @@ You can load a [predefined data set](#preparing-data-set) into Tree on the initi
 
 ~~~js
 const tree = new dhx.Tree("tree_container", {
-  	data: dataset
+      data: dataset
 });
 ~~~
 

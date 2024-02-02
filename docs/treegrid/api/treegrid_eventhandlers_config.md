@@ -10,9 +10,9 @@ description: You can explore the eventHandlers config of TreeGrid in the documen
 
 ~~~js
 eventHandlers?: {
-	[eventName: string]: {
-		[className: string]: (events: Event, item: object) => void; 
-	};
+    [eventName: string]: {
+        [className: string]: (events: Event, item: object) => void; 
+    };
 };
 ~~~
 
@@ -20,31 +20,17 @@ eventHandlers?: {
 The **eventHandlers** object includes a set of *key:value* pairs, where:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><i>key</i></td>
-			<td> the name of the event. Note that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
-		</tr>
+            <td><i>key</i></td>
+            <td> the name of the event. Note that at the beginning of the event name the <b>'on'</b> prefix is used (onclick, onmouseover).</td>
+        </tr>
         <tr>
-			<td><i>value</i></td>
-			<td>an object that contains a <i>key:value</i> pair, where:
-				<ol>
-					<li><i>key</i> is the CSS class name that the handler will be applied to</li>
-					<li><i>value</i> is a function that takes two parameters:
-				     	<ul>
-				            <li><b>event</b> - an event object</li>
-				            <li><b>item</b> - an object with two attributes:
-				            	<ol>- <b>row</b> - an object with a row configuration</ol>
-				            	<ol>- <b>col</b> - an object with a column configuration</ol>
-				            </li>
-				        </ul>
-				    </li>
-			    </ol>
-        	</td>
-		</tr>
+            <td><i>value</i></td>
+            <td>an object that contains a <i>key:value</i> pair, where:<ol><li><i>key</i> is the CSS class name that the handler will be applied to</li><li><i>value</i> is a function that takes two parameters:<ul><li><b>event</b> - an event object</li><li><b>item</b> - an object with two attributes:<ol>- <b>row</b> - an object with a row configuration</ol><ol>- <b>col</b> - an object with a column configuration</ol></li></ul></li></ol></td>
+        </tr>
     </tbody>
 </table>
-
 
 @example:
 const treeGrid = new dhx.TreeGrid("treegrid", {
@@ -63,7 +49,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
     ],
     data: data,
     eventHandlers: {
-    	// add an event handler to the header cell
+        // add an event handler to the header cell
         onclick: {
            header_book: function(event, data) {
                 console.log(JSON.stringify(data.col, null, 2)); 
@@ -88,19 +74,19 @@ An example of adding event handlers to the HTML elements defined in the data set
 
 ~~~js {7,23-29}
 const data = [
-	{
-		"name": "A Time to Kill",
-		"price": "12.25",
-		"cover": "Hardcover",
-		"ships": "12 hours",
-		"inStock": "<div class='cell__html'><input type='checkbox' checked />80</div>", 
-		"parent": "c.1"
-	},
+    {
+        "name": "A Time to Kill",
+        "price": "12.25",
+        "cover": "Hardcover",
+        "ships": "12 hours",
+        "inStock": "<div class='cell__html'><input type='checkbox' checked />80</div>", 
+        "parent": "c.1"
+    },
     // more options
 ];
 
 const grid = new dhx.Grid("grid", {
-	columns: [
+    columns: [
         { 
             width: 160, id: "inStock", type: "string", 
             header: [{ text: "In stock" }], 
@@ -108,14 +94,14 @@ const grid = new dhx.Grid("grid", {
         }, 
         // more options
     ],
-	data: data,
+    data: data,
     eventHandlers: {
-		onmouseover: {
-			cell__html: function(event, data) {
-				console.log(JSON.stringify(data.col, null, 2)); 
-			} 
-		} 
-	} 
+        onmouseover: {
+            cell__html: function(event, data) {
+                console.log(JSON.stringify(data.col, null, 2)); 
+            } 
+        } 
+    } 
 });
 ~~~
 

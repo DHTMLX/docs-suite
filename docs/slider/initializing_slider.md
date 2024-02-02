@@ -29,11 +29,11 @@ To initialize DHTMLX Slider on a page, you need to take the following simple ste
         <script>
             // creating DHTMLX Slider 
             const slider = new dhx.Slider("slider_container", {
-				min: 0,
-				max: 100,
-				step: 1,
-				value: 30
-			});
+                min: 0,
+                max: 100,
+                step: 1,
+                value: 30
+            });
         </script>
     </body>
 </html>
@@ -72,8 +72,8 @@ Initialize Slider with the `dhx.Slider` object constructor. The constructor has 
 // creating DHTMLX Slider
 const slider = new dhx.Slider("slider_container", {
     min: 0,
-	max: 100,
-	step: 1
+    max: 100,
+    step: 1
 });
 ~~~
 

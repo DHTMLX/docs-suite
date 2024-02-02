@@ -18,8 +18,8 @@ Any custom HTML content can be easily added to a ribbon with the help of the **a
 
 ~~~js
 ribbon.data.add({
-	type: "customHTML",
-	html: "<div id='preloader'><div id='loader'></div></div >"
+    type: "customHTML",
+    html: "<div id='preloader'><div id='loader'></div></div >"
 });
 ~~~
 

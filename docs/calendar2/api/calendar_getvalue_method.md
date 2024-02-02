@@ -11,10 +11,10 @@ getValue(asDatObj?: boolean): Date | Date[] | string | string[];
 ```
 
 @params:
-- asDate	boolean		defines whether a date will be returned as a Date object
+- asDate    boolean        defines whether a date will be returned as a Date object
 
 @returns:
-- date		Date,Date[],string,string[]		the selected date
+- date        Date,Date[],string,string[]        the selected date
 
 
 @example:

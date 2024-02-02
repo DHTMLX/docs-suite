@@ -19,7 +19,7 @@ Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
 list.events.on("beforeEditEnd", function(value,id){
-	// your logic here
+    // your logic here
     return false;
 });
 

@@ -15,7 +15,7 @@ description: You can explore the afterAdd event of Layout in the documentation o
 
 @example:
 layout.events.on("afterAdd", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

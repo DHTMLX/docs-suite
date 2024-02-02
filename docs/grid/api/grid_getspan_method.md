@@ -26,31 +26,31 @@ const span = grid.getSpan("10","a");
 A returned object contains the following properties:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string|number</i>) obligatory, the id of a row</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string|number</i>) obligatory, the id of a row</td>
+        </tr>
         <tr>
-			<td><b>column</b></td>
-			<td>(<i>string|number</i>) obligatory, the id of a column</td>
-		</tr>
+            <td><b>column</b></td>
+            <td>(<i>string|number</i>) obligatory, the id of a column</td>
+        </tr>
         <tr>
-			<td><b>rowspan</b></td>
-			<td>(<i>number</i>) optional, the number of rows in a span</td>
-		</tr>
+            <td><b>rowspan</b></td>
+            <td>(<i>number</i>) optional, the number of rows in a span</td>
+        </tr>
         <tr>
-			<td><b>colspan</b></td>
-			<td>(<i>number</i>) optional, the number of columns in a span</td>
-		</tr>
+            <td><b>colspan</b></td>
+            <td>(<i>number</i>) optional, the number of columns in a span</td>
+        </tr>
         <tr>
-			<td><b>text</b></td>
-			<td>(<i>string|number</i>) optional, the content of a span</td>
-		</tr>
+            <td><b>text</b></td>
+            <td>(<i>string|number</i>) optional, the content of a span</td>
+        </tr>
         <tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
-		</tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
+        </tr>
     </tbody>
 </table>
 

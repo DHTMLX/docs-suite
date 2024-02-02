@@ -18,7 +18,7 @@ Return `false` to prevent a cell from being collapsed; otherwise, `true`.
 
 @example:
 layout.events.on("beforeCollapse", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

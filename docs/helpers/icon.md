@@ -18,7 +18,7 @@ Use the name of the icon as a value of the **icon** property in the object with 
 
 ~~~js {4}
 {
- 	type:"button",
+     type:"button",
     id: "add",
     icon: "dxi dxi-plus",
     value: "Add"
@@ -29,7 +29,7 @@ Use the name of the icon as a value of the **icon** property in the object with 
 
 ~~~js {3}
 const list = new dhx.List("list_container", {
-	css: "dhx_widget--bordered",  
+    css: "dhx_widget--bordered",  
     template: (item) => "<i class = ’dxi dxi-icon-’ + item.icon></i>"
 }); 
 ~~~
@@ -40,7 +40,7 @@ Pass an HTML element with an icon class as a parameter.
 
 ~~~js {5}
 const popup = new dhx.Popup({
-	css: "dhx_widget--border-shadow"
+    css: "dhx_widget--border-shadow"
 });
  
 popup.attachHTML("<i class = ’dxi dxi-icon-name’></i>");
@@ -60,11 +60,11 @@ You can use any inline HTML elements like &lt;i&gt; or &lt;span&gt;.
 
 ~~~js {3}
 {
-  	id: "sidebar",
-  	html: "<i class = ’dxi dxi-icon-name’></i>",
-  	gravity: false,
-  	css: "dhx_layout-cell--border_right",
-  	width: "200px"
+      id: "sidebar",
+      html: "<i class = ’dxi dxi-icon-name’></i>",
+      gravity: false,
+      css: "dhx_layout-cell--border_right",
+      width: "200px"
 }
 ~~~ 
 

@@ -16,38 +16,38 @@ Let's define the list of Form controls and put them in two columns:
 
 ~~~~js
 var formConfig = {
-	gravity: false,
+    gravity: false,
     cols: [
-    	{
-    		padding: 10,
-       		rows: [
-          		{ type: "input", hidden: true, gravity: false, id: "id"},
-          		{
-             	  type: "input", gravity: false, label: "First Name",
-           	 	   required: true, id: "first_name"
-            	},
-				{
-              		type: "input",gravity: false,required: true,
-         			label: "Email", id: "email", validation: "email"
-				},
-				{
-              		type: "checkbox", gravity: false, label: "Premium",
-           			id: "vip", labelInline: true 
-				}
-       		]
+        {
+            padding: 10,
+               rows: [
+                  { type: "input", hidden: true, gravity: false, id: "id"},
+                  {
+                   type: "input", gravity: false, label: "First Name",
+                       required: true, id: "first_name"
+                },
+                {
+                      type: "input",gravity: false,required: true,
+                     label: "Email", id: "email", validation: "email"
+                },
+                {
+                      type: "checkbox", gravity: false, label: "Premium",
+                       id: "vip", labelInline: true 
+                }
+               ]
         },
         {
-        	padding: 10,
-        	rows:[
-        		{ type: "input", label: "Last Name", required: true,
-             		gravity: false, id: "last_name"
+            padding: 10,
+            rows:[
+                { type: "input", label: "Last Name", required: true,
+                     gravity: false, id: "last_name"
                 },
-            	{
+                {
                    id: "country", gravity: false, type: "select",
-             		required: true, label: "Country", options: countries
-				}
+                     required: true, label: "Country", options: countries
+                }
             ]
-		}
+        }
     ]
 };
 ~~~~
@@ -70,7 +70,7 @@ The second column consists of:
 
 ~~~js
 var countries = [
-	{value: "", content: ""},
+    {value: "", content: ""},
     {value: "Albania", content: "Albania"},
     {value: "Haiti", content: "Haiti"},
     {value: "Japan", content: "Japan"},

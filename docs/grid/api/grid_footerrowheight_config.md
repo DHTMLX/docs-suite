@@ -14,10 +14,10 @@ description: You can explore the footerRowHeight config of Grid in the documenta
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	columns: [
-		// columns config
-	],
-	footerRowHeight: 50
+    columns: [
+        // columns config
+    ],
+    footerRowHeight: 50
 });
 
 @descr:

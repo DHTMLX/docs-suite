@@ -13,14 +13,14 @@ description: You can explore the forEach method of the Fieldset control of Form 
 @params:
 
 - `callback: function` - a function that will iterate over the items of the fieldset. It is called with the following arguments:
-	- `item: object` - the object of an item 
-	- `index: number` - the index of an item
-	- `array: object[]` - an array of iterated items
+    - `item: object` - the object of an item 
+    - `index: number` - the index of an item
+    - `array: object[]` - an array of iterated items
 - `tree: boolean` - defines, whether all the nested items should be iterated, *false* by default
 
 @example:
 form.getItem("fieldset").forEach((item, index, arr) => {
-	console.log(index, item, arr);
+    console.log(index, item, arr);
 }, true);
 
 @descr:

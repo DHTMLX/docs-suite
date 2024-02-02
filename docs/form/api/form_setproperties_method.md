@@ -17,12 +17,12 @@ description: You can explore the setProperties method of Form in the documentati
 
 @example:
 form.setProperties("input_name", {
-	label: "new label",
-	css: "new-css",
-	padding: "20px",
-	height: 100,
-	maxlength: 15,
-	readOnly: true
+    label: "new label",
+    css: "new-css",
+    padding: "20px",
+    height: 100,
+    maxlength: 15,
+    readOnly: true
 });
 
 @descr:
@@ -82,7 +82,7 @@ It is possible to change the following configuration attributes of the **Avatar*
 
 ~~~js
 {
-	css: string,
+    css: string,
     width: string | number | "content",
     height: string | number | "content",
     padding: string | number,
@@ -122,20 +122,20 @@ It is possible to change the following configuration attributes of the **Button*
 
 ~~~js
 {
-	circle: boolean,
-	color: string,
-	css: string,
-	full: boolean,
-	height: string | number | "content",
-	icon: string,
-	loading: boolean,
-	padding: string | number,
-	size: string,
-	submit: boolean,
-	text: string,
-	url: string,
-	view: string,
-	width: string | number | "content",
+    circle: boolean,
+    color: string,
+    css: string,
+    full: boolean,
+    height: string | number | "content",
+    icon: string,
+    loading: boolean,
+    padding: string | number,
+    size: string,
+    submit: boolean,
+    text: string,
+    url: string,
+    view: string,
+    width: string | number | "content",
 }
 ~~~
 
@@ -147,33 +147,33 @@ It is possible to change the following configuration attributes of the **DatePic
 
 ~~~js
 {
-	css: string,
-	dateFormat: string,
-	disabledDates: function,
-	editable: boolean,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean, 
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	mark: function,
-	mode: string,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	thisMonthOnly: boolean,
-	timeFormat: number,
-	timePicker: boolean,
-	validation: function,
-	valueFormat: string,
-	weekNumbers: boolean,
-	weekStart: string,
-	width: string | number | "content"
+    css: string,
+    dateFormat: string,
+    disabledDates: function,
+    editable: boolean,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean, 
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    mark: function,
+    mode: string,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    thisMonthOnly: boolean,
+    timeFormat: number,
+    timePicker: boolean,
+    validation: function,
+    valueFormat: string,
+    weekNumbers: boolean,
+    weekStart: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -185,20 +185,20 @@ It is possible to change the following configuration attributes of the **Checkbo
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	text: string,
-	width: string | number | "content",
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    text: string,
+    width: string | number | "content",
 }
 ~~~
 
@@ -210,20 +210,20 @@ It is possible to change the following configuration attributes of the **Checkbo
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	options: object,
-	padding: string | number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    options: object,
+    padding: string | number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -235,11 +235,11 @@ It is possible to change the following configuration attributes of a **checkbox*
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	padding: string | number,
-	text: string,
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    padding: string | number,
+    text: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -251,27 +251,27 @@ It is possible to change the following configuration attributes of the **ColorPi
 
 ~~~js
 {
-	css: string,
-	customColors: array,
-	editable: boolean,
-	errorMessage: string,
-	grayShades: boolean,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	mode: string,
-	padding: string | number,
-	palette: array,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	validation: function,
-	width: string | number | "content"
+    css: string,
+    customColors: array,
+    editable: boolean,
+    errorMessage: string,
+    grayShades: boolean,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    mode: string,
+    padding: string | number,
+    palette: array,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    validation: function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -283,30 +283,30 @@ It is possible to change the following configuration attributes of the **Combo**
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	filter: function, 
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	itemHeight: number,
-	itemsCount: boolean | function,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	listHeight: number,
-	multiselection: boolean,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	selectAllButton: boolean,
-	successMessage: string,
-	template: function,
-	validation: function,
-	virtual: boolean,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    filter: function, 
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    itemHeight: number,
+    itemsCount: boolean | function,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    listHeight: number,
+    multiselection: boolean,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    selectAllButton: boolean,
+    successMessage: string,
+    template: function,
+    validation: function,
+    virtual: boolean,
+    width: string | number | "content"
 }
 ~~~
 
@@ -318,9 +318,9 @@ It is possible to change the following configuration attributes of the **Contain
 
 ~~~js
 {
-	height: string | number | "content", 
-	padding: string | number,
-	width: string, number, "content"
+    height: string | number | "content", 
+    padding: string | number,
+    width: string, number, "content"
 }
 ~~~
 
@@ -351,29 +351,29 @@ It is possible to change the following configuration attributes of the **Input**
 
 ~~~js
 {
-	autocomplete: boolean,
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	inputType: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	max: string | number,
-	maxlength: string | number,
-	min: string | number,
-	minlength: string | number,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	successMessage: string,
-	validation: object | function,
-	width: string | number | "content"
+    autocomplete: boolean,
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    inputType: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    max: string | number,
+    maxlength: string | number,
+    min: string | number,
+    minlength: string | number,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    successMessage: string,
+    validation: object | function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -385,20 +385,20 @@ It is possible to change the following configuration attributes of the **RadioGr
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	options: object,
-	padding: string | number,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    options: object,
+    padding: string | number,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -410,11 +410,11 @@ It is possible to change the following configuration attributes of a **radio but
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	padding: string | number,
-	text: string,
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    padding: string | number,
+    text: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -426,20 +426,20 @@ It is possible to change the following configuration attributes of the **Select*
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	preMessage: string,
-	successMessage: string,
-	validation: function,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    preMessage: string,
+    successMessage: string,
+    validation: function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -484,25 +484,25 @@ It is possible to change the following configuration attributes of the **Slider*
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	inverse: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	majorTick: number,
-	max: number,
-	min: number,
-	mode: string,
-	padding: string | number,
-	range: boolean,
-	step: number,
-	tick: number,
-	tickTemplate: function,
-	tooltip: boolean, 
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    inverse: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    majorTick: number,
+    max: number,
+    min: number,
+    mode: string,
+    padding: string | number,
+    range: boolean,
+    step: number,
+    tick: number,
+    tickTemplate: function,
+    tooltip: boolean, 
+    width: string | number | "content"
 }
 ~~~
 
@@ -514,10 +514,10 @@ It is possible to change the following configuration attributes of the **Spacer*
 
 ~~~js
 {
-	css: string,
-	height: string | number | "content"
-	padding: string | number
-	width: string | number | "content"
+    css: string,
+    height: string | number | "content"
+    padding: string | number
+    width: string | number | "content"
 }
 ~~~
 
@@ -529,19 +529,19 @@ It is possible to change the following configuration attributes of the **Text** 
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	inputType: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	preMessage: string,
-	successMessage: string,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    inputType: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    preMessage: string,
+    successMessage: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -553,24 +553,24 @@ It is possible to change the following configuration attributes of the **Textare
 
 ~~~js
 {
-	css: string,
-	errorMessage: string,
-	height: string | number | "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	maxlength: string | number,
-	minlength: string | number,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	readOnly: boolean,
-	required: boolean,
-	successMessage: string,
-	validation: object | function,
-	width: string | number | "content"
+    css: string,
+    errorMessage: string,
+    height: string | number | "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    maxlength: string | number,
+    minlength: string | number,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    readOnly: boolean,
+    required: boolean,
+    successMessage: string,
+    validation: object | function,
+    width: string | number | "content"
 }
 ~~~
 
@@ -582,26 +582,26 @@ It is possible to change the following configuration attributes of the **TimePic
 
 ~~~js
 {
-	controls: boolean,
-	css: string,
-	editable: boolean,
-	errorMessage: string,
-	height: string | number| "content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	icon: string,
-	label: string,
-	labelPosition: string,
-	labelWidth: string | number,
-	padding: string | number,
-	placeholder: string,
-	preMessage: string,
-	required: boolean,
-	successMessage: string,
-	timeFormat: number,
-	validation: function,
-	valueFormat: string,
-	width: string | number | "content"
+    controls: boolean,
+    css: string,
+    editable: boolean,
+    errorMessage: string,
+    height: string | number| "content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    icon: string,
+    label: string,
+    labelPosition: string,
+    labelWidth: string | number,
+    padding: string | number,
+    placeholder: string,
+    preMessage: string,
+    required: boolean,
+    successMessage: string,
+    timeFormat: number,
+    validation: function,
+    valueFormat: string,
+    width: string | number | "content"
 }
 ~~~
 
@@ -613,16 +613,16 @@ It is possible to change the following configuration attributes of the **Toggle*
 
 ~~~js
 {
-	css: string,
-	width: string | number | "content",
-	height: string | number | "content",
-	padding: string | number,
-	full: boolean,
-	text: string,
-	icon: string,
-	offText: string,
-	offIcon: string,
-	value: string | number
+    css: string,
+    width: string | number | "content",
+    height: string | number | "content",
+    padding: string | number,
+    full: boolean,
+    text: string,
+    icon: string,
+    offText: string,
+    offIcon: string,
+    value: string | number
 }
 ~~~
 
@@ -653,12 +653,12 @@ It is possible to change the following configuration attributes of a **toggle** 
 
 ~~~js
 {
-	full: boolean,
-	text: string,
-	icon: string,
-	offText: string,
-	offIcon: string,
-	value: string | number
+    full: boolean,
+    text: string,
+    icon: string,
+    offText: string,
+    offIcon: string,
+    value: string | number
 }
 ~~~
 

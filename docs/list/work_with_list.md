@@ -45,15 +45,15 @@ You can manipulate List items with the help of the [Data Collection API](data_co
 It is possible to add more items into the initialized List on the fly. Use the [add()](../../data_collection/api/datacollection_add_method/) method of Data Collection. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) the configuration object of the added item</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) the configuration object of the added item</td>
+        </tr>
         <tr>
-			<td><b>index</b></td>
-			<td>(<i>number</i>) optional, the position to add an item at</td>
-		</tr>
+            <td><b>index</b></td>
+            <td>(<i>number</i>) optional, the position to add an item at</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -69,15 +69,15 @@ list.data.add({value:"New item"},1);
 You can change config options of the item via the [update()](../../data_collection/api/datacollection_update_method/) method of Data Collection. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>id</b></td>
-			<td>the id of the item</td>
-		</tr>
+            <td><b>id</b></td>
+            <td>the id of the item</td>
+        </tr>
         <tr>
-			<td><b>config</b></td>
-			<td>an object with new configuration of the item</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>an object with new configuration of the item</td>
+        </tr>
     </tbody>
 </table>
 
@@ -85,7 +85,7 @@ For example, you can change the value of an item:
 
 ~~~js
 list.data.update("option_id",{
-	value:"Nice item"
+    value:"Nice item"
 });
 ~~~
 
@@ -115,9 +115,9 @@ Check all details on the parameters of the method in the [Data Collection API](d
 
 ~~~js
 list.data.filter({
-	by:"value",
-	match:2,
-	compare:(value,match,item)=>{ return parseFloat(value) % 2 == 0}
+    by:"value",
+    match:2,
+    compare:(value,match,item)=>{ return parseFloat(value) % 2 == 0}
 });
 ~~~
 
@@ -133,8 +133,8 @@ Check all details on the parameters of the method in the [Data Collection API](d
 
 ~~~js
 list.data.sort({ 
-	by:"value",
-	dir:"desc"
+    by:"value",
+    dir:"desc"
 });
 ~~~
 

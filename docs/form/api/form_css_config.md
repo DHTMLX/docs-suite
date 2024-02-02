@@ -19,29 +19,29 @@ description: You can explore the css Config of Form in the documentation of the 
         --dhx-background-primary: rgb(238, 238, 238);
         --dhx-color-primary: #118d8d;
         --dhx-color-primary-active: #118d8d;
-	    --dhx-color-primary-hover: #1ad1d1;
+        --dhx-color-primary-hover: #1ad1d1;
     }
 </style>
 
 <script>
-	const form = new dhx.Form("form_container", {
-    	padding: 40,
-    	width: 400,
-    	css: "custom",
-    	rows: [
-        	{
-            	type: "input",
-            	label: "Name",
-            	placeholder: "John Doe",
-        	},
-        	{
-            	type: "input",
-            	label: "Email",
-            	placeholder: "jd@mail.name"
-        	},
-        	// more controls
-    	]
-	});
+    const form = new dhx.Form("form_container", {
+        padding: 40,
+        width: 400,
+        css: "custom",
+        rows: [
+            {
+                type: "input",
+                label: "Name",
+                placeholder: "John Doe",
+            },
+            {
+                type: "input",
+                label: "Email",
+                placeholder: "jd@mail.name"
+            },
+            // more controls
+        ]
+    });
 </script>
 ~~~
 

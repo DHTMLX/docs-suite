@@ -18,7 +18,7 @@ Return `false` to block item editing; otherwise, `true`.
 
 @example:
 dataview.events.on("beforeEditStart", function(id){
-	// your logic here
+    // your logic here
     return false;
 });
 

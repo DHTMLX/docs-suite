@@ -13,8 +13,8 @@ description: You can explore the reduce method of DataCollection in the document
 @params:
 
 - `callback: function` - a function that will be called for each item in the array. The function takes two parameters:
-	- `acc` - the <i>initialValue</i>, or the previously returned value of the function
-	- `item` - the current item of a data collection
+    - `acc` - the <i>initialValue</i>, or the previously returned value of the function
+    - `item` - the current item of a data collection
 - `acc: any` - a value to be passed to the function as the initial value
 
 @returns:

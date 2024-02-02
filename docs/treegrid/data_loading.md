@@ -41,19 +41,19 @@ const dataset = [
 Each object in the data set contains configuration of a grid row. The structure of a row is rather flexible. It may include:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>rowId</b></td>
-			<td>(<i>string|number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
-		</tr>
+            <td><b>rowId</b></td>
+            <td>(<i>string|number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
+        </tr>
         <tr>
-			<td><b>parent</b></td>
-			<td>(<i>string|number</i>) the ID of the parent row</td>
-		</tr>
+            <td><b>parent</b></td>
+            <td>(<i>string|number</i>) the ID of the parent row</td>
+        </tr>
         <tr>
-			<td><b>columnContent</b></td>
-			<td>(<i>string|number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
-		</tr>
+            <td><b>columnContent</b></td>
+            <td>(<i>string|number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
+        </tr>
     </tbody>
 </table>
 

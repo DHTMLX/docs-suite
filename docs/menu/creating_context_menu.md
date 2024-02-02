@@ -65,15 +65,15 @@ cmenu.data.load("[path_to_file]/file.json");
 dhtmlxContextMenu is attached to a context zone, and can be shown with the **showAt()** method. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>element</b></td>
-			<td>(<i>HTMLElement|Event|string</i>) the element that will be a context zone: an HTML object/its id/a mouse event</td>
-		</tr>
+            <td><b>element</b></td>
+            <td>(<i>HTMLElement|Event|string</i>) the element that will be a context zone: an HTML object/its id/a mouse event</td>
+        </tr>
         <tr>
-			<td><b>mode</b></td>
-			<td>(<i>string</i>) optional, the position of showing a context menu relative to the context zone: "bottom"|"right". By default a context menu is shown at the point where the mouse pointer is.</td>
-		</tr>
+            <td><b>mode</b></td>
+            <td>(<i>string</i>) optional, the position of showing a context menu relative to the context zone: "bottom"|"right". By default a context menu is shown at the point where the mouse pointer is.</td>
+        </tr>
     </tbody>
 </table>
 

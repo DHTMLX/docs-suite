@@ -19,31 +19,31 @@ DHTMLX Ribbon expects loaded data in the JSON format. Here is an example of an a
 
 ~~~js
 const data = [
-	{
-    	type: "block",
-    	items: [
-    		{
-    			value: "New",
-    			icon: "dxi dxi-file-outline",
+    {
+        type: "block",
+        items: [
+            {
+                value: "New",
+                icon: "dxi dxi-file-outline",
                 size: "small"               
             }
-    	]
+        ]
     },
     {
-    	type: "block",
-    	direction: "col",
-    	items: [
-    		{
-    			value: "Add",
-    			icon: "dxi dxi-plus",
-    			size: "small"
-    		},
-    		{
-            	value: "Remove",
-            	icon: "dxi dxi-delete",
-            	size: "small"
-    		}
-    	]
+        type: "block",
+        direction: "col",
+        items: [
+            {
+                value: "Add",
+                icon: "dxi dxi-plus",
+                size: "small"
+            },
+            {
+                value: "Remove",
+                icon: "dxi dxi-delete",
+                size: "small"
+            }
+        ]
     }
 ];
 ~~~
@@ -86,7 +86,7 @@ The **load** method loads the ribbon data from an external JSON file. All the da
 
 ~~~js
 ribbon.data.load("[path to this file]/file.json");
-~~~	
+~~~    
 
 **Related sample**: [Ribbon. Initialization with data.load()](https://snippet.dhtmlx.com/1gd5tbcf)
 
@@ -127,9 +127,9 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // common
 [
-	{id: "item_a", type: "button", ...},
-	{id: "item_b", type: "input", ...},
-	{id: "item_c", type: "title", ...}
+    {id: "item_a", type: "button", ...},
+    {id: "item_b", type: "input", ...},
+    {id: "item_c", type: "title", ...}
 ]
 ~~~
 
@@ -140,12 +140,12 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // block
 {
-	type: "block",
-   	title: "Action",        
-   	items: [
-    	{ id: "copy", icon: "mdi mdi-content-copy", value: "Copy" },
-     	{ id: "cut", icon: "mdi mdi-content-cut", value: "Cut" }
-   	]
+    type: "block",
+       title: "Action",        
+       items: [
+        { id: "copy", icon: "mdi mdi-content-copy", value: "Copy" },
+         { id: "cut", icon: "mdi mdi-content-cut", value: "Cut" }
+       ]
 }
 ~~~
 
@@ -156,12 +156,12 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js 
 // button
 {
-	id:	"add",		  		
-	type: "button",	   		
-	icon: "dxi-plus",	 		
-	value: "Add",		  		
-	count: 11,			 				   		
-	tooltip: "Add a new user"	
+    id:    "add",                  
+    type: "button",               
+    icon: "dxi-plus",             
+    value: "Add",                  
+    count: 11,                                        
+    tooltip: "Add a new user"    
 }
 ~~~
 
@@ -172,8 +172,8 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // custom HTML
 {
-	id: "custom_html",
-	type: "customHTML",
+    id: "custom_html",
+    type: "customHTML",
     html:"<div style='height:30px; border: 2px solid'>My HTML button</div>"
 }
 ~~~
@@ -185,9 +185,9 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // imageButton
 {
-	id:		  "user",				
-	type:	  "imageButton",		
-	src:	  "../img/avatar.png"				
+    id:          "user",                
+    type:      "imageButton",        
+    src:      "../img/avatar.png"                
 }
 ~~~
 
@@ -198,12 +198,12 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js 
 // input
 {
-	id:	"lookup",					  
-	type: "input", 					  
-	value: "",						 
-	placeholder: "Type in to search...",	  
-	width: 100,						  
-	label: "Search"
+    id:    "lookup",                      
+    type: "input",                       
+    value: "",                         
+    placeholder: "Type in to search...",      
+    width: 100,                          
+    label: "Search"
 }
 ~~~
 
@@ -226,7 +226,7 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // selectButton
 {
-	id:"select",
+    id:"select",
     type:"selectButton",
     icon:"dxi-some",
     items:[]
@@ -240,8 +240,8 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // separator
 {
-	id:	 	"sepId",		
-	type:   "separator"	 	
+    id:         "sepId",        
+    type:   "separator"         
 }
 ~~~
 
@@ -252,8 +252,8 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // spacer
 {
-	id:	 	"spacerId",	  	
-	type:   "spacer"		
+    id:         "spacerId",          
+    type:   "spacer"        
 }
 ~~~
 
@@ -264,10 +264,10 @@ This section will give you the idea of JSON format templates for separate Ribbon
 ~~~js
 // title
 {
-	id:		 	"collection",		
-	type:	   	"title", 				
-	value:	  	"Music",				
-	tooltip:	"Current collection"	
+    id:             "collection",        
+    type:           "title",                 
+    value:          "Music",                
+    tooltip:    "Current collection"    
 }
 ~~~
 

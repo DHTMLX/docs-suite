@@ -17,7 +17,7 @@ description: You can explore the headerAutoHeight config of Grid in the document
 @example:
 const grid = new dhx.Grid("grid", {
     columns: [
-    	// columns config
+        // columns config
     ],
     data: dataset,
     autoHeight: false, // disable autoHeight in the data, the header and the footer

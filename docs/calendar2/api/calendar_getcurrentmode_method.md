@@ -13,7 +13,7 @@ export declare type ViewMode = "calendar" | "year" | "month" | "timepicker";
 
 
 @returns:
-- mode	string      the current mode of the calendar ("calendar", "year", "month", "timepicker")
+- mode    string      the current mode of the calendar ("calendar", "year", "month", "timepicker")
 
 
 @example:

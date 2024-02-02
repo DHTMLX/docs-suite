@@ -17,12 +17,12 @@ An object with the available attributes of the control and their values.
 const form = new dhx.Form("form_container", {
     rows: [
         {
-	        type: "toggle",
-	        // renders an icon in the enabled state
-	        icon: "dxi dxi-eye",
-	        // renders an icon in the disabled state
-	        offIcon: "dxi dxi-eye-off"
-	    },
+            type: "toggle",
+            // renders an icon in the enabled state
+            icon: "dxi dxi-eye",
+            // renders an icon in the disabled state
+            offIcon: "dxi dxi-eye-off"
+        },
     ]
 });
 
@@ -34,16 +34,16 @@ The returned object of the **Toggle** control looks like:
 
 ~~~js
 {
-	css: "",
-	width: "content",
-	height: "content",
-	padding: "",
-	full: false,
-	text: "Visible",
-	icon: "dxi dxi-eye",
-	offText: "Invisible",
-	offIcon: "dxi dxi-eye-off",
-	value: undefined
+    css: "",
+    width: "content",
+    height: "content",
+    padding: "",
+    full: false,
+    text: "Visible",
+    icon: "dxi dxi-eye",
+    offText: "Invisible",
+    offIcon: "dxi dxi-eye-off",
+    value: undefined
 }
 ~~~
 

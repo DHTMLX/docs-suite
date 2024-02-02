@@ -18,7 +18,7 @@ const form = new dhx.Form("form_container", {
     rows: [
         {
             type: "combo",
-			name: "combo",
+            name: "combo",
             label: "count",
             labelPosition: "left",
             multiselection: true,
@@ -46,29 +46,29 @@ The returned object of the **Combo** control looks like:
 
 ~~~js
 {
-	errorMessage: "",
-	filter: undefined,
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	itemHeight: 32,
-	itemsCount: undefined,
-	label: "count",
-	labelPosition: "left",
-	labelWidth: "",
-	listHeight: 224,
-	multiselection: true,
-	padding: 0,
-	placeholder: "",
-	preMessage: "",
-	readOnly: false,
-	required: false,
-	selectAllButton: true,
-	successMessage: "",
-	template: undefined,
-	validation: undefined,
-	virtual: false,
-	width: "content"	
+    errorMessage: "",
+    filter: undefined,
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    itemHeight: 32,
+    itemsCount: undefined,
+    label: "count",
+    labelPosition: "left",
+    labelWidth: "",
+    listHeight: 224,
+    multiselection: true,
+    padding: 0,
+    placeholder: "",
+    preMessage: "",
+    readOnly: false,
+    required: false,
+    selectAllButton: true,
+    successMessage: "",
+    template: undefined,
+    validation: undefined,
+    virtual: false,
+    width: "content"    
 }
 ~~~
 

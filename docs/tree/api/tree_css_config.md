@@ -19,9 +19,9 @@ description: You can explore the css config of Tree in the documentation of the 
         --dhx-font-weight-regular: 500;
         --dhx-font-color-primary: #0ab169;
     }
-	.custom .dhx_tree-folder  {
+    .custom .dhx_tree-folder  {
         --dhx-font-color-primary: #0288d1;
-	}
+    }
 </style>
 
 <script>
@@ -39,7 +39,7 @@ Note, that the DHTMLX library provides [a set of own CSS classes](helpers/base_e
 
 ~~~js
 const tree = new dhx.Tree("tree_container", {
-	css: "dhx_widget--bg-gray"
+    css: "dhx_widget--bg-gray"
 });
 ~~~
 

@@ -28,10 +28,10 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css: string,
-	height: string|number|"content"
-	padding: string|number
-	width: string|number|"content"
+    css: string,
+    height: string|number|"content"
+    padding: string|number
+    width: string|number|"content"
 }
 ~~~
 

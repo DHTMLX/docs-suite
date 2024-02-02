@@ -27,23 +27,23 @@ grid.selection.disable();
 You can set selection to one or more rows or cells using the [setCell()](grid/api/selection/selection_setcell_method.md) method of the selection object. The method takes the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>object|string</i>) an object with a cell to be selected or the id of a row</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>object|string</i>) an object with a cell to be selected or the id of a row</td>
+        </tr>
         <tr>
-			<td><b>column</b></td>
-			<td>(<i>object|string</i>) the config of a column or its id</td>
-		</tr>
+            <td><b>column</b></td>
+            <td>(<i>object|string</i>) the config of a column or its id</td>
+        </tr>
         <tr>
-			<td><b>ctrlUp</b></td>
-			<td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
-		</tr>
+            <td><b>ctrlUp</b></td>
+            <td>(<i>boolean</i>) <i>true</i> - to select the desired rows or cells, otherwise - <i>false</i> (<a href="../configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
+        </tr>
         <tr>
-			<td><b>shiftUp</b></td>
-			<td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
-		</tr>
+            <td><b>shiftUp</b></td>
+            <td>(<i>boolean</i>) <i>true</i> - to select a range of rows or cells, otherwise - <i>false</i> (<a href="../configuration#multiple-selection-of-grid-cells">for multiselection mode</a>)</td>
+        </tr>
     </tbody>
 </table>
 
@@ -56,10 +56,10 @@ The example below shows how to highlight the first cell in the "Yearly Change" c
 ~~~js {6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-		// columns config
-	],
-	selection:"cell",
-	multiselection: false,
+        // columns config
+    ],
+    selection:"cell",
+    multiselection: false,
     data: dataset
 });
 
@@ -81,10 +81,10 @@ You can highlight the desired cells when the [multiselection:true](grid/api/grid
 ~~~js {5,6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-		// columns config
-	],
-	selection:"cell",
-	multiselection: true,
+        // columns config
+    ],
+    selection:"cell",
+    multiselection: true,
     data: dataset
 });
 
@@ -120,15 +120,15 @@ To make the process of selecting cells more flexible, you can apply the related 
 Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [](grid/api/selection/selection_removecell_method.md) method of the selection object. The method takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>rowId</b></td>
-			<td>(<i>string|number</i>) optional, the id of a row</td>
-		</tr>
+            <td><b>rowId</b></td>
+            <td>(<i>string|number</i>) optional, the id of a row</td>
+        </tr>
         <tr>
-			<td><b>colId</b></td>
-			<td>(<i>string|number</i>) optional, the id of a column</td>
-		</tr>
+            <td><b>colId</b></td>
+            <td>(<i>string|number</i>) optional, the id of a column</td>
+        </tr>
     </tbody>
 </table>
 

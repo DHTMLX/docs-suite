@@ -10,7 +10,7 @@ description: You can explore the Properties of the Slider control of Form in the
 
 ~~~js
 {
-	type: "slider",
+    type: "slider",
     name?: string,
     id?: string,
     value?: number | number[],

@@ -21,9 +21,9 @@ To add DHTMLX Combo in your application, you need to follow the steps below:
 ~~~html title="index.html"
 <!DOCTYPE html>
 <html>
-	<head>
-    	<title>How to start with DHTMLX ComboBox</title>
-		<link rel="stylesheet" type="text/css" href="/codebase/suite.css">
+    <head>
+        <title>How to start with DHTMLX ComboBox</title>
+        <link rel="stylesheet" type="text/css" href="/codebase/suite.css">
         <script type="text/javascript" src="/codebase/suite.js"></script>
    </head>
    <body>

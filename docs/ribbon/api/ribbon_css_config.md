@@ -23,9 +23,9 @@ description: You can explore the css config of Ribbon in the documentation of th
 </style>
 
 <script>
-	const ribbon = new dhx.Ribbon("ribbon_container", {
-    	css: "custom dhx_widget--bordered"
-	});
+    const ribbon = new dhx.Ribbon("ribbon_container", {
+        css: "custom dhx_widget--bordered"
+    });
 </script>
 ~~~
 

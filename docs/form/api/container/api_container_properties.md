@@ -10,7 +10,7 @@ description: You can explore the Properties of the Container control of Form in 
 
 ~~~js
 {
-	type: "container",
+    type: "container",
     name?: string,
     id?: string,
     html?: HTMLElement | string,

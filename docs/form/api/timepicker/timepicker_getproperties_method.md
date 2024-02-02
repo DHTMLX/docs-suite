@@ -36,25 +36,25 @@ The returned object of the **TimePicker** control looks like:
 
 ~~~js
 {
-	controls: false,
-	editable: false,
-	errorMessage: "",
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	icon: "",
-	label: "time",
-	labelPosition: "top",
-	labelWidth: "50px",
-	padding: 0,
-	placeholder: "",
-	preMessage: "",
-	required: false,
-	successMessage: "",
-	timeFormat: 12,
-	validation: undefined,
-	valueFormat: "timeObject",
-	width: "content"
+    controls: false,
+    editable: false,
+    errorMessage: "",
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    icon: "",
+    label: "time",
+    labelPosition: "top",
+    labelWidth: "50px",
+    padding: 0,
+    placeholder: "",
+    preMessage: "",
+    required: false,
+    successMessage: "",
+    timeFormat: 12,
+    validation: undefined,
+    valueFormat: "timeObject",
+    width: "content"
 }
 ~~~
 

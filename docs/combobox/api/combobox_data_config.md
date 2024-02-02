@@ -25,23 +25,23 @@ It is not possible to use the `src` and `icon` attributes together.
 @example:
 const combo = new dhx.Combobox("combo_container",{
     data: [
-		{
-			"value": "Austria",
-			"src": "../common/flags/at.png"
-		},
-		{
-			"value": "Belgium",
-			"src": "../common/flags/be.png"
-		},
-		{
-			"value": "Bulgaria",
-			"src": "../common/flags/bg.png"
-		},
-		{
-			"value": "Cyprus",
-			"src": "../common/flags/cy.png"
-		}
-	]
+        {
+            "value": "Austria",
+            "src": "../common/flags/at.png"
+        },
+        {
+            "value": "Belgium",
+            "src": "../common/flags/be.png"
+        },
+        {
+            "value": "Bulgaria",
+            "src": "../common/flags/bg.png"
+        },
+        {
+            "value": "Cyprus",
+            "src": "../common/flags/cy.png"
+        }
+    ]
 });
 
 @descr: 

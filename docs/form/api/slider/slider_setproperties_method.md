@@ -30,25 +30,25 @@ It is possible to change values of the following configuration attributes of the
 
 ~~~js
 {
-	css: string,
-	height: string|number|"content",
-	helpMessage: string,
-	hiddenLabel: boolean,
-	inverse: boolean,
-	label: string,
-	labelPosition: string,
-	labelWidth: string|number,
-	majorTick: number,
-	max: number,
-	min: number,
-	mode: string,
-	padding: string|number,
-	range: boolean,
-	step: number,
-	tick: number,
-	tickTemplate: function,
-	tooltip: boolean, 
-	width: string|number|"content"
+    css: string,
+    height: string|number|"content",
+    helpMessage: string,
+    hiddenLabel: boolean,
+    inverse: boolean,
+    label: string,
+    labelPosition: string,
+    labelWidth: string|number,
+    majorTick: number,
+    max: number,
+    min: number,
+    mode: string,
+    padding: string|number,
+    range: boolean,
+    step: number,
+    tick: number,
+    tickTemplate: function,
+    tooltip: boolean, 
+    width: string|number|"content"
 }
 ~~~
 

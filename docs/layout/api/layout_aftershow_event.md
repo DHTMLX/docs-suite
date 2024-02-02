@@ -15,7 +15,7 @@ description: You can explore the afterShow event of Layout in the documentation 
 
 @example:
 layout.events.on("afterShow", function(id){
-	// your logic here
+    // your logic here
 });
 
 @descr:

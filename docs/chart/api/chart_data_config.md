@@ -36,11 +36,11 @@ const chart = new dhx.Chart("chart_container", {
     ],
     legend: {
         treeSeries: [
-			{ greater: 80 },
-			{ from: 50, to: 80 },
-			{ from: 25, to: 50 },
-			{ less: 25, color: "#CAC2D1"},
-	    ],
+            { greater: 80 },
+            { from: 50, to: 80 },
+            { from: 25, to: 50 },
+            { less: 25, color: "#CAC2D1"},
+        ],
         halign: "right",
         valign: "bottom",
     },

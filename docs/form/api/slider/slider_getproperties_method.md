@@ -35,24 +35,24 @@ The returned object of the **Slider** control looks like:
 
 ~~~js
 {
-	height: "content",
-	helpMessage: "",
-	hiddenLabel: false,
-	inverse: false,
-	label: "slider",
-	labelPosition: "top",
-	labelWidth: "50px",
-	majorTick: undefined,
-	max: 100,
-	min: 0,
-	mode: "horizontal",
-	padding: 0,
-	range: false,
-	step: 1,
-	tick: undefined,
-	tickTemplate: undefined,
-	tooltip: true,
-	width: "content"
+    height: "content",
+    helpMessage: "",
+    hiddenLabel: false,
+    inverse: false,
+    label: "slider",
+    labelPosition: "top",
+    labelWidth: "50px",
+    majorTick: undefined,
+    max: 100,
+    min: 0,
+    mode: "horizontal",
+    padding: 0,
+    range: false,
+    step: 1,
+    tick: undefined,
+    tickTemplate: undefined,
+    tooltip: true,
+    width: "content"
 }
 ~~~
 

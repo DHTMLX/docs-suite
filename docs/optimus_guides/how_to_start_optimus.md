@@ -33,7 +33,7 @@ optimus_demo_guide
    |── static/
    |── views/
    |── index.html
-   └── index.js	
+   └── index.js    
 ~~~
 
 - **root** directory - contains files with configurations of the project and environment
@@ -76,13 +76,13 @@ Let's consider how we've initialized our starter application:
 ~~~html title="index.html"
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>dhtmlxOptimus guide</title>
-	</head>
-	<body>
-		<!-- Create a container with the unique id -->
-		<section id="app" class="main__container"></section>
-	</body>
+    <head>
+        <title>dhtmlxOptimus guide</title>
+    </head>
+    <body>
+        <!-- Create a container with the unique id -->
+        <section id="app" class="main__container"></section>
+    </body>
 </html>
 ~~~
 
@@ -110,9 +110,9 @@ For details about css styles used for the app, see the <a href="https://github.c
 import { View } from "dhx-optimus";
 
 export class TopLayout extends View {
-	init() {
-		return `<h1>Hello Optimus!</h1>`;
-	}
+    init() {
+        return `<h1>Hello Optimus!</h1>`;
+    }
 }
 ~~~
 
@@ -127,9 +127,9 @@ import { App } from "dhx-optimus";
 import { TopLayout } from "./views/TopLayout"; 
 
 export class MyApp extends App {
-	init() { 
-		this.show(null, TopLayout); 
-	} 
+    init() { 
+        this.show(null, TopLayout); 
+    } 
 }
 ~~~
 
@@ -140,22 +140,22 @@ You can find more details on API methods [here](optimus_guides.md#api).
 ~~~html
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>dhtmlxOptimus guide</title>
-		<!-- Suite -->
-		<script type="text/javascript" src="https://cdn.dhtmlx.com/suite/edge/suite.js"></script>
-		<link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
-		<!-- App -->
-		<script type="text/javascript" src="./app.js"></script>
-		<link rel="stylesheet" href="./app.css" />
-	</head>
-	<body>
-		<section id="app" class="main__container"></section>
-		<script>
-			const app = new optimusguide.MyApp();
-			app.render("#app");
-		</script>
-	</body>
+    <head>
+        <title>dhtmlxOptimus guide</title>
+        <!-- Suite -->
+        <script type="text/javascript" src="https://cdn.dhtmlx.com/suite/edge/suite.js"></script>
+        <link rel="stylesheet" href="https://cdn.dhtmlx.com/suite/edge/suite.css" />
+        <!-- App -->
+        <script type="text/javascript" src="./app.js"></script>
+        <link rel="stylesheet" href="./app.css" />
+    </head>
+    <body>
+        <section id="app" class="main__container"></section>
+        <script>
+            const app = new optimusguide.MyApp();
+            app.render("#app");
+        </script>
+    </body>
 </html>
 ~~~
 
@@ -186,36 +186,36 @@ Firstly, we'll create the view on the base of the DHTMLX Toolbar widget because 
 import { View } from "dhx-optimus";
 
 export class ToolbarView extends View {
-	init() {
-		this.toolbar = new dhx.Toolbar(null, {
-			css: "toolbar",
-			data: [
-				{
-					type: "spacer",
-				},
-				{
-					id: "first",
-					value: "First",
-					group: "views",
-				},
-				{
-					id: "second",
-					value: "Second",
-					group: "views",
-				},
-				{
-					id: "third",
-					value: "Third",
-					group: "views",
-				},
-				{
-					type: "spacer",
-				},
-			],
-		});
+    init() {
+        this.toolbar = new dhx.Toolbar(null, {
+            css: "toolbar",
+            data: [
+                {
+                    type: "spacer",
+                },
+                {
+                    id: "first",
+                    value: "First",
+                    group: "views",
+                },
+                {
+                    id: "second",
+                    value: "Second",
+                    group: "views",
+                },
+                {
+                    id: "third",
+                    value: "Third",
+                    group: "views",
+                },
+                {
+                    type: "spacer",
+                },
+            ],
+        });
 
-		return this.toolbar;
-	}
+        return this.toolbar;
+    }
 }
 ~~~
 
@@ -232,12 +232,12 @@ Now, you should create a child view. The component will render the current id of
 import { View } from "dhx-optimus";
 
 export class EmptyView extends View {
-	init() {
-		return `
-		<div class="empty__container">
-			This is the ${this.params.content || "empty"} view
-		</div>`;
-	}
+    init() {
+        return `
+        <div class="empty__container">
+            This is the ${this.params.content || "empty"} view
+        </div>`;
+    }
 }
 ~~~
 
@@ -254,21 +254,21 @@ import { ToolbarView } from "./ToolbarView";
 import { EmptyView } from "./EmptyView";
 
 export class TopLayout extends View {
-	init() {
-		return (this.layout = new dhx.Layout(null, {
-			rows: [
-				{
-					id: "toolbar",
-					height: "content",
-					init: cell => this.show(cell, ToolbarView),
-				},
-				{
-					id: "content",
-					init: cell => this.show(cell, EmptyView),
-				},
-			],
-		}));
-	}
+    init() {
+        return (this.layout = new dhx.Layout(null, {
+            rows: [
+                {
+                    id: "toolbar",
+                    height: "content",
+                    init: cell => this.show(cell, ToolbarView),
+                },
+                {
+                    id: "content",
+                    init: cell => this.show(cell, EmptyView),
+                },
+            ],
+        }));
+    }
 }
 ~~~
 
@@ -288,15 +288,15 @@ Open the *ToolbarView.js* file and apply the **ready()** method to add the *clic
 import { View } from "dhx-optimus";
 
 export class ToolbarView extends View {
-	init() {
-		...
-	}
+    init() {
+        ...
+    }
 
-	ready() {
-		this.toolbar.events.on("click", id => {
-			this.fire("viewChange", [id]);
-		});
-	}
+    ready() {
+        this.toolbar.events.on("click", id => {
+            this.fire("viewChange", [id]);
+        });
+    }
 }
 ~~~
 
@@ -311,16 +311,16 @@ import { ToolbarView } from "./ToolbarView";
 import { EmptyView } from "./EmptyView";
 
 export class TopLayout extends View {
-	init() {
-		...
-	}
+    init() {
+        ...
+    }
 
-	ready() {
-		// initialize the global event handler
-		this.on("viewChange", id => {
-			this.show(this.layout.getCell("content"), EmptyView, { content: id });
-		});
-	}
+    ready() {
+        // initialize the global event handler
+        this.on("viewChange", id => {
+            this.show(this.layout.getCell("content"), EmptyView, { content: id });
+        });
+    }
 }
 ~~~
 
@@ -374,28 +374,28 @@ import { TopLayout } from "./views/TopLayout";
 
 // define the initial state of the app
 const initialState = {
-	active: "first",
+    active: "first",
 };
 
 export class MyApp extends App {
-	init() {
-		// initialize a global store
-		this.store = new Store(initialState);
-		// assign the "store" key to the public "params" property
-		this.params.store = this.store;
-		// get the current state of the global store
-		this.state = this.store.getState();
+    init() {
+        // initialize a global store
+        this.store = new Store(initialState);
+        // assign the "store" key to the public "params" property
+        this.params.store = this.store;
+        // get the current state of the global store
+        this.state = this.store.getState();
 
-		this.show(null, TopLayout);
+        this.show(null, TopLayout);
 
-		this.subscribe();
-	}
+        this.subscribe();
+    }
 
-	subscribe() {
-		this.on("viewChange", id => {
-			this.state.active = id;
-		});
-	}
+    subscribe() {
+        this.on("viewChange", id => {
+            this.state.active = id;
+        });
+    }
 }
 ~~~
 
@@ -417,20 +417,20 @@ The updated *ToolbarView.js* file will contain the following code:
 import { View } from "dhx-optimus";
 
 export class ToolbarView extends View {
-	init() { ... }
+    init() { ... }
 
-	ready() {
-		this.observe(
-			state => state.active,
-			active => {
-				this.toolbar.select(active);
-			}
-		);
+    ready() {
+        this.observe(
+            state => state.active,
+            active => {
+                this.toolbar.select(active);
+            }
+        );
 
-		this.toolbar.events.on("click", id => {
-			this.fire("viewChange", [id]);
-		});
-	}
+        this.toolbar.events.on("click", id => {
+            this.fire("viewChange", [id]);
+        });
+    }
 }
 ~~~
 
@@ -445,29 +445,29 @@ import { ToolbarView } from "./ToolbarView";
 import { EmptyView } from "./EmptyView";
 
 export class TopLayout extends View {
-	init() {
-		return (this.layout = new dhx.Layout(null, {
-			rows: [
-				{
-					id: "toolbar",
-					height: "content",
-					init: cell => this.show(cell, ToolbarView),
-				},
-				{
-					id: "content"
-				},
-			],
-		}));
-	}
+    init() {
+        return (this.layout = new dhx.Layout(null, {
+            rows: [
+                {
+                    id: "toolbar",
+                    height: "content",
+                    init: cell => this.show(cell, ToolbarView),
+                },
+                {
+                    id: "content"
+                },
+            ],
+        }));
+    }
 
-	ready() {
-		this.observe(
-			state => state.active,
-			active => {
-			  this.show(this.layout.getCell("content"), EmptyView, {content: active});
-			}
-		);
-	}
+    ready() {
+        this.observe(
+            state => state.active,
+            active => {
+              this.show(this.layout.getCell("content"), EmptyView, {content: active});
+            }
+        );
+    }
 }
 ~~~
 
@@ -498,30 +498,30 @@ On this step we are going to make our app more complicated by adding the DHTMLX 
 
 ~~~js title="src/assets/data.js"
 export const data = [
-	{
-		name: "Theo Fisher",
-		post: "Head of department",
-		phone: "(405) 632-1372",
-		mail: "tfisher@gmail.com",
-		birthday: "09.12.1987",
-		start: "04.02.2018",
-	},
-	{
-		name: "Francesca Saunders",
-		post: "Attending physician",
-		phone: "(402) 371-6736",
-		mail: "fsaunders@gmail.com",
-		birthday: "25.05.1997",
-		start: "12.09.2019",
-	},
-	{
-		name: "Jenson Brown",
-		post: "Fellow",
-		phone: "(346) 622-8633",
-		mail: "jbrown@gmail.com",
-		birthday: "03.10.1970",
-		start: "06.02.1998",
-	},
+    {
+        name: "Theo Fisher",
+        post: "Head of department",
+        phone: "(405) 632-1372",
+        mail: "tfisher@gmail.com",
+        birthday: "09.12.1987",
+        start: "04.02.2018",
+    },
+    {
+        name: "Francesca Saunders",
+        post: "Attending physician",
+        phone: "(402) 371-6736",
+        mail: "fsaunders@gmail.com",
+        birthday: "25.05.1997",
+        start: "12.09.2019",
+    },
+    {
+        name: "Jenson Brown",
+        post: "Fellow",
+        phone: "(346) 622-8633",
+        mail: "jbrown@gmail.com",
+        birthday: "03.10.1970",
+        start: "06.02.1998",
+    },
 // more options
 ];
 ~~~
@@ -536,18 +536,18 @@ import { data } from "./assets/data/data";
 ...
 
 export class MyApp extends App {
-	init() {
-		...
-		this.persons = new dhx.DataCollection();
-		this.persons.parse(data);
+    init() {
+        ...
+        this.persons = new dhx.DataCollection();
+        this.persons.parse(data);
 
-		this.show(null, TopLayout, { persons: this.persons });
-		...
-	}
+        this.show(null, TopLayout, { persons: this.persons });
+        ...
+    }
 
-	subscribe() {
-		...
-	}
+    subscribe() {
+        ...
+    }
 }
 ~~~
 
@@ -563,21 +563,21 @@ export class MyApp extends App {
 import { View } from "dhx-optimus";
 
 export class DataView extends View {
-	init() {
-		return new dhx.DataView(null, {
-			data: this.params.dataCollection,
-			itemsInRow: 2,
-			gap: 20,
-			template: ({ name, post }) => `
-				<div class="personal-card">
-					<div class="personal-card__container">
-						<h3>${name}</h3>
-						<p>${post}</p>
-					</div>
-				</div>
-			`,
-		});
-	}
+    init() {
+        return new dhx.DataView(null, {
+            data: this.params.dataCollection,
+            itemsInRow: 2,
+            gap: 20,
+            template: ({ name, post }) => `
+                <div class="personal-card">
+                    <div class="personal-card__container">
+                        <h3>${name}</h3>
+                        <p>${post}</p>
+                    </div>
+                </div>
+            `,
+        });
+    }
 }
 ~~~
 
@@ -588,29 +588,29 @@ import { View } from "dhx-optimus";
 import { getChartStatistic } from "../../utils/helpers";
 
 export class ChartView extends View {
-	init() {
-		return new dhx.Chart(null, {
-			css: "chart",
-			type: "donut",
-			series: [
-				{
-					value: "value",
-					color: "color",
-					text: "post",
-				},
-			],
-			legend: {
-				values: {
-					id: "id",
-					text: "post",
-					color: "color",
-				},
-				halign: "center",
-				valign: "bottom",
-			},
-			data: getChartStatistic(this.params.dataCollection.serialize()),
-		});
-	}
+    init() {
+        return new dhx.Chart(null, {
+            css: "chart",
+            type: "donut",
+            series: [
+                {
+                    value: "value",
+                    color: "color",
+                    text: "post",
+                },
+            ],
+            legend: {
+                values: {
+                    id: "id",
+                    text: "post",
+                    color: "color",
+                },
+                halign: "center",
+                valign: "bottom",
+            },
+            data: getChartStatistic(this.params.dataCollection.serialize()),
+        });
+    }
 }
 ~~~
 
@@ -622,20 +622,20 @@ The *getChartStatistic* function is used to prepare the data for Chart. For deta
 import { View } from "dhx-optimus";
 
 export class GridView extends View {
-	init() {
-		return new dhx.Grid(null, {
-			columns: [
-				{ id: "name", header: [{ text: "Name" }] },
-				{ id: "post", header: [{ text: "Post" }] },
-				{ id: "phone", header: [{ text: "Phone" }] },
-				{ id: "mail", header: [{ text: "Mail" }] },
-				{ id: "birthday", header: [{ text: "Birthday" }], type: "date" },
-				{ id: "start", header: [{ text: "Start" }], type: "date" },
-			],
-			autoWidth: true,
-			data: this.params.dataCollection,
-		});
-	}
+    init() {
+        return new dhx.Grid(null, {
+            columns: [
+                { id: "name", header: [{ text: "Name" }] },
+                { id: "post", header: [{ text: "Post" }] },
+                { id: "phone", header: [{ text: "Phone" }] },
+                { id: "mail", header: [{ text: "Mail" }] },
+                { id: "birthday", header: [{ text: "Birthday" }], type: "date" },
+                { id: "start", header: [{ text: "Start" }], type: "date" },
+            ],
+            autoWidth: true,
+            data: this.params.dataCollection,
+        });
+    }
 }
 ~~~
 
@@ -652,45 +652,45 @@ import { ChartView } from "./content/ChartView";
 import { GridView } from "./content/GridView";
 
 export class TopLayout extends View {
-	init() {
-		return (this.layout = new dhx.Layout(null, {
-			rows: [
-				{
-					id: "toolbar",
-					height: "content",
-					init: cell => this.show(cell, ToolbarView),
-				},
-				{
-					id: "content"
-				},
-			],
-		}));
-	}
+    init() {
+        return (this.layout = new dhx.Layout(null, {
+            rows: [
+                {
+                    id: "toolbar",
+                    height: "content",
+                    init: cell => this.show(cell, ToolbarView),
+                },
+                {
+                    id: "content"
+                },
+            ],
+        }));
+    }
 
-	ready() {
-		this.observe(
-			state => state.active,
-			active => {
-				switch (active) {
-					case "first":
-						this.show(this.layout.getCell("content"), DataView, {
-							dataCollection: this.params.persons,
-						});
-						break;
-					case "second":
-						this.show(this.layout.getCell("content"), ChartView, {
-							dataCollection: this.params.persons,
-						});
-						break;
-					case "third":
-						this.show(this.layout.getCell("content"), GridView, {
-							dataCollection: this.params.persons,
-						});
-						break;
-				}
-			}
-		);
-	}
+    ready() {
+        this.observe(
+            state => state.active,
+            active => {
+                switch (active) {
+                    case "first":
+                        this.show(this.layout.getCell("content"), DataView, {
+                            dataCollection: this.params.persons,
+                        });
+                        break;
+                    case "second":
+                        this.show(this.layout.getCell("content"), ChartView, {
+                            dataCollection: this.params.persons,
+                        });
+                        break;
+                    case "third":
+                        this.show(this.layout.getCell("content"), GridView, {
+                            dataCollection: this.params.persons,
+                        });
+                        break;
+                }
+            }
+        );
+    }
 }
 ~~~
 
@@ -727,48 +727,48 @@ Let's add dynamics into the app and make it possible to add and remove data:
 import { View } from "dhx-optimus";
 
 export class ToolbarView extends View {
-	init() {
-		return (this.toolbar = new dhx.Toolbar(null, {
-			css: "toolbar",
-			data: [
-				{
-					type: "title",
-					value: "DHTMLX Optimus Started Demo",
-				},
-				{
-					type: "spacer",
-				},
-				{
-					id: "first",
-					value: "First",
-					group: "views",
-				},
-				{
-					id: "second",
-					value: "Second",
-					group: "views",
-				},
-				{
-					id: "third",
-					value: "Third",
-					group: "views",
-				},
-				{
-					type: "spacer",
-				},
-				{
-					id: "remove",
-					icon: "dxi dxi-delete",
-					circle: true,
-				},
-				{
-					id: "add",
-					icon: "dxi dxi-plus",
-					circle: true,
-				},
-			],
-		}));
-	}
+    init() {
+        return (this.toolbar = new dhx.Toolbar(null, {
+            css: "toolbar",
+            data: [
+                {
+                    type: "title",
+                    value: "DHTMLX Optimus Started Demo",
+                },
+                {
+                    type: "spacer",
+                },
+                {
+                    id: "first",
+                    value: "First",
+                    group: "views",
+                },
+                {
+                    id: "second",
+                    value: "Second",
+                    group: "views",
+                },
+                {
+                    id: "third",
+                    value: "Third",
+                    group: "views",
+                },
+                {
+                    type: "spacer",
+                },
+                {
+                    id: "remove",
+                    icon: "dxi dxi-delete",
+                    circle: true,
+                },
+                {
+                    id: "add",
+                    icon: "dxi dxi-plus",
+                    circle: true,
+                },
+            ],
+        }));
+    }
 }
 ~~~
 
@@ -778,55 +778,55 @@ We also need to add the "removeItem" and "addItem" global events to the **ready(
 import { View } from "dhx-optimus";
 
 export class ToolbarView extends View {
-	init() {
-		...
-	}
-	ready() {
-		this.actionButtons = ["remove", "add"];
+    init() {
+        ...
+    }
+    ready() {
+        this.actionButtons = ["remove", "add"];
 
-		this.observe(
-			state => state.active,
-			active => {
-				this.showActionButtons();
+        this.observe(
+            state => state.active,
+            active => {
+                this.showActionButtons();
 
-				switch (active) {
-					case "second":
-						this.hideActionButtons();
-						break;
+                switch (active) {
+                    case "second":
+                        this.hideActionButtons();
+                        break;
 
-					case "first":
-						this.toolbar.disable("add");
-						break;
-				}
+                    case "first":
+                        this.toolbar.disable("add");
+                        break;
+                }
 
-				this.toolbar.select(active);
-			}
-		);
+                this.toolbar.select(active);
+            }
+        );
 
-		this.toolbar.events.on("click", id => {
-			switch (id) {
-				case "first":
-				case "second":
-				case "third":
-					this.fire("viewChange", [id]);
-					break;
-				case "remove":
-					this.fire("removeItem", []);
-					break;
-				case "add":
-					this.fire("addItem", []);
-					break;
-			}
-		});
-	}
+        this.toolbar.events.on("click", id => {
+            switch (id) {
+                case "first":
+                case "second":
+                case "third":
+                    this.fire("viewChange", [id]);
+                    break;
+                case "remove":
+                    this.fire("removeItem", []);
+                    break;
+                case "add":
+                    this.fire("addItem", []);
+                    break;
+            }
+        });
+    }
 
-	hideActionButtons() {
-		this.toolbar.disable(this.actionButtons);
-	}
+    hideActionButtons() {
+        this.toolbar.disable(this.actionButtons);
+    }
 
-	showActionButtons() {
-		this.toolbar.enable(this.actionButtons);
-	}
+    showActionButtons() {
+        this.toolbar.enable(this.actionButtons);
+    }
 }
 ~~~
 
@@ -836,31 +836,31 @@ export class ToolbarView extends View {
 import { View } from "dhx-optimus";
 
 export class DataView extends View {
-	init() {
-		return (this.dataView = new dhx.DataView(null, {
-			keyNavigation: true,
-			data: this.params.dataCollection,
-			itemsInRow: 2,
-			gap: 20,
-			template: ({ name, post }) => `
-				<div class="personal-card">
-					<div class="personal-card__container">
-						<h3>${name}</h3>
-						<p>${post}</p>
-					</div>
-				</div>
-			`,
-		}));
-	}
+    init() {
+        return (this.dataView = new dhx.DataView(null, {
+            keyNavigation: true,
+            data: this.params.dataCollection,
+            itemsInRow: 2,
+            gap: 20,
+            template: ({ name, post }) => `
+                <div class="personal-card">
+                    <div class="personal-card__container">
+                        <h3>${name}</h3>
+                        <p>${post}</p>
+                    </div>
+                </div>
+            `,
+        }));
+    }
 
-	ready() { 
-		this.on("removeItem", () => {
-			const selected = this.dataView.selection.getItem();
-			if (selected) {
-				this.dataView.data.remove(selected.id);
-			}
-		});
-	}
+    ready() { 
+        this.on("removeItem", () => {
+            const selected = this.dataView.selection.getItem();
+            if (selected) {
+                this.dataView.data.remove(selected.id);
+            }
+        });
+    }
 }
 ~~~
 
@@ -873,35 +873,35 @@ import { View } from "dhx-optimus";
 import { emptyItem } from "../../assets/data/data";
 
 export class GridView extends View {
-	init() {
-		const postUniq = this.params.dataCollection
-			.map(item => {
-				return item.post;
-			})
-			.filter((value, index, self) => {
-				return self.indexOf(value) === index;
-			});
+    init() {
+        const postUniq = this.params.dataCollection
+            .map(item => {
+                return item.post;
+            })
+            .filter((value, index, self) => {
+                return self.indexOf(value) === index;
+            });
 
-		this.grid = new dhx.Grid(null, {
-			columns: [
-				{ id: "name", header: [{ text: "Name" }] },
-				{ id: "post", header: [{ text: "Post" }], editorType: "select", 
-					options: postUniq },
-				{ id: "phone", header: [{ text: "Phone" }] },
-				{ id: "mail", header: [{ text: "Mail" }] },
-				{ id: "birthday", header: [{ text: "Birthday" }], type: "date", 
-					dateFormat: "%d.%m.%Y" },
-				{ id: "start", header: [{ text: "Start" }], type: "date", 
-					dateFormat: "%d.%m.%Y" },
-			],
-			autoWidth: true,
-			selection: "row",
-			editable: true,
-			data: this.params.dataCollection,
-		});
+        this.grid = new dhx.Grid(null, {
+            columns: [
+                { id: "name", header: [{ text: "Name" }] },
+                { id: "post", header: [{ text: "Post" }], editorType: "select", 
+                    options: postUniq },
+                { id: "phone", header: [{ text: "Phone" }] },
+                { id: "mail", header: [{ text: "Mail" }] },
+                { id: "birthday", header: [{ text: "Birthday" }], type: "date", 
+                    dateFormat: "%d.%m.%Y" },
+                { id: "start", header: [{ text: "Start" }], type: "date", 
+                    dateFormat: "%d.%m.%Y" },
+            ],
+            autoWidth: true,
+            selection: "row",
+            editable: true,
+            data: this.params.dataCollection,
+        });
 
-		return this.grid;
-	}
+        return this.grid;
+    }
 }
 ~~~
 
@@ -911,23 +911,23 @@ And we will add handlers to the "removeItem" and "addItem" global events.
 ...
 export class GridView extends View {
   init() {
-	...
-	this.on("removeItem", () => {
-	  const selected = this.grid.selection.getCell();
-	  if (selected) {
-		this.grid.data.remove(selected.row.id);
-	  }
-	});
+    ...
+    this.on("removeItem", () => {
+      const selected = this.grid.selection.getCell();
+      if (selected) {
+        this.grid.data.remove(selected.row.id);
+      }
+    });
 
-	this.on("addItem", () => {
-	  const selected = this.grid.selection.getCell();
-	  if (selected) {
-		this.grid.data.add({ ...emptyItem }, this.grid.data.getIndex(selected.row.id) + 1);
-	  } else {
-		this.grid.data.add({ ...emptyItem }, 0);
-	  }
-	});
-	...
+    this.on("addItem", () => {
+      const selected = this.grid.selection.getCell();
+      if (selected) {
+        this.grid.data.add({ ...emptyItem }, this.grid.data.getIndex(selected.row.id) + 1);
+      } else {
+        this.grid.data.add({ ...emptyItem }, 0);
+      }
+    });
+    ...
   }
 }
 ~~~
@@ -937,12 +937,12 @@ export class GridView extends View {
 ~~~js
 ...
 export const emptyItem = {
-	name: "",
-	post: "",
-	phone: "",
-	mail: "",
-	birthday: "",
-	start: "",
+    name: "",
+    post: "",
+    phone: "",
+    mail: "",
+    birthday: "",
+    start: "",
 };
 ~~~
 

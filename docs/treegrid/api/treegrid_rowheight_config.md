@@ -14,11 +14,11 @@ description: You can explore the rowHeight config of TreeGrid in the documentati
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [
-		// columns config
-	],
-	rowHeight: 30,
-	data: dataset
+    columns: [
+        // columns config
+    ],
+    rowHeight: 30,
+    data: dataset
 });
 
 @descr:

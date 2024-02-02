@@ -30,8 +30,8 @@ To initialize DHTMLX List on a page, you need to take the following simple steps
         <script>
             // creating DHTMLX List
             const list = new dhx.List("list_container", {
-    			itemHeight: 30
-			});
+                itemHeight: 30
+            });
         </script>
     </body>
 </html>

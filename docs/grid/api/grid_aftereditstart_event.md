@@ -17,7 +17,7 @@ description: You can explore the afterEditStart event of Grid in the documentati
 
 @example:
 grid.events.on("afterEditStart", function(row,col, editorType){
-	// your logic here
+    // your logic here
 });
 
 @descr:

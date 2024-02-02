@@ -8,24 +8,18 @@ description: You can explore how to work with Popup in the documentation of the 
 
 ## Hiding/showing Popup
 
-You can hide and show a popup using the [hide()](popup/api/popup_hide_method.md) and [show()](popup/api/popup_show_method.md) methods. The **show()** method takes the following parameters:
+You can hide and show a popup using the [`hide()`](popup/api/popup_hide_method.md) and [`show()`](popup/api/popup_show_method.md) methods. The `show()` method takes the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>element</b></td>
-			<td>(<i>HTMLElement</i>) mandatory, the container to place a popup in</td>
-		</tr>
+            <td><b>element</b></td>
+            <td>(<i>HTMLElement</i>) mandatory, the container to place a popup in</td>
+        </tr>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) optional, the configuration object of a popup. Can contain the properties below:
-            <ul>
-                <li><b>centering</b> - (<i>boolean</i>) defines whether a popup should be centered relative to the element, <i>true</i> by default</li>
-                <li><b>auto</b> - (<i>boolean</i>) enables auto-positioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</li>
-                <li><b>mode</b> - (<i>string</i>) the position relative to the element to show a popup at:"left","right","bottom" (default),"top"</li>
-                <li><b>indent</b> - (<i>number</i>) the offset of a popup relative to the element</li>
-            </ul></td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) optional, the configuration object of a popup. Can contain the properties below:<ul><li><b>centering</b> - (<i>boolean</i>) defines whether a popup should be centered relative to the element, <i>true</i> by default</li><li><b>auto</b> - (<i>boolean</i>) enables auto-positioning of a popup, i.e. it will be shown at that side of an element which provides enough space for a popup</li><li><b>mode</b> - (<i>string</i>) the position relative to the element to show a popup at:"left","right","bottom" (default),"top"</li><li><b>indent</b> - (<i>number</i>) the offset of a popup relative to the element</li></ul></td>
+        </tr>
     </tbody>
 </table> 
 
@@ -45,7 +39,7 @@ popup.hide();
 
 ## Checking visibility of Popup
 
-You can easily check whether a popup is visible with the help of the [isVisible()](popup/api/popup_isvisible_method.md) method. It returns *true*, if a popup is visible.
+You can easily check whether a popup is visible with the help of the [`isVisible()`](popup/api/popup_isvisible_method.md) method. It returns *true*, if a popup is visible.
 
 ~~~js
 popup.isVisible(); // -> true/false
@@ -55,7 +49,7 @@ popup.isVisible(); // -> true/false
 
 ## Attaching content
 
-You can easily attach some HTML content to a popup via the [attachHTML()](popup/api/popup_attachhtml_method.md) method. It takes as a parameter a string with HTML.
+You can easily attach some HTML content to a popup via the [`attachHTML()`](popup/api/popup_attachhtml_method.md) method. It takes as a parameter a string with HTML.
 
 ~~~js
 const popup = new dhx.Popup();
@@ -67,18 +61,18 @@ popup.show("popup");
 
 ## Attaching DHTMLX components
 
-DHTMLX Popup allows attaching other components of the library using the [attach()](popup/api/popup_attach_method.md) method. It takes two parameters:
+DHTMLX Popup allows attaching other components of the library using the [`attach()`](popup/api/popup_attach_method.md) method. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>name</b></td>
-			<td>(<i>string</i>) the name of a component</td>
-		</tr>
+            <td><b>name</b></td>
+            <td>(<i>string</i>) the name of a component</td>
+        </tr>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) optional, the configuration settings of a component</td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) optional, the configuration settings of a component</td>
+        </tr>
     </tbody>
 </table>
 <br/>
