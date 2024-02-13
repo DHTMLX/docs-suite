@@ -8,6 +8,25 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.7
+------------------
+
+Released on February 13, 2024
+
+### Fixes
+
+- Combobox. Improvements in the filtering logic. The filter type is changed: now search is carried out by comparing all characters of the query string
+- Combobox. Fix the `change` event firing for an empty value
+- Form. Fix incorrect clearing of a read-only Combo 
+- Form. The `validate()` method returns an incorrect value if there are no validation functions or attributes applied
+- Form. Fix incorrect style of the input icon
+- Form. The `input` event with the `inputType: "number"` returns a string value
+- Grid/TreeGrid. Fix the issue with the comboFilter option size to allow entering a long text
+- Grid/TreeGrid. Incorrect width calculation in case of a big number of columns
+- Message. Fix calculation of the tooltip position
+- Ribbon/Sidebar/Toolbar. Fix the types issue with the IState
+- Ribbon/Toolbar. The DatePicker value can't be cleared via the API
+
 Version 8.3.6
 ---------------
 
