@@ -339,12 +339,6 @@ grid.data.sort({
 
 **Related sample**: [Grid. Sorting](https://snippet.dhtmlx.com/81dmbdfd)
 
-To discard all applied sorting rules, call the method without parameters:
-
-~~~js
-grid.data.sort();
-~~~
-
 #### Custom sorting
 
 You can also specify the **rule** attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
