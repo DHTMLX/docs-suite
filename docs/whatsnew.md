@@ -8,6 +8,25 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.8 
+------------------
+
+Released on February 26, 2024
+
+### Fixes
+
+- Calendar. Localization of Timepicker is fixed 
+- DataCollection/TreeCollection. The DataProxy config for the data driver in the CSV/XML format is replaced
+- DataCollection/TreeCollection. The functionality of the `findIndex()` method is optimized
+- Form. Incorrect input of CJK characters if the form is placed into a layout
+- Form. Incorrect work of the `setProperties()` method 
+- Form. The padding of the Fieldset control is fixed
+- Form. Incorrect work of the `hide()` method of the Fieldset control 
+- Grid. Navigation through the spanned cells with the Tab key 
+- Grid/TreeGrid. Improved performance for a dataset with spans
+- Grid/TreeGrid. Editing of spanned cells
+- Localization. Issues with i18n import
+
 Version 8.3.7
 ------------------
 
