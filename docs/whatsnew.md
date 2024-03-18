@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.9 
+------------------
+
+Released on March 18, 2024
+
+### Fixes
+
+- Date. Сonsole errors when used on iOS 16.3 in Safari 
+- Form. Validation for the DatePicker and Select controls
+- Form. False rendering of components with the `hidden:true` property 
+- Grid/TreeGrid. Not displaying tooltips in the spanned footer
+- Grid/TreeGrid. Initializing a grid in a web component breaks the inputFilter usage
+- Grid/TreeGrid. Pressing Enter in the input filter triggers the afterSort event
+- Layout. The destructor() method of the parent doesn't destruct the nested components
+
+
 Version 8.3.8 
 ------------------
 
