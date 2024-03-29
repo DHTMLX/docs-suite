@@ -10,5 +10,5 @@ description: You can explore how to use DHTMLX Widgets with Angular. Browse deve
 
 DHTMLX Suite is compatible with Angular. We have prepared code examples of how to use DHTMLX widgets with Angular.
 
-- To check online samples, please visit the Code examples page: [DHTMLX widgets with Angular](https://dhtmlx.github.io/angular-suite-demo/?path=/story/calendar--base).
+- To check online samples, please refer to the corresponding [Example on Replit](https://replit.com/@dhtmlx/dhtmlx-suite-with-angular).
 - To download samples, please check our GitHub repository: [DHTMLX Widgets + Angular](https://github.com/DHTMLX/angular-suite-demo). The README.md file provides all the necessary information on how to run the app in the development mode.

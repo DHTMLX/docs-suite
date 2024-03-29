@@ -10,5 +10,5 @@ description: You can explore how to use DHTMLX Widgets with React. Browse develo
 
 DHTMLX Suite is compatible with React. We have prepared code examples of how to use DHTMLX widgets with React.
 
-- To check online samples, please visit the Code examples page: [DHTMLX widgets with React](https://dhtmlx.github.io/react-widgets/#/).
-- To download samples, please check our GitHub repository: [DHTMLX Widgets + React](https://github.com/DHTMLX/react-widgets) . The README.md file provides all the necessary information on how to run the app in the development mode.
+- To check online samples, please refer to the corresponding [Example on Replit](https://replit.com/@dhtmlx/dhtmlx-suite-with-react).
+- To download samples, please check our GitHub repository: [DHTMLX Widgets + React](https://github.com/DHTMLX/react-suite-demo). The README.md file provides all the necessary information on how to run the app in the development mode.

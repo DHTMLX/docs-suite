@@ -5092,6 +5092,7 @@ module.exports = {
         "integration/suite_and_react",
         "integration/suite_and_angular",
         "integration/suite_and_vue",
+        "integration/suite_and_svelte"
       ],
     },
     // end Backend and frameworks integration
