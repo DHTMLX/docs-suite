@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.10 
+------------------
+
+Released on April 3, 2024
+
+### Fixes
+
+- Calendar. The 29th of February isn't rendered for some date formats
+- Grid. Row CSS isn't applied in the exported Excel file
+- Grid. Row autoHeight fails on changing the order of columns by dragging
+- Grid. Custom header sorting doesn't work for the headers containing HTML
+- Grid. Incorrect filtering via comboFilter
+
 Version 8.3.9 
 ------------------
 
