@@ -250,6 +250,40 @@ const combo = new dhx.Combobox("combo_container", {
 });            
 ~~~
 
+## Event handlers for the template
+
+Starting from v8.4, it is possible to assign event handlers to HTML elements of a custom template of Combobox items by using the [](combobox/api/combobox_eventhandlers_config.md) configuration option:
+
+~~~js {11-13,17-24}
+const combobox = new dhx.Combobox("combobox", {
+    newOptions: true, // enables the ability to add and save new values from UI
+    itemHeight: 40,
+    template: ({ value, src }) => {
+        return `
+            <div class="list-item">
+                <div class="list-item__content">
+                    <img class="list-item__image" src="${src}" alt="${value}">
+                    <span class="list-item__value">${value}</span>
+                </div>
+                <button class="list-item__button list-item__button--delete">
+                    <i class="dxi dxi-delete-forever"></i>
+                </button>
+            </div>
+        `;
+    },
+    eventHandlers: {
+        onclick: { 
+            "list-item__button--delete": (event, id) => {
+                combobox.data.remove(id);
+                combobox.clear();    
+            } 
+        } 
+    }
+});
+~~~
+
+**Related sample**: [Combobox. HTML template and handling events](https://snippet.dhtmlx.com/00955xwq)
+
 ## HTML content of Combobox options
 
 By default, Combobox displays HTML content if it is specified for its options.

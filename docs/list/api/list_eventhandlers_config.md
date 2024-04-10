@@ -11,7 +11,7 @@ description: You can explore the eventHandlers config of List in the documentati
 ~~~js
 eventHandlers?: {
     [eventName: string]: {
-        [className: string]: (events: Event, item: object) => void; 
+        [className: string]: (event: Event, id: string | number) => void | boolean;
     };
 };
 ~~~

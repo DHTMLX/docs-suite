@@ -8,6 +8,28 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.4 
+------------------
+
+Released on April X, 2024
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-8-4/" target="_blank">Review of the release on the blog</a>
+
+### New functionality
+
+#### Toolbar
+
+- The ability to [expand items by hovering over Toolbar elements with the mouse pointer](toolbar/api/toolbar_navigationtype_config.md)
+
+#### Combobox
+
+- The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
+
+### Fixes
+
+- Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
+
+
 Version 8.3.10 
 ------------------
 
