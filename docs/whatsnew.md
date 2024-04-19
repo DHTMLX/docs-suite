@@ -24,6 +24,7 @@ Released on April X, 2024
 #### Combobox
 
 - The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
+- The possibility to [group options by using a custom function](combobox/customization.md#options-grouping)
 
 ### Fixes
 

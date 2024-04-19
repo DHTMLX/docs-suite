@@ -40,7 +40,7 @@ For example:
 
 ~~~html
 <style>
-      body {
+    body {
         margin: 0;
     }
     .custom-class .dhx_combobox-input-box {
@@ -50,7 +50,7 @@ For example:
 </style>
 
 <script>
-    const combobox = new dhx.Combobox("combobox_container", {
+    const combo = new dhx.Combobox("combo_container", {
         css: "custom-class"
     });
 </script>
@@ -104,4 +104,59 @@ const combo = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Custom filter](https://snippet.dhtmlx.com/791incm9)
 
-In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows in the popup list all the words that contain entered letters independent of their order in a word.
+In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows all the words that contain entered letters independent of their order in a word in the popup list.
+
+## Options grouping  
+
+![Options group](../assets/combo/options_group.png)
+
+You can group the options of ComboBox by some criteria and render the grouped data in the drop-down list on click in the input field. For this, you need to:
+
+- provide a custom function that contains the sorting logic for data and set its name as a value of the `data` configuration option of ComboBox, for example:
+
+~~~js
+function createData(countries) {
+    let group;
+    return countries.sort().map(country => {
+        const startWord = country[0].toUpperCase();
+        let root = false;
+        if (group !== startWord) {
+            group = startWord;
+            root = true;
+        }
+        return {
+            value: country,
+            group,
+            root,
+        };
+    });
+}
+
+const combo = new dhx.Combobox("combo_container", {
+    data: createData(countries),
+});
+~~~
+
+- specify a template of displaying options in the drop-down list via the `template` configuration option
+
+The template for the data sorted in the above example may look like this:
+
+~~~js {2-11}
+const combo = new dhx.Combobox("combobox", {
+    template : ({ group, value, root }) => {
+        const isRoot = root && "list-item__root" || "";
+        return `
+            <div
+                class="list-item ${isRoot}"
+                data-label="${group}">
+                ${value}
+            </div>
+        `;
+    },
+    data: createData(countries),
+});
+~~~
+
+**Related sample**: [Combobox. Groups in the drop-down list](https://snippet.dhtmlx.com/sk7q5wvl)
+
+The example given above demonstrates how you can group options (name of countries) by the first letters. 
