@@ -2354,11 +2354,11 @@ module.exports = {
                   },
                   {
                     type: "category",
-                    label: "Form Toggle events",
+                    label: "Form ToggleGroup events",
                     collapsed: true,
                     link: {
                       type: 'generated-index',
-                      title: "Form Toggle events",
+                      title: "Form ToggleGroup events",
                       keywords: ['form toggle events'],
                       image: '/img/docusaurus.png'
                     },
