@@ -6,7 +6,7 @@ description: You can explore the Checkbox of Form in the documentation of the DH
 
 # Checkbox
 
-A control that allows a user to make a choice between one or several opposite options by toggling them.
+A control that allows displaying the specified value or change it to the opposite one.
 
 ![Checkbox control](../assets/form/form_checkbox.png)
 

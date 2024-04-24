@@ -102,7 +102,7 @@ description: You can explore the Properties of the Button control of Form in the
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) an <a href="../../../../helpers/icon">icon</a> of the button</td>
+            <td>(optional) the CSS class of an <a href="../../../../helpers/icon">icon</a> of the button</td>
         </tr>
         <tr>
             <td><b>loading</b></td>

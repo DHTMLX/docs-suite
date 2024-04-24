@@ -102,7 +102,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) allows setting an icon when there is no image uploaded, doesn't work together with the <b>preview</b> property</td>
+            <td>(optional) allows setting the CSS class of an icon when there is no image uploaded, doesn't work together with the <b>preview</b> property</td>
         </tr>
         <tr>
             <td><b>placeholder</b></td>

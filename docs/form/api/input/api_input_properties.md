@@ -104,7 +104,7 @@ description: You can explore the Properties of the Input control of Form in the 
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
+            <td>(optional) the CSS class name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
         </tr>
         <tr>
             <td><b>inputType</b></td>
