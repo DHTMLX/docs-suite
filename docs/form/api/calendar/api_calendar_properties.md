@@ -20,7 +20,7 @@ description: You can explore the Properties of the Datepicker control of Form in
     editable?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     required?: boolean, // false by default
     validation?: (input: string | Date) => boolean,
     width?: string | number | "content", // "content" by default

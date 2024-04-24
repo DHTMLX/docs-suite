@@ -28,7 +28,7 @@ description: You can explore the Properties of the Toggle control of Form in the
     css?: string,
     width?: string | number | "content", // "content" by default
     height?: string | number | "content", // "content" by default
-    padding?: string | number // "8px" by default
+    padding?: string | number 
 }
 ~~~
 
@@ -49,7 +49,7 @@ description: You can explore the Properties of the Toggle control of Form in the
 - `css` - (optional) adds style classes to a control
 - `height` - (optional) the height of a control, *"content"* by default
 - `width` - (optional) the width of a control, *"content"* by default
-- `padding` - (optional) sets padding between a cell and a border of a Toggle control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a Toggle control
 
 ### Example
 

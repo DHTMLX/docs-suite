@@ -20,7 +20,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
     disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     required?: boolean, // false by default
     validation?: (id: (string | number) | (string | number)[], text: string | string[]) => boolean,
     width?: string | number | "content", // "content" by default
@@ -91,7 +91,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Combo control, <i>"8px"</i> by default</td>
+            <td>(optional) sets padding between a cell and a border of the Combo control</td>
         </tr>
         <tr>
             <td><b>required</b></td>

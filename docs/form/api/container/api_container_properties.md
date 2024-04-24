@@ -19,7 +19,7 @@ description: You can explore the Properties of the Container control of Form in 
     disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     width?: string | number | "content", // "content" by default
 
     label?: string,
@@ -40,7 +40,7 @@ description: You can explore the Properties of the Container control of Form in 
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `padding` - (optional) sets padding between a cell and a border of a control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of a control
 - `width` - (optional) the width of a control, *"content"* by default
 - `label` - (optional) specifies a label for a control
 - `labelWidth` - (optional) sets the width of the label of a control

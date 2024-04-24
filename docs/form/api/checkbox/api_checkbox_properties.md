@@ -21,7 +21,7 @@ description: You can explore the Properties of the Checkbox control of Form in t
     disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     required?: boolean, // false by default
     width?: string | number | "content", // "content" by default
 
@@ -83,7 +83,7 @@ description: You can explore the Properties of the Checkbox control of Form in t
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of a Checkbox control, <i>"8px"</i> by default</td>
+            <td>(optional) sets padding between a cell and a border of a Checkbox control</td>
         </tr>
         <tr>
             <td><b>required</b></td>

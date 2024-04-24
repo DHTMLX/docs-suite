@@ -20,7 +20,7 @@ description: You can explore the Properties of the Fieldset control of Form in t
     css?: string,
     width?: string | number | "content", // "content" by default
     height?: string | number | "content", // "content" by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
 
     label?: string,
     labelAlignment?: "left" | "right" | "center", // "left" by default
@@ -40,7 +40,7 @@ description: You can explore the Properties of the Fieldset control of Form in t
 - `css` - (optional) the name of a CSS class(es) applied to the control group
 - `width` - (optional) sets the width of the control group, *"content"* by default
 - `height` - (optional) sets the height of the control group, *"content"* by default  
-- `padding` - (optional) sets the padding for the content inside the control group, *"8px"* by default
+- `padding` - (optional) sets the padding for the content inside the control group
 - `label` - (optional) specifies a label for a control
 - `labelAlignment` - (optional) defines the position of the label: "left" | "right" | "center", *"left"* by default
 - `rows` - (optional) arranges controls inside the control group vertically

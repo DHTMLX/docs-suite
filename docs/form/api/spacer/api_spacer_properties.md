@@ -17,7 +17,7 @@ description: You can explore the Properties of the Spacer control of Form in the
     css?: string,
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     width?: string | number | "content", // "content" by default
 }
 ~~~
@@ -52,7 +52,7 @@ description: You can explore the Properties of the Spacer control of Form in the
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Spacer control, <i>"8px"</i> by default</td>
+            <td>(optional) sets padding between a cell and a border of the Spacer control</td>
         </tr>
         <tr>
             <td><b>width</b></td>
