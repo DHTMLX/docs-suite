@@ -8,6 +8,21 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.11
+----------------
+
+Released on May 8, 2024
+
+### Fixes
+
+- DataCollection/TreeCollection. Fix the work of the `serialize()` method for the CSV format
+- Form. Fix the issue with the `maxlength` property that made inputs to be required
+- Grid. Fix the drag-n-drop functionality for a grid initialized in a web component 
+- Grid/TreeGrid. Fix the functionality of the comboFilter
+- Grid/TreeGrid. Fix the `adjust` property for a cell with the "combobox" editor the options of which are set via the `id` and `value` properties 
+- Grid/TreeGrid. Fix the error caused by the call of the `addCellCss()` method for a hidden column 
+- Layout. Fix the error caused by the `destructor` call
+
 Version 8.3.10 
 ------------------
 
