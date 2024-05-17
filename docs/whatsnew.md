@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.3.12
+---------------- 
+
+Released on May 17, 2024
+
+### Updates
+
+- Icons. Add new icons 
+
+### Fixes
+
+- TreeGrid. Fix the issue with spans not applying to columns
+
 Version 8.3.11
 ----------------
 
