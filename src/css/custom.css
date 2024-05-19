@@ -251,3 +251,13 @@ span.token-line.theme-code-block-highlighted-line {
 }
 
 /* end list */
+
+p {
+    line-height: 2;
+}
+
+.markdown ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 2;
+}
