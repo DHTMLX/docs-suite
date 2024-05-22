@@ -32,7 +32,7 @@ description: You can explore the Properties of the Avatar control of Form in the
     css?: string,
     width?: string | number | "content", // "content" by default
     height?: string | number | "content", // "content" by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
 
     label?: string,
     labelWidth?: string | number,
@@ -102,7 +102,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) allows setting an icon when there is no image uploaded, doesn't work together with the <b>preview</b> property</td>
+            <td>(optional) allows setting the CSS class of an icon when there is no image uploaded, doesn't work together with the <b>preview</b> property</td>
         </tr>
         <tr>
             <td><b>placeholder</b></td>
@@ -134,7 +134,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Avatar control, "8px" by default</td>
+            <td>(optional) sets padding between a cell and a border of the Avatar control</td>
         </tr>
         <tr>
             <td><b>label</b></td>

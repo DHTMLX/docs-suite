@@ -27,7 +27,7 @@ description: You can explore the Properties of the Select control of Form in the
     disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     required?: boolean, // false by default
     validation?: (input: string | number | boolean) => boolean,
     width?: string | number | "content", // "content" by default
@@ -88,7 +88,7 @@ description: You can explore the Properties of the Select control of Form in the
         </tr>
          <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Select control, <i>"8px"</i> by default</td>
+            <td>(optional) sets padding between a cell and a border of the Select control</td>
         </tr>    
         <tr>
             <td><b>required</b></td>
@@ -104,7 +104,7 @@ description: You can explore the Properties of the Select control of Form in the
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) the name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
+            <td>(optional) the CSS class name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

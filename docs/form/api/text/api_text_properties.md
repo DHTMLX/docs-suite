@@ -19,7 +19,7 @@ description: You can explore the Properties of the Text control of Form in the d
     disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number,
     width?: string | number | "content", // "content" by default
 
     inputType?: "text" | "password" | "number", // "text" by default
@@ -74,7 +74,7 @@ description: You can explore the Properties of the Text control of Form in the d
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Text control, <i>"8px"</i> by default</td>
+            <td>(optional) sets padding between a cell and a border of the Text control</td>
         </tr>
         <tr>
             <td><b>width</b></td>

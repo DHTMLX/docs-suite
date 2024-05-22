@@ -19,7 +19,7 @@ description: You can explore the Properties of the Textarea control of Form in t
     disabled?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     required?: boolean, // false by default
     validation?: string | (input: string | number) => boolean,
     width?: string | number | "content", // "content" by default
@@ -80,7 +80,7 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>padding</b></td>
-            <td>(optional) sets padding between a cell and a border of the Textarea control, <i>"8px"</i> by default</td>
+            <td>(optional) sets padding between a cell and a border of the Textarea control</td>
         </tr>
         <tr>
             <td><b>required</b></td>

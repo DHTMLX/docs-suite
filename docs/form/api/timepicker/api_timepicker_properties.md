@@ -20,7 +20,7 @@ description: You can explore the Properties of the Timepicker control of Form in
     editable?: boolean, // false by default
     height?: string | number | "content", // "content" by default
     hidden?: boolean, // false by default
-    padding?: string | number, // "8px" by default
+    padding?: string | number, 
     required?: boolean, // false by default
     validation?: (input: string) => boolean,
     width?: string | number | "content", // "content" by default
@@ -62,12 +62,12 @@ description: You can explore the Properties of the Timepicker control of Form in
 - `editable` - (optional) allows a user to enter the value of the control manually, *false* by default
 - `height` - (optional) the height of a control, *"content"* by default
 - `hidden` - (optional) defines whether a control is hidden, *false* by default
-- `padding` - (optional) sets padding between a cell and a border of the TimePicker control, *"8px"* by default
+- `padding` - (optional) sets padding between a cell and a border of the TimePicker control
 - `required` - (optional) defines whether a control is required, *false* by default
 - `validation` - (optional) [the validation function](form/work_with_form.md#validation-rules), takes as a parameter the value to validate and returns true/false to indicate the result of validation
 - `width` - (optional) the width of a control, *"content"* by default
 - `controls` - (optional) defines whether a timepicker is equipped with the Close and Save buttons, *false* by default
-- `icon` - (optional) the name of an icon from the used icon font
+- `icon` - (optional) the CSS class name of an icon from the used icon font
 - `placeholder` - (optional) a tip for the input
 - `timeFormat` - (optional) defines what clock format is activated: the 12-hour or 24-hour one. Set the property to 12 or 24 (default) value, correspondingly, *24* by default
 - `valueFormat` - (optional) defines the format of the value to be applied when working with the events of the timepicker control: "string" (default), "timeObject"
