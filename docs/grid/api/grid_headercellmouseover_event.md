@@ -8,14 +8,16 @@ description: You can explore the headerCellMouseOver event of Grid in the docume
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: {'headerCellMouseOver: (col: object, events: MouseEvent) => void;'}
+@signature: {'headerCellMouseOver: (column: object, event: MouseEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `events: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("headerCellMouseOver", function(col,e){
+grid.events.on("headerCellMouseOver", (column, event) => {
     // your logic here
 });
 

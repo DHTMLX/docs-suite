@@ -11,10 +11,12 @@ description: You can explore the afterRowShow event of Grid in the documentation
 @signature: {'afterRowShow: (row: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
 
 @example:
-grid.events.on("afterRowShow", function(row){
+grid.events.on("afterRowShow", (row) => {
     // your logic here
 });
 

@@ -8,14 +8,16 @@ description: You can explore the headerCellRightClick event of Grid in the docum
 
 @short: fires on right click on a grid header cell
 
-@signature: {'headerCellRightClick: (col: object, events: MouseEvent) => void;'}
+@signature: {'headerCellRightClick: (column: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `column: object` - an object with a column configuration
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("headerCellRightClick", function(col,e){
+grid.events.on("headerCellRightClick", (column, event) => {
     // your logic here
 });
 

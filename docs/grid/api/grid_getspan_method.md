@@ -15,11 +15,11 @@ description: You can explore the getSpan method of Grid in the documentation of 
 - `colId: string | number` - the id of a column
 
 @returns:
-An object with configuration of a span.
+An object with the configuration of a span.
 
 @example:
-const span = grid.getSpan("10","a"); 
-// -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+const span = grid.getSpan("10", "a"); 
+// -> { row: "10", column: "a", colspan: 4, text: "Some header", css: "myCustomColspan" }
 
 @descr:
 

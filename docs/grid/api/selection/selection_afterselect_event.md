@@ -8,24 +8,25 @@ description: You can explore the afterSelect event of Grid in the documentation 
 
 @short: fires after selecting a cell
 
-@signature: {'afterSelect: (row: object, col: object) => void;'}
+@signature: {'afterSelect: (row: object, column: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @example:
-grid.selection.events.on("AfterSelect", function(row, col){
-    console.log("afterSelect", row, col); 
+grid.selection.events.on("AfterSelect", (row, column) => {
+    console.log("afterSelect", row, column); 
 });
 
 @descr:
 It is also possible to use the simplified version of the event:
 
 ~~~js
-grid.events.on("AfterSelect", function(row, col){
-    console.log("afterSelect", row, col); 
+grid.events.on("AfterSelect", (row, column) => {
+    console.log("afterSelect", row, column); 
 });
 ~~~
 

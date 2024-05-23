@@ -8,16 +8,17 @@ description: You can explore the beforeColumnShow event of Grid in the documenta
 
 @short: fires before a column is shown on a page
 
-@signature: {'beforeColumnShow: (col: object) => boolean | void;'}
+@signature: {'beforeColumnShow: (column: object) => boolean | void;'}
 
 @params:
-- `col: object` - an object with a column configuration
+The callback of the event is called with the following parameter:
+- `column: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent a column from being shown; otherwise, `true`.
 
 @example:
-grid.events.on("beforeColumnShow", function(column){
+grid.events.on("beforeColumnShow", (column) => {
     // your logic here
     return false;
 });

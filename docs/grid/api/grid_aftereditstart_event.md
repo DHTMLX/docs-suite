@@ -8,15 +8,17 @@ description: You can explore the afterEditStart event of Grid in the documentati
 
 @short: fires after editing of a cell has started
 
-@signature: {'afterEditStart: (row: object, col: object, editorType: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea" | "multiselect") => void;'}
+@signature: {'afterEditStart: (row: object, column: object, editorType: "input" | "select" | "datePicker" | "checkbox" | "combobox" | "textarea" | "multiselect") => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
-- `col: object` - an object with a column configuration
+- `column: object` - an object with a column configuration
 - `editorType: string` - the type of a cell editor: "input", "select", "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @example:
-grid.events.on("afterEditStart", function(row,col, editorType){
+grid.events.on("afterEditStart", (row, column, editorType) => {
     // your logic here
 });
 

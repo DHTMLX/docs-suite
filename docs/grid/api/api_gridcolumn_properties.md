@@ -20,7 +20,7 @@ columns:[
         {
             text?: string | number,
             tooltip?: boolean, // true by default
-            tooltipTemplate?: (value: string | undefined, header: IHeader, col: ICol) => string | boolean,
+            tooltipTemplate?: (value: string | undefined, header: IHeader, column: ICol) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             colspan?: number,
             rowspan?: number,
@@ -45,7 +45,7 @@ columns:[
         {
             text?: string | number,
             tooltip?: boolean, // true by default
-            tooltipTemplate?: (value: string | undefined, footer: IFooter, col: ICol) => string | boolean,
+            tooltipTemplate?: (value: string | undefined, footer: IFooter, column: ICol) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             colspan?: number,
             rowspan?: number,
@@ -59,7 +59,7 @@ columns:[
     editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea", 
     format?: string,
     options?: (string | { id: string | number, value: string })[] |
-              (col: object, row?: object) => (string | { id: string | number, value: string })[],
+              (column: object, row?: object) => (string | { id: string | number, value: string })[],
     editorConfig?: obj,
     adjust?: "data" | "header" | "footer" | boolean, // false by default
     align?: "left" | "center" | "right", // "left" by default
@@ -71,9 +71,9 @@ columns:[
     sortable?: boolean, // true by default
     mark?: { min?: string, max?: string } |
            (cell: any, columnCells: any[], row?: object, column?: object) => string,
-    template?: (cellValue: any, row: object, col: object) => string,
+    template?: (cellValue: any, row: object, column: object) => string,
     tooltip?: boolean, // true by default
-    tooltipTemplate?: (cellValue: any, row: object, col: object) => string,
+    tooltipTemplate?: (cellValue: any, row: object, column: object) => string,
   },
   // more column objects
 ]
@@ -125,7 +125,7 @@ columns:[
         </tr>
         <tr>
             <td><b>options</b></td>
-            <td>(optional) specifies a set of options to be displayed in the editor of a cell. It is required if you specify <a href="../../configuration/#types-of-column-editor">editorType: "select" | "combobox" | "multiselect"</a>. The property can be:<ul><li>an array of string values</li><li>an array of objects with a set of <i>key:value</i> pairs - attributes of options and their values:<ol>The <b>id</b> attribute sets the id for the option</ol><ol>The <b>value</b> attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization</ol></li><li>a function which takes two parameters:<ol><b>col</b> - (required) an object with the configuration of a column</ol><ol><b>row</b> - (optional) an object with all cells in a row</ol>and must return either an array of string values or an array of objects</li></ul><b>Related Samples:</b><ul><li><a href="https://snippet.dhtmlx.com/w2cdossn" target="_blank">Grid. Editing with different editors (combobox, select, multiselect, boolean, date)</a></li><li><a href="https://snippet.dhtmlx.com/i22fg83z" target="_blank">Grid. Individual option lists for select, multiselect and combobox editors</a></li></ul>If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.</td>
+            <td>(optional) specifies a set of options to be displayed in the editor of a cell. It is required if you specify <a href="../../configuration/#types-of-column-editor">editorType: "select" | "combobox" | "multiselect"</a>. The property can be:<ul><li>an array of string values</li><li>an array of objects with a set of <i>key:value</i> pairs - attributes of options and their values:<ol>The <b>id</b> attribute sets the id for the option</ol><ol>The <b>value</b> attribute sets the value to be displayed both in the editor and in the grid cell. If the id of the option is specified in the data set, the value will also be displayed in the cell on Grid initialization</ol></li><li>a function which takes two parameters:<ol><b>column</b> - (required) an object with the configuration of a column</ol><ol><b>row</b> - (optional) an object with all cells in a row</ol>and must return either an array of string values or an array of objects</li></ul><b>Related Samples:</b><ul><li><a href="https://snippet.dhtmlx.com/w2cdossn" target="_blank">Grid. Editing with different editors (combobox, select, multiselect, boolean, date)</a></li><li><a href="https://snippet.dhtmlx.com/i22fg83z" target="_blank">Grid. Individual option lists for select, multiselect and combobox editors</a></li></ul>If <b>newOptions</b> property is enabled, all new options will be displayed in the editor regardless of the initialized options.</td>
         </tr>
         <tr>
             <td id="editorconfig"><b>editorConfig</b></td>
@@ -165,11 +165,11 @@ columns:[
         </tr>
         <tr>
             <td><a href="../../customization#adding-custom-marks-to-cells"><b>mark</b></a></td>
-            <td>(optional) can be either an object or a function:<ul><li>as an <i>object</i> contains <b>min</b> and <b>max</b> properties, to apply desired CSS classes to cells with minimal|maximal values in a column </li><li>as a <i>function</i> returns a template for marking a cell(s) and takes several parameters:<ol>- <b>cell</b> - (required) the value of a cell</ol><ol>- <b>columnCells</b> - (required) an array of all cell values in the specified column</ol><ol>- <b>row</b> - (optional) an object with all cells in a row</ol><ol>- <b>col</b> - (optional) an object with the configuration of a column (see the <b>columns</b> config)</ol></li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark cells</a></td>
+            <td>(optional) can be either an object or a function:<ul><li>as an <i>object</i> contains <b>min</b> and <b>max</b> properties, to apply desired CSS classes to cells with minimal|maximal values in a column </li><li>as a <i>function</i> returns a template for marking a cell(s) and takes several parameters:<ol>- <b>cell</b> - (required) the value of a cell</ol><ol>- <b>columnCells</b> - (required) an array of all cell values in the specified column</ol><ol>- <b>row</b> - (optional) an object with all cells in a row</ol><ol>- <b>column</b> - (optional) an object with the configuration of a column (see the <b>columns</b> config)</ol></li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/buirf16n" target="_blank">Grid. Mark cells</a></td>
         </tr>
         <tr>
             <td><a href="../../customization#adding-template-to-cells"><b>template</b></a></td>
-            <td>(optional) a function which returns a template with content for a cell(s). Takes 3 parameters:<ul><li><b>cellValue</b> - (required) the value of a cell</li><li><b>row</b> - (required) an object with all cells in a row</li><li><b>col</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank">Grid. Cell templates</a></td>
+            <td>(optional) a function which returns a template with content for a cell(s). Takes 3 parameters:<ul><li><b>cellValue</b> - (required) the value of a cell</li><li><b>row</b> - (required) an object with all cells in a row</li><li><b>column</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/9txizaow" target="_blank">Grid. Cell templates</a></td>
         </tr>
         <tr>
             <td><a href="../../configuration#tooltip"><b>tooltip</b></a></td>
@@ -177,7 +177,7 @@ columns:[
         </tr>
         <tr>
             <td><a href="../../customization#adding-template-to-tooltip"><b>tooltipTemplate</b></a></td>
-            <td>(optional) a function which returns a template for the content of the tooltip. Takes 3 parameters:<ul><li><b>value</b> - (required) the value of a cell</li><li><b>row</b> - (required) an object with all cells in a row</li><li><b>col</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li></ul>Returning <code>false</code> from the function will block showing of the tooltip</td>
+            <td>(optional) a function which returns a template for the content of the tooltip. Takes 3 parameters:<ul><li><b>value</b> - (required) the value of a cell</li><li><b>row</b> - (required) an object with all cells in a row</li><li><b>column</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li></ul>Returning <code>false</code> from the function will block showing of the tooltip</td>
         </tr>
     </tbody>
 </table>
