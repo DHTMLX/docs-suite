@@ -8,16 +8,18 @@ description: You can explore the beforeColumnShow event of TreeGrid in the docum
 
 @short: fires before a column is shown on a page
 
-@signature: {'beforeColumnShow: (col: object) => boolean | void;'}
+@signature: {'beforeColumnShow: (column: object) => boolean | void;'}
 
 @params:
-- `col: object` - an object with a column configuration
+The callback of the event is called with the following parameter:
+
+- `column: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent a column from being shown; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeColumnShow", function(column){
+treegrid.events.on("beforeColumnShow", (column) => {
     // your logic here
     return false;
 });

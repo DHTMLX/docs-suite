@@ -8,14 +8,16 @@ description: You can explore the headerCellRightClick event of TreeGrid in the d
 
 @short: fires on right click on a grid header cell
 
-@signature: {'headerCellRightClick: (col: object, e: MouseEvent) => void;'}
+@signature: {'headerCellRightClick: (column: object, event: MouseEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("headerCellRightClick", function(column,e){
+grid.events.on("headerCellRightClick", (column, event) => {
     // your logic here
 });
 

@@ -8,18 +8,20 @@ description: You can explore the beforeRowResize event of TreeGrid in the docume
 
 @short: fires before the height of a row is changed
 
-@signature: beforeRowResize: (row: object, events: Event, currentHeight: number) => boolean | void;
+@signature: beforeRowResize: (row: object, event: Event, currentHeight: number) => boolean | void;
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
-- `events: Event` - a native event object
+- `event: Event` - a native event object
 - `currentHeight: number` - the current height of the row
 
 @returns:
 Return `false` to block resizing of a row; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeRowResize", function(row, events, currentHeight) {
+treegrid.events.on("beforeRowResize", (row, event, currentHeight) => {
     console.log("Current row height:", currentHeight);
     return true;
 });

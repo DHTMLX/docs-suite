@@ -486,7 +486,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     eventHandlers: { 
         onmouseover: { 
             cell__html: function(event, data) { 
-                console.log(JSON.stringify(data.col, null, 2)); 
+                console.log(JSON.stringify(data.column, null, 2)); 
             } 
         }
     } 
@@ -528,7 +528,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
             "dhx_checkbox--check-all": function(event, data) {
                 treeGrid.data.forEach(row => {
                     treeGrid.data.update(row.id, {
-                        [data.col.id]: event.target.checked,
+                        [data.column.id]: event.target.checked,
                     });
                 });
             }
@@ -743,7 +743,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     id: "select_example",
     header: [{ text: "Select example" }],
     editorType: "select",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
 },
 ~~~
 
@@ -788,7 +788,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     header: [{ text: "Multiselect example" }],
     type: "string",
     editorType: "multiselect",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
     minWidth: 360
 },
 ~~~

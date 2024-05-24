@@ -14,7 +14,7 @@ description: You can explore the hideColumn method of TreeGrid in the documentat
 - `colId: string | number` - the id of a column
 
 @example:
-grid.hideColumn(col);
+grid.hideColumn(colId);
 
 @descr:
 

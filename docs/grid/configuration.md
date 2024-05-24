@@ -464,7 +464,7 @@ const grid = new dhx.Grid("grid_container", {
     eventHandlers: {
         onclick: {
             cell__html: function(event, data) {
-                console.log(JSON.stringify(data.col, null, 2));
+                console.log(JSON.stringify(data.column, null, 2));
             },
         },
         onmouseover: {
@@ -511,7 +511,7 @@ const grid = new dhx.Grid("grid", {
             "dhx_checkbox--check-all": function(event, data) {
                 grid.data.forEach(row => {
                     grid.data.update(row.id, {
-                        [data.col.id]: event.target.checked,
+                        [data.column.id]: event.target.checked,
                     });
                 });
             }
@@ -733,7 +733,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     id: "select_example",
     header: [{ text: "Select example" }],
     editorType: "select",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
 },
 ~~~
 
@@ -778,7 +778,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     header: [{ text: "Multiselect example" }],
     type: "string",
     editorType: "multiselect",
-    options: (col, row) => getCurrentOptions(row), 
+    options: (column, row) => getCurrentOptions(row), 
     minWidth: 360
 },
 ~~~
@@ -849,7 +849,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     id: "combobox_example",
     header: [{ text: "Combobox example" }],
     editorType: "combobox",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
     minWidth: 160
 },
 ~~~

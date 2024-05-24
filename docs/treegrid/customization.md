@@ -239,7 +239,7 @@ It is easy to style necessary cells using the [addCellCss()](treegrid/api/treegr
 			<td>(<i>string|number</i>) the id of a row</td>
 		</tr>
 		<tr>
-			<td><b>col</b></td>
+			<td><b>column</b></td>
 			<td>(<i>string|number</i>) the id of a column</td>
 		</tr>
 		<tr>
@@ -286,7 +286,7 @@ You can mark particular cells in a treegrid using the **mark** property of a col
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td><b>col</b></td>
+			<td><b>column</b></td>
 			<td>(<i>object</i>) the config of a column (see the columns config)</td>
 		</tr>
     </tbody>
@@ -316,7 +316,7 @@ The function should return a string with a cusotm CSS class for your mark.
 					{ text: "Price" }
 				],
 				// marks specified cells in a column
-				mark: function (cell, data, row, col) {
+				mark: function (cell, data, row, column) {
 					return cell > 10 ? "my_custom_mark" : "" 
 				}
 			},
@@ -406,7 +406,7 @@ It is possible to customize the content of cells of TreeGrid via the **template*
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td><b>col</b></td>
+			<td><b>column</b></td>
 			<td>(<i>object</i>) the config of a column</td>
 		</tr>
     </tbody>
@@ -422,7 +422,7 @@ const treeGrid = new dhx.TreeGrid("treegrid_container", {
 				 { text: "Terms and conditions", colspan: 2 },
 				  { text: "Price" }
 			],
-			template: function (text, row, col) {
+			template: function (text, row, column) {
 				return text?"$ "+text :"";
 			}
 		},
@@ -446,7 +446,7 @@ const treeGrid = new dhx.TreeGrid("treegrid_container", {
 			width: 160, id: "price", type: "string", 
             header: [{ text: "Terms and conditions", colspan: 2 }, { text: "Price" }],
 			htmlEnable: true,
-			template: function (text, row, col) {
+			template: function (text, row, column) {
 				return text ? "<div class='cell__template'>$ " + text + "</div>" : "";
 			}
 		},
@@ -482,7 +482,7 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 			<td>(<i>object</i>) an object with all cells in a row</td>
 		</tr>
 		<tr>
-			<td><b>col</b></td>
+			<td><b>column</b></td>
 			<td>(<i>object</i>) the config of a column</td>
 		</tr>
     </tbody>
@@ -490,7 +490,7 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
 <br>
 
 ~~~js {1-9,15,19}
-function rowDataTemplate(value, row, col) {
+function rowDataTemplate(value, row, column) {
     if (!value) {
         return;
     }

@@ -11,13 +11,14 @@ description: You can explore the beforeCollapse event of TreeGrid in the documen
 @signature: {'beforeCollapse: (rowId: string | number) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameter:
 - `rowId: string | number` - the id of a collapsed row
 
 @returns:
 Return `false` to block collapsing of a treegrid; otherwise, `true`.
 
 @example:
-treeGrid.events.on("beforeCollapse", function(rowId) {
+treeGrid.events.on("beforeCollapse", (rowId) => {
     // your logic here
     return false;
 });

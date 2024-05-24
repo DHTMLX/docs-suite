@@ -24,7 +24,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
     ],
-    rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
+    rowCss: (row) => { return row.custom ? "my_custom_row" : "" },
     data: dataset
 });
 

@@ -8,21 +8,22 @@ description: You can explore the beforeRowDrop event of TreeGrid in the document
 
 @short: fires before the user has finished dragging and released the mouse button over a target row
 
-@signature: {'beforeRowDrop: (data: object, events: MouseEvent) => void | boolean;'}
+@signature: {'beforeRowDrop: (data: object, event: MouseEvent) => void | boolean;'}
 
 @params:
-- `data: object` - data object. It contains the following parameters:
+The callback of the event is called with the following parameters:
+
+- `data: object` - data object. It contains the following properties:
     - `start: string | number` - the id of a row, from which the dragging process has started
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
-- `events: MouseEvent` - a native HTML event object
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @returns:
 Return `false` to block the default action; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeRowDrop", function(data, events){
+treegrid.events.on("beforeRowDrop", (data, event) => {
     // your logic here
     return false;
 });

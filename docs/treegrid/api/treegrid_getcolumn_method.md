@@ -18,7 +18,7 @@ An object with attributes of a column.
 
 @example:
 const column = treegrid.getColumn("b"); // ->
-// {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
+// { width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string" }
 
 @descr:
 

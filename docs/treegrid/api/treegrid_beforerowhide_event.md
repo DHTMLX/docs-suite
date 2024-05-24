@@ -11,13 +11,15 @@ description: You can explore the beforeRowHide event of TreeGrid in the document
 @signature: {'beforeRowHide: (row: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
 
 @returns:
 Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeRowHide", function(row){
+treegrid.events.on("beforeRowHide", (row) => {
     // your logic here
     return false;
 });

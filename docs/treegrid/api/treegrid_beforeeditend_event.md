@@ -8,18 +8,20 @@ description: You can explore the beforeEditEnd event of TreeGrid in the document
 
 @short: fires before editing of a cell is ended
 
-@signature: {'beforeEditEnd: (value: string | number | boolean, row: object, col: object) => boolean | void;'}
+@signature: {'beforeEditEnd: (value: string | number | boolean, row: object, column: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `value: string | number | boolean` - the new value of a cell
 - `row: object` - an object with a row configuration
-- `col: object` - an object with a column configuration
+- `column: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent closing of an editor; otherwise, `true`.
 
 @example:
-grid.events.on("beforeEditEnd", function(value,row,column){
+grid.events.on("beforeEditEnd", (value, row, column) => {
     // your logic here
     return false;
 });
