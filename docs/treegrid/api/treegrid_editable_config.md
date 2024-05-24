@@ -14,11 +14,11 @@ description: You can explore the editable config of TreeGrid in the documentatio
 
 @example:
 const treegrid = new dhx.TreeGrid("treegrid_container", {
-	columns: [ 
-		// columns config
-	], 
-	editable:true,
-	data: dataset
+    columns: [ 
+        // columns config
+    ], 
+    editable:true,
+    data: dataset
 });
 
 @descr:

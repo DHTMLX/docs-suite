@@ -15,10 +15,10 @@ description: You can explore the updateFromResponse config of Uploader in the do
 @example:
 const vault = new dhx.Vault("vault_container", { 
     uploader:{
-    	// obligatory, the path for upload
-    	target:"/upload"
-    	updateFromResponse:false
-   	}
+        // obligatory, the path for upload
+        target:"/upload"
+        updateFromResponse:false
+       }
 });
 
 @descr:

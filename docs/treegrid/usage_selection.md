@@ -27,15 +27,15 @@ treegrid.selection.disable();
 To set selection to a particular cell, make use of the [setCell()](treegrid/api/selection/selection_setcell_method.md) method of the selection object. The method takes the following parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>object</i>) an object with a cell to be selected</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>object</i>) an object with a cell to be selected</td>
+        </tr>
         <tr>
-			<td><b>column</b></td>
-			<td>(<i>object</i>) the config of a column</td>
-		</tr>
+            <td><b>column</b></td>
+            <td>(<i>object</i>) the config of a column</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -56,15 +56,15 @@ To make the process of selecting a cell more flexible, you can apply the related
 Starting from v7.0, you can remove selection from a selected cell/row or from highlighted cells/rows using the [](treegrid/api/selection/selection_removecell_method.md) method of the selection object. The method takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>rowId</b></td>
-			<td>(<i>string|number</i>) optional, the id of a row</td>
-		</tr>
+            <td><b>rowId</b></td>
+            <td>(<i>string|number</i>) optional, the id of a row</td>
+        </tr>
         <tr>
-			<td><b>colId</b></td>
-			<td>(<i>string|number</i>) optional, the id of a column</td>
-		</tr>
+            <td><b>colId</b></td>
+            <td>(<i>string|number</i>) optional, the id of a column</td>
+        </tr>
     </tbody>
 </table>
 <br/>

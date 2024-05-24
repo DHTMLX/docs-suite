@@ -10,26 +10,26 @@ description: You can explore the Separator properties of Sidebar in the document
 
 ~~~js
 const data = [
-	{
-		type: "separator",
-		id?: string | number,
+    {
+        type: "separator",
+        id?: string | number,
     },
-	// more Sidebar controls
+    // more Sidebar controls
 ]
 ~~~
 
 ### Description
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>type</b></td>
-			<td>(required) the item type, set it to "separator". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td><b>id</b></td>
-			<td>(optional) the id of a control, auto-generated if not set</td>
-		</tr>
+            <td><b>type</b></td>
+            <td>(required) the item type, set it to "separator". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+        </tr>
+        <tr>
+            <td><b>id</b></td>
+            <td>(optional) the id of a control, auto-generated if not set</td>
+        </tr>
     </tbody>
 </table>
 

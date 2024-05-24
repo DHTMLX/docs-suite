@@ -15,10 +15,10 @@ description: You can explore the autosend config of Uploader in the documentatio
 @example:
 const vault = new dhx.Vault("vault_container", { 
     uploader:{
-    	// obligatory, the path for upload
-    	target:"/upload"
-    	autosend:false
-   	}
+        // obligatory, the path for upload
+        target:"/upload"
+        autosend:false
+       }
 });
 
 @descr:
