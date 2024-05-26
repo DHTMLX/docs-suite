@@ -75,10 +75,10 @@ The **load** method loads the sidebar data from an external JSON file. All the d
 
 ~~~js
 sidebar.data.load("[path to this file]/file.json");
-~~~	
+~~~    
 
 **Related sample**: [Sidebar. Initialization with data.load()](https://snippet.dhtmlx.com/mq4ggjmm)
-	
+    
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
@@ -116,9 +116,9 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // common
 [
-	{id: "item_a", type: "menuItem", ...},
-	{id: "item_b", type: "input", ...},
-	{id: "item_c", type: "title", ...}
+    {id: "item_a", type: "menuItem", ...},
+    {id: "item_b", type: "input", ...},
+    {id: "item_c", type: "title", ...}
 ]
 ~~~
 
@@ -127,8 +127,8 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // custom HTML button
 {
-	id: "custom_html",
-	type: "customHTML",
+    id: "custom_html",
+    type: "customHTML",
     html:"<div style='height:30px; border: 2px solid'>My HTML button</div>"
 }
 ~~~
@@ -140,8 +140,8 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // menuItem
 {
-	type:"menuItem", 
-	value:"Some",
+    type:"menuItem", 
+    value:"Some",
     icon:"dxi dxi-menu-right"
 }
 ~~~
@@ -167,8 +167,8 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // separator
 {
-	id:	 	"sepId",		
-	type:   "separator"	 	
+    id:         "sepId",        
+    type:   "separator"         
 }
 ~~~
 
@@ -179,8 +179,8 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // spacer
 {
-	id:	 	"spacerId",	  	
-	type:   "spacer"		
+    id:         "spacerId",          
+    type:   "spacer"        
 }
 ~~~
 
@@ -191,10 +191,10 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // title
 {
-	id:		 	"collection",		
-	type:	   	"title", 				
-	value:	  	"Music",				
-	tooltip:	"Current collection"	
+    id:             "collection",        
+    type:           "title",                 
+    value:          "Music",                
+    tooltip:    "Current collection"    
 }
 ~~~
 

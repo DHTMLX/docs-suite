@@ -15,20 +15,20 @@ description: You can explore the css config of Sidebar in the documentation of t
 
 ~~~html
 <style>
-	.custom,.custom--popup-menu {
-		--dhx-background-primary: #3A434A;
-		--dhx-background-secondary: #5a6872;
-		--dhx-background-additional: #5a6872;
-		--dhx-s-toolbar-background: var(--dhx-background-primary);
+    .custom,.custom--popup-menu {
+        --dhx-background-primary: #3A434A;
+        --dhx-background-secondary: #5a6872;
+        --dhx-background-additional: #5a6872;
+        --dhx-s-toolbar-background: var(--dhx-background-primary);
 
-		--dhx-color-primary: #118d8d;
-		--dhx-color-primary-hover: #49e9e9;
-		--dhx-color-primary-active: #49e9e9;
+        --dhx-color-primary: #118d8d;
+        --dhx-color-primary-hover: #49e9e9;
+        --dhx-color-primary-active: #49e9e9;
 
-		--dhx-font-color-primary: #fff;
-		--dhx-font-color-secondary: rgba(255, 255, 255, 0.75);
-		--dhx-font-color-additional: #fff;
-	}
+        --dhx-font-color-primary: #fff;
+        --dhx-font-color-secondary: rgba(255, 255, 255, 0.75);
+        --dhx-font-color-additional: #fff;
+    }
 </style>
 
 <script>

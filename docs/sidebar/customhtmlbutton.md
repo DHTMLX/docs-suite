@@ -18,18 +18,18 @@ Any custom HTML content can be easily added to a sidebar with the help of the **
 
 ~~~js
 sidebar.data.add({
-	type: "customHTML",
-	id: "userInfo",
-	css: "user-info_item",
-	html: "<div class='user-info_container'>" +
-			"<img class='user-info_avatar' src='../common/ava.png'/>" +
-			"<div class='user-info_title'>" +
-			"Gloria McKinney"+
-			"</div>" +
-			"<div class='user-info_contact'>" +
-			"@gmckinney" +
-			"</div>" +
-			"</div>"
+    type: "customHTML",
+    id: "userInfo",
+    css: "user-info_item",
+    html: "<div class='user-info_container'>" +
+            "<img class='user-info_avatar' src='../common/ava.png'/>" +
+            "<div class='user-info_title'>" +
+            "Gloria McKinney"+
+            "</div>" +
+            "<div class='user-info_contact'>" +
+            "@gmckinney" +
+            "</div>" +
+            "</div>"
 });
 ~~~
 

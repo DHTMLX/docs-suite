@@ -16,7 +16,7 @@ A new Spacer can be created with the help of the **add()** method of Tree Collec
 
 ~~~js
 sidebar.data.add({
-	type:"spacer"
+    type:"spacer"
 });
 ~~~
 

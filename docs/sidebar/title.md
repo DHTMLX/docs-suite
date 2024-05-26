@@ -17,7 +17,7 @@ A Title control can be added to a sidebar with the help of the **add()** method 
 ~~~js
 sidebar.data.add({
     type: "title",
-	value: "APP NAME"
+    value: "APP NAME"
 });
 ~~~
 

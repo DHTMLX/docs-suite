@@ -15,9 +15,9 @@ description: You can explore the fieldName config of Uploader in the documentati
 @example:
 const vault = new dhx.Vault("vault_container", { 
     uploader:{
-    	// obligatory, the path for upload
-    	target:"/upload"
-    	fieldName:"document"
+        // obligatory, the path for upload
+        target:"/upload"
+        fieldName:"document"
     }
 });
 

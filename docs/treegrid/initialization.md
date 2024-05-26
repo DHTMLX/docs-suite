@@ -29,19 +29,19 @@ To initialize DHTMLX TreeGrid on a page, you need to take the following simple s
         <link rel="stylesheet" href="../../codebase/treegrid.css">
     </head>
     <body>
-    	<div id="treegrid_container" style="height: 100%; width: 100%"></div>
+        <div id="treegrid_container" style="height: 100%; width: 100%"></div>
         <script>
             // creating DHTMLX TreeGrid 
             const treegrid = new dhx.TreeGrid("treegrid_container", {
-    			columns: [
-        			{ width: 100, id: "a", header: [{ text: "#" }] },
-        			{ width: 100, id: "b", header: [{ text: "Title" }] },
-        			{ width: 200, id: "c", header: [{ text: "Name" }] },
-        			{ width: 200, id: "d", header: [{ text: "Address" }] }
-    			],
-    			headerRowHeight: 50,
-    			data: dataset
-			});
+                columns: [
+                    { width: 100, id: "a", header: [{ text: "#" }] },
+                    { width: 100, id: "b", header: [{ text: "Title" }] },
+                    { width: 200, id: "c", header: [{ text: "Name" }] },
+                    { width: 200, id: "d", header: [{ text: "Address" }] }
+                ],
+                headerRowHeight: 50,
+                data: dataset
+            });
         </script>
     </body>
 </html>

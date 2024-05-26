@@ -10,26 +10,26 @@ description: You can explore the Spacer properties of Sidebar in the documentati
 
 ~~~js
 const data = [
-	{
-		type: "spacer",
-		id?: string | number,
+    {
+        type: "spacer",
+        id?: string | number,
     },
-	// more Sidebar controls
+    // more Sidebar controls
 ]
 ~~~
 
 ### Description
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>type</b></td>
-			<td>(required) the type of a control, set it to "spacer". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
-		</tr>
-		<tr>
-			<td><b>id</b></td>
-			<td>(optional) the id of a control, auto-generated if not set</td>
-		</tr>
+            <td><b>type</b></td>
+            <td>(required) the type of a control, set it to "spacer". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+        </tr>
+        <tr>
+            <td><b>id</b></td>
+            <td>(optional) the id of a control, auto-generated if not set</td>
+        </tr>
     </tbody>
 </table>
 
