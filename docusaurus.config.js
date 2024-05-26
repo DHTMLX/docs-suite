@@ -131,35 +131,12 @@ module.exports = {
     baseUrl: '/suite/',
     onBrokenLinks: 'warn',
     onBrokenMarkdownLinks: 'warn',
+    onBrokenAnchors: 'warn',
     favicon: 'img/favicon.ico',
     organizationName: 'DHTMLX', // Usually your GitHub org/user name
     projectName: 'docs-suite', // Usually your repo name
     trailingSlash: true,
     themeConfig: {
-        /*colorMode: {
-            // "light" | "dark"
-            defaultMode: 'light',
-
-            // Hides the switch in the navbar
-            // Useful if you want to support a single color mode
-            disableSwitch: false,
-
-            // Should we use the prefers-color-scheme media-query,
-            // using user system preferences, instead of the hardcoded defaultMode
-            respectPrefersColorScheme: true,
-
-            // Dark/light switch icon options
-            switchConfig: {
-                darkIcon: '🌙',
-                darkIconStyle: {
-                    marginLeft: '0px',
-                },
-                lightIcon: '☀️',
-                lightIconStyle: {
-                    marginLeft: '0px',
-                },
-            },
-        },*/
         algolia: {
             // This is a read-only, search-only key served directly by the front-end, managed by Algolia via their
             // free DocSearch program. The key is not sensitive. See https://docsearch.algolia.com/ for more details.
@@ -184,13 +161,12 @@ module.exports = {
             logo: {
                 alt: 'DHTMLX Suite Documentation',
                 src: 'img/dhtmlx_logo.svg',
-                href: 'https://docs.dhtmlx.com/',
-
+                href: 'https://docs.dhtmlx.com/'
             },
             items: [{
                     label: 'Examples',
                     href: 'https://snippet.dhtmlx.com',
-                    position: 'right',
+                    position: 'right'
                 },
                 {
                     label: 'Forum',
@@ -200,84 +176,84 @@ module.exports = {
                 {
                     label: 'Support',
                     href: 'https://dhtmlx.com/docs/technical-support.shtml',
-                    position: 'right',
+                    position: 'right'
                 },
                 {
                     label: 'Download',
                     href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml',
-                    position: 'right',
-                },
-            ],
+                    position: 'right'
+                }
+            ]
         },
         footer: {
             style: 'dark',
-            links: [{
+            links: [
+                {
                     title: 'Development center',
                     items: [{
                             label: 'Download Suite',
                             href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml',
-                            position: 'right',
+                            position: 'right'
                         },
                         {
                             label: 'Examples',
                             href: 'https://snippet.dhtmlx.com',
-                            position: 'right',
+                            position: 'right'
                         },
                         {
                             label: 'Blog',
-                            href: 'https://dhtmlx.com/blog/',
+                            href: 'https://dhtmlx.com/blog/'
                         },
                         {
                             label: 'Forum',
                             href: 'https://forum.dhtmlx.com/c/suite/suite7/',
                             position: 'right'
-                        },
-                    ],
+                        }
+                    ]
                 },
                 {
                     title: 'Community',
                     items: [{
                             label: 'GitHub',
-                            href: 'https://github.com/DHTMLX',
+                            href: 'https://github.com/DHTMLX'
                         },
-
                         {
                             label: 'Youtube',
-                            href: 'https://www.youtube.com/user/dhtmlx',
+                            href: 'https://www.youtube.com/user/dhtmlx'
                         },
                         {
                             label: 'Facebook',
-                            href: 'https://www.facebook.com/dhtmlx',
+                            href: 'https://www.facebook.com/dhtmlx'
                         },
                         {
                             label: 'Twitter',
-                            href: 'https://twitter.com/dhtmlx',
+                            href: 'https://twitter.com/dhtmlx'
                         },
                         {
                             label: 'Linkedin',
-                            href: 'https://www.linkedin.com/groups/3345009/',
-                        },
-
-                    ],
+                            href: 'https://www.linkedin.com/groups/3345009/'
+                        }
+                    ]
                 },
                 {
                     title: 'Company',
-                    items: [{
+                    items: [
+                        {
                             label: 'About us',
-                            href: 'https://dhtmlx.com/docs/company.shtml',
+                            href: 'https://dhtmlx.com/docs/company.shtml'
                         },
                         {
                             label: 'Contact us',
-                            href: 'https://dhtmlx.com/docs/contact.shtml',
+                            href: 'https://dhtmlx.com/docs/contact.shtml'
                         },
                         {
                             label: 'Licensing',
-                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#licensing',
-                        },
-                    ],
-                },
-            ],
-        },
+                            href: 'https://dhtmlx.com/docs/products/dhtmlxSuite/#licensing'
+                        }
+                    ]
+                }
+            ]
+        }
     },
     presets: [
         [
@@ -287,23 +263,17 @@ module.exports = {
                     sidebarPath: require.resolve('./sidebars.js'),
                     // Please change this to your repo.
                     editUrl: 'https://github.com/DHTMLX/docs-suite/edit/master/',
-                    routeBasePath: '/',
+                    routeBasePath: '/'
                 },
-                // blog: {
-                //     showReadingTime: true,
-                //     // Please change this to your repo.
-                //     editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-                // },
                 theme: {
-                    customCss: require.resolve('./src/css/custom.css'),
+                    customCss: require.resolve('./src/css/custom.css')
                 },
                 sitemap: {
                     changefreq: 'daily',
-                    priority: 0.5,
-                    
-                },
-            },
-        ],
+                    priority: 0.5
+                }
+            }
+        ]
     ],
     plugins: [
         'docusaurus-plugin-sass',
@@ -320,7 +290,7 @@ module.exports = {
         [
             require.resolve('docusaurus-gtm-plugin'),
             {
-              id: 'GTM-5M5RCSJ',
+              id: 'GTM-5M5RCSJ'
             }
         ]
     ]
