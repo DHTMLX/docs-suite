@@ -68,7 +68,7 @@ Initialize Sidebar with the `dhx.Sidebar` object constructor. The constructor ta
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
-	// config options
+    // config options
 });
 ~~~
 

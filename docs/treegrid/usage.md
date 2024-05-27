@@ -54,16 +54,16 @@ The return object includes the following attributes:
         </tr>
         <tr>
             <td><b>y</b></td>
-        	<td>(<i>number</i>) the Y coordinate of a cell</td>
-		</tr>
-		<tr>
-			<td><b>height</b></td>
-			<td>(<i>number</i>) the height of a cell</td>
-		</tr>
-		<tr>
-			<td><b>width</b></td>
-			<td>(<i>number</i>) the width of a cell</td>
-		</tr>
+            <td>(<i>number</i>) the Y coordinate of a cell</td>
+        </tr>
+        <tr>
+            <td><b>height</b></td>
+            <td>(<i>number</i>) the height of a cell</td>
+        </tr>
+        <tr>
+            <td><b>width</b></td>
+            <td>(<i>number</i>) the width of a cell</td>
+        </tr>
     </tbody>
 </table>
 
@@ -133,7 +133,7 @@ treegrid.data.add({
     "cover": "Paperback",
     "ships": "24 hours",
     "inStock": "3 <input type='checkbox' checked />",
-	"parent": "c.3"
+    "parent": "c.3"
 });
 ~~~
 
@@ -206,31 +206,31 @@ treegrid.addSpan({
 These are possible fields of a span object:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string|number</i>) mandatory, the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>column</b></td>
-			<td>(<i>string|number</i>) mandatory, the id of a column</td>
-		</tr>
-		<tr>
-			<td><b>rowspan</b></td>
-			<td>(<i>number</i>) optional, the number of rows in a span</td>
-		</tr>
-		<tr>
-			<td><b>colspan</b></td>
-			<td>(<i>number</i>) optional, the number of columns in a span</td>
-		</tr>
-		<tr>
-			<td><b>text</b></td>
-			<td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
-		</tr>
-		<tr>
-			<td><b>css</b></td>
-			<td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string|number</i>) mandatory, the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>column</b></td>
+            <td>(<i>string|number</i>) mandatory, the id of a column</td>
+        </tr>
+        <tr>
+            <td><b>rowspan</b></td>
+            <td>(<i>number</i>) optional, the number of rows in a span</td>
+        </tr>
+        <tr>
+            <td><b>colspan</b></td>
+            <td>(<i>number</i>) optional, the number of columns in a span</td>
+        </tr>
+        <tr>
+            <td><b>text</b></td>
+            <td>(<i>string|number</i>) optional, the text in a spanned row/column</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) optional, the name of the CSS class that will be applied to a span</td>
+        </tr>
     </tbody>
 </table>
 
@@ -279,15 +279,15 @@ You can pass a function with a rule of grouping data in the treegrid as a parame
 
 ~~~js
 treegrid.groupBy(function (item) {
-	if (!item.area || item.area < 0) {
-		return "N.A.";
-	}
-	if (item.area < 25000) {
-		return "Small";
-	} else if (item.area < 60000) {
-		return "Medium";
-	}
-	return "Big";
+    if (!item.area || item.area < 0) {
+        return "N.A.";
+    }
+    if (item.area < 25000) {
+        return "Small";
+    } else if (item.area < 60000) {
+        return "Medium";
+    }
+    return "Big";
 });
 ~~~
 
@@ -300,15 +300,15 @@ If necessary, you can set a template to the title of the group via the [](treegr
 You can filter grid data by the specified criteria with the help of the `filter()` method of data collection. The method takes as a parameter an object with the properties described below:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>rule</b></td>
-			<td>(<i>function | object</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol></li></ul></td>
-		</tr>
+            <td><b>rule</b></td>
+            <td>(<i>function | object</i>) the filtering criteria. It can be:<ul><li>a filtering function. It takes as a parameter a data item and returns <i>true/false</i></li>or:<li>an object with the following attributes:<br/>- <b>by</b> - (<i>string | number</i>) mandatory, the id of a column<br/>- <b>match</b> - (<i>string</i>) mandatory, a pattern to match <br/>- <b>compare</b> - (<i>function</i>) a function for extended filtering that takes three parameters:<ol>- <b>value</b> - the value to compare (e.g. a column in a row) </ol><ol>- <b>match</b> - a pattern to match </ol><ol>- <b>item</b> - a data item the values of which should be compared (e.g. a row) </ol></li></ul></td>
+        </tr>
         <tr>
-			<td><b>config</b></td>
-			<td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>type</b> (<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</li><li><b>level</b> (<i>number</i>) optional, the level the filtering will be applied to</li><li><b>add</b> (<i>boolean</i>) optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>id</b> (<i>string</i>) optional, the id of the filter</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
-		</tr>
+            <td><b>config</b></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>type</b> (<i>string</i>) optional, defines the area the filtering will be applied: "all", "level", "leafs"</li><li><b>level</b> (<i>number</i>) optional, the level the filtering will be applied to</li><li><b>add</b> (<i>boolean</i>) optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>id</b> (<i>string</i>) optional, the id of the filter</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -324,13 +324,13 @@ treegrid.data.filter({ by:"b", match:"Tyro" });
 
 // filtering data by several criteria at once
 treegrid.data.filter({
-	by:"b",
+    by:"b",
     compare:function(val,match,item){
-		if(item.a!=="Some"){
-			return val === "New"
-		}
-		return false;
-	}
+        if(item.a!=="Some"){
+            return val === "New"
+        }
+        return false;
+    }
 });
 ~~~
 
@@ -343,28 +343,28 @@ treegrid.data.filter({
 It is possible to sort data in the grid via the `sort()` method of data collection. The method takes an object with the following attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>by</b></td>
-			<td>(<i>string | number</i>) the id of a column</td>
-		</tr>
-		<tr>
-			<td><b>dir</b></td>
-			<td>(<i>string</i>) the direction of sorting "asc" or "desc"</td>
-		</tr>
-		<tr>
-			<td><b>as</b></td>
-			<td>(<i>function</i>) a function that specifies the type to sort data as</td>
-		</tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a column</td>
+        </tr>
+        <tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the direction of sorting "asc" or "desc"</td>
+        </tr>
+        <tr>
+            <td><b>as</b></td>
+            <td>(<i>function</i>) a function that specifies the type to sort data as</td>
+        </tr>
     </tbody>
 </table>
 <br/>
 
 ~~~js
 treeGrid.data.sort({
-	by: "price",
-	dir: "asc",
-	as: function (value) { return value ? value : "" }
+    by: "price",
+    dir: "asc",
+    as: function (value) { return value ? value : "" }
 });
 ~~~
 
@@ -382,7 +382,7 @@ You can also specify the **rule** attribute in a passed object instead of the de
 
 ~~~js
 treegrid.data.sort({
-	rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
+    rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
 });
 ~~~
 
@@ -391,15 +391,15 @@ treegrid.data.sort({
 To get the current state of sorting data in TreeGrid, use the [](treegrid/api/treegrid_getsortingstate_method.md) method. The method returns an object with two attributes:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>dir</b></td>
-			<td>(<i>string</i>) the sorting direction (desc, asc)</td>
-		</tr>
-		<tr>
-			<td><b>by</b></td>
-			<td>(<i>string | number</i>)the id of a column that the treegrid is sorted by</td>
-		</tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the sorting direction (desc, asc)</td>
+        </tr>
+        <tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>)the id of a column that the treegrid is sorted by</td>
+        </tr>
     </tbody>
 </table>
 <br/>
@@ -416,19 +416,19 @@ const state = treegrid.getSortingState();
 You can easily edit the desired cell of a treegrid with the help of the [](treegrid/api/treegrid_editcell_method.md) method. It takes two parameters:
 
 <table>
-	<tbody>
+    <tbody>
         <tr>
-			<td><b>row</b></td>
-			<td>(<i>string, number</i>) the id of a row</td>
-		</tr>
-		<tr>
-			<td><b>column</b></td>
-			<td>(<i>string, number</i>) the id of a column</td>
-		</tr>
-		<tr>
-			<td><b>editorType</b></td>
-			<td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"|"multiselect"</td>
-		</tr>
+            <td><b>row</b></td>
+            <td>(<i>string, number</i>) the id of a row</td>
+        </tr>
+        <tr>
+            <td><b>col</b></td>
+            <td>(<i>string, number</i>) the id of a column</td>
+        </tr>
+        <tr>
+            <td><b>editorType</b></td>
+            <td>(<i>string</i>) optional, the type of an editor used in a cell: "input"|"select"|"datePicker"|"checkbox"|"combobox"|"textarea"|"multiselect"</td>
+        </tr>
     </tbody>
 </table>
 
@@ -462,7 +462,7 @@ DHTMLX TreeGrid provides the possibility to export data from TreeGrid into an Ex
 
 ~~~js
 treegrid.export.xlsx({
-	url: "//export.dhtmlx.com/excel"
+    url: "//export.dhtmlx.com/excel"
 });
 ~~~
 
@@ -474,7 +474,7 @@ You can export data from TreeGrid to the CSV format with the [`csv()`](treegrid/
 
 ~~~js
 treegrid.export.csv({
-	name:"treegrid_data", // data will be exported to a CSV file named "treegrid_data"
+    name:"treegrid_data", // data will be exported to a CSV file named "treegrid_data"
     rowDelimiter: "\t", // the tab delimiter will be used to separate rows
     columnDelimiter: ";" // the semicolon delimiter will be used to separate columns
 });

@@ -13,17 +13,17 @@ description: You can explore the data config of Sidebar in the documentation of 
 @example:
 const sidebar = dhx.Sidebar("sidebar_container", {
     data: [
-    	{
-			"id": "dashboard",
+        {
+            "id": "dashboard",
             "value": "Dashboard",
             "icon": "mdi mdi-view-dashboard"
-		},
-		{
-        	"id": "statistics",
-        	"value": "Statistics",
-        	"icon": "mdi mdi-chart-line"
-		}
-	]
+        },
+        {
+            "id": "statistics",
+            "value": "Statistics",
+            "icon": "mdi mdi-chart-line"
+        }
+    ]
 });
 
 @descr:

@@ -12,8 +12,8 @@ To initialize a sidebar in the collapsed state, make use of the [](sidebar/api/s
 
 ~~~js
 const sidebar = new dhx.Sidebar("sidebar_container", {
-	css: "dhx_widget--border_right",
-	collapsed: true
+    css: "dhx_widget--border_right",
+    collapsed: true
 });
 ~~~
 
