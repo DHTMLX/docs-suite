@@ -15,9 +15,9 @@ description: You can explore the singleRequest config of Uploader in the documen
 @example:
 const vault = new dhx.Vault("vault_container", { 
     uploader:{
-    	// obligatory, the path for upload
-    	target:"/upload"
-    	singleRequest:true
+        // obligatory, the path for upload
+        target:"/upload"
+        singleRequest:true
     }
 });
 

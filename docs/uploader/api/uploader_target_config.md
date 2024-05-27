@@ -12,8 +12,8 @@ description: You can explore the target config of Uploader in the documentation 
 
 @example:
 const vault = new dhx.Vault("vault_container", { 
-    uploader:{	
-    	target:"/upload"
+    uploader:{    
+        target:"/upload"
     }
 });
 

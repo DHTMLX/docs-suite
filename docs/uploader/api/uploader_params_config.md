@@ -12,12 +12,12 @@ description: You can explore the params config of Uploader in the documentation 
 
 @example:
 const vault = new dhx.Vault("vault_container", { 
-	uploader:{
-    	// obligatory, the path for upload
-    	target:"/upload"
-		params:{
-        	// key:value pairs
-    	}
+    uploader:{
+        // obligatory, the path for upload
+        target:"/upload"
+        params:{
+            // key:value pairs
+        }
     }
 });
 

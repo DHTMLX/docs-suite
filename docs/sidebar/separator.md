@@ -16,7 +16,7 @@ A new Separator can be created with the help of the **add()** method of Tree Col
 
 ~~~js
 sidebar.data.add({
-	type:"separator"
+    type:"separator"
 });
 ~~~
 
