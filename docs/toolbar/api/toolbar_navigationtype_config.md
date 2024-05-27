@@ -6,22 +6,24 @@ description: You can explore the navigationType config of Toolbar in the documen
 
 # navigationType
 
-@short: Optional. Defines the action that opens menu for the menuItem/navItem items
+@short: Optional. Defines the action that opens menu options
 
-@signature: {'navigationType?: "pointer" | "click";'}
+@signature: {'navigationType?: "click" | "pointer";'}
 
-@default: "click"
+@default: "pointer"
+
+:::info
+- `"click"` - displays the menu when a user clicks on it 
+- `"pointer"` - displays the menu when a user hovers the mouse pointer over it
+:::
 
 @example:
 const toolbar = new dhx.Toolbar("toolbar_container", {
-    navigationType: "pointer"
+    navigationType: "click"
 });
 
 @descr:
 
 **Related sample**: [Toolbar. Navigation type. Click or pointer (hover)](https://snippet.dhtmlx.com/co782d78)
 
-There are two types of navigation:
-
-- "pointer" - the menu is opened when a user hovers the mouse pointer over it
-- "click" - the menu is opened when a user clicks on it (used for mobile devices)
+@changelog: Added in v8.4

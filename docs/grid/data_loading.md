@@ -129,11 +129,12 @@ grid2.data.parse(state);
 ## Dynamic loading
 
 {{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+
 To enable dynamic data loading in Grid you need to:
 
-- initialize **lazyDataProxy** as described in the [Dynamic Loading](helpers/lazydataproxy.md) article
+- initialize `lazyDataProxy` as described in the [Dynamic Loading](helpers/lazydataproxy.md) article
 
-~~~js
+~~~jsx
 new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
     limit: 30,
     prepare: 5,
@@ -142,13 +143,15 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 });
 ~~~
 
-- load data into Grid via the **load()** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
+- load data into Grid via the `load()` method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
 
-~~~js
+~~~jsx
 const grid = new dhx.Grid("grid_container");
 grid.data.load(lazyDataProxy);
 ~~~
 
 **Related sample**: [External data lazy load](https://snippet.dhtmlx.com/grid_lazy_loading)
 
-{{note The **add**, **remove**, **copy**, **move**, **update**, **changeId**, **sort** and **filter** methods of Data Collection will not work until all data are loaded into Grid.}}
+:::info
+The `sort()` method of Data Collection will not work until all data are loaded into Grid. Note that for correct work of lazy loading, you should send all changes in Data Collection to the server at the proper time.
+:::

@@ -139,7 +139,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 - specify a template of displaying options in the drop-down list via the `template` configuration option
 
-The template for the data sorted in the above example may look like this:
+A template for the data sorted in the above example may look like this:
 
 ~~~js {2-11}
 const combo = new dhx.Combobox("combobox", {

@@ -11,7 +11,7 @@ description: You can explore the eventHandlers config of Combo Box in the docume
 ~~~js
 eventHandlers?: {
     [eventName: string]: {
-        [className: string]: (events: Event, id: string | number) => void | boolean; 
+        [className: string]: (event: Event, id: string | number) => void | boolean; 
     };
 };
 ~~~
@@ -75,7 +75,7 @@ eventHandlers: {
 }
 ~~~
 
-@changelog: added in v8.4
+@changelog: Added in v8.4
 
 
 
