@@ -10,7 +10,7 @@ description: You can explore the navigationType config of Toolbar in the documen
 
 @signature: {'navigationType?: "click" | "pointer";'}
 
-@default: "pointer"
+@default: "click"
 
 :::info
 - `"click"` - displays the menu when a user clicks on it 
@@ -19,7 +19,7 @@ description: You can explore the navigationType config of Toolbar in the documen
 
 @example:
 const toolbar = new dhx.Toolbar("toolbar_container", {
-    navigationType: "click"
+    navigationType: "pointer"
 });
 
 @descr:

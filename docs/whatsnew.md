@@ -11,20 +11,31 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.4 
 ------------------
 
-Released on April X, 2024
+Released on June X, 2024
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-8-4/" target="_blank">Review of the release on the blog</a>
 
 ### New functionality
 
-#### Toolbar
+#### Chart 
 
-- The ability to [expand items by hovering over Toolbar elements with the mouse pointer](toolbar/api/toolbar_navigationtype_config.md)
+- The ability to [specify a template for showing percent values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
 
 #### Combobox
 
 - The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
 - The possibility to [group options by using a custom function](combobox/customization.md#options-grouping)
+
+#### Toolbar
+
+- The ability to [expand items by hovering over Toolbar elements with the mouse pointer](toolbar/api/toolbar_navigationtype_config.md)
+
+### Updates
+
+#### Grid/TreeGrid
+
+- The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](grid/data_loading.md#dynamic-loading)
+- The ability to specify Grid/TreeGrid [tooltips](grid/configuration.md#tooltip) as objects with settings 
 
 ### Fixes
 

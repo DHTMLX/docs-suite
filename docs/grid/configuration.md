@@ -1653,9 +1653,32 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Hiding tooltips](https://snippet.dhtmlx.com/mq4t3t3w)
 
+The tooltip configuration option can be set as an object with the following properties:
+
+- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+- `margin` - (optional) the margin between the node and tooltip; *8px* by default
+- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
+- `css` - (optional) the style of a tooltip box
+
+~~~jsx {6-8}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    tooltip: {
+       force: true
+    }
+});
+~~~
+
+**Related sample**: [Grid. Tooltip config](https://snippet.dhtmlx.com/qpqnalyt)
+
 It is also possible to control the header and footer tooltips, independently. There are the [headerTooltip](grid/api/grid_headertooltip_config.md) and [footerTooltip](grid/api/grid_footertooltip_config.md) Grid configuration properties, that you can use for this purpose:
 
-~~~js
+~~~js {7-8}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -1666,6 +1689,8 @@ const grid = new dhx.Grid("grid_container", {
     footerTooltip: true, // Enable all footer tooltips
 });
 ~~~
+
+The headerTooltip and footerTooltip can be specified as objects the same as the main [`tooltip`](grid/configuration.md#grid-tooltips) config.
 
 ### Column tooltips
 
@@ -1679,6 +1704,29 @@ const grid = new dhx.Grid("grid_container", {
     ],
     spans: [
         { row: "1", column: "country", rowspan: 5, tooltip: true }, 
+    ],
+    data: dataset,
+    tooltip: false 
+});
+~~~
+
+The same as with the common Grid tooltips, column and span tooltips can be set as objects with the following properties:
+
+- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+- `margin` - (optional) the margin between the node and tooltip; *8px* by default
+- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
+- `css` - (optional) the style of a tooltip box
+
+~~~js {3,7,10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }], tooltip: { force: true } }, 
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+    ],
+    spans: [
+        { row: "1", column: "country", rowspan: 5, tooltip: { force: true } }, 
     ],
     data: dataset,
     tooltip: false 

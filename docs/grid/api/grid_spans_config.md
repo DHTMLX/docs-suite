@@ -12,7 +12,9 @@ description: You can explore the spans config of Grid in the documentation of th
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-    columns: [// columns config],
+    columns: [ 
+        // columns config
+    ],
     spans: [
         {row:"0", column:"a", rowspan:5 },
         {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
@@ -56,13 +58,13 @@ Each object in the spans array contains the following properties:
         </tr>
     <tr>
             <td><a href="../../configuration#tooltip"><b>tooltip</b></a></td>
-            <td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
+            <td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, or sets the configuration object with the tooltip settings; <i>true</i> by default. When set as an object, the `tooltip` config can have the following properties:<ul><li>`force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default</li><li>`showDelay` - (optional) the time period that should pass before showing a tooltip, in ms</li><li>`hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms</li><li>`margin` - (optional) the margin between the node and tooltip; *8px* by default</li><li>`position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default</li><li>`css` - (optional) the style of a tooltip box</li></ul></td>
         </tr>
     </tbody>
 </table>
 
 @changelog:
-
-The **tooltip** property is added in v6.5.
+- The ability to set the `tooltip` config as an object is added in v8.4
+- The **tooltip** property is added in v6.5.
 
 [comment]: # (@related: grid/initialization.md#initialize-grid grid/configuration.md#spans)
