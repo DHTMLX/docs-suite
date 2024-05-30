@@ -99,14 +99,42 @@ grid.data.load("/some/data").then(function(){
 
 ### Loading from local source
 
-To load data from a local data source, use the **parse()** method of [Data Collection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the `parse()` method of [Data Collection](data_collection.md). Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
-~~~js
+~~~jsx
 const grid = new dhx.Grid("grid_container");
 grid.data.parse(dataset);
 ~~~
 
 **Related sample**: [Grid. Initialization with data.parse()](https://snippet.dhtmlx.com/pwzie5wz)
+
+Note that for loading data from a **CSV file** into a grid, you need to:
+
+- [create a data driver](/helpers/datadrivers/#csv-format) with the `nameByHeader: true` setting. Thus the data from the first data line will be used as keys of items
+- pass the created driver as a second parameter to the `parse()` method
+
+Check the example below:
+
+~~~jsx
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 150, id: "country", header: [{ text: "Country" }] },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+        { width: 150, id: "netChange", header: [{ text: "Net Change" }] },
+        { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
+        { width: 150, id: "migrants", header: [{ text: "Migrants (net)" }] },
+        { width: 150, id: "fert", header: [{ text: "Fert. Rate" }] },
+        { width: 150, id: "age", header: [{ text: "Med. Age" }] },
+        { width: 150, id: "urban", header: [{ text: "Urban Pop" }] }
+    ]
+});
+
+const csvData = "country,population,yearlyChange,netChange,density,area,migrants,fert,age,urban,id\nChina,1415045928,0.0039,5528531,151,9388211,-339690,1.6,37,0.5800,1\nIndia,1354051854,0.0111,14871727,455,2973190,-515643,2.4,27,0.3200,2,true\nU.S.,326766748,0.0071,2307285,36,9147420,900000,1.9,38,0.8300,3";
+const csvDataDriver = new dhx.dataDrivers.csv({ nameByHeader: true });
+grid.data.parse(csvData, csvDataDriver);
+~~~
 
 ## Saving and restoring state
 

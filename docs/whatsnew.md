@@ -36,11 +36,12 @@ Released on June X, 2024
 
 - The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](grid/data_loading.md#dynamic-loading)
 - The ability to specify Grid/TreeGrid [tooltips](grid/configuration.md#tooltip) as objects with settings 
+- The ability to provide a [filtering function for the Combobox editor in a column](/grid/api/api_gridcolumn_properties/) 
 
 ### Fixes
 
-- Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
-
+- Navigation. Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
+- DataCollection. Fix the work of the `serialize()` method for the CSV data format
 
 Version 8.3.12
 ---------------- 

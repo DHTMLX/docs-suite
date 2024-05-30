@@ -114,7 +114,7 @@ You can group the options of ComboBox by some criteria and render the grouped da
 
 - provide a custom function that contains the sorting logic for data and set its name as a value of the `data` configuration option of ComboBox, for example:
 
-~~~js
+~~~jsx
 function createData(countries) {
     let group;
     return countries.sort().map(country => {
@@ -141,7 +141,7 @@ const combo = new dhx.Combobox("combo_container", {
 
 A template for the data sorted in the above example may look like this:
 
-~~~js {2-11}
+~~~jsx {2-11}
 const combo = new dhx.Combobox("combobox", {
     template : ({ group, value, root }) => {
         const isRoot = root && "list-item__root" || "";
@@ -159,4 +159,4 @@ const combo = new dhx.Combobox("combobox", {
 
 **Related sample**: [Combobox. Groups in the drop-down list](https://snippet.dhtmlx.com/sk7q5wvl)
 
-The example given above demonstrates how you can group options (name of countries) by the first letters. 
+The example given above demonstrates how you can group options (names of countries) by the first letters. 

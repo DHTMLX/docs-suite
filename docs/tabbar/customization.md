@@ -62,3 +62,40 @@ For example:
     });
 </script>
 ~~~
+
+## Adding tooltips for tabs
+
+You can add tooltips that will be shown on hovering over Tabbar tabs. 
+
+![Tooltips for tabs](../assets/tabbar/tabs_tooltips.png)
+
+**Related sample**: [Tabbar. Tooltips on tabs](https://snippet.dhtmlx.com/o5x1e3i8)
+
+These are the steps you need to reproduce:
+
+- initialize a tabbar, specify a custom function that will show tooltips and call the [dhx.tooltip()](/message/api/api_message_properties/#tooltip) method that will create tooltips for tabs inside the function as follows:
+
+~~~jsx
+const tabbar = new dhx.Tabbar("tabbar", {
+    mode: "top",
+    css: "dhx_widget--bordered",
+    views: [
+        // view objects
+    ]
+});
+
+function showTooltip(e, text) {
+    dhx.tooltip(`Capital of ${text}`, { node: e.target });
+};
+~~~
+
+- define the logic that will iterate over tabs and call the custom function for showing tooltips, wrap your code into the [dhx.awaitRedraw()](/helpers/await_redraw/) method. It will ensure performing the code inside it as soon as a tab's content is fully rendered:
+
+~~~jsx
+dhx.awaitRedraw().then(() => {
+    tabbar.forEach(({ id, config }) => {
+        document.getElementById(`tab-content-${id}`)
+            .addEventListener("mouseover", event => showTooltip(event, config.capital));
+    });
+});
+~~~
