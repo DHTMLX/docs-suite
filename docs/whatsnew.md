@@ -21,6 +21,10 @@ Released on June X, 2024
 
 - The ability to [specify a template for showing percent values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
 
+#### Chart / Grid / TreeGrid
+
+- The ability to [add the header/footer for an exported PNG file](/chart/api/export/chart_png_method/) 
+
 #### Combobox
 
 - The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
