@@ -15,7 +15,13 @@ First, you need to prepare a data set that will be loaded into List.
 
 ## Preparing data set
 
-DHTMLX List expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX List expects loaded data in the JSON format. 
+
+:::info
+Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [

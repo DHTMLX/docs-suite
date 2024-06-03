@@ -8,6 +8,10 @@ description: You can explore the data config of Menu in the documentation of the
 
 @short: Optional. Specifies an array of data objects to set into Menu
 
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
 @signature: {'data?: object[];'}
 
 @example:

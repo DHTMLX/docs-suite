@@ -8,6 +8,10 @@ description: You can explore the data config of Tree in the documentation of the
 
 @short: Optional. Sets a dataset for a tree
 
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
 @signature: {'data?: object[];'}
 
 @params:
@@ -21,7 +25,7 @@ Each **data** object can have the following properties:
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(<i>string, number</i>) the id of an item</td>
+            <td>(<i>string | number</i>) the id of an item</td>
         </tr>
         <tr>
             <td><b>opened</b></td>
@@ -75,7 +79,7 @@ const tree = new dhx.Tree("tree", {
 
 You can disable displaying of a checkbox for a tree item via the [update](tree_collection/api/treecollection_update_method.md) method of tree collection.
 
-~~~js
+~~~jsx
 tree.data.update("Books", {checkbox:false});
 ~~~
 

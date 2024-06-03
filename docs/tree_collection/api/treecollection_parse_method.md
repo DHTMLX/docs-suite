@@ -55,3 +55,7 @@ toolbar.data.parse("<root>"
 
 
 @descr:
+
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
