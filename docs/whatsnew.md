@@ -43,6 +43,15 @@ Released on June X, 2024
 - Navigation. Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
 - DataCollection. Fix the work of the `serialize()` method for the CSV data format
 
+### New samples
+
+- Combobox. [Groups in the drop-down list](https://snippet.dhtmlx.com/sk7q5wvl)
+- Combobox. [Edit/delete items](https://snippet.dhtmlx.com/xd511ci5)
+- Grid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/z2c4sfnn)     
+- Tabbar. [Adding tooltips for tabs](https://snippet.dhtmlx.com/o5x1e3i8)
+- TreeGrid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/tx89igxr)   
+
+
 Version 8.3.12
 ---------------- 
 
