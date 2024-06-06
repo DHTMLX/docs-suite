@@ -41,7 +41,7 @@ Released on June X, 2024
 ### Fixes
 
 - Navigation. Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
-- DataCollection. Fix the work of the `serialize()` method for the CSV data format
+
 
 ### New samples
 
