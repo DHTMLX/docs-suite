@@ -59,7 +59,7 @@ In this section you can learn how to customize a Tabbar and configure the size o
 | --------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [Width and height of tabs](../configuring_tabbar/#size-of-tabs)                          | Learn how to configure the width and height for tabs ([Example](https://snippet.dhtmlx.com/yy841z3j))                                                         |
 | [Auto-width and auto-height for tabs](../configuring_tabbar/#autosize-for-tabs) | Learn how to configure autoheight and autowidth for tabs ([Example 1](https://snippet.dhtmlx.com/mlzko8am),[Example 2](https://snippet.dhtmlx.com/pqvycp1c))|
-| [Adding tooltips for tabs](https://snippet.dhtmlx.com/o5x1e3i8)  | The examples shows how to add tooltips for Tabbar tabs  |
+| [Adding tooltips for tabs](https://snippet.dhtmlx.com/o5x1e3i8)  | The example shows how to add tooltips for Tabbar tabs  |
 | [Styling Tabbar](../customization/#styling-tabbar)  | Learn how to change the look and feel of Tabbar  ([Example](https://snippet.dhtmlx.com/47en9f0a)) |
 | [List of CSS classes](../../helpers/base_elements/) | A set of CSS classes provided by the DHTMLX library                                               |
 
