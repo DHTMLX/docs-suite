@@ -20,11 +20,20 @@ Released on June X, 2024
 #### Chart 
 
 - The ability to [specify a template for showing percent values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
+- The ability to [add the header/footer for an exported PNG file](/chart/api/export/chart_png_method/) 
 
 #### Combobox
 
 - The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
-- The possibility to [group options by using a custom function](combobox/customization.md#options-grouping)
+
+#### Form 
+
+- The ability to [add event handlers to HTML elements of a custom template of the Combo control items](/form/api/combo/api_combo_properties/)
+
+#### Grid/TreeGrid
+
+- The ability to [add event handlers to HTML elements of a custom template of Combobox editor items in a column](/grid/api/api_gridcolumn_properties/)
+- The ability to [add the header/footer for an exported PNG file](/grid/api/export/grid_png_method/) 
 
 #### Toolbar
 
@@ -38,6 +47,7 @@ Released on June X, 2024
 - The ability to specify Grid/TreeGrid [tooltips](grid/configuration.md#tooltip) as objects with settings 
 - The ability to provide a [filtering function for the Combobox editor in a column](/grid/api/api_gridcolumn_properties/) 
 
+
 ### Fixes
 
 - Navigation. Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
@@ -46,9 +56,9 @@ Released on June X, 2024
 ### New samples
 
 - Combobox. [Groups in the drop-down list](https://snippet.dhtmlx.com/sk7q5wvl)
-- Combobox. [Edit/delete items](https://snippet.dhtmlx.com/xd511ci5)
+- Combobox. [Editing/deleting options](https://snippet.dhtmlx.com/xd511ci5)
 - Grid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/z2c4sfnn)     
-- Tabbar. [Adding tooltips for tabs](https://snippet.dhtmlx.com/o5x1e3i8)
+- Tabbar. [Tooltips on tabs](https://snippet.dhtmlx.com/o5x1e3i8)
 - TreeGrid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/tx89igxr)   
 
 
