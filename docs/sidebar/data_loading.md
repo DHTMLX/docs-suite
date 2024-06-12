@@ -15,7 +15,13 @@ First, you need to prepare a data set that will be loaded into Sidebar.
 
 ## Preparing data set
 
-DHTMLX Sidebar expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Sidebar expects loaded data in the JSON format. 
+
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
 
 ~~~js
 const data = [
@@ -129,7 +135,7 @@ This section will give you the idea of JSON format templates for separate Sideba
 {
     id: "custom_html",
     type: "customHTML",
-    html:"<div style='height:30px; border: 2px solid'>My HTML button</div>"
+    html: "<div style='height:30px; border: 2px solid'>My HTML button</div>"
 }
 ~~~
 
@@ -140,9 +146,9 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // menuItem
 {
-    type:"menuItem", 
-    value:"Some",
-    icon:"dxi dxi-menu-right"
+    type: "menuItem", 
+    value: "Some",
+    icon: "dxi dxi-menu-right"
 }
 ~~~
 
@@ -153,9 +159,9 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // navItem
 {
-    type:  "navItem", 
+    type: "navItem", 
     value: "Some",
-    icon:  "dxi-check",
+    icon: "dxi-check",
     count: 10
 }
 ~~~
@@ -167,8 +173,8 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // separator
 {
-    id:         "sepId",        
-    type:   "separator"         
+    id: "sepId",        
+    type: "separator"         
 }
 ~~~
 
@@ -179,8 +185,8 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // spacer
 {
-    id:         "spacerId",          
-    type:   "spacer"        
+    id: "spacerId",          
+    type: "spacer"        
 }
 ~~~
 
@@ -191,10 +197,10 @@ This section will give you the idea of JSON format templates for separate Sideba
 ~~~js
 // title
 {
-    id:             "collection",        
-    type:           "title",                 
-    value:          "Music",                
-    tooltip:    "Current collection"    
+    id: "collection",        
+    type: "title",                 
+    value: "Music",                
+    tooltip: "Current collection"    
 }
 ~~~
 

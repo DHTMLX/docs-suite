@@ -15,7 +15,13 @@ First, you need to prepare a data set that will be loaded into List.
 
 ## Preparing data set
 
-DHTMLX List expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX List expects loaded data in the JSON format. 
+
+:::info
+Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
 
 ~~~js
 const dataset = [
@@ -111,13 +117,11 @@ list2.data.parse(state);
 
 {{pronote This functionality requires PRO version of the DHTMLX suite package.}}
 
-{{note To make use of dynamic data loading, switch the [virtual](list/api/list_virtual_config.md) property on.}}
+To enable dynamic data loading in List you need to:
 
-To enable dynamic data loading  in List you need to:
+- initialize `lazyDataProxy` as described in the [Dynamic Loading](helpers/lazydataproxy.md) article
 
-- initialize **lazyDataProxy** as described in the [Dynamic Loading](helpers/lazydataproxy.md) article
-
-~~~js
+~~~jsx
 new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
     limit: 30,
     prepare: 5,
@@ -126,15 +130,22 @@ new dhx.LazyDataProxy("https://docs.dhtmlx.com/suite/backend/lazyload", {
 });
 ~~~
 
-- load data into List via the **load** method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
+- to enable dynamic rendering of List items, switch the [`virtual`](list/api/list_virtual_config.md) property on:
 
-~~~js
+~~~jsx {2}
 const list = new dhx.list("list_container", {
     virtual: true
 });
+~~~
+
+- load data into List via the `load` method of Data Collection and pass `lazyDataProxy` as a parameter of this method:
+
+~~~jsx
 list.data.load(lazyDataProxy);
 ~~~
 
 **Related sample**: [List. External data lazy loading](https://snippet.dhtmlx.com/list_lazy_loading)
 
-{{note The following methods of [DataCollection](data_collection.md) will not work until all data are loaded into List: add, remove, copy, move, update, changeId, sort, filter.}}
+:::info
+The `sort()` method of Data Collection will not work until all data are loaded into List. Note that for correct work of lazy loading, you should send all changes in Data Collection to the server at the proper time.
+:::

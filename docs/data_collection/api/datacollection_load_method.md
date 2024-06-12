@@ -25,11 +25,15 @@ component.data.load("../common/data.xml", "xml");
 
 **Related sample**: [Data. Load](https://snippet.dhtmlx.com/dyykcnxi)
 
+:::info
+Please note that if you specify the `id` fields in the loaded data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
 The component will make an AJAX call and expect the remote URL to provide valid JSON data.
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 component.data.load(url).then(function(){
     //do something after load;
 });
@@ -37,7 +41,7 @@ component.data.load(url).then(function(){
 
 or
 
-~~~js
+~~~jsx
 component.data.load(url);
 component.data.loadData.then(function(){
     //do something after load;
@@ -45,3 +49,4 @@ component.data.loadData.then(function(){
 // loadData executes a callback function after an asynchronous
 // data loading has completed
 ~~~
+

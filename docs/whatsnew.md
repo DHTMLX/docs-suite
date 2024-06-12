@@ -11,24 +11,55 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.4 
 ------------------
 
-Released on April X, 2024
+Released on June X, 2024
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-8-4/" target="_blank">Review of the release on the blog</a>
 
 ### New functionality
 
-#### Toolbar
+#### Chart 
 
-- The ability to [expand items by hovering over Toolbar elements with the mouse pointer](toolbar/api/toolbar_navigationtype_config.md)
+- The ability to [specify a template for showing percent values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
+- The ability to [add the header/footer for an exported PNG file](/chart/api/export/chart_png_method/) 
 
 #### Combobox
 
 - The ability to [add event handlers to HTML elements of a custom template of Combobox items](combobox/configuration.md#event-handlers-for-the-template)
-- The possibility to [group options by using a custom function](combobox/customization.md#options-grouping)
+
+#### Form 
+
+- The ability to [add event handlers to HTML elements of a custom template of the Combo control items](/form/api/combo/api_combo_properties/)
+
+#### Grid/TreeGrid
+
+- The ability to [add event handlers to HTML elements of a custom template of Combobox editor items in a column](/grid/api/api_gridcolumn_properties/)
+- The ability to [add the header/footer for an exported PNG file](/grid/api/export/grid_png_method/) 
+
+#### Toolbar
+
+- The ability to [expand items by hovering over Toolbar elements with the mouse pointer](toolbar/api/toolbar_navigationtype_config.md)
+
+### Updates
+
+#### Grid/TreeGrid
+
+- The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](grid/data_loading.md#dynamic-loading)
+- The ability to specify Grid/TreeGrid [tooltips](grid/configuration.md#tooltip) as objects with settings 
+- The ability to provide a [filtering function for the Combobox editor in a column](/grid/api/api_gridcolumn_properties/) 
+
 
 ### Fixes
 
-- Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
+- Navigation. Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
+
+
+### New samples
+
+- Combobox. [Groups in the drop-down list](https://snippet.dhtmlx.com/sk7q5wvl)
+- Combobox. [Editing/deleting options](https://snippet.dhtmlx.com/xd511ci5)
+- Grid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/z2c4sfnn)     
+- Tabbar. [Tooltips on tabs](https://snippet.dhtmlx.com/o5x1e3i8)
+- TreeGrid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/tx89igxr)   
 
 
 Version 8.3.12
