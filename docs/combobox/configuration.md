@@ -170,8 +170,6 @@ const combobox = new dhx.Combobox("combo_container",{
 
 ## Editable combobox
 
-### Adding new items
-
 You may allow end users to add new items into the data collection from UI. 
 You just need to enable the functionality via setting the [newOptions](combobox/api/combobox_newoptions_config.md) property to *true*:
 
@@ -195,49 +193,9 @@ The combobox invokes the [beforeAdd](data_collection/api/datacollection_beforead
 combobox.data.events.on("beforeAdd", item => item.value !== "new");
 ~~~
 
-### Editing/deleting items
+You can provide a combobox with the ability to edit/delete items via the user interface. For this you can use [event handlers](#event-handlers-for-the-template) for HTML elements of a custom template of Combobox items.
 
-You can provide a combobox with the ability to edit/delete items via the user interface. For this purpose, you need to specify a custom template with HTML elements (edit and delete icons) for Combobox items and assign event handlers to these elements in the [eventsHandlers](/combobox/api/combobox_eventhandlers_config/) configuration option. Here's an example:
-
-~~~jsx {11-18,22-33}
-const combobox = new dhx.Combobox("combobox", {
-    newOptions: true, // enables the ability to add and save new values from UI
-    itemHeight: 40,
-    template: ({ value, src }) => {
-        return `
-            <div class="list-item">
-                <div class="list-item__content">
-                    <img class="list-item__image" src="${src}" alt="${value}">
-                    <span class="list-item__value">${value}</span>
-                </div>
-                <div class="list-item__button-container">
-                    <button class="list-item__button list-item__button--edit">
-                        <i class="dxi dxi dxi-pencil"></i>
-                    </button>
-                    <button class="list-item__button list-item__button--delete">
-                        <i class="dxi dxi-delete-forever"></i>
-                    </button>
-                </div>
-            </div>
-        `;
-    },
-    eventHandlers: {
-        onclick: {
-            "list-item__button--edit": (event, id) => {
-                isEditMode = true;
-                combobox.list.editItem(id);
-            },
-            "list-item__button--delete": (event, id) => {
-                combobox.data.remove(id);
-                combobox.clear();    
-            }
-        } 
-    },
-    data,
-});
-~~~
-
-**Related sample**: [Combobox. Edit/delete items](https://snippet.dhtmlx.com/xd511ci5)
+**Related sample**: [Combobox. Editing/deleting options](https://snippet.dhtmlx.com/xd511ci5)
 
 ## Readonly mode
 
