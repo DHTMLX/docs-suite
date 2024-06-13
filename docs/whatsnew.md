@@ -47,11 +47,13 @@ Released on June X, 2024
 - The ability to specify Grid/TreeGrid [tooltips](grid/configuration.md#tooltip) as objects with settings 
 - The ability to provide a [filtering function for the Combobox editor in a column](/grid/api/api_gridcolumn_properties/) 
 
+#### List
+
+- The ability to [use most Data/TreeCollection methods during dynamic loading before data is fully loaded](/list/load_data/#dynamic-loading)
 
 ### Fixes
 
 - Navigation. Closing the menu on click in the "click" navigation mode for Toolbar, Menu, Sidebar, Ribbon
-
 
 ### New samples
 
