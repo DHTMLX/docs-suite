@@ -8,21 +8,29 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
-Version 8.3.12
----------------- 
+## Version 8.3.13
+
+Released on June 24, 2024
+
+### Fixes
+
+- Window. The [`Tabbar.tabAlign`](/tabbar/api/tabbar_tabalign_config/) property is ignored if the Tabbar is placed within the Window control
+- Form. The `helpMessage` is displayed in the incorrect position if the Form is scrolled to the bottom edge
+- Core. Memory leaks (Layout, Combobox, Form components)
+
+## Version 8.3.12
 
 Released on May 17, 2024
 
 ### Updates
 
-- Icons. Add new icons 
+- Icons. Add new icons
 
 ### Fixes
 
 - TreeGrid. Fix the issue with spans not applying to columns
 
-Version 8.3.11
-----------------
+## Version 8.3.11
 
 Released on May 8, 2024
 
@@ -30,14 +38,13 @@ Released on May 8, 2024
 
 - DataCollection/TreeCollection. Fix the work of the `serialize()` method for the CSV format
 - Form. Fix the issue with the `maxlength` property that made inputs to be required
-- Grid. Fix the drag-n-drop functionality for a grid initialized in a web component 
+- Grid. Fix the drag-n-drop functionality for a grid initialized in a web component
 - Grid/TreeGrid. Fix the functionality of the comboFilter
-- Grid/TreeGrid. Fix the `adjust` property for a cell with the "combobox" editor the options of which are set via the `id` and `value` properties 
-- Grid/TreeGrid. Fix the error caused by the call of the `addCellCss()` method for a hidden column 
+- Grid/TreeGrid. Fix the `adjust` property for a cell with the "combobox" editor the options of which are set via the `id` and `value` properties
+- Grid/TreeGrid. Fix the error caused by the call of the `addCellCss()` method for a hidden column
 - Layout. Fix the error caused by the `destructor` call
 
-Version 8.3.10 
-------------------
+## Version 8.3.10
 
 Released on April 3, 2024
 
@@ -49,24 +56,21 @@ Released on April 3, 2024
 - Grid. Custom header sorting doesn't work for the headers containing HTML
 - Grid. Incorrect filtering via comboFilter
 
-Version 8.3.9 
-------------------
+## Version 8.3.9
 
 Released on March 18, 2024
 
 ### Fixes
 
-- Date. Сonsole errors when used on iOS 16.3 in Safari 
+- Date. Сonsole errors when used on iOS 16.3 in Safari
 - Form. Validation for the DatePicker and Select controls
-- Form. False rendering of components with the `hidden:true` property 
+- Form. False rendering of components with the `hidden:true` property
 - Grid/TreeGrid. Not displaying tooltips in the spanned footer
 - Grid/TreeGrid. Initializing a grid in a web component breaks the inputFilter usage
 - Grid/TreeGrid. Pressing Enter in the input filter triggers the afterSort event
 - Layout. The destructor() method of the parent doesn't destruct the nested components
 
-
-Version 8.3.8 
-------------------
+## Version 8.3.8
 
 Released on February 26, 2024
 
@@ -76,16 +80,15 @@ Released on February 26, 2024
 - DataCollection/TreeCollection. The DataProxy config for the data driver in the CSV/XML format is replaced
 - DataCollection/TreeCollection. The functionality of the `findIndex()` method is optimized
 - Form. Incorrect input of CJK characters if the form is placed into a layout
-- Form. Incorrect work of the `setProperties()` method 
+- Form. Incorrect work of the `setProperties()` method
 - Form. The padding of the Fieldset control is fixed
-- Form. Incorrect work of the `hide()` method of the Fieldset control 
-- Grid. Navigation through the spanned cells with the Tab key 
+- Form. Incorrect work of the `hide()` method of the Fieldset control
+- Grid. Navigation through the spanned cells with the Tab key
 - Grid/TreeGrid. Improved performance for a dataset with spans
 - Grid/TreeGrid. Editing of spanned cells
 - Localization. Issues with i18n import
 
-Version 8.3.7
-------------------
+## Version 8.3.7
 
 Released on February 13, 2024
 
@@ -93,7 +96,7 @@ Released on February 13, 2024
 
 - Combobox. Improvements in the filtering logic. The filter type is changed: now search is carried out by comparing all characters of the query string
 - Combobox. Fix the `change` event firing for an empty value
-- Form. Fix incorrect clearing of a read-only Combo 
+- Form. Fix incorrect clearing of a read-only Combo
 - Form. The `validate()` method returns an incorrect value if there are no validation functions or attributes applied
 - Form. Fix incorrect style of the input icon
 - Form. The `input` event with the `inputType: "number"` returns a string value
@@ -103,8 +106,7 @@ Released on February 13, 2024
 - Ribbon/Sidebar/Toolbar. Fix the types issue with the IState
 - Ribbon/Toolbar. The DatePicker value can't be cleared via the API
 
-Version 8.3.6
----------------
+## Version 8.3.6
 
 Released on January 24, 2024
 
@@ -113,16 +115,14 @@ Released on January 24, 2024
 - Form. Fix Button and ToggleGroup positioning in Layout as well as the functionality of their `width` and `full` properties
 - Form. Fix the size of the Toggle and ToggleGroup controls
 - Form. Fix the error that occurred after destructing an Avatar control
-- Form. Fix incorrect styling of nested controls in the Fieldset control when the `cols` arrangement is applied first 
-- Grid/TreeGrid. Optimizing the work of Grid/TreeGrid while loading a great number of spans 
+- Form. Fix incorrect styling of nested controls in the Fieldset control when the `cols` arrangement is applied first
+- Grid/TreeGrid. Optimizing the work of Grid/TreeGrid while loading a great number of spans
 - Grid/TreeGrid. The `mark` property doesn't work when a hidden row is displayed by the `showRow()` call
 - Grid/TreeGrid. Fix a potential regular expression vulnerability in the input editor
 - Tree. Fix a typo in types.ts
 - TreeGrid. Applying grouping to the filtered data leads to losing the initial data
 
-
-Version 8.3.5
----------------
+## Version 8.3.5
 
 Released on January 11, 2024
 
@@ -134,8 +134,7 @@ Released on January 11, 2024
 - Form. Fix the issue with a numeric filter validating an empty value in an input
 - Grid/TreeGrid. Closing editor in a numeric column cell by pressing the ESC key clears the cell's value
 
-Version 8.3.4
----------------
+## Version 8.3.4
 
 Released on January 4, 2024
 
@@ -155,8 +154,7 @@ Released on January 4, 2024
 - Pagination. Fix the issue related to the `add()` method. Populating data with the `add()` method breaks the pagination
 - Pagination. The applied filter(s) does not refresh paginagion
 
-Version 8.3.3
----------------
+## Version 8.3.3
 
 Released on December 7, 2023
 
@@ -165,8 +163,7 @@ Released on December 7, 2023
 - Grid/TreeGrid. Fix the issue with impossibility to unselect the row that was selected first
 - Grid/TreeGrid. Fix the issue with the beforeEditEnd/afterEditEnd events firing twice when the Esc or Enter key is pressed
 
-Version 8.3.2
----------------
+## Version 8.3.2
 
 Released on December 4, 2023
 
@@ -178,8 +175,7 @@ Released on December 4, 2023
 - TreeGrid. Fix the problem with rendering an expanded TreeGrid during export to PDF and PNG
 - TreeGrid. Fix the issue with selection while using TreeGrid with Pagination
 
-Version 8.3.1
----------------
+## Version 8.3.1
 
 Released on November 14, 2023
 
@@ -190,11 +186,10 @@ Released on November 14, 2023
 - Form. Fix the issue with the Slider ticks breaking the default margin between controls
 - Grid/TreeGrid. Fix the width of an exported PNG file
 - Menu. Fix resetting the position of a child on clicking its parent item
-- Tabbar. Fix incorrect work of the tabAlign property 
-- TreeGrid. Fix the issue with selection working during pagination only for the first page 
+- Tabbar. Fix incorrect work of the tabAlign property
+- TreeGrid. Fix the issue with selection working during pagination only for the first page
 
-Version 8.3
----------------
+## Version 8.3
 
 Released on October 23, 2023
 
@@ -244,8 +239,7 @@ Released on October 23, 2023
 - Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
 - TreeGrid. Fix the work of the [adjust](treegrid/api/treegrid_adjust_config.md) property with the "footer" value
 
-Version 8.2.7 
----------------
+## Version 8.2.7
 
 Released on October 19, 2023
 
@@ -253,12 +247,11 @@ Released on October 19, 2023
 
 - Combobox. Fix the absence of the placeholder if Combobox has a template
 - Form. Combo control. Fix the incorrect position of preMessage after the call of setProperties()
-- Form. Input/Textarea controls. Fix disappearance of the entered value on entering the full screen mode 
+- Form. Input/Textarea controls. Fix disappearance of the entered value on entering the full screen mode
 - Form. Toggle control. Fix the break of the Toggle button styles in case of simultaneous usage of the Suite and Vault sources on a page
 - Grid/TreeGrid. Fix incorrect autoWidth calculation in case of a big number of columns
 
-Version 8.2.6 
----------------
+## Version 8.2.6
 
 Released on October 12, 2023
 
@@ -271,8 +264,7 @@ Released on October 12, 2023
 - Grid/TreeGrid. Fix the difference in the number format used for the cell data and for the footer
 - Grid/TreeGrid. Fix the problem with displaying `O`(zero) in the footer as a total sum of a column
 
-Version 8.2.4 
----------------
+## Version 8.2.4
 
 Released on October 4, 2023
 
@@ -283,8 +275,7 @@ Released on October 4, 2023
 - TreeGrid. Fix the issue with a console error throwing on hovering over the footer tooltips used together with the "content" property
 - Toolbar/Menu. Fix the problem with displaying the count badge with the `0` value
 
-Version 8.2.3 
----------------
+## Version 8.2.3
 
 Released on September 26, 2023
 
@@ -295,8 +286,7 @@ Released on September 26, 2023
 - Grid/TreeGrid. Fix the memory leak related to the header filters
 - TreeGrid. Fix the problem when a double click on a grouped row threw an error
 
-Version 8.2.2 
----------------
+## Version 8.2.2
 
 Released on September 13, 2023
 
@@ -312,9 +302,7 @@ Released on September 13, 2023
 - Tree. Fix the impossibility to override the checkbox configuration via the dataset
 - TreeGrid. Fix the issue with resetting changes in the edited cells after data ungrouping
 
-
-Version 8.2.1 
----------------
+## Version 8.2.1
 
 Released on August 31, 2023
 
@@ -325,8 +313,7 @@ Released on August 31, 2023
 - Grid/TreeGrid. Fix the issue when calling of the destructor() method caused a crash of an app based on the Optimus framework
 - Grid/TreeGrid. Fix the rendering of hidden columns
 
-Version 8.2
--------------
+## Version 8.2
 
 Released on August 29, 2023
 
@@ -363,8 +350,8 @@ Released on August 29, 2023
 - Types of Form controls are restructured. The type declaration file (d.ts) is updated  
 
 #### Form. SimpleVault
- 
-- The [API of the control](/category/simple-vault-api/) is renewed and improved 
+
+- The [API of the control](/category/simple-vault-api/) is renewed and improved
 
 ### Fixes
 
@@ -376,8 +363,7 @@ Released on August 29, 2023
 - Toolbar. Fix the problem with not displaying the expand triangle icon on adding sub-items into an element placed lower than the second level
 - Grid/TreeGrid. Fix the incorrect calculation of the row autoHeight
 
-Version 8.1.10 
----------------
+## Version 8.1.10
 
 Released on August 21, 2023
 
@@ -386,8 +372,7 @@ Released on August 21, 2023
 - Combobox. Fix the issue with the default icon of an option (set via the "src" or "icon" properties) not displayed in the input field
 - Toolbar. Fix the problem with the setState() method not applying a value for DatePicker
 
-Version 8.1.9 
----------------
+## Version 8.1.9
 
 Released on August 14, 2023
 
@@ -395,22 +380,20 @@ Released on August 14, 2023
 
 - Grid/TreeGrid. Fix the issue with a colspan breaking in case of hiding several of its columns
 - Grid/TreeGrid. Fix the issue with the Input filter operating with the formatted numeric value instead of the original one
-- Grid/TreeGrid. Fix incorrect export of boolean values to PDF/PNG 
+- Grid/TreeGrid. Fix incorrect export of boolean values to PDF/PNG
 - Grid/TreeGrid. Fix incorrect work of the autoHeight property that resulted in not displaying multi-line data in cells
 
-Version 8.1.8 
----------------
+## Version 8.1.8
 
 Released on August 8, 2023
 
 ### Fixes
 
-- Form. Fix incorrect data rendering in the Input control on blocking changes by the beforeChange event 
+- Form. Fix incorrect data rendering in the Input control on blocking changes by the beforeChange event
 - Grid/TreeGrid. Fix incorrect behavior when typing "null" in the inputFilter displayed empty rows
 - Grid/TreeGrid. Fix the issue with the destructor call after operating with the in-header filters that caused a console error throwing
 
-Version 8.1.7 
----------------
+## Version 8.1.7
 
 Released on July 26, 2023
 
@@ -424,8 +407,7 @@ Released on July 26, 2023
 - Toolbar. Fix the incorrect behavior of the toolbar buttons, if the toolbar is attached to a window
 - Tree. Fix the issue that occurs if the data contains ID set to the 0 number (`id:0`)
 
-Version 8.1.6 
----------------
+## Version 8.1.6
 
 Released on July 11, 2023
 
@@ -438,11 +420,10 @@ Released on July 11, 2023
 - Grid/TreeGrid. Fix incorrect positioning of the **select** editor when the Grid height is limited
 - Grid/TreeGrid. Fix the issue when spans ignored the specified column format
 - Layout. Fix the incorrect calculation of cells' sizes in the **wide** layout type
-- Tree. Fix the issue when focusing an item didn't initiate scrolling a view to it 
+- Tree. Fix the issue when focusing an item didn't initiate scrolling a view to it
 - TreeGridCollection. Fix the issue with the [getId()](tree_collection/api/treecollection_getid_method.md)/[getIndex()](tree_collection/api/treecollection_getindex_method.md) methods not working correctly in relation to each other
 
-Version 8.1.5 
----------------
+## Version 8.1.5
 
 Released on June 19, 2023
 
@@ -457,8 +438,7 @@ Released on June 19, 2023
 - Window. Fix the problem with window focusing in FireFox
     - note that the `--dhx-z-index-overlay-total` CSS variable for the [default theme](themes/default_theme.md) has been changed to 10000000
 
-Version 8.1.4 
----------------
+## Version 8.1.4
 
 Released on June 15, 2023
 
@@ -466,22 +446,19 @@ Released on June 15, 2023
 
 - Form. Fix the issue with the `undefined` CSS class that appeared on creation of a form
 
-Version 8.1.3 
---------------
+## Version 8.1.3
 
 Released on June 12, 2023
 
 ### Fixes
 
 - Combobox. Fix the issue with displaying HTML content in the input
-- Grid/TreeGrid. Fix incorrect processing of dates containing time in the AM format by the datePicker editor 
+- Grid/TreeGrid. Fix incorrect processing of dates containing time in the AM format by the datePicker editor
 - Grid/TreeGrid. Fix the problem with the footer colspan not working in the frozen part of a grid
 - Grid/TreeGrid. Fix the issue with displaying HTML content in the comboFilter
 - TreeGrid. Fix incorrect behavior when removing a child item of a selected row resets the selection
 
-
-Version 8.1.2
---------------
+## Version 8.1.2
 
 Released on May 29, 2023
 
@@ -495,8 +472,7 @@ Released on May 29, 2023
 - Layout. Fix incorrect arrangement of cells on a page after resizing/collapsing
 - Window. Fix the issue when a modal window with an attached component refuses to close with the ESC button
 
-Version 8.1.1 
----------------
+## Version 8.1.1
 
 Released on May 18, 2023
 
@@ -511,8 +487,7 @@ Released on May 18, 2023
 - Grid/TreeGrid. Fix the issue with the multi select filter when it adds an empty value from a data set into selected options by default
 - TreeGrid. Fix incorrect work of the [`adjustColumnWidth()`](treegrid/api/treegrid_adjustcolumnwidth_method.md) method
 
-Version 8.1
-------------
+## Version 8.1
 
 Released on April 18, 2023
 
@@ -571,8 +546,7 @@ Released on April 18, 2023
 - Layout. Fix work of the progress bar
 - TreeGrid. Fix incorrect work of filtering when collapsing or expanding the parent node
 
-Version 8.0.3
---------------
+## Version 8.0.3
 
 Released on April 12, 2023
 
@@ -586,8 +560,7 @@ Released on April 12, 2023
 - Grid/TreeGrid. Fix work of the [`cellClick`](grid/api/grid_cellclick_event.md), [`cellDblClick`](grid/api/grid_celldblclick_event.md), [`cellRightClick`](grid/api/grid_cellrightclick_event.md) events for spanned cells
 - Slider. Fix work of the slider on touch devices
 
-Version 8.0.2
----------------
+## Version 8.0.2
 
 Released on March 20, 2023
 
@@ -599,8 +572,7 @@ Released on March 20, 2023
 - Grid. Fix the issue with the [`adjustColumnWidth()`](grid/api/grid_adjustcolumnwidth_method.md) method after resizing of a column
 - Grid. Fix work of key navigation between a span and cell (in some cases)
 
-Version 8.0.1
----------------
+## Version 8.0.1
 
 Released on March 13, 2023
 
@@ -619,8 +591,7 @@ Released on March 13, 2023
 - Window. Fix the issue with excess scroll in the window content
 - Window. Fix work of Window with the [`resizable: true`](window/api/window_resizable_config.md) property
 
-Version 8.0
----------------
+## Version 8.0
 
 Released on February 24, 2023
 
@@ -766,8 +737,7 @@ Released on February 24, 2023
 
 - The `position` property of the [tooltip](message/api/api_message_properties.md#tooltip) is extended by the "left" and "top" values
 
-Version 7.3.14
----------------
+## Version 7.3.14
 
 Released on January 17, 2023
 
@@ -786,8 +756,7 @@ Released on January 17, 2023
 - TreeGrid. Now it is possible to collapse/expand the content of the first cell of the first column even if it is included into the colspan
 - Fix issues with [AJAX helper](ajax.md)
 
-Version 7.3.13
----------------
+## Version 7.3.13
 
 Released on December 14, 2022
 
@@ -798,8 +767,7 @@ Released on December 14, 2022
 - Grid. Now you can edit content in the spans of columns/rows via double-click on it
 - Layout. Fix the issue with resizing of cells for which sizes were not specified. The issue appeared after one of the Layout cells was hidden
 
-Version 7.3.12
-----------------
+## Version 7.3.12
 
 Released on November 17, 2022
 
@@ -814,9 +782,7 @@ Released on November 17, 2022
 - TreeGrid. Fix the error appeared on initialization of the component when [`data`](treegrid/api/treegrid_data_config.md) was defined as `TreeGridCollection` instance and [`spans`](treegrid/configuration.md#spans) were applied
 - Window. Fix the issue with overlay positioning for a modal window (z-index is changed)
 
-
-Version 7.3.11
-----------------
+## Version 7.3.11
 
 Released on November 3, 2022
 
@@ -832,8 +798,7 @@ Released on November 3, 2022
 - Layout. Fix the issue with resizing of a cell
 - Toolbar. Input control. Now autocomplete of an input field is disabled by default. To enable it, use the [`autocomplete`](toolbar/api/api_input_properties.md) property of the control
 
-Version 7.3.10
-----------------
+## Version 7.3.10
 
 Released on October 18, 2022
 
@@ -845,8 +810,7 @@ Released on October 18, 2022
 - Message. Fix position of the overlay for the confirm message
 - Window. Fix the issue with incorrect positioning of the active window
 
-Version 7.3.9
---------------
+## Version 7.3.9
 
 Released on September 26, 2022
 
@@ -857,8 +821,7 @@ Released on September 26, 2022
 - Form. Combo control. Fix the issue with validation of the control in the `multiselection:true` mode
 - List, DataView, Combobox&Combo control of Form. Fix work with IDs specified as numbers
 
-Version 7.3.8
---------------
+## Version 7.3.8
 
 Released on September 19, 2022
 
@@ -870,18 +833,17 @@ Released on September 19, 2022
 - Grid. Fix the issue which caused the resized width of the columns to be reset to the initial values after dragging the columns
 - Grid. Fix the issue with the [`getCells()`](grid/api/selection/selection_getcells_method.md) method which returned incorrect results if multiple cells were selected with the `Shift` key
 - Layout. Fix the issue with the [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) method
-- Ribbon. Input control. Fix the behavior of the label which caused focus not to be moved to the input field 
-- Toolbar. Input control. Fix the behavior of the label which caused focus not to be moved to the input field 
+- Ribbon. Input control. Fix the behavior of the label which caused focus not to be moved to the input field
+- Toolbar. Input control. Fix the behavior of the label which caused focus not to be moved to the input field
 - TreeGrid. Fix the incorrect calculation of the columns and rows displayed on the screen when calling the [`hideColumn()`](treegrid/api/treegrid_hidecolumn_method.md) or [`hideRow()`](treegrid/api/treegrid_hiderow_method.md) methods correspondingly
 
-Version 7.3.7
---------------
+## Version 7.3.7
 
 Released on September 5, 2022
 
 ### Fixes
 
-- Grid. Fix the issue with disappearing of the comboFilter of a visible column after you hide any other column 
+- Grid. Fix the issue with disappearing of the comboFilter of a visible column after you hide any other column
 - Grid. Fix the issue with display of the comboFilter for frozen columns when scrolling Grid horizontally
 - Grid. Fix the issue with display of tooltips for columns with checkboxes
 - Grid. Fix the issue with the [`canRowDrop`](grid/api/grid_canrowdrop_event.md) event
@@ -893,8 +855,7 @@ Released on September 5, 2022
 - Toolbar. Fix the issue with the `label` property of the [Input](toolbar/api/api_input_properties.md) control
 - TreeCollection. Fix work of the `add` and `smartFilter` properties of the **config** parameter of the [`filter()`](tree_collection/api/treecollection_filter_method.md) method
 
-Version 7.3.6
--------------------
+## Version 7.3.6
 
 Released on August 8, 2022
 
@@ -903,18 +864,17 @@ Released on August 8, 2022
 - Calendar. Now it is possible [to set "saturday" as the starting day of the week](calendar/api/calendar_weekstart_config.md)
 - Data. Fix the issue which caused extra requests to be sent to the server when making several changes to one item
 - Data. Now it is possible to sort data by the value without use of the `as` attribute of the **rule** object if some of the values are `null` | `undefined`
-- DataView, List, Tree. Now you can block bubbling of the events specified via the `eventHandlers` property by using `stopPropagation()` 
-- Form inside Popup. Fix the issue which caused the Popup to close after clicking on a popup of a Form control 
+- DataView, List, Tree. Now you can block bubbling of the events specified via the `eventHandlers` property by using `stopPropagation()`
+- Form inside Popup. Fix the issue which caused the Popup to close after clicking on a popup of a Form control
 - Grid. Fix the issue which caused the `eventHandlers` template to return an empty row object when the row ID was an integer
 - Grid. Fix the issue with calculation of the correct number of columns which should be rendered on the screen (in some cases)
 - Grid. Fix the issue with exporting Grid with the footer to Excel (the value for the footer in the exported file was different from the value in Grid)
 - Grid. Fixed location of zones for a resize handle. Now it is possible to resize each column under the spanned header
-- LazyDataProxy. Fix the issue with dynamic data loading which caused a part of the data to be loaded one more time. Now `LazyDataProxy` will load only the data which hasn't been loaded into the component before 
+- LazyDataProxy. Fix the issue with dynamic data loading which caused a part of the data to be loaded one more time. Now `LazyDataProxy` will load only the data which hasn't been loaded into the component before
 - Popup. Fix the issue with display of tooltips for items of a component (for example, Toolbar) which is attached to a popup
 - Tree with scrollbar. Now the content of the Tree will be auto scrolled if you drag an item of a Tree above or below its body
 
-Version 7.3.5
--------------------
+## Version 7.3.5
 
 Released on July 7, 2022
 
@@ -936,8 +896,7 @@ Released on July 7, 2022
 - Window. Fix the incorrect display of modal window (it was displayed behind the non-modal one)
 - Window. Fix the issue with positioning of the window if the values of the width and height were incorrect
 
-Version 7.3.4
-----------------
+## Version 7.3.4
 
 Released on June 07, 2022
 ### Fixes
@@ -956,8 +915,7 @@ Released on June 07, 2022
 - Layout. Fix the issue with resizing cells which contain the iframe element
 - Tree. Fix the issue with dynamic loading of the child elements, if the url for autoloading includes "?"
 
-Version 7.3.3
-----------------
+## Version 7.3.3
 
 Released on April 25, 2022
 
@@ -966,12 +924,10 @@ Released on April 25, 2022
 - Form. Combo control. Fix the issue with re-setting of the same value of the readonly Combo control after the `clear()` method of Form was called
 - Form. Fix the issue which caused the `getValue()` method to return the `null` value as a string
 - Grid. Fix the issue with filtering of a big data set which caused the symbols to get lost when typing them into the header filter. Now you have more time for typing symbols into the input filter of Grid
-- Toolbar. Fix the issue which caused the `getState()` method not to return the value of a datePicker 
+- Toolbar. Fix the issue which caused the `getState()` method not to return the value of a datePicker
 - Vault and Suite. Fix the conflict appeared between CSS styles of the Vault and Suite scrollbars when including source files of the components to the one page
 
-
-Version 7.3.2
-----------------
+## Version 7.3.2
 
 Released on April 4, 2022
 
@@ -979,20 +935,19 @@ Released on April 4, 2022
 
 - Data. Now the `,`,  `;`, `"` symbols will be wrapped into the quotes when serializing a data set into the CSV format
 - Form. Text control. Fix the incorrect display of the long value of the Text control
-- Grid, TreeGrid. Now the Grid and TreeGrid packages includes the ability to localize the "datePicker" and "combobox" column editors 
+- Grid, TreeGrid. Now the Grid and TreeGrid packages includes the ability to localize the "datePicker" and "combobox" column editors
 - Grid. Fix the issue which caused the empty row/col objects to be returned after calling [events for custom templates](../grid/api/grid_eventhandlers_config/) of Grid columns
-- Grid. Fix the issue with processing of Date objects when exporting the Grid data into the CSV/Excel format 
+- Grid. Fix the issue with processing of Date objects when exporting the Grid data into the CSV/Excel format
 - Grid. Fix the issue with the `htmlEnable: true` property which didn't take into account the line breaks of the cells content when the `autoHeight:false` property of Grid was applied 
 
-Version 7.3.1
------------------
+## Version 7.3.1
 
 Released on March 17, 2022
 
 ### Fixes
 
 - Data. Fix the issue with serialization of data into CSV format which caused the incorrect structure of the output data if the initial data set contained a comma (",") in a value
-- DataCollection. Fix the issue with the `save()` method of DataCollection which sent multiple requests (when making multiple changes) to server instead one 
+- DataCollection. Fix the issue with the `save()` method of DataCollection which sent multiple requests (when making multiple changes) to server instead one
 - Form. Fix the incorrect work of the `destruct()` method when calling it from the `change` event
 - Grid. Fix the issue which caused a selected item still to remain selected after it was removed from the data collection
 - Grid. Fix the issue with applying the `adjust` property of Grid after the data reloading
@@ -1000,8 +955,8 @@ Released on March 17, 2022
 - Grid. Pagination. Fix the issue which caused pagination not to work when using lazy loading of Grid data
 - List. Pagination. Fix the issue which caused pagination not to work when using lazy loading of List data
 
-Version 7.3
------------------
+## Version 7.3
+
 Released on January 19, 2022
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-7-3-new-treemap-chart-free-text-combobox-input-custom-filters-grid-treegrid/" target="_blank">Review of release on the blog</a>
@@ -1094,8 +1049,8 @@ Released on October 28, 2021
 - Grid. Fix the issue with the [autoWidth](grid/configuration.md/#autowidth-for-columns) property which caused the minimal width of the column not being taken into account when calculating the column's width
 - Grid. TreeGrid. Fix the issue which caused data of the treegrid to be changed after filtering and dragging a column/row
 
-Version 7.2.4
-----------------
+## Version 7.2.4
+
 Released on October 13, 2021
 
 ### Fixes
@@ -1111,8 +1066,8 @@ Released on October 13, 2021
 - Grid. Fix the issue with filtering the grid via the combo filter when the [](grid/api/grid_autoemptyrow_config.md) configuration property of Grid is set to *true*
 - TreeGrid. Fix the incorrect display of an icon of a treegrid row after adding a child row and then deleting it. Now the *$items* property of the TreeGridCollection object is updated after deleting all child items.
 
-Version 7.2.3
-------------------
+## Version 7.2.3
+
 Released on September 27, 2021
 
 ### Fixes
@@ -1127,8 +1082,8 @@ Released on September 27, 2021
 - Grid. Now the content of the grid is filtered strictly by the values selected in the combo filter
 - Toolbar. Fix the issue with render of data when recreating the toolbar after removing it via the `destructor()` method
 
-Version 7.2.2
-------------------
+## Version 7.2.2
+
 Released on September 13, 2021
 
 ### Fixes
@@ -1138,8 +1093,7 @@ Released on September 13, 2021
 - List. Fix the issue which caused new items not to be added into an empty data collection after applying the `filter()` method to the data collection
 - TreeGrid. Fix the issue with selection of the child rows and its cells
 
-Version 7.2.1
----------------
+## Version 7.2.1
 
 Released on August 26, 2021
 
@@ -1155,10 +1109,10 @@ Released on August 26, 2021
 - Grid. Fix the script error thrown after scrolling the grid horizontally several times
 - Layout. Fix the issue with the `collapse()` method of a layout cell
 - List. Fix the issue which caused the list not to be scrolled to the item selected via the `setFocus()` method
-- TreeGrid. Now it is possible to filter the content of the treegrid by multiple header filters 
+- TreeGrid. Now it is possible to filter the content of the treegrid by multiple header filters
 
-Version 7.2
----------------
+## Version 7.2
+
 Released on August 4, 2021
 
 <a href="https://dhtmlx.com/blog/dhtmlx-suite-7-2-new-form-control-custom-scroll-tree-templates/" target="_blank">Review of release on the blog</a>
@@ -1236,8 +1190,7 @@ Check the [Migration article](migration.md/#71---72) to keep in step with the la
 - Grid. Fix the issue with entering text in the combobox editor of a Grid cell
 - Menu. Fix the issue which caused the context menu not to close after clicking outside the menu if `navigationType: "click"` property is specified
 
-Version 7.1.10
--------------------
+## Version 7.1.10
 
 Released on July 20, 2021
 
@@ -1267,15 +1220,14 @@ Released on July 20, 2021
 - TreeGrid. Fix the incorrect display of data when entering the value, which doesn't exist in the data set, into the header cell with the input filter
 - TreeGrid. Fix the issues with the top and bottom borders of the footer cells of the frozen columns
 
-Version 7.1.9
-------------------
+## Version 7.1.9
 
 Released on June 24, 2021
 
 ### Fixes
 
 - A helper error now will be thrown in the console for the id of the new item if such id already exists in the dataset
-- Calendar. Fix the incorrect display of the date after changing the time zone 
+- Calendar. Fix the incorrect display of the date after changing the time zone
 - Chart. Fix the incorrect work of tooltips when the chart is attached to the window
 - Combobox. Fix the issue with the scroll position in the list of options when the "readOnly" mode is enabled
 - Grid, TreeGrid. Fix the issue with alignment of data in the header of the column
@@ -1285,7 +1237,7 @@ Released on June 24, 2021
 - Grid. Fix the issue that caused the filtering of the column to reset after the data reloading
 - Grid. Fix the issue with drag-and-drop of rows that caused the editor for the columns that are absent in the target grid to stop opening
 - Grid. Fix the issue with dragging the column when the "rowspan" attribute is set for its header
-- Grid. Fix the issue with filtering of the columns when combo/select filters are specified for their content 
+- Grid. Fix the issue with filtering of the columns when combo/select filters are specified for their content
 - Grid. Fix the issue with the alignment of the content of the column header when the "colspan" attribute is set for the header
 - Grid. Fix the issue with the display of Grid if it is attached to Layout and the "setColumns()" method is called after initialization of the grid
 - Grid. Fix the issue with the display of the borders of the header colspan
@@ -1298,8 +1250,7 @@ Released on June 24, 2021
 - TreeGrid. Fix the issue with dragging the rows in the grouped treegrid
 - TreeGrid. Fix the incorrect work of selection after a tree node is collapsed
 
-Version 7.1.8
-------------------
+## Version 7.1.8
 
 Released on June 10, 2021
 
@@ -1319,8 +1270,7 @@ Released on June 10, 2021
 - Sidebar. Fix the issue with the display of nested items of the Sidebar controls
 - Tree. Fix the issue with opening of the selected folder using key navigation when using the "autoload" configuration property of Tree
 
-Version 7.1.7
-------------------
+## Version 7.1.7
 
 Released on May 17, 2021
 
@@ -1334,8 +1284,7 @@ Released on May 17, 2021
 - Data Collection. Fix the error fired after an item with the already existing id is added to the component via the "add()" method of the data collection
 - Tree Collection. Fix the issue with the "filter()" method
 
-Version 7.1.6
-------------------
+## Version 7.1.6
 
 Released on May 5, 2021
 
@@ -1349,8 +1298,7 @@ Released on May 5, 2021
 - TreeGrid. Fix the issue with drag-n-drop of rows
 - Tree Collection. Fix the issue with the "copy" and "move" methods
 
-Version 7.1.5
-------------------
+## Version 7.1.5
 
 Released on April 22, 2021
 
@@ -1360,8 +1308,7 @@ Released on April 22, 2021
 - Combobox. Fix the behavior of the [](combobox/api/combobox_css_config.md) configuration option
 - Tabbar. The recalculation function of the width of the tabs is optimized
 
-Version 7.1.4
-------------------
+## Version 7.1.4
 
 Released on April 16, 2021
 
@@ -1377,8 +1324,7 @@ Released on April 16, 2021
 - LazyDataProxy in Grid. Fix the error occurred when returning `false` from the 'beforeLazyLoad" event handler
 - Window. Fix the issue with display of tooltips of Grid cells behind the window when Grid is attached to Window
 
-Version 7.1.3
-------------------
+## Version 7.1.3
 
 Released on April 12, 2021
 
@@ -1394,7 +1340,7 @@ Released on April 12, 2021
 - Grid. Fix the issue with filters in the header rowspans
 - Grid. Fix the issue with the border of the footer colspan
 - Grid. Fix the issue that caused the header to disappear after scrolling the grid with the frozen columns on Safari
-- Grid. Fix the issue with sorting 
+- Grid. Fix the issue with sorting
 - Grid. Fix the issue that caused no line break to appear between the header and the first data row after exporting data to the CSV file
 - Grid. Fix the issue with applying of the styles to the grid footer
 - Grid. Fix the issue that caused extra footer rows to appear in the frozen part of the grid when the grid has several header rows
@@ -1408,8 +1354,7 @@ Released on April 12, 2021
 - TreeGrid. Fix the issue with incorrect serialization of data
 - Tree Collection. Fix the issue with the "mapRange()" method
   
-Version 7.1.2
----------------
+## Version 7.1.2
 
 Released on March 9, 2021
 
@@ -1420,7 +1365,7 @@ Released on March 9, 2021
 - DataDrivers. Fix the issue with serialization of Grid data when the data are serialized with the header  
 - DataView. Fix the script error thrown either when the user drags an item after its editing or when the user highlights the text of the item
 - Form. Fix the different behavior of margins between the label and input on Safari and Chrome
-- Grid. Fix the incorrect work of the keyboard navigation in Grid when placing it inside the HTML form 
+- Grid. Fix the incorrect work of the keyboard navigation in Grid when placing it inside the HTML form
 - Grid. Fix the issue with drag-n-drop of Grid columns when using several grids
 - Grid. Fix the issue with row selection
 - Grid. Fix the issue with keyboard navigation in Grid when initializing the grid in the cell of Layout that is hidden and then shown
@@ -1437,8 +1382,7 @@ Released on March 9, 2021
 - TimePicker. The default height is reduced from 322px to 275px
 - Tree. Fix the issue that caused the expand/collapse events not to trigger on expanding/collapsing the Tree item first time when [autoload](tree/api/tree_autoload_config.md) is used
 
-Version 7.1.1
----------------
+## Version 7.1.1
 
 Released on February 23, 2021
 
@@ -1452,8 +1396,7 @@ Released on February 23, 2021
 - Form. Fix the issue with the "required" configuration option of the Select control
 - Window. Fix the incorrect display of the menu items when placing the menu inside the window
 
-Version 7.1
----------------
+## Version 7.1
 
 Released on February 18, 2021
 
@@ -1467,9 +1410,9 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 #### Grid
 
 - The ability to display and edit multiline content in the cells of Grid via setting the [autoHeight: true](grid/api/grid_autoheight_config.md) configuration option of Grid (Pro version)
-- New [textarea editor](grid/configuration.md#types-of-column-editor) is added 
+- New [textarea editor](grid/configuration.md#types-of-column-editor) is added
 - The ability to set [the format the content of the cells to be displayed in](grid/configuration.md#formatting-columns)
-- Now [columns with dates support the Date() object](grid/api/grid_data_config.md) 
+- Now [columns with dates support the Date() object](grid/api/grid_data_config.md)
 - The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a Grid column
 - The ability [to define the height for a separate row of Grid](grid/configuration.md#row-height)
 - New events are added: [beforeRowResize](grid/api/grid_beforerowresize_event.md) and [afterRowResize](grid/api/grid_afterrowresize_event.md) (Pro version)
@@ -1490,14 +1433,13 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 - New events are added: [beforeRowResize](treegrid/api/treegrid_beforerowresize_event.md) and [afterRowResize](treegrid/api/treegrid_afterrowresize_event.md), [beforeSort](treegrid/api/treegrid_beforesort_event.md) and [afterSort](treegrid/api/treegrid_aftersort_event.md)
 - The ability to define the id of the parent root via the [rootParent](treegrid/api/treegrid_rootparent_config.md) configuration option of TreeGrid
 
-
 #### Window
 
 - New methods are added: [unsetFullScreen()](window/api/window_unsetfullscreen_method.md) and [isFullScreen()](window/api/window_isfullscreen_method.md)
 
 ### Updates
 
-- Chart. [Improved tooltips for all charts](chart/charts_overview.md). 
+- Chart. [Improved tooltips for all charts](chart/charts_overview.md).
 - Chart. Now the tooltip will contain values of multiple series on hovering over a chart ([Line](https://snippet.dhtmlx.com/t881qcim), [Spline](https://snippet.dhtmlx.com/2wvmdm0y), [Area](https://snippet.dhtmlx.com/nv6t6lvm), [Spline Area](https://snippet.dhtmlx.com/bo82km4n)).
 - Grid/TreeGrid. The values of the [type](grid/api/api_gridcolumn_properties.md) configuration property of the Grid/TreeGrid columns are updated. Now the type sets the alignment of content inside cells and defines the type of the editor used in the cells of the column.
 
@@ -1515,43 +1457,39 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 - KeyManager module is reworked
 - List. Fix the issue with the "afterFocusChange" event  
 - Pagination. Fix the issues with the Pagination widget when using together with Grid, TreeGrid, DataView, List
-- Pagination. Fix the incorrect work of the "showItem" method 
-- Tabbar. Fix the issue that caused the usage of memory to increase when working in Firefox 
+- Pagination. Fix the incorrect work of the "showItem" method
+- Tabbar. Fix the issue that caused the usage of memory to increase when working in Firefox
 - TreeGrid. Fix the issue with positioning of the input editor of a TreeGrid cell when editing a cell
 - Window. Fix the incorrect display of the menu items when placing the menu inside the window
-- Window. Fix the issue with the sequence of closing modal windows when using key navigation 
+- Window. Fix the issue with the sequence of closing modal windows when using key navigation
 - Fix the issue that invoked the `domvm.js` warning in the console
 
-
-Version 7.0.3
----------------
+## Version 7.0.3
 
 Released on January 19, 2021
 
 ### Fixes
 
-- [Donut chart](chart/charts_overview.md#pie-pie-3d-and-donut-chart). Fix the issue with colors 
-- Grid. Fix the issue that caused the [frozen](grid/api/grid_leftsplit_config.md) columns to become movable when hiding columns 
+- [Donut chart](chart/charts_overview.md#pie-pie-3d-and-donut-chart). Fix the issue with colors
+- Grid. Fix the issue that caused the [frozen](grid/api/grid_leftsplit_config.md) columns to become movable when hiding columns
 - Grid. Fix the issue with the [filter()](data_collection/api/datacollection_filter_method.md) method when the [](grid/api/grid_autoemptyrow_config.md) property is enabled
-- Grid. Fix the issue with alignment of spans in the header of the grid 
+- Grid. Fix the issue with alignment of spans in the header of the grid
 - Grid. Fix the incorrect behavior of "comboFilter" after reloading data
 - Tabbar. Fix the incorrect alignment of bottom lines in the tabs
 - Tree. Fix the issue that caused Tree items not to be collapsed in the [autoload](tree/api/tree_autoload_config.md) mode
 - Window. Fix the issue that caused the text in the title of the window to overflow
 - Fix the issue with types
   
-Version 7.0.2
----------------
+## Version 7.0.2
 
 Released on December 28, 2020
 
 ### Fixes
 
-- Fix the issue with loading data into the component via the `parse()` method of Tree Collection, or via the `data` configuration property of the component 
-- Fix the types of events in Grid   
+- Fix the issue with loading data into the component via the `parse()` method of Tree Collection, or via the `data` configuration property of the component
+- Fix the types of events in Grid
 
-Version 7.0.1
----------------
+## Version 7.0.1
 
 Released on December 21, 2020
 
@@ -1567,12 +1505,10 @@ Released on December 21, 2020
 - Fix the issue with the [collapseAll()](treegrid/api/treegrid_collapseall_method.md) method in TreeGrid
 - Fix the incorrect work of the [save()](data_collection/api/datacollection_save_method.md) method of Data Collection
 - Fix the issue with display of sorting icon when applying alignment to Grid columns
-- Fix the issue which caused the item in the filtered state after deleting from the data collection to be still found via the [afterRemove](data_collection/api/datacollection_afterremove_event.md) event 
+- Fix the issue which caused the item in the filtered state after deleting from the data collection to be still found via the [afterRemove](data_collection/api/datacollection_afterremove_event.md) event
 - Fix the issue which caused the multiple combo options selected not to be numerated when [sending values of Form to the server as Form Data](form/api/form_send_method.md)
 
-
-Version 7.0
----------------
+## Version 7.0
 
 Released on December 7, 2020
 
@@ -1602,11 +1538,11 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 #### DataView
 
-- The ability to add event handlers to custom templates of DataView items via the [eventHandlers](dataview/api/dataview_eventhandlers_config.md) property 
+- The ability to add event handlers to custom templates of DataView items via the [eventHandlers](dataview/api/dataview_eventhandlers_config.md) property
 - New drag-n-drop events: [afterDrag](dataview/api/dataview_afterdrag_event.md), [afterDrop](dataview/api/dataview_afterdrop_event.md), [beforeDrag](dataview/api/dataview_beforedrag_event.md), [beforeDrop](dataview/api/dataview_beforedrop_event.md), [cancelDrop](dataview/api/dataview_canceldrop_event.md), [canDrop](dataview/api/dataview_candrop_event.md), [dragIn](dataview/api/dataview_dragin_event.md), [dragOut](dataview/api/dataview_dragout_event.md), [dragStart](dataview/api/dataview_dragstart_event.md)
 - The ability [to enable/disable selection of items](dataview/usage_selection.md) in DataView via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the selection object
 - The ability to use the simplified versions of the [afterSelect](selection/api/selection_afterselect_event.md), [afterUnSelect](selection/api/selection_afterunselect_event.md), [beforeSelect](selection/api/selection_beforeselect_event.md), [beforeUnSelect](selection/api/selection_beforeunselect_event.md) events of Selection object
-- The ability to select all DataView items at once by using ["Ctrl+A"](dataview/configuration.md#arrow-keys-navigation) combination 
+- The ability to select all DataView items at once by using ["Ctrl+A"](dataview/configuration.md#arrow-keys-navigation) combination
 
 #### Form
 
@@ -1616,14 +1552,12 @@ The update brings various changes in the API methods. Check the [Migration artic
 - The new [afterValidate](form/api/form_aftervalidate_event.md) and [beforeValidate](form/api/form_beforevalidate_event.md) events
 - The new [click](form/api/form_click_event.md) event
 
-
-
 #### Form controls
 
 - New Form controls: [CheckboxGroup](form/checkboxgroup.md) and [Spacer](form/spacer.md)
 - New "focus()" method of Form controls: [DatePicker](form/api/calendar/calendar_focus_method.md), [Checkbox](form/api/checkbox/checkbox_focus_method.md), [ColorPicker](form/api/colorpicker/colorpicker_focus_method.md), [Combo](form/api/combo/combo_focus_method.md), [Input](form/api/input/input_focus_method.md), [RadioGroup](form/api/radiogroup/radiogroup_focus_method.md), [Select](form/api/select/select_focus_method.md), [Textarea](form/api/textarea/textarea_focus_method.md), [TimePicker](form/api/timepicker/timepicker_focus_method.md) 
 - The new "getProperties()" and "setProperties()" methods are added for Form controls: [Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api)
-- The Event Systems are added for Form controls: [Button](form/api/api_overview.md#button-events), [DatePicker](form/api/api_overview.md#datepicker-events), [Checkbox](form/api/api_overview.md#checkbox-events), [ColorPicker](form/api/api_overview.md#color-picker-events), [Combo](form/api/api_overview.md#combo-events), [Input](form/api/api_overview.md#input-events), [RadioGroup](form/api/api_overview.md#radiogroup-events), [Select](form/api/api_overview.md#select-events), [Slider](form/api/api_overview.md#slider-events), [Text](form/api/api_overview.md#text-events), [Textarea](form/api/api_overview.md#textarea-events), [TimePicker](form/api/api_overview.md#timepicker-events) 
+- The Event Systems are added for Form controls: [Button](form/api/api_overview.md#button-events), [DatePicker](form/api/api_overview.md#datepicker-events), [Checkbox](form/api/api_overview.md#checkbox-events), [ColorPicker](form/api/api_overview.md#color-picker-events), [Combo](form/api/api_overview.md#combo-events), [Input](form/api/api_overview.md#input-events), [RadioGroup](form/api/api_overview.md#radiogroup-events), [Select](form/api/api_overview.md#select-events), [Slider](form/api/api_overview.md#slider-events), [Text](form/api/api_overview.md#text-events), [Textarea](form/api/api_overview.md#textarea-events), [TimePicker](form/api/api_overview.md#timepicker-events)
 - SimpleVault control. New events: 
 [AfterHide](form/api/simplevault/simplevault_afterhide_event.md), [AfterShow](form/api/simplevault/simplevault_aftershow_event.md), [AfterValidate](form/api/simplevault/simplevault_aftervalidate_event.md), [BeforeHide](form/api/simplevault/simplevault_beforehide_event.md), [BeforeShow](form/api/simplevault/simplevault_beforeshow_event.md), [BeforeValidate](form/api/simplevault/simplevault_beforevalidate_event.md), [Change](form/api/simplevault/simplevault_change_event.md)
 - Checkbox control. The [isChecked()](form/api/checkbox/checkbox_ischecked_method.md) method and the ["text"](form/api/checkbox/api_checkbox_properties.md) property are added
@@ -1637,7 +1571,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - Textarea control. The ["maxlength", "minlength"](form/api/textarea/api_textarea_properties.md) attributes are added
 - Textarea control. The validation for [number of characters](form/work_with_form.md#number-of-allowed-characters) allowed in the textarea field is added 
 - TimePicker control. The ["valueFormat"](form/api/timepicker/api_timepicker_properties.md) attribute is added
- 
+
 #### Grid
 
 - The ability to add event handlers to the custom template of a Grid cell via the [eventHandlers](grid/api/grid_eventhandlers_config.md) property of Grid
@@ -1652,13 +1586,10 @@ The update brings various changes in the API methods. Check the [Migration artic
 - The ability to remove selection from previously selected cells via the [removeCell()](grid/api/selection/selection_removecell_method.md) method of the Selection object of Grid
 - New events of the Selection object of Grid: [afterSelect](grid/api/selection/selection_afterselect_event.md), [afterUnSelect](grid/api/selection/selection_afterunselect_event.md), [beforeSelect](grid/api/selection/selection_beforeselect_event.md), [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md)
 
-
-
 #### Layout
 
 - New properties of a layout cell: [maxHeight](layout/api/cell/layout_cell_maxheight_config.md), [maxWidth](layout/api/cell/layout_cell_maxwidth_config.md), [minHeight](layout/api/cell/layout_cell_minheight_config.md), [minWidth](layout/api/cell/layout_cell_minwidth_config.md)
 - The ability to specify borders between cells via the [type](layout/api/cell/layout_cell_type_config.md) configuration option of a Layout cell
-
 
 #### List
 
@@ -1666,7 +1597,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - New drag-n-drop events of List: [afterDrag](list/api/list_afterdrag_event.md), [afterDrop](list/api/list_afterdrop_event.md), [beforeDrag](list/api/list_beforedrag_event.md), [beforeDrop](list/api/list_beforedrop_event.md), [cancelDrop](list/api/list_canceldrop_event.md), [canDrop](list/api/list_candrop_event.md), [dragIn](list/api/list_dragin_event.md), [dragOut](list/api/list_dragout_event.md), [dragStart](list/api/list_dragstart_event.md)
 - The ability [to enable/disable selection of items](list/usage_selection.md) in List via the related [enable()](selection/api/selection_enable_method.md)/ [disable()](selection/api/selection_disable_method.md) methods of the Selection object
 - The ability to use the simplified versions of the [afterSelect](selection/api/selection_afterselect_event.md), [afterUnSelect](selection/api/selection_afterunselect_event.md), [beforeSelect](selection/api/selection_beforeselect_event.md), [beforeUnSelect](selection/api/selection_beforeunselect_event.md) events of Selection object
-- The ability to select all List items at once by using ["Ctrl+A"](list/configuration.md#arrow-keys-navigation) combination 
+- The ability to select all List items at once by using ["Ctrl+A"](list/configuration.md#arrow-keys-navigation) combination
 
 #### Menu
 
@@ -1716,7 +1647,6 @@ The update brings various changes in the API methods. Check the [Migration artic
 - The ability to remove selection from previously selected cells via the [removeCell()](treegrid/api/selection/selection_removecell_method.md) method of the Selection object of TreeGrid
 - New events of the Selection object of TreeGrid: [afterSelect](treegrid/api/selection/selection_afterselect_event.md), [afterUnSelect](treegrid/api/selection/selection_afterunselect_event.md), [beforeSelect](treegrid/api/selection/selection_beforeselect_event.md), [beforeUnSelect](treegrid/api/selection/selection_beforeunselect_event.md)
 
- 
 ### Updates
 
 - Form. The [afterHide](form/api/form_afterhide_event.md), [afterShow](form/api/form_aftershow_event.md), [beforeHide](form/api/form_beforehide_event.md), [beforeShow](form/api/form_beforeshow_event.md) events are updated - the `id` parameter is replaced with the `name` and `value` ones.
@@ -1730,7 +1660,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - SimpleVault control of Form. The [](form/api/simplevault/simplevault_beforeuploadfile_event.md), [](form/api/simplevault/simplevault_uploadbegin_event.md), [](form/api/simplevault/simplevault_uploadcomplete_event.md), [](form/api/simplevault/simplevault_uploadfail_event.md), [](form/api/simplevault/simplevault_uploadfile_event.md), [](form/api/simplevault/simplevault_uploadprogress_event.md) events are improved
 - TimePicker control of Form. The [getValue()](form/api/timepicker/timepicker_getvalue_method.md)/ [setValue()](form/api/timepicker/timepicker_setvalue_method.md) methods are updated
 - Form. The [getValue()](form/api/form_getvalue_method.md) method is updated
-- Grid/TreeGrid. The "splitAt" configuration property is replaced by the "leftSplit" one 
+- Grid/TreeGrid. The "splitAt" configuration property is replaced by the "leftSplit" one
 - [Grid](grid/api/grid_beforecolumndrag_event.md)/[TreeGrid](treegrid/api/treegrid_beforecolumndrag_event.md). The "beforeColumnDrag" event is updated - the `id` parameter is replaced with the `data` and `e` ones.
 - [Grid](grid/api/grid_beforecolumndrop_event.md)/[TreeGrid](treegrid/api/treegrid_beforecolumndrop_event.md). The "beforeColumnDrop" event is updated - the `sourceId`/ `targetId` parameters are replaced with the `data` and `e` ones.
 - Layout. [Layout patterns](layout/layout_patterns.md) section is added to docs
@@ -1743,7 +1673,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - TimePicker. The [](timepicker/api/timepicker_change_event.md) event is updated - the *object* type of the "value" parameter is added.
 - Toolbar. The ability to pass the id of a Toolbar control to the [getState()](toolbar/api/toolbar_getstate_method.md) method is added
 - Window. The [AfterHide](window/api/window_afterhide_event.md), [AfterShow](window/api/window_aftershow_event.md), [BeforeHide](window/api/window_beforehide_event.md), [BeforeShow](window/api/window_beforeshow_event.md), [HeaderDoubleClick](window/api/window_headerdoubleclick_event.md) events are updated - the new "position" and (or) "events" parameters are added.
-- Data Collection. The [filter()](data_collection/api/datacollection_filter_method.md) method is improved - the "smartFilter" attribute of the "config" parameter is added 
+- Data Collection. The [filter()](data_collection/api/datacollection_filter_method.md) method is improved - the "smartFilter" attribute of the "config" parameter is added
 - Data Collection. The [sort()](data_collection/api/datacollection_sort_method.md) method is updated - the "config" parameter is added
 - Selection object. The [add()](selection/api/selection_add_method.md) and [remove()](selection/api/selection_remove_method.md) methods are improved
 - Types of Selection are added to the TypeScript definitions
@@ -1772,9 +1702,7 @@ The update brings various changes in the API methods. Check the [Migration artic
 - The issue with incorrect saving of Grid data when using the [data.update()](data_collection/api/datacollection_update_method.md) method called from the [AfterEditEnd](grid/api/grid_aftereditend_event.md) event, and applying the [data.save()](data_collection/api/datacollection_save_method.md) method
 - The incorrect work of the [data.save()](data_collection/api/datacollection_save_method.md) method which caused only the first change of the Grid row to save
 
-
-Version 6.5.8
-------------------
+## Version 6.5.8
 
 Released on October 15, 2020
 
@@ -1783,8 +1711,7 @@ Released on October 15, 2020
 - Fix the incorrect behavior of the sorting icon in the header of a Grid column when setting the [sortable](grid/configuration.md#sortable-columns) property to false
 - Fix the issue which caused [key navigation](tree/configuration.md#key-navigation) in Tree not to work in IE
 
-Version 6.5.7
----------------
+## Version 6.5.7
 
 Released on October 15, 2020
 
@@ -1795,8 +1722,7 @@ Released on October 15, 2020
 - Fix the issue with [a tooltip added to a Title control of Toolbar](toolbar/title.md#adding-a-tooltip) which caused a tooltip not to be shown
 - Fix the issue with drag and drop of Grid columns with [selectFilter](grid/configuration.md#headerfooter-filters) filled
 
-Version 6.5.6
--------------
+## Version 6.5.6
 
 Released on October 5, 2020
 
@@ -1804,14 +1730,13 @@ Released on October 5, 2020
 
 - Fix the incorrect work of the input filter of a Grid column when placing a grid into a shadowDOM while working in Firefox
 - Fix the issue with key navigation in a grid placed to a layout cell, which caused key navigation to stop working after collapsing/expanding the layout cell
-- Fix the incorrect work of the select filter of a Grid column after resizing the column 
+- Fix the incorrect work of the select filter of a Grid column after resizing the column
 - Fix the issue with ignoring [alignment](grid/configuration.md#alignment) of data in the column's header while using [spans](grid/configuration.md#spans) in Grid
 - Fix the incorrect behavior of editors when working with several grids on one page
 - Fix the issue with the width of expanded items in Tree
 - Fix the incorrect work of selection in Grid cells when using [key navigation](grid/configuration.md#keyboard-navigation) on a page with several grids
 
-Version 6.5.5
------------------
+## Version 6.5.5
 
 Released on September 17, 2020
 
@@ -1820,8 +1745,7 @@ Released on September 17, 2020
 - Fix the behavior of the align property of a Grid column when the [spans](grid/api/grid_spans_config.md) configuration option is used
 - Fix the issue with rendering of Grid/TreeGrid
 
-Version 6.5.4
--------------
+## Version 6.5.4
 
 Released on September 15, 2020
 
@@ -1837,8 +1761,7 @@ Released on September 15, 2020
 - Fix the issue with visualization of the [mark](grid/api/api_gridcolumn_properties.md) property of a Grid column after data reloading
 - Fix the issue which caused a footer of a grid not to be included to the exported file
 
-Version 6.5.3
--------------
+## Version 6.5.3
 
 Released on September 2, 2020
 
@@ -1846,31 +1769,28 @@ Released on September 2, 2020
 
 - Fix the behavior of the [](grid/api/grid_keynavigation_config.md) property of Grid when the grid is attached to a collapsed Layout cell
 - Fix the issue with positioning of a popup relative to a Window
-- Fix issues with the event system of a checkbox editor in Grid 
+- Fix issues with the event system of a checkbox editor in Grid
 - Fix the issue with calculation of Grid height when Grid has [frozen columns](grid/configuration.md#frozen-columns)
-- Fix the behavior of the [](grid/api/grid_adjust_config.md) property of Grid when some columns are [hidden](grid/configuration.md#hidden-columns) 
+- Fix the behavior of the [](grid/api/grid_adjust_config.md) property of Grid when some columns are [hidden](grid/configuration.md#hidden-columns)
 - Mechanism of appearing of a Popup widget on a page is reworked
 - Checking the incorrect data of the [](grid/api/selection/selection_setcell_method.md) method of Grid is added
 - Fix issues with minimal and maximal values of scales in Chart
 
-
-Version 6.5.2
--------------
+## Version 6.5.2
 
 Released on July 14, 2020
 
 ### Fixes
 
-- Fixed types in d.ts 
+- Fixed types in d.ts
 - Issue with the [](grid/api/grid_editcell_method.md) method in Grid
 - Issue with the [](grid/api/grid_removerowcss_method.md) method in Grid
 - Issue with Grid while using together with Window
-- Issue with "email" validation rule of input in Form 
+- Issue with "email" validation rule of input in Form
 - Improved editing mode when drag and drop is enabled in Tree
 - Issue with rendering nested levels of TreeGrid items
 
-Version 6.5.1
-----------------
+## Version 6.5.1
 
 Released on June 16, 2020
 
@@ -1878,8 +1798,7 @@ Released on June 16, 2020
 
 - Issue with npm codebase build
 
-Version 6.5
-----------------
+## Version 6.5
 
 Released on June 16, 2020
 
@@ -1898,7 +1817,7 @@ Released on June 16, 2020
 #### TreeGrid 
 
 - The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-inside-the-grid) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
-- New [](treegrid/api/treegrid_beforecolumndrag_event.md) and [](treegrid/api/treegrid_beforecolumndrop_event.md) events are added 
+- New [](treegrid/api/treegrid_beforecolumndrag_event.md) and [](treegrid/api/treegrid_beforecolumndrop_event.md) events are added
 - The ability to [group data in TreeGrid](treegrid/usage.md#grouping-data) using the [](treegrid/api/treegrid_groupby_method.md) method
 - The possibility to set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option of TreeGrid
 - The ability [to align data in a column as well as in the header of a column](treegrid/configuration.md#alignment)
@@ -1934,9 +1853,7 @@ Released on June 16, 2020
 - <a href = "https://github.com/DHTMLX/react-widgets" target="_blank">Suite with React demo</a> is updated
 - Ability to work with number type of id in Combobox, DataView, List widgets and in Select control of Form
 
-
-Version 6.4.4
-----------------
+## Version 6.4.4
 
 Released on May 19, 2020
 
@@ -1956,8 +1873,7 @@ Released on May 19, 2020
 - Fix rendering of custom HTML content in Window
 - Fix priority of the modal window while calling more than one window
 
-Version 6.4.3
-----------------
+## Version 6.4.3
 
 Released on April 29, 2020
 
@@ -1980,9 +1896,7 @@ Released on April 29, 2020
 - Fix the issue with the configuration of the `showText` property in Chart
 - Fix calculation of width and height in Chart (Pie, 3DPie, Donut, Radar)
 
-
-Version 6.4.2
-----------------
+## Version 6.4.2
 
 Released on March 3, 2020
 
@@ -1994,13 +1908,11 @@ Released on March 3, 2020
 - Issue with rendering of Chart at zero value
 - Status of an active element is added in Menu
 - The ability to check validation of values is added in Colorpicker
-- Styles for all inputs with invalid values for Firefox browser are fixed 
+- Styles for all inputs with invalid values for Firefox browser are fixed
 
-Version 6.4.1
-----------------
+## Version 6.4.1
 
 Released on January 30, 2020
-
 
 #### Fixes
 
@@ -2009,10 +1921,7 @@ Released on January 30, 2020
 - The issue with the headerIcon property of a layout cell
 - The issue with the height of layout cells when the layout has a header
 
-
-
-Version 6.4
-----------------
+## Version 6.4
 
 Released on January 28, 2020
 
@@ -2028,8 +1937,7 @@ Released on January 28, 2020
 
 - The [](chart/api/chart_serieclick_event.md) event is added
 - The ability to rotate labels of data items on the scale using [the scaleRotate property in the configuration of the scale](chart/configuration_properties.md#scales)
-- The ability to rotate text values of data items in Bar and X-Bar chart via [the showTextRotate property in the configuration of the series](chart/configuration_properties.md#series) 
-
+- The ability to rotate text values of data items in Bar and X-Bar chart via [the showTextRotate property in the configuration of the series](chart/configuration_properties.md#series)
 
 #### ColorPicker
 
@@ -2043,7 +1951,6 @@ Released on January 28, 2020
 - The ability to specify an array of data objects before initialization via the [](combobox/api/combobox_data_config.md) configuration property
 - The possibility to define the position of a label of a combobox using the [](combobox/api/combobox_labelposition_config.md) property
 
-
 #### Dataview
 
 - The [](dataview/api/dataview_itemmouseover_event.md) event is added
@@ -2053,14 +1960,13 @@ Released on January 28, 2020
 - The ability [to check whether a form or a form control is disabled on the page](form/work_with_form.md#checking-if-a-form-is-disabled) via the [](form/api/form_isdisabled_method.md) method 
 - The possibility [to disable a form on a page](form/work_with_form.md#enablingdisabling-a-form) using the [](form/api/form_disable_method.md) method
 - The possibility [to enable a form on a page](form/work_with_form.md#enablingdisabling-a-form) using the [](form/api/form_enable_method.md) method
-- The possibility [to make a form disabled](form/configuration.md#making-form-disabled) using the [](form/api/form_disabled_config.md) property 
+- The possibility [to make a form disabled](form/configuration.md#making-form-disabled) using the [](form/api/form_disabled_config.md) property
 - The ability to use methods for [Button](form/api/api_overview.md#button-api), [DatePicker](form/api/api_overview.md#datepicker-api), [Checkbox](form/api/api_overview.md#checkbox-api), [ColorPicker](form/api/api_overview.md), [Combo](form/api/api_overview.md#combo-api), [Input](form/api/api_overview.md#input-api), [RadioGroup](form/api/api_overview.md#radiogroup-api), [Select](form/api/api_overview.md#select-api), [SimpleVault](form/api/api_overview.md#simple-vault-api), [Slider](form/api/api_overview.md#slider-api), [Text](form/api/api_overview.md#text-api), [Textarea](form/api/api_overview.md#textarea-api), [TimePicker](form/api/api_overview.md#timepicker-api) Form controls: `disable()`, `enable()`, `isDisabled()`
 - The possibility to specify the maximum number of characters allowed in the input via the `maxlength` attribute of the [](form/input.md) Form control
 - The ability [to set the format of the value that will be returned while getting the current value of DatePicker control using the valueFormat property](form/api/calendar/api_calendar_properties.md)
 - The ability to define the position of a label for [](form/button.md), [](form/calendar.md), [](form/checkbox.md), [](form/colorpicker.md), [](form/combo.md), [](form/input.md), [](form/radiogroup.md), [](form/select.md), [](form/simplevault.md), [](form/slider.md), [](form/text.md), [](form/textarea.md), [](form/timepicker.md) Form controls using the `labelPosition` attribute
-- The possibility to specify the `url` attribute to which form data will be sent to for [Button Form control](form/api/button/api_button_properties.md) 
+- The possibility to specify the `url` attribute to which form data will be sent to for [Button Form control](form/api/button/api_button_properties.md)
 - The [](form/api/form_foreach_method.md) method is added
-
 
 #### Grid
 
@@ -2082,7 +1988,6 @@ Released on January 28, 2020
 - The [](layout/api/cell/layout_cell_toggle_method.md) method is added
 - The [](layout/api/layout_foreach_method.md) method is added
 - The ability to set the height for a cell of a layout with a header via the [](layout/api/cell/layout_cell_headerheight_config.md) configuration property of a cell
-
 
 #### List
 
@@ -2111,7 +2016,7 @@ Released on January 28, 2020
 - The possibility [to equip each Tabbar tab with a close button](tabbar/configuring_tabbar.md#close-buttons-for-tabs) using the [](tabbar/api/tabbar_closable_config.md) property
 - The [](tabbar/api/tabbar_beforeclose_event.md) and [](tabbar/api/tabbar_afterclose_event.md) events are added
 - The ability [to make a tab or several tabs disabled](tabbar/configuring_tabbar.md#disabled-tabs) using the [](tabbar/api/tabbar_disabled_config.md) property 
-- The ability [to disable/enable a tab on a page](tabbar/work_with_tabbar.md#enablingdisabling-a-tab) via the corresponding [](tabbar/api/tabbar_disabletab_method.md) and [](tabbar/api/tabbar_enabletab_method.md) methods 
+- The ability [to disable/enable a tab on a page](tabbar/work_with_tabbar.md#enablingdisabling-a-tab) via the corresponding [](tabbar/api/tabbar_disabletab_method.md) and [](tabbar/api/tabbar_enabletab_method.md) methods
 
 #### TimePicker
 
@@ -2138,7 +2043,7 @@ Released on January 28, 2020
 
 #### Helpers
 
-- The possibility [to load data dynamically using the LazyDataProxy helper](helpers/lazydataproxy.md) 
+- The possibility [to load data dynamically using the LazyDataProxy helper](helpers/lazydataproxy.md)
 
 #### Data Collection
 
@@ -2146,7 +2051,6 @@ Released on January 28, 2020
 - The [](data_collection/api/datacollection_changeid_method.md) method is added
 - The ability to check whether the specified data range is loaded from the server using the [](data_collection/api/datacollection_isdataloaded_method.md) method
 - The [](data_collection/api/datacollection_beforelazyload_event.md) and [](data_collection/api/datacollection_afterlazyload_event.md) events are added
-
 
 #### Tree Collection
 
@@ -2158,7 +2062,6 @@ Released on January 28, 2020
 - Now the [](list/api/list_multiselection_config.md) property [allows setting the mode of multiselection in List](list/configuration.md#multiple-selection-of-items)
 - The getValue method of [DatePicker Form control](form/api/calendar/calendar_getvalue_method.md)
 
-
 #### Fixes
 
 - The issue with ability to use all types of [chart scales](chart/api/chart_scales_config.md) in any combinations
@@ -2169,8 +2072,7 @@ Released on January 28, 2020
 - The issue with styles when Combobox is disabled
 - Issues with the `filter()` method in Tree Collection
 
-Version 6.3.1 
----------------
+## Version 6.3.1
 
 Released on December 18, 2019
 
@@ -2182,8 +2084,7 @@ Released on December 18, 2019
 - Add the ability to set the `name` attribute in the `setValue` method of Form control as `key`
 - Issue with the Combo control of Form
 
-Version 6.3 
----------------
+## Version 6.3
 
 Released on December 12, 2019
 
@@ -2201,7 +2102,7 @@ Released on December 12, 2019
 #### Grid
 
 - [Keyboard navigation](grid/configuration.md#keyboard-navigation)
-- The possibility to finish editing of a cell via the [editEnd()](grid/api/grid_editend_method.md) method 
+- The possibility to finish editing of a cell via the [editEnd()](grid/api/grid_editend_method.md) method
 - The ability [to add custom elements into Grid cells](grid/configuration.md#html-content-of-grid-columns) using the [](grid/api/grid_htmlenable_config.md) property
 
 #### TreeGrid
@@ -2243,8 +2144,7 @@ Released on December 12, 2019
 - Issue with the validation property of Form controls
 - Behavior of a TimePicker control of Form
 
-Version 6.2.3 
----------------
+## Version 6.2.3
 
 Released on November 19, 2019
 
@@ -2256,8 +2156,7 @@ Released on November 19, 2019
 - Issue with the `movable` property in Window
 - Issue with Window fixation
 
-Version 6.2.2 
----------------
+## Version 6.2.2
 
 Released on November 5, 2019
 
@@ -2266,8 +2165,7 @@ Released on November 5, 2019
 - Issues with selection in Grid
 - Issue with the height of a cell in Layout
 
-Version 6.2.1 
----------------
+## Version 6.2.1
 
 Released on October 25, 2019
 
@@ -2276,9 +2174,7 @@ Released on October 25, 2019
 - Issue with the `setValue()` method in Calendar
 - Issue with the combo filters in Grid
 
-
-Version 6.2
----------------
+## Version 6.2
 
 Released on October 23, 2019
 
@@ -2287,7 +2183,6 @@ Released on October 23, 2019
 #### Calendar
 
 - The ability [to select a range of dates in one calendar](calendar/configuring.md#range-mode)
-
 
 #### Form 
 
@@ -2318,7 +2213,7 @@ Released on October 23, 2019
 
 #### Calendar
 
-- The possibility to set the start and end dates for a calendar in the range mode via the [setValue()](calendar/api/calendar_setvalue_method.md) method 
+- The possibility to set the start and end dates for a calendar in the range mode via the [setValue()](calendar/api/calendar_setvalue_method.md) method
 - The ability to get the start and end dates from the selected range of dates in the calendar via the [getValue()](calendar/api/calendar_getvalue_method.md) method
 
 #### Grid
@@ -2335,33 +2230,28 @@ Released on October 23, 2019
 - Issue with Timepicker Form control
 - Issue with Colorpicker Form control
 
-
-Version 6.1.7 
----------------
+## Version 6.1.7
 
 Released on October 10, 2019
 
 ### Fixes
 
-- Issue with custom validation in Form 
+- Issue with custom validation in Form
 - Issue with the `value` property in Form
 - Issue with editor on a frozen column in Grid
 
-
-Version 6.1.6 
----------------
+## Version 6.1.6
 
 Released on September 26, 2019
 
 ### Fixes
 
-- Issue with the Button events in Form 
+- Issue with the Button events in Form
 - Issue with the Uploader styles in Form
 - Issue with the header rowspans in Grid
 - Issues with the `copy()` and `move()` methods in Treecollection and Datacollection
 
-Version 6.1.5 
------------------
+## Version 6.1.5
 
 Released on September 12, 2019
 
@@ -2372,8 +2262,7 @@ Released on September 12, 2019
 - Issue with Combobox popup
 - Issue with the height of uploader in Form
 
-Version 6.1.4 
-----------------------------
+## Version 6.1.4
 
 Released on September 5, 2019
 
@@ -2387,8 +2276,7 @@ Released on September 5, 2019
 - Issues with Calendar styles
 - Fixes in samples
 
-Version 6.1.3
--------------------
+## Version 6.1.3
 
 Released on August 29, 2019
 
@@ -2398,8 +2286,7 @@ Released on August 29, 2019
 - Issues with styles in Chart
 - Issues with the `hidden` property in Checkboxes and RadioGroup of Form
 
-Version 6.1.2 
--------------------
+## Version 6.1.2
 
 Released on August 22, 2019
 
@@ -2409,8 +2296,7 @@ Released on August 22, 2019
 - Issues with Form select
 - Issue with the `add()` method of Datacollection
 
-Version 6.1.1 
--------------------
+## Version 6.1.1
 
 Released on August 16, 2019
 
@@ -2419,8 +2305,7 @@ Released on August 16, 2019
 - Issues with DnD in List and DataView
 - Issue with the `getValue()` method in Form
 
-Version 6.1
----------------
+## Version 6.1
 
 Released on August 15, 2019
 
@@ -2437,7 +2322,6 @@ Released on August 15, 2019
 - New editing-related events: `DoubleClick`, `BeforeEditStart`, `BeforeEditEnd`, `AfterEditStart`, `AfterEditEnd`
 - Multiple selection of items ([DataView](dataview/configuration.md#multiple-selection-of-items) / [List](list/configuration.md#multiple-selection-of-items)) 
 - Multiple drag-n-drop of items ([DataView](dataview/configuration.md#drag-n-drop-of-items) / [List](list/configuration.md#drag-n-drop-of-items))
-
 
 #### Data/Tree Collection
 
@@ -2470,11 +2354,9 @@ Released on August 15, 2019
 
 - The possibility to [enable editing of items](tree/configuration.md#editing-of-items) via the configuration object
 
-
 #### Window
 
 - The ability to [check the visibility of a window](window/usage.md#checking-visibility-of-window)
-
 
 ### Updates
 
@@ -2486,10 +2368,9 @@ Released on August 15, 2019
 #### Form
 
 - The possibility to set values for [DatePicker](form/calendar.md), [TimePicker](form/timepicker.md), [ColorPicker](form/colorpicker.md) Form controls via inputs
-- The possibility to make Form [Inputs](form/input.md) hidden 
+- The possibility to make Form [Inputs](form/input.md) hidden
 - The autocomplete feature for Form [Inputs](form/input.md)  
-- Validation of a Form [Select](form/select.md) control 
-
+- Validation of a Form [Select](form/select.md) control
 
 #### Grid
 
@@ -2500,8 +2381,7 @@ Released on August 15, 2019
 - The possibility to set value for the Combo control via the configuration object of Form
 - Behavior of the Slider control
 
-Version 6.0.4
-------------------
+## Version 6.0.4
 
 Released on August 6, 2019
 
@@ -2517,8 +2397,7 @@ Released on August 6, 2019
 - Issues with names in Calendar localization
 - Styles fixes
 
-Version 6.0.3
-------------------
+## Version 6.0.3
 
 Released on July 19, 2019
 
@@ -2529,18 +2408,16 @@ Released on July 19, 2019
 - Issues with Form validation
 - Issue with checkboxes in Tree
 - Issue with the Select all button in Combobox
-- Issue with virtual list in Combobox 
-- Issue with selection in List 
+- Issue with virtual list in Combobox
+- Issue with selection in List
 - Issue with header filters in Grid
-- Issue with footer in Window 
+- Issue with footer in Window
 - Issue with the month view in Calendar
 - Issues with key navigation in Timepicker
 - Issues with z-index in Window and Popup
 - Styles fixes
 
-
-Version 6.0.2 
------------------
+## Version 6.0.2
 
 Released on July 11, 2019
 
@@ -2550,13 +2427,12 @@ Released on July 11, 2019
 - Issues with Form elements
 - Issue with the `getValue()` method of Form
 - Issues with Menu and Context menu
-- Issues with popup in Form 
+- Issues with popup in Form
 - Issue with scroll in Combobox
 - Issue with data parsing in Toolbar
 - Styles fixes
 
-Version 6.0.1 
---------------
+## Version 6.0.1
 
 Released on July 5, 2019
 
@@ -2566,4 +2442,3 @@ Released on July 5, 2019
 - Issue with the `set/getValue()` methods of Slider
 - Issue with buttons in Confirm message box
 - Styles fixes
-
