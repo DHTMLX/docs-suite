@@ -16,7 +16,7 @@ Released on June 24, 2024
 
 - Window. The [`Tabbar.tabAlign`](/tabbar/api/tabbar_tabalign_config/) property is ignored if the Tabbar is placed within the Window control
 - Form. The `helpMessage` is displayed in the incorrect position if the Form is scrolled to the bottom edge
-- Core. Memory leaks (Layout and Form components)
+- Core. Memory leaks (Layout, Combobox, Form components)
 
 ## Version 8.3.12
 
