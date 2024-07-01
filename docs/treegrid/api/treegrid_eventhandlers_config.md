@@ -52,7 +52,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
         // add an event handler to the header cell
         onclick: {
            header_book: (event, data) => {
-                console.log(JSON.stringify(data.column, null, 2)); 
+                console.log(JSON.stringify(data.col, null, 2)); 
             }
         },
         // add an event handler to the HTML element of the custom template of cells
@@ -98,7 +98,7 @@ const grid = new dhx.Grid("grid", {
     eventHandlers: {
         onmouseover: {
             cell__html: (event, data) => {
-                console.log(JSON.stringify(data.column, null, 2)); 
+                console.log(JSON.stringify(data.col, null, 2)); 
             } 
         } 
     } 

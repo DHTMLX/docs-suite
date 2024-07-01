@@ -51,7 +51,7 @@ const grid = new dhx.Grid("grid_container", {
         // add an event handler to the header cell
         onclick: {
            header_country: (event, data) => {
-                console.log(JSON.stringify(data.column, null, 2)); 
+                console.log(JSON.stringify(data.col, null, 2)); 
             }
         },
         // add an event handler to the HTML element of the custom template of cells
@@ -91,7 +91,7 @@ const grid = new dhx.Grid("grid_container", {
     eventHandlers: { 
         onclick: { 
             cell__html: (event, data) => {
-                console.log(JSON.stringify(data.column, null, 2));
+                console.log(JSON.stringify(data.col, null, 2));
             },
         },
         onmouseover: {

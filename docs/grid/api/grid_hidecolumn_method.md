@@ -14,7 +14,7 @@ description: You can explore the hideColumn method of Grid in the documentation 
 - `colId: string | number` - the id of a column
 
 @example:
-grid.hideColumn(colId);
+grid.hideColumn("colId");
 
 @descr:
 

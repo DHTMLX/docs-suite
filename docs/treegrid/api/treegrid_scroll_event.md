@@ -17,7 +17,7 @@ The callback of the event is called with the following parameters:
 
 @example:
 grid.events.on("scroll", ({ top, left }) => {
-    console.log("The grid is scrolled to "+top, left);
+    console.log("The grid is scrolled to ", top, left);
 });
 
 @descr:

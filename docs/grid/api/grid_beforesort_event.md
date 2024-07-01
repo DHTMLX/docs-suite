@@ -20,7 +20,7 @@ Return `false` to prevent a column from being sorted; otherwise, `true`.
 
 @example:
 grid.events.on("beforeSort", (column, dir) => {
-    console.log("beforeSort", column, dir);
+    // your logic here
     // return false;
 });
 

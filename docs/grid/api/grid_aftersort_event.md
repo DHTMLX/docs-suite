@@ -18,7 +18,7 @@ The callback of the event is called with the following parameters:
 
 @example:
 grid.events.on("afterSort", (column, dir) => {
-    console.log(column, dir);
+    // your logic here
 });
 
 @descr:
