@@ -8,14 +8,16 @@ description: You can explore the resize event of TreeGrid in the documentation o
 
 @short: fires on resizing a column
 
-@signature: {'resize: (col: object, e: MouseEvent) => void;'}
+@signature: {'resize: (column: object, event: MouseEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("resize", function(col,e){
+grid.events.on("resize", (column, event) => {
     // your code here
 });
 

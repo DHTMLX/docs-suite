@@ -8,18 +8,20 @@ description: You can explore the beforeEditStart event of TreeGrid in the docume
 
 @short: fires before editing of a cell has started
 
-@signature: {'beforeEditStart: (row: object, col: object, editorType: string) => boolean | void;'}
+@signature: {'beforeEditStart: (row: object, column: object, editorType: string) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
-- `col: object` - an object with a column configuration
-- `editorType: string` - the type of a cell editor:"input", "select",  "datePicker", "checkbox", "combobox", "textarea", "multiselect"
+- `column: object` - an object with a column configuration
+- `editorType: string` - the type of a cell editor: "input", "select",  "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @returns:
 Return `false` to block editing of a cell; otherwise, `true`.
 
 @example:
-grid.events.on("beforeEditStart", function(row,col,editorType){
+grid.events.on("beforeEditStart", (row, column, editorType) => {
     // your logic here
     return false;
 });

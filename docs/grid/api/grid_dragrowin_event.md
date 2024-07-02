@@ -8,17 +8,19 @@ description: You can explore the dragRowIn event of Grid in the documentation of
 
 @short: fires when a row is dragged to another potential target
 
-@signature: {'dragRowIn: (data: object, events: MouseEvent) => void;'}
+@signature: {'dragRowIn: (data: object, event: MouseEvent) => void;'}
 
 @params:
-- `data: object` - data object. It contains the following parameters:
+The callback of the event is called with the following parameters:
+
+- `data: object` - data object. It contains the following properties:
     - `start: string | number` - the id of a row, from which the dragging process has started
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("dragRowIn", function(data, events) {
+grid.events.on("dragRowIn", (data, event) => {
   // your logic here
 });
 

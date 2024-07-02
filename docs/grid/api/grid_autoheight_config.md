@@ -10,7 +10,7 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 @short: Optional. Makes long text split into multiple lines based on the width of the column, controls the automatic height adjustment of the header/footer and cells with data
 
-@signature: autoHeight?: boolean;
+@signature: {'autoHeight?: boolean;'}
 
 @default: false
 

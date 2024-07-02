@@ -8,18 +8,19 @@ description: You can explore the beforeKeyDown event of Grid in the documentatio
 
 @short: fires before the user is pressing a shortcut key
 
-@signature: {'beforeKeyDown: (e: Event) => boolean | void;'}
+@signature: {'beforeKeyDown: (event: Event) => boolean | void;'}
 
 @params:
-- `e: Event` - a native KeyboardEvent object
+The callback of the event is called with the following parameters:
+- `event: Event` - a native KeyboardEvent object
 
 @returns:
-Return `false` to prevent pressing a shortcut key; otherwise, `false`.
+Return `false` to prevent pressing a shortcut key; otherwise, `true`.
 
 @example:
-grid.events.on("beforeKeyDown", function (e) {
+grid.events.on("beforeKeyDown", (event) => {
     // your logic here
-    // return true
+    // return false;
 });
 
 @descr:

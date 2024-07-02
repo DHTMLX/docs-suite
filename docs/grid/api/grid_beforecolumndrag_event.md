@@ -10,14 +10,16 @@ description: You can explore the beforeColumnDrag event of Grid in the documenta
 
 @short: fires before dragging of a column has started
 
-@signature: {'beforeColumnDrag: (data: object, events: MouseEvent) => void | boolean;'}
+@signature: {'beforeColumnDrag: (data: object, event: MouseEvent) => void | boolean;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `data: object` - data object. It contains the following parameters:
     - `start: string | number` - the id of a column, from which the dragging process has started
-    - `source: array` - an array with ids of dragged columns
+    - `source: array` - an array with the ids of the dragged columns
     - `target: string | number` - the id of a potential target column
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @returns:
 Return `false` to prevent dragging a column; otherwise, `true`.
@@ -40,8 +42,8 @@ grid.events.on("beforeColumnDrag", ({ start }) => start !== "density");
 
 @changelog:
 
-- Before v7.0, the event took one parameter - the column id. 
-- Starting from v7.0, the event takes two parameters: **data** and **e**.
+- Before v7.0, the callback of the event took one parameter - the column id 
+- Starting from v7.0, the callback of the event takes two parameters: **data** and **event**
 - The event was added in v6.5
 
 [comment]: # (@relatedapi:)

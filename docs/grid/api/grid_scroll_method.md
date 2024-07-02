@@ -15,7 +15,7 @@ description: You can explore the scroll method of Grid in the documentation of t
 - `y: number` - the Y coordinate
 
 @example:
-grid.scroll(75,230);
+grid.scroll(75, 230);
 
 @descr:
 

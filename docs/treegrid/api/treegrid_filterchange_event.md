@@ -11,12 +11,14 @@ description: You can explore the filterChange event of TreeGrid in the documenta
 @signature: {'filterChange: (value: string, colId: string | number, filterId: "inputFilter" | "selectFilter" | "comboFilter") => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `value: string` - an entered value
 - `colId: string | number` - the id of a column
 - `filterId: string` - the type of a filter: "inputFilter", "selectFilter", "comboFilter"
 
 @example:
-grid.events.on("filterChange", function(value,colId,filter){
+grid.events.on("filterChange", (value, colId, filter) => {
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 

@@ -11,13 +11,14 @@ description: You can explore the beforeRowHide event of Grid in the documentatio
 @signature: {'beforeRowHide: (row: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 - `row: object` - an object with a row configuration
 
 @returns:
 Return `false` to prevent a row from being hidden; otherwise, `true`.
 
 @example:
-grid.events.on("beforeRowHide", function(row){
+grid.events.on("beforeRowHide", (row) => {
     // your logic here
     return false;
 });

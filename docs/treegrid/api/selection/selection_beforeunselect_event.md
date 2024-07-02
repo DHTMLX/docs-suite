@@ -8,19 +8,20 @@ description: You can explore the beforeUnSelect event of TreeGrid in the documen
 
 @short: fires before unselecting a cell
 
-@signature: {'beforeUnSelect: (row: object, col: object) => boolean | void;'}
+@signature: {'beforeUnSelect: (row: object, column: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @returns:
 Return `false` to prevent unselecting of a cell; otherwise, `true`.
 
 @example:
-treegrid.selection.events.on("beforeUnSelect", function(row, col){
-    console.log("beforeUnSelect", row, col); 
+treegrid.selection.events.on("beforeUnSelect", (row, column) => {
+    console.log("beforeUnSelect", row, column); 
     return false;
 });
 
@@ -29,8 +30,8 @@ treegrid.selection.events.on("beforeUnSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-treegrid.events.on("BeforeUnSelect", function(row, col){
-    console.log("beforeUnSelect", row, col); 
+treegrid.events.on("BeforeUnSelect", (row, column) => {
+    console.log("beforeUnSelect", row, column); 
     return false;
 });
 ~~~

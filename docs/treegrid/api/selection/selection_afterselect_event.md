@@ -8,15 +8,17 @@ description: You can explore the afterSelect event of TreeGrid in the documentat
 
 @short: fires after selecting a cell
 
-@signature: {'afterSelect: (row: object, col: object) => void;'}
+@signature: {'afterSelect: (row: object, column: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @example:
-treegrid.selection.events.on("afterSelect", function(row, col){
-    console.log("afterSelect", row, col); 
+treegrid.selection.events.on("afterSelect", (row, column) => {
+    console.log("afterSelect", row, column); 
 });
 
 @descr:
@@ -24,8 +26,8 @@ treegrid.selection.events.on("afterSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-treegrid.events.on("afterSelect", function(row, col){
-    console.log("afterSelect", row, col); 
+treegrid.events.on("afterSelect", (row, column) => {
+    console.log("afterSelect", row, column); 
 });
 ~~~
 

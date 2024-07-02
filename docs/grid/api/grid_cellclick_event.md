@@ -8,15 +8,16 @@ description: You can explore the cellClick event of Grid in the documentation of
 
 @short: fires on click on a grid cell
 
-@signature: {'cellClick: (row: object, col: object, e: MouseEvent) => void;'}
+@signature: {'cellClick: (row: object, column: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 - `row: object` - an object with a row configuration
 - `column: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("cellClick", function(row,column,e){
+grid.events.on("cellClick", (row, column, event) => {
      // your logic here
 });
 

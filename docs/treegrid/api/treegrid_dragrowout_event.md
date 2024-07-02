@@ -8,18 +8,19 @@ description: You can explore the dragRowOut event of TreeGrid in the documentati
 
 @short: fires when a row is dragged out of a potential target
 
-@signature: {'dragRowOut: (data: object, events: MouseEvent) => void;'}
+@signature: {'dragRowOut: (data: object, event: MouseEvent) => void;'}
 
 @params:
-- `data: object` - data object. It contains the following parameters:
+The callback of the event is called with the following parameters:
+
+- `data: object` - data object. It contains the following properties:
     - `start: string | number` - the id of a row, from which the dragging process has started
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
-- `events: MouseEvent` - a native HTML event object
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("dragRowOut", function(data, events) {
+treegrid.events.on("dragRowOut", (data, event) => {
     // your logic here
 });
 

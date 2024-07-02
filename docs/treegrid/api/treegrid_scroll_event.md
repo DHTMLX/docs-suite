@@ -11,11 +11,13 @@ description: You can explore the scroll event of TreeGrid in the documentation o
 @signature: {'scroll: (scrollState: object) => void;'}
 
 @params:
-- `scrollState: object` - an object with new top and left coordinates
+The callback of the event is called with the following parameters:
+
+- `scrollState: object` - an object with the new top and left coordinates
 
 @example:
-grid.events.on("scroll", function({top,left}){
-    console.log("The grid is scrolled to "+top,left);
+grid.events.on("scroll", ({ top, left }) => {
+    console.log("The grid is scrolled to ", top, left);
 });
 
 @descr:

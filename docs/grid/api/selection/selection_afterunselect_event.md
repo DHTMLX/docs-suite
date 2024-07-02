@@ -8,24 +8,25 @@ description: You can explore the afterUnSelect event of Grid in the documentatio
 
 @short: fires after unselecting a cell
 
-@signature: {'afterUnSelect: (row: object, col: object) => void;'}
+@signature: {'afterUnSelect: (row: object, column: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @example:
-grid.selection.events.on("AfterUnSelect", function(row, col){
-    console.log("afterUnSelect", row, col); 
+grid.selection.events.on("AfterUnSelect", (row, column) => {
+    console.log("afterUnSelect", row, column); 
 });
 
 @descr:
 It is also possible to use the simplified version of the event:
 
 ~~~js
-grid.events.on("AfterUnSelect", function(row, col){
-    console.log("afterUnSelect", row, col); 
+grid.events.on("AfterUnSelect", (row, column) => {
+    console.log("afterUnSelect", row, column); 
 });
 ~~~
 

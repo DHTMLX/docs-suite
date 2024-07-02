@@ -8,15 +8,17 @@ description: You can explore the afterSort event of TreeGrid in the documentatio
 
 @short: fires after a column is sorted by clicking on its header
 
-@signature: afterSort: (col: object, dir: string) => void;
+@signature: afterSort: (column: object, dir: string) => void;
 
 @params:
-- `col: object` - an object with the configuration of a column
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with the configuration of a column
 - `dir: string` - the sorting direction ("desc", "asc")
 
 @example:
-treegrid.events.on("afterSort", (col, dir) => {
-    console.log(col, dir);
+treegrid.events.on("afterSort", (column, dir) => {
+    console.log(column, dir);
 });
 
 @descr:

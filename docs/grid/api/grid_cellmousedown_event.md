@@ -8,15 +8,17 @@ description: You can explore the cellMouseDown event of Grid in the documentatio
 
 @short: fires before releasing the left mouse button when clicking on a grid cell
 
-@signature: {'cellMouseDown: (row: object, col: object, e: MouseEvent & TouchEvent) => void;'}
+@signature: {'cellMouseDown: (row: object, column: object, event: MouseEvent & TouchEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
 - `column: object` - an object with a column configuration
-- `e: MouseEvent & TouchEvent` - a native HTML event object
+- `event: MouseEvent & TouchEvent` - a native HTML event object
 
 @example:
-grid.events.on("cellMouseDown", function(row,column,e){
+grid.events.on("cellMouseDown", (row, column, event) => {
      // your logic here
 });
 

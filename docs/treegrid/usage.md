@@ -73,9 +73,9 @@ It is possible to show and hide a column in the grid via the [](treegrid/api/tre
 
 ~~~js
 //showing a column
-treegrid.showColumn(col);
+treegrid.showColumn(column);
 //hiding a column
-treegrid.hideColumn(col);
+treegrid.hideColumn(column);
 ~~~
 
 **Related sample**: [TreeGrid. Show/hide column](https://snippet.dhtmlx.com/1gekn97m)
@@ -193,7 +193,7 @@ You can manipulate columns and rows spans inside the grid with the help of corre
 
 ### Adding spans
 
-In order to add a col/row span into the grid, use the [](treegrid/api/treegrid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
+In order to add a column/row span into the grid, use the [](treegrid/api/treegrid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
 ~~~js
 treegrid.addSpan({ 
@@ -236,7 +236,7 @@ These are possible fields of a span object:
 
 ### Getting spans
 
-You can return the col/row span a cell is a part of using the [](treegrid/api/treegrid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
+You can return the column/row span a cell is a part of using the [](treegrid/api/treegrid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~js
 const span = treegrid.getSpan("10","a"); 

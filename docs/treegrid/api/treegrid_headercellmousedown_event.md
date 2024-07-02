@@ -8,14 +8,16 @@ description: You can explore the headerCellMouseDown event of TreeGrid in the do
 
 @short: fires on moving the mouse pointer over a grid header cell
 
-@signature: {'headerCellMouseDown: (col: object, e: MouseEvent & TouchEvent) => void;'}
+@signature: {'headerCellMouseDown: (column: object, event: MouseEvent & TouchEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `e: MouseEvent | TouchEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent | TouchEvent` - a native HTML event object
 
 @example:
-grid.events.on("headerCellMouseDown", function(column,e){
+grid.events.on("headerCellMouseDown", (column, event) => {
     // your logic here
 });
 

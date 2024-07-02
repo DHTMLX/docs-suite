@@ -6,7 +6,7 @@ description: You can explore the removeSpan method of TreeGrid in the documentat
 
 # removeSpan()
 
-@short: removes a cols/rows span
+@short: removes a columns/rows span
 
 @signature: {'removeSpan(rowId: string | number, colId: string | number): void;'}
 
@@ -15,7 +15,7 @@ description: You can explore the removeSpan method of TreeGrid in the documentat
 - `colId: string | number` - the id of a column
 
 @example:
-grid.removeSpan("10","a");
+grid.removeSpan("10", "a");
 
 @descr:
 

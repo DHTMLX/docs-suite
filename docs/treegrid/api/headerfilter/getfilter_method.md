@@ -17,14 +17,14 @@ Either an HTML object or an object with Combobox configuration
 const filter1 = treegrid.getHeaderFilter("name").getFilter();
 console.log(filter1);
 // -> returns Combobox
-//  {config: {…}, _uid: 'u1670576316762', events: o, data: d, popup: f, …}
+//  { config: {…}, _uid: 'u1670576316762', events: o, data: d, popup: f, … }
 
 
 const filter2 = treegrid.getHeaderFilter("native").getFilter();
 console.log(filter2);
 // -> returns an HTML object
-// {type: 1, attrs: {…}, tag: 'label', _class: 'dhx_grid-filter__label dxi dxi-menu-down', 
-//   ref: 'native_filter', …}
+// { type: 1, attrs: {…}, tag: 'label', _class: 'dhx_grid-filter__label dxi dxi-menu-down', 
+//   ref: 'native_filter', … }
 
 @changelog:
 added in v8.0

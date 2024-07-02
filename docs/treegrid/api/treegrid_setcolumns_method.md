@@ -8,10 +8,10 @@ description: You can explore the setColumns method of TreeGrid in the documentat
 
 @short: sets configuration for TreeGrid columns
 
-@signature: {'setColumns(col: object[]): void;'}
+@signature: {'setColumns(columns: object[]): void;'}
 
 @params:
-- `col: array` - an array of objects with configuration of columns
+- `columns: array` - an array of objects with configuration of columns
 
 @example:
 grid.setColumns([

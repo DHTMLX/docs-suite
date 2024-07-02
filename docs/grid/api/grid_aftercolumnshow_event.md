@@ -8,13 +8,14 @@ description: You can explore the afterColumnShow event of Grid in the documentat
 
 @short: fires after a column is shown
 
-@signature: {'afterColumnShow: (col: object) => void;'}
+@signature: {'afterColumnShow: (column: object) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
+The callback of the event is called with the following parameters:
+- `column: object` - an object with a column configuration
 
 @example:
-grid.events.on("afterColumnShow", function(column){
+grid.events.on("afterColumnShow", (column) => {
     // your logic here
 });
 

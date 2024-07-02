@@ -743,7 +743,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     id: "select_example",
     header: [{ text: "Select example" }],
     editorType: "select",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
 },
 ~~~
 
@@ -788,7 +788,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     header: [{ text: "Multiselect example" }],
     type: "string",
     editorType: "multiselect",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
     minWidth: 360
 },
 ~~~

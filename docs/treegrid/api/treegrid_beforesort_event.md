@@ -8,18 +8,20 @@ description: You can explore the beforeSort event of TreeGrid in the documentati
 
 @short: fires before a column is sorted by clicking on its header
 
-@signature: beforeSort: (col: object, dir: string) => void | boolean;
+@signature: beforeSort: (column: object, dir: string) => void | boolean;
 
 @params:
-- `col: object` - an object with the configuration of a column
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with the configuration of a column
 - `dir: string` - the sorting direction ("desc", "asc")
 
 @returns:
 Return `false` to prevent a column from being sorted; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeSort", (col, dir) => {
-    console.log("beforeSort", col, dir);
+treegrid.events.on("beforeSort", (column, dir) => {
+    console.log("beforeSort", column, dir);
     // return false;
 });
 

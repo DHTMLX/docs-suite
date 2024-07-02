@@ -8,7 +8,7 @@ description: You can explore the addSpan method of Grid in the documentation of 
 
 @short: adds a rows/cols span
 
-@signature: addSpan(spanObj: object): void;
+@signature: {'addSpan(spanObj: object): void;'}
 
 @params:
 - `spanObj: object` - an object with configuration of a span. The object contains the following properties:

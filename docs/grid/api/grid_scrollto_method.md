@@ -15,7 +15,7 @@ description: You can explore the scrollTo method of Grid in the documentation of
 - `colId: string | number` - the id of a column
 
 @example:
-grid.scrollTo("15","c");
+grid.scrollTo("15", "c");
 
 @descr:
 

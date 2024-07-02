@@ -8,13 +8,14 @@ description: You can explore the afterColumnHide event of TreeGrid in the docume
 
 @short: fires after a column is hidden
 
-@signature: {'afterColumnHide: (col: object) => void;'}
+@signature: {'afterColumnHide: (column: object) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
+The callback of the event is called with the following parameters:
+- `column: object` - an object with a column configuration
 
 @example:
-treegrid.events.on("afterColumnHide", function(column){
+treegrid.events.on("afterColumnHide", (column) => {
     // your logic here
 });
 

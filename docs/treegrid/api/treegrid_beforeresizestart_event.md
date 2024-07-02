@@ -8,17 +8,19 @@ description: You can explore the beforeResizeStart event of TreeGrid in the docu
 
 @short: fires before resizing of a column has started
 
-@signature: {'beforeResizeStart: (col: object, events: MouseEvent) => boolean | void;'}
+@signature: {'beforeResizeStart: (column: object, event: MouseEvent) => boolean | void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `events: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @returns:
 Return `false` to block resizing of a column; otherwise, `true`.
 
 @example:
-grid.events.on("beforeResizeStart", function(col,e){
+grid.events.on("beforeResizeStart", (column, event) => {
     // your logic here
     return false;
 });
