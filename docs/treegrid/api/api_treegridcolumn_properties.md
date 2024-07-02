@@ -20,7 +20,7 @@ columns:[
         {
             text?: string | number,
             tooltip?: boolean | object,
-            tooltipTemplate?: (value: string | undefined, header: IHeader, column: object) => string | boolean,
+            tooltipTemplate?: (value: string | undefined, header: object, column: object) => string | boolean,
             align?: "left" | "center" | "right",
             colspan?: number,
             rowspan?: number,
@@ -44,7 +44,7 @@ columns:[
         {
             text?: string | number,
             tooltip?: boolean | object,
-            tooltipTemplate?: (value: string | undefined, header: IHeader, column: object) => string | boolean,
+            tooltipTemplate?: (value: string | undefined, footer: object, column: object) => string | boolean,
             css?: any,
             content?: "inputFilter" | "selectFilter" | "comboFilter" |
                       "avg" | "sum" | "max" | "min" | "count" | string,

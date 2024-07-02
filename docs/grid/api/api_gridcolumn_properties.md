@@ -20,7 +20,7 @@ columns:[
         {
             text?: string | number,
             tooltip?: boolean | object, // true by default
-            tooltipTemplate?: (value: string | undefined, header: IHeader, column: object) => string | boolean,
+            tooltipTemplate?: (value: string | undefined, header: object, column: object) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             colspan?: number,
             rowspan?: number,
@@ -45,7 +45,7 @@ columns:[
         {
             text?: string | number,
             tooltip?: boolean | object, // true by default
-            tooltipTemplate?: (value: string | undefined, footer: IFooter, col: object) => string | boolean,
+            tooltipTemplate?: (value: string | undefined, footer: object, column: object) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
             colspan?: number,
             rowspan?: number,
