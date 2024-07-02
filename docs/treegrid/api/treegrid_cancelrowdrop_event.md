@@ -8,17 +8,19 @@ description: You can explore the cancelRowDrop event of TreeGrid in the document
 
 @short: fires on moving a mouse pointer out of borders of a row while dragging the row
 
-@signature: {'cancelRowDrop: (data: object, events: MouseEvent) => any;'}
+@signature: {'cancelRowDrop: (data: object, event: MouseEvent) => any;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `data: object` - data object. It contains the following parameters:
     - `start: string | number` - the id of a row, from which the dragging process has started
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("cancelRowDrop", function(data, events) {
+treegrid.events.on("cancelRowDrop", (data, event) => {
   // your logic here
 });
 

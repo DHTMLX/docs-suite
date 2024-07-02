@@ -11,13 +11,15 @@ description: You can explore the beforeExpand event of TreeGrid in the documenta
 @signature: {'beforeExpand: (rowId: string | number) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `rowId: string | number` - the id of an expanded row
 
 @returns:
 Return `false` to block expanding of a treegrid; otherwise, `true`.
 
 @example:
-treeGrid.events.on("beforeExpand", function(rowId) {
+treeGrid.events.on("beforeExpand", (rowId) => {
     // your logic here
     return false;
 });

@@ -16,7 +16,7 @@ description: You can explore the editCell method of TreeGrid in the documentatio
 - `editorType: string` - optional, the type of an editor used in a cell: "input", "select", "datePicker", "checkbox", "combobox", "textarea", "multiselect"
 
 @example:
-grid.editCell(grid.data.getId(0),"project");
+grid.editCell(grid.data.getId(0), "project");
 
 @descr:
 

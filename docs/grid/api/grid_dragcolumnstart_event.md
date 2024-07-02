@@ -10,17 +10,19 @@ description: You can explore the dragColumnStart event of Grid in the documentat
 
 @short: fires when dragging of a column has started
 
-@signature: {'dragColumnStart: (data: object, events: MouseEvent) => void;'}
+@signature: {'dragColumnStart: (data: object, event: MouseEvent) => void;'}
 
 @params:
-- `data: object` - data object. It contains the following parameters:
+The callback of the event is called with the following parameters:
+
+- `data: object` - data object. It contains the following properties:
     - `start: string | number` - the id of a column, from which the dragging process has started
     - `source: array` - an array with ids of dragged columns
     - `target: string | number` - the id of a potential target column
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("dragColumnStart", function(data, events) {
+grid.events.on("dragColumnStart", (data, event) => {
   // your logic here
 });
 

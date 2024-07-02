@@ -13,11 +13,13 @@ description: You can explore the beforeColumnDrop event of Grid in the documenta
 @signature: {'beforeColumnDrop: (data: object, events: MouseEvent) => void | boolean;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `data: object` - data object. It contains the following parameters:
     - `start: string | number` - the id of a column, from which the dragging process has started
-    - `source: array` - an array with ids of dragged columns
+    - `source: array` - an array with the ids of the dragged columns
     - `target: string | number` - the id of a potential target column
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @returns:
 Return `false` to block the default action; otherwise, `true`.
@@ -40,8 +42,8 @@ grid.events.on("beforeColumnDrop", ({ target }) => target !== "population");
 
 @changelog:
 
-- Before v7.0, the event took two parameters - **sourceId** and **targetId**. 
-- In v7.0, the parameters were replaced with new ones: **data** and **e**.
+- Before v7.0, the callback of the event took two parameters - **sourceId** and **targetId**
+- In v7.0, the parameters were replaced with new ones: **data** and **event**
 - The event was added in v6.5
 
 [comment]: # (@relatedapi:)

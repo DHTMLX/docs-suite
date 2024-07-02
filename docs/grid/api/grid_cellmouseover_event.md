@@ -8,15 +8,15 @@ description: You can explore the cellMouseOver event of Grid in the documentatio
 
 @short: fires on moving the mouse pointer over a grid cell
 
-@signature: {'cellMouseOver: (row: object, col: object, e: MouseEvent) => void;'}
+@signature: {'cellMouseOver: (row: object, column: object, event: MouseEvent) => void;'}
 
 @params:
 - `row: object` - an object with a row configuration
-- `col: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("cellMouseOver", function(row,column,e){
+grid.events.on("cellMouseOver", (row, column, event) => {
     // your logic here
 });
 

@@ -11,6 +11,7 @@ description: You can explore the beforeFilter event of Grid in the documentation
 @signature: {'beforeFilter:({ value: string, colId?: string | number }) => void | boolean;'}
 
 @params:
+The callback of the event is called with the following parameters:
 - `value: string` - required, the entered value by which data must be filtered
 - `colId: string | number` - optional, the ID of a column
 
@@ -18,8 +19,8 @@ description: You can explore the beforeFilter event of Grid in the documentation
 Return `false` to block the filtering process; otherwise, `true`.
 
 @example:
-grid.events.on("beforeFilter", (value, id) => {
-    console.log("The", id, "column is filtered by", value, "value");
+grid.events.on("beforeFilter", (value, colId) => {
+    console.log("The", colId, "column is filtered by", value, "value");
     // return false;
 });
 

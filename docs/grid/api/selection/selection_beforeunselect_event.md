@@ -8,19 +8,20 @@ description: You can explore the beforeUnSelect event of Grid in the documentati
 
 @short: fires before unselecting a cell
 
-@signature: {'beforeUnSelect: (row: object, col: object) => boolean | void;'}
+@signature: {'beforeUnSelect: (row: object, column: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @returns:
 Return `false` to prevent unselecting of a cell; otherwise, `true`.
 
 @example:
-grid.selection.events.on("BeforeUnSelect", function(row, col){
-    console.log("beforeUnSelect", row, col); 
+grid.selection.events.on("BeforeUnSelect", (row, column) => {
+    console.log("beforeUnSelect", row, column); 
     return false;
 });
 
@@ -28,8 +29,8 @@ grid.selection.events.on("BeforeUnSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-grid.events.on("BeforeUnSelect", function(row, col){
-    console.log("beforeUnSelect", row, col); 
+grid.events.on("BeforeUnSelect", (row, column) => {
+    console.log("beforeUnSelect", row, column); 
     return false;
 });
 ~~~

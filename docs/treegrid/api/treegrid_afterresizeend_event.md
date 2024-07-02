@@ -8,14 +8,16 @@ description: You can explore the afterResizeEnd event of TreeGrid in the documen
 
 @short: fires after resizing of a column is ended
 
-@signature: {'afterResizeEnd: (column: object, events: MouseEvent) => void;'}
+@signature: {'afterResizeEnd: (column: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `column: object` - an object with a column configuration
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("afterResizeEnd", function(col,e){
+grid.events.on("afterResizeEnd", (column, event) => {
     // your logic here
 });
 

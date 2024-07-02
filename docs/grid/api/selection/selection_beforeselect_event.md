@@ -8,19 +8,20 @@ description: You can explore the beforeSelect event of Grid in the documentation
 
 @short: fires before selecting a cell
 
-@signature: {'beforeSelect: (row: object, col: object) => boolean | void;'}
+@signature: {'beforeSelect: (row: object, column: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @returns:
 Return `false` to prevent selecting of a cell; otherwise, `true`.
 
 @example:
-grid.selection.events.on("BeforeSelect", function(row, col){
-    console.log("beforeSelect", row, col); 
+grid.selection.events.on("BeforeSelect", (row, column) => {
+    console.log("beforeSelect", row, column); 
     return false;
 });
 
@@ -28,8 +29,8 @@ grid.selection.events.on("BeforeSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-grid.events.on("BeforeSelect", function(row, col){
-    console.log("beforeSelect", row, col); 
+grid.events.on("BeforeSelect", (row, column) => {
+    console.log("beforeSelect", row, column); 
     return false;
 });
 ~~~

@@ -239,7 +239,7 @@ It is easy to style necessary cells using the **addCellCss()** method. It takes 
             <td>(<i>string,number</i>) the id of a row</td>
         </tr>
         <tr>
-            <td><b>col</b></td>
+            <td><b>column</b></td>
             <td>(<i>string,number</i>) the id of a column</td>
         </tr>
         <tr>
@@ -294,7 +294,7 @@ You can mark particular cells in a grid using the **mark** property of a column 
             <td>(<i>object</i>) an object with all cells in a row</td>
         </tr>
         <tr>
-            <td><b>col</b></td>
+            <td><b>column</b></td>
             <td>(<i>object</i>) the config of a column (see the columns config)</td>
         </tr>
     </tbody>
@@ -319,7 +319,7 @@ The function should return a string with a custom CSS class for your mark.
             {
                 id: "population", header: [{ text: "Population" }],
                 // marks specified cells in a column
-                mark: function (cell, data, row, col) {
+                mark: function (cell, data, row, column) {
                     return cell > 100000000 ? "my_custom_mark" : ""
                 }
             }, 
@@ -404,7 +404,7 @@ It is possible to customize the content of cells of Grid via the **template** pr
             <td>(<i>object</i>) an object with all cells in a row</td>
         </tr>
         <tr>
-            <td><b>col</b></td>
+            <td><b>column</b></td>
             <td>(<i>object</i>) the config of a column</td>
         </tr>
     </tbody>
@@ -418,7 +418,7 @@ const grid = new dhx.Grid("grid_container", {
         { width: 150, id: "population", header: [{text: "Population"}] },
         { width: 150, id: "netChange", header: [{text: "Net Change"}],
           htmlEnable: true,
-          template: function (text, row, col) {
+          template: function (text, row, column) {
             return "<input type=\"checkbox\" " + (text > 300000 ? "checked": "")  + ">";
           }
         }
@@ -440,7 +440,7 @@ const grid = new dhx.Grid("grid_container", {
         { width: 150, id: "netChange", header: [{text: "Net Change"}],
             htmlEnable: true,
             tooltip: false,
-            template: function (text, row, col) { 
+            template: function (text, row, column) { 
                 return "<div class='cell__template'><input type='checkbox' 
                     disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
             }
@@ -477,7 +477,7 @@ Starting with v7.1, you can customize the content of the tooltip of a column via
             <td>(<i>object</i>) an object with all cells in a row</td>
         </tr>
         <tr>
-            <td><b>col</b></td>
+            <td><b>column</b></td>
             <td>(<i>object</i>) the config of a column</td>
         </tr>
     </tbody>
@@ -490,7 +490,7 @@ const grid = new dhx.Grid("grid_container", {
         {
             width: 200, id: "country", header: [{ text: "Country" }], align: "left",
             htmlEnable: true, 
-            tooltipTemplate: function (value, row, col) { 
+            tooltipTemplate: function (value, row, column) { 
                 if (row.country === "Bangladesh") {
                     return false; // prevent a tooltip from being shown
                 }

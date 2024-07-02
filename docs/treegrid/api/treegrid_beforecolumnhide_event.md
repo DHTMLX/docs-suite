@@ -8,16 +8,18 @@ description: You can explore the beforeColumnHide event of TreeGrid in the docum
 
 @short: fires before a column is hidden
 
-@signature: {'beforeColumnHide: (col: object) => boolean | void;'}
+@signature: {'beforeColumnHide: (column: object) => boolean | void;'}
 
 @params:
-- `col: object` - an object with a column configuration
+The callback of the event is called with the following parameter:
+
+- `column: object` - an object with a column configuration
 
 @returns:
 Return `false` to prevent a column from being hidden; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeColumnHide", function(column){
+treegrid.events.on("beforeColumnHide", (column) => {
     // your logic here
     return false;
 });

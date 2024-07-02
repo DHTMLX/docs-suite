@@ -10,17 +10,19 @@ description: You can explore the dragColumnOut event of Grid in the documentatio
 
 @short: fires when a column is dragged out of a potential target
 
-@signature: {'dragColumnOut: (data: object, events: MouseEvent) => void;'}
+@signature: {'dragColumnOut: (data: object, event: MouseEvent) => void;'}
 
 @params:
-- `data: object` - data object. It contains the following parameters:
+The callback of the event is called with the following parameters:
+
+- `data: object` - data object. It contains the following properties:
     - `start: string | number` - the id of a column, from which the dragging process has started
     - `source: array` - an array with ids of dragged columns
     - `target: string | number` - the id of a potential target column
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("dragColumnOut", function(data, events) {
+grid.events.on("dragColumnOut", (data, event) => {
   // your logic here
 });
 

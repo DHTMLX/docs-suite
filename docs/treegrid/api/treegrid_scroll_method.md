@@ -6,7 +6,7 @@ description: You can explore the scroll method of TreeGrid in the documentation 
 
 # scroll()
 
-@short: scrolls a grid according to specified coordinates
+@short: scrolls a grid according to the specified coordinates
 
 @signature: {'scroll(x?: number, y?: number): void;'}
 
@@ -15,7 +15,7 @@ description: You can explore the scroll method of TreeGrid in the documentation 
 - `y: number` - the Y coordinate
 
 @example:
-grid.scroll(75,230);
+grid.scroll(75, 230);
 
 @descr:
 

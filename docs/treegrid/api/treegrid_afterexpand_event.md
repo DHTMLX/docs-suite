@@ -11,10 +11,12 @@ description: You can explore the afterExpand event of TreeGrid in the documentat
 @signature: {'afterExpand: (rowId: string | number) => void;'}
 
 @params:
+The callback of the event is called with the following parameter:
+
 - `rowId: string | number` - the id of an expanded row
 
 @example:
-treeGrid.events.on("afterExpand", function(rowId) {
+treeGrid.events.on("afterExpand", (rowId) => {
     // your logic here
 });
 

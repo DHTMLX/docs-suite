@@ -11,12 +11,14 @@ description: You can explore the filterChange event of Grid in the documentation
 @signature: {'filterChange: (value: string, colId: string | number, filterId: string) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `value: string` - an entered value
 - `colId: string | number` - the id of a column
 - `filterId: string` - the type of a filter: "inputFilter" | "selectFilter" | "comboFilter"
 
 @example:
-grid.events.on("filterChange", function(value,colId,filterId){
+grid.events.on("filterChange", (value, colId, filterId) => {
     console.log("You've entered "+value+" into the "+colId+" column");
 });
 

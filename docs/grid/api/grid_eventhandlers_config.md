@@ -11,7 +11,7 @@ description: You can explore the eventHandlers config of Grid in the documentati
 ~~~js
 eventHandlers?: {
     [eventName: string]: {
-        [className: string]: (events: Event, item: object) => void; 
+        [className: string]: (event: Event, item: object) => void; 
     };
 };
 ~~~
@@ -27,7 +27,7 @@ The **eventHandlers** object includes a set of `key:value` pairs, where:
         </tr>
         <tr>
             <td><i>value</i></td>
-            <td>an object that contains a <i>key:value</i> pair, where:<ol><li><i>key</i> is the CSS class name that the handler will be applied to</li><li><i>value</i> is a function that takes two parameters:<ul><li><b>event</b> - an event object</li><li><b>item</b> - an object with two attributes:<ol>- <b>row</b> - an object with a row configuration</ol><ol>- <b>col</b> - an object with a column configuration</ol></li></ul></li></ol></td>
+            <td>an object that contains a <i>key:value</i> pair, where:<ol><li><i>key</i> is the CSS class name that the handler will be applied to</li><li><i>value</i> is a function that takes two parameters:<ul><li><b>event</b> - an event object</li><li><b>item</b> - an object with two attributes:<ol>- <b>row</b> - an object with a row configuration</ol><ol>- <b>column</b> - an object with a column configuration</ol></li></ul></li></ol></td>
         </tr>
     </tbody>
 </table>
@@ -38,7 +38,7 @@ const grid = new dhx.Grid("grid_container", {
         { width: 200, id: "country", header: [{ text: "Country", css: "header_country" }] },
         { width: 150, id: "netChange", header: [{text: "Net Change"}],
             // define a custom template for the column's cells
-            template: function (text, row, col) {
+            template: (text, row, column) => {
                 return "<div className='cell__template'><input type='checkbox' 
                     disabled " + (text > 3000000 ? "checked" : "") + " ></div>";
             } 
@@ -50,13 +50,13 @@ const grid = new dhx.Grid("grid_container", {
     eventHandlers: {
         // add an event handler to the header cell
         onclick: {
-           header_country: function(event, data) {
+           header_country: (event, data) => {
                 console.log(JSON.stringify(data.col, null, 2)); 
             }
         },
         // add an event handler to the HTML element of the custom template of cells
         onmouseover: {
-            cell__template: function(event, data) {
+            cell__template: (event, data) => {
                 console.log(JSON.stringify(data.row, null, 2)); 
             }
         } ,
@@ -90,12 +90,12 @@ const grid = new dhx.Grid("grid_container", {
     data: data,
     eventHandlers: { 
         onclick: { 
-            cell__html: function(event, data) {
+            cell__html: (event, data) => {
                 console.log(JSON.stringify(data.col, null, 2));
             },
         },
         onmouseover: {
-            cell__html: function(event) {
+            cell__html: (event) => {
                 console.log("You are over " + event.target.tagName);
             },
         }

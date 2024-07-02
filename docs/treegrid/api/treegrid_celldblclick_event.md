@@ -8,15 +8,17 @@ description: You can explore the cellDblClick event of TreeGrid in the documenta
 
 @short: fires on double-click on a grid cell
 
-@signature: {'cellDblClick: (row: object, col: object, e: MouseEvent) => void;'}
+@signature: {'cellDblClick: (row: object, column: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
-- `col: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("cellDblClick", function(row,column,e){
+grid.events.on("cellDblClick", (row, column, event) => {
     // your logic here
 });
 

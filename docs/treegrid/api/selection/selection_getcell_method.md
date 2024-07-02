@@ -15,7 +15,7 @@ An object with parameters of a selected cell.
 
 @example:
 const selectedCell = treegrid.selection.getCell();
-// -> {row: {…}, column: {…}}
+// -> { row: {…}, column: {…} }
 
 @descr:
 

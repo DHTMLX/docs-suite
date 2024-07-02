@@ -11,10 +11,11 @@ description: You can explore the afterCollapse event of TreeGrid in the document
 @signature: {'afterCollapse: (rowId: string | number) => void;'}
 
 @params:
+The callback of the event is called with the following parameter:
 - `rowId: string | number` - the id of a collapsed row
 
 @example:
-treeGrid.events.on("afterCollapse", function(rowId) {
+treeGrid.events.on("afterCollapse", (rowId) => {
     // your logic here
 });
 

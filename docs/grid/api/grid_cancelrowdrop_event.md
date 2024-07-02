@@ -8,17 +8,18 @@ description: You can explore the cancelRowDrop event of Grid in the documentatio
 
 @short: fires on moving a mouse pointer out of borders of a row while dragging the row
 
-@signature: {'cancelRowDrop: (data: object, events: MouseEvent) => void;'}
+@signature: {'cancelRowDrop: (data: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 - `data: object` - data object. It contains the following parameters:
     - `start: string | number` - the id of a row, from which the dragging process has started
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("cancelRowDrop", function(data, events) {
+grid.events.on("cancelRowDrop", (data, event) => {
   // your logic here
 });
 
