@@ -8,6 +8,10 @@ description: You can explore the data config of List in the documentation of the
 
 @short: Optional. Specifies an array of data objects to set into the list
 
+:::info
+Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
 @signature: {'data: array;'}
 
 @example:

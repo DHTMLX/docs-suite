@@ -40,7 +40,7 @@ For example:
 
 ~~~html
 <style>
-      body {
+    body {
         margin: 0;
     }
     .custom-class .dhx_combobox-input-box {
@@ -50,7 +50,7 @@ For example:
 </style>
 
 <script>
-    const combobox = new dhx.Combobox("combobox_container", {
+    const combo = new dhx.Combobox("combo_container", {
         css: "custom-class"
     });
 </script>
@@ -104,4 +104,4 @@ const combo = new dhx.Combobox("combo_container", {
 
 **Related sample**: [Combobox. Custom filter](https://snippet.dhtmlx.com/791incm9)
 
-In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows in the popup list all the words that contain entered letters independent of their order in a word.
+In the above example a custom filtering function compares an entered value with items of data collection letter by letter, and shows all the words that contain entered letters independent of their order in a word in the popup list.

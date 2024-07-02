@@ -16,6 +16,8 @@ description: You can explore the png method of Chart in the documentation of the
     - `name?: string` - (optional) the name of the exported file
     - `theme?: string` - (optional) the exported theme, "light" by default. For custom or overridden themes, enable the `exportStyles` option
     - `exportStyles?: boolean | string[]` - (optional) defines the styles that will be sent to the export service when exporting Chart. Use *false* to prevent all styles from being sent to the export service
+    - `header?: string` - (optional) an HTML template for the header in the exported file
+    - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
 @example:
 // default export
@@ -34,5 +36,7 @@ chart.export.png({
 **Related API:** [exportStyles](chart/api/chart_exportstyles_config.md)
 
 **Change log:** 
+
+- The **header** and **footer** options of the export object were added in 8.4
 - The **theme** and **exportStyles** options of the export object were added in 8.1
-- The method was added in v8.0
+- Added in v8.0

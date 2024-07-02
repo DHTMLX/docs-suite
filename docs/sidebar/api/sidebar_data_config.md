@@ -8,6 +8,10 @@ description: You can explore the data config of Sidebar in the documentation of 
 
 @short: Optional. Specifies an array of data objects to set into Sidebar
 
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
 @signature: {'data?: object[];'}
 
 @example:

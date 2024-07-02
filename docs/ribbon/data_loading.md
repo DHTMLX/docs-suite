@@ -15,7 +15,13 @@ First, you need to prepare a data set that will be loaded into Ribbon.
 
 ## Preparing data set
 
-DHTMLX Ribbon expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Ribbon expects loaded data in the JSON format. 
+
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
 
 ~~~js
 const data = [
@@ -124,7 +130,7 @@ This section will give you the idea of JSON format templates for separate Ribbon
 
 ### Common template
 
-~~~js
+~~~jsx
 // common
 [
     {id: "item_a", type: "button", ...},
@@ -137,26 +143,28 @@ This section will give you the idea of JSON format templates for separate Ribbon
 
 ### Block template
 
-~~~js
+~~~jsx
 // block
 {
     type: "block",
-       title: "Action",        
-       items: [
+    title: "Action",        
+    items: [
         { id: "copy", icon: "mdi mdi-content-copy", value: "Copy" },
-         { id: "cut", icon: "mdi mdi-content-cut", value: "Cut" }
-       ]
+        { id: "cut", icon: "mdi mdi-content-cut", value: "Cut" }
+    ]
 }
 ~~~
 
-{{note View the full list of properties of the **block** object in the [related article](ribbon/api/api_block_properties.md). }}
+:::note 
+View the full list of properties of the **block** object in the [related article](ribbon/api/api_block_properties.md). 
+:::
 
 ### Button template
 
-~~~js 
+~~~jsx 
 // button
 {
-    id:    "add",                  
+    id: "add",                  
     type: "button",               
     icon: "dxi-plus",             
     value: "Add",                  
@@ -165,37 +173,43 @@ This section will give you the idea of JSON format templates for separate Ribbon
 }
 ~~~
 
-{{note View the full list of properties of the **button** object in the [related article](ribbon/api/api_button_properties.md). }}
+:::note
+View the full list of properties of the **button** object in the [related article](ribbon/api/api_button_properties.md).
+:::
 
 ### Custom HTML template
 
-~~~js
+~~~jsx
 // custom HTML
 {
     id: "custom_html",
     type: "customHTML",
-    html:"<div style='height:30px; border: 2px solid'>My HTML button</div>"
+    html: "<div style='height:30px; border: 2px solid'>My HTML button</div>"
 }
 ~~~
 
-{{note You can view the full list of properties of the **customHTML** object in the [related article](ribbon/api/api_customhtml_properties.md). }}
+:::note
+You can view the full list of properties of the **customHTML** object in the [related article](ribbon/api/api_customhtml_properties.md). 
+:::
 
 ### ImageButton template
 
-~~~js
+~~~jsx
 // imageButton
 {
-    id:          "user",                
-    type:      "imageButton",        
-    src:      "../img/avatar.png"                
+    id: "user",                
+    type: "imageButton",        
+    src: "../img/avatar.png"                
 }
 ~~~
 
-{{note You can find the full list of properties of the **imageButton** object in the [related article](ribbon/api/api_imagebutton_properties.md). }}
+:::note
+You can find the full list of properties of the **imageButton** object in the [related article](ribbon/api/api_imagebutton_properties.md). 
+:::
 
 ### Input template
 
-~~~js 
+~~~jsx 
 // input
 {
     id:    "lookup",                      
@@ -207,68 +221,81 @@ This section will give you the idea of JSON format templates for separate Ribbon
 }
 ~~~
 
-{{note View the full list of properties of the **input** object in the [related article](ribbon/api/api_input_properties.md). }}
+:::note
+View the full list of properties of the **input** object in the [related article](ribbon/api/api_input_properties.md). 
+:::
 
 ### NavItem template
 
-~~~js
+~~~jsx
 // navItem
 {
-    type:"navItem", value:"Some",
-    icon:"dxi-check"
+    type: "navItem", 
+    value: "Some",
+    icon: "dxi-check"
 }
 ~~~
 
-{{note Check the full list of properties of the **navItem** object in the [related article](ribbon/api/api_navitem_properties.md). }}
+:::note 
+Check the full list of properties of the **navItem** object in the [related article](ribbon/api/api_navitem_properties.md). 
+:::
 
 ### SelectButton template
 
-~~~js
+~~~jsx
 // selectButton
 {
-    id:"select",
-    type:"selectButton",
-    icon:"dxi-some",
-    items:[]
+    id: "select",
+    type: "selectButton",
+    icon: "dxi-some",
+    items: []
 }
 ~~~
 
-{{note You will find the full list of properties of the **selectButton** object in the [related article](ribbon/api/api_selectbutton_properties.md). }}
+:::note
+You will find the full list of properties of the **selectButton** object in the [related article](ribbon/api/api_selectbutton_properties.md). 
+:::
 
 ###  Separator template
 
-~~~js
+~~~jsx
 // separator
 {
-    id:         "sepId",        
-    type:   "separator"         
+    id: "sepId",        
+    type: "separator"         
 }
 ~~~
 
-{{note You can find the full list of properties of the **separator** object in the [related article](ribbon/api/api_separator_properties.md). }}
+:::note
+You can find the full list of properties of the **separator** object in the [related article](ribbon/api/api_separator_properties.md). 
+:::
 
 ### Spacer template
 
-~~~js
+~~~jsx
 // spacer
 {
-    id:         "spacerId",          
-    type:   "spacer"        
+    id: "spacerId",          
+    type: "spacer"        
 }
 ~~~
 
-{{note View the full list of properties of the **spacer** object in the [related article](ribbon/api/api_spacer_properties.md). }}
+:::note
+View the full list of properties of the **spacer** object in the [related article](ribbon/api/api_spacer_properties.md).
+:::
 
 ### Title template
 
-~~~js
+~~~jsx
 // title
 {
-    id:             "collection",        
-    type:           "title",                 
-    value:          "Music",                
-    tooltip:    "Current collection"    
+    id: "collection",        
+    type: "title",                 
+    value: "Music",                
+    tooltip: "Current collection"    
 }
 ~~~
 
-{{note Check the full list of properties of the **title** object in the [related article](ribbon/api/api_title_properties.md). }}
+:::note
+Check the full list of properties of the **title** object in the [related article](ribbon/api/api_title_properties.md).
+:::

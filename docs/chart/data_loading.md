@@ -15,7 +15,13 @@ First, you need to prepare a data set that will be loaded into Chart.
 
 ## Preparing data set
 
-DHTMLX Chart expects loaded data in the JSON format. Here are examples of appropriate data sets for different chart types:
+DHTMLX Chart expects loaded data in the JSON format. 
+
+:::info
+Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
+Here are examples of appropriate data sets for different chart types:
 
 - **Line, Spline, Bar, X-Bar, Area, Spline Area, Radar, Scatter charts**
 
@@ -46,7 +52,7 @@ A data set for Pie, Pie3D and Donut charts differs a little bit and includes the
     <tbody>
         <tr>
             <td><b>id</b></td>
-            <td>(<i>string, number</i>) the id of a series </td>
+            <td>(<i>string | number</i>) the id of a series</td>
         </tr>
         <tr>
             <td><b>key:value</b></td>
@@ -84,7 +90,7 @@ A data set for Treemap chart has also another structure and may include the foll
     <tbody>
         <tr>
             <td><b>id</b></td>
-            <td>(<i>string, number</i>) the id of a tile or group</td>
+            <td>(<i>string | number</i>) the id of a tile or group</td>
         </tr>
         <tr>
             <td><b>key:value</b></td>
@@ -122,7 +128,7 @@ A data set for Heatmap chart should include the following properties:
     <tbody>
         <tr>
             <td><b>id</b></td>
-            <td>(<i>string, number</i>) the id of a cell</td>
+            <td>(<i>string | number</i>) the id of a cell</td>
         </tr>
         <tr>
             <td><b>key:value</b></td>

@@ -173,7 +173,7 @@ const combobox = new dhx.Combobox("combo_container",{
 You may allow end users to add new items into the data collection from UI. 
 You just need to enable the functionality via setting the [newOptions](combobox/api/combobox_newoptions_config.md) property to *true*:
 
-~~~js
+~~~jsx
 const combobox = new dhx.Combobox("combo_container", {
     multiselection: true,
       newOptions: true  
@@ -184,13 +184,18 @@ To add a new item into the list of options, the user needs to type a new value i
 
 ![](../assets/combo/new_value.png)
 
+**Related sample**: [Combobox. Multiselection, add new options (free text), select all button](https://snippet.dhtmlx.com/ui7pi7ty)
+
 The combobox invokes the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) and [afterAdd](data_collection/api/datacollection_afteradd_event.md) events of DataCollection each time when the user enters a new value into the input field. You can use the [beforeAdd](data_collection/api/datacollection_beforeadd_event.md) event to prevent adding incorrect values into the list of options:
 
-~~~js
+~~~jsx
 // blocks the ability to add an item with value: "new" into the collection of combobox items
 combobox.data.events.on("beforeAdd", item => item.value !== "new");
 ~~~
 
+You can provide a combobox with the ability to edit/delete items via the user interface. For this you can use [event handlers](#event-handlers-for-the-template) for HTML elements of a custom template of Combobox items.
+
+**Related sample**: [Combobox. Editing/deleting options](https://snippet.dhtmlx.com/xd511ci5)
 
 ## Readonly mode
 
@@ -249,6 +254,40 @@ const combo = new dhx.Combobox("combo_container", {
     }
 });            
 ~~~
+
+## Event handlers for the template
+
+Starting from v8.4, it is possible to assign event handlers to HTML elements of a custom template of Combobox items by using the [eventHandlers](/combobox/api/combobox_eventhandlers_config/) configuration option:
+
+~~~js {11-13,17-24}
+const combobox = new dhx.Combobox("combobox", {
+    newOptions: true, // enables the ability to add and save new values from UI
+    itemHeight: 40,
+    template: ({ value, src }) => {
+        return `
+            <div class="list-item">
+                <div class="list-item__content">
+                    <img class="list-item__image" src="${src}" alt="${value}">
+                    <span class="list-item__value">${value}</span>
+                </div>
+                <button class="list-item__button list-item__button--delete">
+                    <i class="dxi dxi-delete-forever"></i>
+                </button>
+            </div>
+        `;
+    },
+    eventHandlers: {
+        onclick: { 
+            "list-item__button--delete": (event, id) => {
+                combobox.data.remove(id);
+                combobox.clear();    
+            } 
+        } 
+    }
+});
+~~~
+
+**Related sample**: [Combobox. HTML template and handling events](https://snippet.dhtmlx.com/00955xwq)
 
 ## HTML content of Combobox options
 

@@ -15,6 +15,10 @@ API methods and events of DataCollection and TreeCollection let you work with da
 
 The helpers allow using the same data set in different components. For instance, you can prepare one data set and load it into DataView, Grid, and List with the help of the [](../data_collection/api/datacollection_load_method.md) method of DataCollection.
 
+:::info
+Please note that if you specify the `id` fields in the data collection, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
 In this article we will consider how to work with DataCollection.
 
 Check all methods and events of [Data Collection API](data_collection.md/).
@@ -27,9 +31,9 @@ Here you will find some common features to understand how DataCollection works.
 
 The syntax of the DataCollection method:
 
-```js
+~~~jsx
 component.data.method();
-```
+~~~
 
 where:
 
@@ -45,19 +49,19 @@ The methods of DataCollection are useful for:
 
 #### Loading data
 
-To load data into the component use the **load()** or **parse()** methods. The load() method is used to load data from an external file, the parse() method is used to load data from a local data source.
+To load data into the component use the `load()` or `parse()` methods. The `load()` method is used to load data from an external file, the `parse()` method is used to load data from a local data source.
 
 #### Sorting and filtering data
 
-When working with data you may need to sort or filter it. Use the **sort()** method and the **filter()** one for this purpose.
+When working with data you may need to sort or filter it. Use the `sort()` method and the `filter()` one for this purpose.
 
 #### Editing data
 
-You can add new items into the initialized component via the **add()** method, remove particular items by the **remove()** method or remove all items at once via the **removeAll()** method. The **update()** method allows you to update the necessary configuration options of the item by its id while the **changeId()** method lets you change the id of the element.
+You can add new items into the initialized component via the `add()` method, remove particular items by the `remove()` method or remove all items at once via the `removeAll()` method. The `update()` method allows you to update the necessary configuration options of the item by its id while the `changeId()` method lets you change the id of the element.
 
 #### Saving and restoring
 
-The **serialize()** method is used to serialize data into JSON, XML or CSV format. You can send the serialized data to a new component or server. The **copy()** method will help you to create a copy of an item at the defined position. Use the **save()** method to save changes made in the data to the server side.
+The `serialize()` method is used to serialize data into JSON, XML or CSV format. You can send the serialized data to a new component or server. The `copy()` method will help you to create a copy of an item at the defined position. Use the `save()` method to save changes made in the data to the server side.
 
 Check all [methods](data_collection.md/#methods) of DataCollection.
 
@@ -65,9 +69,9 @@ Check all [methods](data_collection.md/#methods) of DataCollection.
 
 The syntax of the DataCollection event:
 
-```js
+~~~jsx
 component.data.events.on("event", function(){});
-```
+~~~
 
 where:
 
@@ -88,12 +92,12 @@ Please, use [the DHTMLX Snippet Tool](https://snippet.dhtmlx.com/lscu83ji) to cr
 
 Let's add a List widget on the page and define a template to render items in our List.
 
-```html
+~~~html
 <!-- component container -->
 <div id="list" style="height: 700px; margin: 20px"></div>
-```
+~~~
 
-```js
+~~~jsx
 //creating template
 function template(item) {
     let template = "<div class='list_item'>";
@@ -110,7 +114,7 @@ const list = new dhx.List("list_container", {
     css: "dhx_widget--bordered",
     template: template
 });
-```
+~~~
 
 For more information about List initialization check [here](list/initialization.md/).
 
@@ -118,7 +122,11 @@ As you can see, we've initialized the list but it is still empty. To fill in our
 
 - At first, we prepare a data set:
 
-```html
+:::info
+Please note that if you specify the `id` fields in the data set, their values should be **unique**. You can also omit the `id` fields in the data collection. In this case they will be generated automatically.
+:::
+
+~~~html
 <!-- dataset -->
 <script>
     const data = [
@@ -250,19 +258,19 @@ As you can see, we've initialized the list but it is still empty. To fill in our
         },
     ]
 </script>
-```
+~~~
 
 - Then, to load the prepared data into the list we apply the [](../data_collection/api/datacollection_parse_method.md) method of DataCollection:
 
-```js
+~~~jsx
 list.data.parse(data);
-```
+~~~
 
 As a result, the list of books is rendered on the page according to the specified template. We took a small part of the list just for a convenience sample, in real-life practice, the list can be very huge.
 
 Now, let's add a new book to the list. To do that, we need to use the [](../data_collection/api/datacollection_add_method.md) method of DataCollection:
 
-```js
+~~~jsx
 list.data.add(
     {
         "title": "J.R.R. Tolkien 4-Book Boxed Set: The Hobbit and The Lord of the Rings",
@@ -278,26 +286,26 @@ list.data.add(
         "text_reviews_count": 1550,
         "publisher": "Ballantine Books"
     }, 1);
-```
+~~~
 
 Note, that we have added the new item into the list but not into the data set.
 
 
 To save the current state of the list we will serialize the component data with the  help of the [](../data_collection/api/datacollection_serialize_method.md) method of DataCollection. 
 
-```js
+~~~jsx
 const state = list.data.serialize();
-```
+~~~
 
 After that, we can parse the serialized data to the new list. We will use the [](../data_collection/api/datacollection_parse_method.md) method for it.
 
 Do not forget to add a separate container for the new component.
 
-```html
+~~~html
 <div id="list2" style="height: 700px; margin: 20px"></div>
-```
+~~~
 
-```js
+~~~jsx
 //creating list2
  list2 = new dhx.List("list2", {
     css: "dhx_widget--bordered",
@@ -306,17 +314,17 @@ Do not forget to add a separate container for the new component.
 
 //parsing the state of list into list2
 list2.data.parse(state);
-```
+~~~
 
-Now we have two lists with the same data. Let's make some changes to **list**. For example, we can change the id of the first item using the **changeId()** method and, then, delete the item from the list via the **remove()** method, as in:
+Now we have two lists with the same data. Let's make some changes to **list**. For example, we can change the id of the first item using the `changeId()` method and, then, delete the item from the list via the `remove()` method, as in:
 
-```js
+~~~jsx
 //changing the id of the element
 list.data.changeId("book001", "book001-newedition");
 
 //deleting the element
 list.data.remove("book001-newedition");
-```
+~~~
 
 Pay attention, the data in list now are different from the data in list2 because we have sent data to list2 before removing the item of list.
 

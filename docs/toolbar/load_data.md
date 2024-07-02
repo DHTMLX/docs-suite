@@ -15,9 +15,15 @@ First, you need to prepare a data set that will be loaded into Toolbar.
 
 ## Preparing data set
 
-DHTMLX Toolbar expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Toolbar expects loaded data in the JSON format. 
 
-~~~js
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
+
+~~~jsx
 const dataset = [
      {
         "id": "other",
@@ -54,10 +60,10 @@ A data set consists of objects with configurations of toolbar controls. Template
 
 You can load a [predefined data set](#preparing-data-set) into Toolbar on the initialization stage. Use the [data](toolbar/api/toolbar_data_config.md) configuration property, as in:
 
-~~~js
+~~~jsx
 const toolbar = new dhx.Toolbar("toolbar_container", {
-      css: "dhx_widget--bordered",
-      data: dataset
+    css: "dhx_widget--bordered",
+    data: dataset
 });
 ~~~
 
@@ -74,7 +80,7 @@ There are two ways to load data into Sidebar after its initialization:
 
 You can load data to a toolbar from an array with the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
-~~~js
+~~~jsx
 toolbar.data.parse(dataset);
 ~~~
 
@@ -84,7 +90,7 @@ toolbar.data.parse(dataset);
 
 The **load** method loads the toolbar data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 
-~~~js
+~~~jsx
 toolbar.data.load("[path to this file]/file.json");
 ~~~    
 
@@ -94,7 +100,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 toolbar.data.load("/some/data").then(function(){
    // some logic here
 });
@@ -105,13 +111,13 @@ toolbar.data.load("/some/data").then(function(){
 To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a toolbar into an array of JSON objects. 
 Each JSON object contains the configuration of a separate Toolbar control.
 
-~~~js
+~~~jsx
 const state = toolbar1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different toolbar. For example:
 
-~~~js
+~~~jsx
 // creating a new toolbar
 const toolbar2 = new dhx.Toolbar("toolbar_container2");
 // parsing the state of toolbar1 into toolbar2
@@ -124,7 +130,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Common template
 
-~~~js
+~~~jsx
 // common
 [
     {id: "item_a", type: "button", ...},
@@ -135,10 +141,10 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Button template
 
-~~~js 
+~~~jsx
 // button
 {
-    id:    "add",                  
+    id: "add",                  
     type: "button",               
     icon: "dxi-plus",             
     value: "Add",                  
@@ -151,7 +157,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Custom HTML template
 
-~~~js
+~~~jsx
 // custom HTML button
 {
     type: "customHTML",
@@ -164,12 +170,12 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### ImageButton template
 
-~~~js
+~~~jsx
 // imageButton
 {
-    id:          "user",                
-    type:      "imageButton",        
-    src:      "../img/avatar.png"                
+    id: "user",                
+    type: "imageButton",        
+    src: "../img/avatar.png"                
 }
 ~~~
 
@@ -177,28 +183,28 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Input template
 
-~~~js 
+~~~jsx 
 // input
 {
-    id:             "lookup",                      
-    type:         "input",                       
-    value:         "",                         
+    id: "lookup",                      
+    type: "input",                       
+    value: "",                         
     placeholder: "Type in to search...",      
-    width:         100,                          
-    label:         "Search"
+    width: 100,                          
+    label: "Search"
 }
 ~~~
 
 {{note You can check the full list of properties of the **input** object in the [related article](toolbar/api/api_input_properties.md). }}
 ### MenuItem template
 
-~~~js
+~~~jsx
 // menuItem
 {
-    type:"menuItem", 
-    value:"Some",
-    icon:"dxi dxi-check",
-    count:10
+    type: "menuItem", 
+    value: "Some",
+    icon: "dxi dxi-check",
+    count: 10
 }
 ~~~
 
@@ -206,24 +212,26 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### NavItem template
 
-~~~js
+~~~jsx
 // navItem
 {
-    type:"navItem", value:"Some",
-    icon:"dxi dxi-check"
+    type: "navItem", 
+    value: "Some",
+    icon: "dxi dxi-check"
 }
 ~~~
 
 {{note You can take a look at the full list of properties of the **navItem** object in the [related article](toolbar/api/api_navitem_properties.md). }}
+
 ### SelectButton template
 
-~~~js
+~~~jsx
 // selectButton
 {
-    id:"select",
-    type:"selectButton",
-    icon:"dxi-some",
-    items:[]
+    id: "select",
+    type: "selectButton",
+    icon: "dxi-some",
+    items: []
 }
 ~~~
 
@@ -231,10 +239,10 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Separator template
 
-~~~js
+~~~jsx
 // separator
 {
-    id:    "sepId",        
+    id: "sepId",        
     type: "separator"         
 }
 ~~~
@@ -243,10 +251,10 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Spacer template
 
-~~~js
+~~~jsx
 // spacer
 {
-    id:    "spacerId",          
+    id: "spacerId",          
     type: "spacer"        
 }
 ~~~
@@ -255,7 +263,7 @@ This section will give you the idea of JSON format templates for separate Toolba
 
 ### Title template
 
-~~~js
+~~~jsx
 // title
 {
     id: "collection",        

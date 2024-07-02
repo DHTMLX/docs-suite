@@ -50,11 +50,12 @@ Use [TreeCollection events](tree_collection.md#events) to work with data.
 
 ## Toolbar properties
 
-| Name                                      | Description                                      |
-| ----------------------------------------- | ------------------------------------------------ |
-| [](toolbar/api/toolbar_css_config.md)     | @getshort(toolbar/api/toolbar_css_config.md)     |
-| [](toolbar/api/toolbar_data_config.md)    | @getshort(toolbar/api/toolbar_data_config.md)    |
-| [](toolbar/api/toolbar_menucss_config.md) | @getshort(toolbar/api/toolbar_menucss_config.md) |
+| Name                                      	   | Description                                      		 |
+| ------------------------------------------------ | ------------------------------------------------------- |
+| [](toolbar/api/toolbar_css_config.md)     	   | @getshort(toolbar/api/toolbar_css_config.md)     		 |
+| [](toolbar/api/toolbar_data_config.md)    	   | @getshort(toolbar/api/toolbar_data_config.md)    		 |
+| [](toolbar/api/toolbar_menucss_config.md) 	   | @getshort(toolbar/api/toolbar_menucss_config.md) 		 |
+| [](toolbar/api/toolbar_navigationtype_config.md) | @getshort(toolbar/api/toolbar_navigationtype_config.md) |
 
 ## Toolbar Button properties
 

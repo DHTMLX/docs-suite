@@ -8,6 +8,8 @@ description: You can explore the localization of Combo Box in the documentation 
 
 You can apply different languages to the interface of DHTMLX Combo. You just need to translate the corresponding strings for Combobox labels and apply a ready locale to the component.
 
+**Related sample**: [Combobox. Localization](https://snippet.dhtmlx.com/cnj0j9g0?tag=combobox)
+
 ## Default locale
 
 The default locale for Combobox looks like this:
@@ -17,8 +19,9 @@ const en = {
     notFound: "Not found",
     selectAll: "Select all",
     unselectAll: "Unselect all",
-    selectedItems: "selected items",
-    createItem: "Create"
+    selectedItems: "Selected items",
+    createItem: "Create",
+    placeholder: "Click to select"
 };
 ~~~
 
@@ -34,7 +37,8 @@ const de = {
     selectAll: "Alle auswählen",
     unselectAll: "Deaktivieren Sie Alle",
     selectedItems: "Ausgewählte Elemente",
-    createItem: "Schaffen"
+    createItem: "Schaffen",
+    placeholder: "Klicken um auszuwählen"
 };
 ~~~
 
@@ -45,4 +49,4 @@ dhx.i18n.setLocale("combo_container", de);
 const combo = new dhx.Combobox("combo_container");
 ~~~
 
-**Related sample**: [Combobox. Localization](https://snippet.dhtmlx.com/cnj0j9g0)
+

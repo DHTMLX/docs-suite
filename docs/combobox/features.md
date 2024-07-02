@@ -53,9 +53,10 @@ In this section you will find out how to set initial value into the input, to en
 | [Configuring a label](../configuration/#label)                                            | Learn how to configure a label and its position for Combobox ([Example](https://snippet.dhtmlx.com/2936fray))              |
 | [Hiding a label](../configuration/#hidden-label)                                          | Learn how to make a label hidden                                                                                           |
 | [Setting a placeholder](../configuration/#placeholder)                                    | Learn how to set a placeholder in the input of Combo ([Example](https://snippet.dhtmlx.com/759z23gh))                      |
-| [Adding new options](../configuration/#editable-combobox)                                 | Learn how to allow end users to add new options into Combobox via UI                                                       |
-| [Making Combobox readonly](../configuration/#readonly-mode)                               | Learn how to disable the ability to enter text in the input ([Example](https://snippet.dhtmlx.com/igjsuf7y))               |
-| [Making Combobox disabled](../configuration/#disabled-mode)                               | Learn how to block any operations with Combobox ([Example](https://snippet.dhtmlx.com/ductsm0f))                           |
+| [Adding new options](../configuration/#editable-combobox)                                 | Learn how to allow end users to add new options into Combobox via UI ([Example](https://snippet.dhtmlx.com/ui7pi7ty))    |
+| [Editing/deleting options](../configuration/#editable-combobox)                                 | Learn how to allow end users to edit/delete options in Combobox via UI ([Example](https://snippet.dhtmlx.com/xd511ci5))    |
+| [Making Combobox readonly](../configuration/#readonly-mode)                               | Learn how to disable the ability to enter text in the input ([Example](https://snippet.dhtmlx.com/igjsuf7y))         |
+| [Making Combobox disabled](../configuration/#disabled-mode)                               | Learn how to block any operations with Combobox ([Example](https://snippet.dhtmlx.com/ductsm0f))                   |
 
 ## How to customize Combobox and change its size
 
@@ -65,6 +66,7 @@ In this section you can learn how to customize Combobox and configure the height
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | [Height of Combobox elements](../configuration/#height-of-list-of-options-and-its-items)  | Learn how to set the height for list of Combobox options and its items ([Example](https://snippet.dhtmlx.com/vilg4l7w))        |
 | [Applying custom filtering](../customization/#custom-filter-for-options)   | Learn how to set a custom function for filtering Combobox options ([Example](https://snippet.dhtmlx.com/791incm9))             |
+| [Grouping Combobox options](https://snippet.dhtmlx.com/sk7q5wvl)   | The example shows how to group Combobox options             |
 | [Rendering HTML content](../configuration/#html-content-of-combobox-options) | Learn how to display HTML content as plain text to prevent XSS attacks ([Example](https://snippet.dhtmlx.com/e4dolhfs))        |
 | [Styling combobox (custom CSS)](../customization/#styling)                   | Learn how to change the look and feel of Combobox ([Example](https://snippet.dhtmlx.com/lldd739i))                             |
 | [Styling Combobox items](../configuration/#template-for-combobox-options)    | Learn how to customize the appearance of displaying options in the popup list ([Example](https://snippet.dhtmlx.com/z7cpj76i)) |

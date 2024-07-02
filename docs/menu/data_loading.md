@@ -15,9 +15,15 @@ First, you need to prepare a data set that will be loaded into Menu.
 
 ## Preparing data set
 
-DHTMLX Menu expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Menu expects loaded data in the JSON format. 
 
-~~~js
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
+
+~~~jsx
 const data = [
     { 
         value: "File", 
@@ -60,7 +66,7 @@ A data set consists of objects with configurations of menu controls. Templates f
 
 You can load a [predefined data set](#preparing-data-set) into Menu on the initialization stage. Use the [data](menu/api/menu_data_config.md) configuration property, as in:
 
-~~~js
+~~~jsx
 const menu = new dhx.Menu("menu_container", {
     data: data
 });
@@ -79,7 +85,7 @@ There are two ways to load data into Menu after its initialization:
 
 The **load** method of Tree Collection loads menu data from an external JSON file. All the data are loaded at once. The parameter of the method is the path to the JSON file.
 
-~~~js
+~~~jsx
 menu.data.load("[path to this file]/file.json");
 ~~~    
 
@@ -89,7 +95,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 menu.data.load("/some/data").then(function(){
    // some logic here
 });
@@ -99,22 +105,23 @@ menu.data.load("/some/data").then(function(){
 
 You can load data to a menu from a local data source via the **parse()** method of TreeCollection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
-~~~js
+~~~jsx
 menu.data.parse(data);
 ~~~
 
 **Related sample**: [Menu. Initialization with data.parse()](https://snippet.dhtmlx.com/8y2b1zqm)
+
 ## Saving and restoring state
 
 To save the current state of a toolbar, use the **serialize()** method of Tree Collection. It converts the data of a menu into an array of JSON objects. Each JSON object contains the configuration of a separate Menu item.
 
-~~~js
+~~~jsx
 const state = menu1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different menu. For example:
 
-~~~js
+~~~jsx
 // creating a new menu
 const menu2 = new dhx.Menu(document.body);
 // parsing the state of menu1 into menu2
@@ -127,23 +134,23 @@ This section will give you the idea of JSON format templates for separate Menu c
 
 ### MenuItem template
 
-~~~js
+~~~jsx
 // menuItem
 {
-    id:             "print",             
-    type:           "menuItem",             
-    value:          "Print",             
-    icon:           "dxi-printer",        
-    hotkey:         "Alt+P",                 
+    id: "print",             
+    type: "menuItem",             
+    value: "Print",             
+    icon: "dxi-printer",        
+    hotkey: "Alt+P",                 
     items:[                        
         {
-            type:   "menuItem",
-            value:  "Print"
+            type: "menuItem",
+            value: "Print"
         },
         {
-            type:   "menuItem",
-            value:  "Preview and print",
-            icon:    "dxi-magnify"
+            type: "menuItem",
+            value: "Preview and print",
+            icon: "dxi-magnify"
         }
     ]
 }
@@ -155,7 +162,7 @@ You can find the full list of properties of the **menuItem** object [here](menu/
 
 ### Custom HTML template
 
-~~~js
+~~~jsx
 // customHTML
 {
     id: "custom",
@@ -174,10 +181,10 @@ You will find the full list of properties of the **customHTML** object [here](me
 
 You can add separators that will draw horizontal lines between menu options or vertical lines between menu items. 
 
-~~~js 
+~~~jsx 
 // separator
 {
-    id:   "s_id",        
+    id: "s_id",        
     type: "separator"   
 }
 ~~~
@@ -188,11 +195,11 @@ You will find the full list of properties of the **separator** object [here](men
 
 ### Spacer template
 
-~~~js
+~~~jsx
 // spacer
 {
-    id:         "spacerId",          
-    type:   "spacer"        
+    id: "spacerId",          
+    type: "spacer"        
 }
 ~~~
 

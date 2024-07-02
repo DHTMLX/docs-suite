@@ -248,7 +248,7 @@ The configuration object of a tooltip may take the following parameters:
         </tr>
         <tr>
             <td><b>margin</b></td>
-            <td>(optional) margin between the node and tooltip, <i>8</i> by default</td>
+            <td>(optional) margin between the node and tooltip, <i>8px</i> by default</td>
         </tr>
         <tr>
             <td><b>position</b></td>

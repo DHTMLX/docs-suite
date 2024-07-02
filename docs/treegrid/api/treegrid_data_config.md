@@ -8,6 +8,10 @@ description: You can explore the data config of TreeGrid in the documentation of
 
 @short: Optional. Specifies an array of data objects to set into the grid
 
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
 @signature: {'data?: object[];'}
 
 @example:
@@ -40,9 +44,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Initialization with config.data](https://snippet.dhtmlx.com/kob9385v)
 
-1\. Starting with v7.1, you can specify the height of the cell via setting the number value to the **height** option when defining the data set: 
+1\. Starting with v7.1, you can specify the height of the cell via setting the number value to the `height` option when defining the data set: 
 
-~~~js {8}
+~~~jsx {8}
 const dataset = [
     {
         "name": "Argentina",
@@ -64,11 +68,13 @@ const dataset = [
 
 **Related sample**: [TreeGrid. Row height](https://snippet.dhtmlx.com/kvl5y6nq)
 
-{{note The **height** option has a higher priority than the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid. <br>Thus, [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) will be ignored for the cell that the **height** option is defined to.}}
+:::note 
+The `height` option has a higher priority than the [`autoHeight:true`](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid. <br>Thus, [`autoHeight:true`](treegrid/api/treegrid_autoheight_config.md) will be ignored for the cell that the `height` option is defined to.
+:::
 
 2\. Starting with v7.1, it is possible to use the Date() object when specifying data for the "Date" column:
 
-~~~js {4,8}
+~~~jsx {4,8}
 const dataset = [
     {
         "country": "China",
