@@ -21,7 +21,7 @@ Released on July 8, 2024
 - Grid/TreeGrid. Filtering is reset while dragging rows
 - Grid/TreeGrid. The combination of the `minWidth` and `autoWidth` column properties works incorrectly
 - Grid/TreeGrid. The scrolling functionality and key navigation are fixed
-- Grid/TreeGrid. Filtering with the row-spanned data
+- Grid/TreeGrid. Filtering with the row-spanned data is fixed
 - Layout. A theme applied to a Layout cell resets after the cell is collapsed
 
 ## Version 8.3.13
