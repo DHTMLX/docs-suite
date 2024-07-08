@@ -8,6 +8,22 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 8.3.14
+
+Released on July 8, 2024
+
+### Fixes
+
+- Combobox. The accessibility issue in the NVDA screen reader
+- Grid/TreeGrid. Events aren't triggered for the cell template
+- Grid/TreeGrid. The `adjust` property isn't applied to the "id" column 
+- Grid/TreeGrid. The value of the `headerAutoHeight` property in combination with the `adjust` one is calculated incorrectly
+- Grid/TreeGrid. Filtering is reset while dragging rows
+- Grid/TreeGrid. The combination of the `minWidth` and `autoWidth` column properties works incorrectly
+- Grid/TreeGrid. The scrolling functionality and key navigation are fixed
+- Grid/TreeGrid. Filtering with the row-spanned data
+- Layout. A theme applied to a Layout cell resets after the cell is collapsed
+
 ## Version 8.3.13
 
 Released on June 24, 2024
