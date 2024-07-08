@@ -59,7 +59,8 @@ Released on July X, 2024
 
 - Combobox. [Groups in the drop-down list](https://snippet.dhtmlx.com/sk7q5wvl?tag=combobox)
 - Combobox. [Editing/deleting options](https://snippet.dhtmlx.com/xd511ci5?tag=combobox)
-- Grid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/z2c4sfnn?tag=grid)    
+- Grid. [Editing with a Colorpicker editor](https://snippet.dhtmlx.com/z2c4sfnn?tag=grid)   
+- Grid. [Editing with a Grid editor](https://snippet.dhtmlx.com/7b2vb9mu?tag=grid)
 - Tabbar. [Tooltips on tabs](https://snippet.dhtmlx.com/o5x1e3i8?tag=tabbar)
 - TreeGrid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/tx89igxr?tag=treegrid)   
   
