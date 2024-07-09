@@ -15,6 +15,7 @@ description: You can explore the API of DataView in the documentation of the DHT
 | [](dataview/api/dataview_getfocus_method.md)     | @getshort(dataview/api/dataview_getfocus_method.md)     |
 | [](dataview/api/dataview_getfocusitem_method.md) | @getshort(dataview/api/dataview_getfocusitem_method.md) |
 | [](dataview/api/dataview_paint_method.md)        | @getshort(dataview/api/dataview_paint_method.md)        |
+| [](dataview/api/dataview_resetfocus_method.md)   | @getshort(dataview/api/dataview_resetfocus_method.md)   |
 | [](dataview/api/dataview_setfocus_method.md)     | @getshort(dataview/api/dataview_setfocus_method.md)     |
 
 :::info important
