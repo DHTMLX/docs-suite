@@ -308,7 +308,7 @@ series: [
         </tr>
          <tr>
             <td><b>valueTemplate</b></td>
-            <td>(optional) a function that specifies the template for rendering the calculated percent values for data items on a chart<br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/77aei7os?tag=chart" target="_blank">Chart. Value template</a> </td>
+            <td>(optional) a function that specifies the template for rendering the values for data items on a chart<br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/77aei7os?tag=chart" target="_blank">Chart. Value template</a> </td>
         </tr>
     </tbody>
 </table>

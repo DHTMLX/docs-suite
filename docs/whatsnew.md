@@ -19,7 +19,7 @@ Released on July X, 2024
 
 #### Chart 
 
-- The ability to [specify a template for showing percent values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
+- The ability to [specify a template for showing values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
 - The ability to [add the header/footer for an exported PNG file](/chart/api/export/chart_png_method/) 
 
 #### Combobox

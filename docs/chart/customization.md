@@ -246,13 +246,13 @@ const chart = new dhx.Chart("chart_container", {
 });
 ~~~
 
-## Adding template for percent values
+## Adding template to values of data items in Pie and Donut charts
 
 ![](../assets/chart/show_percent_values.png)
 
 **Related sample**: [Chart. Value template](https://snippet.dhtmlx.com/o7ke2f1s)
 
-When you need to show percent values for data items on the Pie, Pie3D and Donut charts, you can use the **valueTemplate** option of [series](chart/configuration_properties.md#the-list-of-config-options-for-series-for-charts-without-scales-pie-pie3d-donut) to specify the necessary template function. For example:
+When you need to show values for data items on the Pie, Pie3D and Donut charts, you can use the **valueTemplate** option of [series](chart/configuration_properties.md#the-list-of-config-options-for-series-for-charts-without-scales-pie-pie3d-donut) to specify the necessary template function. For example:
 
 ~~~jsx {6-8}
 const chart = new dhx.Chart("chart_container", {
