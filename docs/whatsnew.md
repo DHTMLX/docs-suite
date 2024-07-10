@@ -20,7 +20,7 @@ Released on July X, 2024
 #### Chart 
 
 - The ability to [specify a template for showing values for data items on the Pie, Pie3D and Donut charts](chart/customization.md#adding-template-for-percent-values)
-- The ability to [add the header/footer for an exported PNG file](/chart/api/export/chart_png_method/) 
+- The ability to [add the header/footer for an exported PNG/PDF file](/chart/api/export/chart_png_method/) 
 
 #### Combobox
 
@@ -33,7 +33,7 @@ Released on July X, 2024
 #### Grid/TreeGrid
 
 - The ability to [add event handlers to HTML elements of a custom template of Combobox editor items in a column](/grid/api/api_gridcolumn_properties/)
-- The ability to [add the header/footer for an exported PNG file](/grid/api/export/grid_png_method/) 
+- The ability to [add the header/footer for an exported PNG/PDF file](/grid/api/export/grid_png_method/) 
 
 #### Toolbar
 

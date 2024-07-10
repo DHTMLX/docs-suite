@@ -11,7 +11,7 @@ description: You can explore the rootId config of Tree in the documentation of t
 @signature: {'rootId?: string | number;'}
 
 @example:
-const tree = new dhx.Tree("tree_container", {
+const tree = new dhx.Tree(null, {
     rootId: "root"
 });
 
@@ -21,7 +21,11 @@ By default, the root element takes the id of a Tree container.
 
 ~~~js
 const tree = new dhx.Tree("tree_container");
-tree.data.getRoot() -> "tree_container"
+tree.data.getRoot(); -> "tree_container"
 ~~~
+
+You should use the `rootId` property, if you render a tree in a layout cell and use the [`autoload`](/tree/api/tree_autoload_config/) option in the Tree configuration object. 
+
+
 
 @changelog: added in v7.0
