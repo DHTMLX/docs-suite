@@ -15,6 +15,7 @@ description: You can explore the API of List in the documentation of the DHTMLX 
 | [](list/api/list_getfocus_method.md)         | @getshort(list/api/list_getfocus_method.md)         |
 | [](list/api/list_getfocusitem_method.md)     | @getshort(list/api/list_getfocusitem_method.md)     |
 | [](list/api/list_paint_method.md)            | @getshort(list/api/list_paint_method.md)            |
+| [](list/api/list_resetfocus_method.md)       | @getshort(list/api/list_resetfocus_method.md)       |
 | [](list/api/list_setfocus_method.md)         | @getshort(list/api/list_setfocus_method.md)         |
 
 :::info important
