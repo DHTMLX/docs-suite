@@ -65,8 +65,24 @@ Released on July 16, 2024
 - Tabbar. [Tooltips on tabs](https://snippet.dhtmlx.com/o5x1e3i8?tag=tabbar)
 - TreeGrid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/tx89igxr?tag=treegrid)   
   
-Version 8.3.13
------------------
+
+## Version 8.3.14
+
+Released on July 8, 2024
+
+### Fixes
+
+- Combobox. The accessibility issue in the NVDA screen reader
+- Grid/TreeGrid. Events aren't triggered for the cell template
+- Grid/TreeGrid. The `adjust` property isn't applied to the "id" column 
+- Grid/TreeGrid. The value of the `headerAutoHeight` property in combination with the `adjust` one is calculated incorrectly
+- Grid/TreeGrid. Filtering is reset while dragging rows
+- Grid/TreeGrid. The combination of the `minWidth` and `autoWidth` column properties works incorrectly
+- Grid/TreeGrid. The scrolling functionality and key navigation are fixed
+- Grid/TreeGrid. Filtering with the row-spanned data is fixed
+- Layout. A theme applied to a Layout cell resets after the cell is collapsed
+
+## Version 8.3.13
 
 Released on June 24, 2024
 
