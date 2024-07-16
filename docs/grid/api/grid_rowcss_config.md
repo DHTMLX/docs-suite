@@ -21,7 +21,7 @@ const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
-    rowCss: function (row) { return row.custom ? "my_custom_row" : "" },
+    rowCss: (row) => { return row.custom ? "my_custom_row" : "" },
     data: dataset
 });
 

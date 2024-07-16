@@ -30,7 +30,7 @@ It is possible to return an object with attributes of a column via its id. Use t
 
 ~~~js
 const column = grid.getColumn("b"); // ->
-// {width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string"}
+// -> { width: 100, id: "b", header: Array(1), $cellCss: {…}, type: "string" }
 ~~~
 
 The method returns an object with configuration of the specified column. You can find the list of properties that the return object can contain [here](grid/api/grid_getcolumn_method.md).
@@ -40,8 +40,8 @@ The method returns an object with configuration of the specified column. You can
 There is the [](grid/api/grid_getcellrect_method.md) method that returns an object with coordinates of a cell. The method takes as parameters the ids of the row and the column the cell belongs to:
 
 ~~~js
-const rect = grid.getCellRect("1","c");
-// -> {x: 200, y: -40, height: 40, width: 200}
+const rect = grid.getCellRect("1", "c");
+// -> { x: 200, y: -40, height: 40, width: 200 }
 ~~~
 
 The return object includes the following attributes:
@@ -73,9 +73,9 @@ It is possible to show and hide a column in the grid via the [](grid/api/grid_sh
 
 ~~~js
 //showing a column
-grid.showColumn(col);
+grid.showColumn(colId);
 //hiding a column
-grid.hideColumn(col);
+grid.hideColumn(colId);
 ~~~
 
 **Related sample**: [Grid. Show / hide column](https://snippet.dhtmlx.com/n4zjwsqj)
@@ -198,7 +198,7 @@ You can manipulate columns and rows spans inside the grid with the help of the c
 
 ### Adding spans
 
-In order to add a col/row span into the grid, use the [](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
+In order to add a column/row span into the grid, use the [](grid/api/grid_addspan_method.md) method. Pass an object with configuration of a span as a parameter:
 
 ~~~js
 grid.addSpan({ 
@@ -242,11 +242,11 @@ These are possible fields of a span object:
 
 ### Getting spans
 
-You can return the col/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
+You can return the column/row span a cell is a part of using the [](grid/api/grid_getspan_method.md) method. It takes the ids of the row and the column the cell belongs to as parameters:
 
 ~~~js
-const span = grid.getSpan("10","a"); 
-// -> {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+const span = grid.getSpan("10", "a"); 
+// -> { row: "10", column: "a", colspan: 4, text: "Some header", css: "myCustomColspan" }
 ~~~
 
 As a result, you'll get an object with a span configuration, if any span includes the specified cell. Attributes of a span object are described above.
@@ -256,7 +256,7 @@ As a result, you'll get an object with a span configuration, if any span include
 To remove an existing span, make use of the [](grid/api/grid_removespan_method.md) method. It takes the ids of the row and the column as parameters:
 
 ~~~js
-grid.removeSpan("10","a");
+grid.removeSpan("10", "a");
 ~~~
 
 ## Working with data
@@ -369,7 +369,7 @@ To get the current state of sorting data in Grid, use the [](grid/api/grid_getso
 
 ~~~js
 const state = grid.getSortingState(); 
-// -> {dir: "desc", by: "country"}
+// -> { dir: "desc", by: "country" }
 ~~~
 
 **Related sample**: [Grid. Get sorting state](https://snippet.dhtmlx.com/u2vk3ri3)
@@ -381,11 +381,11 @@ You can easily edit the desired cell of a grid with the help of the [](grid/api/
 <table>
     <tbody>
         <tr>
-            <td><b>row</b></td>
+            <td><b>rowId</b></td>
             <td>(<i>string, number</i>) the id of a row</td>
         </tr>
         <tr>
-            <td><b>col</b></td>
+            <td><b>colId</b></td>
             <td>(<i>string, number</i>) the id of a column</td>
         </tr>
     </tbody>
@@ -394,7 +394,7 @@ You can easily edit the desired cell of a grid with the help of the [](grid/api/
 For example, you can edit the first cell of the "project" column like this:
 
 ~~~js
-grid.editCell(grid.data.getId(0),"project");
+grid.editCell(grid.data.getId(0), "project");
 ~~~
 
 **Related sample**: [Grid. Edit the first cell](https://snippet.dhtmlx.com/pqbax5vs)
@@ -480,7 +480,7 @@ The API of DHTMLX Grid provides the possibility to set scrolls to the necessary 
 You can scroll grid content to exact position defined by x and y coordinates via the [](grid/api/grid_scroll_method.md) method. Pass the coordinates as parameters of the method.
 
 ~~~js
-grid.scroll(75,230);
+grid.scroll(75, 230);
 ~~~
 
 ### Scrolling to specific grid cell
@@ -488,7 +488,7 @@ grid.scroll(75,230);
 It is also possible to scroll grid content to a particular cell. Pass the ids of the row and the column as parameters:
 
 ~~~js
-grid.scrollTo("15","c");
+grid.scrollTo("15", "c");
 ~~~
 
 **Related sample**: [Grid. Controlling scroll behavior](https://snippet.dhtmlx.com/usu1rnpu)
@@ -498,7 +498,7 @@ grid.scrollTo("15","c");
 To return the current state of scroll, use the [](grid/api/grid_getscrollstate_method.md) method. 
 
 ~~~js
-const state = grid.getScrollState(); // -> {x:0,y:0}
+const state = grid.getScrollState(); // -> {x:0, y:0}
 ~~~
 
 It returns an object with x,y coordinates of a position the grid has been scrolled to.

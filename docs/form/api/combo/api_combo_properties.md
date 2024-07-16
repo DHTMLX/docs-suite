@@ -26,6 +26,11 @@ description: You can explore the Properties of the Combo Box control of Form in 
     width?: string | number | "content", // "content" by default
     
     filter?: (item: any, input: string) => boolean,
+    eventHandlers?: {
+        [eventName: string]: {
+            [className: string]: (event: Event, id: string | number) => void | boolean; 
+        };
+    },
     itemHeight?: number | string, // 32 by default
     itemsCount?: boolean | ((count: number) => string),
     listHeight?: number | string, // 224 by default
@@ -108,6 +113,10 @@ description: You can explore the Properties of the Combo Box control of Form in 
         <tr>
             <td><b>filter</b></td>
             <td>(optional) sets a custom function for filtering Combo options. <a href="../../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+        </tr>
+        <tr>
+            <td><b>eventHandlers</b></td>
+            <td>(optional) adds event handlers to HTML elements of a custom template of Combo items. <a href="../../../../combobox/api/combobox_eventhandlers_config/">Check the details.</a></td>
         </tr>
         <tr>
             <td><b>itemHeight</b></td>

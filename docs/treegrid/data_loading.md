@@ -15,9 +15,15 @@ First, you need to prepare a data set that will be loaded into TreeGrid.
 
 ## Preparing data set
 
-DHTMLX TreeGrid expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX TreeGrid expects loaded data in the JSON format. 
 
-~~~js
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
+
+~~~jsx
 const dataset = [
     {
         "id": 0,
@@ -44,15 +50,15 @@ Each object in the data set contains configuration of a grid row. The structure 
     <tbody>
         <tr>
             <td><b>rowId</b></td>
-            <td>(<i>string|number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
+            <td>(<i>string | number</i>) optional, the id of a row. In case you haven't specified ids of rows, they will be auto-generated</td>
         </tr>
         <tr>
             <td><b>parent</b></td>
-            <td>(<i>string|number</i>) the ID of the parent row</td>
+            <td>(<i>string | number</i>) the ID of the parent row</td>
         </tr>
         <tr>
             <td><b>columnContent</b></td>
-            <td>(<i>string|number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
+            <td>(<i>string | number</i>) content of a column as <i>key:value</i> pairs, where key is the id of a column and value is any content you want to add into the column</td>
         </tr>
     </tbody>
 </table>
@@ -61,7 +67,7 @@ Each object in the data set contains configuration of a grid row. The structure 
 
 You can specify data you want to load into TreeGrid on the initialization stage. Make use of the [data](treegrid/api/treegrid_data_config.md) configuration property, as in:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -83,7 +89,7 @@ There are two ways to load data into TreeGrid after its initialization:
 
 To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -98,7 +104,7 @@ treegrid.data.parse(dataset);
 
 To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -124,13 +130,13 @@ treegrid.data.load("/some/data").then(function(){
 To save the current state of a treegrid, use the **serialize** method of Tree Collection. It converts the data of a treegrid into an array of JSON objects. 
 Each JSON object contains the configuration of a separate row.
 
-~~~js
+~~~jsx
 const state = treegrid1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different treegrid. For example:
 
-~~~js
+~~~jsx
 // creating a new treegrid
 const treegrid2 = new dhx.TreeGrid("treegrid_container2");
 // parsing the state of treegrid1 into treegrid2

@@ -8,15 +8,17 @@ description: You can explore the afterUnSelect event of TreeGrid in the document
 
 @short: fires after unselecting a cell
 
-@signature: {'afterUnSelect: (row: object, col: object) => void;'}
+@signature: {'afterUnSelect: (row: object, column: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @example:
-treegrid.selection.events.on("afterUnSelect", function(row, col){
-    console.log("afterUnSelect", row, col); 
+treegrid.selection.events.on("afterUnSelect", (row, column) => {
+    console.log("afterUnSelect", row, column); 
 });
 
 @descr:
@@ -24,8 +26,8 @@ treegrid.selection.events.on("afterUnSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-treegrid.events.on("afterUnSelect", function(row, col){
-    console.log("afterUnSelect", row, col); 
+treegrid.events.on("afterUnSelect", (row, column) => {
+    console.log("afterUnSelect", row, column); 
 });
 ~~~
 

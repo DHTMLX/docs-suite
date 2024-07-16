@@ -15,7 +15,7 @@ An object with the current state of sorting data in the treegrid.
 
 @example:
 const state = treegrid.getSortingState(); 
-// -> {dir: "desc", by: "country"}
+// -> { dir: "desc", by: "country" }
 
 @descr:
 
@@ -31,7 +31,7 @@ The return object includes the following attributes:
         </tr>
         <tr>
             <td><b>by</b></td>
-            <td>(<i>string</i>)the id of a column that the treegrid is sorted by</td>
+            <td>(<i>string</i>) the id of a column that the treegrid is sorted by</td>
         </tr>
     </tbody>
 </table>

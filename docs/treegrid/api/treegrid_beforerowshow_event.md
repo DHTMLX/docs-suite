@@ -11,13 +11,15 @@ description: You can explore the beforeRowShow event of TreeGrid in the document
 @signature: {'beforeRowShow: (row: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
 
 @returns:
 Return `false` to prevent a row from being shown; otherwise, `true`.
 
 @example:
-treegrid.events.on("beforeRowShow", function(row){
+treegrid.events.on("beforeRowShow", (row) => {
     // your logic here
     return false;
 });

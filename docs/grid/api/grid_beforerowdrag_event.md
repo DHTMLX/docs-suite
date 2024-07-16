@@ -8,20 +8,21 @@ description: You can explore the beforeRowDrag event of Grid in the documentatio
 
 @short: fires before dragging of a row has started
 
-@signature: {'beforeRowDrag: (data: object, events: MouseEvent) => void | boolean;'}
+@signature: {'beforeRowDrag: (data: object, event: MouseEvent) => void | boolean;'}
 
 @params:
+The callback of the event is called with the following parameters:
 - `data: object` - data object. It contains the following parameters:
     - `start: string | number` - the id of a row, from which the dragging process has started
     - `source: array` - an array with ids of dragged rows
     - `target: string | number` - the id of a potential target row
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @returns:
 Return `false` to prevent dragging a row; otherwise, `true`.
 
 @example:
-grid.events.on("beforeRowDrag", function(data, events){
+grid.events.on("beforeRowDrag", (data, event) => {
     // your logic here
     return false;
 });

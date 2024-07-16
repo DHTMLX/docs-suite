@@ -8,19 +8,20 @@ description: You can explore the beforeSelect event of TreeGrid in the documenta
 
 @short: fires before selecting a cell
 
-@signature: {'beforeSelect: (row: object, col: object) => boolean | void;'}
+@signature: {'beforeSelect: (row: object, column: object) => boolean | void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 
 - `row: object` - the config of a row
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @returns:
 Return `false` to prevent selecting of a cell; otherwise, `true`.
 
 @example:
-treegrid.selection.events.on("beforeSelect", function(row, col){
-    console.log("beforeSelect", row, col); 
+treegrid.selection.events.on("beforeSelect", (row, column) => {
+    console.log("beforeSelect", row, column); 
     return false;
 });
 
@@ -29,8 +30,8 @@ treegrid.selection.events.on("beforeSelect", function(row, col){
 It is also possible to use the simplified version of the event:
 
 ~~~js
-treegrid.events.on("beforeSelect", function(row, col){
-    console.log("beforeSelect", row, col); 
+treegrid.events.on("beforeSelect", (row, column) => {
+    console.log("beforeSelect", row, column); 
     return false;
 });
 ~~~

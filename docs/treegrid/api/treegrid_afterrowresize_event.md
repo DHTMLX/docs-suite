@@ -8,15 +8,17 @@ description: You can explore the afterRowResize event of TreeGrid in the documen
 
 @short: fires after the height of a row is changed
 
-@signature: afterRowResize: (row: object, events: Event, currentHeight: number) => void;
+@signature: afterRowResize: (row: object, event: Event, currentHeight: number) => void;
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
-- `events: Event` - a native event object
+- `event: Event` - a native event object
 - `currentHeight: number` - the current height of the row
 
 @example:
-treegrid.events.on("afterRowResize", function(row, events, currentHeight) {
+treegrid.events.on("afterRowResize", (row, event, currentHeight) => {
     console.log("Current row height:", currentHeight);
 });
 

@@ -39,6 +39,8 @@ description: You can explore the pdf method of Chart in the documentation of the
             - `title` - (optional) document name
             - `pageNumber` - (optional) current page number
             - `totalPages` - (optional) total pages in the document
+    - `header?: string` - (optional) an HTML template for the header in the exported file
+    - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
 
 @example:
@@ -78,7 +80,8 @@ It is necessary to set sufficient margin for correct display of `headerTemplate`
 **Related API:** [exportStyles](chart/api/chart_exportstyles_config.md)
 
 **Change log:** 
+- The **header** and **footer** options of the export object were added in v8.4
 - The **theme**, **exportStyles** options of the export object were added in v8.1
-- The **pageRanges**, **displayHeaderFooter**, **footerTemplate**, **headerTemplate** options of the pdf object were added in 8.1
-- The method was added in v8.0
+- The **pageRanges**, **displayHeaderFooter**, **footerTemplate**, **headerTemplate** options of the pdf object were added in v8.1
+- Added in v8.0
 

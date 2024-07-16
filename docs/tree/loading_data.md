@@ -15,9 +15,15 @@ First, you need to prepare a data set that will be loaded into Tree.
 
 ## Preparing data set
 
-DHTMLX Tree expects loaded data in the JSON format. Here is an example of an appropriate data set:
+DHTMLX Tree expects loaded data in the JSON format. 
 
-~~~js
+:::info
+Please note that if you specify the `id` fields in the tree collection, their values should be **unique**. You can also omit the `id` fields in the tree collection. In this case they will be generated automatically.
+:::
+
+Here is an example of an appropriate data set:
+
+~~~jsx
 const dataset = [
     {
         "value": "Books",
@@ -88,7 +94,7 @@ Each object in the data set contains configuration of a tree item. The structure
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(<i>string</i>) the id of an item</td>
+            <td>(<i>string | number</i>) the id of an item</td>
         </tr>
         <tr>
             <td><b>opened</b></td>
@@ -113,9 +119,9 @@ Each object in the data set contains configuration of a tree item. The structure
 
 You can load a [predefined data set](#preparing-data-set) into Tree on the initialization stage. Use the [data](tree/api/tree_data_config.md) configuration property, as in:
 
-~~~js
+~~~jsx
 const tree = new dhx.Tree("tree_container", {
-      data: dataset
+    data: dataset
 });
 ~~~
 
@@ -132,7 +138,7 @@ There are two ways to load data into Sidebar after its initialization:
 
 To load data from a local data source, use the **parse** method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
-~~~js
+~~~jsx
 const tree = new dhx.Tree("tree_container");
 tree.data.parse(dataset);
 ~~~
@@ -141,9 +147,9 @@ tree.data.parse(dataset);
 
 ### External data loading
 
-To load data from an external file, make use of the **load** method of Tree Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the `load` method of Tree Collection. It takes the URL of the file with data as a parameter:
 
-~~~js
+~~~jsx
 const tree = new dhx.Tree("tree_container");
 tree.data.load("../common/dataset.json");
 ~~~
@@ -154,7 +160,7 @@ The component will make an AJAX call and expect the remote URL to provide valid 
 
 Data loading is asynchronous, so you need to wrap any after-loading code into a promise:
 
-~~~js
+~~~jsx
 tree.data.load("/some/data").then(function(){
    // some logic here
 });
@@ -163,16 +169,16 @@ tree.data.load("/some/data").then(function(){
 
 ## Saving and restoring state
 
-To save the current state of a tree, use the **serialize** method of Tree Collection. It converts the data of a tree into an array of JSON objects. 
+To save the current state of a tree, use the `serialize` method of Tree Collection. It converts the data of a tree into an array of JSON objects. 
 Each JSON object contains the configuration of a separate row.
 
-~~~js
+~~~jsx
 const state = tree1.data.serialize();
 ~~~
 
 Then you can parse the data stored in the saved state array to a different tree. For example:
 
-~~~js
+~~~jsx
 // creating a new Tree
 const tree2 = new dhx.Tree("tree_container2");
 // parsing the state of tree1 into tree2

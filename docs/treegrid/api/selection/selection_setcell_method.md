@@ -8,11 +8,11 @@ description: You can explore the setCell method of TreeGrid in the documentation
 
 @short: sets selection to a specified cell
 
-@signature: {'setCell(row?: object, col?: object): void;'}
+@signature: {'setCell(row?: object, column?: object): void;'}
 
 @params:
 - `row: object` - an object with a cell to be selected
-- `col: object` - the config of a column
+- `column: object` - the config of a column
 
 @example:
 const row = treegrid.data.getItem(treegrid.data.getId(0));

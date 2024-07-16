@@ -6,17 +6,18 @@ description: You can explore the cellRightClick event of Grid in the documentati
 
 # cellRightClick
 
-@short: fires on right click on a grid cell
+@short: fires on the right click on a grid cell
 
-@signature: {'cellRightClick: (row: object, col: object, e: MouseEvent) => void;'}
+@signature: {'cellRightClick: (row: object, column: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
 - `row: object` - an object with a row configuration
 - `column: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("cellRightClick", function(row,column,e){
+grid.events.on("cellRightClick", (row, column, event) => {
      // your logic here
 });
 

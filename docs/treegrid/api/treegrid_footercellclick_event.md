@@ -8,14 +8,16 @@ description: You can explore the footerCellClick event of TreeGrid in the docume
 
 @short: fires on click on a grid footer cell
 
-@signature: {'footerCellClick: (col: object, e: MouseEvent) => void;'}
+@signature: {'footerCellClick: (column: object, event: MouseEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("footerCellClick", function(column,e){
+grid.events.on("footerCellClick", (column, event) => {
     // your logic here
 });
 

@@ -8,7 +8,7 @@ description: You can explore the setCell method of Grid in the documentation of 
 
 @short: sets selection to specified cells
 
-@signature: {'setCell(row?: object | string | number, col?: object | string | number, ctrlUp?: boolean, shiftUp?: boolean): void;'}
+@signature: {'setCell(row?: object | string | number, column?: object | string | number, ctrlUp?: boolean, shiftUp?: boolean): void;'}
 
 @params:
 - `row: object | string | number` - an object with a cell to be selected or the id of a row

@@ -11,10 +11,12 @@ description: You can explore the afterRowHide event of Grid in the documentation
 @signature: {'afterRowHide: (row: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `row: object` - an object with a row configuration
 
 @example:
-grid.events.on("afterRowHide", function(row){
+grid.events.on("afterRowHide", (row) => {
     // your logic here
 });
 

@@ -16,7 +16,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
         // columns config
     ],
     
-    groupTitleTemplate: function(groupName, groupItems){
+    groupTitleTemplate: (groupName, groupItems) => {
         return groupName + "count:" + groupItems.length
     }
 });

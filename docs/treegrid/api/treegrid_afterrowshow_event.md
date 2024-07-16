@@ -11,10 +11,11 @@ description: You can explore the afterRowShow event of TreeGrid in the documenta
 @signature: {'afterRowShow: (row: object) => void;'}
 
 @params:
+The callback of the event is called with the following parameter:
 - `row: object` - an object with a row configuration
 
 @example:
-treegrid.events.on("afterRowShow", function(row){
+treegrid.events.on("afterRowShow", (row) => {
     // your logic here
 });
 

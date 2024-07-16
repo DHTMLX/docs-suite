@@ -8,14 +8,16 @@ description: You can explore the resize event of Grid in the documentation of th
 
 @short: fires on resizing a column
 
-@signature: {'resize: (col: object, events: MouseEvent) => void;'}
+@signature: {'resize: (column: object, event: MouseEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `events: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("resize", function(col,e){
+grid.events.on("resize", (column, event) => {
     // your code here
 });
 

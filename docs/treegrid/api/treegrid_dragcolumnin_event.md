@@ -8,17 +8,19 @@ description: You can explore the dragColumnIn event of TreeGrid in the documenta
 
 @short: fires when a column is dragged to another potential target
 
-@signature: {'dragColumnIn: (data: object, events: MouseEvent) => void;'}
+@signature: {'dragColumnIn: (data: object, event: MouseEvent) => void;'}
 
 @params:
+The callback of the event is called with the following parameters:
+
 - `data: object` - data object. It contains the following parameters:
     - `start: string | number` - the id of a column, from which the dragging process has started
     - `source: array` - an array with ids of dragged columns
     - `target: string | number` - the id of a potential target column
-- `events: MouseEvent` - a native HTML event object
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-treegrid.events.on("dragColumnIn", function(data, events) {
+treegrid.events.on("dragColumnIn", (data, event) => {
     // your logic here
 });
 

@@ -8,14 +8,16 @@ description: You can explore the footerCellMouseOver event of Grid in the docume
 
 @short: fires on moving the mouse pointer over a grid footer cell
 
-@signature: {'footerCellMouseOver: (col: object, e: MouseEvent) => void;'}
+@signature: {'footerCellMouseOver: (column: object, event: MouseEvent) => void;'}
 
 @params:
-- `col: object` - an object with a column configuration
-- `e: MouseEvent` - a native HTML event object
+The callback of the event is called with the following parameters:
+
+- `column: object` - an object with a column configuration
+- `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("footerCellMouseOver ", function(col,e){
+grid.events.on("footerCellMouseOver ", (column, event) => {
     // your logic here
 });
 

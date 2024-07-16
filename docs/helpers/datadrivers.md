@@ -17,13 +17,14 @@ However, for further work, you may need to get the same data in different format
 
 ## CSV format
 
-To create dataDrivers object, use the *dhx.dataDrivers.csv* constructor:
+To create a `dataDrivers` object, use the `dhx.dataDrivers.csv` constructor:
 
-~~~js
+~~~jsx
 const csvDataDriver = new dhx.dataDrivers.csv(
     {
         columnDelimiter: " | ",
-        rowDelimiter: "\n\n"
+        rowDelimiter: "\n\n",
+        nameByHeader: true
     }
 );
 ~~~
@@ -32,21 +33,25 @@ The constructor has one parameter:
 
 - optional, an object with configuration properties. These properties are:
    
-    - **columnDelimiter** - (*string*) a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
-    - **rowDelimiter** - (*string*) a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value.
+    - `columnDelimiter` - (*string*) optional, a comma (",") by default. A separator between columns, can be a semicolon - ";", or any other value
+    - `rowDelimiter` - (*string*) optional, a newline ("\n") by default. A separator between rows, can be a tab - "\t", or any other value
+    - `nameByHeader` - (*boolean*) optional, if set to *true*, the data from the first line are used as keys of the items; *false* by default
+:::note
+Note that the `nameByHeader: true` setting is required when you [create a data driver for parsing CSV data into a grid](/grid/data_loading/#loading-from-local-source)
+:::
 
-To convert data of a component (for instance, data of a chart) into a CSV string, use the **serialize** method, as in:
+To convert data of a component (for instance, data of a chart) into a CSV string, use the `serialize()` method, as in:
 
-~~~js
+~~~jsx
 csvDataDriver.serialize(chart.data.serialize(), false);
 ~~~
 
 The method takes two parameters:
 
-- **data** - (*array*) - the data to be converted
-- **withoutHeader** - (*boolean*) optional, defines whether the returned string will contain the header, *false* by default
+- `data` - (*array*) - the data to be converted
+- `withoutHeader` - (*boolean*) optional, defines whether the returned string will contain the header, *false* by default
 
-As a result, the converted into **CSV format** data of the chart look like this: 
+As a result, data of the chart converted into the **CSV format** look like this: 
 
 ~~~js title="CSV format"
 "month | company A | company B | company C | company D | id
@@ -64,15 +69,15 @@ As a result, the converted into **CSV format** data of the chart look like this:
 
 {{pronote This functionality requires PRO version of the DHTMLX suite package.}}
 
-To create dataDrivers object, use the *dhx.dataDrivers.xml* constructor:
+To create dataDrivers object, use the `dhx.dataDrivers.xml` constructor:
 
-~~~js
+~~~jsx
 const xmlDataDriver = new dhx.dataDrivers.xml();
 ~~~
 
-To convert data of a component (for example, data of a grid) into an XML string, use the **serialize** method, as in:
+To convert data of a component (for example, data of a grid) into an XML string, use the `serialize()` method, as in:
 
-~~~js
+~~~jsx
 xmlDataDriver.serialize(
     [
         {
@@ -90,11 +95,11 @@ xmlDataDriver.serialize(
 
 The method takes one parameter:
 
-- **data** - (*array*) - the data to be converted
+- `data` - (*array*) - the data to be converted
 
-As a result, the converted into **XML format** data of the grid look like this: 
+As a result, the data of the grid converted into the **XML format** look like this: 
 
-~~~js title="XML format"
+~~~jsx title="XML format"
 "<?xml version="1.0" encoding="iso-8859-1"?>
 <root>
     <item>

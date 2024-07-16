@@ -8,13 +8,15 @@ description: You can explore the afterKeyDown event of Grid in the documentation
 
 @short: fires after the user is pressing a shortcut key
 
-@signature: {'afterKeyDown: (e: Event) => void;'}
+@signature: {'afterKeyDown: (event: Event) => void;'}
 
 @params:
-- `e: Event` - a native KeyboardEvent object
+The callback of the event is called with the following parameter:
+
+- `event: Event` - a native KeyboardEvent object
 
 @example:
-grid.events.on("afterKeyDown", function (e) {
+grid.events.on("afterKeyDown", (event) => {
     // your logic here
 });
 

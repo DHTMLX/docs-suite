@@ -249,6 +249,7 @@ series: [
         strokeWidth?: number,
         subType?: "basic" | "percentOnly" | "valueOnly",
         useLines?: boolean,
+        valueTemplate?: (value: number) => string
     }
 ]
 ~~~
@@ -299,11 +300,15 @@ series: [
         </tr>
         <tr>
             <td><b>subType</b></td>
-            <td>(optional) specifies the subtype of a chart: "basic"|"percentOnly"|"valueOnly"</td>
+            <td>(optional) specifies the subtype of a chart: "basic" | "percentOnly" | "valueOnly"</td>
         </tr>
         <tr>
             <td><b>useLines</b></td>
             <td>(optional) shows/hides lines used to "connect" chart sectors with labels</td>
+        </tr>
+         <tr>
+            <td><b>valueTemplate</b></td>
+            <td>(optional) a function that specifies the template for rendering the values for data items on a chart<br/><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/77aei7os?tag=chart" target="_blank">Chart. Value template</a> </td>
         </tr>
     </tbody>
 </table>

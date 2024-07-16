@@ -743,7 +743,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     id: "select_example",
     header: [{ text: "Select example" }],
     editorType: "select",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
 },
 ~~~
 
@@ -788,7 +788,7 @@ Or define unique lists of options for different column cells. For that, use a fu
     header: [{ text: "Multiselect example" }],
     type: "string",
     editorType: "multiselect",
-    options: (col, row) => getCurrentOptions(row),
+    options: (column, row) => getCurrentOptions(row),
     minWidth: 360
 },
 ~~~
@@ -1461,7 +1461,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 The default configuration of TreeGrid provides tooltips that are rendered when a user hovers over the content of a column's cell. All the tooltips can be controlled via the [](treegrid/api/treegrid_tooltip_config.md) configuration property of TreeGrid. By default, the tooltips are enabled. You can disable them, by setting the config to *false*:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1473,9 +1473,30 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
 
+The `tooltip` configuration option can be set as an object with the following properties:
+
+- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+- `margin` - (optional) the margin between the node and tooltip; *8px* by default
+- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
+- `css` - (optional) the style of a tooltip box
+
+~~~jsx {6-8}
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    tooltip: {
+       force: true
+    }
+});
+~~~
+
 It is also possible to control the header and footer tooltips, independently. There are the [headerTooltip](treegrid/api/treegrid_headertooltip_config.md) and [footerTooltip](treegrid/api/treegrid_footertooltip_config.md) TreeGrid configuration properties, that you can use for this purpose:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -1487,28 +1508,70 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-### Column tooltips
+The `headerTooltip` and `footerTooltip` configs can be specified as objects the same as the main [`tooltip`](treegrid/configuration.md#treegrid-tooltips) config.
 
-There is also the possibility to enable/disable tooltips for separate columns or spans by using the **tooltip** option in the configuration object of the [columns](treegrid/configuration.md#columns) or [spans](treegrid/configuration.md#spans) accordingly:
+### Column and span tooltips
 
-~~~js {3,9}
-const treegrid = new dhx.TreeGrid("treegrid_container", {
+There is also the possibility to enable/disable tooltips for separate columns or spans by using the `tooltip` option in the configuration object of the [columns](treegrid/configuration.md#columns) or [spans](treegrid/configuration.md#spans) accordingly:
+
+~~~jsx {3,13,17}
+const treeGrid = new dhx.TreeGrid("treegrid", {
     columns: [
-        { width: 280, id: "name", header: [{ text: "Book Name" }], tooltip: true },
-        { width: 160, id: "cover", type: "string", header: [{}, { text: "Cover" }] },
-        { width: 160, id: "ships", type: "string", header: [{ text: "Ships in" }] },
-        { width: 160, id: "inStock", type: "string", header: [{ text: "In stock" }] }
+        { id: "name", header: [{ text: "Book Name" }], gravity: 1.5, tooltip: true },
+        { id: "price", type: "string", header: [
+            { text: "Terms and conditions", colspan: 2}, 
+            { text: "Price" }
+        ] },
+        { id: "cover", type: "string", header: [{}, { text: "Cover" }] },
+    ],
+    header: false,
+    spans: [
+        { row: "b.1", column: "name", colspan: 5 },
+        { row: "c.1", column: "price", rowspan: 3, text: "<h2>Some content here</h2>", tooltip: true },
     ],
     data: dataset,
+    adjust: true,
     tooltip: false
 });
 ~~~
 
 **Related sample**: [TreeGrid. Hiding tooltips](https://snippet.dhtmlx.com/jaib6ovf)
 
-The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the **tooltip** property in the corresponding header/footer object inside the column:
+The same as with the common TreeGrid tooltips, column and span tooltips can be set as objects with the following properties:
 
-~~~js {4}
+- `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+- `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+- `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+- `margin` - (optional) the margin between the node and tooltip; *8px* by default
+- `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
+- `css` - (optional) the style of a tooltip box
+
+~~~jsx {3,13,17}
+const treeGrid = new dhx.TreeGrid("treegrid", {
+    columns: [
+        { id: "name", header: [{ text: "Book Name" }], gravity: 1.5, tooltip: { force:true } },
+        { id: "price", type: "string", header: [
+            { text: "Terms and conditions", colspan: 2}, 
+            { text: "Price" }
+        ] },
+        { id: "cover", type: "string", header: [{}, { text: "Cover" }] },
+    ],
+    header: false,
+    spans: [
+        { row: "b.1", column: "name", colspan: 5 },
+        { row: "c.1", column: "price", rowspan: 3, text: "<h2>Some content here</h2>", tooltip: { force:true } },
+    ],
+    data: dataset,
+    adjust: true,
+    tooltip: false
+});
+~~~
+
+#### Column header/footer tooltip
+
+The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the `tooltip` property in the corresponding header/footer object inside the column:
+
+~~~jsx {4}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // Enables a tooltip for the country title
@@ -1521,9 +1584,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-What is more, you can specify a necessary template for the header/footer tooltip via the **tooltipTemplate** configuration property, as in:
+What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property, as in:
 
-~~~js {8-10,16}
+~~~jsx {8-10,16}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
@@ -1558,7 +1621,7 @@ the methods processing column values: "avg" | "sum" | "max" | "min" | "count". W
 
 Check the example below:
 
-~~~js {14,27}
+~~~jsx {14,27}
 const balanceTemplate = value => {
     return value > 0
         ? `<div style='color:green'>⬆ $${value}</div>`

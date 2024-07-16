@@ -40,7 +40,8 @@ description: You can explore the pdf export method of TreeGrid in the documentat
             - `title` - (optional) document name
             - `pageNumber` - (optional) current page number
             - `totalPages` - (optional) total pages in the document
-
+    - `header?: string` - (optional) an HTML template for the header in the exported file
+    - `footer?: string` - (optional) an HTML template for the footer in the exported file
 
 @example:
 // default export
@@ -88,4 +89,6 @@ If you use TreeGrid in conjunction with [Pagination](pagination.md), only the di
 
 **Related API:** [exportStyles](treegrid/api/treegrid_exportstyles_config.md)
 
-**Change log:** Added in v8.1
+**Change log:** 
+- The **header** and **footer** options of the export object were added in v8.4
+- Added in v8.1
