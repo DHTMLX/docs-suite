@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.4.1
+------------------
+
+Released on July 25, 2024
+
+### Fixes
+
+- Combobox. Custom scroll not working 
+- Form. The value selected in the Combo control restores after the options reloading
+- Form. The input destructor issue while using Optimus
+- Form. The `enable()` method fails when a form contains a Fieldset control with a spacer
+- Grid/TreeGrid. Row selection gets lost after dragging a column 
+- Tree. Checkbox states are not displayed in the serialized data
+
 Version 8.4 
 ------------------
 
