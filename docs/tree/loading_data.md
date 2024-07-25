@@ -105,6 +105,10 @@ Each object in the data set contains configuration of a tree item. The structure
             <td>(<i>boolean</i>) optional, enables/disables displaying a checkbox for a tree item</td>
         </tr>
         <tr>
+            <td><b>checked</b></td>
+            <td>(<i>boolean</i>) optional, checks/unchecks a checkbox of a tree item, works when the <b>checkbox</b> property is set to <i>true</i></td>
+        </tr>
+        <tr>
             <td><b>items</b></td>
             <td>(<i>array</i>) an array of nested items</td>
         </tr>
