@@ -15,7 +15,7 @@ Released on July 25, 2024
 
 ### Fixes
 
-- Combobox. Custom scroll not working 
+- Combobox. A custom scroll doesn't work 
 - Form. The value selected in the Combo control restores after the options reloading
 - Form. The input destructor issue while using Optimus
 - Form. The `enable()` method fails when a form contains a Fieldset control with a spacer
