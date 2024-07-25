@@ -27,61 +27,67 @@ Here is an example of an appropriate data set:
 const dataset = [
     {
         "value": "Books",
-        "id": "books",
+        "id": "Books",
         "opened": true,
-        "items": [            
+        "items": [
             {
-                "value": "History",
-                "id": "history",
-                "items": [{
-                    "value": "John Mack Faragher",
-                    "id": "jmf",
-                    "icon": {
-                        "folder": "fas fa-book",
-                        "openFolder": "fas fa-book-open",
-                        "file": "fas fa-file"
+                "value": "Thrillers",
+                "id": "Thrillers",
+                "opened": true,
+                "items": [
+                    {
+                        "value": "Bestsellers",
+                        "id": "Bestsellers",
+                        "items": [
+                            {
+                                "value": "Lawrence Block",
+                                "id": "Lawrence Block",
+                            }
+                        ]
+                    },
+                    {
+                        "value": "Robert Crais",
+                        "id": "Robert Crais",
+                    },
+                    {
+                        "value": "Ian Rankin",
+                        "id": "Ian Rankin",
+                    },
+                    {
+                        "value": "James Johns",
+                        "id": "James Johns",
+                        "checked": true,
+                    },
+                    {
+                        "value": "Nancy Atherton",
+                        "id": "Nancy Atherton",
+                        "checked": true
                     }
-                },
-                {
-                    "value": "Jim Dwyer",
-                    "id": "jd"
-                },
-                {
-                    "value": "Larry Schweikart",
-                    "id": "ls"
-                }]
-            },
+                ]
+            },            
             {
                 "value": "Fiction & Fantasy",
-                "id": "fantasy",
-                "items": [{
-                    "value": "Audrey Niffenegger",
-                    "id": "af"
-                },
-                {
-                    "value": "Philip Roth",
-                    "id": "pr"
-                }]
+                "id": "Fiction & Fantasy",
+                "items": [
+                    {
+                        "value": "Audrey Niffenegger",
+                        "id": "Audrey Niffenegger"
+                    },
+                    {
+                        "value": "Philip Roth",
+                        "id": "Philip Roth"
+                    }
+                ]
             },
-            {
-                "value": "Teens",
-                "id": "teens",
-                "items": [{
-                    "value": "Joss Whedon",
-                    "id": "jw"
-                },
-                {
-                    "value": "Meg Cabot",
-                    "id": "mc"
-                },
-                {
-                    "value": "Garth Nix",
-                    "id": "gn"
-                }]
-            }
         ]
-    }
+    },
 ];
+
+const tree = new dhx.Tree("tree", {
+    checkbox: true,
+});
+
+tree.data.parse(dataset);
 ~~~
 
 Each object in the data set contains configuration of a tree item. The structure of an item is rather flexible. It may include:
