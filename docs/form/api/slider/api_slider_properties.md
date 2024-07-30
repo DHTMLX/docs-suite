@@ -12,7 +12,7 @@ description: You can explore the Properties of the Slider control of Form in the
 {
     type: "slider",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     value?: number | number[],
     
     css?: string,
@@ -56,7 +56,7 @@ description: You can explore the Properties of the Slider control of Form in the
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>value</b></td>

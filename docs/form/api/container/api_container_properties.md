@@ -12,7 +12,7 @@ description: You can explore the Properties of the Container control of Form in 
 {
     type: "container",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     html?: HTMLElement | string,
     
     css?: string,
@@ -34,7 +34,7 @@ description: You can explore the Properties of the Container control of Form in 
 
 - `type` - (required) the type of a control, set it to "container"
 - `name` - (optional) the name of a control
-- `id` - (optional) the id of a control, auto-generated if not set
+- `id` - (optional) the id of a control, must be **unique** if set, auto-generated if not set
 - `html` - (optional) the HTML content of a control
 - `css` - (optional) adds style classes to a control string
 - `disabled` - (optional) defines whether a control is enabled (*false*) or disabled (*true*), *false* by default
