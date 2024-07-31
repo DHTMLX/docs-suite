@@ -14,6 +14,7 @@ description: You can explore the Properties of the Input control of Form in the 
     name?: string,
     id?: string,
     value?: string | number,
+    numberMask?: object | boolean,
     
     css?: string,
     disabled?: boolean, // false by default
@@ -67,6 +68,18 @@ description: You can explore the Properties of the Input control of Form in the 
             <td>(optional) the initial value of the input</td>
         </tr>
         <tr>
+            <td><b>numberMask</b></td>
+            <td>(optional) sets an <a href="../../../work_with_form#numbermask">input mask for entering number values</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>prefix</b> - renders a text before the resulting value</ol>
+                <ol>- <b>suffix</b> - renders a text after the resulting value</ol>
+                <ol>- <b>groupSeparator</b> - sets a separator for thousands</ol>
+                <ol>- <b>decSeparator</b> - sets a separator for decimals</ol>
+                <ol>- <b>allowNegative</b> - allows using negative numbers</ol>
+                <ol>- <b>maxIntLength</b> - allows setting the maximal length of an integer</ol>
+                <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol></li>
+                <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates</li></ul></td>
+        </tr>
+        <tr>
             <td><b>css</b></td>
             <td>(optional) adds style classes to a control</td>
         </tr>
@@ -92,7 +105,7 @@ description: You can explore the Properties of the Input control of Form in the 
         </tr>
         <tr>
             <td><b>validation</b></td>
-            <td>(optional) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:<ul><li>as a predefined string value:<ol>- "email" - validEmail</ol><ol>- "integer" - validInteger</ol><ol>- "numeric" - validNumeric</ol><ol>- "alphanumeric" - validAplhaNumeric</ol><ol>- "IPv4" - validIPv4</ol>Can be used with <i>inputType: "text", "password"</i>.</li><li>as a <i>function</i> that defines a custom validation rule. It takes as a parameter the value typed in the input and returns <i>true</i>, if the entered value is valid.<br/> Can be used with <i>inputType: "number"</i> only.</li></ul></td>
+            <td>(optional) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:<ul><li>as a predefined <i>string</i> value:<ol>- "email" - validEmail</ol><ol>- "integer" - validInteger</ol><ol>- "numeric" - validNumeric</ol><ol>- "alphanumeric" - validAplhaNumeric</ol><ol>- "IPv4" - validIPv4</ol>Can be used with <i>inputType: "text", "password"</i>.</li><li>as a <i>function</i> that defines a custom validation rule. It takes as a parameter the value typed in the input and returns <i>true</i>, if the entered value is valid.<br/> Can be used with <i>inputType: "number"</i> only.</li></ul></td>
         </tr>
         <tr>
             <td><b>width</b></td>

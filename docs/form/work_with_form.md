@@ -105,6 +105,88 @@ To check whether a form control is visible, pass either the name of the control 
 form.isVisible("input"); // -> returns true/false
 ~~~
 
+## Using input masks
+
+The input masks are used to provide entering of values into the input and textarea Form controls in a user-defined way. There are corresponding configuration options and methods in the API of the Input and Textarea controls which are used for working with input masks.
+
+### numberMask
+
+The `numberMask` property sets an input mask for entering number values. It can be set in two ways:
+
+- as an *object* with the following properties:
+    - ***prefix*** - renders a text before the resulting value
+    - ***suffix*** - renders a text after the resulting value
+    - ***groupSeparator*** - sets a separator for thousands
+    - ***decSeparator*** - sets a separator for decimals
+    - ***allowNegative*** - allows using negative numbers
+    - ***maxIntLength*** - allows setting the maximal length of an integer
+    - ***maxDecLength*** - allows setting the maximal length of a decimal
+
+For example:
+
+~~~jsx
+{
+    prefix: "$",
+    groupSeparator: ",",
+    decSeparator: ".",
+    maxIntLength: 7,
+    maxDecLength: 2
+}
+~~~
+
+When the `inputType:"number"` is specified for an input, the resulting number is transformed to the *number* type. Then the default config is the following:
+
+~~~jsx
+{
+    groupSeparator: ",";
+    decSeparator: ".";
+    allowNegative: true;
+    maxIntLength: 16;
+    maxDecLength: 2;
+}
+~~~
+
+When the `inputType: "text"` is specified for an input, the resulting number is transformed to the *string* type without a mask, as if it were a number. In this case the default config is the following:
+
+~~~jsx
+{
+    groupSeparator: ",";
+    decSeparator: ".";
+    allowNegative: true;
+}
+~~~
+
+For example, if the entered value is "$ 1,000,000", the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is "1000000".
+
+- as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates
+
+~~~jsx
+{
+    numberMask: true,
+}
+~~~
+
+For example, the value 100000.01 is transformed into 100,000.01 by the predefined pattern.
+
+**Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/l5i6lwe5)
+
+### patternMask
+
+### Getting the text value of an input
+
+When you need to get the value of an input to which a mask has been applied, you can use the [`getText`](form/api/input/input_gettext_method/) method of the Input control.
+It returns a string with the current text of the control.
+
+~~~jsx
+const value = form.getItem("input").getText();
+// -> "100000.01"
+~~~
+
+The method is used with the `numberMask` and `patternMask` properties of the Input control.  For example, the input value is 100000.01, the value displayed in the input is $ 100,000.01 and the resulting value will be:
+
+- 100000.01 for the "number" input type
+- "100000.01" for the "text" input type
+
 ## Validating form
 
 In order to validate a form, you should deal with several aspects: required fields, minimal and maximal values, number of allowed characters, and validation rules.
