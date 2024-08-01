@@ -14,6 +14,24 @@ description: You can explore the Properties of the Textarea control of Form in t
     name?: string,
     id?: string,
     value?: string,
+    numberMask?:
+        | {
+            format?: (value: number) => number;
+            prefix?: string; // "" by default (before the value)
+            suffix?: string; // "" by default (after the value)
+            groupSeparator?: string; // "," by default
+            decSeparator?: string; // "." by default
+        }
+        | boolean,
+
+    patternMask?:
+        |   {
+                pattern: ((value: string | number) => string) | string;
+                charFormat?: {
+                    [char: string]: RegExp;
+                };
+            }
+        | string,
     
     css?: string,
     disabled?: boolean, // false by default
@@ -61,6 +79,25 @@ description: You can explore the Properties of the Textarea control of Form in t
         <tr>
             <td><b>value</b></td>
             <td>(optional) the initial value of the textarea</td>
+        </tr>
+        <tr>
+            <td><b>numberMask</b></td>
+            <td>(optional) sets an <a href="../../../work_with_form#numbermask">input mask for entering number values</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>prefix</b> - renders a text before the resulting value</ol>
+                <ol>- <b>suffix</b> - renders a text after the resulting value</ol>
+                <ol>- <b>groupSeparator</b> - sets a separator for thousands</ol>
+                <ol>- <b>decSeparator</b> - sets a separator for decimals</ol>
+                <ol>- <b>allowNegative</b> - allows using negative numbers</ol>
+                <ol>- <b>maxIntLength</b> - allows setting the maximal length of an integer</ol>
+                <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol></li>
+                <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>patternMask</b></td>
+            <td>(optional) sets an <a href="../../../work_with_form#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>pattern</b> - allows specifying the necessary mask and change it dynamically, depending on the entered values</ol>
+                <ol>- <b>charFormat</b> - allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below</ol></li>
+                <li>as a <i>string</i> allows setting a mask as a string using a predefined set of symbols</li></ul></td>
         </tr>
         <tr>
             <td><b>css</b></td>

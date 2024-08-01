@@ -14,7 +14,23 @@ description: You can explore the Properties of the Input control of Form in the 
     name?: string,
     id?: string,
     value?: string | number,
-    numberMask?: object | boolean,
+    numberMask?:
+        |   {
+                format?: (value: number) => number;
+                prefix?: string; // "" by default (before the value)
+                suffix?: string; // "" by default (after the value)
+                groupSeparator?: string; // "," by default
+                decSeparator?: string; // "." by default
+            }
+        | boolean,
+    patternMask?:
+        |   {
+                pattern: ((value: string | number) => string) | string;
+                charFormat?: {
+                    [char: string]: RegExp;
+                };
+            }
+        | string,
     
     css?: string,
     disabled?: boolean, // false by default
@@ -78,6 +94,13 @@ description: You can explore the Properties of the Input control of Form in the 
                 <ol>- <b>maxIntLength</b> - allows setting the maximal length of an integer</ol>
                 <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol></li>
                 <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>patternMask</b></td>
+            <td>(optional) sets an <a href="../../../work_with_form#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>pattern</b> - allows specifying the necessary mask and change it dynamically, depending on the entered values</ol>
+                <ol>- <b>charFormat</b> - allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below</ol></li>
+                <li>as a <i>string</i> allows setting a mask as a string using a predefined set of symbols</li></ul></td>
         </tr>
         <tr>
             <td><b>css</b></td>
