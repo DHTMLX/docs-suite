@@ -16,14 +16,15 @@ description: You can explore the Properties of the Textarea control of Form in t
     value?: string,
     numberMask?:
         | {
-            format?: (value: number) => number;
-            prefix?: string; // "" by default (before the value)
-            suffix?: string; // "" by default (after the value)
-            groupSeparator?: string; // "," by default
-            decSeparator?: string; // "." by default
-        }
+                  prefix?: string; // "" by default (before the value)
+                  suffix?: string; // "" by default (after the value)
+                  groupSeparator?: string; // "," by default
+                  decSeparator?: string; // "." by default
+                  allowNegative?: boolean; // true by default
+                  maxIntLength?: number; // 16 by default (for the number type)
+                  maxDecLength?: number; // 2 by default (for the number type)
+            }
         | boolean,
-
     patternMask?:
         |   {
                 pattern: ((value: string | number) => string) | string;
@@ -96,7 +97,7 @@ description: You can explore the Properties of the Textarea control of Form in t
             <td><b>patternMask</b></td>
             <td>(optional) sets an <a href="../../../work_with_form#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
                 <ol>- <b>pattern</b> - allows specifying the necessary mask and change it dynamically, depending on the entered values</ol>
-                <ol>- <b>charFormat</b> - allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below</ol></li>
+                <ol>- <b>charFormat</b> - allows specifying a regular expression for an optional symbol</ol></li>
                 <li>as a <i>string</i> allows setting a mask as a string using a predefined set of symbols</li></ul></td>
         </tr>
         <tr>

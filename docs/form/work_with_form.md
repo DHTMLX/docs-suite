@@ -202,7 +202,7 @@ The `patternMask` property sets an input mask for entering number and string val
 
 Here's an example of the `patternMask` property that specifies an input mask pattern for entering a date:
 
-~~~js
+~~~jsx
 {
     type: "input",
     label: "DD/MM/YYYY MM:HH",
