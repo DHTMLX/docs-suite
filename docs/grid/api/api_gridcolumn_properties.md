@@ -54,10 +54,29 @@ columns:[
             htmlEnable?: boolean, // false by default
         },
     ],
-    type?: "string" | "number" | "boolean" | "date" | "percent", // "string" by default
+    type?: "string" | "number" | "boolean" | "date", // "string" by default
+    numberMask?:
+        | {
+                  prefix?: string; // "" by default (before the value)
+                  suffix?: string; // "" by default (after the value)
+                  groupSeparator?: string; // "," by default
+                  decSeparator?: string; // "." by default
+                  allowNegative?: boolean; // true by default
+                  maxIntLength?: number; // 16 by default (for the number type)
+                  maxDecLength?: number; // 2 by default (for the number type)
+            }
+        | boolean,
+    patternMask?:
+        | {
+                pattern: ((value: string | number) => string) | string;
+                charFormat?: {
+                    [char: string]: RegExp;
+                };
+        }
+        | string,
     // "input" by default
     editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea", 
-    format?: string,
+    dateFormat?: string, // "%M %d %Y" by default 
     options?: (string | { id: string | number, value: string })[] |
               (column: object, row?: object) => (string | { id: string | number, value: string })[],
     editorConfig?: obj,
@@ -113,15 +132,34 @@ columns:[
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>(optional) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:<ul><li><i>"string" (the default one)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li><li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li><li><i>"boolean"</i> - aligns data to the left side and applies the <i>"checkbox"</i> editor</li><li><i>"percent"</i> - aligns data to the left side and applies the <i>"input"</i> editor</li><li><i>"date"</i> - aligns data to the left side and applies the <i>"datePicker"</i> editor</li></ul></td>
+            <td>(optional) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:<ul><li><i>"string" (the default one)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li><li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li><li><i>"boolean"</i> - aligns data to the left side and applies the <i>"checkbox"</i> editor</li><li><i>"date"</i> - aligns data to the left side and applies the <i>"datePicker"</i> editor</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>numberMask</b></td>
+            <td>(optional) sets an <a href="../../configuration#numbermask">input mask for entering number values</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>prefix</b> - renders a text before the resulting value</ol>
+                <ol>- <b>suffix</b> - renders a text after the resulting value</ol>
+                <ol>- <b>groupSeparator</b> - sets a separator for thousands</ol>
+                <ol>- <b>decSeparator</b> - sets a separator for decimals</ol>
+                <ol>- <b>allowNegative</b> - allows using negative numbers</ol>
+                <ol>- <b>maxIntLength</b> - allows setting the maximal length of an integer</ol>
+                <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol></li>
+                <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>patternMask</b></td>
+            <td>(optional) sets an <a href="../../configuration#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>pattern</b> - allows specifying the necessary mask and change it dynamically, depending on the entered values</ol>
+                <ol>- <b>charFormat</b> - allows specifying a regular expression for an optional symbol</ol></li>
+                <li>as a <i>string</i> allows setting a mask as a string using a predefined set of symbols</li></ul></td>
         </tr>
         <tr>
             <td><a href="../../configuration#types-of-column-editor"><b>editorType</b></a></td>
             <td>(optional) the type of an editor used in a column: "input" | "select" | "combobox" | "textarea" | "multiselect" | "datePicker", <i>"input"</i> by default </td>
         </tr>
         <tr>
-            <td><a href="../../configuration#formatting-columns"><b>format</b></a></td>
-            <td>(optional) defines the format for the content of the column's cells. The date format must include delimiters (space or symbol), otherwise an error will be thrown</td>
+            <td><a href="../../configuration#formatting-columns"><b>dateFormat</b></a></td>
+            <td>(optional) defines the format of dates. The date format must include delimiters (spaces or symbols), otherwise an error will be thrown</td>
         </tr>
         <tr>
             <td><b>options</b></td>
