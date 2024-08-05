@@ -10,7 +10,7 @@ description: description
 
 You can get current values/states of Form controls with the help of the [](form/api/form_getvalue_method.md) method. By default, this method returns an object  with names or IDs of controls (if the name attribute is not defined in the config of the control) and their values/states.
 
-~~~js
+~~~jsx
 // default functionality
 const state = form.getValue();
 //->{"name":"John Doe","email":"jd@mail.com", "agree":true}
@@ -18,9 +18,9 @@ const state = form.getValue();
 
 It is also possible to get this information in the form of FormData. For this, you need to pass the following parameter:
 
-- **asFormData** - (*boolean*) defines whether values of Form controls should be returned as Form Data
+- `asFormData` - (*boolean*) defines whether values of Form controls should be returned as Form Data
 
-~~~js
+~~~jsx
 // returning form details as FormData
 const state = form.getValue(true);
 ~~~
@@ -30,9 +30,9 @@ const state = form.getValue(true);
 ## Setting new values for controls
 
 If you want to set new values or states for Form controls on the fly, there is the [](form/api/form_setvalue_method.md) at your disposal. The method takes as a parameter an object with new values/states of controls. This
-object should contain a set of *key:value* pairs where *key* is either the name of the control or the control's id (if the name attribute is not defined in the config of the control) and *value* is a new value/state of the control:
+object should contain a set of `key:value` pairs where `key` is either the name of the control or the control's id (if the name attribute is not defined in the config of the control) and `value` is a new value/state of the control:
 
-~~~js
+~~~jsx
 form.setValue({
     "input_name":"Jack London", 
     "slider_id":10
@@ -46,13 +46,13 @@ form.setValue({
 
 To enable a form, use the [enable()](form/api/form_enable_method.md) method:
 
-~~~js
+~~~jsx
 form.enable();
 ~~~
 
 To disable a form, use the [disable()](form/api/form_disable_method.md) method:
 
-~~~js
+~~~jsx
 form.disable();
 // -> true|false
 ~~~
@@ -63,13 +63,13 @@ form.disable();
 
 To check if a form is disabled, call the [isDisabled()](form/api/form_isdisabled_method.md) method:
 
-~~~js
+~~~jsx
 form.isDisabled(); // -> true/false
 ~~~
 
 To check whether a form control is disabled, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isDisabled()](form/api/form_isdisabled_method.md) method:
 
-~~~js
+~~~jsx
 form.isDisabled("input"); // -> returns true/false
 ~~~
 
@@ -79,13 +79,13 @@ form.isDisabled("input"); // -> returns true/false
 
 To hide a form, use the [hide()](form/api/form_hide_method.md) method:
 
-~~~js
+~~~jsx
 form.hide();
 ~~~
 
 To show a form, use the [show()](form/api/form_show_method.md) method:
 
-~~~js
+~~~jsx
 form.show();
 ~~~
 
@@ -95,13 +95,13 @@ form.show();
 
 To check if a form is visible, call the [isVisible()](form/api/form_isvisible_method.md) method:
 
-~~~js
+~~~jsx
 form.isVisible(); // -> true/false
 ~~~
 
 To check whether a form control is visible, pass either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter to the  [isVisible()](form/api/form_isvisible_method.md) method:
 
-~~~js
+~~~jsx
 form.isVisible("input"); // -> returns true/false
 ~~~
 
@@ -122,15 +122,18 @@ The `numberMask` property sets an input mask for entering number values. It can 
     - ***maxIntLength*** - allows setting the maximal length of an integer
     - ***maxDecLength*** - allows setting the maximal length of a decimal
 
-For example, the numberMask config is set as the following object:
+For example, the `numberMask` config can be set as the following object:
 
 ~~~jsx
 {
-    prefix: "$",
-    groupSeparator: ",",
-    decSeparator: ".",
-    maxIntLength: 7,
-    maxDecLength: 2
+    type: "input",
+    numberMask:{
+        prefix: "$",
+        groupSeparator: ",",
+        decSeparator: ".",
+        maxIntLength: 7,
+        maxDecLength: 2
+    }
 }
 ~~~
 
@@ -148,7 +151,9 @@ When the `inputType:"number"` is specified for an input, the resulting number is
 }
 ~~~
 
-When the `inputType: "text"` is specified for an input, the resulting number is transformed to the *string* type without a mask, as if it were a number. In this case the default config is the following:
+When the `inputType: "text"` is specified for an input, the resulting number is transformed to the *string* type without a mask, as if it were a number. For example, if the entered value is "$ 1,000,000", the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is "1000000".
+
+The default config for the `inputType: "text"`is the following:
 
 ~~~jsx
 {
@@ -158,12 +163,11 @@ When the `inputType: "text"` is specified for an input, the resulting number is 
 }
 ~~~
 
-For example, if the entered value is "$ 1,000,000", the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is "1000000".
-
 - as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates
 
 ~~~jsx
 {
+    type: "input",
     numberMask: true,
 }
 ~~~
@@ -196,6 +200,23 @@ The `patternMask` property sets an input mask for entering number and string val
 | "#"    | a single letter of the Roman alphabet (either a capital one of a lowercase one) or a number from 0 to 9 |
 | "*"    | any symbol |
 
+Here's an example of the `patternMask` property that specifies an input mask pattern for entering a date:
+
+~~~js
+{
+    type: "input",
+    label: "DD/MM/YYYY MM:HH",
+    placeholder: "01/01/2001 00:00",
+    patternMask: {
+        pattern: "00/00/0000 H0:M0", // a common mask pattern for date and time
+        charFormat: { // setting regular expressions for hours and minutes 
+            "H": /[0-2]/,
+            "M": /[0-5]/,
+        }
+    }
+}
+~~~
+
 :::note
 The `inputMask` property supports static masks. These are the symbols not specified in the ***charFormat*** and rendered without the possibility of being changed.
 :::
@@ -204,6 +225,7 @@ The `inputMask` property supports static masks. These are the symbols not specif
 
 ~~~jsx
 {
+    type: "input",
     patternMask: "0000 0000 0000 0000"
 }
 ~~~
@@ -212,65 +234,113 @@ The `inputMask` property supports static masks. These are the symbols not specif
 
 ### Getting the text value of an input
 
-When you need to get the value of an input to which a mask has been applied, you can use the [`getText`](form/api/input/input_gettext_method.md) method of the Input control.
-It returns a string with the current text of the control.
-
-~~~jsx
-const value = form.getItem("input").getText();
-// -> "100000.01"
-~~~
+When you need to get the value of an input to which a mask has been applied, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input and Textarea controls.
+It returns the current value of the control as a string.
 
 The method is used with the `numberMask` and `patternMask` properties of the Input control.  For example, the input value is 100000.01, the value displayed in the input is $ 100,000.01 and the resulting value will be:
 
 - 100000.01 for the "number" input type
 - "100000.01" for the "text" input type
 
+~~~jsx
+const value = form.getItem("input").getText();
+// -> "100000.01"
+~~~
+
 ### Selecting the suitable data format
 
-Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to find the format suitable for your needs:
+Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to choose the format suitable for your needs:
 
 - phone number 
 
-Mask pattern: "+0 (000) 000-0000"<br>
-Example: +9 (123) 123-1234
+~~~jsx
+{
+    type: "input",
+    patternMask: "+0 (000) 000-0000",
+};
+~~~
+
+Example: `+9 (123) 123-1234`
 
 - credit card number
 
-Mask pattern: "0000 0000 0000 0000"<br>
-Example: 1234 1234 1234 1234
+~~~jsx
+{
+    type: "input",
+    patternMask: "0000 0000 0000 0000",
+}
+~~~
+
+Example: `1234 1234 1234 1234`
 
 - license plate
 
-Mask pattern: "0-aaa-000"<br>
-Example: 9-AAA-999
+~~~jsx
+{
+    type: "input",
+    patternMask: "0-aaa-000",
+}
+~~~
+
+Example: `9-AAA-999`
 
 - product ID
 
-Mask pattern: "ID 0.000-A"<br>
-Example: ID 1.123-F
+~~~jsx
+{
+    type: "input",
+    patternMask: "aaa-000.0.a"
+}
+~~~
+
+Example: `AAA-999.9.A`
 
 - SSN
 
-Mask pattern: "000-00-0000"<br>
-Example: 999-99-9999
+~~~jsx
+{
+    type: "input",
+    patternMask: "000-00-0000"
+}
+~~~
+
+Example: `999-99-9999`
 
 - MAC Address
 
-Mask pattern: "00:00:00:00:00:00"<br>
+~~~jsx
+{
+    type: "input",
+    patternMask: "00:00:00:00:00:00",
+}
+~~~
+
 Example: 99:99:99:99:99:99
 
 - URL
 
-Mask pattern: "https://"<br>
-Example: https://
+~~~jsx
+{
+    type: "input",
+    patternMask: {
+        pattern: value => {
+            const prefix = "https://";
+            const valueLength = value?.startsWith(prefix) ? value.length - prefix.length : value.length;
+            return valueLength > 1 ? `${prefix}${"".padStart(valueLength, "*")}` : prefix + "#";
+        }
+    }
+}
+~~~
+
+Example: `https://`
 
 - date input
 
 For a date input you can specify a mask pattern as an object of the following type:
 
-~~~js
+~~~jsx
 patternMask: {
-    pattern: "00/00/0000 H0:M0", // common mask pattern for date and time
+    pattern: "00/00/0000 H0:M0", // a common mask pattern for date and time
     charFormat: { // setting regular expressions for hours and minutes 
         "H": /[0-2]/,
         "M": /[0-5]/,
@@ -278,7 +348,7 @@ patternMask: {
 }
 ~~~
 
-Example: 01/01/2001 12:59
+Example: `01/01/2001 12:59`
 
 ## Validating form
 
@@ -286,9 +356,9 @@ In order to validate a form, you should deal with several aspects: required fiel
 
 ### Required fields
 
-You can easily specify that an input is obligatory to be treated by a user with the help of the **required** attribute. 
+You can easily specify that an input is obligatory to be treated by a user with the help of the `required` attribute. 
 
-~~~js
+~~~jsx
 {    
     type: "checkbox",
     label: "I agree",
@@ -299,7 +369,7 @@ You can easily specify that an input is obligatory to be treated by a user with 
 }
 ~~~
 
-While you've set **required:true** for a field, it gets an asterisk next to its label:
+While you've set `required:true` for a field, it gets an asterisk next to its label:
 
 ![Required fields](../assets/form/required_fields.png)
 
@@ -313,9 +383,9 @@ Starting with v7.0, it is possible to add validation for number values entered i
 
 ![Value validate](../assets/form/value_validate.png)
 
-You just need to specify the minimum and/or maximum values allowed in the input via the **min** and/or **max** attributes.
+You just need to specify the minimum and/or maximum values allowed in the input via the `min` and/or `max` attributes.
 
-~~~js
+~~~jsx
 {
     type: "input",
     inputType: "number",
@@ -335,9 +405,9 @@ Starting from v7.0, you can easily limit the number of characters entered in an 
 
 ![Length validate](../assets/form/length_validate.png)
 
-For that, you need to use the **minlength** and (or) **maxlength** attributes that check the length of the given value. Validation is successful if the length is greater than or equal to the minlength value and (or) less than or equal to the maxlength value.
+For that, you need to use the `minlength` and (or) `maxlength` attributes that check the length of the given value. Validation is successful if the length is greater than or equal to the `minlength` value and (or) less than or equal to the `maxlength` value.
 
-~~~js
+~~~jsx
 {
     type: "input",
     inputType: "text",
@@ -360,9 +430,9 @@ To specify the way of validating a particular input/textarea, you can make use o
 - "alphanumeric" - validAplhaNumeric
 - "IPv4" - validIPv4
 
-Set a string with the name of the necessary rule as a value of the **validation** attribute:
+Set a string with the name of the necessary rule as a value of the `validation` attribute:
 
-~~~js
+~~~jsx
 {
     type: "input",
     inputType: "text",
@@ -372,9 +442,9 @@ Set a string with the name of the necessary rule as a value of the **validation*
 }
 ~~~
 
-There is also a possibility to specify *a custom validation function* by setting it as a value of the **validation** attribute:
+There is also a possibility to specify *a custom validation function* by setting it as a value of the `validation` attribute:
 
-~~~js title="Validation for Input control"
+~~~jsx title="Validation for Input control"
 {
     type: "input",
     inputType: "text",
@@ -392,8 +462,7 @@ There is also a possibility to specify *a custom validation function* by setting
 If the <b>inputType</b> attribute is set to "number", the **validation** attribute can be set only as a function
 :::
 
-~~~js title="Validation for Combo control. Multi select is enabled"
-// 
+~~~jsx title="Validation for Combo control. Multi select is enabled"
 {
     name: "combo",
     type: "combo",
@@ -412,7 +481,7 @@ If the <b>inputType</b> attribute is set to "number", the **validation** attribu
 }
 ~~~
 
-~~~js title="Validation for Combo control. Multi select is disabled"
+~~~jsx title="Validation for Combo control. Multi select is disabled"
 {
     name: "combo",
     type: "combo",
@@ -454,7 +523,7 @@ While specifying validation rules for form fields, you can also provide a set of
 
 For example, a configuration object for an input with email may look as in:
 
-~~~js
+~~~jsx
 {
     type: "input",
     label: "Email",
@@ -472,7 +541,7 @@ For example, a configuration object for an input with email may look as in:
 After a user has finished filling out the form according to the specified rules, it's high time to check, whether it is done correctly.
 To validate a form, make use of the [](form/api/form_validate_method.md) method:
 
-~~~js
+~~~jsx
 const result = form.validate();
 ~~~
 
@@ -503,13 +572,13 @@ To send a form to the server, make use of the [](form/api/form_send_method.md) m
 
 and returns a promise object.
 
-~~~js
+~~~jsx
 const send = form.send("myserver.com", "POST");
 ~~~
 
-To control the process of a from sending, you can make use of the related events: [](form/api/form_beforesend_event.md) and [](form/api/form_aftersend_event.md):
+To control the process of a form sending, you can make use of the related events: [](form/api/form_beforesend_event.md) and [](form/api/form_aftersend_event.md):
 
-~~~js
+~~~jsx
 // fires before sending a form to the server
 form.events.on("BeforeSend", function(){
    // your logic here
@@ -529,7 +598,7 @@ The API of DHTMLX Form provides you with flexible ways of clearing a form. There
 - "validation" - clears form validation
 - without parameters - clears both form values and validation
 
-~~~js
+~~~jsx
 // clears only form validation
 form.clear("validation");
 
@@ -548,7 +617,7 @@ form.clear();
 
 Starting from v7.0, you can set focus to a Form control via the [setFocus()](form/api/form_setfocus_method.md) method. It takes either the name of the control or its id (if the name attribute is not defined in the config of the control) as a parameter:
 
-~~~js
+~~~jsx
 form.setFocus("input");
 ~~~
 
