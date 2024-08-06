@@ -6,6 +6,56 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+8.4 -> 9.0
+-----------
+
+### Grid/TreeGrid
+
+Before v9.0 the necessary format of data for a column has been specified via the `format` property.
+
+~~~jsx title="Before v9.0"
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    template: (value) => `$${value}`,
+    format: "#.0",
+}
+// -> 3588 is displayed as $3588.0
+~~~
+
+Since v9.0, the data format is specified via the `numberMask` configuration option of a column object:
+
+~~~jsx title="From v9.0"
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    footer: [{ content: "sum" }],
+    numberMask: {
+        prefix: "$", maxDecLength: 0
+    }
+}
+// -> 3588 is displayed as $3,588
+~~~
+
+Before v9.0, to display the percentage value in the necessary format, the `type: "percent"` configuration option of a column has been used together with the `format` option:
+
+~~~jsx title="Before v9.0"
+{ 
+    width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+    type: "percent", format: "#.00"
+}
+// -> 0.0039 is displayed as 0.39%
+~~~
+
+Since v9.0, both the percentage value is specified via the `numberMask` configuration option of a column object:
+
+~~~jsx title="From v9.0"
+// displaying the percentage value
+{ id: "yearlyChange", header: [{ text: "Yearly Change" }], width: 120, numberMask: { suffix: "%" } },
+~~~
+
 8.1 -> 8.2
 -----------
 
