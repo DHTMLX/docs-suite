@@ -280,7 +280,7 @@ Here's an example of the `patternMask` property that specifies an input mask pat
 
 #### Setting the format for dates
 
-To define the format for dates, set the `type: "date"` property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the `dateFormat` option:
+To specify the necessary format for dates, set the `type: "date"` property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the `dateFormat` option:
 
 ~~~jsx {3}
 { 
@@ -1004,12 +1004,12 @@ At the same time, the created option will also appear in the drop-down list of t
 
 ~~~jsx
 const locale = {
-      en: {
+    en: {
         createItem: "Create"
-      },
-      de: {
+    },
+    de: {
         createItem: "Schaffen"
-      }
+    }
 };
 
 dhx.i18n.setLocale("combobox", locale["de"]);
@@ -1023,7 +1023,7 @@ But if you need the editor to open after a single click, apply the [](grid/api/g
 <iframe src="https://snippet.dhtmlx.com/r5crm57v?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="450"></iframe>
 
 :::note 
-Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.
+Note, that it does not work for the select editor (`editorType: "select"`) and you need to use the combobox editor (`editorType:"combobox"`) if you want a drop-down list to open on the mouse click.
 :::
 
 ## Header/footer filters
@@ -1243,11 +1243,11 @@ The `height` option has a higher priority than the [`autoHeight:true`](grid/api/
 
 ### Autoheight for rows
 
-:::pronote 
+:::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-Starting from v7.1, you can set the [`autoHeight: true`](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make long text split into multiple lines automatically based on the width of the column:
+Starting from v7.1, you can set the [`autoHeight: true`](grid/api/grid_autoheight_config.md) option in the configuration of Grid to make a long text split into multiple lines automatically based on the width of the column:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1312,7 +1312,7 @@ const grid = new dhx.Grid("grid_container", {
 
 The drag-n-drop functionality allows you to reorder one or several rows or columns inside the grid or between several grids. 
 
-:::pronote
+:::tip Pro version only 
 If you use GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to reorder only rows and only one by one.
 
 **Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
@@ -1380,7 +1380,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Drag-n-drop of multiple rows
 
-:::pronote 
+:::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
