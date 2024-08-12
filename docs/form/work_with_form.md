@@ -153,7 +153,7 @@ When the `inputType:"number"` is specified for an input, the resulting number is
 
 When the `inputType: "text"` is specified for an input, the resulting number is transformed to the *string* type without a mask, as if it were a number. For example, if the entered value is "$ 1,000,000", the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is "1000000".
 
-The default config for the `inputType: "text"`is the following:
+The default config for the `inputType: "text"` is the following:
 
 ~~~jsx
 {
