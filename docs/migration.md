@@ -11,9 +11,31 @@ description: You can explore how to migrate to newer versions in the documentati
 
 ### Grid/TreeGrid
 
-Before v9.0 the necessary format of data for a column has been specified via the `format` property.
+#### Date format in a column
 
-~~~jsx title="Before v9.0"
+Before v9.0, the format for dates in a column has been set by specifying the `type: "date"` property and the `format` option:
+
+~~~jsx {3}title="Before v9.0"
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", format: "%M %d %Y"
+}
+~~~
+
+Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](/grid/configuration#setting-the-format-for-dates) option:
+
+~~~jsx {3}title="From v9.0"
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", dateFormat: "%M %d %Y"
+}
+~~~
+
+#### Data format in a column
+
+Before v9.0 the necessary format of data for a column has been specified via the `format` property:
+
+~~~jsx {6}title="Before v9.0"
 {
     width: 130,
     id: "cost",
@@ -24,9 +46,9 @@ Before v9.0 the necessary format of data for a column has been specified via the
 // -> 3588 is displayed as $3588.0
 ~~~
 
-Since v9.0, the data format is specified via the `numberMask` configuration option of a column object:
+Since v9.0, the data format is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
 
-~~~jsx title="From v9.0"
+~~~jsx {6-8}title="From v9.0"
 {
     width: 130,
     id: "cost",
@@ -39,9 +61,11 @@ Since v9.0, the data format is specified via the `numberMask` configuration opti
 // -> 3588 is displayed as $3,588
 ~~~
 
+#### Displaying the percentage value in a column
+
 Before v9.0, to display the percentage value in the necessary format, the `type: "percent"` configuration option of a column has been used together with the `format` option:
 
-~~~jsx title="Before v9.0"
+~~~jsx {2}title="Before v9.0"
 { 
     width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
     type: "percent", format: "#.00"
@@ -49,11 +73,13 @@ Before v9.0, to display the percentage value in the necessary format, the `type:
 // -> 0.0039 is displayed as 0.39%
 ~~~
 
-Since v9.0, both the percentage value is specified via the `numberMask` configuration option of a column object:
+Since v9.0, the percentage value is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
 
-~~~jsx title="From v9.0"
-// displaying the percentage value
-{ id: "yearlyChange", header: [{ text: "Yearly Change" }], width: 120, numberMask: { suffix: "%" } },
+~~~jsx {2}title="From v9.0"
+{ 
+    width: 120, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+    numberMask: { suffix: "%" } 
+}
 ~~~
 
 8.1 -> 8.2
@@ -61,11 +87,11 @@ Since v9.0, both the percentage value is specified via the `numberMask` configur
 
 ### DataCollection/TreeCollection
 
-Before v8.2, the **smartFilter** property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
+Before v8.2, the `smartFilter` property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
 
-Since v8.2 this property is **deprecated** and replaced with the [**permanent**](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the add/update/parse methods.
+Since v8.2 this property is **deprecated** and replaced with the [`permanent`](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the `add/update/parse` methods.
 
-Besides, the **id** property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
+Besides, the `id` property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
 
 7.3 -> 8.0
 ------------

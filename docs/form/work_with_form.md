@@ -107,11 +107,11 @@ form.isVisible("input"); // -> returns true/false
 
 ## Using input masks
 
-The input masks are used to provide entering of values into the [`Input`](form/input.md) and [`Textarea`](form/textarea.md) Form controls in a user-defined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input) method in the Input control API which are used for working with input masks.
+The input masks are used to provide entering of values into the [`Input`](form/input.md) and [`Textarea`](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input) method in the Input control API which are used for working with input masks.
 
 ### numberMask
 
-The `numberMask` property sets an input mask for entering number values. It can be set in two ways:
+The `numberMask` property sets an input mask for entering number values into the Input and Textarea Form controls. It can be set in two ways:
 
 - as an *object* with the following properties:
     - ***prefix*** - renders a text before the resulting value
@@ -137,9 +137,9 @@ For example, the `numberMask` config can be set as the following object:
 }
 ~~~
 
-The value 1000000.0000 is transformed into $1,000,000.00 by the pattern given above.
+Thus, the value `1000000.0000` is converted into `$1,000,000.00` by the pattern given above.
 
-When the `inputType:"number"` is specified for an input, the resulting number is transformed to the *number* type. Then the default config is the following:
+When the `inputType:"number"` is specified for an input, the resulting number is converted into the *number* type. The default config for this input type is the following:
 
 ~~~jsx
 {
@@ -151,7 +151,7 @@ When the `inputType:"number"` is specified for an input, the resulting number is
 }
 ~~~
 
-When the `inputType: "text"` is specified for an input, the resulting number is transformed to the *string* type without a mask, as if it were a number. For example, if the entered value is "$ 1,000,000", the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is "1000000".
+When the `inputType: "text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the entered value is `"$ 1,000,000"`, the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is `"1000000"`.
 
 The default config for the `inputType: "text"` is the following:
 
@@ -172,13 +172,13 @@ The default config for the `inputType: "text"` is the following:
 }
 ~~~
 
-For example, the value 100000.01 is transformed into 100,000.01 by the predefined pattern.
+For example, the value `100000.01` is converted into `100,000.01` by the predefined pattern.
 
 **Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/l5i6lwe5)
 
 ### patternMask
 
-The `patternMask` property sets an input mask for entering number and string values. Allows setting a necessary pattern for entering data. It can be set in two ways: 
+The `patternMask` property sets an input mask for entering number and string values into the Input and Textarea Form controls. Allows setting a necessary pattern for entering data. It can be set in two ways: 
 
 - as an *object* with the following properties:
     - ***pattern*** - (optional ? ) allows specifying the necessary mask and change it dynamically, depending on the entered values
@@ -195,9 +195,9 @@ The `patternMask` property sets an input mask for entering number and string val
 
 |  Symbol| Description            |
 | -------|----------------------- |
-| "0"    | any number from 0 to 9 |
-| "a"    | a single letter of the Roman alphabet, including all capital letters from *A* to *Z* and all lowercase letters from *a* to *z* |
-| "#"    | a single letter of the Roman alphabet (either a capital one of a lowercase one) or a number from 0 to 9 |
+| "0"    | any number from **0** to **9** |
+| "a"    | a single letter of the Roman alphabet, including all capital letters from **A** to **Z** and all lowercase letters from **a** to **z** |
+| "#"    | a single letter of the Roman alphabet (either a capital one or a lowercase one) or a number from **0** to **9** |
 | "*"    | any symbol |
 
 Here's an example of the `patternMask` property that specifies an input mask pattern for entering a date:
@@ -226,7 +226,7 @@ The `inputMask` property supports static masks. These are the symbols not specif
 ~~~jsx
 {
     type: "input",
-    patternMask: "0000 0000 0000 0000"
+    patternMask: "0000 0000 0000 0000" // the output value can be 1234 1234 1234 1234
 }
 ~~~
 
@@ -234,13 +234,13 @@ The `inputMask` property supports static masks. These are the symbols not specif
 
 ### Getting the text value of an input
 
-When you need to get the value of an input to which a mask has been applied, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input and Textarea controls.
-It returns the current value of the control as a string.
+When you need to get the value of an input to which a mask has been applied, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control.
+It returns the input value of the control as a string.
 
-The method is used with the `numberMask` and `patternMask` properties of the Input control.  For example, the input value is 100000.01, the value displayed in the input is $ 100,000.01 and the resulting value will be:
+The method is used with the `numberMask` and `patternMask` properties of the Input control. For example, the input value is `100000.01`, the value displayed in the input is `$100,000.01` and the output value will be:
 
-- 100000.01 for the "number" input type
-- "100000.01" for the "text" input type
+- `100000.01` for the "number" input type
+- `"100000.01"` for the "text" input type
 
 ~~~jsx
 const value = form.getItem("input").getText();
@@ -315,7 +315,7 @@ Example: `999-99-9999`
 }
 ~~~
 
-Example: 99:99:99:99:99:99
+Example: `99:99:99:99:99:99`
 
 - URL
 
@@ -332,7 +332,7 @@ Example: 99:99:99:99:99:99
 }
 ~~~
 
-Example: `https://`
+Example: `https://awesomesite.com`
 
 - date input
 
