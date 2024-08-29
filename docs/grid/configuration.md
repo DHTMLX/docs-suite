@@ -1020,35 +1020,14 @@ const grid = new dhx.Grid("grid_container", {
 
 ### The list of configuration properties for comboFilter
 
-<table>
-    <tbody>
-        <tr>
-            <td><b>filter</b></td>
-            <td>(<i>function</i>) sets a custom function for filtering Combo Box options</td>
-        </tr>
-        <tr>
-            <td><b>multiselection</b></td>
-            <td>(<i>boolean</i>) enables selection of multiple options</td>
-        </tr>
-        <tr>
-            <td><b>readonly</b></td>
-            <td>(<i>boolean</i>) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input)</td>
-        </tr>
-        <tr>
-            <td><b>placeholder</b></td>
-            <td>(<i>string</i>) sets a placeholder in the input of ComboBox</td>
-        </tr>
-        <tr>
-            <td><b>virtual</b></td>
-            <td>(<i>boolean</i>) enables dynamic loading of data on scrolling the list of options</td>
-        </tr>
-        <tr>
-            <td><b>template</b></td>
-            <td>(<i>function</i>) a function which returns a template with content for the filter options. Takes an option item as a parameter</td>
-        </tr>
-    </tbody>
-</table>
-<br/>
+- **filter** - (*function*) sets a custom function for filtering Combo Box options
+- **multiselection** - (*boolean*) enables selection of multiple options
+- **readonly** - (*boolean*) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the **readonly** property depends on the following conditions:
+    - the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column
+    - in all other cases, `readonly:false` is set by default
+- **placeholder** - (*string*) sets a placeholder in the input of ComboBox
+- **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options
+- **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
 
 ### Customizing header/footer filters
 
