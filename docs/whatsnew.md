@@ -8,6 +8,20 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.4.3 
+------------------
+
+Released on September 10, 2024
+
+### Fixes
+
+- Grid/TreeGrid. Incorrect span editing
+- Grid/TreeGrid. The callback of the `dragRowIn` event is called with the source id instead of the target id
+- Grid/TreeGrid. Incorrect rendering of header/footer spans
+- Grid/TreeGrid. Canceling editing of a cell in the enabled `autoHeight` mode doesn't revert the value of a cell to the initial state
+- Grid/TreeGrid. The `beforeColumnDrop` event fires after dragging rows
+- Grid/TreeGrid. The `height` property set as a string breaks rendering of the component 
+
 Version 8.4.2 
 ------------------
 
