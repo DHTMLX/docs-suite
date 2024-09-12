@@ -6,11 +6,15 @@ description: You can explore the removeAll method of TreeCollection in the docum
 
 # removeAll()
 
-@short: clears the component of all controls
+@short: removes all items in the target branch
 
-@signature: {'removeAll(): void;'}
+@signature: {'removeAll(id: string | number): void;'}
+
+@params:
+
+- `id: string | number` - the id of the branch
 
 @example:
-toolbar.data.removeAll();
+toolbar.data.removeAll(id);
 
 @descr:
