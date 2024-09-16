@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.4.4 
+-----------------
+
+Released on September 16, 2024
+
+### Fixes
+
+- Grid. Data is not displayed in the non-PRO version
+
 Version 8.4.3 
 ------------------
 
