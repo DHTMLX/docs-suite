@@ -8,6 +8,48 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.4.4 
+-----------------
+
+Released on September 16, 2024
+
+### Fixes
+
+- Grid. Data is not displayed in the non-PRO version
+
+Version 8.4.3 
+------------------
+
+Released on September 10, 2024
+
+### Fixes
+
+- Grid/TreeGrid. Incorrect span editing
+- Grid/TreeGrid. The callback of the `dragRowIn` event is called with the source id instead of the target id
+- Grid/TreeGrid. Incorrect rendering of header/footer spans
+- Grid/TreeGrid. Canceling editing of a cell in the enabled `autoHeight` mode doesn't revert the value of a cell to the initial state
+- Grid/TreeGrid. The `beforeColumnDrop` event fires after dragging rows
+- Grid/TreeGrid. The `height` property set as a string breaks rendering of the component 
+
+Version 8.4.2 
+------------------
+
+Released on August 29, 2024
+
+### Fixes
+
+- Core. Destruction of Layout in the Optimus framework causes an error
+- Form. A number input with the predefined minimal value fails validation in case the input is empty 
+- Grid/TreeGrid. Incorrect work of the `comboFilter` input in case entering of HTML content is enabled
+- Grid/TreeGrid. Input of a number starting with a decimal point
+- Grid/TreeGrid. The use of `autoHeight` and `autoEmptyRow` configs prevents appearing of a new empty row 
+- Grid/TreeGrid. The `adjust:data` config is applied incorrectly during drag-n-drop
+- Grid/TreeGrid. The `adjust` config of the component takes priority over the `adjust` config of a column
+- Grid/TreeGrid. Parsing data with the `footerAutoHeight: true` config causes a console error
+- Grid/TreeGrid. Dragging adjacent cells from the same column changes their positions relative to each other
+- Layout. Issue with cells resizing
+- Tree. The intermediate state of three-state checkboxes isn't displayed when a dataset is specified in the Tree configuration
+
 Version 8.4.1
 ------------------
 
