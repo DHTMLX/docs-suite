@@ -107,7 +107,7 @@ form.isVisible("input"); // -> returns true/false
 
 ## Using input masks
 
-The input masks are used to provide entering of values into the [`Input`](form/input.md) and [`Textarea`](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input) method in the Input control API which are used for working with input masks.
+The input masks are used to provide entering of values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input) method in the Input control API which are used for working with input masks.
 
 ### numberMask
 
@@ -121,6 +121,7 @@ The `numberMask` property sets an input mask for entering number values into the
     - ***allowNegative*** - allows using negative numbers
     - ***maxIntLength*** - allows setting the maximal length of an integer
     - ***maxDecLength*** - allows setting the maximal length of a decimal
+    - ***minDecLength*** - allows setting the minimal rendered length of a decimal
 
 For example, the `numberMask` config can be set as the following object:
 
@@ -132,38 +133,41 @@ For example, the `numberMask` config can be set as the following object:
         groupSeparator: ",",
         decSeparator: ".",
         maxIntLength: 7,
-        maxDecLength: 2
+        maxDecLength: 2,
+        minDecLength: 0
     }
 }
 ~~~
 
-Thus, the value `1000000.0000` is converted into `$1,000,000.00` by the pattern given above.
+Thus, the value `1000000.0000` is converted into `$1,000,000` by the pattern given above.
 
-When the `inputType:"number"` is specified for an input, the resulting number is converted into the *number* type. The default config for this input type is the following:
-
-~~~jsx
-{
-    groupSeparator: ",";
-    decSeparator: ".";
-    allowNegative: true;
-    maxIntLength: 16;
-    maxDecLength: 2;
-}
-~~~
-
-When the `inputType: "text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the entered value is `"$ 1,000,000"`, the resulting value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is `"1000000"`.
-
-The default config for the `inputType: "text"` is the following:
+When the `inputType:"number"` is specified for an input, the resulting number is converted into the *number* type. The *default* config for this input type is the following:
 
 ~~~jsx
 {
-    groupSeparator: ",";
-    decSeparator: ".";
-    allowNegative: true;
+    groupSeparator: ",",
+    decSeparator: ".",
+    allowNegative: true,
+    maxIntLength: 16,
+    maxDecLength: 2,
+    minDecLength: 0
 }
 ~~~
 
-- as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates
+When the `inputType: "text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. The *default* config for this input type is the following:
+
+~~~jsx
+{
+    groupSeparator: ",",
+    decSeparator: ".",
+    allowNegative: true,
+    minDecLength: 0
+}
+~~~
+
+For example, if the entered value is `"$ 1,000,000"`, the resulting value is `"1000000"`.
+
+- as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates (depending on the specified `inputType`)
 
 ~~~jsx
 {
@@ -172,13 +176,13 @@ The default config for the `inputType: "text"` is the following:
 }
 ~~~
 
-For example, the value `100000.01` is converted into `100,000.01` by the predefined pattern.
+For example, the value `100000.01` is converted into `100,000.01` by the predefined template of the `inputType:"text"`, since it is the default input type.
 
 **Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/l5i6lwe5)
 
 ### patternMask
 
-The `patternMask` property sets an input mask for entering number and string values into the Input and Textarea Form controls. Allows setting a necessary pattern for entering data. It can be set in two ways: 
+The `patternMask` property sets an input mask for entering number and string values into the Input and Textarea Form controls according to a special pattern. It can be set in two ways: 
 
 - as an *object* with the following properties:
     - ***pattern*** - (optional ? ) allows specifying the necessary mask and change it dynamically, depending on the entered values
@@ -197,15 +201,19 @@ The `patternMask` property sets an input mask for entering number and string val
 | -------|----------------------- |
 | "0"    | any number from **0** to **9** |
 | "a"    | a single letter of the Roman alphabet, including all capital letters from **A** to **Z** and all lowercase letters from **a** to **z** |
-| "#"    | a single letter of the Roman alphabet (either a capital one or a lowercase one) or a number from **0** to **9** |
+| "#"    | a single letter of the Roman alphabet (either an uppercase or a lowercase one) or a single number from **0** to **9** |
 | "*"    | any symbol |
 
-Here's an example of the `patternMask` property that specifies an input mask pattern for entering a date:
+:::note
+The `inputMask` property supports static masks. These are the symbols not specified in the ***charFormat*** and rendered without the possibility of being changed.
+:::
+
+Here's an example of the `patternMask` property that specifies an input mask pattern for entering a date into an input:
 
 ~~~jsx
 {
     type: "input",
-    label: "DD/MM/YYYY MM:HH",
+    label: "DD/MM/YYYY HH:MM",
     placeholder: "01/01/2001 00:00",
     patternMask: {
         pattern: "00/00/0000 H0:M0", // a common mask pattern for date and time
@@ -216,10 +224,6 @@ Here's an example of the `patternMask` property that specifies an input mask pat
     }
 }
 ~~~
-
-:::note
-The `inputMask` property supports static masks. These are the symbols not specified in the ***charFormat*** and rendered without the possibility of being changed.
-:::
     
 - as a *string* value the `patternMask` property allows setting a mask as a string using a predefined set of symbols
 
@@ -232,22 +236,7 @@ The `inputMask` property supports static masks. These are the symbols not specif
 
 **Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
-### Getting the text value of an input
-
-When you need to get the value of an input to which a mask has been applied, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control.
-It returns the input value of the control as a string.
-
-The method is used with the `numberMask` and `patternMask` properties of the Input control. For example, the input value is `100000.01`, the value displayed in the input is `$100,000.01` and the output value will be:
-
-- `100000.01` for the "number" input type
-- `"100000.01"` for the "text" input type
-
-~~~jsx
-const value = form.getItem("input").getText();
-// -> "100000.01"
-~~~
-
-### Selecting the suitable data format
+#### Selecting the suitable data format
 
 Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to choose the format suitable for your needs:
 
@@ -349,6 +338,21 @@ patternMask: {
 ~~~
 
 Example: `01/01/2001 12:59`
+
+### Getting text value of an input with number/patternMask
+
+When you need to get the value of an input to which a mask has been applied, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control.
+It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the Input control. 
+
+For example, the input value is `100000.01`, the value displayed in the input is `$100,000.01` and the output value will be:
+
+- `100000.01` for the "number" input type
+- `"100000.01"` for the "text" input type
+
+~~~jsx
+const value = form.getItem("input").getText();
+// -> "100000.01"
+~~~
 
 ## Validating form
 

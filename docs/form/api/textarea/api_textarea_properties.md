@@ -23,6 +23,7 @@ description: You can explore the Properties of the Textarea control of Form in t
                   allowNegative?: boolean; // true by default
                   maxIntLength?: number; // 16 by default (for the number type)
                   maxDecLength?: number; // 2 by default (for the number type)
+                  minDecLength?: number; // 0 by default
             }
         | boolean,
     patternMask?:
@@ -90,8 +91,9 @@ description: You can explore the Properties of the Textarea control of Form in t
                 <ol>- <b>decSeparator</b> - sets a separator for decimals</ol>
                 <ol>- <b>allowNegative</b> - allows using negative numbers</ol>
                 <ol>- <b>maxIntLength</b> - allows setting the maximal length of an integer</ol>
-                <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol></li>
-                <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates</li></ul></td>
+                <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol>
+                <ol>- <b>minDecLength</b> - allows setting the minimal rendered length of a decimal</ol></li>
+                <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates (uses the default `numberMask` config object depending on the specified input type)</li></ul></td>
         </tr>
         <tr>
             <td><b>patternMask</b></td>

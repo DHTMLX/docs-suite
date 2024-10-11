@@ -18,11 +18,12 @@ const value = form.getItem("input").getText();
 // -> "100000.01"
 
 @descr:
-The method is used with the `numberMask` and `patternMask` properties of the Input control. It allows getting the value that was transformed by a mask. 
-For example, the input value is 100000.01, the value displayed in the input is $ 100,000.01 and the resulting value will be:
+The method is used with the `numberMask` and `patternMask` properties of the Input control. It allows getting the value a mask has been applied to. 
 
-- 100000.01 for the "number" input type
-- "100000.01" for the "text" input type
+For example, the input value is `100000.01`, the value displayed in the input is `$ 100,000.01` and the resulting value will be:
+
+- `100000.01` for the "number" input type
+- `"100000.01"` for the "text" input type
 
 @changelog:
 Added in v9.0
