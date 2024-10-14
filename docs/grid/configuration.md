@@ -187,8 +187,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Formatting columns
 
-You can display the values of the cells of a Grid column in the desired format with the help of the 
-`numberMask` and `patternMask` properties.
+You can display the values of the cells of a Grid column in the desired format with the help of the `numberMask` and `patternMask` properties. There is also the [`dateFormat`](#setting-the-format-for-dates) option that allows specifying the format of dates.
 
 #### numberMask
 
@@ -208,22 +207,28 @@ It can be set in two ways:
     - ***allowNegative*** - allows using negative numbers
     - ***maxIntLength*** - allows setting the maximal length of an integer
     - ***maxDecLength*** - allows setting the maximal length of a decimal
+    - ***minDecLength*** - allows setting the minimal rendered length of a decimal
 
 For example, the `numberMask` config can be set as the following object:
 
-~~~jsx {6-8}
+~~~jsx {6-13}
 {
     width: 130,
     id: "cost",
     header: [{ text: "Cost" }, { content: "inputFilter" }],
     footer: [{ content: "sum" }],
     numberMask: {
-        prefix: "$", maxDecLength: 0
+        prefix: "$",
+        groupSeparator: ",",
+        decSeparator: ".",
+        maxIntLength: 7,
+        maxDecLength: 2,
+        minDecLength: 0
     }
 }
 ~~~
 
-The value 50054 is transformed into $50,054 by the pattern given above.
+The value `100000.01` is converted into `$100,000.01` by the pattern given above.
 
 - as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates
 
@@ -234,10 +239,10 @@ The value 50054 is transformed into $50,054 by the pattern given above.
 It is equal to the default configuration:
 
 ~~~jsx
-{ groupSeparator: ",", decSeparator: "." }
+{ groupSeparator: ",", decSeparator: ".",  minDecLength: 0 }
 ~~~
 
-For example, the value 100000.01 is transformed into 100,000.01 by the predefined pattern.
+For example, the value `100000.01` is converted into `100,000.01` by the predefined pattern.
 
 **Related sample**: [Grid. Pattern/Number mask](https://snippet.dhtmlx.com/45gjhciv)
 
@@ -246,7 +251,7 @@ For example, the value 100000.01 is transformed into 100,000.01 by the predefine
 The `patternMask` property sets an input mask for entering number and string values. Allows setting a necessary pattern for entering data. It can be set in two ways: 
 
 - as an *object* with the following properties:
-    - ***pattern*** - (optional ? ) allows specifying the necessary mask and change it dynamically, depending on the entered values
+    - ***pattern*** - allows specifying the necessary mask and change it dynamically, depending on the entered values
     - ***charFormat*** - (optional) allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below:
 
 ~~~jsx
@@ -260,12 +265,18 @@ The `patternMask` property sets an input mask for entering number and string val
 
 |  Symbol| Description            |
 | -------|----------------------- |
-| "0"    | any number from 0 to 9 |
-| "a"    | a single letter of the Roman alphabet, including all capital letters from *A* to *Z* and all lowercase letters from *a* to *z* |
-| "#"    | a single letter of the Roman alphabet (either a capital one of a lowercase one) or a number from 0 to 9 |
+| "0"    | any number from **0** to **9** |
+| "a"    | a single letter of the Roman alphabet, including all capital letters from **A** to **Z** and all lowercase letters from **a** to **z** |
+| "#"    | a single letter of the Roman alphabet (either an uppercase or a lowercase one) or a single number from **0** to **9** |
 | "*"    | any symbol |
 
-Here's an example of the `patternMask` property that specifies an input mask pattern for entering an ID:
+:::note
+The `inputMask` property supports static masks. These are the symbols not specified in the ***charFormat*** and rendered without the possibility of being changed.
+:::
+
+[example]
+
+- as a *string* value the `patternMask` property allows setting a mask as a string using a predefined set of symbols. Here's an example of the `patternMask` property that specifies an input mask pattern for entering an ID:
 
 ~~~jsx {5}
 {  

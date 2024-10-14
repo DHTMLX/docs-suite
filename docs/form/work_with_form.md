@@ -185,7 +185,7 @@ For example, the value `100000.01` is converted into `100,000.01` by the predefi
 The `patternMask` property sets an input mask for entering number and string values into the Input and Textarea Form controls according to a special pattern. It can be set in two ways: 
 
 - as an *object* with the following properties:
-    - ***pattern*** - (optional ? ) allows specifying the necessary mask and change it dynamically, depending on the entered values
+    - ***pattern*** - allows specifying the necessary mask and change it dynamically, depending on the entered values
     - ***charFormat*** - (optional) allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below:
 
 ~~~jsx
@@ -341,13 +341,8 @@ Example: `01/01/2001 12:59`
 
 ### Getting text value of an input with number/patternMask
 
-When you need to get the value of an input to which a mask has been applied, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control.
+When you need to get the value of an input with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control.
 It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the Input control. 
-
-For example, the input value is `100000.01`, the value displayed in the input is `$100,000.01` and the output value will be:
-
-- `100000.01` for the "number" input type
-- `"100000.01"` for the "text" input type
 
 ~~~jsx
 const value = form.getItem("input").getText();

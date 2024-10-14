@@ -65,7 +65,7 @@ Since v9.0, the data format is specified via the [`numberMask`](/grid/configurat
 
 Before v9.0, to display the percentage value in the necessary format, the `type: "percent"` configuration option of a column has been used together with the `format` option:
 
-~~~jsx {2}title="Before v9.0"
+~~~jsx {3}title="Before v9.0"
 { 
     width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
     type: "percent", format: "#.00"
@@ -75,11 +75,12 @@ Before v9.0, to display the percentage value in the necessary format, the `type:
 
 Since v9.0, the percentage value is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
 
-~~~jsx {2}title="From v9.0"
+~~~jsx {3}title="From v9.0"
 { 
     width: 120, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
-    numberMask: { suffix: "%" } 
+    numberMask: { suffix: "%" }    
 }
+// -> 0.0039 is displayed as 0.0039%
 ~~~
 
 8.1 -> 8.2

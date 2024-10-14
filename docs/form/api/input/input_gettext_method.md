@@ -6,24 +6,19 @@ description: You can explore the getText method of the Input control of Form in 
 
 # getText()
 
-@short: returns the text value of an Input control
+@short: returns the text value of the input with the applied mask
 
 @signature: {'getText(): string;'}
 
 @returns:
-A string with the current text of the control.
+A string with the text with the applied mask
 
 @example:
 const value = form.getItem("input").getText();
 // -> "100000.01"
 
 @descr:
-The method is used with the `numberMask` and `patternMask` properties of the Input control. It allows getting the value a mask has been applied to. 
-
-For example, the input value is `100000.01`, the value displayed in the input is `$ 100,000.01` and the resulting value will be:
-
-- `100000.01` for the "number" input type
-- `"100000.01"` for the "text" input type
+The method is used with the `numberMask` and `patternMask` properties of the Input control. It allows getting the value with the applied mask. 
 
 @changelog:
 Added in v9.0
