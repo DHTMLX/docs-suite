@@ -11,7 +11,7 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 Version 8.4.6 
 -----------------
 
-Released on October 16, 2024
+Released on October 15, 2024
 
 ### Fixes
 
