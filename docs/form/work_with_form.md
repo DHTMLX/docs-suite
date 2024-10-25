@@ -111,7 +111,7 @@ The input masks are used to provide entering of values into the [**Input**](form
 
 ### numberMask
 
-The `numberMask` property sets an input mask for entering number values into the Input and Textarea Form controls. It can be set in two ways:
+The `numberMask` property sets an input mask for entering number values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls. It can be set in two ways:
 
 - as an *object* with the following properties:
     - ***prefix*** - renders a text before the resulting value
@@ -139,9 +139,11 @@ For example, the `numberMask` config can be set as the following object:
 }
 ~~~
 
-Thus, the value `1000000.0000` is converted into `$1,000,000` by the pattern given above.
+Thus, the value *1000000.0000* is converted into *$1,000,000* by the pattern given above.
 
-When the `inputType:"number"` is specified for an input, the resulting number is converted into the *number* type. The *default* config for this input type is the following:
+#### Default `numberMask` configs depending on the input type
+
+When the `inputType:"number"` is specified for an input, the resulting number is converted into the *number* type. The default config for this input type is the following:
 
 ~~~jsx
 {
@@ -154,7 +156,7 @@ When the `inputType:"number"` is specified for an input, the resulting number is
 }
 ~~~
 
-When the `inputType: "text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. The *default* config for this input type is the following:
+The default config for `inputType: "text"` (the default input type) is the following:
 
 ~~~jsx
 {
@@ -165,7 +167,7 @@ When the `inputType: "text"` is specified for an input, the resulting number is 
 }
 ~~~
 
-For example, if the entered value is `"$ 1,000,000"`, the resulting value is `"1000000"`.
+When the `inputType:"text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the `getValue()` method is *"1000000"*.
 
 - as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates (depending on the specified `inputType`)
 
@@ -176,13 +178,13 @@ For example, if the entered value is `"$ 1,000,000"`, the resulting value is `"1
 }
 ~~~
 
-For example, the value `100000.01` is converted into `100,000.01` by the predefined template of the `inputType:"text"`, since it is the default input type.
+For the above example, the value *100000.01* is converted into *100,000.01* by the predefined template of the default `inputType:"text"`, since the input type is not set.
 
 **Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/l5i6lwe5)
 
 ### patternMask
 
-The `patternMask` property sets an input mask for entering number and string values into the Input and Textarea Form controls according to a special pattern. It can be set in two ways: 
+The `patternMask` property sets an input mask for entering number and string values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls according to a special pattern. It can be set in two ways: 
 
 - as an *object* with the following properties:
     - ***pattern*** - allows specifying the necessary mask and change it dynamically, depending on the entered values
@@ -224,23 +226,29 @@ Here's an example of the `patternMask` property that specifies an input mask pat
     }
 }
 ~~~
+
+An example of a date according to the pattern mask is *01/01/2001 12:59*.
     
-- as a *string* value the `patternMask` property allows setting a mask as a string using a predefined set of symbols
+- as a *string* value the `patternMask` property allows setting a mask as a string using a predefined set of symbols. Here's an example of the `patternMask` property that specifies an input mask pattern for entering an SSN number:
 
 ~~~jsx
 {
     type: "input",
-    patternMask: "0000 0000 0000 0000" // the output value can be 1234 1234 1234 1234
+    patternMask: "000-00-0000" 
 }
 ~~~
+
+An example of an SSN number according to the pattern mask is *123-41-1234*.
 
 **Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
 #### Selecting the suitable data format
 
-Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to choose the format suitable for your needs:
+Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to set a pattern mask for data format suitable for your needs:
 
 - phone number 
+
+The phone number format includes a set of numbers, symbols and spaces:
 
 ~~~jsx
 {
@@ -249,20 +257,11 @@ Depending on the type of the data entered into an input, you can specify differe
 };
 ~~~
 
-Example: `+9 (123) 123-1234`
-
-- credit card number
-
-~~~jsx
-{
-    type: "input",
-    patternMask: "0000 0000 0000 0000",
-}
-~~~
-
-Example: `1234 1234 1234 1234`
+Example: *+9 (123) 123-1234*
 
 - license plate
+
+The format of license plate usually contains a combination of letters, numbers and symbols:
 
 ~~~jsx
 {
@@ -271,77 +270,34 @@ Example: `1234 1234 1234 1234`
 }
 ~~~
 
-Example: `9-AAA-999`
+Example: *9-AAA-999*
 
-- product ID
+- date and time
 
-~~~jsx
-{
-    type: "input",
-    patternMask: "aaa-000.0.a"
-}
-~~~
-
-Example: `AAA-999.9.A`
-
-- SSN
-
-~~~jsx
-{
-    type: "input",
-    patternMask: "000-00-0000"
-}
-~~~
-
-Example: `999-99-9999`
-
-- MAC Address
-
-~~~jsx
-{
-    type: "input",
-    patternMask: "00:00:00:00:00:00",
-}
-~~~
-
-Example: `99:99:99:99:99:99`
-
-- URL
-
-~~~jsx
-{
-    type: "input",
-    patternMask: {
-        pattern: value => {
-            const prefix = "https://";
-            const valueLength = value?.startsWith(prefix) ? value.length - prefix.length : value.length;
-            return valueLength > 1 ? `${prefix}${"".padStart(valueLength, "*")}` : prefix + "#";
-        }
-    }
-}
-~~~
-
-Example: `https://awesomesite.com`
-
-- date input
-
-For a date input you can specify a mask pattern as an object of the following type:
+For a date and time input you can specify a mask pattern as an object of the following type:
 
 ~~~jsx
 patternMask: {
-    pattern: "00/00/0000 H0:M0", // a common mask pattern for date and time
-    charFormat: { // setting regular expressions for hours and minutes 
+    pattern: "00/00/0000 H0:M0", 
+    charFormat: { 
         "H": /[0-2]/,
         "M": /[0-5]/,
     }
 }
 ~~~
 
-Example: `01/01/2001 12:59`
+In the above example:
 
-### Getting text value of an input with number/patternMask
+- `pattern` sets a common mask pattern for date and time
+- `charFormat` specifies regular expressions for setting hours and minutes:
+    -  `"H": /[0-2]/` - a number from 0 to 2 for the first number when setting an hour as `H0`
+    -  `"M": /[0-5]/` - a number from 0 to 5 for the first number when setting minutes as `M0`
 
-When you need to get the value of an input with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the Input control.
+The example of a rendered date and time is *01/01/2001 12:59*.
+
+### Getting the text value of an input 
+
+When you need to get the value of an input with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the **Input** control.
 It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the Input control. 
 
 ~~~jsx

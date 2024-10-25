@@ -43,7 +43,6 @@ Before v9.0 the necessary format of data for a column has been specified via the
     template: (value) => `$${value}`,
     format: "#.0",
 }
-// -> 3588 is displayed as $3588.0
 ~~~
 
 Since v9.0, the data format is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
@@ -55,33 +54,34 @@ Since v9.0, the data format is specified via the [`numberMask`](/grid/configurat
     header: [{ text: "Cost" }, { content: "inputFilter" }],
     footer: [{ content: "sum" }],
     numberMask: {
-        prefix: "$", maxDecLength: 0
+        prefix: "$", minDecLength: 0
     }
 }
-// -> 3588 is displayed as $3,588
 ~~~
 
 #### Displaying the percentage value in a column
 
-Before v9.0, to display the percentage value in the necessary format, the `type: "percent"` configuration option of a column has been used together with the `format` option:
+Before v9.0, to display the percentage value in a column, the `type: "percent"` configuration option has been used. The entered value has been multiplied by 100 and displayed with the percentage sign:
 
 ~~~jsx {3}title="Before v9.0"
 { 
     width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
-    type: "percent", format: "#.00"
+    type: "percent"
 }
-// -> 0.0039 is displayed as 0.39%
 ~~~
 
-Since v9.0, the percentage value is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+To display 18% in a column with the `type: "percent"` config, you should have entered the value as 0.18.
+
+Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
 
 ~~~jsx {3}title="From v9.0"
 { 
     width: 120, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
     numberMask: { suffix: "%" }    
 }
-// -> 0.0039 is displayed as 0.0039%
 ~~~
+
+To display 18% in a column with the `numberMask: { suffix: "%" }` config, you should enter the value as 18.
 
 8.1 -> 8.2
 -----------
