@@ -370,8 +370,8 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Resizable columns](https://snippet.dhtmlx.com/vq3i9maq)
 
-{{note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
-}}
+:::note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
+:::
 
 ### HTML content of TreeGrid columns
 
@@ -1584,40 +1584,43 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property, as in:
+What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback
+function which is called with the following parameters:
 
-~~~jsx {8-10,16}
+- `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+    - `value` - the value rendered in a cell, including the applied templates
+    - `[key: string]` - the counted values of the `summary` property, where the key is either the key defined in the list or the functor name
+- `header/footer` - the object of the column header/footer
+- `column` - the object of a column
+
+and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip
+
+~~~jsx {9}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
-        {
-            id: "country",
+        { 
+            width: 150, 
+            id: "population", 
             header: [
                 {
-                    text: "Country",
-                    tooltipTemplate: (value, header, column) => {
-                        return `This is column template: ${value}`
-                    }
-                },
-            ],
-            footer: [
-                {
-                    text: "Total",
-                    tooltipTemplate: (value, footer, column) => false, // Disabled footer tooltip
+                    text: "Population",
+                    tooltipTemplate: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${ count }`
                 }
             ],
-        },
+            summary: "count"
+        }
         // more columns
     ],
+    summary: { totalPopulation: ["population", "sum"] },
     data: dataset,
 });
 ~~~
 
 **Related sample**: [TreeGrid. Header/footer tooltip](https://snippet.dhtmlx.com/51nbo9re)
 
-#### Tooltips for complex data
+#### Tooltips for filters
 
-You can specify a tooltip as a value for a complex header/footer content, such as
-the methods processing column values: "avg" | "sum" | "max" | "min" | "count". What is more, you can provide a tooltip template for the header/footer content of any type, which allows showing tooltips for filters.
+You can provide a tooltip template for the header content of any type, which allows showing tooltips for filters.
 
 Check the example below:
 
@@ -1628,7 +1631,7 @@ const balanceTemplate = value => {
         : `<div style='color:red'>⬇ $${value}</div>`;
 };
 
-const treegrid = new dhx.TreeGrid("treegrid", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
             minWidth: 150,
@@ -1647,15 +1650,45 @@ const treegrid = new dhx.TreeGrid("treegrid", {
             header: [{text: "Balance"}, {content: "inputFilter"}],
             footer: [
                 {
-                    content: "sum",
                     tooltipTemplate: balanceTemplate
                 },
             ],
             template: balanceTemplate,
             htmlEnable: true,
-            format: "#.0",
+            numberMask: {
+                prefix: "$"
+            }
         },
     ],
 });
 ~~~
 
+## Column header/footer text
+
+The `text` property of the column header/footer can be set either as a string or a callback function which is called with the following parameter: 
+
+- `content` - an object with the content of the header/footer tooltip that contains the counted values as **[key: string]**, where the key is either the key defined in the list or the functor name. The counted values are taken either from the `summary` config option of the component or the `summary` config option of a column
+
+:::note
+In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
+:::
+
+In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes counted values both from the column `summary` config (*count*) and the treegrid's config (*totalPopulation*):
+
+~~~jsx {6,7}
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }],
+            footer: [{ text: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${count}` }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    data: dataset
+});
+~~~
+
+You can [apply styling to the text of header cells](../customization#styling-header-cells) or to the [text of footer cells](../customization#styling-footer-cells) via the `text` property of the column's footer.
