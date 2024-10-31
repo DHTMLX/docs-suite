@@ -8,7 +8,7 @@ description: descriYou can have an overview of Grid in the documentation of the 
 
 DHTMLX Grid is a flexible, smart, and easy-to-use JavaScript component which allows creating tables with fixed multi-line headers and footers, sortable columns, built-in filtering, and other useful features. DHTMLX Grid provides great possibilities for customizing its look and feel. Complete JavaScript API is provided to help users save time on configuring.
 
-Check [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid).  
+Check [online samples for DHTMLX Grid](https://snippet.dhtmlx.com/1mxmshax?tag=grid).   
 
 ![](../assets/grid/grid_front.png)
 
