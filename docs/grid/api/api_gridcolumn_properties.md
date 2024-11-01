@@ -18,7 +18,7 @@ columns:[
     autoWidth?: boolean, // false by default
     header: [
         {
-            text?: string | number,
+            text?: string | ((content: ISummaryList) => string),
             tooltip?: boolean | object, // true by default
             tooltipTemplate?: (
                 content: { value: string } & ISummaryList,
@@ -46,7 +46,7 @@ columns:[
     ],
     footer?: [
         {
-            text?: string | number,
+            text?: string | ((content: ISummaryList) => string),
             tooltip?: boolean | object, // true by default
             tooltipTemplate?: (
                 content: { value: string } & ISummaryList,
@@ -80,6 +80,7 @@ columns:[
     template?: (cellValue: any, row: object, column: object) => string,
     tooltip?: boolean | object, // true by default
     tooltipTemplate?: (cellValue: any, row: object, column: object) => string,
+    summary?: ISummary | string
   },
   // more column objects
 ]
@@ -184,6 +185,11 @@ columns:[
         <tr>
             <td><a href="../../customization#adding-template-to-tooltip"><b>tooltipTemplate</b></a></td>
             <td>(optional) a function which returns a template for the content of the tooltip. Takes 3 parameters:<ul><li><b>value</b> - (required) the value of a cell</li><li><b>row</b> - (required) an object with all cells in a row</li><li><b>column</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li></ul>Returning *false* from the function will block showing of the tooltip</td>
+        </tr>
+        <tr>
+            <td><b>summary</b></td>
+            <td>(optional) forms the list of counted values based on columns' data. The defined list is available only at the column's level. If initialized as <i>string</i> (excluding "count"), the resulting value is used 
+            with applied **patternMask**/**numberMask**, if there are any</td>
         </tr>
     </tbody>
 </table>

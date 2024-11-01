@@ -959,6 +959,176 @@ But if you need the editor to open after a single click, apply the [](grid/api/g
 
 {{note Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.}}
 
+## Getting summary list of counted values
+
+You can get the summary of counted values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column: 
+
+### Creating a summary object
+
+- To form a summary list on the grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. 
+
+~~~jsx
+type TSummaryMethod = (row: IRow[]) => string | number;
+
+interface ISummary {
+    [key: string]: [string, string] | TSummaryMethod;
+}
+
+summary?: ISummary;
+~~~
+
+The `summary` configuration option of Grid is an object that may contain:
+
+a) a `key:value` pair, where the *key* is either the key from the list or the name of the functor and the *value* is an array with the column id and the name of the applied functor
+
+b) a custom function for calculating the summary of the column
+
+- To form a summary list that will be available on the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column.
+
+~~~jsx
+type TSummaryMethod = (row: IRow[]) => string | number;
+
+interface ISummary {
+    [key: string]: string | [string, string] | TSummaryMethod;
+}
+
+summary?: ISummary | string;
+~~~
+
+The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. 
+
+As an object it may contain:
+
+a) a `key:value` pair, where the *key* is either the key from the list or the name of the functor and the *value* is an array with the column id and the name of the applied functor
+
+b) a custom function for calculating the summary for the column
+
+:::note
+When initialized as a string, the resulting value (excluding "count") is used with applied **patternMask**/**numberMask**, if there are any.
+:::
+
+Here's an example of using both `summary` configuration options - for the component and for the column:
+
+~~~jsx
+// defining the method for calculating the density of population
+dhx.methods.populationDensity = (rows) => {
+    const totalPopulation = rows.reduce((sum, row) => sum + row.population, 0);
+    const totalArea = rows.reduce((sum, row) => sum + row.area, 0);
+    return totalArea ? (totalPopulation / totalArea).toFixed(2) : 0;
+};
+
+// adjusting a grid and using the method for calculating density
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }],
+            footer: [{ text: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${count}` }],
+            // initializing column summary as a string
+            summary: "count" 
+        },
+        {
+            width: 150,
+            id: "area",
+            header: [{ text: ({ customSum }) => `Area: ${customSum}` }],
+            // initializing column summary as an object
+            summary: {
+                customSum: rows => {        
+                    return dhx.methods.sum(rows, "population") + dhx.methods.sum(rows, "area");     
+                },
+            }
+        },
+        {
+            width: 150,
+            id: "density",
+            header: [{ text: "Density" }],
+            footer: [{ text: ({ density }) => `Density: ${density}` }],
+        }
+    ],
+    // initializing grid summary
+    summary: {
+        totalPopulation: ["population", "sum"],
+        totalArea: ["area", "sum"],
+        density: "populationDensity" // adding the summary value for density
+    },
+    data: dataset
+});
+~~~
+
+In the above example the [`dhx.methods`](helpers/data_calculation_functions.md) helper is used to:
+
+- create a custom function for calculating the density of population 
+- redefine the default `sum` functor by using custom calculations for the summary of the "area" column
+
+### Getting the summary object
+
+To get the object with the counted values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters the method returns an object with the counted values defined in the configuration of the component:
+
+~~~jsx
+// an example of getting the values of population density
+const summary = grid.getSummary();
+console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
+~~~
+
+You can also pass the `id` of a column to the method to get an object with the counted values defined in the column's configuration together with the counted values defined in the component's configuration. In the following example counted values are used for rendering summary for a column:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        {
+            width: 150,
+            id: "age",
+            header: [{ text: "Med. Age" }],
+            summary: { avgAge: "avg" } 
+        }
+    ],
+    summary: {
+        totalPopulation: ["population", "sum"],
+    },
+    data: dataset
+});
+
+// getting summary data for the component
+const totalSummary = grid.getSummary();
+console.log(totalSummary); //{ totalPopulation: 1000000 } - sum of all the values in the "population" column
+
+// getting summary data for the column
+const columnSummary = grid.getSummary("age");
+console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
+~~~
+
+## Header/footer text
+
+You can specify the text of the header/footer column via the `text` property. It can be set either as a string or a callback function which is called with the following parameter: 
+
+- `content` - an object with the content of the header/footer tooltip that contains the counted values as **[key: string]**, where the key is either the key defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+
+:::note
+In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
+:::
+
+In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes counted values both from the column `summary` config (*count*) and the grid's config (*totalPopulation*):
+
+~~~jsx {6,7}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }],
+            footer: [{ text: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${count}` }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    data: dataset
+});
+~~~
+
+You can [apply styling to the text of header cells](../customization#styling-header-cells) or to the [text of footer cells](../customization#styling-footer-cells) via the `text` property of the column's footer.
+
 ## Header/footer filters
 
 There are three types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md):
@@ -1807,32 +1977,3 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-## Column header/footer text
-
-The `text` property of the column header/footer can be set either as a string or a callback function which is called with the following parameter: 
-
-- `content` - an object with the content of the header/footer tooltip that contains the counted values as **[key: string]**, where the key is either the key defined in the list or the functor name. The counted values are taken either from the `summary` config option of the component or the `summary` config option of a column
-
-:::note
-In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
-:::
-
-In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes counted values both from the column `summary` config (*count*) and the grid's config (*totalPopulation*):
-
-~~~jsx {6,7}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { 
-            width: 150, 
-            id: "population", 
-            header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }],
-            footer: [{ text: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${count}` }],
-            summary: "count"
-        }
-    ],
-    summary: { totalPopulation: ["population", "sum"] },
-    data: dataset
-});
-~~~
-
-You can [apply styling to the text of header cells](../customization#styling-header-cells) or to the [text of footer cells](../customization#styling-footer-cells) via the `text` property of the column's footer.
