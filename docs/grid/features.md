@@ -126,9 +126,10 @@ In this section you will know how to configure the drag-n-drop functionality for
 
 In this section you can learn how to configure the size of Grid and its cells.
 
-| Topic                                                                                       | Description                                                                                                                     |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to set specific size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                         |
+| Topic                                                      | Description                                    |
+| -----------------------------------------------------------| -----------------------------------------------|
+| Responsiveness | Learn how to configure Grid to adapt its sizes according to the parent container ([Example](https://snippet.dhtmlx.com/qjhstaf3))
+| [Width and height of Grid](../configuration/#widthheight)  | Learn how to set specific size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                         |
 | [Auto-height for Grid](../configuration/#autoheight-for-grid)                               | Learn how to configure auto-height for Grid ([Example](https://snippet.dhtmlx.com/srbu56ob))                                                                                 |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/zfrpe22d)) |
 | [Max width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/ku3cfaux))            |
