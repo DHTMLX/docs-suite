@@ -6,7 +6,7 @@ description: You can explore the spans config of Grid in the documentation of th
 
 # summary
 
-@short: Optional. Creates the list of counted values based on the columns' data 
+@short: Optional. Creates the list of counted values based on the column's data 
 
 ~~~jsx
 type TSummaryMethod = (row: IRow[]) => string | number;

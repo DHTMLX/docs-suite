@@ -8,7 +8,7 @@ description: You can explore the getSummary method of Grid in the documentation 
 
 @short: returns an object with the specified counted values
 
-~~~js
+~~~jsx
 interface ISummaryList {
     [key: string]: string | number | null;
 }
@@ -41,9 +41,9 @@ const grid = new dhx.Grid("grid_container", {
 
 // getting summary data for the component
 const totalSummary = grid.getSummary();
-console.log(totalSummary); //{ totalPopulation: 1000000 } - sum of all the values in the "population" column
+console.log(totalSummary); //{ totalPopulation: 1000000 } - the sum of all the values in the "population" column
 
-// getting summary data for the column
+// getting summary data for a column
 const columnSummary = grid.getSummary("age");
 console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
 

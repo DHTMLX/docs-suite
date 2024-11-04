@@ -188,8 +188,8 @@ columns:[
         </tr>
         <tr>
             <td><b>summary</b></td>
-            <td>(optional) forms the list of counted values based on columns' data. The defined list is available only at the column's level. If initialized as <i>string</i> (excluding "count"), the resulting value is used 
-            with applied **patternMask**/**numberMask**, if there are any</td>
+            <td>(optional) forms the list of counted values based on the column's data. The defined list is available only at the column's level. If initialized as <i>string</i>, the resulting value is used 
+            with applied **patternMask**/**numberMask** (excluding "count"), if there are any</td>
         </tr>
     </tbody>
 </table>
