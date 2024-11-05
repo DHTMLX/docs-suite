@@ -37,6 +37,7 @@ Says how to build a standard grid on a page and bring it to life: configure with
 - [](grid/configuration.md)
 - [](grid/data_loading.md)
 - [](grid/usage.md)
+- [](grid/treegrid_mode.md) 
 - [](grid/usage_selection.md)
 - [](grid/customization.md)
 - [](grid/events.md)

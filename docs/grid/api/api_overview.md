@@ -230,3 +230,24 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_pdf_method.md)  | @getshort(grid/api/export/grid_pdf_method.md)  |
 | [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
+
+## TreeGrid mode API
+
+### TreeGrid mode methods
+
+| Name                                    | Description                                    |
+| --------------------------------------- | ---------------------------------------------- |
+| [](grid/api/export/grid_csv_method.md)  | @getshort(grid/api/export/grid_csv_method.md)  |
+
+### TreeGrid mode events
+
+| Name                                    				  | Description                                    				 |
+| ------------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/treegrid_mode/grid_aftercollapse_event.md)  | @getshort(grid/api/treegrid_mode/grid_aftercollapse_event.md)|
+| [](grid/api/treegrid_mode/grid_afterexpand_event.md)  | @getshort(grid/api/treegrid_mode/grid_afterexpand_event.md)|
+
+### TreeGrid mode properties
+
+| Name                                    | Description                                    |
+| --------------------------------------- | ---------------------------------------------- |
+| [](grid/api/export/grid_csv_method.md)  | @getshort(grid/api/export/grid_csv_method.md)  |
