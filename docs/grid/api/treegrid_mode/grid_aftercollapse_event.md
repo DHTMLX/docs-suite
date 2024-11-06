@@ -6,10 +6,10 @@ description: You can explore the afterCollapse event of Grid in the documentatio
 
 # afterCollapse
 
-@short: fires after collapsing Grid in the TreeGrid mode
+@short: fires after collapsing a treegrid
 
 :::note
-The event works only for Grid with the `type:"tree"` configuration option
+The event works only for Grid with the `type: "tree"` configuration option
 :::
 
 @signature: {'afterCollapse: (rowId: string | number) => void;'}
@@ -20,7 +20,7 @@ The callback of the event is called with the following parameter:
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-    type:"tree",
+    type: "tree",
     columns: [
        // columns config
     ],

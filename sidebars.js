@@ -2632,6 +2632,7 @@ module.exports = {
                     "grid/api/grid_spans_config",
                     "grid/api/grid_tooltip_config",                    
                     "grid/api/grid_topsplit_config",
+                    "grid/api/grid_type_config",
                     "grid/api/grid_width_config",
                   ],
                 },
@@ -2731,8 +2732,10 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
+                      "grid/api/treegrid_mode/grid_collapse_method",
+                      "grid/api/treegrid_mode/grid_collapseall_method",
                       "grid/api/treegrid_mode/grid_expand_method",
-                      
+                      "grid/api/treegrid_mode/grid_expandall_method",
                     ],
                   },
                   {
@@ -2747,7 +2750,9 @@ module.exports = {
                     items: [
                       "grid/api/treegrid_mode/grid_aftercollapse_event",
                       "grid/api/treegrid_mode/grid_afterexpand_event",
-                      
+                      "grid/api/treegrid_mode/grid_beforecollapse_event",
+                      "grid/api/treegrid_mode/grid_beforeexpand_event",
+                      "grid/api/treegrid_mode/grid_expand_event",
                     ],
                   },
                   {
@@ -2760,8 +2765,9 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
+                      "grid/api/treegrid_mode/grid_collapsed_config",
+                      "grid/api/treegrid_mode/grid_dragexpand_config",
                       "grid/api/treegrid_mode/grid_rootparent_config",
-                      
                     ],
                   },
                 ]},

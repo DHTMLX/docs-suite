@@ -6,10 +6,10 @@ description: You can explore the beforeCollapse event of Grid in the documentati
 
 # beforeCollapse
 
-@short: fires before collapsing Grid in the TreeGrid mode
+@short: fires before collapsing a treegrid
 
 :::note
-The event works only for Grid with the `type:"tree"` configuration option
+The event works only for Grid with the `type: "tree"` configuration option
 :::
 
 @signature: {'beforeCollapse: (rowId: string | number) => boolean | void;'}
@@ -23,7 +23,7 @@ Return `false` to block collapsing of a grid; otherwise, `true`.
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-    type:"tree",
+    type: "tree",
     columns: [
        // columns config
     ],
@@ -36,7 +36,5 @@ grid.events.on("beforeCollapse", (rowId) => {
 });
 
 @descr:
-
-**Related sample**: [TreeGrid. Events](https://snippet.dhtmlx.com/sgwnxshe)
 
 @changelog: added in v6.4

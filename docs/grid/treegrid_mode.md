@@ -16,7 +16,7 @@ TreeGrid mode of the Grid component allows showing the nested tabular data.
 
 ## Initialization
 
-To initialize Grid in the TreeGrid mode, make use of the `type:tree` configuration option.
+To initialize Grid in the TreeGrid mode, make use of the `type: tree` configuration option.
 
 ~~~jsx title="index.js"
 const Grid = new dhx.Grid("grid_container", {
@@ -38,9 +38,9 @@ Grid in the TreeGrid mode uses all the same configuration options available in t
 
 There is also a set of properties you can provide for Grid in the TreeGrid mode to optimize its configuration for your needs. 
 
-### Collapsed mode (update link to config)
+### Collapsed mode 
 
-To initialize Grid in the TreeGrid mode in the collapsed state, use the [collapsed](treegrid/api/treegrid_collapsed_config.md) property:
+To initialize Grid in the TreeGrid mode in the collapsed state, use the [collapsed](grid/api/treegrid_mode/grid_collapsed_config.md) property:
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -55,9 +55,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid (TreeGrid). Collapsed mode](https://snippet.dhtmlx.com/t4iswa2y)
 
-### Expanding collapsed rows on drag-n-drop (update link to config)
+### Expanding collapsed rows on drag-n-drop 
 
-If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](treegrid/api/treegrid_dragexpand_config.md) property to *false*:
+If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](grid/api/treegrid_mode/grid_dragexpand_config.md) property to *false*:
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -73,9 +73,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid (TreeGrid). Multiselection and drag-n-drop](https://snippet.dhtmlx.com/hwddi1ki)
 
-### Defining the id of the root parent (update link to config)
+### Defining the id of the root parent 
 
-When Grid is initialized in the TreeGrid mode, the [root parent] takes the id of the Grid container by default. If the id of the container is set to `null` or defined as an HTML element, the value of the root parent will be auto-generated.
+To define the id of the root parent, use the [rootParent](grid/api/treegrid_mode/grid_rootparent_config.md) configuration property:
 
 ~~~jsx {3}
 const grid = new dhx.Grid("grid_container", {
@@ -91,12 +91,14 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+When Grid is initialized in the TreeGrid mode, the root parent takes the id of the Grid container by default. If the id of the container is set to `null` or defined as an HTML element, the value of the root parent will be auto-generated.
+
 ## Data loading
 
 There are several simple ways of loading data into Grid in the TreeGrid mode:
 
-- on initialization of Grid
-- after initialization of Grid
+- [on initialization of Grid](#loading-data-on-grid-initialization)
+- [after initialization of Grid](#loading-data-after-initialization)
 
 First, you need to prepare a data set that will be loaded into Grid in the TreeGrid mode.
 
@@ -152,7 +154,7 @@ Each object in the data set contains configuration of a grid row. The structure 
 
 ### Loading data on Grid initialization
 
-You can specify data you want to load into Grid in the TreeGrid mode on the initialization stage. Make use of the [data](grid/api/grid_data_config.md) configuration property, as in:
+You can specify data you want to load into Grid in the TreeGrid mode on the initialization stage. Make use of the [`data`](grid/api/grid_data_config.md) configuration property, as in:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -175,7 +177,7 @@ There are two ways to load data into Grid in the TreeGrid mode after its initial
 
 #### Loading from local source
 
-To load data from a local data source, use the `parse()` method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
+To load data from a local data source, use the [`parse()`](tree_collection/api/treecollection_parse_method.md) method of Tree Collection. Pass [a predefined data set](#preparing-data-set) as a parameter of this method:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -191,7 +193,7 @@ grid.data.parse(dataset);
 
 #### External data loading
 
-To load data from an external file, make use of the `load()` method of Tree Collection. It takes the URL of the file with data as a parameter:
+To load data from an external file, make use of the [`load()`](tree_collection/api/treecollection_load_method.md) method of Tree Collection. It takes the URL of the file with data as a parameter:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -215,23 +217,19 @@ grid.data.load("/some/data").then(function(){
 });
 ~~~
 
-## Work with Grid in the TreeGrid mode (add links to methods)
+## Work with Grid in the TreeGrid mode 
 
-While working with Grid in the TreeGrid mode, you can use the [API methods of DHTMLX Grid](/category/grid-methods/) which allows setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell. Besides, there are some methods specific for the TreeGrid mode of Grid. These are the methods for expanding/collapsing nodes.
-
-:::info important
-- Use [the methods of TreeCollection](tree_collection.md) to work with data of Grid in the TreeGrid mode. 
-::: 
+While working with Grid in the TreeGrid mode, you can use the [API methods of DHTMLX Grid](/category/grid-methods/) which allow setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell. Besides, there are some methods specific for the TreeGrid mode of Grid. These are the methods for expanding/collapsing nodes.
 
 ### Expanding/collapsing nodes
 
 #### Expanding/collapsing a certain node
 
-To expand a particular node in a Grid in the TreeGrid mode by its id, use the [`expand()`](treegrid/api/treegrid_expand_method.md) method:
+To expand a particular node in a Grid in the TreeGrid mode by its id, use the [`expand()`](grid/api/treegrid_mode/grid_expand_method.md) method:
 
 ~~~jsx {5,13}
 const grid = new dhx.Grid("grid_container", {
-    type:"tree",
+    type: "tree",
     columns: [
         { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
         { id: "native", type: "string", header: [{ text: "Native name" }] },
@@ -245,11 +243,11 @@ const grid = new dhx.Grid("grid_container", {
 grid.expand("native");
 ~~~
 
-To collapse a grid node, make use of the [`collapse()`](treegrid/api/treegrid_collapse_method.md) method:
+To collapse a grid node, make use of the [`collapse()`](grid/api/treegrid_mode/grid_collapse_method.md) method:
 
 ~~~jsx {5,13}
 const grid = new dhx.Grid("grid_container", {
-    type:"tree",
+    type: "tree",
     columns: [
         { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
         { id: "native", type: "string", header: [{ text: "Native name" }] },
@@ -267,11 +265,11 @@ grid.collapse("native");
 
 #### Expanding/collapsing all nodes
 
-It is also possible to expand/collapse all the nodes of the Grid in the TreeGrid mode using the two corresponding methods - [`expandAll()`](treegrid/api/treegrid_expandall_method.md) and [`collapseAll()`](treegrid/api/treegrid_collapseall_method.md):
+It is also possible to expand/collapse all the nodes of the Grid in the TreeGrid mode using the two corresponding methods - [`expandAll()`](grid/api/treegrid_mode/grid_expandall_method.md) and [`collapseAll()`](grid/api/treegrid_mode/grid_collapseall_method.md):
 
 ~~~jsx {14,16}
 const grid = new dhx.Grid("grid_container", {
-    type:"tree",
+    type: "tree",
     columns: [
         { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
         { id: "native", type: "string", header: [{ text: "Native name" }] },
@@ -290,19 +288,18 @@ grid.collapseAll();
 
 **Related sample**: [Grid (TreeGrid). Expand / collapse rows](https://snippet.dhtmlx.com/1grpsaa2)
 
-## Event handling (update links to events)
+## Event handling 
 
 When you work with Grid in the TreeGrid mode, you can use the [API Events of DHTMLX Grid](/category/grid-events/). There is also a set of events specific for the TreeGrid mode of Grid that allow handling collapsing and expanding of nodes:
 
-| Name                                              | Description                                              |
-| ------------------------------------------------- | -------------------------------------------------------- |
-| [](treegrid/api/treegrid_aftercollapse_event.md)  | @getshort(treegrid/api/treegrid_aftercollapse_event.md)  |
-| [](treegrid/api/treegrid_afterexpand_event.md)    | @getshort(treegrid/api/treegrid_afterexpand_event.md)    |
-| [](treegrid/api/treegrid_beforecollapse_event.md) | @getshort(treegrid/api/treegrid_beforecollapse_event.md) |
-| [](treegrid/api/treegrid_beforeexpand_event.md)   | @getshort(treegrid/api/treegrid_beforeexpand_event.md)   |
-| [](treegrid/api/treegrid_expand_event.md)         | @getshort(treegrid/api/treegrid_expand_event.md)         |
+| Name                                                    | Description                                                   |
+| ------------------------------------------------------- | ------------------------------------------------------------- |
+| [](grid/api/treegrid_mode/grid_aftercollapse_event.md)  | @getshort(grid/api/treegrid_mode/grid_aftercollapse_event.md) |
+| [](grid/api/treegrid_mode/grid_afterexpand_event.md)    | @getshort(grid/api/treegrid_mode/grid_afterexpand_event.md)   |
+| [](grid/api/treegrid_mode/grid_beforecollapse_event.md) | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
+| [](grid/api/treegrid_mode/grid_beforeexpand_event.md)   | @getshort(grid/api/treegrid_mode/grid_beforeexpand_event.md)  |
+| [](grid/api/treegrid_mode/grid_expand_event.md)         | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
+
+You can learn how to work with Grid events in the [related guide](/grid/events/).
 
 
-:::info important
-- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
-:::

@@ -6,10 +6,10 @@ description: You can explore the afterExpand event of Grid in the documentation 
 
 # afterExpand
 
-@short: fires after expanding Grid in the TreeGrid mode
+@short: fires after expanding a treegrid
 
 :::note
-The event works only for Grid with the `type:"tree"` configuration option
+The event works only for Grid with the `type: "tree"` configuration option
 :::
 
 @signature: {'afterExpand: (rowId: string | number) => void;'}
@@ -21,7 +21,7 @@ The callback of the event is called with the following parameter:
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-    type:"tree",
+    type: "tree",
     columns: [
        // columns config
     ],
