@@ -17,6 +17,7 @@ In this section you can find out how to initialize Grid, how to load data into t
 | Topic                                                                   | Description                                                            |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                              | Learn how to initialize Grid                                           |
+| [Initialization in the TreeGrid mode](../treegrid_mode/)                | Learn how to initialize Grid in the TreeGrid mode                      |
 | [Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)             | The example shows how to initialize Grid inside Pagination             |
 | [Large dataset](https://snippet.dhtmlx.com/w3p07d6s)                    | The example shows how Grid works with over 11000 rows loaded           |
 | [Several grids with large dataset](https://snippet.dhtmlx.com/l9tm2kmp) | The example shows how to initialize several grids inside one container |
@@ -226,7 +227,7 @@ In this section you will find the ways of filtering data in Grid.
 
 ## How to work with selection
 
-In this section you will find the ways of work with selection functionality.
+In this section you will find the ways of working with selection functionality.
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -235,6 +236,19 @@ In this section you will find the ways of work with selection functionality.
 | [Working with selection](../usage_selection/)                                 | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell ([Example](https://snippet.dhtmlx.com/4nj0e9ye)) |
 | [Selection API](../../category/selection-api/)                                | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
 | [Keyboard navigation](../configuration/#arrow-shortcut-keys)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
+
+## How to work with TreeGrid mode
+
+In this section you will find the ways of working with the TreeGrid mode of Grid.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Enabling TreeGrid mode](../treegrid_mode/#initialization) | Learn how to enable the TreeGrid mode of Grid     |
+| [Configuring TreeGrid mode](../treegrid_mode/#configuration)| Learn how to configure the TreeGrid mode of Grid |
+| [Data loading in TreeGrid mode](../treegrid_mode/#data-loading)| Learn how to load data in the TreeGrid mode of Grid |
+| [Working with TreeGrid mode](../treegrid_mode/#work-with-grid-in-the-treegrid-mode) | Learn how to expand/collapse nodes |
+| [TreeGrid mode API](../../category/treegrid-mode-api/) | Learn how to use the API of TreeGrid mode of Grid |
+
 
 ## How to scroll Grid
 
@@ -275,6 +289,7 @@ In this section you can find out corresponding references of Grid API.
 | [Grid column properties](../api/api_gridcolumn_properties/) | Check the list of properties of a Grid column                    |
 | [DataCollection API](../../data_collection/)                | Check the API of DataCollection to work with Grid data           |
 | [Selection API](../../category/selection-api/)              | Check the API of Selection to manage the selection of Grid cells |
+| [TreeGrid mode API](../../category/treegrid-mode-api/)      | Check the API of Grid in the TreeGrid mode  					 |
 
 
 ## Common functionality
@@ -286,7 +301,7 @@ In this section you will learn about common functionality of the library which c
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
 | [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Grid                     |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 
@@ -294,7 +309,7 @@ In this section you will learn about common functionality of the library which c
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
-- [**Check a TreeGrid  widget >>>**](treegrid.md) - it allows showing the nested tabular data
+- [**Check the TreeGrid  mode of the Grid widget >>>**](../treegrid_mode/) - it allows showing the nested tabular data
 - [**Check SpreadSheet >>>**](https://docs.dhtmlx.com/spreadsheet/) - if you need functionality like Google Spreadsheets or Excel
 - [**Check Pivot >>>**](https://docs.dhtmlx.com/pivot/index.html) - if you are interested in analyzing data from large datasets
 

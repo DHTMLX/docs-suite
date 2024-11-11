@@ -8,7 +8,7 @@ description: You can explore the type config of Grid in the documentation of the
 
 @short: Optional. Sets the TreeGrid mode of a grid
 
-@signature: {'type?: "type";'}
+@signature: {'type?: "tree";'}
 
 @example:
 const grid = new dhx.Grid("grid_container", {
@@ -22,6 +22,6 @@ const grid = new dhx.Grid("grid_container", {
 
 @descr:
 
-**Related sample**:
 
-**Related article:** 
+
+**Related article:** [TreeGrid mode](grid/treegrid_mode.md)

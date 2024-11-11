@@ -16,9 +16,9 @@ TreeGrid mode of the Grid component allows showing the nested tabular data.
 
 ## Initialization
 
-To initialize Grid in the TreeGrid mode, make use of the `type: tree` configuration option.
+To initialize Grid in the TreeGrid mode, make use of the [`type: "tree"`](grid/api/grid_type_config.md) configuration option.
 
-~~~jsx title="index.js"
+~~~jsx {2} title="index.js"
 const Grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
