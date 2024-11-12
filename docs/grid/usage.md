@@ -261,6 +261,341 @@ grid.removeSpan("10", "a");
 
 ## Working with data
 
+### Grouping data
+
+If you use the **PRO version** of dhtmlxGrid, you can group row data by column values to make them more suitable for analysis.
+
+:::tip important
+- Data grouping aren't intended to work with the [`lazyload`](grid/data_loading.md#dynamic-loading)? property
+- Modifying the values of grouped elements won't modify the aggregated values
+- You mustn't change the order of elements grouping by drag-n-drop 
+:::
+
+#### Enabling data grouping
+
+To enable grouping in Grid, you need to use the following properties:
+
+- [`group`](grid/api/grid_group_config.md) configuration property of Grid. It allows configuring the behavior, visibility and appearance of grouping in a table, providing flexibility while working with data. It is also possible to control the grouping panel, rendering of columns, the order of grouping and the settings related to data aggregation
+
+:::note
+Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have `type: tree` property in its configuration.
+:::
+
+- [`groupable`](grid/api/grid_groupable_config.md) configuration property of Grid. It enables grouping data by values in all columns. Or the [`groupable`](grid/api/api_gridcolumn_properties.md) property of a column that allows grouping data by the values of a certain column
+
+The `group` configuration option can be set in two ways:
+
+1. as a *boolean* value:
+
+~~~jsx {7}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "population", header: [{ text: "Population" }] },
+        { id: "area", header: [{ text: "Land Area (Km²)" }] }
+    ],
+    group: true,
+    data: dataset
+});
+~~~
+
+2. as an *object* with the properties enumerated below:
+
+- `panel` - enables the panel of grouping control. When the `panel` config is set to *true*, a user can drag columns' headers to the panel of creating and modifying groups
+
+~~~jsx {7-9}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "population", header: [{ text: "Population" }] },
+        { id: "area", header: [{ text: "Land Area (Km²)" }] }
+    ],
+    group: {
+        panel: true
+    },
+    data: dataset
+});
+~~~
+
+- `panelHeight` - defines the height of a group in pixels, which allows adjusting the space for rendering a group of columns
+
+~~~jsx {7-10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "city", header: [{ text: "City" }] },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    group: {
+        panel: true,
+        panelHeight: 60
+    },
+    data: dataset
+});
+~~~
+
+- `hideableColumns` - specifies whether columns will be hidden on a group creation. If `hideableColumns` is set to *false*, columns used for grouping will remain visible
+
+~~~jsx {7-10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "city", header: [{ text: "City" }] },
+        { id: "population", header: [{ text: "Population" }] },
+    ],
+    group: {
+        panel: true,
+        hideableColumns: false // columns remain visible after grouping
+    },
+    data: dataset
+});
+~~~
+
+- `showMissed` - controls visibility of the elements that don't suit the grouping criteria (e.g. data without values). Has the following settings:
+    - when set to `true`, the elements that don't have values for grouping are rendered row by row after all the data
+    - if a *string* value is set, e.g. "Missed", values for grouping are rendered as a separate group the name of which will have the specified string value
+    - if set to `false`, strings that don't suit the grouping criteria won't be rendered
+
+~~~jsx {7-10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "city", header: [{ text: "City" }], groupable: true },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    group: {
+        panel: true,
+        showMissed: "Missed" // groups without values will be rendered at the end as the "Missed" group
+    },
+    data: dataset
+});
+~~~
+
+- `fields` - predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns the aggregation and the order of results are being configured for.
+
+A predefined configuration is needed in cases when the grouping panel is supposed to be used and the rendered group should have the resulting row.
+
+~~~jsx {7-21}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        { id: "population", header: [{ text: "Population" }] },
+        { id: "density", header: [{ text: "Density (P/Km²)" }] }
+    ],
+    group: {
+        panel: true,
+        fields: {
+            population: {
+                summary: "bottom",
+                map: {
+                    population: ["population", "sum"],
+                    customSummary: function(rows) {
+                        return rows.length;
+                    }
+                }
+            }
+        },
+        order: ["population"]
+    },
+    groupable: true,
+    data: dataset
+});
+~~~
+
+- `order` - defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be strings (columns' ids), or functions that set the values for grouping
+     - you can specify the columns' ids to group data by in the order of their succession. Grouping starts from the first specified column and will continue for each following one
+~~~jsx {7-9}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "city", header: [{ text: "City" }], groupable: true },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    group: {
+        order: ["country", "city"]
+    },
+    data: dataset
+});
+~~~
+     - you can also use callback functions in an array. A callback function takes the current data row and returns the value for grouping
+~~~jsx {7-13}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        { id: "city", header: [{ text: "City" }]},
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    group: {
+        order: [
+            (row) => row.population > 1000000
+                ? "Large Population"
+                : "Small Population"
+        ]
+    },
+    groupable: true,
+    data: dataset
+});
+~~~
+     - you can use a configuration object as an element that defines the grouping order
+~~~jsx {25-46}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            id: "country",
+            header: [{ text: "Country" }],
+            template: (value, row) => {
+                // the $groupSummary service property helps defining the resulting row
+                if (row.$groupSummary) { 
+                    return `count: ${row.count}`;
+                }
+                return value;
+            }
+        },
+        {
+            id: "population",
+            header: [{ text: "Population" }],
+            template: (value, { $groupSummary, ageAvg, populationAvg }) => {
+                if (!$groupSummary) return value;
+                return `Age avg: ${ageAvg}; Population avg: ${populationAvg}`;
+            },
+        },
+        { id: "city", header: [{ text: "City" }],  },
+        { id: "age", header: [{ text: "Age" }] },       
+    ],
+    group: {
+        fields: {
+            population: {
+                summary: "top",
+                map: {
+                    ageAvg: ["age", "avg"],
+                    populationAvg: ["population", "avg"],
+                }
+            },
+        },
+        order: [
+            {
+                by: "country",
+                summary: "top",
+                map: {
+                    count: ["country", "count"]
+                }
+            },
+            "population",
+        ],
+        hideableColumns: false,
+    },
+    groupable: true,
+    data: dataset
+});
+~~~
+     - you can also combine columns' ids, functions and configuration objects. Such an approach provides a flexible control over the grouping order by applying static values for some columns and dynamic values calculated by a function for other columns
+~~~jsx {7-12}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        { id: "city", header: [{ text: "City" }],  },
+        { id: "population", header: [{ text: "Population" }] },
+    ],
+    group: {
+        order: [
+            "country", // grouping by a country
+            (row) => row.city[0].toUpperCase() // grouping by the first letter of the city name
+        ]
+    },
+    groupable: true,
+    data: dataset
+});
+~~~
+
+- `column` - defines the configuration of a column that renders values by the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
+
+You can specify the id of a column in two ways:
+
+1) setting the id as a string value of the `column` property of the `group` object: 
+
+~~~jsx {7-9}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "city", header: [{ text: "City" }], groupable: true },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    group: {
+        column: "group" // defines the id of a column with grouped data
+    },
+    data: dataset
+});
+~~~
+
+2) setting the id as as a string value of the `id` property of the `column` object inside the `group` object
+
+~~~jsx {7-13}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }], groupable: true },
+        { id: "city", header: [{ text: "City" }], groupable: true },
+        { id: "population", header: [{ text: "Population" }] }
+    ],
+    group: {
+        column: {
+            id: "group", // defines the id of a column with grouped data
+            sortable: false,
+            tooltip: false,
+        }
+    },
+    data: dataset
+});
+~~~
+
+#### Making group panel elements closable
+
+You can enable closing of all the elements of the group panel using the [`closable`](grid/api/grid_closable_config.md) configuration option of Grid.
+
+~~~jsx {10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 150, id: "country", header: [{ text: "Country" }] },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
+    ],
+    group: true,
+    groupable: true,
+    closable: true,
+    data: dataset
+});
+~~~
+
+It is also possible to provide closing of a particular element or make the data grouping of values in a particular column always enabled with the help of the closable configuration property of a column:
+
+~~~jsx {7-9}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            width: 150,
+            id: "country",
+            header: [{ text: "Country" }],
+            // grouping of the "country" column is permanently enabled
+            // and can't be switched off via the group panel
+            closable: false, 
+        },
+        {
+            width: 150,
+            id: "population",
+            header: [{ text: "Population" }],
+            groupable: true,
+        },
+        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
+    ],
+    group: {
+        order: ["country", "population"]
+    },
+    groupable: true,
+    data: dataset
+});
+~~~
+
 ### Filtering data
 
 You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:

@@ -74,6 +74,8 @@ columns:[
     template?: (cellValue: any, row: object, column: object) => string,
     tooltip?: boolean | object, // true by default
     tooltipTemplate?: (cellValue: any, row: object, column: object) => string,
+    groupable?: boolean, // false by default
+    closable?: boolean // true by default
   },
   // more column objects
 ]
@@ -179,6 +181,15 @@ columns:[
         <tr>
             <td><a href="../../customization#adding-template-to-tooltip"><b>tooltipTemplate</b></a></td>
             <td>(optional) a function which returns a template for the content of the tooltip. Takes 3 parameters:<ul><li><b>value</b> - (required) the value of a cell</li><li><b>row</b> - (required) an object with all cells in a row</li><li><b>column</b> - (required) an object with the configuration of a column (see the <b>columns</b> config)</li></ul>Returning *false* from the function will block showing of the tooltip</td>
+        </tr>
+        <tr>
+            <td><a href="../../usage/#grouping-data"><b>groupable</b></a></td>
+            <td>(optional) enables data grouping by the values of a certain column. Columns' header can be dragged to the special grouping area called group panel. Grid will automatically create data groups based on the values of these columns. Note that
+            the **groupable** property works only with the <a href="../../api/grid_group_config/"><b>group</b></a> panel.</td>
+        </tr>
+        <tr>
+            <td><a href="../../usage/#making-group-panel-elements-closable"><b>closable</b></a></td>
+            <td>(optional) enables closing a particular element of the group panel or making it permanently enabled</td>
         </tr>
     </tbody>
 </table>

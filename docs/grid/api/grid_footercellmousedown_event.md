@@ -6,7 +6,7 @@ description: You can explore the footerCellMouseDown event of Grid in the docume
 
 # footerCellMouseDown
 
-@short: fires on moving the mouse pointer over a grid footer cell
+@short: fires before releasing the left mouse button when clicking on a grid footer cell
 
 @signature: {'footerCellMouseDown: (column: object, event: MouseEvent & TouchEvent) => void;'}
 
