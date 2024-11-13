@@ -8,6 +8,10 @@ description: You can explore the groupPanelItemClick  event of Grid in the docum
 
 @short: fires on click on a group panel item
 
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @signature: {'groupPanelItemClick: (id: string, events: Event) => void;'}
 
 @params:

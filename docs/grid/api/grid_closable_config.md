@@ -8,6 +8,10 @@ description: You can explore the closable config of Grid in the documentation of
 
 @short: Optional. Enables closing of all the elements of the group panel
 
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @signature: {'closable?: boolean;'}
 
 @default: true
@@ -27,6 +31,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 @descr:
+The `closable` property works with the [`group`](grid/api/grid_group_config.md) panel.
+
 
 **Related article**: [Making group panel elements closable](grid/usage.md#making-group-panel-elements-closable)
 

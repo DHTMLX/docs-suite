@@ -8,6 +8,10 @@ description: You can explore the groupable config of Grid in the documentation o
 
 @short: Optional. Enables grouping data by values in all columns
 
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 :::note
 The `groupable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
 :::

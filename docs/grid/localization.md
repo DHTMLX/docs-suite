@@ -7,7 +7,7 @@ description: You can explore how to work with Grid in the documentation of the D
 # Localization
 
 :::tip pro version only
-The described functionality is available in the **PRO** version only.
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
 You can apply different languages to the interface of dhtmlxGrid. You just need to translate the corresponding strings for Grid labels and apply a ready locale to the component.
@@ -33,7 +33,7 @@ To use a different locale, your need to:
 
 ~~~jsx
 const de = {
-	// language settings
+    // language settings
 };
 ~~~
 

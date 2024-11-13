@@ -8,6 +8,10 @@ description: You can explore the groupPanelItemMouseDown  event of Grid in the d
 
 @short: fires before releasing the left mouse button when clicking on a group panel item
 
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 @signature: {'groupPanelItemMouseDown: (id: string, events: MouseEvent | TouchEvent) => void;'}
 
 @params:

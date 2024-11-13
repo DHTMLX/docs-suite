@@ -8,6 +8,10 @@ description: You can explore the group config of Grid in the documentation of th
 
 @short: Optional. Enables and allows configuring of grouping in Grid columns
 
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 :::note
 Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have `type: tree` property in its configuration.
 :::

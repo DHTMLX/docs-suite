@@ -263,9 +263,13 @@ grid.removeSpan("10", "a");
 
 ### Grouping data
 
-If you use the **PRO version** of dhtmlxGrid, you can group row data by column values to make them more suitable for analysis.
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
-:::tip important
+You can group row data by column values to make them more suitable for analysis.
+
+:::info important
 - Data grouping aren't intended to work with the [`lazyload`](grid/data_loading.md#dynamic-loading)? property
 - Modifying the values of grouped elements won't modify the aggregated values
 - You mustn't change the order of elements grouping by drag-n-drop 
@@ -595,6 +599,21 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 ~~~
+
+#### Localizing data grouping labels
+
+You can render Grid data grouping labels in the necessary language by translating the related strings and applying a ready locale for the component. The default Grid locale looks like this:
+
+~~~jsx
+const en = {
+    total: "Total", // the name of the total row 
+    groupText: "Group", // the name of the column with grouped data
+    dropAreaTitle: "Group by:", // the name of the area to drop column headers at
+    dropAreaPlaceholder: "Drag the column header here", // the placeholder of the dropping area
+}
+~~~
+
+Check the details at the [Localization guide](grid/localization.md).
 
 ### Filtering data
 
