@@ -184,12 +184,12 @@ columns:[
         </tr>
         <tr>
             <td><a href="../../usage/#grouping-data"><b>groupable</b></a></td>
-            <td>(optional) **PRO version only**, enables data grouping by the values of a certain column. Columns' header can be dragged to the special grouping area called group panel. Grid will automatically create data groups based on the values of these columns. Note that
-            the **groupable** property works only with the <a href="../../api/grid_group_config/"><b>group</b></a> panel.</td>
+            <td>(optional) **PRO version only**, enables data grouping by the values of a certain column. Columns' header can be dragged to the special grouping area - *group panel*. Grid will automatically create data groups based on the values of these columns. Note that
+            the **groupable** property works only with the <a href="../../api/grid_group_config/"><b>group</b></a> panel</td>
         </tr>
         <tr>
             <td><a href="../../usage/#making-group-panel-elements-closable"><b>closable</b></a></td>
-            <td>(optional) **PRO version only**, enables closing a particular element of the <a href="../../api/grid_group_config/"><b>group</b></a> panel or making it permanently enabled</td>
+            <td>(optional) **PRO version only**, either allows closing a particular element of the <a href="../../api/grid_group_config/"><b>group</b></a> panel or makes it permanently enabled</td>
         </tr>
     </tbody>
 </table>

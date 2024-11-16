@@ -9,7 +9,7 @@ description: You can explore the group method of DataCollection in the documenta
 @short: groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration
 
 :::info important
-Data grouping isn't intended to work with [`lazyDataProxy`](helpers.md/lazydataproxy/)
+Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
 :::
 
 :::note
@@ -43,21 +43,21 @@ group(order: TGroupOrder[], config?: IGroupConfig): void;
 	- a string that represents a grouping field
 	- a function `(i: IDataItem) => string` for dynamic defining of a group
 	- an `IGroupOrder` object that has the following properties:
-		- `by` - the field name or a function for a user-defined grouping
-		- `map` - (optional) an object for data aggregation in a group, where keys are field names, and the values can be:
+		- `by` - the field name or a function for user-defined grouping
+		- `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
             - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
             - a user-defined aggregation function `(i: IDataItem[]) => string | number`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
 - `config` - (optional) the configuration of data grouping
     - `showMissed` - (optional) specifies whether the elements that don't have the field for grouping should be displayed, *true* by default
-        - if set to *true*, the elements that don't have values fitting the grouping criteria are rendered row by row after all the data
-        - if a *string* value is set, e.g. "Missed", the elements that don't fit the grouping criteria are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
-        - if set to *false*, strings that don't suit the grouping criteria won't be rendered
+        - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
+        - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
+        - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
     - `field` - (optional) the group field name, *"group"* by default
 
 ## Examples
 
-- a simple grouping with the use of a callback function and the string field value
+- a simple grouping with the use of a callback function and a string field value
 
 ~~~jsx {12-19}
 const grid = new dhx.Grid("grid_container", {

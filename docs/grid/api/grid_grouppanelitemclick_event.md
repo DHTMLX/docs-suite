@@ -22,7 +22,7 @@ The callback of the event is called with the following parameters:
 
 @example:
 grid.events.on("groupPanelItemClick", (id) => {
-    console.log("Click by group item:", id)
+    console.log("Click on the group item:", id)
 });
 
 @descr:

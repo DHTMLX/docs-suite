@@ -22,7 +22,7 @@ The callback of the event is called with the following parameters:
 
 @example:
 grid.events.on("groupPanelItemMouseDown", (id) => {
-    console.log("Mouse down by group item:", id)
+    console.log("Mouse down on the group item:", id)
 });
 
 @descr:

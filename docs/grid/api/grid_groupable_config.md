@@ -37,11 +37,11 @@ const grid = new dhx.Grid("grid_container", {
 @descr:
 **Note** that:
 
-- You can drag column headers to the special grouping area (group panel). Grid will automatically create groups based on the values from these columns
-- You can group by several fields by moving a group element (a column header?) to the group panel
+- You can drag column headers to the special grouping area - *group panel*. Grid will automatically create groups based on the values from these columns
+- You can group data by several fields by moving a column header to the group panel
 - You can also sort the grouped data in two ways: 
     - either by sorting the grouped field beforehand
-    - or by clicking the group element on the group panel
+    - or by clicking a group element on the group panel
 - You can edit the nesting level of grouping by modifying the grouping order via either moving elements to the group panel or removing elements from the group panel
 
 **Related article**: [Grouping data](grid/usage.md#grouping-data)

@@ -37,7 +37,7 @@ const de = {
 };
 ~~~
 
-- apply the language settings calling the `dhx.i18n.setLocale()`` method before Grid initialization:
+- apply the language settings calling the `dhx.i18n.setLocale()` method before Grid initialization:
 
 ~~~jsx
 dhx.i18n.setLocale("grid", de);

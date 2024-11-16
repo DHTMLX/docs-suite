@@ -6,14 +6,14 @@ description: You can explore the group config of Grid in the documentation of th
 
 # group
 
-@short: Optional. Enables and allows configuring of grouping in Grid columns
+@short: Optional. Enables grouping row data by column values and allows configuring grouping settings
 
 :::tip pro version only
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-:::note
-Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have `type: tree` property in its configuration.
+:::info
+Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have the `type: tree` property in its configuration.
 :::
 
 ## Usage
@@ -53,24 +53,27 @@ As an object the `group` configuration option has the following properties:
 You can find the detailed description of the `group` object properties with examples in the related guide [Grouping data](grid/usage.md#configuring-data-grouping). 
 :::
 
-- `panel` -  (optional) enables the panel of grouping control, *true* by default. When the `panel` config is set to *true*, a user can drag columns' headers to the panel of creating and modifying groups
-- `panelHeight` - (optional) defines the height of a group in pixels, which allows adjusting the space for rendering a group of columns, *40* by default
+- `panel` -  (optional) enables the group panel, *true* by default. When the `panel` config is set to *true*, a user can drag columns' headers to the panel of creating and modifying groups
+- `panelHeight` - (optional) defines the height of the group panel in pixels, which allows adjusting the space for rendering a group of columns, *40* by default
 - `hideableColumns` - (optional) specifies whether columns will be hidden on a group creation, *true* by default. If set to *false*, columns used for grouping will remain visible
 - `showMissed` - (optional) controls visibility of the elements that don't suit the grouping criteria (e.g. data without values), *true* by default
-- `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
-    - `map` - (optional) an object for data aggregation in a group, where keys are field names, and the values can be:
+    - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
+    - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
+    - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
+- `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
+    - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
         - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
         - a user-defined aggregation function `((row: IRow[]) => string | number)`
     - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group
 - `order` - (optional) defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be: 
     - a string that represents a grouping field
-    - a function of the `((row: IRow) => string)` type for dynamic defining of a group
-    - the `IGroupOrder` object that has the following properties:
-        - `map` - (optional) an object for data aggregation in a group, where keys are field names, and the values can be:
+    - a function `((row: IRow) => string)` for dynamic defining of a group
+    - an `IGroupOrder` object that has the following properties:
+        - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
             - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
             - a user-defined aggregation function `((row: IRow[]) => string | number)`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
-- `column` - (optional) defines the configuration of a column that renders values by the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
+- `column` - (optional) defines the configuration of a column that renders values of the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
 
 @example:
 const grid = new dhx.Grid("grid_container", {

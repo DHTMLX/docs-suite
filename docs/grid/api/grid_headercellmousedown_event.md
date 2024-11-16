@@ -6,7 +6,7 @@ description: You can explore the headerCellMouseDown event of Grid in the docume
 
 # headerCellMouseDown
 
-@short: fires on moving the mouse pointer over a grid header cell
+@short: fires before releasing the left mouse button when clicking on a grid header cell
 
 @signature: {'headerCellMouseDown: (column: object, event: MouseEvent & TouchEvent) => void;'}
 

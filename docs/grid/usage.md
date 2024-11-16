@@ -270,37 +270,50 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 You can group row data by column values to make them more suitable for analysis. It is possible to set a predefined Grid configuration to display rows in a grouped state. Besides, you can group Grid rows via the UI.
 
 :::info important
-- Data grouping isn't intended to work with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
+- Data grouping isn't intended for working with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
 - Modifying the values of grouped elements won't modify the aggregated values
 - You mustn't change the order of elements grouping by drag-n-drop 
 :::
 
 #### Enabling data grouping
 
-To enable grouping in Grid, you need to use the following properties:
+To use grouping in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. It allows configuring the behavior, visibility and appearance of grouping in a table, thus providing flexibility while working with data. 
 
-- [`group`](grid/api/grid_group_config.md) configuration property of Grid. It allows configuring the behavior, visibility and appearance of grouping in a table, providing flexibility while working with data. It is also possible to control the grouping panel, rendering of columns, the order of grouping and the settings related to data aggregation. Should be used together with the `groupable` configuration option of Grid or of a column which are described below.
-
-:::note
-Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have `type: tree` property in its configuration.
-:::
-
-- [`groupable`](grid/api/grid_groupable_config.md) **property of Grid**. It enables grouping data by values in all columns:
-
-~~~jsx {5-6}
+~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
-    group: true,
-    groupable: true
+    group: true, // enabling grouping in a grid
+    groupable: true 
     data: dataset
 });
 ~~~
 
-Or the [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** that allows grouping data by the values of a certain column:
+:::info note
+Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have the `type: tree` property in its configuration.
+:::
 
-~~~jsx {3,7}
+With the `group` configuration option you can display and manage the *group panel*, adjust rendering of columns, the order of grouping and the settings related to data aggregation. Check [how to configure data grouping with the `group` property](#configuring-data-grouping).
+
+You can also specify what Grid data will be used for grouping using the `groupable` properties of Grid and of a column:
+
+- the [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by values in all columns:
+
+~~~jsx {6}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    group: true, 
+    groupable: true // allowing grouping row data by the values of all columns
+    data: dataset
+});
+~~~
+
+- the [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
+
+~~~jsx {3}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "country", header: [{ text: "Country" }], groupable: true },
@@ -314,28 +327,11 @@ const grid = new dhx.Grid("grid_container", {
 
 In the above snippet rows will be grouped by the "country" column values, as the `groupable: true` property is specified in its configuration. 
 
-
 #### Configuring data grouping 
 
-The `group` configuration option can be set in two ways:
+The `group` configuration option can be set as an *object* with the properties enumerated below:
 
-1. as a *boolean* value:
-
-~~~jsx {7}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { id: "country", header: [{ text: "Country" }], groupable: true },
-        { id: "population", header: [{ text: "Population" }] },
-        { id: "area", header: [{ text: "Land Area (Km²)" }] }
-    ],
-    group: true,
-    data: dataset
-});
-~~~
-
-2. as an *object* with the properties enumerated below:
-
-- `panel` - (optional) enables the panel of grouping control, *true* by default. When the `panel` config is set to *true*, a user can drag columns' headers to the panel of creating and modifying groups
+- `panel` - (optional) enables the group panel, *true* by default. When the `panel` config is set to *true*, a user can drag columns' headers to the panel of creating and modifying groups
 
 ~~~jsx {7-9}
 const grid = new dhx.Grid("grid_container", {
@@ -345,13 +341,13 @@ const grid = new dhx.Grid("grid_container", {
         { id: "area", header: [{ text: "Land Area (Km²)" }] }
     ],
     group: {
-        panel: true
+        panel: true // enabling the group panel
     },
     data: dataset
 });
 ~~~
 
-- `panelHeight` - (optional) defines the height of a group in pixels, which allows adjusting the space for rendering a group of columns, *40* by default
+- `panelHeight` - (optional) defines the height of the group panel in pixels, which allows adjusting the space for rendering a group of columns, *40* by default
 
 ~~~jsx {7-10}
 const grid = new dhx.Grid("grid_container", {
@@ -386,11 +382,11 @@ const grid = new dhx.Grid("grid_container", {
 ~~~
 
 - `showMissed` - (optional) controls visibility of the elements that don't suit the grouping criteria (e.g. data without values), *true* by default. The following settings are available:
-    - if set to *true*, the elements that don't have values for grouping are rendered row by row after all the data
-    - if a *string* value is set, e.g. "Missed", the values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
-    - if set to *false*, strings that don't suit the grouping criteria won't be rendered
+    - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
+    - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
+    - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
 
-~~~jsx {7-10}
+~~~jsx {7-12}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "country", header: [{ text: "Country" }], groupable: true },
@@ -399,19 +395,21 @@ const grid = new dhx.Grid("grid_container", {
     ],
     group: {
         panel: true,
-        showMissed: "Missed" // groups without values will be rendered at the end as the "Missed" group
+        // elements without values will be rendered as the "Missed" group 
+        // at the end of the grid data
+        showMissed: "Missed" 
     },
     data: dataset
 });
 ~~~
 
-- `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
-    - `map` - (optional) an object for data aggregation in a group, where keys are field names, and the values can be:
+- `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
+    - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
         - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
         - a user-defined aggregation function `((row: IRow[]) => string | number)`
     - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group
 
-A predefined configuration is needed in cases when the group panel is supposed to be used and the rendered group should have the resulting (total) row.
+A predefined configuration is needed in cases when the group panel is supposed to be used and the rendered group should have the total row.
 
 ~~~jsx {7-21}
 const grid = new dhx.Grid("grid_container", {
@@ -442,15 +440,15 @@ const grid = new dhx.Grid("grid_container", {
 
 In the above snippet row data is grouped by the values of the "population" column. The "group" column contains:
 
-a) the grouped values of the "population" column and the number of elements that suit a group
+a) the grouped values of the "population" column and the number of elements that suit the grouping criteria
 
-b) the total rows at the bottom of grouped values set by the **summary** property
+b) the total rows under the grouped values set by the `summary` property
 
 - `order` - (optional) defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be: 
     - a string that represents a grouping field
-    - a function of the `((row: IRow) => string)` type for dynamic defining of a group
-    - the `IGroupOrder` object that has the following properties:
-        - `map` - (optional) an object for data aggregation in a group, where keys are field names, and the values can be:
+    - a function `((row: IRow) => string)` for dynamic defining of a group
+    - an `IGroupOrder` object that has the following properties:
+        - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
             - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
             - a user-defined aggregation function `((row: IRow[]) => string | number)`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
@@ -572,7 +570,7 @@ const grid = new dhx.Grid("grid_container", {
 
 You can specify the id of a column in two ways:
 
-1) setting the id as a string value of the `column` property of the `group` object: 
+1) as a string value of the `column` property of the `group` object: 
 
 ~~~jsx {7-9}
 const grid = new dhx.Grid("grid_container", {
@@ -588,7 +586,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-2) setting the id as a string value of the `id` property of the `column` object inside the `group` object
+2) as a string value of the `id` property of the `column` object inside the `group` object
 
 ~~~jsx {7-13}
 const grid = new dhx.Grid("grid_container", {

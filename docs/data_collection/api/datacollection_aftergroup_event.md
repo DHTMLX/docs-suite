@@ -24,9 +24,9 @@ afterGroup: (grouped: string[], config: IGroupConfig) => void;
 - `grouped` - an array of fields data was grouped by
 - `config` - the configuration of data grouping
     - `showMissed` - (optional) specifies whether the elements that don't have the field for grouping should be displayed, *true* by default
-        - if set to *true*, the elements that don't have values for grouping are rendered row by row after all the data
-        - if a *string* value is set, e.g. "Missed", the values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
-        - if set to *false*, strings that don't suit the grouping criteria won't be rendered
+        - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
+        - if a *string* value is set, e.g. "Missed", the rows that don't have values for grouping are rendered as a separate group the name of which will have the specified string value. This group will be rendered as the last one
+        - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
     - `field` - (optional) the group field name, *"group"* by default
 
 @example:
