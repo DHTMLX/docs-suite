@@ -1366,6 +1366,10 @@ There are four navigation keys that Grid enables by default:
             <td><b>End</b></td>
             <td>navigate to the end of the Grid content (without change of the selected cell)</td>
         </tr>
+        <tr>
+            <td><b>Ctrl+Enter</b></td>
+            <td>expands/collapses the parent item in the TreeGrid mode</td>
+        </tr>
     </tbody>
 </table>
 
