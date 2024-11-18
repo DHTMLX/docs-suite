@@ -504,9 +504,9 @@ const grid = new dhx.Grid("grid_container", {
 Note that when you initialize Grid with the `group` configuration property, the tree-like mode is enabled for Grid and it will have the `type: tree` property in its configuration.
 :::
 
-You can also specify what Grid data will be used for grouping using the `groupable` properties of Grid and of a column:
+You can also specify what Grid data will be used for grouping using the `groupable` properties of Grid and of a column.
 
-- the [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by values in all columns:
+The [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by the values in all columns:
 
 ~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
@@ -519,7 +519,20 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- the [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
+:::note
+The `groupable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
+:::
+
+With the Grid `groupable` property enabled you can:
+
+- drag column headers to the special grouping area - *group panel*. Grid will automatically create groups based on the values from these columns
+- group data by several fields by moving a column header to the group panel
+- sort the grouped data in two ways: 
+    - either by sorting the grouped field beforehand
+    - or by clicking a group element on the group panel
+- edit the nesting level of grouping by modifying the grouping order by either moving elements to the group panel or removing elements from the group panel
+
+The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
 
 ~~~jsx {3}
 const grid = new dhx.Grid("grid_container", {
@@ -897,7 +910,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-It is also possible to provide closing of a particular element or make the data grouping of values in a particular column always enabled with the help of the [`closable`](grid/api/api_gridcolumn_properties.md) configuration property of a column:
+You can also use the [`closable`](grid/api/api_gridcolumn_properties.md) configuration property of a column. It allows making a particular group panel element closable or permanently enabled:
 
 ~~~jsx {7-9}
 const grid = new dhx.Grid("grid_container", {
@@ -930,10 +943,6 @@ const grid = new dhx.Grid("grid_container", {
 ### Using DataCollection API for data grouping
 
 After you've [enabled grouping in Grid](#enabling-data-grouping), you can use the [DataCollection API](../../data_collection) to work with data grouping.
-
-:::info important
-Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
-:::
 
 #### Grouping Grid data
 
@@ -1036,7 +1045,6 @@ grid.data.group(["city"], {
 To ungroup Grid data, use the [](../data_collection/api/datacollection_ungroup_method.md) method of DataCollection.
 
 ~~~jsx
-// ungrouping grid data
 grid.data.ungroup();
 ~~~
 
