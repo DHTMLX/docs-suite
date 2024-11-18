@@ -57,7 +57,7 @@ group(order: TGroupOrder[], config?: IGroupConfig): void;
 
 ## Examples
 
-- a simple grouping with the use of a callback function and a string field value
+- simple grouping with the use of a callback function and a string field value
 
 ~~~jsx {12-19}
 const grid = new dhx.Grid("grid_container", {
@@ -81,7 +81,7 @@ grid.data.group([
 ]);
 ~~~
 
-- a grouping with the use of a configuration object and aggregation settings
+- grouping with the use of a configuration object and aggregation settings
 
 ~~~jsx {12-23}
 const grid = new dhx.Grid("grid_container", {
@@ -109,7 +109,7 @@ grid.data.group([{
 }]);
 ~~~
 
-- a grouping with the use of the `showMissed` property
+- grouping with the use of the `showMissed` property
 
 ~~~jsx {12-16}
 const grid = new dhx.Grid("grid_container", {
