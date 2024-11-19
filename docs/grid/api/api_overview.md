@@ -194,6 +194,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_spans_config.md)           | @getshort(grid/api/grid_spans_config.md)           |
 | [](grid/api/grid_tooltip_config.md)         | @getshort(grid/api/grid_tooltip_config.md)         |
 | [](grid/api/grid_topsplit_config.md)        | @getshort(grid/api/grid_topsplit_config.md)        |
+| [](grid/api/grid_type_config.md)            | @getshort(grid/api/grid_type_config.md)            |
 | [](grid/api/grid_width_config.md)           | @getshort(grid/api/grid_width_config.md)           |
 
 ## Column properties
@@ -230,3 +231,40 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_pdf_method.md)  | @getshort(grid/api/export/grid_pdf_method.md)  |
 | [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
+
+## TreeGrid mode API
+
+### TreeGrid mode methods
+
+| Name                                    		  	  	| Description                                    		       |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| [](grid/api/treegrid_mode/grid_collapse_method.md)  	| @getshort(grid/api/treegrid_mode/grid_collapse_method.md)    |
+| [](grid/api/treegrid_mode/grid_collapseall_method.md) | @getshort(grid/api/treegrid_mode/grid_collapseall_method.md) |
+| [](grid/api/treegrid_mode/grid_expand_method.md)      | @getshort(grid/api/treegrid_mode/grid_expand_method.md)      |
+| [](grid/api/treegrid_mode/grid_expandall_method.md)   | @getshort(grid/api/treegrid_mode/grid_expandall_method.md)   |
+
+:::info important
+- Use [the methods of TreeCollection](tree_collection.md) to work with data of Grid in the TreeGrid mode. 
+::: 
+
+### TreeGrid mode events
+
+| Name                                    				  | Description                                    				  |
+| ------------------------------------------------------- | ------------------------------------------------------------- |
+| [](grid/api/treegrid_mode/grid_aftercollapse_event.md)  | @getshort(grid/api/treegrid_mode/grid_aftercollapse_event.md) |
+| [](grid/api/treegrid_mode/grid_afterexpand_event.md)    | @getshort(grid/api/treegrid_mode/grid_afterexpand_event.md)   |
+| [](grid/api/treegrid_mode/grid_beforecollapse_event.md) | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
+| [](grid/api/treegrid_mode/grid_beforeexpand_event.md)   | @getshort(grid/api/treegrid_mode/grid_beforeexpand_event.md)  |
+| [](grid/api/treegrid_mode/grid_expand_event.md) 		  | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
+
+:::info important
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
+:::
+
+### TreeGrid mode properties
+
+| Name                                    			  | Description                                    			   |
+| --------------------------------------------------- | ---------------------------------------------------------- |
+| [](grid/api/treegrid_mode/grid_collapsed_config.md) | @getshort(grid/api/treegrid_mode/grid_collapsed_config.md) |
+| [](grid/api/treegrid_mode/grid_dragexpand_config.md)| @getshort(grid/api/treegrid_mode/grid_dragexpand_config.md)|
+| [](grid/api/treegrid_mode/grid_rootparent_config.md)| @getshort(grid/api/treegrid_mode/grid_rootparent_config.md)|

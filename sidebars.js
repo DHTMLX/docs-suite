@@ -2632,6 +2632,7 @@ module.exports = {
                     "grid/api/grid_spans_config",
                     "grid/api/grid_tooltip_config",                    
                     "grid/api/grid_topsplit_config",
+                    "grid/api/grid_type_config",
                     "grid/api/grid_width_config",
                   ],
                 },
@@ -2711,6 +2712,65 @@ module.exports = {
                     "grid/api/export/grid_xlsx_method"
                   ],
                 },
+                {
+                  type: "category",
+                  label: "TreeGrid mode API",
+                  link: {
+                    type: 'generated-index',
+                    title: "TreeGrid mode API",
+                    keywords: ['treegrid mode api'],
+                    image: '/img/docusaurus.png'
+                  },
+                  items: [
+                  {
+                    type: "category",
+                    label: "Grid TreeGrid mode methods",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid TreeGrid mode methods",
+                      keywords: ['grid treegrid mode methods'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/treegrid_mode/grid_collapse_method",
+                      "grid/api/treegrid_mode/grid_collapseall_method",
+                      "grid/api/treegrid_mode/grid_expand_method",
+                      "grid/api/treegrid_mode/grid_expandall_method",
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Grid TreeGrid mode events",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid TreeGrid mode events",
+                      keywords: ['grid treegrid mode events'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/treegrid_mode/grid_aftercollapse_event",
+                      "grid/api/treegrid_mode/grid_afterexpand_event",
+                      "grid/api/treegrid_mode/grid_beforecollapse_event",
+                      "grid/api/treegrid_mode/grid_beforeexpand_event",
+                      "grid/api/treegrid_mode/grid_expand_event",
+                    ],
+                  },
+                  {
+                    type: "category",
+                    label: "Grid TreeGrid mode properties",
+                    link: {
+                      type: 'generated-index',
+                      title: "Grid TreeGrid mode properties",
+                      keywords: ['grid treegrid mode properties'],
+                      image: '/img/docusaurus.png'
+                    },
+                    items: [
+                      "grid/api/treegrid_mode/grid_collapsed_config",
+                      "grid/api/treegrid_mode/grid_dragexpand_config",
+                      "grid/api/treegrid_mode/grid_rootparent_config",
+                    ],
+                  },
+                ]},
               ],
             },
             "grid/features",
@@ -2718,6 +2778,7 @@ module.exports = {
             "grid/configuration",
             "grid/data_loading",
             "grid/usage",
+            "grid/treegrid_mode",
             "grid/usage_selection",
             "grid/customization",
             "grid/events",
