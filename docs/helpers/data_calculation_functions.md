@@ -6,10 +6,10 @@ The DHTMLX library provides a helper that allows specifying and redefining the f
 The following functors are available:
 
 - `avg` - calculates the average data value
-- `count` - calculates the common count, doesn't take empty data into account
+- `count` - calculates the total number of items, doesn't take empty data values into account
 - `max` - calculates the maximal value in the data
 - `min` - calculates the minimal value in the data
-- `sum` - calculates the sum of data
+- `sum` - calculates the sum of data values
 
 For example, this is how the `sum` functor is called:
 
@@ -20,9 +20,9 @@ const sum = dhx.methods.sum(rows, "value"); // 60
 
 ### Defining a custom functor
 
-You can specify a custom function for calculating data. For example, you can use the `methods` helper function for adding custom calculations to [get a summary of counted values](grid/configuration.md#getting-summary-list-of-counted-values). Thus, you can provide a functor that will calculate a doubled sum of values for a particular column:
+You can specify a custom function for calculating data. For example, you can use the `methods` helper function for adding custom calculations to [get a summary of counted values](grid/configuration.md#getting-the-summary-object). Thus, you can provide a functor that will calculate a doubled sum of values for a particular column:
 
-~~~jsx
+~~~jsx {1-3,11,17-18}
 dhx.methods.doubleSum = (rows, field) => {
     return rows.reduce((sum, row) => sum + row[field] * 2, 0);
 };

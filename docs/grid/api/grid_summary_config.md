@@ -8,6 +8,8 @@ description: You can explore the spans config of Grid in the documentation of th
 
 @short: Optional. Creates the list of counted values based on the column's data 
 
+## Usage
+
 ~~~jsx
 type TSummaryMethod = (row: IRow[]) => string | number;
 
@@ -16,6 +18,14 @@ interface ISummary {
 }
 summary?: ISummary;
 ~~~
+
+## Parameters
+
+The `summary` configuration option of Grid is an object with counted values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
+
+- a tuple `[string, string]` that specifies the column id and the name of the applied functor
+
+- a `(row: IRow[]) => string | number;` function for calculating the summary of the column
 
 @example:
 
@@ -34,14 +44,14 @@ const grid = new dhx.Grid("grid_container", {
             id: "population", 
             header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }],
             footer: [{ text: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${count}` }],
-            // when initialized as a string, the resulting value is used 
-            // with applied patternMask/numberMask, if there are any (excluding "count")
+            // initializing column summary as a string
             summary: "count" 
         },
         {
             width: 150,
             id: "area",
             header: [{ text: ({ customSum }) => `Area: ${customSum}` }],
+            // initializing column summary as an object
             summary: {
                 customSum: rows => {		
                     return dhx.methods.sum(rows, "population") + dhx.methods.sum(rows, "area");		
@@ -55,6 +65,7 @@ const grid = new dhx.Grid("grid_container", {
             footer: [{ text: ({ density }) => `Density: ${density}` }],
         }
     ],
+    // initializing grid summary
     summary: {
         totalPopulation: ["population", "sum"],
         totalArea: ["area", "sum"],
@@ -68,6 +79,10 @@ const summary = grid.getSummary();
 console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
 
 @descr:
+
+**Related article:** [Summary of counted values](grid/configuration.md#summary-of-counted-values)
+
+**Related**: [getSummary](grid/api/grid_getsummary_method.md)
 
 @changelog:
 - Added in v9.0

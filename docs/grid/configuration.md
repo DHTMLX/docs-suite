@@ -356,7 +356,8 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Resizable columns](https://snippet.dhtmlx.com/aeqzuks0)
 
-:::note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
+:::note 
+To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
 :::
 
 ### HTML content of Grid columns
@@ -959,57 +960,31 @@ But if you need the editor to open after a single click, apply the [](grid/api/g
 
 {{note Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.}}
 
-## Getting summary list of counted values
+## Summary of counted values
 
 You can get the summary of counted values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column: 
 
 ### Creating a summary object
 
-- To form a summary list on the grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. 
+To form a summary list on the grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with counted values set as *key:value* pairs, where the keys are the field names and values can be:
 
-~~~jsx
-type TSummaryMethod = (row: IRow[]) => string | number;
+- a tuple `[string, string]` that specifies the column id and the name of the applied functor
 
-interface ISummary {
-    [key: string]: [string, string] | TSummaryMethod;
-}
+- a `(row: IRow[]) => string | number;` function for calculating the summary of the column
 
-summary?: ISummary;
-~~~
+To form a summary list that will be available on the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains counted values set as *key:value* pairs, where the keys are the field names and values can be:
 
-The `summary` configuration option of Grid is an object that may contain:
+- a tuple `[string, string]` that specifies the column id and the name of the applied functor
 
-a) a `key:value` pair, where the *key* is either the key from the list or the name of the functor and the *value* is an array with the column id and the name of the applied functor
+- a `(row: IRow[]) => string | number;` function for calculating the summary of the column
 
-b) a custom function for calculating the summary of the column
-
-- To form a summary list that will be available on the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column.
-
-~~~jsx
-type TSummaryMethod = (row: IRow[]) => string | number;
-
-interface ISummary {
-    [key: string]: string | [string, string] | TSummaryMethod;
-}
-
-summary?: ISummary | string;
-~~~
-
-The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. 
-
-As an object it may contain:
-
-a) a `key:value` pair, where the *key* is either the key from the list or the name of the functor and the *value* is an array with the column id and the name of the applied functor
-
-b) a custom function for calculating the summary for the column
-
-:::note
-When initialized as a string, the resulting value (excluding "count") is used with applied **patternMask**/**numberMask**, if there are any.
+:::info
+When the column `summary` property is initialized as a string, the resulting value (excluding "count") is used with applied **patternMask**/**numberMask**, if there are any.
 :::
 
-Here's an example of using both `summary` configuration options - for the component and for the column:
+Here's an example of using both `summary` configuration options - for Grid and for a column:
 
-~~~jsx
+~~~jsx {16-17,23-28,37-42}
 // defining the method for calculating the density of population
 dhx.methods.populationDensity = (rows) => {
     const totalPopulation = rows.reduce((sum, row) => sum + row.population, 0);
@@ -1063,7 +1038,7 @@ In the above example the [`dhx.methods`](helpers/data_calculation_functions.md) 
 
 ### Getting the summary object
 
-To get the object with the counted values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters the method returns an object with the counted values defined in the configuration of the component:
+To get the object with the counted values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters, the method returns an object with the counted values defined in the configuration of the component:
 
 ~~~jsx
 // an example of getting the values of population density
@@ -1073,7 +1048,7 @@ console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 
 
 You can also pass the `id` of a column to the method to get an object with the counted values defined in the column's configuration together with the counted values defined in the component's configuration. In the following example counted values are used for rendering summary for a column:
 
-~~~jsx
+~~~jsx {17-19,21-23}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "population", header: [{ text: "Population" }] },
@@ -1103,7 +1078,7 @@ console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the val
 
 You can specify the text of the header/footer column via the `text` property. It can be set either as a string or a callback function which is called with the following parameter: 
 
-- `content` - an object with the content of the header/footer tooltip that contains the counted values as **[key: string]**, where the key is either the key defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+- `content` - an object with the content of the header/footer tooltip that contains the counted values as `[key: string]`, where the key is either the key defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -1126,8 +1101,6 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset
 });
 ~~~
-
-You can [apply styling to the text of header cells](../customization#styling-header-cells) or to the [text of footer cells](../customization#styling-footer-cells) via the `text` property of the column's footer.
 
 ## Header/footer filters
 
@@ -1726,41 +1699,70 @@ A range of Grid cells/rows can be selected by clicking the first element to sele
 ## Spans
 
 The Grid component has the [spans](grid/api/grid_spans_config.md) property that allows you to specify all necessary columns and rows spans right through the initial configuration. It represents an array with spans objects.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [ 
+        // columns config
+    ],
+    spans: [
+        {row:"0", column:"a", rowspan:5 },
+        {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
+        {row:"0", column:"c", colspan:2, text:"Some content"},
+        {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+    ],
+    data: dataset
+});
+~~~
+
 Each span object contains the following properties:
 
-<table>
-    <tbody>
-        <tr>
-            <td><b>row</b></td>
-            <td>(<i>string|number</i>) obligatory, the id of a row</td>
-        </tr>
-        <tr>
-            <td><b>column</b></td>
-            <td>(<i>string|number</i>) obligatory, the id of a column</td>
-        </tr>
-        <tr>
-            <td><b>rowspan</b></td>
-            <td>(<i>number</i>) optional, the number of rows in a span</td>
-        </tr>
-        <tr>
-            <td><b>colspan</b></td>
-            <td>(<i>number</i>) optional, the number of columns in a span</td>
-        </tr>
-        <tr>
-            <td><b>text</b></td>
-            <td>(<i>string|number</i>) optional, the content of a span</td>
-        </tr>
-        <tr>
-            <td><b>css</b></td>
-            <td>(<i>string</i>) optional, the name of a CSS class applied to a span</td>
-        </tr>
-        <tr>
-            <td><a href="#tooltip"><b>tooltip</b></a></td>
-            <td>(<i>boolean</i>) enables a tooltip on hovering over the content of a span, <i>true</i> by default</td>
-        </tr>
-    </tbody>
-</table>
-<br/>
+- `row` - (*string | number*) obligatory, the id of a row
+- `column` - (*string|number*) obligatory, the id of a column
+- `rowspan` - (*number*) optional, the number of rows in a span
+- `colspan` - (*number*) optional, the number of columns in a span
+- `text` - (*string|number*) optional, the content of a span. You can specify the text of the column span via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
+    - `content` - an object with the content of the span tooltip that contains the counted values as `[key: string]`, where the key is either the *key* defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+:::note
+In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
+:::
+
+:::info important
+If the value of a spanned cell is initialized with the `text` property set as a *callback function*, the cell content can't be edited.
+:::
+
+~~~jsx {17}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "rowid",
+            column: "population",
+            rowspan: 9,
+            text: ({ count }) => ("Count population:" + count)
+        },
+    ],
+    data: dataset
+});
+~~~
+
+- `css` - (*string*) optional, the name of a CSS class applied to a span
+- [`tooltip`](#column-and-spans-tooltips) - (*boolean|object*) optional, enables a tooltip on hovering over the content of a span, or sets the configuration object with the tooltip settings; *true* by default. When set as an object, the `tooltip` config can have the following properties:
+    - `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
+    - `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
+    - `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
+    - `margin` - (optional) the margin between the node and tooltip
+    - `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default
+    - `css` - (optional) the style of a tooltip box
 
 ~~~js
 const grid = new dhx.Grid("grid_container", {
@@ -1772,6 +1774,37 @@ const grid = new dhx.Grid("grid_container", {
         {row:"0", column:"b", rowspan:9, text:"<h2>Some content here</h2>"},
         {row:"0", column:"c", colspan:2, text:"Some content"},
         {row:"10", column:"a", colspan:4, text:"Some header", css:"myCustomColspan"}
+    ],
+    data: dataset
+});
+~~~
+
+- [`tooltipTemplate`](#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
+    - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - the value rendered in a cell, including the applied templates
+        - `[key: string]` - the counted values of the **summary** property, where the *key* is either the key defined in the list or the functor name
+    - `span` - the object of the column span
+
+~~~jsx {17-18}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "rowid",
+            column: "population",
+            rowspan: 9,
+            text: "Some text",
+            toltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+        },
     ],
     data: dataset
 });
@@ -1807,7 +1840,7 @@ The `tooltip` configuration option can be set as an object with the following pr
 - `force` - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
 - `showDelay` - (optional) the time period that should pass before showing a tooltip, in ms
 - `hideDelay` - (optional) the time period that should pass before hiding a tooltip, in ms
-- `margin` - (optional) the margin between the node and tooltip; *8px* by default
+- `margin` - (optional) the margin between the node and tooltip
 - `position` - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default 
 - `css` - (optional) the style of a tooltip box
 
@@ -1841,7 +1874,7 @@ const grid = new dhx.Grid("grid_container", {
 
 The `headerTooltip` and `footerTooltip` configs can be specified as objects the same as the main [`tooltip`](grid/configuration.md#grid-tooltips) config.
 
-### Column and span tooltips
+### Column and spans tooltips
 
 There is a possibility to enable/disable tooltips for separate columns or spans by using the `tooltip` option in the configuration object of the [columns](grid/configuration.md#columns) or [spans](grid/configuration.md#spans) accordingly:
 
@@ -1882,6 +1915,68 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+#### Adding templates for column and spans tooltip
+
+You can add a template for a column or spans tooltip. 
+
+- to set a template for a column tooltip use a function which takes 3 parameters:
+    - `value` -  (required) the value of a cell
+    - `row` -  (required) an object with all cells in a row
+    - `column` -  (required) an object with the configuration of a column 
+
+Returning *false* from the function will block showing of the tooltip.
+
+~~~jsx {6-8}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            width: 200, id: "country", header: [{ text: "Country" }], align: "left",
+            htmlEnable: true, 
+            tooltipTemplate: function (value, row, column) { 
+                // the template logic
+            } 
+        },
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+        // more options
+    ],
+    data: dataset
+});
+~~~
+
+You can [check an example of applying a template for a column tooltip](grid/customization.md#adding-template-to-tooltip).
+
+- to set a template for a spans tooltip use the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
+    - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - the value rendered in a cell, including the applied templates
+        - `[key: string]` - the counted values of the `summary` property, where the *key* is either the key defined in the list or the functor name
+    - `span` - the object of the column span
+
+~~~jsx {18}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "rowid",
+            column: "population",
+            rowspan: 9,
+            text: "Some text",
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+        },
+    ],
+    data: dataset
+});
+~~~
+
 #### Column header/footer tooltip
 
 The tooltip set for a column enables/disables all its tooltips. However, you can control the tooltips of the column header/footer separately, by specifying the `tooltip` property in the corresponding header/footer object inside the column:
@@ -1904,7 +1999,7 @@ function which is called with the following parameters:
 
 - `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
     - `value` - the value rendered in a cell, including the applied templates
-    - `[key: string]` - the counted values of the `summary` property, where the key is either the key defined in the list or the functor name
+    - `[key: string]` - the counted values of the `summary` property, where the *key* is either the key defined in the list or the functor name
 - `header/footer` - the object of the column header/footer
 - `column` - the object of a column
 

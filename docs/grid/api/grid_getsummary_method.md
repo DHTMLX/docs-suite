@@ -8,6 +8,8 @@ description: You can explore the getSummary method of Grid in the documentation 
 
 @short: returns an object with the specified counted values
 
+#### Usage
+
 ~~~jsx
 interface ISummaryList {
     [key: string]: string | number | null;
@@ -17,6 +19,7 @@ getSummary(colId?: string | number): ISummaryList;
 ~~~
 
 @params:
+
 - `colId?: string | number` - optional, the id of a column
 
 @returns:
@@ -47,6 +50,16 @@ console.log(totalSummary); //{ totalPopulation: 1000000 } - the sum of all the v
 const columnSummary = grid.getSummary("age");
 console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
 
+
 @descr:
+
 - When called without parameters, the method returns an object with the counted values defined in the configuration of the component. 
 - When the `id` parameter is passed to the method, it returns an object with the counted values defined in the column's configuration together with the counted values defined in the component's configuration.
+
+**Related article:** [Getting the summary object](grid/configuration.md#getting-the-summary-object)
+
+**Related**: [summary](grid/api/grid_summary_config.md)
+
+@changelog:
+- Added in v9.0
+
