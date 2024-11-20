@@ -35,7 +35,12 @@ Each object in the spans array contains the following properties:
 - `rowspan` - (*number*) optional, the number of rows in a span
 - `colspan` - (*number*) optional, the number of columns in a span
 - `text` - (*string|number*) optional, the content of a span. You can specify the text of the column span via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
-    - `content` - an object with the content of the span tooltip that contains the counted values as `[key: string]`, where the key is either the *key* defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+    - `content` - an object with the content of the span tooltip that contains the calculated values of the `summary` property, set as *key:value* pairs where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+
+The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
 :::
@@ -79,7 +84,9 @@ const grid = new dhx.Grid("grid_container", {
 - [`tooltipTemplate`](grid/configuration.md#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
-        - `[key: string]` - the calculated values of the **summary** property, where the *key* is either the key defined in the list or the functor name
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
     - `span` - the object of the column span
 
 ~~~jsx {17-18}

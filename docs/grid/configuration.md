@@ -1082,15 +1082,19 @@ console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the val
 
 ## Header/footer text
 
-You can specify the text of the header/footer column via the `text` property. It can be set either as a string or a callback function which is called with the following parameter: 
+You can specify the text of the header/footer column via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
 
-- `content` - an object with the content of the header/footer tooltip that contains the calculated values as `[key: string]`, where the key is either the key defined in the list or the functor name. The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+- `content` - an object with the content of the header/footer tooltip that contains the calculated values as that contains the calculated values as *key:value* pairs, where:
+    - the *key* is either the key defined in the list or the functor name
+    - the *value* can be a *string*, *number* or *null*
+
+The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
 :::
 
-In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes calculated values both from the column `summary` config (*count*) and the grid's config (*totalPopulation*):
+In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes calculated values both from the column `summary` config (*count*) and the Grid `summary` config (*totalPopulation*):
 
 ~~~jsx {6,7}
 const grid = new dhx.Grid("grid_container", {
@@ -1728,7 +1732,12 @@ Each span object contains the following properties:
 - `rowspan` - (*number*) optional, the number of rows in a span
 - `colspan` - (*number*) optional, the number of columns in a span
 - `text` - (*string|number*) optional, the content of a span. You can specify the text of the column span via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
-    - `content` - an object with the content of the span tooltip that contains the calculated values as `[key: string]`, where the key is either the *key* defined in the list or the functor name. The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+    - `content` - an object with the content of the span tooltip that contains the calculated values of the `summary` property, set as *key:value* pairs where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+
+The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
 :::
@@ -1788,7 +1797,9 @@ const grid = new dhx.Grid("grid_container", {
 - [`tooltipTemplate`](#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
-        - `[key: string]` - the calculated values of the **summary** property, where the *key* is either the key defined in the list or the functor name
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
     - `span` - the object of the column span
 
 ~~~jsx {17-18}
@@ -1955,7 +1966,9 @@ You can [check an example of applying a template for a column tooltip](grid/cust
 - to set a template for a spans tooltip use the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
-        - `[key: string]` - the calculated values of the `summary` property, where the *key* is either the key defined in the list or the functor name
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
     - `span` - the object of the column span
 
 ~~~jsx {18}
@@ -2004,10 +2017,12 @@ What is more, you can specify a necessary template for the header/footer tooltip
 function which is called with the following parameters:
 
 - `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
-    - `value` - the value rendered in a cell, including the applied templates
-    - `[key: string]` - the calculated values of the `summary` property, where the *key* is either the key defined in the list or the functor name
-- `header/footer` - the object of the column header/footer
-- `column` - the object of a column
+    - `value` - (*string*) the value rendered in a cell, including the applied templates
+    - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+- `header/footer` - (*object*) the object of the column header/footer
+- `column` - (*object*) the object of a column
 
 and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip
 
