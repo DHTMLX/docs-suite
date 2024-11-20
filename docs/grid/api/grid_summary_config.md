@@ -6,12 +6,12 @@ description: You can explore the spans config of Grid in the documentation of th
 
 # summary
 
-@short: Optional. Creates the list of counted values based on the column's data 
+@short: Optional. Creates the list of calculated values based on the column's data 
 
 ## Usage
 
 ~~~jsx
-type TSummaryMethod = (row: IRow[]) => string | number;
+type TSummaryMethod = (rows: IRow[]) => string | number;
 
 interface ISummary {
     [key: string]: [string, string] | TSummaryMethod;
@@ -21,11 +21,13 @@ summary?: ISummary;
 
 ## Parameters
 
-The `summary` configuration option of Grid is an object with counted values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
+The `summary` configuration option of Grid is an object with calculated values, where the *keys* are the field names and the *values* can be:
+
+- a string with the name of the applied functor
 
 - a tuple `[string, string]` that specifies the column id and the name of the applied functor
 
-- a `(row: IRow[]) => string | number;` function for calculating the summary of the column
+- a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
 
 @example:
 
@@ -80,7 +82,7 @@ console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 
 
 @descr:
 
-**Related article:** [Summary of counted values](grid/configuration.md#summary-of-counted-values)
+**Related article:** [Summary of calculated values](grid/configuration.md#summary-of-calculated-values)
 
 **Related**: [getSummary](grid/api/grid_getsummary_method.md)
 

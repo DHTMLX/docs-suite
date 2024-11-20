@@ -960,27 +960,33 @@ But if you need the editor to open after a single click, apply the [](grid/api/g
 
 {{note Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.}}
 
-## Summary of counted values
+## Summary of calculated values
 
-You can get the summary of counted values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column: 
+You can get the summary of calculated values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column: 
 
 ### Creating a summary object
 
-To form a summary list on the grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with counted values set as *key:value* pairs, where the keys are the field names and values can be:
+To form a summary list on the Grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with calculated values, where the *keys* are the field names and the *values* can be:
 
-- a tuple `[string, string]` that specifies the column id and the name of the applied functor
+- a string with the name of the applied functor
 
-- a `(row: IRow[]) => string | number;` function for calculating the summary of the column
+- a tuple `[string, string]` that specifies the field name and the name of the applied functor
 
-To form a summary list that will be available on the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains counted values set as *key:value* pairs, where the keys are the field names and values can be:
+- a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
 
-- a tuple `[string, string]` that specifies the column id and the name of the applied functor
+To form a summary list that will be available on the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
 
-- a `(row: IRow[]) => string | number;` function for calculating the summary of the column
+- a string with the name of the applied functor
+
+- a tuple `[string, string]` that specifies the field name and the name of the applied functor
+
+- a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
 
 :::info
 When the column `summary` property is initialized as a string, the resulting value (excluding "count") is used with applied **patternMask**/**numberMask**, if there are any.
 :::
+
+You can use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to redefine the default functors or to create a custom function for data calculation.
 
 Here's an example of using both `summary` configuration options - for Grid and for a column:
 
@@ -1038,7 +1044,7 @@ In the above example the [`dhx.methods`](helpers/data_calculation_functions.md) 
 
 ### Getting the summary object
 
-To get the object with the counted values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters, the method returns an object with the counted values defined in the configuration of the component:
+To get the object with the calculated values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters, the method returns an object with the calculated values defined in the configuration of the component:
 
 ~~~jsx
 // an example of getting the values of population density
@@ -1046,7 +1052,7 @@ const summary = grid.getSummary();
 console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
 ~~~
 
-You can also pass the `id` of a column to the method to get an object with the counted values defined in the column's configuration together with the counted values defined in the component's configuration. In the following example counted values are used for rendering summary for a column:
+You can also pass the `id` of a column to the method to get an object with the calculated values defined in the column's configuration together with the calculated values defined in the component's configuration. In the following example calculated values are used for rendering summary for a column:
 
 ~~~jsx {17-19,21-23}
 const grid = new dhx.Grid("grid_container", {
@@ -1078,13 +1084,13 @@ console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the val
 
 You can specify the text of the header/footer column via the `text` property. It can be set either as a string or a callback function which is called with the following parameter: 
 
-- `content` - an object with the content of the header/footer tooltip that contains the counted values as `[key: string]`, where the key is either the key defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+- `content` - an object with the content of the header/footer tooltip that contains the calculated values as `[key: string]`, where the key is either the key defined in the list or the functor name. The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
 :::
 
-In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes counted values both from the column `summary` config (*count*) and the grid's config (*totalPopulation*):
+In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes calculated values both from the column `summary` config (*count*) and the grid's config (*totalPopulation*):
 
 ~~~jsx {6,7}
 const grid = new dhx.Grid("grid_container", {
@@ -1722,7 +1728,7 @@ Each span object contains the following properties:
 - `rowspan` - (*number*) optional, the number of rows in a span
 - `colspan` - (*number*) optional, the number of columns in a span
 - `text` - (*string|number*) optional, the content of a span. You can specify the text of the column span via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
-    - `content` - an object with the content of the span tooltip that contains the counted values as `[key: string]`, where the key is either the *key* defined in the list or the functor name. The counted values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
+    - `content` - an object with the content of the span tooltip that contains the calculated values as `[key: string]`, where the key is either the *key* defined in the list or the functor name. The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
 :::
@@ -1782,7 +1788,7 @@ const grid = new dhx.Grid("grid_container", {
 - [`tooltipTemplate`](#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
-        - `[key: string]` - the counted values of the **summary** property, where the *key* is either the key defined in the list or the functor name
+        - `[key: string]` - the calculated values of the **summary** property, where the *key* is either the key defined in the list or the functor name
     - `span` - the object of the column span
 
 ~~~jsx {17-18}
@@ -1949,7 +1955,7 @@ You can [check an example of applying a template for a column tooltip](grid/cust
 - to set a template for a spans tooltip use the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
-        - `[key: string]` - the counted values of the `summary` property, where the *key* is either the key defined in the list or the functor name
+        - `[key: string]` - the calculated values of the `summary` property, where the *key* is either the key defined in the list or the functor name
     - `span` - the object of the column span
 
 ~~~jsx {18}
@@ -1999,7 +2005,7 @@ function which is called with the following parameters:
 
 - `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
     - `value` - the value rendered in a cell, including the applied templates
-    - `[key: string]` - the counted values of the `summary` property, where the *key* is either the key defined in the list or the functor name
+    - `[key: string]` - the calculated values of the `summary` property, where the *key* is either the key defined in the list or the functor name
 - `header/footer` - the object of the column header/footer
 - `column` - the object of a column
 

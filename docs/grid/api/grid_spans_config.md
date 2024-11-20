@@ -79,7 +79,7 @@ const grid = new dhx.Grid("grid_container", {
 - [`tooltipTemplate`](grid/configuration.md#adding-templates-for-column-and-spans-tooltip) - (*function*) sets a template for the span tooltip. The value of the `tooltipTemplate` property is a callback function which is called with the following parameters:
     - `content` - an object with the content of the span tooltip. Contains two properties which are available either from the component's or from the column's configuration:
         - `value` - the value rendered in a cell, including the applied templates
-        - `[key: string]` - the counted values of the **summary** property, where the *key* is either the key defined in the list or the functor name
+        - `[key: string]` - the calculated values of the **summary** property, where the *key* is either the key defined in the list or the functor name
     - `span` - the object of the column span
 
 ~~~jsx {17-18}
