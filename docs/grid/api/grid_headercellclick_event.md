@@ -8,16 +8,17 @@ description: You can explore the headerCellClick event of Grid in the documentat
 
 @short: fires on click on a grid header cell
 
-@signature: {'headerCellClick: (column: object, event: MouseEvent) => void;'}
+@signature: {'[GridEvents.headerCellClick]: (cell: IHeader, column: ICol, event: MouseEvent) => void;'}
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `column: object` - an object with a column configuration
+- `cell: IHeader` - an object with a header cell configuration
+- `column: ICol` - an object with a column configuration
 - `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("headerCellClick", (column, event) => {
+grid.events.on("headerCellClick", (cell, column, event) => {
     // your logic here
 });
 

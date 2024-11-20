@@ -6,18 +6,19 @@ description: You can explore the headerCellDblClick event of Grid in the documen
 
 # headerCellDblClick
 
-@short: fires on double-click on a grid footer cell
+@short: fires on double-click on a grid header cell
 
-@signature: {'headerCellDblClick: (column: object, event: MouseEvent) => void;'}
+@signature: {'[GridEvents.headerCellDblClick]: (cell: IHeader, column: ICol, event: MouseEvent) => void;'}
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `column: object` - an object with a column configuration
+- `cell: IHeader` - an object with a header cell configuration
+- `column: ICol` - an object with a column configuration
 - `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("headerCellDblClick", (column, event) => {
+grid.events.on("headerCellDblClick", (cell, column, event) => {
     // your logic here
 });
 
