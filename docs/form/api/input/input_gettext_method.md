@@ -18,7 +18,9 @@ const value = form.getItem("input").getText();
 // -> "100000.01"
 
 @descr:
-The method is used with the `numberMask` and `patternMask` properties of the Input control. It allows getting the value with the applied mask. 
+The method is used with the [`numberMask`](form/work_with_form.md#numbermask) and [`patternMask`](form/work_with_form.md#patternmask) properties of the Input control. It allows getting the value with the applied mask. 
 
 @changelog:
 Added in v9.0
+
+**Related:** [Getting the text value of an input](form/work_with_form.md#getting-the-text-value-of-an-input)

@@ -167,7 +167,7 @@ The default config for `inputType: "text"` (the default input type) is the follo
 }
 ~~~
 
-When the `inputType:"text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the `getValue()` method is *"1000000"*.
+When the `inputType:"text"` is specified for an input, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](form/api/input/input_getvalue_method.md) method is *"1000000"*.
 
 - as a *boolean* value the `numberMask` property converts the number value displayed in the input field into one of the predefined templates (depending on the specified `inputType`)
 
@@ -180,15 +180,17 @@ When the `inputType:"text"` is specified for an input, the resulting number is c
 
 For the above example, the value *100000.01* is converted into *100,000.01* by the predefined template of the default `inputType:"text"`, since the input type is not set.
 
-**Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/l5i6lwe5)
+**Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/51wnauq3)
 
 ### patternMask
 
-The `patternMask` property sets an input mask for entering number and string values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls according to a special pattern. It can be set in two ways: 
+The `patternMask` property sets an input mask for entering number and string values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls according to a special pattern. It can be set in two ways - as an object or as a string: 
 
-- as an *object* with the following properties:
-    - ***pattern*** - allows specifying the necessary mask and change it dynamically, depending on the entered values
-    - ***charFormat*** - (optional) allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below:
+- as an *object* the `patternMask` property has the following properties:
+    - **pattern** - (*function* | *string*) allows specifying the necessary mask and change it dynamically, depending on the entered values. Can be set as:
+        - a *function* that takes as a parameter an entered value specified as a string or as a number and returns a string with a pattern mask
+        - a *string* with a pattern mask
+    - **charFormat** - (*object*) optional, allows specifying a regular expression for an optional symbol. It is set as an object with *key:value* pairs, where the *key* is a symbol and the *value* is a regular expression. This property has a predetermined configuration provided below:
 
 ~~~jsx
 {
@@ -244,11 +246,11 @@ An example of an SSN number according to the pattern mask is *123-41-1234*.
 
 #### Selecting the suitable data format
 
-Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to set a pattern mask for data format suitable for your needs:
+Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to provide a suitable data format:
 
 - phone number 
 
-The phone number format includes a set of numbers, symbols and spaces:
+The phone number format includes a set of numbers, symbols and spaces. You can specify this data format as a string value of the `patternMask` property:
 
 ~~~jsx
 {
@@ -261,7 +263,7 @@ Example: *+9 (123) 123-1234*
 
 - license plate
 
-The format of license plate usually contains a combination of letters, numbers and symbols:
+The format of license plate usually contains a combination of letters, numbers and symbols. You can specify this data format as a string value of the `patternMask` property:
 
 ~~~jsx
 {
@@ -274,7 +276,7 @@ Example: *9-AAA-999*
 
 - date and time
 
-For a date and time input you can specify a mask pattern as an object of the following type:
+For a date and time input you can specify the `patternMask` property as an object of the following type:
 
 ~~~jsx
 patternMask: {
@@ -288,12 +290,12 @@ patternMask: {
 
 In the above example:
 
-- `pattern` sets a common mask pattern for date and time
-- `charFormat` specifies regular expressions for setting hours and minutes:
-    -  `"H": /[0-2]/` - a number from 0 to 2 for the first number when setting an hour as `H0`
-    -  `"M": /[0-5]/` - a number from 0 to 5 for the first number when setting minutes as `M0`
+- the `pattern` property sets a common mask pattern for date and time
+- the `charFormat` property specifies regular expressions for setting hours and minutes:
+    -  `"H": /[0-2]/` - a number from 0 to 2 for setting an hour as `H0`
+    -  `"M": /[0-5]/` - a number from 0 to 5 for setting minutes as `M0`
 
-The example of a rendered date and time is *01/01/2001 12:59*.
+The example of rendered date and time is *01/01/2001 12:59*.
 
 ### Getting the text value of an input 
 

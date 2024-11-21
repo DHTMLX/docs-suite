@@ -27,5 +27,6 @@ grid.events.on("afterEditEnd", (value, row, column) => {
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
 @changelog: 
-- Added in v6.1
 - The value of a cell can have the Date type since v9.0
+- Added in v6.1
+

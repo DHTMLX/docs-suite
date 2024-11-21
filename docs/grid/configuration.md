@@ -193,7 +193,7 @@ You can display the values of the cells of a Grid column in the desired format w
 
 The `numberMask` property sets an input mask for entering number values. This property is applied both to the displayed data and to the data which is being edited. 
 
-:::note
+:::info
 If the type of a column hasn't been set and the `numberMask` property is specified, the column type will be set as `type:number`.
 :::
 
@@ -211,12 +211,11 @@ The `numberMask` property can be specified in two ways:
 
 For example, the `numberMask` config can be set as the following object:
 
-~~~jsx {6-13}
+~~~jsx {5-12}
 {
     width: 130,
     id: "cost",
     header: [{ text: "Cost" }, { content: "inputFilter" }],
-    footer: [{ content: "sum" }],
     numberMask: {
         prefix: "$",
         groupSeparator: ",",
@@ -232,7 +231,7 @@ The value *100000.01* is converted into *$100,000.01* by the pattern given above
 
 #### Default `numberMask` configs depending on the column type
 
-When the `"number"` type is specified for a column, the resulting number is converted into the *number* type. The default config for this column type is the following:
+When the `type:"number"` is specified for a column, the resulting number is converted into the *number* type. The default config for this column type is the following:
 
 ~~~jsx
 {
@@ -245,7 +244,7 @@ When the `"number"` type is specified for a column, the resulting number is conv
 }
 ~~~
 
-The default config for the `"string"` (default) column type is the following: 
+The default config for the `type:"string"` is the following: 
 
 ~~~jsx
 {
@@ -255,7 +254,7 @@ The default config for the `"string"` (default) column type is the following:
 }
 ~~~
 
-When the `"string"` (default) type is specified for a column, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](form/api/form_getvalue_method.md) method is *"1000000"*.
+When the `type:"string"` type is specified for a column, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](form/api/form_getvalue_method.md) method is *"1000000"*.
 
 - as a *boolean* value the `numberMask` property converts the number value displayed in the column into one of the predefined templates (depending on the specified column type):
 
@@ -264,12 +263,11 @@ When the `"string"` (default) type is specified for a column, the resulting numb
     width: 130,
     id: "cost",
     header: [{ text: "Cost" }, { content: "inputFilter" }],
-    footer: [{ content: "sum" }],
     numberMask: true 
 }
 ~~~
 
-For the above example, the value *100000.01* is converted into *100,000.01* by the predefined template of the column `type:"number"`, since the column type is not set.
+For the above example, the value *100000.01* is converted into *100,000.01* by the predefined template of the column `type:"number"`, since the `numberMask:true` property is specified.
 
 **Related sample**: [Grid. Pattern/Number mask](https://snippet.dhtmlx.com/45gjhciv)
 
@@ -278,8 +276,10 @@ For the above example, the value *100000.01* is converted into *100,000.01* by t
 The `patternMask` property sets an input mask for entering number and string values. Allows setting a necessary pattern for entering data. It can be set in two ways: 
 
 - as an *object* with the following properties:
-    - ***pattern*** - allows specifying the necessary mask and change it dynamically, depending on the entered values
-    - ***charFormat*** - (optional) allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below:
+    - ***pattern*** - (*function* | *string*) allows specifying the necessary mask and change it dynamically, depending on the entered values. Can be set as:
+        - a *function* that takes as a parameter an entered value specified as a string or as a number and returns a string with a pattern mask
+        - a *string* with a pattern mask
+    - ***charFormat*** - (*object*) optional, allows specifying a regular expression for an optional symbol. It is set as an object with *key:value* pairs, where the *key* is a symbol and the *value* is a regular expression. This property has a predetermined configuration provided below:
 
 ~~~jsx
 {
@@ -337,11 +337,11 @@ An example of an ID according to the pattern mask is *ID.001*.
 
 #### Selecting the suitable data format
 
-Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to set a pattern mask for data format suitable for your needs:
+Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to provide a suitable data format:
 
 - phone number 
 
-The phone number format includes a set of numbers, symbols and spaces:
+The phone number format includes a set of numbers, symbols and spaces. You can specify this data format as a string value of the `patternMask` property:
 
 ~~~jsx
 {
@@ -354,7 +354,7 @@ Example: *+9 (123) 123-1234*
 
 - license plate
 
-The format of license plate usually contains a combination of letters, numbers and symbols:
+The format of license plate usually contains a combination of letters, numbers and symbols. You can specify this data format as a string value of the `patternMask` property:
 
 ~~~jsx
 {
@@ -367,7 +367,7 @@ Example: *9-AAA-999*
 
 - date and time
 
-For a date and time input you can specify a mask pattern as an object of the following type:
+For a date and time input you can specify the `patternMask` property as an object of the following type:
 
 ~~~jsx
 patternMask: {
@@ -381,12 +381,12 @@ patternMask: {
 
 In the above example:
 
-- `pattern` sets a common mask pattern for date and time
-- `charFormat` specifies regular expressions for setting hours and minutes:
-    -  `"H": /[0-2]/` - a number from 0 to 2 for the first number when setting an hour as `H0`
-    -  `"M": /[0-5]/` - a number from 0 to 5 for the first number when setting minutes as `M0`
+- the `pattern` property sets a common mask pattern for date and time
+- the `charFormat` property specifies regular expressions for setting hours and minutes:
+    -  `"H": /[0-2]/` - a number from 0 to 2 for setting an hour as `H0`
+    -  `"M": /[0-5]/` - a number from 0 to 5 for setting minutes as `M0`
 
-The example of a rendered date and time is *01/01/2001 12:59*.
+The example of rendered date and time is *01/01/2001 12:59*.
 
 #### Setting the format for dates
 
@@ -804,7 +804,7 @@ in the `editorConfig` object:
     header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
     type: "date", dateFormat: "%d/%m/%Y", 
     editorConfig: { 
-        asDateObject: true // saving a date as a Date object
+        asDateObject: true // sets the datePicker mode when dates are saved as Date objects
     }
 }
 ~~~
