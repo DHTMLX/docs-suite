@@ -8,6 +8,26 @@ description: You can explore the configuration of Grid in the documentation of t
 
 DHTMLX Grid possesses flexible configuration that let you get desired look and feel via a collection of versatile properties.
 
+## Setting the TreeGrid mode 
+
+**If you use the PRO version of DHTMLX Grid**, you can initialize Grid in the [TreeGrid mode](grid/treegrid_mode.md) which allows showing the nested tabular data. To create Grid in the TreeGrid mode, use the [`type: "tree"`](grid/api/grid_type_config.md) configuration option.
+
+~~~jsx {2} title="index.js"
+const Grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        { id: "name", header: [{ text: "Name" }], gravity: 1.5 },
+        { id: "native", type: "string", header: [{ text: "Native name" }], gravity: 1.5 },
+        { id: "capital", type: "string", header: [{ text: "Capital" }] },
+        { id: "currency", type: "string", header: [{ text: "Currency" }] }
+    ],
+    data: dataset,
+    autoWidth: true
+});
+~~~
+
+Check the details on the TreeGrid mode in the [related article](grid/treegrid_mode.md).
+
 ## Width/height
 
 You can specify the necessary size of your Grid via the [`width`](grid/api/grid_width_config.md) and [`height`](grid/api/grid_height_config.md) configuration properties:
@@ -31,7 +51,7 @@ If the `width` and `height` options aren't set in the Grid configuration, the Gr
 
 ### Autoheight for Grid
 
-**If you use the PRO version of DHTMLX Grid**, you may enable the auto height mode of Grid. For this, set the value of the [`height`](grid/api/grid_height_config.md) property to *"auto"*. In this mode, Grid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
+**If you use the PRO version of DHTMLX Grid**, you may enable the auto height mode of Grid. For this, set the value of the [height](grid/api/grid_height_config.md) property to "auto". In this mode, Grid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -1537,6 +1557,10 @@ There are four navigation keys that Grid enables by default:
         <tr>
             <td><b>End</b></td>
             <td>navigate to the end of the Grid content (without change of the selected cell)</td>
+        </tr>
+        <tr>
+            <td><b>Ctrl+Enter</b></td>
+            <td>expands/collapses the parent item in the TreeGrid mode</td>
         </tr>
     </tbody>
 </table>

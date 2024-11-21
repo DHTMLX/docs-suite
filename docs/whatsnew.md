@@ -8,6 +8,15 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 8.4.6 
+-----------------
+
+Released on October 15, 2024
+
+### Fixes
+
+- Grid. The issue with opening the Combobox column editor without options
+
 Version 8.4.4 
 -----------------
 

@@ -6,7 +6,7 @@ description: You can have an overview of Menu in the documentation of the DHTMLX
 
 # Menu overview
 
-DHTMLX Menu is a component that provides an easy way to add a drop down menu to user's projects. This component is highly customizable and supports a wide range of features. DHTMLX Menu component can be a good navigation aid to web sites, help systems, etc. Check [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/all?tag=menu).
+DHTMLX Menu is a component that provides an easy way to add a drop down menu to user's projects. This component is highly customizable and supports a wide range of features. DHTMLX Menu component can be a good navigation aid to web sites, help systems, etc. Check [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu).
 
 ![](../assets/menu/menu_front.png)
 
@@ -23,7 +23,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Me
 ## Related resources
 
 - You can get DHTMLX Menu as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/all?tag=menu)
+- There are also [online samples for DHTMLX Menu](https://snippet.dhtmlx.com/nk65jfmx?tag=menu)
 - To work with data of Menu check [TreeCollection API](tree_collection.md)
 
 ## Guides

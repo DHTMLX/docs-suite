@@ -8,7 +8,7 @@ description: You can have an overview of Tabbar in the documentation of the DHTM
 
 DHTMLX Tabbar component allows a user to keep several groups of content together and navigate between them with in a handy way.
 Being highly configurable, the component can be easily adjusted to your requirements and will provide quick switching between parts of your app. 
-Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/all?tag=tabbar).
+Check [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar).
 
 ![](../assets/tabbar/tabbar_front.png)
 
@@ -25,7 +25,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Ta
 ## Related resources
 
 - You can get DHTMLX Tabbar as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/all?tag=tabbar)  
+- There are also [online samples for DHTMLX Tabbar](https://snippet.dhtmlx.com/xq6k0tts?tag=tabbar)  
 
 ## Guides
 
