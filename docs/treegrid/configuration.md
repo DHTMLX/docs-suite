@@ -12,7 +12,7 @@ DHTMLX TreeGrid possesses flexible configuration that let you get desired look a
 
 You can specify necessary size of your TreeGrid via the configuration properties [](treegrid/api/treegrid_width_config.md) and [](treegrid/api/treegrid_height_config.md):
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -24,14 +24,14 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 ~~~
 
 :::info
-If the **width** and **height** options aren't set in the TreeGrid configuration, the TreeGrid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and TreeGrid won't be visible on the page.
+If the `width` and `height` options aren't set in the TreeGrid configuration, the TreeGrid will take the size of its container. If you don't specify the height for the container, it will be equal to "0px" and TreeGrid won't be visible on the page.
 :::
 
 ### Autoheight for TreeGrid
 
-You may enable the auto height mode of TreeGrid. For this, set the value of the [height](treegrid/api/treegrid_height_config.md) property to "auto". In this mode, TreeGrid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
+You may enable the auto height mode of TreeGrid. For this, set the value of the [`height`](treegrid/api/treegrid_height_config.md) property to "auto". In this mode, TreeGrid will expand on adding new rows, and will shrink on removing rows not to occupy external place.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -46,7 +46,7 @@ This functionality is available from v8.1.
 
 **Related sample**: [TreeGrid. Set automatic height](https://snippet.dhtmlx.com/wg7xosq8)
 
-If needed, you may set the minimal and maximal height for the container via the **min-height** and **max-height** CSS properties:
+If needed, you may set the minimal and maximal height for the container via the `min-height` and `max-height` CSS properties:
 
 ~~~html
 <div class="treegrid" id="treegrid_container"></div>
@@ -61,9 +61,9 @@ If needed, you may set the minimal and maximal height for the container via the 
 
 ## Collapsed mode
 
-To initialize a treegrid in the collapsed state, use the [collapsed](treegrid/api/treegrid_collapsed_config.md) property:
+To initialize a treegrid in the collapsed state, use the [`collapsed`](treegrid/api/treegrid_collapsed_config.md) property:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -80,7 +80,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 It is possible to adjust the configuration of grid columns via the corresponding [](treegrid/api/treegrid_columns_config.md) option. As a value it takes an array with objects each of which contains config of a column.
 The full list of properties you can set for a column is given in the API reference.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 100, id: "a", header: [{ text: "#" }] },
@@ -98,9 +98,9 @@ Each column object may contain a set of properties. You will find the full list 
 
 ### Alignment
 
-Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the **align** option:
+Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the `align` option:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { id: "name", header:  [{ text: "Name", align: "center" }], align: "right"} 
@@ -112,7 +112,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Content align](https://snippet.dhtmlx.com/g38rr3so)
 
-The available values of the option are "left", "center" and "right".
+The available values of the option are *"left"*, *"center"* and *"right"*.
 
 ### Autosize for columns
 
@@ -140,7 +140,7 @@ You can configure columns' settings so that their width would automatically adju
 </table>
 <br/>
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -154,7 +154,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 It is also possible to set the [](treegrid/api/treegrid_adjust_config.md) property in the configuration of a separate column:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }], adjust: "header" }, 
@@ -169,7 +169,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 It is possible to adjust the size of TreeGrid columns to the size of TreeGrid with the help of the [](treegrid/api/treegrid_autowidth_config.md) configuration option, like this:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [ 
         // columns config
@@ -183,7 +183,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 You can disable this functionality for a specified column via setting the [](treegrid/api/treegrid_autowidth_config.md) property to *false* in the configuration of the column:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false }, 
@@ -196,57 +196,214 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Formatting columns
 
-Starting from v7.1, you can display the values of the cells of a TreeGrid column in the desired format:
+You can display the values of the cells of a TreeGrid column in the desired format with the help of the 
+`numberMask` and `patternMask` properties. There is also the [`dateFormat`](#setting-the-format-for-dates) option that allows specifying the format of dates.
 
-1\. To define the format for numeric values, apply the **format** configuration option of the column:
+#### numberMask
 
-~~~js
-{ 
-    width: 150, id: "price", header: [{ text: "Price" }],  
-    type: "number", format: "# #.000" 
+The `numberMask` property sets an input mask for entering number values. This property is applied both to the displayed data and to the data which is being edited. 
+
+:::note
+If the type of a column hasn't been set and the `numberMask` property is specified, the column type will be set as `type:number`.
+:::
+
+The `numberMask` property can be specified in two ways:
+
+- as an *object* with the following properties:
+    - ***prefix*** - renders a text before the resulting value
+    - ***suffix*** - renders a text after the resulting value
+    - ***groupSeparator*** - sets a separator for thousands
+    - ***decSeparator*** - sets a separator for decimals
+    - ***allowNegative*** - allows using negative numbers
+    - ***maxIntLength*** - allows setting the maximal length of an integer
+    - ***maxDecLength*** - allows setting the maximal length of a decimal
+    - ***minDecLength*** - allows setting the minimal rendered length of a decimal
+
+For example, the `numberMask` config can be set as the following object:
+
+~~~jsx {6-13}
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    footer: [{ content: "sum" }],
+    numberMask: {
+        prefix: "$",
+        groupSeparator: ",",
+        decSeparator: ".",
+        maxIntLength: 7,
+        maxDecLength: 2,
+        minDecLength: 0
+    }
 }
-// -> 4564.2 will be displayed as 4 564.200
 ~~~
 
-The following characters can be used:
+The value *100000.01* is converted into *$100,000.01* by the pattern given above.
 
-- **#** - the integer part of the number
-- **0** - the fractional part of the number. The **0** placeholder displays insignificant zeros if a number has fewer digits than there are zeros in the format string, for instance, the **.00** format will display 0.298 as 0.30. <br>If a number has more digits to the right of the decimal point than there are placeholders in the format string, the number rounds to as many decimal places as there are placeholders, for instance, the **.000** format will display 0.2 as 0.200.
-- **# #** - sets the thousands separator in a number (123 456)
-- **#.0** - sets the separator for the decimal point in a number (123 456.357)
+#### Default `numberMask` configs depending on the column type
 
-2\. You can display the percentage value in the necessary format by setting the **type: "percent"** configuration option of a column together with the **format** option:
+When the `"number"` type is specified for a column, the resulting number is converted into the *number* type. The default config for this column type is the following:
 
-~~~js
-{ 
-    width: 150, id: "inStock", header: [{ text: "In stock" }], 
-    type: "percent", format: "#.00" 
+~~~jsx
+{
+    groupSeparator: ",",
+    decSeparator: ".",
+    allowNegative: true,
+    maxIntLength: 16,
+    maxDecLength: 2,
+    minDecLength: 0
 }
-// -> 0.0039 will be displayed as 0.39%
 ~~~
 
-When using just the **type: "percent"** configuration option of a column, the result will be the following:
+The default config for the `"string"` (default) column type is the following: 
 
-~~~js
-{ 
-    width: 150, id: "inStock", header: [{ text: "In stock" }], 
-    type: "percent" 
+~~~jsx
+{
+    groupSeparator: ",",
+    decSeparator: ".",
+    minDecLength: 0
 }
-// -> 0.0039 will be displayed as 0%
 ~~~
 
-3\. To define the format for dates, set the **type: "date"** property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the **format** option:
+When the `"string"` (default) type is specified for a column, the resulting number is converted into the *string* type without a mask, as if it were a number. For example, if the input value is *"$ 1,000,000"*, the value returned by the [`getValue()`](form/api/form_getvalue_method.md) method is *"1000000"*.
+
+- as a *boolean* value the `numberMask` property converts the number value displayed in the column into one of the predefined templates (depending on the specified column type):
+
+~~~jsx
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    footer: [{ content: "sum" }],
+    numberMask: true 
+}
+~~~
+
+For the above example, the value *100000.01* is converted into *100,000.01* by the predefined template of the column `type:"number"`, since the column type is not set.
+
+**Related sample**: [TreeGrid. Pattern/Number mask](https://snippet.dhtmlx.com/qe1ywzb2)
+
+#### patternMask
+
+The `patternMask` property sets an input mask for entering number and string values. Allows setting a necessary pattern for entering data. It can be set in two ways: 
+
+- as an *object* with the following properties:
+    - ***pattern*** - allows specifying the necessary mask and change it dynamically, depending on the entered values
+    - ***charFormat*** - (optional) allows specifying a regular expression for an optional symbol. This property has a predetermined configuration provided below:
+
+~~~jsx
+{
+    "0": /\d/,
+    "a": /[A-Za-z]/,
+    "#": /[A-Za-z0-9]/,
+    "*": /./,
+}
+~~~
+
+|  Symbol| Description            |
+| -------|----------------------- |
+| "0"    | any number from **0** to **9** |
+| "a"    | a single letter of the Roman alphabet, including all capital letters from **A** to **Z** and all lowercase letters from **a** to **z** |
+| "#"    | a single letter of the Roman alphabet (either an uppercase or a lowercase one) or a single number from **0** to **9** |
+| "*"    | any symbol |
+
+:::note
+The `inputMask` property supports static masks. These are the symbols not specified in the ***charFormat*** and rendered without the possibility of being changed.
+:::
+
+Here's an example of the `patternMask` property that specifies an input mask pattern for entering an ID:
 
 ~~~js
+{
+    id: "employee_id", header: [{ text: "Employee ID" }], width: 200,
+    patternMask: {
+        pattern: value => {
+            return isNaN(value) && !value.startsWith("ID")
+                ? "".padStart(value.length, "*")
+                : "ID.000";
+        }
+    }
+},
+~~~ 
+
+An example of an ID according to the pattern mask is *ID.001*.
+
+- as a *string* value the `patternMask` property allows setting a mask as a string using a predefined set of symbols. Here's an example of the `patternMask` property that specifies an input mask pattern for entering an SSN number:
+
+~~~jsx 
+{ id: "ssn", header: [{ text: "SSN" }], width: 150, patternMask: "000-00-0000" }
+~~~
+
+An example of an SSN number according to the pattern mask is *123-45-6789*.
+
+**Related sample**: [TreeGrid. Pattern/Number mask](https://snippet.dhtmlx.com/qe1ywzb2)
+
+#### Selecting the suitable data format
+
+Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to set a pattern mask for data format suitable for your needs:
+
+- phone number 
+
+The phone number format includes a set of numbers, symbols and spaces:
+
+~~~jsx
+{
+    type: "input",
+    patternMask: "+0 (000) 000-0000",
+};
+~~~
+
+Example: *+9 (123) 123-1234*
+
+- license plate
+
+The format of license plate usually contains a combination of letters, numbers and symbols:
+
+~~~jsx
+{
+    type: "input",
+    patternMask: "0-aaa-000",
+}
+~~~
+
+Example: *9-AAA-999*
+
+- date and time
+
+For a date and time input you can specify a mask pattern as an object of the following type:
+
+~~~jsx
+patternMask: {
+    pattern: "00/00/0000 H0:M0", 
+    charFormat: { 
+        "H": /[0-2]/,
+        "M": /[0-5]/,
+    }
+}
+~~~
+
+In the above example:
+
+- `pattern` sets a common mask pattern for date and time
+- `charFormat` specifies regular expressions for setting hours and minutes:
+    -  `"H": /[0-2]/` - a number from 0 to 2 for the first number when setting an hour as `H0`
+    -  `"M": /[0-5]/` - a number from 0 to 5 for the first number when setting minutes as `M0`
+
+The example of a rendered date and time is *01/01/2001 12:59*.
+
+#### Setting the format for dates
+
+To specify the necessary format for dates, set the `type: "date"` property for a column and define the [format of dates](calendar/api/calendar_dateformat_config.md) with the help of the `dateFormat` option:
+
+~~~jsx {3}
 { 
-    width: 150, id: "start_date", 
-    header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
-    type: "date", format: "%d/%m/%Y"  
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", dateFormat: "%M %d %Y"
 }
 ~~~
 
 :::info
-The date format must include delimiters (space or symbol), otherwise an error will be thrown
+The date format must include delimiters (spaces or symbols), otherwise an error will be thrown
 :::
 
 **Related sample**: [TreeGrid. Data formats (percent, currency, date and combination with templates)](https://snippet.dhtmlx.com/ampo9hsc)
@@ -255,12 +412,12 @@ The date format must include delimiters (space or symbol), otherwise an error wi
 
 You can fix (or "freeze") a column or several columns, so that they will become static when you scroll the treegrid, while the rest of columns remain movable. 
 
-- To fix columns to the left side of the treegrid, use the [leftSplit](treegrid/api/treegrid_leftsplit_config.md) property. 
-- To fix columns to the right side of the treegrid, use the [rightSplit](treegrid/api/treegrid_rightsplit_config.md) property. 
+- To fix columns to the left side of the treegrid, use the [`leftSplit`](treegrid/api/treegrid_leftsplit_config.md) property. 
+- To fix columns to the right side of the treegrid, use the [`rightSplit`](treegrid/api/treegrid_rightsplit_config.md) property. 
 
 Just set the number of columns you want to freeze as a value of the related property in the TreeGrid configuration.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -275,9 +432,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Hidden columns
 
-You can set the **hidden:true** property in the [config of a column](treegrid/configuration.md#columns) so that it doesn't appear on a page.
+You can set the `hidden:true` property in the [config of a column](treegrid/configuration.md#columns) so that it doesn't appear on a page.
 
-~~~js
+~~~jsx
 { 
     width: 150, id: "population", header: [{ text: "Population" }] 
 },
@@ -294,7 +451,7 @@ By default, DHTMLX TreeGrid allows sorting content of any TreeGrid column by cli
 
 To disable this option, set the [](treegrid/api/treegrid_sortable_config.md) property in the TreeGrid configuration to *false*:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -308,11 +465,11 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 #### Making separate columns sortable
 
-You can make separate columns sortable by specifying the [sortable:true](treegrid/api/treegrid_sortable_config.md) property in the configuration of a column.
+You can make separate columns sortable by specifying the [`sortable:true`](treegrid/api/treegrid_sortable_config.md) property in the configuration of a column.
 
 In the example below all columns will be sortable, except for the second one:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], sortable: true }, 
@@ -326,7 +483,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 The following sample demonstrates the same situation:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }] },
@@ -341,7 +498,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 Columns of TreeGrid have fixed width with no possibility to change them from UI. You can switch on the corresponding [](treegrid/api/treegrid_resizable_config.md) configuration option to make all columns of TreeGrid resizable.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -353,11 +510,13 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 Then you will be able to change the width of columns using the mouse. Grab the right border with the cursor and drag to the desired width.
 
-{{note If you also set the **autoWidth** configuration option, you will be able to change the width of columns only inside the container of TreeGrid. }}
+:::note 
+If you also set the `autoWidth` configuration option, you will be able to change the width of columns only inside the container of TreeGrid. 
+:::
 
-You can disable the resizing of any column by setting the **resizable:false** property in the config of a column.
+You can disable the resizing of any column by setting the `resizable:false` property in the config of a column.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 150, id: "test1", header: [{ text: "Test1" }] },
@@ -370,8 +529,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Resizable columns](https://snippet.dhtmlx.com/vq3i9maq)
 
-{{note To define the resizing limits, set necessary values to the **minWidth**/**maxWidth** properties in the config of a column.
-}}
+:::note 
+To define the resizing limits, set necessary values to the `minWidth`/`maxWidth` properties in the config of a column.
+:::
 
 ### HTML content of TreeGrid columns
 
@@ -379,9 +539,9 @@ DHTMLX TreeGrid allows adding HTML content into TreeGrid cells (such as images, 
 
 - setting HTML content for all TreeGrid columns
 
-This way presupposes making each cells of TreeGrid capable of displaying the HTML content via using the [htmlEnable](treegrid/api/treegrid_htmlenable_config.md) property in the configuration object of TreeGrid.
+This way presupposes making each cells of TreeGrid capable of displaying the HTML content via using the [`htmlEnable`](treegrid/api/treegrid_htmlenable_config.md) property in the configuration object of TreeGrid.
 
-~~~js
+~~~jsx
 const dataset = [
     {
         "name": "A Time to Kill",
@@ -402,9 +562,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ![](../assets/treegrid/html_content.png)
 
-If you want to add custom elements into cells of the specified column, you need to set the **htmlEnable:true** property in the [configuration of a column](treegrid/api/api_treegridcolumn_properties.md):
+If you want to add custom elements into cells of the specified column, you need to set the `htmlEnable:true` property in the [configuration of a column](treegrid/api/api_treegridcolumn_properties.md):
 
-~~~js
+~~~jsx
 const dataset = [
     {
         "name": "A Time to Kill",
@@ -430,9 +590,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 - setting HTML content for the header/footer of a column
 
-You can set HTML content in the header or the footer of a column independently. The **htmlEnable** property enabled for the header/footer redefines the value of the same config specified for the parent column and for the whole TreeGrid:
+You can set HTML content in the header or the footer of a column independently. The `htmlEnable` property enabled for the header/footer redefines the value of the same config specified for the parent column and for the whole TreeGrid:
 
-~~~js {8}
+~~~jsx {8}
 const treeGrid = new dhx.TreeGrid("treegrid", {
     columns: [
         {
@@ -460,7 +620,7 @@ const treeGrid = new dhx.TreeGrid("treegrid", {
 
 Starting from v7.0, you can add event handlers to the [HTML elements defined in the data set of TreeGrid](treegrid/configuration.md#html-content-of-treegrid-columns) with the help of the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property, for instance:
 
-~~~js
+~~~jsx
 const data = [
     {
         "name": "A Time to Kill",
@@ -499,7 +659,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 The Suite version 8.3 brought the possibility to add events handlers for the header/footer cell's content. Use the [](treegrid/api/treegrid_eventhandlers_config.md) configuration property for this purpose:
 
-~~~js
+~~~jsx
 const treeGrid = new dhx.TreeGrid("treegrid", {
     columns: [
         {
@@ -547,7 +707,7 @@ DHTMLX TreeGrid provides the editing feature that includes two options:
 
 To make all columns of the TreeGrid editable, specify the [](treegrid/api/treegrid_editable_config.md) option in the configuration of TreeGrid:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -561,11 +721,11 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 - editing of the specified columns only
 
-This option implies that you can enable/disable editing of particular columns by setting the **editable: true** property in the configuration of a column:
+This option implies that you can enable/disable editing of particular columns by setting the `editable: true` property in the configuration of a column:
 
 In the example below all columns will be editable, except for the first one:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { 
@@ -586,7 +746,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 And the following example demonstrates an opposite situation when only the first column is editable:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { 
@@ -606,15 +766,15 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Types of column editor
 
-You can specify the way of editing the cells of a TreeGrid column depending on its content. The type of the used editor can be defined either by the **editorType** or via the **type** property of a column.
+You can specify the way of editing the cells of a TreeGrid column depending on its content. The type of the used editor can be defined either by the `editorType` or via the `type` property of a column.
 
 There are several types of column editors:
 
 - #### input
 
-An editor for cells with a simple text (the default one, unless a column has **type:"date"**).
+An editor for cells with a simple text (the default one, unless a column has `type:"date"`).
 
-~~~js
+~~~jsx
 // cells of the "project" column will be edited as inputs
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
@@ -632,29 +792,36 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 - #### datePicker
 
-An editor for cells with dates (default for a column with **type:"date"**).
+An editor for cells with dates (default for a column with `type:"date"`).
 
-To use this editor, you should specify the **type:"date"** property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the **format** option.
+To use this editor, you should specify the `type:"date"` property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the `dateFormat` option.
 
-~~~js
+By default, after editing dates are transformed and displayed as string values. 
+You can also save a date as a Date object by setting the `asDateObject` property to *true*
+in the `editorConfig` object:
+
+~~~jsx
 { 
     // if the type:"date" config is set in the column config, 
     // there's no need to specify the type of the editor
     width: 150, id: "start_date", 
     header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
-    type: "date", format: "%d/%m/%Y" 
+    type: "date", dateFormat: "%d/%m/%Y",
+    editorConfig: { 
+        asDateObject: true // saving a date as a Date object
+    }
 }
 ~~~
 
 :::info
-You can configure the date picker by passing [properties of Calendar](category/calendar-properties.md) (**except for** the *value*, *range*, and *dateFormat* ones) to the <b>editorConfig</b> object, as in:
+You can configure the date picker by passing [the properties of Calendar](category/calendar-properties.md) (**except for** the `value` and `range`) to the `editorConfig` object, as in:
 
-~~~js
+~~~jsx
 { 
     id: "start_date", 
     header: [{ text: "Start date" }], 
     type: "date", 
-    format: "%d/%m/%Y %H:%i",
+    dateFormat: "%d/%m/%Y %H:%i",
     editorConfig: { 
         timePicker: true, 
         weekStart: "sunday", 
@@ -669,11 +836,11 @@ You can configure the date picker by passing [properties of Calendar](category/c
 
 An editor for cells that contain text.
 
-To use this editor, you should specify the **editorType:"textarea"** property for a column.
+To use this editor, you should specify the `editorType:"textarea"` property for a column.
 
-The **textarea** editor allows editing multiple lines of text when the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid is enabled.
+The **textarea** editor allows editing multiple lines of text when the [`autoHeight:true`](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid is enabled.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
@@ -692,9 +859,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 An editor for cells with a two-state check box.
 
-To use this editor, you need to specify the **type: "boolean"** property for a column.
+To use this editor, you need to specify the `type: "boolean"` property for a column.
 
-~~~js
+~~~jsx
 { 
     // if the type:"boolean" config is set in the column config, 
     // there's no need to specify the type of the editor
@@ -706,17 +873,19 @@ To use this editor, you need to specify the **type: "boolean"** property for a c
 
 **Related sample**: [TreeGrid. Editing with different editors (multiselect, combobox, select, boolean, date)](https://snippet.dhtmlx.com/sdbfbv2n)
 
-{{note If you specify the **editable** option in the configuration of TreeGrid, then editing of a column with checkbox will always be enabled.}}
+:::note 
+If you specify the `editable` option in the configuration of TreeGrid, then editing of a column with checkbox will always be enabled.
+:::
 
 - #### select
 
 An editor for cells that should contain several options to choose from.
 
-To set this editor type you need to specify the **editorType:"select"** property for a column and define a list of options via the **options** property. 
+To set this editor type you need to specify the `editorType:"select"` property for a column and define a list of options via the `options` property. 
 
 You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
 
-~~~js
+~~~jsx
 {
     width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
     editorType: "select", options: ["Done", "In Progress", "Not Started"]
@@ -738,7 +907,7 @@ You may either specify the same list of editor options for all cells of the colu
 
 Or define unique lists of options for different column cells. For that, use a function as a value of the property:
 
-~~~js
+~~~jsx
 {
     id: "select_example",
     header: [{ text: "Select example" }],
@@ -753,11 +922,11 @@ Or define unique lists of options for different column cells. For that, use a fu
 
 An editor for cells that enables selection of multiple options. You can select one option, several options, all options, or no options.
 
-To set this editor type you need to specify the **editorType:"multiselect"** property for a column and define a list of options via the **options** property.
+To set this editor type you need to specify the `editorType:"multiselect"` property for a column and define a list of options via the `options` property.
 
 You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
 
-~~~js
+~~~jsx
 {
     id: "renewals", type: "string",
     header: [{ text: "Number of renewals" }],
@@ -782,7 +951,7 @@ You may either specify the same list of editor options for all cells of the colu
 
 Or define unique lists of options for different column cells. For that, use a function as a value of the property:
 
-~~~js
+~~~jsx
 {
     id: "multiselect_example",
     header: [{ text: "Multiselect example" }],
@@ -797,7 +966,7 @@ Or define unique lists of options for different column cells. For that, use a fu
 
 If you use the **multiselect** editor, you can predefine several options to be shown in a cell. You should separate the options in the dataset using the `,` separator.
 
-~~~js
+~~~jsx
 const data = [
     {
         renewals: "1 time" // one option is shown in a cell
@@ -812,9 +981,9 @@ const data = [
 
 #### Configuring the multiselect editor
 
-There is a list of [configuration settings](treegrid/api/api_treegridcolumn_properties.md) you may provide for the **multiselect** editor type. Use the **editorConfig** property to specify the desired settings:
+There is a list of [configuration settings](treegrid/api/api_treegridcolumn_properties.md) you may provide for the **multiselect** editor type. Use the `editorConfig` property to specify the desired settings:
 
-~~~js
+~~~jsx
 {
     id: "renewals", type: "string",
     header: [{ text: "Number of renewals" }],
@@ -828,11 +997,11 @@ There is a list of [configuration settings](treegrid/api/api_treegridcolumn_prop
 
 An editor for cells that should contain several options to choose from. There is a possibility to find an option by entering text in the edit control.
 
-To use this editor you need to specify the **editorType: "combobox"** property for a column and define a list of options via the **options** property.
+To use this editor you need to specify the `editorType: "combobox"` property for a column and define a list of options via the `options` property.
 
 You may either specify the same list of editor options for all cells of the column. For that, use either an array of string values or an array of options' objects as a value of the property as in:
 
-~~~js
+~~~jsx
 {
     width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
     editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"]
@@ -854,7 +1023,7 @@ You may either specify the same list of editor options for all cells of the colu
 
 Or define unique lists of options for different column cells. For that, use a function as a value of the property:
 
-~~~js
+~~~jsx
 {
     id: "combobox_example",
     header: [{ text: "Combobox example" }],
@@ -868,9 +1037,9 @@ Or define unique lists of options for different column cells. For that, use a fu
 
 #### Configuring the combobox editor
 
-There is a list of [configuration settings](treegrid/api/api_treegridcolumn_properties.md) you may provide for the **combobox** editor type. Use the **editorConfig** property to specify the desired settings:
+There is a list of [configuration settings](treegrid/api/api_treegridcolumn_properties.md) you may provide for the **combobox** editor type. Use the `editorConfig` property to specify the desired settings:
 
-~~~js
+~~~jsx
 {
     width: 160, id: "test", header: [{ text: "Test" }], type: "string", 
     editorType: "combobox", options: ["1 time", "1-2 times", "more than 5 times"],
@@ -880,12 +1049,12 @@ There is a list of [configuration settings](treegrid/api/api_treegridcolumn_prop
 
 ### Editing columns with the "number" type
 
-For columns with the **type:"number"** setting the **editorConfig** object may contain the following properties. They are:
+For columns with the `type:"number"` setting the `editorConfig` object may contain the following properties. They are:
 
-- **min** - (optional) the minimum allowed value
-- **max** - (optional) the maximum allowed value
+- `min` - (optional) the minimum allowed value
+- `max` - (optional) the maximum allowed value
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid", {
   columns: [
     {
@@ -903,7 +1072,7 @@ In case a user enters a value that goes beyond the limits specified by the above
 
 ![Validation of columns with the number type](../assets/grid/col_number_validation.png)
 
-If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the **editorConfig** object by the **min/max** values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
+If the user ignores the warning and still tries to enter an unallowable value, it will be replaced with the minimum/maximum value defined in the `editorConfig` object by the `min/max` values. Thus, in the above example the entered value `200` will be replaced with `100`, since it is the upper limit set in the editor configuration.
 
 **Related sample**: [TreeGrid. Editing with different editors](https://snippet.dhtmlx.com/sdbfbv2n?tag=treegrid)
 
@@ -920,9 +1089,9 @@ There is a possibility to redefine the style of the warning on entering an inval
 
 ### Editable combobox
 
-From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#types-of-column-editor)) from UI. To activate the functionality, specify the **newOptions: true** attribute of the **editorConfig** property in the configuration of the [column](treegrid/api/api_treegridcolumn_properties.md):
+From v7.3, you may allow end users to add new options into the combobox editor ([editorType: "combobox"](#types-of-column-editor)) from UI. To activate the functionality, specify the `newOptions: true` attribute of the `editorConfig` property in the configuration of the [column](treegrid/api/api_treegridcolumn_properties.md):
 
-~~~js {7}
+~~~jsx {7}
 {
     width: 120,
     id: "status",
@@ -946,14 +1115,14 @@ At the same time, the created option will also appear in the drop-down list of t
 
 > To localize the *Create* option, translate the corresponding string and apply a ready locale to the Combobox component:
 
-~~~js
+~~~jsx
 const locale = {
-      en: {
+    en: {
         createItem: "Create"
-      },
-      de: {
+    },
+    de: {
         createItem: "Schaffen"
-      }
+    }
 };
 
 dhx.i18n.setLocale("combobox", locale["de"]);
@@ -963,7 +1132,9 @@ dhx.i18n.setLocale("combobox", locale["de"]);
 
 By default, you can open the editor by double-clicking on a cell. But if you need the editor to open after a single click, apply the [](treegrid/api/treegrid_cellclick_event.md) event of the treegrid.
 
-{{note Note, that it does not work for the select editor (*editorType: "select"*) and you need to use the combobox editor (*editorType:"combobox"*) if you want a drop-down list to open on the mouse click.}}
+:::note 
+Note, that it does not work for the select editor (`editorType: "select"`) and you need to use the combobox editor (`editorType:"combobox"`) if you want a drop-down list to open on the mouse click.
+:::
 
 ## Header/footer filters
 
@@ -971,7 +1142,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 - **inputFilter** - provides a way of filtering data of a TreeGrid column by using a text field
 
-~~~js
+~~~jsx
 { 
     width: 160, id: "budget", 
     header: [{ text: "Budget" }, { content: "inputFilter" }]
@@ -980,7 +1151,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 - **selectFilter** - allows end users to filter data of a column by choosing an option from a presented dropdown list
 
-~~~js
+~~~jsx
 { 
     width: 160, id: "status", 
     header: [{ text: "Status" }, { content: "selectFilter" }],
@@ -991,7 +1162,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 - **comboFilter** - provides a way to filter data of a column by choosing an option from a presented dropdown list. To find an option quickly you can enter text into the edit control
 
-~~~js
+~~~jsx
 {
     width: 160, id: "renewals", 
     header: [{ text: "Number of renewals" }, { content: "comboFilter" }],
@@ -1002,7 +1173,7 @@ There are three types of filters that you can specify in the header/footer conte
 
 If you specify **comboFilter** as the header or footer content of a column, you can set an additional config with properties for it.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
@@ -1047,11 +1218,13 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Customizing header/footer filters
 
-To add a custom function with your you own logic for the filter of a TreeGrid column, you need to set the **customFilter** attribute when configuring the header/footer content of the [column](treegrid/api/api_treegridcolumn_properties.md). 
+To add a custom function with your you own logic for the filter of a TreeGrid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](treegrid/api/api_treegridcolumn_properties.md). 
 
-{{note The **customFilter** attribute can be used when [*content: "inputFilter" | "selectFilter" | "comboFilter"*](#headerfooter-filters) is set.}}
+:::note 
+The `customFilter` attribute can be used when [`content: "inputFilter" | "selectFilter" | "comboFilter"`](#headerfooter-filters) is set.
+:::
 
-~~~js {11}
+~~~jsx {11}
 const treeGrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
@@ -1066,7 +1239,9 @@ const treeGrid = new dhx.TreeGrid("treegrid_container", {
                 }
             ],
             footer: [{ content: "sum" }],
-            format: "#",
+            numberMask: {
+                maxDecLength: 0
+            }
         },   
     ],
     data: dataset
@@ -1075,7 +1250,7 @@ const treeGrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Custom filter in the header](https://snippet.dhtmlx.com/jk64c5gr)
 
-The **customFilter** attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
+The `customFilter` attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
 
 ## Header/footer height
 
@@ -1085,7 +1260,7 @@ You can change the height of the header/footer in one of the following ways:
 
 The height of the header/footer of TreeGrid is calculated as a sum of rows which are included into it. To set the height of a row inside the header/footer, use the [](treegrid/api/treegrid_headerrowheight_config.md) / [](treegrid/api/treegrid_footerrowheight_config.md) properties, correspondingly. The default value of the mentioned properties is 40.
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1099,9 +1274,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 2. Provide the automatic adjustment of the header/footer height for the content to fit in
 
-Use the [](treegrid/api/treegrid_headerautoheight_config.md) and [](treegrid/api/treegrid_footerautoheight_config.md) configuration options of TreeGrid. These properties redefine the **autoHeight** config for the header and the footer, correspondingly:
+Use the [](treegrid/api/treegrid_headerautoheight_config.md) and [](treegrid/api/treegrid_footerautoheight_config.md) configuration options of TreeGrid. These properties redefine the `autoHeight` config for the header and the footer, correspondingly:
 
-~~~js
+~~~jsx
 // enabling autoheight only in the content
 const treegrid = new dhx.TreeGrid("treegrid", {
     columns: [
@@ -1132,7 +1307,7 @@ const treegrid = new dhx.TreeGrid("treegrid", {
 
 The default height of a grid row is 40. You can change it and set any other height via the [](treegrid/api/treegrid_rowheight_config.md) property, e.g.:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1148,9 +1323,9 @@ In this case, the height of each row is 30.
 
 ### Setting height for a separate row
 
-Starting with v7.1, it is possible to specify the height for the necessary row of data in TreeGrid via setting the number value to the **height** option when defining the [data set](treegrid/api/treegrid_data_config.md):
+Starting with v7.1, it is possible to specify the height for the necessary row of data in TreeGrid via setting the number value to the `height` option when defining the [data set](treegrid/api/treegrid_data_config.md):
 
-~~~js
+~~~jsx
 const dataset = [
     {
         "name": "Argentina",
@@ -1172,13 +1347,15 @@ const dataset = [
 
 **Related sample**: [TreeGrid. Row height](https://snippet.dhtmlx.com/kvl5y6nq)
 
-{{note The **height** option has a higher priority than the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid.}}
+:::note 
+The `height` option has a higher priority than the [autoHeight:true](treegrid/api/treegrid_autoheight_config.md) configuration property of TreeGrid.
+:::
 
 ### Autoheight for rows
 
-Starting from v7.1, you can set the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) option in the configuration of TreeGrid to make long text to split into multiple lines automatically based on the width of the column:
+Starting from v7.1, you can set the [`autoHeight: true`](treegrid/api/treegrid_autoheight_config.md) option in the configuration of TreeGrid to make a long text to split into multiple lines automatically based on the width of the column:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1193,7 +1370,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 As a result, the height of the cells will automatically adjust to their content.
 
 :::note
-Please note that the **autoHeight** option does not adjust the height in the cells of the header/footer of TreeGrid. 
+Please note that the `autoHeight` option does not adjust the height in the cells of the header/footer of TreeGrid. 
 :::
 
 The option just makes their text split into multiple lines, but the height of the cells will remain the same. To set the height of the rows in the header/footer, you can:
@@ -1205,7 +1382,7 @@ The option just makes their text split into multiple lines, but the height of th
 
 There is a possibility to automatically add an empty row after the last filled row in the treegrid. Use the [](treegrid/api/treegrid_autoemptyrow_config.md) property in the TreeGrid configuration object to enable this feature:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -1219,10 +1396,10 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 You can fix (or "freeze") a row or several rows, so that they will become static when you scroll the treegrid, while the rest of rows remain movable. 
 
-- To fix rows on the top of the treegrid, use the [topSplit](treegrid/api/treegrid_topsplit_config.md) property. 
-- To fix rows on the bottom of the treegrid, use the [bottomSplit](treegrid/api/treegrid_bottomsplit_config.md) property. 
+- To fix rows on the top of the treegrid, use the [`topSplit`](treegrid/api/treegrid_topsplit_config.md) property. 
+- To fix rows on the bottom of the treegrid, use the [`bottomSplit`](treegrid/api/treegrid_bottomsplit_config.md) property. 
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -1239,9 +1416,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Drag-n-drop inside the grid
 
-There is the ability to reorder rows and columns by drag and drop in TreeGrid. To enable the functionality, define the [dragItem: "both"](treegrid/api/treegrid_dragitem_config.md) property in the configuration object of TreeGrid:
+There is the ability to reorder rows and columns by drag and drop in TreeGrid. To enable the functionality, define the [`dragItem: "both"``](treegrid/api/treegrid_dragitem_config.md) property in the configuration object of TreeGrid:
 
-~~~js {5}
+~~~jsx {5}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1251,11 +1428,11 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-To activate the functionality for columns or rows separately, set the value of **dragItem** to *"column"* or *"row"* respectively.
+To activate the functionality for columns or rows separately, set the value of `dragItem` to *"column"* or *"row"* respectively.
 
-If needed, you can disable the drag-n-drop functionality for a separate column via the **draggable** configuration option of the column:
+If needed, you can disable the drag-n-drop functionality for a separate column via the `draggable` configuration option of the column:
 
-~~~js {3}
+~~~jsx {3}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         { width: 200, id: "name", header: [{ text: "Name" }], draggable: false }, 
@@ -1269,7 +1446,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Drag-n-drop](https://snippet.dhtmlx.com/ax5vs4a8)
 
-{{note To make the process of working with drag and drop more flexible, you can apply the related drag-n-drop events of TreeGrid for [columns](treegrid/api/api_overview.md#column-drag-and-drop) and [rows](treegrid/api/api_overview.md/#row-drag-and-drop).}}
+:::note 
+To make the process of working with drag and drop more flexible, you can apply the related drag-n-drop events of TreeGrid for [columns](treegrid/api/api_overview.md#column-drag-and-drop) and [rows](treegrid/api/api_overview.md/#row-drag-and-drop).
+:::
 
 ### Drag-n-drop between grids
 
@@ -1279,7 +1458,7 @@ DHTMLX TreeGrid supports drag-n-drop of rows between grids in several modes. To 
 - "source" - a grid allows dragging its rows out and can't take rows from other grids
 - "both" - a grid both takes rows from other grids and allows dragging its rows out as well
 
-~~~js {7}
+~~~jsx {7}
 const treegrid = new dhx.TreeGrid("treegrid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }] },
@@ -1296,7 +1475,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 To allow a user to drag-n-drop multiple rows at once, you need to enable [multiselection](#multiple-selection-of-treegrid-cells) of rows when configuring drag-n-drop. For example:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -1313,7 +1492,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 or
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -1328,9 +1507,9 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 ### Expanding collapsed rows on drag-n-drop
 
-If you have collapsed rows in your treegrid, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](treegrid/api/treegrid_dragexpand_config.md) property to *false*:
+If you have collapsed rows in your treegrid, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [`dragExpand`](treegrid/api/treegrid_dragexpand_config.md) property to *false*:
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         // columns config
@@ -1365,7 +1544,7 @@ DHTMLX TreeGrid includes the selection feature that allows highlighting TreeGrid
 </table>
 <br/>
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1381,7 +1560,7 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 While setting the [selection](treegrid/configuration.md#selection) property to *"row"*, *"cell"*, or *"complex"* value, you can enable the [](treegrid/api/treegrid_multiselection_config.md) property to allow a user to select multiple TreeGrid elements:
 
-~~~js
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
@@ -1392,7 +1571,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-Since the **multiselection** configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
+Since the `multiselection` configuration option is set to *true*, using the "Ctrl + Click" combination allows selecting the desired cells or rows.
 
 ## Spans
 
@@ -1433,7 +1612,7 @@ Each span object contains the following properties:
 </table>
 <br/>
 
-~~~js
+~~~jsx
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [  
         // columns config
@@ -1450,10 +1629,10 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 
 **Related sample**: [TreeGrid. Span cells](https://snippet.dhtmlx.com/o62liqew)
 
-**Note**, that if both the **spans** and [leftSplit](treegrid/api/treegrid_leftsplit_config.md) properties are set in the TreeGrid config, the following rules will be applied:
+**Note**, that if both the `spans` and [`leftSplit`](treegrid/api/treegrid_leftsplit_config.md) properties are set in the TreeGrid config, the following rules will be applied:
 
-- All necessary columns or rows will be in a span if the **spans** property is set for the columns located within the frozen area.
-- If the **spans** property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
+- All necessary columns or rows will be in a span if the `spans` property is set for the columns located within the frozen area.
+- If the `spans` property is set for a number of columns or rows placed as in the frozen part as in the movable one, then the columns remained in the movable part only will be in a span.
 
 ## Tooltip
 
@@ -1584,40 +1763,43 @@ const treegrid = new dhx.TreeGrid("treegrid_container", {
 });
 ~~~
 
-What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property, as in:
+What is more, you can specify a necessary template for the header/footer tooltip via the `tooltipTemplate` configuration property. The value of the `tooltipTemplate` property is a callback
+function which is called with the following parameters:
 
-~~~jsx {8-10,16}
+- `content` - an object with the content of the header/footer tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+    - `value` - the value rendered in a cell, including the applied templates
+    - `[key: string]` - the counted values of the `summary` property, where the key is either the key defined in the list or the functor name
+- `header/footer` - the object of the column header/footer
+- `column` - the object of a column
+
+and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip
+
+~~~jsx {9}
 const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
-        {
-            id: "country",
+        { 
+            width: 150, 
+            id: "population", 
             header: [
                 {
-                    text: "Country",
-                    tooltipTemplate: (value, header, column) => {
-                        return `This is column template: ${value}`
-                    }
-                },
-            ],
-            footer: [
-                {
-                    text: "Total",
-                    tooltipTemplate: (value, footer, column) => false, // Disabled footer tooltip
+                    text: "Population",
+                    tooltipTemplate: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${ count }`
                 }
             ],
-        },
+            summary: "count"
+        }
         // more columns
     ],
+    summary: { totalPopulation: ["population", "sum"] },
     data: dataset,
 });
 ~~~
 
 **Related sample**: [TreeGrid. Header/footer tooltip](https://snippet.dhtmlx.com/51nbo9re)
 
-#### Tooltips for complex data
+#### Tooltips for filters
 
-You can specify a tooltip as a value for a complex header/footer content, such as
-the methods processing column values: "avg" | "sum" | "max" | "min" | "count". What is more, you can provide a tooltip template for the header/footer content of any type, which allows showing tooltips for filters.
+You can provide a tooltip template for the header content of any type, which allows showing tooltips for filters.
 
 Check the example below:
 
@@ -1628,7 +1810,7 @@ const balanceTemplate = value => {
         : `<div style='color:red'>⬇ $${value}</div>`;
 };
 
-const treegrid = new dhx.TreeGrid("treegrid", {
+const treegrid = new dhx.TreeGrid("treegrid_container", {
     columns: [
         {
             minWidth: 150,
@@ -1647,15 +1829,45 @@ const treegrid = new dhx.TreeGrid("treegrid", {
             header: [{text: "Balance"}, {content: "inputFilter"}],
             footer: [
                 {
-                    content: "sum",
                     tooltipTemplate: balanceTemplate
                 },
             ],
             template: balanceTemplate,
             htmlEnable: true,
-            format: "#.0",
+            numberMask: {
+                prefix: "$"
+            }
         },
     ],
 });
 ~~~
 
+## Column header/footer text
+
+The `text` property of the column header/footer can be set either as a string or a callback function which is called with the following parameter: 
+
+- `content` - an object with the content of the header/footer tooltip that contains the counted values as **[key: string]**, where the key is either the key defined in the list or the functor name. The counted values are taken either from the `summary` config option of the component or the `summary` config option of a column
+
+:::note
+In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
+:::
+
+In the example below the text of the column's header is set as a string and the text of the footer is set as a callback function that takes counted values both from the column `summary` config (*count*) and the treegrid's config (*totalPopulation*):
+
+~~~jsx {6,7}
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: () => `<mark>Population</mark>`, htmlEnable: true }],
+            footer: [{ text: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${count}` }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    data: dataset
+});
+~~~
+
+You can [apply styling to the text of header cells](../customization#styling-header-cells) or to the [text of footer cells](../customization#styling-footer-cells) via the `text` property of the column's footer.

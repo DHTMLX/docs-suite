@@ -8,12 +8,12 @@ description: You can explore the afterEditEnd event of Grid in the documentation
 
 @short: fires after editing of a cell is ended
 
-@signature: {'afterEditEnd: (value: string | number | boolean, row: object, column: object) => void;'}
+@signature: {'afterEditEnd: (value: string | number | boolean | Date, row: object, column: object) => void;'}
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `value: string | number | boolean` - the new value of a cell
+- `value: string | number | boolean | Date` - the new value of a cell
 - `row: object` - an object with a row configuration
 - `column: object` - an object with a column configuration
 
@@ -26,4 +26,7 @@ grid.events.on("afterEditEnd", (value, row, column) => {
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
-@changelog: added in v6.1
+@changelog: 
+- The value of a cell can have the Date type since v9.0
+- Added in v6.1
+
