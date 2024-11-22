@@ -2497,6 +2497,7 @@ module.exports = {
                     "grid/api/grid_getscrollstate_method",
                     "grid/api/grid_getsortingstate_method",
                     "grid/api/grid_getspan_method",
+                    "grid/api/grid_getsummary_method",
                     "grid/api/grid_hidecolumn_method",
                     "grid/api/grid_hiderow_method",
                     "grid/api/grid_iscolumnhidden_method",
@@ -2631,6 +2632,7 @@ module.exports = {
                     "grid/api/grid_selection_config",
                     "grid/api/grid_sortable_config",
                     "grid/api/grid_spans_config",
+                    "grid/api/grid_summary_config",
                     "grid/api/grid_tooltip_config",                    
                     "grid/api/grid_topsplit_config",
                     "grid/api/grid_type_config",
@@ -4804,6 +4806,10 @@ module.exports = {
       {
         type: "doc",
         id: "helpers/custom_scroll",
+      },
+      {
+        type: "doc",
+        id: "helpers/data_calculation_functions",
       },
       {
         type: "category",

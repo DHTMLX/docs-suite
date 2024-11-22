@@ -23,6 +23,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_getscrollstate_method.md)    | @getshort(grid/api/grid_getscrollstate_method.md)    |
 | [](grid/api/grid_getsortingstate_method.md)   | @getshort(grid/api/grid_getsortingstate_method.md)   |
 | [](grid/api/grid_getspan_method.md)           | @getshort(grid/api/grid_getspan_method.md)           |
+| [](grid/api/grid_getsummary_method.md)        | @getshort(grid/api/grid_getsummary_method.md)        |
 | [](grid/api/grid_hidecolumn_method.md)        | @getshort(grid/api/grid_hidecolumn_method.md)        |
 | [](grid/api/grid_hiderow_method.md)           | @getshort(grid/api/grid_hiderow_method.md)           |
 | [](grid/api/grid_iscolumnhidden_method.md)    | @getshort(grid/api/grid_iscolumnhidden_method.md)    |
@@ -192,6 +193,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_selection_config.md)       | @getshort(grid/api/grid_selection_config.md)       |
 | [](grid/api/grid_sortable_config.md)        | @getshort(grid/api/grid_sortable_config.md)        |
 | [](grid/api/grid_spans_config.md)           | @getshort(grid/api/grid_spans_config.md)           |
+| [](grid/api/grid_summary_config.md)         | @getshort(grid/api/grid_summary_config.md)         |
 | [](grid/api/grid_tooltip_config.md)         | @getshort(grid/api/grid_tooltip_config.md)         |
 | [](grid/api/grid_topsplit_config.md)        | @getshort(grid/api/grid_topsplit_config.md)        |
 | [](grid/api/grid_type_config.md)            | @getshort(grid/api/grid_type_config.md)            |
