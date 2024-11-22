@@ -18,10 +18,12 @@ columns:[
     autoWidth?: boolean, // false by default
     header: [
         {
-            text?: string | ((content: ISummaryList) => string),
+            text?: string | ((content: {
+                [key: string]: string | number | null
+            }) => string),
             tooltip?: boolean | object, // true by default
             tooltipTemplate?: (
-                content: { value: string } & ISummaryList,
+                content: { value: string } & { [key: string]: string | number | null },
                 header: IHeader,
                 column: ICol
             ) => string | boolean,
@@ -46,10 +48,12 @@ columns:[
     ],
     footer?: [
         {
-            text?: string | ((content: ISummaryList) => string),
+            text?: string | ((content: {
+                [key: string]: string | number | null
+            }) => string),
             tooltip?: boolean | object, // true by default
             tooltipTemplate?: (
-                content: { value: string } & ISummaryList,
+                content: { value: string } & { [key: string]: string | number | null },
                 header: IHeader,
                 column: ICol
             ) => string | boolean,
@@ -63,22 +67,22 @@ columns:[
     type?: "string" | "number" | "boolean" | "date", // "string" by default
     numberMask?:
         | {
-              prefix?: string; // "" by default (before the value)
-              suffix?: string; // "" by default (after the value)
-              groupSeparator?: string; // "," by default
-              decSeparator?: string; // "." by default
-              allowNegative?: boolean; // true by default
-              maxIntLength?: number; 
-              maxDecLength?: number; 
-              minDecLength?: number; // 0 by default
+            prefix?: string, // "" by default (before the value)
+            suffix?: string, // "" by default (after the value)
+            groupSeparator?: string, // "," by default
+            decSeparator?: string, // "." by default
+            allowNegative?: boolean, // true by default
+            maxIntLength?: number, 
+            maxDecLength?: number, 
+            minDecLength?: number // 0 by default
           }
         | boolean,
     patternMask?:
         | {
-            pattern: ((value: string | number) => string) | string;
+            pattern: ((value: string | number) => string) | string,
             charFormat?: {
-                [char: string]: RegExp;
-            };
+                [char: string]: RegExp
+            }
           }
         | string,
     // "input" by default
@@ -95,14 +99,16 @@ columns:[
     editable?: boolean, // false by default
     resizable?: boolean, // false by default
     sortable?: boolean, // true by default
-    mark?: { min?: string, max?: string } |
-           (cell: any, columnCells: any[], row?: object, column?: object) => string,
+    mark?: { min?: string, max?: string } | 
+        (cell: any, columnCells: any[], row?: object, column?: object) => string,
     template?: (cellValue: any, row: object, column: object) => string,
     tooltip?: boolean | object, // true by default
     tooltipTemplate?: (cellValue: any, row: object, column: object) => string,
     groupable?: boolean, // false by default
     closable?: boolean, // true by default
-    summary?: ISummary | string
+    summary?: { 
+            [key: string]: string | [string, string] | (row: IRow[]) => string | number 
+        } | string
   },
   // more column objects
 ]

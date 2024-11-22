@@ -119,9 +119,9 @@ The `numberMask` property sets an input mask for entering number values into the
     - ***groupSeparator*** - sets a separator for thousands
     - ***decSeparator*** - sets a separator for decimals
     - ***allowNegative*** - allows using negative numbers
-    - ***maxIntLength*** - allows setting the maximal length of an integer
-    - ***maxDecLength*** - allows setting the maximal length of a decimal
-    - ***minDecLength*** - allows setting the minimal rendered length of a decimal
+    - ***maxIntLength*** - allows setting the maximal length of the integer value
+    - ***maxDecLength*** - allows setting the maximal length of the decimal value
+    - ***minDecLength*** - allows setting the minimal rendered length of the decimal value
 
 For example, the `numberMask` config can be set as the following object:
 
@@ -250,7 +250,7 @@ Depending on the type of the data entered into an input, you can specify differe
 
 - phone number 
 
-The phone number format includes a set of numbers, symbols and spaces. You can specify this data format as a string value of the `patternMask` property:
+The phone number format may include a set of numbers, symbols and spaces. You can specify this data format as a string value of the [`patternMask`](#patternmask) property:
 
 ~~~jsx
 {
@@ -261,9 +261,9 @@ The phone number format includes a set of numbers, symbols and spaces. You can s
 
 Example: *+9 (123) 123-1234*
 
-- license plate
+- license plate format
 
-The format of license plate usually contains a combination of letters, numbers and symbols. You can specify this data format as a string value of the `patternMask` property:
+The format for license plate usually contains a combination of letters, numbers and symbols. You can specify this data format as a string value of the [`patternMask`](#patternmask) property:
 
 ~~~jsx
 {
@@ -274,9 +274,27 @@ The format of license plate usually contains a combination of letters, numbers a
 
 Example: *9-AAA-999*
 
-- date and time
+- price format
 
-For a date and time input you can specify the `patternMask` property as an object of the following type:
+The format for price can be set via the [`numberMask`](#numbermask) property. For example, you can specify a number mask as the following object:
+
+~~~jsx
+ {
+    type: "input",
+    numberMask: {
+        prefix: "$ ",
+        maxDecLength: 2
+    }
+}
+~~~
+
+Example: *$ 1.000.000*
+
+In the above example the `prefix` property sets the currency sign and the `maxDecLength` property defines that the maximal number of decimal values used in the number is 2.
+
+- date and time format
+
+For a date and time input you can specify the [`patternMask`](#patternmask) property as an object of the following type:
 
 ~~~jsx
 patternMask: {
@@ -288,6 +306,8 @@ patternMask: {
 }
 ~~~
 
+Example: *01/01/2001 12:59*
+
 In the above example:
 
 - the `pattern` property sets a common mask pattern for date and time
@@ -295,7 +315,9 @@ In the above example:
     -  `"H": /[0-2]/` - a number from 0 to 2 for setting an hour as `H0`
     -  `"M": /[0-5]/` - a number from 0 to 5 for setting minutes as `M0`
 
-The example of rendered date and time is *01/01/2001 12:59*.
+**Related sample**: [Form. Number mask](https://snippet.dhtmlx.com/51wnauq3)
+
+**Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
 ### Getting the text value of an input 
 

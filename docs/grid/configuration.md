@@ -225,9 +225,9 @@ The `numberMask` property can be specified in two ways:
     - ***groupSeparator*** - sets a separator for thousands
     - ***decSeparator*** - sets a separator for decimals
     - ***allowNegative*** - allows using negative numbers
-    - ***maxIntLength*** - allows setting the maximal length of an integer
-    - ***maxDecLength*** - allows setting the maximal length of a decimal
-    - ***minDecLength*** - allows setting the minimal rendered length of a decimal
+    - ***maxIntLength*** - allows setting the maximal length of the integer value
+    - ***maxDecLength*** - allows setting the maximal length of the decimal value
+    - ***minDecLength*** - allows setting the minimal rendered length of the decimal value
 
 For example, the `numberMask` config can be set as the following object:
 
@@ -289,7 +289,7 @@ When the `type:"string"` type is specified for a column, the resulting number is
 
 For the above example, the value *100000.01* is converted into *100,000.01* by the predefined template of the column `type:"number"`, since the `numberMask:true` property is specified.
 
-**Related sample**: [Grid. Pattern/Number mask](https://snippet.dhtmlx.com/45gjhciv)
+**Related sample**: [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)
 
 #### patternMask
 
@@ -353,41 +353,59 @@ An example of a ZIP code according to the pattern mask is *WC2N 5DU*.
 
 An example of an ID according to the pattern mask is *ID.001*.
 
-**Related sample**: [Grid. Pattern/Number mask](https://snippet.dhtmlx.com/45gjhciv)
+**Related sample**: [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)
 
 #### Selecting the suitable data format
 
 Depending on the type of the data entered into an input, you can specify different patterns for input masks. Check examples below to learn how to provide a suitable data format:
 
-- phone number 
+- phone number format
 
-The phone number format includes a set of numbers, symbols and spaces. You can specify this data format as a string value of the `patternMask` property:
+The phone number format may include a set of numbers, symbols and spaces. You can specify this data format as a string value of the [`patternMask`](#patternmask) property:
 
 ~~~jsx
 {
-    type: "input",
+    id: "phone_number",
+    header: [{ text: "Phone number" }],
     patternMask: "+0 (000) 000-0000",
 };
 ~~~
 
 Example: *+9 (123) 123-1234*
 
-- license plate
+- license plate format
 
-The format of license plate usually contains a combination of letters, numbers and symbols. You can specify this data format as a string value of the `patternMask` property:
+The format for license plate usually contains a combination of letters, numbers and symbols. You can specify this data format as a string value of the [`patternMask`](#patternmask) property:
 
 ~~~jsx
 {
-    type: "input",
+    id: "license_plate",
+    header: [{ text: "License plate" }],
     patternMask: "0-aaa-000",
 }
 ~~~
 
 Example: *9-AAA-999*
 
-- date and time
+- price format
 
-For a date and time input you can specify the `patternMask` property as an object of the following type:
+The format for price can be set via the [`numberMask`](#numbermask) property. For example, you can specify a number mask as the following object for a "salary" column:
+
+~~~jsx
+{ 
+    id: "salary", 
+    header: [{ text: "Salary" }],
+    numberMask: { prefix: "£", maxDecLength: 0 } 
+}
+~~~
+
+Example: *£10,000*
+
+In the above example the `prefix` property sets the currency sign and the `maxDecLength` property defines that decimal values aren't used in the number.
+
+- date and time format
+
+For a date and time input you can specify the [`patternMask`](#patternmask) property as an object of the following type:
 
 ~~~jsx
 patternMask: {
@@ -399,6 +417,8 @@ patternMask: {
 }
 ~~~
 
+Example: *01/01/2001 12:59*
+
 In the above example:
 
 - the `pattern` property sets a common mask pattern for date and time
@@ -406,7 +426,7 @@ In the above example:
     -  `"H": /[0-2]/` - a number from 0 to 2 for setting an hour as `H0`
     -  `"M": /[0-5]/` - a number from 0 to 5 for setting minutes as `M0`
 
-The example of rendered date and time is *01/01/2001 12:59*.
+**Related sample**: [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)
 
 #### Setting the format for dates
 
