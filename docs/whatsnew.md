@@ -8,6 +8,43 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 9.0
+---------------
+
+Released on November 25, 2024
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-9-0/" target="_blank">Review of the release on the blog</a>
+
+### Breaking changes
+
+In this version TreeGrid becomes a part of Grid. Check the [Migration](migration.md#84---90) guide to keep in step with the latest updates.
+
+### New functionality
+
+#### DataCollection
+
+- The ability to [group data items](grid/usage.md#using-datacollection-api-for-data-grouping)
+
+#### Form
+
+- The ability to [specify patternMask/numberMask for the Input and Textarea controls](form/work_with_form.md#using-input-masks)
+
+#### Grid
+
+- [TreeGrid mode for Grid](grid/configuration.md#setting-the-treegrid-mode)
+- [Data grouping](grid/usage.md#grouping-data) (PRO version)
+- The ability to [render custom statistics in the columns](grid/configuration.md#summary-of-calculated-values)
+- The ability to specify [patternMask/numberMask for columns](grid/configuration.md#formatting-columns)
+
+### Updates
+
+#### Grid
+
+- The [`asDateObject` property](grid/configuration.md#datepicker) is added for the `editorConfig` object of the DatePicker editor
+- The `cell` parameter is added for the callback function of the following events:
+[`headerCellClick`](grid/api/grid_headercellclick_event.md), [`footerCellClick`](grid/api/grid_footercellclick_event.md), [`headerCellMouseOver`](grid/api/grid_headercellmouseover_event.md), [`footerCellMouseOver`](grid/api/grid_footercellmouseover_event.md), [`headerCellMouseDown`](grid/api/grid_headercellmousedown_event.md), [`footerCellMouseDown`](grid/api/grid_footercellmousedown_event.md), [`headerCellDblClick`](grid/api/grid_headercelldblclick_event.md), [`footerCellDblClick`](grid/api/grid_footercelldblclick_event.md), [`headerCellRightClick`](grid/api/grid_headercellrightclick_event.md), [`footerCellRightClick`](grid/api/grid_footercellrightclick_event.md)
+- [`Ctrl+Enter` shortcut](grid/configuration.md#keyboard-navigation) for expanding/collapsing the parent item in the TreeGrid mode
+
 Version 8.4.6 
 -----------------
 
