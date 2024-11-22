@@ -6,16 +6,93 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+8.4 -> 9.0
+-----------
+
+### Grid/TreeGrid
+
+#### Date format in a column
+
+Before v9.0, the format for dates in a column has been set by specifying the `type: "date"` property and the `format` option:
+
+~~~jsx {3}title="Before v9.0"
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", format: "%M %d %Y"
+}
+~~~
+
+Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](/grid/configuration#setting-the-format-for-dates) option:
+
+~~~jsx {3}title="From v9.0"
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", dateFormat: "%M %d %Y"
+}
+~~~
+
+#### Data format in a column
+
+Before v9.0 the necessary format of data for a column has been specified via the `format` property:
+
+~~~jsx {6}title="Before v9.0"
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    template: (value) => `$${value}`,
+    format: "#.0",
+}
+~~~
+
+Since v9.0, the data format is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+
+~~~jsx {6-8}title="From v9.0"
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    footer: [{ content: "sum" }],
+    numberMask: {
+        prefix: "$", minDecLength: 0
+    }
+}
+~~~
+
+#### Displaying the percentage value in a column
+
+Before v9.0, to display the percentage value in a column, the `type: "percent"` configuration option has been used. The entered value has been multiplied by 100 and displayed with the percentage sign:
+
+~~~jsx {3}title="Before v9.0"
+{ 
+    width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+    type: "percent"
+}
+~~~
+
+To display 18% in a column with the `type: "percent"` config, you should have entered the value as 0.18.
+
+Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+
+~~~jsx {3}title="From v9.0"
+{ 
+    width: 120, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+    numberMask: { suffix: "%" }    
+}
+~~~
+
+To display 18% in a column with the `numberMask: { suffix: "%" }` config, you should enter the value as 18.
+
 8.1 -> 8.2
 -----------
 
 ### DataCollection/TreeCollection
 
-Before v8.2, the **smartFilter** property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
+Before v8.2, the `smartFilter` property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
 
-Since v8.2 this property is **deprecated** and replaced with the [**permanent**](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the add/update/parse methods.
+Since v8.2 this property is **deprecated** and replaced with the [`permanent`](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the `add/update/parse` methods.
 
-Besides, the **id** property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
+Besides, the `id` property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
 
 7.3 -> 8.0
 ------------

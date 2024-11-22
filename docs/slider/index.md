@@ -8,7 +8,7 @@ description: You can have an overview of Slider in the documentation of the DHTM
 
 DHTMLX Slider allows adding handy slider bars into web pages and applications. The component is rather flexible and easily adjustable. It is available in several modes and provides simple and convenient API.
 
-Check [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/all?tag=slider).
+Check [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider).
 
 ![](../assets/slider/slider_front.png)
 
@@ -25,7 +25,7 @@ You can check the following page to learn how to build a full-featured DHTMLX Sl
 ## Related resources
 
 - You can get DHTMLX Slider as a part of the Suite library by [downloading DHTMLX Suite](https://dhtmlx.com/docs/products/dhtmlxSuite/download.shtml)
-- There are also [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/all?tag=slider)  
+- There are also [online samples for DHTMLX Slider](https://snippet.dhtmlx.com/jsfxnplp?tag=slider)  
 
 ## Guides
 

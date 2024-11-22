@@ -8,12 +8,12 @@ description: You can explore the afterEditEnd event of TreeGrid in the documenta
 
 @short: fires after editing of a cell is ended
 
-@signature: {'afterEditEnd: (value: string | number | boolean, row: object, column: object) => void;'}
+@signature: {'afterEditEnd: (value: string | number | boolean | Date, row: object, column: object) => void;'}
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `value: string | number | boolean` - the new value of a cell
+- `value: string | number | boolean | Date` - the new value of a cell
 - `row: object` - an object with a row configuration
 - `column: object` - an object with a column configuration
 
@@ -24,4 +24,7 @@ grid.events.on("afterEditEnd", (value, row, column) => {
 
 @descr:
 
-@changelog: added in v6.1
+@changelog: 
+
+- Added in v6.1
+- The value of a cell can have the Date type since v9.0

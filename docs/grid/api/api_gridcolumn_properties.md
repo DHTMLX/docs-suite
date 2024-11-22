@@ -8,7 +8,7 @@ description: You can explore the Grid column properties of Grid in the documenta
 
 ### Usage
 
-~~~js
+~~~jsx
 columns:[
  {
     id: string | number,
@@ -60,12 +60,32 @@ columns:[
             htmlEnable?: boolean, // false by default
         },
     ],
-    type?: "string" | "number" | "boolean" | "date" | "percent", // "string" by default
+    type?: "string" | "number" | "boolean" | "date", // "string" by default
+    numberMask?:
+        | {
+              prefix?: string; // "" by default (before the value)
+              suffix?: string; // "" by default (after the value)
+              groupSeparator?: string; // "," by default
+              decSeparator?: string; // "." by default
+              allowNegative?: boolean; // true by default
+              maxIntLength?: number; 
+              maxDecLength?: number; 
+              minDecLength?: number; // 0 by default
+          }
+        | boolean,
+    patternMask?:
+        | {
+            pattern: ((value: string | number) => string) | string;
+            charFormat?: {
+                [char: string]: RegExp;
+            };
+          }
+        | string,
     // "input" by default
     editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea", 
-    format?: string,
+    dateFormat?: string, // "%M %d %Y" by default 
     options?: (string | { id: string | number, value: string })[] |
-              (column: object, row?: object) => (string | { id: string | number, value: string })[],
+        (column: object, row?: object) => (string | { id: string | number, value: string })[],
     editorConfig?: obj,
     adjust?: "data" | "header" | "footer" | boolean, // false by default
     align?: "left" | "center" | "right", // "left" by default
@@ -120,15 +140,35 @@ columns:[
         </tr>
         <tr>
             <td><b>type</b></td>
-            <td>(optional) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:<ul><li><i>"string" (the default one)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li><li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li><li><i>"boolean"</i> - aligns data to the left side and applies the <i>"checkbox"</i> editor</li><li><i>"percent"</i> - aligns data to the left side and applies the <i>"input"</i> editor</li><li><i>"date"</i> - aligns data to the left side and applies the <i>"datePicker"</i> editor</li></ul></td>
+            <td>(optional) the type of a column. The type sets the alignment of the content and defines the type of the editor used in the column:<ul><li><i>"string" (the default one)</i> - aligns data to the left side and applies the <i>"input"/"textarea"</i> editor</li><li><i>"number"</i> - aligns data to the right side and applies the <i>"input"</i> editor</li><li><i>"boolean"</i> - aligns data to the left side and applies the <i>"checkbox"</i> editor</li><li><i>"date"</i> - aligns data to the left side and applies the <i>"datePicker"</i> editor</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>numberMask</b></td>
+            <td>(optional) sets an <a href="../../configuration#numbermask">input mask for entering number values</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>prefix</b> - renders a text before the resulting value</ol>
+                <ol>- <b>suffix</b> - renders a text after the resulting value</ol>
+                <ol>- <b>groupSeparator</b> - sets a separator for thousands</ol>
+                <ol>- <b>decSeparator</b> - sets a separator for decimals</ol>
+                <ol>- <b>allowNegative</b> - allows using negative numbers</ol>
+                <ol>- <b>maxIntLength</b> - allows setting the maximal length of an integer</ol>
+                <ol>- <b>maxDecLength</b> - allows setting the maximal length of a decimal</ol>
+                <ol>- <b>minDecLength</b> - allows setting the minimal rendered length of a decimal</ol></li>
+                <li>as a <i>boolean</i> value converts the number value displayed in the input field into one of the predefined templates</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>patternMask</b></td>
+            <td>(optional) sets an <a href="../../configuration#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+                <ol>- <b>pattern</b> - (*function* | *string*) allows specifying the necessary mask and change it dynamically, depending on the entered values. Can be set as:<ul><li>a *function* that takes as a parameter an entered value specified as a string or as a number and returns a string with a pattern mask</li><li>a *string* with a pattern mask</li></ul></ol>
+                <ol>- <b>charFormat</b> - (*object*) allows specifying a regular expression for an optional symbol. It is set as an object with *key:value* pairs, where the *key* is a symbol and the *value* is a regular expression</ol></li>
+                <li>as a <i>string</i> allows setting a mask as a string using a predefined set of symbols</li></ul></td>
         </tr>
         <tr>
             <td><a href="../../configuration#types-of-column-editor"><b>editorType</b></a></td>
             <td>(optional) the type of an editor used in a column: "input" | "select" | "combobox" | "textarea" | "multiselect" | "datePicker", <i>"input"</i> by default </td>
         </tr>
         <tr>
-            <td><a href="../../configuration#formatting-columns"><b>format</b></a></td>
-            <td>(optional) defines the format for the content of the column's cells. The date format must include delimiters (space or symbol), otherwise an error will be thrown</td>
+            <td><a href="../../configuration#formatting-columns"><b>dateFormat</b></a></td>
+            <td>(optional) defines the format of dates. The date format must include delimiters (spaces or symbols), otherwise an error will be thrown</td>
         </tr>
         <tr>
             <td><b>options</b></td>
@@ -136,7 +176,7 @@ columns:[
         </tr>
         <tr>
             <td id="editorconfig"><b>editorConfig</b></td>
-            <td>(optional) an object with configuration settings of the column's editor. The structure of this object depends on the specified type of the editor or the column. Check the list below:<br><br><ul><li><b>editorType: "combobox/multiselect"</b><br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:<ul><li><b>css</b> - (optional) styling to be applied to an option</li><li><b>filter</b> - (optional) sets a custom function for filtering combobox options. Takes two parameters:<ul><li><b>item</b> - (<i>object</i>) an item of data collection</li><li><b>target</b> - (<i>string</i>) the string to compare to</li></ul> and should return <i>true/false</i> to specify whether an item should be displayed in the filtered list of options</li><li><b>eventHandlers</b> - (<i>object</i>) adds event handlers to HTML elements of a custom template of combobox items. <a href="../../../combobox/api/combobox_eventhandlers_config/">Check the details.</a></li><li><b>itemHeight</b> - (optional) the height of an option</li><li><b>listHeight</b> - (optional) the height of the list of options</li><li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (optional) allows end users to add new values into the list of combobox options from UI. The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>)</li><li><b>placeholder</b> - (optional) sets a placeholder in the editor's input</li><li><b>readonly</b> - (optional) makes the editor readonly (it is only possible to select options from the list, without entering words in the input)</li><li><b>template</b> - (optional) a callback function which returns a string. It is called with an object argument which contains two properties:<ul><li><b>id</b> - the id of the selected option</li></ul><ul><li><b>value</b> - the value of the selected option</li></ul></li></ul><br></li><li><b>editorType: "multiselect"</b><br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:<ul><li><b>selectAllButton</b> - (optional) adds a button that allows selecting all the options in the editor</li></ul><br></li><li><b>editorType:"datePicker"</b><br><br>For this type of editor, the <b>editorConfig</b> object can include <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b>, <b>range</b>, and <b>dateFormat</b> ones).<br><br></li><li><b>editorType:"input"</b> and column <b>type:"number"</b><br><br>For this combination, the <b>editorConfig</b> object can include the following properties:<ul><li><b>min</b> - (optional) the minimum allowed value</li><li><b>max</b> - (optional) the maximum allowed value</li></ul></li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a></td>
+            <td>(optional) an object with configuration settings of the column's editor. The structure of this object depends on the specified type of the editor or the column. Check the list below:<br><br><ul><li><b>editorType: "combobox/multiselect"</b><br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:<ul><li><b>css</b> - (optional) styling to be applied to an option</li><li><b>filter</b> - (optional) sets a custom function for filtering combobox options. Takes two parameters:<ul><li><b>item</b> - (<i>object</i>) an item of data collection</li><li><b>target</b> - (<i>string</i>) the string to compare to</li></ul> and should return <i>true/false</i> to specify whether an item should be displayed in the filtered list of options</li><li><b>eventHandlers</b> - (<i>object</i>) adds event handlers to HTML elements of a custom template of combobox items. <a href="../../../combobox/api/combobox_eventhandlers_config/">Check the details.</a></li><li><b>itemHeight</b> - (optional) the height of an option</li><li><b>listHeight</b> - (optional) the height of the list of options</li><li><a href="../../configuration/#editable-combobox"><b>newOptions</b></a> - (optional) allows end users to add new values into the list of combobox options from UI. The new options will also appear in the drop-down list of the header/footer filters (<i>content: "selectFilter" | "comboFilter"</i>)</li><li><b>placeholder</b> - (optional) sets a placeholder in the editor's input</li><li><b>readonly</b> - (optional) makes the editor readonly (it is only possible to select options from the list, without entering words in the input)</li><li><b>template</b> - (optional) a callback function which returns a string. It is called with an object argument which contains two properties:<ul><li><b>id</b> - the id of the selected option</li></ul><ul><li><b>value</b> - the value of the selected option</li></ul></li></ul><br></li><li><b>editorType: "multiselect"</b><br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:<ul><li><b>selectAllButton</b> - (optional) adds a button that allows selecting all the options in the editor</li></ul><br></li><li><b>editorType:"datePicker"</b> and column <b>type:"date"</b><br><br>For this type of editor, the <b>editorConfig</b> object can include the following properties:<ul><li><b>asDateObject</b> - (optional) sets the date picker mode that presupposes saving a date as a Date object</li></ul> and <a href="https://docs.dhtmlx.com/suite/category/calendar-properties/">a set of properties of Calendar</a> (except for the <b>value</b> and <b>range</b> ones)<br><br></li><li><b>editorType:"input"</b> and column <b>type:"number"</b><br><br>For this combination, the <b>editorConfig</b> object can include the following properties:<ul><li><b>min</b> - (optional) the minimum allowed value</li><li><b>max</b> - (optional) the maximum allowed value</li></ul></li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/1mxmshax" target="_blank">Grid. Rich example with templates and different editors</a></td>
         </tr>
         <tr>
             <td><a href="../../configuration#autosize-for-columns"><b>adjust</b></a></td>
