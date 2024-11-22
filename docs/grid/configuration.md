@@ -1185,33 +1185,50 @@ Note, that it does not work for the select editor (`editorType: "select"`) and y
 
 ## Summary of calculated values
 
-You can get the summary of calculated values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column: 
+You can get the summary of calculated values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column.
 
-### Creating a summary object
+:::note
+You can use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to redefine the default functors or to create a custom function for data calculation.
+::: 
 
-To form a summary list on the Grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with calculated values, where the *keys* are the field names and the *values* can be:
+### Column summary
 
-- a string with the name of the applied functor
+To form a summary list that will be available at the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
 
-- a tuple `[string, string]` that specifies the field name and the name of the applied functor
-
-- a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
-
-To form a summary list that will be available on the column's level only, you should use the [`summary`](grid/api/api_gridcolumn_properties.md) configuration option of the column. The `summary` configuration option of a column can be initialized either as an *object* or as a *string*. As an object it contains calculated values set as *key:value* pairs, where the *keys* are the field names and *values* can be:
-
-- a string with the name of the applied functor
+- a string with the name of the [applied functor](helpers/data_calculation_functions.md)
 
 - a tuple `[string, string]` that specifies the field name and the name of the applied functor
 
 - a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
+
+~~~jsx
+{
+    id: "quantity",
+    type: "number",
+    header: [{ text: "Quantity" }],
+    footer: [{ text: ({ sum }) => sum }],
+    summary: "sum",
+    numberMask: { prefix: "$" },
+},
+~~~
 
 :::info
-When the column `summary` property is initialized as a string, the resulting value (excluding "count") is used with applied **patternMask**/**numberMask**, if there are any.
+When the column `summary` property is initialized as a string, the resulting value (excluding "count") is used with applied [`patternMask`](#patternmask)/[`numberMask`](#numbermask), if there are any.
 :::
 
-You can use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to redefine the default functors or to create a custom function for data calculation.
+**Related sample:** [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
 
-Here's an example of using both `summary` configuration options - for Grid and for a column:
+### Grid summary
+
+To form a summary list at the Grid's level, you need to use the [`summary`](grid/api/grid_summary_config.md) configuration option of Grid. The defined list will be available both on the grid's level and on the column's level. The `summary` configuration option of Grid is an *object* with calculated values, where the *keys* are the field names and the *values* can be:
+
+- a string with the name of the [applied functor](helpers/data_calculation_functions.md)
+
+- a tuple `[string, string]` that specifies the field name and the name of the applied functor
+
+- a `(rows: IRow[]) => string | number;` function for calculating the summary of the column
+
+Here's an example of using the Grid and column `summary` configuration options:
 
 ~~~jsx {16-17,23-28,37-42}
 // defining the method for calculating the density of population
@@ -1307,7 +1324,7 @@ console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the val
 
 You can specify the text of the header/footer column via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
 
-- `content` - an object with the content of the header/footer tooltip that contains the calculated values as that contains the calculated values as *key:value* pairs, where:
+- `content` - an object with the content of the header/footer tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
     - the *key* is either the key defined in the list or the functor name
     - the *value* can be a *string*, *number* or *null*
 
@@ -2259,7 +2276,7 @@ function which is called with the following parameters:
 - `header/footer` - (*object*) the object of the column header/footer
 - `column` - (*object*) the object of a column
 
-and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip
+and returns a string with the tooltip template for the header/footer or *false* to disable a tooltip.
 
 ~~~jsx {9}
 const grid = new dhx.Grid("grid_container", {

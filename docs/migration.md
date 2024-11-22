@@ -11,6 +11,133 @@ description: You can explore how to migrate to newer versions in the documentati
 
 ### Grid/TreeGrid
 
+#### TreeGrid as a Grid mode
+
+Since v9.0 the TreeGrid component becomes a part of the Grid component. To enable the [TreeGrid mode](grid/treegrid_mode.md) you need just to use the `dhx.Grid` constructor and set the `type: "tree"` property in the Grid configuration. This functionality is available in the PRO version.
+
+~~~jsx title="Before v9.0"
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset
+});
+~~~
+
+~~~jsx title="From v9.0"
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset
+});
+~~~
+
+#### Data grouping
+
+Since v9.0 the TreeGrid data grouping methods `groupBy()` and `ungroup()`, and the `groupTitleTemplate` property have been deprecated. The grouping functionality is now available via the [`group`](grid/api/grid_group_config.md) configuration property of Grid.
+
+~~~jsx {2}title="From v9.0"
+const grid = new dhx.Grid("grid_container", {
+    group: true,
+    columns: [
+        // columns config
+    ],
+    data: dataset
+});
+~~~
+
+This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](grid/usage/#grouping-data) and [using DataCollection API](grid/usage.md#using-datacollection-api-for-data-grouping) for grouping Grid data.
+
+#### Statistical functions in the column header/footer
+
+Before v9.0 the `content` property of the column header/footer could have "avg" | "sum" | "max" | "min" | "count" statistical functions as arguments. 
+
+~~~jsx {7}title="Before v9.0"
+{
+    width: 130,
+    id: "balance",
+    header: [{text: "Balance"}, {content: "inputFilter"}],
+    footer: [
+        {
+            content: "sum",
+            tooltipTemplate: balanceTemplate
+        },
+    ]
+}
+~~~
+
+Since v9.0 the following updates for the use of statistical functions are available:
+
+- the DHTMLX library provides a [helper method `dhx.methods()`](helpers/data_calculation_functions.md) that allows both calling the existing data calculation functions:
+
+~~~jsx
+const rows = [{ value: 10 }, { value: 20 }, { value: 30 }];
+const sum = dhx.methods.sum(rows, "value"); // 60
+~~~
+
+and redefining them:
+
+~~~jsx
+dhx.methods.doubleSum = (rows, field) => {
+    return rows.reduce((sum, row) => sum + row[field] * 2, 0);
+};
+
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            width: 150,
+            id: "population",
+            header: [{ text: "Population" }],
+            summary: "doubleSum"
+        },
+    ],
+    data: dataset
+});
+~~~
+
+- the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#summary-of-calculated-values) both at the Grid and column's levels
+
+- the `text` property of the header/footer and spans configuration objects can be set as a *callback function* called with the following parameter:
+    - `content` - an object with the content of the header/footer/spans tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+
+- the `tooltipTemplate` property of the header/footer and spans configuration objects can be set as a *callback function* called with the following parameters:
+    - `content` - an object with the content of the header/footer/spans tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+    - `value` - (*string*) the value rendered in a cell, including the applied templates
+    - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+    - `header/footer/span` - (*object*) the object of the column header/footer/span
+    - `column` - (*object*) the object of a column (for the header/footer `tooltipTemplate` property)
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [{ text: "Population" }],
+            summary: "count"
+        }
+    ],
+    summary: { totalPopulation: ["population", "sum"] },
+    spans: [
+        {
+            row: "6",
+            column: "population",
+            rowspan: 9,
+            text: ({ count }) => ("Count population:" + count),
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+        },
+    ],
+    data: dataset,
+});
+~~~
+
 #### Date format in a column
 
 Before v9.0, the format for dates in a column has been set by specifying the `type: "date"` property and the `format` option:
@@ -61,7 +188,7 @@ Since v9.0, the data format is specified via the [`numberMask`](/grid/configurat
 
 #### Displaying the percentage value in a column
 
-Before v9.0, to display the percentage value in a column, the `type: "percent"` configuration option has been used. The entered value has been multiplied by 100 and displayed with the percentage sign:
+Before v9.0, to display the percentage value in a column, the `type: "percent"` configuration option has been used:
 
 ~~~jsx {3}title="Before v9.0"
 { 
@@ -69,8 +196,6 @@ Before v9.0, to display the percentage value in a column, the `type: "percent"` 
     type: "percent"
 }
 ~~~
-
-To display 18% in a column with the `type: "percent"` config, you should have entered the value as 0.18.
 
 Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
 
@@ -81,7 +206,7 @@ Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of
 }
 ~~~
 
-To display 18% in a column with the `numberMask: { suffix: "%" }` config, you should enter the value as 18.
+
 
 8.1 -> 8.2
 -----------

@@ -27,7 +27,7 @@ dhx.methods.doubleSum = (rows, field) => {
     return rows.reduce((sum, row) => sum + row[field] * 2, 0);
 };
 
-const grid = new dhx.Grid("grid", {
+const grid = new dhx.Grid("grid_container", {
     columns: [
         {
             width: 150,

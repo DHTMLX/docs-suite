@@ -479,6 +479,8 @@ The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX S
 
 You can group row data by column values to make them more suitable for analysis. It is possible to set a predefined Grid configuration to initialize Grid with grouped data or to use the [DataCollection API](../../data_collection) for grouping Grid data. Besides, you can group Grid rows via the UI.
 
+**Related sample:** [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
+
 :::info important
 - Data grouping isn't intended for working with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
 - Modifying the values of grouped elements won't modify the aggregated values
@@ -531,6 +533,8 @@ With the Grid `groupable` property enabled you can:
     - either by sorting the grouped field beforehand
     - or by clicking a group element on the group panel
 - edit the nesting level of grouping by modifying the grouping order by either moving elements to the group panel or removing elements from the group panel
+
+**Related sample:** [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
 
 The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
 
