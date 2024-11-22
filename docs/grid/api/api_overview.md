@@ -56,23 +56,25 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 
 ### Mouse
 
-| Name                                            | Description                                            |
-| ----------------------------------------------- | ------------------------------------------------------ |
-| [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event.md)            |
-| [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event.md)         |
-| [](grid/api/grid_cellmousedown_event.md)        | @getshort(grid/api/grid_cellmousedown_event.md)        |
-| [](grid/api/grid_cellmouseover_event.md)        | @getshort(grid/api/grid_cellmouseover_event.md)        |
-| [](grid/api/grid_cellrightclick_event.md)       | @getshort(grid/api/grid_cellrightclick_event.md)       |
-| [](grid/api/grid_footercellclick_event.md)      | @getshort(grid/api/grid_footercellclick_event.md)      |
-| [](grid/api/grid_footercelldblclick_event.md)   | @getshort(grid/api/grid_footercelldblclick_event.md)   |
-| [](grid/api/grid_footercellmousedown_event.md)  | @getshort(grid/api/grid_footercellmousedown_event.md)  |
-| [](grid/api/grid_footercellmouseover_event.md)  | @getshort(grid/api/grid_footercellmouseover_event.md)  |
-| [](grid/api/grid_footercellrightclick_event.md) | @getshort(grid/api/grid_footercellrightclick_event.md) |
-| [](grid/api/grid_headercellclick_event.md)      | @getshort(grid/api/grid_headercellclick_event.md)      |
-| [](grid/api/grid_headercelldblclick_event.md)   | @getshort(grid/api/grid_headercelldblclick_event.md)   |
-| [](grid/api/grid_headercellmousedown_event.md)  | @getshort(grid/api/grid_headercellmousedown_event.md)  |
-| [](grid/api/grid_headercellmouseover_event.md)  | @getshort(grid/api/grid_headercellmouseover_event.md)  |
-| [](grid/api/grid_headercellrightclick_event.md) | @getshort(grid/api/grid_headercellrightclick_event.md) |
+| Name                                            	| Description                                            	|
+| ------------------------------------------------- | --------------------------------------------------------- |
+| [](grid/api/grid_cellclick_event.md)            	| @getshort(grid/api/grid_cellclick_event.md)            	|
+| [](grid/api/grid_celldblclick_event.md)         	| @getshort(grid/api/grid_celldblclick_event.md)         	|
+| [](grid/api/grid_cellmousedown_event.md)        	| @getshort(grid/api/grid_cellmousedown_event.md)        	|
+| [](grid/api/grid_cellmouseover_event.md)        	| @getshort(grid/api/grid_cellmouseover_event.md)        	|
+| [](grid/api/grid_cellrightclick_event.md)       	| @getshort(grid/api/grid_cellrightclick_event.md)       	|
+| [](grid/api/grid_footercellclick_event.md)      	| @getshort(grid/api/grid_footercellclick_event.md)      	|
+| [](grid/api/grid_footercelldblclick_event.md)   	| @getshort(grid/api/grid_footercelldblclick_event.md)   	|
+| [](grid/api/grid_footercellmousedown_event.md)  	| @getshort(grid/api/grid_footercellmousedown_event.md)  	|
+| [](grid/api/grid_footercellmouseover_event.md)  	| @getshort(grid/api/grid_footercellmouseover_event.md)  	|
+| [](grid/api/grid_footercellrightclick_event.md) 	| @getshort(grid/api/grid_footercellrightclick_event.md) 	|
+| [](grid/api/grid_grouppanelitemclick_event.md)  	| @getshort(grid/api/grid_grouppanelitemclick_event.md)  	|
+| [](grid/api/grid_grouppanelitemmousedown_event.md)| @getshort(grid/api/grid_grouppanelitemmousedown_event.md) |
+| [](grid/api/grid_headercellclick_event.md)      	| @getshort(grid/api/grid_headercellclick_event.md)      	|
+| [](grid/api/grid_headercelldblclick_event.md)   	| @getshort(grid/api/grid_headercelldblclick_event.md)   	|
+| [](grid/api/grid_headercellmousedown_event.md)  	| @getshort(grid/api/grid_headercellmousedown_event.md)  	|
+| [](grid/api/grid_headercellmouseover_event.md)  	| @getshort(grid/api/grid_headercellmouseover_event.md)  	|
+| [](grid/api/grid_headercellrightclick_event.md) 	| @getshort(grid/api/grid_headercellrightclick_event.md) 	|
 
 ### Key Navigation and Scroll
 
@@ -166,6 +168,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
 | [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
+| [](grid/api/grid_closable_config.md)        | @getshort(grid/api/grid_closable_config.md)        |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
 | [](grid/api/grid_css_config.md)             | @getshort(grid/api/grid_css_config.md)             |
 | [](grid/api/grid_data_config.md)            | @getshort(grid/api/grid_data_config.md)            |
@@ -178,6 +181,8 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_footerautoheight_config.md)| @getshort(grid/api/grid_footerautoheight_config.md)|
 | [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
 | [](grid/api/grid_footertooltip_config.md)   | @getshort(grid/api/grid_footertooltip_config.md)   |
+| [](grid/api/grid_group_config.md)        	  | @getshort(grid/api/grid_group_config.md)           |
+| [](grid/api/grid_groupable_config.md)       | @getshort(grid/api/grid_groupable_config.md)       |
 | [](grid/api/grid_headerautoheight_config.md)| @getshort(grid/api/grid_headerautoheight_config.md)|
 | [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
 | [](grid/api/grid_headertooltip_config.md)   | @getshort(grid/api/grid_headertooltip_config.md)   |
