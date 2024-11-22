@@ -1551,6 +1551,7 @@ module.exports = {
                       "form/api/input/input_enable_method",
                       "form/api/input/input_focus_method",
                       "form/api/input/input_getproperties_method",
+                      "form/api/input/input_gettext_method",
                       "form/api/input/input_getvalue_method",
                       "form/api/input/input_hide_method",
                       "form/api/input/input_isdisabled_method",
