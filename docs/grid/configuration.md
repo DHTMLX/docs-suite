@@ -1185,10 +1185,10 @@ Note, that it does not work for the select editor (`editorType: "select"`) and y
 
 ## Summary of calculated values
 
-You can get the summary of calculated values based on the data of columns using the Grid API. First, you need to form a summary list on the needed level - for the whole component or for a particular column.
+You can get the summary of calculated values based on the columns data using the Grid API. First, you need to form a summary list on the needed level: for a [particular column](#column-summary) or for the [whole component](#grid-summary). After that, you can [get the object with the calculated values](#getting-the-summary-object) using the `getSummary()` method.
 
-:::note
-You can use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to redefine the default functors or to create a custom function for data calculation.
+:::info
+Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation.
 ::: 
 
 ### Column summary

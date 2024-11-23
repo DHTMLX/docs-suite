@@ -32,7 +32,7 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 #### Grid
 
 - [TreeGrid mode for Grid](grid/configuration.md#setting-the-treegrid-mode)
-- [Data grouping](grid/usage.md#grouping-data) (PRO version)
+- [Row data grouping](grid/usage.md#grouping-data) (PRO version)
 - The ability to [render custom statistics in the columns](grid/configuration.md#summary-of-calculated-values)
 - The ability to specify [patternMask/numberMask for columns](grid/configuration.md#formatting-columns)
 

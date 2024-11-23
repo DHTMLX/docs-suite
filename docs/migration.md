@@ -36,7 +36,7 @@ const grid = new dhx.Grid("grid_container", {
 
 #### Data grouping
 
-Since v9.0 the TreeGrid data grouping methods `groupBy()` and `ungroup()`, and the `groupTitleTemplate` property have been deprecated. The grouping functionality is now available via the [`group`](grid/api/grid_group_config.md) configuration property of Grid.
+Since v9.0 the TreeGrid data grouping methods `groupBy()` and `ungroup()`, and the `groupTitleTemplate` property have been deprecated. The data grouping functionality is now available via the [`group`](grid/api/grid_group_config.md) configuration property of Grid.
 
 ~~~jsx {2}title="From v9.0"
 const grid = new dhx.Grid("grid_container", {
@@ -50,9 +50,9 @@ const grid = new dhx.Grid("grid_container", {
 
 This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](grid/usage/#grouping-data) and [using DataCollection API](grid/usage.md#using-datacollection-api-for-data-grouping) for grouping Grid data.
 
-#### Statistical functions in the column header/footer
+#### Using statistical functions in the column header/footer
 
-Before v9.0 the `content` property of the column header/footer could have "avg" | "sum" | "max" | "min" | "count" statistical functions as arguments. 
+Before v9.0 the `content` property of the column header/footer could have the default statistical functions "avg" | "sum" | "max" | "min" | "count" as arguments. 
 
 ~~~jsx {7}title="Before v9.0"
 {
@@ -68,18 +68,20 @@ Before v9.0 the `content` property of the column header/footer could have "avg" 
 }
 ~~~
 
-Since v9.0 the following updates for the use of statistical functions are available:
+Since v9.0 it is possible both to define the default statistical functions and create custom functions for data calculation. The following new functionality has been added:
 
-- the DHTMLX library provides a [helper method `dhx.methods()`](helpers/data_calculation_functions.md) that allows both calling the existing data calculation functions:
+- the DHTMLX library provides a [helper method `dhx.methods()`](helpers/data_calculation_functions.md) that allows:     
 
-~~~jsx
+1. defining the default data calculation functions:
+
+~~~jsx title="From v9.0"
 const rows = [{ value: 10 }, { value: 20 }, { value: 30 }];
 const sum = dhx.methods.sum(rows, "value"); // 60
 ~~~
 
-and redefining them:
+2. redefining the default functions:
 
-~~~jsx
+~~~jsx title="From v9.0"
 dhx.methods.doubleSum = (rows, field) => {
     return rows.reduce((sum, row) => sum + row[field] * 2, 0);
 };
@@ -99,32 +101,60 @@ const grid = new dhx.Grid("grid_container", {
 
 - the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#summary-of-calculated-values) both at the Grid and column's levels
 
-- the `text` property of the header/footer and spans configuration objects can be set as a *callback function* called with the following parameter:
-    - `content` - an object with the content of the header/footer/spans tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
+- the [`getSummary()`](grid/api/grid_getsummary_method.md) method is added for getting the summary data of either a column or of the Grid
+
+- the `text` property of the Grid column [*header/footer*](grid/configuration.md#headerfooter-text) configuration object can be set as a *callback function* called with the following parameter:
+    - `content` - an object with the content of the column header/footer that contains the calculated values from the `summary` property as *key:value* pairs, where:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-- the `tooltipTemplate` property of the header/footer and spans configuration objects can be set as a *callback function* called with the following parameters:
-    - `content` - an object with the content of the header/footer/spans tooltip. Contains two properties which are available either from the component's or from the column's configuration:
-    - `value` - (*string*) the value rendered in a cell, including the applied templates
-    - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+- the `tooltipTemplate` property of the Grid column [*header/footer*](grid/configuration.md#column-headerfooter-tooltip) configuration object can be set as a *callback function* called with the following parameters:
+    - `content` - an object with the content of the header/footer. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - (*string*) the value rendered in a cell, including the applied templates
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
+    - `header/footer` - (*object*) the object of the column header/footer 
+    - `column` - (*object*) the object of a column 
+
+- the `text` property of the Grid [*spans*](grid/configuration.md#spans) configuration object can be set as a *callback function* called with the following parameter:
+    - `content` - an object with the content of the spans tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
-    - `header/footer/span` - (*object*) the object of the column header/footer/span
-    - `column` - (*object*) the object of a column (for the header/footer `tooltipTemplate` property)
 
-~~~jsx
-const grid = new dhx.Grid("grid_container", {
+- the `tooltipTemplate` property of the Grid [*spans*](grid/configuration.md#adding-templates-for-column-and-spans-tooltip) configuration objects can be set as a *callback function* called with the following parameters:
+    - `content` - an object with the content of the spans tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - (*string*) the value rendered in a cell, including the applied templates
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
+    - `span` - (*object*) the span object 
+
+~~~jsx title="From v9.0"
+const grid = new dhx.Grid("grid", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }] },
         { 
             width: 150, 
             id: "population", 
-            header: [{ text: "Population" }],
+            header: [
+                { 
+                    text: "Population" , 
+                    tooltipTemplate: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${ count }`
+                }
+            ],
             summary: "count"
+        },
+        {
+            width: 150,
+            id: "age",
+            header: [{ text: "Med. Age" }],
+            summary: { avgAge: "avg" } 
         }
     ],
-    summary: { totalPopulation: ["population", "sum"] },
+    summary: {
+        totalPopulation: ["population", "sum"],
+    },
     spans: [
         {
             row: "6",
@@ -134,8 +164,16 @@ const grid = new dhx.Grid("grid_container", {
             tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
         },
     ],
-    data: dataset,
+    data: dataset
 });
+
+// getting summary data for the component
+const totalSummary = grid.getSummary();
+console.log(totalSummary); //{ totalPopulation: 1000000 } - sum of all the values in the "population" column
+
+// getting summary data for the "age" column
+const columnSummary = grid.getSummary("age");
+console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
 ~~~
 
 #### Date format in a column
