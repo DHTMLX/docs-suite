@@ -48,7 +48,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](grid/usage/#grouping-data) and [using DataCollection API](grid/usage.md#using-datacollection-api-for-data-grouping) for grouping Grid data.
+This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](grid/usage.md#grouping-data) and [using DataCollection API](grid/usage.md#using-datacollection-api-for-data-grouping) for grouping Grid data.
 
 #### Using statistical functions in the column header/footer
 
@@ -101,7 +101,7 @@ const grid = new dhx.Grid("grid_container", {
 
 - the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#summary-of-calculated-values) both at the Grid and column's levels
 
-- the [`getSummary()`](grid/api/grid_getsummary_method.md) method is added for getting the summary data of either a column or of the Grid
+- the [`getSummary()`](grid/api/grid_getsummary_method.md) method is added for getting the summary data either of a column or of the Grid
 
 - the `text` property of the Grid column [*header/footer*](grid/configuration.md#headerfooter-text) configuration object can be set as a *callback function* called with the following parameter:
     - `content` - an object with the content of the column header/footer that contains the calculated values from the `summary` property as *key:value* pairs, where:

@@ -33,17 +33,34 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 - [TreeGrid mode for Grid](grid/configuration.md#setting-the-treegrid-mode)
 - [Row data grouping](grid/usage.md#grouping-data) (PRO version)
-- The ability to [render custom statistics in the columns](grid/configuration.md#summary-of-calculated-values)
+- The ability to [render custom statistics in the header/footer of columns and Grid spans](grid/configuration.md#summary-of-calculated-values)
 - The ability to specify [patternMask/numberMask for columns](grid/configuration.md#formatting-columns)
 
 ### Updates
 
 #### Grid
 
-- The [`asDateObject` property](grid/configuration.md#datepicker) is added for the `editorConfig` object of the DatePicker editor
+- The [`asDateObject` property](grid/configuration.md#datepicker) is added for the `editorConfig` object of the DatePicker column editor
 - The `cell` parameter is added for the callback function of the following events:
 [`headerCellClick`](grid/api/grid_headercellclick_event.md), [`footerCellClick`](grid/api/grid_footercellclick_event.md), [`headerCellMouseOver`](grid/api/grid_headercellmouseover_event.md), [`footerCellMouseOver`](grid/api/grid_footercellmouseover_event.md), [`headerCellMouseDown`](grid/api/grid_headercellmousedown_event.md), [`footerCellMouseDown`](grid/api/grid_footercellmousedown_event.md), [`headerCellDblClick`](grid/api/grid_headercelldblclick_event.md), [`footerCellDblClick`](grid/api/grid_footercelldblclick_event.md), [`headerCellRightClick`](grid/api/grid_headercellrightclick_event.md), [`footerCellRightClick`](grid/api/grid_footercellrightclick_event.md)
 - [`Ctrl+Enter` shortcut](grid/configuration.md#keyboard-navigation) for expanding/collapsing the parent item in the TreeGrid mode
+
+### New samples
+
+- [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
+- [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
+- [Grid. Grouping aggregated data via data collection (PRO)](https://snippet.dhtmlx.com/vo3pgkgh)
+- [Grid. Grouping missing data (PRO)](https://snippet.dhtmlx.com/0geopa0v)
+- [Grid. Grouping and totals in the summary row (PRO)](https://snippet.dhtmlx.com/zhc67itn)
+- [Grid. Grouping and totals in group headers (PRO)](https://snippet.dhtmlx.com/7bp6knt7)
+- [Grid. Grouping and totals in group headers via data collection (PRO)](https://snippet.dhtmlx.com/84wfunzz)
+- [Grid. Grouping and totals in the summary row via data collection (PRO)](https://snippet.dhtmlx.com/ihd6gtpj)
+- [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
+- [Grid. Custom totals for footer and columns with dynamic updates on edit](https://snippet.dhtmlx.com/59d6hqtm)
+- [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)
+- [Form. Number mask](https://snippet.dhtmlx.com/51wnauq3)
+- [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z) 
+
 
 Version 8.4.6 
 -----------------

@@ -1188,8 +1188,16 @@ Note, that it does not work for the select editor (`editorType: "select"`) and y
 You can get the summary of calculated values based on the columns data using the Grid API. First, you need to form a summary list on the needed level: for a [particular column](#column-summary) or for the [whole component](#grid-summary). After that, you can [get the object with the calculated values](#getting-the-summary-object) using the `getSummary()` method.
 
 :::info
-Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation.
+Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
 ::: 
+
+The calculated values from the `summary` property of a column or Grid can be used:
+    - in the configuration objects of the [`text`](#headerfooter-text) and [`tooltipTemplate`](#column-headerfooter-tooltip) properties of the column header/footer 
+    - in the configuration objects of the `text` and `tooltipTemplate` properties of the Grid [`spans`](#spans) property
+
+**Related sample:** [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
+
+**Related sample:** [Grid. Custom totals for footer and columns with dynamic updates on edit](https://snippet.dhtmlx.com/59d6hqtm)
 
 ### Column summary
 
@@ -1215,8 +1223,6 @@ To form a summary list that will be available at the column's level only, you sh
 :::info
 When the column `summary` property is initialized as a string, the resulting value (excluding "count") is used with applied [`patternMask`](#patternmask)/[`numberMask`](#numbermask), if there are any.
 :::
-
-**Related sample:** [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
 
 ### Grid summary
 
@@ -1292,7 +1298,7 @@ const summary = grid.getSummary();
 console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
 ~~~
 
-You can also pass the `id` of a column to the method to get an object with the calculated values defined in the column's configuration together with the calculated values defined in the component's configuration. In the following example calculated values are used for rendering summary for a column:
+You can also pass the `id` of a column to the method to get an object with the calculated values defined in the column's configuration together with the calculated values defined in the component's configuration. In the following example calculated values are used for rendering the summary for a column:
 
 ~~~jsx {17-19,21-23}
 const grid = new dhx.Grid("grid_container", {
@@ -1328,7 +1334,7 @@ You can specify the text of the header/footer column via the `text` property. It
     - the *key* is either the key defined in the list or the functor name
     - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -1988,7 +1994,7 @@ Each span object contains the following properties:
         - the *key* is either the key defined in the list or the functor name
         - the *value* can be a *string*, *number* or *null*
 
-The calculated values are taken either from the [`summary`](grid/api/grid_summary_config.md) config option of the component or the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
+The calculated values are taken from the [`summary`](grid/api/grid_summary_config.md) config option of the component and the [`summary`](grid/api/api_gridcolumn_properties.md) config option of a column.
 
 :::note
 In case key names in the `summary` configs are the same, values are taken from the column's configuration option. 
@@ -2306,7 +2312,7 @@ You can provide a tooltip template for the header content of any type, which all
 
 Check the example below:
 
-~~~jsx {14,27}
+~~~jsx {14,26}
 const balanceTemplate = value => {
     return value > 0
         ? `<div style='color:green'>⬆ $${value}</div>`
