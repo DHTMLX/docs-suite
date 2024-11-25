@@ -70,7 +70,7 @@ Before v9.0 the `content` property of the column header/footer could have the de
 
 Since v9.0 it is possible both to define the default statistical functions and create custom functions for data calculation. The following new functionality has been added:
 
-- the DHTMLX library provides a [helper method `dhx.methods()`](helpers/data_calculation_functions.md) that allows:     
+- the DHTMLX library provides a [helper method `dhx.methods`](helpers/data_calculation_functions.md) that allows:     
 
 1. defining the default data calculation functions:
 

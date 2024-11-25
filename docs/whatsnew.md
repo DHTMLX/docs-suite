@@ -21,29 +21,50 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 ### New functionality
 
+#### Common features
+
+- The new helper method [`dhx.methods`](helpers/data_calculation_functions.md) to define the default data calculation functions used by the library and redefine them to create custom functions
+
 #### DataCollection
 
-- The ability to [group data items](grid/usage.md#using-datacollection-api-for-data-grouping)
+- The ability to [group data items](grid/usage.md#using-datacollection-api-for-data-grouping), aggregate data in a group, adjust the order and configuration of data grouping, render statistics in the summary rows
+	- new methods: [`group()`](data_collection/api/datacollection_group_method.md), [`ungroup()`](data_collection/api/datacollection_ungroup_method.md), [`isGrouped()`](data_collection/api/datacollection_isgrouped_method.md)
+	- new events: [`beforeGroup`](data_collection/api/datacollection_beforegroup_event.md), [`afterGroup`](data_collection/api/datacollection_aftergroup_event.md), [`beforeUnGroup`](data_collection/api/datacollection_beforeungroup_event.md), [`afterUnGroup`](data_collection/api/datacollection_afterungroup_event.md)
 
 #### Form
 
 - The ability to [specify patternMask/numberMask for the Input and Textarea controls](form/work_with_form.md#using-input-masks)
+- The new [`getText()`](form/api/input/input_gettext_method.md) method for getting the text value of an input
 
 #### Grid
 
-- [TreeGrid mode for Grid](grid/configuration.md#setting-the-treegrid-mode)
-- [Row data grouping](grid/usage.md#grouping-data) (PRO version)
+- The ["tree" mode](grid/configuration.md#setting-the-treegrid-mode) for Grid (PRO version)
+- [Row data grouping](grid/usage.md#grouping-data) (PRO version) with the ability to aggregate data in a group, adjust the appearance, order and configuration of data grouping, render statistics in the summary rows
+	- new Grid properties: [`group`](grid/api/grid_group_config.md), [`groupable`](grid/api/grid_groupable_config.md), [`closable`](grid/api/grid_closable_config.md)
+	- new column properties: [`groupable`](grid/api/api_gridcolumn_properties.md), [`closable`](grid/api/api_gridcolumn_properties.md)
+	- new events: [`groupPanelItemClick`](grid/api/grid_grouppanelitemclick_event.md), [`groupPanelItemMouseDown`](grid/api/grid_grouppanelitemmousedown_event.md)
 - The ability to [render custom statistics in the header/footer of columns and Grid spans](grid/configuration.md#summary-of-calculated-values)
+	- the `text` and `tooltipTemplate` properties of a column and of the Grid `spans` configuration object can be set as callback functions [to render calculated summary values](grid/configuration.md#summary-of-calculated-values)
+	- new Grid property: [`summary`](grid/api/grid_summary_config.md)
+	- new method: [`getSummary()`](grid/api/grid_getsummary_method.md)
+	- new column property: [`summary`](grid/api/api_gridcolumn_properties.md)
 - The ability to specify [patternMask/numberMask for columns](grid/configuration.md#formatting-columns)
+- [Localization for Grid labels](grid/localization.md) is added
 
 ### Updates
 
 #### Grid
 
-- The [`asDateObject` property](grid/configuration.md#datepicker) is added for the `editorConfig` object of the DatePicker column editor
+- The [`asDateObject` property](grid/configuration.md#datepicker) is added for the `editorConfig` object of the DatePicker column editor to provide the ability to work with a Date object as with a string
 - The `cell` parameter is added for the callback function of the following events:
 [`headerCellClick`](grid/api/grid_headercellclick_event.md), [`footerCellClick`](grid/api/grid_footercellclick_event.md), [`headerCellMouseOver`](grid/api/grid_headercellmouseover_event.md), [`footerCellMouseOver`](grid/api/grid_footercellmouseover_event.md), [`headerCellMouseDown`](grid/api/grid_headercellmousedown_event.md), [`footerCellMouseDown`](grid/api/grid_footercellmousedown_event.md), [`headerCellDblClick`](grid/api/grid_headercelldblclick_event.md), [`footerCellDblClick`](grid/api/grid_footercelldblclick_event.md), [`headerCellRightClick`](grid/api/grid_headercellrightclick_event.md), [`footerCellRightClick`](grid/api/grid_footercellrightclick_event.md)
 - [`Ctrl+Enter` shortcut](grid/configuration.md#keyboard-navigation) for expanding/collapsing the parent item in the TreeGrid mode
+
+### Fixes
+
+- Grid. Rows layout break when the minimum column width is reached with more than one parent (`type: tree`)
+- Grid. The TypeScript types issue of the constructor object
+- Grid. The unrecognized format error that occurs when working with a Date object in string representation
 
 ### New samples
 
