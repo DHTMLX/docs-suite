@@ -99,7 +99,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#summary-of-calculated-values) both at the Grid and column's levels
+- the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans) both at the Grid and column's levels
 
 - the [`getSummary()`](grid/api/grid_getsummary_method.md) method is added for getting the summary data either of a column or of the Grid
 
