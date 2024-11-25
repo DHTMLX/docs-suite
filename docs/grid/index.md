@@ -1,7 +1,7 @@
 ---
 sidebar_label: Overview
 title: JavaScript Grid - Grid Overview 
-description: descriYou can have an overview of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.ption
+description: You can have an overview of Grid in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
 ---
 
 # Grid overview
@@ -37,6 +37,7 @@ Says how to build a standard grid on a page and bring it to life: configure with
 - [](grid/configuration.md)
 - [](grid/data_loading.md)
 - [](grid/usage.md)
+- [](grid/treegrid_mode.md) 
 - [](grid/usage_selection.md)
 - [](grid/customization.md)
 - [](grid/events.md)
