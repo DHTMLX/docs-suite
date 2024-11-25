@@ -451,7 +451,7 @@ Released on October 23, 2023
 
 - Form. Fix the absence of the bottom margin at the Container control
 - Grid/TreeGrid. Fix the work of the [bottomSplit](grid/api/grid_bottomsplit_config.md) property when there was too little data for the proper content height
-- TreeGrid. Fix the work of the [adjust](treegrid/api/treegrid_adjust_config.md) property with the "footer" value
+- TreeGrid. Fix the work of the [adjust](grid/api/grid_adjust_config.md) property with the "footer" value
 
 ## Version 8.2.7
 
@@ -699,7 +699,7 @@ Released on May 18, 2023
 - Grid/TreeGrid. Fix displaying of data in the header/footer during the initialization of a large number of columns
 - Grid/TreeGrid. Fix incorrect drag-n-drop behavior in the disabled multi select mode
 - Grid/TreeGrid. Fix the issue with the multi select filter when it adds an empty value from a data set into selected options by default
-- TreeGrid. Fix incorrect work of the [`adjustColumnWidth()`](treegrid/api/treegrid_adjustcolumnwidth_method.md) method
+- TreeGrid. Fix incorrect work of the [`adjustColumnWidth()`](grid/api/grid_adjustcolumnwidth_method.md) method
 
 ## Version 8.1
 
@@ -730,18 +730,18 @@ Released on April 18, 2023
 #### TreeGrid
 
 - The ability to export TreeGrid to a PDF or PNG file:
-    - new export methods: [`pdf()`](treegrid/api/export/treegrid_pdf_method.md), [`png()`](treegrid/api/export/treegrid_png_method.md)
-    - new property: [`exportStyles`](treegrid/api/treegrid_exportstyles_config.md)
+    - new export methods: [`pdf()`](grid/api/export/grid_pdf_method.md), [`png()`](grid/api/export/grid_png_method.md)
+    - new property: [`exportStyles`](grid/api/grid_exportstyles_config.md)
 - The ability to set individual lists of editor options for different cells of the column:
-    - now it is possible to define the [`options`](treegrid/api/api_treegridcolumn_properties.md) property of a column as a callback function
-- The ability [to set automatic height for TreeGrid](treegrid/configuration.md#autoheight-for-treegrid)
-- New [`multiselection`](treegrid/api/treegrid_multiselection_config.md) property:
-    - [the ability to select multiple cells/rows in TreeGrid](treegrid/configuration.md#multiple-selection-of-treegrid-cells)
-    - [the ability to drag-n-drop multiple rows](treegrid/configuration.md#drag-n-drop-of-multiple-rows)
-- The ability to define [whether collapsed rows should expand while hovering them over during drag-n-drop](treegrid/configuration.md#expanding-collapsed-rows-on-drag-n-drop):
-    - new property: [`dragExpand`](treegrid/api/treegrid_dragexpand_config.md)
+    - now it is possible to define the [`options`](grid/api/api_gridcolumn_properties.md) property of a column as a callback function
+- The ability [to set automatic height for TreeGrid](grid/configuration.md#autoheight-for-grid)
+- New [`multiselection`](grid/api/grid_multiselection_config.md) property:
+    - [the ability to select multiple cells/rows in TreeGrid](grid/configuration.md#multiple-selection-of-grid-cells)
+    - [the ability to drag-n-drop multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
+- The ability to define [whether collapsed rows should expand while hovering them over during drag-n-drop](grid/configuration.md):
+    - new property: [`dragExpand`](grid/api/treegrid_mode/grid_dragexpand_config.md)
 - The ability to initialize TreeGrid in the collapsed state:
-    - new property: [`collapsed`](treegrid/api/treegrid_collapsed_config.md)
+    - new property: [`collapsed`](grid/api/treegrid_mode/grid_collapsed_config.md)
 
 ### Updates
 
@@ -801,7 +801,7 @@ Released on March 13, 2023
 - Grid/TreeGrid. Fix work of events of the [Selection](category/grid-selection-events.md) object
 - List. Now focusing of items isn't available when [key navigation](list/api/list_keynavigation_config.md) is disabled
 - Suite. Now the date format must include delimiters (space or symbol), otherwise an error will be thrown
-- TreeGrid. Fix the issue which caused headers of groups to be duplicated when using the [`leftSplit`](treegrid/api/treegrid_leftsplit_config.md) property of TreeGrid
+- TreeGrid. Fix the issue which caused headers of groups to be duplicated when using the [`leftSplit`](grid/api/grid_leftsplit_config.md) property of TreeGrid
 - Window. Fix the issue with excess scroll in the window content
 - Window. Fix work of Window with the [`resizable: true`](window/api/window_resizable_config.md) property
 
@@ -897,9 +897,9 @@ Released on February 24, 2023
 
 #### TreeGrid
 
-- The ability to control the process of data filtering (new [`beforeFilter`](treegrid/api/treegrid_beforefilter_event.md) event)
-- The ability to configure the [datePicker editor](treegrid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
-- The ability to fix bottom rows and right columns using the corresponding [`bottomSplit`](treegrid/api/treegrid_bottomsplit_config.md) and [`rightSplit`](treegrid/api/treegrid_rightsplit_config.md) properties ([Example](https://snippet.dhtmlx.com/46me58ze))
+- The ability to control the process of data filtering (new [`beforeFilter`](grid/api/grid_beforefilter_event.md) event)
+- The ability to configure the [datePicker editor](grid/configuration.md#types-of-column-editor) of a cell by passing most of properties of [DHTMLX Calendar](category/calendar-properties.md) to the `columns.editorConfig` property
+- The ability to fix bottom rows and right columns using the corresponding [`bottomSplit`](grid/api/grid_bottomsplit_config.md) and [`rightSplit`](grid/api/grid_rightsplit_config.md) properties ([Example](https://snippet.dhtmlx.com/46me58ze))
 
 ### Updates
 
@@ -965,7 +965,7 @@ Released on January 17, 2023
 - Grid. Now it is possible to select several cells/rows when using [multiselection](grid/api/grid_multiselection_config.md) together with [selection:"complex"](grid/api/grid_selection_config.md)
 - Grid. Now the [eventHandlers](grid/api/grid_eventhandlers_config.md) property works for frozen columns
 - TreeGrid. Fix the display of selection for spanned cells
-- TreeGrid. Fix the issue with display of total values in the footer of the [exported .csv / .xlsx file](treegrid/usage.md)
+- TreeGrid. Fix the issue with display of total values in the footer of the [exported .csv / .xlsx file](grid/usage.md)
 - TreeGrid. Fix the issue with editing of spanned cells
 - TreeGrid. Now it is possible to collapse/expand the content of the first cell of the first column even if it is included into the colspan
 - Fix issues with [AJAX helper](ajax.md)
@@ -993,7 +993,7 @@ Released on November 17, 2022
 - Grid. Fix the error thrown when [exporting data to CSV format](grid/usage.md#exporting-data-to-csv)
 - Grid. Now [custom tooltip](grid/customization.md#adding-template-to-tooltip) will be also displayed for cells with empty values
 - Grid. Now it is possible to prevent a [custom tooltip](grid/customization.md#adding-template-to-tooltip) from being shown via returning `false` from the `tooltipTemplate` function
-- TreeGrid. Fix the error appeared on initialization of the component when [`data`](treegrid/api/treegrid_data_config.md) was defined as `TreeGridCollection` instance and [`spans`](treegrid/configuration.md#spans) were applied
+- TreeGrid. Fix the error appeared on initialization of the component when [`data`](grid/api/grid_data_config.md) was defined as `TreeGridCollection` instance and [`spans`](grid/configuration.md#spans) were applied
 - Window. Fix the issue with overlay positioning for a modal window (z-index is changed)
 
 ## Version 7.3.11
@@ -1049,7 +1049,7 @@ Released on September 19, 2022
 - Layout. Fix the issue with the [`attachHTML()`](layout/api/cell/layout_cell_attachhtml_method.md) method
 - Ribbon. Input control. Fix the behavior of the label which caused focus not to be moved to the input field
 - Toolbar. Input control. Fix the behavior of the label which caused focus not to be moved to the input field
-- TreeGrid. Fix the incorrect calculation of the columns and rows displayed on the screen when calling the [`hideColumn()`](treegrid/api/treegrid_hidecolumn_method.md) or [`hideRow()`](treegrid/api/treegrid_hiderow_method.md) methods correspondingly
+- TreeGrid. Fix the incorrect calculation of the columns and rows displayed on the screen when calling the [`hideColumn()`](grid/api/grid_hidecolumn_method.md) or [`hideRow()`](grid/api/grid_hiderow_method.md) methods correspondingly
 
 ## Version 7.3.7
 
@@ -1213,8 +1213,8 @@ Released on January 19, 2022
 
 #### TreeGrid
 
-- The ability [to add custom logic to the header/footer filters of the column](treegrid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
-- The ability [to allow users to add new items into the list of options from UI](treegrid/configuration.md/#editable-combobox) via the `newOptions` attribute of the  [`editorConfig`](treegrid/api/api_treegridcolumn_properties.md) property of a column
+- The ability [to add custom logic to the header/footer filters of the column](grid/configuration.md/#customizing-headerfooter-filters) via the `customFilter` attribute
+- The ability [to allow users to add new items into the list of options from UI](grid/configuration.md/#editable-combobox) via the `newOptions` attribute of the  [`editorConfig`](grid/api/api_gridcolumn_properties.md) property of a column
 
 ### Fixes
 
@@ -1243,7 +1243,7 @@ Released on January 19, 2022
 - Ribbon. Fix the issue with calculation of the widget's height when some items are hidden
 - Toolbar. Datepicker control. Fix the issue which caused the same date to be shown in different Datepickers (two or more)
 - Toolbar. SelectButton control. Fix the issue that caused an icon of the selected value not being displayed initially or after applying the [`setState()`](toolbar/api/toolbar_setstate_method.md) method
-- TreeGrid. Fix the incorrect work of filtering when [`multiselection`](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
+- TreeGrid. Fix the incorrect work of filtering when [`multiselection`](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) is enabled for comboFilter and multiple options are selected
 - TreeGrid. Fix the issue with exporting a grouped treegrid to CSV
 - TreeGrid. Fix the issue with render of data items when they are parsed in reverse order
 
@@ -1381,11 +1381,11 @@ Check the [Migration article](migration.md/#71---72) to keep in step with the la
 
 #### Treegrid
 
-- New [multiselect editor](treegrid/configuration.md#types-of-column-editor) is added
-- The ability to [choose several options in comboFilter at once](treegrid/configuration.md/#headerfooter-filters) via setting [multiselection:true](treegrid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
-- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](treegrid/configuration.md/#types-of-column-editor) of the combobox editor
-- The ability to specify the type to sort data as via the [sortAs](treegrid/api/api_treegridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
-- The ability to enable/disable sorting by clicking the header via the [headerSort](treegrid/api/api_treegridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
+- New [multiselect editor](grid/configuration.md#types-of-column-editor) is added
+- The ability to [choose several options in comboFilter at once](grid/configuration.md/#headerfooter-filters) via setting [multiselection:true](grid/configuration.md/#the-list-of-configuration-properties-for-combofilter) property of comboFilter
+- The ability to show different values in the grid cell and in the combobox editor by setting ["id-value" combinations for each option](grid/configuration.md/#types-of-column-editor) of the combobox editor
+- The ability to specify the type to sort data as via the [sortAs](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
+- The ability to enable/disable sorting by clicking the header via the [headerSort](grid/api/api_gridcolumn_properties.md) attribute of the header configuration property of a TreeGrid column
 
 #### Helpers
 
@@ -1638,14 +1638,14 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 
 #### TreeGrid
 
-- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](treegrid/api/treegrid_autoheight_config.md) configuration option of TreeGrid
-- New [textarea editor](treegrid/configuration.md#types-of-column-editor) is added
-- The ability to set [the format the content of the cells to be displayed in](treegrid/configuration.md#formatting-columns)
-- Now [columns with dates support the Date() object](treegrid/api/treegrid_data_config.md)
-- The ability to [customize the tooltip of a column](treegrid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
-- The ability [to define the height for a separate row of TreeGrid](treegrid/configuration.md#row-height)
-- New events are added: [beforeRowResize](treegrid/api/treegrid_beforerowresize_event.md) and [afterRowResize](treegrid/api/treegrid_afterrowresize_event.md), [beforeSort](treegrid/api/treegrid_beforesort_event.md) and [afterSort](treegrid/api/treegrid_aftersort_event.md)
-- The ability to define the id of the parent root via the [rootParent](treegrid/api/treegrid_rootparent_config.md) configuration option of TreeGrid
+- The ability to display and edit multiline content in the cells of TreeGrid via setting the [autoHeight: true](grid/api/grid_autoheight_config.md) configuration option of TreeGrid
+- New [textarea editor](grid/configuration.md#types-of-column-editor) is added
+- The ability to set [the format the content of the cells to be displayed in](grid/configuration.md#formatting-columns)
+- Now [columns with dates support the Date() object](grid/api/grid_data_config.md)
+- The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a TreeGrid column
+- The ability [to define the height for a separate row of TreeGrid](grid/configuration.md#row-height)
+- New events are added: [beforeRowResize](grid/api/grid_beforerowresize_event.md) and [afterRowResize](grid/api/grid_afterrowresize_event.md), [beforeSort](grid/api/grid_beforesort_event.md) and [afterSort](grid/api/grid_aftersort_event.md)
+- The ability to define the id of the parent root via the [rootParent](grid/api/treegrid_mode/grid_rootparent_config.md) configuration option of TreeGrid
 
 #### Window
 
@@ -1716,7 +1716,7 @@ Released on December 21, 2020
 - Fix the issue which caused the hidden column with the filter not to be shown in Grid
 - Fix the incorrect work of the select filter when applying to the columns with numeric values in Grid
 - Fix the incorrect work of regular expressions in columns with filters in Grid
-- Fix the issue with the [collapseAll()](treegrid/api/treegrid_collapseall_method.md) method in TreeGrid
+- Fix the issue with the [collapseAll()](grid/api/treegrid_mode/grid_collapseall_method.md) method in TreeGrid
 - Fix the incorrect work of the [save()](data_collection/api/datacollection_save_method.md) method of Data Collection
 - Fix the issue with display of sorting icon when applying alignment to Grid columns
 - Fix the issue which caused the item in the filtered state after deleting from the data collection to be still found via the [afterRemove](data_collection/api/datacollection_afterremove_event.md) event
@@ -1849,17 +1849,17 @@ The update brings various changes in the API methods. Check the [Migration artic
 
 #### TreeGrid
 
-- The ability to add event handlers to the custom template of a Grid cell via the [eventHandlers](treegrid/api/treegrid_eventhandlers_config.md) property of TreeGrid
-- New drag-n-drop events of TreeGrid columns: [afterColumnDrag](treegrid/api/treegrid_aftercolumndrag_event.md), [afterColumnDrop](treegrid/api/treegrid_aftercolumndrop_event.md), [canColumnDrop](treegrid/api/treegrid_cancolumndrop_event.md), [cancelColumnDrop](treegrid/api/treegrid_cancelcolumndrop_event.md), [dragColumnIn](treegrid/api/treegrid_dragcolumnin_event.md), [dragColumnOut](treegrid/api/treegrid_dragcolumnout_event.md), [dragColumnStart](treegrid/api/treegrid_dragcolumnstart_event.md)
-- New events of TreeGrid columns: [beforeColumnHide](treegrid/api/treegrid_beforecolumnhide_event.md), [afterColumnHide](treegrid/api/treegrid_aftercolumnhide_event.md), [beforeColumnShow](treegrid/api/treegrid_beforecolumnshow_event.md), [afterColumnShow](treegrid/api/treegrid_aftercolumnshow_event.md)
-- New drag-n-drop events of TreeGrid rows: [afterRowDrag](treegrid/api/treegrid_afterrowdrag_event.md), [afterRowDrop](treegrid/api/treegrid_afterrowdrop_event.md), [beforeRowDrag](treegrid/api/treegrid_beforerowdrag_event.md), [beforeRowDrop](treegrid/api/treegrid_beforerowdrop_event.md), [canRowDrop](treegrid/api/treegrid_canrowdrop_event.md), [cancelRowDrop](treegrid/api/treegrid_cancelrowdrop_event.md), [dragRowIn](treegrid/api/treegrid_dragrowin_event.md), [dragRowOut](treegrid/api/treegrid_dragrowout_event.md), [dragRowStart](treegrid/api/treegrid_dragrowstart_event.md)
-- New events of TreeGrid rows: [beforeRowHide](treegrid/api/treegrid_beforerowhide_event.md), [afterRowHide](treegrid/api/treegrid_afterrowhide_event.md), [beforeRowShow](treegrid/api/treegrid_beforerowshow_event.md), [afterRowShow](treegrid/api/treegrid_afterrowshow_event.md)
-- The ability [to hide and show a row of TreeGrid](treegrid/usage.md#hidingshowing-a-row) via the corresponding [hideRow()](treegrid/api/treegrid_hiderow_method.md) and [showRow()](treegrid/api/treegrid_showrow_method.md) methods of TreeGrid
-- The ability to check whether a row of TreeGrid is hidden via the [isRowHidden()](treegrid/api/treegrid_isrowhidden_method.md) method of TreeGrid
-- The ability [to get an object of the header filter by column id](treegrid/usage.md#getting-header-filter) using the [getHeaderFilter()](treegrid/api/treegrid_getheaderfilter_method.md) method of TreeGrid
-- The ability [to enable/disable selection of cells](treegrid/usage_selection.md) in TreeGrid via the related [enable()](treegrid/api/selection/selection_enable_method.md)/ [disable()](treegrid/api/selection/selection_disable_method.md) methods of the Selection object of TreeGrid
-- The ability to remove selection from previously selected cells via the [removeCell()](treegrid/api/selection/selection_removecell_method.md) method of the Selection object of TreeGrid
-- New events of the Selection object of TreeGrid: [afterSelect](treegrid/api/selection/selection_afterselect_event.md), [afterUnSelect](treegrid/api/selection/selection_afterunselect_event.md), [beforeSelect](treegrid/api/selection/selection_beforeselect_event.md), [beforeUnSelect](treegrid/api/selection/selection_beforeunselect_event.md)
+- The ability to add event handlers to the custom template of a Grid cell via the [eventHandlers](grid/api/grid_eventhandlers_config.md) property of TreeGrid
+- New drag-n-drop events of TreeGrid columns: [afterColumnDrag](grid/api/grid_aftercolumndrag_event.md), [afterColumnDrop](grid/api/grid_aftercolumndrop_event.md), [canColumnDrop](grid/api/grid_cancolumndrop_event.md), [cancelColumnDrop](grid/api/grid_cancelcolumndrop_event.md), [dragColumnIn](grid/api/grid_dragcolumnin_event.md), [dragColumnOut](grid/api/grid_dragcolumnout_event.md), [dragColumnStart](grid/api/grid_dragcolumnstart_event.md)
+- New events of TreeGrid columns: [beforeColumnHide](grid/api/grid_beforecolumnhide_event.md), [afterColumnHide](grid/api/grid_aftercolumnhide_event.md), [beforeColumnShow](grid/api/grid_beforecolumnshow_event.md), [afterColumnShow](grid/api/grid_aftercolumnshow_event.md)
+- New drag-n-drop events of TreeGrid rows: [afterRowDrag](grid/api/grid_afterrowdrag_event.md), [afterRowDrop](grid/api/grid_afterrowdrop_event.md), [beforeRowDrag](grid/api/grid_beforerowdrag_event.md), [beforeRowDrop](grid/api/grid_beforerowdrop_event.md), [canRowDrop](grid/api/grid_canrowdrop_event.md), [cancelRowDrop](grid/api/grid_cancelrowdrop_event.md), [dragRowIn](grid/api/grid_dragrowin_event.md), [dragRowOut](grid/api/grid_dragrowout_event.md), [dragRowStart](grid/api/grid_dragrowstart_event.md)
+- New events of TreeGrid rows: [beforeRowHide](grid/api/grid_beforerowhide_event.md), [afterRowHide](grid/api/grid_afterrowhide_event.md), [beforeRowShow](grid/api/grid_beforerowshow_event.md), [afterRowShow](grid/api/grid_afterrowshow_event.md)
+- The ability [to hide and show a row of TreeGrid](grid/usage.md#hidingshowing-a-row) via the corresponding [hideRow()](grid/api/grid_hiderow_method.md) and [showRow()](grid/api/grid_showrow_method.md) methods of TreeGrid
+- The ability to check whether a row of TreeGrid is hidden via the [isRowHidden()](grid/api/grid_isrowhidden_method.md) method of TreeGrid
+- The ability [to get an object of the header filter by column id](grid/usage.md#getting-header-filter) using the [getHeaderFilter()](grid/api/grid_getheaderfilter_method.md) method of TreeGrid
+- The ability [to enable/disable selection of cells](grid/usage_selection.md) in TreeGrid via the related [enable()](grid/api/selection/selection_enable_method.md)/ [disable()](grid/api/selection/selection_disable_method.md) methods of the Selection object of TreeGrid
+- The ability to remove selection from previously selected cells via the [removeCell()](grid/api/selection/selection_removecell_method.md) method of the Selection object of TreeGrid
+- New events of the Selection object of TreeGrid: [afterSelect](grid/api/selection/selection_afterselect_event.md), [afterUnSelect](grid/api/selection/selection_afterunselect_event.md), [beforeSelect](grid/api/selection/selection_beforeselect_event.md), [beforeUnSelect](grid/api/selection/selection_beforeunselect_event.md)
 
 ### Updates
 
@@ -1875,8 +1875,8 @@ The update brings various changes in the API methods. Check the [Migration artic
 - TimePicker control of Form. The [getValue()](form/api/timepicker/timepicker_getvalue_method.md)/ [setValue()](form/api/timepicker/timepicker_setvalue_method.md) methods are updated
 - Form. The [getValue()](form/api/form_getvalue_method.md) method is updated
 - Grid/TreeGrid. The "splitAt" configuration property is replaced by the "leftSplit" one
-- [Grid](grid/api/grid_beforecolumndrag_event.md)/[TreeGrid](treegrid/api/treegrid_beforecolumndrag_event.md). The "beforeColumnDrag" event is updated - the `id` parameter is replaced with the `data` and `e` ones.
-- [Grid](grid/api/grid_beforecolumndrop_event.md)/[TreeGrid](treegrid/api/treegrid_beforecolumndrop_event.md). The "beforeColumnDrop" event is updated - the `sourceId`/ `targetId` parameters are replaced with the `data` and `e` ones.
+- [Grid](grid/api/grid_beforecolumndrag_event.md)/[TreeGrid](grid/api/grid_beforecolumndrag_event.md). The "beforeColumnDrag" event is updated - the `id` parameter is replaced with the `data` and `e` ones.
+- [Grid](grid/api/grid_beforecolumndrop_event.md)/[TreeGrid](grid/api/grid_beforecolumndrop_event.md). The "beforeColumnDrop" event is updated - the `sourceId`/ `targetId` parameters are replaced with the `data` and `e` ones.
 - Layout. [Layout patterns](layout/layout_patterns.md) section is added to docs
 - Layout. The [gravity](layout/api/cell/layout_cell_gravity_config.md) property of a Layout cell is updated
 - [Layout](layout/cell_configuration.md#autosize-for-cells). The ability to configure a Layout cell so that its width/ height would automatically adjust to the width/ height of the cell content
@@ -2030,12 +2030,12 @@ Released on June 16, 2020
 
 #### TreeGrid 
 
-- The ability to [drag and drop columns in TreeGrid](treegrid/configuration.md#drag-n-drop-inside-the-grid) via the [](treegrid/api/treegrid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](treegrid/api/api_treegridcolumn_properties.md) configuration option of a TreeGrid column
-- New [](treegrid/api/treegrid_beforecolumndrag_event.md) and [](treegrid/api/treegrid_beforecolumndrop_event.md) events are added
-- The ability to [group data in TreeGrid](treegrid/usage.md#grouping-data) using the [](treegrid/api/treegrid_groupby_method.md) method
-- The possibility to set a template to the title of the group via the [](treegrid/api/treegrid_grouptitletemplate_config.md) configuration option of TreeGrid
-- The ability [to align data in a column as well as in the header of a column](treegrid/configuration.md#alignment)
-- The ability [to show/hide tooltips](treegrid/configuration.md#tooltip) while hovering over the content of a column via the [](treegrid/api/treegrid_tooltip_config.md) configuration property
+- The ability to [drag and drop columns in TreeGrid](grid/configuration.md#drag-n-drop-inside-the-grid) via the [](grid/api/grid_dragitem_config.md) configuration property of TreeGrid, or via the [draggable](grid/api/api_gridcolumn_properties.md) configuration option of a TreeGrid column
+- New [](grid/api/grid_beforecolumndrag_event.md) and [](grid/api/grid_beforecolumndrop_event.md) events are added
+- The ability to [group data in TreeGrid](grid/usage.md#grouping-data) using the `groupBy()` method
+- The possibility to set a template to the title of the group via the `groupTitleTemplate` configuration option of TreeGrid
+- The ability [to align data in a column as well as in the header of a column](grid/configuration.md#alignment)
+- The ability [to show/hide tooltips](grid/configuration.md#tooltip) while hovering over the content of a column via the [](grid/api/grid_tooltip_config.md) configuration property
 
 #### DataView
 
@@ -2063,7 +2063,7 @@ Released on June 16, 2020
 
 ### Updates
 
-- The ability to adjust the width of columns to the width of their footer in [Grid](grid/configuration.md#autosize-for-columns) and [TreeGrid](treegrid/configuration.md#autosize-for-columns)
+- The ability to adjust the width of columns to the width of their footer in [Grid](grid/configuration.md#autosize-for-columns) and [TreeGrid](grid/configuration.md#autosize-for-columns)
 - <a href = "https://github.com/DHTMLX/react-widgets" target="_blank">Suite with React demo</a> is updated
 - Ability to work with number type of id in Combobox, DataView, List widgets and in Select control of Form
 
@@ -2244,12 +2244,12 @@ Released on January 28, 2020
 
 #### TreeGrid
 
-- The ability [to check visibility of a column](treegrid/usage.md#checking-visibility-of-a-column) via the [](treegrid/api/treegrid_iscolumnhidden_method.md) method
-- The [](treegrid/api/treegrid_aftercollapse_event.md), [](treegrid/api/treegrid_beforecollapse_event.md), [](treegrid/api/treegrid_afterexpand_event.md), [](treegrid/api/treegrid_beforeexpand_event.md) events are added
-- The possibility [to adjust the size of TreeGrid columns to the size of TreeGrid](treegrid/configuration.md#autowidth-for-columns) via the [](treegrid/api/treegrid_autowidth_config.md) configuration property
-- The ability [to adjust the width of columns to the width of their content automatically](treegrid/configuration.md#autosize-for-columns) with the help of the [](treegrid/api/treegrid_adjust_config.md) property
-- The ability [to sort content of any TreeGrid column by clicking on its header](treegrid/configuration.md#sortable-columns) using the [](treegrid/api/treegrid_sortable_config.md) property
-- The [](treegrid/api/treegrid_getsortingstate_method.md) method that [allows getting the current state of sorting data in TreeGrid](treegrid/usage.md#getting-the-sorting-state) is added
+- The ability [to check visibility of a column](grid/usage.md#checking-visibility-of-a-column) via the [](grid/api/grid_iscolumnhidden_method.md) method
+- The [](grid/api/treegrid_mode/grid_aftercollapse_event.md), [](grid/api/treegrid_mode/grid_beforecollapse_event.md), [](grid/api/treegrid_mode/grid_afterexpand_event.md), [](grid/api/treegrid_mode/grid_beforeexpand_event.md) events are added
+- The possibility [to adjust the size of TreeGrid columns to the size of TreeGrid](grid/configuration.md#autowidth-for-columns) via the [](grid/api/grid_autowidth_config.md) configuration property
+- The ability [to adjust the width of columns to the width of their content automatically](grid/configuration.md#autosize-for-columns) with the help of the [](grid/api/grid_adjust_config.md) property
+- The ability [to sort content of any TreeGrid column by clicking on its header](grid/configuration.md#sortable-columns) using the [](grid/api/grid_sortable_config.md) property
+- The [](grid/api/grid_getsortingstate_method.md) method that [allows getting the current state of sorting data in TreeGrid](grid/usage.md#getting-the-sorting-state) is added
 
 #### Window
 
@@ -2321,8 +2321,8 @@ Released on December 12, 2019
 
 #### TreeGrid
 
-- The [](treegrid/api/treegrid_collapse_method.md), [](treegrid/api/treegrid_collapseall_method.md), [](treegrid/api/treegrid_expand_method.md), [](treegrid/api/treegrid_expandall_method.md) methods are added
-- The ability [to add custom elements into TreeGrid cells](treegrid/configuration.md#html-content-of-treegrid-columns) using the [](treegrid/api/treegrid_htmlenable_config.md) property
+- The [](grid/api/treegrid_mode/grid_collapse_method.md), [](grid/api/treegrid_mode/grid_collapseall_method.md), [](grid/api/treegrid_mode/grid_expand_method.md), [](grid/api/treegrid_mode/grid_expandall_method.md) methods are added
+- The ability [to add custom elements into TreeGrid cells](grid/configuration.md#html-content-of-grid-columns) using the [](grid/api/grid_htmlenable_config.md) property
 
 #### Menu/Ribbon/SideBar/Toolbar
 
