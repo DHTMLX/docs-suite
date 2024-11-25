@@ -38,7 +38,7 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 #### Grid
 
-- The ["tree" mode](grid/configuration.md#setting-the-treegrid-mode) for Grid (PRO version)
+- The [TreeGrid mode](grid/configuration.md#setting-the-treegrid-mode) for Grid (PRO version)
 - [Row data grouping](grid/usage.md#grouping-data) (PRO version) with the ability to aggregate data in a group, adjust the appearance, order and configuration of data grouping, render statistics in the summary rows
 	- new Grid properties: [`group`](grid/api/grid_group_config.md), [`groupable`](grid/api/grid_groupable_config.md), [`closable`](grid/api/grid_closable_config.md)
 	- new column properties: [`groupable`](grid/api/api_gridcolumn_properties.md), [`closable`](grid/api/api_gridcolumn_properties.md)
