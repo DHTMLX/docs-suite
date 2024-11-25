@@ -1183,21 +1183,21 @@ But if you need the editor to open after a single click, apply the [](grid/api/g
 Note, that it does not work for the select editor (`editorType: "select"`) and you need to use the combobox editor (`editorType:"combobox"`) if you want a drop-down list to open on the mouse click.
 :::
 
-## Summary of calculated values
+## Custom statistics in the column header/footer and spans
 
-You can get the summary of calculated values based on the columns data using the Grid API. First, you need to form a summary list on the needed level: for a [particular column](#column-summary) or for the [whole component](#grid-summary). After that, you can [get the object with the calculated values](#getting-the-summary-object) using the `getSummary()` method.
+You can form the summary of calculated values based on the columns data for a [particular column](#column-summary) or for the [whole component](#grid-summary) and render custom statistics by using the column and Grid summary in:
+    - the configuration objects of the [`text`](#headerfooter-text) and [`tooltipTemplate`](#column-headerfooter-tooltip) properties of the column header/footer 
+    - the configuration objects of the `text` and `tooltipTemplate` properties of the Grid [`spans`](#spans) property 
 
-:::info
-Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
-::: 
-
-The calculated values from the `summary` property of a column or Grid can be used:
-    - in the configuration objects of the [`text`](#headerfooter-text) and [`tooltipTemplate`](#column-headerfooter-tooltip) properties of the column header/footer 
-    - in the configuration objects of the `text` and `tooltipTemplate` properties of the Grid [`spans`](#spans) property
+It is also possible to [get the object with the calculated values](#getting-the-summary-object) using the `getSummary()` method.
 
 **Related sample:** [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
 
 **Related sample:** [Grid. Custom totals for footer and columns with dynamic updates on edit](https://snippet.dhtmlx.com/59d6hqtm)
+
+:::info
+Use the [`dhx.methods`](helpers/data_calculation_functions.md) helper to define the default statistical functions and to create custom functions for data calculation while creating the summary list. 
+::: 
 
 ### Column summary
 

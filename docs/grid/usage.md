@@ -477,7 +477,9 @@ grid.export.png({
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can group row data by column values to make them more suitable for analysis. It is possible to set a predefined Grid configuration to initialize Grid with grouped data or to use the [DataCollection API](../../data_collection) for grouping Grid data. Besides, you can group Grid rows via the UI.
+You can group row data by column values to make them more suitable for analysis. The Grid row data grouping functionality allows aggregating data in a group, adjusting the appearance, order and configuration of data grouping and rendering statistics in the summary rows.
+
+It is possible to [set a predefined Grid configuration](#configuring-data-grouping) to initialize Grid with grouped data or to use the [DataCollection API](#using-datacollection-api-for-data-grouping) for grouping Grid data. 
 
 **Related sample:** [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
 
