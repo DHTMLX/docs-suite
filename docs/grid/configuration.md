@@ -1281,6 +1281,10 @@ const grid = new dhx.Grid("grid_container", {
     },
     data: dataset
 });
+
+// an example of getting the values of population density
+const summary = grid.getSummary();
+console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
 ~~~
 
 In the above example the [`dhx.methods`](helpers/data_calculation_functions.md) helper is used to:
@@ -1290,13 +1294,7 @@ In the above example the [`dhx.methods`](helpers/data_calculation_functions.md) 
 
 ### Getting the summary object
 
-To get the object with the calculated values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters, the method returns an object with the calculated values defined in the configuration of the component:
-
-~~~jsx
-// an example of getting the values of population density
-const summary = grid.getSummary();
-console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 20.00 }
-~~~
+To get the object with the calculated values, you should use the [`getSummary()`](grid/api/grid_getsummary_method.md) method. When called without parameters, the method returns an object with the calculated values defined in the configuration of the component.
 
 You can also pass the `id` of a column to the method to get an object with the calculated values defined in the column's configuration together with the calculated values defined in the component's configuration. In the following example calculated values are used for rendering the summary for a column:
 
