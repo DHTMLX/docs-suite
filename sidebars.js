@@ -2732,10 +2732,10 @@ module.exports = {
                   items: [
                   {
                     type: "category",
-                    label: "Grid TreeGrid mode methods",
+                    label: "Methods",
                     link: {
                       type: 'generated-index',
-                      title: "Grid TreeGrid mode methods",
+                      title: "Methods",
                       keywords: ['grid treegrid mode methods'],
                       image: '/img/docusaurus.png'
                     },
@@ -2748,10 +2748,10 @@ module.exports = {
                   },
                   {
                     type: "category",
-                    label: "Grid TreeGrid mode events",
+                    label: "Events",
                     link: {
                       type: 'generated-index',
-                      title: "Grid TreeGrid mode events",
+                      title: "Events",
                       keywords: ['grid treegrid mode events'],
                       image: '/img/docusaurus.png'
                     },
@@ -2765,10 +2765,10 @@ module.exports = {
                   },
                   {
                     type: "category",
-                    label: "Grid TreeGrid mode properties",
+                    label: "Properties",
                     link: {
                       type: 'generated-index',
-                      title: "Grid TreeGrid mode properties",
+                      title: "Properties",
                       keywords: ['grid treegrid mode properties'],
                       image: '/img/docusaurus.png'
                     },
