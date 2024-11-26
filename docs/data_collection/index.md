@@ -25,7 +25,9 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_getinitialdata_method.md) | @getshort(api/datacollection_getinitialdata_method.md) |
 | [](api/datacollection_getitem_method.md)        | @getshort(api/datacollection_getitem_method.md)        |
 | [](api/datacollection_getlength_method.md)      | @getshort(api/datacollection_getlength_method.md)      |
+| [](api/datacollection_group_method.md)          | @getshort(api/datacollection_group_method.md)          |
 | [](api/datacollection_isdataloaded_method.md)   | @getshort(api/datacollection_isdataloaded_method.md)   |
+| [](api/datacollection_isgrouped_method.md)      | @getshort(api/datacollection_isgrouped_method.md)      |
 | [](api/datacollection_issaved_method.md)        | @getshort(api/datacollection_issaved_method.md)        |
 | [](api/datacollection_load_method.md)           | @getshort(api/datacollection_load_method.md)           |
 | [](api/datacollection_map_method.md)            | @getshort(api/datacollection_map_method.md)            |
@@ -39,6 +41,7 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | [](api/datacollection_save_method.md)           | @getshort(api/datacollection_save_method.md)           |
 | [](api/datacollection_serialize_method.md)      | @getshort(api/datacollection_serialize_method.md)      |
 | [](api/datacollection_sort_method.md)           | @getshort(api/datacollection_sort_method.md)           |
+| [](api/datacollection_ungroup_method.md)        | @getshort(api/datacollection_ungroup_method.md)        |
 | [](api/datacollection_update_method.md)         | @getshort(api/datacollection_update_method.md)         |
 
 ## Events
@@ -46,11 +49,15 @@ A set of APIs that allow you to work with data of a component. Applicable to Cha
 | Name                                           | Description                                           |
 | ---------------------------------------------- | ----------------------------------------------------- |
 | [](api/datacollection_afteradd_event.md)       | @getshort(api/datacollection_afteradd_event.md)       |
+| [](api/datacollection_aftergroup_event.md)     | @getshort(api/datacollection_aftergroup_event.md)     |
 | [](api/datacollection_afterlazyload_event.md)  | @getshort(api/datacollection_afterlazyload_event.md)  |
 | [](api/datacollection_afterremove_event.md)    | @getshort(api/datacollection_afterremove_event.md)    |
+| [](api/datacollection_afterungroup_event.md)   | @getshort(api/datacollection_afterungroup_event.md)   |
 | [](api/datacollection_beforeadd_event.md)      | @getshort(api/datacollection_beforeadd_event.md)      |
+| [](api/datacollection_beforegroup_event.md)    | @getshort(api/datacollection_beforegroup_event.md)    |
 | [](api/datacollection_beforelazyload_event.md) | @getshort(api/datacollection_beforelazyload_event.md) |
 | [](api/datacollection_beforeremove_event.md)   | @getshort(api/datacollection_beforeremove_event.md)   |
+| [](api/datacollection_beforeungroup_event.md)  | @getshort(api/datacollection_beforeungroup_event.md)  |
 | [](api/datacollection_change_event.md)         | @getshort(api/datacollection_change_event.md)         |
 | [](api/datacollection_filter_event.md)         | @getshort(api/datacollection_filter_event.md)         |
 | [](api/datacollection_load_event.md)           | @getshort(api/datacollection_load_event.md)           |

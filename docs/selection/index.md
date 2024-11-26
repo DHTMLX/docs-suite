@@ -42,7 +42,7 @@ See the full lists of the methods of the Selection object you can use to manage 
 
 - [Grid. Selection methods](grid/api/api_overview.md#selection-methods)
 
-- [TreeGrid. Selection methods](treegrid/api/api_overview.md#selection-methods) 
+- [TreeGrid. Selection methods](grid/api/api_overview.md#selection-methods) 
 
 ### Events
 
@@ -50,4 +50,4 @@ See the full lists of the events of the Selection object you can use while worki
 
 - [Grid. Selection events](grid/api/api_overview.md#selection-events)
 
-- [TreeGrid. Selection events](treegrid/api/api_overview.md#selection-events) 
+- [TreeGrid. Selection events](grid/api/api_overview.md#selection-events) 

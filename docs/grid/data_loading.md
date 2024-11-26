@@ -13,6 +13,10 @@ There are several ways of loading data into DHTMLX Grid:
 
 First, you need to prepare a data set that will be loaded into Grid.
 
+:::note
+If you use the [TreeGrid mode of Grid](grid/treegrid_mode.md), check the [related guide on data loading](grid/treegrid_mode.md#data-loading).
+:::
+
 ## Preparing data set
 
 DHTMLX Grid expects loaded data in the JSON format. 

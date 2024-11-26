@@ -8,16 +8,17 @@ description: You can explore the footerCellRightClick event of Grid in the docum
 
 @short: fires on right click on a grid footer cell
 
-@signature: {'footerCellRightClick: (column: object, event: MouseEvent) => void;'}
+@signature: {'[GridEvents.footerCellRightClick]: (cell: IFooter, column: ICol, event: MouseEvent) => void;'}
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `column: object` - an object with a column configuration
+- `cell: IFooter` - an object with a footer cell configuration
+- `column: ICol` - an object with a column configuration
 - `event: MouseEvent` - a native HTML event object
 
 @example:
-grid.events.on("footerCellRightClick", (column, event) => {
+grid.events.on("footerCellRightClick", (cell, column, event) => {
     // your logic here
 });
 
