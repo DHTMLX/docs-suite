@@ -20,9 +20,11 @@ const sum = dhx.methods.sum(rows, "value"); // 60
 
 ### Defining a custom functor
 
-You can specify a custom function for calculating data. For example, you can use the `methods` helper function for adding custom calculations to [get a summary of counted values](grid/configuration.md#getting-the-summary-object). Thus, you can provide a functor that will calculate a doubled sum of values for a particular column:
+You can specify a custom function for calculating data. For example, you can use the `methods` helper function for adding custom calculations to [get a summary of counted values](grid/configuration.md#getting-the-summary-object). 
 
-~~~jsx {1-3,11,17-18}
+In the example below a custom functor `doubleSum()` that calculates a doubled sum of values for a particular column is defined. The result of its calculations is used to render statistics in the footer of the "population" column.
+
+~~~jsx {1-3,10-11}
 dhx.methods.doubleSum = (rows, field) => {
     return rows.reduce((sum, row) => sum + row[field] * 2, 0);
 };
@@ -30,9 +32,9 @@ dhx.methods.doubleSum = (rows, field) => {
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-            width: 150,
             id: "population",
             header: [{ text: "Population" }],
+            footer: [{ text: (content) => content.doubleSum }],
             summary: "doubleSum"
         },
     ],

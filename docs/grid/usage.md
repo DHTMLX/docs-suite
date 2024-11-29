@@ -536,7 +536,7 @@ With the Grid `groupable` property enabled you can:
     - or by clicking a group element on the group panel
 - edit the nesting level of grouping by modifying the grouping order by either moving elements to the group panel or removing elements from the group panel
 
-**Related sample:** [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
+**Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
 
 The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
 
@@ -591,7 +591,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample:** [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
+**Related sample:** [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
 
 - `hideableColumns` - (optional) specifies whether columns will be hidden on a group creation, *true* by default. If set to *false*, columns used for grouping will remain visible
 
@@ -610,7 +610,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample:** [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
+**Related sample:** [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
 
 - `showMissed` - (optional) controls visibility of the elements that don't suit the grouping criteria (e.g. data without values), *true* by default. The following settings are available:
     - if set to *true*, the rows that don't have values for grouping are rendered row by row after all the data
@@ -634,7 +634,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample:** [Grid. Grouping missing data (PRO)](https://snippet.dhtmlx.com/0geopa0v)
+**Related sample:** [Grid. Grouping missing data](https://snippet.dhtmlx.com/0geopa0v)
 
 - `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
     - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
@@ -688,7 +688,7 @@ b) the total rows under the grouped values set by the `summary` property
             - a user-defined aggregation function `((row: IRow[]) => string | number)`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
 
-**Related sample:** [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
+**Related sample:** [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
 
 Below you'll find the examples of configuring Grid via the `order` property:
 
@@ -805,7 +805,7 @@ const grid = new dhx.Grid("grid_container", {
 
 - `column` - (optional) defines the configuration of a column that renders values by the grouped data. This column will be used as a main one for structuring and rendering data grouped by value
 
-**Related sample:** [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
+**Related sample:** [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
 
 You can specify the id of a column in two ways:
 
@@ -860,8 +860,6 @@ column: {
                 column: ICol
             ) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
-            colspan?: number,
-            rowspan?: number,
             css?: string,
             content?: "inputFilter" | "selectFilter" | "comboFilter",
             filterConfig?: {
@@ -888,15 +886,11 @@ column: {
                 column: ICol
             ) => string | boolean,
             align?: "left" | "center" | "right", // "left" by default
-            colspan?: number,
-            rowspan?: number,
             css?: string,
-            content?: "avg" | "sum" | "max" | "min" | "count",
             htmlEnable?: boolean, // false by default
         },
     ],
     align?: "left" | "center" | "right", // "left" by default
-    htmlEnable?: boolean, // false by default
     resizable?: boolean, // false by default
     sortable?: boolean, // true by default
     mark?: { min?: string, max?: string } |
@@ -928,7 +922,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-**Related sample:** [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
+**Related sample:** [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
 
 You can also use the [`closable`](grid/api/api_gridcolumn_properties.md) configuration property of a column. It allows making a particular group panel element closable or permanently enabled:
 
@@ -1039,7 +1033,7 @@ grid.data.group([{
 }]);
 ~~~
 
-**Related sample:** [Grouping and totals in the summary row via data collection (PRO)](https://snippet.dhtmlx.com/ihd6gtpj)
+**Related sample:** [Grouping and totals in the summary row via data collection](https://snippet.dhtmlx.com/ihd6gtpj)
 
 - grouping with the use of the `showMissed` property
 
@@ -1062,7 +1056,7 @@ grid.data.group(["city"], {
 });
 ~~~
 
-**Related sample:** [Grid. Grouping missing data (PRO)](https://snippet.dhtmlx.com/0geopa0v)
+**Related sample:** [Grid. Grouping missing data](https://snippet.dhtmlx.com/0geopa0v)
 
 #### Ungrouping Grid data
 

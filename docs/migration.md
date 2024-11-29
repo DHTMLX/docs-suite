@@ -81,7 +81,7 @@ const sum = dhx.methods.sum(rows, "value"); // 60
 
 2. redefining the default functions:
 
-~~~jsx title="From v9.0"
+~~~jsx {1-3,10-11} title="From v9.0"
 dhx.methods.doubleSum = (rows, field) => {
     return rows.reduce((sum, row) => sum + row[field] * 2, 0);
 };
@@ -89,9 +89,9 @@ dhx.methods.doubleSum = (rows, field) => {
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-            width: 150,
             id: "population",
             header: [{ text: "Population" }],
+            footer: [{ text: (content) => content.doubleSum }],
             summary: "doubleSum"
         },
     ],
