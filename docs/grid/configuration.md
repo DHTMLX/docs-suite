@@ -833,8 +833,7 @@ An editor for cells with dates (default for a column with `type:"date"`).
 To use this editor, you should specify the `type:"date"` property for a column. It is also possible to set the necessary [format of date](calendar/api/calendar_dateformat_config.md) while editing a cell content with the help of the `dateFormat` option.
 
 By default, after editing dates are transformed and displayed as string values. 
-You can also save a date as a Date object by setting the `asDateObject` property to *true*
-in the `editorConfig` object:
+You can also save a date as a string representation of the Date object by setting the `asDateObject` property to *true* in the `editorConfig` object:
 
 ~~~jsx
 { 
@@ -844,7 +843,7 @@ in the `editorConfig` object:
     header: [{ text: "Calendar", colspan: 2 }, { text: "Start date" }], 
     type: "date", dateFormat: "%d/%m/%Y", 
     editorConfig: { 
-        asDateObject: true // sets the datePicker mode when dates are saved as Date objects
+        asDateObject: true // sets the datePicker mode when dates are saved as string representations of the Date object 
     }
 }
 ~~~
