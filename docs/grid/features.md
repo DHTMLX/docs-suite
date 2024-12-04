@@ -76,7 +76,8 @@ In this section you will learn how to specify the necessary data formats for a s
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Configuring data formats](../configuration/#formatting-columns)                    | Learn how to display values of cells in different formats (percent, currency, date and combination with templates) ([Example](https://snippet.dhtmlx.com/ox37nvdm)) |
-| [Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i) | The example shows how [to use the Date() object for specifying dates](../api/grid_data_config/)                                                                     |
+| [Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i) | The example shows how [to use the Date() object for specifying dates](../api/grid_data_config/) |
+| [Setting pattern and number masks](../configuration/#formatting-columns) | Learn how to specify input masks for the values of column cells ([Example](https://snippet.dhtmlx.com/45gjhciv))      |                                                                     
 
 
 
@@ -130,11 +131,11 @@ In this section you will get to know how to render custom statistics in the colu
 
 | Topic                                                      | Description                                    |
 | -----------------------------------------------------------| -----------------------------------------------|
-| [Defining the data calculation function](../helpers/data_calculation_functions/)                 | Learn how to define the default or create a custom statistical function for data calculation|
+| [Defining the data calculation function](../../helpers/data_calculation_functions/)                 | Learn how to define the default or create a custom statistical function for data calculation|
 | [Calculating a column summary](../configuration/#column-summary)                 | Learn how to form a summary list for a column ([Example](https://snippet.dhtmlx.com/jhjxjv2l))|
 | [Calculating a Grid summary](../configuration/#grid-summary)                 | Learn how to form a summary list for a Grid |
 | [Getting the summary object](../configuration/#getting-the-summary-object)                 | Learn how to get the summary object |
-| [Displaying custom statistics in the column header/footer text](../configuration/#headerfooter-text)     | Learn how to render custom statistics in the text of a column header/footer|
+| [Displaying custom statistics in the column header/footer text](../configuration/#headerfooter-text)     | Learn how to render custom statistics in the text of a column header/footer ([Example](https://snippet.dhtmlx.com/jhjxjv2l))|
 | [Displaying custom statistics in the column header/footer tooltip](../configuration/#column-headerfooter-tooltip)     | Learn how to render custom statistics in the tooltip of a column header/footer|
 | [Displaying custom statistics in the spans](../configuration/#spans)     | Learn how to render custom statistics in the spans|
 

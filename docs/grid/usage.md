@@ -273,7 +273,7 @@ You can filter grid data by the specified criteria with the help of the `filter(
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> (<i>string</i>) - optional, the id of the filter</li><li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li><li><b>smartFilter</b> (<i>boolean</i>) defines whether a filtering rule will be applied after adding and editing items of the collection. <b>Deprecated since v8.2</b> (check <a href="../../migration#81---82">Migration to newer versions</a>) and replaced with the <b>permanent</b> property (see above)</li></ul></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> (<i>string</i>) - optional, the id of the filter</li><li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
         </tr>
     </tbody>
 </table>
