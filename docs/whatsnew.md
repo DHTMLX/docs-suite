@@ -35,6 +35,7 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 - The ability to [specify patternMask/numberMask for the Input and Textarea controls](form/work_with_form.md#using-input-masks)
 - The new [`getText()`](form/api/input/input_gettext_method.md) method for getting the text value of an input
+- The new [`getText()`](form/api/textarea/textarea_gettext_method.md) method for getting the text value of a textarea
 
 #### Grid
 
