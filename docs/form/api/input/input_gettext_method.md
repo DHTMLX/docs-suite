@@ -23,4 +23,4 @@ The method is used with the [`numberMask`](form/work_with_form.md#numbermask) an
 @changelog:
 Added in v9.0
 
-**Related:** [Getting the text value of an input](form/work_with_form.md#getting-the-text-value-of-an-input)
+**Related:** [Getting the text value of an input](form/work_with_form.md#getting-the-text-value-of-an-input-or-a-textarea)

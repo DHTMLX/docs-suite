@@ -319,10 +319,10 @@ In the above example:
 
 **Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
-### Getting the text value of an input 
+### Getting the text value of an input or a textarea
 
-When you need to get the value of an input with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the **Input** control.
-It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the Input control. 
+When you need to get the value of an input or a textarea with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the **Input** control or the [`getText()`](form/api/textarea/textarea_gettext_method.md) method of the **Textarea** control.
+It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the control. 
 
 ~~~jsx
 const value = form.getItem("input").getText();

@@ -2119,6 +2119,7 @@ module.exports = {
                       "form/api/textarea/textarea_enable_method",
                       "form/api/textarea/textarea_focus_method",
                       "form/api/textarea/textarea_getproperties_method",
+                      "form/api/textarea/textarea_gettext_method",
                       "form/api/textarea/textarea_getvalue_method",
                       "form/api/textarea/textarea_hide_method",
                       "form/api/textarea/textarea_isdisabled_method",
