@@ -68,5 +68,5 @@ You can use any inline HTML elements like &lt;i&gt; or &lt;span&gt;:
 }
 ~~~ 
 
-{{note You can use the name of the CSS class of an icon from the preferable icon font in the same way, if necessary. For example, you can use the [Font Awesome](https://fontawesome.com/) or [Material Design](https://materialdesignicons.com/) icon packs.
+{{note You can use the name of the CSS class of an icon from the preferable icon font in the same way, if necessary. For example, you can use the [Font Awesome](https://fontawesome.com/) or [Material Design](https://pictogrammers.com/library/mdi/?welcome) icon packs.
 }} 

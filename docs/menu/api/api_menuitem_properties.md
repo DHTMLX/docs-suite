@@ -72,7 +72,7 @@ const data = [
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) the name of an <a href="../../customization">icon</a> from the used icon font</td>
+            <td>(optional) the name of an <a href="../../customization/">icon</a> from the used icon font</td>
         </tr>
         <tr>
             <td><b>css</b></td>

@@ -87,7 +87,7 @@ description: You can explore the Properties of the Checkbox control of Form in t
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required, <i>false</i> by default</a></td>
+            <td>(optional) <a href="../../../work_with_form/#validating-form">defines whether a control is required, <i>false</i> by default</a></td>
         </tr>
         <tr>
             <td><b>width</b></td>
