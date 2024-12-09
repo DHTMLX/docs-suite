@@ -62,7 +62,7 @@ You can find the detailed description of the `group` object properties with exam
     - if set to *false*, the rows that don't suit the grouping criteria won't be rendered
 - `fields` - (optional) predefines an extended configuration for data grouping by certain columns, by setting the rules of aggregation and rendering of the results. The attributes of the `fields` object correspond to the ids of columns for which the aggregation rules and the order of results are being configured. The configuration of a column is defined by the `IGroupOrder` object that has the following properties:
     - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
-        - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
+        - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the [`dhx.methods`](helpers/data_calculation_functions.md) helper
         - a user-defined aggregation function `((row: IRow[]) => string | number)`
     - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group
 - `order` - (optional) defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be: 
