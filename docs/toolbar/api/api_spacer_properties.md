@@ -25,7 +25,7 @@ const data = [
     <tbody>
         <tr>
             <td><b>type</b></td>
-            <td>(required) the type of a control, set it to "spacer". If not specified - the <a href="../../navitem">"navItem"</a> type is applied by default.</td>
+            <td>(required) the type of a control, set it to "spacer". If not specified - the <a href="../../navitem/">"navItem"</a> type is applied by default.</td>
         </tr>
         <tr>
             <td><b>id</b></td>

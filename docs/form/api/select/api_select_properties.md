@@ -92,11 +92,11 @@ description: You can explore the Properties of the Select control of Form in the
         </tr>    
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
+            <td>(optional) <a href="../../../work_with_form/#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>validation</b></td>
-            <td>(optional) <a href="../../../work_with_form#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
+            <td>(optional) <a href="../../../work_with_form/#validation-rules">the validation function</a>, takes as a parameter the value to validate and returns <i>true/false</i> to indicate the result of validation</td>
         </tr>
         <tr>
             <td><b>width</b></td>
@@ -104,7 +104,7 @@ description: You can explore the Properties of the Select control of Form in the
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) the CSS class name of an <a href="../../../../helpers/icon">icon</a> from the used icon font</td>
+            <td>(optional) the CSS class name of an <a href="../../../../helpers/icon/">icon</a> from the used icon font</td>
         </tr>
         <tr>
             <td><b>hiddenLabel</b></td>

@@ -10,7 +10,7 @@ description: You can explore the beforeAdd event of TreeCollection in the docume
 
 @descr:
 :::info
-The event fires when you load items via the <a href="../treecollection_loaditems_method/">loadItems()</a> method of Tree Collection. The method also fires if you enable the <a href="../../../tree/api/tree_autoload_config">autoload</a> property of Tree.
+The event fires when you load items via the <a href="../treecollection_loaditems_method/">loadItems()</a> method of Tree Collection. The method also fires if you enable the <a href="../../../tree/api/tree_autoload_config/">autoload</a> property of Tree.
 :::
 
 @signature: {'beforeItemLoad:({ id: string | number }) => boolean | void;'}

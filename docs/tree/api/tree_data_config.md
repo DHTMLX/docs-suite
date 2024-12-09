@@ -41,7 +41,7 @@ Each **data** object can have the following properties:
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(<i>object</i>) allows adding <a href="../../api/tree_icon_config">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom dataset icons</a></td>
+            <td>(<i>object</i>) allows adding <a href="../../api/tree_icon_config/">custom icons</a> for a tree item <br/> <b>Related sample:</b> <a href="https://snippet.dhtmlx.com/h7mlx21q">Tree. Custom dataset icons</a></td>
         </tr>
     </tbody>
 </table>
