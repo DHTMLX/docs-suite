@@ -107,7 +107,7 @@ form.isVisible("input"); // -> returns true/false
 
 ## Using input masks
 
-The input masks are used to provide entering of values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input) method in the Input control API which are used for working with input masks.
+The input masks are used to provide entering of values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input-or-a-textarea) method in the Input control API which are used for working with input masks.
 
 ### numberMask
 
