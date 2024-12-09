@@ -183,7 +183,7 @@ scales: {
     <tbody>
        <tr>
             <td><b>radial</b></td>
-            <td>(required) the radial object contains the following properties:<ul><li><b>value</b> - (optional) the name of a <a href="../../data_loading#preparing-data-set">data set</a> property to take data values from (map to)</li><li><b>zebra</b> - (optional) sets a striped scale coloring for the Radar chart (alternation of two colors in a step)</li><li><b>showAxis</b> - (optional) renders values of the scale</li></ul></td>
+            <td>(required) the radial object contains the following properties:<ul><li><b>value</b> - (optional) the name of a <a href="../../data_loading/#preparing-data-set">data set</a> property to take data values from (map to)</li><li><b>zebra</b> - (optional) sets a striped scale coloring for the Radar chart (alternation of two colors in a step)</li><li><b>showAxis</b> - (optional) renders values of the scale</li></ul></td>
         </tr>
     </tbody>
 </table>

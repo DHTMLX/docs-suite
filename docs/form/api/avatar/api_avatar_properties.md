@@ -158,7 +158,7 @@ description: You can explore the Properties of the Avatar control of Form in the
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
+            <td>(optional) <a href="../../../work_with_form/#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>preMessage</b></td>

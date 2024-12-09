@@ -16,7 +16,7 @@ Currently the most commonly encountered conformance guidelines and standards are
 
 - [ADA](https://www.ada.gov/) - US Department of Justice
 - [Section 508](https://www.section508.gov/) - US federal agencies
-- [WCAG 2.0](https://www.w3.org/WAI/intro/wcag) - globally accepted standard. WCAG 2.0 has 3 levels of conformance; A, AA and AAA (in order of conformance)
+- [WCAG 2.0](https://www.w3.org/WAI/standards-guidelines/wcag/) - globally accepted standard. WCAG 2.0 has 3 levels of conformance; A, AA and AAA (in order of conformance)
 - [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) - a standard that defines ways to make web content and web applications more accessible to people with disabilities
 - [WAI](https://www.w3.org/WAI/) - web accessibility standard
 

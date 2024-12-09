@@ -25,7 +25,7 @@ In this section you can find out how to initialize Layout, how to attach the nec
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
 | [Optimus](optimus_guides.md)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
-| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Layout with React ([Demo](https://github.com/DHTMLX/react-widgets))                                                  |
+| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Layout with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                  |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Layout with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                           |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Layout with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                |
 

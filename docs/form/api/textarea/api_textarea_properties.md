@@ -84,7 +84,7 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>numberMask</b></td>
-            <td>(optional) sets an <a href="../../../work_with_form#numbermask">input mask for entering number values</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+            <td>(optional) sets an <a href="../../../work_with_form/#numbermask">input mask for entering number values</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
                 <ol>- <b>prefix</b> - renders a text before the resulting value</ol>
                 <ol>- <b>suffix</b> - renders a text after the resulting value</ol>
                 <ol>- <b>groupSeparator</b> - sets a separator for thousands</ol>
@@ -97,7 +97,7 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>patternMask</b></td>
-            <td>(optional) sets an <a href="../../../work_with_form#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
+            <td>(optional) sets an <a href="../../../work_with_form/#patternmask">input mask for entering number and string values according to a special pattern</a>. Can be set in two ways:<ul><li>as an <i>object</i> with the following properties:
                 <ol>- <b>pattern</b> - (*function* | *string*) allows specifying the necessary mask and change it dynamically, depending on the entered values. Can be set as:<ul><li>a *function* that takes as a parameter an entered value specified as a string or as a number and returns a string with a pattern mask</li><li>a *string* with a pattern mask</li></ul></ol>
                 <ol>- <b>charFormat</b> - (*object*) allows specifying a regular expression for an optional symbol. It is set as an object with *key:value* pairs, where the *key* is a symbol and the *value* is a regular expression</ol></li>
                 <li>as a <i>string</i> allows setting a mask as a string using a predefined set of symbols</li></ul></td>
@@ -124,11 +124,11 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
+            <td>(optional) <a href="../../../work_with_form/#validating-form">defines whether a control is required</a>, <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>validation</b></td>
-            <td>(optional) <a href="../../../work_with_form#validation-rules">the rule of input validation</a>. Can be set in two ways:<ul><li>as a predefined string value:<ol>- "email" - validEmail</ol><ol>- "integer" - validInteger</ol><ol>- "numeric" - validNumeric</ol><ol>- "alphanumeric" - validAplhaNumeric</ol><ol>- "IPv4" - validIPv4</ol></li><li>as a <i>function</i> that defines a custom validation rule. It takes as a parameter the value typed in the input and returns <i>true</i>, if the entered value is valid.</li></ul></td>
+            <td>(optional) <a href="../../../work_with_form/#validation-rules">the rule of input validation</a>. Can be set in two ways:<ul><li>as a predefined string value:<ol>- "email" - validEmail</ol><ol>- "integer" - validInteger</ol><ol>- "numeric" - validNumeric</ol><ol>- "alphanumeric" - validAplhaNumeric</ol><ol>- "IPv4" - validIPv4</ol></li><li>as a <i>function</i> that defines a custom validation rule. It takes as a parameter the value typed in the input and returns <i>true</i>, if the entered value is valid.</li></ul></td>
         </tr>
         <tr>
             <td><b>width</b></td>
@@ -136,11 +136,11 @@ description: You can explore the Properties of the Textarea control of Form in t
         </tr>
         <tr>
             <td><b>maxlength</b></td>
-            <td>(optional) the maximum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
+            <td>(optional) the maximum <a href="../../../work_with_form/#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
         </tr>
         <tr>
             <td><b>minlength</b></td>
-            <td>(optional) the minimum <a href="../../../work_with_form#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
+            <td>(optional) the minimum <a href="../../../work_with_form/#number-of-allowed-characters">number of characters allowed in the textarea</a></td>
         </tr>
         <tr>
             <td><b>placeholder</b></td>

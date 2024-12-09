@@ -100,11 +100,11 @@ description: You can explore the Properties of the Combo Box control of Form in 
         </tr>
         <tr>
             <td><b>required</b></td>
-            <td>(optional) <a href="../../../work_with_form#validating-form">defines whether the field with Combo is required</a> (for a form), <i>false</i> by default</td>
+            <td>(optional) <a href="../../../work_with_form/#validating-form">defines whether the field with Combo is required</a> (for a form), <i>false</i> by default</td>
         </tr>
         <tr>
             <td><b>validation</b></td>
-            <td>(optional) <a href="../../../work_with_form#validation-rules">a callback function</a> which allows to validate Combo options.<br>The function takes two parameters:<ul><li><b>id</b> - (required) the ID(s) of the option(s) to validate</li><li><b>text</b> - (required) the value(s) of the option(s)</li></ul>and returns <i>true/false</i> to indicate the result of validation</td>
+            <td>(optional) <a href="../../../work_with_form/#validation-rules">a callback function</a> which allows to validate Combo options.<br>The function takes two parameters:<ul><li><b>id</b> - (required) the ID(s) of the option(s) to validate</li><li><b>text</b> - (required) the value(s) of the option(s)</li></ul>and returns <i>true/false</i> to indicate the result of validation</td>
         </tr>
         <tr>
             <td><b>width</b></td>
@@ -112,7 +112,7 @@ description: You can explore the Properties of the Combo Box control of Form in 
         </tr>
         <tr>
             <td><b>filter</b></td>
-            <td>(optional) sets a custom function for filtering Combo options. <a href="../../../../combobox/customization#custom-filter-for-options">Check the details.</a></td>
+            <td>(optional) sets a custom function for filtering Combo options. <a href="../../../../combobox/customization/#custom-filter-for-options">Check the details.</a></td>
         </tr>
         <tr>
             <td><b>eventHandlers</b></td>

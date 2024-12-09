@@ -2065,7 +2065,7 @@ Released on June 16, 2020
 ### Updates
 
 - The ability to adjust the width of columns to the width of their footer in [Grid](grid/configuration.md#autosize-for-columns) and [TreeGrid](grid/configuration.md#autosize-for-columns)
-- <a href = "https://github.com/DHTMLX/react-widgets" target="_blank">Suite with React demo</a> is updated
+- <a href = "https://github.com/DHTMLX/react-suite-demo" target="_blank">Suite with React demo</a> is updated
 - Ability to work with number type of id in Combobox, DataView, List widgets and in Select control of Form
 
 ## Version 6.4.4
@@ -2142,7 +2142,7 @@ Released on January 28, 2020
 
 ### New functionality
 
-- <a href = "https://github.com/DHTMLX/react-widgets" target="_blank">Suite with React demo</a> is added
+- <a href = "https://github.com/DHTMLX/react-suite-demo" target="_blank">Suite with React demo</a> is added
 
 #### Calendar
 
