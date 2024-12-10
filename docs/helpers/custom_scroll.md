@@ -12,15 +12,17 @@ description: You can have an overview of Custom Scroll in the documentation of t
 
 The feature can be activated on the page for all widgets at once via the **enable** property of the **dhx.scrollViewConfig** global variable before initialization of the widgets:
 
-```js
+~~~js
 dhx.scrollViewConfig.enable = true; // false by default
 
 // initializing widgets
-```
+~~~
 
 **Related sample:** [Custom scroll. Scroll view in List, Dataview](https://snippet.dhtmlx.com/gjsbvzdk)
 
-{{note As a result of the above logic, DHTMLX custom scrollbars will be applied to the following widgets: List, DataView, Grid, TreeGrid, Layout cell, Toolbar, Ribbon, Sidebar, Window.}}
+:::note 
+As a result of the above logic, DHTMLX custom scrollbars will be applied to the following widgets: List, DataView, Grid, Grid in the TreeGrid mode, Layout cell, Toolbar, Ribbon, Sidebar, Window.
+:::
 
 ## Custom scroll settings
 
@@ -77,7 +79,9 @@ list.scrollView.enable();
 list.scrollView.disable();
 ~~~
 
-{{note Try out the functionality [in our Snippet Tool](https://snippet.dhtmlx.com/gjsbvzdk).}}
+:::note 
+Try out the functionality [in our Snippet Tool](https://snippet.dhtmlx.com/gjsbvzdk).
+:::
 
 To force recalculation and redrawing of the custom scroll, apply the **update()** method: 
 

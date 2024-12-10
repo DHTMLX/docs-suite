@@ -9,7 +9,7 @@ description: You can learn how to work with DataCollection in the documentation 
 The DHTMLX library includes two invisible components (in other words, helpers) that serve to store data:
 
 - [DataCollection](data_collection.md/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
-- [TreeCollection](tree_collection.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Toolbar, Tree, TreeGrid)
+- [TreeCollection](tree_collection.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode)
 
 API methods and events of DataCollection and TreeCollection let you work with data items, namely to load, process, and edit the items.
 

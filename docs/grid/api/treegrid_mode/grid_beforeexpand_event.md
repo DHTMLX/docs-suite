@@ -6,7 +6,7 @@ description: You can explore the beforeExpand event of Grid in the documentation
 
 # beforeExpand
 
-@short: fires before expanding a treegrid
+@short: fires before expanding Grid in the TreeGrid mode
 
 :::note
 The event works only for Grid with the `type: "tree"` configuration option

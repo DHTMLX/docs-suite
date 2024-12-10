@@ -55,7 +55,7 @@ To add DHTMLX Pagination into an application, you need to take the following sim
 
 **Related sample**: [Pagination. Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)
 
-**Related sample**: [Pagination. Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m)
+**Related sample**: [Pagination. Pagination with Grid in the TreeGrid mode](https://snippet.dhtmlx.com/uxz8lh7m)
 
 ## Include source files
 
