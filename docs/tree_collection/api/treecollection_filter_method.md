@@ -44,4 +44,4 @@ treeGrid.data.filter({
 
 @descr:
 
-**Related sample**: [TreeGrid. Filter](https://snippet.dhtmlx.com/epsslwcd)
+**Related sample**: [Grid (TreeGrid). Filter](https://snippet.dhtmlx.com/epsslwcd)

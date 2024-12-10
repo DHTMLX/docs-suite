@@ -6,7 +6,7 @@ description: You can explore the afterExpand event of Grid in the documentation 
 
 # afterExpand
 
-@short: fires after expanding a treegrid
+@short: fires after expanding Grid in the TreeGrid mode
 
 :::note
 The event works only for Grid with the `type: "tree"` configuration option

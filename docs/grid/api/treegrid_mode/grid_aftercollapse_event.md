@@ -6,7 +6,7 @@ description: You can explore the afterCollapse event of Grid in the documentatio
 
 # afterCollapse
 
-@short: fires after collapsing a treegrid
+@short: fires after collapsing Grid in the TreeGrid mode
 
 :::note
 The event works only for Grid with the `type: "tree"` configuration option

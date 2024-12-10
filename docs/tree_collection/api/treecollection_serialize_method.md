@@ -18,12 +18,12 @@ Serialized data of the component either as an array of JSON objects or as a CSV/
 
 @example:
 // serialize data into an array of JSON objects
-treegrid.data.serialize();
+component.data.serialize();
 
 // serialize data into an XML string
-treegrid.data.serialize("xml");
+component.data.serialize("xml");
 
 // serialize data into a CSV string
-treegrid.data.serialize("csv");
+component.data.serialize("csv");
 
 @descr:

@@ -10,7 +10,7 @@ description: You can explore how to work with Online Exam Demo using Optimus Fra
 
 ![](../assets/optimus/demo/examsystem_demo.png)
 
-This demo application shows how to create an online examination system for an educational project with subjects, exams, and students' results. It is developed using DHTMLX Suite widgets: TreeGrid, Form, Sidebar, and Toolbar.
+This demo application shows how to create an online examination system for an educational project with subjects, exams, and students' results. It is developed using DHTMLX Suite widgets: Grid in the TreeGrid mode, Form, Sidebar, and Toolbar.
 
 ## How to download
 
@@ -28,7 +28,7 @@ To run the demo, follow the instructions in the README.md file.
 
 ## Demo overview
 
-The online exam system is a ready-to-use tool for online examination. You can create an online exam using the Form in the demo app in several steps. Also, it is possible to modify the Form easily as you need. The TreeGrid widget is used to manage the examination process.
+The online exam system is a ready-to-use tool for online examination. You can create an online exam using the Form in the demo app in several steps. Also, it is possible to modify the Form easily as you need. The Grid in the TreeGrid mode widget is used to manage the examination process.
 
 The online exam system demo is built with the help of the DHTMLX Optimus framework. The components of the demo are divided into Views. You can initialize or modify each component separately. Any component can be removed. The demo can be taken as a View itself and become a component of another app.
 

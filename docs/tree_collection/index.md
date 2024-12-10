@@ -6,7 +6,7 @@ description: You can have an overview of TreeCollection in the documentation of 
 
 # TreeCollection overview
 
-A set of API methods and events that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, TreeGrid.
+A set of API methods and events that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode.
 
 ## Methods
 
@@ -64,9 +64,9 @@ A set of API methods and events that allow you to work with data of a component 
 
 To call the event of TreeCollection, you may use either of the two syntaxes:
 
-- common syntax (via the **data** object of the component)
+- common syntax (via the `data` object of the component)
 
-~~~js
+~~~jsx
 menu.data.events.on("afterAdd", function(newItem){
     console.log("A new item is added");
 });
@@ -74,7 +74,7 @@ menu.data.events.on("afterAdd", function(newItem){
 
 - or short syntax (right through the component)
 
-~~~js
+~~~jsx
 menu.events.on("afterAdd", function(newItem){
     console.log("A new item is added");
 });
