@@ -30,17 +30,38 @@ description: You can explore the filter method of TreeCollection in the document
 @returns:
 - `id: string` - the id of the filter
 
-@example:
-// filtering data by a function
-tree.data.filter(function (item) {
-    return item.value.toLowerCase().indexOf("a") !== -1;
+#### Example:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset,
 });
 
-// filtering data by the column
-treeGrid.data.filter({
+// filtering data by a function
+grid.data.filter(function (item) {
+    return item.value.toLowerCase().indexOf("a") !== -1;
+});
+~~~
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+});
+
+// filtering data by the column 
+grid.data.filter({
     by: "name",
     match: "Angola"
 });
+~~~
 
 @descr:
 
