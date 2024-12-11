@@ -154,7 +154,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=dataview">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/j1yv94o8?tag=dataview">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 

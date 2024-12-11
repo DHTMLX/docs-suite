@@ -156,7 +156,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=ribbon">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/3djaib6o?tag=ribbon">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
