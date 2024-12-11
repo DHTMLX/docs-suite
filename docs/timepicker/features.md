@@ -94,7 +94,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=timepicker">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/u9ge1a4z?tag=timepicker">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 

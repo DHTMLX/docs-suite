@@ -96,11 +96,11 @@ In this section you will learn about common functionality of the library which c
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=slider">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/jsfxnplp?tag=slider">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
