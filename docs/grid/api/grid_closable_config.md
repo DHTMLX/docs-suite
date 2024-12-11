@@ -12,6 +12,10 @@ description: You can explore the closable config of Grid in the documentation of
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
+:::note
+The `closable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
+:::
+
 @signature: {'closable?: boolean;'}
 
 @default: true
