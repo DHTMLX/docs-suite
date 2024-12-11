@@ -6,7 +6,7 @@ description: You can explore the collapsed config of Grid in the documentation o
 
 # collapsed
 
-@short: Optional. Defines that a treegrid is initialized in the collapsed state
+@short: Optional. Defines that Grid in the TreeGrid mode is initialized in the collapsed state
 
 :::note
 The property works only for Grid with the `type: "tree"` configuration option

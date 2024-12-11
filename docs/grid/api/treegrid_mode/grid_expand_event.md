@@ -6,7 +6,7 @@ description: You can explore the expand event of Grid in the documentation of th
 
 # expand
 
-@short: fires before collapsing a treegrid
+@short: fires before collapsing Grid in the TreeGrid mode
 
 :::note
 The event works only for Grid with the `type: "tree"` configuration option

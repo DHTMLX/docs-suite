@@ -6,7 +6,7 @@ description: You can explore the beforeCollapse event of Grid in the documentati
 
 # beforeCollapse
 
-@short: fires before collapsing a treegrid
+@short: fires before collapsing Grid in the TreeGrid mode
 
 :::note
 The event works only for Grid with the `type: "tree"` configuration option

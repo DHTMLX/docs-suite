@@ -12,7 +12,7 @@ From v7.2, DHTMLX includes neat custom scrollbars with a thin grey semi-transpar
 
 <iframe src="https://snippet.dhtmlx.com/gjsbvzdk?mode=result" frameborder="0" class="snippet_iframe" width="100%" height="700"></iframe>
 
-The custom scroll is available for the following DHTMLX components: List, DataView, Grid, TreeGrid, Layout cell, Toolbar, Ribbon, Sidebar, Window.
+The custom scroll is available for the following DHTMLX components: List, DataView, Grid, Grid in the TreeGrid mode, Layout cell, Toolbar, Ribbon, Sidebar, Window.
 
 To add the feature into your application, you need to set the **enable** property of the **dhx.scrollViewConfig** global variable to *true* before initialization of the widgets:
 

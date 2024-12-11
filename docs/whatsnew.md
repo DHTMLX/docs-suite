@@ -8,6 +8,31 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 9.0.1 
+------------------
+
+Released on December 10, 2024
+
+### Fixes
+
+- Core. The issue with the local trial package during import to frameworks
+- DataCollection. Adding multiple elements at index -1 will distribute the elements throughout the collection
+- DataCollection. The `find()`/`findAll()` method miss the `index` and `array` arguments, when the parameter is set as a function
+- DataCollection. The `add()` method mutates the added object
+- DataCollection. Data preparation in the config is removed (old realization)
+- DataCollection. After parsing the grouped data, the old data is displayed
+- Form. The issue with the destruction of items in Optimus
+- Grid. Multiselection. Reselection of the first selected row doesn't work
+- Grid. The export module typization is added
+- Grid. The use of `footerAutoHeight` with `summary` causes an error
+- Message. Incorrect text wrapping
+- Tree. Selection isn't applied after dragging an item to another Tree
+- TreeCollection. The `smartSorting` property is missed in the configuration of the `sort()` method
+- TreeCollection. The `filter()` method allows specifying an invalid configuration 
+- TreeCollection. The `move()` method calculates the movements incorrectly when moving an array of elements
+- TreeCollection. The `move()` method doesn't allow being called without additional arguments
+- TreeCollection. The ability to create a non-existent parent
+
 Version 9.0
 ---------------
 

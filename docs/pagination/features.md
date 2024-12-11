@@ -23,7 +23,7 @@ In this section you can find out how to initialize Pagination with different dat
 | [Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)     | The example shows how to initialize Grid inside Pagination     |
 | [Pagination with List](https://snippet.dhtmlx.com/6sju9jl5)     | The example shows how to initialize List inside Pagination     |
 | [Pagination with Tree](https://snippet.dhtmlx.com/a0jhoipw)     | The example shows how to initialize Tree inside Pagination     |
-| [Pagination with TreeGrid](https://snippet.dhtmlx.com/uxz8lh7m) | The example shows how to initialize TreeGrid inside Pagination |
+| [Pagination with Grid in the TreeGrid mode](https://snippet.dhtmlx.com/uxz8lh7m) | The example shows how to initialize Grid in the TreeGrid mode inside Pagination |
 
 ### Integration
 
@@ -97,7 +97,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=pagination">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/05r4s63b?tag=pagination">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
