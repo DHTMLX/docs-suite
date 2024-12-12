@@ -14,8 +14,13 @@ description: You can explore the getText method of the Input control of Form in 
 A string with the text with the applied mask
 
 @example:
-const value = form.getItem("input").getText();
-// -> "100000.01"
+const input = form.getItem("input");
+input.setValue(1000.01);
+
+input.getValue(); // 1000.01 for the input type number
+input.getValue(); // "1000.01" for the input type string
+
+input.getText(); // "1,000.01" with the applied numberMask/patternMask
 
 @descr:
 The method is used with the [`numberMask`](form/work_with_form.md#numbermask) and [`patternMask`](form/work_with_form.md#patternmask) properties of the Input control. It allows getting the value with the applied mask. 
@@ -23,4 +28,4 @@ The method is used with the [`numberMask`](form/work_with_form.md#numbermask) an
 @changelog:
 Added in v9.0
 
-**Related:** [Getting the text value of an input](form/work_with_form.md#getting-the-text-value-of-an-input)
+**Related:** [Getting the text value of an input](form/work_with_form.md#getting-the-text-value-of-an-input-or-a-textarea)

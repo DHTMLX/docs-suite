@@ -107,7 +107,7 @@ form.isVisible("input"); // -> returns true/false
 
 ## Using input masks
 
-The input masks are used to provide entering of values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input) method in the Input control API which are used for working with input masks.
+The input masks are used to provide entering of values into the [**Input**](form/input.md) and [**Textarea**](form/textarea.md) Form controls in a predefined way. There are the [`numberMask`](#numbermask) and [`patternMask`](#patternmask) configuration options in the API of the Input and Textarea controls, and the [`getText()`](#getting-the-text-value-of-an-input-or-a-textarea) method in the Input control API which are used for working with input masks.
 
 ### numberMask
 
@@ -319,14 +319,19 @@ In the above example:
 
 **Related sample**: [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z)
 
-### Getting the text value of an input 
+### Getting the text value of an input or a textarea
 
-When you need to get the value of an input with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the **Input** control.
-It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the Input control. 
+When you need to get the value of an input or a textarea with the applied mask, you can use the [`getText()`](form/api/input/input_gettext_method.md) method of the **Input** control or the [`getText()`](form/api/textarea/textarea_gettext_method.md) method of the **Textarea** control.
+It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the control. 
 
 ~~~jsx
-const value = form.getItem("input").getText();
-// -> "100000.01"
+const input = form.getItem("input");
+input.setValue(1000.01);
+
+input.getValue(); // 1000.01 for the input type number
+input.getValue(); // "1000.01" for the input type string
+
+input.getText(); // "1,000.01" with the applied numberMask/patternMask
 ~~~
 
 ## Validating form

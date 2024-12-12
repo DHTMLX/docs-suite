@@ -103,6 +103,7 @@ In this section you will study how to send a Form to the server, how to disable 
 | [Is disabled](../work_with_form/#checking-if-a-form-is-disabled)                  | Learn how to check whether a Form or its control is disabled ([Example](https://snippet.dhtmlx.com/lthu8p6p)) |
 | [Hiding / showing Form](../work_with_form/#hidingshowing-a-form)                  | Learn how to hide/show a Form                                                                                 |
 | [Checking visibility of a Form](../work_with_form/#checking-if-a-form-is-visible) | Learn how to check whether a Form or its control is visible                                                   |
+| [Using input masks](../work_with_form/#using-input-masks) | Learn how to use pattern and input masks to provide entering of values in a predefined way ([Example 1](https://snippet.dhtmlx.com/51wnauq3), [Example 2](https://snippet.dhtmlx.com/gu1ekt1z)) |                                
 | [Clearing Form](../work_with_form/#clearing-form)                                 | Learn how to clear the values and (or) validation of Form ([Example](https://snippet.dhtmlx.com/a64ih4ih))    |
 
 
