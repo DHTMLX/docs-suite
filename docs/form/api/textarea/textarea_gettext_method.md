@@ -14,8 +14,13 @@ description: You can explore the getText method of the Textarea control of Form 
 A string with the text with the applied mask
 
 @example:
-const value = form.getItem("textarea").getText();
-// -> "100000.01"
+const input = form.getItem("textarea");
+input.setValue(1000.01);
+
+input.getValue(); // 1000.01 for the input type number
+input.getValue(); // "1000.01" for the input type string
+
+input.getText(); // "1,000.01" with the applied numberMask/patternMask
 
 @descr:
 The method is used with the [`numberMask`](form/work_with_form.md#numbermask) and [`patternMask`](form/work_with_form.md#patternmask) properties of the Textarea control. It allows getting the value with the applied mask. 

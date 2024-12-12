@@ -325,8 +325,13 @@ When you need to get the value of an input or a textarea with the applied mask, 
 It returns the input value of the control as a string. The method is used with the `numberMask` and `patternMask` properties of the control. 
 
 ~~~jsx
-const value = form.getItem("input").getText();
-// -> "100000.01"
+const input = form.getItem("input");
+input.setValue(1000.01);
+
+input.getValue(); // 1000.01 for the input type number
+input.getValue(); // "1000.01" for the input type string
+
+input.getText(); // "1,000.01" with the applied numberMask/patternMask
 ~~~
 
 ## Validating form
