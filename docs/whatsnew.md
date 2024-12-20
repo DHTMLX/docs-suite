@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+Version 9.0.2 
+------------------
+
+Released on December 23, 2024
+
+### Fixes
+
+- Grid. The `input` editor doesn't work when `selection:"row"` is specified
+- Grid. `autoEmptyRow` creates an additional empty row on loading external data
+
 Version 9.0.1 
 ------------------
 
