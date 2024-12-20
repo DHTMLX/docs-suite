@@ -1,0 +1,29 @@
+---
+sidebar_label: maxWidth
+title: JavaScript Grid column - maxWidth Config 
+description: You can explore the maxWidth config of Grid column in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite.
+---
+
+# maxWidth
+
+@short: Optional. The maximal width to be set for a column
+
+## Usage
+
+~~~jsx
+maxWidth?: number,
+~~~
+
+@example:
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { maxWidth: 150, width: 300, id: "country", header: [{ text: "Country" }] },
+        { maxWidth: 150, width: 300, id: "population", header: [{ text: "Population" }]},
+        { maxWidth: 150, width: 300, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+    ],
+    data: dataset
+});
+
+@descr:
+
+**Related sample**: [Grid. Columns max width](https://snippet.dhtmlx.com/ku3cfaux)

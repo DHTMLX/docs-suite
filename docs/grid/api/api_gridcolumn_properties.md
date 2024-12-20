@@ -16,65 +16,12 @@ columns:[
     minWidth?: number, // 20 by default
     maxWidth?: number, 
     autoWidth?: boolean, // false by default
-    header: [
-        {
-            text?: string | ((content: {
-                [key: string]: string | number | null
-            }) => string),
-            tooltip?: boolean | object, // true by default
-            tooltipTemplate?: (
-                content: { value: string } & { [key: string]: string | number | null },
-                header: IHeader,
-                column: ICol
-            ) => string | boolean,
-            align?: "left" | "center" | "right", // "left" by default
-            colspan?: number,
-            rowspan?: number,
-            css?: string,
-            content?: "inputFilter" | "selectFilter" | "comboFilter",
-            filterConfig?: {
-                filter?: (item: any, input: string) => boolean,
-                multiselection?: boolean,
-                readonly?: boolean,
-                placeholder?: string,
-                virtual?: boolean,
-                template?: function
-            },
-            customFilter?: (item: any, input: string) => boolean,
-            headerSort?: boolean, // true by default
-            sortAs?: (cellValue: any) => string | number,
-            htmlEnable?: boolean, // false by default
-        }
-    ],
-    footer?: [
-        {
-            text?: string | ((content: {
-                [key: string]: string | number | null
-            }) => string),
-            tooltip?: boolean | object, // true by default
-            tooltipTemplate?: (
-                content: { value: string } & { [key: string]: string | number | null },
-                header: IHeader,
-                column: ICol
-            ) => string | boolean,
-            align?: "left" | "center" | "right", // "left" by default
-            colspan?: number,
-            rowspan?: number,
-            css?: string,
-            htmlEnable?: boolean, // false by default
-        },
-    ],
+    header: [ /* header rows configuration */],
+    footer?: [ /* footer rows configuration */],
     type?: "string" | "number" | "boolean" | "date", // "string" by default
     numberMask?:
         | {
-            prefix?: string, // "" by default (before the value)
-            suffix?: string, // "" by default (after the value)
-            groupSeparator?: string, // "," by default
-            decSeparator?: string, // "." by default
-            allowNegative?: boolean, // true by default
-            maxIntLength?: number, 
-            maxDecLength?: number, 
-            minDecLength?: number // 0 by default
+            // numberMask configuration
           }
         | boolean,
     patternMask?:
@@ -107,8 +54,8 @@ columns:[
     groupable?: boolean, // false by default
     closable?: boolean, // true by default
     summary?: { 
-            [key: string]: string | [string, string] | (row: IRow[]) => string | number 
-        } | string
+        [key: string]: string | [string, string] | (row: IRow[]) => string | number 
+    } | string
   },
   // more column objects
 ]
@@ -139,7 +86,7 @@ columns:[
             <td>(optional) enables/disables the ability of a column to adjust its size to the size of Grid, <i>false</i> by default<br><br>Also note:<br><li>If <b>autoWidth</b> is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the <b>minWidth/maxWidth</b> properties if they are set for the column.</li><li>The property is ignored if the <a href="../../../grid/configuration/#autosize-for-columns">adjust</a> property is used.</li><li>If the <b>width</b> property is specified in the configuration object of a column, the <b>autoWidth</b> property won't work for this column.</li></td>
         </tr>
         <tr>
-            <td><b id="header">header</b></td>
+            <td><a href="../gridcolumn_properties/gridcolumn_header_property/"><b id="header">header</b></a></td>
             <td>(required) an array of objects with header rows configuration. Each header object may include:<ul><li><a href="../../configuration/#headerfooter-text"><b>text</b></a> - (optional) the text of a header or a callback function which is called with the following parameter:<ul><li><b>content</b> - an object with the content of the header tooltip that contains the calculated values as *key:value* pairs, where:<ul><li>the *key* is either the key defined in the list or the functor name</li><li>the *value* can be a *string/number* or *null*</li></ul> The calculated values are taken either from the <b>summary</b> config option of the component or the <b>summary</b> config option of a column</li></ul></li><li><b>tooltip</b> - (optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings; <i>true</i> by default. When set as an object, the <b>tooltip</b> config can have the following properties:<ul><li><b>force</b> - (optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, *false* by default</li><li><b>showDelay</b> - (optional) the time period that should pass before showing a tooltip, in ms</li><li><b>hideDelay</b> - (optional) the time period that should pass before hiding a tooltip, in ms</li><li><b>margin</b> - (optional) the margin between the node and tooltip; *8px* by default</li><li><b>position</b> - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default</li><li><b>css</b> - (optional) the style of a tooltip box</li></ul></li><li><a href="../../configuration/#column-headerfooter-tooltip"><b>tooltipTemplate</b></a> - (optional) sets a template for the header tooltip. Takes into account the <a href="../../configuration/#html-content-of-grid-columns">htmlEnable</a> property. The value of the <b>tooltipTemplate</b> property is a callback function which is called with the following parameters:<ul><li><b>content</b> - an object with the content of the header tooltip. Contains two properties which are available either from the component's or from the column's configuration:<ul><li><b>value</b> - the value rendered in a cell, including the applied templates</li><li>an object with the calculated values of the <b>summary</b> property, set as *key:value* pairs where:<ul><li>the *key* is either the key defined in the list or the functor name</li><li>the *value* can be a *string/number* or *null*</li></ul></li></ul></li><li><b>header</b> - the object of the column header</li><li><b>column</b> - the object of a column</li></ul>Return <i>false</i> to disable the tooltip</li><li><a href="../../configuration/#alignment"><b>align</b></a> - (optional) aligns data in the header: *"left"* | *"center"* | *"right"*, <i>"left"</i> by default</li><li><b>colspan</b> - (optional) the number of columns in a colspan</li><li><b>rowspan</b> - (optional) the number of rows in a rowspan </li><li><b>css</b> - (optional) styling to be applied to a header</li><li><a href="../../configuration/#headerfooter-filters"><b>content</b></a> - (optional) additional content of a header, which can be one of the filters: *"inputFilter"* | *"selectFilter"* | *"comboFilter"*</li><li><a href="../../configuration/#headerfooter-filters"><b>filterConfig</b></a> - (optional) a configuration object for <b>"comboFilter"</b>. It can contain a set of properties:<ul><li><b>filter</b> - (optional) sets a custom function for filtering Combo Box options</li><li> <b>multiselection</b> - (optional) enables selection of multiple options</li><li><b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the <b>readonly</b> property depends on the following conditions:<ul><li>the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column</li><li>in all other cases, `readonly:false` is set by default</li></ul></li><li><b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</li><li><b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options</li><li><b>template</b> - (optional) a function which returns a template with content for the filter options. Takes an option item as a parameter:<ul><li><b>item</b> - (object) an option item</li></ul></li></ul></li><li><a href="../../configuration/#customizing-headerfooter-filters"><b>customFilter</b></a> - (optional) a custom function for extended filtering. It takes two parameters:<ul><li><b>item</b> - (required) a data item the value of which should be compared</li><li> <b>input</b> - (required) the value of the option selected in the filter</li></ul>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering</li><li><b>headerSort</b> - (optional) enables/disables sorting by clicking the header, <i>true</i> by default</li><li><b>sortAs</b> - (optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</li><li><b>htmlEnable</b> - (optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/eol76o68" target="_blank">Grid. Grouped headers (spans)</a></td>
         </tr>
         <tr>
