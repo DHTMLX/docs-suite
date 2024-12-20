@@ -912,7 +912,7 @@ const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "country", header: [{ text: "Country" }] },
         { width: 150, id: "population", header: [{ text: "Population" }] },
-        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
         { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
     ],
     group: true,
@@ -943,7 +943,7 @@ const grid = new dhx.Grid("grid_container", {
             header: [{ text: "Population" }],
             groupable: true,
         },
-        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
         { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
     ],
     group: {
