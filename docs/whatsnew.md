@@ -8,8 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
-Version 9.0.1 
-------------------
+## Version 9.0.2
+
+Released on December 23, 2024
+
+### Fixes
+
+- Grid. The `input` editor doesn't work when `selection:"row"` is specified
+- Grid. `autoEmptyRow` creates an additional empty row on loading external data
+
+## Version 9.0.1
 
 Released on December 10, 2024
 
@@ -28,13 +36,12 @@ Released on December 10, 2024
 - Message. Incorrect text wrapping
 - Tree. Selection isn't applied after dragging an item to another Tree
 - TreeCollection. The `smartSorting` property is missed in the configuration of the `sort()` method
-- TreeCollection. The `filter()` method allows specifying an invalid configuration 
+- TreeCollection. The `filter()` method allows specifying an invalid configuration
 - TreeCollection. The `move()` method calculates the movements incorrectly when moving an array of elements
 - TreeCollection. The `move()` method doesn't allow being called without additional arguments
 - TreeCollection. The ability to create a non-existent parent
 
-Version 9.0
----------------
+## Version 9.0
 
 Released on November 25, 2024
 
@@ -108,9 +115,7 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 - [Form. Number mask](https://snippet.dhtmlx.com/51wnauq3)
 - [Form. Pattern mask](https://snippet.dhtmlx.com/gu1ekt1z) 
 
-
-Version 8.4.6 
------------------
+## Version 8.4.6
 
 Released on October 15, 2024
 
@@ -118,8 +123,7 @@ Released on October 15, 2024
 
 - Grid. The issue with opening the Combobox column editor without options
 
-Version 8.4.4 
------------------
+## Version 8.4.4
 
 Released on September 16, 2024
 
@@ -127,8 +131,7 @@ Released on September 16, 2024
 
 - Grid. Data is not displayed in the non-PRO version
 
-Version 8.4.3 
-------------------
+## Version 8.4.3
 
 Released on September 10, 2024
 
@@ -141,8 +144,7 @@ Released on September 10, 2024
 - Grid/TreeGrid. The `beforeColumnDrop` event fires after dragging rows
 - Grid/TreeGrid. The `height` property set as a string breaks rendering of the component 
 
-Version 8.4.2 
-------------------
+## Version 8.4.2
 
 Released on August 29, 2024
 
@@ -160,8 +162,7 @@ Released on August 29, 2024
 - Layout. Issue with cells resizing
 - Tree. The intermediate state of three-state checkboxes isn't displayed when a dataset is specified in the Tree configuration
 
-Version 8.4.1
-------------------
+## Version 8.4.1
 
 Released on July 25, 2024
 
@@ -174,8 +175,7 @@ Released on July 25, 2024
 - Grid/TreeGrid. Row selection gets lost after dragging a column 
 - Tree. Checkbox states are not displayed in the serialized data
 
-Version 8.4 
-------------------
+## Version 8.4 
 
 Released on July 16, 2024
 
@@ -231,7 +231,6 @@ Released on July 16, 2024
 - Tabbar. [Tooltips on tabs](https://snippet.dhtmlx.com/o5x1e3i8?tag=tabbar)
 - TreeGrid. [Editing with a colorpicker editor](https://snippet.dhtmlx.com/tx89igxr?tag=treegrid)   
   
-
 ## Version 8.3.14
 
 Released on July 8, 2024
