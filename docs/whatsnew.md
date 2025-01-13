@@ -8,6 +8,17 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.0.3
+
+Released on January 13, 2025
+
+### Fixes
+
+- Chart. Chart bars aren't displayed if the series have the same value
+- Chart. A stacked bar isn't rendered if a data object for some series doesn't contain a value
+- Grid. Sorting the header "selectFilter"/"comboFilter" options with numeric data in the "number" column type
+- Grid. Dragging a child item to the parent item in the TreeGrid mode
+
 ## Version 9.0.2
 
 Released on December 23, 2024
