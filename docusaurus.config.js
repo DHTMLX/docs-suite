@@ -165,7 +165,7 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com',
+                    href: 'https://snippet.dhtmlx.com/cwiuna9l?tag=suite',
                     position: 'right'
                 },
                 {
@@ -197,7 +197,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com',
+                            href: 'https://snippet.dhtmlx.com/cwiuna9l?tag=suite',
                             position: 'right'
                         },
                         {
