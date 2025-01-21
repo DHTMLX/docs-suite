@@ -42,31 +42,11 @@ where:
 
 The methods of DataCollection are useful for:
 
-- Loading data
-- Sorting and filtering data
-- Editing data
-- Saving and restoring
-- Grouping data
-
-#### Loading data
-
-To load data into the component use the `load()` or `parse()` methods. The `load()` method is used to load data from an external file, the `parse()` method is used to load data from a local data source.
-
-#### Sorting and filtering data
-
-When working with data you may need to sort or filter it. Use the `sort()` method and the `filter()` one for this purpose.
-
-#### Editing data
-
-You can add new items into the initialized component via the `add()` method, remove particular items by the `remove()` method or remove all items at once via the `removeAll()` method. The `update()` method allows you to update the necessary configuration options of the item by its id while the `changeId()` method lets you change the id of the element.
-
-#### Saving and restoring
-
-The `serialize()` method is used to serialize data into JSON, XML or CSV format. You can send the serialized data to a new component or server. The `copy()` method will help you to create a copy of an item at the defined position. Use the `save()` method to save changes made in the data to the server side.
-
-#### Grouping data
-
-You can group the data of a component using the `group()` method and remove data groups via the `ungroup()` method. The `isGrouped()` method allows you to check whether a data collection is grouped.
+- [Loading data](guides/datacollection/loading_data.md)
+- [Sorting and filtering data](guides/datacollection/sorting_filtering_data.md)
+- [Editing data](guides/datacollection/editing_data.md)
+- [Saving and restoring data](guides/datacollection/saving_restoring_data.md)
+- [Grouping data](guides/datacollection/grouping_data.md)
 
 Check all the [methods](data_collection.md/#methods) of DataCollection.
 

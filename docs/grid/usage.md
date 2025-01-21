@@ -263,7 +263,7 @@ grid.removeSpan("10", "a");
 
 ### Filtering data
 
-You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](data_collection.md). The method takes as a parameter an object with the properties described below:
+You can filter grid data by the specified criteria with the help of the `filter()` method of [DataCollection](data_collection.md). The method takes two parameters:
 
 <table>
     <tbody>
@@ -969,7 +969,7 @@ The method takes the following parameters:
     - an `IGroupOrder` object that has the following properties:
         - `by` - the field name or a function for user-defined grouping
         - `map` - (optional) an object for data aggregation in a group, where the keys are field names, and the values can be:
-            - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the `dhx.methods` helper
+            - a tuple `[string, TAggregate]` that specifies the field and the aggregation type ("sum", "count", "min", "max", "avg") from the [`dhx.methods`](helpers/data_calculation_functions.md) helper
             - a user-defined aggregation function `(i: IDataItem[]) => string | number`
         - `summary` - (optional) specifies where the total row is rendered - at the `top` or at the `bottom` of the group 
 - `config` - (optional) the configuration of data grouping

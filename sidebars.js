@@ -4913,7 +4913,22 @@ module.exports = {
       },
       items: [
         "guides/events_guide",
-        "guides/datacollection_guide",
+        {
+            type: "category",
+            label: "How to work with DataCollection",
+            link: {
+              type: 'doc',
+              id:"guides/datacollection_guide"
+            },
+            items: [
+              "guides/datacollection/loading_data",
+              "guides/datacollection/sorting_filtering_data",
+              "guides/datacollection/editing_data",
+              "guides/datacollection/saving_restoring_data",
+              "guides/datacollection/grouping_data",
+            ],
+          },
+        //"guides/datacollection_guide",
       ],
     },
     // end Guides
