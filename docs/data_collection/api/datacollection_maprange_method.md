@@ -6,7 +6,7 @@ description: You can explore the mapRange method of DataCollection in the docume
 
 # mapRange()
 
-@short: returns a new array of the items correspond to the specified parameters
+@short: returns a new array of the items corresponding to the specified parameters
 
 @signature: {'mapRange(from: number, to: number, callback: function): object[];'}
 

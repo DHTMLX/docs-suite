@@ -6,7 +6,9 @@ description: You can explore the isDataLoaded method of DataCollection in the do
 
 # isDataLoaded()
 
-{{pronote This functionality is available in the PRO edition only.}}
+:::tip pro version only
+This functionality is available in the PRO edition only.
+:::
 
 @short: checks whether the specified data range is loaded from the server
 

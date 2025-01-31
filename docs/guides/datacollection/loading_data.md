@@ -14,7 +14,7 @@ Please note that if you specify the `id` fields in the loaded data collection, t
 
 ## Loading data from an external file
 
-To load data into a component from an external file, make use of the [load()](data_collection/api/datacollection_load_method.md) method of [DataCollection](data_collection.md). It takes as parameters the URL of the file with data and, optionally, DataDriver or the type of data ("json" (default), "csv", "xml"). For example:
+To load data into a component from an external file, make use of the [`load()`](data_collection/api/datacollection_load_method.md) method of [DataCollection](data_collection.md). It takes as parameters the URL of the file with data and, optionally, DataDriver or the type of data ("json" (default), "csv", "xml"). For example:
 
 ~~~jsx
 component.data.load("../common/data.xml", "xml");
@@ -45,7 +45,7 @@ component.data.loadData.then(function(){
 
 ## Loading data from a local data source
 
-To load data into a component from a local data source, use the [parse()](data_collection/api/datacollection_parse_method.md) method of [DataCollection](data_collection.md). The method takes as parameters a predefined data set and, optionally, DataDriver or the type of data ("json" (default), "csv", "xml"). For example:
+To load data into a component from a local data source, use the [`parse()`](data_collection/api/datacollection_parse_method.md) method of [DataCollection](data_collection.md). The method takes as parameters a predefined data set and, optionally, DataDriver or the type of data ("json" (default), "csv", "xml"). For example:
 
 ~~~jsx
 const dataset = [
@@ -73,3 +73,20 @@ dataview.data.parse(dataset);
 ~~~
 
 **Related sample**: [Data. Parse](https://snippet.dhtmlx.com/0zrxtmvi)
+
+## Checking whether data is loaded
+
+:::tip pro version only
+This functionality is available in the PRO edition only.
+:::
+
+You can check whether the specified data range is loaded from the server using the [`isDataLoaded()`](data_collection/api/datacollection_isdataloaded_method.md) method of [DataCollection](data_collection.md). The method takes the following parameters:
+
+- `from: number` - optional, the index of the first element of the data range to be checked
+- `to: number` - optional, the index of the last element of the data range to be checked
+
+and returns `true`, if a range of data is loaded; otherwise, `false`.
+
+~~~jsx
+component.data.isDataLoaded();
+~~~

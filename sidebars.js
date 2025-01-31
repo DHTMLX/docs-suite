@@ -4926,6 +4926,7 @@ module.exports = {
               "guides/datacollection/editing_data",
               "guides/datacollection/saving_restoring_data",
               "guides/datacollection/grouping_data",
+              "guides/datacollection/working_with_data_items",
             ],
           },
         //"guides/datacollection_guide",

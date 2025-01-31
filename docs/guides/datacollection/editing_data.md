@@ -95,14 +95,3 @@ component.data.copy("4",5); // copies the item with id:4 to the position with in
 
 **Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)
 
-## Changing the id of an item
-
-You can change the id of the necessary element of a data collection, using the [`changeId()`](data_collection/api/datacollection_changeid_method.md) method. The method takes the following parameters:
-
-- `id: string | number` - the old id of an item
-- `newId: string | number` - optional, the new id; auto-generated if not set
-- `silent: boolean` - optional, *true* to prevent changing the id; otherwise, *false*
-
-~~~jsx
-component.data.changeId("1", "22");
-~~~

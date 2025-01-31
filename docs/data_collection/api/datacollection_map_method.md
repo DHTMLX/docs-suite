@@ -6,7 +6,7 @@ description: You can explore the map method of DataCollection in the documentati
 
 # map()
 
-@short: iterates through all items of the component
+@short: iterates through all the items of the component
 
 @signature: {'map(callback: function): object[];'}
 
@@ -17,7 +17,7 @@ description: You can explore the map method of DataCollection in the documentati
 A new array of items where each item is the result of the callback function.
 
 @example:
-//getting ids of all items of the component
+// getting the ids of all the items of the component
 component.data.map(function(item){
     return item;
 });

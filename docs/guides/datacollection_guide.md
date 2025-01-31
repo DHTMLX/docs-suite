@@ -43,10 +43,11 @@ where:
 The methods of DataCollection are useful for:
 
 - [Loading data](guides/datacollection/loading_data.md)
-- [Sorting and filtering data](guides/datacollection/sorting_filtering_data.md)
 - [Editing data](guides/datacollection/editing_data.md)
-- [Saving and restoring data](guides/datacollection/saving_restoring_data.md)
+- [Working with data items](guides/datacollection/work_with_data_items.md)
+- [Sorting and filtering data](guides/datacollection/sorting_filtering_data.md)
 - [Grouping data](guides/datacollection/grouping_data.md)
+- [Saving and restoring data](guides/datacollection/saving_restoring_data.md)
 
 Check all the [methods](data_collection.md/#methods) of DataCollection.
 

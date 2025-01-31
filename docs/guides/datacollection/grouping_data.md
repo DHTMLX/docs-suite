@@ -8,6 +8,10 @@ description: You can learn how to group data with DataCollection in the document
 
 You can group the data of a component, ungroup data and check whether data in a collection is grouped via the DataCollection API.
 
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
 :::info important
 Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
 :::

@@ -6,9 +6,9 @@ description: You can explore how to work with Grid in the documentation of the D
 
 # TreeGrid mode
 
-{{pronote
+:::tip pro version only
 The TreeGrid mode of the Grid component is available in the **PRO** version only.
-}}
+:::
 
 TreeGrid mode of the Grid component allows showing the nested tabular data. 
 

@@ -67,7 +67,7 @@ To filter data items in a component, use the [`filter()`](data_collection/api/da
             - `item` - a data item the values of which should be compared (e.g. a row)
 - `config: object` - optional, defines the parameters of filtering. It may contain the following properties: 
     - `id: string` - optional, the id of the filter
-    - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)
+    - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (*true*), or to the initial data (*false*, default)
     - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](data_collection/api/datacollection_resetfilter_method.md) method
 
 The `filter()` method returns the id of the filter.
@@ -101,3 +101,40 @@ grid.data.filter({
 ~~~
 
 **Related sample**: [Data. Filter](https://snippet.dhtmlx.com/csiwq3kj)
+
+### Getting filters
+
+You can get filters applied to the data of a component using the [`getFilters()`](data_collection/api/datacollection_getfilters_method.md) method. The method takes the following parameter:
+
+- `permanent: boolean` - optional, *false* by default. Allows getting the list of permanent filters
+
+and returns an object with the applied filters, where the key is the id of a filter and the value is an object with the [`rule` and `config` properties](data_collection/api/datacollection_filter_method.md).
+
+~~~jsx
+const filters = grid.data.getFilters();
+~~~
+
+### Resetting filters
+
+You can reset a certain filter or all the active filters using the [`resetFilter()`](data_collection/api/datacollection_resetfilter_method.md) method. It takes the following parameter:
+
+- `config: object` - optional, specifies the parameters of resetting the active filters. If the config isn't specified or it is empty, all the filters except for those that have the `permanent` property in the configuration object will be reset. Can contain the following properties:
+    - `id: string` - optional, the id of the filter to reset
+    - `permanent: boolean` - optional, *true* to reset all the active filters, including those that have the `permanent:true` property in their config
+
+The method returns *true*, if all the filters, including the permanent ones, have been reset; otherwise *false*.
+
+~~~jsx
+// resets all the filters, except for those that have the "permanent" property in the config
+component.data.resetFilter();
+
+// resets all the filters, including those that have the "permanent" property in the config
+component.data.resetFilter({ permanent: true });
+
+// resets the filter with the specified id
+component.data.resetFilter({ id: "filter_id" });
+~~~
+
+**Related samples**: 
+- [Data. ResetFilter](https://snippet.dhtmlx.com/jg8wxfvc)
+- [Grid. ResetFilter](https://snippet.dhtmlx.com/15trblk2)
