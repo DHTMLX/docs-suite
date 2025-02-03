@@ -8,6 +8,16 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.0.4 
+
+Released on February 4, 2025
+
+### Fixes
+
+- Core. Incorrect work of `numberMask` used with the `allowNegative` property on initialization of components
+- Grid. An issue with ignoring the `maxWidth` property specified for a column
+- Window. An issue with restoring of embedded views (Grid scroll)
+
 ## Version 9.0.3
 
 Released on January 13, 2025
