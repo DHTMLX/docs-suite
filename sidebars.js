@@ -2475,9 +2475,13 @@ module.exports = {
                     "grid/api/grid_addrowcss_method",
                     "grid/api/grid_addspan_method",
                     "grid/api/grid_adjustcolumnwidth_method",
+                    "grid/api/grid_collapse_method",
+                    "grid/api/grid_collapseall_method",
                     "grid/api/grid_destructor_method",
                     "grid/api/grid_editcell_method",
                     "grid/api/grid_editend_method",
+                    "grid/api/grid_expand_method",
+                    "grid/api/grid_expandall_method",
                     "grid/api/grid_getcellrect_method",
                     "grid/api/grid_getcolumn_method",
                     {
@@ -2528,12 +2532,14 @@ module.exports = {
                     id: "grid/api/overview/events_overview",
                   },*/
                   items: [
+                    "grid/api/grid_aftercollapse_event",
                     "grid/api/grid_aftercolumndrag_event",
                     "grid/api/grid_aftercolumndrop_event",
                     "grid/api/grid_aftercolumnhide_event",
                     "grid/api/grid_aftercolumnshow_event",
                     "grid/api/grid_aftereditend_event",
                     "grid/api/grid_aftereditstart_event",
+                    "grid/api/grid_afterexpand_event",
                     "grid/api/grid_afterkeydown_event",
                     "grid/api/grid_afterresizeend_event",
                     "grid/api/grid_afterrowdrag_event",
@@ -2542,12 +2548,14 @@ module.exports = {
                     "grid/api/grid_afterrowresize_event",
                     "grid/api/grid_afterrowshow_event",
                     "grid/api/grid_aftersort_event",
+                    "grid/api/grid_beforecollapse_event",
                     "grid/api/grid_beforecolumndrag_event",
                     "grid/api/grid_beforecolumndrop_event",
                     "grid/api/grid_beforecolumnhide_event",
                     "grid/api/grid_beforecolumnshow_event",
                     "grid/api/grid_beforeeditend_event",
                     "grid/api/grid_beforeeditstart_event",
+                    "grid/api/grid_beforeexpand_event",
                     "grid/api/grid_beforefilter_event",
                     "grid/api/grid_beforekeydown_event",
                     "grid/api/grid_beforeresizestart_event",
@@ -2733,22 +2741,6 @@ module.exports = {
                   items: [
                   {
                     type: "category",
-                    label: "Methods",
-                    link: {
-                      type: 'generated-index',
-                      title: "Methods",
-                      keywords: ['grid treegrid mode methods'],
-                      image: '/img/docusaurus.png'
-                    },
-                    items: [
-                      "grid/api/treegrid_mode/grid_collapse_method",
-                      "grid/api/treegrid_mode/grid_collapseall_method",
-                      "grid/api/treegrid_mode/grid_expand_method",
-                      "grid/api/treegrid_mode/grid_expandall_method",
-                    ],
-                  },
-                  {
-                    type: "category",
                     label: "Events",
                     link: {
                       type: 'generated-index',
@@ -2757,10 +2749,6 @@ module.exports = {
                       image: '/img/docusaurus.png'
                     },
                     items: [
-                      "grid/api/treegrid_mode/grid_aftercollapse_event",
-                      "grid/api/treegrid_mode/grid_afterexpand_event",
-                      "grid/api/treegrid_mode/grid_beforecollapse_event",
-                      "grid/api/treegrid_mode/grid_beforeexpand_event",
                       "grid/api/treegrid_mode/grid_expand_event",
                     ],
                   },

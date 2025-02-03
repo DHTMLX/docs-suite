@@ -14,9 +14,13 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_addrowcss_method.md)         | @getshort(grid/api/grid_addrowcss_method.md)         |
 | [](grid/api/grid_addspan_method.md)           | @getshort(grid/api/grid_addspan_method.md)           |
 | [](grid/api/grid_adjustcolumnwidth_method.md) | @getshort(grid/api/grid_adjustcolumnwidth_method.md) |
+| [](grid/api/grid_collapse_method.md) 			| @getshort(grid/api/grid_collapse_method.md) 		   |
+| [](grid/api/grid_collapseall_method.md) 		| @getshort(grid/api/grid_collapseall_method.md) 	   |
 | [](grid/api/grid_destructor_method.md)        | @getshort(grid/api/grid_destructor_method.md)        |
 | [](grid/api/grid_editcell_method.md)          | @getshort(grid/api/grid_editcell_method.md)          |
 | [](grid/api/grid_editend_method.md)           | @getshort(grid/api/grid_editend_method.md)           |
+| [](grid/api/grid_expand_method.md) 			| @getshort(grid/api/grid_expand_method.md) 		   |
+| [](grid/api/grid_expandall_method.md) 		| @getshort(grid/api/grid_expandall_method.md) 		   |
 | [](grid/api/grid_getcellrect_method.md)       | @getshort(grid/api/grid_getcellrect_method.md)       |
 | [](grid/api/grid_getcolumn_method.md)         | @getshort(grid/api/grid_getcolumn_method.md)         |
 | [](grid/api/grid_getheaderfilter_method.md)   | @getshort(grid/api/grid_getheaderfilter_method.md)   |
@@ -49,10 +53,14 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 
 | Name                                       | Description                                       |
 | ------------------------------------------ | ------------------------------------------------- |
+| [](grid/api/grid_aftercollapse_event.md)   | @getshort(grid/api/grid_aftercollapse_event.md)   |
 | [](grid/api/grid_aftereditend_event.md)    | @getshort(grid/api/grid_aftereditend_event.md)    |
 | [](grid/api/grid_aftereditstart_event.md)  | @getshort(grid/api/grid_aftereditstart_event.md)  |
+| [](grid/api/grid_afterexpand_event.md)     | @getshort(grid/api/grid_afterexpand_event.md)   	 |
+| [](grid/api/grid_beforecollapse_event.md)  | @getshort(grid/api/grid_beforecollapse_event.md)  |
 | [](grid/api/grid_beforeeditend_event.md)   | @getshort(grid/api/grid_beforeeditend_event.md)   |
 | [](grid/api/grid_beforeeditstart_event.md) | @getshort(grid/api/grid_beforeeditstart_event.md) |
+| [](grid/api/grid_beforeexpand_event.md)    | @getshort(grid/api/grid_beforeexpand_event.md)    |
 
 ### Mouse
 
@@ -241,27 +249,10 @@ You will find the list of all the available configuration properties of a Grid c
 
 ## TreeGrid mode API
 
-### TreeGrid mode methods
-
-| Name                                    		  	  	| Description                                    		       |
-| ----------------------------------------------------- | ------------------------------------------------------------ |
-| [](grid/api/treegrid_mode/grid_collapse_method.md)  	| @getshort(grid/api/treegrid_mode/grid_collapse_method.md)    |
-| [](grid/api/treegrid_mode/grid_collapseall_method.md) | @getshort(grid/api/treegrid_mode/grid_collapseall_method.md) |
-| [](grid/api/treegrid_mode/grid_expand_method.md)      | @getshort(grid/api/treegrid_mode/grid_expand_method.md)      |
-| [](grid/api/treegrid_mode/grid_expandall_method.md)   | @getshort(grid/api/treegrid_mode/grid_expandall_method.md)   |
-
-:::info important
-- Use [the methods of TreeCollection](tree_collection.md) to work with data of Grid in the TreeGrid mode. 
-::: 
-
 ### TreeGrid mode events
 
 | Name                                    				  | Description                                    				  |
 | ------------------------------------------------------- | ------------------------------------------------------------- |
-| [](grid/api/treegrid_mode/grid_aftercollapse_event.md)  | @getshort(grid/api/treegrid_mode/grid_aftercollapse_event.md) |
-| [](grid/api/treegrid_mode/grid_afterexpand_event.md)    | @getshort(grid/api/treegrid_mode/grid_afterexpand_event.md)   |
-| [](grid/api/treegrid_mode/grid_beforecollapse_event.md) | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
-| [](grid/api/treegrid_mode/grid_beforeexpand_event.md)   | @getshort(grid/api/treegrid_mode/grid_beforeexpand_event.md)  |
 | [](grid/api/treegrid_mode/grid_expand_event.md) 		  | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
 
 :::info important

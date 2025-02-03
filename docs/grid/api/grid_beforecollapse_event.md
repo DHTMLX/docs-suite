@@ -6,10 +6,12 @@ description: You can explore the beforeCollapse event of Grid in the documentati
 
 # beforeCollapse
 
-@short: fires before collapsing Grid in the TreeGrid mode
+@short: fires before collapsing a tree node
 
 :::note
-The event works only for Grid with the `type: "tree"` configuration option
+The event works:
+- for Grid in the default mode with the `subRow` configuration option
+- for Grid in the TreeGrid mode (with the `type: "tree"` configuration option)
 :::
 
 @signature: {'beforeCollapse: (rowId: string | number) => boolean | void;'}
@@ -21,8 +23,30 @@ The callback of the event is called with the following parameter:
 @returns:
 Return `false` to block collapsing of a grid; otherwise, `true`.
 
-@example:
-const grid = new dhx.Grid("grid_container", {
+@descr:
+
+### Example
+
+~~~jsx {7-9,12-14}
+// the default Grid mode with the `subRow` config
+const grid1 = new dhx.Grid("grid_container", {
+    columns: [
+       // columns config
+    ],
+    data: dataset,
+    subRow: () => { 
+      // the callback function logic 
+    }
+});
+
+grid1.events.on("beforeCollapse", (rowId) => {
+    // your logic here
+});
+~~~
+
+~~~jsx {3,10-13}
+// the TreeGrid mode of Grid
+const grid2 = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
        // columns config
@@ -30,11 +54,11 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset,
 });
 
-grid.events.on("beforeCollapse", (rowId) => {
+grid2.events.on("beforeCollapse", (rowId) => {
     // your logic here
     return false;
 });
+~~~
 
-@descr:
 
 @changelog: added in v6.4
