@@ -1323,7 +1323,9 @@ const columnSummary = grid.getSummary("age");
 console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
 ~~~
 
-## Header/footer text
+## Column header/footer
+
+### Header/footer text
 
 You can specify the text of the header/footer column via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
 
@@ -1355,7 +1357,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-## Header/footer filters
+### Header/footer filters
 
 There are three types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md):
 
@@ -1414,7 +1416,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-### The list of configuration properties for comboFilter
+#### The list of configuration properties for comboFilter
 
 - **filter** - (*function*) sets a custom function for filtering Combo Box options
 - **multiselection** - (*boolean*) enables selection of multiple options
@@ -1425,7 +1427,7 @@ const grid = new dhx.Grid("grid_container", {
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
 
-### Customizing header/footer filters
+#### Customizing header/footer filters
 
 To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
 
@@ -1453,7 +1455,7 @@ const grid = new dhx.Grid("grid_container", {
 
 The `customFilter` attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
 
-## Header/footer height
+### Header/footer height
 
 You can change the height of the header/footer in one of the following ways:
 

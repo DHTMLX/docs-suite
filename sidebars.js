@@ -2646,6 +2646,8 @@ module.exports = {
                     "grid/api/grid_selection_config",
                     "grid/api/grid_sortable_config",
                     "grid/api/grid_spans_config",
+                    "grid/api/grid_subrow_config",
+                    "grid/api/grid_subrowconfig_config",
                     "grid/api/grid_summary_config",
                     "grid/api/grid_tooltip_config",                    
                     "grid/api/grid_topsplit_config",
