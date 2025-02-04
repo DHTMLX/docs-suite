@@ -2743,19 +2743,6 @@ module.exports = {
                   items: [
                   {
                     type: "category",
-                    label: "Events",
-                    link: {
-                      type: 'generated-index',
-                      title: "Events",
-                      keywords: ['grid treegrid mode events'],
-                      image: '/img/docusaurus.png'
-                    },
-                    items: [
-                      "grid/api/treegrid_mode/grid_expand_event",
-                    ],
-                  },
-                  {
-                    type: "category",
                     label: "Properties",
                     link: {
                       type: 'generated-index',

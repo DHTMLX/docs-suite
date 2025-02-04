@@ -6,7 +6,7 @@ description: You can explore the expandAll method of Grid in the documentation o
 
 # expandAll()
 
-@short: expands all collapsed tree nodes
+@short: expands all collapsed rows that contain child rows
 
 :::note
 The method works:

@@ -6,7 +6,7 @@ description: You can explore the beforeExpand event of Grid in the documentation
 
 # beforeExpand
 
-@short: fires before expanding a tree node
+@short: fires before expanding a row that contains child rows
 
 :::note
 The event works:

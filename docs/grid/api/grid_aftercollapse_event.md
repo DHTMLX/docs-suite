@@ -6,7 +6,7 @@ description: You can explore the afterCollapse event of Grid in the documentatio
 
 # afterCollapse
 
-@short: fires after collapsing a tree node
+@short: fires after collapsing a row that contains child rows
 
 :::note
 The event works:

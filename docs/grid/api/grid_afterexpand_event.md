@@ -6,7 +6,7 @@ description: You can explore the afterExpand event of Grid in the documentation 
 
 # afterExpand
 
-@short: fires after expanding a tree node
+@short: fires after expanding a row that contains child rows
 
 :::note
 The event works:

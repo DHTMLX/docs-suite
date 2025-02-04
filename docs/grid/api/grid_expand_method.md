@@ -6,7 +6,7 @@ description: You can explore the expand method of Grid in the documentation of t
 
 # expand()
 
-@short: expands a tree node by id
+@short: expands a row that contains child rows
 
 :::note
 The method works:
@@ -17,7 +17,7 @@ The method works:
 @signature: {'expand(id: string | number): void;'}
 
 @params:
-- `id: string | number` - the id of a node to expand
+- `id: string | number` - the id of a row to expand
 
 ### Example
 

@@ -6,7 +6,7 @@ description: You can explore the beforeCollapse event of Grid in the documentati
 
 # beforeCollapse
 
-@short: fires before collapsing a tree node
+@short: fires before collapsing a row that contains child rows
 
 :::note
 The event works:

@@ -6,7 +6,7 @@ description: You can explore the collapse method of Grid in the documentation of
 
 # collapse()
 
-@short: collapses a tree node by id
+@short: collapses a row that contains child rows by id
 
 :::note
 The method works:
@@ -17,7 +17,7 @@ The method works:
 @signature: {'collapse(id: string | number): void;'}
 
 @params:
-- `id: string | number` - the id of a node to collapse
+- `id: string | number` - the id of a row to collapse
 
 ### Example
 

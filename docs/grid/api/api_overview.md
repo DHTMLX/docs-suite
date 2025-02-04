@@ -45,6 +45,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 :::info important
 - Use [the methods of DataCollection](data_collection.md) to work with data. 
 - Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
+- Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
 :::
 
 ## Grid events
@@ -165,6 +166,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 :::info important
 - Use [the events of DataCollection](data_collection.md#events) to work with data of Grid. 
 - Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
 :::
 
 ## Grid properties
@@ -250,16 +252,6 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
 
 ## TreeGrid mode API
-
-### TreeGrid mode events
-
-| Name                                    				  | Description                                    				  |
-| ------------------------------------------------------- | ------------------------------------------------------------- |
-| [](grid/api/treegrid_mode/grid_expand_event.md) 		  | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
-
-:::info important
-- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
-:::
 
 ### TreeGrid mode properties
 

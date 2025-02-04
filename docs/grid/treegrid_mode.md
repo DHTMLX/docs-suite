@@ -6,9 +6,9 @@ description: You can explore how to work with Grid in the documentation of the D
 
 # TreeGrid mode
 
-{{pronote
+:::tip Pro version only 
 The TreeGrid mode of the Grid component is available in the **PRO** version only.
-}}
+:::
 
 TreeGrid mode of the Grid component allows showing the nested tabular data. 
 
@@ -219,13 +219,13 @@ grid.data.load("/some/data").then(function(){
 
 ## Work with Grid in the TreeGrid mode 
 
-While working with Grid in the TreeGrid mode, you can use the [API methods of DHTMLX Grid](/category/grid-methods/) which allow setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell. Besides, there are some methods specific for the TreeGrid mode of Grid. These are the methods for expanding/collapsing nodes.
+While working with Grid in the TreeGrid mode, you can use the [API methods of DHTMLX Grid](/category/grid-methods/) which allow setting configuration of columns, getting an object of a particular column as well as the parameters of a certain cell. There are some methods specific for the TreeGrid mode of Grid. These are the methods for expanding/collapsing nodes.
 
 ### Expanding/collapsing nodes
 
 #### Expanding/collapsing a certain node
 
-To expand a particular node in a Grid in the TreeGrid mode by its id, use the [`expand()`](grid/api/treegrid_mode/grid_expand_method.md) method:
+To expand a particular node in a Grid by its id, use the [`expand()`](grid/api/grid_expand_method.md) method:
 
 ~~~jsx {5,13}
 const grid = new dhx.Grid("grid_container", {
@@ -243,7 +243,7 @@ const grid = new dhx.Grid("grid_container", {
 grid.expand("native");
 ~~~
 
-To collapse a grid node, make use of the [`collapse()`](grid/api/treegrid_mode/grid_collapse_method.md) method:
+To collapse a grid node, make use of the [`collapse()`](grid/api/grid_collapse_method.md) method:
 
 ~~~jsx {5,13}
 const grid = new dhx.Grid("grid_container", {
@@ -265,7 +265,7 @@ grid.collapse("native");
 
 #### Expanding/collapsing all nodes
 
-It is also possible to expand/collapse all the nodes of the Grid in the TreeGrid mode using the two corresponding methods - [`expandAll()`](grid/api/treegrid_mode/grid_expandall_method.md) and [`collapseAll()`](grid/api/treegrid_mode/grid_collapseall_method.md):
+It is also possible to expand/collapse all the nodes of the Grid using the two corresponding methods - [`expandAll()`](grid/api/grid_expandall_method.md) and [`collapseAll()`](grid/api/grid_collapseall_method.md):
 
 ~~~jsx {14,16}
 const grid = new dhx.Grid("grid_container", {
@@ -290,15 +290,7 @@ grid.collapseAll();
 
 ## Event handling 
 
-When you work with Grid in the TreeGrid mode, you can use the [API Events of DHTMLX Grid](/category/grid-events/). There is also a set of events specific for the TreeGrid mode of Grid that allow handling collapsing and expanding of nodes:
-
-| Name                                                    | Description                                                   |
-| ------------------------------------------------------- | ------------------------------------------------------------- |
-| [](grid/api/treegrid_mode/grid_aftercollapse_event.md)  | @getshort(grid/api/treegrid_mode/grid_aftercollapse_event.md) |
-| [](grid/api/treegrid_mode/grid_afterexpand_event.md)    | @getshort(grid/api/treegrid_mode/grid_afterexpand_event.md)   |
-| [](grid/api/treegrid_mode/grid_beforecollapse_event.md) | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
-| [](grid/api/treegrid_mode/grid_beforeexpand_event.md)   | @getshort(grid/api/treegrid_mode/grid_beforeexpand_event.md)  |
-| [](grid/api/treegrid_mode/grid_expand_event.md)         | @getshort(grid/api/treegrid_mode/grid_beforecollapse_event.md)|
+When you work with Grid in the TreeGrid mode, you can use the [API Events of DHTMLX Grid](/category/grid-events/). 
 
 You can learn how to work with Grid events in the [related guide](/grid/events/).
 

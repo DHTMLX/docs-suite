@@ -1752,7 +1752,7 @@ Released on December 21, 2020
 - Fix the issue which caused the hidden column with the filter not to be shown in Grid
 - Fix the incorrect work of the select filter when applying to the columns with numeric values in Grid
 - Fix the incorrect work of regular expressions in columns with filters in Grid
-- Fix the issue with the [collapseAll()](grid/api/treegrid_mode/grid_collapseall_method.md) method in TreeGrid
+- Fix the issue with the [collapseAll()](grid/api/grid_collapseall_method.md) method in TreeGrid
 - Fix the incorrect work of the [save()](data_collection/api/datacollection_save_method.md) method of Data Collection
 - Fix the issue with display of sorting icon when applying alignment to Grid columns
 - Fix the issue which caused the item in the filtered state after deleting from the data collection to be still found via the [afterRemove](data_collection/api/datacollection_afterremove_event.md) event
@@ -2281,7 +2281,7 @@ Released on January 28, 2020
 #### TreeGrid
 
 - The ability [to check visibility of a column](grid/usage.md#checking-visibility-of-a-column) via the [](grid/api/grid_iscolumnhidden_method.md) method
-- The [](grid/api/treegrid_mode/grid_aftercollapse_event.md), [](grid/api/treegrid_mode/grid_beforecollapse_event.md), [](grid/api/treegrid_mode/grid_afterexpand_event.md), [](grid/api/treegrid_mode/grid_beforeexpand_event.md) events are added
+- The [](grid/api/grid_aftercollapse_event.md), [](grid/api/grid_beforecollapse_event.md), [](grid/api/grid_afterexpand_event.md), [](grid/api/grid_beforeexpand_event.md) events are added
 - The possibility [to adjust the size of TreeGrid columns to the size of TreeGrid](grid/configuration.md#autowidth-for-columns) via the [](grid/api/grid_autowidth_config.md) configuration property
 - The ability [to adjust the width of columns to the width of their content automatically](grid/configuration.md#autosize-for-columns) with the help of the [](grid/api/grid_adjust_config.md) property
 - The ability [to sort content of any TreeGrid column by clicking on its header](grid/configuration.md#sortable-columns) using the [](grid/api/grid_sortable_config.md) property
@@ -2357,7 +2357,7 @@ Released on December 12, 2019
 
 #### TreeGrid
 
-- The [](grid/api/treegrid_mode/grid_collapse_method.md), [](grid/api/treegrid_mode/grid_collapseall_method.md), [](grid/api/treegrid_mode/grid_expand_method.md), [](grid/api/treegrid_mode/grid_expandall_method.md) methods are added
+- The [](grid/api/grid_collapse_method.md), [](grid/api/grid_collapseall_method.md), [](grid/api/grid_expand_method.md), [](grid/api/grid_expandall_method.md) methods are added
 - The ability [to add custom elements into TreeGrid cells](grid/configuration.md#html-content-of-grid-columns) using the [](grid/api/grid_htmlenable_config.md) property
 
 #### Menu/Ribbon/SideBar/Toolbar
