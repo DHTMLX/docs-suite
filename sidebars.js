@@ -2502,6 +2502,7 @@ module.exports = {
                     "grid/api/grid_getscrollstate_method",
                     "grid/api/grid_getsortingstate_method",
                     "grid/api/grid_getspan_method",
+                    "grid/api/grid_getsubrow_method",
                     "grid/api/grid_getsummary_method",
                     "grid/api/grid_hidecolumn_method",
                     "grid/api/grid_hiderow_method",

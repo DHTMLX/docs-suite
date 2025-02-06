@@ -6,20 +6,24 @@ description: You can explore the subRow config of Grid in the documentation of t
 
 # subRow
 
-@short: Optional. Defines the subrow content for each row of the main Grid
+@short: Optional. Defines the sub-row content for each row of the main Grid
 
 :::note
 - When the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md).
-- When the `subRow` config is used, Grid doesn't support the [data grouping](grid/usage.md/#grouping-data) functionality.
+- When the `subRow` config is used, Grid doesn't support the [data grouping](grid/usage.md#grouping-data) functionality.
 ::: 
 
 @signature: {'subRow?: (row: IRow) => string | IViewConstructor;'}
 
 @descr:
 
+## Parameters
+
+The `subRow` property is a callback function which is called with the row object as a parameter and returns an HTML string or a constructor of a subGrid (or any other nested Suite component).
+
 ### Example
 
-- a subrow with an HTML content
+- a sub-row with an HTML content
 
 ~~~jsx {8-10}
 const grid = new dhx.Grid("grid_container", {
@@ -35,7 +39,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- a subrow with a subGrid
+- a sub-row with a subGrid
 
 ~~~jsx {7-16}
 const grid = new dhx.Grid("grid_container", {
@@ -57,4 +61,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-The `subRow` property is a callback function which is called with the id of the row as a parameter and returns an HTML string or a constructor of a subGrid or any other nested Suite component. 
+**Related article:** [Row expander](grid/configuration.md#row-expander)
+
+**Related API**: [subRowConfig](grid/api/grid_subrowconfig_config.md)
+ 
