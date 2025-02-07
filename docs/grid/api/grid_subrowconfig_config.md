@@ -70,6 +70,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+
 **Related article:** [Row expander](grid/configuration.md#row-expander)
 
 **Related API**: [subRow](grid/api/grid_subrow_config.md)

@@ -1620,7 +1620,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Row expander
 
-The row expander functionality allows using nested content in Grid sub-rows. You can add a subGrid or any other Suite widget, as well as some HTML content into a sub-row. 
+The row expander functionality allows using nested content in Grid sub-rows. You can add a Grid or any other Suite widget, as well as some HTML content into a sub-row. The number of nesting levels is unlimited.
 
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
@@ -1628,7 +1628,7 @@ This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) pac
 
 ### Adding sub-rows 
 
-In order to enable the row expander feature, you should use the [`subRow`](grid/api/grid_subrow_config.md) configuration option. It defines the content of sub-rows for each row of the Grid. The `subRow` property is a callback function which is called with the row object as a parameter and returns an HTML string or a constructor of a subGrid (or any other nested Suite component).
+In order to enable the row expander feature, you should use the [`subRow`](grid/api/grid_subrow_config.md) configuration option. It defines the content of sub-rows for each row of the Grid. The `subRow` property is a callback function which is called with the row object as a parameter and returns an HTML string or the constructor of a subGrid (or any other nested Suite component).
 
 :::note
 Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md) and the [data grouping](grid/usage.md#grouping-data) functionality.
@@ -1672,6 +1672,8 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+
 ### Adjusting configuration of sub-rows
 
 You can define common configuration settings of all sub-rows or provide specific options for each sub-row via the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid.
@@ -1679,9 +1681,9 @@ You can define common configuration settings of all sub-rows or provide specific
 This property can be used either as a callback function or as an object:
 
 - when set as an *object*, the specified parameters are applied to all the rows
-- when set as a *callback function*, it is called with the row object as a parameter and returns the `subRowConfig` object, which allows providing specific configuration for each particular row 
+- when set as a *callback function*, it is called with the row object as a parameter and returns an object, which allows providing specific configuration for each particular row 
 
-The `subRowConfig` object may contain the following properties:
+The **subRowConfig** object may contain the following properties:
 
 - `expanded` - (*boolean*) defines whether a sub-row is expanded by default, *false* by default
 - `preserve` - (*boolean*) saves the state of sub-rows while expanding/collapsing, disappearing from the visible area, data updating, *false* by default
@@ -1695,7 +1697,7 @@ The `subRowConfig` object may contain the following properties:
 The `fullWidth` property works only if the `subRowConfig` property is initialized as an object.
 :::
 
-The following example shows how to provide configuration options for all sub-rows:
+The following example shows how to provide global configuration options for sub-rows:
 
 ~~~jsx {7-11}
 const grid = new dhx.Grid("grid_container", {
@@ -1713,9 +1715,11 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+
 ### Dynamic configuration of sub-rows
 
-You can dynamically expand/collapse certain sub-rows or adjust their appearance (specify the size of a cell, provide particular styles for sub-rows, etc.) on initialization of Grid depending on some conditions, using the configuration properties of Grid. Check the example below:
+You can dynamically expand/collapse certain sub-rows or adjust their appearance (specify the size of a cell, provide particular styles for sub-rows, etc.) on initialization of Grid depending on some conditions, using the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid set as a callback function. Check the example below:
 
 ~~~jsx {7-11}
 const grid = new dhx.Grid("grid_container", {
@@ -1733,9 +1737,11 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-The following example shows that a sub-row is expanded depending on the content of the row:
+In the above example the sub-rows are dynamically configured depending on the value in the column with the "temperature" id. If the temperature value is more than 30, a sub-row will be expanded and gets the CSS class "hot-zone" (or "cool-zone", if the temperature value is less than 30). The height of an expanded sub-row cell will be 200.
 
-~~~jsx {4-8}
+In the following example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that the rows that have the "Critical" status in the column with the "health_status" id will be expanded on initialization of the Grid and specifies the height of a sub-row cell:
+
+~~~jsx {5-8}
 const grid = new dhx.Grid("grid_container", {
     columns,
     data,
@@ -1758,29 +1764,29 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-The [`subRowConfig`](grid/api/grid_subrowconfig_config.md) set as a callback function specifies the height of a sub-row cell and defines that the rows that have the "Critical" status in the column with the "health_status" id will be expanded on initialization of the Grid.
+**Related sample:** [Grid. Row expander. Subgrid with rows expanded by criteria](https://snippet.dhtmlx.com/pbubj175)
 
 ### Saving the state of nested components or data in sub-rows
 
-You can save the state of the nested components or the data of sub-rows during data update, scrolling or collapsing sub-rows, using the preserve property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or when they are closed (collapsed?), which leads to resetting of any changes made in the inner components.
+You can save the state of the nested components or the data of sub-rows while updating data, scrolling or collapsing sub-rows, using the `preserve` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or collapsed, which leads to resetting of any changes made in the inner components.
 
-When the `preserve: true` setting is specified, sub-rows save their content even after being destroyed or hidden. It means that any change (such as sorting, data entering or state change) is saved and the sub-row is restored in the same state when displayed again.
+When the `preserve: true` setting is specified, sub-rows save their content even after being destroyed or hidden. It means that any change (such as sorting, data input or state change) is saved and the sub-row is restored in the same state when displayed again.
 
-However, it's important to take into account that this option enlarges the volume of the used memory, since the sub-rows data is kept in the memory even when they aren't displayed. 
+However, it's important to take into account that this option increases the size of the used memory, since the sub-rows data are kept in the memory even when they aren't displayed. 
 
 #### When using `preserve` is useful 
 
 - When the data of sub-rows should be interactive. It means when a sub-row contains a form or any other component the content of which can be changed by a user and the changes shouldn't be reset
-- For complex sub-rows with a state. For example, if a sub-row displays a component with a dynamic content and a complex user interface  
+- For complex sub-rows with a state. For example, if a sub-row renders a component with a dynamic content and a complex user interface  
 
 #### When `preserve` shouldn't be used
 
 - When sub-rows are used just for rendering static information. If a sub-row presents a simple text or a static HTML, the use of `preserve` is not rational
-- In case a large amount of data is used. If a grid has a lot of rows and sub-rows, using `preserve` may enlarge the size of the used memory, which will affect the performance 
+- In case a large amount of data is used. If a grid has a lot of rows and sub-rows, using `preserve` may increase the size of the used memory, which will affect the performance 
 
-In the example below the `preserve` config is used to save the context of a Form nested in a sub-row:
+In the example below the `preserve` config is used to save the context of the Form nested in a sub-row:
 
-~~~jsx
+~~~jsx {7-9}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "name", header: [{ text: "Name" }] },
@@ -1802,7 +1808,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Loading data into a sub-row
 
-You can dynamically load data into a sub-row using the `load()` method of Tree Collection:
+You can dynamically load data into a sub-row using the `load()` method of [DataCollection](/data_collection/) or [TreeCollection](/tree_collection/), depending on the nested component:
 
 ~~~jsx {16-18}
 const grid = new dhx.Grid("grid_container", {
@@ -1829,13 +1835,17 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+In the above example the `load()` method of [DataCollection](/data_collection/) is used for loading data into subGrid.
+
+**Related sample:** [Grid. Row expander. Subgrid data loading](https://snippet.dhtmlx.com/03ndqrqt)
+
 ### Handling events
 
 #### Grid event handlers
 
-If a sub-row initializes a nested component (any Suite component), the component's events inside the sub-row can be set in the callback function of `subRow`. It allows specifying event handlers specifically for the nested component. 
+If a sub-row initializes a nested component (any Suite component), the sub-component's events can be set in the `subRow` callback function. It allows specifying event handlers directly for the nested component:
 
-~~~jsx {15-17}
+~~~jsx {16-18}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "zone_name", header: [{ text: "Zone Name" }] },
@@ -1860,9 +1870,11 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample:** [Grid. Row expander. Subgrid events handling](https://snippet.dhtmlx.com/3364si14)
+
 #### HTML template event handlers
 
-To specify the event handlers for a sub-row with an HTML content, use the `eventHandlers` configuration option of Grid. 
+To specify the event handlers for a sub-row with an HTML content, use the [`eventHandlers`](grid/api/grid_eventhandlers_config.md) configuration option of Grid:
 
 ~~~jsx {13-20}
 const grid = new dhx.Grid("grid_container", {
@@ -1888,18 +1900,21 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-### Multi-level nesting of sub-components
+### Multi-level Grid nesting
 
-It is possible to create as many levels of nested components in Grid sub-rows, as necessary. To specify the structure of a multi-level Grid nesting, do the following:
+It is possible to create as many levels of nested subGrids, as necessary. To specify the structure of a multi-level Grid nesting, do the following:
 
 - create a Grid with columns and data 
-- in the Grid configuration specify the `subRow` option as a callback function:
-    - the function should be called with an array of data that should be placed in a Grid row as a parameter 
-    - the function should return a new Grid instance that has its own column structure and contains the `subRow` config that may return either another Grid instance or an HTML string for the last row (if there won't be another nested component)
+- in the Grid configuration specify the [`subRow`](grid/api/grid_subrow_config.md) option as a callback function, which:
+    - is called with an array of data that should be placed in the sub-row as a parameter 
+    - returns a subGrid that contains the `subRow` config set as a callback function that may return:
+        - some Suite component
+        - an HTML string 
+        - a subGrid instance for another nesting level (that contains the `subRow` config set as a callback function to return another subGrid, Suite component, or HTML content)
 
 Check the example below:
 
-~~~jsx
+~~~jsx {12,24,36}
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "col_1", header: [{ text: "Grid. Level 1" }] },
@@ -1943,12 +1958,13 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
+**Related sample:** [Grid. Row expander. Subgrid with rows expanded by criteria](https://snippet.dhtmlx.com/dih3z7cz)
 
-### Setting sub-row width 
+### Adjusting sub-row width 
 
-You can adjust the sub-row width depending on the width of its parent Grid via the `fullWidth` property.
+You can adjust the sub-row width depending on the width of its parent Grid via the `fullWidth` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration object.
 
-If the `fullWidth:true` configuration option is specified, the sub-row width is the same as the full width of the Grid content, including the area outside the visible area borders (it means that the sub-row will be scrolled together with the horizontal scroll). By default, a sub-row takes just the width of the visible Grid area. 
+If the `fullWidth: true` configuration option is specified, the sub-row width is the same as the full width of the Grid content, including the area outside the visible area borders (it means that the sub-row will be scrolled together with the horizontal scroll). By default, a sub-row takes just the width of the visible Grid area. 
 
 Check the example below:
 
@@ -1972,9 +1988,9 @@ const grid = new dhx.Grid("grid_container", {
 
 In the above example:
 
-- the width of the Grid container is set as 400 px
-- if the `fullWidth:false` is specified, the `subRow` width will be equal to the Grid width (400px)
-- the common width of all the columns is 600px, thus if the `fullWidth:true` setting is specified, the `subRow` width will be equal to 600px
+- the width of the Grid container is set as 400px
+- if the `fullWidth` config isn't enabled, the sub-row width will be equal to the Grid width (400px)
+- the common width of all the columns is 600px, thus if the `fullWidth: true` setting is specified, the sub-row width will be equal to 600px
 
 ### Getting sub-row config and content
 
@@ -1985,11 +2001,12 @@ Note that the method works if a sub-row is in the visible area or if the `preser
 :::
 
 The method returns an object that includes:
+
 - the configuration of the sub-row, including both user-defined settings and the default settings (`expanded`, `fullWidth`, `padding`, `height`, `toggleItem`, `preserve`, `css`)
 - `element: HTMLElement | null` - the parent container of the current sub-row
 - `view: string | object | null`:
     - a *string*, if the sub-row is set by the HTML content
-    - an *object* instance to interact with, if a sub-row is an instance of a nested component (for example, Grid)
+    - an object instance you can interact with, if a sub-row is an instance of a nested component (for example, Grid)
     - *null*, if the sub-row is unavailable (for example, it is hidden or placed outside the visible area and the `preserve` config is not specified)
 
 ## Drag-n-drop
