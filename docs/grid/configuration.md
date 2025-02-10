@@ -1620,7 +1620,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ## Row expander
 
-The row expander functionality allows using nested content in Grid sub-rows. You can add a Grid or any other Suite widget, as well as some HTML content into a sub-row. The number of nesting levels is unlimited.
+The row expander functionality allows using nested content in Grid sub-rows. You can add a Grid or any other Suite widget, as well as some HTML content into a sub-row. The number of Grid nesting levels is unlimited.
 
 :::tip Pro version only 
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
@@ -1686,8 +1686,8 @@ This property can be used either as a callback function or as an object:
 The **subRowConfig** object may contain the following properties:
 
 - `expanded` - (*boolean*) defines whether a sub-row is expanded by default, *false* by default
-- `preserve` - (*boolean*) saves the state of sub-rows while expanding/collapsing, disappearing from the visible area, data updating, *false* by default
-- `toggleIcon` - (*boolean*) enables the icon for expanding/collapsing, *true* by default
+- `preserve` - (*boolean*) saves the state of sub-rows when they are expanded/collapsed, hidden from the visible area, the data is updated, *false* by default
+- `toggleIcon` - (*boolean*) enables the icon for sub-rows expanding/collapsing, *true* by default
 - `height` - (*number*) the height of a sub-row in pixels, *200* by default
 - `padding` - (*string|number*) the inner padding of a sub-row, *8* by default
 - `css` - (*string*) user-defined CSS classes for a sub-row
@@ -1737,9 +1737,9 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-In the above example the sub-rows are dynamically configured depending on the value in the column with the "temperature" id. If the temperature value is more than 30, a sub-row will be expanded and gets the CSS class "hot-zone" (or "cool-zone", if the temperature value is less than 30). The height of an expanded sub-row cell will be 200.
+In the above example the sub-rows are dynamically configured depending on the value in the column with the "temperature" id. If the temperature value is more than 30, a sub-row will be expanded and gets the CSS "hot-zone" class (or "cool-zone", if the temperature value is less than 30). The height of an expanded sub-row cell will be 200px.
 
-In the following example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that the rows that have the "Critical" status in the column with the "health_status" id will be expanded on initialization of the Grid and specifies the height of a sub-row cell:
+In the following example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that the rows that have the "Critical" status in the column with the "health_status" id will be expanded on initialization of the Grid. The height of an expanded sub-row cell will be 250px.
 
 ~~~jsx {5-8}
 const grid = new dhx.Grid("grid_container", {
@@ -1766,9 +1766,9 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample:** [Grid. Row expander. Subgrid with rows expanded by criteria](https://snippet.dhtmlx.com/pbubj175)
 
-### Saving the state of nested components or data in sub-rows
+### Saving state of nested components or data in sub-rows
 
-You can save the state of the nested components or the data of sub-rows while updating data, scrolling or collapsing sub-rows, using the `preserve` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or collapsed, which leads to resetting of any changes made in the inner components.
+You can save the state of the nested components or the data of sub-rows while updating data, scrolling or collapsing sub-rows by using the `preserve` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or collapsed, which leads to resetting of any changes made in the inner components.
 
 When the `preserve: true` setting is specified, sub-rows save their content even after being destroyed or hidden. It means that any change (such as sorting, data input or state change) is saved and the sub-row is restored in the same state when displayed again.
 
@@ -1843,7 +1843,7 @@ In the above example the `load()` method of [DataCollection](/data_collection/) 
 
 #### Grid event handlers
 
-If a sub-row initializes a nested component (any Suite component), the sub-component's events can be set in the `subRow` callback function. It allows specifying event handlers directly for the nested component:
+If a sub-row initializes a nested component (any Suite component), the sub-component's events can be set in the [`subRow`](grid/api/grid_subrow_config.md) callback function. It allows specifying event handlers directly for the nested component:
 
 ~~~jsx {16-18}
 const grid = new dhx.Grid("grid_container", {
