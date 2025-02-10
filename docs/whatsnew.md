@@ -8,6 +8,46 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1 
+
+Released on February 18, 2025
+
+### New functionality
+
+#### Common features
+
+- Multi-user (live update) backend for Suite widgets
+
+#### Grid 
+
+- Row expander with the possibility to insert any Suite widget or HTML content (PRO version)
+- Multi-sorting functionality that allows sorting Grid by several columns (PRO version)
+
+### Updates
+
+#### Grid
+
+- Improved export functionality by using the **json2excel** export module
+
+### Fixes
+
+- Toolbar. Menu wrong item positioning
+
+### New samples
+
+- [Grid. Grouping and template in group headers](https://snippet.dhtmlx.com/dywmb6ec)
+- [Grid. Search and highlight results](https://snippet.dhtmlx.com/p74701lu) 
+- [Grid. Hiding columns using header context menu](https://snippet.dhtmlx.com/ygfj3uo3)
+- [Grid. Empty state](https://snippet.dhtmlx.com/sbajbjre)
+- [Grid. Row pinning with checkbox](https://snippet.dhtmlx.com/idu0mdmr)
+- [Grid. Dynamic calculations](https://snippet.dhtmlx.com/6nrd0v2y)
+- [Grid. Dataview editor for second column](https://snippet.dhtmlx.com/1lvoz1ra)
+- [Grid. Custom yes/no editor](https://snippet.dhtmlx.com/4nq80zi3)
+- [Grid. Additional details in second grid (linked grids)](https://snippet.dhtmlx.com/u0e135f1)
+- [Grid. Readonly (disabled) rows](https://snippet.dhtmlx.com/h3nah0jv)
+- [Grid. Rotated (vertical) header](https://snippet.dhtmlx.com/xdmemdjg)
+- [Grid and Pivot. Integration](https://snippet.dhtmlx.com/0uo39y8c)
+
 ## Version 9.0.4 
 
 Released on February 4, 2025
