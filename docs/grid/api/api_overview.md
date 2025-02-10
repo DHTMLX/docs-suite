@@ -21,7 +21,6 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_getcolumn_method.md)         | @getshort(grid/api/grid_getcolumn_method.md)         |
 | [](grid/api/grid_getheaderfilter_method.md)   | @getshort(grid/api/grid_getheaderfilter_method.md)   |
 | [](grid/api/grid_getscrollstate_method.md)    | @getshort(grid/api/grid_getscrollstate_method.md)    |
-| [](grid/api/grid_getsortingstate_method.md)   | @getshort(grid/api/grid_getsortingstate_method.md)   |
 | [](grid/api/grid_getspan_method.md)           | @getshort(grid/api/grid_getspan_method.md)           |
 | [](grid/api/grid_getsummary_method.md)        | @getshort(grid/api/grid_getsummary_method.md)        |
 | [](grid/api/grid_hidecolumn_method.md)        | @getshort(grid/api/grid_hidecolumn_method.md)        |
@@ -191,6 +190,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_keynavigation_config.md)   | @getshort(grid/api/grid_keynavigation_config.md)   |
 | [](grid/api/grid_leftsplit_config.md)       | @getshort(grid/api/grid_leftsplit_config.md)       |
 | [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
+| [](grid/api/grid_multisort_config.md)  	  | @getshort(grid/api/grid_multisort_config.md)       |
 | [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
 | [](grid/api/grid_rightsplit_config.md)      | @getshort(grid/api/grid_rightsplit_config.md)      |
 | [](grid/api/grid_rowcss_config.md)          | @getshort(grid/api/grid_rowcss_config.md)          |

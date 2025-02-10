@@ -351,25 +351,19 @@ grid.data.sort({
 
 #### Getting the sorting state
 
-To get the current state of sorting data in Grid, use the [](grid/api/grid_getsortingstate_method.md) method. The method returns an object with two attributes:
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method returns an object with the following properties:
 
-<table>
-    <tbody>
-        <tr>
-            <td><b>dir</b></td>
-            <td>(<i>string</i>) the sorting direction (desc, asc)</td>
-        </tr>
-        <tr>
-            <td><b>by</b></td>
-            <td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
-        </tr>
-    </tbody>
-</table>
-<br/>
+- `by` - (*string|number*) the id of a data field (a column of Grid) to sort by
+- `dir` - (*"asc"|"desc"*) the direction of sorting: "asc" or "desc"
+- `as` - (*function*) a custom function of converting values before comparing
+- `rule` - (*function*) a custom sorting function
+- `smartSorting` - (*boolean*) (if can be applied) specifies whether a sorting rule should be applied each time after changing the data set
 
-~~~js
-const state = grid.getSortingState(); 
-// -> { dir: "desc", by: "country" }
+The method allows getting the result of sorting data by multiple columns.
+
+~~~jsx
+const state = grid.data.getSortingStates(); 
+// -> [{by: "country", dir: "desc"}, {by: "population", dir: "desc"}]
 ~~~
 
 **Related sample**: [Grid. Get sorting state](https://snippet.dhtmlx.com/u2vk3ri3)

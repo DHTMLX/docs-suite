@@ -6,6 +6,21 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+9.0 -> 9.1
+-----------
+
+### Grid
+
+The `getSortingState()` method of Grid has been deprecated and replaced with the `getSortingStates()` method of [DataCollection](/data_collection/) and [TreeCollection](/tree_collection/):
+
+~~~jsx title="Before v9.1"
+grid.getSortingState();
+~~~
+
+~~~jsx title="From v9.1"
+grid.data.getSortingStates()[0]; // getting the first (main) sorting state
+~~~
+
 8.4 -> 9.0
 -----------
 

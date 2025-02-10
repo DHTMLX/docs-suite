@@ -2496,7 +2496,6 @@ module.exports = {
                       ]
                     },
                     "grid/api/grid_getscrollstate_method",
-                    "grid/api/grid_getsortingstate_method",
                     "grid/api/grid_getspan_method",
                     "grid/api/grid_getsummary_method",
                     "grid/api/grid_hidecolumn_method",
@@ -2631,6 +2630,7 @@ module.exports = {
                     "grid/api/grid_keynavigation_config",
                     "grid/api/grid_leftsplit_config",
                     "grid/api/grid_multiselection_config",
+                    "grid/api/grid_multisort_config",
                     "grid/api/grid_resizable_config",
                     "grid/api/grid_rightsplit_config",
                     "grid/api/grid_rowcss_config",
