@@ -20,24 +20,8 @@ The method works:
 
 ### Example
 
-~~~jsx {7-9,12}
-// the default Grid mode with the `subRow` config
-const grid1 = new dhx.Grid("grid_container", {
-    columns: [
-       // columns config
-    ],
-    data: dataset,
-    subRow: () => { 
-      // the callback function logic 
-    }
-});
-
-grid1.collapseAll();
-~~~
-
-~~~jsx {3,10}
-// the TreeGrid mode of Grid
-const grid2 = new dhx.Grid("grid_container", {
+~~~jsx {2,9}
+const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
        // columns config
@@ -45,7 +29,7 @@ const grid2 = new dhx.Grid("grid_container", {
     data: dataset,
 });
 
-grid2.collapseAll();
+grid.collapseAll();
 ~~~
 
 

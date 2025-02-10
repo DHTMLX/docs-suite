@@ -27,26 +27,8 @@ Return `false` to block collapsing of a grid; otherwise, `true`.
 
 ### Example
 
-~~~jsx {7-9,12-14}
-// the default Grid mode with the `subRow` config
-const grid1 = new dhx.Grid("grid_container", {
-    columns: [
-       // columns config
-    ],
-    data: dataset,
-    subRow: () => { 
-      // the callback function logic 
-    }
-});
-
-grid1.events.on("beforeCollapse", (rowId) => {
-    // your logic here
-});
-~~~
-
-~~~jsx {3,10-13}
-// the TreeGrid mode of Grid
-const grid2 = new dhx.Grid("grid_container", {
+~~~jsx {2,9-12}
+const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
        // columns config
@@ -54,7 +36,7 @@ const grid2 = new dhx.Grid("grid_container", {
     data: dataset,
 });
 
-grid2.events.on("beforeCollapse", (rowId) => {
+grid.events.on("beforeCollapse", (rowId) => {
     // your logic here
     return false;
 });
