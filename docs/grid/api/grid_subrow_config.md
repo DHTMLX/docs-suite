@@ -18,7 +18,7 @@ Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid m
 
 ## Parameters
 
-The `subRow` property is a callback function which is called with the row object as a parameter and returns an HTML string or a constructor of a subGrid (or any other nested Suite component).
+The `subRow` property is a callback function which is called with the row object as a parameter and returns HTML as string or a constructor of a subGrid (or any other nested Suite component).
 
 ### Example
 
@@ -38,7 +38,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-- a sub-row with a subGrid
+- a sub-row with a subgrid
 
 ~~~jsx {7-16}
 const grid = new dhx.Grid("grid_container", {
