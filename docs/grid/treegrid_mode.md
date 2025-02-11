@@ -40,7 +40,7 @@ There is also a set of properties you can provide for Grid in the TreeGrid mode 
 
 ### Collapsed mode 
 
-To initialize Grid in the TreeGrid mode in the collapsed state, use the [collapsed](grid/api/treegrid_mode/grid_collapsed_config.md) property:
+To initialize Grid in the TreeGrid mode in the collapsed state, use the [collapsed](grid/api/grid_collapsed_config.md) property:
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -57,7 +57,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Expanding collapsed rows on drag-n-drop 
 
-If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](grid/api/treegrid_mode/grid_dragexpand_config.md) property to *false*:
+If you have collapsed rows in your Grid in the TreeGrid mode, they will expand automatically when you move the mouse pointer over them during drag-n-drop. To disable this functionality, set the [dragExpand](grid/api/grid_dragexpand_config.md) property to *false*:
 
 ~~~jsx {7}
 const grid = new dhx.Grid("grid_container", {
@@ -75,7 +75,7 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Defining the id of the root parent 
 
-To define the id of the root parent, use the [rootParent](grid/api/treegrid_mode/grid_rootparent_config.md) configuration property:
+To define the id of the root parent, use the [rootParent](grid/api/grid_rootparent_config.md) configuration property:
 
 ~~~jsx {3}
 const grid = new dhx.Grid("grid_container", {

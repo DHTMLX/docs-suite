@@ -179,10 +179,12 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
 | [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
 | [](grid/api/grid_closable_config.md)        | @getshort(grid/api/grid_closable_config.md)        |
+| [](grid/api/grid_collapsed_config.md)       | @getshort(grid/api/grid_collapsed_config.md)       |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
 | [](grid/api/grid_css_config.md)             | @getshort(grid/api/grid_css_config.md)             |
 | [](grid/api/grid_data_config.md)            | @getshort(grid/api/grid_data_config.md)            |
 | [](grid/api/grid_dragcopy_config.md)        | @getshort(grid/api/grid_dragcopy_config.md)        |
+| [](grid/api/grid_dragexpand_config.md)      | @getshort(grid/api/grid_dragexpand_config.md)      |
 | [](grid/api/grid_dragitem_config.md)        | @getshort(grid/api/grid_dragitem_config.md)        |
 | [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
@@ -203,6 +205,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
 | [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
 | [](grid/api/grid_rightsplit_config.md)      | @getshort(grid/api/grid_rightsplit_config.md)      |
+| [](grid/api/grid_rootparent_config.md)      | @getshort(grid/api/grid_rootparent_config.md)      |
 | [](grid/api/grid_rowcss_config.md)          | @getshort(grid/api/grid_rowcss_config.md)          |
 | [](grid/api/grid_rowheight_config.md)       | @getshort(grid/api/grid_rowheight_config.md)       |
 | [](grid/api/grid_selection_config.md)       | @getshort(grid/api/grid_selection_config.md)       |
@@ -251,12 +254,3 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
 
-## TreeGrid mode API
-
-### TreeGrid mode properties
-
-| Name                                    			  | Description                                    			   |
-| --------------------------------------------------- | ---------------------------------------------------------- |
-| [](grid/api/treegrid_mode/grid_collapsed_config.md) | @getshort(grid/api/treegrid_mode/grid_collapsed_config.md) |
-| [](grid/api/treegrid_mode/grid_dragexpand_config.md)| @getshort(grid/api/treegrid_mode/grid_dragexpand_config.md)|
-| [](grid/api/treegrid_mode/grid_rootparent_config.md)| @getshort(grid/api/treegrid_mode/grid_rootparent_config.md)|

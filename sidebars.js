@@ -2618,10 +2618,12 @@ module.exports = {
                     "grid/api/grid_autowidth_config",
                     "grid/api/grid_bottomsplit_config",
                     "grid/api/grid_closable_config",
+                    "grid/api/grid_collapsed_config",
                     "grid/api/grid_columns_config",
                     "grid/api/grid_css_config",
                     "grid/api/grid_data_config",
                     "grid/api/grid_dragcopy_config",
+                    "grid/api/grid_dragexpand_config",
                     "grid/api/grid_dragitem_config",
                     "grid/api/grid_dragmode_config",
                     "grid/api/grid_editable_config",
@@ -2642,6 +2644,7 @@ module.exports = {
                     "grid/api/grid_multiselection_config",
                     "grid/api/grid_resizable_config",
                     "grid/api/grid_rightsplit_config",
+                    "grid/api/grid_rootparent_config",
                     "grid/api/grid_rowcss_config",
                     "grid/api/grid_rowheight_config",
                     "grid/api/grid_selection_config",
@@ -2732,32 +2735,6 @@ module.exports = {
                     "grid/api/export/grid_xlsx_method"
                   ],
                 },
-                {
-                  type: "category",
-                  label: "TreeGrid mode API",
-                  link: {
-                    type: 'generated-index',
-                    title: "TreeGrid mode API",
-                    keywords: ['treegrid mode api'],
-                    image: '/img/docusaurus.png'
-                  },
-                  items: [
-                  {
-                    type: "category",
-                    label: "Properties",
-                    link: {
-                      type: 'generated-index',
-                      title: "Properties",
-                      keywords: ['grid treegrid mode properties'],
-                      image: '/img/docusaurus.png'
-                    },
-                    items: [
-                      "grid/api/treegrid_mode/grid_collapsed_config",
-                      "grid/api/treegrid_mode/grid_dragexpand_config",
-                      "grid/api/treegrid_mode/grid_rootparent_config",
-                    ],
-                  },
-                ]},
               ],
             },
             "grid/features",

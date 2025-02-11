@@ -785,9 +785,9 @@ Released on April 18, 2023
     - [the ability to select multiple cells/rows in TreeGrid](grid/configuration.md#multiple-selection-of-grid-cells)
     - [the ability to drag-n-drop multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
 - The ability to define [whether collapsed rows should expand while hovering them over during drag-n-drop](grid/configuration.md):
-    - new property: [`dragExpand`](grid/api/treegrid_mode/grid_dragexpand_config.md)
+    - new property: [`dragExpand`](grid/api/grid_dragexpand_config.md)
 - The ability to initialize TreeGrid in the collapsed state:
-    - new property: [`collapsed`](grid/api/treegrid_mode/grid_collapsed_config.md)
+    - new property: [`collapsed`](grid/api/grid_collapsed_config.md)
 
 ### Updates
 
@@ -1691,7 +1691,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 - The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a TreeGrid column
 - The ability [to define the height for a separate row of TreeGrid](grid/configuration.md#row-height)
 - New events are added: [beforeRowResize](grid/api/grid_beforerowresize_event.md) and [afterRowResize](grid/api/grid_afterrowresize_event.md), [beforeSort](grid/api/grid_beforesort_event.md) and [afterSort](grid/api/grid_aftersort_event.md)
-- The ability to define the id of the parent root via the [rootParent](grid/api/treegrid_mode/grid_rootparent_config.md) configuration option of TreeGrid
+- The ability to define the id of the parent root via the [rootParent](grid/api/grid_rootparent_config.md) configuration option of TreeGrid
 
 #### Window
 
