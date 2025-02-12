@@ -68,3 +68,7 @@ const layout = new dhx.Layout("layout_container", {
     ]
 });
 ~~~
+
+:::info
+Please note that if you specify the `id` fields for cells, their values should be **unique**. You can also omit the `id` fields in the [configuration of cells](layout/cell_configuration.md). In this case they will be generated automatically.
+:::

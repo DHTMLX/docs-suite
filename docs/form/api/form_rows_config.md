@@ -6,7 +6,7 @@ description: You can explore the rows Config of Form in the documentation of the
 
 # rows
 
-@short: Optional. Arranges controls inside the control group vertically
+@short: Optional. Arranges [controls](/suite/category/list-of-form-controls/) inside the control group vertically
 
 @signature: {'rows?: object[];'}
 
@@ -41,6 +41,9 @@ const form = new dhx.Form("form_container", {
 });
 
 @descr:
+:::info
+Please note that if you specify the `id` fields for controls, their values should be **unique**. You can also omit the `id` fields in the configuration of controls. In this case they will be generated automatically.
+:::
 
 @changelog: added in v6.4
 
