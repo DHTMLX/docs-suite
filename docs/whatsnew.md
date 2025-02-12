@@ -12,6 +12,12 @@ Before updating DHTMLX to the latest version, please check the [Migration to New
 
 Released on February 18, 2025
 
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-9-1/" target="_blank">Review of the release on the blog</a>
+
+### Breaking changes
+
+This version brings some updates in the API methods. Check the [Migration](migration.md#90---91) guide to keep in step with the latest updates.
+
 ### New functionality
 
 #### Common features
@@ -20,18 +26,21 @@ Released on February 18, 2025
 
 #### Grid 
 
-- Row expander with the possibility to insert any Suite widget or HTML content (PRO version)
-- Multi-sorting functionality that allows sorting Grid by several columns (PRO version)
+- [Row expander](grid/configuration.md#row-expander) with the possibility to insert any Suite widget or HTML content (PRO version)
+- [Multi-sorting](grid/usage.md#sorting-by-multiple-columns) functionality that allows sorting Grid by several columns (PRO version)
 
 ### Updates
 
 #### Grid
 
-- Improved export functionality by using the **json2excel** export module
+- Improved and extended export to Excel functionality 
 
 ### Fixes
 
+- DataCollection. The `sort()` method called without arguments doesn't reset the applied sorting 
+- Grid. Falsy firing of data events on row drag-n-drop
 - Toolbar. Menu wrong item positioning
+- TreeCollection. The `restoreOrder()` method doesn't reset the applied sorting
 
 ### New samples
 

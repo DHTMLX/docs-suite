@@ -241,10 +241,11 @@ In this section you will find the ways of editing data in Grid.
 
 In this section you will find the ways of sorting data in Grid.
 
-| Topic                                                        | Description                                                                                                 |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| [Sorting data](../usage/#sorting-data)                       | Learn how to sort data in the grid ([Example](https://snippet.dhtmlx.com/81dmbdfd))                         |
-| [Sortable columns](../configuration/#sortable-columns)       | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
+| Topic     									| Description                                                      |
+| --------------------------------------------- | ---------------------------------------------------------------- |
+| [Sorting data](../usage/#sorting-data)        | Learn how to sort data in the grid ([Example](https://snippet.dhtmlx.com/81dmbdfd))                |
+| [Sorting by multiple columns](../usage/#sorting-by-multiple-columns)   | Learn how to sort Grid data by multiple columns ([Example 1](https://snippet.dhtmlx.com/4ej0i3qi), [Example 2](https://snippet.dhtmlx.com/786zr190))                |
+| [Sortable columns](../configuration/#sortable-columns)| Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in Grid ([Example](https://snippet.dhtmlx.com/u2vk3ri3)) |
 
 ### How to filter data
