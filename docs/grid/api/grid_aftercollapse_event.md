@@ -6,10 +6,12 @@ description: You can explore the afterCollapse event of Grid in the documentatio
 
 # afterCollapse
 
-@short: fires after collapsing Grid in the TreeGrid mode
+@short: fires after collapsing a row that contains child rows
 
 :::note
-The event works only for Grid with the `type: "tree"` configuration option
+The event works:
+- for Grid in the default mode with the `subRow` configuration option
+- for Grid in the TreeGrid mode (with the `type: "tree"` configuration option)
 :::
 
 @signature: {'afterCollapse: (rowId: string | number) => void;'}
@@ -18,7 +20,11 @@ The event works only for Grid with the `type: "tree"` configuration option
 The callback of the event is called with the following parameter:
 - `rowId: string | number` - the id of a collapsed row
 
-@example:
+@descr:
+
+### Example
+
+~~~jsx {2,9-11}
 const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
@@ -30,8 +36,8 @@ const grid = new dhx.Grid("grid_container", {
 grid.events.on("afterCollapse", (rowId) => {
     // your logic here
 });
+~~~
 
-@descr:
 
 
 @changelog: added in v6.4

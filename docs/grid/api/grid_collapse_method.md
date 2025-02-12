@@ -6,18 +6,22 @@ description: You can explore the collapse method of Grid in the documentation of
 
 # collapse()
 
-@short: collapses a tree node by id
+@short: collapses a row that contains child rows by id
 
 :::note
-The method works only for Grid with the `type: "tree"` configuration option
+The method works:
+- for Grid in the default mode with the `subRow` configuration option
+- for Grid in the TreeGrid mode (with the `type: "tree"` configuration option)
 :::
 
 @signature: {'collapse(id: string | number): void;'}
 
 @params:
-- `id: string | number` - the id of a node to collapse
+- `id: string | number` - the id of a row to collapse
 
-@example:
+### Example
+
+~~~jsx {2,9}
 const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
@@ -27,6 +31,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.collapse("native");
+~~~
 
 @descr:
 

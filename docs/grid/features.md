@@ -202,6 +202,21 @@ In this section you will learn how to add and remove columns and rows, how to hi
 | [Showing / hiding a column](../usage/#hidingshowing-a-column)                | Learn how to show and hide a column in Grid ([Example](https://snippet.dhtmlx.com/n4zjwsqj))              |
 | [Checking visibility of a column](../usage/#checking-visibility-of-a-column) | Learn how to check whether a column is hidden   ([Example](https://snippet.dhtmlx.com/rdqhwnjv))          |
 
+## How to work with row expander
+
+| Topic                                                          | Description                      |
+| -------------------------------------------------------------- | ---------------------------------------------- |
+| [Adding sub-rows](../configuration/#adding-sub-rows)  | Learn how to enable the row expander feature and add sub-rows into Grid ([Example](https://snippet.dhtmlx.com/xdw2037t))       |
+| [Adjusting configuration of sub-rows](../configuration/#adjusting-configuration-of-sub-rows)  | Learn how to configure the sub-rows ([Example](https://snippet.dhtmlx.com/xdw2037t))       |
+| [Dynamic configuration of sub-rows](../configuration/#dynamic-configuration-of-sub-rows)  | Learn how to adjust the configuration settings of sub-rows dynamically ([Example](https://snippet.dhtmlx.com/pbubj175))       |
+| [Saving state of nested components or data in sub-rows](../configuration/#saving-state-of-nested-components-or-data-in-sub-rows)  | Learn how to save the state of nested components or the data of sub-rows     |
+| [Loading data into a sub-row](../configuration/#loading-data-into-a-sub-row)  | Learn how to dynamically load data into a sub-row ([Example](https://snippet.dhtmlx.com/03ndqrqt))       |
+| [Handling events](../configuration/#handling-events)  | Learn how to add event handlers for sub-rows with sub-components or HTML content ([Example](https://snippet.dhtmlx.com/3364si14))       |
+| [Multi-level Grid nesting](../configuration/#multi-level-grid-nesting)  | Learn how to specify a multi-level Grid nesting structure ([Example](https://snippet.dhtmlx.com/dih3z7cz))       |
+| [Adjusting sub-row width](../configuration/#adjusting-sub-row-width)  | Learn how to adjust the sub-row width depending on the width of the parent Grid       |
+| [Getting sub-row config and content](../configuration/#getting-sub-row-config-and-content)  | Learn how to get the configuration settings applied to a sub-row and the content inside it   |
+
+
 ## How to work with data in Grid
 
 This section will tell you how to use **Grid API** and **DataCollection API** for working with data of Grid, i.e. edit, add, remove, sort data, etc.
@@ -277,7 +292,6 @@ In this section you will find the ways of working with the TreeGrid mode of Grid
 | [Configuring TreeGrid mode](../treegrid_mode/#configuration)| Learn how to configure the TreeGrid mode of Grid |
 | [Data loading in TreeGrid mode](../treegrid_mode/#data-loading)| Learn how to load data in the TreeGrid mode of Grid |
 | [Working with TreeGrid mode](../treegrid_mode/#work-with-grid-in-the-treegrid-mode) | Learn how to expand/collapse nodes |
-| [TreeGrid mode API](../../category/treegrid-mode-api/) | Learn how to use the API of TreeGrid mode of Grid |
 
 
 ## How to scroll Grid
@@ -327,7 +341,6 @@ In this section you can find out corresponding references of Grid API.
 | [Grid column properties](../api/api_gridcolumn_properties/) | Check the list of properties of a Grid column                    |
 | [DataCollection API](../../data_collection/)                | Check the API of DataCollection to work with Grid data           |
 | [Selection API](../../category/selection-api/)              | Check the API of Selection to manage the selection of Grid cells |
-| [TreeGrid mode API](../../category/treegrid-mode-api/)      | Check the API of Grid in the TreeGrid mode  					 |
 
 
 ## Common functionality
