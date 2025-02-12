@@ -16,11 +16,11 @@ The method allows getting the result of sorting data by multiple columns.
 
 ~~~jsx 
 interface ISortingState {
-    by?: string | number, // the id of a data field (a column of Grid) to sort by
-    dir?: "asc" | "desc", // the direction of sorting: "asc" or "desc"
-    as?: (a) => any, // a custom function of converting values before comparing
-    rule?: (a, b) => number, // a custom sorting function
-    smartSorting?: boolean // (if can be applied) specifies whether a sorting rule should be applied each time after changing the data set
+    by?: string | number, 
+    dir?: "asc" | "desc", 
+    as?: (a) => any,
+    rule?: (a, b) => number, 
+    smartSorting?: boolean 
 }
 
 getSortingStates(): ISortingState[];
@@ -34,13 +34,32 @@ const state = grid.data.getSortingStates();
 // -> [{by: "country", dir: "desc"}, {by: "population", dir: "desc"}]
 
 @descr:
-The return array contains objects with the following properties:
+The array returned by the method contains objects with the following properties:
 
-- `by` - (*string|number*) the id of a data field (a column of Grid) to sort by
-- `dir` - (*"asc"|"desc"*) the direction of sorting: "asc" or "desc"
-- `as` - (*function*) a custom function of converting values before comparing
-- `rule` - (*function*) a custom sorting function
-- `smartSorting` - (*boolean*) (if can be applied) specifies whether a sorting rule should be applied each time after changing the data set
+<table>
+    <tbody>
+        <tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a data field (a column of Grid) to sort by</td>
+        </tr>
+        <tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the direction of sorting: "asc" or "desc"</td>
+        </tr>
+        <tr>
+            <td><b>as</b></td>
+            <td>(<i>function</i>) a custom function of converting values before comparing</td>
+        </tr>
+        <tr>
+            <td><b>rule</b></td>
+            <td>(<i>function</i>) a custom sorting function</td>
+        </tr>
+        <tr>
+            <td><b>smartSorting</b></td>
+            <td>(<i>boolean</i>) (if applied) specifies whether a sorting rule should be applied each time after changing the data set</td>
+        </tr>
+    </tbody>
+</table>
 
 @changelog:
 added in v9.1

@@ -11,7 +11,7 @@ description: You can explore how to migrate to newer versions in the documentati
 
 ### Grid
 
-The `getSortingState()` method of Grid has been deprecated and replaced with the `getSortingStates()` method of [DataCollection](/data_collection/) and [TreeCollection](/tree_collection/):
+The `getSortingState()` method of Grid has been deprecated and replaced with the `getSortingStates()` method of [DataCollection](/data_collection/) and [TreeCollection](/tree_collection/), which allows getting the result of sorting data by multiple columns.
 
 ~~~jsx title="Before v9.1"
 grid.getSortingState();

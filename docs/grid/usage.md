@@ -273,7 +273,7 @@ You can filter grid data by the specified criteria with the help of the `filter(
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> (<i>string</i>) - optional, the id of the filter</li><li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -314,7 +314,7 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
     <tbody>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:<ul><li><b>by</b> (<i>string | number</i>) the id of a column</li><li><b>dir</b> (<i>string</i>) the direction of sorting "asc" or "desc"</li><li><b>as</b> (<i>function</i>) a function that specifies the type to sort data as</li><li><b>rule</b> (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li></ul></td>
+            <td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:<ul><li><b>by</b> - (<i>string | number</i>) the id of a column</li><li><b>dir</b> - (<i>string</i>) the direction of sorting "asc" or "desc"</li><li><b>as</b> - (<i>function</i>) a function that specifies the type to sort data as</li><li><b>rule</b> - (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li></ul></td>
         </tr>
         <tr>
             <td><b>config</b></td>
@@ -324,7 +324,7 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
 </table>
 <br/>
 
-~~~js
+~~~jsx
 grid.data.sort({
     by:"a",
     dir:"desc",
@@ -339,11 +339,53 @@ grid.data.sort({
 
 **Related sample**: [Grid. Sorting](https://snippet.dhtmlx.com/81dmbdfd)
 
+#### Sorting by multiple columns
+
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+You can sort Grid by multiple columns simultaneously. The multi-sorting ability is enabled by default. If you need to disable it, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    multiSort: false,
+    data: dataset
+});
+~~~
+
+**Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
+
+It is also possible to apply multi-sorting to [the grouped data](grid/usage.md#grouping-data). Check the example below:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    editable: true,
+    group: {
+        order: ["animal_type"] // group by the `animal_type` field
+    },
+    groupable: true, // enables grouping functionality, false by default
+    data: dataset
+});
+
+grid.data.sort({ by: "volunteer_name", dir: "desc" }, { smartSorting: true });
+grid.data.sort({ by: "task_status", dir: "asc" });
+grid.data.sort({ by: "animal_type", dir: "asc" });
+~~~
+
+**Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
+
 #### Custom sorting
 
-You can also specify the **rule** attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
+You can also specify the `rule` attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
 
-~~~js
+~~~jsx
 grid.data.sort({
     rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
 });
@@ -351,22 +393,38 @@ grid.data.sort({
 
 #### Getting the sorting state
 
-To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method returns an object with the following properties:
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties:
 
-- `by` - (*string|number*) the id of a data field (a column of Grid) to sort by
-- `dir` - (*"asc"|"desc"*) the direction of sorting: "asc" or "desc"
-- `as` - (*function*) a custom function of converting values before comparing
-- `rule` - (*function*) a custom sorting function
-- `smartSorting` - (*boolean*) (if can be applied) specifies whether a sorting rule should be applied each time after changing the data set
-
-The method allows getting the result of sorting data by multiple columns.
+<table>
+    <tbody>
+        <tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a data field (a column of Grid) to sort by</td>
+        </tr>
+        <tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the direction of sorting: "asc" or "desc"</td>
+        </tr>
+        <tr>
+            <td><b>as</b></td>
+            <td>(<i>function</i>) a custom function of converting values before comparing</td>
+        </tr>
+        <tr>
+            <td><b>rule</b></td>
+            <td>(<i>function</i>) a custom sorting function</td>
+        </tr>
+        <tr>
+            <td><b>smartSorting</b></td>
+            <td>(<i>boolean</i>) (if applied) specifies whether a sorting rule should be applied each time after changing the data set</td>
+        </tr>
+    </tbody>
+</table>
 
 ~~~jsx
 const state = grid.data.getSortingStates(); 
 // -> [{by: "country", dir: "desc"}, {by: "population", dir: "desc"}]
 ~~~
 
-**Related sample**: [Grid. Get sorting state](https://snippet.dhtmlx.com/u2vk3ri3)
 
 ### Editing data
 
