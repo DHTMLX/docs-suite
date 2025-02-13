@@ -8,16 +8,12 @@ description: You can explore the getSortingStates method of DataCollection in th
 
 @short: returns an array of objects with the current parameters of sorting applied to the data
 
-:::note
-The method allows getting the result of sorting data by multiple columns.
-:::
-
 ## Usage
 
 ~~~jsx 
 interface ISortingState {
-    by?: string | number, 
-    dir?: "asc" | "desc", 
+    by: string | number, 
+    dir: "asc" | "desc", 
     as?: (a) => any,
     rule?: (a, b) => number, 
     smartSorting?: boolean 
@@ -48,15 +44,15 @@ The array returned by the method contains objects with the following properties:
         </tr>
         <tr>
             <td><b>as</b></td>
-            <td>(<i>function</i>) a custom function of converting values before comparing</td>
+            <td>(<i>function</i>) optional, a custom function of converting values before comparing</td>
         </tr>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>function</i>) a custom sorting function</td>
+            <td>(<i>function</i>) optional, a custom sorting function</td>
         </tr>
         <tr>
             <td><b>smartSorting</b></td>
-            <td>(<i>boolean</i>) (if applied) specifies whether a sorting rule should be applied each time after changing the data set</td>
+            <td>(<i>boolean</i>) optional, (if applied) specifies whether a sorting rule should be applied each time after changing the data set</td>
         </tr>
     </tbody>
 </table>

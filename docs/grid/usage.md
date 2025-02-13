@@ -345,21 +345,13 @@ grid.data.sort({
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-You can sort Grid by multiple columns simultaneously. The multi-sorting ability is enabled by default. If you need to disable it, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
+You can sort Grid by multiple columns simultaneously. 
 
-~~~jsx
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    multiSort: false,
-    data: dataset
-});
-~~~
+![](../assets/grid/multisorting_data.png)
 
 **Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
 
-It is also possible to apply multi-sorting to [the grouped data](grid/usage.md#grouping-data). Check the example below:
+Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](data_collection.md) by several columns:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -379,7 +371,21 @@ grid.data.sort({ by: "task_status", dir: "asc" });
 grid.data.sort({ by: "animal_type", dir: "asc" });
 ~~~
 
+![](../assets/grid/multisort_grouped_data.png)
+
 **Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
+
+If you need to disable the multi-sorting ability, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    multiSort: false,
+    data: dataset
+});
+~~~
 
 #### Custom sorting
 

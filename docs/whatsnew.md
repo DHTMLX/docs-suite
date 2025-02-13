@@ -20,10 +20,6 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 ### New functionality
 
-#### Common features
-
-- [Multi-user (live update) backend](integration/suite_and_backend.md#multi-user-backend-for-suite-widgets) for Suite widgets
-
 #### Grid 
 
 - [Row expander](grid/configuration.md#row-expander) with the possibility to insert any Suite widget or HTML content (PRO version)
@@ -31,13 +27,14 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 ### Fixes
 
-- DataCollection. The `sort()` method called without arguments doesn't reset the applied sorting 
+- DataCollection/TreeCollection. The `sort()` method called without arguments doesn't reset the applied sorting 
 - Grid. Falsy firing of data events on row drag-n-drop
 - Toolbar. Menu wrong item positioning
 - TreeCollection. The `restoreOrder()` method doesn't reset the applied sorting
 
 ### New samples
 
+- [Multiuser (real-time updated) backend. Save method. Getting, editing, deleting, and sending data](https://github.com/DHTMLX/nodejs-suite-demo/blob/master/public/views/12_grid_with_form_multiuser.html)
 - [Grid. Grouping and template in group headers](https://snippet.dhtmlx.com/dywmb6ec)
 - [Grid. Search and highlight results](https://snippet.dhtmlx.com/p74701lu) 
 - [Grid. Hiding columns using header context menu](https://snippet.dhtmlx.com/ygfj3uo3)
@@ -2279,7 +2276,7 @@ Released on January 28, 2020
 - The possibility [to set selection to multiple cells/rows of Grid](grid/usage.md#using-selection-api) via the `setCell()` method of the selection object
 - New additional arrow keyboard shortcuts are added to [Keyboard navigation](grid/configuration.md#keyboard-navigation)
 - The ability [to sort content of any Grid column by clicking on its header](grid/configuration.md#sortable-columns) via the [](grid/api/grid_sortable_config.md) property
-- The [](grid/api/grid_getsortingstate_method.md) method that [allows getting the current state of sorting data in Grid](grid/usage.md#getting-the-sorting-state) is added
+- The `getSortingState()` method that [allows getting the current state of sorting data in Grid](grid/usage.md#getting-the-sorting-state) is added
 - The possibility [to check visibility of a column](grid/usage.md#checking-visibility-of-a-column) via the [](grid/api/grid_iscolumnhidden_method.md) method
 - The ability to enable [dynamic loading of data in Grid](grid/data_loading.md#dynamic-loading)
 - The [](grid/api/grid_afterkeydown_event.md) and [](grid/api/grid_beforekeydown_event.md) events are added
