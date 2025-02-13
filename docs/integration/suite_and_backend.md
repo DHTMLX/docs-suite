@@ -14,6 +14,8 @@ The DHTMLX library includes the [DataCollection](/data_collection/) helper that 
 
 Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](/data_collection/api/datacollection_load_method/) method of DataCollection.
 
+Besides, the DHTMLX library allows providing a [multi-user backend](#multi-user-backend-for-suite-widgets) for any Suite component.   
+
 ## Examples of using DHTMLX Suite widgets with Node.js
 
 Let's have an overview of the examples.
@@ -127,6 +129,12 @@ The example is created to show you how to save the changes made in data to the b
 This example of Grid is visually the same as the previous one but the ways of adding and editing data in this example are developed in another way. For instance, after you click the "Add new card" button, an empty row will be added after the last row in the grid. Editing of any cell of the grid is implemented by double-clicking on the cell. 
 
 The following request methods are used in this example: `GET`, `PUT`, `POST`, `DELETE`.
+
+## Multi-user backend for Suite widgets
+
+You can create a multi-user (real-time updated) backend for Suite widgets. The backend can be implemented in any language and you can use any library to allow the client and the server sides interact via the WebSocket protocol.
+
+There is an [example](https://github.com/DHTMLX/nodejs-suite-demo/blob/master/public/views/12_grid_with_form_multiuser.html) that shows a multi-user backend for Grid, implemented with the help of Node.js and the Faye library. You can provide live data updates for any Suite widget based on this example.
 
 :::info
 Download and take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).

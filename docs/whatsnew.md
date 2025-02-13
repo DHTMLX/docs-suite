@@ -22,18 +22,12 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 #### Common features
 
-- Multi-user (live update) backend for Suite widgets
+- [Multi-user (live update) backend](integration/suite_and_backend.md#multi-user-backend-for-suite-widgets) for Suite widgets
 
 #### Grid 
 
 - [Row expander](grid/configuration.md#row-expander) with the possibility to insert any Suite widget or HTML content (PRO version)
 - [Multi-sorting](grid/usage.md#sorting-by-multiple-columns) functionality that allows sorting Grid by several columns (PRO version)
-
-### Updates
-
-#### Grid
-
-- Improved and extended export to Excel functionality 
 
 ### Fixes
 
