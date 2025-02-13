@@ -1626,6 +1626,8 @@ The row expander functionality allows using nested content in Grid sub-rows. You
 This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
+![](../assets/grid/row_expander.png)
+
 ### Adding sub-rows 
 
 In order to enable the row expander feature, you should use the [`subRow`](grid/api/grid_subrow_config.md) configuration option. It defines the content of sub-rows for each row of the Grid. The `subRow` property is a callback function which is called with the row object as a parameter and should return an HTML string or the constructor of a Suite component (Grid, Chart, Form, DataView, etc.).
@@ -1649,6 +1651,8 @@ const grid = new dhx.Grid("grid_container", {
     },
 });
 ~~~
+
+**Related sample:** [Grid. Row expander. Custom HTML and hiding toggle icon](https://snippet.dhtmlx.com/pvgyd3z9)
 
 In the example below a sub-row contains a subgrid:
 
@@ -1766,6 +1770,8 @@ const grid = new dhx.Grid("grid_container", {
     }),
 });
 ~~~
+
+![](../assets/grid/subgrid_specific_rows.png)
 
 In the above example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that sub-rows with the height 250px will be created for rows that have some data. For rows without data the `height:0` setting is specified, so sub-rows won't be created for these rows.
 
@@ -1909,7 +1915,11 @@ const grid = new dhx.Grid("grid_container", {
 
 ### Multi-level Grid nesting
 
-It is possible to create as many levels of nested subGrids, as necessary. To specify the structure of a multi-level Grid nesting, do the following:
+It is possible to create as many levels of nested subgrids, as necessary. 
+
+![](../assets/grid/multi_level_nesting.png)
+
+To specify the structure of a multi-level Grid nesting, do the following:
 
 - create a Grid with columns and data 
 - in the Grid configuration specify the [`subRow`](grid/api/grid_subrow_config.md) option as a callback function, which:
