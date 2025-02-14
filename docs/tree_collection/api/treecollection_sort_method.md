@@ -20,16 +20,14 @@ description: You can explore the sort method of TreeCollection in the documentat
     - `smartSorting: boolean` - specifies whether a sorting rule should be applied each time after changing the data set
 
 @example:
-component.data.sort({
-    by: "price",
-    dir: "asc",
-    as: function(value){ 
-        return value ? value : "" 
-    },
+component.data.sort(
     {
-        smartSorting: true
-    }
-});
+        by: "price",
+        dir: "asc",
+        as: value => (value || "") 
+    },
+    { smartSorting: true }
+);
 
 // cancels the applied sorting rules
 component.data.sort();

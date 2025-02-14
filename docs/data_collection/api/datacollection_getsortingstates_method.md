@@ -36,7 +36,7 @@ The array returned by the method contains objects with the following properties:
     <tbody>
         <tr>
             <td><b>by</b></td>
-            <td>(<i>string | number</i>) the id of a data field (a column of Grid) to sort by</td>
+            <td>(<i>string | number</i>) the id of a data field to sort by</td>
         </tr>
         <tr>
             <td><b>dir</b></td>

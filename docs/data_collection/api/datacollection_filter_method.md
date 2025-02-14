@@ -14,12 +14,12 @@ description: You can explore the filter method of DataCollection in the document
 - `rule: function | object` - the filtering criteria
     - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
-        - `by: string | number` - mandatory, the id of a data field (the column of Grid)
+        - `by: string | number` - mandatory, the id of a data field 
         - `match: string` - mandatory, a pattern to match
         - `compare: function` - optional, a function for extended filtering that takes three parameters:
-            - `value` - the value to compare (e.g. a column in a row for Grid)
+            - `value` - the value to compare 
             - `match` - a pattern to match
-            - `item` - a data item the values of which should be compared (e.g. a row)
+            - `item` - a data item the values of which should be compared 
 - `config: object` - optional, defines the parameters of filtering. It may contain the following properties: 
     - `id: string` - optional, the id of the filter
     - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)

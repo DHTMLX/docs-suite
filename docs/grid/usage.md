@@ -325,16 +325,14 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
 <br/>
 
 ~~~jsx
-grid.data.sort({
-    by:"a",
-    dir:"desc",
-    as: function(item){
-        return item.toUpperCase(); 
-    },
+grid.data.sort(
     {
-        smartSorting: true
-    }
-});
+        by:"a",
+        dir:"desc",
+        as: item => (item.toUpperCase())
+    },
+    { smartSorting: true }
+);
 ~~~
 
 **Related sample**: [Grid. Sorting](https://snippet.dhtmlx.com/81dmbdfd)
@@ -405,7 +403,7 @@ To get the current state of sorting data in Grid, use the [`getSortingStates()`]
     <tbody>
         <tr>
             <td><b>by</b></td>
-            <td>(<i>string | number</i>) the id of a data field (a column of Grid) to sort by</td>
+            <td>(<i>string | number</i>) the id of a data field to sort by</td>
         </tr>
         <tr>
             <td><b>dir</b></td>
