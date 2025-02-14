@@ -12,7 +12,7 @@ description: You can explore the sort method of TreeCollection in the documentat
 
 @params:
 - `rule: object` - an object with parameters for sorting. The object has the following attributes:
-    - `by: string | number` - the id of a data field (a column of Grid in the TreeGrid mode)
+    - `by: string | number` - the id of a data field 
     - `dir: string` - the direction of sorting: "asc" or "desc"
     - `as: function` - a function that specifies the type to sort data as
     - `rule: function` - optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
