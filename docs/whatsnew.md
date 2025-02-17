@@ -29,7 +29,8 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 - DataCollection/TreeCollection. The `sort()` method called without arguments doesn't reset the applied sorting 
 - Grid. Falsy firing of data events on row drag-n-drop
-- Toolbar. Menu wrong item positioning
+- Grid. The issue with a gap appearing while calculating `autoHeight` of a cell
+- Toolbar. Incorrect menu items positioning
 - TreeCollection. The `restoreOrder()` method doesn't reset the applied sorting
 
 ### New samples
