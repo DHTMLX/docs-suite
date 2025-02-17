@@ -2336,7 +2336,7 @@ Released on January 28, 2020
 - The possibility [to adjust the size of TreeGrid columns to the size of TreeGrid](grid/configuration.md#autowidth-for-columns) via the [](grid/api/grid_autowidth_config.md) configuration property
 - The ability [to adjust the width of columns to the width of their content automatically](grid/configuration.md#autosize-for-columns) with the help of the [](grid/api/grid_adjust_config.md) property
 - The ability [to sort content of any TreeGrid column by clicking on its header](grid/configuration.md#sortable-columns) using the [](grid/api/grid_sortable_config.md) property
-- The [](grid/api/grid_getsortingstate_method.md) method that [allows getting the current state of sorting data in TreeGrid](grid/usage.md#getting-the-sorting-state) is added
+- The `getSortingState()` method that [allows getting the current state of sorting data in TreeGrid](grid/usage.md#getting-the-sorting-state) is added
 
 #### Window
 
