@@ -6,10 +6,12 @@ description: You can explore the afterExpand event of Grid in the documentation 
 
 # afterExpand
 
-@short: fires after expanding Grid in the TreeGrid mode
+@short: fires after expanding a row that contains child rows
 
 :::note
-The event works only for Grid with the `type: "tree"` configuration option
+The event works:
+- for Grid in the default mode with the `subRow` configuration option
+- for Grid in the TreeGrid mode (with the `type: "tree"` configuration option)
 :::
 
 @signature: {'afterExpand: (rowId: string | number) => void;'}
@@ -19,7 +21,11 @@ The callback of the event is called with the following parameter:
 
 - `rowId: string | number` - the id of an expanded row
 
-@example:
+@descr:
+
+### Example
+
+~~~jsx {2,9-11}
 const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
@@ -31,9 +37,7 @@ const grid = new dhx.Grid("grid_container", {
 grid.events.on("afterExpand", (rowId) => {
     // your logic here
 });
-
-@descr:
-
+~~~
 
 
 @changelog: added in v6.4

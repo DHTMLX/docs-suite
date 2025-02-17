@@ -12,7 +12,7 @@ description: You can explore the sort method of TreeCollection in the documentat
 
 @params:
 - `rule: object` - an object with parameters for sorting. The object has the following attributes:
-    - `by: string | number` - the id of a data field (a column of Grid in the TreeGrid mode)
+    - `by: string | number` - the id of a data field 
     - `dir: string` - the direction of sorting: "asc" or "desc"
     - `as: function` - a function that specifies the type to sort data as
     - `rule: function` - optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
@@ -20,16 +20,14 @@ description: You can explore the sort method of TreeCollection in the documentat
     - `smartSorting: boolean` - specifies whether a sorting rule should be applied each time after changing the data set
 
 @example:
-component.data.sort({
-    by: "price",
-    dir: "asc",
-    as: function(value){ 
-        return value ? value : "" 
-    },
+component.data.sort(
     {
-        smartSorting: true
-    }
-});
+        by: "price",
+        dir: "asc",
+        as: value => (value || "") 
+    },
+    { smartSorting: true }
+);
 
 // cancels the applied sorting rules
 component.data.sort();

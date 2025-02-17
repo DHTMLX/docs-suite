@@ -14,12 +14,12 @@ description: You can explore the filter method of TreeCollection in the document
 - `rule: function | object` - the filtering criteria
     - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
-        - `by: string | number` - required, the id of a column
+        - `by: string | number` - required, the id of a data field
         - `match: string` - required, a pattern to match
         - `compare: function` - optional, a function for extended filtering that takes three parameters:
-            - `value` - the value to compare (e.g. a column in a row for Grid)
+            - `value` - the value to compare 
             - `match` - a pattern to match
-            - `item` - a data item the values of which should be compared (e.g. a row)
+            - `item` - a data item the values of which should be compared 
 - `config: object` - optional, defines the parameters of filtering. The parameter may contain the following properties:
     - `type: string` - optional, defines the area the filtering will be applied: "all", "level", "leafs"
     - `level: number` - optional, the level the filtering will be applied to

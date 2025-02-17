@@ -58,7 +58,7 @@ console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the val
 
 **Related article:** [Getting the summary object](grid/configuration.md#getting-the-summary-object)
 
-**Related**: [summary](grid/api/grid_summary_config.md)
+**Related API**: [summary](grid/api/grid_summary_config.md)
 
 @changelog:
 - Added in v9.0

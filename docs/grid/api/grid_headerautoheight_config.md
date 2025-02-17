@@ -10,7 +10,7 @@ description: You can explore the headerAutoHeight config of Grid in the document
 
 @short: Optional. Allows adjusting the height of the header for the content to fit in
 
-@signature: headerAutoHeight?: boolean;
+@signature: {'headerAutoHeight?: boolean;'}
 
 @default: false
 

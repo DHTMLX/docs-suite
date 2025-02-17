@@ -84,7 +84,7 @@ console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 
 
 **Related article:** [Summary of calculated values](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans)
 
-**Related**: [getSummary](grid/api/grid_getsummary_method.md)
+**Related API**: [getSummary](grid/api/grid_getsummary_method.md)
 
 @changelog:
 - Added in v9.0

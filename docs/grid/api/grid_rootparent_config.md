@@ -8,6 +8,10 @@ description: You can explore the rootParent config of Grid in the documentation 
 
 @short: Optional. Defines the id of the root parent
 
+:::note
+The property works only for Grid with the `type: "tree"` configuration option
+:::
+
 @signature: rootParent?: string;
 
 @example:			
@@ -26,6 +30,6 @@ const grid = new dhx.Grid("grid_container", {
 @descr:
 
 By default, the root parent takes the id of the Grid container. 
-If the id of the container is set to null or defined as an HTML element, the value of the root parent will be auto-generated. 
+If the id of the container is set to `null` or defined as an HTML element, the value of the root parent will be auto-generated. 
 
 @changelog: added in v7.1
