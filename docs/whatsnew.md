@@ -33,20 +33,25 @@ This version brings some updates in the API methods. Check the [Migration](migra
 - Toolbar. Incorrect menu items positioning
 - TreeCollection. The `restoreOrder()` method doesn't reset the applied sorting
 
-### New samples
+### New demo on backend integration
 
 - [Multiuser (real-time updated) backend. Save method. Getting, editing, deleting, and sending data](https://github.com/DHTMLX/nodejs-suite-demo/blob/master/public/views/12_grid_with_form_multiuser.html)
-- [Grid. Grouping and template in group headers](https://snippet.dhtmlx.com/dywmb6ec)
-- [Grid. Search and highlight results](https://snippet.dhtmlx.com/p74701lu) 
-- [Grid. Hiding columns using header context menu](https://snippet.dhtmlx.com/ygfj3uo3)
-- [Grid. Empty state](https://snippet.dhtmlx.com/sbajbjre)
-- [Grid. Row pinning with checkbox](https://snippet.dhtmlx.com/idu0mdmr)
-- [Grid. Dynamic calculations](https://snippet.dhtmlx.com/6nrd0v2y)
-- [Grid. Dataview editor for second column](https://snippet.dhtmlx.com/1lvoz1ra)
-- [Grid. Custom yes/no editor](https://snippet.dhtmlx.com/4nq80zi3)
-- [Grid. Additional details in second grid (linked grids)](https://snippet.dhtmlx.com/u0e135f1)
-- [Grid. Readonly (disabled) rows](https://snippet.dhtmlx.com/h3nah0jv)
-- [Grid. Rotated (vertical) header](https://snippet.dhtmlx.com/xdmemdjg)
+
+### New samples
+
+#### Grid
+
+- [Grouping and template in group headers](https://snippet.dhtmlx.com/dywmb6ec)
+- [Search and highlight results](https://snippet.dhtmlx.com/p74701lu) 
+- [Hiding columns using header context menu](https://snippet.dhtmlx.com/ygfj3uo3)
+- [Empty state](https://snippet.dhtmlx.com/sbajbjre)
+- [Row pinning with checkbox](https://snippet.dhtmlx.com/idu0mdmr)
+- [Dynamic calculations](https://snippet.dhtmlx.com/6nrd0v2y)
+- [Dataview editor for second column](https://snippet.dhtmlx.com/1lvoz1ra)
+- [Custom yes/no editor](https://snippet.dhtmlx.com/4nq80zi3)
+- [Additional details in second grid (linked grids)](https://snippet.dhtmlx.com/u0e135f1)
+- [Readonly (disabled) rows](https://snippet.dhtmlx.com/h3nah0jv)
+- [Rotated (vertical) header](https://snippet.dhtmlx.com/xdmemdjg)
 - [Grid and Pivot. Integration](https://snippet.dhtmlx.com/0uo39y8c)
 
 ## Version 9.0.4 
