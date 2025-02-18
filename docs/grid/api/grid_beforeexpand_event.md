@@ -6,23 +6,29 @@ description: You can explore the beforeExpand event of Grid in the documentation
 
 # beforeExpand
 
-@short: fires before expanding Grid in the TreeGrid mode
+@short: fires before expanding a row that contains child rows
 
 :::note
-The event works only for Grid with the `type: "tree"` configuration option
+The event works:
+- for Grid in the default mode with the `subRow` configuration option
+- for Grid in the TreeGrid mode (with the `type: "tree"` configuration option)
 :::
 
 @signature: {'beforeExpand: (rowId: string | number) => boolean | void;'}
 
 @params:
-The callback of the event is called with the following parameters:
+The callback of the event is called with the following parameter:
 
 - `rowId: string | number` - the id of an expanded row
 
 @returns:
 Return `false` to block expanding of a grid; otherwise, `true`.
 
-@example:
+@descr:
+
+### Example
+
+~~~jsx {2,9-12}
 const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
@@ -35,9 +41,6 @@ grid.events.on("beforeExpand", (rowId) => {
     // your logic here
     return false;
 });
-
-@descr:
-
-
+~~~
 
 @changelog: added in v6.4
