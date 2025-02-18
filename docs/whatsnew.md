@@ -41,6 +41,18 @@ This version brings some updates in the API methods. Check the [Migration](migra
 
 #### Grid
 
+- [Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+- [Row expander. Subgrid data loading](https://snippet.dhtmlx.com/03ndqrqt)
+- [Row expander. Subgrid events handling](https://snippet.dhtmlx.com/3364si14)
+- [Row expander with Form (any Suite widget can be embedded)](https://snippet.dhtmlx.com/ov95hiet)
+- [Row expander with Chart (any Suite widget can be embedded)](https://snippet.dhtmlx.com/ia7ugn1l)
+- [Row expander. Subgrid with Pagination](https://snippet.dhtmlx.com/w1jdz5r8)
+- [Row expander. Multi-level nested subgrids](https://snippet.dhtmlx.com/dih3z7cz)
+- [Row expander. Custom HTML and hiding toggle icon](https://snippet.dhtmlx.com/pvgyd3z9)
+- [Row expander. Subgrid with rows expanded by criteria](https://snippet.dhtmlx.com/pbubj175)
+- [Row expander. Subgrid only in specific rows](https://snippet.dhtmlx.com/03udbtmr)
+- [Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
+- [Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
 - [Grouping and template in group headers](https://snippet.dhtmlx.com/dywmb6ec)
 - [Search and highlight results](https://snippet.dhtmlx.com/p74701lu) 
 - [Hiding columns using header context menu](https://snippet.dhtmlx.com/ygfj3uo3)
@@ -168,14 +180,14 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 ### New samples
 
-- [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
-- [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
-- [Grid. Grouping aggregated data via data collection (PRO)](https://snippet.dhtmlx.com/vo3pgkgh)
-- [Grid. Grouping missing data (PRO)](https://snippet.dhtmlx.com/0geopa0v)
-- [Grid. Grouping and totals in the summary row (PRO)](https://snippet.dhtmlx.com/zhc67itn)
-- [Grid. Grouping and totals in group headers (PRO)](https://snippet.dhtmlx.com/7bp6knt7)
-- [Grid. Grouping and totals in group headers via data collection (PRO)](https://snippet.dhtmlx.com/84wfunzz)
-- [Grid. Grouping and totals in the summary row via data collection (PRO)](https://snippet.dhtmlx.com/ihd6gtpj)
+- [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
+- [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
+- [Grid. Grouping aggregated data via data collection](https://snippet.dhtmlx.com/vo3pgkgh)
+- [Grid. Grouping missing data](https://snippet.dhtmlx.com/0geopa0v)
+- [Grid. Grouping and totals in the summary row](https://snippet.dhtmlx.com/zhc67itn)
+- [Grid. Grouping and totals in group headers](https://snippet.dhtmlx.com/7bp6knt7)
+- [Grid. Grouping and totals in group headers via data collection](https://snippet.dhtmlx.com/84wfunzz)
+- [Grid. Grouping and totals in the summary row via data collection](https://snippet.dhtmlx.com/ihd6gtpj)
 - [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
 - [Grid. Custom totals for footer and columns with dynamic updates on edit](https://snippet.dhtmlx.com/59d6hqtm)
 - [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)
