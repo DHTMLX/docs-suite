@@ -537,7 +537,7 @@ You can group row data by column values to make them more suitable for analysis.
 
 It is possible to [set a predefined Grid configuration](#configuring-data-grouping) to initialize Grid with grouped data or to use the [DataCollection API](#using-datacollection-api-for-data-grouping) for grouping Grid data. 
 
-**Related sample:** [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
+**Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
 
 :::info important
 - Data grouping isn't intended for working with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
@@ -733,7 +733,7 @@ a) the grouped values of the "population" column and the number of elements that
 
 b) the total rows under the grouped values set by the `summary` property
 
-**Related sample:** [Grid. Grouping and totals in the summary row (PRO)](https://snippet.dhtmlx.com/zhc67itn)
+**Related sample:** [Grid. Grouping and totals in the summary row](https://snippet.dhtmlx.com/zhc67itn)
 
 - `order` - (optional) defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be: 
     - a string that represents a grouping field
