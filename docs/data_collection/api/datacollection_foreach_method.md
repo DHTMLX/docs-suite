@@ -11,10 +11,10 @@ description: You can explore the forEach method of DataCollection in the documen
 @signature: {'forEach(callback: (item: object, index?: number, array?: object[]) => any): void;'}
 
 @params:
-- `callback: function` - a function that will iterate over items of a data collection. The function takes three parameters:
-    - `item` - (required) the object of an item
-    - `index` - (optional) the index of an item
-    - `array` - (optional) an array with items
+- `callback: function` - a function that will iterate over items of a data collection. The function is called with the following parameters:
+    - `item` - the object of an item
+    - `index` - the index of an item
+    - `array` - an array of items the method was called upon
 
 @example:
 component.data.forEach(function(item, index, array) {

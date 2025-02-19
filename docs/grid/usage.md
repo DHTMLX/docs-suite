@@ -273,7 +273,7 @@ You can filter grid data by the specified criteria with the help of the `filter(
         </tr>
         <tr>
             <td><b>config</b></td>
-            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> (<i>string</i>) - optional, the id of the filter</li><li><b>add</b> (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> (<i>boolean</i>) - optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
+            <td>(<i>object</i>) optional, an object with the following properties:<ul><li><b>id</b> - (<i>string</i>) optional, the id of the filter</li><li><b>add</b> - (<i>boolean</i>) defines whether each next filtering will be applied to the already filtered data (<i>true</i>), or to the initial data (<i>false</i>, default)</li><li><b>permanent</b> - (<i>boolean</i>) optional, <i>true</i> to make the current filter permanent. It will be applied even if the next filtering doesn't have the <b>add:true</b> property in its configuration object. Such a filter can be removed just with the resetFilter() method</li></ul></td>
         </tr>
     </tbody>
 </table>
@@ -314,7 +314,7 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
     <tbody>
         <tr>
             <td><b>rule</b></td>
-            <td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:<ul><li><b>by</b> (<i>string | number</i>) the id of a column</li><li><b>dir</b> (<i>string</i>) the direction of sorting "asc" or "desc"</li><li><b>as</b> (<i>function</i>) a function that specifies the type to sort data as</li><li><b>rule</b> (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li></ul></td>
+            <td>(<i>object</i>) an object with parameters for sorting. It can take the following attributes:<ul><li><b>by</b> - (<i>string | number</i>) the id of a column</li><li><b>dir</b> - (<i>string</i>) the direction of sorting "asc" or "desc"</li><li><b>as</b> - (<i>function</i>) a function that specifies the type to sort data as</li><li><b>rule</b> - (<i>function</i>) optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)</li></ul></td>
         </tr>
         <tr>
             <td><b>config</b></td>
@@ -324,26 +324,72 @@ It is possible to sort data in the grid via the `sort()` method of [DataCollecti
 </table>
 <br/>
 
-~~~js
-grid.data.sort({
-    by:"a",
-    dir:"desc",
-    as: function(item){
-        return item.toUpperCase(); 
-    },
+~~~jsx
+grid.data.sort(
     {
-        smartSorting: true
-    }
-});
+        by:"a",
+        dir:"desc",
+        as: item => (item.toUpperCase())
+    },
+    { smartSorting: true }
+);
 ~~~
 
 **Related sample**: [Grid. Sorting](https://snippet.dhtmlx.com/81dmbdfd)
 
+#### Sorting by multiple columns
+
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+You can sort Grid by multiple columns simultaneously. 
+
+![](../assets/grid/multisorting_data.png)
+
+**Related sample**: [Grid. Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
+
+Multi-sorting is enabled on initialization of the component. In the example below Grid data is sorted with the help of the `sort()` method of [DataCollection](data_collection.md) by several columns:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    editable: true,
+    group: {
+        order: ["animal_type"] // group by the `animal_type` field
+    },
+    groupable: true, // enables grouping functionality, false by default
+    data: dataset
+});
+
+grid.data.sort({ by: "volunteer_name", dir: "desc" }, { smartSorting: true });
+grid.data.sort({ by: "task_status", dir: "asc" });
+grid.data.sort({ by: "animal_type", dir: "asc" });
+~~~
+
+![](../assets/grid/multisort_grouped_data.png)
+
+**Related sample**: [Grid. Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
+
+If you need to disable the multi-sorting ability, set the [`multiSort`](grid/api/grid_multisort_config.md) Grid property to *false*.
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    multiSort: false,
+    data: dataset
+});
+~~~
+
 #### Custom sorting
 
-You can also specify the **rule** attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
+You can also specify the `rule` attribute in a passed object instead of the default ones and set a custom function for sorting. For example:
 
-~~~js
+~~~jsx
 grid.data.sort({
     rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
 });
@@ -351,28 +397,38 @@ grid.data.sort({
 
 #### Getting the sorting state
 
-To get the current state of sorting data in Grid, use the [](grid/api/grid_getsortingstate_method.md) method. The method returns an object with two attributes:
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties:
 
 <table>
     <tbody>
         <tr>
-            <td><b>dir</b></td>
-            <td>(<i>string</i>) the sorting direction (desc, asc)</td>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a data field to sort by</td>
         </tr>
         <tr>
-            <td><b>by</b></td>
-            <td>(<i>string | number</i>) the id of a column that the grid is sorted by</td>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the direction of sorting: "asc" or "desc"</td>
+        </tr>
+        <tr>
+            <td><b>as</b></td>
+            <td>(<i>function</i>) a custom function of converting values before comparing</td>
+        </tr>
+        <tr>
+            <td><b>rule</b></td>
+            <td>(<i>function</i>) a custom sorting function</td>
+        </tr>
+        <tr>
+            <td><b>smartSorting</b></td>
+            <td>(<i>boolean</i>) (if applied) specifies whether a sorting rule should be applied each time after changing the data set</td>
         </tr>
     </tbody>
 </table>
-<br/>
 
-~~~js
-const state = grid.getSortingState(); 
-// -> { dir: "desc", by: "country" }
+~~~jsx
+const state = grid.data.getSortingStates(); 
+// -> [{by: "country", dir: "desc"}, {by: "population", dir: "desc"}]
 ~~~
 
-**Related sample**: [Grid. Get sorting state](https://snippet.dhtmlx.com/u2vk3ri3)
 
 ### Editing data
 
@@ -481,7 +537,7 @@ You can group row data by column values to make them more suitable for analysis.
 
 It is possible to [set a predefined Grid configuration](#configuring-data-grouping) to initialize Grid with grouped data or to use the [DataCollection API](#using-datacollection-api-for-data-grouping) for grouping Grid data. 
 
-**Related sample:** [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
+**Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
 
 :::info important
 - Data grouping isn't intended for working with [`lazyDataProxy`](grid/data_loading.md#dynamic-loading)
@@ -677,7 +733,7 @@ a) the grouped values of the "population" column and the number of elements that
 
 b) the total rows under the grouped values set by the `summary` property
 
-**Related sample:** [Grid. Grouping and totals in the summary row (PRO)](https://snippet.dhtmlx.com/zhc67itn)
+**Related sample:** [Grid. Grouping and totals in the summary row](https://snippet.dhtmlx.com/zhc67itn)
 
 - `order` - (optional) defines the order of grouping by setting the sequence of columns for grouping. The elements of the `order` array can be: 
     - a string that represents a grouping field
@@ -912,7 +968,7 @@ const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 150, id: "country", header: [{ text: "Country" }] },
         { width: 150, id: "population", header: [{ text: "Population" }] },
-        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
         { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
     ],
     group: true,
@@ -943,7 +999,7 @@ const grid = new dhx.Grid("grid_container", {
             header: [{ text: "Population" }],
             groupable: true,
         },
-        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
+        { width: 150, id: "density", header: [{ text: "Density (P/Km²)" }] },
         { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
     ],
     group: {

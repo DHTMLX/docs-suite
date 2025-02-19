@@ -8,6 +8,10 @@ description: You can explore the hide method of the Fieldset control of Form in 
 
 @short: hides a Fieldset control
 
+:::info
+Note that the method calls the `hide()` methods of the nested controls.
+:::
+
 @signature: {'hide(): void;'}
 
 @example:

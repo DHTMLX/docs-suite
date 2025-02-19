@@ -6,18 +6,22 @@ description: You can explore the expand method of Grid in the documentation of t
 
 # expand()
 
-@short: expands a tree node by id
+@short: expands a row that contains child rows
 
 :::note
-The method works only for Grid with the `type: "tree"` configuration option
+The method works:
+- for Grid in the default mode with the `subRow` configuration option
+- for Grid in the TreeGrid mode (with the `type: "tree"` configuration option)
 :::
 
 @signature: {'expand(id: string | number): void;'}
 
 @params:
-- `id: string | number` - the id of a node to expand
+- `id: string | number` - the id of a row to expand
 
-@example:
+### Example
+
+~~~jsx {2,9}
 const grid = new dhx.Grid("grid_container", {
     type: "tree",
     columns: [
@@ -27,5 +31,6 @@ const grid = new dhx.Grid("grid_container", {
 });
 
 grid.expand("native");
+~~~
 
 @descr:
