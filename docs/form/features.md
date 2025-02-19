@@ -50,7 +50,7 @@ In this section you can find out how to initialize and localize Form, how to add
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
 | [Optimus](optimus_guides.md)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
-| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Form with React ([Demo](https://github.com/DHTMLX/react-widgets))                                                    |
+| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Form with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                    |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Form with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Form with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
@@ -103,6 +103,7 @@ In this section you will study how to send a Form to the server, how to disable 
 | [Is disabled](../work_with_form/#checking-if-a-form-is-disabled)                  | Learn how to check whether a Form or its control is disabled ([Example](https://snippet.dhtmlx.com/lthu8p6p)) |
 | [Hiding / showing Form](../work_with_form/#hidingshowing-a-form)                  | Learn how to hide/show a Form                                                                                 |
 | [Checking visibility of a Form](../work_with_form/#checking-if-a-form-is-visible) | Learn how to check whether a Form or its control is visible                                                   |
+| [Using input masks](../work_with_form/#using-input-masks) | Learn how to use pattern and input masks to provide entering of values in a predefined way ([Example 1](https://snippet.dhtmlx.com/51wnauq3), [Example 2](https://snippet.dhtmlx.com/gu1ekt1z)) |                                
 | [Clearing Form](../work_with_form/#clearing-form)                                 | Learn how to clear the values and (or) validation of Form ([Example](https://snippet.dhtmlx.com/a64ih4ih))    |
 
 
@@ -180,7 +181,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=form">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/ikyyekxq?tag=form">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 

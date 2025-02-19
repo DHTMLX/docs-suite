@@ -6,7 +6,7 @@ description: You can have an overview of the Selection object in the documentati
 
 # Selection overview
 
-A set of APIs that allow you to work with the Selection object. You can use the API of the Selection object when working with the following components: DataView, List, Tree, Grid, TreeGrid.
+A set of APIs that allow you to work with the Selection object. You can use the API of the Selection object when working with the following components: DataView, List, Tree, Grid, Grid in the TreeGrid mode.
 
 ## DataView, List, Tree
 
@@ -34,20 +34,20 @@ You can apply the following events of the Selection object when working with the
 | [](selection/api/selection_beforeselect_event.md)   | @getshort(selection/api/selection_beforeselect_event.md)   |
 | [](selection/api/selection_beforeunselect_event.md) | @getshort(selection/api/selection_beforeunselect_event.md) |
 
-## Grid, TreeGrid
+## Grid, Grid in the TreeGrid mode
 
 ### Methods
 
-See the full lists of the methods of the Selection object you can use to manage the selection of cells in **Grid**, **TreeGrid**:
+See the full lists of the methods of the Selection object you can use to manage the selection of cells in **Grid**, **Grid in the TreeGrid mode**:
 
 - [Grid. Selection methods](grid/api/api_overview.md#selection-methods)
 
-- [TreeGrid. Selection methods](treegrid/api/api_overview.md#selection-methods) 
+- [Grid in the TreeGrid mode. Selection methods](grid/api/api_overview.md#selection-methods) 
 
 ### Events
 
-See the full lists of the events of the Selection object you can use while working with the selection of cells in **Grid**, **TreeGrid**:
+See the full lists of the events of the Selection object you can use while working with the selection of cells in **Grid**, **Grid in the TreeGrid mode**:
 
 - [Grid. Selection events](grid/api/api_overview.md#selection-events)
 
-- [TreeGrid. Selection events](treegrid/api/api_overview.md#selection-events) 
+- [Grid in the TreeGrid mode. Selection events](grid/api/api_overview.md#selection-events) 

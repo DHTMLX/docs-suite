@@ -1,11 +1,11 @@
 ---
-sidebar_label: Suite 8 overview
-title: DHTMLX Suite 8 JavaScript UI Widgets Overview 
+sidebar_label: Suite 9 overview
+title: DHTMLX Suite 9 JavaScript UI Widgets Overview 
 slug: /
-description: You can have an overview of Suite 8 and its widgets in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 8.
+description: You can have an overview of Suite 9 and its widgets in the documentation of the DHTMLX JavaScript UI library. Browse developer guides and API reference, try out code examples and live demos, and download a free 30-day evaluation version of DHTMLX Suite 9.
 ---
 
-# DHTMLX Suite 8 UI widgets overview
+# DHTMLX Suite 9 UI widgets overview
 
 import WidgetIcons from '../src/components/WidgetIcons';
 

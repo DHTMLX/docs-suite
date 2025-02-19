@@ -14,15 +14,19 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_addrowcss_method.md)         | @getshort(grid/api/grid_addrowcss_method.md)         |
 | [](grid/api/grid_addspan_method.md)           | @getshort(grid/api/grid_addspan_method.md)           |
 | [](grid/api/grid_adjustcolumnwidth_method.md) | @getshort(grid/api/grid_adjustcolumnwidth_method.md) |
+| [](grid/api/grid_collapse_method.md) 			| @getshort(grid/api/grid_collapse_method.md) 		   |
+| [](grid/api/grid_collapseall_method.md) 		| @getshort(grid/api/grid_collapseall_method.md) 	   |
 | [](grid/api/grid_destructor_method.md)        | @getshort(grid/api/grid_destructor_method.md)        |
 | [](grid/api/grid_editcell_method.md)          | @getshort(grid/api/grid_editcell_method.md)          |
 | [](grid/api/grid_editend_method.md)           | @getshort(grid/api/grid_editend_method.md)           |
+| [](grid/api/grid_expand_method.md) 			| @getshort(grid/api/grid_expand_method.md) 		   |
+| [](grid/api/grid_expandall_method.md) 		| @getshort(grid/api/grid_expandall_method.md) 		   |
 | [](grid/api/grid_getcellrect_method.md)       | @getshort(grid/api/grid_getcellrect_method.md)       |
 | [](grid/api/grid_getcolumn_method.md)         | @getshort(grid/api/grid_getcolumn_method.md)         |
 | [](grid/api/grid_getheaderfilter_method.md)   | @getshort(grid/api/grid_getheaderfilter_method.md)   |
 | [](grid/api/grid_getscrollstate_method.md)    | @getshort(grid/api/grid_getscrollstate_method.md)    |
-| [](grid/api/grid_getsortingstate_method.md)   | @getshort(grid/api/grid_getsortingstate_method.md)   |
 | [](grid/api/grid_getspan_method.md)           | @getshort(grid/api/grid_getspan_method.md)           |
+| [](grid/api/grid_getsummary_method.md)        | @getshort(grid/api/grid_getsummary_method.md)        |
 | [](grid/api/grid_hidecolumn_method.md)        | @getshort(grid/api/grid_hidecolumn_method.md)        |
 | [](grid/api/grid_hiderow_method.md)           | @getshort(grid/api/grid_hiderow_method.md)           |
 | [](grid/api/grid_iscolumnhidden_method.md)    | @getshort(grid/api/grid_iscolumnhidden_method.md)    |
@@ -40,6 +44,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 :::info important
 - Use [the methods of DataCollection](data_collection.md) to work with data. 
 - Apply [the methods of Selection](grid/api/api_overview.md#selection-methods) to manage the selection of Grid cells. 
+- Use [the methods of TreeCollection](tree_collection.md#methods) to work with data of Grid in the TreeGrid mode. 
 :::
 
 ## Grid events
@@ -48,30 +53,36 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 
 | Name                                       | Description                                       |
 | ------------------------------------------ | ------------------------------------------------- |
+| [](grid/api/grid_aftercollapse_event.md)   | @getshort(grid/api/grid_aftercollapse_event.md)   |
 | [](grid/api/grid_aftereditend_event.md)    | @getshort(grid/api/grid_aftereditend_event.md)    |
 | [](grid/api/grid_aftereditstart_event.md)  | @getshort(grid/api/grid_aftereditstart_event.md)  |
+| [](grid/api/grid_afterexpand_event.md)     | @getshort(grid/api/grid_afterexpand_event.md)   	 |
+| [](grid/api/grid_beforecollapse_event.md)  | @getshort(grid/api/grid_beforecollapse_event.md)  |
 | [](grid/api/grid_beforeeditend_event.md)   | @getshort(grid/api/grid_beforeeditend_event.md)   |
 | [](grid/api/grid_beforeeditstart_event.md) | @getshort(grid/api/grid_beforeeditstart_event.md) |
+| [](grid/api/grid_beforeexpand_event.md)    | @getshort(grid/api/grid_beforeexpand_event.md)    |
 
 ### Mouse
 
-| Name                                            | Description                                            |
-| ----------------------------------------------- | ------------------------------------------------------ |
-| [](grid/api/grid_cellclick_event.md)            | @getshort(grid/api/grid_cellclick_event.md)            |
-| [](grid/api/grid_celldblclick_event.md)         | @getshort(grid/api/grid_celldblclick_event.md)         |
-| [](grid/api/grid_cellmousedown_event.md)        | @getshort(grid/api/grid_cellmousedown_event.md)        |
-| [](grid/api/grid_cellmouseover_event.md)        | @getshort(grid/api/grid_cellmouseover_event.md)        |
-| [](grid/api/grid_cellrightclick_event.md)       | @getshort(grid/api/grid_cellrightclick_event.md)       |
-| [](grid/api/grid_footercellclick_event.md)      | @getshort(grid/api/grid_footercellclick_event.md)      |
-| [](grid/api/grid_footercelldblclick_event.md)   | @getshort(grid/api/grid_footercelldblclick_event.md)   |
-| [](grid/api/grid_footercellmousedown_event.md)  | @getshort(grid/api/grid_footercellmousedown_event.md)  |
-| [](grid/api/grid_footercellmouseover_event.md)  | @getshort(grid/api/grid_footercellmouseover_event.md)  |
-| [](grid/api/grid_footercellrightclick_event.md) | @getshort(grid/api/grid_footercellrightclick_event.md) |
-| [](grid/api/grid_headercellclick_event.md)      | @getshort(grid/api/grid_headercellclick_event.md)      |
-| [](grid/api/grid_headercelldblclick_event.md)   | @getshort(grid/api/grid_headercelldblclick_event.md)   |
-| [](grid/api/grid_headercellmousedown_event.md)  | @getshort(grid/api/grid_headercellmousedown_event.md)  |
-| [](grid/api/grid_headercellmouseover_event.md)  | @getshort(grid/api/grid_headercellmouseover_event.md)  |
-| [](grid/api/grid_headercellrightclick_event.md) | @getshort(grid/api/grid_headercellrightclick_event.md) |
+| Name                                            	| Description                                            	|
+| ------------------------------------------------- | --------------------------------------------------------- |
+| [](grid/api/grid_cellclick_event.md)            	| @getshort(grid/api/grid_cellclick_event.md)            	|
+| [](grid/api/grid_celldblclick_event.md)         	| @getshort(grid/api/grid_celldblclick_event.md)         	|
+| [](grid/api/grid_cellmousedown_event.md)        	| @getshort(grid/api/grid_cellmousedown_event.md)        	|
+| [](grid/api/grid_cellmouseover_event.md)        	| @getshort(grid/api/grid_cellmouseover_event.md)        	|
+| [](grid/api/grid_cellrightclick_event.md)       	| @getshort(grid/api/grid_cellrightclick_event.md)       	|
+| [](grid/api/grid_footercellclick_event.md)      	| @getshort(grid/api/grid_footercellclick_event.md)      	|
+| [](grid/api/grid_footercelldblclick_event.md)   	| @getshort(grid/api/grid_footercelldblclick_event.md)   	|
+| [](grid/api/grid_footercellmousedown_event.md)  	| @getshort(grid/api/grid_footercellmousedown_event.md)  	|
+| [](grid/api/grid_footercellmouseover_event.md)  	| @getshort(grid/api/grid_footercellmouseover_event.md)  	|
+| [](grid/api/grid_footercellrightclick_event.md) 	| @getshort(grid/api/grid_footercellrightclick_event.md) 	|
+| [](grid/api/grid_grouppanelitemclick_event.md)  	| @getshort(grid/api/grid_grouppanelitemclick_event.md)  	|
+| [](grid/api/grid_grouppanelitemmousedown_event.md)| @getshort(grid/api/grid_grouppanelitemmousedown_event.md) |
+| [](grid/api/grid_headercellclick_event.md)      	| @getshort(grid/api/grid_headercellclick_event.md)      	|
+| [](grid/api/grid_headercelldblclick_event.md)   	| @getshort(grid/api/grid_headercelldblclick_event.md)   	|
+| [](grid/api/grid_headercellmousedown_event.md)  	| @getshort(grid/api/grid_headercellmousedown_event.md)  	|
+| [](grid/api/grid_headercellmouseover_event.md)  	| @getshort(grid/api/grid_headercellmouseover_event.md)  	|
+| [](grid/api/grid_headercellrightclick_event.md) 	| @getshort(grid/api/grid_headercellrightclick_event.md) 	|
 
 ### Key Navigation and Scroll
 
@@ -154,6 +165,7 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 :::info important
 - Use [the events of DataCollection](data_collection.md#events) to work with data of Grid. 
 - Apply [the events of Selection](grid/api/api_overview.md#selection-events) to handle the selection of Grid cells. 
+- Use [the events of TreeCollection](tree_collection.md#events) to work with data of Grid in the TreeGrid mode. 
 :::
 
 ## Grid properties
@@ -165,10 +177,13 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_autoheight_config.md)      | @getshort(grid/api/grid_autoheight_config.md)      |
 | [](grid/api/grid_autowidth_config.md)       | @getshort(grid/api/grid_autowidth_config.md)       |
 | [](grid/api/grid_bottomsplit_config.md)     | @getshort(grid/api/grid_bottomsplit_config.md)     |
+| [](grid/api/grid_closable_config.md)        | @getshort(grid/api/grid_closable_config.md)        |
+| [](grid/api/grid_collapsed_config.md)       | @getshort(grid/api/grid_collapsed_config.md)       |
 | [](grid/api/grid_columns_config.md)         | @getshort(grid/api/grid_columns_config.md)         |
 | [](grid/api/grid_css_config.md)             | @getshort(grid/api/grid_css_config.md)             |
 | [](grid/api/grid_data_config.md)            | @getshort(grid/api/grid_data_config.md)            |
 | [](grid/api/grid_dragcopy_config.md)        | @getshort(grid/api/grid_dragcopy_config.md)        |
+| [](grid/api/grid_dragexpand_config.md)      | @getshort(grid/api/grid_dragexpand_config.md)      |
 | [](grid/api/grid_dragitem_config.md)        | @getshort(grid/api/grid_dragitem_config.md)        |
 | [](grid/api/grid_dragmode_config.md)        | @getshort(grid/api/grid_dragmode_config.md)        |
 | [](grid/api/grid_editable_config.md)        | @getshort(grid/api/grid_editable_config.md)        |
@@ -177,6 +192,8 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_footerautoheight_config.md)| @getshort(grid/api/grid_footerautoheight_config.md)|
 | [](grid/api/grid_footerrowheight_config.md) | @getshort(grid/api/grid_footerrowheight_config.md) |
 | [](grid/api/grid_footertooltip_config.md)   | @getshort(grid/api/grid_footertooltip_config.md)   |
+| [](grid/api/grid_group_config.md)        	  | @getshort(grid/api/grid_group_config.md)           |
+| [](grid/api/grid_groupable_config.md)       | @getshort(grid/api/grid_groupable_config.md)       |
 | [](grid/api/grid_headerautoheight_config.md)| @getshort(grid/api/grid_headerautoheight_config.md)|
 | [](grid/api/grid_headerrowheight_config.md) | @getshort(grid/api/grid_headerrowheight_config.md) |
 | [](grid/api/grid_headertooltip_config.md)   | @getshort(grid/api/grid_headertooltip_config.md)   |
@@ -185,15 +202,21 @@ description: You can explore the API of Grid in the documentation of the DHTMLX 
 | [](grid/api/grid_keynavigation_config.md)   | @getshort(grid/api/grid_keynavigation_config.md)   |
 | [](grid/api/grid_leftsplit_config.md)       | @getshort(grid/api/grid_leftsplit_config.md)       |
 | [](grid/api/grid_multiselection_config.md)  | @getshort(grid/api/grid_multiselection_config.md)  |
+| [](grid/api/grid_multisort_config.md)  	  | @getshort(grid/api/grid_multisort_config.md)       |
 | [](grid/api/grid_resizable_config.md)       | @getshort(grid/api/grid_resizable_config.md)       |
 | [](grid/api/grid_rightsplit_config.md)      | @getshort(grid/api/grid_rightsplit_config.md)      |
+| [](grid/api/grid_rootparent_config.md)      | @getshort(grid/api/grid_rootparent_config.md)      |
 | [](grid/api/grid_rowcss_config.md)          | @getshort(grid/api/grid_rowcss_config.md)          |
 | [](grid/api/grid_rowheight_config.md)       | @getshort(grid/api/grid_rowheight_config.md)       |
 | [](grid/api/grid_selection_config.md)       | @getshort(grid/api/grid_selection_config.md)       |
 | [](grid/api/grid_sortable_config.md)        | @getshort(grid/api/grid_sortable_config.md)        |
 | [](grid/api/grid_spans_config.md)           | @getshort(grid/api/grid_spans_config.md)           |
+| [](grid/api/grid_subrow_config.md)          | @getshort(grid/api/grid_subrow_config.md)          |
+| [](grid/api/grid_subrowconfig_config.md)    | @getshort(grid/api/grid_subrowconfig_config.md)    |
+| [](grid/api/grid_summary_config.md)         | @getshort(grid/api/grid_summary_config.md)         |
 | [](grid/api/grid_tooltip_config.md)         | @getshort(grid/api/grid_tooltip_config.md)         |
 | [](grid/api/grid_topsplit_config.md)        | @getshort(grid/api/grid_topsplit_config.md)        |
+| [](grid/api/grid_type_config.md)            | @getshort(grid/api/grid_type_config.md)            |
 | [](grid/api/grid_width_config.md)           | @getshort(grid/api/grid_width_config.md)           |
 
 ## Column properties
@@ -230,3 +253,4 @@ You will find the list of all the available configuration properties of a Grid c
 | [](grid/api/export/grid_pdf_method.md)  | @getshort(grid/api/export/grid_pdf_method.md)  |
 | [](grid/api/export/grid_png_method.md)  | @getshort(grid/api/export/grid_png_method.md)  |
 | [](grid/api/export/grid_xlsx_method.md) | @getshort(grid/api/export/grid_xlsx_method.md) |
+

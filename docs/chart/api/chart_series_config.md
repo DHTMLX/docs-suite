@@ -89,7 +89,7 @@ series: [
         </tr>
         <tr>
             <td><b>value</b></td>
-            <td>(required) the name of a <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to </td>
+            <td>(required) the name of a <a href="../../data_loading/#preparing-data-set">data set</a> property to map data values to </td>
         </tr>
         <tr>
             <td><b>type</b></td>
@@ -264,15 +264,15 @@ series: [
         </tr>
         <tr>
             <td><b>text</b></td>
-            <td>(optional) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map labels of data values to </td>
+            <td>(optional) the name of the <a href="../../data_loading/#preparing-data-set">data set</a> property to map labels of data values to </td>
         </tr>
         <tr>
             <td><b>value</b></td>
-            <td>(required) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to</td>
+            <td>(required) the name of the <a href="../../data_loading/#preparing-data-set">data set</a> property to map data values to</td>
         </tr>
         <tr>
             <td><b>color</b></td>
-            <td>(optional) points to the property in a <a href="../../data_loading#preparing-data-set">data set</a> that defines the color of a pie/donut sector</td>
+            <td>(optional) points to the property in a <a href="../../data_loading/#preparing-data-set">data set</a> that defines the color of a pie/donut sector</td>
         </tr>
         <tr>
             <td><b>monochrome</b></td>
@@ -344,11 +344,11 @@ series: [
     <tbody>
         <tr>
             <td><b>text</b></td>
-            <td>(required) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map labels of data values to. The index of the option is 1 (item[1]). </td>
+            <td>(required) the name of the <a href="../../data_loading/#preparing-data-set">data set</a> property to map labels of data values to. The index of the option is 1 (item[1]). </td>
         </tr>
         <tr>
             <td><b>value</b></td>
-            <td>(required) the name of the <a href="../../data_loading#preparing-data-set">data set</a> property to map data values to. The index of the option is 0 (item[0]).</td>
+            <td>(required) the name of the <a href="../../data_loading/#preparing-data-set">data set</a> property to map data values to. The index of the option is 0 (item[0]).</td>
         </tr>
         <tr>
             <td><b>direction</b></td>
@@ -421,27 +421,27 @@ series: [
     <tbody>
         <tr>
             <td><b>date</b></td>
-            <td>(required) points to the name of the <a href="../../data_loading#preparing-data-set">data set</a> property which sets the dates for the chart. The index of the option is 0 (point[0])</td>
+            <td>(required) points to the name of the <a href="../../data_loading/#preparing-data-set">data set</a> property which sets the dates for the chart. The index of the option is 0 (point[0])</td>
         </tr>
         <tr>
             <td><b>value</b></td>
-            <td>(required) points to the name of the <a href="../../data_loading#preparing-data-set">data set</a> property which sets the number content for the chart. The index of the option is 1 (point[1])</td>
+            <td>(required) points to the name of the <a href="../../data_loading/#preparing-data-set">data set</a> property which sets the number content for the chart. The index of the option is 1 (point[1])</td>
         </tr>
         <tr>
             <td><b>color</b></td>
-            <td>(optional) sets the color of null values in the chart and legend. <br>By default, the color matches the value of the <b>--dhx-background-secondary</b> variable from the current <a href="../../../themes">color theme</a></td>
+            <td>(optional) sets the color of null values in the chart and legend. <br>By default, the color matches the value of the <b>--dhx-background-secondary</b> variable from the current <a href="../../../themes/">color theme</a></td>
         </tr>
         <tr>
             <td><b>negativeColor</b></td>
-            <td>(optional) sets the color of negative values in the chart and legend.<br>By default, the color matches the value of the <b>--dhx-color-primary</b> variable from the current <a href="../../../themes">color theme</a></td>
+            <td>(optional) sets the color of negative values in the chart and legend.<br>By default, the color matches the value of the <b>--dhx-color-primary</b> variable from the current <a href="../../../themes/">color theme</a></td>
         </tr>
         <tr>
             <td><b>positiveColor</b></td>
-            <td>(optional) sets the color of positive values in the chart and legend. <br>By default, the color matches the value of the <b>--dhx-color-success</b> variable from the current <a href="../../../themes">color theme</a></td>
+            <td>(optional) sets the color of positive values in the chart and legend. <br>By default, the color matches the value of the <b>--dhx-color-success</b> variable from the current <a href="../../../themes/">color theme</a></td>
         </tr>
         <tr>
             <td><b>dateFormat</b></td>
-            <td>(optional) defines the <a href="../../../calendar/api/calendar_dateformat_config">format of dates</a> in the tooltips ("%d/%m/%y" by default). In this format, you can specify dates in the data set </td>
+            <td>(optional) defines the <a href="../../../calendar_dateformat_config/">format of dates</a> in the tooltips ("%d/%m/%y" by default). In this format, you can specify dates in the data set </td>
         </tr>
         <tr>
             <td><b>days</b></td>

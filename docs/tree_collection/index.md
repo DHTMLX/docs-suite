@@ -6,43 +6,44 @@ description: You can have an overview of TreeCollection in the documentation of 
 
 # TreeCollection overview
 
-A set of API methods and events that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, TreeGrid.
+A set of API methods and events that allow you to work with data of a component with tree-like structure. Applicable to Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode.
 
 ## Methods
 
-| Name                                          | Description                                          |
-| --------------------------------------------- | ---------------------------------------------------- |
-| [](api/treecollection_add_method.md)          | @getshort(api/treecollection_add_method.md)          |
-| [](api/treecollection_cancopy_method.md)      | @getshort(api/treecollection_cancopy_method.md)      |
-| [](api/treecollection_copy_method.md)         | @getshort(api/treecollection_copy_method.md)         |
-| [](api/treecollection_eachchild_method.md)    | @getshort(api/treecollection_eachchild_method.md)    |
-| [](api/treecollection_eachparent_method.md)   | @getshort(api/treecollection_eachparent_method.md)   |
-| [](api/treecollection_exists_method.md)       | @getshort(api/treecollection_exists_method.md)       |
-| [](api/treecollection_filter_method.md)       | @getshort(api/treecollection_filter_method.md)       |
-| [](api/treecollection_foreach_method.md)      | @getshort(api/treecollection_foreach_method.md)      |
-| [](api/treecollection_getfilters_method.md)   | @getshort(api/treecollection_getfilters_method.md)   |
-| [](api/treecollection_getid_method.md)        | @getshort(api/treecollection_getid_method.md)        |
-| [](api/treecollection_getindex_method.md)     | @getshort(api/treecollection_getindex_method.md)     |
-| [](api/treecollection_getitem_method.md)      | @getshort(api/treecollection_getitem_method.md)      |
-| [](api/treecollection_getitems_method.md)     | @getshort(api/treecollection_getitems_method.md)     |
-| [](api/treecollection_getlength_method.md)    | @getshort(api/treecollection_getlength_method.md)    |
-| [](api/treecollection_getparent_method.md)    | @getshort(api/treecollection_getparent_method.md)    |
-| [](api/treecollection_getroot_method.md)      | @getshort(api/treecollection_getroot_method.md)      |
-| [](api/treecollection_haveitems_method.md)    | @getshort(api/treecollection_haveitems_method.md)    |
-| [](api/treecollection_issaved_method.md)      | @getshort(api/treecollection_issaved_method.md)      |
-| [](api/treecollection_load_method.md)         | @getshort(api/treecollection_load_method.md)         |
-| [](api/treecollection_loaditems_method.md)    | @getshort(api/treecollection_loaditems_method.md)    |
-| [](api/treecollection_move_method.md)         | @getshort(api/treecollection_move_method.md)         |
-| [](api/treecollection_parse_method.md)        | @getshort(api/treecollection_parse_method.md)        |
-| [](api/treecollection_refreshitems_method.md) | @getshort(api/treecollection_refreshitems_method.md) |
-| [](api/treecollection_remove_method.md)       | @getshort(api/treecollection_remove_method.md)       |
-| [](api/treecollection_removeall_method.md)    | @getshort(api/treecollection_removeall_method.md)    |
-| [](api/treecollection_resetfilter_method.md)  | @getshort(api/treecollection_resetfilter_method.md)  |
-| [](api/treecollection_restoreorder_method.md) | @getshort(api/treecollection_restoreorder_method.md) |
-| [](api/treecollection_save_method.md)         | @getshort(api/treecollection_save_method.md)         |
-| [](api/treecollection_serialize_method.md)    | @getshort(api/treecollection_serialize_method.md)    |
-| [](api/treecollection_sort_method.md)         | @getshort(api/treecollection_sort_method.md)         |
-| [](api/treecollection_update_method.md)       | @getshort(api/treecollection_update_method.md)       |
+| Name                                              | Description                                               |
+| ------------------------------------------------- | --------------------------------------------------------- |
+| [](api/treecollection_add_method.md)              | @getshort(api/treecollection_add_method.md)               |
+| [](api/treecollection_cancopy_method.md)          | @getshort(api/treecollection_cancopy_method.md)           |
+| [](api/treecollection_copy_method.md)             | @getshort(api/treecollection_copy_method.md)              |
+| [](api/treecollection_eachchild_method.md)        | @getshort(api/treecollection_eachchild_method.md)         |
+| [](api/treecollection_eachparent_method.md)       | @getshort(api/treecollection_eachparent_method.md)        |
+| [](api/treecollection_exists_method.md)           | @getshort(api/treecollection_exists_method.md)            |
+| [](api/treecollection_filter_method.md)           | @getshort(api/treecollection_filter_method.md)            |
+| [](api/treecollection_foreach_method.md)          | @getshort(api/treecollection_foreach_method.md)           |
+| [](api/treecollection_getfilters_method.md)       | @getshort(api/treecollection_getfilters_method.md)        |
+| [](api/treecollection_getid_method.md)            | @getshort(api/treecollection_getid_method.md)             |
+| [](api/treecollection_getindex_method.md)         | @getshort(api/treecollection_getindex_method.md)          |
+| [](api/treecollection_getitem_method.md)          | @getshort(api/treecollection_getitem_method.md)           |
+| [](api/treecollection_getitems_method.md)         | @getshort(api/treecollection_getitems_method.md)          |
+| [](api/treecollection_getlength_method.md)        | @getshort(api/treecollection_getlength_method.md)         |
+| [](api/treecollection_getparent_method.md)        | @getshort(api/treecollection_getparent_method.md)         |
+| [](api/treecollection_getroot_method.md)          | @getshort(api/treecollection_getroot_method.md)           |
+| [](api/treecollection_getsortingstates_method.md) | @getshort(api/treecollection_getsortingstates_method.md)  |
+| [](api/treecollection_haveitems_method.md)        | @getshort(api/treecollection_haveitems_method.md)         |    
+| [](api/treecollection_issaved_method.md)          | @getshort(api/treecollection_issaved_method.md)           |
+| [](api/treecollection_load_method.md)             | @getshort(api/treecollection_load_method.md)              |
+| [](api/treecollection_loaditems_method.md)        | @getshort(api/treecollection_loaditems_method.md)         |
+| [](api/treecollection_move_method.md)             | @getshort(api/treecollection_move_method.md)              |
+| [](api/treecollection_parse_method.md)            | @getshort(api/treecollection_parse_method.md)             |
+| [](api/treecollection_refreshitems_method.md)     | @getshort(api/treecollection_refreshitems_method.md)      |
+| [](api/treecollection_remove_method.md)           | @getshort(api/treecollection_remove_method.md)            |
+| [](api/treecollection_removeall_method.md)        | @getshort(api/treecollection_removeall_method.md)         |
+| [](api/treecollection_resetfilter_method.md)      | @getshort(api/treecollection_resetfilter_method.md)       |
+| [](api/treecollection_restoreorder_method.md)     | @getshort(api/treecollection_restoreorder_method.md)      |
+| [](api/treecollection_save_method.md)             | @getshort(api/treecollection_save_method.md)              |
+| [](api/treecollection_serialize_method.md)        | @getshort(api/treecollection_serialize_method.md)         |
+| [](api/treecollection_sort_method.md)             | @getshort(api/treecollection_sort_method.md)              |
+| [](api/treecollection_update_method.md)           | @getshort(api/treecollection_update_method.md)            |
 
 ## Events
 
@@ -64,9 +65,9 @@ A set of API methods and events that allow you to work with data of a component 
 
 To call the event of TreeCollection, you may use either of the two syntaxes:
 
-- common syntax (via the **data** object of the component)
+- common syntax (via the `data` object of the component)
 
-~~~js
+~~~jsx
 menu.data.events.on("afterAdd", function(newItem){
     console.log("A new item is added");
 });
@@ -74,7 +75,7 @@ menu.data.events.on("afterAdd", function(newItem){
 
 - or short syntax (right through the component)
 
-~~~js
+~~~jsx
 menu.events.on("afterAdd", function(newItem){
     console.log("A new item is added");
 });

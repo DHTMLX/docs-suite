@@ -145,22 +145,29 @@ You can easily set some styling to the text of footer cells by applying some inl
 
 <script>
     const grid = new dhx.Grid("grid_container", {
-        columns: [
-              {
-                width: 100, id: "a", header: [{ text: "#" }], footer: [
-                    { text: '<div class="custom_footer">Total</div>', colspan: 3 },
-                    { text: '<div class="custom_footer">Minimal value</div>', colspan: 3 }
-                ]
-              },
-              { width: 100, id: "b", header: [{ text: "Title" }] },
-              { width: 200, id: "c", header: [{ text: "Order" }] },
-              { width: 200, id: "d", header: [{ text: "Price" }], footer: [
-                      { content: "sum" }, { content: "min" }        
-                  ] 
-              }
-        ],
-        data: dataset
-    });
+    columns: [
+        {
+            width: 200, id: "country", header: [{ text: "Country" }],
+            footer: [
+                { text: '<div class="custom_footer">Total</div>' },
+                { text: '<div class="custom_footer">Minimal value</div>' },
+            ],
+            htmlEnable: true
+        },
+        {
+            width: 150, id: "population", header: [{ text: "Population" }],
+            footer: [
+                { text: ({ totalPopulation}) => `${totalPopulation}`},
+                { text: ({ minimalValue }) => `${minimalValue}`}
+            ],
+        },
+    ],
+    summary: { 
+        totalPopulation: ["population", "sum"],
+        minimalValue: ["population", "min"]
+    },
+    data: dataset
+});
 </script>
 ~~~
 

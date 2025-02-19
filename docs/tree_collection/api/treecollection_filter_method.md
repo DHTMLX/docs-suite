@@ -14,12 +14,12 @@ description: You can explore the filter method of TreeCollection in the document
 - `rule: function | object` - the filtering criteria
     - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
-        - `by: string | number` - required, the id of a column
+        - `by: string | number` - required, the id of a data field
         - `match: string` - required, a pattern to match
         - `compare: function` - optional, a function for extended filtering that takes three parameters:
-            - `value` - the value to compare (e.g. a column in a row for Grid)
+            - `value` - the value to compare 
             - `match` - a pattern to match
-            - `item` - a data item the values of which should be compared (e.g. a row)
+            - `item` - a data item the values of which should be compared 
 - `config: object` - optional, defines the parameters of filtering. The parameter may contain the following properties:
     - `type: string` - optional, defines the area the filtering will be applied: "all", "level", "leafs"
     - `level: number` - optional, the level the filtering will be applied to
@@ -30,18 +30,39 @@ description: You can explore the filter method of TreeCollection in the document
 @returns:
 - `id: string` - the id of the filter
 
-@example:
-// filtering data by a function
-tree.data.filter(function (item) {
-    return item.value.toLowerCase().indexOf("a") !== -1;
+#### Example:
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset,
 });
 
-// filtering data by the column
-treeGrid.data.filter({
+// filtering data by a function
+grid.data.filter(function (item) {
+    return item.value.toLowerCase().indexOf("a") !== -1;
+});
+~~~
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+});
+
+// filtering data by the column 
+grid.data.filter({
     by: "name",
     match: "Angola"
 });
+~~~
 
 @descr:
 
-**Related sample**: [TreeGrid. Filter](https://snippet.dhtmlx.com/epsslwcd)
+**Related sample**: [Grid (TreeGrid). Filter](https://snippet.dhtmlx.com/epsslwcd)

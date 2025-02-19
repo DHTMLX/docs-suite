@@ -377,24 +377,6 @@ const WidgetIcons = ({ children }) => {
             </div>
 
             <div className={cssstyles.suite_component_small}>
-                <a href="treegrid/" title="" className={cssstyles.suite_component__item}>
-                    <span className={cssstyles.suite_component__box}>
-                        <span className={cssstyles.suite_component__content}>
-                            <span className={cssstyles.suite_component__icon}>
-                                <svg viewBox="0 0 46 46" className={cssstyles.suite_component__icon_svg}>
-                                    <use xmlnsXlinkk="http://www.w3.org/1999/xlink" xlinkHref="#treegrid" className={cssstyles.suite_component__icon_use}>
-                                        <svg viewBox="0 0 46 46" id="treegrid">
-                                            <path d="M40,44H22a4,4,0,0,1-4-4V26H6V10H4A2,2,0,0,1,2,8V4A2,2,0,0,1,4,2h6a2,2,0,0,1,2,2V8a2,2,0,0,1-2,2H8v1H18V10a2,2,0,0,1,2-2h6a2,2,0,0,1,2,2v4a2,2,0,0,1-2,2H20a2,2,0,0,1-2-2V13H8V24H18V22a4,4,0,0,1,4-4H40a4,4,0,0,1,4,4V40A4,4,0,0,1,40,44ZM10,8V4H4V8h6Zm10,6h6V10H20v4ZM32,42h4V38H32v4Zm0-6h4V32H32v4Zm0-6h4V26H32v4ZM26,42h4V38H26v4Zm0-6h4V32H26v4Zm0-6h4V26H26v4ZM20,40a2,2,0,0,0,2,2h2V38H20v2Zm0-4h4V32H20v4Zm0-6h4V26H20v4Zm22-8a2,2,0,0,0-2-2H22a2,2,0,0,0-2,2v2H42V22Zm0,4H38v4h4V26Zm0,6H38v4h4V32Zm0,6H38v4h2a2,2,0,0,0,2-2V38Z"></path>                                        </svg>
-                                    </use>
-                                </svg>
-                            </span>
-                            <span className={cssstyles.suite_components__name}>TreeGrid</span>
-                        </span>
-                    </span>
-                </a>
-            </div>
-
-            <div className={cssstyles.suite_component_small}>
                 <a href="window/" title="" className={cssstyles.suite_component__item}>
                     <span className={cssstyles.suite_component__box}>
                         <span className={cssstyles.suite_component__content}>

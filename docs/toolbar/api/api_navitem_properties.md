@@ -58,7 +58,7 @@ const data = [
         </tr>
         <tr>
             <td><b>items</b></td>
-            <td>(optional) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
+            <td>(optional) an array of nested controls. You can find the full list of all available controls <a href="../../../menu/configuring_menu_items/">here</a>. If the type of a nested control is not specified, the <i>menuItem</i> type will be applied by default.</td>
         </tr>
         <tr>
             <td><b>active</b></td>
@@ -86,7 +86,7 @@ const data = [
         </tr>
         <tr>
             <td><b>icon</b></td>
-            <td>(optional) an <a href="../../customization">icon</a> of the navItem</td>
+            <td>(optional) an <a href="../../customization/">icon</a> of the navItem</td>
         </tr>
         <tr>
             <td><b>multiClick</b></td>

@@ -125,8 +125,8 @@ const onAfterDataTransformation = (data) => {
 };
 
 module.exports = {
-    title: 'DHTMLX Suite 8 Docs',
-    tagline: 'DHTMLX Suite 8 Docs',
+    title: 'DHTMLX Suite 9 Docs',
+    tagline: 'DHTMLX Suite 9 Docs',
     url: 'https://docs.dhtmlx.com',
     baseUrl: '/suite/',
     onBrokenLinks: 'warn',
@@ -165,7 +165,7 @@ module.exports = {
             },
             items: [{
                     label: 'Examples',
-                    href: 'https://snippet.dhtmlx.com',
+                    href: 'https://snippet.dhtmlx.com/cwiuna9l?tag=suite',
                     position: 'right'
                 },
                 {
@@ -197,7 +197,7 @@ module.exports = {
                         },
                         {
                             label: 'Examples',
-                            href: 'https://snippet.dhtmlx.com',
+                            href: 'https://snippet.dhtmlx.com/cwiuna9l?tag=suite',
                             position: 'right'
                         },
                         {

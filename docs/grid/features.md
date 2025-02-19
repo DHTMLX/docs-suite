@@ -17,6 +17,7 @@ In this section you can find out how to initialize Grid, how to load data into t
 | Topic                                                                   | Description                                                            |
 | ----------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | [Basic initialization](../initialization/)                              | Learn how to initialize Grid                                           |
+| [Initialization in the TreeGrid mode](../treegrid_mode/)                | Learn how to initialize Grid in the TreeGrid mode                      |
 | [Pagination with Grid](https://snippet.dhtmlx.com/0sku3cfa)             | The example shows how to initialize Grid inside Pagination             |
 | [Large dataset](https://snippet.dhtmlx.com/w3p07d6s)                    | The example shows how Grid works with over 11000 rows loaded           |
 | [Several grids with large dataset](https://snippet.dhtmlx.com/l9tm2kmp) | The example shows how to initialize several grids inside one container |
@@ -38,7 +39,7 @@ In this section you can find out how to initialize Grid, how to load data into t
 | ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
 | [Optimus](optimus_guides.md)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
-| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Grid with React ([Demo](https://github.com/DHTMLX/react-widgets))                                                    |
+| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Grid with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                    |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Grid with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                             |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Grid with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                                  |
 
@@ -47,7 +48,7 @@ In this section you can find out how to initialize Grid, how to load data into t
 
 ### How to configure columns
 
-In this section you will know how to configure Grid columns on Grid initialization.
+In this section you will get to know how to configure Grid columns on Grid initialization.
 
 | Topic                                                        | Description                                                                                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
@@ -60,7 +61,7 @@ In this section you will know how to configure Grid columns on Grid initializati
 
 ### How to configure rows
 
-In this section you will know how to configure Grid rows on Grid initialization.
+In this section you will get to know how to configure Grid rows on Grid initialization.
 
 | Topic                                                                                                | Description                                                                                                                           |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
@@ -75,7 +76,8 @@ In this section you will learn how to specify the necessary data formats for a s
 | Topic                                                                               | Description                                                                                                                                                         |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Configuring data formats](../configuration/#formatting-columns)                    | Learn how to display values of cells in different formats (percent, currency, date and combination with templates) ([Example](https://snippet.dhtmlx.com/ox37nvdm)) |
-| [Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i) | The example shows how [to use the Date() object for specifying dates](../api/grid_data_config/)                                                                     |
+| [Date column and support of the Date() object](https://snippet.dhtmlx.com/ylbu791i) | The example shows how [to use the Date() object for specifying dates](../api/grid_data_config/) |
+| [Setting pattern and number masks](../configuration/#formatting-columns) | Learn how to specify input masks for the values of column cells ([Example](https://snippet.dhtmlx.com/45gjhciv))      |                                                                     
 
 
 
@@ -87,13 +89,14 @@ In this section you can learn how to configure the header and footer of Grid, ho
 | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
 | [Configuring header/footer](../api/api_gridcolumn_properties/)                    | Learn how to configure a Grid header/footer  ([Example](https://snippet.dhtmlx.com/9jl55ep7))                           |
 | [Setting the height for header and footer](../configuration/#headerfooter-height) | Learn how to set the height for rows in the header and footer of Grid  ([Example](https://snippet.dhtmlx.com/wjcjl80i)) |
+| [Setting the text for header and footer](../configuration/#headerfooter-text) | Learn how to set the text for rows in the header and footer of Grid  ([Example](https://snippet.dhtmlx.com/9jl55ep7)) |
 | [Styling header cells](../customization/#styling-header-cells)                    | Learn how to set styling to the text of header cells ([Example](https://snippet.dhtmlx.com/7o4elf48))                   |
 | [Styling footer cells](../customization/#styling-footer-cells)                    | Learn how to set styling to the text of footer cells ([Example](https://snippet.dhtmlx.com/d254hcvp))                   |
 
 
 ### How to configure tooltips
 
-In this section you will know how to add tooltips of the desired appearance with the necessary information, or hide them if needed.
+In this section you will get to know how to add tooltips of the desired appearance with the necessary information, or hide them if needed.
 
 | Topic                                                                         | Description                                                                                                                                                        |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -113,7 +116,7 @@ In this section you will find out how to group cells in Grid and its header.
 
 ### How to configure drag-n-drop
 
-In this section you will know how to configure the drag-n-drop functionality for Grid.
+In this section you will get to know how to configure the drag-n-drop functionality for Grid.
 
 | Topic                                                                              | Description                                                                                             |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -122,13 +125,29 @@ In this section you will know how to configure the drag-n-drop functionality for
 | [Drag-n-drop of multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows) | Learn how to allow end users to drag-n-drop several rows at once                                        |
 | [Copying of rows during drag-n-drop](../api/grid_dragcopy_config/)                 | Learn how to copy a row to a target during drag-n-drop ([Example](https://snippet.dhtmlx.com/23slivyz)) |
 
+## How to render custom statistics in the column header/footer and in the spans
+
+In this section you will get to know how to render custom statistics in the column header/footer and in the spans.
+
+| Topic                                                      | Description                                    |
+| -----------------------------------------------------------| -----------------------------------------------|
+| [Defining the data calculation function](../../helpers/data_calculation_functions/)                 | Learn how to define the default or create a custom statistical function for data calculation|
+| [Calculating a column summary](../configuration/#column-summary)                 | Learn how to form a summary list for a column ([Example](https://snippet.dhtmlx.com/jhjxjv2l))|
+| [Calculating a Grid summary](../configuration/#grid-summary)                 | Learn how to form a summary list for a Grid |
+| [Getting the summary object](../configuration/#getting-the-summary-object)                 | Learn how to get the summary object |
+| [Displaying custom statistics in the column header/footer text](../configuration/#headerfooter-text)     | Learn how to render custom statistics in the text of a column header/footer ([Example](https://snippet.dhtmlx.com/jhjxjv2l))|
+| [Displaying custom statistics in the column header/footer tooltip](../configuration/#column-headerfooter-tooltip)     | Learn how to render custom statistics in the tooltip of a column header/footer|
+| [Displaying custom statistics in the spans](../configuration/#spans)     | Learn how to render custom statistics in the spans|
+
+
 ## How to configure sizes of Grid and its cells
 
 In this section you can learn how to configure the size of Grid and its cells.
 
-| Topic                                                                                       | Description                                                                                                                     |
-| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| [Width and height of Grid](../configuration/#widthheight)                                   | Learn how to set specific size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                         |
+| Topic                                                      | Description                                    |
+| -----------------------------------------------------------| -----------------------------------------------|
+| [Responsiveness](https://snippet.dhtmlx.com/qjhstaf3) | The example shows how to configure Grid to adapt its sizes according to the parent container |
+| [Width and height of Grid](../configuration/#widthheight)  | Learn how to set specific size of Grid ([Example](https://snippet.dhtmlx.com/ffxj6se0))                                         |
 | [Auto-height for Grid](../configuration/#autoheight-for-grid)                               | Learn how to configure auto-height for Grid ([Example](https://snippet.dhtmlx.com/srbu56ob))                                                                                 |
 | [Adjusting columns by header, footer, data content](../configuration/#autosize-for-columns) | Learn how to make the size of columns to automatically adjust to their content ([Example](https://snippet.dhtmlx.com/zfrpe22d)) |
 | [Max width of a column](../api/api_gridcolumn_properties/)                                  | Learn how to define the maximal width which can be set for a column ([Example](https://snippet.dhtmlx.com/ku3cfaux))            |
@@ -156,7 +175,7 @@ In this section you can learn how to configure the style of Grid and its cells.
 
 ## How to work with columns and rows
 
-In this section you will know how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns.
+In this section you will learn how to add and remove columns and rows, how to hide and show them, how to configure their sizes and align content inside the columns.
 
 ### Adding/removing columns and rows
 
@@ -183,6 +202,21 @@ In this section you will know how to add and remove columns and rows, how to hid
 | [Showing / hiding a column](../usage/#hidingshowing-a-column)                | Learn how to show and hide a column in Grid ([Example](https://snippet.dhtmlx.com/n4zjwsqj))              |
 | [Checking visibility of a column](../usage/#checking-visibility-of-a-column) | Learn how to check whether a column is hidden   ([Example](https://snippet.dhtmlx.com/rdqhwnjv))          |
 
+## How to work with row expander
+
+| Topic                                                          | Description                      |
+| -------------------------------------------------------------- | ---------------------------------------------- |
+| [Adding sub-rows](../configuration/#adding-sub-rows)  | Learn how to enable the row expander feature and add sub-rows into Grid ([Example](https://snippet.dhtmlx.com/xdw2037t))       |
+| [Adjusting configuration of sub-rows](../configuration/#adjusting-configuration-of-sub-rows)  | Learn how to configure the sub-rows ([Example](https://snippet.dhtmlx.com/xdw2037t))       |
+| [Dynamic configuration of sub-rows](../configuration/#dynamic-configuration-of-sub-rows)  | Learn how to adjust the configuration settings of sub-rows dynamically ([Example](https://snippet.dhtmlx.com/pbubj175))       |
+| [Saving state of nested components or data in sub-rows](../configuration/#saving-state-of-nested-components-or-data-in-sub-rows)  | Learn how to save the state of nested components or the data of sub-rows     |
+| [Loading data into a sub-row](../configuration/#loading-data-into-a-sub-row)  | Learn how to dynamically load data into a sub-row ([Example](https://snippet.dhtmlx.com/03ndqrqt))       |
+| [Handling events](../configuration/#handling-events)  | Learn how to add event handlers for sub-rows with sub-components or HTML content ([Example](https://snippet.dhtmlx.com/3364si14))       |
+| [Multi-level Grid nesting](../configuration/#multi-level-grid-nesting)  | Learn how to specify a multi-level Grid nesting structure ([Example](https://snippet.dhtmlx.com/dih3z7cz))       |
+| [Adjusting sub-row width](../configuration/#adjusting-sub-row-width)  | Learn how to adjust the sub-row width depending on the width of the parent Grid       |
+| [Getting sub-row config and content](../configuration/#getting-sub-row-config-and-content)  | Learn how to get the configuration settings applied to a sub-row and the content inside it   |
+
+
 ## How to work with data in Grid
 
 This section will tell you how to use **Grid API** and **DataCollection API** for working with data of Grid, i.e. edit, add, remove, sort data, etc.
@@ -207,10 +241,11 @@ In this section you will find the ways of editing data in Grid.
 
 In this section you will find the ways of sorting data in Grid.
 
-| Topic                                                        | Description                                                                                                 |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
-| [Sorting data](../usage/#sorting-data)                       | Learn how to sort data in the grid ([Example](https://snippet.dhtmlx.com/81dmbdfd))                         |
-| [Sortable columns](../configuration/#sortable-columns)       | Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
+| Topic     									| Description                                                      |
+| --------------------------------------------- | ---------------------------------------------------------------- |
+| [Sorting data](../usage/#sorting-data)        | Learn how to sort data in the grid ([Example](https://snippet.dhtmlx.com/81dmbdfd))                |
+| [Sorting by multiple columns](../usage/#sorting-by-multiple-columns)   | Learn how to sort Grid data by multiple columns ([Example 1](https://snippet.dhtmlx.com/4ej0i3qi), [Example 2](https://snippet.dhtmlx.com/786zr190))                |
+| [Sortable columns](../configuration/#sortable-columns)| Learn how to define whether a column should be sortable ([Example](https://snippet.dhtmlx.com/r3prvlmo))    |
 | [Getting sorting state](../usage/#getting-the-sorting-state) | Learn how to get the current state of sorting data in Grid ([Example](https://snippet.dhtmlx.com/u2vk3ri3)) |
 
 ### How to filter data
@@ -224,9 +259,21 @@ In this section you will find the ways of filtering data in Grid.
 | [Customizing filters in the header/footer](../configuration/#customizing-headerfooter-filters) | Learn how to add a custom function with your own logic for filtering data in a Grid column ([Example](https://snippet.dhtmlx.com/gcidkxjg))                  |
 | [Getting the header filter](../api/grid_getheaderfilter_method/)                               | Learn how to get and use an object of the header filter ([Example](https://snippet.dhtmlx.com/n8srjle3))                                                     |
 
+### How to group data
+
+In this section you will get to know how to group row data in Grid.
+
+| Topic                                                                                          | Description                                                                                                                                                  |
+| ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Enabling data grouping](../usage/#enabling-data-grouping)                               | Learn how to enable row data grouping ([Example](https://snippet.dhtmlx.com/dvqy4ewe))                                                     |
+| [Configuring data grouping](../usage/#configuring-data-grouping)                               | Learn how to configure row data grouping ([Example](https://snippet.dhtmlx.com/z3iw2p3k))                                                     |
+| [Making group panel elements closable](../usage/#making-group-panel-elements-closable)       | Learn how to make elements of the group panel closable  ([Example](https://snippet.dhtmlx.com/z3iw2p3k))                                                     |
+| [Using DataCollection API for data grouping](../usage/#using-datacollection-api-for-data-grouping)       | Learn how to group Grid data with DataCollection API   ([Example](https://snippet.dhtmlx.com/vo3pgkgh))                                                     |
+
+
 ## How to work with selection
 
-In this section you will find the ways of work with selection functionality.
+In this section you will find the ways of working with selection functionality.
 
 | Topic                                                                         | Description                                                                                                                                                             |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -235,6 +282,18 @@ In this section you will find the ways of work with selection functionality.
 | [Working with selection](../usage_selection/)                                 | Learn how to enable/disable selection, set selection to cells, remove selection, and get the object of a selected cell ([Example](https://snippet.dhtmlx.com/4nj0e9ye)) |
 | [Selection API](../../category/selection-api/)                                | Learn how to use the API of Selection to manage the selection of Grid cells                                                                                             |
 | [Keyboard navigation](../configuration/#arrow-shortcut-keys)                  | Learn how to enable key navigation that allows moving the selection between cells ([Example](https://snippet.dhtmlx.com/y9kdk0md))                                      |
+
+## How to work with TreeGrid mode
+
+In this section you will find the ways of working with the TreeGrid mode of Grid.
+
+| Topic                                                                         | Description                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Enabling TreeGrid mode](../treegrid_mode/#initialization) | Learn how to enable the TreeGrid mode of Grid     |
+| [Configuring TreeGrid mode](../treegrid_mode/#configuration)| Learn how to configure the TreeGrid mode of Grid |
+| [Data loading in TreeGrid mode](../treegrid_mode/#data-loading)| Learn how to load data in the TreeGrid mode of Grid |
+| [Working with TreeGrid mode](../treegrid_mode/#work-with-grid-in-the-treegrid-mode) | Learn how to expand/collapse nodes |
+
 
 ## How to scroll Grid
 
@@ -248,11 +307,19 @@ In this section you will learn how to scroll Grid to the necessary position.
 
 ## How to export Grid
 
-In this section you will know how to export Grid to different formats.
+In this section you will get to know how to export Grid to different formats.
 
 | Topic                                                                       | Description                                                                                                                                           |
 | --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Exporting Grid to XLSX, CSV, PNG. or PDF format](../usage/#exporting-data) | Learn how to export Grid to the necessary format ([Example 1](https://snippet.dhtmlx.com/58oqij47), [Example 2](https://snippet.dhtmlx.com/ti9l91mn)) |
+| [Exporting Grid to XLSX, CSV, PNG or PDF format](../usage/#exporting-data) | Learn how to export Grid to the necessary format ([Example 1](https://snippet.dhtmlx.com/58oqij47), [Example 2](https://snippet.dhtmlx.com/ti9l91mn)) |
+
+## How to localize Grid
+
+In this section you will get to know how to localize the interface of Grid.
+
+| Topic                                                                       | Description                                                                                                                                           |
+| --------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Localizing Grid](../localization/) | Learn how to apply different languages to the interface of dhtmlxGrid |
 
 ## How to work with Grid events
 
@@ -286,15 +353,15 @@ In this section you will learn about common functionality of the library which c
 | [Touch support](../../common_features/touch_support/)         | Learn how to work with touch support                          |
 | [TypeScript support](../../common_features/using_typescript/) | Learn how to work with TypeScript                             |
 | [Custom scroll](../../common_features/custom_scroll/)         | Learn how to enable custom scroll in Grid                     |
-| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component’s rendering |
+| [AwaitRedraw](../../helpers/await_redraw/)                    | Learn how to perform the code after the component's rendering |
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=grid">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/dvqy4ewe?tag=grid">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 
-- [**Check a TreeGrid  widget >>>**](treegrid.md) - it allows showing the nested tabular data
+- [**Check the TreeGrid  mode of the Grid widget >>>**](../treegrid_mode/) - it allows showing the nested tabular data
 - [**Check SpreadSheet >>>**](https://docs.dhtmlx.com/spreadsheet/) - if you need functionality like Google Spreadsheets or Excel
 - [**Check Pivot >>>**](https://docs.dhtmlx.com/pivot/index.html) - if you are interested in analyzing data from large datasets
 

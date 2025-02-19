@@ -10,7 +10,7 @@ description: You can explore the afterItemLoad event of TreeCollection in the do
 
 @descr:
 :::info
-The event fires when you load items via the <a href="../treecollection_loaditems_method/">loadItems()</a> method of Tree Collection. The method also fires if you enable the <a href="../../../tree/api/tree_autoload_config">autoload</a> property of Tree.
+The event fires when you load items via the <a href="../treecollection_loaditems_method/">loadItems()</a> method of Tree Collection. The method also fires if you enable the <a href="../../../tree/api/tree_autoload_config/">autoload</a> property of Tree.
 :::
 
 @signature: {'afterItemLoad:({ id: string | number }) => void;'}

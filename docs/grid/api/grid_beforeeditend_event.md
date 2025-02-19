@@ -8,12 +8,12 @@ description: You can explore the beforeEditEnd event of Grid in the documentatio
 
 @short: fires before editing of a cell is completed
 
-@signature: {'beforeEditEnd: (value: string | number | boolean, row: object, column: object) => boolean | void;'}
+@signature: {'beforeEditEnd: (value: string | number | boolean | Date, row: object, column: object) => boolean | void;'}
 
 @params:
 The callback of the event is called with the following parameters:
 
-- `value: string | number | boolean` - the new value of a cell
+- `value: string | number | boolean | Date` - the new value of a cell
 - `row: object` - an object with a row configuration
 - `column: object` - an object with a column configuration
 
@@ -31,4 +31,7 @@ grid.events.on("beforeEditEnd", (value, row, column) => {
 
 **Related sample**: [Grid. Events](https://snippet.dhtmlx.com/9zeyp4ds)
 
-@changelog: added in v6.1
+@changelog:
+- The value of a cell can have the Date type since v9.0 
+- Added in v6.1
+

@@ -27,7 +27,7 @@ In this section you can find out the ways of Calendar initialization and localiz
 | :------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Backend integration](integration/suite_and_backend.md) | Learn how to connect DHTMLX Suite to a backend  ([Demo](https://github.com/DHTMLX/nodejs-suite-demo))                                        |
 | [Optimus](optimus_guides.md)                            | Learn how to use DHTMLX Optimus framework for creating  DHTMLX-based app <br>(recommended framework for creating apps with Suite components) |
-| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Calendar with React ([Demo](https://github.com/DHTMLX/react-widgets))                                                |
+| [React integration](integration/suite_and_react.md)     | Learn how to use DHTMLX Calendar with React ([Demo](https://github.com/DHTMLX/react-suite-demo))                                                |
 | [Angular integration](integration/suite_and_angular.md) | Learn how to use DHTMLX Calendar with Angular ([Demo](https://github.com/DHTMLX/angular-suite-demo))                                         |
 | [Vue integration](integration/suite_and_vue.md)         | Learn how to use DHTMLX Calendar with Vue.js ([Demo](https://github.com/DHTMLX/vue-suite-demo))                                              |
 
@@ -111,7 +111,7 @@ In this section you will learn about common functionality of the library which c
 
 ## Any questions left?
 
-<button class="support_btn"><a href="https://snippet.dhtmlx.com/all?tag=calendar">Check more samples >>></a> </button>
+<button class="support_btn"><a href="https://snippet.dhtmlx.com/jkbfb202?tag=calendar">Check more samples >>></a> </button>
 <br>
 <button class="support_btn"><a href="https://forum.dhtmlx.com/c/suite/suite7/">Ask the community >>></a> </button>
 

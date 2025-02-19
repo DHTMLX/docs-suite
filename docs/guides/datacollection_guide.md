@@ -9,7 +9,7 @@ description: You can learn how to work with DataCollection in the documentation 
 The DHTMLX library includes two invisible components (in other words, helpers) that serve to store data:
 
 - [DataCollection](data_collection.md/) - stores a non-hierarchical set of data (data for Chart, Combobox, DataView, Grid, List)
-- [TreeCollection](tree_collection.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Toolbar, Tree, TreeGrid)
+- [TreeCollection](tree_collection.md/) - stores a hierarchical set of data (data for Menu, Ribbon, Sidebar, Toolbar, Tree, Grid in the TreeGrid mode)
 
 API methods and events of DataCollection and TreeCollection let you work with data items, namely to load, process, and edit the items.
 
@@ -21,7 +21,7 @@ Please note that if you specify the `id` fields in the data collection, their va
 
 In this article we will consider how to work with DataCollection.
 
-Check all methods and events of [Data Collection API](data_collection.md/).
+Check all the methods and events of [Data Collection API](data_collection.md/).
 
 ## Common features of DataCollection
 
@@ -46,6 +46,7 @@ The methods of DataCollection are useful for:
 - Sorting and filtering data
 - Editing data
 - Saving and restoring
+- Grouping data
 
 #### Loading data
 
@@ -63,7 +64,11 @@ You can add new items into the initialized component via the `add()` method, rem
 
 The `serialize()` method is used to serialize data into JSON, XML or CSV format. You can send the serialized data to a new component or server. The `copy()` method will help you to create a copy of an item at the defined position. Use the `save()` method to save changes made in the data to the server side.
 
-Check all [methods](data_collection.md/#methods) of DataCollection.
+#### Grouping data
+
+You can group the data of a component using the `group()` method and remove data groups via the `ungroup()` method. The `isGrouped()` method allows you to check whether a data collection is grouped.
+
+Check all the [methods](data_collection.md/#methods) of DataCollection.
 
 ### DataCollection events
 
@@ -80,7 +85,7 @@ where:
 
 Events of DataCollection are helpful when you need to configure a system response to the changes made in data.
 
-Check all [events](data_collection.md/#events) of DataCollection.
+Check all the [events](data_collection.md/#events) of DataCollection.
 
 Check how to work with events in the [Events basic rules](guides/events_guide.md/) guide.
 

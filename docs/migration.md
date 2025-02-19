@@ -6,16 +6,271 @@ description: You can explore how to migrate to newer versions in the documentati
 
 #  Migration to newer versions
 
+9.0 -> 9.1
+-----------
+
+### Grid
+
+The `getSortingState()` method of Grid has been deprecated and replaced with the `getSortingStates()` method of [DataCollection](/data_collection/) and [TreeCollection](/tree_collection/), which allows getting the result of sorting data by multiple columns.
+
+~~~jsx title="Before v9.1"
+grid.getSortingState();
+~~~
+
+~~~jsx title="From v9.1"
+grid.data.getSortingStates()[0]; // getting the first (main) sorting state
+~~~
+
+8.4 -> 9.0
+-----------
+
+### Grid/TreeGrid
+
+#### TreeGrid as a Grid mode
+
+Since v9.0 the TreeGrid component becomes a part of the Grid component. To enable the [TreeGrid mode](grid/treegrid_mode.md) you need just to use the `dhx.Grid` constructor and set the `type: "tree"` property in the Grid configuration. This functionality is available in the PRO version.
+
+~~~jsx title="Before v9.0"
+const treegrid = new dhx.TreeGrid("treegrid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset
+});
+~~~
+
+~~~jsx title="From v9.0"
+const grid = new dhx.Grid("grid_container", {
+    type: "tree",
+    columns: [
+        // columns config
+    ],
+    data: dataset
+});
+~~~
+
+#### Data grouping
+
+Since v9.0 the TreeGrid data grouping methods `groupBy()` and `ungroup()`, and the `groupTitleTemplate` property have been deprecated. The data grouping functionality is now available via the [`group`](grid/api/grid_group_config.md) configuration property of Grid.
+
+~~~jsx {2}title="From v9.0"
+const grid = new dhx.Grid("grid_container", {
+    group: true,
+    columns: [
+        // columns config
+    ],
+    data: dataset
+});
+~~~
+
+This config enables the TreeGrid mode (the `type:"tree"` configuration option is automatically set in the Grid configuration), allows [configuring the data grouping settings](grid/usage.md#grouping-data) and [using DataCollection API](grid/usage.md#using-datacollection-api-for-data-grouping) for grouping Grid data.
+
+#### Using statistical functions in the column header/footer
+
+Before v9.0 the `content` property of the column header/footer could have the default statistical functions "avg" | "sum" | "max" | "min" | "count" as arguments. 
+
+~~~jsx {7}title="Before v9.0"
+{
+    width: 130,
+    id: "balance",
+    header: [{text: "Balance"}, {content: "inputFilter"}],
+    footer: [
+        {
+            content: "sum",
+            tooltipTemplate: balanceTemplate
+        },
+    ]
+}
+~~~
+
+Since v9.0 it is possible both to define the default statistical functions and create custom functions for data calculation. The following new functionality has been added:
+
+- the DHTMLX library provides a [helper method `dhx.methods`](helpers/data_calculation_functions.md) that allows:     
+
+1. defining the default data calculation functions:
+
+~~~jsx title="From v9.0"
+const rows = [{ value: 10 }, { value: 20 }, { value: 30 }];
+const sum = dhx.methods.sum(rows, "value"); // 60
+~~~
+
+2. redefining the default functions:
+
+~~~jsx {1-3,10-11} title="From v9.0"
+dhx.methods.doubleSum = (rows, field) => {
+    return rows.reduce((sum, row) => sum + row[field] * 2, 0);
+};
+
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        {
+            id: "population",
+            header: [{ text: "Population" }],
+            footer: [{ text: (content) => content.doubleSum }],
+            summary: "doubleSum"
+        },
+    ],
+    data: dataset
+});
+~~~
+
+- the `summary` config options are added into Grid and column configuration for calculating values based on columns data while [creating a summary list](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans) both at the Grid and column's levels
+
+- the [`getSummary()`](grid/api/grid_getsummary_method.md) method is added for getting the summary data either of a column or of the Grid
+
+- the `text` property of the Grid column [*header/footer*](grid/configuration.md#headerfooter-text) configuration object can be set as a *callback function* called with the following parameter:
+    - `content` - an object with the content of the column header/footer that contains the calculated values from the `summary` property as *key:value* pairs, where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+
+- the `tooltipTemplate` property of the Grid column [*header/footer*](grid/configuration.md#column-headerfooter-tooltip) configuration object can be set as a *callback function* called with the following parameters:
+    - `content` - an object with the content of the header/footer. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - (*string*) the value rendered in a cell, including the applied templates
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
+    - `header/footer` - (*object*) the object of the column header/footer 
+    - `column` - (*object*) the object of a column 
+
+- the `text` property of the Grid [*spans*](grid/configuration.md#spans) configuration object can be set as a *callback function* called with the following parameter:
+    - `content` - an object with the content of the spans tooltip that contains the calculated values from the `summary` property as *key:value* pairs, where:
+        - the *key* is either the key defined in the list or the functor name
+        - the *value* can be a *string*, *number* or *null*
+
+- the `tooltipTemplate` property of the Grid [*spans*](grid/configuration.md#adding-templates-for-column-and-spans-tooltip) configuration objects can be set as a *callback function* called with the following parameters:
+    - `content` - an object with the content of the spans tooltip. Contains two properties which are available either from the component's or from the column's configuration:
+        - `value` - (*string*) the value rendered in a cell, including the applied templates
+        - an object with the calculated values of the `summary` property, set as *key:value* pairs where:
+            - the *key* is either the key defined in the list or the functor name
+            - the *value* can be a *string*, *number* or *null*
+    - `span` - (*object*) the span object 
+
+~~~jsx title="From v9.0"
+const grid = new dhx.Grid("grid", {
+    columns: [
+        { width: 200, id: "country", header: [{ text: "Country" }] },
+        { 
+            width: 150, 
+            id: "population", 
+            header: [
+                { 
+                    text: "Population" , 
+                    tooltipTemplate: ({ totalPopulation, count }) => `Total: ${totalPopulation}, Count: ${ count }`
+                }
+            ],
+            summary: "count"
+        },
+        {
+            width: 150,
+            id: "age",
+            header: [{ text: "Med. Age" }],
+            summary: { avgAge: "avg" } 
+        }
+    ],
+    summary: {
+        totalPopulation: ["population", "sum"],
+    },
+    spans: [
+        {
+            row: "6",
+            column: "population",
+            rowspan: 9,
+            text: ({ count }) => ("Count population:" + count),
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+        },
+    ],
+    data: dataset
+});
+
+// getting summary data for the component
+const totalSummary = grid.getSummary();
+console.log(totalSummary); //{ totalPopulation: 1000000 } - sum of all the values in the "population" column
+
+// getting summary data for the "age" column
+const columnSummary = grid.getSummary("age");
+console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
+~~~
+
+#### Date format in a column
+
+Before v9.0, the format for dates in a column has been set by specifying the `type: "date"` property and the `format` option:
+
+~~~jsx {3}title="Before v9.0"
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", format: "%M %d %Y"
+}
+~~~
+
+Since v9.0, to set the format for dates, you need to use the combination of the `type: "date"` property and the [`dateFormat`](/grid/configuration#setting-the-format-for-dates) option:
+
+~~~jsx {3}title="From v9.0"
+{ 
+    width: 150, id: "date", header: [{ text: "Date" }], 
+    type: "date", dateFormat: "%M %d %Y"
+}
+~~~
+
+#### Data format in a column
+
+Before v9.0 the necessary format of data for a column has been specified via the `format` property:
+
+~~~jsx {6}title="Before v9.0"
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    template: (value) => `$${value}`,
+    format: "#.0",
+}
+~~~
+
+Since v9.0, the data format is specified via the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+
+~~~jsx {6-8}title="From v9.0"
+{
+    width: 130,
+    id: "cost",
+    header: [{ text: "Cost" }, { content: "inputFilter" }],
+    footer: [{ content: "sum" }],
+    numberMask: {
+        prefix: "$", minDecLength: 0
+    }
+}
+~~~
+
+#### Displaying the percentage value in a column
+
+Before v9.0, to display the percentage value in a column, the `type: "percent"` configuration option has been used:
+
+~~~jsx {3}title="Before v9.0"
+{ 
+    width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+    type: "percent"
+}
+~~~
+
+Since v9.0, the percentage value is specified via the `suffix: "%"` attribute of the [`numberMask`](/grid/configuration#numbermask) configuration option of a column object:
+
+~~~jsx {3}title="From v9.0"
+{ 
+    width: 120, id: "yearlyChange", header: [{ text: "Yearly Change" }], 
+    numberMask: { suffix: "%" }    
+}
+~~~
+
+
+
 8.1 -> 8.2
 -----------
 
 ### DataCollection/TreeCollection
 
-Before v8.2, the **smartFilter** property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
+Before v8.2, the `smartFilter` property of the [`filter()`](data_collection/api/datacollection_filter_method.md) method defined whether a filtering rule will be applied after adding and editing items of the collection. 
 
-Since v8.2 this property is **deprecated** and replaced with the [**permanent**](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the add/update/parse methods.
+Since v8.2 this property is **deprecated** and replaced with the [`permanent`](data_collection/api/datacollection_filter_method.md) one. All active filters are stored in DataCollection/TreeCollection and will be automatically applied once again after calling the `add/update/parse` methods.
 
-Besides, the **id** property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
+Besides, the `id` property has been added into the configuration object of the [`filter()`](data_collection/api/datacollection_filter_method.md) method.
 
 7.3 -> 8.0
 ------------

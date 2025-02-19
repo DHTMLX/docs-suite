@@ -10,7 +10,7 @@ description: You can explore how to work with Hospital Management Demo using Opt
 
 ![](../assets/optimus/demo/hospital_demo.png)
 
-This demo application shows how to create a hospital management system with a clear and accurate UI based on DHTMLX Diagram and DHTMLX Suite widgets: Sidebar, TreeGrid, Tabbar, Dataview, Window, Toolbar, and Form.
+This demo application shows how to create a hospital management system with a clear and accurate UI based on DHTMLX Diagram and DHTMLX Suite widgets: Sidebar, Grid in the TreeGrid mode, Tabbar, Dataview, Window, Toolbar, and Form.
 
 ## How to download
 
@@ -32,7 +32,7 @@ The hospital management system demo is a complex solution to show you how DHTMLX
 
 Pay attention to how the Patient Registration Form is realized. Here you can find built-in Datepicker, Combobox, Input fields, RadioGroup controls, and even more.
 
-Treegrid is the main widget of the demo. With the help of it, you can manage the hospital in real-time. Tabbar helps you to organize the information in the Treegrid in a convenient way.
+Grid in the TreeGrid mode is the main widget of the demo. With the help of it, you can manage the hospital in real-time. Tabbar helps you to organize the information in the Grid in the TreeGrid mode in a convenient way.
 
 DHTMLX diagram is one more feature of the demo. It helps to visualize a hospital management hierarchy.
 

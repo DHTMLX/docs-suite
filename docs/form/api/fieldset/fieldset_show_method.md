@@ -8,6 +8,10 @@ description: You can explore the show method of the Fieldset control of Form in 
 
 @short: shows a Fieldset control on the page
 
+:::info
+Note that the method calls the `show()` methods of the nested controls.
+:::
+
 @signature: {'show(): void;'}
 
 @example:
@@ -15,3 +19,5 @@ form.getItem("fieldset").show();
 
 @descr:
 The method doesn't invoke the fieldset events. It invokes the events of the nested controls.
+
+

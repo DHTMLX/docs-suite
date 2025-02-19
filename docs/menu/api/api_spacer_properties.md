@@ -23,7 +23,7 @@ const data = [
     <tbody>
         <tr>
             <td><b>type</b></td>
-            <td>(required) the item type, set it to "spacer". If not specified - the <a href="../../configuring_menu_items#menuitem">"menuItem"</a> type is applied by default.</td>
+            <td>(required) the item type, set it to "spacer". If not specified - the <a href="../../configuring_menu_items/#menuitem">"menuItem"</a> type is applied by default.</td>
         </tr>
         <tr>
             <td><b>id</b></td>

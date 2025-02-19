@@ -13,8 +13,8 @@
     "normalizeLink": "cd plugins && node samplesLinksNormalize.js"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.5.2",
-    "@docusaurus/preset-classic": "^3.5.2",
+    "@docusaurus/core": "^3.7.0",
+    "@docusaurus/preset-classic": "^3.7.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^1.1.1",
     "docusaurus-gtm-plugin": "^0.0.2",
@@ -36,8 +36,8 @@
     ]
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.5.2",
-    "@docusaurus/types": "^3.5.2",
+    "@docusaurus/module-type-aliases": "^3.7.0",
+    "@docusaurus/types": "^3.7.0",
     "dhx-md-data-parser": "file:local_modules/dhx-md-data-parser",
     "docusaurus-plugin-sass": "^0.2.5",
     "webpack-cli": "^4.4.0"

@@ -120,7 +120,7 @@ legend?: {
     <tbody>
        <tr>
             <td><b>values</b></td>
-            <td>(required) maps attributes of legend items to <a href="../../data_loading#preparing-data-set">data set</a> properties. Contains the following properties:<ul><li><b>text</b> - (required) the pointer to the data value to take a text for the legend from</li><li><b>color</b> - (required) the pointer to the data value to take a color for the legend from</li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lobb80ig" target="_blank">Chart. Donut chart initialization</a><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/jfbet749" target="_blank">Chart. Pie chart initialization</a><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/xfce9pys" target="_blank">Chart. Pie 3D chart initialization</a></td>
+            <td>(required) maps attributes of legend items to <a href="../../data_loading/#preparing-data-set">data set</a> properties. Contains the following properties:<ul><li><b>text</b> - (required) the pointer to the data value to take a text for the legend from</li><li><b>color</b> - (required) the pointer to the data value to take a color for the legend from</li></ul><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/lobb80ig" target="_blank">Chart. Donut chart initialization</a><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/jfbet749" target="_blank">Chart. Pie chart initialization</a><br><b>Related Sample: </b><a href="https://snippet.dhtmlx.com/xfce9pys" target="_blank">Chart. Pie 3D chart initialization</a></td>
         </tr>
         <tr>
             <td><b>direction</b></td>
