@@ -22,7 +22,7 @@ description: You can explore the mapRange method of DataCollection in the docume
 A new array of matching item objects.
 
 @example:
-const result = component.data.mapRange(0, 20, function(item, index) {
+const result = component.data.mapRange(0, 20, function(item, index, array) {
     console.log(item.id, index);
 });
 
