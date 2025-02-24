@@ -12,15 +12,18 @@ description: You can explore the dateFormat config of Grid column in the documen
 The date format must include delimiters (spaces or symbols), otherwise an error will be thrown
 :::
 
-## Usage
+### Usage
 
 ~~~jsx
-dateFormat?: string, 
+dateFormat?: string;
 ~~~
 
 @default: "%M %d %Y"
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
@@ -31,8 +34,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [Setting the format for dates](grid/configuration.md#setting-the-format-for-dates)
 

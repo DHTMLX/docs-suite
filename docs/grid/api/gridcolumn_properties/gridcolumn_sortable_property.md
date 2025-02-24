@@ -8,15 +8,18 @@ description: You can explore the sortable config of Grid column in the documenta
 
 @short: Optional. Defines whether a column is sortable
 
-## Usage
+### Usage
 
 ~~~jsx
-sortable?: boolean, 
+sortable?: boolean; 
 ~~~
 
 @default: true
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }] },
@@ -25,7 +28,6 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [Sortable columns](grid/configuration.md#sortable-columns)

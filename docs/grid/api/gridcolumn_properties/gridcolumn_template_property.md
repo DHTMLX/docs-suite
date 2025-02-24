@@ -8,13 +8,13 @@ description: You can explore the template config of Grid column in the documenta
 
 @short: Optional. A function which returns a template with content for a cell(s)
 
-## Usage
+### Usage
 
 ~~~jsx
-template?: (cellValue: any, row: object, column: object) => string,
+template?: (cellValue: any, row: object, column: object) => string;
 ~~~
 
-## Parameters
+### Parameters
 
 The `template` function takes 3 parameters:
 
@@ -22,7 +22,10 @@ The `template` function takes 3 parameters:
 - **row** - (required) an object with all cells in a row
 - **column** - (required) an object with the configuration of a column (see the [columns](grid/api/grid_columns_config.md) config)
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{text: "Country"}] },
@@ -36,8 +39,8 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
+~~~
 
-@descr:
 **Related article**: [Adding template to cells](grid/customization.md#adding-template-to-cells)
 
 **Related sample**: [Grid. Cell templates](https://snippet.dhtmlx.com/9txizaow)

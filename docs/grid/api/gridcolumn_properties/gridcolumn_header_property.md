@@ -8,7 +8,7 @@ description: You can explore the header config of Grid column in the documentati
 
 @short: Required. An array of objects with header rows configuration
 
-## Usage
+### Usage
 
 ~~~jsx
 header: [
@@ -40,57 +40,72 @@ header: [
         sortAs?: (cellValue: any) => string | number,
         htmlEnable?: boolean, // false by default
     }
-],
+];
 ~~~
 
-## Parameters 
+### Parameters 
 
 Each header object may include:
 
-- [`text`](grid/configuration.md#headerfooter-text) - (optional) the text of a header or a callback function which is called with the following parameter:
-    - **content** - an object with the content of the header tooltip that contains the calculated values as *key:value* pairs, where:
-        - the *key* is either the key defined in the list or the functor name
-        - the *value* can be a *string/number* or *null* 
-The calculated values are taken either from the **summary** config option of the component or the **summary** config option of a column
-- `tooltip` - (optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings; *true* by default. When set as an object, the **tooltip** config can have the following properties:
-    - **force** - (optional) forces opening of a tooltip; if set to true, the **showDelay** and **hideDelay** settings are ignored, *false* by default
-    - **showDelay** - (optional) the time period that should pass before showing a tooltip, in ms
-    - **hideDelay** - (optional) the time period that should pass before hiding a tooltip, in ms
-    - **margin** - (optional) the margin between the node and tooltip; *8px* by default
-    - **position** - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default
-    - **css** - (optional) the style of a tooltip box
-- [`tooltipTemplate`](grid/configuration.md#column-headerfooter-tooltip) - (optional) sets a template for the header tooltip. Takes into account the [**htmlEnable**](grid/configuration.md#html-content-of-grid-columns) property. The value of the **tooltipTemplate** property is a callback function which is called with the following parameters:
-    - **content** - an object with the content of the header tooltip. Contains two properties which are available either from the component's or from the column's configuration:
-        - **value** - the value rendered in a cell, including the applied templates
-        - an object with the calculated values of the **summary** property, set as *key:value* pairs where:
-            - the *key* is either the key defined in the list or the functor name
-            - the *value* can be a *string/number* or *null*
-    - **header** - the object of the column header
-    - **column** - the object of a column
-    Return *false* to disable the tooltip
-- [`align`](grid/configuration.md#column-headerfooter-tooltip) - (optional) aligns data in the header: *"left"* | *"center"* | *"right"*, *"left"* by default
-- `colspan` - (optional) the number of columns in a colspan
-- `rowspan` - (optional) the number of rows in a rowspan 
-- `css` - (optional) styling to be applied to a header
-- [`content`](grid/configuration.md#headerfooter-filters) - (optional) additional content of a header, which can be one of the filters: *"inputFilter"* | *"selectFilter"* | *"comboFilter"*
-- [`filterConfig`](grid/configuration.md#headerfooter-filters) - (optional) a configuration object for **"comboFilter"**. It can contain a set of properties:
-    - **filter** - (optional) sets a custom function for filtering Combo Box options
-    - **multiselection** - (optional) enables selection of multiple options
-    - **readonly** - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the **readonly** property depends on the following conditions:
-        - the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column
-        - in all other cases, `readonly:false` is set by default
-    - **placeholder** - (optional) sets a placeholder in the input of ComboBox
-    - **virtual** - (optional) enables dynamic loading of data on scrolling the list of options
-    - **template** - (optional) a function which returns a template with content for the filter options. Takes an option item as a parameter:
-        - **item** - (object) an option item
-- [`customFilter`](grid/configuration.md#customizing-headerfooter-filters) - (optional) a custom function for extended filtering. It takes two parameters:
-    - **item** - (required) a data item the value of which should be compared
-    - **input** - (required) the value of the option selected in the filter and returns *true/false* to specify whether the data item should be displayed in the grid after filtering
-- **headerSort** - (optional) enables/disables sorting by clicking the header, *true* by default
-- **sortAs** - (optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)
-- **htmlEnable** - (optional) *false* by default. If set to *true*, specifies the HTML content (inner HTML) of a header. If set to *false*, the content of the header cells will be displayed as a *string* value
+<table>
+    <tbody>
+        <tr>
+            <td><a href="../../../configuration/#headerfooter-text"><b>text</b></a></td><td>(optional) the text of a header or a callback function which is called with the following parameter:<ul><li><b>content</b> - an object with the content of the header tooltip that contains the calculated values as *key:value* pairs, where<ul><li>the *key* is either the key defined in the list or the functor name</li><li>the *value* can be a *string/number* or *null*</li></ul>The calculated values are taken either from the <b>summary</b> config option of the component or the <b>summary</b> config option of a column</li></ul></td>
+        </tr>
+        <tr>
+            <td><b>tooltip</b></td><td>(optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings; <i>true</i> by default. When set as an object, the <b>tooltip</b> config can have the following properties:<ul><li><b>force</b> - (optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, *false* by default</li><li><b>showDelay</b> - (optional) the time period that should pass before showing a tooltip, in ms</li><li><b>hideDelay</b> - (optional) the time period that should pass before hiding a tooltip, in ms</li><li><b>margin</b> - (optional) the margin between the node and tooltip; *8px* by default</li><li><b>position</b> - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default</li><li><b>css</b> - (optional) the style of a tooltip box</li></ul></td>
+        </tr>
+        <tr>
+            <td><a href="../../../configuration/#column-headerfooter-tooltip"><b>tooltipTemplate</b></a></td><td>(optional) sets a template for the header tooltip. Takes into account the <a href="../../../configuration/#html-content-of-grid-columns">htmlEnable</a> property. The value of the <b>tooltipTemplate</b> property is a callback function which is called with the following parameters:<ul><li><b>content</b> - an object with the content of the header tooltip. Contains two properties which are available either from the component's or from the column's configuration:<ul><li><b>value</b> - the value rendered in a cell, including the applied templates</li><li>an object with the calculated values of the <b>summary</b> property, set as *key:value* pairs where:<ul><li>the *key* is either the key defined in the list or the functor name</li><li>the *value* can be a *string/number* or *null*</li></ul></li></ul></li><li><b>header</b> - the object of the column header</li><li><b>column</b> - the object of a column</li></ul>Return <i>false</i> to disable the tooltip</td>
+        </tr>
+        <tr>
+            <td><a href="../../../configuration/#alignment"><b>align</b></a></td><td>(optional) aligns data in the header: *"left"* | *"center"* | *"right"*, <i>"left"</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>colspan</b></td><td>(optional) the number of columns in a colspan</td>
+        </tr>
+        <tr>
+            <td><b>rowspan</b></td><td>(optional) the number of rows in a rowspan</td>
+        </tr>
+        <tr>
+            <td><b>css</b></td><td>(optional) styling to be applied to a header</td>
+        </tr>
+        <tr>
+            <td><a href="../../../configuration/#headerfooter-filters"><b>content</b></a></td><td>(optional) additional content of a header, which can be one of the filters: "inputFilter" | "selectFilter" | "comboFilter"</td>
+        </tr>
+        <tr>
+            <td><a href="../../../configuration/#headerfooter-filters"><b>filterConfig</b></a></td><td>(optional) a configuration object for <b>"comboFilter"</b>. It can contain a set of properties:<ul><li><b>filter</b> - (optional) sets a custom function for filtering Combo Box options</li><li><b>multiselection</b> - (optional) enables selection of multiple options</li><li><b>readonly</b> - (optional) makes ComboBox readonly (it is only possible to select options from the list, without entering words in the input). The default value of the <b>readonly</b> property depends on the following conditions:<ul><li>the `readonly:true` is set as a default value, if `htmlEnable:true` is set for a column and there is no template specified for a column</li><li>in all other cases, `readonly:false` is set by default</li></ul></li><li><b>placeholder</b> - (optional) sets a placeholder in the input of ComboBox</li><li><b>virtual</b> - (optional) enables dynamic loading of data on scrolling the list of options</li><li><b>template</b> - (optional) a function which returns a template with content for the filter options. Takes an option item as a parameter:<ul><li><b>item</b> - (object) an option item</li></ul></li></ul></td>
+        </tr>
+        <tr>
+            <td><a href="../../../configuration/#customizing-headerfooter-filters"><b>customFilter</b></a> </td><td>(optional) a custom function for extended filtering. It takes two parameters:<ul><li><b>item</b> - (required) a data item the value of which should be compared</li><li> <b>input</b> - (required) the value of the option selected in the filter</li></ul>and returns <i>true/false</i> to specify whether the data item should be displayed in the grid after filtering</td>
+        </tr>
+        <tr>
+            <td><b>headerSort</b></td><td>(optional) enables/disables sorting by clicking the header, <i>true</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>sortAs</b></td><td>(optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</td>
+        </tr>
+        <tr>
+            <td><b>htmlEnable</b></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</td>
+        </tr>
+    </tbody>
+</table>
+
 
 @descr:
+### Example
+
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 100, id: "a", header: [{ text: "#" }] },
+        { width: 100, id: "b", header: [{ text: "Title" }] },
+        { width: 200, id: "c", header: [{ text: "Name" }] },
+        { width: 200, id: "d", header: [{ text: "Address" }] }
+    ],
+    data: dataset
+});
+~~~
 
 **Related article**: [Configuration](grid/configuration.md)
 

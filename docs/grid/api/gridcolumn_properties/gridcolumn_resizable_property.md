@@ -8,15 +8,18 @@ description: You can explore the resizable config of Grid column in the document
 
 @short: Optional. Defines whether a column can be resized
 
-## Usage
+### Usage
 
 ~~~jsx
-resizable?: boolean,
+resizable?: boolean;
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
     	{ id: "country", header: [{ text: "Country" }] },
@@ -25,7 +28,6 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset,
     resizable: true 
 });
-
-@descr:
+~~~
 
 **Related article**: [Resizable columns](grid/configuration.md#resizable-columns)

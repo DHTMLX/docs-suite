@@ -8,33 +8,29 @@ description: You can explore the minWidth config of Grid column in the documenta
 
 @short: Optional. The minimum width to be set for a column
 
-## Usage
+### Usage
 
 ~~~jsx
-minWidth?: number,
+minWidth?: number;
 ~~~
 
 @default: 20
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
             minWidth: 150,
             id: "project",
-            header: [
-                {text: "Project"},
-                {content: "comboFilter", tooltipTemplate: () => "Select project"}
-            ],
-            footer: [{text: "Total"}],
-            resizable: true,
-            draggable: false
+            header: [{text: "Project"}],
         },
         // more columns   
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related sample**: [Grid. Columns min width](https://snippet.dhtmlx.com/x5hmpi9d)

@@ -8,13 +8,16 @@ description: You can explore the maxWidth config of Grid column in the documenta
 
 @short: Optional. The maximal width to be set for a column
 
-## Usage
+### Usage
 
 ~~~jsx
-maxWidth?: number,
+maxWidth?: number;
 ~~~
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { maxWidth: 150, width: 300, id: "country", header: [{ text: "Country" }] },
@@ -23,7 +26,6 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related sample**: [Grid. Columns max width](https://snippet.dhtmlx.com/ku3cfaux)

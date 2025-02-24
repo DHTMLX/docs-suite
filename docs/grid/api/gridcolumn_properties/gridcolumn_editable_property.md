@@ -8,23 +8,24 @@ description: You can explore the editable config of Grid column in the documenta
 
 @short: Optional. Defines whether a column is editable
 
-## Usage
+### Usage
 
 ~~~jsx
-editable?: boolean, 
+editable?: boolean; 
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { 
             width: 150, id:"project",
             editable: false,
-            header: [
-              {text: "Project"}, {content: "selectFilter"}
-            ]
+            header: [{text: "Project"}, {content: "selectFilter"}]
         },
         { width:150, id: "owner", header: [{text: "Owner"},{content: "inputFilter"}]},
         { width:150, id: "hours", header: [{text: "Hours"}, {content: "inputFilter"}]},
@@ -33,9 +34,7 @@ const grid = new dhx.Grid("grid_container", {
     data: data,
     editable: true
 });
-
-
-@descr:
+~~~
 
 **Related article**: [Editing Grid and separate columns](grid/configuration.md#editing-grid-and-separate-columns)
 

@@ -8,15 +8,18 @@ description: You can explore the align config of Grid column in the documentatio
 
 @short: Optional. Aligns data in a column
 
-## Usage
+### Usage
 
 ~~~jsx
-align?: "left" | "center" | "right", 
+align?: "left" | "center" | "right"; 
 ~~~
 
 @default: "left"
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "name", header:  [{ text: "Name", align: "center" }], align: "right"}
@@ -24,8 +27,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [Alignment](grid/configuration.md#alignment)
 

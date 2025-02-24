@@ -16,14 +16,14 @@ The property is required if you specify the [editorType: "select" | "combobox" |
 If the `newOptions` property is enabled in the `editorConfig` object, all new options will be displayed in the editor regardless of the initialized options.
 :::
 
-## Usage
+### Usage
 
 ~~~jsx
 options?: (string | { id: string | number, value: string })[] |
-	(column: object, row?: object) => (string | { id: string | number, value: string })[],
+	(column: object, row?: object) => (string | { id: string | number, value: string })[];
 ~~~
 
-## Parameters
+### Parameters
 
 The property can be:
 
@@ -36,7 +36,10 @@ The property can be:
 	- **row** - (optional) an object with all cells in a row
 and must return either an array of string values or an array of objects
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -47,8 +50,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 }); 
-
-@descr:
+~~~
 
 **Related article**: [Editing Grid and separate columns](grid/configuration.md#editing-grid-and-separate-columns)
 

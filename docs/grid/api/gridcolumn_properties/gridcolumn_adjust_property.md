@@ -8,15 +8,18 @@ description: You can explore the adjust config of Grid column in the documentati
 
 @short: Optional. Defines whether the width of a column is automatically adjusted to its content
 
-## Usage
+### Usage
 
 ~~~jsx
-adjust?: "data" | "header" | "footer" | boolean, 
+adjust?: "data" | "header" | "footer" | boolean; 
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }], adjust: "header" },
@@ -25,9 +28,9 @@ const grid = new dhx.Grid("grid_container", {
     adjust: false,
     data: dataset
 });
+~~~
 
-@descr:
-- The property has a priority over the `autoWidth` property if it is specified either for the grid or for the column, and over the `width` property of the column.
+- The `adjust` property has a priority over the `autoWidth` property if it is specified either for the grid or for the column, and over the `width` property of the column.
 - The width the columns will be adjusted to also depends on the values of the `minWidth/maxWidth` properties if they are set for a column.
 
 **Related article**: [Autosize for columns](grid/configuration.md#autosize-for-columns)

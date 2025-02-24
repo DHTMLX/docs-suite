@@ -12,16 +12,18 @@ description: You can explore the closable config of Grid column in the documenta
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
-## Usage
+### Usage
 
 ~~~jsx
-closable?: boolean, 
+closable?: boolean; 
 ~~~
 
 @default: true
 
-@example:
+@descr:
+### Example
 
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -47,7 +49,6 @@ const grid = new dhx.Grid("grid_container", {
     groupable: true,
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [Making group panel elements closable](grid/usage.md#making-group-panel-elements-closable)

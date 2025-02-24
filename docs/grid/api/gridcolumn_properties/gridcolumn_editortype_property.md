@@ -8,15 +8,18 @@ description: You can explore the editorType config of Grid column in the documen
 
 @short: Optional. Defines the type of an editor used in a column
 
-## Usage
+### Usage
 
 ~~~jsx
-editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea" 
+editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea"; 
 ~~~
 
 @default: "input"
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -30,8 +33,7 @@ const grid = new dhx.Grid("grid_container", {
     editable: true,
     autoHeight: true
 });
-
-@descr:
+~~~
 
 **Related article**: [Types of column editor](grid/configuration.md#types-of-column-editor)
 

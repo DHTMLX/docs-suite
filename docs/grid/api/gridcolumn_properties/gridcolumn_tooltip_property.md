@@ -8,15 +8,15 @@ description: You can explore the tooltip config of Grid column in the documentat
 
 @short: Optional. Enables/disables the header tooltip, or sets the configuration object with the tooltip settings
 
-## Usage
+### Usage
 
 ~~~jsx
-tooltip?: boolean | object, 
+tooltip?: boolean | object;
 ~~~
 
 @default: true
 
-## Parameters
+### Parameters
 
 When set as an object, the `tooltip` config can have the following properties:
 
@@ -29,7 +29,10 @@ When set as an object, the `tooltip` config can have the following properties:
 
 The **tooltip** config can be redefined for the header/footer tooltip.
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], tooltip: true }, 
@@ -38,8 +41,7 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset,
     tooltip: false 
 });
-
-@descr:
+~~~
 
 **Related article**: [Column and spans tooltips](grid/configuration.md#column-and-spans-tooltips)
 

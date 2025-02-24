@@ -8,24 +8,26 @@ description: You can explore the hidden config of Grid column in the documentati
 
 @short: Optional. Defines whether a column is hidden
 
-## Usage
+### Usage
 
 ~~~jsx
-hidden?: boolean, 
+hidden?: boolean; 
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-		{ width: 150, id: "population", header: [{ text: "Population" }] },
-		{ width: 150, id: "yearlyChange", hidden: true, header: [{ text: "Yearly Change" }] }
-	],
-	data: dataset
+        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { width: 150, id: "yearlyChange", hidden: true, header: [{ text: "Yearly Change" }] }
+    ],
+    data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [Hidden columns](grid/configuration.md#hidden-columns)
 

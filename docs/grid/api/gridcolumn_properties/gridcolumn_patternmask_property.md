@@ -8,7 +8,7 @@ description: You can explore the patternMask config of Grid column in the docume
 
 @short: Optional. Sets an input mask for entering number and string values according to a special pattern
 
-## Usage
+### Usage
 
 ~~~jsx
 patternMask?:
@@ -21,7 +21,7 @@ patternMask?:
     | string,
 ~~~
 
-## Parameters
+### Parameters
 
 The `patternMask` property can be set in two ways:
 - as an *object* with the following properties:
@@ -31,7 +31,10 @@ The `patternMask` property can be set in two ways:
 	- **charFormat** - (*object*) allows specifying a regular expression for an optional symbol. It is set as an object with *key:value* pairs, where the *key* is a symbol and the *value* is a regular expression
 - as a *string* allows setting a mask as a string using a predefined set of symbols
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {  
@@ -44,8 +47,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [patternMask](grid/configuration.md#patternmask)
 

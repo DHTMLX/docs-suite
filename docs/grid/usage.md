@@ -957,7 +957,7 @@ column: {
 }
 ~~~
 
-Note that the `column` object of the `group` configuration option has some properties of a Grid column. You can check the descriptions of the group column object properties enumerated above in the [Grid column properties](grid/api/api_gridcolumn_properties.md#description) guide.
+Note that the `column` object of the `group` configuration option has some properties of a Grid column. You can check the descriptions of the group column object properties enumerated above in the [Grid column properties](grid/api/api_gridcolumn_properties.md) guide.
 
 ### Making group panel elements closable
 

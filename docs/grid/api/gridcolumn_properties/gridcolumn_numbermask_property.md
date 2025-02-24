@@ -8,7 +8,7 @@ description: You can explore the numberMask config of Grid column in the documen
 
 @short: Optional. Sets an input mask for entering number values
 
-## Usage
+### Usage
 
 ~~~jsx
 numberMask?:
@@ -22,10 +22,10 @@ numberMask?:
         maxDecLength?: number, 
         minDecLength?: number // 0 by default
       }
-    | boolean,
+    | boolean;
 ~~~
 
-## Parameters
+### Parameters
 
 The `numberMask` property can be set in two ways:
 
@@ -40,7 +40,10 @@ The `numberMask` property can be set in two ways:
 	- **minDecLength** - allows setting the minimal rendered length of a decimal
 - as a *boolean* value converts the number value displayed in the input field into one of the predefined templates
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -60,8 +63,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [numberMask](grid/configuration.md#numbermask)
 

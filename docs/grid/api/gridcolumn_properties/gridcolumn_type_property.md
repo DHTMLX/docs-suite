@@ -8,15 +8,18 @@ description: You can explore the type config of Grid column in the documentation
 
 @short: Optional. Defines the type of a column
 
-## Usage
+### Usage
 
 ~~~jsx
-type?: "string" | "number" | "boolean" | "date",
+type?: "string" | "number" | "boolean" | "date";
 ~~~
 
 @default: "string"
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -31,12 +34,11 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
+~~~
 
-
-@descr:
 The type sets the alignment of the content and defines the type of the editor used in the column:
-- *"string" (the default one)* - aligns data to the left side and applies the *"input"/"textarea"* editor
-- *"number"* - aligns data to the right side and applies the *"input"* editor
-- *"boolean"* - aligns data to the left side and applies the *"checkbox"* editor
-- *"date"* - aligns data to the left side and applies the *"datePicker"* editor
+- *"string" (the default one)* - aligns data to the left side and applies the **"input"/"textarea"** editor
+- *"number"* - aligns data to the right side and applies the **"input"** editor
+- *"boolean"* - aligns data to the left side and applies the **"checkbox"** editor
+- *"date"* - aligns data to the left side and applies the **"datePicker"** editor
 

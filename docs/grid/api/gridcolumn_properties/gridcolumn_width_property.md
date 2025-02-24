@@ -10,10 +10,10 @@ description: You can explore the width config of Grid column in the documentatio
 
 :::note
 Note that width can't be less than 20px.
-The property is ignored if the `adjust` property is used.
+The property is ignored if the [`adjust`](grid/api/gridcolumn_properties/gridcolumn_adjust_property.md) property is used.
 :::
 
-## Usage
+### Usage
 
 ~~~jsx
 width?: number, 
@@ -21,18 +21,19 @@ width?: number,
 
 @default: 100
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        // columns config
+        { width: 200, id: "country", header: [{ text: "Country" }]},
+        { width: 150, id: "population", header: [{ text: "Population" }] },
     ],
-    width: 400,
-    height: 400,
     data: dataset
 });
+~~~
 
-@descr:
 
-**Related article**: [Width/height](grid/configuration.md#widthheight)
 
-**Related sample**: [Grid. Custom sizes](https://snippet.dhtmlx.com/ffxj6se0)
+

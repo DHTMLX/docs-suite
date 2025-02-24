@@ -8,15 +8,18 @@ description: You can explore the autoWidth config of Grid column in the document
 
 @short: Optional. Enables/disables the ability of a column to adjust its size to the size of Grid
 
-## Usage
+### Usage
 
 ~~~jsx
-autoWidth?: boolean,
+autoWidth?: boolean;
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false },
@@ -25,9 +28,8 @@ const grid = new dhx.Grid("grid_container", {
     autoWidth: true,
     data: dataset
 });
+~~~
 
-
-@descr:
 Also note:
 
 - If `autoWidth` is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the `minWidth/maxWidth` properties if they are set for the column.

@@ -12,15 +12,19 @@ description: You can explore the htmlEnable config of Grid column in the documen
 If set to *false*, the content of the column cells will be displayed as a *string* value.
 :::
 
-## Usage
+### Usage
 
 ~~~jsx
-htmlEnable?: boolean
+htmlEnable?: boolean;
 ~~~
 
 @default: false
 
-@example:
+
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
@@ -31,8 +35,7 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
-
-@descr:
+~~~
 
 **Related article**: [HTML content of Grid columns](grid/configuration.md#html-content-of-grid-columns)
 

@@ -8,15 +8,18 @@ description: You can explore the groupable config of Grid column in the document
 
 @short: Optional. Enables data grouping by the values of a certain column
 
-## Usage
+### Usage
 
 ~~~jsx
-groupable?: boolean, 
+groupable?: boolean;
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "country", header: [{ text: "Country" }], groupable: true },
@@ -26,8 +29,6 @@ const grid = new dhx.Grid("grid_container", {
     group: true,
     data: dataset
 });
-
-
-@descr:
+~~~
 
 **Related article**: [Enabling data grouping](grid/usage.md#enabling-data-grouping)

@@ -8,16 +8,18 @@ description: You can explore the draggable config of Grid column in the document
 
 @short: Optional. Defines whether a column is draggable
 
-## Usage
+### Usage
 
 ~~~jsx
-draggable?: boolean, 
+draggable?: boolean; 
 ~~~
 
 @default: false
 
-@example:
+@descr:
+### Example
 
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 200, id: "country", header: [{ text: "Country" }]},
@@ -27,8 +29,7 @@ const grid = new dhx.Grid("grid_container", {
     data: dataset,
     dragItem: "column", 
 });
-
-@descr:
+~~~
 
 **Related article**: [Drag-n-drop inside the grid](grid/configuration.md#drag-n-drop-inside-the-grid)
 

@@ -8,13 +8,16 @@ description: You can explore the id config of Grid column in the documentation o
 
 @short: Required. The id of a column
 
-## Usage
+### Usage
 
 ~~~jsx
-id: string | number,
+id: string | number;
 ~~~
  
-@example:
+@descr:
+### Example
+
+~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { width: 100, id: "a", header: [{ text: "#" }] },
@@ -24,4 +27,5 @@ const grid = new dhx.Grid("grid_container", {
     ],
     data: dataset
 });
+~~~
 
