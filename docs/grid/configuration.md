@@ -1021,6 +1021,10 @@ const data = [
 ];
 ~~~
 
+:::info note
+Note that the *ids* of the **multiselect** editor options specified as *objects* and the options specified as *strings* shouldn't contain the `,` separator.
+:::
+
 #### Configuring the multiselect editor
 
 There is a list of [configuration settings](grid/api/api_gridcolumn_properties.md) you may provide for the **multiselect** editor type. Use the `editorConfig` property to specify the desired settings:
