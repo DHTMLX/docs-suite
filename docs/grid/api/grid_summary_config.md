@@ -82,7 +82,7 @@ console.log(summary); // { totalPopulation: 1000000, totalArea: 50000, density: 
 
 @descr:
 
-**Related article:** [Summary of calculated values](grid/configuration.md#custom-statistics-in-the-column-headerfooter-and-spans)
+**Related article:** [Custom statistics in the column header/footer and spans](../../configuration/#custom-statistics-in-the-column-headerfooter-and-spans)
 
 **Related API**: [getSummary](grid/api/grid_getsummary_method.md)
 
