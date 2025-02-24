@@ -20,7 +20,7 @@ tooltip?: boolean | object;
 
 When set as an object, the `tooltip` config can have the following properties:
 
-- **force** - (optional) forces opening of a tooltip; if set to true, the showDelay and hideDelay settings are ignored, *false* by default
+- **force** - (optional) forces opening of a tooltip; if set to true, the `showDelay` and `hideDelay` settings are ignored, *false* by default
 - **showDelay** - (optional) the time period that should pass before showing a tooltip, in ms
 - **hideDelay** - (optional) the time period that should pass before hiding a tooltip, in ms
 - **margin** - (optional) the margin between the node and tooltip; *8px* by default

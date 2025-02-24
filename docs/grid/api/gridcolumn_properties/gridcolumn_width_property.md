@@ -16,7 +16,7 @@ The property is ignored if the [`adjust`](grid/api/gridcolumn_properties/gridcol
 ### Usage
 
 ~~~jsx
-width?: number, 
+width?: number; 
 ~~~
 
 @default: 100

@@ -20,7 +20,7 @@ The `template` function takes 3 parameters:
 
 - **cellValue** - (required) the value of a cell
 - **row** - (required) an object with all cells in a row
-- **column** - (required) an object with the configuration of a column (see the [columns](grid/api/grid_columns_config.md) config)
+- **column** - (required) an object with the configuration of a column (see the [`columns`](grid/api/grid_columns_config.md) config)
 
 @descr:
 ### Example
