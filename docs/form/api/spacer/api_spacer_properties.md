@@ -12,7 +12,7 @@ description: You can explore the Properties of the Spacer control of Form in the
 {
     type: "spacer",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
 
     css?: string,
     height?: string | number | "content", // "content" by default
@@ -36,7 +36,7 @@ description: You can explore the Properties of the Spacer control of Form in the
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>css</b></td>

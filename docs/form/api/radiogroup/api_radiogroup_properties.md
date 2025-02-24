@@ -12,12 +12,12 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
 {
     type: "radiogroup",
     name?: string,
-    id?: string,
+    id?: string, // must be unique if set, auto-generated if not set
     options: {
         rows?: [
             {
                 type: "radiobutton",
-                id?: string,
+                id?: string, // must be unique if set, auto-generated if not set
                 value: string,
                 checked?: boolean, // false by default 
                 css?: string,
@@ -33,7 +33,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
         cols?: [
             {
                 type: "radiobutton",
-                id?: string,
+                id?: string, // must be unique if set, auto-generated if not set
                 value: string,
                 checked?: boolean,
                 css?: string,
@@ -89,7 +89,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>options</b></td>
@@ -172,7 +172,7 @@ description: You can explore the Properties of the RadioGroup and RadioButton co
         </tr>
         <tr>
             <td><b>id</b></td>
-            <td>(optional) the id of a control, auto-generated if not set</td>
+            <td>(optional) the id of a control, must be <b>unique</b> if set, auto-generated if not set</td>
         </tr>
         <tr>
             <td><b>value</b></td>
