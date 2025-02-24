@@ -8,6 +8,19 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.1 
+
+Released on February 24, 2025
+
+### Fixes
+
+- Combobox. Adding a new option in the "multiselection" mode opens the popup list
+- Form. The problem with updating the value of the `preMessage` property of the Textarea control
+- Grid. After editing grouped data with the `adjust:true` option in the Grid configuration, the adjustable cell width is reset on ungrouping data 
+- Grid. The issue with using a sub-row when the `dhx.scrollViewConfig.enable` configuration option is set to *true* 
+- Grid. An error caused by the use of options containing commas in the "combobox" editor
+- Grid. Incorrect calculation of the row `autoHeight`, if the length of a word in a cell exceeds the column width
+
 ## Version 9.1 
 
 Released on February 18, 2025
