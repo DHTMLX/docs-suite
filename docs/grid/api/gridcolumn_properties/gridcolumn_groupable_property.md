@@ -6,7 +6,7 @@ description: You can explore the groupable config of Grid column in the document
 
 # groupable
 
-@short: Optional. Enables data grouping by the values of a certain column
+@short: Optional. Enables data grouping by the values of a certain column via the user interface
 
 ### Usage
 

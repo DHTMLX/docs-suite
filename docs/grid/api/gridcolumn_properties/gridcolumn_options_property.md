@@ -9,7 +9,7 @@ description: You can explore the options config of Grid column in the documentat
 @short: Optional. Specifies a set of options to be displayed in the editor of a cell
 
 :::note
-The property is required if you specify the [editorType: "select" | "combobox" | "multiselect"](grid/configuration.md#types-of-column-editor). 
+The property is required if you specify [`editorType: "select" | "combobox" | "multiselect"`](grid/configuration.md#types-of-column-editor). 
 :::
 
 :::info

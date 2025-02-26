@@ -566,7 +566,7 @@ Note that when you initialize Grid with the `group` configuration property, the 
 
 You can also specify what Grid data will be used for grouping using the `groupable` properties of Grid and of a column.
 
-The [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by the values in all columns:
+The [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by the values in all columns via the user interface:
 
 ~~~jsx {6}
 const grid = new dhx.Grid("grid_container", {
@@ -594,7 +594,7 @@ With the Grid `groupable` property enabled you can:
 
 **Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
 
-The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
+The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column via the user interface:
 
 ~~~jsx {3}
 const grid = new dhx.Grid("grid_container", {

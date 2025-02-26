@@ -14,7 +14,13 @@ description: You can explore the editorType config of Grid column in the documen
 editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "textarea"; 
 ~~~
 
-@default: "input"
+@default:
+
+- for the column `type: string`:
+    - with the `autoHeight` configuration option: the "textarea" editor type
+    - without the `autoHeight` configuration option: the "input" editor type
+- for the column `type: date`: the "datePicker" editor type
+- for the column `type: number`: the "input" editor type
 
 @descr:
 ### Example

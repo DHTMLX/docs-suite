@@ -197,13 +197,19 @@ You can disable this functionality for a specified column via setting the [](gri
 ~~~jsx {3,6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false },
-        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { id: "country", header: [{ text: "Country" }], autoWidth: false },
+        { id: "population", header: [{ text: "Population" }] },
     ],
     autoWidth: true,
     data: dataset
 });
 ~~~
+
+Also note:
+
+- If `autoWidth` is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the `minWidth/maxWidth` properties if they are set for the column.
+- The property is ignored if the [`adjust`](#autosize-for-columns) property is used.
+- If the `width` property is specified in the configuration object of a column, the `autoWidth` property won't work for this column.
 
 ### Formatting columns
 

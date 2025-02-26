@@ -6,20 +6,21 @@ description: You can explore the mark config of Grid column in the documentation
 
 # mark
 
-@short: Optional. Either highlights the specified cells or applies the desired CSS classes to cells with minimal|maximal values in a column 
+@short: Optional. Returns a template for marking a cell(s) or applies the desired CSS classes to cells with minimal|maximal values in a column 
 
 ### Usage
 
 ~~~jsx
- mark?: { min?: string, max?: string } | 
-        (cell: any, columnCells: any[], row?: object, column?: object) => string;
+mark?:
+    { min?: string, max?: string } | 
+    (cell, columnCells: [], row?: IRow, column?: ICol) => string;
 ~~~
 
 ### Parameters
 
-The `mark` property can be either an object or a function:
-- as an object contains min and max properties, to apply desired CSS classes to cells with minimal|maximal values in a column
-- as a function returns a template for marking a cell(s) and takes several parameters:
+The `mark` property can be either an *object* or a *function*:
+- as an *object* contains min and max properties, to apply desired CSS classes to cells with minimal|maximal values in a column
+- as a *function* returns a template for marking a cell(s) and takes several parameters:
 	- **cell** - (required) the value of a cell
 	- **columnCells** - (required) an array of all cell values in the specified column
 	- **row** - (optional) an object with all cells in a row

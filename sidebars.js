@@ -2683,6 +2683,7 @@ module.exports = {
                     "grid/api/gridcolumn_properties/gridcolumn_editorconfig_property",
                     "grid/api/gridcolumn_properties/gridcolumn_editortype_property",
                     "grid/api/gridcolumn_properties/gridcolumn_footer_property",
+                    "grid/api/gridcolumn_properties/gridcolumn_gravity_property",
                     "grid/api/gridcolumn_properties/gridcolumn_groupable_property",
                     "grid/api/gridcolumn_properties/gridcolumn_header_property",
                     "grid/api/gridcolumn_properties/gridcolumn_hidden_property",

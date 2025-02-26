@@ -14,8 +14,6 @@ description: You can explore the align config of Grid column in the documentatio
 align?: "left" | "center" | "right"; 
 ~~~
 
-@default: "left"
-
 @descr:
 ### Example
 

@@ -6,7 +6,7 @@ description: You can explore the htmlEnable config of Grid column in the documen
 
 # htmlEnable
 
-@short: Optional. Specifies the HTML content (inner HTML) of a column
+@short: Optional. Allows using and displaying HTML content in a column
 
 :::note
 If set to *false*, the content of the column cells will be displayed as a *string* value.
@@ -27,13 +27,12 @@ htmlEnable?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        {
-            width: 200, id: "country", header: [{ text: "Country" }],
-            htmlEnable: true
-        }, 
+        { width: 150, id: "population", htmlEnable: true, header: [
+            { text: "<span class='header-title'>Population</span>" }
+        ]}, 
         // more columns
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

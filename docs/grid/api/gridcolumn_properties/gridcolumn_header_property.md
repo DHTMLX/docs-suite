@@ -13,12 +13,17 @@ description: You can explore the header config of Grid column in the documentati
 ~~~jsx
 header: [
     {
-        text?: string | ((content: {
-            [key: string]: string | number | null
-        }) => string),
+        text?:
+            string |
+            ((content: {
+                [key: string]: string | number | null
+            }) => string),
         tooltip?: boolean | object, // true by default
         tooltipTemplate?: (
-            content: { value: string } & { [key: string]: string | number | null },
+            content: {
+                [key: string]: string | number | null;
+                value: string;
+            },
             header: IHeader,
             column: ICol
         ) => string | boolean,
@@ -28,16 +33,16 @@ header: [
         css?: string,
         content?: "inputFilter" | "selectFilter" | "comboFilter",
         filterConfig?: {
-            filter?: (item: any, input: string) => boolean,
+            filter?: (item, input: string) => boolean,
             multiselection?: boolean,
             readonly?: boolean,
             placeholder?: string,
             virtual?: boolean,
             template?: function
         },
-        customFilter?: (item: any, input: string) => boolean,
+        customFilter?: (item, input: string) => boolean,
         headerSort?: boolean, // true by default
-        sortAs?: (cellValue: any) => string | number,
+        sortAs?: (cellValue) => string | number,
         htmlEnable?: boolean, // false by default
     }
 ];
@@ -86,7 +91,7 @@ Each header object may include:
             <td><b>sortAs</b></td><td>(optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</td>
         </tr>
         <tr>
-            <td><b>htmlEnable</b></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</td>
+            <td><b>htmlEnable</b></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, allows using and displaying HTML content in a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</td>
         </tr>
     </tbody>
 </table>

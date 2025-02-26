@@ -22,8 +22,8 @@ autoWidth?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false },
-        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { id: "country", header: [{ text: "Country" }], autoWidth: false },
+        { id: "population", header: [{ text: "Population" }] },
     ],
     autoWidth: true,
     data: dataset

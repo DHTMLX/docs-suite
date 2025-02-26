@@ -6,7 +6,7 @@ description: You can explore the template config of Grid column in the documenta
 
 # template
 
-@short: Optional. A function which returns a template with content for a cell(s)
+@short: Optional. A function which returns a template with content for a cell
 
 ### Usage
 

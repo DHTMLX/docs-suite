@@ -13,12 +13,17 @@ description: You can explore the footer config of Grid column in the documentati
 ~~~jsx
 footer?: [
     {
-        text?: string | ((content: {
-            [key: string]: string | number | null
-        }) => string),
+        text?: 
+            string |
+            ((content: {
+                [key: string]: string | number | null
+            }) => string),
         tooltip?: boolean | object, // true by default
         tooltipTemplate?: (
-            content: { value: string } & { [key: string]: string | number | null },
+            content: {
+                [key: string]: string | number | null;
+                value: string;
+            },
             header: IHeader,
             column: ICol
         ) => string | boolean,
@@ -59,7 +64,7 @@ Each footer object may include:
             <td><b>css</b></td><td>(optional) styling to be applied to a footer</td>
         </tr>
         <tr>
-            <td><b>htmlEnable</b></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, specifies the HTML content (inner HTML) of a footer. If set to <i>false</i>, the content of the footer cells will be displayed as a <i>string</i> value</td>
+            <td><b>htmlEnable</b></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, allows using and displaying HTML content in a footer. If set to <i>false</i>, the content of the footer cells will be displayed as a <i>string</i> value</td>
         </tr>
     </tbody>
 </table>

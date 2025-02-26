@@ -14,7 +14,6 @@ description: You can explore the minWidth config of Grid column in the documenta
 minWidth?: number;
 ~~~
 
-@default: 20
 
 @descr:
 ### Example
