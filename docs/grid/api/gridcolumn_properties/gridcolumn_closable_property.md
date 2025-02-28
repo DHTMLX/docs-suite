@@ -27,27 +27,18 @@ closable?: boolean;
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-            width: 150,
             id: "country",
             header: [{ text: "Country" }],
             // grouping of the "country" column is permanently enabled
             // and can't be switched off via the group panel
             closable: false, 
         },
-        {
-            width: 150,
-            id: "population",
-            header: [{ text: "Population" }],
-            groupable: true,
-        },
-        { width: 150, id: "destiny", header: [{ text: "Density (P/Km²)" }] },
-        { width: 150, id: "area", header: [{ text: "Land Area (Km²)" }] },
+        // more columns configuration objects
     ],
     group: {
-        order: ["country", "population"]
+        order: [ "country" ]
     },
-    groupable: true,
-    data: dataset
+    // more options
 });
 ~~~
 

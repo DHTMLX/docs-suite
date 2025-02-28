@@ -20,10 +20,10 @@ align?: "left" | "center" | "right";
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { id: "name", header:  [{ text: "Name", align: "center" }], align: "right"}
-        // more options
+        { id: "name", header: [{ text: "Name" }], align: "right" }, 
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

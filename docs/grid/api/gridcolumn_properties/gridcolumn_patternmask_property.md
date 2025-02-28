@@ -40,12 +40,11 @@ const grid = new dhx.Grid("grid_container", {
         {  
             id: "employee_id", 
             header: [{ text: "Employee ID" }], 
-            width: 110, 
             patternMask: "ID.000" 
         },
-        // more columns
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

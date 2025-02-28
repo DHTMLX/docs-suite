@@ -11,7 +11,7 @@ description: You can explore the template config of Grid column in the documenta
 ### Usage
 
 ~~~jsx
-template?: (cellValue: any, row: object, column: object) => string;
+template?: (cellValue, row: IRow, column: ICol) => string;
 ~~~
 
 ### Parameters
@@ -28,16 +28,16 @@ The `template` function takes 3 parameters:
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{text: "Country"}] },
-        { width: 150, id: "population", header: [{text: "Population"}] },
-        { width: 150, id: "netChange", header: [{text: "Net Change"}],
+        { 
+          id: "netChange", header: [{ text: "Net Change" }],
           htmlEnable: true,
-          template: function (text, row, column) {
-            return "<input type=\"checkbox\" " + (text /> 300000 ? "checked": "")  + ">";
+          template: (cellValue, row, column) => {
+            return "<input type=\"checkbox\" " + (cellValue /> 300000 ? "checked": "")  + ">";
           }
-        }
+        },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

@@ -20,7 +20,7 @@ If the `newOptions` property is enabled in the `editorConfig` object, all new op
 
 ~~~jsx
 options?: (string | { id: string | number, value: string })[] |
-	(column: object, row?: object) => (string | { id: string | number, value: string })[];
+	(column: ICol, row?: IRow) => (string | { id: string | number, value: string })[];
 ~~~
 
 ### Parameters
@@ -43,12 +43,12 @@ and must return either an array of string values or an array of objects
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-            width: 150, id: "status", header: [{text: "Status"}, {content: "selectFilter"}],
-            editorType: "select", options: ["Done", "In Progress", "Not Started"]
+            id: "status", header: [{ text: "Status" }],
+            editorType: "select", options: [ "Done", "In Progress", "Not Started" ]
         },
-        // more columns
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 }); 
 ~~~
 

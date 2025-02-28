@@ -27,10 +27,10 @@ width?: number;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }]},
-        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { id: "country", header: [{ text: "Country" }], width: 200 },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

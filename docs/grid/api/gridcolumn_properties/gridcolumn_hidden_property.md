@@ -22,10 +22,10 @@ hidden?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 150, id: "population", header: [{ text: "Population" }] },
-        { width: 150, id: "yearlyChange", hidden: true, header: [{ text: "Yearly Change" }] }
+        { id: "population", header: [{ text: "Population" }], hidden: true },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

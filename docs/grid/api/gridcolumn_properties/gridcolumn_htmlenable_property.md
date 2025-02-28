@@ -27,10 +27,10 @@ htmlEnable?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 150, id: "population", htmlEnable: true, header: [
+        { id: "population", htmlEnable: true, header: [
             { text: "<span class='header-title'>Population</span>" }
         ]}, 
-        // more columns
+        // more columns configuration objects
     ],
     // more options
 });

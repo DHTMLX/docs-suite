@@ -23,6 +23,7 @@ const grid = new dhx.Grid("grid_container", {
         { id: "density", header: [{ text: "Density (P/Km²)" }], gravity: 1 },
         // the column with the "area" id is two times wider than the column with the "density" id
         { id: "area", header: [{ text: "Land Area (Km²)" }], gravity: 2 },
+        // more columns configuration objects
     ],
     autoWidth: true,
     // more options

@@ -22,11 +22,10 @@ sortable?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }] },
-        { width: 150, id: "land", header: [{ text: "Land" }], sortable: false },
-        { width: 150, id: "density", header: [{ text: "Density" }] }
+        { id: "land", header: [{ text: "Land" }], sortable: false },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

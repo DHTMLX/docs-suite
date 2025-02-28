@@ -47,9 +47,8 @@ The `numberMask` property can be set in two ways:
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-            width: 130,
             id: "cost",
-            header: [{ text: "Cost" }, { content: "inputFilter" }],
+            header: [{ text: "Cost" }],
             numberMask: {
                 prefix: "$",
                 groupSeparator: ",",
@@ -59,9 +58,9 @@ const grid = new dhx.Grid("grid_container", {
                 minDecLength: 0
             },
         },
-        // more columns
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

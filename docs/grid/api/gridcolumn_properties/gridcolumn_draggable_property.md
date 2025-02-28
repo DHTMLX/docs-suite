@@ -22,12 +22,11 @@ draggable?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }]},
-        { width: 150, id: "land", header: [{ text: "Land" }] },
-        { width: 150, id: "density", header: [{ text: "Density" }], draggable: false }
+        { id: "density", header: [{ text: "Density" }], draggable: false },
+        // more columns configuration objects
     ],
-    data: dataset,
     dragItem: "column", 
+    // more options
 });
 ~~~
 

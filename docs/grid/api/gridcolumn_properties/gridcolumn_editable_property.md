@@ -22,16 +22,10 @@ editable?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { 
-          width: 150, id: "project",
-          editable: false,
-          header: [{ text: "Project" }, { content: "selectFilter" }]
-        },
-        { width: 150, id: "owner", header: [{ text: "Owner" }, { content: "inputFilter" }]},
-        { width: 150, id: "hours", header: [{ text: "Hours" }, { content: "inputFilter" }]},
-        // more columns
+        { id: "project", header: [{ text: "Project" }], editable: false },
+        // more columns configuration objects
     ],
-    editable: true
+    editable: true,
     // more options
 });
 ~~~

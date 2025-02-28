@@ -58,7 +58,7 @@ Each header object may include:
             <td><a href="../../../configuration/#headerfooter-text"><b>text</b></a></td><td>(optional) the text of a header or a callback function which is called with the following parameter:<ul><li><b>content</b> - an object with the content of the header tooltip that contains the calculated values as *key:value* pairs, where<ul><li>the *key* is either the key defined in the list or the functor name</li><li>the *value* can be a *string/number* or *null*</li></ul>The calculated values are taken either from the <b>summary</b> config option of the component or the <b>summary</b> config option of a column</li></ul></td>
         </tr>
         <tr>
-            <td><b>tooltip</b></td><td>(optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings; <i>true</i> by default. When set as an object, the <b>tooltip</b> config can have the following properties:<ul><li><b>force</b> - (optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, *false* by default</li><li><b>showDelay</b> - (optional) the time period that should pass before showing a tooltip, in ms</li><li><b>hideDelay</b> - (optional) the time period that should pass before hiding a tooltip, in ms</li><li><b>margin</b> - (optional) the margin between the node and tooltip; *8px* by default</li><li><b>position</b> - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default</li><li><b>css</b> - (optional) the style of a tooltip box</li></ul></td>
+            <td><a href="../../../configuration/#column-headerfooter-tooltip"><b>tooltip</b></a></td><td>(optional) enables/disables the header tooltip, or sets the configuration object with the tooltip settings; <i>true</i> by default. When set as an object, the <b>tooltip</b> config can have the following properties:<ul><li><b>force</b> - (optional) forces opening of a tooltip; if set to true, the <b>showDelay</b> and <b>hideDelay</b> settings are ignored, *false* by default</li><li><b>showDelay</b> - (optional) the time period that should pass before showing a tooltip, in ms</li><li><b>hideDelay</b> - (optional) the time period that should pass before hiding a tooltip, in ms</li><li><b>margin</b> - (optional) the margin between the node and tooltip; *8px* by default</li><li><b>position</b> - (optional) the position of a tooltip: *"right"*, *"bottom"*, *"center"*, *"left"*, *"top"*; *"bottom"* by default</li><li><b>css</b> - (optional) the style of a tooltip box</li></ul></td>
         </tr>
         <tr>
             <td><a href="../../../configuration/#column-headerfooter-tooltip"><b>tooltipTemplate</b></a></td><td>(optional) sets a template for the header tooltip. Takes into account the <a href="../../../configuration/#html-content-of-grid-columns">htmlEnable</a> property. The value of the <b>tooltipTemplate</b> property is a callback function which is called with the following parameters:<ul><li><b>content</b> - an object with the content of the header tooltip. Contains two properties which are available either from the component's or from the column's configuration:<ul><li><b>value</b> - the value rendered in a cell, including the applied templates</li><li>an object with the calculated values of the <b>summary</b> property, set as *key:value* pairs where:<ul><li>the *key* is either the key defined in the list or the functor name</li><li>the *value* can be a *string/number* or *null*</li></ul></li></ul></li><li><b>header</b> - the object of the column header</li><li><b>column</b> - the object of a column</li></ul>Return <i>false</i> to disable the tooltip</td>
@@ -91,7 +91,7 @@ Each header object may include:
             <td><b>sortAs</b></td><td>(optional) a function that defines the type to sort data as (e.g. string, number, date, etc.)</td>
         </tr>
         <tr>
-            <td><b>htmlEnable</b></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, allows using and displaying HTML content in a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</td>
+            <td><a href="../../../configuration/#html-content-of-grid-columns"><b>htmlEnable</b></a></td><td>(optional) <i>false</i> by default. If set to <i>true</i>, allows using and displaying HTML content in a header. If set to <i>false</i>, the content of the header cells will be displayed as a <i>string</i> value</td>
         </tr>
     </tbody>
 </table>
@@ -103,12 +103,10 @@ Each header object may include:
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 100, id: "a", header: [{ text: "#" }] },
-        { width: 100, id: "b", header: [{ text: "Title" }] },
-        { width: 200, id: "c", header: [{ text: "Name" }] },
-        { width: 200, id: "d", header: [{ text: "Address" }] }
+        { id: "title", header: [{ text: "Title" }] },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

@@ -11,14 +11,14 @@ description: You can explore the tooltipTemplate config of Grid column in the do
 ### Usage
 
 ~~~jsx
-tooltipTemplate?: (cellValue: any, row: object, column: object) => string;
+tooltipTemplate?: (cellValue, row: IRow, column: ICol) => string;
 ~~~
 
 ### Parameters
 
 The `tooltipTemplate` function takes 3 parameters:
 
-- **value** - (required) the value of a cell
+- **cellValue** - (required) the value of a cell
 - **row** - (required) an object with all cells in a row
 - **column** - (required) an object with the configuration of a column (see the [`columns`](grid/api/grid_columns_config.md) config)
 
@@ -31,23 +31,16 @@ Returning *false* from the function will block showing of the tooltip.
 const grid = new dhx.Grid("grid_container", {
     columns: [
         {
-            width: 200, id: "country", header: [{ text: "Country" }], align: "left",
+            id: "country", header: [{ text: "Country" }], 
             htmlEnable: true, 
-            tooltipTemplate: function (value, row, column) { 
-                if (row.country === "Bangladesh") {
-                    return false; // prevent a tooltip from being shown
-                }
-                return `<div className="custom-tooltip"> 
-                    <img src="../data/common/img/02/${row.avatar}.jpg" /> 
-                    <span>Last edit time:<br/>${row.editing.toUTCString()}</span> 
-                </div>`; 
-            } 
+            tooltipTemplate: (cellValue, row, col) => `<div class="custom-tooltip">
+                <img src="https://snippet.dhtmlx.com/codebase/data/common/img/02/${row.avatar}.jpg" />
+                <span>Last edit time:<br>${row.editing.toUTCString()}</span>
+            </div>`
         },
-        { width: 150, id: "population", header: [{ text: "Population" }] },
-        { width: 150, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
-        // more options
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

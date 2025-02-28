@@ -28,16 +28,12 @@ editorType?: "input" | "select" | "datePicker" | "combobox" | "multiselect" | "t
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        {
-            width: 150, id: "project", 
-            header: [{ text: "Project" }, { content: "selectFilter" }], 
-            editorType: "textarea"
-        }
-    // more columns
+        { id: "project", header: [{ text: "Project" }], editorType: "textarea" }, 
+        // more columns configuration objects
     ],
-    data: data,
     editable: true,
-    autoHeight: true
+    autoHeight: true,
+    // more options
 });
 ~~~
 

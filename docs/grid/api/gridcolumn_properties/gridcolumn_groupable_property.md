@@ -23,11 +23,10 @@ groupable?: boolean;
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "country", header: [{ text: "Country" }], groupable: true },
-        { id: "population", header: [{ text: "Population" }] },
-        { id: "area", header: [{ text: "Land Area (Km²)" }] }
+        // more columns configuration objects
     ],
     group: true,
-    data: dataset
+    // more options
 });
 ~~~
 

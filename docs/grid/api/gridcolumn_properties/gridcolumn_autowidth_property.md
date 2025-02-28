@@ -23,10 +23,10 @@ autoWidth?: boolean;
 const grid = new dhx.Grid("grid_container", {
     columns: [
         { id: "country", header: [{ text: "Country" }], autoWidth: false },
-        { id: "population", header: [{ text: "Population" }] },
+        // more columns configuration objects
     ],
     autoWidth: true,
-    data: dataset
+    // more options
 });
 ~~~
 

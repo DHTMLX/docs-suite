@@ -22,11 +22,11 @@ resizable?: boolean;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-    	{ id: "country", header: [{ text: "Country" }] },
-        { id: "population", header: [{ text: "Population" }], resizable: false }
+        { id: "population", header: [{ text: "Population" }], resizable: false },
+        // more columns configuration objects
     ],
-    data: dataset,
-    resizable: true 
+    resizable: true,
+    // more options 
 });
 ~~~
 

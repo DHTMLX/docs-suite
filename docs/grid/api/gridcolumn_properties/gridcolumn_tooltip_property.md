@@ -35,11 +35,11 @@ The **tooltip** config can be redefined for the header/footer tooltip.
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], tooltip: true }, 
-        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { id: "country", header: [{ text: "Country" }], tooltip: true }, 
+        // more columns configuration objects
     ],
-    data: dataset,
-    tooltip: false 
+    tooltip: false,
+    // more options 
 });
 ~~~
 

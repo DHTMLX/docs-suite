@@ -6,7 +6,9 @@ description: You can explore the afterRowResize event of Grid in the documentati
 
 # afterRowResize
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: fires after the height of a row is changed
 

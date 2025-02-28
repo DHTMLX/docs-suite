@@ -45,17 +45,16 @@ The `mark` property can be either an *object* or a *function*:
 <script>
     const grid = new dhx.Grid("grid_container", {
         columns: [
-            { width: 200, id: "country", header: [{ text: "Country" }] },
             {
-                width: 150, id: "population", header: [{ text: "Population" }],
+                id: "population", header: [{ text: "Population" }],
                 mark: {
                     min: "min_cell",
                     max: "max_cell"
                 }
             },
-            // more options
+            // more columns configuration objects
         ],
-        data: dataset
+        // more options
     });
 </script>
 ~~~

@@ -23,10 +23,10 @@ adjust?: "data" | "header" | "footer" | boolean;
 const grid = new dhx.Grid("grid_container", { 
     columns: [
         { id: "country", header: [{ text: "Country" }], adjust: "header" },
-        { id: "population", header: [{ text: "Population" }] }
+        // more columns configuration objects
     ],
     adjust: false,
-    data: dataset
+    // more options
 });
 ~~~
 

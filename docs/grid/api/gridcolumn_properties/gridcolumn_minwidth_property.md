@@ -21,14 +21,10 @@ minWidth?: number;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        {
-            minWidth: 150,
-            id: "project",
-            header: [{text: "Project"}],
-        },
-        // more columns   
+        { id: "project", header: [{ text: "Project" }], minWidth: 150 },
+        // more columns configuration objects   
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

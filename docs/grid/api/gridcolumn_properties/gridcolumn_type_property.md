@@ -22,17 +22,10 @@ type?: "string" | "number" | "boolean" | "date";
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        {
-            id: "quantity",
-            type: "number",
-            header: [{ text: "Quantity" }],
-            footer: [{ text: ({ sum }) => sum }],
-            summary: "sum",
-            numberMask: { prefix: "$" },
-        },
-        // columns config
+        { id: "quantity", type: "number", header: [{ text: "Quantity" }] },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

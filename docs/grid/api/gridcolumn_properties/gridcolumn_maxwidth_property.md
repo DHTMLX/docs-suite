@@ -20,11 +20,10 @@ maxWidth?: number;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { maxWidth: 150, width: 300, id: "country", header: [{ text: "Country" }] },
-        { maxWidth: 150, width: 300, id: "population", header: [{ text: "Population" }]},
-        { maxWidth: 150, width: 300, id: "yearlyChange", header: [{ text: "Yearly Change" }] },
+        { id: "country", header: [{ text: "Country" }], maxWidth: 150 },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

@@ -42,9 +42,9 @@ const grid = new dhx.Grid("grid_container", {
             summary: "sum",
             numberMask: { prefix: "$" },
         },
-        // more columns
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 

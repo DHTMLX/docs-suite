@@ -105,7 +105,7 @@ You will find the full list of the configuration properties of a Grid column [he
 
 ### Alignment
 
-Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the `align` option:
+Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header/footer via the `align` option:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -2532,7 +2532,7 @@ const grid = new dhx.Grid("grid_container", {
             column: "population",
             rowspan: 9,
             text: "Some text",
-            toltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
         },
     ],
     data: dataset

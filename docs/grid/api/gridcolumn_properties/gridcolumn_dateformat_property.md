@@ -26,13 +26,10 @@ dateFormat?: string;
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { 
-            width: 150, id: "date", header: [{ text: "Date" }], 
-            type: "date", dateFormat: "%M %d %Y"
-        },
-        // more columns
+        { id: "date", header: [{ text: "Date" }], type: "date", dateFormat: "%M %d %Y" },
+        // more columns configuration objects
     ],
-    data: dataset
+    // more options
 });
 ~~~
 
