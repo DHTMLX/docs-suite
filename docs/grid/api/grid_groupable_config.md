@@ -6,7 +6,7 @@ description: You can explore the groupable config of Grid in the documentation o
 
 # groupable
 
-@short: Optional. Enables grouping data by values in all columns
+@short: Optional. Enables grouping data by values in all columns via the user interface
 
 :::tip pro version only
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
@@ -43,6 +43,12 @@ const grid = new dhx.Grid("grid_container", {
     - either by sorting the grouped field beforehand
     - or by clicking a group element on the group panel
 - You can edit the nesting level of grouping by modifying the grouping order via either moving elements to the group panel or removing elements from the group panel
+
+:::info important
+- Data grouping isn't intended for working with `lazyDataProxy`
+- Modifying the values of grouped elements won't modify the aggregated values
+- You mustn't change the order of elements grouping by drag-n-drop
+:::
 
 **Related article**: [Grouping data](grid/usage.md#grouping-data)
 

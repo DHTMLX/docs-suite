@@ -6,7 +6,9 @@ description: You can explore the afterColumnDrag event of Grid in the documentat
 
 # afterColumnDrag
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip pro version only
+The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: fires after dragging of a column is finished
 

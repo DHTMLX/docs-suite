@@ -6,7 +6,9 @@ description: You can explore the autoHeight config of Grid in the documentation 
 
 # autoHeight
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.}}
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
 
 @short: Optional. Makes long text split into multiple lines based on the width of the column, controls the automatic height adjustment of the header/footer and cells with data
 
@@ -29,8 +31,8 @@ const grid = new dhx.Grid("grid_container", {
 
 You can control the autoheight of the header/footer separately with the help of the [](grid/api/grid_headerautoheight_config.md) and [](grid/api/grid_footerautoheight_config.md) configuration options of Grid. For example, you can disable autoheight of the header and the footer, while it is enabled for the whole Grid:
 
-~~~js
-const grid = new dhx.Grid("grid", {
+~~~jsx
+const grid = new dhx.Grid("grid_container", {
     columns: [
         // columns config
     ],
@@ -46,7 +48,7 @@ const grid = new dhx.Grid("grid", {
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content
 - you can also specify `htmlEnable:true` in the configuration object of Grid
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
-- in case of complex HTML data, usage of the **autoHeight** config may lead to incorrect size calculations
+- in case of complex HTML data, usage of the `autoHeight` config may lead to incorrect size calculations
 - note that if you decide to change the font type, its size and offsets, correct calculation of the cell's autoHeight can't be ensured
 
 @changelog: added in v7.1

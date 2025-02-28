@@ -6,7 +6,9 @@ description: You can explore the dragItem config of Grid in the documentation of
 
 # dragItem
 
-{{pronote This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br>In case you use GPL version, you will be able to reorder rows only.}}
+:::tip pro version only
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package. <br>In case you use GPL version, you will be able to reorder rows only.
+:::
 
 @short: Optional. Enables the possibility to reorder grid columns or (and) rows by drag and drop
 

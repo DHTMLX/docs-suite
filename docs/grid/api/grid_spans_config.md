@@ -107,7 +107,7 @@ const grid = new dhx.Grid("grid_container", {
             column: "population",
             rowspan: 9,
             text: "Some text",
-            toltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
         },
     ],
     data: dataset

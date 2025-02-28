@@ -48,17 +48,17 @@ The property can be specified to one of the available adjustment modes:
     </tbody>
 </table>
 
-The **adjust** property has a priority over the [autoWidth](../../../grid/configuration/#autowidth-for-columns) property if it is specified either for a grid or for its column, and over the [width](../../../grid/api/api_gridcolumn_properties/) property of the column.
+The `adjust` property has a priority over the [`autoWidth`](../../../grid/configuration/#autowidth-for-columns) property if it is specified either for a grid or for its column, and over the [`width`](../../../grid/api/api_gridcolumn_properties/) property of the column.
 
-The width the columns will be adjusted to also depends on the values of the [minWidth/maxWidth](../../../grid/api/api_gridcolumn_properties/) properties if they are set for a column.
+The width the columns will be adjusted to also depends on the values of the [`minWidth/maxWidth`](../../../grid/api/api_gridcolumn_properties/) properties if they are set for a column.
 
 **Note** that:
 
 - to optimize performance, you should specify `htmlEnable: true` in the configuration object of the column which contains HTML content
 - you can also specify `htmlEnable:true` in the configuration object of Grid
 - `htmlEnable: true` allows calculating the content of simple HTML templates by excluding HTML markup and calculating internal content
-- in case of complex HTML data, usage of the **adjust** config may lead to incorrect size calculations
-- the enabled **adjust** config (including the "header", "footer", "data" modes) adjusts the width of columns taking into account the [template](grid/api/api_gridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [header/footer](grid/api/api_gridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated
+- in case of complex HTML data, usage of the `adjust` config may lead to incorrect size calculations
+- the enabled `adjust` config (including the "header", "footer", "data" modes) adjusts the width of columns taking into account the [`template`](grid/api/api_gridcolumn_properties.md) added to cells. You need to set the **content** attribute of the [`header/footer`](grid/api/api_gridcolumn_properties.md) properties to one of the following modes: "avg" | "sum" | "max" | "min" | "count", otherwise **text** will be calculated
 
 @changelog: added in v6.4
 

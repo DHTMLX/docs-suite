@@ -6,7 +6,7 @@ description: You can explore the htmlEnable config of Grid in the documentation 
 
 # htmlEnable
 
-@short: Optional. Specifies the HTML content (inner HTML) of Grid columns
+@short: Optional. Allows using and displaying HTML content in Grid columns
 
 @signature: {'htmlEnable?: boolean;'}
 
