@@ -105,7 +105,7 @@ You will find the full list of the configuration properties of a Grid column [he
 
 ### Alignment
 
-Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the `align` option:
+Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header/footer via the `align` option:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -197,13 +197,19 @@ You can disable this functionality for a specified column via setting the [](gri
 ~~~jsx {3,6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false },
-        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { id: "country", header: [{ text: "Country" }], autoWidth: false },
+        { id: "population", header: [{ text: "Population" }] },
     ],
     autoWidth: true,
     data: dataset
 });
 ~~~
+
+Also note:
+
+- If `autoWidth` is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the `minWidth/maxWidth` properties if they are set for the column.
+- The property is ignored if the [`adjust`](#autosize-for-columns) property is used.
+- If the `width` property is specified in the configuration object of a column, the `autoWidth` property won't work for this column.
 
 ### Formatting columns
 
@@ -2079,7 +2085,7 @@ If you use the GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to
 
 ### Drag-n-drop inside the grid
 
-It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"``](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
+It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
 ~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {
@@ -2526,7 +2532,7 @@ const grid = new dhx.Grid("grid_container", {
             column: "population",
             rowspan: 9,
             text: "Some text",
-            toltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
         },
     ],
     data: dataset
