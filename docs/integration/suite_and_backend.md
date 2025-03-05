@@ -8,25 +8,25 @@ description: You can explore how to connect DHTMLX Suite to a backend. Browse de
 
 ![](../assets/integration/work_with_backend.png)
 
-DHTMLX Suite 8 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API).
+DHTMLX Suite 9 or DHTMLX components don't have any special requirements for the backend. They can be easily connected with any backend platform which supports the REST API (RESTful API). Besides, the DHTMLX library allows providing a [multi-user backend](#multiuser-real-time-updated-backend-save-method-getting-editing-deleting-and-sending-data) for any Suite component.
 
-The DHTMLX library includes the [DataCollection](/data_collection/) helper that completely supports REST API for dealing with the backend.
+The DHTMLX library includes the [DataCollection](/data_collection/) helper that completely supports REST API for dealing with the backend. Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](/data_collection/api/datacollection_load_method/) method of DataCollection.
 
-Thus, to transfer data from your backend to the Suite components, all you need to do is create a valid JSON dataset. You can load it into the component using the [load()](/data_collection/api/datacollection_load_method/) method of DataCollection.
+
 
 ## Examples of using DHTMLX Suite widgets with Node.js
-
-Let's have an overview of the examples.
 
 :::info
 Download and take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).
 :::
 
-Here you can find 11 interactive samples. Follow the instructions in the README.md file to run the examples.
+Here you can find 12 interactive samples. Follow the instructions in the README.md file to run the examples.
 
 You can easily modify any widget for your purposes and find out how it works.
 
+:::tip note
 Pay attention: the components of the demo work with one database. When editing data in one component, you affect data in other components.
+:::
 
 To reset the database, stop the server and delete the file with the `.sqlite` extension from the root directory of the project.
 
@@ -122,11 +122,17 @@ The following request methods are used in this example: `GET`, `PUT`, `POST`, `D
 
 ![](../assets/integration/work_with_backend_save.png)
 
-The example is created to show you how to save the changes made in data to the backend via the **save()** method of DataCollection. 
+The example is created to show you how to save the changes made in data to the backend via the `save()` method of DataCollection. 
 
 This example of Grid is visually the same as the previous one but the ways of adding and editing data in this example are developed in another way. For instance, after you click the "Add new card" button, an empty row will be added after the last row in the grid. Editing of any cell of the grid is implemented by double-clicking on the cell. 
 
 The following request methods are used in this example: `GET`, `PUT`, `POST`, `DELETE`.
+
+### Multiuser (real-time updated) backend. Save method. Getting, editing, deleting, and sending data
+
+This example shows how to implement a multi-user backend for Grid with the help of Node.js and the Faye library to provide live data updates.
+
+You can create a multi-user (real-time updated) backend for any Suite widget. The backend can be implemented in any language, and you can use any library that will allow the client and the server sides interact via the WebSocket protocol.
 
 :::info
 Download and take a look at the [Examples of using DHTMLX Suite widgets with Node.js](https://github.com/DHTMLX/nodejs-suite-demo).

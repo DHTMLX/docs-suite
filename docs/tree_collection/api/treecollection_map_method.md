@@ -11,10 +11,10 @@ description: You can explore the map method of TreeCollection in the documentati
 @signature: {'map(callback: function, id?: string | number, direct?: boolean): any;'}
 
 @params:
-- `callback: function` - the function that will be applied to every item. The function can take three parameters:
-    - `item: object` - required, the object of an item
-    - `index: number` - optional, the index of an item
-    - `array: object[]` - optional, an array with items  
+- `callback: function` - the function that will be applied to every item. The function is called with the following parameters:
+    - `item: object` - the object of an item
+    - `index: number` - the index of an item
+    - `array: object[]` - an array of items the method was called upon  
 - `id: string | number` - the ID of a control the child items of which will be included
 - `direct: boolean` - defines whether only direct children of the control will be included in the iteration
 
@@ -29,7 +29,7 @@ toolbar.paint();
 
 To work with all children of a particular control, pass one more parameter to **map()** - the ID of the control:
 
-~~~js
+~~~jsx
 toolbar.data.map((item)=>{
     // disable items
     item.disabled = true;
@@ -37,9 +37,9 @@ toolbar.data.map((item)=>{
 toolbar.paint();
 ~~~
 
-If you want to iterate only through immediate children, set the third parameter to _false_:
+If you want to iterate only through immediate children, set the third parameter to *false*:
 
-~~~js
+~~~jsx
 toolbar.data.map((item)=>{
     // add a css class to each item
     item.css = "highlight";

@@ -8,6 +8,87 @@ description: You can explore what's new in DHTMLX Suite and its release history 
 
 Before updating DHTMLX to the latest version, please check the [Migration to Newer Versions](migration.md) guide to avoid possible breakdowns.
 
+## Version 9.1.1 
+
+Released on February 24, 2025
+
+### Fixes
+
+- Combobox. Adding a new option in the "multiselection" mode opens the popup list
+- Form. The problem with updating the value of the `preMessage` property of the Textarea control
+- Grid. After editing grouped data with the `adjust:true` option in the Grid configuration, the adjustable cell width is reset on ungrouping data 
+- Grid. The issue with using a sub-row when the `dhx.scrollViewConfig.enable` configuration option is set to *true* 
+- Grid. An error caused by the use of options containing commas in the "combobox" editor
+- Grid. Incorrect calculation of the row `autoHeight`, if the length of a word in a cell exceeds the column width
+
+## Version 9.1 
+
+Released on February 18, 2025
+
+<a href="https://dhtmlx.com/blog/dhtmlx-suite-9-1/" target="_blank">Review of the release on the blog</a>
+
+### Breaking changes
+
+This version brings some updates in the API methods. Check the [Migration](migration.md#90---91) guide to keep in step with the latest updates.
+
+### New functionality
+
+#### Grid 
+
+- [Row expander](grid/configuration.md#row-expander) with the possibility to insert any Suite widget or HTML content (PRO version)
+- [Multi-sorting](grid/usage.md#sorting-by-multiple-columns) functionality that allows sorting Grid by several columns (PRO version)
+
+### Fixes
+
+- DataCollection/TreeCollection. The `sort()` method called without arguments doesn't reset the applied sorting 
+- Grid. Falsy firing of data events on row drag-n-drop
+- Grid. The issue with a gap appearing while calculating `autoHeight` of a cell
+- Toolbar. Incorrect menu items positioning
+- TreeCollection. The `restoreOrder()` method doesn't reset the applied sorting
+
+### New demo on backend integration
+
+- [Multiuser (real-time updated) backend. Save method. Getting, editing, deleting, and sending data](https://github.com/DHTMLX/nodejs-suite-demo/blob/master/public/views/12_grid_with_form_multiuser.html)
+
+### New samples
+
+#### Grid
+
+- [Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+- [Row expander. Subgrid data loading](https://snippet.dhtmlx.com/03ndqrqt)
+- [Row expander. Subgrid events handling](https://snippet.dhtmlx.com/3364si14)
+- [Row expander with Form (any Suite widget can be embedded)](https://snippet.dhtmlx.com/ov95hiet)
+- [Row expander with Chart (any Suite widget can be embedded)](https://snippet.dhtmlx.com/ia7ugn1l)
+- [Row expander. Subgrid with Pagination](https://snippet.dhtmlx.com/w1jdz5r8)
+- [Row expander. Multi-level nested subgrids](https://snippet.dhtmlx.com/dih3z7cz)
+- [Row expander. Custom HTML and hiding toggle icon](https://snippet.dhtmlx.com/pvgyd3z9)
+- [Row expander. Subgrid with rows expanded by criteria](https://snippet.dhtmlx.com/pbubj175)
+- [Row expander. Subgrid only in specific rows](https://snippet.dhtmlx.com/03udbtmr)
+- [Sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/4ej0i3qi)
+- [Grouping with sorting by multiple columns (multisorting)](https://snippet.dhtmlx.com/786zr190)
+- [Grouping and template in group headers](https://snippet.dhtmlx.com/dywmb6ec)
+- [Search and highlight results](https://snippet.dhtmlx.com/p74701lu) 
+- [Hiding columns using header context menu](https://snippet.dhtmlx.com/ygfj3uo3)
+- [Empty state](https://snippet.dhtmlx.com/sbajbjre)
+- [Row pinning with checkbox](https://snippet.dhtmlx.com/idu0mdmr)
+- [Dynamic calculations](https://snippet.dhtmlx.com/6nrd0v2y)
+- [Dataview editor for second column](https://snippet.dhtmlx.com/1lvoz1ra)
+- [Custom yes/no editor](https://snippet.dhtmlx.com/4nq80zi3)
+- [Additional details in second grid (linked grids)](https://snippet.dhtmlx.com/u0e135f1)
+- [Readonly (disabled) rows](https://snippet.dhtmlx.com/h3nah0jv)
+- [Rotated (vertical) header](https://snippet.dhtmlx.com/xdmemdjg)
+- [Grid and Pivot. Integration](https://snippet.dhtmlx.com/0uo39y8c)
+
+## Version 9.0.4 
+
+Released on February 4, 2025
+
+### Fixes
+
+- Core. Incorrect work of `numberMask` used with the `allowNegative` property on initialization of components
+- Grid. An issue with ignoring the `maxWidth` property specified for a column
+- Window. An issue with restoring of embedded views (Grid scroll)
+
 ## Version 9.0.3
 
 Released on January 13, 2025
@@ -112,14 +193,14 @@ In this version TreeGrid becomes a part of Grid. Check the [Migration](migration
 
 ### New samples
 
-- [Grid. Grouping (PRO)](https://snippet.dhtmlx.com/dvqy4ewe)
-- [Grid. Grouping customization (PRO)](https://snippet.dhtmlx.com/z3iw2p3k)
-- [Grid. Grouping aggregated data via data collection (PRO)](https://snippet.dhtmlx.com/vo3pgkgh)
-- [Grid. Grouping missing data (PRO)](https://snippet.dhtmlx.com/0geopa0v)
-- [Grid. Grouping and totals in the summary row (PRO)](https://snippet.dhtmlx.com/zhc67itn)
-- [Grid. Grouping and totals in group headers (PRO)](https://snippet.dhtmlx.com/7bp6knt7)
-- [Grid. Grouping and totals in group headers via data collection (PRO)](https://snippet.dhtmlx.com/84wfunzz)
-- [Grid. Grouping and totals in the summary row via data collection (PRO)](https://snippet.dhtmlx.com/ihd6gtpj)
+- [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
+- [Grid. Grouping customization](https://snippet.dhtmlx.com/z3iw2p3k)
+- [Grid. Grouping aggregated data via data collection](https://snippet.dhtmlx.com/vo3pgkgh)
+- [Grid. Grouping missing data](https://snippet.dhtmlx.com/0geopa0v)
+- [Grid. Grouping and totals in the summary row](https://snippet.dhtmlx.com/zhc67itn)
+- [Grid. Grouping and totals in group headers](https://snippet.dhtmlx.com/7bp6knt7)
+- [Grid. Grouping and totals in group headers via data collection](https://snippet.dhtmlx.com/84wfunzz)
+- [Grid. Grouping and totals in the summary row via data collection](https://snippet.dhtmlx.com/ihd6gtpj)
 - [Grid. Custom totals for footer and columns](https://snippet.dhtmlx.com/jhjxjv2l)
 - [Grid. Custom totals for footer and columns with dynamic updates on edit](https://snippet.dhtmlx.com/59d6hqtm)
 - [Grid. Pattern and number masks](https://snippet.dhtmlx.com/45gjhciv)
@@ -775,9 +856,9 @@ Released on April 18, 2023
     - [the ability to select multiple cells/rows in TreeGrid](grid/configuration.md#multiple-selection-of-grid-cells)
     - [the ability to drag-n-drop multiple rows](grid/configuration.md#drag-n-drop-of-multiple-rows)
 - The ability to define [whether collapsed rows should expand while hovering them over during drag-n-drop](grid/configuration.md):
-    - new property: [`dragExpand`](grid/api/treegrid_mode/grid_dragexpand_config.md)
+    - new property: [`dragExpand`](grid/api/grid_dragexpand_config.md)
 - The ability to initialize TreeGrid in the collapsed state:
-    - new property: [`collapsed`](grid/api/treegrid_mode/grid_collapsed_config.md)
+    - new property: [`collapsed`](grid/api/grid_collapsed_config.md)
 
 ### Updates
 
@@ -1681,7 +1762,7 @@ Check the [Migration article](migration.md#70---71) to keep in step with the lat
 - The ability to [customize the tooltip of a column](grid/customization.md#adding-template-to-tooltip) via the [tooltipTemplate](grid/api/api_gridcolumn_properties.md) configuration option of a TreeGrid column
 - The ability [to define the height for a separate row of TreeGrid](grid/configuration.md#row-height)
 - New events are added: [beforeRowResize](grid/api/grid_beforerowresize_event.md) and [afterRowResize](grid/api/grid_afterrowresize_event.md), [beforeSort](grid/api/grid_beforesort_event.md) and [afterSort](grid/api/grid_aftersort_event.md)
-- The ability to define the id of the parent root via the [rootParent](grid/api/treegrid_mode/grid_rootparent_config.md) configuration option of TreeGrid
+- The ability to define the id of the parent root via the [rootParent](grid/api/grid_rootparent_config.md) configuration option of TreeGrid
 
 #### Window
 
@@ -1752,7 +1833,7 @@ Released on December 21, 2020
 - Fix the issue which caused the hidden column with the filter not to be shown in Grid
 - Fix the incorrect work of the select filter when applying to the columns with numeric values in Grid
 - Fix the incorrect work of regular expressions in columns with filters in Grid
-- Fix the issue with the [collapseAll()](grid/api/treegrid_mode/grid_collapseall_method.md) method in TreeGrid
+- Fix the issue with the [collapseAll()](grid/api/grid_collapseall_method.md) method in TreeGrid
 - Fix the incorrect work of the [save()](data_collection/api/datacollection_save_method.md) method of Data Collection
 - Fix the issue with display of sorting icon when applying alignment to Grid columns
 - Fix the issue which caused the item in the filtered state after deleting from the data collection to be still found via the [afterRemove](data_collection/api/datacollection_afterremove_event.md) event
@@ -2226,7 +2307,7 @@ Released on January 28, 2020
 - The possibility [to set selection to multiple cells/rows of Grid](grid/usage.md#using-selection-api) via the `setCell()` method of the selection object
 - New additional arrow keyboard shortcuts are added to [Keyboard navigation](grid/configuration.md#keyboard-navigation)
 - The ability [to sort content of any Grid column by clicking on its header](grid/configuration.md#sortable-columns) via the [](grid/api/grid_sortable_config.md) property
-- The [](grid/api/grid_getsortingstate_method.md) method that [allows getting the current state of sorting data in Grid](grid/usage.md#getting-the-sorting-state) is added
+- The `getSortingState()` method that [allows getting the current state of sorting data in Grid](grid/usage.md#getting-the-sorting-state) is added
 - The possibility [to check visibility of a column](grid/usage.md#checking-visibility-of-a-column) via the [](grid/api/grid_iscolumnhidden_method.md) method
 - The ability to enable [dynamic loading of data in Grid](grid/data_loading.md#dynamic-loading)
 - The [](grid/api/grid_afterkeydown_event.md) and [](grid/api/grid_beforekeydown_event.md) events are added
@@ -2281,11 +2362,11 @@ Released on January 28, 2020
 #### TreeGrid
 
 - The ability [to check visibility of a column](grid/usage.md#checking-visibility-of-a-column) via the [](grid/api/grid_iscolumnhidden_method.md) method
-- The [](grid/api/treegrid_mode/grid_aftercollapse_event.md), [](grid/api/treegrid_mode/grid_beforecollapse_event.md), [](grid/api/treegrid_mode/grid_afterexpand_event.md), [](grid/api/treegrid_mode/grid_beforeexpand_event.md) events are added
+- The [](grid/api/grid_aftercollapse_event.md), [](grid/api/grid_beforecollapse_event.md), [](grid/api/grid_afterexpand_event.md), [](grid/api/grid_beforeexpand_event.md) events are added
 - The possibility [to adjust the size of TreeGrid columns to the size of TreeGrid](grid/configuration.md#autowidth-for-columns) via the [](grid/api/grid_autowidth_config.md) configuration property
 - The ability [to adjust the width of columns to the width of their content automatically](grid/configuration.md#autosize-for-columns) with the help of the [](grid/api/grid_adjust_config.md) property
 - The ability [to sort content of any TreeGrid column by clicking on its header](grid/configuration.md#sortable-columns) using the [](grid/api/grid_sortable_config.md) property
-- The [](grid/api/grid_getsortingstate_method.md) method that [allows getting the current state of sorting data in TreeGrid](grid/usage.md#getting-the-sorting-state) is added
+- The `getSortingState()` method that [allows getting the current state of sorting data in TreeGrid](grid/usage.md#getting-the-sorting-state) is added
 
 #### Window
 
@@ -2357,7 +2438,7 @@ Released on December 12, 2019
 
 #### TreeGrid
 
-- The [](grid/api/treegrid_mode/grid_collapse_method.md), [](grid/api/treegrid_mode/grid_collapseall_method.md), [](grid/api/treegrid_mode/grid_expand_method.md), [](grid/api/treegrid_mode/grid_expandall_method.md) methods are added
+- The [](grid/api/grid_collapse_method.md), [](grid/api/grid_collapseall_method.md), [](grid/api/grid_expand_method.md), [](grid/api/grid_expandall_method.md) methods are added
 - The ability [to add custom elements into TreeGrid cells](grid/configuration.md#html-content-of-grid-columns) using the [](grid/api/grid_htmlenable_config.md) property
 
 #### Menu/Ribbon/SideBar/Toolbar

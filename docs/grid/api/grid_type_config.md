@@ -12,7 +12,7 @@ description: You can explore the type config of Grid in the documentation of the
 
 @example:
 const grid = new dhx.Grid("grid_container", {
-	type: "tree",
+    type: "tree",
     columns: [
         // columns config
     ],

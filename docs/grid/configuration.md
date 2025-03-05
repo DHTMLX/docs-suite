@@ -105,7 +105,7 @@ You will find the full list of the configuration properties of a Grid column [he
 
 ### Alignment
 
-Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header via the `align` option:
+Starting from v6.5, there is the ability to align data in a column as well as to align data in the column's header/footer via the `align` option:
 
 ~~~jsx
 const grid = new dhx.Grid("grid_container", {
@@ -197,13 +197,19 @@ You can disable this functionality for a specified column via setting the [](gri
 ~~~jsx {3,6}
 const grid = new dhx.Grid("grid_container", {
     columns: [
-        { width: 200, id: "country", header: [{ text: "Country" }], autoWidth: false },
-        { width: 150, id: "population", header: [{ text: "Population" }] },
+        { id: "country", header: [{ text: "Country" }], autoWidth: false },
+        { id: "population", header: [{ text: "Population" }] },
     ],
     autoWidth: true,
     data: dataset
 });
 ~~~
+
+Also note:
+
+- If `autoWidth` is set for a column, the width of the column is calculated on the base of the sizes of the container of the grid and the values of the `minWidth/maxWidth` properties if they are set for the column.
+- The property is ignored if the [`adjust`](#autosize-for-columns) property is used.
+- If the `width` property is specified in the configuration object of a column, the `autoWidth` property won't work for this column.
 
 ### Formatting columns
 
@@ -1021,6 +1027,10 @@ const data = [
 ];
 ~~~
 
+:::info note
+Note that the *ids* of the **multiselect** editor options specified as *objects* and the options specified as *strings* shouldn't contain the `,` separator.
+:::
+
 #### Configuring the multiselect editor
 
 There is a list of [configuration settings](grid/api/api_gridcolumn_properties.md) you may provide for the **multiselect** editor type. Use the `editorConfig` property to specify the desired settings:
@@ -1323,7 +1333,9 @@ const columnSummary = grid.getSummary("age");
 console.log(columnSummary); //{ totalPopulation: 1000000, avgAge: 28 } - the value of the "age" column only
 ~~~
 
-## Header/footer text
+## Column header/footer
+
+### Header/footer text
 
 You can specify the text of the header/footer column via the `text` property. It can be set either as a *string* or a *callback function* which is called with the following parameter: 
 
@@ -1355,7 +1367,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-## Header/footer filters
+### Header/footer filters
 
 There are three types of filters that you can specify in the header/footer content of a [Grid column](grid/api/grid_columns_config.md):
 
@@ -1414,7 +1426,7 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-### The list of configuration properties for comboFilter
+#### The list of configuration properties for comboFilter
 
 - **filter** - (*function*) sets a custom function for filtering Combo Box options
 - **multiselection** - (*boolean*) enables selection of multiple options
@@ -1425,7 +1437,7 @@ const grid = new dhx.Grid("grid_container", {
 - **virtual** - (*boolean*) enables dynamic loading of data on scrolling the list of options
 - **template** - (*function*) a function which returns a template with content for the filter options. Takes an option item as a parameter
 
-### Customizing header/footer filters
+#### Customizing header/footer filters
 
 To add a custom function with your you own logic for the filter of a Grid column, you need to set the `customFilter` attribute when configuring the header/footer content of the [column](grid/api/api_gridcolumn_properties.md).
 
@@ -1453,7 +1465,7 @@ const grid = new dhx.Grid("grid_container", {
 
 The `customFilter` attribute is a function which compares the value of each cell of the column with the value which is selected in the header/footer filter of the column. If the value of the cell matches the specified criteria, the function returns *true*, otherwise, it returns *false*.
 
-## Header/footer height
+### Header/footer height
 
 You can change the height of the header/footer in one of the following ways:
 
@@ -1616,19 +1628,464 @@ const grid = new dhx.Grid("grid_container", {
 
 **Related sample**: [Grid. Frozen columns and rows](https://snippet.dhtmlx.com/hcgl9nth)
 
+## Row expander
+
+The row expander functionality allows using nested content in Grid sub-rows. You can add a Grid or any other Suite widget, as well as some HTML content into a sub-row. 
+
+:::tip Pro version only 
+This functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
+:::
+
+![](../assets/grid/row_expander.png)
+
+### Adding sub-rows 
+
+In order to enable the row expander feature, you should use the [`subRow`](grid/api/grid_subrow_config.md) configuration option. It defines the content of sub-rows for each row of the Grid. The `subRow` property is a callback function which is called with the row object as a parameter and should return an HTML string or the constructor of a Suite component (Grid, Chart, Form, DataView, etc.).
+
+:::note
+Note that when the `subRow` config is used, Grid doesn't support the [TreeGrid mode](grid/treegrid_mode.md) and the [data grouping](grid/usage.md#grouping-data) functionality.
+:::
+
+Check the example of using a sub-row with an HTML content:
+
+~~~jsx {8-10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "zone_name", header: [{ text: "Zone name" }] },
+        { id: "temperature", header: [{ text: "Temperature" }] },
+        { id: "status", header: [{ text: "Status" }] },
+    ],
+    data: dataset,
+    subRow: ({ zone_name }) => {
+        return `<div>Details for ${zone_name}</div>`;
+    },
+});
+~~~
+
+**Related sample:** [Grid. Row expander. Custom HTML and hiding toggle icon](https://snippet.dhtmlx.com/pvgyd3z9)
+
+In the example below a sub-row contains a subgrid:
+
+~~~jsx {7-16}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "zone_name", header: [{ text: "Zone name" }] },
+        { id: "temperature", header: [{ text: "Temperature" }] },
+    ],
+    data: dataset,
+    subRow: ({ data }) => {
+        return new dhx.Grid(null, {
+            columns: [
+                { id: "animal_type", header: [{ text: "Animal type" }] },
+                { id: "name", header: [{ text: "Name" }] },
+            ],
+            data,
+            autoWidth: true,
+        });
+    },
+});
+~~~
+
+**Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+
+### Adjusting configuration of sub-rows
+
+You can define common configuration settings of all sub-rows or provide specific options for each sub-row via the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid.
+
+This property can be used either as a callback function or as an object:
+
+- when set as an *object*, the specified parameters are applied to all the rows
+- when set as a *callback function*, it is called with the row object as a parameter and returns an object, which allows providing specific configuration for each particular row 
+
+The **subRowConfig** object may contain the following properties:
+
+- `expanded` - (*boolean*) defines whether a sub-row is expanded by default, *false* by default
+- `preserve` - (*boolean*) saves the state of sub-rows when they are expanded/collapsed, hidden from the visible area, the data is updated, *false* by default
+- `toggleIcon` - (*boolean*) enables the icon for sub-rows expanding/collapsing, *true* by default
+- `height` - (*number*) the height of a sub-row in pixels, *200* by default
+- `padding` - (*string|number*) the inner padding of a sub-row, *8* by default
+- `css` - (*string*) user-defined CSS classes for a sub-row
+- `fullWidth` - (*boolean*) defines whether a sub-row will take all the width of Grid, *false* by default
+
+:::info note
+The `fullWidth` property works only if the `subRowConfig` property is initialized as an object.
+:::
+
+The following example shows how to provide global configuration options for sub-rows:
+
+~~~jsx {7-11}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "zone_name", header: [{ text: "Zone name" }] },
+        { id: "temperature", header: [{ text: "Temperature" }] },
+    ],
+    data: dataset,
+    subRowConfig: {
+        height: 200,
+        padding: 8,
+        fullWidth: true,
+    },
+    subRow: ({ zone_name }) => `<div>Details for ${zone_name}</div>`,
+});
+~~~
+
+**Related sample:** [Grid. Row expander. Full config](https://snippet.dhtmlx.com/xdw2037t)
+
+### Dynamic configuration of sub-rows
+
+You can dynamically expand/collapse certain sub-rows or adjust their appearance (specify the size of a cell, provide particular styles for sub-rows, etc.) on initialization of Grid depending on some conditions, using the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration property of Grid set as a callback function. Check the example below:
+
+~~~jsx {7-11}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "zone_name", header: [{ text: "Zone name" }] },
+        { id: "temperature", header: [{ text: "Temperature" }] },
+    ],
+    data: dataset,
+    subRowConfig: (row) => ({
+        height: 200,
+        expanded: row.temperature > 30,
+        css: row.temperature > 30 ? "hot-zone" : "cool-zone",
+    }),
+    subRow: ({ zone_name }) => `<div>Details for ${zone_name}</div>`,
+});
+~~~
+
+In the above example the sub-rows are dynamically configured depending on the value in the column with the "temperature" id. If the temperature value is more than 30, a sub-row will be expanded and gets the CSS "hot-zone" class (or "cool-zone", if the temperature value is less than 30). The height of an expanded sub-row cell will be 200px.
+
+#### Adding sub-rows for specific rows
+
+You can define which row a sub-row should be created for with the help of the `height` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option. If you don't want to create sub-rows for particular rows, specify the `height:0` setting in the `subRowConfig` property.
+
+:::note
+The described functionality works only if the `subRowConfig` property is initialized as a callback function.
+:::
+
+~~~jsx {7-10}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        // columns config
+    ],
+    data: dataset,
+    autoWidth: true,
+    subRowConfig: (row) => ({
+        height: row.data.length ? 250 : 0, 
+        expanded: true
+    }),
+    subRow: (row) => new dhx.Grid(null, {
+        columns: [
+            // columns config
+        ],
+        data: row.data
+    }),
+});
+~~~
+
+![](../assets/grid/subgrid_specific_rows.png)
+
+In the above example the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) config set as a callback function defines that sub-rows with the height 250px will be created for rows that have some data. For rows without data the `height:0` setting is specified, so sub-rows won't be created for these rows.
+
+**Related sample:** [Grid. Row expander. Subgrid only in specific rows](https://snippet.dhtmlx.com/03udbtmr)
+
+### Saving state of nested components or data in sub-rows
+
+You can save the state of the nested components or the data of sub-rows while updating data, scrolling or collapsing sub-rows by using the `preserve` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration option of Grid. By default, sub-rows are destroyed when they are hidden (e.g. if a row leaves the visible area during scrolling) or collapsed, which leads to resetting of any changes made in the inner components.
+
+When the `preserve: true` setting is specified, sub-rows aren't destroyed when hidden or collapsed and their content is saved. It means that any change (such as sorting, data input or state change) is saved and the sub-row is restored in the same state when displayed again.
+
+:::info note
+It's important to take into account that the `preserve: true` setting increases the size of the used memory, since the sub-rows data are kept in the memory even when they aren't displayed. 
+:::
+
+#### When using `preserve` is useful 
+
+- When the data of sub-rows should be interactive. It means when a sub-row contains a form or any other component the content of which can be changed by a user and the changes shouldn't be reset
+- For complex sub-rows with a state. For example, if a sub-row renders a component with a dynamic content and a complex user interface  
+
+#### When `preserve` shouldn't be used
+
+- When sub-rows are used just for rendering static information. If a sub-row presents a simple text or a static HTML, the use of `preserve` is not rational
+- In case a large amount of data is used. If a grid has a lot of rows and sub-rows, using `preserve` may increase the size of the used memory, which will affect the performance 
+
+In the example below the `preserve` config is used to save the context of the Form nested in a sub-row:
+
+~~~jsx {7-9}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "name", header: [{ text: "Name" }] },
+        { id: "age", header: [{ text: "Age" }] },
+    ],
+    data: dataset,
+    subRowConfig: {
+        preserve: true, // saves the state of sub-rows
+    },
+    subRow: (row) => {
+        return new dhx.Form(null, {
+            rows: [
+                { type: "input", name: "details", label: "Details", value: row.details },
+            ],
+        });
+    },
+});
+~~~
+
+### Loading data into a sub-row
+
+You can dynamically load data into a sub-row using the `load()` method of [DataCollection](/data_collection/) or [TreeCollection](/tree_collection/), depending on the nested component:
+
+~~~jsx {16-18}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "country", header: [{ text: "Country" }] },
+        { id: "population", header: [{ text: "Population" }] },
+    ],
+    data: dataset,
+    subRowConfig: { height: 400 },
+    subRow: () => {
+        const subGrid = new dhx.Grid(null, {
+            columns: [
+                { id: "title", header: [{ text: "Title" }] },
+                { id: "authors", header: [{ text: "Authors" }] },
+            ],
+        });
+
+        subGrid.data.load("https://some/dataset.json").then(() => {
+            subGrid.selection.setCell(subGrid.data.getId(0));
+        });
+
+        return subGrid;
+    },
+});
+~~~
+
+In the above example the `load()` method of [DataCollection](/data_collection/) is used for loading data into a nested Grid.
+
+**Related sample:** [Grid. Row expander. Subgrid data loading](https://snippet.dhtmlx.com/03ndqrqt)
+
+### Handling events
+
+#### Grid event handlers
+
+If a sub-row initializes a nested component (any Suite component), the sub-component's events can be set in the [`subRow`](grid/api/grid_subrow_config.md) callback function. It allows specifying event handlers directly for the nested component:
+
+~~~jsx {16-18}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "zone_name", header: [{ text: "Zone Name" }] },
+        { width: 150, id: "temperature", header: [{ text: "Temperature" }] },
+    ],
+    data: dataset,
+    subRow: ({ zone_name }) => {
+        const subGrid = new dhx.Grid(null, {
+            columns: [
+                { id: "animal", header: [{ text: "Animal" }] },
+                { id: "count", header: [{ text: "Count" }] },
+            ],
+            data: zooMap[zone_name],
+        });
+
+        subGrid.events.on("cellClick", (row, column) => {
+            console.log(`${row} ${column}`);
+        });
+
+        return subGrid;
+    },
+});
+~~~
+
+**Related sample:** [Grid. Row expander. Subgrid events handling](https://snippet.dhtmlx.com/3364si14)
+
+#### HTML template event handlers
+
+To specify the event handlers for a sub-row with an HTML content, use the [`eventHandlers`](grid/api/grid_eventhandlers_config.md) configuration option of Grid:
+
+~~~jsx {13-20}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { width: 200, id: "name", header: [{ text: "Name" }] },
+        { width: 150, id: "details", header: [{ text: "Details" }] },
+    ],
+    data: dataset,
+    subRow: (row) => `
+        <div class="subrow_container">
+            <p class="subrow_text">Details for ${row.name}</p>
+            <button class="subrow_button">Click Me</button>
+        </div>
+    `,
+    eventHandlers: {
+        onclick: {
+            // the button click event in a sub-row
+            subrow_button: (event, data) => {
+                console.log(`A button click in the row ${data.row.id}`); // subRow id
+            }
+        },
+    }
+});
+~~~
+
+### Multi-level Grid nesting
+
+It is possible to create as many levels of nested subgrids, as necessary. 
+
+![](../assets/grid/multi_level_nesting.png)
+
+To specify the structure of a multi-level Grid nesting, do the following:
+
+- create a Grid with columns and data 
+- in the Grid configuration specify the [`subRow`](grid/api/grid_subrow_config.md) option as a callback function, which:
+    - returns a nested Grid that contains the `subRow` config set as a callback function that may return:
+        - some Suite component
+        - HTML as string 
+        - a subgrid instance for another nesting level (that contains the `subRow` config set as a callback function to return another subgrid, a Suite component, or HTML content)
+
+Check the example below:
+
+~~~jsx {12,24,36}
+const grid = new dhx.Grid("grid_container", {
+    columns: [
+        { id: "col_1", header: [{ text: "Grid. Level 1" }] },
+        { id: "col_2", header: [{ text: "Second Column" }] },
+    ],
+    data: dataset,
+    autoWidth: true,
+    subRowConfig: (row) => ({
+        height: 300,
+        expanded: row.col_1 === "Row 1",
+    }),
+    subRow: ({ data }) => {
+        return new dhx.Grid(null, {
+            columns: [
+                { id: "col_1", header: [{ text: "Grid. Level 2" }] },
+                { id: "col_2", header: [{ text: "Second Column" }] },
+            ],
+            data,
+            autoWidth: true,
+            subRowConfig: (row) => ({
+                height: 300,
+                expanded: row.col_1 === "Row 1",
+            }),
+            subRow: ({ data }) => {
+                return new dhx.Grid(null, {
+                    columns: [
+                        { id: "col_1", header: [{ text: "Grid. Level 3" }] },
+                        { id: "col_2", header: [{ text: "Second Column" }] },
+                    ],
+                    data,
+                    autoWidth: true,
+                    subRowConfig: (row) => ({
+                        height: 300,
+                        expanded: row.col_1 === "Row 1",
+                    }),
+                    subRow: () => (`<span>Subrow. <b>Level 4</b></span>`),
+                })
+            },
+        })
+    },
+});
+~~~
+
+**Related sample:** [Grid. Row expander. Subgrid with rows expanded by criteria](https://snippet.dhtmlx.com/dih3z7cz)
+
+### Adjusting sub-row width 
+
+You can adjust the sub-row width depending on the width of its parent Grid via the `fullWidth` property of the [`subRowConfig`](grid/api/grid_subrowconfig_config.md) configuration object.
+
+:::info note
+The `fullWidth` property works only if the `subRowConfig` property is initialized as an object.
+:::
+
+If the `fullWidth: true` configuration option is specified, the sub-row width is the same as the full width of the Grid content, including the area outside the visible area borders (it means that the sub-row will be scrolled together with the horizontal scroll). By default, a sub-row takes just the width of the visible Grid area. 
+
+Check the example below:
+
+~~~jsx {12-14}
+const grid = new dhx.Grid("grid_container", {
+   width: 400,
+    columns: [
+        { id: "name", header: [{ text: "Name" }], width: 150 },
+        { id: "value", header: [{ text: "Value" }], width: 150 },
+        { id: "description", header: [{ text: "Description" }], width: 300 },
+    ],
+    data: dataset,
+    subRow: (row) => {
+        return `<div class="subrow-content">Details for ${row.name}</div>`;
+    },
+    subRowConfig: {
+        fullWidth: true, // makes the sub-row width equal to the Grid content width
+    },
+});
+~~~
+
+In the above example:
+
+- the width of the Grid container is set as 400px
+- if the `fullWidth` config isn't enabled, the sub-row width will be equal to the Grid width (400px)
+- the common width of all the columns is 600px, thus if the `fullWidth: true` setting is specified, the sub-row width will be equal to 600px
+
+### Getting sub-row config and content
+
+You can get the configuration settings applied to a sub-row and the content inside it using the [`getSubRow()`](grid/api/grid_getsubrow_method.md) method. 
+
+:::info
+Note that the method works if a sub-row is in the visible area or if the `preserve:true` property is specified in the `subRowConfig` object of the sub-row.
+:::
+
+The method takes as a parameter the id of a row and returns an object that includes the following properties:
+
+<table>
+    <tbody>
+         <tr>
+            <td><b>css</b></td>
+            <td>(<i>string</i>) user-defined CSS classes for a sub-row</td>
+        </tr>
+        <tr>
+            <td><b>element</b></td>
+            <td>(<i>HTMLElement | null</i>) the parent container of the current sub-row</td>
+        </tr>
+        <tr>
+            <td><b>expanded</b></td>
+            <td>(<i>boolean</i>) defines whether a sub-row is expanded by default, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>fullWidth</b></td>
+            <td>(<i>boolean</i>) defines whether a sub-row will take all the width of Grid, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>height</b></td>
+            <td>(<i>number</i>) the height of a sub-row in pixels, <i>200</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>padding</b></td>
+            <td>(<i>string | number</i>) the inner padding of a sub-row, <i>8</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>preserve</b></td>
+            <td>(<i>boolean</i>) saves the state of sub-rows while expanding/collapsing, disappearing from the visible area, data updating, <i>false</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>toggleIcon</b></td>
+            <td>(<i>boolean</i>) enables the icon for expanding/collapsing, <i>true</i> by default</td>
+        </tr>
+        <tr>
+            <td><b>view</b></td>
+            <td>(<i>string | object | null</i>) that can be presented by:<ul><li>a <i>string</i>, if the sub-row is set by the HTML content</li><li>an <i>object</i> instance to interact with, if a sub-row is an instance of a nested component (for example, Grid)</li><li><i>null</i>, if the sub-row is unavailable (for example, it is hidden or placed outside the visible area and the `preserve` config is not specified)</li></ul></td>
+        </tr>
+    </tbody>
+</table>
+
 ## Drag-n-drop
 
 The drag-n-drop functionality allows you to reorder one or several rows or columns inside the grid or between several grids. 
 
 :::tip Pro version only 
-If you use GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to reorder only rows and only one by one.
+If you use the GPL version of DHTMLX Grid (or DHTMLX Suite), you will be able to reorder only rows and only one by one.
 
 **Note**, to be able to drag-n-drop a column and (or) multiple rows, you need to use PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
 ### Drag-n-drop inside the grid
 
-It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"``](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
+It is possible to reorder a row or column of Grid by drag and drop. To enable the functionality, define the [`dragItem: "both"`](grid/api/grid_dragitem_config.md) property in the configuration object of Grid:
 
 ~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {
@@ -2075,7 +2532,7 @@ const grid = new dhx.Grid("grid_container", {
             column: "population",
             rowspan: 9,
             text: "Some text",
-            toltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
+            tooltipTemplate: ({ value, count }) => (`value: ${value}; count: ${count}`),
         },
     ],
     data: dataset
