@@ -16,7 +16,7 @@ description: You can explore the remove method of DataCollection in the document
 @example:
 component.data.remove("2");
 //or
-component.data.remove(["2", "4"]);
+component.data.remove([ "2", "4" ]);
 
 @descr:
 

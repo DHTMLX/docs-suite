@@ -6,25 +6,21 @@ description: You can learn how to group data with DataCollection in the document
 
 # Grouping data
 
-You can group the data of a component, ungroup data and check whether data in a collection is grouped via the DataCollection API.
-
 :::tip pro version only
 The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
 :::
 
+You can group the data of a component, ungroup data and check whether data in a collection is grouped via the DataCollection API.
+
 :::info important
 Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazydataproxy/)
-:::
-
-:::note
-Grouped data can be serialized. After serialization data is available for rendering and editing as a plain tree-like structure
 :::
 
 The DataCollection API can be used for working with [data grouping in Grid](grid/usage.md/#grouping-data). 
 
 ## Enabling data grouping
 
-To use the [row data grouping functionality](grid/usage.md/#grouping-data) in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or to specify it as a configuration object to [configure data grouping ](grid/usage.md/#configuring-data-grouping).
+To use the [row data grouping functionality](grid/usage.md/#grouping-data) in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or specify it as a configuration object to [configure data grouping](grid/usage.md/#configuring-data-grouping).
 
 ~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {
@@ -37,46 +33,13 @@ const grid = new dhx.Grid("grid_container", {
 });
 ~~~
 
-You can also specify what Grid data will be used for grouping using the `groupable` properties of Grid and of a column.
-
-The [`groupable`](grid/api/grid_groupable_config.md) **property of Grid** enables grouping data by the values in all columns:
-
-~~~jsx {6}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    group: true, 
-    groupable: true // allowing grouping row data by the values of all columns
-    data: dataset
-});
-~~~
-
 :::note
-The `groupable` property works only with the [`group`](grid/api/grid_group_config.md) panel.
+Grouped data can be serialized. After serialization data is available for rendering and editing as a plain tree-like structure
 :::
-
-**Related sample:** [Grid. Grouping](https://snippet.dhtmlx.com/dvqy4ewe)
-
-The [`groupable`](grid/api/api_gridcolumn_properties.md) **property of a column** allows grouping data by the values of a certain column:
-
-~~~jsx {3}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        { id: "country", header: [{ text: "Country" }], groupable: true },
-        { id: "population", header: [{ text: "Population" }] },
-        { id: "area", header: [{ text: "Land Area (Km²)" }] }
-    ],
-    group: true,
-    data: dataset
-});
-~~~
-
-In the above snippet rows will be grouped by the "country" column values, as the `groupable: true` property is specified in its configuration. 
 
 ## Grouping data 
 
-The [`group()`](data_collection/api/datacollection_group_method.md) method groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration. The method takes the following parameters:
+The [`group()`](data_collection/api/datacollection_group_method.md) method of DataCollection groups data in a collection that has a plain tree-like structure according to the specified order and additional configuration. The method takes the following parameters:
 
 - `order` - an array that defines the order and configuration for data grouping. Each element in the array can be:
 	- a string that represents a grouping field

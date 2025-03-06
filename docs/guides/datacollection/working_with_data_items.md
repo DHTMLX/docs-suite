@@ -6,7 +6,7 @@ description: You can learn how to work with DataCollection items in the document
 
 # Working with data items
 
-Besides [basic editing API of DataCollection](guides/datacollection/editing_data.md) that allows adding, copying, updating and deleting data items, there is a set of more specific methods for manipulating data items. For example, you can check the existence of an item, find necessary items, iterate over items, get the id/index of an item or get an item object by its id, etc.
+Besides [basic editing API of DataCollection](guides/datacollection/editing_data.md) that allows adding, copying, updating and deleting data items, there is a set of more specific methods for manipulating data items. For example, you can check the existence of an item, find necessary items, iterate over items, get the id/index of an item or get the item object by its id, etc.
 
 ## Checking existence of an item
 
@@ -58,7 +58,7 @@ const item = component.data.find(function(item){
 });
 
 //searching for an item by the attribute key
-const item = component.data.find({by:"text",match:"Manager"});
+const item = component.data.find({ by:"text",match:"Manager" });
 ~~~
 
 **Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)
@@ -83,7 +83,7 @@ const items = component.data.findAll(function(items){
 });
 
 //searching for items by the attribute key
-const items = component.data.findAll({by:"text",match:"Manager"});
+const items = component.data.findAll({ by:"text",match:"Manager" });
 ~~~
 
 **Related sample**: [Data. Find all](https://snippet.dhtmlx.com/kvemrz93)

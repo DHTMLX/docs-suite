@@ -6,7 +6,7 @@ description: You can learn how to edit data with DataCollection in the documenta
 
 # Editing data
 
-You can edit the data items of a component via DataCollection API. It allows adding new items, removing particular items or all items at once, updating the necessary configuration options of the item, creating a copy of an item at the defined position, changing the id of an item.
+You can edit the data items of a component via the DataCollection API. It allows adding new items, removing particular items or all items at once, updating the necessary configuration options of the item, creating a copy of an item at the defined position.
 
 ## Adding items
 
@@ -19,7 +19,7 @@ and returns either the item's id or an array with the ids of items.
 
 ~~~jsx
 // adding a new item into the beginning of a data collection 
-component.data.add({"value": 57.44787660011765, "id": "u1565340894584"},0);
+component.data.add({ "value": 57.44787660011765, "id": "u1565340894584" }, 0);
 
 // adding an array of new items into a data collection
 component.data.add([
@@ -53,7 +53,7 @@ To delete the specified item from the component, use the [`remove()`](data_colle
 ~~~jsx
 component.data.remove("2");
 //or
-component.data.remove(["2", "4"]);
+component.data.remove([ "2", "4" ]);
 ~~~
 
 **Related sample**: [Data. Remove](https://snippet.dhtmlx.com/ugdlqgp5)
@@ -90,7 +90,7 @@ The [`copy()`](data_collection/api/datacollection_copy_method.md) method will he
 and returns the item's id or an array with ids of items.
 
 ~~~jsx
-component.data.copy("4",5); // copies the item with id:4 to the position with index 5
+component.data.copy("4", 5); // copies the item with id:4 to the position with index 5
 ~~~
 
 **Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)

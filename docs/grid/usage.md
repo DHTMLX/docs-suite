@@ -426,7 +426,7 @@ To get the current state of sorting data in Grid, use the [`getSortingStates()`]
 
 ~~~jsx
 const state = grid.data.getSortingStates(); 
-// -> [{by: "country", dir: "desc"}, {by: "population", dir: "desc"}]
+// -> [{ by: "country", dir: "desc" }, { by: "population", dir: "desc" }]
 ~~~
 
 
@@ -547,7 +547,7 @@ It is possible to [set a predefined Grid configuration](#configuring-data-groupi
 
 ### Enabling data grouping
 
-To use the row data grouping functionality in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or to specify it as a configuration object to [configure data grouping ](#configuring-data-grouping).
+To use the row data grouping functionality in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or specify it as a configuration object to [configure data grouping](#configuring-data-grouping).
 
 ~~~jsx {5}
 const grid = new dhx.Grid("grid_container", {

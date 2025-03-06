@@ -13,7 +13,7 @@ When working with data you may need to sort or filter it. You can sort or filter
 To sort data items in a component, use the [`sort()`](data_collection/api/datacollection_sort_method.md) method of [DataCollection](data_collection.md). The method takes two parameters:
 
 - `rule: object` - an object with parameters for sorting. The object has the following attributes:
-    - `by: string | number` - the id of a data field (a column of Grid)
+    - `by: string | number` - the id of a data field 
     - `dir: string` - the direction of sorting: "asc" or "desc"
     - `as: function` -  a function that specifies the type to sort data as
     - `rule: function` - optional, a sorting rule; the function must have two parameters and return a number (-1,0,1)
@@ -21,16 +21,14 @@ To sort data items in a component, use the [`sort()`](data_collection/api/dataco
     - `smartSorting: boolean` - specifies whether a sorting rule should be applied each time after changing the data set
 
 ~~~jsx
-grid.data.sort({
-    by:"a",
-    dir:"desc",
-    as: function(item){
-        return item.toUpperCase(); 
-    },
+grid.data.sort(
     {
-        smartSorting: true
-    }
-});
+        by:"a",
+        dir:"desc",
+        as: item => (item.toUpperCase())
+    },
+    { smartSorting: true }
+);
 
 // cancels the applied sorting rules
 grid.data.sort();
@@ -44,12 +42,46 @@ Calling the method without parameters will discard all the applied sorting rules
 
 ### Custom sorting
 
-To set a custom function for sorting, you need to specify the `rule` attribute in a passed object. For example:
+You can also specify the `rule` attribute in a passed object instead of the default one and set a custom function for sorting. For example:
 
 ~~~jsx
 grid.data.sort({
     rule: (a, b) => a.id > b.id ? 1 : (a.id < b.id ? -1 : 0) 
 });
+~~~
+
+### Getting the sorting state
+
+To get the current state of sorting data in Grid, use the [`getSortingStates()`](data_collection/api/datacollection_getsortingstates_method.md) method of DataCollection. The method allows getting the result of sorting data by multiple columns and returns an array of objects with the following properties:
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>by</b></td>
+            <td>(<i>string | number</i>) the id of a data field to sort by</td>
+        </tr>
+        <tr>
+            <td><b>dir</b></td>
+            <td>(<i>string</i>) the direction of sorting: "asc" or "desc"</td>
+        </tr>
+        <tr>
+            <td><b>as</b></td>
+            <td>(<i>function</i>) a custom function of converting values before comparing</td>
+        </tr>
+        <tr>
+            <td><b>rule</b></td>
+            <td>(<i>function</i>) a custom sorting function</td>
+        </tr>
+        <tr>
+            <td><b>smartSorting</b></td>
+            <td>(<i>boolean</i>) (if applied) specifies whether a sorting rule should be applied each time after changing the data set</td>
+        </tr>
+    </tbody>
+</table>
+
+~~~jsx
+const state = grid.data.getSortingStates(); 
+// -> [{ by: "country", dir: "desc" }, { by: "population", dir: "desc" }]
 ~~~
 
 ## Filtering data
@@ -59,12 +91,12 @@ To filter data items in a component, use the [`filter()`](data_collection/api/da
 - `rule: function | object` - the filtering criteria
     - If set as a *function*, filtering will be applied by the rule specified in the function. The function takes an object of a data item as a parameter and returns *true/false*
     - If set as an *object*, the parameter has the following attributes:
-        - `by: string | number` - mandatory, the id of a data field (the column of Grid)
+        - `by: string | number` - mandatory, the id of a data field 
         - `match: string` - mandatory, a pattern to match
         - `compare: function` - optional, a function for extended filtering that takes three parameters:
-            - `value` - the value to compare (e.g. a column in a row for Grid)
+            - `value` - the value to compare 
             - `match` - a pattern to match
-            - `item` - a data item the values of which should be compared (e.g. a row)
+            - `item` - a data item the values of which should be compared 
 - `config: object` - optional, defines the parameters of filtering. It may contain the following properties: 
     - `id: string` - optional, the id of the filter
     - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (*true*), or to the initial data (*false*, default)
@@ -138,3 +170,13 @@ component.data.resetFilter({ id: "filter_id" });
 **Related samples**: 
 - [Data. ResetFilter](https://snippet.dhtmlx.com/jg8wxfvc)
 - [Grid. ResetFilter](https://snippet.dhtmlx.com/15trblk2)
+
+## Getting the initial data
+
+You can get the initial values of the items of a widget initialized in a data collection using the [`getInitialData()`](data_collection/api/datacollection_getinitialdata_method.md) method. It returns an array of item objects with initial values.
+
+~~~jsx
+const startingData = component.data.getInitialData();
+~~~
+
+**Related sample**: [Data. Get initial data](https://snippet.dhtmlx.com/l6wun9j4)
