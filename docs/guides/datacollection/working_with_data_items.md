@@ -249,9 +249,9 @@ You can iterate through the items of a data collection, the items of a component
 ### Iterating through the items of a data collection
 
 The [`forEach()`](data_collection/api/datacollection_foreach_method.md) method iterates through all the items of a data collection. It takes as a parameter a callback function that will iterate over items of a data collection and is called with the following parameters:
-    - `item` - (required) the object of an item
-    - `index` - (optional) the index of an item
-    - `array` - (optional) an array with items
+    - `item` - the object of an item
+    - `index` - the index of an item
+    - `array` - an array with items
 
 ~~~jsx
 component.data.forEach(function(item, index, array) {
@@ -265,12 +265,17 @@ component.data.forEach(function(item, index, array) {
 
 ### Iterating through the items of a component
 
-The [`map()`](data_collection/api/datacollection_map_method.md) method iterates through all the items of the component. As a parameter it takes a callback function that will be called for each item of a component and returns a new array of items where each item is the result of the callback function.
+The [`map()`](data_collection/api/datacollection_map_method.md) method iterates through all the items of the component. As a parameter it takes a callback function that will be called for each item of a component. The function is called with the following parameters:
+    - `item` - the object of an item
+    - `index` - the index of an item
+    - `array` - an array of items the method was called upon 
+    
+and returns a new array of items where each item is the result of the callback function.
 
 ~~~jsx
 // getting the ids of all the items of the component
-component.data.map(function(item){
-    return item;
+component.data.map(function(item, index, array){
+    return item.id;
 });
 ~~~
 
@@ -282,12 +287,15 @@ The [`mapRange()`](data_collection/api/datacollection_maprange_method.md) method
 
 - `from: number` - the initial position of an item in the range
 - `to: number` - the final position of an item in the range
-- `callback: function` - a function that will be called for each item from the specified range
+- `callback: function` - a function that will be called for each item from the specified range. The function is called with the following parameters:
+    - `item` - the object of an item
+    - `index` - the index of an item
+    - `array` - an array of items the method was called upon
 
 and returns a new array of matching item objects.
 
 ~~~jsx
-const result = component.data.mapRange(0, 20, function(item, index) {
+const result = component.data.mapRange(0, 20, function(item, index, array) {
     console.log(item.id, index);
 });
 ~~~
