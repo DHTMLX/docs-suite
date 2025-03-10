@@ -4924,7 +4924,6 @@ module.exports = {
             },
             items: [
               "guides/datacollection/loading_data",
-              "guides/datacollection/editing_data",
               "guides/datacollection/working_with_data_items",
               "guides/datacollection/sorting_filtering_data",
               "guides/datacollection/grouping_data",

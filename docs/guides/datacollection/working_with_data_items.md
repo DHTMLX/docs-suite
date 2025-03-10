@@ -6,131 +6,7 @@ description: You can learn how to work with DataCollection items in the document
 
 # Working with data items
 
-Besides [basic editing API of DataCollection](guides/datacollection/editing_data.md) that allows adding, copying, updating and deleting data items, there is a set of more specific methods for manipulating data items. For example, you can check the existence of an item, find necessary items, iterate over items, get the id/index of an item or get the item object by its id, etc.
-
-## Checking existence of an item
-
-You can check whether the specified item exists in the component via the [`exists()`](data_collection/api/datacollection_exists_method.md) method of DataCollection. The method takes the following parameter:
-
-- `id: string | number` - the id of the item in question
-
-and returns *true*, if the item exists; otherwise, *false*.
-
-~~~jsx
-const item = component.data.exists("1"); 
-~~~
-
-**Related sample**: [Data. Exists](https://snippet.dhtmlx.com/2ekntrbk)
-
-## Changing the id of an item
-
-You can change the id of the necessary element of a data collection, using the [`changeId()`](data_collection/api/datacollection_changeid_method.md) method. The method takes the following parameters:
-
-- `id: string | number` - the old id of an item
-- `newId: string | number` - optional, the new id; auto-generated if not set
-- `silent: boolean` - optional, *true* to prevent changing the id; otherwise, *false*
-
-~~~jsx
-component.data.changeId("1", "22");
-~~~
-
-## Searching for certain data items
-
-You can find data items that match some criteria. The DataCollection API allows searching for a particular item or all the matching items. 
-
-The [`find()`](data_collection/api/datacollection_find_method.md) method finds the item that corresponds to the specified rule. It takes the following parameter:
-
-- `rule: object | function` - the search criteria:
-    - if set as an *object*, the parameter contains the following attributes:
-        - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
-        - `match: string` - the value of the item attribute
-    - if set as a *function*, the search will be applied by the rule specified in the function. The function may take three parameters:
-        - `item` - (required) the object of an item
-        - `index` - (optional) the index of an item
-        - `array` - (optional) an array with items
-
-The method returns the object of the matching item.
-
-~~~jsx
-//searching for an item by the function
-const item = component.data.find(function(item){
-    if(item.text==="Manager"||item.text==="Marketer"){return true}
-});
-
-//searching for an item by the attribute key
-const item = component.data.find({ by:"text",match:"Manager" });
-~~~
-
-**Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)
-
-The [`findAll()`](data_collection/api/datacollection_findall_method.md) method finds all the items that correspond to the specified rule. It takes the following parameter:
-
-- `rule: object | function` - the search criteria:
-    - if set as an *object*, the parameter contains the following attributes:
-        - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
-        - `match: string` - the value of the item attribute
-    - if set as a *function*, the search will be applied by the rule specified in the function. The function may take three parameters:
-        - `item` - (required) the object of an item
-        - `index` - (optional) the index of an item
-        - `array` - (optional) an array with items
-
-The method returns an array of matching item objects.
-
-~~~js
-//searching for items by the function
-const items = component.data.findAll(function(items){
-    if(items.text==="Manager"||items.text==="Marketer"){return true}
-});
-
-//searching for items by the attribute key
-const items = component.data.findAll({ by:"text",match:"Manager" });
-~~~
-
-**Related sample**: [Data. Find all](https://snippet.dhtmlx.com/kvemrz93)
-
-## Iterating items 
-
-You can iterate through the items of a data collection, the items of a component and a specified range of items.
-
-The [`forEach()`](data_collection/api/datacollection_foreach_method.md) method iterates through all the items of a data collection. It takes as a parameter a callback function that will iterate over items of a data collection and may take three parameters:
-    - `item` - (required) the object of an item
-    - `index` - (optional) the index of an item
-    - `array` - (optional) an array with items
-
-~~~jsx
-component.data.forEach(function(item, index, array) {
-    console.log("This is an item of dataCollection: ", item);
-    console.log("This is an index of the element: ", index);
-    console.log("This is an array of the elements: ", array);
-});
-~~~
-
-**Related sample**: [Data. ForEach](https://snippet.dhtmlx.com/wa6tcmtn)
-
-The [`map()`](data_collection/api/datacollection_map_method.md) method iterates through all the items of the component. As a parameter it takes a callback function that will be called for each item of a component and returns a new array of items where each item is the result of the callback function.
-
-~~~jsx
-// getting the ids of all the items of the component
-component.data.map(function(item){
-    return item;
-});
-~~~
-
-**Related sample**: [Data. Map](https://snippet.dhtmlx.com/louctp61)
-
-The [`mapRange()`](data_collection/api/datacollection_maprange_method.md) method returns a new array of the items corresponding to the specified parameters. The method takes the following parameters:
-
-- `from: number` - the initial position of an item in the range
-- `to: number` - the final position of an item in the range
-- `callback: function` - a function that will be called for each item from the specified range
-
-and returns a new array of matching item objects.
-
-~~~jsx
-const result = component.data.mapRange(0, 20, function(item, index) {
-    console.log(item.id, index);
-});
-~~~
+The DataCollection API provides a wide set of methods for working with data items. You can get the id/index of an item, add, update, delete, copy, move data items, find necessary items, iterate over items, etc.
 
 ## Getting the id of an item
 
@@ -169,16 +45,92 @@ const text = item.text;
 
 **Related sample**: [Data. Get item](https://snippet.dhtmlx.com/wz2sscrm)
 
+## Adding items
 
-## Getting the number of items
+To add new items into a component, use the [`add()`](data_collection/api/datacollection_add_method.md) method of [DataCollection](data_collection.md). The method takes two parameters:
 
-You can get the number of items in a data collection via the [`getLength()`](data_collection/api/datacollection_getlength_method.md) method. 
+- `new_item: object | array` - the object of a new item or an array of item objects
+- `index: number` - optional, the index of the position starting from which new items will be added
+
+and returns either the item's id or an array with the ids of items.
 
 ~~~jsx
-const items = component.data.getLength();
+// adding a new item into the beginning of a data collection 
+component.data.add({ "value": 57.44787660011765, "id": "u1565340894584" }, 0);
+
+// adding an array of new items into a data collection
+component.data.add([
+    {
+        "value": 57.44787660011765,
+        "id": "u1565340894584"
+    },
+    {
+        "value": 14.612810637958095,
+        "id": "u1565340894585"
+    },
+    {
+        "value": 83.9707181117741,
+        "id": "u1565340894586"
+    },
+    {
+        "value": 59.01285878162044,
+        "id": "u1565340894587"
+    }
+]);
 ~~~
 
-**Related sample**: [Data. Get length](https://snippet.dhtmlx.com/4weiba8i)
+**Related sample**: [Data. Add](https://snippet.dhtmlx.com/ktd8ks0m)
+
+## Removing items
+
+To delete the specified item from the component, use the [`remove()`](data_collection/api/datacollection_remove_method.md) method. The method takes the following parameter:
+
+- `id: string | string[]` - the ids of the items that should be deleted 
+
+~~~jsx
+component.data.remove("2");
+//or
+component.data.remove([ "2", "4" ]);
+~~~
+
+**Related sample**: [Data. Remove](https://snippet.dhtmlx.com/ugdlqgp5)
+
+To delete all items from the component, use the [`removeAll()`](data_collection/api/datacollection_removeall_method.md) method.
+
+~~~jsx
+component.data.removeAll();
+~~~
+
+**Related sample**: [Data. Remove all](https://snippet.dhtmlx.com/ykk2ne82)
+
+## Updating items 
+
+You can update the properties of the item with the help of the [`update()`](data_collection/api/datacollection_update_method.md) method. The method takes two parameters:
+
+- `id: string | number` - the id of the item which needs to be updated
+- `newItem: object` - a hash of properties which need to be updated
+
+~~~jsx
+component.data.update(123, { text:"New text" });
+~~~
+
+**Related sample**: [Data. Update](https://snippet.dhtmlx.com/4g90gi6b)
+
+## Copying items
+
+The [`copy()`](data_collection/api/datacollection_copy_method.md) method will help you to create a copy of an item at the defined position. The method takes the following parameters:
+
+- `id: (string | number) | (string | number)[]` - the id of an item or an array with ids of items to copy
+- `index: number` - the index to create a copy at
+- `target: object` - optional, the target data collection object
+
+and returns the item's id or an array with ids of items.
+
+~~~jsx
+component.data.copy("4", 5); // copies the item with id:4 to the position with index 5
+~~~
+
+**Related sample**: [Data. Copy](https://snippet.dhtmlx.com/9rws8r05)
 
 ## Moving items 
 
@@ -196,11 +148,155 @@ component.data.move("4",5); // moves the item with id:4 to the position with ind
 
 **Related sample**: [Data. Move](https://snippet.dhtmlx.com/fi66bi8h)
 
+## Changing the id of an item
+
+You can change the id of the necessary element of a data collection, using the [`changeId()`](data_collection/api/datacollection_changeid_method.md) method. The method takes the following parameters:
+
+- `id: string | number` - the old id of an item
+- `newId: string | number` - optional, the new id; auto-generated if not set
+- `silent: boolean` - optional, *true* to prevent changing the id; otherwise, *false*
+
+~~~jsx
+component.data.changeId("1", "22");
+~~~
+
+## Checking existence of an item
+
+You can check whether the specified item exists in the component via the [`exists()`](data_collection/api/datacollection_exists_method.md) method of DataCollection. The method takes the following parameter:
+
+- `id: string | number` - the id of the item in question
+
+and returns *true*, if the item exists; otherwise, *false*.
+
+~~~jsx
+const item = component.data.exists("1"); 
+~~~
+
+**Related sample**: [Data. Exists](https://snippet.dhtmlx.com/2ekntrbk)
+
+## Getting the number of items
+
+You can get the number of items in a data collection via the [`getLength()`](data_collection/api/datacollection_getlength_method.md) method. 
+
+~~~jsx
+const items = component.data.getLength();
+~~~
+
+**Related sample**: [Data. Get length](https://snippet.dhtmlx.com/4weiba8i)
+
+## Searching for certain data items
+
+You can find data items that match some criteria. The DataCollection API allows searching for a particular item or all the matching items. 
+
+### Searching for a particular item
+
+The [`find()`](data_collection/api/datacollection_find_method.md) method finds the item that corresponds to the specified rule. It takes the following parameter:
+
+- `rule: object | function` - the search criteria:
+    - if set as an *object*, the parameter contains the following attributes:
+        - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
+        - `match: string` - the value of the item attribute
+    - if set as a *function*, the search will be applied by the rule specified in the function. The function may take three parameters:
+        - `item` - (required) the object of an item
+        - `index` - (optional) the index of an item
+        - `array` - (optional) an array with items
+
+The method returns the object of the matching item.
+
+~~~jsx
+//searching for an item by the function
+const item = component.data.find(function(item){
+    if(item.text==="Manager"||item.text==="Marketer"){return true}
+});
+
+//searching for an item by the attribute key
+const item = component.data.find({ by:"text",match:"Manager" });
+~~~
+
+**Related sample**: [Data. Find](https://snippet.dhtmlx.com/fpxhdc46)
+
+### Searching for several items 
+
+The [`findAll()`](data_collection/api/datacollection_findall_method.md) method finds all the items that correspond to the specified rule. It takes the following parameter:
+
+- `rule: object | function` - the search criteria:
+    - if set as an *object*, the parameter contains the following attributes:
+        - `by: string | function` - the search criterion (either the key of the item attribute or a search function)
+        - `match: string` - the value of the item attribute
+    - if set as a *function*, the search will be applied by the rule specified in the function. The function may take three parameters:
+        - `item` - (required) the object of an item
+        - `index` - (optional) the index of an item
+        - `array` - (optional) an array with items
+
+The method returns an array of matching item objects.
+
+~~~js
+//searching for items by the function
+const items = component.data.findAll(function(items){
+    if(items.text==="Manager"||items.text==="Marketer"){return true}
+});
+
+//searching for items by the attribute key
+const items = component.data.findAll({ by:"text",match:"Manager" });
+~~~
+
+**Related sample**: [Data. Find all](https://snippet.dhtmlx.com/kvemrz93)
+
+## Iterating items 
+
+You can iterate through the items of a data collection, the items of a component and a specified range of items.
+
+### Iterating through the items of a data collection
+
+The [`forEach()`](data_collection/api/datacollection_foreach_method.md) method iterates through all the items of a data collection. It takes as a parameter a callback function that will iterate over items of a data collection and is called with the following parameters:
+    - `item` - (required) the object of an item
+    - `index` - (optional) the index of an item
+    - `array` - (optional) an array with items
+
+~~~jsx
+component.data.forEach(function(item, index, array) {
+    console.log("This is an item of dataCollection: ", item);
+    console.log("This is an index of the element: ", index);
+    console.log("This is an array of the elements: ", array);
+});
+~~~
+
+**Related sample**: [Data. ForEach](https://snippet.dhtmlx.com/wa6tcmtn)
+
+### Iterating through the items of a component
+
+The [`map()`](data_collection/api/datacollection_map_method.md) method iterates through all the items of the component. As a parameter it takes a callback function that will be called for each item of a component and returns a new array of items where each item is the result of the callback function.
+
+~~~jsx
+// getting the ids of all the items of the component
+component.data.map(function(item){
+    return item;
+});
+~~~
+
+**Related sample**: [Data. Map](https://snippet.dhtmlx.com/louctp61)
+
+### Iterating through the items of a specified range 
+
+The [`mapRange()`](data_collection/api/datacollection_maprange_method.md) method returns a new array of the items corresponding to the specified parameters. The method takes the following parameters:
+
+- `from: number` - the initial position of an item in the range
+- `to: number` - the final position of an item in the range
+- `callback: function` - a function that will be called for each item from the specified range
+
+and returns a new array of matching item objects.
+
+~~~jsx
+const result = component.data.mapRange(0, 20, function(item, index) {
+    console.log(item.id, index);
+});
+~~~
+
 ## Reducing an array of items 
 
 You can reduce an array of items to a single value with the [`reduce()`](data_collection/api/datacollection_reduce_method.md) method. It takes the following parameters:
 
-- `callback: function` - a function that will be called for each item in the array. The function takes two parameters:
+- `callback: function` - a function that will be called for each item in the array. The function is called with the following parameters:
     - `acc` - the *initialValue*, or the previously returned value of the function
     - `item` - the current item of a data collection
 - `acc: any` - a value to be passed to the function as the initial value

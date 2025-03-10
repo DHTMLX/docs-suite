@@ -76,11 +76,13 @@ dataview.data.parse(dataset);
 
 ## Checking whether data is loaded
 
+You can check whether the specified data range is loaded from the server using the [`isDataLoaded()`](data_collection/api/datacollection_isdataloaded_method.md) method of [DataCollection](data_collection.md). 
+
 :::tip pro version only
 The method works with the [Dynamic loading](helpers/lazydataproxy.md) functionality which is available in the PRO edition only.
 :::
 
-You can check whether the specified data range is loaded from the server using the [`isDataLoaded()`](data_collection/api/datacollection_isdataloaded_method.md) method of [DataCollection](data_collection.md). The method takes the following parameters:
+The method takes the following parameters:
 
 - `from: number` - optional, the index of the first element of the data range to be checked
 - `to: number` - optional, the index of the last element of the data range to be checked
@@ -120,7 +122,7 @@ grid2.data.parse(state);
 
 You can save changes made in the data to the server side using the [`save()`](data_collection/api/datacollection_save_method.md) method of Data Collection. The method takes the following parameter:
 
-- `url: string | IDataProxy` - the URL of a server side or DataProxy with the URL configured
+- `url: IDataProxy | string` - the URL of a server side or DataProxy with the URL configured
 
 For example:
 

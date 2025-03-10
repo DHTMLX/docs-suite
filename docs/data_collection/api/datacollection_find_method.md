@@ -30,7 +30,7 @@ const item = component.data.find(function(item){
 });
 
 //searching for an item by the attribute key
-const item = component.data.find({by:"text",match:"Manager"});
+const item = component.data.find({ by:"text",match:"Manager" });
 
 @descr:
 

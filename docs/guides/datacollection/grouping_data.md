@@ -6,10 +6,6 @@ description: You can learn how to group data with DataCollection in the document
 
 # Grouping data
 
-:::tip pro version only
-The described functionality requires PRO version of the DHTMLX Grid (or DHTMLX Suite) package.
-:::
-
 You can group the data of a component, ungroup data and check whether data in a collection is grouped via the DataCollection API.
 
 :::info important
@@ -17,25 +13,6 @@ Data grouping isn't intended for working with [`lazyDataProxy`](helpers.md/lazyd
 :::
 
 The DataCollection API can be used for working with [data grouping in Grid](grid/usage.md/#grouping-data). 
-
-## Enabling data grouping
-
-To use the [row data grouping functionality](grid/usage.md/#grouping-data) in Grid, you need to apply the [`group`](grid/api/grid_group_config.md) configuration property of Grid. You can set the `group` property to *true* to enable grouping, or specify it as a configuration object to [configure data grouping](grid/usage.md/#configuring-data-grouping).
-
-~~~jsx {5}
-const grid = new dhx.Grid("grid_container", {
-    columns: [
-        // columns config
-    ],
-    group: true, // enabling grouping in a grid
-    groupable: true 
-    data: dataset
-});
-~~~
-
-:::note
-Grouped data can be serialized. After serialization data is available for rendering and editing as a plain tree-like structure
-:::
 
 ## Grouping data 
 
