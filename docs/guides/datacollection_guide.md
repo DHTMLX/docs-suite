@@ -62,7 +62,6 @@ Check how to work with events in the [Events basic rules](guides/events_guide.md
 The following articles will help you to find out how to work with DataCollection.
 
 - [Loading data](guides/datacollection/loading_data.md)
-- [Editing data](guides/datacollection/editing_data.md)
 - [Working with data items](guides/datacollection/work_with_data_items.md)
 - [Sorting and filtering data](guides/datacollection/sorting_filtering_data.md)
 - [Grouping data](guides/datacollection/grouping_data.md)
@@ -299,7 +298,7 @@ list2 = new dhx.List("list2", {
 list2.data.parse(state);
 ~~~
 
-Now we have two lists with the same data. Let's make some changes to **list**. For example, we can change the id of the first item using the `changeId()` method and, then, delete the item from the list via the `remove()` method, as in:
+Now we have two lists with the same data. Let's make some changes to **list**. For example, we can change the id of the first item using the [`changeId()`](data_collection/api/datacollection_changeid_method.md) method and, then, delete the item from the list via the [`remove()`](data_collection/api/datacollection_remove_method.md) method, as in:
 
 ~~~jsx
 //changing the id of the element
@@ -309,9 +308,9 @@ list.data.changeId("book001", "book001-newedition");
 list.data.remove("book001-newedition");
 ~~~
 
-Pay attention, the data in list now are different from the data in list2 because we have sent data to list2 before removing the item of list.
+Pay attention, the data in **list** now are different from the data in **list2** because we have sent data to **list2** before removing the item of list.
 
-Now we can create one more list, send new data to it, save data to the server with the `save()` method, or add more items, etc. [Check all the possibilities to work with data with the help of DataCollection](#guides).
+Now we can create one more list, send new data to it, save data to the server with the [`save()`](data_collection/api/datacollection_save_method.md) method, or add more items, etc. [Check all the possibilities to work with data with the help of DataCollection](#guides).
 
 **Please, look at the example we have just created.**
 
