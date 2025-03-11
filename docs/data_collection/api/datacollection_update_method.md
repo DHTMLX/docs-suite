@@ -8,11 +8,16 @@ description: You can explore the update method of DataCollection in the document
 
 @short: updates properties of the item
 
-@signature: {'update?: (id: string | number, newItem: object) => void;'}
+@signature: {'update?: (id: string | number, newItem: object, silent?: boolean) => void;'}
 
 @params:
 - `id: string | number` - the id of the item which needs to be updated
 - `newItem: object` - a hash of properties which need to be updated
+- `silent: boolean` - optional, if *true*, the update of the DataCollection state won't trigger the component repainting, *false* by default
+
+:::info
+Note that the use of the `silent` parameter may cause incorrect behavior of the method.
+:::
 
 @example:
 component.data.update(123, { text:"New text" });

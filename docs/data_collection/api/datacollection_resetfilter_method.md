@@ -8,12 +8,17 @@ description: You can explore the resetFilter method of DataCollection in the doc
 
 @short: resets the active filters
 
-@signature: {'resetFilter(config?: object): boolean;'}
+@signature: {'resetFilter(config?: object, silent?: boolean): boolean;'}
 
 @params:
 - `config: object` - optional, specifies the parameters of resetting the active filters. If the config isn't specified or it is empty, all the filters except for those that have the `permanent` property in the configuration object will be reset. Can contain the following properties:
     - `id: string` - optional, the id of the filter to reset
     - `permanent: boolean` - optional, *true* to reset all the active filters, including those that have the `permanent:true` property in their config
+- `silent: boolean` - optional, if *true*, the update of the DataCollection state won't trigger the component repainting, *false* by default
+
+:::info
+Note that the use of the `silent` parameter may cause incorrect behavior of the method.
+:::
 
 @returns:
 - `result: boolean` - *true*, if all the filters, including the permanent ones, have been reset; otherwise *false*

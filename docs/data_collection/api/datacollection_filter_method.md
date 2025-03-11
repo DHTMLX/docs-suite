@@ -8,7 +8,7 @@ description: You can explore the filter method of DataCollection in the document
 
 @short: filters data items in a component
 
-@signature: {'filter(rule?: function | object, config?: object): string;'}
+@signature: {'filter(rule?: function | object, config?: object, silent?: boolean): string;'}
 
 @params:
 - `rule: function | object` - the filtering criteria
@@ -24,6 +24,11 @@ description: You can explore the filter method of DataCollection in the document
     - `id: string` - optional, the id of the filter
     - `add: boolean` - optional, defines whether each next filtering will be applied to the already filtered data (*true*), or to the initial data (*false*, default)
     - `permanent: boolean` - optional, *true* to make the current filter permanent. It will be applied even if the next filtering doesn't have the `add:true` property in its configuration object. Such a filter can be removed just with the [resetFilter()](data_collection/api/datacollection_resetfilter_method.md) method
+- `silent: boolean` - optional, if *true*, the update of the DataCollection state won't trigger the component repainting, *false* by default
+
+:::info
+Note that the use of the `silent` parameter may cause incorrect behavior of the method.
+:::
     
 @returns:
 - `id: string` - the id of the filter
